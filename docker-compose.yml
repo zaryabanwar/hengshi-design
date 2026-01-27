@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16
+    container_name: hengshi-db
+    environment:
+      POSTGRES_USER: hengshi
+      POSTGRES_PASSWORD: hengshi
+      POSTGRES_DB: hengshi
+    ports:
+      - "5432:5432"
+    volumes:
+      - hengshi_db_data:/var/lib/postgresql/data
+
+volumes:
+  hengshi_db_data:
