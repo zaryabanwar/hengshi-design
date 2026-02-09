@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from 'react'
+import { useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 
 import { WorldCanvas } from '../world/WorldCanvas'
@@ -14,15 +14,12 @@ export const WorldPage = () => {
     nodes,
     entryPhase,
     setEntryPhase,
-    setNode
+    transitionTo
   } = useWorldStore()
 
   const entryParam = searchParams.get('entry')
 
-  const lobbyNode = useMemo(
-    () => nodes.find((node) => node.key === 'lobby') ?? nodes[0],
-    [nodes]
-  )
+  const canEnter = nodes.length > 0
 
   useEffect(() => {
     let isMounted = true
@@ -79,11 +76,10 @@ export const WorldPage = () => {
             <button
               className="rounded-full border border-slate-500 px-4 py-2 text-sm hover:border-white"
               onClick={() => {
-                if (!lobbyNode) {
+                if (!canEnter) {
                   return
                 }
-                setEntryPhase('inside')
-                setNode(lobbyNode.key)
+                transitionTo('lobby')
               }}
             >
               Enter Building

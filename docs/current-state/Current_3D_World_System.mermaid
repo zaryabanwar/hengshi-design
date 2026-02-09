@@ -1,0 +1,90 @@
+%% Hengshi Design Digital Platform - 3D World System Architecture (February 2026)
+%% Database-driven immersive experience: React Three Fiber + GSAP + Zustand
+
+flowchart TD
+    subgraph Entry_Flow["Entry Flow (State Machine)"]
+        S1[IDLE<br/>Landing Page]
+        S2[DRONE<br/>Cinematic Fly-In]
+        S3[AT_DOOR<br/>Building Entrance]
+        S4[INSIDE<br/>Interior Navigation]
+
+        S1 -->|"User clicks Enter"| S2
+        S2 -->|"Animation completes<br/>(5 GSAP keyframes)"| S3
+        S3 -->|"Click door hotspot"| S4
+    end
+
+    subgraph World_Data["Database Configuration"]
+        WN[WorldNodes Table<br/>Camera: position, target, FOV<br/>Environment: lighting, fog]
+        WH[WorldHotspots Table<br/>Kind: OPEN_PANEL, NAVIGATE_NODE, OPEN_URL<br/>Position, radius, payload]
+        WN -->|"1:N"| WH
+    end
+
+    subgraph Frontend_Components["React Components"]
+        WC[WorldCanvas<br/>R3F Canvas Provider]
+        CC[CameraController<br/>GSAP Timeline]
+        ES[ExteriorScene<br/>GLB Model + Drone Path]
+        IS[InteriorScene<br/>Room Rendering]
+        HR[HotspotRenderer<br/>Interactive Spheres]
+        PO[PanelOverlay<br/>HTML/CSS Panels]
+    end
+
+    subgraph State_Store["Zustand Store (worldStore)"]
+        NS[currentNode<br/>Active scene node]
+        PS[activePanel<br/>services/projects/contact]
+        EP[entryPhase<br/>idle/drone/atDoor/inside]
+        DC[dataCache<br/>Services + Projects]
+    end
+
+    subgraph Hotspot_Actions["Hotspot Action Types"]
+        HA1[OPEN_PANEL<br/>→ Show service/project/contact panel]
+        HA2[NAVIGATE_NODE<br/>→ Camera transition to target room]
+        HA3[OPEN_URL<br/>→ Open external link]
+    end
+
+    subgraph Scene_Rooms["World Room Nodes (1:1 with Service Categories)"]
+        R0[exterior<br/>Building Exterior]
+        R1[lobby<br/>Lobby/Reception - PENDING]
+        R2[strategy_architecture]
+        R3[platform_engineering]
+        R4[ai_systems]
+        R5[spatial_immersive]
+        R6[product_design]
+        R7[cloud_devops]
+        R8[security_trust]
+        R9[data_platforms]
+        R10[commerce_growth]
+        R11[creative_design - NEW]
+    end
+
+    %% Data flow
+    World_Data -->|"GET /api/world"| State_Store
+    State_Store --> Frontend_Components
+    EP --> CC
+    NS --> CC
+    CC --> ES & IS
+
+    %% Hotspot interactions
+    HR --> Hotspot_Actions
+    HA1 --> PS
+    HA2 -->|"Update currentNode"| NS
+    NS -.->|"Camera animates to"| Scene_Rooms
+
+    %% Scene navigation
+    R0 -->|"door hotspot"| R1
+    R1 -->|"room hotspots"| R2 & R3 & R4 & R5 & R6
+    R1 -->|"room hotspots"| R7 & R8 & R9 & R10 & R11
+
+    %% Styles
+    classDef state fill:#E1F5FE,stroke:#01579B,stroke-width:2px
+    classDef data fill:#FFF3E0,stroke:#EF6C00,stroke-width:2px
+    classDef component fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px
+    classDef store fill:#F3E5F5,stroke:#6A1B9A,stroke-width:2px
+    classDef action fill:#FFEBEE,stroke:#C62828,stroke-width:2px
+    classDef room fill:#E8EAF6,stroke:#283593,stroke-width:1px
+
+    class S1,S2,S3,S4 state
+    class WN,WH data
+    class WC,CC,ES,IS,HR,PO component
+    class NS,PS,EP,DC store
+    class HA1,HA2,HA3 action
+    class R0,R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11 room

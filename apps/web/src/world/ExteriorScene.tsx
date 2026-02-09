@@ -8,6 +8,68 @@ import { useWorldStore } from '../stores/worldStore'
 
 const MODEL_URL = '/models/hengshi-hq-atlanta-exterior-web.glb'
 
+const BLENDER_DOOR_POSITION: [number, number, number] = [0, 1.904, 0.058396]
+const BLENDER_BUILDING_CENTER: [number, number, number] = [55.613, 46.309, 113.37]
+const BLENDER_BUILDING_DIMENSIONS = { width: 60.8, depth: 212, height: 96.9 }
+const BLENDER_SCALE = 100
+const BLENDER_DOOR_HOTSPOT_OFFSET: [number, number, number] = [0, 0, 0.2]
+
+const blenderToThree = ([x, y, z]: [number, number, number]): [number, number, number] => [
+  x * BLENDER_SCALE,
+  z * BLENDER_SCALE,
+  y * BLENDER_SCALE
+]
+
+const { width, depth, height } = BLENDER_BUILDING_DIMENSIONS
+const BLENDER_DRONE_POSITIONS: [number, number, number][] = [
+  [BLENDER_BUILDING_CENTER[0], BLENDER_BUILDING_CENTER[1] - depth * 1.5, height * 3],
+  [BLENDER_BUILDING_CENTER[0] + width * 1.2, BLENDER_BUILDING_CENTER[1] - depth * 1.2, height * 2.6],
+  [BLENDER_BUILDING_CENTER[0] + width * 1.2, BLENDER_BUILDING_CENTER[1] + depth * 0.2, height * 2.3],
+  [BLENDER_BUILDING_CENTER[0] - width * 1.2, BLENDER_BUILDING_CENTER[1] + depth * 0.2, height * 2.1],
+  [BLENDER_DOOR_POSITION[0], BLENDER_DOOR_POSITION[1] - 6, BLENDER_DOOR_POSITION[2] + 2]
+]
+
+const DOOR_POSITION = blenderToThree(BLENDER_DOOR_POSITION)
+const BUILDING_CENTER = blenderToThree(BLENDER_BUILDING_CENTER)
+const DOOR_HOTSPOT = blenderToThree([
+  BLENDER_DOOR_POSITION[0] + BLENDER_DOOR_HOTSPOT_OFFSET[0],
+  BLENDER_DOOR_POSITION[1] + BLENDER_DOOR_HOTSPOT_OFFSET[1],
+  BLENDER_DOOR_POSITION[2] + BLENDER_DOOR_HOTSPOT_OFFSET[2]
+])
+
+const DRONE_KEYFRAMES: CameraKeyframe[] = [
+  {
+    position: blenderToThree(BLENDER_DRONE_POSITIONS[0]),
+    target: DOOR_POSITION,
+    fov: 58,
+    duration: 0
+  },
+  {
+    position: blenderToThree(BLENDER_DRONE_POSITIONS[1]),
+    target: DOOR_POSITION,
+    fov: 54,
+    duration: 2.4
+  },
+  {
+    position: blenderToThree(BLENDER_DRONE_POSITIONS[2]),
+    target: DOOR_POSITION,
+    fov: 50,
+    duration: 1.9
+  },
+  {
+    position: blenderToThree(BLENDER_DRONE_POSITIONS[3]),
+    target: DOOR_POSITION,
+    fov: 46,
+    duration: 1.7
+  },
+  {
+    position: blenderToThree(BLENDER_DRONE_POSITIONS[4]),
+    target: DOOR_POSITION,
+    fov: 42,
+    duration: 1.6
+  }
+]
+
 type CameraKeyframe = {
   position: [number, number, number]
   target: [number, number, number]
@@ -34,7 +96,7 @@ const DoorHotspot = ({ position, disabled, onClick }: DoorHotspotProps) => {
       onPointerOut={() => setHovered(false)}
       onClick={() => !disabled && onClick()}
     >
-      <sphereGeometry args={[0.28, 28, 28]} />
+      <sphereGeometry args={[0.28 * BLENDER_SCALE, 28, 28]} />
       <meshStandardMaterial color={color} emissive={color} emissiveIntensity={0.4} />
     </mesh>
   )
@@ -43,59 +105,20 @@ const DoorHotspot = ({ position, disabled, onClick }: DoorHotspotProps) => {
 export const ExteriorScene = () => {
   const { camera } = useThree()
   const { scene } = useGLTF(MODEL_URL)
-  const { entryPhase, setEntryPhase, setNode, nodes } = useWorldStore()
+  const { entryPhase, setEntryPhase, transitionTo, nodes } = useWorldStore()
 
-  const targetRef = useRef(new THREE.Vector3(0, 1.6, 0))
+  const targetRef = useRef(new THREE.Vector3(...DOOR_POSITION))
   const timelineRef = useRef<gsap.core.Timeline | null>(null)
 
-  const metrics = useMemo(() => {
-    const bounds = new THREE.Box3().setFromObject(scene)
-    const size = bounds.getSize(new THREE.Vector3())
-    const center = bounds.getCenter(new THREE.Vector3())
+  const environment = useMemo(() => {
+    const groundSize = Math.max(width, depth) * 4 * BLENDER_SCALE
+    const fogNear = depth * 0.9 * BLENDER_SCALE
+    const fogFar = depth * 4.2 * BLENDER_SCALE
 
-    const width = Math.max(size.x, 8)
-    const depth = Math.max(size.z, 8)
-    const height = Math.max(size.y, 6)
+    return { groundSize, fogNear, fogFar }
+  }, [])
 
-    const frontZ = size.z * 0.5
-    const doorY = Math.max(1.4, height * 0.25)
-    const doorZ = frontZ + 0.2
-
-    const keyframes: CameraKeyframe[] = [
-      {
-        position: [width * 0.6, height * 0.85, frontZ + depth * 1.8],
-        target: [0, height * 0.35, 0],
-        fov: 48,
-        duration: 2.4
-      },
-      {
-        position: [width * 0.32, height * 0.6, frontZ + depth * 1.1],
-        target: [0, height * 0.32, 0],
-        fov: 44,
-        duration: 1.7
-      },
-      {
-        position: [width * 0.12, doorY + height * 0.08, frontZ + depth * 0.6],
-        target: [0, doorY, 0],
-        fov: 40,
-        duration: 1.3
-      }
-    ]
-
-    return {
-      modelOffset: [-center.x, -bounds.min.y, -center.z] as [number, number, number],
-      groundSize: Math.max(width, depth) * 4,
-      fogNear: depth * 1.4,
-      fogFar: depth * 3.6,
-      doorHotspot: [0, doorY, doorZ] as [number, number, number],
-      keyframes
-    }
-  }, [scene])
-
-  const lobbyKey = useMemo(
-    () => nodes.find((node) => node.key === 'lobby')?.key ?? nodes[0]?.key,
-    [nodes]
-  )
+  const canEnter = nodes.length > 0
 
   useFrame(() => {
     camera.lookAt(targetRef.current)
@@ -111,78 +134,47 @@ export const ExteriorScene = () => {
   useEffect(() => {
     if (entryPhase === 'drone') {
       timelineRef.current?.kill()
-      const [far, mid, door] = metrics.keyframes
-      applyKeyframe(far)
+      applyKeyframe(DRONE_KEYFRAMES[0])
 
       const timeline = gsap.timeline({
         onComplete: () => setEntryPhase('atDoor')
       })
 
-      timeline.to(
-        camera.position,
-        {
-          x: mid.position[0],
-          y: mid.position[1],
-          z: mid.position[2],
-          duration: mid.duration,
-          ease: 'power2.inOut'
-        },
-        0
-      )
-      timeline.to(
-        targetRef.current,
-        {
-          x: mid.target[0],
-          y: mid.target[1],
-          z: mid.target[2],
-          duration: mid.duration,
-          ease: 'power2.inOut'
-        },
-        0
-      )
-      timeline.to(
-        camera,
-        {
-          fov: mid.fov,
-          duration: mid.duration,
-          ease: 'power2.inOut',
-          onUpdate: () => camera.updateProjectionMatrix()
-        },
-        0
-      )
-
-      timeline.to(
-        camera.position,
-        {
-          x: door.position[0],
-          y: door.position[1],
-          z: door.position[2],
-          duration: door.duration,
-          ease: 'power3.inOut'
-        },
-        '>'
-      )
-      timeline.to(
-        targetRef.current,
-        {
-          x: door.target[0],
-          y: door.target[1],
-          z: door.target[2],
-          duration: door.duration,
-          ease: 'power3.inOut'
-        },
-        '<'
-      )
-      timeline.to(
-        camera,
-        {
-          fov: door.fov,
-          duration: door.duration,
-          ease: 'power3.inOut',
-          onUpdate: () => camera.updateProjectionMatrix()
-        },
-        '<'
-      )
+      for (let i = 1; i < DRONE_KEYFRAMES.length; i += 1) {
+        const frame = DRONE_KEYFRAMES[i]
+        timeline.to(
+          camera.position,
+          {
+            x: frame.position[0],
+            y: frame.position[1],
+            z: frame.position[2],
+            duration: frame.duration,
+            ease: 'power2.inOut'
+          },
+          '>'
+        )
+        timeline.to(
+          targetRef.current,
+          {
+            x: frame.target[0],
+            y: frame.target[1],
+            z: frame.target[2],
+            duration: frame.duration,
+            ease: 'power2.inOut'
+          },
+          '<'
+        )
+        timeline.to(
+          camera,
+          {
+            fov: frame.fov,
+            duration: frame.duration,
+            ease: 'power2.inOut',
+            onUpdate: () => camera.updateProjectionMatrix()
+          },
+          '<'
+        )
+      }
 
       timelineRef.current = timeline
 
@@ -193,37 +185,38 @@ export const ExteriorScene = () => {
 
     if (entryPhase === 'atDoor' || entryPhase === 'idle') {
       timelineRef.current?.kill()
-      applyKeyframe(metrics.keyframes[2])
+      applyKeyframe(DRONE_KEYFRAMES[DRONE_KEYFRAMES.length - 1])
     }
 
     return undefined
-  }, [camera, entryPhase, metrics.keyframes, setEntryPhase])
+  }, [camera, entryPhase, setEntryPhase])
 
   return (
     <group>
-      <fog attach="fog" args={['#0b1220', metrics.fogNear, metrics.fogFar]} />
+      <fog attach="fog" args={['#0b1220', environment.fogNear, environment.fogFar]} />
       <ambientLight intensity={0.4} />
       <directionalLight position={[6, 10, 8]} intensity={1.2} />
       <directionalLight position={[-8, 6, -4]} intensity={0.4} />
 
-      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]} receiveShadow>
-        <planeGeometry args={[metrics.groundSize, metrics.groundSize]} />
+      <mesh
+        rotation={[-Math.PI / 2, 0, 0]}
+        position={[BUILDING_CENTER[0], 0, BUILDING_CENTER[2]]}
+        receiveShadow
+      >
+        <planeGeometry args={[environment.groundSize, environment.groundSize]} />
         <meshStandardMaterial color="#0f172a" />
       </mesh>
 
-      <group position={metrics.modelOffset}>
-        <primitive object={scene} />
-      </group>
+      <primitive object={scene} />
 
       <DoorHotspot
-        position={metrics.doorHotspot}
-        disabled={entryPhase === 'drone' || !lobbyKey}
+        position={DOOR_HOTSPOT}
+        disabled={entryPhase === 'drone' || !canEnter}
         onClick={() => {
-          if (!lobbyKey) {
+          if (!canEnter) {
             return
           }
-          setEntryPhase('inside')
-          setNode(lobbyKey)
+          transitionTo('lobby')
         }}
       />
     </group>

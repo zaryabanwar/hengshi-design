@@ -37,6 +37,7 @@ type WorldState = {
   projectBySlug: Record<string, Project>
   loadWorld: () => Promise<void>
   setNode: (key: string) => void
+  transitionTo: (key: string) => void
   setTransitioning: (value: boolean) => void
   setEntryPhase: (phase: EntryPhase) => void
   openPanel: (panel: ActivePanel) => void
@@ -77,6 +78,20 @@ export const useWorldStore = create<WorldState>((set, get) => ({
       return
     }
     set({ currentNodeKey: key, activePanel: null })
+  },
+  transitionTo: (key: string) => {
+    const { nodes } = get()
+    const targetKey =
+      nodes.find((node) => node.key === key)?.key ??
+      nodes.find((node) => node.key !== 'exterior')?.key ??
+      nodes[0]?.key ??
+      null
+
+    if (!targetKey) {
+      return
+    }
+
+    set({ currentNodeKey: targetKey, entryPhase: 'inside', activePanel: null })
   },
   setTransitioning: (value: boolean) => set({ isTransitioning: value }),
   setEntryPhase: (phase: EntryPhase) =>

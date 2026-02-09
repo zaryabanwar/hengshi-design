@@ -1,0 +1,99 @@
+%% Hengshi Design Digital Platform - Current Database Schema (February 2026)
+%% PostgreSQL 16 with SQLAlchemy 2.0 ORM
+%% Supersedes: Database_Schema_Relationships.mermaid (MongoDB-based, Feb 2025)
+
+erDiagram
+    users {
+        uuid id PK
+        string email UK "Unique, indexed"
+        string password_hash "bcrypt with salt"
+        string role "admin"
+        boolean is_active "Default true"
+        datetime created_at
+        datetime updated_at
+    }
+
+    services {
+        uuid id PK
+        string slug UK "Kebab-case, unique"
+        string title
+        string category "Enum: 9 categories + 1 pending"
+        text summary
+        text body
+        json deliverables "Array of strings, 1-20 items"
+        json tags "Array of strings, max 20"
+        boolean is_featured "Default false"
+        integer sort_order "Default 0"
+        datetime created_at
+        datetime updated_at
+    }
+
+    projects {
+        uuid id PK
+        string slug UK "Kebab-case, unique"
+        string title
+        text summary
+        text body
+        json tags "Array of strings, max 20"
+        boolean is_featured "Default false"
+        integer sort_order "Default 0"
+        datetime created_at
+        datetime updated_at
+    }
+
+    project_media {
+        uuid id PK
+        uuid project_id FK "CASCADE delete"
+        string type "image, video, document"
+        string url "Media URL"
+        string caption "Optional"
+        integer sort_order "Default 0"
+        datetime created_at
+    }
+
+    world_nodes {
+        uuid id PK
+        string key UK "Unique identifier"
+        string title
+        text description
+        boolean is_entry "Entry point flag"
+        json camera_position "x, y, z coordinates"
+        json camera_target "x, y, z look-at"
+        float camera_fov "Field of view degrees"
+        json environment "Lighting, fog settings"
+        integer sort_order "Default 0"
+        datetime created_at
+        datetime updated_at
+    }
+
+    world_hotspots {
+        uuid id PK
+        uuid node_id FK "CASCADE delete"
+        string key "Unique within node"
+        string title
+        text description
+        string kind "OPEN_PANEL, NAVIGATE_NODE, OPEN_URL"
+        json position "x, y, z coordinates"
+        json normal "Surface normal vector"
+        float radius "Interaction radius"
+        string icon "Icon identifier"
+        json payload "Action-specific data"
+        integer sort_order "Default 0"
+        boolean is_enabled "Default true"
+    }
+
+    leads {
+        uuid id PK
+        string name "Required"
+        string email "Required, validated"
+        string company "Optional"
+        string phone "Optional"
+        string subject "Optional"
+        text message "20-4000 chars"
+        string source_url "Auto-captured"
+        json metadata "Arbitrary JSON"
+        datetime created_at
+    }
+
+    projects ||--o{ project_media : "has many"
+    world_nodes ||--o{ world_hotspots : "has many"

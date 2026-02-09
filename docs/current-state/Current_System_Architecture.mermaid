@@ -1,0 +1,85 @@
+%% Hengshi Design Digital Platform - Current State Architecture (February 2026)
+%% This diagram reflects the actual implemented monorepo architecture.
+%% For the future enterprise vision (microservices/K8s/Kafka), see /architecture/future-state/
+
+graph TB
+    subgraph Client_Layer["Client Layer"]
+        CL1[Web Browser<br/>Desktop/Mobile]
+    end
+
+    subgraph Frontend_Layer["Frontend Layer (React 18 + TypeScript)"]
+        FE1[React SPA<br/>Vite Build]
+        FE2[React Three Fiber<br/>3D World Engine]
+        FE3[Zustand Store<br/>State Management]
+        FE4[GSAP<br/>Camera Animations]
+        FE5[TailwindCSS<br/>Styling]
+        FE6[React Router v6<br/>Client Routing]
+    end
+
+    subgraph API_Layer["API Layer (FastAPI + Python 3.11)"]
+        direction TB
+        subgraph Public_Routes["Public Routes (No Auth)"]
+            PR1[GET /api/services]
+            PR2[GET /api/projects]
+            PR3[GET /api/world]
+            PR4[POST /api/leads<br/>Rate Limited]
+            PR5[GET /health]
+        end
+
+        subgraph Auth_Routes["Authentication"]
+            AR1[POST /api/auth/login<br/>JWT Generation]
+        end
+
+        subgraph Admin_Routes["Admin Routes (JWT Protected)"]
+            ADR1[CRUD /api/admin/services]
+            ADR2[CRUD /api/admin/projects]
+            ADR3[CRUD /api/admin/world]
+            ADR4[GET /api/admin/leads]
+        end
+    end
+
+    subgraph ORM_Layer["ORM Layer"]
+        ORM1[SQLAlchemy 2.0<br/>Mapped Types]
+        ORM2[Alembic<br/>Migrations]
+        ORM3[Pydantic<br/>Validation]
+    end
+
+    subgraph Data_Layer["Data Layer"]
+        DB1[(PostgreSQL 16<br/>Docker)]
+    end
+
+    subgraph Asset_Layer["Asset Layer"]
+        AL1[GLB/GLTF Models<br/>/public/models/]
+    end
+
+    %% Connections
+    CL1 --> FE1
+    FE1 --> FE2 & FE3 & FE5 & FE6
+    FE2 --> FE4
+    FE2 --> AL1
+
+    FE1 -->|HTTP/JSON| Public_Routes
+    FE1 -->|HTTP/JSON + JWT| Auth_Routes
+    FE1 -->|HTTP/JSON + JWT| Admin_Routes
+
+    Public_Routes --> ORM1
+    Auth_Routes --> ORM1
+    Admin_Routes --> ORM1
+    ORM1 --> DB1
+    ORM2 --> DB1
+    PR4 -.->|In-Memory<br/>Rate Limit| PR4
+
+    %% Styles
+    classDef client fill:#E1F5FE,stroke:#01579B,stroke-width:2px
+    classDef frontend fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px
+    classDef api fill:#FFF3E0,stroke:#EF6C00,stroke-width:2px
+    classDef orm fill:#F3E5F5,stroke:#6A1B9A,stroke-width:2px
+    classDef data fill:#FFEBEE,stroke:#C62828,stroke-width:2px
+    classDef asset fill:#E8EAF6,stroke:#283593,stroke-width:2px
+
+    class CL1 client
+    class FE1,FE2,FE3,FE4,FE5,FE6 frontend
+    class PR1,PR2,PR3,PR4,PR5,AR1,ADR1,ADR2,ADR3,ADR4 api
+    class ORM1,ORM2,ORM3 orm
+    class DB1 data
+    class AL1 asset
