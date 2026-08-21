@@ -1,0 +1,89 @@
+%% Hengshi Design Digital Platform - API Router Structure (February 2026)
+%% FastAPI modular router architecture with middleware layers
+
+flowchart TD
+    REQ["HTTP Request from React SPA"]
+
+    subgraph Middleware["Middleware Stack"]
+        CORS["CORS Middleware - Overly permissive - needs restriction"]
+        RL_MW["Rate Limiting - Not yet global - Sprint 1 slowapi"]
+        LOG_MW["Logging Middleware - Not implemented - Sprint 2 structlog"]
+        SENTRY_MW["Error Tracking - Not implemented - Sprint 1 Sentry"]
+    end
+
+    ENTRY["FastAPI App - main.py - Port 8000"]
+
+    subgraph Public_Routers["Public Routers - No Auth"]
+        HEALTH["GET /health - status ok"]
+        SVC_R["GET /api/services - List with category filter"]
+        PRJ_R["GET /api/projects - List with tag filter"]
+        WORLD_R["GET /api/world - Nodes and hotspots eager loaded"]
+        LEAD_R["POST /api/leads - Rate limited 5 per 60s per IP"]
+    end
+
+    subgraph Auth_Router["Auth Router"]
+        LOGIN["POST /api/auth/login - JWT generation - bcrypt and PyJWT"]
+    end
+
+    subgraph Admin_Routers["Admin Routers - JWT Protected"]
+        AUTH_DEP["require_admin - Depends decode JWT - verify role admin"]
+        ADM_SVC["CRUD /api/admin/services"]
+        ADM_PRJ["CRUD /api/admin/projects with media cascade"]
+        ADM_WORLD["CRUD /api/admin/world nodes and hotspots"]
+        ADM_LEADS["GET /api/admin/leads - list and search"]
+    end
+
+    subgraph ORM["ORM Layer"]
+        SA["SQLAlchemy 2.0 Mapped types - Depends get_db"]
+        PYDANTIC["Pydantic v2 - Request Response validation"]
+    end
+
+    PG[("PostgreSQL 16 - Docker Compose - 7 tables")]
+
+    REQ --> CORS
+    CORS --> ENTRY
+
+    ENTRY --> HEALTH
+    ENTRY --> SVC_R
+    ENTRY --> PRJ_R
+    ENTRY --> WORLD_R
+    ENTRY --> LEAD_R
+    ENTRY --> LOGIN
+    ENTRY --> AUTH_DEP
+
+    AUTH_DEP --> ADM_SVC
+    AUTH_DEP --> ADM_PRJ
+    AUTH_DEP --> ADM_WORLD
+    AUTH_DEP --> ADM_LEADS
+
+    HEALTH --> SA
+    SVC_R --> SA
+    PRJ_R --> SA
+    WORLD_R --> SA
+    LEAD_R --> SA
+    LOGIN --> SA
+    ADM_SVC --> SA
+    ADM_PRJ --> SA
+    ADM_WORLD --> SA
+    ADM_LEADS --> SA
+
+    SA --> PYDANTIC
+    SA --> PG
+
+    classDef client fill:#E1F5FE,stroke:#01579B,stroke-width:2px
+    classDef middleware fill:#FFF9C4,stroke:#F57F17,stroke-width:2px
+    classDef app fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px
+    classDef public fill:#E8F5E9,stroke:#2E7D32,stroke-width:1px
+    classDef auth fill:#FFF3E0,stroke:#EF6C00,stroke-width:2px
+    classDef admin fill:#F3E5F5,stroke:#6A1B9A,stroke-width:2px
+    classDef orm fill:#E8EAF6,stroke:#283593,stroke-width:2px
+    classDef db fill:#FFEBEE,stroke:#C62828,stroke-width:2px
+
+    class REQ client
+    class CORS,RL_MW,LOG_MW,SENTRY_MW middleware
+    class ENTRY app
+    class HEALTH,SVC_R,PRJ_R,WORLD_R,LEAD_R public
+    class LOGIN auth
+    class AUTH_DEP,ADM_SVC,ADM_PRJ,ADM_WORLD,ADM_LEADS admin
+    class SA,PYDANTIC orm
+    class PG db

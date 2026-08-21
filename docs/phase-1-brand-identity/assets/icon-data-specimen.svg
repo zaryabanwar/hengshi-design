@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="380" viewBox="0 0 960 380" role="img" aria-labelledby="title desc">
+  <title id="title">Hengshi Design evidence states and directly labelled data-series specimen</title>
+  <desc id="desc">Six evidence states use exact redundant grammar: Verified filled circle and solid rail; Hengshi-owned demo open diamond and dash-dot rail; Proposed filled square and short-dash rail; Review needed filled triangle and long-dash rail; Unavailable filled bar and dotted rail; Error open octagon and two parallel solid rails. A separate illustrative chart directly labels five data series at their endpoints: Context baseline, Dependency map, Decision frame, Evidence depth, and Risk view. Each data series uses a marker and line pattern that does not duplicate an evidence-state combination.</desc>
+  <rect width="960" height="380" fill="#FAF9F6"/>
+  <text x="48" y="46" fill="#0B0F14" font-family="system-ui, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700">Evidence states and data language</text>
+  <g font-family="system-ui, 'Segoe UI', Arial, sans-serif" font-size="15" fill="#0B0F14">
+    <circle cx="64" cy="86" r="8" fill="#4F7D18"/><path d="M84 86 H172" stroke="#4F7D18" stroke-width="3"/><text x="188" y="92">Verified — filled circle / solid</text>
+    <path d="M64 108 L74 118 L64 128 L54 118 Z" fill="none" stroke="#6D52B5" stroke-width="3"/><path d="M84 118 H172" stroke="#6D52B5" stroke-width="3" stroke-dasharray="10 4 2 4"/><text x="188" y="124">Demo — open diamond / dash-dot</text>
+    <rect x="56" y="146" width="16" height="16" fill="#006D82"/><path d="M84 154 H172" stroke="#006D82" stroke-width="3" stroke-dasharray="8 6"/><text x="188" y="160">Proposed — filled square / short-dash</text>
+    <path d="M64 180 L75 200 H53 Z" fill="#8A5600"/><path d="M84 192 H172" stroke="#8A5600" stroke-width="3" stroke-dasharray="16 7"/><text x="188" y="198">Review needed — triangle / long-dash</text>
+    <rect x="56" y="222" width="16" height="8" fill="#2A3542"/><path d="M84 226 H172" stroke="#2A3542" stroke-width="3" stroke-dasharray="2 7"/><text x="188" y="232">Unavailable — filled bar / dotted</text>
+    <path d="M58 254 L70 254 L76 260 L76 272 L70 278 L58 278 L52 272 L52 260 Z" fill="none" stroke="#8A5600" stroke-width="3"/><path d="M84 263 H172 M84 271 H172" stroke="#8A5600" stroke-width="3"/><text x="188" y="272">Error — open octagon / double-solid</text>
+  </g>
+  <g transform="translate(480 64)" fill="none" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M0 62 L52 48 L104 72 L156 34 L240 40" stroke="#2A3542" stroke-dasharray="1 5 9 5"/>
+    <path d="M235 40 H245 M240 35 V45" stroke="#2A3542"/>
+    <path d="M0 90 L52 122 L104 66 L156 105 L240 85" stroke="#6D52B5" stroke-dasharray="12 3 3 3 3 3"/>
+    <circle cx="240" cy="85" r="7" stroke="#6D52B5"/>
+    <path d="M0 168 L52 118 L104 146 L156 92 L240 130" stroke="#006D82"/>
+    <path d="M233 123 L247 137 M247 123 L233 137" stroke="#006D82"/>
+    <path d="M0 194 L52 154 L104 180 L156 142 L240 175" stroke="#4F7D18" stroke-dasharray="5 5"/>
+    <path d="M240 167 L247 171 L247 179 L240 183 L233 179 L233 171 Z" fill="#4F7D18" stroke="none"/>
+    <path d="M0 216 L52 232 L104 196 L156 226 L240 220" stroke="#8A5600" stroke-dasharray="13 4 4 4"/>
+    <path d="M233 213 L247 227 M247 213 L233 227" stroke="#8A5600"/>
+  </g>
+  <g font-family="system-ui, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700">
+    <text x="744" y="109" fill="#2A3542">Context baseline</text>
+    <text x="744" y="154" fill="#6D52B5">Dependency map</text>
+    <text x="744" y="199" fill="#006D82">Decision frame</text>
+    <text x="744" y="244" fill="#4F7D18">Evidence depth</text>
+    <text x="744" y="289" fill="#8A5600">Risk view</text>
+  </g>
+  <g font-family="ui-monospace, Consolas, monospace" font-size="13" fill="#2A3542">
+    <text x="480" y="326">DATA SERIES — illustrative only; not evidence status</text>
+    <text x="480" y="348">Direct label + unique marker/pattern; exact values need a table.</text>
+  </g>
+</svg>

@@ -5,7 +5,7 @@ import gsap from 'gsap'
 import * as THREE from 'three'
 
 import { useWorldStore, type PanelType } from '../stores/worldStore'
-import type { WorldHotspot, WorldNode } from '../lib/types'
+import type { WorldHotspot } from '../lib/types'
 import { ExteriorScene } from './ExteriorScene'
 
 type HotspotProps = {
@@ -33,7 +33,7 @@ const Hotspot = ({ hotspot, onClick, disabled }: HotspotProps) => {
   )
 }
 
-const Room = ({ node }: { node: WorldNode }) => {
+const Room = () => {
   const size = 8
 
   return (
@@ -64,6 +64,7 @@ const Room = ({ node }: { node: WorldNode }) => {
 
 const InteriorScene = ({ animateOnMount = false }: { animateOnMount?: boolean }) => {
   const { camera } = useThree()
+  const perspectiveCamera = camera as THREE.PerspectiveCamera
   const {
     nodes,
     currentNodeKey,
@@ -103,8 +104,8 @@ const InteriorScene = ({ animateOnMount = false }: { animateOnMount?: boolean })
     if (!previousNodeKey.current && !animateOnMount) {
       camera.position.set(x, y, z)
       targetRef.current.set(tx, ty, tz)
-      camera.fov = fov
-      camera.updateProjectionMatrix()
+      perspectiveCamera.fov = fov
+      perspectiveCamera.updateProjectionMatrix()
       previousNodeKey.current = currentNode.key
       return
     }
@@ -137,18 +138,18 @@ const InteriorScene = ({ animateOnMount = false }: { animateOnMount?: boolean })
       0
     )
     timeline.to(
-      camera,
+      perspectiveCamera,
       {
         fov,
         duration: 1.2,
         ease: 'power3.inOut',
-        onUpdate: () => camera.updateProjectionMatrix()
+        onUpdate: () => perspectiveCamera.updateProjectionMatrix()
       },
       0
     )
 
     previousNodeKey.current = currentNode.key
-  }, [animateOnMount, camera, currentNode, setTransitioning])
+  }, [animateOnMount, camera, currentNode, perspectiveCamera, setTransitioning])
 
   const handleHotspotClick = (hotspot: WorldHotspot) => {
     if (isTransitioning || !hotspot.payload) {
@@ -187,7 +188,7 @@ const InteriorScene = ({ animateOnMount = false }: { animateOnMount?: boolean })
     <>
       <ambientLight intensity={0.45} />
       <directionalLight position={[4, 6, 2]} intensity={1.2} />
-      <Room node={currentNode} />
+      <Room />
       {currentNode.hotspots.map((hotspot) => (
         <Hotspot
           key={hotspot.id}

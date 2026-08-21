@@ -1,0 +1,75 @@
+%% Hengshi Design Digital Platform - Deployment Pipeline (February 2026)
+%% Current: Local development only - Planned: AWS production Sprint 5
+
+flowchart TB
+    subgraph Current_Dev["CURRENT STATE - Local Development"]
+        DEV["Developer Machine - Windows PowerShell"]
+
+        subgraph Terminal_1["Terminal 1 - Database"]
+            DC["docker compose up -d db - PostgreSQL 16 on port 5432"]
+        end
+
+        subgraph Terminal_2["Terminal 2 - API"]
+            VENV[".venv activation"]
+            ALEMBIC["alembic upgrade head"]
+            SEED["seed scripts - create_admin, seed_services, seed_world"]
+            UVICORN["uvicorn app.main:app --reload --port 8000"]
+        end
+
+        subgraph Terminal_3["Terminal 3 - Web"]
+            NPM_I["npm install"]
+            VITE["npm run dev - Vite on port 5173"]
+        end
+
+        DEV --> Terminal_1
+        DEV --> Terminal_2
+        DEV --> Terminal_3
+        VENV --> ALEMBIC
+        ALEMBIC --> SEED
+        SEED --> UVICORN
+        NPM_I --> VITE
+    end
+
+    subgraph Planned_CICD["PLANNED - CI/CD Pipeline Sprint 5"]
+        GH_PUSH["Push to main or PR"]
+        LINT["Lint - ESLint and Ruff"]
+        TEST["Test - Vitest and pytest"]
+        BUILD_FE["Build Frontend - vite build"]
+        BUILD_API["Build API - Docker image"]
+        DEPLOY_FE["Deploy Frontend - S3 sync and CloudFront invalidation"]
+        DEPLOY_API["Deploy API - ECS task update"]
+
+        GH_PUSH --> LINT
+        LINT --> TEST
+        TEST --> BUILD_FE
+        TEST --> BUILD_API
+        BUILD_FE --> DEPLOY_FE
+        BUILD_API --> DEPLOY_API
+    end
+
+    subgraph Planned_AWS["PLANNED - AWS Production Sprint 5"]
+        R53["Route 53 DNS"]
+        CF["CloudFront CDN and SSL"]
+        S3["S3 Bucket - React build and GLB models"]
+        ECS["ECS or EC2 - FastAPI container"]
+        RDS[("RDS PostgreSQL - Managed DB")]
+        REDIS_P["ElastiCache Redis - Rate limiting and cache"]
+
+        R53 --> CF
+        CF --> S3
+        CF --> ECS
+        ECS --> RDS
+        ECS --> REDIS_P
+    end
+
+    Planned_CICD -.-> Planned_AWS
+
+    classDef current fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px
+    classDef planned fill:#FFF3E0,stroke:#EF6C00,stroke-width:2px
+    classDef aws fill:#E1F5FE,stroke:#01579B,stroke-width:2px
+    classDef db fill:#FFEBEE,stroke:#C62828,stroke-width:2px
+
+    class DEV,DC,VENV,ALEMBIC,SEED,UVICORN,NPM_I,VITE current
+    class GH_PUSH,LINT,TEST,BUILD_FE,BUILD_API,DEPLOY_FE,DEPLOY_API planned
+    class R53,CF,S3,ECS,REDIS_P aws
+    class RDS db

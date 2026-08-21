@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "document": {
+    "name": "Hengshi Design D-028 correction 1 of 1 pre-exception producer baseline",
+    "date": "2026-07-19",
+    "authority": "D-028 and CR-001 section 12",
+    "status": "pre_exception_unresolved_revise_package",
+    "currentUsePermitted": false,
+    "rollbackMeaning": "Restore the independently reviewed iteration-3 REVISE package; never treat it as approved identity or authority for a second correction."
+  },
+  "producerSources": [
+    { "path": "01-identity-principles.md", "archivePath": "archive/d-028-correction-1-pre-exception/01-identity-principles.md", "sha256": "D71EFB39F4E22E102C00BA39523E5348D1C8EABD0E9DA4BEBB8AD5671B5EBBC5" },
+    { "path": "05-imagery-iconography-and-data.md", "archivePath": "archive/d-028-correction-1-pre-exception/05-imagery-iconography-and-data.md", "sha256": "00C0636698AF4F33A5D64AB96343E1FC7AA9361C22328A743B9FFE02B4CDFD3D" },
+    { "path": "BRAND_IDENTITY.md", "archivePath": "archive/d-028-correction-1-pre-exception/BRAND_IDENTITY.md", "sha256": "BC60E1B8FCF3E2780B861ACC76487B85FCCF8AF35F43B8C2FF696005ED711671" },
+    { "path": "semantic-tokens.json", "archivePath": "archive/d-028-correction-1-pre-exception/semantic-tokens.json", "sha256": "9AE5C814DBEA4D23CB07FB1DCC5AE1479D5784DA116B1877A517B4BA02D17DF7" },
+    { "path": "traceability.csv", "archivePath": "archive/d-028-correction-1-pre-exception/traceability.csv", "sha256": "A2E53B2C120807D0CC6657412B9EFBEC90781B2F07F44428D6D1FF0E62F1D149" },
+    { "path": "assets/current-hybrid-framework-relay.svg", "archivePath": "archive/d-028-correction-1-pre-exception/assets/current-hybrid-framework-relay.svg", "sha256": "7C98A2BCDB4A998ADDD2E2A6CAEF7A1472C1E37E3986FE8C614D260B4B76B587" },
+    { "path": "assets/direction-a-signal-ledger.svg", "archivePath": "archive/d-028-correction-1-pre-exception/assets/direction-a-signal-ledger.svg", "sha256": "63AF7BF23E7EAC79BC5842877BCCB50C0F25397231E259760645AED923AF4E6A" },
+    { "path": "assets/direction-b-quiet-framework.svg", "archivePath": "archive/d-028-correction-1-pre-exception/assets/direction-b-quiet-framework.svg", "sha256": "B7BBF1BF1EAD1620B883699B3EFAD53CC945BDAB86D562FE9002D14238430504" },
+    { "path": "visual-boards/index.html", "archivePath": "archive/d-028-correction-1-pre-exception/visual-boards/index.html", "sha256": "2C2A4FC2ACFF5C2F8F33262A150C9840FE46005716D9EF94EE6D43200A6F3EB3" },
+    { "path": "visual-boards/identity-board.css", "archivePath": "archive/d-028-correction-1-pre-exception/visual-boards/identity-board.css", "sha256": "0B23BC35DDADCAC4F5483BF5FA5AE4956F6B12F4E25402C1A396D5B6C8AFD4F2" },
+    { "path": "validation/validate-brand-identity.ps1", "archivePath": "archive/d-028-correction-1-pre-exception/validation/validate-brand-identity.ps1", "sha256": "740F08FF0C2D5F1468E747C9308E3B887F81A57E2178B30560EF4615B66AE4B4" },
+    { "path": "validation/audit-identity-board.mjs", "archivePath": "archive/d-028-correction-1-pre-exception/validation/audit-identity-board.mjs", "sha256": "1D47EA0BCA4FFD1E3E60411CD6F68D3E9982F9AEC19D5D6ED64D704070BF243C" },
+    { "path": "validation/capture-identity-evidence.mjs", "archivePath": "archive/d-028-correction-1-pre-exception/validation/capture-identity-evidence.mjs", "sha256": "9B1D9806EC763C1DEC5E248682F5469DF0D638493BD4B782E69F4973CB3F46FE" },
+    { "path": "validation/update-asset-manifest.ps1", "archivePath": "archive/d-028-correction-1-pre-exception/validation/update-asset-manifest.ps1", "sha256": "D2C660ECC04186BC4EFB125AA29B44C5E5AAD302C68E80B158C95FFC0B3A7B0A" },
+    { "path": "README.md", "archivePath": "archive/d-028-correction-1-pre-exception/_sources/README.md", "sha256": "24A86CE70476BB63EFA5C5ADCA1729A4F7B24ED8F4F19B0A503553AE733C531D" },
+    { "path": "handoff.md", "archivePath": "archive/d-028-correction-1-pre-exception/handoff.md", "sha256": "C5724915D7C97BA8B56F73AFEBA8A532A194F9619C8E0CA0B4DFA044B4969B22" },
+    { "path": "producer-inspection.md", "archivePath": "archive/d-028-correction-1-pre-exception/producer-inspection.md", "sha256": "37B4494D31CC8940D50BA4546F8A1B981831A329FF599B284EA9CDD6076F2135" },
+    { "path": "validation/validation-report.md", "archivePath": "archive/d-028-correction-1-pre-exception/validation/validation-report.md", "sha256": "59AB21C63B150D0AD8DED2F77E8AF5D069638779DE8225C43F06190B448B2953" },
+    { "path": "asset-manifest.json", "archivePath": "archive/d-028-correction-1-pre-exception/asset-manifest.json", "sha256": "B6A3824C6751A69DACC746ABCB160CC92C5C7B0ED78720F3FDEE7166AF4FB3A4" }
+  ],
+  "invalidatedEvidence": [
+    { "path": "assets/identity-board-wide.png", "sha256": "953152391FBADD7594F9DB9F1D8D7B64DBC8C1B4D919606F036E15BC5B93E3C8" },
+    { "path": "assets/identity-board-preview.png", "sha256": "953152391FBADD7594F9DB9F1D8D7B64DBC8C1B4D919606F036E15BC5B93E3C8" },
+    { "path": "assets/identity-board-medium.png", "sha256": "7404AB4DC31BD3F7572C52BDB15CCC35C2F52897095DE167667D931F474C2377" },
+    { "path": "assets/identity-board-narrow.png", "sha256": "B8BC129034CC4556A095B7BB4A72D0004CC67436B0DE7BE5F62DDF1B0A78CD86" },
+    { "path": "assets/identity-board-forced-colors.png", "sha256": "D182502F9D44C1D8B2C4AD0D1A39A3A8B22103DD2F27AEA854D991A24E0D048F" },
+    { "path": "assets/identity-board-grayscale.png", "sha256": "C4B03FB702ED4960015D56B6BEE122ED1B08DB8C644417685FAC2497DFC8DD13" },
+    { "path": "assets/identity-board-print.png", "sha256": "98C7754CA7FC8FD22CA81A575F034D5FFF4A6E431F8780B06583D3B53316EDC9" },
+    { "path": "assets/identity-scale-evidence.png", "sha256": "536341C8CE88FCD04BE66829141217F0E808BD8EDCFFC7B14B54775649E948B5" }
+  ],
+  "immutableReports": [
+    { "path": "reviews/design-review-iteration-1.md", "sha256": "12014D5772250EF8B2BA07B911D833B4F53C4CA880961BA55F5B4DCF07CE78DD" },
+    { "path": "accessibility/accessibility-audit-iteration-1.md", "sha256": "532779730294F74716D85115514E3EAA749FF9FAA6EEE48B20CFECF2BEED70D2" },
+    { "path": "reviews/design-review-iteration-2.md", "sha256": "490A4391327D476014CC1B758EDFDDF66DE4C8A03628BE116659E5ADA272D895" },
+    { "path": "accessibility/accessibility-audit-iteration-2.md", "sha256": "FD06D3500F797A2148B7432C6AB2F7F6CF613D71732710BCBE54E65C8761B519" },
+    { "path": "reviews/design-review-iteration-3.md", "sha256": "95C5E18B58E7915837EDDF8A8B4B3BA2EACCB1461C4856F7854F92076937140F" },
+    { "path": "accessibility/accessibility-audit-iteration-3.md", "sha256": "EADE90EF12C4B27C703B69D44982F1B4F5CF2E6E65CB940CDC929C0B4F9A0CED" }
+  ]
+}

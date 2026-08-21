@@ -1,120 +1,119 @@
 # Hengshi Design - Copilot Instructions
 
+## Required Starting Point
+
+Before changing this repository, read these files in order:
+
+1. `AGENTS.md`
+2. `.specify/memory/constitution.md`
+3. `PROJECT.md`, `DECISIONS.md`, `PROJECT_STATE.yaml`, and `TASKS.md`
+4. `docs/software-definition/README.md`
+5. The relevant approved feature spec under `specs/`
+6. For Spec Kit features, the active `spec.md`, `research.md`, `data-model.md`,
+   contracts, `plan.md`, and `tasks.md` where those files exist
+
+Do not bypass the approval gates in
+`docs/software-definition/03-autonomous-ai-development-workflow.md`.
+
+## Binding Workflow Gates
+
+- Product scope, auth, security, infrastructure, API/data/AI/publication contracts,
+  app structure, and repo-structure changes require approved definition and Spec
+  Kit artifacts before code. Application feature development remains closed until
+  the complete Phase 1 package is founder-approved.
+- Every material phase follows create, validate, inspect, independent review,
+  revise, validate again, and founder approval.
+- Production UI work must reference a Stitch or Figma screen before
+  implementation.
+- Version-sensitive framework/library/API/cloud work must use Context7 plus
+  official primary sources, evaluate coupled components as a graph, and select
+  only newest mutually compatible stable versions. Preview/beta/RC/nightly
+  dependencies cannot be production requirements.
+- Frontend UI/UX changes require Playwright verification for changed routes and
+  states.
+- Branches, Git commits/pushes/PRs, migrations, remotes, paid activations,
+  credential changes, external design writes, deployments, and irreversible
+  actions need explicit applicable approval.
+
 ## Architecture Overview
 
-**Monorepo structure:** FastAPI backend + React/Vite frontend + shared schemas
-- `apps/api/` - Python FastAPI with SQLAlchemy 2.0 + Alembic migrations + JWT auth
-- `apps/web/` - React 18 + TypeScript + Tailwind + React Router + Zustand + Three.js (3D visuals)
-- `packages/shared/` - Zod schemas/types (optional, not currently integrated)
-- **Database:** PostgreSQL (Docker) with UUID primary keys and timezone-aware timestamps
+**Protected prototype:** the current code and exterior GLB are evidence, not
+production design or version authority. The approved target retains two
+deployables: a React/Vite frontend and modular FastAPI monolith.
 
-## Critical Development Workflows
+- `apps/api/` - FastAPI, SQLAlchemy, Alembic, PostgreSQL, JWT/bcrypt, and Entra
+  staff identity on the approved dated compatibility matrix.
+- `apps/web/` - React, TypeScript, Vite, TailwindCSS, React Router, Zustand,
+  React Three Fiber, and Three.js on the approved dated compatibility matrix.
+- `packages/shared/` - optional shared TypeScript types/schemas.
+- `docs/` - approved product definitions plus preserved historical evidence.
+- `specs/` - approved feature-level Spec Kit artifacts; drafts are not authority.
 
-### Starting Local Environment (Windows PowerShell)
+## Local Commands
+
 ```powershell
-# Terminal 1: Start database
+# API tests
+npm run test
+
+# Frontend build
+cd apps/web
+npm run build
+
+# Browser checks
+npm run test:e2e
+npm run qa:axe
+npm run qa:lighthouse
+```
+
+## Starting Local Environment
+
+```powershell
+# Terminal 1: database
 docker compose up -d db
 
-# Terminal 2: Activate venv once, then use run.ps1
+# Terminal 2: API
 cd apps/api
 .\.venv\Scripts\Activate.ps1
-python -m app.scripts.create_admin  # First time only
-python -m app.scripts.seed_projects
-python -m app.scripts.seed_world
-# Then either: uvicorn app.main:app --reload --port 8000
-# Or: ./run.ps1
+uvicorn app.main:app --reload --port 8000
 
-# Terminal 3: Start frontend
+# Terminal 3: web
 cd apps/web
-npm run dev  # Vite dev server on port 5173
+npm run dev
 ```
 
-### Database Migrations (Alembic)
-- Run from `apps/api/` with `.env` file present
-- `alembic revision -m "description"` → create new migration
-- `alembic upgrade head` → apply all pending migrations
-- **Important:** Models in `app/models/` must have `Base` as parent class and use `Mapped` type hints
+Database migration is deliberately omitted from generic startup. If the current
+schema is not ready, stop and obtain the explicit migration approval, validate the
+exact project-scoped PostgreSQL target, backup/recovery path, and migration plan
+before running any Alembic mutation.
 
-### API Testing
-```powershell
-cd apps/api
-pytest  # Runs tests in apps/api/tests/
-```
+## Backend Patterns
 
-## Key Patterns & Conventions
+- Database sessions come from `app.db.session.get_db`.
+- SQLAlchemy models live under `app/models/` and inherit from
+  `app.db.base.Base`.
+- Admin routes must use `require_admin` or a stricter dependency.
+- JWT helpers live in `app/auth/jwt.py`; password helpers live in
+  `app/auth/password.py`.
+- Request/response schemas live in `app/{domain}/schemas.py`.
+- Use FastAPI's generated Swagger docs at `http://127.0.0.1:8000/docs` when
+  validating API behavior.
 
-### Backend (FastAPI/SQLAlchemy)
+## Frontend Patterns
 
-**Database session dependency:**
-```python
-from app.db.session import get_db
-from sqlalchemy.orm import Session
+- Routes are defined in `apps/web/src/App.tsx`.
+- API calls go through `apps/web/src/lib/api.ts`.
+- Global client state uses Zustand in `apps/web/src/store/` or
+  `apps/web/src/stores/`.
+- 3D assets live in `apps/web/public/models/`.
+- Do not remove TailwindCSS or replace the approved technology families without
+  founder approval. Exact versions come from the dated compatibility matrix and
+  reproducible locks.
 
-def route_handler(db: Session = Depends(get_db)):
-    # Use db.execute(select(...)) for queries
-    user = db.execute(select(User).where(User.id == user_id)).scalar_one_or_none()
-```
+## Security Notes
 
-**Authentication/Authorization:**
-- JWT tokens created in `app/auth/jwt.py` with payload: `sub` (user_id), `email`, `role`, `exp`
-- All admin routes use `require_admin` dependency (validates JWT + role='admin')
-- Auth token passed in `Authorization: Bearer <token>` header
-- Password hashing via bcrypt in `app/auth/password.py`
-
-**Model definitions:**
-- Use SQLAlchemy 2.0 Annotated Mapped syntax (see `app/models/user.py`)
-- All models inherit from `app.db.base.Base`
-- Always use `server_default` for DB-side defaults (e.g., timestamps, UUIDs)
-- String primary keys are UUIDs: `sa.String(36), default=lambda: str(uuid.uuid4())`
-
-**CRUD routes pattern:**
-- Public list/get routes in `/api/{resource}` (e.g., services, projects, world data)
-- Admin create/update/delete in `/api/admin/{resource}`
-- Use `selectinload()` for eager loading relationships when needed
-- Filter queries with SQLAlchemy expressions, support pagination via `limit`/`offset` Query params
-
-**Response schemas:**
-- Define in `app/{resource}/schemas.py` using Pydantic BaseModel
-- Separate schemas for Create/Update (input) vs. Out (response)
-- Response models declared on route with `response_model=` parameter
-
-### Frontend (React + TypeScript)
-
-**State management:**
-- Zustand stores in `src/store/` for global client state
-- Routes defined in `src/App.tsx` using React Router v6
-- Admin routes protected by `<RequireAdmin>` wrapper (checks localStorage auth token)
-
-**API calls:**
-- HTTP client configured in `src/lib/api.ts`
-- Base URL points to `http://127.0.0.1:8000` (development)
-- Token sent in `Authorization: Bearer` header for admin requests
-- Error responses from FastAPI return HTTP status codes + JSON `detail` field
-
-**3D assets:**
-- Place GLB files in `apps/web/public/models/` for static serving
-- Three.js with react-three-fiber for rendering (see WorldPage component)
-- GSAP for animations
-
-## Critical Integration Points
-
-1. **JWT Secret:** Set `JWT_SECRET` in `.env` (API won't run without it)
-2. **CORS:** Configured in `app/main.py`, defaults to `localhost:5173` (frontend dev server)
-3. **Database URL:** `DATABASE_URL` in `.env`, defaults to PostgreSQL at `localhost:5432`
-4. **Token expiration:** `JWT_EXPIRES_MINUTES` env var (default 120 minutes)
-
-## Common Tasks
-
-**Adding a new admin endpoint:**
-1. Add route to `app/{resource}/routes.py`
-2. Add `require_admin` dependency to protect it
-3. Query models from `app/models/`, return response schema
-4. Frontend calls via `src/lib/api.ts` with token from localStorage
-
-**Seeding initial data:**
-- Scripts in `app/scripts/`: `create_admin.py`, `seed_projects.py`, `seed_services.py`, `seed_world.py`
-- Run manually after migrations: `python -m app.scripts.seed_services`
-
-**Testing API changes:**
-- Use Swagger at `http://127.0.0.1:8000/docs`
-- Unit tests in `apps/api/tests/test_{resource}.py` use `conftest.py` fixtures
+- Do not copy secrets from `%APPDATA%\Code\User\mcp.json`, `.env`, or local
+  machine config into docs, code comments, or chat.
+- Current security-hardening work is tracked under
+  `specs/001-platform-security-hardening/`.
+- If auth behavior changes, update `docs/active/API_Reference.md` and relevant
+  tests in the same change set.

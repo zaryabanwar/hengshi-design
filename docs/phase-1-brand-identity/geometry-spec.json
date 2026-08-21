@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "document": {
+    "name": "Framework Relay authoritative logo geometry",
+    "version": "framework-relay-master-80-v1",
+    "date": "2026-07-19",
+    "status": "exploratory_unregistered_trademark_not_cleared",
+    "authority": "D-026 Evidence in Motion plus D-027 and CR-001; producer iteration 3 of 3",
+    "relationship": "Retained Signal Ledger identity system with a reconciled Quiet Framework-derived logo."
+  },
+  "rationale": {
+    "quietFrameworkSource": "Four open modular corner brackets retain governed modularity, restraint, and the founder-preferred framework logic.",
+    "signalLedgerIntegration": "A non-diagonal stepped evidence relay moves through the open framework in discrete accountable increments, integrating structured trajectory without reusing the rejected Signal Ledger H-derived mark.",
+    "semanticMeaning": "The frame sets reviewable boundaries; the relay shows movement through decision states; the square checkpoint identifies a current evidence point without claiming completion.",
+    "prohibitedInterpretation": "The mark is not a shield, certification, platform product, building, client outcome, or legal/trademark conclusion."
+  },
+  "master": {
+    "id": "framework-relay-master",
+    "viewBox": "0 0 80 80",
+    "frame": {
+      "strokeWidth": 6,
+      "lineCap": "square",
+      "lineJoin": "miter",
+      "topLeft": "M30 10 H10 V30",
+      "topRight": "M50 10 H70 V30",
+      "bottomRight": "M70 50 V70 H50",
+      "bottomLeft": "M30 70 H10 V50"
+    },
+    "relay": {
+      "path": "M16 52 H32 V40 H48 V28 H64",
+      "strokeWidth": 5,
+      "lineCap": "square",
+      "lineJoin": "miter",
+      "checkpoint": { "x": 61, "y": 25, "width": 6, "height": 6 }
+    },
+    "clearspace": {
+      "unit": 10,
+      "minimumUnitsEverySide": 2,
+      "definition": "One unit equals one 10-unit framework return; keep 20 master units clear on every side."
+    },
+    "derivationRule": "Primary, light, monochrome, reverse, and standard-mark SVGs use these coordinates without geometric deviation. Only the named 24-unit and 16-unit optical variants may deviate."
+  },
+  "lockup": {
+    "viewBox": "0 0 420 128",
+    "masterTransform": "translate(24 24)",
+    "wordmark": { "x": 124, "baselineY": 69, "fontSize": 34, "weight": 700, "letterSpacing": -0.8 },
+    "descriptorIncluded": false,
+    "minimumScreenWidthCssPx": 168,
+    "minimumPrintWidthMm": 38,
+    "screenArithmetic": {
+      "retainedNameCssPx": 13.6,
+      "minimumRelayDevicePxAtDpr1": 2.0,
+      "minimumFrameDevicePxAtDpr1": 2.4,
+      "calculation": "34*168/420=13.6; 5*168/420=2.0; 6*168/420=2.4"
+    },
+    "rejectedComparisonWidthCssPx": 144,
+    "rejectedArithmetic": {
+      "retainedNameCssPx": 11.66,
+      "minimumRelayDevicePxAtDpr1": 1.71,
+      "calculation": "34*144/420=11.66; 5*144/420=1.71"
+    },
+    "printArithmetic": {
+      "retainedNameHeightMm": 3.08,
+      "minimumRelayStrokeMm": 0.45,
+      "calculation": "34*38/420=3.08; 5*38/420=0.45"
+    }
+  },
+  "standardMark": {
+    "viewBox": "0 0 80 80",
+    "geometry": "framework-relay-master-80-v1",
+    "minimumScreenWidthCssPx": 32,
+    "minimumRelayDevicePxAtDpr1": 2.0,
+    "calculation": "5*32/80=2.0"
+  },
+  "opticalVariants": [
+    {
+      "id": "framework-relay-small-24-v1",
+      "purpose": "24–31 CSS px standalone mark with a whole-stroke modular frame and retained three-step relay.",
+      "viewBox": "0 0 24 24",
+      "minimumScreenWidthCssPx": 24,
+      "frame": { "strokeWidth": 2, "topLeft": "M9 3 H3 V9", "topRight": "M15 3 H21 V9", "bottomRight": "M21 15 V21 H15", "bottomLeft": "M9 21 H3 V15" },
+      "relay": { "path": "M5 16 H10 V12 H14 V8 H19", "strokeWidth": 2, "checkpoint": { "x": 18, "y": 7, "width": 2, "height": 2 } },
+      "deviation": "Frame returns and relay steps align to a 24-unit optical grid; the topology and square checkpoint remain.",
+      "minimumRetainedDevicePxAtDpr1": 2.0
+    },
+    {
+      "id": "framework-relay-favicon-16-v1",
+      "purpose": "16–23 CSS px browser chrome with whole-pixel bracket and relay strokes.",
+      "viewBox": "0 0 16 16",
+      "minimumScreenWidthCssPx": 16,
+      "frame": { "strokeWidth": 2, "topLeft": "M6 2 H2 V6", "topRight": "M10 2 H14 V6", "bottomRight": "M14 10 V14 H10", "bottomLeft": "M6 14 H2 V10" },
+      "relay": { "path": "M4 11 H7 V8 H10 V5 H12", "strokeWidth": 2, "checkpointIncluded": false },
+      "deviation": "The separate checkpoint is removed because the whole-pixel relay endpoint already identifies the current state at 16 CSS px.",
+      "minimumRetainedDevicePxAtDpr1": 2.0
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "decision": "D-033",
+  "manualAction": "MA-021",
+  "capturedAt": "2026-07-20T00:00:00+05:00",
+  "purpose": "Pre-edit contrast-correction byte-integrity checkpoint created before any D-033 source edit.",
+  "survivingBrowserReport": {
+    "path": "validation/browser-audit-report.json",
+    "requiredSha256": "FC34146CB3C457AA70270B7A2B71BCBDE120292A4A4236FF3CC136C03502128B",
+    "actualSha256": "FC34146CB3C457AA70270B7A2B71BCBDE120292A4A4236FF3CC136C03502128B",
+    "exactMatch": true
+  },
+  "counts": {
+    "reviewReports": 6,
+    "archiveFiles": 31,
+    "forbiddenAuthorityFiles": 24,
+    "reviewMismatches": 0,
+    "archiveMismatches": 0,
+    "forbiddenAuthorityMismatches": 0
+  },
+  "scope": {
+    "objective": "Resolve only .dependency-key contrast incomplete in four narrow/failure states and the three-node board-print contrast violation.",
+    "sourceChangeSetLimit": 1,
+    "validatorInvocationLimit": 1,
+    "browserAuditInvocationLimit": 1,
+    "noRetryAfterTestFailure": true,
+    "identityApprovalClaimed": false
+  },
+  "sourceMutableAllowlist": [
+    "visual-boards/identity-board.css",
+    "visual-boards/index.html",
+    "validation/audit-identity-board.mjs"
+  ],
+  "postPassEvidenceMutableAllowlist": [
+    "validation/browser-audit-report.json",
+    "assets/identity-board-narrow.png",
+    "assets/identity-board-320.png",
+    "assets/identity-board-text-spacing-320.png",
+    "assets/identity-board-asset-failure-320.png",
+    "assets/identity-board-print.png",
+    "asset-manifest.json",
+    "validation/validation-report.md",
+    "producer-inspection.md"
+  ],
+  "protectedAnchors": [
+    {
+      "path": "asset-manifest.json",
+      "exists": true,
+      "sha256": "B6A3824C6751A69DACC746ABCB160CC92C5C7B0ED78720F3FDEE7166AF4FB3A4"
+    },
+    {
+      "path": "validation/d-029-pre-stabilization-hashes.json",
+      "exists": true,
+      "sha256": "E78CD5DDB1F1EB3D8003DE8369EBF436D65BC7FDCBA47C9E788C1E8A00D4527E"
+    }
+  ],
+  "currentLogoMarkGeometry": [
+    {
+      "path": "geometry-spec.json",
+      "exists": true,
+      "sha256": "0D612364E87CAC04155C72267D6DE4FA7C2BB82D0A5A6E35C9BAC96A64167420"
+    },
+    {
+      "path": "assets/current-hybrid-framework-relay.svg",
+      "exists": true,
+      "sha256": "CA6A7005ABC74A1184ADA67B0DD2E9CCF4768335C53F60301820D10974D7B56D"
+    },
+    {
+      "path": "assets/favicon-framework-relay.svg",
+      "exists": true,
+      "sha256": "13EEDA30F5FD1536C5E69CBF13FEDA9147C3D879CEC45AF8120219214CBD8113"
+    },
+    {
+      "path": "assets/logo-framework-relay-light.svg",
+      "exists": true,
+      "sha256": "742B9982DA26904B61CF7835504E1CDB5E49868D4E35CA78F7941B48BFB1B67A"
+    },
+    {
+      "path": "assets/logo-framework-relay-mono.svg",
+      "exists": true,
+      "sha256": "7FFCB2602C2B5A0CB8710FD78D6C7801860BD0C85256AA31BEB68804E4E2BD5D"
+    },
+    {
+      "path": "assets/logo-framework-relay-primary.svg",
+      "exists": true,
+      "sha256": "1F82E777794DE41C64742F3AEFFB79C21712AEC9FBC80D039A2C8D2902DD365E"
+    },
+    {
+      "path": "assets/logo-framework-relay-reverse.svg",
+      "exists": true,
+      "sha256": "BB80405EB8DF8E6C773CCAB77E296D656F92259D88E1B41F1360EEE2B52B25A8"
+    },
+    {
+      "path": "assets/mark-framework-relay-small.svg",
+      "exists": true,
+      "sha256": "ED375CB18D227A50F3A5CDE1AF0C4A09489D91CE196822516AB630880BB34D79"
+    },
+    {
+      "path": "assets/mark-framework-relay.svg",
+      "exists": true,
+      "sha256": "FB436E2ED6FBBA85CC8C886C50CF9D65725EBF8EFFA1E30A0D47EB8B7C73DEE3"
+    }
+  ],
+  "validatorAndEvidenceScripts": [
+    {
+      "path": "validation/validate-brand-identity.ps1",
+      "exists": true,
+      "sha256": "31EE9D6B4D8A22CED716A72D2117389688C0CEB0332CF22F76F80BBA3377E22D"
+    },
+    {
+      "path": "validation/audit-identity-board.mjs",
+      "exists": true,
+      "sha256": "122AD5CC576855CA5ACA4B862B93537EA09074368BF7339D35F69F81BDF0F739"
+    },
+    {
+      "path": "validation/capture-identity-evidence.mjs",
+      "exists": true,
+      "sha256": "BC4AC36FBF8C8BFFE84B903D23D2BFCB429286628627182BE8BC4396B971C30E"
+    },
+    {
+      "path": "validation/update-asset-manifest.ps1",
+      "exists": true,
+      "sha256": "02B8748A6A346E1EA8700968FAE56790E64AACC06DC9BF0040EA928629ABA2E5"
+    }
+  ],
+  "reviewReports": [
+    {
+      "path": "reviews/design-review-iteration-1.md",
+      "exists": true,
+      "sha256": "12014D5772250EF8B2BA07B911D833B4F53C4CA880961BA55F5B4DCF07CE78DD"
+    },
+    {
+      "path": "reviews/design-review-iteration-2.md",
+      "exists": true,
+      "sha256": "490A4391327D476014CC1B758EDFDDF66DE4C8A03628BE116659E5ADA272D895"
+    },
+    {
+      "path": "reviews/design-review-iteration-3.md",
+      "exists": true,
+      "sha256": "95C5E18B58E7915837EDDF8A8B4B3BA2EACCB1461C4856F7854F92076937140F"
+    },
+    {
+      "path": "accessibility/accessibility-audit-iteration-1.md",
+      "exists": true,
+      "sha256": "532779730294F74716D85115514E3EAA749FF9FAA6EEE48B20CFECF2BEED70D2"
+    },
+    {
+      "path": "accessibility/accessibility-audit-iteration-2.md",
+      "exists": true,
+      "sha256": "FD06D3500F797A2148B7432C6AB2F7F6CF613D71732710BCBE54E65C8761B519"
+    },
+    {
+      "path": "accessibility/accessibility-audit-iteration-3.md",
+      "exists": true,
+      "sha256": "EADE90EF12C4B27C703B69D44982F1B4F5CF2E6E65CB940CDC929C0B4F9A0CED"
+    }
+  ],
+  "archiveInventory": [
+    {
+      "path": "archive/d-028-correction-1-pre-exception/_sources/README.md",
+      "exists": true,
+      "sha256": "24A86CE70476BB63EFA5C5ADCA1729A4F7B24ED8F4F19B0A503553AE733C531D"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/01-identity-principles.md",
+      "exists": true,
+      "sha256": "D71EFB39F4E22E102C00BA39523E5348D1C8EABD0E9DA4BEBB8AD5671B5EBBC5"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/05-imagery-iconography-and-data.md",
+      "exists": true,
+      "sha256": "00C0636698AF4F33A5D64AB96343E1FC7AA9361C22328A743B9FFE02B4CDFD3D"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/asset-manifest.json",
+      "exists": true,
+      "sha256": "B6A3824C6751A69DACC746ABCB160CC92C5C7B0ED78720F3FDEE7166AF4FB3A4"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/assets/current-hybrid-framework-relay.svg",
+      "exists": true,
+      "sha256": "7C98A2BCDB4A998ADDD2E2A6CAEF7A1472C1E37E3986FE8C614D260B4B76B587"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/assets/direction-a-signal-ledger.svg",
+      "exists": true,
+      "sha256": "63AF7BF23E7EAC79BC5842877BCCB50C0F25397231E259760645AED923AF4E6A"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/assets/direction-b-quiet-framework.svg",
+      "exists": true,
+      "sha256": "B7BBF1BF1EAD1620B883699B3EFAD53CC945BDAB86D562FE9002D14238430504"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/baseline-inventory.json",
+      "exists": true,
+      "sha256": "390A9DC8E26FDBAD284AF06230E5A6D4F48BC68B40A17C5A0CB0647EC3848B9D"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/BRAND_IDENTITY.md",
+      "exists": true,
+      "sha256": "BC60E1B8FCF3E2780B861ACC76487B85FCCF8AF35F43B8C2FF696005ED711671"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/handoff.md",
+      "exists": true,
+      "sha256": "C5724915D7C97BA8B56F73AFEBA8A532A194F9619C8E0CA0B4DFA044B4969B22"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/producer-inspection.md",
+      "exists": true,
+      "sha256": "37B4494D31CC8940D50BA4546F8A1B981831A329FF599B284EA9CDD6076F2135"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/README.md",
+      "exists": true,
+      "sha256": "4F8B459416A2960375F947F928CA3921FD9163A88029284B27C3F261533CA938"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/semantic-tokens.json",
+      "exists": true,
+      "sha256": "9AE5C814DBEA4D23CB07FB1DCC5AE1479D5784DA116B1877A517B4BA02D17DF7"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/traceability.csv",
+      "exists": true,
+      "sha256": "A2E53B2C120807D0CC6657412B9EFBEC90781B2F07F44428D6D1FF0E62F1D149"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/validation/audit-identity-board.mjs",
+      "exists": true,
+      "sha256": "1D47EA0BCA4FFD1E3E60411CD6F68D3E9982F9AEC19D5D6ED64D704070BF243C"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/validation/capture-identity-evidence.mjs",
+      "exists": true,
+      "sha256": "9B1D9806EC763C1DEC5E248682F5469DF0D638493BD4B782E69F4973CB3F46FE"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/validation/update-asset-manifest.ps1",
+      "exists": true,
+      "sha256": "D2C660ECC04186BC4EFB125AA29B44C5E5AAD302C68E80B158C95FFC0B3A7B0A"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/validation/validate-brand-identity.ps1",
+      "exists": true,
+      "sha256": "740F08FF0C2D5F1468E747C9308E3B887F81A57E2178B30560EF4615B66AE4B4"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/validation/validation-report.md",
+      "exists": true,
+      "sha256": "59AB21C63B150D0AD8DED2F77E8AF5D069638779DE8225C43F06190B448B2953"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/visual-boards/identity-board.css",
+      "exists": true,
+      "sha256": "0B23BC35DDADCAC4F5483BF5FA5AE4956F6B12F4E25402C1A396D5B6C8AFD4F2"
+    },
+    {
+      "path": "archive/d-028-correction-1-pre-exception/visual-boards/index.html",
+      "exists": true,
+      "sha256": "2C2A4FC2ACFF5C2F8F33262A150C9840FE46005716D9EF94EE6D43200A6F3EB3"
+    },
+    {
+      "path": "archive/iteration-2-signal-ledger-logo/assets/favicon-concept.svg",
+      "exists": true,
+      "sha256": "F06819AE6E3E4AFA4D1C105E29F756805EC35A86903C0A35E1C412A0ED5CFD20"
+    },
+    {
+      "path": "archive/iteration-2-signal-ledger-logo/assets/logo-signal-ledger-dark.svg",
+      "exists": true,
+      "sha256": "F93AC31006077DD432ED089CAE4418E097607F9C1FA730F597EE1D0F8C376B60"
+    },
+    {
+      "path": "archive/iteration-2-signal-ledger-logo/assets/logo-signal-ledger-mono.svg",
+      "exists": true,
+      "sha256": "8B0E09C82548B8989B115895E4CCD421B57D6609E69BAEFAE07518A4D09A4F8A"
+    },
+    {
+      "path": "archive/iteration-2-signal-ledger-logo/assets/logo-signal-ledger-primary.svg",
+      "exists": true,
+      "sha256": "0C42E673C1222A33A264046E2024992BA82AC0B779EF1FD31AE416EF4D562497"
+    },
+    {
+      "path": "archive/iteration-2-signal-ledger-logo/assets/logo-signal-ledger-reverse.svg",
+      "exists": true,
+      "sha256": "6BAAFDF208565254CC36BB3F4004A8972240B8B6CEC467B16B9A738462D48FCA"
+    },
+    {
+      "path": "archive/iteration-2-signal-ledger-logo/assets/mark-signal-ledger-small.svg",
+      "exists": true,
+      "sha256": "9F412112E735B38E9EEE1071A235C4EA551397B29288783A29174D21FD48AA2B"
+    },
+    {
+      "path": "archive/iteration-2-signal-ledger-logo/assets/monogram-signal-ledger.svg",
+      "exists": true,
+      "sha256": "ED5EFCBEDE50B769B65495DDA97DDE017AA2936B6DDA256F532E3C1CAD723FC7"
+    },
+    {
+      "path": "archive/iteration-2-signal-ledger-logo/baseline-inventory.json",
+      "exists": true,
+      "sha256": "02B5E7CFD03F1EAB7C9DEE7AFE929C3F24E15379EB3B00CC33466665000A2C23"
+    },
+    {
+      "path": "archive/iteration-2-signal-ledger-logo/geometry-spec.json",
+      "exists": true,
+      "sha256": "03A97795E196477D77C33DEDCF3DEF63FAB517CA97C1591688B1FEB2FEA51877"
+    },
+    {
+      "path": "archive/iteration-2-signal-ledger-logo/README.md",
+      "exists": true,
+      "sha256": "97AA9EB2374FD04930CEB676D65F875B3BDA264FB79B3F508BA6D6955E5000F2"
+    }
+  ],
+  "forbiddenAuthorityFiles": [
+    {
+      "path": "README.md",
+      "exists": true,
+      "sha256": "3AECE7C7A1C1DE5A9DFBD4164636D1B7755F43745E8032AFD5EF84F0306A0E8F"
+    },
+    {
+      "path": "handoff.md",
+      "exists": true,
+      "sha256": "A8EABE076EB2ACA3BE0253A46D22C9BB30024452005FE888A3601EE039F4009D"
+    },
+    {
+      "path": "01-identity-principles.md",
+      "exists": true,
+      "sha256": "0411C33F548AFB07B485970AAA912A892A2FF036B3E149FA0286E4A4EA981BE2"
+    },
+    {
+      "path": "05-imagery-iconography-and-data.md",
+      "exists": true,
+      "sha256": "945568FB1FF27884C70A3A0F065AF2CBF3A7022DC222CF0CCFE592828C796391"
+    },
+    {
+      "path": "BRAND_IDENTITY.md",
+      "exists": true,
+      "sha256": "2508A618D9510C0B715D8C5EF9BAA903929A7B4EE815E058756ABF9D4AD53E0B"
+    },
+    {
+      "path": "geometry-spec.json",
+      "exists": true,
+      "sha256": "0D612364E87CAC04155C72267D6DE4FA7C2BB82D0A5A6E35C9BAC96A64167420"
+    },
+    {
+      "path": "semantic-tokens.json",
+      "exists": true,
+      "sha256": "874BC1DF44722358C727CF318E1C7BAAA0ABF50244AA690ED7A256D1BAA6FE3B"
+    },
+    {
+      "path": "traceability.csv",
+      "exists": true,
+      "sha256": "971518F03F5325A08EA0239371C5D7C1A23340B0265662FA3CF5D7D15102C12A"
+    },
+    {
+      "path": "assets/current-hybrid-framework-relay.svg",
+      "exists": true,
+      "sha256": "CA6A7005ABC74A1184ADA67B0DD2E9CCF4768335C53F60301820D10974D7B56D"
+    },
+    {
+      "path": "assets/direction-a-signal-ledger.svg",
+      "exists": true,
+      "sha256": "8C64D67B00B629E6D8D3F0E04CFA122D1FF133FFA14BBC55B77EA04FEE83C94F"
+    },
+    {
+      "path": "assets/direction-b-quiet-framework.svg",
+      "exists": true,
+      "sha256": "3D0E10EBDA3B4A4EEEE221B18D75D1210EA80D926123281DD9D1A889C2CFD2BA"
+    },
+    {
+      "path": "assets/direction-c-resonant-field.svg",
+      "exists": true,
+      "sha256": "97562BB64FCA4E852874F0948363E47818163D6E6E36F2CB8FFBFB942B33491D"
+    },
+    {
+      "path": "assets/favicon-framework-relay.svg",
+      "exists": true,
+      "sha256": "13EEDA30F5FD1536C5E69CBF13FEDA9147C3D879CEC45AF8120219214CBD8113"
+    },
+    {
+      "path": "assets/icon-data-specimen.svg",
+      "exists": true,
+      "sha256": "870B3D39D0149B9982A0AE0086A4D881BE5D354B50270BB283D66641E53D2F5F"
+    },
+    {
+      "path": "assets/logo-framework-relay-light.svg",
+      "exists": true,
+      "sha256": "742B9982DA26904B61CF7835504E1CDB5E49868D4E35CA78F7941B48BFB1B67A"
+    },
+    {
+      "path": "assets/logo-framework-relay-mono.svg",
+      "exists": true,
+      "sha256": "7FFCB2602C2B5A0CB8710FD78D6C7801860BD0C85256AA31BEB68804E4E2BD5D"
+    },
+    {
+      "path": "assets/logo-framework-relay-primary.svg",
+      "exists": true,
+      "sha256": "1F82E777794DE41C64742F3AEFFB79C21712AEC9FBC80D039A2C8D2902DD365E"
+    },
+    {
+      "path": "assets/logo-framework-relay-reverse.svg",
+      "exists": true,
+      "sha256": "BB80405EB8DF8E6C773CCAB77E296D656F92259D88E1B41F1360EEE2B52B25A8"
+    },
+    {
+      "path": "assets/logo-quiet-framework.svg",
+      "exists": true,
+      "sha256": "83732D1B886979103D186D9CD2AB8423659851AF77A290E3DB89A78823962F3E"
+    },
+    {
+      "path": "assets/logo-resonant-field.svg",
+      "exists": true,
+      "sha256": "0BDF59330B5011A2E2AC6CCA1F2A5286AA475CFA7144E34C99D462EF9EB964B3"
+    },
+    {
+      "path": "assets/mark-framework-relay-small.svg",
+      "exists": true,
+      "sha256": "ED375CB18D227A50F3A5CDE1AF0C4A09489D91CE196822516AB630880BB34D79"
+    },
+    {
+      "path": "assets/mark-framework-relay.svg",
+      "exists": true,
+      "sha256": "FB436E2ED6FBBA85CC8C886C50CF9D65725EBF8EFFA1E30A0D47EB8B7C73DEE3"
+    },
+    {
+      "path": "assets/og-evidence-in-motion.svg",
+      "exists": true,
+      "sha256": "893689B26A0B5AF550E0B60711527A3D944A31E90B70FFB4BCA4931D8414C6A0"
+    },
+    {
+      "path": "assets/identity-scale-evidence.png",
+      "exists": true,
+      "sha256": "536341C8CE88FCD04BE66829141217F0E808BD8EDCFFC7B14B54775649E948B5"
+    }
+  ],
+  "preEditIntegrity": {
+    "browserReportExact": true,
+    "reviewReportsExact": true,
+    "archiveInventoryExact": true,
+    "forbiddenAuthorityExact": true,
+    "temporaryProfileResidue": []
+  }
+}

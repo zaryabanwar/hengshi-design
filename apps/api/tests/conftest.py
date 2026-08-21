@@ -14,7 +14,7 @@ API_ROOT = Path(__file__).resolve().parents[1]
 if str(API_ROOT) not in sys.path:
     sys.path.insert(0, str(API_ROOT))
 
-os.environ.setdefault('JWT_SECRET', 'test-secret')
+os.environ.setdefault('JWT_SECRET', 'test-secret-for-hengshi-api-tests-32')
 os.environ.setdefault('JWT_EXPIRES_MINUTES', '60')
 
 from app.db.base import Base  # noqa: E402

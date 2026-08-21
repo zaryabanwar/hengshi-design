@@ -1,0 +1,10 @@
+exclusion_id,pattern,ux_behavior,index_control,recovery_or_safe_destination
+EXCL-WORLD,/world,"Optional immersive shell; never required; same release and canonical links","noindex follow; X-Robots-Tag noindex; sitemap excluded","Quick Access retaining safe route/service context"
+EXCL-ADMIN,/admin/**,"Authenticated staff utility with server-enforced role states","authenticated and noindex; no public links; sitemap excluded","Sign in; access denied; session-expired recovery; no draft leakage"
+EXCL-NONPUBLIC-PUBLICATION,"/preview/**, /draft/**, /rejected/**","Authorized preview only; conspicuous nonpublic state","access controlled and noindex; no search/AI notification","Return to staff queue; public users receive non-disclosing not-found/access response"
+EXCL-CHAT-SESSIONS,"/chat/**, /sessions/**","Private ephemeral or consent-governed session state","noindex; sitemap excluded","Resume only when valid; expired/unavailable routes to new ephemeral AI, human help, or Book"
+EXCL-INTERNAL-SEARCH,"/search and internal-search result URLs","Utility results with clean canonical result links; query not approved in URL","noindex follow; canonical omitted; sitemap excluded","Clear search; browse directory; unknown path 404"
+EXCL-TRACKING-PARAMETERS,"recognized tracking parameters","Same truthful clean document; first-party links remain clean","canonical to clean document; variants excluded","Strip allowlisted parameter; unlisted parameter requires decision"
+EXCL-FILTER-SORT-VARIANTS,"filter and sort URL variants","No URL-backed filter/sort approved; local UI state only","unapproved variants 404; no canonical; sitemap excluded","Return to clean collection or directory"
+EXCL-STAGING,"staging and candidate hosts","Restricted candidate evidence; no public discovery","access controlled; X-Robots-Tag noindex; no submission","Authenticate or return to production canonical once approved"
+EXCL-DEFENSE,"defense routes or content","Absent; ordinary AI refuses and offers only approved safe route","no render, sitemap, search notification, or AI knowledge","General public services/Contact; secure human route only after MA-011"

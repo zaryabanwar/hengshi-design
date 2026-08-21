@@ -1,0 +1,888 @@
+{
+  "schemaVersion": "1.0.0",
+  "observedAt": "2026-07-19",
+  "timezone": "Asia/Karachi",
+  "status": "current_evidence_only",
+  "lockSelectionState": "deferred",
+  "authorityRefs": [
+    "D-004",
+    "D-014",
+    "D-020",
+    "D-021",
+    "R-003",
+    "R-004",
+    "R-005",
+    "R-006"
+  ],
+  "sourceFiles": [
+    {
+      "path": "package.json",
+      "sha256": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908"
+    },
+    {
+      "path": "apps/web/package.json",
+      "sha256": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a"
+    },
+    {
+      "path": "apps/web/package-lock.json",
+      "sha256": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d"
+    },
+    {
+      "path": "apps/api/requirements.txt",
+      "sha256": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd"
+    },
+    {
+      "path": "docker-compose.yml",
+      "sha256": "251bfe991ca92728af213c946725c9c284882c97c3707ff15500ad740af3a27f"
+    }
+  ],
+  "items": [
+    {
+      "id": "runtime-node",
+      "domain": "runtime",
+      "name": "Node.js",
+      "currentVersion": "24.14.0",
+      "state": "installed_observed",
+      "declaredConstraint": null,
+      "sourceOfResolvedVersion": "node --version",
+      "boundedness": "runtime_not_repository_pinned",
+      "lockState": "no .node-version or .nvmrc",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["LOC-001"]
+      }
+    },
+    {
+      "id": "runtime-npm",
+      "domain": "runtime",
+      "name": "npm",
+      "currentVersion": "11.11.1",
+      "state": "installed_observed",
+      "declaredConstraint": null,
+      "sourceOfResolvedVersion": "npm --version",
+      "boundedness": "runtime_not_repository_pinned",
+      "lockState": "lockfileVersion 3 exists; package-manager version is not pinned",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["LOC-001", "LOC-004"]
+      }
+    },
+    {
+      "id": "runtime-python",
+      "domain": "runtime",
+      "name": "CPython",
+      "currentVersion": "3.14.5",
+      "state": "installed_observed",
+      "declaredConstraint": null,
+      "sourceOfResolvedVersion": "python --version and API venv python --version",
+      "boundedness": "runtime_not_repository_pinned",
+      "lockState": "no .python-version or pyproject.toml",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["LOC-001"]
+      }
+    },
+    {
+      "id": "tool-pip",
+      "domain": "runtime",
+      "name": "pip",
+      "currentVersion": "26.1.1",
+      "state": "installed_observed",
+      "declaredConstraint": null,
+      "sourceOfResolvedVersion": "API venv python -m pip --version",
+      "boundedness": "venv_state_not_repository_pinned",
+      "lockState": "no Python lock",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["LOC-002"]
+      }
+    },
+    {
+      "id": "frontend-react",
+      "domain": "frontend",
+      "name": "react",
+      "currentVersion": "18.3.1",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^18.2.0",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/react",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact transitive lock entry; manifest permits drift on relock",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json", "LOC-003", "LOC-004"]
+      }
+    },
+    {
+      "id": "frontend-react-dom",
+      "domain": "frontend",
+      "name": "react-dom",
+      "currentVersion": "18.3.1",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^18.2.0",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/react-dom",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact lock entry; peer requires React 18.3.1",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json", "LOC-004"]
+      }
+    },
+    {
+      "id": "frontend-react-router-dom",
+      "domain": "frontend",
+      "name": "react-router-dom",
+      "currentVersion": "6.30.3",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^6.22.3",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/react-router-dom",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact lock entry; manifest permits v6 drift",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json", "LOC-004"]
+      }
+    },
+    {
+      "id": "frontend-zustand",
+      "domain": "frontend",
+      "name": "zustand",
+      "currentVersion": "4.5.7",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^4.5.2",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/zustand",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact lock entry",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json"]
+      }
+    },
+    {
+      "id": "frontend-gsap",
+      "domain": "frontend",
+      "name": "gsap",
+      "currentVersion": "3.14.2",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^3.12.5",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/gsap",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact lock entry",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json"]
+      }
+    },
+    {
+      "id": "frontend-types-react",
+      "domain": "frontend_toolchain",
+      "name": "@types/react",
+      "currentVersion": "18.3.27",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^18.2.55",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/@types/react",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact lock entry",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json"]
+      }
+    },
+    {
+      "id": "frontend-types-react-dom",
+      "domain": "frontend_toolchain",
+      "name": "@types/react-dom",
+      "currentVersion": "18.3.7",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^18.2.19",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/@types/react-dom",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact lock entry; peer requires React types 18",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json"]
+      }
+    },
+    {
+      "id": "three-r3f",
+      "domain": "three_d",
+      "name": "@react-three/fiber",
+      "currentVersion": "8.18.0",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^8.16.8",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/@react-three/fiber",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact lock entry; peers React/DOM 18 below 19 and Three 0.133+",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json", "LOC-004"]
+      }
+    },
+    {
+      "id": "three-drei",
+      "domain": "three_d",
+      "name": "@react-three/drei",
+      "currentVersion": "9.122.0",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^9.110.0",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/@react-three/drei",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact lock entry; peers R3F 8, React/DOM 18, Three 0.137+",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json", "LOC-004"]
+      }
+    },
+    {
+      "id": "three-core",
+      "domain": "three_d",
+      "name": "three",
+      "currentVersion": "0.160.1",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^0.160.0",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/three",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact lock entry",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json"]
+      }
+    },
+    {
+      "id": "tool-typescript-web",
+      "domain": "frontend_toolchain",
+      "name": "typescript",
+      "currentVersion": "5.9.3",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^5.3.3",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/typescript",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact web lock entry; shared package separately declares ~5.9.3 without its own install/lock",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json", "packages/shared/package.json"]
+      }
+    },
+    {
+      "id": "tool-vite",
+      "domain": "frontend_toolchain",
+      "name": "vite",
+      "currentVersion": "5.4.21",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^5.0.12",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/vite",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact lock entry; Node peer currently satisfied",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json", "apps/web/vite.config.ts"]
+      }
+    },
+    {
+      "id": "tool-vite-react",
+      "domain": "frontend_toolchain",
+      "name": "@vitejs/plugin-react",
+      "currentVersion": "4.7.0",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^4.2.1",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/@vitejs/plugin-react",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact lock entry; current peer accepts Vite 4 through 7",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json", "LOC-004"]
+      }
+    },
+    {
+      "id": "tool-tailwind",
+      "domain": "frontend_toolchain",
+      "name": "tailwindcss",
+      "currentVersion": "3.4.19",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^3.4.1",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/tailwindcss",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact lock entry; JS config and PostCSS integration present",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json", "apps/web/tailwind.config.js", "apps/web/postcss.config.js"]
+      }
+    },
+    {
+      "id": "tool-postcss",
+      "domain": "frontend_toolchain",
+      "name": "postcss",
+      "currentVersion": "8.5.6",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^8.4.35",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/postcss",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact lock entry",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json", "apps/web/postcss.config.js"]
+      }
+    },
+    {
+      "id": "tool-autoprefixer",
+      "domain": "frontend_toolchain",
+      "name": "autoprefixer",
+      "currentVersion": "10.4.23",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^10.4.19",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/autoprefixer",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact lock entry; peers PostCSS 8.1+",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json", "apps/web/postcss.config.js"]
+      }
+    },
+    {
+      "id": "tool-eslint",
+      "domain": "frontend_toolchain",
+      "name": "eslint",
+      "currentVersion": "8.57.1",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^8.56.0",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/eslint",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact lock entry; no lint script or config was found in the inspected app manifest/config set",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json"]
+      }
+    },
+    {
+      "id": "tool-typescript-eslint-parser",
+      "domain": "frontend_toolchain",
+      "name": "@typescript-eslint/parser",
+      "currentVersion": "6.21.0",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^6.21.0",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/@typescript-eslint/parser",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact lock entry; peers ESLint 7 or 8",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json", "LOC-004"]
+      }
+    },
+    {
+      "id": "tool-typescript-eslint-plugin",
+      "domain": "frontend_toolchain",
+      "name": "@typescript-eslint/eslint-plugin",
+      "currentVersion": "6.21.0",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^6.21.0",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/@typescript-eslint/eslint-plugin",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact lock entry; peers same parser major and ESLint 7 or 8",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json", "LOC-004"]
+      }
+    },
+    {
+      "id": "tool-eslint-react-hooks",
+      "domain": "frontend_toolchain",
+      "name": "eslint-plugin-react-hooks",
+      "currentVersion": "4.6.2",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^4.6.0",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/eslint-plugin-react-hooks",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact lock entry",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json"]
+      }
+    },
+    {
+      "id": "tool-eslint-react-refresh",
+      "domain": "frontend_toolchain",
+      "name": "eslint-plugin-react-refresh",
+      "currentVersion": "0.4.26",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^0.4.6",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/eslint-plugin-react-refresh",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact lock entry; peer ESLint 8.40+",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json"]
+      }
+    },
+    {
+      "id": "shared-zod",
+      "domain": "shared_tooling",
+      "name": "zod",
+      "currentVersion": null,
+      "state": "declared_not_installed_or_locked_for_shared_package",
+      "declaredConstraint": "^3.25.8",
+      "sourceOfResolvedVersion": "packages/shared/package.json; packages/shared/node_modules absent",
+      "boundedness": "manifest_range_without_project_lock",
+      "lockState": "root lock contains unrelated transitive zod 3.25.76; it does not lock packages/shared",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["packages/shared/package.json", "LOC-007"]
+      }
+    },
+    {
+      "id": "backend-fastapi",
+      "domain": "backend",
+      "name": "fastapi",
+      "currentVersion": "0.138.0",
+      "state": "installed_unlocked",
+      "declaredConstraint": "unbounded",
+      "sourceOfResolvedVersion": "API venv pip freeze",
+      "boundedness": "unbounded_requirement",
+      "lockState": "no standards-based Python lock",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/api/requirements.txt", "LOC-002", "LOC-005"]
+      }
+    },
+    {
+      "id": "backend-starlette",
+      "domain": "backend",
+      "name": "starlette",
+      "currentVersion": "1.3.1",
+      "state": "installed_transitive_unlocked",
+      "declaredConstraint": "transitive through FastAPI",
+      "sourceOfResolvedVersion": "API venv pip freeze",
+      "boundedness": "transitive_without_lock",
+      "lockState": "no standards-based Python lock",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["LOC-002", "LOC-005"]
+      }
+    },
+    {
+      "id": "backend-pydantic",
+      "domain": "backend",
+      "name": "pydantic",
+      "currentVersion": "2.13.4",
+      "state": "installed_transitive_unlocked",
+      "declaredConstraint": "transitive through FastAPI",
+      "sourceOfResolvedVersion": "API venv pip freeze",
+      "boundedness": "transitive_without_lock",
+      "lockState": "Pydantic Core 2.46.4 installed but neither is locked",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["LOC-002", "LOC-005"]
+      }
+    },
+    {
+      "id": "backend-uvicorn",
+      "domain": "backend",
+      "name": "uvicorn",
+      "currentVersion": "0.49.0",
+      "state": "installed_unlocked",
+      "declaredConstraint": "uvicorn[standard] unbounded",
+      "sourceOfResolvedVersion": "API venv pip freeze",
+      "boundedness": "unbounded_requirement_with_extra",
+      "lockState": "standard extra transitive packages are not locked",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/api/requirements.txt", "LOC-002", "LOC-005"]
+      }
+    },
+    {
+      "id": "backend-sqlalchemy",
+      "domain": "backend",
+      "name": "SQLAlchemy",
+      "currentVersion": "2.0.51",
+      "state": "installed_unlocked",
+      "declaredConstraint": ">=2.0",
+      "sourceOfResolvedVersion": "API venv pip freeze",
+      "boundedness": "lower_bound_without_upper_or_lock",
+      "lockState": "no standards-based Python lock",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/api/requirements.txt", "LOC-002", "LOC-005"]
+      }
+    },
+    {
+      "id": "backend-alembic",
+      "domain": "backend",
+      "name": "alembic",
+      "currentVersion": "1.18.4",
+      "state": "installed_unlocked",
+      "declaredConstraint": "unbounded",
+      "sourceOfResolvedVersion": "API venv pip freeze",
+      "boundedness": "unbounded_requirement",
+      "lockState": "seven repository revisions; dependency version is not locked",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/api/requirements.txt", "apps/api/alembic", "LOC-002"]
+      }
+    },
+    {
+      "id": "backend-psycopg",
+      "domain": "backend",
+      "name": "psycopg and psycopg-binary",
+      "currentVersion": "3.3.4",
+      "state": "installed_unlocked",
+      "declaredConstraint": "psycopg[binary] unbounded",
+      "sourceOfResolvedVersion": "API venv pip freeze",
+      "boundedness": "unbounded_requirement_with_binary_extra",
+      "lockState": "Python and binary packages happen to align at 3.3.4 but are not locked",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/api/requirements.txt", "LOC-002", "LOC-005"]
+      }
+    },
+    {
+      "id": "backend-bcrypt",
+      "domain": "backend",
+      "name": "bcrypt",
+      "currentVersion": "5.0.0",
+      "state": "installed_unlocked",
+      "declaredConstraint": "unbounded",
+      "sourceOfResolvedVersion": "API venv pip freeze",
+      "boundedness": "unbounded_requirement",
+      "lockState": "no standards-based Python lock",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/api/requirements.txt", "LOC-002"]
+      }
+    },
+    {
+      "id": "backend-pyjwt",
+      "domain": "backend",
+      "name": "PyJWT",
+      "currentVersion": "2.13.0",
+      "state": "installed_unlocked",
+      "declaredConstraint": "unbounded",
+      "sourceOfResolvedVersion": "API venv pip freeze",
+      "boundedness": "unbounded_requirement",
+      "lockState": "no standards-based Python lock",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/api/requirements.txt", "LOC-002"]
+      }
+    },
+    {
+      "id": "backend-httpx",
+      "domain": "backend",
+      "name": "httpx",
+      "currentVersion": "0.28.1",
+      "state": "installed_unlocked",
+      "declaredConstraint": "unbounded",
+      "sourceOfResolvedVersion": "API venv pip freeze",
+      "boundedness": "unbounded_requirement",
+      "lockState": "no standards-based Python lock",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/api/requirements.txt", "LOC-002"]
+      }
+    },
+    {
+      "id": "backend-email-validator",
+      "domain": "backend",
+      "name": "email-validator",
+      "currentVersion": "2.3.0",
+      "state": "installed_unlocked",
+      "declaredConstraint": "unbounded",
+      "sourceOfResolvedVersion": "API venv pip freeze",
+      "boundedness": "unbounded_requirement",
+      "lockState": "no standards-based Python lock",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/api/requirements.txt", "LOC-002"]
+      }
+    },
+    {
+      "id": "backend-python-dotenv",
+      "domain": "backend",
+      "name": "python-dotenv",
+      "currentVersion": "1.2.2",
+      "state": "installed_unlocked",
+      "declaredConstraint": "unbounded",
+      "sourceOfResolvedVersion": "API venv pip freeze",
+      "boundedness": "unbounded_requirement",
+      "lockState": "no standards-based Python lock",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/api/requirements.txt", "LOC-002"]
+      }
+    },
+    {
+      "id": "qa-pytest",
+      "domain": "qa",
+      "name": "pytest",
+      "currentVersion": "9.1.1",
+      "state": "installed_unlocked",
+      "declaredConstraint": "unbounded",
+      "sourceOfResolvedVersion": "API venv pip freeze",
+      "boundedness": "unbounded_requirement",
+      "lockState": "no standards-based Python lock",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/api/requirements.txt", "LOC-002", "LOC-005"]
+      }
+    },
+    {
+      "id": "qa-pytest-asyncio",
+      "domain": "qa",
+      "name": "pytest-asyncio",
+      "currentVersion": null,
+      "state": "declared_but_absent",
+      "declaredConstraint": "unbounded",
+      "sourceOfResolvedVersion": "pip show and import-spec check returned absent",
+      "boundedness": "unbounded_requirement_not_installed",
+      "lockState": "no standards-based Python lock",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/api/requirements.txt", "LOC-006"]
+      }
+    },
+    {
+      "id": "qa-playwright",
+      "domain": "qa",
+      "name": "@playwright/test",
+      "currentVersion": "1.61.1",
+      "state": "installed_and_locked_cli_version_tested",
+      "declaredConstraint": "^1.61.1",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json and npx --no-install playwright --version",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "package locked; browser binary revisions and CI cache are not repository-pinned",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json", "apps/web/playwright.config.ts", "LOC-009"]
+      }
+    },
+    {
+      "id": "qa-axe-playwright",
+      "domain": "qa",
+      "name": "@axe-core/playwright",
+      "currentVersion": "4.12.1",
+      "state": "installed_and_locked",
+      "declaredConstraint": "^4.12.1",
+      "sourceOfResolvedVersion": "apps/web/package-lock.json node_modules/@axe-core/playwright",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact package lock entry",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/package.json", "apps/web/package-lock.json", "apps/web/e2e/accessibility.spec.ts"]
+      }
+    },
+    {
+      "id": "qa-lighthouse-ci",
+      "domain": "qa",
+      "name": "@lhci/cli",
+      "currentVersion": "0.15.1",
+      "state": "installed_and_locked_capability_not_passing",
+      "declaredConstraint": "^0.15.1",
+      "sourceOfResolvedVersion": "root package-lock.json and npm ls",
+      "boundedness": "manifest_range_with_exact_lock",
+      "lockState": "exact package lock entry; previous Lighthouse execution timed out",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["package.json", "package-lock.json", "lighthouserc.cjs", "LOC-003"]
+      }
+    },
+    {
+      "id": "database-postgresql-compose",
+      "domain": "database",
+      "name": "PostgreSQL Compose image",
+      "currentVersion": "16 exact minor unobserved",
+      "state": "declared_floating_major_tag_not_capability_tested",
+      "declaredConstraint": "postgres:16",
+      "sourceOfResolvedVersion": "docker-compose.yml",
+      "boundedness": "floating_container_major_tag",
+      "lockState": "no digest; pull-time minor and image content can drift",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["docker-compose.yml", "LOC-008"]
+      }
+    },
+    {
+      "id": "container-docker-cli",
+      "domain": "container",
+      "name": "Docker CLI executable",
+      "currentVersion": "29.5.2",
+      "state": "executable_present_capability_timed_out",
+      "declaredConstraint": null,
+      "sourceOfResolvedVersion": "docker.exe file metadata",
+      "boundedness": "host_tool_not_repository_pinned",
+      "lockState": "not applicable to repository locks",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["LOC-008", "docs/software-definition/02-ai-dev-tooling-and-mcp.md"]
+      }
+    },
+    {
+      "id": "container-compose-plugin",
+      "domain": "container",
+      "name": "Docker Compose plugin",
+      "currentVersion": "5.1.3 reported; not reconfirmed",
+      "state": "executable_present_capability_timed_out",
+      "declaredConstraint": null,
+      "sourceOfResolvedVersion": "root task supplied prior observation; local plugin binary presence rechecked",
+      "boundedness": "host_tool_not_repository_pinned",
+      "lockState": "not applicable to repository locks",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["LOC-008", "docs/software-definition/02-ai-dev-tooling-and-mcp.md"]
+      }
+    },
+    {
+      "id": "ci-github-actions",
+      "domain": "ci",
+      "name": "GitHub Actions workflows",
+      "currentVersion": null,
+      "state": "absent",
+      "declaredConstraint": null,
+      "sourceOfResolvedVersion": "repository manifest search",
+      "boundedness": "no_workflow_inventory",
+      "lockState": "no action SHA or workflow lock evidence",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["LOC-007", "PROJECT_STATE.yaml"]
+      }
+    },
+    {
+      "id": "cloud-azure-manifests",
+      "domain": "cloud",
+      "name": "Azure/Bicep application manifests",
+      "currentVersion": null,
+      "state": "absent",
+      "declaredConstraint": "Azure target is approved; exact services, APIs, regions, and SKUs not selected",
+      "sourceOfResolvedVersion": "repository manifest search",
+      "boundedness": "no_cloud_manifest_inventory",
+      "lockState": "no provider/API version locks",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["LOC-007", "D-014", "MA-005", "MA-010"]
+      }
+    },
+    {
+      "id": "lock-python",
+      "domain": "supply_chain",
+      "name": "Python dependency lock",
+      "currentVersion": null,
+      "state": "absent",
+      "declaredConstraint": "deterministic standards-based workflow required",
+      "sourceOfResolvedVersion": "repository manifest search",
+      "boundedness": "requirements_file_is_unbounded",
+      "lockState": "absent",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/api/requirements.txt", "LOC-007", "R-006"]
+      }
+    },
+    {
+      "id": "browser-test-matrix",
+      "domain": "qa",
+      "name": "Browser support and test matrix",
+      "currentVersion": "Chromium project only; exact browser revision not recorded here",
+      "state": "partial",
+      "declaredConstraint": "latest two stable evergreen releases plus Safari/iOS 16.4 floor",
+      "sourceOfResolvedVersion": "apps/web/playwright.config.ts and Constitution 2.0.0",
+      "boundedness": "single_browser_project_without_current_version_matrix",
+      "lockState": "Playwright package locked; target browser matrix deferred",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["apps/web/playwright.config.ts", ".specify/memory/constitution.md", "NFR-006"]
+      }
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "cap-context7",
+      "name": "Context7 MCP",
+      "installed": null,
+      "configured": true,
+      "authenticated": false,
+      "protocolTested": true,
+      "capabilityTested": true,
+      "operationalClaimed": false,
+      "detail": "Canonical inventory inspected without credential values; direct anonymous fallback initialized, listed tools, resolved library IDs, and queried three official documentation sets; active-host exposure gap remains.",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["CTX7-REACT", "CTX7-R3F", "CTX7-FASTAPI"]
+      }
+    },
+    {
+      "id": "cap-docker",
+      "name": "Docker CLI and Engine",
+      "installed": true,
+      "configured": null,
+      "authenticated": null,
+      "protocolTested": false,
+      "capabilityTested": false,
+      "operationalClaimed": false,
+      "detail": "CLI executable is present, but the bounded CLI/Compose check timed out; engine connectivity and API negotiation are unverified.",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["LOC-008"]
+      }
+    },
+    {
+      "id": "cap-compose",
+      "name": "Docker Compose",
+      "installed": true,
+      "configured": true,
+      "authenticated": null,
+      "protocolTested": false,
+      "capabilityTested": false,
+      "operationalClaimed": false,
+      "detail": "Plugin and Compose file are present; version/parse/engine capability timed out and is not a pass.",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["docker-compose.yml", "LOC-008"]
+      }
+    },
+    {
+      "id": "cap-playwright",
+      "name": "Playwright CLI",
+      "installed": true,
+      "configured": true,
+      "authenticated": null,
+      "protocolTested": null,
+      "versionProbeTested": true,
+      "capabilityTested": false,
+      "operationalClaimed": false,
+      "detail": "Version reporting succeeded. A real browser-flow capability was not executed in this inventory slice, and only Chromium is configured.",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["LOC-009", "apps/web/playwright.config.ts"]
+      }
+    },
+    {
+      "id": "cap-github-actions",
+      "name": "GitHub Actions",
+      "installed": null,
+      "configured": false,
+      "authenticated": null,
+      "protocolTested": false,
+      "capabilityTested": false,
+      "operationalClaimed": false,
+      "detail": "No workflow directory was found; no hosted CI run or action pin exists.",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["LOC-007", "PROJECT_STATE.yaml"]
+      }
+    },
+    {
+      "id": "cap-azure",
+      "name": "Azure target platform",
+      "installed": null,
+      "configured": false,
+      "authenticated": false,
+      "protocolTested": false,
+      "capabilityTested": false,
+      "operationalClaimed": false,
+      "detail": "Azure is the approved target family, but no repository manifest, selected tenant/subscription/region, read-only resource evidence, cost approval, or capability test exists in this slice.",
+      "evidence": {
+        "date": "2026-07-19",
+        "refs": ["D-014", "MA-005", "MA-010"]
+      }
+    }
+  ]
+}

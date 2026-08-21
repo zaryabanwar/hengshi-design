@@ -1,0 +1,795 @@
+{
+  "schemaVersion": 3,
+  "document": "Hengshi Design D-034 contrast completion browser and accessibility evidence",
+  "correction": "D-034 contrast completion",
+  "date": "2026-07-20",
+  "toolVersions": {
+    "node": "v24.14.0",
+    "playwright": "1.61.1",
+    "chromium": "149.0.7827.55",
+    "axeCore": "4.12.1"
+  },
+  "scope": "Wide, 900, 390, 320, text-spacing, forced-colors, grayscale, print, and asset-failure board states; WCAG automated rules plus deterministic system-palette and layout measurements",
+  "network": "all non-file and non-data requests aborted",
+  "externalRequests": [],
+  "temporaryProfileRemoved": true,
+  "checks": [
+    {
+      "id": "board-wide",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "violationCount": 0,
+      "colorContrastRule": "axe_enabled",
+      "violations": [],
+      "incomplete": [],
+      "cleanConsoleErrors": [],
+      "pageErrors": [],
+      "expectedSvgFailures": 0,
+      "measurements": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "minimumVisibleEndpointLabelCssPx": 15.03,
+        "svgEndpointLabelCssPx": 15.03,
+        "responsiveLabels": [],
+        "semanticSeriesOrder": [
+          "Context baseline",
+          "Dependency map",
+          "Decision frame",
+          "Evidence depth",
+          "Risk view"
+        ],
+        "responsiveSeriesOrder": [
+          "Context baseline",
+          "Dependency map",
+          "Decision frame",
+          "Evidence depth",
+          "Risk view"
+        ],
+        "actions": [
+          {
+            "name": "Open Quick Access example",
+            "width": 250.921875,
+            "height": 46.59375
+          },
+          {
+            "name": "Review optional immersive principles",
+            "width": 329.34375,
+            "height": 48.59375
+          }
+        ],
+        "applicationBounds": {
+          "left": 130,
+          "right": 1310,
+          "width": 1180
+        },
+        "heroBounds": {
+          "left": 130,
+          "right": 823.59375,
+          "width": 693.59375
+        },
+        "evidenceBounds": {
+          "left": 847.59375,
+          "right": 1310,
+          "width": 462.40625
+        },
+        "proposedStateHasAriaLabel": false,
+        "proposedStateText": "■ ┅ Proposed method",
+        "forcedColorContrasts": [],
+        "minimumForcedColorContrast": null,
+        "requiredAssetFailureTextPresent": null
+      }
+    },
+    {
+      "id": "board-medium-900",
+      "viewport": {
+        "width": 900,
+        "height": 900
+      },
+      "violationCount": 0,
+      "colorContrastRule": "axe_enabled",
+      "violations": [],
+      "incomplete": [],
+      "cleanConsoleErrors": [],
+      "pageErrors": [],
+      "expectedSvgFailures": 0,
+      "measurements": {
+        "clientWidth": 900,
+        "scrollWidth": 900,
+        "minimumVisibleEndpointLabelCssPx": 13.44,
+        "svgEndpointLabelCssPx": 13.44,
+        "responsiveLabels": [],
+        "semanticSeriesOrder": [
+          "Context baseline",
+          "Dependency map",
+          "Decision frame",
+          "Evidence depth",
+          "Risk view"
+        ],
+        "responsiveSeriesOrder": [
+          "Context baseline",
+          "Dependency map",
+          "Decision frame",
+          "Evidence depth",
+          "Risk view"
+        ],
+        "actions": [
+          {
+            "name": "Open Quick Access example",
+            "width": 250.921875,
+            "height": 46.59375
+          },
+          {
+            "name": "Review optional immersive principles",
+            "width": 329.34375,
+            "height": 48.59375
+          }
+        ],
+        "applicationBounds": {
+          "left": 20,
+          "right": 880,
+          "width": 860
+        },
+        "heroBounds": {
+          "left": 20,
+          "right": 521.59375,
+          "width": 501.59375
+        },
+        "evidenceBounds": {
+          "left": 545.59375,
+          "right": 880,
+          "width": 334.40625
+        },
+        "proposedStateHasAriaLabel": false,
+        "proposedStateText": "■ ┅ Proposed method",
+        "forcedColorContrasts": [],
+        "minimumForcedColorContrast": null,
+        "requiredAssetFailureTextPresent": null
+      }
+    },
+    {
+      "id": "board-narrow-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violationCount": 0,
+      "colorContrastRule": "axe_enabled",
+      "violations": [],
+      "incomplete": [],
+      "cleanConsoleErrors": [],
+      "pageErrors": [],
+      "expectedSvgFailures": 0,
+      "measurements": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "minimumVisibleEndpointLabelCssPx": 12,
+        "svgEndpointLabelCssPx": null,
+        "responsiveLabels": [
+          {
+            "name": "Context baseline",
+            "fontSizeCssPx": 12
+          },
+          {
+            "name": "Dependency map",
+            "fontSizeCssPx": 12
+          },
+          {
+            "name": "Decision frame",
+            "fontSizeCssPx": 12
+          },
+          {
+            "name": "Evidence depth",
+            "fontSizeCssPx": 12
+          },
+          {
+            "name": "Risk view",
+            "fontSizeCssPx": 12
+          }
+        ],
+        "semanticSeriesOrder": [
+          "Context baseline",
+          "Dependency map",
+          "Decision frame",
+          "Evidence depth",
+          "Risk view"
+        ],
+        "responsiveSeriesOrder": [
+          "Context baseline",
+          "Dependency map",
+          "Decision frame",
+          "Evidence depth",
+          "Risk view"
+        ],
+        "actions": [
+          {
+            "name": "Open Quick Access example",
+            "width": 250.921875,
+            "height": 46.59375
+          },
+          {
+            "name": "Review optional immersive principles",
+            "width": 310,
+            "height": 69.59375
+          }
+        ],
+        "applicationBounds": {
+          "left": 16,
+          "right": 374,
+          "width": 358
+        },
+        "heroBounds": {
+          "left": 16,
+          "right": 374,
+          "width": 358
+        },
+        "evidenceBounds": {
+          "left": 16,
+          "right": 374,
+          "width": 358
+        },
+        "proposedStateHasAriaLabel": false,
+        "proposedStateText": "■ ┅ Proposed method",
+        "forcedColorContrasts": [],
+        "minimumForcedColorContrast": null,
+        "requiredAssetFailureTextPresent": null
+      }
+    },
+    {
+      "id": "board-narrow-320",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "violationCount": 0,
+      "colorContrastRule": "axe_enabled",
+      "violations": [],
+      "incomplete": [],
+      "cleanConsoleErrors": [],
+      "pageErrors": [],
+      "expectedSvgFailures": 0,
+      "measurements": {
+        "clientWidth": 320,
+        "scrollWidth": 320,
+        "minimumVisibleEndpointLabelCssPx": 12,
+        "svgEndpointLabelCssPx": null,
+        "responsiveLabels": [
+          {
+            "name": "Context baseline",
+            "fontSizeCssPx": 12
+          },
+          {
+            "name": "Dependency map",
+            "fontSizeCssPx": 12
+          },
+          {
+            "name": "Decision frame",
+            "fontSizeCssPx": 12
+          },
+          {
+            "name": "Evidence depth",
+            "fontSizeCssPx": 12
+          },
+          {
+            "name": "Risk view",
+            "fontSizeCssPx": 12
+          }
+        ],
+        "semanticSeriesOrder": [
+          "Context baseline",
+          "Dependency map",
+          "Decision frame",
+          "Evidence depth",
+          "Risk view"
+        ],
+        "responsiveSeriesOrder": [
+          "Context baseline",
+          "Dependency map",
+          "Decision frame",
+          "Evidence depth",
+          "Risk view"
+        ],
+        "actions": [
+          {
+            "name": "Open Quick Access example",
+            "width": 240,
+            "height": 67.59375
+          },
+          {
+            "name": "Review optional immersive principles",
+            "width": 240,
+            "height": 69.59375
+          }
+        ],
+        "applicationBounds": {
+          "left": 16,
+          "right": 304,
+          "width": 288
+        },
+        "heroBounds": {
+          "left": 16,
+          "right": 304,
+          "width": 288
+        },
+        "evidenceBounds": {
+          "left": 16,
+          "right": 304,
+          "width": 288
+        },
+        "proposedStateHasAriaLabel": false,
+        "proposedStateText": "■ ┅ Proposed method",
+        "forcedColorContrasts": [],
+        "minimumForcedColorContrast": null,
+        "requiredAssetFailureTextPresent": null
+      }
+    },
+    {
+      "id": "board-text-spacing-320",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "textSpacing": true,
+      "violationCount": 0,
+      "colorContrastRule": "axe_enabled",
+      "violations": [],
+      "incomplete": [],
+      "cleanConsoleErrors": [],
+      "pageErrors": [],
+      "expectedSvgFailures": 0,
+      "measurements": {
+        "clientWidth": 320,
+        "scrollWidth": 320,
+        "minimumVisibleEndpointLabelCssPx": 12,
+        "svgEndpointLabelCssPx": null,
+        "responsiveLabels": [
+          {
+            "name": "Context baseline",
+            "fontSizeCssPx": 12
+          },
+          {
+            "name": "Dependency map",
+            "fontSizeCssPx": 12
+          },
+          {
+            "name": "Decision frame",
+            "fontSizeCssPx": 12
+          },
+          {
+            "name": "Evidence depth",
+            "fontSizeCssPx": 12
+          },
+          {
+            "name": "Risk view",
+            "fontSizeCssPx": 12
+          }
+        ],
+        "semanticSeriesOrder": [
+          "Context baseline",
+          "Dependency map",
+          "Decision frame",
+          "Evidence depth",
+          "Risk view"
+        ],
+        "responsiveSeriesOrder": [
+          "Context baseline",
+          "Dependency map",
+          "Decision frame",
+          "Evidence depth",
+          "Risk view"
+        ],
+        "actions": [
+          {
+            "name": "Open Quick Access example",
+            "width": 240,
+            "height": 73.59375
+          },
+          {
+            "name": "Review optional immersive principles",
+            "width": 240,
+            "height": 75.59375
+          }
+        ],
+        "applicationBounds": {
+          "left": 16,
+          "right": 304,
+          "width": 288
+        },
+        "heroBounds": {
+          "left": 16,
+          "right": 304,
+          "width": 288
+        },
+        "evidenceBounds": {
+          "left": 16,
+          "right": 304,
+          "width": 288
+        },
+        "proposedStateHasAriaLabel": false,
+        "proposedStateText": "■ ┅ Proposed method",
+        "forcedColorContrasts": [],
+        "minimumForcedColorContrast": null,
+        "requiredAssetFailureTextPresent": null
+      }
+    },
+    {
+      "id": "board-forced-colors",
+      "viewport": {
+        "width": 900,
+        "height": 900
+      },
+      "forcedColors": true,
+      "violationCount": 0,
+      "colorContrastRule": "replaced_by_computed_system_palette_check",
+      "violations": [],
+      "incomplete": [],
+      "cleanConsoleErrors": [],
+      "pageErrors": [],
+      "expectedSvgFailures": 0,
+      "measurements": {
+        "clientWidth": 900,
+        "scrollWidth": 900,
+        "minimumVisibleEndpointLabelCssPx": 13.44,
+        "svgEndpointLabelCssPx": 13.44,
+        "responsiveLabels": [],
+        "semanticSeriesOrder": [
+          "Context baseline",
+          "Dependency map",
+          "Decision frame",
+          "Evidence depth",
+          "Risk view"
+        ],
+        "responsiveSeriesOrder": [
+          "Context baseline",
+          "Dependency map",
+          "Decision frame",
+          "Evidence depth",
+          "Risk view"
+        ],
+        "actions": [
+          {
+            "name": "Open Quick Access example",
+            "width": 250.921875,
+            "height": 46.59375
+          },
+          {
+            "name": "Review optional immersive principles",
+            "width": 329.34375,
+            "height": 48.59375
+          }
+        ],
+        "applicationBounds": {
+          "left": 20,
+          "right": 880,
+          "width": 860
+        },
+        "heroBounds": {
+          "left": 20,
+          "right": 521.59375,
+          "width": 501.59375
+        },
+        "evidenceBounds": {
+          "left": 545.59375,
+          "right": 880,
+          "width": 334.40625
+        },
+        "proposedStateHasAriaLabel": false,
+        "proposedStateText": "■ ┅ Proposed method",
+        "forcedColorContrasts": [
+          {
+            "selector": "body",
+            "ratio": 21
+          },
+          {
+            "selector": "h1",
+            "ratio": 21
+          },
+          {
+            "selector": "p",
+            "ratio": 21
+          },
+          {
+            "selector": "p",
+            "ratio": 21
+          },
+          {
+            "selector": "p",
+            "ratio": 21
+          },
+          {
+            "selector": "p",
+            "ratio": 21
+          },
+          {
+            "selector": "p",
+            "ratio": 21
+          },
+          {
+            "selector": "p",
+            "ratio": 21
+          },
+          {
+            "selector": "p",
+            "ratio": 21
+          },
+          {
+            "selector": "h2",
+            "ratio": 21
+          },
+          {
+            "selector": "figcaption",
+            "ratio": 21
+          },
+          {
+            "selector": "figcaption",
+            "ratio": 21
+          },
+          {
+            "selector": "figcaption",
+            "ratio": 21
+          },
+          {
+            "selector": "figcaption",
+            "ratio": 21
+          },
+          {
+            "selector": "figcaption",
+            "ratio": 21
+          },
+          {
+            "selector": ".reverse > figcaption",
+            "ratio": 21
+          },
+          {
+            "selector": "p",
+            "ratio": 21
+          },
+          {
+            "selector": "p",
+            "ratio": 21
+          },
+          {
+            "selector": "h2",
+            "ratio": 21
+          },
+          {
+            "selector": "footer",
+            "ratio": 21
+          }
+        ],
+        "minimumForcedColorContrast": 21,
+        "requiredAssetFailureTextPresent": null
+      }
+    },
+    {
+      "id": "board-grayscale",
+      "viewport": {
+        "width": 900,
+        "height": 900
+      },
+      "grayscale": true,
+      "violationCount": 0,
+      "colorContrastRule": "axe_enabled",
+      "violations": [],
+      "incomplete": [],
+      "cleanConsoleErrors": [],
+      "pageErrors": [],
+      "expectedSvgFailures": 0,
+      "measurements": {
+        "clientWidth": 900,
+        "scrollWidth": 900,
+        "minimumVisibleEndpointLabelCssPx": 13.44,
+        "svgEndpointLabelCssPx": 13.44,
+        "responsiveLabels": [],
+        "semanticSeriesOrder": [
+          "Context baseline",
+          "Dependency map",
+          "Decision frame",
+          "Evidence depth",
+          "Risk view"
+        ],
+        "responsiveSeriesOrder": [
+          "Context baseline",
+          "Dependency map",
+          "Decision frame",
+          "Evidence depth",
+          "Risk view"
+        ],
+        "actions": [
+          {
+            "name": "Open Quick Access example",
+            "width": 250.921875,
+            "height": 46.59375
+          },
+          {
+            "name": "Review optional immersive principles",
+            "width": 329.34375,
+            "height": 48.59375
+          }
+        ],
+        "applicationBounds": {
+          "left": 20,
+          "right": 880,
+          "width": 860
+        },
+        "heroBounds": {
+          "left": 20,
+          "right": 521.59375,
+          "width": 501.59375
+        },
+        "evidenceBounds": {
+          "left": 545.59375,
+          "right": 880,
+          "width": 334.40625
+        },
+        "proposedStateHasAriaLabel": false,
+        "proposedStateText": "■ ┅ Proposed method",
+        "forcedColorContrasts": [],
+        "minimumForcedColorContrast": null,
+        "requiredAssetFailureTextPresent": null
+      }
+    },
+    {
+      "id": "board-print",
+      "viewport": {
+        "width": 1200,
+        "height": 900
+      },
+      "print": true,
+      "violationCount": 0,
+      "colorContrastRule": "axe_enabled",
+      "violations": [],
+      "incomplete": [],
+      "cleanConsoleErrors": [],
+      "pageErrors": [],
+      "expectedSvgFailures": 0,
+      "measurements": {
+        "clientWidth": 1200,
+        "scrollWidth": 1200,
+        "minimumVisibleEndpointLabelCssPx": 15.03,
+        "svgEndpointLabelCssPx": 15.03,
+        "responsiveLabels": [],
+        "semanticSeriesOrder": [
+          "Context baseline",
+          "Dependency map",
+          "Decision frame",
+          "Evidence depth",
+          "Risk view"
+        ],
+        "responsiveSeriesOrder": [
+          "Context baseline",
+          "Dependency map",
+          "Decision frame",
+          "Evidence depth",
+          "Risk view"
+        ],
+        "actions": [
+          {
+            "name": "Open Quick Access example",
+            "width": 0,
+            "height": 0
+          },
+          {
+            "name": "Review optional immersive principles",
+            "width": 0,
+            "height": 0
+          }
+        ],
+        "applicationBounds": {
+          "left": 20,
+          "right": 1180,
+          "width": 1160
+        },
+        "heroBounds": {
+          "left": 20,
+          "right": 1180,
+          "width": 1160
+        },
+        "evidenceBounds": {
+          "left": 20,
+          "right": 1180,
+          "width": 1160
+        },
+        "proposedStateHasAriaLabel": false,
+        "proposedStateText": "■ ┅ Proposed method",
+        "forcedColorContrasts": [],
+        "minimumForcedColorContrast": null,
+        "requiredAssetFailureTextPresent": null
+      }
+    },
+    {
+      "id": "board-asset-failure-320",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "assetFailure": true,
+      "violationCount": 0,
+      "colorContrastRule": "axe_enabled",
+      "violations": [],
+      "incomplete": [],
+      "cleanConsoleErrors": [],
+      "pageErrors": [],
+      "expectedSvgFailures": 12,
+      "measurements": {
+        "clientWidth": 320,
+        "scrollWidth": 320,
+        "minimumVisibleEndpointLabelCssPx": 12,
+        "svgEndpointLabelCssPx": null,
+        "responsiveLabels": [
+          {
+            "name": "Context baseline",
+            "fontSizeCssPx": 12
+          },
+          {
+            "name": "Dependency map",
+            "fontSizeCssPx": 12
+          },
+          {
+            "name": "Decision frame",
+            "fontSizeCssPx": 12
+          },
+          {
+            "name": "Evidence depth",
+            "fontSizeCssPx": 12
+          },
+          {
+            "name": "Risk view",
+            "fontSizeCssPx": 12
+          }
+        ],
+        "semanticSeriesOrder": [
+          "Context baseline",
+          "Dependency map",
+          "Decision frame",
+          "Evidence depth",
+          "Risk view"
+        ],
+        "responsiveSeriesOrder": [
+          "Context baseline",
+          "Dependency map",
+          "Decision frame",
+          "Evidence depth",
+          "Risk view"
+        ],
+        "actions": [
+          {
+            "name": "Open Quick Access example",
+            "width": 240,
+            "height": 67.59375
+          },
+          {
+            "name": "Review optional immersive principles",
+            "width": 240,
+            "height": 69.59375
+          }
+        ],
+        "applicationBounds": {
+          "left": 16,
+          "right": 304,
+          "width": 288
+        },
+        "heroBounds": {
+          "left": 16,
+          "right": 304,
+          "width": 288
+        },
+        "evidenceBounds": {
+          "left": 16,
+          "right": 304,
+          "width": 288
+        },
+        "proposedStateHasAriaLabel": false,
+        "proposedStateText": "■ ┅ Proposed method",
+        "forcedColorContrasts": [],
+        "minimumForcedColorContrast": null,
+        "requiredAssetFailureTextPresent": true
+      }
+    }
+  ],
+  "totalViolations": 0,
+  "totalIncomplete": 0,
+  "totalCleanConsoleErrors": 0,
+  "totalPageErrors": 0
+}

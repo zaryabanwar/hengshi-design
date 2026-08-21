@@ -153,7 +153,7 @@ export const WorldPanel = () => {
         <div>
           <p className="text-xs uppercase tracking-[0.2em] text-slate-400">{panelType}</p>
           <h2 className="text-2xl font-semibold">{panelTitle}</h2>
-          {panelPayload?.category && (
+          {typeof panelPayload.category === 'string' && (
             <p className="mt-1 text-xs text-slate-400">Category: {String(panelPayload.category)}</p>
           )}
         </div>

@@ -1,0 +1,962 @@
+{
+  "schemaVersion": 2,
+  "document": {
+    "title": "Hengshi Design Phase 1 Canonical Route Inventory",
+    "status": "draft_phase_1_foundation",
+    "classification": "business_confidential",
+    "asOf": "2026-07-19",
+    "revision": "iteration_1_review_correction"
+  },
+  "canonicalHost": "https://hengshidesign.com",
+  "urlPolicy": {
+    "scheme": "https",
+    "hostPolicy": "Redirect every approved host and protocol variant to the canonical apex host.",
+    "case": "lowercase",
+    "wordSeparator": "hyphen",
+    "trailingSlash": "root_only",
+    "queryPolicy": "Indexable documents use stable clean paths; filter, search, preview, session, and tracking variants are not separate indexable documents.",
+    "localization": "English only at launch; emit hreflang only after real translated URLs exist."
+  },
+  "routeStateModel": {
+    "plannedCanonicalStatus": "Design-time route or pattern decision; never evidence of approved content or an active public response.",
+    "contentApprovalStatus": "Specialist evidence/content and founder publication decision for the visible document.",
+    "releaseActivationStatus": "Whether the exact route instance belongs to the currently active immutable release.",
+    "indexabilityPolicy": "Behavior allowed only after applicable planning, content, and release gates pass.",
+    "activeSitemap": "Current active-release membership only; false throughout this Phase 1 planning snapshot.",
+    "futureSitemapRule": "A planned rule, never current sitemap eligibility."
+  },
+  "activationSnapshot": {
+    "asOf": "2026-07-19",
+    "approvedPublicationChecksum": null,
+    "contentApprovedRouteIds": [],
+    "releaseActiveRouteIds": [],
+    "activeSitemapRouteIds": [],
+    "interpretation": "No route is content-approved, release-active, or currently sitemap-eligible from this foundation artifact. Activation is generated only from a later approved immutable publication release."
+  },
+  "allowedStructuredDataTypes": [
+    "Organization",
+    "WebSite",
+    "BreadcrumbList",
+    "Service",
+    "Article",
+    "Person",
+    "ImageObject",
+    "VideoObject"
+  ],
+  "routes": [
+    {
+      "id": "ROUTE-HOME",
+      "path": "/",
+      "routeType": "home",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "branded discovery and innovation delivery partner evaluation",
+      "primaryEntity": "Hengshi Design",
+      "schemaTypes": [
+        "Organization",
+        "WebSite"
+      ],
+      "sourceDecisions": [
+        "D-005",
+        "D-006",
+        "D-008",
+        "D-009"
+      ],
+      "contentGate": "Verified entity facts, approved positioning, truthful service overview, and primary discovery CTA."
+    },
+    {
+      "id": "ROUTE-SERVICES",
+      "path": "/services",
+      "routeType": "service_collection",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "compare Hengshi Design service capabilities",
+      "primaryEntity": "Hengshi Design services",
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "sourceDecisions": [
+        "D-009",
+        "D-010"
+      ],
+      "contentGate": "All five wings and ten services must be represented without unsupported delivery claims."
+    },
+    {
+      "id": "ROUTE-WING-STRATEGY",
+      "path": "/services/strategy-transformation",
+      "routeType": "service_wing",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "strategy and transformation consulting evaluation",
+      "primaryEntity": "Strategy & Transformation",
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "sourceDecisions": [
+        "D-009",
+        "D-010"
+      ],
+      "contentGate": "Approved wing narrative and visible links to its formal service page."
+    },
+    {
+      "id": "ROUTE-SERVICE-STRATEGY-ARCHITECTURE",
+      "path": "/services/strategy-transformation/strategy-architecture",
+      "routeType": "service",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "strategy and architecture delivery partner evaluation",
+      "primaryEntity": "Strategy & Architecture",
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "sourceDecisions": [
+        "D-009",
+        "D-010"
+      ],
+      "contentGate": "Specialist-reviewed scope, boundaries, deliverables, evidence, and owner."
+    },
+    {
+      "id": "ROUTE-WING-DIGITAL",
+      "path": "/services/digital-products-growth",
+      "routeType": "service_wing",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "digital product and growth platform partner evaluation",
+      "primaryEntity": "Digital Products & Growth",
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "sourceDecisions": [
+        "D-009",
+        "D-010"
+      ],
+      "contentGate": "Approved wing narrative and visible links to all three formal service pages."
+    },
+    {
+      "id": "ROUTE-SERVICE-PLATFORM-PRODUCT",
+      "path": "/services/digital-products-growth/platform-product-engineering",
+      "routeType": "service",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "platform and product engineering partner evaluation",
+      "primaryEntity": "Platform & Product Engineering",
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "sourceDecisions": [
+        "D-009",
+        "D-010"
+      ],
+      "contentGate": "Specialist-reviewed scope, boundaries, deliverables, evidence, and owner."
+    },
+    {
+      "id": "ROUTE-SERVICE-PRODUCT-EXPERIENCE",
+      "path": "/services/digital-products-growth/product-design-experience-engineering",
+      "routeType": "service",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "product design and experience engineering partner evaluation",
+      "primaryEntity": "Product Design & Experience Engineering",
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "sourceDecisions": [
+        "D-009",
+        "D-010"
+      ],
+      "contentGate": "Specialist-reviewed scope, boundaries, deliverables, evidence, and owner."
+    },
+    {
+      "id": "ROUTE-SERVICE-COMMERCE-GROWTH",
+      "path": "/services/digital-products-growth/commerce-content-growth-platforms",
+      "routeType": "service",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "commerce content and growth platform partner evaluation",
+      "primaryEntity": "Commerce, Content & Growth Platforms",
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "sourceDecisions": [
+        "D-009",
+        "D-010"
+      ],
+      "contentGate": "Specialist-reviewed scope, boundaries, deliverables, evidence, and owner."
+    },
+    {
+      "id": "ROUTE-WING-AI-DATA",
+      "path": "/services/ai-data-automation",
+      "routeType": "service_wing",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "AI data and automation partner evaluation",
+      "primaryEntity": "AI, Data & Automation",
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "sourceDecisions": [
+        "D-009",
+        "D-010"
+      ],
+      "contentGate": "Approved wing narrative and visible links to both formal service pages."
+    },
+    {
+      "id": "ROUTE-SERVICE-AI-AUTOMATION",
+      "path": "/services/ai-data-automation/ai-systems-agentic-automation",
+      "routeType": "service",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "AI systems and agentic automation partner evaluation",
+      "primaryEntity": "AI Systems & Agentic Automation",
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "sourceDecisions": [
+        "D-009",
+        "D-010",
+        "D-015"
+      ],
+      "contentGate": "Specialist-reviewed scope, evidence, limitations, governance, source policy, and owner."
+    },
+    {
+      "id": "ROUTE-SERVICE-DATA-ANALYTICS",
+      "path": "/services/ai-data-automation/data-platforms-analytics",
+      "routeType": "service",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "data platform and analytics partner evaluation",
+      "primaryEntity": "Data Platforms & Analytics",
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "sourceDecisions": [
+        "D-009",
+        "D-010"
+      ],
+      "contentGate": "Specialist-reviewed scope, boundaries, deliverables, evidence, and owner."
+    },
+    {
+      "id": "ROUTE-WING-IMMERSIVE",
+      "path": "/services/immersive-creative",
+      "routeType": "service_wing",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "immersive and creative delivery partner evaluation",
+      "primaryEntity": "Immersive & Creative",
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "sourceDecisions": [
+        "D-009",
+        "D-010"
+      ],
+      "contentGate": "Approved wing narrative and visible links to both formal service pages."
+    },
+    {
+      "id": "ROUTE-SERVICE-SPATIAL",
+      "path": "/services/immersive-creative/spatial-computing-immersive-platforms",
+      "routeType": "service",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "spatial computing and immersive platform partner evaluation",
+      "primaryEntity": "Spatial Computing & Immersive Platforms",
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "sourceDecisions": [
+        "D-009",
+        "D-010",
+        "D-012",
+        "D-013"
+      ],
+      "contentGate": "Specialist-reviewed scope, performance/accessibility boundary, evidence, and owner."
+    },
+    {
+      "id": "ROUTE-SERVICE-CREATIVE",
+      "path": "/services/immersive-creative/creative-visual-design-services",
+      "routeType": "service",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "creative and visual design service partner evaluation",
+      "primaryEntity": "Creative & Visual Design Services",
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "sourceDecisions": [
+        "D-009",
+        "D-010"
+      ],
+      "contentGate": "New specialist-reviewed service content, delivery boundary, licensed proof/demo, and owner; legacy tool lists are not proof."
+    },
+    {
+      "id": "ROUTE-WING-CLOUD-TRUST",
+      "path": "/services/cloud-reliability-trust",
+      "routeType": "service_wing",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "cloud reliability security and trust partner evaluation",
+      "primaryEntity": "Cloud, Reliability & Trust",
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "sourceDecisions": [
+        "D-009",
+        "D-010"
+      ],
+      "contentGate": "Approved wing narrative and visible links to both formal service pages."
+    },
+    {
+      "id": "ROUTE-SERVICE-CLOUD-RELIABILITY",
+      "path": "/services/cloud-reliability-trust/cloud-devops-platform-reliability",
+      "routeType": "service",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "cloud DevOps and platform reliability partner evaluation",
+      "primaryEntity": "Cloud, DevOps & Platform Reliability",
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "sourceDecisions": [
+        "D-009",
+        "D-010",
+        "D-014"
+      ],
+      "contentGate": "Specialist-reviewed scope, platform-neutral customer offer, evidence, and owner; Hengshi deployment target is not a universal customer recommendation."
+    },
+    {
+      "id": "ROUTE-SERVICE-SECURITY-TRUST",
+      "path": "/services/cloud-reliability-trust/security-privacy-trust-engineering",
+      "routeType": "service",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "security privacy and trust engineering partner evaluation",
+      "primaryEntity": "Security, Privacy & Trust Engineering",
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Service"
+      ],
+      "sourceDecisions": [
+        "D-009",
+        "D-010",
+        "D-018"
+      ],
+      "contentGate": "Independent security-reviewed scope; no certification, compliance, guarantee, or customer-outcome claim without proof."
+    },
+    {
+      "id": "ROUTE-INDUSTRIES",
+      "path": "/industries",
+      "routeType": "industry_collection",
+      "plannedCanonicalStatus": "founder_decision_pending",
+      "contentApprovalStatus": "blocked_by_founder_route_decision_and_content_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "compare approved Hengshi Design industry focus",
+      "primaryEntity": "Hengshi Design industry focus",
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "sourceDecisions": [
+        "D-005",
+        "D-009"
+      ],
+      "contentGate": "Agriculture and mining only at launch; no fabricated sector history or geography."
+    },
+    {
+      "id": "ROUTE-INDUSTRY-AGRICULTURE",
+      "path": "/industries/agriculture",
+      "routeType": "industry",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "agriculture technology data product and automation partner evaluation",
+      "primaryEntity": "Hengshi Design for agriculture",
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "sourceDecisions": [
+        "D-005",
+        "D-007",
+        "D-009"
+      ],
+      "contentGate": "Named agriculture reviewer, evidence-backed problem framing, approved service intersections, and no implied client work."
+    },
+    {
+      "id": "ROUTE-INDUSTRY-MINING",
+      "path": "/industries/mining",
+      "routeType": "industry",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "mining technology data reliability and automation partner evaluation",
+      "primaryEntity": "Hengshi Design for mining",
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "sourceDecisions": [
+        "D-005",
+        "D-007",
+        "D-009"
+      ],
+      "contentGate": "Named mining reviewer, evidence-backed problem framing, approved service intersections, and no implied client work."
+    },
+    {
+      "id": "ROUTE-WORK",
+      "path": "/work",
+      "routeType": "verified_work_collection",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index_when_collection_has_approved_public_state",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "evaluate verified Hengshi Design work",
+      "primaryEntity": "Verified Hengshi Design work",
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "sourceDecisions": [
+        "D-007",
+        "D-009",
+        "D-019"
+      ],
+      "contentGate": "No verified cases currently recorded; founder must approve an honest empty state or the first verified case before indexing."
+    },
+    {
+      "id": "ROUTE-WORK-DETAIL",
+      "path": "/work/{verified-case-slug}",
+      "routeType": "verified_work_detail",
+      "plannedCanonicalStatus": "approved_pattern",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index_only_after_atomic_publication",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_each_instantiated_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "evaluate evidence-backed Hengshi Design delivery",
+      "primaryEntity": "Verified case",
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article",
+        "ImageObject",
+        "VideoObject"
+      ],
+      "sourceDecisions": [
+        "D-007",
+        "D-009",
+        "D-019"
+      ],
+      "contentGate": "Authorized case, visible evidence, truthful author/date/media, consent, specialist review, and founder publication approval. Media schema is conditional on visible licensed media."
+    },
+    {
+      "id": "ROUTE-DEMOS",
+      "path": "/demos",
+      "routeType": "demo_collection",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index_when_collection_has_approved_public_state",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "explore Hengshi-owned capability demonstrations",
+      "primaryEntity": "Hengshi Design capability demos",
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "sourceDecisions": [
+        "D-007",
+        "D-009",
+        "D-019"
+      ],
+      "contentGate": "No approved demos currently recorded; founder must approve an honest empty state or first demo before indexing."
+    },
+    {
+      "id": "ROUTE-DEMO-DETAIL",
+      "path": "/demos/{capability-demo-slug}",
+      "routeType": "demo_detail",
+      "plannedCanonicalStatus": "approved_pattern",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index_only_after_atomic_publication",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_each_instantiated_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "evaluate a Hengshi-owned capability demonstration",
+      "primaryEntity": "Hengshi-owned capability demo",
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ImageObject",
+        "VideoObject"
+      ],
+      "sourceDecisions": [
+        "D-007",
+        "D-009",
+        "D-019"
+      ],
+      "contentGate": "Ownership, reproducibility, limitations, provenance, security review where relevant, clear demo label, and founder approval. Media schema is conditional on visible licensed media."
+    },
+    {
+      "id": "ROUTE-INSIGHTS",
+      "path": "/insights",
+      "routeType": "insight_collection",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index_when_first_approved_article_is_public",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "research and expert guidance discovery",
+      "primaryEntity": "Hengshi Design insights",
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "sourceDecisions": [
+        "D-007",
+        "D-009",
+        "D-019"
+      ],
+      "contentGate": "At least one expert-reviewed article or an approved useful empty state; no thin or mass-generated pages."
+    },
+    {
+      "id": "ROUTE-INSIGHT-DETAIL",
+      "path": "/insights/{article-slug}",
+      "routeType": "article",
+      "plannedCanonicalStatus": "approved_pattern",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index_only_after_atomic_publication",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_each_instantiated_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "answer a documented buyer question with original expert value",
+      "primaryEntity": "Expert-reviewed Hengshi Design article",
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article",
+        "ImageObject",
+        "VideoObject"
+      ],
+      "sourceDecisions": [
+        "D-007",
+        "D-009",
+        "D-019"
+      ],
+      "contentGate": "Named qualified reviewer, primary evidence, original value, truthful date/byline, media rights, specialist review, and founder approval. Media schema is conditional."
+    },
+    {
+      "id": "ROUTE-EXPERTS",
+      "path": "/experts",
+      "routeType": "expert_collection",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index_when_first_verified_profile_is_public",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "evaluate verified Hengshi Design expertise",
+      "primaryEntity": "Hengshi Design experts",
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "sourceDecisions": [
+        "D-007",
+        "D-009",
+        "D-019"
+      ],
+      "contentGate": "No verified expert profiles currently recorded."
+    },
+    {
+      "id": "ROUTE-EXPERT-DETAIL",
+      "path": "/experts/{verified-person-slug}",
+      "routeType": "person",
+      "plannedCanonicalStatus": "approved_pattern",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index_only_after_atomic_publication",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_each_instantiated_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "evaluate a verified specialist's relevant expertise",
+      "primaryEntity": "Verified person",
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Person",
+        "ImageObject"
+      ],
+      "sourceDecisions": [
+        "D-007",
+        "D-009",
+        "D-019"
+      ],
+      "contentGate": "Verified identity, role, qualifications, biography, consent, portrait rights, visible claims, and founder approval. Image schema is conditional."
+    },
+    {
+      "id": "ROUTE-TRUST",
+      "path": "/trust",
+      "routeType": "trust_collection",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index_after_approved_truthful_content",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "evaluate Hengshi Design security privacy AI and delivery controls",
+      "primaryEntity": "Hengshi Design Trust Center",
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "sourceDecisions": [
+        "D-009",
+        "D-017",
+        "D-018",
+        "D-019"
+      ],
+      "contentGate": "Implemented or approved controls, precise scope/date/owner, legal review where applicable, and no certification or assurance inflation."
+    },
+    {
+      "id": "ROUTE-TRUST-DETAIL",
+      "path": "/trust/{topic-slug}",
+      "routeType": "trust_topic",
+      "plannedCanonicalStatus": "approved_pattern",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index_only_after_atomic_publication",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_each_instantiated_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "understand a specific Hengshi Design trust or policy topic",
+      "primaryEntity": "Hengshi Design trust topic",
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "sourceDecisions": [
+        "D-009",
+        "D-017",
+        "D-018",
+        "D-019"
+      ],
+      "contentGate": "Truthful visible policy/control, owner, review date, evidence, legal/security review where applicable, and founder approval."
+    },
+    {
+      "id": "ROUTE-ABOUT",
+      "path": "/about",
+      "routeType": "about",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "understand Hengshi Design identity and operating approach",
+      "primaryEntity": "Hengshi Design",
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Organization"
+      ],
+      "sourceDecisions": [
+        "D-006",
+        "D-007",
+        "D-009"
+      ],
+      "contentGate": "Verified entity, people, operating, and contact facts; no inferred history, size, office, customer, or award."
+    },
+    {
+      "id": "ROUTE-CONTACT",
+      "path": "/contact",
+      "routeType": "contact",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "contact Hengshi Design or choose a direct help path",
+      "primaryEntity": "Hengshi Design contact",
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Organization"
+      ],
+      "sourceDecisions": [
+        "D-009",
+        "D-016",
+        "D-017"
+      ],
+      "contentGate": "Verified public contacts, consent language, privacy notice, failure route, and no example/test details."
+    },
+    {
+      "id": "ROUTE-BOOK",
+      "path": "/book",
+      "routeType": "booking",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "book a 30-minute Hengshi Design discovery conversation",
+      "primaryEntity": "Hengshi Design discovery booking",
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "sourceDecisions": [
+        "D-005",
+        "D-009",
+        "D-016",
+        "D-017"
+      ],
+      "contentGate": "Verified booking owner/mailbox, transparent qualification and consent, visitor-local time, email verification, availability truth, recovery, and direct access without AI."
+    }
+  ],
+  "excludedSurfaces": [
+    {
+      "id": "EXCL-WORLD",
+      "pattern": "/world",
+      "plannedCanonicalStatus": "excluded_surface",
+      "contentApprovalStatus": "not_applicable",
+      "releaseActivationStatus": "excluded_from_indexable_release",
+      "indexabilityPolicy": "noindex_follow",
+      "activeSitemap": false,
+      "controls": [
+        "complete semantic Quick Access links",
+        "meta robots noindex,follow",
+        "X-Robots-Tag noindex",
+        "active sitemap exclusion"
+      ],
+      "rule": "The optional WebGL experience must link to canonical semantic service and content routes; robots.txt alone is not an indexing control."
+    },
+    {
+      "id": "EXCL-ADMIN",
+      "pattern": "/admin/**",
+      "plannedCanonicalStatus": "excluded_surface",
+      "contentApprovalStatus": "not_applicable",
+      "releaseActivationStatus": "authenticated_only",
+      "indexabilityPolicy": "noindex_and_authenticated",
+      "activeSitemap": false,
+      "controls": [
+        "staff authentication",
+        "authorization",
+        "meta or X-Robots-Tag noindex",
+        "no public internal links",
+        "active sitemap exclusion"
+      ],
+      "rule": "Authentication and authorization are the security controls; robots.txt is not access control."
+    },
+    {
+      "id": "EXCL-NONPUBLIC-PUBLICATION",
+      "pattern": "/preview/**, /draft/**, /rejected/**",
+      "plannedCanonicalStatus": "excluded_surface",
+      "contentApprovalStatus": "not_approved_public_content",
+      "releaseActivationStatus": "access_controlled_nonpublic",
+      "indexabilityPolicy": "noindex_and_access_controlled",
+      "activeSitemap": false,
+      "controls": [
+        "access control",
+        "noindex",
+        "active sitemap exclusion",
+        "no search notification",
+        "no AI retrieval"
+      ],
+      "rule": "Only an approved immutable publication release can create public indexable output."
+    },
+    {
+      "id": "EXCL-CHAT-SESSIONS",
+      "pattern": "/chat/**, /sessions/**",
+      "plannedCanonicalStatus": "excluded_surface",
+      "contentApprovalStatus": "not_applicable",
+      "releaseActivationStatus": "private_session_state",
+      "indexabilityPolicy": "noindex",
+      "activeSitemap": false,
+      "controls": [
+        "noindex",
+        "active sitemap exclusion",
+        "privacy and retention enforcement"
+      ],
+      "rule": "Visitor conversation and session state is never public search content."
+    },
+    {
+      "id": "EXCL-INTERNAL-SEARCH",
+      "pattern": "/search and internal-search result URLs",
+      "plannedCanonicalStatus": "excluded_surface",
+      "contentApprovalStatus": "not_applicable",
+      "releaseActivationStatus": "nonindexable_utility_only",
+      "indexabilityPolicy": "noindex_follow",
+      "activeSitemap": false,
+      "statusPolicy": "Return 200 only for the approved search utility; unknown search paths return 404.",
+      "canonicalMode": "omit",
+      "canonicalPolicy": "Omit canonical markup on the noindex search-result document; result links point to clean canonical content documents.",
+      "internalLinkPolicy": "Do not expose search-state URLs in crawlable navigation; result links omit search state.",
+      "parameterAllowlist": [],
+      "parameterRule": "No search query parameter is approved in this foundation; any later URL-backed search state requires a reviewed inventory revision.",
+      "controls": [
+        "noindex,follow",
+        "active sitemap exclusion",
+        "clean result links",
+        "no URL-carried personal data"
+      ],
+      "rule": "Internal search is a nonindexable utility and is not a substitute for crawlable information architecture."
+    },
+    {
+      "id": "EXCL-TRACKING-PARAMETERS",
+      "pattern": "approved canonical documents with recognized tracking parameters",
+      "plannedCanonicalStatus": "variant_of_planned_canonical",
+      "contentApprovalStatus": "inherits_clean_document_only",
+      "releaseActivationStatus": "never_a_separate_release_route",
+      "indexabilityPolicy": "canonical_to_clean_document",
+      "activeSitemap": false,
+      "statusPolicy": "Return the same truthful status as the clean document; a missing or retired clean route must not become 200.",
+      "canonicalMode": "clean_document",
+      "canonicalPolicy": "Strip only allowlisted tracking parameters from the canonical URL and emit the clean document canonical.",
+      "internalLinkPolicy": "All first-party internal links use the clean canonical URL without tracking parameters.",
+      "parameterAllowlist": [
+        "utm_source",
+        "utm_medium",
+        "utm_campaign",
+        "utm_term",
+        "utm_content",
+        "gclid",
+        "msclkid"
+      ],
+      "parameterRule": "An unlisted parameter is not auto-classified as tracking and requires a documented route/privacy decision before canonical handling.",
+      "controls": [
+        "clean canonical",
+        "active sitemap exclusion for variants",
+        "clean first-party internal links",
+        "no parameter content in structured-data URLs"
+      ],
+      "rule": "Recognized tracking parameters may identify the same document but never create a separate indexable or sitemap URL."
+    },
+    {
+      "id": "EXCL-FILTER-SORT-VARIANTS",
+      "pattern": "filter and sort URL variants",
+      "plannedCanonicalStatus": "excluded_surface",
+      "contentApprovalStatus": "not_applicable_at_current_snapshot",
+      "releaseActivationStatus": "no_url_parameters_approved",
+      "indexabilityPolicy": "noindex_follow_if_later_approved",
+      "activeSitemap": false,
+      "statusPolicy": "No filter or sort URL parameter is approved in this snapshot; unapproved variants return 404.",
+      "canonicalMode": "omit",
+      "canonicalPolicy": "Do not canonicalize a subset or reordered view to a collection without a separately documented equivalence decision.",
+      "internalLinkPolicy": "No crawlable filter or sort URL is generated; UI state may remain local until an allowlist is approved.",
+      "parameterAllowlist": [],
+      "parameterRule": "Any later parameter requires an explicit allowlist, valid-value rules, 200/noindex behavior, and review before activation.",
+      "controls": [
+        "404 for unapproved variants",
+        "active sitemap exclusion",
+        "no crawlable parameter links"
+      ],
+      "rule": "Faceted and sort URL sets do not exist at launch unless a later route-inventory revision defines them deterministically."
+    },
+    {
+      "id": "EXCL-STAGING",
+      "pattern": "staging and candidate hosts",
+      "plannedCanonicalStatus": "excluded_surface",
+      "contentApprovalStatus": "candidate_only",
+      "releaseActivationStatus": "zero_public_traffic",
+      "indexabilityPolicy": "noindex_and_access_controlled",
+      "activeSitemap": false,
+      "controls": [
+        "authentication or network restriction",
+        "X-Robots-Tag noindex",
+        "no public sitemap submission"
+      ],
+      "rule": "A candidate release cannot be indexed before manual production promotion."
+    },
+    {
+      "id": "EXCL-DEFENSE",
+      "pattern": "defense routes or content",
+      "plannedCanonicalStatus": "absent_until_separately_approved",
+      "contentApprovalStatus": "blocked_by_MA-011",
+      "releaseActivationStatus": "absent",
+      "indexabilityPolicy": "absent_until_separately_approved",
+      "activeSitemap": false,
+      "controls": [
+        "no public render",
+        "no sitemap",
+        "no search notification",
+        "no AI knowledge",
+        "secure human route only if approved"
+      ],
+      "rule": "MA-011 must be satisfied for the exact defense scope before any public route exists."
+    }
+  ]
+}

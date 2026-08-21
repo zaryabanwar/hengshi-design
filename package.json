@@ -1,4 +1,16 @@
 {
   "name": "hengshi-design",
-  "private": true
+  "private": true,
+  "scripts": {
+    "test": "cd apps/api && .venv\\Scripts\\python.exe -m pytest",
+    "test:e2e": "npm run test:e2e --prefix apps/web",
+    "test:e2e:list": "npm run test:e2e:list --prefix apps/web",
+    "qa:lighthouse": "node tools/lighthouse/run-lhci.mjs",
+    "qa:axe": "node tools/accessibility/axe-smoke.mjs",
+    "mcp:context7": "npx -y @upstash/context7-mcp@latest",
+    "mcp:playwright": "npx -y @playwright/mcp@latest"
+  },
+  "devDependencies": {
+    "@lhci/cli": "^0.15.1"
+  }
 }

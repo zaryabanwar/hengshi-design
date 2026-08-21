@@ -1,0 +1,627 @@
+schema_version: 1
+last_updated: "2026-07-20"
+classification: business_confidential
+
+project:
+  name: Hengshi Design
+  repository_root: .
+  branch_observed: main
+  remote_observed: origin
+  repository_strategy: preserve_existing_codebase
+  prototype_status: protected_evidence_not_production_authority
+
+authority:
+  precedence:
+    - current_explicit_founder_approval_recorded_in_decisions
+    - constitution_and_project_safety_governance_rules
+    - approved_decisions_and_compatibility_exception_adrs
+    - approved_product_requirements_and_feature_specs
+    - approved_software_definition_and_design_artifacts
+    - source_tests_generated_artifacts_and_live_observations
+    - active_unreconciled_historical_research_drafts_and_chat
+  resolved_conflicts:
+    - id: CONFLICT-001
+      status: accepted
+      resolution_state: resolved
+      summary: >-
+        Fixed React 18, PostgreSQL 16, and AWS governance targets conflicted with the
+        founder-approved newest-compatible-stable and Azure direction.
+      resolution: >-
+        Phase 0 amended Constitution 2.0.0, AGENTS.md, project rules, software
+        definitions, Copilot instructions, and Spec Kit templates to implement the
+        approved policy.
+      remaining_follow_up: >-
+        Phase 1 must supersede or reconcile legacy v3 product documents, active
+        technical references, backlog, diagrams, and draft feature specs before
+        implementation.
+
+workflow:
+  lifecycle:
+    - create
+    - validate
+    - inspect
+    - review
+    - revise
+    - validate_again
+    - approve
+    - continue
+  allowed_statuses:
+    - not_started
+    - in_progress
+    - blocked
+    - awaiting_human
+    - in_review
+    - accepted
+  current_phase: phase_1_definition_seo_design_architecture_and_compatibility
+  current_status: in_progress
+  current_gate: phase_1_definition_and_review
+  default_max_revision_iterations: 2
+  phase_0:
+    status: accepted
+    objective: >-
+      Establish non-destructive durable workflow records, an authority bridge,
+      evidence-based readiness, risks, manual gates, and a resumable Phase 1 contract.
+    application_code_changed: false
+    dependencies_changed: false
+    migrations_created: false
+    external_systems_changed: false
+    commit_created: false
+    governance_amendment_applied: true
+    approval_required: satisfied_2026_07_19
+    founder_approval:
+      status: accepted
+      date: "2026-07-19"
+      evidence: explicit_founder_thumbs_up_in_active_codex_task
+  phase_1:
+    status: in_progress
+    title: Definition, SEO, design, architecture, and compatibility package
+    iteration: 1
+    maximum_revision_iterations: 2
+    design_maximum_revision_iterations: 3
+    objective: >-
+      Produce the complete founder-reviewable definition package and reconcile
+      legacy evidence before any application implementation begins.
+    inputs:
+      - approved_decisions_D_001_through_D_036
+      - phase_0_governance_and_authority_bridge
+      - protected_prototype_code_documents_data_and_glb
+      - approved_reference_sites
+      - context7_and_official_primary_sources
+    workstreams:
+      foundation_requirements_claims_and_seo: accepted
+      legacy_definition_reconciliation: in_progress
+      compatibility_matrix_and_upgrade_policy: awaiting_human
+      brand_strategy_and_identity: accepted
+      ux_ui_and_accessible_journeys: in_progress
+      ui_reference_design: not_started
+      three_d_storyboard_and_asset_specification: not_started
+      technical_architecture_and_contracts: not_started
+      security_privacy_ai_and_legal_controls: not_started
+      qa_deployment_recovery_and_cost: not_started
+    validators:
+      - decision_requirement_traceability
+      - machine_readable_artifact_parsing
+      - local_reference_validation
+      - unsupported_claim_and_secret_scan
+      - context7_and_official_source_evidence
+      - independent_specialist_reviews
+    bounded_slices:
+      foundation_requirements_claims_and_seo:
+        status: accepted
+        artifacts: docs/phase-1-foundation
+        validation: 49_passes_zero_failures
+        independent_requirements_review: iteration_2_pass
+        independent_seo_review: iteration_2_pass
+        founder_gate: MA-012
+        founder_approval: accepted_2026_07_19_D_025
+        industries_parent_hub: retained
+        implementation_authorized: false
+      compatibility_inventory:
+        status: awaiting_human
+        artifacts: docs/phase-1-compatibility
+        validation: passed
+        baseline_items: 50
+        graph_components: 50
+        coupling_edges: 27
+        deferred_families: 9
+        exact_lock_selection: deferred
+        independent_review: iteration_2_pass
+        founder_gate: MA-013
+      brand_strategy:
+        status: accepted
+        artifacts: docs/phase-1-brand-strategy
+        recommended_direction: evidence_in_motion
+        category: evidence_led_innovation_delivery_partner
+        promise: from_complex_ambition_to_accountable_delivery
+        producer_revision_iterations_used: 2
+        validation: 43_passes_zero_failures
+        independent_review_iteration_1: revise_0_critical_1_high_1_medium_1_low
+        independent_review_iteration_2: pass_all_3_findings_closed_no_new_findings
+        founder_gate: MA-014
+        founder_approval: accepted_2026_07_19_D_026
+        identity_status: accepted_2026_07_20_D_035
+      brand_identity:
+        status: accepted
+        artifacts: docs/phase-1-brand-identity
+        approved_strategy: evidence_in_motion_D_026
+        maximum_revision_iterations: 3
+        producer_revision_iterations_used: 3
+        active_producer_iteration: complete_D_035
+        normal_revision_limit_state: exhausted_3_of_3
+        correction_exception_authority: approved_2026_07_19_D_028
+        correction_exception_scope: recorded_iteration_3_findings_only
+        correction_exception_state: exhausted_failed_browser_accessibility_pass
+        correction_exception_stabilization: consumed_1_of_1
+        evidence_stabilization_authority: approved_2026_07_19_D_029
+        evidence_stabilization_scope: exact_four_recorded_browser_failures_only
+        evidence_stabilization_limit: one_deterministic_and_one_browser_pass_no_retry
+        immutable_evidence_requirement: six_reports_and_existing_archives_byte_for_byte
+        evidence_stabilization_state: exhausted_at_validator_harness_error_before_assertions
+        product_patch_state: six_authorized_files_applied_unassessed
+        validator_harness_repair_authority: approved_2026_07_20_D_030
+        validator_harness_repair_scope: line_171_selector_syntax_only
+        validator_harness_repair_limit: one_change_one_validator_no_retry
+        validator_harness_repair_state: exhausted_at_neighbor_forced_colors_selector
+        remaining_malformed_selector_audit: exactly_2_forced_colors_and_color_contrast
+        exhaustive_selector_authority: approved_2026_07_20_D_031
+        exhaustive_selector_scope: exactly_forced_colors_and_color_contrast
+        exhaustive_selector_limit: one_change_set_one_validator_no_retry
+        exhaustive_selector_state: completed_zero_malformed_hits
+        stale_assertion_audit: exactly_2_authority_phrase_and_manifest_version
+        assertion_literal_authority: approved_2026_07_20_D_032
+        assertion_literal_scope: exactly_authority_phrase_and_manifest_version
+        assertion_literal_limit: one_change_set_one_validator_no_retry
+        assertion_literal_state: completed_59_passes_zero_failures
+        change_request: docs/requirements/CHANGE_REQUEST_CR-001.md
+        change_authority: approved_2026_07_19_D_027
+        retained_system: signal_ledger
+        rejected_logo_candidate: signal_ledger_logo
+        revision_target: quiet_framework_derived_logo_hybrid
+        producer_validation: passed_D_034_final_freeze_63_passes_zero_failures
+        browser_accessibility_evidence: passed_9_states_zero_violation_zero_incomplete
+        browser_accessibility_report: docs/phase-1-brand-identity/validation/browser-audit-report.json
+        browser_accessibility_report_sha256: 6BCB2CAA0EA56BA8F64723BFBF451BD40720024ABE6ABE4183FFA94B839ED8A4
+        d_029_original_failure_classes: closed_4_of_4
+        remaining_contrast_incomplete: none
+        remaining_contrast_violation: none
+        browser_hygiene: zero_external_zero_console_zero_page_errors_temp_profile_removed
+        evidence_refresh_and_freeze: completed_D_034_final_freeze
+        final_contrast_authority: approved_2026_07_20_D_033
+        final_contrast_scope: dependency_key_four_states_and_print_three_nodes
+        final_contrast_limit: one_source_change_set_one_validator_one_browser_no_retry
+        final_contrast_state: completed_clean_frozen_D_034
+        final_contrast_checkpoint: docs/phase-1-brand-identity/validation/d-033-pre-contrast-correction-hashes.json
+        final_contrast_checkpoint_sha256: 58A1823E3261440CE4B51969F0C95FA7A63A6EC9D8EA6D1503951A89520BE0D0
+        final_contrast_source_change: css_only_applied_sha256_595B798239B5DB913CC89074AAEB8066184F64892258B0F4988D1FE89F507CE2
+        final_contrast_validator: D_033_exhausted_1_of_1_exit_1_56_pass_3_fail_then_D_034_final_63_pass_0_fail
+        final_contrast_validator_failures: preflight_mutable_report_old_css_literal_and_pinned_failed_report_signature
+        final_contrast_browser_invocations: D_033_0_D_034_2_plus_1_diagnostic
+        final_contrast_evidence_freeze: completed_D_034
+        final_contrast_temp_residue: 0
+        final_contrast_final_css_sha256: F05FEB9040F7F7B92510301D2542D655AC1FAB3934374923618A3BED892476A3
+        final_contrast_final_html_sha256: 1C9415513111C7835E5FDF05F12B9A6BCFE0961C1320FBEF90FC9816CB26B92C
+        completion_authority: approved_2026_07_20_D_034
+        completion_directive: just_complete_this_now_all
+        completion_scope: D_033_contrast_harness_evidence_and_verification_only
+        completion_retry_policy: internal_non_material_harness_and_evidence_reruns_allowed_as_needed
+        completion_state: complete_clean_frozen_independently_verified
+        completion_log: docs/phase-1-brand-identity/validation/d-034-completion-log.md
+        completion_log_sha256: 74B8E649727A8BB89CE2815A66CF7FAF082F99378A35C4DF1D9CCB39E3E18AA9
+        final_manifest_sha256: 2FDE436AEF81BC7E852B72F7BABD1FFD81DAB9CB056BC9E7F4787D4727D731BC
+        design_review_iteration_1: revise_0_critical_0_high_6_medium_0_low
+        accessibility_review_iteration_1: revise_0_critical_0_high_2_medium_0_low
+        design_review_iteration_2: pass_all_6_prior_findings_closed_1_new_nonblocking_low
+        accessibility_review_iteration_2: pass_all_2_prior_findings_closed_no_new_findings
+        residual_follow_up: R_020_closed_by_D_034_evidence_and_D_035_acceptance
+        design_review_iteration_3: revise_0_critical_0_high_4_medium_0_low
+        accessibility_review_iteration_3: revise_0_critical_0_high_2_medium_1_low
+        design_exception_verification: pass_0_critical_0_high_0_medium_0_low
+        design_exception_report: docs/phase-1-brand-identity/reviews/design-verification-evidence-stabilization-1.md
+        design_exception_report_sha256: 45CD6B08227C1E0BEEB5CB4C69479601F4729E1E6BF23D7EC26A8F0DAF01255C
+        accessibility_exception_verification: pass_0_critical_0_high_0_medium_0_low
+        accessibility_exception_report: docs/phase-1-brand-identity/accessibility/accessibility-verification-evidence-stabilization-1.md
+        accessibility_exception_report_sha256: B37412592FF95C2F0E9B1B200FB35F3A34076BCC062B0D27A51CEDB39FF6FA54
+        protected_integrity: zero_mismatch_6_reports_31_archive_24_forbidden
+        correction_gate: MA-022_accepted_2026_07_20_D_034
+        founder_gate: MA-015_accepted_2026_07_20_D_035
+        founder_approval: accepted_2026_07_20_D_035
+        legal_clearance: trademark_not_cleared_marks_unregistered
+        implementation_authorized: false
+      ux_architecture:
+        status: accepted
+        artifacts: docs/phase-1-ux-architecture
+        maximum_revision_iterations: 3
+        producer_revision_iterations_used: 3
+        final_validation: 113_passes_zero_failures
+        routes: 33
+        exclusions: 9
+        wayfinding_entries: 15
+        action_contracts: 53
+        ux_tests: 45
+        traceability_rows: 123
+        final_producer_package_sha256: 35E0EA46C1099BA271521EF55AFF3E3F83B76FF2E13C7E94387D76757FFC89D3
+        design_review_iteration_1: revise_0_critical_1_high_3_medium_0_low
+        accessibility_audit_iteration_1: revise_0_critical_0_high_5_medium_0_low
+        design_review_iteration_2: pass_0_critical_0_high_0_medium_0_low
+        accessibility_audit_iteration_2: revise_0_critical_0_high_1_medium_0_low
+        design_review_iteration_3: pass_0_critical_0_high_0_medium_0_low
+        design_review_iteration_3_sha256: 31B30DE62DDA30988401A309FEBDF9DD495D1430A4018AD2CB265AB60A2EC276
+        accessibility_audit_iteration_3: pass_0_critical_0_high_0_medium_0_low
+        accessibility_audit_iteration_3_sha256: A4B2E128377432FF00B4144A86D89FB3985506009B5AAE4FD2EB5959B6CBF95D
+        unresolved_critical_high_medium: 0
+        founder_gate: MA-023
+        founder_approval: accepted_2026_07_20_D_036
+        implementation_authorized: false
+        external_design_write_authorized: false
+      ui_reference_design:
+        status: not_started
+        recommended_next_slice: true
+        objective: >-
+          Define the bounded UI reference-screen contract and foundation-surface
+          coverage plan grounded in accepted D-036 UX architecture, without creating
+          production UI or making an external Figma/Stitch write.
+        external_design_write_authorized: false
+        implementation_authorized: false
+        human_gate: explicit_bounded_external_Figma_or_Stitch_write_approval
+    reviewer: foundation_brand_strategy_brand_identity_and_UX_architecture_accepted
+    current_gate: UI_reference_design_contract_planning_and_compatibility_MA_013_separate
+    founder_gate: founder_phase_1_acceptance_before_phase_2
+  phase_2:
+    status: blocked
+    blocked_by: phase_1_acceptance
+  phase_3:
+    status: blocked
+    blocked_by: phase_2_acceptance
+  phase_4:
+    status: blocked
+    blocked_by: phase_3_acceptance
+  phase_5:
+    status: blocked
+    blocked_by: phase_4_acceptance
+  phase_6:
+    status: blocked
+    blocked_by: phase_5_acceptance
+  phase_7:
+    status: blocked
+    blocked_by: phase_6_acceptance
+  phase_8:
+    status: blocked
+    blocked_by: phase_7_acceptance
+  phase_9:
+    status: blocked
+    blocked_by: phase_8_acceptance
+
+working_tree_baseline:
+  observed_on: "2026-07-18"
+  tracked_modified_files_before_phase_0: 16
+  untracked_files_before_phase_0: 63
+  staged_files_before_phase_0: 0
+  preservation_rule: >-
+    Treat every pre-existing modification and untracked file as user-owned; do not
+    revert, relocate, stage, or overwrite it.
+
+readiness:
+  local:
+    status: in_progress
+    statement: >-
+      Prototype code and local QA scaffolding exist, but deterministic frontend,
+      authorization, database, dependency, and documentation conflicts remain.
+  uat:
+    status: not_started
+    statement: >-
+      No approved UAT definition, persistent UAT environment, complete test evidence,
+      or accepted release candidate exists.
+  launch:
+    status: blocked
+    statement: >-
+      Definition, proof, legal/trademark, UX/UI design, infrastructure, CI/CD,
+      observability, security, accessibility, DNS, and provider gates remain unresolved.
+
+verified_local_findings:
+  - id: FACT-001
+    status: blocked
+    evidence: apps/web/src/world/WorldHUD.tsx
+    finding: WorldHUD returns before a later useMemo call, creating a hook-order defect.
+  - id: FACT-002
+    status: blocked
+    evidence: apps/api/app/auth/deps.py
+    finding: require_admin returns any authenticated active user without enforcing the admin role.
+  - id: FACT-003
+    status: blocked
+    evidence: apps/api/app/db/session.py
+    finding: Missing DATABASE_URL silently selects a local SQLite database.
+  - id: FACT-004
+    status: in_progress
+    evidence: apps/web/public/models/hengshi-hq-atlanta-exterior-web.glb
+    finding: The protected exterior GLB is 10002012 bytes and has no project-owned editable source found.
+  - id: FACT-005
+    status: not_started
+    evidence: .github/workflows
+    finding: No GitHub Actions workflow directory was present at the Phase 0 observation.
+  - id: FACT-006
+    status: in_progress
+    evidence: docs/Hengshi_Design_Project_Consolidation_v3.docx
+    finding: February 2026 readiness percentages are historical self-reported snapshots, not current acceptance evidence.
+  - id: FACT-007
+    status: accepted
+    evidence: docs/phase-1-foundation/evidence/libreoffice-capability-2026-07-19.md
+    finding: >-
+      LibreOffice 26.2.4.2 is installed and its headless conversion capability now
+      passes. A generated control DOCX and the 24-page historical consolidation both
+      produced PDFs; every target page rendered for visual inspection. The historical
+      source retains a blank table of contents and sparse continuation pages, which
+      are source-layout limitations rather than converter failure. Independent QA
+      passed the evidence and R-019 is closed with a fresh-conversion residual control.
+
+artifacts:
+  phase_0:
+    - .specify/memory/constitution.md
+    - .specify/templates/checklist-template.md
+    - .specify/templates/constitution-template.md
+    - .specify/templates/plan-template.md
+    - .specify/templates/spec-template.md
+    - .specify/templates/tasks-template.md
+    - .github/copilot-instructions.md
+    - AGENTS.md
+    - PROJECT.md
+    - PROJECT_STATE.yaml
+    - TASKS.md
+    - DECISIONS.md
+    - RISKS.md
+    - MANUAL_ACTIONS.md
+    - CHANGELOG.md
+    - docs/PROJECT_RULES.md
+    - docs/decisions-log.md
+    - docs/active/Documentation_Index.md
+    - docs/software-definition/README.md
+    - docs/software-definition/01-system-boundaries.md
+    - docs/software-definition/02-ai-dev-tooling-and-mcp.md
+    - docs/software-definition/03-autonomous-ai-development-workflow.md
+  phase_1:
+    foundation: docs/phase-1-foundation
+    compatibility_inventory: docs/phase-1-compatibility
+    brand_strategy: docs/phase-1-brand-strategy
+    brand_identity: docs/phase-1-brand-identity
+    change_request_CR_001: docs/requirements/CHANGE_REQUEST_CR-001.md
+
+reviews:
+  phase_0:
+    status: accepted
+    maximum_revision_iterations: 2
+    completed_review_iterations: 2
+    revision_iterations_used: 2
+    iteration_1:
+      reviewer: hengshi_code_reviewer
+      verdict: revise
+      findings:
+        high: 4
+        medium: 1
+      revisions_applied:
+        - removed_documentation_index_single_source_claim
+        - restored_context7_and_official_sources_requirement
+        - removed_ungated_alembic_command_from_generic_startup
+        - demoted_unapproved_legacy_fps_thresholds_to_phase_1_proposal
+        - corrected_constitution_sync_report
+      revalidation_status: passed_before_iteration_2
+    iteration_2:
+      reviewer: hengshi_code_reviewer
+      verdict: pass
+      findings:
+        critical: 0
+        high: 0
+        medium: 0
+        actionable_low: 0
+      validation:
+        - yaml_and_status_vocabulary_passed
+        - phase_0_artifact_paths_passed
+        - decision_and_manual_action_alignment_passed
+        - local_markdown_and_deferred_spec_paths_passed
+        - secret_and_stale_governance_scans_passed
+        - git_diff_scope_stage_and_divergence_checks_passed
+      founder_gate_recommendation: proceed
+    post_review_evidence_correction:
+      date: "2026-07-18"
+      correction: libreoffice_is_installed_but_headless_render_capability_crashes
+      checks:
+        - soffice_version_25_8_7_3_passed
+        - packaged_renderer_timed_out_without_output
+        - clean_profile_source_conversion_crashed_0xc0000409
+        - normalized_docx_conversion_crashed_0xc0000409
+        - one_paragraph_control_conversion_crashed_0xc0000409
+        - safe_mode_control_conversion_crashed_0xc0000409
+      phase_impact: non_blocking_historical_document_visual_qa_limitation
+  phase_1:
+    foundation:
+      status: accepted
+      revision_iterations_used: 1
+      requirements_iteration_1: revise_3_high_1_medium
+      requirements_iteration_2: pass_4_of_4_closed_no_new_findings
+      seo_iteration_1: revise_2_medium
+      seo_iteration_2: pass_2_of_2_closed_no_new_high_or_medium
+      final_validation: 49_passes_zero_failures
+      founder_gate: MA-012
+      founder_approval: accepted_2026_07_19_D_025
+      industries_parent_hub: retained
+    compatibility_inventory:
+      status: awaiting_human
+      producer_validation: passed
+      exact_lock_selection: deferred
+      independent_review: iteration_2_pass
+      iteration_1: revise_evidence_traceability_wave_coherence_and_supply_chain_controls
+      iteration_2: pass_all_4_findings_closed_no_new_blocker_high_or_medium
+      founder_gate: MA-013
+    brand_strategy:
+      status: accepted
+      producer_revision_iterations_used: 2
+      producer_validation: 43_passes_zero_failures
+      iteration_1: revise_0_critical_1_high_1_medium_1_low
+      iteration_2: pass_all_3_findings_closed_no_new_findings
+      recommended_direction: evidence_in_motion
+      founder_gate: MA-014
+      founder_approval: accepted_2026_07_19_D_026
+      identity_status: in_progress
+    brand_identity:
+      status: awaiting_human
+      approved_strategy: evidence_in_motion_D_026
+      maximum_revision_iterations: 3
+      producer_revision_iterations_used: 3
+      active_producer_iteration: D_034_complete_awaiting_MA_015
+      normal_revision_limit_state: exhausted_3_of_3
+      correction_exception_authority: approved_2026_07_19_D_028
+      correction_exception_scope: recorded_iteration_3_findings_only
+      correction_exception_state: exhausted_failed_browser_accessibility_pass
+      correction_exception_stabilization: consumed_1_of_1
+      evidence_stabilization_authority: approved_2026_07_19_D_029
+      evidence_stabilization_scope: exact_four_recorded_browser_failures_only
+      evidence_stabilization_limit: one_deterministic_and_one_browser_pass_no_retry
+      immutable_evidence_requirement: six_reports_and_existing_archives_byte_for_byte
+      evidence_stabilization_state: exhausted_at_validator_harness_error_before_assertions
+      product_patch_state: six_authorized_files_applied_unassessed
+      validator_harness_repair_authority: approved_2026_07_20_D_030
+      validator_harness_repair_scope: line_171_selector_syntax_only
+      validator_harness_repair_limit: one_change_one_validator_no_retry
+      validator_harness_repair_state: exhausted_at_neighbor_forced_colors_selector
+      remaining_malformed_selector_audit: exactly_2_forced_colors_and_color_contrast
+      exhaustive_selector_authority: approved_2026_07_20_D_031
+      exhaustive_selector_scope: exactly_forced_colors_and_color_contrast
+      exhaustive_selector_limit: one_change_set_one_validator_no_retry
+      exhaustive_selector_state: completed_zero_malformed_hits
+      stale_assertion_audit: exactly_2_authority_phrase_and_manifest_version
+      assertion_literal_authority: approved_2026_07_20_D_032
+      assertion_literal_scope: exactly_authority_phrase_and_manifest_version
+      assertion_literal_limit: one_change_set_one_validator_no_retry
+      assertion_literal_state: completed_59_passes_zero_failures
+      change_request: docs/requirements/CHANGE_REQUEST_CR-001.md
+      change_authority: approved_2026_07_19_D_027
+      retained_system: signal_ledger
+      rejected_logo_candidate: signal_ledger_logo
+      revision_target: quiet_framework_derived_logo_hybrid
+      producer_validation: passed_D_034_final_freeze_63_passes_zero_failures
+      browser_accessibility_evidence: passed_9_states_zero_violation_zero_incomplete
+      browser_accessibility_report: docs/phase-1-brand-identity/validation/browser-audit-report.json
+      browser_accessibility_report_sha256: 6BCB2CAA0EA56BA8F64723BFBF451BD40720024ABE6ABE4183FFA94B839ED8A4
+      d_029_original_failure_classes: closed_4_of_4
+      remaining_contrast_incomplete: none
+      remaining_contrast_violation: none
+      browser_hygiene: zero_external_zero_console_zero_page_errors_temp_profile_removed
+      evidence_refresh_and_freeze: completed_D_034_final_freeze
+      final_contrast_authority: approved_2026_07_20_D_033
+      final_contrast_scope: dependency_key_four_states_and_print_three_nodes
+      final_contrast_limit: one_source_change_set_one_validator_one_browser_no_retry
+      final_contrast_state: completed_clean_frozen_D_034
+      final_contrast_checkpoint: docs/phase-1-brand-identity/validation/d-033-pre-contrast-correction-hashes.json
+      final_contrast_checkpoint_sha256: 58A1823E3261440CE4B51969F0C95FA7A63A6EC9D8EA6D1503951A89520BE0D0
+      final_contrast_source_change: css_only_applied_sha256_595B798239B5DB913CC89074AAEB8066184F64892258B0F4988D1FE89F507CE2
+      final_contrast_validator: D_033_exhausted_1_of_1_exit_1_56_pass_3_fail_then_D_034_final_63_pass_0_fail
+      final_contrast_validator_failures: preflight_mutable_report_old_css_literal_and_pinned_failed_report_signature
+      final_contrast_browser_invocations: D_033_0_D_034_2_plus_1_diagnostic
+      final_contrast_evidence_freeze: completed_D_034
+      final_contrast_temp_residue: 0
+      final_contrast_final_css_sha256: F05FEB9040F7F7B92510301D2542D655AC1FAB3934374923618A3BED892476A3
+      final_contrast_final_html_sha256: 1C9415513111C7835E5FDF05F12B9A6BCFE0961C1320FBEF90FC9816CB26B92C
+      completion_authority: approved_2026_07_20_D_034
+      completion_directive: just_complete_this_now_all
+      completion_scope: D_033_contrast_harness_evidence_and_verification_only
+      completion_retry_policy: internal_non_material_harness_and_evidence_reruns_allowed_as_needed
+      completion_state: complete_clean_frozen_independently_verified
+      completion_log: docs/phase-1-brand-identity/validation/d-034-completion-log.md
+      completion_log_sha256: 74B8E649727A8BB89CE2815A66CF7FAF082F99378A35C4DF1D9CCB39E3E18AA9
+      final_manifest_sha256: 2FDE436AEF81BC7E852B72F7BABD1FFD81DAB9CB056BC9E7F4787D4727D731BC
+      design_review_iteration_1: revise_0_critical_0_high_6_medium_0_low
+      accessibility_review_iteration_1: revise_0_critical_0_high_2_medium_0_low
+      design_review_iteration_2: pass_all_6_prior_findings_closed_1_new_nonblocking_low
+      accessibility_review_iteration_2: pass_all_2_prior_findings_closed_no_new_findings
+      residual_follow_up: R_020_reopened_by_BI_A11Y_I3_002
+      design_review_iteration_3: revise_0_critical_0_high_4_medium_0_low
+      accessibility_review_iteration_3: revise_0_critical_0_high_2_medium_1_low
+      design_exception_verification: pass_0_critical_0_high_0_medium_0_low
+      design_exception_report: docs/phase-1-brand-identity/reviews/design-verification-evidence-stabilization-1.md
+      design_exception_report_sha256: 45CD6B08227C1E0BEEB5CB4C69479601F4729E1E6BF23D7EC26A8F0DAF01255C
+      accessibility_exception_verification: pass_0_critical_0_high_0_medium_0_low
+      accessibility_exception_report: docs/phase-1-brand-identity/accessibility/accessibility-verification-evidence-stabilization-1.md
+      accessibility_exception_report_sha256: B37412592FF95C2F0E9B1B200FB35F3A34076BCC062B0D27A51CEDB39FF6FA54
+      protected_integrity: zero_mismatch_6_reports_31_archive_24_forbidden
+      correction_gate: MA-022_accepted_2026_07_20_D_034
+      founder_gate: MA-015
+      founder_approval: pending_reviewed_hybrid
+      implementation_authorized: false
+  operational_evidence:
+    libreoffice_repair_2026_07_19:
+      reviewer: hengshi_qa_engineer
+      verdict: pass
+      artifact: docs/phase-1-foundation/evidence/libreoffice-capability-2026-07-19.md
+      checks:
+        - installed_version_26_2_4_2
+        - generated_control_docx_to_pdf_passed
+        - historical_24_page_docx_to_pdf_passed
+        - all_24_page_renders_structurally_and_visually_inspected
+        - source_layout_limitations_distinguished_from_converter_failure
+      risk_result: R_019_closed_with_fresh_conversion_residual_control
+
+next_action:
+  id: PHASE-1-CONTRACT
+  status: not_started
+  current_focus: >-
+    Prepare the bounded Phase 1 UI reference-design contract and foundation-surface
+    coverage plan grounded in accepted D-036 UX architecture. Do not begin UI
+    production or any external Figma/Stitch write without its explicit approval.
+    Compatibility separately awaits MA-013; implementation remains blocked.
+  objective: >-
+    Produce and reconcile the complete founder-reviewable product definition, SEO,
+    brand, UX/UI, 3D, architecture, API/data, AI, security/privacy, testing,
+    deployment, cost, growth, and dated latest-compatible-stable technology package,
+    superseding or reconciling legacy product and feature artifacts to the amended
+    Phase 0 governance.
+  exclusions:
+    - application_feature_implementation
+    - dependency_or_lockfile_changes
+    - database_migrations
+    - infrastructure_provisioning
+    - paid_service_activation
+    - external_design_writes_without_approval
+    - commits_pushes_or_deployment
+  required_inputs:
+    - AGENTS.md
+    - .specify/memory/constitution.md
+    - PROJECT.md
+    - PROJECT_STATE.yaml
+    - TASKS.md
+    - DECISIONS.md
+    - RISKS.md
+    - MANUAL_ACTIONS.md
+    - docs/software-definition/README.md
+    - docs/decisions-log.md
+    - existing_v3_and_spec_artifacts_as_evidence
+  deliverables:
+    - approved_product_and_business_requirements
+    - evidence_and_claim_inventory
+    - seo_keyword_route_and_editorial_strategy
+    - brand_strategy_and_identity_direction
+    - ux_information_architecture_and_accessible_flows
+    - stitch_then_figma_design_references
+    - 3d_storyboard_asset_and_blender_rebuild_specification
+    - technical_architecture_and_adrs
+    - api_data_publication_and_ai_contracts
+    - security_privacy_legal_and_defense_gate_model
+    - qa_performance_accessibility_and_release_strategy
+    - azure_nvidia_cost_and_operability_envelope
+    - dated_context7_and_official_docs_compatibility_matrix
+    - reconciled_legacy_product_definitions_and_feature_specs
+  validation:
+    - cross_artifact_traceability_and_conflict_check
+    - referenced_path_validation
+    - context7_and_official_primary_source_evidence
+    - approved_stitch_or_figma_reference_verification_before_ui_approval
+    - independent_design_architecture_security_accessibility_and_requirements_reviews
+    - documentation_diff_and_secret_scan
+  acceptance: >-
+    All Phase 1 deliverables agree, contain no unsupported claims or unresolved
+    implementation decisions, satisfy independent findings within allowed revisions,
+    and are explicitly accepted by the founder before Phase 2 starts.
+  maximum_revision_iterations: 2
+  design_revision_iterations: 3
+  human_gates:
+    - founder_scope_and_claim_approval
+    - founder_brand_and_design_approval
+    - founder_architecture_security_and_cost_approval
+    - paid_or_external_write_approval_when_applicable

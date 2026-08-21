@@ -1,0 +1,57 @@
+%% Hengshi Design Digital Platform - Authentication Flow (February 2026)
+%% JWT-based admin authentication with bcrypt password hashing
+
+sequenceDiagram
+    participant B as Browser
+    participant FE as React SPA<br/>(lib/api.ts)
+    participant API as FastAPI<br/>(auth/routes.py)
+    participant JWT as JWT Module<br/>(auth/jwt.py)
+    participant PWD as Password Module<br/>(auth/password.py)
+    participant DB as PostgreSQL<br/>(users table)
+
+    Note over B,DB: Login Flow
+
+    B->>FE: Submit login form<br/>(email, password)
+    FE->>API: POST /api/auth/login<br/>{email, password}
+    API->>DB: SELECT user WHERE email = ?
+    DB-->>API: User record (id, email, password_hash, role)
+
+    alt User not found
+        API-->>FE: 401 {"detail": "Invalid credentials"}
+        FE-->>B: Show error message
+    else User found
+        API->>PWD: bcrypt.verify(password, password_hash)
+
+        alt Password invalid
+            API-->>FE: 401 {"detail": "Invalid credentials"}
+            FE-->>B: Show error message
+        else Password valid
+            API->>JWT: create_access_token({sub: user_id, email, role})
+            JWT-->>API: JWT token (HS256, 120min expiry)
+            API-->>FE: 200 {access_token, token_type: "bearer"}
+            FE->>FE: Store token in localStorage<br/>⚠️ Migrate to httpOnly cookie (Sprint 1)
+            FE-->>B: Redirect to /admin
+        end
+    end
+
+    Note over B,DB: Authenticated Request Flow
+
+    B->>FE: Admin action (e.g., create service)
+    FE->>API: GET /api/admin/services<br/>Authorization: Bearer <token>
+    API->>JWT: decode_token(token)
+
+    alt Token invalid/expired
+        API-->>FE: 401 {"detail": "Invalid token"}
+        FE-->>B: Redirect to /admin/login
+    else Token valid
+        JWT-->>API: {sub: user_id, email, role: "admin"}
+        API->>API: require_admin() — verify role='admin'
+        API->>DB: Execute query
+        DB-->>API: Results
+        API-->>FE: 200 Response data
+        FE-->>B: Render admin UI
+    end
+
+    Note over B,DB: Security Gaps (Sprint 1 Remediation)
+    Note right of API: ❌ No login rate limiting<br/>❌ No JWT secret enforcement<br/>❌ No password complexity
+    Note right of FE: ❌ Token in localStorage (XSS risk)<br/>→ Migrate to httpOnly cookies

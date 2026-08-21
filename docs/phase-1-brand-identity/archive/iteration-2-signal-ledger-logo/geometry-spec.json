@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "document": {
+    "name": "Signal Ledger authoritative geometry",
+    "version": "master-80-v2",
+    "date": "2026-07-19",
+    "status": "exploratory_unregistered_trademark_not_cleared",
+    "authority": "D-026 Evidence in Motion; producer iteration 2"
+  },
+  "master": {
+    "id": "signal-ledger-master",
+    "viewBox": "0 0 80 80",
+    "railLeft": { "x": 8, "y": 8, "width": 10, "height": 64, "rx": 1 },
+    "railRight": { "x": 54, "y": 8, "width": 10, "height": 64, "rx": 1 },
+    "bridge": { "x": 18, "y": 35, "width": 36, "height": 10 },
+    "signal": {
+      "path": "M13 60 L36 40 L59 17",
+      "strokeWidth": 5,
+      "lineCap": "square",
+      "point": { "cx": 59, "cy": 17, "r": 4.5 }
+    },
+    "derivationRule": "Primary, light, reverse, monochrome, compact lockup, and standard monogram use these coordinates without geometric deviation. Color and surrounding plate may change by declared surface token."
+  },
+  "lockup": {
+    "viewBox": "0 0 420 128",
+    "masterTransform": "translate(24 24)",
+    "wordmark": { "x": 124, "baselineY": 69, "fontSize": 34, "weight": 700, "letterSpacing": -0.8 },
+    "descriptorIncluded": false,
+    "minimumScreenWidthCssPx": 168,
+    "minimumPrintWidthMm": 38,
+    "screenArithmetic": {
+      "retainedNameCssPx": 13.6,
+      "minimumSignalDevicePxAtDpr1": 2.0,
+      "calculation": "34*168/420=13.6; 5*168/420=2.0"
+    },
+    "rejectedComparisonWidthCssPx": 144,
+    "rejectedArithmetic": {
+      "retainedNameCssPx": 11.66,
+      "minimumSignalDevicePxAtDpr1": 1.71,
+      "calculation": "34*144/420=11.66; 5*144/420=1.71"
+    },
+    "printArithmetic": {
+      "retainedNameHeightMm": 3.08,
+      "minimumSignalStrokeMm": 0.45,
+      "calculation": "34*38/420=3.08; 5*38/420=0.45"
+    }
+  },
+  "standardMonogram": {
+    "viewBox": "0 0 80 80",
+    "geometry": "master-80-v2",
+    "minimumScreenWidthCssPx": 32,
+    "minimumSignalDevicePxAtDpr1": 2.0,
+    "calculation": "5*32/80=2.0"
+  },
+  "opticalVariants": [
+    {
+      "id": "small-mark-24-v1",
+      "purpose": "24–31 CSS px standalone mark where the standard master would fall below the 2-device-pixel DPR1 signal floor",
+      "viewBox": "0 0 24 24",
+      "minimumScreenWidthCssPx": 24,
+      "railLeft": { "x": 5, "y": 3, "width": 3, "height": 18 },
+      "railRight": { "x": 16, "y": 3, "width": 3, "height": 18 },
+      "bridge": { "x": 8, "y": 10.5, "width": 8, "height": 3 },
+      "signal": { "path": "M6.5 18 L12 12 L17.5 5.5", "strokeWidth": 2, "lineCap": "square", "point": { "cx": 17.5, "cy": 5.5, "r": 1.5 } },
+      "deviation": "Rails and bridge are optically thickened and spacing simplified; the evidence point is reduced. The two-rail, bridge, rising-path, and terminal-point topology is unchanged.",
+      "minimumSignalDevicePxAtDpr1": 2.0
+    },
+    {
+      "id": "favicon-16-v2",
+      "purpose": "16–23 CSS px browser chrome where whole-pixel DPR1 geometry is required",
+      "viewBox": "0 0 16 16",
+      "minimumScreenWidthCssPx": 16,
+      "railLeft": { "x": 3, "y": 3, "width": 2, "height": 10 },
+      "railRight": { "x": 11, "y": 3, "width": 2, "height": 10 },
+      "bridge": { "x": 5, "y": 7, "width": 6, "height": 2 },
+      "signal": { "path": "M4 12 L12 4", "strokeWidth": 2, "lineCap": "square", "pointIncluded": false },
+      "deviation": "The terminal point and intermediate bend are removed; all retained strokes align to the 16-unit grid and remain 2 device pixels at DPR1.",
+      "minimumSignalDevicePxAtDpr1": 2.0
+    }
+  ]
+}

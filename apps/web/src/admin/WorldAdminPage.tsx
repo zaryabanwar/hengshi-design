@@ -28,7 +28,7 @@ type HotspotFormState = {
   key: string
   title: string
   description: string
-  kind: string
+  kind: WorldHotspot['kind']
   position: string
   normal: string
   radius: number
@@ -460,7 +460,12 @@ export const WorldAdminPage = () => {
             <select
               className="w-full rounded border border-slate-700 bg-slate-900 px-3 py-2 text-sm"
               value={hotspotForm.kind}
-              onChange={(event) => setHotspotForm({ ...hotspotForm, kind: event.target.value })}
+              onChange={(event) =>
+                setHotspotForm({
+                  ...hotspotForm,
+                  kind: event.target.value as WorldHotspot['kind']
+                })
+              }
             >
               <option value="OPEN_PANEL">OPEN_PANEL</option>
               <option value="NAVIGATE_NODE">NAVIGATE_NODE</option>

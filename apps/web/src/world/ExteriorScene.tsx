@@ -104,6 +104,7 @@ const DoorHotspot = ({ position, disabled, onClick }: DoorHotspotProps) => {
 
 export const ExteriorScene = () => {
   const { camera } = useThree()
+  const perspectiveCamera = camera as THREE.PerspectiveCamera
   const { scene } = useGLTF(MODEL_URL)
   const { entryPhase, setEntryPhase, transitionTo, nodes } = useWorldStore()
 
@@ -125,10 +126,10 @@ export const ExteriorScene = () => {
   })
 
   const applyKeyframe = (frame: CameraKeyframe) => {
-    camera.position.set(...frame.position)
+    perspectiveCamera.position.set(...frame.position)
     targetRef.current.set(...frame.target)
-    camera.fov = frame.fov
-    camera.updateProjectionMatrix()
+    perspectiveCamera.fov = frame.fov
+    perspectiveCamera.updateProjectionMatrix()
   }
 
   useEffect(() => {
@@ -165,12 +166,12 @@ export const ExteriorScene = () => {
           '<'
         )
         timeline.to(
-          camera,
+          perspectiveCamera,
           {
             fov: frame.fov,
             duration: frame.duration,
             ease: 'power2.inOut',
-            onUpdate: () => camera.updateProjectionMatrix()
+            onUpdate: () => perspectiveCamera.updateProjectionMatrix()
           },
           '<'
         )
@@ -189,7 +190,7 @@ export const ExteriorScene = () => {
     }
 
     return undefined
-  }, [camera, entryPhase, setEntryPhase])
+  }, [camera, entryPhase, perspectiveCamera, setEntryPhase])
 
   return (
     <group>

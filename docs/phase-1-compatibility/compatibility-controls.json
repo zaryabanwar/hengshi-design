@@ -1,0 +1,739 @@
+{
+  "schemaVersion": "1.0.0",
+  "observedAt": "2026-07-19",
+  "status": "revision_1_controls_not_approved",
+  "lockSelectionState": "deferred",
+  "checkpointPolicy": {
+    "acceptedCheckpointRequires": [
+      "All assigned peer and runtime constraints are satisfied from a clean deterministic install.",
+      "Forward and reverse build, browser, failure-path, and wave-specific evidence passes.",
+      "No exact lock, exception, migration, Git action, paid or external write, production promotion, or deployment proceeds without its separate unsatisfied gate."
+    ],
+    "forbiddenCheckpoint": "React 19 with React Three Fiber 8 or Drei 9 is never an acceptable checkpoint.",
+    "currentState": "No checkpoint in this model is accepted or implementation-authorized."
+  },
+  "waves": [
+    {
+      "id": "WAVE-00",
+      "name": "Trustworthy baseline stabilization",
+      "state": "not_authorized",
+      "scope": "Fix only the known hook-order, admin-authorization, and PostgreSQL-configuration defects under the later approved Phase 2 contract.",
+      "atomicComponentIds": [],
+      "entryCheckpointId": null,
+      "outputCheckpointId": "CP-00",
+      "gateIds": ["HG-015"],
+      "requiredTests": ["Failing regression and negative tests first", "Real entry-to-inside browser path", "Viewer-role authorization negatives", "PostgreSQL-only production startup"],
+      "rollback": "Restore the bounded source patch while retaining the regression evidence; no dependency change is part of this wave."
+    },
+    {
+      "id": "WAVE-01",
+      "name": "Node and npm runtime pair",
+      "state": "not_authorized",
+      "scope": "Move Node and npm as one runtime pair; spike npm 12 first and keep bundled npm only as an exception path.",
+      "atomicComponentIds": ["runtime-node", "runtime-npm"],
+      "entryCheckpointId": "CP-00",
+      "outputCheckpointId": "CP-01",
+      "gateIds": ["HG-001", "HG-002", "HG-003"],
+      "requiredTests": ["Frozen root and web installs", "Lock-drift rejection", "Lifecycle-script and clean-relock parity", "Editor and CI runtime parity"],
+      "rollback": "Restore the prior Node/npm pair, runtime descriptor, and both exact package locks."
+    },
+    {
+      "id": "WAVE-02",
+      "name": "Vite and React plugin",
+      "state": "not_authorized",
+      "scope": "Move Vite and its React plugin as one toolchain pair after the runtime pair is proven.",
+      "atomicComponentIds": ["tool-vite", "tool-vite-react"],
+      "entryCheckpointId": "CP-01",
+      "outputCheckpointId": "CP-02",
+      "gateIds": ["HG-001"],
+      "requiredTests": ["Development and HMR", "Production build and preview", "JSX transform", "Source maps and bundle comparison"],
+      "rollback": "Restore the prior Vite/plugin pair, configuration, and exact lock."
+    },
+    {
+      "id": "WAVE-03",
+      "name": "TypeScript and ESLint toolchain",
+      "state": "not_authorized",
+      "scope": "Spike the TypeScript 7 compiler plus TypeScript 6 API bridge and the TypeScript 6-only exception; move ESLint, parser, plugin, and hook rules only as a proven set.",
+      "atomicComponentIds": ["tool-typescript-web", "tool-eslint", "tool-typescript-eslint-parser", "tool-typescript-eslint-plugin", "tool-eslint-react-hooks", "tool-eslint-react-refresh"],
+      "entryCheckpointId": "CP-02",
+      "outputCheckpointId": "CP-03",
+      "gateIds": ["HG-001", "HG-002", "HG-004"],
+      "requiredTests": ["No-emission typecheck", "Typed lint and rule inventory", "Editor and CI diagnostic parity", "No unsafe suppression"],
+      "rollback": "Restore the prior compiler, ESLint, parser/plugins, configuration, and exact lock as one set."
+    },
+    {
+      "id": "WAVE-04",
+      "name": "Atomic React and React Three integration",
+      "state": "not_authorized",
+      "scope": "React, React DOM, both React type packages, React Three Fiber, and Drei transition atomically. Three 0.160.1 may be retained only because the recorded candidate peer floors include it and the same spike proves behavior.",
+      "atomicComponentIds": ["frontend-react", "frontend-react-dom", "frontend-types-react", "frontend-types-react-dom", "three-r3f", "three-drei"],
+      "entryCheckpointId": "CP-03",
+      "outputCheckpointId": "CP-04",
+      "gateIds": ["HG-001"],
+      "requiredTests": ["Clean peer resolution", "Strict Mode and hook-order regression", "Scene lifecycle and context loss", "Asset, interaction, screenshot, memory, performance, reduced-motion, and Quick Access evidence", "Forward and reverse install/build/browser proof"],
+      "rollback": "Restore React 18.3.1, React DOM 18.3.1, React types 18, R3F 8.18.0, Drei 9.122.0, and the prior exact lock together."
+    },
+    {
+      "id": "WAVE-05",
+      "name": "React Router topology",
+      "state": "not_authorized",
+      "scope": "Migrate the Router package and import topology only after CP-04. CP-04 may retain react-router-dom 6.30.3 only when same-day peer and route evidence proves it with the accepted React set; otherwise this change joins WAVE-04 before CP-04 can pass.",
+      "atomicComponentIds": ["frontend-react-router-dom"],
+      "entryCheckpointId": "CP-04",
+      "outputCheckpointId": "CP-05",
+      "gateIds": ["HG-001"],
+      "requiredTests": ["Route matrix and direct loads", "Back and forward navigation", "404 and error boundaries", "Admin flows and authorization negatives", "Chromium, Firefox, and WebKit"],
+      "rollback": "Restore the prior Router package, imports, route behavior, and exact lock without changing the accepted React/R3F/Drei set."
+    },
+    {
+      "id": "WAVE-06",
+      "name": "Three renderer core",
+      "state": "not_authorized",
+      "scope": "Move Three separately only after CP-04 proves the retained Three 0.160.1 satisfies every selected R3F/Drei peer and behavior contract.",
+      "atomicComponentIds": ["three-core"],
+      "entryCheckpointId": "CP-05",
+      "outputCheckpointId": "CP-06",
+      "gateIds": ["HG-001"],
+      "requiredTests": ["Renderer and loader behavior", "Color and shader screenshots", "Memory and disposal", "Frame-time and thermal degradation", "Context-loss recovery"],
+      "rollback": "Restore the retained proven Three version and exact lock while keeping the accepted React/R3F/Drei generation."
+    },
+    {
+      "id": "WAVE-07",
+      "name": "Zustand state layer",
+      "state": "not_authorized",
+      "scope": "Move Zustand alone after the React/3D checkpoint so selector and scene-consumer changes remain reversible.",
+      "atomicComponentIds": ["frontend-zustand"],
+      "entryCheckpointId": "CP-06",
+      "outputCheckpointId": "CP-07",
+      "gateIds": ["HG-001"],
+      "requiredTests": ["Selectors and subscriptions", "Render-loop behavior", "Scene navigation and disposal", "Forward and reverse build/browser proof"],
+      "rollback": "Restore the prior Zustand package and state integration."
+    },
+    {
+      "id": "WAVE-08",
+      "name": "GSAP motion layer",
+      "state": "not_authorized",
+      "scope": "Move GSAP alone without UI redesign or other motion changes.",
+      "atomicComponentIds": ["frontend-gsap"],
+      "entryCheckpointId": "CP-07",
+      "outputCheckpointId": "CP-08",
+      "gateIds": ["HG-001"],
+      "requiredTests": ["Reduced motion", "Animation cleanup", "Navigation and focus", "Forward and reverse browser proof"],
+      "rollback": "Restore the prior GSAP package and animation integration."
+    },
+    {
+      "id": "WAVE-09",
+      "name": "Tailwind and PostCSS integration",
+      "state": "not_authorized",
+      "scope": "Move Tailwind and the selected PostCSS topology after approved production UI references; do not combine with design changes.",
+      "atomicComponentIds": ["tool-tailwind", "tool-postcss", "tool-autoprefixer"],
+      "entryCheckpointId": "CP-08",
+      "outputCheckpointId": "CP-09",
+      "gateIds": ["HG-001"],
+      "requiredTests": ["Production CSS completeness", "Generated prefix comparison", "Responsive, focus, contrast, and visual baselines", "Safari and iOS floor", "Bundle size"],
+      "rollback": "Restore the prior Tailwind/PostCSS/Autoprefixer configuration and exact lock."
+    },
+    {
+      "id": "WAVE-10",
+      "name": "Python backend and deterministic lock",
+      "state": "not_authorized",
+      "scope": "Move the Python patch, FastAPI stack, data libraries, auth libraries, pytest plugins, and approved deterministic lock without schema change.",
+      "atomicComponentIds": ["runtime-python", "tool-pip", "lock-python", "backend-fastapi", "backend-starlette", "backend-pydantic", "backend-uvicorn", "backend-sqlalchemy", "backend-alembic", "backend-psycopg", "backend-bcrypt", "backend-pyjwt", "backend-httpx", "backend-email-validator", "backend-python-dotenv", "qa-pytest", "qa-pytest-asyncio"],
+      "entryCheckpointId": "CP-09",
+      "outputCheckpointId": "CP-10",
+      "gateIds": ["HG-001", "HG-006"],
+      "requiredTests": ["Two identical clean locked syncs with hashes", "Imports and typing", "API and OpenAPI contracts", "Authorization negatives", "Lifespan, WebSocket, async fixtures, and full pytest", "Advisory, SBOM, license, and deprecation evidence"],
+      "rollback": "Restore the prior Python runtime, exact approved lock, and environment image together; no schema change is reversed here."
+    },
+    {
+      "id": "WAVE-11",
+      "name": "PostgreSQL service and runtime truth",
+      "state": "not_authorized",
+      "scope": "Select and rehearse the approved regional PostgreSQL generation only after provider, data, cost, security, and recovery gates.",
+      "atomicComponentIds": ["database-postgresql-compose"],
+      "entryCheckpointId": "CP-10",
+      "outputCheckpointId": "CP-11",
+      "gateIds": ["HG-001", "HG-005", "HG-013", "HG-015"],
+      "requiredTests": ["Regional feature and extension matrix", "Full Alembic up and down graph", "Partial failure and lock timeout", "Driver and query performance", "Immutable backup and timed restore", "Application rollback and RPO/RTO"],
+      "rollback": "Use the rehearsed restore or parallel prior supported major with an immutable backup and compatible application window."
+    },
+    {
+      "id": "WAVE-12",
+      "name": "Browser quality toolchain",
+      "state": "not_authorized",
+      "scope": "Lock Playwright, browser revisions, axe, Lighthouse, and the approved multi-browser/device matrix as a reproducible QA lane.",
+      "atomicComponentIds": ["qa-playwright", "qa-axe-playwright", "qa-lighthouse-ci", "browser-test-matrix"],
+      "entryCheckpointId": "CP-11",
+      "outputCheckpointId": "CP-12",
+      "gateIds": ["HG-001"],
+      "requiredTests": ["Chromium, Firefox, WebKit, Safari and iOS evidence", "Actual entry and inside paths", "Console and network capture", "Axe engine failure", "Lighthouse timeout failure", "Screenshots and traces"],
+      "rollback": "Restore the prior proven runner, browser revisions, adapters, and reports while retaining required browser floors."
+    },
+    {
+      "id": "WAVE-13",
+      "name": "Container, CI, cloud, and immutable delivery references",
+      "state": "not_authorized",
+      "scope": "Select container images, CI actions, Azure API versions, observability, and provider adapters only after architecture, security, data, cost, and action gates.",
+      "atomicComponentIds": ["container-docker-cli", "container-compose-plugin", "ci-github-actions", "cloud-azure-manifests"],
+      "entryCheckpointId": "CP-12",
+      "outputCheckpointId": "CP-13",
+      "gateIds": ["HG-001", "HG-007", "HG-008", "HG-009", "HG-010", "HG-011", "HG-012", "HG-014", "HG-015"],
+      "requiredTests": ["Reproducible non-root image and immutable digest", "Action commit-SHA and permission policy", "OIDC and RBAC negatives", "Provider unavailable, quota, residency, retention, and deletion", "Zero-traffic candidate", "Readiness, observability, backup, traffic rollback, and cost stops"],
+      "rollback": "Retain the prior immutable release and compatible data, disable only the bounded adapter or workflow, and reverse traffic only after health and observability checks."
+    }
+  ],
+  "checkpoints": [
+    { "id": "CP-00", "afterWaveId": "WAVE-00", "state": "unaccepted", "compatibilityRule": "Known fatal baseline defects have reproducible tests and bounded reviewed fixes; dependency versions are unchanged.", "acceptanceEvidence": ["Regression and negative tests", "Real browser and API evidence"], "rollback": "Restore the source-only patch." },
+    { "id": "CP-01", "afterWaveId": "WAVE-01", "state": "unaccepted", "compatibilityRule": "One coherent Node/npm pair completes frozen installs with no lock drift; any npm fallback has a founder-approved dated exception.", "acceptanceEvidence": ["Forward and reverse frozen installs", "Runtime parity"], "rollback": "Restore the prior Node/npm pair and locks." },
+    { "id": "CP-02", "afterWaveId": "WAVE-02", "state": "unaccepted", "compatibilityRule": "The selected Vite/plugin pair satisfies runtime and peer constraints and reproduces dev, build, preview, and HMR behavior.", "acceptanceEvidence": ["Clean build and HMR", "Source-map and bundle comparison"], "rollback": "Restore the prior Vite/plugin pair." },
+    { "id": "CP-03", "afterWaveId": "WAVE-03", "state": "unaccepted", "compatibilityRule": "One TypeScript/ESLint topology provides compiler, tooling API, diagnostics, editor, lint, and CI parity; an exception remains impossible without its ADR gate.", "acceptanceEvidence": ["Typecheck and typed lint", "Editor and CI parity"], "rollback": "Restore the prior compiler/lint set." },
+    { "id": "CP-04", "afterWaveId": "WAVE-04", "state": "unaccepted", "compatibilityRule": "React 19, React DOM 19, React types 19, R3F 9, and Drei 10 are accepted only together. Retained Three 0.160.1 and Router 6.30.3 require same-spike peer and behavior proof; otherwise their dependent wave joins WAVE-04 before acceptance.", "forbiddenCombinations": ["React 19 with R3F 8", "React 19 with Drei 9", "React 19 runtime with React 18 type packages"], "acceptanceEvidence": ["Clean forward and reverse peer install", "Build and three-browser routes", "3D screenshots, context loss, memory, performance, reduced motion, and fallback"], "rollback": "Restore the full prior React 18/R3F 8/Drei 9/type set." },
+    { "id": "CP-05", "afterWaveId": "WAVE-05", "state": "unaccepted", "compatibilityRule": "Router package/import topology satisfies the already accepted React set and every route contract.", "acceptanceEvidence": ["Route matrix", "Direct loads, 404s, navigation, admin negatives"], "rollback": "Restore only the prior Router topology." },
+    { "id": "CP-06", "afterWaveId": "WAVE-06", "state": "unaccepted", "compatibilityRule": "The selected Three version satisfies R3F/Drei peers and reproduces renderer, loader, visual, memory, and recovery behavior.", "acceptanceEvidence": ["Peer resolution", "3D behavioral and visual evidence"], "rollback": "Restore the retained proven Three version." },
+    { "id": "CP-07", "afterWaveId": "WAVE-07", "state": "unaccepted", "compatibilityRule": "Zustand selector, subscription, render-loop, and scene behavior are unchanged or explicitly accepted.", "acceptanceEvidence": ["State and scene tests", "Reverse build/browser proof"], "rollback": "Restore the prior Zustand integration." },
+    { "id": "CP-08", "afterWaveId": "WAVE-08", "state": "unaccepted", "compatibilityRule": "GSAP motion, cleanup, focus, and reduced-motion behavior pass without UI redesign.", "acceptanceEvidence": ["Motion and reduced-motion browser evidence"], "rollback": "Restore the prior GSAP integration." },
+    { "id": "CP-09", "afterWaveId": "WAVE-09", "state": "unaccepted", "compatibilityRule": "Tailwind/PostCSS topology produces complete approved CSS across required browsers with no design-scope change.", "acceptanceEvidence": ["Production CSS, visual, accessibility, browser, and size evidence"], "rollback": "Restore the prior styling toolchain." },
+    { "id": "CP-10", "afterWaveId": "WAVE-10", "state": "unaccepted", "compatibilityRule": "The Python stack resolves identically from a deterministic hash lock and passes application, auth, advisory, SBOM, license, and rollback evidence without schema change.", "acceptanceEvidence": ["Two clean locked syncs", "Full backend and failure-path evidence", "Supply-chain reports"], "rollback": "Restore the prior runtime, exact lock, and image." },
+    { "id": "CP-11", "afterWaveId": "WAVE-11", "state": "unaccepted", "compatibilityRule": "The founder-approved regional PostgreSQL service passes migration, data, performance, backup, restore, application rollback, cost, and RPO/RTO evidence.", "acceptanceEvidence": ["Regional and cost approval", "Migration and timed recovery drill"], "rollback": "Restore or fail over to the prior supported major." },
+    { "id": "CP-12", "afterWaveId": "WAVE-12", "state": "unaccepted", "compatibilityRule": "Reproducible browser binaries and QA tools cover the approved browser/device matrix and report timeouts or engine failures as failures.", "acceptanceEvidence": ["Multi-browser/device reports", "Failure-path and trace evidence"], "rollback": "Restore the prior proven QA toolchain." },
+    { "id": "CP-13", "afterWaveId": "WAVE-13", "state": "unaccepted", "compatibilityRule": "All selected images, actions, APIs, SDKs, and infrastructure references are immutable and pass provider, security, data, cost, readiness, observability, recovery, and rollback gates.", "acceptanceEvidence": ["Immutable reference and provenance reports", "Zero-traffic candidate and rollback drill", "Founder approvals for every material gate"], "rollback": "Retain the prior immutable release, disable the bounded candidate, and reverse traffic only with compatible data." }
+  ],
+  "edgeAssignments": [
+    { "edgeId": "edge-node-npm", "waveId": "WAVE-01", "outputCheckpointId": "CP-01" },
+    { "edgeId": "edge-node-vite", "waveId": "WAVE-02", "outputCheckpointId": "CP-02" },
+    { "edgeId": "edge-vite-react-plugin", "waveId": "WAVE-02", "outputCheckpointId": "CP-02" },
+    { "edgeId": "edge-react-dom", "waveId": "WAVE-04", "outputCheckpointId": "CP-04" },
+    { "edgeId": "edge-react-types", "waveId": "WAVE-04", "outputCheckpointId": "CP-04" },
+    { "edgeId": "edge-react-dom-types", "waveId": "WAVE-04", "outputCheckpointId": "CP-04" },
+    { "edgeId": "edge-react-router", "waveId": "WAVE-05", "outputCheckpointId": "CP-05" },
+    { "edgeId": "edge-react-r3f", "waveId": "WAVE-04", "outputCheckpointId": "CP-04" },
+    { "edgeId": "edge-three-r3f", "waveId": "WAVE-06", "outputCheckpointId": "CP-06" },
+    { "edgeId": "edge-r3f-drei", "waveId": "WAVE-04", "outputCheckpointId": "CP-04" },
+    { "edgeId": "edge-typescript-eslint-parser", "waveId": "WAVE-03", "outputCheckpointId": "CP-03" },
+    { "edgeId": "edge-eslint-typescript-eslint", "waveId": "WAVE-03", "outputCheckpointId": "CP-03" },
+    { "edgeId": "edge-eslint-hooks", "waveId": "WAVE-03", "outputCheckpointId": "CP-03" },
+    { "edgeId": "edge-tailwind-postcss", "waveId": "WAVE-09", "outputCheckpointId": "CP-09" },
+    { "edgeId": "edge-python-fastapi", "waveId": "WAVE-10", "outputCheckpointId": "CP-10" },
+    { "edgeId": "edge-fastapi-starlette", "waveId": "WAVE-10", "outputCheckpointId": "CP-10" },
+    { "edgeId": "edge-fastapi-pydantic", "waveId": "WAVE-10", "outputCheckpointId": "CP-10" },
+    { "edgeId": "edge-fastapi-httpx", "waveId": "WAVE-10", "outputCheckpointId": "CP-10" },
+    { "edgeId": "edge-sqlalchemy-psycopg", "waveId": "WAVE-10", "outputCheckpointId": "CP-10" },
+    { "edgeId": "edge-alembic-sqlalchemy", "waveId": "WAVE-10", "outputCheckpointId": "CP-10" },
+    { "edgeId": "edge-sqlalchemy-postgresql", "waveId": "WAVE-11", "outputCheckpointId": "CP-11" },
+    { "edgeId": "edge-pytest-asyncio", "waveId": "WAVE-10", "outputCheckpointId": "CP-10" },
+    { "edgeId": "edge-playwright-axe", "waveId": "WAVE-12", "outputCheckpointId": "CP-12" },
+    { "edgeId": "edge-playwright-browser-matrix", "waveId": "WAVE-12", "outputCheckpointId": "CP-12" },
+    { "edgeId": "edge-postgresql-azure", "waveId": "WAVE-13", "outputCheckpointId": "CP-13" },
+    { "edgeId": "edge-compose-postgresql", "waveId": "WAVE-13", "outputCheckpointId": "CP-13" },
+    { "edgeId": "edge-ci-runtime-locks", "waveId": "WAVE-13", "outputCheckpointId": "CP-13" }
+  ],
+  "humanGates": [
+    {
+      "id": "HG-001",
+      "scope": "Exact production locks for any runtime, package, browser, image, action, SDK, tool, service API, or infrastructure module.",
+      "approver": "Founder after applicable architecture, security, QA, accessibility, deployment, and supply-chain review",
+      "state": "unsatisfied",
+      "evidenceRequirements": ["Fresh same-day Context7, official, registry, advisory, license, and peer graph", "Deterministic forward and reverse lock/install/build/test evidence", "Independent review of the bounded wave"],
+      "prohibitedBeforeApproval": ["Write an exact production target into a manifest or lock", "Treat a candidate as selected or approved"],
+      "durableRefs": ["D-004", "D-021", "GATE-COMP-001"],
+      "founderApprovalEvidenceRefs": []
+    },
+    {
+      "id": "HG-002",
+      "scope": "Any newest-stable compatibility exception, including an alternative npm or TypeScript path.",
+      "approver": "Founder after independent architecture and supply-chain review",
+      "state": "unsatisfied",
+      "evidenceRequirements": ["Exact primary-path blocker", "Dated ADR with reason, rollback, expiry or quarterly recheck", "Evidence that the alternative is the newest proven-compatible stable path"],
+      "prohibitedBeforeApproval": ["Select or lock an exception path", "Represent an unapproved or null ADR as accepted"],
+      "durableRefs": ["D-004", "D-021", "GATE-COMP-001"],
+      "founderApprovalEvidenceRefs": []
+    },
+    {
+      "id": "HG-003",
+      "scope": "npm 12 primary path versus bundled npm 11 exception path.",
+      "approver": "Founder after the npm 12-first spike and independent architecture/supply-chain review",
+      "state": "unsatisfied",
+      "evidenceRequirements": ["Frozen installs, lock drift, lifecycle scripts, and clean relock comparison for npm 12", "Concrete blocker plus exception ADR and quarterly recheck for bundled npm"],
+      "prohibitedBeforeApproval": ["Prefer bundled npm only because it changes less", "Select either npm path as a production lock"],
+      "durableRefs": ["D-004", "D-021", "GATE-COMP-011"],
+      "founderApprovalEvidenceRefs": []
+    },
+    {
+      "id": "HG-004",
+      "scope": "TypeScript 7 compiler plus TypeScript 6 API bridge versus a TypeScript 6-only compatibility exception.",
+      "approver": "Founder after architecture review; the TypeScript 6-only path also requires an approved dated ADR",
+      "state": "unsatisfied",
+      "evidenceRequirements": ["Compiler, tooling API, diagnostics, editor, build, lint, and CI parity for both paths", "Exact alias topology for the bridge path", "Blocker, rollback, and quarterly recheck for the exception path"],
+      "prohibitedBeforeApproval": ["Lock either path", "Add suppressions to conceal compiler or lint incompatibility"],
+      "durableRefs": ["D-004", "D-021", "GATE-COMP-003", "OFF-TS", "OFF-TSESLINT"],
+      "founderApprovalEvidenceRefs": []
+    },
+    {
+      "id": "HG-005",
+      "scope": "Azure tenant/subscription/region and PostgreSQL generation, extensions, HA, quota, capacity, residency, cost, backup, restore, and recovery architecture.",
+      "approver": "Founder after read-only regional, security, compliance, cost, data, and recovery evidence",
+      "state": "unsatisfied",
+      "evidenceRequirements": ["Approved tenant, subscription, and Europe-first region", "Regional GA, feature, extension, capacity, HA, and quota matrix", "Cost envelope and stop conditions", "Migration, backup, restore, and RPO/RTO rehearsal"],
+      "prohibitedBeforeApproval": ["Select a regional PostgreSQL production lock", "Provision, migrate, activate billing, or write Azure configuration"],
+      "durableRefs": ["D-014", "D-020", "MA-005", "MA-010", "GATE-COMP-005"],
+      "founderApprovalEvidenceRefs": []
+    },
+    {
+      "id": "HG-006",
+      "scope": "Standards-based Python lock tool and workflow, including hashes, platforms, update policy, advisory, license, SBOM, and rollback output.",
+      "approver": "Founder after architecture, security, and supply-chain review",
+      "state": "unsatisfied",
+      "evidenceRequirements": ["Two identical clean environment syncs", "Exact transitive versions and hashes", "Cross-platform support", "Advisory, license, SBOM, provenance, update, and rollback evidence"],
+      "prohibitedBeforeApproval": ["Adopt a Python lock tool", "Treat the mutable virtual environment as a production lock"],
+      "durableRefs": ["D-004", "D-021", "GATE-COMP-004", "GATE-COMP-009"],
+      "founderApprovalEvidenceRefs": []
+    },
+    {
+      "id": "HG-007",
+      "scope": "Container, CI, runtime-image, action-SHA, OIDC, provenance, cache, artifact, observability, and Azure API/Bicep architecture.",
+      "approver": "Founder after architecture, security, QA, deployment, and supply-chain review",
+      "state": "unsatisfied",
+      "evidenceRequirements": ["Bounded Docker/Compose capability pass", "Reproducible non-root images pinned by digest", "Actions pinned by commit SHA with least privilege and OIDC", "SBOM, signature or provenance, readiness, failure, and rollback evidence"],
+      "prohibitedBeforeApproval": ["Create or activate CI/cloud/container architecture", "Use floating production images or action tags"],
+      "durableRefs": ["D-014", "D-021", "GATE-COMP-006", "GATE-COMP-007"],
+      "founderApprovalEvidenceRefs": []
+    },
+    {
+      "id": "HG-008",
+      "scope": "Azure AI and AI Search services, APIs, SDKs, models/indexes, region, identity, data classes, residency, privacy, security, compliance, quota, and cost.",
+      "approver": "Founder after AI, architecture, security, privacy, legal, data, and cost review",
+      "state": "unsatisfied",
+      "evidenceRequirements": ["Approved capability and data-flow contract", "Official GA regional API/SDK lifecycle evidence", "Least-privilege identity", "Residency, retention, deletion, DPA or equivalent terms, threat, quota, quality, latency, and cost evidence"],
+      "prohibitedBeforeApproval": ["Select SDK/API/model/index locks", "Send data, provision resources, activate billing, or change credentials"],
+      "durableRefs": ["D-014", "D-015", "D-017", "MA-005", "MA-010", "GATE-COMP-010", "GATE-COMP-012"],
+      "founderApprovalEvidenceRefs": []
+    },
+    {
+      "id": "HG-009",
+      "scope": "Microsoft Graph resources, API/SDK version, tenant, delegated/application permissions, consent, webhooks, data lifecycle, residency, security, compliance, quota, and cost.",
+      "approver": "Founder plus authorized Microsoft 365 administrator after architecture, identity, security, privacy, and legal review",
+      "state": "unsatisfied",
+      "evidenceRequirements": ["Approved resource and least-privilege permission matrix", "Official GA API/SDK lifecycle evidence", "Tenant consent and webhook design", "Retention, deletion, throttling, replay, residency, threat, and cost evidence"],
+      "prohibitedBeforeApproval": ["Select a Graph SDK/API production lock", "Grant consent, change credentials, create subscriptions, or write tenant configuration"],
+      "durableRefs": ["D-014", "D-016", "D-017", "D-018", "MA-005", "MA-006", "GATE-COMP-010", "GATE-COMP-012"],
+      "founderApprovalEvidenceRefs": []
+    },
+    {
+      "id": "HG-010",
+      "scope": "NVIDIA production entitlement, provider/API/client/model, DPA, region, identity, permitted data classes, residency, security, compliance, quota, quality, latency, and cost.",
+      "approver": "Founder after commercial entitlement, AI, security, privacy, legal, data, and cost review",
+      "state": "unsatisfied",
+      "evidenceRequirements": ["Non-secret production entitlement record", "Approved provider and data routing policy", "Official GA API/client lifecycle", "DPA, region, residency, security, deletion, quality, latency, quota, and cost evidence"],
+      "prohibitedBeforeApproval": ["Select a production client or model lock", "Send PII/confidential data, activate billing, or change credentials"],
+      "durableRefs": ["D-015", "D-017", "MA-007", "MA-010", "GATE-COMP-010", "GATE-COMP-012"],
+      "founderApprovalEvidenceRefs": []
+    },
+    {
+      "id": "HG-011",
+      "scope": "Any paid activation, external-system write, consent grant, DNS/account/resource mutation, or credential change.",
+      "approver": "Founder and the authorized external-account owner",
+      "state": "unsatisfied",
+      "evidenceRequirements": ["Exact bounded action", "Approved provider/SKU/cost envelope where paid", "Least-privilege authority and rollback", "Post-action verification plan"],
+      "prohibitedBeforeApproval": ["Paid activation", "External write", "Credential, consent, tenant, resource, or account mutation"],
+      "durableRefs": ["D-022", "MA-005", "MA-007", "MA-010"],
+      "founderApprovalEvidenceRefs": []
+    },
+    {
+      "id": "HG-012",
+      "scope": "Any branch, commit, push, pull request, tag, remote, or other Git-history action.",
+      "approver": "Founder",
+      "state": "unsatisfied",
+      "evidenceRequirements": ["Exact repository action and scope", "Reviewed diff and validation evidence", "Recovery or rollback route"],
+      "prohibitedBeforeApproval": ["Create or change Git history, branches, remotes, tags, pull requests, commits, or pushes"],
+      "durableRefs": ["D-022"],
+      "founderApprovalEvidenceRefs": []
+    },
+    {
+      "id": "HG-013",
+      "scope": "Any schema/data migration, destructive data action, irreversible model change, or database major cutover.",
+      "approver": "Founder after data, security, privacy, architecture, QA, and recovery review",
+      "state": "unsatisfied",
+      "evidenceRequirements": ["Approved migration and data-lifecycle contract", "Clone rehearsal and every up/down path", "Immutable backup, restore, integrity, compatibility window, RPO, and RTO evidence"],
+      "prohibitedBeforeApproval": ["Create, run, or promote a migration", "Mutate or delete project, UAT, or production data"],
+      "durableRefs": ["D-014", "D-020", "D-022", "R-014"],
+      "founderApprovalEvidenceRefs": []
+    },
+    {
+      "id": "HG-014",
+      "scope": "Any deployment, production promotion, traffic switch, publication activation, or rollback execution.",
+      "approver": "Founder after independent deployment, security, and QA review",
+      "state": "unsatisfied",
+      "evidenceRequirements": ["Immutable candidate and complete release evidence", "Zero-traffic verification", "Readiness, observability, data compatibility, rollback, and cost evidence", "Explicit environment and traffic action"],
+      "prohibitedBeforeApproval": ["Deploy", "Promote to production", "Switch traffic", "Publish or execute a production rollback"],
+      "durableRefs": ["D-014", "D-021", "D-022"],
+      "founderApprovalEvidenceRefs": []
+    },
+    {
+      "id": "HG-015",
+      "scope": "Acceptance of residual material security, privacy, compliance, vendor, data, cost, availability, recovery, or irreversible risk.",
+      "approver": "Founder after applicable independent specialist review",
+      "state": "unsatisfied",
+      "evidenceRequirements": ["Named residual risk and affected scope", "Likelihood/impact evidence", "Mitigations, monitoring, rollback, expiry or recheck", "Explicit founder acceptance in durable decisions"],
+      "prohibitedBeforeApproval": ["Represent residual risk as accepted", "Proceed through a gate whose material risk is unresolved"],
+      "durableRefs": ["D-020", "D-021", "R-012", "R-014", "R-018"],
+      "founderApprovalEvidenceRefs": []
+    }
+  ],
+  "humanGateCoverage": [
+    { "recordType": "component", "recordId": "tool-pip", "gateRefs": ["HG-001", "HG-006"] },
+    { "recordType": "component", "recordId": "frontend-react", "gateRefs": ["HG-001"] },
+    { "recordType": "component", "recordId": "frontend-react-dom", "gateRefs": ["HG-001"] },
+    { "recordType": "component", "recordId": "frontend-react-router-dom", "gateRefs": ["HG-001"] },
+    { "recordType": "component", "recordId": "three-r3f", "gateRefs": ["HG-001"] },
+    { "recordType": "component", "recordId": "three-drei", "gateRefs": ["HG-001"] },
+    { "recordType": "component", "recordId": "three-core", "gateRefs": ["HG-001"] },
+    { "recordType": "component", "recordId": "tool-typescript-web", "gateRefs": ["HG-001", "HG-002", "HG-004"] },
+    { "recordType": "component", "recordId": "tool-vite", "gateRefs": ["HG-001"] },
+    { "recordType": "component", "recordId": "tool-vite-react", "gateRefs": ["HG-001"] },
+    { "recordType": "component", "recordId": "tool-tailwind", "gateRefs": ["HG-001"] },
+    { "recordType": "component", "recordId": "tool-eslint", "gateRefs": ["HG-001", "HG-004"] },
+    { "recordType": "component", "recordId": "tool-typescript-eslint-parser", "gateRefs": ["HG-001", "HG-004"] },
+    { "recordType": "component", "recordId": "tool-typescript-eslint-plugin", "gateRefs": ["HG-001", "HG-004"] },
+    { "recordType": "component", "recordId": "tool-eslint-react-hooks", "gateRefs": ["HG-001", "HG-004"] },
+    { "recordType": "component", "recordId": "shared-zod", "gateRefs": ["HG-001"] },
+    { "recordType": "component", "recordId": "backend-alembic", "gateRefs": ["HG-001", "HG-013"] },
+    { "recordType": "component", "recordId": "backend-bcrypt", "gateRefs": ["HG-001", "HG-015"] },
+    { "recordType": "component", "recordId": "backend-pyjwt", "gateRefs": ["HG-001", "HG-015"] },
+    { "recordType": "component", "recordId": "backend-python-dotenv", "gateRefs": ["HG-001", "HG-015"] },
+    { "recordType": "component", "recordId": "database-postgresql-compose", "gateRefs": ["HG-001", "HG-005", "HG-013", "HG-015"] },
+    { "recordType": "component", "recordId": "container-docker-cli", "gateRefs": ["HG-007", "HG-011"] },
+    { "recordType": "component", "recordId": "container-compose-plugin", "gateRefs": ["HG-007", "HG-011"] },
+    { "recordType": "component", "recordId": "ci-github-actions", "gateRefs": ["HG-007", "HG-012", "HG-014"] },
+    { "recordType": "component", "recordId": "cloud-azure-manifests", "gateRefs": ["HG-005", "HG-007", "HG-008", "HG-009", "HG-010", "HG-011", "HG-014", "HG-015"] },
+    { "recordType": "component", "recordId": "lock-python", "gateRefs": ["HG-006"] },
+    { "recordType": "component", "recordId": "browser-test-matrix", "gateRefs": ["HG-001"] },
+    { "recordType": "deferredFamily", "recordId": "deferred-redis", "gateRefs": ["HG-005", "HG-011", "HG-015"] },
+    { "recordType": "deferredFamily", "recordId": "deferred-azure-ai-search-sdks", "gateRefs": ["HG-008", "HG-011", "HG-015"] },
+    { "recordType": "deferredFamily", "recordId": "deferred-microsoft-graph-sdks", "gateRefs": ["HG-009", "HG-011", "HG-015"] },
+    { "recordType": "deferredFamily", "recordId": "deferred-observability-sdks", "gateRefs": ["HG-005", "HG-007", "HG-011", "HG-015"] },
+    { "recordType": "deferredFamily", "recordId": "deferred-nvidia-clients", "gateRefs": ["HG-010", "HG-011", "HG-015"] },
+    { "recordType": "deferredFamily", "recordId": "deferred-blender-gltf-tooling", "gateRefs": ["HG-001", "HG-011", "HG-015"] },
+    { "recordType": "deferredFamily", "recordId": "deferred-ci-actions", "gateRefs": ["HG-007", "HG-012", "HG-014"] },
+    { "recordType": "deferredFamily", "recordId": "deferred-container-images", "gateRefs": ["HG-007", "HG-014"] },
+    { "recordType": "deferredFamily", "recordId": "deferred-bicep-api-versions", "gateRefs": ["HG-005", "HG-007", "HG-011", "HG-014", "HG-015"] }
+  ],
+  "supplyChainObligations": [
+    {
+      "id": "SCO-001",
+      "type": "advisory_scan_and_exploitability_triage",
+      "scope": "Every candidate runtime, package, SDK, browser, image, action, module, service API, and deferred family before exact selection.",
+      "owner": "Supply-chain and security reviewers with the implementing wave owner",
+      "status": "blocking_timed_out_or_missing",
+      "evidenceRefs": ["LOC-010", "GATE-COMP-009", "D-021"],
+      "beforeGateRefs": ["HG-001", "HG-002", "HG-015"],
+      "beforeWaveRefs": ["WAVE-01", "WAVE-02", "WAVE-03", "WAVE-04", "WAVE-05", "WAVE-06", "WAVE-07", "WAVE-08", "WAVE-09", "WAVE-10", "WAVE-11", "WAVE-12", "WAVE-13"],
+      "failureHandling": "A timeout, missing report, unsupported scanner, unresolved exploitable critical finding, or unresolved supported high-severity finding blocks the exact lock and checkpoint.",
+      "exceptionHandling": { "state": "unapproved", "adrId": null, "approver": "Founder after security and supply-chain review", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore or retain the prior proven lock and reopen advisory triage." }
+    },
+    {
+      "id": "SCO-002",
+      "type": "license_inventory_and_policy",
+      "scope": "Every selected transitive dependency, SDK, browser binary, image layer, action, module, tool, and asset pipeline component.",
+      "owner": "Supply-chain reviewer with legal review for uncertain or restricted terms",
+      "status": "blocking_missing",
+      "evidenceRefs": ["GATE-COMP-009", "D-021"],
+      "beforeGateRefs": ["HG-001", "HG-002", "HG-015"],
+      "beforeWaveRefs": ["WAVE-01", "WAVE-02", "WAVE-03", "WAVE-04", "WAVE-05", "WAVE-06", "WAVE-07", "WAVE-08", "WAVE-09", "WAVE-10", "WAVE-11", "WAVE-12", "WAVE-13"],
+      "failureHandling": "Missing, ambiguous, incompatible, or unreviewed license evidence blocks exact selection and release use.",
+      "exceptionHandling": { "state": "unapproved", "adrId": null, "approver": "Founder after legal and supply-chain review", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Remove the candidate and restore the prior proven licensed set." }
+    },
+    {
+      "id": "SCO-003",
+      "type": "software_bill_of_materials",
+      "scope": "Every candidate path and deferred family represented in release, build, browser, container, CI, asset, or infrastructure artifacts.",
+      "owner": "Supply-chain and deployment owners",
+      "status": "blocking_missing",
+      "evidenceRefs": ["GATE-COMP-009", "D-021"],
+      "beforeGateRefs": ["HG-001", "HG-014"],
+      "beforeWaveRefs": ["WAVE-01", "WAVE-02", "WAVE-03", "WAVE-04", "WAVE-05", "WAVE-06", "WAVE-07", "WAVE-08", "WAVE-09", "WAVE-10", "WAVE-11", "WAVE-12", "WAVE-13"],
+      "failureHandling": "A missing, incomplete, non-reproducible, or artifact-mismatched SBOM blocks the lock or release checkpoint.",
+      "exceptionHandling": { "state": "unapproved", "adrId": null, "approver": "Founder after supply-chain and deployment review", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Retain the prior immutable artifact and regenerate the SBOM from a clean build." }
+    },
+    {
+      "id": "SCO-004",
+      "type": "provenance_signature_or_immutable_reference",
+      "scope": "Every package source, browser binary, image, GitHub Action, Bicep module, external SDK/tool, and produced release artifact.",
+      "owner": "Supply-chain, CI, container, and deployment owners",
+      "status": "blocking_missing_or_unselected",
+      "evidenceRefs": ["GATE-COMP-007", "D-021"],
+      "beforeGateRefs": ["HG-001", "HG-007", "HG-014"],
+      "beforeWaveRefs": ["WAVE-01", "WAVE-02", "WAVE-03", "WAVE-04", "WAVE-05", "WAVE-06", "WAVE-07", "WAVE-08", "WAVE-09", "WAVE-10", "WAVE-11", "WAVE-12", "WAVE-13"],
+      "failureHandling": "A floating tag, mutable action ref, unresolved source, failed signature/provenance check, or artifact hash mismatch blocks the checkpoint.",
+      "exceptionHandling": { "state": "unapproved", "adrId": null, "approver": "Founder after security, supply-chain, and deployment review", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Use the prior immutable verified artifact or remove the candidate." }
+    },
+    {
+      "id": "SCO-005",
+      "type": "deterministic_exact_lock",
+      "scope": "Every candidate path plus transitive graph and every selected deferred-family client, tool, image, action, module, API version, or browser revision.",
+      "owner": "Implementing wave owner with architecture and supply-chain review",
+      "status": "blocking_deferred_selection",
+      "evidenceRefs": ["GATE-COMP-001", "D-004", "D-021"],
+      "beforeGateRefs": ["HG-001"],
+      "beforeWaveRefs": ["WAVE-01", "WAVE-02", "WAVE-03", "WAVE-04", "WAVE-05", "WAVE-06", "WAVE-07", "WAVE-08", "WAVE-09", "WAVE-10", "WAVE-11", "WAVE-12", "WAVE-13"],
+      "failureHandling": "Lock drift, missing hashes, non-identical clean resolution, mutable artifact reference, or reverse-install failure blocks selection.",
+      "exceptionHandling": { "state": "unapproved", "adrId": null, "approver": "Founder after architecture and supply-chain review", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior exact lock and immutable artifact set." }
+    },
+    {
+      "id": "SCO-006",
+      "type": "compatibility_exception_adr",
+      "scope": "Every candidate path or deferred-family selection that does not use the newest mutually compatible stable option.",
+      "owner": "Technical architect with independent architecture and supply-chain review",
+      "status": "blocking_if_exception_requested_no_approved_adr",
+      "evidenceRefs": ["GATE-COMP-001", "D-004", "D-021"],
+      "beforeGateRefs": ["HG-002"],
+      "beforeWaveRefs": ["WAVE-01", "WAVE-02", "WAVE-03", "WAVE-04", "WAVE-05", "WAVE-06", "WAVE-07", "WAVE-08", "WAVE-09", "WAVE-10", "WAVE-11", "WAVE-12", "WAVE-13"],
+      "failureHandling": "A null, unapproved, undated, blocker-free, or rollback-free ADR makes the exception ineligible and blocks exact selection.",
+      "exceptionHandling": { "state": "unapproved", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Reject the exception and retain the prior proven lock until a compliant decision exists." }
+    },
+    {
+      "id": "SCO-007",
+      "type": "quarterly_exception_recheck",
+      "scope": "Every approved compatibility exception, regional database fallback, provider/API fallback, or temporarily retained older major.",
+      "owner": "Technical architect and supply-chain owner",
+      "status": "blocking_if_exception_requested_no_recheck",
+      "evidenceRefs": ["D-004", "D-021", "GATE-COMP-001"],
+      "beforeGateRefs": ["HG-002", "HG-015"],
+      "beforeWaveRefs": ["WAVE-01", "WAVE-02", "WAVE-03", "WAVE-04", "WAVE-05", "WAVE-06", "WAVE-07", "WAVE-08", "WAVE-09", "WAVE-10", "WAVE-11", "WAVE-12", "WAVE-13"],
+      "failureHandling": "Missing expiry, missing recheck date, overdue review, or disappearance of the blocker reopens the primary path and blocks continued exception use.",
+      "exceptionHandling": { "state": "unapproved", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Retire the exception or restore the prior supported lock while the graph is re-evaluated." }
+    }
+  ],
+  "deferredFamilySupplyChainCoverage": [
+    { "familyId": "deferred-redis", "status": "blocking_deferred_selection", "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"] },
+    { "familyId": "deferred-azure-ai-search-sdks", "status": "blocking_deferred_selection", "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"] },
+    { "familyId": "deferred-microsoft-graph-sdks", "status": "blocking_deferred_selection", "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"] },
+    { "familyId": "deferred-observability-sdks", "status": "blocking_deferred_selection", "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"] },
+    { "familyId": "deferred-nvidia-clients", "status": "blocking_deferred_selection", "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"] },
+    { "familyId": "deferred-blender-gltf-tooling", "status": "blocking_deferred_selection", "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"] },
+    { "familyId": "deferred-ci-actions", "status": "blocking_deferred_selection", "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"] },
+    { "familyId": "deferred-container-images", "status": "blocking_deferred_selection", "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"] },
+    { "familyId": "deferred-bicep-api-versions", "status": "blocking_deferred_selection", "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"] }
+  ],
+  "candidatePaths": [
+    {
+      "id": "CPATH-001", "componentId": "runtime-node", "optionId": "default", "waveId": "WAVE-01", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior proven Node runtime lock." }
+    },
+    {
+      "id": "CPATH-002", "componentId": "runtime-npm", "optionId": "latest_compatible_npm", "waveId": "WAVE-01", "status": "primary_unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-003"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_applicable_primary_path", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior proven npm runtime and locks." }
+    },
+    {
+      "id": "CPATH-003", "componentId": "runtime-npm", "optionId": "bundled_npm_exception", "waveId": "WAVE-01", "status": "exception_unapproved_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-002", "HG-003"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "unapproved", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Reject the exception and restore the prior proven npm runtime and locks." }
+    },
+    {
+      "id": "CPATH-004", "componentId": "runtime-python", "optionId": "default", "waveId": "WAVE-10", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-006"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior proven Python runtime and exact lock." }
+    },
+    {
+      "id": "CPATH-005", "componentId": "frontend-react", "optionId": "default", "waveId": "WAVE-04", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the coherent React 18/R3F 8/Drei 9 set." }
+    },
+    {
+      "id": "CPATH-006", "componentId": "frontend-react-dom", "optionId": "default", "waveId": "WAVE-04", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the coherent React 18/R3F 8/Drei 9 set." }
+    },
+    {
+      "id": "CPATH-007", "componentId": "frontend-react-router-dom", "optionId": "default", "waveId": "WAVE-05", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior Router package and import topology." }
+    },
+    {
+      "id": "CPATH-008", "componentId": "frontend-zustand", "optionId": "default", "waveId": "WAVE-07", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior Zustand package and integration." }
+    },
+    {
+      "id": "CPATH-009", "componentId": "frontend-gsap", "optionId": "default", "waveId": "WAVE-08", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior GSAP package and integration." }
+    },
+    {
+      "id": "CPATH-010", "componentId": "frontend-types-react", "optionId": "default", "waveId": "WAVE-04", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the React 18 runtime and type set." }
+    },
+    {
+      "id": "CPATH-011", "componentId": "frontend-types-react-dom", "optionId": "default", "waveId": "WAVE-04", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the React 18 runtime and type set." }
+    },
+    {
+      "id": "CPATH-012", "componentId": "three-r3f", "optionId": "default", "waveId": "WAVE-04", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the coherent React 18/R3F 8/Drei 9 set." }
+    },
+    {
+      "id": "CPATH-013", "componentId": "three-drei", "optionId": "default", "waveId": "WAVE-04", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the coherent React 18/R3F 8/Drei 9 set." }
+    },
+    {
+      "id": "CPATH-014", "componentId": "three-core", "optionId": "default", "waveId": "WAVE-06", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the retained proven Three lock." }
+    },
+    {
+      "id": "CPATH-015", "componentId": "tool-typescript-web", "optionId": "ts7_compiler_with_ts6_api_bridge", "waveId": "WAVE-03", "status": "primary_unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-004"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_applicable_primary_path", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior compiler and lint toolchain." }
+    },
+    {
+      "id": "CPATH-016", "componentId": "tool-typescript-web", "optionId": "ts6_only_exception", "waveId": "WAVE-03", "status": "exception_unapproved_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-002", "HG-004"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "unapproved", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Reject the exception and restore the prior compiler and lint toolchain." }
+    },
+    {
+      "id": "CPATH-017", "componentId": "tool-vite", "optionId": "default", "waveId": "WAVE-02", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior Vite/plugin lock set." }
+    },
+    {
+      "id": "CPATH-018", "componentId": "tool-vite-react", "optionId": "default", "waveId": "WAVE-02", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior Vite/plugin lock set." }
+    },
+    {
+      "id": "CPATH-019", "componentId": "tool-tailwind", "optionId": "default", "waveId": "WAVE-09", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior Tailwind/PostCSS integration." }
+    },
+    {
+      "id": "CPATH-020", "componentId": "tool-postcss", "optionId": "default", "waveId": "WAVE-09", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior Tailwind/PostCSS integration." }
+    },
+    {
+      "id": "CPATH-021", "componentId": "tool-eslint", "optionId": "default", "waveId": "WAVE-03", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-004"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior compiler and lint toolchain." }
+    },
+    {
+      "id": "CPATH-022", "componentId": "tool-typescript-eslint-parser", "optionId": "default", "waveId": "WAVE-03", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-004"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior compiler and lint toolchain." }
+    },
+    {
+      "id": "CPATH-023", "componentId": "tool-typescript-eslint-plugin", "optionId": "default", "waveId": "WAVE-03", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-004"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior compiler and lint toolchain." }
+    },
+    {
+      "id": "CPATH-024", "componentId": "tool-eslint-react-hooks", "optionId": "default", "waveId": "WAVE-03", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-004"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior compiler and lint toolchain." }
+    },
+    {
+      "id": "CPATH-025", "componentId": "tool-eslint-react-refresh", "optionId": "default", "waveId": "WAVE-03", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-004"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior compiler and lint toolchain." }
+    },
+    {
+      "id": "CPATH-026", "componentId": "shared-zod", "optionId": "default", "waveId": "WAVE-03", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior shared schema source and lock." }
+    },
+    {
+      "id": "CPATH-027", "componentId": "backend-fastapi", "optionId": "default", "waveId": "WAVE-10", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-006"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior Python runtime and exact backend lock." }
+    },
+    {
+      "id": "CPATH-028", "componentId": "backend-starlette", "optionId": "default", "waveId": "WAVE-10", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-006"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior Python runtime and exact backend lock." }
+    },
+    {
+      "id": "CPATH-029", "componentId": "backend-pydantic", "optionId": "default", "waveId": "WAVE-10", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-006"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior Python runtime and exact backend lock." }
+    },
+    {
+      "id": "CPATH-030", "componentId": "backend-uvicorn", "optionId": "default", "waveId": "WAVE-10", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-006"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior Python runtime and exact backend lock." }
+    },
+    {
+      "id": "CPATH-031", "componentId": "backend-sqlalchemy", "optionId": "default", "waveId": "WAVE-10", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-006"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior exact ORM/driver set." }
+    },
+    {
+      "id": "CPATH-032", "componentId": "backend-alembic", "optionId": "default", "waveId": "WAVE-10", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-006", "HG-013"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior exact migration tool set; data rollback remains separately gated." }
+    },
+    {
+      "id": "CPATH-033", "componentId": "backend-psycopg", "optionId": "default", "waveId": "WAVE-10", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-006"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior exact ORM/driver set." }
+    },
+    {
+      "id": "CPATH-034", "componentId": "backend-bcrypt", "optionId": "default", "waveId": "WAVE-10", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-006", "HG-015"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior exact authentication library set." }
+    },
+    {
+      "id": "CPATH-035", "componentId": "backend-pyjwt", "optionId": "default", "waveId": "WAVE-10", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-006", "HG-015"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior exact authentication library set." }
+    },
+    {
+      "id": "CPATH-036", "componentId": "backend-httpx", "optionId": "default", "waveId": "WAVE-10", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-006"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior exact backend client stack." }
+    },
+    {
+      "id": "CPATH-037", "componentId": "backend-email-validator", "optionId": "default", "waveId": "WAVE-10", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-006"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior exact validation package set." }
+    },
+    {
+      "id": "CPATH-038", "componentId": "backend-python-dotenv", "optionId": "default", "waveId": "WAVE-10", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-006", "HG-015"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior exact configuration package set." }
+    },
+    {
+      "id": "CPATH-039", "componentId": "qa-pytest", "optionId": "default", "waveId": "WAVE-10", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-006"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior exact Python test set." }
+    },
+    {
+      "id": "CPATH-040", "componentId": "qa-pytest-asyncio", "optionId": "default", "waveId": "WAVE-10", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-006"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior approved exact Python test set." }
+    },
+    {
+      "id": "CPATH-041", "componentId": "qa-playwright", "optionId": "default", "waveId": "WAVE-12", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior proven runner and browser revisions." }
+    },
+    {
+      "id": "CPATH-042", "componentId": "qa-axe-playwright", "optionId": "default", "waveId": "WAVE-12", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior proven runner and accessibility adapter." }
+    },
+    {
+      "id": "CPATH-043", "componentId": "qa-lighthouse-ci", "optionId": "default", "waveId": "WAVE-12", "status": "unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Restore the prior proven Lighthouse runner and browser set." }
+    },
+    {
+      "id": "CPATH-044", "componentId": "database-postgresql-compose", "optionId": "default", "waveId": "WAVE-11", "status": "conditional_unselected_blocked", "humanApprovalRequired": true,
+      "gateRefs": ["HG-001", "HG-005", "HG-013", "HG-015"], "obligationRefs": ["SCO-001", "SCO-002", "SCO-003", "SCO-004", "SCO-005", "SCO-006", "SCO-007"],
+      "exception": { "state": "not_requested", "adrId": null, "approver": "Founder", "reason": null, "expiresAt": null, "recheckDueAt": null, "rollback": "Use the prior supported database generation and rehearsed restore." }
+    }
+  ]
+}

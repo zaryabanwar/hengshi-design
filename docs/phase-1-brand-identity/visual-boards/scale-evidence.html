@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Framework Relay size evidence — internal review</title>
+  <style>
+    *{box-sizing:border-box} body{margin:0;padding:40px;background:#faf9f6;color:#0b0f14;font:16px/1.5 system-ui,"Segoe UI",Arial,sans-serif} h1{margin:0;font-size:40px} h2{margin:32px 0 12px;font-size:24px} p{max-width:76ch}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{min-height:180px;padding:20px;border:2px solid #2a3542;background:#fff}.card.reject{border-color:#8a5600;background:#f3f1ea}.sample{min-height:88px;display:flex;align-items:center;justify-content:center}.sample img{display:block;max-width:none}.meta{font:13px/1.4 ui-monospace,Consolas,monospace}.print{width:38mm}.rule{width:38mm;border-top:2px solid #0b0f14}@media(max-width:760px){body{padding:20px}.grid{grid-template-columns:1fr}}@media print{body{padding:12mm}.card{break-inside:avoid}.grid{grid-template-columns:repeat(2,1fr)}}
+  </style>
+</head>
+<body>
+  <main>
+    <p class="meta">PRODUCER ITERATION 3 OF 3 · DPR1 REFERENCE · INTERNAL REVIEW</p>
+    <h1>Framework Relay optical-size evidence</h1>
+    <p>Rendered CSS sizes below are deterministic DPR1 references. The 144 px lockup is deliberately rejected. Physical 38 mm output still requires substrate and ink proof. Exploratory, unregistered, trademark not cleared.</p>
+    <h2>Icon-scale variants</h2>
+    <div class="grid">
+      <article class="card"><div class="sample"><img src="../assets/favicon-framework-relay.svg" width="16" height="16" alt="Framework Relay optical favicon at 16 CSS pixels."></div><p><strong>16 px · supported</strong></p><p class="meta">framework-relay-favicon-16-v1 · retained strokes 2 device px</p></article>
+      <article class="card"><div class="sample"><img src="../assets/favicon-framework-relay.svg" width="20" height="20" alt="Framework Relay optical favicon at 20 CSS pixels."></div><p><strong>20 px · supported</strong></p><p class="meta">framework-relay-favicon-16-v1 · 16–23 px range</p></article>
+      <article class="card"><div class="sample"><img src="../assets/mark-framework-relay-small.svg" width="24" height="24" alt="Framework Relay optical small mark at 24 CSS pixels."></div><p><strong>24 px · supported</strong></p><p class="meta">framework-relay-small-24-v1 · retained strokes 2 device px</p></article>
+      <article class="card"><div class="sample"><img src="../assets/mark-framework-relay.svg" width="32" height="32" alt="Framework Relay standard master at 32 CSS pixels."></div><p><strong>32 px · supported</strong></p><p class="meta">framework-relay-master-80-v1 · relay 2 device px</p></article>
+    </div>
+    <h2>Horizontal lockup</h2>
+    <div class="grid">
+      <article class="card reject"><div class="sample"><img src="../assets/logo-framework-relay-light.svg" width="144" alt="Rejected Framework Relay horizontal lockup at 144 CSS pixels."></div><p><strong>144 px · rejected</strong></p><p class="meta">name 11.66 px · relay 1.71 device px</p></article>
+      <article class="card"><div class="sample"><img src="../assets/logo-framework-relay-light.svg" width="168" alt="Supported Framework Relay horizontal lockup at 168 CSS pixels."></div><p><strong>168 px · supported minimum</strong></p><p class="meta">name 13.6 px · relay 2 device px</p></article>
+      <article class="card"><div class="sample"><img class="print" src="../assets/logo-framework-relay-mono.svg" alt="Monochrome Framework Relay lockup at 38 millimetres wide."></div><p><strong>38 mm · conditional print minimum</strong></p><div class="rule" aria-hidden="true"></div><p class="meta">name ≈3.08 mm · relay ≈0.45 mm · physical proof pending</p></article>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,103 @@
+%% Hengshi Design Digital Platform - Frontend Architecture (February 2026)
+%% React 18 + TypeScript + Vite + React Three Fiber + Zustand
+
+flowchart TD
+    subgraph Entry["Application Entry"]
+        MAIN[main.tsx<br/>ReactDOM.createRoot]
+        APP[App.tsx<br/>React Router v6]
+    end
+
+    subgraph Public_Pages["Public Pages"]
+        HOME[Home.tsx<br/>Landing Page]
+        WORLD[WorldPage.tsx<br/>3D Immersive Experience]
+        NF[NotFound.tsx<br/>404 Page]
+    end
+
+    subgraph World_3D["3D World Engine (React Three Fiber)"]
+        WC[WorldCanvas.tsx<br/>R3F Canvas Provider]
+        EXT[ExteriorScene.tsx<br/>GLB Model + Drone Animation]
+        HUD[WorldHUD.tsx<br/>Navigation Controls]
+        PANEL[WorldPanel.tsx<br/>Service/Project/Contact Panels]
+
+        subgraph Camera["Camera System"]
+            CC[CameraController<br/>GSAP Timeline Animations]
+            GSAP_TL[GSAP Timeline<br/>5 Drone Keyframes]
+        end
+
+        subgraph Hotspots["Hotspot System"]
+            HR[HotspotRenderer<br/>Interactive 3D Spheres]
+            HA1[OPEN_PANEL<br/>→ Show panel overlay]
+            HA2[NAVIGATE_NODE<br/>→ Camera transition]
+            HA3[OPEN_URL<br/>→ External link]
+        end
+    end
+
+    subgraph Admin["Admin SPA (JWT Protected)"]
+        AL[AdminLayout.tsx<br/>Navigation + Outlet]
+        ALP[AdminLoginPage.tsx<br/>Login Form]
+        RA[RequireAdmin.tsx<br/>Route Guard]
+        SA[ServicesAdminPage.tsx<br/>Services CRUD]
+        PA[ProjectsAdminPage.tsx<br/>Projects + Media CRUD]
+        WA[WorldAdminPage.tsx<br/>Nodes + Hotspots CRUD]
+    end
+
+    subgraph State["Zustand State Management"]
+        WS[worldStore.ts<br/>currentNode, entryPhase,<br/>activePanel, dataCache]
+        AS[useAppStore.ts<br/>General UI state]
+    end
+
+    subgraph Lib["Shared Libraries"]
+        API[lib/api.ts<br/>Typed API Client<br/>JWT token handling]
+        TYPES[lib/types.ts<br/>TypeScript interfaces]
+        CONST[lib/constants.ts<br/>App constants]
+    end
+
+    subgraph Assets["Static Assets"]
+        GLB[public/models/<br/>hengshi-hq-*.glb]
+    end
+
+    %% Entry flow
+    MAIN --> APP
+    APP -->|"/"| HOME
+    APP -->|"/world"| WORLD
+    APP -->|"/admin/login"| ALP
+    APP -->|"/admin/*"| RA
+    RA -->|Authenticated| AL
+    RA -->|Not authenticated| ALP
+
+    %% Admin routes
+    AL --> SA & PA & WA
+
+    %% World page
+    WORLD --> WC & HUD & PANEL
+    WC --> CC & EXT & HR
+    CC --> GSAP_TL
+    EXT --> GLB
+    HR --> HA1 & HA2 & HA3
+
+    %% State connections
+    WS -.->|currentNode, entryPhase| CC
+    WS -.->|activePanel| PANEL
+    HA1 -.->|setActivePanel| WS
+    HA2 -.->|setCurrentNode| WS
+
+    %% API connections
+    API -.->|fetch data| WS
+    API -.->|CRUD operations| SA & PA & WA
+
+    %% Styles
+    classDef entry fill:#E1F5FE,stroke:#01579B,stroke-width:2px
+    classDef public fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px
+    classDef world3d fill:#FFF3E0,stroke:#EF6C00,stroke-width:2px
+    classDef admin fill:#F3E5F5,stroke:#6A1B9A,stroke-width:2px
+    classDef state fill:#FFEBEE,stroke:#C62828,stroke-width:2px
+    classDef lib fill:#E8EAF6,stroke:#283593,stroke-width:2px
+    classDef asset fill:#F1F8E9,stroke:#558B2F,stroke-width:1px
+
+    class MAIN,APP entry
+    class HOME,WORLD,NF public
+    class WC,EXT,HUD,PANEL,CC,GSAP_TL,HR,HA1,HA2,HA3 world3d
+    class AL,ALP,RA,SA,PA,WA admin
+    class WS,AS state
+    class API,TYPES,CONST lib
+    class GLB asset

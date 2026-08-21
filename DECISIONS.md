@@ -1,0 +1,59 @@
+# Hengshi Design — Operational Decision Index
+
+**Status:** Active; Phase 0 accepted and Phase 1 in progress
+**Classification:** Business confidential
+**Last reconciled:** 2026-07-20
+
+This root index is the required operational starting point for current explicit
+founder approval. Detailed rationale, effects, and boundaries are maintained in
+[`docs/decisions-log.md`](docs/decisions-log.md). The founder explicitly approved
+the SEO-first, future-ready delivery master plan and instructed implementation on
+2026-07-18.
+
+| ID | Date | Status | Approved decision | Operational effect |
+|---|---|---|---|---|
+| D-001 | 2026-07-18 | Approved | Retrofit the existing repository non-destructively; protect current code and GLB as prototype evidence. | No re-bootstrap, destructive cleanup, or inferred production readiness. |
+| D-002 | 2026-07-18 | Approved | Complete and approve the definition package before application development. | Phase 2 remains blocked until Phase 1 acceptance. |
+| D-003 | 2026-07-18 | Approved | Use Codex-native project-manager/specialist delivery with independent reviewers and phase approval gates. | No separate workflow service; durable state is mandatory. |
+| D-004 | 2026-07-18 | Approved | Use the newest mutually compatible stable versions within the retained technology families. | Context7 and official-primary-source evidence, coupled compatibility proof, reproducible locks, and dated exceptions are required. |
+| D-005 | 2026-07-18 | Approved | Target global mid-market/enterprise buyers; agriculture, then mining; defense separately gated. | Primary conversion is a verified 30-minute qualified discovery booking. |
+| D-006 | 2026-07-18 | Approved | Create a complete premium Hengshi Design identity; prohibit unsupported novelty/superiority claims. | “World-first” remains internal unless independently substantiated and legally approved. |
+| D-007 | 2026-07-18 | Approved | Publish verified cases or clearly labeled Hengshi-owned demos only; require human evidence review. | Fictional seeds and mass-generated content cannot become public proof. |
+| D-008 | 2026-07-18 | Approved | Make semantic HTML and SEO first-class; Quick Access is equivalent to the 3D experience. | Canvas is never required for search discovery or conversion. |
+| D-009 | 2026-07-18 | Approved | Use stable canonical service, industry, work/demo, insight, expert, trust, contact, and booking routes. | English-only launch; index only approved canonical content. |
+| D-010 | 2026-07-18 | Approved | Organize ten services into five campus wings plus verified Work, Industry, Trust, Insights, and Meeting spaces. | Concise signs pair with precise formal service titles. |
+| D-011 | 2026-07-18 | Approved | Launch responsive foundation, exterior/reception/atrium, one Reception AI Concierge, handoff, and booking before specialist wings. | Wings open in AI/Data, Strategy, Immersive/Creative, Digital Products/Growth, Cloud/Reliability/Trust order. |
+| D-012 | 2026-07-18 | Approved | Use directed point-and-click exploration with optional audio/free-look and complete accessible recovery paths. | No WASD, gamification, or reduced-content fallback. |
+| D-013 | 2026-07-18 | Approved | Preserve the old GLB and build an editable licensed/provenanced Blender replacement before switching. | Reuse requires proven commercial modification rights and side-by-side approval. |
+| D-014 | 2026-07-18 | Approved | Target Azure-managed hosting with static prerendering, Container Apps, PostgreSQL, Managed Redis, AI Search, Monitor, and OIDC CI. | AWS target is obsolete; SQLite is test-only. |
+| D-015 | 2026-07-18 | Approved | Route approved-knowledge AI through Azure and production-licensed NVIDIA adapters under data/safety policy. | Free NIM is development-only; AI cannot make binding commitments. |
+| D-016 | 2026-07-18 | Approved | Combine anonymous initial AI chat, explicit live-human availability, Hengshi console operations, Teams alerts, and Outlook/Teams booking. | Human voice/video is opt-in; direct booking does not require AI. |
+| D-017 | 2026-07-18 | Approved | Use consent-based 90-day retention, verified deletion, no chat training, no launch uploads/accounts, and strict sensitive-data refusal. | Analytics are first-party, cookieless, and aggregate-only. |
+| D-018 | 2026-07-18 | Approved | Use Entra SSO roles plus two dormant monitored local JWT/bcrypt break-glass accounts with MFA, randomly generated 24+ character credentials, controlled activation, alerts, and post-use rotation, alongside secure rotating cookie sessions. | Enforce least privilege, CSRF, layered rate limits, MFA, and independent security review. |
+| D-019 | 2026-07-18 | Approved | Publish atomically through Draft, specialist evidence/SEO review, founder approval, render/index, public. | Authors cannot self-approve; failure preserves the prior public release. |
+| D-020 | 2026-07-18 | Approved | Adopt explicit Core Web Vitals, 3D budgets, initial load, 99.9%, RPO, and RTO targets. | RPO <=24h/RTO <=8h remains an explicit launch risk. |
+| D-021 | 2026-07-18 | Approved | Operate weekly dependency proposals, security alerts, SBOM/license evidence, monthly canaries, and quarterly major checks. | Major upgrades never auto-merge; exceptions are dated ADRs. |
+| D-022 | 2026-07-18 | Approved | Deployment and AI spending require approved envelopes; other paid items need separate approval and a free alternative. | External/destructive actions and credentials remain separately gated. |
+| D-023 | 2026-07-18 | Approved | Deliver Phases 0 through 9 in the recorded order. | Each later phase remains blocked by prior acceptance and its own gates. |
+| D-024 | 2026-07-19 | Approved | Accept the independently reviewed Phase 0 recovery and workflow-adoption package and begin Phase 1 definition work. | Phase 1 documentation and approved reversible evidence work may proceed; application implementation remains blocked until Phase 1 acceptance. |
+| D-025 | 2026-07-19 | Approved | Accept the bounded Phase 1 requirements, claims, SEO, route, and conversion foundation and retain the planned `/industries` parent hub. | Opens brand-strategy definition only; complete Phase 1 and all application implementation remain blocked by their later gates. |
+| D-026 | 2026-07-19 | Approved | Approve Direction A, **Evidence in Motion**, as Hengshi Design's brand strategy. | Locks the category “evidence-led innovation delivery partner” and promise “From complex ambition to accountable delivery”; opens brand-identity definition only. |
+| D-027 | 2026-07-19 | Approved | Authorize CR-001 as the final bounded brand-identity producer revision: retain the Signal Ledger identity system while replacing its rejected logo with a coherently reconciled Quiet Framework-derived logo direction. | Invalidates the prior MA-015 candidate and opens producer iteration 3 of 3 plus fresh independent design/accessibility review; final identity approval remains pending. |
+| D-028 | 2026-07-19 | Approved | Authorize MA-016's one-time corrective exception for CR-001, strictly limited to the recorded iteration-3 design/accessibility findings. | Closes MA-016 and reopens correction/verification only; no redesign, second exception, or identity approval is authorized. MA-015 may reopen only after deterministic validation and independent design/accessibility verification pass. |
+| D-029 | 2026-07-19 | Approved | Authorize MA-017's one evidence-only stabilization for the four recorded D-028 browser/accessibility failures. | Closes MA-017 and reopens only the affected board semantics/CSS/audit/evidence surfaces for one deterministic validator and one bounded browser/a11y pass; no retry, redesign, new concept, requirement, or identity approval is authorized. |
+| D-030 | 2026-07-20 | Approved | Authorize MA-018's one syntax-only repair to the malformed PowerShell selector at `validate-brand-identity.ps1:171`. | Closes MA-018 and reopens the unconsumed D-029 validator/browser/evidence/freeze/verification sequence; the six D-029 source changes remain frozen and no product, identity, HTML/CSS, design, semantic, geometry, or other source change is authorized. |
+| D-031 | 2026-07-20 | Approved | Authorize MA-019's exhaustive syntax-only normalization of the two remaining audited malformed selectors: forced-colors on line 171 and color-contrast on line 172. | Closes MA-019 and reopens one validator plus the still-unconsumed browser/evidence/freeze/verification sequence; `rg` must return zero malformed `Where-Object id -eq` occurrences before testing, and no other source or identity change is authorized. |
+| D-032 | 2026-07-20 | Approved | Authorize MA-020's assertion-only correction of exactly two stale validator literals: D-029 authority wording and pinned manifest version. | Closes MA-020 and reopens one validator plus the still-unconsumed browser/evidence/freeze/verification sequence; the manifest, authority documents, selectors, and every product/identity source remain frozen. |
+| D-033 | 2026-07-20 | Approved | Authorize MA-021's one final contrast-only accessibility-evidence correction for `.dependency-key` in four narrow/failure states and the three-node print contrast violation. | Closes MA-021 and reopens only one checkpointed source change set, one deterministic validator, one browser/a11y pass, directly invalidated evidence freeze, and independent design/accessibility verification. Any test failure stops without edit/retry; this is not identity approval. |
+| D-034 | 2026-07-20 | Approved | Accept MA-022's 🧩 validator-state reconciliation and the founder's directive to “just complete this now all” within the existing D-033 contrast scope. | Closes MA-022 and authorizes completion without further harness/evidence micro-gates: reconcile structured pre/post state, rerun as needed, apply only minimum remaining contrast fixes, freeze evidence, and obtain separate independent design/accessibility verification. Material identity/design changes and all application/external/production actions remain excluded. |
+| D-035 | 2026-07-20 | Approved | Accept the exact frozen **Signal Ledger system + Framework Relay logo hybrid** as the Phase 1 brand identity after the founder explicitly wrote `approved.` at MA-015. | Closes MA-015 and CR-001 as accepted and opens UX/UI accessible-journey definition only. The marks remain unregistered and trademark-not-cleared; no exact public copy/publication, application/UI/3D implementation, external write, Git operation, paid font/asset, deployment, complete Phase 1 acceptance, or launch is authorized. |
+| D-036 | 2026-07-20 | Approved | Accept the exact independently reviewed Phase 1 UX architecture package after the founder explicitly wrote `approved whats next? provide list of all phases with complete and remaining` at MA-023. | Closes MA-023 and accepts the UX architecture only. UI reference-design production is not opened automatically; the next recommended bounded slice is its contract and surface-coverage plan, with any Figma/Stitch external write separately approved. MA-013 and all implementation, publication, Git, deployment, and complete Phase 1 gates remain. |
+
+## Governance Amendment Result
+
+Phase 0 implemented D-004 and D-014 in Constitution 2.0.0, `AGENTS.md`, project
+rules, software-definition workflow documents, Copilot guidance, and Spec Kit
+templates. The fixed-version/AWS governance conflict is resolved. Legacy v3
+product documents, active technical references, backlog, diagrams, and draft
+specs remain Phase 1 reconciliation inputs and cannot authorize implementation
+when they conflict with current governance or approved decisions.

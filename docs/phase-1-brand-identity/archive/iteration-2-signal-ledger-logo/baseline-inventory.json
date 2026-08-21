@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "document": {
+    "name": "Hengshi Design superseded producer iteration-2 Signal Ledger logo baseline",
+    "date": "2026-07-19",
+    "status": "superseded_internal_review_and_rollback_only",
+    "authority": "D-027 and CR-001",
+    "currentUsePermitted": false,
+    "rollbackMeaning": "Restore the frozen iteration-2 package to an unresolved founder gate; never treat the rejected Signal Ledger logo as approved."
+  },
+  "cr001Anchors": [
+    { "path": "asset-manifest.json", "sha256": "AB54DF15DD0C095EA8976FFA69C72ED107589E5DAFBEBBFE282BD554FE6F9FA3" },
+    { "path": "BRAND_IDENTITY.md", "sha256": "95711633ED5695A2F22E34FD54D4F5C4040FD8AF6F96FC3B04DB58B3C0122CF0" },
+    { "path": "geometry-spec.json", "sha256": "03A97795E196477D77C33DEDCF3DEF63FAB517CA97C1591688B1FEB2FEA51877" },
+    { "path": "reviews/design-review-iteration-2.md", "sha256": "490A4391327D476014CC1B758EDFDDF66DE4C8A03628BE116659E5ADA272D895" },
+    { "path": "accessibility/accessibility-audit-iteration-2.md", "sha256": "FD06D3500F797A2148B7432C6AB2F7F6CF613D71732710BCBE54E65C8761B519" }
+  ],
+  "supersededSources": [
+    { "originalPath": "geometry-spec.json", "archivePath": "archive/iteration-2-signal-ledger-logo/geometry-spec.json", "sha256": "03A97795E196477D77C33DEDCF3DEF63FAB517CA97C1591688B1FEB2FEA51877" },
+    { "originalPath": "assets/logo-signal-ledger-primary.svg", "archivePath": "archive/iteration-2-signal-ledger-logo/assets/logo-signal-ledger-primary.svg", "sha256": "0C42E673C1222A33A264046E2024992BA82AC0B779EF1FD31AE416EF4D562497" },
+    { "originalPath": "assets/logo-signal-ledger-dark.svg", "archivePath": "archive/iteration-2-signal-ledger-logo/assets/logo-signal-ledger-dark.svg", "sha256": "F93AC31006077DD432ED089CAE4418E097607F9C1FA730F597EE1D0F8C376B60" },
+    { "originalPath": "assets/logo-signal-ledger-mono.svg", "archivePath": "archive/iteration-2-signal-ledger-logo/assets/logo-signal-ledger-mono.svg", "sha256": "8B0E09C82548B8989B115895E4CCD421B57D6609E69BAEFAE07518A4D09A4F8A" },
+    { "originalPath": "assets/logo-signal-ledger-reverse.svg", "archivePath": "archive/iteration-2-signal-ledger-logo/assets/logo-signal-ledger-reverse.svg", "sha256": "6BAAFDF208565254CC36BB3F4004A8972240B8B6CEC467B16B9A738462D48FCA" },
+    { "originalPath": "assets/monogram-signal-ledger.svg", "archivePath": "archive/iteration-2-signal-ledger-logo/assets/monogram-signal-ledger.svg", "sha256": "ED5EFCBEDE50B769B65495DDA97DDE017AA2936B6DDA256F532E3C1CAD723FC7" },
+    { "originalPath": "assets/mark-signal-ledger-small.svg", "archivePath": "archive/iteration-2-signal-ledger-logo/assets/mark-signal-ledger-small.svg", "sha256": "9F412112E735B38E9EEE1071A235C4EA551397B29288783A29174D21FD48AA2B" },
+    { "originalPath": "assets/favicon-concept.svg", "archivePath": "archive/iteration-2-signal-ledger-logo/assets/favicon-concept.svg", "sha256": "F06819AE6E3E4AFA4D1C105E29F756805EC35A86903C0A35E1C412A0ED5CFD20" }
+  ]
+}

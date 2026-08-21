@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "document": {
+    "name": "Hengshi Design Phase 1 identity semantic tokens",
+    "version": "producer-iteration-3-final",
+    "date": "2026-07-19",
+    "status": "exploratory_definition_not_implementation_authority",
+    "approvedStrategy": "D-026 Evidence in Motion",
+    "recommendedExpression": "Signal Ledger system + Framework Relay logo",
+    "logoGeometry": "framework-relay-master-80-v1",
+    "supersededLogo": "Signal Ledger H-derived logo, archived for rollback only",
+    "clearance": "UNREGISTERED — TRADEMARK NOT CLEARED"
+  },
+  "color": {
+    "ink": { "value": "#0B0F14", "role": "primary dark canvas and dark text" },
+    "graphite": { "value": "#161D26", "role": "raised dark surface" },
+    "slate": { "value": "#2A3542", "role": "border and secondary dark surface" },
+    "stone": { "value": "#D8D3C8", "role": "warm structural neutral" },
+    "mist": { "value": "#F3F1EA", "role": "soft light surface" },
+    "paper": { "value": "#FAF9F6", "role": "primary light canvas" },
+    "white": { "value": "#FFFFFF", "role": "high contrast text and print field" },
+    "signal": {
+      "cyan": { "onDark": "#00D4FF", "onLight": "#006D82", "role": "primary action and active connection" },
+      "amber": { "onDark": "#FFB000", "onLight": "#8A5600", "role": "attention and conditional state" },
+      "lime": { "onDark": "#B6F36B", "onLight": "#4F7D18", "role": "verified state and data series" },
+      "violet": { "onDark": "#A98CFF", "onLight": "#6D52B5", "role": "demonstration state and spatial resonance" }
+    }
+  },
+  "declaredContrastPairings": [
+    { "foreground": "#FAF9F6", "background": "#0B0F14", "expectedRatio": 18.25, "minimum": 4.5, "use": "all text and controls" },
+    { "foreground": "#F3F1EA", "background": "#161D26", "expectedRatio": 15.01, "minimum": 4.5, "use": "all text and controls" },
+    { "foreground": "#D8D3C8", "background": "#161D26", "expectedRatio": 11.37, "minimum": 4.5, "use": "all text and controls" },
+    { "foreground": "#00D4FF", "background": "#0B0F14", "expectedRatio": 10.86, "minimum": 4.5, "use": "text, focus, icons, graphics" },
+    { "foreground": "#FFB000", "background": "#0B0F14", "expectedRatio": 10.49, "minimum": 4.5, "use": "text, attention, icons, graphics" },
+    { "foreground": "#B6F36B", "background": "#0B0F14", "expectedRatio": 14.66, "minimum": 4.5, "use": "text and data markers" },
+    { "foreground": "#A98CFF", "background": "#0B0F14", "expectedRatio": 7.21, "minimum": 4.5, "use": "text and data markers" },
+    { "foreground": "#FFFFFF", "background": "#2A3542", "expectedRatio": 12.45, "minimum": 4.5, "use": "all text and controls" },
+    { "foreground": "#2A3542", "background": "#FAF9F6", "expectedRatio": 11.83, "minimum": 4.5, "use": "all text and controls" },
+    { "foreground": "#64748B", "background": "#FAF9F6", "expectedRatio": 4.52, "minimum": 4.5, "use": "normal text only at tested sizes" },
+    { "foreground": "#006D82", "background": "#FAF9F6", "expectedRatio": 5.68, "minimum": 4.5, "use": "cyan text and graphics on paper" },
+    { "foreground": "#006D82", "background": "#F3F1EA", "expectedRatio": 5.29, "minimum": 4.5, "use": "cyan text and graphics on mist" },
+    { "foreground": "#8A5600", "background": "#FAF9F6", "expectedRatio": 5.85, "minimum": 4.5, "use": "amber text and graphics on paper" },
+    { "foreground": "#4F7D18", "background": "#FAF9F6", "expectedRatio": 4.66, "minimum": 4.5, "use": "lime text and graphics on paper" },
+    { "foreground": "#6D52B5", "background": "#FAF9F6", "expectedRatio": 5.66, "minimum": 4.5, "use": "violet text and graphics on paper" }
+  ],
+  "typography": {
+    "display": {
+      "stack": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif",
+      "weight": "650 with 700 fallback",
+      "lineHeight": "0.95–1.05",
+      "tracking": "-0.025em",
+      "availability": "platform dependent; no font file included"
+    },
+    "text": {
+      "stack": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif",
+      "weight": "400–500",
+      "lineHeight": "1.5–1.7",
+      "minimumMeaningfulSize": "12px",
+      "defaultBodySize": "16px",
+      "availability": "platform dependent; no font file included"
+    },
+    "evidence": {
+      "stack": "ui-monospace, Cascadia Mono, Segoe UI Mono, Consolas, monospace",
+      "weight": "500–600",
+      "lineHeight": "1.4–1.6",
+      "availability": "platform dependent; no font file included"
+    }
+  },
+  "space": {
+    "unit": "4px",
+    "scale": ["4px", "8px", "12px", "16px", "24px", "32px", "48px", "64px", "96px"]
+  },
+  "layout": {
+    "wideColumns": 12,
+    "mediumColumns": 6,
+    "narrowColumns": 4,
+    "principle": "content need controls collapse; visual asymmetry never changes semantic reading order"
+  },
+  "radius": {
+    "evidenceFrame": "0–4px",
+    "control": "8px",
+    "status": "pill only for short labels with visible text"
+  },
+  "stroke": {
+    "iconGrid": "24 units",
+    "iconBase": "2 units",
+    "signal": "2–5px by output size",
+    "minimumDeviceStroke": "2 device pixels at small mark sizes"
+  },
+  "evidenceState": {
+    "verified": { "colorOnDark": "#B6F36B", "colorOnLight": "#4F7D18", "marker": "filled-circle", "line": "solid", "dashArray": "none", "labelRequired": true },
+    "demo": { "colorOnDark": "#A98CFF", "colorOnLight": "#6D52B5", "marker": "open-diamond", "line": "dash-dot", "dashArray": "10 4 2 4", "labelRequired": true },
+    "proposed": { "colorOnDark": "#00D4FF", "colorOnLight": "#006D82", "marker": "filled-square", "line": "short-dash", "dashArray": "8 6", "labelRequired": true },
+    "conditional": { "colorOnDark": "#FFB000", "colorOnLight": "#8A5600", "marker": "filled-triangle", "line": "long-dash", "dashArray": "16 7", "labelRequired": true },
+    "unavailable": { "colorOnDark": "#D8D3C8", "colorOnLight": "#2A3542", "marker": "filled-bar", "line": "dotted", "dashArray": "2 7", "labelRequired": true },
+    "error": { "colorOnDark": "#FFB000", "colorOnLight": "#8A5600", "marker": "open-octagon", "line": "double-solid", "dashArray": "none", "labelRequired": true }
+  },
+  "motion": {
+    "signalReveal": { "duration": "180–320ms", "purpose": "connection or progression", "reducedMotion": "complete stable path" },
+    "stateTransition": { "duration": "120–200ms", "purpose": "panel or status change", "reducedMotion": "instant state with text" },
+    "contextShift": { "duration": "240–400ms", "purpose": "orientation", "reducedMotion": "direct cut with heading focus" },
+    "immersiveArrival": { "duration": "approximately 8s maximum target", "purpose": "optional authored entry", "reducedMotion": "immediate stable reception or Quick Access" }
+  },
+  "sound": {
+    "default": "off",
+    "activation": "informed user choice",
+    "equivalence": "every cue has non-audio visual or text equivalent",
+    "meaningfulSpeech": "captions and transcript required"
+  },
+  "identityReconciliation": {
+    "retainedSystem": { "name": "Signal Ledger", "key": "structured-trajectory", "status": "retained_by_D_027" },
+    "supersededLogo": { "name": "Signal Ledger H-derived logo", "key": "superseded-signal-ledger-logo", "status": "founder_rejected_archived_not_current" },
+    "sourceExploration": { "name": "Quiet Framework", "key": "governed-modularity", "status": "source_exploration_not_current" },
+    "currentCandidate": { "name": "Framework Relay", "key": "governed-stepwise-trajectory", "status": "producer_iteration_3_final_candidate" },
+    "closedExploration": { "name": "Resonant Field", "key": "spatial-resonance", "status": "historical_comparison_not_current" }
+  }
+}

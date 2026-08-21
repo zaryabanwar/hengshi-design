@@ -1,0 +1,124 @@
+source_id,source_type,ux_artifact,flow_or_section,acceptance_evidence,status
+D-025,decision,README.md;route-room-parity.csv,"Authority; ROUTE-INDUSTRIES","UXTEST-002 proves retained /industries despite stale JSON status",approved_fact
+D-026,decision,UX_ARCHITECTURE.md,"Experience thesis; content families","Independent UX/design review verifies evidence-led promise without unsupported copy",approved_fact
+D-035,decision,README.md;UX_ARCHITECTURE.md,"Authority; responsive/accessibility","Independent review verifies accepted identity implications only and no UI implementation",approved_fact
+BR-001,requirement,UX_ARCHITECTURE.md;FLOWS.md,"J-01; BF-01","UXTEST-004 and UXTEST-014 through UXTEST-020",approved_fact
+BR-002,requirement,UX_ARCHITECTURE.md,"Actors","Research plan does not invent personas",approved_fact
+BR-003,requirement,UX_ARCHITECTURE.md;route-room-parity.csv,"J-03; industry rows","UXTEST-002 and UXTEST-026",approved_fact
+BR-004,requirement,UX_ARCHITECTURE.md;FLOWS.md,"J-03; AI refusal; booking","UXTEST-010 and content review find no fixed/binding terms",approved_fact
+BR-005,requirement,route-room-parity.csv;UX_ARCHITECTURE.md,"17 service/wing routes; IA","UXTEST-002 counts exact 5 wings and 10 services",approved_fact
+BR-006,requirement,UX_ARCHITECTURE.md;CONTENT_ANALYTICS_TESTS.md,"Content family; CN-001","Claim scan and evidence review",approved_fact
+BR-007,requirement,UX_ARCHITECTURE.md;CONTENT_ANALYTICS_TESTS.md,"J-04; CN-004 through CN-008","UXTEST-026 and claim scan",approved_fact
+BR-008,requirement,UX_ARCHITECTURE.md;route-room-parity.csv,"Cross-links; Work/Demos","UXTEST-003 and UXTEST-026 distinguish collections",approved_fact
+BR-009,requirement,excluded-surfaces.csv;FLOWS.md,"EXCL-DEFENSE; AF-01","UXTEST-010 and route exclusion validation",approved_fact
+BR-010,requirement,UX_ARCHITECTURE.md,"Responsive/localization architecture","Responsive review verifies English launch and localization readiness",approved_fact
+BR-011,requirement,UX_ARCHITECTURE.md;wayfinding-release-map.csv,"J-02; campus release sequence","UXTEST-038 verifies foundation prerequisite before wing ordinal 1",approved_fact
+BR-012,requirement,UX_ARCHITECTURE.md;wayfinding-release-map.csv,"Campus release sequence; wing states","UXTEST-038 rejects out-of-order open wing",approved_fact
+FR-001,requirement,UX_ARCHITECTURE.md;route-room-parity.csv,"IA; service routes","UXTEST-001 through UXTEST-004",approved_fact
+FR-002,requirement,UX_ARCHITECTURE.md;FLOWS.md,"J-02; DF-01","UXTEST-003 checksum parity",approved_fact
+FR-003,requirement,UX_ARCHITECTURE.md,"J-02","UXTEST-005 and UXTEST-007",proposed_ux
+FR-004,requirement,FLOWS.md,"BF-01A","UXTEST-014 UXTEST-015 and UXTEST-045 prove exact six data fields plus one consent record",approved_fact
+FR-005,requirement,UX_ARCHITECTURE.md;FLOWS.md,"J-01; BF-01","UXTEST-004",approved_fact
+FR-006,requirement,FLOWS.md,"BF-01C","UXTEST-017",approved_fact
+FR-007,requirement,FLOWS.md;STATES_AND_RECOVERY.md,"BF-01D; ACT-28/29","UXTEST-018 and UXTEST-019",approved_fact
+FR-008,requirement,FLOWS.md,"AF-01","UXTEST-009",approved_fact
+FR-009,requirement,FLOWS.md,"AF-02","UXTEST-012",approved_fact
+FR-010,requirement,FLOWS.md;STATES_AND_RECOVERY.md,"AF-02; SOF-01; ACT-41 through ACT-53","UXTEST-012 and UXTEST-031 through UXTEST-037",approved_fact
+FR-011,requirement,FLOWS.md,"AF-02","UXTEST-013",approved_fact
+FR-012,requirement,UX_ARCHITECTURE.md,"FV-01","UXTEST-005",proposed_ux
+FR-013,requirement,UX_ARCHITECTURE.md,"RV-01","UXTEST-006",proposed_ux
+FR-014,requirement,FLOWS.md,"DF-01","UXTEST-008 and UXTEST-021",proposed_ux
+FR-015,requirement,README.md,"Implementation boundary","No API change; later contract/deprecation tests",proposed_ux
+FR-016,requirement,FLOWS.md;STATES_AND_RECOVERY.md,"AF/BF/PF/SOF flows; staff IA; dependency matrix","UXTEST-031 through UXTEST-037 plus later interface contracts map every named capability/failure",proposed_ux
+FR-017,requirement,route-room-parity.csv;CONTENT_ANALYTICS_TESTS.md,"All content families; CN rows","UXTEST-002 and prelaunch inventory review",approved_fact
+FR-018,requirement,CONTENT_ANALYTICS_TESTS.md,"CN-006","Editorial operations later verify cadence without filler",approved_fact
+FR-019,requirement,FLOWS.md,"BF-01B","UXTEST-016",proposed_ux
+SEO-001,requirement,UX_ARCHITECTURE.md,"J-01; parity invariant","UXTEST-001",approved_fact
+SEO-002,requirement,route-room-parity.csv,"All route paths","Route validator checks unique lowercase paths; host gate MA-008",approved_fact
+SEO-003,requirement,excluded-surfaces.csv,"Nine exclusions","UXTEST-002 and exclusion validator",approved_fact
+SEO-004,requirement,route-room-parity.csv,"33 routes","UXTEST-002",approved_fact
+SEO-005,requirement,FLOWS.md,"PF-01","UXTEST-028 and UXTEST-029 plus later page validation",proposed_ux
+SEO-006,requirement,CONTENT_ANALYTICS_TESTS.md,"Content components","Visible-evidence/schema parity later tested",proposed_ux
+SEO-007,requirement,route-room-parity.csv;UX_ARCHITECTURE.md,"Every route representation; J-02","UXTEST-003",approved_fact
+SEO-008,requirement,STATES_AND_RECOVERY.md,"ACT-02; publication matrix","UXTEST-002 and UXTEST-029",proposed_ux
+SEO-009,requirement,CONTENT_ANALYTICS_TESTS.md,"CN-001; CN-013","Entity evidence review; MA-002/008/009",approved_fact
+SEO-010,requirement,UX_ARCHITECTURE.md,"Responsive/localization architecture","No hreflang or language selector invented",approved_fact
+SEO-011,requirement,FLOWS.md,"PF-01","UXTEST-027/028",approved_fact
+SEO-012,requirement,README.md;CONTENT_ANALYTICS_TESTS.md,"Scope; content gates","Content review; no growth tactic invented",approved_fact
+SEO-013,requirement,README.md,"Out of UX scope; policy gate","No production crawler directive selected",proposed_ux
+PUB-001,requirement,FLOWS.md,"PF-01","UXTEST-003/028/029",approved_fact
+PUB-002,requirement,FLOWS.md,"PF-01","UXTEST-027/029",approved_fact
+PUB-003,requirement,FLOWS.md,"PF-01","UXTEST-027",approved_fact
+PUB-004,requirement,FLOWS.md;excluded-surfaces.csv,"PF-01; EXCL-NONPUBLIC-PUBLICATION","UXTEST-028",approved_fact
+PUB-005,requirement,FLOWS.md;STATES_AND_RECOVERY.md,"PF-01; ACT-38/39","UXTEST-029",approved_fact
+PUB-006,requirement,CONTENT_ANALYTICS_TESTS.md,"CN-002 through CN-008","UXTEST-026 and publication validation",approved_fact
+PUB-007,requirement,UX_ARCHITECTURE.md,"J-04; cross-links","UXTEST-003 and UXTEST-026",approved_fact
+UX-001,requirement,UX_ARCHITECTURE.md;STATES_AND_RECOVERY.md,"Responsive/accessibility; pointer/motion/time/media/input/auth contracts","UXTEST-021 through UXTEST-025 and UXTEST-039 through UXTEST-043 plus independent accessibility review",approved_fact
+UX-002,requirement,UX_ARCHITECTURE.md;route-room-parity.csv,"J-01/J-02; 33 representations","UXTEST-003/004/007",approved_fact
+UX-003,requirement,UX_ARCHITECTURE.md;STATES_AND_RECOVERY.md,"Accessibility; action contracts","UXTEST-021/022",approved_fact
+UX-004,requirement,UX_ARCHITECTURE.md,"FV-01; accessibility","UXTEST-005/025",approved_fact
+UX-005,requirement,STATES_AND_RECOVERY.md,"ACT-06/08; dependency matrix","UXTEST-007/025",approved_fact
+UX-006,requirement,UX_ARCHITECTURE.md,"J-02","UXTEST-003/021",approved_fact
+UX-007,requirement,UX_ARCHITECTURE.md;STATES_AND_RECOVERY.md,"FV-01; ACT-10","UXTEST-013/025",approved_fact
+UX-008,requirement,route-room-parity.csv;wayfinding-release-map.csv;UX_ARCHITECTURE.md,"Formal service and concise sign mappings","UXTEST-002/003/038",approved_fact
+UX-009,requirement,README.md;CONTENT_ANALYTICS_TESTS.md,"Boundary; CN-012","Scope scan shows no GLB write/reuse",approved_fact
+UX-010,requirement,CONTENT_ANALYTICS_TESTS.md,"CN-012","MA-004 and later 3D specification/approval",approved_fact
+UX-011,requirement,README.md;UX_ARCHITECTURE.md,"Progressive enhancement boundary","UXTEST-001/003/007",approved_fact
+AI-001,requirement,FLOWS.md,"AF-01","UXTEST-010/011/028",approved_fact
+AI-002,requirement,FLOWS.md,"AF-01","UXTEST-010/022",approved_fact
+AI-003,requirement,FLOWS.md,"AF-01","UXTEST-010",approved_fact
+AI-004,requirement,FLOWS.md,"AF-01","UXTEST-010",approved_fact
+AI-005,requirement,STATES_AND_RECOVERY.md,"AI dependency states","Provider policy tests later; no provider selected",approved_fact
+AI-006,requirement,FLOWS.md;STATES_AND_RECOVERY.md,"AF-01; AI dependency states","Data-policy route/refusal tests",approved_fact
+AI-007,requirement,CONTENT_ANALYTICS_TESTS.md,"CN-010","MA-007 entitlement/policy evidence",approved_fact
+AI-008,requirement,FLOWS.md,"AF-01","UXTEST-010 adversarial cases",approved_fact
+AI-009,requirement,FLOWS.md,"AF-01","UXTEST-009/010 identifies AI",proposed_ux
+DATA-001,requirement,STATES_AND_RECOVERY.md,"PostgreSQL/API state","Failure test rejects silent alternate truth",approved_fact
+DATA-002,requirement,STATES_AND_RECOVERY.md,"Redis/search/publication states","Rebuild/degraded tests preserve durable truth",approved_fact
+DATA-003,requirement,UX_ARCHITECTURE.md;FLOWS.md,"Journey invariants; AF/BF","UXTEST-009/014 find no account/upload",approved_fact
+DATA-004,requirement,FLOWS.md,"AF-01","UXTEST-009",approved_fact
+DATA-005,requirement,CONTENT_ANALYTICS_TESTS.md,"CN-015","Clock tests only after record-class matrix",approved_fact
+DATA-006,requirement,STATES_AND_RECOVERY.md;CONTENT_ANALYTICS_TESTS.md,"Retention state; CN-015","UXTEST-030 keeps unmapped deletion pending",approved_fact
+DATA-007,requirement,FLOWS.md,"AF-01","Provider/config audit and UXTEST-009",approved_fact
+DATA-008,requirement,CONTENT_ANALYTICS_TESTS.md,"Minimal envelope","UXTEST-030 payload inspection",approved_fact
+DATA-009,requirement,CONTENT_ANALYTICS_TESTS.md,"CN-015; human gates","MA-002/011 matrix approval required",proposed_ux
+DATA-010,requirement,FLOWS.md;STATES_AND_RECOVERY.md,"AF/BF/PF; action matrix","UXTEST-018/019/029",approved_fact
+SEC-001,requirement,FLOWS.md,"PF-01 staff branches","UXTEST-027",approved_fact
+SEC-002,requirement,FLOWS.md,"PF-01 staff branches","Negative server authorization tests",approved_fact
+SEC-003,requirement,FLOWS.md,"Staff session branch","Later security specification; no credential value",approved_fact
+SEC-004,requirement,STATES_AND_RECOVERY.md,"Staff auth/session state","Clock-controlled session tests later",approved_fact
+SEC-005,requirement,FLOWS.md;STATES_AND_RECOVERY.md,"Staff branches; ACT-33","CSRF/logout negative tests later",approved_fact
+SEC-006,requirement,STATES_AND_RECOVERY.md,"Redis/challenge states","Distributed limit tests later; exact booking limits unresolved",approved_fact
+SEC-007,requirement,STATES_AND_RECOVERY.md,"System states","Later security/accessibility review; no policy weakened",approved_fact
+SEC-008,requirement,README.md;CONTENT_ANALYTICS_TESTS.md,"Boundary; analytics envelope","Validator secret-like scan",approved_fact
+SEC-009,requirement,CONTENT_ANALYTICS_TESTS.md,"Human gates","Dated independent legal/security review before public gate",approved_fact
+SEC-010,requirement,README.md,"Exclusion/no credential work","No credential generated or documented",approved_fact
+NFR-001,requirement,UX_ARCHITECTURE.md,"Semantic path","Later Quick Access LCP/INP/CLS evidence",approved_fact
+NFR-002,requirement,UX_ARCHITECTURE.md,"J-02 failure recovery","Later transfer manifest and fallback test",approved_fact
+NFR-003,requirement,CONTENT_ANALYTICS_TESTS.md,"Acceptance evidence boundary","Later load test; no UI target invented",approved_fact
+NFR-004,requirement,STATES_AND_RECOVERY.md,"Dependency states","Later SLI/SLO test; outage recovery preserves direct path",approved_fact
+NFR-005,requirement,STATES_AND_RECOVERY.md,"Recovery priority","Later recovery drill; adequacy remains risk",approved_fact
+NFR-006,requirement,UX_ARCHITECTURE.md,"Responsive/accessibility","Browser matrix; unsupported gets Quick Access",approved_fact
+NFR-007,requirement,UX_ARCHITECTURE.md,"Low-power/degradation","Numerical device targets remain later approval",approved_fact
+NFR-008,requirement,UX_ARCHITECTURE.md,"J-02; FV-01","UXTEST-005",proposed_ux
+ECL-001;ECL-002;ECL-027,claim,CONTENT_ANALYTICS_TESTS.md,"CN-001","Use approved positioning only; no legal/global footprint inference",claim_gate
+ECL-003;ECL-004;ECL-014;ECL-015,claim,CONTENT_ANALYTICS_TESTS.md,"CN-002/CN-003","Taxonomy/context only; proof/owners held",claim_gate
+ECL-005;ECL-024,claim,CONTENT_ANALYTICS_TESTS.md,"CN-013","Design-time host only; no ownership/profile claim",claim_gate
+ECL-006;ECL-019;ECL-021;ECL-031,claim,CONTENT_ANALYTICS_TESTS.md,"CN-004/CN-008","Unsupported superiority/social/metric/assurance claims absent",claim_gate
+ECL-007;ECL-008;ECL-009;ECL-010;ECL-011;ECL-012;ECL-013,claim,CONTENT_ANALYTICS_TESTS.md,"CN-004/CN-005","Prototype seeds/assets quarantined",claim_gate
+ECL-016;ECL-017;ECL-018;ECL-028;ECL-029,claim,CONTENT_ANALYTICS_TESTS.md,"CN-001/CN-002/CN-007/CN-009/CN-011","No legal/person/contact/owner facts invented",claim_gate
+ECL-020;ECL-022,claim,CONTENT_ANALYTICS_TESTS.md,"CN-012","No Atlanta/HQ or GLB rights claim",claim_gate
+ECL-023,claim,CONTENT_ANALYTICS_TESTS.md,"CN-006","Insight requirement only; content held",claim_gate
+ECL-025,claim,excluded-surfaces.csv,"EXCL-DEFENSE","Absent until MA-011",claim_gate
+ECL-026,claim,README.md,"Scope boundary","No copied/affiliation/comparative claim",claim_gate
+ECL-030,claim,FLOWS.md,"AF-01","Planned AI role only; no operational claim",claim_gate
+ECL-032;ECL-033,claim,CONTENT_ANALYTICS_TESTS.md,"CN-004/CN-005","Honest empty/held Work and Demos",claim_gate
+UX-DR-I1-001,finding,UX_ARCHITECTURE.md;STATES_AND_RECOVERY.md;CONTENT_ANALYTICS_TESTS.md,"Experience thesis; J-01; JavaScript failure boundary; UXTEST-001/004/044","Approved guarantee narrowed to initial semantic content and direct Book access; full transaction accessible/non-WebGL; no no-JS completion claim",resolved_iteration_2
+UX-DR-I1-002,finding,FLOWS.md;CONTENT_ANALYTICS_TESTS.md,"BF-01A; UXTEST-014/045","Exact six named data fields plus one consent record equals seven required elements; validator asserts names/count",resolved_iteration_2
+UX-DR-I1-003,finding,FLOWS.md;STATES_AND_RECOVERY.md,"SOF-01A through SOF-01M; ACT-41 through ACT-53","UXTEST-031 through UXTEST-037 cover operator state/action/audit/negative-role behavior",resolved_iteration_2
+UX-DR-I1-004,finding,wayfinding-release-map.csv;UX_ARCHITECTURE.md,"Five-wing/ten-service mapping and release sequence","UXTEST-038 plus validator uniqueness/order checks",resolved_iteration_2
+A11Y-I1-01,finding,UX_ARCHITECTURE.md;STATES_AND_RECOVERY.md;CONTENT_ANALYTICS_TESTS.md,"Pointer/touch contract; UXTEST-039","WCAG 2.5.2 2.5.3 2.5.7 and 2.5.8 obligations testable",resolved_iteration_2
+A11Y-I1-02,finding,UX_ARCHITECTURE.md;STATES_AND_RECOVERY.md;CONTENT_ANALYTICS_TESTS.md,"Motion/update/timeout contract; UXTEST-040","Pause/stop/hide flash and adjustable/warned/extended or exception obligations testable",resolved_iteration_2
+A11Y-I1-03,finding,UX_ARCHITECTURE.md;FLOWS.md;STATES_AND_RECOVERY.md;CONTENT_ANALYTICS_TESTS.md,"SC 1.2.3 and SC 1.2.5 media contract; UXTEST-041","SC 1.2.5 audio description is mandatory for applicable prerecorded video in synchronized media; SC 1.2.3 media alternative remains separate and cannot substitute; held-media recovery preserved",resolved_iteration_3
+A11Y-I1-04,finding,FLOWS.md;STATES_AND_RECOVERY.md;CONTENT_ANALYTICS_TESTS.md,"Input/redundant-entry/auth contract; UXTEST-042/043","Applicable input purpose no redundant re-entry and accessible authentication/reauthentication defined",resolved_iteration_2
+A11Y-I1-05,finding,UX_ARCHITECTURE.md;STATES_AND_RECOVERY.md;CONTENT_ANALYTICS_TESTS.md,"Experience thesis; JavaScript failure boundary; UXTEST-044","No-JS overclaim narrowed consistently without adding transactional policy",resolved_iteration_2
