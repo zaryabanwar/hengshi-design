@@ -1,5 +1,5 @@
 schema_version: 1
-last_updated: "2026-07-20"
+last_updated: "2026-09-03"
 classification: business_confidential
 
 project:
@@ -54,7 +54,7 @@ workflow:
     - accepted
   current_phase: phase_1_definition_seo_design_architecture_and_compatibility
   current_status: in_progress
-  current_gate: phase_1_definition_and_review
+  current_gate: MA_025_external_UI_reference_production_authorization
   default_max_revision_iterations: 2
   phase_0:
     status: accepted
@@ -65,7 +65,8 @@ workflow:
     dependencies_changed: false
     migrations_created: false
     external_systems_changed: false
-    commit_created: false
+    commit_created: true
+    commit_evidence: d96ce616350c02667a020bde99edd8ec3e7159d0
     governance_amendment_applied: true
     approval_required: satisfied_2026_07_19
     founder_approval:
@@ -93,7 +94,8 @@ workflow:
       compatibility_matrix_and_upgrade_policy: awaiting_human
       brand_strategy_and_identity: accepted
       ux_ui_and_accessible_journeys: in_progress
-      ui_reference_design: not_started
+      ui_reference_design: accepted
+      ui_reference_visual_production: not_started
       three_d_storyboard_and_asset_specification: not_started
       technical_architecture_and_contracts: not_started
       security_privacy_ai_and_legal_controls: not_started
@@ -117,7 +119,7 @@ workflow:
         industries_parent_hub: retained
         implementation_authorized: false
       compatibility_inventory:
-        status: awaiting_human
+        status: accepted
         artifacts: docs/phase-1-compatibility
         validation: passed
         baseline_items: 50
@@ -254,17 +256,49 @@ workflow:
         implementation_authorized: false
         external_design_write_authorized: false
       ui_reference_design:
-        status: not_started
-        recommended_next_slice: true
+        status: awaiting_human
+        recommended_next_slice: false
+        artifacts: docs/phase-1-ui-reference-design
+        maximum_revision_iterations: 3
+        producer_revision_iterations_used: 3
+        final_validation: 183_passes_zero_failures
+        routes: 33
+        exclusions: 9
+        wayfinding_entries: 15
+        action_contracts: 53
+        ux_tests: 45
+        flow_rows: 89
+        reusable_templates: 40
+        responsive_state_accessibility_profiles: 32
+        component_primitives: 62
+        future_design_batches: 9
+        primary_source_owners: 154
+        traceability_rows: 271
+        final_producer_package_sha256: 97E79201CC36F01718A027AD800E63BDD5AAFC47E41137D65253BAABA6B2120F
+        full_18_file_package_sha256: 0ED1A7848F328B2B72B088749684A259F3677814BEB0F6C79825C3EE66EABCE8
+        design_review_iteration_1: revise_0_critical_2_high_4_medium_0_low
+        design_review_iteration_2: pass_0_critical_0_high_0_medium_0_low_against_producer_iteration_2
+        design_review_iteration_3: pass_0_critical_0_high_0_medium_0_low
+        design_review_iteration_3_report: docs/phase-1-ui-reference-design/reviews/design-review-iteration-3.md
+        design_review_iteration_3_sha256: 66460F9DA5392035CB29AA0F941C0880F9AB5A712A176AC920370D54EFE2BF51
+        accessibility_audit_iteration_1: revise_0_critical_1_high_2_medium_0_low
+        accessibility_audit_iteration_2: pass_0_critical_0_high_0_medium_0_low
+        accessibility_audit_iteration_2_report: docs/phase-1-ui-reference-design/accessibility/accessibility-audit-iteration-2.md
+        accessibility_audit_iteration_2_sha256: C66A96A6C977EA834CD1310D67C3223BA84BD8B0F70336EC754AC468B1CFC346
+        unresolved_critical_high_medium: 0
         objective: >-
           Define the bounded UI reference-screen contract and foundation-surface
           coverage plan grounded in accepted D-036 UX architecture, without creating
           production UI or making an external Figma/Stitch write.
+        founder_gate: MA-024
+        founder_approval: accepted_2026_09_05_D_037
         external_design_write_authorized: false
         implementation_authorized: false
-        human_gate: explicit_bounded_external_Figma_or_Stitch_write_approval
-    reviewer: foundation_brand_strategy_brand_identity_and_UX_architecture_accepted
-    current_gate: UI_reference_design_contract_planning_and_compatibility_MA_013_separate
+        future_external_design_write_gate_required: true
+        normal_revision_limit_state: exhausted_3_of_3
+        material_revision_requires_change_request: true
+    reviewer: foundation_brand_strategy_brand_identity_and_UX_architecture_accepted_UI_contract_independently_reviewed
+    current_gate: external_UI_reference_production_MA_025_with_compatibility_MA_013_separate
     founder_gate: founder_phase_1_acceptance_before_phase_2
   phase_2:
     status: blocked
@@ -292,6 +326,12 @@ workflow:
     blocked_by: phase_8_acceptance
 
 working_tree_baseline:
+  classification: historical_pre_phase_0_snapshot
+  interpretation: >-
+    These counts preserve the pre-Phase-0 observation and are not assertions about
+    the current working tree. The protected files were incorporated into later
+    repository history; current tree state must be established with a fresh Git
+    reconciliation.
   observed_on: "2026-07-18"
   tracked_modified_files_before_phase_0: 16
   untracked_files_before_phase_0: 63
@@ -382,6 +422,8 @@ artifacts:
     compatibility_inventory: docs/phase-1-compatibility
     brand_strategy: docs/phase-1-brand-strategy
     brand_identity: docs/phase-1-brand-identity
+    ux_architecture: docs/phase-1-ux-architecture
+    ui_reference_design_contract: docs/phase-1-ui-reference-design
     change_request_CR_001: docs/requirements/CHANGE_REQUEST_CR-001.md
 
 reviews:
@@ -459,13 +501,13 @@ reviews:
       recommended_direction: evidence_in_motion
       founder_gate: MA-014
       founder_approval: accepted_2026_07_19_D_026
-      identity_status: in_progress
+      identity_status: accepted_2026_07_20_D_035
     brand_identity:
-      status: awaiting_human
+      status: accepted
       approved_strategy: evidence_in_motion_D_026
       maximum_revision_iterations: 3
       producer_revision_iterations_used: 3
-      active_producer_iteration: D_034_complete_awaiting_MA_015
+      active_producer_iteration: complete_D_035
       normal_revision_limit_state: exhausted_3_of_3
       correction_exception_authority: approved_2026_07_19_D_028
       correction_exception_scope: recorded_iteration_3_findings_only
@@ -531,7 +573,7 @@ reviews:
       accessibility_review_iteration_1: revise_0_critical_0_high_2_medium_0_low
       design_review_iteration_2: pass_all_6_prior_findings_closed_1_new_nonblocking_low
       accessibility_review_iteration_2: pass_all_2_prior_findings_closed_no_new_findings
-      residual_follow_up: R_020_reopened_by_BI_A11Y_I3_002
+      residual_follow_up: R_020_closed_by_D_034_evidence_and_D_035_acceptance
       design_review_iteration_3: revise_0_critical_0_high_4_medium_0_low
       accessibility_review_iteration_3: revise_0_critical_0_high_2_medium_1_low
       design_exception_verification: pass_0_critical_0_high_0_medium_0_low
@@ -542,8 +584,31 @@ reviews:
       accessibility_exception_report_sha256: B37412592FF95C2F0E9B1B200FB35F3A34076BCC062B0D27A51CEDB39FF6FA54
       protected_integrity: zero_mismatch_6_reports_31_archive_24_forbidden
       correction_gate: MA-022_accepted_2026_07_20_D_034
-      founder_gate: MA-015
-      founder_approval: pending_reviewed_hybrid
+      founder_gate: MA_015_accepted_2026_07_20_D_035
+      founder_approval: accepted_2026_07_20_D_035
+      implementation_authorized: false
+    ux_architecture:
+      status: accepted
+      final_validation: 113_passes_zero_failures
+      final_producer_package_sha256: 35E0EA46C1099BA271521EF55AFF3E3F83B76FF2E13C7E94387D76757FFC89D3
+      final_design_review: pass_0_critical_0_high_0_medium_0_low
+      final_accessibility_review: pass_0_critical_0_high_0_medium_0_low
+      founder_gate: MA_023_accepted_2026_07_20_D_036
+      founder_approval: accepted_2026_07_20_D_036
+    ui_reference_design_contract:
+      status: accepted
+      producer_revision_iterations_used: 3
+      normal_revision_limit_state: exhausted_3_of_3
+      final_validation: 183_passes_zero_failures
+      final_producer_package_sha256: 97E79201CC36F01718A027AD800E63BDD5AAFC47E41137D65253BAABA6B2120F
+      final_design_review: pass_0_critical_0_high_0_medium_0_low
+      final_design_review_sha256: 66460F9DA5392035CB29AA0F941C0880F9AB5A712A176AC920370D54EFE2BF51
+      final_accessibility_review: pass_0_critical_0_high_0_medium_0_low
+      final_accessibility_review_sha256: C66A96A6C977EA834CD1310D67C3223BA84BD8B0F70336EC754AC468B1CFC346
+      unresolved_critical_high_medium: 0
+      founder_gate: MA-024
+      founder_approval: accepted_2026_09_05_D_037
+      external_design_write_authorized: false
       implementation_authorized: false
   operational_evidence:
     libreoffice_repair_2026_07_19:
@@ -559,13 +624,14 @@ reviews:
       risk_result: R_019_closed_with_fresh_conversion_residual_control
 
 next_action:
-  id: PHASE-1-CONTRACT
-  status: not_started
+  id: MA-025
+  status: awaiting_human
   current_focus: >-
-    Prepare the bounded Phase 1 UI reference-design contract and foundation-surface
-    coverage plan grounded in accepted D-036 UX architecture. Do not begin UI
-    production or any external Figma/Stitch write without its explicit approval.
-    Compatibility separately awaits MA-013; implementation remains blocked.
+    Prepare and obtain founder approval for a bounded external Figma/Stitch
+    reference-screen production contract grounded in the D-037 accepted UI
+    reference-design package. No external write may begin before MA-025 is
+    accepted. Compatibility separately awaits MA-013; implementation remains
+    blocked.
   objective: >-
     Produce and reconcile the complete founder-reviewable product definition, SEO,
     brand, UX/UI, 3D, architecture, API/data, AI, security/privacy, testing,

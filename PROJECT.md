@@ -2,7 +2,7 @@
 
 **Document status:** Phase 0 accepted; Phase 1 definition in progress
 **Classification:** Business confidential
-**Last reconciled:** 2026-07-20
+**Last reconciled:** 2026-09-03
 
 ## Purpose
 
@@ -69,12 +69,15 @@ database, or cloud implementation.
 The founder accepted the bounded Phase 1 UX architecture through D-036 after final
 deterministic validation and independent design/accessibility review. Semantic
 Quick Access and optional 3D journeys now have an accepted definition-level model
-for equivalent content, actions, recovery, and accessibility. The combined UX/UI
-workstream remains in progress because no UI reference-design package exists. The
-next recommended bounded slice is its contract and foundation-surface coverage
-plan; this does not approve UI production, application implementation, public copy,
-publication, or external design writes. Compatibility inventory acceptance remains
-separately pending at MA-013, and the complete Phase 1 package is not accepted.
+for equivalent content, actions, recovery, and accessibility. A reviewed,
+documentation-only UI reference-design contract now covers all 33 routes, nine
+exclusions, 15 wayfinding records, 53 actions, and 45 UX tests through 40 reusable
+templates and 32 responsive/state/accessibility profiles. Its final producer
+freeze passes 183/183 checks and both independent reviews, and awaits founder
+decision at MA-024. No visual reference screen exists yet. UI production,
+application implementation, public copy, publication, and external Figma/Stitch
+writes remain unauthorized. Compatibility inventory acceptance remains separately
+pending at MA-013, and the complete Phase 1 package is not accepted.
 
 ## Service Architecture
 
@@ -164,6 +167,7 @@ definition. The compatibility inventory passed independent review iteration 2 an
 awaits the separate MA-013 founder gate; its exact production locks remain
 deliberately unselected. D-035 accepts the frozen brand identity. D-036 accepts the
 final UX architecture after 113/113 plus independent design and accessibility PASS.
-The next recommended bounded slice is UI reference-design contract and
-foundation-surface coverage planning; UI production, external design writes, and
-application implementation remain unauthorized.
+D-037 accepts the frozen UI reference-design contract and foundation-surface
+coverage package. The exact next action is founder review at MA-025 of a bounded
+external Figma/Stitch production contract. UI production, external design writes,
+and application implementation remain unauthorized until their applicable gates.

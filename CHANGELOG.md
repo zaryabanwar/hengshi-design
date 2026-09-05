@@ -6,6 +6,45 @@ operations.
 
 ## [Unreleased]
 
+### 2026-09-05 — UI reference-design contract accepted
+
+- Recorded the founder's explicit approval as D-037 and closed MA-024 for the
+  exact 13-file producer freeze at SHA-256
+  `97E79201CC36F01718A027AD800E63BDD5AAFC47E41137D65253BAABA6B2120F`.
+- Opened MA-025 as the separate founder gate for a bounded external Figma/Stitch
+  reference-production contract. External writes and implementation remain
+  unauthorized.
+
+### 2026-09-05 — Repository-state ambiguity reconciled
+
+- Corrected the Phase 0 commit fact in `PROJECT_STATE.yaml` and recorded commit
+  `d96ce616350c02667a020bde99edd8ec3e7159d0` as evidence that repository history
+  exists.
+- Clarified that the 2026-07-18 working-tree counts are a preserved historical
+  pre-Phase-0 snapshot, not an assertion about the current working tree.
+- Kept MA-024 at `awaiting_human`; this factual reconciliation does not accept the
+  UI reference-design contract or authorize visual production or implementation.
+
+### 2026-09-03 — UI reference-design contract ready for founder acceptance
+
+- Produced the documentation-only UI reference-design contract under
+  `docs/phase-1-ui-reference-design/` without creating a visual screen, changing
+  application code, or making an external Figma/Stitch write.
+- Covered 33 routes, nine exclusions, 15 wayfinding records, 53 actions, 45 UX
+  tests, 40 reusable templates, 32 responsive/state/accessibility profiles, 62
+  primitives, and nine dependency-ordered future design batches.
+- Closed six design-contract findings and three accessibility-contract findings
+  across the allowed three producer revisions. Final validation passes 183/183;
+  final independent design and accessibility reviews both PASS with zero findings.
+- Froze the 13 producer files at SHA-256
+  `97E79201CC36F01718A027AD800E63BDD5AAFC47E41137D65253BAABA6B2120F`
+  and opened MA-024 for definition-only founder acceptance or bounded change
+  request. No D-037 decision has been created because approval is still pending.
+- Reconciled stale mutable brand-identity state to its existing D-035 acceptance.
+  MA-013, external visual-production authority, final visual direction, complete
+  Phase 1 acceptance, implementation, publication, Git operations, deployment,
+  and launch remain separate gates.
+
 ### 2026-07-20 — UX architecture accepted
 
 - Recorded the founder's explicit `approved whats next? provide list of all phases

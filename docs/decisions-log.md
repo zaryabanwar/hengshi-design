@@ -2,7 +2,7 @@
 
 **Status:** Active authority bridge; Phase 0 accepted and Phase 1 in progress
 **Classification:** Business confidential
-**Last reconciled:** 2026-07-20
+**Last reconciled:** 2026-09-05
 
 This is the detailed decision record required by `docs/PROJECT_RULES.md`. The
 required root operational starting index is [`../DECISIONS.md`](../DECISIONS.md).
@@ -572,6 +572,26 @@ D-036, D-035, D-026, and the accepted foundation. This decision does not authori
 an external Figma/Stitch write; that action requires its own explicit bounded gate.
 Compatibility inventory acceptance remains separately awaiting the founder at
 MA-013.
+
+### D-037 — Accept the Phase 1 UI reference-design contract
+
+The founder explicitly wrote `approved` on 2026-09-05 and confirmed that the
+contracts and stated actions seemed okay after receiving the MA-024 decision
+boundary. This accepts the exact 13-file producer freeze at SHA-256
+`97E79201CC36F01718A027AD800E63BDD5AAFC47E41137D65253BAABA6B2120F`
+and closes MA-024 as accepted.
+
+The accepted package passes 183/183 deterministic checks. Final independent
+design iteration 3 and accessibility iteration 2 both PASS with zero findings at
+every severity. Their SHA-256 values are
+`66460F9DA5392035CB29AA0F941C0880F9AB5A712A176AC920370D54EFE2BF51`
+and `C66A96A6C977EA834CD1310D67C3223BA84BD8B0F70336EC754AC468B1CFC346`.
+
+D-037 accepts the documentation contract only. It opens preparation of MA-025,
+the bounded external Figma/Stitch reference-production authorization. It does not
+authorize an external design write, application/UI/3D implementation, exact
+public or legal copy, paid assets, publication, deployment, complete Phase 1
+acceptance, or launch. Compatibility MA-013 remains separate.
 
 ## Governance Amendment Result
 

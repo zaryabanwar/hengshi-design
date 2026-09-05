@@ -1,7 +1,7 @@
 # Hengshi Design Manual Actions
 
 **Classification:** Business confidential
-**Last reconciled:** 2026-07-20
+**Last reconciled:** 2026-09-03
 
 This file contains non-secret actions that require a person, external account
 authority, or an explicit founder gate. Never paste or store passwords, OAuth
@@ -461,6 +461,65 @@ the gate. D-036 accepts the exact final UX architecture package and closes MA-02
 This does not authorize UI production, an external Figma/Stitch write,
 implementation, publication, Git operations, deployment, complete Phase 1
 acceptance, or launch.
+
+## Phase 1 UI reference-design contract and foundation-surface coverage acceptance
+
+**MANUAL ACTION REQUIRED**
+**ID:** MA-024
+**Status:** accepted
+**Blocking phase/gate:** Phase 1 UI reference visual-production authorization and
+later UI/design work
+**Why a person is required:** Only the founder can accept the complete screen,
+state, breakpoint, mode, content, accessibility, and evidence contract for later
+reference production or request a material revision. Independent design and
+accessibility reviewers cannot grant founder approval.
+**Exact non-secret action:** Choose one emoji: 👍 accepts the exact 13-file producer
+freeze at SHA-256
+`97E79201CC36F01718A027AD800E63BDD5AAFC47E41137D65253BAABA6B2120F`;
+🔁 requests a material revision and must identify the contract area to change. No
+typing is required for approval. Because the normal UI revision limit is exhausted
+at 3/3, a requested material change requires a separately authorized change
+request.
+**Evidence required to resume:** Explicit founder choice recorded in
+`DECISIONS.md`, `docs/decisions-log.md`, `PROJECT_STATE.yaml`, `TASKS.md`,
+`MANUAL_ACTIONS.md`, and `CHANGELOG.md`. The reviewed evidence is validator
+183/183; design report SHA-256
+`66460F9DA5392035CB29AA0F941C0880F9AB5A712A176AC920370D54EFE2BF51`;
+and accessibility report SHA-256
+`C66A96A6C977EA834CD1310D67C3223BA84BD8B0F70336EC754AC468B1CFC346`.
+**Secret-handling rule:** No credentials or secret values are involved.
+
+MA-024 accepts only this documentation contract. It does not approve a visual
+direction or authorize Figma/Stitch production, application/3D implementation,
+exact public/legal copy, assets, publication, paid actions, Git operations,
+deployment, complete Phase 1 acceptance, or launch. If accepted, a separate
+explicit external-design-write gate must be opened before visual production.
+
+**Completion evidence:** On 2026-09-05 the founder explicitly wrote `approved`
+and confirmed that the contracts and stated actions seemed okay. D-037 records
+acceptance of the exact frozen package and closes MA-024.
+
+## Phase 1 external UI reference-production authorization
+
+**MANUAL ACTION REQUIRED**
+**ID:** MA-025
+**Status:** awaiting_human
+**Blocking phase/gate:** External Figma/Stitch reference-screen production
+**Why a person is required:** Producing screens writes project material to an
+external design provider and may consume provider capacity. Contract acceptance
+does not authorize that external operation.
+**Exact non-secret action:** Approve or reject a bounded visual-production
+contract that identifies the provider, batches, write scope, evidence capture,
+review sequence, cost boundary, and stop conditions before any external write.
+**Evidence required to resume:** Explicit founder approval recorded in the durable
+decision and state files, followed by provider authentication and capability
+verification without exposing credentials.
+**Secret-handling rule:** Keep authentication in the provider or OS credential
+store; never copy tokens, cookies, or keys into repository files or chat.
+
+MA-025 will authorize only the approved external reference-screen production
+scope. It will not authorize application implementation, publication, deployment,
+paid assets beyond an approved envelope, or complete Phase 1 acceptance.
 
 ## Legal entity, privacy, and public disclosures
 

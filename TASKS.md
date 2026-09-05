@@ -1,7 +1,7 @@
 # Hengshi Design Delivery Tasks
 
 **State:** Phase 0 accepted; Phase 1 in progress
-**Last reconciled:** 2026-07-20
+**Last reconciled:** 2026-09-03
 **Status vocabulary:** `not_started`, `in_progress`, `blocked`,
 `awaiting_human`, `in_review`, `accepted`
 
@@ -31,7 +31,7 @@ implementation, external writes, spending, or deployment.
 **Coordinating role:** Hengshi project manager
 **Producer/reviewer separation:** required
 
-### Bounded Slice Status — 2026-07-20
+### Bounded Slice Status — 2026-09-03
 
 | Slice | Status | Evidence / next gate |
 |---|---|---|
@@ -40,11 +40,35 @@ implementation, external writes, spending, or deployment.
 | Brand strategy | `accepted` | D-026 records founder approval of Direction A — Evidence in Motion after producer validation 43/43 and a clean independent iteration-2 review. |
 | Brand identity | `accepted` | D-035 records the founder's explicit `approved.` response at MA-015 for the exact frozen Signal Ledger system + Framework Relay logo hybrid. D-034 validation remains 63/63 with clean nine-state browser/a11y evidence and independent design/accessibility PASS. Marks remain unregistered/trademark-not-cleared; no implementation or publication authority is inferred. |
 | UX architecture and accessible journeys | `accepted` | D-036 records the founder's explicit approval of the exact final package under `docs/phase-1-ux-architecture/`: 113/113, 33 routes, nine exclusions, 15 wayfinding entries, 53 action contracts, 45 UX tests, 123 trace rows, and final design/accessibility PASS. No UI/design production or implementation is inferred. |
-| UI reference-design contract and foundation-surface coverage | `not_started` | Recommended next bounded Phase 1 slice. Prepare the contract and coverage plan from D-036/D-035/D-026 and accepted foundation. Do not create production UI or make an external Figma/Stitch write without explicit approval. |
+| UI reference-design contract and foundation-surface coverage | `accepted` | D-037 records founder acceptance of the producer iteration 3/3 freeze at SHA-256 `97E79201CC36F01718A027AD800E63BDD5AAFC47E41137D65253BAABA6B2120F` after validation 183/183 and clean final independent design/accessibility reviews. External visual production now awaits MA-025; no application implementation is authorized. |
 
-Passing the foundation slice does not accept the complete Phase 1 package and
-does not authorize application, dependency, migration, infrastructure, external
-design, publication, Git-history, or deployment work.
+Passing this or any other bounded Phase 1 slice does not accept the complete
+Phase 1 package and does not authorize application, dependency, migration,
+infrastructure, external design, publication, Git-history, or deployment work.
+
+### Completed PM Contract — UI Reference-Design Definition
+
+- **Objective:** define every required future reference template, route/flow
+  instance, state, viewport, mode, evidence unit, and production batch without
+  creating a screen or changing accepted product behavior.
+- **Exclusions:** no Figma/Stitch or other external write, visual production,
+  application/3D code, exact public or legal copy, assets, dependency changes,
+  publication, Git operation, deployment, or complete Phase 1 acceptance.
+- **Deliverables:** 13 frozen producer files under
+  `docs/phase-1-ui-reference-design/`, plus preserved independent review history.
+  The contract covers 33 routes, nine exclusions, 15 wayfinding records, 53
+  actions, 45 UX tests, 40 templates, 32 profiles, 62 primitives, and nine future
+  design batches.
+- **Validation and review:** final deterministic validation passes 183/183;
+  independent design iteration 3 and accessibility iteration 2 both PASS with
+  zero CRITICAL, HIGH, MEDIUM, or LOW findings.
+- **Revision limit:** all three normal UI-contract producer revisions are used.
+  A material change requested at MA-024 requires a separately authorized change
+  request rather than an unbounded fourth revision.
+- **Human gates:** D-037 closes MA-024 and accepts this documentation contract
+  only. MA-025 is the separate explicit approval required before any external
+  Figma/Stitch production or write, and final visual direction remains a later
+  founder gate.
 
 ### Completed PM Contract — UX Architecture and Accessible Journeys
 
