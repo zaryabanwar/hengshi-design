@@ -65,6 +65,40 @@ function Assert-UiStreamRequirementsContract {
     }
 }
 
+function Assert-UiStreamActionContract {
+    param([Parameter(Mandatory)][string]$Text)
+    $rows = [regex]::Matches($Text, '(?m)^\|[ \t]*ACT-09[ \t]+[^|\r\n]+\|(?<success>[^|\r\n]*)\|(?<pending>[^|\r\n]*)\|(?<recovery>[^|\r\n]*)\|[ \t]*\r?$')
+    if ($rows.Count -ne 1) { throw 'Missing or duplicate stream action: ACT-09' }
+    $contracts = @{
+        success = @(
+            'only after explicit Apply activation by Enter, Space, pointer or touch, or native Enter submission of the same form',
+            'group accessible name reports the new in-force stream',
+            'location preserved',
+            'native radio anatomy and advance advisement follow FR-3D-014 and NFR-A11Y-004'
+        )
+        pending = @(
+            'checked radio reports the pending selection',
+            'group accessible name still reports the in-force stream',
+            'Arrow, Tab, pointer and touch selection change only checked state',
+            'no stream application, reload, transition or other accessibility-tree change',
+            'never apply on focus, selection, blur, arrow movement or timeout',
+            'requested stream above the WebGL ceiling; change failure; preference cannot persist'
+        )
+        recovery = @(
+            'remain on the prior stream and say why',
+            'the ceiling is stated, not silently substituted',
+            'persistence failure follows ACT-11 and the choice still applies for the session',
+            'no content loss in any stream'
+        )
+    }
+    foreach ($cell in $contracts.Keys) {
+        $body = ($rows[0].Groups[$cell].Value -replace '[*`]', '') -replace '\s+', ' '
+        foreach ($clause in $contracts[$cell]) {
+            if (-not $body.Contains($clause)) { throw "Stream action contract missing: ${cell}:$clause" }
+        }
+    }
+}
+
 function Assert-UiStreamControlContract {
     param([Parameter(Mandatory)][object[]]$Primitives)
     # These are definition-record checks, not evidence of a rendered accessible UI.

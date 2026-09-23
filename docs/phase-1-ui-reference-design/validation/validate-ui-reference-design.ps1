@@ -429,6 +429,11 @@ try {
 }
 catch { Add-Fail 'stream-control-requirements' $_.Exception.Message }
 try {
+    Assert-UiStreamActionContract -Text (Get-Content -Raw -LiteralPath (Join-Path $repoRoot 'docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md'))
+    Add-Pass 'stream-control-ux-action' 'ACT-09 separates pending selection, explicit Apply success and preserved recovery'
+}
+catch { Add-Fail 'stream-control-ux-action' $_.Exception.Message }
+try {
     $streamMapping = Get-UiStreamMapping -Primitives $primitives -Templates $templates
 }
 catch {

@@ -158,4 +158,20 @@ foreach ($id in @('FR-3D-014', 'NFR-A11Y-004')) {
     $moved = $srs.Replace($row, ($row.Replace("| $id |", "| $id | Description removed |")))
     Reject { Assert-UiStreamRequirementsContract -Text $moved } 'Stream requirement contract missing' "SRS ignores contract relocated to status cell for $id"
 }
+$uxStates = Get-Content -Raw (Join-Path $root 'docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md')
+Assert-UiStreamActionContract -Text $uxStates
+Check $true 'ACT-09 distinguishes pending selection from successful Apply'
+$actionRow = [regex]::Match($uxStates, '(?m)^\| ACT-09 [^\r\n]+').Value
+foreach ($phrase in @('only after explicit Apply activation', 'reports the new in-force stream', 'location preserved', 'native radio anatomy and advance advisement', 'checked radio reports the pending selection', 'still reports the in-force stream', 'change only checked state', 'no stream application, reload, transition', 'never apply on focus', 'requested stream above the WebGL ceiling', 'remain on the prior stream and say why', 'the ceiling is stated, not silently substituted', 'the choice still applies for the session', 'no content loss in any stream')) {
+    $changed = $uxStates.Replace($actionRow, $actionRow.Replace($phrase, 'REMOVED-CONTRACT'))
+    Reject { Assert-UiStreamActionContract -Text $changed } 'Stream action contract missing' "ACT-09 rejects omitted $phrase"
+}
+Reject { Assert-UiStreamActionContract -Text ($uxStates.Replace($actionRow, '')) } 'Missing or duplicate stream action' 'ACT-09 cannot disappear'
+Reject { Assert-UiStreamActionContract -Text ($uxStates + "`n" + $actionRow) } 'Missing or duplicate stream action' 'ACT-09 cannot be duplicated'
+$actionCells = $actionRow.Split('|')
+foreach ($pair in @(@(2,3), @(2,4), @(3,4))) {
+    $cells = $actionCells.Clone()
+    $cells[$pair[0]], $cells[$pair[1]] = $cells[$pair[1]], $cells[$pair[0]]
+    Reject { Assert-UiStreamActionContract -Text ($uxStates.Replace($actionRow, ($cells -join '|'))) } 'Stream action contract missing' "ACT-09 rejects swapped cells $pair"
+}
 Write-Output "RESULT=PASS CHECKS=$script:checks FRAME_OBLIGATIONS=$($frames.Count)"
