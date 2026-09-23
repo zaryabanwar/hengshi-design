@@ -176,6 +176,41 @@ function Assert-UiStreamCoverageContract {
     }
 }
 
+function Assert-UiStreamAcceptanceTraceContract {
+    param([Parameter(Mandatory)][object[]]$Trace)
+    $rows = @($Trace | Where-Object trace_id -CEQ 'TR-TEST-046')
+    if ($rows.Count -ne 1) { throw 'Missing or duplicate stream acceptance trace: TR-TEST-046' }
+    $row = $rows[0]
+    if ($row.source_id -cne 'UXTEST-046' -or $row.source_type -cne 'ux_test' -or
+        $row.source_artifact -cne 'docs/phase-1-ux-architecture/CONTENT_ANALYTICS_TESTS.md') {
+        throw 'Wrong stream acceptance trace source'
+    }
+    foreach ($clause in @(
+        'four native radio inputs sharing one name inside a fieldset with a legend',
+        'separate always-present Apply submit button',
+        'group accessible name reports the in-force stream while the checked radio reports the pending selection',
+        'Apply has a distinct accessible name stating it applies the selection',
+        'selection changes only checked state without applying reloading transitioning or other accessibility-tree changes',
+        'only explicit Apply activation or native Enter submission of the same form',
+        'never apply on focus selection blur arrow movement or timeout',
+        'persistent visible text inside the fieldset before Apply in both DOM reading order and visual order',
+        'programmatically associated with both the group and the Apply button',
+        'not tooltip title hover-only focus-only or accessible-description-only',
+        'same wording in every stream',
+        'applying the pending selection re-enters the experience while preserving current location',
+        'sighted mouse users keyboard users without assistive technology screen-reader users and screen-magnifier users at 400% zoom',
+        'ceiling-excluded streams are disabled with a stated reason rather than hidden',
+        'reachable in all four streams and on ROUTE-HOME first frame in every stream including S-HIGH with the canvas not entered',
+        'without moving focus within a shell and preserves scroll open panel and route',
+        'destination shell stream control and never the document body with the outgoing shell removed from the accessibility tree first',
+        'a held slot a verified email and entered values survives every crossing including the semantic one or the change is refused and explained under ACT-11',
+        'UXTEST-046 execution evidence remains required'
+    )) {
+        if (-not ([string]$row.required_future_evidence).Contains($clause)) { throw "Stream acceptance trace evidence missing: $clause" }
+    }
+    if ($row.status_or_gate -cne 'contracted_future') { throw 'Stream acceptance trace evidence must remain future' }
+}
+
 function Assert-UiStreamTraceContract {
     param([Parameter(Mandatory)][object[]]$Trace)
     $sources = @{ 'TR-REQ-103' = 'NFR-A11Y-004'; 'TR-REQ-111' = 'FR-3D-014' }
@@ -220,6 +255,7 @@ function Assert-UiStreamTraceContract {
             throw "Stream trace evidence must remain future: $id"
         }
     }
+    Assert-UiStreamAcceptanceTraceContract -Trace $Trace
 }
 
 function Assert-UiStreamBatchContract {

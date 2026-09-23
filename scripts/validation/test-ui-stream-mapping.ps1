@@ -256,4 +256,23 @@ Reject { Assert-UiStreamBatchContract -Batches $changed } 'Missing stream batch 
 $changed = Copy-Rows $batches
 ($changed | Where-Object batch_id -CEQ 'B01').status = 'DONE'
 Reject { Assert-UiStreamBatchContract -Batches $changed } 'B01 authorization must remain held' 'definition correction cannot authorize B01'
+# The linked acceptance trace must not lag behind the corrected UXTEST-046.
+foreach ($phrase in @('four native radio inputs', 'always-present Apply submit button', 'in-force stream while the checked radio reports the pending selection', 'Apply has a distinct accessible name', 'selection changes only checked state', 'only explicit Apply activation', 'never apply on focus', 'persistent visible text inside the fieldset', 'both DOM reading order and visual order', 'associated with both the group and the Apply button', 'not tooltip title', 'same wording in every stream', 'preserving current location', 'screen-magnifier users at 400% zoom', 'ceiling-excluded streams are disabled', 'ROUTE-HOME first frame', 'without moving focus within a shell', 'outgoing shell removed from the accessibility tree first', 'a held slot a verified email', 'UXTEST-046 execution evidence remains required')) {
+    $changed = Copy-Rows $trace
+    $row = $changed | Where-Object trace_id -CEQ 'TR-TEST-046'
+    $row.required_future_evidence = $row.required_future_evidence.Replace($phrase, 'REMOVED-CONTRACT')
+    Reject { Assert-UiStreamTraceContract -Trace $changed } 'Stream acceptance trace evidence missing' "TR-TEST-046 rejects missing $phrase"
+}
+$changed = Copy-Rows $trace
+$row = $changed | Where-Object trace_id -CEQ 'TR-TEST-046'
+$row.required_future_evidence = $row.required_future_evidence.Replace('persistent visible text inside the fieldset before Apply in both DOM reading order and visual order', 'visible text adjacent to the control')
+Reject { Assert-UiStreamTraceContract -Trace $changed } 'Stream acceptance trace evidence missing' 'TR-TEST-046 rejects the reviewed adjacent-only regression'
+Reject { Assert-UiStreamTraceContract -Trace @($trace | Where-Object trace_id -CNE 'TR-TEST-046') } 'Missing or duplicate stream acceptance trace' 'TR-TEST-046 cannot disappear'
+Reject { Assert-UiStreamTraceContract -Trace ($trace + @($trace | Where-Object trace_id -CEQ 'TR-TEST-046')) } 'Missing or duplicate stream acceptance trace' 'TR-TEST-046 cannot be duplicated'
+foreach ($field in @('source_id','source_type','source_artifact','status_or_gate')) {
+    $changed = Copy-Rows $trace
+    ($changed | Where-Object trace_id -CEQ 'TR-TEST-046').$field = 'INVALID'
+    $expected = if ($field -ceq 'status_or_gate') { 'Stream acceptance trace evidence must remain future' } else { 'Wrong stream acceptance trace source' }
+    Reject { Assert-UiStreamTraceContract -Trace $changed } $expected "TR-TEST-046 rejects wrong $field"
+}
 Write-Output "RESULT=PASS CHECKS=$script:checks FRAME_OBLIGATIONS=$($frames.Count)"
