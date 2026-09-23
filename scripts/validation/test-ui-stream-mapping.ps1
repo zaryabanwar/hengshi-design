@@ -84,4 +84,34 @@ Reject { Get-UiStreamMapping -Primitives $changed -Templates $templates } 'No co
 
 $batch = Import-Csv (Join-Path $root 'docs/phase-1-ui-reference-production/batch-production-plan.csv') | Where-Object batch_id -CEQ 'B08'
 Check ($batch.stream_disposition -ceq 'S-HIGH=not_present;S-LOW=not_present;S-MEDIUM=not_present;S-SEMANTIC=not_present') 'staff batch has no public stream obligation'
-Write-Output "RESULT=PASS CHECKS=$script:checks"
+$profiles = @(Import-Csv (Join-Path $design 'responsive-state-mode-matrix.csv'))
+$frames = @(Get-UiFrameObligations -Mapping $mapping -Templates $templates -Profiles $profiles)
+$keys = @($frames | ForEach-Object { "$($_.template_id)|$($_.state_id)|$($_.stream_id)" })
+Check (@($keys | Sort-Object -Unique -CaseSensitive).Count -eq $keys.Count) 'baseline and critical state duplicates collapse to one obligation'
+foreach ($t in $templates) {
+    if ($t.template_id -cin $staff) {
+        $owned = @($frames | Where-Object template_id -CEQ $t.template_id)
+        Check ($owned.Count -eq 1 -and $owned[0].stream_id -ceq 'STREAM-SCOPE-EXCLUDED') ("staff baseline evidence: " + $t.template_id)
+        continue
+    }
+    foreach ($state in @('STATE-STREAM-CHANGED','STATE-PREFERENCE-WRITE-FAILED')) {
+        foreach ($stream in $mapping.TemplatePresence[$t.template_id]) {
+            Check ("$($t.template_id)|$state|$stream" -cin $keys) ("required state frame: $($t.template_id) $state $stream")
+        }
+    }
+}
+Check (@($frames | Where-Object template_id -CEQ 'TPL-BOOKING-QUALIFICATION').Count -eq 12) 'booking has baseline plus two critical states in all four streams'
+foreach ($state in @('STATE-STREAM-CHANGED','STATE-PREFERENCE-WRITE-FAILED')) {
+    $changed = Copy-Rows $profiles
+    $booking = $changed | Where-Object profile_id -CEQ 'SP-BOOKING'
+    $booking.critical_distinct_frame_values = @($booking.critical_distinct_frame_values.Split(';') | Where-Object { $_ -cne $state }) -join ';'
+    Reject { Get-UiFrameObligations -Mapping $mapping -Templates $templates -Profiles $changed } 'Missing critical stream state' "required-only $state must fail"
+    $booking.required_values = @($booking.required_values.Split(';') | Where-Object { $_ -cne $state }) -join ';'
+    Reject { Get-UiFrameObligations -Mapping $mapping -Templates $templates -Profiles $changed } 'Missing required stream state' "removed $state must fail"
+}
+$changed = @($profiles | Where-Object profile_id -CNE 'DS-S-MEDIUM')
+Reject { Get-UiFrameObligations -Mapping $mapping -Templates $templates -Profiles $changed } 'Missing stream profile' 'stream evidence definitions cannot disappear'
+$changed = Copy-Rows $profiles
+($changed | Where-Object profile_id -CEQ 'SP-BOOKING').critical_distinct_frame_values += ';STATE-INVENTED'
+Reject { Get-UiFrameObligations -Mapping $mapping -Templates $templates -Profiles $changed } 'Critical state is not required' 'unknown critical state cannot produce evidence'
+Write-Output "RESULT=PASS CHECKS=$script:checks FRAME_OBLIGATIONS=$($frames.Count)"

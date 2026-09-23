@@ -483,23 +483,26 @@ Assert-True ($a05.Count -eq 0) 'route-immersive-representation-agreement' 'every
 # (template, stream-critical coordinate, stream) triple; the prohibition is that no
 # obligation names more than one stream and no two streams collapse onto one
 # obligation.
-$streamCritical = @($streamProfiles | ForEach-Object { Split-List $_.critical_distinct_frame_values } | Where-Object { $_ -clike 'STATE-*' } | Sort-Object -Unique)
 $profileByIdA = @{}
 foreach ($m in $matrix) { $profileByIdA[$m.profile_id] = $m }
+try {
+    $frameObligations = @(Get-UiFrameObligations -Mapping $streamMapping -Templates $templates -Profiles $matrix)
+}
+catch {
+    Add-Fail 'stream-state-frame-obligations' $_.Exception.Message
+    Write-Output ("RESULT=FAIL PASS_COUNT={0} FAIL_COUNT={1}" -f $script:PassCount, $script:Failures.Count)
+    exit 1
+}
 $a06 = [System.Collections.Generic.List[string]]::new()
 $obligations = [System.Collections.Generic.HashSet[string]]::new()
-foreach ($t in $templates) {
-    $sp = $profileByIdA[$t.state_profile]
-    $coords = @(Split-List $sp.required_values | Where-Object { $_ -cin $streamCritical })
-    foreach ($c in $coords) {
-        foreach ($s in $templatePresence[$t.template_id]) {
-            $key = "{0}|{1}|{2}" -f $t.template_id, $c, $s
-            if (@($key -split '\|')[2] -cnotin $legalStreams) { $a06.Add(("{0}:not-single-stream" -f $key)) }
-            if (-not $obligations.Add($key)) { $a06.Add(("{0}:collapsed" -f $key)) }
-        }
+foreach ($frame in $frameObligations) {
+    $key = "{0}|{1}|{2}" -f $frame.template_id, $frame.state_id, $frame.stream_id
+    if ($frame.stream_id -cnotin @('S-HIGH','S-LOW','S-MEDIUM','S-SEMANTIC','STREAM-SCOPE-EXCLUDED')) {
+        $a06.Add(("{0}:invalid-scope" -f $key))
     }
+    if (-not $obligations.Add($key)) { $a06.Add(("{0}:collapsed" -f $key)) }
 }
-Assert-True ($a06.Count -eq 0) 'stream-sharing-prohibition' 'every stream-critical obligation names exactly one stream and no two streams share an obligation' ("errors={0}" -f ($a06 -join ';'))
+Assert-True ($a06.Count -eq 0) 'stream-sharing-prohibition' 'baseline and critical-state obligations use distinct template state and evidence-scope keys' ("errors={0}" -f ($a06 -join ';'))
 
 # --- A-07 stream-control-host-completeness ---------------------------------
 # N-01. A template that lists no host shell has no surface on which the stream
@@ -535,9 +538,10 @@ foreach ($t in $templates) {
     if (@(Split-List $t.primitive_dependencies | Where-Object { $_ -cin $controlHosts }).Count -eq 0) { continue }
     $sp = $profileByIdA[$t.state_profile]
     $vals = @(Split-List $sp.required_values)
-    foreach ($s in $requiredStreamStates) { if ($s -cnotin $vals) { $a08.Add(("{0}:{1}:{2}" -f $t.template_id, $t.state_profile, $s)) } }
+    $criticalVals = @(Split-List $sp.critical_distinct_frame_values)
+    foreach ($s in $requiredStreamStates) { if ($s -cnotin $vals -or $s -cnotin $criticalVals) { $a08.Add(("{0}:{1}:{2}" -f $t.template_id, $t.state_profile, $s)) } }
 }
-Assert-True ($a08.Count -eq 0) 'stream-state-availability' 'every template hosted by a stream-control surface selects a state profile offering the stream-changed and preference-write-failed states' ("missing={0}" -f (($a08 | Sort-Object -Unique) -join ';'))
+Assert-True ($a08.Count -eq 0) 'stream-state-availability' 'every control-hosted template requires distinct frames for stream-changed and preference-write-failed states' ("missing={0}" -f (($a08 | Sort-Object -Unique) -join ';'))
 
 # --- A-09 stream-mode-precedence-resolution --------------------------------
 # Closes accessibility finding S-05. Where the mode axis excludes a mode that a

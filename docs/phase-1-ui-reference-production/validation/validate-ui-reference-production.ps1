@@ -663,9 +663,11 @@ Assert-That -Name 'A-12:evidence-id-grammar-accepts-a-well-formed-id' `
 $designPrimitives = @(Import-Csv -LiteralPath (Join-Path $acceptedRoot 'component-primitives.csv'))
 $designTemplates  = @(Import-Csv -LiteralPath (Join-Path $acceptedRoot 'reference-template-inventory.csv'))
 $designBatches    = @(Import-Csv -LiteralPath (Join-Path $acceptedRoot 'design-batch-plan.csv'))
+$designProfiles   = @(Import-Csv -LiteralPath (Join-Path $acceptedRoot 'responsive-state-mode-matrix.csv'))
 . (Join-Path $repoRoot 'scripts/validation/ui-stream-mapping.ps1')
 try {
     $streamMapping = Get-UiStreamMapping -Primitives $designPrimitives -Templates $designTemplates
+    $frameObligations = @(Get-UiFrameObligations -Mapping $streamMapping -Templates $designTemplates -Profiles $designProfiles)
 }
 catch {
     Assert-That -Name 'A-13:template-stream-mapping' -Condition $false -Detail $_.Exception.Message
@@ -735,12 +737,14 @@ Write-Output ("INERT-REPORT batch-production-plan.csv:stream_disposition distinc
 $obligedList = [System.Collections.Generic.List[string]]::new()
 foreach ($row in $batchRows) {
     foreach ($t in (Get-BatchTemplateIds -DesignBatch $designBatchById[$row.batch_id])) {
-        foreach ($s in @(Get-UiEvidenceScopes -Mapping $streamMapping -TemplateId $t)) { $obligedList.Add(("{0}|{1}|{2}" -f $row.batch_id, $t, $s)) }
+        foreach ($frame in @($frameObligations | Where-Object template_id -CEQ $t)) {
+            $obligedList.Add(("{0}|{1}|{2}|{3}" -f $row.batch_id, $t, $frame.state_id, $frame.stream_id))
+        }
     }
 }
 $obliged = @($obligedList | Sort-Object -Unique)
 Assert-That -Name 'A-14:per-stream-obligation-set-is-non-empty' -Condition ($obliged.Count -gt 0) `
-    -Detail ("obliged (batch|template|stream) triples={0}" -f $obliged.Count)
+    -Detail ("obliged (batch|template|state|stream) coordinates={0}" -f $obliged.Count)
 $manifestPath = Join-Path $packageRoot 'evidence-manifest.csv'
 $manifestRows = @()
 if (Test-Path -LiteralPath $manifestPath -PathType Leaf) { $manifestRows = @(Import-Csv -LiteralPath $manifestPath) }
@@ -751,7 +755,13 @@ $invalidScopeRows = @($manifestRows | Where-Object {
 })
 Assert-That -Name 'A-14:manifest-evidence-scope-resolution' -Condition ($invalidScopeRows.Count -eq 0) `
     -Detail ("invalid evidence scopes={0}" -f $invalidScopeRows.Count)
-$satisfied = @($manifestRows | ForEach-Object { "{0}|{1}|{2}" -f $_.batch_id, $_.template_id, $_.stream_id })
+$satisfied = @($manifestRows | ForEach-Object {
+    $match = [regex]::Match($_.evidence_id, $evidenceIdPattern)
+    if ($match.Success) {
+        $state = 'STATE-' + $match.Groups[3].Value.Replace('_','-')
+        "{0}|{1}|{2}|{3}" -f $_.batch_id, $_.template_id, $state, $_.stream_id
+    }
+})
 $unmet = @($obliged | Where-Object { $_ -cnotin $satisfied })
 $executable = @($batchRows | Where-Object { $_.ma_025_disposition -eq 'authorized_pilot' })
 Assert-That -Name 'A-14:unmet-per-stream-obligations-are-explained-by-held-authorization' `
