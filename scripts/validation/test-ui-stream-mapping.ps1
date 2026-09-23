@@ -275,4 +275,40 @@ foreach ($field in @('source_id','source_type','source_artifact','status_or_gate
     $expected = if ($field -ceq 'status_or_gate') { 'Stream acceptance trace evidence must remain future' } else { 'Wrong stream acceptance trace source' }
     Reject { Assert-UiStreamTraceContract -Trace $changed } $expected "TR-TEST-046 rejects wrong $field"
 }
+# B-02: independently bind each recovery state to its approved profile applicability.
+$recoveryCases = @(
+    @{ state='STATE-PREFERENCE-READ-FAILED'; profiles=@('SP-NAVIGATION','SP-FIRST-VISIT','SP-RETURN-VISIT') },
+    @{ state='STATE-STREAM-CEILING-REFUSED'; profiles=@('SP-NAVIGATION','SP-WORLD') }
+)
+foreach ($case in $recoveryCases) {
+    foreach ($id in $case.profiles) {
+        foreach ($column in @('required_values','critical_distinct_frame_values')) {
+            $changed = Copy-Rows $profiles
+            $row = $changed | Where-Object profile_id -CEQ $id
+            $row.$column = @($row.$column.Split(';') | Where-Object { $_ -cne $case.state }) -join ';'
+            $expected = if ($column -ceq 'required_values') { 'Missing required recovery state' } else { 'Missing critical recovery state' }
+            Reject { Get-UiFrameObligations -Mapping $mapping -Templates $templates -Profiles $changed } $expected "$id cannot lose $($case.state) from $column"
+        }
+        # Removing both declarations used to silently shrink the generated frame set.
+        $row.required_values = @($row.required_values.Split(';') | Where-Object { $_ -cne $case.state }) -join ';'
+        Reject { Get-UiFrameObligations -Mapping $mapping -Templates $templates -Profiles $changed } 'Missing required recovery state' "$id cannot erase the recovery obligation"
+        Reject { Get-UiFrameObligations -Mapping $mapping -Templates $templates -Profiles @($profiles | Where-Object profile_id -CNE $id) } 'Missing recovery state profile' "$id cannot disappear"
+        $changed = Copy-Rows $profiles
+        ($changed | Where-Object profile_id -CEQ $id).dimension = 'mode'
+        Reject { Get-UiFrameObligations -Mapping $mapping -Templates $templates -Profiles $changed } 'Missing recovery state profile' "$id must remain a state profile"
+        $consumers = @($templates | Where-Object state_profile -CEQ $id)
+        Check ($consumers.Count -gt 0) "$id has frame consumers"
+        foreach ($t in $consumers) {
+            foreach ($stream in $mapping.TemplatePresence[$t.template_id]) {
+                Check ("$($t.template_id)|$($case.state)|$stream" -cin $keys) "recovery frame: $($t.template_id) $($case.state) $stream"
+            }
+        }
+    }
+    $changed = Copy-Rows $profiles
+    foreach ($row in @($changed | Where-Object dimension -CEQ 'stream')) {
+        $row.critical_distinct_frame_values = @($row.critical_distinct_frame_values.Split(';') | Where-Object { $_ -cne $case.state }) -join ';'
+    }
+    Reject { Get-UiFrameObligations -Mapping $mapping -Templates $templates -Profiles $changed } 'Missing recovery stream state' "$($case.state) cannot disappear from the stream intersection"
+    Check (@($frames | Where-Object { $_.template_id -ceq 'TPL-BOOKING-QUALIFICATION' -and $_.state_id -ceq $case.state }).Count -eq 0) "unrelated booking profile does not inherit $($case.state)"
+}
 Write-Output "RESULT=PASS CHECKS=$script:checks FRAME_OBLIGATIONS=$($frames.Count)"

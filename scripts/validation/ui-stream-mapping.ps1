@@ -451,6 +451,27 @@ function Get-UiFrameObligations {
             throw "Missing stream profile: $id"
         }
     }
+    # OBL-STATE-01 assigns recovery states to specific profiles, not every page.
+    # Validate independently of the intersection so deleting a state cannot hide its frames.
+    $recoveryProfiles = @{
+        'STATE-PREFERENCE-READ-FAILED' = @('SP-NAVIGATION','SP-FIRST-VISIT','SP-RETURN-VISIT')
+        'STATE-STREAM-CEILING-REFUSED' = @('SP-NAVIGATION','SP-WORLD')
+    }
+    foreach ($state in $recoveryProfiles.Keys) {
+        if ($state -cnotin $streamCritical) { throw "Missing recovery stream state: $state" }
+        foreach ($id in $recoveryProfiles[$state]) {
+            if (-not $profilesById.ContainsKey($id) -or $profilesById[$id].dimension -cne 'state') {
+                throw "Missing recovery state profile: $id"
+            }
+            $profile = $profilesById[$id]
+            if ($state -cnotin $profile.required_values.Split(';')) {
+                throw "Missing required recovery state: ${id}:$state"
+            }
+            if ($state -cnotin $profile.critical_distinct_frame_values.Split(';')) {
+                throw "Missing critical recovery state: ${id}:$state"
+            }
+        }
+    }
     foreach ($t in $Templates) {
         if (-not $profilesById.ContainsKey($t.state_profile)) { throw "Unknown state profile: $($t.template_id)" }
         $profile = $profilesById[$t.state_profile]

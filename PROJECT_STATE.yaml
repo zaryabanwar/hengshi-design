@@ -9,21 +9,21 @@ engineering_contract: AGENTS.md
 current_work: PROJECT_STATE.yaml
 checkpoint:
   branch: main
-  base_head: 17a7dd36c180d79949421f3e525f3a4e8a93bc73
+  base_head: 3d767cf95f5803d679c6fd53875c6497ddc96d0f
   historical_state: docs/archive/PROJECT_STATE-2026-09-23-pre-recovery.yaml
-  working_tree: bounded_TRTEST046_correction_and_B04_recheck
+  working_tree: bounded_B02_recovery_state_validation
   runtime: not_started_documentation_slice
   application_code_changed_this_slice: false
   commit_authorized: true
 current_task:
-  id: STREAM-CONTROL-ACCEPTANCE-TRACE-CORRECTION
-  outcome: TR-TEST-046 matches its source and rejects the adjacent-only regression
+  id: STREAM-RECOVERY-STATE-VALIDATION
+  outcome: Required recovery states cannot silently disappear from frame obligations
   status: DONE
   authority: founder_correct_and_continue_2026_09_24_and_standing_commit_push_approval
   implementation: scripts/validation/ui-stream-mapping.ps1
   regression_test: scripts/validation/test-ui-stream-mapping.ps1
   verification:
-    mapping_and_frame_checks: 925_pass_0_fail
+    mapping_and_frame_checks: 987_pass_0_fail
     base_frame_obligations: 440
     design_validator: 208_pass_0_fail
     production_validator: 167_pass_0_fail
@@ -32,14 +32,14 @@ current_task:
     world_templates_three_streams: 4
     staff_templates_excluded_with_evidence_scope: 6
   independent_review: DONE
-  finding_status: { B04_definition: DONE }
+  finding_status: { B04_definition: DONE, B02: DOING }
   prior_review_gate: MA-029
   design_review: docs/phase-1-ui-reference-design/reviews/design-review-iteration-6.md
   accessibility_review: docs/phase-1-ui-reference-design/accessibility/accessibility-audit-iteration-5.md
-  unverified_work: other_D045_findings_and_runtime_accessibility
+  unverified_work: B02_batch_requirement_trace_and_acceptance_coverage_other_D045_findings_runtime_accessibility
   commit: enclosing_commit
   manual_action: MANUAL_ACTIONS.md
-next_safe_action: Reconcile B02 preference-read-failure and ceiling-refusal state coverage
+next_safe_action: Reconcile B02 recovery-state evidence in design and production batch plans
 boundaries:
   figma_calls: explicit_per_call_approval_required
   figma_production: B01_held
