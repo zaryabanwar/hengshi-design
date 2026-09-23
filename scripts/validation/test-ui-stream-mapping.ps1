@@ -187,4 +187,27 @@ Reject { Assert-UiStreamAcceptanceContract -Text ($uxTests + "`n" + $acceptanceR
 $acceptanceCells = $acceptanceRow.Split('|')
 $acceptanceCells[2], $acceptanceCells[3] = $acceptanceCells[3], $acceptanceCells[2]
 Reject { Assert-UiStreamAcceptanceContract -Text ($uxTests.Replace($acceptanceRow, ($acceptanceCells -join '|'))) } 'Stream acceptance contract missing' 'UXTEST-046 criteria cannot be supplied by its title'
+$flows = @(Import-Csv (Join-Path $design 'foundation-flow-coverage.csv'))
+Assert-UiStreamCoverageContract -Flows $flows
+Check $true 'COV-ACT-09 matches explicit Apply and truthful recovery'
+$coverageMutations = @{
+    success_or_expected_state = @('only after explicit Apply', 'new in-force stream', 'only after a successful preference write', 'announced politely without interrupting', 'within a shell', 'across the semantic boundary', 'scroll, open panel and route preserved', 'control anatomy and advance advisement')
+    error_empty_pending_state = @('checked radio reports the pending selection', 'still reports the in-force stream', 'selection changes only checked state', 'no accessibility-tree change beyond checked state', 'never apply on focus', 'change failure; preference write failure')
+    recovery = @('never silently substituted', 'retain the prior stream', 'choice applies for the current session', 'explained without blocking', 'no destination and no content is lost')
+}
+foreach ($column in $coverageMutations.Keys) {
+    foreach ($phrase in $coverageMutations[$column]) {
+        $changed = Copy-Rows $flows
+        $target = $changed | Where-Object coverage_id -CEQ 'COV-ACT-09'
+        $target.$column = $target.$column.Replace($phrase, 'REMOVED-CONTRACT')
+        Reject { Assert-UiStreamCoverageContract -Flows $changed } 'Stream coverage contract missing' "COV-ACT-09 rejects omitted $phrase"
+    }
+}
+$coverage = $flows | Where-Object coverage_id -CEQ 'COV-ACT-09'
+Reject { Assert-UiStreamCoverageContract -Flows @($flows | Where-Object coverage_id -CNE 'COV-ACT-09') } 'Missing or duplicate stream coverage' 'COV-ACT-09 cannot disappear'
+Reject { Assert-UiStreamCoverageContract -Flows ($flows + $coverage) } 'Missing or duplicate stream coverage' 'COV-ACT-09 cannot be duplicated'
+$changed = Copy-Rows $flows
+$target = $changed | Where-Object coverage_id -CEQ 'COV-ACT-09'
+$target.success_or_expected_state, $target.error_empty_pending_state = $target.error_empty_pending_state, $target.success_or_expected_state
+Reject { Assert-UiStreamCoverageContract -Flows $changed } 'Stream coverage contract missing' 'COV-ACT-09 cannot swap success and pending'
 Write-Output "RESULT=PASS CHECKS=$script:checks FRAME_OBLIGATIONS=$($frames.Count)"

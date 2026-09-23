@@ -439,6 +439,11 @@ try {
 }
 catch { Add-Fail 'stream-control-ux-acceptance' $_.Exception.Message }
 try {
+    Assert-UiStreamCoverageContract -Flows $flows
+    Add-Pass 'stream-control-flow-coverage' 'COV-ACT-09 distinguishes pending selection, explicit Apply and truthful recovery'
+}
+catch { Add-Fail 'stream-control-flow-coverage' $_.Exception.Message }
+try {
     $streamMapping = Get-UiStreamMapping -Primitives $primitives -Templates $templates
 }
 catch {

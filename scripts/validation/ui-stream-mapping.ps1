@@ -136,6 +136,46 @@ function Assert-UiStreamAcceptanceContract {
     }
 }
 
+function Assert-UiStreamCoverageContract {
+    param([Parameter(Mandatory)][object[]]$Flows)
+    $rows = @($Flows | Where-Object coverage_id -CEQ 'COV-ACT-09')
+    if ($rows.Count -ne 1) { throw 'Missing or duplicate stream coverage: COV-ACT-09' }
+    $contracts = @{
+        success_or_expected_state = @(
+            'applied only after explicit Apply activation or native Enter submission of the same form',
+            'group accessible name reports the new in-force stream',
+            'persistence is reported only after a successful preference write',
+            'announced politely without interrupting',
+            'focus stays on the operated control within a shell',
+            'across the semantic boundary focus moves to the destination shell delivery stream control reporting the new stream',
+            'scroll, open panel and route preserved',
+            'control anatomy and advance advisement follow FR-3D-014 and NFR-A11Y-004'
+        )
+        error_empty_pending_state = @(
+            'checked radio reports the pending selection',
+            'group accessible name still reports the in-force stream',
+            'selection changes only checked state without applying a stream, reloading or initiating a transition',
+            'no accessibility-tree change beyond checked state',
+            'never apply on focus, selection, blur, arrow movement or timeout',
+            'Chosen stream above the WebGL ceiling; change failure; preference write failure'
+        )
+        recovery = @(
+            'Selection is bounded by the WebGL ceiling and is never silently substituted',
+            'on change failure retain the prior stream and explain why',
+            'on write failure the choice applies for the current session',
+            'persistence failure is explained without blocking, following the ACT-11 pattern',
+            'no destination and no content is lost in any stream'
+        )
+    }
+    foreach ($column in $contracts.Keys) {
+        $property = $rows[0].PSObject.Properties[$column]
+        $body = if ($null -eq $property) { '' } else { [string]$property.Value }
+        foreach ($clause in $contracts[$column]) {
+            if (-not $body.Contains($clause)) { throw "Stream coverage contract missing: ${column}:$clause" }
+        }
+    }
+}
+
 function Assert-UiStreamControlContract {
     param([Parameter(Mandatory)][object[]]$Primitives)
     # These are definition-record checks, not evidence of a rendered accessible UI.
