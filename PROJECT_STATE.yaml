@@ -9,17 +9,17 @@ engineering_contract: AGENTS.md
 current_work: PROJECT_STATE.yaml
 checkpoint:
   branch: main
-  base_head: 5740608aa43bdbe605b97dbb41f00c0cb6bc089e
+  base_head: 26f660fe428aa787a03a5ae0c917b55cd6d82c1a
   historical_state: docs/archive/PROJECT_STATE-2026-09-23-pre-recovery.yaml
-  working_tree: bounded_stream_control_B01_evidence_slice
+  working_tree: B04_cross_record_review_checkpoint_only
   runtime: not_started_documentation_slice
   application_code_changed_this_slice: false
   commit_authorized: true
 current_task:
-  id: STREAM-CONTROL-BATCH-EVIDENCE-CONTRACT
-  outcome: B01 specifies approved control evidence and stays unauthorized
+  id: STREAM-CONTROL-CONSISTENCY-REVIEW
+  outcome: Review identifies stale TR-TEST-046 despite repaired original B04 loci
   status: DONE
-  authority: founder_start_2026_09_24_and_standing_commit_push_approval
+  authority: founder_continue_2026_09_24_and_standing_commit_push_approval
   implementation: scripts/validation/ui-stream-mapping.ps1
   regression_test: scripts/validation/test-ui-stream-mapping.ps1
   verification:
@@ -31,14 +31,14 @@ current_task:
     public_templates_four_streams: 30
     world_templates_three_streams: 4
     staff_templates_excluded_with_evidence_scope: 6
-  independent_review: PASS_B04_B01_scope_2026_09_24
+  independent_review: DONE
   prior_review_gate: MA-029
   design_review: docs/phase-1-ui-reference-design/reviews/design-review-iteration-6.md
   accessibility_review: docs/phase-1-ui-reference-design/accessibility/accessibility-audit-iteration-5.md
-  unverified_work: B04_cross_record_consistency_review_and_other_D045_findings
+  unverified_work: TR_TEST046_contract_and_guard_correction_then_B04_closure_and_other_D045_findings
   commit: enclosing_commit
   manual_action: MANUAL_ACTIONS.md
-next_safe_action: Independently review B04 consistency across the amended control records
+next_safe_action: Align TR-TEST-046 future evidence with UXTEST-046 and add regression coverage
 boundaries:
   figma_calls: explicit_per_call_approval_required
   figma_production: B01_held
