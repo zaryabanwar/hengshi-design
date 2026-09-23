@@ -593,6 +593,404 @@ authorize an external design write, application/UI/3D implementation, exact
 public or legal copy, paid assets, publication, deployment, complete Phase 1
 acceptance, or launch. Compatibility MA-013 remains separate.
 
+## D-038 — MA-025 accepted; external Figma production authorized under a rationed call budget
+
+**Date:** 2026-09-06 **Status:** Approved
+
+The founder approved MA-025, accepting the nine-file producer freeze at SHA-256
+`E3786F14C9F12CBF8127A18E7959881B91A9ECC5DC11BBE3E466BCEC6C7EC08D`.
+Batches **B01, B02, B03, B04, B05, B06, and B08** are authorized. Figma is the sole
+production and evidence provider.
+
+Capability enablement completed by Path A. The Figma MCP server, registered at user
+scope so no endpoint or credential enters the repository, was authenticated by the
+founder and its tools bound into a restarted session. `whoami` served as the §3.5
+capability test: read-only, canvas-untouched, and documented as exempt from rate
+limits. The account holds a **Full seat on the `starter` tier**.
+
+That test exposed a constraint the contract had deliberately refused to assume. Of
+the five free-tier limits recorded in §7.2 as `[MUST VERIFY AT GATE]`, one is now
+verified from the provider's own access documentation: the MCP tool-call allowance
+for a Full seat on Starter is **20 calls per calendar month**. The Starter column
+spans both seat rows, and the provider's upgrade text states the figure outright.
+The remaining four limits are still unverified and still unasserted.
+
+Against that allowance, the contracted evidence floor — one `EC-25` inventory read
+plus `EC-28` and `EC-29` archive exports per batch, across seven batches — is
+**21 calls**, exceeding a single month before any frame is captured. Realistic
+demand runs to the hundreds. Stop condition `SC-05` fired with programme scope. The
+producer halted, reported the exact shortfall, made no purchase, and proposed none.
+
+Shown the verified limit, the founder directed: **"stay on course we will use 20
+calls per month very precisely."** `SC-05` is therefore **resolved, not waived**.
+The accepted consequence is recorded plainly: the seven batches will span multiple
+calendar months, and no schedule may be stated until B01 measures real consumption.
+
+Rationing became a governed instrument rather than an intention.
+`validation/mcp-call-budget.csv` carries `CB-01`…`CB-15` and
+`validation/mcp-call-ledger.csv` counts every call. `CB-02` records that write-tool
+exemption is **NOT ASSERTED** — the provider's general claim that write tools are
+exempt does not agree in scope with its list of only three exempt tools — so every
+call is assumed metered until measured. `CB-11` and `CB-12` forbid restoring
+allowance by purchase, second account, second seat, or trial. `CB-06` and `CB-07`
+remain open founder allocation decisions rather than producer defaults.
+
+B01 keeps its gated-pilot status and gains a second purpose at no extra cost: it is
+the metering experiment, and must report total calls, calls by tool, any rate-limit
+response, and a measured per-batch projection.
+
+The validator's pre-approval boundary assertions were superseded rather than
+deleted. It now derives an explicit `PRE_APPROVAL`/`POST_APPROVAL` state from the
+gate's ledger status — the R-024 lesson that an authorized mutable input must never
+be asserted immutable — and post-approval requires the capability evidence, budget,
+and ledger it previously forbade.
+
+D-038 does not authorize B07, B09, `docs/ui/UI_SPEC.md`, the final visual
+direction, application or 3D implementation, exact public or legal copy, paid
+assets, publication, Git operations, deployment, complete Phase 1 acceptance, or
+launch. No canvas write has occurred. Compatibility MA-013 remains separate.
+
+## D-039 — MA-027 accepted; CR-002 Option A adopts four peer delivery streams
+
+**Date:** 2026-09-06 **Status:** Approved
+
+The founder approved **Option A** of `docs/requirements/CHANGE_REQUEST_CR-002.md`
+as written, closing MA-027.
+
+Four **peer** delivery streams — high, medium, low, and no-WebGL/semantic — are now
+the authorized model. They carry equivalent core journeys across the accepted route
+inventory, selected by device capability and connection, with a user override and
+accessibility-preference precedence. This supersedes the accepted baseline in which
+3D was an optional enhancement and the non-WebGL path a degradation. The semantic
+stream is a peer, not a fallback.
+
+B07 is reclassified from optional to **core**. It nonetheless **remains deferred to
+MA-026**, because the 3D storyboard workstream is still `not_started`.
+Reclassification raises its importance; it does not unblock it, and `SC-10`
+continues to refuse B07 and B09 under MA-025.
+
+Approval **opens** the CR-002 revision window; it does not perform it. D-036,
+D-037, `design-batch-plan.csv` B07, `3D_Mega_Menu_Style_Guide_v2.md` §8.2, and SRS
+`FR-3D-010` are unedited. The `/credits` 34th-route reconciliation tracked by R-032
+is assigned to that window, since the CC BY 4.0 obligation does not vary by stream
+and must appear in all four.
+
+The three uncertainties survive approval unchanged. `U-01` and `U-02`, browser
+support for connection and device-capability signals, and `U-03`, the tier
+thresholds, remain `[MUST VERIFY AT SPECIFICATION]` against Context7 and official
+primary documentation. R-030 stands: if portable stream selection proves
+unachievable, work stops and Option B returns to the founder rather than an
+unsupported mechanism being invented. **No schedule estimate is offered.**
+
+Application and 3D implementation remain blocked until complete Phase 1 approval.
+
+## D-040 — CR-002 revision window executed; stream-selection precedence set
+
+**Date:** 2026-09-06  **Status:** Approved
+
+D-039 opened the CR-002 revision window. This decision performs it and settles the
+one thing verification could not: the rule that turns browser signals into a stream.
+
+### What the founder decided
+
+Selection is evaluated strictly in order, and each step may only narrow what later
+steps are allowed to choose.
+
+1. **WebGL capability probe — hard ceiling.** No WebGL context means `S-SEMANTIC`,
+   and nothing later may raise it. Capability is a fact about the client, not a
+   preference.
+2. **`prefers-reduced-motion` — motion, not stream.** Camera flights, drone entry,
+   and transitions become instant cuts; the stream is unchanged. The setting asks
+   for reduced motion, not reduced content.
+3. **User override — bounded by step 1.** A visitor may always choose a simpler
+   stream, and that choice beats every measurement below it. No visitor may select
+   above the ceiling, so no override can produce an unrenderable screen.
+4. **Device tier from `navigator.hardwareConcurrency`**, the one widely available
+   device signal.
+5. **Unsignalled default is `S-LOW`.** This is the expected path for Firefox and
+   Safari, not an error path.
+6. **One promotion, then locked.** Measured performance may raise the stream once,
+   early; measurement never demotes a visitor away from something already shown.
+
+The through-line is that the rule never promises more than the client has
+demonstrated, and never takes away something already given.
+
+### What was amended
+
+Three separately-accepted packages changed in one bounded slice:
+
+| Artifact | Change |
+|---|---|
+| `3D_Mega_Menu_Style_Guide_v2.md` §8.2 | "Performance Adaptations" degradation ladder replaced by "Delivery Streams": four peers, the verified-signal table, the precedence above, and thresholds left open as `U-03` |
+| `Hengshi_Design_SRS_v3.md` | `FR-3D-010` restated as the `S-SEMANTIC` peer and raised from P2 to **P0**; `FR-3D-011` and `FR-3D-012` added |
+| `design-batch-plan.csv` B07 | "Optional World HUD and Quick Access parity" becomes "Core delivery-stream World HUD and semantic peer parity"; stream-selection evidence added |
+| Seven design-package artifacts | 15 residual "optional World", "optional immersive", and "optional enhancement" framings removed |
+| Route coverage and UX parity CSVs plus both validators | Column `optional_immersive_representation` renamed `immersive_stream_representation` |
+| Foundation, UX, and design packages | `/credits` reconciled as `ROUTE-CREDITS`, the 34th route; `TR-ROUTE-034` added; B02 takes primary ownership; `PRIM-001` now requires a footer attribution link; route counts moved 33 to 34 in three validators |
+
+R-032 and R-034 are closed on exactly the exit evidence each specified.
+
+### Two validator defects surfaced and repaired
+
+Neither was caused by the amendment; both were latent and would have fired on any
+cross-package work.
+
+The design validator's `git-write-scope` asserted that nothing outside its own
+package had changed. That was true only during the package authoring window and is
+necessarily false once an approved change request reaches across packages — the same
+lifecycle error already recorded as **R-024**. It now derives an explicit state,
+`PACKAGE_AUTHORING` or `CR002_REVISION_WINDOW`, from whether D-039 is approved, and
+the post-D-039 branch is an enumerated allowlist rather than a blanket exemption, so
+it still fails on genuinely unrelated writes.
+
+The foundation validator merged git's stderr into the PowerShell error stream with
+`2>&1`. Because this repository stores CRLF blobs under `core.autocrlf=true`, git
+emits a benign "LF will be replaced by CRLF" warning for any modified file, which
+surfaced as a terminating `NativeCommandError` and aborted the run before any
+`RESULT` line was written. It now discards git's stderr and reads the exit code,
+which is what the assertion was ever about.
+
+A new standing assertion, `semantic-stream-peer-framing`, fails the design validator
+if optional or fallback framing for the semantic stream is reintroduced. The
+regression this decision closes cannot silently return.
+
+### What this decision does not do
+
+It does **not** accept the amended package. Constitution principle VII forbids the
+producer approving its own material output, and four passing validators are
+determinism checks, not reviews. No independent design or accessibility review has
+run against the amended artifacts. Founder re-acceptance is required at **MA-028**,
+tracked as **R-035**, and until then the production contract continues to derive its
+authority from the D-037-accepted package and no production batch may rely on a
+change introduced only by this amendment.
+
+The D-037 aggregate moved from
+`97E79201CC36F01718A027AD800E63BDD5AAFC47E41137D65253BAABA6B2120F` to
+`F16093D07D1E2634DB440ED35E4D4648ABF4F6D85C2BCD4E8F9CE5092F9C4AD6`, and the
+production aggregate from `E3786F14...C08D` to `3DF0DBB6...8528`. Every superseded
+value is retained in `producer-inspection.md`, the production contract, and the
+design validator comments rather than overwritten, so the amendment is reversible
+and auditable. Dated artifacts under `reviews/` and `accessibility/` were
+deliberately not rewritten; they are historical evidence of what was inspected, not
+statements about the current package.
+
+Thresholds remain `U-03` and cannot close in Phase 1. **No schedule is offered.**
+Application and 3D implementation remain blocked until complete Phase 1 approval.
+
+## D-041 — MA-028 accepted: the amended CR-002 package carries authority
+
+**Date:** 2026-09-06  **Status:** Approved  **Supersedes:** nothing; completes D-040
+
+The founder approved **MA-028**, the re-acceptance gate opened by D-040. The
+amended D-025, D-036, and D-037 artifacts now carry the authority the
+D-037-accepted package previously held. The production contract no longer derives
+its authority from the superseded package, and production batches may rely on
+changes introduced by the CR-002 amendment. The accepted freeze values are the
+design aggregate
+`F16093D07D1E2634DB440ED35E4D4648ABF4F6D85C2BCD4E8F9CE5092F9C4AD6` and the
+production aggregate
+`3DF0DBB6A6ADFC5FC8A09865A00AB92F27EE91D3F418E4368BA9B17033358528`.
+
+**What this decision does not do.** MA-028 as written required fresh independent
+design and accessibility reviews of the amended package *in addition to* the
+founder decision. Those reviews did not run before acceptance. The decision rests
+on the producer record and four passing deterministic validators, and a passing
+validator is a determinism check, not a review — it cannot observe design quality
+or an accessibility outcome. The founder accepted the amended package with that
+gap stated rather than glossed. Accordingly **R-035 is not closed**; it moves to
+`accepted_by_founder` and keeps its original exit evidence: a clean independent
+design review and a clean independent accessibility review of the amended package.
+Acceptance settled the question of *authority*; it did not answer the question of
+*quality*.
+
+Superseded hashes remain recorded in `producer-inspection.md`, the production
+contract, and the design validator comments, so the amendment stays reversible and
+auditable. `U-03` (where the device-tier boundaries sit) remains open and cannot
+close in Phase 1. No schedule is offered. Application and 3D implementation remain
+blocked until complete Phase 1 approval.
+
+## D-042 — Blocking review findings corrected; the reviews that were owed have now run
+
+**Date:** 2026-09-06  **Status:** Approved  **Follows:** D-041
+
+The independent design review and the independent accessibility audit that MA-028
+required were commissioned on 2026-09-06, **after** the founder accepted MA-028
+rather than before it. **Both returned FAIL.** They are recorded at
+`docs/phase-1-ui-reference-design/reviews/design-review-iteration-4.md` and
+`docs/phase-1-ui-reference-design/accessibility/accessibility-audit-iteration-3.md`.
+
+The two reviews reached the same root cause independently: the CR-002 amendment
+changed the prose — the style guide, the SRS, the B07 objective — and did not
+change the data a producer actually works from. The delivery stream existed as an
+assertion and not as an evidence dimension. The four stream identifiers appeared
+exactly once in the entire design package.
+
+Four findings were blocking:
+
+1. **The stream control did not exist where it was required.** §8.2.2 demanded a
+   control reachable in every stream including `S-SEMANTIC`, but the only
+   primitives carrying one were `overlay_immersive` — inside a World canvas that
+   `S-SEMANTIC` does not have. A visitor pinned to `S-SEMANTIC` by the WebGL
+   ceiling had no way out: the exact trap CR-002 was written to remove.
+2. **`S-LOW` claimed "fewer hotspots" and an equivalent core journey at once.**
+   Unfalsifiable, and no rule said which hotspots to drop.
+3. **"Equivalent core journey" was asserted four times and defined zero times.**
+   CR-002 §4 promised a stream axis in `responsive-state-mode-matrix.csv`; it was
+   never added. WCAG conformance must hold independently in each stream, and
+   `S-MEDIUM` had no representation anywhere in the package.
+4. **The precedence was circular and the promotion was ungoverned.** Step 3
+   evaluated the override before the stream it modified existed, and step 6 let
+   measurement rebuild the accessibility tree mid-session with no status message,
+   no focus-preservation clause, and no way to decline.
+
+**Founder decisions taken to resolve them.** `S-LOW` reduces fidelity only and
+retains every hotspot and destination. The override is evaluated last, is
+reversible under the WebGL ceiling in either direction, persists across sessions,
+and outranks stored measurement — so a visitor who dropped to `S-LOW` because the
+higher stream stuttered is never dragged back up. The mid-session promotion is
+**removed**: measurement is stored and applied from the next visit, so the stream
+resolves once before first paint and changes only when the visitor asks, which
+satisfies 3.2.2 by construction rather than by mitigation. Production contract
+§0.1 is corrected for D-041, and B07 stays deferred to MA-026.
+
+**Also corrected**, all traceable to a review finding: the semantic shell gains the
+stream control; `PRIM-044` is renamed from "World escape and fallback" and loses
+"quality downgrade if valid"; `STATE-QUALITY-DOWNGRADED` becomes
+`STATE-STREAM-CHANGED`; four `DS-S-*` stream profiles carry per-stream evidence;
+the hotspot state table gains a normative keyboard-focus row and a non-colour,
+non-motion cue on every state; §7.3 enumerates motion suppression exhaustively;
+`TPL-PUBLIC-ABOUT` gains attribution-list anatomy and `/credits` in scope; B02
+gains a credits evidence obligation; the `/credits` next-actions are reconciled;
+and every "33 routes" and the 154 source-ID count are corrected.
+
+**What is not closed.** The remediated package has not been re-reviewed by anyone
+other than its producer, so **R-035 stays open** with its exit evidence unchanged
+and **MA-029** is opened to carry it. **R-034 is reopened**: the rename was partly
+lexical, and `FLOW-WORLD-HUD-FALLBACK`, `WORLD_HUD_FALLBACK`, and
+`MODE-NON-WEBGL-QUICK-ACCESS` still frame the semantic peer as a failure surface —
+accepted upstream identifiers whose rename cascades beyond this window. **R-036**
+is opened for the honest consequence of leaving B07 deferred: `S-SEMANTIC` is
+written at P0 and the authorized production path does not discharge it.
+
+Freeze values move to design `4B9EB9AFF439D98A67AE0B75FC83DF06999BDB8178A69C9333F15FD45062289B`
+and production `9B4CDE0483CA3160DF0ACAEBFD11168048E6E95395ECADE51A2706DBA61FCA11`.
+All four validators pass. `U-03` remains open. No schedule is offered.
+
+## D-043 — 2026-09-06 — Full schema fix; the delivery stream axis made load-bearing
+
+**Approved by the founder**, who selected "Full schema fix across foundation and
+UX" and, separately, "Hold B01 until a clean re-review".
+
+### What the re-reviews found
+
+Both independent re-reviews of the D-042 remediation returned **FAIL**, and they
+converged on five identical defects without coordination. That convergence is the
+strongest signal in the record and is why the full fix was offered rather than a
+partial one.
+
+1. **The stream axis was inert.** D-042 added four `DS-S-*` profiles to
+   `responsive-state-mode-matrix.csv` and a validator assertion that they existed
+   — implemented as a **row count**. No route, flow, or template selected one. A
+   producer could satisfy every ledger cell, pass every assertion, and produce no
+   per-stream evidence at all, which is precisely the defect the reviews had been
+   raised against. The design reviewer named the pattern: *assertions that pass by
+   counting rows rather than resolving references.*
+2. **`COV-ACT-08` and `COV-ACT-09` still carried demotion vocabulary** — "quality
+   downgrade" as a recovery, and "Toggle quality" living in `TPL-WORLD-HUD`, a
+   template `S-SEMANTIC` does not have.
+3. **The frozen `validation-report.md` described a different package** than the
+   validator frozen beside it: `routes=33 profiles=32` against asserted 34 and 36.
+   A freeze that certifies its own stale report certifies nothing.
+4. **The style guide claimed WCAG 2.2 3.2.2 was "satisfied by construction".**
+5. **The SRS held zero accessibility requirements**, so the WCAG 2.2 AA target had
+   no requirement-level home and nothing to trace to.
+
+### The reviewers' one disagreement, and how it was resolved
+
+The design reviewer accepted the "3.2.2 satisfied by construction" reasoning; the
+accessibility reviewer rejected it. **The accessibility reviewer is right.** 3.2.2
+On Input governs changing the setting of a user interface component, and the
+delivery stream control *is* such a component. Removing automatic mid-session
+promotion removes one way of violating 3.2.2; it does not satisfy it. A polite
+status message *after* the change is 4.1.3 treatment. 3.2.2 is satisfied by
+**advance advisement**. The claim is withdrawn and the requirement replaces it,
+and the style guide now claims no conformance at all — both SCs are evaluated
+against the implementation, not against a document.
+
+### The design problem the reviewers flagged but did not solve
+
+`stream_profile` must be non-empty on every record, yet most public routes render
+identically in all four streams, and `S-SEMANTIC` may never be marked "not
+applicable" — it is a P0 peer, and an exemption column would quietly restore the
+ladder the whole CR-002 window exists to remove.
+
+Resolved with **`DS-STREAM-INVARIANT`**: a *positive* claim that a record renders
+identically in all four streams and is therefore evidenced once. Its
+`exception_rule` forbids selection by any record whose rendering depends on the
+World canvas or on the shell hosting the stream control. Stream-invariant is not
+"not applicable": `S-SEMANTIC` is **discharged** there, never waived.
+
+### Making the axis load-bearing rather than merely present
+
+A column that no batch has to evidence is decoration. **`ACT-09` moved from
+deferred `B07` into authorized `B01`**, so the delivery stream control is proven
+present, keyboard-operable, and canvas-free on a batch that will actually run —
+one frame per current-stream value, the `STATE-STREAM-CHANGED` polite announcement
+frame, the `stream-preference-write-failed` frame, and the advance advisement.
+This is a design decision, not a validator guarantee, and it is recorded as such.
+
+### Correction to the D-042 record
+
+The D-042 note deferred the `FALLBACK` identifier rename to R-034 on the grounds
+that it "cascades into the foundation and UX packages". **That was false.**
+Verification found all 47 occurrences confined to the design package and to
+history documents that are deliberately not rewritten. There was no cascade and no
+reason to defer; the rename is complete and **R-034 is closed**.
+
+The `semantic-stream-peer-framing` guard was widened accordingly, then
+deliberately **narrowed** to stream contexts: a blanket `*_fallback` pattern also
+matched `booking_fallback` and `durable_fallback`, a provider contingency and a
+storage contingency with nothing to do with the semantic stream. Renaming those
+would have been collateral damage rather than peer framing, and the reasoning is
+recorded in the validator source beside the pattern.
+
+### Guard added so the report defect cannot recur silently
+
+**`validation-report-counts-agreement`** requires the `COUNTS` line in
+`validation-report.md` to match the counts computed in the same run, literally.
+This was the accessibility reviewer's own proposal, adopted because it is cheap
+and structural.
+
+### What was not fixed, and why it stays open
+
+**R-035 does not close.** This remediation is the producer's own work, and
+Constitution principle VII forbids the producer approving its own material output.
+Three FAIL rounds have now followed validator runs of 183, 184, and 185 passing
+assertions. The standing lesson is written into `validation-report.md`,
+`producer-inspection.md`, and **MA-029**: a passing validator is a determinism
+check, not a review.
+
+**B01 is held** by explicit founder decision until a clean re-review. B01 draws
+reference frames from these records; frames drawn against a package with an inert
+stream axis and a contradictory validation report would need redrawing, and
+redraws consume metered Figma calls from the 20-call monthly allowance. **Zero
+allowance consumed. Nothing staged, nothing committed, no external write.**
+
+**R-036** stays open: `S-SEMANTIC` is written at P0 and the authorized production
+path still does not fully discharge it while B07 waits at MA-026 — though `ACT-09`
+in B01 now buys back part of that gap. **`U-03`** device-tier thresholds remain
+deferred to implementation-phase measurement.
+
+### Result
+
+All four validators pass: foundation **PASS**, UX **PASS 113/0**, design
+**PASS 189/0**, production **PASS 153/0**. Freeze values move to design
+`DB92B4D0B889948D6C272F0DC7397327055B0108E7EEB953924F34E735BD4649`
+and production
+`1AA0055205638CAB42B9F30469E8D0ADC8EF736DA60B3F393EA1C92865AB8913`.
+All superseded values are retained as provenance and are not authorities.
+`U-03` remains open. No schedule is offered.
+
 ## Governance Amendment Result
 
 Phase 0 implemented D-004 and D-014 in Constitution 2.0.0, `AGENTS.md`, project
@@ -601,3 +999,116 @@ templates. CONFLICT-001 is resolved at the governance level. Legacy v3 product
 documents, active technical references, backlog, diagrams, and draft specs remain
 Phase 1 reconciliation inputs and cannot authorize implementation when they
 conflict with current governance or approved decisions.
+
+## 2026-09-06 — D-044 outcome: both specifications delivered, none accepted
+
+The two authors commissioned under D-044 have delivered. Neither is the
+producer, and neither communicated with the other; they worked from the same two
+FAIL audits on disk.
+
+They converge on three points, which is the strongest signal available here
+because it was reached twice independently: stream-invariance cannot survive as a
+producer-asserted claim; the delivery stream control is a radio group with a
+separate explicit submit, never a native `select` applying on `change`; and the
+advance advisement required by WCAG 2.2 3.2.2 must be persistent visible text
+rather than an accessible description alone.
+
+They diverge on one structural point. The design author **deletes**
+`DS-STREAM-INVARIANT`, reasoning that a zero-member guarded category is a place
+for an unexamined record to hide later, and keeps the test as an assertion while
+discarding the category. The accessibility author **inverts** it into
+`OBL-INV-01`, a conclusion derived from four conditions already computable from
+accepted columns. On current data both yield the empty set. The choice is the
+founder's, at MA-030.
+
+The producer has implemented nothing and accepted nothing. That restraint is the
+point of D-044: four FAIL rounds followed validator runs of 183, 184, 185, and
+189 passing assertions, and in three of them the defect was in the producer's fix
+for the previous defect. A specification the producer accepts is a specification
+the producer authored by another route.
+
+Two findings are recorded and deliberately **not** fixed, because fixing them now
+would be the producer authoring model again. **G-1**: the style guide makes
+`S-LOW` the unsignalled default while `UX_ARCHITECTURE.md:173` says the World is
+entered only on explicit selection; this blocks the first frame of `ROUTE-HOME`.
+**G-5**: `time_limit_branch` is computed by `Get-ExpectedTimeBranchForState` as a
+total function of `state_profile` — the identical derived-column defect. The
+producer's D-043 record described that derivation as a virtue. It was not one.
+
+## 2026-09-06 — D-045: the model is accepted; the implementation is not
+
+The founder read both specifications and decided the four points the authors left
+open. The most consequential is G-1, and the resolution is worth recording as
+reasoning rather than as an outcome: the style guide and the UX architecture were
+not actually in conflict. They appeared to be because the producer had been
+treating *which stream is in force* and *whether the World canvas has been
+entered* as one question. Capability and connection conditions choose the stream,
+per D-039. The visitor chooses the World, per `UX_ARCHITECTURE.md:173`. Separating
+them satisfies both accepted statements and overrules neither, and it removes the
+reading the accessibility auditor objected to most — a visitor placed in a stream
+they never chose and never saw named.
+
+On invariance the founder took the design author's position. The category is
+deleted. The accessibility author's four derivation conditions are not discarded;
+they move into the validator source as the recorded reason the category is absent,
+so a future record that would have qualified is still recognisable. This is the
+narrow point on which four rounds turned: every previous fix supplied a cell and
+then filled it with a value derived from a cell that already existed. There is now
+no cell.
+
+The control's activation model is normative because two authors reached it
+independently and for platform-level rather than stylistic reasons. Frames follow
+the union of both specifications; calls do not follow frames, are not projected,
+and are approved one at a time.
+
+The producer now implements. Acceptance of a specification the producer did not
+write is not acceptance of the package the producer is about to write. R-035 stays
+open, MA-029 stays undischarged, and B01 stays held until an independent review of
+the implemented package returns clean.
+
+## 2026-09-06 — D-045 implemented: what the model caught, and what it could not
+
+The implementation is done and both validators pass. The reasoning worth keeping is
+about which findings the new model could produce and which it structurally could not.
+
+**What it caught.** `A-10` resolves each token in a frame name against the value set
+the record itself selects, instead of matching a vocabulary regex. That single change
+found two defects that had survived every previous run: the last `MODE_NON_WEBGL_*`
+instance, which had evaded a guard written for hyphens by being spelled with
+underscores, and `STATE_UNAVAILABLE` on `ROUTE-CONTACT`, which **no reviewer had
+reported**. The second is the more instructive one — it is a token that looks
+plausible and resolves against nothing, which is exactly the class a human reviewer
+skims past and a resolution catches for free.
+
+**What it could not catch, and why that is the point.** The producer's own new guard
+was silently inert on its first run, through a PowerShell parsing rule nobody would
+look for: the comma operator binds tighter than `+`, so a nine-element array literal
+collapsed into one string and the guard reported zero hits across 56 files that
+contained known matches. It was found only because the guard was hand-checked against
+a phrase known to be present. **A validator cannot be trusted to report that it is
+working.** The countermeasure now in both validators is a count assertion plus negative
+fixtures — a guard that must reject something, so a collapsed pattern fails rather than
+passes.
+
+**What the working guard then revealed about scope.** Six live UX-architecture files
+still described the World as optional three days after D-039 abolished that framing.
+Nothing was wrong, because nothing was checked: every prior guard was scoped to the
+design package's own thirteen freeze files. **A guard's scope is part of its claim**,
+and a scope written as a literal file list ages silently. The new scope covers three
+packages — and is still not everything, because `docs/active/`, which this same slice
+amended, remains unswept. That is recorded rather than widened, since widening a
+guard's scope changes what the package claims and belongs to a reviewer.
+
+**The general shape of every remaining finding.** Seven results were implemented
+literally and recorded as observations rather than corrected: twenty-two inert
+judgement columns, a constant `stream_disposition`, `A-11`'s determiner set, eleven
+unenumerated state profiles, an all-four fold on excluded-surface templates, an
+all-or-nothing frame regeneration, and a wholly unmet obligation set. In every case
+the producer believes the literal result is wrong, and in every case correcting it
+would mean deciding a question the specification left open — which is the D-044
+pattern with better intentions. Recording them costs a reviewer's attention.
+Correcting them would have cost a fifth FAIL round.
+
+R-035 open. MA-029 undischarged. R-034 not closed. B01 held. Zero Figma allowance
+consumed. Nothing staged or committed.
+

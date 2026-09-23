@@ -1,7 +1,7 @@
 # Hengshi Design Manual Actions
 
 **Classification:** Business confidential
-**Last reconciled:** 2026-09-03
+**Last reconciled:** 2026-09-06
 
 This file contains non-secret actions that require a person, external account
 authority, or an explicit founder gate. Never paste or store passwords, OAuth
@@ -503,23 +503,230 @@ acceptance of the exact frozen package and closes MA-024.
 
 **MANUAL ACTION REQUIRED**
 **ID:** MA-025
-**Status:** awaiting_human
+**Status:** accepted — approved by the founder 2026-09-06
 **Blocking phase/gate:** External Figma/Stitch reference-screen production
 **Why a person is required:** Producing screens writes project material to an
 external design provider and may consume provider capacity. Contract acceptance
 does not authorize that external operation.
-**Exact non-secret action:** Approve or reject a bounded visual-production
-contract that identifies the provider, batches, write scope, evidence capture,
-review sequence, cost boundary, and stop conditions before any external write.
-**Evidence required to resume:** Explicit founder approval recorded in the durable
-decision and state files, followed by provider authentication and capability
-verification without exposing credentials.
-**Secret-handling rule:** Keep authentication in the provider or OS credential
-store; never copy tokens, cookies, or keys into repository files or chat.
+**Exact non-secret action:** Choose one emoji against the prepared contract
+package `docs/phase-1-ui-reference-production/` at producer freeze SHA-256
+`E3786F14C9F12CBF8127A18E7959881B91A9ECC5DC11BBE3E466BCEC6C7EC08D`
+(nine files, deterministic validation 147/147): 👍 approves bounded external
+production; 🔁 requests a bounded revision and must identify the area to change.
+No typing is required for approval.
 
-MA-025 will authorize only the approved external reference-screen production
-scope. It will not authorize application implementation, publication, deployment,
-paid assets beyond an approved envelope, or complete Phase 1 acceptance.
+Approving MA-025 approves exactly these six things:
+
+1. **Figma** is the sole authoritative production and evidence provider; Google
+   Stitch is not used in this scope.
+2. Batches **B01, B02, B03, B04, B05, B06, and B08 only** are authorized.
+   **B07 and B09 are deferred** to a later MA-026, because B07 requires an
+   approved 3D storyboard (`not_started`) and MA-004 (`blocked`), and B09
+   hard-requires B07. Consequently the D-037 §15 handoff and `docs/ui/UI_SPEC.md`
+   cannot complete under MA-025.
+3. The eight permitted external operations `WS-P-01`…`WS-P-08`, confined to one
+   approved Figma file; the eleven prohibitions `WS-X-01`…`WS-X-11` stand.
+4. **Zero spend.** Free tier, single editor. Any paid step returns to MA-010 and
+   fires stop condition `SC-05` rather than being purchased.
+5. **B01 runs as a gated pilot.** Work halts after B01 for an explicit founder
+   pilot acceptance before B02–B08 are released.
+6. **No external write may occur** until the §3.5 capability enablement is
+   completed and recorded.
+
+**Evidence required to resume:** Explicit founder choice recorded in
+`DECISIONS.md`, `docs/decisions-log.md`, `PROJECT_STATE.yaml`, `TASKS.md`,
+`MANUAL_ACTIONS.md`, and `CHANGELOG.md`, followed by recorded capability
+verification in
+`docs/phase-1-ui-reference-production/validation/capability-evidence.md`.
+
+**Provider capability update — 2026-09-06, verified after the freeze**
+
+Verified from Figma's official Dev Mode MCP guide. Recorded here rather than inside
+the package so the approved freeze hash `E3786F14…C08D` stays valid and citable.
+
+- **Endpoint confirmed.** `https://mcp.figma.com/mcp` is the official remote
+  endpoint, documented as the preferred option.
+- **Plan gate cleared.** The remote server is "available on all seats and plans",
+  so a free seat suffices. The five file-level free-tier limits in contract §7.2
+  remain unverified.
+- **Write capability confirmed, and remote-only.** Creating and modifying frames,
+  components, variables, and auto layout is supported, and canvas writing
+  "requires the remote Figma MCP server" — the one now configured.
+- **Caveat recorded as R-031, re-scoped by founder direction 2026-09-06.** Canvas
+  writing is free *during beta* and is documented to become "a usage-based paid
+  feature". The founder directed that the account is on a free plan and that **no
+  recurring pricing check is to be performed**. That is accepted: a free plan with
+  no payment method cannot be charged silently, so the zero-spend boundary is
+  protected by the account itself. The residual exposure is therefore **loss of
+  capability, not unexpected spend** — if canvas writing moves behind a paywall,
+  batches stop working. This needs no scheduled check because it announces itself:
+  the write fails or prompts to upgrade. Stop condition SC-04 halts on any paid
+  prompt, a blocked write halts the batch and routes to MA-010, and no purchase may
+  be made to unblock it.
+
+**Host configuration status — 2026-09-06, second update**
+
+The Figma MCP server is registered at **user scope**, so no endpoint or credential
+configuration enters the repository; `.mcp.json` remains absent and
+`%APPDATA%\Code\User\mcp.json` still does not exist.
+
+**Authentication completed by the founder on 2026-09-06.** `claude mcp get figma`
+now reports `Status: ✔ Connected`. The credential itself was never seen, requested,
+or recorded by the producer, and no token, session URL, or account identity appears
+in any repository file.
+
+**Session exposure is not yet established, and the distinction is load-bearing.**
+An MCP server's tools are bound into a session at start-up. This session began
+before the server existed, so **no Figma tool is callable from it** — a
+`ToolSearch` query for Figma design tools returns no match. The server is
+authenticated at the host level and not yet exposed at the session level. Claude
+Code must be restarted, after which the tools must be **observed** rather than
+assumed.
+
+Until that observation exists, connectivity must not be claimed and
+`§3.5 capability-evidence.md` must not be written. Approving MA-025 still does not
+by itself start production: either a human operator works directly in Figma, or the
+agent path completes with a dated, observed capability record.
+
+**Secret-handling rule:** Authenticate only through the provider's official OAuth
+or browser sign-in flow, performed by a person. Never copy a token, personal
+access token, API key, cookie, session URL, password, or recovery code into any
+repository file, evidence artifact, manifest, log, filename, or chat message. The
+Figma **file key is not a secret** and is recorded, as D-037 §15 requires. Account
+email addresses and seat identities are not recorded.
+
+MA-025 authorizes only the approved external reference-screen production
+scope. It does not authorize B07, B09, `docs/ui/UI_SPEC.md`, a final visual
+direction, application or 3D implementation, exact public or legal copy, paid or
+licensed assets, publication, Git operations, deployment, complete Phase 1
+acceptance, or launch. MA-013 compatibility acceptance remains separate and
+unaffected.
+
+---
+
+**Founder approval and capability outcome — 2026-09-06**
+
+The founder restarted Claude Code, the Figma MCP tool set bound into the session,
+and the founder approved MA-025 together with MA-027 Option A.
+
+**Capability enablement is complete.** Path A. `whoami` executed as the §3.5
+capability test — read-only, canvas-untouched, and documented by the provider as
+exempt from rate limits, so it consumed no allowance. The account is a **Full seat
+on the `starter` tier**. Recorded in
+`docs/phase-1-ui-reference-production/validation/capability-evidence.md`. No
+credential, token, session URL, or account email was seen, requested, or recorded.
+
+**One of the five §7.2 limits verified, and it constrains the programme.** The
+provider's own access documentation gives the previously unknown MCP tool-call
+allowance: **20 tool calls per calendar month** for a Full seat on Starter. The
+Starter column spans both seat rows, and the provider's upgrade-remediation text
+states the number directly. The other four §7.2 limits remain unverified and are
+still not asserted.
+
+**`SC-05` fired, and was resolved rather than waived.** The contracted evidence
+floor — `EC-25` inventory plus `EC-28`/`EC-29` archive exports, three calls per
+batch across seven batches — is **21 calls against 20 per month**, before any
+visual evidence at all; realistic demand is in the hundreds. The producer halted
+and reported the exact shortfall and made no purchase and proposed none. Shown the
+verified limit, the founder directed: **"stay on course we will use 20 calls per
+month very precisely."**
+
+That is an informed acceptance, and its accepted consequence is stated plainly:
+**the seven batches will span multiple calendar months**, and no schedule may be
+stated until B01 measures real consumption. Zero spend stands; `CB-11` and `CB-12`
+forbid restoring allowance by purchase, second account, second seat, or trial.
+
+**Rationing is now a governed instrument, not an intention.**
+`validation/mcp-call-budget.csv` carries rules `CB-01`…`CB-15` and
+`validation/mcp-call-ledger.csv` counts every call. `CB-02` records that write-tool
+rate-limit exemption is **NOT ASSERTED**: the provider's general statement that
+write tools are exempt does not agree in scope with its enumerated list of only
+three exempt tools, so every call is assumed metered until measurement proves
+otherwise. **B01 now also serves as the metering experiment** and must report total
+calls, calls by tool, any rate-limit response, and a measured per-batch projection.
+
+**Allocation decided — 2026-09-06.** `CB-06`: all 20 monthly calls are spendable
+with **zero reserve**, and **every individual call requires explicit founder
+approval immediately before it is made**. `CB-07`: the producer never makes a Figma
+MCP call unprompted, and each request must state the tool, the purpose, and the
+running count consumed this month. Per-call approval makes a standing reserve
+redundant, because no call is ever made without a live founder decision.
+
+**Recorded tension, not resolved.** The founder also stated that the project does
+not have a month and is developing fast. **No allocation rule can make 20 calls per
+month deliver seven batches quickly.** The two paths that would actually remove the
+constraint are a paid Figma envelope under MA-010 or producing references outside
+the Figma MCP; neither has been chosen, and the producer may start neither.
+
+One unknown may shrink the problem materially: write tools are partly documented as
+rate-limit exempt — `create_new_file` explicitly so — while `CB-02` still refuses to
+assume it for `use_figma` and `generate_figma_design`. If
+canvas writes prove exempt, reads are the only real cost and the allowance stretches
+much further. B01 establishes this cheaply and is the correct place to find out.
+
+**The pre-approval boundary assertions are superseded, not deleted.** The validator
+now derives an explicit `PRE_APPROVAL`/`POST_APPROVAL` lifecycle state from this
+gate's status, applying the R-024 lesson that an authorized mutable input must
+never be asserted immutable. Post-approval it requires the capability evidence,
+budget, and ledger it previously forbade.
+
+**Still not started.** No canvas write, no evidence directory, no B01 work. B01
+remains the gated pilot and halts for explicit founder pilot acceptance. `SC-10`
+still refuses B07 and B09.
+
+## CR-002 four-stream delivery model
+
+**MANUAL ACTION REQUIRED**
+**ID:** MA-027
+**Status:** accepted — Option A approved by the founder 2026-09-06
+**Blocking phase/gate:** D-036 and D-037 revision; B07 reclassification
+**Why a person is required:** The founder stated on 2026-09-06 that 3D is not
+optional and that delivery streams are selected by device capability and connection.
+The accepted D-036/D-037 baseline models 3D as an optional enhancement, so this is a
+material product decision that changes accepted authority.
+**Exact non-secret action:** Approve, amend, or reject
+`docs/requirements/CHANGE_REQUEST_CR-002.md`, which proposes four peer streams —
+high, medium, low, and no-WebGL/semantic — carrying equivalent core journeys across
+all 33 accepted routes, plus a net-new stream-selection rule and user override.
+**Evidence required to resume:** An explicit written decision. Option A approves as
+written; Option B reduces to two streams; Option C retains the accepted model.
+**Secret-handling rule:** Not applicable; no credential or account action.
+**Note:** Three inputs are recorded as unverified rather than asserted — browser
+support for connection signals, browser support for device-capability signals, and
+the tier thresholds themselves. No schedule estimate is offered until they resolve.
+
+---
+
+**Founder decision — 2026-09-06: Option A approved**
+
+The founder approved **Option A as written**. The four peer streams — high, medium,
+low, and no-WebGL/semantic — are now the authorized delivery model, carrying
+equivalent core journeys across the accepted route inventory, with a
+stream-selection rule and a user override.
+
+What this changes, and what it does not:
+
+- **3D is no longer an optional enhancement.** `T-01`…`T-07` become authorized
+  target state. The no-WebGL/semantic stream is a peer stream, not a fallback.
+- **B07 is reclassified from optional to core.** It remains **deferred to MA-026**
+  regardless, because it still requires an approved 3D storyboard (`not_started`).
+  Reclassification raises its importance; it does not unblock it. `SC-10` continues
+  to refuse B07 and B09 under MA-025.
+- **The accepted D-036/D-037 artifacts are not yet edited.** Approval opens the
+  CR-002 revision window; it does not perform it. The amendments to D-036, D-037,
+  `design-batch-plan.csv` B07, `3D_Mega_Menu_Style_Guide_v2.md` §8.2, and SRS
+  `FR-3D-010` are a separate bounded slice.
+- **`/credits` reconciliation is assigned to that window** as tracked by R-032: it
+  is a 34th route against D-025's accepted 33, and the CC BY 4.0 obligation does not
+  vary by stream, so it must appear in all four.
+- **The three uncertainties survive approval.** `U-01`, `U-02`, and `U-03` remain
+  `[MUST VERIFY AT SPECIFICATION]` against Context7 and official primary
+  documentation. R-030 stands: if portable stream selection proves unachievable,
+  work stops and Option B returns to the founder rather than an unsupported
+  mechanism being invented. **No schedule is offered.**
+
+MA-027 does not authorize application or 3D implementation, which remains blocked
+until complete Phase 1 approval.
 
 ## Legal entity, privacy, and public disclosures
 
@@ -560,17 +767,61 @@ contracts or identity documents to chat.
 
 **MANUAL ACTION REQUIRED**
 **ID:** MA-004
-**Status:** blocked
-**Blocking phase/gate:** Existing-geometry reuse in Phase 5
-**Why a person is required:** The original source URL/file, license text, author,
-attribution, and modification rights are not present in the repository.
-**Exact non-secret action:** Provide the original public source and license evidence
-for `hengshi-hq-atlanta-exterior-web.glb`, or explicitly direct that it remain a
-visual reference only with no geometry reuse.
-**Evidence required to resume:** Reviewed asset-manifest entry showing commercial
-use, modification, attribution, provenance, and security status.
-**Secret-handling rule:** No account credentials; provide only public license/source
-evidence or a project-owned source file through an approved channel.
+**Status:** accepted — closed 2026-09-06
+**Blocking phase/gate:** Existing-geometry reuse (now released)
+**Why a person is required:** The licence disposition and the attribution surface
+were legal and product judgements, not engineering facts.
+**Exact non-secret action:** Completed. The founder decided the NoAI disposition and
+the attribution location on 2026-09-06.
+**Evidence required to resume:** Supplied in full; see below.
+**Secret-handling rule:** No account credentials were involved. Public licence and
+source evidence only.
+
+**Completion evidence.** Provenance is recorded at
+`docs/phase-1-3d/asset-provenance/HSD-ASSET-001-hq-exterior.md`:
+
+- Source verified read-only from the founder-supplied Sketchfab page. Author
+  `99.Miles`; licence **CC BY 4.0** confirmed against the canonical Creative Commons
+  deed — commercial use and modification **permitted**, attribution **required**.
+- Identity corroborated without downloading the source: 37,302 triangles against the
+  page's stated 37.3k. SHA-256
+  `4767CAB4D346207A2109FFC1584E256E82AE1CECC110780B99C4406A9586AAFE`, identical for
+  the `public/` and `dist/` copies.
+- Already a derivative — generator `Khronos glTF Blender I/O v5.0.21` — so CC BY's
+  "indicate if changes were made" obligation already attaches.
+- Security: valid glTF 2.0, embedded textures, no external URI references, no
+  executable payload; parsed from the JSON chunk only, never imported or executed.
+
+**Founder decision D-A — NoAI, narrow reading adopted.** The founder directed that
+the model is not being fed into any AI, that the agent is a tool user working on and
+expanding the asset, and that direction and authorship remain with the founder.
+Geometry reuse is authorized subject to four binding operating rules recorded as
+AR-01 through AR-04: the mesh, textures, and geometry must never be submitted to a
+model as training, fine-tuning, or generative input; permitted work is deterministic
+Blender operations under founder direction; no generative-3D or image-model step may
+produce or derive geometry or textures from this asset; and any step that would
+breach those rules must stop and return to the founder rather than reinterpret this
+decision.
+
+**Founder decision D-B — attribution surface.** A subtle but accessible footer link
+named "Asset Credits" leading to a durable credits page, with no prominent homepage
+placement required, kept reasonably discoverable and legible. **Route selected:
+`/credits`**, because the accepted inventory has no `/legal/*` family and
+`/legal/asset-credits` would introduce an empty parent segment for a single leaf. The
+founder may override. Exact text to render:
+
+> "Atlanta Corporate Office Building" by 99.Miles, licensed under CC BY 4.0,
+> modified for Hengshi Design.
+> Source: the Sketchfab model page recorded in `HSD-ASSET-001` §2
+> License: https://creativecommons.org/licenses/by/4.0/
+
+**Two obligations remain open and are tracked, not lost.** `/credits` is a 34th route
+against D-025's accepted 33, so it must be reconciled into the route inventory, UX
+wayfinding, `foundation-route-coverage.csv`, and the footer primitive; that work is
+assigned to the CR-002 revision window rather than a third change request, and
+`/credits` must appear in every delivery stream because the licence obligation does
+not vary by tier. ATTR-03, writing `asset.copyright` into the GLB, is an asset
+modification deferred to authorized 3D production. The frozen file is untouched.
 
 ## Azure and Microsoft 365 capability/access
 
@@ -670,6 +921,72 @@ region, alert thresholds, scaling limits, and stop conditions before activation.
 relevant cost/architecture artifact; activation is separately verified.
 **Secret-handling rule:** Record no payment-card, billing-login, or credential data.
 
+## CR-002 amended package re-acceptance
+
+**MANUAL ACTION REQUIRED**
+**ID:** MA-028
+**Status:** accepted — approved by the founder 2026-09-06
+**Blocking phase/gate:** Authority of the amended D-025/D-036/D-037 artifacts; any
+production batch that relies on a change introduced only by the CR-002 amendment
+**Why a person is required:** The CR-002 revision window executed on 2026-09-06
+modified three separately-accepted packages and re-froze the 13-file design
+aggregate from `97E79201CC36F01718A027AD800E63BDD5AAFC47E41137D65253BAABA6B2120F`
+to `F16093D07D1E2634DB440ED35E4D4648ABF4F6D85C2BCD4E8F9CE5092F9C4AD6`. Constitution
+principle VII forbids the producer approving its own material output, and the
+passing validators are determinism checks rather than reviews. No independent design
+or accessibility review has run against the amended package.
+**Exact non-secret action:** Review and explicitly accept, amend, or reject the
+amended package. It contains: style guide §8.2 rewritten as four peer delivery
+streams with the founder-decided selection precedence; SRS `FR-3D-010` restated as
+the `S-SEMANTIC` peer at P0 plus new `FR-3D-011` and `FR-3D-012`;
+`design-batch-plan.csv` B07 reclassified to core with stream-selection evidence
+added; 15 degradation framings removed across seven package artifacts; the column
+`optional_immersive_representation` renamed `immersive_stream_representation`; and
+`/credits` reconciled as the 34th route across the foundation, UX, and design
+packages with `PRIM-001` now requiring a footer attribution link.
+**Evidence required to resume:** A dated written decision in `DECISIONS.md` and
+`docs/decisions-log.md`. Fresh independent design and accessibility reviews of the
+amended package are required before the amended artifacts carry the authority the
+D-037-accepted package did.
+**Secret-handling rule:** Not applicable; no credential or account action.
+**Note:** Superseded hashes are retained in `producer-inspection.md`, the production
+contract, and the design validator rather than overwritten, so the amendment is
+reversible and auditable. Dated artifacts under `reviews/` and `accessibility/` were
+deliberately not rewritten; they remain historical evidence of what was inspected.
+Recorded as **R-035**. This gate does not block the B01 pilot, which depends on
+MA-025 and the per-call approval rule at CB-06/CB-07, not on this amendment.
+
+---
+
+**Founder decision — 2026-09-06: MA-028 accepted**
+
+The founder wrote `approved. continue`. MA-028 was the only gate open at the time,
+so the approval is unambiguous and is recorded as decision **D-041**. The amended
+D-025, D-036, and D-037 artifacts now carry accepted authority. The re-frozen design
+aggregate `F16093D07D1E2634DB440ED35E4D4648ABF4F6D85C2BCD4E8F9CE5092F9C4AD6` and
+production aggregate `3DF0DBB6A6ADFC5FC8A09865A00AB92F27EE91D3F418E4368BA9B17033358528`
+are the accepted values. The production contract no longer needs to fall back to the
+D-037-accepted package, and production batches may rely on amendment-introduced
+changes.
+
+**Recorded honestly rather than glossed:** this gate as written required *fresh
+independent design and accessibility reviews* in addition to the founder decision.
+**Those reviews did not run.** The founder accepted on the strength of the producer
+record and four passing deterministic validators. Validators check determinism, not
+design quality or accessibility outcomes, so the amendment carries **unreviewed
+accessibility and design risk** that acceptance does not remove. This is a knowingly
+accepted residual, not a satisfied condition, and it remains open as **R-035** with
+status `accepted_by_founder` rather than being closed. Any later independent review
+that finds a defect in the amended artifacts is a valid finding against an accepted
+package, not a reopened decision.
+
+The superseded hashes stay recorded in `producer-inspection.md`, the production
+contract, and the design validator, so the amendment is still reversible. Dated
+artifacts under `reviews/` and `accessibility/` remain unrewritten and continue to
+describe the pre-amendment package only.
+
+---
+
 ## Defense publication and handling gate
 
 **MANUAL ACTION REQUIRED**
@@ -686,3 +1003,198 @@ then explicitly approve or reject publication.
 explicit founder publication decision.
 **Secret-handling rule:** Never place classified, controlled, export-sensitive, or
 client-secret material in this repository, public chat, or ordinary visitor AI.
+
+## Independent re-review of the D-042 remediated package
+
+**MANUAL ACTION REQUIRED**
+**ID:** MA-029
+**Status:** awaiting_human
+**Blocking phase/gate:** Closure of R-035; any statement that the CR-002 package
+has been independently reviewed
+**Why a person is required:** The independent design review and accessibility
+audit of the amended package both ran on 2026-09-06 and both returned **FAIL**.
+Their four blocking findings each were remediated the same day under **D-042**,
+which changed the style guide, the SRS, four design-package artifacts, two
+validators, and the production contract. Those remediations have not themselves
+been reviewed by anyone other than their producer, and Constitution principle VII
+forbids the producer approving its own material output. The four validators pass,
+but every finding the reviews raised was invisible to them.
+**Updated 2026-09-06 — the D-042 re-reviews ran and both returned FAIL again.**
+They converged on five defects, the central one being that the stream axis D-042
+added was **inert**: the four `DS-S-*` profiles existed and the validator asserted
+them **by counting rows**, but no route, flow, or template selected one. The fix
+reproduced the defect it was meant to close. Remediated under **D-043**; this
+action now targets that remediation. Correction blocks are appended to both dated
+review records rather than rewriting them.
+
+**Exact non-secret action:** Commission or perform an independent design review
+and an independent accessibility review of the package as it now stands, aggregate
+`DB92B4D0B889948D6C272F0DC7397327055B0108E7EEB953924F34E735BD4649`. The superseded
+`4B9EB9AF...289B` is provenance only. The reviews must specifically re-test:
+
+1. **That the stream axis resolves, not just counts.** `stream_profile` is
+   populated on all 34 routes, 89 flows, and 40 templates; the 36 flows and 8
+   templates that depend on the World canvas or the shell hosting the stream
+   control select all four `DS-S-*`; and `DS-STREAM-INVARIANT` is used only as a
+   positive stream-identical claim, never as an exemption from `S-SEMANTIC`.
+2. **That the axis is load-bearing.** `ACT-09` now sits in authorized `B01`; check
+   that `B01`'s required visual evidence actually forces per-stream frames.
+3. **The `S-SEMANTIC` boundary crossing** newly specified in §8.2.4: focus
+   destination when the operated control's subtree is destroyed, bidirectional
+   location-to-canonical-route mapping and its nearest-ancestor rule, and
+   accessibility-tree ordering during the swap.
+4. **That no conformance is claimed anywhere.** The WCAG 2.2 3.2.2
+   satisfied-by-construction claim was withdrawn and replaced with an
+   advance-advisement requirement; verify no equivalent claim was reintroduced.
+5. **SRS §5.6 `NFR-A11Y-001`…`007`**, and the four D-042 remediations that were
+   previously in scope: the `PRIM-001` stream control and its keyboard operability
+   in `S-SEMANTIC`; the `S-LOW` no-destination-removed rule; the per-stream
+   evidence profiles; and the reordered §8.2.2 precedence together with the
+   §8.2.4 announcement contract.
+
+**Reviewer instruction:** treat a passing validator as evidence of determinism
+only. Four FAIL rounds have now followed runs of 183, 184, 185, and 189
+passing assertions.
+
+**Round 3 result — 2026-09-06: BOTH re-reviews returned FAIL. MA-029 is NOT
+discharged.** Records: `reviews/design-review-iteration-5.md` and
+`accessibility/accessibility-audit-iteration-4.md`. They converged on the same
+central defect: `stream_profile` was populated as a total function of
+`state_profile`, so the column restated one that already existed and encoded no
+judgement; all 34 routes took `DS-STREAM-INVARIANT` and structurally could not do
+otherwise, while every route template depends on `PRIM-001`, the shell hosting
+the stream control, which that profile's own `exception_rule` forbids. Both also
+found the production package has **no stream axis at all**: `EC-08`'s evidence-ID
+grammar has no stream token, so per-stream frames cannot be named,
+distinguished, or validated.
+
+**Founder decision D-044 — the approach changed, not just the artifacts.** The
+reviewers now author the model as [PROPOSED] specifications
+(`DELIVERY_STREAM_EVIDENCE_MODEL.md`,
+`accessibility/DELIVERY_STREAM_ACCESSIBILITY_OBLIGATIONS.md`); the producer
+implements to them; the reviewers then verify. The producer does not author the
+model it will be judged on. The production stream axis is fixed in the same
+slice. This action stays `awaiting_human` and will retarget to the resulting
+aggregate once that work exists.
+**What is NOT authorized by this action:** External writes, Figma calls,
+implementation, publication, deployment, or any expansion of MA-025 scope.
+**Evidence required to resume:** Dated review records under
+`docs/phase-1-ui-reference-design/reviews/` and `.../accessibility/` returning a
+clean result against the current aggregate, plus a dated founder decision in
+`docs/decisions-log.md`.
+**Secret-handling rule:** Record no credential, billing, or account data.
+
+
+## Founder decision on the two [PROPOSED] delivery-stream specifications
+
+**MANUAL ACTION REQUIRED**
+**ID:** MA-030
+**Status:** awaiting_human
+**Blocking phase/gate:** Any producer edit implementing the delivery-stream
+evidence model or the stream accessibility obligations; release of B01
+**Why a person is required:** Under **D-044** the producer no longer authors this
+model. Two independent authors have delivered it as
+`docs/phase-1-ui-reference-design/DELIVERY_STREAM_EVIDENCE_MODEL.md` and
+`docs/phase-1-ui-reference-design/accessibility/DELIVERY_STREAM_ACCESSIBILITY_OBLIGATIONS.md`,
+both marked **[PROPOSED SPECIFICATION]** throughout with no conformance claimed.
+Neither is accepted. The producer implements only what the founder accepts;
+accepting a specification the producer wrote would restore the exact loop that
+produced four consecutive FAIL rounds.
+
+**Convergence and divergence, recorded before any decision.** The two authors
+worked from the same two FAIL audits but did not communicate. They independently
+reached the same three conclusions: stream-invariance cannot survive as a
+producer-asserted claim; the stream control must be a radio group with a separate
+explicit submit rather than a native `select` applying on `change`; and the
+advance advisement must be persistent visible text, not an accessible description
+alone. They differ on one structural point, and the difference is real rather than
+cosmetic: the design author **deletes** `DS-STREAM-INVARIANT` outright, on the
+ground that a zero-member guarded category is a place for an unexamined record to
+hide later; the accessibility author **inverts** it into `OBL-INV-01`, a
+machine-derived conclusion from four already-computable conditions, which on
+current data also yields zero routes and zero route templates. Both reach an empty
+set by different routes. The choice between them is a founder decision, not a
+producer one.
+
+**Exact non-secret action:** Read both documents and decide, at minimum:
+
+1. **Gate G-1** — style guide §8.2.2 makes `S-LOW` the unsignalled default while
+   `UX_ARCHITECTURE.md:173` states the World is entered only on explicit
+   selection. These cannot both hold. This decides what the first frame of
+   `ROUTE-HOME` shows and therefore blocks the most-produced frame in B01.
+2. **Invariance** — delete the category, or derive it via `OBL-INV-01`.
+3. **The control's role and activation model** — the authors' concurring
+   normative call is four native radio inputs in a `fieldset`/`legend` plus a
+   separate always-present submit, two-step explicit confirmation, with arrow and
+   pointer movement changing only which radio is checked.
+4. **Frame budget** — the two documents imply roughly **+15** and **13** evidence
+   frames respectively, overlapping. Against a 20-call monthly allowance this is a
+   scheduling decision. The accessibility author names frame 8, boundary arrival
+   in the incoming semantic shell, as the one that must survive any cut. **No call
+   projection is offered here; CB-09 forbids one before B01 measures, and the
+   metered unit is the call, not the frame.**
+
+**Gate G-5, recorded not fixed.** The design author found that
+`time_limit_branch` is computed by `Get-ExpectedTimeBranchForState` as a total
+function of `state_profile` — the identical derived-column defect that condemned
+`stream_profile`. It is outside both authors' mandate. The producer described that
+derivation as a virtue in the D-043 record; that description was wrong.
+
+**Standing risk on the new column.** Setting all 62 `stream_presence` values to
+all four streams would make the column functionally constant and therefore as
+meaningless as the one it replaces, and no inert-column assertion can catch it.
+Reviewers must check `PRIM-042`, `PRIM-043`, and `PRIM-044` specifically: a World
+HUD claimed present in `S-SEMANTIC` is a false claim.
+
+**Evidence required to resume:** A dated founder decision in
+`docs/decisions-log.md` naming which specification governs each contested point,
+after which the producer may implement — and only implement.
+
+**Round 1 result — 2026-09-06: MA-030 is DISCHARGED by founder decision D-045.**
+Both specifications are accepted. The four contested points resolved: G-1 is
+settled by separating stream selection (capability-derived) from World entry
+(explicit), overruling neither accepted statement; `DS-STREAM-INVARIANT` is
+**deleted** rather than derived, with `OBL-INV-01`'s conditions retained in the
+validator source as the reasoning; the concurring radio-group-plus-explicit-submit
+activation model and the persistent-visible-text advisement are **normative**; and
+the **full merged** evidence set is the obligation, with calls batched per CB-13
+and approved individually per CB-06. No call projection was offered or recorded.
+Acceptance of the *specification* is not acceptance of the *implementation*:
+R-035 stays open, MA-029 stays undischarged, and B01 stays held.
+
+**Implementation record — 2026-09-06, and the standing-risk check answered.** The
+model is implemented in both packages. Design validator
+`RESULT=PASS PASS_COUNT=201 FAIL_COUNT=0`; production
+`RESULT=PASS PASS_COUNT=165 FAIL_COUNT=0`; design freeze aggregate
+`0AA83FD298ABB12A96782205996EB3783BF8E80E11AD1B2BE44473F2E87EB536`; production freeze hash
+`4464F6C44C11E7A00C4F007C3112840C6087CB3C1321B86ED5842B9100CC50CE`.
+
+The standing risk above told reviewers to check `PRIM-042`, `PRIM-043`, and
+`PRIM-044` specifically. **They are correct:** all three World primitives declare
+`S-HIGH;S-LOW;S-MEDIUM` and withhold `S-SEMANTIC`, so no World HUD is claimed
+present in the semantic stream. The column is therefore not constant.
+
+**It is, however, close to constant, and the producer reports that rather than
+resting on the three rows that pass.** The distribution across 62 primitives is
+**50 rows at all four streams, 9 at `STREAM-SCOPE-EXCLUDED`, and 3 at three
+streams.** Only three rows discriminate. That is a defensible outcome — most
+primitives genuinely are present in every stream, which is what a peer-stream model
+means — but it is also the exact shape the standing risk warned about, and it
+propagates: because `N-01` places the semantic host shell in nearly every template's
+dependencies, the union fold yields all four streams for almost every template, and
+`stream_disposition` in the production plan comes out **constant across all nine
+batches**. Reviewers should treat the fold's discriminating power, not just its
+correctness, as the open question. Tracked at **R-037**.
+
+Three further founder resolutions were taken during implementation and are recorded
+at D-045: **G-4** (B01 `future_not_authorized` in both plan files), **G-7** (booking
+process state survives a stream change across any boundary including the semantic
+one), and **G-6** (the design system's missing stream axis is recorded as **R-039**
+and commissioned later as its own bounded contract; `DESIGN_SYSTEM_IMPLICATIONS.md`
+is untouched and its freeze hash intact).
+
+**Nothing is discharged by this record.** MA-029 remains `awaiting_human`, R-035 and
+R-036 remain open, R-034 is **not** closed because its exit evidence names an
+independent reviewer and this was again a producer sweep, B01 remains held, zero
+Figma allowance is consumed, and nothing is staged or committed.
+**Secret-handling rule:** Record no credential, billing, or account data.

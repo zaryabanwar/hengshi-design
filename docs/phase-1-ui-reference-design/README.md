@@ -2,6 +2,7 @@
 
 **Project:** Hengshi Design  
 **Package date:** 2026-09-03  
+**Amended:** 2026-09-06 under D-042 and D-043 (CR-002 revision window). The 2026-09-03 producer freeze date above is retained as provenance and is not restated as current; the delivery stream axis, the ACT-09 stream control, and the peer-framing renames were added after it.  
 **Status:** Producer iteration 3 of 3; final producer freeze awaiting fresh
 independent design and independent accessibility review before founder decision
 at MA-024  
@@ -49,25 +50,26 @@ published by this package.
 
 | Authority set | Contracted count | Coverage artifact |
 |---|---:|---|
-| Canonical route definitions | 33 | [Foundation route coverage](foundation-route-coverage.csv) |
+| Canonical route definitions | 34 | [Foundation route coverage](foundation-route-coverage.csv) |
 | Exclusion classes | 9 | [Foundation flow coverage](foundation-flow-coverage.csv) |
 | Wayfinding records | 15 | [Foundation flow coverage](foundation-flow-coverage.csv) |
 | Action contracts | 53 | [Foundation flow coverage](foundation-flow-coverage.csv) |
-| UX acceptance tests | 45 | [Traceability](traceability.csv) |
+| UX acceptance tests | 46 | [Traceability](traceability.csv) |
 
 ## Artifact map
 
 | Artifact | Role |
 |---|---|
 | [UI reference-design contract](UI_REFERENCE_DESIGN_CONTRACT.md) | Normative scope, evidence levels, naming, responsive/state/mode rules, interaction notes, content/asset constraints, handoff, and gates |
-| [Foundation route coverage](foundation-route-coverage.csv) | Exact 33-route ID/path inventory, route-instance/template assignment, state/view/mode profiles, and content gates |
+| [Foundation route coverage](foundation-route-coverage.csv) | Exact 34-route ID/path inventory, route-instance/template assignment, state/view/mode profiles, and content gates |
 | [Foundation flow coverage](foundation-flow-coverage.csv) | Non-route flow families, all 53 actions, nine exclusions, and 15 wayfinding records with assigned references and recovery evidence |
 | [Reference-template inventory](reference-template-inventory.csv) | Reusable screen/surface contracts and unique tool-neutral representative frame names |
 | [Responsive, state, and mode matrix](responsive-state-mode-matrix.csv) | Named profiles for mandatory viewports, states, accessibility modes, degraded modes, the NFR-006 browser floor, WCAG 2.2 SC 2.2.1 time-limit branches, and evidence rules |
+| Delivery stream profiles | `DS-S-HIGH`, `DS-S-MEDIUM`, `DS-S-LOW`, and `DS-S-SEMANTIC` in the same matrix, stating what evidence each stream owes. Stream presence itself is **not** assigned on a record: it is declared at the primitive in `component-primitives.csv.stream_presence`, computed at the template as the union over `primitive_dependencies`, and inherited unstored by routes and flows. Per-stream evidence is therefore a resolvable obligation rather than a column a producer fills in |
 | [Design batch plan](design-batch-plan.csv) | Dependency-ordered later visual-production batches with single primary template/source ownership, separate supporting evidence, hard prerequisites, review obligations, and stop conditions |
 | [Design-system implications](DESIGN_SYSTEM_IMPLICATIONS.md) | Semantic token/component guidance owned by the design-system specialist |
 | [Component primitives](component-primitives.csv) | Machine-readable `PRIM-*` primitive inventory owned by the design-system specialist |
-| [Traceability](traceability.csv) | Direct mapping to D-025/D-026/D-035/D-036, requirements, routes, exclusions, actions, 45 UX tests, and manual gates |
+| [Traceability](traceability.csv) | Direct mapping to D-025/D-026/D-035/D-036, requirements, routes, exclusions, actions, 46 UX tests, and manual gates |
 | [Validator](validation/validate-ui-reference-design.ps1) | Deterministic parsing, exact-set, reference, scope, claim, and gate checks |
 | [Validation report](validation/validation-report.md) | Executed command, timestamp, counts, outcome, and limitations |
 | [Producer inspection](producer-inspection.md) | Producer scope, completeness, feasibility, and unresolved-gate inspection |

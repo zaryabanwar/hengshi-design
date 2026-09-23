@@ -1,5 +1,5 @@
-route_id,path,route_family,semantic_quick_access,optional_immersive_representation,primary_next_actions,content_or_policy_gate
-ROUTE-HOME,/,entity,"Complete home decision page","Reception/atrium orientation panel","Services; Industries; Work; Demos; Insights; Experts; Trust; About; Contact; Book; optional World","Approved positioning only; entity facts/public copy held"
+route_id,path,route_family,semantic_quick_access,immersive_stream_representation,primary_next_actions,content_or_policy_gate
+ROUTE-HOME,/,entity,"Complete home decision page","Reception/atrium orientation panel","Services; Industries; Work; Demos; Insights; Experts; Trust; About; Contact; Book; World stream","Approved positioning only; entity facts/public copy held"
 ROUTE-SERVICES,/services,service_collection,"Five-wing and ten-service directory","Atrium wing directory","Open wing; search directory; Book","No capability proof inferred from taxonomy"
 ROUTE-WING-STRATEGY,/services/strategy-transformation,service_wing,"Wing overview and contained service","Sequenced Strategy threshold; closed/held/opening/open per wayfinding-release-map.csv","Open Strategy & Architecture; Trust; Book","Wing narrative/owner held"
 ROUTE-SERVICE-STRATEGY-ARCHITECTURE,/services/strategy-transformation/strategy-architecture,service,"Formal service decision unit","Strategy & Architecture room/panel","Related evidence; sources; Book","Scope/evidence/owner held"
@@ -32,3 +32,4 @@ ROUTE-TRUST-DETAIL,/trust/{topic-slug},trust_topic,"Specific dated trust/policy 
 ROUTE-ABOUT,/about,about,"Verified identity and operating-approach page","About/identity panel","Services; Trust; Contact; Book","No inferred history/size/office/customer/award"
 ROUTE-CONTACT,/contact,contact,"Verified direct-help choices and contact route","Reception human-help panel","Book; available human help; verified contact method","Contacts/consent/privacy/failure route held"
 ROUTE-BOOK,/book,booking,"Complete direct qualified-booking journey","Booking panel that opens same semantic booking flow","Qualify; verify email; select slot; confirm; recover","Mailbox/calendar/provider/legal copy rules held"
+ROUTE-CREDITS,/credits,attribution,"Complete attribution notice reachable from the footer in every delivery stream","Attribution panel that opens the same semantic notice","Return to prior route; open source asset licence","Exact licence text author names and source URLs held to the asset provenance ledger"

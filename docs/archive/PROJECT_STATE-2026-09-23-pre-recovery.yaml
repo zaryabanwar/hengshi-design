@@ -1,0 +1,1335 @@
+schema_version: 1
+last_updated: "2026-09-06"
+classification: business_confidential
+
+project:
+  name: Hengshi Design
+  repository_root: .
+  branch_observed: main
+  remote_observed: origin
+  repository_strategy: preserve_existing_codebase
+  prototype_status: protected_evidence_not_production_authority
+
+authority:
+  precedence:
+    - current_explicit_founder_approval_recorded_in_decisions
+    - constitution_and_project_safety_governance_rules
+    - approved_decisions_and_compatibility_exception_adrs
+    - approved_product_requirements_and_feature_specs
+    - approved_software_definition_and_design_artifacts
+    - source_tests_generated_artifacts_and_live_observations
+    - active_unreconciled_historical_research_drafts_and_chat
+  resolved_conflicts:
+    - id: CONFLICT-001
+      status: accepted
+      resolution_state: resolved
+      summary: >-
+        Fixed React 18, PostgreSQL 16, and AWS governance targets conflicted with the
+        founder-approved newest-compatible-stable and Azure direction.
+      resolution: >-
+        Phase 0 amended Constitution 2.0.0, AGENTS.md, project rules, software
+        definitions, Copilot instructions, and Spec Kit templates to implement the
+        approved policy.
+      remaining_follow_up: >-
+        Phase 1 must supersede or reconcile legacy v3 product documents, active
+        technical references, backlog, diagrams, and draft feature specs before
+        implementation.
+
+workflow:
+  lifecycle:
+    - create
+    - validate
+    - inspect
+    - review
+    - revise
+    - validate_again
+    - approve
+    - continue
+  allowed_statuses:
+    - not_started
+    - in_progress
+    - blocked
+    - awaiting_human
+    - in_review
+    - accepted
+  current_phase: phase_1_definition_seo_design_architecture_and_compatibility
+  current_status: in_progress
+  current_gate: MA_025_external_UI_reference_production_authorization
+  default_max_revision_iterations: 2
+  phase_0:
+    status: accepted
+    objective: >-
+      Establish non-destructive durable workflow records, an authority bridge,
+      evidence-based readiness, risks, manual gates, and a resumable Phase 1 contract.
+    application_code_changed: false
+    dependencies_changed: false
+    migrations_created: false
+    external_systems_changed: false
+    commit_created: true
+    commit_evidence: d96ce616350c02667a020bde99edd8ec3e7159d0
+    governance_amendment_applied: true
+    approval_required: satisfied_2026_07_19
+    founder_approval:
+      status: accepted
+      date: "2026-07-19"
+      evidence: explicit_founder_thumbs_up_in_active_codex_task
+  phase_1:
+    status: in_progress
+    title: Definition, SEO, design, architecture, and compatibility package
+    iteration: 1
+    maximum_revision_iterations: 2
+    design_maximum_revision_iterations: 3
+    objective: >-
+      Produce the complete founder-reviewable definition package and reconcile
+      legacy evidence before any application implementation begins.
+    inputs:
+      - approved_decisions_D_001_through_D_036
+      - phase_0_governance_and_authority_bridge
+      - protected_prototype_code_documents_data_and_glb
+      - approved_reference_sites
+      - context7_and_official_primary_sources
+    workstreams:
+      foundation_requirements_claims_and_seo: accepted
+      legacy_definition_reconciliation: in_progress
+      compatibility_matrix_and_upgrade_policy: awaiting_human
+      brand_strategy_and_identity: accepted
+      ux_ui_and_accessible_journeys: in_progress
+      ui_reference_design: accepted
+      ui_reference_visual_production: awaiting_human
+      three_d_storyboard_and_asset_specification: not_started
+      technical_architecture_and_contracts: not_started
+      security_privacy_ai_and_legal_controls: not_started
+      qa_deployment_recovery_and_cost: not_started
+    validators:
+      - decision_requirement_traceability
+      - machine_readable_artifact_parsing
+      - local_reference_validation
+      - unsupported_claim_and_secret_scan
+      - context7_and_official_source_evidence
+      - independent_specialist_reviews
+    bounded_slices:
+      foundation_requirements_claims_and_seo:
+        status: accepted
+        artifacts: docs/phase-1-foundation
+        validation: 49_passes_zero_failures
+        independent_requirements_review: iteration_2_pass
+        independent_seo_review: iteration_2_pass
+        founder_gate: MA-012
+        founder_approval: accepted_2026_07_19_D_025
+        industries_parent_hub: retained
+        implementation_authorized: false
+      compatibility_inventory:
+        status: accepted
+        artifacts: docs/phase-1-compatibility
+        validation: passed
+        baseline_items: 50
+        graph_components: 50
+        coupling_edges: 27
+        deferred_families: 9
+        exact_lock_selection: deferred
+        independent_review: iteration_2_pass
+        founder_gate: MA-013
+      brand_strategy:
+        status: accepted
+        artifacts: docs/phase-1-brand-strategy
+        recommended_direction: evidence_in_motion
+        category: evidence_led_innovation_delivery_partner
+        promise: from_complex_ambition_to_accountable_delivery
+        producer_revision_iterations_used: 2
+        validation: 43_passes_zero_failures
+        independent_review_iteration_1: revise_0_critical_1_high_1_medium_1_low
+        independent_review_iteration_2: pass_all_3_findings_closed_no_new_findings
+        founder_gate: MA-014
+        founder_approval: accepted_2026_07_19_D_026
+        identity_status: accepted_2026_07_20_D_035
+      brand_identity:
+        status: accepted
+        artifacts: docs/phase-1-brand-identity
+        approved_strategy: evidence_in_motion_D_026
+        maximum_revision_iterations: 3
+        producer_revision_iterations_used: 3
+        active_producer_iteration: complete_D_035
+        normal_revision_limit_state: exhausted_3_of_3
+        correction_exception_authority: approved_2026_07_19_D_028
+        correction_exception_scope: recorded_iteration_3_findings_only
+        correction_exception_state: exhausted_failed_browser_accessibility_pass
+        correction_exception_stabilization: consumed_1_of_1
+        evidence_stabilization_authority: approved_2026_07_19_D_029
+        evidence_stabilization_scope: exact_four_recorded_browser_failures_only
+        evidence_stabilization_limit: one_deterministic_and_one_browser_pass_no_retry
+        immutable_evidence_requirement: six_reports_and_existing_archives_byte_for_byte
+        evidence_stabilization_state: exhausted_at_validator_harness_error_before_assertions
+        product_patch_state: six_authorized_files_applied_unassessed
+        validator_harness_repair_authority: approved_2026_07_20_D_030
+        validator_harness_repair_scope: line_171_selector_syntax_only
+        validator_harness_repair_limit: one_change_one_validator_no_retry
+        validator_harness_repair_state: exhausted_at_neighbor_forced_colors_selector
+        remaining_malformed_selector_audit: exactly_2_forced_colors_and_color_contrast
+        exhaustive_selector_authority: approved_2026_07_20_D_031
+        exhaustive_selector_scope: exactly_forced_colors_and_color_contrast
+        exhaustive_selector_limit: one_change_set_one_validator_no_retry
+        exhaustive_selector_state: completed_zero_malformed_hits
+        stale_assertion_audit: exactly_2_authority_phrase_and_manifest_version
+        assertion_literal_authority: approved_2026_07_20_D_032
+        assertion_literal_scope: exactly_authority_phrase_and_manifest_version
+        assertion_literal_limit: one_change_set_one_validator_no_retry
+        assertion_literal_state: completed_59_passes_zero_failures
+        change_request: docs/requirements/CHANGE_REQUEST_CR-001.md
+        change_authority: approved_2026_07_19_D_027
+        retained_system: signal_ledger
+        rejected_logo_candidate: signal_ledger_logo
+        revision_target: quiet_framework_derived_logo_hybrid
+        producer_validation: passed_D_034_final_freeze_63_passes_zero_failures
+        browser_accessibility_evidence: passed_9_states_zero_violation_zero_incomplete
+        browser_accessibility_report: docs/phase-1-brand-identity/validation/browser-audit-report.json
+        browser_accessibility_report_sha256: 6BCB2CAA0EA56BA8F64723BFBF451BD40720024ABE6ABE4183FFA94B839ED8A4
+        d_029_original_failure_classes: closed_4_of_4
+        remaining_contrast_incomplete: none
+        remaining_contrast_violation: none
+        browser_hygiene: zero_external_zero_console_zero_page_errors_temp_profile_removed
+        evidence_refresh_and_freeze: completed_D_034_final_freeze
+        final_contrast_authority: approved_2026_07_20_D_033
+        final_contrast_scope: dependency_key_four_states_and_print_three_nodes
+        final_contrast_limit: one_source_change_set_one_validator_one_browser_no_retry
+        final_contrast_state: completed_clean_frozen_D_034
+        final_contrast_checkpoint: docs/phase-1-brand-identity/validation/d-033-pre-contrast-correction-hashes.json
+        final_contrast_checkpoint_sha256: 58A1823E3261440CE4B51969F0C95FA7A63A6EC9D8EA6D1503951A89520BE0D0
+        final_contrast_source_change: css_only_applied_sha256_595B798239B5DB913CC89074AAEB8066184F64892258B0F4988D1FE89F507CE2
+        final_contrast_validator: D_033_exhausted_1_of_1_exit_1_56_pass_3_fail_then_D_034_final_63_pass_0_fail
+        final_contrast_validator_failures: preflight_mutable_report_old_css_literal_and_pinned_failed_report_signature
+        final_contrast_browser_invocations: D_033_0_D_034_2_plus_1_diagnostic
+        final_contrast_evidence_freeze: completed_D_034
+        final_contrast_temp_residue: 0
+        final_contrast_final_css_sha256: F05FEB9040F7F7B92510301D2542D655AC1FAB3934374923618A3BED892476A3
+        final_contrast_final_html_sha256: 1C9415513111C7835E5FDF05F12B9A6BCFE0961C1320FBEF90FC9816CB26B92C
+        completion_authority: approved_2026_07_20_D_034
+        completion_directive: just_complete_this_now_all
+        completion_scope: D_033_contrast_harness_evidence_and_verification_only
+        completion_retry_policy: internal_non_material_harness_and_evidence_reruns_allowed_as_needed
+        completion_state: complete_clean_frozen_independently_verified
+        completion_log: docs/phase-1-brand-identity/validation/d-034-completion-log.md
+        completion_log_sha256: 74B8E649727A8BB89CE2815A66CF7FAF082F99378A35C4DF1D9CCB39E3E18AA9
+        final_manifest_sha256: 2FDE436AEF81BC7E852B72F7BABD1FFD81DAB9CB056BC9E7F4787D4727D731BC
+        design_review_iteration_1: revise_0_critical_0_high_6_medium_0_low
+        accessibility_review_iteration_1: revise_0_critical_0_high_2_medium_0_low
+        design_review_iteration_2: pass_all_6_prior_findings_closed_1_new_nonblocking_low
+        accessibility_review_iteration_2: pass_all_2_prior_findings_closed_no_new_findings
+        residual_follow_up: R_020_closed_by_D_034_evidence_and_D_035_acceptance
+        design_review_iteration_3: revise_0_critical_0_high_4_medium_0_low
+        accessibility_review_iteration_3: revise_0_critical_0_high_2_medium_1_low
+        design_exception_verification: pass_0_critical_0_high_0_medium_0_low
+        design_exception_report: docs/phase-1-brand-identity/reviews/design-verification-evidence-stabilization-1.md
+        design_exception_report_sha256: 45CD6B08227C1E0BEEB5CB4C69479601F4729E1E6BF23D7EC26A8F0DAF01255C
+        accessibility_exception_verification: pass_0_critical_0_high_0_medium_0_low
+        accessibility_exception_report: docs/phase-1-brand-identity/accessibility/accessibility-verification-evidence-stabilization-1.md
+        accessibility_exception_report_sha256: B37412592FF95C2F0E9B1B200FB35F3A34076BCC062B0D27A51CEDB39FF6FA54
+        protected_integrity: zero_mismatch_6_reports_31_archive_24_forbidden
+        correction_gate: MA-022_accepted_2026_07_20_D_034
+        founder_gate: MA-015_accepted_2026_07_20_D_035
+        founder_approval: accepted_2026_07_20_D_035
+        legal_clearance: trademark_not_cleared_marks_unregistered
+        implementation_authorized: false
+      ux_architecture:
+        status: accepted
+        artifacts: docs/phase-1-ux-architecture
+        maximum_revision_iterations: 3
+        producer_revision_iterations_used: 3
+        final_validation: 113_passes_zero_failures
+        routes: 33
+        exclusions: 9
+        wayfinding_entries: 15
+        action_contracts: 53
+        ux_tests: 45
+        traceability_rows: 123
+        final_producer_package_sha256: 35E0EA46C1099BA271521EF55AFF3E3F83B76FF2E13C7E94387D76757FFC89D3
+        design_review_iteration_1: revise_0_critical_1_high_3_medium_0_low
+        accessibility_audit_iteration_1: revise_0_critical_0_high_5_medium_0_low
+        design_review_iteration_2: pass_0_critical_0_high_0_medium_0_low
+        accessibility_audit_iteration_2: revise_0_critical_0_high_1_medium_0_low
+        design_review_iteration_3: pass_0_critical_0_high_0_medium_0_low
+        design_review_iteration_3_sha256: 31B30DE62DDA30988401A309FEBDF9DD495D1430A4018AD2CB265AB60A2EC276
+        accessibility_audit_iteration_3: pass_0_critical_0_high_0_medium_0_low
+        accessibility_audit_iteration_3_sha256: A4B2E128377432FF00B4144A86D89FB3985506009B5AAE4FD2EB5959B6CBF95D
+        unresolved_critical_high_medium: 0
+        founder_gate: MA-023
+        founder_approval: accepted_2026_07_20_D_036
+        implementation_authorized: false
+        external_design_write_authorized: false
+      ui_reference_design:
+        status: accepted
+        recommended_next_slice: false
+        artifacts: docs/phase-1-ui-reference-design
+        maximum_revision_iterations: 3
+        producer_revision_iterations_used: 3
+        final_validation: 183_passes_zero_failures
+        routes: 33
+        exclusions: 9
+        wayfinding_entries: 15
+        action_contracts: 53
+        ux_tests: 45
+        flow_rows: 89
+        reusable_templates: 40
+        responsive_state_accessibility_profiles: 32
+        component_primitives: 62
+        future_design_batches: 9
+        primary_source_owners: 154
+        traceability_rows: 271
+        final_producer_package_sha256: 97E79201CC36F01718A027AD800E63BDD5AAFC47E41137D65253BAABA6B2120F
+        full_18_file_package_sha256: 0ED1A7848F328B2B72B088749684A259F3677814BEB0F6C79825C3EE66EABCE8
+        design_review_iteration_1: revise_0_critical_2_high_4_medium_0_low
+        design_review_iteration_2: pass_0_critical_0_high_0_medium_0_low_against_producer_iteration_2
+        design_review_iteration_3: pass_0_critical_0_high_0_medium_0_low
+        design_review_iteration_3_report: docs/phase-1-ui-reference-design/reviews/design-review-iteration-3.md
+        design_review_iteration_3_sha256: 66460F9DA5392035CB29AA0F941C0880F9AB5A712A176AC920370D54EFE2BF51
+        accessibility_audit_iteration_1: revise_0_critical_1_high_2_medium_0_low
+        accessibility_audit_iteration_2: pass_0_critical_0_high_0_medium_0_low
+        accessibility_audit_iteration_2_report: docs/phase-1-ui-reference-design/accessibility/accessibility-audit-iteration-2.md
+        accessibility_audit_iteration_2_sha256: C66A96A6C977EA834CD1310D67C3223BA84BD8B0F70336EC754AC468B1CFC346
+        unresolved_critical_high_medium: 0
+        objective: >-
+          Define the bounded UI reference-screen contract and foundation-surface
+          coverage plan grounded in accepted D-036 UX architecture, without creating
+          production UI or making an external Figma/Stitch write.
+        founder_gate: MA-024
+        founder_approval: accepted_2026_09_05_D_037
+        external_design_write_authorized: false
+        implementation_authorized: false
+        future_external_design_write_gate_required: true
+        normal_revision_limit_state: exhausted_3_of_3
+        material_revision_requires_change_request: true
+      ui_reference_production_contract:
+        status: awaiting_human
+        artifacts: docs/phase-1-ui-reference-production
+        objective: >-
+          Define the bounded external design-provider production contract required
+          before any Figma or Stitch write, grounded in the D-037 accepted UI
+          reference-design package, without performing an external operation.
+        producer_freeze_files: 9
+        producer_freeze_sha256: 3DF0DBB6A6ADFC5FC8A09865A00AB92F27EE91D3F418E4368BA9B17033358528
+        producer_freeze_sha256_at_ma025_acceptance: E3786F14C9F12CBF8127A18E7959881B91A9ECC5DC11BBE3E466BCEC6C7EC08D
+        producer_freeze_supersession: >-
+          Re-frozen 2026-09-06 by decision D-040. The contract now records the
+          D-037 freeze supersession. The MA-025 acceptance value above is retained
+          as provenance and must not be deleted.
+        producer_validation: 153_passes_zero_failures
+        validator: docs/phase-1-ui-reference-production/validation/validate-ui-reference-production.ps1
+        selected_provider: figma
+        stitch_in_scope: false
+        authorized_batches: B01;B02;B03;B04;B05;B06;B08
+        authorized_batch_count: 7
+        deferred_batches: B07;B09
+        deferred_batch_reason: >-
+          B07 requires an approved 3D storyboard and asset specification and MA-004
+          GLB provenance; B09 hard-requires B07. Both defer to MA-026 together with
+          docs/ui/UI_SPEC.md and the final visual-direction decision.
+        pilot_batch: B01
+        pilot_gate: founder_b01_pilot_acceptance_before_b02
+        permitted_external_operations: 8
+        prohibited_external_operations: 11
+        stop_conditions: 12
+        evidence_rules: 30
+        traceability_rows: 40
+        cost_boundary: zero_spend_free_tier_single_editor_paid_steps_route_to_MA_010
+        section_15_handoff_completable_under_ma_025: false
+        host_provider_mcp_exposure: none_configured_or_exposed_verified_2026_09_06
+        canonical_mcp_inventory_present: false
+        stale_tooling_claim: docs/software-definition/02-ai-dev-tooling-and-mcp.md_line_43
+        unverified_provider_limits: 5
+        unverified_provider_limit_items: >-
+          starter_file_count; pages_per_file; version_history_retention;
+          editor_caps; dev_mode_availability
+        capability_evidence_recorded: false
+        external_design_write_authorized: false
+        external_write_performed: false
+        implementation_authorized: false
+        independent_design_review: not_started
+        independent_accessibility_review: not_started
+        founder_gate: MA-025
+    reviewer: foundation_brand_strategy_brand_identity_and_UX_architecture_accepted_UI_contract_independently_reviewed
+    current_gate: external_UI_reference_production_MA_025_prepared_and_awaiting_founder_decision_with_compatibility_MA_013_separate
+    founder_gate: founder_phase_1_acceptance_before_phase_2
+  phase_2:
+    status: blocked
+    blocked_by: phase_1_acceptance
+  phase_3:
+    status: blocked
+    blocked_by: phase_2_acceptance
+  phase_4:
+    status: blocked
+    blocked_by: phase_3_acceptance
+  phase_5:
+    status: blocked
+    blocked_by: phase_4_acceptance
+  phase_6:
+    status: blocked
+    blocked_by: phase_5_acceptance
+  phase_7:
+    status: blocked
+    blocked_by: phase_6_acceptance
+  phase_8:
+    status: blocked
+    blocked_by: phase_7_acceptance
+  phase_9:
+    status: blocked
+    blocked_by: phase_8_acceptance
+
+working_tree_baseline:
+  classification: historical_pre_phase_0_snapshot
+  interpretation: >-
+    These counts preserve the pre-Phase-0 observation and are not assertions about
+    the current working tree. The protected files were incorporated into later
+    repository history; current tree state must be established with a fresh Git
+    reconciliation.
+  observed_on: "2026-07-18"
+  tracked_modified_files_before_phase_0: 16
+  untracked_files_before_phase_0: 63
+  staged_files_before_phase_0: 0
+  preservation_rule: >-
+    Treat every pre-existing modification and untracked file as user-owned; do not
+    revert, relocate, stage, or overwrite it.
+
+readiness:
+  local:
+    status: in_progress
+    statement: >-
+      Prototype code and local QA scaffolding exist, but deterministic frontend,
+      authorization, database, dependency, and documentation conflicts remain.
+  uat:
+    status: not_started
+    statement: >-
+      No approved UAT definition, persistent UAT environment, complete test evidence,
+      or accepted release candidate exists.
+  launch:
+    status: blocked
+    statement: >-
+      Definition, proof, legal/trademark, UX/UI design, infrastructure, CI/CD,
+      observability, security, accessibility, DNS, and provider gates remain unresolved.
+
+verified_local_findings:
+  - id: FACT-001
+    status: blocked
+    evidence: apps/web/src/world/WorldHUD.tsx
+    finding: WorldHUD returns before a later useMemo call, creating a hook-order defect.
+  - id: FACT-002
+    status: blocked
+    evidence: apps/api/app/auth/deps.py
+    finding: require_admin returns any authenticated active user without enforcing the admin role.
+  - id: FACT-003
+    status: blocked
+    evidence: apps/api/app/db/session.py
+    finding: Missing DATABASE_URL silently selects a local SQLite database.
+  - id: FACT-004
+    status: in_progress
+    evidence: apps/web/public/models/hengshi-hq-atlanta-exterior-web.glb
+    finding: The protected exterior GLB is 10002012 bytes and has no project-owned editable source found.
+  - id: FACT-005
+    status: not_started
+    evidence: .github/workflows
+    finding: No GitHub Actions workflow directory was present at the Phase 0 observation.
+  - id: FACT-006
+    status: in_progress
+    evidence: docs/Hengshi_Design_Project_Consolidation_v3.docx
+    finding: February 2026 readiness percentages are historical self-reported snapshots, not current acceptance evidence.
+  - id: FACT-007
+    status: accepted
+    evidence: docs/phase-1-foundation/evidence/libreoffice-capability-2026-07-19.md
+    finding: >-
+      LibreOffice 26.2.4.2 is installed and its headless conversion capability now
+      passes. A generated control DOCX and the 24-page historical consolidation both
+      produced PDFs; every target page rendered for visual inspection. The historical
+      source retains a blank table of contents and sparse continuation pages, which
+      are source-layout limitations rather than converter failure. Independent QA
+      passed the evidence and R-019 is closed with a fresh-conversion residual control.
+
+artifacts:
+  phase_0:
+    - .specify/memory/constitution.md
+    - .specify/templates/checklist-template.md
+    - .specify/templates/constitution-template.md
+    - .specify/templates/plan-template.md
+    - .specify/templates/spec-template.md
+    - .specify/templates/tasks-template.md
+    - .github/copilot-instructions.md
+    - AGENTS.md
+    - PROJECT.md
+    - PROJECT_STATE.yaml
+    - TASKS.md
+    - DECISIONS.md
+    - RISKS.md
+    - MANUAL_ACTIONS.md
+    - CHANGELOG.md
+    - docs/PROJECT_RULES.md
+    - docs/decisions-log.md
+    - docs/active/Documentation_Index.md
+    - docs/software-definition/README.md
+    - docs/software-definition/01-system-boundaries.md
+    - docs/software-definition/02-ai-dev-tooling-and-mcp.md
+    - docs/software-definition/03-autonomous-ai-development-workflow.md
+  phase_1:
+    foundation: docs/phase-1-foundation
+    compatibility_inventory: docs/phase-1-compatibility
+    brand_strategy: docs/phase-1-brand-strategy
+    brand_identity: docs/phase-1-brand-identity
+    ux_architecture: docs/phase-1-ux-architecture
+    ui_reference_design_contract: docs/phase-1-ui-reference-design
+    ui_reference_production_contract: docs/phase-1-ui-reference-production
+    change_request_CR_001: docs/requirements/CHANGE_REQUEST_CR-001.md
+    change_request_CR_002: docs/requirements/CHANGE_REQUEST_CR-002.md
+    asset_provenance_hq_exterior: >-
+      docs/phase-1-3d/asset-provenance/HSD-ASSET-001-hq-exterior.md
+
+local_tooling_verified_2026_09_06:
+  blender:
+    state: installed_and_cli_verified
+    version: 5.0.1
+    build_date: "2025-12-16"
+    path: C:\Program Files\Blender Foundation\Blender 5.0\blender.exe
+    note: >-
+      Not on PATH; the executable must be invoked explicitly. No Blender session,
+      import, or mesh edit has been performed.
+  python: { state: on_path, version: "3.14" }
+  node_npm: { state: on_path }
+  powershell: { state: on_path, version: "7" }
+  git: { state: on_path }
+  docker: { state: on_path, operational_status: not_established }
+  figma:
+    state: capability_tested
+    endpoint: https://mcp.figma.com/mcp
+    endpoint_source: figma_official_dev_mode_mcp_guide_verified_2026_09_06
+    scope: user_config_not_repository
+    repository_mcp_json_present: false
+    authenticated: true
+    authenticated_on: "2026-09-06"
+    authenticated_by: founder
+    host_status: connected
+    tools_observed_in_session: true
+    tools_observed_on: "2026-09-06"
+    capability_test:
+      tool: whoami
+      result: pass
+      rate_limit_exempt: true
+      note: >-
+        Read-only, canvas untouched, documented by the provider as exempt from
+        rate limits, so the test consumed no allowance.
+    account_plan: free
+    account_tier: starter
+    account_seat: full
+    mcp_tool_call_allowance:
+      value: 20
+      period: calendar_month
+      verified_on: "2026-09-06"
+      source: figma_official_resource_rate_limits_access_md
+      note: >-
+        The Starter column spans both seat rows, so a Full seat does NOT receive
+        the 200/day allowance. The provider's own upgrade-remediation text states
+        the 20-per-month figure directly.
+    write_tool_exemption: not_asserted
+    write_tool_exemption_note: >-
+      The provider states generally that write tools are exempt but enumerates
+      only add_code_connect_map, create_new_file, and whoami. Scope disagreement
+      is unresolved, so every call is assumed metered until measured. See CB-02.
+    plan_requirement: available_on_all_seats_and_plans_including_free
+    canvas_write_supported: true
+    canvas_write_requires_remote_server: true
+    canvas_write_pricing: free_during_beta_documented_to_become_usage_based_paid
+    pricing_recheck_policy: >-
+      None. The founder directed on 2026-09-06 that the account is on a free plan
+      and that no recurring pricing check be performed. Accepted: a free plan with
+      no payment method cannot be charged silently. Residual exposure is loss of
+      capability rather than spend, and it announces itself when a write fails or
+      prompts to upgrade. See R-031.
+    note: >-
+      Host-level authentication is complete, but MCP tools bind to a session at
+      start-up and this session predates the server, so no Figma tool is callable
+      from it. RESOLVED 2026-09-06: Claude Code was restarted, the Figma tool set
+      bound into the session, and whoami passed. Connectivity is now claimed on
+      observed evidence and capability-evidence.md is written.
+  stitch: { state: not_configured_or_exposed, note: out_of_scope_per_MA_025 }
+  mcp_servers: { state: none_configured, canonical_inventory_present: false }
+
+reviews:
+  phase_0:
+    status: accepted
+    maximum_revision_iterations: 2
+    completed_review_iterations: 2
+    revision_iterations_used: 2
+    iteration_1:
+      reviewer: hengshi_code_reviewer
+      verdict: revise
+      findings:
+        high: 4
+        medium: 1
+      revisions_applied:
+        - removed_documentation_index_single_source_claim
+        - restored_context7_and_official_sources_requirement
+        - removed_ungated_alembic_command_from_generic_startup
+        - demoted_unapproved_legacy_fps_thresholds_to_phase_1_proposal
+        - corrected_constitution_sync_report
+      revalidation_status: passed_before_iteration_2
+    iteration_2:
+      reviewer: hengshi_code_reviewer
+      verdict: pass
+      findings:
+        critical: 0
+        high: 0
+        medium: 0
+        actionable_low: 0
+      validation:
+        - yaml_and_status_vocabulary_passed
+        - phase_0_artifact_paths_passed
+        - decision_and_manual_action_alignment_passed
+        - local_markdown_and_deferred_spec_paths_passed
+        - secret_and_stale_governance_scans_passed
+        - git_diff_scope_stage_and_divergence_checks_passed
+      founder_gate_recommendation: proceed
+    post_review_evidence_correction:
+      date: "2026-07-18"
+      correction: libreoffice_is_installed_but_headless_render_capability_crashes
+      checks:
+        - soffice_version_25_8_7_3_passed
+        - packaged_renderer_timed_out_without_output
+        - clean_profile_source_conversion_crashed_0xc0000409
+        - normalized_docx_conversion_crashed_0xc0000409
+        - one_paragraph_control_conversion_crashed_0xc0000409
+        - safe_mode_control_conversion_crashed_0xc0000409
+      phase_impact: non_blocking_historical_document_visual_qa_limitation
+  phase_1:
+    foundation:
+      status: accepted
+      revision_iterations_used: 1
+      requirements_iteration_1: revise_3_high_1_medium
+      requirements_iteration_2: pass_4_of_4_closed_no_new_findings
+      seo_iteration_1: revise_2_medium
+      seo_iteration_2: pass_2_of_2_closed_no_new_high_or_medium
+      final_validation: 49_passes_zero_failures
+      founder_gate: MA-012
+      founder_approval: accepted_2026_07_19_D_025
+      industries_parent_hub: retained
+    compatibility_inventory:
+      status: awaiting_human
+      producer_validation: passed
+      exact_lock_selection: deferred
+      independent_review: iteration_2_pass
+      iteration_1: revise_evidence_traceability_wave_coherence_and_supply_chain_controls
+      iteration_2: pass_all_4_findings_closed_no_new_blocker_high_or_medium
+      founder_gate: MA-013
+    brand_strategy:
+      status: accepted
+      producer_revision_iterations_used: 2
+      producer_validation: 43_passes_zero_failures
+      iteration_1: revise_0_critical_1_high_1_medium_1_low
+      iteration_2: pass_all_3_findings_closed_no_new_findings
+      recommended_direction: evidence_in_motion
+      founder_gate: MA-014
+      founder_approval: accepted_2026_07_19_D_026
+      identity_status: accepted_2026_07_20_D_035
+    brand_identity:
+      status: accepted
+      approved_strategy: evidence_in_motion_D_026
+      maximum_revision_iterations: 3
+      producer_revision_iterations_used: 3
+      active_producer_iteration: complete_D_035
+      normal_revision_limit_state: exhausted_3_of_3
+      correction_exception_authority: approved_2026_07_19_D_028
+      correction_exception_scope: recorded_iteration_3_findings_only
+      correction_exception_state: exhausted_failed_browser_accessibility_pass
+      correction_exception_stabilization: consumed_1_of_1
+      evidence_stabilization_authority: approved_2026_07_19_D_029
+      evidence_stabilization_scope: exact_four_recorded_browser_failures_only
+      evidence_stabilization_limit: one_deterministic_and_one_browser_pass_no_retry
+      immutable_evidence_requirement: six_reports_and_existing_archives_byte_for_byte
+      evidence_stabilization_state: exhausted_at_validator_harness_error_before_assertions
+      product_patch_state: six_authorized_files_applied_unassessed
+      validator_harness_repair_authority: approved_2026_07_20_D_030
+      validator_harness_repair_scope: line_171_selector_syntax_only
+      validator_harness_repair_limit: one_change_one_validator_no_retry
+      validator_harness_repair_state: exhausted_at_neighbor_forced_colors_selector
+      remaining_malformed_selector_audit: exactly_2_forced_colors_and_color_contrast
+      exhaustive_selector_authority: approved_2026_07_20_D_031
+      exhaustive_selector_scope: exactly_forced_colors_and_color_contrast
+      exhaustive_selector_limit: one_change_set_one_validator_no_retry
+      exhaustive_selector_state: completed_zero_malformed_hits
+      stale_assertion_audit: exactly_2_authority_phrase_and_manifest_version
+      assertion_literal_authority: approved_2026_07_20_D_032
+      assertion_literal_scope: exactly_authority_phrase_and_manifest_version
+      assertion_literal_limit: one_change_set_one_validator_no_retry
+      assertion_literal_state: completed_59_passes_zero_failures
+      change_request: docs/requirements/CHANGE_REQUEST_CR-001.md
+      change_authority: approved_2026_07_19_D_027
+      retained_system: signal_ledger
+      rejected_logo_candidate: signal_ledger_logo
+      revision_target: quiet_framework_derived_logo_hybrid
+      producer_validation: passed_D_034_final_freeze_63_passes_zero_failures
+      browser_accessibility_evidence: passed_9_states_zero_violation_zero_incomplete
+      browser_accessibility_report: docs/phase-1-brand-identity/validation/browser-audit-report.json
+      browser_accessibility_report_sha256: 6BCB2CAA0EA56BA8F64723BFBF451BD40720024ABE6ABE4183FFA94B839ED8A4
+      d_029_original_failure_classes: closed_4_of_4
+      remaining_contrast_incomplete: none
+      remaining_contrast_violation: none
+      browser_hygiene: zero_external_zero_console_zero_page_errors_temp_profile_removed
+      evidence_refresh_and_freeze: completed_D_034_final_freeze
+      final_contrast_authority: approved_2026_07_20_D_033
+      final_contrast_scope: dependency_key_four_states_and_print_three_nodes
+      final_contrast_limit: one_source_change_set_one_validator_one_browser_no_retry
+      final_contrast_state: completed_clean_frozen_D_034
+      final_contrast_checkpoint: docs/phase-1-brand-identity/validation/d-033-pre-contrast-correction-hashes.json
+      final_contrast_checkpoint_sha256: 58A1823E3261440CE4B51969F0C95FA7A63A6EC9D8EA6D1503951A89520BE0D0
+      final_contrast_source_change: css_only_applied_sha256_595B798239B5DB913CC89074AAEB8066184F64892258B0F4988D1FE89F507CE2
+      final_contrast_validator: D_033_exhausted_1_of_1_exit_1_56_pass_3_fail_then_D_034_final_63_pass_0_fail
+      final_contrast_validator_failures: preflight_mutable_report_old_css_literal_and_pinned_failed_report_signature
+      final_contrast_browser_invocations: D_033_0_D_034_2_plus_1_diagnostic
+      final_contrast_evidence_freeze: completed_D_034
+      final_contrast_temp_residue: 0
+      final_contrast_final_css_sha256: F05FEB9040F7F7B92510301D2542D655AC1FAB3934374923618A3BED892476A3
+      final_contrast_final_html_sha256: 1C9415513111C7835E5FDF05F12B9A6BCFE0961C1320FBEF90FC9816CB26B92C
+      completion_authority: approved_2026_07_20_D_034
+      completion_directive: just_complete_this_now_all
+      completion_scope: D_033_contrast_harness_evidence_and_verification_only
+      completion_retry_policy: internal_non_material_harness_and_evidence_reruns_allowed_as_needed
+      completion_state: complete_clean_frozen_independently_verified
+      completion_log: docs/phase-1-brand-identity/validation/d-034-completion-log.md
+      completion_log_sha256: 74B8E649727A8BB89CE2815A66CF7FAF082F99378A35C4DF1D9CCB39E3E18AA9
+      final_manifest_sha256: 2FDE436AEF81BC7E852B72F7BABD1FFD81DAB9CB056BC9E7F4787D4727D731BC
+      design_review_iteration_1: revise_0_critical_0_high_6_medium_0_low
+      accessibility_review_iteration_1: revise_0_critical_0_high_2_medium_0_low
+      design_review_iteration_2: pass_all_6_prior_findings_closed_1_new_nonblocking_low
+      accessibility_review_iteration_2: pass_all_2_prior_findings_closed_no_new_findings
+      residual_follow_up: R_020_closed_by_D_034_evidence_and_D_035_acceptance
+      design_review_iteration_3: revise_0_critical_0_high_4_medium_0_low
+      accessibility_review_iteration_3: revise_0_critical_0_high_2_medium_1_low
+      design_exception_verification: pass_0_critical_0_high_0_medium_0_low
+      design_exception_report: docs/phase-1-brand-identity/reviews/design-verification-evidence-stabilization-1.md
+      design_exception_report_sha256: 45CD6B08227C1E0BEEB5CB4C69479601F4729E1E6BF23D7EC26A8F0DAF01255C
+      accessibility_exception_verification: pass_0_critical_0_high_0_medium_0_low
+      accessibility_exception_report: docs/phase-1-brand-identity/accessibility/accessibility-verification-evidence-stabilization-1.md
+      accessibility_exception_report_sha256: B37412592FF95C2F0E9B1B200FB35F3A34076BCC062B0D27A51CEDB39FF6FA54
+      protected_integrity: zero_mismatch_6_reports_31_archive_24_forbidden
+      correction_gate: MA-022_accepted_2026_07_20_D_034
+      founder_gate: MA_015_accepted_2026_07_20_D_035
+      founder_approval: accepted_2026_07_20_D_035
+      implementation_authorized: false
+    ux_architecture:
+      status: accepted
+      final_validation: 113_passes_zero_failures
+      final_producer_package_sha256: 35E0EA46C1099BA271521EF55AFF3E3F83B76FF2E13C7E94387D76757FFC89D3
+      final_design_review: pass_0_critical_0_high_0_medium_0_low
+      final_accessibility_review: pass_0_critical_0_high_0_medium_0_low
+      founder_gate: MA_023_accepted_2026_07_20_D_036
+      founder_approval: accepted_2026_07_20_D_036
+    ui_reference_design_contract:
+      status: accepted
+      producer_revision_iterations_used: 3
+      normal_revision_limit_state: exhausted_3_of_3
+      final_validation: 183_passes_zero_failures
+      final_producer_package_sha256: 97E79201CC36F01718A027AD800E63BDD5AAFC47E41137D65253BAABA6B2120F
+      final_design_review: pass_0_critical_0_high_0_medium_0_low
+      final_design_review_sha256: 66460F9DA5392035CB29AA0F941C0880F9AB5A712A176AC920370D54EFE2BF51
+      final_accessibility_review: pass_0_critical_0_high_0_medium_0_low
+      final_accessibility_review_sha256: C66A96A6C977EA834CD1310D67C3223BA84BD8B0F70336EC754AC468B1CFC346
+      unresolved_critical_high_medium: 0
+      founder_gate: MA-024
+      founder_approval: accepted_2026_09_05_D_037
+      external_design_write_authorized: false
+      implementation_authorized: false
+  operational_evidence:
+    libreoffice_repair_2026_07_19:
+      reviewer: hengshi_qa_engineer
+      verdict: pass
+      artifact: docs/phase-1-foundation/evidence/libreoffice-capability-2026-07-19.md
+      checks:
+        - installed_version_26_2_4_2
+        - generated_control_docx_to_pdf_passed
+        - historical_24_page_docx_to_pdf_passed
+        - all_24_page_renders_structurally_and_visually_inspected
+        - source_layout_limitations_distinguished_from_converter_failure
+      risk_result: R_019_closed_with_fresh_conversion_residual_control
+
+closed_gates_2026_09_06:
+  - id: MA-004
+    subject: HQ exterior GLB provenance and rights
+    status: accepted
+    previous_status: blocked
+    artifact: docs/phase-1-3d/asset-provenance/HSD-ASSET-001-hq-exterior.md
+    licence: CC-BY-4.0
+    commercial_use: permitted
+    modification: permitted
+    attribution: required
+    asset_sha256: 4767CAB4D346207A2109FFC1584E256E82AE1CECC110780B99C4406A9586AAFE
+    founder_decisions:
+      - id: D-A
+        subject: NoAI disposition
+        outcome: narrow_reading_adopted
+        operating_rules: [AR-01, AR-02, AR-03, AR-04]
+        note: >-
+          The asset is never submitted to a model as training, fine-tuning, or
+          generative input. Permitted work is deterministic Blender operations
+          under founder direction. Geometry reuse is authorized subject to the
+          four rules; any step that would breach them must stop and return to
+          the founder.
+      - id: D-B
+        subject: attribution surface
+        outcome: credits_route_selected
+        route: /credits
+        link_label: Asset Credits
+        placement: footer
+        rationale: >-
+          No /legal/* family exists in the accepted inventory, so
+          /legal/asset-credits would introduce an empty parent segment for a
+          single leaf. Founder may override.
+    open_obligations:
+      - id: ATTR-03
+        statement: >-
+          The GLB asset.copyright field is absent and must be written. This is an
+          asset modification deferred to authorized 3D production.
+      - id: ROUTE-RECONCILE
+        statement: >-
+          /credits is a 34th route against the 33 accepted under D-025. Assigned
+          to the CR-002 revision window rather than a third change request. Must
+          appear in every delivery stream because the licence obligation does not
+          vary by tier. Tracked as R-032.
+
+next_action:
+  id: B01-PILOT
+  status: authorized_not_started
+  allocation_decision:
+    id: CB-06
+    decided_on: "2026-09-06"
+    rule: all_20_spendable_zero_reserve_per_call_founder_approval
+    note: >-
+      The founder directed that all 20 monthly calls are spendable with no
+      reserve and that every individual call requires explicit founder approval
+      immediately before it is made. Per-call approval makes a standing reserve
+      redundant. The producer never makes a Figma MCP call unprompted and must
+      state the tool, the purpose, and the running count consumed this month.
+  unresolved_conflict:
+    statement: >-
+      The founder stated on 2026-09-06 that the project does not have a month and
+      is developing fast. A 20-call monthly allowance cannot deliver seven batches
+      quickly by any allocation rule, so pace and provider path remain in tension.
+      The two paths that actually remove the constraint are a paid Figma envelope
+      under MA-010 or producing references outside the Figma MCP. Neither has been
+      chosen and neither may be started by the producer.
+    note: >-
+      One material unknown may reduce the conflict substantially: write-tool
+      rate-limit exemption is NOT ASSERTED but create_new_file is documented as
+      exempt, so canvas writing may cost little or nothing and reads may be the
+      only real cost. B01 establishes this cheaply.
+  gates_closed_2026_09_06:
+    - id: MA-025
+      status: accepted
+      decision: D-038
+      note: >-
+        Approved by the founder. Batches B01-B06 and B08 authorized at freeze
+        E3786F14C9F12CBF8127A18E7959881B91A9ECC5DC11BBE3E466BCEC6C7EC08D. Section
+        3.5 capability enablement completed by Path A and recorded in
+        docs/phase-1-ui-reference-production/validation/capability-evidence.md.
+        SC-05 fired on the verified 20-calls-per-month allowance and was resolved,
+        not waived, by founder direction to stay on the free tier and ration
+        precisely.
+    - id: MA-027
+      status: accepted
+      decision: D-039
+      option: A
+      note: >-
+        Four peer delivery streams (high, medium, low, no_webgl_semantic) with
+        equivalent core journeys, a selection rule, user override, and
+        accessibility-preference precedence. B07 reclassified from optional to
+        core but still deferred to MA-026. Opens the CR-002 revision window; no
+        accepted artifact has been edited yet, so D-036/D-037 and D-039 currently
+        disagree. Tracked as R-034.
+  concurrent_open_work:
+    - id: CR-002-SIGNAL-VERIFICATION
+      status: complete
+      completed_on: "2026-09-06"
+      artifact: docs/requirements/CR-002-signal-portability-verification.md
+      result:
+        u_01_connection_signals: not_portable
+        u_02_device_memory: not_portable
+        u_02_hardware_concurrency: baseline_widely_available_since_2022_03
+        u_02_prefers_reduced_motion: baseline_widely_available_since_2020_01
+        u_03_thresholds: open_implementation_phase_measurement
+      note: >-
+        The four peer streams survive but the selection rule as written does not.
+        Device tiering binds to hardwareConcurrency plus a WebGL capability probe;
+        connection tiering must use measured runtime performance because no
+        portable declared network class exists. The R-030 stop was NOT triggered,
+        because CR-002 section 7 named this substitution in advance as its
+        fallback design. Measured-performance selection is itself unproven and is
+        not asserted. Per-browser version numbers and vendor standards positions
+        were not obtained.
+    - id: CR-002-REVISION-WINDOW
+      status: complete
+      completed_on: "2026-09-06"
+      decision: D-040
+      subject: >-
+        Amend D-036, D-037, design-batch-plan.csv B07, 3D_Mega_Menu_Style_Guide_v2
+        section 8.2, and SRS FR-3D-010 to the four-peer-stream model, and
+        reconcile /credits as the 34th route per R-032.
+      stream_selection_precedence:
+        - webgl_probe_is_a_hard_ceiling_nothing_overrides
+        - prefers_reduced_motion_suppresses_motion_without_changing_stream
+        - user_override_may_only_simplify_and_never_exceed_the_ceiling
+        - device_tier_from_navigator_hardware_concurrency
+        - unsignalled_client_defaults_to_s_low
+        - measured_performance_may_promote_once_then_locked_for_session
+      amended:
+        style_guide_8_2: four_peer_delivery_streams_with_verified_signal_table
+        srs_fr_3d_010: s_semantic_peer_raised_p2_to_p0
+        srs_added: [FR-3D-011, FR-3D-012]
+        batch_plan_b07: reclassified_optional_to_core_with_stream_evidence
+        degradation_framings_removed: 15
+        column_renamed: optional_immersive_representation_to_immersive_stream_representation
+        credits_route: ROUTE-CREDITS_added_across_foundation_ux_and_design
+        route_count: 34
+      risks_closed: [R-032, R-034]
+      validator_defects_repaired:
+        git_write_scope: >-
+          Asserted no change outside its own package, true only during package
+          authoring and false once an approved change request spans packages. The
+          R-024 lifecycle error a second time. Now derives PACKAGE_AUTHORING or
+          CR002_REVISION_WINDOW from whether D-039 is approved, with an enumerated
+          allowlist rather than a blanket exemption.
+        foundation_git_stderr: >-
+          Merged git stderr with 2>&1; the repository stores CRLF blobs under
+          core.autocrlf=true, so git's benign LF-to-CRLF warning surfaced as a
+          terminating NativeCommandError and aborted the run before any RESULT
+          line. Now discards stderr and reads the exit code.
+      new_assertion: semantic-stream-peer-framing
+      validator_state:
+        foundation: PASS
+        ux_architecture: PASS_113_0_routes_34
+        ui_reference_design: PASS_184_0
+        ui_reference_production: PASS_153_0
+      design_package_freeze_sha256: 4B9EB9AFF439D98A67AE0B75FC83DF06999BDB8178A69C9333F15FD45062289B
+      design_package_freeze_sha256_at_ma028_acceptance: F16093D07D1E2634DB440ED35E4D4648ABF4F6D85C2BCD4E8F9CE5092F9C4AD6
+      design_package_freeze_sha256_at_d037_acceptance: 97E79201CC36F01718A027AD800E63BDD5AAFC47E41137D65253BAABA6B2120F
+      note: >-
+        The amended package is NOT accepted. Four passing validators are
+        determinism checks, not reviews, and Constitution principle VII forbids
+        the producer approving its own material output. Founder re-acceptance is
+        required at MA-028, tracked as R-035. Until then the production contract
+        keeps deriving authority from the D-037-accepted package and no production
+        batch may rely on an amendment-only change. U-03 thresholds remain open
+        and unresolvable in Phase 1; no schedule is offered.
+    - id: D-044-model-authorship
+      status: in_progress
+      decision: D-044
+      subject: Reviewers author the delivery-stream evidence model; producer implements
+      note: >-
+        Fourth consecutive FAIL round. Root cause accepted at D-044: the producer
+        invented the model, encoded it, wrote the assertion that checked it, and
+        certified the result. A validator the producer writes cannot catch a model
+        the producer got wrong. Two [PROPOSED] specifications are commissioned from
+        the independent reviewers - DELIVERY_STREAM_EVIDENCE_MODEL.md for the
+        mechanism and accessibility/DELIVERY_STREAM_ACCESSIBILITY_OBLIGATIONS.md for
+        the requirements. Neither carries accepted authority until a founder
+        decision. The producer implements to them, then the reviewers verify. The
+        production package stream axis is fixed in the same slice by founder
+        decision, not deferred to MA-026.
+      proposed_specifications_not_accepted:
+        - docs/phase-1-ui-reference-design/DELIVERY_STREAM_EVIDENCE_MODEL.md
+        - docs/phase-1-ui-reference-design/accessibility/DELIVERY_STREAM_ACCESSIBILITY_OBLIGATIONS.md
+    - id: MA-030
+      status: awaiting_human
+      subject: Founder decision on the two [PROPOSED] delivery-stream specifications
+      risk: R-035
+      decision: D-044
+      blocks:
+        - any producer edit implementing the delivery-stream evidence model
+        - any producer edit implementing the stream accessibility obligations
+        - release of B01
+      authors_independent_of_producer: true
+      authors_communicated_with_each_other: false
+      convergence:
+        - invariance cannot survive as a producer-asserted claim
+        - stream control is a radio group with a separate explicit submit
+        - advance advisement is persistent visible text, not description-only
+      divergence:
+        design_author: deletes DS-STREAM-INVARIANT outright
+        accessibility_author: inverts it into derived OBL-INV-01
+        note: both yield the empty set on current data
+      founder_decidable:
+        - id: G-1
+          subject: S-LOW unsignalled default contradicts explicit World entry at UX_ARCHITECTURE.md:173
+          blocks: first frame of ROUTE-HOME
+        - id: invariance-treatment
+          subject: delete the category or derive it
+        - id: control-activation-model
+          subject: radio group plus explicit Apply, two-step confirmation
+        - id: frame-budget
+          subject: roughly +15 and 13 overlapping evidence frames against a 20-call allowance
+          call_projection_offered: false
+          reason: CB-09 forbids a projection before B01 measures; the metered unit is the call
+      recorded_not_fixed:
+        - id: G-5
+          subject: time_limit_branch is a total function of state_profile via Get-ExpectedTimeBranchForState
+          note: identical derived-column defect to the one that condemned stream_profile
+        - id: constant-column-risk
+          subject: setting all 62 stream_presence values to all four streams would make the column meaningless
+          reviewers_must_check:
+            - PRIM-042
+            - PRIM-043
+            - PRIM-044
+      producer_implemented_anything: true
+      figma_allowance_consumed: 0
+      founder_decision:
+        id: D-045
+        decided_on: "2026-09-06"
+        both_specifications_accepted: true
+        resolutions:
+          G-1: separate capability-derived stream selection from explicit World entry; overrule neither accepted statement
+          invariance: delete DS-STREAM-INVARIANT; retain OBL-INV-01 conditions in validator source as recorded reasoning
+          control_activation_model: normative radio group in fieldset plus separate always-present submit, two-step explicit confirmation
+          advisement: persistent visible text, never tooltip or description-only
+          frame_budget: full merged evidence set; calls batched per CB-13 and approved individually per CB-06
+        call_projection_offered: false
+        specification_accepted_is_not_implementation_accepted: true
+        r035_still_open: true
+        ma029_still_undischarged: true
+        b01_still_held: true
+        g5_recorded_not_fixed: true
+        resolutions_taken_during_implementation:
+          G-4: B01 is future_not_authorized in BOTH the design and production batch plans; one batch must not carry two authorization states
+          G-7: a stream change never discards booking process state (held slot, verified email, entered fields) across any boundary including the semantic one
+          G-6: the design system declares no stream axis, control component, stream tokens, or 3D focus-ring token; recorded as R-039 and commissioned later as its own bounded contract; DESIGN_SYSTEM_IMPLICATIONS.md untouched and its freeze hash intact
+      implementation_record:
+        implemented_on: "2026-09-06"
+        model: >-
+          Stream obligations are declared at the primitive (component-primitives.csv
+          stream_presence), computed at the template by a union fold over
+          primitive_dependencies, and inherited unstored at route and flow. No route,
+          flow, or template row carries a stream column; A-01 fails if one returns.
+        design_assertions_added: A-01..A-11
+        production_assertions_added: A-12..A-16
+        ec08_amended: mandatory single-valued STREAM_<HIGH|MEDIUM|LOW|SEMANTIC> segment, no aggregate form
+        baseline_frame_names_regenerated: 74
+        ux_test_added: UXTEST-046
+        requirement_rows_traced: 14
+        validator_state:
+          foundation: PASS
+          ux_architecture: PASS_113_0_routes_34_tests_46
+          ui_reference_design: PASS_201_0
+          ui_reference_production: PASS_165_0
+        freeze_sha256:
+          design_package: 0AA83FD298ABB12A96782205996EB3783BF8E80E11AD1B2BE44473F2E87EB536
+          production_package: 4464F6C44C11E7A00C4F007C3112840C6087CB3C1321B86ED5842B9100CC50CE
+        superseded_intra_slice_values:
+          design_package_partway: D41C10FE76E7B150491F92B2F257EBAD7D9A0862FF85BA7CE6C71E00579EDF7F
+          production_package_pre_d045: E3786F14C9F12CBF8127A18E7959881B91A9ECC5DC11BBE3E466BCEC6C7EC08D
+        defects_found_that_no_prior_run_could:
+          - MODE_NON_WEBGL_QUICK_ACCESS on TPL-QUICK-ACCESS-RECOVERY; the surviving R-034 instance, spelled with underscores so a hyphen-scoped guard could not see it
+          - STATE_UNAVAILABLE on ROUTE-CONTACT; resolves against no value in SP-CONTACT and NO REVIEWER HAD REPORTED IT
+        producer_own_defect_recorded_not_hidden:
+          id: R-038
+          subject: the new cross-package framing guard was silently inert on its first run
+          mechanism: >-
+            PowerShell's comma operator binds tighter than +, so a nine-element array
+            literal collapsed into one $OFS-joined string; -join '|' had nothing to
+            join and the guard reported zero hits across 56 files containing known
+            matches. No runtime warning is emitted.
+          countermeasure: both validators now assert the alternative count; A-12 and A-15 carry negative fixtures
+        what_the_working_guard_found:
+          files: 6
+          package: docs/phase-1-ux-architecture
+          subject: still described the World as optional and the stream axis as a quality ladder three days after D-039 abolished that framing
+          lesson: a guard's scope is part of its claim; a scope written as a literal file list ages silently
+        recorded_not_repaired:
+          - twenty-two inert judgement columns including time_limit_branch (R-037)
+          - stream_disposition constant across all nine production batches (distinct-values=1 rows=9)
+          - A-11's determiner set is a producer reading of an underspecified instruction
+          - A-08 implicates eleven state profiles the specification's migration table did not enumerate
+          - staff, publication, and audit templates fold to all four streams despite serving excluded surfaces
+          - all-or-nothing regeneration of 74 frame names (R-040)
+          - A-14's per-stream obligation set is wholly unmet and passes only because held authorization explains it (R-041)
+        stream_presence_distribution:
+          all_four_streams: 50
+          stream_scope_excluded: 9
+          three_streams: 3
+          discriminating_rows: [PRIM-042, PRIM-043, PRIM-044]
+          ma030_standing_check: answered_affirmative_column_is_not_constant
+          reviewer_note: discriminating power is three rows; the fold's power, not its correctness, is the open question
+        discharges_nothing:
+          ma029: awaiting_human
+          r034: not_closed_exit_evidence_names_an_independent_reviewer
+          r035: open
+          r036: open
+          b01: held
+          staged_or_committed: false
+          external_write: false
+          figma_allowance_consumed: 0
+    - id: MA-029
+      status: awaiting_human
+      subject: Independent re-review of the D-043 remediated package
+      risk: R-035
+      decision: D-043
+      reviews_run_2026_09_06:
+        design_review: FAIL
+        accessibility_audit: FAIL
+        re_review_of_d042_design: FAIL
+        re_review_of_d042_accessibility: FAIL
+        records:
+          - docs/phase-1-ui-reference-design/reviews/design-review-iteration-4.md
+          - docs/phase-1-ui-reference-design/accessibility/accessibility-audit-iteration-3.md
+        note_on_records: >-
+          Both records are dated evidence and are NOT rewritten. Dated correction
+          blocks are appended to each recording where the D-042 dispositions were
+          overstated.
+      fail_rounds: 4
+      passing_assertion_counts_at_each_fail: [183, 184, 185, 189]
+      round_3_result_2026_09_06:
+        design_review: FAIL
+        accessibility_audit: FAIL
+        discharged: false
+        records:
+          - docs/phase-1-ui-reference-design/reviews/design-review-iteration-5.md
+          - docs/phase-1-ui-reference-design/accessibility/accessibility-audit-iteration-4.md
+        central_defect: >-
+          stream_profile was populated as a total function of state_profile, so the
+          column was derivable and encoded no judgement; no human decided any of its
+          163 values. All 34 routes took DS-STREAM-INVARIANT and structurally could
+          not do otherwise, while every route template depends on PRIM-001, the shell
+          hosting the delivery stream control, which that profile's own exception_rule
+          forbids. The validator enforced the wrong answer: correctly assigning all
+          four DS-S-* to ROUTE-BOOK would have failed delivery-stream-assignment.
+        also_blocking_both_reviewers: >-
+          The production package has no stream axis at all. EC-08's evidence-ID
+          grammar has no stream token, so two frames of one template in S-HIGH and
+          S-SEMANTIC cannot be given distinct IDs and EC-30 would read the second as
+          an illegal overwrite. Fixed in the same slice by founder decision D-044.
+        confirmed_closed_by_both: >-
+          S-MEDIUM now has real representation, and no current conformance is claimed
+          anywhere in the package.
+      validator_state:
+        foundation: PASS
+        ux_architecture: PASS_113_0_routes_34
+        ui_reference_design: PASS_189_0
+        ui_reference_production: PASS_153_0
+      freeze_sha256:
+        design_package: DB92B4D0B889948D6C272F0DC7397327055B0108E7EEB953924F34E735BD4649
+        production_package: 1AA0055205638CAB42B9F30469E8D0ADC8EF736DA60B3F393EA1C92865AB8913
+      superseded_provenance:
+        d042_design_package: 4B9EB9AFF439D98A67AE0B75FC83DF06999BDB8178A69C9333F15FD45062289B
+        d042_production_package: 9B4CDE0483CA3160DF0ACAEBFD11168048E6E95395ECADE51A2706DBA61FCA11
+        ma028_design_package: F16093D07D1E2634DB440ED35E4D4648ABF4F6D85C2BCD4E8F9CE5092F9C4AD6
+        d037_design_package: 97E79201CC36F01718A027AD800E63BDD5AAFC47E41137D65253BAABA6B2120F
+      note: >-
+        The D-042 re-reviews both returned FAIL again, converging on five
+        identical defects. The central one: the delivery stream axis D-042 added
+        was inert - four DS-S-* profiles existed and the validator asserted them
+        by counting rows, but no route, flow, or template selected one, so a
+        producer could satisfy every cell and produce no per-stream evidence. The
+        fix reproduced the defect it was meant to close. Remediated under D-043 as
+        a full schema fix. R-035 does not close: this remediation is again the
+        producer's own work and Constitution principle VII forbids self-approval.
+        Standing lesson - a passing validator is a determinism check, not a
+        review, and an assertion that counts rows on a new axis is a placeholder,
+        not coverage. Exit evidence: a clean independent design review and a clean
+        independent accessibility review against the design aggregate above.
+    - id: B01-hold
+      status: blocked_by_founder_decision
+      subject: B01 reference-frame production held pending MA-029
+      decision: D-043
+      note: >-
+        Explicit founder decision. B01 draws reference frames from these records;
+        frames drawn against a package with an inert stream axis and a
+        contradictory validation report would need redrawing, and redraws consume
+        metered Figma calls from the 20-call monthly allowance. Zero allowance
+        consumed. Nothing staged, nothing committed, no external write. Release
+        requires a founder decision plus the CB-06 and CB-07 per-call approval
+        exchange. MA-025 authorization does not by itself release B01.
+    - id: MA-028
+      status: accepted
+      accepted_on: "2026-09-06"
+      decision: D-041
+      subject: CR-002 amended package re-acceptance
+      risk: R-035
+      risk_status: accepted_by_founder
+      accepted_freeze:
+        design_package: F16093D07D1E2634DB440ED35E4D4648ABF4F6D85C2BCD4E8F9CE5092F9C4AD6
+        production_package: 3DF0DBB6A6ADFC5FC8A09865A00AB92F27EE91D3F418E4368BA9B17033358528
+      superseded_by_d042_remediation:
+        design_package: 4B9EB9AFF439D98A67AE0B75FC83DF06999BDB8178A69C9333F15FD45062289B
+        production_package: 9B4CDE0483CA3160DF0ACAEBFD11168048E6E95395ECADE51A2706DBA61FCA11
+      condition_not_satisfied: >-
+        This gate also required fresh independent design and accessibility reviews
+        of the amended package. They did not run before acceptance; the founder
+        accepted on the producer record and four passing deterministic validators,
+        which check determinism rather than design quality or accessibility
+        outcomes. Both reviews were then commissioned on 2026-09-06 and both
+        returned FAIL. All four blocking findings were remediated the same day
+        under D-042, and the remediation has not itself been reviewed. R-035
+        therefore stays open and is carried forward at MA-029; its exit evidence is
+        unchanged.
+      note: >-
+        The amended D-025, D-036, and D-037 artifacts now carry accepted authority.
+        The production contract no longer falls back to the D-037-accepted package
+        and production batches may rely on amendment-introduced changes. Superseded
+        hashes are retained as provenance so the amendment stays reversible. Does
+        not alter the 20-call monthly allowance or the CB-06 and CB-07 per-call
+        approval rule.
+    - id: MA-026
+      status: not_yet_prepared
+      subject: B07, B09, docs/ui/UI_SPEC.md, and the final visual direction
+      note: >-
+        Still blocked because the 3D storyboard workstream is not_started. SC-10
+        continues to refuse B07 and B09 under MA-025.
+    - id: MA-013
+      status: awaiting_human
+      subject: compatibility inventory acceptance
+      note: separate and unaffected
+  current_focus: >-
+    MA-025 and MA-027 are both accepted. External Figma reference production is
+    authorized for B01-B06 and B08, and Figma is capability-tested. The binding
+    constraint is now the verified allowance of 20 MCP tool calls per calendar
+    month for this Full seat on the starter tier, against a structural floor of 21
+    calls across the seven batches before any visual evidence. The programme
+    therefore spans multiple calendar months and no schedule may be stated until
+    B01 measures real consumption. B01 runs first as both the gated pilot and the
+    metering experiment, but cannot start until the founder decides the two open
+    allocation rules CB-06 (monthly reserve) and CB-07 (mid-batch exhaustion
+    behaviour), which are deliberately left without producer defaults. No canvas
+    write has occurred and no evidence directory exists. Zero spend stands.
+    Compatibility separately awaits MA-013; implementation remains blocked until
+    complete Phase 1 approval.
+  blocking_facts:
+    - id: BF-001
+      statement: >-
+        RESOLVED 2026-09-06. No Figma or Stitch MCP was configured or exposed on
+        this host and the canonical inventory %APPDATA%\Code\User\mcp.json does not
+        exist. Figma is now registered at user scope, authenticated by the founder,
+        bound into a restarted session, and capability-tested by whoami. The
+        canonical inventory still does not exist; registration is at user scope by
+        design so no endpoint or credential enters the repository.
+      observed_on: "2026-09-06"
+      resolved_on: "2026-09-06"
+    - id: BF-002
+      statement: >-
+        B07 requires an approved 3D storyboard and MA-004 GLB provenance, and B09
+        hard-requires B07, so the D-037 section 15 handoff cannot complete under
+        MA-025.
+      observed_on: "2026-09-06"
+    - id: BF-003
+      statement: >-
+        PARTIALLY RESOLVED 2026-09-06. Five Figma free-tier limits could not be
+        attributed from the provider pricing page and were recorded as
+        must_verify_at_gate rather than asserted. The sixth and most consequential,
+        the MCP tool-call allowance, is now verified at 20 calls per calendar month
+        and immediately blocked the contracted volume, firing SC-05 before the
+        first write. Four items remain unverified and unasserted: design-file
+        count, pages per file, version-history retention, and editor caps.
+      observed_on: "2026-09-06"
+      partially_resolved_on: "2026-09-06"
+    - id: BF-004
+      statement: >-
+        RESOLVED 2026-09-06. The HQ exterior model source page carries a NoAI
+        notice. The founder adopted the narrow reading: the asset is never
+        submitted to a model as training, fine-tuning, or generative input, and
+        permitted work is deterministic Blender operations under founder
+        direction. Geometry reuse is authorized subject to AR-01 through AR-04.
+      observed_on: "2026-09-06"
+      resolved_on: "2026-09-06"
+    - id: BF-005
+      statement: >-
+        RESOLVED IN PRINCIPLE 2026-09-06. CC BY 4.0 attribution is mandatory and
+        none of the 33 accepted routes was a credits surface. The founder directed
+        a footer Asset Credits link to a durable credits page; /credits was
+        selected. Placement is decided but not built, and the 34th-route
+        reconciliation remains open under R-032.
+      observed_on: "2026-09-06"
+      resolved_on: "2026-09-06"
+    - id: BF-007
+      statement: >-
+        Figma canvas writing, the exact capability every MA-025 batch depends on,
+        is free only during beta and is documented to become a usage-based paid
+        feature. RE-SCOPED 2026-09-06 by founder direction: no recurring pricing
+        check is performed, because a free plan with no payment method cannot be
+        charged silently. Residual exposure is loss of capability rather than
+        spend, and it announces itself when a write fails or prompts to upgrade.
+        Tracked as R-031.
+      observed_on: "2026-09-06"
+    - id: BF-008
+      statement: >-
+        RESOLVED 2026-09-06. The founder authenticated the Figma MCP server and
+        restarted Claude Code. The Figma tool set is bound into the session and
+        whoami returned an authenticated identity, so connectivity is claimed on
+        observed evidence and capability-evidence.md is written.
+      observed_on: "2026-09-06"
+      resolved_on: "2026-09-06"
+    - id: BF-009
+      statement: >-
+        The verified Figma MCP allowance is 20 tool calls per calendar month for
+        this Full seat on the starter tier. The contracted evidence floor is 21
+        calls across the seven authorized batches (EC-25 inventory plus EC-28 and
+        EC-29 archive exports, three per batch) before any visual evidence, and
+        realistic demand runs to the hundreds. SC-05 fired at programme scope and
+        was resolved by founder direction to remain on the free tier and ration
+        precisely, so the programme spans multiple calendar months. No schedule may
+        be stated until B01 reports a measured per-batch projection. Write-tool
+        rate-limit exemption is NOT ASSERTED. Tracked as R-033.
+      observed_on: "2026-09-06"
+    - id: BF-006
+      statement: >-
+        Browser support for the device-capability and connection signals that the
+        CR-002 stream-selection rule depends on is unverified and believed uneven
+        across engines. No schedule estimate is offered until it is verified from
+        Context7 and official primary documentation.
+      observed_on: "2026-09-06"
+  objective: >-
+    Produce and reconcile the complete founder-reviewable product definition, SEO,
+    brand, UX/UI, 3D, architecture, API/data, AI, security/privacy, testing,
+    deployment, cost, growth, and dated latest-compatible-stable technology package,
+    superseding or reconciling legacy product and feature artifacts to the amended
+    Phase 0 governance.
+  exclusions:
+    - application_feature_implementation
+    - dependency_or_lockfile_changes
+    - database_migrations
+    - infrastructure_provisioning
+    - paid_service_activation
+    - external_design_writes_without_approval
+    - commits_pushes_or_deployment
+  required_inputs:
+    - AGENTS.md
+    - .specify/memory/constitution.md
+    - PROJECT.md
+    - PROJECT_STATE.yaml
+    - TASKS.md
+    - DECISIONS.md
+    - RISKS.md
+    - MANUAL_ACTIONS.md
+    - docs/software-definition/README.md
+    - docs/decisions-log.md
+    - existing_v3_and_spec_artifacts_as_evidence
+  deliverables:
+    - approved_product_and_business_requirements
+    - evidence_and_claim_inventory
+    - seo_keyword_route_and_editorial_strategy
+    - brand_strategy_and_identity_direction
+    - ux_information_architecture_and_accessible_flows
+    - stitch_then_figma_design_references
+    - 3d_storyboard_asset_and_blender_rebuild_specification
+    - technical_architecture_and_adrs
+    - api_data_publication_and_ai_contracts
+    - security_privacy_legal_and_defense_gate_model
+    - qa_performance_accessibility_and_release_strategy
+    - azure_nvidia_cost_and_operability_envelope
+    - dated_context7_and_official_docs_compatibility_matrix
+    - reconciled_legacy_product_definitions_and_feature_specs
+  validation:
+    - cross_artifact_traceability_and_conflict_check
+    - referenced_path_validation
+    - context7_and_official_primary_source_evidence
+    - approved_stitch_or_figma_reference_verification_before_ui_approval
+    - independent_design_architecture_security_accessibility_and_requirements_reviews
+    - documentation_diff_and_secret_scan
+  acceptance: >-
+    All Phase 1 deliverables agree, contain no unsupported claims or unresolved
+    implementation decisions, satisfy independent findings within allowed revisions,
+    and are explicitly accepted by the founder before Phase 2 starts.
+  maximum_revision_iterations: 2
+  design_revision_iterations: 3
+  human_gates:
+    - founder_scope_and_claim_approval
+    - founder_brand_and_design_approval
+    - founder_architecture_security_and_cost_approval
+    - paid_or_external_write_approval_when_applicable

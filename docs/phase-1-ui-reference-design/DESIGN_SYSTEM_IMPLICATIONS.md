@@ -1,6 +1,7 @@
 # Design-System Implications for UI Reference Production
 
 **Evidence date:** 2026-09-03
+**Amended:** 2026-09-06 under D-042 and D-043 (CR-002 revision window). The 2026-09-03 producer freeze date above is retained as provenance and is not restated as current; the delivery stream axis, the ACT-09 stream control, and the peer-framing renames were added after it.  
 **Status:** Definition contract; producer revision 3 of 3; accessibility correction only
 **Authority:** D-025, D-026, D-035, and D-036
 **Implementation status:** Blocked
@@ -192,7 +193,7 @@ No value is selected by this document.
 ## 3. Primitive and component contract
 
 The machine-readable inventory is [component-primitives.csv](component-primitives.csv).
-It covers public shell and route templates, AI/handoff/booking, optional World,
+It covers public shell and route templates, AI/handoff/booking, World stream,
 media, staff operations, publication, authentication, state/recovery, and data
 presentation. The contract is deliberately technology-neutral; later Figma,
 Stitch, and code components must preserve the same stable IDs even when one
@@ -368,7 +369,7 @@ independent design and accessibility review:
 3. Component anatomy and property records for every `PRIM-###` row, including the
    five required pseudo-states for all interactive primitives and every relevant
    transactional/content state.
-4. Coverage evidence for all 33 canonical routes, nine exclusion classes,
+4. Coverage evidence for all 34 canonical routes, nine exclusion classes,
    15 wayfinding entries, AF-01/AF-02, BF-01A through BF-01E, DF-01, PF-01,
    SOF-01A through SOF-01M, CF-01, FV-01, RV-01, ACT-01 through ACT-53, and
    UXTEST-001 through UXTEST-045.

@@ -69,8 +69,8 @@ try {
 
 $sourceRoutes = @($source.routes)
 $sourceExclusions = @($source.excludedSurfaces)
-Assert-True ($sourceRoutes.Count -eq 33) 'source inventory contains exactly 33 routes'
-Assert-True ($routes.Count -eq 33) 'UX parity contains exactly 33 route rows'
+Assert-True ($sourceRoutes.Count -eq 34) 'source inventory contains exactly 34 routes'
+Assert-True ($routes.Count -eq 34) 'UX parity contains exactly 34 route rows'
 Assert-True ($sourceExclusions.Count -eq 9) 'source inventory contains exactly nine exclusions'
 Assert-True ($exclusions.Count -eq 9) 'UX package contains exactly nine exclusion rows'
 
@@ -90,7 +90,7 @@ Assert-True (@($routes.path | Group-Object | Where-Object Count -ne 1).Count -eq
 
 $incompleteRoutes = @($routes | Where-Object {
     [string]::IsNullOrWhiteSpace($_.semantic_quick_access) -or
-    [string]::IsNullOrWhiteSpace($_.optional_immersive_representation) -or
+    [string]::IsNullOrWhiteSpace($_.immersive_stream_representation) -or
     [string]::IsNullOrWhiteSpace($_.primary_next_actions) -or
     [string]::IsNullOrWhiteSpace($_.content_or_policy_gate)
 })
@@ -191,8 +191,8 @@ Assert-True (($actionNumbers -join ',') -eq ((1..53) -join ',')) 'action IDs ACT
 
 $testText = Get-Content -Raw -LiteralPath (Join-Path $packageRoot 'CONTENT_ANALYTICS_TESTS.md')
 $testIds = @([regex]::Matches($testText, 'UXTEST-(\d{3})') | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique)
-Assert-True ($testIds.Count -eq 45) 'UX acceptance inventory contains exactly 45 unique test IDs'
-Assert-True (($testIds -join ',') -eq ((1..45 | ForEach-Object { '{0:D3}' -f $_ }) -join ',')) 'UXTEST-001 through UXTEST-045 are contiguous'
+Assert-True ($testIds.Count -eq 46) 'UX acceptance inventory contains exactly 46 unique test IDs'
+Assert-True (($testIds -join ',') -eq ((1..46 | ForEach-Object { '{0:D3}' -f $_ }) -join ',')) 'UXTEST-001 through UXTEST-046 are contiguous'
 
 $flowText = Get-Content -Raw -LiteralPath (Join-Path $packageRoot 'FLOWS.md')
 $requiredStaffFlowIds = 1..13 | ForEach-Object { 'SOF-01{0}' -f [char](64 + $_) }

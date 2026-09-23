@@ -238,7 +238,8 @@ non-sensitive work where approved, then returns focus to the reauthenticated ste
 6. Closed rooms are labeled unavailable and link to approved semantic content;
    they do not dead-end or imply launch readiness.
 7. HUD controls: current location, directory/search, Quick Access, Book,
-   accessibility, quality, audio, Exit. Quality downgrade never removes content;
+   accessibility, delivery stream, audio, Exit. A stream change never removes
+   content, a hotspot, or a destination;
    Exit transfers to current canonical route.
 
 Success: canonical content opens with location context. Error: index loading,

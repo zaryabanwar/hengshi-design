@@ -145,7 +145,32 @@ The platform serves as an integrated digital ecosystem combining an immersive 3D
 | FR-3D-007 | Lobby placeholder scene | ❌ Not implemented | P1 |
 | FR-3D-008 | Room template (reusable for 10 categories) | ❌ Not implemented | P1 |
 | FR-3D-009 | Loading progress indicator | ❌ Not implemented | P2 |
-| FR-3D-010 | WebGL fallback for unsupported devices | ❌ Not implemented | P2 |
+| FR-3D-010 | `S-SEMANTIC` delivery stream — a peer surface carrying the core journey without WebGL, not a fallback | ❌ Not implemented | P0 |
+| FR-3D-011 | Four peer delivery streams (`S-HIGH`, `S-MEDIUM`, `S-LOW`, `S-SEMANTIC`) carrying equivalent core journeys | ❌ Not implemented | P0 |
+| FR-3D-012 | Stream selection precedence per `3D_Mega_Menu_Style_Guide_v2.md` §8.2.2 (corrected D-042): WebGL ceiling, `hardwareConcurrency` tiering, `S-LOW` unsignalled default, stored measurement applied only from the next visit, reversible persisting user override that outranks stored measurement, `prefers-reduced-motion` affecting motion only | ❌ Not implemented | P0 |
+| FR-3D-013 | The stream is resolved once before first paint and never changes mid-session except by the visitor's own act; that change is announced politely, does not move focus, and preserves scroll, open panel, and route (§8.2.4). **Across the semantic boundary the two shells are different subtrees, so focus does not survive on the operated element: it moves to the delivery stream control in the destination shell, which is the same control by role and name and reports the new stream** (D-045) | ❌ Not implemented | P0 |
+| FR-3D-014 | The stream control is present and keyboard operable in every stream, including `S-SEMANTIC`, where it lives in the semantic shell rather than the World HUD. **It is a native radio group with a separate explicit Apply control; selection alone changes nothing, and streams above the capability ceiling are shown disabled with a stated reason rather than hidden** (D-045, `N-05`) | ❌ Not implemented | P0 |
+| FR-3D-015 | The stream in force does not determine whether the World canvas is entered. The canvas is entered only on an explicit visitor action in every stream, and `ROUTE-HOME`'s first frame is a non-World shell carrying the stream control, including in `S-HIGH` (D-045, gate G-1) | ❌ Not implemented | P0 |
+| FR-3D-016 | A stream change never discards booking process state — a held slot, a verified email, and entered field values survive every boundary **including the semantic one**, where process state is rehydrated into the incoming shell before that shell is announced. If it cannot be carried, the change is refused and explained under the `ACT-11` pattern and the visitor keeps their work; it is never silently reset (D-045, gate G-7) | ❌ Not implemented | P0 |
+
+**Amended 2026-09-06 under CR-002, decision D-039.** `FR-3D-010` previously read
+"WebGL fallback for unsupported devices" at priority P2. The four streams are
+**peers**, so the no-WebGL surface is a core requirement, not a contingency, and
+its priority rises to P0 accordingly. Stream thresholds are uncertainty **U-03**
+and remain `[MUST VERIFY AT SPECIFICATION]`; no schedule is offered. Network-class
+signals (`effectiveType`, `prefers-reduced-data`, `deviceMemory`) were verified
+unusable and must not appear in any implementation of `FR-3D-012` — see
+`docs/requirements/CR-002-signal-portability-verification.md`.
+
+**Amended again 2026-09-06 under decision D-045.** `FR-3D-013` and `FR-3D-014` were
+narrowed and `FR-3D-015`/`FR-3D-016` were added, all derived from the two accepted
+delivery-stream specifications rather than authored here. Two of these close gaps
+that the earlier wording left open by omission rather than by intent: `FR-3D-013`
+said focus "does not move" without saying what happens when the element holding
+focus ceases to exist, and nothing said whether a visitor who changes stream
+mid-booking keeps their slot. An unstated answer to either question is a defect,
+because implementation will supply one. `NFR-A11Y-004` continues to carry the
+accessibility obligations for the control itself.
 
 ### 4.5 Lead Capture
 
@@ -223,6 +248,26 @@ These are aspirational targets from the original SRS v2.0, preserved for future 
 | Database size | < 1 GB | 1 TB/month growth |
 | IoT devices | 0 (not implemented) | 100,000 |
 | API throughput | ~200 req/sec (est.) | 1,000 req/sec per service |
+
+### 5.6 Accessibility Requirements
+
+*Added 2026-09-06 under D-043. The SRS carried no accessibility non-functional
+requirement, so the WCAG 2.2 Level AA target held by the UI reference-design
+package had no requirement-level home and nothing to trace to. No current
+conformance is claimed; every row below is unimplemented.*
+
+| ID | Requirement | Status | Priority |
+|----|-------------|--------|----------|
+| NFR-A11Y-001 | WCAG 2.2 Level AA for every full page and every complete process, including represented third-party steps | ❌ Not implemented | P0 |
+| NFR-A11Y-002 | Conformance holds independently within each delivery stream `S-HIGH`, `S-MEDIUM`, `S-LOW`, `S-SEMANTIC`; aggregate evidence does not satisfy it, and contrast, focus order, and target size are measured against each stream's own rendering | ❌ Not implemented | P0 |
+| NFR-A11Y-003 | `S-SEMANTIC` is a peer delivery stream carrying the equivalent core journey, never an error surface and never a fallback | ❌ Not implemented | P0 |
+| NFR-A11Y-004 | The delivery stream control is present, discoverable, and keyboard operable in every stream, reports its current value in its accessible name, and advises before it acts. **The advisement is visible text adjacent to the control, not an accessible description alone** (D-045, `N-06`), because a description exposed only to assistive technology leaves the sighted keyboard user, the low-vision user at 400% zoom, and the cognitively loaded user unwarned (see `FR-3D-014`) | ❌ Not implemented | P0 |
+| NFR-A11Y-005 | Every interactive 3D state carries a non-colour, non-motion cue and a persistent keyboard focus indicator at ≥3:1 against every adjacent scene colour | ❌ Not implemented | P0 |
+| NFR-A11Y-006 | `prefers-reduced-motion` suppression is exhaustive and normative; anything not enumerated continues to run | ❌ Not implemented | P1 |
+| NFR-A11Y-007 | Independent accessibility review before any phase acceptance; the producer does not approve their own output (Constitution 2.0.0 §VII) | ❌ Not implemented | P0 |
+
+> Verification for every row is deferred to implementation. These are
+> requirements on the built system, not claims about the current one.
 
 ---
 

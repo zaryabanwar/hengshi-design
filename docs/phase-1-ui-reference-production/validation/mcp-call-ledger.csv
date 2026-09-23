@@ -1,0 +1,3 @@
+seq,date,tool_name,batch_id,purpose,metered_assumption,rate_limit_response,notes
+1,2026-09-06,whoami,none,MA-025 section 3.5 capability test,exempt_documented,no,Documented by the provider as exempt from rate limits; returned an authenticated identity on the starter tier with a Full seat
+2,2026-09-06,resource_read:rate-limits-access.md,none,Verify the five section 7.2 free-tier limits,unknown,no,An MCP resource read rather than a tool call; the provider does not state whether resource reads are metered so this is recorded as unknown rather than assumed free

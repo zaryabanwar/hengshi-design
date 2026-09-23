@@ -1,6 +1,7 @@
 # UI Reference-Design Contract and Foundation-Surface Coverage Plan
 
 **Contract date:** 2026-09-03  
+**Amended:** 2026-09-06 under D-042 and D-043 (CR-002 revision window). The 2026-09-03 producer freeze date above is retained as provenance and is not restated as current; the delivery stream axis, the ACT-09 stream control, and the peer-framing renames were added after it.  
 **Revision:** Producer iteration 3 of 3  
 **Status:** **[PROPOSED UI CONTRACT]** final producer freeze awaiting fresh
 independent design and independent accessibility review before founder decision
@@ -17,9 +18,9 @@ without changing requirements or fabricating unavailable facts.
 
 The contract covers:
 
-- 33 canonical route definitions and their route-instance obligations;
+- 34 canonical route definitions and their route-instance obligations;
 - semantic navigation, directory/search, first and return visits;
-- optional World entry, HUD, room/threshold states, and Quick Access recovery;
+- World stream entry, HUD, room/threshold states, and Quick Access recovery;
 - grounded AI, human handoff, media opt-in, direct booking, contact, staff,
   publication, review, audit, authentication, permission, and recovery;
 - all 53 accepted `ACT-*` action contracts, nine `EXCL-*` classes, 15 accepted
@@ -35,7 +36,7 @@ This is a design-production contract, not visual production.
 
 | Authority | Binding effect on this contract |
 |---|---|
-| D-025 | Retains the exact accepted 33-route foundation including `/industries`; preserves claim and publication gates. |
+| D-025 | Retains the accepted 33-route foundation plus `/credits` reconciled under R-032 (34 rows) including `/industries`; preserves claim and publication gates. |
 | D-026 | Requires Evidence in Motion, evidence-led positioning, accountable-delivery promise, exact service taxonomy, proof discipline, and semantic-first expression. |
 | D-035 | Requires the frozen Signal Ledger system + Framework Relay logo hybrid and its accepted color, typography, evidence, motion, accessibility, asset, and clearance boundaries. |
 | D-036 | Requires the accepted semantic/World parity, journeys, actions, states, recovery, staff operations, wayfinding, and UX tests. |
@@ -119,13 +120,16 @@ accepted route ID/path has:
 
 - one reusable `TPL-*` assignment;
 - a unique `INST-*` identifier and tool-neutral route-instantiation name;
-- exact family, semantic Quick Access, optional immersive, primary-action, state,
+- exact family, semantic Quick Access, immersive stream, primary-action, state,
   viewport, mode, and content-gate coverage; and
+- a delivery-stream presence set **computed** from the primitives its template
+  depends on, proving which streams the instance must be evidenced in — inherited,
+  never assigned on the row; and
 - a later route-instance sheet showing real slot lengths and route-specific
   differences.
 
 Route-instance sheets may reference a template master and annotate deltas. They
-do not require 33 independently composed full-page screens. Pattern paths such as
+do not require 34 independently composed full-page screens. Pattern paths such as
 `/work/{verified-case-slug}` remain pattern instances until truthful content is
 approved and atomically released.
 
@@ -275,6 +279,32 @@ alternatives, media alternatives, and canvas-independent content.
 ## 9. State coverage and critical variants
 
 State profiles are defined in the matrix and assigned in both coverage files.
+
+Delivery stream is a fifth dimension, but unlike state, viewport, and mode it is
+**not assigned on a record**. Under D-045 it is **declared at the primitive**,
+**computed at the template**, and **inherited unstored** at route and flow.
+
+`component-primitives.csv` carries `stream_presence`: the set of delivery streams in
+which that primitive is present, drawn from `S-HIGH`, `S-LOW`, `S-MEDIUM`,
+`S-SEMANTIC`, or the single token `STREAM-SCOPE-EXCLUDED` for a primitive that exists
+only on an excluded surface. A template's presence set is the union of the presence
+sets of its `primitive_dependencies`; a route inherits its template's set; a flow
+inherits the union over its templates. No route, flow, or template row carries a
+stream column, and the validator forbids one.
+
+This replaces the D-043 arrangement, in which every record carried an assigned
+`stream_profile` and every non-World record carried a stream-invariance profile. That
+arrangement was deleted rather than amended for two reasons. The assigned column was
+populated as a total function of `state_profile`, so it encoded no judgement and could
+not be wrong. The invariance profile had zero members, and a zero-member guarded
+category is a place for an unexamined record to hide. Invariance survives as an
+**assertion** — no obligation may name more than one stream, and no two streams may
+collapse onto one obligation — which cannot be selected into.
+
+Evidence in each stream in a record's computed presence set is required separately;
+aggregate evidence that names no stream does not discharge it. `S-SEMANTIC` is a peer
+stream, never a fallback, and may not be absent from the presence set of any
+route-reachable template.
 Critical variants requiring distinct visual or focused-frame evidence include:
 
 - public collection populated, approved honest empty, held/unindexed, loading,
@@ -402,7 +432,7 @@ class, alternative-text decision, approval state, and release linkage.
 
 ### 13.1 Public routes
 
-`foundation-route-coverage.csv` is the exact 33-row route coverage authority.
+`foundation-route-coverage.csv` is the exact 34-row route coverage authority.
 Each later route-instance sheet must show the canonical ID/path, template, dominant
 intent, route-specific content slots, evidence gate, actions, semantic/immersive
 relationship, required profiles, and pattern-vs-concrete status. D-025 overrides

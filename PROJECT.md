@@ -73,11 +73,20 @@ for equivalent content, actions, recovery, and accessibility. A reviewed,
 documentation-only UI reference-design contract now covers all 33 routes, nine
 exclusions, 15 wayfinding records, 53 actions, and 45 UX tests through 40 reusable
 templates and 32 responsive/state/accessibility profiles. Its final producer
-freeze passes 183/183 checks and both independent reviews, and awaits founder
-decision at MA-024. No visual reference screen exists yet. UI production,
-application implementation, public copy, publication, and external Figma/Stitch
-writes remain unauthorized. Compatibility inventory acceptance remains separately
-pending at MA-013, and the complete Phase 1 package is not accepted.
+freeze passes 183/183 checks and both independent reviews, and the founder accepted
+it as D-037 on 2026-09-05. A bounded external reference-production contract has now
+been prepared under `docs/phase-1-ui-reference-production/`, frozen at SHA-256
+`E3786F14C9F12CBF8127A18E7959881B91A9ECC5DC11BBE3E466BCEC6C7EC08D` with
+deterministic validation 147/147; it selects Figma, authorizes seven of the nine
+design batches, and awaits independent review and the founder decision at MA-025.
+Two facts constrain that gate: batches B07 and B09 are not authorizable while the
+3D storyboard workstream is `not_started` and MA-004 is blocked, so the D-037 §15
+handoff and `docs/ui/UI_SPEC.md` are deferred to a later MA-026; and no Figma or
+Stitch access path is configured or exposed on this host, verified 2026-09-06, so
+approval alone does not start production. No visual reference screen exists yet.
+UI production, application implementation, public copy, publication, and external
+Figma/Stitch writes remain unauthorized. Compatibility inventory acceptance remains
+separately pending at MA-013, and the complete Phase 1 package is not accepted.
 
 ## Service Architecture
 
@@ -168,6 +177,9 @@ awaits the separate MA-013 founder gate; its exact production locks remain
 deliberately unselected. D-035 accepts the frozen brand identity. D-036 accepts the
 final UX architecture after 113/113 plus independent design and accessibility PASS.
 D-037 accepts the frozen UI reference-design contract and foundation-surface
-coverage package. The exact next action is founder review at MA-025 of a bounded
-external Figma/Stitch production contract. UI production, external design writes,
-and application implementation remain unauthorized until their applicable gates.
+coverage package. The exact next action is founder review at MA-025 of the prepared
+bounded external reference-production contract, which selects Figma, excludes Stitch,
+authorizes batches B01–B06 and B08 only, and holds a zero-spend boundary. No D-038
+decision has been created because that approval is still pending. UI production,
+external design writes, and application implementation remain unauthorized until
+their applicable gates.

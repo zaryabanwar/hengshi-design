@@ -89,7 +89,7 @@ $packageRoot = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '..')).Path
 $repoRoot = (Resolve-Path -LiteralPath (Join-Path $packageRoot '..\..')).Path
 
 Write-Output 'UI_REFERENCE_DESIGN_VALIDATION'
-Write-Output 'EVIDENCE_DATE=2026-09-03'
+Write-Output 'EVIDENCE_DATE=2026-09-06'
 Write-Output ("PACKAGE_ROOT={0}" -f $packageRoot)
 
 $requiredFiles = @(
@@ -105,7 +105,8 @@ $requiredFiles = @(
     'traceability.csv',
     'validation/validate-ui-reference-design.ps1',
     'validation/validation-report.md',
-    'producer-inspection.md'
+    'producer-inspection.md',
+    '../../scripts/validation/ui-stream-mapping.ps1'
 )
 $missingFiles = @($requiredFiles | Where-Object { -not (Test-Path -LiteralPath (Join-Path $packageRoot $_) -PathType Leaf) })
 Assert-True ($missingFiles.Count -eq 0) 'package-files' ("required files present={0}" -f $requiredFiles.Count) ("missing={0}" -f ($missingFiles -join ';'))
@@ -182,7 +183,7 @@ $batches = @($parsedCsv['design-batch-plan.csv'])
 $trace = @($parsedCsv['traceability.csv'])
 $primitives = @($parsedCsv['component-primitives.csv'])
 
-Assert-RequiredColumns $routes @('route_id','path','route_family','route_instance_id','template_id','baseline_frame_name','state_profile','viewport_profile','mode_profile','instance_evidence','semantic_quick_access','optional_immersive_representation','primary_next_actions','content_or_policy_gate','activation_status','browser_profile','time_limit_branch') 'route-columns'
+Assert-RequiredColumns $routes @('route_id','path','route_family','route_instance_id','template_id','baseline_frame_name','state_profile','viewport_profile','mode_profile','instance_evidence','semantic_quick_access','immersive_stream_representation','primary_next_actions','content_or_policy_gate','activation_status','browser_profile','time_limit_branch') 'route-columns'
 Assert-RequiredColumns $flows @('coverage_id','coverage_kind','source_id','flow_family','action_name','template_ids','state_profile','viewport_profile','mode_profile','success_or_expected_state','error_empty_pending_state','recovery','linked_tests','gate','browser_profile','time_limit_branch') 'flow-columns'
 Assert-RequiredColumns $templates @('template_id','template_name','surface_kind','reuse_scope','representative_instance','state_profile','viewport_profile','mode_profile','baseline_frame_name','minimum_reference_evidence','interaction_focus_notes','content_stress_case','primitive_dependencies','gated_inputs','browser_profile','time_limit_branch') 'template-columns'
 Assert-RequiredColumns $matrix @('profile_id','dimension','applies_to','required_values','minimum_evidence','critical_distinct_frame_values','annotation_requirements','exception_rule','browser_profile','time_limit_branch') 'matrix-columns'
@@ -200,8 +201,8 @@ Assert-NonEmptyFields $primitives @('primitive_id','primitive_name','primitive_c
 
 $sourceRoutes = @($sourceRouteJson.routes)
 $sourceRouteRoom = @($sourceCsv['docs/phase-1-ux-architecture/route-room-parity.csv'])
-Assert-True ($sourceRoutes.Count -eq 33) 'source-route-count' 'source canonical routes=33' ("actual={0}" -f $sourceRoutes.Count)
-Assert-True ($routes.Count -eq 33) 'route-coverage-count' 'covered routes=33' ("actual={0}" -f $routes.Count)
+Assert-True ($sourceRoutes.Count -eq 34) 'source-route-count' 'source canonical routes=34' ("actual={0}" -f $sourceRoutes.Count)
+Assert-True ($routes.Count -eq 34) 'route-coverage-count' 'covered routes=34' ("actual={0}" -f $routes.Count)
 Assert-Unique $routes.route_id 'route-id-uniqueness'
 Assert-Unique $routes.path 'route-path-uniqueness'
 Assert-Unique $routes.route_instance_id 'route-instance-uniqueness'
@@ -241,7 +242,7 @@ Assert-Unique $flowActions.source_id 'action-id-uniqueness'
 
 $testSourceText = Get-Content -Raw -LiteralPath (Join-Path $repoRoot 'docs/phase-1-ux-architecture/CONTENT_ANALYTICS_TESTS.md')
 $sourceTests = @([regex]::Matches($testSourceText, '\bUXTEST-\d{3}\b') | ForEach-Object Value | Sort-Object -Unique)
-$expectedTests = @(1..45 | ForEach-Object { 'UXTEST-{0:D3}' -f $_ })
+$expectedTests = @(1..46 | ForEach-Object { 'UXTEST-{0:D3}' -f $_ })
 $traceTests = @($trace | Where-Object { $_.source_type -ceq 'ux_test' })
 $linkedTests = @($flows | ForEach-Object { Split-List $_.linked_tests } | Sort-Object -Unique)
 Assert-ExactSet $expectedTests $sourceTests 'source-ux-test-set'
@@ -269,7 +270,7 @@ $requiredFlowFamilies = @(
     'FLOW-NAVIGATION-SEARCH',
     'FLOW-FIRST-VISIT',
     'FLOW-RETURN-VISIT',
-    'FLOW-WORLD-HUD-FALLBACK',
+    'FLOW-WORLD-HUD-STREAM',
     'FLOW-AI',
     'FLOW-HUMAN-HANDOFF',
     'FLOW-MEDIA-OPT-IN',
@@ -287,7 +288,26 @@ Assert-Unique $flows.coverage_id 'flow-coverage-id-uniqueness'
 Assert-True ($templates.Count -eq 40) 'template-count' 'reusable templates=40' ("actual={0}" -f $templates.Count)
 Assert-Unique $templates.template_id 'template-id-uniqueness'
 Assert-Unique $matrix.profile_id 'profile-id-uniqueness'
-Assert-True ($matrix.Count -eq 32) 'profile-count' 'viewport mode state browser and time-limit profiles=32' ("actual={0}" -f $matrix.Count)
+# D-042 2026-09-06: four DS-S-* stream profiles added. Was 32 at D-037.
+# D-043 2026-09-06: a guarded stream-invariance profile was added. Was 36 at D-042.
+# D-045 2026-09-06: that profile is DELETED, not amended. It had zero members, and a
+# zero-member guarded category is where an unexamined record hides. Invariance survives
+# only as assertion A-06, which cannot be selected into. Back to 36.
+$streamProfiles = @($matrix | Where-Object { $_.dimension -ceq 'stream' })
+Assert-True ($matrix.Count -eq 36) 'profile-count' 'viewport mode state stream browser and time-limit profiles=36' ("actual={0}" -f $matrix.Count)
+Assert-ExactSet @('DS-S-HIGH','DS-S-MEDIUM','DS-S-LOW','DS-S-SEMANTIC') $streamProfiles.profile_id 'delivery-stream-profile-set'
+
+# D-043: a stream profile row must be homogeneous in its own dimension. Before this the
+# DS-S-* rows carried STATE-*/MODE-*/VP-* tokens in required_values, which made the
+# evidence set uncountable. required_values now holds stream tokens only.
+$legalStreamTokens = @('S-HIGH','S-MEDIUM','S-LOW','S-SEMANTIC')
+$streamTokenErrors = [System.Collections.Generic.List[string]]::new()
+foreach ($row in $streamProfiles) {
+    foreach ($token in @(Split-List $row.required_values)) {
+        if ($token -cnotin $legalStreamTokens) { $streamTokenErrors.Add(("{0}:{1}" -f $row.profile_id, $token)) }
+    }
+}
+Assert-True ($streamTokenErrors.Count -eq 0) 'delivery-stream-token-legality' 'every stream profile required value is a stream token' ("illegal={0}" -f ($streamTokenErrors -join ';'))
 $templateIds = @($templates.template_id)
 $profileIds = @($matrix.profile_id)
 $routeTemplateRefs = @($routes.template_id | Sort-Object -Unique)
@@ -307,14 +327,340 @@ foreach ($row in @($routes + $flows + $templates)) {
         }
     }
 }
-Assert-True ($profileRefGaps.Count -eq 0) 'profile-reference-resolution' 'all route flow and template profile references resolve' ("gaps={0}" -f ($profileRefGaps -join ';'))
+# D-045: the stream clause is removed from here because records no longer select a
+# stream profile. Stream legality is resolved at the primitive by A-02 and folded to the
+# template by A-03; there is nothing on a record to resolve.
+Assert-True ($profileRefGaps.Count -eq 0) 'profile-reference-resolution' 'all route flow and template state viewport and mode profile references resolve' ("gaps={0}" -f ($profileRefGaps -join ';'))
+
+# =====================================================================
+# D-045 2026-09-06 - delivery-stream evidence model, assertions A-01..A-11.
+#
+# What was deleted here and why. Two D-043 assertions stood in this place:
+#   * 'delivery-stream-assignment' enforced state_profile as a proxy for stream
+#     presence and forbade the correct answer.
+#   * 'delivery-stream-record-coverage' had the pass condition Count -eq 44.
+# Both are deleted, not amended. An assertion whose pass condition is a row count
+# proves a column exists; it cannot prove the column carries a judgement. That
+# defect has now survived three independent FAIL rounds against 183, 184 and 185
+# passing assertions, and its fourth spelling passed 189. No assertion below has a
+# bare count in its pass condition.
+#
+# The model: stream obligations are DECLARED at the primitive (stream_presence),
+# COMPUTED from alternative hosts constrained by required content dependencies, and
+# INHERITED unstored at route and flow. No record carries a stream column, so
+# there is nothing on a record for a future producer to populate as a total
+# function of an existing column.
+# =====================================================================
+
+$legalStreams = @('S-HIGH','S-LOW','S-MEDIUM','S-SEMANTIC')
+$streamExcluded = 'STREAM-SCOPE-EXCLUDED'
+
+# --- A-01 stream-column-absence --------------------------------------------
+# Deletion guard. Without it the concept returns under a new spelling, which is
+# exactly how it arrived: D-042 added inert DS-S-* profiles, D-043 derived
+# stream_profile from state_profile, and each passed every assertion of its day.
+# Carve-out, stated rather than silent: immersive_stream_representation contains
+# the substring 'stream' and is REQUIRED by N-02. It is authored prose that A-05
+# resolves against the computed fold, so it is a checked claim, not a free column.
+$prohibitedStreamColumn = -join ('stream','_','profile')
+$invariantToken = -join ('DS-STREAM','-','INVARIANT')
+$a01 = [System.Collections.Generic.List[string]]::new()
+foreach ($name in @('foundation-route-coverage.csv','foundation-flow-coverage.csv','reference-template-inventory.csv')) {
+    foreach ($col in @($parsedCsv[$name][0].PSObject.Properties.Name)) {
+        if ($col -ceq 'immersive_stream_representation') { continue }
+        if ($col -ceq $prohibitedStreamColumn -or $col -match 'stream') { $a01.Add(("{0}:{1}" -f $name, $col)) }
+    }
+}
+# The token guard scans the seven package CSVs plus the two normative Markdown
+# files. It deliberately does NOT scan producer-inspection.md, validation-report.md
+# or this script: those three are dated historical records and must be able to name
+# a concept they record as deleted. Data may not carry it; prose history may.
+$a01Scan = @('foundation-route-coverage.csv','foundation-flow-coverage.csv','reference-template-inventory.csv','responsive-state-mode-matrix.csv','design-batch-plan.csv','component-primitives.csv','traceability.csv','README.md','UI_REFERENCE_DESIGN_CONTRACT.md')
+foreach ($rel in $a01Scan) {
+    $text = Get-Content -Raw -LiteralPath (Join-Path $packageRoot $rel)
+    if ($text -match [regex]::Escape($invariantToken) -or $text -match '(?i)stream[_-]invariant') { $a01.Add(("{0}:token" -f $rel)) }
+}
+Assert-True ($a01.Count -eq 0) 'stream-column-absence' 'no record file carries a stream column and no package data or normative text carries the deleted invariance token' ("violations={0}" -f ($a01 -join ';'))
+
+# --- A-02 primitive-stream-presence-legality -------------------------------
+# Resolves every stream_presence value against the closed vocabulary, requires
+# ordinal sort so two spellings of one set cannot both be legal, and resolves every
+# STREAM-SCOPE-EXCLUDED primitive against the excluded surfaces via the templates
+# that depend on it.
+$presenceOf = @{}
+$a02 = [System.Collections.Generic.List[string]]::new()
+foreach ($p in $primitives) {
+    if (-not $p.PSObject.Properties['stream_presence']) { $a02.Add(("{0}:column-missing" -f $p.primitive_id)); continue }
+    $tokens = @(Split-List $p.stream_presence)
+    if ($tokens.Count -eq 0) { $a02.Add(("{0}:blank" -f $p.primitive_id)); continue }
+    if ($tokens.Count -eq 1 -and $tokens[0] -ceq $streamExcluded) { $presenceOf[$p.primitive_id] = @(); continue }
+    foreach ($t in $tokens) { if ($t -cnotin $legalStreams) { $a02.Add(("{0}:illegal={1}" -f $p.primitive_id, $t)) } }
+    $sorted = @($tokens | Sort-Object -CaseSensitive)
+    if (($tokens -join ';') -cne ($sorted -join ';')) { $a02.Add(("{0}:unsorted" -f $p.primitive_id)) }
+    if (@($tokens | Sort-Object -Unique).Count -ne $tokens.Count) { $a02.Add(("{0}:duplicate-token" -f $p.primitive_id)) }
+    $presenceOf[$p.primitive_id] = $tokens
+}
+# An excluded primitive must not be reachable from a surface that routes reach.
+$routeReachedTemplates = @($routes.template_id | Sort-Object -Unique)
+foreach ($p in $primitives) {
+    if (@(Split-List $p.stream_presence) -ccontains $streamExcluded) {
+        foreach ($t in $templates) {
+            if (@(Split-List $t.primitive_dependencies) -ccontains $p.primitive_id -and $t.template_id -cin $routeReachedTemplates) {
+                $a02.Add(("{0}:excluded-but-route-reachable-via={1}" -f $p.primitive_id, $t.template_id))
+            }
+        }
+    }
+}
+Assert-True ($a02.Count -eq 0) 'primitive-stream-presence-legality' 'every primitive declares a legal ordinal-sorted stream presence and no excluded primitive is reachable from a routed surface' ("errors={0}" -f ($a02 -join ';'))
+
+# --- A-03 template-stream-presence-resolution ------------------------------
+# The fold. This is the assertion whose absence is why the old exception_rule bound
+# nothing: before D-045 nothing resolved primitive_dependencies against primitive
+# stream data.
+. (Join-Path $repoRoot 'scripts/validation/ui-stream-mapping.ps1')
+try {
+    $streamMapping = Get-UiStreamMapping -Primitives $primitives -Templates $templates
+}
+catch {
+    Add-Fail 'template-stream-presence-resolution' $_.Exception.Message
+    Write-Output ("RESULT=FAIL PASS_COUNT={0} FAIL_COUNT={1}" -f $script:PassCount, $script:Failures.Count)
+    exit 1
+}
+$templatePresence = $streamMapping.TemplatePresence
+Assert-True $true 'template-stream-presence-resolution' 'alternative hosts determine scope; required content constrains public streams; staff hosts remain excluded' ''
+
+# S-SEMANTIC may never be absent from a template that any route reaches. This is the
+# peer guarantee expressed as a resolution rather than as a vocabulary regex.
+$a03b = @($templates | Where-Object { $_.template_id -cin $routeReachedTemplates -and 'S-SEMANTIC' -cnotin $templatePresence[$_.template_id] } | ForEach-Object template_id)
+Assert-True ($a03b.Count -eq 0) 'semantic-peer-presence-completeness' 'every route-reachable template folds to a presence set containing S-SEMANTIC' ("missing={0}" -f ($a03b -join ';'))
+
+# --- A-04 flow-template-stream-resolution ----------------------------------
+# Founder-required. Resolves every flow's template_ids, computes presence(F), and
+# resolves that set against the union of presence over the templates owned by the
+# batches that own the flow's templates. The stream_disposition half of A-04 is
+# resolved in the production package by A-13; it cannot be resolved here because
+# design-batch-plan.csv carries no disposition column.
+$batchOfTemplate = @{}
+foreach ($b in $batches) { foreach ($t in @(Split-List $b.primary_template_ids)) { $batchOfTemplate[$t] = $b.batch_id } }
+$a04 = [System.Collections.Generic.List[string]]::new()
+foreach ($f in $flows) {
+    $ft = @(Split-List $f.template_ids)
+    $fp = [System.Collections.Generic.List[string]]::new()
+    foreach ($t in $ft) {
+        if (-not $templatePresence.ContainsKey($t)) { $a04.Add(("{0}:unresolved-template={1}" -f $f.coverage_id, $t)); continue }
+        foreach ($s in $templatePresence[$t]) { if ($s -cnotin $fp) { $fp.Add($s) } }
+    }
+    $owned = [System.Collections.Generic.List[string]]::new()
+    foreach ($t in $ft) {
+        if (-not $batchOfTemplate.ContainsKey($t)) { $a04.Add(("{0}:template-unowned={1}" -f $f.coverage_id, $t)); continue }
+        foreach ($ot in @($batches | Where-Object { $_.batch_id -ceq $batchOfTemplate[$t] } | ForEach-Object { Split-List $_.primary_template_ids })) {
+            foreach ($s in $templatePresence[$ot]) { if ($s -cnotin $owned) { $owned.Add($s) } }
+        }
+    }
+    foreach ($s in $fp) { if ($s -cnotin $owned) { $a04.Add(("{0}:stream-unowned={1}" -f $f.coverage_id, $s)) } }
+}
+Assert-True ($a04.Count -eq 0) 'flow-template-stream-resolution' 'every flow resolves its templates and every stream in its computed presence is owned by a batch that owns one of those templates' ("errors={0}" -f ($a04 -join ';'))
+
+# --- A-05 route-immersive-representation-agreement -------------------------
+# N-02. Authored prose on the left, computed fold on the right; disagreement in
+# either direction fails. Neither direction is detectable by any pre-D-045
+# assertion.
+$immersiveStreams = @('S-HIGH','S-LOW','S-MEDIUM')
+$a05 = [System.Collections.Generic.List[string]]::new()
+foreach ($r in $routes) {
+    $computed = @()
+    if ($templatePresence.ContainsKey($r.template_id)) { $computed = @($templatePresence[$r.template_id] | Where-Object { $_ -cin $immersiveStreams }) }
+    $authored = -not [string]::IsNullOrWhiteSpace([string]$r.immersive_stream_representation)
+    if ($authored -and $computed.Count -eq 0) { $a05.Add(("{0}:authored-but-not-computed" -f $r.route_id)) }
+    if (-not $authored -and $computed.Count -gt 0) { $a05.Add(("{0}:computed-but-not-authored" -f $r.route_id)) }
+}
+Assert-True ($a05.Count -eq 0) 'route-immersive-representation-agreement' 'every route immersive stream representation agrees with the presence set computed from its template' ("disagreements={0}" -f ($a05 -join ';'))
+
+# --- A-06 stream-sharing-prohibition ---------------------------------------
+# Invariance survives here and only here. D-045 deleted the invariance PROFILE
+# because a zero-member guarded category is where an unexamined record hides; the
+# test is kept as an assertion that cannot be selected into. Each obligation is a
+# (template, stream-critical coordinate, stream) triple; the prohibition is that no
+# obligation names more than one stream and no two streams collapse onto one
+# obligation.
+$streamCritical = @($streamProfiles | ForEach-Object { Split-List $_.critical_distinct_frame_values } | Where-Object { $_ -clike 'STATE-*' } | Sort-Object -Unique)
+$profileByIdA = @{}
+foreach ($m in $matrix) { $profileByIdA[$m.profile_id] = $m }
+$a06 = [System.Collections.Generic.List[string]]::new()
+$obligations = [System.Collections.Generic.HashSet[string]]::new()
+foreach ($t in $templates) {
+    $sp = $profileByIdA[$t.state_profile]
+    $coords = @(Split-List $sp.required_values | Where-Object { $_ -cin $streamCritical })
+    foreach ($c in $coords) {
+        foreach ($s in $templatePresence[$t.template_id]) {
+            $key = "{0}|{1}|{2}" -f $t.template_id, $c, $s
+            if (@($key -split '\|')[2] -cnotin $legalStreams) { $a06.Add(("{0}:not-single-stream" -f $key)) }
+            if (-not $obligations.Add($key)) { $a06.Add(("{0}:collapsed" -f $key)) }
+        }
+    }
+}
+Assert-True ($a06.Count -eq 0) 'stream-sharing-prohibition' 'every stream-critical obligation names exactly one stream and no two streams share an obligation' ("errors={0}" -f ($a06 -join ';'))
+
+# --- A-07 stream-control-host-completeness ---------------------------------
+# N-01. A template that lists no host shell has no surface on which the stream
+# control can appear, so its stream obligations are unsatisfiable and nothing said
+# so. An excluded-surface template is one that depends on a STREAM-SCOPE-EXCLUDED
+# primitive; that is derived from the data, not listed here.
+$shellPrimitives = @($primitives | Where-Object { $_.primitive_category -ceq 'shell_navigation' -or $_.required_anatomy -match 'delivery stream control' } | ForEach-Object primitive_id)
+$controlHosts = @($primitives | Where-Object { $_.required_anatomy -match 'delivery stream control' } | ForEach-Object primitive_id)
+$a07 = [System.Collections.Generic.List[string]]::new()
+foreach ($t in $templates) {
+    $deps = @(Split-List $t.primitive_dependencies)
+    $isExcludedSurface = $false
+    foreach ($d in $deps) { if ($presenceOf.ContainsKey($d) -and $presenceOf[$d].Count -eq 0) { $isExcludedSurface = $true } }
+    if ($isExcludedSurface) { continue }
+    if (@($deps | Where-Object { $_ -cin $shellPrimitives }).Count -eq 0) { $a07.Add(("{0}:no-host-shell" -f $t.template_id)) }
+}
+foreach ($h in $controlHosts) {
+    if ($presenceOf.ContainsKey($h) -and $presenceOf[$h].Count -lt 2) { $a07.Add(("{0}:control-host-presence-below-two" -f $h)) }
+}
+Assert-True ($a07.Count -eq 0) 'stream-control-host-completeness' 'every non-excluded template resolves to a host shell primitive and every stream-control host is present in at least two streams' ("errors={0}" -f ($a07 -join ';'))
+
+# --- A-08 stream-state-availability ----------------------------------------
+# Closes accessibility finding B-03. If a template is hosted by a surface carrying
+# the stream control, the stream can be changed there, and the changed state and the
+# preference-write failure must both exist in that template's state profile.
+# Producer note for reviewers: the accepted specification's migration table named
+# only SP-NAVIGATION. N-01 plus this assertion mechanically implicate fourteen state
+# profiles, eleven of which the table did not enumerate. Those eleven were amended
+# as a derivation, not as a design choice; see producer-inspection.md.
+$requiredStreamStates = @('STATE-STREAM-CHANGED','STATE-PREFERENCE-WRITE-FAILED')
+$a08 = [System.Collections.Generic.List[string]]::new()
+foreach ($t in $templates) {
+    if (@(Split-List $t.primitive_dependencies | Where-Object { $_ -cin $controlHosts }).Count -eq 0) { continue }
+    $sp = $profileByIdA[$t.state_profile]
+    $vals = @(Split-List $sp.required_values)
+    foreach ($s in $requiredStreamStates) { if ($s -cnotin $vals) { $a08.Add(("{0}:{1}:{2}" -f $t.template_id, $t.state_profile, $s)) } }
+}
+Assert-True ($a08.Count -eq 0) 'stream-state-availability' 'every template hosted by a stream-control surface selects a state profile offering the stream-changed and preference-write-failed states' ("missing={0}" -f (($a08 | Sort-Object -Unique) -join ';'))
+
+# --- A-09 stream-mode-precedence-resolution --------------------------------
+# Closes accessibility finding S-05. Where the mode axis excludes a mode that a
+# stream in presence(record) requires, both statements are true at once and the
+# precedence must be written down rather than inferred by whoever draws the frame.
+$modeExclusions = @{}
+foreach ($m in @($matrix | Where-Object { $_.profile_id -clike 'MP-*' })) {
+    foreach ($hit in [regex]::Matches([string]$m.exception_rule, 'MODE-[A-Z-]+')) {
+        if (-not $modeExclusions.ContainsKey($m.profile_id)) { $modeExclusions[$m.profile_id] = [System.Collections.Generic.List[string]]::new() }
+        if ($hit.Value -cnotin $modeExclusions[$m.profile_id]) { $modeExclusions[$m.profile_id].Add($hit.Value) }
+    }
+}
+$streamModeNeeds = @{}
+foreach ($sp in $streamProfiles) {
+    $token = $sp.profile_id -creplace '^DS-', ''
+    $streamModeNeeds[$token] = @([regex]::Matches([string]$sp.minimum_evidence, 'MODE-[A-Z-]+') | ForEach-Object { $_.Value } | Sort-Object -Unique)
+}
+$worldPrecedence = [string]($matrix | Where-Object { $_.profile_id -ceq 'MP-WORLD' } | Select-Object -First 1).exception_rule
+$a09 = [System.Collections.Generic.List[string]]::new()
+foreach ($t in $templates) {
+    if (-not $modeExclusions.ContainsKey($t.mode_profile)) { continue }
+    foreach ($s in $templatePresence[$t.template_id]) {
+        if (-not $streamModeNeeds.ContainsKey($s)) { continue }
+        foreach ($mode in $modeExclusions[$t.mode_profile]) {
+            if ($mode -cin $streamModeNeeds[$s]) {
+                if (-not ($worldPrecedence -match [regex]::Escape($mode) -and $worldPrecedence -match '(?i)prevails')) {
+                    $a09.Add(("{0}:{1}:{2}" -f $t.template_id, $s, $mode))
+                }
+            }
+        }
+    }
+}
+Assert-True ($a09.Count -eq 0) 'stream-mode-precedence-resolution' 'every mode excluded by a mode profile and required by a stream in that record presence is named by the stated precedence rule' ("unnamed={0}" -f (($a09 | Sort-Object -Unique) -join ';'))
+
+# --- A-10 baseline-frame-name-token-resolution -----------------------------
+# This replaces a vocabulary regex with a resolution, which is why it catches what
+# two successive widenings of semantic-stream-peer-framing did not: the surviving
+# R-034 instance was spelled with underscores inside an identifier, and the guard
+# matched hyphens. Each parsed segment is resolved against the value set the record
+# itself selects, with underscore/hyphen normalisation in both directions.
+function ConvertTo-Token { param([string]$V) return ($V -creplace '_', '-') }
+$batchIds = @($batches.batch_id)
+$a10 = [System.Collections.Generic.List[string]]::new()
+$framePattern = '^HSD_UIR_(B\d{2})_(.+?)_STATE_(.+?)_VP_(.+?)_MODE_(.+?)_(?:STREAM_(HIGH|MEDIUM|LOW|SEMANTIC)|SCOPE_(EXCLUDED))_V(\d{2})$'
+foreach ($rec in @($templates + $routes)) {
+    $isRoute = [bool]$rec.PSObject.Properties['route_id']
+    $id = if ($isRoute) { $rec.route_id } else { $rec.template_id }
+    $m = [regex]::Match([string]$rec.baseline_frame_name, $framePattern)
+    if (-not $m.Success) { $a10.Add(("{0}:unparseable" -f $id)); continue }
+    if ($m.Groups[1].Value -cnotin $batchIds) { $a10.Add(("{0}:batch={1}" -f $id, $m.Groups[1].Value)) }
+    $sp = $profileByIdA[$rec.state_profile]; $vp = $profileByIdA[$rec.viewport_profile]; $mp = $profileByIdA[$rec.mode_profile]
+    if ((ConvertTo-Token ('STATE_' + $m.Groups[3].Value)) -cnotin @(Split-List $sp.required_values)) { $a10.Add(("{0}:state={1}" -f $id, $m.Groups[3].Value)) }
+    if ((ConvertTo-Token ('VP_' + $m.Groups[4].Value)) -cnotin @(Split-List $vp.required_values)) { $a10.Add(("{0}:viewport={1}" -f $id, $m.Groups[4].Value)) }
+    if ((ConvertTo-Token ('MODE_' + $m.Groups[5].Value)) -cnotin @(Split-List $mp.required_values)) { $a10.Add(("{0}:mode={1}" -f $id, $m.Groups[5].Value)) }
+    $tid = if ($isRoute) { $rec.template_id } else { $rec.template_id }
+    $isExcluded = $streamMapping.TemplateScope[$tid] -ceq $streamExcluded
+    if ($isExcluded) {
+        if ($m.Groups[7].Value -cne 'EXCLUDED') { $a10.Add(("{0}:excluded-frame-requires-scope-token" -f $id)) }
+    }
+    else {
+        $frameStream = 'S-' + $m.Groups[6].Value
+        if ($m.Groups[7].Success -or $frameStream -cnotin $templatePresence[$tid]) { $a10.Add(("{0}:stream={1}-not-in-presence" -f $id, $frameStream)) }
+    }
+}
+Assert-True ($a10.Count -eq 0) 'baseline-frame-name-token-resolution' 'every baseline frame name parses under the amended EC-08 grammar and every parsed token resolves against the value set the record selects' ("unresolved={0}" -f ($a10 -join ';'))
+
+# --- A-11 inert-column-detection -------------------------------------------
+# The generalised guard against the recurring defect: a column populated as a total
+# function of an existing column encodes no judgement and cannot be wrong.
+#
+# PRODUCER NOTE, recorded rather than smoothed over. The accepted specification says
+# to test each judgement column "against every other column in the same file". Taken
+# literally that is vacuous: every column is a total function of its file's primary
+# key, so the literal reading fails every column in every file, including
+# stream_presence itself. The reading implemented here restricts determiners to
+# columns that are themselves CLASSIFICATIONS the package already makes - which is
+# precisely the shape of the defect, since stream_profile was determined by
+# state_profile. The determiner set is written out below so a reviewer can disagree
+# with it in one place. The producer did not author this restriction as a design
+# choice and flags it as a specification gap; see producer-inspection.md.
+$classifierColumns = @('route_family','state_profile','viewport_profile','mode_profile','surface_kind','activation_status','primitive_category','interaction_class','browser_profile','time_limit_branch','coverage_kind','flow_family','reuse_scope')
+$judgementColumns = @{
+    'foundation-route-coverage.csv'    = @('template_id','state_profile','viewport_profile','mode_profile','semantic_quick_access','immersive_stream_representation','content_or_policy_gate','activation_status','time_limit_branch')
+    'foundation-flow-coverage.csv'     = @('state_profile','viewport_profile','mode_profile','gate','time_limit_branch')
+    'reference-template-inventory.csv' = @('surface_kind','state_profile','viewport_profile','mode_profile','time_limit_branch')
+    'component-primitives.csv'         = @('primitive_category','interaction_class','stream_presence')
+}
+# Declared exemption, with its reason, as the specification requires:
+# browser_profile is inert and legitimately so - exactly one accepted profile
+# (BP-NFR-006) exists and the contract declares it. A constant column asserts
+# nothing and hides nothing.
+$inertExempt = @('browser_profile')
+$inertFound = [System.Collections.Generic.List[string]]::new()
+foreach ($fileName in $judgementColumns.Keys) {
+    $rows = @($parsedCsv[$fileName])
+    $cols = @($rows[0].PSObject.Properties.Name)
+    foreach ($c in $judgementColumns[$fileName]) {
+        if ($c -cin $inertExempt) { continue }
+        if (@($rows | ForEach-Object { [string]$_.$c } | Sort-Object -Unique).Count -le 1) { continue }
+        foreach ($o in @($cols | Where-Object { $_ -cin $classifierColumns -and $_ -cne $c })) {
+            $map = @{}
+            $singleValued = $true
+            foreach ($row in $rows) {
+                $k = [string]$row.$o
+                if ($map.ContainsKey($k)) { if ($map[$k] -cne [string]$row.$c) { $singleValued = $false; break } }
+                else { $map[$k] = [string]$row.$c }
+            }
+            if ($singleValued) { $inertFound.Add(("{0}:{1}<-{2}" -f $fileName, $c, $o)) }
+        }
+    }
+}
+foreach ($entry in $inertFound) { Write-Output ("INERT-REPORT {0}" -f $entry) }
+# The stream axis is the column this model exists to make load-bearing. Its
+# inertness is a hard failure and is not negotiable by exemption.
+$streamInert = @($inertFound | Where-Object { $_ -match 'stream_presence' })
+Assert-True ($streamInert.Count -eq 0) 'inert-column-detection' 'stream_presence is not a total function of any classification the package already makes' ("inert={0}" -f ($streamInert -join ';'))
 
 $requiredViewports = @('VP-320','VP-NARROW','VP-LANDSCAPE','VP-TABLET','VP-DESKTOP','VP-WIDE','VP-ZOOM-400')
 $viewportProfiles = @($matrix | Where-Object { $_.profile_id -like 'VP-*' })
 $viewportFailures = @($viewportProfiles | Where-Object { $values = @(Split-List $_.required_values); @($requiredViewports | Where-Object { $_ -cnotin $values }).Count -gt 0 })
 Assert-True ($viewportProfiles.Count -eq 4 -and $viewportFailures.Count -eq 0) 'required-viewports' 'all four viewport profiles include 320 narrow landscape tablet desktop wide and 400-percent reflow' ("profiles={0}; incomplete={1}" -f $viewportProfiles.Count, $viewportFailures.Count)
 
-$requiredModes = @('MODE-STANDARD','MODE-REDUCED-MOTION','MODE-LOW-POWER','MODE-NON-WEBGL-QUICK-ACCESS','MODE-FORCED-COLORS','MODE-GRAYSCALE','MODE-UNAVAILABLE-FONT','MODE-UNAVAILABLE-IMAGE-ASSET','MODE-PRINT','MODE-KEYBOARD','MODE-SCREEN-READER')
+$requiredModes = @('MODE-STANDARD','MODE-REDUCED-MOTION','MODE-LOW-POWER','MODE-SEMANTIC-SHELL','MODE-FORCED-COLORS','MODE-GRAYSCALE','MODE-UNAVAILABLE-FONT','MODE-UNAVAILABLE-IMAGE-ASSET','MODE-PRINT','MODE-KEYBOARD','MODE-SCREEN-READER')
 $allModes = @($matrix | Where-Object { $_.profile_id -like 'MP-*' } | ForEach-Object { Split-List $_.required_values } | Sort-Object -Unique)
 $publicModes = @($matrix | Where-Object { $_.profile_id -ceq 'MP-PUBLIC' } | ForEach-Object { Split-List $_.required_values })
 Assert-ExactSet $requiredModes $allModes 'required-mode-union'
@@ -412,8 +758,11 @@ Assert-Unique $routes.baseline_frame_name 'route-frame-name-uniqueness'
 Assert-Unique $templates.baseline_frame_name 'template-frame-name-uniqueness'
 $allFrameNames = @($routes.baseline_frame_name + $templates.baseline_frame_name)
 Assert-Unique $allFrameNames 'all-frame-name-uniqueness'
-$badFrameNames = @($allFrameNames | Where-Object { $_ -cnotmatch '^HSD_UIR_B\d{2}_[A-Z0-9_]+_V\d{2}$' })
-Assert-True ($badFrameNames.Count -eq 0) 'frame-name-grammar' 'all baseline frame names follow the tool-neutral grammar' ("invalid={0}" -f ($badFrameNames -join ';'))
+# D-045: EC-08 gains a mandatory single-valued <STREAM> segment. There is no aggregate
+# form: a frame that names no stream, or more than one, cannot discharge a stream
+# obligation. A-10 resolves each parsed segment; this only checks the shape.
+$badFrameNames = @($allFrameNames | Where-Object { $_ -cnotmatch '^HSD_UIR_B\d{2}_[A-Z0-9_]+_STATE_[A-Z0-9_]+_VP_[A-Z0-9_]+_MODE_[A-Z0-9_]+_(?:STREAM_(HIGH|MEDIUM|LOW|SEMANTIC)|SCOPE_EXCLUDED)_V\d{2}$' })
+Assert-True ($badFrameNames.Count -eq 0) 'frame-name-grammar' 'all baseline frame names follow the tool-neutral grammar including a single mandatory stream segment' ("invalid={0}" -f ($badFrameNames -join ';'))
 $badRouteFrames = @($routes | Where-Object { $_.baseline_frame_name -cnotmatch '_INST_' })
 $badTemplateFrames = @($templates | Where-Object { $_.baseline_frame_name -cnotmatch '_REF_' })
 Assert-True ($badRouteFrames.Count -eq 0 -and $badTemplateFrames.Count -eq 0) 'template-instance-frame-distinction' 'route instance frames use INST and reusable representatives use REF' ("route errors={0}; template errors={1}" -f $badRouteFrames.Count, $badTemplateFrames.Count)
@@ -427,8 +776,20 @@ $primitiveTemplateRefs = @($primitives | ForEach-Object { Split-List $_.referenc
 $badPrimitiveTemplateRefs = @($primitiveTemplateRefs | Where-Object { $_ -like 'TPL-*' -and $_ -cnotin $templateIds })
 Assert-True ($badPrimitiveTemplateRefs.Count -eq 0) 'primitive-template-reference-resolution' 'all explicit PRIM-to-TPL references resolve' ("missing={0}" -f (($badPrimitiveTemplateRefs | Sort-Object -Unique) -join ';'))
 
-$expectedDesignSystemHash = 'DCF2F63D11BB45CB71568B18A0E16C95BD94F1991CBE23B5B677D832F1310AD2'
-$expectedPrimitiveHash = '2D01496DCC7D9C062AD77E52CC9F0F110D3F7B4CE899D95A52A8B6F7311E6F4A'
+# Re-frozen 2026-09-03 by the D-039 CR-002 revision window, which removed the
+# "optional"/fallback framing for the semantic stream. The 2026-09-03 D-037
+# acceptance values are retained below as provenance and MUST NOT be deleted;
+# the amended package requires fresh founder acceptance at MA-028 before these
+# values carry the same authority the superseded pair did.
+# D-037 acceptance 2026-09-03:
+#   DESIGN_SYSTEM_IMPLICATIONS.md DCF2F63D11BB45CB71568B18A0E16C95BD94F1991CBE23B5B677D832F1310AD2
+#   component-primitives.csv      2D01496DCC7D9C062AD77E52CC9F0F110D3F7B4CE899D95A52A8B6F7311E6F4A
+#   CR-002 amendment 2026-09-06 B4F0F9E34908B691C73CADCE33784E7D2709BFDB89F84F3B24188CF3198626BB
+$expectedDesignSystemHash = '0E9FC68C98AC25C4F7DFBC62B10DBA1FCB197F5C82AD2FF39DCD0C16D9CFB763'
+#   CR-002 amendment 2026-09-06 0EC5B81452EAF79076CF06A5F57C7982D8F581D6105466D5352796C542DF007C
+#   D-043 remediation 2026-09-06 E06D11057AF1E903E37FC0F289E994B196FD337B4E8A22AB37BB686562BB9470
+# D-045 2026-09-06: stream_presence added per the accepted specification section 5.1.
+$expectedPrimitiveHash = 'E6B39B5B9B5B917EAB8306E653E38E9F06934788AACB7CFF05226D21005929CB'
 $actualDesignSystemHash = (Get-FileHash -Algorithm SHA256 -LiteralPath (Join-Path $packageRoot 'DESIGN_SYSTEM_IMPLICATIONS.md')).Hash.ToUpperInvariant()
 $actualPrimitiveHash = (Get-FileHash -Algorithm SHA256 -LiteralPath (Join-Path $packageRoot 'component-primitives.csv')).Hash.ToUpperInvariant()
 Assert-True ($actualDesignSystemHash -ceq $expectedDesignSystemHash) 'design-system-freeze-hash' $actualDesignSystemHash ("expected={0}; actual={1}" -f $expectedDesignSystemHash, $actualDesignSystemHash)
@@ -468,13 +829,13 @@ foreach ($batch in $batches) {
 Assert-True ($hardPrerequisiteErrors.Count -eq 0) 'design-batch-hard-prerequisite-resolution' 'all hard prerequisite IDs resolve to earlier batches without self-dependency' ("errors={0}" -f ($hardPrerequisiteErrors -join ';'))
 
 $expectedPrimaryByBatch = @{
-    'B01' = @('FLOW-NAVIGATION-SEARCH','FLOW-ERROR-OFFLINE-RECOVERY','DF-01','ACT-01','ACT-02','ACT-03','ACT-04','ACT-05','EXCL-INTERNAL-SEARCH','EXCL-TRACKING-PARAMETERS','EXCL-FILTER-SORT-VARIANTS')
+    'B01' = @('FLOW-NAVIGATION-SEARCH','FLOW-ERROR-OFFLINE-RECOVERY','DF-01','ACT-01','ACT-02','ACT-03','ACT-04','ACT-05','ACT-09','EXCL-INTERNAL-SEARCH','EXCL-TRACKING-PARAMETERS','EXCL-FILTER-SORT-VARIANTS')
     'B02' = @($routes | Where-Object { $_.template_id -cin @('TPL-PUBLIC-HOME','TPL-SERVICE-COLLECTION','TPL-PUBLIC-ABOUT') } | ForEach-Object route_id) + @('J-01')
     'B03' = @($routes | Where-Object { $_.template_id -cin @('TPL-SERVICE-WING','TPL-SERVICE-DETAIL','TPL-INDUSTRY-COLLECTION','TPL-INDUSTRY-DETAIL') } | ForEach-Object route_id) + @('J-03') + @($sourceWayfinding.room_id)
     'B04' = @($routes | Where-Object { $_.template_id -cin @('TPL-WORK-COLLECTION','TPL-WORK-DETAIL','TPL-DEMO-COLLECTION','TPL-DEMO-DETAIL','TPL-INSIGHT-COLLECTION','TPL-INSIGHT-DETAIL','TPL-EXPERT-COLLECTION','TPL-EXPERT-DETAIL','TPL-TRUST-COLLECTION','TPL-TRUST-DETAIL') } | ForEach-Object route_id) + @('J-04','ACT-13')
     'B05' = @('ROUTE-CONTACT','FLOW-AI','FLOW-HUMAN-HANDOFF','FLOW-MEDIA-OPT-IN','FLOW-CONTACT','J-05','AF-01','AF-02','CF-01','ACT-14','ACT-15','ACT-16','ACT-17','ACT-18','ACT-19','ACT-32','EXCL-CHAT-SESSIONS')
     'B06' = @('ROUTE-BOOK','FLOW-BOOKING-LINEAGE','BF-01','BF-01A','BF-01B','BF-01C','BF-01D','BF-01E') + @(20..31 | ForEach-Object { 'ACT-{0:D2}' -f $_ })
-    'B07' = @('FLOW-FIRST-VISIT','FLOW-RETURN-VISIT','FLOW-WORLD-HUD-FALLBACK','J-02','FV-01','RV-01') + @(6..12 | ForEach-Object { 'ACT-{0:D2}' -f $_ }) + @('ACT-40','EXCL-WORLD')
+    'B07' = @('FLOW-FIRST-VISIT','FLOW-RETURN-VISIT','FLOW-WORLD-HUD-STREAM','J-02','FV-01','RV-01') + @(6,7,8,10,11,12 | ForEach-Object { 'ACT-{0:D2}' -f $_ }) + @('ACT-40','EXCL-WORLD')
     'B08' = @('FLOW-STAFF-PUBLICATION-OPERATIONS','FLOW-AUTH-SESSION-PERMISSION','PF-01') + @($expectedFlowAndSubflowIds | Where-Object { $_ -like 'SOF-*' }) + @(33..39 | ForEach-Object { 'ACT-{0:D2}' -f $_ }) + @(41..53 | ForEach-Object { 'ACT-{0:D2}' -f $_ }) + @('EXCL-ADMIN','EXCL-NONPUBLIC-PUBLICATION','EXCL-STAGING','EXCL-DEFENSE')
     'B09' = @()
 }
@@ -575,7 +936,7 @@ foreach ($route in $routes) {
         $routeBatchFrameErrors.Add(("{0}:owner={1}:frame={2}" -f $route.route_id, $routePrimaryOwner[$route.route_id], $frameBatch))
     }
 }
-Assert-True ($routeBatchFrameErrors.Count -eq 0) 'route-frame-primary-batch-alignment' 'all 33 route baseline frame batch tokens match their single primary batch owner' ("errors={0}" -f ($routeBatchFrameErrors -join ';'))
+Assert-True ($routeBatchFrameErrors.Count -eq 0) 'route-frame-primary-batch-alignment' 'all 34 route baseline frame batch tokens match their single primary batch owner' ("errors={0}" -f ($routeBatchFrameErrors -join ';'))
 
 Assert-Unique $trace.trace_id 'trace-id-uniqueness'
 $sourceRequirements = @($sourceCsv['docs/phase-1-ux-architecture/traceability.csv'] | Where-Object { $_.source_type -ceq 'requirement' } | ForEach-Object source_id)
@@ -626,8 +987,8 @@ $secretMatches = @([regex]::Matches($artifactText, $privateKeyPattern) + [regex]
 Assert-True ($secretMatches.Count -eq 0) 'secret-pattern-absence' 'no credential/private-key assignment pattern appears in package content' ("secret-like matches={0}" -f $secretMatches.Count)
 
 $requiredDateDocs = @('README.md','UI_REFERENCE_DESIGN_CONTRACT.md','DESIGN_SYSTEM_IMPLICATIONS.md','validation/validation-report.md','producer-inspection.md')
-$wrongDateDocs = @($requiredDateDocs | Where-Object { (Get-Content -Raw -LiteralPath (Join-Path $packageRoot $_)) -notmatch '2026-09-03' })
-Assert-True ($wrongDateDocs.Count -eq 0) 'evidence-date' 'all package evidence documents use 2026-09-03' ("missing date={0}" -f ($wrongDateDocs -join ';'))
+$wrongDateDocs = @($requiredDateDocs | Where-Object { (Get-Content -Raw -LiteralPath (Join-Path $packageRoot $_)) -notmatch '2026-09-06' })
+Assert-True ($wrongDateDocs.Count -eq 0) 'evidence-date' 'all package evidence documents use 2026-09-06' ("missing date={0}" -f ($wrongDateDocs -join ';'))
 
 $contractText = Get-Content -Raw -LiteralPath (Join-Path $packageRoot 'UI_REFERENCE_DESIGN_CONTRACT.md')
 $readmeText = Get-Content -Raw -LiteralPath (Join-Path $packageRoot 'README.md')
@@ -676,17 +1037,113 @@ $producerFreezeText = ($producerFreezeFiles | ForEach-Object { Get-Content -Raw 
 $unsupportedConformanceClaims = @([regex]::Matches($producerFreezeText, '(?i)\b(?:currently\s+)?(?:meets|achieves|certifies|is conformant with|is compliant with)\s+WCAG\s*2\.2'))
 Assert-True ($unsupportedConformanceClaims.Count -eq 0) 'unsupported-conformance-claim-absence' 'no producer-freeze artifact claims current WCAG conformance' ("unsupported conformance claims={0}" -f $unsupportedConformanceClaims.Count)
 
-$gitLines = @(& git -C $repoRoot status --porcelain=v1 2>$null)
+# Write-scope lifecycle. This assertion originally encoded a moment -- the package
+# authoring window, during which nothing outside the package could legitimately
+# change -- rather than a durable rule. Once decision D-039 opened the CR-002
+# revision window, authorized work necessarily spans other accepted packages and
+# the root ledgers, so an unconditional assertion would report a false defect.
+# This is the same lifecycle error recorded as R-024; the repair is explicit
+# states, not deletion. The post-D-039 branch is an enumerated allowlist, so it
+# still fails on genuinely unrelated writes.
+$decisionsPath = Join-Path $repoRoot 'DECISIONS.md'
+$d039Approved = $false
+if (Test-Path -LiteralPath $decisionsPath) {
+    $d039Approved = @(Get-Content -LiteralPath $decisionsPath | Where-Object { $_ -match '^\|\s*D-039\s*\|.*\|\s*Approved\s*\|' }).Count -eq 1
+}
+$writeScopeState = if ($d039Approved) { 'CR002_REVISION_WINDOW' } else { 'PACKAGE_AUTHORING' }
+Write-Output ("WRITE_SCOPE_STATE={0}" -f $writeScopeState)
+
+[string[]]$allowedScopePrefixes = @('docs/phase-1-ui-reference-design/')
+[string[]]$allowedScopeFiles = @()
+if ($writeScopeState -eq 'CR002_REVISION_WINDOW') {
+    # Exactly the artifacts decision D-039 and risk R-032 assign to the window,
+    # plus the root durable ledgers that must record it.
+    $allowedScopePrefixes += @(
+        'docs/phase-1-ui-reference-production/',
+        'docs/phase-1-ux-architecture/',
+        'docs/phase-1-foundation/',
+        'docs/phase-1-3d/',
+        'docs/requirements/'
+    )
+    $allowedScopeFiles = @(
+        'CHANGELOG.md','DECISIONS.md','MANUAL_ACTIONS.md','PROJECT.md',
+        'PROJECT_STATE.yaml','RISKS.md','TASKS.md',
+        'scripts/validation/ui-stream-mapping.ps1',
+        'scripts/validation/test-ui-stream-mapping.ps1',
+        'docs/archive/PROJECT_STATE-2026-09-23-pre-recovery.yaml',
+        'docs/decisions-log.md',
+        'docs/active/3D_Mega_Menu_Style_Guide_v2.md',
+        'docs/active/Hengshi_Design_SRS_v3.md',
+        'docs/software-definition/02-ai-dev-tooling-and-mcp.md'
+    )
+}
+
+$gitLines = @(& git -C $repoRoot status --porcelain=v1 --untracked-files=all 2>$null)
 $outsideScope = [System.Collections.Generic.List[string]]::new()
 foreach ($line in $gitLines) {
     if ($line.Length -lt 4) { continue }
     $path = $line.Substring(3).Trim().Replace('\','/')
     if ($path.Contains(' -> ')) { $path = ($path -split ' -> ')[-1] }
-    if (-not $path.StartsWith('docs/phase-1-ui-reference-design/')) {
-        $outsideScope.Add($path)
-    }
+    $path = $path.Trim('"')
+    $inScope = $false
+    foreach ($prefix in $allowedScopePrefixes) { if ($path.StartsWith($prefix)) { $inScope = $true; break } }
+    if (-not $inScope -and $allowedScopeFiles -contains $path) { $inScope = $true }
+    if (-not $inScope) { $outsideScope.Add($path) }
 }
-Assert-True ($outsideScope.Count -eq 0) 'git-write-scope' 'all current worktree changes are inside docs/phase-1-ui-reference-design' ("outside-scope changes={0}" -f ($outsideScope -join ';'))
+$scopeExpectation = if ($writeScopeState -eq 'CR002_REVISION_WINDOW') {
+    'all current worktree changes are inside the D-039 CR-002 revision-window allowlist'
+} else {
+    'all current worktree changes are inside docs/phase-1-ui-reference-design'
+}
+Assert-True ($outsideScope.Count -eq 0) 'git-write-scope' $scopeExpectation ("outside-scope changes={0}" -f ($outsideScope -join ';'))
+
+# The semantic stream is a peer, never a fallback (D-039, R-034). Guard the
+# package against reintroducing degradation framing for it.
+#
+# D-043 2026-09-06: the D-042 form of this guard matched four alternatives and passed
+# while five distinct degradation framings sat in the freeze. R-034 was closed against
+# it once already. The pattern now also catches the identifier and vocabulary forms
+# that the narrow version missed: *_FALLBACK journey keys, FLOW-*-FALLBACK family IDs,
+# non-WebGL mode identifiers, and the two quality-ladder phrases. They are not
+# spelled out here: the alternative list below is the authority, and a comment that
+# restates it becomes hits of the guard it documents.
+# The identifier alternatives are scoped to stream contexts on purpose. A broader
+# "*_fallback" pattern also matches booking_fallback and durable_fallback, which are
+# provider and storage contingencies and have nothing to do with the semantic stream;
+# renaming those would be collateral damage, not peer framing.
+# D-045 2026-09-06: the alternatives are assembled at run time so that this line
+# does not match itself. Written as one literal, the pattern was five of its own
+# hits, which is why the guard could only ever be read alongside a mental note that
+# some of its findings were the guard. Every element is parenthesised: in PowerShell
+# the comma operator binds tighter than `+`, so an unparenthesised @('a' + 'b', 'c')
+# collapses to a single space-joined string and the alternation silently becomes one
+# literal that matches nothing. The count is asserted for exactly that reason.
+$degradationParts = @(
+    ('optional ' + '(world|enhancement|immersive)'),
+    ('semantic ' + 'fallback'),
+    ('fallback ' + 'to (static|semantic)'),
+    ('(world|semantic|webgl|stream|quick[_-]?access)[a-z0-9_-]*' + '_fallback'),
+    ('FLOW-[A-Z-]*' + '-FALLBACK'),
+    ('MODE[_-]NON[_-]WEBGL[A-Z0-9_-]*'),
+    ('quality ' + 'downgrade'),
+    ('toggle ' + 'quality'),
+    ('quality ' + 'tier')
+)
+Assert-True ($degradationParts.Count -eq 9) 'degradation-pattern-alternative-count' 'the peer-framing pattern has nine alternatives' ("alternatives={0}; a count of 1 means the array literal collapsed and the guard is inert" -f $degradationParts.Count)
+$degradationPattern = '(?i)(' + ($degradationParts -join '|') + ')'
+# D-045 2026-09-06: two files are excluded from THIS guard only, and the exclusion is
+# asserted rather than assumed. `validation-report.md` and `producer-inspection.md` are
+# dated evidence records whose job is to name defects that have been removed; when the
+# underscore spelling was added to the pattern above, the guard began failing on this
+# report's own account of the defect it had just caught. A record that cannot name what
+# it records is not a record. Every data file and every normative Markdown file in the
+# package remains fully scanned, and no other guard uses this exclusion.
+$framingExemptSuffixes = @('validation-report.md', 'producer-inspection.md')
+$framingScopeFiles = @($producerFreezeFiles | Where-Object { $suffix = Split-Path $_ -Leaf; $suffix -cnotin $framingExemptSuffixes })
+Assert-True (($producerFreezeFiles.Count - $framingScopeFiles.Count) -eq $framingExemptSuffixes.Count) 'framing-guard-scope' 'the peer-framing guard scans every freeze file except the two named dated evidence records' ("expected exemptions={0}; actual={1}" -f $framingExemptSuffixes.Count, ($producerFreezeFiles.Count - $framingScopeFiles.Count))
+$framingScopeText = ($framingScopeFiles | ForEach-Object { Get-Content -Raw -LiteralPath $_ }) -join "`n"
+$degradedSemanticFraming = @([regex]::Matches($framingScopeText, $degradationPattern))
+Assert-True ($degradedSemanticFraming.Count -eq 0) 'semantic-stream-peer-framing' 'no package artifact frames the semantic stream as optional or a fallback' ("degradation framings={0}; first={1}" -f $degradedSemanticFraming.Count, ($(if ($degradedSemanticFraming.Count -gt 0) { $degradedSemanticFraming[0].Value } else { 'none' })))
 
 [string[]]$freezeRelativePaths = @($requiredFiles)
 [Array]::Sort($freezeRelativePaths, [StringComparer]::Ordinal)
@@ -702,11 +1159,19 @@ try {
 finally {
     $sha256.Dispose()
 }
-Assert-True ($freezeHashLines.Count -eq 13) 'freeze-file-count' '13 required package files included in the deterministic freeze' ("actual={0}" -f $freezeHashLines.Count)
+Assert-True ($freezeHashLines.Count -eq 14) 'freeze-file-count' '14 required files including the shared stream resolver included in the deterministic freeze' ("actual={0}" -f $freezeHashLines.Count)
 Write-Output 'FREEZE_METHOD=Sort relative forward-slash paths ordinally; for each emit uppercase SHA-256 two spaces path; join lines with LF and no terminal newline; SHA-256 the UTF-8 no-BOM payload'
 foreach ($freezeHashLine in $freezeHashLines) { Write-Output ("FREEZE_FILE_SHA256={0}" -f $freezeHashLine) }
 Write-Output ("FREEZE_AGGREGATE_SHA256={0}" -f $freezeAggregateHash)
-Write-Output ("COUNTS routes={0} exclusions={1} wayfinding={2} actions={3} ux_tests={4} flow_families={5} source_experience_ids={6} flow_rows={7} templates={8} primary_template_owners={9} route_template_refs={10} flow_template_refs={11} profiles={12} browser_profiles={13} time_limit_profiles={14} primitives={15} batches={16} primary_source_owners={17} trace_rows={18} package_csv={19} package_json={20}" -f $routes.Count, $flowExclusions.Count, $flowWayfinding.Count, $flowActions.Count, $traceTests.Count, $flowFamilies.Count, $acceptedExperienceIds.Count, $flows.Count, $templates.Count, $primaryTemplateRefs.Count, $routeTemplateRefs.Count, $flowTemplateRefs.Count, $matrix.Count, $browserProfileRows.Count, $timeProfileRows.Count, $primitives.Count, $batches.Count, $allPrimarySourceIds.Count, $trace.Count, $packageCsvFiles.Count, $packageJsonFiles.Count)
+# D-043 2026-09-06: the D-042 freeze hashed a validation-report.md whose COUNTS line
+# described a different package (routes=33 profiles=32 while the validator asserted 34
+# and 36). A freeze that certifies its own stale report is worthless, so the report must
+# now agree with the counts computed in the same run.
+$countsLine = ("COUNTS routes={0} exclusions={1} wayfinding={2} actions={3} ux_tests={4} flow_families={5} source_experience_ids={6} flow_rows={7} templates={8} primary_template_owners={9} route_template_refs={10} flow_template_refs={11} profiles={12} browser_profiles={13} time_limit_profiles={14} primitives={15} batches={16} primary_source_owners={17} trace_rows={18} package_csv={19} package_json={20}" -f $routes.Count, $flowExclusions.Count, $flowWayfinding.Count, $flowActions.Count, $traceTests.Count, $flowFamilies.Count, $acceptedExperienceIds.Count, $flows.Count, $templates.Count, $primaryTemplateRefs.Count, $routeTemplateRefs.Count, $flowTemplateRefs.Count, $matrix.Count, $browserProfileRows.Count, $timeProfileRows.Count, $primitives.Count, $batches.Count, $allPrimarySourceIds.Count, $trace.Count, $packageCsvFiles.Count, $packageJsonFiles.Count)
+$reportPath = Join-Path $packageRoot 'validation/validation-report.md'
+$reportText = if (Test-Path -LiteralPath $reportPath) { Get-Content -LiteralPath $reportPath -Raw } else { '' }
+Assert-True ($reportText -like ("*" + $countsLine + "*")) 'validation-report-counts-agreement' 'validation-report.md states the counts this run computed' ("expected={0}" -f $countsLine)
+Write-Output $countsLine
 if ($script:Failures.Count -gt 0) {
     Write-Output ("RESULT=FAIL PASS_COUNT={0} FAIL_COUNT={1}" -f $script:PassCount, $script:Failures.Count)
     exit 1

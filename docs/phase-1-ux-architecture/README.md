@@ -9,7 +9,7 @@
 This package turns the accepted Phase 1 foundation, Evidence in Motion strategy,
 and frozen Signal Ledger / Framework Relay identity into implementation-relevant
 experience flows and states. It defines information architecture and behavior,
-not screen design. Semantic Quick Access and optional immersive exploration are
+not screen design. Semantic Quick Access and visitor-elected immersive exploration are
 equal primary journeys; WebGL is progressive enhancement and cannot own exclusive
 content, help, or conversion.
 
@@ -40,7 +40,7 @@ Every normative statement uses one of these labels:
 | Artifact | Purpose |
 |---|---|
 | [UX architecture](UX_ARCHITECTURE.md) | Actors, jobs, objects, IA, navigation, core journeys, equivalence, first/return visits, content families, controls, responsive and accessibility rules |
-| [Route and room parity](route-room-parity.csv) | All 33 route definitions and their Quick Access / optional immersive representation |
+| [Route and room parity](route-room-parity.csv) | All 33 route definitions and their Quick Access / immersive stream representation |
 | [Excluded surfaces](excluded-surfaces.csv) | All nine exclusion classes and safe UX behavior |
 | [Wayfinding and wing release map](wayfinding-release-map.csv) | Exact five-wing/ten-service sign-to-title mapping, room/canonical IDs, release sequence, and closed/held/opening/open behavior |
 | [AI, booking, and staff flows](FLOWS.md) | Detailed AI/handoff, booking, search/directory/HUD, and author/reviewer/founder flows |

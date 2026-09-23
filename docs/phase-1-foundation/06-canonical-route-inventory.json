@@ -785,6 +785,26 @@
         "D-017"
       ],
       "contentGate": "Verified booking owner/mailbox, transparent qualification and consent, visitor-local time, email verification, availability truth, recovery, and direct access without AI."
+    },
+    {
+      "id": "ROUTE-CREDITS",
+      "path": "/credits",
+      "routeType": "attribution",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "read the third-party asset attribution and licence notices Hengshi Design is obliged to publish",
+      "primaryEntity": "Hengshi Design third-party attribution notice",
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "sourceDecisions": [
+        "D-039"
+      ],
+      "contentGate": "Exact licence text author names and source URLs must come from the recorded asset provenance ledger; no attribution may be paraphrased invented or omitted."
     }
   ],
   "excludedSurfaces": [

@@ -175,9 +175,9 @@ if ($null -ne $routes) {
     Assert-True -Condition ([string]$routes.canonicalHost -eq 'https://hengshidesign.com') `
         -PassMessage 'Canonical host matches the approved proposal.' `
         -FailureMessage "Unexpected canonical host: $($routes.canonicalHost)"
-    Assert-True -Condition ($routeEntries.Count -eq 33) `
-        -PassMessage 'Route inventory contains 33 unique routes and patterns.' `
-        -FailureMessage "Expected 33 routes and patterns; found $($routeEntries.Count)."
+    Assert-True -Condition ($routeEntries.Count -eq 34) `
+        -PassMessage 'Route inventory contains 34 unique routes and patterns.' `
+        -FailureMessage "Expected 34 routes and patterns; found $($routeEntries.Count)."
     Assert-True -Condition (@($routeIds | Sort-Object -Unique).Count -eq $routeIds.Count) `
         -PassMessage 'All route IDs are unique.' `
         -FailureMessage 'Duplicate route IDs were found.'
@@ -473,8 +473,17 @@ Assert-True -Condition ($trailingWhitespace.Count -eq 0) `
     -PassMessage 'No invalid trailing whitespace was found; CommonMark two-space hard breaks are allowed.' `
     -FailureMessage "Invalid trailing whitespace found at: $(($trailingWhitespace | ForEach-Object { "$($_.Path):$($_.LineNumber)" }) -join ', ')"
 
-$gitDiffCheckOutput = & git -C $repositoryRoot diff --check -- 'docs/phase-1-foundation' 2>&1
+# Discard git's stderr rather than merging it into the error stream. This repo
+# stores CRLF blobs with core.autocrlf=true, so git emits a benign
+# "LF will be replaced by CRLF" warning for any modified file here; merged with
+# 2>&1 that warning surfaces as a terminating NativeCommandError and aborts the
+# run before any RESULT line is written. The exit code still carries the real
+# whitespace verdict, which is what this assertion is about.
+$previousErrorActionPreference = $ErrorActionPreference
+$ErrorActionPreference = 'Continue'
+$gitDiffCheckOutput = @(& git -C $repositoryRoot diff --check -- 'docs/phase-1-foundation' 2>$null)
 $gitDiffCheckExit = $LASTEXITCODE
+$ErrorActionPreference = $previousErrorActionPreference
 Assert-True -Condition ($gitDiffCheckExit -eq 0) `
     -PassMessage 'git diff --check reports no whitespace errors in tracked foundation changes.' `
     -FailureMessage "git diff --check failed: $($gitDiffCheckOutput -join [Environment]::NewLine)"

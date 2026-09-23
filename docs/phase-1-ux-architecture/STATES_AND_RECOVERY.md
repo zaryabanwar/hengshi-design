@@ -20,10 +20,10 @@ Every named visitor/staff action has success, error, and recovery here.
 | ACT-03 Open directory/search | Search and browse groups available | index loading/unavailable; focus failure | static active-release directory; Quick Access; restore invoker focus |
 | ACT-04 Submit search | Canonical result list | empty query; no results; derived index/checksum failure | browse categories; clear; static directory; never search draft/private data |
 | ACT-05 Open result/room | Canonical document or optional directed transition | closed room; missing asset; stale result | canonical semantic route; Quick Access with safe context |
-| ACT-06 Enter optional World | onboarding or stable Reception | unsupported WebGL; low power; loader/asset/network error | Quick Access immediately; retain source route/wing context |
+| ACT-06 Enter the World (visitor-elected) | onboarding or stable Reception | unsupported WebGL; low power; loader/asset/network error | Quick Access immediately; retain source route/wing context |
 | ACT-07 Skip intro/guide | Stable Reception or chosen semantic destination | transition interrupted | jump to stable end state; announce location |
-| ACT-08 Navigate immersive destination | Directed point-and-click transition and location update | transition/asset/memory/thermal failure | cancel motion; stable current location; quality downgrade or canonical route |
-| ACT-09 Toggle quality | Labeled quality state applied | unsupported tier/change failure | prior stable tier; low power; Quick Access; no content loss |
+| ACT-08 Navigate immersive destination | Directed point-and-click transition and location update | transition/asset/memory/thermal failure | cancel motion; stable current location; canonical route; the delivery stream does not change, because no failure promotes or demotes a stream mid-session |
+| ACT-09 Select delivery stream | Chosen stream applied and reported in the control's accessible name; location preserved | requested stream above the WebGL ceiling; change failure; preference cannot persist | remain on the prior stream and say why; the ceiling is stated, not silently substituted; persistence failure follows ACT-11 and the choice still applies for the session; no content loss in any stream |
 | ACT-10 Toggle audio | Explicit muted/unmuted state | media unavailable/blocked | remain muted; text/visual equivalent; retry only after interaction |
 | ACT-11 Toggle accessibility/reduced motion | Stable authored equivalent | preference cannot persist | apply session state; explain persistence failure without blocking |
 | ACT-12 Exit World | Current canonical semantic route opens | missing mapping | Services/Home/Quick Access; report safe fallback |

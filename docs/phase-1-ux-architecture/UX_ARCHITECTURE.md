@@ -115,7 +115,8 @@ content.
 
 **[PROPOSED UX]** Semantic header/primary navigation includes Home, Services,
 Industries, Work, Demos, Insights, Experts, Trust, About, Contact, and Book.
-Search/Directory, accessibility/preferences, and optional World are utilities.
+Search/Directory, accessibility/preferences, and the visitor-elected World are
+utilities.
 On narrow layouts the same destinations move into a labeled disclosure/menu with
 predictable focus return; Book remains reachable without opening optional media.
 
@@ -166,11 +167,11 @@ page preserves selected non-sensitive context, states that the transaction is
 unavailable/not completed, and offers Book retry or a verified Contact route; it
 never displays a false successful or pending state.
 
-### J-02 Optional immersive discovery
+### J-02 Visitor-elected immersive discovery
 
 **Requirements:** FR-002, FR-003, FR-012–FR-014, UX-002–UX-008, NFR-008.
 
-1. Visitor explicitly selects optional World or follows a nonindexable `/world`
+1. Visitor explicitly selects the World or follows a nonindexable `/world`
    link from semantic content.
 2. First visit receives controls/choice onboarding; reduced-motion or Skip Intro
    reaches stable Reception immediately; standard arrival targets approximately
@@ -243,7 +244,7 @@ simply restores first-visit choices.
 
 | Family | Required decision content | Empty/held behavior | Primary actions |
 |---|---|---|---|
-| Home | name, approved category/promise, plain explanation, service/sector overview, evidence state | No invented proof strip; omit unsupported social proof | Services, Industries, Book, optional World |
+| Home | name, approved category/promise, plain explanation, service/sector overview, evidence state | No invented proof strip; omit unsupported social proof | Services, Industries, Book, the visitor-elected World |
 | Wing/service | formal title, intended context, scope, boundaries, evidence state, limitations, related Trust | Hold publication when owner/evidence incomplete | Related content, help, Book |
 | Industry | reviewed problem context and service intersections | No sector-history claims or generic duplicated copy | Services, evidence, Book |
 | Work | verified client classification and claim evidence | Honest empty/held state; do not substitute demos | Services, Book |

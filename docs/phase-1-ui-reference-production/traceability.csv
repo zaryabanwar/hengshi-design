@@ -1,0 +1,41 @@
+trace_id,contract_section,requirement_summary,upstream_authority,upstream_artifact,downstream_gate,status
+TR-001,1.1,Figma is the sole authoritative production and evidence provider,Constitution 2.0.0 principle IV,.specify/memory/constitution.md,MA-025,proposed
+TR-002,1.2,Provider rationale is argued against the accepted contract requirements not general preference,D-037,docs/phase-1-ui-reference-design/UI_REFERENCE_DESIGN_CONTRACT.md,MA-025,proposed
+TR-003,1.3,Stitch is excluded from MA-025 and any later ideation use needs its own external-write gate,Constitution 2.0.0 principle IV,.specify/memory/constitution.md,future gate,proposed
+TR-004,1.4,No Figma or Stitch MCP is configured or exposed on this host and the software-definition claim is stale,AGENTS.md MCP source-of-truth block,docs/software-definition/02-ai-dev-tooling-and-mcp.md,MA-025,unresolved_gate
+TR-005,2.1,B07 is not authorizable because the 3D storyboard is not started and MA-004 is blocked,design-batch-plan.csv B07 row,docs/phase-1-ui-reference-design/design-batch-plan.csv,MA-026,deferred
+TR-006,2.1,B09 is not authorizable because it hard-requires B07,design-batch-plan.csv B09 row,docs/phase-1-ui-reference-design/design-batch-plan.csv,MA-026,deferred
+TR-007,2.1,The section 15 handoff and docs/ui/UI_SPEC.md cannot complete under MA-025,UI_REFERENCE_DESIGN_CONTRACT.md section 15,docs/phase-1-ui-reference-design/UI_REFERENCE_DESIGN_CONTRACT.md,MA-026,deferred
+TR-008,2.3,Seven batches execute strictly serially,AGENTS.md and global bounded-specialist rule,design-batch-plan.csv,MA-025,proposed
+TR-009,2.4,B01 is a gated pilot and releases B02 to B08,Constitution 2.0.0 principle VIII,.specify/memory/constitution.md,B01 pilot acceptance,proposed
+TR-010,2.5,Per-batch scope is taken verbatim from the accepted batch plan and is not extended,D-037,docs/phase-1-ui-reference-design/design-batch-plan.csv,MA-025,proposed
+TR-011,3.1,Eight permitted external operations confined to one approved file,UI_REFERENCE_DESIGN_CONTRACT.md section 16,external-write-scope.csv,MA-025,proposed
+TR-012,3.2,Eleven prohibited external operations including all Stitch operations and all billing actions,PROJECT_STATE.yaml exclusions,external-write-scope.csv,MA-025,proposed
+TR-013,3.3,Repository writes confined to the package plus durable root records,PROJECT_STATE.yaml exclusions,external-write-scope.csv,MA-025,proposed
+TR-014,3.4,No commit push branch switch tag or history rewrite without explicit founder instruction,founder standing constraint,external-write-scope.csv,founder instruction,proposed
+TR-015,3.5,Capability enablement path A or path B must complete and be recorded before the first write,AGENTS.md MCP source-of-truth block,validation/capability-evidence.md,MA-025,unresolved_gate
+TR-016,4.1,Six evidence unit types are produced and TEST_CAPTURE is excluded,UI_REFERENCE_DESIGN_CONTRACT.md section 5,evidence-capture-plan.csv,MA-025,proposed
+TR-017,4.1,WCAG 2.2 Level AA remains a target and no conformance claim is made,UI_REFERENCE_DESIGN_CONTRACT.md normative target,docs/phase-1-ui-reference-design/README.md,MA-026,proposed
+TR-018,4.2,Evidence naming uses the accepted grammar unchanged,UI_REFERENCE_DESIGN_CONTRACT.md section 6,evidence-capture-plan.csv,MA-025,proposed
+TR-019,4.3,Coverage spans templates route instances profiles viewports modes states and time-limit branches,UI_REFERENCE_DESIGN_CONTRACT.md sections 7 to 10,responsive-state-mode-matrix.csv,MA-025,proposed
+TR-020,4.4,All copy is a marked reference fixture and gated facts are never invented,UI_REFERENCE_DESIGN_CONTRACT.md section 11,evidence-capture-plan.csv,MA-002 MA-003 MA-011,proposed
+TR-021,4.5,Only D-035 brand assets and semantic tokens are used,D-035,docs/phase-1-brand-identity/asset-manifest.json,MA-025,proposed
+TR-022,5.1,Local evidence tree is provider independent,MA-025 contract section 9,evidence-capture-plan.csv,MA-025,proposed
+TR-023,5.3,Deterministic export scale uppercase SHA-256 hashing and the D-037 freeze algorithm,docs/phase-1-ui-reference-design/validation/validate-ui-reference-design.ps1,validation/validate-ui-reference-production.ps1,MA-025,proposed
+TR-024,5.3,The file key is recorded and credentials never are,UI_REFERENCE_DESIGN_CONTRACT.md section 15,evidence-capture-plan.csv,MA-025,proposed
+TR-025,6.1,Eight-step per-batch produce validate inspect review revise revalidate exit loop,Constitution 2.0.0 principles VII and VIII,PROJECT_STATE.yaml workflow lifecycle,MA-025,proposed
+TR-026,6.2,Three producer revisions per batch and exhaustion escalates as a change request,Constitution 2.0.0 principle IV,PROJECT_STATE.yaml design_maximum_revision_iterations,change request,proposed
+TR-027,6.3,The producer may not review or approve their own batch,Constitution 2.0.0 principle VII,.specify/memory/constitution.md,MA-025,proposed
+TR-028,6.4,Founder gates are MA-025 the B01 pilot acceptance and MA-026,Constitution 2.0.0 principle VIII,MANUAL_ACTIONS.md,MA-026,proposed
+TR-029,7.1,Zero spend free tier single editor and any paid step routes to MA-010,MA-010,MANUAL_ACTIONS.md,MA-010,proposed
+TR-030,7.2,Five Figma free-tier limits are unverified and must be verified and dated before the first write,AGENTS.md official-primary-source requirement,validation/capability-evidence.md,MA-025,must_verify_at_gate
+TR-031,7.3,No personal client-confidential or protected GLB material enters the provider,MA-004 and the data boundary,MANUAL_ACTIONS.md,MA-004,proposed
+TR-032,8,Twelve enumerated stop conditions halt work rather than routing around a gate,Constitution 2.0.0 principle VIII,stop-conditions.csv,MA-025,proposed
+TR-033,9.2,Per-batch _PRE and _EXIT named checkpoints with exported archives,MA-025 contract section 9,evidence-capture-plan.csv,MA-025,proposed
+TR-034,9.4,The repository export not provider version history is the authoritative rollback artifact,MA-025 contract section 7.2,validation/capability-evidence.md,MA-025,proposed
+TR-035,9.5,Accepted batch evidence is immutable and corrections create a new revision,D-037 freeze precedent,docs/phase-1-ui-reference-design/README.md,MA-025,proposed
+TR-036,10,Eight credential-handling rules with official flows only and no secret ever in the repository,AGENTS.md secret-handling rule,MANUAL_ACTIONS.md MA-025 block,MA-025,proposed
+TR-037,11.1,Six conditions define acceptance of MA-025 itself,Constitution 2.0.0 principle VIII,MANUAL_ACTIONS.md MA-025 block,MA-025,proposed
+TR-038,11.2,Eleven conditions define acceptance of an individual batch,Constitution 2.0.0 principles VII and VIII,evidence-capture-plan.csv,MA-025,proposed
+TR-039,11.3,MA-025 completion does not accept Phase 1 or approve the final visual direction,D-037,DECISIONS.md,MA-026,proposed
+TR-040,12,MA-013 compatibility acceptance remains a separate unaffected gate,MA-013,MANUAL_ACTIONS.md,MA-013,unchanged
