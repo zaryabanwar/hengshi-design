@@ -9,36 +9,36 @@ engineering_contract: AGENTS.md
 current_work: PROJECT_STATE.yaml
 checkpoint:
   branch: main
-  base_head: 87f3e8ac9a8b52aedea3f31f0a88019e9bb45ab4
+  base_head: 3590f221221b4df2b3914e8d0d59e7573dff50e1
   historical_state: docs/archive/PROJECT_STATE-2026-09-23-pre-recovery.yaml
-  working_tree: bounded_stream_control_styleguide_slice
+  working_tree: bounded_stream_control_SRS_slice
   runtime: not_started_documentation_slice
   application_code_changed_this_slice: false
   commit_authorized: true
 current_task:
-  id: STREAM-CONTROL-STYLEGUIDE-CONTRACT
-  outcome: Style guide matches approved stream-control anatomy behavior and advisement
+  id: STREAM-CONTROL-SRS-CONTRACT
+  outcome: SRS requirements match approved stream-control behavior and advisement
   status: DONE
   authority: founder_start_continue_and_standing_commit_push_approval_2026_09_23
   implementation: scripts/validation/ui-stream-mapping.ps1
   regression_test: scripts/validation/test-ui-stream-mapping.ps1
   verification:
-    mapping_and_frame_checks: 738_pass_0_fail
+    mapping_and_frame_checks: 763_pass_0_fail
     base_frame_obligations: 440
-    design_validator: 202_pass_0_fail
+    design_validator: 203_pass_0_fail
     production_validator: 167_pass_0_fail
     whitespace: PASS
     public_templates_four_streams: 30
     world_templates_three_streams: 4
     staff_templates_excluded_with_evidence_scope: 6
-  independent_review: PASS_B04_styleguide_scope_revision1_2026_09_23
+  independent_review: PASS_B04_SRS_scope_2026_09_23
   prior_review_gate: MA-029
   design_review: docs/phase-1-ui-reference-design/reviews/design-review-iteration-6.md
   accessibility_review: docs/phase-1-ui-reference-design/accessibility/accessibility-audit-iteration-5.md
-  unverified_work: B04_SRS_UX_trace_and_batch_loci_and_other_D045_findings
+  unverified_work: B04_UX_trace_and_batch_loci_and_other_D045_findings
   commit: enclosing_commit
   manual_action: MANUAL_ACTIONS.md
-next_safe_action: Reconcile B04 stream-control requirements in SRS FR-3D-014 and NFR-A11Y-004
+next_safe_action: Reconcile B04 stream-control behavior in UX STATES_AND_RECOVERY ACT-09
 boundaries:
   figma_calls: explicit_per_call_approval_required
   figma_production: B01_held

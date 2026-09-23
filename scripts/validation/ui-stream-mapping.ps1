@@ -26,6 +26,45 @@ function Assert-UiStreamStyleGuideContract {
     }
 }
 
+function Assert-UiStreamRequirementsContract {
+    param([Parameter(Mandatory)][string]$Text)
+    # Inspect each requirement's description cell, never adjacent rows or status cells.
+    $contracts = @{
+        'FR-3D-014' = @(
+            'present and keyboard operable in every stream, including S-SEMANTIC',
+            'four native radio inputs sharing one name inside a fieldset with a legend',
+            'separate, always-present Apply submit button',
+            'Arrow, Tab, pointer and touch selection change only the checked state',
+            'without applying a stream, reloading, starting a transition or altering the accessibility tree beyond checked state',
+            'applies only after explicit Apply activation by Enter, Space, pointer or touch, or native Enter submission of the same form',
+            'never applies on focus, selection, blur, arrow movement or timeout',
+            'above the capability ceiling remain present and disabled with a textual reason, not hidden'
+        )
+        'NFR-A11Y-004' = @(
+            'group accessible name identifies the delivery stream control and reports the in-force stream',
+            'checked radio reports the pending selection',
+            'in-force value remains unchanged until explicit submission applies the selection',
+            'Apply has a distinct accessible name stating that it applies the selection',
+            'persistent visible text inside the fieldset before Apply in both DOM reading order and visual order',
+            'programmatically associated with both the group and the Apply button',
+            'not tooltip, title, hover-only, focus-only or accessible-description-only',
+            'same wording in every stream',
+            're-enters the experience in the chosen stream while preserving the current location'
+        )
+    }
+    foreach ($id in $contracts.Keys) {
+        $rows = [regex]::Matches($Text, ('(?m)^\|[ \t]*' + [regex]::Escape($id) + '[ \t]*\|(?<body>[^|\r\n]*)\|'))
+        if ($rows.Count -ne 1) { throw "Missing or duplicate stream requirement: $id" }
+        $body = ($rows[0].Groups['body'].Value -replace '[*`]', '') -replace '\s+', ' '
+        foreach ($clause in $contracts[$id]) {
+            if (-not $body.Contains($clause)) { throw "Stream requirement contract missing: ${id}:$clause" }
+        }
+        if ($body -match 'selection alone changes nothing|visible text adjacent to the control') {
+            throw "Ambiguous stream requirement: $id"
+        }
+    }
+}
+
 function Assert-UiStreamControlContract {
     param([Parameter(Mandatory)][object[]]$Primitives)
     # These are definition-record checks, not evidence of a rendered accessible UI.

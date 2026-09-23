@@ -424,6 +424,11 @@ try {
 }
 catch { Add-Fail 'stream-control-style-guide' $_.Exception.Message }
 try {
+    Assert-UiStreamRequirementsContract -Text (Get-Content -Raw -LiteralPath (Join-Path $repoRoot 'docs/active/Hengshi_Design_SRS_v3.md'))
+    Add-Pass 'stream-control-requirements' 'SRS control anatomy, activation, names and advance advisement match D-045'
+}
+catch { Add-Fail 'stream-control-requirements' $_.Exception.Message }
+try {
     $streamMapping = Get-UiStreamMapping -Primitives $primitives -Templates $templates
 }
 catch {

@@ -145,4 +145,17 @@ foreach ($level in 1..4) {
     $relocated = $styleGuide.Replace('**Control model — normative', (('#' * $level) + " Unrelated contract`n`n**Control model — normative"))
     Reject { Assert-UiStreamStyleGuideContract -Text $relocated } 'Stream style-guide contract missing' "contract moved outside section by heading level $level"
 }
+$srs = Get-Content -Raw (Join-Path $root 'docs/active/Hengshi_Design_SRS_v3.md')
+Assert-UiStreamRequirementsContract -Text $srs
+Check $true 'SRS stream requirements match approved control behavior'
+foreach ($phrase in @('present and keyboard operable in every stream', 'four native radio inputs', 'always-present Apply', 'change only the checked state', 'without applying a stream', 'applies only after explicit Apply activation', 'never applies on focus', 'disabled with a textual reason', 'reports the in-force stream', 'checked radio reports the pending selection', 'in-force value remains unchanged', 'Apply has a distinct accessible name', 'persistent visible text inside the fieldset', 'both DOM reading order and visual order', 'associated with both the group and the Apply button', 'not tooltip, title', 'same wording in every stream', 'while preserving the current location')) {
+    Reject { Assert-UiStreamRequirementsContract -Text ($srs.Replace($phrase, 'REMOVED-CONTRACT')) } 'Stream requirement contract missing' "SRS rejects missing $phrase"
+}
+foreach ($id in @('FR-3D-014', 'NFR-A11Y-004')) {
+    $row = [regex]::Match($srs, ('(?m)^\| ' + $id + ' \|[^\r\n]+')).Value
+    Reject { Assert-UiStreamRequirementsContract -Text ($srs.Replace($row, '')) } 'Missing or duplicate stream requirement' "SRS rejects missing $id"
+    Reject { Assert-UiStreamRequirementsContract -Text ($srs + "`n" + $row) } 'Missing or duplicate stream requirement' "SRS rejects duplicate $id"
+    $moved = $srs.Replace($row, ($row.Replace("| $id |", "| $id | Description removed |")))
+    Reject { Assert-UiStreamRequirementsContract -Text $moved } 'Stream requirement contract missing' "SRS ignores contract relocated to status cell for $id"
+}
 Write-Output "RESULT=PASS CHECKS=$script:checks FRAME_OBLIGATIONS=$($frames.Count)"
