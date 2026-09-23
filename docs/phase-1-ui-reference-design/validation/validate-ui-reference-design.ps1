@@ -449,6 +449,11 @@ try {
 }
 catch { Add-Fail 'stream-control-requirement-traces' $_.Exception.Message }
 try {
+    Assert-UiStreamBatchContract -Batches $batches
+    Add-Pass 'stream-control-batch-evidence' 'B01 requires visible guidance, interaction evidence and UXTEST-046 while remaining unauthorized'
+}
+catch { Add-Fail 'stream-control-batch-evidence' $_.Exception.Message }
+try {
     $streamMapping = Get-UiStreamMapping -Primitives $primitives -Templates $templates
 }
 catch {

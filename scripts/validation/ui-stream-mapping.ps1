@@ -222,6 +222,40 @@ function Assert-UiStreamTraceContract {
     }
 }
 
+function Assert-UiStreamBatchContract {
+    param([Parameter(Mandatory)][object[]]$Batches)
+    $rows = @($Batches | Where-Object batch_id -CEQ 'B01')
+    if ($rows.Count -ne 1) { throw 'Missing or duplicate stream batch: B01' }
+    $batch = $rows[0]
+    foreach ($clause in @(
+        'semantic shell (PRIM-001, ACT-09)',
+        'one frame per stream',
+        'four native radio inputs sharing one name inside a fieldset with a legend',
+        'separate always-present Apply submit button',
+        'group accessible name reports the in-force stream while the checked radio reports the pending selection',
+        'Apply accessible name states that it applies the selection',
+        'persistent visible text inside the fieldset before Apply in both DOM reading order and visual order',
+        'programmatically associated with both the group and the Apply button',
+        'not tooltip title hover-only focus-only or accessible-description-only',
+        'same wording in every stream',
+        'applying the pending selection re-enters the experience while preserving current location',
+        'keyboard and screen-reader execution evidence must verify names associations and activation',
+        'selection changes only checked state without applying reloading transitioning or other accessibility-tree changes',
+        'only explicit Apply activation or native Enter submission of the same form',
+        'never apply on focus selection blur arrow movement or timeout',
+        'screenshots alone cannot establish keyboard operability or accessible names',
+        'STATE-STREAM-CHANGED on TPL-GLOBAL-NAVIGATION in each of the four streams',
+        'STATE-PREFERENCE-WRITE-FAILED on TPL-GLOBAL-NAVIGATION in each of the four streams',
+        'Explicitly NOT required in B01: Reception, rooms, hotspots, the HUD'
+    )) {
+        if (-not ([string]$batch.required_visual_evidence).Contains($clause)) { throw "Stream batch evidence missing: $clause" }
+    }
+    if ('UXTEST-046' -cnotin ([string]$batch.supporting_or_final_evidence_ids).Split(';')) {
+        throw 'Missing stream batch test binding: UXTEST-046'
+    }
+    if ($batch.status -cne 'future_not_authorized') { throw 'B01 authorization must remain held' }
+}
+
 function Assert-UiStreamControlContract {
     param([Parameter(Mandatory)][object[]]$Primitives)
     # These are definition-record checks, not evidence of a rendered accessible UI.

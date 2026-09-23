@@ -239,4 +239,21 @@ foreach ($id in $tracePhrases.Keys) {
     ($changed | Where-Object trace_id -CEQ $id).status_or_gate = 'DONE'
     Reject { Assert-UiStreamTraceContract -Trace $changed } 'Stream trace evidence must remain future' "$id cannot claim evidence completion"
 }
+$batches = @(Import-Csv (Join-Path $design 'design-batch-plan.csv'))
+Assert-UiStreamBatchContract -Batches $batches
+Check $true 'B01 specifies visual and interaction evidence without authorizing production'
+foreach ($phrase in @('semantic shell (PRIM-001, ACT-09)', 'one frame per stream', 'four native radio inputs', 'always-present Apply submit button', 'in-force stream while the checked radio reports the pending selection', 'Apply accessible name states', 'persistent visible text inside the fieldset', 'both DOM reading order and visual order', 'associated with both the group and the Apply button', 'not tooltip title', 'same wording in every stream', 'preserving current location', 'execution evidence must verify names associations and activation', 'selection changes only checked state', 'only explicit Apply activation', 'never apply on focus', 'screenshots alone cannot establish', 'STATE-STREAM-CHANGED on TPL-GLOBAL-NAVIGATION', 'STATE-PREFERENCE-WRITE-FAILED on TPL-GLOBAL-NAVIGATION', 'Explicitly NOT required in B01: Reception')) {
+    $changed = Copy-Rows $batches
+    $row = $changed | Where-Object batch_id -CEQ 'B01'
+    $row.required_visual_evidence = $row.required_visual_evidence.Replace($phrase, 'REMOVED-CONTRACT')
+    Reject { Assert-UiStreamBatchContract -Batches $changed } 'Stream batch evidence missing' "B01 rejects omitted $phrase"
+}
+Reject { Assert-UiStreamBatchContract -Batches @($batches | Where-Object batch_id -CNE 'B01') } 'Missing or duplicate stream batch' 'B01 cannot disappear'
+Reject { Assert-UiStreamBatchContract -Batches ($batches + @($batches | Where-Object batch_id -CEQ 'B01')) } 'Missing or duplicate stream batch' 'B01 cannot be duplicated'
+$changed = Copy-Rows $batches
+($changed | Where-Object batch_id -CEQ 'B01').supporting_or_final_evidence_ids = 'UXTEST-001'
+Reject { Assert-UiStreamBatchContract -Batches $changed } 'Missing stream batch test binding' 'B01 must retain UXTEST-046 binding'
+$changed = Copy-Rows $batches
+($changed | Where-Object batch_id -CEQ 'B01').status = 'DONE'
+Reject { Assert-UiStreamBatchContract -Batches $changed } 'B01 authorization must remain held' 'definition correction cannot authorize B01'
 Write-Output "RESULT=PASS CHECKS=$script:checks FRAME_OBLIGATIONS=$($frames.Count)"

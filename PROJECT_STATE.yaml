@@ -9,36 +9,36 @@ engineering_contract: AGENTS.md
 current_work: PROJECT_STATE.yaml
 checkpoint:
   branch: main
-  base_head: 59297de138642c4e4e690fbb38c609913bdc638f
+  base_head: 5740608aa43bdbe605b97dbb41f00c0cb6bc089e
   historical_state: docs/archive/PROJECT_STATE-2026-09-23-pre-recovery.yaml
-  working_tree: bounded_stream_control_trace_slice
+  working_tree: bounded_stream_control_B01_evidence_slice
   runtime: not_started_documentation_slice
   application_code_changed_this_slice: false
   commit_authorized: true
 current_task:
-  id: STREAM-CONTROL-TRACE-CONTRACT
-  outcome: Two stream traces bind all hosts and specify truthful future evidence
+  id: STREAM-CONTROL-BATCH-EVIDENCE-CONTRACT
+  outcome: B01 specifies approved control evidence and stays unauthorized
   status: DONE
   authority: founder_start_2026_09_24_and_standing_commit_push_approval
   implementation: scripts/validation/ui-stream-mapping.ps1
   regression_test: scripts/validation/test-ui-stream-mapping.ps1
   verification:
-    mapping_and_frame_checks: 873_pass_0_fail
+    mapping_and_frame_checks: 898_pass_0_fail
     base_frame_obligations: 440
-    design_validator: 207_pass_0_fail
+    design_validator: 208_pass_0_fail
     production_validator: 167_pass_0_fail
     whitespace: PASS
     public_templates_four_streams: 30
     world_templates_three_streams: 4
     staff_templates_excluded_with_evidence_scope: 6
-  independent_review: PASS_B04_trace_scope_2026_09_24
+  independent_review: PASS_B04_B01_scope_2026_09_24
   prior_review_gate: MA-029
   design_review: docs/phase-1-ui-reference-design/reviews/design-review-iteration-6.md
   accessibility_review: docs/phase-1-ui-reference-design/accessibility/accessibility-audit-iteration-5.md
-  unverified_work: B04_batch_locus_and_other_D045_findings
+  unverified_work: B04_cross_record_consistency_review_and_other_D045_findings
   commit: enclosing_commit
   manual_action: MANUAL_ACTIONS.md
-next_safe_action: Reconcile B04 stream-control visual evidence requirements in B01
+next_safe_action: Independently review B04 consistency across the amended control records
 boundaries:
   figma_calls: explicit_per_call_approval_required
   figma_production: B01_held
