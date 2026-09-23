@@ -793,7 +793,9 @@ $expectedDesignSystemHash = '0E9FC68C98AC25C4F7DFBC62B10DBA1FCB197F5C82AD2FF39DC
 #   CR-002 amendment 2026-09-06 0EC5B81452EAF79076CF06A5F57C7982D8F581D6105466D5352796C542DF007C
 #   D-043 remediation 2026-09-06 E06D11057AF1E903E37FC0F289E994B196FD337B4E8A22AB37BB686562BB9470
 # D-045 2026-09-06: stream_presence added per the accepted specification section 5.1.
-$expectedPrimitiveHash = 'E6B39B5B9B5B917EAB8306E653E38E9F06934788AACB7CFF05226D21005929CB'
+#   D-045 stream_presence E6B39B5B9B5B917EAB8306E653E38E9F06934788AACB7CFF05226D21005929CB
+# D-045 B-04 record correction: native controls, in-force/pending state and visible advisement.
+$expectedPrimitiveHash = 'EF0DE11B23A6C6A9C8C721D55F528237A72153315B633E6198AF0B50ADED9C78'
 $actualDesignSystemHash = (Get-FileHash -Algorithm SHA256 -LiteralPath (Join-Path $packageRoot 'DESIGN_SYSTEM_IMPLICATIONS.md')).Hash.ToUpperInvariant()
 $actualPrimitiveHash = (Get-FileHash -Algorithm SHA256 -LiteralPath (Join-Path $packageRoot 'component-primitives.csv')).Hash.ToUpperInvariant()
 Assert-True ($actualDesignSystemHash -ceq $expectedDesignSystemHash) 'design-system-freeze-hash' $actualDesignSystemHash ("expected={0}; actual={1}" -f $expectedDesignSystemHash, $actualDesignSystemHash)

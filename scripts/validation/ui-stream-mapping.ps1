@@ -1,4 +1,51 @@
 # Shared by the design and production validators. No repository writes.
+function Assert-UiStreamControlContract {
+    param([Parameter(Mandatory)][object[]]$Primitives)
+    # These are definition-record checks, not evidence of a rendered accessible UI.
+    $required = @{
+        required_anatomy = @(
+            'delivery stream control',
+            'stream fieldset',
+            'stream legend naming delivery stream control and in-force stream',
+            'four native stream radio inputs sharing one name',
+            'separate always-present Apply submit button',
+            'persistent visible stream advisement inside fieldset before Apply in DOM reading and visual order'
+        )
+        transactional_or_content_states = @('stream-in-force', 'stream-pending')
+        responsive_and_mode_obligations = @(
+            'stream group accessible name reports in-force stream until explicit submit',
+            'checked stream radio reports pending selection independently of in-force stream',
+            'stream radio names use peer vocabulary without lesser-choice labels',
+            'above-ceiling stream radios remain present with textual unavailability',
+            'Apply accessible name states it applies the selection and differs from group and radio names',
+            'stream selection by arrow Tab pointer or touch changes only checked state without applying reloading transitioning or other accessibility-tree changes',
+            'stream applies only on explicit Apply activation by Enter Space pointer or touch or native Enter submission of the same form',
+            'stream never applies on focus selection blur or timeout',
+            'stream advisement is programmatically associated with both fieldset and Apply',
+            'stream advisement explains re-entry into the chosen stream while preserving current location',
+            'stream advisement uses identical visible wording in every stream and is not tooltip title hover-only focus-only or accessible-description-only'
+        )
+        implementation_evidence_expectations = @(
+            'Stream control review states announcements on group entry pending-radio change and reaching Apply',
+            'Stream advisement review covers sighted mouse keyboard without AT screen reader and 400% magnifier before operation'
+        )
+    }
+    foreach ($id in @('PRIM-001', 'PRIM-042', 'PRIM-043', 'PRIM-044')) {
+        $rows = @($Primitives | Where-Object primitive_id -CEQ $id)
+        if ($rows.Count -ne 1) { throw "Missing or duplicate stream control host: $id" }
+        foreach ($column in $required.Keys) {
+            $property = $rows[0].PSObject.Properties[$column]
+            $values = if ($null -eq $property) { @() } else { @(([string]$property.Value).Split(';') | ForEach-Object { $_.Trim() }) }
+            foreach ($token in $required[$column]) {
+                if ($token -cnotin $values) { throw "Stream control contract missing: ${id}:${column}:$token" }
+            }
+        }
+        if ('stream-selected' -cin $rows[0].transactional_or_content_states.Split(';')) {
+            throw "Ambiguous stream-selected state: $id"
+        }
+    }
+}
+
 function Get-UiStreamMapping {
     [CmdletBinding()]
     param(
@@ -37,6 +84,7 @@ function Get-UiStreamMapping {
         $primitiveMap.Add($id, $values)
     }
 
+    Assert-UiStreamControlContract -Primitives $Primitives
     $templateMap = [System.Collections.Generic.Dictionary[string, object]]::new([StringComparer]::Ordinal)
     $scopeMap = [System.Collections.Generic.Dictionary[string, string]]::new([StringComparer]::Ordinal)
     $hostMap = [System.Collections.Generic.Dictionary[string, object]]::new([StringComparer]::Ordinal)

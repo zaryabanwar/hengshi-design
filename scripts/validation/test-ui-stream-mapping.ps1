@@ -114,4 +114,23 @@ Reject { Get-UiFrameObligations -Mapping $mapping -Templates $templates -Profile
 $changed = Copy-Rows $profiles
 ($changed | Where-Object profile_id -CEQ 'SP-BOOKING').critical_distinct_frame_values += ';STATE-INVENTED'
 Reject { Get-UiFrameObligations -Mapping $mapping -Templates $templates -Profiles $changed } 'Critical state is not required' 'unknown critical state cannot produce evidence'
+# Guard the named anatomy, current/pending distinction, and visible-before-Apply advisement.
+# Mutations run through the shared entry point used by both package validators.
+foreach ($hostId in @('PRIM-001', 'PRIM-042', 'PRIM-043', 'PRIM-044')) {
+    foreach ($column in @('required_anatomy', 'transactional_or_content_states', 'responsive_and_mode_obligations', 'implementation_evidence_expectations')) {
+        $row = $primitives | Where-Object primitive_id -CEQ $hostId
+        $tokens = @($row.$column.Split(';') | Where-Object { $_ -cmatch '^(delivery stream control$|stream (?!change announced)|four native stream |separate always-present Apply |persistent visible stream |stream-in-force$|stream-pending$|checked stream |above-ceiling stream |Apply accessible |Stream control review |Stream advisement review )' })
+        Check ($tokens.Count -gt 0) "$hostId has explicit $column contract"
+        foreach ($token in $tokens) {
+            $changed = Copy-Rows $primitives
+            $target = $changed | Where-Object primitive_id -CEQ $hostId
+            $target.$column = @($target.$column.Split(';') | Where-Object { $_ -cne $token }) -join ';'
+            Reject { Get-UiStreamMapping -Primitives $changed -Templates $templates } 'Stream control contract missing' "reject missing ${hostId}:${column}:$token"
+        }
+    }
+    $changed = Copy-Rows $primitives
+    ($changed | Where-Object primitive_id -CEQ $hostId).transactional_or_content_states += ';stream-selected'
+    Reject { Get-UiStreamMapping -Primitives $changed -Templates $templates } 'Ambiguous stream-selected state' "reject ambiguous selected state on $hostId"
+    Reject { Assert-UiStreamControlContract -Primitives @($primitives | Where-Object primitive_id -CNE $hostId) } 'Missing or duplicate stream control host' "required control host $hostId cannot disappear"
+}
 Write-Output "RESULT=PASS CHECKS=$script:checks FRAME_OBLIGATIONS=$($frames.Count)"
