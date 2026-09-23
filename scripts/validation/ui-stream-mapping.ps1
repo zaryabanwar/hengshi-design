@@ -99,6 +99,43 @@ function Assert-UiStreamActionContract {
     }
 }
 
+function Assert-UiStreamAcceptanceContract {
+    param([Parameter(Mandatory)][string]$Text)
+    # This validates the acceptance definition, not a browser execution result.
+    $rows = [regex]::Matches($Text, '(?m)^\|[ \t]*UXTEST-046[ \t]*\|[^|\r\n]*\|(?<criteria>[^|\r\n]*)\|[ \t]*\r?$')
+    if ($rows.Count -ne 1) { throw 'Missing or duplicate stream acceptance test: UXTEST-046' }
+    $body = ($rows[0].Groups['criteria'].Value -replace '[*`]', '') -replace '\s+', ' '
+    foreach ($clause in @(
+        'four native radio inputs sharing one name inside a fieldset with a legend',
+        'separate, always-present Apply submit button',
+        'group accessible name identifies the delivery stream control and reports the in-force stream',
+        'checked radio reports the pending selection',
+        'Apply has a distinct accessible name stating that it applies the selection',
+        'Arrow, Tab, pointer and touch selection change only the checked state',
+        'no stream application, reload, transition or other accessibility-tree change',
+        'only explicit Apply activation by Enter, Space, pointer or touch, or native Enter submission of the same form',
+        'Fail if focus, selection, blur, arrow movement or timeout applies a stream',
+        'persistent visible text inside the fieldset before Apply in both DOM reading order and visual order',
+        'programmatically associated with both the group and the Apply button',
+        'not tooltip, title, hover-only, focus-only or accessible-description-only',
+        'same wording in every stream',
+        'applying the pending selection re-enters the experience in the chosen stream while preserving the current location',
+        'sighted mouse users, keyboard users without assistive technology, screen-reader users and screen-magnifier users at 400% zoom',
+        'Streams above the capability ceiling are present, disabled, and state the reason; none is hidden',
+        'control is reachable and operable in all four streams',
+        'does not move focus within a shell, and preserves scroll, open panel, and route',
+        'never on the document body; the outgoing shell leaves the accessibility tree before the incoming shell is added',
+        'a held slot, a verified email, and entered values are all still present, with nothing re-entered',
+        'change is refused and explained under ACT-11 and the visitor keeps their work',
+        'any automatic canvas entry'
+    )) {
+        if (-not $body.Contains($clause)) { throw "Stream acceptance contract missing: $clause" }
+    }
+    if ($body -match 'visible text adjacent to the control|arrowing through options changes nothing') {
+        throw 'Ambiguous stream acceptance criteria'
+    }
+}
+
 function Assert-UiStreamControlContract {
     param([Parameter(Mandatory)][object[]]$Primitives)
     # These are definition-record checks, not evidence of a rendered accessible UI.

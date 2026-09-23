@@ -174,4 +174,17 @@ foreach ($pair in @(@(2,3), @(2,4), @(3,4))) {
     $cells[$pair[0]], $cells[$pair[1]] = $cells[$pair[1]], $cells[$pair[0]]
     Reject { Assert-UiStreamActionContract -Text ($uxStates.Replace($actionRow, ($cells -join '|'))) } 'Stream action contract missing' "ACT-09 rejects swapped cells $pair"
 }
+$uxTests = Get-Content -Raw (Join-Path $root 'docs/phase-1-ux-architecture/CONTENT_ANALYTICS_TESTS.md')
+Assert-UiStreamAcceptanceContract -Text $uxTests
+Check $true 'UXTEST-046 specifies approved controls and preserves existing journeys'
+$acceptanceRow = [regex]::Match($uxTests, '(?m)^\| UXTEST-046 \|[^\r\n]+').Value
+foreach ($phrase in @('four native radio inputs', 'always-present Apply', 'reports the in-force stream', 'checked radio reports the pending selection', 'Apply has a distinct accessible name', 'change only the checked state', 'no stream application, reload, transition', 'only explicit Apply activation', 'Fail if focus, selection, blur', 'persistent visible text inside the fieldset', 'both DOM reading order and visual order', 'associated with both the group and the Apply button', 'not tooltip, title', 'same wording in every stream', 'applying the pending selection re-enters', 'screen-magnifier users at 400% zoom', 'Streams above the capability ceiling', 'reachable and operable in all four streams', 'preserves scroll, open panel, and route', 'outgoing shell leaves the accessibility tree', 'a held slot, a verified email', 'change is refused and explained', 'any automatic canvas entry')) {
+    $changed = $uxTests.Replace($acceptanceRow, $acceptanceRow.Replace($phrase, 'REMOVED-CONTRACT'))
+    Reject { Assert-UiStreamAcceptanceContract -Text $changed } 'Stream acceptance contract missing' "UXTEST-046 rejects omitted $phrase"
+}
+Reject { Assert-UiStreamAcceptanceContract -Text ($uxTests.Replace($acceptanceRow, '')) } 'Missing or duplicate stream acceptance test' 'UXTEST-046 cannot disappear'
+Reject { Assert-UiStreamAcceptanceContract -Text ($uxTests + "`n" + $acceptanceRow) } 'Missing or duplicate stream acceptance test' 'UXTEST-046 cannot be duplicated'
+$acceptanceCells = $acceptanceRow.Split('|')
+$acceptanceCells[2], $acceptanceCells[3] = $acceptanceCells[3], $acceptanceCells[2]
+Reject { Assert-UiStreamAcceptanceContract -Text ($uxTests.Replace($acceptanceRow, ($acceptanceCells -join '|'))) } 'Stream acceptance contract missing' 'UXTEST-046 criteria cannot be supplied by its title'
 Write-Output "RESULT=PASS CHECKS=$script:checks FRAME_OBLIGATIONS=$($frames.Count)"

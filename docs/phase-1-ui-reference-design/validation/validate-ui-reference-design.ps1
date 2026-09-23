@@ -434,6 +434,11 @@ try {
 }
 catch { Add-Fail 'stream-control-ux-action' $_.Exception.Message }
 try {
+    Assert-UiStreamAcceptanceContract -Text (Get-Content -Raw -LiteralPath (Join-Path $repoRoot 'docs/phase-1-ux-architecture/CONTENT_ANALYTICS_TESTS.md'))
+    Add-Pass 'stream-control-ux-acceptance' 'UXTEST-046 covers explicit controls and guidance while retaining boundary and booking criteria'
+}
+catch { Add-Fail 'stream-control-ux-acceptance' $_.Exception.Message }
+try {
     $streamMapping = Get-UiStreamMapping -Primitives $primitives -Templates $templates
 }
 catch {
