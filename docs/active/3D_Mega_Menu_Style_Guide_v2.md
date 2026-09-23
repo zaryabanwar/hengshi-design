@@ -373,30 +373,45 @@ occurs:
 - **Focus is not moved.** The visitor's focus stays on the control they operated.
 - Scroll position, any open panel, and the current route are preserved across the
   change.
-- The control reports its current stream as part of its accessible name, so the
-  active stream is available without inspecting the scene.
+- The group accessible name reports the in-force stream, independently of any
+  pending radio selection, so the active stream is available without inspecting
+  the scene.
 
-**Control model — normative (D-045, `N-05`).** The control is a **native radio
-group** whose options are the four streams, plus a **separate explicit Apply
-control**. Selecting a radio changes nothing; only Apply changes the stream. This is
-not a styling preference, and the reason it is normative is the reason `3.2.2 On
-Input` exists: a select element or a set of buttons that acts on selection changes
-context the moment a keyboard user arrows through the options, which for this
-control means reloading the experience four times on the way to the one they wanted.
-Separating selection from commitment removes that failure rather than warning about
-it. Options above the step 1 ceiling are present and **disabled with a stated
-reason**, not hidden — a visitor is entitled to know a stream exists and why their
-client cannot receive it.
+**Control model — normative (D-045, `N-05`, `OBL-CTRL-01/02`).** Use four native radio inputs sharing one name inside a fieldset with a legend,
+one radio per stream, plus a separate, always-present Apply submit button.
+Arrow, Tab, pointer and touch selection change only the checked state; they must
+not apply a stream, reload, initiate a transition or alter the accessibility tree
+beyond that checked state. A stream applies only after explicit Apply activation
+with Enter, Space, pointer or touch, or native Enter submission of the same form
+to that button. The control never applies on focus, selection, blur, arrow movement or timeout.
+A native select that applies on change, or a listbox, combobox, menu or radio group
+that applies on selection, is prohibited.
 
-**Advance advisement — visible, not only accessible (D-045, `N-06`).** Because
-operating this control changes context, the control states what it will do **before**
-it is used, and that statement is **visible text adjacent to the control**, not an
-accessible description alone. A description exposed only to assistive technology
-warns exactly the users who did not need warning first and leaves the sighted
-keyboard user, the low-vision user at 400% zoom, and the cognitively loaded user with
-nothing. The visible text and the accessible description say the same thing: choosing
-a stream reloads the experience in that stream and keeps your current location. The
-advisement is the requirement; the announcement above is what happens afterwards.
+The group accessible name identifies the delivery stream control and reports the in-force stream
+through its legend. The checked radio reports the pending selection. These values
+are programmatically distinct: changing the pending selection leaves the reported
+in-force stream unchanged until explicit submission applies it. On group entry a
+screen reader receives the control name and in-force stream; on arrowing to another
+radio it receives that radio's peer stream name and checked state, not an assertion
+that the stream has changed. On reaching Apply it receives a distinct button name
+stating that the button applies the selection.
+
+Radio names use the peer stream vocabulary; they must not label a choice as
+fallback, degraded, low quality, basic, optional, reduced, unsupported or non-WebGL.
+Options above the step 1 ceiling remain present and disabled with a stated textual
+reason, not hidden or distinguished by colour or dimming alone.
+
+**Advance advisement — visible, not only accessible (D-045, `N-06`, `OBL-ADV-01`).**
+Provide persistent visible text inside the fieldset, before Apply in both DOM reading order and visual order,
+programmatically associated with both the group and the Apply button. It is
+not tooltip, title, hover-only, focus-only or accessible-description-only content.
+Use the same wording in every stream: explain that applying the pending selection
+re-enters the experience in that stream while preserving the current location.
+Exact public copy remains gated. Sighted mouse and keyboard users without assistive
+technology receive the visible text before operation; a screen reader receives
+the associated text at the group and button; at 400% magnification the visible text
+remains before Apply without being hidden or clipped. The advance advisement is
+distinct from the polite status announcement after the stream changes.
 Neither is a claim of conformance — nothing is built, and WCAG 2.2
 **3.2.2 On Input**, **3.3.7 Redundant Entry**, and **4.1.3 Status Messages** are
 evaluated against the implementation, not against this document.

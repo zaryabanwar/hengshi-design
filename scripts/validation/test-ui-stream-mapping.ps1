@@ -133,4 +133,16 @@ foreach ($hostId in @('PRIM-001', 'PRIM-042', 'PRIM-043', 'PRIM-044')) {
     Reject { Get-UiStreamMapping -Primitives $changed -Templates $templates } 'Ambiguous stream-selected state' "reject ambiguous selected state on $hostId"
     Reject { Assert-UiStreamControlContract -Primitives @($primitives | Where-Object primitive_id -CNE $hostId) } 'Missing or duplicate stream control host' "required control host $hostId cannot disappear"
 }
+$styleGuide = Get-Content -Raw (Join-Path $root 'docs/active/3D_Mega_Menu_Style_Guide_v2.md')
+Assert-UiStreamStyleGuideContract -Text $styleGuide
+Check $true 'style-guide stream-control contract'
+foreach ($phrase in @('four native radio inputs', 'always-present Apply', 'in-force stream', 'pending selection', 'checked state', 'blur, arrow movement or timeout', 'native Enter submission', 'inside the fieldset', 'DOM reading order', 'both the group and the Apply button', 'hover-only', 'same wording in every stream')) {
+    $changedText = $styleGuide.Replace($phrase, 'REMOVED-CONTRACT')
+    Reject { Assert-UiStreamStyleGuideContract -Text $changedText } 'Stream style-guide contract missing' "style guide rejects removed $phrase"
+}
+Reject { Assert-UiStreamStyleGuideContract -Text ($styleGuide.Replace('#### 8.2.4 ', '#### 8.2.9 ')) } 'Missing stream control style-guide section' 'control contract cannot be supplied by another section'
+foreach ($level in 1..4) {
+    $relocated = $styleGuide.Replace('**Control model — normative', (('#' * $level) + " Unrelated contract`n`n**Control model — normative"))
+    Reject { Assert-UiStreamStyleGuideContract -Text $relocated } 'Stream style-guide contract missing' "contract moved outside section by heading level $level"
+}
 Write-Output "RESULT=PASS CHECKS=$script:checks FRAME_OBLIGATIONS=$($frames.Count)"

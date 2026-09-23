@@ -1,4 +1,31 @@
 # Shared by the design and production validators. No repository writes.
+function Assert-UiStreamStyleGuideContract {
+    param([Parameter(Mandatory)][string]$Text)
+    $section = [regex]::Match($Text, '(?ms)^#### 8\.2\.4 [^\r\n]+\r?\n(?<body>.*?)(?=^#{1,4} |\z)')
+    if (-not $section.Success) { throw 'Missing stream control style-guide section' }
+    $body = ($section.Groups['body'].Value -replace '[*`]', '') -replace '\s+', ' '
+    # Guard the approved behavioral contract, not visual or assistive-technology conformance.
+    foreach ($clause in @(
+        'four native radio inputs sharing one name inside a fieldset with a legend',
+        'separate, always-present Apply submit button',
+        'group accessible name identifies the delivery stream control and reports the in-force stream',
+        'checked radio reports the pending selection',
+        'Arrow, Tab, pointer and touch selection change only the checked state',
+        'never applies on focus, selection, blur, arrow movement or timeout',
+        'native Enter submission of the same form',
+        'persistent visible text inside the fieldset',
+        'before Apply in both DOM reading order and visual order',
+        'programmatically associated with both the group and the Apply button',
+        'not tooltip, title, hover-only, focus-only or accessible-description-only',
+        'same wording in every stream'
+    )) {
+        if (-not $body.Contains($clause)) { throw "Stream style-guide contract missing: $clause" }
+    }
+    if ($body -match 'visible text adjacent to the control|Selecting a radio changes nothing') {
+        throw 'Ambiguous stream style-guide wording'
+    }
+}
+
 function Assert-UiStreamControlContract {
     param([Parameter(Mandatory)][object[]]$Primitives)
     # These are definition-record checks, not evidence of a rendered accessible UI.

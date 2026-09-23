@@ -419,6 +419,11 @@ Assert-True ($a02.Count -eq 0) 'primitive-stream-presence-legality' 'every primi
 # stream data.
 . (Join-Path $repoRoot 'scripts/validation/ui-stream-mapping.ps1')
 try {
+    Assert-UiStreamStyleGuideContract -Text (Get-Content -Raw -LiteralPath (Join-Path $repoRoot 'docs/active/3D_Mega_Menu_Style_Guide_v2.md'))
+    Add-Pass 'stream-control-style-guide' 'explicit activation, in-force/pending values and visible-before-Apply guidance'
+}
+catch { Add-Fail 'stream-control-style-guide' $_.Exception.Message }
+try {
     $streamMapping = Get-UiStreamMapping -Primitives $primitives -Templates $templates
 }
 catch {
