@@ -210,4 +210,33 @@ $changed = Copy-Rows $flows
 $target = $changed | Where-Object coverage_id -CEQ 'COV-ACT-09'
 $target.success_or_expected_state, $target.error_empty_pending_state = $target.error_empty_pending_state, $target.success_or_expected_state
 Reject { Assert-UiStreamCoverageContract -Flows $changed } 'Stream coverage contract missing' 'COV-ACT-09 cannot swap success and pending'
+$trace = @(Import-Csv (Join-Path $design 'traceability.csv'))
+Assert-UiStreamTraceContract -Trace $trace
+Check $true 'stream requirement traces bind all hosts and retain future evidence'
+$tracePhrases = @{
+    'TR-REQ-103' = @('keyboard operable in every stream', 'reports the in-force stream', 'checked radio reports the pending selection', 'Apply has a distinct accessible name', 'persistent visible text inside the fieldset', 'both DOM reading order and visual order', 'associated with both the group and the Apply button', 'not tooltip title', 'same wording in every stream', 'preserving the current location', 'UXTEST-046 execution evidence remains required')
+    'TR-REQ-111' = @('four native radio inputs', 'always-present Apply submit button', 'selection changes only checked state', 'only explicit Apply activation', 'never apply on focus', 'disabled with a textual reason', 'choice still applies for the session', 'UXTEST-046 execution evidence remains required')
+}
+foreach ($id in $tracePhrases.Keys) {
+    foreach ($phrase in $tracePhrases[$id]) {
+        $changed = Copy-Rows $trace
+        $row = $changed | Where-Object trace_id -CEQ $id
+        $row.required_future_evidence = $row.required_future_evidence.Replace($phrase, 'REMOVED-CONTRACT')
+        Reject { Assert-UiStreamTraceContract -Trace $changed } 'Stream trace evidence missing' "$id rejects missing $phrase"
+    }
+    foreach ($record in @('PRIM-001','PRIM-042','PRIM-043','PRIM-044','COV-ACT-09','B01')) {
+        $changed = Copy-Rows $trace
+        $row = $changed | Where-Object trace_id -CEQ $id
+        $row.contract_records = @($row.contract_records.Split(';') | Where-Object { $_ -cne $record }) -join ';'
+        Reject { Assert-UiStreamTraceContract -Trace $changed } 'Missing stream trace binding' "$id rejects missing binding $record"
+    }
+    Reject { Assert-UiStreamTraceContract -Trace @($trace | Where-Object trace_id -CNE $id) } 'Missing or duplicate stream trace' "$id cannot disappear"
+    Reject { Assert-UiStreamTraceContract -Trace ($trace + @($trace | Where-Object trace_id -CEQ $id)) } 'Missing or duplicate stream trace' "$id cannot be duplicated"
+    $changed = Copy-Rows $trace
+    ($changed | Where-Object trace_id -CEQ $id).source_id = 'FR-3D-013'
+    Reject { Assert-UiStreamTraceContract -Trace $changed } 'Wrong stream trace source' "$id cannot reference the wrong requirement"
+    ($changed | Where-Object trace_id -CEQ $id).source_id = ($trace | Where-Object trace_id -CEQ $id).source_id
+    ($changed | Where-Object trace_id -CEQ $id).status_or_gate = 'DONE'
+    Reject { Assert-UiStreamTraceContract -Trace $changed } 'Stream trace evidence must remain future' "$id cannot claim evidence completion"
+}
 Write-Output "RESULT=PASS CHECKS=$script:checks FRAME_OBLIGATIONS=$($frames.Count)"

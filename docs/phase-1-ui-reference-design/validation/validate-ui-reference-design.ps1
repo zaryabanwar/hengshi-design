@@ -444,6 +444,11 @@ try {
 }
 catch { Add-Fail 'stream-control-flow-coverage' $_.Exception.Message }
 try {
+    Assert-UiStreamTraceContract -Trace $trace
+    Add-Pass 'stream-control-requirement-traces' 'stream traces bind all four hosts, action coverage and B01 without claiming completed evidence'
+}
+catch { Add-Fail 'stream-control-requirement-traces' $_.Exception.Message }
+try {
     $streamMapping = Get-UiStreamMapping -Primitives $primitives -Templates $templates
 }
 catch {

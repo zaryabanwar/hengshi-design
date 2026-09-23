@@ -176,6 +176,52 @@ function Assert-UiStreamCoverageContract {
     }
 }
 
+function Assert-UiStreamTraceContract {
+    param([Parameter(Mandatory)][object[]]$Trace)
+    $sources = @{ 'TR-REQ-103' = 'NFR-A11Y-004'; 'TR-REQ-111' = 'FR-3D-014' }
+    $clauses = @{
+        'TR-REQ-103' = @(
+            'present discoverable and keyboard operable in every stream',
+            'group accessible name identifies the delivery stream control and reports the in-force stream',
+            'checked radio reports the pending selection',
+            'Apply has a distinct accessible name stating it applies the selection',
+            'persistent visible text inside the fieldset before Apply in both DOM reading order and visual order',
+            'programmatically associated with both the group and the Apply button',
+            'not tooltip title hover-only focus-only or accessible-description-only',
+            'same wording in every stream',
+            'applying the pending selection re-enters the experience while preserving the current location',
+            'UXTEST-046 execution evidence remains required'
+        )
+        'TR-REQ-111' = @(
+            'four native radio inputs sharing one name inside a fieldset with a legend',
+            'separate always-present Apply submit button',
+            'selection changes only checked state without applying a stream reloading transitioning or other accessibility-tree changes',
+            'only explicit Apply activation or native Enter submission of the same form',
+            'never apply on focus selection blur arrow movement or timeout',
+            'streams above the capability ceiling remain present and disabled with a textual reason rather than hidden',
+            'preference write failure is explained without blocking under ACT-11 and the choice still applies for the session',
+            'UXTEST-046 execution evidence remains required'
+        )
+    }
+    foreach ($id in $sources.Keys) {
+        $rows = @($Trace | Where-Object trace_id -CEQ $id)
+        if ($rows.Count -ne 1) { throw "Missing or duplicate stream trace: $id" }
+        $row = $rows[0]
+        if ($row.source_id -cne $sources[$id] -or $row.source_type -cne 'requirement' -or
+            $row.source_artifact -cne 'docs/active/Hengshi_Design_SRS_v3.md') { throw "Wrong stream trace source: $id" }
+        $records = @(([string]$row.contract_records).Split(';'))
+        foreach ($record in @('PRIM-001','PRIM-042','PRIM-043','PRIM-044','COV-ACT-09','B01')) {
+            if ($record -cnotin $records) { throw "Missing stream trace binding: ${id}:$record" }
+        }
+        foreach ($clause in $clauses[$id]) {
+            if (-not ([string]$row.required_future_evidence).Contains($clause)) { throw "Stream trace evidence missing: ${id}:$clause" }
+        }
+        if ($row.status_or_gate -cne 'contracted_future_visual_evidence_required') {
+            throw "Stream trace evidence must remain future: $id"
+        }
+    }
+}
+
 function Assert-UiStreamControlContract {
     param([Parameter(Mandatory)][object[]]$Primitives)
     # These are definition-record checks, not evidence of a rendered accessible UI.

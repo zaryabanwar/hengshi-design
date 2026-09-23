@@ -1,5 +1,5 @@
 schema_version: 2
-last_updated: "2026-09-23"
+last_updated: "2026-09-24"
 project: Hengshi Design
 status: DOING
 phase: 1
@@ -9,36 +9,36 @@ engineering_contract: AGENTS.md
 current_work: PROJECT_STATE.yaml
 checkpoint:
   branch: main
-  base_head: 94e0c26c99bdf418d345831a5869d250a7e64025
+  base_head: 59297de138642c4e4e690fbb38c609913bdc638f
   historical_state: docs/archive/PROJECT_STATE-2026-09-23-pre-recovery.yaml
-  working_tree: bounded_stream_control_COVACT09_slice
+  working_tree: bounded_stream_control_trace_slice
   runtime: not_started_documentation_slice
   application_code_changed_this_slice: false
   commit_authorized: true
 current_task:
-  id: STREAM-CONTROL-FLOW-COVERAGE-CONTRACT
-  outcome: COV-ACT-09 matches approved Apply naming focus and recovery behavior
+  id: STREAM-CONTROL-TRACE-CONTRACT
+  outcome: Two stream traces bind all hosts and specify truthful future evidence
   status: DONE
-  authority: founder_start_continue_and_standing_commit_push_approval_2026_09_23
+  authority: founder_start_2026_09_24_and_standing_commit_push_approval
   implementation: scripts/validation/ui-stream-mapping.ps1
   regression_test: scripts/validation/test-ui-stream-mapping.ps1
   verification:
-    mapping_and_frame_checks: 833_pass_0_fail
+    mapping_and_frame_checks: 873_pass_0_fail
     base_frame_obligations: 440
-    design_validator: 206_pass_0_fail
+    design_validator: 207_pass_0_fail
     production_validator: 167_pass_0_fail
     whitespace: PASS
     public_templates_four_streams: 30
     world_templates_three_streams: 4
     staff_templates_excluded_with_evidence_scope: 6
-  independent_review: PASS_B04_COVACT09_scope_2026_09_23
+  independent_review: PASS_B04_trace_scope_2026_09_24
   prior_review_gate: MA-029
   design_review: docs/phase-1-ui-reference-design/reviews/design-review-iteration-6.md
   accessibility_review: docs/phase-1-ui-reference-design/accessibility/accessibility-audit-iteration-5.md
-  unverified_work: B04_trace_batch_loci_and_other_D045_findings
+  unverified_work: B04_batch_locus_and_other_D045_findings
   commit: enclosing_commit
   manual_action: MANUAL_ACTIONS.md
-next_safe_action: Reconcile B04 stream-control traceability in TR-REQ-103 and TR-REQ-111
+next_safe_action: Reconcile B04 stream-control visual evidence requirements in B01
 boundaries:
   figma_calls: explicit_per_call_approval_required
   figma_production: B01_held
