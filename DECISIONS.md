@@ -193,3 +193,37 @@ the producer's own defect and is recorded in full rather than quietly fixed: a
 PowerShell operator-precedence collapse left the new cross-package framing guard
 **silently inert** across 56 files (R-038).
 
+## D-046 — R-039 design-system amendment commissioned as a bounded specialist contract
+
+**Date:** 2026-09-24
+**Status:** accepted
+**Supersedes:** nothing; executes the deferral recorded at D-045 gate G-6
+**Authority for:** authoring and independently reviewing a [PROPOSED] amendment
+that adds the delivery-stream axis, the delivery stream control component, the
+four stream tokens, and the 3D focus-ring token to the design system
+
+The founder approved this decision on 2026-09-24 in a click-based approval gate
+presented in the Claude Code session that extracted the design system, after the
+gate stated what the decision authorizes and what it does not. The same decision
+had been raised as an approval prompt in another agent host (the note the founder
+pasted on 2026-09-24); this record is the single durable answer to both.
+
+**What is commissioned.** One bounded specialist contract, executed in the Claude
+Code session at the founder's election. An author independent of the D-045
+producer writes `docs/phase-1-ui-reference-design/DESIGN_SYSTEM_AMENDMENT_R-039.md`
+as a [PROPOSED SPECIFICATION] in the format of the D-044 specifications. An
+independent reviewer then reviews it against `OBL-GRAM-03` (per-stream contrast
+rule, stream-control component, focus-ring tokens: three hits required) and the
+R-039 exit evidence; revisions follow the constitution's limit of three cycles for
+UI. The design-system export committed at `be48d55` (`packages/design-system/`) is
+input to the author, not authority.
+
+**What this decision does not do.** It does not amend
+`DESIGN_SYSTEM_IMPLICATIONS.md`, whose freeze hash stays intact until the founder
+accepts the reviewed amendment in a separate decision. It does not release B01,
+which stays `future_not_authorized` in both plan files under G-4 until MA-029
+returns clean. It does not authorize any Figma MCP call (CB-06 and CB-07 stand; a
+`whoami` capability test was offered and declined on 2026-09-24), external write,
+implementation, publication, deployment, or push. R-035, R-036, R-037, R-038,
+R-040, and R-041 are unchanged. R-039 moves from `awaiting_human` to `in_progress`.
+

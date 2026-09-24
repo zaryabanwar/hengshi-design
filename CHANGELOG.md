@@ -6,6 +6,17 @@ operations.
 
 ## [Unreleased]
 
+### 2026-09-24 — R-039 design-system amendment commissioned (D-046)
+
+- **Founder decision D-046** recorded: the design-system gap logged at D-045 gate
+  G-6 (no stream axis, no stream-control component, no four `DS-S-*` stream
+  tokens, no 3D focus-ring token) is commissioned as its own bounded specialist
+  contract, executed in the Claude Code session. R-039 moves to `in_progress` in
+  `RISKS.md`; a task row is added in `TASKS.md`.
+- **Nothing else moves.** `DESIGN_SYSTEM_IMPLICATIONS.md` and its freeze hash are
+  untouched until a separate acceptance decision; B01 stays held under G-4;
+  no Figma call was made (a `whoami` capability test was offered and declined).
+
 ### 2026-09-24 — Design system export committed (derived, non-authoritative)
 
 - **`packages/design-system/` added:** tokens, brand book, guideline sections,
