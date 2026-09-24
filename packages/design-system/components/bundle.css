@@ -1,0 +1,119 @@
+/* Hengshi Design: CSS component layer.
+   Hand-written from docs/phase-1-brand-identity/visual-boards/identity-board.css and
+   docs/phase-1-brand-identity/semantic-tokens.json (zaryabanwar/hengshi-design, main@989af66).
+   Consumes semantic tokens only: load tokens.css before this file. */
+
+/* Inverse block: a dark section inside a light page (masthead, hero, recommended card). */
+.hd-inverse { background: var(--hd-surface-inverse); color: var(--hd-text-inverse); }
+
+/* Focus is one rule everywhere: 3px solid, 4px offset, never clipped. */
+:focus-visible { outline: var(--hd-focus-ring-width) solid var(--hd-focus-ring); outline-offset: var(--hd-focus-offset); }
+.hd-inverse :focus-visible { outline-color: var(--hd-signal-cyan-on-inverse); }
+
+/* Eyebrow colour (the type style .hd-eyebrow itself comes from tokens.css). */
+.hd-eyebrow { color: var(--hd-text-signal); text-transform: uppercase; }
+.hd-inverse .hd-eyebrow { color: var(--hd-signal-cyan-on-inverse); }
+
+/* Button: PRIM-014 primary booking CTA, PRIM-015 general action button */
+.hd-button {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--hd-space-2);
+  min-width: 0; padding: 0.8rem 1rem;
+  border: var(--hd-stroke-hairline) solid transparent; border-radius: var(--hd-radius-control);
+  font: 800 1rem/1.5 var(--font-text); text-decoration: none; cursor: pointer; overflow-wrap: anywhere;
+}
+.hd-button--primary { background: var(--hd-action-primary-background); color: var(--hd-action-primary-foreground); }
+.hd-button--secondary { background: transparent; color: var(--hd-action-secondary-foreground); border-color: var(--hd-action-secondary-border); }
+.hd-inverse .hd-button--primary { background: var(--hd-signal-cyan-on-inverse); color: var(--hd-text-primary); }
+.hd-inverse .hd-button--secondary { color: var(--hd-text-inverse); border-color: var(--hd-text-muted-on-inverse); }
+.hd-button:hover { text-decoration: underline; text-underline-offset: 0.2em; }
+.hd-button:disabled, .hd-button[aria-disabled="true"] {
+  background: var(--hd-surface-raised); color: var(--hd-text-secondary); border-color: var(--hd-border-strong);
+  text-decoration: none; cursor: not-allowed;
+}
+.hd-inverse .hd-button:disabled, .hd-inverse .hd-button[aria-disabled="true"] {
+  background: var(--hd-surface-inverse-raised); color: var(--hd-text-inverse); border-color: var(--hd-text-muted-on-inverse);
+}
+.hd-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+
+/* Tag: the identity board Recommended tag */
+.hd-tag {
+  display: inline-block; margin: 0; padding: 0.25rem 0.5rem;
+  background: var(--hd-status-attention-fill); color: var(--hd-text-on-signal);
+  font: 800 1rem/1.5 var(--font-text);
+}
+
+/* EvidenceStateLabel: PRIM-007 evidence state label */
+.hd-evidence-state {
+  display: inline-flex; align-items: center; gap: var(--hd-space-2);
+  color: var(--hd-text-primary); font: 600 13px/1.5 var(--font-evidence);
+}
+.hd-evidence-state svg { flex: none; display: block; color: var(--hd-state); }
+.hd-evidence-state__glyph { width: 16px; height: 16px; }
+.hd-evidence-state__rail { width: 48px; height: 16px; }
+.hd-evidence-state--verified { --hd-state: var(--hd-status-verified); }
+.hd-evidence-state--demo { --hd-state: var(--hd-status-demo); }
+.hd-evidence-state--proposed { --hd-state: var(--hd-status-proposed); }
+.hd-evidence-state--conditional { --hd-state: var(--hd-status-attention); }
+.hd-evidence-state--unavailable { --hd-state: var(--hd-status-held); }
+.hd-evidence-state--error { --hd-state: var(--hd-status-error); }
+.hd-inverse .hd-evidence-state { color: var(--hd-text-inverse); }
+.hd-inverse .hd-evidence-state--verified { --hd-state: var(--hd-signal-lime-on-inverse); }
+.hd-inverse .hd-evidence-state--demo { --hd-state: var(--hd-signal-violet-on-inverse); }
+.hd-inverse .hd-evidence-state--proposed { --hd-state: var(--hd-signal-cyan-on-inverse); }
+.hd-inverse .hd-evidence-state--conditional, .hd-inverse .hd-evidence-state--error { --hd-state: var(--hd-signal-amber-on-inverse); }
+.hd-inverse .hd-evidence-state--unavailable { --hd-state: var(--hd-text-muted-on-inverse); }
+
+/* Notice: the identity board clearance notice */
+.hd-notice {
+  padding: var(--hd-space-4);
+  border-left: var(--hd-stroke-notice-rule) solid var(--hd-signal-amber-on-inverse);
+  background: var(--hd-surface-inverse-raised); color: var(--hd-text-inverse);
+}
+.hd-notice p { margin: 0; line-height: 1.65; max-width: var(--hd-measure-max); }
+.hd-notice strong { font-family: var(--font-evidence); font-weight: 700; }
+
+/* Card: PRIM-010 collection item card (the identity board direction card) */
+.hd-card {
+  min-width: 0; padding: 1.25rem;
+  border: var(--hd-stroke-hairline) solid var(--hd-border-subtle);
+  background: var(--hd-surface-raised); color: var(--hd-text-primary);
+}
+.hd-card--recommended {
+  border: var(--hd-stroke-focus) solid var(--hd-signal-cyan-on-inverse);
+  background: var(--hd-surface-inverse); color: var(--hd-text-inverse);
+}
+.hd-card h3 { margin: 0 0 var(--hd-space-2); font: 700 1.25rem/1.15 var(--font-text); }
+.hd-card--recommended h3 { color: var(--hd-text-muted-on-inverse); }
+.hd-card p { margin: 0; line-height: 1.65; }
+.hd-card dl { display: grid; grid-template-columns: 5rem 1fr; gap: 0.5rem; margin: var(--hd-space-4) 0 0; }
+.hd-card dt { font-weight: 700; }
+.hd-card dd { margin: 0; }
+.hd-card .hd-tag { margin-bottom: var(--hd-space-3); }
+.hd-card-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+
+/* Lockup: PRIM-062 logo and entity lockup */
+.hd-lockup { display: inline-block; min-width: 168px; }
+.hd-lockup img { display: block; width: 100%; height: auto; }
+.hd-lockup--mark { min-width: 32px; width: 32px; }
+.hd-lockup--mark-small { min-width: 24px; width: 24px; }
+.hd-lockup--favicon { min-width: 16px; width: 16px; }
+
+/* DataSeriesKey: the responsive direct-labelled series list (PRIM-059 data visualization, legend only) */
+.hd-series { display: grid; gap: 0.75rem; margin: 0; padding: 0; list-style: none; }
+.hd-series li { display: grid; grid-template-columns: minmax(7rem, 1fr) minmax(7.5rem, auto); gap: 0.25rem 0.75rem; align-items: center; min-width: 0; }
+.hd-series__key { display: inline-flex; align-items: center; gap: var(--hd-space-2); overflow: hidden; white-space: nowrap; font: 700 1rem/1 var(--font-evidence); color: var(--hd-series); }
+.hd-series__key svg { flex: none; display: block; }
+.hd-series__label { min-width: 0; font-size: max(0.75rem, 12px); line-height: 1.25; overflow-wrap: anywhere; color: var(--hd-text-primary); }
+.hd-series__pattern { grid-column: 2; min-width: 0; font: 0.75rem/1.4 var(--font-evidence); overflow-wrap: anywhere; color: var(--hd-text-secondary); }
+.hd-series--context { --hd-series: var(--hd-data-series-context-baseline); }
+.hd-series--dependency { --hd-series: var(--hd-data-series-dependency-map); }
+.hd-series--decision { --hd-series: var(--hd-data-series-decision-frame); }
+.hd-series--evidence { --hd-series: var(--hd-data-series-evidence-depth); }
+.hd-series--risk { --hd-series: var(--hd-data-series-risk-view); }
+
+@media (prefers-reduced-motion: reduce) {
+  .hd-button, .hd-card, .hd-notice { transition: none; }
+}
+@media (forced-colors: active) {
+  .hd-card, .hd-notice, .hd-tag, .hd-button { border: 2px solid CanvasText; forced-color-adjust: auto; }
+}

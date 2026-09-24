@@ -1,0 +1,27 @@
+<!-- @dsCard group="Actions and input" height=232 subtitle="Primary, secondary and disabled, on the canvas and on an inverse block" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Button preview</title>
+<style>
+  html, body { margin: 0; }
+  body { padding: var(--hd-space-4); background: var(--hd-surface-canvas); color: var(--hd-text-primary); font-family: var(--font-text); }
+  .block { padding: var(--hd-space-4); }
+  .block + .block { margin-top: var(--hd-space-4); border-top: var(--hd-stroke-rule) solid var(--hd-signal-cyan-on-inverse); }
+</style>
+</head>
+<body>
+<div class="block">
+  <div class="hd-actions">
+    <a class="hd-button hd-button--primary" href="#book">Book a conversation</a>
+    <a class="hd-button hd-button--secondary" href="#work">See verified work</a>
+    <button class="hd-button hd-button--secondary" type="button" disabled>Booking held until review</button>
+  </div>
+</div>
+<div class="block hd-inverse">
+  <div class="hd-actions">
+    <a class="hd-button hd-button--primary" href="#book">Book a conversation</a>
+    <a class="hd-button hd-button--secondary" href="#quick">Quick Access</a>
+  </div>
+</div>
+</body>
+</html>

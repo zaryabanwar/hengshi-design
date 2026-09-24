@@ -1,0 +1,51 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hengshi Design</title>
+<style>
+  html, body { margin: 0; height: 100%; }
+  body { background: var(--hd-surface-canvas); color: var(--hd-text-primary); font-family: var(--font-display); overflow: hidden; }
+  .cover { position: relative; height: 288px; overflow: hidden; }
+  .art { position: absolute; top: 0; left: 480px; width: 480px; height: 288px; overflow: hidden; }
+  .art svg { display: block; width: 480px; height: 288px; }
+  .slab { fill: var(--hd-surface-inverse); }
+  .field { fill: var(--hd-surface-recessed); }
+  .raised { fill: var(--hd-surface-raised); }
+  .mark { fill: var(--hd-status-attention-fill); }
+  .rail { fill: none; stroke-width: 8; stroke-linecap: square; stroke-linejoin: miter; }
+  .rail-cyan { stroke: var(--hd-signal-cyan-on-inverse); }
+  .rail-amber { stroke: var(--hd-signal-amber-on-inverse); }
+  .rail-stone { stroke: var(--hd-surface-recessed); }
+  .words { position: absolute; left: var(--hd-space-6); right: var(--hd-space-6); bottom: var(--hd-space-6); max-width: 440px; }
+  .name { margin: 0; font-size: 96px; line-height: .95; font-weight: 700; letter-spacing: -0.025em; color: var(--hd-text-primary); }
+  .tag { margin: var(--hd-space-2) 0 0 4px; font-family: var(--font-text); font-size: 14px; line-height: 20px; color: var(--hd-text-secondary); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      hd-surface-inverse slab 256x288 bleeding top and bottom (the ink page-within-a-page the identity leads with) · hd-surface-recessed 192x192 bleeding right and bottom (the warm stone field) · hd-surface-raised 192x80 bleeding right (mist relief) · hd-status-attention-fill 64x24 once (amber only ever means attention) · about 45% of 960x288, all square (hd-radius-none)
+  arrangement one tall slab with satellites: a 16px (hd-space-4) gutter between slab and satellites and 16px between the two satellites; the amber tile sits on the stone field
+  pattern     stepped evidence rails, from "a non-diagonal stepped evidence relay shows accountable progression" and "signal glass: narrow emissive inlays only for state and path": three rails at a 48px (hd-space-7) pitch stepping across the slab in hd-signal-cyan-on-inverse, hd-signal-amber-on-inverse and hd-surface-recessed, square caps and mitre joins like the logo relay; no brackets and no checkpoint, which stay the logo's own
+  scales      rail run 32px (hd-space-6), rise 24px (hd-space-5), stroke 8px (hd-space-2); block sides in hd-space-8 and hd-space-9 multiples; amber tile 64x24 (hd-space-8 by hd-space-5); corners hd-radius-none
+-->
+<rect class="slab" x="16" y="0" width="256" height="288"/>
+<rect class="raised" x="288" y="0" width="192" height="80"/>
+<rect class="field" x="288" y="96" width="192" height="192"/>
+<rect class="mark" x="320" y="232" width="64" height="24"/>
+<path class="rail rail-cyan" d="M40 232 H72 V208 H104 V184 H136 V160 H168 V136 H200 V112 H232"/>
+<path class="rail rail-amber" d="M40 184 H72 V160 H104 V136 H136 V112 H168 V88 H200 V64 H232"/>
+<path class="rail rail-stone" d="M40 136 H72 V112 H104 V88 H136 V64 H168 V40 H200 V16 H232"/>
+</svg>
+</div>
+<div class="words">
+  <h1 class="name">Hengshi<br>Design</h1>
+  <p class="tag">Evidence in motion: mineral calm, luminous precision.</p>
+</div>
+</div>
+</body>
+</html>

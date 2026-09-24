@@ -1,0 +1,49 @@
+<!-- @dsCard group="Shell and navigation" height=248 subtitle="The lockup for the current theme, the three mark sizes, and the one-ink forms" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Lockup preview</title>
+<style>
+  html, body { margin: 0; }
+  body { padding: var(--hd-space-4); background: var(--hd-surface-canvas); color: var(--hd-text-primary); font-family: var(--font-text); }
+  .row { display: flex; flex-wrap: wrap; align-items: flex-end; gap: var(--hd-space-5); }
+  .lockup-wide { width: 336px; max-width: 100%; }
+  figure { margin: 0; display: grid; gap: var(--hd-space-2); justify-items: start; }
+  figcaption { font: 500 14px/1.5 var(--font-evidence); color: var(--hd-text-secondary); }
+  .one-ink { margin-top: var(--hd-space-4); }
+  .one-ink .hd-lockup { width: 168px; }
+  [data-theme="dark"] .only-light { display: none; }
+  :root:not([data-theme="dark"]) .only-dark { display: none; }
+</style>
+</head>
+<body>
+<div class="row">
+  <figure>
+    <span class="hd-lockup lockup-wide only-light"><img src="/_blob/88de566467be9a8c09f0b2d95452960f" alt="Hengshi Design"></span>
+    <span class="hd-lockup lockup-wide only-dark"><img src="/_blob/7410622ceee904401585e35bbeb987ad" alt="Hengshi Design"></span>
+    <figcaption>Horizontal lockup · never under 168 CSS px</figcaption>
+  </figure>
+  <figure>
+    <span class="hd-lockup hd-lockup--mark"><img src="/_blob/f1dab0c6d31899d092d5d5c199fc719e" alt=""></span>
+    <figcaption>32 px · master</figcaption>
+  </figure>
+  <figure>
+    <span class="hd-lockup hd-lockup--mark-small"><img src="/_blob/53e01b83a197989790466449fef91d08" alt=""></span>
+    <figcaption>24 px · optical</figcaption>
+  </figure>
+  <figure>
+    <span class="hd-lockup hd-lockup--favicon"><img src="/_blob/85ea9d3ba8625fe879f45070b8c8de69" alt=""></span>
+    <figcaption>16 px · favicon</figcaption>
+  </figure>
+</div>
+<div class="row one-ink">
+  <figure>
+    <span class="hd-lockup"><img src="/_blob/dba89fe486c01f67b3e891b7562905e7" alt="Hengshi Design, one-ink lockup"></span>
+    <figcaption>Mono · 168 px minimum</figcaption>
+  </figure>
+  <figure>
+    <span class="hd-lockup"><img src="/_blob/aabad652892d0acacc114130b80169f7" alt="Hengshi Design, reverse lockup"></span>
+    <figcaption>Reverse · white on black</figcaption>
+  </figure>
+</div>
+</body>
+</html>

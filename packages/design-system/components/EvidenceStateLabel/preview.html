@@ -1,0 +1,45 @@
+<!-- @dsCard group="Content and evidence" height=200 subtitle="All six states: marker, rail and required label" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>EvidenceStateLabel preview</title>
+<style>
+  html, body { margin: 0; }
+  body { padding: var(--hd-space-4); background: var(--hd-surface-canvas); color: var(--hd-text-primary); font-family: var(--font-text); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); gap: var(--hd-space-3) var(--hd-space-5); }
+</style>
+</head>
+<body>
+<div class="grid">
+  <span class="hd-evidence-state hd-evidence-state--verified">
+    <svg class="hd-evidence-state__glyph" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="currentColor"/></svg>
+    <svg class="hd-evidence-state__rail" viewBox="0 0 48 16" aria-hidden="true"><path d="M0 8 H48" stroke="currentColor" stroke-width="3"/></svg>
+    Verified · producer inspection · 2026-07-20
+  </span>
+  <span class="hd-evidence-state hd-evidence-state--demo">
+    <svg class="hd-evidence-state__glyph" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2 L14 8 L8 14 L2 8 Z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+    <svg class="hd-evidence-state__rail" viewBox="0 0 48 16" aria-hidden="true"><path d="M0 8 H48" stroke="currentColor" stroke-width="3" stroke-dasharray="10 4 2 4"/></svg>
+    Hengshi-owned capability demonstration
+  </span>
+  <span class="hd-evidence-state hd-evidence-state--proposed">
+    <svg class="hd-evidence-state__glyph" viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="2" width="12" height="12" fill="currentColor"/></svg>
+    <svg class="hd-evidence-state__rail" viewBox="0 0 48 16" aria-hidden="true"><path d="M0 8 H48" stroke="currentColor" stroke-width="3" stroke-dasharray="8 6"/></svg>
+    Proposed · method under review
+  </span>
+  <span class="hd-evidence-state hd-evidence-state--conditional">
+    <svg class="hd-evidence-state__glyph" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2 L14 14 H2 Z" fill="currentColor"/></svg>
+    <svg class="hd-evidence-state__rail" viewBox="0 0 48 16" aria-hidden="true"><path d="M0 8 H48" stroke="currentColor" stroke-width="3" stroke-dasharray="16 7"/></svg>
+    Review needed · rights not yet cleared
+  </span>
+  <span class="hd-evidence-state hd-evidence-state--unavailable">
+    <svg class="hd-evidence-state__glyph" viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="6" width="12" height="4" fill="currentColor"/></svg>
+    <svg class="hd-evidence-state__rail" viewBox="0 0 48 16" aria-hidden="true"><path d="M0 8 H48" stroke="currentColor" stroke-width="3" stroke-dasharray="2 7"/></svg>
+    Held · see the Trust collection instead
+  </span>
+  <span class="hd-evidence-state hd-evidence-state--error">
+    <svg class="hd-evidence-state__glyph" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 1 H11 L15 5 V11 L11 15 H5 L1 11 V5 Z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+    <svg class="hd-evidence-state__rail" viewBox="0 0 48 16" aria-hidden="true"><path d="M0 5 H48 M0 11 H48" stroke="currentColor" stroke-width="2"/></svg>
+    Error · source unreachable, retry or contact
+  </span>
+</div>
+</body>
+</html>

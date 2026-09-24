@@ -6,6 +6,22 @@ operations.
 
 ## [Unreleased]
 
+### 2026-09-24 — Design system export committed (derived, non-authoritative)
+
+- **`packages/design-system/` added:** tokens, brand book, guideline sections,
+  CSS component layer with static previews, and byte-identical copies of the
+  Framework Relay logo and specimen SVGs, extracted at `989af66` from the Phase 1
+  identity package and mirrored from the Design System artifact
+  (`PACKAGE.md` records provenance and status).
+- **No frozen file changed.** `DESIGN_SYSTEM_IMPLICATIONS.md` and
+  `semantic-tokens.json` are untouched; the export uses their reserved `--hd-*`
+  code names. The semantic aliases in `tokens.json` are **[PROPOSED]** and carry
+  no accepted authority.
+- **R-039 stays open.** The export does not add the stream axis, stream-control
+  component, `DS-S-*` stream tokens, or 3D focus-ring token; it is input to that
+  contract, not the amendment. B01 hold, MA-029, and the CB-06/CB-07 per-call
+  Figma rule are unaffected. Local commit only; nothing pushed.
+
 ### 2026-09-06 — Fourth FAIL round; who defines the model changes (D-044)
 
 - **Both independent re-reviews of the D-043 remediation returned FAIL.** Four FAIL

@@ -1,0 +1,51 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": { "v": 1, "at": "2026-09-23T15:54:21Z" },
+  "title": "Hengshi Design System",
+  "namespace": "HengshiDesign",
+  "libraries": [],
+  "sections": {},
+  "groups": ["Logos", "Specimens"],
+  "assetGroups": {
+    "Logos": {
+      "name": "Logos",
+      "tile": "l",
+      "order": [
+        "logo-framework-relay-primary.svg",
+        "logo-framework-relay-light.svg",
+        "logo-framework-relay-mono.svg",
+        "logo-framework-relay-reverse.svg",
+        "mark-framework-relay.svg",
+        "mark-framework-relay-small.svg",
+        "favicon-framework-relay.svg"
+      ],
+      "files": {
+        "logo-framework-relay-primary.svg": { "name": "logo-framework-relay-primary.svg", "blob": "7410622ceee904401585e35bbeb987ad", "size": 1469, "type": "image/svg+xml" },
+        "logo-framework-relay-light.svg": { "name": "logo-framework-relay-light.svg", "blob": "88de566467be9a8c09f0b2d95452960f", "size": 1357, "type": "image/svg+xml" },
+        "logo-framework-relay-mono.svg": { "name": "logo-framework-relay-mono.svg", "blob": "dba89fe486c01f67b3e891b7562905e7", "size": 1371, "type": "image/svg+xml" },
+        "logo-framework-relay-reverse.svg": { "name": "logo-framework-relay-reverse.svg", "blob": "aabad652892d0acacc114130b80169f7", "size": 1316, "type": "image/svg+xml" },
+        "mark-framework-relay.svg": { "name": "mark-framework-relay.svg", "blob": "f1dab0c6d31899d092d5d5c199fc719e", "size": 1074, "type": "image/svg+xml" },
+        "mark-framework-relay-small.svg": { "name": "mark-framework-relay-small.svg", "blob": "53e01b83a197989790466449fef91d08", "size": 1070, "type": "image/svg+xml" },
+        "favicon-framework-relay.svg": { "name": "favicon-framework-relay.svg", "blob": "85ea9d3ba8625fe879f45070b8c8de69", "size": 981, "type": "image/svg+xml" }
+      }
+    },
+    "Specimens": {
+      "name": "Specimens",
+      "tile": "l",
+      "order": ["icon-data-specimen.svg", "og-evidence-in-motion.svg"],
+      "files": {
+        "icon-data-specimen.svg": { "name": "icon-data-specimen.svg", "blob": "9c5b83233b6a9a9eca7a8188b8b6ac80", "size": 4267, "type": "image/svg+xml" },
+        "og-evidence-in-motion.svg": { "name": "og-evidence-in-motion.svg", "blob": "ad75907a1647d465cece4313f168cf78", "size": 1973, "type": "image/svg+xml" }
+      }
+    }
+  },
+  "blobs": {},
+  "docs": { "readme": "project/README.md", "sections": [] },
+  "lastChange": {
+    "by": "Zaryab Anwar",
+    "at": "2026-09-23T16:08:00Z",
+    "via": "Claude Code",
+    "note": "Created from zaryabanwar/hengshi-design@989af66: 54 colours in two themes, 13 type styles, 9 spacing steps, 4 radii, 7 CSS components, 9 logo and specimen assets"
+  }
+}
