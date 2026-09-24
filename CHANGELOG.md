@@ -6,6 +6,25 @@ operations.
 
 ## [Unreleased]
 
+### 2026-09-24 — R-039 amendment applied to the frozen baseline and verified; R-039 closed
+
+- **Applied at `c07e455`:** the fourteen insertions of the accepted amendment
+  entered `DESIGN_SYSTEM_IMPLICATIONS.md` verbatim (+178/−7), `INS-01` pins the
+  accepted revision (`cf455db`) per review-2 DSB-02, and
+  `design-system-freeze-hash` moved from `0E9FC68C…B763` to `1893D026…8B81`
+  with provenance comments in the validator. The amendment carries a Revision 3
+  row for the DSB-01 heading fix.
+- **Independently verified** (`reviews/design-system-amendment-r-039-application-verification.md`):
+  PASS, no finding. Validators: design 208/0, production 167/0, UX architecture
+  113/0, foundation PASS, stream-mapping tests 987 checks. R-039 `closed`; the
+  task row `complete`.
+- **Observations recorded, not fixed:** the frozen `validation-report.md` states
+  `PASS_COUNT=201` while the validator has returned 208 since before this work
+  (only the `COUNTS` line is asserted); and five package CSVs are CRLF or mixed in
+  the working tree against LF blobs with `core.autocrlf=true` and no
+  `.gitattributes`, so the pinned `component-primitives-freeze-hash` is of
+  non-canonical bytes and a fresh checkout would fail it. Logged as **R-042**.
+
 ### 2026-09-24 — R-039 amendment authored, reviewed twice and accepted (D-047)
 
 - **Amendment authored** under the D-046 contract by an agent independent of the
