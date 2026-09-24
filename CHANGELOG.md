@@ -17,8 +17,14 @@ operations.
   New design aggregate `631324D0…3EBF`.
 - **Validators before the commit:** UX 113/0, foundation PASS, stream tests 987
   checks; design and production each failed only their `git-write-scope` guard
-  on the uncommitted root file, which clears at the commit. R-042 `in_progress`
-  pending independent verification.
+  on the uncommitted root file, which clears at the commit. After the commit:
+  design 208/0, production 167/0.
+- **Independently verified** (`reviews/r-042-treatment-verification.md`): PASS,
+  no finding; the exit test passed, a fresh local clone under `core.autocrlf=true`
+  running the design validator unchanged at 208/0. R-042 `closed`.
+- **R-043 logged** (`awaiting_human`): in that same clone the production
+  validator fails 156/11 and the UX-architecture validator 107/6, both outside
+  the D-048 rules; same treatment shape, its own founder decision.
 
 ### 2026-09-24 — R-039 amendment applied to the frozen baseline and verified; R-039 closed
 
