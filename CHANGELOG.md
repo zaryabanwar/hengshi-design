@@ -6,6 +6,20 @@ operations.
 
 ## [Unreleased]
 
+### 2026-09-24 — R-042 line-ending freeze fragility treated (D-048)
+
+- **`.gitattributes` added** at the root: `text eol=lf` for the design package's
+  `*.md`, `*.csv`, `*.ps1` and `*.json` and for `scripts/validation/**/*.ps1`; no
+  repository-wide rule. Five package CSVs normalized to their LF blobs with no
+  content change; `component-primitives-freeze-hash` re-pinned from
+  `EF0DE11B…9C78` (CRLF working copy) to `575D1478…034A` (canonical bytes) with
+  provenance; the frozen report's `PASS_COUNT` and two file counts refreshed.
+  New design aggregate `631324D0…3EBF`.
+- **Validators before the commit:** UX 113/0, foundation PASS, stream tests 987
+  checks; design and production each failed only their `git-write-scope` guard
+  on the uncommitted root file, which clears at the commit. R-042 `in_progress`
+  pending independent verification.
+
 ### 2026-09-24 — R-039 amendment applied to the frozen baseline and verified; R-039 closed
 
 - **Applied at `c07e455`:** the fourteen insertions of the accepted amendment

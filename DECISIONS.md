@@ -266,3 +266,45 @@ Figma MCP call, external write, implementation of the control in application
 code, publication, deployment, or push. R-035 to R-038, R-040 and R-041 are
 unchanged.
 
+## D-048 — R-042 line-ending freeze fragility treated
+
+**Date:** 2026-09-24
+**Status:** accepted
+**Supersedes:** nothing
+**Authority for:** a root `.gitattributes` scoped to the design package and
+`scripts/validation`; normalization of five design-package CSVs to their LF blob
+bytes; re-pinning `component-primitives-freeze-hash` on canonical bytes;
+refreshing three stale counts in the frozen validation report
+
+The founder approved this treatment on 2026-09-24 in four click-based gates
+presented in the Claude Code session: start the treatment; clear the index size
+cache with `git checkout` of the five CSVs; update the count line and the two
+spelled-out file counts in the report; include the directory of the fourteenth
+freeze file in the attribute rules; then record and commit.
+
+**What changed.** `.gitattributes` (new, root) declares `text eol=lf` for
+`*.md`, `*.csv`, `*.ps1` and `*.json` under `docs/phase-1-ui-reference-design/`
+and for `*.ps1` under `scripts/validation/`; no repository-wide rule, no binary
+declared as text. The working copies of `component-primitives.csv`,
+`design-batch-plan.csv`, `foundation-flow-coverage.csv`,
+`foundation-route-coverage.csv` and `traceability.csv` were normalized to LF and
+are byte-identical to their committed blobs, so no CSV content changed.
+`$expectedPrimitiveHash` moved from `EF0DE11B…9C78` (a hash of the CRLF working
+copy) to `575D1478…034A` (the LF blob), with provenance comments.
+`validation-report.md` line 22 now reads `PASS_COUNT=208`, and its two prose
+counts of required freeze files read fourteen. The emitted design freeze
+aggregate is `631324D0498B695B016CF7D5B052DC491C95F28D7D9B6AE88BA44EB363FE3EBF`.
+
+**Validators before the commit.** UX architecture 113/0; foundation PASS;
+stream-mapping tests 987 checks PASS; design 207/1 and production 166/1, each
+failing only its `git-write-scope` guard on the uncommitted root
+`.gitattributes`. Both guards read uncommitted changes only, so they clear at
+this commit; the post-commit rerun belongs to the independent verification.
+
+**What this decision does not do.** It does not touch
+`DESIGN_SYSTEM_IMPLICATIONS.md`, the content of any CSV, any validator assertion,
+or any other package. R-042 moves to `in_progress` pending independent
+verification; its exit evidence is a clean checkout passing the design validator
+unchanged. B01, MA-029, CB-06, CB-07 and the twelve amendment gates are
+unchanged.
+

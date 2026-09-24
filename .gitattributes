@@ -1,0 +1,7 @@
+# R-042: the phase-1 UI reference-design package is freeze-hashed on raw bytes.
+# Path-scoped, per-extension rules only; no repository-wide rule; no binary declared as text.
+docs/phase-1-ui-reference-design/**/*.md text eol=lf
+docs/phase-1-ui-reference-design/**/*.csv text eol=lf
+docs/phase-1-ui-reference-design/**/*.ps1 text eol=lf
+docs/phase-1-ui-reference-design/**/*.json text eol=lf
+scripts/validation/**/*.ps1 text eol=lf

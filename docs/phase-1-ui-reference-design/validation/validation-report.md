@@ -19,7 +19,7 @@ pwsh -NoProfile -File docs/phase-1-ui-reference-design/validation/validate-ui-re
 
 ```text
 COUNTS routes=34 exclusions=9 wayfinding=15 actions=53 ux_tests=46 flow_families=12 source_experience_ids=32 flow_rows=89 templates=40 primary_template_owners=40 route_template_refs=19 flow_template_refs=29 profiles=36 browser_profiles=1 time_limit_profiles=4 primitives=62 batches=9 primary_source_owners=155 trace_rows=287 package_csv=7 package_json=0
-RESULT=PASS PASS_COUNT=201 FAIL_COUNT=0
+RESULT=PASS PASS_COUNT=208 FAIL_COUNT=0
 ```
 
 ## What this report is not
@@ -201,7 +201,7 @@ Recorded because the reviewers named them, not because they are resolved:
   list ages silently.
 - **The design system has no stream axis, and the file that would carry it was
   deliberately left untouched.** `DESIGN_SYSTEM_IMPLICATIONS.md` is one of the
-  thirteen hash-pinned freeze files. It declares no stream axis, no stream-control
+  fourteen hash-pinned freeze files. It declares no stream axis, no stream-control
   component, no four stream tokens, and no 3D focus-ring token, so nothing in the
   design system yet expresses the axis this run made normative everywhere else. The
   founder's decision (gate G-6) was to **record the gap now and commission the
@@ -227,7 +227,7 @@ producer.**
 
 ## Freeze hashing
 
-The validator emits one SHA-256 for each of the 13 required files and a single
+The validator emits one SHA-256 for each of the 14 required files and a single
 aggregate. It sorts relative forward-slash paths, formats each entry as uppercase
 SHA-256, two spaces, then path, joins entries with LF and no terminal newline, and
 hashes that UTF-8 no-BOM payload. The final command output is the authoritative
