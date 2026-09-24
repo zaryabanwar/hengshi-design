@@ -334,7 +334,7 @@ G-6 and R-039. It is specified against the anatomy `PRIM-001` already records.
   accessible name on every route (`OBL-CTRL-03`; 3.2.3 and 3.2.4 are the
   criteria at stake). It is not canvas-only in any stream (`PRIM-043`).
 
-### 3.2 Anatomy, in DOM reading order and visual order
+### 3.2 Anatomy, in `PRIM-001` record order, and the order constraints
 
 The anatomy is `PRIM-001`'s, quoted from `required_anatomy` in the order that
 record lists it:
@@ -1178,3 +1178,4 @@ record were not touched.
 | DSA-09 (LOW) | Resolved | `INS-10` now reads "per rendered state and per stream", so the hint `search "per stream"` matches the inserted text literally (995). |
 | V-11 (reviewer note, not a finding) | Adopted | UG-11 extended to cover the freeze §2.4 and §4 mode-axis wording that `INS-05` and `INS-09` sit beside (1114). |
 | Header | — | Date line bumped to "Revision 2, 2026-09-24" (17); the review record and the `Import-Csv` matrix read added to Inputs (31, 50). |
+| **Revision 3 (application, 2026-09-24)** | Applied | Applying slice under UG-9 after acceptance at D-047 (2026-09-24) of revision 2 (commit cf455db9d0fc5fc285ea2153d3d924f1d7afa332; SHA-256 61b924951ff955faa16ae067ba9baf2e0a0f7987f91df5f907f42cda4fe0e9ea). DSB-01 (LOW): §3.2 heading retitled "Anatomy, in `PRIM-001` record order, and the order constraints" (337); the list and the constraint sentence are unchanged. DSB-02 (LOW): the first option of review 2 taken; the applied `INS-01` line in `DESIGN_SYSTEM_IMPLICATIONS.md` fills the two `[GATED]` placeholders (2026-09-24; D-047) and pins the accepted revision by commit and SHA-256, so the A-2 and A-4 citations applied by `INS-04`, `INS-08` and `INS-09` resolve to that pinned revision; `INS-02` to `INS-14` applied as written. The pin names revision 2 as committed; this revision changes only the §3.2 heading and this row. |

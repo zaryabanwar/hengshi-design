@@ -2,6 +2,14 @@
 
 **Evidence date:** 2026-09-03
 **Amended:** 2026-09-06 under D-042 and D-043 (CR-002 revision window). The 2026-09-03 producer freeze date above is retained as provenance and is not restated as current; the delivery stream axis, the ACT-09 stream control, and the peer-framing renames were added after it.  
+**Amended (R-039):** 2026-09-24 under D-046 and D-047, applying
+`DESIGN_SYSTEM_AMENDMENT_R-039.md` at its accepted revision 2 (commit
+`cf455db9d0fc5fc285ea2153d3d924f1d7afa332`; SHA-256
+`61b924951ff955faa16ae067ba9baf2e0a0f7987f91df5f907f42cda4fe0e9ea`; accepted at
+D-047 on 2026-09-24):
+adds the delivery-stream axis, the four stream tokens, the delivery stream
+control component, and the focus-ring tokens including the 3D focus ring. No
+inherited identity value, primitive ID, route, flow or state profile changed.
 **Status:** Definition contract; producer revision 3 of 3; accessibility correction only
 **Authority:** D-025, D-026, D-035, and D-036
 **Implementation status:** Blocked
@@ -68,6 +76,15 @@ The following boundaries are absolute for this contract:
   `PRIM-001` through `PRIM-062`. A reference template or flow that cannot be
   composed from those records must stop and propose a new, reviewed primitive;
   it must not hide the gap in a one-off screen component or invented product fact.
+- **Delivery-stream axis:** the four peer delivery streams `S-HIGH`,
+  `S-MEDIUM`, `S-LOW` and `S-SEMANTIC` (D-039; `FR-3D-011`) are a design-system
+  dimension: a required verification context (§2.4), a semantic token family
+  (§2.3), and a component property of the delivery stream control (§3.4). The
+  streams are peers carrying equivalent core journeys; `S-SEMANTIC` is a
+  first-class product surface served from first paint to clients without a
+  WebGL context and selectable by any visitor (`NFR-A11Y-003`). The stream in
+  force never decides whether the World canvas is entered (D-045;
+  `FR-3D-015`).
 
 ### 1.2 Normative accessibility and browser-support profiles
 
@@ -151,6 +168,14 @@ all combinations. Every later semantic alias, component state, overlay, and
 adjacent-color combination needs its own contrast evidence. Opacity, glow, blur,
 or material appearance cannot repair insufficient contrast.
 
+The delivery-stream axis adds no identity source token and changes no value
+above. The stream tokens and the focus-ring tokens are semantic aliases (§2.3)
+that consume identity values only through the alias layer. The identity
+source's declared pairing of `color.signal.cyan.onDark` on `color.ink`
+(10.86:1; declared use: text, focus, icons, graphics) is a test input for focus
+pairings in every stream and an approval in none. Every pairing in the mapping
+ledger records the delivery stream in which it was measured (§5).
+
 ### 2.3 Semantic UI aliases still to be specified
 
 The later visual-reference producer must resolve these token families and record
@@ -162,13 +187,15 @@ No value is selected by this document.
 | `semantic.surface.{canvas,raised,recessed,inverse,overlay}` | `--hd-surface-*` | Exact dark/light surface pairing and overlay opacity |
 | `semantic.text.{primary,secondary,inverse,muted,link}` | `--hd-text-*` | Role-specific contrast and unavailable-font behavior |
 | `semantic.border.{subtle,strong,interactive}` | `--hd-border-*` | Adjacent-color contrast and forced-colors mapping |
-| `semantic.focus.{ring,offset}` | `--hd-focus-*` | Thickness, offset, clipping prevention, and surface pairings |
+| `semantic.focus.{ring,ring-width,offset}` | `--hd-focus-*` | Colour, thickness, offset, clipping prevention, and surface pairings, measured per delivery stream; the 2D ring is the `S-SEMANTIC` equivalent of the scene ring |
 | `semantic.action.{primary,secondary,quiet,destructive}.{foreground,background,border}.{base,hover,focus-visible,pressed,disabled}` | `--hd-action-*` | All interactive state pairings; amber must not be inferred as destructive |
 | `semantic.field.{background,border,text,label,hint,error,success,disabled}` | `--hd-field-*` | Input and validation contrast, autofill, high-contrast, and read-only treatment |
 | `semantic.status.{information,attention,verified,demo,proposed,held,error,pending}` | `--hd-status-*` | Alias to the frozen redundant evidence/status grammar without conflating states |
 | `semantic.loading.{skeleton,progress,placeholder}` | `--hd-loading-*` | Reduced-motion behavior and preserved-content treatment |
 | `semantic.elevation.{panel,dialog,drawer}` | `--hd-elevation-*` | Boundaries must survive without shadow, transparency, or depth |
 | `semantic.data.{axis,grid,label,series,missing,target,interval}` | `--hd-data-*` | Exact series alias, direct labels, grayscale, table equivalent, and uncertainty treatment |
+| `semantic.stream.{high,medium,low,semantic}.{id,profile,evidence-token,label,presentation,canvas}` | `--hd-stream-*` | Exact visible label copy per stream in peer vocabulary (gated public copy); the token carries the stream identifier, the `DS-S-*` evidence profile, the `EC-08` `STREAM_*` token, the style guide §8.2 presentation text and the canvas fact, and never a raw rendering value, a U-03 tier boundary, an ordering, a mode value or an availability |
+| `semantic.focus.scene.{ring,ring-width,offset,layer,contrast-floor,motion}` | `--hd-focus-scene-*` | The focus ring for WebGL hotspots and HUD controls in `S-HIGH`, `S-MEDIUM` and `S-LOW`: width 3 px and a 3:1 floor against every adjacent scene colour (style guide §4.1; `NFR-A11Y-005`), rendered above `semantic.elevation.panel` so no part is obscured; ring colour, offset and the adjacency sampling method remain gated; resolves to `semantic.focus.*` in `S-SEMANTIC` (recorded assumption A-4 of `DESIGN_SYSTEM_AMENDMENT_R-039.md`) |
 | `component.*` | `--hd-{component}-{variant}-{state}-{property}` | Created only after semantic aliases and component anatomy are approved |
 
 ### 2.4 Naming and lifecycle rules
@@ -189,6 +216,13 @@ No value is selected by this document.
 - Dark and light are controlled surface pairings. Forced colors, grayscale,
   reduced motion, low power, non-WebGL, print, unavailable font, and unavailable
   asset are required verification contexts, not optional decorative themes.
+- The four delivery streams `S-HIGH`, `S-MEDIUM`, `S-LOW` and `S-SEMANTIC` are
+  required verification contexts, each verified separately: a pairing, state or
+  rendering verified in one stream is not verified in another. The stream axis
+  uses the role `stream` with the variant values `high`, `medium`, `low` and
+  `semantic` (`hd/semantic/stream/{variant}/{property}`;
+  `--hd-stream-{variant}-{property}`), and the primitive variant values
+  `stream-high`, `stream-medium`, `stream-low` and `stream-semantic`.
 
 ## 3. Primitive and component contract
 
@@ -203,12 +237,12 @@ primitive is composed from several implementation components.
 
 | Category | Responsibility |
 |---|---|
-| Shell and navigation | Landmarks, skip paths, primary navigation, breadcrumbs, directory/search, canonical location, and safe exclusions |
+| Shell and navigation | Landmarks, skip paths, primary navigation, breadcrumbs, directory/search, canonical location, safe exclusions, and the delivery stream control (`HD/Shell and navigation/Delivery stream control`; code `DeliveryStreamControl`; hosted by `PRIM-001` in every stream; §3.4) |
 | Content and evidence | Collection/detail structure, services, industries, Work/Demos separation, evidence labels, sources, Trust, and entity identity |
 | Actions and input | CTA/link/button behavior, fields, selection, consent, validation, error summary, and contact |
 | AI and handoff | Transparent AI identity, transcript/composer, sources, refusal/cannot-verify, human availability, durable handoff, and media opt-in |
 | Booking | Qualification, verification, availability, slot, review, pending, confirmation, reschedule/cancel, and reconciliation |
-| Overlay and immersive | Dialog, drawer, panel, onboarding, HUD, exit, Quick Access, and asset/device recovery |
+| Overlay and immersive | Dialog, drawer, panel, onboarding, HUD, exit, Quick Access, asset/device recovery, and the delivery stream control re-hosted by `PRIM-042`, `PRIM-043` and `PRIM-044` in the World streams (§3.4) |
 | Media and data | Player controls, captions/transcript/description inventory, charts, tables, and responsive lists |
 | Staff and publication | Staff shell, availability, queues, work item, candidate/version/checksum, decisions, release state, and audit |
 | System feedback and access | Authentication, session/permission, notification/live region, loading, empty, offline, error, and recovery |
@@ -252,6 +286,88 @@ and a redundant non-color cue such as shape, line, icon, boundary, position, or
 pattern. Status semantics must not steal focus; dialogs, error summaries, and
 deliberate navigation may move focus under their own contract.
 
+The delivery stream control (§3.4) adds the transactional states
+`stream-in-force` and `stream-pending`, reported respectively by the group
+accessible name and by the checked radio, and four frame states whose homes
+are the state profiles of `responsive-state-mode-matrix.csv`, which governs
+this list through its `required_values` and `critical_distinct_frame_values`
+columns: `STATE-STREAM-CHANGED` and `STATE-PREFERENCE-WRITE-FAILED` on
+`SP-PUBLIC-DOCUMENT`, `SP-PUBLIC-COLLECTION`, `SP-PUBLIC-DETAIL`,
+`SP-EVIDENCE-COLLECTION`, `SP-EVIDENCE-DETAIL`, `SP-NAVIGATION`,
+`SP-FIRST-VISIT`, `SP-RETURN-VISIT`, `SP-WORLD`, `SP-AI`, `SP-HANDOFF-MEDIA`,
+`SP-BOOKING`, `SP-CONTACT` and `SP-SYSTEM-RECOVERY`;
+`STATE-PREFERENCE-READ-FAILED` on `SP-NAVIGATION`, `SP-FIRST-VISIT` and
+`SP-RETURN-VISIT` only; `STATE-STREAM-CEILING-REFUSED` on `SP-NAVIGATION` and
+`SP-WORLD` only; and all four as `critical_distinct_frame_values` of
+`DS-S-HIGH`, `DS-S-MEDIUM`, `DS-S-LOW` and `DS-S-SEMANTIC`. Pending never looks
+or reads as applied, and the control never reports a stream the visitor did not
+apply.
+
+### 3.4 Delivery stream control component
+
+Design component set `HD/Shell and navigation/Delivery stream control`; code
+component `DeliveryStreamControl`; anatomy owned by `PRIM-001` and re-hosted by
+`PRIM-042`, `PRIM-043` and `PRIM-044`; no new primitive ID. Authority: D-045
+resolutions 1, 3 and 6; `FR-3D-013` to `FR-3D-016`; `NFR-A11Y-004`; style guide
+§8.2.4 to §8.2.6; `OBL-CTRL-01` to `OBL-CTRL-06`, `OBL-ADV-01`, `OBL-ANN-01`,
+`OBL-BND-01` to `OBL-BND-04`, `OBL-STATE-01` to `OBL-STATE-05`; `UXTEST-046`.
+
+- **Anatomy:** `fieldset`; `legend` naming the delivery stream control and the
+  in-force stream; four native radio inputs sharing one name, one per stream;
+  persistent visible advisement inside the fieldset, before Apply in DOM
+  reading order and visual order (its placement relative to the radios is
+  recorded assumption A-2 of `DESIGN_SYSTEM_AMENDMENT_R-039.md`, not a source
+  constraint); separate, always-present Apply submit button. The host's page
+  status region carries the announcement and exists, empty, before any message
+  is written into it.
+- **Activation:** moving among the radios by arrow, Tab, pointer or touch
+  changes only the checked state. The stream applies only on explicit Apply
+  activation by Enter, Space, pointer or touch, or native Enter submission of
+  the same form to that button; never on focus, selection, blur, arrow movement
+  or timeout. A select applying on change, and any listbox, combobox, menu or
+  radio group applying on selection, are prohibited.
+- **Names:** the group name identifies the control and reports the in-force
+  stream until submit; the checked radio reports the pending selection
+  independently; Apply's name states that it applies the selection and differs
+  from the group and radio names; radio labels use the peer stream vocabulary
+  carried by `--hd-stream-*-label`, with none of the label words `NFR-A11Y-004`
+  prohibits. Exact public copy is gated.
+- **Advisement:** visible text inside the fieldset before Apply in DOM and
+  visual order, identical wording in every stream, programmatically associated
+  with both the fieldset and Apply; never tooltip, title, hover-only,
+  focus-only or description-only.
+- **Announcement:** a polite message in the page status region without moving
+  focus within a shell. Across the semantic boundary: the outgoing shell leaves
+  the accessibility tree; the incoming shell and its empty status region are
+  added; focus moves to the destination control, visibly indicated and
+  reporting the new stream; the announcement names the new stream and the
+  arrival location; in a World destination the canvas is added only after the
+  incoming shell is announced. Booking process state survives every crossing or
+  the change is refused and explained under the `ACT-11` pattern.
+- **Presence:** on every route in every stream, in the same position under the
+  same name, reachable without a canvas and without traversing main content; on
+  `ROUTE-HOME`'s first frame in every stream with the canvas not entered; in
+  `S-SEMANTIC` in the utility navigation, reachable through the narrow
+  disclosure at 320 CSS px. Radios above the WebGL ceiling remain present and
+  disabled with a textual reason stated as a fact about the client, never
+  hidden and never distinguished by colour or dimming alone.
+- **States:** the five pseudo-states of §3.3 on each radio and on Apply, with
+  hover and pressed pairings still to be decided; the transactional states of
+  §3.3 as amended, each with visible text and a non-colour cue.
+- **Keyboard and focus:** one tab stop into the group, arrows among the radios,
+  Apply a separate tab stop; the control binds nothing to Escape;
+  focus-visible on each radio and on Apply uses `semantic.focus.*` on a
+  semantic shell and `semantic.focus.scene.*` in the HUD, measured per stream
+  and never obscured by the HUD panel; targets at least 24 by 24 CSS px per
+  stream.
+- **Modes:** 320 CSS px, 400% zoom (advisement still before Apply, unclipped),
+  text spacing, forced colors (checked, in-force, focus and unavailable state
+  distinguishable without authored colour), grayscale, reduced motion,
+  unavailable font and image.
+- **Tokens:** `component.delivery-stream-control.*`
+  (`--hd-delivery-stream-control-{variant}-{state}-{property}`) reference
+  semantic aliases only.
+
 ## 4. Responsive, input, and mode obligations
 
 - Use the inherited 12/6/4-column model, but choose exact breakpoints only from
@@ -277,6 +393,20 @@ deliberate navigation may move focus under their own contract.
 - Forced colors and grayscale preserve focus, boundary, current/selected state,
   evidence status, error/success distinction, and data-series identity without
   depending on color or shadow.
+- Every obligation in this section is verified within each delivery stream
+  separately (`S-HIGH`, `S-MEDIUM`, `S-LOW`, `S-SEMANTIC`); evidence names its
+  stream and is never inherited across streams.
+- At 320 CSS px in `S-SEMANTIC`, the delivery stream control is reachable
+  through the narrow navigation disclosure; that reachability is evidenced in
+  `S-SEMANTIC` specifically.
+- In forced colors, the delivery stream control's checked radio, in-force
+  stream, focus indicator and unavailable-option state remain distinguishable
+  without authored colour.
+- In the World streams, the focus ring for hotspots and HUD controls
+  (`semantic.focus.scene.*`) renders above the HUD's translucent panel and every
+  sticky element, so no focused control is obscured; in `S-SEMANTIC` no canvas
+  and no HUD exist and the ordinary ring applies (recorded assumption A-4 of
+  `DESIGN_SYSTEM_AMENDMENT_R-039.md`).
 
 ## 5. Accessibility and behavior contract
 
@@ -306,12 +436,30 @@ deliberate navigation may move focus under their own contract.
   audio-description obligation at the WCAG 2.2 Level AA target. Audio-only content has a
   transcript; offered live synchronized media has live captions. Missing required
   alternatives hold media only, not semantic content or Book.
-- Contrast is checked per rendered state: normal text at least 4.5:1; large text
-  only under its valid size/weight rule; focus and meaningful non-text boundaries
-  at least 3:1. The identity pairings do not waive component-level testing.
+- Contrast is checked per rendered state and per stream: normal text
+  at least 4.5:1; large text only under its valid size/weight rule; focus and
+  meaningful non-text boundaries at least 3:1. Every contrast, focus-order and
+  target-size measurement, and every other verification context in §2.4, is
+  taken within one named stream (`S-HIGH`, `S-MEDIUM`, `S-LOW` or `S-SEMANTIC`)
+  against that stream's own rendering and is never inherited by another stream;
+  aggregate evidence that names no stream, or another stream, discharges no
+  per-stream obligation (`NFR-A11Y-002`). The identity pairings do not waive
+  component-level testing in any stream.
 - No accessible label, role, state, route title, evidence class, or recovery
   instruction may exist only inside canvas, imagery, audio, motion, tooltip, or
   hover.
+- The delivery stream control (§3.4) is operable by keyboard in every stream
+  with native radio-group semantics and a separate Apply tab stop; selection
+  never applies a stream; it binds nothing to Escape; its visible advisement
+  precedes Apply and reaches sighted mouse, sighted keyboard, screen-reader and
+  400%-zoom users before operation.
+- A stream change is announced politely in a status region that already exists
+  empty; within a shell focus does not move; across the semantic boundary focus
+  moves to the destination shell's delivery stream control, visibly indicated,
+  and the announcement names the new stream and the arrival location.
+- Focus indicators use `semantic.focus.*` on semantic shells and
+  `semantic.focus.scene.*` for WebGL hotspots and HUD controls, at least 3:1
+  against every adjacent surface or scene colour in each stream's own rendering.
 
 ## 6. Required content stress cases
 
@@ -372,7 +520,7 @@ independent design and accessibility review:
 4. Coverage evidence for all 34 canonical routes, nine exclusion classes,
    15 wayfinding entries, AF-01/AF-02, BF-01A through BF-01E, DF-01, PF-01,
    SOF-01A through SOF-01M, CF-01, FV-01, RV-01, ACT-01 through ACT-53, and
-   UXTEST-001 through UXTEST-045.
+   UXTEST-001 through UXTEST-046.
 5. Responsive captures and annotations for narrow, medium, and wide layouts;
    320 CSS px; 400% zoom; text spacing; long-content fixtures; landscape mobile;
    and genuinely two-dimensional data behavior.
@@ -382,6 +530,10 @@ independent design and accessibility review:
 7. Contrast calculations for every rendered state and adjacent surface, plus
    forced-colors, grayscale, unavailable-font/image, reduced-motion, low-power,
    offline, and non-WebGL evidence.
+   Every calculation is taken in each of the four delivery streams separately,
+   against that stream's own rendering, and each evidence ID carries its
+   `EC-08` `STREAM_*` token. A calculation from one stream is never inherited
+   by another.
 8. Screen-reader semantics for landmarks, headings, lists, source citations,
    state labels, tables, form relationships, status announcements, and
    permission-denied behavior.
@@ -405,6 +557,25 @@ independent design and accessibility review:
     permitted-data and authoritative-state preservation, and accessible
     reauthentication. An exception record must contain the criterion-supported
     rationale, affected flow, fallback, and independent-review acceptance.
+15. Delivery stream control evidence per `B01.required_visual_evidence`: one
+    frame per stream showing the control reporting that stream as in force in
+    its accessible name, reachable without a canvas; the visible advisement in
+    `focus-visible` at `VP-DESKTOP` in `S-SEMANTIC`; `VP-320` reachability
+    through the narrow disclosure in `S-SEMANTIC`; the forced-colors capture in
+    `S-SEMANTIC`; `STATE-STREAM-CHANGED` and `STATE-PREFERENCE-WRITE-FAILED` on
+    `TPL-GLOBAL-NAVIGATION` in each stream; the boundary frame annotated with
+    the five-step tree ordering; and `UXTEST-046` execution evidence for names,
+    associations and activation, which screenshots alone cannot establish.
+16. Focus-ring evidence per stream: a `focus-visible` frame of the delivery
+    stream control in each stream with nothing obscuring the indicator; the
+    hotspot focus frame and HUD annotation on `TPL-WORLD-SHELL` and
+    `TPL-WORLD-HUD` showing `semantic.focus.scene.*` above the translucent
+    panel; and the scene adjacency sampling method, once decided, applied to
+    each World stream.
+17. Mapping-ledger rows for `semantic.stream.*`, `semantic.focus.*`,
+    `semantic.focus.scene.*` and `component.delivery-stream-control.*`, each
+    recording the design path, the code token, the source path, and the stream
+    in which every pairing was measured.
 
 After those records pass review, founder approval is still required for the exact
 visual direction. Breaking token changes, material brand/product tradeoffs,
