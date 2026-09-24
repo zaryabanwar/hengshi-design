@@ -1,0 +1,40 @@
+<!-- @dsCard group="Shell and navigation" height=352 subtitle="Fieldset, legend with the in-force stream, four native radios, visible advisement, separate Apply; illustrative copy" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>DeliveryStreamControl preview</title>
+<style>
+  html, body { margin: 0; }
+  body { padding: var(--hd-space-4); background: var(--hd-surface-canvas); color: var(--hd-text-primary); font-family: var(--font-text); }
+  form { max-width: 36rem; }
+  .note { margin: var(--hd-space-3) 0 0; font: 500 14px/1.5 var(--font-evidence); color: var(--hd-text-secondary); }
+  [role="status"] { margin-top: var(--hd-space-2); min-height: 1.5em; line-height: 1.5; }
+</style>
+</head>
+<body>
+<form id="stream-form">
+  <fieldset class="hd-stream-control" aria-describedby="stream-advisement">
+    <legend class="hd-stream-control__legend">Delivery stream control <span id="in-force">(in force: S-LOW)</span></legend>
+    <ul class="hd-stream-control__options">
+      <li class="hd-stream-control__option"><input type="radio" id="stream-high" name="stream" value="S-HIGH" disabled><label for="stream-high">S-HIGH</label> <span class="hd-stream-control__reason">Not available on this client: no WebGL context reported.</span></li>
+      <li class="hd-stream-control__option"><input type="radio" id="stream-medium" name="stream" value="S-MEDIUM"><label for="stream-medium">S-MEDIUM</label></li>
+      <li class="hd-stream-control__option"><input type="radio" id="stream-low" name="stream" value="S-LOW" checked><label for="stream-low">S-LOW</label></li>
+      <li class="hd-stream-control__option"><input type="radio" id="stream-semantic" name="stream" value="S-SEMANTIC"><label for="stream-semantic">S-SEMANTIC</label></li>
+    </ul>
+    <p class="hd-stream-control__advisement" id="stream-advisement">Choosing a stream and applying it re-enters the chosen stream at this location. Nothing changes until you apply.</p>
+    <button class="hd-button hd-button--secondary hd-stream-control__apply" type="submit" aria-describedby="stream-advisement">Apply the selected stream</button>
+  </fieldset>
+  <div role="status" aria-live="polite" id="stream-status"></div>
+  <p class="note">Illustrative copy: label, legend, advisement, reason and announcement wording are gated (UG-3). Radio labels here show the stream identifiers.</p>
+</form>
+<script>
+  var form = document.getElementById("stream-form");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var chosen = form.querySelector("input[name=stream]:checked");
+    if (!chosen) { return; }
+    document.getElementById("in-force").textContent = "(in force: " + chosen.value + ")";
+    document.getElementById("stream-status").textContent = "Delivery stream applied: " + chosen.value + ". You are at the same location.";
+  });
+</script>
+</body>
+</html>

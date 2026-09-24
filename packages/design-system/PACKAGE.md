@@ -5,8 +5,8 @@ Status: derived, non-authoritative. Extracted 2026-09-23 from the Phase 1 identi
 ## Authority
 
 - The identity source layer (`hd-color-*`, type roles, spacing, radius, stroke, layout) copies `docs/phase-1-brand-identity/semantic-tokens.json` and `visual-boards/identity-board.css` exactly, using the reserved code names from `docs/phase-1-ui-reference-design/DESIGN_SYSTEM_IMPLICATIONS.md` section 2.2.
-- The semantic aliases (`hd-surface-*`, `hd-text-*`, `hd-border-*`, `hd-focus-*`, `hd-action-*`, `hd-status-*`, `hd-data-series-*`) are **[PROPOSED]** resolutions of the families section 2.3 leaves unspecified. They carry no accepted authority, do not amend the freeze file, and are input to the R-039 design-system amendment contract (D-045 gate G-6), not a substitute for it.
-- Not covered here, still open under R-039: the delivery-stream axis, the stream-control component, the four `DS-S-*` stream tokens, and the 3D focus-ring token.
+- The semantic aliases (`hd-surface-*`, `hd-text-*`, `hd-border-*`, `hd-focus-*`, `hd-action-*`, `hd-status-*`, `hd-data-series-*`) are **[PROPOSED]** resolutions of the families section 2.3 leaves unspecified. They carry no accepted authority and do not amend the freeze file; the amended file cites `hd-focus-ring`, `hd-focus-ring-width` and `hd-focus-offset` as proposed value sources for the gated `semantic.focus.*` values.
+- Synced 2026-09-24 from the frozen file as amended under D-047 (commit `c07e455`, freeze hash `1893D026…8B81`): the delivery-stream axis, the four stream tokens (`hd-stream-*-{id,profile,evidence-token,canvas}`), the `DeliveryStreamControl` component and the scene focus-ring width. Still gated and therefore absent: the stream labels, the scene ring colour and offset, and the twelve `[UNRESOLVED GATE]` items of `DESIGN_SYSTEM_AMENDMENT_R-039.md` section 7.
 - Logo and specimen SVGs under `assets/` are byte-identical copies of `docs/phase-1-brand-identity/assets/`, which remains the original with its hashes in `asset-manifest.json`. All marks are EXPLORATORY, UNREGISTERED, TRADEMARK NOT CLEARED.
 
 ## Layout

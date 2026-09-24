@@ -1,12 +1,12 @@
 # Component inventory
 
-The source defines 62 UI primitives (`docs/phase-1-ui-reference-design/component-primitives.csv`) as anatomy, variant and state contracts; no primitive has code yet. Stable IDs are `PRIM-###` and are never reassigned. Every interactive primitive carries the pseudo-states base, hover, focus-visible, pressed and disabled, and every state is shown as visible text plus shape, icon, border, pattern or position, never colour alone. Seven CSS components in this system are hand-written from the identity board; the last column tracks them against the inventory.
+The source defines 62 UI primitives (`docs/phase-1-ui-reference-design/component-primitives.csv`) as anatomy, variant and state contracts; no primitive has code yet. Stable IDs are `PRIM-###` and are never reassigned. Every interactive primitive carries the pseudo-states base, hover, focus-visible, pressed and disabled, and every state is shown as visible text plus shape, icon, border, pattern or position, never colour alone. Eight CSS components in this system are hand-written, seven from the identity board and the delivery stream control from the frozen handoff file as amended under D-047; the last column tracks them against the inventory.
 
 ## Shell and navigation (5)
 
 | ID | Primitive | Interaction | Required variants | Built here |
 |---|---|---|---|---|
-| PRIM-001 | Public semantic shell | composite interactive | public, no_script, offline, unsupported_browser, prior_release, stream_high, stream_medium, stream_low, stream_semantic | Not built |
+| PRIM-001 | Public semantic shell | composite interactive | public, no_script, offline, unsupported_browser, prior_release, stream_high, stream_medium, stream_low, stream_semantic | Partial: DeliveryStreamControl (the stream control it hosts) |
 | PRIM-002 | Primary navigation and narrow disclosure | composite interactive | wide_inline, narrow_disclosure, staff_separate | Not built |
 | PRIM-003 | Breadcrumb trail | interactive | public, staff, collapsed_overflow_only_if_reviewed | Not built |
 | PRIM-004 | Directory and search | composite interactive | semantic_header, world_HUD, static_directory_index | Not built |
@@ -73,9 +73,9 @@ The source defines 62 UI primitives (`docs/phase-1-ui-reference-design/component
 | PRIM-039 | Modal dialog | composite interactive | modal, alert_dialog_only_for_true_interrupt, nonmodal_preferred_when_possible | Not built |
 | PRIM-040 | Drawer | composite interactive | navigation, directory, detail, staff_filter | Not built |
 | PRIM-041 | Context panel | composite interactive | semantic_inline, world_panel, staff_side_panel | Not built |
-| PRIM-042 | World onboarding and return choice | composite interactive | first_visit, return_valid, return_stale, reduced_motion, low_power | Not built |
-| PRIM-043 | World HUD | composite interactive | reception, atrium, room, transition, reduced_motion, low_power, asset_failure | Not built |
-| PRIM-044 | World escape and recovery | composite interactive | unsupported, loader_timeout, asset_error, network_error, context_loss, memory_or_thermal, checksum_mismatch | Not built |
+| PRIM-042 | World onboarding and return choice | composite interactive | first_visit, return_valid, return_stale, reduced_motion, low_power | Partial: DeliveryStreamControl (re-hosted in the World streams) |
+| PRIM-043 | World HUD | composite interactive | reception, atrium, room, transition, reduced_motion, low_power, asset_failure | Partial: DeliveryStreamControl (re-hosted in the World streams) |
+| PRIM-044 | World escape and recovery | composite interactive | unsupported, loader_timeout, asset_error, network_error, context_loss, memory_or_thermal, checksum_mismatch | Partial: DeliveryStreamControl (re-hosted in the World streams) |
 
 ## Media and data (4)
 
@@ -116,4 +116,4 @@ The source defines 62 UI primitives (`docs/phase-1-ui-reference-design/component
 
 ## Transactional and content states
 
-Across the inventory the source names these content states, each requiring text plus a non-colour cue: loading, empty, offline, error, unavailable, held, stale, pending, success, current, expanded, collapsed, permission denied, not found, retired, expired, and the delivery-stream states (in force, pending, preference write failed). Build them from `hd-status-*` and the evidence-state grammar, never from new colours.
+Across the inventory the source names these content states, each requiring text plus a non-colour cue: loading, empty, offline, error, unavailable, held, stale, pending, success, current, expanded, collapsed, permission denied, not found, retired, expired, and the delivery-stream states (in force, pending, preference write failed). Build them from `hd-status-*` and the evidence-state grammar, never from new colours. The delivery stream control adds `stream-in-force`, `stream-pending`, `STATE-STREAM-CHANGED`, `STATE-PREFERENCE-WRITE-FAILED`, `STATE-PREFERENCE-READ-FAILED` and `STATE-STREAM-CEILING-REFUSED` (D-047).

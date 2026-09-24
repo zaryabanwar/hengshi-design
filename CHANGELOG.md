@@ -24,6 +24,12 @@ operations.
   the working tree against LF blobs with `core.autocrlf=true` and no
   `.gitattributes`, so the pinned `component-primitives-freeze-hash` is of
   non-canonical bytes and a fresh checkout would fail it. Logged as **R-042**.
+- **Design-system export synced** (`packages/design-system/` and the Design
+  System artifact): sixteen `hd-stream-*` tokens (id, profile, evidence token,
+  canvas per stream), the scene focus-ring width, the `DeliveryStreamControl`
+  component with a static preview, and focus token usages marked [PROPOSED] as
+  the amended file records them. Stream labels, the scene ring colour and offset
+  stay gated and absent.
 
 ### 2026-09-24 — R-039 amendment authored, reviewed twice and accepted (D-047)
 
