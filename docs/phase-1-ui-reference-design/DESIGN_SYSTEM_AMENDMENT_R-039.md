@@ -14,7 +14,7 @@ G-6**: the design-system gap is recorded first and amended later as its own
 bounded specialist contract, so that the producer never authors the design-system
 content it will later be judged against.
 
-**Date:** 2026-09-24
+**Date:** 2026-09-24; Revision 2, 2026-09-24 (revision cycle 1 of three, addressing review 1 findings DSA-01 to DSA-09; see Revision history)
 **Commissioned by:** D-046, executing D-045 gate G-6 (risk R-039).
 **Inputs:** `DESIGN_SYSTEM_IMPLICATIONS.md` (whole file, §1 to §8);
 `accessibility/DELIVERY_STREAM_ACCESSIBILITY_OBLIGATIONS.md` (header and
@@ -27,7 +27,9 @@ translucent-panel passage at lines 470 to 473, Part 3 `OBL-ADV-01` and
 §7.2 `N-04`, §7.3 `N-05` and `N-06`, §8.1, §10 gates G-1 to G-7);
 `component-primitives.csv` (header row, `PRIM-001`, `PRIM-042`, `PRIM-043`,
 `PRIM-044`); `responsive-state-mode-matrix.csv` (`SP-NAVIGATION`, `DS-S-HIGH`,
-`DS-S-MEDIUM`, `DS-S-LOW`, `DS-S-SEMANTIC`); `foundation-flow-coverage.csv`
+`DS-S-MEDIUM`, `DS-S-LOW`, `DS-S-SEMANTIC` in revision 1; in revision 2 all 36
+rows read with `Import-Csv` for the state distribution in §3.10);
+`foundation-flow-coverage.csv`
 (`COV-ACT-09`); `design-batch-plan.csv` (`B01`); `traceability.csv`
 (`TR-REQ-103`, `TR-REQ-111`, `TR-TEST-046`);
 `validation/validate-ui-reference-design.ps1` (read only: required-file list,
@@ -45,6 +47,8 @@ statement near line 173); `docs/phase-1-brand-identity/semantic-tokens.json`
 pairing names focus use; no stream token exists); `DECISIONS.md` (`D-039`,
 `D-043`, `D-044` index rows; `D-045` resolutions 1 to 7; `D-046`); `RISKS.md`
 `R-039`; `TASKS.md` R-039 row; `CHANGELOG.md` 2026-09-24 entries;
+`reviews/design-system-amendment-r-039-review-1.md` (independent review 1 at
+commit `740864b`, findings DSA-01 to DSA-09; read for revision 2, not edited);
 `packages/design-system/tokens.json` (whole) and
 `packages/design-system/README.md` (Principles, Colour, Radius/borders/elevation,
 Focus and interaction states, Required modes, Not synced) as **[PROPOSED]** input,
@@ -87,7 +91,7 @@ result.
 | # | Gap named at D-045 gate G-6 and R-039 | Addition | Home in the freeze file after application (§5) | OBL-GRAM-03 reviewer-test hit |
 |---|---|---|---|---|
 | 1 | No delivery-stream axis | The axis as a design-system dimension: a verification context, a token family and a component property, with the **per-stream contrast rule** (§1.3) | §1.1, §2.4, §4, §5, §8 | **(a) per-stream contrast rule** |
-| 2 | No tokens for the four stream values | `semantic.stream.{high,medium,low,semantic}` reserved as `--hd-stream-{high,medium,low,semantic}` with five properties each (§2) | §2.2 note, §2.3 row | — |
+| 2 | No tokens for the four stream values | `semantic.stream.{high,medium,low,semantic}` reserved as `--hd-stream-{high,medium,low,semantic}` with six properties each (§2) | §2.2 note, §2.3 row | — |
 | 3 | No delivery-stream control component | `HD/Shell and navigation/Delivery stream control`, code `DeliveryStreamControl`, mapped to `PRIM-001` anatomy (§3) | §3.1 rows, §3.3, new §3.4 | **(b) stream-control component** |
 | 4 | No 3D focus-ring token | `semantic.focus.{ring,ring-width,offset}` resolved as names, plus `semantic.focus.scene.{ring,ring-width,offset,layer,contrast-floor,motion}` for WebGL hotspots and HUD controls (§4) | §2.3 rows, §4, §5, §8 | **(c) focus-ring tokens** |
 
@@ -280,8 +284,11 @@ copy is listed in §7 (`UG-3`).
 - No availability. Whether a stream is above the WebGL ceiling is a fact about
   the client established at runtime (§8.2.2 step 1) and carried by the control's
   radio state (§3.8), never by the token.
-- No timing. Exact session, challenge, transition and provider durations remain
-  `[GATED]` (freeze §2.1 runtime policy row).
+- No timing. Exact session, challenge and provider durations remain `[GATED]`
+  (freeze §2.1 runtime policy row); transition durations are the accepted
+  ranges of freeze §2.2 (`motion.stateTransition` 120–200 ms;
+  `motion.contextShift` 240–400 ms; `motion.signalReveal` 180–320 ms) with
+  their reduced-motion branches. A stream token carries none of them.
 
 ### 2.4 Ledger rows
 
@@ -329,31 +336,41 @@ G-6 and R-039. It is specified against the anatomy `PRIM-001` already records.
 
 ### 3.2 Anatomy, in DOM reading order and visual order
 
-The anatomy is `PRIM-001`'s, quoted from `required_anatomy`:
+The anatomy is `PRIM-001`'s, quoted from `required_anatomy` in the order that
+record lists it:
 
 1. `stream fieldset`
 2. `stream legend naming delivery stream control and in-force stream`
-3. `persistent visible stream advisement inside fieldset before Apply in DOM
+3. `four native stream radio inputs sharing one name`, one radio per stream
+4. `separate always-present Apply submit button`
+5. `persistent visible stream advisement inside fieldset before Apply in DOM
    reading and visual order`
-4. `four native stream radio inputs sharing one name`, one radio per stream
-5. `separate always-present Apply submit button`
 
 plus the host's `page status region` (also `PRIM-001` anatomy), which sits
 outside the fieldset, carries the change announcement, and exists in the
 accessibility tree, empty, before any message is written into it
 (`OBL-ANN-01`).
 
-The order above satisfies the freeze §3.2 composite order: context/title (the
-legend), state (in-force in the legend; pending on the checked radio), primary
-content (the radios), evidence or limitation (the advisement, any unavailability
-text, any failure explanation), available actions (Apply), recovery (the
-explanations of §3.10). The advisement is positioned so that it precedes Apply
-in both reading and visual order (`OBL-ADV-01` point 1; `NFR-A11Y-004`); whether
-it precedes or follows the radios is not fixed by any source and is recorded as
-assumption **A-2** in §7. Visual asymmetry cannot change DOM or reading order.
-Assumption **A-1**: the radios appear in the style guide §8.2 table order
-(`S-HIGH`, `S-MEDIUM`, `S-LOW`, `S-SEMANTIC`), identically on every route and in
-every stream; the order is reversible and carries no rank.
+Source-fixed order constraints are exactly two: the advisement is inside the
+fieldset, and it precedes Apply in both DOM reading order and visual order
+(`OBL-ADV-01` point 1; `NFR-A11Y-004`; `PRIM-001`). The freeze §3.2 composite
+order is kept by reading the advisement as context (it explains what applying
+does before anything is operated): context/title (the legend, then the
+advisement), state (in-force in the legend; pending on the checked radio),
+primary content (the radios), evidence or limitation (any unavailability text,
+any failure explanation), available actions (Apply), recovery (the explanations
+of §3.10). That reading, and hence the advisement's position relative to the
+radios, is not fixed by any source and is recorded as assumption **A-2** in §7;
+the frozen text inserted by `INS-08` carries only the two source-fixed
+constraints and cites A-2 for the rest. Visual asymmetry cannot change DOM or
+reading order. The visible order of the four radios is likewise fixed by no
+source: the only ordering in the sources is the style guide §8.2 table order
+(`S-HIGH`, `S-MEDIUM`, `S-LOW`, `S-SEMANTIC`), inherited from that accepted table
+and not derived from richness, and because §2.3 forbids sorting the tokens by
+richness and the order is the most public peer-framing surface the control has,
+radio order is decided together with the four labels under gate `UG-3` (§7);
+assumption **A-1** names the provisional order until then. Whatever order is
+decided is identical on every route and in every stream.
 
 ### 3.3 Role and activation model (normative)
 
@@ -521,17 +538,35 @@ child. The control documents them on each radio (with its label) and on Apply.
 
 Freeze §3.3 keeps transactional states on a separate axis with visible text and a
 redundant non-colour cue. The control uses the following subset, mapped to the
-state IDs that `responsive-state-mode-matrix.csv` already carries on
-`SP-NAVIGATION`, `SP-WORLD` and `SP-FIRST-VISIT` per `OBL-STATE-01`.
+state IDs that `responsive-state-mode-matrix.csv` already carries. The matrix is
+the authority for where each frame state lives; the distribution below was read
+from its `required_values` and `critical_distinct_frame_values` columns with
+`Import-Csv` (36 rows, revision 2) and is restated exactly. `OBL-STATE-01`'s
+minimum (`SP-NAVIGATION` all four; `SP-WORLD` for the changed, write-failed and
+ceiling-refused states; `SP-FIRST-VISIT` and `SP-RETURN-VISIT` for the changed,
+write-failed and read-failed states) is met, and the first two states also
+extend to every other public state profile.
+
+| Frame state | State profiles carrying it in both `required_values` and `critical_distinct_frame_values` | Of the four profiles `OBL-STATE-01` names | Stream profiles carrying it in `critical_distinct_frame_values` |
+|---|---|---|---|
+| `STATE-STREAM-CHANGED` | `SP-PUBLIC-DOCUMENT`, `SP-PUBLIC-COLLECTION`, `SP-PUBLIC-DETAIL`, `SP-EVIDENCE-COLLECTION`, `SP-EVIDENCE-DETAIL`, `SP-NAVIGATION`, `SP-FIRST-VISIT`, `SP-RETURN-VISIT`, `SP-WORLD`, `SP-AI`, `SP-HANDOFF-MEDIA`, `SP-BOOKING`, `SP-CONTACT`, `SP-SYSTEM-RECOVERY` | All four: `SP-NAVIGATION`, `SP-WORLD`, `SP-FIRST-VISIT`, `SP-RETURN-VISIT` | `DS-S-HIGH`, `DS-S-MEDIUM`, `DS-S-LOW`, `DS-S-SEMANTIC` |
+| `STATE-PREFERENCE-WRITE-FAILED` | The same fourteen profiles as `STATE-STREAM-CHANGED` | All four | The same four |
+| `STATE-PREFERENCE-READ-FAILED` | `SP-NAVIGATION`, `SP-FIRST-VISIT`, `SP-RETURN-VISIT` | `SP-NAVIGATION`, `SP-FIRST-VISIT`, `SP-RETURN-VISIT`; **not `SP-WORLD`** | The same four |
+| `STATE-STREAM-CEILING-REFUSED` | `SP-NAVIGATION`, `SP-WORLD` | `SP-NAVIGATION`, `SP-WORLD`; **not `SP-FIRST-VISIT`, not `SP-RETURN-VISIT`** | The same four |
+
+The five staff profiles (`SP-AUTH`, `SP-STAFF-QUEUE`, `SP-STAFF-WORK`,
+`SP-PUBLICATION`, `SP-AUDIT`) carry none of the four, consistent with the
+excluded-surface scope marker of `EC-08`. `stream-in-force` and `stream-pending`
+are values reported by the control, not frame states, and have no matrix row.
 
 | State (component) | Matrix ID | Meaning | Visible text and non-colour cue | Focus | Announcement | Authority |
 |---|---|---|---|---|---|---|
 | `stream-in-force` | (value reported by the group name; not a frame state) | The stream currently applied | Legend text carrying the in-force `label` | — | — | `PRIM-001` `transactional_or_content_states`; `OBL-CTRL-02` |
 | `stream-pending` | (value reported by the checked radio; not a frame state) | A checked radio not yet applied | Native checked mark plus label; never rendered or announced as in force | Retained on the radio | None | `PRIM-001`; `OBL-CTRL-02`; pending never reads as applied |
-| `STATE-STREAM-CHANGED` | `STATE-STREAM-CHANGED` | Apply activated, same shell | Group name reports the new stream; polite message in the status region | Retained on the operated control; scroll, open panel and route preserved | Polite; names the new stream | `OBL-STATE-02`; `FR-3D-013`; §8.2.4 |
-| `STATE-PREFERENCE-WRITE-FAILED` | `STATE-PREFERENCE-WRITE-FAILED` (`PRIM-001` spells it `stream-preference-write-failed`) | The choice applied for the session but could not be stored | Text explaining, in plain terms, that the choice will not be remembered on the next visit; not an error the visitor caused; never blocking | Retained | Polite | `OBL-STATE-03`; `ACT-11` pattern; §8.2.2 step 5 |
-| `STATE-PREFERENCE-READ-FAILED` | `STATE-PREFERENCE-READ-FAILED` | A stored choice could not be read | Text in the destination shell stating the stored choice could not be applied and that the visitor can re-select; never a silent return to a computed stream | — | Polite | `OBL-STATE-04` |
-| `STATE-STREAM-CEILING-REFUSED` | `STATE-STREAM-CEILING-REFUSED` | A request above the ceiling refused at Apply time | Reason in text as a fact about the client; no error styling; group name still reports the prior stream | Retained | Polite | `OBL-STATE-05`; `ACT-09` alternate path |
+| `STATE-STREAM-CHANGED` | `STATE-STREAM-CHANGED` (homes per the distribution table above) | Apply activated, same shell | Group name reports the new stream; polite message in the status region | Retained on the operated control; scroll, open panel and route preserved | Polite; names the new stream | `OBL-STATE-02`; `FR-3D-013`; §8.2.4 |
+| `STATE-PREFERENCE-WRITE-FAILED` | `STATE-PREFERENCE-WRITE-FAILED` (`PRIM-001` spells it `stream-preference-write-failed`; homes per the distribution table above) | The choice applied for the session but could not be stored | Text explaining, in plain terms, that the choice will not be remembered on the next visit; not an error the visitor caused; never blocking | Retained | Polite | `OBL-STATE-03`; `ACT-11` pattern; §8.2.2 step 5 |
+| `STATE-PREFERENCE-READ-FAILED` | `STATE-PREFERENCE-READ-FAILED` (home on return: `SP-RETURN-VISIT`; also `SP-NAVIGATION` and `SP-FIRST-VISIT`; not `SP-WORLD`) | A stored choice could not be read | Text in the destination shell stating the stored choice could not be applied and that the visitor can re-select; never a silent return to a computed stream | — | Polite | `OBL-STATE-04` |
+| `STATE-STREAM-CEILING-REFUSED` | `STATE-STREAM-CEILING-REFUSED` (`SP-NAVIGATION` and `SP-WORLD`; not `SP-FIRST-VISIT`, not `SP-RETURN-VISIT`) | A request above the ceiling refused at Apply time | Reason in text as a fact about the client; no error styling; group name still reports the prior stream | Retained | Polite | `OBL-STATE-05`; `ACT-09` alternate path |
 
 Pending never looks or reads as applied, exactly as pending never looks or reads
 as success in freeze §3.3. The control never reports a stream the visitor did not
@@ -692,7 +727,7 @@ and R-039.
 | `semantic.focus.scene.offset` | `--hd-focus-scene-offset` | Offset of the scene ring from the focused hotspot or HUD control; clipping prevention stands. Value `[GATED]` | Freeze §2.3 by extension; no source states it |
 | `semantic.focus.scene.layer` | `--hd-focus-scene-layer` | Rule: the scene ring is rendered in the DOM overlay layer above `semantic.elevation.panel` (the HUD's translucent panel, §6.2) and above every sticky HUD element, and is never rendered inside the canvas alone, so that no part of a focused control or hotspot indicator is obscured | `OBL-CTRL-04` on 2.4.11; `PRIM-043` "does not obscure focus or content" and "no canvas-only control"; obligations lines 470 to 473; freeze §2.3 `semantic.elevation.*` |
 | `semantic.focus.scene.contrast-floor` | `--hd-focus-scene-contrast-floor` | **3:1**, the floor against every adjacent scene colour | Style guide §4.1; `NFR-A11Y-005`; freeze §5. A rule-valued row, like `radius.status` in freeze §2.2 |
-| `semantic.focus.scene.motion` | `--hd-focus-scene-motion` | Rule: static and persistent; present whether or not the pointer is used; unaffected by `prefers-reduced-motion`; never animated across the viewport | Style guide §4.1; §7.3 |
+| `semantic.focus.scene.motion` | `--hd-focus-scene-motion` | Rule: static and persistent; present whether or not the pointer is used; unaffected by `prefers-reduced-motion` | Style guide §4.1 (line 93) and §7.3. The further clause "never animated across the viewport" occurs only in `packages/design-system/tokens.json` and `README.md` — **[PROPOSED]**, never authority — and is not part of the rule |
 
 Every ring drawn from these tokens is accompanied by the non-colour cue its host
 already requires: the label in its expanded form on a hotspot (§4.1); visible
@@ -710,7 +745,11 @@ label text on the control's radios and on Apply (§3.4).
 In `S-SEMANTIC` the ordinary 2D ring is the equivalent of the 3D ring: the
 mapping ledger records `semantic.focus.scene.*` as resolving to
 `semantic.focus.*` in `S-SEMANTIC`, so no token is undefined in any stream and
-no export can emit a scene ring into a document with no canvas. Under §1.3, the
+no export can emit a scene ring into a document with no canvas. The sources
+establish only that `S-SEMANTIC` has no canvas and no HUD (`OBL-CTRL-05`; style
+guide §8.2.4); the resolution rule itself is recorded assumption **A-4** (§7),
+safe and reversible, and is cited as such wherever it reaches the frozen file
+(`INS-04`, `INS-09`). Under §1.3, the
 2D ring on a semantic shell in `S-HIGH` is measured in `S-HIGH` and the same
 ring in `S-SEMANTIC` is measured in `S-SEMANTIC`; the two measurements are
 recorded separately even where the renderings coincide.
@@ -754,7 +793,7 @@ so.
 | `INS-03` | §2.2 | Append a paragraph after the closing paragraph of §2.2 | `...Opacity, glow, blur, or material appearance cannot repair insufficient contrast.` | Block `INS-03` | — |
 | `INS-04` | §2.3 | Replace the `semantic.focus.{ring,offset}` row; insert two rows before the `component.*` row | `\| \`semantic.focus.{ring,offset}\` \| \`--hd-focus-*\` \| Thickness, offset, clipping prevention, and surface pairings \|` and `\| \`component.*\` \| ...` | Block `INS-04` | (c) |
 | `INS-05` | §2.4 | Append a bullet after the last bullet | The bullet beginning `- Dark and light are controlled surface pairings. Forced colors, grayscale,` | Block `INS-05` | — |
-| `INS-06` | §3.1 | Replace the `Shell and navigation` row and the `Overlay and immersive` row | The two rows as they stand in §3.1 | Block `INS-06` | (b) |
+| `INS-06` | §3.1 | Replace the `Shell and navigation` row and the `Overlay and immersive` row | The two rows quoted verbatim in anchor block `INS-06` (each occurs exactly once in the freeze file, at lines 206 and 211) | Block `INS-06` | (b) |
 | `INS-07` | §3.3 | Append a paragraph after the transactional-states paragraph | `...dialogs, error summaries, and deliberate navigation may move focus under their own contract.` | Block `INS-07` | — |
 | `INS-08` | §3 | Insert a new subsection `### 3.4 Delivery stream control component` after §3.3 and before `## 4.` | `## 4. Responsive, input, and mode obligations` | Block `INS-08` | (b) |
 | `INS-09` | §4 | Append four bullets after the last bullet | `...evidence status, error/success distinction, and data-series identity without depending on color or shadow.` | Block `INS-09` | — |
@@ -811,7 +850,7 @@ new rows immediately before the `component.*` row):
 ```
 | `semantic.focus.{ring,ring-width,offset}` | `--hd-focus-*` | Colour, thickness, offset, clipping prevention, and surface pairings, measured per delivery stream; the 2D ring is the `S-SEMANTIC` equivalent of the scene ring |
 | `semantic.stream.{high,medium,low,semantic}.{id,profile,evidence-token,label,presentation,canvas}` | `--hd-stream-*` | Exact visible label copy per stream in peer vocabulary (gated public copy); the token carries the stream identifier, the `DS-S-*` evidence profile, the `EC-08` `STREAM_*` token, the style guide §8.2 presentation text and the canvas fact, and never a raw rendering value, a U-03 tier boundary, an ordering, a mode value or an availability |
-| `semantic.focus.scene.{ring,ring-width,offset,layer,contrast-floor,motion}` | `--hd-focus-scene-*` | The focus ring for WebGL hotspots and HUD controls in `S-HIGH`, `S-MEDIUM` and `S-LOW`: width 3 px and a 3:1 floor against every adjacent scene colour (style guide §4.1; `NFR-A11Y-005`), rendered above `semantic.elevation.panel` so no part is obscured; ring colour, offset and the adjacency sampling method remain gated; resolves to `semantic.focus.*` in `S-SEMANTIC` |
+| `semantic.focus.scene.{ring,ring-width,offset,layer,contrast-floor,motion}` | `--hd-focus-scene-*` | The focus ring for WebGL hotspots and HUD controls in `S-HIGH`, `S-MEDIUM` and `S-LOW`: width 3 px and a 3:1 floor against every adjacent scene colour (style guide §4.1; `NFR-A11Y-005`), rendered above `semantic.elevation.panel` so no part is obscured; ring colour, offset and the adjacency sampling method remain gated; resolves to `semantic.focus.*` in `S-SEMANTIC` (recorded assumption A-4 of `DESIGN_SYSTEM_AMENDMENT_R-039.md`) |
 ```
 
 **Block `INS-05`**
@@ -826,6 +865,14 @@ new rows immediately before the `component.*` row):
   `stream-high`, `stream-medium`, `stream-low` and `stream-semantic`.
 ```
 
+**Anchor block `INS-06`** — the two rows to replace, quoted verbatim from the
+freeze file:
+
+```
+| Shell and navigation | Landmarks, skip paths, primary navigation, breadcrumbs, directory/search, canonical location, and safe exclusions |
+| Overlay and immersive | Dialog, drawer, panel, onboarding, HUD, exit, Quick Access, and asset/device recovery |
+```
+
 **Block `INS-06`** — replacement rows:
 
 ```
@@ -838,11 +885,20 @@ new rows immediately before the `component.*` row):
 ```
 The delivery stream control (§3.4) adds the transactional states
 `stream-in-force` and `stream-pending`, reported respectively by the group
-accessible name and by the checked radio, and the frame states
-`STATE-STREAM-CHANGED`, `STATE-PREFERENCE-WRITE-FAILED`,
-`STATE-PREFERENCE-READ-FAILED` and `STATE-STREAM-CEILING-REFUSED` carried by
-`SP-NAVIGATION`, `SP-WORLD` and `SP-FIRST-VISIT`. Pending never looks or reads
-as applied, and the control never reports a stream the visitor did not apply.
+accessible name and by the checked radio, and four frame states whose homes
+are the state profiles of `responsive-state-mode-matrix.csv`, which governs
+this list through its `required_values` and `critical_distinct_frame_values`
+columns: `STATE-STREAM-CHANGED` and `STATE-PREFERENCE-WRITE-FAILED` on
+`SP-PUBLIC-DOCUMENT`, `SP-PUBLIC-COLLECTION`, `SP-PUBLIC-DETAIL`,
+`SP-EVIDENCE-COLLECTION`, `SP-EVIDENCE-DETAIL`, `SP-NAVIGATION`,
+`SP-FIRST-VISIT`, `SP-RETURN-VISIT`, `SP-WORLD`, `SP-AI`, `SP-HANDOFF-MEDIA`,
+`SP-BOOKING`, `SP-CONTACT` and `SP-SYSTEM-RECOVERY`;
+`STATE-PREFERENCE-READ-FAILED` on `SP-NAVIGATION`, `SP-FIRST-VISIT` and
+`SP-RETURN-VISIT` only; `STATE-STREAM-CEILING-REFUSED` on `SP-NAVIGATION` and
+`SP-WORLD` only; and all four as `critical_distinct_frame_values` of
+`DS-S-HIGH`, `DS-S-MEDIUM`, `DS-S-LOW` and `DS-S-SEMANTIC`. Pending never looks
+or reads as applied, and the control never reports a stream the visitor did not
+apply.
 ```
 
 **Block `INS-08`**
@@ -857,12 +913,14 @@ resolutions 1, 3 and 6; `FR-3D-013` to `FR-3D-016`; `NFR-A11Y-004`; style guide
 §8.2.4 to §8.2.6; `OBL-CTRL-01` to `OBL-CTRL-06`, `OBL-ADV-01`, `OBL-ANN-01`,
 `OBL-BND-01` to `OBL-BND-04`, `OBL-STATE-01` to `OBL-STATE-05`; `UXTEST-046`.
 
-- **Anatomy, in DOM reading order and visual order:** `fieldset`; `legend`
-  naming the delivery stream control and the in-force stream; persistent
-  visible advisement; four native radio inputs sharing one name, one per
-  stream; separate, always-present Apply submit button. The host's page status
-  region carries the announcement and exists, empty, before any message is
-  written into it.
+- **Anatomy:** `fieldset`; `legend` naming the delivery stream control and the
+  in-force stream; four native radio inputs sharing one name, one per stream;
+  persistent visible advisement inside the fieldset, before Apply in DOM
+  reading order and visual order (its placement relative to the radios is
+  recorded assumption A-2 of `DESIGN_SYSTEM_AMENDMENT_R-039.md`, not a source
+  constraint); separate, always-present Apply submit button. The host's page
+  status region carries the announcement and exists, empty, before any message
+  is written into it.
 - **Activation:** moving among the radios by arrow, Tab, pointer or touch
   changes only the checked state. The stream applies only on explicit Apply
   activation by Enter, Space, pointer or touch, or native Enter submission of
@@ -927,13 +985,14 @@ resolutions 1, 3 and 6; `FR-3D-013` to `FR-3D-016`; `NFR-A11Y-004`; style guide
 - In the World streams, the focus ring for hotspots and HUD controls
   (`semantic.focus.scene.*`) renders above the HUD's translucent panel and every
   sticky element, so no focused control is obscured; in `S-SEMANTIC` no canvas
-  and no HUD exist and the ordinary ring applies.
+  and no HUD exist and the ordinary ring applies (recorded assumption A-4 of
+  `DESIGN_SYSTEM_AMENDMENT_R-039.md`).
 ```
 
 **Block `INS-10`** — replacement bullet:
 
 ```
-- Contrast is checked per rendered state and per delivery stream: normal text
+- Contrast is checked per rendered state and per stream: normal text
   at least 4.5:1; large text only under its valid size/weight rule; focus and
   meaningful non-text boundaries at least 3:1. Every contrast, focus-order and
   target-size measurement, and every other verification context in §2.4, is
@@ -1023,7 +1082,7 @@ resolutions 1, 3 and 6; `FR-3D-013` to `FR-3D-016`; `NFR-A11Y-004`; style guide
 | Primitive | `PRIM-001` | Anatomy, variants, states, presence in all four streams (§3.2, §3.10) |
 | Primitive | `PRIM-042`, `PRIM-043`, `PRIM-044` | Re-hosting in the World streams; HUD must not obscure focus; no canvas-only control (§3.1, §3.7) |
 | Matrix | `DS-S-HIGH`, `DS-S-MEDIUM`, `DS-S-LOW`, `DS-S-SEMANTIC` | Evidence profiles; per-stream measurement; required modes; `exception_rule` (§1.1, §2.2, §2.3, §3.8) |
-| Matrix | `SP-NAVIGATION` | Home of the four stream frame states (§3.10) |
+| Matrix | `SP-NAVIGATION`, `SP-WORLD`, `SP-FIRST-VISIT`, `SP-RETURN-VISIT` and the ten further public state profiles listed in §3.10 | Homes of the four stream frame states, per state, read from the matrix with `Import-Csv` (§3.10; `INS-07`) |
 | Production | `EC-08` | `STREAM_*` evidence token (§1.1, §2.2) |
 | Evidence model | `N-03`, `N-04`, `N-05`, `N-06`; §8.1 | Stream-generic minimum evidence; frame multiplier; control model; advisement surface; B01 evidence (§1.3, §3, §4.4, `INS-14`) |
 | UX | `COV-ACT-09`, `ACT-09`, `ACT-11` | Action contract; alternate path; write-failure pattern (§3.8, §3.10) |
@@ -1044,7 +1103,7 @@ Marked rather than invented. A fact not establishable from the sources is a gate
 |---|---|---|---|
 | **UG-1** | The adjacency sampling method, adjacency definition and measurement procedure for the 3D focus ring against a lit, textured, animated scene (`OBL-CTRL-04` gate; `NFR-A11Y-005`). As written, "≥3:1 against every adjacent scene colour" can be neither passed nor failed. | Founder, on a proposal from the independent accessibility specification author under the D-044 pattern | Any measured claim for `semantic.focus.scene.ring`; the per-stream World focus frames of §4.4 |
 | **UG-2** | Raw values for `semantic.focus.ring`, `semantic.focus.ring-width`, `semantic.focus.offset`, `semantic.focus.scene.ring` and `semantic.focus.scene.offset`. `tokens.json` offers proposed values; the identity source names cyan-on-ink for focus use; neither is authority. | Founder at the visual-direction gate (freeze §8 closing paragraph), after independent design and accessibility review | The value cells of the mapping ledger |
-| **UG-3** | Exact public copy: the four stream `label` strings, the legend, Apply's name, the advisement, the above-ceiling reason, the write-failed and read-failed explanations, the same-shell announcement, the arrival announcement and the nearest-ancestor statement. | Founder (public-copy gate; `NFR-A11Y-004`; freeze §7) | `--hd-stream-*-label` values; every announcement sentence |
+| **UG-3** | Exact public copy: the four stream `label` strings, the legend, Apply's name, the advisement, the above-ceiling reason, the write-failed and read-failed explanations, the same-shell announcement, the arrival announcement and the nearest-ancestor statement; and the visible order of the four radios, decided together with the labels because it is the most public peer-framing surface the control has. Provenance of the only order in the sources: the style guide §8.2 table (`S-HIGH`, `S-MEDIUM`, `S-LOW`, `S-SEMANTIC`), inherited from that accepted table and not derived from richness; assumption A-1 names it as provisional until decided. | Founder (public-copy gate; `NFR-A11Y-004`; freeze §7) | `--hd-stream-*-label` values; every announcement sentence; the radio order |
 | **UG-4** | U-03 device-tier thresholds (§8.2.3). | Implementation-phase measurement; no schedule is offered | Nothing in this amendment; recorded because the `DS-S-*` descriptions reference tiers and a token must not carry one |
 | **UG-5** | Whether Apply is ever `disabled` (for example when the pending selection equals the in-force stream) or always enabled with a no-op announcement. No source decides it; freeze §3.3 requires the state to be documented regardless. | Founder, on the independent accessibility reviewer's recommendation | Only the documented-but-unused pseudo-state |
 | **UG-6** | Primary versus secondary action alias for Apply; hover and pressed pairings for radios and Apply (freeze §2.3: all interactive state pairings still to be decided). | Later visual-reference producer, then founder at the visual-direction gate | Component token values (§3.13) |
@@ -1052,21 +1111,34 @@ Marked rather than invented. A fact not establishable from the sources is a gate
 | **UG-8** | Style guide §7.2 still binds `Escape` to "Close panel / go back" without excluding the control; `OBL-CTRL-04` forbids the control from binding `Escape`. The component rule is stated in §3.7; the §7.2 reconciliation is outside this file. | Style guide owner under the D-045 implementation record; founder | Nothing in this amendment |
 | **UG-9** | The acceptance decision that re-opens `DESIGN_SYSTEM_IMPLICATIONS.md`, its revision label, and the new `design-system-freeze-hash` in the validator (D-046: a separate decision after independent review). | Founder | Application of §5 |
 | **UG-10** | The storage notice's home and the `ACT-40` erasure of the accessibility choice (`OBL-STATE-04` gate). | Founder; UX architecture owner | Copy of `STATE-PREFERENCE-READ-FAILED`, not its token or state definition |
-| **UG-11** | Freeze §1.1's platform-targets bullet still describes the WebGL layer and the Quick Access journey with pre-D-039 vocabulary. Rewording it is outside this commission. | Founder at acceptance | Nothing; noted so the applying slice does not treat it as covered |
+| **UG-11** | Freeze §1.1's platform-targets bullet still describes the WebGL layer and the Quick Access journey with pre-D-039 vocabulary, and freeze §2.4 and §4 keep a mode-axis context named in the same vocabulary beside the stream axis that `INS-05` and `INS-09` add. Rewording any of them is outside this commission (review 1, V-11). | Founder at acceptance | Nothing; noted so the applying slice does not treat it as covered |
 | **UG-12** | Whether `NFR-A11Y` gains the 2.4.11 Focus Not Obscured row that `OBL-CTRL-04` and `OBL-TRACE-02` require, so that `semantic.focus.scene.layer` has a requirement-level home. | SRS owner under D-045; founder | Traceability only; the token rule stands on `OBL-CTRL-04` and `PRIM-043` |
 
 Recorded assumptions (safe, reversible, unambiguous; each is a single line to
 reverse):
 
-- **A-1** Radio order follows the style guide §8.2 table (`S-HIGH`, `S-MEDIUM`,
-  `S-LOW`, `S-SEMANTIC`), identical on every route and in every stream, and
-  carries no rank.
-- **A-2** The advisement is placed between the legend and the radios, so that
-  it precedes both the radios and Apply in reading and visual order; the
-  sources require only that it precede Apply.
+- **A-1** Until the founder decides radio order under UG-3, reference work
+  uses the style guide §8.2 table order (`S-HIGH`, `S-MEDIUM`, `S-LOW`,
+  `S-SEMANTIC`) as the provisional order. Provenance: inherited from that
+  accepted table, not derived from richness; the token export still must not
+  sort by richness (§2.3). Reversal: adopt the order decided at UG-3.
+- **A-2** The advisement is placed between the legend and the radios, read as
+  context in the freeze §3.2 composite order, so that it precedes both the
+  radios and Apply in reading and visual order; the sources fix only that it is
+  inside the fieldset and precedes Apply (`OBL-ADV-01` point 1; `NFR-A11Y-004`;
+  `PRIM-001`). The frozen text (`INS-08`) carries only the source-fixed
+  constraints and cites A-2. Reversal: place it after the radios and before
+  Apply.
 - **A-3** The component's category segment is the freeze §3.1 taxonomy name of
   its authorized home (`Shell and navigation`), and the World hosts instantiate
   the same component rather than a second one.
+- **A-4** In `S-SEMANTIC`, where no canvas and no HUD exist (`OBL-CTRL-05`;
+  style guide §8.2.4), the mapping ledger resolves `semantic.focus.scene.*` to
+  `semantic.focus.*`, so that no token is undefined in any stream and no export
+  can emit a scene ring into a document without a canvas. No source states the
+  resolution; it is the author's rule, safe and reversible, cited from §4.3,
+  `INS-04` and `INS-09`. Reversal: record the scene tokens as not applicable in
+  `S-SEMANTIC` and leave `semantic.focus.*` as the only ring there.
 
 ---
 
@@ -1079,3 +1151,30 @@ call. Its exit evidence, per `R-039` and D-046, is this amendment together with 
 clean independent review record against `OBL-GRAM-03` — three hits: the
 per-stream contrast rule, the stream-control component, and the focus-ring
 tokens — presented at a founder gate before the freeze file changes.
+
+---
+
+## Revision history
+
+Revision 2 (2026-09-24) addresses independent review 1
+(`reviews/design-system-amendment-r-039-review-1.md`, commit `740864b`, subject
+revision `2c469b6`): Part A PASS, Part B FAIL on DSA-01 (MEDIUM), DSA-02 to
+DSA-09 LOW. One row per finding. Line numbers refer to this revision. No
+finding was declined. The matrix facts under DSA-01 were read with
+`Import-Csv` over all 36 rows of `responsive-state-mode-matrix.csv`, never
+assumed. Only this file changed; the frozen files, the validator and the review
+record were not touched.
+
+| Finding | Disposition | Change made (line in this revision) or reason |
+|---|---|---|
+| **DSA-01** (MEDIUM) | Resolved | §3.10 preamble replaced: the matrix is named as the authority and the distribution is restated per state, exactly as its `required_values` and `critical_distinct_frame_values` columns record it, in a new table (lines 539 to 560): `STATE-STREAM-CHANGED` and `STATE-PREFERENCE-WRITE-FAILED` on fourteen public state profiles including all four that `OBL-STATE-01` names; `STATE-PREFERENCE-READ-FAILED` on `SP-NAVIGATION`, `SP-FIRST-VISIT` and `SP-RETURN-VISIT` only, not `SP-WORLD`; `STATE-STREAM-CEILING-REFUSED` on `SP-NAVIGATION` and `SP-WORLD` only, not `SP-FIRST-VISIT` and not `SP-RETURN-VISIT`; all four as `critical_distinct_frame_values` of the four `DS-S-*` rows; the five staff profiles carry none (557). The §3.10 state rows now carry their homes, with `SP-RETURN-VISIT` as the on-return home of `STATE-PREFERENCE-READ-FAILED` (568). Block `INS-07` rewritten with the same per-state distribution and the matrix cited as the authority, so the frozen text cannot contradict the frozen matrix (888). §6 matrix row corrected (1085); Inputs updated (31). |
+| DSA-02 (LOW) | Resolved | "five properties each" corrected to "six" in §0 row 2 (94). |
+| DSA-03 (LOW) | Resolved | The clause "never animated across the viewport" removed from the `semantic.focus.scene.motion` rule and moved to the source column, marked as occurring only in the [PROPOSED] `tokens.json` and `README.md` input, never authority (730). |
+| DSA-04 (LOW) | Resolved | Assumption A-4 recorded in §7 with the resolution rule, its reasoning and a one-line reversal (1135); cited from §4.3 (750), from the `INS-04` scene row (853) and from the `INS-09` fourth bullet (988). |
+| DSA-05 (LOW) | Resolved | `INS-08` anatomy bullet restated so the frozen text carries only the source-fixed constraints (inside the fieldset; before Apply in DOM reading order and visual order) and cites A-2 for the placement relative to the radios (920). §3.2 anatomy list restated in `PRIM-001`'s own order (339) and its composite-order paragraph corrected: the "advisement as context" reading is now stated as part of A-2 rather than as a source fact (354). A-2 rewritten with its sources and reversal (1125). |
+| DSA-06 (LOW) | Resolved | `INS-06` row now points to an anchor block (796); the two rows are quoted verbatim in that block (868); each verified by literal grep to occur exactly once in the freeze file (`\| Shell and navigation \| ... \|` count 1; `\| Overlay and immersive \| ... \|` count 1). |
+| DSA-07 (LOW) | Resolved | Both the reviewer's and the coordinator's forms applied: provenance stated (the only order in the sources is the style guide §8.2 table, inherited from that accepted table and not derived from richness) and radio order moved under UG-3, to be decided with the four labels (1106); A-1 kept as the provisional order with provenance and reversal (1120); §3.2 states that no source fixes the order (371). |
+| DSA-08 (LOW) | Resolved | "transition" removed from the gated list; transition durations cited as the accepted freeze §2.2 ranges (`motion.stateTransition` 120–200 ms, `motion.contextShift` 240–400 ms, `motion.signalReveal` 180–320 ms) with their reduced-motion branches (287). |
+| DSA-09 (LOW) | Resolved | `INS-10` now reads "per rendered state and per stream", so the hint `search "per stream"` matches the inserted text literally (995). |
+| V-11 (reviewer note, not a finding) | Adopted | UG-11 extended to cover the freeze §2.4 and §4 mode-axis wording that `INS-05` and `INS-09` sit beside (1114). |
+| Header | — | Date line bumped to "Revision 2, 2026-09-24" (17); the review record and the `Import-Csv` matrix read added to Inputs (31, 50). |
