@@ -308,3 +308,46 @@ verification; its exit evidence is a clean checkout passing the design validator
 unchanged. B01, MA-029, CB-06, CB-07 and the twelve amendment gates are
 unchanged.
 
+## D-049 — R-043 line-ending fragility treated for the production and UX-architecture packages
+
+**Date:** 2026-09-24
+**Status:** accepted
+**Supersedes:** nothing; extends D-048 to two more packages
+**Authority for:** six further path-scoped `text eol=lf` rules in the root
+`.gitattributes` for `docs/phase-1-ui-reference-production` and
+`docs/phase-1-ux-architecture`; normalization of `evidence-capture-plan.csv` and
+the UX-architecture `traceability.csv` to their LF blob bytes
+
+The founder approved this treatment on 2026-09-24 in two click-based gates
+presented in the Claude Code session: start the treatment, then record and
+commit.
+
+**What changed.** `.gitattributes` gains one comment and six rules (`*.md`,
+`*.csv`, `*.ps1` under each package); no repository-wide rule, no binary
+declared as text. Two working copies were normalized to LF and are
+byte-identical to their committed blobs; no content changed. No validator was
+edited: the four UX-architecture review-file pins were computed on LF bytes and
+match, and the production validator pins no file hash; the clone failures
+recorded under R-043 came only from `core.autocrlf=true` producing CRLF working
+copies, which the rules now prevent.
+
+**Freeze values.** The design aggregate stays `631324D0…3EBF`. The production
+package's emitted, unpinned freeze value is
+`D4F8F128C20A8287BE0B91D50898D7E10D6A5A5E636D569301D2A45CC25D8435` on canonical
+LF bytes, identical at the root and in a fresh clone; the previously observed
+`72AC9D69…` was a hash of a mixed working copy. The production
+`validation-report.md` still records an older dated value (`4464F6C4…`) and was
+not edited under this decision.
+
+**Validators before the commit.** UX architecture 113/0; foundation PASS;
+stream-mapping tests 987 checks PASS; design 207/1 and production 166/1, each
+failing only its `git-write-scope` guard on the uncommitted `.gitattributes`,
+which clears at this commit. A fresh clone with the rules applied and the two
+packages re-checked-out passes the same set.
+
+**What this decision does not do.** It does not touch any package content,
+pinned value, validator assertion, or the production report's dated freeze
+value. R-043 moves to `in_progress` pending independent verification; its exit
+evidence is a fresh clone passing all four validators unchanged. B01, MA-029,
+CB-06, CB-07 and the twelve amendment gates are unchanged.
+

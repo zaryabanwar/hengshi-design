@@ -6,6 +6,19 @@ operations.
 
 ## [Unreleased]
 
+### 2026-09-24 — R-043 line-ending fragility treated for two more packages (D-049)
+
+- **`.gitattributes` extended** with six path-scoped `text eol=lf` rules for
+  `docs/phase-1-ui-reference-production` and `docs/phase-1-ux-architecture`
+  (`*.md`, `*.csv`, `*.ps1`); two CSVs normalized to their LF blobs with no
+  content change; no validator edited (the UX review-file pins were already on
+  LF bytes; the production validator pins no file hash). Canonical production
+  freeze value `D4F8F128…8435`; the production report's older dated value left
+  untouched.
+- **Validators before the commit:** UX 113/0, foundation PASS, stream tests 987
+  checks; design and production each failed only their `git-write-scope` guard
+  on the uncommitted file. R-043 `in_progress` pending independent verification.
+
 ### 2026-09-24 — R-042 line-ending freeze fragility treated (D-048)
 
 - **`.gitattributes` added** at the root: `text eol=lf` for the design package's
