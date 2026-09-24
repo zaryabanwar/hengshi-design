@@ -6,6 +6,20 @@ operations.
 
 ## [Unreleased]
 
+### 2026-09-24 — R-039 amendment authored, reviewed twice and accepted (D-047)
+
+- **Amendment authored** under the D-046 contract by an agent independent of the
+  D-045 producer (`DESIGN_SYSTEM_AMENDMENT_R-039.md`, `2c469b6`), revised once
+  (`cf455db`) after independent review 1 (`740864b`: one MEDIUM, eight LOW
+  findings, all resolved), and passed by independent review 2 (`0b7d0a2`: both
+  parts PASS, two LOW findings carried to application).
+- **Founder decision D-047** accepts revision 2 and authorizes its mechanical
+  application to the hash-pinned `DESIGN_SYSTEM_IMPLICATIONS.md`, with the freeze
+  hash and aggregate re-pinned and the four validators rerun. Application and its
+  independent verification follow in the same session.
+- **Nothing else moves.** B01 stays held under G-4; MA-029 undischarged; no Figma
+  call; the twelve unresolved gates in the amendment stay open founder decisions.
+
 ### 2026-09-24 — R-039 design-system amendment commissioned (D-046)
 
 - **Founder decision D-046** recorded: the design-system gap logged at D-045 gate

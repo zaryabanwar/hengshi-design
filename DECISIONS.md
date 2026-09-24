@@ -227,3 +227,42 @@ returns clean. It does not authorize any Figma MCP call (CB-06 and CB-07 stand; 
 implementation, publication, deployment, or push. R-035, R-036, R-037, R-038,
 R-040, and R-041 are unchanged. R-039 moves from `awaiting_human` to `in_progress`.
 
+## D-047 — R-039 design-system amendment accepted; application to the frozen baseline authorized
+
+**Date:** 2026-09-24
+**Status:** accepted
+**Supersedes:** nothing; completes the contract commissioned at D-046
+**Authority for:** the delivery-stream axis, the four stream tokens, the delivery
+stream control component and the focus-ring tokens as specified in
+`docs/phase-1-ui-reference-design/DESIGN_SYSTEM_AMENDMENT_R-039.md` revision 2
+(commit `cf455db`, SHA-256 `61b924951ff955faa16ae067ba9baf2e0a0f7987f91df5f907f42cda4fe0e9ea`),
+and the mechanical application of its fourteen insertions to
+`DESIGN_SYSTEM_IMPLICATIONS.md`
+
+The founder accepted revision 2 on 2026-09-24 in a click-based gate presented in
+the Claude Code session, after independent review 1
+(`reviews/design-system-amendment-r-039-review-1.md`, commit `740864b`: Part A
+PASS, Part B FAIL on DSA-01 MEDIUM plus DSA-02 to DSA-09 LOW), revision 2 resolving
+all nine findings, and independent review 2
+(`reviews/design-system-amendment-r-039-review-2.md`, commit `0b7d0a2`: Part A
+PASS, Part B PASS, DSB-01 and DSB-02 LOW carried to application). One revision
+cycle of the three allowed for UI was consumed. The author and both reviews were
+agents independent of the D-045 producer and of each other.
+
+**What this decision authorizes.** The amendment is accepted authority for its
+subject. The applying slice, executed in the same session, applies `INS-01` to
+`INS-14` mechanically to the hash-pinned `DESIGN_SYSTEM_IMPLICATIONS.md`, handles
+DSB-01 (an editorial heading in the amendment) and DSB-02 (applied text pins the
+accepted revision by commit and SHA-256 instead of citing the amendment by name),
+re-pins `design-system-freeze-hash` and the design freeze aggregate in the
+validator and its frozen report, runs the foundation, UX architecture, design and
+production validators, and is verified by an independent reviewer before R-039
+closes. The twelve `[UNRESOLVED GATE]` items in the amendment's section 7 remain
+open founder decisions and are not answered by this acceptance.
+
+**What this decision does not do.** It does not release B01 (held under G-4 until
+MA-029 returns clean), discharge MA-029, alter CB-06 or CB-07, or authorize any
+Figma MCP call, external write, implementation of the control in application
+code, publication, deployment, or push. R-035 to R-038, R-040 and R-041 are
+unchanged.
+
