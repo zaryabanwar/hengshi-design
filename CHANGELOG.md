@@ -17,7 +17,14 @@ operations.
   untouched.
 - **Validators before the commit:** UX 113/0, foundation PASS, stream tests 987
   checks; design and production each failed only their `git-write-scope` guard
-  on the uncommitted file. R-043 `in_progress` pending independent verification.
+  on the uncommitted file. After the commit: design 208/0, production 167/0.
+- **Independently verified 2026-09-25** (`reviews/r-043-treatment-verification.md`):
+  PASS, no finding; the exit test passed, a fresh clone at `af043fe` under
+  `core.autocrlf=true` running all four validators and the mapping test
+  unchanged. R-043 `closed`.
+- **R-044 logged** (`awaiting_human`): in that same clone the brand-identity
+  validator fails eight byte-pin checks and the compatibility validator reports
+  baseline source hash drift on `package.json`; both outside the rules so far.
 
 ### 2026-09-24 — R-042 line-ending freeze fragility treated (D-048)
 
