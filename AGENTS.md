@@ -49,6 +49,29 @@ Workflow approval gates:
 5. Do not create branches, commits, remotes, migrations, paid activations,
    external design writes, credential changes, production promotions, deployments,
    or other irreversible changes without their explicit applicable approval.
+   D-098 below supplies standing approval for scoped commits and normal pushes.
+
+Standing Git authorization — D-098 (2026-10-26):
+- When an assigned task/session finishes its coherent work and relevant checks
+  pass, commit that work to local `main` and push to the existing `origin/main`.
+  Do not ask for commit/push permission again. This applies to Hengshi Design
+  across Codex and Claude until the founder changes it; it is not a global hook.
+- This supersedes older commit/push deferrals in prompts, skills and checkpoints,
+  including `commit_authorized: false`. A later explicit founder hold takes priority.
+- Stage only the assigned outcome and its necessary docs/tests/assets. Preserve
+  unrelated or concurrent work; do not sweep it into a session-close commit.
+  Read-only/discussion sessions with no changes need no empty commit.
+- Verify branch, staged diff and existing remote before committing. Never force
+  push, reset, discard edits or rewrite shared history. If not on main, or a
+  conflict/divergence prevents safe delivery, report the specific Git blocker;
+  do not silently switch branches with dirty work or overwrite remote changes.
+- Do not commit secrets, machine-local credentials, browser profiles or caches.
+  Failed/incomplete work is not DONE merely because a session ends. Report the
+  test result, commit hash and confirmed push result separately; retain a clear
+  checkpoint if checks or push fail. No automatic next task or deployment.
+- Scope/design acceptance, migrations, new remotes, destructive actions, provider
+  changes, spending, external design writes, publication and deployment retain
+  their own gates. Git approval does not grant those actions.
 
 For UI work, generate or reference the relevant approved Google Stitch or Figma
 screen before implementation. Every indexable route must produce complete semantic

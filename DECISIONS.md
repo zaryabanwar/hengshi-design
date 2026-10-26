@@ -1543,3 +1543,31 @@ starts from the founder's new work-chat prompt. Operational/launch evidence stay
 separate from code completion; TODO/DOING/DONE/BLOCKED remain the task statuses.
 The product/definition label stays v1 under D-069; this dated decision records the
 governance amendment without inventing a product release.
+
+## D-098 — Standing session-close commit and push authorization
+
+**Date:** 2026-10-26
+**Authority:** The founder asked to "change the config to commit and push to local
+main when each task or session finishes its work" in the discussion chat.
+
+For this repository, finish each assigned coherent outcome and its relevant
+checks, commit its scoped changes to local `main`, then push to the existing
+`origin/main` without another Git approval request. This is persistent project
+guidance for Codex and Claude, not a machine-wide automation or authorization to
+start another task. Sessions with no changes need no empty commit.
+
+This supplies the explicit applicable Git approval required by the constitution
+and supersedes D-097 item 7's commit/push deferral and older prompt/checkpoint
+deferrals, including `commit_authorized: false`. A later explicit founder hold
+overrides this authorization. Uncommitted earlier packages remain uncommitted
+evidence until deliberately reconciled; this policy change does not mark them DONE
+or authorize sweeping unrelated work into the policy commit.
+
+Inspect the branch, staged scope and existing remote. Preserve unrelated changes,
+protected evidence and secrets; exclude machine-local credentials and caches.
+Do not force push, reset, rewrite shared history or discard work. Report a genuine
+branch/conflict/push blocker and preserve the checkpoint instead. Report relevant
+checks, commit hash and verified push result; a failed check cannot become DONE
+at session end. Other scope/design, migration, provider, spending, publication,
+external-write and deployment gates remain unchanged. AGENTS.md owns the working
+rule; CLAUDE.md already imports it.
