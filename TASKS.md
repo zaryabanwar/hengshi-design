@@ -1,6 +1,6 @@
 # Hengshi Design v1 — delivery tasks
 
-Status: DOING. D-097 approved 2026-10-25. Commits and pushes remain deferred.
+Status: DOING. D-097 approved 2026-10-25. Current-work commit/push to main approved 2026-10-26; future Git actions need approval.
 
 The founder assigns one outcome from the discussion chat; finish, report and stop.
 Read AGENTS.md, constitution and PROJECT_STATE.yaml; use relevant [definitions](docs/software-definition/04-reconciliation-map.md).
@@ -10,8 +10,8 @@ D-097 supersedes the universal Phase 1 build gate and hard correction counters.
 
 | Increment | Status | Exit |
 |---|---|---|
-| I1 Brand application and shared foundations | DOING | HSD-001 designs founder-accepted; local homepage/navigation verified; commit deferred. |
-| I2 Complete semantic website/content platform | DOING | HSD-002 assigned; Services designs prepared; broader public/staff scope remains. |
+| I1 Brand application and shared foundations | DOING | HSD-001 designs founder-accepted; local homepage/navigation committed; brand enrichment remains. |
+| I2 Complete semantic website/content platform | DOING | HSD-002 implemented and committed; broader public/staff scope remains. |
 | I3 Complete 2D service journeys | TODO | AI, consent/privacy, human handoff, booking and recovery work end to end with truthful external-state boundaries. |
 | I4 Full 3D World | TODO | Accepted campus, movement/streaming, sound, department/help journeys and four-stream parity implemented and verified. |
 | I5 Integrated launch qualification | TODO | Required operational, legal/content, account, device/load/accessibility, staging and deployment gates satisfied. |
@@ -20,14 +20,14 @@ All fourteen subjects and [accepted scope](docs/software-definition/05-consolida
 
 ## HSD-001 — homepage and navigation
 
-Status: DOING. Founder accepted references 246:7658 / 246:7883 and navigation.
+Status: DONE. Founder accepted references 246:7658 / 246:7883 and navigation.
 Local implementation: `apps/web/site`; previous nine Chromium passes were rerun
-successfully in HSD-002's combined sixteen-test suite 2026-10-26; commit deferred.
+successfully in HSD-002's combined sixteen-test suite 2026-10-26; committed in 28cc8bc.
 Homepage and Services preview: http://127.0.0.1:5174/; other destinations remain outside this package.
 
 ## HSD-002 — semantic Services browsing
 
-Status: DOING. Founder accepted the presented designs/copy and authorized implementation 2026-10-26.
+Status: DONE. Founder accepted designs/copy and implementation; committed in 28cc8bc after Git approval 2026-10-26.
 Reuse D-097, PROJECT taxonomy, canonical route inventory and approved UX §4.4.
 Six corrected Figma references in GOmLP6Cv96l768ueSrZ5Dg (desktop / 320px):
 Services `262:4660 / 262:4767`; wing `262:4903 / 262:4980`; detail `262:5072 / 262:5161`. Exports: `artifacts/hsd-002/design/final/`.
@@ -44,7 +44,7 @@ New checks: build/typecheck PASS; affected checks then combined16 Chromium tests
 
 ## Completion and retained gates
 
-DONE requires relevant tests and an approved commit; report deferred commit separately.
+DONE requires relevant tests and an approved commit; HSD-001/002 meet this bounded code-completion rule.
 Launch qualification remains separate; state stays within50 lines. Stop after HSD-002.
 No automatic next task/chat/goal. Git, migrations, destructive actions, providers/credentials,
 spending, publication and deployment require applicable approval.

@@ -8,15 +8,15 @@ engineering_contract: AGENTS.md
 current_work: docs/software-definition/05-consolidated-goal.md
 checkpoint:
   branch: main
-  base_head: 378b506
+  base_head: 28cc8bc
   historical_state: docs/archive/PROJECT_STATE-2026-09-23-pre-recovery.yaml
-  working_tree: approved_baselines_and_phase1_reconciliation_uncommitted
+  working_tree: accumulated_definition_design_and_HSD001_HSD002_committed
   application_code_changed_this_slice: true
-  commit_authorized: false
+  commit_authorized: true # Current accumulated work only; founder 2026-10-26
 current_task:
   id: HSD-002
-  outcome: HSD-002 implemented and locally verified2026-10-26 against founder-accepted designs/copy; all16 canonical Services routes and combined16 Chromium tests pass; richer approved-brand colour/graphics deferred until functional delivery; DOING pending approved commit
-  status: DOING
+  outcome: HSD-002 implemented and locally verified2026-10-26 against founder-accepted designs/copy; all16 canonical Services routes and combined16 Chromium tests pass; richer approved-brand colour/graphics deferred until functional delivery; code complete and committed; production qualification remains separate
+  status: DONE
   authority: D064_D065_D066_D067_D068_deferred_cloud_D069_v1_D070_entity_market_D071_layout_basis_D072_bounded_dev_CI_lint_exception_D073_single_empty_Figma_bootstrap_D074_QA_one_word_revision_exception_D075_B01_execution_organisation_D076_visitor_idle_EU_privacy_disclosure_and_demo_data_D077_temporary_evaluated_Three184_pair_D078_timing_successor_D079_single_call_exception_D080_refusal_call_exception_D081_pixel_export_exception_D082_combined_grammar_call_exception_D083_responsive_call_exception_D084_mode_call_exception_D085_existing_unit_export_exception_D086_three_call_recovery_batch_D087_read_only_diagnosis_D088_exact_diagnostic_retry_D089_OAuth_retry_and_replacement_review_D090_included_Figma_web_agent_D091_single_browser_cleanup_D092_explicit_directory_overlay_D093_accepted_source_binding_successor_D094_expanded_native_qualification_D095_MCP_computer_use_Design_agent_Make_routing_D096_bounded_pip_temporary_lifecycle_D097_incremental_AI_delivery_no_hard_revision_cap
   prior_definition_evidence:
     foundation: PASS
@@ -41,10 +41,10 @@ current_task:
   manual_action: MANUAL_ACTIONS.md # MA-031 acceptance resolved D065; B01 and legal gates remain
 previous_slice:
   accepted_fixes: "R044/D051/D052 prior reviewed fixes retained; latest rights/incident feature bindings have bounded PASS, uncommitted and not accepted. Pre-update checkpoint: output/research/checkpoint-reconciliation-2026-10-09/PROJECT_STATE.before.yaml."
-next_safe_action: "Return HSD-002 result to discussion; stop and await founder assignment. Working built preview http://127.0.0.1:5174/services. New build/typecheck and16 Chromium tests PASS (9 homepage regressions+7 Services); initialHTML/noJS all16 routes, all5wing/10service journeys, keyboard/focus,1440/320 reflow, empty evidence,404 and redirects verified; representative axe0 violations, no certification. Screenshots artifacts/hsd-002/local-implementation; accepted Figma262:4660/4767,4903/4980,5072/5161 in fileGOmLP6Cv96l768ueSrZ5Dg. Richer colour/graphics deferred per founder, tracked in TASKS. Booking/other destinations/publication/production graph remain unimplemented or unqualified. Commit/push/deployment/goal changes not authorized."
+next_safe_action: "HSD-001 and HSD-002 committed in 28cc8bc; push of this snapshot and checkpoint to origin/main explicitly approved. Continue only the next founder-assigned increment. Richer brand colour/graphics remains TODO after functional delivery. Booking, remaining public routes, admin/publication, 3D and launch qualification remain outstanding. 16 site Chromium tests previously verified; 255 schema tests passed during commit preparation."
 boundaries:
   figma_calls: "2026-10-26 HSD-002 fresh check: MCP Starter limit reached; whoami Full Starter verified. Design agent disabled/out of AI credits untilNov1. Native editing used; six additive editable text/vector references created, scoped defects corrected and six full-resolution exports inspected. Existing references preserved; no paid activation, repeated quota retry, settings/auth/sharing change."
   figma_production: D075_execution_approved_PRE_verified_six_initial_drafts_20_navigation_views_inspected_directory52_views2_components_created15_input_source_structure_two_scaled_preview_independent_bounded_PASS_attempt22_all52_full_resolution_pixels_96_input_independent_bounded_PASS_missing_states_complete_profiles_interaction_review_restore_EXIT_acceptance_held
   application_features: D097_relevant_increment_definition_design_contracts_compatibility_and_user_assignment_required
-  commits_and_pushes: deferred_by_founder
+  commits_and_pushes: approved_2026_10_26_for_current_accumulated_work_only
   external_writes: existing_scope_and_approval_required
