@@ -1,0 +1,65 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "checked_date": "2026-10-17",
+  "context7": {
+    "library_id": "/jpadilla/pyjwt",
+    "scope": "Fixed algorithm/key binding, RS256 built-ins, required claims, issuer/audience/leeway. Returned master/usage examples are guidance, not exact installed implementation evidence; no example private keys copied."
+  },
+  "official_sources": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8725.html",
+      "supports": "Fixed algorithm/key validation, explicit token typing, distinct token contexts and distrust of received claims. Does not prescribe this profile, clock, kid or two-key inventory."
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc7518.html#section-3.3",
+      "supports": "RS256 uses RSASSA-PKCS1-v1_5 with SHA256 and requires RSA2048bits or larger.3072 is the candidate choice, not this minimum."
+    },
+    {
+      "url": "https://pyjwt.readthedocs.io/en/stable/api.html",
+      "observed_label": "2.15.1",
+      "supports": "Decode API, fixed algorithms, issuer/audience, strict audience/required presence/leeway options; required presence is not full claim validity."
+    },
+    {
+      "url": "https://cryptography.io/en/50.0.2/hazmat/primitives/asymmetric/rsa/",
+      "supports": "RSA key object/generation and signature APIs; this is retained-candidate source guidance, not selection of the production graph."
+    }
+  ],
+  "excluded_source": {
+    "url": "https://cryptography.io/en/latest/hazmat/primitives/asymmetric/rsa/",
+    "observed_label": "51.0.0-dev1",
+    "reason": "The latest docs resolve to development material; excluded as stable production authority."
+  },
+  "no_registry_or_runtime_selection": "No new package version is selected or installed; complete graph/source behavior and implementation admission remain held.",
+  "installed_source_observation": {
+    "path": "output/research/test-client-graph-2026-10-09/native-trial/environment/Lib/site-packages/jwt/api_jwt.py",
+    "bytes": 22343,
+    "sha256": "a2af9f3593c8cf9133163cb0b5b08223281b8292d5db5665309bc23c212cac76",
+    "identity": [
+      {
+        "path": "output/research/test-client-graph-2026-10-09/native-trial/environment/Lib/site-packages/pyjwt-2.15.1.dist-info/METADATA",
+        "identity_lines": [
+          "Name: PyJWT",
+          "Version: 2.15.1"
+        ],
+        "sha256": "1ea0c9f139b8c928276b3628af165955f6f764491448a6ad8f103cdcbb382da3"
+      }
+    ],
+    "selected_source_lines": [
+      {
+        "line": 384,
+        "text": "def _validate_claims("
+      },
+      {
+        "line": 401,
+        "text": "now = datetime.now(tz=timezone.utc).timestamp()"
+      },
+      {
+        "line": 409,
+        "text": "if \"exp\" in payload and options[\"verify_exp\"]:"
+      }
+    ],
+    "method": "Read library files as text only; no jwt import, token/key construction or crypto execution.",
+    "limits": "Source observation of earlier isolated environment only; does not select a graph, admit3.15 or prove runtime clock alignment/current-session enforcement."
+  }
+}

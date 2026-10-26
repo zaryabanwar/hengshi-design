@@ -1,0 +1,189 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-14",
+  "reviewer": "Independent agent /root/review_native_trial_result_v1",
+  "review_complete": true,
+  "review_outcome": "REQUEST_CHANGES",
+  "scope": "Frozen native trial result accounting and prospective single caption/background candidate only. No external action, application, whole B01 or Phase1 acceptance.",
+  "packet": {
+    "path": "review-inputs-v1.json",
+    "sha256": "5c56cfd17163d363c1a905dd9cf29f9b1718b0582f73517c28f00181313e8887",
+    "declared_input_count": 78,
+    "actual_input_count": 78,
+    "source_hash_and_bytes_matches": 78,
+    "frozen_hash_and_bytes_matches": 78,
+    "failures": [],
+    "binding_rule": "Each source and snapshot was independently SHA256/byte checked against all78 packet entries. No later successor or navigation update inherits this review."
+  },
+  "verdicts": {
+    "result_accounting": {
+      "outcome": "REQUEST_CHANGES",
+      "conclusion": "Limited NQ01-05 observations, actual flow creation, configuration/behavior separation, stopped NQ06 and no overall qualification PASS are broadly accounted correctly. However the absent-caption claim is contradicted by identical rendered Services-region bytes in all14 unscrolled saved NQ PNGs and a readable NQ06 target. Resolve NR-01 in a separate successor preserving the packet."
+    },
+    "prospective_proposal": {
+      "outcome": "REQUEST_CHANGES",
+      "conclusion": "The proposed write boundary is appropriately finite, but its caption-disappearance premise is not established by saved pixels and it is not established as necessary or sufficient. Hold the fill/detach candidate while the existing readable target can be admitted for unchanged observations. If later actual evidence requires repair, correct the rationale and retain exact admission/no-graph-change safeguards and explicit founder repair authorization. This is no executable repair permission."
+    },
+    "unchanged_observation_continuation": {
+      "outcome": "PASS",
+      "conclusion": "The false absent-current-target reason can be corrected and the already approved unchanged NQ observation can be freshly admitted when its actual visible background target is identifiable. This does not require the proposed fill/detach. Existing founder trial/resume approval supplies authority; this review adds none. Freshly verify same owned allocation/flow and current readable label/state/context before continuing, record actual outcomes and stop on any unavailable observation, mismatch, quota or scope change. No data/appearance/text/reaction edit or automatic repair is included."
+    }
+  },
+  "findings": [
+    {
+      "id": "NR-01",
+      "priority": 2,
+      "subject": "Correct screenshot-specific caption accounting",
+      "evidence": [
+        "inputs/00-native-qualification-result-v1.json:63-65",
+        "inputs/00-native-qualification-result-v1.json:79-90",
+        "inputs/01-native-trial-caption-background-correction-proposal-v1.json:8-14",
+        "All14 unscrolled NQ PNGs at region426,238,646,294",
+        "inputs/73-NQ06-unavailable-background-control-v1.png"
+      ],
+      "problem": "NQ06 says the current Services rectangle lacks a readable caption and no identifiable target exists. Its frozen screenshot visibly has Services (fixture), active Detailed/HIGH, selected Balanced/MEDIUM and an open panel. More decisively, independent PIL inspection shows the exact Services-region426,238,646,294 pixels byte-identical across all14 unscrolled saved NQ PNGs, including entry, medium, pending, every close/reopen and NQ06. Region SHA256 bc79f4b7355815871a0bb160fc0df680cdc456bc95b1272d0289a44cb1ff318a. Thus the saved PNGs do not corroborate the producer caption-disappearance perception. Earlier reviewer visual reads of apparent absence were inconsistent with identical bytes and are withdrawn. No actual Figma rendering/root cause is established.",
+      "required_action": "Preserve frozen inputs. In a successor separate producer-reported perception from corroborated saved pixels, withdraw unsupported saved-image caption-disappearance/current-target assertions and the proposed repair necessity, retain NQ06 unexecuted at this packet and no overall PASS. If unchanged NQ06 resumes, admit the actual readable target and exact state/context before each prescribed observation. Preserve actual failure/unavailability evidence; do not edit the trial or infer root cause.",
+      "authority_effect": "This corrects evidence accounting only. It neither authorizes the separate repair nor requires a new repair gate merely to inspect an already readable target under existing unchanged-trial authority."
+    }
+  ],
+  "actionable_finding_count": 1,
+  "configuration_assessment": {
+    "outcome": "PASS",
+    "observed": "Saved native inspectors support eight unique active/pending/directory variants at recorded320x1150 geometry, sixteen configured Change to settings with one action/Instant, two Apply controls without configured click transitions, owned Section101:3204/set85:3174/preview94:3199/instance94:3177 and one labelled flow. Closed-body settings are saved configuration evidence; actual closed-panel pixels remain separately observed.",
+    "target_identity_limit": "Destination node IDs are resolved from unique owned Active/Pending/Directory tuples and hierarchy, not directly disclosed by the reaction panel. Key/Gamepad settings are configuration only; no successful four-pair Escape test is established by them.",
+    "privacy_limit": "Saved sharing scope is info's team with edit access, not Anyone/public. This is team-restricted, not owner-only; no membership audit or permission enforcement test."
+  },
+  "screenshot_assessment": [
+    {
+      "id": "NQ-01",
+      "evidence": [
+        "inputs/53-NQ01-after-apply-scroll-v1.png",
+        "inputs/54-NQ01-after-context-v1.png",
+        "inputs/55-NQ01-before-apply-scroll-v1.png",
+        "inputs/56-NQ01-entry-v1.png"
+      ],
+      "conclusion": "Entry shows Detailed active and Balanced pending; later context shows Balanced active/pending. Privacy and storage anchor remains approximately y654 in before/after scroll captures, which are byte-identical. Supports supplied anchor observation, not hidden scroll-state/replay proof. Services regions match readable NQ06 pixels exactly; no saved-caption disappearance is substantiated. Dark Services/design context is barely visible."
+    },
+    {
+      "id": "NQ-02",
+      "evidence": [
+        "inputs/57-NQ02-after-current-apply-v1.png",
+        "inputs/58-NQ02-before-current-apply-v1.png",
+        "inputs/59-NQ02-closed-medium-v1.png",
+        "inputs/60-NQ02-reopened-medium-v1.png"
+      ],
+      "conclusion": "Before/after current Apply retain visible content/anchor while after has Figma blue interaction highlighting/chrome; literal pixel equality is not claimed. Closed capture exposes Open directory and MEDIUM context; reopen shows Balanced active/pending and Close directory. Both Services regions equal readable NQ06 region exactly. Supports limited no-op and MEDIUM close/reopen, not real focus/inertness."
+    },
+    {
+      "id": "NQ-03",
+      "evidence": [
+        "inputs/61-NQ03-detailed-pending-medium-active-v1.png"
+      ],
+      "conclusion": "Panel says currently Balanced while Detailed is selected. Supports HIGH pending with MEDIUM active. Services region equals readable NQ06 region exactly; no saved caption absence. Appearance is not native radio semantics/application state."
+    },
+    {
+      "id": "NQ-04",
+      "evidence": [
+        "inputs/62-NQ04-after-apply-scroll-v1.png",
+        "inputs/63-NQ04-after-current-apply-v1.png",
+        "inputs/64-NQ04-before-apply-scroll-v1.png",
+        "inputs/65-NQ04-high-active-and-pending-v1.png"
+      ],
+      "conclusion": "Context capture shows currently Detailed and selected Detailed, open panel and Services caption. Scroll anchor before/after stays approximately y654. Current-Apply after includes blue Figma highlighting but same content/anchor. Supports limited HIGH Apply/current-choice observation, not runtime scroll guarantees."
+    },
+    {
+      "id": "NQ-05",
+      "evidence": [
+        "inputs/66-NQ05-cycle1-closed-v1.png",
+        "inputs/67-NQ05-cycle1-reopened-v1.png",
+        "inputs/68-NQ05-cycle2-closed-v1.png",
+        "inputs/69-NQ05-cycle2-reopened-v1.png",
+        "inputs/70-NQ05-cycle3-closed-v1.png",
+        "inputs/71-NQ05-cycle3-reopened-v1.png",
+        "inputs/72-NQ05-high-active-medium-pending-v1.png"
+      ],
+      "conclusion": "Three closed captures expose Open directory and HIGH context; three reopened captures show currently Detailed, Balanced selected and Close directory. Supports supplied HIGH-active/MEDIUM-pending round-trip pairs. Closed pixels do not show pending independently. All seven NQ05 Services regions match readable NQ06 pixels exactly; earlier apparent absence reads are withdrawn. No timing-extension, DOM focus, AT or guarantee of live rendering persistence."
+    },
+    {
+      "id": "NQ-06",
+      "evidence": [
+        "inputs/73-NQ06-unavailable-background-control-v1.png"
+      ],
+      "conclusion": "Caption Services (fixture) is visible; currently Detailed and selected Balanced. No actual background click, Escape or all-four-pair sequence was completed in this frozen packet. Retain unexecuted/unavailable disposition at this packet, but correct its unsupported absent-current-caption explanation."
+    }
+  ],
+  "proposal_assessment": {
+    "executed": false,
+    "repair_authorized": false,
+    "ownership_check": "All eight enumerated fixture parent/control pairs agree with the saved owned host child inventory. They are separate from the sixteen reacting sources and two current-Apply noops. Enabled Detach instance is saved for only M_OPEN_M85:3220; other targets are not pre-passed.",
+    "background_check": "Preview inspector has an empty own Fill section and Add fill, while descendant selection colors include D035/palette/white. White at100% on only94:3199 is a reasonable contrast candidate; this review does not establish a bound fill after execution.",
+    "caption_check": "Saved Design inspector85:3220 shows Label Services (fixture), x24/y76,220x56 and cyan-light/white tokens; Design renders caption. Producer perceived Presentation loss, but saved unscrolled Presentation Services regions are identical and legible in NQ06, so a saved Design/Presentation caption difference is not established. Specific cause/repair necessity unproven.",
+    "official_document_check": {
+      "url": "https://help.figma.com/hc/en-us/articles/360061175334-Create-interactive-components-with-variants",
+      "verified_date": "2026-10-14",
+      "support": "Official guidance describes default-variant override preservation and limits to other-variant overrides in Presentation. It does not diagnose this file or demonstrate that detaching these eight fixtures cures the symptom.",
+      "frozen_packet_limit": "Read-only supplemental official guidance verification; not an additional frozen input."
+    },
+    "required_execution_conditions": [
+      "Explicit founder authorization for this exact repair/resume before any design/data write; original trial approval does not cover post-failure repair.",
+      "Freshly admit each exact owned fixture and actual caption/geometry/typography/token/child roles/no reactions immediately before detach; stop if any required value or enabled command is unavailable.",
+      "Use only Detach instance for those eight controls, never Detach all nested instances/source overrides/master reset/delete/recreate.",
+      "Inspect actual resulting local geometry/text types, IDs, ownership, dimensions, typography, caption, tokens and absent reactions; do not assume a numerical ID successor, assume success from command availability, or expand scope to fix an unexpected result.",
+      "Preserve eight hosts,16 reaction sources/owned target tuples,two noops,one flow,preview/instance and original sources/account/sharing settings. Save before/after archives as preservation only.",
+      "Repeat unchanged NQ01-NQ06 with captions identifiable and actual context/state/scroll observations. Stop on any mismatch/unavailable observation; no automatic second repair. Any later result needs its own bounded review."
+    ],
+    "sufficiency_limit": "Finite write guards make the candidate reviewable in principle, but current saved-caption evidence does not justify detachment as necessary. White fill is a plausible local contrast change, not needed authority for fresh readable-target observations and not a product accessibility assessment. Hold candidate pending actual evidence/revised rationale and separate founder approval if it is later needed."
+  },
+  "archive_replay": {
+    "archive": "inputs/05-after-native-qualification-v1.fig",
+    "bytes": 386596,
+    "sha256": "713d6d18730d92ceae13e721e74ace2a6dd20b18c914e0bc24008f88dcd17071",
+    "crc_failure": null,
+    "independently_replayed": "Python zipfile.testzip and each entry byte/SHA256 exactly reproduce the integrity record.",
+    "canvas_sha256": "e7d6b71e9e0c24d96b8815bb4a4619c129fd43b0ccd3b9d42fd6584ba5c71795",
+    "limits": "CRC/hash/preservation only. No import/restore, semantic equality, original-source equivalence or harmless-reserialization claim. Prior unequal canvas payloads and label selector churn remain unresolved."
+  },
+  "authority": {
+    "prior_trial": "Approve this isolated Figma trial",
+    "prior_resume": "Resume the same trial after recovery",
+    "provenance": "Trusted commissioning and frozen Section result receipt supply exact prior approvals, not a new live approval retrieval.",
+    "prior_reviews": "Frozen Section entry/result and qualification-plan receipts retain their bounded scopes only; no whole-feature or phase acceptance inherited.",
+    "external_actions_by_reviewer": 0
+  },
+  "retained_obligations": [
+    "All22 full B01 scenarios remain distinct from these six mechanism observations.",
+    "Four public streams and full required profiles/viewports/modes/recovery/failure/accessibility obligations remain.",
+    "Native tested restore/_EXIT, source preservation evidence, founder pilot and integrated B01/Phase1 acceptance remain.",
+    "No application implementation, real search/booking/capability detector/auth/security enforcement, public release, credentials, MCP/AI, paid activation, Git or deployment follows."
+  ],
+  "review_actions": [
+    "Read-only source/frozen hashing and saved inspector/hierarchy/configuration review.",
+    "All21 NQ captures inspected, with original-resolution reinspection of labels/markers/captions; two additional flow/Design diagnostic images inspected.",
+    "Read-only official Figma article check.",
+    "Independent ZIP CRC/entry hashing.",
+    "Only this receipt written; no UI/account/design/tool setting action, subordinate agent, application or Git mutation.",
+    "Independent read-only PIL byte comparison of Services region across all14 unscrolled PNGs corrected inconsistent vision reads; no image file edited."
+  ],
+  "validation_classification": {
+    "artifact_integrity": "PASS at frozen packet",
+    "native_observation": "Limited supplied screenshots/producer sequence, NQ06 unexecuted in packet",
+    "overall_qualification": "No PASS",
+    "product_correctness_accessibility_readiness": "Not established"
+  },
+  "out_of_packet_context": "Producer acknowledged readable NQ06 target and independently supplied pixel-equality caution; reviewer independently reproduced region equality. Producer proposes unchanged fresh observations without repair. Later actual results and navigation remain outside this frozen review.",
+  "caption_pixel_replay": {
+    "region": [
+      426,
+      238,
+      646,
+      294
+    ],
+    "count": 14,
+    "region_raw_pixel_sha256": "bc79f4b7355815871a0bb160fc0df680cdc456bc95b1272d0289a44cb1ff318a",
+    "all_identical": true,
+    "bright_pixel_threshold": "min RGB >120 within430,242,642,290",
+    "bright_pixel_count": 408,
+    "limitations": "Raw byte equality and visible NQ06 caption establish matching saved region only. No diagnosis of why agent perceived differing displayed captions or of actual live rendering/capture behavior."
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "review_authorized": false,
+  "scope": "Read-only proposed dependency-role closure and two bounded document amendments; no profile installation/import, package/tool selection, app/Figma/account/Git action.",
+  "inputs": [
+    {
+      "path": "docs/phase-1-compatibility/backend-evidence-2026-10-04.md",
+      "bytes": 55642,
+      "sha256": "7098dc472d72a091b1bb2fecb0e1fb1d3777a0ae786bcf4455ff5c24cf7c87ca"
+    },
+    {
+      "path": "docs/phase-1-compatibility/README.md",
+      "bytes": 44196,
+      "sha256": "b407139611c1dae652c4791742f7dc568b8b918cfcf581bca8cfaa06e522aee5"
+    },
+    {
+      "path": "output/research/backend-role-closure-2026-10-09/backend-appendix.md",
+      "bytes": 3874,
+      "sha256": "2ee1c726474e29bae2bdaa1336c11fda41ceccb872cde6ee480a3f965b31d544"
+    },
+    {
+      "path": "output/research/backend-role-closure-2026-10-09/backend.before.md",
+      "bytes": 51768,
+      "sha256": "682486d56c19bf226147fefd04b85f050b732137424b4db4fd11c864fcb694c6"
+    },
+    {
+      "path": "output/research/backend-role-closure-2026-10-09/backend.proposed.md",
+      "bytes": 55642,
+      "sha256": "7098dc472d72a091b1bb2fecb0e1fb1d3777a0ae786bcf4455ff5c24cf7c87ca"
+    },
+    {
+      "path": "output/research/backend-role-closure-2026-10-09/capture_primary.py",
+      "bytes": 1456,
+      "sha256": "bd176d179ba4f6f614faf8be023a6e657af287e36f500ca40f01b7e3b79463ea"
+    },
+    {
+      "path": "output/research/backend-role-closure-2026-10-09/context7-guidance.json",
+      "bytes": 7143,
+      "sha256": "3ba9884ee4c093b27de74ed77058b52af0aa26ca8bad79f73b8fceb70322cc50"
+    },
+    {
+      "path": "output/research/backend-role-closure-2026-10-09/dependency-groups.rst.gz",
+      "bytes": 3177,
+      "sha256": "8d5e24ad4179b6339c04b080233da25bc545c9cbb36c46efae3b6fa588ca03b9"
+    },
+    {
+      "path": "output/research/backend-role-closure-2026-10-09/dependency-specifiers.rst.gz",
+      "bytes": 10128,
+      "sha256": "e1090a266a3f8cce2c4a06874584783be4b7e643d48986c014d35e1ac3c3e9a9"
+    },
+    {
+      "path": "output/research/backend-role-closure-2026-10-09/derive_profiles.py",
+      "bytes": 7188,
+      "sha256": "28cecb0c6bd7a97499cc8318fe04e8af2f25060643eaf965d87c9f7e89ba755b"
+    },
+    {
+      "path": "output/research/backend-role-closure-2026-10-09/package-roles.csv",
+      "bytes": 8007,
+      "sha256": "f83322bdfac1f5f3dc393a86009cd94a5283fae1fa5939903bd316296427fd03"
+    },
+    {
+      "path": "output/research/backend-role-closure-2026-10-09/prepare_proposal.py",
+      "bytes": 7225,
+      "sha256": "6bbc57a2590e77276e71f5d4101e6332b820f2119964a27cc4e7b3ffa81870c3"
+    },
+    {
+      "path": "output/research/backend-role-closure-2026-10-09/primary-guidance.json",
+      "bytes": 862,
+      "sha256": "d6257d9db1d6e35c70c2037c3fd69c2b3861610ef1bd09f45cc22a4e3eb7fb0b"
+    },
+    {
+      "path": "output/research/backend-role-closure-2026-10-09/profiles.json",
+      "bytes": 41718,
+      "sha256": "b61f79ca768c870a3d9b3aaf368c6c4b28b46e3b0575c00589d2e1e860b58ac5"
+    },
+    {
+      "path": "output/research/backend-role-closure-2026-10-09/README.before.md",
+      "bytes": 43755,
+      "sha256": "ac22b5a892035858b67305d561957bfaa7af335c19a9fdac51010562e039e629"
+    },
+    {
+      "path": "output/research/backend-role-closure-2026-10-09/README.proposed.md",
+      "bytes": 44196,
+      "sha256": "b407139611c1dae652c4791742f7dc568b8b918cfcf581bca8cfaa06e522aee5"
+    },
+    {
+      "path": "output/research/backend-wheel-notice-inventory-2026-10-09/observations.json",
+      "bytes": 74276,
+      "sha256": "c0287b2036d087c93482c3f0d24323a50bef19ab896ef8830f9474eaa850d916"
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/review/independent-review-identity-client-options-v1.json",
+      "bytes": 3749,
+      "sha256": "286f8f2e2cd4c13b6a018a8c013c711231bf54388f724eed4933b2771fdc3376"
+    },
+    {
+      "path": "output/research/test-client-graph-2026-10-09/candidate-hashed-requirements.txt",
+      "bytes": 4771,
+      "sha256": "6a33a9ff06cbe84855b2dc5008ecbd61498800fac66779f85b883094da1d44b1"
+    },
+    {
+      "path": "output/research/test-client-graph-2026-10-09/candidate-roots.txt",
+      "bytes": 395,
+      "sha256": "ecc6adf0f01bcae70210ee9c78689d1a3850864e2e422efa1fa47d8c055c0abe"
+    },
+    {
+      "path": "output/research/test-client-graph-2026-10-09/closure-observations.json",
+      "bytes": 19140,
+      "sha256": "f979543df57552aac1c08dd61ac3f1322e3629777dfc10229e6ff976b5c47f1f"
+    },
+    {
+      "path": "output/research/test-client-graph-2026-10-09/native-trial/receipt.json",
+      "bytes": 777,
+      "sha256": "274a4a383bf5205f496330118d1bb4f7e1d6ee95ea410d6817d7691328aa5f22"
+    },
+    {
+      "path": "output/research/test-client-graph-2026-10-09/pip-report.json",
+      "bytes": 552827,
+      "sha256": "e81b7570efc6903d4074151a61cfdca9060c02f5da59236bee353eddb1831462"
+    },
+    {
+      "path": "output/research/test-client-graph-2026-10-09/receipt.json",
+      "bytes": 2821,
+      "sha256": "0e161bd77fbc832bf99512f02e7b7481fc33042c07d9f14640b259f5d386f831"
+    },
+    {
+      "path": "output/research/test-client-graph-2026-10-09/result-review/independent-review-native-notices-v1.json",
+      "bytes": 8155,
+      "sha256": "00f6b34840473e24150d1d8f8560bb1c609ef47dafeb8fcddedf58791fdc5f1d"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "status": "DOING",
+  "review_verdict": "REVISE",
+  "date": "2026-10-08",
+  "scope": "79 frozen inputs: appended asymmetric-JWT crypto metadata closure, compatibility README entry and proposed isolated native qualification plan only.",
+  "manifest_sha256": "0ee12b239f49ee02c1ae8868c8d0c02a2d9561c854f89c83e24271b0e2b8ad57",
+  "metadata_replay_verdict": "PASS",
+  "integrity": "All 79 snapshot/live sizes and hashes match. Backend evidence preserves its entire before prefix; README has one insertion and no prior content changes.",
+  "independent_replay": {
+    "packages": 43,
+    "active_edges": 48,
+    "roots": 12,
+    "previous40_metadata_and_download_info_exactly_equal": true,
+    "added": [
+      "cffi",
+      "cryptography",
+      "pycparser"
+    ],
+    "all_packages_reachable_from_roots": true,
+    "protected_inputs_unchanged": 6,
+    "exact_registry_and_primary_document_raw_hashes": 5,
+    "archive_bytes": 18107329,
+    "details": "Markers/extras fixed point, ranges, Python restrictions, compatible wheel tags, registry artifact identities/hashes, all43 hash pins and added classifiers reproduce saved observations."
+  },
+  "findings": [
+    {
+      "id": "CRYPTO01",
+      "severity": "P2",
+      "path": "output/research/backend-crypto-graph-2026-10-08/qualification-plan.json",
+      "lines": "22-25",
+      "related": "docs/phase-1-compatibility/backend-evidence-2026-10-04.md:345-346",
+      "problem": "The plan checks download/output budget before installation and retained size afterward, but does not reserve expanded wheel content, environment/installer temporary output and probe/log overhead. 18,107,329 compressed archive bytes cannot establish that installation stays within 256 MiB or retains 1 GiB free disk. A post-install failure is too late to preserve those prospective constraints.",
+      "requested_change": "Before any separately authorized installation, inspect hash-verified wheels without importing/executing/extracting them and conservatively reserve declared expanded sizes plus explicit installation/temporary/probe overhead against measured retained new-output and free disk. Refuse insufficient or unknown capacity; check actual footprint/free space at boundaries. Describe this as an admission/stop budget rather than an OS-enforced hard ceiling or compressed-metadata footprint guarantee."
+    }
+  ],
+  "plan_assessment": "Separate founder authorization, new pip-less target/refusal of existing target, hashed binary/no-deps download and offline install intent, existing-environment protection, synthetic-only probes, no provider/database/server/account operation and no automatic cleanup are explicit. The footprint safeguard above remains unresolved.",
+  "source_assessment": "Saved pinned PyJWT installation documentation supports RSA/ECDSA cryptography coupling and crypto-extra spelling. PyJWT primitives do not select or implement the full OIDC/PKCE client, current Entra identity/session authority or nonce lifecycle.",
+  "replay_evidence": {
+    "path": "independent-replay-results.json",
+    "sha256": "0be5e5a5934b272238164b5b63588d13d44a10ffae2519912742ff164cc6073c"
+  },
+  "limits": [
+    "Compressed registry totals are not wheel contents or installed footprint. The saved metadata/classifiers and hashes do not prove native API/ABI, supported release channels, authenticity/provenance, full licences/advisories or whole-graph newest-compatible selection.",
+    "Earlier40-package receipt retains its original scope and supplies no review or execution authority for the three additions or prospective trial.",
+    "No installation, network, app/config/account/Figma/Git changes, cleanup or fan-out; only reviewer script/results/receipt written.",
+    "Release/provenance/licence/native qualification, actual application/provider/database behavior and integrated/founder acceptance remain separate."
+  ]
+}

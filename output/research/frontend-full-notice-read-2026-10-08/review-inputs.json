@@ -1,0 +1,1652 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Full text notice discovery, immediate root-name inventory and fixed registry/source pointer associations only; no licence applicability, provenance, full graph or adoption approval",
+  "candidate_base": "output/research/frontend-three-remedy-evaluation-2026-10-06/candidate",
+  "inputs": [
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "review-inputs/.specify/memory/constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "review-inputs/AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "review-inputs/DECISIONS.md",
+      "bytes": 86352,
+      "sha256": "dd31d6026aedd1a03e966e055724b2f02783147291525f1740341848837eed74"
+    },
+    {
+      "source": "PROJECT.md",
+      "snapshot": "review-inputs/PROJECT.md",
+      "bytes": 10942,
+      "sha256": "a483bd2713fe420322772ab7fb07c848aaf103088697c05ab91f35d2e5ea1461"
+    },
+    {
+      "source": "PROJECT_STATE.yaml",
+      "snapshot": "review-inputs/PROJECT_STATE.yaml",
+      "bytes": 8475,
+      "sha256": "f87b87f36766d00c07c19bb0030646c1d729fc8e1e43e00845dbf5e18290ccbf"
+    },
+    {
+      "source": "TASKS.md",
+      "snapshot": "review-inputs/TASKS.md",
+      "bytes": 6728,
+      "sha256": "590da697f0da1c2bc38f648d53dd9be8fe2bec0df0dc209ab9adf5af5f050c21"
+    },
+    {
+      "source": "docs/phase-1-compatibility/README.md",
+      "snapshot": "review-inputs/docs/phase-1-compatibility/README.md",
+      "bytes": 37871,
+      "sha256": "57fab59b2e515f6ff38f00d6227c89364f310327de3b19e96db65fbd2cdd353e"
+    },
+    {
+      "source": "docs/phase-1-compatibility/refresh-evidence-2026-10-04.md",
+      "snapshot": "review-inputs/docs/phase-1-compatibility/refresh-evidence-2026-10-04.md",
+      "bytes": 106021,
+      "sha256": "e2047f0787bee790285c793a0b5be81857e959968b7df89daf8ad56baa8fc242"
+    },
+    {
+      "source": "docs/phase-1-compatibility/reviews/frontend-supply-chain-v1-2026-10-06.md",
+      "snapshot": "review-inputs/docs/phase-1-compatibility/reviews/frontend-supply-chain-v1-2026-10-06.md",
+      "bytes": 8032,
+      "sha256": "ab665228adaff48b15284acd9dedb32ed078133b53b95ea58ace6a79fc1cbd34"
+    },
+    {
+      "source": "docs/phase-1-compatibility/reviews/installed-notice-discovery-v1-2026-10-08.md",
+      "snapshot": "review-inputs/docs/phase-1-compatibility/reviews/installed-notice-discovery-v1-2026-10-08.md",
+      "bytes": 2987,
+      "sha256": "d0886f94b79de1c96c2e492642e85358c23383634f67be0f69a1690fe55ff3d0"
+    },
+    {
+      "source": "docs/software-definition/README.md",
+      "snapshot": "review-inputs/docs/software-definition/README.md",
+      "bytes": 22142,
+      "sha256": "bfda1a52a26c4264f00471df7ba2164ae600e2d612f932d357e31ba8a8ba63b2"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/README.md.before",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/README.md.before",
+      "bytes": 37317,
+      "sha256": "52ceb9d78872cd4d3bbb8e3ff7912f02ff303898bdd92188fae4dd0bc09bd577"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/observations.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/observations.json",
+      "bytes": 476560,
+      "sha256": "3665fa64a1a62abf814d261062876e3589008da5f0c58e76f9e1c50deb9dbeb3"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/pinned-upstream-notice-associations.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/pinned-upstream-notice-associations.json",
+      "bytes": 9506,
+      "sha256": "aa33d109d8150bdd92ecdda9eb7b4bca28c2a86fa62dae428a55748f9cf9a2e9"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/pinned-upstream-notices/draco3d/8786740086a9f4d83f44aa83badfbea4dce7a1b5-LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/pinned-upstream-notices/draco3d/8786740086a9f4d83f44aa83badfbea4dce7a1b5-LICENSE",
+      "bytes": 13898,
+      "sha256": "d3709b0fb4b8a94bbb1d02b8a2e484f258b0d9c5c5a01f940391f3fe662cd1a4"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/pinned-upstream-notices/react-three__fiber/53ec672ac4a7189711766b87ece18889abbb32d4-LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/pinned-upstream-notices/react-three__fiber/53ec672ac4a7189711766b87ece18889abbb32d4-LICENSE",
+      "bytes": 1072,
+      "sha256": "9c35b5de7b7493a707fffe4eb23bd2f7f449153c1911f7c6eefb4e591fd5349a"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/pinned_notices.py",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/pinned_notices.py",
+      "bytes": 3897,
+      "sha256": "54279cdfb370dfa1b37d976bdd6a2fe8f9546551e56007e8f4a78e211674b48e"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/primary-source-observations.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/primary-source-observations.json",
+      "bytes": 908,
+      "sha256": "cc22d0b342a23690172bbeb95f8047b38c1957b22e14c8f6d0b092c8d6cb6aac"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/probe.py",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/probe.py",
+      "bytes": 6828,
+      "sha256": "76024e27e479e5dd23600e6658bea94f62ba43b8c58375b450a68fcc61638023"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/reconcile.py",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/reconcile.py",
+      "bytes": 7478,
+      "sha256": "a829cd7397b647f12a187afc8e5acbdcf41e45c27f583ee403ac4c99512ead6f"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/refresh-evidence-2026-10-04.md.before",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/refresh-evidence-2026-10-04.md.before",
+      "bytes": 100885,
+      "sha256": "49b48c053647a61208d82daba22e24065e00b05449136824d33150f948d00cc8"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/registry-source-associations.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/registry-source-associations.json",
+      "bytes": 9506,
+      "sha256": "46c9c5d5c83276a7c27b4516dc7e2219736924e84d98503177834c6ca04011e5"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/registry/draco3d-1.5.7.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/registry/draco3d-1.5.7.json",
+      "bytes": 1665,
+      "sha256": "066db0a2ad4cae484c67cfd8ffb23eee0a83340110a4b623491cae7cd857c2a6"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/registry/esrecurse-4.3.0.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/registry/esrecurse-4.3.0.json",
+      "bytes": 2776,
+      "sha256": "ac2df97d55c40cfcdb00de7101bbbc2ef0e308d011c7aec1caac1f6ed342b821"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/registry/gsap-3.15.0.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/registry/gsap-3.15.0.json",
+      "bytes": 2137,
+      "sha256": "787e4fdba7edc45b2a67af281508c4e518ad985ee0d972b9238847fa807768a9"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/registry/humanfs__types-0.15.0.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/registry/humanfs__types-0.15.0.json",
+      "bytes": 1595,
+      "sha256": "debc8d4e7eb6bf6c1e25264f6cca07bccab958e3b8a16d9e79e1554dfa927917"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/registry/imurmurhash-0.1.4.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/registry/imurmurhash-0.1.4.json",
+      "bytes": 6206,
+      "sha256": "607afc2d3b38969d94532f32df526cb44a2f1715eb726a9963bfeb7334488297"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/registry/maath-0.10.8.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/registry/maath-0.10.8.json",
+      "bytes": 1466,
+      "sha256": "b4b9d2143d191dd25e9013c7da294104c389e83daa4f84a53e0bc6097c5be0f0"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/registry/mediapipe__tasks-vision-0.10.17.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/registry/mediapipe__tasks-vision-0.10.17.json",
+      "bytes": 1659,
+      "sha256": "f455afad0f8d38aa6d3d15f80a3069d9ad5260ec94fcd4c8483a469b6e6ac513"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/registry/natural-compare-1.4.0.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/registry/natural-compare-1.4.0.json",
+      "bytes": 1791,
+      "sha256": "8b910f6ec433d27eb98fa7d846e586b7ce571ed92e0da5685d6e77c1689cc9d4"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/registry/react-three__fiber-9.8.1.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/registry/react-three__fiber-9.8.1.json",
+      "bytes": 3058,
+      "sha256": "dd1ac9bd1aeb69d22ff5cfe92694f7475eb12ad51377d330be0c28d0b13c970a"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/registry/rolldown__binding-win32-x64-msvc-1.2.12.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/registry/rolldown__binding-win32-x64-msvc-1.2.12.json",
+      "bytes": 2167,
+      "sha256": "670ab48f67fb69f4eb578ea8b9b911aeefac4e387220f3a1719b983ef5400f73"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/registry/stats-gl-2.4.2.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/registry/stats-gl-2.4.2.json",
+      "bytes": 2133,
+      "sha256": "d79f32e4c70ab55bb2d456d877409490e55bb8fdb1c8355fdfc62b3c360c9d36"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/registry_sources.py",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/registry_sources.py",
+      "bytes": 2397,
+      "sha256": "c43b3f2a8d4b1ada32238a8ee496ee10c373a5260876189eccb89602e009d192"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/revision-tree-observations.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/revision-tree-observations.json",
+      "bytes": 3920,
+      "sha256": "bee8a54eed811eed108967ceb9c3c25f861e33ee6267ce189c46520061619d8c"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/revision-trees/esrecurse-8ceb63797813d9ac69572a671b95cf58ffdf35b6.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/revision-trees/esrecurse-8ceb63797813d9ac69572a671b95cf58ffdf35b6.json",
+      "bytes": 2364,
+      "sha256": "82bbf84a5d37886f8d20939a62dbd100ffcf0998d19e900d18264dea18ee4280"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/revision-trees/humanfs__types-85069f193cbacc371c3beb649ce746f8c5a493be.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/revision-trees/humanfs__types-85069f193cbacc371c3beb649ce746f8c5a493be.json",
+      "bytes": 34169,
+      "sha256": "43ddf12050b9658250d5d6ff53f0b77efd248d6e5d35f0dd5870c5b5b3fb96de"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/revision-trees/natural-compare-eec83eee67cfac84d6db30cdd65363f155673770.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/revision-trees/natural-compare-eec83eee67cfac84d6db30cdd65363f155673770.json",
+      "bytes": 2453,
+      "sha256": "bab3ddb41e41d575f7b28c27f425dbfda9e20b039eaf228569526629363f1d0c"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/revision-trees/stats-gl-c12b2e391d5a88616e0b30f3c7f0577966426239.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/revision-trees/stats-gl-c12b2e391d5a88616e0b30f3c7f0577966426239.json",
+      "bytes": 6923,
+      "sha256": "6d70ecaa67f4824c39904d894a38f07dfda051f6a3e6b8b019b3e41fcde8fd3f"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/revision_trees.py",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/revision_trees.py",
+      "bytes": 2640,
+      "sha256": "1f59e04b795a3a87aa09d57efd0ce3040d0e67727dc9925dbf93565424a3578d"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/code-frame/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/code-frame/LICENSE",
+      "bytes": 1106,
+      "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/compat-data/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/compat-data/LICENSE",
+      "bytes": 1106,
+      "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/core/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/core/LICENSE",
+      "bytes": 1106,
+      "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/core/node_modules/semver/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/core/node_modules/semver/LICENSE",
+      "bytes": 765,
+      "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/generator/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/generator/LICENSE",
+      "bytes": 1106,
+      "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/helper-compilation-targets/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/helper-compilation-targets/LICENSE",
+      "bytes": 1106,
+      "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/helper-compilation-targets/node_modules/semver/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/helper-compilation-targets/node_modules/semver/LICENSE",
+      "bytes": 765,
+      "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/helper-globals/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/helper-globals/LICENSE",
+      "bytes": 1106,
+      "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/helper-module-imports/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/helper-module-imports/LICENSE",
+      "bytes": 1106,
+      "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/helper-module-transforms/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/helper-module-transforms/LICENSE",
+      "bytes": 1106,
+      "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/helper-string-parser/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/helper-string-parser/LICENSE",
+      "bytes": 1106,
+      "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/helper-validator-identifier/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/helper-validator-identifier/LICENSE",
+      "bytes": 1106,
+      "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/helper-validator-option/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/helper-validator-option/LICENSE",
+      "bytes": 1106,
+      "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/helpers/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/helpers/LICENSE",
+      "bytes": 1189,
+      "sha256": "4be9d87b56a306293223b490c0d0b245e9e94f39884147bf051a6c7b825aeb30"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/parser/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/parser/LICENSE",
+      "bytes": 1086,
+      "sha256": "2e97627cb278aa7556fb9e8817368302301a595b6c7582512b8d74c57b773652"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/runtime/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/runtime/LICENSE",
+      "bytes": 1106,
+      "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/template/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/template/LICENSE",
+      "bytes": 1106,
+      "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/traverse/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/traverse/LICENSE",
+      "bytes": 1106,
+      "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/types/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@babel/types/LICENSE",
+      "bytes": 1106,
+      "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@cacheable/memory/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@cacheable/memory/LICENSE",
+      "bytes": 1053,
+      "sha256": "465e8da349d50d8512e4a0e9b26d2bee50392c394f17edaa3be6e0df7c2b27ad"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@cacheable/utils/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@cacheable/utils/LICENSE",
+      "bytes": 1053,
+      "sha256": "465e8da349d50d8512e4a0e9b26d2bee50392c394f17edaa3be6e0df7c2b27ad"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@dimforge/rapier3d-compat/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@dimforge/rapier3d-compat/LICENSE",
+      "bytes": 11343,
+      "sha256": "4c05555705e3efde601fb1252ae48f1d63992af8a8fb8947745b7fa834e8f519"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@eslint-community/eslint-utils/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@eslint-community/eslint-utils/LICENSE",
+      "bytes": 1071,
+      "sha256": "fcf6eabf68ca96988a6b506b4fdc6cc32535d80eb2e11c79724af5ac6f50262b"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@eslint-community/regexpp/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@eslint-community/regexpp/LICENSE",
+      "bytes": 1071,
+      "sha256": "fcf6eabf68ca96988a6b506b4fdc6cc32535d80eb2e11c79724af5ac6f50262b"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@eslint/config-array/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@eslint/config-array/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@eslint/config-helpers/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@eslint/config-helpers/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@eslint/core/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@eslint/core/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@eslint/object-schema/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@eslint/object-schema/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@eslint/plugin-kit/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@eslint/plugin-kit/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@humanfs/core/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@humanfs/core/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@humanfs/node/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@humanfs/node/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@humanwhocodes/module-importer/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@humanwhocodes/module-importer/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@humanwhocodes/retry/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@humanwhocodes/retry/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@jridgewell/gen-mapping/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@jridgewell/gen-mapping/LICENSE",
+      "bytes": 1080,
+      "sha256": "769d154fbde32a915af110b1123650bc79f4cbe675acc66e005265bf069c6c6c"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@jridgewell/remapping/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@jridgewell/remapping/LICENSE",
+      "bytes": 1080,
+      "sha256": "769d154fbde32a915af110b1123650bc79f4cbe675acc66e005265bf069c6c6c"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@jridgewell/resolve-uri/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@jridgewell/resolve-uri/LICENSE",
+      "bytes": 1079,
+      "sha256": "b8778b155bfde5a28b023a558753c0fa058a52bb9de35c343c250be1bbcdedab"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@jridgewell/sourcemap-codec/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@jridgewell/sourcemap-codec/LICENSE",
+      "bytes": 1080,
+      "sha256": "769d154fbde32a915af110b1123650bc79f4cbe675acc66e005265bf069c6c6c"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@jridgewell/trace-mapping/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@jridgewell/trace-mapping/LICENSE",
+      "bytes": 1080,
+      "sha256": "769d154fbde32a915af110b1123650bc79f4cbe675acc66e005265bf069c6c6c"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@keyv/bigmap/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@keyv/bigmap/LICENSE",
+      "bytes": 1062,
+      "sha256": "f18cad8d98d4454ad42c33f1950d642cd3b939f2ccd3c36710fa8f50842cacc0"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@keyv/serialize/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@keyv/serialize/LICENSE",
+      "bytes": 1108,
+      "sha256": "1f7dca26d2d328c3dbb9b6fe3b15ec3cda08ffe2288e47b73d617454b256f959"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@monogrid/gainmap-js/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@monogrid/gainmap-js/LICENSE",
+      "bytes": 1065,
+      "sha256": "7fb8f722609c6669a9c9a4865e2a86205c7760e7dc7a039b0fb9913c3e62c6cc"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@oxc-project/types/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@oxc-project/types/LICENSE",
+      "bytes": 1119,
+      "sha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@react-three/drei/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@react-three/drei/LICENSE",
+      "bytes": 1069,
+      "sha256": "2e36b208b403882158daf95cae207087bbb830db4d434a79ebafffca177244c8"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@rolldown/pluginutils/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@rolldown/pluginutils/LICENSE",
+      "bytes": 1106,
+      "sha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@tailwindcss/node/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@tailwindcss/node/LICENSE",
+      "bytes": 1071,
+      "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@tailwindcss/oxide-win32-x64-msvc/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@tailwindcss/oxide-win32-x64-msvc/LICENSE",
+      "bytes": 1071,
+      "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@tailwindcss/oxide/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@tailwindcss/oxide/LICENSE",
+      "bytes": 1071,
+      "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@tailwindcss/vite/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@tailwindcss/vite/LICENSE",
+      "bytes": 1071,
+      "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@tweenjs/tween.js/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@tweenjs/tween.js/LICENSE",
+      "bytes": 1166,
+      "sha256": "c95fecd88f2709bfc34e4d1f1ccc36d17048990e6ba26c283cfecdef0432936b"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/draco3d/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/draco3d/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/esrecurse/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/esrecurse/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/estree/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/estree/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/json-schema/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/json-schema/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/offscreencanvas/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/offscreencanvas/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/react-dom/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/react-dom/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/react-reconciler/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/react-reconciler/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/react/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/react/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/stats.js/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/stats.js/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/three/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/three/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/webxr/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@types/webxr/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/eslint-plugin/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/eslint-plugin/LICENSE",
+      "bytes": 1097,
+      "sha256": "2eb5c7a0bba9deb77a98c81bf6b9d3fb1c67118eebf968b6b1a787b3f8928ee0"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/parser/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/parser/LICENSE",
+      "bytes": 1097,
+      "sha256": "2eb5c7a0bba9deb77a98c81bf6b9d3fb1c67118eebf968b6b1a787b3f8928ee0"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/project-service/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/project-service/LICENSE",
+      "bytes": 1097,
+      "sha256": "053a75a14b7508a897466b65e12797201a06b0e9b5066d1223da72cac99601b5"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/scope-manager/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/scope-manager/LICENSE",
+      "bytes": 1097,
+      "sha256": "2eb5c7a0bba9deb77a98c81bf6b9d3fb1c67118eebf968b6b1a787b3f8928ee0"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/tsconfig-utils/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/tsconfig-utils/LICENSE",
+      "bytes": 1097,
+      "sha256": "053a75a14b7508a897466b65e12797201a06b0e9b5066d1223da72cac99601b5"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/type-utils/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/type-utils/LICENSE",
+      "bytes": 1097,
+      "sha256": "f3c51ace7f159b21566d72535e84ff354505ae7ffdca835dac81fcdafbf9e879"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/types/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/types/LICENSE",
+      "bytes": 1097,
+      "sha256": "2eb5c7a0bba9deb77a98c81bf6b9d3fb1c67118eebf968b6b1a787b3f8928ee0"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/typescript-estree/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/typescript-estree/LICENSE",
+      "bytes": 1097,
+      "sha256": "2eb5c7a0bba9deb77a98c81bf6b9d3fb1c67118eebf968b6b1a787b3f8928ee0"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/utils/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/utils/LICENSE",
+      "bytes": 1097,
+      "sha256": "2eb5c7a0bba9deb77a98c81bf6b9d3fb1c67118eebf968b6b1a787b3f8928ee0"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/visitor-keys/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/visitor-keys/LICENSE",
+      "bytes": 1097,
+      "sha256": "2eb5c7a0bba9deb77a98c81bf6b9d3fb1c67118eebf968b6b1a787b3f8928ee0"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/visitor-keys/node_modules/eslint-visitor-keys/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript-eslint/visitor-keys/node_modules/eslint-visitor-keys/LICENSE",
+      "bytes": 11337,
+      "sha256": "d8bf34ff6d190640a01e7704ad78253fc181bc128949d71273fbbaa12f33c0b4"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript/native/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript/native/LICENSE",
+      "bytes": 9197,
+      "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript/native/NOTICE.txt",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript/native/NOTICE.txt",
+      "bytes": 48860,
+      "sha256": "f5c708b59114507b8b27b48181b6883d106bbca0c1634bbee45b5e344237b66b"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript/old/LICENSE.txt",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript/old/LICENSE.txt",
+      "bytes": 9197,
+      "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript/old/ThirdPartyNoticeText.txt",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript/old/ThirdPartyNoticeText.txt",
+      "bytes": 37824,
+      "sha256": "1af3c68039c57e539422da82a4faada506ce6d0ea6f90e0b699d02dbcdb7a90c"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript/typescript-win32-x64/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript/typescript-win32-x64/LICENSE",
+      "bytes": 9197,
+      "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript/typescript-win32-x64/NOTICE.txt",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@typescript/typescript-win32-x64/NOTICE.txt",
+      "bytes": 48860,
+      "sha256": "f5c708b59114507b8b27b48181b6883d106bbca0c1634bbee45b5e344237b66b"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@use-gesture/core/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@use-gesture/core/LICENSE",
+      "bytes": 1083,
+      "sha256": "b99672ef9af57432e6d025a66d34f8b968564e4e0a1e2005ea9018457a7e38dc"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@use-gesture/react/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@use-gesture/react/LICENSE",
+      "bytes": 1083,
+      "sha256": "b99672ef9af57432e6d025a66d34f8b968564e4e0a1e2005ea9018457a7e38dc"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@vitejs/plugin-react/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/@vitejs/plugin-react/LICENSE",
+      "bytes": 1103,
+      "sha256": "29b68325fe026047d13e187b44c33b2acacf7dc647dec4583702e59f235e13b5"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/acorn-jsx/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/acorn-jsx/LICENSE",
+      "bytes": 1068,
+      "sha256": "cfa72b62b9ae173078823a3796b25c027a9071046a263beddf966df67018ce06"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/acorn/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/acorn/LICENSE",
+      "bytes": 1099,
+      "sha256": "76a876cf886ff9be2a8b5e2e86514fed06223c8c9f0c1e9ee9606e93841e00b7"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/ajv/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/ajv/LICENSE",
+      "bytes": 1090,
+      "sha256": "e85e131fa4ed25538ff1f4962ced1fb6f68b079bd9164a790597a0f30b8fd030"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/autoprefixer/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/autoprefixer/LICENSE",
+      "bytes": 1095,
+      "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/balanced-match/LICENSE.md",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/balanced-match/LICENSE.md",
+      "bytes": 1155,
+      "sha256": "d408f38ffa3355c5faec517153295338892eb0f1ea43f57874bb23c6075979b5"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/base64-js/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/base64-js/LICENSE",
+      "bytes": 1081,
+      "sha256": "5b37224c080cdcc97c871ada971c224e9926370fe74f11b539aa1cf9f3b1aca1"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/baseline-browser-mapping/LICENSE.txt",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/baseline-browser-mapping/LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/bidi-js/LICENSE.txt",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/bidi-js/LICENSE.txt",
+      "bytes": 1071,
+      "sha256": "49d4d143fed599deb502a0fe6e02f49832f87e9a3a4cd0502e469596d50faa6d"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/brace-expansion/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/brace-expansion/LICENSE",
+      "bytes": 1144,
+      "sha256": "9c63a23124d68cd30cd316a94a1a0bca34f032786df6df69fc4b5f136bac8d2e"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/browserslist/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/browserslist/LICENSE",
+      "bytes": 1118,
+      "sha256": "21c2679a63d7699c0e644409e2f17d0adbc7a965003feb06b3ff4b833d21f722"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/buffer/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/buffer/LICENSE",
+      "bytes": 1106,
+      "sha256": "06bafa45fdad2579ba0e43b0c9b2c6290287c99c4203c300254a462b38a307f6"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/cacheable/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/cacheable/LICENSE",
+      "bytes": 1053,
+      "sha256": "465e8da349d50d8512e4a0e9b26d2bee50392c394f17edaa3be6e0df7c2b27ad"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/camera-controls/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/camera-controls/LICENSE",
+      "bytes": 1065,
+      "sha256": "d175c34ca3b4fb17d0568627ef8fd9363ae6f63f9ffdc97d4da71f0d7f3473ee"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/caniuse-lite/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/caniuse-lite/LICENSE",
+      "bytes": 18651,
+      "sha256": "fd3a263fe19ed8faa9068b43abaebafc02c77897b0c6fc09abc04bb592e5f16e"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/convert-source-map/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/convert-source-map/LICENSE",
+      "bytes": 1078,
+      "sha256": "1fa6ee8bb95a81ae3d73a5bd074a3ac380ffec13697051063ca1a601921b91db"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/cookie/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/cookie/LICENSE",
+      "bytes": 1175,
+      "sha256": "c02110eedc16c7114f1a9bdc026c65626ce1d9c7e27fd51a8e0feee8a48a6858"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/cross-env/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/cross-env/LICENSE",
+      "bytes": 1079,
+      "sha256": "bf8fd38056b7606deccfcadb4d8ca1c210082d8ef5513426d2650daedc30bed3"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/cross-spawn/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/cross-spawn/LICENSE",
+      "bytes": 1105,
+      "sha256": "aaa78451b6fecd1b9c4594c796c133c0e90cad100372ff8bc6de615e9ef9adf1"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/csstype/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/csstype/LICENSE",
+      "bytes": 1062,
+      "sha256": "11d55bd4541c75ee7879547ac49089c489163dae49551389713c3d026cab383e"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/debug/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/debug/LICENSE",
+      "bytes": 1139,
+      "sha256": "3a61c6c96caf5c1d9b623fb9b04c822b783dfcb78aa7e49c76a3f643e6ed7f95"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/deep-is/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/deep-is/LICENSE",
+      "bytes": 1237,
+      "sha256": "f2042f3634c4136d06b5139c9c6aefb81a3a462b514548bc1845953233dfba98"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/detect-gpu/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/detect-gpu/LICENSE",
+      "bytes": 1077,
+      "sha256": "b7ec746220d05b353b6f05196599c50d0a8bf7b75eaf90de439d2152452d298e"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/detect-libc/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/detect-libc/LICENSE",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/electron-to-chromium/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/electron-to-chromium/LICENSE",
+      "bytes": 728,
+      "sha256": "25ba5c59dad3e0dd8f9540beaa0f0a86a10e3aec35af5fdc8e88c5f6a5c0d8c6"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/enhanced-resolve/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/enhanced-resolve/LICENSE",
+      "bytes": 1071,
+      "sha256": "9068a8782d2fb4c6e432cfa25334efa56f722822180570802bf86e71b6003b1e"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/escalade/license",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/escalade/license",
+      "bytes": 1104,
+      "sha256": "9a9edad7baae52622bddf3c15b2ef8a33d2c89f2d25408ad13e8a7481c6b0c97"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/escape-string-regexp/license",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/escape-string-regexp/license",
+      "bytes": 1117,
+      "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/eslint-plugin-react-hooks/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/eslint-plugin-react-hooks/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/eslint-plugin-react-refresh/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/eslint-plugin-react-refresh/LICENSE",
+      "bytes": 1098,
+      "sha256": "fba570176c68f716676e04cad6c39fb56b763e44fc11be22fe6863ff19092a9b"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/eslint-scope/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/eslint-scope/LICENSE",
+      "bytes": 1390,
+      "sha256": "d3a724e2ed749f172ff70b62a1d0631b7d4b0ea273782365a3464d4e2d6b6dbd"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/eslint-visitor-keys/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/eslint-visitor-keys/LICENSE",
+      "bytes": 11337,
+      "sha256": "d8bf34ff6d190640a01e7704ad78253fc181bc128949d71273fbbaa12f33c0b4"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/eslint/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/eslint/LICENSE",
+      "bytes": 1094,
+      "sha256": "3b6be04f862a077a4b97929dbf247299360824d9365f8603c263769303ace18c"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/eslint/node_modules/eslint-visitor-keys/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/eslint/node_modules/eslint-visitor-keys/LICENSE",
+      "bytes": 11337,
+      "sha256": "d8bf34ff6d190640a01e7704ad78253fc181bc128949d71273fbbaa12f33c0b4"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/eslint/node_modules/ignore/LICENSE-MIT",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/eslint/node_modules/ignore/LICENSE-MIT",
+      "bytes": 1095,
+      "sha256": "9c94db23dc4b1e9aaee5d195668b916afc71efed54af226b66cf0ccc4389c1c0"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/espree/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/espree/LICENSE",
+      "bytes": 1322,
+      "sha256": "26c95937762a3dc17a3934a0a2773c70259ba4bf28dab713c225e4af8eb9d349"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/espree/node_modules/eslint-visitor-keys/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/espree/node_modules/eslint-visitor-keys/LICENSE",
+      "bytes": 11337,
+      "sha256": "d8bf34ff6d190640a01e7704ad78253fc181bc128949d71273fbbaa12f33c0b4"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/esquery/license.txt",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/esquery/license.txt",
+      "bytes": 1488,
+      "sha256": "ac68116ae73740de4190892f334992e449a124600924ec761e64319d3aac9e6e"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/estraverse/LICENSE.BSD",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/estraverse/LICENSE.BSD",
+      "bytes": 1231,
+      "sha256": "0e74697a68cebdcd61502c30fe80ab7f9e341d995dcd452023654d57133534b1"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/esutils/LICENSE.BSD",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/esutils/LICENSE.BSD",
+      "bytes": 1231,
+      "sha256": "0e74697a68cebdcd61502c30fe80ab7f9e341d995dcd452023654d57133534b1"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/fast-deep-equal/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/fast-deep-equal/LICENSE",
+      "bytes": 1074,
+      "sha256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/fast-json-stable-stringify/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/fast-json-stable-stringify/LICENSE",
+      "bytes": 1145,
+      "sha256": "a833d366242c298cf1b10263516572fb8dcbe68eb5072cdcac2b4546e2b4eb36"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/fast-levenshtein/LICENSE.md",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/fast-levenshtein/LICENSE.md",
+      "bytes": 1100,
+      "sha256": "942a98cb8846a6354266193f173c1354615827fbb7d67f68399599dff12c4d6a"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/fdir/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/fdir/LICENSE",
+      "bytes": 1053,
+      "sha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/fflate/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/fflate/LICENSE",
+      "bytes": 1069,
+      "sha256": "0a1df3a083d0c010560aa342e87959c8c1070e6fd54545741f083f22d0c8b551"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/file-entry-cache/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/file-entry-cache/LICENSE",
+      "bytes": 1053,
+      "sha256": "465e8da349d50d8512e4a0e9b26d2bee50392c394f17edaa3be6e0df7c2b27ad"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/find-up/license",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/find-up/license",
+      "bytes": 1117,
+      "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/flat-cache/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/flat-cache/LICENSE",
+      "bytes": 1053,
+      "sha256": "465e8da349d50d8512e4a0e9b26d2bee50392c394f17edaa3be6e0df7c2b27ad"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/flatted/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/flatted/LICENSE",
+      "bytes": 770,
+      "sha256": "148718606d34f467fd08a2176bb4c1ab275f999576f779368503d8d3e3642861"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/fraction.js/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/fraction.js/LICENSE",
+      "bytes": 1070,
+      "sha256": "ea6916b674c353de0e9b84b9c91e3b3f8c620a1000d6a65662961b8a67840f19"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/gensync/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/gensync/LICENSE",
+      "bytes": 1075,
+      "sha256": "e3a956681ee067f971ac413994171b3d90ca801ec6324e76c9c55366cfe31cb0"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/glob-parent/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/glob-parent/LICENSE",
+      "bytes": 857,
+      "sha256": "fc68eb8f1c8e1d6b8be50f3c177927e24791cae7dc251e6253a012f37926a30c"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/glsl-noise/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/glsl-noise/LICENSE",
+      "bytes": 1129,
+      "sha256": "bce6c887104eda776ad5e3a2c0b249d1ef5adca91573b350e7147a59d65757f1"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/graceful-fs/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/graceful-fs/LICENSE",
+      "bytes": 791,
+      "sha256": "f65c5d9f22a317b2a10803bd1868461ce6499c2ed7217bc80c0cc772a748789c"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/hashery/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/hashery/LICENSE",
+      "bytes": 1067,
+      "sha256": "2eef776efe4bae7fcd2d8162ecadf2b0873aae20afac343a936ddb0de3d79253"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/hermes-estree/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/hermes-estree/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/hermes-parser/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/hermes-parser/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/hls.js/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/hls.js/LICENSE",
+      "bytes": 1338,
+      "sha256": "ca8773cf798c7ed997d4dd7c8e23c348699f8d5b7462636694cc14de6cda12db"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/hookified/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/hookified/LICENSE",
+      "bytes": 1052,
+      "sha256": "3902e57e73412bd91ba81a47fa2cef45e1729c152c835114c1692cc5e685ddbe"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/ieee754/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/ieee754/LICENSE",
+      "bytes": 1465,
+      "sha256": "18d45466ba3253deae04667e267a91ea8de8548f18c1125264d1c9db28194cc1"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/ignore/LICENSE-MIT",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/ignore/LICENSE-MIT",
+      "bytes": 1095,
+      "sha256": "9c94db23dc4b1e9aaee5d195668b916afc71efed54af226b66cf0ccc4389c1c0"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/immediate/LICENSE.txt",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/immediate/LICENSE.txt",
+      "bytes": 1115,
+      "sha256": "809e66de579fb7d92503848bbe6d1f348f4f6521a71e5d294fe7cc0c87a3b4ff"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/is-extglob/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/is-extglob/LICENSE",
+      "bytes": 1087,
+      "sha256": "73b5283588baa142c5baaef5f56d3e8fdea7a30b214e8c5737e87640f882453a"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/is-glob/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/is-glob/LICENSE",
+      "bytes": 1088,
+      "sha256": "4cd903859549d4b20b571041f96dfae1136ed079c476126268f9d7cc1b611150"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/is-promise/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/is-promise/LICENSE",
+      "bytes": 1058,
+      "sha256": "44191656d296391e0ec97e32f5385f0d02b6f2992694082d22ea04ba0f66f9e4"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/isexe/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/isexe/LICENSE",
+      "bytes": 765,
+      "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/its-fine/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/its-fine/LICENSE",
+      "bytes": 1072,
+      "sha256": "643123eeb38f154d93cb8323e1289a648d3f343b411a9340453c010e325d0c82"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/jiti/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/jiti/LICENSE",
+      "bytes": 1078,
+      "sha256": "46231df5a7733c3f52f11b71f3df61813007745b62b09031acfb45fb42d75082"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/js-tokens/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/js-tokens/LICENSE",
+      "bytes": 1103,
+      "sha256": "2213d91c606205c71eb051a199478cdc2adde945893404d7f1421436dd6d5cc1"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/jsesc/LICENSE-MIT.txt",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/jsesc/LICENSE-MIT.txt",
+      "bytes": 1077,
+      "sha256": "483acb265f182907d1caf6cff9c16c96f31325ed23792832cc5d8b12d5f88c8a"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/json-schema-traverse/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/json-schema-traverse/LICENSE",
+      "bytes": 1074,
+      "sha256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/json-stable-stringify-without-jsonify/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/json-stable-stringify-without-jsonify/LICENSE",
+      "bytes": 1073,
+      "sha256": "435a6722c786b0a56fbe7387028f1d9d3f3a2d0fb615bb8fee118727c3f59b7b"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/json5/LICENSE.md",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/json5/LICENSE.md",
+      "bytes": 1145,
+      "sha256": "53e59feb13058722d977c699eb0407c7bce2f93c949b681bbd2ff31698535927"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/keyv/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/keyv/LICENSE",
+      "bytes": 1108,
+      "sha256": "1f7dca26d2d328c3dbb9b6fe3b15ec3cda08ffe2288e47b73d617454b256f959"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/levn/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/levn/LICENSE",
+      "bytes": 1054,
+      "sha256": "b9eb082c39fe245e38793699074c394c43a722c51fce031c3c165cb92a31035c"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/lie/license.md",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/lie/license.md",
+      "bytes": 1084,
+      "sha256": "5c81b0caa98593408b03125efa25efe622341ed87ae55561968828cd887d64a4"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/lightningcss-win32-x64-msvc/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/lightningcss-win32-x64-msvc/LICENSE",
+      "bytes": 15648,
+      "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/lightningcss/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/lightningcss/LICENSE",
+      "bytes": 15648,
+      "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/locate-path/license",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/locate-path/license",
+      "bytes": 1117,
+      "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/lru-cache/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/lru-cache/LICENSE",
+      "bytes": 765,
+      "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/magic-string/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/magic-string/LICENSE",
+      "bytes": 1051,
+      "sha256": "1cbe51b907662f6cb1492b16c359384a595180bf0e4d101603ed525e75c4e484"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/meshline/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/meshline/LICENSE",
+      "bytes": 1091,
+      "sha256": "60616aab1af71f2603d9d4ab3c29b5d80cc43cd9a62e2e8b3fa68c1c5597103f"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/meshoptimizer/LICENSE.md",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/meshoptimizer/LICENSE.md",
+      "bytes": 1079,
+      "sha256": "f03037ca7bad1e3eb7f4a63fa6084a8baabd5ba30d3c239a9a7f35705d873e26"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/minimatch/LICENSE.md",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/minimatch/LICENSE.md",
+      "bytes": 1550,
+      "sha256": "2c7c5d22ed5a8ee968c64757710979afcd77438c48b4a265b94e615babd8a901"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/ms/license.md",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/ms/license.md",
+      "bytes": 1079,
+      "sha256": "1662fae9b5314d11cf51284e2dcd1f006a354f7343f08712a730fcff9a359801"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/nanoid/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/nanoid/LICENSE",
+      "bytes": 1095,
+      "sha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/node-releases/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/node-releases/LICENSE",
+      "bytes": 1107,
+      "sha256": "3706296ed611888111ceccc1dff4712844dea4bde0b185c82d718c3b69895abe"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/optionator/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/optionator/LICENSE",
+      "bytes": 1054,
+      "sha256": "b9eb082c39fe245e38793699074c394c43a722c51fce031c3c165cb92a31035c"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/p-limit/license",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/p-limit/license",
+      "bytes": 1117,
+      "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/p-locate/license",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/p-locate/license",
+      "bytes": 1117,
+      "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/path-exists/license",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/path-exists/license",
+      "bytes": 1109,
+      "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/path-key/license",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/path-key/license",
+      "bytes": 1109,
+      "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/picocolors/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/picocolors/LICENSE",
+      "bytes": 787,
+      "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/picomatch/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/picomatch/LICENSE",
+      "bytes": 1091,
+      "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/postcss-value-parser/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/postcss-value-parser/LICENSE",
+      "bytes": 1074,
+      "sha256": "3687447039151857a6ba378db062172c7f33d4aa70a615c87a43a9c50e990485"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/postcss/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/postcss/LICENSE",
+      "bytes": 1095,
+      "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/potpack/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/potpack/LICENSE",
+      "bytes": 738,
+      "sha256": "2c620eaf6c3ee3e33b07f3b6ef0dfd0a9e0a52c93a46aa4ccf7773dbb562daec"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/prelude-ls/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/prelude-ls/LICENSE",
+      "bytes": 1054,
+      "sha256": "b9eb082c39fe245e38793699074c394c43a722c51fce031c3c165cb92a31035c"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/promise-worker-transferable/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/promise-worker-transferable/LICENSE",
+      "bytes": 11391,
+      "sha256": "0f0ba7a9d825b6cac29a3c949860dcfc0b87f2f0f57a078199520a3cd03896f6"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/punycode/LICENSE-MIT.txt",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/punycode/LICENSE-MIT.txt",
+      "bytes": 1077,
+      "sha256": "483acb265f182907d1caf6cff9c16c96f31325ed23792832cc5d8b12d5f88c8a"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/qified/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/qified/LICENSE",
+      "bytes": 1052,
+      "sha256": "3902e57e73412bd91ba81a47fa2cef45e1729c152c835114c1692cc5e685ddbe"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/qified/node_modules/hookified/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/qified/node_modules/hookified/LICENSE",
+      "bytes": 1052,
+      "sha256": "3902e57e73412bd91ba81a47fa2cef45e1729c152c835114c1692cc5e685ddbe"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/react-dom/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/react-dom/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/react-router-dom/LICENSE.md",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/react-router-dom/LICENSE.md",
+      "bytes": 1161,
+      "sha256": "77c9ee6a9c5d5782fb0c50b50d101189116314c14f7df0a1b0d385fc96a7ba49"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/react-router/LICENSE.md",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/react-router/LICENSE.md",
+      "bytes": 1161,
+      "sha256": "77c9ee6a9c5d5782fb0c50b50d101189116314c14f7df0a1b0d385fc96a7ba49"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/react-use-measure/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/react-use-measure/LICENSE",
+      "bytes": 1093,
+      "sha256": "1f9038eff8dbd6505a26f9d6830cc6da2b87ab1a9305d1100884986e9c11a31a"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/react/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/react/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/require-from-string/license",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/require-from-string/license",
+      "bytes": 1128,
+      "sha256": "6ee0feb1f6ef996ff5a68600f8cf98909cf412d39ef3cdceaefd87d636fa1b7f"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/rolldown/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/rolldown/LICENSE",
+      "bytes": 1302,
+      "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/rolldown/THIRD-PARTY-LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/rolldown/THIRD-PARTY-LICENSE",
+      "bytes": 2209,
+      "sha256": "a877291d800ed43692f3f9ae09d8e01cc6f7293ad39d43896059c188ffbb8b7c"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/scheduler/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/scheduler/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/semver/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/semver/LICENSE",
+      "bytes": 765,
+      "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/set-cookie-parser/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/set-cookie-parser/LICENSE",
+      "bytes": 1126,
+      "sha256": "c5c6c5183a789d122f267c405f685037efb87e27fcde28ab1dd7378a2d2f5962"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/shebang-command/license",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/shebang-command/license",
+      "bytes": 1116,
+      "sha256": "69dee148a2cc470554dfa7142e830662062394d0fe67cddd379aba90dc60d6b3"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/shebang-regex/license",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/shebang-regex/license",
+      "bytes": 1109,
+      "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/source-map-js/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/source-map-js/LICENSE",
+      "bytes": 1526,
+      "sha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/stats-gl/node_modules/three/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/stats-gl/node_modules/three/LICENSE",
+      "bytes": 1081,
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/stats.js/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/stats.js/LICENSE",
+      "bytes": 1082,
+      "sha256": "9d23ed2d037cc4b97860dc61dc3787ca2c1faac8b11402064a6fa90e91360adc"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/suspend-react/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/suspend-react/LICENSE",
+      "bytes": 1070,
+      "sha256": "997e79b828d8b85d6f18730c8dbf58074811360a199506bd84e1263e17c227a2"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/tailwindcss/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/tailwindcss/LICENSE",
+      "bytes": 1071,
+      "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/tapable/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/tapable/LICENSE",
+      "bytes": 1088,
+      "sha256": "824ef6c33ae5ecbbab65d37f2b37da2bfc81d76cf7676ec0f59d00a0a38bdb75"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/three-mesh-bvh/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/three-mesh-bvh/LICENSE",
+      "bytes": 1072,
+      "sha256": "b106ef6198a9862ed2b5b873e944ecf3583c631a84a7462d400ecc1910ce7fee"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/three-stdlib/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/three-stdlib/LICENSE",
+      "bytes": 1072,
+      "sha256": "28eb7edf059a39094aa3d169db1fec46ac4a6279c921a90f965828d92ec86e79"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/three-stdlib/node_modules/fflate/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/three-stdlib/node_modules/fflate/LICENSE",
+      "bytes": 1069,
+      "sha256": "62249119bb7df6e54300f37a37145c26a6d4420410aac8881a119c5b427cf751"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/three/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/three/LICENSE",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/tinyglobby/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/tinyglobby/LICENSE",
+      "bytes": 1076,
+      "sha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/troika-three-text/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/troika-three-text/LICENSE",
+      "bytes": 1102,
+      "sha256": "c514829145810d3bf5730a78b5054250bd1b711b2823f2fc58c2ba89930bce5c"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/troika-three-utils/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/troika-three-utils/LICENSE",
+      "bytes": 1102,
+      "sha256": "c514829145810d3bf5730a78b5054250bd1b711b2823f2fc58c2ba89930bce5c"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/troika-worker-utils/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/troika-worker-utils/LICENSE",
+      "bytes": 1102,
+      "sha256": "c514829145810d3bf5730a78b5054250bd1b711b2823f2fc58c2ba89930bce5c"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/ts-api-utils/LICENSE.md",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/ts-api-utils/LICENSE.md",
+      "bytes": 1038,
+      "sha256": "76c9d5f5ea942054715c026f33f8717c9e24603196a3737b8899afa216bcbdab"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/tunnel-rat/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/tunnel-rat/LICENSE",
+      "bytes": 1067,
+      "sha256": "cd14add33d47bcecae9fed5559224ae135c5ec41e1d3a126601f5fbd82291834"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/tunnel-rat/node_modules/zustand/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/tunnel-rat/node_modules/zustand/LICENSE",
+      "bytes": 1070,
+      "sha256": "c1e6e266563517467b1bf874817d23e426f3149252bd7d42758cd697514b8417"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/type-check/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/type-check/LICENSE",
+      "bytes": 1054,
+      "sha256": "b9eb082c39fe245e38793699074c394c43a722c51fce031c3c165cb92a31035c"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/typescript/LICENSE.txt",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/typescript/LICENSE.txt",
+      "bytes": 9197,
+      "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/update-browserslist-db/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/update-browserslist-db/LICENSE",
+      "bytes": 1118,
+      "sha256": "9877e90da14aa8c931a1f9d07cc2a20ce119106e5dab1ebb41af865266d0cd2a"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/uri-js/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/uri-js/LICENSE",
+      "bytes": 1452,
+      "sha256": "0af366eff4c01ec147c9c61ea9e8ffad64a4294754c9d79355f3fd1b97cb2fb9"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/use-sync-external-store/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/use-sync-external-store/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/utility-types/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/utility-types/LICENSE",
+      "bytes": 1124,
+      "sha256": "eba0c3a8b90636744cc57e1a90f2d87767a57cccc86578a8168130f96896c9a9"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/vite/LICENSE.md",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/vite/LICENSE.md",
+      "bytes": 108786,
+      "sha256": "a47172e44a86a7e2cd1c16282341f7726ec60caafe3a6166fe3e0602005b6fa6"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/vite/node_modules/lightningcss-win32-x64-msvc/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/vite/node_modules/lightningcss-win32-x64-msvc/LICENSE",
+      "bytes": 15648,
+      "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/vite/node_modules/lightningcss/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/vite/node_modules/lightningcss/LICENSE",
+      "bytes": 15648,
+      "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/webgl-constants/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/webgl-constants/LICENSE",
+      "bytes": 1077,
+      "sha256": "0969fa65680b694452c2c65981df14af5c192da24f2b1f87bdd51d8ed24efcfa"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/webgl-sdf-generator/LICENSE.txt",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/webgl-sdf-generator/LICENSE.txt",
+      "bytes": 1071,
+      "sha256": "49d4d143fed599deb502a0fe6e02f49832f87e9a3a4cd0502e469596d50faa6d"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/which/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/which/LICENSE",
+      "bytes": 765,
+      "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/word-wrap/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/word-wrap/LICENSE",
+      "bytes": 1087,
+      "sha256": "73b5283588baa142c5baaef5f56d3e8fdea7a30b214e8c5737e87640f882453a"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/yallist/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/yallist/LICENSE",
+      "bytes": 765,
+      "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/yocto-queue/license",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/yocto-queue/license",
+      "bytes": 1117,
+      "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/zod-validation-error/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/zod-validation-error/LICENSE",
+      "bytes": 1095,
+      "sha256": "03cc9a630489a2544b799548a0e8b134f382fe09fa06dc22b339091b28b8f4a8"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/zod/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/zod/LICENSE",
+      "bytes": 1072,
+      "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/zustand/LICENSE",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-copies/node_modules/zustand/LICENSE",
+      "bytes": 1070,
+      "sha256": "c1e6e266563517467b1bf874817d23e426f3149252bd7d42758cd697514b8417"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root-notice-name-inventory.json",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root-notice-name-inventory.json",
+      "bytes": 167566,
+      "sha256": "3740488d336804151fb9274a424aa305a15571f53d54b49ca42f105b24f1bd92"
+    },
+    {
+      "source": "output/research/frontend-full-notice-read-2026-10-08/root_notice_inventory.py",
+      "snapshot": "review-inputs/output/research/frontend-full-notice-read-2026-10-08/root_notice_inventory.py",
+      "bytes": 3383,
+      "sha256": "e67d965a2f5b603e4848ad980c0106928f13ab6af679a7ed9cb4230791493ae2"
+    },
+    {
+      "source": "output/research/frontend-notice-discovery-2026-10-08/observations.json",
+      "snapshot": "review-inputs/output/research/frontend-notice-discovery-2026-10-08/observations.json",
+      "bytes": 146431,
+      "sha256": "fc688945317048b4017db476268be4278af0a975807b84c34e36baaa85989c58"
+    },
+    {
+      "source": "output/research/frontend-supply-chain-2026-10-06/licence-inventory.json",
+      "snapshot": "review-inputs/output/research/frontend-supply-chain-2026-10-06/licence-inventory.json",
+      "bytes": 263792,
+      "sha256": "14a962173da1bee387c5b961baf68f2a456645b4b7935381670ad2b7e7d19215"
+    },
+    {
+      "source": "output/research/frontend-three-remedy-evaluation-2026-10-06/candidate/package-lock.json",
+      "snapshot": "review-inputs/output/research/frontend-three-remedy-evaluation-2026-10-06/candidate/package-lock.json",
+      "bytes": 160266,
+      "sha256": "fa903a8d901357aacf80863524e0e00ae2ece69126daf218256cdd2656b2da4c"
+    }
+  ]
+}

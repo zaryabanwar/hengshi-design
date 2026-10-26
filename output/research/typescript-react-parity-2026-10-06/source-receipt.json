@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-06",
+  "context7": {
+    "library": "/microsoft/typescript/v7.0.2",
+    "query": "React JSX checking jsx react-jsx strict component props event types refs typescript 7 TypeScript 6 JavaScript API bridge native compiler noEmit",
+    "limits": "indexed examples include legacy React/main snippets, not authority for current React19 declarations or API/native equivalence; actual pinned types and installed compiler source govern observation"
+  },
+  "primary": [
+    {
+      "url": "https://react.dev/learn/typescript",
+      "basis": "React web TypeScript uses React/DOM declaration packages and typed props/state/events"
+    },
+    {
+      "url": "https://www.typescriptlang.org/docs/handbook/jsx.html",
+      "basis": "JSX type checking and component/attribute diagnostics"
+    },
+    {
+      "url": "https://www.typescriptlang.org/tsconfig/jsx.html",
+      "basis": "automatic JSX runtime option"
+    },
+    {
+      "url": "https://registry.npmjs.org/%40types%2Freact/latest",
+      "basis": "19.3.0 declaration archive/version/integrity and csstype range"
+    },
+    {
+      "url": "https://registry.npmjs.org/%40types%2Freact-dom/latest",
+      "basis": "19.3.0 declaration archive/version/integrity and React peer range"
+    },
+    {
+      "url": "https://registry.npmjs.org/csstype/latest",
+      "basis": "3.2.3 declaration archive/version/integrity"
+    }
+  ],
+  "predecessor_evidence": "output/research/typescript-bridge-parity-2026-10-06/source-receipt.json",
+  "selection": "none; no React runtime installed, no full graph selected, no application or lint candidate lock update"
+}

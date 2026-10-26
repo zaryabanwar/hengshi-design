@@ -1,0 +1,181 @@
+{
+  "wings": [
+    {
+      "title": "Strategy & Transformation",
+      "slug": "strategy-transformation",
+      "summary": "Work through your goals, priorities and technical choices before you commit to a plan.",
+      "services": [
+        0
+      ]
+    },
+    {
+      "title": "Digital Products & Growth",
+      "slug": "digital-products-growth",
+      "summary": "Design and build websites, platforms and digital products around the people who use them.",
+      "services": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "title": "AI, Data & Automation",
+      "slug": "ai-data-automation",
+      "summary": "Find practical ways to use AI, automate repetitive work and make better use of your data.",
+      "services": [
+        4,
+        5
+      ]
+    },
+    {
+      "title": "Immersive & Creative",
+      "slug": "immersive-creative",
+      "summary": "Explain ideas through visual design, interactive experiences and 3D.",
+      "services": [
+        6,
+        7
+      ]
+    },
+    {
+      "title": "Cloud, Reliability & Trust",
+      "slug": "cloud-reliability-trust",
+      "summary": "Build and maintain the infrastructure, security and reliability your systems need.",
+      "services": [
+        8,
+        9
+      ]
+    }
+  ],
+  "details": [
+    {
+      "title": "Strategy & Architecture",
+      "slug": "strategy-architecture",
+      "summary": "Clarify priorities, compare technical options and shape a practical direction for your project.",
+      "decision": "Which approach fits your goals and constraints?",
+      "focus": [
+        "Goals, constraints and priorities",
+        "Architecture options and trade-offs",
+        "A roadmap for the work"
+      ],
+      "boundary": "Recommendations depend on the information available. Scope, responsibilities and deliverables are agreed before work begins.",
+      "wing": 0
+    },
+    {
+      "title": "Platform & Product Engineering",
+      "slug": "platform-product-engineering",
+      "summary": "Plan and develop the software, integrations and foundations behind a digital product.",
+      "decision": "What does your product need to work reliably?",
+      "focus": [
+        "Product requirements and technical design",
+        "Application and integration development",
+        "Testing and maintainability"
+      ],
+      "boundary": "A project scope defines the supported systems, integrations and ongoing responsibilities.",
+      "wing": 1
+    },
+    {
+      "title": "Product Design & Experience Engineering",
+      "slug": "product-design-experience-engineering",
+      "summary": "Understand user journeys and turn them into clear, usable interfaces and interaction patterns.",
+      "decision": "How should the product work for the people using it?",
+      "focus": [
+        "User journeys and information architecture",
+        "Interface design and design systems",
+        "Prototypes and usability evaluation"
+      ],
+      "boundary": "Research access, supported devices and accessibility criteria are agreed for each project. Designs alone do not establish accessibility compliance.",
+      "wing": 1
+    },
+    {
+      "title": "Commerce, Content & Growth Platforms",
+      "slug": "commerce-content-growth-platforms",
+      "summary": "Connect commerce and content journeys with the systems used to manage and improve them.",
+      "decision": "How can content and commerce support your goals?",
+      "focus": [
+        "Commerce and content journeys",
+        "Content platforms and integrations",
+        "Measurement requirements"
+      ],
+      "boundary": "Sales, traffic and growth outcomes are not guaranteed. Platform costs and third-party services are scoped separately.",
+      "wing": 1
+    },
+    {
+      "title": "AI Systems & Agentic Automation",
+      "slug": "ai-systems-agentic-automation",
+      "summary": "Explore AI-assisted workflows and automation with clear information, evaluation and human-control boundaries.",
+      "decision": "Where could AI help, and where is human control needed?",
+      "focus": [
+        "Workflow and suitability assessment",
+        "Source and data boundaries",
+        "Evaluation and human oversight"
+      ],
+      "boundary": "AI can produce incorrect output. Data access, source policy, evaluation and human approval need explicit agreement; no autonomous commitments are implied.",
+      "wing": 2
+    },
+    {
+      "title": "Data Platforms & Analytics",
+      "slug": "data-platforms-analytics",
+      "summary": "Organise data flows and analytical views around the decisions your team needs to make.",
+      "decision": "What data would help your team make a decision?",
+      "focus": [
+        "Data sources and quality requirements",
+        "Pipelines and analytical models",
+        "Reporting and decision support"
+      ],
+      "boundary": "Useful analysis depends on source quality, access rights and agreed definitions. Data accuracy is not assumed.",
+      "wing": 2
+    },
+    {
+      "title": "Spatial Computing & Immersive Platforms",
+      "slug": "spatial-computing-immersive-platforms",
+      "summary": "Explore interactive 3D and spatial experiences with an equivalent accessible path to essential content.",
+      "decision": "When would a spatial experience make an idea clearer?",
+      "focus": [
+        "Spatial journeys and interaction concepts",
+        "Interactive 3D experiences",
+        "Performance and accessible alternatives"
+      ],
+      "boundary": "Device support, asset rights and performance targets need project-specific validation. Essential content must remain accessible without 3D.",
+      "wing": 3
+    },
+    {
+      "title": "Creative & Visual Design Services",
+      "slug": "creative-visual-design-services",
+      "summary": "Develop visual ideas and design assets that explain your message and support a coherent identity.",
+      "decision": "What should your audience understand or recognise?",
+      "focus": [
+        "Visual direction and communication",
+        "Digital design assets",
+        "Design guidelines and handover"
+      ],
+      "boundary": "Asset formats, usage rights and the deliverable set are agreed in scope. No unlicensed imagery or third-party rights are implied.",
+      "wing": 3
+    },
+    {
+      "title": "Cloud, DevOps & Platform Reliability",
+      "slug": "cloud-devops-platform-reliability",
+      "summary": "Plan infrastructure, delivery workflows and operational practices around your system’s requirements.",
+      "decision": "What does your system need to run and recover?",
+      "focus": [
+        "Infrastructure and deployment planning",
+        "Delivery workflows and observability",
+        "Reliability and recovery requirements"
+      ],
+      "boundary": "Provider choice follows project needs. Costs, service levels and operational cover require separate agreement; no uptime guarantee is implied.",
+      "wing": 4
+    },
+    {
+      "title": "Security, Privacy & Trust Engineering",
+      "slug": "security-privacy-trust-engineering",
+      "summary": "Identify security and privacy requirements and plan how controls will be implemented and evaluated.",
+      "decision": "Which risks and data responsibilities need attention?",
+      "focus": [
+        "Risk and data-flow assessment",
+        "Security and privacy requirements",
+        "Control implementation and verification"
+      ],
+      "boundary": "This describes an engineering capability, not certification, legal advice or a compliance guarantee. Qualified review and evidence are required for assurance claims.",
+      "wing": 4
+    }
+  ]
+}

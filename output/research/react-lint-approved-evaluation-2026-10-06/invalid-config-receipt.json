@@ -1,0 +1,14 @@
+{
+  "command": [
+    "C:/nvm4w/nodejs/node.exe",
+    "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+    "--config",
+    "eslint.invalid.config.mjs",
+    "fixtures/valid-hooks.tsx",
+    "--format",
+    "json"
+  ],
+  "exit_code": 0,
+  "expected_exit": 2,
+  "scope": "invalid rule configuration must fail before pretending the file passed"
+}

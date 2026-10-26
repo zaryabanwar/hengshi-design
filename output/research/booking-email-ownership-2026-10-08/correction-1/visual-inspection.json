@@ -1,0 +1,32 @@
+{
+  "scope": "Source/pixel inspection of explanatory documentation panel only",
+  "desktop": {
+    "viewport_width": 1440,
+    "page_width": 1440,
+    "panel_client_width": 1124,
+    "panel_scroll_width": 1124
+  },
+  "narrow": {
+    "viewport_width": 320,
+    "page_width": 320,
+    "panel_client_width": 276,
+    "panel_scroll_width": 276
+  },
+  "keyboard": {
+    "native_details_open_close": true,
+    "tab_enters_first_source_link": true
+  },
+  "console": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "pixels_inspected": [
+    "desktop.png",
+    "narrow320.png",
+    "narrow-flow.png",
+    "narrow-recovery.png",
+    "narrow-limits.png"
+  ],
+  "unchanged_outside_panel": true,
+  "limits": "No working form/email/booking control, complete WCAG or physical mobile proof"
+}

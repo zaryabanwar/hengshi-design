@@ -1,0 +1,6547 @@
+{
+  "scope": "Original virtual candidate graph plus six verified archive-owned nodes, in memory only",
+  "lock_sha256": "fa903a8d901357aacf80863524e0e00ae2ece69126daf218256cdd2656b2da4c",
+  "archive_sha256": "d5b61fbe10d237f7565032a74b03b5be6c83b309037ee407e2b5b46f24738823",
+  "initial_node_count": 302,
+  "initial_faults": [
+    {
+      "from": "node_modules/@tailwindcss/oxide-wasm32-wasi",
+      "name": "@emnapi/core",
+      "spec": "^1.11.1",
+      "type": "prod",
+      "error": "MISSING"
+    },
+    {
+      "from": "node_modules/@tailwindcss/oxide-wasm32-wasi",
+      "name": "@emnapi/runtime",
+      "spec": "^1.11.1",
+      "type": "prod",
+      "error": "MISSING"
+    },
+    {
+      "from": "node_modules/@tailwindcss/oxide-wasm32-wasi",
+      "name": "@emnapi/wasi-threads",
+      "spec": "^1.2.2",
+      "type": "prod",
+      "error": "MISSING"
+    },
+    {
+      "from": "node_modules/@tailwindcss/oxide-wasm32-wasi",
+      "name": "@napi-rs/wasm-runtime",
+      "spec": "^1.1.4",
+      "type": "prod",
+      "error": "MISSING"
+    },
+    {
+      "from": "node_modules/@tailwindcss/oxide-wasm32-wasi",
+      "name": "@tybys/wasm-util",
+      "spec": "^0.10.2",
+      "type": "prod",
+      "error": "MISSING"
+    },
+    {
+      "from": "node_modules/@tailwindcss/oxide-wasm32-wasi",
+      "name": "tslib",
+      "spec": "^2.8.1",
+      "type": "prod",
+      "error": "MISSING"
+    }
+  ],
+  "final_node_count": 308,
+  "final_faults": [],
+  "added": [
+    {
+      "location": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/core",
+      "name": "@emnapi/core",
+      "version": "1.11.1",
+      "dev": true,
+      "optional": true,
+      "inBundle": true,
+      "edges": [
+        {
+          "name": "@emnapi/wasi-threads",
+          "spec": "1.2.2",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/wasi-threads",
+          "error": null
+        },
+        {
+          "name": "tslib",
+          "spec": "^2.4.0",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/tslib",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/runtime",
+      "name": "@emnapi/runtime",
+      "version": "1.11.1",
+      "dev": true,
+      "optional": true,
+      "inBundle": true,
+      "edges": [
+        {
+          "name": "tslib",
+          "spec": "^2.4.0",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/tslib",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/wasi-threads",
+      "name": "@emnapi/wasi-threads",
+      "version": "1.2.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": true,
+      "edges": [
+        {
+          "name": "tslib",
+          "spec": "^2.4.0",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/tslib",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@napi-rs/wasm-runtime",
+      "name": "@napi-rs/wasm-runtime",
+      "version": "1.1.4",
+      "dev": true,
+      "optional": true,
+      "inBundle": true,
+      "edges": [
+        {
+          "name": "@emnapi/core",
+          "spec": "^1.7.1",
+          "type": "peer",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/core",
+          "error": null
+        },
+        {
+          "name": "@emnapi/runtime",
+          "spec": "^1.7.1",
+          "type": "peer",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/runtime",
+          "error": null
+        },
+        {
+          "name": "@tybys/wasm-util",
+          "spec": "^0.10.1",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@tybys/wasm-util",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@tybys/wasm-util",
+      "name": "@tybys/wasm-util",
+      "version": "0.10.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": true,
+      "edges": [
+        {
+          "name": "tslib",
+          "spec": "^2.4.0",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/tslib",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/tslib",
+      "name": "tslib",
+      "version": "2.8.1",
+      "dev": true,
+      "optional": true,
+      "inBundle": true,
+      "edges": []
+    }
+  ],
+  "nodes": [
+    {
+      "location": "",
+      "name": "hengshi-v1-isolated-three-remedy-evaluation",
+      "version": "1.0.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "react",
+          "spec": "19.3.0",
+          "type": "prod",
+          "to": "node_modules/react",
+          "error": null
+        },
+        {
+          "name": "react-dom",
+          "spec": "19.3.0",
+          "type": "prod",
+          "to": "node_modules/react-dom",
+          "error": null
+        },
+        {
+          "name": "@react-three/fiber",
+          "spec": "9.8.1",
+          "type": "prod",
+          "to": "node_modules/@react-three/fiber",
+          "error": null
+        },
+        {
+          "name": "@react-three/drei",
+          "spec": "10.7.9",
+          "type": "prod",
+          "to": "node_modules/@react-three/drei",
+          "error": null
+        },
+        {
+          "name": "three",
+          "spec": "0.184.0",
+          "type": "prod",
+          "to": "node_modules/three",
+          "error": null
+        },
+        {
+          "name": "gsap",
+          "spec": "3.15.0",
+          "type": "prod",
+          "to": "node_modules/gsap",
+          "error": null
+        },
+        {
+          "name": "react-router-dom",
+          "spec": "7.18.4",
+          "type": "prod",
+          "to": "node_modules/react-router-dom",
+          "error": null
+        },
+        {
+          "name": "zustand",
+          "spec": "5.0.15",
+          "type": "prod",
+          "to": "node_modules/zustand",
+          "error": null
+        },
+        {
+          "name": "vite",
+          "spec": "8.3.2",
+          "type": "dev",
+          "to": "node_modules/vite",
+          "error": null
+        },
+        {
+          "name": "@vitejs/plugin-react",
+          "spec": "6.1.2",
+          "type": "dev",
+          "to": "node_modules/@vitejs/plugin-react",
+          "error": null
+        },
+        {
+          "name": "@types/react",
+          "spec": "19.3.0",
+          "type": "dev",
+          "to": "node_modules/@types/react",
+          "error": null
+        },
+        {
+          "name": "@types/react-dom",
+          "spec": "19.3.0",
+          "type": "dev",
+          "to": "node_modules/@types/react-dom",
+          "error": null
+        },
+        {
+          "name": "@types/three",
+          "spec": "0.184.1",
+          "type": "dev",
+          "to": "node_modules/@types/three",
+          "error": null
+        },
+        {
+          "name": "tailwindcss",
+          "spec": "4.3.3",
+          "type": "dev",
+          "to": "node_modules/tailwindcss",
+          "error": null
+        },
+        {
+          "name": "@tailwindcss/vite",
+          "spec": "4.3.3",
+          "type": "dev",
+          "to": "node_modules/@tailwindcss/vite",
+          "error": null
+        },
+        {
+          "name": "postcss",
+          "spec": "8.5.29",
+          "type": "dev",
+          "to": "node_modules/postcss",
+          "error": null
+        },
+        {
+          "name": "autoprefixer",
+          "spec": "10.6.1",
+          "type": "dev",
+          "to": "node_modules/autoprefixer",
+          "error": null
+        },
+        {
+          "name": "eslint",
+          "spec": "10.12.0",
+          "type": "dev",
+          "to": "node_modules/eslint",
+          "error": null
+        },
+        {
+          "name": "eslint-plugin-react-hooks",
+          "spec": "7.1.1",
+          "type": "dev",
+          "to": "node_modules/eslint-plugin-react-hooks",
+          "error": null
+        },
+        {
+          "name": "eslint-plugin-react-refresh",
+          "spec": "0.5.7",
+          "type": "dev",
+          "to": "node_modules/eslint-plugin-react-refresh",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/parser",
+          "spec": "8.71.1",
+          "type": "dev",
+          "to": "node_modules/@typescript-eslint/parser",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/eslint-plugin",
+          "spec": "8.71.1",
+          "type": "dev",
+          "to": "node_modules/@typescript-eslint/eslint-plugin",
+          "error": null
+        },
+        {
+          "name": "typescript",
+          "spec": "npm:@typescript/typescript6@6.0.2",
+          "type": "dev",
+          "to": "node_modules/typescript",
+          "error": null
+        },
+        {
+          "name": "@typescript/native",
+          "spec": "npm:typescript@7.0.2",
+          "type": "dev",
+          "to": "node_modules/@typescript/native",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@babel/code-frame",
+      "name": "@babel/code-frame",
+      "version": "7.29.7",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@babel/helper-validator-identifier",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/helper-validator-identifier",
+          "error": null
+        },
+        {
+          "name": "js-tokens",
+          "spec": "^4.0.0",
+          "type": "prod",
+          "to": "node_modules/js-tokens",
+          "error": null
+        },
+        {
+          "name": "picocolors",
+          "spec": "^1.1.1",
+          "type": "prod",
+          "to": "node_modules/picocolors",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@babel/compat-data",
+      "name": "@babel/compat-data",
+      "version": "7.29.7",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@babel/core",
+      "name": "@babel/core",
+      "version": "7.29.7",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@babel/code-frame",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/code-frame",
+          "error": null
+        },
+        {
+          "name": "@babel/generator",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/generator",
+          "error": null
+        },
+        {
+          "name": "@babel/helper-compilation-targets",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/helper-compilation-targets",
+          "error": null
+        },
+        {
+          "name": "@babel/helper-module-transforms",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/helper-module-transforms",
+          "error": null
+        },
+        {
+          "name": "@babel/helpers",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/helpers",
+          "error": null
+        },
+        {
+          "name": "@babel/parser",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/parser",
+          "error": null
+        },
+        {
+          "name": "@babel/template",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/template",
+          "error": null
+        },
+        {
+          "name": "@babel/traverse",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/traverse",
+          "error": null
+        },
+        {
+          "name": "@babel/types",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/types",
+          "error": null
+        },
+        {
+          "name": "@jridgewell/remapping",
+          "spec": "^2.3.5",
+          "type": "prod",
+          "to": "node_modules/@jridgewell/remapping",
+          "error": null
+        },
+        {
+          "name": "convert-source-map",
+          "spec": "^2.0.0",
+          "type": "prod",
+          "to": "node_modules/convert-source-map",
+          "error": null
+        },
+        {
+          "name": "debug",
+          "spec": "^4.1.0",
+          "type": "prod",
+          "to": "node_modules/debug",
+          "error": null
+        },
+        {
+          "name": "gensync",
+          "spec": "^1.0.0-beta.2",
+          "type": "prod",
+          "to": "node_modules/gensync",
+          "error": null
+        },
+        {
+          "name": "json5",
+          "spec": "^2.2.3",
+          "type": "prod",
+          "to": "node_modules/json5",
+          "error": null
+        },
+        {
+          "name": "semver",
+          "spec": "^6.3.1",
+          "type": "prod",
+          "to": "node_modules/@babel/core/node_modules/semver",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@babel/core/node_modules/semver",
+      "name": "semver",
+      "version": "6.3.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@babel/generator",
+      "name": "@babel/generator",
+      "version": "7.29.8",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@babel/parser",
+          "spec": "^7.29.8",
+          "type": "prod",
+          "to": "node_modules/@babel/parser",
+          "error": null
+        },
+        {
+          "name": "@babel/types",
+          "spec": "^7.29.8",
+          "type": "prod",
+          "to": "node_modules/@babel/types",
+          "error": null
+        },
+        {
+          "name": "@jridgewell/gen-mapping",
+          "spec": "^0.3.12",
+          "type": "prod",
+          "to": "node_modules/@jridgewell/gen-mapping",
+          "error": null
+        },
+        {
+          "name": "@jridgewell/trace-mapping",
+          "spec": "^0.3.28",
+          "type": "prod",
+          "to": "node_modules/@jridgewell/trace-mapping",
+          "error": null
+        },
+        {
+          "name": "jsesc",
+          "spec": "^3.0.2",
+          "type": "prod",
+          "to": "node_modules/jsesc",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@babel/helper-compilation-targets",
+      "name": "@babel/helper-compilation-targets",
+      "version": "7.29.7",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@babel/compat-data",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/compat-data",
+          "error": null
+        },
+        {
+          "name": "@babel/helper-validator-option",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/helper-validator-option",
+          "error": null
+        },
+        {
+          "name": "browserslist",
+          "spec": "^4.24.0",
+          "type": "prod",
+          "to": "node_modules/browserslist",
+          "error": null
+        },
+        {
+          "name": "lru-cache",
+          "spec": "^5.1.1",
+          "type": "prod",
+          "to": "node_modules/lru-cache",
+          "error": null
+        },
+        {
+          "name": "semver",
+          "spec": "^6.3.1",
+          "type": "prod",
+          "to": "node_modules/@babel/helper-compilation-targets/node_modules/semver",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@babel/helper-compilation-targets/node_modules/semver",
+      "name": "semver",
+      "version": "6.3.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@babel/helper-globals",
+      "name": "@babel/helper-globals",
+      "version": "7.29.7",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@babel/helper-module-imports",
+      "name": "@babel/helper-module-imports",
+      "version": "7.29.7",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@babel/traverse",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/traverse",
+          "error": null
+        },
+        {
+          "name": "@babel/types",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/types",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@babel/helper-module-transforms",
+      "name": "@babel/helper-module-transforms",
+      "version": "7.29.7",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@babel/core",
+          "spec": "^7.0.0",
+          "type": "peer",
+          "to": "node_modules/@babel/core",
+          "error": null
+        },
+        {
+          "name": "@babel/helper-module-imports",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/helper-module-imports",
+          "error": null
+        },
+        {
+          "name": "@babel/helper-validator-identifier",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/helper-validator-identifier",
+          "error": null
+        },
+        {
+          "name": "@babel/traverse",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/traverse",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@babel/helper-string-parser",
+      "name": "@babel/helper-string-parser",
+      "version": "7.29.7",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@babel/helper-validator-identifier",
+      "name": "@babel/helper-validator-identifier",
+      "version": "7.29.7",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@babel/helper-validator-option",
+      "name": "@babel/helper-validator-option",
+      "version": "7.29.7",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@babel/helpers",
+      "name": "@babel/helpers",
+      "version": "7.29.7",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@babel/template",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/template",
+          "error": null
+        },
+        {
+          "name": "@babel/types",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/types",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@babel/parser",
+      "name": "@babel/parser",
+      "version": "7.29.9",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@babel/types",
+          "spec": "^7.29.8",
+          "type": "prod",
+          "to": "node_modules/@babel/types",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@babel/runtime",
+      "name": "@babel/runtime",
+      "version": "7.29.7",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@babel/template",
+      "name": "@babel/template",
+      "version": "7.29.7",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@babel/code-frame",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/code-frame",
+          "error": null
+        },
+        {
+          "name": "@babel/parser",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/parser",
+          "error": null
+        },
+        {
+          "name": "@babel/types",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/types",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@babel/traverse",
+      "name": "@babel/traverse",
+      "version": "7.29.8",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@babel/code-frame",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/code-frame",
+          "error": null
+        },
+        {
+          "name": "@babel/generator",
+          "spec": "^7.29.8",
+          "type": "prod",
+          "to": "node_modules/@babel/generator",
+          "error": null
+        },
+        {
+          "name": "@babel/helper-globals",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/helper-globals",
+          "error": null
+        },
+        {
+          "name": "@babel/parser",
+          "spec": "^7.29.8",
+          "type": "prod",
+          "to": "node_modules/@babel/parser",
+          "error": null
+        },
+        {
+          "name": "@babel/template",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/template",
+          "error": null
+        },
+        {
+          "name": "@babel/types",
+          "spec": "^7.29.8",
+          "type": "prod",
+          "to": "node_modules/@babel/types",
+          "error": null
+        },
+        {
+          "name": "debug",
+          "spec": "^4.3.1",
+          "type": "prod",
+          "to": "node_modules/debug",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@babel/types",
+      "name": "@babel/types",
+      "version": "7.29.8",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@babel/helper-string-parser",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/helper-string-parser",
+          "error": null
+        },
+        {
+          "name": "@babel/helper-validator-identifier",
+          "spec": "^7.29.7",
+          "type": "prod",
+          "to": "node_modules/@babel/helper-validator-identifier",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@cacheable/memory",
+      "name": "@cacheable/memory",
+      "version": "2.2.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@cacheable/utils",
+          "spec": "^2.5.0",
+          "type": "prod",
+          "to": "node_modules/@cacheable/utils",
+          "error": null
+        },
+        {
+          "name": "@keyv/bigmap",
+          "spec": "^1.3.1",
+          "type": "prod",
+          "to": "node_modules/@keyv/bigmap",
+          "error": null
+        },
+        {
+          "name": "hookified",
+          "spec": "^1.15.1",
+          "type": "prod",
+          "to": "node_modules/hookified",
+          "error": null
+        },
+        {
+          "name": "keyv",
+          "spec": "^5.6.0",
+          "type": "prod",
+          "to": "node_modules/keyv",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@cacheable/utils",
+      "name": "@cacheable/utils",
+      "version": "2.5.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "hashery",
+          "spec": "^1.5.1",
+          "type": "prod",
+          "to": "node_modules/hashery",
+          "error": null
+        },
+        {
+          "name": "keyv",
+          "spec": "^5.6.0",
+          "type": "prod",
+          "to": "node_modules/keyv",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@dimforge/rapier3d-compat",
+      "name": "@dimforge/rapier3d-compat",
+      "version": "0.12.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@eslint-community/eslint-utils",
+      "name": "@eslint-community/eslint-utils",
+      "version": "4.10.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "eslint",
+          "spec": "^6.0.0 || ^7.0.0 || >=8.0.0",
+          "type": "peer",
+          "to": "node_modules/eslint",
+          "error": null
+        },
+        {
+          "name": "eslint-visitor-keys",
+          "spec": "^3.4.3",
+          "type": "prod",
+          "to": "node_modules/eslint-visitor-keys",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@eslint-community/regexpp",
+      "name": "@eslint-community/regexpp",
+      "version": "4.12.2",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@eslint/config-array",
+      "name": "@eslint/config-array",
+      "version": "0.23.5",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@eslint/object-schema",
+          "spec": "^3.0.5",
+          "type": "prod",
+          "to": "node_modules/@eslint/object-schema",
+          "error": null
+        },
+        {
+          "name": "debug",
+          "spec": "^4.3.1",
+          "type": "prod",
+          "to": "node_modules/debug",
+          "error": null
+        },
+        {
+          "name": "minimatch",
+          "spec": "^10.2.4",
+          "type": "prod",
+          "to": "node_modules/minimatch",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@eslint/config-helpers",
+      "name": "@eslint/config-helpers",
+      "version": "0.7.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@eslint/core",
+          "spec": "^1.2.1",
+          "type": "prod",
+          "to": "node_modules/@eslint/core",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@eslint/core",
+      "name": "@eslint/core",
+      "version": "1.2.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@types/json-schema",
+          "spec": "^7.0.15",
+          "type": "prod",
+          "to": "node_modules/@types/json-schema",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@eslint/object-schema",
+      "name": "@eslint/object-schema",
+      "version": "3.0.5",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@eslint/plugin-kit",
+      "name": "@eslint/plugin-kit",
+      "version": "0.7.3",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@eslint/core",
+          "spec": "^1.2.1",
+          "type": "prod",
+          "to": "node_modules/@eslint/core",
+          "error": null
+        },
+        {
+          "name": "levn",
+          "spec": "^0.4.1",
+          "type": "prod",
+          "to": "node_modules/levn",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@humanfs/core",
+      "name": "@humanfs/core",
+      "version": "0.19.2",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@humanfs/types",
+          "spec": "^0.15.0",
+          "type": "prod",
+          "to": "node_modules/@humanfs/types",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@humanfs/node",
+      "name": "@humanfs/node",
+      "version": "0.16.8",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@humanfs/core",
+          "spec": "^0.19.2",
+          "type": "prod",
+          "to": "node_modules/@humanfs/core",
+          "error": null
+        },
+        {
+          "name": "@humanfs/types",
+          "spec": "^0.15.0",
+          "type": "prod",
+          "to": "node_modules/@humanfs/types",
+          "error": null
+        },
+        {
+          "name": "@humanwhocodes/retry",
+          "spec": "^0.4.0",
+          "type": "prod",
+          "to": "node_modules/@humanwhocodes/retry",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@humanfs/types",
+      "name": "@humanfs/types",
+      "version": "0.15.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@humanwhocodes/module-importer",
+      "name": "@humanwhocodes/module-importer",
+      "version": "1.0.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@humanwhocodes/retry",
+      "name": "@humanwhocodes/retry",
+      "version": "0.4.3",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@jridgewell/gen-mapping",
+      "name": "@jridgewell/gen-mapping",
+      "version": "0.3.13",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@jridgewell/sourcemap-codec",
+          "spec": "^1.5.0",
+          "type": "prod",
+          "to": "node_modules/@jridgewell/sourcemap-codec",
+          "error": null
+        },
+        {
+          "name": "@jridgewell/trace-mapping",
+          "spec": "^0.3.24",
+          "type": "prod",
+          "to": "node_modules/@jridgewell/trace-mapping",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@jridgewell/remapping",
+      "name": "@jridgewell/remapping",
+      "version": "2.3.5",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@jridgewell/gen-mapping",
+          "spec": "^0.3.5",
+          "type": "prod",
+          "to": "node_modules/@jridgewell/gen-mapping",
+          "error": null
+        },
+        {
+          "name": "@jridgewell/trace-mapping",
+          "spec": "^0.3.24",
+          "type": "prod",
+          "to": "node_modules/@jridgewell/trace-mapping",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@jridgewell/resolve-uri",
+      "name": "@jridgewell/resolve-uri",
+      "version": "3.1.2",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@jridgewell/sourcemap-codec",
+      "name": "@jridgewell/sourcemap-codec",
+      "version": "1.6.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@jridgewell/trace-mapping",
+      "name": "@jridgewell/trace-mapping",
+      "version": "0.3.31",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@jridgewell/resolve-uri",
+          "spec": "^3.1.0",
+          "type": "prod",
+          "to": "node_modules/@jridgewell/resolve-uri",
+          "error": null
+        },
+        {
+          "name": "@jridgewell/sourcemap-codec",
+          "spec": "^1.4.14",
+          "type": "prod",
+          "to": "node_modules/@jridgewell/sourcemap-codec",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@keyv/bigmap",
+      "name": "@keyv/bigmap",
+      "version": "1.3.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "keyv",
+          "spec": "^5.6.0",
+          "type": "peer",
+          "to": "node_modules/keyv",
+          "error": null
+        },
+        {
+          "name": "hashery",
+          "spec": "^1.4.0",
+          "type": "prod",
+          "to": "node_modules/hashery",
+          "error": null
+        },
+        {
+          "name": "hookified",
+          "spec": "^1.15.0",
+          "type": "prod",
+          "to": "node_modules/hookified",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@keyv/serialize",
+      "name": "@keyv/serialize",
+      "version": "1.1.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@mediapipe/tasks-vision",
+      "name": "@mediapipe/tasks-vision",
+      "version": "0.10.17",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@monogrid/gainmap-js",
+      "name": "@monogrid/gainmap-js",
+      "version": "3.4.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "three",
+          "spec": ">= 0.159.0",
+          "type": "peer",
+          "to": "node_modules/three",
+          "error": null
+        },
+        {
+          "name": "promise-worker-transferable",
+          "spec": "^1.0.4",
+          "type": "prod",
+          "to": "node_modules/promise-worker-transferable",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@oxc-project/types",
+      "name": "@oxc-project/types",
+      "version": "0.152.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@react-three/drei",
+      "name": "@react-three/drei",
+      "version": "10.7.9",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@react-three/fiber",
+          "spec": "^9.0.0",
+          "type": "peer",
+          "to": "node_modules/@react-three/fiber",
+          "error": null
+        },
+        {
+          "name": "react",
+          "spec": "^19",
+          "type": "peer",
+          "to": "node_modules/react",
+          "error": null
+        },
+        {
+          "name": "three",
+          "spec": ">=0.159",
+          "type": "peer",
+          "to": "node_modules/three",
+          "error": null
+        },
+        {
+          "name": "react-dom",
+          "spec": "^19",
+          "type": "peerOptional",
+          "to": "node_modules/react-dom",
+          "error": null
+        },
+        {
+          "name": "@babel/runtime",
+          "spec": "^7.26.0",
+          "type": "prod",
+          "to": "node_modules/@babel/runtime",
+          "error": null
+        },
+        {
+          "name": "@mediapipe/tasks-vision",
+          "spec": "0.10.17",
+          "type": "prod",
+          "to": "node_modules/@mediapipe/tasks-vision",
+          "error": null
+        },
+        {
+          "name": "@monogrid/gainmap-js",
+          "spec": "^3.0.6",
+          "type": "prod",
+          "to": "node_modules/@monogrid/gainmap-js",
+          "error": null
+        },
+        {
+          "name": "@use-gesture/react",
+          "spec": "^10.3.1",
+          "type": "prod",
+          "to": "node_modules/@use-gesture/react",
+          "error": null
+        },
+        {
+          "name": "camera-controls",
+          "spec": "^3.1.0",
+          "type": "prod",
+          "to": "node_modules/camera-controls",
+          "error": null
+        },
+        {
+          "name": "cross-env",
+          "spec": "^7.0.3",
+          "type": "prod",
+          "to": "node_modules/cross-env",
+          "error": null
+        },
+        {
+          "name": "detect-gpu",
+          "spec": "^5.0.56",
+          "type": "prod",
+          "to": "node_modules/detect-gpu",
+          "error": null
+        },
+        {
+          "name": "glsl-noise",
+          "spec": "^0.0.0",
+          "type": "prod",
+          "to": "node_modules/glsl-noise",
+          "error": null
+        },
+        {
+          "name": "hls.js",
+          "spec": "^1.5.17",
+          "type": "prod",
+          "to": "node_modules/hls.js",
+          "error": null
+        },
+        {
+          "name": "maath",
+          "spec": "^0.10.8",
+          "type": "prod",
+          "to": "node_modules/maath",
+          "error": null
+        },
+        {
+          "name": "meshline",
+          "spec": "^3.3.1",
+          "type": "prod",
+          "to": "node_modules/meshline",
+          "error": null
+        },
+        {
+          "name": "stats-gl",
+          "spec": "^2.2.8",
+          "type": "prod",
+          "to": "node_modules/stats-gl",
+          "error": null
+        },
+        {
+          "name": "stats.js",
+          "spec": "^0.17.0",
+          "type": "prod",
+          "to": "node_modules/stats.js",
+          "error": null
+        },
+        {
+          "name": "suspend-react",
+          "spec": "^0.1.3",
+          "type": "prod",
+          "to": "node_modules/suspend-react",
+          "error": null
+        },
+        {
+          "name": "three-mesh-bvh",
+          "spec": "^0.8.3",
+          "type": "prod",
+          "to": "node_modules/three-mesh-bvh",
+          "error": null
+        },
+        {
+          "name": "three-stdlib",
+          "spec": "^2.35.6",
+          "type": "prod",
+          "to": "node_modules/three-stdlib",
+          "error": null
+        },
+        {
+          "name": "troika-three-text",
+          "spec": "^0.52.4",
+          "type": "prod",
+          "to": "node_modules/troika-three-text",
+          "error": null
+        },
+        {
+          "name": "tunnel-rat",
+          "spec": "^0.1.2",
+          "type": "prod",
+          "to": "node_modules/tunnel-rat",
+          "error": null
+        },
+        {
+          "name": "use-sync-external-store",
+          "spec": "^1.4.0",
+          "type": "prod",
+          "to": "node_modules/use-sync-external-store",
+          "error": null
+        },
+        {
+          "name": "utility-types",
+          "spec": "^3.11.0",
+          "type": "prod",
+          "to": "node_modules/utility-types",
+          "error": null
+        },
+        {
+          "name": "zustand",
+          "spec": "^5.0.1",
+          "type": "prod",
+          "to": "node_modules/zustand",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@react-three/fiber",
+      "name": "@react-three/fiber",
+      "version": "9.8.1",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "react",
+          "spec": ">=19 <19.4",
+          "type": "peer",
+          "to": "node_modules/react",
+          "error": null
+        },
+        {
+          "name": "three",
+          "spec": ">=0.156",
+          "type": "peer",
+          "to": "node_modules/three",
+          "error": null
+        },
+        {
+          "name": "expo",
+          "spec": ">=43.0",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "expo-asset",
+          "spec": ">=8.4",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "expo-file-system",
+          "spec": ">=11.0",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "expo-gl",
+          "spec": ">=11.0",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "react-dom",
+          "spec": ">=19 <19.4",
+          "type": "peerOptional",
+          "to": "node_modules/react-dom",
+          "error": null
+        },
+        {
+          "name": "react-native",
+          "spec": ">=0.78",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "@babel/runtime",
+          "spec": "^7.17.8",
+          "type": "prod",
+          "to": "node_modules/@babel/runtime",
+          "error": null
+        },
+        {
+          "name": "@types/webxr",
+          "spec": "*",
+          "type": "prod",
+          "to": "node_modules/@types/webxr",
+          "error": null
+        },
+        {
+          "name": "base64-js",
+          "spec": "^1.5.1",
+          "type": "prod",
+          "to": "node_modules/base64-js",
+          "error": null
+        },
+        {
+          "name": "buffer",
+          "spec": "^6.0.3",
+          "type": "prod",
+          "to": "node_modules/buffer",
+          "error": null
+        },
+        {
+          "name": "its-fine",
+          "spec": "^2.1.1",
+          "type": "prod",
+          "to": "node_modules/its-fine",
+          "error": null
+        },
+        {
+          "name": "react-use-measure",
+          "spec": "^2.1.7",
+          "type": "prod",
+          "to": "node_modules/react-use-measure",
+          "error": null
+        },
+        {
+          "name": "scheduler",
+          "spec": "^0.28.0",
+          "type": "prod",
+          "to": "node_modules/scheduler",
+          "error": null
+        },
+        {
+          "name": "suspend-react",
+          "spec": "^0.1.3",
+          "type": "prod",
+          "to": "node_modules/suspend-react",
+          "error": null
+        },
+        {
+          "name": "use-sync-external-store",
+          "spec": "^1.4.0",
+          "type": "prod",
+          "to": "node_modules/use-sync-external-store",
+          "error": null
+        },
+        {
+          "name": "zustand",
+          "spec": "^5.0.3",
+          "type": "prod",
+          "to": "node_modules/zustand",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@rolldown/binding-android-arm-eabi",
+      "name": "@rolldown/binding-android-arm-eabi",
+      "version": "1.2.12",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@rolldown/binding-android-arm64",
+      "name": "@rolldown/binding-android-arm64",
+      "version": "1.2.12",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@rolldown/binding-darwin-arm64",
+      "name": "@rolldown/binding-darwin-arm64",
+      "version": "1.2.12",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@rolldown/binding-darwin-x64",
+      "name": "@rolldown/binding-darwin-x64",
+      "version": "1.2.12",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@rolldown/binding-freebsd-x64",
+      "name": "@rolldown/binding-freebsd-x64",
+      "version": "1.2.12",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@rolldown/binding-linux-arm-gnueabihf",
+      "name": "@rolldown/binding-linux-arm-gnueabihf",
+      "version": "1.2.12",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@rolldown/binding-linux-arm64-gnu",
+      "name": "@rolldown/binding-linux-arm64-gnu",
+      "version": "1.2.12",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@rolldown/binding-linux-arm64-musl",
+      "name": "@rolldown/binding-linux-arm64-musl",
+      "version": "1.2.12",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@rolldown/binding-linux-ppc64-gnu",
+      "name": "@rolldown/binding-linux-ppc64-gnu",
+      "version": "1.2.12",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@rolldown/binding-linux-s390x-gnu",
+      "name": "@rolldown/binding-linux-s390x-gnu",
+      "version": "1.2.12",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@rolldown/binding-linux-x64-gnu",
+      "name": "@rolldown/binding-linux-x64-gnu",
+      "version": "1.2.12",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@rolldown/binding-linux-x64-musl",
+      "name": "@rolldown/binding-linux-x64-musl",
+      "version": "1.2.12",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@rolldown/binding-openharmony-arm64",
+      "name": "@rolldown/binding-openharmony-arm64",
+      "version": "1.2.12",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@rolldown/binding-win32-arm64-msvc",
+      "name": "@rolldown/binding-win32-arm64-msvc",
+      "version": "1.2.12",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@rolldown/binding-win32-x64-msvc",
+      "name": "@rolldown/binding-win32-x64-msvc",
+      "version": "1.2.12",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@rolldown/pluginutils",
+      "name": "@rolldown/pluginutils",
+      "version": "1.0.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@tailwindcss/node",
+      "name": "@tailwindcss/node",
+      "version": "4.3.3",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@jridgewell/remapping",
+          "spec": "^2.3.5",
+          "type": "prod",
+          "to": "node_modules/@jridgewell/remapping",
+          "error": null
+        },
+        {
+          "name": "enhanced-resolve",
+          "spec": "^5.24.1",
+          "type": "prod",
+          "to": "node_modules/enhanced-resolve",
+          "error": null
+        },
+        {
+          "name": "jiti",
+          "spec": "^2.7.0",
+          "type": "prod",
+          "to": "node_modules/jiti",
+          "error": null
+        },
+        {
+          "name": "lightningcss",
+          "spec": "1.32.0",
+          "type": "prod",
+          "to": "node_modules/lightningcss",
+          "error": null
+        },
+        {
+          "name": "magic-string",
+          "spec": "^0.30.21",
+          "type": "prod",
+          "to": "node_modules/magic-string",
+          "error": null
+        },
+        {
+          "name": "source-map-js",
+          "spec": "^1.2.1",
+          "type": "prod",
+          "to": "node_modules/source-map-js",
+          "error": null
+        },
+        {
+          "name": "tailwindcss",
+          "spec": "4.3.3",
+          "type": "prod",
+          "to": "node_modules/tailwindcss",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide",
+      "name": "@tailwindcss/oxide",
+      "version": "4.3.3",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@tailwindcss/oxide-android-arm64",
+          "spec": "4.3.3",
+          "type": "optional",
+          "to": "node_modules/@tailwindcss/oxide-android-arm64",
+          "error": null
+        },
+        {
+          "name": "@tailwindcss/oxide-darwin-arm64",
+          "spec": "4.3.3",
+          "type": "optional",
+          "to": "node_modules/@tailwindcss/oxide-darwin-arm64",
+          "error": null
+        },
+        {
+          "name": "@tailwindcss/oxide-darwin-x64",
+          "spec": "4.3.3",
+          "type": "optional",
+          "to": "node_modules/@tailwindcss/oxide-darwin-x64",
+          "error": null
+        },
+        {
+          "name": "@tailwindcss/oxide-freebsd-x64",
+          "spec": "4.3.3",
+          "type": "optional",
+          "to": "node_modules/@tailwindcss/oxide-freebsd-x64",
+          "error": null
+        },
+        {
+          "name": "@tailwindcss/oxide-linux-arm-gnueabihf",
+          "spec": "4.3.3",
+          "type": "optional",
+          "to": "node_modules/@tailwindcss/oxide-linux-arm-gnueabihf",
+          "error": null
+        },
+        {
+          "name": "@tailwindcss/oxide-linux-arm64-gnu",
+          "spec": "4.3.3",
+          "type": "optional",
+          "to": "node_modules/@tailwindcss/oxide-linux-arm64-gnu",
+          "error": null
+        },
+        {
+          "name": "@tailwindcss/oxide-linux-arm64-musl",
+          "spec": "4.3.3",
+          "type": "optional",
+          "to": "node_modules/@tailwindcss/oxide-linux-arm64-musl",
+          "error": null
+        },
+        {
+          "name": "@tailwindcss/oxide-linux-x64-gnu",
+          "spec": "4.3.3",
+          "type": "optional",
+          "to": "node_modules/@tailwindcss/oxide-linux-x64-gnu",
+          "error": null
+        },
+        {
+          "name": "@tailwindcss/oxide-linux-x64-musl",
+          "spec": "4.3.3",
+          "type": "optional",
+          "to": "node_modules/@tailwindcss/oxide-linux-x64-musl",
+          "error": null
+        },
+        {
+          "name": "@tailwindcss/oxide-wasm32-wasi",
+          "spec": "4.3.3",
+          "type": "optional",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi",
+          "error": null
+        },
+        {
+          "name": "@tailwindcss/oxide-win32-arm64-msvc",
+          "spec": "4.3.3",
+          "type": "optional",
+          "to": "node_modules/@tailwindcss/oxide-win32-arm64-msvc",
+          "error": null
+        },
+        {
+          "name": "@tailwindcss/oxide-win32-x64-msvc",
+          "spec": "4.3.3",
+          "type": "optional",
+          "to": "node_modules/@tailwindcss/oxide-win32-x64-msvc",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-android-arm64",
+      "name": "@tailwindcss/oxide-android-arm64",
+      "version": "4.3.3",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-darwin-arm64",
+      "name": "@tailwindcss/oxide-darwin-arm64",
+      "version": "4.3.3",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-darwin-x64",
+      "name": "@tailwindcss/oxide-darwin-x64",
+      "version": "4.3.3",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-freebsd-x64",
+      "name": "@tailwindcss/oxide-freebsd-x64",
+      "version": "4.3.3",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-linux-arm-gnueabihf",
+      "name": "@tailwindcss/oxide-linux-arm-gnueabihf",
+      "version": "4.3.3",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-linux-arm64-gnu",
+      "name": "@tailwindcss/oxide-linux-arm64-gnu",
+      "version": "4.3.3",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-linux-arm64-musl",
+      "name": "@tailwindcss/oxide-linux-arm64-musl",
+      "version": "4.3.3",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-linux-x64-gnu",
+      "name": "@tailwindcss/oxide-linux-x64-gnu",
+      "version": "4.3.3",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-linux-x64-musl",
+      "name": "@tailwindcss/oxide-linux-x64-musl",
+      "version": "4.3.3",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-wasm32-wasi",
+      "name": "@tailwindcss/oxide-wasm32-wasi",
+      "version": "4.3.3",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@emnapi/core",
+          "spec": "^1.11.1",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/core",
+          "error": null
+        },
+        {
+          "name": "@emnapi/runtime",
+          "spec": "^1.11.1",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/runtime",
+          "error": null
+        },
+        {
+          "name": "@emnapi/wasi-threads",
+          "spec": "^1.2.2",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/wasi-threads",
+          "error": null
+        },
+        {
+          "name": "@napi-rs/wasm-runtime",
+          "spec": "^1.1.4",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@napi-rs/wasm-runtime",
+          "error": null
+        },
+        {
+          "name": "@tybys/wasm-util",
+          "spec": "^0.10.2",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@tybys/wasm-util",
+          "error": null
+        },
+        {
+          "name": "tslib",
+          "spec": "^2.8.1",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/tslib",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/core",
+      "name": "@emnapi/core",
+      "version": "1.11.1",
+      "dev": true,
+      "optional": true,
+      "inBundle": true,
+      "edges": [
+        {
+          "name": "@emnapi/wasi-threads",
+          "spec": "1.2.2",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/wasi-threads",
+          "error": null
+        },
+        {
+          "name": "tslib",
+          "spec": "^2.4.0",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/tslib",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/runtime",
+      "name": "@emnapi/runtime",
+      "version": "1.11.1",
+      "dev": true,
+      "optional": true,
+      "inBundle": true,
+      "edges": [
+        {
+          "name": "tslib",
+          "spec": "^2.4.0",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/tslib",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/wasi-threads",
+      "name": "@emnapi/wasi-threads",
+      "version": "1.2.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": true,
+      "edges": [
+        {
+          "name": "tslib",
+          "spec": "^2.4.0",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/tslib",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@napi-rs/wasm-runtime",
+      "name": "@napi-rs/wasm-runtime",
+      "version": "1.1.4",
+      "dev": true,
+      "optional": true,
+      "inBundle": true,
+      "edges": [
+        {
+          "name": "@emnapi/core",
+          "spec": "^1.7.1",
+          "type": "peer",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/core",
+          "error": null
+        },
+        {
+          "name": "@emnapi/runtime",
+          "spec": "^1.7.1",
+          "type": "peer",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/runtime",
+          "error": null
+        },
+        {
+          "name": "@tybys/wasm-util",
+          "spec": "^0.10.1",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@tybys/wasm-util",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@tybys/wasm-util",
+      "name": "@tybys/wasm-util",
+      "version": "0.10.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": true,
+      "edges": [
+        {
+          "name": "tslib",
+          "spec": "^2.4.0",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/tslib",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/tslib",
+      "name": "tslib",
+      "version": "2.8.1",
+      "dev": true,
+      "optional": true,
+      "inBundle": true,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-win32-arm64-msvc",
+      "name": "@tailwindcss/oxide-win32-arm64-msvc",
+      "version": "4.3.3",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@tailwindcss/oxide-win32-x64-msvc",
+      "name": "@tailwindcss/oxide-win32-x64-msvc",
+      "version": "4.3.3",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@tailwindcss/vite",
+      "name": "@tailwindcss/vite",
+      "version": "4.3.3",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "vite",
+          "spec": "^5.2.0 || ^6 || ^7 || ^8",
+          "type": "peer",
+          "to": "node_modules/vite",
+          "error": null
+        },
+        {
+          "name": "@tailwindcss/node",
+          "spec": "4.3.3",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/node",
+          "error": null
+        },
+        {
+          "name": "@tailwindcss/oxide",
+          "spec": "4.3.3",
+          "type": "prod",
+          "to": "node_modules/@tailwindcss/oxide",
+          "error": null
+        },
+        {
+          "name": "tailwindcss",
+          "spec": "4.3.3",
+          "type": "prod",
+          "to": "node_modules/tailwindcss",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@tweenjs/tween.js",
+      "name": "@tweenjs/tween.js",
+      "version": "23.1.3",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@types/draco3d",
+      "name": "@types/draco3d",
+      "version": "1.4.10",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@types/esrecurse",
+      "name": "@types/esrecurse",
+      "version": "4.3.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@types/estree",
+      "name": "@types/estree",
+      "version": "1.0.9",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@types/json-schema",
+      "name": "@types/json-schema",
+      "version": "7.0.15",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@types/offscreencanvas",
+      "name": "@types/offscreencanvas",
+      "version": "2019.7.3",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@types/react",
+      "name": "@types/react",
+      "version": "19.3.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "csstype",
+          "spec": "^3.2.2",
+          "type": "prod",
+          "to": "node_modules/csstype",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@types/react-dom",
+      "name": "@types/react-dom",
+      "version": "19.3.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@types/react",
+          "spec": "^19.3.0",
+          "type": "peer",
+          "to": "node_modules/@types/react",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@types/react-reconciler",
+      "name": "@types/react-reconciler",
+      "version": "0.28.9",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@types/react",
+          "spec": "*",
+          "type": "peer",
+          "to": "node_modules/@types/react",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@types/stats.js",
+      "name": "@types/stats.js",
+      "version": "0.17.4",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@types/three",
+      "name": "@types/three",
+      "version": "0.184.1",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@dimforge/rapier3d-compat",
+          "spec": "~0.12.0",
+          "type": "prod",
+          "to": "node_modules/@dimforge/rapier3d-compat",
+          "error": null
+        },
+        {
+          "name": "@tweenjs/tween.js",
+          "spec": "~23.1.3",
+          "type": "prod",
+          "to": "node_modules/@tweenjs/tween.js",
+          "error": null
+        },
+        {
+          "name": "@types/stats.js",
+          "spec": "*",
+          "type": "prod",
+          "to": "node_modules/@types/stats.js",
+          "error": null
+        },
+        {
+          "name": "@types/webxr",
+          "spec": ">=0.5.17",
+          "type": "prod",
+          "to": "node_modules/@types/webxr",
+          "error": null
+        },
+        {
+          "name": "fflate",
+          "spec": "~0.8.2",
+          "type": "prod",
+          "to": "node_modules/fflate",
+          "error": null
+        },
+        {
+          "name": "meshoptimizer",
+          "spec": "~1.1.1",
+          "type": "prod",
+          "to": "node_modules/meshoptimizer",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@types/webxr",
+      "name": "@types/webxr",
+      "version": "0.5.24",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript-eslint/eslint-plugin",
+      "name": "@typescript-eslint/eslint-plugin",
+      "version": "8.71.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@typescript-eslint/parser",
+          "spec": "^8.71.1",
+          "type": "peer",
+          "to": "node_modules/@typescript-eslint/parser",
+          "error": null
+        },
+        {
+          "name": "eslint",
+          "spec": "^8.57.0 || ^9.0.0 || ^10.0.0",
+          "type": "peer",
+          "to": "node_modules/eslint",
+          "error": null
+        },
+        {
+          "name": "typescript",
+          "spec": ">=4.8.4 <6.1.0",
+          "type": "peer",
+          "to": "node_modules/typescript",
+          "error": null
+        },
+        {
+          "name": "@eslint-community/regexpp",
+          "spec": "^4.12.2",
+          "type": "prod",
+          "to": "node_modules/@eslint-community/regexpp",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/scope-manager",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/scope-manager",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/type-utils",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/type-utils",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/utils",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/utils",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/visitor-keys",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/visitor-keys",
+          "error": null
+        },
+        {
+          "name": "ignore",
+          "spec": "^7.0.5",
+          "type": "prod",
+          "to": "node_modules/ignore",
+          "error": null
+        },
+        {
+          "name": "natural-compare",
+          "spec": "^1.4.0",
+          "type": "prod",
+          "to": "node_modules/natural-compare",
+          "error": null
+        },
+        {
+          "name": "ts-api-utils",
+          "spec": "^2.5.0",
+          "type": "prod",
+          "to": "node_modules/ts-api-utils",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@typescript-eslint/parser",
+      "name": "@typescript-eslint/parser",
+      "version": "8.71.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "eslint",
+          "spec": "^8.57.0 || ^9.0.0 || ^10.0.0",
+          "type": "peer",
+          "to": "node_modules/eslint",
+          "error": null
+        },
+        {
+          "name": "typescript",
+          "spec": ">=4.8.4 <6.1.0",
+          "type": "peer",
+          "to": "node_modules/typescript",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/scope-manager",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/scope-manager",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/types",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/types",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/typescript-estree",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/typescript-estree",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/visitor-keys",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/visitor-keys",
+          "error": null
+        },
+        {
+          "name": "debug",
+          "spec": "^4.4.3",
+          "type": "prod",
+          "to": "node_modules/debug",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@typescript-eslint/project-service",
+      "name": "@typescript-eslint/project-service",
+      "version": "8.71.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "typescript",
+          "spec": ">=4.8.4 <6.1.0",
+          "type": "peer",
+          "to": "node_modules/typescript",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/tsconfig-utils",
+          "spec": "^8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/tsconfig-utils",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/types",
+          "spec": "^8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/types",
+          "error": null
+        },
+        {
+          "name": "debug",
+          "spec": "^4.4.3",
+          "type": "prod",
+          "to": "node_modules/debug",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@typescript-eslint/scope-manager",
+      "name": "@typescript-eslint/scope-manager",
+      "version": "8.71.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@typescript-eslint/types",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/types",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/visitor-keys",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/visitor-keys",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@typescript-eslint/tsconfig-utils",
+      "name": "@typescript-eslint/tsconfig-utils",
+      "version": "8.71.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "typescript",
+          "spec": ">=4.8.4 <6.1.0",
+          "type": "peer",
+          "to": "node_modules/typescript",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@typescript-eslint/type-utils",
+      "name": "@typescript-eslint/type-utils",
+      "version": "8.71.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "eslint",
+          "spec": "^8.57.0 || ^9.0.0 || ^10.0.0",
+          "type": "peer",
+          "to": "node_modules/eslint",
+          "error": null
+        },
+        {
+          "name": "typescript",
+          "spec": ">=4.8.4 <6.1.0",
+          "type": "peer",
+          "to": "node_modules/typescript",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/types",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/types",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/typescript-estree",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/typescript-estree",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/utils",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/utils",
+          "error": null
+        },
+        {
+          "name": "debug",
+          "spec": "^4.4.3",
+          "type": "prod",
+          "to": "node_modules/debug",
+          "error": null
+        },
+        {
+          "name": "ts-api-utils",
+          "spec": "^2.5.0",
+          "type": "prod",
+          "to": "node_modules/ts-api-utils",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@typescript-eslint/types",
+      "name": "@typescript-eslint/types",
+      "version": "8.71.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript-eslint/typescript-estree",
+      "name": "@typescript-eslint/typescript-estree",
+      "version": "8.71.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "typescript",
+          "spec": ">=4.8.4 <6.1.0",
+          "type": "peer",
+          "to": "node_modules/typescript",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/project-service",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/project-service",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/tsconfig-utils",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/tsconfig-utils",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/types",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/types",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/visitor-keys",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/visitor-keys",
+          "error": null
+        },
+        {
+          "name": "debug",
+          "spec": "^4.4.3",
+          "type": "prod",
+          "to": "node_modules/debug",
+          "error": null
+        },
+        {
+          "name": "minimatch",
+          "spec": "^10.2.2",
+          "type": "prod",
+          "to": "node_modules/minimatch",
+          "error": null
+        },
+        {
+          "name": "semver",
+          "spec": "^7.7.3",
+          "type": "prod",
+          "to": "node_modules/semver",
+          "error": null
+        },
+        {
+          "name": "tinyglobby",
+          "spec": "^0.2.15",
+          "type": "prod",
+          "to": "node_modules/tinyglobby",
+          "error": null
+        },
+        {
+          "name": "ts-api-utils",
+          "spec": "^2.5.0",
+          "type": "prod",
+          "to": "node_modules/ts-api-utils",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@typescript-eslint/utils",
+      "name": "@typescript-eslint/utils",
+      "version": "8.71.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "eslint",
+          "spec": "^8.57.0 || ^9.0.0 || ^10.0.0",
+          "type": "peer",
+          "to": "node_modules/eslint",
+          "error": null
+        },
+        {
+          "name": "typescript",
+          "spec": ">=4.8.4 <6.1.0",
+          "type": "peer",
+          "to": "node_modules/typescript",
+          "error": null
+        },
+        {
+          "name": "@eslint-community/eslint-utils",
+          "spec": "^4.9.1",
+          "type": "prod",
+          "to": "node_modules/@eslint-community/eslint-utils",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/scope-manager",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/scope-manager",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/types",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/types",
+          "error": null
+        },
+        {
+          "name": "@typescript-eslint/typescript-estree",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/typescript-estree",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@typescript-eslint/visitor-keys",
+      "name": "@typescript-eslint/visitor-keys",
+      "version": "8.71.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@typescript-eslint/types",
+          "spec": "8.71.1",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/types",
+          "error": null
+        },
+        {
+          "name": "eslint-visitor-keys",
+          "spec": "^5.0.0",
+          "type": "prod",
+          "to": "node_modules/@typescript-eslint/visitor-keys/node_modules/eslint-visitor-keys",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@typescript-eslint/visitor-keys/node_modules/eslint-visitor-keys",
+      "name": "eslint-visitor-keys",
+      "version": "5.0.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/native",
+      "name": "typescript",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@typescript/typescript-aix-ppc64",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-aix-ppc64",
+          "error": null
+        },
+        {
+          "name": "@typescript/typescript-darwin-arm64",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-darwin-arm64",
+          "error": null
+        },
+        {
+          "name": "@typescript/typescript-darwin-x64",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-darwin-x64",
+          "error": null
+        },
+        {
+          "name": "@typescript/typescript-freebsd-arm64",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-freebsd-arm64",
+          "error": null
+        },
+        {
+          "name": "@typescript/typescript-freebsd-x64",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-freebsd-x64",
+          "error": null
+        },
+        {
+          "name": "@typescript/typescript-linux-arm",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-linux-arm",
+          "error": null
+        },
+        {
+          "name": "@typescript/typescript-linux-arm64",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-linux-arm64",
+          "error": null
+        },
+        {
+          "name": "@typescript/typescript-linux-loong64",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-linux-loong64",
+          "error": null
+        },
+        {
+          "name": "@typescript/typescript-linux-mips64el",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-linux-mips64el",
+          "error": null
+        },
+        {
+          "name": "@typescript/typescript-linux-ppc64",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-linux-ppc64",
+          "error": null
+        },
+        {
+          "name": "@typescript/typescript-linux-riscv64",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-linux-riscv64",
+          "error": null
+        },
+        {
+          "name": "@typescript/typescript-linux-s390x",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-linux-s390x",
+          "error": null
+        },
+        {
+          "name": "@typescript/typescript-linux-x64",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-linux-x64",
+          "error": null
+        },
+        {
+          "name": "@typescript/typescript-netbsd-arm64",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-netbsd-arm64",
+          "error": null
+        },
+        {
+          "name": "@typescript/typescript-netbsd-x64",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-netbsd-x64",
+          "error": null
+        },
+        {
+          "name": "@typescript/typescript-openbsd-arm64",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-openbsd-arm64",
+          "error": null
+        },
+        {
+          "name": "@typescript/typescript-openbsd-x64",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-openbsd-x64",
+          "error": null
+        },
+        {
+          "name": "@typescript/typescript-sunos-x64",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-sunos-x64",
+          "error": null
+        },
+        {
+          "name": "@typescript/typescript-win32-arm64",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-win32-arm64",
+          "error": null
+        },
+        {
+          "name": "@typescript/typescript-win32-x64",
+          "spec": "7.0.2",
+          "type": "optional",
+          "to": "node_modules/@typescript/typescript-win32-x64",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@typescript/old",
+      "name": "typescript",
+      "version": "6.0.3",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-aix-ppc64",
+      "name": "@typescript/typescript-aix-ppc64",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-darwin-arm64",
+      "name": "@typescript/typescript-darwin-arm64",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-darwin-x64",
+      "name": "@typescript/typescript-darwin-x64",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-freebsd-arm64",
+      "name": "@typescript/typescript-freebsd-arm64",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-freebsd-x64",
+      "name": "@typescript/typescript-freebsd-x64",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-linux-arm",
+      "name": "@typescript/typescript-linux-arm",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-linux-arm64",
+      "name": "@typescript/typescript-linux-arm64",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-linux-loong64",
+      "name": "@typescript/typescript-linux-loong64",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-linux-mips64el",
+      "name": "@typescript/typescript-linux-mips64el",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-linux-ppc64",
+      "name": "@typescript/typescript-linux-ppc64",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-linux-riscv64",
+      "name": "@typescript/typescript-linux-riscv64",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-linux-s390x",
+      "name": "@typescript/typescript-linux-s390x",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-linux-x64",
+      "name": "@typescript/typescript-linux-x64",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-netbsd-arm64",
+      "name": "@typescript/typescript-netbsd-arm64",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-netbsd-x64",
+      "name": "@typescript/typescript-netbsd-x64",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-openbsd-arm64",
+      "name": "@typescript/typescript-openbsd-arm64",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-openbsd-x64",
+      "name": "@typescript/typescript-openbsd-x64",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-sunos-x64",
+      "name": "@typescript/typescript-sunos-x64",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-win32-arm64",
+      "name": "@typescript/typescript-win32-arm64",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@typescript/typescript-win32-x64",
+      "name": "@typescript/typescript-win32-x64",
+      "version": "7.0.2",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@use-gesture/core",
+      "name": "@use-gesture/core",
+      "version": "10.3.1",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/@use-gesture/react",
+      "name": "@use-gesture/react",
+      "version": "10.3.1",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "react",
+          "spec": ">= 16.8.0",
+          "type": "peer",
+          "to": "node_modules/react",
+          "error": null
+        },
+        {
+          "name": "@use-gesture/core",
+          "spec": "10.3.1",
+          "type": "prod",
+          "to": "node_modules/@use-gesture/core",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/@vitejs/plugin-react",
+      "name": "@vitejs/plugin-react",
+      "version": "6.1.2",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "vite",
+          "spec": "^8.0.0",
+          "type": "peer",
+          "to": "node_modules/vite",
+          "error": null
+        },
+        {
+          "name": "@rolldown/plugin-babel",
+          "spec": "^0.1.7 || ^0.2.0",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "babel-plugin-react-compiler",
+          "spec": "^1.0.0",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "oxc-transform-react",
+          "spec": "^0.152.0",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "@rolldown/pluginutils",
+          "spec": "^1.0.1",
+          "type": "prod",
+          "to": "node_modules/@rolldown/pluginutils",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/acorn",
+      "name": "acorn",
+      "version": "8.19.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/acorn-jsx",
+      "name": "acorn-jsx",
+      "version": "5.3.2",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "acorn",
+          "spec": "^6.0.0 || ^7.0.0 || ^8.0.0",
+          "type": "peer",
+          "to": "node_modules/acorn",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/ajv",
+      "name": "ajv",
+      "version": "6.15.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "fast-deep-equal",
+          "spec": "^3.1.1",
+          "type": "prod",
+          "to": "node_modules/fast-deep-equal",
+          "error": null
+        },
+        {
+          "name": "fast-json-stable-stringify",
+          "spec": "^2.0.0",
+          "type": "prod",
+          "to": "node_modules/fast-json-stable-stringify",
+          "error": null
+        },
+        {
+          "name": "json-schema-traverse",
+          "spec": "^0.4.1",
+          "type": "prod",
+          "to": "node_modules/json-schema-traverse",
+          "error": null
+        },
+        {
+          "name": "uri-js",
+          "spec": "^4.2.2",
+          "type": "prod",
+          "to": "node_modules/uri-js",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/autoprefixer",
+      "name": "autoprefixer",
+      "version": "10.6.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "postcss",
+          "spec": "^8.1.0",
+          "type": "peer",
+          "to": "node_modules/postcss",
+          "error": null
+        },
+        {
+          "name": "browserslist",
+          "spec": "^4.28.9",
+          "type": "prod",
+          "to": "node_modules/browserslist",
+          "error": null
+        },
+        {
+          "name": "caniuse-lite",
+          "spec": "^1.0.30001810",
+          "type": "prod",
+          "to": "node_modules/caniuse-lite",
+          "error": null
+        },
+        {
+          "name": "fraction.js",
+          "spec": "^5.3.4",
+          "type": "prod",
+          "to": "node_modules/fraction.js",
+          "error": null
+        },
+        {
+          "name": "picocolors",
+          "spec": "^1.1.1",
+          "type": "prod",
+          "to": "node_modules/picocolors",
+          "error": null
+        },
+        {
+          "name": "postcss-value-parser",
+          "spec": "^4.2.0",
+          "type": "prod",
+          "to": "node_modules/postcss-value-parser",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/balanced-match",
+      "name": "balanced-match",
+      "version": "4.0.4",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/base64-js",
+      "name": "base64-js",
+      "version": "1.5.1",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/baseline-browser-mapping",
+      "name": "baseline-browser-mapping",
+      "version": "2.11.27",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/bidi-js",
+      "name": "bidi-js",
+      "version": "1.1.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "require-from-string",
+          "spec": "^2.0.2",
+          "type": "prod",
+          "to": "node_modules/require-from-string",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/brace-expansion",
+      "name": "brace-expansion",
+      "version": "5.0.12",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "balanced-match",
+          "spec": "^4.0.2",
+          "type": "prod",
+          "to": "node_modules/balanced-match",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/browserslist",
+      "name": "browserslist",
+      "version": "4.29.3",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "baseline-browser-mapping",
+          "spec": "^2.11.26",
+          "type": "prod",
+          "to": "node_modules/baseline-browser-mapping",
+          "error": null
+        },
+        {
+          "name": "caniuse-lite",
+          "spec": "^1.0.30001813",
+          "type": "prod",
+          "to": "node_modules/caniuse-lite",
+          "error": null
+        },
+        {
+          "name": "electron-to-chromium",
+          "spec": "^1.5.439",
+          "type": "prod",
+          "to": "node_modules/electron-to-chromium",
+          "error": null
+        },
+        {
+          "name": "node-releases",
+          "spec": "^2.0.57",
+          "type": "prod",
+          "to": "node_modules/node-releases",
+          "error": null
+        },
+        {
+          "name": "update-browserslist-db",
+          "spec": "^1.3.3",
+          "type": "prod",
+          "to": "node_modules/update-browserslist-db",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/buffer",
+      "name": "buffer",
+      "version": "6.0.3",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "base64-js",
+          "spec": "^1.3.1",
+          "type": "prod",
+          "to": "node_modules/base64-js",
+          "error": null
+        },
+        {
+          "name": "ieee754",
+          "spec": "^1.2.1",
+          "type": "prod",
+          "to": "node_modules/ieee754",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/cacheable",
+      "name": "cacheable",
+      "version": "2.5.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@cacheable/memory",
+          "spec": "^2.2.0",
+          "type": "prod",
+          "to": "node_modules/@cacheable/memory",
+          "error": null
+        },
+        {
+          "name": "@cacheable/utils",
+          "spec": "^2.5.0",
+          "type": "prod",
+          "to": "node_modules/@cacheable/utils",
+          "error": null
+        },
+        {
+          "name": "hookified",
+          "spec": "^1.15.0",
+          "type": "prod",
+          "to": "node_modules/hookified",
+          "error": null
+        },
+        {
+          "name": "keyv",
+          "spec": "^5.6.0",
+          "type": "prod",
+          "to": "node_modules/keyv",
+          "error": null
+        },
+        {
+          "name": "qified",
+          "spec": "^0.10.1",
+          "type": "prod",
+          "to": "node_modules/qified",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/camera-controls",
+      "name": "camera-controls",
+      "version": "3.1.2",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "three",
+          "spec": ">=0.126.1",
+          "type": "peer",
+          "to": "node_modules/three",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/caniuse-lite",
+      "name": "caniuse-lite",
+      "version": "1.0.30001814",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/convert-source-map",
+      "name": "convert-source-map",
+      "version": "2.0.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/cookie",
+      "name": "cookie",
+      "version": "1.1.1",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/cross-env",
+      "name": "cross-env",
+      "version": "7.0.3",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "cross-spawn",
+          "spec": "^7.0.1",
+          "type": "prod",
+          "to": "node_modules/cross-spawn",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/cross-spawn",
+      "name": "cross-spawn",
+      "version": "7.0.6",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "path-key",
+          "spec": "^3.1.0",
+          "type": "prod",
+          "to": "node_modules/path-key",
+          "error": null
+        },
+        {
+          "name": "shebang-command",
+          "spec": "^2.0.0",
+          "type": "prod",
+          "to": "node_modules/shebang-command",
+          "error": null
+        },
+        {
+          "name": "which",
+          "spec": "^2.0.1",
+          "type": "prod",
+          "to": "node_modules/which",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/csstype",
+      "name": "csstype",
+      "version": "3.2.3",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/debug",
+      "name": "debug",
+      "version": "4.4.3",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "ms",
+          "spec": "^2.1.3",
+          "type": "prod",
+          "to": "node_modules/ms",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/deep-is",
+      "name": "deep-is",
+      "version": "0.1.4",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/detect-gpu",
+      "name": "detect-gpu",
+      "version": "5.0.70",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "webgl-constants",
+          "spec": "^1.1.1",
+          "type": "prod",
+          "to": "node_modules/webgl-constants",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/detect-libc",
+      "name": "detect-libc",
+      "version": "2.1.2",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/draco3d",
+      "name": "draco3d",
+      "version": "1.5.7",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/electron-to-chromium",
+      "name": "electron-to-chromium",
+      "version": "1.5.444",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/enhanced-resolve",
+      "name": "enhanced-resolve",
+      "version": "5.26.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "graceful-fs",
+          "spec": "^4.2.4",
+          "type": "prod",
+          "to": "node_modules/graceful-fs",
+          "error": null
+        },
+        {
+          "name": "tapable",
+          "spec": "^2.3.3",
+          "type": "prod",
+          "to": "node_modules/tapable",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/escalade",
+      "name": "escalade",
+      "version": "3.2.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/escape-string-regexp",
+      "name": "escape-string-regexp",
+      "version": "4.0.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/eslint",
+      "name": "eslint",
+      "version": "10.12.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "jiti",
+          "spec": "*",
+          "type": "peerOptional",
+          "to": "node_modules/jiti",
+          "error": null
+        },
+        {
+          "name": "@eslint-community/eslint-utils",
+          "spec": "^4.8.0",
+          "type": "prod",
+          "to": "node_modules/@eslint-community/eslint-utils",
+          "error": null
+        },
+        {
+          "name": "@eslint-community/regexpp",
+          "spec": "^4.12.2",
+          "type": "prod",
+          "to": "node_modules/@eslint-community/regexpp",
+          "error": null
+        },
+        {
+          "name": "@eslint/config-array",
+          "spec": "^0.23.5",
+          "type": "prod",
+          "to": "node_modules/@eslint/config-array",
+          "error": null
+        },
+        {
+          "name": "@eslint/config-helpers",
+          "spec": "^0.7.0",
+          "type": "prod",
+          "to": "node_modules/@eslint/config-helpers",
+          "error": null
+        },
+        {
+          "name": "@eslint/core",
+          "spec": "^1.2.1",
+          "type": "prod",
+          "to": "node_modules/@eslint/core",
+          "error": null
+        },
+        {
+          "name": "@eslint/plugin-kit",
+          "spec": "^0.7.3",
+          "type": "prod",
+          "to": "node_modules/@eslint/plugin-kit",
+          "error": null
+        },
+        {
+          "name": "@humanfs/node",
+          "spec": "^0.16.6",
+          "type": "prod",
+          "to": "node_modules/@humanfs/node",
+          "error": null
+        },
+        {
+          "name": "@humanwhocodes/module-importer",
+          "spec": "^1.0.1",
+          "type": "prod",
+          "to": "node_modules/@humanwhocodes/module-importer",
+          "error": null
+        },
+        {
+          "name": "@humanwhocodes/retry",
+          "spec": "^0.4.2",
+          "type": "prod",
+          "to": "node_modules/@humanwhocodes/retry",
+          "error": null
+        },
+        {
+          "name": "@types/estree",
+          "spec": "^1.0.6",
+          "type": "prod",
+          "to": "node_modules/@types/estree",
+          "error": null
+        },
+        {
+          "name": "ajv",
+          "spec": "^6.14.0",
+          "type": "prod",
+          "to": "node_modules/ajv",
+          "error": null
+        },
+        {
+          "name": "cross-spawn",
+          "spec": "^7.0.6",
+          "type": "prod",
+          "to": "node_modules/cross-spawn",
+          "error": null
+        },
+        {
+          "name": "debug",
+          "spec": "^4.3.2",
+          "type": "prod",
+          "to": "node_modules/debug",
+          "error": null
+        },
+        {
+          "name": "escape-string-regexp",
+          "spec": "^4.0.0",
+          "type": "prod",
+          "to": "node_modules/escape-string-regexp",
+          "error": null
+        },
+        {
+          "name": "eslint-scope",
+          "spec": "^9.1.2",
+          "type": "prod",
+          "to": "node_modules/eslint-scope",
+          "error": null
+        },
+        {
+          "name": "eslint-visitor-keys",
+          "spec": "^5.0.1",
+          "type": "prod",
+          "to": "node_modules/eslint/node_modules/eslint-visitor-keys",
+          "error": null
+        },
+        {
+          "name": "espree",
+          "spec": "^11.2.0",
+          "type": "prod",
+          "to": "node_modules/espree",
+          "error": null
+        },
+        {
+          "name": "esquery",
+          "spec": "^1.7.0",
+          "type": "prod",
+          "to": "node_modules/esquery",
+          "error": null
+        },
+        {
+          "name": "esutils",
+          "spec": "^2.0.2",
+          "type": "prod",
+          "to": "node_modules/esutils",
+          "error": null
+        },
+        {
+          "name": "fast-deep-equal",
+          "spec": "^3.1.3",
+          "type": "prod",
+          "to": "node_modules/fast-deep-equal",
+          "error": null
+        },
+        {
+          "name": "file-entry-cache",
+          "spec": "11.1.5 || >11.1.6 <12",
+          "type": "prod",
+          "to": "node_modules/file-entry-cache",
+          "error": null
+        },
+        {
+          "name": "find-up",
+          "spec": "^5.0.0",
+          "type": "prod",
+          "to": "node_modules/find-up",
+          "error": null
+        },
+        {
+          "name": "glob-parent",
+          "spec": "^6.0.2",
+          "type": "prod",
+          "to": "node_modules/glob-parent",
+          "error": null
+        },
+        {
+          "name": "ignore",
+          "spec": "^5.2.0",
+          "type": "prod",
+          "to": "node_modules/eslint/node_modules/ignore",
+          "error": null
+        },
+        {
+          "name": "imurmurhash",
+          "spec": "^0.1.4",
+          "type": "prod",
+          "to": "node_modules/imurmurhash",
+          "error": null
+        },
+        {
+          "name": "is-glob",
+          "spec": "^4.0.0",
+          "type": "prod",
+          "to": "node_modules/is-glob",
+          "error": null
+        },
+        {
+          "name": "json-stable-stringify-without-jsonify",
+          "spec": "^1.0.1",
+          "type": "prod",
+          "to": "node_modules/json-stable-stringify-without-jsonify",
+          "error": null
+        },
+        {
+          "name": "minimatch",
+          "spec": "^10.2.5",
+          "type": "prod",
+          "to": "node_modules/minimatch",
+          "error": null
+        },
+        {
+          "name": "natural-compare",
+          "spec": "^1.4.0",
+          "type": "prod",
+          "to": "node_modules/natural-compare",
+          "error": null
+        },
+        {
+          "name": "optionator",
+          "spec": "^0.9.3",
+          "type": "prod",
+          "to": "node_modules/optionator",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/eslint-plugin-react-hooks",
+      "name": "eslint-plugin-react-hooks",
+      "version": "7.1.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "eslint",
+          "spec": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0 || ^10.0.0",
+          "type": "peer",
+          "to": "node_modules/eslint",
+          "error": null
+        },
+        {
+          "name": "@babel/core",
+          "spec": "^7.24.4",
+          "type": "prod",
+          "to": "node_modules/@babel/core",
+          "error": null
+        },
+        {
+          "name": "@babel/parser",
+          "spec": "^7.24.4",
+          "type": "prod",
+          "to": "node_modules/@babel/parser",
+          "error": null
+        },
+        {
+          "name": "hermes-parser",
+          "spec": "^0.25.1",
+          "type": "prod",
+          "to": "node_modules/hermes-parser",
+          "error": null
+        },
+        {
+          "name": "zod",
+          "spec": "^3.25.0 || ^4.0.0",
+          "type": "prod",
+          "to": "node_modules/zod",
+          "error": null
+        },
+        {
+          "name": "zod-validation-error",
+          "spec": "^3.5.0 || ^4.0.0",
+          "type": "prod",
+          "to": "node_modules/zod-validation-error",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/eslint-plugin-react-refresh",
+      "name": "eslint-plugin-react-refresh",
+      "version": "0.5.7",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "eslint",
+          "spec": "^9 || ^10",
+          "type": "peer",
+          "to": "node_modules/eslint",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/eslint-scope",
+      "name": "eslint-scope",
+      "version": "9.1.2",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@types/esrecurse",
+          "spec": "^4.3.1",
+          "type": "prod",
+          "to": "node_modules/@types/esrecurse",
+          "error": null
+        },
+        {
+          "name": "@types/estree",
+          "spec": "^1.0.8",
+          "type": "prod",
+          "to": "node_modules/@types/estree",
+          "error": null
+        },
+        {
+          "name": "esrecurse",
+          "spec": "^4.3.0",
+          "type": "prod",
+          "to": "node_modules/esrecurse",
+          "error": null
+        },
+        {
+          "name": "estraverse",
+          "spec": "^5.2.0",
+          "type": "prod",
+          "to": "node_modules/estraverse",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/eslint-visitor-keys",
+      "name": "eslint-visitor-keys",
+      "version": "3.4.3",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/eslint/node_modules/eslint-visitor-keys",
+      "name": "eslint-visitor-keys",
+      "version": "5.0.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/eslint/node_modules/ignore",
+      "name": "ignore",
+      "version": "5.3.2",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/espree",
+      "name": "espree",
+      "version": "11.2.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "acorn",
+          "spec": "^8.16.0",
+          "type": "prod",
+          "to": "node_modules/acorn",
+          "error": null
+        },
+        {
+          "name": "acorn-jsx",
+          "spec": "^5.3.2",
+          "type": "prod",
+          "to": "node_modules/acorn-jsx",
+          "error": null
+        },
+        {
+          "name": "eslint-visitor-keys",
+          "spec": "^5.0.1",
+          "type": "prod",
+          "to": "node_modules/espree/node_modules/eslint-visitor-keys",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/espree/node_modules/eslint-visitor-keys",
+      "name": "eslint-visitor-keys",
+      "version": "5.0.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/esquery",
+      "name": "esquery",
+      "version": "1.7.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "estraverse",
+          "spec": "^5.1.0",
+          "type": "prod",
+          "to": "node_modules/estraverse",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/esrecurse",
+      "name": "esrecurse",
+      "version": "4.3.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "estraverse",
+          "spec": "^5.2.0",
+          "type": "prod",
+          "to": "node_modules/estraverse",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/estraverse",
+      "name": "estraverse",
+      "version": "5.3.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/esutils",
+      "name": "esutils",
+      "version": "2.0.3",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/fast-deep-equal",
+      "name": "fast-deep-equal",
+      "version": "3.1.3",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/fast-json-stable-stringify",
+      "name": "fast-json-stable-stringify",
+      "version": "2.1.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/fast-levenshtein",
+      "name": "fast-levenshtein",
+      "version": "2.0.6",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/fdir",
+      "name": "fdir",
+      "version": "6.5.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "picomatch",
+          "spec": "^3 || ^4",
+          "type": "peerOptional",
+          "to": "node_modules/picomatch",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/fflate",
+      "name": "fflate",
+      "version": "0.8.3",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/file-entry-cache",
+      "name": "file-entry-cache",
+      "version": "11.1.5",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "flat-cache",
+          "spec": "^6.1.23",
+          "type": "prod",
+          "to": "node_modules/flat-cache",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/find-up",
+      "name": "find-up",
+      "version": "5.0.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "locate-path",
+          "spec": "^6.0.0",
+          "type": "prod",
+          "to": "node_modules/locate-path",
+          "error": null
+        },
+        {
+          "name": "path-exists",
+          "spec": "^4.0.0",
+          "type": "prod",
+          "to": "node_modules/path-exists",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/flat-cache",
+      "name": "flat-cache",
+      "version": "6.1.23",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "cacheable",
+          "spec": "^2.5.0",
+          "type": "prod",
+          "to": "node_modules/cacheable",
+          "error": null
+        },
+        {
+          "name": "flatted",
+          "spec": "^3.4.2",
+          "type": "prod",
+          "to": "node_modules/flatted",
+          "error": null
+        },
+        {
+          "name": "hookified",
+          "spec": "^1.15.0",
+          "type": "prod",
+          "to": "node_modules/hookified",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/flatted",
+      "name": "flatted",
+      "version": "3.4.4",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/fraction.js",
+      "name": "fraction.js",
+      "version": "5.3.4",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/fsevents",
+      "name": "fsevents",
+      "version": "2.3.3",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/gensync",
+      "name": "gensync",
+      "version": "1.0.0-beta.2",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/glob-parent",
+      "name": "glob-parent",
+      "version": "6.0.2",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "is-glob",
+          "spec": "^4.0.3",
+          "type": "prod",
+          "to": "node_modules/is-glob",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/glsl-noise",
+      "name": "glsl-noise",
+      "version": "0.0.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/graceful-fs",
+      "name": "graceful-fs",
+      "version": "4.2.11",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/gsap",
+      "name": "gsap",
+      "version": "3.15.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/hashery",
+      "name": "hashery",
+      "version": "1.5.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "hookified",
+          "spec": "^1.15.0",
+          "type": "prod",
+          "to": "node_modules/hookified",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/hermes-estree",
+      "name": "hermes-estree",
+      "version": "0.25.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/hermes-parser",
+      "name": "hermes-parser",
+      "version": "0.25.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "hermes-estree",
+          "spec": "0.25.1",
+          "type": "prod",
+          "to": "node_modules/hermes-estree",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/hls.js",
+      "name": "hls.js",
+      "version": "1.7.3",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/hookified",
+      "name": "hookified",
+      "version": "1.15.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/ieee754",
+      "name": "ieee754",
+      "version": "1.2.1",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/ignore",
+      "name": "ignore",
+      "version": "7.0.12",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/immediate",
+      "name": "immediate",
+      "version": "3.0.6",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/imurmurhash",
+      "name": "imurmurhash",
+      "version": "0.1.4",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/is-extglob",
+      "name": "is-extglob",
+      "version": "2.1.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/is-glob",
+      "name": "is-glob",
+      "version": "4.0.3",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "is-extglob",
+          "spec": "^2.1.1",
+          "type": "prod",
+          "to": "node_modules/is-extglob",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/is-promise",
+      "name": "is-promise",
+      "version": "2.2.2",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/isexe",
+      "name": "isexe",
+      "version": "2.0.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/its-fine",
+      "name": "its-fine",
+      "version": "2.1.1",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "react",
+          "spec": "^19.0.0",
+          "type": "peer",
+          "to": "node_modules/react",
+          "error": null
+        },
+        {
+          "name": "@types/react-reconciler",
+          "spec": "^0.28.9",
+          "type": "prod",
+          "to": "node_modules/@types/react-reconciler",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/jiti",
+      "name": "jiti",
+      "version": "2.7.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/js-tokens",
+      "name": "js-tokens",
+      "version": "4.0.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/jsesc",
+      "name": "jsesc",
+      "version": "3.1.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/json-schema-traverse",
+      "name": "json-schema-traverse",
+      "version": "0.4.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/json-stable-stringify-without-jsonify",
+      "name": "json-stable-stringify-without-jsonify",
+      "version": "1.0.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/json5",
+      "name": "json5",
+      "version": "2.2.3",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/keyv",
+      "name": "keyv",
+      "version": "5.6.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@keyv/serialize",
+          "spec": "^1.1.1",
+          "type": "prod",
+          "to": "node_modules/@keyv/serialize",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/levn",
+      "name": "levn",
+      "version": "0.4.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "prelude-ls",
+          "spec": "^1.2.1",
+          "type": "prod",
+          "to": "node_modules/prelude-ls",
+          "error": null
+        },
+        {
+          "name": "type-check",
+          "spec": "~0.4.0",
+          "type": "prod",
+          "to": "node_modules/type-check",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/lie",
+      "name": "lie",
+      "version": "3.3.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "immediate",
+          "spec": "~3.0.5",
+          "type": "prod",
+          "to": "node_modules/immediate",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/lightningcss",
+      "name": "lightningcss",
+      "version": "1.32.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "detect-libc",
+          "spec": "^2.0.3",
+          "type": "prod",
+          "to": "node_modules/detect-libc",
+          "error": null
+        },
+        {
+          "name": "lightningcss-android-arm64",
+          "spec": "1.32.0",
+          "type": "optional",
+          "to": "node_modules/lightningcss-android-arm64",
+          "error": null
+        },
+        {
+          "name": "lightningcss-darwin-arm64",
+          "spec": "1.32.0",
+          "type": "optional",
+          "to": "node_modules/lightningcss-darwin-arm64",
+          "error": null
+        },
+        {
+          "name": "lightningcss-darwin-x64",
+          "spec": "1.32.0",
+          "type": "optional",
+          "to": "node_modules/lightningcss-darwin-x64",
+          "error": null
+        },
+        {
+          "name": "lightningcss-freebsd-x64",
+          "spec": "1.32.0",
+          "type": "optional",
+          "to": "node_modules/lightningcss-freebsd-x64",
+          "error": null
+        },
+        {
+          "name": "lightningcss-linux-arm-gnueabihf",
+          "spec": "1.32.0",
+          "type": "optional",
+          "to": "node_modules/lightningcss-linux-arm-gnueabihf",
+          "error": null
+        },
+        {
+          "name": "lightningcss-linux-arm64-gnu",
+          "spec": "1.32.0",
+          "type": "optional",
+          "to": "node_modules/lightningcss-linux-arm64-gnu",
+          "error": null
+        },
+        {
+          "name": "lightningcss-linux-arm64-musl",
+          "spec": "1.32.0",
+          "type": "optional",
+          "to": "node_modules/lightningcss-linux-arm64-musl",
+          "error": null
+        },
+        {
+          "name": "lightningcss-linux-x64-gnu",
+          "spec": "1.32.0",
+          "type": "optional",
+          "to": "node_modules/lightningcss-linux-x64-gnu",
+          "error": null
+        },
+        {
+          "name": "lightningcss-linux-x64-musl",
+          "spec": "1.32.0",
+          "type": "optional",
+          "to": "node_modules/lightningcss-linux-x64-musl",
+          "error": null
+        },
+        {
+          "name": "lightningcss-win32-arm64-msvc",
+          "spec": "1.32.0",
+          "type": "optional",
+          "to": "node_modules/lightningcss-win32-arm64-msvc",
+          "error": null
+        },
+        {
+          "name": "lightningcss-win32-x64-msvc",
+          "spec": "1.32.0",
+          "type": "optional",
+          "to": "node_modules/lightningcss-win32-x64-msvc",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/lightningcss-android-arm64",
+      "name": "lightningcss-android-arm64",
+      "version": "1.32.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/lightningcss-darwin-arm64",
+      "name": "lightningcss-darwin-arm64",
+      "version": "1.32.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/lightningcss-darwin-x64",
+      "name": "lightningcss-darwin-x64",
+      "version": "1.32.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/lightningcss-freebsd-x64",
+      "name": "lightningcss-freebsd-x64",
+      "version": "1.32.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/lightningcss-linux-arm-gnueabihf",
+      "name": "lightningcss-linux-arm-gnueabihf",
+      "version": "1.32.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/lightningcss-linux-arm64-gnu",
+      "name": "lightningcss-linux-arm64-gnu",
+      "version": "1.32.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/lightningcss-linux-arm64-musl",
+      "name": "lightningcss-linux-arm64-musl",
+      "version": "1.32.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/lightningcss-linux-x64-gnu",
+      "name": "lightningcss-linux-x64-gnu",
+      "version": "1.32.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/lightningcss-linux-x64-musl",
+      "name": "lightningcss-linux-x64-musl",
+      "version": "1.32.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/lightningcss-win32-arm64-msvc",
+      "name": "lightningcss-win32-arm64-msvc",
+      "version": "1.32.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/lightningcss-win32-x64-msvc",
+      "name": "lightningcss-win32-x64-msvc",
+      "version": "1.32.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/locate-path",
+      "name": "locate-path",
+      "version": "6.0.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "p-locate",
+          "spec": "^5.0.0",
+          "type": "prod",
+          "to": "node_modules/p-locate",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/lru-cache",
+      "name": "lru-cache",
+      "version": "5.1.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "yallist",
+          "spec": "^3.0.2",
+          "type": "prod",
+          "to": "node_modules/yallist",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/maath",
+      "name": "maath",
+      "version": "0.10.8",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@types/three",
+          "spec": ">=0.134.0",
+          "type": "peer",
+          "to": "node_modules/@types/three",
+          "error": null
+        },
+        {
+          "name": "three",
+          "spec": ">=0.134.0",
+          "type": "peer",
+          "to": "node_modules/three",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/magic-string",
+      "name": "magic-string",
+      "version": "0.30.21",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@jridgewell/sourcemap-codec",
+          "spec": "^1.5.5",
+          "type": "prod",
+          "to": "node_modules/@jridgewell/sourcemap-codec",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/meshline",
+      "name": "meshline",
+      "version": "3.3.1",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "three",
+          "spec": ">=0.137",
+          "type": "peer",
+          "to": "node_modules/three",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/meshoptimizer",
+      "name": "meshoptimizer",
+      "version": "1.1.1",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/minimatch",
+      "name": "minimatch",
+      "version": "10.2.6",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "brace-expansion",
+          "spec": "^5.0.8",
+          "type": "prod",
+          "to": "node_modules/brace-expansion",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/ms",
+      "name": "ms",
+      "version": "2.1.3",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/nanoid",
+      "name": "nanoid",
+      "version": "3.3.20",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/natural-compare",
+      "name": "natural-compare",
+      "version": "1.4.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/node-releases",
+      "name": "node-releases",
+      "version": "2.0.57",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/optionator",
+      "name": "optionator",
+      "version": "0.9.4",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "deep-is",
+          "spec": "^0.1.3",
+          "type": "prod",
+          "to": "node_modules/deep-is",
+          "error": null
+        },
+        {
+          "name": "fast-levenshtein",
+          "spec": "^2.0.6",
+          "type": "prod",
+          "to": "node_modules/fast-levenshtein",
+          "error": null
+        },
+        {
+          "name": "levn",
+          "spec": "^0.4.1",
+          "type": "prod",
+          "to": "node_modules/levn",
+          "error": null
+        },
+        {
+          "name": "prelude-ls",
+          "spec": "^1.2.1",
+          "type": "prod",
+          "to": "node_modules/prelude-ls",
+          "error": null
+        },
+        {
+          "name": "type-check",
+          "spec": "^0.4.0",
+          "type": "prod",
+          "to": "node_modules/type-check",
+          "error": null
+        },
+        {
+          "name": "word-wrap",
+          "spec": "^1.2.5",
+          "type": "prod",
+          "to": "node_modules/word-wrap",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/p-limit",
+      "name": "p-limit",
+      "version": "3.1.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "yocto-queue",
+          "spec": "^0.1.0",
+          "type": "prod",
+          "to": "node_modules/yocto-queue",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/p-locate",
+      "name": "p-locate",
+      "version": "5.0.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "p-limit",
+          "spec": "^3.0.2",
+          "type": "prod",
+          "to": "node_modules/p-limit",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/path-exists",
+      "name": "path-exists",
+      "version": "4.0.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/path-key",
+      "name": "path-key",
+      "version": "3.1.1",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/picocolors",
+      "name": "picocolors",
+      "version": "1.1.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/picomatch",
+      "name": "picomatch",
+      "version": "4.0.7",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/postcss",
+      "name": "postcss",
+      "version": "8.5.29",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "nanoid",
+          "spec": "^3.3.19",
+          "type": "prod",
+          "to": "node_modules/nanoid",
+          "error": null
+        },
+        {
+          "name": "picocolors",
+          "spec": "^1.1.1",
+          "type": "prod",
+          "to": "node_modules/picocolors",
+          "error": null
+        },
+        {
+          "name": "source-map-js",
+          "spec": "^1.2.2",
+          "type": "prod",
+          "to": "node_modules/source-map-js",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/postcss-value-parser",
+      "name": "postcss-value-parser",
+      "version": "4.2.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/potpack",
+      "name": "potpack",
+      "version": "1.0.2",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/prelude-ls",
+      "name": "prelude-ls",
+      "version": "1.2.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/promise-worker-transferable",
+      "name": "promise-worker-transferable",
+      "version": "1.0.4",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "is-promise",
+          "spec": "^2.1.0",
+          "type": "prod",
+          "to": "node_modules/is-promise",
+          "error": null
+        },
+        {
+          "name": "lie",
+          "spec": "^3.0.2",
+          "type": "prod",
+          "to": "node_modules/lie",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/punycode",
+      "name": "punycode",
+      "version": "2.3.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/qified",
+      "name": "qified",
+      "version": "0.10.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "hookified",
+          "spec": "^2.1.1",
+          "type": "prod",
+          "to": "node_modules/qified/node_modules/hookified",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/qified/node_modules/hookified",
+      "name": "hookified",
+      "version": "2.2.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/react",
+      "name": "react",
+      "version": "19.3.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/react-dom",
+      "name": "react-dom",
+      "version": "19.3.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "react",
+          "spec": "^19.3.0",
+          "type": "peer",
+          "to": "node_modules/react",
+          "error": null
+        },
+        {
+          "name": "scheduler",
+          "spec": "^0.28.0",
+          "type": "prod",
+          "to": "node_modules/scheduler",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/react-router",
+      "name": "react-router",
+      "version": "7.18.4",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "react",
+          "spec": ">=18",
+          "type": "peer",
+          "to": "node_modules/react",
+          "error": null
+        },
+        {
+          "name": "react-dom",
+          "spec": ">=18",
+          "type": "peerOptional",
+          "to": "node_modules/react-dom",
+          "error": null
+        },
+        {
+          "name": "cookie",
+          "spec": "^1.0.1",
+          "type": "prod",
+          "to": "node_modules/cookie",
+          "error": null
+        },
+        {
+          "name": "set-cookie-parser",
+          "spec": "^2.6.0",
+          "type": "prod",
+          "to": "node_modules/set-cookie-parser",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/react-router-dom",
+      "name": "react-router-dom",
+      "version": "7.18.4",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "react",
+          "spec": ">=18",
+          "type": "peer",
+          "to": "node_modules/react",
+          "error": null
+        },
+        {
+          "name": "react-dom",
+          "spec": ">=18",
+          "type": "peer",
+          "to": "node_modules/react-dom",
+          "error": null
+        },
+        {
+          "name": "react-router",
+          "spec": "7.18.4",
+          "type": "prod",
+          "to": "node_modules/react-router",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/react-use-measure",
+      "name": "react-use-measure",
+      "version": "2.1.7",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "react",
+          "spec": ">=16.13",
+          "type": "peer",
+          "to": "node_modules/react",
+          "error": null
+        },
+        {
+          "name": "react-dom",
+          "spec": ">=16.13",
+          "type": "peerOptional",
+          "to": "node_modules/react-dom",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/require-from-string",
+      "name": "require-from-string",
+      "version": "2.0.2",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/rolldown",
+      "name": "rolldown",
+      "version": "1.2.12",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@oxc-project/types",
+          "spec": "=0.152.0",
+          "type": "prod",
+          "to": "node_modules/@oxc-project/types",
+          "error": null
+        },
+        {
+          "name": "@rolldown/pluginutils",
+          "spec": "^1.0.0",
+          "type": "prod",
+          "to": "node_modules/@rolldown/pluginutils",
+          "error": null
+        },
+        {
+          "name": "@rolldown/binding-android-arm-eabi",
+          "spec": "1.2.12",
+          "type": "optional",
+          "to": "node_modules/@rolldown/binding-android-arm-eabi",
+          "error": null
+        },
+        {
+          "name": "@rolldown/binding-android-arm64",
+          "spec": "1.2.12",
+          "type": "optional",
+          "to": "node_modules/@rolldown/binding-android-arm64",
+          "error": null
+        },
+        {
+          "name": "@rolldown/binding-darwin-arm64",
+          "spec": "1.2.12",
+          "type": "optional",
+          "to": "node_modules/@rolldown/binding-darwin-arm64",
+          "error": null
+        },
+        {
+          "name": "@rolldown/binding-darwin-x64",
+          "spec": "1.2.12",
+          "type": "optional",
+          "to": "node_modules/@rolldown/binding-darwin-x64",
+          "error": null
+        },
+        {
+          "name": "@rolldown/binding-freebsd-x64",
+          "spec": "1.2.12",
+          "type": "optional",
+          "to": "node_modules/@rolldown/binding-freebsd-x64",
+          "error": null
+        },
+        {
+          "name": "@rolldown/binding-linux-arm-gnueabihf",
+          "spec": "1.2.12",
+          "type": "optional",
+          "to": "node_modules/@rolldown/binding-linux-arm-gnueabihf",
+          "error": null
+        },
+        {
+          "name": "@rolldown/binding-linux-arm64-gnu",
+          "spec": "1.2.12",
+          "type": "optional",
+          "to": "node_modules/@rolldown/binding-linux-arm64-gnu",
+          "error": null
+        },
+        {
+          "name": "@rolldown/binding-linux-arm64-musl",
+          "spec": "1.2.12",
+          "type": "optional",
+          "to": "node_modules/@rolldown/binding-linux-arm64-musl",
+          "error": null
+        },
+        {
+          "name": "@rolldown/binding-linux-ppc64-gnu",
+          "spec": "1.2.12",
+          "type": "optional",
+          "to": "node_modules/@rolldown/binding-linux-ppc64-gnu",
+          "error": null
+        },
+        {
+          "name": "@rolldown/binding-linux-s390x-gnu",
+          "spec": "1.2.12",
+          "type": "optional",
+          "to": "node_modules/@rolldown/binding-linux-s390x-gnu",
+          "error": null
+        },
+        {
+          "name": "@rolldown/binding-linux-x64-gnu",
+          "spec": "1.2.12",
+          "type": "optional",
+          "to": "node_modules/@rolldown/binding-linux-x64-gnu",
+          "error": null
+        },
+        {
+          "name": "@rolldown/binding-linux-x64-musl",
+          "spec": "1.2.12",
+          "type": "optional",
+          "to": "node_modules/@rolldown/binding-linux-x64-musl",
+          "error": null
+        },
+        {
+          "name": "@rolldown/binding-openharmony-arm64",
+          "spec": "1.2.12",
+          "type": "optional",
+          "to": "node_modules/@rolldown/binding-openharmony-arm64",
+          "error": null
+        },
+        {
+          "name": "@rolldown/binding-win32-arm64-msvc",
+          "spec": "1.2.12",
+          "type": "optional",
+          "to": "node_modules/@rolldown/binding-win32-arm64-msvc",
+          "error": null
+        },
+        {
+          "name": "@rolldown/binding-win32-x64-msvc",
+          "spec": "1.2.12",
+          "type": "optional",
+          "to": "node_modules/@rolldown/binding-win32-x64-msvc",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/scheduler",
+      "name": "scheduler",
+      "version": "0.28.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/semver",
+      "name": "semver",
+      "version": "7.8.5",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/set-cookie-parser",
+      "name": "set-cookie-parser",
+      "version": "2.7.2",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/shebang-command",
+      "name": "shebang-command",
+      "version": "2.0.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "shebang-regex",
+          "spec": "^3.0.0",
+          "type": "prod",
+          "to": "node_modules/shebang-regex",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/shebang-regex",
+      "name": "shebang-regex",
+      "version": "3.0.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/source-map-js",
+      "name": "source-map-js",
+      "version": "1.2.2",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/stats-gl",
+      "name": "stats-gl",
+      "version": "2.4.2",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@types/three",
+          "spec": "*",
+          "type": "prod",
+          "to": "node_modules/@types/three",
+          "error": null
+        },
+        {
+          "name": "three",
+          "spec": "^0.170.0",
+          "type": "prod",
+          "to": "node_modules/stats-gl/node_modules/three",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/stats-gl/node_modules/three",
+      "name": "three",
+      "version": "0.170.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/stats.js",
+      "name": "stats.js",
+      "version": "0.17.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/suspend-react",
+      "name": "suspend-react",
+      "version": "0.1.3",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "react",
+          "spec": ">=17.0",
+          "type": "peer",
+          "to": "node_modules/react",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/tailwindcss",
+      "name": "tailwindcss",
+      "version": "4.3.3",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/tapable",
+      "name": "tapable",
+      "version": "2.3.3",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/three",
+      "name": "three",
+      "version": "0.184.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/three-mesh-bvh",
+      "name": "three-mesh-bvh",
+      "version": "0.8.3",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "three",
+          "spec": ">= 0.159.0",
+          "type": "peer",
+          "to": "node_modules/three",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/three-stdlib",
+      "name": "three-stdlib",
+      "version": "2.36.1",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "three",
+          "spec": ">=0.128.0",
+          "type": "peer",
+          "to": "node_modules/three",
+          "error": null
+        },
+        {
+          "name": "@types/draco3d",
+          "spec": "^1.4.0",
+          "type": "prod",
+          "to": "node_modules/@types/draco3d",
+          "error": null
+        },
+        {
+          "name": "@types/offscreencanvas",
+          "spec": "^2019.6.4",
+          "type": "prod",
+          "to": "node_modules/@types/offscreencanvas",
+          "error": null
+        },
+        {
+          "name": "@types/webxr",
+          "spec": "^0.5.2",
+          "type": "prod",
+          "to": "node_modules/@types/webxr",
+          "error": null
+        },
+        {
+          "name": "draco3d",
+          "spec": "^1.4.1",
+          "type": "prod",
+          "to": "node_modules/draco3d",
+          "error": null
+        },
+        {
+          "name": "fflate",
+          "spec": "^0.6.9",
+          "type": "prod",
+          "to": "node_modules/three-stdlib/node_modules/fflate",
+          "error": null
+        },
+        {
+          "name": "potpack",
+          "spec": "^1.0.1",
+          "type": "prod",
+          "to": "node_modules/potpack",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/three-stdlib/node_modules/fflate",
+      "name": "fflate",
+      "version": "0.6.11",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/tinyglobby",
+      "name": "tinyglobby",
+      "version": "0.2.17",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "fdir",
+          "spec": "^6.5.0",
+          "type": "prod",
+          "to": "node_modules/fdir",
+          "error": null
+        },
+        {
+          "name": "picomatch",
+          "spec": "^4.0.4",
+          "type": "prod",
+          "to": "node_modules/picomatch",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/troika-three-text",
+      "name": "troika-three-text",
+      "version": "0.52.5",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "three",
+          "spec": ">=0.125.0",
+          "type": "peer",
+          "to": "node_modules/three",
+          "error": null
+        },
+        {
+          "name": "bidi-js",
+          "spec": "^1.0.2",
+          "type": "prod",
+          "to": "node_modules/bidi-js",
+          "error": null
+        },
+        {
+          "name": "troika-three-utils",
+          "spec": "^0.52.5",
+          "type": "prod",
+          "to": "node_modules/troika-three-utils",
+          "error": null
+        },
+        {
+          "name": "troika-worker-utils",
+          "spec": "^0.52.0",
+          "type": "prod",
+          "to": "node_modules/troika-worker-utils",
+          "error": null
+        },
+        {
+          "name": "webgl-sdf-generator",
+          "spec": "1.1.1",
+          "type": "prod",
+          "to": "node_modules/webgl-sdf-generator",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/troika-three-utils",
+      "name": "troika-three-utils",
+      "version": "0.52.5",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "three",
+          "spec": ">=0.125.0",
+          "type": "peer",
+          "to": "node_modules/three",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/troika-worker-utils",
+      "name": "troika-worker-utils",
+      "version": "0.52.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/ts-api-utils",
+      "name": "ts-api-utils",
+      "version": "2.5.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "typescript",
+          "spec": ">=4.8.4",
+          "type": "peer",
+          "to": "node_modules/typescript",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/tunnel-rat",
+      "name": "tunnel-rat",
+      "version": "0.1.2",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "zustand",
+          "spec": "^4.3.2",
+          "type": "prod",
+          "to": "node_modules/tunnel-rat/node_modules/zustand",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/tunnel-rat/node_modules/zustand",
+      "name": "zustand",
+      "version": "4.5.7",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@types/react",
+          "spec": ">=16.8",
+          "type": "peerOptional",
+          "to": "node_modules/@types/react",
+          "error": null
+        },
+        {
+          "name": "immer",
+          "spec": ">=9.0.6",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "react",
+          "spec": ">=16.8",
+          "type": "peerOptional",
+          "to": "node_modules/react",
+          "error": null
+        },
+        {
+          "name": "use-sync-external-store",
+          "spec": "^1.2.2",
+          "type": "prod",
+          "to": "node_modules/use-sync-external-store",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/type-check",
+      "name": "type-check",
+      "version": "0.4.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "prelude-ls",
+          "spec": "^1.2.1",
+          "type": "prod",
+          "to": "node_modules/prelude-ls",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/typescript",
+      "name": "@typescript/typescript6",
+      "version": "6.0.2",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@typescript/old",
+          "spec": "npm:typescript@^6",
+          "type": "prod",
+          "to": "node_modules/@typescript/old",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/update-browserslist-db",
+      "name": "update-browserslist-db",
+      "version": "1.3.3",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "browserslist",
+          "spec": ">= 4.21.0",
+          "type": "peer",
+          "to": "node_modules/browserslist",
+          "error": null
+        },
+        {
+          "name": "escalade",
+          "spec": "^3.2.0",
+          "type": "prod",
+          "to": "node_modules/escalade",
+          "error": null
+        },
+        {
+          "name": "picocolors",
+          "spec": "^1.1.1",
+          "type": "prod",
+          "to": "node_modules/picocolors",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/uri-js",
+      "name": "uri-js",
+      "version": "4.4.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "punycode",
+          "spec": "^2.1.0",
+          "type": "prod",
+          "to": "node_modules/punycode",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/use-sync-external-store",
+      "name": "use-sync-external-store",
+      "version": "1.7.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "react",
+          "spec": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+          "type": "peer",
+          "to": "node_modules/react",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/utility-types",
+      "name": "utility-types",
+      "version": "3.11.0",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/vite",
+      "name": "vite",
+      "version": "8.3.2",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@types/node",
+          "spec": "^20.19.0 || >=22.12.0",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "@vitejs/devtools",
+          "spec": "^0.7.1",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "esbuild",
+          "spec": "^0.27.0 || ^0.28.0",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "jiti",
+          "spec": ">=1.21.0",
+          "type": "peerOptional",
+          "to": "node_modules/jiti",
+          "error": null
+        },
+        {
+          "name": "less",
+          "spec": "^4.0.0",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "sass",
+          "spec": "^1.70.0",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "sass-embedded",
+          "spec": "^1.70.0",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "stylus",
+          "spec": ">=0.54.8",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "sugarss",
+          "spec": "^5.0.0",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "terser",
+          "spec": "^5.16.0",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "tsx",
+          "spec": "^4.8.1",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "yaml",
+          "spec": "^2.4.2",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "lightningcss",
+          "spec": "^1.33.0",
+          "type": "prod",
+          "to": "node_modules/vite/node_modules/lightningcss",
+          "error": null
+        },
+        {
+          "name": "picomatch",
+          "spec": "^4.0.7",
+          "type": "prod",
+          "to": "node_modules/picomatch",
+          "error": null
+        },
+        {
+          "name": "postcss",
+          "spec": "^8.5.28",
+          "type": "prod",
+          "to": "node_modules/postcss",
+          "error": null
+        },
+        {
+          "name": "rolldown",
+          "spec": "~1.2.11",
+          "type": "prod",
+          "to": "node_modules/rolldown",
+          "error": null
+        },
+        {
+          "name": "tinyglobby",
+          "spec": "^0.2.17",
+          "type": "prod",
+          "to": "node_modules/tinyglobby",
+          "error": null
+        },
+        {
+          "name": "fsevents",
+          "spec": "~2.3.3",
+          "type": "optional",
+          "to": "node_modules/fsevents",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/vite/node_modules/lightningcss",
+      "name": "lightningcss",
+      "version": "1.33.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "detect-libc",
+          "spec": "^2.0.3",
+          "type": "prod",
+          "to": "node_modules/detect-libc",
+          "error": null
+        },
+        {
+          "name": "lightningcss-android-arm64",
+          "spec": "1.33.0",
+          "type": "optional",
+          "to": "node_modules/vite/node_modules/lightningcss-android-arm64",
+          "error": null
+        },
+        {
+          "name": "lightningcss-darwin-arm64",
+          "spec": "1.33.0",
+          "type": "optional",
+          "to": "node_modules/vite/node_modules/lightningcss-darwin-arm64",
+          "error": null
+        },
+        {
+          "name": "lightningcss-darwin-x64",
+          "spec": "1.33.0",
+          "type": "optional",
+          "to": "node_modules/vite/node_modules/lightningcss-darwin-x64",
+          "error": null
+        },
+        {
+          "name": "lightningcss-freebsd-x64",
+          "spec": "1.33.0",
+          "type": "optional",
+          "to": "node_modules/vite/node_modules/lightningcss-freebsd-x64",
+          "error": null
+        },
+        {
+          "name": "lightningcss-linux-arm-gnueabihf",
+          "spec": "1.33.0",
+          "type": "optional",
+          "to": "node_modules/vite/node_modules/lightningcss-linux-arm-gnueabihf",
+          "error": null
+        },
+        {
+          "name": "lightningcss-linux-arm64-gnu",
+          "spec": "1.33.0",
+          "type": "optional",
+          "to": "node_modules/vite/node_modules/lightningcss-linux-arm64-gnu",
+          "error": null
+        },
+        {
+          "name": "lightningcss-linux-arm64-musl",
+          "spec": "1.33.0",
+          "type": "optional",
+          "to": "node_modules/vite/node_modules/lightningcss-linux-arm64-musl",
+          "error": null
+        },
+        {
+          "name": "lightningcss-linux-x64-gnu",
+          "spec": "1.33.0",
+          "type": "optional",
+          "to": "node_modules/vite/node_modules/lightningcss-linux-x64-gnu",
+          "error": null
+        },
+        {
+          "name": "lightningcss-linux-x64-musl",
+          "spec": "1.33.0",
+          "type": "optional",
+          "to": "node_modules/vite/node_modules/lightningcss-linux-x64-musl",
+          "error": null
+        },
+        {
+          "name": "lightningcss-win32-arm64-msvc",
+          "spec": "1.33.0",
+          "type": "optional",
+          "to": "node_modules/vite/node_modules/lightningcss-win32-arm64-msvc",
+          "error": null
+        },
+        {
+          "name": "lightningcss-win32-x64-msvc",
+          "spec": "1.33.0",
+          "type": "optional",
+          "to": "node_modules/vite/node_modules/lightningcss-win32-x64-msvc",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/vite/node_modules/lightningcss-android-arm64",
+      "name": "lightningcss-android-arm64",
+      "version": "1.33.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/vite/node_modules/lightningcss-darwin-arm64",
+      "name": "lightningcss-darwin-arm64",
+      "version": "1.33.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/vite/node_modules/lightningcss-darwin-x64",
+      "name": "lightningcss-darwin-x64",
+      "version": "1.33.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/vite/node_modules/lightningcss-freebsd-x64",
+      "name": "lightningcss-freebsd-x64",
+      "version": "1.33.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/vite/node_modules/lightningcss-linux-arm-gnueabihf",
+      "name": "lightningcss-linux-arm-gnueabihf",
+      "version": "1.33.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/vite/node_modules/lightningcss-linux-arm64-gnu",
+      "name": "lightningcss-linux-arm64-gnu",
+      "version": "1.33.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/vite/node_modules/lightningcss-linux-arm64-musl",
+      "name": "lightningcss-linux-arm64-musl",
+      "version": "1.33.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/vite/node_modules/lightningcss-linux-x64-gnu",
+      "name": "lightningcss-linux-x64-gnu",
+      "version": "1.33.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/vite/node_modules/lightningcss-linux-x64-musl",
+      "name": "lightningcss-linux-x64-musl",
+      "version": "1.33.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/vite/node_modules/lightningcss-win32-arm64-msvc",
+      "name": "lightningcss-win32-arm64-msvc",
+      "version": "1.33.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/vite/node_modules/lightningcss-win32-x64-msvc",
+      "name": "lightningcss-win32-x64-msvc",
+      "version": "1.33.0",
+      "dev": true,
+      "optional": true,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/webgl-constants",
+      "name": "webgl-constants",
+      "version": "1.1.1",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/webgl-sdf-generator",
+      "name": "webgl-sdf-generator",
+      "version": "1.1.1",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/which",
+      "name": "which",
+      "version": "2.0.2",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "isexe",
+          "spec": "^2.0.0",
+          "type": "prod",
+          "to": "node_modules/isexe",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/word-wrap",
+      "name": "word-wrap",
+      "version": "1.2.5",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/yallist",
+      "name": "yallist",
+      "version": "3.1.1",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/yocto-queue",
+      "name": "yocto-queue",
+      "version": "0.1.0",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/zod",
+      "name": "zod",
+      "version": "4.6.5",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": []
+    },
+    {
+      "location": "node_modules/zod-validation-error",
+      "name": "zod-validation-error",
+      "version": "4.0.2",
+      "dev": true,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "zod",
+          "spec": "^3.25.0 || ^4.0.0",
+          "type": "peer",
+          "to": "node_modules/zod",
+          "error": null
+        }
+      ]
+    },
+    {
+      "location": "node_modules/zustand",
+      "name": "zustand",
+      "version": "5.0.15",
+      "dev": false,
+      "optional": false,
+      "inBundle": false,
+      "edges": [
+        {
+          "name": "@types/react",
+          "spec": ">=18.0.0",
+          "type": "peerOptional",
+          "to": "node_modules/@types/react",
+          "error": null
+        },
+        {
+          "name": "immer",
+          "spec": ">=9.0.6",
+          "type": "peerOptional",
+          "to": null,
+          "error": null
+        },
+        {
+          "name": "react",
+          "spec": ">=18.0.0",
+          "type": "peerOptional",
+          "to": "node_modules/react",
+          "error": null
+        },
+        {
+          "name": "use-sync-external-store",
+          "spec": ">=1.2.0",
+          "type": "peerOptional",
+          "to": "node_modules/use-sync-external-store",
+          "error": null
+        }
+      ]
+    }
+  ]
+}

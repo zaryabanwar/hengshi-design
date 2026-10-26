@@ -1,0 +1,7 @@
+{ "diagnostics": [{"message": "`onConnected` is a function created with React Hook \"useEffectEvent\", and can only be called from Effects and Effect Events in the same component. It cannot be assigned to a variable or passed down.","code": "react-hooks(rules-of-hooks)","severity": "error","url": "https://oxc.rs/docs/guide/usage/linter/rules/react/rules-of-hooks.html","filename": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/fixtures/effect-event-as-click-handler.tsx","labels": [{"label": "Effect Event escapes its component or custom Hook.","span": {"offset": 149,"length": 11,"line": 1,"column": 150}}]}],
+              "number_of_files": 1,
+              "number_of_rules": 2,
+              "threads_count": 4,
+              "start_time": 0.0549097
+            }
+            

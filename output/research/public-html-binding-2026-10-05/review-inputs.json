@@ -1,0 +1,80 @@
+{
+  "purpose": "Closed public HTML binding shape, data-block encoding proposal and local schema tooling only",
+  "inputs": [
+    {
+      "source": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "snapshot": "00-PUBLICATION_CONTRACT.md",
+      "sha256": "e16a14acf9b704bc175089f0c944cfd656abe04db3d973bfa5a3cc0008d6c7f1"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/public-html-binding.schema.json",
+      "snapshot": "01-public-html-binding.schema.json",
+      "sha256": "a83c68a6bfd8f68f2a68e51ef466d90440b1f993a76264a235557574e118c364"
+    },
+    {
+      "source": "scripts/validation/test_public_html_binding_schema.py",
+      "snapshot": "02-test_public_html_binding_schema.py",
+      "sha256": "82bef893147c964f6ad9837ef0d1a1ed8e3c6de77211175c7f70bfabf9e1d590"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/publication-manifest.schema.json",
+      "snapshot": "03-publication-manifest.schema.json",
+      "sha256": "d3620c8326246bc34040188de610c5823f1013936572d3ffb63a5eb350bc3852"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/publication-preparation.schema.json",
+      "snapshot": "04-publication-preparation.schema.json",
+      "sha256": "23c3569baa844a542dd8f7a283af87f50b93dfa1fdf3ccef2c401136c8acc2ac"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/client-build-catalogue.schema.json",
+      "snapshot": "05-client-build-catalogue.schema.json",
+      "sha256": "d41b989a4d5ab29178a7c498b200c82093ce9f09c34e3b8a2a42b68c56f5e0bf"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PUBLICATION_READ_HTTP.md",
+      "snapshot": "06-PUBLICATION_READ_HTTP.md",
+      "sha256": "a383350b1ed9301eae322b617e95055fc2731db0c877e2f67c8f60fcfb50d3a0"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "07-SECURITY_PRIVACY_CONTRACT.md",
+      "sha256": "74ab420b5bec9f0aad72f59178f4ea7c626bd14edfa9d4ba02f3aa1dd0a1a254"
+    },
+    {
+      "source": "docs/phase-1-3d/SCENE_ASSEMBLY_CONTRACT.md",
+      "snapshot": "08-SCENE_ASSEMBLY_CONTRACT.md",
+      "sha256": "cb51f5a98c2f1453fcaaa5176eb8cda47288d8ee5dc1d0f2db66dba499ccd062"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/client-catalogue-shape-v1-2026-10-05.md",
+      "snapshot": "09-client-catalogue-shape-v1-2026-10-05.md",
+      "sha256": "f332eb9b1cfdad2e30a931034e13d0520bd1a94c601e587b777bc8b6cbd2d76a"
+    },
+    {
+      "source": "specs/003-3d-experience-completion/spec.md",
+      "snapshot": "10-spec.md",
+      "sha256": "2aceefa18e51bd11a450d79b2c75d0a2f3a0783baac785de12e56956fa03d4f9"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "11-DECISIONS.md",
+      "sha256": "1d53a14ac3347ebeefeeb728e03862b09de111b748cef4e48d5f4ca19141b6d8"
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "12-AGENTS.md",
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "13-constitution.md",
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "before public HTML binding proposal",
+      "snapshot": "PUBLICATION_CONTRACT.before.md",
+      "sha256": "5dd5016cbf8a588e92b5d65b4d0e409c4e5ff5c3489b46881f8446c3285d3fef"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-15",
+  "reviewer": "/root/review_directory_adaptation_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "PASS",
+  "scope": "Bounded review of saved native evidence for one Apply edge under D094 and its producer-observed graphical pending-to-active transition. No complete ENQ, archive/restore or application-runtime verdict.",
+  "packet": {
+    "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-native-apply/review-inputs-v1.json",
+    "sha256": "448cf0a278740a46ca24f59896aa820b6d6a3355051bbca8f5cb9725d6e8b21f",
+    "input_count": 17,
+    "all_actual_bytes_and_sha256_verified": true,
+    "binding_errors": [],
+    "inputs": [
+      {
+        "path": "AGENTS.md",
+        "bytes": 7686,
+        "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+      },
+      {
+        "path": ".specify/memory/constitution.md",
+        "bytes": 16234,
+        "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/qualification-plan-v1.json",
+        "bytes": 235601,
+        "sha256": "5e24ac8c203bf729b5190d359da2439c1b1f88f59665b1c65163b4b9002ab2ce"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-32-native-census-v1.json",
+        "bytes": 4634,
+        "sha256": "106296fa9f0ec3b07f50fb90be40d57b10995055a60b2d24a18d9b9d6d0bb669"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/native-edge-bindings-20261015-pending-choice-v1.json",
+        "bytes": 1394,
+        "sha256": "8c3451962709b0da8fc37ad916e15d2ee52134c41c84c5b245310c1e490c216a"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/native-edge-bindings-20261015-apply-v1.json",
+        "bytes": 1876,
+        "sha256": "bf1bf0df455ba10abf0bd0970e859830c712c7a6f5e6eb6027f293ffef94e3cd"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-high-medium-source-admission-v1.json",
+        "bytes": 33190,
+        "sha256": "8556867c99c14b0c45f2d9fa4293049d6f90c75363f561db46188f788f89a167"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-high-medium-root-reaction-admission-v1.txt",
+        "bytes": 1798,
+        "sha256": "9e6684707582ba936690aeb2419169cf97153790d4d65e8eaf940ab0bf3c11f0"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-medium-medium-root-design-before.txt",
+        "bytes": 11068,
+        "sha256": "0173810743221683343eae5a6915e0c82c9f91aca2e15117e0176c393286e3f7"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-medium-medium-target-before.png",
+        "bytes": 126884,
+        "sha256": "32f48182f2db6d3853620df0a8b76cc18e683e1acb40681f2ef1ad1638a99a6f"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-medium-medium-source-admission-v1.json",
+        "bytes": 34681,
+        "sha256": "b6d11a9b838abaa2a82a80ae1b8715ab373826bbe6770922bcce751f83a28526"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-apply-balanced-before.txt",
+        "bytes": 1368,
+        "sha256": "bd1439cc55e2ceefb69a62a9df285155666c1fb179197db9c1b832e3938f7ee3"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-apply-balanced-native-settings-v1.txt",
+        "bytes": 16801,
+        "sha256": "64aac4c32e27911306081d57d2ce3dd25cac4f60b8f4ca10619f3f2f13604bae"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/first-preview-apply-observation-v1.json",
+        "bytes": 903,
+        "sha256": "c580ab085801df12fa0bfe675c86b6feff61e1afac5c701092876c810a5ad269"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/preview-before-apply-balanced-pending.png",
+        "bytes": 44804,
+        "sha256": "872d130f69d3713b2a561fd07ef33dda213bf1a4ced9134976dabb51957ce123"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/preview-after-apply-scrolled.png",
+        "bytes": 65340,
+        "sha256": "41186d02abfa1fa7019e247f1c80c59b61eb9ec018069b4ffb60e68a5369a69c"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/preview-after-apply-balanced-active.png",
+        "bytes": 45048,
+        "sha256": "717235d6b53fa84e95bbfd4148e62f94faa87e48da05e27be17fcbbb51ccf8ac"
+      }
+    ]
+  },
+  "edge": {
+    "source": "NAVIGATION/HIGH/MEDIUM/OPEN",
+    "sourceRoot": "147:3271",
+    "actualControl": "147:3284",
+    "visibleLabel": "Apply selection",
+    "trigger": "On click",
+    "action": "Change to",
+    "target": "NAVIGATION/MEDIUM/MEDIUM/OPEN",
+    "targetRoot": "147:3403",
+    "parentSet": "144:3287",
+    "animation": "Instant"
+  },
+  "findings": [],
+  "actionable_finding_count": 0,
+  "verified_assessments": [
+    {
+      "subject": "Approved transition and accounting",
+      "assessment": "The exact source/control/destination equals the sole matching approved qualification-plan edge: changed Apply sets active=pending and keeps pending/disclosure/Services context. Native census binds147:3271 to HIGH,MEDIUM,OPEN and147:3403 to MEDIUM,MEDIUM,OPEN. Four-edge successor retains the preceding three edge records byte-for-data and adds only147:3284 to147:3403. No Escape, no-op or other new edge is claimed."
+    },
+    {
+      "subject": "Source root and descendants",
+      "assessment": "navigation-high-medium-source-admission-v1.json contains21 unique descendant rows with5 direct-child groups and expected nested visual anatomy. The separately saved root reaction admission identifies147:3271 and reports no interaction; its Prototype panel contains Add action and no existing interaction row. The descendant panels likewise show no existing click/keyboard interaction row before authoring. This is saved native UI admission evidence, not a raw Plugin API reaction/property dump or guarantee beyond the captured selection states."
+    },
+    {
+      "subject": "Target root and descendants",
+      "assessment": "navigation-medium-medium-source-admission-v1.json contains22 unique records: root147:3403 plus21 descendants. Its5 direct-child topology, four separate choice groups and source/caption/marker/Apply/privacy anatomy correspond to the source family. Saved design inspector and screenshot show MEDIUM active/MEDIUM pending/OPEN,320x1150. Target panels show no prior interaction rows in the captured admission. Inherited text layer names such as Book a conversation are not interpreted as current visible captions."
+    },
+    {
+      "subject": "Native control settings",
+      "assessment": "Before snapshot shows Add action with no interaction. Saved settings snapshot has selected PRIM-015 / General action button / base under HIGH,MEDIUM,OPEN, one Click MEDIUM,MEDIUM,OPEN interaction and explicit On click / Change to / Active MEDIUM / Pending MEDIUM / Disclosure OPEN / Instant. Actual control ID147:3284 is consistent across source descendant census, successor binding and producer observation. Visible caption is established by rendered Apply selection; a separate effective component-property API export is not claimed."
+    },
+    {
+      "subject": "Visible pending versus active state",
+      "assessment": "Independently viewed all4 supplied images. preview-before-apply-balanced-pending.png shows Trial fixture · Services, In force Detailed 3D, legend Detailed 3D, Balanced selected and Close menu. preview-after-apply-balanced-active.png shows the same Services/open panel and selected Balanced, with both active context and legend now Balanced 3D. This supports the saved producer-observed one-transition outcome rather than merely target authoring."
+    },
+    {
+      "subject": "Content and scrolled view",
+      "assessment": "preview-after-apply-scrolled.png shows the accepted advance-advisement area, visible Apply selection, Privacy and storage and Trial scroll marker. Target editor screenshot shows all four peer labels, matching active/pending graphic and full visible body. These images do not establish exact scroll-offset preservation, focus behavior or paired preservation/reset discrimination."
+    },
+    {
+      "subject": "Activation/retry observation",
+      "assessment": "Producer log explicitly records a first timed-out activation, reinspection that Detailed remained active, and one verified retry before capturing Balanced active. This review does not infer hidden attempt outcomes or independently replay that sequence; its evidence is the saved observation and before/after images."
+    },
+    {
+      "subject": "Archive boundary",
+      "assessment": "Packet explicitly states the latest native editable archive predates the fourth edge. A newer archive has not been captured while the normal editor reload remains under observation. PASS does not certify a backed-up/restorable four-edge state. Native after-archive capture, CRC/save verification and eventual restore/_EXIT obligations remain outstanding."
+    }
+  ],
+  "authority_and_next_action_limits": [
+    "Same D094 native trial approval covers this approved same-set edge; review does not require or create a new founder method permission.",
+    "No native browser action or process polling performed by reviewer. The producer-confirmed loading tab is not classified dead or restarted by this receipt.",
+    "The separately reviewed MCP correction2 proposal assumes three existing edges and105 additions. The four-edge native successor is a later baseline; that proposal must not be invoked unchanged or treated as freshly admitted. Its preflight should reject the extra current edge. Provider-cap and native-only method holds remain.",
+    "No additional MCP/AI call, account/provider action, paid activation, dependency/application change, Git action or deployment is authorized."
+  ],
+  "limits": [
+    "Saved native settings and producer-observed Figma graphics only; no independent live replay.",
+    "No actual WebGL stream change, semantic website re-entry/location mapping, application persistence/API or production feature correctness.",
+    "No accessibility/AT/WCAG/keyboard form semantics, focus, exact scroll retention, full ENQ or108-edge native qualification.",
+    "No current after-edit native archive, whole-file pristine preservation, original/source equivalence, native restore or_EXIT acceptance.",
+    "No Directory/Recovery/boundary/reset completion, all80/fullB01/founder visual or integrated Phase1 acceptance.",
+    "Receipt is the only artifact written. All17 source bindings rechecked immediately before save; no browser/Figma/account/application/provider/Git changes."
+  ]
+}

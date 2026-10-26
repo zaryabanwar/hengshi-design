@@ -1,0 +1,128 @@
+{
+  "scope": "read-only prototype build entry/source observations; no build execution or selected future stack",
+  "observations": [
+    {
+      "path": "apps/web/package.json",
+      "sha256": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a",
+      "name": "web",
+      "version": "0.0.0",
+      "engines": null,
+      "peerDependencies": null,
+      "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "test:e2e": "playwright test",
+        "test:e2e:list": "playwright test --list",
+        "qa:axe": "playwright test e2e/accessibility.spec.ts"
+      }
+    },
+    {
+      "path": "apps/web/tsconfig.json",
+      "sha256": "57a97a7952291121c65ca5a1f30a5f06f21418ca33f099d2ebaabfb0c2d3dd1f"
+    },
+    {
+      "path": "apps/web/vite.config.ts",
+      "sha256": "8559df7d4765ac572717636340f3bf15fa88d2c5d85d775690a3192d86df8803"
+    },
+    {
+      "path": "apps/web/vite.config.js",
+      "sha256": "8559df7d4765ac572717636340f3bf15fa88d2c5d85d775690a3192d86df8803"
+    },
+    {
+      "path": "apps/web/node_modules/vite/package.json",
+      "sha256": "e9802045cdc313b6da55ec2e2dd79312074645816089d64f6021f567c10c0a03",
+      "name": "vite",
+      "version": "5.4.21",
+      "engines": {
+        "node": "^18.0.0 || >=20.0.0"
+      },
+      "peerDependencies": {
+        "@types/node": "^18.0.0 || >=20.0.0",
+        "less": "*",
+        "lightningcss": "^1.21.0",
+        "sass": "*",
+        "sass-embedded": "*",
+        "stylus": "*",
+        "sugarss": "*",
+        "terser": "^5.4.0"
+      },
+      "scripts": {
+        "dev": "tsx scripts/dev.ts",
+        "build": "rimraf dist && run-s build-bundle build-types",
+        "build-bundle": "rollup --config rollup.config.ts --configPlugin esbuild",
+        "build-types": "run-s build-types-temp build-types-roll build-types-check",
+        "build-types-temp": "tsc --emitDeclarationOnly --outDir temp -p src/node",
+        "build-types-roll": "rollup --config rollup.dts.config.ts --configPlugin esbuild && rimraf temp",
+        "build-types-check": "tsc --project tsconfig.check.json",
+        "typecheck": "tsc --noEmit",
+        "lint": "eslint --cache --ext .ts src/**",
+        "format": "prettier --write --cache --parser typescript \"src/**/*.ts\""
+      }
+    },
+    {
+      "path": "apps/web/node_modules/@vitejs/plugin-react/package.json",
+      "sha256": "d608755568d9d654c34e9e2da06659df9122fa89d2604ee09cdeda457a20c035",
+      "name": "@vitejs/plugin-react",
+      "version": "4.7.0",
+      "engines": {
+        "node": "^14.18.0 || >=16.0.0"
+      },
+      "peerDependencies": {
+        "vite": "^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
+      },
+      "scripts": {
+        "dev": "tsdown --watch",
+        "build": "tsdown",
+        "prepublishOnly": "npm run build",
+        "test-unit": "vitest run"
+      }
+    },
+    {
+      "path": "apps/web/node_modules/typescript/package.json",
+      "sha256": "822ef7ca6452205657b6288b066481ecf508bfbf43455d715cf7d3ec457561e6",
+      "name": "typescript",
+      "version": "5.9.3",
+      "engines": {
+        "node": ">=14.17"
+      },
+      "peerDependencies": null,
+      "scripts": {
+        "test": "hereby runtests-parallel --light=false",
+        "test:eslint-rules": "hereby run-eslint-rules-tests",
+        "build": "npm run build:compiler && npm run build:tests",
+        "build:compiler": "hereby local",
+        "build:tests": "hereby tests",
+        "build:tests:notypecheck": "hereby tests --no-typecheck",
+        "clean": "hereby clean",
+        "gulp": "hereby",
+        "lint": "hereby lint",
+        "knip": "hereby knip",
+        "format": "dprint fmt",
+        "setup-hooks": "node scripts/link-hooks.mjs"
+      }
+    },
+    {
+      "path": "apps/web/node_modules/react/package.json",
+      "sha256": "d4e68a5c96babb20cad1daafea8b78822eae45b341552cf5418d06a5304fa64c",
+      "name": "react",
+      "version": "18.3.1",
+      "engines": {
+        "node": ">=0.10.0"
+      },
+      "peerDependencies": null,
+      "scripts": null
+    },
+    {
+      "path": "apps/web/node_modules/react-dom/package.json",
+      "sha256": "d2f29e31bd48b833e48cd7bbf41f192e8ee4ff8da249fdbe10d4ac4114b8b12e",
+      "name": "react-dom",
+      "version": "18.3.1",
+      "engines": null,
+      "peerDependencies": {
+        "react": "^18.3.1"
+      },
+      "scripts": null
+    }
+  ]
+}

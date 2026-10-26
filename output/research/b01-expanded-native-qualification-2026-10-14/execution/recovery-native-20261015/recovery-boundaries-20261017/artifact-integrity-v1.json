@@ -1,0 +1,247 @@
+{
+  "status": "DOING",
+  "scope": "Artifact integrity and pixel contents only; no behavior qualification",
+  "images": [
+    {
+      "file": "ai-balance-after.png",
+      "bytes": 171569,
+      "sha256": "02e0482ce2308d9ede3b9806747305b931fa8ad5f3190c2ad0d72b2c0344c985",
+      "dimensions": [
+        1543,
+        884
+      ],
+      "nonblackPixels": 1363881,
+      "centrePixel": [
+        32,
+        111,
+        124
+      ]
+    },
+    {
+      "file": "ai-balance-before.png",
+      "bytes": 174396,
+      "sha256": "78727d8b7285a5cbed047c88a5159fc189564fcbb549ecccfd7755690a9bdcba",
+      "dimensions": [
+        1543,
+        884
+      ],
+      "nonblackPixels": 1363953,
+      "centrePixel": [
+        247,
+        245,
+        248
+      ]
+    },
+    {
+      "file": "native-matching-observation.png",
+      "bytes": 129475,
+      "sha256": "867d25789e6b0f87e6f7383363cedd2315bd63ced1cf98a47d2708ea748db7c9",
+      "dimensions": [
+        1543,
+        884
+      ],
+      "nonblackPixels": 1363994,
+      "centrePixel": [
+        242,
+        239,
+        232
+      ]
+    },
+    {
+      "file": "preserve-01-default.png",
+      "bytes": 24872,
+      "sha256": "e91c596345f17f21eb8fc7fc5dda43fe054b951cc9104772ccbea82271174328",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "nonblackPixels": 179244,
+      "centrePixel": [
+        244,
+        241,
+        234
+      ]
+    },
+    {
+      "file": "preserve-02-detailed-pending.png",
+      "bytes": 24851,
+      "sha256": "ffa151917b3cfeb15d9951b4fbfdb7cadecfcee61f4ba4de7989cf99fc93c5cb",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "nonblackPixels": 179243,
+      "centrePixel": [
+        244,
+        241,
+        234
+      ]
+    },
+    {
+      "file": "preserve-03-dirty-bottom-before.png",
+      "bytes": 34374,
+      "sha256": "ab5596d120b7eda3e2d6ca98b799bf15e544365661b5063054c1bccf86eed022",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "nonblackPixels": 179387,
+      "centrePixel": [
+        250,
+        249,
+        245
+      ]
+    },
+    {
+      "file": "preserve-04-boundary-bottom.png",
+      "bytes": 34374,
+      "sha256": "ab5596d120b7eda3e2d6ca98b799bf15e544365661b5063054c1bccf86eed022",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "nonblackPixels": 179387,
+      "centrePixel": [
+        250,
+        249,
+        245
+      ]
+    },
+    {
+      "file": "preserve-05-settled-black.png",
+      "bytes": 34374,
+      "sha256": "ab5596d120b7eda3e2d6ca98b799bf15e544365661b5063054c1bccf86eed022",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "nonblackPixels": 179387,
+      "centrePixel": [
+        250,
+        249,
+        245
+      ]
+    },
+    {
+      "file": "reset-01-fixed-viewport-default.png",
+      "bytes": 24872,
+      "sha256": "e91c596345f17f21eb8fc7fc5dda43fe054b951cc9104772ccbea82271174328",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "nonblackPixels": 179244,
+      "centrePixel": [
+        244,
+        241,
+        234
+      ]
+    },
+    {
+      "file": "reset-02-detailed-pending.png",
+      "bytes": 24851,
+      "sha256": "ffa151917b3cfeb15d9951b4fbfdb7cadecfcee61f4ba4de7989cf99fc93c5cb",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "nonblackPixels": 179243,
+      "centrePixel": [
+        244,
+        241,
+        234
+      ]
+    },
+    {
+      "file": "reset-03-dirty-bottom-before.png",
+      "bytes": 34374,
+      "sha256": "ab5596d120b7eda3e2d6ca98b799bf15e544365661b5063054c1bccf86eed022",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "nonblackPixels": 179387,
+      "centrePixel": [
+        250,
+        249,
+        245
+      ]
+    },
+    {
+      "file": "reset-04-destination-first.png",
+      "bytes": 24872,
+      "sha256": "e91c596345f17f21eb8fc7fc5dda43fe054b951cc9104772ccbea82271174328",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "nonblackPixels": 179244,
+      "centrePixel": [
+        244,
+        241,
+        234
+      ]
+    },
+    {
+      "file": "reset-05-destination-default-top.png",
+      "bytes": 24872,
+      "sha256": "e91c596345f17f21eb8fc7fc5dda43fe054b951cc9104772ccbea82271174328",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "nonblackPixels": 179244,
+      "centrePixel": [
+        244,
+        241,
+        234
+      ]
+    },
+    {
+      "file": "reset-preparation-coordinate-drift.png",
+      "bytes": 27615,
+      "sha256": "d77ff094f8b7a379a04e828c15d54d614a5269b15cf421a0b0a5325ddf0b90de",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "nonblackPixels": 355899,
+      "centrePixel": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "file": "static-result-overview.png",
+      "bytes": 186875,
+      "sha256": "cfa69f646d6d68ec4f59827d24b85c6322ce40f39ea5ae75536277aee9d40071",
+      "dimensions": [
+        1543,
+        884
+      ],
+      "nonblackPixels": 1363884,
+      "centrePixel": [
+        32,
+        111,
+        124
+      ]
+    }
+  ],
+  "archives": [
+    {
+      "file": "after-four-boundary-edges.fig",
+      "bytes": 433165,
+      "sha256": "c70579423e80dea8d0d020714853452570fa2a6f5abb13ffa97532ffa999765f",
+      "entries": 4,
+      "firstBadEntry": null
+    },
+    {
+      "file": "after-static-private-controls.fig",
+      "bytes": 433023,
+      "sha256": "6f14871466e560c15affe1129aa8c38ddda18942b2a5274ee24ec9827a76c360",
+      "entries": 4,
+      "firstBadEntry": null
+    }
+  ]
+}

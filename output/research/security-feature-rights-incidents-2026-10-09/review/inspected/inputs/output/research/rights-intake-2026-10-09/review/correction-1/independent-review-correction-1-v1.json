@@ -1,0 +1,12 @@
+{
+  "status": "DOING",
+  "verdict": "PASS",
+  "scope": "Eight-input RIGHTS01 correction cycle1; exact mixed-data paragraph and unchanged catalogue only",
+  "manifest_sha256": "eb92093888462eb242bd771ea519dac42768de014af466294f9e83b3c19d0e50",
+  "initial_review_sha256": "3e1ff14ae36d20daa07f239cd3af4f2baa2d7882a88f18907d001e60b8f7d890",
+  "finding_resolved": "RIGHTS01",
+  "verified": {"frozen_live_inputs": 8, "exact_single_paragraph_substitution": true, "all_other_security_bytes_unchanged": true, "interface_catalogue_unchanged": true, "edpb_raw_gzip_identity": true},
+  "source_assessment": "Repaired paragraph reflects EDPB6.2 paragraphs172-173 and examples34-35: concrete adverse-impact assessment, balancing/reconciliation, proportionate necessary redactions, useful remaining access and recorded irreconcilable limits. It permits no automatic new grant and keeps credentials/unrelated unentitled records protected.",
+  "findings": [],
+  "limits": "Logical/source consistency only. Initial28-input review retains its exact original scope plus this narrow correction; no wider re-review, legal/jurisdictional clearance, mailbox/security/storage/delivery/runtime proof, actual disclosure/deletion, adoption or integrated/founder acceptance."
+}

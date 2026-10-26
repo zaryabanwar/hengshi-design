@@ -1,0 +1,142 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-24",
+  "reviewer": "/root/review_navigation_result_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "PASS",
+  "scope": "Bounded consistency review of exact completed Navigation reaction transaction, its saved report/archives, pre-call usage and nine supplied playback screenshots. No live Figma reread or complete behavior qualification.",
+  "inputs": [
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/source-executed.js",
+      "bytes": 41006,
+      "sha256": "e8d89d6030f8ee32229b531526b421ef73fbb0af8ed74c533a707906d4524cca"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/mcp-result.json",
+      "bytes": 8221,
+      "sha256": "860bac1d596c094487efae22cabe0e996b5112bd2f20635d172c90aca8ff6cba"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/applied-report.json",
+      "bytes": 12875,
+      "sha256": "5a4eb257eabb7eadadbb83b1bf70c75c8482ee540cd6353d778e0e3a134b92ba"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/execution-observation.json",
+      "bytes": 3646,
+      "sha256": "6739a4e6724a40d5f423c05619ea12588a77ec0580fbf60744d2f18acf74fbf3"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/before.fig",
+      "bytes": 433241,
+      "sha256": "2c88385b2d4f05ca3d5b780d02ef4a14ffd0e8650a14903622f45322c987e92d"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/after.fig",
+      "bytes": 436234,
+      "sha256": "5d683ee0b22e5bab3ac4ac1f93ff1cb560cc47c37d142f2a1ed37c231babe4d8"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/usage-before.txt",
+      "bytes": 139,
+      "sha256": "3b932258d63a4fc9414dd5830e1d8830f7ae7357947cfa54690b768fac86253d"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/usage-before.jpg",
+      "bytes": 40810,
+      "sha256": "de2cb181b114d1f3da6bbe26daa4563cbec53cdfa0127b7f336e09f7738072da"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/01-simplified-pending-detailed-active.jpg",
+      "bytes": 46116,
+      "sha256": "674e8f6f81d5b3a12921eb6ae72f36e8c76674d47881b28557182b90991e4064"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/02-escape-closes-with-detailed-active.jpg",
+      "bytes": 35736,
+      "sha256": "86b08003d4157736de21d2cbe7dbe8ed1b7d44eb6cd9f337ee9b3e48402d48cf"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/03-reopen-retains-simplified-pending.jpg",
+      "bytes": 46116,
+      "sha256": "674e8f6f81d5b3a12921eb6ae72f36e8c76674d47881b28557182b90991e4064"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/04-scrolled-apply-control.jpg",
+      "bytes": 63599,
+      "sha256": "30321331746c49fa566b92e4f7ac668433d85cea3df1d7376e3478d561891ca8"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/05-apply-simplified-result.jpg",
+      "bytes": 64436,
+      "sha256": "608413650dea548151ccbb57264f4014573f31757639c6a0c0ef7315e504a7c4"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/06-simplified-active-confirmed.jpg",
+      "bytes": 46396,
+      "sha256": "d0e16bf25084931b9750822653dd2aa900e20fb9469d4b1390e7ee21fb51edf4"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/07-quick-access-pending-simplified-active.jpg",
+      "bytes": 46415,
+      "sha256": "e85573725ff6333a5121e1195b31ed14af14e659879ea32856e379a55b03b007"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/08-close-preserves-simplified-active.jpg",
+      "bytes": 35922,
+      "sha256": "af0039cfb6354c25f89fe4c80e3d7f5893552519e14246d142f6bbc160c45662"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/09-reopen-retains-quick-access-pending.jpg",
+      "bytes": 46415,
+      "sha256": "e85573725ff6333a5121e1195b31ed14af14e659879ea32856e379a55b03b007"
+    },
+    {
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/seven-edge-baseline/expected-scope-v1.json",
+      "bytes": 36944,
+      "sha256": "4efba6e36386ff3df48da7807ea2ecd94bb1234b7e9c4acb12deeacc2a7ac1e0"
+    },
+    {
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/seven-edge-baseline/proposal-v1.json",
+      "bytes": 3385,
+      "sha256": "ca58ab70fbfb1ce29db5e15644d1483d2bdb956f5aa416fd853dbdc28f20e84b"
+    },
+    {
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/seven-edge-baseline/independent-review-navigation-batch-v1.json",
+      "bytes": 13405,
+      "sha256": "ac7e8d015f4c77fadf34900998ebf815ced32d6d2979b712e211d0261acc133e"
+    },
+    {
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/seven-edge-baseline/review-inputs-v1.json",
+      "bytes": 4983,
+      "sha256": "fc0698e965fd00d67f4c352c5869c469fea3034f7c0b09237e21fee96956f6fd"
+    },
+    {
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/seven-edge-baseline/navigation-reaction-batch-v1.js",
+      "bytes": 41006,
+      "sha256": "e8d89d6030f8ee32229b531526b421ef73fbb0af8ed74c533a707906d4524cca"
+    }
+  ],
+  "checks": [
+    "Executed UTF-8 source is byte-identical to the exact source pinned by the prior proposal review; SHA256 e8d89d6030f8ee32229b531526b421ef73fbb0af8ed74c533a707906d4524cca.",
+    "Raw non-error MCP content parses to exactly the applied report. Report APPLIED names zero created nodes,101 unique mutation controls,32 exact tuple/root bindings and108 exact same-set planned edges.",
+    "Normalized108-edge graph equals expected-scope CHANGE_TO edges exactly. Mutation set is all108 edge controls minus exact7 pre-existing controls, without overlap. Each preserved ID retains the planned source and destination in report.",
+    "Both saved editable .fig archives pass ZIP CRC and contain canvas.fig,thumbnail.png,meta.json,images/. Archive hashes match observation. This establishes readable archive integrity, not successful restore or independent semantic canvas diff.",
+    "All9 supplied playback captures match recorded byte counts and SHA256. All9 and usage-before.jpg were independently visually inspected.",
+    "Images01/03 show Simplified pending with Detailed active;02 shows closed Detailed.06 shows Simplified active.07/09 show Quick Access pending with Simplified active;08 shows closed Simplified. These saved states are consistent with the producer-reported representative sequence.",
+    "Image04 shows reachable Apply at the scroll bottom. Image05 is a black transient player capture with Restart affordance; it independently proves neither Apply outcome nor retained scroll. Image06 supplies the later active Simplified confirmation.",
+    "Pre-call usage screenshot and text agree:8 MCP calls available and352/500 AI credits used. No post-call quota or debit is established."
+  ],
+  "findings": [],
+  "evidence_clarifications": [
+    "The eight producer-observed actions are recorded, but screenshots alone do not independently establish every trigger event. Image05 must not be used as positive Apply or retained-scroll proof."
+  ],
+  "limits": [
+    "visualStructureUnchanged/protectedOutsideSectionUnchanged are the reviewed script transaction checks over enumerated fields, not independent full-property comparison or native archive restoration.",
+    "No live canvas inspection, all108-edge playback, four entry-flow coverage, exact scroll/focus/full matching, boundary preserve/reset, Directory/Recovery, restore, accessibility or application enforcement qualification.",
+    "Quick Access active is not shown in these frozen inputs; only pending Quick Access is shown. The rejected subsequent Apply action is not presumed executed.",
+    "Prior proposal method restrictions are historical under current D095. This receipt grants no new design scope, allowance, paid/account action, B01/Phase1 founder acceptance or commit/push authority."
+  ]
+}

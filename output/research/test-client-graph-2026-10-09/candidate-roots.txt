@@ -1,0 +1,16 @@
+# Research only; no production selection or installation.
+# Independently newest transitive packages are not overridden.
+alembic==1.20.0
+bcrypt==5.0.0
+email-validator==2.3.0
+fastapi==0.143.0
+httpx==0.28.1
+psycopg[binary]==3.3.6
+pyjwt[crypto]==2.15.1
+pytest-asyncio==1.4.0
+pytest==9.1.1
+python-dotenv==1.2.4
+sqlalchemy==2.1.4
+uvicorn[standard]==0.54.0
+authlib==1.8.0
+httpx2==2.13.1

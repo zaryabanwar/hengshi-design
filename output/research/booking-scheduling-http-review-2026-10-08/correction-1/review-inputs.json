@@ -1,0 +1,71 @@
+{
+  "status": "DOING",
+  "scope": "Qualification-gate wording correction and scoped review references only; no wire/resource/schema change",
+  "input_count": 10,
+  "correction_cycles_used": 1,
+  "inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/correction-1/review-inputs/00-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/correction-1/review-inputs/01-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "TASKS.md",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/correction-1/review-inputs/02-TASKS.md",
+      "bytes": 6728,
+      "sha256": "590da697f0da1c2bc38f648d53dd9be8fe2bec0df0dc209ab9adf5af5f050c21"
+    },
+    {
+      "source": "docs/software-definition/04-reconciliation-map.md",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/correction-1/review-inputs/03-04-reconciliation-map.md",
+      "bytes": 92110,
+      "sha256": "59a6176f6d01aad50db63097593a494cfc8f4b4add5adf3604745272ed4a21f7"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/BOOKING_SCHEDULING.md",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/correction-1/review-inputs/04-BOOKING_SCHEDULING.md",
+      "bytes": 58602,
+      "sha256": "6c88de533779031d2dd2dfa2a0a47a09b30f7e7224f42902b14bab854ddf5571"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/correction-1/review-inputs/05-INTERFACE_CATALOG.md",
+      "bytes": 109096,
+      "sha256": "b20c5b9689cccccaa0800287aacc8b9ef07526eb22d9d0b9fdababcd73fc54ca"
+    },
+    {
+      "source": "output/research/booking-scheduling-http-review-2026-10-08/independent-review-booking-scheduling-http-v1.json",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/correction-1/review-inputs/06-independent-review-booking-scheduling-http-v1.json",
+      "bytes": 3420,
+      "sha256": "275b35b0c09a289c4fe5c4565ecfdd2fbbcb6cbf7ec6b5c01ff4d7044b8ce9cb"
+    },
+    {
+      "source": "output/research/booking-scheduling-http-review-2026-10-08/correction-1/BOOKING_SCHEDULING.md.before",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/correction-1/review-inputs/07-BOOKING_SCHEDULING.md.before",
+      "bytes": 58077,
+      "sha256": "8dc09418fe2c85375e9437d91668b50fa84df4a2c658b524f78db5f4eb508af0"
+    },
+    {
+      "source": "output/research/booking-scheduling-http-review-2026-10-08/correction-1/INTERFACE_CATALOG.md.before",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/correction-1/review-inputs/08-INTERFACE_CATALOG.md.before",
+      "bytes": 108809,
+      "sha256": "aeee8ecc6ff5eb47589563d11ef76f603b798163882ce8bf235dc7476c28cf31"
+    },
+    {
+      "source": "output/research/booking-scheduling-http-review-2026-10-08/correction-1/changes.json",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/correction-1/review-inputs/09-changes.json",
+      "bytes": 858,
+      "sha256": "ad1bf95b5b8c51c0884b1cf9be7368eb7e81f3832e9dfea8f94e3158b76cbd77"
+    }
+  ],
+  "initial_HTTP_receipt_sha256": "275b35b0c09a289c4fe5c4565ecfdd2fbbcb6cbf7ec6b5c01ff4d7044b8ce9cb",
+  "earlier_scheduling_logical_C2_not_reopened": true,
+  "no_prose_tests_or_repeated_replay": true
+}

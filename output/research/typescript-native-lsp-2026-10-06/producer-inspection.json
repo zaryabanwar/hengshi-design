@@ -1,0 +1,142 @@
+{
+  "checked_at_utc": "2026-10-05T22:32:34.212350+00:00",
+  "comparison_to_existing_reviewed_react_evidence": [
+    {
+      "name": "valid-component",
+      "lsp_codes": [],
+      "api_compiler_codes": [],
+      "api_in_process_service_codes": [],
+      "api6_cli_codes": [],
+      "native7_cli_codes": [],
+      "all_finite_codes_equal": true
+    },
+    {
+      "name": "valid-async-component",
+      "lsp_codes": [],
+      "api_compiler_codes": [],
+      "api_in_process_service_codes": [],
+      "api6_cli_codes": [],
+      "native7_cli_codes": [],
+      "all_finite_codes_equal": true
+    },
+    {
+      "name": "invalid-prop",
+      "lsp_codes": [
+        2322
+      ],
+      "api_compiler_codes": [
+        2322
+      ],
+      "api_in_process_service_codes": [
+        2322
+      ],
+      "api6_cli_codes": [
+        2322
+      ],
+      "native7_cli_codes": [
+        2322
+      ],
+      "all_finite_codes_equal": true
+    },
+    {
+      "name": "missing-prop",
+      "lsp_codes": [
+        2741
+      ],
+      "api_compiler_codes": [
+        2741
+      ],
+      "api_in_process_service_codes": [
+        2741
+      ],
+      "api6_cli_codes": [
+        2741
+      ],
+      "native7_cli_codes": [
+        2741
+      ],
+      "all_finite_codes_equal": true
+    },
+    {
+      "name": "invalid-state-action",
+      "lsp_codes": [
+        2345
+      ],
+      "api_compiler_codes": [
+        2345
+      ],
+      "api_in_process_service_codes": [
+        2345
+      ],
+      "api6_cli_codes": [
+        2345
+      ],
+      "native7_cli_codes": [
+        2345
+      ],
+      "all_finite_codes_equal": true
+    },
+    {
+      "name": "invalid-ref",
+      "lsp_codes": [
+        2322
+      ],
+      "api_compiler_codes": [
+        2322
+      ],
+      "api_in_process_service_codes": [
+        2322
+      ],
+      "api6_cli_codes": [
+        2322
+      ],
+      "native7_cli_codes": [
+        2322
+      ],
+      "all_finite_codes_equal": true
+    },
+    {
+      "name": "invalid-event-property",
+      "lsp_codes": [
+        2339
+      ],
+      "api_compiler_codes": [
+        2339
+      ],
+      "api_in_process_service_codes": [
+        2339
+      ],
+      "api6_cli_codes": [
+        2339
+      ],
+      "native7_cli_codes": [
+        2339
+      ],
+      "all_finite_codes_equal": true
+    },
+    {
+      "name": "invalid-dom-root",
+      "lsp_codes": [
+        2345
+      ],
+      "api_compiler_codes": [
+        2345
+      ],
+      "api_in_process_service_codes": [
+        2345
+      ],
+      "api6_cli_codes": [
+        2345
+      ],
+      "native7_cli_codes": [
+        2345
+      ],
+      "all_finite_codes_equal": true
+    }
+  ],
+  "buffer_scope": "Native LSP only; no API6 buffer-edit or editor UI parity is claimed",
+  "initial_client_failure": "First producer run rejected unconditional workspace/didChangeConfiguration registration. Its exact runner is retained at probe_lsp.initial.py; guards for that run correspond to that historical runner. No config-change dynamic capability was advertised. Corrected client explicitly advertises/supports it and replies null for unavailable synthetic settings. Full protocol interoperability is unproven.",
+  "stderr": "Both successful shutdowns can log exit EOF; corrected run exits 0 after shutdown response and exit notification. This is not a clean-stderr claim.",
+  "source_limits": "Official LSP 3.17 feature baseline, not a newest-protocol selection. Context7 versioned TypeScript query provided no LSP diagnostics matches; prior mixed main launch path was corrected against actual v7.0.2 source. Native executable identity is observed, not a full production selection.",
+  "containment": "Direct native executable with CREATE_NO_WINDOW. Narrow OS env; PATH excludes npm/Node, profile/temp redirected to probe output. No OS network sandbox claim. No runtime files created in redirected directories in observed run."
+}

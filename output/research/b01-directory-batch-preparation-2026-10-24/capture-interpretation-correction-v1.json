@@ -1,0 +1,120 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-24",
+  "scope": "Correct presentation-derived black/partial screenshot interpretations only; preserve all source images and original observations/reviews.",
+  "supersedes": [
+    "Directory execution-observation-v1.json black/exclusion interpretation for01 and its later capture-specific partial interpretations",
+    "Directory playback-recapture-v1.json complete/partial/unusable labels inferred from tool emissions",
+    "Navigation result-review assertion that saved05 is a black/transient canvas, subject to separate independent correction note"
+  ],
+  "finding": "Tool-emitted image presentation sometimes looked black or partial although decoded saved JPEGs contain the complete light fixture. Identical saved bytes were emitted with different apparent content. This establishes a presentation discrepancy; no browser/Figma renderer root cause is established.",
+  "algorithm": "Pillow RGB decode; fixture crop(x600,y104,x920,y664),179200 pixels. Count max(channel)<12 and min(channel)>225 with max-min<35. These counts contradict wholly black capture claims; they do not recognize text or prove behavior by themselves.",
+  "samples": [
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/05-apply-simplified-result.jpg",
+      "sha256": "608413650dea548151ccbb57264f4014573f31757639c6a0c0ef7315e504a7c4",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fixture_pixels": 179200,
+      "near_black_max_channel_lt12": 1050,
+      "light_paper_min_channel_gt225_and_range_lt35": 145904
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/01-balanced-closed.jpg",
+      "sha256": "5c35c9c9f384b71bd382ee146ee53bbaa2865d53712c523b0f4fdb9c527215eb",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fixture_pixels": 179200,
+      "near_black_max_channel_lt12": 110,
+      "light_paper_min_channel_gt225_and_range_lt35": 152900
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/08-close-retains-quick-access.jpg",
+      "sha256": "af0e4932ee04f38f6a58d7767f400554052401aa7a6b822c33afe83ff340a539",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fixture_pixels": 179200,
+      "near_black_max_channel_lt12": 113,
+      "light_paper_min_channel_gt225_and_range_lt35": 152906
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/18-reopen-full-page.jpg",
+      "sha256": "45ca973ad6f054b7775ecfa945812326e90f3a415df84bf21853dccc75330fca",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fixture_pixels": 179200,
+      "near_black_max_channel_lt12": 421,
+      "light_paper_min_channel_gt225_and_range_lt35": 146908
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/20-close-settled-full-page.jpg",
+      "sha256": "55124b3c7ebc87941cd207f73b0ed9de7216585d0b5d8b405eaf7bef4de9213e",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fixture_pixels": 179200,
+      "near_black_max_channel_lt12": 113,
+      "light_paper_min_channel_gt225_and_range_lt35": 152906
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/21-visible-closed.jpg",
+      "sha256": "55124b3c7ebc87941cd207f73b0ed9de7216585d0b5d8b405eaf7bef4de9213e",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fixture_pixels": 179200,
+      "near_black_max_channel_lt12": 113,
+      "light_paper_min_channel_gt225_and_range_lt35": 152906
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/22-visible-reopen.jpg",
+      "sha256": "45ca973ad6f054b7775ecfa945812326e90f3a415df84bf21853dccc75330fca",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fixture_pixels": 179200,
+      "near_black_max_channel_lt12": 421,
+      "light_paper_min_channel_gt225_and_range_lt35": 146908
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/23-visible-reopen-settled.jpg",
+      "sha256": "45ca973ad6f054b7775ecfa945812326e90f3a415df84bf21853dccc75330fca",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fixture_pixels": 179200,
+      "near_black_max_channel_lt12": 421,
+      "light_paper_min_channel_gt225_and_range_lt35": 146908
+    }
+  ],
+  "identical_file_groups": [
+    [
+      "playback/20-close-settled-full-page.jpg",
+      "playback/21-visible-closed.jpg"
+    ],
+    [
+      "playback/18-reopen-full-page.jpg",
+      "playback/22-visible-reopen.jpg",
+      "playback/23-visible-reopen-settled.jpg"
+    ]
+  ],
+  "limits": [
+    "Behavior claims still require actual decoded content/state review; hashes/light counts alone do not prove interactions or full graph.",
+    "Navigation05 shows scrolled lower content, with active caption offscreen, so it still cannot prove Apply changed mode;06 provides that evidence.",
+    "No claim that visibility or recapture repaired browser rendering; source preserved.",
+    "No exact scroll/focus/full native matching/restore/accessibility/B01/Phase1 acceptance."
+  ]
+}

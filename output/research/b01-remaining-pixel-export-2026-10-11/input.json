@@ -1,0 +1,145 @@
+{
+  "scope": "Fifteen existing references in five temporary scale-one comparison sheets; no original correction or new reference design",
+  "fileKey": "GOmLP6Cv96l768ueSrZ5Dg",
+  "expected": [
+    {
+      "id": "29:1515",
+      "parentId": "29:1512",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1564,
+      "reason": "Recovery frame has no full-resolution pixel evidence"
+    },
+    {
+      "id": "29:1545",
+      "parentId": "29:1512",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1748,
+      "reason": "Recovery frame has no full-resolution pixel evidence"
+    },
+    {
+      "id": "29:1577",
+      "parentId": "29:1512",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1612,
+      "reason": "Recovery frame has no full-resolution pixel evidence"
+    },
+    {
+      "id": "29:1609",
+      "parentId": "29:1512",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1564,
+      "reason": "Recovery frame has no full-resolution pixel evidence"
+    },
+    {
+      "id": "29:1639",
+      "parentId": "29:1512",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1748,
+      "reason": "Recovery frame has no full-resolution pixel evidence"
+    },
+    {
+      "id": "29:1671",
+      "parentId": "29:1512",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1612,
+      "reason": "Recovery frame has no full-resolution pixel evidence"
+    },
+    {
+      "id": "29:1703",
+      "parentId": "29:1512",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1564,
+      "reason": "Recovery frame has no full-resolution pixel evidence"
+    },
+    {
+      "id": "29:1733",
+      "parentId": "29:1512",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1748,
+      "reason": "Recovery frame has no full-resolution pixel evidence"
+    },
+    {
+      "id": "29:1765",
+      "parentId": "29:1512",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1612,
+      "reason": "Recovery frame has no full-resolution pixel evidence"
+    },
+    {
+      "id": "29:1797",
+      "parentId": "29:1512",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1564,
+      "reason": "Recovery frame has no full-resolution pixel evidence"
+    },
+    {
+      "id": "29:1827",
+      "parentId": "29:1512",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1748,
+      "reason": "Recovery frame has no full-resolution pixel evidence"
+    },
+    {
+      "id": "29:1859",
+      "parentId": "29:1512",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1612,
+      "reason": "Recovery frame has no full-resolution pixel evidence"
+    },
+    {
+      "id": "32:2077",
+      "parentId": "32:1708",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2244,
+      "reason": "Directory refusal image not returned by attempt25"
+    },
+    {
+      "id": "32:2142",
+      "parentId": "32:1708",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2244,
+      "reason": "Directory refusal image not returned by attempt25"
+    },
+    {
+      "id": "32:2207",
+      "parentId": "32:1708",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2244,
+      "reason": "Directory refusal image not returned by attempt25"
+    }
+  ],
+  "parentSpecs": [
+    {
+      "id": "29:1512",
+      "name": "B01 / Shared recovery stream references / v1"
+    },
+    {
+      "id": "32:1708",
+      "name": "B01 / Capability refusal host references / v1"
+    }
+  ],
+  "calls_authorized": 0,
+  "allowance_assigned": false,
+  "limitations": [
+    "Static-source preparation only; no new pixels or temporary Figma nodes yet",
+    "Fresh one-call approval and its applicable allowance/exception required after source review",
+    "No original component/frame copy correction; temporary clones removed in finally with bounded preservation checks",
+    "Actual returned image count and native dimensions must be verified before crop coverage",
+    "No automatic retry, fullB01 acceptance, paid activation or later-batch release"
+  ]
+}

@@ -1,0 +1,418 @@
+[
+  {
+    "path": ".specify/memory/constitution.md",
+    "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+  },
+  {
+    "path": "AGENTS.md",
+    "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+  },
+  {
+    "path": "DECISIONS.md",
+    "sha256": "0290e6bed5d983fa1f2162db72f1a9d3167695ff98c867c88987ee1e2c4bcc99"
+  },
+  {
+    "path": "PROJECT.md",
+    "sha256": "a483bd2713fe420322772ab7fb07c848aaf103088697c05ab91f35d2e5ea1461"
+  },
+  {
+    "path": "PROJECT_STATE.yaml",
+    "sha256": "918fdd2f155fbcf5035baf203fb5b4e1a654c2fe6e11806ffa28b298576920c1"
+  },
+  {
+    "path": "TASKS.md",
+    "sha256": "158e06c0d8cd67859c8b459b96dce3449cb4d16788d3c520e99d8823f72edcd3"
+  },
+  {
+    "path": "apps/api/app/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "apps/api/app/admin/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "apps/api/app/admin/routes.py",
+    "sha256": "c95dd1a7eacfeb9f5aea82eec38581e56c4e32e389789b21ef2d4cd446e2b33f"
+  },
+  {
+    "path": "apps/api/app/auth/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "apps/api/app/auth/deps.py",
+    "sha256": "6990c8ce351698e75ada326ad546bf8fa95e187678f7f25ad6c778b7bc3d9312"
+  },
+  {
+    "path": "apps/api/app/auth/jwt.py",
+    "sha256": "7807d67dd3cad02543c16d17b77fb156abd484bd9c794ed455f38e71a5aaf316"
+  },
+  {
+    "path": "apps/api/app/auth/password.py",
+    "sha256": "52e5918e298549a6f0138bfb9e3b4c6c0a827d1418af166ef5586884c6901907"
+  },
+  {
+    "path": "apps/api/app/auth/routes.py",
+    "sha256": "9ab927ae71fee54afcd96afb1bb648b53dc4aa4469d6bec884a2f0717ec1af97"
+  },
+  {
+    "path": "apps/api/app/auth/schemas.py",
+    "sha256": "784b1577f82721e1196f13db0c6fc3b8c8eddc21a96342daaa2bd9b9793f4d2d"
+  },
+  {
+    "path": "apps/api/app/db/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "apps/api/app/db/base.py",
+    "sha256": "2e54675f603d29c8751fc2634bb96c1f9b05419c565d0d35300f66bc450e1eed"
+  },
+  {
+    "path": "apps/api/app/db/session.py",
+    "sha256": "c05031b579efd1555a372fdfce5feb7ac289c3e97f013c79d8f6aa19801cf52e"
+  },
+  {
+    "path": "apps/api/app/leads/__init__.py",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "apps/api/app/leads/routes.py",
+    "sha256": "7c8b4b6a014f657f9278664ca569e28687a43263c195ce78f96b264436706111"
+  },
+  {
+    "path": "apps/api/app/leads/schemas.py",
+    "sha256": "f6bfcd46c2ed6620afd46392f12b163abfc612188281d6796dca974f70c63942"
+  },
+  {
+    "path": "apps/api/app/main.py",
+    "sha256": "f6dc16de91ffd3fca40017d9024c156ed3383d2564f08f09389b6be942520ff9"
+  },
+  {
+    "path": "apps/api/app/models/__init__.py",
+    "sha256": "7cf68e30e0e64f4272ecde9ff45c467d6ed7bb3438ca08fc51c5bfe488c20f85"
+  },
+  {
+    "path": "apps/api/app/models/lead.py",
+    "sha256": "070cbf96610340672532f0430bfd0748c063d5dc3e60d7b3eeff0ba720369dab"
+  },
+  {
+    "path": "apps/api/app/models/project.py",
+    "sha256": "4d9ed6aa59749b09195bf1875c97a0d2d47d536af65b5db8b391999bf9b10037"
+  },
+  {
+    "path": "apps/api/app/models/service.py",
+    "sha256": "da12bf5ddfa4a22cbde36c4fef7c6f98332b5e0b027e34a2bfe2f34f05d28216"
+  },
+  {
+    "path": "apps/api/app/models/user.py",
+    "sha256": "b44a19b3ffd2a490abd16aad1ba96929a76d4a488309eb7346c5d9b0ad789086"
+  },
+  {
+    "path": "apps/api/app/models/world.py",
+    "sha256": "1e3f3073cf06ea3e297c7e6934b6e74f6e3e1a536280395c014a7c2aeb133c78"
+  },
+  {
+    "path": "apps/api/app/projects/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "apps/api/app/projects/routes.py",
+    "sha256": "d74cc38ea6e911f0d006cb392f4101cc58598395e1073a71e6ea3fa22894a704"
+  },
+  {
+    "path": "apps/api/app/projects/schemas.py",
+    "sha256": "4c4b6bedcf6a1056e8423916faad0880fae32025c3498c8118d8d67d44d29aab"
+  },
+  {
+    "path": "apps/api/app/scripts/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "apps/api/app/scripts/create_admin.py",
+    "sha256": "6661b18af543d9af44a919aa8016347ff5c37939bf6d005dd16633b889f10529"
+  },
+  {
+    "path": "apps/api/app/scripts/seed_projects.py",
+    "sha256": "e07b31063c914d9ddbf811dfdc69186290df2343413b28b5bf99803f98eeedc0"
+  },
+  {
+    "path": "apps/api/app/scripts/seed_services.py",
+    "sha256": "00d92d9e843b5c9844bfbc5c3818e30d450b3f1e597d511707bda7a18f5da750"
+  },
+  {
+    "path": "apps/api/app/scripts/seed_world.py",
+    "sha256": "8fa6b46c3e539584fbf757ff0c90e2f53cc3c63765e11ca77241d770d12d79a6"
+  },
+  {
+    "path": "apps/api/app/services/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "apps/api/app/services/routes.py",
+    "sha256": "9bfa76519d8c2f4a6d0d7c5f8e3d0fcb63a7188762770e300873cf3762101d7c"
+  },
+  {
+    "path": "apps/api/app/services/schemas.py",
+    "sha256": "0120e3aa01697091489b12bd4e338edf5d19d42f9fc018cffb5561ec69f5c140"
+  },
+  {
+    "path": "apps/api/app/world/__init__.py",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "apps/api/app/world/routes.py",
+    "sha256": "2ea394080bab1a6fec4cdc4dac7a79408b42964da3b404b436d511b4ab1d975e"
+  },
+  {
+    "path": "apps/api/app/world/schemas.py",
+    "sha256": "7364da12889f37e3d65c803cbb17a86f1913f16be73130eeb2b1b8c5de6926fb"
+  },
+  {
+    "path": "apps/api/requirements.txt",
+    "sha256": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd"
+  },
+  {
+    "path": "apps/web/package-lock.json",
+    "sha256": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d"
+  },
+  {
+    "path": "apps/web/package.json",
+    "sha256": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a"
+  },
+  {
+    "path": "apps/web/public/models/hengshi-hq-atlanta-exterior-web.glb",
+    "sha256": "4767cab4d346207a2109ffc1584e256e82ae1cecc110780b99c4406a9586aafe"
+  },
+  {
+    "path": "apps/web/src/App.tsx",
+    "sha256": "71cd24168d09a509abe919ffddce0085c46b4fab5e3f69f5198dd92a4b0b7563"
+  },
+  {
+    "path": "apps/web/src/admin/AdminLayout.tsx",
+    "sha256": "3662397b5225b064655c905ee4e2cd054fd6e75a92b2bb9bbeeda905cd1b035f"
+  },
+  {
+    "path": "apps/web/src/admin/AdminLoginPage.tsx",
+    "sha256": "b73cc311a28f2ff853eaa957f4c05f59af79ed572bf8ec95df226ba125cd3791"
+  },
+  {
+    "path": "apps/web/src/admin/ProjectsAdminPage.tsx",
+    "sha256": "d318e078377354f3a25674a5a9870634a10fe469b7a541cd119d794157478266"
+  },
+  {
+    "path": "apps/web/src/admin/RequireAdmin.tsx",
+    "sha256": "722efb7b8bd32831351eb9306da03fb2922e306dbd698ae251ebc20d5c0894d6"
+  },
+  {
+    "path": "apps/web/src/admin/ServicesAdminPage.tsx",
+    "sha256": "00335603d24e8a6c4b333aa879b50986b435de67e9ef476731de5ff52af89cc9"
+  },
+  {
+    "path": "apps/web/src/admin/WorldAdminPage.tsx",
+    "sha256": "02ed75c4fed0dee1689f33f09409bacb3474d36109f6a013d44e8d1694edb804"
+  },
+  {
+    "path": "apps/web/src/counter.ts",
+    "sha256": "7580ce935ad5fd8f5598ee53533fbddbd5d34e5aaf6cfbb7f81f3ef1969bf4e3"
+  },
+  {
+    "path": "apps/web/src/env.d.ts",
+    "sha256": "e551d50cf8c4882827096c5e8e7f9e47d886387cb25a9be381b775587d43d138"
+  },
+  {
+    "path": "apps/web/src/index.css",
+    "sha256": "52a25f99b26417d56be0f5d82bcd92a3225b43dfa375e02de3acc23ed83304a8"
+  },
+  {
+    "path": "apps/web/src/lib/api.ts",
+    "sha256": "b15f2091f084196034917e878485eb70b689162fca422818cf6adba2498bdc58"
+  },
+  {
+    "path": "apps/web/src/lib/constants.ts",
+    "sha256": "6fe20489a0d14adbcc18b3c391bc713694a4c33faf4d052340012d52a510a3a7"
+  },
+  {
+    "path": "apps/web/src/lib/types.ts",
+    "sha256": "d30254f55d8ade0d616dde9be194e4e67e6a28854166137939034b43b346b6ae"
+  },
+  {
+    "path": "apps/web/src/main.ts",
+    "sha256": "9592a6269d9e9c1426595eec9f1b6d2b58d8399f4cdce6546d403d96f613ecdc"
+  },
+  {
+    "path": "apps/web/src/main.tsx",
+    "sha256": "db7dc6ae38613fd712de584d4e595f7f1a653014fe7c57250367745dd0a9a2e3"
+  },
+  {
+    "path": "apps/web/src/pages/Home.tsx",
+    "sha256": "76436a8828bd736b2026d71c07a5e9e355cf54cb80865f8a448f2aea7094552f"
+  },
+  {
+    "path": "apps/web/src/pages/NotFound.tsx",
+    "sha256": "06b1a96c97a105230199b9bb98ceb65c5a5712ae2eb49078bba9ca1d0cfb29f2"
+  },
+  {
+    "path": "apps/web/src/pages/Studio.tsx",
+    "sha256": "3e2e4d90078169e3c7c588129fbf3b956829d4236698fe188a01ba6f476e9104"
+  },
+  {
+    "path": "apps/web/src/pages/WorldPage.tsx",
+    "sha256": "37cdb7cff3be418dcc973125f6a440113adb6eadc36f980e449255acf176f5dd"
+  },
+  {
+    "path": "apps/web/src/store/useAppStore.ts",
+    "sha256": "f90c9924b8acc4e6694a8d92d9911f0e04e34134ebbadfccc273f95b38120311"
+  },
+  {
+    "path": "apps/web/src/stores/worldStore.ts",
+    "sha256": "a93e17bd5b641752ec714b0596c1644f7976656a9e418a3002953c244f35bfe2"
+  },
+  {
+    "path": "apps/web/src/style.css",
+    "sha256": "81b5564e0527ba1f2b7ada78a611777d5dbf7211da9e460dc4d07474fea971f6"
+  },
+  {
+    "path": "apps/web/src/typescript.svg",
+    "sha256": "f6ead1af17acc3f55ad857f3bc936df8754281e2932c1b472dbb9b36ab873f1c"
+  },
+  {
+    "path": "apps/web/src/world/ExteriorScene.tsx",
+    "sha256": "cca5f46a456dcb29362bf2fb89ab4052727f0af37501abef16ba50e9bc74cbc0"
+  },
+  {
+    "path": "apps/web/src/world/WorldCanvas.tsx",
+    "sha256": "8a13414d7cf091584841f278c6fbb9b19a65adf06073dccf49f071cb42d66847"
+  },
+  {
+    "path": "apps/web/src/world/WorldHUD.tsx",
+    "sha256": "a95c352fb7bdd4b9cf4351e98bbeb730ce8200745f62c3a835f69d67f12ebb24"
+  },
+  {
+    "path": "apps/web/src/world/WorldPanel.tsx",
+    "sha256": "02056454cad62bef3a72a0328df907972f7f60dc95cd7efb7cba3de8d183b99f"
+  },
+  {
+    "path": "artifacts/nature-campus-layout-study/nature-campus-layout.glb",
+    "sha256": "e2161710dc0576ec62e3d096c60e32927e827aa59198a33361e729ec8a7b43c0"
+  },
+  {
+    "path": "docs/phase-1-3d/CAMPUS_ASSET_BUILD_SPEC.md",
+    "sha256": "a4fe19fa31bef86e4c6a0fab3ea7ed673bf4918e4d2a363d6573203dbe537227"
+  },
+  {
+    "path": "docs/phase-1-3d/SCENE_ASSEMBLY_CONTRACT.md",
+    "sha256": "9ea40bf17374c7c71c557089db2c729085ce796d46c0e66666e5374144b9df7f"
+  },
+  {
+    "path": "docs/phase-1-3d/SPATIAL_STORYBOARD.md",
+    "sha256": "f4cb35f3f719d8d1e946275fdd2f07e969a2f8e1e783141a50e77af172581ccf"
+  },
+  {
+    "path": "docs/phase-1-3d/WORLD_EXPERIENCE.md",
+    "sha256": "765d98e3d5db65ac1f4f04508594c808cb110a5737c29e6d871617611328c1b7"
+  },
+  {
+    "path": "docs/phase-1-3d/WORLD_MEASUREMENT_PROFILE.md",
+    "sha256": "ec20729f628adda8edbfc7efb33fcac345957558761f0cc1d702157ea92ffdd5"
+  },
+  {
+    "path": "docs/phase-1-architecture/MOVEMENT_STREAMING_ADDENDUM.md",
+    "sha256": "0e6bbf4a51a9d44c8e47fb84fe222e1bdbbca4c93b3b70c827671e8eef48e71a"
+  },
+  {
+    "path": "docs/phase-1-foundation/01-product-requirements.md",
+    "sha256": "4db9d504695e7791705c41fe70fd0aea0467338d95acb5b6732bf6927893ac2e"
+  },
+  {
+    "path": "docs/phase-1-ux-architecture/FLOWS.md",
+    "sha256": "168015a15b51c03cdf1f1532572d7b45c397708651c579c3e1e2025d5ee27097"
+  },
+  {
+    "path": "docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md",
+    "sha256": "fa3322d864dc8c29d2f7853d6dc9a961126f7a8aea2b575505997d05c3297064"
+  },
+  {
+    "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/package-lock.json",
+    "sha256": "86dd64aae77da6ab9a0d0f7a88338494c15f68620838ffd40140f254b1e9ca2d"
+  },
+  {
+    "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/package.json",
+    "sha256": "29bd6baedb79106c1bd5a3c9050867cb2a7478dd33b35fa9b4326856c8fadf72"
+  },
+  {
+    "path": "output/research/world-traversal-profile-2026-10-06/CAMPUS_ASSET_BUILD_SPEC.md.before",
+    "sha256": "cf67f8eb43dc5edec2ff4a1c5cd27fa240026456ea64daecfa7ea4a7e9759acb"
+  },
+  {
+    "path": "output/research/world-traversal-profile-2026-10-06/CAMPUS_ASSET_BUILD_SPEC.md.reviewed",
+    "sha256": "a4fe19fa31bef86e4c6a0fab3ea7ed673bf4918e4d2a363d6573203dbe537227"
+  },
+  {
+    "path": "output/research/world-traversal-profile-2026-10-06/WORLD_EXPERIENCE.md.before",
+    "sha256": "fab7bf1ec7d29621947763b45ecb9eb5e24abcad66f0a169cc4ce06a2b6adb33"
+  },
+  {
+    "path": "output/research/world-traversal-profile-2026-10-06/WORLD_EXPERIENCE.md.reviewed",
+    "sha256": "765d98e3d5db65ac1f4f04508594c808cb110a5737c29e6d871617611328c1b7"
+  },
+  {
+    "path": "output/research/world-traversal-profile-2026-10-06/append-profile.py",
+    "sha256": "4263eb20bf4e01107af6dfa0e67fb765131d9ddb7b166593bff40a0ef8493179"
+  },
+  {
+    "path": "output/research/world-traversal-profile-2026-10-06/context7-rapier-query.json",
+    "sha256": "d682a3a5e66eedc738b8881648c9e7853fa161a03c0840e68c35419bbbe3bda8"
+  },
+  {
+    "path": "output/research/world-traversal-profile-2026-10-06/context7-rapier-resolve.json",
+    "sha256": "474bc24bf1d980cd166af437a2df6e48db59b1d5eb272e49736cb95422dcbea2"
+  },
+  {
+    "path": "output/research/world-traversal-profile-2026-10-06/dragging-movements.html",
+    "sha256": "c3905630a35b6e8246aba32c1769f3ff82b217d464d41e4b1b2a34b9df5771c6"
+  },
+  {
+    "path": "output/research/world-traversal-profile-2026-10-06/freeze.py",
+    "sha256": "430faab985a877a348d43a689e7bb0c2bdb307310e0538f787e67db8d0c7140a"
+  },
+  {
+    "path": "output/research/world-traversal-profile-2026-10-06/pointer-cancellation.html",
+    "sha256": "066bf257f1658dfe5d8ec6de33a0c0af10f708473f5ac46787f15d84de2efd4b"
+  },
+  {
+    "path": "output/research/world-traversal-profile-2026-10-06/pointercancel.html",
+    "sha256": "184902d13999696d56c35ee19edcd014c0ddeba0c15f2743c816c9d62fc93f70"
+  },
+  {
+    "path": "output/research/world-traversal-profile-2026-10-06/protected-before.json",
+    "sha256": "8c7d271cfeea9a665b13ed09bde7da675a68efc5adb2066a94079f39a3d9ddb0"
+  },
+  {
+    "path": "output/research/world-traversal-profile-2026-10-06/rapier-character-controller.html",
+    "sha256": "554025c3a310f27ec7f01fb3b5ef09e7cd959cf744efdb5a5477e8e77955eb5a"
+  },
+  {
+    "path": "output/research/world-traversal-profile-2026-10-06/scope-observations.json",
+    "sha256": "f301934fac4fd872739e9843b5efbec1bd8150a5bc66d7a1ba0a8e28b4bb12f4"
+  },
+  {
+    "path": "output/research/world-traversal-profile-2026-10-06/source-observations.json",
+    "sha256": "90872d0ec34f350fa6f7f71eca121be45f7f9f9f0e972ed6d1a2074617fb63d7"
+  },
+  {
+    "path": "output/research/world-traversal-profile-2026-10-06/touch-action.html",
+    "sha256": "60041c5734084021a162d6843112295dd5fc39c86c8b7f3f151cb9dadb55b4b2"
+  },
+  {
+    "path": "package-lock.json",
+    "sha256": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908"
+  },
+  {
+    "path": "package.json",
+    "sha256": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b"
+  },
+  {
+    "path": "specs/003-3d-experience-completion/spec.md",
+    "sha256": "5c55d42c1cd59a6a4c4c336452f49ebe4f5d5ca83aa594d3c7ecaaed33910a68"
+  }
+]

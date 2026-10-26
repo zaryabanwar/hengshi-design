@@ -1,0 +1,89 @@
+{
+  "product": "Hengshi Design v1",
+  "scope": "Preview resource and timing reconciliation proposal; no implementation or duration selection",
+  "status": "DOING",
+  "preserved_prefix": {
+    "snapshot": "HANDOFF_LIFECYCLE.before.md",
+    "bytes": 80002,
+    "sha256": "4b710874842a300037fa0d57f9b361d7ad6c36385bcfb6c286357ebadea84fbc"
+  },
+  "inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "snapshots/01-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "snapshots/02-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "snapshots/03-DECISIONS.md",
+      "bytes": 80333,
+      "sha256": "ac3075adbc4414d88e4b0f7f111a0476c0dd461596c08943d488d3b7d8949d20"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "snapshot": "snapshots/04-HANDOFF_LIFECYCLE.md",
+      "bytes": 87003,
+      "sha256": "2b543fbf8c00e244f705d0931bacb76f8a2405d2bbb9bb4e1593a28fa86d87f8"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "snapshot": "snapshots/05-PRIVATE_PROCESS_PROOF.md",
+      "bytes": 75991,
+      "sha256": "21833e0bf533d88243e3da34be6f7f2ca401c3401a907c719c58a4fcb2196fbf"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+      "snapshot": "snapshots/06-CHAT_EVENT_PROTOCOL.md",
+      "bytes": 35548,
+      "sha256": "8169e5508bc567d333e6121131d13a909c390e5e8e715a70a05ade83aafac33b"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/data-classification.csv",
+      "snapshot": "snapshots/07-data-classification.csv",
+      "bytes": 5510,
+      "sha256": "4b163eec086cb46ca98fabf692632d1778ee116cb014cda179e5b4a2a5fd44c6"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/COLUMN_AUTHORITY_PROPOSAL.md",
+      "snapshot": "snapshots/08-COLUMN_AUTHORITY_PROPOSAL.md",
+      "bytes": 15044,
+      "sha256": "fddad88d763ccc32686711a6f3ef5ae47d352f72059058ac299b80df67006d18"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/UI_REFERENCE_DESIGN_CONTRACT.md",
+      "snapshot": "snapshots/09-UI_REFERENCE_DESIGN_CONTRACT.md",
+      "bytes": 32708,
+      "sha256": "50600ea847c3ab4f7cb52c85beafeaf720458a56398c2f84a8164cf36762d9c2"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/column-authority.json",
+      "snapshot": "snapshots/10-column-authority.json",
+      "bytes": 11841127,
+      "sha256": "e786b29985ddd0a553622aa1adaf4029543d2f0abb395a5ac7dae64b3dd21554"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "snapshot": "snapshots/11-reference-template-inventory.csv",
+      "bytes": 33498,
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb"
+    },
+    {
+      "source": "specs/001-platform-security-hardening/spec.md",
+      "snapshot": "snapshots/12-spec.md",
+      "bytes": 27314,
+      "sha256": "47704c411b72195a2a4f8b832b07b30d90b00673647afe50d8ac98b917939d99"
+    }
+  ],
+  "external_sources_checked": [
+    "https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable.html",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#session-expiration"
+  ],
+  "validation": "Byte identity and prefix preservation only; no ordinary prose tests or application runtime checks"
+}

@@ -1,0 +1,89 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Monthly availability accounting definition and single acceptance-row refinement; no runtime or adoption",
+  "inputs": [
+    {
+      "source": "docs/phase-1-architecture/contracts/QA_RECOVERY.md",
+      "snapshot": "output/research/availability-measurement-2026-10-08/review-snapshots/00-QA_RECOVERY.md",
+      "bytes": 21918,
+      "sha256": "2b8cc32639c45cb40596b6c4fac9e10623cf382e930741fca5ccde3fabfbb39d"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/acceptance-matrix.csv",
+      "snapshot": "output/research/availability-measurement-2026-10-08/review-snapshots/01-acceptance-matrix.csv",
+      "bytes": 4444,
+      "sha256": "242363f756c054049326d746bc91488d5062b80950740faaef75c47366df24eb"
+    },
+    {
+      "source": "docs/phase-1-foundation/01-product-requirements.md",
+      "snapshot": "output/research/availability-measurement-2026-10-08/review-snapshots/02-01-product-requirements.md",
+      "bytes": 70783,
+      "sha256": "4db9d504695e7791705c41fe70fd0aea0467338d95acb5b6732bf6927893ac2e"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "output/research/availability-measurement-2026-10-08/review-snapshots/03-DECISIONS.md",
+      "bytes": 86352,
+      "sha256": "dd31d6026aedd1a03e966e055724b2f02783147291525f1740341848837eed74"
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "output/research/availability-measurement-2026-10-08/review-snapshots/04-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "output/research/availability-measurement-2026-10-08/review-snapshots/05-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "docs/phase-1-architecture/ARCHITECTURE.md",
+      "snapshot": "output/research/availability-measurement-2026-10-08/review-snapshots/06-ARCHITECTURE.md",
+      "bytes": 10762,
+      "sha256": "44717f73094e5ffae24758c09cc710e3d0282b371c2fce23d5098cf36cfb6363"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PROVIDER_SCOPE_ADDENDUM.md",
+      "snapshot": "output/research/availability-measurement-2026-10-08/review-snapshots/07-PROVIDER_SCOPE_ADDENDUM.md",
+      "bytes": 4828,
+      "sha256": "4db6222615c5309c8802cb16ceea94dfe0f516db77246159f750a843f97f2dbd"
+    },
+    {
+      "source": "docs/phase-1-ux-architecture/FLOWS.md",
+      "snapshot": "output/research/availability-measurement-2026-10-08/review-snapshots/08-FLOWS.md",
+      "bytes": 29631,
+      "sha256": "168015a15b51c03cdf1f1532572d7b45c397708651c579c3e1e2025d5ee27097"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "output/research/availability-measurement-2026-10-08/review-snapshots/09-SECURITY_PRIVACY_CONTRACT.md",
+      "bytes": 70442,
+      "sha256": "1fe2469d7a88897cbe07080650f0971efae4b45ab8f007d05eb315875cb7da7c"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "snapshot": "output/research/availability-measurement-2026-10-08/review-snapshots/10-DATA_CONTRACT.md",
+      "bytes": 45770,
+      "sha256": "073878dcce6e2beb6477ec6fbe3162382554cc5875569e33a60e58ef34e23828"
+    },
+    {
+      "source": "specs/002-testing-and-monitoring/spec.md",
+      "snapshot": "output/research/availability-measurement-2026-10-08/review-snapshots/11-spec.md",
+      "bytes": 30459,
+      "sha256": "3afdbd73217090da8980ecddad69ce1c447879f1ee00f90f1db47ee2ebb3548e"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/interface-catalog.csv",
+      "snapshot": "output/research/availability-measurement-2026-10-08/review-snapshots/12-interface-catalog.csv",
+      "bytes": 9367,
+      "sha256": "42018a3e5cc6c1edf488c392b0349688a92b2cab5a8f50e717f1bca84a70a49c"
+    }
+  ],
+  "primary_sources": [
+    "https://sre.google/workbook/implementing-slos/",
+    "https://sre.google/workbook/monitoring/"
+  ]
+}

@@ -1,0 +1,821 @@
+{
+  "scope": "48 exact pixel crops from five native images; ordered request/tile mapping",
+  "crops": [
+    {
+      "ordinal": 0,
+      "source_id": "34:1895",
+      "clone_id": "34:2555",
+      "state": "STATE-LOADING",
+      "surface": "light",
+      "sheet": 0,
+      "bounds": [
+        24,
+        24,
+        320,
+        322
+      ],
+      "file": "view-00.png",
+      "sha256": "2ef709cdada529f16edd34734dcab9203888e1a1906ff798861da1e810e7751d",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 1,
+      "source_id": "34:1906",
+      "clone_id": "34:2561",
+      "state": "STATE-DEGRADED",
+      "surface": "light",
+      "sheet": 0,
+      "bounds": [
+        368,
+        24,
+        320,
+        362
+      ],
+      "file": "view-01.png",
+      "sha256": "a8872faf5704c1c2462562793328d316108481986e081b6b6f4632879943c248",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 2,
+      "source_id": "34:1917",
+      "clone_id": "34:2567",
+      "state": "STATE-EMPTY",
+      "surface": "light",
+      "sheet": 0,
+      "bounds": [
+        712,
+        24,
+        320,
+        322
+      ],
+      "file": "view-02.png",
+      "sha256": "0dcc3cc9a75d5ceda84a2bcf535d3706a42ab1587f0fd52342471854cac1c03b",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 3,
+      "source_id": "34:1928",
+      "clone_id": "34:2573",
+      "state": "STATE-PENDING",
+      "surface": "light",
+      "sheet": 0,
+      "bounds": [
+        1056,
+        24,
+        320,
+        346
+      ],
+      "file": "view-03.png",
+      "sha256": "8c4d93d5fd64c0e4e14fd6640e7787039a8a233982f5e3fe557c1db80704e9f2",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 4,
+      "source_id": "34:1939",
+      "clone_id": "34:2579",
+      "state": "STATE-UNAVAILABLE",
+      "surface": "light",
+      "sheet": 0,
+      "bounds": [
+        1400,
+        24,
+        320,
+        322
+      ],
+      "file": "view-04.png",
+      "sha256": "34adc9f0547ba35e27cb9cbb40ebe86878cc2f8d664bd12dc2b69e4c1e92f19c",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 5,
+      "source_id": "34:1950",
+      "clone_id": "34:2585",
+      "state": "STATE-OFFLINE",
+      "surface": "light",
+      "sheet": 0,
+      "bounds": [
+        1744,
+        24,
+        320,
+        370
+      ],
+      "file": "view-05.png",
+      "sha256": "8221d4ab8589ac7d2d1e73c6f563182b8818789c58550d2eebf2d39707f86fac",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 6,
+      "source_id": "34:1961",
+      "clone_id": "34:2591",
+      "state": "STATE-ERROR",
+      "surface": "light",
+      "sheet": 0,
+      "bounds": [
+        2088,
+        24,
+        320,
+        370
+      ],
+      "file": "view-06.png",
+      "sha256": "2aefb152b258bbdcc948e606b886ddc398776abd2eb31de052c81792412f2366",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 7,
+      "source_id": "34:1972",
+      "clone_id": "34:2597",
+      "state": "STATE-PERMISSION-DENIED",
+      "surface": "light",
+      "sheet": 0,
+      "bounds": [
+        2432,
+        24,
+        320,
+        386
+      ],
+      "file": "view-07.png",
+      "sha256": "f7ce6857b0dc7fe6534c458d4c1d16d7ca25c1f8b326b4f8ed7f6cf6030f6438",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 8,
+      "source_id": "34:1983",
+      "clone_id": "34:2603",
+      "state": "STATE-SESSION-EXPIRED",
+      "surface": "light",
+      "sheet": 0,
+      "bounds": [
+        2776,
+        24,
+        320,
+        370
+      ],
+      "file": "view-08.png",
+      "sha256": "225a45f2e979fd605720c9ca6a45c283e91de47758a6197d8c4fda1bd885dc2d",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 9,
+      "source_id": "34:1995",
+      "clone_id": "34:2609",
+      "state": "STATE-STALE",
+      "surface": "light",
+      "sheet": 0,
+      "bounds": [
+        3120,
+        24,
+        320,
+        346
+      ],
+      "file": "view-09.png",
+      "sha256": "0e5f53773f231f0fcecf859b2a7adbd26282c233100ac5ae16ef84c4371b5432",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 10,
+      "source_id": "34:2006",
+      "clone_id": "34:2617",
+      "state": "STATE-CONFLICT",
+      "surface": "light",
+      "sheet": 1,
+      "bounds": [
+        24,
+        24,
+        320,
+        346
+      ],
+      "file": "view-10.png",
+      "sha256": "53061e240b49ded0910da138581fea827f6d625a8105469c6d89d9b1655d9957",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 11,
+      "source_id": "34:2017",
+      "clone_id": "34:2623",
+      "state": "STATE-ASSET-FAILURE",
+      "surface": "light",
+      "sheet": 1,
+      "bounds": [
+        368,
+        24,
+        320,
+        410
+      ],
+      "file": "view-11.png",
+      "sha256": "42c717727bc24a991d5367d914f141ed65b1a7a19113d8d7dfdb90f129301f90",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 12,
+      "source_id": "34:2028",
+      "clone_id": "34:2629",
+      "state": "STATE-CHECKSUM-MISMATCH",
+      "surface": "light",
+      "sheet": 1,
+      "bounds": [
+        712,
+        24,
+        320,
+        370
+      ],
+      "file": "view-12.png",
+      "sha256": "4b0c063f3452b529d8ae79fbd30c04fd8da9e1e7ae1d0dc3ab1bf21ce6dce93c",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 13,
+      "source_id": "34:2039",
+      "clone_id": "34:2635",
+      "state": "STATE-FOCUS",
+      "surface": "light",
+      "sheet": 1,
+      "bounds": [
+        1056,
+        24,
+        320,
+        410
+      ],
+      "file": "view-13.png",
+      "sha256": "b1c158c955164a694e7f9c1bfe2a814b432f8616a697ce930110dc5d409c3a26",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 14,
+      "source_id": "34:2051",
+      "clone_id": "34:2641",
+      "state": "STATE-STREAM-CHANGED",
+      "surface": "light",
+      "sheet": 1,
+      "bounds": [
+        1400,
+        24,
+        320,
+        1330
+      ],
+      "file": "view-14.png",
+      "sha256": "bea3c1801cf85f7ed671208635687a781ffea44ceefcae416c097a72d5b88c60",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 15,
+      "source_id": "34:2080",
+      "clone_id": "34:2664",
+      "state": "STATE-PREFERENCE-WRITE-FAILED",
+      "surface": "light",
+      "sheet": 1,
+      "bounds": [
+        1744,
+        24,
+        320,
+        1466
+      ],
+      "file": "view-15.png",
+      "sha256": "004c97de838b9159380f4fc28c91cefd86e498721ffafb4149c94a15d93a5064",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 16,
+      "source_id": "34:2109",
+      "clone_id": "34:2687",
+      "state": "STATE-LOADING",
+      "surface": "dark",
+      "sheet": 1,
+      "bounds": [
+        2088,
+        24,
+        320,
+        322
+      ],
+      "file": "view-16.png",
+      "sha256": "e820b6a629638ff94808e1b3110d366cc195a4a7a02bb3352b53f871473522bf",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 17,
+      "source_id": "34:2120",
+      "clone_id": "34:2693",
+      "state": "STATE-DEGRADED",
+      "surface": "dark",
+      "sheet": 1,
+      "bounds": [
+        2432,
+        24,
+        320,
+        362
+      ],
+      "file": "view-17.png",
+      "sha256": "578731d5c3c51db1398360d842ace07c3b082c2ed3e25dc5ed3e96af0df917a0",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 18,
+      "source_id": "34:2131",
+      "clone_id": "34:2699",
+      "state": "STATE-EMPTY",
+      "surface": "dark",
+      "sheet": 1,
+      "bounds": [
+        2776,
+        24,
+        320,
+        322
+      ],
+      "file": "view-18.png",
+      "sha256": "f03a488c2146327e0be7af5c1c1322b425e6af462d99353b186afca6f6a6a4ff",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 19,
+      "source_id": "34:2142",
+      "clone_id": "34:2705",
+      "state": "STATE-PENDING",
+      "surface": "dark",
+      "sheet": 1,
+      "bounds": [
+        3120,
+        24,
+        320,
+        346
+      ],
+      "file": "view-19.png",
+      "sha256": "a7c5c2bf88fcd013c8f38e8864858398e76ae866c1c49b76280037eb7e0bf030",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 20,
+      "source_id": "34:2153",
+      "clone_id": "34:2713",
+      "state": "STATE-UNAVAILABLE",
+      "surface": "dark",
+      "sheet": 2,
+      "bounds": [
+        24,
+        24,
+        320,
+        322
+      ],
+      "file": "view-20.png",
+      "sha256": "e11734a27c516407e561c7417450108f43c6946b23432592998e1c32652dfd65",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 21,
+      "source_id": "34:2164",
+      "clone_id": "34:2719",
+      "state": "STATE-OFFLINE",
+      "surface": "dark",
+      "sheet": 2,
+      "bounds": [
+        368,
+        24,
+        320,
+        370
+      ],
+      "file": "view-21.png",
+      "sha256": "be3005012f1e9b959b01b95a908536ddba2010bd5f51213c4eb9bf5200e9be92",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 22,
+      "source_id": "34:2175",
+      "clone_id": "34:2725",
+      "state": "STATE-ERROR",
+      "surface": "dark",
+      "sheet": 2,
+      "bounds": [
+        712,
+        24,
+        320,
+        370
+      ],
+      "file": "view-22.png",
+      "sha256": "2228599d5dad66093ecb5e7305dc6482403512dc1aea8dcc10e8827115b21057",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 23,
+      "source_id": "34:2186",
+      "clone_id": "34:2731",
+      "state": "STATE-PERMISSION-DENIED",
+      "surface": "dark",
+      "sheet": 2,
+      "bounds": [
+        1056,
+        24,
+        320,
+        386
+      ],
+      "file": "view-23.png",
+      "sha256": "2848f8957da4480de1af20aced4888a5f83aa09fea3f7ca972a5d5be53e9cac3",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 24,
+      "source_id": "34:2197",
+      "clone_id": "34:2737",
+      "state": "STATE-SESSION-EXPIRED",
+      "surface": "dark",
+      "sheet": 2,
+      "bounds": [
+        1400,
+        24,
+        320,
+        370
+      ],
+      "file": "view-24.png",
+      "sha256": "8b8539b66a6605b9906d1139735cd064f5411a909e5b936cf0e49133cfcd90bb",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 25,
+      "source_id": "34:2209",
+      "clone_id": "34:2743",
+      "state": "STATE-STALE",
+      "surface": "dark",
+      "sheet": 2,
+      "bounds": [
+        1744,
+        24,
+        320,
+        346
+      ],
+      "file": "view-25.png",
+      "sha256": "16dbaa4c853d0d9ac5a62f5c8e05f2f2ad466d7b971b9d7a43b0dcb1d460afe4",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 26,
+      "source_id": "34:2220",
+      "clone_id": "34:2749",
+      "state": "STATE-CONFLICT",
+      "surface": "dark",
+      "sheet": 2,
+      "bounds": [
+        2088,
+        24,
+        320,
+        346
+      ],
+      "file": "view-26.png",
+      "sha256": "7868811e2da67e5e1ec17bb824e53d229924fbf78cc4e6db83472e5e48c21094",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 27,
+      "source_id": "34:2231",
+      "clone_id": "34:2755",
+      "state": "STATE-ASSET-FAILURE",
+      "surface": "dark",
+      "sheet": 2,
+      "bounds": [
+        2432,
+        24,
+        320,
+        410
+      ],
+      "file": "view-27.png",
+      "sha256": "29b34e76bcabf574d6da17d92517864dd2e0bb8b398f48826f46401a25db6768",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 28,
+      "source_id": "34:2242",
+      "clone_id": "34:2761",
+      "state": "STATE-CHECKSUM-MISMATCH",
+      "surface": "dark",
+      "sheet": 2,
+      "bounds": [
+        2776,
+        24,
+        320,
+        370
+      ],
+      "file": "view-28.png",
+      "sha256": "b50cf279e9ecb0ca1990dfc672e0de19267099788ecee53e74fafe8dcccbd2c3",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 29,
+      "source_id": "34:2253",
+      "clone_id": "34:2767",
+      "state": "STATE-FOCUS",
+      "surface": "dark",
+      "sheet": 2,
+      "bounds": [
+        3120,
+        24,
+        320,
+        410
+      ],
+      "file": "view-29.png",
+      "sha256": "cfd79ebd20272d29357ed2faed1e56e035d182b2fe3c2c45d657752613ce27dd",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 30,
+      "source_id": "34:2265",
+      "clone_id": "34:2775",
+      "state": "STATE-STREAM-CHANGED",
+      "surface": "dark",
+      "sheet": 3,
+      "bounds": [
+        24,
+        24,
+        320,
+        1330
+      ],
+      "file": "view-30.png",
+      "sha256": "3b38cf84a6929d7c012d31325e642da46abe72c8d39a325296392580508b6b28",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 31,
+      "source_id": "34:2294",
+      "clone_id": "34:2798",
+      "state": "STATE-PREFERENCE-WRITE-FAILED",
+      "surface": "dark",
+      "sheet": 3,
+      "bounds": [
+        368,
+        24,
+        320,
+        1466
+      ],
+      "file": "view-31.png",
+      "sha256": "ec189bee8ee79117e2056176c236f1c6e6a2f9b8562ae4ca0885a6f77d885631",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 32,
+      "source_id": "34:2323",
+      "clone_id": "34:2821",
+      "state": "STATE-LOADING",
+      "surface": "forced-colours-specimen",
+      "sheet": 3,
+      "bounds": [
+        712,
+        24,
+        320,
+        322
+      ],
+      "file": "view-32.png",
+      "sha256": "608b4df95473b4565c1639a9c8863f2c0bad4ce415e5756fe72255cbfb492fdf",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 33,
+      "source_id": "34:2335",
+      "clone_id": "34:2827",
+      "state": "STATE-DEGRADED",
+      "surface": "forced-colours-specimen",
+      "sheet": 3,
+      "bounds": [
+        1056,
+        24,
+        320,
+        362
+      ],
+      "file": "view-33.png",
+      "sha256": "8126d0341e7822d8050a626faaa43c8052bf49ebab89294057ed10e2b15d24f9",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 34,
+      "source_id": "34:2347",
+      "clone_id": "34:2833",
+      "state": "STATE-EMPTY",
+      "surface": "forced-colours-specimen",
+      "sheet": 3,
+      "bounds": [
+        1400,
+        24,
+        320,
+        322
+      ],
+      "file": "view-34.png",
+      "sha256": "a3c3a5cd8f3659ee3627690d3fb5ea54dc7a61799c20588f7aa414e730393c3a",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 35,
+      "source_id": "34:2359",
+      "clone_id": "34:2839",
+      "state": "STATE-PENDING",
+      "surface": "forced-colours-specimen",
+      "sheet": 3,
+      "bounds": [
+        1744,
+        24,
+        320,
+        346
+      ],
+      "file": "view-35.png",
+      "sha256": "0efd648e9b64cc86a3e095582801b3d93f404e8585b7631fd46238b5df8247d6",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 36,
+      "source_id": "34:2371",
+      "clone_id": "34:2845",
+      "state": "STATE-UNAVAILABLE",
+      "surface": "forced-colours-specimen",
+      "sheet": 3,
+      "bounds": [
+        2088,
+        24,
+        320,
+        322
+      ],
+      "file": "view-36.png",
+      "sha256": "6b93f062e50d46b3c17b13b0fc84bffe6a1e17d7c90ebe9ee6ac803db79de603",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 37,
+      "source_id": "34:2383",
+      "clone_id": "34:2851",
+      "state": "STATE-OFFLINE",
+      "surface": "forced-colours-specimen",
+      "sheet": 3,
+      "bounds": [
+        2432,
+        24,
+        320,
+        370
+      ],
+      "file": "view-37.png",
+      "sha256": "9af5099908256b3e1d76e128651fc44f505267ecac9ecb23e0ec83a7094fc7c7",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 38,
+      "source_id": "34:2395",
+      "clone_id": "34:2857",
+      "state": "STATE-ERROR",
+      "surface": "forced-colours-specimen",
+      "sheet": 3,
+      "bounds": [
+        2776,
+        24,
+        320,
+        370
+      ],
+      "file": "view-38.png",
+      "sha256": "9aa6e8666ed03bada1684575411e642dbc08b8a0025e0a63fc8ce3d415b08cbe",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 39,
+      "source_id": "34:2407",
+      "clone_id": "34:2863",
+      "state": "STATE-PERMISSION-DENIED",
+      "surface": "forced-colours-specimen",
+      "sheet": 3,
+      "bounds": [
+        3120,
+        24,
+        320,
+        386
+      ],
+      "file": "view-39.png",
+      "sha256": "9c649a58ec48a94bee9ca3d7c1606fbb83675a3e746964baa84ac1cbe7bbc71f",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 40,
+      "source_id": "34:2419",
+      "clone_id": "34:2871",
+      "state": "STATE-SESSION-EXPIRED",
+      "surface": "forced-colours-specimen",
+      "sheet": 4,
+      "bounds": [
+        24,
+        24,
+        320,
+        370
+      ],
+      "file": "view-40.png",
+      "sha256": "6ae5ba4a0e40581a8312bf4228eb44e7096c279a9cb05812ae9556b22a9a62d8",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 41,
+      "source_id": "34:2432",
+      "clone_id": "34:2877",
+      "state": "STATE-STALE",
+      "surface": "forced-colours-specimen",
+      "sheet": 4,
+      "bounds": [
+        368,
+        24,
+        320,
+        346
+      ],
+      "file": "view-41.png",
+      "sha256": "04e0439c31d6a0f0db57c272ed1ef02db0ffd40d925ff36a543bfe9fb8a8c054",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 42,
+      "source_id": "34:2444",
+      "clone_id": "34:2883",
+      "state": "STATE-CONFLICT",
+      "surface": "forced-colours-specimen",
+      "sheet": 4,
+      "bounds": [
+        712,
+        24,
+        320,
+        346
+      ],
+      "file": "view-42.png",
+      "sha256": "22a4450d0f5892196b3646e714955e6c13b04f36e43c74b4d6f345a4a3153ed4",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 43,
+      "source_id": "34:2456",
+      "clone_id": "34:2889",
+      "state": "STATE-ASSET-FAILURE",
+      "surface": "forced-colours-specimen",
+      "sheet": 4,
+      "bounds": [
+        1056,
+        24,
+        320,
+        410
+      ],
+      "file": "view-43.png",
+      "sha256": "2921cbd91ce0a7e2364ac0d63d843a0ce2ef0ef13a037f8873df24a5213bde63",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 44,
+      "source_id": "34:2468",
+      "clone_id": "34:2895",
+      "state": "STATE-CHECKSUM-MISMATCH",
+      "surface": "forced-colours-specimen",
+      "sheet": 4,
+      "bounds": [
+        1400,
+        24,
+        320,
+        370
+      ],
+      "file": "view-44.png",
+      "sha256": "9c764492175bcac9a7898526438978b5d7a1e01012ad4f8a4436d2f60cb17327",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 45,
+      "source_id": "34:2480",
+      "clone_id": "34:2901",
+      "state": "STATE-FOCUS",
+      "surface": "forced-colours-specimen",
+      "sheet": 4,
+      "bounds": [
+        1744,
+        24,
+        320,
+        410
+      ],
+      "file": "view-45.png",
+      "sha256": "f06c2dfade8ab76d9a4c1ea85f3c736761dc8efb0ef95fe8dc2a9fe9a340a2c9",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 46,
+      "source_id": "34:2493",
+      "clone_id": "34:2907",
+      "state": "STATE-STREAM-CHANGED",
+      "surface": "forced-colours-specimen",
+      "sheet": 4,
+      "bounds": [
+        2088,
+        24,
+        320,
+        1330
+      ],
+      "file": "view-46.png",
+      "sha256": "15d2e7cc5622c4d840570beff660cd85a201683d151c952ea5e0cace2f0124b4",
+      "pixel_equal_to_sheet_region": true
+    },
+    {
+      "ordinal": 47,
+      "source_id": "34:2523",
+      "clone_id": "34:2930",
+      "state": "STATE-PREFERENCE-WRITE-FAILED",
+      "surface": "forced-colours-specimen",
+      "sheet": 4,
+      "bounds": [
+        2432,
+        24,
+        320,
+        1466
+      ],
+      "file": "view-47.png",
+      "sha256": "f95cf716e254c16333b75da5c4948bb87d413e34a114fe35e28841b1c849916e",
+      "pixel_equal_to_sheet_region": true
+    }
+  ]
+}

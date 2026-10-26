@@ -1,0 +1,12 @@
+const fs=require('node:fs'),path=require('node:path'),{createRequire}=require('node:module');
+const root=__dirname, candidate=path.resolve(process.argv[2]);
+const requireCandidate=createRequire(path.join(candidate,'package.json'));
+const ts=requireCandidate('typescript'), semver=requireCandidate('semver');
+const cfg=path.join(root,'valid-component','tsconfig.json');
+const input=ts.readConfigFile(cfg,ts.sys.readFile);
+const parsed=ts.parseJsonConfigFileContent(input.config,ts.sys,path.dirname(cfg));
+const program=ts.createProgram(parsed.fileNames,parsed.options);
+const react=JSON.parse(fs.readFileSync(path.join(root,'node_modules/@types/react/package.json')));
+const dom=JSON.parse(fs.readFileSync(path.join(root,'node_modules/@types/react-dom/package.json')));
+const css=JSON.parse(fs.readFileSync(path.join(root,'node_modules/csstype/package.json')));
+process.stdout.write(JSON.stringify({api_version:ts.version,semver_version:requireCandidate('semver/package.json').version,range_checks:[{from:react.name,to:css.name,range:react.dependencies.csstype,version:css.version,satisfied:semver.satisfies(css.version,react.dependencies.csstype)},{from:dom.name,to:react.name,range:dom.peerDependencies['@types/react'],version:react.version,satisfied:semver.satisfies(react.version,dom.peerDependencies['@types/react'])}],source_files:program.getSourceFiles().map(x=>x.fileName),limits:'API6 source graph and declared range checks only, no native LSP/runtime/build or full provenance'},null,2)+'\n');

@@ -1,0 +1,53 @@
+function makeDeprecatedRule(version) {
+    return {
+        meta: {
+            type: 'suggestion',
+            docs: {
+                description: `Deprecated: this rule has been removed in ${version}.`,
+            },
+            schema: [],
+            deprecated: true,
+        },
+        create() {
+            return {};
+        },
+    };
+}
+const rules = Object.assign(Object.assign({ 'exhaustive-deps': rule$1, 'rules-of-hooks': rule }, Object.fromEntries(Object.entries(allRules).map(([name, config]) => [name, config.rule]))), { 'component-hook-factories': makeDeprecatedRule('7.1.0') });
+const basicRuleConfigs = {
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+};
+const recommendedCompilerRuleConfigs = Object.fromEntries(Object.entries(recommendedRules).map(([name, ruleConfig]) => {
+    return [
+        `react-hooks/${name}`,
+        mapErrorSeverityToESlint(ruleConfig.severity),
+    ];
+}));
+const recommendedLatestCompilerRuleConfigs = Object.fromEntries(Object.entries(recommendedLatestRules).map(([name, ruleConfig]) => {
+    return [
+        `react-hooks/${name}`,
+        mapErrorSeverityToESlint(ruleConfig.severity),
+    ];
+}));
+const recommendedRuleConfigs = Object.assign(Object.assign({}, basicRuleConfigs), recommendedCompilerRuleConfigs);
+const recommendedLatestRuleConfigs = Object.assign(Object.assign({}, basicRuleConfigs), recommendedLatestCompilerRuleConfigs);
+const plugins = ['react-hooks'];
+const configs = {
+    recommended: {
+        plugins,
+        rules: recommendedRuleConfigs,
+    },
+    'recommended-latest': {
+        plugins,
+        rules: recommendedLatestRuleConfigs,
+    },
+    flat: {},
+};
+const plugin = {
+    meta: {
+        name: 'eslint-plugin-react-hooks',
+        version: '7.0.0',
+    },
+    rules,
+    

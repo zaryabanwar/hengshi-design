@@ -1,0 +1,281 @@
+[
+  {
+    "name": "@napi-rs/wasm-runtime",
+    "version": "1.1.4",
+    "registry_url": "https://registry.npmjs.org/@napi-rs%2fwasm-runtime/1.1.4",
+    "metadata": {
+      "bugs": {
+        "url": "https://github.com/napi-rs/napi-rs/issues"
+      },
+      "dist": {
+        "shasum": "a46bbfedc29751b7170c5d23bc1d8ee8c7e3c1e1",
+        "tarball": "https://registry.npmjs.org/@napi-rs/wasm-runtime/-/wasm-runtime-1.1.4.tgz",
+        "fileCount": 6,
+        "integrity": "sha512-3NQNNgA1YSlJb/kMH1ildASP9HW7/7kYnRI2szWJaofaS1hWmbGI4H+d3+22aGzXXN9IJ+n+GiFVcGipJP18ow==",
+        "signatures": [
+          {
+            "sig": "MEUCIBkyvbAINR9mIX2zILS+q5j7NpjltvDcY5llz+eRdxkbAiEA7TgHyo981dIpvBSQ4+yelZG3tvix5rzjNLULHym7tkY=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@napi-rs%2fwasm-runtime@1.1.4",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 6251929
+      },
+      "name": "@napi-rs/wasm-runtime",
+      "type": "module",
+      "author": {
+        "url": "https://github.com/Brooooooklyn",
+        "name": "LongYinan"
+      },
+      "exports": {
+        ".": {
+          "import": "./runtime.js",
+          "require": "./runtime.cjs"
+        },
+        "./fs": {
+          "import": "./dist/fs.js"
+        }
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/Brooooooklyn",
+        "type": "github"
+      },
+      "gitHead": "d5c3c43b45393f99ba151770f97bd472de533671",
+      "license": "MIT",
+      "scripts": {
+        "test": "node --test",
+        "build": "rollup -c rollup.config.js"
+      },
+      "_npmUser": {
+        "name": "GitHub Actions",
+        "email": "npm-oidc-no-reply@github.com",
+        "trustedPublisher": {
+          "id": "github",
+          "oidcConfigId": "oidc:c47c19cd-f258-4286-9041-9000dd20acb2"
+        }
+      },
+      "homepage": "https://napi.rs/",
+      "repository": {
+        "url": "git+https://github.com/napi-rs/napi-rs.git",
+        "type": "git",
+        "directory": "wasm-runtime"
+      },
+      "_npmVersion": "11.12.1",
+      "description": "Runtime and polyfill for wasm targets",
+      "directories": {},
+      "maintainers": [
+        {
+          "name": "broooooklyn",
+          "email": "lynweklm@gmail.com"
+        },
+        {
+          "name": "forehalo",
+          "email": "forehalo@gmail.com"
+        }
+      ],
+      "_nodeVersion": "24.14.1",
+      "dependencies": {
+        "@tybys/wasm-util": "^0.10.1"
+      },
+      "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "memfs": "^4.50.0",
+        "tslib": "^2.8.1",
+        "buffer": "^6.0.3",
+        "events": "^3.3.0",
+        "rollup": "^4.53.1",
+        "process": "^0.11.10",
+        "path-browserify": "^1.0.1",
+        "readable-stream": "^4.7.0",
+        "@rollup/plugin-json": "^6.1.0",
+        "@rollup/plugin-alias": "^6.0.0",
+        "@rollup/plugin-inject": "^5.0.5",
+        "@rollup/plugin-replace": "^6.0.3",
+        "node-inspect-extracted": "^3.2.2",
+        "@rollup/plugin-commonjs": "^29.0.0",
+        "@rollup/plugin-node-resolve": "^16.0.3",
+        "rollup-plugin-polyfill-node": "^0.13.0"
+      },
+      "peerDependencies": {
+        "@emnapi/core": "^1.7.1",
+        "@emnapi/runtime": "^1.7.1"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/wasm-runtime_1.1.4_1776262975084_0.3173608966032473",
+        "host": "s3://npm-registry-packages-npm-production"
+      },
+      "_id": "@napi-rs/wasm-runtime@1.1.4",
+      "version": "1.1.4"
+    },
+    "integrity_verified": true,
+    "license_files": {},
+    "matching_parent_bundle_files": [
+      "dist/fs-proxy.cjs",
+      "runtime.cjs",
+      "fs-proxy.js",
+      "dist/fs.js",
+      "runtime.js",
+      "package.json"
+    ],
+    "different_parent_bundle_files": [],
+    "direct_files_absent_from_parent": [],
+    "package_code_executed": false
+  },
+  {
+    "name": "@tybys/wasm-util",
+    "version": "0.10.2",
+    "registry_url": "https://registry.npmjs.org/@tybys%2fwasm-util/0.10.2",
+    "metadata": {
+      "bugs": {
+        "url": "https://github.com/toyobayashi/wasm-util/issues"
+      },
+      "dist": {
+        "shasum": "12b3a1b33db1f9cad4ddff1f604ab7dd00bf464e",
+        "tarball": "https://registry.npmjs.org/@tybys/wasm-util/-/wasm-util-0.10.2.tgz",
+        "fileCount": 39,
+        "integrity": "sha512-RoBvJ2X0wuKlWFIjrwffGw1IqZHKQqzIchKaadZZfnNpsAYp2mM0h36JtPCjNDAHGgYez/15uMBpfGwchhiMgg==",
+        "signatures": [
+          {
+            "sig": "MEQCIFAsKh7dI7l6rVFO0IEqhgKhfHqpdjPJ5/dnpFswXhocAiAWOtluz5vwT3HEA/nZEdMQ2+wpyU7VBZZSYIKsEM9O0A==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 812994
+      },
+      "main": "./lib/cjs/index.js",
+      "name": "@tybys/wasm-util",
+      "types": "./dist/wasm-util.d.ts",
+      "author": {
+        "name": "toyobayashi"
+      },
+      "module": "./dist/wasm-util.esm-bundler.js",
+      "exports": {
+        ".": {
+          "types": "./dist/wasm-util.d.ts",
+          "import": "./lib/mjs/index.mjs",
+          "module": "./dist/wasm-util.esm-bundler.js",
+          "require": "./lib/cjs/index.js"
+        }
+      },
+      "gitHead": "cded8e894fe40c7c6200a3fdb2bd33e328b7bb65",
+      "license": "MIT",
+      "scripts": {
+        "lint": "eslint ./src/**/*.{ts,js} --fix",
+        "test": "jest",
+        "build": "tsgo build",
+        "watch": "tsgo watch",
+        "prepare": "npm run build"
+      },
+      "_npmUser": {
+        "name": "toyobayashi",
+        "email": "lifenglin314@outlook.com"
+      },
+      "homepage": "https://github.com/toyobayashi/wasm-util#readme",
+      "keywords": [
+        "wasm",
+        "webassembly",
+        "wasi",
+        "polyfill"
+      ],
+      "repository": {
+        "url": "git+https://github.com/toyobayashi/wasm-util.git",
+        "type": "git"
+      },
+      "_npmVersion": "11.6.2",
+      "description": "WASI polyfill for browser and some wasm util",
+      "directories": {},
+      "maintainers": [
+        {
+          "name": "toyobayashi",
+          "email": "lifenglin314@outlook.com"
+        }
+      ],
+      "_nodeVersion": "24.12.0",
+      "dependencies": {
+        "tslib": "^2.4.0"
+      },
+      "publishConfig": {
+        "access": "public"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "mocha": "^10.1.0",
+        "eslint": "^8.25.0",
+        "ts-node": "^10.9.1",
+        "typescript": "~4.8.3",
+        "@tybys/tsgo": "^1.1.0",
+        "@types/node": "^14.14.31",
+        "memfs-browser": "^3.4.13000",
+        "eslint-plugin-n": "^15.3.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-promise": "^6.1.0",
+        "@typescript-eslint/parser": "^5.40.1",
+        "@tybys/ts-transform-pure-class": "^0.1.1",
+        "@typescript-eslint/eslint-plugin": "^5.40.1",
+        "@tybys/ts-transform-module-specifier": "^0.0.2",
+        "eslint-config-standard-with-typescript": "^23.0.0"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/wasm-util_0.10.2_1777868229323_0.9384414672017809",
+        "host": "s3://npm-registry-packages-npm-production"
+      },
+      "_id": "@tybys/wasm-util@0.10.2",
+      "version": "0.10.2"
+    },
+    "integrity_verified": true,
+    "license_files": {},
+    "matching_parent_bundle_files": [
+      "lib/cjs/asyncify.js",
+      "lib/cjs/wasi/error.js",
+      "lib/cjs/wasi/fd.js",
+      "lib/cjs/wasi/fs.js",
+      "lib/cjs/index.js",
+      "lib/cjs/wasi/index.js",
+      "lib/cjs/jspi.js",
+      "lib/cjs/load.js",
+      "lib/cjs/memory.js",
+      "lib/cjs/wasi/path.js",
+      "lib/cjs/wasi/preview1.js",
+      "lib/cjs/wasi/rights.js",
+      "lib/cjs/wasi/types.js",
+      "lib/cjs/wasi/util.js",
+      "dist/wasm-util.esm-bundler.js",
+      "dist/wasm-util.esm.js",
+      "dist/wasm-util.esm.min.js",
+      "dist/wasm-util.js",
+      "dist/wasm-util.min.js",
+      "lib/cjs/webassembly.js",
+      "package.json",
+      "dist/tsdoc-metadata.json",
+      "README.md",
+      "lib/mjs/asyncify.mjs",
+      "lib/mjs/wasi/error.mjs",
+      "lib/mjs/wasi/fd.mjs",
+      "lib/mjs/wasi/fs.mjs",
+      "lib/mjs/index.mjs",
+      "lib/mjs/wasi/index.mjs",
+      "lib/mjs/jspi.mjs",
+      "lib/mjs/load.mjs",
+      "lib/mjs/memory.mjs",
+      "lib/mjs/wasi/path.mjs",
+      "lib/mjs/wasi/preview1.mjs",
+      "lib/mjs/wasi/rights.mjs",
+      "lib/mjs/wasi/types.mjs",
+      "lib/mjs/wasi/util.mjs",
+      "lib/mjs/webassembly.mjs",
+      "dist/wasm-util.d.ts"
+    ],
+    "different_parent_bundle_files": [],
+    "direct_files_absent_from_parent": [],
+    "package_code_executed": false
+  }
+]

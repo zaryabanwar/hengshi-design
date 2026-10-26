@@ -1,0 +1,47 @@
+--- DATA_CONTRACT.before.md
+
++++ docs/phase-1-architecture/contracts/DATA_CONTRACT.md
+
+@@ -14,7 +14,17 @@
+
+ matrices at the receipt's exact hashes. The reviewed
+ [contract bytes](../../../output/research/contract-review-reference-reconciliation-2026-10-04/DATA_CONTRACT.pre-status.md)
+-are preserved. This page's review references were reconciled afterward; record
+-responsibilities and invariants were not changed. Exact schemas, mechanisms,
+-retention/legal mapping, founder acceptance and runtime proof remain pending.
++are preserved. That receipt covers its frozen logical proposal and matrices,
++not all later amendments or the entire current file. Separate logical,
++representation and source-binding reviews apply only to their own inspected
++inputs. Unfinished schemas, mechanisms, retention/legal mapping, founder
++acceptance and runtime proof remain pending; an already reviewed closed shape
++does not establish those missing outcomes.
++
++The [public text projection](#public-text-projection-profile-proposal--2026-10-08)
++links its separate logical and closed-encoding receipts below. The new
++[staff principal/session translation](#staff-principalsession-field-binding-proposal--2026-10-17)
++has a [separate pending review packet](../../../output/research/staff-session-data-binding-2026-10-17/review-inputs-v1.json).
++The session protocol's scoped control PASS does not review that data amendment.
++These navigation references grant no physical schema or implementation authority.
+ 
+ ## Common record rules
+@@ -888,6 +898,7 @@
+
+ Status: DOING. The [25-input independent review](../../../output/research/knowledge-extraction-profile-2026-10-08/independent-review-knowledge-extraction-profile-v1.json)
+ gives bounded logical-consistency PASS for this projection and the paired
+-extraction proposal at frozen inputs. Closed encodings, adapters, calibration,
+-actual-boundary enforcement and integrated/founder acceptance remain pending.
++extraction proposal at frozen inputs. The later closed encodings have their
++separate bounded review below; adapters, calibration, actual-boundary enforcement
++and integrated/founder acceptance remain pending.
+ This later receipt-reference update is outside those inspected bytes. This refines DE-01's typed content and the
+ existing publication preparation input. It introduces no public endpoint,
+@@ -973,5 +984,6 @@
+
+ The source-field extraction plan and contextual passage obligations are defined
+ in the [publication extraction profile](PUBLICATION_CONTRACT.md#knowledge-source-extraction-profile-proposal--2026-10-08).
+-Exact closed-schema/editor/renderer adapters and per-document compiled projections
+-need later representation and real-boundary evidence. This proposal creates no
++Concrete editor/renderer adapters and per-document compiled projections still
++need registered-profile and real-boundary evidence; the closed-shape review above
++does not qualify those adapters or outputs. This proposal creates no
+ UI, physical storage, public content, provider transfer or working AI pipeline.

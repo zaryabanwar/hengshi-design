@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed common private process value representations v1",
+  "description": "Definition-only helper module. The whole document rejects instances; consumers must reference a named definition with explicit UUID format assertion. Representation reuse grants no direction, object authority, secrecy, uniqueness, revision admission or checksum authenticity. Existing message schemas remain unchanged.",
+  "not": {},
+  "$defs": {
+    "uuid": {
+      "$ref": "publication-preparation.schema.json#/$defs/uuid",
+      "minLength": 36,
+      "maxLength": 36,
+      "description": "Lowercase hyphenated UUID text, without trimming, braces or URN prefix. UUID generation version, collision handling and issuer remain separate controls; this is not a bearer secret."
+    },
+    "positive_revision": {
+      "$ref": "publication-preparation.schema.json#/$defs/revision",
+      "description": "Positive exact binary64-safe integer as in the existing private preparation representation. Numeric shape does not prove a current revision, raw JSON lexical form or atomic admission."
+    },
+    "sha256": {
+      "$ref": "publication-manifest.schema.json#/$defs/sha256",
+      "minLength": 64,
+      "maxLength": 64,
+      "description": "Lowercase hex representation only. Hash algorithm execution, exact-byte correspondence, eligible source and authority remain independent checks; linkable values keep their privacy class."
+    }
+  }
+}

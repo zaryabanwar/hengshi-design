@@ -1,0 +1,273 @@
+{
+  "schema_version": "independent-source-review-v1",
+  "reviewer_id": "review_refusal_execution_replacement",
+  "producer_id": "root",
+  "reviewed_at_utc": "2026-10-11T04:54:08.333441+00:00",
+  "verdict": "FAIL",
+  "scope": "Exact proposed28 editable responsive viewport references/annotations,capture/cleanup/preservation/report source; unexecuted",
+  "packet": {
+    "path": "output/research/b01-responsive-coverage-2026-10-11/review-inputs.json",
+    "bytes": 6164,
+    "sha256": "217595230fa2258dff7a312ab6b6a0b02a0d9f4dbc858b3d2cde69c4b8705fdb",
+    "input_count": 20
+  },
+  "frozen_inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/00-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/01-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/02-DECISIONS.md",
+      "bytes": 92209,
+      "sha256": "5ac584900987a9d8eb97bd3d459adf3a9d52737e195e1848fc6fddbc70c3fe40"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/03-B01_EXECUTION_BRIEF.md",
+      "bytes": 34786,
+      "sha256": "f1a43250ab4e8950d7777aca913358cff6d60e3e8463ccca605bf84851d2d259"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/04-UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "bytes": 45771,
+      "sha256": "1779fd3cd71f8210815fd7ddbbcd06faa6e5387e2d91584531be6d3806f8cf61"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/evidence-capture-plan.csv",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/05-evidence-capture-plan.csv",
+      "bytes": 8428,
+      "sha256": "4dceafb6d78a859ff5aee23ac78e65180975e72e83ed14a40dc20a90ad4fa0fd"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/06-responsive-state-mode-matrix.csv",
+      "bytes": 33821,
+      "sha256": "deb91325e1c8a543878111883f5b1203ae9e5dc35c00e0d837e927786eaf47e2"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/07-reference-template-inventory.csv",
+      "bytes": 33498,
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/design-batch-plan.csv",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/08-design-batch-plan.csv",
+      "bytes": 28149,
+      "sha256": "0b01be6b01157785cf57dcb5c36a8efbd9254031708f9afad19db52e4f8b32ce"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/component-primitives.csv",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/09-component-primitives.csv",
+      "bytes": 79574,
+      "sha256": "575d1478893c090e9b367e75c2d14cf645e80eeb67bce09c2383c08294fa034a"
+    },
+    {
+      "source": "docs/phase-1-brand-identity/semantic-tokens.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/10-semantic-tokens.json",
+      "bytes": 8434,
+      "sha256": "874bc1df44722358c727cf318e1c7baaa0abf50244aa690ed7a256d1baa6fe3b"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/accessibility/UG-3_CONTROL_COPY_PROPOSAL.md",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/11-UG-3_CONTROL_COPY_PROPOSAL.md",
+      "bytes": 6745,
+      "sha256": "839eb5291d79ac811e927e01ff9b588c192dac8a4c955448c753b4c63ccc3a3b"
+    },
+    {
+      "source": "output/research/b01-navigation-composition-2026-10-06/state-ledger.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/12-state-ledger.json",
+      "bytes": 23436,
+      "sha256": "f078e20b6fca5deec68a8876d83922d03064036aa797fb719cd6cae6d594da2b"
+    },
+    {
+      "source": "output/research/b01-directory-call19-2026-10-08/decoded-design-result.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/13-decoded-design-result.json",
+      "bytes": 72290,
+      "sha256": "71f198783593821c55291a8e9b6a1e896d35f7addb695245c08763dd225e0eda"
+    },
+    {
+      "source": "output/research/b01-recovery-stream-bindings-2026-10-08/attempt24-2026-10-11/receipt.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/14-receipt.json",
+      "bytes": 1969,
+      "sha256": "3dd22beefbd90c251827c5479621a4e7193721c5d39cc6694828cf251c28e0e6"
+    },
+    {
+      "source": "output/research/b01-recovery-stream-bindings-2026-10-08/input.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/15-input.json",
+      "bytes": 13802,
+      "sha256": "0e75c5db5f8145f881ce6552d1ca44a21f253a45b4cdb2812772caa6dad09f14"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/input.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/16-input.json",
+      "bytes": 36211,
+      "sha256": "e922317901f3e8ed9fc88958d22c46409444b5c3e884091f16ff886acd73d1d5"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/figma-template.js",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js",
+      "bytes": 12234,
+      "sha256": "a70b9c2b6a757f0041f20cf490eef14cc153865fce2d6216c408dd07f4590752"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/figma-call.js",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/18-figma-call.js",
+      "bytes": 42706,
+      "sha256": "1ba0dc8e4c90064da10d757a88d93ad696cadd72ba4ff0c83987ab5f27cff353"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/primary-source.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/19-primary-source.json",
+      "bytes": 657,
+      "sha256": "dc6a24d70cca9002809fb5d481c45c808ced953e1c60e9f616125fede5af962b"
+    }
+  ],
+  "all20_frozen_sizes_hashes_verified": true,
+  "live_post_freeze_drift": [
+    {
+      "source": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "frozen_sha256": "f1a43250ab4e8950d7777aca913358cff6d60e3e8463ccca605bf84851d2d259",
+      "live_bytes": 36484,
+      "live_sha256": "58f8cba2b8af7935cd26ed7e70f3422a1515976ca6483ad6edad481d12d80d50",
+      "scope": "Later prepared-only navigation/status additions, outside exact frozen review; no frozen identity refreshed"
+    }
+  ],
+  "findings": [
+    {
+      "id": "RSC-01",
+      "severity": "MEDIUM",
+      "status": "OPEN",
+      "title": "Mutation inventory omits existing source containers touched by cloning",
+      "references": [
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:81",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:100",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/18-figma-call.js:81",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/18-figma-call.js:100"
+      ],
+      "evidence": "Source frames are cloned while owned by21:290,27:381 or29:1512, then the clone is reparented into its new evidence unit. Clone insertion/reparenting transiently changes those existing source-container child lists. base.mutatedNodeIds is only[page.id], and final report spreads this unchanged. Final inherited fingerprint/position/order checks do not make the source containers absent from the mutation inventory.",
+      "impact": "An otherwise successful returned report understates the pre-existing nodes touched by the external write, weakening exact scope and reconciliation accounting. This is an omission in planned receipt representation, not observed source damage.",
+      "requested_correction": "Include the deduplicated source parent IDs21:290,27:381,29:1512 alongside0:1 in mutatedNodeIds; retain created/temporary ID sets and all preservation checks. Freeze and independently review the corrected exact script/packet before execution."
+    }
+  ],
+  "observations": [
+    {
+      "id": "RSC-O1",
+      "result": "PASS",
+      "references": [
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/16-input.json",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/12-state-ledger.json",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/13-decoded-design-result.json",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/14-receipt.json",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/15-input.json",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:41"
+      ],
+      "conclusion": "Twenty unique source IDs match actual navigation/directory/recovery records for ID,name,width,height,parent,state and stream. Eight navigation OPEN sources320/1440,eight directory OPEN sources320/1440,and four ERROR recovery320 sources correspond to twenty planned bindings. All28 references map correctly:12 nominal reflow320,12 proposedlandscape844,and four recoverydesktop1440; names change only declared viewport tokens and all four streams remain explicit."
+    },
+    {
+      "id": "RSC-O2",
+      "result": "PASS",
+      "references": [
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/16-input.json",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/06-responsive-state-mode-matrix.csv",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/07-reference-template-inventory.csv",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/08-design-batch-plan.csv",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/19-primary-source.json",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:84"
+      ],
+      "conclusion": "Viewport profiles match relevant template assignments.844x390 landscape and1280x960-to320x240 nominal400% arithmetic are explicitly local illustrations. Annotations preserve reading/focus/control/context requirements but disclaim actual browser zoom/input/AT/occlusion. This slice coversOPEN navigation/directory andERROR recovery only, not other states/modes/stream-host/profile products. Contracted2x/native/SVG export,restore/EXIT,prototypes,independent accessibility and founder acceptance remain. Primary-source JSON is producer-supplied informative metadata, not a new independently fetched standards receipt."
+    },
+    {
+      "id": "RSC-O3",
+      "result": "PASS_WITH_ACCOUNTING_FINDING",
+      "references": [
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:32",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:37",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:56",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:71",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:82",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:90"
+      ],
+      "conclusion": "File/page/existing-partial-root/source identity guards and current meta/source text font loading precede construction. Source clone content is inherited; capChildren changes geometry of over-wide FRAME/INSTANCE/TEXT descendants in clones, recursing through FRAMEs only; no accepted master/text/control rewrite or dependency is introduced. Horizontal overflow/invalid TEXT/INSTANCE size findings abort; pixels and vertical/content layout still require actual inspection. Existing source-container transient mutations must be reported underRSC01."
+    },
+    {
+      "id": "RSC-O4",
+      "result": "PASS",
+      "references": [
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:96",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:103",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/16-input.json"
+      ],
+      "conclusion": "fontGroups collects fontName membership from styled text segments for TEXT nodes in new frames and packs their IDs. It does not return exact character spans,missing-font state,pixel font identification,annotation/whole-canvas census,editability guarantee or licensed font evidence. Input limitations state those bounds."
+    },
+    {
+      "id": "RSC-O5",
+      "result": "PASS",
+      "references": [
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:108",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:113",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:120",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:126"
+      ],
+      "conclusion": "Five capture groups partition indices0-27 exactly once. Six-column320 groups have nominal2088 width,three-column844/two-row groups2628,and two-column1440/two-row group2952,all under3600. Actual complete unit heights include paired fixture annotations and must pass4800 bound;8000 tracked-ID limit remains. Crop records refer to unit,clone,input index,image index and integer inside-sheet geometry. Actual five-image return,dims,crop mapping/nonoverlap/readability are unexecuted."
+    },
+    {
+      "id": "RSC-O6",
+      "result": "PASS_WITH_ACCOUNTING_FINDING",
+      "references": [
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:4",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:63",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:81",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:105",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:116",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:128",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:134",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:144",
+        "output/research/b01-responsive-coverage-2026-10-11/inputs/17-figma-template.js:146"
+      ],
+      "conclusion": "Created IDs include new root,units,frame-clone descendants and note blocks/text. Temporary sheets,rows and unit-copy descendants are tracked immediately; finally independently attempts every tracked root and catches each failure. Complete report with allcreated/temp/removed sets,font groups,tile records and final flags is guarded at19000bytes before screenshots and after actual cleanup/preservation flag checks. Inherited geometry/text/visibility/opacity,root positions,page order and new-unit geometry/positions/root order checks are bounded; exceptions may retain permanent/uncertain temporary nodes and require inspection. Existing source-parent mutation IDs are the remaining report defect."
+    }
+  ],
+  "isolated_checks": {
+    "exact_embedded_input_template_call_equal": true,
+    "async_vm_Script_parse": "PASS,not invoked",
+    "node_runtime": "v24.14.0",
+    "codec_independent_roundtrip_vectors": 3,
+    "codec_vectors": "mixed singleton/nested instance prefix/noncanonical numeric/literal/duplicate;8000contiguous;28fragmented",
+    "utf8_byte_count_vectors": 3,
+    "utf8_vectors": "multilingual/emoji,percent/newline/tab,lone-surrogate JSON escape",
+    "utf8_matches_Buffer_byteLength": true,
+    "source_receipt_bindings_verified": 20,
+    "reference_mappings_verified": 28,
+    "current_source_pins_verified": 4,
+    "capture_partition_exact": true,
+    "nominal_sheet_widths": [
+      2088,
+      2088,
+      2628,
+      2628,
+      2952
+    ],
+    "producer_Figma_provider_browser_network_code_executed": false
+  },
+  "limits": [
+    "FAIL concernsRSC01 exact mutation accounting; unaffected source conclusions remain bounded observations,not approval manufacture",
+    "No external execution,pixels,actual inherited layout/font/token ownership,current canvas equality,cleanup or preservation proof",
+    "Geometry capping/size checks do not guarantee text readability,vertical overflow,line length,sticky/safe-area obstruction or visual quality",
+    "Viewport names/local arithmetic are design specimens,not actual400% browser zoom/device/AT or standards conformance",
+    "Font metadata membership is not rendered-font-family/missing-font/licensing or whole-layer editability census",
+    "No complete profiles/streams/host states/prototypes/interaction/accessibility/Phase1/B01/restore/EXIT/founder acceptance",
+    "No external call permission,allowance,retry,paid activation,later-batch/application/Git authorization",
+    "Only this exclusive-create receipt was written; exact sources/packet/prior reviews and external state unchanged"
+  ]
+}

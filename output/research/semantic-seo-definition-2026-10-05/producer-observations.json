@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-05",
+  "status": "DOING",
+  "scope": "SEO authority-reference amendment and one added review-board disclosure, not application SEO",
+  "baseline_bodies_exactly_preserved": true,
+  "primary_sources": [
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics",
+      "observed": "Complete initial rendered content, crawlable href links and meaningful responses."
+    },
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "observed": "Consistent canonical signals."
+    },
+    {
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/sd-policies",
+      "observed": "Structured data represents visible content."
+    }
+  ],
+  "browser": {
+    "url": "http://127.0.0.1:8766/docs/software-definition/definition-walkthrough.html?review=semantic-seo-20261005#semantic-seo",
+    "desktop_viewport": [
+      1440,
+      1000
+    ],
+    "mobile_emulated_viewport": [
+      390,
+      844
+    ],
+    "desktop_columns": 4,
+    "mobile_columns": 1,
+    "horizontal_overflow_observed": false,
+    "Enter_closes_Space_opens_Tab_reaches_first_source_link": true,
+    "three_source_links_HTTP_200": true,
+    "duplicate_ids_observed": false,
+    "complete_both_captures_visually_inspected_by_producer": true,
+    "capture_only_styles_removed": true,
+    "scope_limits": [
+      "No actual website SEO responses or indexing submission",
+      "No complete accessibility certification",
+      "No physical-phone proof",
+      "No product implementation or production selection"
+    ]
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "scope": "only additive TypeScript bridge evidence section and README reference; finite CLI/API observations and existing unchanged installation, no conformance/adoption/full graph verdict",
+  "inputs": [
+    {
+      "path": ".specify/memory/constitution.md",
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "path": "apps/api/requirements.txt",
+      "sha256": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd"
+    },
+    {
+      "path": "apps/web/package-lock.json",
+      "sha256": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d"
+    },
+    {
+      "path": "apps/web/package.json",
+      "sha256": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a"
+    },
+    {
+      "path": "apps/web/public/models/hengshi-hq-atlanta-exterior-web.glb",
+      "sha256": "4767cab4d346207a2109ffc1584e256e82ae1cecc110780b99c4406a9586aafe"
+    },
+    {
+      "path": "artifacts/nature-campus-layout-study/nature-campus-layout.glb",
+      "sha256": "e2161710dc0576ec62e3d096c60e32927e827aa59198a33361e729ec8a7b43c0"
+    },
+    {
+      "path": "DECISIONS.md",
+      "sha256": "0290e6bed5d983fa1f2162db72f1a9d3167695ff98c867c88987ee1e2c4bcc99"
+    },
+    {
+      "path": "docs/phase-1-compatibility/README.md",
+      "sha256": "d5105a2055d02d44717efcad2f750473214d7b05bc5dd35387c1b652bd1c0241"
+    },
+    {
+      "path": "docs/phase-1-compatibility/refresh-evidence-2026-10-04.md",
+      "sha256": "517208cb23ab578c6bfdfbf680283b3edbd404fdb4452192ba5ea459efb31953"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/.bin/tsc.cmd",
+      "sha256": "3dbb86daea14b3a0d775d96126df1678c4c698fd78aa6d04dbfc7cb58d5170af"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/.bin/tsc6.cmd",
+      "sha256": "d959ebab095398e5f0a660e8602a2f5a62573783c698aa77cf7b2c956edc0b1c"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/@typescript/native/lib/tsc.js",
+      "sha256": "cbdfbf11c26ed00dfc073155e316a42d6d6d8a387be61006b82fa9aa93ac572e"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/@typescript/old/lib/typescript.js",
+      "sha256": "569177652966bd528c319171c7dd22860dbf72bde116cbc4f644f1d02bb12e39"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/typescript/lib/typescript.js",
+      "sha256": "d3f3cd2b04b7f466f4484df921b744223f7bd1f3e353ec9110bdf52695b983d5"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/package-lock.json",
+      "sha256": "86dd64aae77da6ab9a0d0f7a88338494c15f68620838ffd40140f254b1e9ca2d"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/package.json",
+      "sha256": "29bd6baedb79106c1bd5a3c9050867cb2a7478dd33b35fa9b4326856c8fadf72"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/api-probe.cjs",
+      "sha256": "bb6bda8d191a24c4a093148ba3d873a3719d0e23f03f494f7a3d2d3af87b2bb8"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/api-probe.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/api-probe.stdout.txt",
+      "sha256": "ad0c548c77cb8fc36007a10867f39e7e4f05c425a392de2b787300714410691b"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/comparison.json",
+      "sha256": "de434388484b55ac5e2646a36364781ab76d8297b02170edebca811fc79e6628"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/fixture-oracles.json",
+      "sha256": "94b4df56be4567d7071f05343637a6c43332c0436f2b343141ab1f2e5c52b4ab"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-assignment/input.ts",
+      "sha256": "d5f8f6db6b4e0b3910ea687c4ac89e408416ff893199146efdb23e489946d1ee"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-assignment/tsconfig.json",
+      "sha256": "ea3c66ca45990f33e2b1ef1b2db5627e806545871885fdc2b756d3c325d75c85"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-assignment-api6.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-assignment-api6.stdout.txt",
+      "sha256": "35a26f634ed72ccbd1e0abb580f8c0a340fb9af989cc8920fea16cd1d9770e00"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-assignment-native7.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-assignment-native7.stdout.txt",
+      "sha256": "d95087ab377d8a89159deebae1e0e0b9ebcc37860f89387dd495080ad774617d"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-module/input.ts",
+      "sha256": "9179b6bd8bc2b3b7b02bbb5607397fce4a4b8dbafe1eeb966b3825f24fe44b63"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-module/tsconfig.json",
+      "sha256": "ea3c66ca45990f33e2b1ef1b2db5627e806545871885fdc2b756d3c325d75c85"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-module-api6.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-module-api6.stdout.txt",
+      "sha256": "7e03220f9187c5684ea3e98a4cc9643f7111e532be0254963228d91916334aaa"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-module-native7.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-module-native7.stdout.txt",
+      "sha256": "bb9a941dbde6d713009ed2bbbda25309686f7180b9d79f9efcd3e1428011a7a9"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-readonly/input.ts",
+      "sha256": "eeddce9626f9a0f6430686ed6d24a341a2090fb0c87cc595a46bd069f6bc6adb"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-readonly/tsconfig.json",
+      "sha256": "ea3c66ca45990f33e2b1ef1b2db5627e806545871885fdc2b756d3c325d75c85"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-readonly-api6.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-readonly-api6.stdout.txt",
+      "sha256": "30cb8b2e170131e65bb2e381ea3f424940d415e058d719334ae5987c846fe526"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-readonly-native7.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-readonly-native7.stdout.txt",
+      "sha256": "022c161fd2c08c802b16157d4e96d2f9bce5a840d24c64b045ac972f45507776"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-unchecked-index/input.ts",
+      "sha256": "569e25a0dfbc64386b36dec2c74f8abef03f5af3ac737da794130dc73ba727cc"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-unchecked-index/tsconfig.json",
+      "sha256": "ea3c66ca45990f33e2b1ef1b2db5627e806545871885fdc2b756d3c325d75c85"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-unchecked-index-api6.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-unchecked-index-api6.stdout.txt",
+      "sha256": "09f6a255967942094ab6b60be1cefeddecb7b9750e015f9ca803678542280f06"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-unchecked-index-native7.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/invalid-unchecked-index-native7.stdout.txt",
+      "sha256": "50ee395893f81287ca941d2fa082c31644f7de5c3c4d43864f0ad96c0a99e6b4"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/node_modules__.bin__tsc.cmd",
+      "sha256": "3dbb86daea14b3a0d775d96126df1678c4c698fd78aa6d04dbfc7cb58d5170af"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/node_modules__.bin__tsc6.cmd",
+      "sha256": "d959ebab095398e5f0a660e8602a2f5a62573783c698aa77cf7b2c956edc0b1c"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/node_modules__@typescript__native__package.json",
+      "sha256": "3722b30210616a13a3213ded11575ba6b2dbab10c32a5ef67afca8513e27017e"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/node_modules__@typescript__old__package.json",
+      "sha256": "9332e97c30d3e53ed54910b89207ed657fb444066484df6e5b6965bf130865e9"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/node_modules__typescript__package.json",
+      "sha256": "d9b8fb53c67c947fece83bcb73fa8512227ea6a12b110e096fdab8ecdc02b655"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/observations.json",
+      "sha256": "e4d47d0e909661c7badbfe03f214adc0910d238282eee9d74c857654573860a1"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/protected-inputs.json",
+      "sha256": "c4bf9041a15e2ee8034b67b11b514fedb1b0bfc4d530ed2e11e803f8a7d679ea"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/README.md.before",
+      "sha256": "9243f54dbd895f1496bdbc3c7805d7038db7649d34b57f037cdcc043cd7eabed"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/README.md.reviewed",
+      "sha256": "d5105a2055d02d44717efcad2f750473214d7b05bc5dd35387c1b652bd1c0241"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/refresh-evidence-2026-10-04.md.before",
+      "sha256": "f50a4168ae77ea91e5f8e1e0708c2585c383ccd28cf85c01835536cb3e24758a"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/refresh-evidence-2026-10-04.md.reviewed",
+      "sha256": "517208cb23ab578c6bfdfbf680283b3edbd404fdb4452192ba5ea459efb31953"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/run-probes.py",
+      "sha256": "172ad1c7ce468e69b988149fb641b5a677d9504ff8827f2819a7ba47c47dc403"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/source-receipt.json",
+      "sha256": "27ba92c7399d1e4ee6e977e686c97fce76943804f2d8d3652d690dab1d08c82c"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/valid-union/input.ts",
+      "sha256": "c5426c86dbade73838f0e88a6ac29a3dca42ec9df118de11ad256463bc5b650b"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/valid-union/tsconfig.json",
+      "sha256": "ea3c66ca45990f33e2b1ef1b2db5627e806545871885fdc2b756d3c325d75c85"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/valid-union-api6.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/valid-union-api6.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/valid-union-native7.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/valid-union-native7.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/version-api6.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/version-api6.stdout.txt",
+      "sha256": "13e3d29b223a790813794c1fd5ccb787c36992580e2f1c6a93be3ca7b93ae622"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/version-native7.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/version-native7.stdout.txt",
+      "sha256": "41024334022fa58f9c7337359517de307cbcfc6055c19f2b734245eacc2fe97a"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/version-shim-tsc.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/version-shim-tsc.stdout.txt",
+      "sha256": "41024334022fa58f9c7337359517de307cbcfc6055c19f2b734245eacc2fe97a"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/version-shim-tsc6.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/typescript-bridge-parity-2026-10-06/version-shim-tsc6.stdout.txt",
+      "sha256": "13e3d29b223a790813794c1fd5ccb787c36992580e2f1c6a93be3ca7b93ae622"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908"
+    },
+    {
+      "path": "package.json",
+      "sha256": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b"
+    },
+    {
+      "path": "PROJECT_STATE.yaml",
+      "sha256": "b738a7898271c20677f0af667cadce2bf9664f16afedd1410239b4b47b2fe1a8"
+    }
+  ]
+}

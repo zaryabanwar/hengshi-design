@@ -1,0 +1,232 @@
+# World measurement and loading profile — v1 proposal
+
+Status: DOING. Engineering proposal dated 2026-10-06; independent review and
+integrated founder acceptance pending. These are initial qualification targets,
+not measurements, universal browser standards or claims that the accepted study
+fits them. No model, application, dependency, renderer, device or hosting changes.
+
+## Scope and authority
+
+This completes a proposed measurement method for the existing asset/scheduler
+contract and NFR-007. Retain D-064 movement/streaming, D-071 composition and the
+four equivalent delivery streams. Detailed, Balanced and Simplified differ in
+visual cost; all retain essential ground, destinations, boards and help/booking.
+Quick Access needs no World asset download. Selection, deliberate override and
+the visit's stream lock remain under the approved delivery rules.
+
+The approved transfer ceilings stay 8 MB desktop / 4 MB mobile initially and
+5 MB desktop / 2.5 MB mobile per incremental room. Proposed unit clarification:
+MB means 1,000,000 bytes; memory MiB means 1,048,576 bytes. No larger binary-MB
+interpretation is adopted. Device/network/browser/cache classification is recorded
+for authorized tests; it does not become a new visitor fingerprint or telemetry.
+
+## Transfer accounting and reproducible samples
+
+Measure encoded HTTP response-body bytes separately from request/response headers,
+decoded body bytes and decoded residency. Retain response encoding and exact
+artifact identity; file length, gzip estimates and resource counts are not wire
+measurements. Account for decoder/WASM code, model data, textures, collision,
+required World scripts and any optional World audio fetched in the sample.
+
+For a cold initial entry, count every World transfer started before the first
+complete safe movement context is admitted, including work that finishes later.
+Moving a request's completion after that boundary cannot hide its cost. Late
+prefetch is not free: assign it to the applicable bounded incremental demand.
+An incremental sample covers one requested room/connected-area demand and all
+additional dependencies and background prefetch triggered by it. Attribute each
+newly transferred shared body once to the demand that initiated it; record other
+consumers' ownership separately. Already-resident dependencies stay visible once
+in the sample's residency inventory, but add no network body bytes without a new
+transfer. Report actual cached-body consumption separately from new transfer;
+neither resource reuse nor cache revalidation permits fabricated zero-size data.
+Also report cumulative visit transfer so repeated traversal is not masked.
+
+Cold means a clean authorized profile with HTTP/application/decoder caches absent.
+Warm means precisely identified admitted cached resources and cache policies;
+report network bytes and cached bytes separately. A cached response cannot turn
+an over-budget cold result into a pass. Failed/partial/retried responses are
+included in actual attempted transfer totals and reported separately from the
+successful-path ceiling; they cannot be dropped from the sample. Retry scenarios
+retain their bounded work/memory rules and do not establish successful-path fit.
+
+Use a controlled HTTP server/adapter byte ledger alongside browser resource timing.
+Where timing hides sizes or cache accounting is ambiguous, mark the observation
+unavailable and use independent served/received-byte evidence; zero is not proof.
+Record desktop/mobile baseline membership explicitly before running; do not infer
+it solely from viewport width. Exact named devices and network profiles remain
+qualification inputs, not selected machines or hosting regions.
+
+## Initial engineering targets
+
+The following values are proposed starting envelopes for qualification. They
+provide finite admission/work limits to test and revise, not a guarantee that a
+particular phone or GPU has this capacity. They are intentionally independent of
+the building image and do not replace the accepted transfer ceilings.
+
+| Target | Detailed | Balanced | Simplified |
+|---|---:|---:|---:|
+| Preferred active rendering cadence | 60 Hz | 30 Hz | 30 Hz |
+| Foreground active frame interval p95 / p99 | 25 / 50 ms | 40 / 80 ms | 40 / 80 ms |
+| Drawing-buffer pixel ceiling | 3,000,000 | 1,500,000 | 800,000 |
+| Render scale upper bound relative to CSS pixels | 2 | 1.5 | 1 |
+| Submitted draw-call ceiling per complete frame | 400 | 200 | 100 |
+| Submitted triangle ceiling per complete frame | 500,000 | 250,000 | 120,000 |
+| Accounted peak CPU resource reservations | 320 MiB | 192 MiB | 128 MiB |
+| Accounted peak GPU resource reservations | 256 MiB | 128 MiB | 64 MiB |
+| Concurrent resource transfers | 4 | 3 | 2 |
+| Concurrent decode/transcode work | 2 | 1 | 1 |
+| Concurrent GPU preparation admission | 1 | 1 | 1 |
+| Queued resource jobs, excluding already-running/draining jobs | 32 | 24 | 16 |
+
+Cadence is a preference; actual display scheduling can differ. The observation
+population is completed CPU submission cycles for a complete active World frame,
+including every required render pass. Record one monotonic-clock timestamp at the
+end of each such cycle; a bare requestAnimationFrame callback, React update or
+individual pass is not a frame observation. This measures submission progress,
+not GPU completion, physical display presentation or GPU execution duration.
+
+Use timestamp deltas between successive complete cycles. Include the active
+sample's start-to-first-cycle and last-cycle-to-end gaps in the raw observations;
+the interval containing late or missed cycles is not divided into invented fast
+frames. Deliberate callback skipping for a 30 Hz render cadence consequently
+measures approximately 33 ms submission intervals on a 60 Hz display, rather than
+counting unused 16 ms callbacks. The sample workload must require ongoing World
+rendering (for example traversal/camera movement); intentional idle or pause is
+identified separately and cannot certify active performance. Do not mark a stall
+as idle merely because no new frame was submitted.
+
+Percentiles use sorted interval observations and the nearest-rank rule: rank
+ceil(p × n), with p 0.95/0.99. Keep cycle count, sample duration, raw intervals,
+boundary-gap labels and any observation loss. Do not remove stalls caused by
+loading, decode/upload, controls, board use or resize from an active sample.
+A five-second active window with no complete submission is no-progress, not a
+passing empty or callback-only sample; it fails qualification and is a failing
+window for the degradation guard below. Missing instrumentation makes the result
+unavailable, never passing. Report background/pause/reentry periods separately;
+they are not fast-frame samples. The sustained comparison uses this same event
+population and ongoing-workload requirement in both matched windows.
+
+Count complete-frame submissions across shadow/water/other render passes and all
+instances, not just one renderer call. Counts are additional guardrails, not
+performance proof: shader cost, overdraw and driver behavior still need measurement.
+Apply pixel/scale ceilings together while preserving aspect ratio and readable DOM
+panels. Capability limits may require lower within-stream cost; they do not permit
+an unsolicited stream switch or removal of essential interactions.
+
+Proposed sustained-degradation ceiling: the p95 frame interval in the final five
+minutes must be no more than 125% of the first five-minute active baseline and
+must also meet the absolute stream threshold. Repeat the same identified route,
+camera/interaction script and resource state in both windows; unlike workloads
+cannot establish this ratio. Record shader/cache warm-up separately rather than
+making a slower initial baseline hide degradation. Where a matched valid baseline
+cannot be established, this criterion remains unavailable, not passing.
+
+This is a performance proxy, not a temperature measurement or thermal-safety
+claim. Where named-device OS tooling exposes severe/critical thermal state, such
+a state holds qualification and requires investigation; map the platform's exact
+labels before execution. Missing sensor/state access is reported as unknown.
+Do not invent a browser temperature API or infer a cool device from stable FPS.
+
+For the proposed runtime degradation guard, three consecutive five-second
+foreground active windows above the selected stream's p95 limit hold new optional
+admission and expose deliberate recovery. Immediate allocation/resource-cap,
+eligibility or ground-safety failure follows its existing fail-closed rule without
+waiting fifteen seconds. Any within-stream adjustment retains required content
+and support; no automatic tier change or unsolicited restart of travel/audio.
+Runtime observation details still need the approved candidate's implementation.
+
+## Memory and work admission
+
+CPU reservations include owned compressed bytes, decoded geometry/images/bitmaps,
+collision data, resource metadata, worker/decoder workspaces, optional audio
+buffers and transient old/new release overlap. GPU reservations include geometry,
+textures with mip levels/layers/faces, shadow/render targets, intermediate buffers
+and upload overlap. Shared costs count once with explicit valid owners. Decoded
+CPU images and uploaded GPU textures are separate costs. Optional audio stays
+inside the CPU envelope; it cannot evict current supporting ground.
+
+These are conservative application-accounted estimates and reservations, not
+portable readings of total browser RAM or actual driver allocation. Calibrate
+estimates against named-device tooling and record browser/process peak separately.
+Unknown costs require a validated conservative reservation or refused admission.
+Do not count an unverified unknown as zero or present Three object counts as bytes.
+If instrumentation cannot establish a resource class, qualification stays open.
+
+Running and draining jobs keep permits and peak reservations until known settlement
+and cleanup. The queue ceiling does not include a hidden second queue: defer
+unadmitted demand under bounded visit/catalogue ownership. Dependency priority
+and deduplication follow the existing scheduler; support/current ground stays
+protected. Cancellation cannot instantly free non-interruptible decode capacity.
+At pressure, retire eligible optional detail first, stop before an unready edge
+and expose truthful retry/semantic access. Reject oversubscription rather than
+claiming a safe buffer while allocating outside the envelope.
+
+## Qualification sequence and automatic selection
+
+Proposed test baselines are a constrained physical touch phone, a mainstream
+physical touch phone, an integrated-GPU laptop and a discrete-GPU desktop.
+Qualify Simplified first on the constrained baseline, Balanced on mainstream/
+integrated baselines and Detailed on the higher-capacity baseline, then evaluate
+all supported deliberate overrides. These are coverage categories, not a rule
+that all phones receive one stream or a claim that an unnamed device fits. Name
+actual hardware/OS/display/browser samples before running, retain the accepted
+latest-two-release browser coverage and Safari/iOS 16.4 legacy floor, and record
+unsupported configurations' equivalent semantic recovery.
+
+After implementation authorization, exercise the actual candidate at named browser,
+OS/device/display/network/cache settings. Preserve exact scene/build/profile
+identities and selected stream; synthetic development fixtures cannot certify
+the campus. Run at least three cold and three identified warm entry/journey samples
+per baseline, then a 30-minute foreground sustained traversal. Include arrival,
+reception, first eligible wing, board/help/Book, immediate reversal, repeated
+eviction/reentry, release overlap and resize. Run fault/context-loss/background
+scenarios separately without hiding their costs or safety outcomes.
+
+All required successful samples must fit the applicable transfer and accounted
+resource/work ceilings; active samples must fit both frame percentiles and preserve
+visual/accessibility equivalence. A median passing run cannot erase a failing
+run. Inspect appearance against the accepted composition and future approved
+references. Browser console, context loss, resource growth and platform tooling
+remain evidence; a draw-call count or emulated phone viewport is insufficient.
+Record thermal-state/performance change across the sustained run where tooling
+permits, without inventing an unavailable browser temperature reading.
+
+Automatic selection evaluates approved minimal capability/workload evidence in
+the browser under the existing consent/privacy and stream-selection rules. Static
+WebGL limits are compatibility constraints, not measured speed or available VRAM.
+Use supported, bounded capability checks and representative work after explicit
+entry; no GPU vendor/device identity or server device profile is introduced here.
+Detailed qualification requires demonstrated room in its measured envelope.
+Unknown or failed qualification cannot be advertised as proven suitability.
+Manual override still follows the accepted support checks; a locked stream's
+failure offers recovery rather than changing it silently. Exact probe workload,
+runtime sampling/hysteresis and device baselines require separate reviewed
+definition; this proposal implements no selector or fingerprinting benchmark.
+
+## Primary constraints and remaining acceptance
+
+Checked 2026-10-06: Context7 `/websites/threejs` and the current
+[Three renderer reference](https://threejs.org/docs/pages/WebGLRenderer.html)
+describe draw/primitive counts and geometry/texture object counts, not total memory.
+[MDN WebGL guidance](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/WebGL_best_practices)
+explains nonportable VRAM queries, estimated budgets, pixel cost and blocking
+queries. [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame)
+depends on display scheduling and can pause in hidden pages. These are platform
+constraints; none of the table's values or qualification durations comes from a
+standard or an executed benchmark. Exact installed APIs still need the selected
+compatible graph; current documentation does not select a renderer version.
+
+The [encodedBodySize](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/encodedBodySize)
+and [transferSize](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/transferSize)
+references distinguish body representation size (which can include cached bodies)
+from transferred response size; cross-origin exposure can hide values. Body-size
+fields alone do not prove actual network transfer or supply the independent ledger.
+
+Independent proposal review, founder acceptance, named devices/network/probes,
+final exporter/decoder/profile binding, cost calibration, physical-device samples,
+rights, controls/screens, continuous ground/collision and detailed appearance remain.
+No model/collision, streaming, sound, movement, measurement runner or production
+performance is implemented or certified by this document. D-071's accepted layout
+and consumed model revision cycles remain untouched. Later qualification can
+reject these starting envelopes; changes need their applicable review/approval,
+not silent relaxation of an accepted target.

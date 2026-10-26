@@ -1,0 +1,120 @@
+{
+  "inventory_sha256": "8c50698d7dcc6a44079d421f9fd082271479b6101ea38b8db64240182654c696",
+  "semver": {
+    "version": "7.8.5",
+    "source": "output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\package\\node_modules\\semver"
+  },
+  "edges": [
+    {
+      "from": "@emnapi/core",
+      "to": "@emnapi/wasi-threads",
+      "declared_range": "1.2.2",
+      "archive_metadata_version": "1.2.2",
+      "metadata_found": true,
+      "range_satisfied": true,
+      "prerelease": null
+    },
+    {
+      "from": "@emnapi/core",
+      "to": "tslib",
+      "declared_range": "^2.4.0",
+      "archive_metadata_version": "2.8.1",
+      "metadata_found": true,
+      "range_satisfied": true,
+      "prerelease": null
+    },
+    {
+      "from": "@emnapi/runtime",
+      "to": "tslib",
+      "declared_range": "^2.4.0",
+      "archive_metadata_version": "2.8.1",
+      "metadata_found": true,
+      "range_satisfied": true,
+      "prerelease": null
+    },
+    {
+      "from": "@emnapi/wasi-threads",
+      "to": "tslib",
+      "declared_range": "^2.4.0",
+      "archive_metadata_version": "2.8.1",
+      "metadata_found": true,
+      "range_satisfied": true,
+      "prerelease": null
+    },
+    {
+      "from": "@napi-rs/wasm-runtime",
+      "to": "@tybys/wasm-util",
+      "declared_range": "^0.10.1",
+      "archive_metadata_version": "0.10.2",
+      "metadata_found": true,
+      "range_satisfied": true,
+      "prerelease": null
+    },
+    {
+      "from": "@tybys/wasm-util",
+      "to": "tslib",
+      "declared_range": "^2.4.0",
+      "archive_metadata_version": "2.8.1",
+      "metadata_found": true,
+      "range_satisfied": true,
+      "prerelease": null
+    },
+    {
+      "from": "@tailwindcss/oxide-wasm32-wasi",
+      "to": "@napi-rs/wasm-runtime",
+      "declared_range": "^1.1.4",
+      "archive_metadata_version": "1.1.4",
+      "metadata_found": true,
+      "range_satisfied": true,
+      "prerelease": null
+    },
+    {
+      "from": "@tailwindcss/oxide-wasm32-wasi",
+      "to": "@emnapi/core",
+      "declared_range": "^1.11.1",
+      "archive_metadata_version": "1.11.1",
+      "metadata_found": true,
+      "range_satisfied": true,
+      "prerelease": null
+    },
+    {
+      "from": "@tailwindcss/oxide-wasm32-wasi",
+      "to": "@emnapi/runtime",
+      "declared_range": "^1.11.1",
+      "archive_metadata_version": "1.11.1",
+      "metadata_found": true,
+      "range_satisfied": true,
+      "prerelease": null
+    },
+    {
+      "from": "@tailwindcss/oxide-wasm32-wasi",
+      "to": "@tybys/wasm-util",
+      "declared_range": "^0.10.2",
+      "archive_metadata_version": "0.10.2",
+      "metadata_found": true,
+      "range_satisfied": true,
+      "prerelease": null
+    },
+    {
+      "from": "@tailwindcss/oxide-wasm32-wasi",
+      "to": "@emnapi/wasi-threads",
+      "declared_range": "^1.2.2",
+      "archive_metadata_version": "1.2.2",
+      "metadata_found": true,
+      "range_satisfied": true,
+      "prerelease": null
+    },
+    {
+      "from": "@tailwindcss/oxide-wasm32-wasi",
+      "to": "tslib",
+      "declared_range": "^2.8.1",
+      "archive_metadata_version": "2.8.1",
+      "metadata_found": true,
+      "range_satisfied": true,
+      "prerelease": null
+    }
+  ],
+  "limits": [
+    "Static declared-range comparison only; not Node resolution, runtime conformance or a repaired/full SBOM"
+  ]
+}

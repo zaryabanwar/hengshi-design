@@ -1,0 +1,437 @@
+{
+  "status": "DOING",
+  "scope": "Fresh 1.87.0 exact CLI/source/metadata recheck and sole additive compatibility appendix; actual application/full graph/provenance not accepted",
+  "snapshot_policy": "Inputs retained at exact source identities; do not mutate during review. Large archives/native binaries are not duplicated.",
+  "files": [
+    {
+      "source": "docs/phase-1-compatibility/refresh-evidence-2026-10-04.md",
+      "bytes": 45314,
+      "sha256": "a2d1d50670a3a45766487373a65162db1e238999206ca94ba349d148c1c6a027"
+    },
+    {
+      "source": "AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "docs/phase-1-compatibility/reviews/native-hook-conformance-v1-2026-10-05.md",
+      "bytes": 7660,
+      "sha256": "318bd11635e0c2c62fdab343f40007ce1c76e90287f037e7b1362e03d1d22b4d"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/receipt.json",
+      "bytes": 22285,
+      "sha256": "ad2050d7537d5adde4cf4ef8aed268b930b7e5e3ce5c4427cdd76cdd4b7606ca"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/custom-effect-rule-invalid-cli-override-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/custom-effect-rule-invalid-cli-override-stdout.txt",
+      "bytes": 197,
+      "sha256": "58eecf6a4f9441978a717eee43f693a53f6b63fa37b7f6a5d1ece20f24658ef0"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/custom-effect-rule-invalid-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/custom-effect-rule-invalid-stdout.txt",
+      "bytes": 714,
+      "sha256": "7c98cf699140a13479a7fd7155a23677c36b14d35ecbe1d96a82ccadca6cd238"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/custom-effect-rule-valid-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/custom-effect-rule-valid-stdout.txt",
+      "bytes": 197,
+      "sha256": "597055977aeff58a7b6ed4c1ac6eedb2bca418a1ad425acef34844490ad71283"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/custom-effect-shared-invalid-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/custom-effect-shared-invalid-stdout.txt",
+      "bytes": 197,
+      "sha256": "d0c04657f6cc85d36ee6e339d2c9ba38461c50c92ee5f3db863b3e797201dbbb"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/custom-hook-conditional-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/custom-hook-conditional-stdout.txt",
+      "bytes": 794,
+      "sha256": "f277c2f37b86d7f673c4ae2e421d3b70f08f0cb67eaf32f1fbe7d70af41e55ec"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/directory-scope-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/directory-scope-stdout.txt",
+      "bytes": 2501,
+      "sha256": "016778f9ca8e795e087e050b11e8a8b729f8bb25f731a5b8d45749a8df3d78a4"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/exhaustive_deps.rs",
+      "bytes": 149508,
+      "sha256": "0c9a8372f5a72398dd63a747d35a978b4015626cd40d50573cf4fcfa062ddd3d"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/gensync-registry.json",
+      "bytes": 15068,
+      "sha256": "238627d88fbc228ca4b06bd4a40ffb74fc1e9b3f5b8dc5029c82aa16dae24fa3"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/invalid-config-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/invalid-config-stdout.txt",
+      "bytes": 256,
+      "sha256": "87395855d4a140a4feedd56b2c1809fee524f3cb7fc50ea48f52e8a9bf881846"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/named-hook-alias-conditional-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/named-hook-alias-conditional-stdout.txt",
+      "bytes": 799,
+      "sha256": "2152e79205890f56fa41e64558ec44b07786f9879dd4ee4ade898c3996e79e57"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/namespace-conditional-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/namespace-conditional-stdout.txt",
+      "bytes": 790,
+      "sha256": "08a69f6d494dc8a5e70cdf6c74592a56808d5cfc4564b7151492c05fb0a4ad41"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/namespace-missing-dependency-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/namespace-missing-dependency-stdout.txt",
+      "bytes": 700,
+      "sha256": "79a0b1206942838ae974ca2bd5fcba89cbcc1e5737e03ae457e50318121e477e"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/namespace-valid-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/namespace-valid-stdout.txt",
+      "bytes": 197,
+      "sha256": "a07613d6302e4fc9219b4482240561c58bdf0608094b24879c139afdac43902b"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/oxlint-binding-win32-x64-msvc-metadata.json",
+      "bytes": 2451,
+      "sha256": "5ebb2003c653b670957118b4751b2e0631d0a7f6a13de10c677b59d70c051763"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/oxlint-binding-win32-x64-msvc.tgz",
+      "bytes": 5827766,
+      "sha256": "f9ee4df9a3a661aa210e52c0a63ad1d314485df14c44b878c283df1757d2c91c"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/oxlint-metadata.json",
+      "bytes": 4623,
+      "sha256": "cf00d41c5dad6ff820fd6e490a679ff37516884eea6dd84c5520502e4a777ee5"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/oxlint-registry.json",
+      "bytes": 3643,
+      "sha256": "61c491c449314b5f5d98e34ecbc7fd3d5acdc2c3b9eb86a58a1b3ecd18e6fe8c"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/oxlint.tgz",
+      "bytes": 378560,
+      "sha256": "04441961a07abc710dda63f798550b37169d7ad527acbe6e880785987b6116d4"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/react-hooks-registry.json",
+      "bytes": 2551,
+      "sha256": "7ccb572d85841dc9e54fdd98886f5a7c4235392ef4fd1743542ce3aede252bda"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/receipt.json",
+      "bytes": 22045,
+      "sha256": "876ea07706e1bc15d0c30aa6993f6baace789c1d45d3ba2d5bbed55d3172a312"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/refresh-evidence.before.md",
+      "bytes": 42698,
+      "sha256": "ae2f8a87c378147461d7606616ce5118cf83e10bcb3e5889091d7ef8f0d87964"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/release.json",
+      "bytes": 30165,
+      "sha256": "eab9c597f026870cadddfcd4c8c1e4d9ca7c765d5c2f9c71f6017029ef84a6f0"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/renamed-effect-missing-dependency-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/renamed-effect-missing-dependency-stdout.txt",
+      "bytes": 197,
+      "sha256": "29e9523fd800af7e66bb6d4aa564b6f55379e446790fd72a52a5d5d533279354"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/renamed-hook-conditional-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/renamed-hook-conditional-stdout.txt",
+      "bytes": 197,
+      "sha256": "7a03791bcac45a7004c4d9c93ea784fc0095d1774b91920d88d1efe3fc90aa55"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/rules-inventory.json",
+      "bytes": 237493,
+      "sha256": "19fccaf0be31936ff594c620410bb905e65c1e00c1a89c667aecb900c456de0f"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/rules_of_hooks.rs",
+      "bytes": 90995,
+      "sha256": "35e4a166253a27d0990bddfdb66b14772b986db2af5ea2083f4cfa1da2d4682b"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/run_recheck.py",
+      "bytes": 4993,
+      "sha256": "468fcbb4a623dd5c236632e449125e87ab433e1bf4d3d1cf390fdd68eb63b731"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/source-receipt.json",
+      "bytes": 1453,
+      "sha256": "b5d8705e96a3b8c96ae1084686c78a4ee740d84417ec55433709ff84fb5ae70d"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/unmatched-file-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/unmatched-file-stdout.txt",
+      "bytes": 267,
+      "sha256": "e0165efdac43b781f08f024bd01bcb92647ce5e2b5a4707d065e36cba6c79559"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/probe-config.json",
+      "bytes": 136,
+      "sha256": "62f9d0789fbcbd0c4232b4a70cf972a3e8084bd21a7c194beb86393c27edf431"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/base-fixtures/namespace-valid.tsx",
+      "bytes": 170,
+      "sha256": "087a597ad7123a2f49151db3ed01ac525b61016ce5312005abe36c5fee5b8348"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/base-fixtures/namespace-conditional.tsx",
+      "bytes": 176,
+      "sha256": "5bece0488a4c415a10dada7b396675e9130e128719fa94f97a13fe3c4f5deb98"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/base-fixtures/namespace-missing-dependency.tsx",
+      "bytes": 165,
+      "sha256": "057bba621e22d6a6a953897f0e0793215941f822dcc75939d745790417fc8a0f"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/base-fixtures/custom-hook-conditional.tsx",
+      "bytes": 218,
+      "sha256": "fa16240b49c9d19a6d483d3916b9ad3812283f11227587867dac31a7458a6b47"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/base-fixtures/named-hook-alias-conditional.tsx",
+      "bytes": 186,
+      "sha256": "c5c100fe1ca682d72d32545320e9fd464483fbd87c292e4f2d1d12899ea6d5e1"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/base-fixtures/renamed-hook-conditional.tsx",
+      "bytes": 176,
+      "sha256": "6de9e0d543413dadf94d1b593eb4caa19a64b08a61aa2d33456005a95c6fc882"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/base-fixtures/renamed-effect-missing-dependency.tsx",
+      "bytes": 167,
+      "sha256": "8277a73b7cd2b42317d5abc3e38fb4a68ecbacdcc803bd1d57c71660efe757a8"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/invalid-config.json",
+      "bytes": 13,
+      "sha256": "1bde13a215e156fc5595ea1047823eb14132bc054b87cac3a3f3e92b475fcd69"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-effect-shared-invalid-config.json",
+      "bytes": 290,
+      "sha256": "2b6077ba85dce91dec25ddfc12c5a0049fa089707ca6b6da1db7668dd9d32f3d"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-fixtures/custom-effect-shared-invalid.tsx",
+      "bytes": 185,
+      "sha256": "396534736cd82f460f8b4f05c50d4157a6eba48343f71a5753bdd59b7a0eada6"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-invalid-config.json",
+      "bytes": 269,
+      "sha256": "7f1a71cf9486290de43f6a4170cf737903bf5a930339d62bfe61dbcb610534e2"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-fixtures/custom-effect-rule-invalid.tsx",
+      "bytes": 185,
+      "sha256": "396534736cd82f460f8b4f05c50d4157a6eba48343f71a5753bdd59b7a0eada6"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-valid-config.json",
+      "bytes": 269,
+      "sha256": "7f1a71cf9486290de43f6a4170cf737903bf5a930339d62bfe61dbcb610534e2"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-fixtures/custom-effect-rule-valid.tsx",
+      "bytes": 190,
+      "sha256": "ad1cc07b8a474aa72e178d3bdea7b9f1646131f9692baa86426261e426ad3ee8"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-invalid-cli-override-config.json",
+      "bytes": 269,
+      "sha256": "7f1a71cf9486290de43f6a4170cf737903bf5a930339d62bfe61dbcb610534e2"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-fixtures/custom-effect-rule-invalid-cli-override.tsx",
+      "bytes": 185,
+      "sha256": "396534736cd82f460f8b4f05c50d4157a6eba48343f71a5753bdd59b7a0eada6"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/oxlint/configuration_schema.json",
+      "bytes": 763718,
+      "sha256": "e15361eff2cefcc8afac585351981315bd0275a04b19e930f35b575a1faea1e0"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/oxlint/LICENSE",
+      "bytes": 1119,
+      "sha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/oxlint/package.json",
+      "bytes": 3096,
+      "sha256": "42516fd7f3dedd2027d706b09dfe6ad021e8d5ed61d4278f943d13942babf7e0"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/oxlint/README.md",
+      "bytes": 2502,
+      "sha256": "1e2175a447dc67abfe4b712e1a706ec357f9f7131e544c05a3ccba88eb4a40d7"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/oxlint/bin/oxlint",
+      "bytes": 46,
+      "sha256": "ecab4e2f1bebaab1a3306620bee562ec16e8cb83dd5fb739b94a5aae3c9e34bd"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/oxlint/dist/bindings.js",
+      "bytes": 24942,
+      "sha256": "f5cf4c2acdaf3243cc1cc5c7beaa5499c205e0a93026b8d833b476fbed073320"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/oxlint/dist/cli.js",
+      "bytes": 4255,
+      "sha256": "0db31aeed17873535fdc4215cb496980701d4a0e0bea0db335d30415a163158d"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/oxlint/dist/index.d.ts",
+      "bytes": 254303,
+      "sha256": "dfeca985972e516966339d4ccefa6e158d3ecb7b7ab47b0d88c0c10a5eeefb3f"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/oxlint/dist/index.js",
+      "bytes": 253,
+      "sha256": "bcd7d20da966ad0daf2bbb9386d2f3e325e68a9b33c695de240d4a69e7b9f59a"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/oxlint/dist/js_config.js",
+      "bytes": 7508,
+      "sha256": "27596da272e54931618d1b959becdf200d6b992f972b831a54026d8352ea4bdc"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/oxlint/dist/lint.js",
+      "bytes": 1145886,
+      "sha256": "fd8d72ac25d6ece807cbb7dddc1bf610696012cc22de09e62f4008ec8d37408a"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/oxlint/dist/plugins-dev.d.ts",
+      "bytes": 160690,
+      "sha256": "2fa3e1d5fdd954edba75d2a57193eb94b7fb7a62c0c8d6e2e27b03253dce38a6"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/oxlint/dist/plugins-dev.js",
+      "bytes": 41272,
+      "sha256": "9160dbc594c8f9fa6e624cc358cb2093dc19281c5233168f0352203fc11b5c16"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/oxlint/dist/plugins.js",
+      "bytes": 940,
+      "sha256": "81e4c275f6200ab4b6aed66ba2836b2a8e68756a8609ced02daf91e226377e2d"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/oxlint/dist/rolldown-runtime.js",
+      "bytes": 1506,
+      "sha256": "5fc650d7f3c5b72629da633623bf7bc72fd972051fe82268c703b2681f26eb51"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/oxlint/dist/utils.js",
+      "bytes": 1057,
+      "sha256": "591682f61f6ff1ee264f9df278c71eb4f8f426d34f7ea9b14f77dbd30c989778"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/oxlint/dist/workspace.js",
+      "bytes": 289,
+      "sha256": "07d934175ffa28dedbfff3ba1b16bb96158d7fb9c5ebcdd91b7ad6fb1df4c160"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/oxlint/dist/workspace2.js",
+      "bytes": 1017,
+      "sha256": "bfc5efa892c05854dfc783625a03087861cbead465fe72c1dcf96e2c01629061"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/@oxlint/binding-win32-x64-msvc/oxlint.win32-x64-msvc.node",
+      "bytes": 13246976,
+      "sha256": "8ee7a68c5a9349753502f7b231f80775c09ea01e5f26012e995c06ed687a4a40"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/@oxlint/binding-win32-x64-msvc/package.json",
+      "bytes": 743,
+      "sha256": "b821d45d4d7591c07312c5749d29709668141b505f4c42ec42d8d429fec373c4"
+    },
+    {
+      "source": "output/research/react-lint-stable-recheck-2026-10-05/tool/node_modules/@oxlint/binding-win32-x64-msvc/README.md",
+      "bytes": 104,
+      "sha256": "295b1fbfb009d78d3234658e3140da9af1b33cbf0017ef976743a39fa43c0314"
+    }
+  ]
+}

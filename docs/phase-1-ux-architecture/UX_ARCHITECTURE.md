@@ -1,5 +1,16 @@
 # UX Architecture
 
+## Current v1 authority
+
+Use the [current UX entry](README.md) and
+[reviewed World scope amendment](FLOWS.md#current-world-scope-amendment--v1)
+with the baseline below. D-064 adds mouse/touch free movement and nearby-area
+streaming while retaining destination navigation. Earlier directed-travel wording
+does not exclude that addition; core content and actions still do not require
+walking skill. The amendment references the separate proposed controls, loading
+and sound definitions and their remaining gates. The baseline body is preserved;
+this entry reference grants no gesture, extra UX revision or implementation.
+
 ## 1. Experience thesis
 
 **[APPROVED]** A qualified buyer can understand fit, inspect truthful evidence,

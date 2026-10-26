@@ -1,0 +1,499 @@
+{
+  "status": "DOING",
+  "revision_cycle": 0,
+  "scope": "Unselected Windows Authlib candidate metadata closure and scoped navigation addition only",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/AGENTS.md",
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "bytes": 7686
+    },
+    {
+      "path": ".specify/memory/constitution.md",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/.specify/memory/constitution.md",
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "bytes": 16234
+    },
+    {
+      "path": "PROJECT.md",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/PROJECT.md",
+      "sha256": "a483bd2713fe420322772ab7fb07c848aaf103088697c05ab91f35d2e5ea1461",
+      "bytes": 10942
+    },
+    {
+      "path": "DECISIONS.md",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/DECISIONS.md",
+      "sha256": "dd31d6026aedd1a03e966e055724b2f02783147291525f1740341848837eed74",
+      "bytes": 86352
+    },
+    {
+      "path": "PROJECT_STATE.yaml",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/PROJECT_STATE.yaml",
+      "sha256": "ca8ed5825769b5007835c9b44d3a4e7b4ebd1cba120340686d017686b3a64270",
+      "bytes": 8776
+    },
+    {
+      "path": "TASKS.md",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/TASKS.md",
+      "sha256": "590da697f0da1c2bc38f648d53dd9be8fe2bec0df0dc209ab9adf5af5f050c21",
+      "bytes": 6728
+    },
+    {
+      "path": "docs/software-definition/README.md",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/docs/software-definition/README.md",
+      "sha256": "a4907696b81b7bc7949a02e712970615122459b124b8fee836d731320181ccba",
+      "bytes": 7503
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "sha256": "1fe2469d7a88897cbe07080650f0971efae4b45ab8f007d05eb315875cb7da7c",
+      "bytes": 70442
+    },
+    {
+      "path": "specs/001-platform-security-hardening/spec.md",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/specs/001-platform-security-hardening/spec.md",
+      "sha256": "2f7066eef33f89f8600587e7778d70e80538b82d49709c5516cac91f63371747",
+      "bytes": 31323
+    },
+    {
+      "path": "docs/phase-1-compatibility/backend-evidence-2026-10-04.md",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/docs/phase-1-compatibility/backend-evidence-2026-10-04.md",
+      "sha256": "866d3d56033e8e64eaab45fc9af221102ae6336f4d3e717266b8ca09d3fe2984",
+      "bytes": 34556
+    },
+    {
+      "path": "docs/software-definition/04-reconciliation-map.md",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/docs/software-definition/04-reconciliation-map.md",
+      "sha256": "896ca17cb66daec401d4b8c4c9fb5ba874a85b9a1bea4f801e902c879cf8e25d",
+      "bytes": 94125
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/pip-report.json",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-crypto-graph-2026-10-08/pip-report.json",
+      "sha256": "9da776be394095379b5365c53beeb27887b57ec7b795745f5935349899464ba1",
+      "bytes": 492585
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/closure-observations.json",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-crypto-graph-2026-10-08/closure-observations.json",
+      "sha256": "538240c2d54f97ae27b6031a7520450cc512f108638ce603f8c7dfb14e5c2c77",
+      "bytes": 25093
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/candidate-roots.txt",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-crypto-graph-2026-10-08/candidate-roots.txt",
+      "sha256": "8f0cb8e6285e45f336e00681261ba9debc37a762bc68035bdfdc7f4a01caf45d",
+      "bytes": 365
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/qualification-plan.json",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-crypto-graph-2026-10-08/qualification-plan.json",
+      "sha256": "b9298363e7a0cfeef76dad29e18f8aa165a5d7790e4291b567711374603a0cb9",
+      "bytes": 6678
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/review/independent-review-identity-client-options-v1.json",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/review/independent-review-identity-client-options-v1.json",
+      "sha256": "286f8f2e2cd4c13b6a018a8c013c711231bf54388f724eed4933b2771fdc3376",
+      "bytes": 3749
+    },
+    {
+      "path": "output/research/staff-identity-graph-2026-10-08/authlib-exact.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/staff-identity-graph-2026-10-08/authlib-exact.json.gz",
+      "sha256": "d6a814651e2a1638d80044e67489e7e09aa741d4d8755545a2e143ca13c2c3df",
+      "bytes": 4001
+    },
+    {
+      "path": "output/research/staff-identity-graph-2026-10-08/candidate-hashed-requirements.txt",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/staff-identity-graph-2026-10-08/candidate-hashed-requirements.txt",
+      "sha256": "109873529f575f972c028d9d8a72e2e01b461cbf50becb6871897aea61b6ad10",
+      "bytes": 4431
+    },
+    {
+      "path": "output/research/staff-identity-graph-2026-10-08/candidate-roots.txt",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/staff-identity-graph-2026-10-08/candidate-roots.txt",
+      "sha256": "ccdc9814becee0eb22aef6a6a10fb30ed9679c076f9318920fca313847c7ef98",
+      "bytes": 380
+    },
+    {
+      "path": "output/research/staff-identity-graph-2026-10-08/closure-observations.json",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/staff-identity-graph-2026-10-08/closure-observations.json",
+      "sha256": "ecafc490f693b89bae1eeb191a7231a71df7d4b7d26982edc18b1ec41e95ea42",
+      "bytes": 26047
+    },
+    {
+      "path": "output/research/staff-identity-graph-2026-10-08/inspect_graph.py",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/staff-identity-graph-2026-10-08/inspect_graph.py",
+      "sha256": "4881b5bdb36a4c3a0a7829c55aa1c28a12f72ab68686c8103b59ed85ae8df720",
+      "bytes": 7611
+    },
+    {
+      "path": "output/research/staff-identity-graph-2026-10-08/joserfc-exact.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/staff-identity-graph-2026-10-08/joserfc-exact.json.gz",
+      "sha256": "872fd1f2de67052ea8a20fc682748ede1aa6c1e84f4d8bda3d5ff49a935ef6e7",
+      "bytes": 2223
+    },
+    {
+      "path": "output/research/staff-identity-graph-2026-10-08/joserfc-release-1.7.5.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/staff-identity-graph-2026-10-08/joserfc-release-1.7.5.json.gz",
+      "sha256": "80dba5fd039da868d01e2be4538d0f3d6dbb109e7bfc69e31016a6d88cc4bc99",
+      "bytes": 837
+    },
+    {
+      "path": "output/research/staff-identity-graph-2026-10-08/joserfc-release-observations.json",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/staff-identity-graph-2026-10-08/joserfc-release-observations.json",
+      "sha256": "d264577fd92933ff585269dd670994a5d13a0ea90be4404a3c4940afdef347c1",
+      "bytes": 634
+    },
+    {
+      "path": "output/research/staff-identity-graph-2026-10-08/pip-report.json",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/staff-identity-graph-2026-10-08/pip-report.json",
+      "sha256": "da613f9120bede342342ccbf85e05913c7f38d039c1a11dc87ae0e41b5c1036a",
+      "bytes": 508279
+    },
+    {
+      "path": "output/research/staff-identity-graph-2026-10-08/prepare_review.py",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/staff-identity-graph-2026-10-08/prepare_review.py",
+      "sha256": "c69d3a5657cf8e957ee3fa2566fa9789ecdaaf9f9bafd509770c1325370ba01d",
+      "bytes": 6212
+    },
+    {
+      "path": "output/research/staff-identity-graph-2026-10-08/receipt.json",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/staff-identity-graph-2026-10-08/receipt.json",
+      "sha256": "abb161f7a18f2389a7ee6fb5e3932c4e2a0be89d8c3064f6af589eb19253d173",
+      "bytes": 2591
+    },
+    {
+      "path": "output/research/staff-identity-graph-2026-10-08/registry-sources.json",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/staff-identity-graph-2026-10-08/registry-sources.json",
+      "sha256": "0af4109073832ebe616f63ea12c38ac7a4f91da591ad6c798d4543cdcd417a6a",
+      "bytes": 708
+    },
+    {
+      "path": "output/research/staff-identity-graph-2026-10-08/resolve_candidate.py",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/staff-identity-graph-2026-10-08/resolve_candidate.py",
+      "sha256": "633d5f515b57ed4e82b58f668b632981f5f4d761c715bb03a8a8e0f00292ebd2",
+      "bytes": 2663
+    },
+    {
+      "path": "output/research/staff-identity-graph-2026-10-08/stderr.txt",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/staff-identity-graph-2026-10-08/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "output/research/staff-identity-graph-2026-10-08/stdout.txt",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/staff-identity-graph-2026-10-08/stdout.txt",
+      "sha256": "3777eab8bcf5ffd5143df55bb17d63f7e1ea9bedcf91c1e32bad948563c69529",
+      "bytes": 12376
+    },
+    {
+      "path": "output/research/staff-identity-graph-2026-10-08/before/04-reconciliation-map.md",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/staff-identity-graph-2026-10-08/before/04-reconciliation-map.md",
+      "sha256": "53ebdf81b3a994833b3352e181924d7b7658eca9f4daf9b5890f605be43c526a",
+      "bytes": 93758
+    },
+    {
+      "path": "output/research/staff-identity-graph-2026-10-08/before/backend-evidence-2026-10-04.md",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/staff-identity-graph-2026-10-08/before/backend-evidence-2026-10-04.md",
+      "sha256": "55d7c7d75cb69a23d30cb0ea7dc00d06ed700b149077ec4c55c41746da0aab40",
+      "bytes": 31634
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/alembic-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/alembic-project.json.gz",
+      "sha256": "229bedc48836e584882a072c1de5dacb914893dd6586790b54b916b02a742c41",
+      "bytes": 42068
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/annotated-doc-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/annotated-doc-project.json.gz",
+      "sha256": "191c7fa38e440efbe338936da237e6999f5b76d82d69b1a5533b2b6ad21d66f3",
+      "bytes": 4840
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/annotated-types-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/annotated-types-project.json.gz",
+      "sha256": "5592c2f85e06dc0aaa094f186945b4629555bc8234c4d8706a7af9427d87f677",
+      "bytes": 9862
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/anyio-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/anyio-project.json.gz",
+      "sha256": "da931b6b339821ed63865dcf3cb959bcf7bcd63a80061322822ff71b902c0863",
+      "bytes": 28857
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/bcrypt-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/bcrypt-project.json.gz",
+      "sha256": "24bcd3761174079a1ddeec4e12dbc9b212a2e399c37d83e70cbeb8cdb789febe",
+      "bytes": 111071
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/certifi-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/certifi-project.json.gz",
+      "sha256": "57b4ced9f5221091c033018e4a596d2a26ad13820639f508b356c9839b7447b2",
+      "bytes": 27159
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/new-registry/cffi-exact.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-crypto-graph-2026-10-08/new-registry/cffi-exact.json.gz",
+      "sha256": "fc3b2953a29914952a976314140a5473eddb681675f49669b6ac74df6a202fad",
+      "bytes": 17333
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/click-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/click-project.json.gz",
+      "sha256": "7e5a93d9eca38c519fd99f8149390b2377b860225a0b8793543d437e529f2626",
+      "bytes": 25339
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/colorama-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/colorama-project.json.gz",
+      "sha256": "c1f1c76e31927f9c40338f4e6daae3f7c0d246544d31193b6982befba5f5f4fa",
+      "bytes": 22993
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/new-registry/cryptography-exact.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-crypto-graph-2026-10-08/new-registry/cryptography-exact.json.gz",
+      "sha256": "2e5496982ca7d0d71604180a3d896d1858a7cb516247aae0338adc017c73951d",
+      "bytes": 11593
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/dnspython-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/dnspython-project.json.gz",
+      "sha256": "58fcb626aac63215d4234c91a3aa3ea86e0007af05ed887e33ee5265c46323d2",
+      "bytes": 13095
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/email-validator-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/email-validator-project.json.gz",
+      "sha256": "78c65e8b73a94d4d5e2f553f88ed9aec55d6a7df385662e468dc6ef65e7c14ca",
+      "bytes": 20162
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/fastapi-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/fastapi-project.json.gz",
+      "sha256": "6ee636e54f8164e4887d11ee935b8e216283edd0dad938e765fcf8f2ed11335c",
+      "bytes": 124378
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/h11-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/h11-project.json.gz",
+      "sha256": "9dba3831f9753cf8b11d4fad2f94c2b7669a40c80b6ce8fd1f8bcfa99d66a5ed",
+      "bytes": 9436
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/httpcore-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/httpcore-project.json.gz",
+      "sha256": "c41c81759087830d54789a2521f06b8decf81c69c71292d4280ec7ac925c88a2",
+      "bytes": 30549
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/httptools-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/httptools-project.json.gz",
+      "sha256": "366ba02d127f853f498fe9d39b25b94923c4865b2b601ade7e3e900dde2e0f5c",
+      "bytes": 81737
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/httpx-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/httpx-project.json.gz",
+      "sha256": "c8edb8c43a19b4b92309bb5eac83879db39986835bdaeec9d34731ec70af4abf",
+      "bytes": 30084
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/idna-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/idna-project.json.gz",
+      "sha256": "6117a840c73ff5f595d53741e03583b1f5920abe1a86062d8dd434eeb5125a82",
+      "bytes": 17574
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/iniconfig-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/iniconfig-project.json.gz",
+      "sha256": "d3a97245c570e99a2a196574cdfea0a80cafab9f0061ea9b6e51f24649111810",
+      "bytes": 5018
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/mako-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/mako-project.json.gz",
+      "sha256": "ed69118ada0394bf1961c381303e66efdada2e8f8b63eab486bffd857db14e66",
+      "bytes": 21158
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/markupsafe-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/markupsafe-project.json.gz",
+      "sha256": "8698c0cd02f57b1d40cbcfdf53a10cd343f491d939407a554d070ae9f70704d9",
+      "bytes": 183184
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/opentelemetry-api-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/opentelemetry-api-project.json.gz",
+      "sha256": "630c272d76eeeeafeb9fcb228dc2c162dd1fb512bcf1bd0b59f2f6726841be48",
+      "bytes": 31447
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/packaging-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/packaging-project.json.gz",
+      "sha256": "20ce33cb1ad43f0c2e73a69fe8cc709764a96fe53e09f53fb532b1e52298f382",
+      "bytes": 21874
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pluggy-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/pluggy-project.json.gz",
+      "sha256": "ab296406976441027c024602f106a3b986a542674fb2acf9d060964752365a6e",
+      "bytes": 11400
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/psycopg-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/psycopg-project.json.gz",
+      "sha256": "247b4936b61c43e240901146b072e5f461ad1aca98097dfb560f2926f9505bd3",
+      "bytes": 24703
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/psycopg-binary-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/psycopg-binary-project.json.gz",
+      "sha256": "c782db2440a9e33224d319678230e47fa71bdbfed2ff81e4886b5ee872aac8b7",
+      "bytes": 512480
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/new-registry/pycparser-exact.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-crypto-graph-2026-10-08/new-registry/pycparser-exact.json.gz",
+      "sha256": "0a72737e3a04115439b03c883d7b74ad22f1dc4f90c8c0595ca30e3ff4937322",
+      "bytes": 4295
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pydantic-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/pydantic-project.json.gz",
+      "sha256": "3da7685a2efe05ab2785d3c51997ffb98139b29a9764cb820b8ea5043c3ae72b",
+      "bytes": 349311
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/core-recovery/pydantic-core-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/core-recovery/pydantic-core-project.json.gz",
+      "sha256": "25df7add998caf451d90a69d03cdc7c79367338d154b54e39fffb7143b359c1d",
+      "bytes": 2261314
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pygments-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/pygments-project.json.gz",
+      "sha256": "76ad77c4b63826e3534cf867c344a261e74bf61fa10d7c7d41e7ed06048906ef",
+      "bytes": 33432
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pyjwt-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/pyjwt-project.json.gz",
+      "sha256": "c189a04aa8edef0b6a4409ba64e2ca3de081f31c5091dbc924b26665a2c3b1d3",
+      "bytes": 26837
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pytest-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/pytest-project.json.gz",
+      "sha256": "d47efbb36944a6ddb54eef3a3ef61455015f77e854012b944b785edb162cbc66",
+      "bytes": 66476
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pytest-asyncio-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/pytest-asyncio-project.json.gz",
+      "sha256": "3d2eed89cc818e21c246fe9b1bda417e28055f18422280d9cfe4dd15e2123c97",
+      "bytes": 29415
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/python-dotenv-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/python-dotenv-project.json.gz",
+      "sha256": "3c6c460df85bd75db8052bce034174fbc2b0a20efd50bf3c408d56f6d5e47817",
+      "bytes": 29464
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pyyaml-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/pyyaml-project.json.gz",
+      "sha256": "6910211e0c03bddc2c058d60eff8713116e8e95a71a82dfee52b87f204e887ee",
+      "bytes": 105475
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/sqlalchemy-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/sqlalchemy-project.json.gz",
+      "sha256": "4d71d2707843ebb5a6a25b84f8904e28cdc6a269a97a197a7ae2e2ef9f88fae9",
+      "bytes": 998035
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/starlette-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/starlette-project.json.gz",
+      "sha256": "5f583156ff923e0ff1b43e5244779c9f5acb6fc8893b9bbf32710280464ad20d",
+      "bytes": 56581
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/typing-extensions-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/typing-extensions-project.json.gz",
+      "sha256": "2bc349e88b6fd53e8562fb9d1cbd3b18ee9f95f0386888c00c0251d56d004bbb",
+      "bytes": 23187
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/typing-inspection-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/typing-inspection-project.json.gz",
+      "sha256": "dbd648d165e8ea0fde6e27900bf799432677e41bf6c3cfb6f64a59257abe9c88",
+      "bytes": 4996
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/tzdata-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/tzdata-project.json.gz",
+      "sha256": "fd88c55ef415238e5fedd141bc14ee1d1b98a13c1f73c9595aee937c7c8dcaa6",
+      "bytes": 14542
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/uvicorn-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/uvicorn-project.json.gz",
+      "sha256": "09f45607f045159e27893f3e70ed124c9f3c33a4d6720800167a3807af154af6",
+      "bytes": 55162
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/watchfiles-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/watchfiles-project.json.gz",
+      "sha256": "a47f4c011d738748a0f37595c201d39b4b0dd7f8e310d9433b9cd87a54af098c",
+      "bytes": 228468
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/websockets-project.json.gz",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/output/research/backend-hash-inputs-2026-10-08/primary/websockets-project.json.gz",
+      "sha256": "283c79853d29a27c55d91a44bd116753a5e702028a954d9017808114905d7960",
+      "bytes": 380561
+    },
+    {
+      "path": "package.json",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/package.json",
+      "sha256": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b",
+      "bytes": 538
+    },
+    {
+      "path": "package-lock.json",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/package-lock.json",
+      "sha256": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908",
+      "bytes": 76835
+    },
+    {
+      "path": "apps/web/package.json",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/apps/web/package.json",
+      "sha256": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a",
+      "bytes": 1136
+    },
+    {
+      "path": "apps/web/package-lock.json",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/apps/web/package-lock.json",
+      "sha256": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d",
+      "bytes": 179000
+    },
+    {
+      "path": "apps/api/requirements.txt",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/apps/api/requirements.txt",
+      "sha256": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd",
+      "bytes": 137
+    },
+    {
+      "path": "apps/api/.venv/pyvenv.cfg",
+      "snapshot": "output/research/staff-identity-graph-2026-10-08/review/inputs/apps/api/.venv/pyvenv.cfg",
+      "sha256": "d23bc586f40b9aa9a601c8af0cab224cd4a40f0544a2f6348e9ad703f4d8ea39",
+      "bytes": 229
+    }
+  ]
+}

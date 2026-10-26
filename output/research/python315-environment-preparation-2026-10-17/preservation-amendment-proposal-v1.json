@@ -1,0 +1,82 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "TODO",
+  "scope": "Proposed clarification of Python3.15 research artifact preservation only; not adopted and no execution permission",
+  "current_plan": "output/research/python315-build-proposal-2026-10-15/qualification-plan-v1.json",
+  "current_rules_stay_in_force": true,
+  "problem": "The prepared public pip commands cannot truthfully guarantee preserving every temporary acquired body or zero pip-internal cleanup. A single --no-clean flag does not fix that.",
+  "source_findings": [
+    {
+      "file": "captures/prepare.py",
+      "lines": [
+        109,
+        130
+      ],
+      "finding": "get_http_url creates a globally managed unpack TempDirectory and downloads there when a retained download directory has no match."
+    },
+    {
+      "file": "captures/prepare.py",
+      "lines": [
+        492,
+        550
+      ],
+      "finding": "The normal resolver can fetch a separate PEP658 metadata file into that temporary path and read its contents into metadata objects."
+    },
+    {
+      "file": "captures/temp_dir.py",
+      "lines": [
+        47,
+        63
+      ],
+      "finding": "Unconfigured temporary directory kinds default to deletion."
+    },
+    {
+      "file": "captures/temp_dir.py",
+      "lines": [
+        157,
+        166
+      ],
+      "finding": "Context exit calls cleanup when the explicit flag/registry default selects deletion."
+    },
+    {
+      "file": "captures/req_command.py",
+      "lines": [
+        79,
+        114
+      ],
+      "finding": "--no-clean suppresses only the listed build-env, ephem-wheel-cache and req-build registry kinds. unpack is not in that list."
+    },
+    {
+      "file": "captures/install.py",
+      "lines": [
+        478,
+        505
+      ],
+      "finding": "The normal report/dry-run path returns before the later full-download preparation pass, so a candidate report is not itself the retained wheel set."
+    }
+  ],
+  "recommended_proposal": {
+    "method": "Retain the supported pip CLI workflow and explicitly distinguish retained trial evidence from program-managed ephemeral files. Do not monkeypatch pip or build an unreviewed capturing proxy.",
+    "retained_evidence": "Keep admitted runtime archive, exact source archive/tag captures, final selected hash-bound wheelhouses, both build outputs/source trees, graph reports/metadata inventories, stdout/stderr, command/measurement/failure receipts and discovered notices. No controller deletion/cleanup of these or any previous trial/protected input.",
+    "transient_exception": "Only if separately reviewed and explicitly included in founder trial permission: allow the invoked exact pip version to perform its normal internal lifecycle on files it creates under the verified private trial TEMP tree. No directory purge by the agent, no pre-existing output removal, no overwrite of retained evidence, no exception outside that owned subtree.",
+    "claim_limit": "Do not promise an archive of every intermediate HTTP/PEP658 body, byte-for-byte resolver network transcript, zero internal deletion, hard disk quota or OS egress isolation. Freeze and review the selected concrete artifacts/metadata independently before installation.",
+    "no_changes_to": [
+      "Normal exact CPython3.15.0 and bundled pip26.2.1 intent, subject to actual admission.",
+      "All14 root families/extras, build dependencies, two PyYAML builds/full-wheel-hash comparison, unchanged18 plus prospective6 cases.",
+      "512MiB retained allowance,1GiB floor,64MiB step overhead,80 distributions, artifact limits and180sec deadlines.",
+      "No retry, root/extra removal, downgrade, production adoption or application/global/provider/account/Git change."
+    ]
+  },
+  "alternative_if_not_accepted": "Keep the original strict preservation/no-cleanup requirements and hold execution. A replacement acquisition/resolution method needs a separate concrete reviewed proposal; do not call the existing commands conforming.",
+  "before_any_adoption": [
+    "Independent review of these exact source observations and bounded amendment.",
+    "Founder acceptance of the precise preservation/temporary-lifecycle exception, incorporated into the concrete eventual execution approval.",
+    "A reviewed complete controller must prove owned private paths/streams, before/after retention measurements, executable/argv/graph identities and stopping semantics; source reading alone does not do that.",
+    "Resolve actual offline operation separately; normal local/no-index invocation is not an OS network fence."
+  ],
+  "observations_not_proof": [
+    "Saved upstream pip26.2.1 source was read, not imported/executed; the runtime-bundled bytes remain unacquired.",
+    "No parser, resolver, acquisition, subprocess, build, install, cleanup or network-fence experiment was run.",
+    "No independent verdict, legal/security clearance, graph/stack selection, Phase1 acceptance or trial permission."
+  ]
+}

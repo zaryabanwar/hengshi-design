@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-07",
+  "surface": "docs/software-definition/definition-walkthrough.html",
+  "scope": "D-076 conversation, disclosure and EU privacy proposal visual reconciliation",
+  "browser": "Codex in-app Chromium through documented Playwright/browser controls",
+  "checks": {
+    "desktop_viewport": [
+      1440,
+      1000
+    ],
+    "narrow_viewport": [
+      320,
+      900
+    ],
+    "narrow_document_width": 305,
+    "narrow_changed_panel_scroll_width": 261,
+    "keyboard_summary_toggle": "both closed and reopened with Enter",
+    "complete_changed_panel_inspection": "desktop captures and natural narrow viewport sequences inspected including trailing notes and links",
+    "console_warning_or_error_entries": 0
+  },
+  "accepted_captures": [
+    "conversation-desktop.jpg",
+    "privacy-desktop-start.jpg",
+    "privacy-desktop-end.jpg",
+    "privacy-narrow-start.jpg",
+    "privacy-narrow-scroll-1.jpg",
+    "privacy-narrow-scroll-2.jpg",
+    "privacy-narrow-scroll-3.jpg",
+    "privacy-narrow-scroll-4.jpg",
+    "conversation-narrow-start.jpg",
+    "conversation-narrow-scroll-1.jpg",
+    "conversation-narrow-scroll-2.jpg",
+    "conversation-narrow-scroll-3.jpg",
+    "conversation-narrow-scroll-4.jpg"
+  ],
+  "excluded_as_complete_captures": [
+    "privacy-desktop.jpg",
+    "privacy-narrow.jpg",
+    "conversation-narrow.jpg"
+  ],
+  "excluded_capture_reason": "coordinate/full-page clip did not include the whole requested panel; later natural viewport captures replace it",
+  "limits": [
+    "Presentation QA only",
+    "No real mobile/touch qualification",
+    "No chat timer, rights service or retention enforcement implemented",
+    "No independent review verdict on amended source/pixels",
+    "No full WCAG or Phase 1 acceptance"
+  ]
+}

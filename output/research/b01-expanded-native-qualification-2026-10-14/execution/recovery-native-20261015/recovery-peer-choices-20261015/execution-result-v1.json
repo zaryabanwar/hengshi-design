@@ -1,0 +1,115 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "authoredDate": "2026-10-15",
+  "verifiedDate": "2026-10-17",
+  "authority": "D094 as amended by D095",
+  "fileKey": "GOmLP6Cv96l768ueSrZ5Dg",
+  "familySet": "172:3740",
+  "newEdges": [
+    {
+      "source": "172:3721",
+      "control": "172:3724",
+      "label": "○ Detailed 3D",
+      "sourceTuple": [
+        "SEMANTIC",
+        "SEMANTIC",
+        "NOT_APPLICABLE"
+      ],
+      "target": "172:3664",
+      "targetTuple": [
+        "SEMANTIC",
+        "HIGH",
+        "NOT_APPLICABLE"
+      ],
+      "settings": "detailed-choice-settings.json"
+    },
+    {
+      "source": "172:3721",
+      "control": "172:3728",
+      "label": "○ Simplified 3D",
+      "sourceTuple": [
+        "SEMANTIC",
+        "SEMANTIC",
+        "NOT_APPLICABLE"
+      ],
+      "target": "172:3702",
+      "targetTuple": [
+        "SEMANTIC",
+        "LOW",
+        "NOT_APPLICABLE"
+      ],
+      "settings": "simplified-choice-settings.json"
+    },
+    {
+      "source": "172:3664",
+      "control": "172:3677",
+      "label": "Apply selection",
+      "sourceTuple": [
+        "SEMANTIC",
+        "HIGH",
+        "NOT_APPLICABLE"
+      ],
+      "target": "169:3402",
+      "targetTuple": [
+        "HIGH",
+        "HIGH",
+        "NOT_APPLICABLE"
+      ],
+      "settings": "detailed-apply-settings.json"
+    },
+    {
+      "source": "172:3702",
+      "control": "172:3715",
+      "label": "Apply selection",
+      "sourceTuple": [
+        "SEMANTIC",
+        "LOW",
+        "NOT_APPLICABLE"
+      ],
+      "target": "172:3626",
+      "targetTuple": [
+        "LOW",
+        "LOW",
+        "NOT_APPLICABLE"
+      ],
+      "settings": "simplified-apply-settings.json"
+    }
+  ],
+  "sharedSettings": {
+    "trigger": "On click",
+    "action": "Change to",
+    "animation": "Instant",
+    "disclosure": "NOT_APPLICABLE"
+  },
+  "noOpInspections": [
+    {
+      "control": "172:3730",
+      "purpose": "Current Quick Access choice",
+      "evidence": "current-choice-no-reaction.json"
+    },
+    {
+      "control": "172:3734",
+      "purpose": "Apply current Quick Access",
+      "evidence": "current-apply-no-reaction.json"
+    }
+  ],
+  "playback": {
+    "detailed": "playback06 through09: Detailed pending retains Quick Access; Apply changes context and delivery captions to Detailed with Services.",
+    "currentChoice": "playback01 through05: current Quick Access choice and current Apply retain displayed default/context and bottom anchor; no exact pixel-scroll measurement.",
+    "simplified": "The early playback10 through14 attempt did not reach Simplified; it remained Detailed after actions were issued without separately verifying settled restart. These are unsuccessful observations despite provisional filenames. playback15 verified the default, but the session ended before its next result. On2026-10-17 playback16 through20 independently observe default→Simplified pending under Quick Access→Apply→Simplified in force with Services. No design repair was made on17October.",
+    "balanced": "Prior two-edge receipt remains separate; not re-reviewed by this packet."
+  },
+  "archive": "after-recovery-peer-branches.fig",
+  "remainingPlannedEdges": 311,
+  "totalAuthoredPlannedEdges": 13,
+  "limits": [
+    "Exact IDs are corroborated only to extent supported by saved UI URL/tuple/Label observations and prior native census; no full graph API read",
+    "No complete four-peer cycle or all active/pending combinations",
+    "No full source preservation, restore or EXIT proof",
+    "No reset, full scroll matching, accessibility, runtime application or complete B01/Phase1 acceptance"
+  ],
+  "MCPCalls": 0,
+  "additionalAIPrompts": 0,
+  "applicationOrGitChanges": false
+}

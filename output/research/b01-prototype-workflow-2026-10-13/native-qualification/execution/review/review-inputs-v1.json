@@ -1,0 +1,67 @@
+{
+  "product": "Hengshi Design v1",
+  "scope": "Bounded unexpected source-nudge recovery result and unchanged trial continuation proposal; no external actions",
+  "inputs": [
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/execution-result-v1.json",
+      "snapshot": "inputs/00-execution-result-v1.json",
+      "bytes": 1908,
+      "sha256": "54c9df372306fbece95cdfaf75f855a0439831a3bb6e061257fb69fc1f5f8e4f"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/recovery-continuation-proposal-v1.json",
+      "snapshot": "inputs/01-recovery-continuation-proposal-v1.json",
+      "bytes": 934,
+      "sha256": "3667e4017849312fdb5735f1221d3e0f4f0c42a7aa47c46eaaebbd267211ca0e"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/archive-comparison-v1.json",
+      "snapshot": "inputs/02-archive-comparison-v1.json",
+      "bytes": 1544,
+      "sha256": "4721a0a7834c1dc6a0bfb5448f24921fa5a245a8d630161dd678ae2c02f7e572"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/before-trial-v1.fig",
+      "snapshot": "inputs/03-before-trial-v1.fig",
+      "bytes": 364559,
+      "sha256": "d128c4791e7ef7c674a1196cabf8e1850348ea353427ac989a741f9d7b084236"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/after-recovery-v1.fig",
+      "snapshot": "inputs/04-after-recovery-v1.fig",
+      "bytes": 364559,
+      "sha256": "7aaf98faf75454d3e1070c24dbe78f33e512e4b26308ab1e75c3d8224adf5b22"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/source-restored-current.txt",
+      "snapshot": "inputs/05-source-restored-current.txt",
+      "bytes": 20470,
+      "sha256": "453148381f0dbbdd18fc9b2291a57ecbad52fdbc38d98f89807c4c0a503ee312"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/source-restored-current.png",
+      "snapshot": "inputs/06-source-restored-current.png",
+      "bytes": 188960,
+      "sha256": "84fdf5178ccf8dad003e37cf31de9206685f469bc9cc90278a9433c0936013b3"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/correction1/qualification-plan-v1.json",
+      "snapshot": "inputs/07-qualification-plan-v1.json",
+      "bytes": 18481,
+      "sha256": "447309d755223c9e8517d88293d550d89c4c73fbc66251611c3c3534e2bdada6"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/correction1/review/independent-review-qualification-plan-v1.json",
+      "snapshot": "inputs/08-independent-review-qualification-plan-v1.json",
+      "bytes": 18269,
+      "sha256": "07bba89a0f344d8d7aee8dfc0706bc5de52e92f4902a408c2273714c3e38f3d2"
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "inputs/09-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    }
+  ],
+  "receipt_target": "independent-review-recovery-v1.json"
+}

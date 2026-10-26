@@ -1,0 +1,110 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-17",
+  "scope": "Logical mechanism candidate for existing SEC001/002/004/005 identity/session boundary. No deployed endpoint, role grant, key, provider/account, persistence/migration or application change. Exact HTTP/claims/cryptographic and physical guard bindings follow separate review/adoption.",
+  "cause": "SECURITY_PRIVACY_CONTRACT staff activity/fencing and cookie/CSRF sections require current shared session generation but leave token rotation/reuse, multi-tab/lost-cookie response and authoritative store/clock ordering open. DE07 deliberately has no selected physical mapping.",
+  "accepted": {
+    "idleSeconds": 1800,
+    "absoluteSeconds": 28800,
+    "activity": "Existing first guarded admission of allowlisted staff business commands only; first pending admission may count once. Reads/poll/replay/reconnect/CSRF/status/rotation/provider output/client gestures do not count. Existing per-command explicit mapping remains mandatory.",
+    "identity": "Current permitted Hengshi principal mapped from validated Entra tid/oid or separately activated approved emergency identity; no email/role claim lookup authority. Microsoft sign-out alone is not local revocation.",
+    "transport": "Existing same-origin HttpOnly/Secure/SameSite staff JWT cookie and independent current session CSRF proof; no JWT body/storage/Bearer fallback."
+  },
+  "stateOwner": {
+    "candidate": "Use the already-required PostgreSQL durable authority for staff principal/session security metadata and guarded transitions. Redis remains required ephemeral rate-limit/invalidation assistance, never sole session authority. This recommends a physical family already in the architecture, not a created table/deployment or adopted retention policy.",
+    "principal": "Stable private principal_ref and enabled/activation state plus monotonic security_epoch/current authority revision. Current explicit grants and current external-identity freshness evidence remain separate requirements, not a grant cached in a JWT.",
+    "session": "Independently generated server session_ref bound to one principal and one authentication source; original issued_at; last_qualifying_admission_at; absolute_deadline; terminal revocation/replacement marker; session security epoch; current CSRF generation and protected secret reference; current token record and at most one prior renewal-recovery record. All identifying/secret-class material keeps existing purpose/retention protection.",
+    "currentToken": "Fresh independent token ID and token generation, issued_at, fixed token expiry no later than original absolute boundary, renewal_due_at, original signing-profile/key association and exact minimal claims bindings. No raw JWT is an ordinary stored record. Signed token possession without this current authoritative record grants nothing.",
+    "priorToken": "At most the immediately preceding token ID/generation, its original signature/claims associations and an exact renewal-recovery-until boundary. Not a second business credential; no chain/history of prior bearers or indefinite token table. Retire after bounded recovery and known settlement under mapped disposal.",
+    "unknown": "Unknown/missing authority, clock, key, source purpose, limiter or unsettled accounting fails closed. Redis/outage never reconstructs an authoritative session from JWT claims, network identity or stale worker caches. No protected work bypasses required current rate limits."
+  },
+  "ordering": {
+    "guards": "Recommend principal guard then session guard then required object/purpose/source guards in one consistent deterministic order. Principal disable/security-epoch changes serialize against session admission; session rotation/revocation/activity serialize against the same current session guard. Object guards keep their existing independent ordering and revisions. Choose concrete SQL lock/conditional-update forms only after exact mapping and deadlock/rollback review.",
+    "clock": "Evaluate current trusted database time after waiting for all required guards, not a transaction-start timestamp obtained before a wait. Use one authoritative precision and clock-health policy; never move last activity backward. A detected rollback/unknown clock denies rather than adding expiry grace. Exact drift/failover health source and precision remain a binding, not a selected tolerance.",
+    "eligibility": "At decision time require principal enabled/current security epoch and required identity-source freshness; session active and now strictly before min(last qualifying admission+1800s, original issued+28800s); valid token signature/type/issuer/audience/key/claims; correct current token eligibility for the boundary; current CSRF for mutations; current action/object/purpose/consent/assignment and expected revision. Equality at a deadline denies. No JWT leeway may extend the authoritative session boundary.",
+    "activity": "Update last qualifying admission only in the same guarded first-admission transition of the mapped unique business operation, after all guards pass and before original session expiry. Same-operation replay and unknown outcome reconciliation do not update it. A later pending/failed provider effect is separate from that admission. No transport rotation/status call manufactures activity.",
+    "overflow": "Generation/revision overflow or unrepresentable precision cannot wrap, reset to one, allocate a replacement implicitly or admit work; return safe unavailable pending controlled recovery."
+  },
+  "rotation": {
+    "intervalCandidateSeconds": 900,
+    "priorRecoveryCandidateSeconds": 60,
+    "proposalStatus": "15-minute token renewal and60-second immediate-prior recovery are unmeasured Hengshi security/usability candidates, not founder-approved timing or standards-prescribed numbers. They do not replace the accepted30-minute idle/eight-hour absolute limits.",
+    "fixedSession": "A token issued for the session has no later expiry than the original session absolute boundary. Token currentness and a mandatory renewal_due_at additionally gate business admission/output; an unexpired JWT is not sufficient. Keeping this separate lets an idle-eligible session deliberately renew after a browser sleep without accepting an expired JWT or inventing a new long-lived browser refresh secret.",
+    "due": "Set renewal_due_at to min(token issue+900seconds, original absolute deadline). At/after due, the current token may use only bounded session-control/status/CSRF retrieval/renewal/logout within still-current session authority, not new business commands/private business outputs. No sensitive business read, provider effect or socket ticket issues under due/retired token eligibility. The session-control status discloses no work/object/grant inventory.",
+    "init": "Successful existing sign-in admission generates new session identity, security/CSRF/token generations and token ID. Never accept a caller-chosen session ID or upgrade anonymous/visitor authority. Revoke an identified replaced current session under its proper guard before a replacement becomes authoritative; uncertain sign-in outcome is reconciled, not a second unbounded session issue.",
+    "normal": "Only the guarded CSRF/origin-protected renewal control can rotate; ordinary private GETs keep their no-Set-Cookie contract. Recheck current principal/session/source freshness and clock, reserve bounded work, and serialize on the session. When due, create exactly one new independent token ID/generation and fixed issuance/expiry/key bindings; move only the previous current record into the single recovery slot until min(cutover+60seconds, its original token expiry, current session idle/absolute boundary). No original session anchor or last activity is reset.",
+    "early": "A valid current-token renewal request before its due time may re-deliver that same current token claims/identity and original expiry under protected output admission, never allocate another generation or extend a clock. The frontend normally waits until renewal is due; no busy renewal loop is authorized.",
+    "recovery": "During the immediate prior recovery interval, a correctly signed prior token can use only the protected renewal-recovery control with this still-current session CSRF/source guards. It cannot read private work, send/accept/end, dispatch, mint channel tickets, renew idle or fork a new successor. Re-deliver the existing current token claims/identity with its existing times/key association. Concurrent old-token calls resolve to that same current generation; recovery never creates generation+1.",
+    "reuse": "Outside that bounded prior interval, an otherwise authentic retired token is denied; never restore it, extend recovery, revoke an unrelated current session based on unverified data or automatically kill a legitimate session merely for a stale-tab presentation. A security event may record a redacted category under existing policy. Suspected compromise requires its separately authorized risk/revocation workflow. No proof can distinguish stolen from delayed valid bearer possession perfectly.",
+    "delivery": "Store minimum protected metadata needed to reconstruct the existing current claims/identity with its original signing association; never issue changed claims/times to repair delivery. If the key/source material cannot safely re-deliver, fail closed and offer reauthentication. Do not store raw JWT bodies in ordinary session/audit records. Exactly-once browser cookie delivery is not claimed.",
+    "lateCookie": "Before a credential/control response is admitted, recheck current session/principal/security epoch, current token record, source purpose and expiry. An older delayed network response may still overwrite a browser cookie; server currentness/revocation remains authoritative and may require recovery or fresh sign-in. It never revives a revoked/replaced session or grants a command. Client response epochs and tab coordination are usability aids, not server authority or guarantees about Set-Cookie ordering.",
+    "noEndpointSelection": "These are logical functions in the existing identity boundary. Exact endpoint IDs/paths/methods, schemas, Origin/CSRF/read classification, reply taxonomy, body/header/target ceilings, finite service/session/network counters and initialization/renewal/logout accounting must be closed before implementation; this proposal does not smuggle a new route into the catalogue.",
+    "cookieLifetime": "Recommend a browser-session cookie for normal issue/re-delivery: omit both Max-Age and Expires rather than setting a stale browser-side idle deadline that cannot track later admitted WebSocket/business activity. Retain exact Secure/HttpOnly/SameSite/Lax/Path attributes. The existing rule still caps any future explicitly selected persistent Max-Age/Expires by valid token and current idle/absolute boundaries; no persistent variant is selected. Server idle/absolute/token/generation enforcement is always authoritative, and browser close/restore is not logout. Explicit logout still expires the exact cookie identity. No JWT is exposed to JS and no ordinary private GET sets a cookie."
+  },
+  "channelsAndEffects": {
+    "rotationFence": "Token cutover retires old-token business admission and old token-bound channel/send-ticket/output bindings under the existing staff-channel protocol. Invalidate unused old tickets and fence queued private output. Reinitialize/reconcile under current session/token/assignment/consent before fresh readiness; no old text command is automatically resent. This is access continuity work, not a visitor conversation ending, reassignment, availability change or parent-operation cancellation.",
+    "jobs": "A business intent already durably admitted remains an immutable operation with its recorded current authority/service identity and independent lifecycle. Session loss does not prove it had no effect or cancel a provider call. Later effects/disclosure still need their existing current actor/service/object/purpose guards; no worker retains a stale JWT as durable authorization.",
+    "outputAdmission": "One output admission covers one already-serialized bounded private projection or ordered frame. Recheck all participating session/principal/token/object/purpose/source and copy-expiry generations immediately before final writer handoff, including operator lookahead/anchor dependencies when applicable. An admission verdict is not a durable reusable permit for delayed private output. Unknown/stale generations suppress, never truncate into a success or send a private reason.",
+    "physicalFence": "The physical per-session final-writer admission must serialize with revocation/rotation and the trusted expiry check across workers. Propose a session-guarded final nonblocking handoff of exactly that bounded projection, with no later local queue reuse of its authority; a delayed worker must re-enter the current guard. Do not hold an open database transaction across unbounded network/provider I/O. A database commit/cache notification alone does not prove output fencing; exact guard-to-writer linkage, expiry and bounded cancellation/drain evidence remain required. If it cannot be proven, this candidate cannot be adopted for private output.",
+    "irreversibility": "Bytes already handed off/admitted under an earlier valid decision may arrive later and cannot be recalled. Known revocation blocks all later admissions, unused tickets and not-yet-admitted queued data. No claim of instantaneous remote erasure, perfect packet delivery or rollback of an admitted business effect follows."
+  },
+  "revocation": {
+    "local": "Eligible same-origin CSRF-protected logout atomically marks the exact current session revoked and invalidates CSRF/token/channel/output generations before acknowledging local invalidation. Clear only the exact existing cookie identity. Repeated old-session logout may return generic signed-out/clear-cookie under current rules, never act on an eligible different session using a stale proof. Uncertain acknowledgement is not a new login or evidence of cancelled consultation.",
+    "principal": "Current authorized disabling/removal/security-risk decision increments principal security epoch and fences all affected sessions before new protected admission/output. Do not rely on asynchronously enumerating every socket or on JWT expiration. Operational grants and who may request principal-wide action remain existing explicit policy inputs; administrator alone grants no power.",
+    "permissionChange": "A privilege/security-context change cannot silently elevate an existing browser session. Fence affected old authority and require fresh deliberate identity admission where the current policy calls for reauthentication; rotate/reissue alone is not acceptance of new grants. A decreased object/purpose permission takes effect at every current guard even if token/session clocks remain valid.",
+    "provider": "Microsoft session sign-out is a separate event. A verified supported front-channel/signal integration can invoke only a reviewed exact local revocation binding; it is not configured or presumed reliable here. Do not redirect to Microsoft instead of invalidating Hengshi, infer all local sessions were revoked remotely, or trust an arbitrary callback/session ID. Current Entra eligibility freshness and outage/signal binding remain an explicit separate requirement; unknown required freshness denies affected work, not a free offline grace.",
+    "restore": "Restore/restart cannot resurrect an old active epoch or copy a cookie into a new session. Until authoritative principal/session/security generations and relevant revocation/deletion evidence are current and trustworthy, deny existing staff sessions and require reviewed recovery/new sign-in. Do not infer cleanup or expiry from process death."
+  },
+  "client": {
+    "coordinator": "Use one bounded in-tab auth coordinator with at most one renewal attempt in flight, distinct auth/session/navigation epochs and no JWT in JS. Cross-tab hints may reduce duplicate calls but do not elect a trusted global writer. Requests remain server serialized; due/changed-session replies trigger a deliberate safe status/recovery path, not automatic business mutation replay.",
+    "visibleRenewal": "A visible still-current staff page may perform one protected transport renewal when the authoritative status says due; it does not count as activity. No renewal catch-up storm on wake/network restore or unbounded timer/retry. Unknown result uses the one bounded current/prior recovery then deliberate reauthentication. Exact control resources and warning/screens require the later complete-process design.",
+    "newLogin": "A fresh sign-in creates separately validated session authority; retain only still-permitted work by its source purpose and currently rechecked principal/object/assignment/consent. Preserve immutable pending-operation meaning; reconcile before a new command. No lost ephemeral transcript recovery, browser transcript cache or expired-proof resurrection.",
+    "accessibility": "Keep accepted warning, accessible sign-in/focus, permitted-progress preservation and TL-WARN-EXTEND obligations. Token maintenance must not create fake More time activity. If renewal interrupts token-bound staff text channels, show reconnecting/unknown honestly and preserve only permitted draft/reconciliation state. Full-process interaction and accessibility remain unqualified."
+  },
+  "futureTests": [
+    "Two tabs race A->B renewal: one current generation; prior calls can only recoverB within original window; noC fork or new clock.",
+    "Renewal response lost then recovered without extending token/session/recovery times; response arrives after replacement/logout and cannot restore old server authority.",
+    "Cookie expiry versus late qualifying socket activity: normal session cookie omits persistent expiry so it cannot silently lose a still-eligible credential at an obsolete idle timestamp; browser restore never bypasses current server expiry/revocation.",
+    "At exactly idle/absolute/renewal/recovery boundary, apply correct eligible-control versus denied-business distinction; post-lock trusted time, clock rollback and unknown state fail closed.",
+    "First admitted pending staff business command updates idle once; replay/read/status/rotation/output/heartbeat storms do not.",
+    "Logout/principal disable races lookup and final writer admission across workers; stale queued data/tickets and operator lookahead/anchor metadata are suppressed.",
+    "Token cutover with in-flight text has no automatic resend, second owner, End, fabricated availability or cancelled booking; new readiness rechecks current bindings.",
+    "Redis limiter loss or PG/clock/key uncertainty cannot revive a JWT-only session, reset counters or release unsettled reservations; restore cannot roll back authority.",
+    "Actual raw-token/algorithm/issuer/audience/type/required-claim/parser/cookie/CSRF/Origin, load/cancellation and browser accessibility tests follow approved encoding/implementation. No prose or schema fixture proves them."
+  ],
+  "primarySupport": [
+    {
+      "source": "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+      "checked": "2026-10-17",
+      "meaning": "Distinguishes idle/absolute/renewal and notes renewal races and server invalidation; no prescription of Hengshi numeric intervals/activity allowlist."
+    },
+    {
+      "source": "https://www.rfc-editor.org/rfc/rfc8725.html",
+      "checked": "2026-10-17",
+      "meaning": "Explicit trusted algorithms, token-kind/issuer/audience validation; not self-contained authorization."
+    },
+    {
+      "source": "https://pyjwt.readthedocs.io/en/stable/api.html",
+      "context7": "/jpadilla/pyjwt",
+      "checked": "2026-10-17",
+      "meaning": "Require configured algorithms/claims and issuer/audience; no dynamic algorithm from token. Documentation currently labels2.15.1, an observation only, not selected version or installation."
+    },
+    {
+      "source": "https://www.postgresql.org/docs/18/explicit-locking.html",
+      "checked": "2026-10-17",
+      "meaning": "Row guard primitives are possible building blocks, not proof of cross-worker output handoff or selected SQL/store policy."
+    },
+    {
+      "source": "https://learn.microsoft.com/en-us/entra/identity-platform/v2-protocols-oidc#single-sign-out",
+      "checked": "2026-10-17",
+      "meaning": "Application local sessions and optional configured front-channel logout are separate; no tenant/provider operation or guaranteed event propagation."
+    },
+    {
+      "source": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie",
+      "checked": "2026-10-17",
+      "meaning": "Omitting Expires/Max-Age yields a browser-session cookie; restore can retain sessions, so server clock/revocation remains required. No persistent-cookie retention or browser-close logout claim."
+    }
+  ],
+  "acceptance": "Independent security/architecture review of this logical candidate first. Numeric rotation/recovery, PostgreSQL security-state/copy policy, exact identity freshness and physical final-writer mechanism, concrete claim/algorithm/key/HTTP/control/resource encodings, qualification and integrated founder adoption remain required. No accepted session clocks are reopened, no missing mapping becomes a permissive default, and no prototype feature is changed."
+}

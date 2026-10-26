@@ -1,0 +1,90 @@
+{
+  "purpose": "Scoped visual translation of existing proposed publication/client catalogue/HTML binding/scene lookup into one static definition section; no product runtime or full visual acceptance",
+  "inputs": [
+    {
+      "source": "docs/software-definition/definition-walkthrough.html",
+      "snapshot": "00-definition-walkthrough.html",
+      "sha256": "1cb5dc585de63a6633edc788e457edc3ede1c6105680e7b41dca901642e3b777"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "snapshot": "01-PUBLICATION_CONTRACT.md",
+      "sha256": "79db4c69345222a0cac60951b92f239e1f5e06a29c5e9e85622ea5b914f60ea5"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/public-html-binding.schema.json",
+      "snapshot": "02-public-html-binding.schema.json",
+      "sha256": "a83c68a6bfd8f68f2a68e51ef466d90440b1f993a76264a235557574e118c364"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/client-build-catalogue.schema.json",
+      "snapshot": "03-client-build-catalogue.schema.json",
+      "sha256": "d41b989a4d5ab29178a7c498b200c82093ce9f09c34e3b8a2a42b68c56f5e0bf"
+    },
+    {
+      "source": "docs/phase-1-3d/SCENE_ASSEMBLY_CONTRACT.md",
+      "snapshot": "04-SCENE_ASSEMBLY_CONTRACT.md",
+      "sha256": "cb51f5a98c2f1453fcaaa5176eb8cda47288d8ee5dc1d0f2db66dba499ccd062"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "05-SECURITY_PRIVACY_CONTRACT.md",
+      "sha256": "74ab420b5bec9f0aad72f59178f4ea7c626bd14edfa9d4ba02f3aa1dd0a1a254"
+    },
+    {
+      "source": "docs/phase-1-3d/WORLD_EXPERIENCE.md",
+      "snapshot": "06-WORLD_EXPERIENCE.md",
+      "sha256": "fab7bf1ec7d29621947763b45ecb9eb5e24abcad66f0a169cc4ce06a2b6adb33"
+    },
+    {
+      "source": "docs/phase-1-3d/CAMPUS_ASSET_BUILD_SPEC.md",
+      "snapshot": "07-CAMPUS_ASSET_BUILD_SPEC.md",
+      "sha256": "42b0d89074b968704fa44d7ae40803ab4f5fab3f39c64a671ee75b2da66ba9e3"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PUBLICATION_READ_HTTP.md",
+      "snapshot": "08-PUBLICATION_READ_HTTP.md",
+      "sha256": "a383350b1ed9301eae322b617e95055fc2731db0c877e2f67c8f60fcfb50d3a0"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/public-html-binding-v1-2026-10-05.md",
+      "snapshot": "09-public-html-binding-v1-2026-10-05.md",
+      "sha256": "13eb6d49833449a3478349f9a0de1db7a88cd36bc4de2bb3929567483248796f"
+    },
+    {
+      "source": "specs/003-3d-experience-completion/spec.md",
+      "snapshot": "10-spec.md",
+      "sha256": "2aceefa18e51bd11a450d79b2c75d0a2f3a0783baac785de12e56956fa03d4f9"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "11-DECISIONS.md",
+      "sha256": "1d53a14ac3347ebeefeeb728e03862b09de111b748cef4e48d5f4ca19141b6d8"
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "12-AGENTS.md",
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "13-constitution.md",
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "output/playwright/definition-consolidation/publication-flow-desktop-2026-10-05.png",
+      "snapshot": "14-publication-flow-desktop-2026-10-05.png",
+      "sha256": "9402df792d8a2c7f92ec479df53ece95b3e15c07727bd18a28edf74d9a16b34e"
+    },
+    {
+      "source": "output/playwright/definition-consolidation/publication-flow-mobile-2026-10-05.png",
+      "snapshot": "15-publication-flow-mobile-2026-10-05.png",
+      "sha256": "79ee49204f22517b23ac7f690819cdb268fdc89c232ef3355bdc364a3e5ddfab"
+    },
+    {
+      "source": "before new publication-flow section/navigation",
+      "snapshot": "definition-walkthrough.before.html",
+      "sha256": "2dfe6d38d4c6e15b8ba225a1516029d005262f9a5a7455e3ecae47984af62b25"
+    }
+  ]
+}

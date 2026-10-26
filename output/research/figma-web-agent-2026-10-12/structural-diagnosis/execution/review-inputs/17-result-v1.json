@@ -1,0 +1,69 @@
+{
+  "product": "Hengshi Design v1",
+  "date": "2026-10-12",
+  "status": "DOING",
+  "scope": "Founder-authorized removal of temporary comparison root38:3157 only, using normal browser editor input",
+  "authorization": "authorization-v1.json",
+  "reviewedPlan": "../correction2/cleanup-plan-v1.md",
+  "planReview": "../correction2/independent-review-cleanup-plan-v1.json",
+  "actual": {
+    "deleteKeyOperations": 1,
+    "removedRootLookup": null,
+    "temporaryLayerAbsentInEditor": true,
+    "completePreflightRows": 302,
+    "preflightRowsEqualFrozen": true,
+    "retainedTopLevelIdsTypesOrderEqual": true,
+    "retainedTopLevelCount": 17,
+    "originalSourceUnits": 11,
+    "originalSourceStructureAndDimensionsEqual": true
+  },
+  "preservedRefusals": [
+    {
+      "path": "preflight-refusal.json",
+      "reason": "21300-byte complete reply exceeded18000-byte bound; no output truncation or deletion"
+    },
+    {
+      "path": "admission-refusal.json",
+      "reason": "All302 rows matched, but agent reported empty selection; no deletion at that check. Explicit root selection and fresh editor one-item/geometry guards followed before the single delete operation."
+    }
+  ],
+  "evidenceLimit": "Pre/post structural data are native-agent non-atomic reports, compared locally. Editor screenshots support selection/removal; this is not a full descriptor or appearance diff, historical cleanup-cause proof, tested native restore, interaction/accessibility evidence or complete B01/Phase1 acceptance.",
+  "archives": {
+    "before": {
+      "path": "../HSD_UIR_B01_BEFORE_CLEANUP_V01.fig",
+      "bytes": 369969,
+      "sha256": "baf855e7326a2f2cc0a9dca3b2ad0df9a9afa25312a7ef3648fe8e29cd6681d9"
+    },
+    "after": {
+      "path": "HSD_UIR_B01_AFTER_CLEANUP_V01.fig",
+      "bytes": 365944,
+      "sha256": "ed4e99a946f5f47f0e521d4561a82f67bebac2cb3e14204a16c8cecea84967c0",
+      "integrity": "archive-integrity.json",
+      "restoreTested": false,
+      "exitAcceptance": false
+    }
+  },
+  "credits": {
+    "observedAfterCompletedSixReadOnlyPrompts": {
+      "monthlyRemaining": 384,
+      "dailyRemaining": 34,
+      "resetLabel": "Nov1",
+      "evidence": "credits-after-cleanup.png"
+    },
+    "mcpCountsUnchanged": {
+      "attempts": 36,
+      "conservativelyMetered": 33
+    }
+  },
+  "externalEffects": {
+    "nativeEditorRootDeletion": true,
+    "aiPromptsReadOnly": true,
+    "newFigmaFile": false,
+    "mcpCall": false,
+    "sharingOrAccountChange": false,
+    "paidActivation": false,
+    "applicationChange": false,
+    "gitOperation": false
+  },
+  "independentResultReview": "Not yet commissioned; earlier permission covered the cleanup plan only"
+}

@@ -1,0 +1,24 @@
+{
+  "result": "PASS",
+  "task_status": "DOING",
+  "reviewer": "/root/review_directory_references_v1",
+  "manifest_sha256": "7d37d3350fb7f60cccfb10faba7f03f93a6cded778b07a2e8b195f2d349f7c0f",
+  "scope": "Reference/navigation accuracy only: two canonical documents, no new controls, schema, UI or product acceptance",
+  "matching_initial_final_pairs": 18,
+  "catalogue_sha256": "5b4b3b54ca8ce56584c9d9c69479368ed6857b9f4d28a73a04f85a4be1beb7f4",
+  "reconciliation_map_sha256": "b898aa17b24da49016b29b3da1de08ce8ccf49c6cbd4ed0d4f069cb314b83361",
+  "findings": [],
+  "independent_observations": [
+    "New local links and fragments resolve",
+    "Changes limited to navigation, two reconciliation rows and added subsection",
+    "Catalogue field dictionary/control suffix byte-for-byte unchanged",
+    "Review scopes, original CLI failure and adoption limits preserved"
+  ],
+  "limits": [
+    "Reference accuracy only",
+    "No inherited review acceptance",
+    "No new controls or runtime tests",
+    "No implementation authority or integrated Phase 1 acceptance",
+    "Commits and pushes remain deferred"
+  ]
+}

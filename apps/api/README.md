@@ -1,3 +1,55 @@
+# Hengshi Design API — protected prototype notes for v1
+
+The [root native-operation guide](../../README.md#native-local-operation-on-windows)
+is the current startup entry point. Docker is not required. Reuse the configured
+local PostgreSQL cluster and existing Python environment; keep credentials local
+and confirm port/process ownership before binding. Current application code stays
+protected while [Phase 1 definition](../../docs/software-definition/README.md)
+is completed and approved.
+
+`run.ps1` only activates the environment. Explicitly run Uvicorn from `apps/api`
+with the existing virtual-environment interpreter once database/configuration and
+port checks pass. A successful `/health` response does not verify a database query:
+see `app/main.py`. An absent `DATABASE_URL` selects the unsafe SQLite fallback in
+`app/db/session.py` (R-005); do not claim that as native PostgreSQL operation.
+Process environment can override `.env`; do not print either's secret values.
+
+The verified 2026-10-04 walkthrough uses the existing user-owned PostgreSQL 17.4
+cluster at `%LOCALAPPDATA%\HengshiDesign\postgres-walkthrough\data`, not the stopped
+Program Files service. The machine-local runtime profile selects `hengshi` on
+`127.0.0.1:5432` with the same existing credentials. API 8001 and web 5173 were
+verified together; port 8000's WSL relay was left untouched. Root instructions
+show process-local database/frontend overrides without modifying `.env` files.
+Health, public World/service reads and the browser's existing-account sign-in to
+`/admin/services` returned successful responses. These observations do not prove
+schema currency, other admin workflows, role denial, free movement or readiness.
+
+The same native setup was rechecked on 2026-10-09: a read-only identity transaction
+confirmed `hengshi` on PostgreSQL 17.4, public reads succeeded, and the existing
+account reached the settled nine-record Services page without page errors.
+The [root guide](../../README.md#4-verify-the-actual-journey) owns the current
+inspection links and limits. Existing prototype records are not the accepted v1
+taxonomy; no schema, seed, account or dependency change was made by this restart.
+
+Migrations, database/role creation, administrator creation, account resets and
+seed scripts are data mutations, not routine startup. They require the applicable
+explicit approval and a verified database target. Do not overwrite an existing
+`.env` with `.env.example`. Run database-writing tests only on the approved isolated
+test database after inspecting their actual fixtures; do not infer safety from a
+command being named `pytest`.
+
+The original authentication examples below are historical illustrations, not
+verified credentials or authorization evidence. R-004 remains open:
+`app/auth/deps.py` currently does not enforce an administrator role in
+`require_admin`. Sign-in and admin-page visibility cannot prove the intended
+production permission model. The approved staff roles/identity extension remains
+definition scope until separately authorized implementation.
+
+## Preserved scaffold snapshot
+
+Read the original instructions below through the current boundaries above. They
+do not authorize migrations, seeding, credential changes or full project launch.
+
 # API Notes
 
 All commands below are Windows PowerShell and should be run from `apps/api`.

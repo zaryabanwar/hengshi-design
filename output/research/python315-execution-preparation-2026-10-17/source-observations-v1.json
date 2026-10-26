@@ -1,0 +1,58 @@
+{
+  "status": "DOING",
+  "observed_at_utc": "2026-10-17T14:59:48.419675+00:00",
+  "interpreter": {
+    "executable": "C:\\Python314\\python.exe",
+    "version": "3.14.5",
+    "machine": "AMD64",
+    "platform": "win32"
+  },
+  "installed_source": [
+    {
+      "name": "ntpath.isreserved",
+      "file": "<frozen ntpath>",
+      "source": "def isreserved(path):\n    \"\"\"Return true if the pathname is reserved by the system.\"\"\"\n    # Refer to \"Naming Files, Paths, and Namespaces\":\n    # https://docs.microsoft.com/en-us/windows/win32/fileio/naming-a-file\n    path = os.fsdecode(splitroot(path)[2]).replace(altsep, sep)\n    return any(_isreservedname(name) for name in reversed(path.split(sep)))\n"
+    },
+    {
+      "name": "ntpath._isreservedname",
+      "file": "<frozen ntpath>",
+      "source": "def _isreservedname(name):\n    \"\"\"Return true if the filename is reserved by the system.\"\"\"\n    # Trailing dots and spaces are reserved.\n    if name[-1:] in ('.', ' '):\n        return name not in ('.', '..')\n    # Wildcards, separators, colon, and pipe (*?\"<>/\\:|) are reserved.\n    # ASCII control characters (0-31) are reserved.\n    # Colon is reserved for file streams (e.g. \"name:stream[:type]\").\n    if _reserved_chars.intersection(name):\n        return True\n    # DOS device names are reserved (e.g. \"nul\" or \"nul .txt\"). The rules\n    # are complex and vary across Windows versions. On the side of\n    # caution, return True for names that may not be reserved.\n    return name.partition('.')[0].rstrip(' ').upper() in _reserved_names\n"
+    },
+    {
+      "name": "zipfile.ZipInfo.__init__",
+      "file": "C:\\Python314\\Lib\\zipfile\\__init__.py",
+      "source": "    def __init__(self, filename=\"NoName\", date_time=(1980,1,1,0,0,0)):\n        self.orig_filename = filename   # Original file name in archive\n\n        # Terminate the file name at the first null byte and\n        # ensure paths always use forward slashes as the directory separator.\n        filename = _sanitize_filename(filename)\n\n        self.filename = filename        # Normalized file name\n        self.date_time = date_time      # year, month, day, hour, min, sec\n\n        if date_time[0] < 1980:\n            raise ValueError('ZIP does not support timestamps before 1980')\n\n        # Standard values:\n        self.compress_type = ZIP_STORED # Type of compression for the file\n        self.compress_level = None      # Level for the compressor\n        self.comment = b\"\"              # Comment for each file\n        self.extra = b\"\"                # ZIP extra data\n        if sys.platform == 'win32':\n            self.create_system = 0          # System which created ZIP archive\n        else:\n            # Assume everything else is unix-y\n            self.create_system = 3          # System which created ZIP archive\n        self.create_version = DEFAULT_VERSION  # Version which created ZIP archive\n        self.extract_version = DEFAULT_VERSION # Version needed to extract archive\n        self.reserved = 0               # Must be zero\n        self.flag_bits = 0              # ZIP flag bits\n        self.volume = 0                 # Volume number of file header\n        self.internal_attr = 0          # Internal attributes\n        self.external_attr = 0          # External file attributes\n        self.compress_size = 0          # Size of the compressed file\n        self.file_size = 0              # Size of the uncompressed file\n        self._end_offset = None         # Start of the next local header or central directory\n        # Other attributes are set by class ZipFile:\n        # header_offset         Byte offset to the file header\n        # CRC                   CRC-32 of the uncompressed file\n"
+    },
+    {
+      "name": "tarfile._get_filtered_attrs",
+      "file": "C:\\Python314\\Lib\\tarfile.py",
+      "source": "def _get_filtered_attrs(member, dest_path, for_data=True):\n    new_attrs = {}\n    name = member.name\n    dest_path = os.path.realpath(dest_path, strict=os.path.ALLOW_MISSING)\n    # Strip leading / (tar's directory separator) from filenames.\n    # Include os.sep (target OS directory separator) as well.\n    if name.startswith(('/', os.sep)):\n        name = new_attrs['name'] = member.path.lstrip('/' + os.sep)\n    if os.path.isabs(name):\n        # Path is absolute even after stripping.\n        # For example, 'C:/foo' on Windows.\n        raise AbsolutePathError(member)\n    # Ensure we stay in the destination\n    target_path = os.path.realpath(os.path.join(dest_path, name),\n                                   strict=os.path.ALLOW_MISSING)\n    if os.path.commonpath([target_path, dest_path]) != dest_path:\n        raise OutsideDestinationError(member, target_path)\n    # Limit permissions (no high bits, and go-w)\n    mode = member.mode\n    if mode is not None:\n        # Strip high bits & group/other write bits\n        mode = mode & 0o755\n        if for_data:\n            # For data, handle permissions & file types\n            if member.isreg() or member.islnk():\n                if not mode & 0o100:\n                    # Clear executable bits if not executable by user\n                    mode &= ~0o111\n                # Ensure owner can read & write\n                mode |= 0o600\n            elif member.isdir() or member.issym():\n                # Ignore mode for directories & symlinks\n                mode = None\n            else:\n                # Reject special files\n                raise SpecialFileError(member)\n        if mode != member.mode:\n            new_attrs['mode'] = mode\n    if for_data:\n        # Ignore ownership for 'data'\n        if member.uid is not None:\n            new_attrs['uid'] = None\n        if member.gid is not None:\n            new_attrs['gid'] = None\n        if member.uname is not None:\n            new_attrs['uname'] = None\n        if member.gname is not None:\n            new_attrs['gname'] = None\n        # Check link destination for 'data'\n        if member.islnk() or member.issym():\n            if os.path.isabs(member.linkname):\n                raise AbsoluteLinkError(member)\n            normalized = os.path.normpath(member.linkname)\n            if normalized != member.linkname:\n                new_attrs['linkname'] = normalized\n            if member.issym():\n                target_path = os.path.join(dest_path,\n                                           os.path.dirname(name),\n                                           member.linkname)\n            else:\n                target_path = os.path.join(dest_path,\n                                           member.linkname)\n            target_path = os.path.realpath(target_path,\n                                           strict=os.path.ALLOW_MISSING)\n            if os.path.commonpath([target_path, dest_path]) != dest_path:\n                raise LinkOutsideDestinationError(member, target_path)\n    return new_attrs\n"
+    }
+  ],
+  "documentation": [
+    {
+      "url": "https://docs.python.org/3.14/library/zipfile.html",
+      "scope": "Read-only member access; inspecting is separate from extraction."
+    },
+    {
+      "url": "https://docs.python.org/3.14/library/tarfile.html#extraction-filters",
+      "scope": "Filters do not replace caller resource and destination controls."
+    },
+    {
+      "url": "https://docs.python.org/3.14/library/os.path.html#os.path.isreserved",
+      "scope": "Windows reserved-name checking helper, not complete destination safety."
+    }
+  ],
+  "documentation_observation_date": "2026-10-17",
+  "context7": {
+    "library_id": "/python/cpython",
+    "query": "zipfile ZipInfo orig_filename and archive member safety; read-only inspection versus extract; tarfile streaming and resource limitations for hostile archives",
+    "returned_sources": "CPython main; guidance only, not selected runtime source"
+  },
+  "limits": [
+    "Versioned docs display3.14.8; observed local tests use existing3.14.5, not3.15.0. No upgrade or production-runtime selection.",
+    "ntpath.isreserved strips the drive with splitroot before component checks; explicit colon rejection implements this stricter namespace.",
+    "Installed ZipInfo stores orig_filename then sanitizes filename; helper rejects alteration. TAR filters can permit/normalize entries excluded by this candidate.",
+    "No destination, writer fence, metadata-allocation hard bound or complete extraction policy follows."
+  ]
+}

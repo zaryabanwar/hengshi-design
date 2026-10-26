@@ -1,0 +1,18 @@
+{
+  "product_release": "v1",
+  "status": "BLOCKED",
+  "qualification": "stopped_on_failure",
+  "scope": "Isolated 43-wheel Windows library coupling only; no Authlib/joserfc, actual Hengshi route, real database/provider or stack adoption",
+  "limits": [
+    "Admission and boundary checks are not an OS-enforced disk quota.",
+    "Synthetic library tests do not prove application identity, authorization, PostgreSQL, OIDC, provider delivery, load or recovery.",
+    "Independent results review, complete latest-compatible graph/provenance/licences/locks and founder adoption remain separate."
+  ],
+  "error": "Installed identities differ from frozen candidate",
+  "measurements": {
+    "retained_bytes": 81642760,
+    "free_disk_bytes": 5395423232
+  },
+  "protected_inputs_unchanged": true,
+  "steps": 6
+}

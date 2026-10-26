@@ -1,0 +1,57 @@
+{
+  "checked_at": "2026-10-05T16:31:45.391126+00:00",
+  "scope": "Selected official metadata only, no package execution, integrity verification or graph/runtime acceptance.",
+  "packages": [
+    {
+      "name": "eslint-plugin-react-hooks",
+      "version": "7.1.1",
+      "source": "https://registry.npmjs.org/eslint-plugin-react-hooks/7.1.1",
+      "sha256": "7ccb572d85841dc9e54fdd98886f5a7c4235392ef4fd1743542ce3aede252bda",
+      "dependencies": {
+        "zod": "^3.25.0 || ^4.0.0",
+        "@babel/core": "^7.24.4",
+        "@babel/parser": "^7.24.4",
+        "hermes-parser": "^0.25.1",
+        "zod-validation-error": "^3.5.0 || ^4.0.0"
+      },
+      "peerDependencies": {
+        "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0 || ^10.0.0"
+      },
+      "dist_integrity_metadata": "sha512-f2I7Gw6JbvCexzIInuSbZpfdQ44D7iqdWX01FKLvrPgqxoE7oMj8clOfto8U6vYiz4yd5oKu39rRSVOe1zRu0g=="
+    },
+    {
+      "name": "@babel/core",
+      "version": "7.29.7",
+      "source": "https://registry.npmjs.org/%40babel%2Fcore/7.29.7",
+      "sha256": "925fb8959156d25b308bc16f1832d8f7ad637864b874692611110fba7436d535",
+      "dependencies": {
+        "debug": "^4.1.0",
+        "json5": "^2.2.3",
+        "semver": "^6.3.1",
+        "gensync": "^1.0.0-beta.2",
+        "@babel/types": "^7.29.7",
+        "@babel/parser": "^7.29.7",
+        "@babel/helpers": "^7.29.7",
+        "@babel/template": "^7.29.7",
+        "@babel/traverse": "^7.29.7",
+        "@babel/generator": "^7.29.7",
+        "@babel/code-frame": "^7.29.7",
+        "convert-source-map": "^2.0.0",
+        "@jridgewell/remapping": "^2.3.5",
+        "@babel/helper-module-transforms": "^7.29.7",
+        "@babel/helper-compilation-targets": "^7.29.7"
+      },
+      "peerDependencies": {},
+      "dist_integrity_metadata": "sha512-RgHBCvtjbOK2gXSNBNIkNoEc9qoVEtau3hj8gEqKQuL3HZAibKarWFEI3Lfm6EYKkLalOh8eSrj9b+ch9H/VBA=="
+    },
+    {
+      "name": "gensync",
+      "version": "1.0.0-beta.2",
+      "source": "https://registry.npmjs.org/gensync/1.0.0-beta.2",
+      "sha256": "ce284b3efff3d6781088332d64ddd79d98a3f079689d278d85d87f2efbb24823",
+      "dependencies": {},
+      "peerDependencies": {},
+      "dist_integrity_metadata": "sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg=="
+    }
+  ]
+}

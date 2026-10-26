@@ -1,0 +1,231 @@
+{
+  "product": "Hengshi Design v1",
+  "reviewed_at_utc": "2026-10-12T04:24:16.824885+00:00",
+  "overall_verdict": "REVISE",
+  "result_accounting_verdict": "PASS",
+  "proposal_verdict": "REVISE",
+  "packet_binding": {
+    "manifest": "output/research/b01-vector-download-recovery-2026-10-12/review-inputs.json",
+    "sha256": "28524699e881d698267ad60dc39dca2ec0041b29f83a4e16fda34c69fb8cd7e6",
+    "verified_input_count": 18,
+    "all_frozen_byte_sizes_and_sha256_verified": true
+  },
+  "input_identities": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "review-inputs/00-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "review-inputs/01-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "review-inputs/02-DECISIONS.md",
+      "bytes": 96184,
+      "sha256": "6b3aecfb58e6229d6639b685ed9dc803bc8844a5c91319bacec5f875ea354bfd"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/validation/mcp-call-ledger.csv",
+      "snapshot": "review-inputs/03-mcp-call-ledger.csv",
+      "bytes": 20707,
+      "sha256": "68cd16050507cfc1f54ea9830ae38a3938f1755a039e29bbc18c4517241fb3a3"
+    },
+    {
+      "source": "output/research/b01-missing-mode-pixels-2026-10-12/attempt30-2026-10-12/authorization.json",
+      "snapshot": "review-inputs/04-authorization.json",
+      "bytes": 681,
+      "sha256": "47b3c815184c4ba2c3188a739cc0d90ab58b91715c8c83ce2a0f8d55c384bd6d"
+    },
+    {
+      "source": "output/research/b01-missing-mode-pixels-2026-10-12/attempt30-2026-10-12/input.json",
+      "snapshot": "review-inputs/05-input.json",
+      "bytes": 7109,
+      "sha256": "f0da0733a5b13fc2254c8fd028cbc2d31b8e2aaa296fbf61ea168040bf74d307"
+    },
+    {
+      "source": "output/research/b01-missing-mode-pixels-2026-10-12/attempt30-2026-10-12/figma-call.js",
+      "snapshot": "review-inputs/06-figma-call.js",
+      "bytes": 12714,
+      "sha256": "6be4cedf83339b1053d89ec2ad2f518f8742c7fa862c9d8ef49adcbcc8c2db67"
+    },
+    {
+      "source": "output/research/b01-missing-mode-pixels-2026-10-12/attempt30-2026-10-12/raw-response.json",
+      "snapshot": "review-inputs/07-raw-response.json",
+      "bytes": 2787,
+      "sha256": "39608b6d1e4e2a32f42ba2729ffb294ebb4ee67adc9dbf33bc97bcaac4ef88a3"
+    },
+    {
+      "source": "output/research/b01-missing-mode-pixels-2026-10-12/attempt30-2026-10-12/receipt.json",
+      "snapshot": "review-inputs/08-receipt.json",
+      "bytes": 5185,
+      "sha256": "592916c04b32b4308a9c726dd72e2b2dc9187a95f521c3767bbd7a438f64a7ca"
+    },
+    {
+      "source": "output/research/b01-missing-mode-pixels-2026-10-12/attempt30-2026-10-12/returned-images.json",
+      "snapshot": "review-inputs/09-returned-images.json",
+      "bytes": 146,
+      "sha256": "62fac2fdf939d6acb2e316794ec43418b1bba16b22a63f673fa7a25221555c1f"
+    },
+    {
+      "source": "output/research/b01-mode-coverage-2026-10-12/attempt29-2026-10-12/input.json",
+      "snapshot": "review-inputs/10-input.json",
+      "bytes": 42285,
+      "sha256": "fbba65b15900bd0f3c9ccde089b74afc038f002f84b587289c34516a9f88295a"
+    },
+    {
+      "source": "output/research/b01-mode-coverage-2026-10-12/attempt29-2026-10-12/figma-call.js",
+      "snapshot": "review-inputs/11-figma-call.js",
+      "bytes": 49526,
+      "sha256": "49d19df688dd2caf4f93720c8ee125cf78097dfab3db29cc3b113d3f66c0b23d"
+    },
+    {
+      "source": "output/research/b01-mode-coverage-2026-10-12/attempt29-2026-10-12/receipt.json",
+      "snapshot": "review-inputs/12-receipt.json",
+      "bytes": 60960,
+      "sha256": "98631654e1ca0fdf1b353bc6383ad7f66e11f11620dca14a2d5c8eadf1cddc85"
+    },
+    {
+      "source": "output/research/b01-mode-coverage-2026-10-12/attempt29-2026-10-12/crop-inventory.json",
+      "snapshot": "review-inputs/13-crop-inventory.json",
+      "bytes": 49467,
+      "sha256": "01a5fecd3e6d6a92f3470851608aed68a1e800737d9f75c084d581ab4ea01ce0"
+    },
+    {
+      "source": "output/research/b01-mode-coverage-2026-10-12/attempt29-2026-10-12/independent-review-result-v1.json",
+      "snapshot": "review-inputs/14-independent-review-result-v1.json",
+      "bytes": 35762,
+      "sha256": "980325088aee4111200136552fb9aaf739a6d011c25707859b1e33448a3617c7"
+    },
+    {
+      "source": "output/research/b01-vector-download-recovery-2026-10-12/proposal.json",
+      "snapshot": "review-inputs/15-proposal.json",
+      "bytes": 17711,
+      "sha256": "50dace7aab4fbf28704310b4d1967df4384540013bb2ee3f8e762f56cef52fde"
+    },
+    {
+      "source": "output/research/b01-vector-download-recovery-2026-10-12/call-input.json",
+      "snapshot": "review-inputs/16-call-input.json",
+      "bytes": 91,
+      "sha256": "0e2bc8f229e75c35769b598afc3e7ab58df71610098ccb4e20c9482bf2ab63a2"
+    },
+    {
+      "source": "output/research/b01-vector-download-recovery-2026-10-12/active-tool-schema.txt",
+      "snapshot": "review-inputs/17-active-tool-schema.txt",
+      "bytes": 2892,
+      "sha256": "c9017e9b927836d300f4730eff4c6f25e7c67d130e82f1488157cce24c2a020f"
+    }
+  ],
+  "attempt30_result_accounting": {
+    "scope": "Actual saved source/raw text/returned assertions/counts only; no pixels or independent live-canvas proof.",
+    "authorization": "D085, consumed one call and allowance exception",
+    "attempt": 30,
+    "conservatively_metered": 27,
+    "ledger_row": 32,
+    "source_sha256": "6be4cedf83339b1053d89ec2ad2f518f8742c7fa862c9d8ef49adcbcc8c2db67",
+    "raw_response_sha256": "39608b6d1e4e2a32f42ba2729ffb294ebb4ee67adc9dbf33bc97bcaac4ef88a3",
+    "receipt_sha256": "592916c04b32b4308a9c726dd72e2b2dc9187a95f521c3767bbd7a438f64a7ca",
+    "raw_isError": false,
+    "text_reports_returned": 1,
+    "images_returned": 0,
+    "parsed_raw_text_equals_saved_receipt": true,
+    "exact11_source_and_tile_mappings": true,
+    "indices": [
+      31,
+      32,
+      34,
+      35,
+      36,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "reported_temporary_created_equals_removed_count": 162,
+    "codec_duplicate_or_count_findings": 0,
+    "reported_mutation_parents": [
+      "0:1",
+      "36:2492"
+    ],
+    "reported_comparison_dimensions": [
+      3808,
+      1996
+    ],
+    "reported_descriptor_positions_root_parent_order_cleanup_flags": true,
+    "pixel_success_established": false,
+    "live_canvas_cleanup_or_preservation_independently_verified": false,
+    "findings": []
+  },
+  "proposal_checked": {
+    "proposal_sha256": "50dace7aab4fbf28704310b4d1967df4384540013bb2ee3f8e762f56cef52fde",
+    "call_input_sha256": "0e2bc8f229e75c35769b598afc3e7ab58df71610098ccb4e20c9482bf2ab63a2",
+    "active_tool_schema_sha256": "c9017e9b927836d300f4730eff4c6f25e7c67d130e82f1488157cce24c2a020f",
+    "arguments_match_proposal": true,
+    "read_only_existing_node": "36:2492",
+    "single_node_active_connector_contract": true,
+    "general_official_docs_multi_node_contract_not_assumed_exposed": true,
+    "source_report_derived_root_dimensions": [
+      420,
+      90882
+    ],
+    "padding": 24,
+    "spacing": 16,
+    "all48_recorded_positions_names_units_and_sizes_match": true,
+    "current_root_dimensions_or_export_settings_verified_live": false,
+    "previously_verified_visual_controls": 37,
+    "missing_visual_units": 11,
+    "not_authorized": true,
+    "actual_download_or_local_SVG_validation_performed": false
+  },
+  "findings": [
+    {
+      "id": "VD-01",
+      "priority": "P2",
+      "scope": "SVG recovery proposal",
+      "location": "review-inputs/15-proposal.json: expected_root, proposed_call, local_validation and primary_sources",
+      "problem": "The proposed420x90882 root exceeds the documented approximately4096px longest-edge render cap by22.188 times. The proposal records neither this documented limit nor evidence that SVG/root export bypasses it. The frozen active connector has one nodeId and no multi-node/crop/unbounded-native-dimension control; no configured export settings or provider-guaranteed SVG exemption is supplied.",
+      "evidence": "The official tools documentation describes the cap for renders without export settings at scale1 and also lists SVG as a supported format. The static-export help confirms vector glyphs and SVG1x, but does not guarantee this connector exports a90882-high root with complete native coordinates. Active single-node schema differs from general documentation multi-node capability and export precedence.",
+      "impact": "Current whole-root recovery cannot be endorsed as capable of furnishing the eleven intended previews. Rejecting a downscaled/truncated file after the call preserves evidence truth but would discover the known capability uncertainty only after another allowance-exception call. Neither likely success nor unavoidable failure is established.",
+      "required_change": "Hold this recovery call as proposed. Use a separately prepared bounded export target/contract within supported dimensions, or obtain applicable founder permission explicitly for a capability experiment with all pixel coverage still held. Do not call it accepted export coverage without actual correctly bounded output and independent control/missing-view inspection.",
+      "source_url": "https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/"
+    }
+  ],
+  "proposal_observations": [
+    "Root nominal height independently recomputes as24 top padding + sum48 reported unit heights +47 gaps of16 +24 bottom padding=90882. Width420 and every x24/source unit width320 match creation source. Positions are source/report derivations, not a current canvas observation.",
+    "Call-input uses the frozen active single-node contract and requests only the existing root SVG; rawImages/svgAssets would not be fetched. Active schema gives explicit format/scale overrides precedence, while general official docs describe configured export precedence and up-to20 nodes. This review does not substitute the general contract for exposed arguments.",
+    "The proposed32MiB/three-redirect/HTTPS/export-URL-only checks, original-byte preservation, unsafe XML/script/external-reference rejection, network-denied bounded per-unit render, no raster upscaling and stop-on-mismatch policy are reasonable bounded intentions. They are not implemented/validated local download or parser/renderer capability evidence here.",
+    "The37 existing native PNG/annotation controls can constrain static appearance and positioning if a valid complete root SVG is obtained. They cannot prove identity/content of the eleven missing units or unreported current canvas changes by themselves. Default outlined glyphs may eliminate editable text/node IDs; all intended units still require visible annotation/content verification.",
+    "SVG-derived raster previews must remain distinct from native Figma PNGs and original37 evidence; no byte identity, editable-layer, actual accessibility-mode, native-export or coverage acceptance claim may be inferred.",
+    "D085 and earlier source/result reviews grant no new download_assets call. Proposal’s31/28 accounting is prospective, with unknown provider quota and fresh one-call approval/allowance exception required."
+  ],
+  "official_documentation_consulted": [
+    {
+      "url": "https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/",
+      "checked": "2026-10-12",
+      "section": "download_assets",
+      "evidence": "Temporary asset URLs, configured-export fallback, supported SVG format, approximately4096 longest-edge default render cap, and general up-to20-node description.",
+      "brief_quote": "renders are capped at ~4096px on the longest edge",
+      "no_SVG_exemption_guarantee_found": true
+    },
+    {
+      "url": "https://help.figma.com/hc/en-us/articles/13402894554519-Export-formats-and-settings-for-static-designs",
+      "checked": "2026-10-12",
+      "section": "SVG and Scale",
+      "evidence": "Vector XML, default outlined text, stroke conversion, SVG1x and configurable export details; no guarantee of this active connector’s huge-root output."
+    }
+  ],
+  "limitations": [
+    "Separate PASS covers actual attempt30 saved accounting only; zero returned images establish no successful pixel export, independent live cleanup, canvas restoration or complete visual coverage.",
+    "Proposal is REVISE for the specific documented output-cap uncertainty, not proof that every SVG export or alternative necessarily fails. No provider/account capability check or export was made.",
+    "Only two authorized official documentation pages were consulted read-only; their descriptions do not replace the frozen active connector schema or establish entitlement/quota.",
+    "No SVG was downloaded, XML parsed, local renderer exercised or37-control/new11 comparison performed; output limits and mapping/visual acceptance remain unproven.",
+    "No complete B01/finalPNG/SVG/native archive/restore_EXIT, appearance/editability census, runtime accessibility, founder/integrated acceptance or production adoption follows.",
+    "No Figma/account/tool connector call, install, application/canonical/Git action or delegation occurred. Only this exclusive-create receipt was written."
+  ]
+}

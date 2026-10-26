@@ -4,7 +4,8 @@
 
 | Field | Value |
 |---|---|
-| Status | Draft |
+| Status | TODO |
+| Product/definition | v1; D-069 |
 | Product/decision references | |
 | Author/producer | |
 | Specialist reviewers | |
@@ -12,10 +13,22 @@
 | Created | {{ date }} |
 | Last updated | {{ date }} |
 
+D-097: define the assigned increment and reuse accepted requirements. Shared
+interfaces must support the eventual full v1 scope, but unrelated future 3D
+specification and launch qualification do not block an adequately defined 2D slice.
+Continue safe in-scope corrections without a numeric revision cap.
+
 ## Problem, Audience, and Evidence
 
 _What verified problem exists, for whom, and what evidence supports it? Separate
 approved facts from assumptions and open decisions._
+
+_Apply D-068–D-070: Europe first without an invented office; current product v1;
+latest mutually compatible stable technology across the full coupled graph.
+Deployment/provider/region/cost planning is deferred (Azure/AWS candidates).
+Outlook/Teams intent needs no Microsoft 365 setup prerequisite; exact account/API
+capabilities still need evidence. Company facts are admin-editable reviewed content;
+dedicated privacy/security aliases are approved but not verified operational._
 
 ## Goals and Success Measures
 
@@ -112,11 +125,11 @@ floating newest version or a preview dependency here.
 
 ## Review and Approval
 
-- [ ] Specialist evidence review complete
+- [ ] Required independent review complete for material design, money/security/external-system work, or explicit request
 - [ ] SEO/content review complete where applicable
 - [ ] Accessibility/security/privacy review complete where applicable
 - [ ] Conflicts and assumptions recorded durably
-- [ ] Founder approval recorded before planning/implementation proceeds
+- [ ] Applicable scope/design/material-choice approval recorded; no repeated approval for settled choices or routine corrections
 
 ## References
 

@@ -1,0 +1,72 @@
+{
+  "startedAt": "2026-10-06T18:50:30.054Z",
+  "endedAt": "2026-10-06T18:50:43.895Z",
+  "node": "v26.10.0",
+  "vite": "8.3.2",
+  "rolldown": "1.2.12",
+  "scope": "Exact synthetic client fixture, existing matched Three184 candidate; not the application or deployed graph.",
+  "buildWrite": false,
+  "capturedGenerateCalls": 1,
+  "observedWriteFlags": [
+    false
+  ],
+  "graphModuleCount": 576,
+  "outputModuleCount": 38,
+  "outputManifestCount": 16,
+  "chunkModuleIdsAgreeWithModuleKeys": true,
+  "gensyncGraphMatches": [],
+  "gensyncChunkMatches": [],
+  "gensyncModuleKeyMatches": [],
+  "artifacts": [
+    {
+      "result": 0,
+      "type": "chunk",
+      "fileName": "assets/index-Drml-yYT.js",
+      "bytes": 1243420,
+      "sha256": "c3ea512bc9a07ad7e236fd8e83edfd610bd859732c9d426c1e198fffa10bc04b",
+      "matchesOriginalBytes": true
+    },
+    {
+      "result": 0,
+      "type": "asset",
+      "fileName": "assets/index-ntAwPynm.css",
+      "bytes": 6162,
+      "sha256": "2b8a85e024110d5ea57a877bd90cfd7c58aa897474488ac7a6778170734d6788",
+      "matchesOriginalBytes": true
+    },
+    {
+      "result": 0,
+      "type": "asset",
+      "fileName": "index.html",
+      "bytes": 381,
+      "sha256": "1ebd8057d97fa4060415b42db1d46c865263f766bde6aa165b7119a766b3a117",
+      "matchesOriginalBytes": true
+    }
+  ],
+  "allProtectedInputsUnchanged": true,
+  "configuredOutDirExists": false,
+  "limits": [
+    "Module ownership is nearest named manifest, not legal authorship or complete licence clearance.",
+    "Bundler module metadata does not inventory opaque embedded code, binaries or other builds/targets.",
+    "No universal gensync build-host/deployed exclusion, D072 conformance or D069 stack selection.",
+    "Artifact equality binds this observation to previous exact-byte fixture browser evidence only."
+  ],
+  "inputGraphExternalClassification": "UNPROVEN: original collector read unsupported ModuleInfo.isExternal; serialized records omit it.",
+  "outputChunkReferences": [
+    {
+      "fileName": "assets/index-Drml-yYT.js",
+      "imports": [],
+      "dynamicImports": []
+    }
+  ],
+  "correction": {
+    "number": 1,
+    "atUtc": "2026-10-06T19:44:38.474Z",
+    "rebuilt": false,
+    "originalObservationSha256": "d59039ada1f9069260f9eb20a2dd1edb79342c33ffa53de7ab441bb83b925df1",
+    "originalOutputInventorySha256": "0963614f5cc6eb46d4b557d43f7e8ff710764f628a79d4d9f8ab6971480ddb6e",
+    "originalGraphSha256": "ace46f4bbd3ccbefc7373e3589a23501ec85fd1d3ab7627922ea39a8502a4e00",
+    "graphRecordsMissingUnsupportedFlag": 576,
+    "scope": "Empty returned chunk import/reference arrays only; not all runtime fetches, module classification or deployed external resources."
+  }
+}

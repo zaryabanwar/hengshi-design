@@ -1,0 +1,1523 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "recorded_date": "2026-10-04",
+  "purpose": "Internal Phase 1 asset inventory and proposed production decomposition; not the public publication manifest",
+  "authority": [
+    "D-064",
+    "D-065",
+    "D-066",
+    "D-067",
+    "D-071"
+  ],
+  "layout_acceptance": "D-071 composition basis only; detail, dimensions, clearance, budgets, rights, runtime and integrated acceptance held",
+  "sources": [
+    {
+      "path": "artifacts/nature-campus-layout-study/build_layout.py",
+      "bytes": 14943,
+      "sha256": "d127a6429b7b32e6954bcd51e2c2beaf4a5560bdc29efcabd00ce264c6a984c6"
+    },
+    {
+      "path": "artifacts/nature-campus-layout-study/nature-campus-layout.blend",
+      "bytes": 8732595,
+      "sha256": "c377b877779df01211c2312afde3d0f0769e2874e3409b2a1baa6beed1ceb4b8"
+    },
+    {
+      "path": "artifacts/nature-campus-layout-study/nature-campus-layout.glb",
+      "bytes": 20860132,
+      "sha256": "e2161710dc0576ec62e3d096c60e32927e827aa59198a33361e729ec8a7b43c0"
+    },
+    {
+      "path": "artifacts/nature-campus-layout-study/layout-observations.json",
+      "bytes": 45292,
+      "sha256": "3209364b282f987bdcb5fd089e4a256d524ae69031bba869aaef974cff3311ff"
+    },
+    {
+      "path": "docs/phase-1-3d/concepts/nature-campus-direction-2026-10-04.png",
+      "bytes": 3338624,
+      "sha256": "e514e603eb211250459c02763d06f35a4d03f606cd017c318f40fd11e4daac79"
+    },
+    {
+      "path": "docs/phase-1-ux-architecture/wayfinding-release-map.csv",
+      "bytes": 10356,
+      "sha256": "298876f35468e7501028a77de63d1b449fd75b52183619a500700c46c2999c63"
+    },
+    {
+      "path": "artifacts/nature-campus-layout-study/index.html",
+      "bytes": 6688,
+      "sha256": "4fbb70e6c39fa3689c4b72e6f3dad43acbdd0dc0bb5afe96f03de58f2f5a8738"
+    },
+    {
+      "path": "docs/phase-1-3d/WORLD_EXPERIENCE.md",
+      "bytes": 17636,
+      "sha256": "17d3e51bb1bf7f05a13f797f994adf40b57d103ba0da8db89b1dacab40e883de"
+    },
+    {
+      "path": "docs/phase-1-3d/SPATIAL_STORYBOARD.md",
+      "bytes": 20341,
+      "sha256": "f4cb35f3f719d8d1e946275fdd2f07e969a2f8e1e783141a50e77af172581ccf"
+    }
+  ],
+  "observed_export": {
+    "container": "GLB",
+    "glTF_asset_version": "2.0",
+    "generator": "Khronos glTF Blender I/O v5.0.21",
+    "bytes": 20860132,
+    "nodes": 117,
+    "meshes": 117,
+    "materials": 16,
+    "images": 0,
+    "textures": 0,
+    "animations": 0,
+    "skins": 0,
+    "cameras": 0,
+    "extensions_used": [
+      "KHR_materials_transmission",
+      "KHR_materials_ior"
+    ],
+    "material_names": [
+      "Honey timber",
+      "Board labels",
+      "Forest ground",
+      "Valley water",
+      "River stone",
+      "Living roof meadow",
+      "Warm timber soffit",
+      "Warm mineral paving",
+      "Glazing",
+      "Leaf shade 2",
+      "Leaf shade 1",
+      "Leaf shade 3",
+      "Leaf shade 0",
+      "Meadow flowers",
+      "Earth plaster",
+      "Information board"
+    ],
+    "all_nodes_scene_roots": true,
+    "node_indices_scoped_to_source_sha256": true,
+    "geometry": {
+      "primitives": 117,
+      "triangles": 726056,
+      "exported_position_entries": 569809,
+      "distinct_referenced_buffer_view_bytes": 20777088,
+      "method": "Read triangle primitive/index/POSITION counts and distinct referenced bufferView byteLength from the unchanged source GLB JSON; no Blender regeneration or runtime measurement",
+      "limitations": [
+        "POSITION entries are exported accessor entries, not welded unique vertices",
+        "Primitive count is not measured draw calls; shadow and material passes can differ",
+        "BufferView bytes are stored export geometry, not resident CPU/GPU or transient decode/upload memory",
+        "Cross-family shared views, if present, are counted once globally; family figures are not a memory allocation promise"
+      ]
+    }
+  },
+  "coordinates": {
+    "source": "Blender XY plan, Z up",
+    "export": "glTF right handed Y up; study plan maps to X/-Z",
+    "declared_study_scale": "1 Blender unit = 1 m for this proposal; dimensions unaccepted",
+    "production_dimensions_accepted": false,
+    "contour_inputs_not_measured_floor_dimensions": true
+  },
+  "provenance": {
+    "observed_source_method": "Original procedural generator inspected as text; raw GLB JSON read without loading or executing the generator",
+    "external_model_inputs_observed": [],
+    "protected_atlanta_asset_used": false,
+    "ownership_or_rights_clearance_proven": false,
+    "commercial_use_modification_attribution_review": "held; internal original-source record is not legal clearance",
+    "new_texture_audio_library_rights": "held; none inventoried as delivered"
+  },
+  "families": [
+    {
+      "family_id": "reception",
+      "status": "DOING",
+      "scope": "observed study grouping; production separation proposed",
+      "source_nodes": [
+        {
+          "node_index": 0,
+          "name": "Hengshi Design",
+          "mesh_index": 0,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 1,
+          "name": "Prototype - no live staff",
+          "mesh_index": 1,
+          "material_indices": [
+            1
+          ]
+        },
+        {
+          "node_index": 9,
+          "name": "Reception living roof",
+          "mesh_index": 9,
+          "material_indices": [
+            5
+          ]
+        },
+        {
+          "node_index": 10,
+          "name": "Reception slatted canopy",
+          "mesh_index": 10,
+          "material_indices": [
+            6
+          ]
+        },
+        {
+          "node_index": 11,
+          "name": "Reception floor",
+          "mesh_index": 11,
+          "material_indices": [
+            7
+          ]
+        },
+        {
+          "node_index": 12,
+          "name": "Reception timber frames",
+          "mesh_index": 12,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 13,
+          "name": "Reception glazing",
+          "mesh_index": 13,
+          "material_indices": [
+            8
+          ]
+        },
+        {
+          "node_index": 14,
+          "name": "Reception curved roof edge",
+          "mesh_index": 14,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 15,
+          "name": "Reception roof ribs",
+          "mesh_index": 15,
+          "material_indices": [
+            6
+          ]
+        },
+        {
+          "node_index": 16,
+          "name": "Reception roof planting",
+          "mesh_index": 16,
+          "material_indices": [
+            9
+          ]
+        },
+        {
+          "node_index": 17,
+          "name": "Reception roof planting.001",
+          "mesh_index": 17,
+          "material_indices": [
+            5
+          ]
+        },
+        {
+          "node_index": 18,
+          "name": "Reception roof planting.002",
+          "mesh_index": 18,
+          "material_indices": [
+            10
+          ]
+        },
+        {
+          "node_index": 19,
+          "name": "Reception roof planting.003",
+          "mesh_index": 19,
+          "material_indices": [
+            11
+          ]
+        },
+        {
+          "node_index": 20,
+          "name": "Reception roof planting.004",
+          "mesh_index": 20,
+          "material_indices": [
+            12
+          ]
+        },
+        {
+          "node_index": 21,
+          "name": "Reception roof planting.005",
+          "mesh_index": 21,
+          "material_indices": [
+            13
+          ]
+        },
+        {
+          "node_index": 99,
+          "name": "Reception branching columns",
+          "mesh_index": 99,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 100,
+          "name": "Welcome desk",
+          "mesh_index": 100,
+          "material_indices": [
+            0
+          ]
+        }
+      ],
+      "production_artifact_key": null,
+      "production_sha256": null,
+      "production_variants": null,
+      "production_collision_asset": null,
+      "study_contour_parameters_blender": {
+        "name": "Reception",
+        "x": 0,
+        "y": 16,
+        "rx": 14,
+        "ry": 10,
+        "h": 6.8,
+        "z": 0.8,
+        "phase": 0.3,
+        "lobes": 3,
+        "rotation": 0
+      },
+      "observed_geometry": {
+        "primitives": 17,
+        "triangles": 33278,
+        "exported_position_entries": 37116,
+        "distinct_referenced_buffer_view_bytes": 1174892
+      }
+    },
+    {
+      "family_id": "department-fixture",
+      "status": "DOING",
+      "scope": "observed study grouping; production separation proposed",
+      "source_nodes": [
+        {
+          "node_index": 2,
+          "name": "Strategy & Transformation",
+          "mesh_index": 2,
+          "material_indices": [
+            1
+          ]
+        },
+        {
+          "node_index": 3,
+          "name": "Explore  |  Evidence  |  Conversation",
+          "mesh_index": 3,
+          "material_indices": [
+            1
+          ]
+        },
+        {
+          "node_index": 4,
+          "name": "Prototype - no live staff.001",
+          "mesh_index": 4,
+          "material_indices": [
+            1
+          ]
+        },
+        {
+          "node_index": 101,
+          "name": "Department earthen display wall",
+          "mesh_index": 101,
+          "material_indices": [
+            14
+          ]
+        },
+        {
+          "node_index": 102,
+          "name": "Department evidence board",
+          "mesh_index": 102,
+          "material_indices": [
+            15
+          ]
+        },
+        {
+          "node_index": 103,
+          "name": "Consultation table",
+          "mesh_index": 103,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 104,
+          "name": "Consultation pedestal",
+          "mesh_index": 104,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 105,
+          "name": "Consultation seat",
+          "mesh_index": 105,
+          "material_indices": [
+            14
+          ]
+        },
+        {
+          "node_index": 106,
+          "name": "Consultation back",
+          "mesh_index": 106,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 107,
+          "name": "Chair legs",
+          "mesh_index": 107,
+          "material_indices": [
+            0
+          ]
+        }
+      ],
+      "production_artifact_key": null,
+      "production_sha256": null,
+      "production_variants": null,
+      "production_collision_asset": null,
+      "observed_location": "Strategy & Transformation wing only; not a first-release override",
+      "observed_geometry": {
+        "primitives": 10,
+        "triangles": 22400,
+        "exported_position_entries": 23375,
+        "distinct_referenced_buffer_view_bytes": 872056
+      }
+    },
+    {
+      "family_id": "landscape",
+      "status": "DOING",
+      "scope": "observed study grouping; production separation proposed",
+      "source_nodes": [
+        {
+          "node_index": 5,
+          "name": "Layered forest valley",
+          "mesh_index": 5,
+          "material_indices": [
+            2
+          ]
+        },
+        {
+          "node_index": 6,
+          "name": "River below connected terraces",
+          "mesh_index": 6,
+          "material_indices": [
+            3
+          ]
+        },
+        {
+          "node_index": 7,
+          "name": "Cascade",
+          "mesh_index": 7,
+          "material_indices": [
+            1
+          ]
+        },
+        {
+          "node_index": 8,
+          "name": "River boulders",
+          "mesh_index": 8,
+          "material_indices": [
+            4
+          ]
+        }
+      ],
+      "production_artifact_key": null,
+      "production_sha256": null,
+      "production_variants": null,
+      "production_collision_asset": null,
+      "observed_geometry": {
+        "primitives": 4,
+        "triangles": 40386,
+        "exported_position_entries": 23080,
+        "distinct_referenced_buffer_view_bytes": 796236
+      }
+    },
+    {
+      "family_id": "wing-strategy",
+      "status": "DOING",
+      "scope": "observed study grouping; production separation proposed",
+      "source_nodes": [
+        {
+          "node_index": 22,
+          "name": "Strategy & Transformation living roof",
+          "mesh_index": 22,
+          "material_indices": [
+            5
+          ]
+        },
+        {
+          "node_index": 23,
+          "name": "Strategy & Transformation slatted canopy",
+          "mesh_index": 23,
+          "material_indices": [
+            6
+          ]
+        },
+        {
+          "node_index": 24,
+          "name": "Strategy & Transformation floor",
+          "mesh_index": 24,
+          "material_indices": [
+            7
+          ]
+        },
+        {
+          "node_index": 25,
+          "name": "Strategy & Transformation timber frames",
+          "mesh_index": 25,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 26,
+          "name": "Strategy & Transformation glazing",
+          "mesh_index": 26,
+          "material_indices": [
+            8
+          ]
+        },
+        {
+          "node_index": 27,
+          "name": "Strategy & Transformation curved roof edge",
+          "mesh_index": 27,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 28,
+          "name": "Strategy & Transformation roof ribs",
+          "mesh_index": 28,
+          "material_indices": [
+            6
+          ]
+        },
+        {
+          "node_index": 29,
+          "name": "Strategy & Transformation roof planting",
+          "mesh_index": 29,
+          "material_indices": [
+            9
+          ]
+        },
+        {
+          "node_index": 30,
+          "name": "Strategy & Transformation roof planting.001",
+          "mesh_index": 30,
+          "material_indices": [
+            13
+          ]
+        },
+        {
+          "node_index": 31,
+          "name": "Strategy & Transformation roof planting.002",
+          "mesh_index": 31,
+          "material_indices": [
+            12
+          ]
+        },
+        {
+          "node_index": 32,
+          "name": "Strategy & Transformation roof planting.003",
+          "mesh_index": 32,
+          "material_indices": [
+            5
+          ]
+        },
+        {
+          "node_index": 33,
+          "name": "Strategy & Transformation roof planting.004",
+          "mesh_index": 33,
+          "material_indices": [
+            11
+          ]
+        },
+        {
+          "node_index": 34,
+          "name": "Strategy & Transformation roof planting.005",
+          "mesh_index": 34,
+          "material_indices": [
+            10
+          ]
+        }
+      ],
+      "production_artifact_key": null,
+      "production_sha256": null,
+      "production_variants": null,
+      "production_collision_asset": null,
+      "canonical_route_id": "ROUTE-WING-STRATEGY",
+      "canonical_path": "/services/strategy-transformation",
+      "canonical_wing_key": "strategy",
+      "opening_ordinal": 2,
+      "study_contour_parameters_blender": {
+        "name": "Strategy & Transformation",
+        "x": -28,
+        "y": -3,
+        "rx": 12,
+        "ry": 8,
+        "h": 5.2,
+        "z": 0.8,
+        "phase": 1.2,
+        "lobes": 2,
+        "rotation": 2.1669954680923764
+      },
+      "canonical_service_rooms": [
+        {
+          "room_id": "ROOM-STRATEGY-ARCHITECTURE",
+          "route_id": "ROUTE-SERVICE-STRATEGY-ARCHITECTURE",
+          "canonical_path": "/services/strategy-transformation/strategy-architecture"
+        }
+      ],
+      "observed_geometry": {
+        "primitives": 13,
+        "triangles": 22392,
+        "exported_position_entries": 25981,
+        "distinct_referenced_buffer_view_bytes": 754056
+      }
+    },
+    {
+      "family_id": "wing-digital_growth",
+      "status": "DOING",
+      "scope": "observed study grouping; production separation proposed",
+      "source_nodes": [
+        {
+          "node_index": 35,
+          "name": "Digital Products & Growth living roof",
+          "mesh_index": 35,
+          "material_indices": [
+            5
+          ]
+        },
+        {
+          "node_index": 36,
+          "name": "Digital Products & Growth slatted canopy",
+          "mesh_index": 36,
+          "material_indices": [
+            6
+          ]
+        },
+        {
+          "node_index": 37,
+          "name": "Digital Products & Growth floor",
+          "mesh_index": 37,
+          "material_indices": [
+            7
+          ]
+        },
+        {
+          "node_index": 38,
+          "name": "Digital Products & Growth timber frames",
+          "mesh_index": 38,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 39,
+          "name": "Digital Products & Growth glazing",
+          "mesh_index": 39,
+          "material_indices": [
+            8
+          ]
+        },
+        {
+          "node_index": 40,
+          "name": "Digital Products & Growth curved roof edge",
+          "mesh_index": 40,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 41,
+          "name": "Digital Products & Growth roof ribs",
+          "mesh_index": 41,
+          "material_indices": [
+            6
+          ]
+        },
+        {
+          "node_index": 42,
+          "name": "Digital Products & Growth roof planting",
+          "mesh_index": 42,
+          "material_indices": [
+            10
+          ]
+        },
+        {
+          "node_index": 43,
+          "name": "Digital Products & Growth roof planting.001",
+          "mesh_index": 43,
+          "material_indices": [
+            5
+          ]
+        },
+        {
+          "node_index": 44,
+          "name": "Digital Products & Growth roof planting.002",
+          "mesh_index": 44,
+          "material_indices": [
+            12
+          ]
+        },
+        {
+          "node_index": 45,
+          "name": "Digital Products & Growth roof planting.003",
+          "mesh_index": 45,
+          "material_indices": [
+            13
+          ]
+        },
+        {
+          "node_index": 46,
+          "name": "Digital Products & Growth roof planting.004",
+          "mesh_index": 46,
+          "material_indices": [
+            9
+          ]
+        },
+        {
+          "node_index": 47,
+          "name": "Digital Products & Growth roof planting.005",
+          "mesh_index": 47,
+          "material_indices": [
+            11
+          ]
+        }
+      ],
+      "production_artifact_key": null,
+      "production_sha256": null,
+      "production_variants": null,
+      "production_collision_asset": null,
+      "canonical_route_id": "ROUTE-WING-DIGITAL",
+      "canonical_path": "/services/digital-products-growth",
+      "canonical_wing_key": "digital_products_growth",
+      "opening_ordinal": 4,
+      "study_contour_parameters_blender": {
+        "name": "Digital Products & Growth",
+        "x": -31,
+        "y": 30,
+        "rx": 11,
+        "ry": 8,
+        "h": 5.5,
+        "z": 1.45,
+        "phase": 2.5,
+        "lobes": 3,
+        "rotation": 1.1466019188911298
+      },
+      "canonical_service_rooms": [
+        {
+          "room_id": "ROOM-PLATFORM-PRODUCT",
+          "route_id": "ROUTE-SERVICE-PLATFORM-PRODUCT",
+          "canonical_path": "/services/digital-products-growth/platform-product-engineering"
+        },
+        {
+          "room_id": "ROOM-PRODUCT-EXPERIENCE",
+          "route_id": "ROUTE-SERVICE-PRODUCT-EXPERIENCE",
+          "canonical_path": "/services/digital-products-growth/product-design-experience-engineering"
+        },
+        {
+          "room_id": "ROOM-COMMERCE-GROWTH",
+          "route_id": "ROUTE-SERVICE-COMMERCE-GROWTH",
+          "canonical_path": "/services/digital-products-growth/commerce-content-growth-platforms"
+        }
+      ],
+      "observed_geometry": {
+        "primitives": 13,
+        "triangles": 22392,
+        "exported_position_entries": 25981,
+        "distinct_referenced_buffer_view_bytes": 754056
+      }
+    },
+    {
+      "family_id": "wing-ai_data",
+      "status": "DOING",
+      "scope": "observed study grouping; production separation proposed",
+      "source_nodes": [
+        {
+          "node_index": 48,
+          "name": "AI, Data & Automation living roof",
+          "mesh_index": 48,
+          "material_indices": [
+            5
+          ]
+        },
+        {
+          "node_index": 49,
+          "name": "AI, Data & Automation slatted canopy",
+          "mesh_index": 49,
+          "material_indices": [
+            6
+          ]
+        },
+        {
+          "node_index": 50,
+          "name": "AI, Data & Automation floor",
+          "mesh_index": 50,
+          "material_indices": [
+            7
+          ]
+        },
+        {
+          "node_index": 51,
+          "name": "AI, Data & Automation timber frames",
+          "mesh_index": 51,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 52,
+          "name": "AI, Data & Automation glazing",
+          "mesh_index": 52,
+          "material_indices": [
+            8
+          ]
+        },
+        {
+          "node_index": 53,
+          "name": "AI, Data & Automation curved roof edge",
+          "mesh_index": 53,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 54,
+          "name": "AI, Data & Automation roof ribs",
+          "mesh_index": 54,
+          "material_indices": [
+            6
+          ]
+        },
+        {
+          "node_index": 55,
+          "name": "AI, Data & Automation roof planting",
+          "mesh_index": 55,
+          "material_indices": [
+            11
+          ]
+        },
+        {
+          "node_index": 56,
+          "name": "AI, Data & Automation roof planting.001",
+          "mesh_index": 56,
+          "material_indices": [
+            10
+          ]
+        },
+        {
+          "node_index": 57,
+          "name": "AI, Data & Automation roof planting.002",
+          "mesh_index": 57,
+          "material_indices": [
+            12
+          ]
+        },
+        {
+          "node_index": 58,
+          "name": "AI, Data & Automation roof planting.003",
+          "mesh_index": 58,
+          "material_indices": [
+            13
+          ]
+        },
+        {
+          "node_index": 59,
+          "name": "AI, Data & Automation roof planting.004",
+          "mesh_index": 59,
+          "material_indices": [
+            5
+          ]
+        },
+        {
+          "node_index": 60,
+          "name": "AI, Data & Automation roof planting.005",
+          "mesh_index": 60,
+          "material_indices": [
+            9
+          ]
+        }
+      ],
+      "production_artifact_key": null,
+      "production_sha256": null,
+      "production_variants": null,
+      "production_collision_asset": null,
+      "canonical_route_id": "ROUTE-WING-AI-DATA",
+      "canonical_path": "/services/ai-data-automation",
+      "canonical_wing_key": "ai_data",
+      "opening_ordinal": 1,
+      "study_contour_parameters_blender": {
+        "name": "AI, Data & Automation",
+        "x": -12,
+        "y": 54,
+        "rx": 12.5,
+        "ry": 8,
+        "h": 5.6,
+        "z": 3.0,
+        "phase": 0.6,
+        "lobes": 2,
+        "rotation": 0.30587887140485215
+      },
+      "canonical_service_rooms": [
+        {
+          "room_id": "ROOM-AI-AUTOMATION",
+          "route_id": "ROUTE-SERVICE-AI-AUTOMATION",
+          "canonical_path": "/services/ai-data-automation/ai-systems-agentic-automation"
+        },
+        {
+          "room_id": "ROOM-DATA-ANALYTICS",
+          "route_id": "ROUTE-SERVICE-DATA-ANALYTICS",
+          "canonical_path": "/services/ai-data-automation/data-platforms-analytics"
+        }
+      ],
+      "observed_geometry": {
+        "primitives": 13,
+        "triangles": 22392,
+        "exported_position_entries": 25981,
+        "distinct_referenced_buffer_view_bytes": 754056
+      }
+    },
+    {
+      "family_id": "wing-immersive_creative",
+      "status": "DOING",
+      "scope": "observed study grouping; production separation proposed",
+      "source_nodes": [
+        {
+          "node_index": 61,
+          "name": "Immersive & Creative living roof",
+          "mesh_index": 61,
+          "material_indices": [
+            5
+          ]
+        },
+        {
+          "node_index": 62,
+          "name": "Immersive & Creative slatted canopy",
+          "mesh_index": 62,
+          "material_indices": [
+            6
+          ]
+        },
+        {
+          "node_index": 63,
+          "name": "Immersive & Creative floor",
+          "mesh_index": 63,
+          "material_indices": [
+            7
+          ]
+        },
+        {
+          "node_index": 64,
+          "name": "Immersive & Creative timber frames",
+          "mesh_index": 64,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 65,
+          "name": "Immersive & Creative glazing",
+          "mesh_index": 65,
+          "material_indices": [
+            8
+          ]
+        },
+        {
+          "node_index": 66,
+          "name": "Immersive & Creative curved roof edge",
+          "mesh_index": 66,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 67,
+          "name": "Immersive & Creative roof ribs",
+          "mesh_index": 67,
+          "material_indices": [
+            6
+          ]
+        },
+        {
+          "node_index": 68,
+          "name": "Immersive & Creative roof planting",
+          "mesh_index": 68,
+          "material_indices": [
+            13
+          ]
+        },
+        {
+          "node_index": 69,
+          "name": "Immersive & Creative roof planting.001",
+          "mesh_index": 69,
+          "material_indices": [
+            9
+          ]
+        },
+        {
+          "node_index": 70,
+          "name": "Immersive & Creative roof planting.002",
+          "mesh_index": 70,
+          "material_indices": [
+            5
+          ]
+        },
+        {
+          "node_index": 71,
+          "name": "Immersive & Creative roof planting.003",
+          "mesh_index": 71,
+          "material_indices": [
+            11
+          ]
+        },
+        {
+          "node_index": 72,
+          "name": "Immersive & Creative roof planting.004",
+          "mesh_index": 72,
+          "material_indices": [
+            12
+          ]
+        },
+        {
+          "node_index": 73,
+          "name": "Immersive & Creative roof planting.005",
+          "mesh_index": 73,
+          "material_indices": [
+            10
+          ]
+        }
+      ],
+      "production_artifact_key": null,
+      "production_sha256": null,
+      "production_variants": null,
+      "production_collision_asset": null,
+      "canonical_route_id": "ROUTE-WING-IMMERSIVE",
+      "canonical_path": "/services/immersive-creative",
+      "canonical_wing_key": "immersive_creative",
+      "opening_ordinal": 3,
+      "study_contour_parameters_blender": {
+        "name": "Immersive & Creative",
+        "x": 47,
+        "y": 43,
+        "rx": 12,
+        "ry": 8,
+        "h": 5.4,
+        "z": 2.3,
+        "phase": 1.8,
+        "lobes": 3,
+        "rotation": -1.049361887023153
+      },
+      "canonical_service_rooms": [
+        {
+          "room_id": "ROOM-SPATIAL-IMMERSIVE",
+          "route_id": "ROUTE-SERVICE-SPATIAL",
+          "canonical_path": "/services/immersive-creative/spatial-computing-immersive-platforms"
+        },
+        {
+          "room_id": "ROOM-CREATIVE-VISUAL",
+          "route_id": "ROUTE-SERVICE-CREATIVE",
+          "canonical_path": "/services/immersive-creative/creative-visual-design-services"
+        }
+      ],
+      "observed_geometry": {
+        "primitives": 13,
+        "triangles": 22392,
+        "exported_position_entries": 25981,
+        "distinct_referenced_buffer_view_bytes": 743304
+      }
+    },
+    {
+      "family_id": "wing-cloud_reliability",
+      "status": "DOING",
+      "scope": "observed study grouping; production separation proposed",
+      "source_nodes": [
+        {
+          "node_index": 74,
+          "name": "Cloud, Reliability & Trust living roof",
+          "mesh_index": 74,
+          "material_indices": [
+            5
+          ]
+        },
+        {
+          "node_index": 75,
+          "name": "Cloud, Reliability & Trust slatted canopy",
+          "mesh_index": 75,
+          "material_indices": [
+            6
+          ]
+        },
+        {
+          "node_index": 76,
+          "name": "Cloud, Reliability & Trust floor",
+          "mesh_index": 76,
+          "material_indices": [
+            7
+          ]
+        },
+        {
+          "node_index": 77,
+          "name": "Cloud, Reliability & Trust timber frames",
+          "mesh_index": 77,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 78,
+          "name": "Cloud, Reliability & Trust glazing",
+          "mesh_index": 78,
+          "material_indices": [
+            8
+          ]
+        },
+        {
+          "node_index": 79,
+          "name": "Cloud, Reliability & Trust curved roof edge",
+          "mesh_index": 79,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 80,
+          "name": "Cloud, Reliability & Trust roof ribs",
+          "mesh_index": 80,
+          "material_indices": [
+            6
+          ]
+        },
+        {
+          "node_index": 81,
+          "name": "Cloud, Reliability & Trust roof planting",
+          "mesh_index": 81,
+          "material_indices": [
+            12
+          ]
+        },
+        {
+          "node_index": 82,
+          "name": "Cloud, Reliability & Trust roof planting.001",
+          "mesh_index": 82,
+          "material_indices": [
+            9
+          ]
+        },
+        {
+          "node_index": 83,
+          "name": "Cloud, Reliability & Trust roof planting.002",
+          "mesh_index": 83,
+          "material_indices": [
+            13
+          ]
+        },
+        {
+          "node_index": 84,
+          "name": "Cloud, Reliability & Trust roof planting.003",
+          "mesh_index": 84,
+          "material_indices": [
+            11
+          ]
+        },
+        {
+          "node_index": 85,
+          "name": "Cloud, Reliability & Trust roof planting.004",
+          "mesh_index": 85,
+          "material_indices": [
+            10
+          ]
+        },
+        {
+          "node_index": 86,
+          "name": "Cloud, Reliability & Trust roof planting.005",
+          "mesh_index": 86,
+          "material_indices": [
+            5
+          ]
+        }
+      ],
+      "production_artifact_key": null,
+      "production_sha256": null,
+      "production_variants": null,
+      "production_collision_asset": null,
+      "canonical_route_id": "ROUTE-WING-CLOUD-TRUST",
+      "canonical_path": "/services/cloud-reliability-trust",
+      "canonical_wing_key": "cloud_reliability_trust",
+      "opening_ordinal": 5,
+      "study_contour_parameters_blender": {
+        "name": "Cloud, Reliability & Trust",
+        "x": 43,
+        "y": -5,
+        "rx": 11,
+        "ry": 7.5,
+        "h": 5.0,
+        "z": 0.8,
+        "phase": 3.1,
+        "lobes": 2,
+        "rotation": 4.258086893691374
+      },
+      "canonical_service_rooms": [
+        {
+          "room_id": "ROOM-CLOUD-RELIABILITY",
+          "route_id": "ROUTE-SERVICE-CLOUD-RELIABILITY",
+          "canonical_path": "/services/cloud-reliability-trust/cloud-devops-platform-reliability"
+        },
+        {
+          "room_id": "ROOM-SECURITY-TRUST",
+          "route_id": "ROUTE-SERVICE-SECURITY-TRUST",
+          "canonical_path": "/services/cloud-reliability-trust/security-privacy-trust-engineering"
+        }
+      ],
+      "observed_geometry": {
+        "primitives": 13,
+        "triangles": 22392,
+        "exported_position_entries": 25981,
+        "distinct_referenced_buffer_view_bytes": 743640
+      }
+    },
+    {
+      "family_id": "arrival",
+      "status": "DOING",
+      "scope": "observed study grouping; production separation proposed",
+      "source_nodes": [
+        {
+          "node_index": 87,
+          "name": "Arrival promenade",
+          "mesh_index": 87,
+          "material_indices": [
+            7
+          ]
+        }
+      ],
+      "production_artifact_key": null,
+      "production_sha256": null,
+      "production_variants": null,
+      "production_collision_asset": null,
+      "connects": [
+        "landscape",
+        "reception"
+      ],
+      "observed_geometry": {
+        "primitives": 1,
+        "triangles": 100,
+        "exported_position_entries": 102,
+        "distinct_referenced_buffer_view_bytes": 3048
+      }
+    },
+    {
+      "family_id": "connector-strategy",
+      "status": "DOING",
+      "scope": "observed study grouping; production separation proposed",
+      "source_nodes": [
+        {
+          "node_index": 88,
+          "name": "Strategy & Transformation connected promenade",
+          "mesh_index": 88,
+          "material_indices": [
+            7
+          ]
+        }
+      ],
+      "production_artifact_key": null,
+      "production_sha256": null,
+      "production_variants": null,
+      "production_collision_asset": null,
+      "connects": [
+        "reception",
+        "wing-strategy"
+      ],
+      "observed_geometry": {
+        "primitives": 1,
+        "triangles": 160,
+        "exported_position_entries": 162,
+        "distinct_referenced_buffer_view_bytes": 4848
+      }
+    },
+    {
+      "family_id": "connector-digital_growth",
+      "status": "DOING",
+      "scope": "observed study grouping; production separation proposed",
+      "source_nodes": [
+        {
+          "node_index": 89,
+          "name": "Digital Products & Growth connected promenade",
+          "mesh_index": 89,
+          "material_indices": [
+            7
+          ]
+        }
+      ],
+      "production_artifact_key": null,
+      "production_sha256": null,
+      "production_variants": null,
+      "production_collision_asset": null,
+      "connects": [
+        "reception",
+        "wing-digital_growth"
+      ],
+      "observed_geometry": {
+        "primitives": 1,
+        "triangles": 160,
+        "exported_position_entries": 312,
+        "distinct_referenced_buffer_view_bytes": 8448
+      }
+    },
+    {
+      "family_id": "connector-ai_data",
+      "status": "DOING",
+      "scope": "observed study grouping; production separation proposed",
+      "source_nodes": [
+        {
+          "node_index": 90,
+          "name": "AI, Data & Automation connected promenade",
+          "mesh_index": 90,
+          "material_indices": [
+            7
+          ]
+        }
+      ],
+      "production_artifact_key": null,
+      "production_sha256": null,
+      "production_variants": null,
+      "production_collision_asset": null,
+      "connects": [
+        "reception",
+        "wing-ai_data"
+      ],
+      "observed_geometry": {
+        "primitives": 1,
+        "triangles": 160,
+        "exported_position_entries": 314,
+        "distinct_referenced_buffer_view_bytes": 8496
+      }
+    },
+    {
+      "family_id": "connector-immersive_creative",
+      "status": "DOING",
+      "scope": "observed study grouping; production separation proposed",
+      "source_nodes": [
+        {
+          "node_index": 91,
+          "name": "Immersive & Creative connected promenade",
+          "mesh_index": 91,
+          "material_indices": [
+            7
+          ]
+        },
+        {
+          "node_index": 92,
+          "name": "Immersive & Creative bridge rail",
+          "mesh_index": 92,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 93,
+          "name": "Immersive & Creative crossing piers",
+          "mesh_index": 93,
+          "material_indices": [
+            4
+          ]
+        },
+        {
+          "node_index": 94,
+          "name": "Immersive & Creative bridge posts",
+          "mesh_index": 94,
+          "material_indices": [
+            0
+          ]
+        }
+      ],
+      "production_artifact_key": null,
+      "production_sha256": null,
+      "production_variants": null,
+      "production_collision_asset": null,
+      "connects": [
+        "reception",
+        "wing-immersive_creative"
+      ],
+      "observed_geometry": {
+        "primitives": 4,
+        "triangles": 1756,
+        "exported_position_entries": 3032,
+        "distinct_referenced_buffer_view_bytes": 83304
+      }
+    },
+    {
+      "family_id": "connector-cloud_reliability",
+      "status": "DOING",
+      "scope": "observed study grouping; production separation proposed",
+      "source_nodes": [
+        {
+          "node_index": 95,
+          "name": "Cloud, Reliability & Trust connected promenade",
+          "mesh_index": 95,
+          "material_indices": [
+            7
+          ]
+        },
+        {
+          "node_index": 96,
+          "name": "Cloud, Reliability & Trust bridge rail",
+          "mesh_index": 96,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 97,
+          "name": "Cloud, Reliability & Trust crossing piers",
+          "mesh_index": 97,
+          "material_indices": [
+            4
+          ]
+        },
+        {
+          "node_index": 98,
+          "name": "Cloud, Reliability & Trust bridge posts",
+          "mesh_index": 98,
+          "material_indices": [
+            0
+          ]
+        }
+      ],
+      "production_artifact_key": null,
+      "production_sha256": null,
+      "production_variants": null,
+      "production_collision_asset": null,
+      "connects": [
+        "reception",
+        "wing-cloud_reliability"
+      ],
+      "observed_geometry": {
+        "primitives": 4,
+        "triangles": 2064,
+        "exported_position_entries": 3426,
+        "distinct_referenced_buffer_view_bytes": 94608
+      }
+    },
+    {
+      "family_id": "vegetation",
+      "status": "DOING",
+      "scope": "observed study grouping; production separation proposed",
+      "source_nodes": [
+        {
+          "node_index": 108,
+          "name": "Forest trunks",
+          "mesh_index": 108,
+          "material_indices": [
+            0
+          ]
+        },
+        {
+          "node_index": 109,
+          "name": "Forest canopy",
+          "mesh_index": 109,
+          "material_indices": [
+            9
+          ]
+        },
+        {
+          "node_index": 110,
+          "name": "Forest canopy.001",
+          "mesh_index": 110,
+          "material_indices": [
+            11
+          ]
+        },
+        {
+          "node_index": 111,
+          "name": "Forest canopy.002",
+          "mesh_index": 111,
+          "material_indices": [
+            10
+          ]
+        },
+        {
+          "node_index": 112,
+          "name": "Forest canopy.003",
+          "mesh_index": 112,
+          "material_indices": [
+            12
+          ]
+        },
+        {
+          "node_index": 113,
+          "name": "Garden understory",
+          "mesh_index": 113,
+          "material_indices": [
+            11
+          ]
+        },
+        {
+          "node_index": 114,
+          "name": "Garden understory.001",
+          "mesh_index": 114,
+          "material_indices": [
+            10
+          ]
+        },
+        {
+          "node_index": 115,
+          "name": "Garden understory.002",
+          "mesh_index": 115,
+          "material_indices": [
+            9
+          ]
+        },
+        {
+          "node_index": 116,
+          "name": "Garden understory.003",
+          "mesh_index": 116,
+          "material_indices": [
+            12
+          ]
+        }
+      ],
+      "production_artifact_key": null,
+      "production_sha256": null,
+      "production_variants": null,
+      "production_collision_asset": null,
+      "observed_geometry": {
+        "primitives": 9,
+        "triangles": 513632,
+        "exported_position_entries": 348985,
+        "distinct_referenced_buffer_view_bytes": 14199192
+      }
+    }
+  ],
+  "planned_missing_asset_roles": [
+    "Production chunk-local editable masters and canonical transform metadata",
+    "Separate collision and safe-ground surfaces with threshold/water exclusion",
+    "Service-room interiors beyond the representative fixture",
+    "Detailed material textures and licensed foliage/rock variants",
+    "Shared immutable material and vegetation resources with explicit ownership",
+    "Distant landscape and three-dimensional detail variants under approved stream profiles",
+    "Visitor-enabled ambience assets with rights and decoded/transfer accounting"
+  ],
+  "production_selection": {
+    "chunk_borders": null,
+    "simplified_variants": null,
+    "compression_extensions": null,
+    "texture_formats": null,
+    "streaming_radii": null,
+    "frame_memory_thermal_limits": null,
+    "audio_assets": null,
+    "toolchain_graph": null
+  },
+  "limits": [
+    "Grouping node indices does not produce chunk files, local origins, instancing or safe navigation",
+    "The whole study GLB exceeds approved initial transfer ceilings; no production budget pass",
+    "No movement, collision controller, spatial streaming, sound, live staff or booking functionality is implemented",
+    "Canonical wing/room membership and an opening ordinal do not establish release eligibility",
+    "Protected study sources are unchanged; this inventory authorizes no regeneration or production replacement"
+  ]
+}

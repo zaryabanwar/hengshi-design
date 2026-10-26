@@ -1,0 +1,169 @@
+{
+  "rows": [
+    {
+      "case": "valid",
+      "compiler": "api6",
+      "command": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate",
+      "started": "2026-10-05T23:06:50.076468+00:00",
+      "exit": 2,
+      "codes": [
+        2430,
+        2416
+      ],
+      "expected_codes": [
+        2430,
+        2416
+      ],
+      "matches": true,
+      "raw_producer_matches": {
+        "stdout": true,
+        "stderr": true
+      }
+    },
+    {
+      "case": "valid",
+      "compiler": "native7",
+      "command": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate",
+      "started": "2026-10-05T23:06:50.089227+00:00",
+      "exit": 1,
+      "codes": [
+        2430,
+        2416
+      ],
+      "expected_codes": [
+        2430,
+        2416
+      ],
+      "matches": true,
+      "raw_producer_matches": {
+        "stdout": true,
+        "stderr": true
+      }
+    },
+    {
+      "case": "invalid",
+      "compiler": "api6",
+      "command": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\tsconfig.invalid.json",
+        "--pretty",
+        "false"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate",
+      "started": "2026-10-05T23:06:50.097811+00:00",
+      "exit": 2,
+      "codes": [
+        2322
+      ],
+      "expected_codes": [
+        2322
+      ],
+      "matches": true,
+      "raw_producer_matches": {
+        "stdout": true,
+        "stderr": true
+      }
+    },
+    {
+      "case": "invalid",
+      "compiler": "native7",
+      "command": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\tsconfig.invalid.json",
+        "--pretty",
+        "false"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate",
+      "started": "2026-10-05T23:07:18.802542+00:00",
+      "exit": 1,
+      "codes": [
+        2322
+      ],
+      "expected_codes": [
+        2322
+      ],
+      "matches": true,
+      "raw_producer_matches": {
+        "stdout": true,
+        "stderr": true
+      }
+    },
+    {
+      "case": "loader",
+      "compiler": "api6",
+      "command": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\tsconfig.loader-control.json",
+        "--pretty",
+        "false"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate",
+      "started": "2026-10-05T23:07:22.207734+00:00",
+      "exit": 2,
+      "codes": [
+        2430,
+        2416
+      ],
+      "expected_codes": [
+        2430,
+        2416
+      ],
+      "matches": true,
+      "raw_producer_matches": {
+        "stdout": true,
+        "stderr": true
+      }
+    },
+    {
+      "case": "loader",
+      "compiler": "native7",
+      "command": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\tsconfig.loader-control.json",
+        "--pretty",
+        "false"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate",
+      "started": "2026-10-05T23:07:24.465577+00:00",
+      "exit": 1,
+      "codes": [
+        2430,
+        2416
+      ],
+      "expected_codes": [
+        2430,
+        2416
+      ],
+      "matches": true,
+      "raw_producer_matches": {
+        "stdout": true,
+        "stderr": true
+      }
+    }
+  ],
+  "all_match": true
+}

@@ -1,0 +1,467 @@
+{
+  "schema_version": 1,
+  "production_selection": false,
+  "status": "DOING",
+  "host": {
+    "node": "24.14.0",
+    "npm": "11.11.1",
+    "python": "3.14.5",
+    "pip": "26.1.1",
+    "platform": "win32"
+  },
+  "npm_independently_latest_exit": 1,
+  "npm_bridge_exit": 0,
+  "npm_bridge_stable_channel_pass": false,
+  "npm_prerelease_records": [
+    {
+      "path": "node_modules/gensync",
+      "version": "1.0.0-beta.2"
+    }
+  ],
+  "npm_bundled_records": [
+    {
+      "path": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/core",
+      "version": "1.11.1"
+    },
+    {
+      "path": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/runtime",
+      "version": "1.11.1"
+    },
+    {
+      "path": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/wasi-threads",
+      "version": "1.2.2"
+    },
+    {
+      "path": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@napi-rs/wasm-runtime",
+      "version": "1.1.4"
+    },
+    {
+      "path": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@tybys/wasm-util",
+      "version": "0.10.2"
+    },
+    {
+      "path": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/tslib",
+      "version": "2.8.1"
+    }
+  ],
+  "backend_dry_run_exit": 0,
+  "backend_active_extra_sets": {
+    "uvicorn": [
+      "standard"
+    ],
+    "psycopg": [
+      "binary"
+    ]
+  },
+  "backend_active_requires_dist_edges": [
+    {
+      "from": "fastapi",
+      "requires_dist": "starlette>=0.46.0",
+      "target": "starlette",
+      "resolved_version": "1.7.0",
+      "satisfied": true
+    },
+    {
+      "from": "fastapi",
+      "requires_dist": "pydantic>=2.9.0",
+      "target": "pydantic",
+      "resolved_version": "2.13.5",
+      "satisfied": true
+    },
+    {
+      "from": "fastapi",
+      "requires_dist": "typing-extensions>=4.8.0",
+      "target": "typing-extensions",
+      "resolved_version": "4.16.0",
+      "satisfied": true
+    },
+    {
+      "from": "fastapi",
+      "requires_dist": "typing-inspection>=0.4.2",
+      "target": "typing-inspection",
+      "resolved_version": "0.4.4",
+      "satisfied": true
+    },
+    {
+      "from": "fastapi",
+      "requires_dist": "annotated-doc>=0.0.2",
+      "target": "annotated-doc",
+      "resolved_version": "0.0.5",
+      "satisfied": true
+    },
+    {
+      "from": "fastapi",
+      "requires_dist": "opentelemetry-api>=1.44.0",
+      "target": "opentelemetry-api",
+      "resolved_version": "1.45.0",
+      "satisfied": true
+    },
+    {
+      "from": "uvicorn",
+      "requires_dist": "click>=7.0",
+      "target": "click",
+      "resolved_version": "8.5.0",
+      "satisfied": true
+    },
+    {
+      "from": "uvicorn",
+      "requires_dist": "h11>=0.8",
+      "target": "h11",
+      "resolved_version": "0.16.0",
+      "satisfied": true
+    },
+    {
+      "from": "uvicorn",
+      "requires_dist": "httptools>=0.8.0; extra == 'standard'",
+      "target": "httptools",
+      "resolved_version": "0.8.0",
+      "satisfied": true
+    },
+    {
+      "from": "uvicorn",
+      "requires_dist": "python-dotenv>=0.13; extra == 'standard'",
+      "target": "python-dotenv",
+      "resolved_version": "1.2.4",
+      "satisfied": true
+    },
+    {
+      "from": "uvicorn",
+      "requires_dist": "pyyaml>=5.1; extra == 'standard'",
+      "target": "pyyaml",
+      "resolved_version": "6.0.3",
+      "satisfied": true
+    },
+    {
+      "from": "uvicorn",
+      "requires_dist": "watchfiles>=0.20; extra == 'standard'",
+      "target": "watchfiles",
+      "resolved_version": "1.3.0",
+      "satisfied": true
+    },
+    {
+      "from": "uvicorn",
+      "requires_dist": "websockets>=13.0; extra == 'standard'",
+      "target": "websockets",
+      "resolved_version": "17.2",
+      "satisfied": true
+    },
+    {
+      "from": "sqlalchemy",
+      "requires_dist": "typing-extensions>=4.6.0",
+      "target": "typing-extensions",
+      "resolved_version": "4.16.0",
+      "satisfied": true
+    },
+    {
+      "from": "alembic",
+      "requires_dist": "SQLAlchemy>=2.0",
+      "target": "sqlalchemy",
+      "resolved_version": "2.1.3",
+      "satisfied": true
+    },
+    {
+      "from": "alembic",
+      "requires_dist": "Mako",
+      "target": "mako",
+      "resolved_version": "1.4.3",
+      "satisfied": true
+    },
+    {
+      "from": "alembic",
+      "requires_dist": "typing-extensions>=4.12",
+      "target": "typing-extensions",
+      "resolved_version": "4.16.0",
+      "satisfied": true
+    },
+    {
+      "from": "psycopg",
+      "requires_dist": "tzdata; sys_platform == \"win32\"",
+      "target": "tzdata",
+      "resolved_version": "2026.5",
+      "satisfied": true
+    },
+    {
+      "from": "psycopg",
+      "requires_dist": "psycopg-binary==3.3.6; implementation_name != \"pypy\" and extra == \"binary\"",
+      "target": "psycopg-binary",
+      "resolved_version": "3.3.6",
+      "satisfied": true
+    },
+    {
+      "from": "email-validator",
+      "requires_dist": "dnspython>=2.0.0",
+      "target": "dnspython",
+      "resolved_version": "2.8.0",
+      "satisfied": true
+    },
+    {
+      "from": "email-validator",
+      "requires_dist": "idna>=2.0.0",
+      "target": "idna",
+      "resolved_version": "3.20",
+      "satisfied": true
+    },
+    {
+      "from": "pytest",
+      "requires_dist": "colorama>=0.4; sys_platform == \"win32\"",
+      "target": "colorama",
+      "resolved_version": "0.4.6",
+      "satisfied": true
+    },
+    {
+      "from": "pytest",
+      "requires_dist": "iniconfig>=1.0.1",
+      "target": "iniconfig",
+      "resolved_version": "2.3.0",
+      "satisfied": true
+    },
+    {
+      "from": "pytest",
+      "requires_dist": "packaging>=22",
+      "target": "packaging",
+      "resolved_version": "26.3",
+      "satisfied": true
+    },
+    {
+      "from": "pytest",
+      "requires_dist": "pluggy<2,>=1.5",
+      "target": "pluggy",
+      "resolved_version": "1.6.0",
+      "satisfied": true
+    },
+    {
+      "from": "pytest",
+      "requires_dist": "pygments>=2.7.2",
+      "target": "pygments",
+      "resolved_version": "2.21.0",
+      "satisfied": true
+    },
+    {
+      "from": "pytest-asyncio",
+      "requires_dist": "pytest<10,>=8.4",
+      "target": "pytest",
+      "resolved_version": "9.1.1",
+      "satisfied": true
+    },
+    {
+      "from": "httpx",
+      "requires_dist": "anyio",
+      "target": "anyio",
+      "resolved_version": "4.15.1",
+      "satisfied": true
+    },
+    {
+      "from": "httpx",
+      "requires_dist": "certifi",
+      "target": "certifi",
+      "resolved_version": "2026.7.22",
+      "satisfied": true
+    },
+    {
+      "from": "httpx",
+      "requires_dist": "httpcore==1.*",
+      "target": "httpcore",
+      "resolved_version": "1.0.9",
+      "satisfied": true
+    },
+    {
+      "from": "httpx",
+      "requires_dist": "idna",
+      "target": "idna",
+      "resolved_version": "3.20",
+      "satisfied": true
+    },
+    {
+      "from": "httpcore",
+      "requires_dist": "certifi",
+      "target": "certifi",
+      "resolved_version": "2026.7.22",
+      "satisfied": true
+    },
+    {
+      "from": "httpcore",
+      "requires_dist": "h11>=0.16",
+      "target": "h11",
+      "resolved_version": "0.16.0",
+      "satisfied": true
+    },
+    {
+      "from": "opentelemetry-api",
+      "requires_dist": "typing-extensions>=4.5.0",
+      "target": "typing-extensions",
+      "resolved_version": "4.16.0",
+      "satisfied": true
+    },
+    {
+      "from": "pydantic",
+      "requires_dist": "annotated-types>=0.6.0",
+      "target": "annotated-types",
+      "resolved_version": "0.8.0",
+      "satisfied": true
+    },
+    {
+      "from": "pydantic",
+      "requires_dist": "pydantic-core==2.46.5",
+      "target": "pydantic-core",
+      "resolved_version": "2.46.5",
+      "satisfied": true
+    },
+    {
+      "from": "pydantic",
+      "requires_dist": "typing-extensions>=4.14.1",
+      "target": "typing-extensions",
+      "resolved_version": "4.16.0",
+      "satisfied": true
+    },
+    {
+      "from": "pydantic",
+      "requires_dist": "typing-inspection>=0.4.2",
+      "target": "typing-inspection",
+      "resolved_version": "0.4.4",
+      "satisfied": true
+    },
+    {
+      "from": "pydantic-core",
+      "requires_dist": "typing-extensions>=4.14.1",
+      "target": "typing-extensions",
+      "resolved_version": "4.16.0",
+      "satisfied": true
+    },
+    {
+      "from": "starlette",
+      "requires_dist": "anyio<5,>=4.0.0",
+      "target": "anyio",
+      "resolved_version": "4.15.1",
+      "satisfied": true
+    },
+    {
+      "from": "anyio",
+      "requires_dist": "idna>=2.8",
+      "target": "idna",
+      "resolved_version": "3.20",
+      "satisfied": true
+    },
+    {
+      "from": "anyio",
+      "requires_dist": "typing_extensions>=4.16.0; python_version < \"3.15\"",
+      "target": "typing-extensions",
+      "resolved_version": "4.16.0",
+      "satisfied": true
+    },
+    {
+      "from": "typing-inspection",
+      "requires_dist": "typing-extensions>=4.15.0",
+      "target": "typing-extensions",
+      "resolved_version": "4.16.0",
+      "satisfied": true
+    },
+    {
+      "from": "watchfiles",
+      "requires_dist": "anyio>=3.0.0",
+      "target": "anyio",
+      "resolved_version": "4.15.1",
+      "satisfied": true
+    },
+    {
+      "from": "mako",
+      "requires_dist": "MarkupSafe>=2.0",
+      "target": "markupsafe",
+      "resolved_version": "3.0.4",
+      "satisfied": true
+    }
+  ],
+  "backend_range_problems": [],
+  "backend_prerelease_versions": [],
+  "backend_yanked_records": [],
+  "backend_project_maturity_labels_needing_release_evidence": [
+    {
+      "package": "fastapi",
+      "version": "0.142.2",
+      "maturity_labels": [
+        "Development Status :: 4 - Beta"
+      ]
+    },
+    {
+      "package": "uvicorn",
+      "version": "0.54.0",
+      "maturity_labels": [
+        "Development Status :: 4 - Beta"
+      ]
+    },
+    {
+      "package": "httpx",
+      "version": "0.28.1",
+      "maturity_labels": [
+        "Development Status :: 4 - Beta"
+      ]
+    },
+    {
+      "package": "httpcore",
+      "version": "1.0.9",
+      "maturity_labels": [
+        "Development Status :: 3 - Alpha"
+      ]
+    },
+    {
+      "package": "annotated-doc",
+      "version": "0.0.5",
+      "maturity_labels": [
+        "Development Status :: 4 - Beta"
+      ]
+    },
+    {
+      "package": "h11",
+      "version": "0.16.0",
+      "maturity_labels": [
+        "Development Status :: 3 - Alpha"
+      ]
+    },
+    {
+      "package": "iniconfig",
+      "version": "2.3.0",
+      "maturity_labels": [
+        "Development Status :: 4 - Beta"
+      ]
+    },
+    {
+      "package": "pydantic_core",
+      "version": "2.46.5",
+      "maturity_labels": [
+        "Development Status :: 3 - Alpha"
+      ]
+    },
+    {
+      "package": "annotated-types",
+      "version": "0.8.0",
+      "maturity_labels": [
+        "Development Status :: 4 - Beta"
+      ]
+    },
+    {
+      "package": "starlette",
+      "version": "1.7.0",
+      "maturity_labels": [
+        "Development Status :: 3 - Alpha"
+      ]
+    },
+    {
+      "package": "typing-inspection",
+      "version": "0.4.4",
+      "maturity_labels": [
+        "Development Status :: 3 - Alpha"
+      ]
+    }
+  ],
+  "protected_inputs_unchanged": true,
+  "protected_input_hashes": {
+    "package.json": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b",
+    "package-lock.json": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908",
+    "apps/web/package.json": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a",
+    "apps/web/package-lock.json": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d",
+    "apps/api/requirements.txt": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd"
+  },
+  "frontend_node_modules_created": false,
+  "application_tests_executed": false,
+  "independent_review": "TODO",
+  "production_runtime_proven": false
+}

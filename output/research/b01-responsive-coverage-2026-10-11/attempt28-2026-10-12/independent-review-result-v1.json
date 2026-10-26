@@ -1,0 +1,171 @@
+{
+  "schema_version": "independent-result-review-v1",
+  "reviewer_id": "review_responsive_accounting_v1",
+  "producer_id": "root",
+  "reviewed_at_utc": "2026-10-11T19:20:12.594Z",
+  "verdict": "PASS",
+  "scope": "Bounded static result review of approved attempt28: supplied report, five native PNG comparisons and all28 unit crops including annotations. No current-canvas or application access.",
+  "packet": {
+    "path": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/review-inputs.json",
+    "bytes": 20365,
+    "sha256": "94c8dce18d096f897c8bbffb14722da19e952fdbdd2eb80de47bb54fd882a1db",
+    "input_count": 62,
+    "all_frozen_sizes_and_hashes_verified": true
+  },
+  "prior_source_binding": {
+    "packet_path": "output/research/b01-responsive-coverage-2026-10-11/accounting-correction/review-inputs.json",
+    "packet_sha256": "b7454c60b4dd04126817b2e0f7f618710baee16e9ffe7adcf80203597a597117",
+    "input_count": 21,
+    "review_path": "output/research/b01-responsive-coverage-2026-10-11/accounting-correction/independent-review-preparation-v1.json",
+    "review_sha256": "ea96d7a2b87aca54969c20f03c94d45852739a887afbc2723b392c541a1c3cfe",
+    "review_verdict": "PASS",
+    "preserved_initial_fail_path": "output/research/b01-responsive-coverage-2026-10-11/accounting-correction/initial-review-v1.json",
+    "initial_fail_sha256": "89a04090de3021a65a6bded0037df20cb760cc176fbb213f74200642b6ed2a58",
+    "hashes_not_refreshed": true
+  },
+  "called_script": {
+    "path": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/figma-call.js",
+    "bytes": 42766,
+    "sha256": "918122379a009d48b8fa904210e37424053d1dedba6fa4d148f689eb1cd57bfb",
+    "exact_equal_to_corrected_reviewed_call": true,
+    "producer_not_rerun": true
+  },
+  "approval_scope": {
+    "record_path": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/authorization.json",
+    "record_sha256": "dbf152008dd59ca8c6eb4005f5286b5ccd695f5b38df5c115bd9e9655354d19c",
+    "attempt": 28,
+    "conservatively_metered": 25,
+    "answer": "Approve this one combined call and exception",
+    "scope": "28 responsive references bundled preflight annotations font membership and five native images; temporary cleanup; no paid activation or automatic retry",
+    "permission_consumed": true,
+    "actual_provider_quota": "unknown",
+    "no_next_call_or_retry_authority": true
+  },
+  "findings": [],
+  "observations": [
+    {
+      "id": "RR28-01",
+      "result": "PASS",
+      "conclusion": "Saved raw response is non-error and contains one text report plus five PNG image records. Decoded text equals receipt JSON exactly. Actual text is11400 UTF8 bytes, below source19000-byte guard. Saved called script equals reviewed correction byte-for-byte; 28-reference scope and finite capture groups are unchanged."
+    },
+    {
+      "id": "RR28-02",
+      "result": "PASS",
+      "conclusion": "All20 distinct source records match frozen navigation/directory/recovery IDs, names and dimensions. All28 declared reference names, state/stream/viewport mappings and crop records correspond to exact input and source construction. Four streams remain explicit:12 width320 zoom specimens,12 width844 landscape specimens and4 width1440 desktop ERROR recovery specimens. The result receipt carries frame IDs/indices/dimensions, not an independent actual-canvas node-name census."
+    },
+    {
+      "id": "RR28-03",
+      "result": "PASS",
+      "conclusion": "Independent inclusive-range decoding verifies unique IDs, counts and exact temporary/removed-set equality. Reported tracked created1198; temporary605; removed605; retained reported593. Root,28 frame IDs,28 unit IDs and28 annotation IDs are retained members. Existing mutation inventory is exactly0:1,21:290,27:381,29:1512. No new components/styles/variables reported. Font membership separately reports52 Cascadia Mono Regular,64 Inter Bold and472 Inter Regular TEXT-ID memberships, including virtual instance descendants; this is not a physical-node census."
+    },
+    {
+      "id": "RR28-04",
+      "result": "PASS",
+      "conclusion": "Independent Pillow RGBA decoding verifies five native dimensions and exact source-pixel equality of every28 full unit crop against its reported comparison rectangle. All28 frame crops equal the corresponding top region of the unit. All rectangles are integral, inside their image and nonoverlapping; all native widths are preserved. No producer image checker was rerun and no image was modified."
+    },
+    {
+      "id": "RR28-05",
+      "result": "PASS",
+      "conclusion": "All28 full native unit crops were directly visually inspected, including every annotation. No clipping, overlap or unreadable ordering was observed. Current stream, original source ID, viewport note and recovery/context limitations visibly agree with frozen input; checked pending selection may differ intentionally from current stream. Narrow text wraps into a vertical reading order. Wide recovery retains inherited narrow stream control; it was not claimed as a redesigned responsive component."
+    },
+    {
+      "id": "RR28-06",
+      "result": "PASS",
+      "conclusion": "All seven returned cleanup/geometry-text/position/order flags are true, consistent with exact unchanged source checks. Source fingerprint covers bounded type/name/visibility/opacity/geometry/text plus position/order, not complete paints/styles/tokens or original layer editability. This review did not independently reread the canvas to prove every flag. B01Complete remains false."
+    }
+  ],
+  "image_checks": {
+    "method": "Independent local Pillow RGBA decoded-byte comparison; no output images written",
+    "native_sheet_dimensions": [
+      [
+        2088,
+        2678
+      ],
+      [
+        2088,
+        2678
+      ],
+      [
+        2628,
+        3416
+      ],
+      [
+        2628,
+        3758
+      ],
+      [
+        2952,
+        3248
+      ]
+    ],
+    "native_scale": 1,
+    "unit_crops_verified": 28,
+    "all_unit_source_pixels_equal": true,
+    "all_frame_top_pixels_equal": true,
+    "all_tiles_inside_and_nonoverlapping": true,
+    "width_counts": {
+      "320": 12,
+      "844": 12,
+      "1440": 4
+    }
+  },
+  "visual_inspection": {
+    "method": "Direct original-resolution view_image of unit-00.png through unit-27.png",
+    "unit_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "all_annotation_pixels_inspected": true,
+    "observed_clipping_or_overlap": [],
+    "result": "PASS bounded static visual inspection"
+  },
+  "report_inventory": {
+    "root_id": "35:2036",
+    "created_ids_reported": 1198,
+    "temporary_ids_reported": 605,
+    "removed_ids_reported": 605,
+    "retained_ids_reported": 593,
+    "existing_mutated_ids": [
+      "0:1",
+      "21:290",
+      "27:381",
+      "29:1512"
+    ],
+    "counts_are_tracked_report_members_not_whole_canvas_census": true
+  },
+  "limits": [
+    "Saved authorization scope and source/report/image correspondence are reviewed; no fresh external execution, retry, allowance, paid activation, Git or application authorization is granted.",
+    "No independent current-canvas read, complete physical/virtual node census, editable-layer inspection, complete paint/style/token preservation or live temporary-node inspection was performed.",
+    "Returned preservation/cleanup flags are bounded checks in the reviewed producer script, not independent whole-file preservation or restore proof.",
+    "Font-family TEXT-ID membership and rendered appearance do not establish exact character spans, missing fonts, complete editability or licensed redistribution.",
+    "Native static specimens do not prove actual400% browser zoom/reflow, safe-area/keyboard occlusion, focus/announcements, pointer/keyboard actions, assistive technology, forced-colours execution, measured devices or WCAG conformance.",
+    "Coverage remains the28 declared viewport/state/stream specimens; other states/modes/profiles/host-process products/prototypes, contracted2x/SVG/native archives, restore/EXIT, independent design accessibility, B01 and founder/integrated Phase1 acceptance remain.",
+    "No app/runtime/network/Figma call or producer script execution occurred in this review. Only this exclusive-create result receipt was written."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "observed_at_utc": "2026-10-17T15:11:16.217605+00:00",
+  "scope": "Synthetic tests of pure complete-child-environment construction, no subprocess or trial",
+  "interpreter": {
+    "path": "C:\\Python314\\python.exe",
+    "version": "3.14.5"
+  },
+  "capture_method": "unittest discovery/TextTestRunner under existing Python -B",
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "sources": [
+    {
+      "path": "output/research/python315-environment-preparation-2026-10-17/child_environment.py",
+      "bytes": 3237,
+      "sha256": "3335264cb3593043eb67c720dd5afec2f2a250813aa62af3651229decbdf2321"
+    },
+    {
+      "path": "output/research/python315-environment-preparation-2026-10-17/test_child_environment.py",
+      "bytes": 4473,
+      "sha256": "8cb5ae0dcd00c4d0f2348a6a67b6d4c098eb76a43f7afc5a211ccb80e1bfcae9"
+    }
+  ],
+  "output": {
+    "path": "output/research/python315-environment-preparation-2026-10-17/test-output-v1.txt",
+    "bytes": 1583,
+    "sha256": "814a3616376d950534a720cc337b3c1987abac08be6d34ea75365c9c3fae55a1"
+  },
+  "independent_review": "TODO",
+  "limits": [
+    "No real environment values captured or global config modified.",
+    "No process, network fence, filesystem ownership, pip operation, actual3.15 runtime or pipeline qualification.",
+    "No acquisition/installation/adoption/Phase1 acceptance permission."
+  ]
+}

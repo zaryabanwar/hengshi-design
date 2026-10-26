@@ -1,0 +1,82 @@
+{
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "bugs": {
+    "url": "https://github.com/oxc-project/oxc/issues"
+  },
+  "dist": {
+    "shasum": "fcbe35fb2cd46fba9787d3fd9b81d4a697cdc491",
+    "tarball": "https://registry.npmjs.org/@oxlint/binding-win32-x64-msvc/-/binding-win32-x64-msvc-1.87.0.tgz",
+    "fileCount": 3,
+    "integrity": "sha512-k+m/EShyXE29J/r1fjk0HlAzhN5JhIvj044oSJkXTEkCLrWZQgXb/3r4q5LTw/eaKW/4GuMXG2xmiJs3s5rPNw==",
+    "signatures": [
+      {
+        "sig": "MEUCIQCmYo1lFL1F5Xwx/xgI+cl6rLVLhdkgBoqDfItGryJDhQIgINVsFVXuEV+opQyO0fuWM3BkHBRxNFoxK9O2ldFP0Io=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "sig": "MEUCIQDboM3tg0+N//IVwqRP3vcTO1kTRBQ7jSmjOlnoE/rUTQIgBovCdTeIsjf6dY9yPRmbNlpHtNwAb7qFTVZDyaz78TA=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/@oxlint%2fbinding-win32-x64-msvc@1.87.0",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 13247823
+  },
+  "main": "oxlint.win32-x64-msvc.node",
+  "name": "@oxlint/binding-win32-x64-msvc",
+  "author": {
+    "name": "Boshen and oxc contributors"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "license": "MIT",
+  "_npmUser": {
+    "name": "GitHub Actions",
+    "email": "npm-oidc-no-reply@github.com",
+    "trustedPublisher": {
+      "id": "github",
+      "oidcConfigId": "a5b0d68d-0369-4ec6-a1e4-1e3b4bf86110"
+    }
+  },
+  "homepage": "https://oxc.rs/docs/guide/usage/linter",
+  "keywords": [
+    "eslint",
+    "javascript",
+    "linter",
+    "oxc",
+    "oxlint",
+    "typescript"
+  ],
+  "repository": {
+    "url": "git+https://github.com/oxc-project/oxc.git",
+    "type": "git",
+    "directory": "npm/oxlint"
+  },
+  "_npmVersion": "11.17.0",
+  "description": "Linter for the JavaScript Oxidation Compiler",
+  "directories": {},
+  "maintainers": [
+    {
+      "name": "boshen",
+      "email": "boshenc@gmail.com"
+    }
+  ],
+  "_nodeVersion": "26.5.0",
+  "_hasShrinkwrap": false,
+  "_npmOperationalInternal": {
+    "tmp": "tmp/binding-win32-x64-msvc_1.87.0_1791197831759_0.36521762242875555",
+    "host": "s3://npm-registry-packages-npm-production"
+  },
+  "_id": "@oxlint/binding-win32-x64-msvc@1.87.0",
+  "version": "1.87.0"
+}

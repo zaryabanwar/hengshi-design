@@ -1,0 +1,32 @@
+[
+  {
+    "source": "NAVIGATION/HIGH/HIGH/OPEN",
+    "sourceRoot": "144:3241",
+    "control": "Close",
+    "actualControl": "144:3235",
+    "observedLabel": "Close menu",
+    "trigger": "On click",
+    "action": "Change to",
+    "target": "NAVIGATION/HIGH/HIGH/CLOSED",
+    "targetRoot": "144:3286",
+    "parentSet": "144:3287",
+    "animation": "Instant",
+    "evidence": "navigation-close-edge-native-settings-v1.txt",
+    "observedInPresentation": true
+  },
+  {
+    "source": "NAVIGATION/HIGH/HIGH/CLOSED",
+    "sourceRoot": "144:3286",
+    "control": "Open",
+    "actualControl": "144:3280",
+    "observedLabel": "Menu",
+    "trigger": "On click",
+    "action": "Change to",
+    "target": "NAVIGATION/HIGH/HIGH/OPEN",
+    "targetRoot": "144:3241",
+    "parentSet": "144:3287",
+    "animation": "Instant",
+    "evidence": "navigation-open-edge-native-settings-v1.txt",
+    "observedInPresentation": true
+  }
+]

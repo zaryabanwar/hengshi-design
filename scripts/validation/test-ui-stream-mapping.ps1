@@ -136,7 +136,7 @@ foreach ($hostId in @('PRIM-001', 'PRIM-042', 'PRIM-043', 'PRIM-044')) {
 $styleGuide = Get-Content -Raw (Join-Path $root 'docs/active/3D_Mega_Menu_Style_Guide_v2.md')
 Assert-UiStreamStyleGuideContract -Text $styleGuide
 Check $true 'style-guide stream-control contract'
-foreach ($phrase in @('four native radio inputs', 'always-present Apply', 'in-force stream', 'pending selection', 'checked state', 'blur, arrow movement or timeout', 'native Enter submission', 'inside the fieldset', 'DOM reading order', 'both the group and the Apply button', 'hover-only', 'same wording in every stream')) {
+foreach ($phrase in @('four native radio inputs', 'always-present Apply', 'in-force stream', 'pending selection', 'checked state', 'blur, arrow movement or timeout', 'native Enter submission', 'inside the fieldset', 'DOM reading order', 'both the group and the Apply button', 'hover-only', 'same wording in every stream', 'Apply remains enabled', 'remains in keyboard focus order', 'brief polite status', 'route, focus, scroll, and open', 'no reload, transition, or persistence mutation occurs', 'Retain browser-native radio rendering', 'platform focus indicator', 'Do not use authored', 'native states and focus remain visible and unobscured', 'forced-colors verification, followed by founder approval', 'Escape dismisses nothing', 'outside the delivery-stream control')) {
     $changedText = $styleGuide.Replace($phrase, 'REMOVED-CONTRACT')
     Reject { Assert-UiStreamStyleGuideContract -Text $changedText } 'Stream style-guide contract missing' "style guide rejects removed $phrase"
 }
@@ -311,4 +311,39 @@ foreach ($case in $recoveryCases) {
     Reject { Get-UiFrameObligations -Mapping $mapping -Templates $templates -Profiles $changed } 'Missing recovery stream state' "$($case.state) cannot disappear from the stream intersection"
     Check (@($frames | Where-Object { $_.template_id -ceq 'TPL-BOOKING-QUALIFICATION' -and $_.state_id -ceq $case.state }).Count -eq 0) "unrelated booking profile does not inherit $($case.state)"
 }
+$identityContext = [pscustomobject]@{
+    Batches=@(Import-Csv (Join-Path $design 'design-batch-plan.csv')); Templates=$templates; Profiles=$profiles; Mapping=$mapping
+    Routes=@(Import-Csv (Join-Path $design 'foundation-route-coverage.csv')); Flows=@(Import-Csv (Join-Path $design 'foundation-flow-coverage.csv'))
+}
+$validId = 'HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_CLOSED_VP_DESKTOP_MODE_STANDARD_STREAM_SEMANTIC_V01'
+Check ($null -ne (Get-UiResolvedEvidenceId $validId 'S-SEMANTIC' $identityContext)) 'known evidence identity resolves'
+foreach ($mutation in @(@('B01','B99'),@('TPL_GLOBAL_NAVIGATION','TPL_UNKNOWN'),@('_REF_','_UNKNOWN_'),@('STATE_CLOSED','STATE_BOGUS'),@('VP_DESKTOP','VP_BOGUS'),@('MODE_STANDARD','MODE_BOGUS'),@('V01','V00'),@('STREAM_SEMANTIC','STREAM_HIGH'))) {
+    Check ($null -eq (Get-UiResolvedEvidenceId ($validId.Replace($mutation[0],$mutation[1])) 'S-SEMANTIC' $identityContext)) ('reject unresolved evidence token: ' + $mutation[1])
+}
+Check ($null -eq (Get-UiResolvedEvidenceId ($validId.Replace('STATE_CLOSED','STATE_REST')) 'S-SEMANTIC' $identityContext)) 'globally known state outside owning profile is rejected'
+$manifestRow = [pscustomobject]@{ evidence_id=$validId; stream_id='S-SEMANTIC'; batch_id='B01'; template_id='TPL-GLOBAL-NAVIGATION'; instance_id='REF'; state_id='STATE-CLOSED'; viewport_id='VP-DESKTOP'; mode_id='MODE-STANDARD'; revision='1' }
+Check ($null -ne (Get-UiResolvedManifestRow $manifestRow $identityContext)) 'manifest identity agrees'
+foreach ($field in @('batch_id','template_id','instance_id','state_id','viewport_id','mode_id','revision')) {
+    $changedRow=$manifestRow.PSObject.Copy(); $changedRow.$field='OTHER'
+    Check ($null -eq (Get-UiResolvedManifestRow $changedRow $identityContext)) ('reject manifest encoded owner disagreement: ' + $field)
+}
+$coverageBatches = @(
+    [pscustomobject]@{batch_id='B01';ma_025_disposition='authorized_pilot';stream_disposition='S-SEMANTIC=in_scope'},
+    [pscustomobject]@{batch_id='B07';ma_025_disposition='deferred_not_authorizable';stream_disposition='S-SEMANTIC=in_scope'}
+)
+$coordinates=@('B01|TPL-GLOBAL-NAVIGATION|STATE-REST|S-SEMANTIC','B07|TPL-WORLD-HUD|STATE-REST|S-HIGH')
+Check (@(Get-UiUnmetExecutableEvidence $coordinates @($coordinates[0]) $coverageBatches).Count -eq 0) 'held batch does not block complete executable batch'
+Check (@(Get-UiUnmetExecutableEvidence $coordinates @() $coverageBatches).Count -eq 1) 'missing executable-batch evidence still fails'
+$coverageBatches[0].stream_disposition='S-SEMANTIC=deferred_B07'
+Check (@(Get-UiUnmetExecutableEvidence $coordinates @() $coverageBatches).Count -eq 0) 'verified held deferral explains matching stream obligation'
+$coverageBatches[0].stream_disposition='S-SEMANTIC=deferred_B99'
+Check (@(Get-UiUnmetExecutableEvidence $coordinates @() $coverageBatches).Count -eq 1) 'unknown deferral does not discharge evidence'
+$scanRoots = @('design','production','ux' | ForEach-Object { Join-Path $root $_ })
+$normative = @($scanRoots | ForEach-Object { Join-Path $_ 'contract.md' })
+$reviews = @(1..12 | ForEach-Object { Join-Path $scanRoots[0] ("reviews/review-{0}.md" -f $_) })
+$scanUnion = @($normative) + @($reviews)
+Check (Test-UiFramingScanPartition $scanUnion $normative $reviews $scanRoots) 'adding exempt reviews cannot break normative coverage'
+Check (-not (Test-UiFramingScanPartition $scanUnion @($normative[0..1]) @($reviews + $normative[2]) $scanRoots)) 'missing package normative contribution fails'
+Check (-not (Test-UiFramingScanPartition $scanUnion $normative @($reviews[1..11]) $scanRoots)) 'missing union member fails'
+Check (-not (Test-UiFramingScanPartition $scanUnion $normative @($reviews + $normative[0]) $scanRoots)) 'partition overlap fails'
 Write-Output "RESULT=PASS CHECKS=$script:checks FRAME_OBLIGATIONS=$($frames.Count)"

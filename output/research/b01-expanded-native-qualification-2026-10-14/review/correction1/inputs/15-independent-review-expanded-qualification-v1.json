@@ -1,0 +1,90 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-14",
+  "reviewer": "Independent reviewer /root/review_native_trial_result_v1",
+  "review_complete": true,
+  "review_outcome": "REQUEST_CHANGES",
+  "scope": "Frozen expanded native qualification proposal consistency and supplied partial source observations only. No producer builder execution, external-system action, source/copy/executable admission, native qualification result or founder acceptance.",
+  "packet": {
+    "path": "output/research/b01-expanded-native-qualification-2026-10-14/review/review-inputs-v1.json",
+    "sha256": "c48e5979515d032719dc6b58d298139aa9c2b0afd43ae3c713680cf6ee8dc0e5",
+    "input_count": 18,
+    "source_and_frozen_bytes_and_sha256_verified": true,
+    "binding_errors": [],
+    "plan_internal_binding_count": 11,
+    "plan_internal_binding_errors": [],
+    "final_source_and_frozen_binding_recheck_errors": []
+  },
+  "findings": [
+    {
+      "id": "ENQR-01",
+      "priority": "material",
+      "title": "Reset experiment leaves pending and disclosure clean before departure",
+      "evidence": [
+        "inputs/06-qualification-plan-v1.json#/qualification_cases/5/check: dirty choice/Apply/disclosure/scroll, restore authored active, then demonstrate authored active=pending/default disclosure/top scroll",
+        "inputs/06-qualification-plan-v1.json#/edges/27: NAVIGATION/HIGH/HIGH/CLOSED Private boundary probe -> BOUNDARY/NAVIGATION/HIGH",
+        "inputs/06-qualification-plan-v1.json#/edges/143: DIRECTORY/HIGH/HIGH/CLOSED Private boundary probe -> BOUNDARY/DIRECTORY/HIGH",
+        "inputs/06-qualification-plan-v1.json#/edges/247: RECOVERY/HIGH/HIGH/NOT_APPLICABLE Private boundary probe -> BOUNDARY/RECOVERY/HIGH",
+        "All12 outgoing private boundary edges have pending=active and the authored default disclosure; all24 private edges request both resets=true",
+        "inputs/06-qualification-plan-v1.json#/frames/1/authored_instance_default and analogous boundary records specify defaults but no exact matching instance name/parent topology or preserve-settings comparison"
+      ],
+      "impact": "The table cannot activate a boundary while pending differs from active or a disclosed host remains open. Returning to the sole eligible departure variant has already cleaned these states. Scroll can remain dirty, but an observed diagonal/default-disclosure arrival would not distinguish actual component reset from pre-cleaning or an unmatched object's authored default. Different-flow repetition does not establish that distinction.",
+      "required_revision": "Provide a private boundary route reachable while active remains authored and pending differs, with open disclosure for Navigation/Directory. Define matching instance names/parent topology and a preserve-state comparison with reset settings explicitly unchecked versus a reset path with settings checked; record a visibly dirty departure and the expected different outcomes. Revise frame/edge counts and guarded write scope consistently if additional paths are needed. Alternatively narrow ENQ06 and purpose to only the reset behavior this graph can demonstrate, leaving component reset unqualified.",
+      "disposition": "Revise and independently re-review the corrected frozen proposal before requesting its applicable external-write release. The parent's subsequently suggested correction has not been reviewed and is not included in this frozen verdict."
+    }
+  ],
+  "actionable_finding_count": 1,
+  "graph_assessment": {
+    "variant_count": 80,
+    "variants_by_family": {"NAVIGATION": 32, "DIRECTORY": 32, "RECOVERY": 16},
+    "all16_ordered_active_pending_pairs_per_family": true,
+    "frame_count": 24,
+    "preview_entry_count": 12,
+    "reset_boundary_count": 12,
+    "edge_count": 300,
+    "same_family_change_to_count": 276,
+    "private_navigate_to_count": 24,
+    "visible_deliberate_noop_count": 60,
+    "noop_breakdown": {"checked_choice": 48, "diagonal_apply": 12},
+    "unresolved_endpoint_count": 0,
+    "duplicate_source_control_trigger_count": 0,
+    "edge_noop_overlap_count": 0,
+    "independent_semantic_assessment": "All276 same-set transitions agree with independently derived expected choice, Apply and disclosure behavior:144 noncurrent choices preserve active and set pending;36 changed Apply edges set active=pending while preserving disclosure/context;64 Open/Close and32 Escape edges change only disclosure. Closed variants contain no choice/Apply reactions. Recovery has no invented disclosure/escape paths. All authored variants are reachable through family-local transitions from the HIGH entry (32/32/16). Current-choice and already-active Apply controls remain unwired. Edge references remain symbolic with new actual IDs null; future ownership discovery is required.",
+    "context_assessment": "Services is fixed; Directory additionally retains synthetic design query; Recovery retains synthetic offline context and visible-help expectation. world_active=false across all80 variants. No production route, live World, staff session or product-navigation policy follows from the private reset probes."
+  },
+  "guarded_recipe_assessment": {
+    "evidence": "inputs/06-qualification-plan-v1.json#/write_scope; /execution_recipe/0 through /execution_recipe/11; /source_candidates/admission; /release_state",
+    "assessment": "Separate labelled new section/three family sets; copies only of freshly admitted owned HIGH/HIGH OPEN/CLOSED visuals; originals protected; discover all new parent/control/target IDs; strip inherited reactions only in copies and inspect all descendants before rewiring; no unreviewed detach/master edit. Instant single-action edges, distinct owned controls, label-based identity, paper preview backgrounds and same-height named anchors are specified. Readmission, native PRE/after archive, settings availability stops, no automatic repair and independent actual-result review remain gates. Existing eight-state approval is expressly insufficient for this new external write.",
+    "remaining_gate": "Fresh file/page/typed owner, tuple/descendant/text/font/token/reaction admission, actual copy ownership and actual settings must be established immediately before applicable approved construction. This proposal does not supply that completed admission."
+  },
+  "copy_assessment": {
+    "authority": "inputs/11-UG-3_CONTROL_COPY_PROPOSAL.md, accepted D-057 header, Recommended peer labels and order, Proposed exact phrases, Usage safeguards and authority",
+    "assessment": "All80 active/checked captions use Detailed 3D, Balanced 3D, Simplified 3D, Quick Access in HIGH/MEDIUM/LOW/SEMANTIC order. Recipe requires accepted D057 copy, including persistent peer explanation and advance advisement before Apply selection. Active legend and pending checked choice remain separate; same-option Apply is enabled/unwired. A future rendered text inventory must verify exact accepted phrases and fit, rather than infer them from illustrative graph strings or inherited source layer names. No legal, consent, stored-preference or DOM semantics acceptance is implied."
+  },
+  "partial_source_assessment": {
+    "directly_inspected": ["inputs/15-trial-owner-and-variants-current.json", "inputs/16-trial-set-current.png", "inputs/17-trial-set-current.txt"],
+    "supported": "Saved image and inspector show the existing owned trial set, eight variants, Active HIGH/MEDIUM, Pending MEDIUM/HIGH and Directory OPEN/CLOSED properties; selected set1500x2400 at140/140, spacing60/60 and Clip content enabled. Saved layer rows identify section101:3204, set85:3174, preview94:3199 and all eight listed ID/tuple combinations. AX URL agrees with the named file key and node85:3174; Page1 name is visible.",
+    "limitations": "Current supplied records do not provide fresh whole-source/page-ID, all descendant types/properties, caption/font/style/token/reaction, permanent alias, copy independence, complete preservation or restore admission. The current set inspector is in Design mode and cannot prove all reaction bindings. Two-choice existing fixtures are a source candidate, not a completed four-stream construction. Prior result/review receipts remain their own byte-bound scoped evidence and confer no PASS on this new graph."
+  },
+  "official_guidance_review": [
+    {"url": "https://help.figma.com/hc/en-us/articles/360040035874-Prototype-actions", "checked": "2026-10-14", "assessment": "Supports same-component-set Change to and frame Navigate to. It does not prove the proposed targets have actually been wired."},
+    {"url": "https://help.figma.com/hc/en-us/articles/14397859494295-State-management-for-prototypes", "checked": "2026-10-14", "assessment": "Supports memorization, matching-object sharing and resetting to canvas-authored states; reset controls appear when relevant. Nested matching depends on names and parent topology. These mechanics motivate ENQR-01; current option availability and behavior remain unobserved for this new proposal."},
+    {"url": "https://help.figma.com/hc/en-us/articles/360051747774-Preserve-scroll-position-in-prototypes", "checked": "2026-10-14", "assessment": "Supports matching-name/parent scroll sharing and an explicit reset override. ENQ05 correctly requires a real nonzero anchor observation, not geometry equality. No actual expanded-graph scroll behavior is established."}
+  ],
+  "case_assessment": {
+    "ENQ01_ENQ02": "Table supports all48 visible ordered pairs and32 closed-retention variants, all36 non-diagonal Apply paths,60 visible noops and repeated peer cycles; actual observations remain required.",
+    "ENQ03_ENQ04": "Same active/pending/context disclosure transitions, Directory covered-background nonactivation and Recovery offline context are bounded fixture expectations; no dialog/keyboard/live World claims.",
+    "ENQ05": "Meaningful actual nonzero-anchor comparison is specified, but must be performed at usable visible controls after opening disclosed fixtures. Same-set scroll preservation is not assumed.",
+    "ENQ06": "REQUEST_CHANGES under ENQR-01; current paths cannot isolate dirty component reset.",
+    "ENQ07_ENQ08": "Actual focus/key limits and source/copy safeguard evidence are required; annotations are not AT proof and ZIP CRC is not restore/source equivalence."
+  },
+  "remaining_obligations": [
+    "Revised bounded proposal review and explicit applicable founder external-write authority, then fresh complete source/copy admission and guarded discovery before construction.",
+    "Actual expanded native qualification and independent result review before larger construction release; absence of settings or any drift stops the affected mechanism without automatic repair.",
+    "All22 B01 scenarios and the nine profile allocations, full four-stream/public frame/context/viewport/mode and per-use anatomy/evidence requirements remain.",
+    "Failure/refusal, newer/unknown/terminal/timing, unsaved preference and actual supported keyboard/semantic/AT/browser/accessibility obligations remain; no global Enter/Space Apply is authorized.",
+    "BNP-01 through BNP-06, source preservation/restore and B01_EXIT remain DOING. No application, production UI, source equivalence, integrated B01/Phase1 or founder acceptance is established."
+  ],
+  "review_execution": "Read-only frozen/local inspection, independent structured graph checks and direct saved PNG inspection plus official public documentation. Producer builder was read for provenance but not executed or used as the independent oracle. Only this exclusive-created receipt was written; no UI, Figma, MCP/AI, application/account, Git or delegation action."
+}

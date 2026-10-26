@@ -1,0 +1,324 @@
+{
+  "product": "Hengshi Design v1",
+  "review_id": "B01-NATIVE-QUALIFICATION-PLAN-INDEPENDENT-V1",
+  "reviewer_id": "independent-agent-review_native_b01_preparation_v1",
+  "producer_id": "root-agent",
+  "reviewed_on_utc": "2026-10-13T09:48:17.319213+00:00",
+  "review_complete": true,
+  "preparation_status": "DOING",
+  "revision_cycle_reviewed": 0,
+  "scope": "Independent pre-permission review of the frozen eight-variant, 18-edge, six-observation native parent-host qualification trial only. No prior review PASS is inherited. No current Figma/browser/API observation or mutation was performed.",
+  "packet": {
+    "path": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/review/review-inputs-v1.json",
+    "bytes": 4862,
+    "sha256": "c85f2bd6de35e0d5e66399864eef6989b835d5e3e7c644a8e843ef22544930e3",
+    "inputs": 16,
+    "all_frozen_bindings_match": true
+  },
+  "frozen_inputs": [
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/qualification-plan-v1.json",
+      "snapshot": "inputs/00-qualification-plan-v1.json",
+      "bytes": 16705,
+      "sha256": "4c070d2b98a1a73ab4788ac8189408b5e742cf5671012583e9305ed1138ad33b",
+      "verified_sha256": "4c070d2b98a1a73ab4788ac8189408b5e742cf5671012583e9305ed1138ad33b",
+      "verified_bytes": 16705,
+      "matches": true
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "inputs/01-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "verified_sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "verified_bytes": 7686,
+      "matches": true
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "inputs/02-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "verified_sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "verified_bytes": 16234,
+      "matches": true
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "inputs/03-DECISIONS.md",
+      "bytes": 106595,
+      "sha256": "dcedb7cdad5f7401a47ddfe218f61b88b9a182d3f2c8c1f939696e9419522952",
+      "verified_sha256": "dcedb7cdad5f7401a47ddfe218f61b88b9a182d3f2c8c1f939696e9419522952",
+      "verified_bytes": 106595,
+      "matches": true
+    },
+    {
+      "source": "docs/software-definition/03-autonomous-ai-development-workflow.md",
+      "snapshot": "inputs/04-03-autonomous-ai-development-workflow.md",
+      "bytes": 7964,
+      "sha256": "d1388aab446eb65efe1f9f285cc4c375d05611b5d2fe34f6e75f09e83b588e54",
+      "verified_sha256": "d1388aab446eb65efe1f9f285cc4c375d05611b5d2fe34f6e75f09e83b588e54",
+      "verified_bytes": 7964,
+      "matches": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/README.md",
+      "snapshot": "inputs/05-README.md",
+      "bytes": 13944,
+      "sha256": "bec9109c86df617bf4682a5e7f41338e559ee0e9a4f0fffed03a9ae52696890f",
+      "verified_sha256": "bec9109c86df617bf4682a5e7f41338e559ee0e9a4f0fffed03a9ae52696890f",
+      "verified_bytes": 13944,
+      "matches": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "snapshot": "inputs/06-B01_EXECUTION_BRIEF.md",
+      "bytes": 65395,
+      "sha256": "3978fb0dbb7958c01b8568b594c8bf5c3b72376ccab3209763918bff003f9a7d",
+      "verified_sha256": "3978fb0dbb7958c01b8568b594c8bf5c3b72376ccab3209763918bff003f9a7d",
+      "verified_bytes": 65395,
+      "matches": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/evidence-capture-plan.csv",
+      "snapshot": "inputs/07-evidence-capture-plan.csv",
+      "bytes": 8428,
+      "sha256": "4dceafb6d78a859ff5aee23ac78e65180975e72e83ed14a40dc20a90ad4fa0fd",
+      "verified_sha256": "4dceafb6d78a859ff5aee23ac78e65180975e72e83ed14a40dc20a90ad4fa0fd",
+      "verified_bytes": 8428,
+      "matches": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/component-primitives.csv",
+      "snapshot": "inputs/08-component-primitives.csv",
+      "bytes": 79724,
+      "sha256": "8aec225781cbb1389ea15e70895889a9da306244cd6f8b74f7640d863dde6318",
+      "verified_sha256": "8aec225781cbb1389ea15e70895889a9da306244cd6f8b74f7640d863dde6318",
+      "verified_bytes": 79724,
+      "matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/review-preparation/independent-review-native-preparation-v1.json",
+      "snapshot": "inputs/09-independent-review-native-preparation-v1.json",
+      "bytes": 40723,
+      "sha256": "2ea4d3bbe3e6b87a653da4b1348b2fced735c9a3ccf25906aad9d96c8ade206d",
+      "verified_sha256": "2ea4d3bbe3e6b87a653da4b1348b2fced735c9a3ccf25906aad9d96c8ade206d",
+      "verified_bytes": 40723,
+      "matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/stream-control-open-high-current.txt",
+      "snapshot": "inputs/10-stream-control-open-high-current.txt",
+      "bytes": 21155,
+      "sha256": "ae81cefa929224767b3478adb7b764cc84bdf3c2bd40a33abec0d0039de2d2e1",
+      "verified_sha256": "ae81cefa929224767b3478adb7b764cc84bdf3c2bd40a33abec0d0039de2d2e1",
+      "verified_bytes": 21155,
+      "matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/stream-control-open-medium-current.txt",
+      "snapshot": "inputs/11-stream-control-open-medium-current.txt",
+      "bytes": 15299,
+      "sha256": "21015d2572db9b7c1d347cdcf111db9d0660dae0cf9900fb872e71e0b6f45676",
+      "verified_sha256": "21015d2572db9b7c1d347cdcf111db9d0660dae0cf9900fb872e71e0b6f45676",
+      "verified_bytes": 15299,
+      "matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/general-action-master-current.txt",
+      "snapshot": "inputs/12-general-action-master-current.txt",
+      "bytes": 16520,
+      "sha256": "7b702818a2ed61fb7f8c1bbdf8b0f58de616522a61954f2bcf2897e20d221cdf",
+      "verified_sha256": "7b702818a2ed61fb7f8c1bbdf8b0f58de616522a61954f2bcf2897e20d221cdf",
+      "verified_bytes": 16520,
+      "matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/stream-control-open-high-current.png",
+      "snapshot": "inputs/13-stream-control-open-high-current.png",
+      "bytes": 165773,
+      "sha256": "54e1f6ad7b4ecf398c16571aee0cb0bbadd5b94c02700749de791ce8f270f9a4",
+      "verified_sha256": "54e1f6ad7b4ecf398c16571aee0cb0bbadd5b94c02700749de791ce8f270f9a4",
+      "verified_bytes": 165773,
+      "matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/stream-control-open-medium-current.png",
+      "snapshot": "inputs/14-stream-control-open-medium-current.png",
+      "bytes": 189338,
+      "sha256": "98cc484d5f213e09b93c89b62cc543da2e525ef5b7c39a61fff4d9d84a23b174",
+      "verified_sha256": "98cc484d5f213e09b93c89b62cc543da2e525ef5b7c39a61fff4d9d84a23b174",
+      "verified_bytes": 189338,
+      "matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/general-action-master-current.png",
+      "snapshot": "inputs/15-general-action-master-current.png",
+      "bytes": 109100,
+      "sha256": "8f679964620077756ec8ea72a1df4640a73133087c93dea1358e7af9674ccd73",
+      "verified_sha256": "8f679964620077756ec8ea72a1df4640a73133087c93dea1358e7af9674ccd73",
+      "verified_bytes": 109100,
+      "matches": true
+    }
+  ],
+  "bounded_verdict": {
+    "result": "FAIL",
+    "reason": "The graph and source observations reconcile and the proposed parent-host mechanism is a plausible zero-spend native qualification candidate, but QP-01 leaves state-specific and background-inactivity observations unexercised. Correct the bounded observation script and independently review its successor before presenting exact trial-write permission. This is not a rejection of the candidate topology or an authorization to substitute it.",
+    "source_binding_consistency": "PASS",
+    "logical_graph_consistency": "PASS",
+    "ownership_privacy_zero_spend_guards": "PASS within prepared scope, subject to fresh admission and actual owned-ID checks",
+    "native_mechanism": "Candidate only; editor target/action/reset/scroll behavior remains unqualified",
+    "external_edit_approved": false,
+    "trial_executed": false,
+    "full_B01_plan_approved": false,
+    "full_B01_coverage": false,
+    "pilot_accepted": false,
+    "runtime_accessibility_proven": false
+  },
+  "checks": [
+    {
+      "result": "PASS",
+      "scope": "Frozen artifact integrity",
+      "detail": "Recomputed byte counts and SHA-256 for all 16 frozen snapshots immediately before receipt creation; all match the packet. Plan observation hashes match their frozen text snapshots."
+    },
+    {
+      "result": "PASS",
+      "scope": "Recorded source traits",
+      "detail": "Frozen native text and pixels show source21:25 as State OPEN / Stream HIGH, source21:55 as State OPEN / Stream MEDIUM, both272x896;14:18 is PRIM-015 / General action button / base,220x56, with Label Book a conversation. The HIGH appearance has pending Balanced; MEDIUM has pending Simplified. Therefore the trial must explicitly author each declared pending default on owned copies; source variants alone do not implement the trial. Selected-source observations do not certify all parent/descendant/font/token/reaction bindings."
+    },
+    {
+      "result": "PASS",
+      "scope": "Exact logical graph",
+      "detail": "All eight unique Active/Pending/Directory combinations for HIGH/MEDIUM are present and reachable from H_OPEN_M. All 18 edges resolve existing symbols. Close/Escape/reopen preserve route Services, query design and active/pending pair; selection edges change pending only; Apply changes active to pending and retains the open panel/context; two current-choice edges are self no-ops. These are structural/semantic plan checks, not Presentation tests."
+    },
+    {
+      "result": "PASS",
+      "scope": "Ownership and scope",
+      "detail": "One isolated owned root contains the set, preview frame/instance and synthetic children; no existing source mutation, deletion, new file, sharing/account/plugin/paid action, MCP/AI call or Git operation is requested. Source admission, discovered copy IDs and selected-control/target ownership checks precede each affected mutation. Failed qualification is preserved and held, with no automatic correction/retry or alternative topology. Whole-page census is not assumed."
+    },
+    {
+      "result": "PASS",
+      "scope": "Mechanism boundary and privacy",
+      "detail": "Internal modal-reference content changes with the same owning host variant, avoiding a separately swapped overlay that could leave the underlying host stale. Only the private fixture controls in the active layer may be wired. This is a visual/interaction simulation, not real modality, DOM inertness, native form/radio behavior, keyboard focus or AT proof. Services/design labels carry no visitor data, credentials, proof/tickets or backend state. No functional PRIM coverage, four-stream/full-profile coverage, timing-extension result or full B01 acceptance is claimed."
+    },
+    {
+      "result": "PASS",
+      "scope": "Preservation versus restore",
+      "detail": "Before/after native exports, hashes/CRC, raw Presentation captures and actual ID/settings records are required. The root remains labelled qualification-only; neither cleanup/deletion nor tested restore/_EXIT is implied."
+    }
+  ],
+  "findings": [
+    {
+      "id": "QP-01",
+      "priority": "medium",
+      "status": "TODO",
+      "classification": "material_pre_permission_observation_gap",
+      "title": "Exercise both no-op paths, every close/reopen context and inactive background behavior",
+      "locations": [
+        {
+          "snapshot": "inputs/00-qualification-plan-v1.json",
+          "line_start": 295,
+          "line_end": 308,
+          "json_pointer": "/edges/16"
+        },
+        {
+          "snapshot": "inputs/00-qualification-plan-v1.json",
+          "line_start": 322,
+          "line_end": 330,
+          "json_pointer": "/qualification/1"
+        },
+        {
+          "snapshot": "inputs/00-qualification-plan-v1.json",
+          "line_start": 342,
+          "line_end": 349,
+          "json_pointer": "/qualification/3"
+        },
+        {
+          "snapshot": "inputs/00-qualification-plan-v1.json",
+          "line_start": 365,
+          "line_end": 371,
+          "json_pointer": "/qualification/5"
+        }
+      ],
+      "finding": "The explicit M_OPEN_M current-choice Apply edge is never clicked by NQ-01 through NQ-06; NQ-04 exercises only H_OPEN_H no-op. The click Close and Open directory edges for M_OPEN_H and H_OPEN_H are not exercised by the written sequences, because NQ-06 uses Escape only. This matters because the two source variants have different inherited pending defaults, and each owned closed/open pair can have independently mistaken controls or targets. NQ-06 also asserts that inactive underlying controls do not activate without explicitly attempting a background control activation or recording its verified absence of inherited reactions. A statement of expected inactivity is not an observed negative test.",
+      "repair": "Retain the same eight variants, 18 edges and six observation IDs. Extend NQ-02 to click current-choice Apply in M_OPEN_M and observe unchanged active/pending/panel/query/route/scroll with no inherited action. Extend NQ-06 to enter each of the four open contexts through listed edges, attempt an identifiable underlying fixture control while open, then exercise click Close -> matching closed -> Open directory -> original open and Escape -> matching closed -> Open directory -> original open. Record actual owned target IDs, unchanged or restored active/pending/route/query labels and the scroll anchor where preservation is required. Map the observations to the actual edge records and capture native reaction absence/overrides for the negative controls. Stop on any mismatch; no additional topology, corrective loop, paid feature or external action is released by this repair."
+    }
+  ],
+  "readiness_requirements": [
+    {
+      "id": "QR-01",
+      "status": "TODO",
+      "requirement": "Correct QP-01 in a new frozen successor and obtain bounded independent re-review. No extra variant or edge is required."
+    },
+    {
+      "id": "QR-02",
+      "status": "TODO",
+      "requirement": "Before a source copy, perform the planned fresh native source admission. The frozen snapshots establish expected selected-source traits only. Missing required ownership/descendant/property/font/token/reaction data stops the affected operation; do not infer it from the images or waive it."
+    },
+    {
+      "id": "QR-03",
+      "status": "TODO",
+      "requirement": "After exact applicable founder trial-write permission, create only the isolated owned root, discover real new IDs, and bind new controls to the recorded owning parent variants. An inherited source-instance alias or edit-main-component path is not an owned target."
+    },
+    {
+      "id": "QR-04",
+      "status": "TODO",
+      "requirement": "During this bounded trial record the actually available native Change to parent target, Instant/stable transition, component-state carryover/reset behavior, and preview/nested vertical-overflow configuration. Define and record an identifiable scroll anchor and compare actual nonzero offset before/after both Apply directions and relevant close/reopen/selection paths. Similar dimensions/names do not prove preservation. A missing setting or failed observation stops without alternative topology or retry."
+    },
+    {
+      "id": "QR-05",
+      "status": "TODO",
+      "requirement": "Leave diagonal Apply controls with verified no action or equivalent no-transition behavior; do not invent a native action called No transition. Keep underlying controls free of inherited interactions while the internal modal-reference layer is open. Escape is a key simulation and focus-return is an annotation, not actual native modality."
+    },
+    {
+      "id": "QR-06",
+      "status": "TODO",
+      "requirement": "Record result captures, actual source/copy/control/target/setting bindings and native before/after exports; obtain a separate result review. A positive result supports only this two-stream mechanism qualification and cannot release the complete B01 executable plan, functional primitives, production design, runtime/AT conformance or pilot acceptance."
+    }
+  ],
+  "readiness_disposition": {
+    "trial_permission_request": "BLOCKED",
+    "reason": "Resolve QP-01 and re-review exact successor first. Fresh source admission and owned-ID checks remain separate operation guards.",
+    "safe_next_action": "Correct the bounded observation script only, preserving source/topology/scope exclusions.",
+    "external_mutation_permission": false,
+    "new_trial_or_alternative_topology_approved": false
+  },
+  "provider_capability_basis": [
+    {
+      "url": "https://help.figma.com/hc/en-us/articles/360061175334-Create-interactive-components-with-variants",
+      "verified_on": "2026-10-13",
+      "supports": "Any-plan interactive variants; Change to can target a parent variant from a nested instance. This makes the proposed topology plausible, but does not prove its target is available on the actual copied controls or preserve overrides correctly."
+    },
+    {
+      "url": "https://help.figma.com/hc/en-us/articles/14397859494295-State-management-for-prototypes",
+      "verified_on": "2026-10-13",
+      "supports": "Any-plan state memorization/sharing/reset. Matching interactive components can retain previously selected variants; selected reset policy must be observed."
+    },
+    {
+      "url": "https://help.figma.com/hc/en-us/articles/360039818734-Prototype-scroll-and-overflow-behavior",
+      "verified_on": "2026-10-13",
+      "supports": "Any-plan scroll overflow requires content beyond frame dimensions. One preview instance reduces cross-frame matching dependence but does not prove Change to retains its actual overflow/scroll position."
+    },
+    {
+      "url": "https://help.figma.com/hc/en-us/articles/14506587589399-Use-variables-in-prototypes",
+      "verified_on": "2026-10-13",
+      "supports": "Prototype variables are paid-plan capabilities and remain excluded."
+    }
+  ],
+  "exclusions": [
+    "Prior receipt PASS and any later producer bytes/candidates outside the exact 16-input packet",
+    "Live Figma/browser/API/AI/MCP inspection, editor mutations, trial execution or source edits",
+    "Real modal inertness, focus containment/return, native radio/form semantics, DOM/AT/WCAG, physical devices or production scroll behavior",
+    "Full B01 executable plan, public evidence ownership allocation, functional primitive coverage, four-stream/full-profile evidence, refusal/failure/timing branches and founder pilot acceptance",
+    "Account/provider/credential/spend/install/plugin/Git/deployment/publication changes, deletion/cleanup and restore/_EXIT acceptance"
+  ],
+  "write_accounting": {
+    "operation": "one new exclusive-create receipt only",
+    "target": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/review/independent-review-qualification-plan-v1.json",
+    "producer_inputs_changed": false,
+    "external_operations": 0,
+    "Figma_AI_MCP_calls": 0,
+    "browser_calls": 0
+  },
+  "memory_use": "Historical evidence/approval-boundary orientation only; current conclusions come from this frozen packet and independently checked current primary Figma guidance, not unverified historical gates."
+}

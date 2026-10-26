@@ -1,0 +1,10 @@
+{
+  "status": "DOING",
+  "scope": "Schema representation only; not implementation/HTTP/crypto/session proof",
+  "command": "python -m unittest scripts.validation.test_staff_session_control_schema scripts.validation.test_process_value_schema scripts.validation.test_operator_read_schema",
+  "exit_code": 0,
+  "methods": 24,
+  "new_methods": 8,
+  "stdout": "Ran24 tests in3.540s; OK",
+  "implementation_tests": false
+}

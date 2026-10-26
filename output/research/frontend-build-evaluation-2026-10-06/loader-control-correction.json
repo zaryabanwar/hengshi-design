@@ -1,0 +1,6 @@
+{
+  "cause": "Initial control used unexported internal subpaths; actual package exports only its root entry.",
+  "evidence": "candidate/node_modules/three-stdlib/package.json:23-27",
+  "correction": "Use the published root type exports; no declaration patch or check suppression.",
+  "initial_logs_preserved": true
+}

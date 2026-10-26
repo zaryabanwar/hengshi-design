@@ -1,0 +1,41 @@
+{
+  "scope": "strict isolated lint and TypeScript API bridge resolution only, no installed package execution",
+  "started_at_utc": "2026-10-05T20:48:46.613726+00:00",
+  "ended_at_utc": "2026-10-05T20:49:36.083101+00:00",
+  "command": [
+    "C:\\nvm4w\\nodejs\\node.exe",
+    "C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+    "install",
+    "--package-lock-only",
+    "--ignore-scripts",
+    "--strict-peer-deps",
+    "--engine-strict",
+    "--audit=false",
+    "--fund=false",
+    "--workspaces=false",
+    "--include=dev",
+    "--registry=https://registry.npmjs.org",
+    "--userconfig=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\empty-user.npmrc",
+    "--globalconfig=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\empty-global.npmrc",
+    "--loglevel=error"
+  ],
+  "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate",
+  "environment": "allowlisted OS/runtime paths only; no provider/npm-auth variables; explicit empty user/global npm configs",
+  "exit_code": 0,
+  "node_modules_exists": false,
+  "lock_sha256": "86dd64aae77da6ab9a0d0f7a88338494c15f68620838ffd40140f254b1e9ca2d",
+  "package_records": 162,
+  "prereleases": [
+    {
+      "path": "node_modules/gensync",
+      "version": "1.0.0-beta.2"
+    }
+  ],
+  "gensync_parents": [
+    {
+      "path": "node_modules/@babel/core",
+      "version": "7.29.7",
+      "range": "^1.0.0-beta.2"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "DOING",
+  "scope": "Initial synthetic helper test execution before producer correction",
+  "command": "python -B -m unittest discover -s output/research/python315-execution-preparation-2026-10-17 -p test_archive_admission.py -v",
+  "exit_code": 1,
+  "methods": 13,
+  "failed_subcases": 7,
+  "real_helper_failures": [
+    "C:/outside ZIP and TAR",
+    "C:relative ZIP and TAR",
+    "a:b ZIP and TAR"
+  ],
+  "fixture_failure": "a-backslash-b ZIP writer normalized to a/b before archive creation; encoded fixture must preserve an actual backslash",
+  "no_real_archive_extraction_install_or_runtime_trial": true
+}

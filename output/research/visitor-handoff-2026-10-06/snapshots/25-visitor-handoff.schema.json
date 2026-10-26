@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed visitor handoff directions v1",
+  "description": "IF-CHAT-04 definition only. Select request or response explicitly; module root denies. Shape proves no process/CSRF authority, consent, approved preview, current availability, durable request, uniqueness, routing, HTTP enforcement or actual human acceptance.",
+  "not": {},
+  "$defs": {
+    "operation_id": {"$ref": "booking-creation-request.schema.json#/$defs/operation_id"},
+    "revision": {"$ref": "process-value.schema.json#/$defs/positive_revision"},
+    "context": {
+      "allOf": [{"$ref": "chat-creation-request.schema.json#/$defs/context"}],
+      "required": ["wing_key"]
+    },
+    "projection_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["projection_id", "projection_revision", "projection_sha256"],
+      "properties": {
+        "projection_id": {"$ref": "#/$defs/operation_id"},
+        "projection_revision": {"$ref": "#/$defs/revision"},
+        "projection_sha256": {"$ref": "process-value.schema.json#/$defs/sha256"}
+      },
+      "description": "Reference to a separately authorized exact sharing preview. Not a bearer credential, approval or permission to reconstruct lost ephemeral history. Preview preparation/event shape and expiry profile remain held."
+    },
+    "sharing": {
+      "oneOf": [
+        {"const": {"kind": "no_prior_context"}},
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "projection_reference"],
+          "properties": {
+            "kind": {"const": "reviewed_projection"},
+            "projection_reference": {"$ref": "#/$defs/projection_reference"}
+          }
+        }
+      ],
+      "description": "Either no prior conversation content or the exact preview explicitly chosen for this purpose. Neither variant supplies consent or grants storage. No hidden full-history default."
+    },
+    "request_base": {
+      "type": "object",
+      "required": ["phase", "intent", "operation_id"],
+      "properties": {
+        "phase": {"enum": ["apply", "reconcile"]},
+        "intent": {"const": "request_text_handoff"},
+        "operation_id": {"$ref": "#/$defs/operation_id"}
+      }
+    },
+    "apply": {
+      "allOf": [{"$ref": "#/$defs/request_base"}],
+      "required": ["context", "expected_consent_revision", "sharing"],
+      "properties": {
+        "phase": {"const": "apply"},
+        "context": {"$ref": "#/$defs/context"},
+        "expected_consent_revision": {"$ref": "#/$defs/revision"},
+        "sharing": {"$ref": "#/$defs/sharing"}
+      },
+      "unevaluatedProperties": false
+    },
+    "reconcile": {
+      "allOf": [{"$ref": "#/$defs/request_base"}],
+      "properties": {"phase": {"const": "reconcile"}},
+      "unevaluatedProperties": false,
+      "description": "Read the same scoped operation under current process/disclosure authority. No new context, consent decision, projection, request or routing."
+    },
+    "request": {"oneOf": [{"$ref": "#/$defs/apply"}, {"$ref": "#/$defs/reconcile"}]},
+    "request_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["handoff_id", "handoff_revision"],
+      "properties": {
+        "handoff_id": {"$ref": "#/$defs/operation_id"},
+        "handoff_revision": {"$ref": "#/$defs/revision"}
+      },
+      "description": "Immutable binding at request creation. No current owner, acceptance, availability, text readiness or continuing grant."
+    },
+    "requested_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "applied_binding", "sharing"],
+      "properties": {
+        "state": {"const": "requested"},
+        "applied_binding": {"$ref": "#/$defs/request_binding"},
+        "sharing": {"$ref": "#/$defs/sharing"}
+      },
+      "description": "Known permitted durable request and originally admitted sharing choice. Does not prove queue placement, alert delivery, assignment, human acceptance, text connection or media permission."
+    },
+    "pending_result": {"const": {"state": "pending", "recovery": "reconcile_same_operation"}},
+    "outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["intent", "operation_id", "result"],
+      "properties": {
+        "intent": {"const": "request_text_handoff"},
+        "operation_id": {"$ref": "#/$defs/operation_id"},
+        "result": {"oneOf": [{"$ref": "#/$defs/requested_result"}, {"$ref": "#/$defs/pending_result"}]}
+      }
+    },
+    "creation_error": {
+      "oneOf": [
+        {"const": {"code": "source_unavailable", "recovery": "inspect_authorized_current_state"}},
+        {"const": {"code": "consent_changed", "recovery": "inspect_authorized_current_state"}},
+        {"const": {"code": "sharing_unavailable", "recovery": "inspect_authorized_current_state"}},
+        {"const": {"code": "staff_unavailable", "recovery": "contact_or_book"}},
+        {"const": {"code": "request_conflict", "recovery": "inspect_authorized_current_state"}}
+      ],
+      "description": "Fixed categories after applicable authorization. No staff identity/private reason, raw preview or prior-effect inference. Recovery labels cannot authorize a read or a new dispatch."
+    },
+    "error": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["error"],
+      "properties": {
+        "error": {"oneOf": [
+          {"$ref": "#/$defs/creation_error"},
+          {"$ref": "staff-handoff-response.schema.json#/$defs/application_error"}
+        ]}
+      }
+    },
+    "response": {"oneOf": [{"$ref": "#/$defs/outcome"}, {"$ref": "#/$defs/error"}]}
+  }
+}

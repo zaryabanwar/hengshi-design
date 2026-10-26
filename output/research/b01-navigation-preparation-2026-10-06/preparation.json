@@ -1,0 +1,319 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "TODO",
+  "date": "2026-10-06",
+  "purpose": "Prepared local B01 navigation composition; not executed or accepted",
+  "prepared_call_sha256": "0f5733e1e05b716c81120ac4df928616192d282c868325864de6b893731069f6",
+  "external_calls": 0,
+  "expected_reference_frames": 20,
+  "expected_local_control_variants": 16,
+  "expected_spacing_variables": 9,
+  "all_frame_names_resolve_to_approved_context": true,
+  "input": {
+    "product": "Hengshi Design v1",
+    "fileKey": "GOmLP6Cv96l768ueSrZ5Dg",
+    "componentSetName": "PRIM-001 / Delivery stream control / B01 v1",
+    "fixture": "Synthetic capability fixture: all four choices are available. This does not assert any actual client device capability or automatic initial selection.",
+    "labels": [
+      {
+        "id": "S-HIGH",
+        "label": "Detailed 3D"
+      },
+      {
+        "id": "S-MEDIUM",
+        "label": "Balanced 3D"
+      },
+      {
+        "id": "S-LOW",
+        "label": "Simplified 3D"
+      },
+      {
+        "id": "S-SEMANTIC",
+        "label": "Quick Access"
+      }
+    ],
+    "copy": {
+      "legend": "Delivery stream — currently {active_label}",
+      "apply": "Apply selection",
+      "advisement": "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.",
+      "peer_explanation": "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.",
+      "privacy": "Privacy and storage",
+      "STATE-STREAM-CHANGED": "{selected_label} is now active. You are still at {destination}.",
+      "STATE-PREFERENCE-WRITE-FAILED": "{selected_label} is active for this visit, but we could not save your choice for future visits. You can choose a stream again. Read Privacy and storage for details.",
+      "STATE-PREFERENCE-READ-FAILED": "We could not read your saved stream choice. This visit is using {active_label}. You can choose a stream again. Read Privacy and storage for details."
+    },
+    "controls": [
+      {
+        "state_id": "STATE-OPEN",
+        "stream_id": "S-HIGH",
+        "selected_stream_id": "S-MEDIUM"
+      },
+      {
+        "state_id": "STATE-OPEN",
+        "stream_id": "S-LOW",
+        "selected_stream_id": "S-SEMANTIC"
+      },
+      {
+        "state_id": "STATE-OPEN",
+        "stream_id": "S-MEDIUM",
+        "selected_stream_id": "S-LOW"
+      },
+      {
+        "state_id": "STATE-OPEN",
+        "stream_id": "S-SEMANTIC",
+        "selected_stream_id": "S-HIGH"
+      },
+      {
+        "state_id": "STATE-PREFERENCE-READ-FAILED",
+        "stream_id": "S-HIGH",
+        "selected_stream_id": "S-HIGH"
+      },
+      {
+        "state_id": "STATE-PREFERENCE-READ-FAILED",
+        "stream_id": "S-LOW",
+        "selected_stream_id": "S-LOW"
+      },
+      {
+        "state_id": "STATE-PREFERENCE-READ-FAILED",
+        "stream_id": "S-MEDIUM",
+        "selected_stream_id": "S-MEDIUM"
+      },
+      {
+        "state_id": "STATE-PREFERENCE-READ-FAILED",
+        "stream_id": "S-SEMANTIC",
+        "selected_stream_id": "S-SEMANTIC"
+      },
+      {
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "stream_id": "S-HIGH",
+        "selected_stream_id": "S-HIGH"
+      },
+      {
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "stream_id": "S-LOW",
+        "selected_stream_id": "S-LOW"
+      },
+      {
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "stream_id": "S-MEDIUM",
+        "selected_stream_id": "S-MEDIUM"
+      },
+      {
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "stream_id": "S-SEMANTIC",
+        "selected_stream_id": "S-SEMANTIC"
+      },
+      {
+        "state_id": "STATE-STREAM-CHANGED",
+        "stream_id": "S-HIGH",
+        "selected_stream_id": "S-HIGH"
+      },
+      {
+        "state_id": "STATE-STREAM-CHANGED",
+        "stream_id": "S-LOW",
+        "selected_stream_id": "S-LOW"
+      },
+      {
+        "state_id": "STATE-STREAM-CHANGED",
+        "stream_id": "S-MEDIUM",
+        "selected_stream_id": "S-MEDIUM"
+      },
+      {
+        "state_id": "STATE-STREAM-CHANGED",
+        "stream_id": "S-SEMANTIC",
+        "selected_stream_id": "S-SEMANTIC"
+      }
+    ],
+    "frames": [
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+        "state_id": "STATE-OPEN",
+        "stream_id": "S-HIGH",
+        "width": 320
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+        "state_id": "STATE-OPEN",
+        "stream_id": "S-LOW",
+        "width": 320
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+        "state_id": "STATE-OPEN",
+        "stream_id": "S-MEDIUM",
+        "width": 320
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+        "state_id": "STATE-OPEN",
+        "stream_id": "S-SEMANTIC",
+        "width": 320
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+        "state_id": "STATE-PREFERENCE-READ-FAILED",
+        "stream_id": "S-HIGH",
+        "width": 320
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+        "state_id": "STATE-PREFERENCE-READ-FAILED",
+        "stream_id": "S-LOW",
+        "width": 320
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+        "state_id": "STATE-PREFERENCE-READ-FAILED",
+        "stream_id": "S-MEDIUM",
+        "width": 320
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+        "state_id": "STATE-PREFERENCE-READ-FAILED",
+        "stream_id": "S-SEMANTIC",
+        "width": 320
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "stream_id": "S-HIGH",
+        "width": 320
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "stream_id": "S-LOW",
+        "width": 320
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "stream_id": "S-MEDIUM",
+        "width": 320
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "stream_id": "S-SEMANTIC",
+        "width": 320
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+        "state_id": "STATE-STREAM-CHANGED",
+        "stream_id": "S-HIGH",
+        "width": 320
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+        "state_id": "STATE-STREAM-CHANGED",
+        "stream_id": "S-LOW",
+        "width": 320
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+        "state_id": "STATE-STREAM-CHANGED",
+        "stream_id": "S-MEDIUM",
+        "width": 320
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+        "state_id": "STATE-STREAM-CHANGED",
+        "stream_id": "S-SEMANTIC",
+        "width": 320
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_HIGH_V01",
+        "state_id": "STATE-OPEN",
+        "stream_id": "S-HIGH",
+        "width": 1440
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_LOW_V01",
+        "state_id": "STATE-OPEN",
+        "stream_id": "S-LOW",
+        "width": 1440
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+        "state_id": "STATE-OPEN",
+        "stream_id": "S-MEDIUM",
+        "width": 1440
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+        "state_id": "STATE-OPEN",
+        "stream_id": "S-SEMANTIC",
+        "width": 1440
+      }
+    ],
+    "held": [
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+        "status": "TODO",
+        "reason": "Requires a coherent synthetic capability/prior-stream fixture and established reason under D-057; this preparation does not invent device facts or claim this required focus is discharged."
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+        "status": "TODO",
+        "reason": "Requires a coherent synthetic capability/prior-stream fixture and established reason under D-057; this preparation does not invent device facts or claim this required focus is discharged."
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+        "status": "TODO",
+        "reason": "Requires a coherent synthetic capability/prior-stream fixture and established reason under D-057; this preparation does not invent device facts or claim this required focus is discharged."
+      },
+      {
+        "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+        "status": "TODO",
+        "reason": "Requires a coherent synthetic capability/prior-stream fixture and established reason under D-057; this preparation does not invent device facts or claim this required focus is discharged."
+      }
+    ]
+  },
+  "source_hashes": [
+    {
+      "path": "docs/phase-1-ui-reference-production/scripts/b01-navigation-stream-states.js",
+      "sha256": "f5e254179753a72ce473dd115964cb6c6ddb512a24345d93cf57360bcce7c2bc"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/accessibility/UG-3_CONTROL_COPY_PROPOSAL.md",
+      "sha256": "839eb5291d79ac811e927e01ff9b588c192dac8a4c955448c753b4c63ccc3a3b"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-production/scripts/b01-prepare-navigation.ps1",
+      "sha256": "362079cd61dad797eddfce4f51e7534a6611f2368e060557cdcec80f15d80bc2"
+    },
+    {
+      "path": "output/research/b01-coverage-preparation-2026-10-06/coverage-preparation.json",
+      "sha256": "0f325a7de1c387b6a9ec257daea44600bca0c4eb3935a45618016a8a8d7b2ebc"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+      "sha256": "575d1478893c090e9b367e75c2d14cf645e80eeb67bce09c2383c08294fa034a"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "sha256": "6fa43937ae5e590b31e4fc21ea9e1209d3bfcdf145a6698d2429125213166dec"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/design-batch-plan.csv",
+      "sha256": "550d8de3c6860f74e09e8a53da52e24ca2874d94b705d11f6afd4745f0142d12"
+    },
+    {
+      "path": "scripts/validation/ui-stream-mapping.ps1",
+      "sha256": "2c4509b4df40dd1f14c4bb53a35acff6799fde20e2be69d52f08db9e47babd38"
+    }
+  ],
+  "limitations": "Names/copy resolution and syntax are preparation checks only. Actual creation, layout, text bounds, screenshots, interactions, full B01 coverage, independent review, EXIT and acceptance remain unproven. No application change or external library/font/provider/sharing operation.",
+  "preparation_validation": {
+    "name_resolution": "PASS using existing Get-UiResolvedEvidenceId against approved tables",
+    "copy": "Extracted verbatim from accepted D-057 table and explanation",
+    "javascript_syntax": "PASS node --check syntax-check.mjs; wrapper contains one uncalled async function",
+    "whitespace": "PASS git diff --check; new sources additionally inspected below",
+    "executed": false,
+    "independent_review": false
+  }
+}

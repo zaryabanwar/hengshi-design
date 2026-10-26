@@ -1,0 +1,41 @@
+{
+  "checked_at_utc": "2026-10-05T22:57:04.486283+00:00",
+  "scope": "corrected actual fixture plus complete referenced declarations, strict skipLibCheck=false",
+  "commands": [
+    {
+      "compiler": "api6",
+      "command": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 2,
+      "codes": [
+        2430,
+        2416
+      ]
+    },
+    {
+      "compiler": "native7",
+      "command": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 1,
+      "codes": [
+        2430,
+        2416
+      ]
+    }
+  ],
+  "gate_policy": "Proceed to Vite/browser only if both checker paths accept valid input; never suppress errors to make this candidate pass.",
+  "vite_invoked": false,
+  "browser_invoked": false
+}

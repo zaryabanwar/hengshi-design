@@ -1,0 +1,468 @@
+{
+  "status": "DOING",
+  "date": "2026-10-05",
+  "scope": "Exact existing synthetic CLI fixtures against fresh 1.87.0 isolated Windows tool; no selection, install, experimental rules or app test",
+  "packages": [
+    {
+      "name": "oxlint",
+      "version": "1.87.0",
+      "tarball": "https://registry.npmjs.org/oxlint/-/oxlint-1.87.0.tgz",
+      "integrity_matched": true,
+      "sha256": "04441961a07abc710dda63f798550b37169d7ad527acbe6e880785987b6116d4",
+      "scope": "Tarball integrity only; signatures/attestation/build provenance not verified"
+    },
+    {
+      "name": "@oxlint/binding-win32-x64-msvc",
+      "version": "1.87.0",
+      "tarball": "https://registry.npmjs.org/@oxlint/binding-win32-x64-msvc/-/binding-win32-x64-msvc-1.87.0.tgz",
+      "integrity_matched": true,
+      "sha256": "f9ee4df9a3a661aa210e52c0a63ad1d314485df14c44b878c283df1757d2c91c",
+      "scope": "Tarball integrity only; signatures/attestation/build provenance not verified"
+    }
+  ],
+  "cases": [
+    {
+      "case": "namespace-valid",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.EXE",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-stable-recheck-2026-10-05\\tool\\node_modules\\oxlint\\bin\\oxlint",
+        "--config",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\probe-config.json",
+        "--allow",
+        "all",
+        "--deny",
+        "react/rules-of-hooks",
+        "--deny",
+        "react/exhaustive-deps",
+        "--no-ignore",
+        "--disable-nested-config",
+        "--format",
+        "json",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\base-fixtures\\namespace-valid.tsx"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05",
+      "prior_exit_code": 0,
+      "exit_code": 0,
+      "codes": [],
+      "prior_codes": [],
+      "number_of_files": 1,
+      "number_of_rules": 2,
+      "stdout_sha256": "6a1ee2329d4da75097009fd0d3c11ddd1b89a573746efbe7e5eb14748e1c7068",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "namespace-conditional",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.EXE",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-stable-recheck-2026-10-05\\tool\\node_modules\\oxlint\\bin\\oxlint",
+        "--config",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\probe-config.json",
+        "--allow",
+        "all",
+        "--deny",
+        "react/rules-of-hooks",
+        "--deny",
+        "react/exhaustive-deps",
+        "--no-ignore",
+        "--disable-nested-config",
+        "--format",
+        "json",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\base-fixtures\\namespace-conditional.tsx"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05",
+      "prior_exit_code": 1,
+      "exit_code": 1,
+      "codes": [
+        "react-hooks(rules-of-hooks)"
+      ],
+      "prior_codes": [
+        "react-hooks(rules-of-hooks)"
+      ],
+      "number_of_files": 1,
+      "number_of_rules": 2,
+      "stdout_sha256": "d308bda77bf93a8edb71c1b9244bd61bfbf36cc6b1c24799b68de8613438015e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "namespace-missing-dependency",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.EXE",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-stable-recheck-2026-10-05\\tool\\node_modules\\oxlint\\bin\\oxlint",
+        "--config",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\probe-config.json",
+        "--allow",
+        "all",
+        "--deny",
+        "react/rules-of-hooks",
+        "--deny",
+        "react/exhaustive-deps",
+        "--no-ignore",
+        "--disable-nested-config",
+        "--format",
+        "json",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\base-fixtures\\namespace-missing-dependency.tsx"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05",
+      "prior_exit_code": 1,
+      "exit_code": 1,
+      "codes": [
+        "react-hooks(exhaustive-deps)"
+      ],
+      "prior_codes": [
+        "react-hooks(exhaustive-deps)"
+      ],
+      "number_of_files": 1,
+      "number_of_rules": 2,
+      "stdout_sha256": "1792ed16bf91d4e216d449933d83046b52bd1179a49618fc4e9273e87f0ad9bb",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "custom-hook-conditional",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.EXE",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-stable-recheck-2026-10-05\\tool\\node_modules\\oxlint\\bin\\oxlint",
+        "--config",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\probe-config.json",
+        "--allow",
+        "all",
+        "--deny",
+        "react/rules-of-hooks",
+        "--deny",
+        "react/exhaustive-deps",
+        "--no-ignore",
+        "--disable-nested-config",
+        "--format",
+        "json",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\base-fixtures\\custom-hook-conditional.tsx"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05",
+      "prior_exit_code": 1,
+      "exit_code": 1,
+      "codes": [
+        "react-hooks(rules-of-hooks)"
+      ],
+      "prior_codes": [
+        "react-hooks(rules-of-hooks)"
+      ],
+      "number_of_files": 1,
+      "number_of_rules": 2,
+      "stdout_sha256": "c34bdc45c83251dfa995d6cbfc12b5d15b8646452aab288ffd29fe7b13e28a4d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "named-hook-alias-conditional",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.EXE",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-stable-recheck-2026-10-05\\tool\\node_modules\\oxlint\\bin\\oxlint",
+        "--config",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\probe-config.json",
+        "--allow",
+        "all",
+        "--deny",
+        "react/rules-of-hooks",
+        "--deny",
+        "react/exhaustive-deps",
+        "--no-ignore",
+        "--disable-nested-config",
+        "--format",
+        "json",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\base-fixtures\\named-hook-alias-conditional.tsx"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05",
+      "prior_exit_code": 1,
+      "exit_code": 1,
+      "codes": [
+        "react-hooks(rules-of-hooks)"
+      ],
+      "prior_codes": [
+        "react-hooks(rules-of-hooks)"
+      ],
+      "number_of_files": 1,
+      "number_of_rules": 2,
+      "stdout_sha256": "cc6c010c52c03d6adaa1d2b22ed89492b07775fe959c9f639d0b43f85543444c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "renamed-hook-conditional",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.EXE",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-stable-recheck-2026-10-05\\tool\\node_modules\\oxlint\\bin\\oxlint",
+        "--config",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\probe-config.json",
+        "--allow",
+        "all",
+        "--deny",
+        "react/rules-of-hooks",
+        "--deny",
+        "react/exhaustive-deps",
+        "--no-ignore",
+        "--disable-nested-config",
+        "--format",
+        "json",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\base-fixtures\\renamed-hook-conditional.tsx"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05",
+      "prior_exit_code": 0,
+      "exit_code": 0,
+      "codes": [],
+      "prior_codes": [],
+      "number_of_files": 1,
+      "number_of_rules": 2,
+      "stdout_sha256": "0f92c6994b01fa2ef9276dcd803d4575a0fb9a49ee4286867ec7a7f2c8de429a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "renamed-effect-missing-dependency",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.EXE",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-stable-recheck-2026-10-05\\tool\\node_modules\\oxlint\\bin\\oxlint",
+        "--config",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\probe-config.json",
+        "--allow",
+        "all",
+        "--deny",
+        "react/rules-of-hooks",
+        "--deny",
+        "react/exhaustive-deps",
+        "--no-ignore",
+        "--disable-nested-config",
+        "--format",
+        "json",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\base-fixtures\\renamed-effect-missing-dependency.tsx"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05",
+      "prior_exit_code": 0,
+      "exit_code": 0,
+      "codes": [],
+      "prior_codes": [],
+      "number_of_files": 1,
+      "number_of_rules": 2,
+      "stdout_sha256": "fca33ee154e73e49435c109b871b45cf232c20c19a7416666c860c35c19a6371",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "invalid-config",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.EXE",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-stable-recheck-2026-10-05\\tool\\node_modules\\oxlint\\bin\\oxlint",
+        "--config",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\invalid-config.json",
+        "--format",
+        "json",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\base-fixtures\\namespace-valid.tsx"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05",
+      "prior_exit_code": 1,
+      "exit_code": 1,
+      "codes": [],
+      "prior_codes": [],
+      "number_of_files": null,
+      "number_of_rules": null,
+      "stdout_sha256": "813b5ac6ed8d704506c089127731c4d604c41bfedf5483c0db494a80479d1972",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "unmatched-file",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.EXE",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-stable-recheck-2026-10-05\\tool\\node_modules\\oxlint\\bin\\oxlint",
+        "--config",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\probe-config.json",
+        "--allow",
+        "all",
+        "--deny",
+        "react/rules-of-hooks",
+        "--deny",
+        "react/exhaustive-deps",
+        "--no-ignore",
+        "--disable-nested-config",
+        "--format",
+        "json",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\absent-source.tsx"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05",
+      "prior_exit_code": 1,
+      "exit_code": 1,
+      "codes": [],
+      "prior_codes": [],
+      "number_of_files": null,
+      "number_of_rules": null,
+      "stdout_sha256": "92ce76e76591b8eec8d2ddd437b13bc115fcd04df43c05d273c8c1ed5a54557f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "directory-scope",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.EXE",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-stable-recheck-2026-10-05\\tool\\node_modules\\oxlint\\bin\\oxlint",
+        "--config",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\probe-config.json",
+        "--allow",
+        "all",
+        "--deny",
+        "react/rules-of-hooks",
+        "--deny",
+        "react/exhaustive-deps",
+        "--no-ignore",
+        "--disable-nested-config",
+        "--format",
+        "json",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\base-fixtures"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05",
+      "prior_exit_code": 1,
+      "exit_code": 1,
+      "codes": [
+        "react-hooks(rules-of-hooks)",
+        "react-hooks(rules-of-hooks)",
+        "react-hooks(rules-of-hooks)",
+        "react-hooks(exhaustive-deps)"
+      ],
+      "prior_codes": [
+        "react-hooks(exhaustive-deps)",
+        "react-hooks(rules-of-hooks)",
+        "react-hooks(rules-of-hooks)",
+        "react-hooks(rules-of-hooks)"
+      ],
+      "number_of_files": 7,
+      "number_of_rules": 2,
+      "stdout_sha256": "b32090dee5c17e4c7d79d572d5b3f01fb4b9e5103640882bbe6d56fe7cfc2a95",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "custom-effect-shared-invalid",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.EXE",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-stable-recheck-2026-10-05\\tool\\node_modules\\oxlint\\bin\\oxlint",
+        "--config",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\custom-effect-shared-invalid-config.json",
+        "--no-ignore",
+        "--disable-nested-config",
+        "--format",
+        "json",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\custom-fixtures\\custom-effect-shared-invalid.tsx"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05",
+      "prior_exit_code": 0,
+      "exit_code": 0,
+      "codes": [],
+      "prior_codes": [],
+      "number_of_files": 1,
+      "number_of_rules": 2,
+      "stdout_sha256": "c456012a40665c771cc40863ae99793a38ed3ab5ebe98ce0f4be3a9996f9b26c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "custom-effect-rule-invalid",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.EXE",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-stable-recheck-2026-10-05\\tool\\node_modules\\oxlint\\bin\\oxlint",
+        "--config",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\custom-effect-rule-invalid-config.json",
+        "--no-ignore",
+        "--disable-nested-config",
+        "--format",
+        "json",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\custom-fixtures\\custom-effect-rule-invalid.tsx"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05",
+      "prior_exit_code": 1,
+      "exit_code": 1,
+      "codes": [
+        "react-hooks(exhaustive-deps)"
+      ],
+      "prior_codes": [
+        "react-hooks(exhaustive-deps)"
+      ],
+      "number_of_files": 1,
+      "number_of_rules": 2,
+      "stdout_sha256": "383bb2314a601d191659d8ca5bc1d2bb46ac4511d020727638674bb3e6ed6fba",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "custom-effect-rule-valid",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.EXE",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-stable-recheck-2026-10-05\\tool\\node_modules\\oxlint\\bin\\oxlint",
+        "--config",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\custom-effect-rule-valid-config.json",
+        "--no-ignore",
+        "--disable-nested-config",
+        "--format",
+        "json",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\custom-fixtures\\custom-effect-rule-valid.tsx"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05",
+      "prior_exit_code": 0,
+      "exit_code": 0,
+      "codes": [],
+      "prior_codes": [],
+      "number_of_files": 1,
+      "number_of_rules": 2,
+      "stdout_sha256": "811c0e4b72897b87dd8ce864143e75698c2f0c6a1493aee20295763ae8fd86de",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "custom-effect-rule-invalid-cli-override",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.EXE",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-stable-recheck-2026-10-05\\tool\\node_modules\\oxlint\\bin\\oxlint",
+        "--config",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\custom-effect-rule-invalid-cli-override-config.json",
+        "--allow",
+        "all",
+        "--deny",
+        "react/rules-of-hooks",
+        "--deny",
+        "react/exhaustive-deps",
+        "--no-ignore",
+        "--disable-nested-config",
+        "--format",
+        "json",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\custom-fixtures\\custom-effect-rule-invalid-cli-override.tsx"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05",
+      "prior_exit_code": 0,
+      "exit_code": 0,
+      "codes": [],
+      "prior_codes": [],
+      "number_of_files": 1,
+      "number_of_rules": 2,
+      "stdout_sha256": "e0e907ef6dfee95d68cbcc4ae37691ed93f4de79b8a290b3e26de96653c410b9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "missing_identical_recommended_rule_ids": [
+    "component-hook-factories",
+    "config",
+    "gating"
+  ],
+  "guard_hashes_before_and_after": {
+    "package.json": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b",
+    "package-lock.json": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908",
+    "apps/web/package.json": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a",
+    "apps/web/package-lock.json": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d",
+    "apps/api/requirements.txt": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd",
+    "apps/web/src/world/WorldHUD.tsx": "a95c352fb7bdd4b9cf4351e98bbeb730ce8200745f62c3a835f69d67f12ebb24",
+    "apps/web/src/world/ExteriorScene.tsx": "cca5f46a456dcb29362bf2fb89ab4052727f0af37501abef16ba50e9bc74cbc0",
+    "apps/web/src/world/WorldCanvas.tsx": "8a13414d7cf091584841f278c6fbb9b19a65adf06073dccf49f071cb42d66847",
+    "output/research/compatibility-resolution-2026-10-04/native-lint-probe/package.json": "f1ecb8d6083bacb65684def851c69a9066618534ddfc62b088fd7242e29eb69e",
+    "output/research/compatibility-resolution-2026-10-04/native-lint-probe/package-lock.json": "da45dd6cb7cee7834fc5985b6595c2111780ee24d7cf87d1bdaf1749be3f37ab"
+  },
+  "old_receipt_sha256": "ad2050d7537d5adde4cf4ef8aed268b930b7e5e3ce5c4427cdd76cdd4b7606ca",
+  "version_observations": {
+    "oxlint": "Version: 1.87.0",
+    "node": "v24.14.0"
+  },
+  "source_comparison": {
+    "rules_of_hooks.rs": {
+      "sha256": "35e4a166253a27d0990bddfdb66b14772b986db2af5ea2083f4cfa1da2d4682b",
+      "matches_prior_tagged_source": true
+    },
+    "exhaustive_deps.rs": {
+      "sha256": "0c9a8372f5a72398dd63a747d35a978b4015626cd40d50573cf4fcfa062ddd3d",
+      "matches_prior_tagged_source": true
+    }
+  },
+  "all_recorded_exit_codes_and_diagnostic_multisets_match_prior": true
+}

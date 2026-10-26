@@ -1,0 +1,256 @@
+{
+  "product": "Hengshi Design v1",
+  "date": "2026-10-12",
+  "status": "DOING",
+  "verdict": "PASS",
+  "reviewer": "/root/review_browser_cleanup_v1",
+  "authorization": {
+    "questionId": "call_e3CMgCTEZB4vrXgCwhPdYPH4",
+    "answer": "Approve this proposal review",
+    "scope": "Read-only22-input interaction proposal/census review; receipt and essential local evidence only. No modality selection, scope adoption or construction."
+  },
+  "manifest": {
+    "path": "review-inputs-v1.json",
+    "sha256": "1779da59820fceeb69cf5ec25c6fedb4c13cf26ff89de6be6ab2ab4384738d2d",
+    "inputs": 22,
+    "all_bytes_and_hashes_verified": true
+  },
+  "input_bindings": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "review-inputs/01-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "verified": true
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "review-inputs/02-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "verified": true
+    },
+    {
+      "source": "PROJECT.md",
+      "snapshot": "review-inputs/03-PROJECT.md",
+      "bytes": 10942,
+      "sha256": "a483bd2713fe420322772ab7fb07c848aaf103088697c05ab91f35d2e5ea1461",
+      "verified": true
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "review-inputs/04-DECISIONS.md",
+      "bytes": 103548,
+      "sha256": "95b971fe5bb502454889bef77eb2718992bb6be893abdccd5449a98e69422e53",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "snapshot": "review-inputs/05-UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "bytes": 45771,
+      "sha256": "1779fd3cd71f8210815fd7ddbbcd06faa6e5387e2d91584531be6d3806f8cf61",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "snapshot": "review-inputs/06-B01_EXECUTION_BRIEF.md",
+      "bytes": 58718,
+      "sha256": "ba94c654d2ca868a6ae46c92060a7e6255572fb8b01d607ee6e017cd7a30f059",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/evidence-capture-plan.csv",
+      "snapshot": "review-inputs/07-evidence-capture-plan.csv",
+      "bytes": 8428,
+      "sha256": "4dceafb6d78a859ff5aee23ac78e65180975e72e83ed14a40dc20a90ad4fa0fd",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/UI_REFERENCE_DESIGN_CONTRACT.md",
+      "snapshot": "review-inputs/08-UI_REFERENCE_DESIGN_CONTRACT.md",
+      "bytes": 32708,
+      "sha256": "396d32f472794cb83168053ca6841bfbd37733923cafa225725391e22bb9830f",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "snapshot": "review-inputs/09-reference-template-inventory.csv",
+      "bytes": 33498,
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/foundation-flow-coverage.csv",
+      "snapshot": "review-inputs/10-foundation-flow-coverage.csv",
+      "bytes": 47465,
+      "sha256": "7f80eeb1b60da0f23b026e7f33573bce89881df59cf3d705d759387abf69f5f4",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/component-primitives.csv",
+      "snapshot": "review-inputs/11-component-primitives.csv",
+      "bytes": 79574,
+      "sha256": "575d1478893c090e9b367e75c2d14cf645e80eeb67bce09c2383c08294fa034a",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "snapshot": "review-inputs/12-responsive-state-mode-matrix.csv",
+      "bytes": 33821,
+      "sha256": "deb91325e1c8a543878111883f5b1203ae9e5dc35c00e0d837e927786eaf47e2",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/column-authority.json",
+      "snapshot": "review-inputs/13-column-authority.json",
+      "bytes": 11841596,
+      "sha256": "85736b6db6801ffdc529143085c20346193dc4904eef01e09d2074524211f98a",
+      "verified": true
+    },
+    {
+      "source": "output/research/b01-profile-allocation-2026-10-12/allocation.json",
+      "snapshot": "review-inputs/14-allocation.json",
+      "bytes": 129948,
+      "sha256": "cb502de8fdb817cf373bee89c1dadda5cdb9c956b76a46ddf336cb5b268fbc6b",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ux-architecture/FLOWS.md",
+      "snapshot": "review-inputs/15-FLOWS.md",
+      "bytes": 29631,
+      "sha256": "168015a15b51c03cdf1f1532572d7b45c397708651c579c3e1e2025d5ee27097",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+      "snapshot": "review-inputs/16-CHAT_EVENT_PROTOCOL.md",
+      "bytes": 50683,
+      "sha256": "b2b06e915c81083a40be58f3a641991862371f2d117effb2716e098116aed364",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "snapshot": "review-inputs/17-PRIVATE_PROCESS_PROOF.md",
+      "bytes": 117693,
+      "sha256": "0bf065ae353f1d22c986501c624df46e4057d76ca06f71a35352360ac239a6b7",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/prototype-census/prompt.txt",
+      "snapshot": "review-inputs/18-prompt.txt",
+      "bytes": 1479,
+      "sha256": "3691c496c14a7e25b91906ce5a341394e3a5b370ddbb5efd4dd314451da8d951",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/prototype-census/census.json",
+      "snapshot": "review-inputs/19-census.json",
+      "bytes": 2886,
+      "sha256": "e47c88a7a73d5ec244d8003f54c7ae17d949173a664b62749be68e5a40bb85fa",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/prototype-census/native-prototype-panel.txt",
+      "snapshot": "review-inputs/20-native-prototype-panel.txt",
+      "bytes": 7254,
+      "sha256": "e4887aea1bd66953844e1691bf91bb53c7b54f96fb95d9b9dc5bab5b2a6c3fba",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/prototype-census/native-prototype-panel.png",
+      "snapshot": "review-inputs/21-native-prototype-panel.png",
+      "bytes": 141305,
+      "sha256": "f34fc2a8800f4b1c699706ecc28e809fa42472ad502b6d91ea6d18cea0d998ec",
+      "verified": true
+    },
+    {
+      "source": "C:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/b01-interaction-definition-2026-10-12/correction1/INTERACTION_EVIDENCE_PROPOSAL.md",
+      "snapshot": "review-inputs/22-INTERACTION_EVIDENCE_PROPOSAL.md",
+      "bytes": 10404,
+      "sha256": "df12d96285c021ea55953784f7f72641aa361b92540edc10d98b08993de8b720",
+      "verified": true
+    }
+  ],
+  "findings": [],
+  "checks": {
+    "artifact_bindings": "PASS: all22 exact frozen byte/hash bindings verify. Registry13 hash matches D-078:1097-1103 successor; allocation source hashes for current profiles/templates/primitives/capture plan match their frozen inputs where included. Older allocation source snapshots remain historical preparation identities, not current execution or authority refresh.",
+    "case_inventory": "PASS: exactly22 consecutive distinct IDs B01-P01 throughB01-P22. Navigation P01-P05, directory P06-P08, stream P09-P13, recovery P14-P18, cross-template focus/mode/input/status P19-P22. Broad shared-recovery source labels and actual hotspot/source/destination IDs remain to be resolved under23/52; missing bindings keep a row TODO, so this is not executable construction preparation.",
+    "source_traceability": "PASS:BIP-01 closed. Only input22 differs from original; changes are correction1 status label, three source-section citations and two nested relative evidence links. All22 cases retain exact behavior/scope. Named ACT/template/primitive/EC bindings and unresolved source/hotspot implementation bindings remain as inspected in the original review.",
+    "coverage": "PASS for preservation of obligations:9/52/56 keep full host/state/stream/viewport/mode allocation and approved bounded-frame/annotation reuse rules; critical distinct states cannot collapse into one generic loop. P09/P10 retain all allowed streams, deliberate Apply versus pending selection, no focus/selection/blur/time-triggered apply, native form Enter separate from Figma key simulation. P13 aligns ACT-09 preference-write failure with ACT-11 session-state/nonpersistence pattern without releasing ACT-11 World/first-visit consumers.",
+    "later_batches": "PASS: canonical destination and booking end at explicitly marked B02/B06 fixtures (30-31); World/HUD camera/movement remains B07 (15); parent conversation operations remain B05 (44); B02-B09 release is denied (9/57). EC-07 TEST_CAPTURE exclusion and later runtime DOM/AT/keyboard/pointer/privacy/timing evidence remain explicit.",
+    "directory_modality": "PASS as unresolved proposal, not direction acceptance: PRIM-004 frozen11:5 and directory template frozen09 permit modal or nonmodal focus contract. DF-01 frozen15:241-253 fixes labeled-input entry, close-to-invoker and semantic static-directory fallback but selects neither modality. Existing full-page seed is not modality approval.15 recommends modal;17 preserves a distinct nonmodal alternative;19 holds founder direction/exact external-write batch. Reviewer does not choose either.",
+    "P17_timing": "PASS within founder-approved design-target scope: D-076 frozen04:1006-1022 selects30-minute inactivity/authorized End/no absolute visitor limit and retains accessible warning/More time; D-078:1108-1111 accepts at least20 seconds and at leastten extension opportunities, keeping staff clocks separate. Frozen07 EC-13 and frozen08:375-388 agree. P17:43 correctly retains unknown/stale/refused outcomes as fixture branches, not renewals. Frozen05:409-411 retains superseded10x default wording; current explicit D-078 successor outranks it. Do not interpret repeated30-minute windows as one300-minute unattended grant or invent an extension-count/absolute-age cutoff.",
+    "timing_mechanism_limits": "PASS for non-adoption: frozen16:29-36 labels detailed warning/activity/shared-clock/End/More-time mechanisms proposed and requiring independent review before wire acceptance/implementation. Its609-623 discusses from-start notice/control, acknowledged deadline, usable warning after background return, no guessed deadline and no automatic renewal; frozen17:846-884 likewise has proposed server admission/terminal fence/repeated-access mapping. P17/P18 simulations do not prove those clocks, persistent controls, concurrent activity/expiry/End races, progress preservation or authorization enforcement. Such detailed controls need exact current source binding and separate approval before construction/runtime.",
+    "census_truth": "PASS for truthful bounded reporting: frozen19 reports7801 descendants,7799 reaction-property nodes,zero nonempty reaction nodes/total reactions,empty flowStartingPoints,17 top-level entries and six seed hosts, nonAtomicSnapshot=true/canvasChanges=false. Unsupported prototypeStartNodeID is preserved as read failure/unavailable, not absent/null. Figma primary PageNode docs expose prototypeStartNode rather than the requested property name; no node start lookup is thereby verified. Without traversal/event logs this is AI-reported completeness, not an independently reproduced exhaustive reaction census; difference7801-7799 is not independently explained.",
+    "native_UI_limits": "PASS:21 visibly shows only selected390px directory seed, Prototype panel Add action/Add flow starting point and No scrolling;20 records the same UI. It corroborates that selected seed/exposed controls only. No whole-page zero-reaction proof, tested write capability, native Tab/focus loop, pointer cancellation or Figma Make permission follows.",
+    "prototype_vs_runtime": "PASS:23/28/36/47/55/57 distinguish intended focus state/simulated keys/fixture presentation from actual DOM, form submission, pointer/touch cancellation, screen reader, inertness, timing/server authority and conformance. Later Presentation paths must be inspected; screenshot strips alone cannot prove interaction. Construction needs isolated copies, exact IDs/guarded source checks and separate external-write approval.",
+    "correction_delta": "PASS: inputs1-21 byte-identical; input22 only correction label, three design-section references and two evidence link paths changed. No direction selection, scenario deletion/addition, timing change, reduced allocation or new execution approval.",
+    "corrected_links": "PASS: ../../figma-web-agent-2026-10-12/prototype-census/census.json and native-prototype-panel.png resolve from correction1 source directory to exact hashes e47c88a7a73d5ec244d8003f54c7ae17d949173a664b62749be68e5a40bb85fa and f34fc2a8800f4b1c699706ecc28e809fa42472ad502b6d91ea6d18cea0d998ec, respectively, matching frozen19/21."
+  },
+  "primary_sources": [
+    {
+      "url": "https://developers.figma.com/docs/plugins/api/properties/nodes-reactions/",
+      "accessed": "2026-10-12",
+      "supports": "Reaction data includes prototype triggers/actions; property traversal is structural prototype evidence only, not web runtime enforcement."
+    },
+    {
+      "url": "https://developers.figma.com/docs/plugins/api/PageNode/",
+      "accessed": "2026-10-12",
+      "supports": "flowStartingPoints is a named list; prototypeStartNode is documented. Unsupported requested prototypeStartNodeID is not proof of null start."
+    },
+    {
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
+      "accessed": "2026-10-12",
+      "supports": "Modal contained focus, inactive outside content, Escape/visible close and logical focus return when invoker disappears. Supports alternative criteria, not founder modality selection."
+    },
+    {
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/",
+      "accessed": "2026-10-12",
+      "supports": "Explicit Enter/Space disclosure activation and expanded state; no browser focus/AT execution follows from authored mockups."
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable.html",
+      "accessed": "2026-10-12",
+      "supports": "Extension branch gives at least20 seconds to act and at leastten extensions; pre-start adjustment range is a separate branch. Does not endorse this visitor30-minute/no-absolute product policy or certify prototype conformance."
+    }
+  ],
+  "held": {
+    "directory_modality": "BLOCKED: founder direction unresolved; reviewer selects no modality/appearance.",
+    "external_construction": "BLOCKED: proposal review grants no Figma/browser/MCP/agent writes, paid service or construction.",
+    "wire_or_runtime_enforcement": "BLOCKED: renewal clocks, endpoint/storage/schema enforcement, native form/focus/pointer/AT behavior not built/tested/adopted by this proposal.",
+    "full_census_verification": "BLOCKED: reported complete scan not independently reproduced; unsupported start-node lookup stays unavailable.",
+    "native_restore_exit": "BLOCKED: editable export/restore/EXIT evidence separate.",
+    "full_B01_Phase1_acceptance": "BLOCKED: complete coverage, independent design/accessibility review and founder/integrated acceptance remain separate."
+  },
+  "actions": {
+    "browser_figma_account_application_git_canonical_changes": false,
+    "new_agents": 0,
+    "scope_or_modality_adopted": false,
+    "producer_packets_and_prior_cleanup_receipts_modified": false,
+    "writes": [
+      "correction1/independent-review-interaction-proposal-v1.json"
+    ]
+  },
+  "notes": "Bounded proposal/census source-consistency PASS only. Same founder-authorized22-input proposal outcome and first normal revision. Original REVISE receipt/manifest/evidence preserved. No actionable findings remain. All prior source/runtime/census limitations and separate founder modality/construction/B01/Phase1 gates remain binding; no modality chosen or adopted.",
+  "revision_cycle": 1,
+  "previous_review": {
+    "path": "../independent-review-interaction-proposal-v1.json",
+    "sha256": "fd417ec2a8267371da98bde170f468472ebef227c1a0eaa800e63005327f7825",
+    "verdict": "REVISE",
+    "preserved": true
+  },
+  "closed_findings": [
+    {
+      "id": "BIP-01",
+      "result": "PASS",
+      "file": "review-inputs/22-INTERACTION_EVIDENCE_PROPOSAL.md",
+      "start_line": 29,
+      "end_line": 29,
+      "related_lines": [
+        45,
+        47
+      ],
+      "evidence": "P03 now cites design section10; P19/P21 cite section8/10, retaining mode coverage while correctly binding pointer/focus/dismissal clauses in frozen08:343-363. All case sequence/behavior text is unchanged."
+    }
+  ]
+}

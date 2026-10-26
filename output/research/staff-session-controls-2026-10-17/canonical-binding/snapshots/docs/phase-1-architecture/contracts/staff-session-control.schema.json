@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed own-staff-session control representations v1",
+  "description": "Definition-only directional module under STAFF_SESSION_PROTOCOL.md. Root rejects. Select the exact own-session response, POST request, POST error or private claims definition. 204 has no JSON instance. Shape proves no signature, current authority, time ordering, CSRF/source/cookie binding, raw parsing, HTTP/resources, storage or runtime security.",
+  "not": {},
+  "$defs": {
+    "uuid": {"$ref": "process-value.schema.json#/$defs/uuid"},
+    "revision": {"$ref": "process-value.schema.json#/$defs/positive_revision"},
+    "csrf_token": {"$ref": "booking-creation-response.schema.json#/$defs/csrf_token"},
+    "unix_milliseconds": {
+      "type": "integer", "minimum": 0, "maximum": 253402300799999,
+      "description": "Parsed UTC Unix-millisecond shape only; canonical raw JSON integer spelling, source, clock health and ordering require separate enforcement."
+    },
+    "numeric_date": {
+      "type": "integer", "minimum": 0, "maximum": 253402300799,
+      "description": "Parsed integer Unix-second shape only. No raw lexical validation, iat=nbf/exp comparison, issuance/currentness, leeway or verified signature follows."
+    },
+    "status": {
+      "type": "object", "additionalProperties": false,
+      "required": ["kind", "context_id", "authority_revision", "state", "server_time_ms", "idle_deadline_ms", "absolute_deadline_ms", "renewal_due_ms", "token_expires_ms"],
+      "properties": {
+        "kind": {"const": "staff_session"},
+        "context_id": {"$ref": "#/$defs/uuid"},
+        "authority_revision": {"$ref": "#/$defs/revision"},
+        "state": {"enum": ["current", "renewal_required"]},
+        "server_time_ms": {"$ref": "#/$defs/unix_milliseconds"},
+        "idle_deadline_ms": {"$ref": "#/$defs/unix_milliseconds"},
+        "absolute_deadline_ms": {"$ref": "#/$defs/unix_milliseconds"},
+        "renewal_due_ms": {"$ref": "#/$defs/unix_milliseconds"},
+        "token_expires_ms": {"$ref": "#/$defs/unix_milliseconds"}
+      }
+    },
+    "csrf": {
+      "type": "object", "additionalProperties": false,
+      "required": ["kind", "context_id", "csrf_generation", "csrf_token"],
+      "properties": {
+        "kind": {"const": "staff_csrf"},
+        "context_id": {"$ref": "#/$defs/uuid"},
+        "csrf_generation": {"$ref": "#/$defs/revision"},
+        "csrf_token": {"$ref": "#/$defs/csrf_token"}
+      },
+      "description": "Intentional transient synchronizer-proof projection, never a JWT. Canonical text shape establishes neither entropy nor current session/generation binding."
+    },
+    "empty_post_request": {
+      "type": "object", "additionalProperties": false, "maxProperties": 0,
+      "description": "Only already-parsed empty POST JSON object. GET has no JSON request. This does not establish raw framing, source, credential or CSRF header admission."
+    },
+    "renewal_request": {"$ref": "#/$defs/empty_post_request"},
+    "logout_request": {"$ref": "#/$defs/empty_post_request"},
+    "invalid_request": {
+      "type": "object", "additionalProperties": false, "required": ["code", "recovery"],
+      "properties": {"code": {"const": "invalid_request"}, "recovery": {"const": "correct_request"}}
+    },
+    "denied": {
+      "type": "object", "additionalProperties": false, "required": ["code", "recovery"],
+      "properties": {"code": {"const": "request_denied"}, "recovery": {"const": "check_access"}}
+    },
+    "changed": {
+      "type": "object", "additionalProperties": false, "required": ["code", "recovery"],
+      "properties": {"code": {"const": "session_changed"}, "recovery": {"const": "check_session"}}
+    },
+    "too_large": {
+      "type": "object", "additionalProperties": false, "required": ["code", "recovery"],
+      "properties": {"code": {"const": "request_too_large"}, "recovery": {"const": "correct_request"}}
+    },
+    "unsupported": {
+      "type": "object", "additionalProperties": false, "required": ["code", "recovery"],
+      "properties": {"code": {"const": "unsupported_media_type"}, "recovery": {"const": "correct_request"}}
+    },
+    "limited": {
+      "type": "object", "additionalProperties": false, "required": ["code", "recovery"],
+      "properties": {"code": {"const": "request_limited"}, "recovery": {"const": "wait"}}
+    },
+    "unavailable": {
+      "type": "object", "additionalProperties": false, "required": ["code", "recovery"],
+      "properties": {"code": {"const": "service_unavailable"}, "recovery": {"const": "check_session"}}
+    },
+    "internal": {
+      "type": "object", "additionalProperties": false, "required": ["code", "recovery"],
+      "properties": {"code": {"const": "internal_error"}, "recovery": {"const": "check_session"}}
+    },
+    "read_error": {
+      "oneOf": [{"$ref": "#/$defs/invalid_request"}, {"$ref": "#/$defs/denied"}, {"$ref": "#/$defs/limited"}, {"$ref": "#/$defs/unavailable"}, {"$ref": "#/$defs/internal"}]
+    },
+    "post_error": {
+      "oneOf": [{"$ref": "#/$defs/read_error"}, {"$ref": "#/$defs/too_large"}, {"$ref": "#/$defs/unsupported"}]
+    },
+    "status_response": {"oneOf": [{"$ref": "#/$defs/status"}, {"$ref": "#/$defs/read_error"}]},
+    "csrf_response": {"oneOf": [{"$ref": "#/$defs/csrf"}, {"$ref": "#/$defs/read_error"}]},
+    "renewal_error": {"oneOf": [{"$ref": "#/$defs/post_error"}, {"$ref": "#/$defs/changed"}]},
+    "logout_error": {"$ref": "#/$defs/post_error"},
+    "private_claims": {
+      "type": "object", "additionalProperties": false,
+      "required": ["iss", "aud", "sub", "sid", "jti", "iat", "nbf", "exp"],
+      "properties": {
+        "iss": {"const": "hengshi-design-staff-v1"},
+        "aud": {"const": "hengshi-design-staff-api-v1"},
+        "sub": {"$ref": "#/$defs/uuid"},
+        "sid": {"$ref": "#/$defs/uuid"},
+        "jti": {"$ref": "#/$defs/uuid"},
+        "iat": {"$ref": "#/$defs/numeric_date"},
+        "nbf": {"$ref": "#/$defs/numeric_date"},
+        "exp": {"$ref": "#/$defs/numeric_date"}
+      },
+      "description": "Private decoded candidate claims only, never a response/request projection or signed-JWT validator. Exact equality to current issued records, independent ID allocation, dates, trusted header/key/algorithm and crypto verification remain semantic gates."
+    }
+  }
+}

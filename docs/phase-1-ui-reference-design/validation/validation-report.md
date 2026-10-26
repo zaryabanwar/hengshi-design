@@ -233,3 +233,30 @@ SHA-256, two spaces, then path, joins entries with LF and no terminal newline, a
 hashes that UTF-8 no-BOM payload. The final command output is the authoritative
 freeze manifest; embedding its aggregate in this included report would create a
 self-referential hash.
+## D-051 route-definition reconciliation — 2026-10-03
+
+The dedicated privacy route is inactive, with content and publication gates held.
+This count observation supplements the dated baseline above; it grants no visual,
+legal, runtime, or publication approval. Commits and pushes remain deferred.
+
+COUNTS routes=35 exclusions=9 wayfinding=15 actions=53 ux_tests=46 flow_families=12 source_experience_ids=32 flow_rows=89 templates=40 primary_template_owners=40 route_template_refs=19 flow_template_refs=29 profiles=36 browser_profiles=1 time_limit_profiles=4 primitives=62 batches=9 primary_source_owners=156 trace_rows=291 package_csv=7 package_json=0
+
+D-056 definition reconciliation, 2026-10-03; prior counts remain historical.
+COUNTS routes=35 exclusions=9 wayfinding=15 actions=53 ux_tests=46 flow_families=12 source_experience_ids=32 flow_rows=89 templates=40 primary_template_owners=40 route_template_refs=19 flow_template_refs=29 profiles=36 browser_profiles=1 time_limit_profiles=4 primitives=62 batches=9 primary_source_owners=156 trace_rows=292 package_csv=7 package_json=0
+
+Approved D045/D051/D052/D057 requirement-home reconciliation, 2026-10-03.
+COUNTS routes=35 exclusions=9 wayfinding=15 actions=53 ux_tests=46 flow_families=12 source_experience_ids=32 flow_rows=89 templates=40 primary_template_owners=40 route_template_refs=19 flow_template_refs=29 profiles=36 browser_profiles=1 time_limit_profiles=4 primitives=62 batches=9 primary_source_owners=156 trace_rows=295 package_csv=7 package_json=0
+
+D058 approved hotspot mechanism trace, 2026-10-03.
+COUNTS routes=35 exclusions=9 wayfinding=15 actions=53 ux_tests=46 flow_families=12 source_experience_ids=32 flow_rows=89 templates=40 primary_template_owners=40 route_template_refs=19 flow_template_refs=29 profiles=36 browser_profiles=1 time_limit_profiles=4 primitives=62 batches=9 primary_source_owners=156 trace_rows=296 package_csv=7 package_json=0
+
+D045 accepted obligation-home reconciliation, 2026-10-03.
+COUNTS routes=35 exclusions=9 wayfinding=15 actions=53 ux_tests=46 flow_families=12 source_experience_ids=32 flow_rows=89 templates=40 primary_template_owners=40 route_template_refs=19 flow_template_refs=29 profiles=36 browser_profiles=1 time_limit_profiles=4 primitives=62 batches=9 primary_source_owners=156 trace_rows=299 package_csv=7 package_json=0
+
+D-060 registry and trace reconciliation (definition counts):
+COUNTS routes=35 exclusions=9 wayfinding=15 actions=53 ux_tests=46 flow_families=12 source_experience_ids=32 flow_rows=89 templates=40 primary_template_owners=40 route_template_refs=19 flow_template_refs=29 profiles=36 browser_profiles=1 time_limit_profiles=4 primitives=62 batches=9 primary_source_owners=156 trace_rows=300 package_csv=8 package_json=0
+
+D-063 accepted source-bound registry and review integration (definition counts):
+The freeze now includes 20 required files, adding the accepted registry, its review,
+read-only verifier and focused tests. Prior counts remain dated provenance.
+COUNTS routes=35 exclusions=9 wayfinding=15 actions=53 ux_tests=46 flow_families=12 source_experience_ids=32 flow_rows=89 templates=40 primary_template_owners=40 route_template_refs=19 flow_template_refs=29 profiles=36 browser_profiles=1 time_limit_profiles=4 primitives=62 batches=9 primary_source_owners=156 trace_rows=300 package_csv=8 package_json=2

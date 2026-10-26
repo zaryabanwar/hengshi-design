@@ -1,0 +1,1 @@
+const fs=require('fs');const AsyncFunction=Object.getPrototypeOf(async function(){}).constructor;const source=fs.readFileSync(process.argv[2],'utf8');new AsyncFunction('figma',source);console.log('Prepared async tool script parses; no execution.');

@@ -1,0 +1,287 @@
+{
+  "product": "Hengshi Design v1",
+  "review_id": "B01-NATIVE-QUALIFICATION-RECOVERY-INDEPENDENT-V1",
+  "reviewer_id": "independent-agent-review_native_b01_preparation_v1",
+  "producer_id": "root-agent",
+  "reviewed_on_utc": "2026-10-13T10:09:00.729116+00:00",
+  "review_complete": true,
+  "scope": "Bounded recovery-result accounting and unchanged native qualification continuation proposal only. No founder permission, native qualification, restore rehearsal, full B01 plan/result or runtime/accessibility acceptance follows.",
+  "packet": {
+    "path": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/review/review-inputs-v1.json",
+    "bytes": 3268,
+    "sha256": "e996b25032c31b1a8e8814ef2d923c756c422f9c31e73b753dfd83c4ad3d77e3",
+    "input_count": 10,
+    "all_frozen_bindings_match": true
+  },
+  "frozen_inputs": [
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/execution-result-v1.json",
+      "snapshot": "inputs/00-execution-result-v1.json",
+      "bytes": 1908,
+      "sha256": "54c9df372306fbece95cdfaf75f855a0439831a3bb6e061257fb69fc1f5f8e4f",
+      "verified_bytes": 1908,
+      "verified_sha256": "54c9df372306fbece95cdfaf75f855a0439831a3bb6e061257fb69fc1f5f8e4f",
+      "matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/recovery-continuation-proposal-v1.json",
+      "snapshot": "inputs/01-recovery-continuation-proposal-v1.json",
+      "bytes": 934,
+      "sha256": "3667e4017849312fdb5735f1221d3e0f4f0c42a7aa47c46eaaebbd267211ca0e",
+      "verified_bytes": 934,
+      "verified_sha256": "3667e4017849312fdb5735f1221d3e0f4f0c42a7aa47c46eaaebbd267211ca0e",
+      "matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/archive-comparison-v1.json",
+      "snapshot": "inputs/02-archive-comparison-v1.json",
+      "bytes": 1544,
+      "sha256": "4721a0a7834c1dc6a0bfb5448f24921fa5a245a8d630161dd678ae2c02f7e572",
+      "verified_bytes": 1544,
+      "verified_sha256": "4721a0a7834c1dc6a0bfb5448f24921fa5a245a8d630161dd678ae2c02f7e572",
+      "matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/before-trial-v1.fig",
+      "snapshot": "inputs/03-before-trial-v1.fig",
+      "bytes": 364559,
+      "sha256": "d128c4791e7ef7c674a1196cabf8e1850348ea353427ac989a741f9d7b084236",
+      "verified_bytes": 364559,
+      "verified_sha256": "d128c4791e7ef7c674a1196cabf8e1850348ea353427ac989a741f9d7b084236",
+      "matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/after-recovery-v1.fig",
+      "snapshot": "inputs/04-after-recovery-v1.fig",
+      "bytes": 364559,
+      "sha256": "7aaf98faf75454d3e1070c24dbe78f33e512e4b26308ab1e75c3d8224adf5b22",
+      "verified_bytes": 364559,
+      "verified_sha256": "7aaf98faf75454d3e1070c24dbe78f33e512e4b26308ab1e75c3d8224adf5b22",
+      "matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/source-restored-current.txt",
+      "snapshot": "inputs/05-source-restored-current.txt",
+      "bytes": 20470,
+      "sha256": "453148381f0dbbdd18fc9b2291a57ecbad52fdbc38d98f89807c4c0a503ee312",
+      "verified_bytes": 20470,
+      "verified_sha256": "453148381f0dbbdd18fc9b2291a57ecbad52fdbc38d98f89807c4c0a503ee312",
+      "matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/source-restored-current.png",
+      "snapshot": "inputs/06-source-restored-current.png",
+      "bytes": 188960,
+      "sha256": "84fdf5178ccf8dad003e37cf31de9206685f469bc9cc90278a9433c0936013b3",
+      "verified_bytes": 188960,
+      "verified_sha256": "84fdf5178ccf8dad003e37cf31de9206685f469bc9cc90278a9433c0936013b3",
+      "matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/correction1/qualification-plan-v1.json",
+      "snapshot": "inputs/07-qualification-plan-v1.json",
+      "bytes": 18481,
+      "sha256": "447309d755223c9e8517d88293d550d89c4c73fbc66251611c3c3534e2bdada6",
+      "verified_bytes": 18481,
+      "verified_sha256": "447309d755223c9e8517d88293d550d89c4c73fbc66251611c3c3534e2bdada6",
+      "matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/correction1/review/independent-review-qualification-plan-v1.json",
+      "snapshot": "inputs/08-independent-review-qualification-plan-v1.json",
+      "bytes": 18269,
+      "sha256": "07bba89a0f344d8d7aee8dfc0706bc5de52e92f4902a408c2273714c3e38f3d2",
+      "verified_bytes": 18269,
+      "verified_sha256": "07bba89a0f344d8d7aee8dfc0706bc5de52e92f4902a408c2273714c3e38f3d2",
+      "matches": true
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "inputs/09-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "verified_bytes": 7686,
+      "verified_sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "matches": true
+    }
+  ],
+  "bounded_verdict": {
+    "result": "PASS",
+    "meaning": "The independently recomputed archive/member/metadata comparison and frozen recovered AX/pixel evidence support restoration of the exported saved canvas payload after the reported source nudge. The stopped trial remains unconstructed/unqualified. The continuation proposal changes only layer-inspection navigation and preserves the exact previously reviewed trial/guards. No material contradiction or unresolved finding was identified in this bounded recovery scope.",
+    "trial_status": "BLOCKED",
+    "saved_payload_recovery": "PASS",
+    "source_live_census": "not established",
+    "continuation_proposal_consistency": "PASS",
+    "trial_executed": false,
+    "external_continuation_authorized": false,
+    "restoration_rehearsal_proven": false,
+    "native_qualification_proven": false,
+    "full_B01_or_Phase1_accepted": false
+  },
+  "incident_accounting": {
+    "reported_source_id": "21:55",
+    "reported_unexpected_action": "Right arrow on selected OPEN, MEDIUM row moved X664 to665 instead of expanding the layer.",
+    "reported_recovery": "Immediate Control+Z, followed by stop and preservation.",
+    "independently_observed_recovered_selection": {
+      "source_id": "21:55",
+      "State": "OPEN",
+      "Stream": "MEDIUM",
+      "X": 664,
+      "Y": 24,
+      "size": [
+        272,
+        896
+      ],
+      "pending_appearance": "Simplified 3D remains checked, as in the original MEDIUM source appearance."
+    },
+    "reported_trial_nodes_created": 0,
+    "reported_edges_wired": 0,
+    "reported_qualification_observations_executed": 0,
+    "reported_MCP_AI_paid_deletion_Git_actions": 0,
+    "limits": "The nudge/Undo chronology and zero-action counters come from producer execution accounting. The packet contains recovered-state AX/pixels and archive payloads, not a complete transient-action recording or atomic cloud/live-tree census. Independently verified byte equality corroborates no persisted trial construction between these exports; it is not proof that no transient action occurred."
+  },
+  "verification": [
+    {
+      "result": "PASS",
+      "scope": "Frozen artifact integrity",
+      "detail": "All10 byte counts and SHA-256 bindings recomputed from snapshot files immediately before exclusive receipt creation. Both whole .fig hashes match the execution result and packet."
+    },
+    {
+      "result": "PASS",
+      "scope": "Archive integrity and exact saved payload equality",
+      "detail": "Both native .fig files open as ZIPs, contain the same four unique members, and pass ZIP CRC checks. Independently recomputed sizes/CRC32/SHA-256 match archive-comparison-v1.json for every member. canvas.fig,thumbnail.png and images/ are byte-identical. images/ is an empty directory, not evidence of separate image assets. meta.json alone differs and its decoded JSON differs only in exported_at. Whole archives are correctly reported as different hashes, not identical files.",
+      "archives": [
+        {
+          "snapshot": "inputs/03-before-trial-v1.fig",
+          "bytes": 364559,
+          "sha256": "d128c4791e7ef7c674a1196cabf8e1850348ea353427ac989a741f9d7b084236",
+          "crc_bad_member": null,
+          "duplicate_member_names": false,
+          "members": {
+            "canvas.fig": {
+              "size": 359648,
+              "crc32": "f6dbdf27",
+              "sha256": "2f35ef3ff29fa6a91d06d64e6d649eaee549e287256fd3373af36e35e18e8657"
+            },
+            "thumbnail.png": {
+              "size": 3860,
+              "crc32": "8c894529",
+              "sha256": "f3ba897ab786f078c45118a74aa089cd2a9315235d4f2078d548182e75fc6b69"
+            },
+            "meta.json": {
+              "size": 345,
+              "crc32": "aa2b7cf6",
+              "sha256": "5a37daf52d452e1816291526ce12be0e1c2ae631aa685bb434203cf35dd0f2a5"
+            },
+            "images/": {
+              "size": 0,
+              "crc32": "00000000",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          }
+        },
+        {
+          "snapshot": "inputs/04-after-recovery-v1.fig",
+          "bytes": 364559,
+          "sha256": "7aaf98faf75454d3e1070c24dbe78f33e512e4b26308ab1e75c3d8224adf5b22",
+          "crc_bad_member": null,
+          "duplicate_member_names": false,
+          "members": {
+            "canvas.fig": {
+              "size": 359648,
+              "crc32": "f6dbdf27",
+              "sha256": "2f35ef3ff29fa6a91d06d64e6d649eaee549e287256fd3373af36e35e18e8657"
+            },
+            "thumbnail.png": {
+              "size": 3860,
+              "crc32": "8c894529",
+              "sha256": "f3ba897ab786f078c45118a74aa089cd2a9315235d4f2078d548182e75fc6b69"
+            },
+            "meta.json": {
+              "size": 345,
+              "crc32": "ed81b050",
+              "sha256": "ddbea79f46c67133bf864cc3d699e1147982a6eb61351f63433fc7e8ab034f96"
+            },
+            "images/": {
+              "size": 0,
+              "crc32": "00000000",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          }
+        }
+      ],
+      "differing_members": [
+        "meta.json"
+      ],
+      "differing_metadata_keys": [
+        "exported_at"
+      ]
+    },
+    {
+      "result": "PASS",
+      "scope": "Recovered source snapshot",
+      "location": {
+        "snapshot": "inputs/05-source-restored-current.txt",
+        "line_start": 216,
+        "line_end": 289
+      },
+      "detail": "The native AX snapshot identifies source21:55, selected OPEN/MEDIUM, X-position664 and272x896; the frozen screenshot independently displays OPEN/MEDIUM, X664/Y24,272x896 and the same pending Simplified appearance. These support the recovered selected-source state. They do not certify all descendants/reactions, later live state or the exact transient X665 event."
+    },
+    {
+      "result": "PASS",
+      "scope": "Stop/accounting interpretation",
+      "location": {
+        "snapshot": "inputs/00-execution-result-v1.json",
+        "line_start": 3,
+        "line_end": 19
+      },
+      "detail": "The result reports the unexpected source mutation rather than concealing it, identifies immediate Undo and the triggered stop, and retains BLOCKED with0 new nodes,0 wiring and0 qualification observations. Its archive interpretation expressly limits the claim to saved payload recovery and excludes restore/prototype proof. This is a recovered incident, not successful trial execution or proof of an uninterrupted no-mutation session."
+    },
+    {
+      "result": "PASS",
+      "scope": "Exact retained trial identity",
+      "detail": "Frozen qualification-plan-v1.json SHA-256447309d755223c9e8517d88293d550d89c4c73fbc66251611c3c3534e2bdada6 matches the exact input pinned by the frozen correction1 review. It still contains eight variants,18 edges,NQ-01 throughNQ-06, the original source IDs, one isolated owned root and fresh-source/owned-ID guards. The continuation proposal introduces no replacement graph or scope."
+    },
+    {
+      "result": "PASS",
+      "scope": "Continuation procedure only",
+      "location": {
+        "snapshot": "inputs/01-recovery-continuation-proposal-v1.json",
+        "line_start": 4,
+        "line_end": 17
+      },
+      "detail": "Continuation uses only an observed visible disclosure caret or an explicitly exposed Expand action confirmed to expand, or direct selection of an already visible target. It forbids canvas arrow navigation on selected originals and retains preflight abort-on-uncertainty. Existing source/copy/setting/stop/zero-spend constraints remain; no automatic retry, original-node change, deletion or alternative topology is released. executed and external_continuation_authorized remain false."
+    }
+  ],
+  "unresolved_findings": [],
+  "readiness_disposition": {
+    "continuation_proposal_ready_to_present": true,
+    "external_continuation_authorized": false,
+    "remaining_trial_status": "BLOCKED",
+    "required_next_gates": [
+      "Establish applicable founder continuation authority before resuming external operations; this receipt grants no permission and does not infer a resume from prior approval.",
+      "Start again with fresh source admission against recovered/current IDs, parents, properties, text/fonts/tokens/reactions and dimensions. Archive equality or one selected screenshot cannot waive those guards.",
+      "Use only the proposed visibly confirmed expansion/direct-selection method. If exposed expansion behavior, required fields or safe target selection is uncertain, stop rather than trying arrow keys, alternative sources or hidden APIs.",
+      "Create/wire only the exact isolated owned trial after its source/new-ID ownership guards. Any source/property/setting/qualification failure stops without unreviewed correction or retry.",
+      "Execute the actual six native observations, including both no-ops, all open-pair Close/Escape/reopen paths, visible background activation and nonzero scroll comparisons; record actual results and obtain separate result review."
+    ]
+  },
+  "exclusions": [
+    "New browser/Figma/MCP/AI/API calls, original/canonical/application/account/source/Git changes or delegation",
+    "Independent replay of transient nudge/Undo chronology or complete all-action/zero-call accounting",
+    "Atomic cloud/current live tree/reaction/font/token census; archive equality proves these exported payloads only",
+    "Opening/importing/using the .fig exports in an editor; CRC/payload checks are not a tested restore or _EXIT",
+    "Executed trial, actual native Change to/modal-reference/state-retention/scroll behavior or full production primitive coverage",
+    "Real DOM modality/radios/forms/focus/AT/WCAG, search/booking/backend/privacy/timing/credential behavior",
+    "Founder continuation permission, full22-case/four-stream/profile B01 design evidence, pilot or integrated Phase1 acceptance"
+  ],
+  "write_accounting": {
+    "operation": "One new exclusive-create recovery review receipt only",
+    "target": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/review/independent-review-recovery-v1.json",
+    "producer_inputs_modified": false,
+    "reviewer_external_operations": 0,
+    "Figma_browser_MCP_AI_calls": 0,
+    "Git_deployment_actions": 0
+  },
+  "memory_use": "Historical boundary orientation only; the current recovery verdict is grounded in this exact frozen packet and independent offline CRC/member/metadata/source-snapshot checks. No historical authorization is imported."
+}

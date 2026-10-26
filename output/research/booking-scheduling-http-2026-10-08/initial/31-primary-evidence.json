@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-08",
+  "scope": "Primary support for proposed scheduling browser HTTP and bounded parsing; no dependency selection or API implementation",
+  "context7": {
+    "resolved_library": "/websites/fastapi_tiangolo",
+    "query_topic": "Decoded query model validation, extra forbid and direct Request access",
+    "official_sources": [
+      "https://fastapi.tiangolo.com/tutorial/query-param-models/",
+      "https://fastapi.tiangolo.com/advanced/using-request-directly"
+    ]
+  },
+  "primary_sources": [
+    "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "https://www.rfc-editor.org/rfc/rfc3986.html#section-2.4",
+    "https://www.rfc-editor.org/rfc/rfc6585.html",
+    "https://docs.python.org/3/library/urllib.parse.html#urllib.parse.parse_qsl"
+  ],
+  "observations": "stdlib-observations.json",
+  "synthetic_sizing": "synthetic-sizing.json",
+  "sizing_replay": "C:/Python314/python.exe -B output/research/booking-scheduling-http-2026-10-08/observe_sizing.py",
+  "limits": "No raw HTTP admission or handler, calendar capabilities, complete maximum-size proof or actual load results"
+}

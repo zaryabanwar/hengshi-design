@@ -1,5 +1,39 @@
 # Hengshi Design Phase 1 SEO, Entity, Route, and Editorial Strategy
 
+## Current v1 authority — reconciled 2026-10-05
+
+D-025 accepts this bounded foundation; later [decisions](../../DECISIONS.md)
+control their amendments. The July status, missing-fact rows, global-audience
+wording and route count below are historical planning context. D-070 selects
+Europe first without implying a European office, localized URL or hosting region.
+Use the [current route inventory](06-canonical-route-inventory.json), accepted
+route amendments and eligible publication instances rather than the older prose
+count; a reserved route or pattern is not a live page or sitemap entry.
+
+The [company/contact amendment](../software-definition/06-entity-and-public-contact.md)
+records the supplied Pakistan legal identity, registration/address facts and
+dedicated aliases. They are no longer missing inputs, but correspondence, lawful
+disclosure and operational contacts remain separately unverified. Staff edit typed
+candidate facts through the existing review/publication workflow; approved visible
+facts govern entity markup, footer, semantic pages, World panels and AI evidence.
+Neither an admin edit nor a structured-data declaration approves a public claim.
+
+The [publication contract](../phase-1-architecture/contracts/PUBLICATION_CONTRACT.md#semantic-preparation-engineering-proposal)
+controls generation from one approved snapshot. Complete initial HTML, metadata,
+structured data, sitemap and World/knowledge projections must agree. World entry
+and graphics selection do not produce additional indexable duplicates or bot-only
+content. Detailed generation/security mechanisms and the stable graph remain
+unselected; project SEO obligations are not implemented crawlability proof.
+
+Primary Google guidance checked 2026-10-05 supports
+[complete rendered content and crawlable links](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics),
+[consistent canonical signals](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)
+and [structured data representing visible content](https://developers.google.com/search/docs/appearance/structured-data/sd-policies).
+This corroborates the existing obligations; it selects no new route, schema type,
+provider or indexing activation. MA-008/MA-009 and legal/publication gates remain.
+
+## Preserved July definition and evidence
+
 **Status:** Draft foundation slice for independent review; not Phase 1 acceptance  
 **Classification:** Business confidential  
 **Evidence date:** 2026-07-19  

@@ -1,0 +1,838 @@
+{
+  "scope": "additive isolated lint evaluation section and README paragraph; exact metadata/commands/outcomes only, no full graph or security adoption verdict",
+  "inputs": [
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/advisories-receipt.json",
+      "sha256": "dabaf402825096ab0421b27cdb8249e77782223e3e1c1b881a10e04adfb7061a"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/advisories.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/advisories.stdout.json",
+      "sha256": "5267cc272657efb9ab8bc6021100b9e3d2e32fe4510ce21c659548de919ce60f"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/checker-observations.json",
+      "sha256": "733f213dd98f0abd7a6fd34fbc815da25fdbb087ec9337e3a3d73231e88c9f47"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/compiler-diagnostic-observations.json",
+      "sha256": "6312917df35cdd35da39d43ab5e7cbfd754cd6f57efc1ca5d11538394ed144a9"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/compiler-purity-invalid.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/compiler-purity-invalid.stdout.json",
+      "sha256": "352624590bb584903587ff217eceb7c4e81ccbcc1512ca96ad0b086ad3218679"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/compiler-purity-valid.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/compiler-purity-valid.stdout.json",
+      "sha256": "1172b922aec1e7868e0ae1e2e7bea66a44790485e75b9d753ae0d25a9e39fe90"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/compiler-static-component-invalid.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/compiler-static-component-invalid.stdout.json",
+      "sha256": "086cdcdbcec4165c1fc3fca16f94392eacb07b2d1f09707ea0bf33eb2bf3d22a"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/conditional-hook.guarded.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/conditional-hook.guarded.stdout.json",
+      "sha256": "876ea20c6754d7e5661db3c72af8e8569e508ee81881189e630c661fb0383cc2"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/conditional-hook.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/conditional-hook.stdout.json",
+      "sha256": "876ea20c6754d7e5661db3c72af8e8569e508ee81881189e630c661fb0383cc2"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/conditional-hook.strict.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/conditional-hook.strict.stdout.json",
+      "sha256": "876ea20c6754d7e5661db3c72af8e8569e508ee81881189e630c661fb0383cc2"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/conditional-use.guarded.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/conditional-use.guarded.stdout.json",
+      "sha256": "7c9d8ac1aa2652b3b6caf0751b49b9bd78d785acd341052edadc00f86e4f4d94"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/conditional-use.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/conditional-use.stdout.json",
+      "sha256": "7c9d8ac1aa2652b3b6caf0751b49b9bd78d785acd341052edadc00f86e4f4d94"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/conditional-use.strict.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/conditional-use.strict.stdout.json",
+      "sha256": "7c9d8ac1aa2652b3b6caf0751b49b9bd78d785acd341052edadc00f86e4f4d94"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/custom-effect-shared-invalid.guarded.stderr.log",
+      "sha256": "99a3dfa8107e1f53d2ffb780a3dfb2d79c4ec1f2ba90a4173dc91308d07b536b"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/custom-effect-shared-invalid.guarded.stdout.json",
+      "sha256": "126bd5e6fbcff14bd4ed497fb1d98697898400b13fa5f7a497442ab89b59ab3e"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/custom-effect-shared-invalid.stderr.log",
+      "sha256": "99a3dfa8107e1f53d2ffb780a3dfb2d79c4ec1f2ba90a4173dc91308d07b536b"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/custom-effect-shared-invalid.stdout.json",
+      "sha256": "126bd5e6fbcff14bd4ed497fb1d98697898400b13fa5f7a497442ab89b59ab3e"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/custom-effect-shared-invalid.strict.stderr.log",
+      "sha256": "99a3dfa8107e1f53d2ffb780a3dfb2d79c4ec1f2ba90a4173dc91308d07b536b"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/custom-effect-shared-invalid.strict.stdout.json",
+      "sha256": "126bd5e6fbcff14bd4ed497fb1d98697898400b13fa5f7a497442ab89b59ab3e"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/custom-effect-shared-valid.guarded.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/custom-effect-shared-valid.guarded.stdout.json",
+      "sha256": "2b1ad0eda16dfe6645e1407d68d698f170b58b519db44f6b8c004216dc0d94d5"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/custom-effect-shared-valid.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/custom-effect-shared-valid.stdout.json",
+      "sha256": "2b1ad0eda16dfe6645e1407d68d698f170b58b519db44f6b8c004216dc0d94d5"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/custom-effect-shared-valid.strict.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/custom-effect-shared-valid.strict.stdout.json",
+      "sha256": "2b1ad0eda16dfe6645e1407d68d698f170b58b519db44f6b8c004216dc0d94d5"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/custom-hook-conditional.guarded.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/custom-hook-conditional.guarded.stdout.json",
+      "sha256": "0823112402f33bfd3b5b10334ad06c341bff6586a09ee6eb22c0a3e1686f155d"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/custom-hook-conditional.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/custom-hook-conditional.stdout.json",
+      "sha256": "0823112402f33bfd3b5b10334ad06c341bff6586a09ee6eb22c0a3e1686f155d"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/custom-hook-conditional.strict.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/custom-hook-conditional.strict.stdout.json",
+      "sha256": "0823112402f33bfd3b5b10334ad06c341bff6586a09ee6eb22c0a3e1686f155d"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/deprecated-rule-source-excerpt.txt",
+      "sha256": "1504951600cc3b1e512519c17fad17f677cdb8ddb1de4cf8582259e193809a8e"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-as-click-handler.guarded.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-as-click-handler.guarded.stdout.json",
+      "sha256": "de9017b31a90eb28eadbd8832bfa31adafdada712b36eebbd7c8c0ac5c589556"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-as-click-handler.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-as-click-handler.stdout.json",
+      "sha256": "de9017b31a90eb28eadbd8832bfa31adafdada712b36eebbd7c8c0ac5c589556"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-as-click-handler.strict.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-as-click-handler.strict.stdout.json",
+      "sha256": "de9017b31a90eb28eadbd8832bfa31adafdada712b36eebbd7c8c0ac5c589556"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-during-render.guarded.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-during-render.guarded.stdout.json",
+      "sha256": "da3c83f9799c3eaab71a6773eaaea35e2ea9aa24b9481c9914caaaf8de654de6"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-during-render.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-during-render.stdout.json",
+      "sha256": "da3c83f9799c3eaab71a6773eaaea35e2ea9aa24b9481c9914caaaf8de654de6"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-during-render.strict.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-during-render.strict.stdout.json",
+      "sha256": "da3c83f9799c3eaab71a6773eaaea35e2ea9aa24b9481c9914caaaf8de654de6"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-in-deps.guarded.stderr.log",
+      "sha256": "99a3dfa8107e1f53d2ffb780a3dfb2d79c4ec1f2ba90a4173dc91308d07b536b"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-in-deps.guarded.stdout.json",
+      "sha256": "995d1d99eaeefb60101920d8b0a3e664c54ff3de1b75a0f6dc8d1e7f1372211a"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-in-deps.stderr.log",
+      "sha256": "99a3dfa8107e1f53d2ffb780a3dfb2d79c4ec1f2ba90a4173dc91308d07b536b"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-in-deps.stdout.json",
+      "sha256": "995d1d99eaeefb60101920d8b0a3e664c54ff3de1b75a0f6dc8d1e7f1372211a"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-in-deps.strict.stderr.log",
+      "sha256": "99a3dfa8107e1f53d2ffb780a3dfb2d79c4ec1f2ba90a4173dc91308d07b536b"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-in-deps.strict.stdout.json",
+      "sha256": "995d1d99eaeefb60101920d8b0a3e664c54ff3de1b75a0f6dc8d1e7f1372211a"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-valid.guarded.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-valid.guarded.stdout.json",
+      "sha256": "3fc4ad01b471308940d542bb76962a73ffc77cb3a6f75f0c51214473ff17ae3b"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-valid.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-valid.stdout.json",
+      "sha256": "3fc4ad01b471308940d542bb76962a73ffc77cb3a6f75f0c51214473ff17ae3b"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-valid.strict.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effect-event-valid.strict.stdout.json",
+      "sha256": "3fc4ad01b471308940d542bb76962a73ffc77cb3a6f75f0c51214473ff17ae3b"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effective-guarded-config.json",
+      "sha256": "5a1add2e7a5a7efc977a16194be19bc41ffe048198e3b98c7821dfaeb9993fa2"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/effective-guarded-config.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/empty-global.npmrc",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/empty-user.npmrc",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/eslint-plugin-react-hooks.latest.json",
+      "sha256": "7ccb572d85841dc9e54fdd98886f5a7c4235392ef4fd1743542ce3aede252bda"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/eslint.invalid.config.first-attempt.mjs",
+      "sha256": "72583cc8e496f1959877f9109f8c26b4273c85730a37088177ecd6814e2108ed"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/eslint.latest.json",
+      "sha256": "9842a64e59c06c616b9c358661d23f2b978ce9bf17d94add39d5facb19b70d96"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/fixture-oracles.json",
+      "sha256": "9cb0f5e290406678e37a72dc3bade9d491c42649ee5ccbaf3829118b74c6d074"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/gensync.latest.json",
+      "sha256": "ce284b3efff3d6781088332d64ddd79d98a3f079689d278d85d87f2efbb24823"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/guarded-checker-observations.json",
+      "sha256": "48fe04c94fc5b4d7890ae690e4b471f88d3540ca4b3d3595056edd2f6ed1fa41"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/guarded-strict-checker-observations.json",
+      "sha256": "29d10b9f2ae2ead679c3e7bf784bfa237ce5c450cc238a6b7d35779e2de22efa"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/ignored-target.strict.stderr.log",
+      "sha256": "99a3dfa8107e1f53d2ffb780a3dfb2d79c4ec1f2ba90a4173dc91308d07b536b"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/ignored-target.strict.stdout.log",
+      "sha256": "bab30191a862f06af6be64219a496aa71d9171e5937931bd6150af4233d23bc0"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/invalid-config-receipt.json",
+      "sha256": "bb450e6ade9343eef78fa2a255ab2c8bd1359f5e5566aae12f8cd9a2160e9e58"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/invalid-config-receipt.json.first-attempt",
+      "sha256": "bb450e6ade9343eef78fa2a255ab2c8bd1359f5e5566aae12f8cd9a2160e9e58"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/invalid-config.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/invalid-config.stderr.log.first-attempt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/invalid-config.stdout.log",
+      "sha256": "f36e398f6849f844fa8f2a16a7819514dffd62455e3b1aff80349f6ebd0eb76f"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/invalid-config.stdout.log.first-attempt",
+      "sha256": "f36e398f6849f844fa8f2a16a7819514dffd62455e3b1aff80349f6ebd0eb76f"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/invalid-config.strict.stderr.log",
+      "sha256": "8d6e70ddb8eb8574c810857788a87152af1b3df9e023f661386d4720c4d2d21d"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/invalid-config.strict.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/invalid-nonhook-alias-top-level.guarded.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/invalid-nonhook-alias-top-level.guarded.stdout.json",
+      "sha256": "d6499b818d0ab5e220821c9284709db0545a971e7e9e1a83aeada03279650db3"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/invalid-nonhook-alias-top-level.strict.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/invalid-nonhook-alias-top-level.strict.stdout.json",
+      "sha256": "d6499b818d0ab5e220821c9284709db0545a971e7e9e1a83aeada03279650db3"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/isolated-install-receipt.json",
+      "sha256": "d1a5aef5acaaf193e3bdae1dfc254ec744e3a2134addf5bb135424520672e140"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/isolated-install.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/isolated-install.stdout.log",
+      "sha256": "cf401a1471e3fa0a5b58de6b87e06f6f46de29e779c16d4d225aaf037351581f"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/missing-dependency.guarded.stderr.log",
+      "sha256": "99a3dfa8107e1f53d2ffb780a3dfb2d79c4ec1f2ba90a4173dc91308d07b536b"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/missing-dependency.guarded.stdout.json",
+      "sha256": "b9b7638f8db19efa54aa824e42f6ca315a2343b5a068cf6c36b56380dde74bf1"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/missing-dependency.stderr.log",
+      "sha256": "99a3dfa8107e1f53d2ffb780a3dfb2d79c4ec1f2ba90a4173dc91308d07b536b"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/missing-dependency.stdout.json",
+      "sha256": "b9b7638f8db19efa54aa824e42f6ca315a2343b5a068cf6c36b56380dde74bf1"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/missing-dependency.strict.stderr.log",
+      "sha256": "99a3dfa8107e1f53d2ffb780a3dfb2d79c4ec1f2ba90a4173dc91308d07b536b"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/missing-dependency.strict.stdout.json",
+      "sha256": "b9b7638f8db19efa54aa824e42f6ca315a2343b5a068cf6c36b56380dde74bf1"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/named-hook-alias-conditional.guarded.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/named-hook-alias-conditional.guarded.stdout.json",
+      "sha256": "856d52c9e415773bef96cd382272a3ff7397d0675b37183f23f73012f0a4c319"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/named-hook-alias-conditional.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/named-hook-alias-conditional.stdout.json",
+      "sha256": "856d52c9e415773bef96cd382272a3ff7397d0675b37183f23f73012f0a4c319"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/named-hook-alias-conditional.strict.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/named-hook-alias-conditional.strict.stdout.json",
+      "sha256": "856d52c9e415773bef96cd382272a3ff7397d0675b37183f23f73012f0a4c319"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/namespace-conditional.guarded.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/namespace-conditional.guarded.stdout.json",
+      "sha256": "f4797531f5ea84784e8a1329abea4c44606d351233503ae8b089ea2fdbbf3136"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/namespace-conditional.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/namespace-conditional.stdout.json",
+      "sha256": "f4797531f5ea84784e8a1329abea4c44606d351233503ae8b089ea2fdbbf3136"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/namespace-conditional.strict.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/namespace-conditional.strict.stdout.json",
+      "sha256": "f4797531f5ea84784e8a1329abea4c44606d351233503ae8b089ea2fdbbf3136"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/reachability-receipt.json",
+      "sha256": "8ce93beb88421d35099b0b619ed77de82ba45608ba89a088a10dafd9088ebbe6"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/reachability.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/reachability.stdout.json",
+      "sha256": "352624590bb584903587ff217eceb7c4e81ccbcc1512ca96ad0b086ad3218679"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/README.md.before",
+      "sha256": "fa669ee53473bf3dc345e77e965e7815487f4c076a9eb70e6f249ecafe1b3657"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/README.md.reviewed",
+      "sha256": "f62e38a14291b766116e8a10f5730186bc260c36ed659af017785a048cb28367"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/refresh-evidence-2026-10-04.md.before",
+      "sha256": "67f4513c2188a47eb52c640c513fbc9b092d29a3378b0065cfa5fca8b22dfe09"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/refresh-evidence-2026-10-04.md.reviewed",
+      "sha256": "ade4db0c73bfc1da0a023476d3083d51a499db651d7f2b1b52080f5c8c1117d7"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/registry-observations.json",
+      "sha256": "1f666cf49184910b7eddfca7d41923bb631af1a2794e3cdb7f17312e5478164c"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/renamed-hook-conditional.guarded.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/renamed-hook-conditional.guarded.stdout.json",
+      "sha256": "b9b42980aefb6cbf772886e415c394e604774014650599c2479cdb7c109804b7"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/renamed-hook-conditional.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/renamed-hook-conditional.stdout.json",
+      "sha256": "bef229faf72d32c862f7a87281d7d886050751beb89da8cab9d7c39042df4f50"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/renamed-hook-conditional.strict.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/renamed-hook-conditional.strict.stdout.json",
+      "sha256": "b9b42980aefb6cbf772886e415c394e604774014650599c2479cdb7c109804b7"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/signatures-receipt.json",
+      "sha256": "6f8058635c0fdd97333c8a253d075be52e5b832914c88986d1f03aaec1e89f1c"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/signatures.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/signatures.stdout.json",
+      "sha256": "539ea4684b22e24869bace50b48bda695776477f892861b08d51d219f0d08faf"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/source-receipt.json",
+      "sha256": "e343f46cb20cbcef5ccef2378b64a9f6cdf273951b423d30eb99a1d8608e97dc"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/strict-invocation-controls.json",
+      "sha256": "8d3281e8e6367d5070a1ae4de70b9ca7dcb7c5e451955031508a0ab25d2f0b7d"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/strict-resolution-receipt.json",
+      "sha256": "6b83a5867c11fadb3326b07b850042335851199503dcef745f3bb3db3756dc21"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/strict-resolution.stderr.log",
+      "sha256": "e0fd7d2a46113fec04fc2e28f48b8beeef0fb56cae6010aa580f9dd6f1956706"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/strict-resolution.stdout.log",
+      "sha256": "7f9daf6f329e4c00d69de07822407f8e4ef627084d24c21babe2912086dcd7d3"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/typescript-eslint-eslint-plugin.latest.json",
+      "sha256": "626251ef0e903c05825961095fe3f96010af2cc0d3342678d4af1d678d8a3b2f"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/typescript-eslint-parser.latest.json",
+      "sha256": "b5e8df09ffb979dece0b12b87ab7a1a14a5bae575bf8d34fd7c6c158abe70783"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/typescript-typescript6.latest.json",
+      "sha256": "6b00644a8a197745dd863a0c3e1c0180f666da60de2fff1fb417a515ad7cbdb3"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/typescript.latest.json",
+      "sha256": "28a8ef314c6bbc3fddb831088f80eb2fcac6351cb618c8ac029f7229f587b8aa"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/valid-hooks.guarded.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/valid-hooks.guarded.stdout.json",
+      "sha256": "07d34d8506c627506fbc33e7dbe0cf6b0aa5fda9029fed926c132a2cc6d12a57"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/valid-hooks.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/valid-hooks.stdout.json",
+      "sha256": "07d34d8506c627506fbc33e7dbe0cf6b0aa5fda9029fed926c132a2cc6d12a57"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/valid-hooks.strict.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/valid-hooks.strict.stdout.json",
+      "sha256": "07d34d8506c627506fbc33e7dbe0cf6b0aa5fda9029fed926c132a2cc6d12a57"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/valid-named-alias.guarded.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/valid-named-alias.guarded.stdout.json",
+      "sha256": "8844f833a2cd62893d7320aea110774ea2822d6d60f3c273721404efc8485339"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/valid-named-alias.strict.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/valid-named-alias.strict.stdout.json",
+      "sha256": "8844f833a2cd62893d7320aea110774ea2822d6d60f3c273721404efc8485339"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/valid-nonhook-alias.guarded.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/valid-nonhook-alias.guarded.stdout.json",
+      "sha256": "52521aa3b5c062ac8852e91f2142917965344608e7011ffed2ca2fe58937ecab"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/valid-nonhook-alias.strict.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/valid-nonhook-alias.strict.stdout.json",
+      "sha256": "52521aa3b5c062ac8852e91f2142917965344608e7011ffed2ca2fe58937ecab"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/compiler-purity-invalid.tsx",
+      "sha256": "c3b74d7dd2efaae551e7b78a0fd01a18e722e60c5dda3b4f1ecc013be59e38d9"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/compiler-purity-valid.tsx",
+      "sha256": "11179658fda4d5da988efea2ef66e0283ee305deff07c415c294ce9961ec493c"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/compiler-static-component-invalid.tsx",
+      "sha256": "17630194cf73ba4d6a978b77cee0b18ed21c3a8208a87b18d7e74b95590b8356"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/conditional-hook.tsx",
+      "sha256": "dbe025a6b36ba677b43e225911bd29ad134da2dc25250a405b989e9866ce1e38"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/conditional-use.tsx",
+      "sha256": "b06d92f2c3c05793cffadb94f464c39dec272e08556ee04b7effeb4b90cd7373"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/custom-effect-shared-invalid.tsx",
+      "sha256": "396534736cd82f460f8b4f05c50d4157a6eba48343f71a5753bdd59b7a0eada6"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/custom-effect-shared-valid.tsx",
+      "sha256": "ad1cc07b8a474aa72e178d3bdea7b9f1646131f9692baa86426261e426ad3ee8"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/custom-hook-conditional.tsx",
+      "sha256": "fa16240b49c9d19a6d483d3916b9ad3812283f11227587867dac31a7458a6b47"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/effect-event-as-click-handler.tsx",
+      "sha256": "5d5601045578223a84ff3f76e1315aa59a2079945d1c157679b1fc329b53aeef"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/effect-event-during-render.tsx",
+      "sha256": "66d747cee459cf89ed8a0bd12df0ceed5701df3e4be3869395968ec43a308304"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/effect-event-in-deps.tsx",
+      "sha256": "fa72507867708dabdadcdd87aaa0912cba30175d348e2315bb5d543f24572960"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/effect-event-valid.tsx",
+      "sha256": "1607706ea843c19e926f24711173b20a980f17ea585c326e9aa03820875f44df"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/ignored.txt",
+      "sha256": "3ce8ea268c250f7cd3c94735be98da902f4190b26aed8467e17f7f1dc9888fe0"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/invalid-nonhook-alias-top-level.tsx",
+      "sha256": "a5ceda9927f32cf2930a261d2a0a2706e839b2a04c1b20d2201f05ea89a1fb16"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/missing-dependency.tsx",
+      "sha256": "893f0a2a3cb9d4056c74e81e7b48f677e88dfda7f6e51ad62369ca9b306ebb6e"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/named-hook-alias-conditional.tsx",
+      "sha256": "c5c100fe1ca682d72d32545320e9fd464483fbd87c292e4f2d1d12899ea6d5e1"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/namespace-conditional.tsx",
+      "sha256": "5bece0488a4c415a10dada7b396675e9130e128719fa94f97a13fe3c4f5deb98"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/renamed-hook-conditional.tsx",
+      "sha256": "6de9e0d543413dadf94d1b593eb4caa19a64b08a61aa2d33456005a95c6fc882"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/valid-hooks.tsx",
+      "sha256": "0d94f59f497b0e0afae4510a8c11e3d6898382a4e2f0f08de2ffa0fa204edf2a"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/valid-named-alias.tsx",
+      "sha256": "fd9a334cea4af002b7ac3d3a1830d9ab5bb5dff770e748b0dae3f46b16a696fe"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/fixtures/valid-nonhook-alias.tsx",
+      "sha256": "b2b708a23351bbf458ad33335f90b3438e77fa1f645dc6fdf2ff4d5beaf0f1d8"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/package.json",
+      "sha256": "29bd6baedb79106c1bd5a3c9050867cb2a7478dd33b35fa9b4326856c8fadf72"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/package-lock.json",
+      "sha256": "86dd64aae77da6ab9a0d0f7a88338494c15f68620838ffd40140f254b1e9ca2d"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/eslint.config.mjs",
+      "sha256": "a6f9e830a5cf72be10566a3a682486a6a28828a3a7aa17383e9ca47915f76662"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/eslint.guarded.config.mjs",
+      "sha256": "fd6377bc08d5bf7e80506f7fa3324b1d8174a3a9c934987fb8e2165cdc4a591c"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/eslint.invalid.config.mjs",
+      "sha256": "6154ab6b92577cceea20a3b37818f330a6b91b3d50e370301beac2a39f840820"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/eslint/package.json",
+      "sha256": "7178a717ca081a0558e5bd4eedd5b27c19d7a9b7048434ec40ba536aa2d0f501"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/eslint/lib/rules/no-restricted-syntax.js",
+      "sha256": "c85343aa1bf6a8dc8db045e93ef4b4b072ae6f1d03fe8f4e93d5960607be4e21"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/eslint-plugin-react-hooks/package.json",
+      "sha256": "c745f6ec0ce838f395eb5da17e3f907094fcd14c87c30b94810f217fe5e7b476"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/eslint-plugin-react-hooks/cjs/eslint-plugin-react-hooks.development.js",
+      "sha256": "d401e94560ab2660e40fe59a3408828b96d78e9929a22358386aa51acbe32e2b"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/eslint-plugin-react-hooks/LICENSE",
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/gensync/package.json",
+      "sha256": "80cddca71baa1ba0cf44f65585e1c1ed7576abdb759ed391007925c961ca6334"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/gensync/index.js",
+      "sha256": "09e82a13eb50d14b42acdfd1db8fbde8f17e99527aa1bd5a489094e9a48a855a"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/gensync/LICENSE",
+      "sha256": "e3a956681ee067f971ac413994171b3d90ca801ec6324e76c9c55366cfe31cb0"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/@babel/core/package.json",
+      "sha256": "6c2893db41b54a1c03ba68e676aa3ea987db9a5c9b9a3a3aa2e8d0d9a63066c4"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/@babel/core/LICENSE",
+      "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/@typescript-eslint/parser/package.json",
+      "sha256": "515cec9723116e3ec517843242248c43ed7fee3b97f486bac1d3853561452d4a"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/typescript/package.json",
+      "sha256": "d9b8fb53c67c947fece83bcb73fa8512227ea6a12b110e096fdab8ecdc02b655"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/@typescript/native/package.json",
+      "sha256": "3722b30210616a13a3213ded11575ba6b2dbab10c32a5ef67afca8513e27017e"
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/lint-v8-coverage/coverage-10212-1791233969498-0.json",
+      "sha256": "60d9ea8a13ea7b46ea7a2665f16da0017ebdb0fa2bcef07ac9a97334d5cfb678"
+    },
+    {
+      "path": "docs/phase-1-compatibility/refresh-evidence-2026-10-04.md",
+      "sha256": "ade4db0c73bfc1da0a023476d3083d51a499db651d7f2b1b52080f5c8c1117d7"
+    },
+    {
+      "path": "docs/phase-1-compatibility/README.md",
+      "sha256": "f62e38a14291b766116e8a10f5730186bc260c36ed659af017785a048cb28367"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "path": ".specify/memory/constitution.md",
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "path": "PROJECT.md",
+      "sha256": "a483bd2713fe420322772ab7fb07c848aaf103088697c05ab91f35d2e5ea1461"
+    },
+    {
+      "path": "DECISIONS.md",
+      "sha256": "0290e6bed5d983fa1f2162db72f1a9d3167695ff98c867c88987ee1e2c4bcc99"
+    },
+    {
+      "path": "PROJECT_STATE.yaml",
+      "sha256": "a8bf5f4b6e45f67720e84278da2067b7ae3cf5de2c9da01cac72ff0c94f29900"
+    },
+    {
+      "path": "TASKS.md",
+      "sha256": "158e06c0d8cd67859c8b459b96dce3449cb4d16788d3c520e99d8823f72edcd3"
+    },
+    {
+      "path": "package.json",
+      "sha256": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908"
+    },
+    {
+      "path": "apps/web/package.json",
+      "sha256": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a"
+    },
+    {
+      "path": "apps/web/package-lock.json",
+      "sha256": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d"
+    },
+    {
+      "path": "apps/api/requirements.txt",
+      "sha256": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd"
+    },
+    {
+      "path": "apps/web/public/models/hengshi-hq-atlanta-exterior-web.glb",
+      "sha256": "4767cab4d346207a2109ffc1584e256e82ae1cecc110780b99c4406a9586aafe"
+    },
+    {
+      "path": "artifacts/nature-campus-layout-study/nature-campus-layout.glb",
+      "sha256": "e2161710dc0576ec62e3d096c60e32927e827aa59198a33361e729ec8a7b43c0"
+    }
+  ],
+  "canonical_writes": [
+    "docs/phase-1-compatibility/refresh-evidence-2026-10-04.md",
+    "docs/phase-1-compatibility/README.md"
+  ],
+  "review_limit": "two normal revisions; candidate naming restriction unselected; all D072 adoption conditions held beyond checked subset"
+}

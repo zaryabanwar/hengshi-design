@@ -1,0 +1,621 @@
+{
+  "product": "Hengshi Design v1",
+  "fileKey": "GOmLP6Cv96l768ueSrZ5Dg",
+  "sourcesName": "B01 / Directory reusable sources / v1",
+  "streamMasters": [
+    {
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-HIGH",
+      "selected_stream_id": "S-MEDIUM",
+      "id": "21:25",
+      "name": "State=OPEN, Stream=HIGH"
+    },
+    {
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-LOW",
+      "selected_stream_id": "S-SEMANTIC",
+      "id": "21:40",
+      "name": "State=OPEN, Stream=LOW"
+    },
+    {
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-MEDIUM",
+      "selected_stream_id": "S-LOW",
+      "id": "21:55",
+      "name": "State=OPEN, Stream=MEDIUM"
+    },
+    {
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-SEMANTIC",
+      "selected_stream_id": "S-HIGH",
+      "id": "21:70",
+      "name": "State=OPEN, Stream=SEMANTIC"
+    },
+    {
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-HIGH",
+      "selected_stream_id": "S-HIGH",
+      "id": "21:85",
+      "name": "State=PREFERENCE-READ-FAILED, Stream=HIGH"
+    },
+    {
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-LOW",
+      "selected_stream_id": "S-LOW",
+      "id": "21:102",
+      "name": "State=PREFERENCE-READ-FAILED, Stream=LOW"
+    },
+    {
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-MEDIUM",
+      "selected_stream_id": "S-MEDIUM",
+      "id": "21:119",
+      "name": "State=PREFERENCE-READ-FAILED, Stream=MEDIUM"
+    },
+    {
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "selected_stream_id": "S-SEMANTIC",
+      "id": "21:136",
+      "name": "State=PREFERENCE-READ-FAILED, Stream=SEMANTIC"
+    },
+    {
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-HIGH",
+      "selected_stream_id": "S-HIGH",
+      "id": "21:153",
+      "name": "State=PREFERENCE-WRITE-FAILED, Stream=HIGH"
+    },
+    {
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-LOW",
+      "selected_stream_id": "S-LOW",
+      "id": "21:170",
+      "name": "State=PREFERENCE-WRITE-FAILED, Stream=LOW"
+    },
+    {
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-MEDIUM",
+      "selected_stream_id": "S-MEDIUM",
+      "id": "21:187",
+      "name": "State=PREFERENCE-WRITE-FAILED, Stream=MEDIUM"
+    },
+    {
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "selected_stream_id": "S-SEMANTIC",
+      "id": "21:204",
+      "name": "State=PREFERENCE-WRITE-FAILED, Stream=SEMANTIC"
+    },
+    {
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-HIGH",
+      "selected_stream_id": "S-HIGH",
+      "id": "21:221",
+      "name": "State=STREAM-CHANGED, Stream=HIGH"
+    },
+    {
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-LOW",
+      "selected_stream_id": "S-LOW",
+      "id": "21:238",
+      "name": "State=STREAM-CHANGED, Stream=LOW"
+    },
+    {
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-MEDIUM",
+      "selected_stream_id": "S-MEDIUM",
+      "id": "21:255",
+      "name": "State=STREAM-CHANGED, Stream=MEDIUM"
+    },
+    {
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC",
+      "selected_stream_id": "S-SEMANTIC",
+      "id": "21:272",
+      "name": "State=STREAM-CHANGED, Stream=SEMANTIC"
+    }
+  ],
+  "routes": [
+    {
+      "id": "ROUTE-WING-STRATEGY",
+      "label": "Strategy & Transformation",
+      "path": "/services/strategy-transformation"
+    },
+    {
+      "id": "ROUTE-WING-DIGITAL",
+      "label": "Digital Products & Growth",
+      "path": "/services/digital-products-growth"
+    },
+    {
+      "id": "ROUTE-WING-AI-DATA",
+      "label": "AI, Data & Automation",
+      "path": "/services/ai-data-automation"
+    },
+    {
+      "id": "ROUTE-WING-IMMERSIVE",
+      "label": "Immersive & Creative",
+      "path": "/services/immersive-creative"
+    },
+    {
+      "id": "ROUTE-WING-CLOUD-TRUST",
+      "label": "Cloud, Reliability & Trust",
+      "path": "/services/cloud-reliability-trust"
+    }
+  ],
+  "states": [
+    {
+      "id": "STATE-OPEN",
+      "heading": "Browse departments",
+      "message": "Choose a semantic department page.",
+      "query": "",
+      "results": 0,
+      "browse": true
+    },
+    {
+      "id": "STATE-EMPTY-QUERY",
+      "heading": "Browse departments",
+      "message": "Enter a search term, or choose a department below.",
+      "query": "",
+      "results": 0,
+      "browse": true
+    },
+    {
+      "id": "STATE-RESULTS",
+      "heading": "Search results",
+      "message": "Five synthetic results for this reference.",
+      "query": "design",
+      "results": 5,
+      "browse": false
+    },
+    {
+      "id": "STATE-NO-RESULTS",
+      "heading": "No matching results",
+      "message": "Try another search term or browse departments.",
+      "query": "unmatched example",
+      "results": 0,
+      "browse": true
+    },
+    {
+      "id": "STATE-LOADING",
+      "heading": "Searching the directory",
+      "message": "You can continue using the department links while search is pending.",
+      "query": "design",
+      "results": 0,
+      "browse": true
+    },
+    {
+      "id": "STATE-DERIVED-INDEX-UNAVAILABLE",
+      "heading": "Search is unavailable",
+      "message": "The semantic department directory is available. Search has not returned a result.",
+      "query": "design",
+      "results": 0,
+      "browse": true,
+      "retry": true
+    },
+    {
+      "id": "STATE-OFFLINE",
+      "heading": "Connection unavailable",
+      "message": "This fixture makes no claim that a fresh result or department page is available offline. Keep the current view and retry when connected.",
+      "query": "design",
+      "results": 0,
+      "browse": false,
+      "retry": true
+    },
+    {
+      "id": "STATE-ERROR",
+      "heading": "Search did not complete",
+      "message": "No new result was confirmed. The department links remain available in this connected fixture.",
+      "query": "design",
+      "results": 0,
+      "browse": true,
+      "retry": true
+    },
+    {
+      "id": "STATE-STALE",
+      "heading": "Earlier results",
+      "message": "These reference results belong to an earlier completed query and are not current results for the edited term.",
+      "query": "updated example",
+      "results": 2,
+      "browse": true,
+      "retry": true
+    },
+    {
+      "id": "STATE-PREFERENCE-READ-FAILED",
+      "heading": "Browse departments",
+      "message": "Stored presentation choice could not be read; use the persistent selection control below.",
+      "query": "",
+      "results": 0,
+      "browse": true
+    },
+    {
+      "id": "STATE-PREFERENCE-WRITE-FAILED",
+      "heading": "Browse departments",
+      "message": "The presentation is applied for this session; the accepted storage status is shown below.",
+      "query": "",
+      "results": 0,
+      "browse": true
+    },
+    {
+      "id": "STATE-STREAM-CHANGED",
+      "heading": "Browse departments",
+      "message": "The presentation changed; the Services location and open directory remain.",
+      "query": "",
+      "results": 0,
+      "browse": true
+    }
+  ],
+  "frames": [
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-HIGH",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-MEDIUM",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-LOW",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-SEMANTIC",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_EMPTY_QUERY_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "state_id": "STATE-EMPTY-QUERY",
+      "stream_id": "S-HIGH",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_EMPTY_QUERY_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "state_id": "STATE-EMPTY-QUERY",
+      "stream_id": "S-MEDIUM",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_EMPTY_QUERY_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "state_id": "STATE-EMPTY-QUERY",
+      "stream_id": "S-LOW",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_EMPTY_QUERY_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "state_id": "STATE-EMPTY-QUERY",
+      "stream_id": "S-SEMANTIC",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_RESULTS_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "state_id": "STATE-RESULTS",
+      "stream_id": "S-HIGH",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_RESULTS_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "state_id": "STATE-RESULTS",
+      "stream_id": "S-MEDIUM",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_RESULTS_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "state_id": "STATE-RESULTS",
+      "stream_id": "S-LOW",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_RESULTS_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "state_id": "STATE-RESULTS",
+      "stream_id": "S-SEMANTIC",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_NO_RESULTS_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-HIGH",
+      "width": 320,
+      "query": "unmatched example"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_NO_RESULTS_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-MEDIUM",
+      "width": 320,
+      "query": "unmatched example"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_NO_RESULTS_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-LOW",
+      "width": 320,
+      "query": "unmatched example"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_NO_RESULTS_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-SEMANTIC",
+      "width": 320,
+      "query": "unmatched example"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_LOADING_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "state_id": "STATE-LOADING",
+      "stream_id": "S-HIGH",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_LOADING_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "state_id": "STATE-LOADING",
+      "stream_id": "S-MEDIUM",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_LOADING_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "state_id": "STATE-LOADING",
+      "stream_id": "S-LOW",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_LOADING_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "state_id": "STATE-LOADING",
+      "stream_id": "S-SEMANTIC",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_DERIVED_INDEX_UNAVAILABLE_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "state_id": "STATE-DERIVED-INDEX-UNAVAILABLE",
+      "stream_id": "S-HIGH",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_DERIVED_INDEX_UNAVAILABLE_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "state_id": "STATE-DERIVED-INDEX-UNAVAILABLE",
+      "stream_id": "S-MEDIUM",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_DERIVED_INDEX_UNAVAILABLE_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "state_id": "STATE-DERIVED-INDEX-UNAVAILABLE",
+      "stream_id": "S-LOW",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_DERIVED_INDEX_UNAVAILABLE_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "state_id": "STATE-DERIVED-INDEX-UNAVAILABLE",
+      "stream_id": "S-SEMANTIC",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OFFLINE_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "state_id": "STATE-OFFLINE",
+      "stream_id": "S-HIGH",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OFFLINE_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "state_id": "STATE-OFFLINE",
+      "stream_id": "S-MEDIUM",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OFFLINE_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "state_id": "STATE-OFFLINE",
+      "stream_id": "S-LOW",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OFFLINE_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "state_id": "STATE-OFFLINE",
+      "stream_id": "S-SEMANTIC",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-HIGH",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-MEDIUM",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-LOW",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-SEMANTIC",
+      "width": 320,
+      "query": "design"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STALE_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "state_id": "STATE-STALE",
+      "stream_id": "S-HIGH",
+      "width": 320,
+      "query": "updated example"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STALE_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "state_id": "STATE-STALE",
+      "stream_id": "S-MEDIUM",
+      "width": 320,
+      "query": "updated example"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STALE_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "state_id": "STATE-STALE",
+      "stream_id": "S-LOW",
+      "width": 320,
+      "query": "updated example"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STALE_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "state_id": "STATE-STALE",
+      "stream_id": "S-SEMANTIC",
+      "width": 320,
+      "query": "updated example"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-HIGH",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-MEDIUM",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-LOW",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-HIGH",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-MEDIUM",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-LOW",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-HIGH",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-MEDIUM",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-LOW",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC",
+      "width": 320,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-HIGH",
+      "width": 1440,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-MEDIUM",
+      "width": 1440,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_LOW_V01",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-LOW",
+      "width": 1440,
+      "query": ""
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-SEMANTIC",
+      "width": 1440,
+      "query": ""
+    }
+  ],
+  "limitations": [
+    "Prepared only; no Figma call or external write performed",
+    "Synthetic state/result fixtures and proposed nonmodal focus contract are subject to design review and founder pilot acceptance",
+    "MODE-KEYBOARD naming is a reference specification, not actual native input, keyboard or screen-reader execution",
+    "Existing D057 master copy is reused; ceiling facts, other modes/profiles/primitives, prototype, independent reviews, exports/restore/EXIT and full pilot acceptance remain",
+    "All existing Figma content preserved; no new page, library publication, website font, route activation or application implementation"
+  ]
+}

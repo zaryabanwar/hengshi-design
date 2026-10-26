@@ -1,0 +1,23 @@
+### Result
+{"desktop":{"open":true,"viewport":1440,"documentWidth":1425,"grid":"272px 272px 272px 272px","cardBounds":[{"x":150.5,"y":78.375,"width":272,"height":421.53125},{"x":434.5,"y":78.375,"width":272,"height":421.53125},{"x":718.5,"y":78.375,"width":272,"height":421.53125},{"x":1002.5,"y":78.375,"width":272,"height":421.53125}],"sectionBounds":{"width":1124,"height":931.0625},"links":["http://127.0.0.1:8766/docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md#semantic-preparation-engineering-proposal","http://127.0.0.1:8766/docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md#client-build-identity-and-registered-entry-proposal","http://127.0.0.1:8766/docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md#public-html-binding-proposal","http://127.0.0.1:8766/docs/phase-1-3d/SCENE_ASSEMBLY_CONTRACT.md#scene-lookup-and-build-agreement-proposal","http://127.0.0.1:8766/docs/phase-1-architecture/contracts/reviews/public-html-binding-v1-2026-10-05.md"]},"links":[{"url":"http://127.0.0.1:8766/docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md#semantic-preparation-engineering-proposal","status":200},{"url":"http://127.0.0.1:8766/docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md#client-build-identity-and-registered-entry-proposal","status":200},{"url":"http://127.0.0.1:8766/docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md#public-html-binding-proposal","status":200},{"url":"http://127.0.0.1:8766/docs/phase-1-3d/SCENE_ASSEMBLY_CONTRACT.md#scene-lookup-and-build-agreement-proposal","status":200},{"url":"http://127.0.0.1:8766/docs/phase-1-architecture/contracts/reviews/public-html-binding-v1-2026-10-05.md","status":200}]}
+### Ran Playwright code
+```js
+await (async (page) => {
+  const section = page.locator('#publication-flow');
+  await section.evaluate(el=>el.scrollIntoView({block:"start",behavior:"instant"}));
+  const desktop = await section.evaluate(el => ({
+    open: el.open, viewport: innerWidth, documentWidth: document.documentElement.scrollWidth,
+    grid: getComputedStyle(el.querySelector('.flow')).gridTemplateColumns,
+    cardBounds: [...el.querySelectorAll('.flow li')].map(x => { const b=x.getBoundingClientRect();return {x:b.x,y:b.y,width:b.width,height:b.height}; }),
+    sectionBounds: (() => {const b=el.getBoundingClientRect();return {width:b.width,height:b.height};})(),
+    links: [...el.querySelectorAll('a')].map(x=>x.href)
+  }));
+  const links=[];
+  for (const url of desktop.links) { const response=await page.request.get(url.split('#')[0]);links.push({url,status:response.status()}); }
+  await section.screenshot({path:'output/playwright/definition-consolidation/publication-flow-desktop-2026-10-05.png'});
+  return {desktop,links};
+}
+
+
+)(page);
+```

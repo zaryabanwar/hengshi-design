@@ -1,0 +1,33 @@
+{
+  "status": "DOING",
+  "checked": "2026-10-17",
+  "context7_library": "/websites/threejs",
+  "scope": "Official API/observation constraints only; not version/graph selection or source of proposed targets",
+  "sources": [
+    {
+      "url": "https://threejs.org/docs/pages/WebGLRenderer.html",
+      "observed": "WebGL2 requirement; multi-pass info/reset; drawing-buffer pixels; memory object counts not portable byte totals"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/WebGL_best_practices",
+      "observed": "Resource estimates and system variability; avoid blocking repeated capability queries; no portable VRAM reading"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame",
+      "observed": "Display scheduling/hidden-page limits; callback is not GPU completion"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API",
+      "observed": "Visibility/throttling affect observation population"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/isContextLost",
+      "observed": "Context-loss state is a separate invalid/recovery condition"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/encodedBodySize",
+      "observed": "Body representation sizes do not alone prove new network bytes"
+    }
+  ],
+  "qualification": "All new intervals durations buffer limits headroom network recipes and classification rules are unmeasured Hengshi candidates. U03 remains deferred; no benchmark/device/GPU/source-code execution."
+}

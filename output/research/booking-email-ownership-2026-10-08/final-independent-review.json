@@ -1,0 +1,32 @@
+{
+  "control_review": "PASS",
+  "explanatory_source_pixel_review": "PASS",
+  "correction": 1,
+  "reviewer": "/root/review_directory_references_v1",
+  "findings_closed": [
+    "EO01",
+    "EO02",
+    "EO03"
+  ],
+  "manifest": "output/research/booking-email-ownership-2026-10-08/correction-1/review-inputs.json",
+  "manifest_sha256": "25207deee7d458111eea21cb3f21b596d3a1715f5c4646500d09050e89b6121b",
+  "catalogue_sha256": "39404b9cc2e25d2fc31b3a226078d001a8084e4f204c239c873bf054d4204ea5",
+  "html_sha256": "22575048ce58a2acc40b4169c465080ff16a95f0e2fd002b714fe6625e424c84",
+  "independent_evidence": {
+    "initial_final_matching_pairs": 29,
+    "other_initial_inputs_unchanged": 18,
+    "catalogue_prefix_bytes_unchanged": 68352,
+    "supplied_pixel_images_inspected": 5,
+    "source_links_and_fragments_resolve": 3,
+    "html_outside_insertion_unchanged": true
+  },
+  "producer_browser_evidence": "correction-1/visual-inspection.json",
+  "runtime_tests": "None; logical definition and explanatory document only",
+  "limits": [
+    "No email delivery or runtime enforcement proof",
+    "No full WCAG or physical-phone proof",
+    "No wire freeze, provider entitlement or application authority",
+    "Integrated Phase 1 review and founder acceptance remain required"
+  ],
+  "commits_pushes": false
+}

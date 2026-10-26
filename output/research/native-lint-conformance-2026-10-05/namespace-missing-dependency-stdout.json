@@ -1,0 +1,7 @@
+{ "diagnostics": [{"message": "React Hook useEffect has a missing dependency: 'value'","code": "react-hooks(exhaustive-deps)","severity": "error","url": "https://oxc.rs/docs/guide/usage/linter/rules/react/exhaustive-deps.html","help": "Either include it or remove the dependency array.","filename": "base-fixtures/namespace-missing-dependency.tsx","labels": [{"label": "useEffect uses `value` here","span": {"offset": 120,"length": 5,"line": 3,"column": 38}},{"span": {"offset": 131,"length": 2,"line": 3,"column": 49}}]}],
+              "number_of_files": 1,
+              "number_of_rules": 2,
+              "threads_count": 4,
+              "start_time": 0.0095881
+            }
+            

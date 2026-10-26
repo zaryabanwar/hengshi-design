@@ -1,0 +1,39 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "observed_at_utc": "2026-10-17T15:23:40.235161+00:00",
+  "scope": "Parsed-header schema/validator public boundary only, synthetic fixtures",
+  "interpreter": {
+    "path": "C:\\Python314\\python.exe",
+    "version": "3.14.5"
+  },
+  "capture_method": "unittest discovery/TextTestRunner under existing Python -B with existing jsonschema",
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "inputs": [
+    {
+      "path": "output/research/staff-token-crypto-profile-2026-10-17/staff-token-header.schema.json",
+      "bytes": 720,
+      "sha256": "33deaca2469f2db77c8a8837a99bef0e9e25bf951dab4f5eee35d92c9bb728c0"
+    },
+    {
+      "path": "output/research/staff-token-crypto-profile-2026-10-17/test_staff_token_header.py",
+      "bytes": 3384,
+      "sha256": "a399824225a8d3b7ae701ada3ee6df6fe7098ce8dea814011a9d7c34991630b8"
+    }
+  ],
+  "output": {
+    "path": "output/research/staff-token-crypto-profile-2026-10-17/test-output-v1.txt",
+    "bytes": 1455,
+    "sha256": "bc6b630c08b7549e2423db53719d96bceed11d304fe7880d77caa0e34db5e7cb"
+  },
+  "independent_review": "TODO",
+  "limits": [
+    "No signature/key generation, crypto verification, raw JSON/base64url/token parser, entropy, registered key store, clock/DB/HTTP/cookie/Entra or product boundary exercised.",
+    "An unissued all-zero kid and a lossy duplicate-header example can pass parsed shape deliberately; neither is a credential admission.",
+    "No application/schema-owner adoption, new dependency, provider, account, Git or Phase1 acceptance."
+  ]
+}

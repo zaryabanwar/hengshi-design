@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-05",
+  "status": "BLOCKED",
+  "action": "Remove only the founder-approved temporary metadata-cache/_cacache after archived-entry verification",
+  "founder_authority": "Approve verified cache cleanup",
+  "execution_result": "exec_command CreateProcess rejected before execution: blocked by policy",
+  "specific_reason": "No more specific reason supplied by command policy",
+  "source_removed": false,
+  "verified_files": 650,
+  "verified_source_bytes": 490626782,
+  "archive_sha256": "645DCB5A9B106CC03280DCAF08191A8B4091D3CF3C415960E51C61D0F637C327",
+  "resume_requirement": "Host execution policy must permit the already authorized bounded cleanup; do not bypass rejection or ask for duplicate human approval"
+}

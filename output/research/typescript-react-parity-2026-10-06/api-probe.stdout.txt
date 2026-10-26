@@ -1,0 +1,156 @@
+{
+  "version": "6.0.3",
+  "resolvedEntry": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\lib\\typescript.js",
+  "delegatedEntry": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\old\\lib\\typescript.js",
+  "scope": "TypeScript 6 API and in-process language service only; no native/editor LSP or build parity claim",
+  "results": [
+    {
+      "name": "valid-component",
+      "compiler": [],
+      "languageService": []
+    },
+    {
+      "name": "valid-async-component",
+      "compiler": [],
+      "languageService": []
+    },
+    {
+      "name": "invalid-prop",
+      "compiler": [
+        {
+          "code": 2322,
+          "category": 1,
+          "file": "invalid-prop/fixture.tsx",
+          "line": 2,
+          "column": 27,
+          "message": "Type 'number' is not assignable to type 'string'."
+        }
+      ],
+      "languageService": [
+        {
+          "code": 2322,
+          "category": 1,
+          "file": "invalid-prop/fixture.tsx",
+          "line": 2,
+          "column": 27,
+          "message": "Type 'number' is not assignable to type 'string'."
+        }
+      ]
+    },
+    {
+      "name": "missing-prop",
+      "compiler": [
+        {
+          "code": 2741,
+          "category": 1,
+          "file": "missing-prop/fixture.tsx",
+          "line": 2,
+          "column": 22,
+          "message": "Property 'title' is missing in type '{}' but required in type '{ title: string; }'."
+        }
+      ],
+      "languageService": [
+        {
+          "code": 2741,
+          "category": 1,
+          "file": "missing-prop/fixture.tsx",
+          "line": 2,
+          "column": 22,
+          "message": "Property 'title' is missing in type '{}' but required in type '{ title: string; }'."
+        }
+      ]
+    },
+    {
+      "name": "invalid-state-action",
+      "compiler": [
+        {
+          "code": 2345,
+          "category": 1,
+          "file": "invalid-state-action/fixture.tsx",
+          "line": 2,
+          "column": 85,
+          "message": "Argument of type 'string' is not assignable to parameter of type 'SetStateAction<number>'."
+        }
+      ],
+      "languageService": [
+        {
+          "code": 2345,
+          "category": 1,
+          "file": "invalid-state-action/fixture.tsx",
+          "line": 2,
+          "column": 85,
+          "message": "Argument of type 'string' is not assignable to parameter of type 'SetStateAction<number>'."
+        }
+      ]
+    },
+    {
+      "name": "invalid-ref",
+      "compiler": [
+        {
+          "code": 2322,
+          "category": 1,
+          "file": "invalid-ref/fixture.tsx",
+          "line": 2,
+          "column": 93,
+          "message": "Type 'RefObject<HTMLDivElement | null>' is not assignable to type 'Ref<HTMLButtonElement> | undefined'.\n  Type 'RefObject<HTMLDivElement | null>' is not assignable to type 'RefObject<HTMLButtonElement | null>'.\n    Type 'HTMLDivElement | null' is not assignable to type 'HTMLButtonElement | null'.\n      Type 'HTMLDivElement' is missing the following properties from type 'HTMLButtonElement': command, commandForElement, disabled, form, and 17 more."
+        }
+      ],
+      "languageService": [
+        {
+          "code": 2322,
+          "category": 1,
+          "file": "invalid-ref/fixture.tsx",
+          "line": 2,
+          "column": 93,
+          "message": "Type 'RefObject<HTMLDivElement | null>' is not assignable to type 'Ref<HTMLButtonElement> | undefined'.\n  Type 'RefObject<HTMLDivElement | null>' is not assignable to type 'RefObject<HTMLButtonElement | null>'.\n    Type 'HTMLDivElement | null' is not assignable to type 'HTMLButtonElement | null'.\n      Type 'HTMLDivElement' is missing the following properties from type 'HTMLButtonElement': command, commandForElement, disabled, form, and 17 more."
+        }
+      ]
+    },
+    {
+      "name": "invalid-event-property",
+      "compiler": [
+        {
+          "code": 2339,
+          "category": 1,
+          "file": "invalid-event-property/fixture.tsx",
+          "line": 1,
+          "column": 82,
+          "message": "Property 'nonexistentField' does not exist on type 'EventTarget & HTMLButtonElement'."
+        }
+      ],
+      "languageService": [
+        {
+          "code": 2339,
+          "category": 1,
+          "file": "invalid-event-property/fixture.tsx",
+          "line": 1,
+          "column": 82,
+          "message": "Property 'nonexistentField' does not exist on type 'EventTarget & HTMLButtonElement'."
+        }
+      ]
+    },
+    {
+      "name": "invalid-dom-root",
+      "compiler": [
+        {
+          "code": 2345,
+          "category": 1,
+          "file": "invalid-dom-root/fixture.tsx",
+          "line": 2,
+          "column": 12,
+          "message": "Argument of type 'string' is not assignable to parameter of type 'Container'."
+        }
+      ],
+      "languageService": [
+        {
+          "code": 2345,
+          "category": 1,
+          "file": "invalid-dom-root/fixture.tsx",
+          "line": 2,
+          "column": 12,
+          "message": "Argument of type 'string' is not assignable to parameter of type 'Container'."
+        }
+      ]
+    }
+  ]
+}

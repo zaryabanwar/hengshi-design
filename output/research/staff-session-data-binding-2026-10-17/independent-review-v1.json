@@ -1,0 +1,147 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "reviewed_at_utc": "2026-10-24T06:19:27.263621+00:00",
+  "reviewer": "Independent reviewer /root/review_archive_candidate_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "PASS",
+  "scope": "Frozen13-input DE06/07 logical staff-field/source binding and candidate control-revision event map only; no physical schema/migration, period adoption, full protocol/security or runtime acceptance.",
+  "packet": {
+    "path": "output/research/staff-session-data-binding-2026-10-17/review-inputs-v1.json",
+    "bytes": 2891,
+    "sha256": "ce54231a42f5a552b8c19b7876376f2c8c8943562fc82dee96321eb049c36963",
+    "input_count": 13,
+    "verified_before_review": 13,
+    "verified_again_before_receipt": 13,
+    "inputs": [
+      {
+        "path": "AGENTS.md",
+        "bytes": 8983,
+        "sha256": "f31b4bb42f954995cc12358284a992fde46ade98980238043c149f692b6474a5",
+        "resolved_path": "AGENTS.md",
+        "verified": true
+      },
+      {
+        "path": ".specify/memory/constitution.md",
+        "bytes": 16234,
+        "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+        "resolved_path": ".specify/memory/constitution.md",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-foundation/01-product-requirements.md",
+        "bytes": 70783,
+        "sha256": "4db9d504695e7791705c41fe70fd0aea0467338d95acb5b6732bf6927893ac2e",
+        "resolved_path": "docs/phase-1-foundation/01-product-requirements.md",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+        "bytes": 81977,
+        "sha256": "afc04fa394fd09da765b857e9ef14a46374b66aec7e4bd01d0476eb2e49bcfe9",
+        "resolved_path": "output/research/architecture-owner-navigation-2026-10-17/DATA_CONTRACT.before.md",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/data-entities.csv",
+        "bytes": 9475,
+        "sha256": "35811e50a8ac1f64471c4ce350d11981e7abe18b6b396dde18337fbdd3620764",
+        "resolved_path": "docs/phase-1-architecture/contracts/data-entities.csv",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/STAFF_SESSION_PROTOCOL.md",
+        "bytes": 31953,
+        "sha256": "be8ba8c0381b257c0865a20b0352a86f72223d0d45fe2679d445b775d3ebb92b",
+        "resolved_path": "docs/phase-1-architecture/contracts/STAFF_SESSION_PROTOCOL.md",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/staff-session-control.schema.json",
+        "bytes": 6329,
+        "sha256": "ed6b7d7f564289a9f53aa939d1c698ea0a60309fdf21b3ddb3c9def4953f12ef",
+        "resolved_path": "docs/phase-1-architecture/contracts/staff-session-control.schema.json",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+        "bytes": 86672,
+        "sha256": "839252f956b5f6f95664fd19732cdc590c194023699d4728f00498adf04259a2",
+        "resolved_path": "output/research/privacy-purpose-bindings-2026-10-17/SECURITY_PRIVACY_CONTRACT.before.md",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/data-classification.csv",
+        "bytes": 5615,
+        "sha256": "c8793ebfb401178b4175f0f6c7b9cfb14edcd606f370090883cbe2be94f0cd6e",
+        "resolved_path": "docs/phase-1-architecture/contracts/data-classification.csv",
+        "verified": true
+      },
+      {
+        "path": "output/research/staff-session-controls-2026-10-17/correction-1/independent-review-controls-correction-v1.json",
+        "bytes": 12269,
+        "sha256": "3c1b73094d9acab523c1ab89abe78c5b29a6c8026f7349d7588dce732456b200",
+        "resolved_path": "output/research/staff-session-controls-2026-10-17/correction-1/independent-review-controls-correction-v1.json",
+        "verified": true
+      },
+      {
+        "path": "output/research/staff-session-controls-2026-10-17/canonical-binding/independent-review-canonical-controls-v1.json",
+        "bytes": 13548,
+        "sha256": "fe215c47150f5e0c6752679d4415f9a0267749661f03c1c126a88b312bca4aec",
+        "resolved_path": "output/research/staff-session-controls-2026-10-17/canonical-binding/independent-review-canonical-controls-v1.json",
+        "verified": true
+      },
+      {
+        "path": "output/research/staff-session-data-binding-2026-10-17/DATA_CONTRACT.md.before",
+        "bytes": 72908,
+        "sha256": "05cc15ecd5937b8ac7fda2b63334ef39d43084a966885a521cecb31366022de9",
+        "resolved_path": "output/research/staff-session-data-binding-2026-10-17/DATA_CONTRACT.md.before",
+        "verified": true
+      },
+      {
+        "path": "output/research/staff-session-data-binding-2026-10-17/data-entities.csv.before",
+        "bytes": 8956,
+        "sha256": "ec55f41329d521c36014e8e77b863013a7c0a24a6917706767f59f9227525e64",
+        "resolved_path": "output/research/staff-session-data-binding-2026-10-17/data-entities.csv.before",
+        "verified": true
+      }
+    ]
+  },
+  "snapshot_bindings": {
+    "path": "output/research/staff-session-data-binding-2026-10-17/source-snapshot-bindings-v1.json",
+    "bytes": 820,
+    "sha256": "54cfad100185e2e9377f23986b835576216c37d5d9f10cf085f298daeefa76ec",
+    "binding_count": 2,
+    "scope": "Exact original DATA and SECURITY bytes used via explicit aliases; current later changes not silently substituted or inherited."
+  },
+  "findings": [],
+  "actionable_finding_count": 0,
+  "assessments": [
+    {
+      "evidence": "DATA_CONTRACT frozen snapshot:158-243; data-entities.csv:7-8; STAFF_SESSION_PROTOCOL.md:35-61,68-149,239-397",
+      "assessment": "Diff adds only staff binding section and changes existing DE06/07 rows; no new entity family. Fields agree with owner: independently allocated principal/session/current-token IDs, current principal epoch/source freshness, original issued/absolute deadline, qualifying-admission activity, derived idle boundary, current protected CSRF group, one current and at most one immediate-prior recovery record. Proposed PostgreSQL authority/derived Redis reflect owning protocol proposal, not new storage installation."
+    },
+    {
+      "evidence": "DATA_CONTRACT frozen snapshot staff principal/session binding, control revision and passage-of-time paragraphs; STAFF_SESSION_PROTOCOL.md:260-277",
+      "assessment": "Candidate initialrevision1 advances only for committed activity-anchor/successor/authorized-CSRF/terminal-authority changes, not reads/replay/no-op/failed transitions. Time alone need not write revision, and revision cannot certify unexpired authority. Overflow refuses rather than wraps/reuses; source/principal epoch mismatch cannot be caught up through renewal. Physical events/guard/clock/overflow recovery remain explicitly held."
+    },
+    {
+      "evidence": "DATA_CONTRACT frozen snapshot staff binding retention/copy paragraphs; frozen SECURITY_PRIVACY_CONTRACT staff and audit/secret class recommendations; data-classification.csv",
+      "assessment": "Opaque IDs remain identifying, minimal staff/audit/credential subpurposes stay distinct. Neither90day chat retention nor8hour validity silently selects staff/audit/backup periods. Current/prior retirement requires original recovery, known settlement and approved disposition; exact basis/notice/ownership/copies/cleanup remain pending. No raw JWT log/ordinary record or blanket retention exception is introduced."
+    },
+    {
+      "evidence": "DATA_CONTRACT frozen snapshot final binding paragraphs; AGENTS.md testing/workflow rules; prior corrected/canonical control receipts",
+      "assessment": "Current guards and final output, all competing writers, cross-worker limits and actual concurrency/request/storage behavior remain separately qualified implementation obligations. Prior logical/canonical PASS is not inherited data adoption. Tests are not fabricated for this prose/CSV translation."
+    }
+  ],
+  "review_method": [
+    "Verified13 hashes before/after through2 explicit aliases, compared before snapshots to frozen DATA and current entity CSV, read owner/schema/foundation/classification/security and bounded prior receipts.",
+    "Read-only definitions review; no tests, application/provider/network/browser/Figma/Git actions or producer/canonical edits. Only this receipt written."
+  ],
+  "limits": [
+    "Current later DATA/SECURITY edits outside frozen scope; no silent review drift.",
+    "No selected physical schema, migration, actual retention/legal clearance, cryptographic/session implementation, runtime security or full feature/integratedPhase1 approval.",
+    "No capacity error. DOING is not task DONE or commit."
+  ]
+}

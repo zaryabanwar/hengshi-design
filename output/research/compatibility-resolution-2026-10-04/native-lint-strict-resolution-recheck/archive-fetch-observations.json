@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "production_selection": false,
+  "receipt_sha256": "4502e1d0ce6814968b9c12435f726d173ca5bc520e3ac8347315169f7fdde1ac",
+  "debug_log_observations": [
+    {
+      "path": "output/research/compatibility-resolution-2026-10-04/native-lint-strict-resolution-recheck/metadata-cache/_logs/2026-10-04T13_32_58_384Z-debug-0.log",
+      "sha256": "c26b23762ed0a5fa4c80f7ec2fa8c37a3807748dc82daf58d10db791aaa7b345",
+      "successful_tarball_fetch_urls": [
+        "https://registry.npmjs.org/@tailwindcss/oxide-wasm32-wasi/-/oxide-wasm32-wasi-4.3.3.tgz"
+      ]
+    }
+  ],
+  "limits": [
+    "npm fetched the Tailwind WASI archive to obtain bundled-package inventory; this was not metadata-only HTTP traffic.",
+    "No node_modules was created, no lifecycle script ran and no dependency/package code was installed or executed by this lock-only run.",
+    "Archive fetching alone establishes no source-build provenance or licence clearance."
+  ]
+}

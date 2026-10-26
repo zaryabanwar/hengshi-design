@@ -1,0 +1,175 @@
+{
+  "schema_version": "bounded-review-inputs-v1",
+  "scope": "D077 current registry/released-artifact identity recheck only. Five stable-tag/highest-stable observations, current-vs-prior package metadata, preserved stdlib archive SRI and loader identity, Context7 reference limitation, unchanged earlier canonical bytes/exception conditions. No new extraction, compiler/build/browser/runtime rerun, complete graph selection or adoption.",
+  "producer": "root",
+  "inputs": [
+    {
+      "source_path": "AGENTS.md",
+      "snapshot_path": "inputs/00-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source_path": ".specify/memory/constitution.md",
+      "snapshot_path": "inputs/01-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source_path": "DECISIONS.md",
+      "snapshot_path": "inputs/02-DECISIONS.md",
+      "bytes": 93480,
+      "sha256": "2576a93a6e4028e8931454588465cb2dd3675275be778259dbd61ee4f87e26d1"
+    },
+    {
+      "source_path": "docs/phase-1-compatibility/THREE_STABLE_EXCEPTION_PROPOSAL.md",
+      "snapshot_path": "inputs/03-THREE_STABLE_EXCEPTION_PROPOSAL.md",
+      "bytes": 4853,
+      "sha256": "d896bf0ff09c7e6b66f2d8c2d6c88c5fb3ad183cb2af9f3eb10a4a827359f525"
+    },
+    {
+      "source_path": "docs/phase-1-compatibility/refresh-evidence-2026-10-04.md",
+      "snapshot_path": "inputs/04-refresh-evidence-2026-10-04.md",
+      "bytes": 113602,
+      "sha256": "127e3dd62e87f6d0140b49c5796b5f1a5fa9f00211736740e3871e6f1036efb6"
+    },
+    {
+      "source_path": "output/research/renderer-stable-recheck-2026-10-12/before/THREE_STABLE_EXCEPTION_PROPOSAL.md",
+      "snapshot_path": "inputs/05-THREE_STABLE_EXCEPTION_PROPOSAL.md",
+      "bytes": 4310,
+      "sha256": "86789dce3447024c62dbedce1967f2f8878b7c2c942065b3d42037bbbd54dfc0"
+    },
+    {
+      "source_path": "output/research/renderer-stable-recheck-2026-10-12/before/refresh-evidence-2026-10-04.md",
+      "snapshot_path": "inputs/06-refresh-evidence-2026-10-04.md",
+      "bytes": 112048,
+      "sha256": "e7eadbd5b9dd14246d4f1dfa2b4159b1294dd51bcea094b035eff9f552d67cd1"
+    },
+    {
+      "source_path": "output/research/renderer-stable-recheck-2026-10-12/observations.json",
+      "snapshot_path": "inputs/07-observations.json",
+      "bytes": 10695,
+      "sha256": "ba15c56a2ed6b46d2d4eab9ca7e0ceec0345cda1586d7258e1b3ad18ac474d3b"
+    },
+    {
+      "source_path": "output/research/renderer-stable-recheck-2026-10-12/published-identity-comparison.json",
+      "snapshot_path": "inputs/08-published-identity-comparison.json",
+      "bytes": 3579,
+      "sha256": "404994876acea92f343d3134bbf1cba1addb9873416e3b261002595ebd520ddd"
+    },
+    {
+      "source_path": "output/research/renderer-stable-recheck-2026-10-12/context7-results.json",
+      "snapshot_path": "inputs/09-context7-results.json",
+      "bytes": 3915,
+      "sha256": "7f06bd612fad9e5d75f3162ff8846322440880bab4c419668931b2cab78e4004"
+    },
+    {
+      "source_path": "output/research/three-upstream-recheck-2026-10-07/observations.json",
+      "snapshot_path": "inputs/10-observations.json",
+      "bytes": 6111,
+      "sha256": "5e2add8fbbe77df9117e697a5310dd1ba0d3f3f553ae7fb2ca29b46b93283167"
+    },
+    {
+      "source_path": "output/research/three-upstream-recheck-2026-10-07/source-comparison.json",
+      "snapshot_path": "inputs/11-source-comparison.json",
+      "bytes": 1088,
+      "sha256": "0843ee2589c16ed8efa1405740879edaf17aa56a4ff05285b723f2701513f1cf"
+    },
+    {
+      "source_path": "output/research/three-upstream-recheck-2026-10-07/three-stdlib-2.36.1.tgz",
+      "snapshot_path": "inputs/12-three-stdlib-2.36.1.tgz",
+      "bytes": 4955095,
+      "sha256": "e246431950e1f73bad0f217ab928f1e66b08fc4e003e50ed5ce6817a8150c0cc"
+    },
+    {
+      "source_path": "output/research/three-upstream-recheck-2026-10-07/published-SVGLoader.d.ts",
+      "snapshot_path": "inputs/13-published-SVGLoader.d.ts",
+      "bytes": 1460,
+      "sha256": "5a8aa1adc0a8d6cf8a106fd8cc422e28ca130292d452b75d17678d24ab31626b"
+    },
+    {
+      "source_path": "output/research/three-upstream-recheck-2026-10-07/published-TGALoader.d.ts",
+      "snapshot_path": "inputs/14-published-TGALoader.d.ts",
+      "bytes": 494,
+      "sha256": "f856d3559afde2a5e3f0e4e877d0397fe673eea71ac3683abb7c6cef429c192d"
+    },
+    {
+      "source_path": "docs/phase-1-compatibility/reviews/three-stable-exception-v1-2026-10-07.md",
+      "snapshot_path": "inputs/15-three-stable-exception-v1-2026-10-07.md",
+      "bytes": 9478,
+      "sha256": "c6747366e454e37985433563208084626e8122351afb29fce9f51988635fcd10"
+    },
+    {
+      "source_path": "docs/phase-1-compatibility/reviews/frontend-candidate-declaration-gate-v1-2026-10-06.md",
+      "snapshot_path": "inputs/16-frontend-candidate-declaration-gate-v1-2026-10-06.md",
+      "bytes": 6994,
+      "sha256": "1013a8ed5689eaf67a294c4da9cfeb15a17abfafe3bcc360eadbcddabcf38df0"
+    },
+    {
+      "source_path": "docs/phase-1-compatibility/reviews/frontend-three-remedy-evaluation-v1-2026-10-06.md",
+      "snapshot_path": "inputs/17-frontend-three-remedy-evaluation-v1-2026-10-06.md",
+      "bytes": 8178,
+      "sha256": "d6e8f8c65394986fd4a74550e728d065e14583566c10b6c259c2bfad8d07269f"
+    },
+    {
+      "source_path": "output/research/renderer-stable-recheck-2026-10-12/three.registry.json.gz",
+      "snapshot_path": "inputs/18-three.registry.json.gz",
+      "bytes": 120549,
+      "sha256": "a904a82715c6630c721f9ed78fb64b24bf989c10f4c9823e6fc11642be799f69"
+    },
+    {
+      "source_path": "output/research/renderer-stable-recheck-2026-10-12/types-three.registry.json.gz",
+      "snapshot_path": "inputs/19-types-three.registry.json.gz",
+      "bytes": 110106,
+      "sha256": "1b9bae905f5d9dc5e5b04ba33fa60846962842fa62cf3207120ec156a3858d88"
+    },
+    {
+      "source_path": "output/research/renderer-stable-recheck-2026-10-12/three-stdlib.registry.json.gz",
+      "snapshot_path": "inputs/20-three-stdlib.registry.json.gz",
+      "bytes": 127047,
+      "sha256": "42dbaa978a5d065128d59c126e7cc1e1d1750df1717ca6c546a3fb9e73665467"
+    },
+    {
+      "source_path": "output/research/renderer-stable-recheck-2026-10-12/react-three-drei.registry.json.gz",
+      "snapshot_path": "inputs/21-react-three-drei.registry.json.gz",
+      "bytes": 522096,
+      "sha256": "36a9673a2b807f7775c78beabe88a440eb5123af4a3b6965619b9d9ad70a078d"
+    },
+    {
+      "source_path": "output/research/renderer-stable-recheck-2026-10-12/react-three-fiber.registry.json.gz",
+      "snapshot_path": "inputs/22-react-three-fiber.registry.json.gz",
+      "bytes": 181309,
+      "sha256": "36999560bd12091e8a5d2aadf8513491445f83677c4aed23b42f6ccbdaacd715"
+    },
+    {
+      "source_path": "output/research/three-upstream-recheck-2026-10-07/three.registry.json",
+      "snapshot_path": "inputs/23-three.registry.json",
+      "bytes": 941885,
+      "sha256": "c07b14adec2d9b057059a198892cd10e177fa945500c8d2365e5a4e09b180e7c"
+    },
+    {
+      "source_path": "output/research/three-upstream-recheck-2026-10-07/types-three.registry.json",
+      "snapshot_path": "inputs/24-types-three.registry.json",
+      "bytes": 655074,
+      "sha256": "395e77382ccff1b0e8ab7f27e6def6af2e661e2c6bd94d9a31e0a9b880f4fd5b"
+    },
+    {
+      "source_path": "output/research/three-upstream-recheck-2026-10-07/three-stdlib.registry.json",
+      "snapshot_path": "inputs/25-three-stdlib.registry.json",
+      "bytes": 639798,
+      "sha256": "cd9dfbea665a78e9ccdc2c1d184dbbc28c13afd1bc3ef6a5cf5b083b7a4b9827"
+    },
+    {
+      "source_path": "output/research/three-upstream-recheck-2026-10-07/react-three-drei.registry.json",
+      "snapshot_path": "inputs/26-react-three-drei.registry.json",
+      "bytes": 2793019,
+      "sha256": "79949b97392f5e67d4408692fd20b91096c8775e3a5c2782a2d587a82b951fb4"
+    },
+    {
+      "source_path": "output/research/three-upstream-recheck-2026-10-07/react-three-fiber.registry.json",
+      "snapshot_path": "inputs/27-react-three-fiber.registry.json",
+      "bytes": 1524618,
+      "sha256": "0e004e7de370d6dc3c2a39da7f1556517068873eb4f592d51c42eb7eaaca8389"
+    }
+  ]
+}

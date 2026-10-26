@@ -1,0 +1,1746 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "scope": "Producer-only proposed role reachability on the evaluated exact Windows graph; no selected production packaging",
+  "report_sha256": "e81b7570efc6903d4074151a61cfdca9060c02f5da59236bee353eddb1831462",
+  "analysis_packaging_version": "26.2",
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.14.5",
+    "os_name": "nt",
+    "platform_machine": "AMD64",
+    "platform_release": "11",
+    "platform_system": "Windows",
+    "platform_version": "10.0.26300",
+    "python_full_version": "3.14.5",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.14",
+    "sys_platform": "win32"
+  },
+  "proposed_root_roles": {
+    "api_families": [
+      "fastapi",
+      "uvicorn[standard]",
+      "sqlalchemy",
+      "psycopg[binary]",
+      "bcrypt",
+      "pyjwt[crypto]",
+      "email-validator",
+      "python-dotenv"
+    ],
+    "conditional_identity_evaluation": [
+      "authlib",
+      "httpx2"
+    ],
+    "migration_tooling": [
+      "alembic"
+    ],
+    "test_tooling": [
+      "pytest",
+      "pytest-asyncio",
+      "httpx"
+    ]
+  },
+  "profiles": {
+    "api_base_candidate": {
+      "direct_roots": [
+        "bcrypt",
+        "email-validator",
+        "fastapi",
+        "psycopg",
+        "pyjwt",
+        "python-dotenv",
+        "sqlalchemy",
+        "uvicorn"
+      ],
+      "package_count": 30,
+      "packages": [
+        "annotated-doc",
+        "annotated-types",
+        "anyio",
+        "bcrypt",
+        "cffi",
+        "click",
+        "cryptography",
+        "dnspython",
+        "email-validator",
+        "fastapi",
+        "h11",
+        "httptools",
+        "idna",
+        "opentelemetry-api",
+        "psycopg",
+        "psycopg-binary",
+        "pycparser",
+        "pydantic",
+        "pydantic-core",
+        "pyjwt",
+        "python-dotenv",
+        "pyyaml",
+        "sqlalchemy",
+        "starlette",
+        "typing-extensions",
+        "typing-inspection",
+        "tzdata",
+        "uvicorn",
+        "watchfiles",
+        "websockets"
+      ],
+      "active_edges": [
+        [
+          "anyio",
+          "idna",
+          "idna>=2.8"
+        ],
+        [
+          "anyio",
+          "typing-extensions",
+          "typing_extensions>=4.16.0; python_version < \"3.15\""
+        ],
+        [
+          "cffi",
+          "pycparser",
+          "pycparser; implementation_name != \"PyPy\""
+        ],
+        [
+          "cryptography",
+          "cffi",
+          "cffi>=2.0.0 ; platform_python_implementation != 'PyPy'"
+        ],
+        [
+          "email-validator",
+          "dnspython",
+          "dnspython>=2.0.0"
+        ],
+        [
+          "email-validator",
+          "idna",
+          "idna>=2.0.0"
+        ],
+        [
+          "fastapi",
+          "annotated-doc",
+          "annotated-doc>=0.0.2"
+        ],
+        [
+          "fastapi",
+          "opentelemetry-api",
+          "opentelemetry-api>=1.44.0"
+        ],
+        [
+          "fastapi",
+          "pydantic",
+          "pydantic>=2.9.0"
+        ],
+        [
+          "fastapi",
+          "starlette",
+          "starlette>=0.46.0"
+        ],
+        [
+          "fastapi",
+          "typing-extensions",
+          "typing-extensions>=4.8.0"
+        ],
+        [
+          "fastapi",
+          "typing-inspection",
+          "typing-inspection>=0.4.2"
+        ],
+        [
+          "opentelemetry-api",
+          "typing-extensions",
+          "typing-extensions>=4.5.0"
+        ],
+        [
+          "psycopg",
+          "psycopg-binary",
+          "psycopg-binary==3.3.6; implementation_name != \"pypy\" and extra == \"binary\""
+        ],
+        [
+          "psycopg",
+          "tzdata",
+          "tzdata; sys_platform == \"win32\""
+        ],
+        [
+          "pydantic",
+          "annotated-types",
+          "annotated-types>=0.6.0"
+        ],
+        [
+          "pydantic",
+          "pydantic-core",
+          "pydantic-core==2.50.0"
+        ],
+        [
+          "pydantic",
+          "typing-extensions",
+          "typing-extensions>=4.16.0"
+        ],
+        [
+          "pydantic",
+          "typing-inspection",
+          "typing-inspection>=0.4.4"
+        ],
+        [
+          "pydantic-core",
+          "typing-extensions",
+          "typing-extensions>=4.16.0"
+        ],
+        [
+          "pyjwt",
+          "cryptography",
+          "cryptography>=3.4.0; extra == \"crypto\""
+        ],
+        [
+          "sqlalchemy",
+          "typing-extensions",
+          "typing-extensions>=4.6.0"
+        ],
+        [
+          "starlette",
+          "anyio",
+          "anyio<5,>=4.0.0"
+        ],
+        [
+          "typing-inspection",
+          "typing-extensions",
+          "typing-extensions>=4.15.0"
+        ],
+        [
+          "uvicorn",
+          "click",
+          "click>=7.0"
+        ],
+        [
+          "uvicorn",
+          "h11",
+          "h11>=0.8"
+        ],
+        [
+          "uvicorn",
+          "httptools",
+          "httptools>=0.8.0; extra == 'standard'"
+        ],
+        [
+          "uvicorn",
+          "python-dotenv",
+          "python-dotenv>=0.13; extra == 'standard'"
+        ],
+        [
+          "uvicorn",
+          "pyyaml",
+          "pyyaml>=5.1; extra == 'standard'"
+        ],
+        [
+          "uvicorn",
+          "watchfiles",
+          "watchfiles>=0.20; extra == 'standard'"
+        ],
+        [
+          "uvicorn",
+          "websockets",
+          "websockets>=13.0; extra == 'standard'"
+        ],
+        [
+          "watchfiles",
+          "anyio",
+          "anyio>=3.0.0"
+        ]
+      ],
+      "extras": {
+        "annotated-doc": [],
+        "annotated-types": [],
+        "anyio": [],
+        "bcrypt": [],
+        "cffi": [],
+        "click": [],
+        "cryptography": [],
+        "dnspython": [],
+        "email-validator": [],
+        "fastapi": [],
+        "h11": [],
+        "httptools": [],
+        "idna": [],
+        "opentelemetry-api": [],
+        "psycopg": [
+          "binary"
+        ],
+        "psycopg-binary": [],
+        "pycparser": [],
+        "pydantic": [],
+        "pydantic-core": [],
+        "pyjwt": [
+          "crypto"
+        ],
+        "python-dotenv": [],
+        "pyyaml": [],
+        "sqlalchemy": [],
+        "starlette": [],
+        "typing-extensions": [],
+        "typing-inspection": [],
+        "tzdata": [],
+        "uvicorn": [
+          "standard"
+        ],
+        "watchfiles": [],
+        "websockets": []
+      }
+    },
+    "api_with_identity_candidate": {
+      "direct_roots": [
+        "authlib",
+        "bcrypt",
+        "email-validator",
+        "fastapi",
+        "httpx2",
+        "psycopg",
+        "pyjwt",
+        "python-dotenv",
+        "sqlalchemy",
+        "uvicorn"
+      ],
+      "package_count": 35,
+      "packages": [
+        "annotated-doc",
+        "annotated-types",
+        "anyio",
+        "authlib",
+        "bcrypt",
+        "cffi",
+        "click",
+        "cryptography",
+        "dnspython",
+        "email-validator",
+        "fastapi",
+        "h11",
+        "httpcore2",
+        "httptools",
+        "httpx2",
+        "idna",
+        "joserfc",
+        "opentelemetry-api",
+        "psycopg",
+        "psycopg-binary",
+        "pycparser",
+        "pydantic",
+        "pydantic-core",
+        "pyjwt",
+        "python-dotenv",
+        "pyyaml",
+        "sqlalchemy",
+        "starlette",
+        "truststore",
+        "typing-extensions",
+        "typing-inspection",
+        "tzdata",
+        "uvicorn",
+        "watchfiles",
+        "websockets"
+      ],
+      "active_edges": [
+        [
+          "anyio",
+          "idna",
+          "idna>=2.8"
+        ],
+        [
+          "anyio",
+          "typing-extensions",
+          "typing_extensions>=4.16.0; python_version < \"3.15\""
+        ],
+        [
+          "authlib",
+          "cryptography",
+          "cryptography>=45.0.1"
+        ],
+        [
+          "authlib",
+          "joserfc",
+          "joserfc>=1.6.1"
+        ],
+        [
+          "cffi",
+          "pycparser",
+          "pycparser; implementation_name != \"PyPy\""
+        ],
+        [
+          "cryptography",
+          "cffi",
+          "cffi>=2.0.0 ; platform_python_implementation != 'PyPy'"
+        ],
+        [
+          "email-validator",
+          "dnspython",
+          "dnspython>=2.0.0"
+        ],
+        [
+          "email-validator",
+          "idna",
+          "idna>=2.0.0"
+        ],
+        [
+          "fastapi",
+          "annotated-doc",
+          "annotated-doc>=0.0.2"
+        ],
+        [
+          "fastapi",
+          "opentelemetry-api",
+          "opentelemetry-api>=1.44.0"
+        ],
+        [
+          "fastapi",
+          "pydantic",
+          "pydantic>=2.9.0"
+        ],
+        [
+          "fastapi",
+          "starlette",
+          "starlette>=0.46.0"
+        ],
+        [
+          "fastapi",
+          "typing-extensions",
+          "typing-extensions>=4.8.0"
+        ],
+        [
+          "fastapi",
+          "typing-inspection",
+          "typing-inspection>=0.4.2"
+        ],
+        [
+          "httpcore2",
+          "h11",
+          "h11>=0.16"
+        ],
+        [
+          "httpcore2",
+          "truststore",
+          "truststore>=0.10"
+        ],
+        [
+          "httpx2",
+          "anyio",
+          "anyio>=4.10; sys_platform != 'emscripten'"
+        ],
+        [
+          "httpx2",
+          "httpcore2",
+          "httpcore2==2.13.1; sys_platform != 'emscripten'"
+        ],
+        [
+          "httpx2",
+          "idna",
+          "idna>=3.18"
+        ],
+        [
+          "httpx2",
+          "truststore",
+          "truststore>=0.10; sys_platform != 'emscripten'"
+        ],
+        [
+          "joserfc",
+          "cryptography",
+          "cryptography>=45.0.1"
+        ],
+        [
+          "opentelemetry-api",
+          "typing-extensions",
+          "typing-extensions>=4.5.0"
+        ],
+        [
+          "psycopg",
+          "psycopg-binary",
+          "psycopg-binary==3.3.6; implementation_name != \"pypy\" and extra == \"binary\""
+        ],
+        [
+          "psycopg",
+          "tzdata",
+          "tzdata; sys_platform == \"win32\""
+        ],
+        [
+          "pydantic",
+          "annotated-types",
+          "annotated-types>=0.6.0"
+        ],
+        [
+          "pydantic",
+          "pydantic-core",
+          "pydantic-core==2.50.0"
+        ],
+        [
+          "pydantic",
+          "typing-extensions",
+          "typing-extensions>=4.16.0"
+        ],
+        [
+          "pydantic",
+          "typing-inspection",
+          "typing-inspection>=0.4.4"
+        ],
+        [
+          "pydantic-core",
+          "typing-extensions",
+          "typing-extensions>=4.16.0"
+        ],
+        [
+          "pyjwt",
+          "cryptography",
+          "cryptography>=3.4.0; extra == \"crypto\""
+        ],
+        [
+          "sqlalchemy",
+          "typing-extensions",
+          "typing-extensions>=4.6.0"
+        ],
+        [
+          "starlette",
+          "anyio",
+          "anyio<5,>=4.0.0"
+        ],
+        [
+          "typing-inspection",
+          "typing-extensions",
+          "typing-extensions>=4.15.0"
+        ],
+        [
+          "uvicorn",
+          "click",
+          "click>=7.0"
+        ],
+        [
+          "uvicorn",
+          "h11",
+          "h11>=0.8"
+        ],
+        [
+          "uvicorn",
+          "httptools",
+          "httptools>=0.8.0; extra == 'standard'"
+        ],
+        [
+          "uvicorn",
+          "python-dotenv",
+          "python-dotenv>=0.13; extra == 'standard'"
+        ],
+        [
+          "uvicorn",
+          "pyyaml",
+          "pyyaml>=5.1; extra == 'standard'"
+        ],
+        [
+          "uvicorn",
+          "watchfiles",
+          "watchfiles>=0.20; extra == 'standard'"
+        ],
+        [
+          "uvicorn",
+          "websockets",
+          "websockets>=13.0; extra == 'standard'"
+        ],
+        [
+          "watchfiles",
+          "anyio",
+          "anyio>=3.0.0"
+        ]
+      ],
+      "extras": {
+        "annotated-doc": [],
+        "annotated-types": [],
+        "anyio": [],
+        "authlib": [],
+        "bcrypt": [],
+        "cffi": [],
+        "click": [],
+        "cryptography": [],
+        "dnspython": [],
+        "email-validator": [],
+        "fastapi": [],
+        "h11": [],
+        "httpcore2": [],
+        "httptools": [],
+        "httpx2": [],
+        "idna": [],
+        "joserfc": [],
+        "opentelemetry-api": [],
+        "psycopg": [
+          "binary"
+        ],
+        "psycopg-binary": [],
+        "pycparser": [],
+        "pydantic": [],
+        "pydantic-core": [],
+        "pyjwt": [
+          "crypto"
+        ],
+        "python-dotenv": [],
+        "pyyaml": [],
+        "sqlalchemy": [],
+        "starlette": [],
+        "truststore": [],
+        "typing-extensions": [],
+        "typing-inspection": [],
+        "tzdata": [],
+        "uvicorn": [
+          "standard"
+        ],
+        "watchfiles": [],
+        "websockets": []
+      }
+    },
+    "migration_tool_candidate": {
+      "direct_roots": [
+        "alembic"
+      ],
+      "package_count": 5,
+      "packages": [
+        "alembic",
+        "mako",
+        "markupsafe",
+        "sqlalchemy",
+        "typing-extensions"
+      ],
+      "active_edges": [
+        [
+          "alembic",
+          "mako",
+          "Mako"
+        ],
+        [
+          "alembic",
+          "sqlalchemy",
+          "SQLAlchemy>=2.0"
+        ],
+        [
+          "alembic",
+          "typing-extensions",
+          "typing-extensions>=4.12"
+        ],
+        [
+          "mako",
+          "markupsafe",
+          "MarkupSafe>=2.0"
+        ],
+        [
+          "sqlalchemy",
+          "typing-extensions",
+          "typing-extensions>=4.6.0"
+        ]
+      ],
+      "extras": {
+        "alembic": [],
+        "mako": [],
+        "markupsafe": [],
+        "sqlalchemy": [],
+        "typing-extensions": []
+      }
+    },
+    "combined_qualification_basis": {
+      "direct_roots": [
+        "alembic",
+        "authlib",
+        "bcrypt",
+        "email-validator",
+        "fastapi",
+        "httpx",
+        "httpx2",
+        "psycopg",
+        "pyjwt",
+        "pytest",
+        "pytest-asyncio",
+        "python-dotenv",
+        "sqlalchemy",
+        "uvicorn"
+      ],
+      "package_count": 48,
+      "packages": [
+        "alembic",
+        "annotated-doc",
+        "annotated-types",
+        "anyio",
+        "authlib",
+        "bcrypt",
+        "certifi",
+        "cffi",
+        "click",
+        "colorama",
+        "cryptography",
+        "dnspython",
+        "email-validator",
+        "fastapi",
+        "h11",
+        "httpcore",
+        "httpcore2",
+        "httptools",
+        "httpx",
+        "httpx2",
+        "idna",
+        "iniconfig",
+        "joserfc",
+        "mako",
+        "markupsafe",
+        "opentelemetry-api",
+        "packaging",
+        "pluggy",
+        "psycopg",
+        "psycopg-binary",
+        "pycparser",
+        "pydantic",
+        "pydantic-core",
+        "pygments",
+        "pyjwt",
+        "pytest",
+        "pytest-asyncio",
+        "python-dotenv",
+        "pyyaml",
+        "sqlalchemy",
+        "starlette",
+        "truststore",
+        "typing-extensions",
+        "typing-inspection",
+        "tzdata",
+        "uvicorn",
+        "watchfiles",
+        "websockets"
+      ],
+      "active_edges": [
+        [
+          "alembic",
+          "mako",
+          "Mako"
+        ],
+        [
+          "alembic",
+          "sqlalchemy",
+          "SQLAlchemy>=2.0"
+        ],
+        [
+          "alembic",
+          "typing-extensions",
+          "typing-extensions>=4.12"
+        ],
+        [
+          "anyio",
+          "idna",
+          "idna>=2.8"
+        ],
+        [
+          "anyio",
+          "typing-extensions",
+          "typing_extensions>=4.16.0; python_version < \"3.15\""
+        ],
+        [
+          "authlib",
+          "cryptography",
+          "cryptography>=45.0.1"
+        ],
+        [
+          "authlib",
+          "joserfc",
+          "joserfc>=1.6.1"
+        ],
+        [
+          "cffi",
+          "pycparser",
+          "pycparser; implementation_name != \"PyPy\""
+        ],
+        [
+          "cryptography",
+          "cffi",
+          "cffi>=2.0.0 ; platform_python_implementation != 'PyPy'"
+        ],
+        [
+          "email-validator",
+          "dnspython",
+          "dnspython>=2.0.0"
+        ],
+        [
+          "email-validator",
+          "idna",
+          "idna>=2.0.0"
+        ],
+        [
+          "fastapi",
+          "annotated-doc",
+          "annotated-doc>=0.0.2"
+        ],
+        [
+          "fastapi",
+          "opentelemetry-api",
+          "opentelemetry-api>=1.44.0"
+        ],
+        [
+          "fastapi",
+          "pydantic",
+          "pydantic>=2.9.0"
+        ],
+        [
+          "fastapi",
+          "starlette",
+          "starlette>=0.46.0"
+        ],
+        [
+          "fastapi",
+          "typing-extensions",
+          "typing-extensions>=4.8.0"
+        ],
+        [
+          "fastapi",
+          "typing-inspection",
+          "typing-inspection>=0.4.2"
+        ],
+        [
+          "httpcore",
+          "certifi",
+          "certifi"
+        ],
+        [
+          "httpcore",
+          "h11",
+          "h11>=0.16"
+        ],
+        [
+          "httpcore2",
+          "h11",
+          "h11>=0.16"
+        ],
+        [
+          "httpcore2",
+          "truststore",
+          "truststore>=0.10"
+        ],
+        [
+          "httpx",
+          "anyio",
+          "anyio"
+        ],
+        [
+          "httpx",
+          "certifi",
+          "certifi"
+        ],
+        [
+          "httpx",
+          "httpcore",
+          "httpcore==1.*"
+        ],
+        [
+          "httpx",
+          "idna",
+          "idna"
+        ],
+        [
+          "httpx2",
+          "anyio",
+          "anyio>=4.10; sys_platform != 'emscripten'"
+        ],
+        [
+          "httpx2",
+          "httpcore2",
+          "httpcore2==2.13.1; sys_platform != 'emscripten'"
+        ],
+        [
+          "httpx2",
+          "idna",
+          "idna>=3.18"
+        ],
+        [
+          "httpx2",
+          "truststore",
+          "truststore>=0.10; sys_platform != 'emscripten'"
+        ],
+        [
+          "joserfc",
+          "cryptography",
+          "cryptography>=45.0.1"
+        ],
+        [
+          "mako",
+          "markupsafe",
+          "MarkupSafe>=2.0"
+        ],
+        [
+          "opentelemetry-api",
+          "typing-extensions",
+          "typing-extensions>=4.5.0"
+        ],
+        [
+          "psycopg",
+          "psycopg-binary",
+          "psycopg-binary==3.3.6; implementation_name != \"pypy\" and extra == \"binary\""
+        ],
+        [
+          "psycopg",
+          "tzdata",
+          "tzdata; sys_platform == \"win32\""
+        ],
+        [
+          "pydantic",
+          "annotated-types",
+          "annotated-types>=0.6.0"
+        ],
+        [
+          "pydantic",
+          "pydantic-core",
+          "pydantic-core==2.50.0"
+        ],
+        [
+          "pydantic",
+          "typing-extensions",
+          "typing-extensions>=4.16.0"
+        ],
+        [
+          "pydantic",
+          "typing-inspection",
+          "typing-inspection>=0.4.4"
+        ],
+        [
+          "pydantic-core",
+          "typing-extensions",
+          "typing-extensions>=4.16.0"
+        ],
+        [
+          "pyjwt",
+          "cryptography",
+          "cryptography>=3.4.0; extra == \"crypto\""
+        ],
+        [
+          "pytest",
+          "colorama",
+          "colorama>=0.4; sys_platform == \"win32\""
+        ],
+        [
+          "pytest",
+          "iniconfig",
+          "iniconfig>=1.0.1"
+        ],
+        [
+          "pytest",
+          "packaging",
+          "packaging>=22"
+        ],
+        [
+          "pytest",
+          "pluggy",
+          "pluggy<2,>=1.5"
+        ],
+        [
+          "pytest",
+          "pygments",
+          "pygments>=2.7.2"
+        ],
+        [
+          "pytest-asyncio",
+          "pytest",
+          "pytest<10,>=8.4"
+        ],
+        [
+          "sqlalchemy",
+          "typing-extensions",
+          "typing-extensions>=4.6.0"
+        ],
+        [
+          "starlette",
+          "anyio",
+          "anyio<5,>=4.0.0"
+        ],
+        [
+          "typing-inspection",
+          "typing-extensions",
+          "typing-extensions>=4.15.0"
+        ],
+        [
+          "uvicorn",
+          "click",
+          "click>=7.0"
+        ],
+        [
+          "uvicorn",
+          "h11",
+          "h11>=0.8"
+        ],
+        [
+          "uvicorn",
+          "httptools",
+          "httptools>=0.8.0; extra == 'standard'"
+        ],
+        [
+          "uvicorn",
+          "python-dotenv",
+          "python-dotenv>=0.13; extra == 'standard'"
+        ],
+        [
+          "uvicorn",
+          "pyyaml",
+          "pyyaml>=5.1; extra == 'standard'"
+        ],
+        [
+          "uvicorn",
+          "watchfiles",
+          "watchfiles>=0.20; extra == 'standard'"
+        ],
+        [
+          "uvicorn",
+          "websockets",
+          "websockets>=13.0; extra == 'standard'"
+        ],
+        [
+          "watchfiles",
+          "anyio",
+          "anyio>=3.0.0"
+        ]
+      ],
+      "extras": {
+        "alembic": [],
+        "annotated-doc": [],
+        "annotated-types": [],
+        "anyio": [],
+        "authlib": [],
+        "bcrypt": [],
+        "certifi": [],
+        "cffi": [],
+        "click": [],
+        "colorama": [],
+        "cryptography": [],
+        "dnspython": [],
+        "email-validator": [],
+        "fastapi": [],
+        "h11": [],
+        "httpcore": [],
+        "httpcore2": [],
+        "httptools": [],
+        "httpx": [],
+        "httpx2": [],
+        "idna": [],
+        "iniconfig": [],
+        "joserfc": [],
+        "mako": [],
+        "markupsafe": [],
+        "opentelemetry-api": [],
+        "packaging": [],
+        "pluggy": [],
+        "psycopg": [
+          "binary"
+        ],
+        "psycopg-binary": [],
+        "pycparser": [],
+        "pydantic": [],
+        "pydantic-core": [],
+        "pygments": [],
+        "pyjwt": [
+          "crypto"
+        ],
+        "pytest": [],
+        "pytest-asyncio": [],
+        "python-dotenv": [],
+        "pyyaml": [],
+        "sqlalchemy": [],
+        "starlette": [],
+        "truststore": [],
+        "typing-extensions": [],
+        "typing-inspection": [],
+        "tzdata": [],
+        "uvicorn": [
+          "standard"
+        ],
+        "watchfiles": [],
+        "websockets": []
+      }
+    }
+  },
+  "package_records": [
+    {
+      "name": "alembic",
+      "version": "1.20.0",
+      "profiles": [
+        "migration_tool_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "alembic"
+      ],
+      "observed_binary_members": false,
+      "sha256": "77eb101048d95f982c0353e9233404889dcd7a6fc244c107836c0e2fc9cf7d9d"
+    },
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "fastapi"
+      ],
+      "observed_binary_members": false,
+      "sha256": "117bac03a25ede5df5440e855b32d556049ca169ead221505badf432fed4b101"
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "fastapi"
+      ],
+      "observed_binary_members": false,
+      "sha256": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0"
+    },
+    {
+      "name": "anyio",
+      "version": "4.15.1",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "fastapi",
+        "httpx",
+        "httpx2",
+        "uvicorn"
+      ],
+      "observed_binary_members": false,
+      "sha256": "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101"
+    },
+    {
+      "name": "authlib",
+      "version": "1.8.0",
+      "profiles": [
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "authlib"
+      ],
+      "observed_binary_members": false,
+      "sha256": "88aebbd9af6757e14e912d5dc007ae1dc1f3e27e3b2152ce7c552ee2c3b3c121"
+    },
+    {
+      "name": "bcrypt",
+      "version": "5.0.0",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "bcrypt"
+      ],
+      "observed_binary_members": true,
+      "sha256": "64ee8434b0da054d830fa8e89e1c8bf30061d539044a39524ff7dec90481e5c2"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "profiles": [
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "httpx"
+      ],
+      "observed_binary_members": false,
+      "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775"
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "authlib",
+        "pyjwt"
+      ],
+      "observed_binary_members": true,
+      "sha256": "3222ba5d678f80a030e6afbcc33dc1ae5cb45facabb61cee2c7016b8432fde48"
+    },
+    {
+      "name": "click",
+      "version": "8.5.0",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "uvicorn"
+      ],
+      "observed_binary_members": false,
+      "sha256": "255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360"
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "profiles": [
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "pytest",
+        "pytest-asyncio"
+      ],
+      "observed_binary_members": false,
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"
+    },
+    {
+      "name": "cryptography",
+      "version": "50.0.2",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "authlib",
+        "pyjwt"
+      ],
+      "observed_binary_members": true,
+      "sha256": "7afa5a6602a9f29af1f3a2965f831bae7c9d5d597b7cbb716d41ab3b7d89879c"
+    },
+    {
+      "name": "dnspython",
+      "version": "2.8.0",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "email-validator"
+      ],
+      "observed_binary_members": false,
+      "sha256": "01d9bbc4a2d76bf0db7c1f729812ded6d912bd318d3b1cf81d30c0f845dbf3af"
+    },
+    {
+      "name": "email-validator",
+      "version": "2.3.0",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "email-validator"
+      ],
+      "observed_binary_members": false,
+      "sha256": "80f13f623413e6b197ae73bb10bf4eb0908faf509ad8362c5edeb0be7fd450b4"
+    },
+    {
+      "name": "fastapi",
+      "version": "0.143.0",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "fastapi"
+      ],
+      "observed_binary_members": false,
+      "sha256": "3e9395fd35276425b61b516a31fdd7c77fe2af83e41b4da22e30696fb1304c5d"
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "httpx",
+        "httpx2",
+        "uvicorn"
+      ],
+      "observed_binary_members": false,
+      "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86"
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9",
+      "profiles": [
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "httpx"
+      ],
+      "observed_binary_members": false,
+      "sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55"
+    },
+    {
+      "name": "httpcore2",
+      "version": "2.13.1",
+      "profiles": [
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "httpx2"
+      ],
+      "observed_binary_members": false,
+      "sha256": "e1e05d4f25f7d7d496bfb96748f6f4b67657b03da069b3a68c36069f3db73d0a"
+    },
+    {
+      "name": "httptools",
+      "version": "0.8.0",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "uvicorn"
+      ],
+      "observed_binary_members": true,
+      "sha256": "19d1ee275bb59ba2643ba9a3a1e51cc0c788caf2b8df506368e03f56fdd08527"
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1",
+      "profiles": [
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "httpx"
+      ],
+      "observed_binary_members": false,
+      "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad"
+    },
+    {
+      "name": "httpx2",
+      "version": "2.13.1",
+      "profiles": [
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "httpx2"
+      ],
+      "observed_binary_members": false,
+      "sha256": "6dff50fabc270ee5fd25d845d0b078ed20564579744d6d962850975996d2f9a4"
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "email-validator",
+        "fastapi",
+        "httpx",
+        "httpx2",
+        "uvicorn"
+      ],
+      "observed_binary_members": false,
+      "sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c"
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1",
+      "profiles": [
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "pytest",
+        "pytest-asyncio"
+      ],
+      "observed_binary_members": false,
+      "sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7"
+    },
+    {
+      "name": "joserfc",
+      "version": "1.7.5",
+      "profiles": [
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "authlib"
+      ],
+      "observed_binary_members": false,
+      "sha256": "add2c2c84e8373b084d526a8b53daba5d7a513a118cd2dcd9fc9f979d0922159"
+    },
+    {
+      "name": "mako",
+      "version": "1.4.3",
+      "profiles": [
+        "migration_tool_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "alembic"
+      ],
+      "observed_binary_members": false,
+      "sha256": "723296007c870bfd6b3f0c3230dba7198096e5269297ebf5e4eff9e7ffa39d4f"
+    },
+    {
+      "name": "markupsafe",
+      "version": "3.0.4",
+      "profiles": [
+        "migration_tool_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "alembic"
+      ],
+      "observed_binary_members": true,
+      "sha256": "c1bc67752d5f21013cfe430df4062441714eab79f65a6a05e01505957e9c35fe"
+    },
+    {
+      "name": "opentelemetry-api",
+      "version": "1.45.1",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "fastapi"
+      ],
+      "observed_binary_members": false,
+      "sha256": "b31553efa588ae44bc306f863c785c5333a9ecc091248c6ee68b4b6c87fdedfb"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "profiles": [
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "pytest",
+        "pytest-asyncio"
+      ],
+      "observed_binary_members": false,
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0",
+      "profiles": [
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "pytest",
+        "pytest-asyncio"
+      ],
+      "observed_binary_members": false,
+      "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746"
+    },
+    {
+      "name": "psycopg",
+      "version": "3.3.6",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "psycopg"
+      ],
+      "observed_binary_members": false,
+      "sha256": "a1db9f7148b06a28606767efaca51fa6f9398c5c0a3810519be69d7000bdb631"
+    },
+    {
+      "name": "psycopg-binary",
+      "version": "3.3.6",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "psycopg"
+      ],
+      "observed_binary_members": true,
+      "sha256": "1fbd30e537dab22cafdf080608f10148fe2a5f3a61294ddb5113caac8a623840"
+    },
+    {
+      "name": "pycparser",
+      "version": "3.1",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "authlib",
+        "pyjwt"
+      ],
+      "observed_binary_members": false,
+      "sha256": "f09d358c840bd147b79e55f2bc494f18ea869dc897f5852a8f5766b74f787882"
+    },
+    {
+      "name": "pydantic",
+      "version": "2.14.0",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "fastapi"
+      ],
+      "observed_binary_members": false,
+      "sha256": "15fab1bea6f1dc5003b54fc2ecab230c1fd1dbade2acd4addc52d81e32416d4b"
+    },
+    {
+      "name": "pydantic-core",
+      "version": "2.50.0",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "fastapi"
+      ],
+      "observed_binary_members": true,
+      "sha256": "63263d64884688554fb025a3906c7b00573980cfee75f9afeb86239d577384bc"
+    },
+    {
+      "name": "pygments",
+      "version": "2.21.0",
+      "profiles": [
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "pytest",
+        "pytest-asyncio"
+      ],
+      "observed_binary_members": false,
+      "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9"
+    },
+    {
+      "name": "pyjwt",
+      "version": "2.15.1",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "pyjwt"
+      ],
+      "observed_binary_members": false,
+      "sha256": "42d59d631f7768a1028a64c7ff581a9bf7519804daf91fc5b6c56e30eec5e193"
+    },
+    {
+      "name": "pytest",
+      "version": "9.1.1",
+      "profiles": [
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "pytest",
+        "pytest-asyncio"
+      ],
+      "observed_binary_members": false,
+      "sha256": "37a86b45efb9a47a61a36449063e8e18d0cab3161329fc099eb21783169c4f0c"
+    },
+    {
+      "name": "pytest-asyncio",
+      "version": "1.4.0",
+      "profiles": [
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "pytest-asyncio"
+      ],
+      "observed_binary_members": false,
+      "sha256": "933ca923a23075a87fb7070c0ec272a6848489824d887c85c812670932835aa1"
+    },
+    {
+      "name": "python-dotenv",
+      "version": "1.2.4",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "python-dotenv",
+        "uvicorn"
+      ],
+      "observed_binary_members": false,
+      "sha256": "42269a8a5b3fd54ffa6f3d84b18abed50064717576b4ecf03dc4a55d8aa04fdc"
+    },
+    {
+      "name": "pyyaml",
+      "version": "6.0.3",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "uvicorn"
+      ],
+      "observed_binary_members": true,
+      "sha256": "4a2e8cebe2ff6ab7d1050ecd59c25d4c8bd7e6f400f5f82b96557ac0abafd0ac"
+    },
+    {
+      "name": "sqlalchemy",
+      "version": "2.1.4",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "migration_tool_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "alembic",
+        "sqlalchemy"
+      ],
+      "observed_binary_members": true,
+      "sha256": "080f8d853aac5bb5620f0ae6f46527397cf18dce0ec2b478b478469ef3cae2c4"
+    },
+    {
+      "name": "starlette",
+      "version": "1.7.0",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "fastapi"
+      ],
+      "observed_binary_members": false,
+      "sha256": "67f8e99895493dd2911a03f11314af6ceebeae4e704bb9f43dfc6a9db151c93e"
+    },
+    {
+      "name": "truststore",
+      "version": "0.10.4",
+      "profiles": [
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "httpx2"
+      ],
+      "observed_binary_members": false,
+      "sha256": "adaeaecf1cbb5f4de3b1959b42d41f6fab57b2b1666adb59e89cb0b53361d981"
+    },
+    {
+      "name": "typing-extensions",
+      "version": "4.16.0",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "migration_tool_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "alembic",
+        "fastapi",
+        "httpx",
+        "httpx2",
+        "sqlalchemy",
+        "uvicorn"
+      ],
+      "observed_binary_members": false,
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "fastapi"
+      ],
+      "observed_binary_members": false,
+      "sha256": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.5",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "psycopg"
+      ],
+      "observed_binary_members": false,
+      "sha256": "b683bd1b6659ddcd810ff02ad09ba821d4bf1065072805063eb35c49617905ac"
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.54.0",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "uvicorn"
+      ],
+      "observed_binary_members": false,
+      "sha256": "505bdb0f318731d45f1f712071fc781a8981f6847a31c902c9f5e652d4f67faf"
+    },
+    {
+      "name": "watchfiles",
+      "version": "1.3.0",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "uvicorn"
+      ],
+      "observed_binary_members": true,
+      "sha256": "1acabde19b67e673274e89a04d613b7fb1f122e2c4b8ec9a581e59c149264b61"
+    },
+    {
+      "name": "websockets",
+      "version": "17.2",
+      "profiles": [
+        "api_base_candidate",
+        "api_with_identity_candidate",
+        "combined_qualification_basis"
+      ],
+      "reachable_from_roots": [
+        "uvicorn"
+      ],
+      "observed_binary_members": true,
+      "sha256": "dac93bf7a9beb215be3282b8441173cd50806c41c007b8be9bb24e03c60ad563"
+    }
+  ],
+  "outside_application_and_migration_candidates": [
+    "certifi",
+    "colorama",
+    "httpcore",
+    "httpx",
+    "iniconfig",
+    "packaging",
+    "pluggy",
+    "pygments",
+    "pytest",
+    "pytest-asyncio"
+  ],
+  "protected_inputs_unchanged": true,
+  "limits": [
+    "Reachability in saved Requires-Dist metadata is not a resolver result for independent profiles, import/use evidence or final packaging.",
+    "Authlib/HTTPX2 are conditional evaluated identity candidates, not selected staff adapters or production requirements.",
+    "The 18-case native result tested the combined graph, not each derived profile in a separate environment.",
+    "Shared/transitive membership does not grant exclusive role ownership or prove exclusion from delivered artifacts.",
+    "Other Python, platform, extras, OS/native-linked, tools/build and actual deployment graphs need their own qualification under D-068.",
+    "No installation, candidate package import, lock, app, provider, account, Git or deployment change."
+  ]
+}

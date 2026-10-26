@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "scripts/validation",
+    "-p",
+    "test_*_schema.py"
+  ],
+  "exit_code": 0,
+  "environment": "OS/path/temp/profile allowlist plus workspace PYTHONPATH; no provider/credential variables",
+  "scope": "real local schema validator suite only; no application HTTP/store/browser behavior"
+}

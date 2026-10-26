@@ -1,0 +1,35 @@
+{
+  "status": "DOING",
+  "review_verdict": "PASS",
+  "reviewer": "review_knowledge_bundle_v1",
+  "review_date": "2026-10-08",
+  "manifest_sha256": "f6849b324f7672c0908e751a18305deb4612b7200540667fecdf40ca399ec99b",
+  "snapshots_verified": 31,
+  "findings": [],
+  "scope": "Frozen PUBLICATION_CONTRACT lines 988-1103, knowledge-bundle.schema.json, focused validator and relevant frozen governance/publication/chat/private-data/source controls. PASS is proposal coherence and validator representation only.",
+  "observations": [
+    "Earlier publication contract prefix remains byte-preserved (71338 bytes).",
+    "Release/snapshot/artifact membership and source route/revision/content digest are semantic obligations; self/containing hashes are excluded to avoid cycles.",
+    "Allowlisted extraction, D076 exclusions, current eligibility/withdrawal, immutable replay and approved Azure Europe/private-question routing remain mandatory; no host/provider is selected.",
+    "Visitor/source text is untrusted; AI cannot authorize tools/publication/booking. Complete checked sourced answers or safe refusal retain existing chat limits.",
+    "Duplicate complete records are rejected, while duplicate keys/references, dangling passages, invalid Unicode, injection, wrong-shaped releases and unsupported claims deliberately remain outside schema enforcement.",
+    "Finite bundle/retrieval capacities are explicitly unmeasured and need later calibration; over-capacity holds preparation without truncation."
+  ],
+  "independent_affected_validator_replay": {
+    "exit_code": 0,
+    "methods": 31,
+    "focused_methods": 8,
+    "process_local_environment": "PYTHONPATH absolute scripts/validation; no machine settings changed"
+  },
+  "test_fixture_extra_current_dependency": {
+    "path": "docs/phase-1-architecture/contracts/booking-creation-request.schema.json",
+    "sha256": "6848784172c0b39951978fb6a93158655b444e1c9400091c0a90c8d0fd509e37",
+    "note": "Existing reused fixture also loads/checks this companion schema, not in the 31-input packet. Its source is an observed test-run dependency, not part of the frozen proposal review scope."
+  },
+  "limits": [
+    "No application, provider/model call, extraction/index pipeline, publication coordinator, HTTP/DB authorization or runtime enforcement inspected/executed.",
+    "No AI safety/grounding accuracy, legal/privacy compliance, accessibility/load qualification, provider entitlement or production adoption established.",
+    "Full field/extraction/index mappings, permitted adapters, named workload calibration and integrated/founder acceptance remain held.",
+    "Concurrent visual walkthrough changes and later reconciliation navigation are outside this review."
+  ]
+}

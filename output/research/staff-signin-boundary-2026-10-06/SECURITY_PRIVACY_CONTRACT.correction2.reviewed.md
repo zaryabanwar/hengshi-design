@@ -1,0 +1,433 @@
+# Security, privacy and data-flow contract
+
+Status: DOING. Proposed detailed definition, 2026-10-04. Sources: constitution VI,
+D-015–D-019/D-065, foundation SEC-001–SEC-010, DATA-001–DATA-010 and AI-001–AI-009.
+No authentication configuration, database migration or application change.
+
+## Review coverage
+
+The [later independent review](reviews/current-definition-amendments-2026-10-04.md)
+records bounded PASS for this proposal and its action/object authorization
+amendment at the receipt's exact hashes. The reviewed
+[contract bytes](../../../output/research/contract-review-reference-reconciliation-2026-10-04/SECURITY_PRIVACY_CONTRACT.pre-status.md)
+are preserved. In that earlier slice, only review references were reconciled; identity,
+authorization and privacy obligations were not changed. Exact mechanisms,
+operational grants, legal policies, founder acceptance and runtime proof remain
+pending; the privacy/security alias owners remain undecided.
+The later browser-resource proposal below is outside those earlier review inputs.
+Its separate [independent review](reviews/browser-resource-security-v1-2026-10-05.md)
+records bounded PASS at the [preserved producer bytes](../../../output/research/browser-security-definition-2026-10-05/SECURITY_PRIVACY_CONTRACT.reviewed.md).
+This later reference edit does not replace that identity. The verdict accepts
+proposal coherence and scoped source evidence, not browser/build enforcement,
+selected origins/configuration, security certification or Phase 1 acceptance.
+
+## Authority and implementation gap
+
+The accepted requirements govern; the old security feature's eight-character
+password, optional cookies, deferred MFA/roles/CSRF and single-process limiter
+are historical proposals. They cannot select launch behavior. Current prototype
+evidence includes browser token storage in `apps/web/src/lib/api.ts:63` and
+`apps/web/src/admin/RequireAdmin.tsx:8`, Bearer extraction in
+`apps/api/app/auth/deps.py:9`, and cookie-independent token issuance in
+`apps/api/app/auth/routes.py:29`. These are observed gaps, not new instructions
+to change the protected application before Phase 1 acceptance.
+
+The [data-classification matrix](data-classification.csv) identifies technical
+boundaries and unmapped retention classes. It is not a legal basis, approved
+privacy notice, provider agreement or permission to process real visitor data.
+An unresolved field/class or provider policy holds the affected persistence,
+transfer and public claim; other approved semantic content remains available.
+
+## Staff identity and authorization
+
+Entra staff identity maps to server-enforced author, reviewer, founder approver
+and administrator roles. Missing, disabled or ambiguous membership denies access.
+An author cannot independently review or approve their own material; administrator
+access does not grant publication approval. Jobs recheck authorized intent and
+candidate identity rather than trusting a browser role or arbitrary queue payload.
+Exact tenant/group mapping, privileged activation and account owners remain gated.
+
+### Proposed action and object authorization
+
+The following matrix refines SEC-001/SEC-002, PUB-002/PUB-003 and
+[SOF-01 operator invariants](../../phase-1-ux-architecture/FLOWS.md#sof-01--staff-operator-information-architecture-and-operations).
+It records the accepted separation constraints and proposed enforcement obligations;
+it does not assign people, Entra groups or new operational privileges. The four
+staff roles are not an inheritance ladder. Founder approval, administration,
+content work and private conversation/booking operations have separate authority.
+Holding several roles never defeats a same-object separation restriction.
+
+| Catalogue action | Required authority | Object/state conditions and mandatory denial |
+|---|---|---|
+| IF-STAFF-01 — create candidate | Author role and approved content scope | Bind the actual principal and exact candidate revision; no activation, self-review or self-approval permission follows from creation. Editing an existing candidate also requires its separately approved write scope. |
+| IF-STAFF-02 — evidence/SEO review | Reviewer role with the relevant approved review scope | Bind the exact candidate/checksum and sources. Deny a contributor's review of their own material, stale snapshots and unresolved rights/claims holds. Administration or founder status alone does not supply specialist-review authority. |
+| IF-STAFF-03 — founder approval | Founder-approver role and candidate approval scope | Require independent required reviews of the current exact snapshot and no unresolved hold. Deny same-material author approval, even when that principal also has founder/administrator roles. A previous approval is not permission for changed content. |
+| IF-STAFF-04 — activation | Explicit publication-operation authority, after exact eligible approval | The mapping of this operational authority to approved principals/jobs remains held. No author/reviewer/administrator role automatically grants it. Require the publication contract's verified artifacts, generation guard and definitive/reconciled outcome. |
+| IF-STAFF-05 — inspect artifacts | Explicit candidate/artifact read scope for the authorized staff task | Author, reviewer or approver access is limited to the approved object/purpose. Administrator status is not a universal draft/private diagnostic read grant. Inspection never changes readiness or approval. |
+| IF-STAFF-06 — assignment | Explicit assignment/reassignment authority and approved work scope | Require current item revision, consent/purpose and eligible owner/backup. Deny self-assignment or administrator override unless a later approved policy specifically permits it; no identity or availability can be fabricated. |
+| IF-STAFF-07 — booking reconciliation | Explicit booking-operations authority for that lineage | Require authoritative local/provider evidence and current operation state. Deny manual email verification, guessed provider confirmation or fabricated slots. Publication/content roles and an alert alone grant no booking authority. |
+| IF-STAFF-08 — audit inspection | Explicit audit/privacy/security read authority and approved query scope | Return only approved redacted event fields for bounded queries. Deny payload/secret disclosure, audit edits/deletion and export without its separate applicable approval. Reading the audit is itself audited. |
+
+Named content roles above implement the existing separation requirements. The
+operational authorities are permission requirements, not newly selected Entra
+roles or grants. Exact group bindings, object scopes, delegated powers, export
+policy and owners remain held. An unmapped action is denied; it must not be
+implemented as an administrator fallback. Privacy/security email ownership remains
+undecided and cannot be inferred from these functional responsibilities.
+
+Every protected decision requires current authenticated identity, an explicit
+action grant, permitted object/purpose scope and the action's valid state/revision.
+All conditions must hold. Missing/disabled/ambiguous identity or grants deny access;
+a role label, opaque ID, frontend route, cookie or submitted owner never grants it.
+Response projection follows the same scope, including list/search/count and error
+responses: a denied direct read cannot be recovered through another endpoint or
+an existence-revealing error. Exact HTTP/error mappings remain interface inputs.
+
+Recheck these conditions at the authoritative mutation boundary, not only when
+the screen opens or a job is queued. Concurrent candidate edits invalidate old
+review/approval; reassignment, consent withdrawal, identity revocation or release
+withdrawal cannot be ignored because an earlier browser/queue check passed.
+Jobs act on scoped durable intent under their approved service identity; they do
+not impersonate a founder or gain broader authority from a payload. Revocation
+does not erase the historical record of who actually approved an earlier snapshot.
+
+Negative conformance must exercise each protected API/job boundary with a valid
+but wrong role, missing scope, another object, stale revision, revoked identity
+and prohibited combined-role self-approval. Also test list/projection leakage and
+a permission/state change between initial check and mutation. These are future
+behavior tests against approved exact contracts; this matrix is not executable
+authorization or a passing security result. Its logical amendment has the later
+bounded review identified above; integrated acceptance remains pending and prior
+receipts retain their own scopes.
+
+Exactly two local emergency accounts remain dormant during normal operations.
+Approved activation, bcrypt verification and local MFA are all required, with
+activation/use alerts, post-use review and rotation. Each credential is randomly
+generated with at least 24 characters and approved entropy. This does not invent
+an emergency bypass of role separation, MFA or legal/publication holds. Generator,
+MFA method, custody, recovery procedure and alert recipient need separate evidence.
+
+Browser staff sessions use rotating JWTs in Secure, HttpOnly, SameSite cookies,
+30-minute idle and eight-hour absolute limits, CSRF protection and idempotent
+server logout/revocation. Token rotation/reuse detection, issuer/audience/key
+validation and Entra session revocation need exact reviewed implementation
+contracts; token presence or a frontend guard cannot establish authorization.
+Do not retain browser staff tokens in localStorage in the production design.
+Cookie names, SameSite mode, signing algorithm and CSRF mechanism are not selected
+by this document. Production CORS trusts explicit approved origins only.
+
+## Staff sign-in mediation proposal
+
+Status: DOING. Engineering recommendation, 2026-10-06; independent review and
+founder acceptance pending. This refines SEC-001/004/005 and the existing staff
+identity boundary. It adds no visitor account, role, endpoint or third deployable.
+Earlier receipts do not cover this section. The unchanged predecessor is
+[preserved](../../../output/research/staff-signin-boundary-2026-10-06/SECURITY_PRIVACY_CONTRACT.before.md).
+
+Recommend server-mediated Entra authorization-code sign-in with OIDC and PKCE
+S256. The FastAPI identity boundary owns the exchange and validation; React
+receives a protected Hengshi session, never provider credentials. Use a maintained
+supported client and verifier proven in the complete stable compatibility graph;
+do not hand-build OAuth or adopt a package/version from illustrative documentation.
+The account/app registration and exact tenant/client/callback remain held.
+
+### Admission and token separation
+
+1. Start creates a bounded, expiring, single-use server transaction with independent
+   random state, nonce and PKCE verifier. Bind it to the initiating browser using
+   an approved protected correlation mechanism. State alone is insufficient.
+   Return navigation resolves to an allowlisted local staff destination; neither
+   state nor query parameters may select an arbitrary redirect or issuer.
+2. The registered backend callback accepts only the bound current transaction,
+   consumes its code once and verifies the provider result. Require approved
+   issuer/tenant, intended audience, signature/key/algorithm, validity and nonce.
+   Reject missing, expired, mixed-issuer or mismatched inputs; no permissive
+   decode-only path, guessed key URL or fallback tenant is allowed.
+3. Map validated tenant/object identity (`tid`, `oid`) to an explicitly permitted
+   staff principal. Email, display name and username are not identity keys or
+   grants. Missing or ambiguous mapping, guest eligibility or group-overage
+   resolution cannot be treated as authorization; exact membership policy stays held.
+4. Issue the existing rotating Hengshi staff JWT cookie only after successful
+   identity admission and current principal eligibility. Replace any pre-login
+   context; a caller-chosen session ID cannot survive sign-in. Token kinds have
+   mutually exclusive verifier rules: an Entra ID token proves sign-in, and a
+   Graph access token authorizes its intended resource; neither is a Hengshi
+   API credential. A visitor process cookie cannot become staff authority.
+5. Every protected HTTP/job/socket action still requires the action/object/purpose
+   and current-state guards above. Token role labels never replace them. Keep
+   provider tokens, PKCE verifier and signing secrets server-side. The authorization
+   code may transit the browser only to the registered, bound backend callback;
+   do not persist it in JavaScript-readable storage, expose it in React response
+   bodies, generated HTML or general logs. Apply the callback URL/referrer/cache
+   controls below to that transient transport. Carry
+   the Hengshi session JWT only in its Secure/HttpOnly/SameSite cookie; exclude it
+   from JavaScript-readable storage and response bodies exposed to React. Exclude
+   all these secrets from generated HTML and general logs. Any permitted
+   server cache keeps the applicable secret/private classification and approved
+   retention; no durable provider-token cache is assumed.
+
+Initial sign-in requests only the reviewed OIDC scopes needed for identity; the
+proposed object mapping needs `profile` for `oid`. It does not request calendar,
+mail, presence, broad directory privileges or offline access by default. Separate
+Outlook/Teams capabilities require MA-006 and their own permission/retention proof.
+Azure/AWS hosting deferral and free client access do not establish those capabilities.
+
+### Session, callback and failure obligations
+
+The callback is a protocol-specific boundary: its transaction correlation is
+distinct from later state-changing API CSRF proof. The accepted staff cookie and
+CSRF requirements remain. Choose callback method, correlation-cookie SameSite
+behavior and host/path rules together; cross-site return must work without
+weakening the normal API policy. No names or modes are frozen by this proposal.
+Callback handling must immediately remove sensitive protocol parameters from
+subsequent navigation, prevent cache/referrer leakage and redact ingress/access
+logs as well as application diagnostics. Do not log provider error payloads raw.
+
+Successful sign-in creates no publication or private-operation grant. Session
+rotation cannot extend the eight-hour absolute lifetime, revive a revoked principal
+or ignore the 30-minute idle boundary. Local logout/revocation is authoritative
+for Hengshi access; a provider sign-out redirect alone is insufficient. A valid
+old ID token does not prove current Entra membership or immediate provider
+revocation: the actual revalidation/invalidation path, freshness bounds and
+outage policy need acceptance and runtime evidence before implementation.
+Uncertain exchange, callback replay or lost session response must not mint another
+grant from client inference; require authoritative reconciliation or a fresh
+explicit sign-in under the accepted recovery policy. Entra loss never activates
+the dormant local emergency accounts automatically.
+
+Future behavior evidence must exercise a permitted mapped staff control and
+wrong tenant/audience/nonce/browser, swapped token kind, replayed callback,
+missing/disabled/ambiguous membership, malicious return destination, concurrent
+callbacks, late logout/revocation and expired sessions. Inspect actual browser,
+callback/proxy logs and response/cache behavior using synthetic identities only.
+These are required public-boundary oracles, not executed tests or security proof.
+Exact wire schemas, transaction/cache/time/work limits, JWT algorithms/keys,
+rotation/replay mechanics, Entra freshness, MFA policy, hosts, retention/legal
+mappings, compatible client, approved staff screens and founder acceptance remain.
+
+Research checked 2026-10-06 through Context7
+`/websites/learn_microsoft_en-us_entra_identity-platform` and primary
+[authorization-code guidance](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow),
+[ID-token validation](https://learn.microsoft.com/en-us/entra/identity-platform/id-tokens),
+[claim semantics](https://learn.microsoft.com/en-us/entra/identity-platform/id-token-claims-reference),
+[OAuth security BCP](https://www.rfc-editor.org/rfc/rfc9700.html) and
+[JWT security BCP](https://www.rfc-editor.org/rfc/rfc8725.html).
+The [source receipt](../../../output/research/staff-signin-boundary-2026-10-06/source-receipt.json)
+records scope only. No real sign-in, token, client registration, Graph consent,
+MFA/credential/provider configuration, application or database change was performed.
+
+## Data and provider boundaries
+
+Visitors have no launch accounts or uploads. Public chat is treated as untrusted
+input. Non-consented chat is ephemeral and must not be written to durable
+application stores, general logs, analytics or training datasets. Provider
+telemetry and service retention must also satisfy the approved route policy;
+"ephemeral in our process" does not prove provider-side non-retention.
+
+Consent is purpose-specific and versioned. Refusal does not remove access to
+published information or approved help/booking alternatives. Consented chat,
+brief and lead records have the approved 90-day expiry rule, with no extension
+through derived traces or an unapproved active-client exception. The retention
+clock anchor and collection-specific consent/legal wording require approval;
+resuming, copying or restoring data must not silently reset the expiry.
+
+PII/confidential AI processing requires the approved Azure Europe route with
+verified region, agreement and no-training controls. NVIDIA initially accepts
+only public or demonstrably de-identified material after its entitlement gates.
+Removing an email alone does not establish de-identification. Unknown/unmapped
+classifications, secrets/credentials, controlled/classified defense content and
+other explicitly prohibited policy categories deny provider transfer. Approved
+PII/confidential processing remains limited to the verified Azure Europe route;
+a provider outage never authorizes a less protected route. Prohibited content receives refusal,
+without echoing or retaining the sensitive value in evidence or logs.
+
+Availability requires an explicit staff setting with expiry; Teams presence can
+only suppress a false available state. Presence loss/staleness gives an honest
+offline Contact/Book route. Handoff sends only consented, purpose-permitted
+context; the private staff identity is not a public manifest field.
+
+## Expiry, deletion and restoration
+
+Deletion is an orchestrated operation with an auditable, non-content-bearing
+outcome, not a claim based on removal of one database row. Map application rows,
+derived traces, replicas/caches, index copies and applicable external records.
+Stop new collection/transfer for the affected operation while it is unresolved.
+Content excluded from public knowledge must never reappear as AI evidence.
+
+Only classes mapped by approved policy can be deleted or retained under that
+policy. Booking/calendar, consent proof, audit, operational copies and deletion
+tombstones need explicit duration, legal authority and provider behavior. An
+unmapped class or unknown provider result keeps deletion pending; never claim
+"everything deleted" or retain an identifying tombstone indefinitely by default.
+
+Before restoring a backup to serving traffic, enforce approved expiry/deletion
+decisions and verify absence across derived copies. Exact backup expiry and the
+minimal restore-suppression mechanism need a reviewed legal/data mapping. Until
+that exists, restoration cannot be claimed privacy-complete. General operational
+logs contain neither conversation content nor tokens, email or raw sensitive URLs.
+
+## Threat and failure obligations
+
+| Boundary / threat | Required control and negative evidence |
+|---|---|
+| Browser / role forgery, cross-site write, stolen session | Server permission and CSRF checks; expired/revoked/replayed session denies; frontend removal does not elevate rights. |
+| Staff content / script or unsafe URL | Typed input validation and contextual safe rendering; rich content has a reviewed allowlist. Blanket string stripping is not proof of injection safety. |
+| Publication / stale approval, delayed cutover, forged asset | Exact snapshot approval and fenced publication contract; immutable checksum/path/graph validation before serving. |
+| World / malformed chunk, stalled load or hostile asset path | Only release-listed assets, bounded resource work and valid collision readiness; no arbitrary URL fetch, unloaded-ground traversal or draft panel. |
+| Chat / prompt injection and unsupported commitment | Approved versioned evidence only; source checks, refusal and human/booking route. Model output grants no tool, publication or booking authority. |
+| Booking / forged verification, replay, uncertain provider write | No slot eligibility before verified email; durable idempotent intent and reconciliation; no confirmation without authoritative evidence. |
+| Presence / stale state or spoofed online signal | Server-controlled explicit availability with expiry; unknown state remains offline. |
+| Redis loss / limiter bypass and indefinite retention | Distributed account/network protection must fail according to an approved outage policy; no unprotected login or privacy extension by default. |
+| Analytics / re-identification and content leakage | First-party cookieless aggregate reporting, approved small-cohort suppression; no movement trail, chat, email or stable visitor profile. |
+| Restore / resurrection of expired or deleted data | Quarantined restore, enforced approved deletion/expiry and proof before serving; no reset retention clock. |
+
+Independent review must verify these requirements against identity, publication,
+booking, AI and QA contracts. Exact rate thresholds, outage controls, algorithms,
+resource ceilings, audit retention and provider operations remain specification
+inputs, not numbers invented here. CSP/WAF, transit/at-rest encryption, least
+privilege, redaction, alerts and secret scanning remain SEC-007/SEC-008 obligations.
+
+## Browser-resource and serialized-content proposal
+
+PROPOSED 2026-10-05 under SEC-007/008 and the
+[publication serving/injection boundary](PUBLICATION_CONTRACT.md#determinism-injection-and-serving-boundaries).
+This is the controlling security proposal for browser resource admission, not a
+deployed CSP, selected hosting origin or approved production configuration. The
+complete stable toolchain, exact resource list and browser/device evidence remain
+required. Authoring approval never makes text, URLs or serialized data trusted code.
+
+### Immutable public HTML and script admission
+
+Prefer a deterministic, hash-based public-page policy: serve the reviewed HTML
+bytes unchanged, externalize application code, and authorize any unavoidable
+framework-generated inline executable block by its exact final-byte hash. Build
+identity, eligible release/artifact identity and the serving policy's reviewed
+association must agree; changing generated code or inline bytes requires new
+artifacts and policy evidence. CSP script hashes and artifact digests have different
+scopes and encodings and cannot be interchanged. Same-origin executable endpoints
+must serve only controlled code with correct MIME/nosniff handling; same origin
+alone does not make arbitrary content executable or release-eligible.
+
+A symbolic baseline for semantic documents is:
+
+```text
+default-src 'none'; base-uri 'none'; object-src 'none'; frame-ancestors 'none';
+script-src 'self' {exact_inline_hash_sources}; script-src-attr 'none';
+style-src 'self' {exact_style_element_hash_sources}; style-src-attr 'none';
+connect-src 'self' {approved_connection_sources}; worker-src 'none';
+img-src 'self'; font-src 'self'; media-src 'self'; manifest-src 'self';
+frame-src 'none'; form-action 'self'
+```
+
+This template is deliberately not deployable: omit empty hash/source slots and
+resolve exact reviewed origins/resources before adoption. No wildcard, blanket
+`https:`, executable `data:`/`blob:`, JavaScript `unsafe-inline` or `unsafe-eval`
+is proposed. CSP does not replace object authorization, CSRF, serving eligibility,
+output encoding, resource integrity, consent or withdrawal controls. Deliver the
+enforced policy in the HTTP response, including `frame-ancestors`; report-only
+evaluation is observation, not enforcement or permission to launch unprotected.
+
+Do not set one static nonce for a cached publication. Vite's nonce placeholder is
+intended for a fresh value per response; substituting it changes HTML bytes. A
+dynamic nonce document would require a separately approved representation/digest/
+caching contract, not a silent rewrite of an immutable artifact. React's renderer
+can emit inline bootstrap/reveal code; inventory actual final output rather than
+assuming external bootstrap URLs eliminate every inline block. Neither Vite's
+development behavior nor a newer main-branch example proves the candidate build.
+
+### Typed content, data blocks and styles
+
+Prefer typed text/heading/list/link/media blocks rendered through reviewed React
+components over author-supplied HTML. Treat any later rich-HTML capability as a
+separate reviewed allowlist/sanitizer contract; do not copy arbitrary content into
+`dangerouslySetInnerHTML`. Validate URLs by field purpose and parsed scheme/origin;
+authoring or AI output cannot create script, worker, module or decoder URLs.
+
+Serialization must keep public projections separate from private job/approval,
+staff/process, consent and provider fields. `JSON.stringify` alone does not make
+untrusted data safe inside HTML. Use a reviewed HTML-script-context serializer that
+prevents literal closing-script and comment/parser transitions while preserving
+the decoded value; external JSON still needs the closed public projection and
+correct JSON MIME. Test data blocks and JSON-LD through the actual HTML parser and
+hydration path, including quotes, angle brackets, ampersands, Unicode separators
+and closing-tag payloads. Do not treat a CSP hash as validation of serialized data.
+
+Prefer generated external CSS and reviewed classes. A nonce on a style element
+does not authorize arbitrary style attributes. Inventory React/World overlays,
+canvas sizing and animation writes; verify the actual APIs on supported browsers.
+If the baseline blocks required behavior, reconcile the mechanism or obtain a
+bounded reviewed style-policy adjustment; do not quietly add blanket allowances.
+Vite may inline small image/font assets: prefer disabling that build behavior over
+implicitly admitting unrestricted data URLs; prove the resulting production output.
+
+### World decoders, worker policies and resource origins
+
+The observed Three candidate's loaders can create Blob-backed workers and fetch
+WASM/wrapper assets. Their tagged source is illustrative evidence, not exact patch
+archive or source-to-binary proof. A restrictive policy cannot simply be declared
+compatible with those paths. Prefer controlled same-origin, release-associated
+decoder/transcoder artifacts, verified bytes and bounded worker ownership from the
+[loading contract](../../phase-1-3d/CAMPUS_ASSET_BUILD_SPEC.md#loading-and-residency-contract).
+No vendor/CDN default path, public URL from a visitor or arbitrary mirror is approved.
+
+If the selected stable loader needs Blob workers, review the bounded `worker-src`
+permission and worker code construction separately; this grants no Blob script
+permission to the document. If WASM is required, review the narrower
+`wasm-unsafe-eval` capability instead of JavaScript `unsafe-eval`, including its
+effective policy inside the worker. Ordinary URL workers have their own response
+policy; local-scheme inheritance also needs actual browser verification. No worker
+or WASM permission is selected by this paragraph, and it does not enable WebGPU.
+
+A client-side route change cannot replace the document's HTTP policy. If World
+entry stays within the same document, its reviewed policy must accommodate the
+approved World runtime from initial load while code/assets/audio remain gated by
+entry and consent. Otherwise a separate document transition needs approved journey
+and identity continuity. Do not assume policies can be relaxed on a React toggle.
+Policy or decoder denial preserves semantic Quick Access and safe stationary/
+exit recovery; it never admits unready terrain or relaxes protection automatically.
+
+Resolve finite production connection, media/font/asset and worker origins when
+the deployment/resource plan resumes. Browser grants do not select Azure/AWS or
+permit direct private-provider calls. Treat a required cross-origin response,
+redirect, import, CORS/MIME or integrity failure as a release/build constraint.
+Policy reports are potentially identifying: do not collect script samples, private
+URLs/query strings, raw content or secrets; report destination, minimization,
+retention and access need the existing approved diagnostic/privacy mapping.
+
+### Required evidence and primary research
+
+After authorized implementation, test actual generated HTML and response headers,
+allowlisted scripts/styles and blocked injection/eval/URL paths; hash mismatch,
+cached/wrong-release policy, JSON parser/round-trip/private-field exclusion and
+hydration parity; production module/preload/lazy-import behavior; worker start,
+worker policy, WASM/decoder fetching, bounded disposal and failure recovery.
+Repeat against the approved exact browser matrix and named devices. No such build,
+browser or security tests have run for this proposal; documentation validation
+cannot certify these controls. Exact style needs, resource origins, complete
+toolchain and integrated/specialist/founder acceptance remain held.
+
+Research checked 2026-10-05 through Context7 `/websites/react_dev_reference`,
+`/vitejs/vite` and `/websites/threejs`, and primary
+[React rendering](https://react.dev/reference/react-dom/server/renderToPipeableStream),
+[Vite CSP guidance](https://vite.dev/guide/features.html#content-security-policy-csp),
+[browser-vendor CSP guidance](https://developer.chrome.com/docs/privacy-security/csp),
+[HTML script parsing](https://html.spec.whatwg.org/multipage/scripting.html#restrictions-for-contents-of-script-elements)
+and [Three KTX2 loader documentation](https://threejs.org/docs/pages/KTX2Loader.html).
+[CSP3](https://www.w3.org/TR/CSP3/) is currently a W3C Working Draft, not a final
+Recommendation or blanket stable/interoperability proof for every keyword.
+The proposal requires evidence for the particular features on supported stable
+browsers; it adopts no draft-only/experimental browser requirement. Registry and
+tagged-loader observations are retained in the
+[source receipt](../../../output/research/browser-security-definition-2026-10-05/source-receipt.json).
+No dependency/runtime, hosting, application or production asset was changed.
+
+## Acceptance limits
+
+Required tests include cross-role denial, self-approval denial, CSRF, session
+rotation/expiry/logout, dormant-account/MFA controls, provider denial for unknown,
+unmapped and prohibited classes and refusal of PII/confidential traffic on an
+unapproved route, while permitting it only on its approved verified Azure route,
+prompt injection, non-consented persistence absence, expiry/deletion and restore.
+Use synthetic identifiers and payloads; never include real credentials in proof.
+Passing definition checks is not a security certification or legal sign-off.
+MA-002/MA-005/MA-006/MA-007/MA-011 and complete Phase 1 acceptance remain applicable.

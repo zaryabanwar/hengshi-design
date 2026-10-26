@@ -1,0 +1,235 @@
+- application "Figma Design, 5 items selected"
+- status: Screenreader support for the board is currently disabled. To enable it via Accessibility settings, press Ctrl+K, type Accessibility Settings, and press Enter. To see available keyboard shortcuts, enter Ctrl+Shift+Question mark .
+- status: Agent task finished.
+- region "Comments on canvas":
+  - button "Create new comment"
+- region "Left sidebar":
+  - toolbar "Navigation Bar":
+    - button "Main menu":
+    - separator
+    - button "File":
+      - generic: File
+    - button "Agents" [expanded]:
+      - generic: Agents
+    - button "Assets":
+      - generic: Assets
+    - button "Tools":
+      - generic: Tools
+    - separator
+    - button "Variables":
+      - generic: Variables
+  - button "All chats":
+  - heading "New chat" [level=2]: Complete Recovery Component
+  - generic: Shared
+  - link "AI, Learn more":
+    - /url: https://help.figma.com/hc/articles/24039793359767
+    - generic: AI
+  - button "New chat":
+  - button "More options":
+  - button "Skip to prompt box":
+    - generic: Skip to prompt box
+  - generic "Chat messages":
+    - region "Prompt from Zaryab Anwar":
+      - generic "Instance called B01 qualification / RECOVERY / seed / v1 is selected and can be prompted to make changes":
+        - 'button "Go to selection on canvas: B01 qualification / RECOVERY / seed / v1"':
+          - generic: B01 qualification / RECOVERY / seed / v1
+      - paragraph: "Complete the existing approved Hengshi Design v1 RECOVERY interaction qualification component in this private Figma Design file only: GOmLP6Cv96l768ueSrZ5Dg, Page 1 (0:1). The founder authorizes the Design agent for this work. Use native editable Design components/variants and native prototype reactions. Do not create a Make file, code layer, plugin, shader, image replacement, another file/page, publish, change sharing, use paid activation, or edit application code. If your tools cannot perform native component/reaction edits, report that limitation and make no substitute artifact."
+      - paragraph: "Bounded edit authority: only the owned seed COMPONENT 169:3402 named \"B01 qualification / RECOVERY / seed / v1\" and its descendants, plus newly created Recovery-owned nodes under existing SECTION 144:3197 (\"B01 / Four-stream three-host qualification / v1\"). Preserve all other nodes, especially NAVIGATION set144:3287 (seven reactions already authored), DIRECTORY set147:3869 and frames152:3383,152:3393,152:3402. Never edit shared main components or variable/style definitions, detach instances, delete nodes, or touch earlier references. A normal editable .fig backup has just been saved. Existing seed is320x1150 at8400,1210 relative to that Section. STOP without edits if actual file/page/root kind/parent/name/dimensions differ."
+      - paragraph: "Reuse current seed styling and existing D035 bound variables and B01 reference/body16/24 style; no new palette/font. Direct owned children: marker169:3395 at24,1120,240x24; context169:3394 at24,16,240x72 with text \"Synthetic offline context retained Services · In force Detailed 3D\"; underlying Services fixture instance169:3393 at24,128,220x56; hidden Menu action instance169:3392 at24,148,220x56; delivery control FRAME169:3378 at24,220. Those five children have Left/Top constraints. The Menu copy's inherited Click/Change-to was removed and it is hidden; do not reveal it. Inspect ALL seed descendants; clear any remaining inherited reactions only inside this owned seed"
+      - button "Copy message":
+        - generic: Copy
+    - paragraph:
+      - text: Sorry, I can't build a prototype yet. For now, add interactions in your Prototyping tab or send this to
+      - link "Figma Make":
+        - /url: https://www.figma.com/make/new
+      - text: .
+    - button "Give thumbs up":
+    - button "Give thumbs down":
+    - button "View AI credit usage":
+    - button "Copy debug details":
+  - button "Skip to chat":
+    - generic: Skip to chat
+  - group "Instance called B01 qualification / RECOVERY / seed / v1 is selected and can be prompted to make changes":
+    - 'button "Go to selection on canvas: B01 qualification / RECOVERY / seed / v1"':
+      - generic: B01 qualification / RECOVERY / seed / v1
+    - button "Remove layer selection from the prompt box":
+  - generic: The button action for this text area changes between Send and Stop as the agent works.
+  - textbox "Prompt for AI agent" [active]:
+    - paragraph
+  - generic: Ask for changes
+  - status
+  - button "Add context":
+  - button "Libraries":
+  - button "Dictate":
+  - button "Send" [disabled]:
+  - region:
+    - searchbox
+    - generic: Results will update as you type
+    - button:
+    - button:
+    - heading [level=3]: Today
+    - button:
+      - generic: Complete Recovery Component
+      - generic: Just now
+      - generic: Complete the existing approved Hengshi Design v1 RECOVERY interaction qualification component in thi...
+    - button:
+    - heading [level=3]: This week
+    - button:
+      - generic: Inspect selected frame details
+      - generic: 3d
+      - generic: Read-only B01 prototype-source inventory, this private file GOmLP6Cv96l768ueSrZ5Dg / Page1 (0:1) onl...
+    - button:
+  - slider "Resize handle"
+- region "Right sidebar":
+  - button "Multiplayer tools":
+  - button "Agents, 1 agent":
+  - group "Prototype view":
+    - button "Present":
+    - button "Prototype view":
+  - button "Share"
+  - tablist:
+    - tab "Design" [selected]:
+      - generic: Design
+      - generic: Design
+    - tab "Prototype":
+      - generic: Prototype
+      - generic: Prototype
+  - button "51%, zoom and view options":
+    - text: 65%
+  - textbox: B01 qualification / RECOVERY / seed / v1
+  - heading [level=1]: B01 qualification / RECOVERY / seed / v1
+  - button "Add variant":
+  - button "Component configuration":
+  - button "More actions":
+  - generic: Properties
+  - button "Create property":
+  - heading "Position" [level=2]
+  - group "Alignment":
+    - generic: Alignment
+    - button "Align left":
+    - button "Align horizontal centers":
+    - button "Align right":
+    - button "Align top":
+    - button "Align vertical centers":
+    - button "Align bottom":
+    - button "More actions":
+  - group "Position":
+    - generic: Position
+    - generic: X
+    - spinbutton "X-position": "8400"
+    - generic: "Y"
+    - spinbutton "Y-position": "1210"
+  - group "Rotation":
+    - generic: Rotation
+    - spinbutton "Rotation": 0°
+    - button "Rotate 90˚ right":
+    - button "Flip horizontal":
+    - button "Flip vertical":
+  - heading "Layout" [level=2]
+  - button "Resize to fit":
+  - checkbox "Toggle auto layout"
+  - generic: Toggle auto layout
+  - group "Flow":
+    - generic: Flow
+    - radiogroup "Layout":
+      - generic: Layout
+      - radio "Freeform" [checked]
+      - generic: Freeform
+      - radio "Vertical"
+      - generic: Vertical
+      - radio "Horizontal"
+      - generic: Horizontal
+      - radio "Grid"
+      - generic: Grid
+  - group "Dimensions":
+    - generic: Dimensions
+    - generic "Width":
+      - generic: W
+      - textbox "Width": "320"
+    - generic "Height":
+      - generic: H
+      - textbox "Height": "1150"
+    - checkbox "Lock aspect ratio"
+    - generic: Lock aspect ratio
+  - checkbox "Clip content"
+  - generic: Clip content
+  - heading "Appearance" [level=2]
+  - checkbox "Hide"
+  - generic: Hide
+  - button "Apply blend mode":
+  - generic: Opacity
+  - textbox: 100%
+  - generic: Corner radius
+  - textbox: "0"
+  - button "Individual corners":
+  - heading "Fill" [level=2]
+  - button "Fill, Apply styles and variables":
+  - button "Add fill":
+  - grid:
+    - 'row "Solid color hex: FFFFFF Color FFFFFF 100 % Toggle visibility Remove"':
+      - 'gridcell "Solid color hex: FFFFFF Color FFFFFF 100 %"':
+        - 'button "Solid color hex: FFFFFF"'
+        - generic: Color
+        - generic: Autofill available. Type to see suggestions.
+        - combobox "Color": FFFFFF
+        - textbox "%": "100"
+        - generic: "%"
+      - gridcell "Toggle visibility":
+        - checkbox "Toggle visibility"
+        - generic: Toggle visibility
+      - gridcell "Remove":
+        - button "Remove":
+  - button "Stroke":
+    - heading "Stroke" [level=2]
+  - button "Stroke, Apply styles and variables":
+  - button "Add stroke":
+  - button "Effects":
+    - heading "Effects" [level=2]
+  - button "Effects, Apply styles":
+  - button "Add effect":
+  - button "Selection colors +1":
+    - heading "Selection colors" [level=2]
+    - generic: "+1"
+  - button "Layout guide":
+    - heading "Layout guide" [level=2]
+  - button "Layout guide, Apply styles":
+  - button "Add layout guide":
+  - button "Export":
+    - generic: Export
+  - button "Add export settings":
+  - slider "Resize handle"
+- region "Application toolbar":
+  - toolbar "Editor":
+    - group "Move":
+      - button "Move" [pressed]:
+      - button "Move tools":
+    - group "Frame":
+      - button "Frame":
+      - button "Region tools":
+    - group "Rectangle":
+      - button "Rectangle":
+      - button "Shape tools":
+    - group "Pen":
+      - button "Pen":
+      - button "Creation tools":
+    - group "Text":
+      - button "Text":
+      - button "Type tools":
+    - button "Comment":
+    - button "Actions":
+    - radiogroup "Toolbelt Mode":
+      - generic: Toolbelt Mode
+      - radio "Draw"
+      - generic: Draw
+      - radio "Design" [checked]
+      - generic: Design
+      - radio "Motion"
+      - generic: Motion
+      - radio "Dev Mode"
+      - generic: Dev Mode
+- region "Help/zoom toolbar":
+  - toolbar "Help/zoom toolbar":
+    - button "Help":
+- status
+- alert
+- alert

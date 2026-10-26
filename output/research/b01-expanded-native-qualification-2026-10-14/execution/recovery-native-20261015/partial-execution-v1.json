@@ -1,0 +1,43 @@
+{
+  "status": "DOING",
+  "authority": "D-094",
+  "root": "169:3402",
+  "section": "144:3197",
+  "name": "B01 qualification / RECOVERY / seed / v1",
+  "dimensions": [
+    320,
+    1150
+  ],
+  "position": [
+    8400,
+    1210
+  ],
+  "context": "Synthetic offline context retained\nServices · In force Detailed 3D",
+  "contextGeometry": [
+    24,
+    16,
+    240,
+    72
+  ],
+  "childConstraints": "Five direct owned children changed from Scale/Scale to Left/Top before root re-resize; source unchanged by intended operation.",
+  "geometryRecovery": "Initial root resize scaled children; restored272x1128 first, changed owned child constraints, restored their positions, then resized320x1150. Exact remaining descendant geometry/reaction census not yet complete.",
+  "removedReactions": [
+    {
+      "ownedNode": "169:3392",
+      "kind": "Click Change to",
+      "remainingMenuVisible": false
+    }
+  ],
+  "balancedTextInspection": {
+    "node": "169:3383",
+    "panel": "No interaction row observed; complete census pending"
+  },
+  "remaining": [
+    "complete inherited-reaction census",
+    "validate child geometry and copy text",
+    "create16 Recovery variants and wire approved edges",
+    "native after archive and result review"
+  ],
+  "mcpCalls": 0,
+  "aiPrompts": 0
+}

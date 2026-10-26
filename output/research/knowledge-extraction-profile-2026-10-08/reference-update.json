@@ -1,0 +1,23 @@
+{
+  "status": "DOING",
+  "scope": "Two current-review references only; frozen substantive proposals retain scope",
+  "review": "PASS at 25 frozen inputs",
+  "changes": [
+    {
+      "path": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "before_sha256": "11f71778edf797032ea43fe0204abeec5e11afa9178ddd4ea67b99c10a6ce460",
+      "after_sha256": "2f749e09f25f4589c85eac9e22f3affac22c025a2abcc3ed37eef8c3dcb29ec6",
+      "only_status_reference_changed": true
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "before_sha256": "abb91975d2c828bbfd08a49ae5f2153c420812875da876c148d71145f9aebc24",
+      "after_sha256": "0fc1797cf143756183cba4954786b114b6fa843adf71b89bd1ef9ab4584415b4",
+      "only_status_reference_changed": true
+    }
+  ],
+  "application_changes": false,
+  "commits": false,
+  "integrated_acceptance": "pending",
+  "preparation_note": "Reference update resumed after a mixed-newline match failed following the first completed reference; exact frozen bytes used to bound final changes"
+}

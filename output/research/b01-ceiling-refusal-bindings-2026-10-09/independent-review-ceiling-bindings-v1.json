@@ -1,0 +1,401 @@
+{
+  "product": "Hengshi Design v1",
+  "review_date": "2026-10-09",
+  "review_kind": "Independent source-only coherence review",
+  "verdict": "PASS",
+  "reviewed_manifest": {
+    "path": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs.json",
+    "bytes": 4542,
+    "sha256": "d89055bfc8087879ea50795758b6be71f6c33756451e2731889bb24c80f6c581"
+  },
+  "reviewed_input": {
+    "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+    "bytes": 17483,
+    "sha256": "af86ec7186b5ad1132953641803fe19267c72b0139a959547b3a5a3322c89fdf"
+  },
+  "scope": "Only the proposed eight capability-refusal host bindings and their derivation from frozen accepted rules and the recorded missing keys.",
+  "integrity": {
+    "manifest_sha256_verified": true,
+    "all_12_snapshot_byte_counts_and_sha256_verified": true,
+    "inputs": [
+      {
+        "source": "output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+        "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+        "bytes": 17483,
+        "sha256": "af86ec7186b5ad1132953641803fe19267c72b0139a959547b3a5a3322c89fdf",
+        "byte_count_verified": true,
+        "sha256_verified": true
+      },
+      {
+        "source": "AGENTS.md",
+        "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/AGENTS.md",
+        "bytes": 7686,
+        "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+        "byte_count_verified": true,
+        "sha256_verified": true
+      },
+      {
+        "source": ".specify/memory/constitution.md",
+        "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/.specify/memory/constitution.md",
+        "bytes": 16234,
+        "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+        "byte_count_verified": true,
+        "sha256_verified": true
+      },
+      {
+        "source": "DECISIONS.md",
+        "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/DECISIONS.md",
+        "bytes": 86352,
+        "sha256": "dd31d6026aedd1a03e966e055724b2f02783147291525f1740341848837eed74",
+        "byte_count_verified": true,
+        "sha256_verified": true
+      },
+      {
+        "source": "docs/phase-1-ui-reference-design/accessibility/UG-3_CONTROL_COPY_PROPOSAL.md",
+        "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ui-reference-design/accessibility/UG-3_CONTROL_COPY_PROPOSAL.md",
+        "bytes": 6745,
+        "sha256": "839eb5291d79ac811e927e01ff9b588c192dac8a4c955448c753b4c63ccc3a3b",
+        "byte_count_verified": true,
+        "sha256_verified": true
+      },
+      {
+        "source": "docs/phase-1-ui-reference-design/accessibility/DELIVERY_STREAM_ACCESSIBILITY_OBLIGATIONS.md",
+        "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ui-reference-design/accessibility/DELIVERY_STREAM_ACCESSIBILITY_OBLIGATIONS.md",
+        "bytes": 59569,
+        "sha256": "b2f9069352fb6b8eb169f64e3c33a1160d13693fa23362d63faaf15bc98e6d15",
+        "byte_count_verified": true,
+        "sha256_verified": true
+      },
+      {
+        "source": "docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md",
+        "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md",
+        "bytes": 24105,
+        "sha256": "fa3322d864dc8c29d2f7853d6dc9a961126f7a8aea2b575505997d05c3297064",
+        "byte_count_verified": true,
+        "sha256_verified": true
+      },
+      {
+        "source": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+        "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+        "bytes": 33807,
+        "sha256": "6fa43937ae5e590b31e4fc21ea9e1209d3bfcdf145a6698d2429125213166dec",
+        "byte_count_verified": true,
+        "sha256_verified": true
+      },
+      {
+        "source": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+        "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+        "bytes": 33498,
+        "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb",
+        "byte_count_verified": true,
+        "sha256_verified": true
+      },
+      {
+        "source": "scripts/validation/ui-stream-mapping.ps1",
+        "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/scripts/validation/ui-stream-mapping.ps1",
+        "bytes": 38967,
+        "sha256": "2c4509b4df40dd1f14c4bb53a35acff6799fde20e2be69d52f08db9e47babd38",
+        "byte_count_verified": true,
+        "sha256_verified": true
+      },
+      {
+        "source": "output/research/b01-recorded-coverage-2026-10-08/recorded-coverage.json",
+        "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-recorded-coverage-2026-10-08/recorded-coverage.json",
+        "bytes": 65896,
+        "sha256": "3b540c7112313b642805c0c84efb4148a985c609fb29e84f00b87002de449c3b",
+        "byte_count_verified": true,
+        "sha256_verified": true
+      },
+      {
+        "source": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+        "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+        "bytes": 13881,
+        "sha256": "9bbe87f5e563ab085603c5f925533f107b0559f5c698d7858458bd8d13648b54",
+        "byte_count_verified": true,
+        "sha256_verified": true
+      }
+    ]
+  },
+  "findings": [],
+  "assessments": [
+    {
+      "subject": "Retained HIGH/MEDIUM/LOW choice with newly unavailable WebGL",
+      "result": "PASS",
+      "reason": "D-045 separates the delivery stream from canvas/World entry. No failure or measurement changes a stream mid-session; ACT-09 requires refusal to retain the prior stream and state why. ACT-12 permits exit to a canonical semantic route. Therefore retaining a validly applied earlier 3D choice while useful semantic Services content stays open and no renderer is active derives from accepted rules; it does not admit a new 3D stream above the current ceiling or require a new product policy.",
+      "evidence": [
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/DECISIONS.md",
+          "line": 90
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ui-reference-design/accessibility/DELIVERY_STREAM_ACCESSIBILITY_OBLIGATIONS.md",
+          "line": 26
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md",
+          "line": 47
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md",
+          "line": 50
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 15
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "subject": "Chronology and current versus pending",
+      "result": "PASS",
+      "reason": "The pending distinct 3D candidate was selected while available; a valid current capability fact becomes unavailable before explicit Apply. All eight group names retain the applied current label and the checked radio identifies the refused pending choice. This is neither first-visit admission of an invalid saved 3D preference nor reapplication of the current choice. D-053's enabled no-op is therefore not relabeled as refusal.",
+      "evidence": [
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/DECISIONS.md",
+          "line": 109
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/DECISIONS.md",
+          "line": 587
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 15
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 31
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 40
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 140
+        }
+      ]
+    },
+    {
+      "subject": "Synthetic supplied fact and qualification limits",
+      "result": "PASS",
+      "reason": "The proposal expressly supplies a design-review predicate, not an observation on the founder's device. It excludes stale/unknown facts, an already-bound or wrong canvas, invalid configuration, exceptions and unrelated asset/transfer/HTTP failures from a verified capability refusal. It requires eventual correctly configured candidate/attempt-scoped qualification, while leaving implementation and its public-boundary tests to later work. No CPU/GPU class, permanent incapability, thermal threshold or invented tier follows from the context result.",
+      "evidence": [
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 17
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 20
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 24
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 25
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "subject": "Exact accepted notice and peer copy",
+      "result": "PASS",
+      "reason": "All eight notices preserve the exact D-057 accepted above-ceiling phrase, substituting only the supplied capability-reason slot. The four labels and their order match the accepted bundle, and group names use the current applied label. No error heading, danger styling, fallback framing or automatic stream substitution is proposed.",
+      "evidence": [
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/DECISIONS.md",
+          "line": 473
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ui-reference-design/accessibility/UG-3_CONTROL_COPY_PROPOSAL.md",
+          "line": 14
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ui-reference-design/accessibility/UG-3_CONTROL_COPY_PROPOSAL.md",
+          "line": 23
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ui-reference-design/accessibility/UG-3_CONTROL_COPY_PROPOSAL.md",
+          "line": 27
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 18
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 30
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "subject": "LOW refuses pending HIGH rather than semantic peer",
+      "result": "PASS",
+      "reason": "The supplied predicate excludes all three 3D candidates but permits Quick Access. Both LOW cases therefore use pending HIGH and explicitly reject reusing the existing OPEN/LOW master's pending Quick Access state. Refusing Quick Access here would contradict the fixture's own fact and the semantic peer rule. The proposal prepares an editable corrected reference without claiming it already exists.",
+      "evidence": [
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 22
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 93
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 113
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 193
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 213
+        }
+      ]
+    },
+    {
+      "subject": "Eight genuinely distinct missing host keys",
+      "result": "PASS",
+      "reason": "The recorded frozen coverage lists four empty ceiling-refusal keys for navigation and four for directory/search. The proposal corresponds to those keys and retains separate open-navigation and query/results host content; no generic recovery card is credited to both templates. This mapping is artifact identity and source coherence, not proof of existing frames or an eight-key correctness argument.",
+      "evidence": [
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-recorded-coverage-2026-10-08/recorded-coverage.json",
+          "line": 1112
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-recorded-coverage-2026-10-08/recorded-coverage.json",
+          "line": 1324
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+          "line": 21
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+          "line": 15
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+          "line": 104
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 35
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 149
+        }
+      ]
+    },
+    {
+      "subject": "Preservation and static evidence boundary",
+      "result": "PASS",
+      "reason": "Open host, route/location, useful content, directory query/results and private process lineage remain preserved as required outcomes. The proposal explicitly says static frames do not execute or prove preservation, focus, live announcements, native interaction or timing. Current choice is not silently replaced and the World is not re-entered.",
+      "evidence": [
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/DECISIONS.md",
+          "line": 158
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ui-reference-design/accessibility/UG-3_CONTROL_COPY_PROPOSAL.md",
+          "line": 50
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ui-reference-design/accessibility/DELIVERY_STREAM_ACCESSIBILITY_OBLIGATIONS.md",
+          "line": 869
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 36
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 37
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "subject": "No-canvas distinction and no new detector",
+      "result": "PASS",
+      "reason": "OBL-CTRL-05 prohibits a canvas anywhere in the semantic document. The proposal forbids an attached probe there and supplies the fact without implementing resources. Saying that this document-specific DOM rule alone does not exclude a detached candidate/preparation check neither selects nor qualifies that eventual detector. Its configuration, intent and resource ownership remain held. Actual references must continue to inherit accepted native controls, including textually explained disabled unavailable options; this review does not approve a new control behavior.",
+      "evidence": [
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ui-reference-design/accessibility/DELIVERY_STREAM_ACCESSIBILITY_OBLIGATIONS.md",
+          "line": 483
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/scripts/validation/ui-stream-mapping.ps1",
+          "line": 59
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/scripts/validation/ui-stream-mapping.ps1",
+          "line": 150
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 26
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "subject": "External permission and readiness boundaries",
+      "result": "PASS",
+      "reason": "The proposal allocates no call number, quota debit, immediate permission, nodes, pixels or runtime implementation. Frozen B01 instructions require fresh applicable permission for calls and separate full review/restore/_EXIT/founder acceptance. This receipt clears only this source-coherence review; it does not release any external operation or accept the fixture as production policy.",
+      "evidence": [
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/AGENTS.md",
+          "line": 29
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/DECISIONS.md",
+          "line": 481
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+          "line": 85
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+          "line": 140
+        },
+        {
+          "snapshot": "output/research/b01-ceiling-refusal-bindings-2026-10-09/review-inputs/output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+          "line": 254
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "No actual device/browser capability observation was made; the predicate is a synthetic design-review input.",
+    "No primary-source URLs were fetched. The receipt does not independently certify the proposal's dated MDN/Khronos research statements.",
+    "No runtime detector, application boundary, Figma node/frame/pixel, native interaction, focus/announcement, keyboard, assistive technology or accessibility conformance was verified.",
+    "No whole-B01 completeness, restore/_EXIT, founder acceptance, runtime readiness, execution-script readiness or external permission is established.",
+    "Review authority came from current governance and frozen accepted decisions; historical proposed labels in the obligations document are superseded by the explicit D-045 acceptance and D-057 copy decision.",
+    "Only this review receipt was written. No existing source, application, account, provider, credential, dependency, Git or protected model changes; no external calls or additional delegation."
+  ]
+}

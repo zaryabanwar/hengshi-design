@@ -1,0 +1,1641 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "scope": "Exact 48 Windows wheel identities, metadata licence declarations and full discovered notice byte inventory; no install/import",
+  "graph_sha256": "f979543df57552aac1c08dd61ac3f1322e3629777dfc10229e6ff976b5c47f1f",
+  "packages": [
+    {
+      "name": "alembic",
+      "version": "1.20.0",
+      "wheel": "alembic-1.20.0-py3-none-any.whl",
+      "wheel_bytes": 268719,
+      "wheel_sha256": "77eb101048d95f982c0353e9233404889dcd7a6fc244c107836c0e2fc9cf7d9d",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/alembic-1.20.0-py3-none-any.whl",
+      "metadata_sha256": "bd32c118c43955c106bfa4255b2fb5ac9db410b0f7255a4cafb14b9e221ff41c",
+      "metadata_license_expression": "MIT",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "alembic-1.20.0.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "alembic-1.20.0.dist-info/licenses/LICENSE",
+          "bytes": 1059,
+          "sha256": "6e68d94a03a0e3e327ddf3e86d1ebedc14eece3922022618fc246a36296fd0cc",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/alembic/notice-bytes/alembic-1.20.0.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5",
+      "wheel": "annotated_doc-0.0.5-py3-none-any.whl",
+      "wheel_bytes": 5302,
+      "wheel_sha256": "117bac03a25ede5df5440e855b32d556049ca169ead221505badf432fed4b101",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/annotated_doc-0.0.5-py3-none-any.whl",
+      "metadata_sha256": "8c24d70c5d9153d22123353a906042fd7603df2d15c2196290b0f8a962558c46",
+      "metadata_license_expression": "MIT",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "annotated_doc-0.0.5.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "annotated_doc-0.0.5.dist-info/licenses/LICENSE",
+          "bytes": 1086,
+          "sha256": "fff170779a6acbf65abdb405c087f1cee1786691e4a96a4034517e4a504a0cdf",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/annotated-doc/notice-bytes/annotated_doc-0.0.5.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "wheel": "annotated_types-0.8.0-py3-none-any.whl",
+      "wheel_bytes": 13427,
+      "wheel_sha256": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/annotated_types-0.8.0-py3-none-any.whl",
+      "metadata_sha256": "614985b278f601b8ef863f82783b991cc3ada4b89f592eb71c7c48c5f2ef2298",
+      "metadata_license_expression": "MIT",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "annotated_types-0.8.0.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "annotated_types-0.8.0.dist-info/licenses/LICENSE",
+          "bytes": 1083,
+          "sha256": "fe1049884b1a0d9342901e88e07f32925d24b3121d9972b6a6805fb9824b095d",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/annotated-types/notice-bytes/annotated_types-0.8.0.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "anyio",
+      "version": "4.15.1",
+      "wheel": "anyio-4.15.1-py3-none-any.whl",
+      "wheel_bytes": 132079,
+      "wheel_sha256": "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/anyio-4.15.1-py3-none-any.whl",
+      "metadata_sha256": "043aecb571af7189e8a6c528f5d8e32545f1b2cdfaaf761d51e6d5b67ea3ca81",
+      "metadata_license_expression": "MIT",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "anyio-4.15.1.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "anyio-4.15.1.dist-info/licenses/LICENSE",
+          "bytes": 1081,
+          "sha256": "5361ac9dc58f2ef5fd2e9b09c68297c17f04950909bbc8023bdb82eacf22c2b0",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/anyio/notice-bytes/anyio-4.15.1.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "authlib",
+      "version": "1.8.0",
+      "wheel": "authlib-1.8.0-py2.py3-none-any.whl",
+      "wheel_bytes": 260804,
+      "wheel_sha256": "88aebbd9af6757e14e912d5dc007ae1dc1f3e27e3b2152ce7c552ee2c3b3c121",
+      "wheel_source": "output/research/staff-identity-distribution-2026-10-09/authlib/wheel.gz",
+      "metadata_sha256": "cbe29efb9693e344288f0039d52650b3013a8d059da203839b57a3ee3e600253",
+      "metadata_license_expression": null,
+      "metadata_license": "BSD-3-Clause",
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "authlib-1.8.0.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "authlib-1.8.0.dist-info/licenses/LICENSE",
+          "bytes": 1514,
+          "sha256": "8e1b48518de9c6cd00cb48c7fe5b8023fd90d5552ca12ebe7362a0df30ddbe45",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/authlib/notice-bytes/authlib-1.8.0.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "bcrypt",
+      "version": "5.0.0",
+      "wheel": "bcrypt-5.0.0-cp39-abi3-win_amd64.whl",
+      "wheel_bytes": 150912,
+      "wheel_sha256": "64ee8434b0da054d830fa8e89e1c8bf30061d539044a39524ff7dec90481e5c2",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/bcrypt-5.0.0-cp39-abi3-win_amd64.whl",
+      "metadata_sha256": "8ef608800dfe16e1c892b7d04535647cada908b72b5ed60e4e72771c497f03b8",
+      "metadata_license_expression": null,
+      "metadata_license": "Apache-2.0",
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "bcrypt-5.0.0.dist-info/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "bcrypt-5.0.0.dist-info/LICENSE",
+          "bytes": 10850,
+          "sha256": "8173d5c29b4f956d532781d2b86e4e30f83e6b7878dce18c919451d6ba707c90",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/bcrypt/notice-bytes/bcrypt-5.0.0.dist-info/LICENSE"
+        }
+      ],
+      "binary_members": [
+        "bcrypt/_bcrypt.pyd"
+      ],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "wheel": "certifi-2026.7.22-py3-none-any.whl",
+      "wheel_bytes": 136983,
+      "wheel_sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/certifi-2026.7.22-py3-none-any.whl",
+      "metadata_sha256": "ef5af1638fbb23676ac3c5777dfcfc2cd9c348fe4172ed5ba3d277655b248090",
+      "metadata_license_expression": null,
+      "metadata_license": "MPL-2.0",
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "certifi-2026.7.22.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "certifi-2026.7.22.dist-info/licenses/LICENSE",
+          "bytes": 989,
+          "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/certifi/notice-bytes/certifi-2026.7.22.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "wheel": "cffi-2.1.1-cp314-cp314-win_amd64.whl",
+      "wheel_bytes": 187949,
+      "wheel_sha256": "3222ba5d678f80a030e6afbcc33dc1ae5cb45facabb61cee2c7016b8432fde48",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/cffi-2.1.1-cp314-cp314-win_amd64.whl",
+      "metadata_sha256": "67b6a7595df7ede2195016a05d285faa7d362a8f57c238984edb8bb674b5770d",
+      "metadata_license_expression": "MIT-0",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "cffi-2.1.1.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "cffi-2.1.1.dist-info/licenses/LICENSE",
+          "bytes": 1123,
+          "sha256": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/cffi/notice-bytes/cffi-2.1.1.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [
+        "_cffi_backend.cp314-win_amd64.pyd"
+      ],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "click",
+      "version": "8.5.0",
+      "wheel": "click-8.5.0-py3-none-any.whl",
+      "wheel_bytes": 125251,
+      "wheel_sha256": "255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/click-8.5.0-py3-none-any.whl",
+      "metadata_sha256": "e87bce0bd194de70dfb8e708e0a6b0483009f25611804eaf87bfeb63e6c20501",
+      "metadata_license_expression": "BSD-3-Clause",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE.txt",
+          "matches": [
+            "click-8.5.0.dist-info/licenses/LICENSE.txt"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "click-8.5.0.dist-info/licenses/LICENSE.txt",
+          "bytes": 1475,
+          "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/click/notice-bytes/click-8.5.0.dist-info/licenses/LICENSE.txt"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "wheel": "colorama-0.4.6-py2.py3-none-any.whl",
+      "wheel_bytes": 25335,
+      "wheel_sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/colorama-0.4.6-py2.py3-none-any.whl",
+      "metadata_sha256": "7baed29eb50c3b29bdb33ff84e3177bf1bc05784f7685ecdcaa4471c7dd810cc",
+      "metadata_license_expression": null,
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE.txt",
+          "matches": [
+            "colorama-0.4.6.dist-info/licenses/LICENSE.txt"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "colorama-0.4.6.dist-info/licenses/LICENSE.txt",
+          "bytes": 1491,
+          "sha256": "cac35c02686e5d04a5a7140bfb3b36e73aed496656e891102e428886d7930318",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/colorama/notice-bytes/colorama-0.4.6.dist-info/licenses/LICENSE.txt"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "cryptography",
+      "version": "50.0.2",
+      "wheel": "cryptography-50.0.2-cp311-abi3-win_amd64.whl",
+      "wheel_bytes": 3824692,
+      "wheel_sha256": "7afa5a6602a9f29af1f3a2965f831bae7c9d5d597b7cbb716d41ab3b7d89879c",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/cryptography-50.0.2-cp311-abi3-win_amd64.whl",
+      "metadata_sha256": "047cfc71226409de4318b360aef15c63a2adf609731e3dcf7fe932f14ea042ee",
+      "metadata_license_expression": "Apache-2.0 OR BSD-3-Clause",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "cryptography-50.0.2.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        },
+        {
+          "declaration": "LICENSE.APACHE",
+          "matches": [
+            "cryptography-50.0.2.dist-info/licenses/LICENSE.APACHE"
+          ],
+          "binding": "unique"
+        },
+        {
+          "declaration": "LICENSE.BSD",
+          "matches": [
+            "cryptography-50.0.2.dist-info/licenses/LICENSE.BSD"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "cryptography-50.0.2.dist-info/licenses/LICENSE",
+          "bytes": 197,
+          "sha256": "3e0c7c091a948b82533ba98fd7cbb40432d6f1a9acbf85f5922d2f99a93ae6bb",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/cryptography/notice-bytes/cryptography-50.0.2.dist-info/licenses/LICENSE"
+        },
+        {
+          "member": "cryptography-50.0.2.dist-info/licenses/LICENSE.APACHE",
+          "bytes": 11360,
+          "sha256": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/cryptography/notice-bytes/cryptography-50.0.2.dist-info/licenses/LICENSE.APACHE"
+        },
+        {
+          "member": "cryptography-50.0.2.dist-info/licenses/LICENSE.BSD",
+          "bytes": 1532,
+          "sha256": "602c4c7482de6479dd2e9793cda275e5e63d773dacd1eca689232ab7008fb4fb",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/cryptography/notice-bytes/cryptography-50.0.2.dist-info/licenses/LICENSE.BSD"
+        }
+      ],
+      "binary_members": [
+        "cryptography/hazmat/bindings/_rust.pyd"
+      ],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "dnspython",
+      "version": "2.8.0",
+      "wheel": "dnspython-2.8.0-py3-none-any.whl",
+      "wheel_bytes": 331094,
+      "wheel_sha256": "01d9bbc4a2d76bf0db7c1f729812ded6d912bd318d3b1cf81d30c0f845dbf3af",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/dnspython-2.8.0-py3-none-any.whl",
+      "metadata_sha256": "74f759539b89e299151b2d697c612307345b766dbb7e9435cf863a06981fd385",
+      "metadata_license_expression": null,
+      "metadata_license": "ISC",
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "dnspython-2.8.0.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "dnspython-2.8.0.dist-info/licenses/LICENSE",
+          "bytes": 1526,
+          "sha256": "c3ea3ff5654b329c19d3bc5f7481af623c3dded4a6145585499f843ad3d741cd",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/dnspython/notice-bytes/dnspython-2.8.0.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "email-validator",
+      "version": "2.3.0",
+      "wheel": "email_validator-2.3.0-py3-none-any.whl",
+      "wheel_bytes": 35604,
+      "wheel_sha256": "80f13f623413e6b197ae73bb10bf4eb0908faf509ad8362c5edeb0be7fd450b4",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/email_validator-2.3.0-py3-none-any.whl",
+      "metadata_sha256": "2a97b81eefcd856bc80b0346f47fa2d800b9a438bf8f9231ae00fe931d5c9fbc",
+      "metadata_license_expression": null,
+      "metadata_license": "Unlicense",
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "email_validator-2.3.0.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "email_validator-2.3.0.dist-info/licenses/LICENSE",
+          "bytes": 1212,
+          "sha256": "672179752e109134a3fb2bdd0780b29fdb7a03974f0f586a13aead5129562d4c",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/email-validator/notice-bytes/email_validator-2.3.0.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "fastapi",
+      "version": "0.143.0",
+      "wheel": "fastapi-0.143.0-py3-none-any.whl",
+      "wheel_bytes": 144665,
+      "wheel_sha256": "3e9395fd35276425b61b516a31fdd7c77fe2af83e41b4da22e30696fb1304c5d",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/fastapi-0.143.0-py3-none-any.whl",
+      "metadata_sha256": "1bfa2ecf35ea529d68e56c195c5a4cee7864335d24bcc4a76cf40d7a71edc6e9",
+      "metadata_license_expression": "MIT",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "fastapi-0.143.0.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "fastapi-0.143.0.dist-info/licenses/LICENSE",
+          "bytes": 1086,
+          "sha256": "4ec89ffc81485b97fec584b2d4a961032eeffe834453894fd9c1274906cc744e",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/fastapi/notice-bytes/fastapi-0.143.0.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "wheel": "h11-0.16.0-py3-none-any.whl",
+      "wheel_bytes": 37515,
+      "wheel_sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/h11-0.16.0-py3-none-any.whl",
+      "metadata_sha256": "28f326098ac09fcba79b8f180f96087c841fe2456215cb7b872a9c7d5cd19d64",
+      "metadata_license_expression": null,
+      "metadata_license": "MIT",
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE.txt",
+          "matches": [
+            "h11-0.16.0.dist-info/licenses/LICENSE.txt"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "h11-0.16.0.dist-info/licenses/LICENSE.txt",
+          "bytes": 1124,
+          "sha256": "37db5bb85926db28a427a25867f10b1232003aea1be69ccb851138adb8e6f361",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/h11/notice-bytes/h11-0.16.0.dist-info/licenses/LICENSE.txt"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9",
+      "wheel": "httpcore-1.0.9-py3-none-any.whl",
+      "wheel_bytes": 78784,
+      "wheel_sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/httpcore-1.0.9-py3-none-any.whl",
+      "metadata_sha256": "fe2d4fda6199128978779e0cf27f3c045c531863fcdd987eacc74f3a18d41c21",
+      "metadata_license_expression": "BSD-3-Clause",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE.md",
+          "matches": [
+            "httpcore-1.0.9.dist-info/licenses/LICENSE.md"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "httpcore-1.0.9.dist-info/licenses/LICENSE.md",
+          "bytes": 1518,
+          "sha256": "fdcb59154c74cbaba16a11242f7740bea9f23d6feb5547917d8c5f94a80392a5",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/httpcore/notice-bytes/httpcore-1.0.9.dist-info/licenses/LICENSE.md"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "httpcore2",
+      "version": "2.13.1",
+      "wheel": "httpcore2-2.13.1-py3-none-any.whl",
+      "wheel_bytes": 83423,
+      "wheel_sha256": "e1e05d4f25f7d7d496bfb96748f6f4b67657b03da069b3a68c36069f3db73d0a",
+      "wheel_source": "output/research/backend-wheel-notice-inventory-2026-10-09/httpcore2/wheel.gz",
+      "metadata_sha256": "37a0ea0674e98b7c3a1f99c17d9bb5457de27a0f93c8b6560c9d17d525139abb",
+      "metadata_license_expression": "BSD-3-Clause",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE.md",
+          "matches": [
+            "httpcore2-2.13.1.dist-info/licenses/LICENSE.md"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "httpcore2-2.13.1.dist-info/licenses/LICENSE.md",
+          "bytes": 1599,
+          "sha256": "c4df125c807b0613501e943a5c92496dd11d2c16604ce396097a8dde396304d9",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/httpcore2/notice-bytes/httpcore2-2.13.1.dist-info/licenses/LICENSE.md"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "httptools",
+      "version": "0.8.0",
+      "wheel": "httptools-0.8.0-cp314-cp314-win_amd64.whl",
+      "wheel_bytes": 92705,
+      "wheel_sha256": "19d1ee275bb59ba2643ba9a3a1e51cc0c788caf2b8df506368e03f56fdd08527",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/httptools-0.8.0-cp314-cp314-win_amd64.whl",
+      "metadata_sha256": "e2b04429eb51dcdaf38f3c02a66317e58234793143ee1eadc9b81988210400e6",
+      "metadata_license_expression": "MIT",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "httptools-0.8.0.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        },
+        {
+          "declaration": "vendor/http-parser/LICENSE-MIT",
+          "matches": [
+            "httptools-0.8.0.dist-info/licenses/vendor/http-parser/LICENSE-MIT"
+          ],
+          "binding": "unique"
+        },
+        {
+          "declaration": "vendor/llhttp/LICENSE",
+          "matches": [
+            "httptools-0.8.0.dist-info/licenses/vendor/llhttp/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "httptools-0.8.0.dist-info/licenses/LICENSE",
+          "bytes": 1114,
+          "sha256": "1c028b059d7a58e14ccda38cabced698c591fe614ffbe4f721430446e86c8d69",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/httptools/notice-bytes/httptools-0.8.0.dist-info/licenses/LICENSE"
+        },
+        {
+          "member": "httptools-0.8.0.dist-info/licenses/vendor/http-parser/LICENSE-MIT",
+          "bytes": 1096,
+          "sha256": "5cd1b682c0ccbac0cb31b86a9a1104c3e2e7b1377a282b8169d2694b400db7c2",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/httptools/notice-bytes/httptools-0.8.0.dist-info/licenses/vendor/http-parser/LICENSE-MIT"
+        },
+        {
+          "member": "httptools-0.8.0.dist-info/licenses/vendor/llhttp/LICENSE",
+          "bytes": 1091,
+          "sha256": "279012e02a10acfd59a3f2d8f13a497332535d871c2b27c89988985b06a3a438",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/httptools/notice-bytes/httptools-0.8.0.dist-info/licenses/vendor/llhttp/LICENSE"
+        }
+      ],
+      "binary_members": [
+        "httptools/parser/parser.cp314-win_amd64.pyd",
+        "httptools/parser/url_parser.cp314-win_amd64.pyd"
+      ],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1",
+      "wheel": "httpx-0.28.1-py3-none-any.whl",
+      "wheel_bytes": 73517,
+      "wheel_sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/httpx-0.28.1-py3-none-any.whl",
+      "metadata_sha256": "febb9b0f8f3e80d57c8199c304f35c4336e8581d1d18d7983c92766b82793b25",
+      "metadata_license_expression": null,
+      "metadata_license": "BSD-3-Clause",
+      "license_file_bindings": [],
+      "notice_files": [
+        {
+          "member": "httpx-0.28.1.dist-info/licenses/LICENSE.md",
+          "bytes": 1508,
+          "sha256": "4ec59d544f12b5f539a3a716fd321ac58ccd8030b465221f2c880200cdf28d8d",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/httpx/notice-bytes/httpx-0.28.1.dist-info/licenses/LICENSE.md"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "httpx2",
+      "version": "2.13.1",
+      "wheel": "httpx2-2.13.1-py3-none-any.whl",
+      "wheel_bytes": 95597,
+      "wheel_sha256": "6dff50fabc270ee5fd25d845d0b078ed20564579744d6d962850975996d2f9a4",
+      "wheel_source": "output/research/backend-wheel-notice-inventory-2026-10-09/httpx2/wheel.gz",
+      "metadata_sha256": "b75b03a003b5593e000907cf7239fcc3f688b8f17db4ecff883d11221ea988fc",
+      "metadata_license_expression": "BSD-3-Clause",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE.md",
+          "matches": [
+            "httpx2-2.13.1.dist-info/licenses/LICENSE.md"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "httpx2-2.13.1.dist-info/licenses/LICENSE.md",
+          "bytes": 1589,
+          "sha256": "7e7d6dbaf7fe160d39fd6e84fd02c33cab96bcbea34d36998d545bceb4a19c30",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/httpx2/notice-bytes/httpx2-2.13.1.dist-info/licenses/LICENSE.md"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "wheel": "idna-3.20-py3-none-any.whl",
+      "wheel_bytes": 69583,
+      "wheel_sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/idna-3.20-py3-none-any.whl",
+      "metadata_sha256": "dbd8c14c1e4ca1e0c9824a6dbc7cbbf78884f38eb52d91148cd3025f671e4b85",
+      "metadata_license_expression": "BSD-3-Clause",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE.md",
+          "matches": [
+            "idna-3.20.dist-info/licenses/LICENSE.md"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "idna-3.20.dist-info/licenses/LICENSE.md",
+          "bytes": 1541,
+          "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/idna/notice-bytes/idna-3.20.dist-info/licenses/LICENSE.md"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1",
+      "wheel": "iniconfig-2.3.1-py3-none-any.whl",
+      "wheel_bytes": 7552,
+      "wheel_sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/iniconfig-2.3.1-py3-none-any.whl",
+      "metadata_sha256": "47c2c35d936f5c649d8074c6464719a42966a67b5cebad01e3e5784cf090cfb6",
+      "metadata_license_expression": "MIT",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "iniconfig-2.3.1.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "iniconfig-2.3.1.dist-info/licenses/LICENSE",
+          "bytes": 1098,
+          "sha256": "3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/iniconfig/notice-bytes/iniconfig-2.3.1.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "joserfc",
+      "version": "1.7.5",
+      "wheel": "joserfc-1.7.5-py3-none-any.whl",
+      "wheel_bytes": 71269,
+      "wheel_sha256": "add2c2c84e8373b084d526a8b53daba5d7a513a118cd2dcd9fc9f979d0922159",
+      "wheel_source": "output/research/staff-identity-distribution-2026-10-09/joserfc/wheel.gz",
+      "metadata_sha256": "17df62bbdc7212bbcda3144e72720a62fc34bbf76c573062939120738545250f",
+      "metadata_license_expression": null,
+      "metadata_license": "BSD-3-Clause",
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "joserfc-1.7.5.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "joserfc-1.7.5.dist-info/licenses/LICENSE",
+          "bytes": 1501,
+          "sha256": "19ee1fafcc9ec4217fc32b8a651d820538c789cf4041cb4e46b4b176a5f2a9c8",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/joserfc/notice-bytes/joserfc-1.7.5.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "mako",
+      "version": "1.4.3",
+      "wheel": "mako-1.4.3-py3-none-any.whl",
+      "wheel_bytes": 80164,
+      "wheel_sha256": "723296007c870bfd6b3f0c3230dba7198096e5269297ebf5e4eff9e7ffa39d4f",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/mako-1.4.3-py3-none-any.whl",
+      "metadata_sha256": "39ea65f21e706265428ea6f2925520f419a10f0113a59318192ed38175d8838b",
+      "metadata_license_expression": "MIT",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "mako-1.4.3.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "mako-1.4.3.dist-info/licenses/LICENSE",
+          "bytes": 1098,
+          "sha256": "8c1d171bc5d341ad9cd33d5e2c39b96a82c7bd49b3ae89a470c37e5822232054",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/mako/notice-bytes/mako-1.4.3.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "markupsafe",
+      "version": "3.0.4",
+      "wheel": "markupsafe-3.0.4-cp314-cp314-win_amd64.whl",
+      "wheel_bytes": 14501,
+      "wheel_sha256": "c1bc67752d5f21013cfe430df4062441714eab79f65a6a05e01505957e9c35fe",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/markupsafe-3.0.4-cp314-cp314-win_amd64.whl",
+      "metadata_sha256": "08fa79954ab288d778b0fee4f0e6c7dbc869e545a415747d1324622465d3b08d",
+      "metadata_license_expression": "BSD-3-Clause",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE.txt",
+          "matches": [
+            "markupsafe-3.0.4.dist-info/licenses/LICENSE.txt"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "markupsafe-3.0.4.dist-info/licenses/LICENSE.txt",
+          "bytes": 1503,
+          "sha256": "4631ec0db5fd90a547e336817264c6798214338146f8ac94b4a57f96ee8c9ec4",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/markupsafe/notice-bytes/markupsafe-3.0.4.dist-info/licenses/LICENSE.txt"
+        }
+      ],
+      "binary_members": [
+        "markupsafe/_speedups.cp314-win_amd64.pyd"
+      ],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "opentelemetry-api",
+      "version": "1.45.1",
+      "wheel": "opentelemetry_api-1.45.1-py3-none-any.whl",
+      "wheel_bytes": 60256,
+      "wheel_sha256": "b31553efa588ae44bc306f863c785c5333a9ecc091248c6ee68b4b6c87fdedfb",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/opentelemetry_api-1.45.1-py3-none-any.whl",
+      "metadata_sha256": "5bc71e90cb421be92a43bf5ad5b0f25dccfa2a24ddceaa2877779879962a4c9e",
+      "metadata_license_expression": "Apache-2.0",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "opentelemetry_api-1.45.1.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "opentelemetry_api-1.45.1.dist-info/licenses/LICENSE",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/opentelemetry-api/notice-bytes/opentelemetry_api-1.45.1.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "wheel": "packaging-26.3-py3-none-any.whl",
+      "wheel_bytes": 129956,
+      "wheel_sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/packaging-26.3-py3-none-any.whl",
+      "metadata_sha256": "70fdb89fc4d4a9a043bf7372b8972bcc883fddff34ab55e9cf80d73875384763",
+      "metadata_license_expression": "Apache-2.0 OR BSD-2-Clause",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "packaging-26.3.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        },
+        {
+          "declaration": "LICENSE.APACHE",
+          "matches": [
+            "packaging-26.3.dist-info/licenses/LICENSE.APACHE"
+          ],
+          "binding": "unique"
+        },
+        {
+          "declaration": "LICENSE.BSD",
+          "matches": [
+            "packaging-26.3.dist-info/licenses/LICENSE.BSD"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "packaging-26.3.dist-info/licenses/LICENSE",
+          "bytes": 197,
+          "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/packaging/notice-bytes/packaging-26.3.dist-info/licenses/LICENSE"
+        },
+        {
+          "member": "packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+          "bytes": 10174,
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/packaging/notice-bytes/packaging-26.3.dist-info/licenses/LICENSE.APACHE"
+        },
+        {
+          "member": "packaging-26.3.dist-info/licenses/LICENSE.BSD",
+          "bytes": 1344,
+          "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/packaging/notice-bytes/packaging-26.3.dist-info/licenses/LICENSE.BSD"
+        },
+        {
+          "member": "packaging/licenses/__init__.py",
+          "bytes": 7859,
+          "sha256": "590d12eee73ddbec53b4e9ee5bfc64d9cb3aacb4940e8ebcba260757ce56740b",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/packaging/notice-bytes/packaging/licenses/__init__.py"
+        },
+        {
+          "member": "packaging/licenses/_spdx.py",
+          "bytes": 51122,
+          "sha256": "596ec35e2ca0ebcba9fd8343ff0a51625af548786257815f24b41f7e08613314",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/packaging/notice-bytes/packaging/licenses/_spdx.py"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0",
+      "wheel": "pluggy-1.6.0-py3-none-any.whl",
+      "wheel_bytes": 20538,
+      "wheel_sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/pluggy-1.6.0-py3-none-any.whl",
+      "metadata_sha256": "7438c35ee25a095eb7416f84b461c2d74425c5e734ad54c3912453c65244e01c",
+      "metadata_license_expression": null,
+      "metadata_license": "MIT",
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "pluggy-1.6.0.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "pluggy-1.6.0.dist-info/licenses/LICENSE",
+          "bytes": 1110,
+          "sha256": "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/pluggy/notice-bytes/pluggy-1.6.0.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "psycopg",
+      "version": "3.3.6",
+      "wheel": "psycopg-3.3.6-py3-none-any.whl",
+      "wheel_bytes": 215490,
+      "wheel_sha256": "a1db9f7148b06a28606767efaca51fa6f9398c5c0a3810519be69d7000bdb631",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/psycopg-3.3.6-py3-none-any.whl",
+      "metadata_sha256": "351960397d6b386beae931f5bfd945e8c1212e9505017d1b15c72d4c33bb00af",
+      "metadata_license_expression": "LGPL-3.0-only",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE.txt",
+          "matches": [
+            "psycopg-3.3.6.dist-info/licenses/LICENSE.txt"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "psycopg-3.3.6.dist-info/licenses/LICENSE.txt",
+          "bytes": 7652,
+          "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/psycopg/notice-bytes/psycopg-3.3.6.dist-info/licenses/LICENSE.txt"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "psycopg-binary",
+      "version": "3.3.6",
+      "wheel": "psycopg_binary-3.3.6-cp314-cp314-win_amd64.whl",
+      "wheel_bytes": 3755671,
+      "wheel_sha256": "1fbd30e537dab22cafdf080608f10148fe2a5f3a61294ddb5113caac8a623840",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/psycopg_binary-3.3.6-cp314-cp314-win_amd64.whl",
+      "metadata_sha256": "f2c36698ee3d46dc3bdc90d87baa7001914abc3535b20bd6f260d4e422b88463",
+      "metadata_license_expression": "LGPL-3.0-only",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE.txt",
+          "matches": [
+            "psycopg_binary-3.3.6.dist-info/licenses/LICENSE.txt"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "psycopg_binary-3.3.6.dist-info/licenses/LICENSE.txt",
+          "bytes": 7817,
+          "sha256": "7d3a95e5e06978064ed3f8e2b7c8f845e7fd8a405294727cc708f94cb83b8059",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/psycopg-binary/notice-bytes/psycopg_binary-3.3.6.dist-info/licenses/LICENSE.txt"
+        }
+      ],
+      "binary_members": [
+        "psycopg_binary/pq.cp314-win_amd64.pyd",
+        "psycopg_binary/_psycopg.cp314-win_amd64.pyd",
+        "psycopg_binary.libs/libcrypto-3-x64-ea7976933920057f9f21699ac9d19a81.dll",
+        "psycopg_binary.libs/libpq-6ec4534e177d3ba07a418d64cb93a2ca.dll",
+        "psycopg_binary.libs/libssl-3-x64-4bb9625beaf8f46929909974166d6f5a.dll"
+      ],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "pycparser",
+      "version": "3.1",
+      "wheel": "pycparser-3.1-py3-none-any.whl",
+      "wheel_bytes": 48709,
+      "wheel_sha256": "f09d358c840bd147b79e55f2bc494f18ea869dc897f5852a8f5766b74f787882",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/pycparser-3.1-py3-none-any.whl",
+      "metadata_sha256": "f4a14c8bb8bcb1139830e9722da8725fc36c8e22ee0d13e5d094b5b354f80a9d",
+      "metadata_license_expression": "BSD-3-Clause",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "pycparser-3.1.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "pycparser-3.1.dist-info/licenses/LICENSE",
+          "bytes": 1543,
+          "sha256": "0a9e78156ae8b96caf1b4f11ac2df424b83de29736f9e757630548a6272fdf90",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/pycparser/notice-bytes/pycparser-3.1.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "pydantic",
+      "version": "2.14.0",
+      "wheel": "pydantic-2.14.0-py3-none-any.whl",
+      "wheel_bytes": 487109,
+      "wheel_sha256": "15fab1bea6f1dc5003b54fc2ecab230c1fd1dbade2acd4addc52d81e32416d4b",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/pydantic-2.14.0-py3-none-any.whl",
+      "metadata_sha256": "11c8967cbcd622677943be38b48a3931cc524250acd9d8c7a6386408099c4cf9",
+      "metadata_license_expression": "MIT",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "pydantic-2.14.0.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "pydantic-2.14.0.dist-info/licenses/LICENSE",
+          "bytes": 1129,
+          "sha256": "a9e186f3ca16b5eef84318e7a701721351a00cb7b8ae3a4394b67b49e3529ef3",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/pydantic/notice-bytes/pydantic-2.14.0.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "pydantic-core",
+      "version": "2.50.0",
+      "wheel": "pydantic_core-2.50.0-cp314-cp314-win_amd64.whl",
+      "wheel_bytes": 2170939,
+      "wheel_sha256": "63263d64884688554fb025a3906c7b00573980cfee75f9afeb86239d577384bc",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/pydantic_core-2.50.0-cp314-cp314-win_amd64.whl",
+      "metadata_sha256": "c6a47d0c4ab47f3e16ff6dc06e5b77097c8144ad53cb91097cfe65e97614cbfc",
+      "metadata_license_expression": "MIT",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "pydantic_core-2.50.0.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "pydantic_core-2.50.0.dist-info/licenses/LICENSE",
+          "bytes": 1101,
+          "sha256": "fbe7f615f18d135c07000e5a86325db27f42c7729699ef166ac1f7a3f4586bf4",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/pydantic-core/notice-bytes/pydantic_core-2.50.0.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [
+        "pydantic_core/_pydantic_core.cp314-win_amd64.pyd"
+      ],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "pygments",
+      "version": "2.21.0",
+      "wheel": "pygments-2.21.0-py3-none-any.whl",
+      "wheel_bytes": 1250147,
+      "wheel_sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/pygments-2.21.0-py3-none-any.whl",
+      "metadata_sha256": "1dde075570136774c706bf0009183a793fe0ee262e4a5590cc6eff8453eedd43",
+      "metadata_license_expression": "BSD-2-Clause",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "AUTHORS",
+          "matches": [
+            "pygments-2.21.0.dist-info/licenses/AUTHORS"
+          ],
+          "binding": "unique"
+        },
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "pygments-2.21.0.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "pygments-2.21.0.dist-info/licenses/AUTHORS",
+          "bytes": 11048,
+          "sha256": "71a83872ad82f57be692cf827e048e2cd51d45169cfa1ea3f28706d97a872c0f",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/pygments/notice-bytes/pygments-2.21.0.dist-info/licenses/AUTHORS"
+        },
+        {
+          "member": "pygments-2.21.0.dist-info/licenses/LICENSE",
+          "bytes": 1331,
+          "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/pygments/notice-bytes/pygments-2.21.0.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "pyjwt",
+      "version": "2.15.1",
+      "wheel": "pyjwt-2.15.1-py3-none-any.whl",
+      "wheel_bytes": 33860,
+      "wheel_sha256": "42d59d631f7768a1028a64c7ff581a9bf7519804daf91fc5b6c56e30eec5e193",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/pyjwt-2.15.1-py3-none-any.whl",
+      "metadata_sha256": "1ea0c9f139b8c928276b3628af165955f6f764491448a6ad8f103cdcbb382da3",
+      "metadata_license_expression": "MIT",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "pyjwt-2.15.1.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        },
+        {
+          "declaration": "AUTHORS.rst",
+          "matches": [
+            "pyjwt-2.15.1.dist-info/licenses/AUTHORS.rst"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "pyjwt-2.15.1.dist-info/licenses/AUTHORS.rst",
+          "bytes": 322,
+          "sha256": "925ce43461029eedbf558ec0b7cf7fc4b045def5120ebb97937c70814071cf07",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/pyjwt/notice-bytes/pyjwt-2.15.1.dist-info/licenses/AUTHORS.rst"
+        },
+        {
+          "member": "pyjwt-2.15.1.dist-info/licenses/LICENSE",
+          "bytes": 1085,
+          "sha256": "797a7a20231d4c433e9f1911db1731d06b5828b98f499819a034f7c0f56f5ce5",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/pyjwt/notice-bytes/pyjwt-2.15.1.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "pytest",
+      "version": "9.1.1",
+      "wheel": "pytest-9.1.1-py3-none-any.whl",
+      "wheel_bytes": 386536,
+      "wheel_sha256": "37a86b45efb9a47a61a36449063e8e18d0cab3161329fc099eb21783169c4f0c",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/pytest-9.1.1-py3-none-any.whl",
+      "metadata_sha256": "c5d032518012789cabc870d46589aca3aeda36cf9fa4399ee88bda3d10438451",
+      "metadata_license_expression": "MIT",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "pytest-9.1.1.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "pytest-9.1.1.dist-info/licenses/LICENSE",
+          "bytes": 1091,
+          "sha256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/pytest/notice-bytes/pytest-9.1.1.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "pytest-asyncio",
+      "version": "1.4.0",
+      "wheel": "pytest_asyncio-1.4.0-py3-none-any.whl",
+      "wheel_bytes": 16930,
+      "wheel_sha256": "933ca923a23075a87fb7070c0ec272a6848489824d887c85c812670932835aa1",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/pytest_asyncio-1.4.0-py3-none-any.whl",
+      "metadata_sha256": "4e583f46befbdb780e30a98856ab46afb88da6e65b6c9fb94d3794746faa8516",
+      "metadata_license_expression": "Apache-2.0",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "pytest_asyncio-1.4.0.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "pytest_asyncio-1.4.0.dist-info/licenses/LICENSE",
+          "bytes": 11324,
+          "sha256": "a8ad31b1c3f40dca5a84119351b8fa8ddc868edd77fad8a8ebf6d8f2d16fa4ae",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/pytest-asyncio/notice-bytes/pytest_asyncio-1.4.0.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "python-dotenv",
+      "version": "1.2.4",
+      "wheel": "python_dotenv-1.2.4-py3-none-any.whl",
+      "wheel_bytes": 23266,
+      "wheel_sha256": "42269a8a5b3fd54ffa6f3d84b18abed50064717576b4ecf03dc4a55d8aa04fdc",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/python_dotenv-1.2.4-py3-none-any.whl",
+      "metadata_sha256": "87cfee6042412d48df1100ea7822684988c3f2b79de7a250f4717f4df3026d6f",
+      "metadata_license_expression": null,
+      "metadata_license": "BSD-3-Clause",
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "python_dotenv-1.2.4.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "python_dotenv-1.2.4.dist-info/licenses/LICENSE",
+          "bytes": 1556,
+          "sha256": "80619b7049f08c81683ad0e01f08f257a840652dd71ee83146d36658c7d2c2b9",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/python-dotenv/notice-bytes/python_dotenv-1.2.4.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "pyyaml",
+      "version": "6.0.3",
+      "wheel": "pyyaml-6.0.3-cp314-cp314-win_amd64.whl",
+      "wheel_bytes": 156429,
+      "wheel_sha256": "4a2e8cebe2ff6ab7d1050ecd59c25d4c8bd7e6f400f5f82b96557ac0abafd0ac",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/pyyaml-6.0.3-cp314-cp314-win_amd64.whl",
+      "metadata_sha256": "847a701020334386852b6e07bad1053cb0ce3da9ee1846e7e9d02b24e8bb3f8d",
+      "metadata_license_expression": null,
+      "metadata_license": "MIT",
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "pyyaml-6.0.3.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "pyyaml-6.0.3.dist-info/licenses/LICENSE",
+          "bytes": 1101,
+          "sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/pyyaml/notice-bytes/pyyaml-6.0.3.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [
+        "yaml/_yaml.cp314-win_amd64.pyd"
+      ],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "sqlalchemy",
+      "version": "2.1.4",
+      "wheel": "sqlalchemy-2.1.4-cp314-cp314-win_amd64.whl",
+      "wheel_bytes": 2431689,
+      "wheel_sha256": "080f8d853aac5bb5620f0ae6f46527397cf18dce0ec2b478b478469ef3cae2c4",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/sqlalchemy-2.1.4-cp314-cp314-win_amd64.whl",
+      "metadata_sha256": "c3e2b69f1b8399f54915d08b21e4672f2652473b5afa591581562ae075306bec",
+      "metadata_license_expression": "MIT",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "sqlalchemy-2.1.4.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        },
+        {
+          "declaration": "AUTHORS",
+          "matches": [
+            "sqlalchemy-2.1.4.dist-info/licenses/AUTHORS"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "sqlalchemy-2.1.4.dist-info/licenses/AUTHORS",
+          "bytes": 522,
+          "sha256": "11c9de6af24a1ce9db33019364c1c2441509d7dda13dc0949f1a4b83621b2195",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/sqlalchemy/notice-bytes/sqlalchemy-2.1.4.dist-info/licenses/AUTHORS"
+        },
+        {
+          "member": "sqlalchemy-2.1.4.dist-info/licenses/LICENSE",
+          "bytes": 1119,
+          "sha256": "9bb754071e711cf75728b9051b170bfb8f9e3b879c08386c96a36989c42cd5f1",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/sqlalchemy/notice-bytes/sqlalchemy-2.1.4.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [
+        "sqlalchemy/engine/_processors_cy.cp314-win_amd64.pyd",
+        "sqlalchemy/engine/_result_cy.cp314-win_amd64.pyd",
+        "sqlalchemy/engine/_row_cy.cp314-win_amd64.pyd",
+        "sqlalchemy/engine/_util_cy.cp314-win_amd64.pyd",
+        "sqlalchemy/sql/_cache_key_cy.cp314-win_amd64.pyd",
+        "sqlalchemy/sql/_util_cy.cp314-win_amd64.pyd",
+        "sqlalchemy/util/_collections_cy.cp314-win_amd64.pyd",
+        "sqlalchemy/util/_immutabledict_cy.cp314-win_amd64.pyd"
+      ],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "starlette",
+      "version": "1.7.0",
+      "wheel": "starlette-1.7.0-py3-none-any.whl",
+      "wheel_bytes": 78980,
+      "wheel_sha256": "67f8e99895493dd2911a03f11314af6ceebeae4e704bb9f43dfc6a9db151c93e",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/starlette-1.7.0-py3-none-any.whl",
+      "metadata_sha256": "f7870fc19ab7c2e364887057340b9fb47e9bda74d24b06c58ca399494abfe019",
+      "metadata_license_expression": "BSD-3-Clause",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE.md",
+          "matches": [
+            "starlette-1.7.0.dist-info/licenses/LICENSE.md"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "starlette-1.7.0.dist-info/licenses/LICENSE.md",
+          "bytes": 1518,
+          "sha256": "dcb95677a02240243187e964f941847d19b17821cf99e5afae684fab328c19bf",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/starlette/notice-bytes/starlette-1.7.0.dist-info/licenses/LICENSE.md"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "truststore",
+      "version": "0.10.4",
+      "wheel": "truststore-0.10.4-py3-none-any.whl",
+      "wheel_bytes": 18660,
+      "wheel_sha256": "adaeaecf1cbb5f4de3b1959b42d41f6fab57b2b1666adb59e89cb0b53361d981",
+      "wheel_source": "output/research/backend-wheel-notice-inventory-2026-10-09/truststore/wheel.gz",
+      "metadata_sha256": "509a7b67bff99f2d04f57251b5bdb761bd9429467e1cebc453b7f96be4108f5b",
+      "metadata_license_expression": "MIT",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "truststore-0.10.4.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "truststore-0.10.4.dist-info/licenses/LICENSE",
+          "bytes": 1086,
+          "sha256": "33be7b7e8fa4fd19b1760e1a8ed8a668bdab852c91b692dd41424bcb725a9fca",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/truststore/notice-bytes/truststore-0.10.4.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "typing-extensions",
+      "version": "4.16.0",
+      "wheel": "typing_extensions-4.16.0-py3-none-any.whl",
+      "wheel_bytes": 45571,
+      "wheel_sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/typing_extensions-4.16.0-py3-none-any.whl",
+      "metadata_sha256": "b05084ca1d50879865178d9fff9fabeab61bdfb1f361bfbde95421ffc8f9be46",
+      "metadata_license_expression": "PSF-2.0",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "typing_extensions-4.16.0.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "typing_extensions-4.16.0.dist-info/licenses/LICENSE",
+          "bytes": 13936,
+          "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/typing-extensions/notice-bytes/typing_extensions-4.16.0.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "wheel": "typing_inspection-0.4.4-py3-none-any.whl",
+      "wheel_bytes": 14750,
+      "wheel_sha256": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/typing_inspection-0.4.4-py3-none-any.whl",
+      "metadata_sha256": "bad3d9e6342ef6750cf5128ec942327b8bebdce0b6e4d6f67cb15b27ae5118da",
+      "metadata_license_expression": "MIT",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "typing_inspection-0.4.4.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "typing_inspection-0.4.4.dist-info/licenses/LICENSE",
+          "bytes": 1090,
+          "sha256": "804b59b25f2c31bd278f9202a19ae49a3945aa2664387e2d0a128c7cacc61ec3",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/typing-inspection/notice-bytes/typing_inspection-0.4.4.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.5",
+      "wheel": "tzdata-2026.5-py2.py3-none-any.whl",
+      "wheel_bytes": 347996,
+      "wheel_sha256": "b683bd1b6659ddcd810ff02ad09ba821d4bf1065072805063eb35c49617905ac",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/tzdata-2026.5-py2.py3-none-any.whl",
+      "metadata_sha256": "e0780e8b6dc8882ce87e871a9d4589d59cb05a0c2d64f58b1ba62cde1ee91f6a",
+      "metadata_license_expression": null,
+      "metadata_license": "Apache-2.0",
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "tzdata-2026.5.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        },
+        {
+          "declaration": "licenses/LICENSE_APACHE",
+          "matches": [
+            "tzdata-2026.5.dist-info/licenses/licenses/LICENSE_APACHE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "tzdata-2026.5.dist-info/licenses/LICENSE",
+          "bytes": 625,
+          "sha256": "df58f69ea88683035d720b5375bcef0cf5aeaa98a1d098d572e0992c378deb46",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/tzdata/notice-bytes/tzdata-2026.5.dist-info/licenses/LICENSE"
+        },
+        {
+          "member": "tzdata-2026.5.dist-info/licenses/licenses/LICENSE_APACHE",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/tzdata/notice-bytes/tzdata-2026.5.dist-info/licenses/licenses/LICENSE_APACHE"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.54.0",
+      "wheel": "uvicorn-0.54.0-py3-none-any.whl",
+      "wheel_bytes": 87427,
+      "wheel_sha256": "505bdb0f318731d45f1f712071fc781a8981f6847a31c902c9f5e652d4f67faf",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/uvicorn-0.54.0-py3-none-any.whl",
+      "metadata_sha256": "9399e5ddda3d26e842d6fb5420c38b0857aac568d53badbdc224b3a21339efa8",
+      "metadata_license_expression": "BSD-3-Clause",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE.md",
+          "matches": [
+            "uvicorn-0.54.0.dist-info/licenses/LICENSE.md"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "uvicorn-0.54.0.dist-info/licenses/LICENSE.md",
+          "bytes": 1526,
+          "sha256": "efe1acf3e62fb99c288b0ec73e5a773b7268ef4320fe757ea994214e4b63c371",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/uvicorn/notice-bytes/uvicorn-0.54.0.dist-info/licenses/LICENSE.md"
+        }
+      ],
+      "binary_members": [],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "watchfiles",
+      "version": "1.3.0",
+      "wheel": "watchfiles-1.3.0-cp310-abi3-win_amd64.whl",
+      "wheel_bytes": 290643,
+      "wheel_sha256": "1acabde19b67e673274e89a04d613b7fb1f122e2c4b8ec9a581e59c149264b61",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/watchfiles-1.3.0-cp310-abi3-win_amd64.whl",
+      "metadata_sha256": "3b30e7c9377f43cb59b408185ae7707ec55d5b746395bdaa32a45819ea49d78b",
+      "metadata_license_expression": null,
+      "metadata_license": "MIT",
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "watchfiles-1.3.0.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "watchfiles-1.3.0.dist-info/licenses/LICENSE",
+          "bytes": 1112,
+          "sha256": "2d40a03346bded8daa4bd22d23825a6f2568a0820fbef76ac05bae534421e189",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/watchfiles/notice-bytes/watchfiles-1.3.0.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [
+        "watchfiles/_rust_notify.pyd"
+      ],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    },
+    {
+      "name": "websockets",
+      "version": "17.2",
+      "wheel": "websockets-17.2-cp314-cp314-win_amd64.whl",
+      "wheel_bytes": 218104,
+      "wheel_sha256": "dac93bf7a9beb215be3282b8441173cd50806c41c007b8be9bb24e03c60ad563",
+      "wheel_source": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheelhouse/websockets-17.2-cp314-cp314-win_amd64.whl",
+      "metadata_sha256": "120a5bb2d761950170e22fc77a43536d157f85b1cf2bf9c413324bfdb35e46e7",
+      "metadata_license_expression": "BSD-3-Clause",
+      "metadata_license": null,
+      "license_file_bindings": [
+        {
+          "declaration": "LICENSE",
+          "matches": [
+            "websockets-17.2.dist-info/licenses/LICENSE"
+          ],
+          "binding": "unique"
+        }
+      ],
+      "notice_files": [
+        {
+          "member": "websockets-17.2.dist-info/licenses/LICENSE",
+          "bytes": 1538,
+          "sha256": "0f44514998aca209d3482d10204a8adf2aa4296ff157a36a5c0922f2280632d3",
+          "saved": "output/research/backend-wheel-notice-inventory-2026-10-09/websockets/notice-bytes/websockets-17.2.dist-info/licenses/LICENSE"
+        }
+      ],
+      "binary_members": [
+        "websockets/speedups.cp314-win_amd64.pyd"
+      ],
+      "limits": "Full saved notice bytes and declared-path bindings only; no legal applicability, complete embedded/transitive inventory or provenance assertion."
+    }
+  ],
+  "package_count": 48,
+  "notice_file_count": 60,
+  "no_discovered_notices": [],
+  "non_unique_declared_license_bindings": [],
+  "packages_with_binary_members": [
+    "bcrypt",
+    "cffi",
+    "cryptography",
+    "httptools",
+    "markupsafe",
+    "psycopg-binary",
+    "pydantic-core",
+    "pyyaml",
+    "sqlalchemy",
+    "watchfiles",
+    "websockets"
+  ],
+  "retained_bytes_before_receipt": 919072,
+  "protected_inputs_unchanged": true,
+  "limits": [
+    "Name/path discovery can miss embedded notices; saved text was not interpreted as legal clearance.",
+    "Metadata expressions and redistribution applicability require review against full texts and delivered release contents.",
+    "Binary member inventory does not identify every linked/bundled library or its licence/provenance.",
+    "No cryptographic attestations, advisories, release notice delivery, runtime or graph adoption proof."
+  ]
+}

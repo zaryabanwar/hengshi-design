@@ -1,0 +1,60 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "observed_at_utc": "2026-10-17T15:11:16.100367+00:00",
+  "context7_library": "/python/cpython",
+  "context7_scope": "Explicit env replaces normal inheritance; Windows SystemRoot requirement; -I ignores PYTHON* and removes user/script path; main guidance is not selected3.15 source admission.",
+  "official_sources": [
+    {
+      "url": "https://docs.python.org/3.14/library/subprocess.html",
+      "scope": "Complete env mapping and Windows SystemRoot prerequisite; no sandbox guarantee."
+    },
+    {
+      "url": "https://docs.python.org/3.14/using/cmdline.html#cmdoption-I",
+      "scope": "-I isolation differs from -B bytecode suppression and network/process controls."
+    }
+  ],
+  "pip_source_captures": [
+    {
+      "url": "https://raw.githubusercontent.com/pypa/pip/26.2.1/src/pip/_internal/operations/prepare.py",
+      "path": "output/research/python315-environment-preparation-2026-10-17/captures/prepare.py",
+      "bytes": 35030,
+      "sha256": "ccb9153120eef5c511d0a9c39b76d9dd0bc879a12b8492abaf5d3d5320cc94a4",
+      "scope": "Official source read only, not imported or executed"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/pypa/pip/26.2.1/src/pip/_internal/utils/temp_dir.py",
+      "path": "output/research/python315-environment-preparation-2026-10-17/captures/temp_dir.py",
+      "bytes": 9303,
+      "sha256": "4c388bf41cc4a767876a540b1f4ae1c8cde6db1bb274483d73ab758786d3e65f",
+      "scope": "Official source read only, not imported or executed"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/pypa/pip/26.2.1/src/pip/_internal/commands/install.py",
+      "path": "output/research/python315-environment-preparation-2026-10-17/captures/install.py",
+      "bytes": 33761,
+      "sha256": "0d11142c0f9319b08a86a0412e4adb0cacedc90e79ed06c37ba649518ba1db29",
+      "scope": "Official source read only, not imported or executed"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/pypa/pip/26.2.1/src/pip/_internal/cli/req_command.py",
+      "path": "output/research/python315-environment-preparation-2026-10-17/captures/req_command.py",
+      "bytes": 18952,
+      "sha256": "c16fa645c3ea3dccdeab1a7d490ff287761fad101802510065ec6d94b7036d47",
+      "scope": "Source evidence only, not imported or executed"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/pypa/pip/26.2.1/src/pip/_internal/network/lazy_wheel.py",
+      "path": "output/research/python315-environment-preparation-2026-10-17/captures/metadata.py",
+      "bytes": 7646,
+      "sha256": "cbd81592c7490928e72df633b3f9b70d8500b65de173f93ec453c305df4380eb",
+      "scope": "Source evidence only, not imported or executed"
+    }
+  ],
+  "pip_source_licence": "output/research/python315-control-preparation-2026-10-17/captures/pip-LICENSE.txt",
+  "limits": [
+    "Existing3.14.5 tests only; no actual runtime3.15 source/package/child-process qualification.",
+    "Only synthetic parent settings are used in tests; no real parent values, credentials or machine configuration are saved.",
+    "Lifecycle source assessment remains separate and cannot silently change the reviewed plan or claim acquired-body retention."
+  ]
+}

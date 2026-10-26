@@ -1,0 +1,294 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Prepared shared recovery composition only; no Figma execution",
+  "template_id": "TPL-SYSTEM-RECOVERY",
+  "states": [
+    {
+      "id": "STATE-LOADING",
+      "title": "Loading optional information",
+      "body": "Confirmed page content remains readable in this fixture. Optional information is not ready.",
+      "truth": "Prior eligible public page only",
+      "action": "Continue reading",
+      "action_kind": "same_document_no_mutation"
+    },
+    {
+      "id": "STATE-DEGRADED",
+      "title": "Some information is unavailable",
+      "body": "An optional part could not be shown. The current page and public navigation remain available.",
+      "truth": "Current confirmed public page; no stream change",
+      "action": "Open the directory",
+      "action_kind": "public_navigation"
+    },
+    {
+      "id": "STATE-EMPTY",
+      "title": "No items in this view",
+      "body": "This is an approved empty view in the reference fixture, not an error or an invented case study.",
+      "truth": "Confirmed empty collection in the fixture",
+      "action": "Browse services",
+      "action_kind": "canonical_link"
+    },
+    {
+      "id": "STATE-PENDING",
+      "title": "The outcome is not confirmed",
+      "body": "This request is still being checked. Do not repeat it as a new action until its existing outcome is reconciled.",
+      "truth": "Last confirmed record; pending is not success",
+      "action": "Check this request",
+      "action_kind": "same_operation_reconciliation_method_held"
+    },
+    {
+      "id": "STATE-UNAVAILABLE",
+      "title": "This action is unavailable",
+      "body": "No new action was accepted in this fixture. Public information remains available.",
+      "truth": "Confirmed unavailability, not live staff status",
+      "action": "Browse services",
+      "action_kind": "canonical_link"
+    },
+    {
+      "id": "STATE-OFFLINE",
+      "title": "Connection unavailable",
+      "body": "No fresh action or new content is confirmed while disconnected. The visible prior view makes no promise of offline storage.",
+      "truth": "Visible prior truth only; fresh availability unknown",
+      "action": "Check connection again",
+      "action_kind": "bounded_connectivity_read_no_redispatch"
+    },
+    {
+      "id": "STATE-ERROR",
+      "title": "The action did not complete",
+      "body": "This fixture represents a confirmed failure before a business action was admitted; it is not an unknown outcome.",
+      "truth": "Prior authoritative state; no successful new action",
+      "action": "Return to the current page",
+      "action_kind": "same_document_no_mutation"
+    },
+    {
+      "id": "STATE-PERMISSION-DENIED",
+      "title": "Private information is unavailable",
+      "body": "This access is not permitted. No private details or record-existence clues are shown.",
+      "truth": "Public location only; no permission grant",
+      "action": "Open the public website",
+      "action_kind": "canonical_link"
+    },
+    {
+      "id": "STATE-SESSION-EXPIRED",
+      "title": "Private access has expired",
+      "body": "Public pages remain available. Opening retained private work requires current verified access; this fixture does not restore it.",
+      "truth": "Last confirmed public context; permitted private state follows its separate lifecycle",
+      "action": "Open the public website",
+      "action_kind": "canonical_link",
+      "held": "Exact anonymous restoration, accessible continuation and duration remain held; do not display a fictitious sign-in or restore mechanism"
+    },
+    {
+      "id": "STATE-STALE",
+      "title": "This view is out of date",
+      "body": "The last confirmed information is labelled as earlier. Obtain the current eligible view before acting.",
+      "truth": "Earlier confirmed state, not current authority",
+      "action": "Check the current view",
+      "action_kind": "guarded_read_method_held"
+    },
+    {
+      "id": "STATE-CONFLICT",
+      "title": "The information changed",
+      "body": "No new change is confirmed. Review the current authoritative version before deciding what to do.",
+      "truth": "Current/previous version distinction; no automatic overwrite or retry",
+      "action": "Review the current view",
+      "action_kind": "guarded_read_method_held"
+    },
+    {
+      "id": "STATE-ASSET-FAILURE",
+      "title": "An optional visual could not load",
+      "body": "The relevant semantic information remains available in this fixture. The in-force delivery stream does not change silently.",
+      "truth": "Eligible public information; failed optional asset is not a closed service",
+      "action": "Open the semantic page",
+      "action_kind": "paired_canonical_link"
+    },
+    {
+      "id": "STATE-CHECKSUM-MISMATCH",
+      "title": "New content was not verified",
+      "body": "The unverified replacement was not activated. This fixture keeps the prior complete eligible release without mixing content.",
+      "truth": "Prior confirmed release only; candidate remains inactive",
+      "action": "Continue with confirmed content",
+      "action_kind": "same_document_no_mutation"
+    },
+    {
+      "id": "STATE-FOCUS",
+      "title": "Recovery action in focus",
+      "body": "The action has a visible focus indicator and a text label. This appearance is not executed keyboard evidence.",
+      "truth": "Focus appearance only; no action dispatch",
+      "action": "Open the directory",
+      "action_kind": "public_navigation"
+    },
+    {
+      "id": "STATE-STREAM-CHANGED",
+      "title": "Presentation choice applied",
+      "body": "Use the exact accepted D-057 notice supplied by the inherited stream component; the location and open context remain.",
+      "truth": "Synthetic confirmed stream change; shared control carries accepted copy",
+      "action": "Continue reading",
+      "action_kind": "same_document_no_mutation"
+    },
+    {
+      "id": "STATE-PREFERENCE-WRITE-FAILED",
+      "title": "Presentation applied for this session",
+      "body": "Use the exact accepted D-057 persistence notice supplied by the inherited stream component; saved preference is not confirmed.",
+      "truth": "Session choice applied; persistent write not confirmed",
+      "action": "Continue reading",
+      "action_kind": "same_document_no_mutation"
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "light",
+      "mode": "MODE-STANDARD",
+      "reference_tokens": {
+        "surface": "D035/palette/paper",
+        "text": "D035/palette/ink"
+      }
+    },
+    {
+      "id": "dark",
+      "mode": "MODE-STANDARD",
+      "reference_tokens": {
+        "surface": "D035/palette/ink",
+        "text": "D035/palette/white"
+      }
+    },
+    {
+      "id": "forced-colours-specimen",
+      "mode": "MODE-FORCED-COLORS",
+      "implementation_roles": [
+        "Canvas",
+        "CanvasText",
+        "ButtonFace",
+        "ButtonText",
+        "LinkText",
+        "Highlight",
+        "HighlightText"
+      ],
+      "limit": "Editable appearance and semantic role annotations only; actual OS/browser forced-colours mapping and behavior require later runtime evidence"
+    }
+  ],
+  "streams": [
+    {
+      "id": "S-HIGH",
+      "label": "Detailed 3D"
+    },
+    {
+      "id": "S-MEDIUM",
+      "label": "Balanced 3D"
+    },
+    {
+      "id": "S-LOW",
+      "label": "Simplified 3D"
+    },
+    {
+      "id": "S-SEMANTIC",
+      "label": "Quick Access"
+    }
+  ],
+  "profile": {
+    "profile_id": "SP-SYSTEM-RECOVERY",
+    "dimension": "state",
+    "applies_to": "Shared system status and recovery presentation",
+    "required_values": "STATE-LOADING;STATE-DEGRADED;STATE-EMPTY;STATE-PENDING;STATE-UNAVAILABLE;STATE-OFFLINE;STATE-ERROR;STATE-PERMISSION-DENIED;STATE-SESSION-EXPIRED;STATE-STALE;STATE-CONFLICT;STATE-ASSET-FAILURE;STATE-CHECKSUM-MISMATCH;STATE-FOCUS;STATE-STREAM-CHANGED;STATE-PREFERENCE-WRITE-FAILED",
+    "minimum_evidence": "Reusable focused frames for each class on light/dark/forced-color surfaces; route/flow host retains context",
+    "critical_distinct_frame_values": "STATE-PENDING;STATE-UNAVAILABLE;STATE-OFFLINE;STATE-ERROR;STATE-PERMISSION-DENIED;STATE-CHECKSUM-MISMATCH;STATE-STREAM-CHANGED;STATE-PREFERENCE-WRITE-FAILED",
+    "annotation_requirements": "What happened; what was preserved; authoritative state; smallest safe action; status semantics; no provider/secret/PII leakage",
+    "exception_rule": "This profile supplements rather than replaces a host template state profile",
+    "browser_profile": "BP-NFR-006",
+    "time_limit_branch": "TL-WARN-EXTEND"
+  },
+  "source_hashes": [
+    {
+      "path": "docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md",
+      "sha256": "fa3322d864dc8c29d2f7853d6dc9a961126f7a8aea2b575505997d05c3297064",
+      "matches_historical_fixture_input": true
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "sha256": "6fa43937ae5e590b31e4fc21ea9e1209d3bfcdf145a6698d2429125213166dec",
+      "matches_historical_fixture_input": true
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb",
+      "matches_historical_fixture_input": true
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "sha256": "fafea73bdcedcf3057d504b98514f5796b331bf0184d30d10a165aae754e336f",
+      "matches_historical_fixture_input": true
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "sha256": "2b543fbf8c00e244f705d0931bacb76f8a2405d2bbb9bb4e1593a28fa86d87f8",
+      "matches_historical_fixture_input": true
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "sha256": "bd75698b8611bcf08d64ef561b6136acd496361a86cf0cde11f341e3ecca5c20",
+      "matches_historical_fixture_input": false
+    },
+    {
+      "path": "output/research/b01-navigation-composition-2026-10-06/state-ledger.json",
+      "sha256": "f078e20b6fca5deec68a8876d83922d03064036aa797fb719cd6cae6d594da2b",
+      "matches_historical_fixture_input": true
+    }
+  ],
+  "external_calls": 0,
+  "limitations": [
+    "State language is proposed synthetic copy; no real service, record, staff availability, account existence, admission, cache, storage, retry, permission or restoration is claimed",
+    "Unknown/pending business outcomes must reconcile the same operation, not reuse a generic fresh retry",
+    "Anonymous recovery must not invent Microsoft/staff sign-in; accepted staff expiry remains a separate profile",
+    "Every class needs its own light/dark/forced-colour reference under the accepted profile; deduplication must name each applicable stream/profile without losing an obligation",
+    "Exact copy, token bindings, prototype, narrow/landscape/desktop/400% evidence, primitive states, independent review, export/restore/EXIT and founder pilot acceptance remain",
+    "Construction script is prepared locally, unexecuted and independently unreviewed. No created Figma nodes are claimed.",
+    "Historical fixture hashes are preserved separately. Current file identities do not establish independent re-review of all current source documents.",
+    "48 narrow shared grammar specimens supplement host coverage. Focus rings, forced-colours execution and complete-process behavior remain separate obligations."
+  ],
+  "historical_fixture_source_hashes": [
+    {
+      "path": "docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md",
+      "sha256": "fa3322d864dc8c29d2f7853d6dc9a961126f7a8aea2b575505997d05c3297064"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "sha256": "6fa43937ae5e590b31e4fc21ea9e1209d3bfcdf145a6698d2429125213166dec"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "sha256": "fafea73bdcedcf3057d504b98514f5796b331bf0184d30d10a165aae754e336f"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "sha256": "2b543fbf8c00e244f705d0931bacb76f8a2405d2bbb9bb4e1593a28fa86d87f8"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "sha256": "21833e0bf533d88243e3da34be6f7f2ca401c3401a907c719c58a4fcb2196fbf"
+    },
+    {
+      "path": "output/research/b01-navigation-composition-2026-10-06/state-ledger.json",
+      "sha256": "f078e20b6fca5deec68a8876d83922d03064036aa797fb719cd6cae6d594da2b"
+    }
+  ],
+  "fileKey": "GOmLP6Cv96l768ueSrZ5Dg",
+  "streamMasters": [
+    {
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "selected_stream_id": "S-SEMANTIC",
+      "id": "21:204",
+      "name": "State=PREFERENCE-WRITE-FAILED, Stream=SEMANTIC"
+    },
+    {
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC",
+      "selected_stream_id": "S-SEMANTIC",
+      "id": "21:272",
+      "name": "State=STREAM-CHANGED, Stream=SEMANTIC"
+    }
+  ]
+}

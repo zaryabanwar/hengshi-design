@@ -1,0 +1,146 @@
+{
+  "status": "DOING",
+  "scope": "IF-STAFF-09 directional shape encoding with prior reviewed HTTP fields only; additive encoding section and one illustrative operation ID corrected from 33 to 32 characters. No grants, timing, retention, HTTP/parser, persistence, app, runtime or production acceptance.",
+  "validation": {
+    "focused_schema_methods": 4,
+    "full_schema_methods": 38,
+    "ecmascript_revision_cases": 122,
+    "ecmascript_oracle": "BigInt comparison against 2**64-1; digit thresholds and canonical rejection",
+    "existing_node": "v24.14.0",
+    "prior_body_exact_prefix_after_one_example_repair": true,
+    "unchanged_guards": 12
+  },
+  "source_guidance": {
+    "checked_on": "2026-10-05",
+    "context7": "/python-jsonschema/jsonschema",
+    "opened_primary_urls": [
+      "https://json-schema.org/understanding-json-schema/reference/string",
+      "https://json-schema.org/understanding-json-schema/reference/combining"
+    ],
+    "record_type": "Source identities, not archived page content or library selection."
+  },
+  "files": [
+    {
+      "source": "docs/phase-1-architecture/contracts/availability-write.schema.json",
+      "snapshot": "00-availability-write.schema.json",
+      "bytes": 5135,
+      "sha256": "f6d18639e28f517c7d950cfee3c33795a41f31ce972cac810ca98edb2d398004"
+    },
+    {
+      "source": "scripts/validation/test_availability_write_schema.py",
+      "snapshot": "01-test_availability_write_schema.py",
+      "bytes": 8986,
+      "sha256": "79274e7eda092dfea5284edb56102e93b237908d5f0efdb46e89df32b0233253"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/AVAILABILITY_WRITE_HTTP.md",
+      "snapshot": "02-AVAILABILITY_WRITE_HTTP.md",
+      "bytes": 21261,
+      "sha256": "2b91f0f4164527c5a2ffae3cd28a39c1261f0a79d182d7ad5e487c95ebf46d51"
+    },
+    {
+      "source": "output/research/availability-write-shape-2026-10-05/availability-write.before.md",
+      "snapshot": "03-availability-write.before.md",
+      "bytes": 17992,
+      "sha256": "ecbe82a65d739857b78621a7800e11330b8f03dd464807dd36fe5920ab3dacc8"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/availability-read.schema.json",
+      "snapshot": "04-availability-read.schema.json",
+      "bytes": 2456,
+      "sha256": "6e8599d428a7219d6a31113648133ab51c2050d86fd115f5b8f74eadbd032638"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/AVAILABILITY_READ_HTTP.md",
+      "snapshot": "05-AVAILABILITY_READ_HTTP.md",
+      "bytes": 13180,
+      "sha256": "d85d2b581980aee36f3132f7de1ee2ae3633ae65bc4bbaf8e6dd49e3c98b4f0f"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/AVAILABILITY_CONSISTENCY.md",
+      "snapshot": "06-AVAILABILITY_CONSISTENCY.md",
+      "bytes": 14167,
+      "sha256": "6da0086b9c6ac49c2464f73a61793d410c7e04c1aaec8d83a328b377e5252a03"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "07-SECURITY_PRIVACY_CONTRACT.md",
+      "bytes": 24722,
+      "sha256": "74ab420b5bec9f0aad72f59178f4ea7c626bd14edfa9d4ba02f3aa1dd0a1a254"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "snapshot": "08-DATA_CONTRACT.md",
+      "bytes": 14779,
+      "sha256": "46acfea99e0d4db91fb84603699e577100fffa79ca34f242d658a41deab8fb33"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/interface-catalog.csv",
+      "snapshot": "09-interface-catalog.csv",
+      "bytes": 9367,
+      "sha256": "42018a3e5cc6c1edf488c392b0349688a92b2cab5a8f50e717f1bca84a70a49c"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/process-fields.csv",
+      "snapshot": "10-process-fields.csv",
+      "bytes": 71516,
+      "sha256": "5737b8f4bd47b90a5020ae8943cb2c7786582c605e14d97212b4334ffb26522a"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/availability-write-http-v1-2026-10-05.md",
+      "snapshot": "11-availability-write-http-v1-2026-10-05.md",
+      "bytes": 14104,
+      "sha256": "7444e129c34e8b78026ada42d0f3a9cda43c4426e745939cce95e00304774b1d"
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "12-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "13-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "PROJECT.md",
+      "snapshot": "14-PROJECT.md",
+      "bytes": 10942,
+      "sha256": "a483bd2713fe420322772ab7fb07c848aaf103088697c05ab91f35d2e5ea1461"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "15-DECISIONS.md",
+      "bytes": 72891,
+      "sha256": "1d53a14ac3347ebeefeeb728e03862b09de111b748cef4e48d5f4ca19141b6d8"
+    },
+    {
+      "source": "TASKS.md",
+      "snapshot": "16-TASKS.md",
+      "bytes": 3811,
+      "sha256": "158e06c0d8cd67859c8b459b96dce3449cb4d16788d3c520e99d8823f72edcd3"
+    },
+    {
+      "source": "specs/001-platform-security-hardening/spec.md",
+      "snapshot": "17-spec.md",
+      "bytes": 26311,
+      "sha256": "6649110c6ac2a83f4ac8840dbf0288792f6251dceb69e51e9da328bb8bd59b0b"
+    },
+    {
+      "source": "output/research/availability-write-shape-2026-10-05/correction-1/schema-suite.txt",
+      "snapshot": "18-schema-suite.txt",
+      "bytes": 142,
+      "sha256": "24e247dfeaf62ee51e07e9dfea90c1befe3c6e14f0451cbbe980744b51971a03"
+    },
+    {
+      "source": "output/research/availability-write-shape-2026-10-05/unchanged-inputs.json",
+      "snapshot": "19-unchanged-inputs.json",
+      "bytes": 1732,
+      "sha256": "504945e7cea518f0f5a1f9363d0dbca0b05b67b3b05dce2223c4b1608dd5cb83"
+    }
+  ],
+  "correction": "Canonical-only declared-URN lookup failed with a relative public-read reference in iteration 0. Use explicit public schema URN; fixtures exercise canonical identifiers and file aliases. Initial packet preserved, no PASS inherited.",
+  "supersedes_manifest_sha256": "e57991546f350a380c5f517fc05fcb15c433d4475eb12984a7e3965c3517689a"
+}

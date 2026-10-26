@@ -1,0 +1,581 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Prepared absolute argument vectors and environment policy, not an executable controller or permission",
+  "execution_authorized": false,
+  "all_commands_unexecuted": true,
+  "parent_plan": {
+    "path": "output/research/python315-build-proposal-2026-10-15/qualification-plan-v1.json",
+    "bytes": 15130,
+    "sha256": "15943219fd1008b882ed2a353697e4dd8170b8c729744470ee6b12ea6dfdb938"
+  },
+  "paths": {
+    "repo": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design",
+    "target": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15",
+    "runtime_python": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\runtime\\tools\\python.exe",
+    "build_python": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\build-env\\Scripts\\python.exe",
+    "qualification_python": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\qualification-env\\Scripts\\python.exe",
+    "build_roots": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-build-proposal-2026-10-15\\prospective-build-roots.txt",
+    "application_roots": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-build-proposal-2026-10-15\\prospective-roots.txt",
+    "build_hashed_requirements": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\bindings\\build-hashed.txt",
+    "full_hashed_requirements": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\bindings\\full-hashed.txt",
+    "build_wheelhouse": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\build-wheelhouse",
+    "full_wheelhouse": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\wheelhouse",
+    "pyyaml_dist1": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\dist1",
+    "pyyaml_dist2": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\dist2"
+  },
+  "commands": [
+    {
+      "id": "03-runtime-identity",
+      "status": "TODO",
+      "execution_authorized": false,
+      "argv": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\runtime\\tools\\python.exe",
+        "-I",
+        "-B",
+        "-c",
+        "import json,platform,struct,sys,sysconfig,pip; from pathlib import Path; expected=Path('C:\\\\Users\\\\Zaryab\\\\Documents\\\\Hengshi Design\\\\hengshi-design\\\\output\\\\research\\\\python315-native-2026-10-15\\\\runtime\\\\tools').resolve(); assert sys.version_info[:3]==(3,15,0) and sys.version_info.releaselevel==\"final\" and sys.version_info.serial==0; assert platform.python_implementation()==\"CPython\"; assert sys.platform==\"win32\" and struct.calcsize(\"P\")==8 and platform.machine().upper()==\"AMD64\"; assert sys._is_gil_enabled() is True; assert sysconfig.get_config_var(\"Py_GIL_DISABLED\") in (None,0,\"0\"); assert Path(sys.prefix).resolve()==expected; assert pip.__version__==\"26.2.1\"; print(json.dumps({\"python\":platform.python_version(),\"machine\":platform.machine(),\"prefix\":str(Path(sys.prefix).resolve()),\"pip\":pip.__version__,\"gil_enabled\":sys._is_gil_enabled(),\"free_threaded_build\":sysconfig.get_config_var(\"Py_GIL_DISABLED\")}))"
+      ],
+      "shell": false,
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15",
+      "timeout_seconds": 180,
+      "network_intent": "none intended",
+      "required_before_run": [
+        "Explicit trial permission, immutable owned admitted/extracted exact NuGet bytes, runtime inventory and independent controller review."
+      ],
+      "capture": "Owned stdout/stderr log files under target, with reviewed finite output reservation; preserve exit/status and failures; never infer terminal status from observation timeout."
+    },
+    {
+      "id": "04-build-resolution",
+      "status": "TODO",
+      "execution_authorized": false,
+      "argv": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\runtime\\tools\\python.exe",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "--isolated",
+        "--no-input",
+        "--keyring-provider",
+        "disabled",
+        "--disable-pip-version-check",
+        "--no-cache-dir",
+        "--retries",
+        "0",
+        "--resume-retries",
+        "0",
+        "install",
+        "--dry-run",
+        "--ignore-installed",
+        "--only-binary=:all:",
+        "--index-url",
+        "https://pypi.org/simple",
+        "--report",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\build-report.json",
+        "-r",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-build-proposal-2026-10-15\\prospective-build-roots.txt"
+      ],
+      "shell": false,
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15",
+      "timeout_seconds": 180,
+      "network_intent": "approved public PyPI metadata/files only",
+      "required_before_run": [
+        "Runtime identity and actual bundled pip config-source admission; exact root hashes; initial512MiB+1GiB admission; controller/process/URL/output controls.",
+        "Capture/retain metadata and acquired artifact bytes under the controller; pip flags alone do not prove this."
+      ],
+      "capture": "Owned stdout/stderr log files under target, with reviewed finite output reservation; preserve exit/status and failures; never infer terminal status from observation timeout."
+    },
+    {
+      "id": "06-build-wheel-acquisition",
+      "status": "TODO",
+      "execution_authorized": false,
+      "argv": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\runtime\\tools\\python.exe",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "--isolated",
+        "--no-input",
+        "--keyring-provider",
+        "disabled",
+        "--disable-pip-version-check",
+        "--no-cache-dir",
+        "--retries",
+        "0",
+        "--resume-retries",
+        "0",
+        "download",
+        "--require-hashes",
+        "--only-binary=:all:",
+        "--no-deps",
+        "--index-url",
+        "https://pypi.org/simple",
+        "--dest",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\build-wheelhouse",
+        "-r",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\bindings\\build-hashed.txt"
+      ],
+      "shell": false,
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15",
+      "timeout_seconds": 180,
+      "network_intent": "approved public PyPI exact reviewed files only",
+      "required_before_run": [
+        "Independent PASS on concrete build graph/closure and exact file bindings; stable/size/hash/80-distribution admission; command reservation."
+      ],
+      "capture": "Owned stdout/stderr log files under target, with reviewed finite output reservation; preserve exit/status and failures; never infer terminal status from observation timeout."
+    },
+    {
+      "id": "06-create-build-env",
+      "status": "TODO",
+      "execution_authorized": false,
+      "argv": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\runtime\\tools\\python.exe",
+        "-I",
+        "-B",
+        "-m",
+        "venv",
+        "--without-pip",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\build-env"
+      ],
+      "shell": false,
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15",
+      "timeout_seconds": 180,
+      "network_intent": "none intended",
+      "required_before_run": [
+        "No existing target environment; owned target; all before/after measurements and explicit permission."
+      ],
+      "capture": "Owned stdout/stderr log files under target, with reviewed finite output reservation; preserve exit/status and failures; never infer terminal status from observation timeout."
+    },
+    {
+      "id": "06-offline-build-install",
+      "status": "TODO",
+      "execution_authorized": false,
+      "argv": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\runtime\\tools\\python.exe",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "--isolated",
+        "--no-input",
+        "--keyring-provider",
+        "disabled",
+        "--disable-pip-version-check",
+        "--no-cache-dir",
+        "--retries",
+        "0",
+        "--resume-retries",
+        "0",
+        "--python",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\build-env\\Scripts\\python.exe",
+        "install",
+        "--no-index",
+        "--find-links",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\build-wheelhouse",
+        "--require-hashes",
+        "--only-binary=:all:",
+        "--no-deps",
+        "--no-compile",
+        "-r",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\bindings\\build-hashed.txt"
+      ],
+      "shell": false,
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15",
+      "timeout_seconds": 180,
+      "network_intent": "offline required; --no-index is not OS egress isolation",
+      "required_before_run": [
+        "All exact reviewed wheels admitted and notice inventory retained; actual offline/process controls reviewed; environment ownership; pending expansion reservations."
+      ],
+      "capture": "Owned stdout/stderr log files under target, with reviewed finite output reservation; preserve exit/status and failures; never infer terminal status from observation timeout."
+    },
+    {
+      "id": "06-build-pip-check",
+      "status": "TODO",
+      "execution_authorized": false,
+      "argv": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\runtime\\tools\\python.exe",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "--isolated",
+        "--no-input",
+        "--keyring-provider",
+        "disabled",
+        "--disable-pip-version-check",
+        "--no-cache-dir",
+        "--retries",
+        "0",
+        "--resume-retries",
+        "0",
+        "--python",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\build-env\\Scripts\\python.exe",
+        "check"
+      ],
+      "shell": false,
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15",
+      "timeout_seconds": 180,
+      "network_intent": "offline required",
+      "required_before_run": [
+        "Offline install terminal success and exact installed identity reconciliation."
+      ],
+      "capture": "Owned stdout/stderr log files under target, with reviewed finite output reservation; preserve exit/status and failures; never infer terminal status from observation timeout."
+    },
+    {
+      "id": "08-pyyaml-build-1",
+      "status": "TODO",
+      "execution_authorized": false,
+      "argv": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\runtime\\tools\\python.exe",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "--isolated",
+        "--no-input",
+        "--keyring-provider",
+        "disabled",
+        "--disable-pip-version-check",
+        "--no-cache-dir",
+        "--retries",
+        "0",
+        "--resume-retries",
+        "0",
+        "--python",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\build-env\\Scripts\\python.exe",
+        "wheel",
+        "--no-build-isolation",
+        "--check-build-dependencies",
+        "--no-deps",
+        "--no-index",
+        "--wheel-dir",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\dist1",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\src1\\pyyaml-6.0.3"
+      ],
+      "shell": false,
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15",
+      "timeout_seconds": 180,
+      "network_intent": "offline required; --no-index does not prohibit build-backend network",
+      "required_before_run": [
+        "Exact source/tag3-file comparison; two separate safe immutable source extractions and reserved outputs; reviewed actual build graph/dynamic requirements.",
+        "Process-local PYYAML_FORCE_LIBYAML=0 and SOURCE_DATE_EPOCH=1760000000; no compiler/LibYAML/source or flags substitution."
+      ],
+      "capture": "Owned stdout/stderr log files under target, with reviewed finite output reservation; preserve exit/status and failures; never infer terminal status from observation timeout."
+    },
+    {
+      "id": "08-pyyaml-build-2",
+      "status": "TODO",
+      "execution_authorized": false,
+      "argv": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\runtime\\tools\\python.exe",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "--isolated",
+        "--no-input",
+        "--keyring-provider",
+        "disabled",
+        "--disable-pip-version-check",
+        "--no-cache-dir",
+        "--retries",
+        "0",
+        "--resume-retries",
+        "0",
+        "--python",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\build-env\\Scripts\\python.exe",
+        "wheel",
+        "--no-build-isolation",
+        "--check-build-dependencies",
+        "--no-deps",
+        "--no-index",
+        "--wheel-dir",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\dist2",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\src2\\pyyaml-6.0.3"
+      ],
+      "shell": false,
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15",
+      "timeout_seconds": 180,
+      "network_intent": "offline required; --no-index does not prohibit build-backend network",
+      "required_before_run": [
+        "Exact source/tag3-file comparison; two separate safe immutable source extractions and reserved outputs; reviewed actual build graph/dynamic requirements.",
+        "Process-local PYYAML_FORCE_LIBYAML=0 and SOURCE_DATE_EPOCH=1760000000; no compiler/LibYAML/source or flags substitution."
+      ],
+      "capture": "Owned stdout/stderr log files under target, with reviewed finite output reservation; preserve exit/status and failures; never infer terminal status from observation timeout."
+    },
+    {
+      "id": "10-full-resolution",
+      "status": "TODO",
+      "execution_authorized": false,
+      "argv": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\runtime\\tools\\python.exe",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "--isolated",
+        "--no-input",
+        "--keyring-provider",
+        "disabled",
+        "--disable-pip-version-check",
+        "--no-cache-dir",
+        "--retries",
+        "0",
+        "--resume-retries",
+        "0",
+        "install",
+        "--dry-run",
+        "--ignore-installed",
+        "--only-binary=:all:",
+        "--index-url",
+        "https://pypi.org/simple",
+        "--find-links",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\dist1",
+        "--report",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\full-report.json",
+        "-r",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-build-proposal-2026-10-15\\prospective-roots.txt"
+      ],
+      "shell": false,
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15",
+      "timeout_seconds": 180,
+      "network_intent": "approved public PyPI plus admitted local exact PyYAML wheel",
+      "required_before_run": [
+        "Both full wheel hashes equal and wheel metadata/native-member/RECORD/notices admission; unchanged14 roots/extras; runtime identity and byte reservations."
+      ],
+      "capture": "Owned stdout/stderr log files under target, with reviewed finite output reservation; preserve exit/status and failures; never infer terminal status from observation timeout."
+    },
+    {
+      "id": "12-full-wheel-acquisition",
+      "status": "TODO",
+      "execution_authorized": false,
+      "argv": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\runtime\\tools\\python.exe",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "--isolated",
+        "--no-input",
+        "--keyring-provider",
+        "disabled",
+        "--disable-pip-version-check",
+        "--no-cache-dir",
+        "--retries",
+        "0",
+        "--resume-retries",
+        "0",
+        "download",
+        "--require-hashes",
+        "--only-binary=:all:",
+        "--no-deps",
+        "--index-url",
+        "https://pypi.org/simple",
+        "--find-links",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\dist1",
+        "--dest",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\wheelhouse",
+        "-r",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\bindings\\full-hashed.txt"
+      ],
+      "shell": false,
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15",
+      "timeout_seconds": 180,
+      "network_intent": "approved public PyPI exact reviewed files and admitted local PyYAML wheel only",
+      "required_before_run": [
+        "Independent PASS on concrete full graph/marker-extra closure, exact local PyYAML selection,80-distribution ceiling and all file bindings."
+      ],
+      "capture": "Owned stdout/stderr log files under target, with reviewed finite output reservation; preserve exit/status and failures; never infer terminal status from observation timeout."
+    },
+    {
+      "id": "12-create-qualification-env",
+      "status": "TODO",
+      "execution_authorized": false,
+      "argv": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\runtime\\tools\\python.exe",
+        "-I",
+        "-B",
+        "-m",
+        "venv",
+        "--without-pip",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\qualification-env"
+      ],
+      "shell": false,
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15",
+      "timeout_seconds": 180,
+      "network_intent": "none intended",
+      "required_before_run": [
+        "Owned absent environment and reserved retained/free bytes."
+      ],
+      "capture": "Owned stdout/stderr log files under target, with reviewed finite output reservation; preserve exit/status and failures; never infer terminal status from observation timeout."
+    },
+    {
+      "id": "12-offline-full-install",
+      "status": "TODO",
+      "execution_authorized": false,
+      "argv": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\runtime\\tools\\python.exe",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "--isolated",
+        "--no-input",
+        "--keyring-provider",
+        "disabled",
+        "--disable-pip-version-check",
+        "--no-cache-dir",
+        "--retries",
+        "0",
+        "--resume-retries",
+        "0",
+        "--python",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\qualification-env\\Scripts\\python.exe",
+        "install",
+        "--no-index",
+        "--find-links",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\wheelhouse",
+        "--require-hashes",
+        "--only-binary=:all:",
+        "--no-deps",
+        "--no-compile",
+        "-r",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\bindings\\full-hashed.txt"
+      ],
+      "shell": false,
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15",
+      "timeout_seconds": 180,
+      "network_intent": "offline required",
+      "required_before_run": [
+        "Admitted complete exact reviewed wheelhouse and local built wheel; reviewed offline/process controls; exact hashed requirements and reservation."
+      ],
+      "capture": "Owned stdout/stderr log files under target, with reviewed finite output reservation; preserve exit/status and failures; never infer terminal status from observation timeout."
+    },
+    {
+      "id": "12-full-pip-check",
+      "status": "TODO",
+      "execution_authorized": false,
+      "argv": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\runtime\\tools\\python.exe",
+        "-I",
+        "-B",
+        "-m",
+        "pip",
+        "--isolated",
+        "--no-input",
+        "--keyring-provider",
+        "disabled",
+        "--disable-pip-version-check",
+        "--no-cache-dir",
+        "--retries",
+        "0",
+        "--resume-retries",
+        "0",
+        "--python",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\qualification-env\\Scripts\\python.exe",
+        "check"
+      ],
+      "shell": false,
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15",
+      "timeout_seconds": 180,
+      "network_intent": "offline required",
+      "required_before_run": [
+        "Offline install success and installed identity/file reconciliation to the full graph."
+      ],
+      "capture": "Owned stdout/stderr log files under target, with reviewed finite output reservation; preserve exit/status and failures; never infer terminal status from observation timeout."
+    },
+    {
+      "id": "13-library-probes",
+      "status": "TODO",
+      "execution_authorized": false,
+      "argv": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\qualification-env\\Scripts\\python.exe",
+        "-I",
+        "-B",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\test-client-graph-2026-10-09\\run_probes.py",
+        "-c",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\pytest.ini",
+        "--noconftest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_asyncio.plugin",
+        "-q",
+        "--basetemp",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\tmp\\pytest",
+        "--junitxml",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\library-probes.xml",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\backend-crypto-graph-2026-10-08\\native-probes\\test_libraries.py",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\test-client-graph-2026-10-09\\test_client_coexistence.py",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-build-proposal-2026-10-15\\test_yaml_parser_boundary.py"
+      ],
+      "shell": false,
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15",
+      "timeout_seconds": 180,
+      "network_intent": "offline required; no listener/database/provider calls",
+      "required_before_run": [
+        "All3 exact probe hashes unchanged; expected24 cases with no failures/errors/skips and existing warning-filter runner re-reviewed for selected graph.",
+        "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1; original pytest.ini exact byte copy; no test expectation/assertion change or package fallback.",
+        "The exact --basetemp directory must be absent and owned at invocation. pytest can clear an existing basetemp; refuse if present, never authorize that deletion or rerun automatically. Original fixture/test behavior stays unchanged."
+      ],
+      "capture": "Owned stdout/stderr log files under target, with reviewed finite output reservation; preserve exit/status and failures; never infer terminal status from observation timeout."
+    }
+  ],
+  "child_environment_policy": {
+    "inherit": "Do not copy the whole parent environment; no saved environment values or credentials. The implementation and its allowlist remain to be reviewed.",
+    "preserve_names_only": [
+      "SystemRoot",
+      "WINDIR"
+    ],
+    "set_process_local": {
+      "PIP_CONFIG_FILE": "nul",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONNOUSERSITE": "1",
+      "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+      "TEMP": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\tmp",
+      "TMP": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\tmp"
+    },
+    "path_policy": "Derive absolute Windows system utility path only from checked SystemRoot and use the current private runtime/environment Scripts paths; no inherited arbitrary PATH. Concrete implementation remains TODO.",
+    "excluded_inheritance": "No parent PYTHONPATH/PYTHONHOME/PYTEST_ADDOPTS/PIP_* except explicitly set PIP_CONFIG_FILE, proxy credentials, virtualenv activation, SSL overrides, keyring settings or compiler/build injection. Do not log original values.",
+    "build_only": {
+      "PYYAML_FORCE_LIBYAML": "0",
+      "SOURCE_DATE_EPOCH": "1760000000"
+    }
+  },
+  "precreated_owned_files": [
+    {
+      "destination": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-native-2026-10-15\\pytest.ini",
+      "source": {
+        "path": "output/research/test-client-graph-2026-10-09/native-trial/pytest.ini",
+        "bytes": 80,
+        "sha256": "5d7c6a470461c63418eda1c2bb840cf1ad362afd016c871c02eb7cbdbe542af5"
+      },
+      "policy": "Future byte-for-byte copy only after controller review/admission/permission."
+    }
+  ],
+  "reused_runner": {
+    "path": "output/research/test-client-graph-2026-10-09/run_probes.py",
+    "bytes": 1188,
+    "sha256": "b5fb60d328e9d3fb65a22e9ea19627e77c07c0f72f2abad5698daee4d81c9a8f"
+  },
+  "inputs_not_yet_available": [
+    "Actual runtime archive/bundled pip bytes and verified runtime identity.",
+    "Exact reviewed build/full reports and generated hashed requirements/wheel inventories; absolute paths here do not supply those bytes.",
+    "Acquisition/extraction/reservation measurements, immutable-stream ownership and owned process-tree controller."
+  ],
+  "remaining_technical_gates": [
+    "Implement and review acquisition controls and safe destination/stream ownership, archive inventory/extraction binding and retained-byte measurement.",
+    "Implement and review process-local environment construction and exact source/runtime identity checks, deadlines, stdout/stderr/output reservations, failure preservation and owned process-tree stop/wait.",
+    "Resolve what enforces offline build/install/probe operation; --no-index/local inputs do not themselves fence backend or subprocess networking. Do not claim OS egress isolation.",
+    "Resolve preserving all acquisition/resolution bytes through pip normal temporary-file lifecycle; this manifest does not silently add --no-clean or change the accepted pipeline.",
+    "Review actual bundled pip26.2.1 config/command behavior, not only existing26.1.1 or upstream sources.",
+    "Independent code/controller and concrete graph reviews plus explicit trial execution approval before running any listed argv."
+  ],
+  "limits": [
+    "No target creation, acquisition, package-manager invocation, venv/build/install/probe or trial execution occurred.",
+    "Resource arithmetic is admission from supplied snapshots, not physical quota or competing-writer enforcement.",
+    "Not full pipeline/controller review, graph selection, production adoption, security/licence clearance or Phase1 acceptance."
+  ]
+}

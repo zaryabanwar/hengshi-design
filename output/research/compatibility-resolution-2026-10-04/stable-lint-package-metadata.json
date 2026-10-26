@@ -1,0 +1,860 @@
+{
+  "eslint-plugin-react-hooks": {
+    "tags": {
+      "beta": "5.1.0-beta-26f2496093-20240514",
+      "rc": "6.0.0-rc.2",
+      "latest": "7.1.1",
+      "next": "7.1.1-canary-d5736f09-20260507",
+      "experimental": "0.0.0-experimental-278794d7-20261002",
+      "canary": "7.1.1-canary-278794d7-20261002"
+    },
+    "versions": {
+      "4.0.0": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "81196b990043cde339e25c6662aeebe32ac52d01",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.0.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-YKBY+kilK5wrwIdQnCF395Ya6nDro3EAMoe+2xFkmyklyhF16fH83TrQOo9zbZIDxBsXFgBbywta/0JKRNFDkw==",
+          "signatures": [
+            {
+              "sig": "MEQCIErSLw/JqAASEBQ18BBIMFv4UN/SiKFvdEGJEW31pi0tAiBKEYX987V3xtIz+R6iVIVxfAOZQUffS3bweWMMG5loHg==",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 110332,
+          "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJerEt3CRA9TVsSAnZWagAAACsP/0k86aDP3NgsmgmznevB\n7MS7p3ZzVLZYygP296ZBKq3ZTCEtuQ421+GIJ8mXJvKlVXA449GyVoP0RTL2\ns7lYcQUZk+BFthZBBSFGOAZQplOD+fzuQsl9PN5OTLFvrxmC5ed/PNg/qiZk\n6LkY6TfqbpiMQ+KJyB/wgDvXSsWQAokSxYF8Jchlk+/nv6Aym77tGUqR8lq1\n7egZJyoDdQPF3WY8P8pVcETdjBCHQ6sapCf6AGwXpKEANSV1jYbjbVhlxQAY\nokNmp/GlvJSoU+jAWdnhhGxEzx9G4v6VcKfb8Ea1XX9ygrd6BDd2HmLyNB/o\nR0MtqoYuyeB40Sa3eBtEcMT2lxlqwFabC7qzsbsMiAoUbLeWqWM0Gc2QxHoA\ndivGyI3jNsLCNZWKaRml1J1xuv1vZRuFvWNgX5wObBgaedJBmPgJSMsd0xI6\ne0OfKAAPFc3SgA1+uPRBmph/67wf8aZt63mqUilNXle2rxCnqHo2O90ogI4h\nV2Eftnto+Qh7KGkmxZRiCMUnascaW/TDip/VhzXo+OGWGITsW5mC+xbyQ2rC\nIWYnv90KKZEXN+siYJwv1jFvBUn7kPoSXF6r678JVnGFOfbk+IZl0D4+nYM0\nhdPghRoo8Ptv79XuHTsjFaWz6paydr/D7apuc2Rg4hl9ENLYxQt4nqbWhv6H\nDWgi\r\n=mplM\r\n-----END PGP SIGNATURE-----\r\n"
+        },
+        "published": "2020-05-01T16:16:55.578Z"
+      },
+      "4.0.1": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "c90fbb8726e35aadff94c9613ebd5c4de375412b",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.1.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-toTyfu0gFyZD9Ru3QEeVwfeK8T0lf31bZaknmbFRSDbiJdrzHKNBOh2NIwlepLLpvnhwMWWNbq3t+x0VoyQ1iw==",
+          "signatures": [
+            {
+              "sig": "MEUCIQDDTpoWMtlwl5Wb5BXtXOdh4bQloVUuaRMs0VPBk2sfmgIgQ62koHuH0vXdxarNa3YZqvt9ewjQ5fsAjgR9x0CQGp4=",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 110792,
+          "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeus1ICRA9TVsSAnZWagAACSMP/Al8kPMUGcPqs0ga3y6I\ntm/yGbwirTHnpFYILZ+nUz26zq0VKHNeP9N2U2bKuNTwGewv0juj2smVP3JG\nFnxDzA4WIjE8pbxyIh+ThNiSxF7CE3Zff8sylBEsejp8KScARS0XHWocV2pr\nl/LmVF9J/qxBYVeUkAEg5u0SlqU2OAJnfTJMijaVeZdOuUees/Z5m3SlZ9p6\n6dx9aAutnwyeigR6eN01ZLzGl6MCm4WiZqSQDLGqly07x/rMgtr+j6q1dupZ\n/YjytCT4An2Vw+QpmJ++b2h9I0+UEro4Ui5RIXmNSf4Q/8+3PVpKBGK1Q4gX\nbVOu2uKUhz3GxrXzkgiY7sfLMUVXH7fWNe1PRluXhdtToEAmCAKens7QH45F\ncYV5Q3ns207iaKYG5FIxjPw/usYc5y2IfylW4qrw33vkooJ5eTDzbybVoeh7\nnltNVVlysYr0pvWqSnpVpmwFvKzuDT5IkscsztLE/6v1Yw5UBPwhuTnMwMVr\nnq3n3BkbCsNvaB0A5spS4bsxmL2dR0suPpFEJ8ve2sIJhkR9ial/mq1ZzRul\nRw78OB/N1xv9Abq0Hftc+hPoh1CFiJb70YUx04psbzlodt0XktMNEM5dhZsc\nvTcK4KQBjlO9v+RaEPganB/t1Q6+ZnU41z1si1oe/oAApUn4wFqMktonrlei\nNRMi\r\n=RwWi\r\n-----END PGP SIGNATURE-----\r\n"
+        },
+        "published": "2020-05-12T16:22:31.686Z"
+      },
+      "4.0.2": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "03700ca761eacc1b6436074c456f90a8e331ff28",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.2.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-kAMRjNztrLW1rK+81X1NwMB2LqG+nc7Q8AibnG8/VyWhQK8SP6JotCFG+HL4u1EjziplxVz4jARdR8gGk8pLDA==",
+          "signatures": [
+            {
+              "sig": "MEYCIQCpAFuU3hZ8yUsWe3+64ZzY+J8GmoZ1qL9GX9eR0xBEVgIhAM2klZfnt27FJUkAWy1DtJitW1m0GkPnv+4fE7e7z9t6",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 110796,
+          "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJevBfuCRA9TVsSAnZWagAAKzIP/3cM4Na2AvVXAbZkf7/L\nNfnWjvwNsBwWCyLwMeOMEOqjapE7q1FmESpsdzHZp1nEVVRpFj+Fdneh6C9o\nPFsHG9Rozvp04+PH56OErw9bBD8HYcFWWsZM5SmJXd+5f3TydFrrQzCpMVkk\nBzqLpkqJyh7KnzeWgYLZelWYU/pdeitZoJrUdLh7nCqFZc9Hdvt7kXEirlmT\n+YT0PFMD9ZhbwUKtfaa9yQfFiAf5iPJKAFlq2LJLxS0FUesono430lphZT0U\nTQ1eCWO9a22WMCHccMiNCh87YaAH77qP67BNcWBtwTGy4W6U2IYnERJLbTqw\nhLEHkQXAFvDl4ooRHEhOcMAs5sQc/VqLg1e0pdFWKnQLawpqGS5gchGZxHje\nmd7JaIn9d1SgtKSPd5+N18N1JWxbaefGD1znIc7k9vlQOkYl9iuDYPGx1tUx\nJIB+9qKIM3snqzBw9w4nv9Wf8USVXgfeY84rFAFZ35f4+PWBMCl22w7J0bk7\nQ7u/6XQn8bAHu+Ad/aM7hAgvJp9vwweoLDK6fEKh4ewAUg7XhiqTE/M96K9j\nBrqbtz9KRlYDAeLoRxAQ3pxntkZFxLhQRLHCFQlcU7vdVYua5xnmIffRXBkz\nZwWNwPstmE7Vf1yyDVdiZGPBnJsaGrGb5eVQMEc3GRC9WfqOwFWFG1bPKtYU\nlKjw\r\n=yw6w\r\n-----END PGP SIGNATURE-----\r\n"
+        },
+        "published": "2020-05-13T15:53:18.110Z"
+      },
+      "4.0.3": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "031e4bdc1e60cc3b04cc7d2dfc08773d5c0a2bec",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.3.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-iT/E79B6lqAcZnb/RttQLfggm6mbfYgS5hu0mWlVvnxyXkPD8qU0QQ0TXSPi0/cslVlG68XY4tf+DMjZGDJjAg==",
+          "signatures": [
+            {
+              "sig": "MEUCID3VjA6dLSSHhfHYt7WOqhiZvcBeSBAEw5ODssmEjoMUAiEAzL2Yiz6lGDT693xW4861WZ5Sbu5NsWiay2Xzmfhb57U=",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 110652,
+          "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJezTGvCRA9TVsSAnZWagAATpQP/04xs/iZooeENx376VCg\n85m/WwRhcXna38KBMPeTaP9hcmQiZXkmj0AyAZAubEz+N94dHnRil/MsG7Zq\n7BrV7HdKaFfnQp6ZrfQsbOcR+GYVEHdTPKYbzw84vXTbODtraFb9v92XKC+H\nTxT/kvdbPpYWRVhGs44md43ZKBVdqTZGobGZ6q0DRqFlDvl4aNlyj5LTO/3W\nPWtvoi4ytFIxVWaAJ4OYNZ9l9QDC8ps7I5Yhr6KF4NF3ddH6VsqKdzwqx5uh\nyNc+9h5UplSn1/UyZy1+ilqFLvP6HrXMISuuuIbMThKeiLcQiBSWdt8kNE1E\nwVc0pNg1y/aNOu0FK45mnUZ0hSXvn1jotN/C5rbgxVW5hgXU6UVi04LmEZI9\nGIqL1Jl3fTA38kh6R8BTkUoThUDp+5VGGBtgObUf+OS6Df1xe7jBsXP2GfCv\nlyouDcz1r4xNZSZWT9rRIrNY5R9VRhL5imBXtWMR8vKAK9E3fBPeq4OQ6BdX\nIpWxhvVHXLMJ//V2bXKjqK967LjvZ3pYVFPLV7zHHWT9jbbmDM1y5Lig/toX\nVwENUhuaiWGg8d8VsPQUO89yIPDBDQUFYyJ7doL6z7IS9SjzdvYT3srSqBhn\nzwL2l3ZI4oH7ZC6N9C0wR0Cv7f0G02zh5NNc+LLN2jpNEIxRoQW+KHnEsRY9\nDugP\r\n=C6SZ\r\n-----END PGP SIGNATURE-----\r\n"
+        },
+        "published": "2020-05-26T15:11:43.477Z"
+      },
+      "4.0.4": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "aed33b4254a41b045818cacb047b81e6df27fa58",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.4.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-equAdEIsUETLFNCmmCkiCGq6rkSK5MoJhXFPFYeUebcjKgBmWWcgVOqZyQC8Bv1BwVCnTq9tBxgJFgAJTWoJtA==",
+          "signatures": [
+            {
+              "sig": "MEQCIDeMxZT8jxckg2NUmiFchNN3dfhGWGSVpWpaBj7jKXOEAiBawLlQ7N4PEO0HExvFtv+sXBL73czI0wB4DeLFk3ZHww==",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 111127,
+          "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJezbMECRA9TVsSAnZWagAAlKIP/3asbvY2XkehVaQuH4Yz\nRl4Wmqe6PGQJhfhE549/UHB7gWD0+OAeTqIENiyorgnP5XhnzqSEv5CXZg4Z\n/6Rlyrt5nsseTLmo3lR+lAyIObhmB6uD21elYMBhtjXCXAGjj/nhKcsW1vI2\n9pIUVJ4uGC17Z0NqMwWlPogVOcZfXJAg8FPcP2nz9M0Hx+5Xrd0BaiHsqmcq\nN9yQf02QIJW8PdbWXPHp+Bv1PiI76gXTSZJfhkogPk6IQ/tSWfoHSL1gczTS\n4eIQqtYv2HtCFDU69c0QGxaHBbAzbXhrGPa1lQUTsqf+6sfi2kUAaWvq5cCz\nPU3pdZWmYn4K0OrlyLlVlSC6QMmRtTnEyL3WycGR2lEnoWJkDIvGXA0P4SG5\nMugV+CAKSefv7Ch+nOPIexDKzU04DAFLwoMjx+nWgH1ZN3g/8H8JZMAOe6Zb\nP+d510wk2C3rfjVvby290qXPwSE6hkr+Ziesi5JkPn9aMN7dBWrzIjc7afvm\nfsJuWUKxH8zayyW6390UXPcc9sakA5N6ECWZpmWVWV14rFnijFY9CjA266Is\nTr5rCyElC/rpf8QRX2IgadU9k2aft4AhGhwfYBiX20uS9irA51ndZUVaj95F\nzIAak01VMivOR56nqKsb46M2KIzS6Dvz//gZBlflFbopjRMEB49lhiN4lUK2\nxhEZ\r\n=IweW\r\n-----END PGP SIGNATURE-----\r\n"
+        },
+        "published": "2020-05-27T00:23:32.424Z"
+      },
+      "4.0.5": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "4879003aa38e5d05d0312175beb6e4a1f617bfcf",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.5.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-3YLSjoArsE2rUwL8li4Yxx1SUg3DQWp+78N3bcJQGWVZckcp+yeQGsap/MSq05+thJk57o+Ww4PtZukXGL02TQ==",
+          "signatures": [
+            {
+              "sig": "MEUCIQCgy0ppCzJExCW0P0PwqtzDLpyxVUvUfdZKTkMpEiYfVgIgPkVNESCkpQGFk8tG6lg3Cbw/OxS3YYhqZbF46yvdTXA=",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 111993,
+          "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJe+yAJCRA9TVsSAnZWagAA5AMQAIPiBgVn9XOX6FHDxjVW\nuKnJFyn1dPX3M+QMOZKuuewuW/d9cAscExT+nxA6OzrZT9k+Ji/X7M5fiWOK\n4KYipnqDRurbq42MpNNZUC98TVWZQABALlPxCVhFHRYFXOu/QoIfKzLHORZx\n1cP+TBDICpQ432H27c+vNwzI7dgrPomqSHOHpf+VJGyyz06bobkxUPRxz9gg\nt4459iFPCQnLWBW6gFUf683LYCeP0iaP7jzR9gZ9A+zqHXgoIdEDnSskIpZ2\nUqH8tkPVnYdYQktAvMo6tBFSYjbnH0rqRg0LV4rgp+MsYXnA8DANmndKbfZ5\nzKqwXXzxLwVSlQ6tWdBvXDJS8PQzoLN0hvZRYP62ruEFR14YttOUPEayIy6x\nizsh9kBMIp9VVzvbHEvuRTmf4iVCpIB6CqNsZX/SFMeNUN742MOUxHwD7C/L\n9q3TSqQYiuESLioeSSLOwhT3XGwqhkg+o3nd0Z8923AQ1AnzeeF9syOXVw/i\najUITNSmLoHnpgl0XdeTOjPfsbziabyo9hyDu9DSFbuEdADU7ppq2dfqHZHw\nW5nL/o7jRVhG+vJ3ctY1nYbXJr4rS7r/j9d6IJ667Ma2pP+MQxi3Rp5ZRq/3\nFVAhoZ2cXDtJcJUe7rNEyu2mb1QfXYje5+11UdKqwNAUrfz07Bs1+5PJYIPW\n5/0e\r\n=NrbU\r\n-----END PGP SIGNATURE-----\r\n"
+        },
+        "published": "2020-06-30T11:20:41.365Z"
+      },
+      "4.0.6": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "4027ae451b5cd219928edd0ff9eab54a8ea82901",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.6.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-RDrsUR/BjwCECcWS+5bc7mWiU/M1IOizKt40Zuei5mn0Eydubiooh87aSCiZ/BGMSUF7P8AqyMEqQL0RsAihmw==",
+          "signatures": [
+            {
+              "sig": "MEUCIQC4I+sFVB08FeEQ2BtvQRBXqbMV89x86z7T+UrbNMutrAIga6TNQoNCaJgTvG1TkAZr/Jfq96Z3e8BqKkb3TMLqO/c=",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 114173,
+          "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfBOvwCRA9TVsSAnZWagAA7zgQAJoSMdmAFkgvaffis8Ee\n8H1YG40tcuch5FKG22Cvf1RcXc2ScoubQyC+IoOTWQa/BD6ZYqCU5R7F+w1q\n/MFEriSw7AdMdZnKbq+eaJQMOkiqUpU3X+OAEfB1aTukOvHhJKSxVRhwt6jq\njncAcikWOyPUbyDqZPgjsY/ZCvMpLnc3R8GqETP7pweYLAqqFTtFE53OQmaB\nXDsMVOHbdwjiUIKDb5eyasAbBE8SYUMC4jTA/wzL/P288SOQvIy457FhG1iB\nV+Of0oDdjETThZZhOUHx5EfFp2CLkisl1k74iqNMYbUbmWoTgE+3PVOta4sJ\nk7ChVq/+vkpwHyouCE6gb8HWg3gosJV6F88ykMvE2CzBLUjLxYgAuEL+UI2d\nqX0W8LjRkHpbahSEjw5006z/MiW2qRt0mlWJ72qu0RrebtSt5SvxYjCR0U+N\nGNugUHCH5M12HlqVm6HOQz48h29NopMqAjEEcY6zXTU+1y8xZYe4rSmJjPUL\nQUwyy70GW0Az2K20ylbzSIz6uSXG++0OuPUIghU2S7GxkbR08BnlU6S97Itg\n3aPYidZgxOvAPFLoD7/nIG+kB35QkO0nD4rUrv9R/327UtYE4HIsEuV76iao\n8kO4xE+9/gXvBjgf9EQ8B6SQyacXeYm7752SWKuXzpZUAS1AkzDoeADH0ynx\n54Y+\r\n=rk+s\r\n-----END PGP SIGNATURE-----\r\n"
+        },
+        "published": "2020-07-07T21:41:04.420Z"
+      },
+      "4.0.7": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "19f9e3d07dd3a0fb9e6f0f07153707feedea8108",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.7.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-5PuW2OMHQyMLr/+MqTluYN3/NeJJ1RuvmEp5TR9Xl2gXKxvcusUZuMz8XBUtbELNaiRYWs693LQs0cljKuuHRQ==",
+          "signatures": [
+            {
+              "sig": "MEYCIQCmwxTn26HkQLu2oktlibnjz25UtuhUVtMV/i4CSLYLnAIhAJ5N1QM5ymJq0P5O4AbIRtzkLcArG5ExX1eOeYtrdLSi",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 114221,
+          "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfCK6mCRA9TVsSAnZWagAA5L4P/3WS1p1LNF00fqtr1qyf\nZCblZK5j9iY73bCOF16ugUcJFCuB5q+lzboFEymqzOiNejiD8GwudUciyYqI\nB8JtoxbEOf/s41fPQKFqL+OlJRZZ+VM80njqTHO6qDQFsleUK9BzaPIc8UXN\nZiLbbnYdYVg/vXX02ykS/zyRLC6HUXHp97mJxbrqU9nd/GI5HwQC6yF+N2sh\ngRtg9J6NJbAsgdfIqKTTt8hxtSlBMKFDUv2OdZ6fAgzid+GH9Z3BEkzZbcj8\nY2Zbs3WoDQaEN/OrWQQgsQ3ILA/GVjO2lU5hIH54lrxORrveCvBkl2//ycWG\nSKWiXT7/FDq+GCNFAYVWnBJ0T4yaz1l5l4NMZNYBpLn0iYhkSwdKjWxZPi8v\nBfRXRbxPCoKruBz/sS0Ez216VIQ1fyV9jvMJxiwMeHRDUDc033IQlSL+KQjc\nov8a35LGN1B8y1asay9Xm02bTr6tF5Gu+3TmwwO9xkQZF94VMUy1pbVeraiw\n2drXhP9WOytxsJ9nfSbm2A3KVich5FvmmBWOSj0sC6fKLaT8h5mw5KZods6Q\nLwJgA8M1HJ2yQv3m7QqTkoX4SEKHtQ8cIdZ5x93ul89keKuMtPFFhGOgfn0s\niGxqgD7FZq7P9FsZ1qZF4fm82Co1vppUvAVishpJ74tEAYCd36KvC5pMVyST\nV7lt\r\n=qRl0\r\n-----END PGP SIGNATURE-----\r\n"
+        },
+        "published": "2020-07-10T18:08:38.084Z"
+      },
+      "4.0.8": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "a9b1e3d57475ccd18276882eff3d6cba00da7a56",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.8.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-6SSb5AiMCPd8FDJrzah+Z4F44P2CdOaK026cXFV+o/xSRzfOiV1FNFeLl2z6xm3yqWOQEZ5OfVgiec90qV2xrQ==",
+          "signatures": [
+            {
+              "sig": "MEUCIQCregQDfocFIalPd4o67WEVtTF4aiKVwBItl5L6fA9BRgIgKO+uCzem9vL1HD52XLafqSFA+GnjmcPOE62u6/Yqwsw=",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 114359,
+          "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfDJLyCRA9TVsSAnZWagAArv8QAI5EtnqenZS8eHjWg6wv\nNsgJDAkCSy/Jxa2a+Bg+2sS4eK/ARN6BkWrR2Kb041FsOZ4fqCRczaTJrJTG\nxS8LRN21TcrWWCjyEkKOHqxoupS2TYGJKd7fFCG1O/BzIVprUcTGSgFyl1L2\npyUo6cT5uRDneqTjqdUqe6zScPv06FHHGQOY9ASKfJH/C9Z4yylEBQYVKmSf\n16Ts8IuZQyTDLuerJMFGvfqDREoE8qVctOK+oUu16Wz0SY6+3GrveHLE9SLl\nu4JYD5AgDUFKq3yUaJ1QKFnm1EQUUFJ1Wyue2cXbpLOmMBH3pOhcU7X3Eck9\n2Su8i19u8TKIsmkLqurZYLh6BkKMnJK176CUO/YYVHevzcpa1T5mm9pdGc7q\nFS8fgDukBXNaVbDPVxdySqS+B6FpS7kzEYTKMu1LjM1FQveW3/xi4Dx/x7bc\n7Nmg9AcMf/6GTRRVf1J6L7ZL2dubE9fLVvNEmvOIr5TzTwMHnvIh9JpMOs1j\nYZ3NMk2E9C8DK/zdSsyIZvSIMQZGrZu6iT/FtrUb0vOKd+I2IYhSXQugGlPs\nTDeu0LZQKwwVjI4WSAAcKy3cCkLVJ7BD7QnkErVCsPQiK5qKItWr45mL5CUu\nXhJpovcA25DCnAGtgD6Mu8vfZHASIFn/2bLOeaqvWMaUj2Sk+4d3/SvcsKY/\n99Ii\r\n=pzTg\r\n-----END PGP SIGNATURE-----\r\n"
+        },
+        "published": "2020-07-13T16:59:30.143Z"
+      },
+      "4.1.0": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "6323fbd5e650e84b2987ba76370523a60f4e7925",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.1.0.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-36zilUcDwDReiORXmcmTc6rRumu9JIM3WjSvV0nclHoUQ0CNrX866EwONvLR/UqaeqFutbAnVu8PEmctdo2SRQ==",
+          "signatures": [
+            {
+              "sig": "MEUCIETvEjWTxSm//ZxdazjTXcutu8l/6uuSLAXE4sT3CayhAiEA+1x70okjjVESCX4zjbHYhrqZ1iZhn1rPtNgo11TIR4Y=",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 118294,
+          "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfOnjFCRA9TVsSAnZWagAAQNQP+QGONK07Kyg+BRhgYnIb\nsLFL4UB5LcaGBBnbhkqxogtiM484itmA/bTNWOugvomBDtkHYK1J6PjRYOTp\nlIj+CFxyEmseCRkX/Z36slGoRxLuXtWUmYUixHExecUiyBCESp3xF6lTcQ/X\nRjo+jSFmiqgYs3Hm4CPX0P85k41AqbzNVqMMHD6J1gCIr26VfmtPaJ1l3mY+\n3LcEWSDCu0i7Xrsl8kO9zAZJln/iTgHdKFfd2iarynjVE5pPRZgBMzpNqrWN\nMktyJT7/+jfMc/gyHWFL0+jLVRtoX+wY7ZwxK/dBGIo/xIOfa0JWDYb2dp/5\n0C1PapQWnbe8c8Rf+KUesHJQroGsoUA4QmtjKljtqKS3f+lekjcdVuCTTSqm\nG/amoINJAAo4+D7EcWRtNAgAR2gOCjufI0eTNUS+6F2Luo8CCawyI9A66nIm\nDFxiXvUV6KsO5oy9jjGNlbjYj+aGjkA3zDjW8k3n7qlwaXIgoGplPl6vw9Sg\nTfSryofdQHFeqfnDdvUYAGoV7fGMtTvRFTB8cGyzie007D37mRDF0wH1RZAC\nHsx0YKH5JGYuko1oQosJ8jQUEg5eAu5NcGSpTIIR1OwI7Z/MSA18m7IrRxi2\nNx5Qb9egdb83PotNkl3g/C6fPb4d4UTgaiP3mauEVxkvQFWNlZh9prWo3RrP\n2D6I\r\n=72fv\r\n-----END PGP SIGNATURE-----\r\n"
+        },
+        "published": "2020-08-17T12:32:05.114Z"
+      },
+      "4.1.1": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "b37e1ff622b7800cd673901de32db1103d48411d",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.1.1.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-vFJNwsf4MLYS0lHYfz9LqxQ+GccYsGGeKPHDxgkIaKbAhNuTLnST+q44pt81MzJZyFU5K4XLF6WiCGv3Yb6tCg==",
+          "signatures": [
+            {
+              "sig": "MEUCIQDqWBEZvjFJLuZB54n44UAFNKLNEEhsA262qUor1uZ0wgIgegfmM/eeDtAR54iakBTvmsykwzFO45M61v/Dh2llCJo=",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 116112,
+          "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfWnaYCRA9TVsSAnZWagAAdOgP/3Dpbl2PIq69c++kM0Jm\nKJng3iF0k8vL6h5mzvfP4c8du7+GTH6JDkrirYO/oS9h620gjXMh4BLFTrhR\nSffcpKsrb4QX7qrt51qaWG1gDfmqj+D1TRR4NQAQSSs9FyS9TEkZ1scjmVOz\nM6tWaFEt3SS4yYTYYtOQ4crnS31RZ8SuFn10FIX5vPEIcsXDorHGBlwEcw06\nbJ9LZjbArq+nAB/DPGvSoL/S5JKCmA6/tNY2FlVMthGZk7lFIDMPmp1U0JJ3\ni0DsvRByzAlLPe4BSwWaSRtLCQ1yWvOCuL+f/Y8rjQYo8bnqxdjZ+kgTa4Y5\ntMIVUSTBW4EOu+30QpF5LxEp8aPzPaREO2VPAr/x3Iwj+SelzjJVfR53M3cn\npJdiAVoglDjwHEuFyheBpRB1Bt4wWWlLh3iy/jDcN5sbTs1CSE/ngJK4v6DD\n5JCBwh5iOOSosPuuDznT8HfDxaiKqv8Ay3nBR1t+zh59FwE6KunN9F7LnUp7\nP/kHdp0QgX9S/vERcy0gQoi6UcRT4RsPBhdAXFR2e36BFphZEh1xX0Uh0GSd\nYNL3zbAN8ykX9KNI3uBYysJbobimNF5t9Cf5FBI/wCKVaJEG2Ckbr8nHTppo\nYfgU54JYpoxqkCUO1cpr+o7r5YjwC7+9tSu+sepcN7RzSlSg97UE4vBdi5Mc\nH+gP\r\n=Edvm\r\n-----END PGP SIGNATURE-----\r\n"
+        },
+        "published": "2020-09-10T18:55:19.689Z"
+      },
+      "4.1.2": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "2eb53731d11c95826ef7a7272303eabb5c9a271e",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.1.2.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-ykUeqkGyUGgwTtk78C0o8UG2fzwmgJ0qxBGPp2WqRKsTwcLuVf01kTDRAtOsd4u6whX2XOC8749n2vPydP82fg==",
+          "signatures": [
+            {
+              "sig": "MEQCIBpuv6AajiyWKGY3y8VV+/9Ytki2vGk5IVNiKDHnXhNaAiBE9PLara6PwkjbUzNJf9wCgOeTIUj0Mfh54WKDoUuatw==",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 116269,
+          "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfW2tOCRA9TVsSAnZWagAA+9gP/RTunljBN8IAk2F/8mK3\nSiwN6ExmZP/miGHKG0Z2vtA6WlxZzUFjrBvgZwIRqwrPXZkQwfTS3ccPz3+B\nKJZJzB1GYtVdz+fMnbI7ctLP17V5Io+qwDd+8KXW/vLONrz3hyFfiahyAr4k\n0kZAM0YwLEu+vgje5TeXSRssH44yLa8kdaVYoYBAG0lw3/Kov6MPGAtcAN5T\nx3ylBv1k33QVRFvpJcVMzu5WGKFWzizcOexaISEp7ucWSaKCPHZR2oO0DyOP\n+4Yi4HT0ltaTapbAZsvaSZr87Fzwt9ZeT2Y4C+7V39gLrgdaJiQR/0eN7FqF\naLuzDPoeMZ/pWlT1xdCVn8WPk3tqhxAyM+MXUfxNoSk6DVtXbbmZEV2MKUaC\nQBYrKFICu31PoKM3WGL5AmjnjuMnncCV8KqWIafUr/THR6o8+bZRN/SfL8x6\nxF5EpEoa4Z4BDW19Uat45QGlUX8tOjqX1NCaEdTec+I+BJCo89DkAoIwugin\neqNFwHhRjXbBOygBog6RShbx/18mV8b1yeYPriuIJ1p1EJMEJagj3eJeLiMe\nmRcZP6LhVH3pP9Yx5Ayj9j0oLAWZSLQJwhKSyCTE2xMp47C/nSuYtOF0y55Z\nfz8kwlnSNYvuHUpKs7sUF43SrbCjJW0QstjQCzZjyGa2BFJw02lQadBZu+O0\niRBH\r\n=vLtP\r\n-----END PGP SIGNATURE-----\r\n"
+        },
+        "published": "2020-09-11T12:19:26.518Z"
+      },
+      "4.2.0": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "8c229c268d468956334c943bb45fc860280f5556",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.2.0.tgz",
+          "fileCount": 7,
+          "integrity": "sha512-623WEiZJqxR7VdxFCKLI6d6LLpwJkGPYKODnkH3D7WpOG5KM8yWueBd8TLsNAetEJNF5iJmolaAKO3F8yzyVBQ==",
+          "signatures": [
+            {
+              "sig": "MEYCIQDEU5U++OHBIHeECXqIVRBf31dQ/lXD0xscNP5Frs3UhAIhALR6y1A6518tlmdabHaI0KdkQUSP4hKit5x0TksD1W0q",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 116432,
+          "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfj0Q9CRA9TVsSAnZWagAAgVEP/1WHbHW/4e+7voAYQvzh\ntNMhD5pDF0O69GocZiMdZttFideAuSKTChSOw+BQ8dYp3xRQbXogGcBss6UC\nD3+1bwi6Eix99cX82bxii+T2k2a53+H2j3R9xF51cFJPo2XJadVDuTLh+GGS\nUoX2Klj4gv1NInAEGY2CH4uZPIzDs7JWdxBKhVsdZjIwlPZqY+VTkXPZXY+R\nkIkM1Qy2zRRYIUWGi2ggXdFedBBmR1GctjL8s8otd2/9Ofo/vTMP/6fBiXQ2\n5P9EeXJ8b0uhZyR5gt9FZabaeNLPb08XZBg1rwYH4dLR/FFkPxNIqOx+y7ZS\nXJOcLDYZoUo2o3W/Kd3nykrf9uYF7C2cUfnfIIFzQrq4PARFLP9BU77nkUOB\nmawAjkUjF2lLUM0gNVchDGk97HZdfeh5CSMNoHClfjE0IuCrASsMgMVcK16L\n3J0pIfwauav4HK1qkM/fB8YxNjyDlJXuGYqUgjsGpx7DTinu6kxpmrfH7Vs8\nbfdV8o/UkZ8+LtWoak6flYpaXzFH2rWSd3/5ADVe9sjq1RlXfZlJ61vEsd/x\nWO/oZadQOAwr1HFimTallfCkqL6hkRymgN/TvChEexLttrKfuFEOhDHAOowj\nRWh3p/1w6YZ6uL7JkXYScJRQ2QKGJbaskiJiAgE43UG1T3qwLE/oGzZZ3YbS\n8ClP\r\n=H65z\r\n-----END PGP SIGNATURE-----\r\n"
+        },
+        "published": "2020-10-20T20:10:37.195Z"
+      },
+      "4.3.0": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "318dbf312e06fab1c835a4abef00121751ac1172",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.3.0.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-XslZy0LnMn+84NEG9jSGR6eGqaZB3133L8xewQo3fQagbQuGt7a63gf+P1NGKZavEYEC3UXaWEAA/AqDkuN6xA==",
+          "signatures": [
+            {
+              "sig": "MEUCIQDsJO7Su4lT8V1FtqdmcupnuBdD8YYip5+cUf5514uODQIgIKYOjaWq7vANEvqYUxKXDdNTZnzhzqIK7AtRU/xz/KQ=",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 117284
+        },
+        "published": "2021-11-09T13:59:30.692Z"
+      },
+      "4.4.0": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "71c39e528764c848d8253e1aa2c7024ed505f6c4",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.4.0.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-U3RVIfdzJaeKDQKEJbz5p3NW8/L80PCATJAfuojwbaEL+gBjfGdhUcGde+WGUW46Q5sr/NgxevsIiDtNXrvZaQ==",
+          "signatures": [
+            {
+              "sig": "MEUCIFPreCnNgKHpyBpLzHfmrnJc2vd3OH9qWGZU1vsUtHOaAiEAruJ1sZG7PJTvU3DlVuXgRLgLkagVX5/75peLNqyAkr4=",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 117244,
+          "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiQyz7ACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmoGjw/8D3ORPdA4wvJFQI//6TOjPfpaZATkLlCa8FlQrQe65osp3i2E\r\nsgSjxJeGUWwaK8eGX/r/dDFmkF9qy7MRooUGCbURQ60OyzSc5Vjg6rm+BQ0E\r\nxt3MhYWf0LFqHYVxVcVs3324PTmPBrjVbDnlVIEQq3hcUFO0blic/9Wo7Cls\r\nBbjO55T7VgCsJIqin9DboRtGCRbDVEbMjD52g5GpRzLPKJxwadX6tumPn/IY\r\n1Ci/BBgxpdX2kPhcSEdFCXY/kDBlpHIEeE+yXK7lbVJ6zr4Vnm/uGGVv3ykb\r\nVFj/yJDUekcwww5mos0YJ2/q7eUdZVTu0lWWkaquNS9o+RwpQtX4LhUQAxEJ\r\njM7xcvCKj5LEveh1Qnzp2nkY/nvN0JRFRhShJAwvJK4HSvyXSISrDjydcIIO\r\nwYWRG7mLeyD+JDkiSa9lqJv9XSUJ1RStYLfrutDmcKYXIn6vg8RRHRLTCzxC\r\nBPcik7VmjaTUfK/h3RMzAVBXvQzbIB9CsvEnpkXJr4GfJHJ9HpdnM/gPU5az\r\nWKtz8dYtTq76HB2L5IQ5Q31mKeDHz6XIidpnyDY9kn5PLLPP0KiRdl13v11a\r\nQbCeGLhDPzcNza1OCVdhEQbxeXMHOSG1BPFigAKUd8JhjQgItHbszBqKtlDy\r\nTh0NIZvI+ZvdaQn983T02G9qJebaLTzQyRo=\r\n=T4RE\r\n-----END PGP SIGNATURE-----\r\n"
+        },
+        "published": "2022-03-29T15:59:55.347Z"
+      },
+      "4.5.0": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "5f762dfedf8b2cf431c689f533c9d3fa5dcf25ad",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.5.0.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-8k1gRt7D7h03kd+SAAlzXkQwWK22BnK6GKZG+FJA6BAGy22CFvl8kCIXKpVux0cCxMWDQUPqSok0LKaZ0aOcCw==",
+          "signatures": [
+            {
+              "sig": "MEUCIAjzobnBP07fv5ZP6GfVClMldSn3ruEiEA4Rmztqqx9MAiEAgcE0oH5GmYP73uoVAvz41oYRRc9bTmRSdpIBt5dW9m8=",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 117662,
+          "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiaFimACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmprrhAApF7Nqfa5goRdmG4PSacCsVmszoF+8cwbUo1pX6n8Q9TTfwGj\r\nUnaaJVvH+xRu7zKBaGmlLePWcnNd4qiBnpwzmLtGiQIeliihxBx+Yf5XIPxp\r\nEusJ1SxNzFpOywwHM1w6PkByWa+HMIxNwL0gkIZDi9BApsWuMbiTMvs9L3KY\r\nZg9MMZjoUEXTkUertF0xmPPfhP7RlfNxZ/0+SyJTPqTKG7ueVfznIJLhDpUb\r\n5iHpf2Ak0TToSJtWteDP88GtIGINazH+UYty3IpGVOvOhOs8AKARN71U4OwQ\r\n2oki4z58BIaZEO7EeKGwjB1unBDXObMkYfcucOC7WkLIAl89N3VX4zwdCjir\r\nAMaPdQlM8C8G4m8XMEKY7328rouH4c2QOY5eYrRleCdq25UUBKg/ZEWG8ECI\r\nPhsaFMmJ3SMqj4v0VzBA689YtD4NugQ8wEBEf2O3BxUQ+kwM926nG2OigxpD\r\nR8XzJuWRBYEqW9EiF+QFPLsO1tYXg1pZGUXiZyK1Txk7Gj35ksGquDVu9TSt\r\nS/GjwTPr2CvoxKdAj0+W9rdIgO9ZWt70WQVmEBLY6ET4nG/izTYYpl6ik12t\r\naHM0A1MGTId0cp42E6XFhaJ6IFUMC/u0BdmFJ1AdZxI+3aN6O60GtD5eMybL\r\n4uOTp0t8H3gqXg5Fo7bc9rXK+mZac19TwDs=\r\n=P+f7\r\n-----END PGP SIGNATURE-----\r\n"
+        },
+        "published": "2022-04-26T20:40:06.274Z"
+      },
+      "4.6.0": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "4c3e697ad95b77e93f8646aaa1630c1ba607edd3",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.6.0.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==",
+          "signatures": [
+            {
+              "sig": "MEUCIQDZyttTRv4vBK+aPJBQggbX7/8w7GKRmmYHOP/O0e3tkwIgUTkVijLp2z1vmbV85hxJOh/+nTNQIG0qT9FKTUEkIMw=",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 117662,
+          "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiqOWUACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmrb7g//SGtrZxrU/naRbrLq00qdSTiNSMAv2UJOG3UEZTPCCORJYuaW\r\nde+9jQppwaOXVk2Xl7+3gJ9KlG1eQLcYfPt5godoGStO69eaL8Y/PbnE3rZ8\r\nEYC3IvWtDIxeCSjP0uCxQB0BljV+wfVHeLSas2mh/CYwrJVDpC0126MPUpew\r\n3HiK4PLUObHWd+DjpLpXYbjswbG5hqO8kHy3OMAe7ywV+PLcXjSVTptb2ISq\r\nBa+DtOuimj+S7yC6mZlYC+7D8RZpCpsqsm2cL5HlBV12IXTaOVDtkJwbZrEZ\r\nb4saCOSHsaW5QP13qObplLDi/K9DvugbjFMLk1mXdyr0wTZWzlSH/CW7Hl0i\r\ncg/JFUweDzH/jIE9IxGGon350mWbHgnRi3tubXkS9bjtylu1NtSMS1n7toiG\r\nkW4FVjljLYL3IyPO5oG2vSQ40sI5q3MtbOmonNLgYzoWYrd+vrMGfVnPH5Zl\r\ndEmCVpb0F3sdGLP8MGYz0i0NUK4E8qtWWnzHP9A7wShn2qP2kXPZLqSnqo5A\r\n4pFsy56GC94r7PcFlFK9YyxNv3kybYWjK07c+rVhsJmy+jwuVNNXpUbQvzSn\r\nRzzHuxGiYtEhnyFIPxGaV42cEzukV5LRhtmwucKow613IzWZaCdDZW1Pipzi\r\n184oeL3udLC8TDELWOxs1k6tbeQb+Twex2o=\r\n=7U20\r\n-----END PGP SIGNATURE-----\r\n"
+        },
+        "published": "2022-06-14T19:46:28.829Z"
+      },
+      "4.6.1": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "85a7e271da14ae4eb4ed717abb4db6e99700550f",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.6.1.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-Ck77j8hF7l9N4S/rzSLOWEKpn994YH6iwUK8fr9mXIaQvGpQYmOnQLbiue1u5kI5T1y+gdgqosnEAO9NCz0DBg==",
+          "signatures": [
+            {
+              "sig": "MEUCIQDf/O7gvNYgAIGLfcx/FKv54tzDTec1/r9/BXI1h0lA5QIgWSZbUIl63vwreHU0/DSwWY+hFUtZ97bh1tNsuXtpSUM=",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 117662
+        },
+        "published": "2024-04-25T16:45:35.811Z"
+      },
+      "4.6.2": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "c829eb06c0e6f484b3fbb85a97e57784f328c596",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.6.2.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-QzliNJq4GinDBcD8gPB5v0wh6g8q3SUi6EFF0x8N/BL9PoVs0atuGc47ozMRyOWAKdwaZ5OnbOEa3WR+dSGKuQ==",
+          "signatures": [
+            {
+              "sig": "MEUCIQDsvdwc1QG71Lv6s/pxAW52kHV5k6zpezhXh0/1KTkV/gIgZezvsleXG4lTjILv/z8J1y6C8pZZf69tz2AgDHJQ/Ds=",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 117662
+        },
+        "published": "2024-04-26T16:42:06.111Z"
+      },
+      "5.0.0": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "72e2eefbac4b694f5324154619fee44f5f60f101",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-5.0.0.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-hIOwI+5hYGpJEc4uPRmz2ulCjAGD/N13Lukkh8cLV0i2IRk/bdZDYjgLVHj+U9Z704kLIdIO6iueGvxNur0sgw==",
+          "signatures": [
+            {
+              "sig": "MEYCIQCyanjD1zlWkPcxeYRHXvTAG6IzfXnh2up3uVqgHRIc/QIhAOJOSmTrHb/HkvNyy96YaVPSbac4C8nxHFsfH5MOWHSh",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 169485
+        },
+        "published": "2024-10-11T13:31:36.575Z"
+      },
+      "5.1.0": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "3d34e37d5770866c34b87d5b499f5f0b53bf0854",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-5.1.0.tgz",
+          "fileCount": 6,
+          "integrity": "sha512-mpJRtPgHN2tNAvZ35AMfqeB3Xqeo273QxrHJsbBEPWODRM4r0yB6jfoROqKEYrOn27UtRPpcpHc2UqyBSuUNTw==",
+          "signatures": [
+            {
+              "sig": "MEQCIF4wOgCUWPtvObZhd3Vbu1x1RU2ycqZAUm7QoeozuNsCAiBwR4CbMQHk3UbfKJG14CrfI0jLUf+Tpp3UH9fegDT7Ww==",
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+            }
+          ],
+          "unpackedSize": 169484
+        },
+        "published": "2024-12-05T18:10:13.830Z"
+      },
+      "5.2.0": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0"
+        },
+        "engines": {
+          "node": ">=10"
+        },
+        "dist": {
+          "shasum": "1be0080901e6ac31ce7971beed3d3ec0a423d9e3",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-5.2.0.tgz",
+          "fileCount": 8,
+          "integrity": "sha512-+f15FfK64YQwZdJNELETdn5ibXEUQmW1DZL6KXhNnc2heoy/sg9VJJeT7n8TlMWouzWqSWavFkIhHyIbIAEapg==",
+          "signatures": [
+            {
+              "sig": "MEUCIFHVMEDnd2hu7+6WYVykUBExXcFucpXqmxnCA5GezD3rAiEA5AvhXsQV5ZVTL72mfAV3+ddCymr8Tld/S7XstwxYoPU=",
+              "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+            }
+          ],
+          "unpackedSize": 277861
+        },
+        "published": "2025-02-28T15:30:44.852Z"
+      },
+      "6.0.0": {
+        "dependencies": {
+          "zod": "^3.22.4",
+          "@babel/core": "^7.24.4",
+          "@babel/parser": "^7.24.4",
+          "hermes-parser": "^0.25.1",
+          "zod-validation-error": "^3.0.3",
+          "@babel/plugin-transform-private-methods": "^7.24.4"
+        },
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0"
+        },
+        "engines": {
+          "node": ">=18"
+        },
+        "dist": {
+          "shasum": "8677408c9a21251a776ce6da6369e072080a87fb",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-6.0.0.tgz",
+          "fileCount": 8,
+          "integrity": "sha512-NyC3yIC9fazLitYiN8eHykV5wLp/SMuUZMh+sdPSHIeN4ReXIc7if40jtGjDplAgVL/4OkN1d9gneWe9lFZgag==",
+          "signatures": [
+            {
+              "sig": "MEQCIHJmwqOJdnp06hjE3vjDbqGiCp3iiTErDvPFWTU3mxlOAiBJYD/rI0vB86yHCbOEXf9HvbEUtrB6HC8vYMSd9OU97g==",
+              "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+            }
+          ],
+          "unpackedSize": 3941520
+        },
+        "published": "2025-04-21T18:10:52.503Z"
+      },
+      "6.1.0": {
+        "dependencies": {
+          "zod": "^3.22.4",
+          "@babel/core": "^7.24.4",
+          "@babel/parser": "^7.24.4",
+          "hermes-parser": "^0.25.1",
+          "zod-validation-error": "^3.0.3",
+          "@babel/plugin-proposal-private-methods": "^7.18.6"
+        },
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0"
+        },
+        "engines": {
+          "node": ">=18"
+        },
+        "dist": {
+          "shasum": "1d8b9f031234ea20371aafe4fd9156f7223b1433",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-6.1.0.tgz",
+          "fileCount": 8,
+          "integrity": "sha512-72mucw/WLzEqGvL2vwE6fWR6geO6UbmDjz3eAb3pezxTpFzgbfyUeFKzmZKr9LhwUWMXfTVh1g0rKEJoyKNdoA==",
+          "signatures": [
+            {
+              "sig": "MEYCIQDM1LtU0zQGyMjaPU3Pwk/XfTBa5tSc0je6kLXuVDJoQQIhAMBwSTHq1zoEOlfN81dYVaLd07VphO3Y+e9++N1TOkwN",
+              "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+            }
+          ],
+          "unpackedSize": 4243988
+        },
+        "published": "2025-10-01T21:38:29.605Z"
+      },
+      "6.1.1": {
+        "dependencies": {
+          "zod": "^3.22.4 || ^4.0.0",
+          "@babel/core": "^7.24.4",
+          "@babel/parser": "^7.24.4",
+          "zod-validation-error": "^3.0.3 || ^4.0.0"
+        },
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0"
+        },
+        "engines": {
+          "node": ">=18"
+        },
+        "dist": {
+          "shasum": "c04c051e382444bb62cdca9cf4df68ffe0845b8a",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-6.1.1.tgz",
+          "fileCount": 8,
+          "integrity": "sha512-St9EKZzOAQF704nt2oJvAKZHjhrpg25ClQoaAlHmPZuajFldVLqRDW4VBNAS01NzeiQF0m0qhG1ZA807K6aVaQ==",
+          "signatures": [
+            {
+              "sig": "MEUCIQDlWtQSS1OJzj+e/CqucSDWtAC5RFnchqSh085WLMwvigIgeq9Hg4XSdtRFJOm+pGX2oUk+0Wyktmja1eSik4OuLoE=",
+              "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+            }
+          ],
+          "unpackedSize": 4242901
+        },
+        "published": "2025-10-03T22:02:57.683Z"
+      },
+      "7.0.0": {
+        "dependencies": {
+          "zod": "^3.22.4 || ^4.0.0",
+          "@babel/core": "^7.24.4",
+          "@babel/parser": "^7.24.4",
+          "hermes-parser": "^0.25.1",
+          "zod-validation-error": "^3.0.3 || ^4.0.0"
+        },
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0"
+        },
+        "engines": {
+          "node": ">=18"
+        },
+        "dist": {
+          "shasum": "a255a1db826ea42b0e37f160430e4bd0b4b659f9",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-7.0.0.tgz",
+          "fileCount": 8,
+          "integrity": "sha512-fNXaOwvKwq2+pXiRpXc825Vd63+KM4DLL40Rtlycb8m7fYpp6efrTp1sa6ZbP/Ap58K2bEKFXRmhURE+CJAQWw==",
+          "signatures": [
+            {
+              "sig": "MEQCICkCh0sBIY5vaHe/kvPKHTmfC6NEWGMiNd3o1q/pRZu9AiA4fhQA17PZ62P2KGFl3IWfsLF/pLsqhumZcjMSGZgEWQ==",
+              "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+            }
+          ],
+          "unpackedSize": 4248002
+        },
+        "published": "2025-10-08T22:52:25.284Z"
+      },
+      "7.0.1": {
+        "dependencies": {
+          "zod": "^3.25.0 || ^4.0.0",
+          "@babel/core": "^7.24.4",
+          "@babel/parser": "^7.24.4",
+          "hermes-parser": "^0.25.1",
+          "zod-validation-error": "^3.5.0 || ^4.0.0"
+        },
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0"
+        },
+        "engines": {
+          "node": ">=18"
+        },
+        "dist": {
+          "shasum": "66e258db58ece50723ef20cc159f8aa908219169",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-7.0.1.tgz",
+          "fileCount": 8,
+          "integrity": "sha512-O0d0m04evaNzEPoSW+59Mezf8Qt0InfgGIBJnpC0h3NH/WjUAR7BIKUfysC6todmtiZ/A0oUVS8Gce0WhBrHsA==",
+          "signatures": [
+            {
+              "sig": "MEQCIGbzSok08XhvIf1CE/K3U1J24ywCLTzg/ZYdFNhkMF+nAiALhf8kbWX5/+yF+ZWgEWhUKXYrR4eQEljf7SSjRC2vtA==",
+              "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+            }
+          ],
+          "unpackedSize": 4293597
+        },
+        "published": "2025-10-24T16:55:06.287Z"
+      },
+      "7.1.0": {
+        "dependencies": {
+          "zod": "^3.25.0 || ^4.0.0",
+          "@babel/core": "^7.24.4",
+          "@babel/parser": "^7.24.4",
+          "hermes-parser": "^0.25.1",
+          "zod-validation-error": "^3.5.0 || ^4.0.0"
+        },
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0 || ^10.0.0"
+        },
+        "engines": {
+          "node": ">=18"
+        },
+        "dist": {
+          "shasum": "46f19a653041fab6fc4b6d66873cd387f779e6ad",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-7.1.0.tgz",
+          "fileCount": 8,
+          "integrity": "sha512-LDicyhrRFrIaheDYryeM2W8gWyZXnAs4zIr2WVPiOSeTmIu2RjR4x/9N0xLaRWZ+9hssBDGo3AadcohuzAvSvg==",
+          "signatures": [
+            {
+              "sig": "MEQCIB95FDh9TJTJIRW91aY9oT+1ENednvvZ2tlncacfi+FwAiBCjK/nXL2HvB7Q94+W6KV4eyu2oKmaw2Hnqum+hdSxBw==",
+              "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+            }
+          ],
+          "unpackedSize": 4094942
+        },
+        "published": "2026-04-16T22:50:56.995Z"
+      },
+      "7.1.1": {
+        "dependencies": {
+          "zod": "^3.25.0 || ^4.0.0",
+          "@babel/core": "^7.24.4",
+          "@babel/parser": "^7.24.4",
+          "hermes-parser": "^0.25.1",
+          "zod-validation-error": "^3.5.0 || ^4.0.0"
+        },
+        "peers": {
+          "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0 || ^10.0.0"
+        },
+        "engines": {
+          "node": ">=18"
+        },
+        "dist": {
+          "shasum": "e6742cad75d970c0a3f30d7d3fa80a4784f55927",
+          "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-7.1.1.tgz",
+          "fileCount": 8,
+          "integrity": "sha512-f2I7Gw6JbvCexzIInuSbZpfdQ44D7iqdWX01FKLvrPgqxoE7oMj8clOfto8U6vYiz4yd5oKu39rRSVOe1zRu0g==",
+          "signatures": [
+            {
+              "sig": "MEYCIQCdi56UBcCdIG9KuraMEEC9DmLaBSwFdu3/FH8z6uwFlAIhAPKLC+VSc1yZGOqe0obrEL1J80GrzRndCFDhDWqVCZWw",
+              "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+            }
+          ],
+          "unpackedSize": 4095735
+        },
+        "published": "2026-04-17T18:03:19.591Z"
+      }
+    }
+  },
+  "eslint": {
+    "tags": {
+      "es6jsx": "0.11.0-alpha.0",
+      "next": "10.0.0-rc.2",
+      "maintenance": "9.39.5",
+      "latest": "10.12.0"
+    },
+    "versions": {
+      "9.39.5": {
+        "dependencies": {
+          "ajv": "^6.14.0",
+          "chalk": "^4.0.0",
+          "debug": "^4.3.2",
+          "espree": "^10.4.0",
+          "ignore": "^5.2.0",
+          "esquery": "^1.5.0",
+          "esutils": "^2.0.2",
+          "find-up": "^5.0.0",
+          "is-glob": "^4.0.0",
+          "minimatch": "^3.1.5",
+          "@eslint/js": "9.39.5",
+          "optionator": "^0.9.3",
+          "cross-spawn": "^7.0.6",
+          "glob-parent": "^6.0.2",
+          "imurmurhash": "^0.1.4",
+          "@eslint/core": "^0.17.0",
+          "eslint-scope": "^8.4.0",
+          "lodash.merge": "^4.6.2",
+          "@humanfs/node": "^0.16.6",
+          "@types/estree": "^1.0.6",
+          "fast-deep-equal": "^3.1.3",
+          "natural-compare": "^1.4.0",
+          "@eslint/eslintrc": "^3.3.6",
+          "file-entry-cache": "^8.0.0",
+          "@eslint/plugin-kit": "^0.4.1",
+          "eslint-visitor-keys": "^4.2.1",
+          "@eslint/config-array": "^0.21.2",
+          "@humanwhocodes/retry": "^0.4.2",
+          "escape-string-regexp": "^4.0.0",
+          "@eslint/config-helpers": "^0.4.2",
+          "@eslint-community/regexpp": "^4.12.1",
+          "@eslint-community/eslint-utils": "^4.8.0",
+          "@humanwhocodes/module-importer": "^1.0.1",
+          "json-stable-stringify-without-jsonify": "^1.0.1"
+        },
+        "peers": {
+          "jiti": "*"
+        },
+        "engines": {
+          "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+        },
+        "published": "2026-07-10T20:41:47.507Z"
+      },
+      "10.12.0": {
+        "dependencies": {
+          "ajv": "^6.14.0",
+          "debug": "^4.3.2",
+          "espree": "^11.2.0",
+          "ignore": "^5.2.0",
+          "esquery": "^1.7.0",
+          "esutils": "^2.0.2",
+          "find-up": "^5.0.0",
+          "is-glob": "^4.0.0",
+          "minimatch": "^10.2.5",
+          "optionator": "^0.9.3",
+          "cross-spawn": "^7.0.6",
+          "glob-parent": "^6.0.2",
+          "imurmurhash": "^0.1.4",
+          "@eslint/core": "^1.2.1",
+          "eslint-scope": "^9.1.2",
+          "@humanfs/node": "^0.16.6",
+          "@types/estree": "^1.0.6",
+          "fast-deep-equal": "^3.1.3",
+          "natural-compare": "^1.4.0",
+          "file-entry-cache": "11.1.5 || >11.1.6 <12",
+          "@eslint/plugin-kit": "^0.7.3",
+          "eslint-visitor-keys": "^5.0.1",
+          "@eslint/config-array": "^0.23.5",
+          "@humanwhocodes/retry": "^0.4.2",
+          "escape-string-regexp": "^4.0.0",
+          "@eslint/config-helpers": "^0.7.0",
+          "@eslint-community/regexpp": "^4.12.2",
+          "@eslint-community/eslint-utils": "^4.8.0",
+          "@humanwhocodes/module-importer": "^1.0.1",
+          "json-stable-stringify-without-jsonify": "^1.0.1"
+        },
+        "peers": {
+          "jiti": "*"
+        },
+        "engines": {
+          "node": "^20.19.0 || ^22.13.0 || >=24"
+        },
+        "published": "2026-10-02T20:08:19.213Z"
+      }
+    }
+  },
+  "eslint-plugin-react-refresh": {
+    "tags": {
+      "alpha": "0.5.0-alpha.2",
+      "latest": "0.5.7"
+    },
+    "versions": {
+      "0.5.6": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^9 || ^10"
+        },
+        "engines": {},
+        "published": "2026-09-02T10:36:23.751Z"
+      },
+      "0.5.7": {
+        "dependencies": {},
+        "peers": {
+          "eslint": "^9 || ^10"
+        },
+        "engines": {},
+        "published": "2026-09-14T16:12:50.394Z"
+      }
+    }
+  }
+}

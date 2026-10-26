@@ -1,0 +1,235 @@
+{
+  "status": "DOING",
+  "revision_cycle": 0,
+  "scope": "Unselected identity client source comparison and scoped navigation additions only; no graph resolution or runtime qualification",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/AGENTS.md",
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "bytes": 7686
+    },
+    {
+      "path": ".specify/memory/constitution.md",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/.specify/memory/constitution.md",
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "bytes": 16234
+    },
+    {
+      "path": "PROJECT.md",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/PROJECT.md",
+      "sha256": "a483bd2713fe420322772ab7fb07c848aaf103088697c05ab91f35d2e5ea1461",
+      "bytes": 10942
+    },
+    {
+      "path": "DECISIONS.md",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/DECISIONS.md",
+      "sha256": "dd31d6026aedd1a03e966e055724b2f02783147291525f1740341848837eed74",
+      "bytes": 86352
+    },
+    {
+      "path": "PROJECT_STATE.yaml",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/PROJECT_STATE.yaml",
+      "sha256": "ca8ed5825769b5007835c9b44d3a4e7b4ebd1cba120340686d017686b3a64270",
+      "bytes": 8776
+    },
+    {
+      "path": "TASKS.md",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/TASKS.md",
+      "sha256": "590da697f0da1c2bc38f648d53dd9be8fe2bec0df0dc209ab9adf5af5f050c21",
+      "bytes": 6728
+    },
+    {
+      "path": "docs/software-definition/README.md",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/docs/software-definition/README.md",
+      "sha256": "a4907696b81b7bc7949a02e712970615122459b124b8fee836d731320181ccba",
+      "bytes": 7503
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "sha256": "1fe2469d7a88897cbe07080650f0971efae4b45ab8f007d05eb315875cb7da7c",
+      "bytes": 70442
+    },
+    {
+      "path": "specs/001-platform-security-hardening/spec.md",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/specs/001-platform-security-hardening/spec.md",
+      "sha256": "2f7066eef33f89f8600587e7778d70e80538b82d49709c5516cac91f63371747",
+      "bytes": 31323
+    },
+    {
+      "path": "docs/phase-1-compatibility/backend-evidence-2026-10-04.md",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/docs/phase-1-compatibility/backend-evidence-2026-10-04.md",
+      "sha256": "5f5abc3b47e81c3656455bdc6714b3da87fea6fa1ef70247017e1c844bd4b4d6",
+      "bytes": 31285
+    },
+    {
+      "path": "docs/software-definition/04-reconciliation-map.md",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/docs/software-definition/04-reconciliation-map.md",
+      "sha256": "33883f7005f9a8bbe86dfe13b4f7176b20a74ff458faa5a56f46ced6e43a8d42",
+      "bytes": 93520
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/authlib-project.json.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/authlib-project.json.gz",
+      "sha256": "be4a3bb25dabba88677adee4525dff33447760af195b353c6ae06a234faae08b",
+      "bytes": 26808
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/fetch_primary.py",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/fetch_primary.py",
+      "sha256": "b2c8cd710490ff2268532076b5efb7787b118265e06f2ce439e8520d44016f44",
+      "bytes": 3532
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/fetch_registry.py",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/fetch_registry.py",
+      "sha256": "47f4046b54937c2c99a51c1cced7a36516ea35215dceba890a7558743448e219",
+      "bytes": 1633
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/msal-project.json.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/msal-project.json.gz",
+      "sha256": "f05df52cb7dd863aabfc60f0d9c79da2c78923f34fdbc725b52ff92e717653ba",
+      "bytes": 32645
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/prepare_proposal.py",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/prepare_proposal.py",
+      "sha256": "16f456f33b30266ea4a171829cc90a76de07884ff430a33f2267fa845baebf16",
+      "bytes": 9017
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/primary-sources.json",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/primary-sources.json",
+      "sha256": "e0bec09152e18d630377710ce8e480901353da711b69c70789845b06bb054722",
+      "bytes": 9887
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/registry-observations.json",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/registry-observations.json",
+      "sha256": "3db11020660d9245b9ac90413d2533b85076ad0209cc2fa19e5eb959eb84abb3",
+      "bytes": 2504
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/authlib/release.json.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/authlib/release.json.gz",
+      "sha256": "802033f0025ae73fd17975bfe7315a80db7c13044c913961af840bfd347f8733",
+      "bytes": 1410
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/authlib/tag-ref.json.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/authlib/tag-ref.json.gz",
+      "sha256": "ef4961fb34194718e67d6aa6efdb5c766b8bd6813b0525c15362e36a71cbbb12",
+      "bytes": 216
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/before/04-reconciliation-map.md",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/before/04-reconciliation-map.md",
+      "sha256": "f3b85e43ac2c81671dba6325cf936da4265db8f6fc66b823ac1216e5022c805f",
+      "bytes": 92595
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/before/backend-evidence-2026-10-04.md",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/before/backend-evidence-2026-10-04.md",
+      "sha256": "e2e96079c26ad53cd92e1320327cf2b696389c60935a8908327eab1569928c29",
+      "bytes": 25980
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/msal/release.json.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/msal/release.json.gz",
+      "sha256": "4879ac0c29018c14170416797caaace379c8affe2f033a90cb41cb0ed86f1f7e",
+      "bytes": 894
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/msal/tag-ref.json.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/msal/tag-ref.json.gz",
+      "sha256": "9d9db67b30108cf80c7d12b5a76173e641c7e24c3255a51a9835305272610dea",
+      "bytes": 244
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/msal/source/docs/index.rst.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/msal/source/docs/index.rst.gz",
+      "sha256": "e59e87fec3770cf122adea4f89af68d3ac7fac838e716b638af5841c30d5a024",
+      "bytes": 2493
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/msal/source/msal/application.py.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/msal/source/msal/application.py.gz",
+      "sha256": "05d4693ca52d556fcf9b7417c97df8530c37f180175a340d396b70f82127c570",
+      "bytes": 36675
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/msal/source/msal/token_cache.py.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/msal/source/msal/token_cache.py.gz",
+      "sha256": "1543680a9a901fed68727c65ae4d2d92db0ad3461d16a543d1b693ba5b80b67d",
+      "bytes": 8816
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/msal/source/msal/__init__.py.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/msal/source/msal/__init__.py.gz",
+      "sha256": "4247ee2b908fdd2c687b3522ef7045ad0a7442e28e4b4c7a927ed72422aef3a9",
+      "bytes": 1063
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/msal/source/msal/oauth2cli/oauth2.py.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/msal/source/msal/oauth2cli/oauth2.py.gz",
+      "sha256": "dfa38a6637d2f9d9f6e6dbc8e1f9932cdcd23690f39c61375ee7a8d9cfbc8e6d",
+      "bytes": 12739
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/msal/source/msal/oauth2cli/oidc.py.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/msal/source/msal/oauth2cli/oidc.py.gz",
+      "sha256": "e3506376b1fa0c98f3b87e5bf11c8ba8a519fd5e6a15d4254d6d74c703f2675b",
+      "bytes": 5133
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/authlib/source/authlib/__init__.py.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/authlib/source/authlib/__init__.py.gz",
+      "sha256": "b0ead649d1edb8333070acabc94384d8c08162697ba6aa9ba2dd03c73dd955bb",
+      "bytes": 319
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/authlib/source/docs/oauth2/client/web/starlette.rst.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/authlib/source/docs/oauth2/client/web/starlette.rst.gz",
+      "sha256": "a6082384c807ef9e29443929f265f0873b37b78e2ed173fdb6b2476b92ad0229",
+      "bytes": 1873
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/authlib/source/authlib/oidc/core/claims.py.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/authlib/source/authlib/oidc/core/claims.py.gz",
+      "sha256": "cb1af3d34f4c05c7702a6e8338296399115201e253dda7157a6eef9362571ccb",
+      "bytes": 3053
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/authlib/source/authlib/integrations/base_client/async_app.py.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/authlib/source/authlib/integrations/base_client/async_app.py.gz",
+      "sha256": "7a8f095cb1e081be1ec8ae447e16fd2786c1b0feb0fd5824e81717d0f9e345ad",
+      "bytes": 1354
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/authlib/source/authlib/integrations/base_client/async_openid.py.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/authlib/source/authlib/integrations/base_client/async_openid.py.gz",
+      "sha256": "46f1020e7be39638fda05e9992ea9480cba34eceb3eee56a1ebc50a8bfe86688",
+      "bytes": 1392
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/authlib/source/authlib/integrations/base_client/framework_integration.py.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/authlib/source/authlib/integrations/base_client/framework_integration.py.gz",
+      "sha256": "92928780f695ec9778b5fa0cfbca4bc0caee422db0bb56e7f653e4ccca70a7b6",
+      "bytes": 614
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/authlib/source/authlib/integrations/starlette_client/apps.py.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/authlib/source/authlib/integrations/starlette_client/apps.py.gz",
+      "sha256": "d0f2f956136189e590fca74bbbe338e54503f7e3721b551d3ca18cfea19e6676",
+      "bytes": 1467
+    },
+    {
+      "path": "output/research/staff-identity-client-options-2026-10-08/authlib/source/authlib/integrations/starlette_client/integration.py.gz",
+      "snapshot": "output/research/staff-identity-client-options-2026-10-08/review/inputs/output/research/staff-identity-client-options-2026-10-08/authlib/source/authlib/integrations/starlette_client/integration.py.gz",
+      "sha256": "6eac44106f6aee9b829c28f3392dfbca3d372ece1da3019c8745a6e19b87e34c",
+      "bytes": 883
+    }
+  ]
+}

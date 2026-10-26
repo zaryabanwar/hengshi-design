@@ -1,0 +1,23 @@
+{
+  "reviewer": "/root/review_directory_references_v1",
+  "disposition": "REVISE",
+  "scope": "IF-BOOK-02 logical admission/correction only",
+  "manifest_sha256": "7bd29306156557683e65fe5aeb7eb5a4aa630dca52ddb6ae7471e6fca9cb7ed4",
+  "catalogue_sha256": "a1da08d7bbfe60aa616eba816269845cf9e0d2fd261ba0b3bd0a698d7a7ff2ef",
+  "matching_initial_and_final_source_snapshot_pairs": 13,
+  "original_catalogue_prefix_bytes": 38715,
+  "original_catalogue_prefix_sha256": "85b64424e7052c66371fb84bbb6cd208e37f256a3865944c311750a28025d872",
+  "findings": [
+    {
+      "id": "BQ-01",
+      "message": "Distinguish stale new verification-delivery admission from an already-admitted/in-flight or unknown delivery. Correction cannot recall mail; old challenge authority must fail, with IF-BOOK-03 reconciliation before safe resend."
+    },
+    {
+      "id": "BQ-01-related",
+      "message": "Narrow the replacement fence to calendar/meeting booking intent so verification-delivery uncertainty does not impose a blanket post-email correction lock."
+    }
+  ],
+  "other_material_findings": [],
+  "local_references_resolved": 4,
+  "limits": "No wire/state/numeric/email/timing/privacy/mechanism selection, schema or application implementation, runtime proof or integrated acceptance."
+}

@@ -1,0 +1,160 @@
+{
+  "product": "Hengshi Design v1",
+  "verdict": "PASS",
+  "reviewed_at_utc": "2026-10-11T20:09:22.863158+00:00",
+  "scope": "Navigation-only QA spec/checklist reference and review-label consistency. No additional definition revision or fresh whole-feature acceptance.",
+  "packet_binding": {
+    "path": "output/research/qa-feature-reference-reconciliation-2026-10-12/review-inputs.json",
+    "sha256": "7a255836808f1ad11e29262564492f4bffbb04c7fb423f42782c0f17473b7622",
+    "verified_input_count": 17,
+    "all_sizes_and_sha256_verified": true
+  },
+  "changed_artifact_bindings": {
+    "08-spec.md": {
+      "bytes": 31953,
+      "sha256": "4bdd6e03df7b7476f4cba984dbe0e19fc415bcbc2ff3e8f0621cc498117cda60"
+    },
+    "09-requirements.md": {
+      "bytes": 4003,
+      "sha256": "72d9a9653333ffa20526707a2ed07f30a34bfca8dea62103744dfe517e9931e2"
+    },
+    "10-spec.md": {
+      "bytes": 30459,
+      "sha256": "3afdbd73217090da8980ecddad69ce1c447879f1ee00f90f1db47ee2ebb3548e"
+    },
+    "11-requirements.md": {
+      "bytes": 3509,
+      "sha256": "b06bb9cad8d8ed57c3177123078e55986a183a0ec796a6346c3c0a42a933f8c1"
+    }
+  },
+  "corrected_predecessor_provenance": {
+    "predecessor_spec_sha256": "3afdbd73217090da8980ecddad69ce1c447879f1ee00f90f1db47ee2ebb3548e",
+    "predecessor_checklist_sha256": "b06bb9cad8d8ed57c3177123078e55986a183a0ec796a6346c3c0a42a933f8c1",
+    "both_match_preserved_D074_corrected_input_receipt": true,
+    "correction_receipt_sha256": "7102c25e2cf2f7e7c341f71aa500d31fd34039e06fd9c2ef989da48b641470d2"
+  },
+  "exact_delta_inventory": {
+    "specification": [
+      {
+        "operation": "replace",
+        "prior_start_line": 11,
+        "prior_end_exclusive_line": 12,
+        "current_start_line": 11,
+        "current_end_exclusive_line": 12,
+        "prior_sha256": "af4adab14270ad975a3315257574c3a197b342a8d53bd6ecfa81dfe2922a2712",
+        "current_sha256": "25b22cd4e4900a571e1443cd10846f163c60bfc76fdb776d6bfca14e9532377b"
+      },
+      {
+        "operation": "insert",
+        "prior_start_line": 21,
+        "prior_end_exclusive_line": 21,
+        "current_start_line": 21,
+        "current_end_exclusive_line": 30,
+        "prior_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "current_sha256": "cd705fd417530ef6098e1eec5d69691e2b1db7f46f09a42ca05b396a2e032ca1"
+      },
+      {
+        "operation": "replace",
+        "prior_start_line": 316,
+        "prior_end_exclusive_line": 317,
+        "current_start_line": 325,
+        "current_end_exclusive_line": 326,
+        "prior_sha256": "1301c5ebf3a7ec3e4b05047c5c0ddd1167ccd7fae14f9c41ff816a57b5a9843f",
+        "current_sha256": "ef8e689f8ddb198abf7c6d177e21bb31b64e6386fa0b2396fd04aff26dffb237"
+      },
+      {
+        "operation": "insert",
+        "prior_start_line": 345,
+        "prior_end_exclusive_line": 345,
+        "current_start_line": 354,
+        "current_end_exclusive_line": 360,
+        "prior_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "current_sha256": "47287406c1d8a58f1a8b37b34c22c25c10ff247d846ec968f5c6cb49910255c0"
+      }
+    ],
+    "checklist": [
+      {
+        "operation": "replace",
+        "prior_start_line": 33,
+        "prior_end_exclusive_line": 34,
+        "current_start_line": 33,
+        "current_end_exclusive_line": 34,
+        "prior_sha256": "203e22a3d660195a3b32c98735930f8d1d802979872cf805c55df2551a1107e3",
+        "current_sha256": "6f42473e1960d338d3064b84391dd65956f96f33c1d31183ce331bcec6e26918"
+      },
+      {
+        "operation": "replace",
+        "prior_start_line": 46,
+        "prior_end_exclusive_line": 49,
+        "current_start_line": 46,
+        "current_end_exclusive_line": 52,
+        "prior_sha256": "22bfb31e648aeac8eb33a7b794d0b8de01bb020006999f9f012b7358f11567d0",
+        "current_sha256": "e0574cc34cd78a48df3561eb0224a9ef80d0b53359ab28901966a6f50e986183"
+      }
+    ]
+  },
+  "unchanged_sections": [
+    "## Problem, Audience, and Evidence",
+    "## Goals and Success Measures",
+    "## Non-Goals and Protected Scope",
+    "## User Journeys and Failure Journeys",
+    "## Functional Requirements",
+    "## Non-Functional Requirements",
+    "## SEO and Publication Requirements",
+    "## Data, Privacy, and Security",
+    "## AI and Human-Handoff Requirements",
+    "## Interfaces and Data Contracts",
+    "## Technology Constraints",
+    "## Acceptance Scenarios",
+    "## Open Decisions and Assumptions",
+    "## Review and Approval"
+  ],
+  "findings": [],
+  "observations": [
+    "Four specification diff regions are confined to the reviewer-label replacement, exact-scope review-reference paragraph, dependency review-label replacement and appended navigation references. Two checklist diff regions reconcile historical review status and consumed-cycle limits. No method, requirement, scenario, target or pass/fail input changes.",
+    "The original historical feature PASS and later REVISE remain preserved in their receipt. Separate corrected-input PASS resolves QA-V1-01 only at the saved corrected specification and unchanged checklist hashes. Current wording explicitly prevents transferring that PASS to the current whole feature.",
+    "D074 authorized only the one-word families-to-releases correction after exhausted producer cycles. It is explicitly recorded as consumed; current edits claim no further definition revision or expanded exception. The navigation delta introduces no changed acceptance oracle or implementation expectation.",
+    "FQA-N06 still requires the latest two stable evergreen releases, dated exact-client coverage, Safari/iOS16.4 floor and WCAG2.2AA complete-process target. FQA-N07 retains held numerical NFR007 frame-time/memory/thermal inputs, with no fabricated FPS or device certification.",
+    "Complete latest-mutually-compatible stable graph, deferred Azure/AWS hosting/provider/cost, no blanket Microsoft365 prerequisite, undecided mailbox ownership, diagnostic authority and exact operational/measured-input holds remain unchanged. Only the dependency row about review history is reworded; its acceptance gate remains.",
+    "The World measurement, monthly availability, recovery clocks and incident rehearsal references resolve to existing frozen proposal documents/anchors. They are expressly navigation-only, adopt no values and claim no executed measurement or rehearsal. Complete feature and Phase1 acceptance continue to precede implementation.",
+    "The checked checklist entry denotes the recorded bounded reviews at exact hashes, not final specialist evidence or whole-feature acceptance. Founder/integrated readiness boxes remain unchecked and applicable independent review/approval gates remain."
+  ],
+  "new_link_occurrences_checked": [
+    {
+      "source": "specs/002-testing-and-monitoring/reviews/qa-feature-v1-2026-10-04.md",
+      "anchor": ""
+    },
+    {
+      "source": "specs/002-testing-and-monitoring/reviews/qa-browser-release-correction-v1-2026-10-06.md",
+      "anchor": ""
+    },
+    {
+      "source": "docs/phase-1-3d/WORLD_MEASUREMENT_PROFILE.md",
+      "anchor": ""
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/QA_RECOVERY.md",
+      "anchor": "monthly-availability-measurement-proposal--2026-10-08"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/QA_RECOVERY.md",
+      "anchor": "recovery-clocks-and-safe-return-to-service-proposal--2026-10-08"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/QA_RECOVERY.md",
+      "anchor": "incident-response-rehearsal--v1"
+    },
+    {
+      "source": "specs/002-testing-and-monitoring/reviews/qa-browser-release-correction-v1-2026-10-06.md",
+      "anchor": ""
+    }
+  ],
+  "nonempty_anchors_checked": 3,
+  "limits": [
+    "PASS covers only reference/review-label consistency at this17-input freeze; it does not re-review whole QA spec or adopt later numerical/availability/recovery/rehearsal proposals.",
+    "Historical receipts remain bound to their own inputs. No extra definition-revision cycle under D074, whole-feature acceptance, plan/tasks, implementation authority or release readiness follows.",
+    "No test suite, benchmark, monitoring/SLI, physical device, browser/assistive technology, recovery/restore, incident rehearsal, security/privacy enforcement or product behavior was executed or certified.",
+    "Final specialist evidence, exact held device/operational/retention inputs and founder/integrated acceptance remain required. Alias ownership and hosting/provider/cost deferrals remain intact.",
+    "No Figma/browser/network/account/application/runtime/dependency/Git/external action or delegation occurred; only this exclusive-create receipt was written."
+  ]
+}

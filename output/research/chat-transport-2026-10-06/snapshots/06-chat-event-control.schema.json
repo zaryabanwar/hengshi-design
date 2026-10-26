@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed chat event control directions v1",
+  "description": "Definition-only IF-CHAT-03 controls. Explicitly reference client or server. No text or business command is admitted. Shape proves no CSRF binding, authority, ordering, contiguous receipt, eligible replay, transport/resource enforcement or retention permission.",
+  "not": {},
+  "$defs": {
+    "uuid_v4": {"$ref": "booking-creation-request.schema.json#/$defs/operation_id"},
+    "revision": {"$ref": "process-value.schema.json#/$defs/positive_revision"},
+    "sequence": {"type": "integer", "minimum": 0, "maximum": 9007199254740991},
+    "cursor": {
+      "type": "object", "additionalProperties": false,
+      "required": ["stream_id", "after_sequence"],
+      "properties": {
+        "stream_id": {"$ref": "#/$defs/uuid_v4"},
+        "after_sequence": {"$ref": "#/$defs/sequence"}
+      }
+    },
+    "initialize": {
+      "type": "object", "additionalProperties": false,
+      "required": ["protocol_version", "kind", "proof_generation", "csrf_token", "resume"],
+      "properties": {
+        "protocol_version": {"type": "integer", "const": 1},
+        "kind": {"const": "initialize"},
+        "proof_generation": {"$ref": "#/$defs/revision", "minimum": 2},
+        "csrf_token": {"$ref": "booking-creation-response.schema.json#/$defs/csrf_token"},
+        "resume": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/cursor"}]}
+      }
+    },
+    "receipt": {
+      "type": "object", "additionalProperties": false,
+      "required": ["protocol_version", "kind", "channel_id", "stream_id", "through_sequence"],
+      "properties": {
+        "protocol_version": {"type": "integer", "const": 1},
+        "kind": {"const": "receipt"},
+        "channel_id": {"$ref": "#/$defs/uuid_v4"},
+        "stream_id": {"$ref": "#/$defs/uuid_v4"},
+        "through_sequence": {"$ref": "#/$defs/sequence"}
+      }
+    },
+    "ready": {
+      "type": "object", "additionalProperties": false,
+      "required": ["protocol_version", "kind", "channel_id", "proof_generation", "consent_revision", "stream_id", "head_sequence", "next_sequence", "resume_outcome"],
+      "properties": {
+        "protocol_version": {"type": "integer", "const": 1},
+        "kind": {"const": "ready"},
+        "channel_id": {"$ref": "#/$defs/uuid_v4"},
+        "proof_generation": {"$ref": "#/$defs/revision", "minimum": 2},
+        "consent_revision": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/revision"}]},
+        "stream_id": {"$ref": "#/$defs/uuid_v4"},
+        "head_sequence": {"$ref": "#/$defs/sequence"},
+        "next_sequence": {"$ref": "#/$defs/revision"},
+        "resume_outcome": {"enum": ["fresh", "resumed"]}
+      }
+    },
+    "unavailable": {
+      "type": "object", "additionalProperties": false,
+      "required": ["protocol_version", "kind", "code", "recovery"],
+      "properties": {
+        "protocol_version": {"type": "integer", "const": 1},
+        "kind": {"const": "unavailable"},
+        "code": {"enum": ["replay_unavailable", "authority_changed", "resource_limit", "service_unavailable"]},
+        "recovery": {"enum": ["reconcile", "contact_or_book"]}
+      }
+    },
+    "client": {"oneOf": [{"$ref": "#/$defs/initialize"}, {"$ref": "#/$defs/receipt"}]},
+    "server": {"oneOf": [{"$ref": "#/$defs/ready"}, {"$ref": "#/$defs/unavailable"}]}
+  }
+}

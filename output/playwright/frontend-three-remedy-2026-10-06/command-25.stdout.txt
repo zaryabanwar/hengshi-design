@@ -1,0 +1,9 @@
+### Result
+{
+  "focused": "Isolated frontend tooling fixtureCompatibility evidence only. This is not the Hengshi website or campus.Count 1Store incrementStore value: 1Run fixture animationAnimation: CompletedOpen fixture notes | Fixture homeFixture notes routeUnmount sceneRenderer: WebGL2 renderer createdWebGL unavailable\n\n",
+  "tag": "BODY"
+}
+### Ran Playwright code
+```js
+await page.evaluate('() => ({focused:document.activeElement?.textContent,tag:document.activeElement?.tagName})');
+```

@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed private booking status response v1",
+  "description": "Closed IF-BOOK-07 server projection only. Shape does not prove object authority, a current revision, reconciled provider truth, thirty-minute duration, HTTP enforcement or permission to reschedule/cancel. PRIVATE_PROCESS_PROOF.md controls interpretation and transport.",
+  "oneOf": [
+    {"$ref": "#/$defs/snapshot"},
+    {"$ref": "#/$defs/error"}
+  ],
+  "$defs": {
+    "utc_instant": {
+      "type": "string",
+      "minLength": 24,
+      "maxLength": 24,
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-5][0-9]\\.[0-9]{3}Z(?![\\s\\S])",
+      "description": "Proposed canonical UTC instant with exactly three fractional digits. Assert calendar format in addition to lexical shape. No timezone offset, leap-second representation, trimming or rounding policy is introduced."
+    },
+    "occurrence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["basis", "starts_at_utc", "ends_at_utc"],
+      "properties": {
+        "basis": {"const": "last_reconciled"},
+        "starts_at_utc": {"$ref": "#/$defs/utc_instant"},
+        "ends_at_utc": {"$ref": "#/$defs/utc_instant"}
+      },
+      "description": "Minimal authorized last-reconciled occurrence. Cross-field ordering/duration, exact same-revision provenance and provider match are semantic checks, not schema guarantees."
+    },
+    "snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lineage_id", "lineage", "booking"],
+      "properties": {
+        "lineage_id": {"$ref": "process-value.schema.json#/$defs/uuid"},
+        "lineage": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["revision", "state"],
+          "properties": {
+            "revision": {"$ref": "process-value.schema.json#/$defs/positive_revision"},
+            "state": {
+              "enum": [
+                "BOOKING_STARTED", "VALIDATION_ERROR", "QUALIFICATION_COMPLETE",
+                "EMAIL_PENDING", "EMAIL_EXPIRED", "EMAIL_UNDELIVERABLE", "VERIFIED",
+                "NO_AVAILABILITY", "SLOT_SELECTED", "BOOKING_PENDING",
+                "RECONCILIATION_ERROR", "CONFIRMED_QUALIFIED", "RESCHEDULE_PENDING",
+                "CANCEL_PENDING", "CANCELLED"
+              ]
+            }
+          }
+        },
+        "booking": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["current_occurrence"],
+          "properties": {
+            "current_occurrence": {
+              "oneOf": [{"type": "null"}, {"$ref": "#/$defs/occurrence"}]
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": ["lineage"],
+            "properties": {
+              "lineage": {
+                "required": ["state"],
+                "properties": {
+                  "state": {"enum": ["CONFIRMED_QUALIFIED", "RESCHEDULE_PENDING", "CANCEL_PENDING"]}
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "booking": {"properties": {"current_occurrence": {"$ref": "#/$defs/occurrence"}}}
+            }
+          },
+          "else": {
+            "properties": {
+              "booking": {"properties": {"current_occurrence": {"type": "null"}}}
+            }
+          }
+        }
+      ]
+    },
+    "error": {
+      "oneOf": [
+        {"const": {"state": "unavailable", "code": "INVALID_REQUEST", "recovery": "correct_request"}},
+        {"const": {"state": "unavailable", "code": "ACCESS_UNAVAILABLE", "recovery": "contact"}},
+        {"const": {"state": "unavailable", "code": "SERVICE_UNAVAILABLE", "recovery": "refresh_status"}}
+      ],
+      "description": "Proposed minimal 400/404/503 pairs only. No private selector, existence reason, challenge, proof, provider state or arbitrary diagnostic detail. Other transport/capacity cases remain separately held."
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "exact_before_bytes_reconstructed": true,
+  "scope": "one new navigation link and one new details block; all other HTML/CSS/source bytes preserved",
+  "desktop": "1440x1000, four columns, full section capture, no horizontal overflow",
+  "mobile": "390x844 desktop browser viewport emulation, one column, full section recaptured with reduced-motion preference after initial smooth-scroll capture was incomplete; not a physical phone",
+  "keyboard": "Enter opened; Space closed; Enter reopened; Tab reached first source link",
+  "links": "all five source file reads HTTP 200; heading references independently inspectable from sources",
+  "console": "0 errors, 0 warnings",
+  "application_runtime_enforcement_verified": false,
+  "direct_browser_control": "cua_repl failed to initialize; existing headed Playwright CLI session used"
+}

@@ -1,7 +1,7 @@
 <!--
 SYNC IMPACT REPORT
-Version change: {{ previous version }} -> {{ new version }}
-Reason: {{ amendment rationale and semantic-version classification }}
+Current production-definition label: v1
+Reason: {{ dated amendment rationale and founder authority }}
 Modified principles: {{ list renamed or materially changed principles }}
 Added/removed sections: {{ list or state none }}
 Updated dependent artifacts: {{ list templates, rules, specs, and workflow docs }}
@@ -40,20 +40,24 @@ implementation evidence, and drafts/history. Define which conflicts block work._
 ## Development Workflow
 
 1. _Read durable authority and current state._
-2. _Confirm bounded objective, exclusions, write scope, evidence, revision limit,
-   reviewers, and human gates._
-3. _Create -> validate -> inspect -> independent review -> revise -> validate
-   again -> human approval._
-4. _Synchronize state, decisions, risks, manual actions, and changelog._
+2. _Confirm one assigned increment, exclusions, write scope, evidence and genuine
+   human gates. Do not require unrelated future increments before implementation._
+3. _Create -> validate -> inspect -> review where required -> correct -> revalidate.
+   No numeric correction cap; diagnose repeated failures and escalate material choices._
+4. _Update owning product references and compact state, report and stop. Separate
+   code completion from launch qualification and record actual founder decisions._
 
 ## Governance
 
 This constitution supersedes ad hoc implementation habits. Amendments require a
-documented rationale, semantic version change, human approval, and synchronized
+documented rationale, dated decision, human approval, and synchronized
 updates to affected templates, rules, product definitions, specifications, state,
 and decision records.
 
-_Define patch/minor/major amendment criteria and the authority allowed to approve
-an amendment._
+_For Hengshi's first development, keep the current product/definition label v1
+under D-069. Record internal amendments through dates and decisions; do not invent
+a later product release. Factual package/API/schema and historical evidence
+identifiers remain accurate. A later product-version policy needs an approved
+release decision._
 
-**Version**: {{ version }} | **Ratified**: {{ ratification date }} | **Last Amended**: {{ amendment date }}
+**Version**: 1.0.0 | **Ratified**: {{ ratification date }} | **Last Amended**: {{ amendment date }}

@@ -1,0 +1,38 @@
+Browser tab: 1, Title: "Hengshi Design v1 — UI References – Figma", URL: "https://www.figma.com/design/GOmLP6Cv96l768ueSrZ5Dg/Hengshi-Design-v1-%E2%80%94-UI-References?node-id=172-3468&t=aNQGmRbJKshhttRt-0".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 599-746
+~							142 tab (selectable, settable, boolean) Design, Value: 0, ID: tab:r10:-0-trigger
+~							143 tab (selected, settable, boolean) Prototype, Value: 1, ID: tab:r10:-1-trigger
+~							598 text Add interactivity with Make
++							599 button Close
++							600 container Mock video of sample images shuffling
++							601 text Figma Make opens up new ways to prototype—from responsive components to micro-interactions.
++							602 button Try Figma Make
++							603 button Interactions
++							604 button Add action
++							605 heading Scroll behavior, Value: 2
++								606 text Scroll behavior
++							607 text Position
++							608 combo box (collapsed) Position, Value: Scroll with parent, ID: :rj7:, Secondary Actions: Expand
++								609 text Scroll with parent
++								610 image
++							611 text Overflow
++							612 combo box (disabled, collapsed) Overflow, Value: No scrolling, ID: :rja:, Secondary Actions: Expand
++								613 text No scrolling
++								614 image
++							615 button Show prototype settings
++							616 container delete-connection-hint
++								617 container
++									618 text Removing a connection
++									619 button Close
++								620 container
++									621 image
++									622 text To delete a connection, click and drag on either end.
++							623 container play-button-hint
++								624 container
++									625 text Running your prototype
++									626 button Close
++								627 container
++									628 image
++									629 text Use the play button in the toolbar to play your prototype. If there are no connections, the play button can be used to play a presentation of your frames.
+The focused UI element is 143 tab (selected, settable, boolean) Prototype, Value: 1, ID: tab:r10:-1-trigger

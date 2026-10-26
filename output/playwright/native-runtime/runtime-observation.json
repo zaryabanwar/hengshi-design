@@ -1,0 +1,59 @@
+{
+  "boundaries": {
+    "known_defects": [
+      "R-003",
+      "R-004",
+      "R-005"
+    ],
+    "production_readiness_proven": false,
+    "credential_or_role_changed": false,
+    "env_files_changed": false,
+    "migration_or_seed_executed": false,
+    "application_source_changed": false
+  },
+  "product": "v1",
+  "database_probe_comparison": {
+    "load_benchmark": false,
+    "ipv4_seconds": 0.22,
+    "localhost_seconds": 5.29
+  },
+  "database": {
+    "port": 5432,
+    "cluster_path_source": "LOCALAPPDATA/HengshiDesign/postgres-walkthrough/data",
+    "service_cluster_used": false,
+    "database_read_only_probe_succeeded": true,
+    "server_version": "17.4",
+    "cluster_major": 17,
+    "database": "hengshi",
+    "pid": 18524
+  },
+  "api": {
+    "services_read_status": 200,
+    "host": "127.0.0.1",
+    "health_status": 200,
+    "pid": 13084,
+    "world_read_status": 200,
+    "port": 8001
+  },
+  "schema": "native-prototype-observation",
+  "web": {
+    "host": "127.0.0.1",
+    "api_base": "http://127.0.0.1:8001",
+    "pid": 1688,
+    "port": 5173
+  },
+  "admin": {
+    "browser_route": "/admin/services",
+    "login_status": 200,
+    "credential_values_recorded": false,
+    "services_status": 200,
+    "existing_account_used": true,
+    "page_errors": 0
+  },
+  "untouched_listener": {
+    "pid": 16464,
+    "type": "wslrelay",
+    "port": 8000
+  },
+  "as_of": "2026-10-04"
+}

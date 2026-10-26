@@ -1,0 +1,85 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Correction1 separate uncertainty bounds and current complete-boundary verification; initial REVISE preserved",
+  "inputs": [
+    {
+      "source": "docs/phase-1-architecture/contracts/QA_RECOVERY.md",
+      "snapshot": "output/research/recovery-measurement-2026-10-08/correction-1/review-snapshots/00-QA_RECOVERY.md",
+      "bytes": 33456,
+      "sha256": "1469d2cd8c0c32c1ff10103dcc0ee2b73bbf52d4de9d1490c7bf77e521fcba74"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/acceptance-matrix.csv",
+      "snapshot": "output/research/recovery-measurement-2026-10-08/correction-1/review-snapshots/01-acceptance-matrix.csv",
+      "bytes": 4595,
+      "sha256": "479d71d4499b8925116205c072e2d6e40e2946188c53f48d372f0765c3976974"
+    },
+    {
+      "source": "docs/phase-1-foundation/01-product-requirements.md",
+      "snapshot": "output/research/recovery-measurement-2026-10-08/correction-1/review-snapshots/02-01-product-requirements.md",
+      "bytes": 70783,
+      "sha256": "4db9d504695e7791705c41fe70fd0aea0467338d95acb5b6732bf6927893ac2e"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "output/research/recovery-measurement-2026-10-08/correction-1/review-snapshots/03-DECISIONS.md",
+      "bytes": 86352,
+      "sha256": "dd31d6026aedd1a03e966e055724b2f02783147291525f1740341848837eed74"
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "output/research/recovery-measurement-2026-10-08/correction-1/review-snapshots/04-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "output/research/recovery-measurement-2026-10-08/correction-1/review-snapshots/05-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "snapshot": "output/research/recovery-measurement-2026-10-08/correction-1/review-snapshots/06-DATA_CONTRACT.md",
+      "bytes": 45770,
+      "sha256": "073878dcce6e2beb6477ec6fbe3162382554cc5875569e33a60e58ef34e23828"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "output/research/recovery-measurement-2026-10-08/correction-1/review-snapshots/07-SECURITY_PRIVACY_CONTRACT.md",
+      "bytes": 70442,
+      "sha256": "1fe2469d7a88897cbe07080650f0971efae4b45ab8f007d05eb315875cb7da7c"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "snapshot": "output/research/recovery-measurement-2026-10-08/correction-1/review-snapshots/08-PUBLICATION_CONTRACT.md",
+      "bytes": 71338,
+      "sha256": "ee78c1b0b35549cf2a4a2647726d3080874b14bc57e86934b422a1e959b2a4c8"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "snapshot": "output/research/recovery-measurement-2026-10-08/correction-1/review-snapshots/09-PRIVATE_PROCESS_PROOF.md",
+      "bytes": 116413,
+      "sha256": "12314d8567e4f4c0f63c944aae6caa09657240bf40042191b983f4be5b6599ae"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PROVIDER_SCOPE_ADDENDUM.md",
+      "snapshot": "output/research/recovery-measurement-2026-10-08/correction-1/review-snapshots/10-PROVIDER_SCOPE_ADDENDUM.md",
+      "bytes": 4828,
+      "sha256": "4db6222615c5309c8802cb16ceea94dfe0f516db77246159f750a843f97f2dbd"
+    },
+    {
+      "source": "specs/002-testing-and-monitoring/spec.md",
+      "snapshot": "output/research/recovery-measurement-2026-10-08/correction-1/review-snapshots/11-spec.md",
+      "bytes": 30459,
+      "sha256": "3afdbd73217090da8980ecddad69ce1c447879f1ee00f90f1db47ee2ebb3548e"
+    }
+  ],
+  "primary_sources": [
+    "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+    "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-34r1.pdf"
+  ],
+  "correction_cycle": 1,
+  "initial_receipt": "docs/phase-1-architecture/contracts/reviews/recovery-measurement-v1-2026-10-08.md"
+}

@@ -1,0 +1,138 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Supplemented research candidate metadata and standard-format/relationship correlations only",
+  "jsonschema_version": "4.23.0",
+  "schema_errors": 0,
+  "unique_spdx_ids": 305,
+  "relationship_count": 483,
+  "initial_virtual_locations": 302,
+  "supplemented_virtual_locations": 308,
+  "required_or_invalid_edges_before": 6,
+  "required_or_invalid_edges_after": 0,
+  "verified_bundled_contains": 6,
+  "child_parent_checksum_inference": false,
+  "unresolved_optional_peers": [
+    {
+      "from": "node_modules/@react-three/fiber",
+      "name": "expo",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/@react-three/fiber",
+      "name": "expo-asset",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/@react-three/fiber",
+      "name": "expo-file-system",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/@react-three/fiber",
+      "name": "expo-gl",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/@react-three/fiber",
+      "name": "react-native",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/@vitejs/plugin-react",
+      "name": "@rolldown/plugin-babel",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/@vitejs/plugin-react",
+      "name": "babel-plugin-react-compiler",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/@vitejs/plugin-react",
+      "name": "oxc-transform-react",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/tunnel-rat/node_modules/zustand",
+      "name": "immer",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/vite",
+      "name": "@types/node",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/vite",
+      "name": "@vitejs/devtools",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/vite",
+      "name": "esbuild",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/vite",
+      "name": "less",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/vite",
+      "name": "sass",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/vite",
+      "name": "sass-embedded",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/vite",
+      "name": "stylus",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/vite",
+      "name": "sugarss",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/vite",
+      "name": "terser",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/vite",
+      "name": "tsx",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/vite",
+      "name": "yaml",
+      "type": "peerOptional"
+    },
+    {
+      "from": "node_modules/zustand",
+      "name": "immer",
+      "type": "peerOptional"
+    }
+  ],
+  "negative_relationship_type_rejected_by_schema": true,
+  "negative_dangling_endpoint_accepted_by_schema_but_rejected_by_correlation": true,
+  "historical_protected_inputs_checked": 78,
+  "historical_unchanged_inputs": 75,
+  "historical_checkpoint_records_changed_since_oct6": [
+    "DECISIONS.md",
+    "PROJECT_STATE.yaml",
+    "TASKS.md"
+  ],
+  "application_model_candidate_inputs_changed": [],
+  "limits": [
+    "Original npm CLI virtual SBOM remains failed; no lock repair or new successful npm command claimed",
+    "Complete for this lock-derived metadata plus named bundle occurrences, not all embedded code or actual platform artifacts",
+    "No complete notice/attribution/provenance/advisory/compatibility clearance, D-072 isolation, full graph or MA-013 adoption",
+    "Shape/correlation controls are not application or package-runtime tests"
+  ]
+}

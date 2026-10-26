@@ -1,0 +1,22 @@
+{
+  "status": "DOING",
+  "scope": "Public text projection and private source-field/context extraction definition only",
+  "independent_review": "pending",
+  "correction_cycles_used": 0,
+  "files": [
+    {
+      "path": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "before_sha256": "8727998464c485faab917dff590affb2d8a4b990c481868fd18b5f91dd111028",
+      "after_sha256": "11f71778edf797032ea43fe0204abeec5e11afa9178ddd4ea67b99c10a6ce460",
+      "preserved_prefix_bytes": 46213
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "before_sha256": "f56411f080eccceb6bd5c256b0288bb0fa1bd17331b900bf6e8730fe28aa2db6",
+      "after_sha256": "abb91975d2c828bbfd08a49ae5f2153c420812875da876c148d71145f9aebc24",
+      "preserved_prefix_bytes": 79872
+    }
+  ],
+  "tests": "No prose tests or runtime/schema claim; representation encoding and actual boundary tests remain",
+  "application_changes": false
+}

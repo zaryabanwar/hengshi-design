@@ -1,0 +1,436 @@
+- application
+- status: Screenreader support for the board is currently disabled. To enable it via Accessibility settings, press Ctrl+K, type Accessibility Settings, and press Enter. To see available keyboard shortcuts, enter Ctrl+Shift+Question mark .
+- status
+- region "Comments on canvas":
+  - button "Create new comment"
+- region "Left sidebar":
+  - toolbar "Navigation Bar":
+    - button "Main menu":
+    - separator
+    - button "File" [expanded]:
+      - generic: File
+    - button "Agents":
+      - generic: Agents
+    - button "Assets":
+      - generic: Assets
+    - button "Tools":
+      - generic: Tools
+    - separator
+    - button "Variables":
+      - generic: Variables
+  - button "Hengshi Design v1 — UI References, file name": Hengshi Design v1 — UI References
+  - generic: File name
+  - button "Edit file menu":
+  - button "Minimize UI":
+  - link "hengshi-design":
+    - /url: https://www.figma.com/files/team/1472694121837770005/project/666072293
+  - button "Free":
+    - generic: Free
+  - heading "Pages Find Add new page" [level=2]:
+    - button "Pages" [expanded]:
+      - generic: Pages
+    - button "Find":
+    - button "Add new page":
+  - grid:
+    - row "Page 1":
+      - gridcell "Page 1":
+        - button "Page 1":
+          - generic: Page 1
+  - slider "Resize handle"
+  - heading "Layers Collapse layers" [level=2]:
+    - button "Layers" [expanded]:
+      - generic: Layers
+    - button "Collapse layers":
+  - treegrid:
+    - row "B01 / Four-stream three-host qualification / v1" [expanded]:
+      - button:
+      - gridcell:
+      - gridcell "B01 / Four-stream three-host qualification / v1":
+        - generic: B01 / Four-stream three-host qualification / v1
+    - row "ENQ_RECOVERY_SEMANTIC / RESET probe" [expanded] [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_SEMANTIC / RESET probe":
+        - generic: ENQ_RECOVERY_SEMANTIC / RESET probe
+    - row "ENQ host RECOVERY SEMANTIC" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host RECOVERY SEMANTIC":
+        - generic: ENQ host RECOVERY SEMANTIC
+    - row "ENQ_RECOVERY_SEMANTIC / PRESERVE probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_SEMANTIC / PRESERVE probe":
+        - generic: ENQ_RECOVERY_SEMANTIC / PRESERVE probe
+    - row "ENQ_RECOVERY_SEMANTIC / Preview" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_SEMANTIC / Preview":
+        - generic: ENQ_RECOVERY_SEMANTIC / Preview
+    - row "ENQ_RECOVERY_LOW / RESET probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_LOW / RESET probe":
+        - generic: ENQ_RECOVERY_LOW / RESET probe
+    - row "ENQ_RECOVERY_LOW / PRESERVE probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_LOW / PRESERVE probe":
+        - generic: ENQ_RECOVERY_LOW / PRESERVE probe
+    - row "ENQ_RECOVERY_LOW / Preview" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_LOW / Preview":
+        - generic: ENQ_RECOVERY_LOW / Preview
+    - row "ENQ_RECOVERY_MEDIUM / RESET probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_MEDIUM / RESET probe":
+        - generic: ENQ_RECOVERY_MEDIUM / RESET probe
+    - row "ENQ_RECOVERY_MEDIUM / PRESERVE probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_MEDIUM / PRESERVE probe":
+        - generic: ENQ_RECOVERY_MEDIUM / PRESERVE probe
+    - row "ENQ_RECOVERY_MEDIUM / Preview" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_MEDIUM / Preview":
+        - generic: ENQ_RECOVERY_MEDIUM / Preview
+    - row "ENQ_RECOVERY_HIGH / RESET probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_HIGH / RESET probe":
+        - generic: ENQ_RECOVERY_HIGH / RESET probe
+    - row "ENQ_RECOVERY_HIGH / PRESERVE probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_HIGH / PRESERVE probe":
+        - generic: ENQ_RECOVERY_HIGH / PRESERVE probe
+    - row "ENQ_RECOVERY_HIGH / Preview" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_HIGH / Preview":
+        - generic: ENQ_RECOVERY_HIGH / Preview
+    - row "ENQ_DIRECTORY_SEMANTIC / RESET probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_SEMANTIC / RESET probe":
+        - generic: ENQ_DIRECTORY_SEMANTIC / RESET probe
+    - row "ENQ_DIRECTORY_SEMANTIC / PRESERVE probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_SEMANTIC / PRESERVE probe":
+        - generic: ENQ_DIRECTORY_SEMANTIC / PRESERVE probe
+    - row "ENQ_DIRECTORY_SEMANTIC / Preview" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_SEMANTIC / Preview":
+        - generic: ENQ_DIRECTORY_SEMANTIC / Preview
+    - row "ENQ_DIRECTORY_LOW / RESET probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_LOW / RESET probe":
+        - generic: ENQ_DIRECTORY_LOW / RESET probe
+    - row "ENQ_DIRECTORY_LOW / PRESERVE probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_LOW / PRESERVE probe":
+        - generic: ENQ_DIRECTORY_LOW / PRESERVE probe
+    - row "ENQ_DIRECTORY_LOW / Preview" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_LOW / Preview":
+        - generic: ENQ_DIRECTORY_LOW / Preview
+    - row "ENQ_DIRECTORY_MEDIUM / RESET probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_MEDIUM / RESET probe":
+        - generic: ENQ_DIRECTORY_MEDIUM / RESET probe
+    - row "ENQ_DIRECTORY_MEDIUM / PRESERVE probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_MEDIUM / PRESERVE probe":
+        - generic: ENQ_DIRECTORY_MEDIUM / PRESERVE probe
+    - row "ENQ_DIRECTORY_MEDIUM / Preview" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_MEDIUM / Preview":
+        - generic: ENQ_DIRECTORY_MEDIUM / Preview
+    - row "ENQ_DIRECTORY_HIGH / RESET probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_HIGH / RESET probe":
+        - generic: ENQ_DIRECTORY_HIGH / RESET probe
+    - row "ENQ_DIRECTORY_HIGH / PRESERVE probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_HIGH / PRESERVE probe":
+        - generic: ENQ_DIRECTORY_HIGH / PRESERVE probe
+    - row "ENQ_DIRECTORY_HIGH / Preview" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_HIGH / Preview":
+        - generic: ENQ_DIRECTORY_HIGH / Preview
+    - row "ENQ_NAVIGATION_SEMANTIC / RESET probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_SEMANTIC / RESET probe":
+        - generic: ENQ_NAVIGATION_SEMANTIC / RESET probe
+    - row "ENQ_NAVIGATION_SEMANTIC / PRESERVE probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_SEMANTIC / PRESERVE probe":
+        - generic: ENQ_NAVIGATION_SEMANTIC / PRESERVE probe
+    - row "ENQ_NAVIGATION_SEMANTIC / Preview" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_SEMANTIC / Preview":
+        - generic: ENQ_NAVIGATION_SEMANTIC / Preview
+    - row "ENQ_NAVIGATION_LOW / RESET probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_LOW / RESET probe":
+        - generic: ENQ_NAVIGATION_LOW / RESET probe
+    - row "ENQ_NAVIGATION_LOW / PRESERVE probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_LOW / PRESERVE probe":
+        - generic: ENQ_NAVIGATION_LOW / PRESERVE probe
+    - row "ENQ_NAVIGATION_LOW / Preview" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_LOW / Preview":
+        - generic: ENQ_NAVIGATION_LOW / Preview
+    - row "ENQ_NAVIGATION_MEDIUM / RESET probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_MEDIUM / RESET probe":
+        - generic: ENQ_NAVIGATION_MEDIUM / RESET probe
+    - row "ENQ_NAVIGATION_MEDIUM / PRESERVE probe" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_MEDIUM / PRESERVE probe":
+        - generic: ENQ_NAVIGATION_MEDIUM / PRESERVE probe
+    - row "ENQ_NAVIGATION_MEDIUM / Preview" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_MEDIUM / Preview":
+        - generic: ENQ_NAVIGATION_MEDIUM / Preview
+    - row "B01 qualification / RECOVERY / v1" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "B01 qualification / RECOVERY / v1":
+        - generic: B01 qualification / RECOVERY / v1
+    - row "ENQ_NAVIGATION_HIGH / RESET probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_HIGH / RESET probe":
+        - generic: ENQ_NAVIGATION_HIGH / RESET probe
+    - row "ENQ_NAVIGATION_HIGH / PRESERVE probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_HIGH / PRESERVE probe":
+        - generic: ENQ_NAVIGATION_HIGH / PRESERVE probe
+    - row "ENQ_NAVIGATION_HIGH / Preview" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_HIGH / Preview":
+        - generic: ENQ_NAVIGATION_HIGH / Preview
+    - row "B01 qualification / DIRECTORY / v1" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "B01 qualification / DIRECTORY / v1":
+        - generic: B01 qualification / DIRECTORY / v1
+    - row "B01 qualification / NAVIGATION / v1" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "B01 qualification / NAVIGATION / v1":
+        - generic: B01 qualification / NAVIGATION / v1
+    - row "B01 / Native host-variant qualification / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Native host-variant qualification / v1":
+        - generic: B01 / Native host-variant qualification / v1
+    - row "B01 / Mode references / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Mode references / v1":
+        - generic: B01 / Mode references / v1
+  - slider "Resize handle"
+- region "Right sidebar":
+  - button "Multiplayer tools":
+  - group "Prototype view":
+    - button "Present":
+    - button "Prototype view":
+  - button "Share"
+  - tablist:
+    - tab "Design" [selected]:
+      - generic: Design
+      - generic: Design
+    - tab "Prototype":
+      - generic: Prototype
+      - generic: Prototype
+  - button "94%, zoom and view options":
+    - text: 94%
+  - button "Frame, Frame Dimension Presets":
+    - generic: Frame
+  - checkbox "Toggle ready for dev status"
+  - generic: Toggle ready for dev status
+  - group "Create component options":
+    - button "Create component":
+    - button "Create component options":
+  - checkbox "Use as mask"
+  - generic: Use as mask
+  - button "More actions":
+  - heading "Position" [level=2]
+  - group "Alignment":
+    - generic: Alignment
+    - button "Align left":
+    - button "Align horizontal centers":
+    - button "Align right":
+    - button "Align top":
+    - button "Align vertical centers":
+    - button "Align bottom":
+    - button "More actions":
+  - group "Position":
+    - generic: Position
+    - generic: X
+    - spinbutton "X-position": Mixed
+    - generic: "Y"
+    - spinbutton "Y-position": Mixed
+  - group "Rotation":
+    - generic: Rotation
+    - spinbutton "Rotation": 0°
+    - button "Rotate 90˚ right":
+    - button "Flip horizontal":
+    - button "Flip vertical":
+  - heading "Layout" [level=2]
+  - button "Resize to fit":
+  - checkbox "Toggle auto layout"
+  - generic: Toggle auto layout
+  - group "Flow":
+    - generic: Flow
+    - radiogroup "Layout":
+      - generic: Layout
+      - radio "Freeform" [checked]
+      - generic: Freeform
+      - radio "Vertical"
+      - generic: Vertical
+      - radio "Horizontal"
+      - generic: Horizontal
+      - radio "Grid"
+      - generic: Grid
+  - group "Dimensions":
+    - generic: Dimensions
+    - generic "Width":
+      - generic: W
+      - textbox "Width": "320"
+    - generic "Height":
+      - generic: H
+      - textbox "Height": "560"
+    - checkbox "Lock aspect ratio"
+    - generic: Lock aspect ratio
+  - group "Spacing":
+    - generic: Spacing
+    - generic "Horizontal spacing":
+      - textbox "Horizontal spacing": "40"
+    - generic "Vertical spacing":
+      - textbox "Vertical spacing": "80"
+  - checkbox "Clip content" [checked]
+  - generic: Clip content
+  - heading "Appearance" [level=2]
+  - checkbox "Hide"
+  - generic: Hide
+  - button "Apply blend mode":
+  - generic: Opacity
+  - textbox: 100%
+  - generic: Corner radius
+  - textbox: "0"
+  - button "Individual corners":
+  - heading "Fill" [level=2]
+  - button "Fill, Apply styles and variables":
+  - button "Add fill":
+  - grid:
+    - 'row "Color Variable D035/palette/paper with value #FAF9F6 · 100% Toggle visibility Remove"':
+      - 'gridcell "Color Variable D035/palette/paper with value #FAF9F6 · 100%"':
+        - 'button "Color Variable D035/palette/paper with value #FAF9F6 · 100%"':
+          - generic "D035/palette/paper"
+        - generic: Click to edit color variable
+      - gridcell "Toggle visibility":
+        - checkbox "Toggle visibility" [checked]
+        - generic: Toggle visibility
+      - gridcell "Remove":
+        - button "Remove":
+  - checkbox "Show in exports" [checked]
+  - generic: Show in exports
+  - button "Stroke":
+    - heading "Stroke" [level=2]
+  - button "Stroke, Apply styles and variables":
+  - button "Add stroke":
+  - button "Effects":
+    - heading "Effects" [level=2]
+  - button "Effects, Apply styles":
+  - button "Add effect":
+  - button "Selection colors +2":
+    - heading "Selection colors" [level=2]
+    - generic: "+2"
+  - button "Layout guide":
+    - heading "Layout guide" [level=2]
+  - button "Layout guide, Apply styles":
+  - button "Add layout guide":
+  - heading "Export" [level=2]
+  - button "Add export settings" [active]:
+  - grid:
+    - row "Export constraints for content scale or width/height dimensions Export file type Advanced export settings Remove":
+      - gridcell "Export constraints for content scale or width/height dimensions":
+        - group "Export constraints for content scale or width/height dimensions":
+          - spinbutton "Export constraints for content scale or width/height dimensions": 1x
+          - button "Select an option":
+      - gridcell "Export file type":
+        - generic: Export file type
+        - combobox "Export file type":
+          - generic: PNG
+      - gridcell "Advanced export settings":
+        - button "Advanced export settings":
+      - gridcell "Remove":
+        - button "Remove":
+  - button "Export 33 layers":
+    - generic: Export 33 layers
+  - slider "Resize handle"
+- region "Application toolbar":
+  - toolbar "Editor":
+    - group "Move":
+      - button "Move" [pressed]:
+      - button "Move tools":
+    - group "Frame":
+      - button "Frame":
+      - button "Region tools":
+    - group "Rectangle":
+      - button "Rectangle":
+      - button "Shape tools":
+    - group "Pen":
+      - button "Pen":
+      - button "Creation tools":
+    - group "Text":
+      - button "Text":
+      - button "Type tools":
+    - button "Comment":
+    - button "Actions":
+    - radiogroup "Toolbelt Mode":
+      - generic: Toolbelt Mode
+      - radio "Draw"
+      - generic: Draw
+      - radio "Design" [checked]
+      - generic: Design
+      - radio "Motion"
+      - generic: Motion
+      - radio "Dev Mode"
+      - generic: Dev Mode
+- region "Help/zoom toolbar":
+  - toolbar "Help/zoom toolbar":
+    - button "Help":
+- status
+- alert
+- alert
+- paragraph: Add layout guide

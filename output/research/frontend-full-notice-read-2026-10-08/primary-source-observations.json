@@ -1,0 +1,16 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "checked_at_utc": "2026-10-08T00:45:18.744207+00:00",
+  "primary_sources": [
+    {
+      "url": "https://docs.npmjs.com/cli/v12/configuring-npm/package-json/#license",
+      "observation": "Official npm12 documentation identifies common-licence SPDX declarations and directs custom declarations to a named supplied licence file; metadata is not publisher/source-build proof."
+    },
+    {
+      "url": "https://docs.npmjs.com/cli/v12/configuring-npm/package-json/#files",
+      "observation": "Official npm12 documentation distinguishes package files, README and LICENSE/LICENCE inclusion; this does not establish that a particular binary distribution contains all third-party notices."
+    }
+  ],
+  "no_legal_interpretation": "Sources explain metadata/file handling only; no package licence applicability or clearance is decided"
+}

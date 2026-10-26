@@ -1,0 +1,61 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "verdict": "REVISE",
+  "reviewer": "Independent reviewer /root/review_archive_candidate_v1",
+  "reviewed_at_utc": "2026-10-24T08:27:44.874595+00:00",
+  "scope": "Read-only Windows default-stream measurement candidate and retained-fixture tests only; no ownership/race/ADS/containment or execution authority.",
+  "inputs": [
+    {
+      "path": "output/research/python-filesystem-preparation-2026-10-24/tree_measurement.py",
+      "bytes": 7240,
+      "sha256": "16c94526f1acb23fad787a735f804718392d6e415feb6a255d584e3aecfaf8ee",
+      "verified_before_and_after": true
+    },
+    {
+      "path": "output/research/python-filesystem-preparation-2026-10-24/test_tree_measurement.py",
+      "bytes": 6132,
+      "sha256": "2903bda55c6e64151ed5a445c157cf13941cbb5a019c2c6e93f6cb1b835b1df0",
+      "verified_before_and_after": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "TREE01",
+      "priority": "P2",
+      "evidence": "tree_measurement.py:51-60,104-117; test_tree_measurement.py root/limit cases",
+      "finding": "Root lexical admission has no explicit length or ancestor-count ceiling. Ancestor chain is fully constructed through repeated dirname/appends before the first deadline tick. Descendant entry/depth caps do not bound this stage; cumulative stored ancestor strings can grow quadratically with a deeply nested supplied root. Reliance on variable Windows path constraints is not a declared cooperative work/allocation bound.",
+      "required_change": "Add an explicit finite root-length/component or ancestor-count admission bound before materializing the chain, and check cooperative progress during any admitted iteration. Keep actual supported trial root admissible and add a focused upper-bound/rejection test proving refusal before filesystem reads. No hard OS-call deadline or race-proof claim requested."
+    }
+  ],
+  "test_replay": {
+    "argv": [
+      "C:/Python314/python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "-v",
+      "test_tree_measurement"
+    ],
+    "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python-filesystem-preparation-2026-10-24",
+    "python": "3.14.5",
+    "exit_code": 0,
+    "tests": 13,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "reported_seconds": 0.035,
+    "fixture_policy": "Additional small test fixtures and actual hard link retained under helper fixtures; no cleanup."
+  },
+  "other_assessments": [
+    "Fresh os.lstat rather than cached DirEntry.stat supplies identity/type checks. Known reparse/special entries, regular hard links, invalid identities, duplicate identities and different-volume descendants deny.",
+    "Descendant enumeration counts root plus discovered entries, with finite entry/depth/logical-byte caps and pre-enqueue checks; root-stage issue above is separate.",
+    "Final fresh fingerprints and ancestor identities detect sampled drift, not adversarial ABA/concurrent replacement; quiescent private-tree ownership precondition and race/ADS/default-stream/free-snapshot limitations are candid. Read errors fail as fixed categories, never empty success.",
+    "Current D096 permits only eventual pip-owned TEMP lifecycle, not this helper acting as a cleanup/controller/trial permission. Parent execution remains unauthorized."
+  ],
+  "limits": [
+    "No install/runtime/acquisition/extraction/network/browser/app/Git or producer-source changes; wrote only this receipt.",
+    "Passing13 tests do not cure TREE01 or establish filesystem ownership, race-proof containment, ADS/allocation accounting, physical reservation or complete controller qualification.",
+    "Producer was informed of TREE01 before receipt; no PASS issued. No capacity error."
+  ]
+}

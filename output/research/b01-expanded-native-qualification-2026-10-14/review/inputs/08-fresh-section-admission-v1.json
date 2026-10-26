@@ -1,0 +1,471 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-14",
+  "outcome": "PASS",
+  "scope": "Fresh configuration-only admission for same approved eight-state native trial; actual NQ behavior unexecuted",
+  "geometry": [
+    {
+      "expected": {
+        "symbol": "H_OPEN_H",
+        "id": "85:3301",
+        "x": 1160,
+        "y": 1230,
+        "active": "HIGH",
+        "pending": "HIGH",
+        "directory": "OPEN"
+      },
+      "observed": {
+        "x": 1160,
+        "y": 1230,
+        "width": 320,
+        "height": 1150,
+        "active": "HIGH",
+        "pending": "HIGH",
+        "directory": "OPEN"
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "symbol": "H_CLOSED_H",
+        "id": "85:3280",
+        "x": 780,
+        "y": 1230,
+        "active": "HIGH",
+        "pending": "HIGH",
+        "directory": "CLOSED"
+      },
+      "observed": {
+        "x": 780,
+        "y": 1230,
+        "width": 320,
+        "height": 1150,
+        "active": "HIGH",
+        "pending": "HIGH",
+        "directory": "CLOSED"
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "symbol": "M_CLOSED_H",
+        "id": "85:3259",
+        "x": 400,
+        "y": 1230,
+        "active": "MEDIUM",
+        "pending": "HIGH",
+        "directory": "CLOSED"
+      },
+      "observed": {
+        "x": 400,
+        "y": 1230,
+        "width": 320,
+        "height": 1150,
+        "active": "MEDIUM",
+        "pending": "HIGH",
+        "directory": "CLOSED"
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "symbol": "M_OPEN_H",
+        "id": "85:3238",
+        "x": 20,
+        "y": 1230,
+        "active": "MEDIUM",
+        "pending": "HIGH",
+        "directory": "OPEN"
+      },
+      "observed": {
+        "x": 20,
+        "y": 1230,
+        "width": 320,
+        "height": 1150,
+        "active": "MEDIUM",
+        "pending": "HIGH",
+        "directory": "OPEN"
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "symbol": "M_OPEN_M",
+        "id": "85:3217",
+        "x": 1160,
+        "y": 20,
+        "active": "MEDIUM",
+        "pending": "MEDIUM",
+        "directory": "OPEN"
+      },
+      "observed": {
+        "x": 1160,
+        "y": 20,
+        "width": 320,
+        "height": 1150,
+        "active": "MEDIUM",
+        "pending": "MEDIUM",
+        "directory": "OPEN"
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "symbol": "M_CLOSED_M",
+        "id": "85:3196",
+        "x": 780,
+        "y": 20,
+        "active": "MEDIUM",
+        "pending": "MEDIUM",
+        "directory": "CLOSED"
+      },
+      "observed": {
+        "x": 780,
+        "y": 20,
+        "width": 320,
+        "height": 1150,
+        "active": "MEDIUM",
+        "pending": "MEDIUM",
+        "directory": "CLOSED"
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "symbol": "H_CLOSED_M",
+        "id": "85:3175",
+        "x": 400,
+        "y": 20,
+        "active": "HIGH",
+        "pending": "MEDIUM",
+        "directory": "CLOSED"
+      },
+      "observed": {
+        "x": 400,
+        "y": 20,
+        "width": 320,
+        "height": 1150,
+        "active": "HIGH",
+        "pending": "MEDIUM",
+        "directory": "CLOSED"
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "symbol": "H_OPEN_M",
+        "id": "85:3173",
+        "x": 20,
+        "y": 20,
+        "active": "HIGH",
+        "pending": "MEDIUM",
+        "directory": "OPEN"
+      },
+      "observed": {
+        "x": 20,
+        "y": 20,
+        "width": 320,
+        "height": 1150,
+        "active": "HIGH",
+        "pending": "MEDIUM",
+        "directory": "OPEN"
+      },
+      "pass": true
+    }
+  ],
+  "reactions": [
+    {
+      "source": "85:3173",
+      "target": "85:3175",
+      "values": {
+        "trigger": "Key/Gamepad",
+        "action": "Change to",
+        "active": "HIGH",
+        "pending": "MEDIUM",
+        "directory": "CLOSED",
+        "animation": "Instant",
+        "actions": 1
+      },
+      "pass": true,
+      "targetEvidence": "Unique owned tuple in fresh geometry inventory, not direct destination ID exposed by reaction panel"
+    },
+    {
+      "source": "85:3217",
+      "target": "85:3196",
+      "values": {
+        "trigger": "Key/Gamepad",
+        "action": "Change to",
+        "active": "MEDIUM",
+        "pending": "MEDIUM",
+        "directory": "CLOSED",
+        "animation": "Instant",
+        "actions": 1
+      },
+      "pass": true,
+      "targetEvidence": "Unique owned tuple in fresh geometry inventory, not direct destination ID exposed by reaction panel"
+    },
+    {
+      "source": "85:3238",
+      "target": "85:3259",
+      "values": {
+        "trigger": "Key/Gamepad",
+        "action": "Change to",
+        "active": "MEDIUM",
+        "pending": "HIGH",
+        "directory": "CLOSED",
+        "animation": "Instant",
+        "actions": 1
+      },
+      "pass": true,
+      "targetEvidence": "Unique owned tuple in fresh geometry inventory, not direct destination ID exposed by reaction panel"
+    },
+    {
+      "source": "85:3301",
+      "target": "85:3280",
+      "values": {
+        "trigger": "Key/Gamepad",
+        "action": "Change to",
+        "active": "HIGH",
+        "pending": "HIGH",
+        "directory": "CLOSED",
+        "animation": "Instant",
+        "actions": 1
+      },
+      "pass": true,
+      "targetEvidence": "Unique owned tuple in fresh geometry inventory, not direct destination ID exposed by reaction panel"
+    },
+    {
+      "source": "82:3171",
+      "target": "85:3175",
+      "values": {
+        "trigger": "On click",
+        "action": "Change to",
+        "active": "HIGH",
+        "pending": "MEDIUM",
+        "directory": "CLOSED",
+        "animation": "Instant",
+        "actions": 1
+      },
+      "pass": true,
+      "targetEvidence": "Unique owned tuple in fresh geometry inventory, not direct destination ID exposed by reaction panel"
+    },
+    {
+      "source": "85:3177",
+      "target": "85:3173",
+      "values": {
+        "trigger": "On click",
+        "action": "Change to",
+        "active": "HIGH",
+        "pending": "MEDIUM",
+        "directory": "OPEN",
+        "animation": "Instant",
+        "actions": 1
+      },
+      "pass": true,
+      "targetEvidence": "Unique owned tuple in fresh geometry inventory, not direct destination ID exposed by reaction panel"
+    },
+    {
+      "source": "85:3198",
+      "target": "85:3217",
+      "values": {
+        "trigger": "On click",
+        "action": "Change to",
+        "active": "MEDIUM",
+        "pending": "MEDIUM",
+        "directory": "OPEN",
+        "animation": "Instant",
+        "actions": 1
+      },
+      "pass": true,
+      "targetEvidence": "Unique owned tuple in fresh geometry inventory, not direct destination ID exposed by reaction panel"
+    },
+    {
+      "source": "85:3219",
+      "target": "85:3196",
+      "values": {
+        "trigger": "On click",
+        "action": "Change to",
+        "active": "MEDIUM",
+        "pending": "MEDIUM",
+        "directory": "CLOSED",
+        "animation": "Instant",
+        "actions": 1
+      },
+      "pass": true,
+      "targetEvidence": "Unique owned tuple in fresh geometry inventory, not direct destination ID exposed by reaction panel"
+    },
+    {
+      "source": "85:3240",
+      "target": "85:3259",
+      "values": {
+        "trigger": "On click",
+        "action": "Change to",
+        "active": "MEDIUM",
+        "pending": "HIGH",
+        "directory": "CLOSED",
+        "animation": "Instant",
+        "actions": 1
+      },
+      "pass": true,
+      "targetEvidence": "Unique owned tuple in fresh geometry inventory, not direct destination ID exposed by reaction panel"
+    },
+    {
+      "source": "85:3261",
+      "target": "85:3238",
+      "values": {
+        "trigger": "On click",
+        "action": "Change to",
+        "active": "MEDIUM",
+        "pending": "HIGH",
+        "directory": "OPEN",
+        "animation": "Instant",
+        "actions": 1
+      },
+      "pass": true,
+      "targetEvidence": "Unique owned tuple in fresh geometry inventory, not direct destination ID exposed by reaction panel"
+    },
+    {
+      "source": "85:3282",
+      "target": "85:3301",
+      "values": {
+        "trigger": "On click",
+        "action": "Change to",
+        "active": "HIGH",
+        "pending": "HIGH",
+        "directory": "OPEN",
+        "animation": "Instant",
+        "actions": 1
+      },
+      "pass": true,
+      "targetEvidence": "Unique owned tuple in fresh geometry inventory, not direct destination ID exposed by reaction panel"
+    },
+    {
+      "source": "85:3303",
+      "target": "85:3280",
+      "values": {
+        "trigger": "On click",
+        "action": "Change to",
+        "active": "HIGH",
+        "pending": "HIGH",
+        "directory": "CLOSED",
+        "animation": "Instant",
+        "actions": 1
+      },
+      "pass": true,
+      "targetEvidence": "Unique owned tuple in fresh geometry inventory, not direct destination ID exposed by reaction panel"
+    },
+    {
+      "source": "85:3512",
+      "target": "85:3173",
+      "values": {
+        "trigger": "On click",
+        "action": "Change to",
+        "active": "HIGH",
+        "pending": "MEDIUM",
+        "directory": "OPEN",
+        "animation": "Instant",
+        "actions": 1
+      },
+      "pass": true,
+      "targetEvidence": "Unique owned tuple in fresh geometry inventory, not direct destination ID exposed by reaction panel"
+    },
+    {
+      "source": "85:3424",
+      "target": "85:3238",
+      "values": {
+        "trigger": "On click",
+        "action": "Change to",
+        "active": "MEDIUM",
+        "pending": "HIGH",
+        "directory": "OPEN",
+        "animation": "Instant",
+        "actions": 1
+      },
+      "pass": true,
+      "targetEvidence": "Unique owned tuple in fresh geometry inventory, not direct destination ID exposed by reaction panel"
+    },
+    {
+      "source": "85:3363",
+      "target": "85:3217",
+      "values": {
+        "trigger": "On click",
+        "action": "Change to",
+        "active": "MEDIUM",
+        "pending": "MEDIUM",
+        "directory": "OPEN",
+        "animation": "Instant",
+        "actions": 1
+      },
+      "pass": true,
+      "targetEvidence": "Unique owned tuple in fresh geometry inventory, not direct destination ID exposed by reaction panel"
+    },
+    {
+      "source": "85:3449",
+      "target": "85:3301",
+      "values": {
+        "trigger": "On click",
+        "action": "Change to",
+        "active": "HIGH",
+        "pending": "HIGH",
+        "directory": "OPEN",
+        "animation": "Instant",
+        "actions": 1
+      },
+      "pass": true,
+      "targetEvidence": "Unique owned tuple in fresh geometry inventory, not direct destination ID exposed by reaction panel"
+    }
+  ],
+  "closedVisibility": [
+    {
+      "symbol": "H_CLOSED_H",
+      "pass": true
+    },
+    {
+      "symbol": "M_CLOSED_H",
+      "pass": true
+    },
+    {
+      "symbol": "M_CLOSED_M",
+      "pass": true
+    },
+    {
+      "symbol": "H_CLOSED_M",
+      "pass": true
+    }
+  ],
+  "noops": [
+    {
+      "symbol": "H_OPEN_H",
+      "pass": true
+    },
+    {
+      "symbol": "M_OPEN_M",
+      "pass": true
+    }
+  ],
+  "allocation": {
+    "root": "101:3204",
+    "set": "85:3174",
+    "preview": "94:3199",
+    "instance": "94:3177",
+    "hierarchy": "fresh-owned-allocation-hierarchy-v1.txt",
+    "transforms": "fresh-allocation-*-design-v1.txt",
+    "entry": "fresh-preview-instance-design-v1.txt",
+    "scroll": "Vertical",
+    "clip": true
+  },
+  "linkAccess": {
+    "audience": "info's team",
+    "edit": true,
+    "publicAnyone": false,
+    "evidence": "fresh-private-link-scope-v1.txt",
+    "limits": "Team-restricted, not owner-only; no membership audit or permission changes"
+  },
+  "review": "review-section-result/independent-review-section-result-v1.json",
+  "limitations": [
+    "Configuration evidence is not actual behavior",
+    "Unequal archive payloads, changing label selectors and unproven whole-source preservation/restore retained",
+    "No application, accessibility, full B01 or Phase1 acceptance"
+  ]
+}

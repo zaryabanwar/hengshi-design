@@ -1,0 +1,184 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-15",
+  "reviewer": "/root/review_directory_adaptation_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "PASS",
+  "scope": "Bounded correction2 review of local unexecuted Navigation-only reaction-batch proposal, its saved three-edge baseline and synthetic transaction evidence. No method or provider release.",
+  "packet": {
+    "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/correction2/review-inputs-v1.json",
+    "sha256": "441bbc59945a9e0797353ac31a4b4a3d59e74bb6f4f729cbc87e3208fd874f32",
+    "input_count": 20,
+    "all_actual_bytes_and_sha256_verified": true,
+    "binding_errors": [],
+    "inputs": [
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/correction2/proposal-v1.json",
+        "bytes": 3308,
+        "sha256": "26a05317b4440bc57524ff8b1a7c11b159088bfe0854d69672ac9258b9add875"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/correction2/expected-scope-v1.json",
+        "bytes": 36643,
+        "sha256": "dc9681052a871739a85f0fe932a1b0c59f4f328995d420d3d4bd8175f39a80ba"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/correction2/batch-body-v1.js",
+        "bytes": 12291,
+        "sha256": "a249ea1101876456c7682e26abde12258d31d5c991786b0852c04e02f2e7720a"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/correction2/navigation-reaction-batch-v1.js",
+        "bytes": 39580,
+        "sha256": "e2a8c33f0f7a74f9f74ba7751fee4fe56b3744389de5c7631ef9177948c1db7d"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/correction2/offline-transaction-harness-v1.cjs",
+        "bytes": 9564,
+        "sha256": "a8df46b7cd72e7d1ca519a213320dab33dba74157caa6ff0413b248935c82291"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/correction2/offline-transaction-results-v1.json",
+        "bytes": 3134,
+        "sha256": "48c6491db9f3c2df45db34e79c8d4b7163391564e0004a87af29dfe5fa7266b8"
+      },
+      {
+        "path": "AGENTS.md",
+        "bytes": 7686,
+        "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+      },
+      {
+        "path": ".specify/memory/constitution.md",
+        "bytes": 16234,
+        "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+      },
+      {
+        "path": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+        "bytes": 84039,
+        "sha256": "9c04e29a083008a9445535a74de13017516f73dcdccce2965e5446119e233c30"
+      },
+      {
+        "path": "docs/phase-1-ui-reference-production/validation/mcp-call-ledger.csv",
+        "bytes": 24447,
+        "sha256": "687beb7fe73028c07213575d3cf8ac8030dd1e67d884d17a164649743b622c64"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/qualification-plan-v1.json",
+        "bytes": 235601,
+        "sha256": "5e24ac8c203bf729b5190d359da2439c1b1f88f59665b1c65163b4b9002ab2ce"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-32-native-census-v1.json",
+        "bytes": 4634,
+        "sha256": "106296fa9f0ec3b07f50fb90be40d57b10995055a60b2d24a18d9b9d6d0bb669"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/native-edge-bindings-20261015-v1.json",
+        "bytes": 912,
+        "sha256": "805c4cf968bb2d227f0cdbe6f2c2c3337be8b1211273d94f5095f7ed7f5708e5"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/initial-reviewed-inputs-v1.zip",
+        "bytes": 81453,
+        "sha256": "7cbbb456f6c310e91974a9fb1239b1acf388ebf8466066f4cf112a96af267774"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/independent-review-navigation-batch-v1.json",
+        "bytes": 11798,
+        "sha256": "dff727e682dec529765059a03812a1d60cc8c17f1197db58f90c18f707499c5a"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/correction1/review-inputs-v1.json",
+        "bytes": 3757,
+        "sha256": "2d766fd6cbb0361ad1047873ec1a5ab7d2f3aff03a91b108c85df5a6ad0fe1d9"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/correction1/independent-review-navigation-batch-v1.json",
+        "bytes": 11474,
+        "sha256": "987834636662ea2a1f6f2e61d039dea41b48049416b6188046ea6aec8fa72f02"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/native-edge-bindings-20261015-pending-choice-v1.json",
+        "bytes": 1394,
+        "sha256": "8c3451962709b0da8fc37ad916e15d2ee52134c41c84c5b245310c1e490c216a"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-balanced-choice-edge-native-settings-v1.txt",
+        "bytes": 8646,
+        "sha256": "181ba178f1427181269e8c88afcfb14df47f21f89c4f61bb437c6e0dff47d9a6"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/first-preview-pending-choice-observation-v1.json",
+        "bytes": 523,
+        "sha256": "b0b75faf75ff449432ca22142d8c0d1281bb2af53b4fb07c20709233ee17f499"
+      }
+    ]
+  },
+  "predecessors": [
+    {
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/independent-review-navigation-batch-v1.json",
+      "sha256": "dff727e682dec529765059a03812a1d60cc8c17f1197db58f90c18f707499c5a",
+      "verdict": "REQUEST_CHANGES",
+      "preservation": "All13 originally reviewed source bytes independently matched inside initial-reviewed-inputs-v1.zip; CRC passes."
+    },
+    {
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/correction1/independent-review-navigation-batch-v1.json",
+      "sha256": "987834636662ea2a1f6f2e61d039dea41b48049416b6188046ea6aec8fa72f02",
+      "verdict": "REQUEST_CHANGES",
+      "preservation": "Correction1 receipt unchanged; all15 source byte/hash bindings in its manifest independently rechecked and retained."
+    }
+  ],
+  "resolved_findings": [
+    {
+      "id": "NBR-01",
+      "assessment": "Full relevant Reaction/Action/Trigger fields now retained. Only documented NODE absent false flags are normalized for semantic admission. Successful admitted setters capture full actual readback for exact rollback ownership; interrupted setters permit only complete semantically equivalent desired readback. Concurrent resetInteractiveComponents=true remains unresolved rather than overwritten in the supplied reproduction."
+    },
+    {
+      "id": "NBR-02",
+      "assessment": "Compact and indented JSON and JSON-string-encoded report sizes are checked before writes. Failure reports retain all attempted/unresolved numeric IDs, fixed ASCII codes and one bounded printable error. All105-node Unicode rollback failure preserves105 unique IDs with serialized forms7219/10513/8297 bytes. Success forms6752/12718/7932 bytes. No original output overflow remains."
+    },
+    {
+      "id": "NBR-03",
+      "assessment": "Deprecated action is removed from semantic comparison only when fully equivalent to the sole actions[0] under the same explicit false-default normalization. Contradictory aliases and optional flags remain meaningful drift. Documented dual-field readback before or after setters succeeds; interrupted dual-field setter restores; contradictory alias denies before writes. Exact admitted actual readback remains the successful-setter rollback guard."
+    }
+  ],
+  "findings": [],
+  "actionable_finding_count": 0,
+  "verified_assessments": {
+    "generation_and_scope": "All20 current files match pinned byte lengths and SHA256. Generated JS EXPECTED JSON exactly matches expected-scope-v1.json and its remaining body matches batch-body-v1.js. Expected graph bytes are unchanged: exact108 approved Navigation same-set CHANGE_TO edges and32 actual root tuples from the native census.",
+    "graph": "The approved graph contains48 pending-only choices,12 changed Apply transitions,32 Open/Close and16 host Escape transitions. No current-choice or already-active Apply noop is wired. All targets and controls are owner-local; dynamic IDs/roles are recorded before writes. No Directory/Recovery, boundary/reset or other new action is proposed.",
+    "three_edge_baseline": "Preserved edge/control mapping is144:3280 to144:3241 (Open),144:3235 to144:3286 (Close),144:3225 to147:3271 (choose/MEDIUM). New three-edge binding file retains the original pair plus the third approved pending-only edge. Saved native settings show On click / Change to / HIGH,MEDIUM,OPEN / Instant; observation text says Detailed remains active while Balanced becomes pending. These saved producer observations support proposal accounting, not independent live/presentation qualification. Fresh complete live preflight still must match exactly. Mutations now105, total108; no baseline edge is assigned by the script.",
+    "preflight": "Current-source guards cover file/editor/Page1/section/set/32 roots/tuples,320x1150/22-node anatomy, owned caption/content/Label/choice/body visibility and every copied-set descendant reaction. Only the three exact admitted existing edges are tolerated. A mismatch aborts before setters; no automatic repair is added.",
+    "transaction": "Only105 new control reactions are setters. Current before-value/ownership guards, attempted-write accounting, post-write same-set reactions and enumerated visual/protected snapshots remain. Concurrent meaningful differences are preserved and reported unresolved. Snapshots are bounded field checks, not whole-file/source-equivalence certification.",
+    "output": "Compact variant/edge arrays plus role legend remain lossless for all108 bindings. Every control ID is a bounded numeric form; all three report forms are admitted below18000 bytes before setters. Catch output has bounded ASCII diagnostics and105 IDs at most; no images or extra calls are proposed.",
+    "provided_synthetic_cases": "All13 supplied cases independently rerun with filesystem result writes stubbed in memory. Complete graph, four preflight denials, ordinary rollback, concurrent BACK and optional Action flag preservation,105 Unicode rollback failures, dual readback before/after setters, interrupted dual readback rollback and contradictory-alias denial meet expectations. Existing saved results are unchanged.",
+    "additional_memory_only_probes": "Documented dual alias plus explicit false readback flags gives APPLIED/105 writes. A setter interrupted after adding a contradictory action alias with resetVideoPosition=true gives ROLLBACK_INCOMPLETE/one unresolved ID and preserves that flag. No local source/result file or Figma state is changed by these probes.",
+    "preservation": "Original13-input ZIP has passing CRC and every initial source hash/byte value equals the original receipt. All correction1 sources remain unchanged against its15-input manifest; both REQUEST_CHANGES receipts remain preserved."
+  },
+  "official_contract": {
+    "checked": "2026-10-15 public official documentation during this bounded review sequence; no authenticated Figma tool",
+    "sources": [
+      "https://developers.figma.com/docs/plugins/api/Action/",
+      "https://developers.figma.com/docs/plugins/api/Reaction/",
+      "https://developers.figma.com/docs/plugins/api/Trigger/",
+      "https://developers.figma.com/docs/plugins/api/properties/nodes-reactions/"
+    ],
+    "assessment": "NODE CHANGE_TO/transition:null, actions[]/trigger, KEYBOARD ON_KEY_DOWN/keyCodes and setReactionsAsync agree with the official contract. Official Reaction and reactions getter documentation permits and exemplifies redundant action/actions readback; correction2 now admits that shape without discarding conflicting optional values. No live backend default, quota, auth or browser behavior is proven."
+  },
+  "method_and_provider_holds": [
+    "D094 remains native-editor-only with zero MCP calls. This PASS is not a founder method exception or external-write release.",
+    "Ledger last attempt36/conservatively metered33 records provider Starter-plan MCP cap. Current allowance/reset/auth/capacity is unknown; do not invoke the known-capped route or spend an unchanged checking/retry call.",
+    "Any future use_figma execution still requires current provider-capacity evidence, applicable founder native-only method exception, fresh CB06/CB07 per-call/count approval and required skill/preflight. No paid activation or automatic retry is authorized.",
+    "Normal native editable PRE immediately before any separately authorized execution remains necessary; save/CRC evidence does not establish restore.",
+    "Existing native editor authorization is separate and may continue within D094 safeguards."
+  ],
+  "limits": [
+    "Review PASS covers exact local correction2 proposal bytes and synthetic transaction evidence only; no Figma/provider invocation or production adoption.",
+    "No live source/copy admission, actual105-edge write or full108-edge native behavior/scroll/context/Apply/Escape qualification.",
+    "No DOM radio/dialog semantics, accessibility/profile/AT/WCAG, original preservation/source equivalence, restore/_EXIT or release verdict.",
+    "No Recovery/Directory completion,36-frame/boundary/reset qualification, all80/fullB01, founder visual acceptance or integrated Phase1 acceptance.",
+    "Receipt is the only artifact written for this re-review; no source/result, browser, account, application, provider, Git or deployment change."
+  ]
+}

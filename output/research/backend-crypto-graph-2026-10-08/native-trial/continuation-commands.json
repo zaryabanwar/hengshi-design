@@ -1,0 +1,51 @@
+[
+  {
+    "step": "07-library-probes",
+    "command": [
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\backend-crypto-graph-2026-10-08\\native-trial\\environment\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pytest",
+      "-c",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\backend-crypto-graph-2026-10-08\\native-trial\\pytest.ini",
+      "--noconftest",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "pytest_asyncio.plugin",
+      "-q",
+      "--junitxml",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\backend-crypto-graph-2026-10-08\\native-trial\\library-probes.xml",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\backend-crypto-graph-2026-10-08\\native-probes\\test_libraries.py"
+    ],
+    "before": {
+      "retained_bytes": 81644552,
+      "free_disk_bytes": 5391159296
+    },
+    "exit_code": 0,
+    "elapsed_seconds": 20.765,
+    "after": {
+      "retained_bytes": 81646668,
+      "free_disk_bytes": 5390635008
+    }
+  },
+  {
+    "step": "08-native-libpq-identity",
+    "command": [
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\backend-crypto-graph-2026-10-08\\native-trial\\environment\\Scripts\\python.exe",
+      "-B",
+      "-c",
+      "from psycopg import pq; import json; print(json.dumps({\"implementation\":pq.__impl__,\"runtime_libpq\":pq.version(),\"build_libpq\":pq.__build_version__}))"
+    ],
+    "before": {
+      "retained_bytes": 81647784,
+      "free_disk_bytes": 5390626816
+    },
+    "exit_code": 0,
+    "elapsed_seconds": 1.528,
+    "after": {
+      "retained_bytes": 81647862,
+      "free_disk_bytes": 5390553088
+    }
+  }
+]

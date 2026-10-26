@@ -1,0 +1,32 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-15",
+  "authority": "D-095",
+  "tool": "whoami",
+  "purpose": "Verify MCP identity/entitlement before a prepared batched write after the historical provider cap",
+  "attempt": 37,
+  "conservativelyMetered": 33,
+  "quotaClassification": "whoami documented exempt; failed identity check returns no plan/user data",
+  "officialSource": "https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "This app connection requires reauthentication before other actions on this app can succeed."
+      }
+    ],
+    "structuredContent": {
+      "error": "This app connection requires reauthentication before other actions on this app can succeed.",
+      "error_code": "UNAUTHORIZED",
+      "error_data": {
+        "detail": "Reauthentication required",
+        "action": "TRIGGER_REAUTHENTICATION",
+        "reason": "www_authenticate_reauth"
+      }
+    },
+    "isError": true
+  },
+  "nextAction": "No mutating MCP call. Continue authenticated browser/Design-agent route; reconnect MCP before subsequent use.",
+  "paidActivation": false
+}

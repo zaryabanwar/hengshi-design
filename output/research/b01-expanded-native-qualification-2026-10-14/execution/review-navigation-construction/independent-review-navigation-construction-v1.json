@@ -1,0 +1,707 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-15",
+  "reviewer": "Independent reviewer /root/review_native_navigation_construction_v1",
+  "review_complete": true,
+  "review_outcome": "PASS",
+  "scope": "Bounded owned-seed conversion accounting and 32-state NAVIGATION construction evidence. No live Figma inspection, interaction qualification, complete 80-state trial, accessibility, whole-source equivalence, tested restore/_EXIT, B01 or Phase 1 acceptance.",
+  "packet": {
+    "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/review-inputs-v1.json",
+    "sha256": "da3e6a35fd0125d9684aad37fda6cb175f64f0d0dc7ec2b262702c879769fba2",
+    "input_count": 48,
+    "source_and_frozen_bytes_and_sha256_verified": true,
+    "binding_errors": []
+  },
+  "binding_checks": [
+    {
+      "source": "AGENTS.md",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/00-AGENTS.md",
+      "expected_sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "source_sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "frozen_sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "source_bytes": 7686,
+      "frozen_bytes": 7686,
+      "expected_bytes": 7686,
+      "match": true
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/01-constitution.md",
+      "expected_sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "source_sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "frozen_sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "source_bytes": 16234,
+      "frozen_bytes": 16234,
+      "expected_bytes": 16234,
+      "match": true
+    },
+    {
+      "source": "DECISIONS.md",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/02-DECISIONS.md",
+      "expected_sha256": "8fdf2e81d9876772a0eb6214e16a643e2e2fdc4381633c75eda40cd76297079c",
+      "source_sha256": "8fdf2e81d9876772a0eb6214e16a643e2e2fdc4381633c75eda40cd76297079c",
+      "frozen_sha256": "8fdf2e81d9876772a0eb6214e16a643e2e2fdc4381633c75eda40cd76297079c",
+      "source_bytes": 107917,
+      "frozen_bytes": 107917,
+      "expected_bytes": 107917,
+      "match": true
+    },
+    {
+      "source": "docs/software-definition/03-autonomous-ai-development-workflow.md",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/03-03-autonomous-ai-development-workflow.md",
+      "expected_sha256": "d1388aab446eb65efe1f9f285cc4c375d05611b5d2fe34f6e75f09e83b588e54",
+      "source_sha256": "d1388aab446eb65efe1f9f285cc4c375d05611b5d2fe34f6e75f09e83b588e54",
+      "frozen_sha256": "d1388aab446eb65efe1f9f285cc4c375d05611b5d2fe34f6e75f09e83b588e54",
+      "source_bytes": 7964,
+      "frozen_bytes": 7964,
+      "expected_bytes": 7964,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/qualification-plan-v1.json",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/04-qualification-plan-v1.json",
+      "expected_sha256": "5e24ac8c203bf729b5190d359da2439c1b1f88f59665b1c65163b4b9002ab2ce",
+      "source_sha256": "5e24ac8c203bf729b5190d359da2439c1b1f88f59665b1c65163b4b9002ab2ce",
+      "frozen_sha256": "5e24ac8c203bf729b5190d359da2439c1b1f88f59665b1c65163b4b9002ab2ce",
+      "source_bytes": 235601,
+      "frozen_bytes": 235601,
+      "expected_bytes": 235601,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/review/correction1/independent-review-expanded-qualification-v1.json",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/05-independent-review-expanded-qualification-v1.json",
+      "expected_sha256": "0073dd5d51cd28fef4808325264fb539b2124789c0cfc1544a998c891666b160",
+      "source_sha256": "0073dd5d51cd28fef4808325264fb539b2124789c0cfc1544a998c891666b160",
+      "frozen_sha256": "0073dd5d51cd28fef4808325264fb539b2124789c0cfc1544a998c891666b160",
+      "source_bytes": 10752,
+      "frozen_bytes": 10752,
+      "expected_bytes": 10752,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/owned-seed-conversion-proposal-v1.json",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/06-owned-seed-conversion-proposal-v1.json",
+      "expected_sha256": "77aea8471d36748e90ae23846eba2d439773209d52ba858eb9fd9430b5223ad9",
+      "source_sha256": "77aea8471d36748e90ae23846eba2d439773209d52ba858eb9fd9430b5223ad9",
+      "frozen_sha256": "77aea8471d36748e90ae23846eba2d439773209d52ba858eb9fd9430b5223ad9",
+      "source_bytes": 5370,
+      "frozen_bytes": 5370,
+      "expected_bytes": 5370,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-seed-conversion/independent-review-seed-conversion-v1.json",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/07-independent-review-seed-conversion-v1.json",
+      "expected_sha256": "80e9159d37a2bdea40698700eaef13e17b411b5ec2222a312bc24dcafc2bcbad",
+      "source_sha256": "80e9159d37a2bdea40698700eaef13e17b411b5ec2222a312bc24dcafc2bcbad",
+      "frozen_sha256": "80e9159d37a2bdea40698700eaef13e17b411b5ec2222a312bc24dcafc2bcbad",
+      "source_bytes": 11342,
+      "frozen_bytes": 11342,
+      "expected_bytes": 11342,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/seed-detach-name-geometry-accounting-v1.json",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/08-seed-detach-name-geometry-accounting-v1.json",
+      "expected_sha256": "ef6b973c593ffcc66674da97c0b4233faa189499a40dceb5b72922c541603198",
+      "source_sha256": "ef6b973c593ffcc66674da97c0b4233faa189499a40dceb5b72922c541603198",
+      "frozen_sha256": "ef6b973c593ffcc66674da97c0b4233faa189499a40dceb5b72922c541603198",
+      "source_bytes": 2887,
+      "frozen_bytes": 2887,
+      "expected_bytes": 2887,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/closed-seed-detach-accounting-v1.json",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/09-closed-seed-detach-accounting-v1.json",
+      "expected_sha256": "8c514b3f7826b72c718ccabbea12243a1c2de9ea6210c6bd0cc3e05e288db098",
+      "source_sha256": "8c514b3f7826b72c718ccabbea12243a1c2de9ea6210c6bd0cc3e05e288db098",
+      "frozen_sha256": "8c514b3f7826b72c718ccabbea12243a1c2de9ea6210c6bd0cc3e05e288db098",
+      "source_bytes": 2564,
+      "frozen_bytes": 2564,
+      "expected_bytes": 2564,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/detached-functional-owner-reaction-inspections-v1.json",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/10-detached-functional-owner-reaction-inspections-v1.json",
+      "expected_sha256": "081a57de9ef73a2d9d10dce92a3bff5aacc39b271d2c1771fa62d1cae60f2260",
+      "source_sha256": "081a57de9ef73a2d9d10dce92a3bff5aacc39b271d2c1771fa62d1cae60f2260",
+      "frozen_sha256": "081a57de9ef73a2d9d10dce92a3bff5aacc39b271d2c1771fa62d1cae60f2260",
+      "source_bytes": 1284,
+      "frozen_bytes": 1284,
+      "expected_bytes": 1284,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/closed-functional-owner-reaction-inspections-v1.json",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/11-closed-functional-owner-reaction-inspections-v1.json",
+      "expected_sha256": "88816c14c6db35dde7bc63acd9a2fedae6126200f7f436e6189227b2ea38c35b",
+      "source_sha256": "88816c14c6db35dde7bc63acd9a2fedae6126200f7f436e6189227b2ea38c35b",
+      "frozen_sha256": "88816c14c6db35dde7bc63acd9a2fedae6126200f7f436e6189227b2ea38c35b",
+      "source_bytes": 1683,
+      "frozen_bytes": 1683,
+      "expected_bytes": 1683,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/seed-detached-root-prototype-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/12-seed-detached-root-prototype-current.txt",
+      "expected_sha256": "b72526b08cde151f339c1c27fad3d050a70f7673e97cca419df8b1d55c1da3df",
+      "source_sha256": "b72526b08cde151f339c1c27fad3d050a70f7673e97cca419df8b1d55c1da3df",
+      "frozen_sha256": "b72526b08cde151f339c1c27fad3d050a70f7673e97cca419df8b1d55c1da3df",
+      "source_bytes": 12453,
+      "frozen_bytes": 12453,
+      "expected_bytes": 12453,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/seed-detached-close-prototype-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/13-seed-detached-close-prototype-current.txt",
+      "expected_sha256": "4fbc4d1248e00c3e0c1b8263e07a47a2273957e03d77c13f34e02c39c5001822",
+      "source_sha256": "4fbc4d1248e00c3e0c1b8263e07a47a2273957e03d77c13f34e02c39c5001822",
+      "frozen_sha256": "4fbc4d1248e00c3e0c1b8263e07a47a2273957e03d77c13f34e02c39c5001822",
+      "source_bytes": 12597,
+      "frozen_bytes": 12597,
+      "expected_bytes": 12597,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/independent-open-seed-named-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/14-independent-open-seed-named-current.txt",
+      "expected_sha256": "1ab04a7f34d5182f62c5acb676ce584067c9376dd779ca6f22b46de613eb058a",
+      "source_sha256": "1ab04a7f34d5182f62c5acb676ce584067c9376dd779ca6f22b46de613eb058a",
+      "frozen_sha256": "1ab04a7f34d5182f62c5acb676ce584067c9376dd779ca6f22b46de613eb058a",
+      "source_bytes": 15698,
+      "frozen_bytes": 15698,
+      "expected_bytes": 15698,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/independent-closed-seed-named-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/15-independent-closed-seed-named-current.txt",
+      "expected_sha256": "9ada074dc7cc2d15b319f9001cde2ad78796701459df7566b7e458381f813f49",
+      "source_sha256": "9ada074dc7cc2d15b319f9001cde2ad78796701459df7566b7e458381f813f49",
+      "frozen_sha256": "9ada074dc7cc2d15b319f9001cde2ad78796701459df7566b7e458381f813f49",
+      "source_bytes": 18553,
+      "frozen_bytes": 18553,
+      "expected_bytes": 18553,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-set-created-rows-current.json",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/16-navigation-set-created-rows-current.json",
+      "expected_sha256": "77466595ece0cebbc3c2e8515f7b64ae23d5784b98da69b65be43a3084472085",
+      "source_sha256": "77466595ece0cebbc3c2e8515f7b64ae23d5784b98da69b65be43a3084472085",
+      "frozen_sha256": "77466595ece0cebbc3c2e8515f7b64ae23d5784b98da69b65be43a3084472085",
+      "source_bytes": 6473,
+      "frozen_bytes": 6473,
+      "expected_bytes": 6473,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-set-named-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/17-navigation-set-named-current.txt",
+      "expected_sha256": "d948e883f403b2e5f14993a330948c78806184fcd45430eaf7364a4278b75891",
+      "source_sha256": "d948e883f403b2e5f14993a330948c78806184fcd45430eaf7364a4278b75891",
+      "frozen_sha256": "d948e883f403b2e5f14993a330948c78806184fcd45430eaf7364a4278b75891",
+      "source_bytes": 11908,
+      "frozen_bytes": 11908,
+      "expected_bytes": 11908,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-set-32-states-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/18-navigation-set-32-states-current.txt",
+      "expected_sha256": "bbe4354ca83ffaeeaec9b7b20ef82ab64c8d00fe12c3cd00291602e746b4884f",
+      "source_sha256": "bbe4354ca83ffaeeaec9b7b20ef82ab64c8d00fe12c3cd00291602e746b4884f",
+      "frozen_sha256": "bbe4354ca83ffaeeaec9b7b20ef82ab64c8d00fe12c3cd00291602e746b4884f",
+      "source_bytes": 19173,
+      "frozen_bytes": 19173,
+      "expected_bytes": 19173,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-native-actions-20261015-v1.json",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/19-navigation-native-actions-20261015-v1.json",
+      "expected_sha256": "e8b48b019bcc398b1c6a9a97c249e1f4c76efa913c966b40b07cb59bdf927f91",
+      "source_sha256": "e8b48b019bcc398b1c6a9a97c249e1f4c76efa913c966b40b07cb59bdf927f91",
+      "frozen_sha256": "e8b48b019bcc398b1c6a9a97c249e1f4c76efa913c966b40b07cb59bdf927f91",
+      "source_bytes": 330314,
+      "frozen_bytes": 330314,
+      "expected_bytes": 330314,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-32-native-census-v1.json",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/20-navigation-32-native-census-v1.json",
+      "expected_sha256": "106296fa9f0ec3b07f50fb90be40d57b10995055a60b2d24a18d9b9d6d0bb669",
+      "source_sha256": "106296fa9f0ec3b07f50fb90be40d57b10995055a60b2d24a18d9b9d6d0bb669",
+      "frozen_sha256": "106296fa9f0ec3b07f50fb90be40d57b10995055a60b2d24a18d9b9d6d0bb669",
+      "source_bytes": 4634,
+      "frozen_bytes": 4634,
+      "expected_bytes": 4634,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-early-state-reinspection-v1.json",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/21-navigation-early-state-reinspection-v1.json",
+      "expected_sha256": "8189952579c0a297dfcbfd7f1163d9714e67e02f7164aeeb41a5935bd15bd335",
+      "source_sha256": "8189952579c0a297dfcbfd7f1163d9714e67e02f7164aeeb41a5935bd15bd335",
+      "frozen_sha256": "8189952579c0a297dfcbfd7f1163d9714e67e02f7164aeeb41a5935bd15bd335",
+      "source_bytes": 70330,
+      "frozen_bytes": 70330,
+      "expected_bytes": 70330,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/original-trial-post-navigation-observation-v1.json",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/22-original-trial-post-navigation-observation-v1.json",
+      "expected_sha256": "c9b9325253b1c7074f7e9ce8064e3f905f9aa7c7a7bc624b8e4922367086499e",
+      "source_sha256": "c9b9325253b1c7074f7e9ce8064e3f905f9aa7c7a7bc624b8e4922367086499e",
+      "frozen_sha256": "c9b9325253b1c7074f7e9ce8064e3f905f9aa7c7a7bc624b8e4922367086499e",
+      "source_bytes": 11623,
+      "frozen_bytes": 11623,
+      "expected_bytes": 11623,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-32-states-overview.png",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/23-navigation-32-states-overview.png",
+      "expected_sha256": "10b7c9c13eb398226d79c0efb8b2cc5c096bbddf8450fbe4b784af755a732051",
+      "source_sha256": "10b7c9c13eb398226d79c0efb8b2cc5c096bbddf8450fbe4b784af755a732051",
+      "frozen_sha256": "10b7c9c13eb398226d79c0efb8b2cc5c096bbddf8450fbe4b784af755a732051",
+      "source_bytes": 115000,
+      "frozen_bytes": 115000,
+      "expected_bytes": 115000,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-32-native-resolution.png",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/24-navigation-32-native-resolution.png",
+      "expected_sha256": "080f139c0b7a813bddd76f57c167beba2869cef88819de9c03cac2d8c8bf5e4f",
+      "source_sha256": "080f139c0b7a813bddd76f57c167beba2869cef88819de9c03cac2d8c8bf5e4f",
+      "frozen_sha256": "080f139c0b7a813bddd76f57c167beba2869cef88819de9c03cac2d8c8bf5e4f",
+      "source_bytes": 401792,
+      "frozen_bytes": 401792,
+      "expected_bytes": 401792,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-export-settings-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/25-navigation-export-settings-current.txt",
+      "expected_sha256": "b7d2e9a95e8038adf793db6f4d8484f2dd53e9b963c11ae4266cc9f683d1caec",
+      "source_sha256": "b7d2e9a95e8038adf793db6f4d8484f2dd53e9b963c11ae4266cc9f683d1caec",
+      "frozen_sha256": "b7d2e9a95e8038adf793db6f4d8484f2dd53e9b963c11ae4266cc9f683d1caec",
+      "source_bytes": 17788,
+      "frozen_bytes": 17788,
+      "expected_bytes": 17788,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-construction-checkpoint-v1.json",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/26-navigation-construction-checkpoint-v1.json",
+      "expected_sha256": "825f5655db9a397228fd692b25009e352526f8c0c8a9ab30403ab43683d5f33b",
+      "source_sha256": "825f5655db9a397228fd692b25009e352526f8c0c8a9ab30403ab43683d5f33b",
+      "frozen_sha256": "825f5655db9a397228fd692b25009e352526f8c0c8a9ab30403ab43683d5f33b",
+      "source_bytes": 5141,
+      "frozen_bytes": 5141,
+      "expected_bytes": 5141,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/before-expanded-trial-v1.fig",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/27-before-expanded-trial-v1.fig",
+      "expected_sha256": "94e60adb84dc4001406b6bf53300156d6c761173b64f1020946bfa2c9b6c5a81",
+      "source_sha256": "94e60adb84dc4001406b6bf53300156d6c761173b64f1020946bfa2c9b6c5a81",
+      "frozen_sha256": "94e60adb84dc4001406b6bf53300156d6c761173b64f1020946bfa2c9b6c5a81",
+      "source_bytes": 386575,
+      "frozen_bytes": 386575,
+      "expected_bytes": 386575,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/owned-instance-before-conversion-v1.fig",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/28-owned-instance-before-conversion-v1.fig",
+      "expected_sha256": "7c73d7c66f717432632062dbc9a354d1290ab98d860d678ea1676a3d3437f617",
+      "source_sha256": "7c73d7c66f717432632062dbc9a354d1290ab98d860d678ea1676a3d3437f617",
+      "frozen_sha256": "7c73d7c66f717432632062dbc9a354d1290ab98d860d678ea1676a3d3437f617",
+      "source_bytes": 387460,
+      "frozen_bytes": 387460,
+      "expected_bytes": 387460,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-two-seeds-v1.fig",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/29-navigation-two-seeds-v1.fig",
+      "expected_sha256": "d9f40034de10e22665d53162ce1649c2b776f7585b518a6b0ad2296a098ec1d7",
+      "source_sha256": "d9f40034de10e22665d53162ce1649c2b776f7585b518a6b0ad2296a098ec1d7",
+      "frozen_sha256": "d9f40034de10e22665d53162ce1649c2b776f7585b518a6b0ad2296a098ec1d7",
+      "source_bytes": 393469,
+      "frozen_bytes": 393469,
+      "expected_bytes": 393469,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-32-final-v1.fig",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/30-navigation-32-final-v1.fig",
+      "expected_sha256": "19904646a93c308de6e806736b98e4f85bda3cbfe5d68fb60d71606bfa05129e",
+      "source_sha256": "19904646a93c308de6e806736b98e4f85bda3cbfe5d68fb60d71606bfa05129e",
+      "frozen_sha256": "19904646a93c308de6e806736b98e4f85bda3cbfe5d68fb60d71606bfa05129e",
+      "source_bytes": 415928,
+      "frozen_bytes": 415928,
+      "expected_bytes": 415928,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-32-native-export.zip",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/31-navigation-32-native-export.zip",
+      "expected_sha256": "dc9d650057183492d2d9a33eacbb8ae90edd775a5cb0b8257944ca52be654457",
+      "source_sha256": "dc9d650057183492d2d9a33eacbb8ae90edd775a5cb0b8257944ca52be654457",
+      "frozen_sha256": "dc9d650057183492d2d9a33eacbb8ae90edd775a5cb0b8257944ca52be654457",
+      "source_bytes": 402042,
+      "frozen_bytes": 402042,
+      "expected_bytes": 402042,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/144-3221-prototype-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/32-144-3221-prototype-current.txt",
+      "expected_sha256": "844f39af6d4a6d655d020dfdc6dfc8fe564417b1acdf624b102e190aadd8f347",
+      "source_sha256": "844f39af6d4a6d655d020dfdc6dfc8fe564417b1acdf624b102e190aadd8f347",
+      "frozen_sha256": "844f39af6d4a6d655d020dfdc6dfc8fe564417b1acdf624b102e190aadd8f347",
+      "source_bytes": 12729,
+      "frozen_bytes": 12729,
+      "expected_bytes": 12729,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/144-3223-prototype-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/33-144-3223-prototype-current.txt",
+      "expected_sha256": "0b8e19fafe97008ff5287f0150bbd26dac24f51268b20d20033b1964fb36acb6",
+      "source_sha256": "0b8e19fafe97008ff5287f0150bbd26dac24f51268b20d20033b1964fb36acb6",
+      "frozen_sha256": "0b8e19fafe97008ff5287f0150bbd26dac24f51268b20d20033b1964fb36acb6",
+      "source_bytes": 12753,
+      "frozen_bytes": 12753,
+      "expected_bytes": 12753,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/144-3225-prototype-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/34-144-3225-prototype-current.txt",
+      "expected_sha256": "c3d6a8316d2c9217dd6184eb934c96d141d3c4f56c70587738e6a2c9171dbf7f",
+      "source_sha256": "c3d6a8316d2c9217dd6184eb934c96d141d3c4f56c70587738e6a2c9171dbf7f",
+      "frozen_sha256": "c3d6a8316d2c9217dd6184eb934c96d141d3c4f56c70587738e6a2c9171dbf7f",
+      "source_bytes": 13162,
+      "frozen_bytes": 13162,
+      "expected_bytes": 13162,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/144-3227-prototype-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/35-144-3227-prototype-current.txt",
+      "expected_sha256": "1240d4bdc44312448d85d20a8a26fa4dee5f56e16e9e8de1446969426902ab86",
+      "source_sha256": "1240d4bdc44312448d85d20a8a26fa4dee5f56e16e9e8de1446969426902ab86",
+      "frozen_sha256": "1240d4bdc44312448d85d20a8a26fa4dee5f56e16e9e8de1446969426902ab86",
+      "source_bytes": 13622,
+      "frozen_bytes": 13622,
+      "expected_bytes": 13622,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/144-3229-prototype-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/36-144-3229-prototype-current.txt",
+      "expected_sha256": "eeb54bd42c859da5e54af9e1180e82c56d5bf12d5f665829f74849e325ee17ae",
+      "source_sha256": "eeb54bd42c859da5e54af9e1180e82c56d5bf12d5f665829f74849e325ee17ae",
+      "frozen_sha256": "eeb54bd42c859da5e54af9e1180e82c56d5bf12d5f665829f74849e325ee17ae",
+      "source_bytes": 14034,
+      "frozen_bytes": 14034,
+      "expected_bytes": 14034,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/144-3233-prototype-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/37-144-3233-prototype-current.txt",
+      "expected_sha256": "c0dc025d4769bf117c495ea344aff7be71bab4893ed625721f9629d2af9ec06a",
+      "source_sha256": "c0dc025d4769bf117c495ea344aff7be71bab4893ed625721f9629d2af9ec06a",
+      "frozen_sha256": "c0dc025d4769bf117c495ea344aff7be71bab4893ed625721f9629d2af9ec06a",
+      "source_bytes": 14857,
+      "frozen_bytes": 14857,
+      "expected_bytes": 14857,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/144-3236-prototype-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/38-144-3236-prototype-current.txt",
+      "expected_sha256": "a92c5cdf7b1abbdf73c782b4946247a617bdff2ce358e10a27408bd85e7d34ea",
+      "source_sha256": "a92c5cdf7b1abbdf73c782b4946247a617bdff2ce358e10a27408bd85e7d34ea",
+      "frozen_sha256": "a92c5cdf7b1abbdf73c782b4946247a617bdff2ce358e10a27408bd85e7d34ea",
+      "source_bytes": 12597,
+      "frozen_bytes": 12597,
+      "expected_bytes": 12597,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/144-3265-closed-prototype-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/39-144-3265-closed-prototype-current.txt",
+      "expected_sha256": "fc035857c3ed5242c0d7bbdb1fe25d4259a3d8ac7099ad1747891550ccc52434",
+      "source_sha256": "fc035857c3ed5242c0d7bbdb1fe25d4259a3d8ac7099ad1747891550ccc52434",
+      "frozen_sha256": "fc035857c3ed5242c0d7bbdb1fe25d4259a3d8ac7099ad1747891550ccc52434",
+      "source_bytes": 16852,
+      "frozen_bytes": 16852,
+      "expected_bytes": 16852,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/144-3266-closed-prototype-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/40-144-3266-closed-prototype-current.txt",
+      "expected_sha256": "b4c834b2294d30bc98ea3c368403dcb1093eb2d6a016f0ac4ad7dd682b85814c",
+      "source_sha256": "b4c834b2294d30bc98ea3c368403dcb1093eb2d6a016f0ac4ad7dd682b85814c",
+      "frozen_sha256": "b4c834b2294d30bc98ea3c368403dcb1093eb2d6a016f0ac4ad7dd682b85814c",
+      "source_bytes": 16640,
+      "frozen_bytes": 16640,
+      "expected_bytes": 16640,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/144-3268-closed-prototype-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/41-144-3268-closed-prototype-current.txt",
+      "expected_sha256": "c547e12de3d54bfab0c210c8499b757f16bbe42321de54decbfe3f09dcc16238",
+      "source_sha256": "c547e12de3d54bfab0c210c8499b757f16bbe42321de54decbfe3f09dcc16238",
+      "frozen_sha256": "c547e12de3d54bfab0c210c8499b757f16bbe42321de54decbfe3f09dcc16238",
+      "source_bytes": 16541,
+      "frozen_bytes": 16541,
+      "expected_bytes": 16541,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/144-3270-closed-prototype-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/42-144-3270-closed-prototype-current.txt",
+      "expected_sha256": "b3fcdc6b4bab37007f8c7e0b6c576267d0bc64bdaf5f2d603c1392227eaa4d3c",
+      "source_sha256": "b3fcdc6b4bab37007f8c7e0b6c576267d0bc64bdaf5f2d603c1392227eaa4d3c",
+      "frozen_sha256": "b3fcdc6b4bab37007f8c7e0b6c576267d0bc64bdaf5f2d603c1392227eaa4d3c",
+      "source_bytes": 16541,
+      "frozen_bytes": 16541,
+      "expected_bytes": 16541,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/144-3272-closed-prototype-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/43-144-3272-closed-prototype-current.txt",
+      "expected_sha256": "3f64dc8ee855ae9bda64fcc9930fcf2ac7557a2f56011e59e94eeaadba1aef53",
+      "source_sha256": "3f64dc8ee855ae9bda64fcc9930fcf2ac7557a2f56011e59e94eeaadba1aef53",
+      "frozen_sha256": "3f64dc8ee855ae9bda64fcc9930fcf2ac7557a2f56011e59e94eeaadba1aef53",
+      "source_bytes": 16705,
+      "frozen_bytes": 16705,
+      "expected_bytes": 16705,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/144-3274-closed-prototype-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/44-144-3274-closed-prototype-current.txt",
+      "expected_sha256": "46660f2b94dd5b86e5c0d842e95f4739f9c455b988f1ab280a99cea33deceaef",
+      "source_sha256": "46660f2b94dd5b86e5c0d842e95f4739f9c455b988f1ab280a99cea33deceaef",
+      "frozen_sha256": "46660f2b94dd5b86e5c0d842e95f4739f9c455b988f1ab280a99cea33deceaef",
+      "source_bytes": 16941,
+      "frozen_bytes": 16941,
+      "expected_bytes": 16941,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/144-3278-closed-prototype-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/45-144-3278-closed-prototype-current.txt",
+      "expected_sha256": "78ee151ef149e4aeb86490e197f67576f82fcd54b2de1caccb0738675f44000e",
+      "source_sha256": "78ee151ef149e4aeb86490e197f67576f82fcd54b2de1caccb0738675f44000e",
+      "frozen_sha256": "78ee151ef149e4aeb86490e197f67576f82fcd54b2de1caccb0738675f44000e",
+      "source_bytes": 17754,
+      "frozen_bytes": 17754,
+      "expected_bytes": 17754,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/144-3280-closed-prototype-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/46-144-3280-closed-prototype-current.txt",
+      "expected_sha256": "9babf90586c9d7e37c8a0bcf534a093fc763d718fa154541b19c5f0add7a051f",
+      "source_sha256": "9babf90586c9d7e37c8a0bcf534a093fc763d718fa154541b19c5f0add7a051f",
+      "frozen_sha256": "9babf90586c9d7e37c8a0bcf534a093fc763d718fa154541b19c5f0add7a051f",
+      "source_bytes": 16719,
+      "frozen_bytes": 16719,
+      "expected_bytes": 16719,
+      "match": true
+    },
+    {
+      "source": "output/research/b01-expanded-native-qualification-2026-10-14/execution/144-3281-closed-prototype-current.txt",
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/47-144-3281-closed-prototype-current.txt",
+      "expected_sha256": "cdbf69c65bc068da54cd8af29d25e37453243cd6aafa382ae2dc5b3db9f57216",
+      "source_sha256": "cdbf69c65bc068da54cd8af29d25e37453243cd6aafa382ae2dc5b3db9f57216",
+      "frozen_sha256": "cdbf69c65bc068da54cd8af29d25e37453243cd6aafa382ae2dc5b3db9f57216",
+      "source_bytes": 16719,
+      "frozen_bytes": 16719,
+      "expected_bytes": 16719,
+      "match": true
+    }
+  ],
+  "findings": [],
+  "actionable_finding_count": 0,
+  "verdicts": {
+    "authority_and_refinement": {
+      "outcome": "PASS",
+      "bounded_conclusion": "D-094 releases this exact isolated normal-editor trial. The reviewed owned-copy INSTANCE -> FRAME -> independent COMPONENT refinement fits the already released construction scope; neither this receipt nor the earlier proposal grants any new external action or acceptance. The observed partial construction remains within the one-section/three-set/eighty-variant/thirty-six-frame ceilings.",
+      "evidence": [
+        "inputs/02-DECISIONS.md:1423-1442 D-094",
+        "inputs/04-qualification-plan-v1.json#/write_scope and /execution_recipe",
+        "inputs/06-owned-seed-conversion-proposal-v1.json",
+        "inputs/07-independent-review-seed-conversion-v1.json#/authorization_assessment"
+      ]
+    },
+    "owned_seed_conversion_accounting": {
+      "outcome": "PASS",
+      "bounded_conclusion": "Saved normal-editor observations support two independent owned mains in the new section and their combination in the new NAVIGATION component set. OPEN chain 144:3198 INSTANCE -> 144:3220 FRAME -> 144:3241 COMPONENT and CLOSED chain 144:3242 INSTANCE -> 144:3265 FRAME -> 144:3286 COMPONENT are coherent with the saved selected properties, copied name/order comparisons and new set tree.",
+      "evidence": [
+        "inputs/08-seed-detach-name-geometry-accounting-v1.json:21 visible names/order, 320x1150",
+        "inputs/09-closed-seed-detach-accounting-v1.json:16 observed names/order with folded radio children, 320x1150",
+        "inputs/14-independent-open-seed-named-current.txt",
+        "inputs/15-independent-closed-seed-named-current.txt",
+        "inputs/16-navigation-set-created-rows-current.json",
+        "inputs/17-navigation-set-named-current.txt",
+        "inputs/26-navigation-construction-checkpoint-v1.json#/conversion_chains"
+      ],
+      "limits": [
+        "OPEN name/order comparison is not pixel/style/whole-subtree equivalence; CLOSED observes sixteen rows with folded caption children, not an exhaustive equivalent subtree.",
+        "The saved root and functional-owner Prototype panels have an Interactions heading followed by Add action and no reaction rows; this supports only those observed owners. An exhaustive inherited descendant-reaction census remains necessary before wiring.",
+        "A top-level independent main component supports removal of the old root host link. Remaining nested shared visual button instances and all descendant behaviors are not admitted globally by this receipt."
+      ]
+    },
+    "navigation_construction_inventory": {
+      "outcome": "PASS",
+      "bounded_conclusion": "The normal-editor census has thirty-two distinct actual IDs and the exact four active x four pending x two disclosure tuples, matching the approved NAVIGATION allocation. The supplied normal 1x matrix export visibly contains the same four active rows, paired Menu/Close menu columns and four pending selections. It is one complete matrix image, not thirty-two separate native exports.",
+      "observed_owner": {
+        "section_id": "144:3197",
+        "component_set_id": "144:3287",
+        "name": "B01 qualification / NAVIGATION / v1"
+      },
+      "counts": {
+        "navigation_variants": 32,
+        "directory_variants_accounted": 0,
+        "recovery_variants_accounted": 0,
+        "preview_comparison_frames_accounted": 0,
+        "new_wiring_or_native_scenarios_claimed": 0
+      },
+      "evidence": [
+        "inputs/18-navigation-set-32-states-current.txt: new set, 32 Variants, dimensions3020x4880",
+        "inputs/20-navigation-32-native-census-v1.json:32 unique IDs and tuples",
+        "inputs/19-navigation-native-actions-20261015-v1.json:27 final construction records and retained earlier work-in-progress entries",
+        "inputs/21-navigation-early-state-reinspection-v1.json:five remaining final state inspections",
+        "inputs/24-navigation-32-native-resolution.png:3020x4880 RGBA",
+        "inputs/25-navigation-export-settings-current.txt:normal1x PNG export"
+      ],
+      "record_reconciliation": "The action records contain pre-edit child arrays as well as edits; those arrays must not be represented as direct post-edit observations. Their recorded after values, later caption inventories, five early-state reinspections and the native rendered open-state matrix reconcile to the intended active legends and exactly one pending selection. This is construction evidence, not independent replay of every edit or interactive behavior.",
+      "early_reinspection_ids": [
+        "147:3205 HIGH/MEDIUM/CLOSED",
+        "147:3227 HIGH/LOW/CLOSED",
+        "147:3249 HIGH/SEMANTIC/CLOSED",
+        "144:3286 HIGH/HIGH/CLOSED",
+        "144:3241 HIGH/HIGH/OPEN"
+      ],
+      "visual_assessment": "At native resolution the sixteen OPEN panel bodies show the correct active legend and one selected peer, in the approved four-label order, with the peer explanation, advance Apply advisement, Apply selection and Privacy and storage rendered without visible body clipping. CLOSED columns render Menu and no panel body. The visible Services context excludes the earlier directory query. Trial scroll markers occur below each variant content. The fitted set encloses all four rows.",
+      "visual_limit": "The export has a transparent background, so dark context/scroll-marker ink appears low contrast on the image viewer black backdrop. This is not accessibility proof or a production screen acceptance. The already approved recipe requires the later preview/comparison frames to have opaque paper backgrounds; those frames do not yet exist. Hidden CLOSED body text is not directly rendered in this export; its accounting relies on saved DOM/property and edit records."
+    },
+    "preservation_and_recovery_reporting": {
+      "outcome": "PASS",
+      "bounded_conclusion": "The producer checkpoint correctly separates actual thirty-two-state construction from pending wiring/native qualification and full trial/Phase 1 acceptance. The original eight-state owner/set/preview/variant IDs and names are observed outside the new section; this is a bounded read-only observation and not whole-file preservation proof.",
+      "evidence": [
+        "inputs/22-original-trial-post-navigation-observation-v1.json",
+        "inputs/26-navigation-construction-checkpoint-v1.json#/preservation_limits and /recovery_accounting"
+      ],
+      "original_observed_ids": {
+        "section": "101:3204",
+        "set": "85:3174",
+        "preview": "94:3199",
+        "variants": [
+          "85:3301",
+          "85:3280",
+          "85:3259",
+          "85:3238",
+          "85:3217",
+          "85:3196",
+          "85:3175",
+          "85:3173"
+        ]
+      },
+      "limits": [
+        "Original property/value text includes normal editor alias/option-list presentation; it is not an exhaustive typed content or descendant hash comparison.",
+        "Browser rebinding, locator staleness, corrected anatomy count, guarded reused copies, refused dynamic automation and owned set resize are saved producer chronology. This packet does not independently reconstruct every GUI action or certify full source preservation.",
+        "No live browser/Figma/MCP/AI/account/application/Git action was performed by this reviewer."
+      ]
+    }
+  },
+  "archives": [
+    {
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/27-before-expanded-trial-v1.fig",
+      "sha256": "94e60adb84dc4001406b6bf53300156d6c761173b64f1020946bfa2c9b6c5a81",
+      "entries": [
+        "canvas.fig",
+        "thumbnail.png",
+        "meta.json",
+        "images/"
+      ],
+      "zip_crc": "PASS",
+      "limit": "Integrity of the supplied archive only; no native import/restore or node-equivalence test."
+    },
+    {
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/28-owned-instance-before-conversion-v1.fig",
+      "sha256": "7c73d7c66f717432632062dbc9a354d1290ab98d860d678ea1676a3d3437f617",
+      "entries": [
+        "canvas.fig",
+        "thumbnail.png",
+        "meta.json",
+        "images/"
+      ],
+      "zip_crc": "PASS",
+      "limit": "Integrity of the supplied archive only; no native import/restore or node-equivalence test."
+    },
+    {
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/29-navigation-two-seeds-v1.fig",
+      "sha256": "d9f40034de10e22665d53162ce1649c2b776f7585b518a6b0ad2296a098ec1d7",
+      "entries": [
+        "canvas.fig",
+        "thumbnail.png",
+        "meta.json",
+        "images/"
+      ],
+      "zip_crc": "PASS",
+      "limit": "Integrity of the supplied archive only; no native import/restore or node-equivalence test."
+    },
+    {
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/30-navigation-32-final-v1.fig",
+      "sha256": "19904646a93c308de6e806736b98e4f85bda3cbfe5d68fb60d71606bfa05129e",
+      "entries": [
+        "canvas.fig",
+        "thumbnail.png",
+        "meta.json",
+        "images/"
+      ],
+      "zip_crc": "PASS",
+      "limit": "Integrity of the supplied archive only; no native import/restore or node-equivalence test."
+    },
+    {
+      "frozen": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-navigation-construction/inputs/31-navigation-32-native-export.zip",
+      "sha256": "dc9d650057183492d2d9a33eacbb8ae90edd775a5cb0b8257944ca52be654457",
+      "entries": [
+        "B01/Four-stream three-host qualification/B01 qualification/NAVIGATION/v1.png"
+      ],
+      "zip_crc": "PASS",
+      "limit": "Integrity of the supplied archive only; no native import/restore or node-equivalence test."
+    }
+  ],
+  "required_remaining_conditions": [
+    "Before new wiring, finish fresh actual owned-descendant reaction/target admission; no inherited old-host destination may survive. Empty root/function-owner panels alone are insufficient.",
+    "Complete the authorized DIRECTORY32 and RECOVERY16 sets, thirty-six preview/comparison frames, exactly reviewed324 single-action edges and sixty deliberate visible noops. Keep original sources and old trial separate.",
+    "Later preview/comparison hosts must provide the approved opaque paper background, matching topology/names, actual matching highlights and deliberate preserve/reset settings.",
+    "Exercise ENQ01-08 with actual mode/Apply/Close/Escape/scroll/background/matching/reset/key limitations and independent result review. This construction PASS is not an interaction or accessibility PASS.",
+    "Native restore/_EXIT, complete source preservation, B01 and integrated Phase 1/founder acceptance remain unestablished and outside this receipt."
+  ],
+  "review_execution": "Read-only frozen/source hash and byte checks; direct local TXT/JSON and native-resolution PNG inspection; independent tuple/record reconciliation and five ZIP CRC checks. Only this exclusive-created receipt was written. No live Figma/browser/account/application/Git operation or further delegation."
+}

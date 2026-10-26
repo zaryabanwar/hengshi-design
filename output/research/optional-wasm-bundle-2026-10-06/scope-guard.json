@@ -1,0 +1,31 @@
+{
+  "historical_review_live_path_differences": [
+    {
+      "path": "DECISIONS.md",
+      "historical_sha256": "0290e6bed5d983fa1f2162db72f1a9d3167695ff98c867c88987ee1e2c4bcc99",
+      "current_sha256": "2fb8a65dc04f460355890571305b0883609a743440523b8e4f8a2750d08e5308",
+      "known_later_authority_or_reference_update": true
+    },
+    {
+      "path": "PROJECT_STATE.yaml",
+      "historical_sha256": "ea030336814b0fe4cb810ab4097f0ee22b24a8d14712f6ce6cc2f8bedc02fc5a",
+      "current_sha256": "618e8f3c83d0cf204b0c8f2c9e242c3305e557750d2fb059cd95b48030e92707",
+      "known_later_authority_or_reference_update": true
+    },
+    {
+      "path": "docs/phase-1-compatibility/README.md",
+      "historical_sha256": "27f5bddc4664afea1e0e55aa8942eecd2c9b877f24da8d7d091f2081926f10ba",
+      "current_sha256": "f983384b0bfc2fbbac54bc05953278d035fbb25f413cd3174d6d06471fa58980",
+      "known_later_authority_or_reference_update": true
+    },
+    {
+      "path": "docs/phase-1-compatibility/refresh-evidence-2026-10-04.md",
+      "historical_sha256": "2aada7413b9fe489948989cf5ef67e85d57f89c1c075307a07ecb276ec43d324",
+      "current_sha256": "5d44438de49411a5bea17e27a1af772e279bf14f29777d9e8a739a2eebd62e9d",
+      "known_later_authority_or_reference_update": true
+    }
+  ],
+  "limits": "Historical current-path hashes include later approved D073 and checkpoint/reference updates; they are not a new before/after guard. Earlier frozen copies remain the reviewed evidence.",
+  "current_protected_inputs_verified": 76,
+  "candidate_lock_sha256": "fa903a8d901357aacf80863524e0e00ae2ece69126daf218256cdd2656b2da4c"
+}

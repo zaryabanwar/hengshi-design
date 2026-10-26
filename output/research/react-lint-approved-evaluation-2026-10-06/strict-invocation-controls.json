@@ -1,0 +1,39 @@
+{
+  "scope": "configuration and unmatched-file failure controls; first wrong-scope control preserved, not treated as a passing test",
+  "records": [
+    {
+      "case": "invalid-config",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/valid-hooks.tsx",
+        "--config",
+        "eslint.invalid.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0"
+      ],
+      "exit_code": 2,
+      "expected_exit": 2,
+      "oracle_match": true
+    },
+    {
+      "case": "ignored-target",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/ignored.txt",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "oracle_match": true
+    }
+  ]
+}

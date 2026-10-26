@@ -1,0 +1,12 @@
+{
+  "status": "fulfilled",
+  "value": {
+    "content": [
+      {
+        "type": "text",
+        "text": "### Install Tailwind CSS and Vite plugin\n\nSource: https://tailwindcss.com/docs\n\nInstalls tailwindcss and the @tailwindcss/vite plugin via npm.\n\n```shell\nnpm install tailwindcss @tailwindcss/vite\n```\n\n--------------------------------\n\n### Configure Vite Plugin in vite.config.mjs\n\nSource: https://tailwindcss.com/docs/installation/framework-guides/emberjs\n\nAdds the @tailwindcss/vite plugin to the Vite plugins array in vite.config.mjs.\n\n```javascript\nimport { defineConfig } from 'vite';import { extensions, classicEmberSupport, ember } from '@embroider/vite';import { babel } from '@rollup/plugin-babel';import tailwindcss from '@tailwindcss/vite';export default defineConfig({  plugins: [    tailwindcss(),    classicEmberSupport(),    ember(),    // extra plugins here    babel({      babelHelpers: 'runtime',      extensions,    }),  ],});\n```\n\n--------------------------------\n\n### Import Tailwind in CSS using @import directive\n\nSource: https://tailwindcss.com/docs/upgrade-guide\n\nReplace v3 @tailwind directives with a regular CSS @import statement in Tailwind CSS v4.\n\n```css\n@tailwind base;@tailwind components;@tailwind utilities;@import \"tailwindcss\";\n```\n\n--------------------------------\n\n### Import Tailwind CSS in app.css\n\nSource: https://tailwindcss.com/docs/installation/framework-guides/symfony\n\nAdd the Tailwind CSS import and configure @source to ignore the public directory to avoid recompile loops.\n\n```css\n@import \"tailwindcss\";@source not \"../../public\";\n```\n\n### Get started with Tailwind CSS > Installation > Installing Tailwind CSS as a Vite plugin > Import Tailwind CSS\n\nSource: https://tailwindcss.com/docs\n\nAdd an `@import` to your CSS file that imports Tailwind CSS."
+      }
+    ],
+    "isError": false
+  }
+}

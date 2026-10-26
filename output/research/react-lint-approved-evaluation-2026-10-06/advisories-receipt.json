@@ -1,0 +1,37 @@
+{
+  "observed_at_utc": "2026-10-05T20:50:09.767656+00:00",
+  "command": [
+    "C:/nvm4w/nodejs/node.exe",
+    "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+    "audit",
+    "--json",
+    "--package-lock-only",
+    "--ignore-scripts",
+    "--include=dev",
+    "--registry=https://registry.npmjs.org",
+    "--userconfig=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\empty-user.npmrc",
+    "--globalconfig=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\empty-global.npmrc",
+    "--loglevel=error"
+  ],
+  "exit_code": 0,
+  "scope": "npm advisory database for isolated locked closure only; not security or provenance clearance",
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "dependencies": {
+      "prod": 1,
+      "dev": 161,
+      "optional": 20,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 161
+    }
+  },
+  "error": null
+}

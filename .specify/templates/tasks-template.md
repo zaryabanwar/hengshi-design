@@ -4,7 +4,8 @@
 
 | Field | Value |
 |---|---|
-| Status | Draft |
+| Status | TODO |
+| Product/definition | v1; D-069 |
 | Plan | `specs/{{ number }}-{{ slug }}/plan.md` |
 | Current phase | |
 | Author/producer | |
@@ -12,7 +13,11 @@
 | Founder approver | |
 | Created | {{ date }} |
 | Last updated | {{ date }} |
-| Maximum revision cycles | 2; use 3 only for brand, UI, motion, or 3D |
+| Correction policy | D-097: no numeric cap; diagnose repeated failures; escalate material decisions only |
+
+D-097: tasks deliver one assigned increment, then stop. Unfinished future 3D and
+launch evidence are not universal code prerequisites. Preserve all agreed scope
+in its later increments; assess actual coupled dependencies of the current work.
 
 ## Bounded Contract
 
@@ -37,10 +42,15 @@
 Use `[P]` only for tasks with disjoint files and no unmet data/state dependency.
 Keep baseline fixes, structural moves, upgrade waves, feature work, and release
 actions separate.
+Use only TODO/DOING/DONE/BLOCKED for task status; DONE requires relevant tests
+and an applicable approved commit. Preserve accurate technical/history versions.
+Follow D-069's latest mutually compatible stable full graph; newest observations
+alone do not select versions. D-068 defers deployment/provider/region/cost tasks;
+do not infer Azure/AWS selection or a Microsoft 365 setup prerequisite.
 
 ### Task T001 — {{ Description }}
 
-- **Status**: Not started
+- **Status**: TODO
 - **Priority**: Must
 - **Objective/exclusions**: _Bounded result and non-goals._
 - **Dependencies**: None
@@ -56,7 +66,7 @@ actions separate.
   # Exact commands
   ```
 - **Failure/rollback**: _How to restore the previous trusted state._
-- **Independent reviewer**: _Role/agent separate from producer._
+- **Independent review**: _Required for material design, money/security/external-system work or when asked; otherwise not applicable._
 - **Human approval condition**: _State the exact gate._
 
 ## Required Verification Tasks
@@ -87,8 +97,8 @@ Add only applicable tasks, but do not omit an applicable gate:
 - [ ] No out-of-scope application or user-owned file changed
 - [ ] Compatibility graph and deterministic locks verified where applicable
 - [ ] All applicable validation and failure/rollback evidence passed
-- [ ] Independent review has no unresolved critical finding
-- [ ] Decisions, state, risks, manual actions, and changelog synchronized
-- [ ] Founder click-based phase approval recorded
+- [ ] Required independent review has no unresolved material finding, or is not applicable with reason
+- [ ] Owning product references and compact checkpoint updated; no routine review narrative
+- [ ] Relevant tests pass and approved commit exists before DONE; launch gates listed separately
 - [ ] Separate explicit approval obtained before any Git, migration, external-write,
   paid-service, credential, production-promotion, or deployment action

@@ -1,0 +1,690 @@
+{
+  "product": "Hengshi Design v1",
+  "date": "2026-10-12",
+  "status": "DOING",
+  "verdict": "PASS",
+  "reviewer_id": "/root/review_overlay_source_binding_v1",
+  "producer_id": "/root",
+  "authorization": {
+    "questionId": "call_3b44cedc9e7c4e03a4c36632e1d561a1",
+    "answer": "Approve this source-binding review",
+    "scope": "One independent read-only review of the proposed D-092 source-binding successor, with receipt and temporary evidence writes confined to this research folder. Replacement reviewer handle retains identical approved scope. No candidate adoption, canonical change, Figma/account/application/Git action or subdelegation."
+  },
+  "manifest": {
+    "path": "review-inputs-v1.json",
+    "sha256": "fc4ab93f74c5ab3d4d789ac58a0b25c007cc44908487eb4b774e010632957e68",
+    "inputs": 24,
+    "all_bytes_and_hashes_verified": true,
+    "all24_current_sources_match_frozen_inputs": true,
+    "rechecked_immediately_before_receipt": true
+  },
+  "input_bindings": [
+    {
+      "source": "docs/phase-1-foundation/06-canonical-route-inventory.json",
+      "snapshot": "review-inputs/01-06-canonical-route-inventory.json",
+      "bytes": 43357,
+      "sha256": "41b750b5493a70a43344ca608084e6adce04b82a768969832026fb50f6b59081",
+      "verified": true,
+      "current_bytes": 43357,
+      "current_sha256": "41b750b5493a70a43344ca608084e6adce04b82a768969832026fb50f6b59081",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/DELIVERY_STREAM_EVIDENCE_MODEL.md",
+      "snapshot": "review-inputs/02-DELIVERY_STREAM_EVIDENCE_MODEL.md",
+      "bytes": 60940,
+      "sha256": "9230db6c943ce452ca208493bfad8e3b56aabc060d3fdbc4a4dfe3a2b911fe17",
+      "verified": true,
+      "current_bytes": 60940,
+      "current_sha256": "9230db6c943ce452ca208493bfad8e3b56aabc060d3fdbc4a4dfe3a2b911fe17",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/UI_REFERENCE_DESIGN_CONTRACT.md",
+      "snapshot": "review-inputs/03-UI_REFERENCE_DESIGN_CONTRACT.md",
+      "bytes": 32708,
+      "sha256": "396d32f472794cb83168053ca6841bfbd37733923cafa225725391e22bb9830f",
+      "verified": true,
+      "current_bytes": 32708,
+      "current_sha256": "396d32f472794cb83168053ca6841bfbd37733923cafa225725391e22bb9830f",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/component-primitives.csv",
+      "snapshot": "review-inputs/04-component-primitives.csv",
+      "bytes": 79724,
+      "sha256": "8aec225781cbb1389ea15e70895889a9da306244cd6f8b74f7640d863dde6318",
+      "verified": true,
+      "current_bytes": 79724,
+      "current_sha256": "8aec225781cbb1389ea15e70895889a9da306244cd6f8b74f7640d863dde6318",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/foundation-flow-coverage.csv",
+      "snapshot": "review-inputs/05-foundation-flow-coverage.csv",
+      "bytes": 47465,
+      "sha256": "7f80eeb1b60da0f23b026e7f33573bce89881df59cf3d705d759387abf69f5f4",
+      "verified": true,
+      "current_bytes": 47465,
+      "current_sha256": "7f80eeb1b60da0f23b026e7f33573bce89881df59cf3d705d759387abf69f5f4",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/foundation-route-coverage.csv",
+      "snapshot": "review-inputs/06-foundation-route-coverage.csv",
+      "bytes": 22199,
+      "sha256": "a8d6e918aa85a4ed974945fedc604d016dea54dc6d3f6a55436d55557c0190e7",
+      "verified": true,
+      "current_bytes": 22199,
+      "current_sha256": "a8d6e918aa85a4ed974945fedc604d016dea54dc6d3f6a55436d55557c0190e7",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "snapshot": "review-inputs/07-reference-template-inventory.csv",
+      "bytes": 33596,
+      "sha256": "2e904e0f4c7019ca696131068567978973961e70cb0889ae954771010c5634cf",
+      "verified": true,
+      "current_bytes": 33596,
+      "current_sha256": "2e904e0f4c7019ca696131068567978973961e70cb0889ae954771010c5634cf",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "snapshot": "review-inputs/08-responsive-state-mode-matrix.csv",
+      "bytes": 33821,
+      "sha256": "deb91325e1c8a543878111883f5b1203ae9e5dc35c00e0d837e927786eaf47e2",
+      "verified": true,
+      "current_bytes": 33821,
+      "current_sha256": "deb91325e1c8a543878111883f5b1203ae9e5dc35c00e0d837e927786eaf47e2",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "docs/phase-1-ux-architecture/FLOWS.md",
+      "snapshot": "review-inputs/09-FLOWS.md",
+      "bytes": 30096,
+      "sha256": "af9645a4658a8b6dc60c846f580dccd76cc4bb0f5377f65526d7749d1572d27b",
+      "verified": true,
+      "current_bytes": 30096,
+      "current_sha256": "af9645a4658a8b6dc60c846f580dccd76cc4bb0f5377f65526d7749d1572d27b",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md",
+      "snapshot": "review-inputs/10-STATES_AND_RECOVERY.md",
+      "bytes": 24105,
+      "sha256": "fa3322d864dc8c29d2f7853d6dc9a961126f7a8aea2b575505997d05c3297064",
+      "verified": true,
+      "current_bytes": 24105,
+      "current_sha256": "fa3322d864dc8c29d2f7853d6dc9a961126f7a8aea2b575505997d05c3297064",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "docs/phase-1-ux-architecture/UX_ARCHITECTURE.md",
+      "snapshot": "review-inputs/11-UX_ARCHITECTURE.md",
+      "bytes": 23200,
+      "sha256": "c84327305ca6dbf0eeeeadef9a88c1babc22029b8ca3285412ecf042286320e7",
+      "verified": true,
+      "current_bytes": 23200,
+      "current_sha256": "c84327305ca6dbf0eeeeadef9a88c1babc22029b8ca3285412ecf042286320e7",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "docs/phase-1-ux-architecture/excluded-surfaces.csv",
+      "snapshot": "review-inputs/12-excluded-surfaces.csv",
+      "bytes": 2188,
+      "sha256": "16245ed1be5e88eeb74b854dc2bfcf3ba794905636970fee2bfd4bf1d5d9ada0",
+      "verified": true,
+      "current_bytes": 2188,
+      "current_sha256": "16245ed1be5e88eeb74b854dc2bfcf3ba794905636970fee2bfd4bf1d5d9ada0",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "docs/phase-1-ux-architecture/route-room-parity.csv",
+      "snapshot": "review-inputs/13-route-room-parity.csv",
+      "bytes": 8748,
+      "sha256": "ea944fa9ee088272c56a23fcd49e578fa54abc9692aaeecfb8b9c8d2ad982be9",
+      "verified": true,
+      "current_bytes": 8748,
+      "current_sha256": "ea944fa9ee088272c56a23fcd49e578fa54abc9692aaeecfb8b9c8d2ad982be9",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "docs/phase-1-ux-architecture/wayfinding-release-map.csv",
+      "snapshot": "review-inputs/14-wayfinding-release-map.csv",
+      "bytes": 10356,
+      "sha256": "298876f35468e7501028a77de63d1b449fd75b52183619a500700c46c2999c63",
+      "verified": true,
+      "current_bytes": 10356,
+      "current_sha256": "298876f35468e7501028a77de63d1b449fd75b52183619a500700c46c2999c63",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/column-authority.json",
+      "snapshot": "review-inputs/15-column-authority.json",
+      "bytes": 11841596,
+      "sha256": "85736b6db6801ffdc529143085c20346193dc4904eef01e09d2074524211f98a",
+      "verified": true,
+      "current_bytes": 11841596,
+      "current_sha256": "85736b6db6801ffdc529143085c20346193dc4904eef01e09d2074524211f98a",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "output/research/b01-overlay-source-rebinding-2026-10-12/column-authority-candidate-v1.json",
+      "snapshot": "review-inputs/16-column-authority-candidate-v1.json",
+      "bytes": 11649766,
+      "sha256": "a8358be02d6fbca42a167b19395a4a2cd9b2fe318eaaec3b78e8141f4244aacd",
+      "verified": true,
+      "current_bytes": 11649766,
+      "current_sha256": "a8358be02d6fbca42a167b19395a4a2cd9b2fe318eaaec3b78e8141f4244aacd",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "output/research/b01-overlay-source-rebinding-2026-10-12/source-rebinding-diff-v1.json",
+      "snapshot": "review-inputs/17-source-rebinding-diff-v1.json",
+      "bytes": 94721,
+      "sha256": "7410bc68d570d1e0acd80697c891f9427490cf2f6fdd01251fbd2ef387926b4a",
+      "verified": true,
+      "current_bytes": 94721,
+      "current_sha256": "7410bc68d570d1e0acd80697c891f9427490cf2f6fdd01251fbd2ef387926b4a",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "output/research/b01-overlay-source-rebinding-2026-10-12/prepare_source_candidate.py",
+      "snapshot": "review-inputs/18-prepare_source_candidate.py",
+      "bytes": 4772,
+      "sha256": "8af120e6191840a3a3471a71e7fa3ea21d3a87010cbc2d79ee4b1b5dab59255d",
+      "verified": true,
+      "current_bytes": 4772,
+      "current_sha256": "8af120e6191840a3a3471a71e7fa3ea21d3a87010cbc2d79ee4b1b5dab59255d",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "scripts/validation/ui_column_authority.py",
+      "snapshot": "review-inputs/19-ui_column_authority.py",
+      "bytes": 15943,
+      "sha256": "e4344900d3210167bb8ecaa1fc7387bb927060685f5f0a291f9689ac580a41f4",
+      "verified": true,
+      "current_bytes": 15943,
+      "current_sha256": "e4344900d3210167bb8ecaa1fc7387bb927060685f5f0a291f9689ac580a41f4",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "review-inputs/20-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "verified": true,
+      "current_bytes": 7686,
+      "current_sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "review-inputs/21-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "verified": true,
+      "current_bytes": 16234,
+      "current_sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "review-inputs/22-DECISIONS.md",
+      "bytes": 104938,
+      "sha256": "6246ed35886793a89bfbe9174e1d2f53661aceccbdc933efa59c6928de217519",
+      "verified": true,
+      "current_bytes": 104938,
+      "current_sha256": "6246ed35886793a89bfbe9174e1d2f53661aceccbdc933efa59c6928de217519",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "output/research/b01-interaction-definition-2026-10-12/correction3/INTERACTION_EVIDENCE_PROPOSAL.md",
+      "snapshot": "review-inputs/23-INTERACTION_EVIDENCE_PROPOSAL.md",
+      "bytes": 11703,
+      "sha256": "b11add302eb0c1af9cae9123f33374cea37b5001d49a3fe15ddfde22de54a2a9",
+      "verified": true,
+      "current_bytes": 11703,
+      "current_sha256": "b11add302eb0c1af9cae9123f33374cea37b5001d49a3fe15ddfde22de54a2a9",
+      "current_matches_snapshot": true
+    },
+    {
+      "source": "output/research/b01-interaction-definition-2026-10-12/correction3/independent-review-overlay-binding-v1.json",
+      "snapshot": "review-inputs/24-independent-review-overlay-binding-v1.json",
+      "bytes": 18738,
+      "sha256": "045494246420c658f7d5a06d04ae4ce4d537779ebbade92e2374d52f37d9b191",
+      "verified": true,
+      "current_bytes": 18738,
+      "current_sha256": "045494246420c658f7d5a06d04ae4ce4d537779ebbade92e2374d52f37d9b191",
+      "current_matches_snapshot": true
+    }
+  ],
+  "registry_binding": {
+    "current_path": "docs/phase-1-ui-reference-design/column-authority.json",
+    "current_snapshot": "review-inputs/15-column-authority.json",
+    "current_sha256": "85736b6db6801ffdc529143085c20346193dc4904eef01e09d2074524211f98a",
+    "candidate_path": "output/research/b01-overlay-source-rebinding-2026-10-12/column-authority-candidate-v1.json",
+    "candidate_snapshot": "review-inputs/16-column-authority-candidate-v1.json",
+    "candidate_sha256": "a8358be02d6fbca42a167b19395a4a2cd9b2fe318eaaec3b78e8141f4244aacd",
+    "canonical_registry_unchanged": true,
+    "candidate_adopted": false
+  },
+  "findings": [],
+  "open_critical": 0,
+  "open_high": 0,
+  "open_medium": 0,
+  "artifact_integrity": {
+    "independent_recursive_diff": "PASS: exact47 scalar changes only:41 sources.quoted_fact,3 timing_criterion.process_source.quoted_fact,3 source_snapshots.raw_sha256. No object-key/list-membership/type/length changes or any other leaf changes.",
+    "producer_diff_reconciliation": "PASS: independently generated before/after witness objects, process objects and pin list equal the frozen producer diff exactly; reported registry/candidate hashes and zero declared/timing-policy deltas independently verified.",
+    "preserved_contract": "All1146 records,22 declared-column definitions,14 source paths, declared values, selectors, supports, rationale, criterion IDs, timing applicability/selected branch/obligations/implementation_truth are unchanged. No stream/profile/allocation or timing-policy change is introduced by the candidate.",
+    "changed_record_indices_zero_based": [
+      315,
+      316,
+      317,
+      318,
+      319,
+      330,
+      331,
+      332,
+      333,
+      334,
+      760,
+      761,
+      762,
+      763,
+      764,
+      765,
+      766,
+      767,
+      768,
+      769,
+      860,
+      861,
+      862,
+      863,
+      864,
+      880,
+      881,
+      882,
+      883,
+      884,
+      969,
+      970,
+      971
+    ],
+    "changed_records": [
+      {
+        "index": 315,
+        "file": "foundation-flow-coverage.csv",
+        "row_id": "COV-FLOW-NAVIGATION-SEARCH",
+        "column": "state_profile",
+        "declared_value": "SP-NAVIGATION"
+      },
+      {
+        "index": 316,
+        "file": "foundation-flow-coverage.csv",
+        "row_id": "COV-FLOW-NAVIGATION-SEARCH",
+        "column": "viewport_profile",
+        "declared_value": "VP-INTERACTIVE"
+      },
+      {
+        "index": 317,
+        "file": "foundation-flow-coverage.csv",
+        "row_id": "COV-FLOW-NAVIGATION-SEARCH",
+        "column": "mode_profile",
+        "declared_value": "MP-INTERACTIVE"
+      },
+      {
+        "index": 318,
+        "file": "foundation-flow-coverage.csv",
+        "row_id": "COV-FLOW-NAVIGATION-SEARCH",
+        "column": "gate",
+        "declared_value": "Route activation search provider and any URL-backed search/filter state remain gated"
+      },
+      {
+        "index": 319,
+        "file": "foundation-flow-coverage.csv",
+        "row_id": "COV-FLOW-NAVIGATION-SEARCH",
+        "column": "time_limit_branch",
+        "declared_value": "TL-NOT-APPLICABLE"
+      },
+      {
+        "index": 330,
+        "file": "foundation-flow-coverage.csv",
+        "row_id": "COV-FLOW-WORLD-HUD-STREAM",
+        "column": "state_profile",
+        "declared_value": "SP-WORLD"
+      },
+      {
+        "index": 331,
+        "file": "foundation-flow-coverage.csv",
+        "row_id": "COV-FLOW-WORLD-HUD-STREAM",
+        "column": "viewport_profile",
+        "declared_value": "VP-WORLD"
+      },
+      {
+        "index": 332,
+        "file": "foundation-flow-coverage.csv",
+        "row_id": "COV-FLOW-WORLD-HUD-STREAM",
+        "column": "mode_profile",
+        "declared_value": "MP-WORLD"
+      },
+      {
+        "index": 333,
+        "file": "foundation-flow-coverage.csv",
+        "row_id": "COV-FLOW-WORLD-HUD-STREAM",
+        "column": "gate",
+        "declared_value": "3D storyboard assets provenance performance copy and external production remain gated"
+      },
+      {
+        "index": 334,
+        "file": "foundation-flow-coverage.csv",
+        "row_id": "COV-FLOW-WORLD-HUD-STREAM",
+        "column": "time_limit_branch",
+        "declared_value": "TL-REMOVABLE-ADJUSTABLE"
+      },
+      {
+        "index": 760,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-PUBLIC-HOME",
+        "column": "surface_kind",
+        "declared_value": "route_template"
+      },
+      {
+        "index": 761,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-PUBLIC-HOME",
+        "column": "state_profile",
+        "declared_value": "SP-PUBLIC-DOCUMENT"
+      },
+      {
+        "index": 762,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-PUBLIC-HOME",
+        "column": "viewport_profile",
+        "declared_value": "VP-PUBLIC"
+      },
+      {
+        "index": 763,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-PUBLIC-HOME",
+        "column": "mode_profile",
+        "declared_value": "MP-PUBLIC"
+      },
+      {
+        "index": 764,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-PUBLIC-HOME",
+        "column": "time_limit_branch",
+        "declared_value": "TL-NOT-APPLICABLE"
+      },
+      {
+        "index": 765,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-SERVICE-COLLECTION",
+        "column": "surface_kind",
+        "declared_value": "route_template"
+      },
+      {
+        "index": 766,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-SERVICE-COLLECTION",
+        "column": "state_profile",
+        "declared_value": "SP-PUBLIC-COLLECTION"
+      },
+      {
+        "index": 767,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-SERVICE-COLLECTION",
+        "column": "viewport_profile",
+        "declared_value": "VP-PUBLIC"
+      },
+      {
+        "index": 768,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-SERVICE-COLLECTION",
+        "column": "mode_profile",
+        "declared_value": "MP-PUBLIC"
+      },
+      {
+        "index": 769,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-SERVICE-COLLECTION",
+        "column": "time_limit_branch",
+        "declared_value": "TL-NOT-APPLICABLE"
+      },
+      {
+        "index": 860,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-DIRECTORY-SEARCH",
+        "column": "surface_kind",
+        "declared_value": "flow_template"
+      },
+      {
+        "index": 861,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-DIRECTORY-SEARCH",
+        "column": "state_profile",
+        "declared_value": "SP-NAVIGATION"
+      },
+      {
+        "index": 862,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-DIRECTORY-SEARCH",
+        "column": "viewport_profile",
+        "declared_value": "VP-INTERACTIVE"
+      },
+      {
+        "index": 863,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-DIRECTORY-SEARCH",
+        "column": "mode_profile",
+        "declared_value": "MP-INTERACTIVE"
+      },
+      {
+        "index": 864,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-DIRECTORY-SEARCH",
+        "column": "time_limit_branch",
+        "declared_value": "TL-NOT-APPLICABLE"
+      },
+      {
+        "index": 880,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-WORLD-HUD",
+        "column": "surface_kind",
+        "declared_value": "flow_template"
+      },
+      {
+        "index": 881,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-WORLD-HUD",
+        "column": "state_profile",
+        "declared_value": "SP-WORLD"
+      },
+      {
+        "index": 882,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-WORLD-HUD",
+        "column": "viewport_profile",
+        "declared_value": "VP-WORLD"
+      },
+      {
+        "index": 883,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-WORLD-HUD",
+        "column": "mode_profile",
+        "declared_value": "MP-WORLD"
+      },
+      {
+        "index": 884,
+        "file": "reference-template-inventory.csv",
+        "row_id": "TPL-WORLD-HUD",
+        "column": "time_limit_branch",
+        "declared_value": "TL-REMOVABLE-ADJUSTABLE"
+      },
+      {
+        "index": 969,
+        "file": "component-primitives.csv",
+        "row_id": "PRIM-004",
+        "column": "primitive_category",
+        "declared_value": "shell_navigation"
+      },
+      {
+        "index": 970,
+        "file": "component-primitives.csv",
+        "row_id": "PRIM-004",
+        "column": "interaction_class",
+        "declared_value": "composite_interactive"
+      },
+      {
+        "index": 971,
+        "file": "component-primitives.csv",
+        "row_id": "PRIM-004",
+        "column": "stream_presence",
+        "declared_value": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC"
+      }
+    ],
+    "changed_witness_groups": [
+      {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ],
+          "kind": "markdown_section"
+        },
+        "occurrences": 10
+      },
+      {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "field": "required_anatomy",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "kind": "csv_record"
+        },
+        "occurrences": 23
+      },
+      {
+        "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+        "selector": {
+          "field": "interaction_focus_notes",
+          "key_field": "template_id",
+          "key_value": "TPL-DIRECTORY-SEARCH",
+          "kind": "csv_record"
+        },
+        "occurrences": 5
+      },
+      {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "field": "responsive_and_mode_obligations",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "kind": "csv_record"
+        },
+        "occurrences": 3
+      }
+    ],
+    "snapshot_changes": [
+      {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "before": "575D1478893C090E9B367E75C2D14CF645E80EEB67BCE09C2383C08294FA034A",
+        "after": "8AEC225781CBB1389EA15E70895889A9DA306244CD6F8B74F7640D863DDE6318"
+      },
+      {
+        "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+        "before": "62B11BF2EA7BD1F168ECAA01A0DA5914107BA072670328F52C13C0FBDBB5BACB",
+        "after": "2E904E0F4C7019CA696131068567978973961E70CB0889AE954771010C5634CF"
+      },
+      {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "before": "168015A15B51C03CDF1F1532572D7B45C397708651C579C3E1E2025D5EE27097",
+        "after": "AF9645A4658A8B6DC60C846F580DCCD76CC4BB0F5377F65526D7749D1572D27B"
+      }
+    ],
+    "all_source_witnesses": "PASS:18925 source occurrences,4765 unique witness objects independently resolved against the14 pinned source snapshots using a separate selector implementation. Every candidate quote belongs to the exact selected fact; all41 changed quotes equal the complete selected CSV field or DF-01 section after allowed newline/trailing-section normalization. Exactly those41 predecessor occurrences fail quote membership against current frozen sources.",
+    "witnesses_by_source": {
+      "docs/phase-1-foundation/06-canonical-route-inventory.json": 665,
+      "docs/phase-1-ux-architecture/route-room-parity.csv": 420,
+      "docs/phase-1-ui-reference-design/foundation-route-coverage.csv": 315,
+      "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv": 984,
+      "docs/phase-1-ui-reference-design/UI_REFERENCE_DESIGN_CONTRACT.md": 164,
+      "docs/phase-1-ux-architecture/FLOWS.md": 45,
+      "docs/phase-1-ui-reference-design/foundation-flow-coverage.csv": 1335,
+      "docs/phase-1-ux-architecture/UX_ARCHITECTURE.md": 10,
+      "docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md": 11652,
+      "docs/phase-1-ux-architecture/excluded-surfaces.csv": 90,
+      "docs/phase-1-ux-architecture/wayfinding-release-map.csv": 150,
+      "docs/phase-1-ui-reference-design/reference-template-inventory.csv": 400,
+      "docs/phase-1-ui-reference-design/component-primitives.csv": 2633,
+      "docs/phase-1-ui-reference-design/DELIVERY_STREAM_EVIDENCE_MODEL.md": 62
+    },
+    "selector_kinds": {
+      "json_pointer": 665,
+      "csv_record": 6327,
+      "markdown_section": 286,
+      "markdown_table_id": 11647
+    },
+    "copied_timing_process_witnesses": "PASS: zero-based records319,334,864 retain process_source equality with a recorded sources witness. Their copied quotes change identically. All164 timing criteria retain every policy field and future_qa_required truth boundary.",
+    "timing_policy_detail": "319 COV-FLOW-NAVIGATION-SEARCH and864 TPL-DIRECTORY-SEARCH retain TL-NOT-APPLICABLE/no_user_limit_declared/empty obligations.334 COV-FLOW-WORLD-HUD-STREAM retains TL-REMOVABLE-ADJUSTABLE/protection_required_if_user_limit_introduced plus preservation, accessible reauthentication and before-start turn-off/adjustment obligations. No visitor30-minute clock, extension count or absolute-lifetime policy is changed."
+  },
+  "approved_direction_consistency": {
+    "D092": "Frozen22 DECISIONS.md:1377-1397 approves deliberate modal opening over retained current location, visible Close, invoker-focus return, inactive surroundings, semantic static directory without overlay/JavaScript, no automatic homepage gate and preserved content/Book/privacy/stream/World boundaries. It expressly withholds appearance, construction/external writes and B01/Phase1 acceptance.",
+    "source_rows": "Frozen09 FLOWS.md:237-269 DF-01, frozen04 PRIM-004 required_anatomy/responsive_and_mode_obligations and frozen07 TPL-DIRECTORY-SEARCH interaction_focus_notes consistently carry this modal direction. Added modal heading/containment/inactive-background/Close/static fallback source wording does not rewrite assigned stream or profile values.",
+    "earlier_correction3": "Frozen23 proposal:21-25 and frozen24 prior PASS are bounded truthful-gap/held-construction evidence only. They neither validate the unchanged predecessor registry against D-092 sources nor approve this successor. This review does not inherit registry-adoption authority from them."
+  },
+  "existing_verifier": {
+    "path": "scripts/validation/ui_column_authority.py",
+    "sha256": "e4344900d3210167bb8ecaa1fc7387bb927060685f5f0a291f9689ac580a41f4",
+    "frozen_equals_current": true,
+    "execution": "Unmodified pinned ui_column_authority.validate_registry executed against reviewer-frozen14-source-root-v1 containing exact14 pinned source snapshots. Additional DECISIONS.md and temporary candidate-as-canonical file used only for the predecessor-approval rejection probe.",
+    "candidate_artifact_result": "PASS",
+    "source_bound_records": 1146,
+    "fail_closed_probes": {
+      "original_registry": "Stale source snapshot",
+      "stale_pin": "Stale source snapshot",
+      "stale_quote": "Quoted fact not in selected source",
+      "stale_copied_process_source": "Process source must resolve a recorded source",
+      "declared_value_mismatch": "Declared cell mismatch",
+      "missing_record": "Missing target cell authority",
+      "unknown_top_level_field": "Closed schema mismatch",
+      "candidate_under_predecessor_approval": "Stale registry approval"
+    },
+    "no_hidden_weakening": "Current verifier bytes match frozen19. Candidate contains no verifier/code/guard change, no altered selectors/support/rationale/criteria, no source-list removal, no unpinning and no changed target value. Existing closed-schema, exact cell inventory/value checks, quote/source-hash membership, process-source equality and approval hash gate remain operative.",
+    "evidence_lines": "Frozen19:152 quote membership;159 copied process equality;160 future QA truth;202 stale-pin failure;222 target-cell equality;242 exact record inventory;266 approval hash gate;278 review findings gate. Frozen22:345-362 D-063 requires fail-stale and separate acceptance."
+  },
+  "limitations": [
+    "This is a bounded successor source-binding review. It rechecks complete registry source integrity and the33 affected existing records; it does not reopen or independently reapprove all existing product/design/timing policies or every historical rationale.",
+    "Artifact byte/hash/selector/diff validation and verifier negative probes do not establish runtime functionality, accessibility, native DOM/AT/focus/inertness, timing enforcement, security, browser behavior or product readiness.",
+    "No Figma, browser, native prototype, visual appearance, source/control IDs, external-write capability, restore, Presentation path or interaction execution was inspected by this reviewer. Evidence outside the frozen24-input packet cannot inherit this PASS.",
+    "Current D-063 remains bound to the predecessor hash and rejects the candidate as stale registry approval. Canonical adoption and an applicable pinned founder acceptance remain held. This bounded receipt is not the closed-schema acceptance review consumed by validate_approval.",
+    "No application feature, full B01/Phase1 acceptance, publication, account/provider change, paid activation, commit, push or deployment is authorized or claimed."
+  ],
+  "held": {
+    "canonical_adoption": "BLOCKED pending applicable explicit founder authorization and exact successor acceptance binding; current canonical registry preserved",
+    "prototype_construction": "BLOCKED under separate exact-source preparation/external-write gates",
+    "runtime_and_accessibility_proof": "BLOCKED; outside this artifact review",
+    "B01_Phase1_acceptance": "BLOCKED; separate complete evidence, independent reviews and founder acceptance"
+  },
+  "temporary_evidence": {
+    "audit_script": "reviewer-check-v1.py",
+    "audit_script_sha256": "442135ca39ffc8783b3bbba9604d8ce6e3b842f01b5985e57150f7fd8985516e",
+    "audit_results": "reviewer-check-results-v1.json",
+    "audit_results_sha256": "64d8e3cc53756652acd98534b1b68ca17d27f9ec9d74a5a078d5b5e16784b418",
+    "receipt_writer": "reviewer-write-receipt-v1.py",
+    "frozen_source_root": "reviewer-frozen14-source-root-v1"
+  },
+  "actions": {
+    "canonical_files_modified": false,
+    "previous_evidence_modified": false,
+    "candidate_modified": false,
+    "figma_browser_account_application_git_actions": false,
+    "subdelegation": false,
+    "writes_confined_to_research_folder": true
+  },
+  "conclusion": "PASS for the exact frozen D-092 source-binding candidate only, with no actionable findings in that scope. Founder acceptance and canonical adoption remain held; all predecessor evidence stays preserved."
+}

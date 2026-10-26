@@ -175,9 +175,9 @@ if ($null -ne $routes) {
     Assert-True -Condition ([string]$routes.canonicalHost -eq 'https://hengshidesign.com') `
         -PassMessage 'Canonical host matches the approved proposal.' `
         -FailureMessage "Unexpected canonical host: $($routes.canonicalHost)"
-    Assert-True -Condition ($routeEntries.Count -eq 34) `
-        -PassMessage 'Route inventory contains 34 unique routes and patterns.' `
-        -FailureMessage "Expected 34 routes and patterns; found $($routeEntries.Count)."
+    Assert-True -Condition ($routeEntries.Count -eq 35) `
+        -PassMessage 'Route inventory contains 35 unique routes and patterns.' `
+        -FailureMessage "Expected 35 routes and patterns; found $($routeEntries.Count)."
     Assert-True -Condition (@($routeIds | Sort-Object -Unique).Count -eq $routeIds.Count) `
         -PassMessage 'All route IDs are unique.' `
         -FailureMessage 'Duplicate route IDs were found.'

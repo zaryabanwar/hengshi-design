@@ -1,0 +1,44 @@
+{
+  "product": "Hengshi Design v1",
+  "scope": "Native archive preservation and exact payload equality across subsequent read-only navigation/selection/copy only; not a restore test, runtime or initial conversion equivalence proof.",
+  "archives": [
+    {
+      "path": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/after-section-conversion-v1.fig",
+      "bytes": 386775,
+      "sha256": "8ef8eb316d986a30f399045309127dbb602b1be526401fad7daf2904cd47b520",
+      "crc_failure": null
+    },
+    {
+      "path": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/after-section-readonly-reload-v1.fig",
+      "bytes": 386576,
+      "sha256": "f4afafbf6e4a066f67a90279bdcb570c6eb55623892599dc686c996385021159",
+      "crc_failure": null
+    }
+  ],
+  "payload_comparison": [
+    {
+      "entry": "canvas.fig",
+      "identical": false,
+      "before_sha256": "b195a4be02aadca384d09b26d926ff2a7c30f3ea04eb0f99847df86a45805702",
+      "after_sha256": "fe42bd5b0e1d9f8e8e217ce933fa2fd1ea0d8089e9ee8b4a260f50179eac181e"
+    },
+    {
+      "entry": "images/",
+      "identical": true,
+      "before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "entry": "meta.json",
+      "identical": false,
+      "before_sha256": "bde309348bff64094b7d78817fe53024f502c7a221e6c0cc5c9afd33246864dd",
+      "after_sha256": "c3b1877123e01d79382eb1b678a1a1e396db3c75e57635d68002ad6c34e5b88d"
+    },
+    {
+      "entry": "thumbnail.png",
+      "identical": true,
+      "before_sha256": "5870531e3bb3577d3c6a3e413701481a406ca77a7e3dca496cd3cb60b2d0300e",
+      "after_sha256": "5870531e3bb3577d3c6a3e413701481a406ca77a7e3dca496cd3cb60b2d0300e"
+    }
+  ]
+}

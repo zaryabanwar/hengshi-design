@@ -1,0 +1,4293 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "checked_at_utc": "2026-10-08T00:07:23.885706+00:00",
+  "prior_inventory_sha256": "14a962173da1bee387c5b961baf68f2a456645b4b7935381670ad2b7e7d19215",
+  "candidate_lock_sha256": "fa903a8d901357aacf80863524e0e00ae2ece69126daf218256cdd2656b2da4c",
+  "records": [
+    {
+      "name": "@humanfs/types",
+      "version": "0.15.0",
+      "lock_path": "node_modules/@humanfs/types",
+      "metadata_sha256": "1b849aa49814883fc0e70ca461c9faccb675ed1c801e784f1858e75e3b36eec5",
+      "own_files": [
+        {
+          "path": "CHANGELOG.md",
+          "bytes": 6913,
+          "sha256": "b83799ec420f33e6fe9dfcb76a03c77fbcededef4c353a18c4274b7b0a3690fe"
+        },
+        {
+          "path": "package.json",
+          "bytes": 878,
+          "sha256": "1b849aa49814883fc0e70ca461c9faccb675ed1c801e784f1858e75e3b36eec5"
+        },
+        {
+          "path": "README.md",
+          "bytes": 497,
+          "sha256": "e1076e47ea96eef79e05496912ad03a9fa8031e1bf4847aab1a9554aef5cc5c0"
+        },
+        {
+          "path": "src/hfs-types.ts",
+          "bytes": 6682,
+          "sha256": "a3befb11eea960f9285e5122e7df6c428c7b5bf0f0e73713bbbe085c17c2916e"
+        },
+        {
+          "path": "tsconfig.json",
+          "bytes": 271,
+          "sha256": "cf8b7f383f52c63171a58ea307aaa0687d0b4ba3074cb923d3dac46271879a9e"
+        }
+      ],
+      "header_or_readme_hits": [
+        {
+          "path": "package.json",
+          "inspected_prefix_bytes": 878,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 31,
+              "excerpt": "  \"license\": \"Apache-2.0\","
+            }
+          ]
+        },
+        {
+          "path": "README.md",
+          "inspected_prefix_bytes": 497,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 11,
+              "excerpt": "## License"
+            }
+          ]
+        }
+      ],
+      "uninterpreted": []
+    },
+    {
+      "name": "@mediapipe/tasks-vision",
+      "version": "0.10.17",
+      "lock_path": "node_modules/@mediapipe/tasks-vision",
+      "metadata_sha256": "26e7c2c041bf0765b30e9620f4a5ff102234dfbfad249ba827abf1d7b86fba2c",
+      "own_files": [
+        {
+          "path": "package.json",
+          "bytes": 592,
+          "sha256": "26e7c2c041bf0765b30e9620f4a5ff102234dfbfad249ba827abf1d7b86fba2c"
+        },
+        {
+          "path": "README.md",
+          "bytes": 8937,
+          "sha256": "7ba4e6e531c8a158020d545025024ab636e0e54bbcdd01dbc37b618506ef3d2e"
+        },
+        {
+          "path": "vision.d.ts",
+          "bytes": 123365,
+          "sha256": "fc8a3cf4a55f7d1ae3f2efdda84bbeaeea605a92e535ac52b99deed6366917d5"
+        },
+        {
+          "path": "vision_bundle.cjs",
+          "bytes": 139865,
+          "sha256": "761b3147e11992f82a8f76a3fde88984fb42b25009d180f1f7db19814f550e67"
+        },
+        {
+          "path": "vision_bundle.cjs.map",
+          "bytes": 349752,
+          "sha256": "26998b585c80fb9681a6439e3b6b36e8fadbd4a5146220cbebedbb39c437cedc"
+        },
+        {
+          "path": "vision_bundle.mjs",
+          "bytes": 139710,
+          "sha256": "1ada13431ea2a8ed7ea449e6c3595122d43fea2a8a4788056ed7da271469b402"
+        },
+        {
+          "path": "vision_bundle.mjs.map",
+          "bytes": 349751,
+          "sha256": "20ced060885d04d8b2627b89b0c7af7f061d734c18573cbaf3da3dc4490d32e9"
+        },
+        {
+          "path": "wasm/vision_wasm_internal.js",
+          "bytes": 203819,
+          "sha256": "33a4125f825b343d2d9773951a73692f40bee368c9b591af8ff652fd501af90b"
+        },
+        {
+          "path": "wasm/vision_wasm_internal.wasm",
+          "bytes": 9514390,
+          "sha256": "c88cf472dd5cab0a3954b071e5f442102ded3701dcccc987a7a02ee8f54aae85"
+        },
+        {
+          "path": "wasm/vision_wasm_nosimd_internal.js",
+          "bytes": 203672,
+          "sha256": "4e8d07dcf8cbb55b343cd76b7fc30d4303220f049d5529d6412f6f93296726a8"
+        },
+        {
+          "path": "wasm/vision_wasm_nosimd_internal.wasm",
+          "bytes": 9379090,
+          "sha256": "f840f69d7229f89dedaed39c7ac7a52f0964a7cec02d6cb1ac9eff891db86dc2"
+        }
+      ],
+      "header_or_readme_hits": [
+        {
+          "path": "package.json",
+          "inspected_prefix_bytes": 592,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 15,
+              "excerpt": "  \"license\": \"Apache-2.0\","
+            }
+          ]
+        },
+        {
+          "path": "vision.d.ts",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 2,
+              "excerpt": " * Copyright 2022 The MediaPipe Authors."
+            },
+            {
+              "line": 4,
+              "excerpt": " * Licensed under the Apache License, Version 2.0 (the \"License\");"
+            },
+            {
+              "line": 5,
+              "excerpt": " * you may not use this file except in compliance with the License."
+            },
+            {
+              "line": 6,
+              "excerpt": " * You may obtain a copy of the License at"
+            },
+            {
+              "line": 8,
+              "excerpt": " *     http://www.apache.org/licenses/LICENSE-2.0"
+            },
+            {
+              "line": 11,
+              "excerpt": " * distributed under the License is distributed on an \"AS IS\" BASIS,"
+            },
+            {
+              "line": 13,
+              "excerpt": " * See the License for the specific language governing permissions and"
+            },
+            {
+              "line": 14,
+              "excerpt": " * limitations under the License."
+            },
+            {
+              "line": 33,
+              "excerpt": " * Copyright 2023 The MediaPipe Authors."
+            },
+            {
+              "line": 35,
+              "excerpt": " * Licensed under the Apache License, Version 2.0 (the \"License\");"
+            },
+            {
+              "line": 36,
+              "excerpt": " * you may not use this file except in compliance with the License."
+            },
+            {
+              "line": 37,
+              "excerpt": " * You may obtain a copy of the License at"
+            }
+          ]
+        }
+      ],
+      "uninterpreted": [
+        {
+          "path": "vision_bundle.cjs.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "vision_bundle.mjs.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "wasm/vision_wasm_internal.wasm",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "wasm/vision_wasm_nosimd_internal.wasm",
+          "reason": "non-text content not interpreted"
+        }
+      ]
+    },
+    {
+      "name": "@react-three/fiber",
+      "version": "9.8.1",
+      "lock_path": "node_modules/@react-three/fiber",
+      "metadata_sha256": "08cdd95784a1ecaa7a5c8d895d5da659bc23780301b7d6873916c03236cb198b",
+      "own_files": [
+        {
+          "path": "CHANGELOG.md",
+          "bytes": 24678,
+          "sha256": "a17966832b2a20b88416ac7c775b87540c39b8685343b8371819387dd2357e48"
+        },
+        {
+          "path": "dist/declarations/react-reconciler/index.d.ts",
+          "bytes": 44442,
+          "sha256": "b036cb317780ca7c23416822ddb0b6aacd028535cbb2aaa06608e65b7dae19b7"
+        },
+        {
+          "path": "dist/declarations/src/core/configuration.d.ts",
+          "bytes": 4437,
+          "sha256": "d31008a591d9bef9a814e5c3500d720ed3f7bd000361fae24900bee5408813ea"
+        },
+        {
+          "path": "dist/declarations/src/core/events.d.ts",
+          "bytes": 4499,
+          "sha256": "b59446fe272b7659028a4c5a3067a7b34df6ea6108f45e72e9bab484f52535fb"
+        },
+        {
+          "path": "dist/declarations/src/core/hooks.d.ts",
+          "bytes": 3209,
+          "sha256": "43a2f604a60cf7dab25ff67a4e9c663d380e70cfc524a43ac7b9c5bb1856d6ad"
+        },
+        {
+          "path": "dist/declarations/src/core/index.d.ts",
+          "bytes": 1276,
+          "sha256": "8f5b45329794e671de7d7ee32bc90dc30c4a927b3fe7a30b9a9c34fedd482ca3"
+        },
+        {
+          "path": "dist/declarations/src/core/loop.d.ts",
+          "bytes": 1652,
+          "sha256": "a7c064c4e3aa1bef63136072a60c4b6d454ad69590994280985f414c43ab0f40"
+        },
+        {
+          "path": "dist/declarations/src/core/portal.d.ts",
+          "bytes": 497,
+          "sha256": "9a32d50d2ac81e0af091c2c2ddcde9279db45403e115f00a09e27e47d838bd56"
+        },
+        {
+          "path": "dist/declarations/src/core/promise.d.ts",
+          "bytes": 728,
+          "sha256": "678862343b96e55425f4c8446aba201d5af0802d6bcce199a4b15b09ee37b645"
+        },
+        {
+          "path": "dist/declarations/src/core/reconciler.d.ts",
+          "bytes": 2410,
+          "sha256": "9cd805cfed7d8466657a59f125dca1c1f883bb5853ff4c8315270e9a8513aca1"
+        },
+        {
+          "path": "dist/declarations/src/core/root.d.ts",
+          "bytes": 1515,
+          "sha256": "f1a54fa8cb04cf35d92a58e82f61af9dcc43615e7189bd7466da07e11a29058d"
+        },
+        {
+          "path": "dist/declarations/src/core/store.d.ts",
+          "bytes": 5075,
+          "sha256": "c39f6902a707d5a2b1ad5426d9c78bfcc9b7a4ba89da0836f38619895dc63f4a"
+        },
+        {
+          "path": "dist/declarations/src/core/utils.d.ts",
+          "bytes": 10672,
+          "sha256": "833e8ed39c2d7be27388674ad9e283db5c1c9d53958292caa981192695a4c9ab"
+        },
+        {
+          "path": "dist/declarations/src/index.d.ts",
+          "bytes": 246,
+          "sha256": "f79c1fe099cc02410eb23155626162ef6afc89dd5cb838d0e2b78851d4ebfc2f"
+        },
+        {
+          "path": "dist/declarations/src/native/Canvas.d.ts",
+          "bytes": 554,
+          "sha256": "7a9b1483f64ffc2650afb101fef7dc08b2d7d415339d4e7961735de45f610cd6"
+        },
+        {
+          "path": "dist/declarations/src/native/events.d.ts",
+          "bytes": 234,
+          "sha256": "1684c44cbb7c3d192f1070dace8d39c37a13f76d812694e1019d200450c0f70e"
+        },
+        {
+          "path": "dist/declarations/src/native.d.ts",
+          "bytes": 250,
+          "sha256": "bd69675afc5962e4846a1093062c81adcf18103e2ae021648850d46a442aba6f"
+        },
+        {
+          "path": "dist/declarations/src/three-types.d.ts",
+          "bytes": 3084,
+          "sha256": "cfdce8058f1a3e3ee04edb67dee12ef18b9286039869fdad56f7787db2090032"
+        },
+        {
+          "path": "dist/declarations/src/web/Canvas.d.ts",
+          "bytes": 1095,
+          "sha256": "b63b62fc72bf815d0b7418dacd7ccf21e1db691ca2a7074a053cb63ca50cf548"
+        },
+        {
+          "path": "dist/declarations/src/web/events.d.ts",
+          "bytes": 227,
+          "sha256": "755e674268f57f8222cfad790b0b5ea7598ecc1b76f8788eb0478737237c4080"
+        },
+        {
+          "path": "dist/events-21d8cd92.cjs.dev.js",
+          "bytes": 712082,
+          "sha256": "e3224204b56010828c62731eccf7fff33b4a47644c5be21b0206236c5bb1d883"
+        },
+        {
+          "path": "dist/events-9ce18a08.esm.js",
+          "bytes": 710191,
+          "sha256": "0f2563472e4f3c6a4691e01d22358f15db9adeb750c366ab53ed84989ecec755"
+        },
+        {
+          "path": "dist/events-a816cbab.cjs.prod.js",
+          "bytes": 330349,
+          "sha256": "4f1870b17d29bafe9430cc68be86a84f370dd2f79633074c7c3dfad72e613b96"
+        },
+        {
+          "path": "dist/react-three-fiber.cjs.d.ts",
+          "bytes": 291,
+          "sha256": "54dd4f2292f8670afa3a88c4200e112f30c7894c4ed1801e1b5e437623f3d97a"
+        },
+        {
+          "path": "dist/react-three-fiber.cjs.dev.js",
+          "bytes": 8669,
+          "sha256": "d493d6971b3a0f818792717a5967f8058188f5b548759b3a49a635b8fb77c869"
+        },
+        {
+          "path": "dist/react-three-fiber.cjs.js",
+          "bytes": 196,
+          "sha256": "bf96c611db1c41688b33f0b0246756517aff27ed81b74e870b1181e466240ed8"
+        },
+        {
+          "path": "dist/react-three-fiber.cjs.prod.js",
+          "bytes": 8670,
+          "sha256": "4e78448937cdfaa653b5af58b16626c0ba8bd8982d3eb82671ec8d5dd0b7d1a2"
+        },
+        {
+          "path": "dist/react-three-fiber.esm.js",
+          "bytes": 7067,
+          "sha256": "645a69969b695a37e481dcbd880a8d8066d11fc601fd5ca489f32409f9e1f16b"
+        },
+        {
+          "path": "native/dist/react-three-fiber-native.cjs.d.ts",
+          "bytes": 325,
+          "sha256": "cbe58d7d4d9c2c2c6bd4f23ad00e9f7bcff456f6148e63a61c28215a95a87771"
+        },
+        {
+          "path": "native/dist/react-three-fiber-native.cjs.dev.js",
+          "bytes": 18851,
+          "sha256": "a05f145846b15a4a07f07ced97df3ea4e73346c2cf4a5c0f9bd375ef056cbd26"
+        },
+        {
+          "path": "native/dist/react-three-fiber-native.cjs.js",
+          "bytes": 210,
+          "sha256": "71fdc30dc1c77e4b3c3a99e5951bf4d709c15555f18bb5c513178fe550810d60"
+        },
+        {
+          "path": "native/dist/react-three-fiber-native.cjs.prod.js",
+          "bytes": 18852,
+          "sha256": "674f5c6fd635bfc45e4216bcf9e52d5dd1a94bd28eaeb221121867ef265d0deb"
+        },
+        {
+          "path": "native/dist/react-three-fiber-native.esm.js",
+          "bytes": 17314,
+          "sha256": "6dba26f8b99f51bbb89a191c27122e361e80777ad91db118533e9c62d6a4f501"
+        },
+        {
+          "path": "native/package.json",
+          "bytes": 158,
+          "sha256": "fe4fdc1b8eedad64eea50b079d3f30f0e87c5b333a52ff0e1488639061408985"
+        },
+        {
+          "path": "package.json",
+          "bytes": 2205,
+          "sha256": "08cdd95784a1ecaa7a5c8d895d5da659bc23780301b7d6873916c03236cb198b"
+        },
+        {
+          "path": "react-reconciler/constants.d.ts",
+          "bytes": 381,
+          "sha256": "1b019dd9d01f5e8cb636f5c63934f2708f1f9bef7c7d027e9ea49901d16e3341"
+        },
+        {
+          "path": "react-reconciler/constants.js",
+          "bytes": 469,
+          "sha256": "8c5b2abedef00ba2713ed16ab09d2c4ff136b2c345ca3486b0e4e194cf49d578"
+        },
+        {
+          "path": "react-reconciler/index.d.ts",
+          "bytes": 44442,
+          "sha256": "b036cb317780ca7c23416822ddb0b6aacd028535cbb2aaa06608e65b7dae19b7"
+        },
+        {
+          "path": "react-reconciler/index.js",
+          "bytes": 376876,
+          "sha256": "7bbbfdf89d18fde6908b616d6e32bbf2585d40c74bda50935ec976cc9add3d73"
+        },
+        {
+          "path": "readme.md",
+          "bytes": 10080,
+          "sha256": "cd05c6e9895afdcd4e568c35a0a7d6f58dbde43c8c6d38d794af7a09bd35ff71"
+        }
+      ],
+      "header_or_readme_hits": [
+        {
+          "path": "package.json",
+          "inspected_prefix_bytes": 2205,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 13,
+              "excerpt": "  \"license\": \"MIT\","
+            }
+          ]
+        },
+        {
+          "path": "react-reconciler/constants.js",
+          "inspected_prefix_bytes": 469,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 2,
+              "excerpt": " * @license React"
+            },
+            {
+              "line": 5,
+              "excerpt": " * Copyright (c) Meta Platforms, Inc. and affiliates."
+            },
+            {
+              "line": 7,
+              "excerpt": " * This source code is licensed under the MIT license found in the"
+            },
+            {
+              "line": 8,
+              "excerpt": " * LICENSE file in the root directory of this source tree."
+            }
+          ]
+        },
+        {
+          "path": "react-reconciler/index.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 2,
+              "excerpt": " * @license React"
+            },
+            {
+              "line": 5,
+              "excerpt": " * Copyright (c) Meta Platforms, Inc. and affiliates."
+            },
+            {
+              "line": 7,
+              "excerpt": " * This source code is licensed under the MIT license found in the"
+            },
+            {
+              "line": 8,
+              "excerpt": " * LICENSE file in the root directory of this source tree."
+            }
+          ]
+        }
+      ],
+      "uninterpreted": []
+    },
+    {
+      "name": "@rolldown/binding-win32-x64-msvc",
+      "version": "1.2.12",
+      "lock_path": "node_modules/@rolldown/binding-win32-x64-msvc",
+      "metadata_sha256": "9d95cd401cb9fd69e437f82c5fff1de091d49d79c658dc045c6b086e7fc3aa4c",
+      "own_files": [
+        {
+          "path": "package.json",
+          "bytes": 858,
+          "sha256": "9d95cd401cb9fd69e437f82c5fff1de091d49d79c658dc045c6b086e7fc3aa4c"
+        },
+        {
+          "path": "README.md",
+          "bytes": 108,
+          "sha256": "327b514303b86e589a6d6bb831928bb9720678fb72648f81c8c2cdcb2f7a856f"
+        },
+        {
+          "path": "rolldown-binding.win32-x64-msvc.node",
+          "bytes": 21176832,
+          "sha256": "f1c811c0c78a92be8bf81311407fa2d4f440c58371a125c75b50fd4d81a4aeec"
+        }
+      ],
+      "header_or_readme_hits": [
+        {
+          "path": "package.json",
+          "inspected_prefix_bytes": 858,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 21,
+              "excerpt": "  \"license\": \"MIT\","
+            }
+          ]
+        }
+      ],
+      "uninterpreted": [
+        {
+          "path": "rolldown-binding.win32-x64-msvc.node",
+          "reason": "non-text content not interpreted"
+        }
+      ]
+    },
+    {
+      "name": "draco3d",
+      "version": "1.5.7",
+      "lock_path": "node_modules/draco3d",
+      "metadata_sha256": "6ef40efeb553eb7c2794228b52b22af1110b3d1ff4945ac8d5c29955df3a3c55",
+      "own_files": [
+        {
+          "path": "bunny.drc",
+          "bytes": 96018,
+          "sha256": "0cfb7a000e75024d6a02d81549d0609eb8cc45d5ef9a85152f6cdda56b4a48cc"
+        },
+        {
+          "path": "draco3d.js",
+          "bytes": 246,
+          "sha256": "7bb70f3edb3c32a21fbd3ea90d85f6f816a3394061c445ac4e867d23fa2f9dca"
+        },
+        {
+          "path": "draco_decoder.wasm",
+          "bytes": 285948,
+          "sha256": "2516a4e43526d71787bf2f678f951329f7f858f8f15f42d4bc9e370b31a0da3a"
+        },
+        {
+          "path": "draco_decoder_nodejs.js",
+          "bytes": 58763,
+          "sha256": "e8049906ef3f8f75d3456c22a3f31bfdfe5b5b5bd09ccdec613b9e9a49d554d8"
+        },
+        {
+          "path": "draco_encoder.wasm",
+          "bytes": 370188,
+          "sha256": "d2a3ac80c91980d5d321c116454834ff36264825c6d1794cc84e42288f158958"
+        },
+        {
+          "path": "draco_encoder_nodejs.js",
+          "bytes": 49007,
+          "sha256": "8434adecd1446459601763e499be3697546056bca90b286a538ae0483a00845a"
+        },
+        {
+          "path": "draco_minimal_decoder_example.js",
+          "bytes": 1070,
+          "sha256": "8c3c96706bc91c12443b997c620b7552d92b77ee7d2135e95589d4ca5e61323a"
+        },
+        {
+          "path": "draco_minimal_encoder_decoder_example.js",
+          "bytes": 1648,
+          "sha256": "a53dc84b67159c41737d5a6679ab4d43fc75941edee1b8b06e5cecddb1b712b1"
+        },
+        {
+          "path": "draco_minimal_encoder_example.js",
+          "bytes": 1019,
+          "sha256": "84937f6170cde8ac746c44bc87de47f8e0fb7b80d527955e3e17e96eadb90945"
+        },
+        {
+          "path": "draco_nodejs_example.js",
+          "bytes": 6131,
+          "sha256": "cc8c26a913a8513ad5cbd4b3dfd073908d627bb0dec714cbd3c5bb8b3aa49e4a"
+        },
+        {
+          "path": "package.json",
+          "bytes": 558,
+          "sha256": "6ef40efeb553eb7c2794228b52b22af1110b3d1ff4945ac8d5c29955df3a3c55"
+        },
+        {
+          "path": "README.md",
+          "bytes": 2579,
+          "sha256": "9cbb26d7e9fda3e172d61ac939c4ff3b8e70bb29638b7421ca938358e57f9cbc"
+        }
+      ],
+      "header_or_readme_hits": [
+        {
+          "path": "draco_nodejs_example.js",
+          "inspected_prefix_bytes": 6131,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 1,
+              "excerpt": "// Copyright 2017 The Draco Authors."
+            },
+            {
+              "line": 3,
+              "excerpt": "// Licensed under the Apache License, Version 2.0 (the \"License\");"
+            },
+            {
+              "line": 4,
+              "excerpt": "// you may not use this file except in compliance with the License."
+            },
+            {
+              "line": 5,
+              "excerpt": "// You may obtain a copy of the License at"
+            },
+            {
+              "line": 7,
+              "excerpt": "//      http://www.apache.org/licenses/LICENSE-2.0"
+            },
+            {
+              "line": 10,
+              "excerpt": "// distributed under the License is distributed on an \"AS IS\" BASIS,"
+            },
+            {
+              "line": 12,
+              "excerpt": "// See the License for the specific language governing permissions and"
+            },
+            {
+              "line": 13,
+              "excerpt": "// limitations under the License."
+            }
+          ]
+        },
+        {
+          "path": "package.json",
+          "inspected_prefix_bytes": 558,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 16,
+              "excerpt": "  \"license\": \"Apache-2.0\","
+            }
+          ]
+        }
+      ],
+      "uninterpreted": [
+        {
+          "path": "bunny.drc",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "draco_decoder.wasm",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "draco_encoder.wasm",
+          "reason": "non-text content not interpreted"
+        }
+      ]
+    },
+    {
+      "name": "esrecurse",
+      "version": "4.3.0",
+      "lock_path": "node_modules/esrecurse",
+      "metadata_sha256": "3bc67cb54672ec6957b53947613c23599371bf9222dbbe97275d20516a561a20",
+      "own_files": [
+        {
+          "path": ".babelrc",
+          "bytes": 30,
+          "sha256": "9b5fa5ccf91f15404f266f8595c85a005814efdecc3fd7c584630e6667fb5597"
+        },
+        {
+          "path": "esrecurse.js",
+          "bytes": 4230,
+          "sha256": "aa99847033c240a621fe987f0e06b754f388f22abd11a05bdf9cdd00794b7350"
+        },
+        {
+          "path": "gulpfile.babel.js",
+          "bytes": 3000,
+          "sha256": "fb47567884ee5dddc084a93db85d940f0874dbb4a1863820c6c317a3a83e62b1"
+        },
+        {
+          "path": "package.json",
+          "bytes": 1165,
+          "sha256": "3bc67cb54672ec6957b53947613c23599371bf9222dbbe97275d20516a561a20"
+        },
+        {
+          "path": "README.md",
+          "bytes": 5102,
+          "sha256": "a7007c78c9d9da690ef6cdb0e7a3427d05832edb00abd1f5a9882700d73be4ad"
+        }
+      ],
+      "header_or_readme_hits": [
+        {
+          "path": "esrecurse.js",
+          "inspected_prefix_bytes": 4230,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 2,
+              "excerpt": "  Copyright (C) 2014 Yusuke Suzuki <utatane.tea@gmail.com>"
+            },
+            {
+              "line": 4,
+              "excerpt": "  Redistribution and use in source and binary forms, with or without"
+            },
+            {
+              "line": 7,
+              "excerpt": "    * Redistributions of source code must retain the above copyright"
+            },
+            {
+              "line": 9,
+              "excerpt": "    * Redistributions in binary form must reproduce the above copyright"
+            },
+            {
+              "line": 13,
+              "excerpt": "  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\""
+            },
+            {
+              "line": 16,
+              "excerpt": "  ARE DISCLAIMED. IN NO EVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY"
+            }
+          ]
+        },
+        {
+          "path": "gulpfile.babel.js",
+          "inspected_prefix_bytes": 3000,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 1,
+              "excerpt": "// Copyright (C) 2014 Yusuke Suzuki <utatane.tea@gmail.com>"
+            },
+            {
+              "line": 3,
+              "excerpt": "// Redistribution and use in source and binary forms, with or without"
+            },
+            {
+              "line": 6,
+              "excerpt": "//   * Redistributions of source code must retain the above copyright"
+            },
+            {
+              "line": 8,
+              "excerpt": "//   * Redistributions in binary form must reproduce the above copyright"
+            },
+            {
+              "line": 12,
+              "excerpt": "// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\""
+            },
+            {
+              "line": 15,
+              "excerpt": "// ARE DISCLAIMED. IN NO EVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY"
+            }
+          ]
+        },
+        {
+          "path": "package.json",
+          "inspected_prefix_bytes": 1165,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 41,
+              "excerpt": "  \"license\": \"BSD-2-Clause\","
+            }
+          ]
+        },
+        {
+          "path": "README.md",
+          "inspected_prefix_bytes": 5102,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 147,
+              "excerpt": "### License"
+            },
+            {
+              "line": 149,
+              "excerpt": "Copyright (C) 2014 [Yusuke Suzuki](https://github.com/Constellation)"
+            },
+            {
+              "line": 152,
+              "excerpt": "Redistribution and use in source and binary forms, with or without"
+            },
+            {
+              "line": 155,
+              "excerpt": "  * Redistributions of source code must retain the above copyright"
+            },
+            {
+              "line": 158,
+              "excerpt": "  * Redistributions in binary form must reproduce the above copyright"
+            },
+            {
+              "line": 162,
+              "excerpt": "THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\""
+            },
+            {
+              "line": 165,
+              "excerpt": "ARE DISCLAIMED. IN NO EVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY"
+            }
+          ]
+        }
+      ],
+      "uninterpreted": [
+        {
+          "path": ".babelrc",
+          "reason": "non-text content not interpreted"
+        }
+      ]
+    },
+    {
+      "name": "gsap",
+      "version": "3.15.0",
+      "lock_path": "node_modules/gsap",
+      "metadata_sha256": "85cc13e31f7a3cd124b587a40f545f265f47d0dfb9a556bb122d70fc0fca3459",
+      "own_files": [
+        {
+          "path": "all.js",
+          "bytes": 1503,
+          "sha256": "4a95a34c57663c4eb972968a5e535dd7d5abe8acdd5a2b45a57826778172e715"
+        },
+        {
+          "path": "CSSPlugin.js",
+          "bytes": 65156,
+          "sha256": "41d061e8b0a2ddfdb647f8f85da690ec6d19194403021acca7088926105fe6bd"
+        },
+        {
+          "path": "CSSRulePlugin.js",
+          "bytes": 3469,
+          "sha256": "a8c3b8298ea2ec4f8302dcd0c7a1a1452fbd73aebab869485332d8a84c3ebe5b"
+        },
+        {
+          "path": "CustomBounce.js",
+          "bytes": 4372,
+          "sha256": "c995a44afd897935d989eceaba6a8c6c91ddbbf9199b0126e3495b72c5344222"
+        },
+        {
+          "path": "CustomEase.js",
+          "bytes": 11367,
+          "sha256": "7e1413b85f7ef9ba686b6b3f6e520183b6ae452663170b3b2850a7d78e81fb44"
+        },
+        {
+          "path": "CustomWiggle.js",
+          "bytes": 4567,
+          "sha256": "858bce598b9b54a1a0eb3d0dd9f2cda8e77cf3d998eeba838647eb0bfcf175a1"
+        },
+        {
+          "path": "dist/all.js",
+          "bytes": 808273,
+          "sha256": "cf0a1a9dded0ac5f5caa64208af0cec045a0f2ef79e6bfd47967eaf6f707b421"
+        },
+        {
+          "path": "dist/CSSRulePlugin.js",
+          "bytes": 3318,
+          "sha256": "b0cfb82071bf042eda31f59d37554b44c12a3b5b8f0ab90ff184414d315f153a"
+        },
+        {
+          "path": "dist/CSSRulePlugin.min.js",
+          "bytes": 1731,
+          "sha256": "36062a2d5187a17560eb60219dce5e893e71edc7d2a2296f6c05f383e303a09a"
+        },
+        {
+          "path": "dist/CSSRulePlugin.min.js.map",
+          "bytes": 5396,
+          "sha256": "577cb8734a4beea896462fb5c891df4b9d76ff1979616ab87d50ac8b7fe9201b"
+        },
+        {
+          "path": "dist/CustomBounce.js",
+          "bytes": 4461,
+          "sha256": "b1b8841ecba537d8461b96b818dfa794f8c6d18b95f01c2491840152b6d031c8"
+        },
+        {
+          "path": "dist/CustomBounce.min.js",
+          "bytes": 2068,
+          "sha256": "e6c138934bbf4c25a0bfdba616aa6114da2641f86c9ee1fffdbf6b6f57ff0608"
+        },
+        {
+          "path": "dist/CustomBounce.min.js.map",
+          "bytes": 7510,
+          "sha256": "066c0f23f0398563bfeb3b0863768c04c004399909102e0f9f50c2f06c3f5de9"
+        },
+        {
+          "path": "dist/CustomEase.js",
+          "bytes": 18658,
+          "sha256": "1e6a9b4c3a7e3610c1c9e88812e35a647ba7c93b2f92936db87a0fa691e7e3d9"
+        },
+        {
+          "path": "dist/CustomEase.min.js",
+          "bytes": 7143,
+          "sha256": "466e426a5c60c21c94b15a30a3dffacac9bb39ce8f4e07d071d7d4bb1be43390"
+        },
+        {
+          "path": "dist/CustomEase.min.js.map",
+          "bytes": 78368,
+          "sha256": "81e3c3e9fa4faa94a1ffe6618af28ec92cd879a1379bd6a97fe3c7eebb417ba9"
+        },
+        {
+          "path": "dist/CustomWiggle.js",
+          "bytes": 4504,
+          "sha256": "7fad9b71c7ac4f34cc2f8411eca64f1846b1c9cc6de29f5e73d021e40566a844"
+        },
+        {
+          "path": "dist/CustomWiggle.min.js",
+          "bytes": 2274,
+          "sha256": "606fa03b6e37dbf4d12c3237a1967c3ed9a016bbd1ac600bbe6621673c7935d6"
+        },
+        {
+          "path": "dist/CustomWiggle.min.js.map",
+          "bytes": 7295,
+          "sha256": "afd7853e55426ae6f10d5b9346b480b8a6e595f79c6af83765835ac220a17859"
+        },
+        {
+          "path": "dist/Draggable.js",
+          "bytes": 93156,
+          "sha256": "283193680bc9488e76465b9876c463a680637e73958f45fbfcce8bb5f448bb7c"
+        },
+        {
+          "path": "dist/Draggable.min.js",
+          "bytes": 35762,
+          "sha256": "eb28ff7ac2d320ba24a5c065563fcd8f61f2df9d7574b175b9b30942e5867e8c"
+        },
+        {
+          "path": "dist/Draggable.min.js.map",
+          "bytes": 171908,
+          "sha256": "545bb07fb46b3c71fdad5a8755c90787bc42667ec8adf695ed908537b6c46bcd"
+        },
+        {
+          "path": "dist/DrawSVGPlugin.js",
+          "bytes": 9253,
+          "sha256": "d0fb4b0be473e5d65bd912e9a349b21ff5cbf59d502a4c29bf1c42d695c5a4fa"
+        },
+        {
+          "path": "dist/DrawSVGPlugin.min.js",
+          "bytes": 4351,
+          "sha256": "beb19529f54c1212f1f5117d027be01afda2f363a4926d32aa979bc11140edc1"
+        },
+        {
+          "path": "dist/DrawSVGPlugin.min.js.map",
+          "bytes": 16819,
+          "sha256": "5798353516d4bf25d561389d5254f648035bbd521276362e03b9572092210dec"
+        },
+        {
+          "path": "dist/EaselPlugin.js",
+          "bytes": 9383,
+          "sha256": "9200ae721d1ac2a917cd7fb4162ccbfd507e0756d15f40ee5242b9e70b612047"
+        },
+        {
+          "path": "dist/EaselPlugin.min.js",
+          "bytes": 4826,
+          "sha256": "1e76447233d1f68f3a11e6353326fcf34287f1ec3694f36dfeabbb35f007d771"
+        },
+        {
+          "path": "dist/EaselPlugin.min.js.map",
+          "bytes": 15893,
+          "sha256": "4043ff7a24589ca1c4ae308c879c3a86b019beb2d739aa1fb229af4c283a44c3"
+        },
+        {
+          "path": "dist/EasePack.js",
+          "bytes": 5491,
+          "sha256": "fdf1986352e1d040097edff27b21e977af7ad177a823c54ce7c95d0f16504ce7"
+        },
+        {
+          "path": "dist/EasePack.min.js",
+          "bytes": 2424,
+          "sha256": "2505b29f402a33a0978836bf9a640f86505b1cc542f91a1fe733d9437ad123c8"
+        },
+        {
+          "path": "dist/EasePack.min.js.map",
+          "bytes": 8956,
+          "sha256": "df8c21bec0827a4adf6c0671f49db0ef7bf5b093706cee23889ec3239d0eb0c7"
+        },
+        {
+          "path": "dist/Flip.js",
+          "bytes": 54494,
+          "sha256": "3c732c2ab4b5bcaf1b9835b1722376019b743f7641280acc342040623b248d75"
+        },
+        {
+          "path": "dist/Flip.min.js",
+          "bytes": 25534,
+          "sha256": "cbe3ca726350f8d230da38a14ce2384e7772e05a45cee6144dd7fe6dde868c2f"
+        },
+        {
+          "path": "dist/Flip.min.js.map",
+          "bytes": 98106,
+          "sha256": "851068c60668b6df11d819e8bc8456c1ab4ca2bc3fb921263a9dcd12211e99a8"
+        },
+        {
+          "path": "dist/gsap.js",
+          "bytes": 179557,
+          "sha256": "01effe0e121c22ba0f885a3f091f3dc6d1f0d445c4fba37dcb298e314eca5cfb"
+        },
+        {
+          "path": "dist/gsap.min.js",
+          "bytes": 72927,
+          "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
+        },
+        {
+          "path": "dist/gsap.min.js.map",
+          "bytes": 345237,
+          "sha256": "e7d2b24254462552bb2acdca4fb31d44184ba57dcd72b8f265513e44e62d5156"
+        },
+        {
+          "path": "dist/GSDevTools.js",
+          "bytes": 146501,
+          "sha256": "39ec9835433e052f1816e9ab2531485c9c05f7aa6f78d7c3e8b86a4b0a6a5c7d"
+        },
+        {
+          "path": "dist/GSDevTools.min.js",
+          "bytes": 62163,
+          "sha256": "65148ab37fe6b22ae17dcdb5802a1bf57add87894baa2ebcd43c1ce6453de8de"
+        },
+        {
+          "path": "dist/GSDevTools.min.js.map",
+          "bytes": 260969,
+          "sha256": "903533287eeb6da7eb432683052b5937071220b9a8caee63c3805b1ff0f3a6a1"
+        },
+        {
+          "path": "dist/InertiaPlugin.js",
+          "bytes": 19772,
+          "sha256": "8eda4da31f2ecad254eb5765cc1fa818e8e11e157afef528c0c6d61201249832"
+        },
+        {
+          "path": "dist/InertiaPlugin.min.js",
+          "bytes": 7335,
+          "sha256": "5ddbc518fe02e79d66713b8af6fab0b91ee5eb58ef3beaf589b70fdfb824733f"
+        },
+        {
+          "path": "dist/InertiaPlugin.min.js.map",
+          "bytes": 33936,
+          "sha256": "e7470e9e5886f9f840b7caf4e2d8f8b47d6be817f66b7a7d472277662b56f68d"
+        },
+        {
+          "path": "dist/MorphSVGPlugin.js",
+          "bytes": 55989,
+          "sha256": "786b51ffe878fa747bb7e115815d438ec9113bde1303967172c34b129f5472ef"
+        },
+        {
+          "path": "dist/MorphSVGPlugin.min.js",
+          "bytes": 21195,
+          "sha256": "19c891a412240d8521b13330813d9b551ea5b0f707907c365ffecaf1dfa0f5cf"
+        },
+        {
+          "path": "dist/MorphSVGPlugin.min.js.map",
+          "bytes": 131376,
+          "sha256": "242380e5b698f8a80229f7afbd9d4ffbb0ba45c03eebdcc1b06811d744383d5f"
+        },
+        {
+          "path": "dist/MotionPathHelper.js",
+          "bytes": 90914,
+          "sha256": "09f91116791f7557b5858e251e8a89c6717e6db4b8a19f5a22f4918c09a622ac"
+        },
+        {
+          "path": "dist/MotionPathHelper.min.js",
+          "bytes": 44352,
+          "sha256": "3d1a9f63736c643dd825de23c0892136816a59b3ffb47171d112f2c4d6b51d28"
+        },
+        {
+          "path": "dist/MotionPathHelper.min.js.map",
+          "bytes": 197687,
+          "sha256": "71db0915d568000e48e9269fbba79853a0440b982caec061b18e41641a8d69d4"
+        },
+        {
+          "path": "dist/MotionPathPlugin.js",
+          "bytes": 51882,
+          "sha256": "6bea987bdf6c929fb12f6441cd440e55e36adc06b95733cc51795029283b5764"
+        },
+        {
+          "path": "dist/MotionPathPlugin.min.js",
+          "bytes": 22002,
+          "sha256": "ace44a07c6c179f5347d9b46a152d468e4c9f272ee0d68bf0354e00d60000693"
+        },
+        {
+          "path": "dist/MotionPathPlugin.min.js.map",
+          "bytes": 120130,
+          "sha256": "bdca79923b8ce554b2eb7e5354b8635ef33a063ec46af8527c54a5de53d2dd86"
+        },
+        {
+          "path": "dist/Observer.js",
+          "bytes": 24162,
+          "sha256": "072fa780ccd49b764319dd7b0200176a67c702b8537439f5a5d30e5a3d975748"
+        },
+        {
+          "path": "dist/Observer.min.js",
+          "bytes": 10014,
+          "sha256": "5844287373280bd40d7b29251f7772264f615aa6e714e4ff71c75415df02da40"
+        },
+        {
+          "path": "dist/Observer.min.js.map",
+          "bytes": 39353,
+          "sha256": "231dc6b5fe36110e8ef4e793fba5a0497af6f0b4490fc63ac581354dd7e0d24c"
+        },
+        {
+          "path": "dist/Physics2DPlugin.js",
+          "bytes": 4771,
+          "sha256": "9995bec8cf3adecfa23795d9fd21ed55cab2633685b4278f747cab9f5da8422f"
+        },
+        {
+          "path": "dist/Physics2DPlugin.min.js",
+          "bytes": 2243,
+          "sha256": "f41d23011f0b89a66db8dc79aa32e564e82884276ca00b97326130974f5167b9"
+        },
+        {
+          "path": "dist/Physics2DPlugin.min.js.map",
+          "bytes": 8426,
+          "sha256": "ac9d4c1a860f284e2b831ffc2e7ecad1b6c7650cae99a1ce398aae21a1244a69"
+        },
+        {
+          "path": "dist/PhysicsPropsPlugin.js",
+          "bytes": 4503,
+          "sha256": "48b3d1a481988cc240f3eabb61aa97ff88a1a6237d8a251176dbb4446446955e"
+        },
+        {
+          "path": "dist/PhysicsPropsPlugin.min.js",
+          "bytes": 1989,
+          "sha256": "446bd441ecc582da76af13c878e71e4927e52bda189569063dda89721312cc08"
+        },
+        {
+          "path": "dist/PhysicsPropsPlugin.min.js.map",
+          "bytes": 7575,
+          "sha256": "e1773c9d6e3426dd8b7f245649d4fba47d133fb8874c026ffb1eb0c7271c853b"
+        },
+        {
+          "path": "dist/PixiPlugin.js",
+          "bytes": 15281,
+          "sha256": "5d49b494eca6f60927dd88724cbba963e7674b3880fa8ab6e7aca686b7ff8194"
+        },
+        {
+          "path": "dist/PixiPlugin.min.js",
+          "bytes": 6601,
+          "sha256": "d0cc63b16e03c3343b567b54be4b8bea226f4ed4c4d594c271f36acbfd7c803f"
+        },
+        {
+          "path": "dist/PixiPlugin.min.js.map",
+          "bytes": 25873,
+          "sha256": "8111eef35a421b8541088adc4e67b0f7c18ca586292e7a4e6c92a66632ba6872"
+        },
+        {
+          "path": "dist/ScrambleTextPlugin.js",
+          "bytes": 16690,
+          "sha256": "17dceaa4bd5170551e7872b9e184dce6a3ef8fb0c46ea9bde0d66f706ac3af1b"
+        },
+        {
+          "path": "dist/ScrambleTextPlugin.min.js",
+          "bytes": 11687,
+          "sha256": "a2cfaa7223231459dfde37e9385413ee6df065f18121e946ffdde694f8b11f01"
+        },
+        {
+          "path": "dist/ScrambleTextPlugin.min.js.map",
+          "bytes": 25809,
+          "sha256": "3bc7f941b0a8e3b5998ee40185b0e238048f3911394382fbb2ba172a077e365d"
+        },
+        {
+          "path": "dist/ScrollSmoother.js",
+          "bytes": 32406,
+          "sha256": "16d6115259ce5f4a5ae35d4e18b62b4e0c4a9aa080997b154b4b0649cf134042"
+        },
+        {
+          "path": "dist/ScrollSmoother.min.js",
+          "bytes": 13373,
+          "sha256": "1956015299d15f86cd819aa432f9b886b704fd7b3ed408b02d7b63f994aa1504"
+        },
+        {
+          "path": "dist/ScrollSmoother.min.js.map",
+          "bytes": 57437,
+          "sha256": "1f66df6422e5901375bb8825a75e2161426e84457d2f6b2e4f829792b8a9af90"
+        },
+        {
+          "path": "dist/ScrollToPlugin.js",
+          "bytes": 8428,
+          "sha256": "00b87a30a1b76921a6386eef2d8cf22c91588ec85b1ffedbd1582ec29e0c3c59"
+        },
+        {
+          "path": "dist/ScrollToPlugin.min.js",
+          "bytes": 4059,
+          "sha256": "07cfd328e41012ae60b5614c2e58399fc13af8b1aec765febe770d4eb3e62fcd"
+        },
+        {
+          "path": "dist/ScrollToPlugin.min.js.map",
+          "bytes": 14969,
+          "sha256": "0041baae33ba5992c6e38f1e11fae72fa3368fbf6a4e133f49aed4c09814aa1b"
+        },
+        {
+          "path": "dist/ScrollTrigger.js",
+          "bytes": 115504,
+          "sha256": "98e0ab6d6876a62ba3fb8504609cb5647176bb8a1bcb3140bd95793d4ee2548b"
+        },
+        {
+          "path": "dist/ScrollTrigger.min.js",
+          "bytes": 44575,
+          "sha256": "b0b14d67b55b0c43c756ac0b106cfcb09d0879945f6ead64451065b0672916a2"
+        },
+        {
+          "path": "dist/ScrollTrigger.min.js.map",
+          "bytes": 203137,
+          "sha256": "581f87809b7b588e498c20430aa760ba1e4c870dfe8acccf421a1381174c717a"
+        },
+        {
+          "path": "dist/SplitText.js",
+          "bytes": 18034,
+          "sha256": "e25cde4005072ad2be67924d721709b881f7e122d4756ee4d1c2cbaae43e3f41"
+        },
+        {
+          "path": "dist/SplitText.min.js",
+          "bytes": 7732,
+          "sha256": "419f7027a5f086a12cb7988736d8fdd3a6ed2200229661de25b6628ca7ced344"
+        },
+        {
+          "path": "dist/SplitText.min.js.map",
+          "bytes": 29151,
+          "sha256": "5de68d2761939215fbcba3745fe7a1c688b8beb78213546036569b7f5b844a8d"
+        },
+        {
+          "path": "dist/TextPlugin.js",
+          "bytes": 14356,
+          "sha256": "83d479690e25f2d2464c7d7c14db2414c1ec3f5f47c50acee1485aafca33d1bf"
+        },
+        {
+          "path": "dist/TextPlugin.min.js",
+          "bytes": 10570,
+          "sha256": "a24984fa1a33517b4c54c8b25b0bfd7aaf3df9fa7edba661e3bd496a671a2429"
+        },
+        {
+          "path": "dist/TextPlugin.min.js.map",
+          "bytes": 20838,
+          "sha256": "ac1085919afdd048a5aac3982a5bb197704a2889e57a746a9c9531ec06674a3d"
+        },
+        {
+          "path": "Draggable.js",
+          "bytes": 101074,
+          "sha256": "e26a72758a0c5e936cdf4b352aef896f8255953aef0630da6d522947ef2d514d"
+        },
+        {
+          "path": "DrawSVGPlugin.js",
+          "bytes": 10715,
+          "sha256": "d7b09b9bf261b61fc9ee7ae6827bc68c1c4ba10ec94adc18be036329aa1d5833"
+        },
+        {
+          "path": "EaselPlugin.js",
+          "bytes": 8713,
+          "sha256": "dd56b0d93e9bef01d992b21b2c99aa2f50f14347a057e8e9946e0fa930197caa"
+        },
+        {
+          "path": "EasePack.js",
+          "bytes": 5247,
+          "sha256": "0b61c6799b73daba352219ce7aa0f69bc9bcfd6c6c012de097987febc8972367"
+        },
+        {
+          "path": "Flip.js",
+          "bytes": 49106,
+          "sha256": "c4e141a3f9db25ee8a887d618f66e57edb09a3c0fe2dc03ab1965fb2818c59db"
+        },
+        {
+          "path": "gsap-core.js",
+          "bytes": 171676,
+          "sha256": "83c4b6c0b020beba737b90896181560b76747342b0f7baa5ba1b185a75f65b65"
+        },
+        {
+          "path": "GSDevTools.js",
+          "bytes": 62465,
+          "sha256": "7a195041d37cb1ea8d8178a50928e0763e12721fc76257c66173f4b1016cdcd2"
+        },
+        {
+          "path": "index.js",
+          "bytes": 664,
+          "sha256": "070038235ba75ec2186d054ebd83ae94e6de6a971f5d3f3d6cd1037551f94faa"
+        },
+        {
+          "path": "InertiaPlugin.js",
+          "bytes": 16191,
+          "sha256": "c19ab54fa7615a40ba7551d1467f1ff81a9b076a8868c22d4c92643dfeda8c17"
+        },
+        {
+          "path": "MorphSVGPlugin.js",
+          "bytes": 38174,
+          "sha256": "2eee2195d6c65fe04bef728c0a4a309da676e5bfa2379806e232e7368d74654a"
+        },
+        {
+          "path": "MotionPathHelper.js",
+          "bytes": 11817,
+          "sha256": "9aa33565abe3c44a3b2d05790b04268a2bbccfec96079be16074063a412f6e33"
+        },
+        {
+          "path": "MotionPathPlugin.js",
+          "bytes": 12485,
+          "sha256": "88ed0ea8cf44be3d03811c15fe0f9c2210f5c8932b6c10ab66c66fcf62cb8304"
+        },
+        {
+          "path": "Observer.js",
+          "bytes": 26275,
+          "sha256": "271290a56877bd331a35c214e0c172419e69a7852b6d3738cdda935a5715b557"
+        },
+        {
+          "path": "package.json",
+          "bytes": 2550,
+          "sha256": "85cc13e31f7a3cd124b587a40f545f265f47d0dfb9a556bb122d70fc0fca3459"
+        },
+        {
+          "path": "Physics2DPlugin.js",
+          "bytes": 4950,
+          "sha256": "887b56de17d54f0339e982240755dc31a08895b9f96c12ebf9c335b532112710"
+        },
+        {
+          "path": "PhysicsPropsPlugin.js",
+          "bytes": 4825,
+          "sha256": "373e399dfef548e1dbf9f781c2763281d8bde48b5caed9c4f908806067e8031a"
+        },
+        {
+          "path": "PixiPlugin.js",
+          "bytes": 15319,
+          "sha256": "19c11146d65a05121d72aaf94d5616864398e599b1cd0dc8fb750e2042f82b7f"
+        },
+        {
+          "path": "README.md",
+          "bytes": 6199,
+          "sha256": "66a79667b0538b19634b5a000a9a3debe588c98d390424e73e5d4de847270828"
+        },
+        {
+          "path": "ScrambleTextPlugin.js",
+          "bytes": 8392,
+          "sha256": "2241fa7e9de77ed529df4887f02c59f9fb5a4fa45cab07cac9cc3157675130f0"
+        },
+        {
+          "path": "ScrollSmoother.js",
+          "bytes": 40957,
+          "sha256": "374ac1476bd56222cda5693020bc029c3cf7d1fe70ddf9802fbc20c92f8c6f24"
+        },
+        {
+          "path": "ScrollToPlugin.js",
+          "bytes": 9111,
+          "sha256": "a14e7211c2e4469952615368e3869f8f2b736bd6f8283c6f0b29ee262eed6970"
+        },
+        {
+          "path": "ScrollTrigger.js",
+          "bytes": 112578,
+          "sha256": "f7fb324357512127da10d304ef1b0bf39ff7b141f5ef5058cf1d360df9e25e27"
+        },
+        {
+          "path": "SECURITY.md",
+          "bytes": 274,
+          "sha256": "5f847cb9f6362062af4e3361bcccf7d2e5e19479dd7db9315b2177372d25b8be"
+        },
+        {
+          "path": "SplitText.js",
+          "bytes": 17263,
+          "sha256": "0ce8224a11eb959d434dd02f4354dd7df57a283217d2d20ec76192c25ff9ab89"
+        },
+        {
+          "path": "src/all.js",
+          "bytes": 1505,
+          "sha256": "4c526a2636c2c991ea34c1571c92601c661ceb5f9e15fa367e927ab37da72cca"
+        },
+        {
+          "path": "src/CSSPlugin.js",
+          "bytes": 59818,
+          "sha256": "8e141f02d26f00f0d3259aa480e3eddff55ad25e0363272321b883602af1f824"
+        },
+        {
+          "path": "src/CSSRulePlugin.js",
+          "bytes": 3055,
+          "sha256": "66d4a0262550f34913699b8d3fef6cf3760e0bf04b77f8f0de36381fc12d2d5e"
+        },
+        {
+          "path": "src/CustomBounce.js",
+          "bytes": 3939,
+          "sha256": "c70c9b27a3028fb39f9e0d94d77a9f5aff99969a4b922a8ec8102208dfd646a8"
+        },
+        {
+          "path": "src/CustomEase.js",
+          "bytes": 9988,
+          "sha256": "5770e157b384d4a1ec3c4354a1964cce0606edc0acc2a64e33a1cebf584f9674"
+        },
+        {
+          "path": "src/CustomWiggle.js",
+          "bytes": 4043,
+          "sha256": "3b8120cdfd50a6ff4370df94d830ff638a4882ff115dd7c531fe790d3bfd7235"
+        },
+        {
+          "path": "src/Draggable.js",
+          "bytes": 90405,
+          "sha256": "13f6afa462028ba8f3964b935743a821d8f6038e858119938afc3b52a05752ed"
+        },
+        {
+          "path": "src/DrawSVGPlugin.js",
+          "bytes": 9629,
+          "sha256": "9c53480063f3be9ac2d991849a8bf2cde032dd79f59737d252e48d9549b1edbd"
+        },
+        {
+          "path": "src/EaselPlugin.js",
+          "bytes": 7948,
+          "sha256": "7b1cc7030522fd0553c32200da16f88c2afdb05e499f906f638d1091fd193c86"
+        },
+        {
+          "path": "src/EasePack.js",
+          "bytes": 4711,
+          "sha256": "101c4e1512d88cd2d8f60e102dbcdf9c57a68a0a8a3cca4dc98b2f7108b8b002"
+        },
+        {
+          "path": "src/Flip.js",
+          "bytes": 41015,
+          "sha256": "02d87b469498badf49957f4e8ad0d1b5eb9689742cb4bdb06e2c7dc53554d918"
+        },
+        {
+          "path": "src/gsap-core.js",
+          "bytes": 151046,
+          "sha256": "8063816e0e7c3e6c07970fb06feafb06146fd266db5d8346419176b3d496e284"
+        },
+        {
+          "path": "src/GSDevTools.js",
+          "bytes": 58359,
+          "sha256": "bcad090acf9b4a16bc186031ba5ba481f59723f6f09173699466c9eede2de8ed"
+        },
+        {
+          "path": "src/index.js",
+          "bytes": 690,
+          "sha256": "42762da509bffc6d759e694ccbd88e8451c031835592f915dc86bb0b14e9406a"
+        },
+        {
+          "path": "src/InertiaPlugin.js",
+          "bytes": 14341,
+          "sha256": "278bf08bb649eda49e1da22167915de36ebb6a1fcc7fec2c3a4dc1adaaf9a7f2"
+        },
+        {
+          "path": "src/MorphSVGPlugin.js",
+          "bytes": 34159,
+          "sha256": "ed1a050ea542e5f7918b079f1a9d7094baa7ca2eef4a03c9700fc975f330859b"
+        },
+        {
+          "path": "src/MotionPathHelper.js",
+          "bytes": 10212,
+          "sha256": "f6cf4c8972e062cdb015b92427b256cb5bb98cb40e4ab798b05421ff8a6329dc"
+        },
+        {
+          "path": "src/MotionPathPlugin.js",
+          "bytes": 10890,
+          "sha256": "ef4042c7a7629d9737ca213d0e145c9de66127f022a9112f9b7815f63aab2081"
+        },
+        {
+          "path": "src/Observer.js",
+          "bytes": 21875,
+          "sha256": "43b6c65e66d24be74f10bf54c8a6171351e81d39cdfcc99c554ca9aaa3c940d7"
+        },
+        {
+          "path": "src/Physics2DPlugin.js",
+          "bytes": 4293,
+          "sha256": "40e075e41e9ca771424ed85509b63c12b69740d0dfde99359fe5004486505284"
+        },
+        {
+          "path": "src/PhysicsPropsPlugin.js",
+          "bytes": 4113,
+          "sha256": "8f927d565bffebbf58044d3d4cbdf17649376087404a70518842ef960d2fceff"
+        },
+        {
+          "path": "src/PixiPlugin.js",
+          "bytes": 13745,
+          "sha256": "ad66b69295d5e1a44afc545ff53b2003b646e951c62a3b3b621e66953df09189"
+        },
+        {
+          "path": "src/ScrambleTextPlugin.js",
+          "bytes": 7182,
+          "sha256": "9e6f74e5ca3d1412a777268c411e59f925067ce7da807f9135bed87555bc9385"
+        },
+        {
+          "path": "src/ScrollSmoother.js",
+          "bytes": 34904,
+          "sha256": "201415c385ae0fa063c13ebebb4315e3ef7556b94382f24e52a5486268c465ff"
+        },
+        {
+          "path": "src/ScrollToPlugin.js",
+          "bytes": 8113,
+          "sha256": "41a030ed3fd7d3f3e5e42a6e854f35b976c83eb9dc3494cf20e7220158a920dc"
+        },
+        {
+          "path": "src/ScrollTrigger.js",
+          "bytes": 100306,
+          "sha256": "ccdc8591b7ff86370570c4d236a54ff9810b21a8c0b29f2d3b5391bb7ee44ad5"
+        },
+        {
+          "path": "src/SplitText.js",
+          "bytes": 17263,
+          "sha256": "0ce8224a11eb959d434dd02f4354dd7df57a283217d2d20ec76192c25ff9ab89"
+        },
+        {
+          "path": "src/SplitText.ts",
+          "bytes": 25031,
+          "sha256": "bcf0035d4f2002822098086564c39cb4b6e5d13ab2920d95aadacb747aec3b3d"
+        },
+        {
+          "path": "src/TextPlugin.js",
+          "bytes": 3936,
+          "sha256": "c38bd69df3dda10136a839a222d386a53b3cf359d4e933c41f188266c41d57ee"
+        },
+        {
+          "path": "src/utils/matrix.js",
+          "bytes": 13713,
+          "sha256": "5117c770801401e993c81aa64fa4f07d04edeaaf43d3acefe2148a73843c3ebc"
+        },
+        {
+          "path": "src/utils/PathEditor.js",
+          "bytes": 48399,
+          "sha256": "fdad197b80f038ee0dff67e7a40f6ecac6b27d183d9ec686f62ec283c588db62"
+        },
+        {
+          "path": "src/utils/paths.js",
+          "bytes": 49315,
+          "sha256": "37a33aa0685b114dd21562c7ec348095abaf7be022103b481947a011c1eb42fb"
+        },
+        {
+          "path": "src/utils/strings.js",
+          "bytes": 10263,
+          "sha256": "3b7faf52361f18784dd2e0586865c1453c875063a5d3392763c8ce5249753e58"
+        },
+        {
+          "path": "src/utils/VelocityTracker.js",
+          "bytes": 5532,
+          "sha256": "87c6a37b8f695d82968063b0b1bf00490a44b97476a4e505398d03054978f60d"
+        },
+        {
+          "path": "TextPlugin.js",
+          "bytes": 4660,
+          "sha256": "5e0416e143f3e1ea5861ce54d76c1c30384dc2386b02d48e924d95af6100bfd2"
+        },
+        {
+          "path": "types/animation.d.ts",
+          "bytes": 18219,
+          "sha256": "0e98bdca6b2f656ff783eccb891ad5b18b5e39d36a231b94bb407f46185a035f"
+        },
+        {
+          "path": "types/css-plugin.d.ts",
+          "bytes": 16896,
+          "sha256": "033cc8d0cf4529bc62746a9a026e43454f06f86d560b533e2726e677caf43c5f"
+        },
+        {
+          "path": "types/css-rule-plugin.d.ts",
+          "bytes": 1983,
+          "sha256": "56ed2fc77c5587ed572b52c0c679ab284a84254875628d39d63a1ad84aa47993"
+        },
+        {
+          "path": "types/custom-bounce.d.ts",
+          "bytes": 948,
+          "sha256": "2b8241ee9d522539245316c7d9efba3a7f7fb67e89edb6b8375841c5204323c1"
+        },
+        {
+          "path": "types/custom-ease.d.ts",
+          "bytes": 1377,
+          "sha256": "6dc855128df7aa80c5d937b26d853ec76375b9be022c8476735a82bcb205b582"
+        },
+        {
+          "path": "types/custom-wiggle.d.ts",
+          "bytes": 1003,
+          "sha256": "2e38adf1d08fed1932323468c084f22f3b0ff96da903c213a52dce96e7c5314c"
+        },
+        {
+          "path": "types/Draggable.d.ts",
+          "bytes": 12410,
+          "sha256": "da04a353ae1f194880392596c1c65bd16039d7cb7d8c95394c8cc833bbeb5600"
+        },
+        {
+          "path": "types/draw-svg-plugin.d.ts",
+          "bytes": 2336,
+          "sha256": "7f0b457714a6a7dc40d51506cf9e5ab38aec893d78d10dc853d51e4ece6c8a86"
+        },
+        {
+          "path": "types/ease.d.ts",
+          "bytes": 4269,
+          "sha256": "42dc1c1fb9a082bfc981edb18b50e12f7fda5009a15468ef6e6f939e86300fbd"
+        },
+        {
+          "path": "types/easel-plugin.d.ts",
+          "bytes": 1461,
+          "sha256": "4b36ac8539e453915ead7ddf25653d6a7691e6dac52003372c12244965480df2"
+        },
+        {
+          "path": "types/Flip.d.ts",
+          "bytes": 14909,
+          "sha256": "b98109e756e7e1adf0f305b3f1e9d65a40da0c71ec6d23ffddd9c0ea75cb312a"
+        },
+        {
+          "path": "types/gs-dev-tools.d.ts",
+          "bytes": 2504,
+          "sha256": "b3bee285d6a28772aba2633b6bcd9cd53a517f7a4862cf7893197222e73cfddc"
+        },
+        {
+          "path": "types/gsap-core.d.ts",
+          "bytes": 20490,
+          "sha256": "f699d663c17e6bad3d2860b6e03a09c79afc248d159e6f1cc1594b2489cc4e89"
+        },
+        {
+          "path": "types/gsap-plugins.d.ts",
+          "bytes": 2678,
+          "sha256": "122c612162cb2e09d70ebdd670941441e902a26ee79b37f006c5b9d38868ed32"
+        },
+        {
+          "path": "types/gsap-utils.d.ts",
+          "bytes": 17238,
+          "sha256": "28d03f63a7a5931c8225059693c41a102b52b8e39ca2a034bca11df726d06fda"
+        },
+        {
+          "path": "types/index.d.ts",
+          "bytes": 3819,
+          "sha256": "baace3d380a208ebd640bdfdb70748ca60fbaead011b4a92900abf334188f6cd"
+        },
+        {
+          "path": "types/inertia-plugin.d.ts",
+          "bytes": 2779,
+          "sha256": "f98e2b5fcf96686f2432d1823f195a2ad443762006d7fbda7b4d8d25efd0e384"
+        },
+        {
+          "path": "types/morph-svg-plugin.d.ts",
+          "bytes": 4551,
+          "sha256": "d3f5b5ecd76cd87ee280a5e72e69f941481e62f12430db4f27aa885c3addfdc7"
+        },
+        {
+          "path": "types/motion-path-helper.d.ts",
+          "bytes": 3263,
+          "sha256": "5dabdd06cdb220b33a81312a965f8cab510044ccc522dfac4704baf7ae8aaa79"
+        },
+        {
+          "path": "types/motion-path-plugin.d.ts",
+          "bytes": 10329,
+          "sha256": "598710556d7994badb8c5c72d65a602121488d233b70e1c1318faf476a3a76d6"
+        },
+        {
+          "path": "types/Observer.d.ts",
+          "bytes": 5403,
+          "sha256": "29c8673e8a6fe0116035c345438591056032a76cad5744c81b5feb039d26789a"
+        },
+        {
+          "path": "types/physics-2d-plugin.d.ts",
+          "bytes": 1834,
+          "sha256": "9569b7fdc41e43e971cdd193685b085d682a3f2c7243c9a41360521cb21265fa"
+        },
+        {
+          "path": "types/physics-props-plugin.d.ts",
+          "bytes": 1860,
+          "sha256": "a66a81b1b7e9582442c41807d62a7baee789e65a8ce6951e6a0b2553a94859a1"
+        },
+        {
+          "path": "types/pixi-plugin.d.ts",
+          "bytes": 3385,
+          "sha256": "f4a2170e218a95ea4352470799614733e6ac9576e9f2d10b57a986dc26763936"
+        },
+        {
+          "path": "types/scramble-text-plugin.d.ts",
+          "bytes": 1924,
+          "sha256": "1eb62bccdb763ded6f74a2ccd5eb939e3d63fc2a25677409d9c45bd982dec75e"
+        },
+        {
+          "path": "types/scroll-smoother.d.ts",
+          "bytes": 11828,
+          "sha256": "8f54dfac75c73a9e55bb938d2dab1b48fb6fa8fc677dc7a21c3f90e92dae38b0"
+        },
+        {
+          "path": "types/scroll-to-plugin.d.ts",
+          "bytes": 2792,
+          "sha256": "4bcb4739ebaa38c7c8bb85a5b40971ab83809c6f1f217e4d26c4418d9b9b07ad"
+        },
+        {
+          "path": "types/scroll-trigger.d.ts",
+          "bytes": 27225,
+          "sha256": "f4f9f2b412304f6a4664dd395380965e704a66d10490ac990c398691e7c69823"
+        },
+        {
+          "path": "types/split-text.d.ts",
+          "bytes": 3158,
+          "sha256": "d48c79e8502a2fb6274d2f41e12fbf5e3c51e53e770994af88b42bf0c53333f0"
+        },
+        {
+          "path": "types/text-plugin.d.ts",
+          "bytes": 1613,
+          "sha256": "3bac8c62839badb7cf43d2a507d8df73e61a5313bb6bf0eb0e373b51b1d94e1b"
+        },
+        {
+          "path": "types/timeline.d.ts",
+          "bytes": 17005,
+          "sha256": "5d94554e80c2392a2b51be4baad4619268158eccb18d23e5d7107849bc409485"
+        },
+        {
+          "path": "types/tween.d.ts",
+          "bytes": 7717,
+          "sha256": "ceb1a78b91d40a8cef51b498546780d8842cd42811597af2c5584fa68defe048"
+        },
+        {
+          "path": "types/utils/VelocityTracker.d.ts",
+          "bytes": 1785,
+          "sha256": "07cc2729a92e8293f16fa19e56aaeb9f350b4442a24724d358073131222e0bae"
+        },
+        {
+          "path": "utils/matrix.js",
+          "bytes": 15372,
+          "sha256": "a8d0a9a32fa5e1855db0db64ea191f999223ab8a3b7a4f286c349e35447c5052"
+        },
+        {
+          "path": "utils/PathEditor.js",
+          "bytes": 54966,
+          "sha256": "cb9ca90b048654c7b84c7ceaa59cd5a91189638c8fa91bed6bbd0d527d0c574f"
+        },
+        {
+          "path": "utils/paths.js",
+          "bytes": 53069,
+          "sha256": "1edf5fc9ea8238207bca333a0a66984e39f71b7eb6030851f7a2fbf0357eb701"
+        },
+        {
+          "path": "utils/strings.js",
+          "bytes": 10428,
+          "sha256": "a635df68a0de168394e8d4f2950b71f1bb9e0dd0e4522b827fca4c8362b4df1f"
+        },
+        {
+          "path": "utils/VelocityTracker.js",
+          "bytes": 6570,
+          "sha256": "1a7271d14a35e894a3937ead3c23a13afbdb09dc5052c9f3959d25d5398fe13f"
+        }
+      ],
+      "header_or_readme_hits": [
+        {
+          "path": "CSSPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "CSSRulePlugin.js",
+          "inspected_prefix_bytes": 3469,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "CustomBounce.js",
+          "inspected_prefix_bytes": 4372,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "CustomEase.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "CustomWiggle.js",
+          "inspected_prefix_bytes": 4567,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "dist/all.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 96,
+              "excerpt": "   * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 97,
+              "excerpt": "   * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "dist/CSSRulePlugin.js",
+          "inspected_prefix_bytes": 3318,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 11,
+              "excerpt": "\t * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 12,
+              "excerpt": "\t * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "dist/CSSRulePlugin.min.js",
+          "inspected_prefix_bytes": 1731,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/CustomBounce.js",
+          "inspected_prefix_bytes": 4461,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 11,
+              "excerpt": "\t * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 12,
+              "excerpt": "\t * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "dist/CustomBounce.min.js",
+          "inspected_prefix_bytes": 2068,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/CustomEase.min.js",
+          "inspected_prefix_bytes": 7143,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/CustomWiggle.js",
+          "inspected_prefix_bytes": 4504,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 11,
+              "excerpt": "\t * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 12,
+              "excerpt": "\t * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "dist/CustomWiggle.min.js",
+          "inspected_prefix_bytes": 2274,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/Draggable.min.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/DrawSVGPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 11,
+              "excerpt": "\t * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 12,
+              "excerpt": "\t * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "dist/DrawSVGPlugin.min.js",
+          "inspected_prefix_bytes": 4351,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/EaselPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 11,
+              "excerpt": "\t * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 12,
+              "excerpt": "\t * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "dist/EaselPlugin.min.js",
+          "inspected_prefix_bytes": 4826,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/EasePack.js",
+          "inspected_prefix_bytes": 5491,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 11,
+              "excerpt": "\t * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 12,
+              "excerpt": "\t * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "dist/EasePack.min.js",
+          "inspected_prefix_bytes": 2424,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/Flip.min.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/gsap.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 25,
+              "excerpt": "   * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 26,
+              "excerpt": "   * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "dist/gsap.min.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/GSDevTools.min.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/InertiaPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 246,
+              "excerpt": "\t * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 247,
+              "excerpt": "\t * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "dist/InertiaPlugin.min.js",
+          "inspected_prefix_bytes": 7335,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/MorphSVGPlugin.min.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/MotionPathHelper.min.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/MotionPathPlugin.min.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/Observer.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 27,
+              "excerpt": "   * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 28,
+              "excerpt": "   * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "dist/Observer.min.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/Physics2DPlugin.js",
+          "inspected_prefix_bytes": 4771,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 11,
+              "excerpt": "\t * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 12,
+              "excerpt": "\t * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "dist/Physics2DPlugin.min.js",
+          "inspected_prefix_bytes": 2243,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/PhysicsPropsPlugin.js",
+          "inspected_prefix_bytes": 4503,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 11,
+              "excerpt": "\t * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 12,
+              "excerpt": "\t * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "dist/PhysicsPropsPlugin.min.js",
+          "inspected_prefix_bytes": 1989,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/PixiPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 11,
+              "excerpt": "\t * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 12,
+              "excerpt": "\t * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "dist/PixiPlugin.min.js",
+          "inspected_prefix_bytes": 6601,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/ScrambleTextPlugin.min.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/ScrollSmoother.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 27,
+              "excerpt": "   * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 28,
+              "excerpt": "   * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "dist/ScrollSmoother.min.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/ScrollToPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 11,
+              "excerpt": "\t * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 12,
+              "excerpt": "\t * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "dist/ScrollToPlugin.min.js",
+          "inspected_prefix_bytes": 4059,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/ScrollTrigger.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 27,
+              "excerpt": "   * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 28,
+              "excerpt": "   * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "dist/ScrollTrigger.min.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/SplitText.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved. Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/SplitText.min.js",
+          "inspected_prefix_bytes": 7732,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved. Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "dist/TextPlugin.min.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "Draggable.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 9,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 10,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "DrawSVGPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "EaselPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "EasePack.js",
+          "inspected_prefix_bytes": 5247,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "Flip.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "gsap-core.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 9,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 10,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "GSDevTools.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "InertiaPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "MorphSVGPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 7,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 8,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "MotionPathHelper.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "MotionPathPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "Observer.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 9,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 10,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "package.json",
+          "inspected_prefix_bytes": 2550,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 66,
+              "excerpt": "    \"license\": \"Standard 'no charge' license: https://gsap.com/standard-license.\","
+            }
+          ]
+        },
+        {
+          "path": "Physics2DPlugin.js",
+          "inspected_prefix_bytes": 4950,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "PhysicsPropsPlugin.js",
+          "inspected_prefix_bytes": 4825,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "PixiPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "README.md",
+          "inspected_prefix_bytes": 6199,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 90,
+              "excerpt": "### License"
+            },
+            {
+              "line": 91,
+              "excerpt": "GreenSock's standard \"no charge\" license can be viewed at <a href=\"https://gsap.com/standard-license\">https://gsap.com/standard-license</a>."
+            },
+            {
+              "line": 93,
+              "excerpt": "Copyright (c) 2008-2026, GreenSock. All rights reserved."
+            }
+          ]
+        },
+        {
+          "path": "ScrambleTextPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "ScrollSmoother.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 9,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 10,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "ScrollToPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "ScrollTrigger.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "SplitText.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved. Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "src/CSSPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/CSSRulePlugin.js",
+          "inspected_prefix_bytes": 3055,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/CustomBounce.js",
+          "inspected_prefix_bytes": 3939,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/CustomEase.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/CustomWiggle.js",
+          "inspected_prefix_bytes": 4043,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/Draggable.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/DrawSVGPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/EaselPlugin.js",
+          "inspected_prefix_bytes": 7948,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/EasePack.js",
+          "inspected_prefix_bytes": 4711,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/Flip.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/gsap-core.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/GSDevTools.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/InertiaPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/MorphSVGPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/MotionPathHelper.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/MotionPathPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/Observer.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/Physics2DPlugin.js",
+          "inspected_prefix_bytes": 4293,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/PhysicsPropsPlugin.js",
+          "inspected_prefix_bytes": 4113,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/PixiPlugin.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/ScrambleTextPlugin.js",
+          "inspected_prefix_bytes": 7182,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/ScrollSmoother.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/ScrollToPlugin.js",
+          "inspected_prefix_bytes": 8113,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/ScrollTrigger.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/SplitText.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2026, GreenSock. All rights reserved. Subject to the terms at https://gsap.com/standard-license."
+            }
+          ]
+        },
+        {
+          "path": "src/SplitText.ts",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/TextPlugin.js",
+          "inspected_prefix_bytes": 3936,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/utils/matrix.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/utils/PathEditor.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/utils/paths.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/utils/strings.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "src/utils/VelocityTracker.js",
+          "inspected_prefix_bytes": 5532,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "TextPlugin.js",
+          "inspected_prefix_bytes": 4660,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * @license Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "utils/matrix.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "utils/PathEditor.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "utils/paths.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "utils/strings.js",
+          "inspected_prefix_bytes": 8192,
+          "prefix_truncated": true,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        },
+        {
+          "path": "utils/VelocityTracker.js",
+          "inspected_prefix_bytes": 6570,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 5,
+              "excerpt": " * Copyright 2008-2026, GreenSock. All rights reserved."
+            },
+            {
+              "line": 6,
+              "excerpt": " * Subject to the terms at https://gsap.com/standard-license"
+            }
+          ]
+        }
+      ],
+      "uninterpreted": [
+        {
+          "path": "dist/CSSRulePlugin.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/CustomBounce.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/CustomEase.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/CustomWiggle.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/Draggable.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/DrawSVGPlugin.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/EaselPlugin.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/EasePack.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/Flip.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/gsap.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/GSDevTools.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/InertiaPlugin.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/MorphSVGPlugin.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/MotionPathHelper.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/MotionPathPlugin.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/Observer.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/Physics2DPlugin.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/PhysicsPropsPlugin.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/PixiPlugin.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/ScrambleTextPlugin.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/ScrollSmoother.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/ScrollToPlugin.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/ScrollTrigger.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/SplitText.min.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/TextPlugin.min.js.map",
+          "reason": "non-text content not interpreted"
+        }
+      ]
+    },
+    {
+      "name": "imurmurhash",
+      "version": "0.1.4",
+      "lock_path": "node_modules/imurmurhash",
+      "metadata_sha256": "aa3b07e7fa3d63aa96e401c3842b8cca1dd3247954baf92377094766e903c185",
+      "own_files": [
+        {
+          "path": "imurmurhash.js",
+          "bytes": 4412,
+          "sha256": "45368bfe11080c4504b7804602015d93873303c5b13d5710af6c42e9abc35b4a"
+        },
+        {
+          "path": "imurmurhash.min.js",
+          "bytes": 1894,
+          "sha256": "ea8490563a229b89f2b779217938f9eb2bcf93dd89de9f7fc5c035632f0934b5"
+        },
+        {
+          "path": "package.json",
+          "bytes": 818,
+          "sha256": "aa3b07e7fa3d63aa96e401c3842b8cca1dd3247954baf92377094766e903c185"
+        },
+        {
+          "path": "README.md",
+          "bytes": 4763,
+          "sha256": "4491517f7deb68d0b2a3bb590e785e276a60f12448447a9650d0bd50161a101c"
+        }
+      ],
+      "header_or_readme_hits": [
+        {
+          "path": "package.json",
+          "inspected_prefix_bytes": 818,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 32,
+              "excerpt": "  \"license\": \"MIT\","
+            }
+          ]
+        },
+        {
+          "path": "README.md",
+          "inspected_prefix_bytes": 4763,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 103,
+              "excerpt": "License (MIT)"
+            },
+            {
+              "line": 105,
+              "excerpt": "Copyright (c) 2013 Gary Court, Jens Taylor"
+            },
+            {
+              "line": 107,
+              "excerpt": "Permission is hereby granted, free of charge, to any person obtaining a copy of"
+            },
+            {
+              "line": 110,
+              "excerpt": "use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of"
+            },
+            {
+              "line": 114,
+              "excerpt": "The above copyright notice and this permission notice shall be included in all"
+            },
+            {
+              "line": 120,
+              "excerpt": "COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER"
+            }
+          ]
+        }
+      ],
+      "uninterpreted": []
+    },
+    {
+      "name": "maath",
+      "version": "0.10.8",
+      "lock_path": "node_modules/maath",
+      "metadata_sha256": "a8fd36627cbea15dd5326291e7b6eaf826dd2275114c2a684b4b213a2c899ac2",
+      "own_files": [
+        {
+          "path": "buffer/dist/maath-buffer.cjs.d.ts",
+          "bytes": 52,
+          "sha256": "fa3cdb9afdd0d52dd8d0d8c0189236b59ae16bfcf836d15293e51d8283463ccd"
+        },
+        {
+          "path": "buffer/dist/maath-buffer.cjs.dev.js",
+          "bytes": 1043,
+          "sha256": "851144585ca2f470b0cfc2c8d0e78b51078ca3c8df60591518c2a096dd4ee3c6"
+        },
+        {
+          "path": "buffer/dist/maath-buffer.cjs.js",
+          "bytes": 186,
+          "sha256": "d9f2abc9b9aa0a0e6b172293cd3dc33bbdf0f8d69354686219a24e9ed68f698c"
+        },
+        {
+          "path": "buffer/dist/maath-buffer.cjs.prod.js",
+          "bytes": 1051,
+          "sha256": "1be86486c414fad9b43e97c279789f1c4ba1061b20ed0a0d4fcfd5f1e1b2bb86"
+        },
+        {
+          "path": "buffer/dist/maath-buffer.esm.js",
+          "bytes": 531,
+          "sha256": "c6a7bb49e39e27914f8c906afde5ff5e07a246818fe2f4113c678a3de069a45d"
+        },
+        {
+          "path": "buffer/package.json",
+          "bytes": 81,
+          "sha256": "89c802fcf2f231662685878aee2c11e58cba9cf1eb88305f7a75ac99eb700810"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "bytes": 1732,
+          "sha256": "2085ddd4d6f4f1f9b26303cdce332783841d8f6d93061015bbeca51a33fd3dc8"
+        },
+        {
+          "path": "dist/buffer-19702ccb.cjs.prod.js",
+          "bytes": 6757,
+          "sha256": "191442c56dbc27d19fce1d3b92ff0a61983d7c294c8140298c23b17111bef1d0"
+        },
+        {
+          "path": "dist/buffer-59a95d05.esm.js",
+          "bytes": 6397,
+          "sha256": "e19b5140378105a572ae8ca43051fec62332ebc5eb05a757db990a576af25702"
+        },
+        {
+          "path": "dist/buffer-6b4e8456.cjs.dev.js",
+          "bytes": 6752,
+          "sha256": "81e0862d3f43e260e96ead7ca3465dc23eb3baf2ad939c00382724735d42444d"
+        },
+        {
+          "path": "dist/classCallCheck-839aeb3a.cjs.prod.js",
+          "bytes": 221,
+          "sha256": "d2b10885506b66ba1e1bc46e1e785f4748071cb950174625f3063ebcdce554df"
+        },
+        {
+          "path": "dist/classCallCheck-9098b006.esm.js",
+          "bytes": 196,
+          "sha256": "18fcfed158a625d7423922748f4d608160ac4b5b4180cf1af5306dfb2eab7805"
+        },
+        {
+          "path": "dist/classCallCheck-eaf0efc7.cjs.dev.js",
+          "bytes": 221,
+          "sha256": "d2b10885506b66ba1e1bc46e1e785f4748071cb950174625f3063ebcdce554df"
+        },
+        {
+          "path": "dist/declarations/src/buffer.d.ts",
+          "bytes": 2445,
+          "sha256": "4a4bd6e7d53d47340b57bb893ee8fb7259a3176222fd67dca1592a225530ba44"
+        },
+        {
+          "path": "dist/declarations/src/ctypes.d.ts",
+          "bytes": 257,
+          "sha256": "ec1f6879755d6e3d309c8995e9bccb8cec62ca4a1cd98a3dfae619bca5efb814"
+        },
+        {
+          "path": "dist/declarations/src/easing.d.ts",
+          "bytes": 4647,
+          "sha256": "ce0c9e58458cfd313b5d5464782ec425756101feaa508a57d076a624f71d63b2"
+        },
+        {
+          "path": "dist/declarations/src/geometry.d.ts",
+          "bytes": 614,
+          "sha256": "40e0621d52a679ba025f115fd647de8a06839d6269b8d46b3e882b447723869d"
+        },
+        {
+          "path": "dist/declarations/src/index.d.ts",
+          "bytes": 366,
+          "sha256": "df81cb832f859d12b38bdec8c12b18b4ea318b4c34b277e7f6346678a9f7dc88"
+        },
+        {
+          "path": "dist/declarations/src/matrix.d.ts",
+          "bytes": 1038,
+          "sha256": "1df899615031a1213157d2cd55b98b314fcfff73139e7804d96aba5e36b1587e"
+        },
+        {
+          "path": "dist/declarations/src/misc.d.ts",
+          "bytes": 3267,
+          "sha256": "06d8be241f8eec2915c9f8996003eadecb760fef53131024ea6aea9f7ed7b171"
+        },
+        {
+          "path": "dist/declarations/src/random/index.d.ts",
+          "bytes": 2107,
+          "sha256": "b935584d94788fff531e70634c1c5755bd9f6a7c0962c05263102c18aacb8122"
+        },
+        {
+          "path": "dist/declarations/src/random/noise.d.ts",
+          "bytes": 341,
+          "sha256": "078c0d3b41b9a47765cdde7640a8749c5acfc32fd927e24444661e042988e29a"
+        },
+        {
+          "path": "dist/declarations/src/three.d.ts",
+          "bytes": 526,
+          "sha256": "9cb6ef12cadf7ea21377d167793b50318d0727cc16f86a5f98e486eceb0ce40b"
+        },
+        {
+          "path": "dist/declarations/src/triangle.d.ts",
+          "bytes": 2195,
+          "sha256": "94ab1c4afb8d817e80ac2a4544b6c1813017fd95dd1e141df21c715bc1918853"
+        },
+        {
+          "path": "dist/declarations/src/vector2.d.ts",
+          "bytes": 867,
+          "sha256": "1a27c528d85fae9f56a4429f8795c9845aa3e19db0524f292c3ec14a4ab2e9d7"
+        },
+        {
+          "path": "dist/declarations/src/vector3.d.ts",
+          "bytes": 927,
+          "sha256": "04ae7ec8319cc0f4016929ca588dd1232ace850dcaa66bdde5cf1cd837a0317d"
+        },
+        {
+          "path": "dist/easing-0f4db1c0.esm.js",
+          "bytes": 13147,
+          "sha256": "bd5a967021588fd1977049a98aac328252471cea131bd4b1d7edfcdf060c4b95"
+        },
+        {
+          "path": "dist/easing-104c3902.cjs.dev.js",
+          "bytes": 13519,
+          "sha256": "2f477dae268b4ed29bc19c5826b01bcd24b2a735261492f3b3655ab74bc5dfc2"
+        },
+        {
+          "path": "dist/easing-da79d042.cjs.prod.js",
+          "bytes": 13521,
+          "sha256": "cd54686354b4ada78c0b61eb16ff266bae3d786bb8c358fc5bac3fbdb413a6ed"
+        },
+        {
+          "path": "dist/geometry-0fb11825.esm.js",
+          "bytes": 12839,
+          "sha256": "5799b24d412094b1cf571bdb9fb6200fad013a185d4fd4edf3c507fcc7224daa"
+        },
+        {
+          "path": "dist/geometry-358de1c4.cjs.dev.js",
+          "bytes": 13765,
+          "sha256": "3c00d50f4d645191d5c8e7e5fcc03d4a910816e5ed8c0fdda1a69eb983ba71eb"
+        },
+        {
+          "path": "dist/geometry-8cc85b2d.cjs.prod.js",
+          "bytes": 13767,
+          "sha256": "eb0388ff8ff99f47817e5310b4c433a23cf0fcc6ed80687d80847a927933a5ae"
+        },
+        {
+          "path": "dist/index-0332b2ed.esm.js",
+          "bytes": 20926,
+          "sha256": "546095e345cde42a2cf7d39b0ea188d25f5bacee2f1b952b7844db5844ccc6f8"
+        },
+        {
+          "path": "dist/index-26fb8954.cjs.dev.js",
+          "bytes": 21864,
+          "sha256": "0854c4f8a6d7ed07478e9550924056c0acaf0b9c43963ade5f44c3d535af9f37"
+        },
+        {
+          "path": "dist/index-b2e9bacc.cjs.prod.js",
+          "bytes": 21867,
+          "sha256": "eea6ccbece43f6900484dfa47f2aa6c7ffc4803ebb8ce2a4cd191fd104ded259"
+        },
+        {
+          "path": "dist/isNativeReflectConstruct-5594d075.esm.js",
+          "bytes": 608,
+          "sha256": "96ff18e334b190915d274942ad0bc1d31b08c8df6ff9703f55b3103b2365720c"
+        },
+        {
+          "path": "dist/isNativeReflectConstruct-9acebf01.cjs.prod.js",
+          "bytes": 664,
+          "sha256": "244acfb8504862623e74f97b58b7cfcac4c31a87f5c11e354667e5df45a88332"
+        },
+        {
+          "path": "dist/isNativeReflectConstruct-ddc4ebc1.cjs.dev.js",
+          "bytes": 664,
+          "sha256": "244acfb8504862623e74f97b58b7cfcac4c31a87f5c11e354667e5df45a88332"
+        },
+        {
+          "path": "dist/maath.cjs.d.ts",
+          "bytes": 42,
+          "sha256": "b4fbfaa34aacd768965b0135a0c4e7dbaa055a8a4d6ffe7bedf1786d3dc614de"
+        },
+        {
+          "path": "dist/maath.cjs.dev.js",
+          "bytes": 1475,
+          "sha256": "95836179cf9c523e9a88ec63f2b866dff689dec6f59e84a39bfb4c039b6efd69"
+        },
+        {
+          "path": "dist/maath.cjs.js",
+          "bytes": 172,
+          "sha256": "7253443efbeeafa6c19195273f96650b57b13e109f4f14181c9818f97beba2aa"
+        },
+        {
+          "path": "dist/maath.cjs.prod.js",
+          "bytes": 1488,
+          "sha256": "fa4cf10a96ad68efdc30dcd92c1b2e1175fe449dd40d58eb92eff945534de3e4"
+        },
+        {
+          "path": "dist/maath.esm.js",
+          "bytes": 719,
+          "sha256": "36c3392115b992d286e3be06706a5b3d21d9ca233fa3a155cae6d5a88ec76112"
+        },
+        {
+          "path": "dist/matrix-baa530bf.esm.js",
+          "bytes": 2779,
+          "sha256": "242a21f92b9c9d617a57f32c44bb68cb7be827dd7ec9485aa9e527cef45e94e4"
+        },
+        {
+          "path": "dist/matrix-e0b2acc5.cjs.prod.js",
+          "bytes": 2882,
+          "sha256": "03a93563560cf0d0e4071d07d9956802c83dbfc106916a95da4dba9f81820b0e"
+        },
+        {
+          "path": "dist/matrix-fb190f60.cjs.dev.js",
+          "bytes": 2882,
+          "sha256": "03a93563560cf0d0e4071d07d9956802c83dbfc106916a95da4dba9f81820b0e"
+        },
+        {
+          "path": "dist/misc-023d073b.cjs.prod.js",
+          "bytes": 10012,
+          "sha256": "f9e47f294a196d5cf1de367f143f2912f2d73e07c29db13e032d7867742dbd77"
+        },
+        {
+          "path": "dist/misc-19a3ec46.esm.js",
+          "bytes": 9231,
+          "sha256": "b59b2b621a4d4a6aaf70c7fd109f2fb05648b792749bdd48366083fc52ca5fdf"
+        },
+        {
+          "path": "dist/misc-fce4d494.cjs.dev.js",
+          "bytes": 10010,
+          "sha256": "8ea35f1360cefe231fae929bd48bdb14ab420a0595053bc8af2bed895d87b0fd"
+        },
+        {
+          "path": "dist/objectSpread2-284232a6.esm.js",
+          "bytes": 1316,
+          "sha256": "d25a280fe76dc61f5c5e8323649f305eb7711fe24dfd5fdba05138b9eebeb682"
+        },
+        {
+          "path": "dist/objectSpread2-2ccd0bad.cjs.prod.js",
+          "bytes": 1361,
+          "sha256": "4e21d573acbd1b9a8b1bf43d8c9903487a3f6ac2745cb4da38449676ca0f7cda"
+        },
+        {
+          "path": "dist/objectSpread2-32cd2c34.cjs.dev.js",
+          "bytes": 1361,
+          "sha256": "4e21d573acbd1b9a8b1bf43d8c9903487a3f6ac2745cb4da38449676ca0f7cda"
+        },
+        {
+          "path": "dist/three-225cfce4.cjs.prod.js",
+          "bytes": 1416,
+          "sha256": "21f608b78f1d0f4baaf16550a89504951a8e15e39c5c81c1c85d4d4b88cc990f"
+        },
+        {
+          "path": "dist/three-87cc244e.cjs.dev.js",
+          "bytes": 1416,
+          "sha256": "21f608b78f1d0f4baaf16550a89504951a8e15e39c5c81c1c85d4d4b88cc990f"
+        },
+        {
+          "path": "dist/three-eb2ad8c0.esm.js",
+          "bytes": 1359,
+          "sha256": "7e20e51ba4bae6a8e186f9351d194fba9710fa6d849da81f89e5bd8e5d68533a"
+        },
+        {
+          "path": "dist/triangle-33ffdfef.cjs.dev.js",
+          "bytes": 10369,
+          "sha256": "3a3994d3218f5e48df65038543e775a394285b12d0a67b9c17ca8abf22baa08a"
+        },
+        {
+          "path": "dist/triangle-9e5a8229.cjs.prod.js",
+          "bytes": 10371,
+          "sha256": "0d21338b4c2023a948ea01a731a50122e3b34bfc8f88dbe1e5f100b36a5b6097"
+        },
+        {
+          "path": "dist/triangle-b62b9067.esm.js",
+          "bytes": 9952,
+          "sha256": "3172f5474cd8a09ad4042a82866eb61a68c7f7ba6ce57eb5cb9d1cf1b58d5bfd"
+        },
+        {
+          "path": "dist/vector2-49e42f03.cjs.prod.js",
+          "bytes": 1513,
+          "sha256": "3e6698b0807b9c50e9de413f0537d21ef8573b7ffc323dc10ba90392282f50a6"
+        },
+        {
+          "path": "dist/vector2-d2bf51f1.esm.js",
+          "bytes": 1370,
+          "sha256": "976f17db2418f96cdcadb30d98b8afa8f824888ab971b3104749a06a07b9b4c0"
+        },
+        {
+          "path": "dist/vector2-f44fd63e.cjs.dev.js",
+          "bytes": 1513,
+          "sha256": "3e6698b0807b9c50e9de413f0537d21ef8573b7ffc323dc10ba90392282f50a6"
+        },
+        {
+          "path": "dist/vector3-0a088b7f.esm.js",
+          "bytes": 1690,
+          "sha256": "a0a2a4b46a160ac7a86a747cf90352732cbd3e889941a5ed81363658c0ec1d8f"
+        },
+        {
+          "path": "dist/vector3-4bbdb053.cjs.prod.js",
+          "bytes": 1844,
+          "sha256": "3fe40da2eb2128c567c6da9e0a4a165d0e36bde0b11ffe374b7d63ec6a2e46fa"
+        },
+        {
+          "path": "dist/vector3-5e723d1a.cjs.dev.js",
+          "bytes": 1844,
+          "sha256": "3fe40da2eb2128c567c6da9e0a4a165d0e36bde0b11ffe374b7d63ec6a2e46fa"
+        },
+        {
+          "path": "easing/dist/maath-easing.cjs.d.ts",
+          "bytes": 52,
+          "sha256": "dff62b0b96fbb45ad48a8394f9e1249e90a76e3ffeb4a38ce95ab44e5e082aa4"
+        },
+        {
+          "path": "easing/dist/maath-easing.cjs.dev.js",
+          "bytes": 1344,
+          "sha256": "ebce2672a4c7eaa123d7e3803c4012288fb390c13858d60c6676f3eedb3a2ed7"
+        },
+        {
+          "path": "easing/dist/maath-easing.cjs.js",
+          "bytes": 186,
+          "sha256": "67ffb5e87c0870806d248d76f02989105e9abf72e3712bce250cd8a04bd4d415"
+        },
+        {
+          "path": "easing/dist/maath-easing.cjs.prod.js",
+          "bytes": 1349,
+          "sha256": "82af52e09608a4ca75f28f3adaad1869774479d739eaaf810edea3dd1a6263c1"
+        },
+        {
+          "path": "easing/dist/maath-easing.esm.js",
+          "bytes": 505,
+          "sha256": "959271c0b03a02b805471641a1d1bb9b64387d675ffcd6575bf841e2dce3b1e5"
+        },
+        {
+          "path": "easing/package.json",
+          "bytes": 81,
+          "sha256": "e3ec8fd6a6d8a22e7839ed36a9b1327897fabcde964083857b8a62921a3e86a1"
+        },
+        {
+          "path": "geometry/dist/maath-geometry.cjs.d.ts",
+          "bytes": 54,
+          "sha256": "614c117d3ecb4f69eb7e9371d7fc09a25cc18e9fbff6434a082ea58b2e9b24cc"
+        },
+        {
+          "path": "geometry/dist/maath-geometry.cjs.dev.js",
+          "bytes": 598,
+          "sha256": "8193303b8f89ff0d56f2c0e38e9a988f1778e448f488a5432a38b04f74f2403e"
+        },
+        {
+          "path": "geometry/dist/maath-geometry.cjs.js",
+          "bytes": 190,
+          "sha256": "0310129d784d975e012a67aa06961825c339d7c4ae4c8004d08ee149d1e7baa1"
+        },
+        {
+          "path": "geometry/dist/maath-geometry.cjs.prod.js",
+          "bytes": 601,
+          "sha256": "d3bd7320e3ced524cba1b5787c0fff06a1b97d8e690f6c18ca7aa85f0a27f1a6"
+        },
+        {
+          "path": "geometry/dist/maath-geometry.esm.js",
+          "bytes": 273,
+          "sha256": "dd12436d02c52bb3a57b108620cb50bec8126525e164425d47ff6562477fab57"
+        },
+        {
+          "path": "geometry/package.json",
+          "bytes": 93,
+          "sha256": "126742bb9efd0e3d22635e949372d2420abc7a57c5c2b37e4e55711cad5637c7"
+        },
+        {
+          "path": "matrix/dist/maath-matrix.cjs.d.ts",
+          "bytes": 52,
+          "sha256": "77c89596cae8e4586427382ef7ce13ad63fd48337f08af92c662c8c9c28f3f0b"
+        },
+        {
+          "path": "matrix/dist/maath-matrix.cjs.dev.js",
+          "bytes": 473,
+          "sha256": "3f3aace860692f0b121560f07340aec22ef2fcc30c094cd74df261c066f02131"
+        },
+        {
+          "path": "matrix/dist/maath-matrix.cjs.js",
+          "bytes": 186,
+          "sha256": "4c8b13fc16adef68bdf586e0bd9158cd690ddfeeb739469ca3ca0e8c41484a6b"
+        },
+        {
+          "path": "matrix/dist/maath-matrix.cjs.prod.js",
+          "bytes": 474,
+          "sha256": "28bb1b22e9687ddff5387e51d7825c6067b0deeff801e31bb0dc1a3fc4b569ca"
+        },
+        {
+          "path": "matrix/dist/maath-matrix.esm.js",
+          "bytes": 157,
+          "sha256": "734c785bb00394186da6602fe0578932f7d0218333ef67650244ed1226812ff4"
+        },
+        {
+          "path": "matrix/package.json",
+          "bytes": 81,
+          "sha256": "90244f97f1ac264d9125e139951b70da70a16350179eb3b20c010f22a8e5e027"
+        },
+        {
+          "path": "misc/dist/maath-misc.cjs.d.ts",
+          "bytes": 50,
+          "sha256": "505e99217856fc6148dda4033144f8f0e77b313eede0568b48e36255f1557169"
+        },
+        {
+          "path": "misc/dist/maath-misc.cjs.dev.js",
+          "bytes": 1740,
+          "sha256": "bb7c20d657a858c7bf4e628b83045929ac3825fac6c5532f6c0163c536928805"
+        },
+        {
+          "path": "misc/dist/maath-misc.cjs.js",
+          "bytes": 182,
+          "sha256": "1c370acfe06b487d939f1a874407a76ec5981107dbdce77857b391d3213f8568"
+        },
+        {
+          "path": "misc/dist/maath-misc.cjs.prod.js",
+          "bytes": 1744,
+          "sha256": "dd90b370ff8b73326e279042d65c77fda2d5ebfe39389ebfc308452522b40db9"
+        },
+        {
+          "path": "misc/dist/maath-misc.esm.js",
+          "bytes": 688,
+          "sha256": "d8875f4fdba93059f72faa6495d77da83092585bd5e35595c5133462ff15dfbe"
+        },
+        {
+          "path": "misc/package.json",
+          "bytes": 77,
+          "sha256": "e6454219823114320859ff7fc0f53c29985cb0a13dbdb58f6edb3ae4445e72b0"
+        },
+        {
+          "path": "package.json",
+          "bytes": 602,
+          "sha256": "a8fd36627cbea15dd5326291e7b6eaf826dd2275114c2a684b4b213a2c899ac2"
+        },
+        {
+          "path": "random/dist/maath-random.cjs.d.ts",
+          "bytes": 58,
+          "sha256": "a59126fb109d5ae8b854fc65b2a32f748e04fc04b65a07e26f369d0cce303673"
+        },
+        {
+          "path": "random/dist/maath-random.cjs.dev.js",
+          "bytes": 1071,
+          "sha256": "74e6f935d1860a3d28a59dafc3e890e8a3973ed8dc028d5ada69dc68d05d65b4"
+        },
+        {
+          "path": "random/dist/maath-random.cjs.js",
+          "bytes": 186,
+          "sha256": "aba588431d5e5359728caf13111addd1112b21ee88557dd1f183c31b4ddbbe54"
+        },
+        {
+          "path": "random/dist/maath-random.cjs.prod.js",
+          "bytes": 1078,
+          "sha256": "473e1f715dfbd7096ccb74c33953136062a3f5c023253c9cb1fe6089e3745d0d"
+        },
+        {
+          "path": "random/dist/maath-random.esm.js",
+          "bytes": 517,
+          "sha256": "fa2e095ce0588ddadbbcaf79bf994c59c9d4ac6a56e25f0d9125eb3f3ac72e52"
+        },
+        {
+          "path": "random/package.json",
+          "bytes": 81,
+          "sha256": "665f3cfc9dc5245c44fa8d955de345709d21c1d65403e8fcd1cf38d98f619a16"
+        },
+        {
+          "path": "three/dist/maath-three.cjs.d.ts",
+          "bytes": 51,
+          "sha256": "6536d049cd910c281679b2e80d9429ca48e7b67acd9c066b1350142aa9b66bdc"
+        },
+        {
+          "path": "three/dist/maath-three.cjs.dev.js",
+          "bytes": 307,
+          "sha256": "ca20445fc827175b31dec19b1e68eded1314007e387390b19d2471e44496a5c9"
+        },
+        {
+          "path": "three/dist/maath-three.cjs.js",
+          "bytes": 184,
+          "sha256": "8f86a60283445d38ab4cc6cc935ad7ac9b6e8137a6ccd1fb9457523dd43c6213"
+        },
+        {
+          "path": "three/dist/maath-three.cjs.prod.js",
+          "bytes": 308,
+          "sha256": "bf1b001b182512aa76149df948b53b5dd76cf5bb0b266b8a6fb0bff24afa3e13"
+        },
+        {
+          "path": "three/dist/maath-three.esm.js",
+          "bytes": 111,
+          "sha256": "5ca9a0905caae26fa858c23d405d0a305d3d17c949f7a0dc6a74242e8f2abdbe"
+        },
+        {
+          "path": "three/package.json",
+          "bytes": 132,
+          "sha256": "2cd05845d48c78a42df7903b66b749b0de1a57bdc1f7eecd115406eb075a2037"
+        },
+        {
+          "path": "triangle/dist/maath-triangle.cjs.d.ts",
+          "bytes": 54,
+          "sha256": "b34a8012a1937e332b7cbabd8e4fc233d6211855c931de226d040d81fdfe7f08"
+        },
+        {
+          "path": "triangle/dist/maath-triangle.cjs.dev.js",
+          "bytes": 855,
+          "sha256": "6e38ea14c1985631997dd8ad70ab4930724bd3f11936d07b7dfa4d319f955096"
+        },
+        {
+          "path": "triangle/dist/maath-triangle.cjs.js",
+          "bytes": 190,
+          "sha256": "c1777b240ffd997bcc605247264bdb18e47d1a7b0b927617952ae931c1f40389"
+        },
+        {
+          "path": "triangle/dist/maath-triangle.cjs.prod.js",
+          "bytes": 858,
+          "sha256": "74ab59461d8ebd1c771522098e388a812fdc68daea566bd9319403e1aedd7615"
+        },
+        {
+          "path": "triangle/dist/maath-triangle.esm.js",
+          "bytes": 357,
+          "sha256": "56b8f5fee8f86e8f9d9fa77284ef25892cc60ff970c3e6ac50037731fa3b8e6c"
+        },
+        {
+          "path": "triangle/package.json",
+          "bytes": 85,
+          "sha256": "4a1f1d67da7a5a402e98c7120592baece10441da02cd3c22bfaaf8bcb0ad2215"
+        },
+        {
+          "path": "vector2/dist/maath-vector2.cjs.d.ts",
+          "bytes": 53,
+          "sha256": "3c98e0ac1c752baa2127838aa9194f1227d76ef52c02facc2c70de5e16177435"
+        },
+        {
+          "path": "vector2/dist/maath-vector2.cjs.dev.js",
+          "bytes": 714,
+          "sha256": "9b213e25a7176effa8887eed043623ff5beb5c8981a52e0f0e3de298504363db"
+        },
+        {
+          "path": "vector2/dist/maath-vector2.cjs.js",
+          "bytes": 188,
+          "sha256": "10bb2274578ebc793b3189629e91b21cfb1b81360da6d795aa9bbd672c73235e"
+        },
+        {
+          "path": "vector2/dist/maath-vector2.cjs.prod.js",
+          "bytes": 715,
+          "sha256": "ce4a179186f7c5b21eaa75df460706e1b9c66a10aa9298e11dc8510f3bc3273f"
+        },
+        {
+          "path": "vector2/dist/maath-vector2.esm.js",
+          "bytes": 190,
+          "sha256": "6db3d4d935f9af42a4f6d2c55a6050d3a91a50af3adc15d1877a52d0f00f373e"
+        },
+        {
+          "path": "vector2/package.json",
+          "bytes": 83,
+          "sha256": "71469ff11a40d78ec59ede139b20d10fafa13cb05cffb55e79711a13f4d16810"
+        },
+        {
+          "path": "vector3/dist/maath-vector3.cjs.d.ts",
+          "bytes": 53,
+          "sha256": "f1910b964a054e98597434c41824574a0c7023e3cd614bc7dc6beb2b0eab5702"
+        },
+        {
+          "path": "vector3/dist/maath-vector3.cjs.dev.js",
+          "bytes": 763,
+          "sha256": "f190cb242f61523439b933628a0184fb8c3cf3745b5b854aecbe09dea470f1db"
+        },
+        {
+          "path": "vector3/dist/maath-vector3.cjs.js",
+          "bytes": 188,
+          "sha256": "e6e1ac52a3f60fb1aca728d4d01fb1df5a530b394fb4f5148bc35de04f08512f"
+        },
+        {
+          "path": "vector3/dist/maath-vector3.cjs.prod.js",
+          "bytes": 764,
+          "sha256": "912151492dff607c213ff9e2f46b44de579ffb66ece282a60105bf604bdf3870"
+        },
+        {
+          "path": "vector3/dist/maath-vector3.esm.js",
+          "bytes": 202,
+          "sha256": "fcbee919252cefa89681af73039a368edfadb0a008c0a9bdf535994b6dc385dd"
+        },
+        {
+          "path": "vector3/package.json",
+          "bytes": 83,
+          "sha256": "b04f45bb4fb9f3e783b22f3cb47f0260d6cabcc0d6ce3d35c3409a416d63bd7f"
+        }
+      ],
+      "header_or_readme_hits": [
+        {
+          "path": "package.json",
+          "inspected_prefix_bytes": 602,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 4,
+              "excerpt": "  \"license\": \"MIT\","
+            }
+          ]
+        }
+      ],
+      "uninterpreted": []
+    },
+    {
+      "name": "natural-compare",
+      "version": "1.4.0",
+      "lock_path": "node_modules/natural-compare",
+      "metadata_sha256": "3d99911ccfa0ca34ae0c68bfd32c038b952542e55db7c649c37b11dd1573f6af",
+      "own_files": [
+        {
+          "path": "index.js",
+          "bytes": 1303,
+          "sha256": "15f5c6fd3086eb01f2beede34bf23a84f3ca2b9f4a87ec86c1bfc2045b99c6e3"
+        },
+        {
+          "path": "package.json",
+          "bytes": 992,
+          "sha256": "3d99911ccfa0ca34ae0c68bfd32c038b952542e55db7c649c37b11dd1573f6af"
+        },
+        {
+          "path": "README.md",
+          "bytes": 3352,
+          "sha256": "ced6cb1fe6ee15a32c63ea8c7e0425454e80456a890c6df3909429530566d40a"
+        }
+      ],
+      "header_or_readme_hits": [
+        {
+          "path": "index.js",
+          "inspected_prefix_bytes": 1303,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 9,
+              "excerpt": " * @license    MIT License"
+            }
+          ]
+        },
+        {
+          "path": "package.json",
+          "inspected_prefix_bytes": 992,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 6,
+              "excerpt": "  \"license\": \"MIT\","
+            },
+            {
+              "line": 38,
+              "excerpt": "      \"banner\": \"/*! litejs.com/MIT-LICENSE.txt */\","
+            }
+          ]
+        },
+        {
+          "path": "README.md",
+          "inspected_prefix_bytes": 3352,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 119,
+              "excerpt": "Licence"
+            },
+            {
+              "line": 122,
+              "excerpt": "Copyright (c) 2012-2015 Lauri Rooden &lt;lauri@rooden.ee&gt;  "
+            },
+            {
+              "line": 123,
+              "excerpt": "[The MIT License](http://lauri.rooden.ee/mit-license.txt)"
+            }
+          ]
+        }
+      ],
+      "uninterpreted": []
+    },
+    {
+      "name": "stats-gl",
+      "version": "2.4.2",
+      "lock_path": "node_modules/stats-gl",
+      "metadata_sha256": "99511b9c6d34746ac694b3c991ff0419e465df7c6923255d5a91c8fa9cad081e",
+      "own_files": [
+        {
+          "path": "dist/main.cjs",
+          "bytes": 10250,
+          "sha256": "e9f5911e1ebab224ee1dd62c3a2f3ec080b2c08b22e7df5de1ed8fd67c13d523"
+        },
+        {
+          "path": "dist/main.cjs.map",
+          "bytes": 7179,
+          "sha256": "6443e0b071d639ce9f8891fac3e5edb1c6c512dcba9a6eef446e257d33d833d3"
+        },
+        {
+          "path": "dist/main.js",
+          "bytes": 10214,
+          "sha256": "18fec4579bb941f3fcf279b99c6616d68e3a3c39d4a0261864cdcc2d07223b7a"
+        },
+        {
+          "path": "dist/main.js.map",
+          "bytes": 7093,
+          "sha256": "22fb162c3fdf909087f209c0cb7e065261016f6997c7a6d5ff0a4bfabeda70de"
+        },
+        {
+          "path": "dist/panel.cjs",
+          "bytes": 3733,
+          "sha256": "65064f9265aee7f6cc1356ba417089140b51223fd5bda9f48bf7431940bd36f3"
+        },
+        {
+          "path": "dist/panel.cjs.map",
+          "bytes": 2611,
+          "sha256": "8dd1f7ae163a2b362d6b7ca6282e01c9e87c29906bc89690f8d025637be6c5a7"
+        },
+        {
+          "path": "dist/panel.js",
+          "bytes": 3642,
+          "sha256": "5e9fa4eb4be28570857201ddf95c9cb1fd59db911f6ed1af14c54dcad09240d5"
+        },
+        {
+          "path": "dist/panel.js.map",
+          "bytes": 2607,
+          "sha256": "2b09bac46af72c356987b302c5c4d7e645bb042785545fe02919ce02b82e0e58"
+        },
+        {
+          "path": "dist/stats-gl.d.ts",
+          "bytes": 3083,
+          "sha256": "ceacff8e81d4c413c8cdba7ef6eb5d35a2a20a7b0bc5b316114bbdce888b58da"
+        },
+        {
+          "path": "lib/main.ts",
+          "bytes": 12590,
+          "sha256": "d341fc405e079b27b04fc1de2859b639e2a9c88cef5152de16a4672d00ac13ed"
+        },
+        {
+          "path": "lib/panel.ts",
+          "bytes": 5035,
+          "sha256": "5db3e462769577138474b9ed53baebb4075b1acb6a6fb88629cb537bf5fa9cf2"
+        },
+        {
+          "path": "package.json",
+          "bytes": 1103,
+          "sha256": "99511b9c6d34746ac694b3c991ff0419e465df7c6923255d5a91c8fa9cad081e"
+        },
+        {
+          "path": "README.md",
+          "bytes": 4763,
+          "sha256": "cd3199d6423780f805bf7f0cdf73dffc595c661f3539ad7c33a762eee60e4fd3"
+        }
+      ],
+      "header_or_readme_hits": [
+        {
+          "path": "package.json",
+          "inspected_prefix_bytes": 1103,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 8,
+              "excerpt": "  \"license\": \"MIT\","
+            }
+          ]
+        },
+        {
+          "path": "README.md",
+          "inspected_prefix_bytes": 4763,
+          "prefix_truncated": false,
+          "matches": [
+            {
+              "line": 138,
+              "excerpt": "## \ud83d\udcdc License"
+            },
+            {
+              "line": 139,
+              "excerpt": "This project is licensed under the MIT License."
+            }
+          ]
+        }
+      ],
+      "uninterpreted": [
+        {
+          "path": "dist/main.cjs.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/main.js.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/panel.cjs.map",
+          "reason": "non-text content not interpreted"
+        },
+        {
+          "path": "dist/panel.js.map",
+          "reason": "non-text content not interpreted"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Read-only own-file discovery in the existing isolated candidate",
+    "Only first 8192 bytes of each eligible text file inspected for notice terms",
+    "Term matches are not necessarily complete applicable licence notices",
+    "Nested node_modules are separate inventory items and excluded",
+    "Binary contents, full bundled notices, archive integrity/provenance and legal interpretation unproven",
+    "No installation, script execution, application change, graph selection or clearance"
+  ]
+}

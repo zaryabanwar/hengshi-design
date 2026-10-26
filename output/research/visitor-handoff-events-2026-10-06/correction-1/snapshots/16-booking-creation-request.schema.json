@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed private booking lineage creation requests v1",
+  "description": "Definition-only client inputs at existing IF-BOOK-01. Schema acceptance establishes representation only, never current proof, CSRF, allocated context, allowed promotion, consent, durable storage, email verification, slot or provider success. No route or handler is implemented.",
+  "oneOf": [
+    {"$ref": "#/$defs/bootstrap"},
+    {"$ref": "#/$defs/create"}
+  ],
+  "$defs": {
+    "operation_id": {
+      "$ref": "process-value.schema.json#/$defs/uuid",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}(?![\\s\\S])",
+      "description": "Caller UUIDv4 operation reference. Generate from a CSPRNG once per deliberate intent; retain the same reference for permitted reconciliation. Not a credential, global deduplication key, entropy proof or process selector."
+    },
+    "bootstrap": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["phase"],
+      "properties": {
+        "phase": {"const": "bootstrap"}
+      }
+    },
+    "create": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["phase", "provisional_id", "operation_id"],
+      "properties": {
+        "phase": {"const": "create"},
+        "provisional_id": {"$ref": "process-value.schema.json#/$defs/uuid"},
+        "operation_id": {"$ref": "#/$defs/operation_id"}
+      }
+    }
+  }
+}

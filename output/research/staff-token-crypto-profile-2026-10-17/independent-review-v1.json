@@ -1,0 +1,176 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "reviewed_at_utc": "2026-10-24T06:23:46.851813+00:00",
+  "reviewer": "Independent reviewer /root/review_archive_candidate_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "PASS",
+  "scope": "Frozen16-input logical internal JWT header/key-lifecycle proposal and separate parsed-header schema representation review only. No real key generation, crypto signing/verification, custody/clock/race/resource qualification, algorithm adoption or production security clearance.",
+  "packet": {
+    "path": "output/research/staff-token-crypto-profile-2026-10-17/review-inputs-v1.json",
+    "bytes": 4458,
+    "sha256": "177e09ecd9dcafb8b61e489dc2b52bf517c43db24ee65a566312cbf5fa2161b2",
+    "input_count": 16,
+    "verified_before_review": 16,
+    "verified_again_before_receipt": 16,
+    "inputs": [
+      {
+        "path": "AGENTS.md",
+        "bytes": 8983,
+        "sha256": "f31b4bb42f954995cc12358284a992fde46ade98980238043c149f692b6474a5",
+        "verified": true
+      },
+      {
+        "path": ".specify/memory/constitution.md",
+        "bytes": 16234,
+        "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+        "verified": true
+      },
+      {
+        "path": "specs/001-platform-security-hardening/spec.md",
+        "bytes": 37002,
+        "sha256": "845ce38c28a2c36ef8df9993a09f089561786f3d1f974fd2088465bff573bc0c",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+        "bytes": 99778,
+        "sha256": "d2d04ba5ef36d77022afd3f0f75eaf7281b296f2efcce22e28bdb09a46c2bce1",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/STAFF_SESSION_PROTOCOL.md",
+        "bytes": 31953,
+        "sha256": "be8ba8c0381b257c0865a20b0352a86f72223d0d45fe2679d445b775d3ebb92b",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/staff-session-control.schema.json",
+        "bytes": 6329,
+        "sha256": "ed6b7d7f564289a9f53aa939d1c698ea0a60309fdf21b3ddb3c9def4953f12ef",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+        "bytes": 82820,
+        "sha256": "193360cbfc1d7e62027bbfcf5f479cd093f7b89af8f70320e39de9323ae1ebca",
+        "verified": true
+      },
+      {
+        "path": "output/research/backend-crypto-graph-2026-10-08/native-probes/test_libraries.py",
+        "bytes": 6038,
+        "sha256": "0f5b7a2341226d3568d7a411d1669bd0ebb5637eaecf2ead4312d19f90272fa7",
+        "verified": true
+      },
+      {
+        "path": "output/research/staff-token-crypto-profile-2026-10-17/proposal-v1.json",
+        "bytes": 10179,
+        "sha256": "1301f7e58d36026b3c45f2c1467283e4d6cc34a1ed750750c0d0bc86f6005a0f",
+        "verified": true
+      },
+      {
+        "path": "output/research/staff-token-crypto-profile-2026-10-17/source-observations-v1.json",
+        "bytes": 3124,
+        "sha256": "16c717ae7105c64a66fe76700759b358562018ba4fb272ca075f5caf0205f956",
+        "verified": true
+      },
+      {
+        "path": "output/research/staff-token-crypto-profile-2026-10-17/staff-token-header.schema.json",
+        "bytes": 720,
+        "sha256": "33deaca2469f2db77c8a8837a99bef0e9e25bf951dab4f5eee35d92c9bb728c0",
+        "verified": true
+      },
+      {
+        "path": "output/research/staff-token-crypto-profile-2026-10-17/test_staff_token_header.py",
+        "bytes": 3384,
+        "sha256": "a399824225a8d3b7ae701ada3ee6df6fe7098ce8dea814011a9d7c34991630b8",
+        "verified": true
+      },
+      {
+        "path": "output/research/staff-token-crypto-profile-2026-10-17/test-result-v1.json",
+        "bytes": 1657,
+        "sha256": "5da9f9c19626c1a9eb0dd6a01178e353d62c3bd5ee4e9853099eda9b1e19b6da",
+        "verified": true
+      },
+      {
+        "path": "output/research/staff-token-crypto-profile-2026-10-17/test-output-v1.txt",
+        "bytes": 1455,
+        "sha256": "bc6b630c08b7549e2423db53719d96bceed11d304fe7880d77caa0e34db5e7cb",
+        "verified": true
+      },
+      {
+        "path": "output/research/test-client-graph-2026-10-09/native-trial/environment/Lib/site-packages/jwt/api_jwt.py",
+        "bytes": 22343,
+        "sha256": "a2af9f3593c8cf9133163cb0b5b08223281b8292d5db5665309bc23c212cac76",
+        "verified": true
+      },
+      {
+        "path": "output/research/test-client-graph-2026-10-09/native-trial/environment/Lib/site-packages/pyjwt-2.15.1.dist-info/METADATA",
+        "bytes": 3500,
+        "sha256": "1ea0c9f139b8c928276b3628af165955f6f764491448a6ad8f103cdcbb382da3",
+        "verified": true
+      }
+    ]
+  },
+  "sub_verdicts": {
+    "logical_profile_key_lifecycle_and_claim_limits": "PASS",
+    "parsed_header_schema_and_fixtures": "PASS"
+  },
+  "findings": [],
+  "actionable_finding_count": 0,
+  "assessments": [
+    {
+      "evidence": "proposal-v1.json:8-35;STAFF_SESSION_PROTOCOL.md private claims/control and original clocks;specs/001-platform-security-hardening/spec.md:93,141-144,226-243",
+      "assessment": "Candidate internal hsd-staff-jws-v1 uses literal RS256, exact RSA3072/exponent65537 and closed alg/typ/kid; eight existing claims, original idle/absolute and renewal/recovery proposals remain. Entra/provider and visitor token contexts stay separate. Signature bound384octets/512base64url characters and conservative1709 compact characters fit existing2048 cap. Arithmetic is not a crypto or measured cost claim;3072/kid/two-key choices remain unadopted engineering recommendations."
+    },
+    {
+      "evidence": "proposal-v1.json:38-54",
+      "assessment": "Bounded trusted in-process registry allows one current issuer and at most one retiring key, fixed key-family/profile association and no remote/path/header-selected algorithms. Unknown kid cannot trigger fetch/scan/fallback or identity allocation. Retiring signing is limited to exact already-issued identity redelivery; new generations use current issuer. Serialized rollover cannot evict still-needed retiring state or expand cap; expiry equality denies. Authorized compromise handling is distinct from attacker-triggered revocation, preserving stale-token/current-successor rules. Actual key custody/entropy/history/disposal/current configuration binding remain held."
+    },
+    {
+      "evidence": "proposal-v1.json:56-68;api_jwt.py:242-284,384-433;PyJWT METADATA",
+      "assessment": "Fixed algorithms/issuer/audience, strict audience, required claims, zero leeway and enabled validations use library built-ins while retaining strict raw decoding, exact scalar/date/current issued-record and current principal/session/output guards. Saved PyJWT2.15.1 source confirms signature/minimum-key options forwarded and temporal claims use datetime.now UTC. No unsupported current_time injection is assumed; healthy runtime and trusted post-wait DB time remain required, with no clock-skew bypass. Text inspection does not qualify full algorithm/source graph."
+    },
+    {
+      "evidence": "staff-token-header.schema.json;test_staff_token_header.py;test-result-v1.json",
+      "assessment": "Root rejects; selected header is exactly an object with three required members, fixed alg/type and32lowercaseASCIIhex kid, no embedded key/URL/extensions. Eight representation methods independently pass. Deliberately accepted invented all-zero kid and lossy duplicate example show schema shape cannot prove key existence, duplicate rejection, entropy or signature/current authority. No JWT or key operation was executed."
+    },
+    {
+      "evidence": "proposal-v1.json:70-82;source-observations-v1.json;backend-crypto-graph/native-probes/test_libraries.py:26-66",
+      "assessment": "Full latest-mutually-compatible graph, exact PyJWT/cryptography runtime/source/notice qualification, raw parser, signer custody, cross-worker rollover/retirement/output races, clock and bounded capacity tests remain explicit future gates. Earlier synthetic RSA2048 library cases are not evidence for this3072 profile. Context7 master guidance and excluded51.0.0-dev docs are not selected stable source authority. No canonical owner/header/schema/secret inventory or application change follows."
+    }
+  ],
+  "synthetic_test_replay": {
+    "argv": [
+      "C:/Python314/python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "-v",
+      "test_staff_token_header"
+    ],
+    "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\staff-token-crypto-profile-2026-10-17",
+    "exit_code": 0,
+    "tests_run": 8,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "reported_seconds": 0.012,
+    "runtime": {
+      "executable": "C:\\Python314\\python.exe",
+      "version": "3.14.5"
+    },
+    "scope": "Existing jsonschema and synthetic parsed-header fixtures only; no install or cryptographic operation."
+  },
+  "review_method": [
+    "Verified16 frozen identities before/after. Read exact proposal/schema/tests/producer results, owning protocol/data/security/spec boundaries and saved PyJWT source as text only.",
+    "Replayed only eight supplied representation methods with existing Python314 -B and existing jsonschema dependencies. Did not run earlier library/crypto probes.",
+    "No network, browser/Figma, account/provider, key/signer/custody, canonical/producer/application/Git change; wrote only this receipt."
+  ],
+  "limits": [
+    "No new external-source refresh or broad PyJWT/cryptography source audit; saved dated observations are supporting evidence, not production graph selection.",
+    "Logical security consistency PASS is not security clearance, real crypto/entropy/key registration/secret disposal, healthy clock/current store, HTTP/cookie or Entra enforcement.",
+    "Applicable founder/integrated adoption and separately authorized implementation remain required. No capacity error. DOING is not task DONE or commit."
+  ]
+}

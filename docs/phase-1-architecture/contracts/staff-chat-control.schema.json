@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed staff text channel control directions v1",
+  "description": "IF-STAFF-15 controls only. Explicit client/server selection; module root denies. Shape cannot prove staff cookie/CSRF, assignment, consent, readiness, stream/cursor binding, sequence relations, replay, actual resource/close enforcement or delivery. Visitor controls are not interchangeable.",
+  "not": {},
+  "$defs": {
+    "uuid_v4": {"$ref": "booking-creation-request.schema.json#/$defs/operation_id"},
+    "revision": {"$ref": "process-value.schema.json#/$defs/positive_revision"},
+    "handoff_binding": {"$ref": "staff-handoff-request.schema.json#/$defs/expected_binding"},
+    "cursor": {"$ref": "chat-event-control.schema.json#/$defs/cursor"},
+    "sequence": {"$ref": "chat-event-control.schema.json#/$defs/sequence"},
+    "staff_initialize": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["protocol_version", "kind", "csrf_token", "expected_handoff", "expected_consent_revision", "resume"],
+      "properties": {
+        "protocol_version": {"type": "integer", "const": 1},
+        "kind": {"const": "staff_initialize"},
+        "csrf_token": {"$ref": "booking-creation-response.schema.json#/$defs/csrf_token"},
+        "expected_handoff": {"$ref": "#/$defs/handoff_binding"},
+        "expected_consent_revision": {"$ref": "#/$defs/revision"},
+        "resume": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/cursor"}]}
+      },
+      "description": "Staff-specific non-bearer CSRF representation only; actual mechanism/issuance remains held. Credentials/principal derive from the separately guarded current staff session. Expected fields confer no action/read grant."
+    },
+    "staff_receipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["protocol_version", "kind", "channel_id", "stream_id", "handoff_id", "ownership_generation", "through_sequence"],
+      "properties": {
+        "protocol_version": {"type": "integer", "const": 1},
+        "kind": {"const": "staff_receipt"},
+        "channel_id": {"$ref": "#/$defs/uuid_v4"},
+        "stream_id": {"$ref": "#/$defs/uuid_v4"},
+        "handoff_id": {"$ref": "#/$defs/uuid_v4"},
+        "ownership_generation": {"$ref": "#/$defs/revision"},
+        "through_sequence": {"$ref": "#/$defs/sequence"}
+      }
+    },
+    "staff_ready": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["protocol_version", "kind", "channel_id", "handoff_binding", "consent_revision", "stream_id", "head_sequence", "next_sequence", "resume_outcome"],
+      "properties": {
+        "protocol_version": {"type": "integer", "const": 1},
+        "kind": {"const": "staff_ready"},
+        "channel_id": {"$ref": "#/$defs/uuid_v4"},
+        "handoff_binding": {"$ref": "#/$defs/handoff_binding"},
+        "consent_revision": {"$ref": "#/$defs/revision"},
+        "stream_id": {"$ref": "#/$defs/uuid_v4"},
+        "head_sequence": {"$ref": "#/$defs/sequence"},
+        "next_sequence": {"$ref": "#/$defs/revision"},
+        "resume_outcome": {"enum": ["fresh", "resumed"]}
+      },
+      "description": "Authorized transport projection snapshot only, not human acceptance, new assignment, transcript transfer, staff presence, text ticket, reply or continuing permission. No identity/token included."
+    },
+    "staff_unavailable": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["protocol_version", "kind", "code", "recovery"],
+      "properties": {
+        "protocol_version": {"type": "integer", "const": 1},
+        "kind": {"const": "staff_unavailable"},
+        "code": {"enum": ["replay_unavailable", "authority_changed", "resource_limit", "service_unavailable"]},
+        "recovery": {"enum": ["inspect_conversation", "reconcile_staff_operations"]}
+      },
+      "oneOf": [
+        {"properties": {"code": {"enum": ["replay_unavailable", "authority_changed"]}, "recovery": {"const": "inspect_conversation"}}},
+        {"properties": {"code": {"enum": ["resource_limit", "service_unavailable"]}, "recovery": {"const": "reconcile_staff_operations"}}}
+      ],
+      "description": "Fixed safe control only when its output remains permitted. Recovery is not an inspection grant, replay, automatic resend or ending/booking outcome. If no safe disclosure is possible, close without a body."
+    },
+    "client": {"oneOf": [{"$ref": "#/$defs/staff_initialize"}, {"$ref": "#/$defs/staff_receipt"}]},
+    "server": {"oneOf": [{"$ref": "#/$defs/staff_ready"}, {"$ref": "#/$defs/staff_unavailable"}]}
+  }
+}

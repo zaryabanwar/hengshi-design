@@ -1,0 +1,68 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "review_verdict": "PASS",
+  "reviewer": "/root/review_backend_roles_advisories_v1",
+  "review_date": "2026-10-09",
+  "authorization": "Founder approved the pending combined read-only backend role/advisory review with 'approved and figma connected'. This receipt covers that backend review only. The frozen prospective review_authorized:false field is preserved.",
+  "manifest_path": "output/research/backend-role-closure-2026-10-09/combined-review-inputs.json",
+  "manifest_sha256": "6b66126e2bd12a2bcd06412759b774d23e37755d78097fce212092587dfea6a3",
+  "input_count": 37,
+  "all_manifest_hashes_and_lengths_match": true,
+  "scope": "Independent static review of the exact saved Windows metadata role reachability, saved exact-version PyPI OSV lookup, and two frozen compatibility-document amendments. Earlier receipts retain their original scopes. No production dependency selection, profile installation, identity implementation, security clearance or integrated acceptance.",
+  "findings": [],
+  "verified": [
+    {
+      "evidence": "combined-review-inputs.json; all 37 declared inputs",
+      "conclusion": "The manifest SHA256 matches the authorized packet. Independent raw-byte length/hash inspection matches all 37 inputs, both before and after substantive review. Six protected application/environment inputs separately match the saved receipt identities. The prospective manifest remains unchanged."
+    },
+    {
+      "evidence": "test-client-graph-2026-10-09/pip-report.json, candidate-roots.txt, candidate-hashed-requirements.txt; profiles.json",
+      "conclusion": "All 48 canonicalized package identities, versions and wheel hash pins agree between the saved report and candidate requirements. All 14 explicit evaluated roots and their selected extras agree with the report's requested flags/extras. The role partition is API families 8, conditional identity evaluation 2, migration tooling 1, and test tooling 3. The target is saved CPython 3.14.5, Windows AMD64; installed packaging 26.2 was used only for offline metadata parsing, not selected as a production toolchain."
+    },
+    {
+      "evidence": "derive_profiles.py; profiles.json; test-client-graph-2026-10-09/closure-observations.json",
+      "conclusion": "An independently authored queue-based traversal, not execution of the producer helper, reproduces all saved packages, selected extras, direct roots and complete clause-labelled active edge sets. It reprocesses a node when newly requested extras arrive, evaluates markers using the saved target environment and base-plus-requested extras, checks target presence and version specifiers, and continues to a fixed point. No saved Requires-Dist clause uses a negative extra comparison. API base is 30 packages/32 edges; API plus conditional identity is 35/41; migration is 5/5; combined is 48/57. The combined edges equal the earlier frozen graph exactly, not merely its counts."
+    },
+    {
+      "evidence": "profiles.json:package_records and outside_application_and_migration_candidates; package-roles.csv; backend-wheel-notice-inventory-2026-10-09/observations.json",
+      "conclusion": "Independent traversal from each of the 14 roots reproduces every package's root ancestry, profile memberships, version/hash identity and CSV row. Observed binary membership matches the prior saved inventory. The ten packages outside both the conditional identity-capable API and migration candidates are certifi, colorama, httpcore, httpx, iniconfig, packaging, pluggy, pygments, pytest and pytest-asyncio. These are exact metadata memberships in this graph, not claims of exclusive ownership, absence from delivered artifacts or lack of future consumers."
+    },
+    {
+      "evidence": "backend-role-closure-2026-10-09/primary-guidance.json, dependency-specifiers.rst.gz, dependency-groups.rst.gz, context7-guidance.json",
+      "conclusion": "Saved primary snapshots decompress to their declared raw bytes and hashes. Their optional-extra union, environment-marker and dependency-group metadata guidance supports the proposed classification and its limits. Context7 points to the same primary specifications. This does not choose a dependency-group format, package manager or build tool. Mutable upstream branch URLs remain dated captured evidence, not immutable signed upstream commits."
+    },
+    {
+      "evidence": "test-client-advisories-2026-10-09/request-1.json, response-1.json, query-captures.json, package-results.json, receipt.json and advisory-details.json",
+      "conclusion": "All 48 request positions contain exactly the saved graph's PyPI package name and version; no versions or packages are omitted or substituted. The saved HTTP 200 response contains exactly 48 empty result objects. Positional package-results mapping agrees for every index and the capture indexes are precisely 0 through 47. No response entry contains a next_page_token, error or advisory ID; the empty advisory-details list is therefore consistent. The saved one-request pagination-exhausted and 0 matching/48 unmatched observations are supported. The response's 157 bytes and SHA256 041fee8c1dd4980d34ba4578db45ebf1216e54bf562db6b81a9b6b6e00bf4c50 match its capture; capture time is 2026-10-08T23:39:06.772631+00:00."
+    },
+    {
+      "evidence": "test-client-advisories-2026-10-09/capture_advisories.py, primary-guidance.json, post-v1-querybatch.md.gz, get-v1-vulns.md.gz, context7-guidance.json",
+      "conclusion": "Static inspection confirms the producer preserves complete bounded response bytes, enforces request/result count and positional correspondence, stops on entry errors, tracks per-query continuation tokens and refuses repeated execution. The official saved querybatch contract guarantees response ordering and indicates exhausted results when next_page_token is absent. Saved guidance raw lengths/hashes agree after decompression. No details fetch was necessary for this zero-ID response. No producer/helper or network query was executed by this reviewer."
+    },
+    {
+      "evidence": "backend.before.md, backend-appendix.md, backend.proposed.md; README.before.md and README.proposed.md; docs/phase-1-compatibility/backend-evidence-2026-10-04.md:681-749 and README.md:5-17",
+      "conclusion": "The backend role amendment is exactly the preserved prior bytes plus its 3,874-byte appendix. The README proposal is one 441-byte insertion preserving all prior bytes. Both canonical documents equal their frozen proposed snapshots. The role tables, overlaps, test-library distinction and saved OSV observation are accurate and bounded. Authlib/HTTPX2 remains a conditional evaluated option; HTTPX and HTTPX2 remain distinct. Metadata closure is expressly neither independently resolved/installed profile qualification nor runtime-use/deployed-exclusion proof. The saved no-match response is expressly not absence of vulnerabilities, embedded/native/OS coverage, exploitability assessment or security/advisory clearance. D-068's deferred provider/OS planning and unchanged protected requirements are retained."
+    },
+    {
+      "evidence": "staff-identity-client-options-2026-10-08/review/independent-review-identity-client-options-v1.json; test-client-graph-2026-10-09/result-review/independent-review-native-notices-v1.json; native-trial/receipt.json; frozen document context",
+      "conclusion": "Earlier 38-input identity-option and 299-input native/notice reviews remain bounded to their saved inputs. The 18 native cases qualify the combined synthetic library environment, not these separately installed profiles or actual Hengshi/OIDC/database behavior. Their results, 60 discovered notices and 11 binary-member package observations are referenced without re-executing, re-adopting or expanding those reviews. This new receipt adds only the authorized static role/advisory/doc scope."
+    }
+  ],
+  "reproducible_inspection": {
+    "execution": "Independent Python stdin inspections using C:/Python314/python.exe, standard-library json/pathlib/hashlib/re/csv/collections/gzip, and already-installed packaging 26.2 Requirement/marker parsing. No producer code imported or executed and no candidate module imported.",
+    "integrity_method": "Read manifest bytes, assert its expected SHA256, and for every declared input compare read-byte length and SHA256 to the manifest. Repeat after calculations. Independently compare the six protected paths to protected_inputs_before in the saved graph receipt.",
+    "graph_method": "Seed a deque with explicit root Requirements. For each dequeued canonical package, evaluate only newly reached base/extra contexts, add qualifying clause-labelled edges, enqueue child Requirements, and revisit when additional extras arrive. Assert each active target exists and satisfies its specifier. Compare full sorted node, extras, root and edge structures to profiles.json, then compare combined edges to the frozen graph. Repeat from each individual root for ancestry and verify every CSV row.",
+    "advisory_method": "Zip the saved graph package_records, request queries, response results and package-results; assert 48 positions and exact PyPI/name/version equality at each position, empty result/matches objects, indexes 0 through 47, no continuation token, and empty advisory-details. Verify capture response length/hash and saved primary decompression identities.",
+    "document_method": "Assert backend.proposed bytes equal backend.before plus backend-appendix, README proposed has one 441-byte insertion at the current-authority heading with prefix/suffix unchanged, and current canonical bytes equal both proposed snapshots. Inspect substantive boundaries in the new prose and preserved adjacent advisory/native context."
+  },
+  "limits": [
+    "PASS concerns the exact frozen 37-input packet and bounded static claims. It does not grant founder acceptance, product completion, production selection, dependency installation, upgrades, commits or deployment.",
+    "No fresh resolver, producer helper, test, candidate import, profile installation, network, Figma, account/provider, application or Git action occurred. Only this review receipt was written; no further delegation occurred.",
+    "Marker/root reachability is target-specific saved-metadata analysis. Separately selected serving, identity, migration and test profiles still need independent resolution, reproducible locks, platform qualification, actual consumers and delivered-content inspection under their later authorized work.",
+    "Authlib/HTTPX2 is a leading conditional evaluated option, not an approved implemented Entra/OIDC adapter. Identity validation, authorization, session, database, concurrency and recovery behavior remain outside these observations.",
+    "Zero OSV matches means only the saved exact-PyPI database response at capture time. It establishes no absence of vulnerabilities, complete advisory database coverage, authenticity/provenance, embedded/native/OS coverage, application exploitability or security clearance; later delivered-graph checks and triage remain necessary.",
+    "Earlier native/notice and proposal reviews retain their frozen scopes. This review does not re-review all underlying wheels, all tests or full licence applicability and does not expand source/notice observations into legal or supply-chain clearance.",
+    "The separate proof/challenge-disposition proposal, Figma export/reconnection and full compatibility/integrated Phase 1 acceptance are outside this review."
+  ]
+}

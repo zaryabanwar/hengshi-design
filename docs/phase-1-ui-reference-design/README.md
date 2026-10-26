@@ -1,3 +1,54 @@
+# Phase 1 UI reference-design — v1
+
+## Current authority — reconciled 2026-10-06
+
+The documentation contract and its accepted amendments are definition authority;
+reference-screen production and application implementation remain separately gated.
+Use [DECISIONS.md](../../DECISIONS.md), the
+[current v1 constitution](../../.specify/memory/constitution.md) and the
+[current reconciliation map](../software-definition/04-reconciliation-map.md)
+before interpreting the preserved package snapshot below.
+
+- D-037 accepted MA-024's initial documentation contract. D-045 replaced the inert
+  stream-axis model with primitive stream declarations, computed template support
+  and inherited route/flow obligations. Later accepted amendments govern current
+  privacy, controls, recovery and evidence requirements; earlier freeze hashes
+  identify their historical inputs and must not be mistaken for the current tree.
+- D-061 accepted the independently reviewed definition/verifier baseline and closed
+  MA-029/R-035's definition-quality gate. D-063 accepted the exact source-bound
+  [column-authority registry](column-authority.json) and pinned independent review,
+  then authorized its guard integration. These acceptances do not prove visual,
+  accessibility or runtime conformance. The D-061 reviewed snapshot remains a
+  dated identity, not a claim that later reconciled entry pages share its hash.
+- [MA-025 production authority](../phase-1-ui-reference-production/README.md) remains
+  bounded. D-075 approves B01 execution/organisation; native PRE is verified and
+  the founder-approved first combined call created six unvalidated editable drafts.
+  [Successful repair and inspection evidence](../phase-1-ui-reference-production/validation/capability-evidence.md#b01-successful-reflow-and-final-draft-screenshot--2026-10-06)
+  records corrected reflow and visual inspection of all six initial views; use the
+  linked ledger for current counts. The next navigation composition is prepared
+  locally; each new call still needs fresh immediate approval. Complete coverage, exports,
+  independent reviews, _EXIT and founder pilot acceptance remain; later batches
+  and application implementation are not released by these observations.
+- D-064 onward adds mouse/touch movement, nearby streaming, original organic campus
+  direction and contextual sound. The
+  [current amendment review](../phase-1-architecture/contracts/reviews/current-definition-amendments-2026-10-04.md)
+  covers its listed World/storyboard/contracts hashes only. It does not accept
+  production appearance or silently amend the frozen reference-screen contracts.
+  Final screens must reconcile these amendments before implementation.
+
+Current production-definition naming is v1; dependency selection uses the latest
+mutually compatible stable graph. D-068 defers cloud/provider/cost planning and
+keeps Outlook/Teams without a Microsoft 365 prerequisite. D-070 retains reviewed,
+admin-editable company facts; privacy/security alias ownership stays undecided.
+See the current map for remaining compatibility, legal, geometry and visual inputs.
+
+## Preserved package snapshot
+
+The following package dates, proposed-status wording, gate sequence and freeze
+references describe the producer snapshots they name. Read them through the
+current authority above; they are not fresh requests to approve settled decisions.
+The original snapshot body is retained as provenance.
+
 # Phase 1 UI Reference-Design Contract
 
 **Project:** Hengshi Design  
@@ -123,7 +174,7 @@ equivalent semantic Quick Access journey without WebGL.
 Every route, flow, template, profile, and batch also selects an explicit WCAG 2.2
 SC 2.2.1 time-limit branch: `TL-REMOVABLE-ADJUSTABLE` (off or adjustable before
 start), `TL-WARN-EXTEND` (warning at least 20 seconds before expiry plus a simple
-extension of at least 10 times the default), `TL-EXCEPTION` (a documented,
+extension action with at least ten extension opportunities), `TL-EXCEPTION` (a documented,
 criterion-supported exception accepted through the standards-exception gate), or
 `TL-NOT-APPLICABLE` (no user time limit). Permitted data and the last authoritative
 state must survive expiry where allowed, and accessible reauthentication must

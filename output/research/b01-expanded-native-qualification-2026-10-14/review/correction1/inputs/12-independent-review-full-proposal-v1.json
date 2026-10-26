@@ -1,0 +1,367 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-14",
+  "reviewer": "Independent agent /root/review_native_trial_result_v1",
+  "review_complete": true,
+  "review_outcome": "PASS",
+  "revision_cycle_reviewed": 1,
+  "scope": "Corrected proposed graph/allocation consistency only. Not a complete executable plan, source admission, constructed/native UI behavior, actual evidence coverage, runtime/accessibility proof, integrated acceptance or external-write release.",
+  "packet": {
+    "path": "review-inputs-v1.json",
+    "sha256": "d50832c6656caf78d502339770253d6ccca7540268eb54dbd86675d73453752f",
+    "inputs": 25,
+    "source_bytes_and_sha256_matches": 25,
+    "frozen_bytes_and_sha256_matches": 25,
+    "failures": [],
+    "binding_rule": "Resolve each snapshot relative to correction1, including21 shared predecessor snapshots and four new snapshots."
+  },
+  "predecessor": {
+    "path": "../review-inputs-v1.json",
+    "sha256": "dd9c2c86284e05cfa198e9390939b87c79f07ecb363c2c0acd1ada9a681bcf52",
+    "preserved_snapshot_hashes_rechecked": 25,
+    "formal_predecessor_verdict_inherited": false,
+    "explanation": "Interrupted initial review produced interim observations and no formal receipt. Current PASS comes from corrected-byte checks; neither a predecessor verdict nor native six-case PASS is inherited."
+  },
+  "findings": [],
+  "actionable_current_proposal_finding_count": 0,
+  "disposition": "Corrected proposal is internally consistent within this scope. Finish the held BNP/executable preparation before any external release; counts, hash checks and metadata resolution are not coverage or acceptance.",
+  "corrections": [
+    {
+      "subject": "Canonical destination context",
+      "outcome": "PASS",
+      "locations": [
+        "inputs/23-full-case-graph-proposal-v1.json#/nodes/102",
+        "inputs/23-full-case-graph-proposal-v1.json#/edges/680/destination_tuple/context",
+        "inputs/20-build_full_case_graph_v1.py:28-34"
+      ],
+      "evidence": "All100 canonical_path nodes agree with their route ID/path/context; every copied edge tuple matches its actual symbolic endpoint. Canonical destination query_fixture is cleared, distinct from local origin input. The56 prior path conflicts are gone."
+    },
+    {
+      "subject": "Flow-owned profile metadata",
+      "outcome": "PASS",
+      "locations": [
+        "inputs/24-construction-bindings-proposal-v1.json#/units/376/profile_ids",
+        "../inputs/08-foundation-flow-coverage.csv[source_id=FLOW-NAVIGATION-SEARCH]",
+        "../inputs/15-ui-exit-coverage.ps1:24-36"
+      ],
+      "evidence": "Navigation flow units376-383 now derive VP-INTERACTIVE/MP-INTERACTIVE from owner; REF keeps template VP-PUBLIC/MP-PUBLIC. Independently checked actual owner profile/time branch for all400 units."
+    },
+    {
+      "subject": "More time and newer deadline",
+      "outcome": "PASS",
+      "locations": [
+        "inputs/23-full-case-graph-proposal-v1.json#/nodes/683",
+        "inputs/23-full-case-graph-proposal-v1.json#/edges/1539",
+        "inputs/23-full-case-graph-proposal-v1.json#/nodes/729",
+        "inputs/23-full-case-graph-proposal-v1.json#/nodes/730",
+        "../inputs/16-source-bindings-and-cases-v1.json#/timing_extension_fixture_recipe/branches/0"
+      ],
+      "evidence": "All40 APPLIED stages now have More time;36 added edges reach next pending fixture independently of inspection-next. Eight newer-source/check nodes preserve original receipt/newer/current permitted deadline and reject older overwrite. Status-check never redispatches."
+    }
+  ],
+  "case_assessment": [
+    {
+      "case_id": "B01-P01",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/0/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/96",
+      "assessment": "Explicit disclosure/Close/Escape with Book retained; focus entry/return remains authored semantics."
+    },
+    {
+      "case_id": "B01-P02",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/1/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/111",
+      "assessment": "Closed-menu Tab does not open disclosure; declared open focus sequence and Enter/Space/Escape are finite simulations. Real Tab/focus and approved leave/close policy remain qualitative prerequisites."
+    },
+    {
+      "case_id": "B01-P03",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/2/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/120",
+      "assessment": "Cancelled press is explicitly non-navigation and completed activation opens; inspection control does not prove real pointer cancellation/touch."
+    },
+    {
+      "case_id": "B01-P04",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/3/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/98",
+      "assessment": "Four canonical B02 destination boundaries and changed-heading focus annotations; corrected context agrees with route/path, without actual B02 content."
+    },
+    {
+      "case_id": "B01-P05",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/4/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/104",
+      "assessment": "Book exists closed/open and ends at fixed non-booking B06 boundary."
+    },
+    {
+      "case_id": "B01-P06",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/5/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/204",
+      "assessment": "Explicit modal open, labelled preset input, Clear/browse and Close/Escape; static fallback retained. Focus/inert background is annotation/unwired fixture, not actual DOM semantics."
+    },
+    {
+      "case_id": "B01-P07",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/6/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/208",
+      "assessment": "Preset design/unmatched queries distinguish browse/loading/results/no-results; Clear restores browse; result enters clean canonical boundary. Synthetic completion is not search."
+    },
+    {
+      "case_id": "B01-P08",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/7/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/217",
+      "assessment": "Unavailable/offline/stale/error has deliberate active-release static-directory fixture; stale candidate not activated. No live release/index claim."
+    },
+    {
+      "case_id": "B01-P09",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/8/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/0",
+      "assessment": "All16 pairs per three hosts: choice preserves active, Apply sets active/pending to selected value, diagonal no-op, context preserved logically."
+    },
+    {
+      "case_id": "B01-P10",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/9/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/48",
+      "assessment": "Selection/focus/Tab/blur/time inspection paths do not Apply; deliberate Apply does. Native form Enter is annotation, not global Enter; arrows/touch/native semantics still require qualitative mapping."
+    },
+    {
+      "case_id": "B01-P11",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/10/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/300",
+      "assessment": "Above-ceiling chronology/refusal preserves prior preference without live renderer claim; Quick Access requires deliberate choice/Apply, no silent fallback."
+    },
+    {
+      "case_id": "B01-P12",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/11/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/332",
+      "assessment": "Apply failure retains active/pending/context; Try again returns to same deliberate fixture, not automatic success."
+    },
+    {
+      "case_id": "B01-P13",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/12/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/404",
+      "assessment": "Applied mode with preference_saved=false retains honest non-persistence and content/Book availability."
+    },
+    {
+      "case_id": "B01-P14",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/13/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/584",
+      "assessment": "Distinct recovery classes, no confirmed success; pending status checks reconcile same intent without dispatch; public recovery explicit."
+    },
+    {
+      "case_id": "B01-P15",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/14/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/612",
+      "assessment": "Stale/conflict status and explicit current-snapshot fixture retain same intent/no fresh dispatch; private outcome control is not actual reconciliation."
+    },
+    {
+      "case_id": "B01-P16",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/15/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/640",
+      "assessment": "Explicit canonical or Quick Access choice/Apply after asset/checksum failure; no silent mode change/failed candidate activation. Physical effects unqualified."
+    },
+    {
+      "case_id": "B01-P17",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/16/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/680",
+      "assessment": "Synthetic20-second warnings,30-minute grants,ten opportunities per stream plus uncapped further pending; all40 applied stages bind More time; End during pending and newer snapshot precedence retained."
+    },
+    {
+      "case_id": "B01-P18",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/17/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/731",
+      "assessment": "Terminal/late reply only reaches terminal/public/B05/B06 boundaries; no credential revival/private restoration or automatic new permission."
+    },
+    {
+      "case_id": "B01-P19",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/18/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/107",
+      "assessment": "Normal invoker return and absent-invoker logical heading/control fallback are separate authored paths."
+    },
+    {
+      "case_id": "B01-P20",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/19/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/904",
+      "assessment": "Instant stable disclosure/status fixtures and content/action parity; actual reduced-motion/focus surfaces remain unqualified."
+    },
+    {
+      "case_id": "B01-P21",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/20/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/928",
+      "assessment": "Input equivalence scaffolds plus full linear profiles; viewport/mode/stress/400%/focus and physical/AT evidence undischarged."
+    },
+    {
+      "case_id": "B01-P22",
+      "outcome": "PASS",
+      "level": "Proposed fixture-path semantics only",
+      "requirement_pointer": "../inputs/16-source-bindings-and-cases-v1.json#/cases/21/required_outcome",
+      "representative_pointer": "inputs/23-full-case-graph-proposal-v1.json#/nodes/668",
+      "assessment": "Ordinary status retains focus; deliberate summary differs; current/unknown branches invent no success. Actual announcements/smallest-action anatomy remain."
+    }
+  ],
+  "graph_assessment": {
+    "nodes": 952,
+    "edges": 2540,
+    "private_entries": 268,
+    "source_case_records": 22,
+    "source_requirements_unchanged": true,
+    "checks": "Independent endpoint/unique-symbol/tuple checks; every Change to targets parent variant in same logical set; No transition is self. Selection preserves active/context and sets requested pending. Apply yields pending/pending with diagonal no-op. P12 retains failed tuple; P13 confirms mode with preference_saved=false.",
+    "timing": "All warning examples are20 seconds before labelled deadline; grant is exactly30 minutes after admission. Ten grants per stream and further pending imply no absolute cap. All terminal reachable paths remain terminal/fixed public boundaries; no route back to active access.",
+    "limits": "Logical ownership/default/scroll matching is not observed Figma behavior or actual component IDs. Synthetic outcome/cancellation/stage/focus controls are labelled inspection fixtures, not production user/backend contracts."
+  },
+  "ownership": {
+    "public_units": 400,
+    "unique_ids": 400,
+    "prototypes": 12,
+    "annotations": 12,
+    "logical_node_allocations": 952,
+    "private_instantiations": 1240,
+    "unallocated_nodes": 0,
+    "locations": [
+      "inputs/24-construction-bindings-proposal-v1.json#/units",
+      "inputs/24-construction-bindings-proposal-v1.json#/prototypes/0/ownership_policy",
+      "inputs/24-construction-bindings-proposal-v1.json#/node_allocation/0/owned_instantiations"
+    ],
+    "checks": "Each prototype's independent reachability closure equals private_nodes and each reachable recipe has exactly one mapping for that prototype. Recipe repetitions plan independent physical copies. REF is template-owned; navigation/directory use FLOW-NAVIGATION-SEARCH; recovery uses FLOW-ERROR-OFFLINE-RECOVERY. ACT-09 behavior authority does not expand INSTANCE ownership. No public pending-stream axis or fabricated state/INSTANCE.",
+    "limits": "Actual node/set/control/flow IDs and export paths remain unassigned. Entry coordinates do not earn reached/unexported destination frame coordinates."
+  },
+  "profiles": {
+    "assignments": 9,
+    "value_stream_obligations": 400,
+    "outcome": "PASS",
+    "locations": [
+      "../inputs/10-responsive-state-mode-matrix.csv",
+      "inputs/24-construction-bindings-proposal-v1.json#/profile_obligations"
+    ],
+    "checks": "Independent required/critical values from frozen matrix agree with nine template profile assignments and all value/four-stream obligation unit axes. Critical obligations allocate FRAME. Linear profile coverage with deduplicated coordinates; no unnecessary Cartesian product.",
+    "limits": "All qualitatively_discharged=false. Minimum_evidence requires actual stress/reflow/reading/focus, viewport measurements, errors, semantic/screen-reader annotations, print/assets/fonts/forced colors and applicable browser/time evidence. A named FRAME or attached row cannot discharge these."
+  },
+  "primitives": {
+    "functional_roles": 18,
+    "assigned_definition_rows": 28,
+    "shared_recovery_visual_specimens": 48,
+    "outcome": "PASS",
+    "locations": [
+      "inputs/24-construction-bindings-proposal-v1.json#/functional_roles",
+      "inputs/24-construction-bindings-proposal-v1.json#/complete_assigned_primitive_definitions",
+      "../inputs/09-component-primitives.csv[primitive_id=PRIM-001]"
+    ],
+    "checks": "Mechanical14:18 PRIM-015 reuse is visual proxy only, not a new navigation/directory dependency. Menu/Close destinations PRIM-002; directory PRIM-004; Book PRIM-014 where assigned; public shell/stream control PRIM-001; recovery actions PRIM-015. PRIM-001 Public semantic shell explicitly includes direct Book, supporting directory_shell_book mapping.",
+    "limits": "All28 qualitative anatomy/state/evidence mappings remain TODO; actual IDs null. Per-use/control anatomy, variants/pseudo-states and approved functional evidence are still required. Attached rows/labels are not coverage."
+  },
+  "guards": {
+    "outcome": "PASS",
+    "location": "inputs/24-construction-bindings-proposal-v1.json#/staged_guards",
+    "checks": "Source admission, archived pre-copy authority, owned actual-ID discovery, one-action wiring/qualification and exit/restore/review/founder gates remain separate. Missing source admission prevents copying; missing set/control/target stops affected wiring. No hidden API/quota/AI workaround, source/master reset, unapproved detach/delete or extra authority.",
+    "limits": "Concrete admitted-source records and symbolic ownership/export/copy manifest remain incomplete. No current source or external write is admitted here."
+  },
+  "actual_metadata_probe": {
+    "outcome": "PASS",
+    "rows": 400,
+    "unresolved": 0,
+    "exit_metadata_gaps": [],
+    "method": "Replayed frozen actual Get-UiStreamMapping/Get-UiResolvedManifestRow/Get-UiExitCoverageGaps using frozen real CSV. Proposed JSON units converted to metadata rows (B01,revision1,semicolon lists). Loaded definitions without executing producer generation/write scripts.",
+    "limits": "Bounded three-primary-template B01 harness with empty routes. This checks local proposed metadata, not entire batch/root manifest, qualitative/physical evidence or readiness."
+  },
+  "remaining_BNP_requirements": [
+    {
+      "id": "BNP-01",
+      "status": "DOING",
+      "proposal_progress": "Unique public identities, allowed owners and per-prototype copy associations specified.",
+      "remaining": "Reviewed exact source/copy/export ownership manifest; actual admitted/discovered IDs/exports after applicable release. No destination coordinate credit from entry.",
+      "location": "inputs/24-construction-bindings-proposal-v1.json#/node_allocation"
+    },
+    {
+      "id": "BNP-02",
+      "status": "DOING",
+      "proposal_progress": "Functional roles separate mechanical proxies and approved rows.",
+      "remaining": "Exact per-control/use anatomy, variants/pseudo-states, native form/keyboard/arrows/touch/AT/focus and qualitative evidence mapping remain TODO.",
+      "location": "inputs/24-construction-bindings-proposal-v1.json#/complete_assigned_primitive_definitions"
+    },
+    {
+      "id": "BNP-03",
+      "status": "DOING",
+      "proposal_progress": "Finite graph/tuples/logical sets/fixed boundaries/noops/scroll-default policy specified.",
+      "remaining": "Fresh enlarged LOW/SEMANTIC/three-host, Navigate-to/reset, Tab/Enter/Space and nonzero scroll/default/repeated/failure/refusal/open-panel qualifications. Old native PASS stays bounded to old inputs.",
+      "location": "inputs/23-full-case-graph-proposal-v1.json#/native_action_limits"
+    },
+    {
+      "id": "BNP-04",
+      "status": "DOING",
+      "proposal_progress": "Nine full profile/value/four-stream allocations and associations specified.",
+      "remaining": "Exact-source qualitative reuse/adaptation, contextual recovery embeddings, measured intermediate/stress layouts and minimum evidence/semantics annotations remain. Shared48 specimens supplement full hosts.",
+      "location": "inputs/24-construction-bindings-proposal-v1.json#/profile_obligations"
+    },
+    {
+      "id": "BNP-05",
+      "status": "DOING",
+      "proposal_progress": "Staged guards/post-copy discovery defined without impossible advance IDs.",
+      "remaining": "Per-source fresh file/page/tree/property/style/font/token/reaction records; bounded preapproved copy manifest, drift refusals, before/after source proof, native tested restore/_EXIT and complete executable plan/release.",
+      "location": "inputs/24-construction-bindings-proposal-v1.json#/staged_guards"
+    },
+    {
+      "id": "BNP-06",
+      "status": "DOING",
+      "proposal_progress": "Finite timing/terminal/unknown/current/deadline entries, ten opportunities and continuing More time specified.",
+      "remaining": "Approved source/host/control/annotation/evidence bindings, truthful lifetime display and actual usable20-second/ten-opportunity inspection. Real clock/race/auth/privacy/DOM/live-region/keyboard/touch/AT enforcement remains later runtime.",
+      "location": "inputs/23-full-case-graph-proposal-v1.json#/nodes/680"
+    }
+  ],
+  "retained_limits": [
+    "No complete executable plan/source admission/construction/external-write release.",
+    "No new native behavior/default/reset/scroll, runtime/product/WCAG/physical-device/AT evidence.",
+    "No BNP closure, actual full22/four-stream/profile acceptance or readiness from counts/hashes/metadata checks.",
+    "Protected-source equivalence, tested restore/_EXIT and founder B01/pilot/integrated Phase1 acceptance remain.",
+    "No Figma/MCP/AI/account/provider/credentials/paid/application/Git/publication/deployment action."
+  ],
+  "review_actions": [
+    "Verified current25 source/snapshot byte/SHA256 bindings and original25 preserved snapshot hashes.",
+    "Structured graph/CSV/authority/code inspection and independent semantics/reachability/ownership/profile/timing/terminal checks.",
+    "Replayed frozen actual pure metadata functions in bounded harness, no producer scripts executed.",
+    "Only this receipt exclusive-created; no UI/Figma/account/app/Git mutation or delegation."
+  ],
+  "validation_classification": {
+    "artifact_integrity": "PASS",
+    "proposed_graph_allocation_consistency": "PASS with retained prerequisites",
+    "executable_native_runtime_qualitative_phase_readiness": "Not established"
+  }
+}

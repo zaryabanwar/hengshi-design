@@ -1,0 +1,426 @@
+- application "Figma Design, 1 item selected"
+- status: Screenreader support for the board is currently disabled. To enable it via Accessibility settings, press Ctrl+K, type Accessibility Settings, and press Enter. To see available keyboard shortcuts, enter Ctrl+Shift+Question mark .
+- status
+- region "Comments on canvas":
+  - button "Create new comment"
+- region "Left sidebar":
+  - toolbar "Navigation Bar":
+    - button "Main menu":
+    - separator
+    - button "File" [expanded]:
+      - generic: File
+    - button "Agents":
+      - generic: Agents
+    - button "Assets":
+      - generic: Assets
+    - button "Tools":
+      - generic: Tools
+    - separator
+    - button "Variables":
+      - generic: Variables
+  - button "Hengshi Design v1 — UI References, file name": Hengshi Design v1 — UI References
+  - generic: File name
+  - button "Edit file menu":
+  - button "Minimize UI":
+  - link "hengshi-design":
+    - /url: https://www.figma.com/files/team/1472694121837770005/project/666072293
+  - button "Free":
+    - generic: Free
+  - heading "Pages Find Add new page" [level=2]:
+    - button "Pages" [expanded]:
+      - generic: Pages
+    - button "Find":
+    - button "Add new page":
+  - grid:
+    - row "Page 1":
+      - gridcell "Page 1":
+        - button "Page 1":
+          - generic: Page 1
+  - slider "Resize handle"
+  - heading "Layers" [level=2]:
+    - button "Layers" [expanded]:
+      - generic: Layers
+    - button "Collapse layers":
+  - treegrid:
+    - row "ENQ_DIRECTORY_HIGH / PRESERVE probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_HIGH / PRESERVE probe":
+        - generic: ENQ_DIRECTORY_HIGH / PRESERVE probe
+    - row "ENQ_DIRECTORY_HIGH / Preview" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_HIGH / Preview":
+        - generic: ENQ_DIRECTORY_HIGH / Preview
+    - row "ENQ_NAVIGATION_SEMANTIC / RESET probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_SEMANTIC / RESET probe":
+        - generic: ENQ_NAVIGATION_SEMANTIC / RESET probe
+    - row "ENQ_NAVIGATION_SEMANTIC / PRESERVE probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_SEMANTIC / PRESERVE probe":
+        - generic: ENQ_NAVIGATION_SEMANTIC / PRESERVE probe
+    - row "ENQ_NAVIGATION_SEMANTIC / Preview" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_SEMANTIC / Preview":
+        - generic: ENQ_NAVIGATION_SEMANTIC / Preview
+    - row "ENQ_NAVIGATION_LOW / RESET probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_LOW / RESET probe":
+        - generic: ENQ_NAVIGATION_LOW / RESET probe
+    - row "ENQ_NAVIGATION_LOW / PRESERVE probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_LOW / PRESERVE probe":
+        - generic: ENQ_NAVIGATION_LOW / PRESERVE probe
+    - row "ENQ_NAVIGATION_LOW / Preview" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_LOW / Preview":
+        - generic: ENQ_NAVIGATION_LOW / Preview
+    - row "ENQ_NAVIGATION_MEDIUM / RESET probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_MEDIUM / RESET probe":
+        - generic: ENQ_NAVIGATION_MEDIUM / RESET probe
+    - row "ENQ_NAVIGATION_MEDIUM / PRESERVE probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_MEDIUM / PRESERVE probe":
+        - generic: ENQ_NAVIGATION_MEDIUM / PRESERVE probe
+    - row "ENQ_NAVIGATION_MEDIUM / Preview" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_MEDIUM / Preview":
+        - generic: ENQ_NAVIGATION_MEDIUM / Preview
+    - row "B01 qualification / RECOVERY / v1" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "B01 qualification / RECOVERY / v1":
+        - generic: B01 qualification / RECOVERY / v1
+    - row "SEMANTIC, SEMANTIC, NOT_APPLICABLE" [expanded] [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "SEMANTIC, SEMANTIC, NOT_APPLICABLE":
+        - generic: SEMANTIC, SEMANTIC, NOT_APPLICABLE
+    - row "Trial scroll marker" [level=3]:
+      - gridcell:
+      - gridcell "Trial scroll marker":
+        - generic: Trial scroll marker
+    - row "Context summary / fixed Services fixture" [level=3]:
+      - gridcell:
+      - gridcell "Context summary / fixed Services fixture":
+        - generic: Context summary / fixed Services fixture
+    - row "Underlying Services fixture (unwired while modal open)" [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "Underlying Services fixture (unwired while modal open)":
+        - generic: Underlying Services fixture (unwired while modal open)
+    - row "Menu action Toggle layer visibility" [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "Menu action":
+        - generic: Menu action
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility" [checked]
+        - generic: Toggle layer visibility
+    - row "PRIM-001 / Delivery stream control / B01 v1" [expanded] [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "PRIM-001 / Delivery stream control / B01 v1":
+        - generic: PRIM-001 / Delivery stream control / B01 v1
+    - row "Delivery stream — currently Quick Access" [level=4]:
+      - gridcell:
+      - gridcell "Delivery stream — currently Quick Access":
+        - generic: Delivery stream — currently Quick Access
+    - row "Native-radio appearance reference / S-HIGH" [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-HIGH":
+        - generic: Native-radio appearance reference / S-HIGH
+    - row "Native-radio appearance reference / S-MEDIUM" [expanded] [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-MEDIUM":
+        - generic: Native-radio appearance reference / S-MEDIUM
+    - row "○ Balanced 3D" [level=5]:
+      - gridcell:
+      - gridcell "○ Balanced 3D":
+        - generic: ○ Balanced 3D
+    - row "Native-radio appearance reference / S-LOW" [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-LOW":
+        - generic: Native-radio appearance reference / S-LOW
+    - row "Native-radio appearance reference / S-SEMANTIC" [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-SEMANTIC":
+        - generic: Native-radio appearance reference / S-SEMANTIC
+    - row "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene." [level=4]:
+      - gridcell:
+      - gridcell "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.":
+        - generic: Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.
+    - row "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change." [level=4]:
+      - gridcell:
+      - gridcell "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.":
+        - generic: Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.
+    - row "PRIM-015 / General action button / base" [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "PRIM-015 / General action button / base":
+        - generic: PRIM-015 / General action button / base
+    - row "Privacy and storage" [level=4]:
+      - gridcell:
+      - gridcell "Privacy and storage":
+        - generic: Privacy and storage
+    - row "SEMANTIC, LOW, NOT_APPLICABLE" [expanded] [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "SEMANTIC, LOW, NOT_APPLICABLE":
+        - generic: SEMANTIC, LOW, NOT_APPLICABLE
+    - row "Trial scroll marker" [level=3]:
+      - gridcell:
+      - gridcell "Trial scroll marker":
+        - generic: Trial scroll marker
+    - row "Context summary / fixed Services fixture" [level=3]:
+      - gridcell:
+      - gridcell "Context summary / fixed Services fixture":
+        - generic: Context summary / fixed Services fixture
+    - row "Underlying Services fixture (unwired while modal open)" [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "Underlying Services fixture (unwired while modal open)":
+        - generic: Underlying Services fixture (unwired while modal open)
+    - row "Menu action Toggle layer visibility" [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "Menu action":
+        - generic: Menu action
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility" [checked]
+        - generic: Toggle layer visibility
+    - row "PRIM-001 / Delivery stream control / B01 v1" [level=3] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "PRIM-001 / Delivery stream control / B01 v1":
+        - generic: PRIM-001 / Delivery stream control / B01 v1
+    - row "SEMANTIC, MEDIUM, NOT_APPLICABLE" [expanded] [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "SEMANTIC, MEDIUM, NOT_APPLICABLE":
+        - generic: SEMANTIC, MEDIUM, NOT_APPLICABLE
+    - row "Trial scroll marker" [level=3]:
+      - gridcell:
+      - gridcell "Trial scroll marker":
+        - generic: Trial scroll marker
+    - row "Context summary / fixed Services fixture" [level=3]:
+      - gridcell:
+      - gridcell "Context summary / fixed Services fixture":
+        - generic: Context summary / fixed Services fixture
+    - row "Underlying Services fixture (unwired while modal open)" [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "Underlying Services fixture (unwired while modal open)":
+        - generic: Underlying Services fixture (unwired while modal open)
+    - row "Menu action Toggle layer visibility" [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "Menu action":
+        - generic: Menu action
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility" [checked]
+        - generic: Toggle layer visibility
+    - row "PRIM-001 / Delivery stream control / B01 v1" [expanded] [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "PRIM-001 / Delivery stream control / B01 v1":
+        - generic: PRIM-001 / Delivery stream control / B01 v1
+    - row "Delivery stream — currently Quick Access" [level=4]:
+      - gridcell:
+      - gridcell "Delivery stream — currently Quick Access":
+        - generic: Delivery stream — currently Quick Access
+    - row "Native-radio appearance reference / S-HIGH" [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-HIGH":
+        - generic: Native-radio appearance reference / S-HIGH
+    - row "Native-radio appearance reference / S-MEDIUM" [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-MEDIUM":
+        - generic: Native-radio appearance reference / S-MEDIUM
+    - row "Native-radio appearance reference / S-LOW" [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-LOW":
+        - generic: Native-radio appearance reference / S-LOW
+    - row "Native-radio appearance reference / S-SEMANTIC" [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-SEMANTIC":
+        - generic: Native-radio appearance reference / S-SEMANTIC
+    - row "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene." [level=4]:
+      - gridcell:
+      - gridcell "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.":
+        - generic: Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.
+    - row "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change." [level=4]:
+      - gridcell:
+      - gridcell "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.":
+        - generic: Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.
+    - row "PRIM-015 / General action button / base" [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "PRIM-015 / General action button / base":
+        - generic: PRIM-015 / General action button / base
+    - row "Privacy and storage" [level=4]:
+      - gridcell:
+      - gridcell "Privacy and storage":
+        - generic: Privacy and storage
+    - row "SEMANTIC, HIGH, NOT_APPLICABLE" [expanded] [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "SEMANTIC, HIGH, NOT_APPLICABLE":
+        - generic: SEMANTIC, HIGH, NOT_APPLICABLE
+    - row "Trial scroll marker" [level=3]:
+      - gridcell:
+      - gridcell "Trial scroll marker":
+        - generic: Trial scroll marker
+    - row "Context summary / fixed Services fixture" [level=3]:
+      - gridcell:
+      - gridcell "Context summary / fixed Services fixture":
+        - generic: Context summary / fixed Services fixture
+    - row "Underlying Services fixture (unwired while modal open)" [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "Underlying Services fixture (unwired while modal open)":
+        - generic: Underlying Services fixture (unwired while modal open)
+    - row "Menu action Toggle layer visibility" [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "Menu action":
+        - generic: Menu action
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility" [checked]
+        - generic: Toggle layer visibility
+    - row "PRIM-001 / Delivery stream control / B01 v1" [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "PRIM-001 / Delivery stream control / B01 v1":
+        - generic: PRIM-001 / Delivery stream control / B01 v1
+    - row "LOW, SEMANTIC, NOT_APPLICABLE" [expanded] [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "LOW, SEMANTIC, NOT_APPLICABLE":
+        - generic: LOW, SEMANTIC, NOT_APPLICABLE
+    - row "Trial scroll marker" [level=3]:
+      - gridcell:
+      - gridcell "Trial scroll marker":
+        - generic: Trial scroll marker
+    - row "Context summary / fixed Services fixture" [level=3]:
+      - gridcell:
+      - gridcell "Context summary / fixed Services fixture":
+        - generic: Context summary / fixed Services fixture
+    - row "Underlying Services fixture (unwired while modal open)" [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "Underlying Services fixture (unwired while modal open)":
+        - generic: Underlying Services fixture (unwired while modal open)
+    - row "Menu action Toggle layer visibility" [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "Menu action":
+        - generic: Menu action
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility" [checked]
+        - generic: Toggle layer visibility
+    - row "PRIM-001 / Delivery stream control / B01 v1" [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "PRIM-001 / Delivery stream control / B01 v1":
+        - generic: PRIM-001 / Delivery stream control / B01 v1
+    - row "LOW, LOW, NOT_APPLICABLE" [expanded] [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "LOW, LOW, NOT_APPLICABLE":
+        - generic: LOW, LOW, NOT_APPLICABLE
+  - slider "Resize handle"
+- region "Right sidebar":
+  - button "Multiplayer tools":
+  - group "Prototype view":
+    - button "Present":
+    - button "Prototype view":
+  - button "Share"
+  - tablist:
+    - tab "Design":
+      - generic: Design
+      - generic: Design
+    - tab "Prototype" [selected]:
+      - generic: Prototype
+      - generic: Prototype
+  - button "65%, zoom and view options":
+    - text: 65%
+  - generic: Add interactivity with Make
+  - button "Close":
+  - generic "Mock video of sample images shuffling"
+  - text: Figma Make opens up new ways to prototype—from responsive components to micro-interactions.
+  - button "Try Figma Make":
+    - generic: Try Figma Make
+  - button "Interactions":
+    - generic: Interactions
+  - button "Add action":
+  - heading "Scroll behavior" [level=2]
+  - generic: Position
+  - combobox "Position":
+    - generic: Scroll with parent
+  - generic: Overflow
+  - combobox "Overflow":
+    - generic: No scrolling
+  - button "Show prototype settings":
+    - generic: Show prototype settings
+  - text: Removing a connection
+  - button "Close":
+  - generic: To delete a connection, click and drag on either end.
+  - text: Running your prototype
+  - button "Close":
+  - generic: Use the play button in the toolbar to play your prototype. If there are no connections, the play button can be used to play a presentation of your frames.
+  - slider "Resize handle"
+- region "Application toolbar":
+  - toolbar "Editor":
+    - group "Move":
+      - button "Move" [pressed]:
+      - button "Move tools":
+    - group "Frame":
+      - button "Frame":
+      - button "Region tools":
+    - group "Rectangle":
+      - button "Rectangle":
+      - button "Shape tools":
+    - group "Pen":
+      - button "Pen":
+      - button "Creation tools":
+    - group "Text":
+      - button "Text":
+      - button "Type tools":
+    - button "Comment":
+    - button "Actions":
+    - radiogroup "Toolbelt Mode":
+      - generic: Toolbelt Mode
+      - radio "Draw"
+      - generic: Draw
+      - radio "Design" [checked]
+      - generic: Design
+      - radio "Motion"
+      - generic: Motion
+      - radio "Dev Mode"
+      - generic: Dev Mode
+- region "Help/zoom toolbar":
+  - toolbar "Help/zoom toolbar":
+    - button "Help":
+- status
+- alert
+- alert

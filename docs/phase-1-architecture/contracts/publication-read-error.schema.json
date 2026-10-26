@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed public publication-read application error v1",
+  "description": "Closed JSON response body for existing IF-PUB-01/02 only. Does not describe gateway/transport errors or private process operations.",
+  "$comment": "Definition only, based on PUBLICATION_READ_HTTP.md application-error table. No handler is implemented. Schema validation cannot establish matching HTTP status, headers, eligibility, withdrawal enforcement, retry behavior or safe JSON parsing. Primary format references checked 2026-10-04: https://json-schema.org/draft/2020-12/json-schema-core and https://json-schema.org/draft/2020-12/json-schema-validation. Reuses the existing manifest's dialect; no validator dependency is selected or upgraded.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["error"],
+  "properties": {
+    "error": {
+      "oneOf": [
+        {
+          "const": {
+            "code": "PUBLICATION_REQUEST_INVALID",
+            "explanation": "The publication request is invalid.",
+            "retryability": "correct_request"
+          }
+        },
+        {
+          "const": {
+            "code": "PUBLICATION_RELEASE_UNAVAILABLE",
+            "explanation": "This public release is unavailable.",
+            "retryability": "refresh_release"
+          }
+        },
+        {
+          "const": {
+            "code": "PUBLICATION_PRECONDITION_FAILED",
+            "explanation": "The publication request precondition failed.",
+            "retryability": "correct_request"
+          }
+        },
+        {
+          "const": {
+            "code": "PUBLICATION_READ_UNAVAILABLE",
+            "explanation": "Public publication information is temporarily unavailable.",
+            "retryability": "retry_read"
+          }
+        },
+        {
+          "const": {
+            "code": "PUBLICATION_READ_FAILED",
+            "explanation": "Public publication information could not be verified.",
+            "retryability": "stop"
+          }
+        }
+      ]
+    }
+  }
+}

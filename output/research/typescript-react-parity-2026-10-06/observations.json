@@ -1,0 +1,560 @@
+{
+  "checked_at_utc": "2026-10-05T22:14:48.236741+00:00",
+  "environment": "allowlisted OS/runtime variables, no provider/npm auth; no install/application change",
+  "api_version": "6.0.3",
+  "type_packages": "type-packages.json",
+  "observations": [
+    {
+      "name": "valid-component",
+      "expected": {
+        "name": "valid-component",
+        "expected_codes": [],
+        "expected_acceptance": true,
+        "expected_exit_policy": "zero iff accepted; invalid exit must be nonzero, exact numeric exit is compared separately",
+        "basis": "Declared numeric props/state, button events/ref and DOM container are valid per React TypeScript guidance."
+      },
+      "cli": {
+        "api6": {
+          "exit_code": 0,
+          "codes": []
+        },
+        "native7": {
+          "exit_code": 0,
+          "codes": []
+        }
+      },
+      "api_compiler_codes": [],
+      "api_language_service_codes": [],
+      "diagnostic_oracle_match": true,
+      "numeric_cli_exits_equal": true
+    },
+    {
+      "name": "valid-async-component",
+      "expected": {
+        "name": "valid-async-component",
+        "expected_codes": [],
+        "expected_acceptance": true,
+        "expected_exit_policy": "zero iff accepted; invalid exit must be nonzero, exact numeric exit is compared separately",
+        "basis": "React19 types accept Promise ReactNode JSX component return; this is typing only, not client/server runtime support."
+      },
+      "cli": {
+        "api6": {
+          "exit_code": 0,
+          "codes": []
+        },
+        "native7": {
+          "exit_code": 0,
+          "codes": []
+        }
+      },
+      "api_compiler_codes": [],
+      "api_language_service_codes": [],
+      "diagnostic_oracle_match": true,
+      "numeric_cli_exits_equal": true
+    },
+    {
+      "name": "invalid-prop",
+      "expected": {
+        "name": "invalid-prop",
+        "expected_codes": [
+          2322
+        ],
+        "expected_acceptance": false,
+        "expected_exit_policy": "zero iff accepted; invalid exit must be nonzero, exact numeric exit is compared separately",
+        "basis": "A number cannot satisfy the declared string prop."
+      },
+      "cli": {
+        "api6": {
+          "exit_code": 2,
+          "codes": [
+            2322
+          ]
+        },
+        "native7": {
+          "exit_code": 1,
+          "codes": [
+            2322
+          ]
+        }
+      },
+      "api_compiler_codes": [
+        2322
+      ],
+      "api_language_service_codes": [
+        2322
+      ],
+      "diagnostic_oracle_match": true,
+      "numeric_cli_exits_equal": false
+    },
+    {
+      "name": "missing-prop",
+      "expected": {
+        "name": "missing-prop",
+        "expected_codes": [
+          2741
+        ],
+        "expected_acceptance": false,
+        "expected_exit_policy": "zero iff accepted; invalid exit must be nonzero, exact numeric exit is compared separately",
+        "basis": "A declared required prop cannot be omitted."
+      },
+      "cli": {
+        "api6": {
+          "exit_code": 2,
+          "codes": [
+            2741
+          ]
+        },
+        "native7": {
+          "exit_code": 1,
+          "codes": [
+            2741
+          ]
+        }
+      },
+      "api_compiler_codes": [
+        2741
+      ],
+      "api_language_service_codes": [
+        2741
+      ],
+      "diagnostic_oracle_match": true,
+      "numeric_cli_exits_equal": false
+    },
+    {
+      "name": "invalid-state-action",
+      "expected": {
+        "name": "invalid-state-action",
+        "expected_codes": [
+          2345
+        ],
+        "expected_acceptance": false,
+        "expected_exit_policy": "zero iff accepted; invalid exit must be nonzero, exact numeric exit is compared separately",
+        "basis": "A string is outside numeric state setter action union; hook usage pattern is not being linted."
+      },
+      "cli": {
+        "api6": {
+          "exit_code": 2,
+          "codes": [
+            2345
+          ]
+        },
+        "native7": {
+          "exit_code": 1,
+          "codes": [
+            2345
+          ]
+        }
+      },
+      "api_compiler_codes": [
+        2345
+      ],
+      "api_language_service_codes": [
+        2345
+      ],
+      "diagnostic_oracle_match": true,
+      "numeric_cli_exits_equal": false
+    },
+    {
+      "name": "invalid-ref",
+      "expected": {
+        "name": "invalid-ref",
+        "expected_codes": [
+          2322
+        ],
+        "expected_acceptance": false,
+        "expected_exit_policy": "zero iff accepted; invalid exit must be nonzero, exact numeric exit is compared separately",
+        "basis": "A div ref is incompatible with a button ref target."
+      },
+      "cli": {
+        "api6": {
+          "exit_code": 2,
+          "codes": [
+            2322
+          ]
+        },
+        "native7": {
+          "exit_code": 1,
+          "codes": [
+            2322
+          ]
+        }
+      },
+      "api_compiler_codes": [
+        2322
+      ],
+      "api_language_service_codes": [
+        2322
+      ],
+      "diagnostic_oracle_match": true,
+      "numeric_cli_exits_equal": false
+    },
+    {
+      "name": "invalid-event-property",
+      "expected": {
+        "name": "invalid-event-property",
+        "expected_codes": [
+          2339
+        ],
+        "expected_acceptance": false,
+        "expected_exit_policy": "zero iff accepted; invalid exit must be nonzero, exact numeric exit is compared separately",
+        "basis": "A property absent from HTMLButtonElement must fail contextual event typing."
+      },
+      "cli": {
+        "api6": {
+          "exit_code": 2,
+          "codes": [
+            2339
+          ]
+        },
+        "native7": {
+          "exit_code": 1,
+          "codes": [
+            2339
+          ]
+        }
+      },
+      "api_compiler_codes": [
+        2339
+      ],
+      "api_language_service_codes": [
+        2339
+      ],
+      "diagnostic_oracle_match": true,
+      "numeric_cli_exits_equal": false
+    },
+    {
+      "name": "invalid-dom-root",
+      "expected": {
+        "name": "invalid-dom-root",
+        "expected_codes": [
+          2345
+        ],
+        "expected_acceptance": false,
+        "expected_exit_policy": "zero iff accepted; invalid exit must be nonzero, exact numeric exit is compared separately",
+        "basis": "A string is not an accepted ReactDOM root container."
+      },
+      "cli": {
+        "api6": {
+          "exit_code": 2,
+          "codes": [
+            2345
+          ]
+        },
+        "native7": {
+          "exit_code": 1,
+          "codes": [
+            2345
+          ]
+        }
+      },
+      "api_compiler_codes": [
+        2345
+      ],
+      "api_language_service_codes": [
+        2345
+      ],
+      "diagnostic_oracle_match": true,
+      "numeric_cli_exits_equal": false
+    }
+  ],
+  "commands": [
+    {
+      "name": "api-probe",
+      "args": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\api-probe.cjs",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate"
+      ],
+      "exit_code": 0,
+      "stdout": "api-probe.stdout.txt",
+      "stderr": "api-probe.stderr.txt"
+    },
+    {
+      "name": "valid-component-api6",
+      "args": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\valid-component\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 0,
+      "stdout": "valid-component-api6.stdout.txt",
+      "stderr": "valid-component-api6.stderr.txt"
+    },
+    {
+      "name": "valid-component-native7",
+      "args": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\valid-component\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 0,
+      "stdout": "valid-component-native7.stdout.txt",
+      "stderr": "valid-component-native7.stderr.txt"
+    },
+    {
+      "name": "valid-async-component-api6",
+      "args": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\valid-async-component\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 0,
+      "stdout": "valid-async-component-api6.stdout.txt",
+      "stderr": "valid-async-component-api6.stderr.txt"
+    },
+    {
+      "name": "valid-async-component-native7",
+      "args": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\valid-async-component\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 0,
+      "stdout": "valid-async-component-native7.stdout.txt",
+      "stderr": "valid-async-component-native7.stderr.txt"
+    },
+    {
+      "name": "invalid-prop-api6",
+      "args": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\invalid-prop\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 2,
+      "stdout": "invalid-prop-api6.stdout.txt",
+      "stderr": "invalid-prop-api6.stderr.txt"
+    },
+    {
+      "name": "invalid-prop-native7",
+      "args": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\invalid-prop\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 1,
+      "stdout": "invalid-prop-native7.stdout.txt",
+      "stderr": "invalid-prop-native7.stderr.txt"
+    },
+    {
+      "name": "missing-prop-api6",
+      "args": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\missing-prop\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 2,
+      "stdout": "missing-prop-api6.stdout.txt",
+      "stderr": "missing-prop-api6.stderr.txt"
+    },
+    {
+      "name": "missing-prop-native7",
+      "args": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\missing-prop\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 1,
+      "stdout": "missing-prop-native7.stdout.txt",
+      "stderr": "missing-prop-native7.stderr.txt"
+    },
+    {
+      "name": "invalid-state-action-api6",
+      "args": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\invalid-state-action\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 2,
+      "stdout": "invalid-state-action-api6.stdout.txt",
+      "stderr": "invalid-state-action-api6.stderr.txt"
+    },
+    {
+      "name": "invalid-state-action-native7",
+      "args": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\invalid-state-action\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 1,
+      "stdout": "invalid-state-action-native7.stdout.txt",
+      "stderr": "invalid-state-action-native7.stderr.txt"
+    },
+    {
+      "name": "invalid-ref-api6",
+      "args": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\invalid-ref\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 2,
+      "stdout": "invalid-ref-api6.stdout.txt",
+      "stderr": "invalid-ref-api6.stderr.txt"
+    },
+    {
+      "name": "invalid-ref-native7",
+      "args": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\invalid-ref\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 1,
+      "stdout": "invalid-ref-native7.stdout.txt",
+      "stderr": "invalid-ref-native7.stderr.txt"
+    },
+    {
+      "name": "invalid-event-property-api6",
+      "args": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\invalid-event-property\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 2,
+      "stdout": "invalid-event-property-api6.stdout.txt",
+      "stderr": "invalid-event-property-api6.stderr.txt"
+    },
+    {
+      "name": "invalid-event-property-native7",
+      "args": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\invalid-event-property\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 1,
+      "stdout": "invalid-event-property-native7.stdout.txt",
+      "stderr": "invalid-event-property-native7.stderr.txt"
+    },
+    {
+      "name": "invalid-dom-root-api6",
+      "args": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\invalid-dom-root\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 2,
+      "stdout": "invalid-dom-root-api6.stdout.txt",
+      "stderr": "invalid-dom-root-api6.stderr.txt"
+    },
+    {
+      "name": "invalid-dom-root-native7",
+      "args": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\invalid-dom-root\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 1,
+      "stdout": "invalid-dom-root-native7.stdout.txt",
+      "stderr": "invalid-dom-root-native7.stderr.txt"
+    }
+  ],
+  "guard_results": [
+    {
+      "path": "AGENTS.md",
+      "unchanged": true
+    },
+    {
+      "path": ".specify/memory/constitution.md",
+      "unchanged": true
+    },
+    {
+      "path": "DECISIONS.md",
+      "unchanged": true
+    },
+    {
+      "path": "PROJECT.md",
+      "unchanged": true
+    },
+    {
+      "path": "PROJECT_STATE.yaml",
+      "unchanged": true
+    },
+    {
+      "path": "TASKS.md",
+      "unchanged": true
+    },
+    {
+      "path": "package.json",
+      "unchanged": true
+    },
+    {
+      "path": "package-lock.json",
+      "unchanged": true
+    },
+    {
+      "path": "apps/web/package.json",
+      "unchanged": true
+    },
+    {
+      "path": "apps/web/package-lock.json",
+      "unchanged": true
+    },
+    {
+      "path": "apps/api/requirements.txt",
+      "unchanged": true
+    },
+    {
+      "path": "apps/web/public/models/hengshi-hq-atlanta-exterior-web.glb",
+      "unchanged": true
+    },
+    {
+      "path": "artifacts/nature-campus-layout-study/nature-campus-layout.glb",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/package.json",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/package-lock.json",
+      "unchanged": true
+    }
+  ],
+  "limits": "finite declaration/type-diagnostic and in-process API6 service subset; no React runtime/bundler/browser/native-LSP/editor/emit/full graph proof"
+}

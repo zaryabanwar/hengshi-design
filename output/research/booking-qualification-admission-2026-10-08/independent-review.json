@@ -1,0 +1,17 @@
+{
+  "reviewer": "/root/review_directory_references_v1",
+  "disposition": "PASS",
+  "revision_cycle": 1,
+  "scope": "IF-BOOK-02 logical-control coherence only",
+  "manifest": "output/research/booking-qualification-admission-2026-10-08/correction-1/review-inputs.json",
+  "manifest_sha256": "55d839d90bde25b7dba2c8c3bff79aeca68c9990c7a68cdae49a13ae5795889c",
+  "catalogue_sha256": "f3fcda4c4eae880b11e33744e7a6a49ae583b45e0cfc86803c711f4639ff09a0",
+  "matching_initial_and_final_source_snapshot_pairs": 13,
+  "other_input_identities_unchanged": 12,
+  "changed_paragraphs": 2,
+  "unchanged_original_catalogue_prefix_bytes": 38715,
+  "resolved_findings": ["BQ-01", "BQ-01-related"],
+  "consequential_remaining_findings": [],
+  "receipt": "docs/phase-1-architecture/contracts/reviews/booking-qualification-admission-v1-2026-10-08.md",
+  "limits": "No frozen wire/state/numeric/email/timing/notice/mechanism bindings, schema or runtime proof, policy adoption, application development, integrated acceptance or execution approval."
+}

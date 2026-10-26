@@ -1,0 +1,53 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "scope": "Unselected Windows metadata graph adding HTTPX2 only as a candidate TestClient dependency; no HTTPX/Authlib alias or substitution",
+  "command": [
+    "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "pip",
+    "--isolated",
+    "install",
+    "--dry-run",
+    "--ignore-installed",
+    "--only-binary=:all:",
+    "--no-cache-dir",
+    "--disable-pip-version-check",
+    "--progress-bar",
+    "off",
+    "--index-url",
+    "https://pypi.org/simple",
+    "--report",
+    "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\test-client-graph-2026-10-09\\pip-report.json",
+    "-r",
+    "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\test-client-graph-2026-10-09\\candidate-roots.txt"
+  ],
+  "exit_code": 0,
+  "deadline_seconds": 180,
+  "elapsed_seconds": 26.576,
+  "installation_performed": false,
+  "basis_report_sha256": "da613f9120bede342342ccbf85e05913c7f38d039c1a11dc87ae0e41b5c1036a",
+  "roots_sha256": "ecc6adf0f01bcae70210ee9c78689d1a3850864e2e422efa1fa47d8c055c0abe",
+  "report_sha256": "e81b7570efc6903d4074151a61cfdca9060c02f5da59236bee353eddb1831462",
+  "protected_inputs_before": {
+    "package.json": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b",
+    "package-lock.json": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908",
+    "apps/web/package.json": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a",
+    "apps/web/package-lock.json": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d",
+    "apps/api/requirements.txt": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd",
+    "apps/api/.venv/pyvenv.cfg": "d23bc586f40b9aa9a601c8af0cab224cd4a40f0544a2f6348e9ad703f4d8ea39"
+  },
+  "protected_inputs_after": {
+    "package.json": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b",
+    "package-lock.json": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908",
+    "apps/web/package.json": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a",
+    "apps/web/package-lock.json": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d",
+    "apps/api/requirements.txt": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd",
+    "apps/api/.venv/pyvenv.cfg": "d23bc586f40b9aa9a601c8af0cab224cd4a40f0544a2f6348e9ad703f4d8ea39"
+  },
+  "protected_inputs_unchanged": true,
+  "free_disk_before_bytes": 5373157376,
+  "free_disk_after_bytes": 5370032128,
+  "limits": "No native import/TestClient type/policy/OIDC/TLS/OS-trust behavior or complete latest-compatible stable graph/adoption proof; enlarged installation needs its own reviewed plan and approval."
+}

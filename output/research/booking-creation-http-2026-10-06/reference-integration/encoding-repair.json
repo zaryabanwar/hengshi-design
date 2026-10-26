@@ -1,0 +1,48 @@
+{
+  "cause": "Default Windows cp1252 decoding used by reference-update scripts, instead of explicit UTF-8; later map read failed after that update.",
+  "changes": [
+    {
+      "path": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "slice": 1,
+      "sha256": "b4ff840a32570997fa7abc809ebe4a82a63be9d3cb887965bb8ce78389cd842d"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "slice": 1,
+      "sha256": "0105fba4c418d8c8fc2c72bf09fd1e554c39241eac557432a6f9fb616705e86d"
+    },
+    {
+      "path": "docs/software-definition/04-reconciliation-map.md",
+      "slice": 2,
+      "sha256": "64f048b00478a20a53c254c0602da59737fc6e9107024a85c6baa4407b78dded"
+    },
+    {
+      "path": "PROJECT_STATE.yaml",
+      "slice": 2,
+      "sha256": "918fdd2f155fbcf5035baf203fb5b4e1a654c2fe6e11806ffa28b298576920c1",
+      "scope": "Prior partial integration already wrote this intended ASCII-only checkpoint; verified unchanged."
+    }
+  ],
+  "state_lines": 50,
+  "other_guards_match": 77,
+  "scope": "Exact restored predecessor text plus intended later references only; frozen reviewed snapshots/receipts unchanged.",
+  "whitespace": {
+    "command": [
+      "git",
+      "-c",
+      "core.autocrlf=false",
+      "-c",
+      "core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol",
+      "diff",
+      "--check",
+      "--",
+      "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "docs/software-definition/04-reconciliation-map.md",
+      "PROJECT_STATE.yaml"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

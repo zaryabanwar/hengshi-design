@@ -1,0 +1,35 @@
+{
+  "sources": [
+    {
+      "source": "output/research/frontend-build-evaluation-2026-10-06/runtime/package/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js",
+      "copied_to": "build-ideal-tree.js",
+      "sha256": "93d13be8d7740decf7e1daf136f2bdc5c0f621dfe85f818d9e551c6a35571ea8"
+    },
+    {
+      "source": "output/research/frontend-build-evaluation-2026-10-06/runtime/package/node_modules/@npmcli/arborist/lib/arborist/reify.js",
+      "copied_to": "reify.js",
+      "sha256": "d43747975102489ed4f7579e779e68c099688f16192b4f8b9599eaf647112766"
+    },
+    {
+      "source": "output/research/frontend-build-evaluation-2026-10-06/runtime/package/node_modules/pacote/lib/fetcher.js",
+      "copied_to": "fetcher.js",
+      "sha256": "b7d5a642322323017f778d113729a87dd340d4155bab90c44089b8b0ffced486"
+    },
+    {
+      "source": "output/research/frontend-build-evaluation-2026-10-06/runtime/package/docs/content/using-npm/config.md",
+      "copied_to": "npm12-config.md",
+      "sha256": "25017688758b0905c4ca7c6b77c5d2eab17e4d1a6c856c3cdf8e6d539d894177"
+    },
+    {
+      "source": "output/research/frontend-build-evaluation-2026-10-06/candidate/node_modules/@tailwindcss/oxide/package.json",
+      "copied_to": "oxide-package.json",
+      "sha256": "d57385a0a2f680b35a488f9a9816490a6580cc7a989a430e3e426b4c24af212e"
+    }
+  ],
+  "observation": "Failed package-lock-only complete ideal-tree path extracts a registry-resolved optional bundled tarball without reify registry-origin exemption; source-supported inference, not a patched npm fix. @tailwindcss/oxide dependency is an exact registry version, not an intentionally external URL dependency.",
+  "authority": [
+    "https://docs.npmjs.com/cli/using-npm/config/#allow-remote",
+    "https://github.com/npm/cli/issues/9347"
+  ],
+  "limits": "Existing upstream report concerns another extraction path and does not certify this precise path fixed. No allow-remote override, npm source edit or machine config change."
+}

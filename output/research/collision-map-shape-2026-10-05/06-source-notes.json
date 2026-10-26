@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-05",
+  "context7": {
+    "resolved": "three.js",
+    "selected_id": "/websites/threejs",
+    "query_subject": "GLTFLoader transforms/indexed geometry/external resources and static-collision distinction",
+    "result": "GLTFLoader loading/parseAsync and Box3 attribute bounds guidance; no collision admission guarantee"
+  },
+  "primary_pages_opened": [
+    "https://threejs.org/docs/pages/GLTFLoader.html",
+    "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html",
+    "https://rapier.rs/docs/user_guides/javascript/colliders/",
+    "https://rapier.rs/docs/user_guides/javascript/character_controller/"
+  ],
+  "observations": [
+    "glTF hierarchy/accessors/indexed geometry and GLB resources motivate format inspection",
+    "Rapier static triangle meshes have no solid interior and collider handles may be reused after removal",
+    "Rapier controller corrects translation using geometry queries, does not supply rotational movement, and needs application policy"
+  ],
+  "limits": "Recorded research summary, not a saved complete vendor page, version selection, source-to-binary proof, installed package or runtime compatibility; proposed export subset and registration rules are Hengshi engineering choices."
+}

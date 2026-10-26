@@ -1,0 +1,26 @@
+{
+  "scope": "In-app browser local static gallery only; no Figma canvas or product behavior/accessibility qualification",
+  "checks": [
+    {
+      "profile": "default_in_app",
+      "viewport": 817,
+      "documentWidth": 802,
+      "images": 37,
+      "decoded": 37,
+      "missingPreviews": 11,
+      "articles": 48,
+      "brokenFragments": 0,
+      "scripts": 0
+    },
+    {
+      "profile": "narrow",
+      "viewport": 390,
+      "documentWidth": 375,
+      "decoded": 37,
+      "missingPreviews": 11,
+      "brokenFragments": 0
+    }
+  ],
+  "temporaryViewportReset": true,
+  "deliverableTab": 3
+}

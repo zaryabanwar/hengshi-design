@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed chat consent directional contracts v1",
+  "description": "Definition-only IF-CHAT-02 module. Reference request or response explicitly. Shape establishes no notice/purpose validity, unique purpose keys, ownership/CSRF, revision ordering, atomic fencing, retention, HTTP status or actual application. The module root rejects instances.",
+  "not": {},
+  "$defs": {
+    "operation_id": {"$ref": "booking-creation-request.schema.json#/$defs/operation_id"},
+    "purpose_key": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+    "revision": {"$ref": "process-value.schema.json#/$defs/positive_revision"},
+    "noticed_decision": {"$ref": "chat-creation-request.schema.json#/$defs/decision"},
+    "withdraw": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["purpose_key", "decision"],
+      "properties": {
+        "purpose_key": {"$ref": "#/$defs/purpose_key"},
+        "decision": {"const": "withdraw"}
+      }
+    },
+    "withdrawn": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["purpose_key", "decision"],
+      "properties": {
+        "purpose_key": {"$ref": "#/$defs/purpose_key"},
+        "decision": {"const": "withdrawn"}
+      }
+    },
+    "request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["operation_id", "consent"],
+      "properties": {
+        "operation_id": {"$ref": "#/$defs/operation_id"},
+        "consent": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["expected_revision", "decisions"],
+          "properties": {
+            "expected_revision": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/revision"}]},
+            "decisions": {
+              "type": "array", "minItems": 1, "maxItems": 8, "uniqueItems": true,
+              "items": {"oneOf": [{"$ref": "#/$defs/noticed_decision"}, {"$ref": "#/$defs/withdraw"}]}
+            }
+          }
+        }
+      }
+    },
+    "effective_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["revision", "decisions"],
+      "properties": {
+        "revision": {"$ref": "#/$defs/revision"},
+        "decisions": {
+          "type": "array", "minItems": 1, "maxItems": 8, "uniqueItems": true,
+          "items": {"oneOf": [{"$ref": "#/$defs/noticed_decision"}, {"$ref": "#/$defs/withdrawn"}]}
+        }
+      }
+    },
+    "applied": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "operation_id", "applied_revision", "proof_generation", "consent"],
+      "properties": {
+        "state": {"const": "applied"},
+        "operation_id": {"$ref": "#/$defs/operation_id"},
+        "applied_revision": {"$ref": "#/$defs/revision"},
+        "proof_generation": {"$ref": "#/$defs/revision", "minimum": 2},
+        "consent": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["effective_state"],
+          "properties": {"effective_state": {"$ref": "#/$defs/effective_state"}}
+        }
+      }
+    },
+    "pending": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "operation_id"],
+      "properties": {
+        "state": {"const": "pending"},
+        "operation_id": {"$ref": "#/$defs/operation_id"}
+      }
+    },
+    "response": {
+      "oneOf": [
+        {"$ref": "#/$defs/applied"},
+        {"$ref": "#/$defs/pending"},
+        {"$ref": "booking-creation-response.schema.json#/$defs/error"}
+      ]
+    }
+  }
+}

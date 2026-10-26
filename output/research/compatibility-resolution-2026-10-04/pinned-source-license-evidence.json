@@ -1,0 +1,79 @@
+[
+  {
+    "name": "@napi-rs/wasm-runtime",
+    "version": "1.1.4",
+    "repository": "napi-rs/napi-rs",
+    "npm_reported_gitHead": "d5c3c43b45393f99ba151770f97bd472de533671",
+    "directory_override_license_files": [],
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "html_url": "https://github.com/napi-rs/napi-rs/blob/d5c3c43b45393f99ba151770f97bd472de533671/LICENSE",
+        "sha256": "3f1ce66533302df3a32edbfdfc0b78f0dd34659e4c1f5817162e5ea3c2297215",
+        "text": "MIT License\n\nCopyright (c) 2020-present LongYinan\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\nMIT License\n\nCopyright (c) 2018 GitHub\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      }
+    ],
+    "published_archive_has_license_file": false,
+    "direct_bundle_bytes_match": true,
+    "source_build_provenance_cryptographically_verified": false
+  },
+  {
+    "name": "@tybys/wasm-util",
+    "version": "0.10.2",
+    "repository": "toyobayashi/wasm-util",
+    "npm_reported_gitHead": "cded8e894fe40c7c6200a3fdb2bd33e328b7bb65",
+    "directory_override_license_files": [],
+    "license_files": [],
+    "published_archive_has_license_file": false,
+    "direct_bundle_bytes_match": true,
+    "source_build_provenance_cryptographically_verified": false,
+    "root_inventory": [
+      ".eslintignore",
+      ".eslintrc.js",
+      ".gitignore",
+      ".npmignore",
+      ".vscode",
+      "README.md",
+      "api-extractor.json",
+      "package.json",
+      "src",
+      "test",
+      "tsconfig.json",
+      "tsgo.config.js"
+    ],
+    "readme_or_package_license_mentions": [
+      {
+        "path": "README.md",
+        "html_url": "https://github.com/toyobayashi/wasm-util/blob/cded8e894fe40c7c6200a3fdb2bd33e328b7bb65/README.md",
+        "matching_lines": [
+          "`loadSync` has 4KB wasm size limit in browser."
+        ]
+      },
+      {
+        "path": "package.json",
+        "html_url": "https://github.com/toyobayashi/wasm-util/blob/cded8e894fe40c7c6200a3fdb2bd33e328b7bb65/package.json",
+        "matching_lines": [
+          "  \"license\": \"MIT\","
+        ]
+      }
+    ],
+    "notice_text_complete": false
+  },
+  {
+    "name": "@tailwindcss/oxide-wasm32-wasi",
+    "version": "4.3.3",
+    "repository": "tailwindlabs/tailwindcss",
+    "source_tag": "v4.3.3",
+    "resolved_tag_commit": "c2b24dd15fed1c59dd521bd86082f520c9f5ad0d",
+    "npm_reported_gitHead": null,
+    "license_files": [
+      {
+        "path": "LICENSE",
+        "html_url": "https://github.com/tailwindlabs/tailwindcss/blob/c2b24dd15fed1c59dd521bd86082f520c9f5ad0d/LICENSE",
+        "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985",
+        "text": "MIT License\n\nCopyright (c) Tailwind Labs, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      }
+    ],
+    "source_build_provenance_cryptographically_verified": false
+  }
+]

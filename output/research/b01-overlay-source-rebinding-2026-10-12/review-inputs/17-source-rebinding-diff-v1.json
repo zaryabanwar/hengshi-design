@@ -1,0 +1,1204 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "D-092 quote/snapshot candidate only; canonical registry unchanged; independent review and acceptance held",
+  "prior_failures": [
+    "CSV-only candidate failed on ten DF-01 section quotes",
+    "DF-01 repair also requires matching copied timing process_source witnesses"
+  ],
+  "quote_changes": [
+    {
+      "record_index": 315,
+      "source_index": 0,
+      "before": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-NAVIGATION-SEARCH: FLOW-NAVIGATION-SEARCH named complete process."
+      },
+      "after": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "## DF-01 — Search, directory, and immersive HUD\n\n**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n   [D-092](../../DECISIONS.md#d-092--explicitly-opened-searchdirectory-overlay)\n   selects an explicitly requested modal overlay over the current screen, with\n   visible Close, preserved location and an inactive background while open.\n   The semantic static directory remains available without the overlay or\n   JavaScript; this is never an automatic homepage gate. Exact prototype and\n   later runtime focus behavior retain their separate review/acceptance gates.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-NAVIGATION-SEARCH: FLOW-NAVIGATION-SEARCH named complete process."
+      }
+    },
+    {
+      "record_index": 316,
+      "source_index": 0,
+      "before": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-NAVIGATION-SEARCH: FLOW-NAVIGATION-SEARCH named complete process."
+      },
+      "after": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "## DF-01 — Search, directory, and immersive HUD\n\n**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n   [D-092](../../DECISIONS.md#d-092--explicitly-opened-searchdirectory-overlay)\n   selects an explicitly requested modal overlay over the current screen, with\n   visible Close, preserved location and an inactive background while open.\n   The semantic static directory remains available without the overlay or\n   JavaScript; this is never an automatic homepage gate. Exact prototype and\n   later runtime focus behavior retain their separate review/acceptance gates.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-NAVIGATION-SEARCH: FLOW-NAVIGATION-SEARCH named complete process."
+      }
+    },
+    {
+      "record_index": 317,
+      "source_index": 0,
+      "before": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-NAVIGATION-SEARCH: FLOW-NAVIGATION-SEARCH named complete process."
+      },
+      "after": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "## DF-01 — Search, directory, and immersive HUD\n\n**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n   [D-092](../../DECISIONS.md#d-092--explicitly-opened-searchdirectory-overlay)\n   selects an explicitly requested modal overlay over the current screen, with\n   visible Close, preserved location and an inactive background while open.\n   The semantic static directory remains available without the overlay or\n   JavaScript; this is never an automatic homepage gate. Exact prototype and\n   later runtime focus behavior retain their separate review/acceptance gates.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-NAVIGATION-SEARCH: FLOW-NAVIGATION-SEARCH named complete process."
+      }
+    },
+    {
+      "record_index": 318,
+      "source_index": 0,
+      "before": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-NAVIGATION-SEARCH: FLOW-NAVIGATION-SEARCH named complete process."
+      },
+      "after": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "## DF-01 — Search, directory, and immersive HUD\n\n**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n   [D-092](../../DECISIONS.md#d-092--explicitly-opened-searchdirectory-overlay)\n   selects an explicitly requested modal overlay over the current screen, with\n   visible Close, preserved location and an inactive background while open.\n   The semantic static directory remains available without the overlay or\n   JavaScript; this is never an automatic homepage gate. Exact prototype and\n   later runtime focus behavior retain their separate review/acceptance gates.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-NAVIGATION-SEARCH: FLOW-NAVIGATION-SEARCH named complete process."
+      }
+    },
+    {
+      "record_index": 319,
+      "source_index": 0,
+      "before": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-NAVIGATION-SEARCH: FLOW-NAVIGATION-SEARCH named complete process."
+      },
+      "after": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "## DF-01 — Search, directory, and immersive HUD\n\n**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n   [D-092](../../DECISIONS.md#d-092--explicitly-opened-searchdirectory-overlay)\n   selects an explicitly requested modal overlay over the current screen, with\n   visible Close, preserved location and an inactive background while open.\n   The semantic static directory remains available without the overlay or\n   JavaScript; this is never an automatic homepage gate. Exact prototype and\n   later runtime focus behavior retain their separate review/acceptance gates.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-NAVIGATION-SEARCH: FLOW-NAVIGATION-SEARCH named complete process."
+      }
+    },
+    {
+      "record_index": 330,
+      "source_index": 0,
+      "before": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-WORLD-HUD-STREAM: FLOW-WORLD-HUD-STREAM named complete process."
+      },
+      "after": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "## DF-01 — Search, directory, and immersive HUD\n\n**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n   [D-092](../../DECISIONS.md#d-092--explicitly-opened-searchdirectory-overlay)\n   selects an explicitly requested modal overlay over the current screen, with\n   visible Close, preserved location and an inactive background while open.\n   The semantic static directory remains available without the overlay or\n   JavaScript; this is never an automatic homepage gate. Exact prototype and\n   later runtime focus behavior retain their separate review/acceptance gates.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-WORLD-HUD-STREAM: FLOW-WORLD-HUD-STREAM named complete process."
+      }
+    },
+    {
+      "record_index": 331,
+      "source_index": 0,
+      "before": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-WORLD-HUD-STREAM: FLOW-WORLD-HUD-STREAM named complete process."
+      },
+      "after": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "## DF-01 — Search, directory, and immersive HUD\n\n**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n   [D-092](../../DECISIONS.md#d-092--explicitly-opened-searchdirectory-overlay)\n   selects an explicitly requested modal overlay over the current screen, with\n   visible Close, preserved location and an inactive background while open.\n   The semantic static directory remains available without the overlay or\n   JavaScript; this is never an automatic homepage gate. Exact prototype and\n   later runtime focus behavior retain their separate review/acceptance gates.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-WORLD-HUD-STREAM: FLOW-WORLD-HUD-STREAM named complete process."
+      }
+    },
+    {
+      "record_index": 332,
+      "source_index": 0,
+      "before": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-WORLD-HUD-STREAM: FLOW-WORLD-HUD-STREAM named complete process."
+      },
+      "after": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "## DF-01 — Search, directory, and immersive HUD\n\n**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n   [D-092](../../DECISIONS.md#d-092--explicitly-opened-searchdirectory-overlay)\n   selects an explicitly requested modal overlay over the current screen, with\n   visible Close, preserved location and an inactive background while open.\n   The semantic static directory remains available without the overlay or\n   JavaScript; this is never an automatic homepage gate. Exact prototype and\n   later runtime focus behavior retain their separate review/acceptance gates.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-WORLD-HUD-STREAM: FLOW-WORLD-HUD-STREAM named complete process."
+      }
+    },
+    {
+      "record_index": 333,
+      "source_index": 0,
+      "before": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-WORLD-HUD-STREAM: FLOW-WORLD-HUD-STREAM named complete process."
+      },
+      "after": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "## DF-01 — Search, directory, and immersive HUD\n\n**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n   [D-092](../../DECISIONS.md#d-092--explicitly-opened-searchdirectory-overlay)\n   selects an explicitly requested modal overlay over the current screen, with\n   visible Close, preserved location and an inactive background while open.\n   The semantic static directory remains available without the overlay or\n   JavaScript; this is never an automatic homepage gate. Exact prototype and\n   later runtime focus behavior retain their separate review/acceptance gates.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-WORLD-HUD-STREAM: FLOW-WORLD-HUD-STREAM named complete process."
+      }
+    },
+    {
+      "record_index": 334,
+      "source_index": 0,
+      "before": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-WORLD-HUD-STREAM: FLOW-WORLD-HUD-STREAM named complete process."
+      },
+      "after": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "## DF-01 — Search, directory, and immersive HUD\n\n**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n   [D-092](../../DECISIONS.md#d-092--explicitly-opened-searchdirectory-overlay)\n   selects an explicitly requested modal overlay over the current screen, with\n   visible Close, preserved location and an inactive background while open.\n   The semantic static directory remains available without the overlay or\n   JavaScript; this is never an automatic homepage gate. Exact prototype and\n   later runtime focus behavior retain their separate review/acceptance gates.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-WORLD-HUD-STREAM: FLOW-WORLD-HUD-STREAM named complete process."
+      }
+    },
+    {
+      "record_index": 760,
+      "source_index": 4,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-PUBLIC-HOME: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-PUBLIC-HOME: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 761,
+      "source_index": 4,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-PUBLIC-HOME: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-PUBLIC-HOME: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 762,
+      "source_index": 4,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-PUBLIC-HOME: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-PUBLIC-HOME: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 763,
+      "source_index": 4,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-PUBLIC-HOME: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-PUBLIC-HOME: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 764,
+      "source_index": 4,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-PUBLIC-HOME: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-PUBLIC-HOME: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 765,
+      "source_index": 5,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-SERVICE-COLLECTION: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-SERVICE-COLLECTION: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 766,
+      "source_index": 5,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-SERVICE-COLLECTION: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-SERVICE-COLLECTION: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 767,
+      "source_index": 5,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-SERVICE-COLLECTION: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-SERVICE-COLLECTION: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 768,
+      "source_index": 5,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-SERVICE-COLLECTION: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-SERVICE-COLLECTION: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 769,
+      "source_index": 5,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-SERVICE-COLLECTION: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-SERVICE-COLLECTION: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 860,
+      "source_index": 0,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "template_id",
+          "key_value": "TPL-DIRECTORY-SEARCH",
+          "field": "interaction_focus_notes"
+        },
+        "quoted_fact": "Input label/clear/close; modal or nonmodal focus contract; result link semantics; invoker focus return",
+        "supports": "TPL-DIRECTORY-SEARCH: actual reusable controls, focus and process role."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "template_id",
+          "key_value": "TPL-DIRECTORY-SEARCH",
+          "field": "interaction_focus_notes"
+        },
+        "quoted_fact": "D-092 explicitly opened modal overlay; Input label/clear/visible close; inactive background and modal focus containment; result link semantics; invoker focus return; semantic static-directory fallback",
+        "supports": "TPL-DIRECTORY-SEARCH: actual reusable controls, focus and process role."
+      }
+    },
+    {
+      "record_index": 860,
+      "source_index": 3,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-DIRECTORY-SEARCH: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-DIRECTORY-SEARCH: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 861,
+      "source_index": 0,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "template_id",
+          "key_value": "TPL-DIRECTORY-SEARCH",
+          "field": "interaction_focus_notes"
+        },
+        "quoted_fact": "Input label/clear/close; modal or nonmodal focus contract; result link semantics; invoker focus return",
+        "supports": "TPL-DIRECTORY-SEARCH: actual reusable controls, focus and process role."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "template_id",
+          "key_value": "TPL-DIRECTORY-SEARCH",
+          "field": "interaction_focus_notes"
+        },
+        "quoted_fact": "D-092 explicitly opened modal overlay; Input label/clear/visible close; inactive background and modal focus containment; result link semantics; invoker focus return; semantic static-directory fallback",
+        "supports": "TPL-DIRECTORY-SEARCH: actual reusable controls, focus and process role."
+      }
+    },
+    {
+      "record_index": 861,
+      "source_index": 3,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-DIRECTORY-SEARCH: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-DIRECTORY-SEARCH: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 862,
+      "source_index": 0,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "template_id",
+          "key_value": "TPL-DIRECTORY-SEARCH",
+          "field": "interaction_focus_notes"
+        },
+        "quoted_fact": "Input label/clear/close; modal or nonmodal focus contract; result link semantics; invoker focus return",
+        "supports": "TPL-DIRECTORY-SEARCH: actual reusable controls, focus and process role."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "template_id",
+          "key_value": "TPL-DIRECTORY-SEARCH",
+          "field": "interaction_focus_notes"
+        },
+        "quoted_fact": "D-092 explicitly opened modal overlay; Input label/clear/visible close; inactive background and modal focus containment; result link semantics; invoker focus return; semantic static-directory fallback",
+        "supports": "TPL-DIRECTORY-SEARCH: actual reusable controls, focus and process role."
+      }
+    },
+    {
+      "record_index": 862,
+      "source_index": 3,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-DIRECTORY-SEARCH: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-DIRECTORY-SEARCH: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 863,
+      "source_index": 0,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "template_id",
+          "key_value": "TPL-DIRECTORY-SEARCH",
+          "field": "interaction_focus_notes"
+        },
+        "quoted_fact": "Input label/clear/close; modal or nonmodal focus contract; result link semantics; invoker focus return",
+        "supports": "TPL-DIRECTORY-SEARCH: actual reusable controls, focus and process role."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "template_id",
+          "key_value": "TPL-DIRECTORY-SEARCH",
+          "field": "interaction_focus_notes"
+        },
+        "quoted_fact": "D-092 explicitly opened modal overlay; Input label/clear/visible close; inactive background and modal focus containment; result link semantics; invoker focus return; semantic static-directory fallback",
+        "supports": "TPL-DIRECTORY-SEARCH: actual reusable controls, focus and process role."
+      }
+    },
+    {
+      "record_index": 863,
+      "source_index": 3,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-DIRECTORY-SEARCH: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-DIRECTORY-SEARCH: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 864,
+      "source_index": 0,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "template_id",
+          "key_value": "TPL-DIRECTORY-SEARCH",
+          "field": "interaction_focus_notes"
+        },
+        "quoted_fact": "Input label/clear/close; modal or nonmodal focus contract; result link semantics; invoker focus return",
+        "supports": "TPL-DIRECTORY-SEARCH: actual reusable controls, focus and process role."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "template_id",
+          "key_value": "TPL-DIRECTORY-SEARCH",
+          "field": "interaction_focus_notes"
+        },
+        "quoted_fact": "D-092 explicitly opened modal overlay; Input label/clear/visible close; inactive background and modal focus containment; result link semantics; invoker focus return; semantic static-directory fallback",
+        "supports": "TPL-DIRECTORY-SEARCH: actual reusable controls, focus and process role."
+      }
+    },
+    {
+      "record_index": 864,
+      "source_index": 3,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-DIRECTORY-SEARCH: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-DIRECTORY-SEARCH: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 880,
+      "source_index": 2,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-WORLD-HUD: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-WORLD-HUD: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 881,
+      "source_index": 2,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-WORLD-HUD: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-WORLD-HUD: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 882,
+      "source_index": 2,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-WORLD-HUD: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-WORLD-HUD: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 883,
+      "source_index": 2,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-WORLD-HUD: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-WORLD-HUD: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 884,
+      "source_index": 2,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-WORLD-HUD: explicitly assigned PRIM-004 anatomy supports this composition."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "TPL-WORLD-HUD: explicitly assigned PRIM-004 anatomy supports this composition."
+      }
+    },
+    {
+      "record_index": 969,
+      "source_index": 0,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "PRIM-004: actual anatomy."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "PRIM-004: actual anatomy."
+      }
+    },
+    {
+      "record_index": 969,
+      "source_index": 2,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "responsive_and_mode_obligations"
+        },
+        "quoted_fact": "Narrow full-width reflow;visible close and clear;focus containment only when modal;reduced-motion open;forced-colors fields;static directory without derived index",
+        "supports": "PRIM-004: actual layout, input and accessibility obligations."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "responsive_and_mode_obligations"
+        },
+        "quoted_fact": "Explicitly requested modal overlay preserving current location;inactive surrounding screen while open;Narrow full-width reflow;visible close and clear;modal focus containment and close-to-invoker;reduced-motion open;forced-colors fields;static directory without derived index",
+        "supports": "PRIM-004: actual layout, input and accessibility obligations."
+      }
+    },
+    {
+      "record_index": 970,
+      "source_index": 0,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "PRIM-004: actual anatomy."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "PRIM-004: actual anatomy."
+      }
+    },
+    {
+      "record_index": 970,
+      "source_index": 2,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "responsive_and_mode_obligations"
+        },
+        "quoted_fact": "Narrow full-width reflow;visible close and clear;focus containment only when modal;reduced-motion open;forced-colors fields;static directory without derived index",
+        "supports": "PRIM-004: actual layout, input and accessibility obligations."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "responsive_and_mode_obligations"
+        },
+        "quoted_fact": "Explicitly requested modal overlay preserving current location;inactive surrounding screen while open;Narrow full-width reflow;visible close and clear;modal focus containment and close-to-invoker;reduced-motion open;forced-colors fields;static directory without derived index",
+        "supports": "PRIM-004: actual layout, input and accessibility obligations."
+      }
+    },
+    {
+      "record_index": 971,
+      "source_index": 0,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+        "supports": "PRIM-004: actual anatomy."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "required_anatomy"
+        },
+        "quoted_fact": "open control;modal dialog heading;search label/input;clear;group navigation;status;close",
+        "supports": "PRIM-004: actual anatomy."
+      }
+    },
+    {
+      "record_index": 971,
+      "source_index": 2,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "responsive_and_mode_obligations"
+        },
+        "quoted_fact": "Narrow full-width reflow;visible close and clear;focus containment only when modal;reduced-motion open;forced-colors fields;static directory without derived index",
+        "supports": "PRIM-004: actual layout, input and accessibility obligations."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "primitive_id",
+          "key_value": "PRIM-004",
+          "field": "responsive_and_mode_obligations"
+        },
+        "quoted_fact": "Explicitly requested modal overlay preserving current location;inactive surrounding screen while open;Narrow full-width reflow;visible close and clear;modal focus containment and close-to-invoker;reduced-motion open;forced-colors fields;static directory without derived index",
+        "supports": "PRIM-004: actual layout, input and accessibility obligations."
+      }
+    }
+  ],
+  "copied_process_source_changes": [
+    {
+      "record_index": 319,
+      "before": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-NAVIGATION-SEARCH: FLOW-NAVIGATION-SEARCH named complete process."
+      },
+      "after": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "## DF-01 — Search, directory, and immersive HUD\n\n**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n   [D-092](../../DECISIONS.md#d-092--explicitly-opened-searchdirectory-overlay)\n   selects an explicitly requested modal overlay over the current screen, with\n   visible Close, preserved location and an inactive background while open.\n   The semantic static directory remains available without the overlay or\n   JavaScript; this is never an automatic homepage gate. Exact prototype and\n   later runtime focus behavior retain their separate review/acceptance gates.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-NAVIGATION-SEARCH: FLOW-NAVIGATION-SEARCH named complete process."
+      }
+    },
+    {
+      "record_index": 334,
+      "before": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-WORLD-HUD-STREAM: FLOW-WORLD-HUD-STREAM named complete process."
+      },
+      "after": {
+        "path": "docs/phase-1-ux-architecture/FLOWS.md",
+        "selector": {
+          "kind": "markdown_section",
+          "heading_path": [
+            "Detailed Task Flows",
+            "DF-01 — Search, directory, and immersive HUD"
+          ]
+        },
+        "quoted_fact": "## DF-01 — Search, directory, and immersive HUD\n\n**Requirements:** FR-001, FR-014, SEO-003, UX-003–UX-006.\n\n1. Persistent directory opens from semantic header and immersive HUD with focus on\n   a labeled search input; closing returns focus to invoker.\n   [D-092](../../DECISIONS.md#d-092--explicitly-opened-searchdirectory-overlay)\n   selects an explicitly requested modal overlay over the current screen, with\n   visible Close, preserved location and an inactive background while open.\n   The semantic static directory remains available without the overlay or\n   JavaScript; this is never an automatic homepage gate. Exact prototype and\n   later runtime focus behavior retain their separate review/acceptance gates.\n2. Search covers only active-release public titles, formal service names, wing,\n   industry, evidence type, and approved summary text. It never searches drafts,\n   session/chat, defense, or private/admin data.\n3. Results display title, type, context, evidence/availability state, and canonical\n   destination. Immersive location is optional; canonical destination is primary.\n4. No query parameter is approved; **[PROPOSED UX]** search state is session-local\n   and not persisted. Result URLs are clean canonicals. Analytics records only a\n   privacy-approved bounded query class/no-result aggregate, never raw query text.\n5. Empty query presents browse-by-wing/type; no results offers clear/reset, browse\n   services/industries, Contact, and Book. Search-index unavailable falls back to\n   static active-release directory; stale checksum blocks result activation.\n6. Closed rooms are labeled unavailable and link to approved semantic content;\n   they do not dead-end or imply launch readiness.\n7. HUD controls: current location, directory/search, Quick Access, Book,\n   accessibility, delivery stream, audio, Exit. A stream change never removes\n   content, a hotspot, or a destination;\n   Exit transfers to current canonical route.\n\nSuccess: canonical content opens with location context. Error: index loading,\nempty/no result, offline, checksum mismatch, room closed, focus interruption.\nRecovery: static directory, clear/browse, nearest semantic route, Quick Access.",
+        "supports": "COV-FLOW-WORLD-HUD-STREAM: FLOW-WORLD-HUD-STREAM named complete process."
+      }
+    },
+    {
+      "record_index": 864,
+      "before": {
+        "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "template_id",
+          "key_value": "TPL-DIRECTORY-SEARCH",
+          "field": "interaction_focus_notes"
+        },
+        "quoted_fact": "Input label/clear/close; modal or nonmodal focus contract; result link semantics; invoker focus return",
+        "supports": "TPL-DIRECTORY-SEARCH: actual reusable controls, focus and process role."
+      },
+      "after": {
+        "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+        "selector": {
+          "kind": "csv_record",
+          "key_field": "template_id",
+          "key_value": "TPL-DIRECTORY-SEARCH",
+          "field": "interaction_focus_notes"
+        },
+        "quoted_fact": "D-092 explicitly opened modal overlay; Input label/clear/visible close; inactive background and modal focus containment; result link semantics; invoker focus return; semantic static-directory fallback",
+        "supports": "TPL-DIRECTORY-SEARCH: actual reusable controls, focus and process role."
+      }
+    }
+  ],
+  "snapshot_changes": [
+    {
+      "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+      "before": "575D1478893C090E9B367E75C2D14CF645E80EEB67BCE09C2383C08294FA034A",
+      "after": "8AEC225781CBB1389EA15E70895889A9DA306244CD6F8B74F7640D863DDE6318"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "before": "62B11BF2EA7BD1F168ECAA01A0DA5914107BA072670328F52C13C0FBDBB5BACB",
+      "after": "2E904E0F4C7019CA696131068567978973961E70CB0889AE954771010C5634CF"
+    },
+    {
+      "path": "docs/phase-1-ux-architecture/FLOWS.md",
+      "before": "168015A15B51C03CDF1F1532572D7B45C397708651C579C3E1E2025D5EE27097",
+      "after": "AF9645A4658A8B6DC60C846F580DCCD76CC4BB0F5377F65526D7749D1572D27B"
+    }
+  ],
+  "declared_value_changes": 0,
+  "timing_policy_changes": 0,
+  "canonical_registry_sha256": "85736b6db6801ffdc529143085c20346193dc4904eef01e09d2074524211f98a",
+  "candidate_sha256": "a8358be02d6fbca42a167b19395a4a2cd9b2fe318eaaec3b78e8141f4244aacd",
+  "runtime_proof": false,
+  "artifact_validation": {
+    "result": "PASS",
+    "source_bound_records": 1146
+  }
+}

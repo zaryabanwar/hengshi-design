@@ -1,0 +1,19 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "founder_approval": "approve all three and resume",
+  "scope": "Remaining original approved synthetic probes; no reinstall or dependency selection",
+  "cause": "Runner lowercased names without the mandated separator normalization",
+  "observed_aliases": [
+    "pydantic_core == pydantic-core",
+    "typing_extensions == typing-extensions"
+  ],
+  "reference": "https://packaging.python.org/en/latest/specifications/name-normalization/",
+  "exact_normalized_package_versions_match": true,
+  "original_receipt_sha256": "b2407c9aced53cf796d52fde39ec9132e1787971008406944ba005461cef66a8",
+  "original_commands_sha256": "ace73f1090598d8acd979d4722ba7a74be53b5541e3d86057fd755486404ebfc",
+  "script_sha256": "cb694ef2cb2274d6d388394745512c4057fdcb9211ff3bfff39d119f5b1ca8eb",
+  "plan_unchanged": true,
+  "candidate_unchanged": true,
+  "probes_unchanged": true
+}

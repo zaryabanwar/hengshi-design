@@ -1,0 +1,55 @@
+{
+  "before": [
+    {
+      "name": "Book a conversation",
+      "level": 5,
+      "testId": "99:3200-layers-panel-row",
+      "parent": "85:3391-layers-panel-row"
+    },
+    {
+      "name": "Book a conversation",
+      "level": 5,
+      "testId": "99:3201-layers-panel-row",
+      "parent": "85:3419-layers-panel-row"
+    },
+    {
+      "name": "Book a conversation",
+      "level": 5,
+      "testId": "99:3202-layers-panel-row",
+      "parent": "85:3477-layers-panel-row"
+    },
+    {
+      "name": "Book a conversation",
+      "level": 5,
+      "testId": "99:3203-layers-panel-row",
+      "parent": "85:3505-layers-panel-row"
+    }
+  ],
+  "after": [
+    {
+      "name": "Book a conversation",
+      "level": 5,
+      "testId": "101:3208-layers-panel-row",
+      "parent": "85:3505-layers-panel-row"
+    },
+    {
+      "name": "Book a conversation",
+      "level": 5,
+      "testId": "101:3207-layers-panel-row",
+      "parent": "85:3477-layers-panel-row"
+    },
+    {
+      "name": "Book a conversation",
+      "level": 5,
+      "testId": "101:3206-layers-panel-row",
+      "parent": "85:3419-layers-panel-row"
+    },
+    {
+      "name": "Book a conversation",
+      "level": 5,
+      "testId": "101:3205-layers-panel-row",
+      "parent": "85:3391-layers-panel-row"
+    }
+  ],
+  "scope": "Observed IDs and native layer hierarchy; correspondence by name/parent is diagnostic, not identity-preservation proof."
+}

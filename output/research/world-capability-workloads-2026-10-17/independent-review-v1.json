@@ -1,0 +1,151 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "reviewed_at_utc": "2026-10-24T06:22:14.291018+00:00",
+  "reviewer": "Independent reviewer /root/review_archive_candidate_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "PASS",
+  "scope": "Frozen13-input finite observation/workload/calibration definition coherence only; no benchmark, measured device fitness, classifier adoption, model revision or runtime/renderer qualification.",
+  "packet": {
+    "path": "output/research/world-capability-workloads-2026-10-17/review-inputs-v1.json",
+    "bytes": 2647,
+    "sha256": "72470eaac9415d88d894a5a5e9e864d3905bf17032b85925f2e50144516c1fd5",
+    "input_count": 13,
+    "verified_before_review": 13,
+    "verified_again_before_receipt": 13,
+    "inputs": [
+      {
+        "path": "AGENTS.md",
+        "bytes": 8983,
+        "sha256": "f31b4bb42f954995cc12358284a992fde46ade98980238043c149f692b6474a5",
+        "resolved_path": "AGENTS.md",
+        "verified": true
+      },
+      {
+        "path": ".specify/memory/constitution.md",
+        "bytes": 16234,
+        "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+        "resolved_path": ".specify/memory/constitution.md",
+        "verified": true
+      },
+      {
+        "path": "DECISIONS.md",
+        "bytes": 109588,
+        "sha256": "569e584a84fa03c88efc62dc39991d1a41b06e3a89f22abd3d37133ae9fdbeed",
+        "resolved_path": "output/research/pip-temporary-lifecycle-acceptance-2026-10-24/DECISIONS.md.before",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-foundation/01-product-requirements.md",
+        "bytes": 70783,
+        "sha256": "4db9d504695e7791705c41fe70fd0aea0467338d95acb5b6732bf6927893ac2e",
+        "resolved_path": "docs/phase-1-foundation/01-product-requirements.md",
+        "verified": true
+      },
+      {
+        "path": "docs/active/3D_Mega_Menu_Style_Guide_v2.md",
+        "bytes": 29493,
+        "sha256": "343d25052ceba6abdf09cc754dc1dceff3fe765d8b8396f345ebedbe8ca58e0c",
+        "resolved_path": "docs/active/3D_Mega_Menu_Style_Guide_v2.md",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-3d/WORLD_MEASUREMENT_PROFILE.md",
+        "bytes": 29830,
+        "sha256": "648ad68ccfe8370a3a0d739f278994e5530ca93966588d00172b038596511104",
+        "resolved_path": "docs/phase-1-3d/WORLD_MEASUREMENT_PROFILE.md",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-3d/qualification-workloads.csv",
+        "bytes": 2576,
+        "sha256": "0f162cc3a1d7cc66a2fbd91cc7d410b4d232c042c826005b84a1b4cffdc62d8d",
+        "resolved_path": "docs/phase-1-3d/qualification-workloads.csv",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-3d/WORLD_EXPERIENCE.md",
+        "bytes": 46042,
+        "sha256": "04728adeaa1daed03ddc50b438ad5c29fda002c1e30d13955bd60c9500c39a16",
+        "resolved_path": "docs/phase-1-3d/WORLD_EXPERIENCE.md",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-3d/CAMPUS_ASSET_BUILD_SPEC.md",
+        "bytes": 45163,
+        "sha256": "6bc678ad54e173bb7754fe360ebfd2df53feda4e3e99cbba28128cf49610f8b5",
+        "resolved_path": "docs/phase-1-3d/CAMPUS_ASSET_BUILD_SPEC.md",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-3d/SCENE_ASSEMBLY_CONTRACT.md",
+        "bytes": 47248,
+        "sha256": "272b387d56f334dfbbfaa7c5d28c28928fddfb9e4314da22bf551b3afcb7b464",
+        "resolved_path": "docs/phase-1-3d/SCENE_ASSEMBLY_CONTRACT.md",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-3d/reviews/world-measurement-profile-v1-2026-10-06.md",
+        "bytes": 10858,
+        "sha256": "ab205fd68efc89ad47afb59d51972ec73a3d786d26c4397400779e5fd85b2410",
+        "resolved_path": "docs/phase-1-3d/reviews/world-measurement-profile-v1-2026-10-06.md",
+        "verified": true
+      },
+      {
+        "path": "output/research/world-capability-workloads-2026-10-17/WORLD_MEASUREMENT_PROFILE.before.md",
+        "bytes": 16316,
+        "sha256": "87a0c5f31d00dc27d1a194886105c3b90a361767a5ca38d703826c27447405e8",
+        "resolved_path": "output/research/world-capability-workloads-2026-10-17/WORLD_MEASUREMENT_PROFILE.before.md",
+        "verified": true
+      },
+      {
+        "path": "output/research/world-capability-workloads-2026-10-17/source-observations-v1.json",
+        "bytes": 1695,
+        "sha256": "1a1127f3b8e5b683894c3a028004be61709a0d0614f1577c2d81c9afb5a065ba",
+        "resolved_path": "output/research/world-capability-workloads-2026-10-17/source-observations-v1.json",
+        "verified": true
+      }
+    ]
+  },
+  "snapshot_bindings": {
+    "path": "output/research/world-capability-workloads-2026-10-17/source-snapshot-bindings-v1.json",
+    "bytes": 400,
+    "sha256": "947cde34985052a2c539f206b12e64a89ec833077261a22c49a26cba60dda9cb",
+    "binding_count": 1,
+    "scope": "Exact original DECISIONS bytes used through explicit alias; current pip-lifecycle amendment not substituted."
+  },
+  "findings": [],
+  "actionable_finding_count": 0,
+  "assessments": [
+    {
+      "evidence": "WORLD_MEASUREMENT_PROFILE.md capability amendment Three separate decisions;style guide8.2.2-8.2.3",
+      "assessment": "Compatibility hard feature ceiling, passive observed-current-workload evidence and broader physical calibration are separate. Existing initial hardware/default, eligible previous-visit raise-only advice and final persisted override precedence retained. No in-session automatic tier change, WebGPU fallback, invented numeric core cutoff or claim that Simplified success qualifies Detailed. U03 thresholds and initial-paint binding remain held under existing scope, not silently replaced by a permanently narrower feature."
+    },
+    {
+      "evidence": "WORLD_MEASUREMENT_PROFILE.md Finite observation and temporal hysteresis candidate; prior measurement profile CPU submission population",
+      "assessment": "At most one30second foreground attempt per visit, three consecutive nonoverlapping5second active windows,8192 transient intervals/96KiB inside stream CPU envelope, bounded work and invalidation events give a finite proposal. Complete CPU submission cycles/all passes/boundary gaps retain stalls; no active progress fails, idle/missing work is unavailable. Positive90percent headroom is stricter candidate evidence, not measured capacity. Invalid attempts do not restart or manufacture frames; essential ground/resource failures trigger immediate safety recovery."
+    },
+    {
+      "evidence": "WORLD_MEASUREMENT_PROFILE.md Evidence-to-next-visit mapping;style guide8.2.2-8.2.3",
+      "assessment": "Predictive higher-stream promotion requires registered conservative measured decision bands and actual target qualification. Until then same-stream positive evidence is expressly interim, no pretend calibrated classifier. One coarse origin-scoped suggestion/profile or known no-promotion record excludes raw timings/hardware/path/user/visit/timestamp history; storage is untrusted optimization advice, never authority. Snapshot previous evidence once; no same-visit storage-event tier switch. Exact encoding/privacy registration remains pending."
+    },
+    {
+      "evidence": "qualification-workloads.csv:1-7;WORLD_MEASUREMENT_PROFILE.md Named qualification recipes and conditions;CAMPUS_ASSET_BUILD_SPEC;SCENE_ASSEMBLY_CONTRACT",
+      "assessment": "Six distinct TODO recipes cover arrival, each eligible wing, reversals, retirement/reentry, DOM help/booking equivalence and30minute sustained comparison. Durations/actions are candidates, require exact anchors/paths/inputs and named physical samples. Cold/warm, attempted/cumulative transfer, old/new overlap, safe supporting ground, matched sustained windows and boundedfault evidence retain existing resources/readiness/permission obligations. Three network recipes are controlled test conditions, not real-client classifiers or achieved throughput."
+    },
+    {
+      "evidence": "WORLD_MEASUREMENT_PROFILE.md Profile registration before build/adoption and Primary constraints;source-observations-v1.json; prior scoped measurement correction receipt",
+      "assessment": "Exact release/build/scene/resource/collision/controller/renderer associations, compatible stable graph, provenance/rights, eye-level all-around horizon and aggregatepass/texture/audio/overlap accounting remain requirements. No study/Atlanta asset or object count serves as production/device fitness proof. Source observations explain API limits, not prescribe proposed numbers; no external refresh or measured claims added by this review. Prior correctionPASS remains frozen scope, not inherited by amendment."
+    }
+  ],
+  "review_method": [
+    "Verified13 identities before/after via explicit DECISIONS alias. Compared frozen before/current measurement text, read six-row recipes and prior profile/styleguide/World/campus/scene resource boundaries.",
+    "No prose tests or benchmark/device/source graph/renderer/network/browser/Figma/model/Git action; wrote only this receipt."
+  ],
+  "limits": [
+    "Numeric intervals/buffers/headroom/network recipes are unmeasured Hengshi proposals. Actual96KiB representation and bounded instrumentation work require implementation proof.",
+    "No calibrated U03 threshold/classifier or initial paint implementation binding, named physical device result, temperature/VRAM/GPU completion safety proof or model/appearance acceptance.",
+    "Actual capture/calibration/physical workload execution/privacy/accessibility/profile registration and integrated founder acceptance remain separate. No capacity error; DOING is not DONE or commit."
+  ]
+}

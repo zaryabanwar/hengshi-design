@@ -1,0 +1,65 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-12",
+  "authority": "D-090 built-in agent route and resumed Phase1 goal",
+  "scope": "Correction1 complete supplied inventory admission profile and native archive integrity; no deletion",
+  "agent_report": "agent-reply.json",
+  "agent_report_sha256": "411db21ce5020f75961b063da53306c5cbf02444fe5d6310551446095bef680a",
+  "supplied_report": {
+    "reported_ids": 162,
+    "actual_traversal": 302,
+    "extra_ids": 140,
+    "extra_types": {
+      "TEXT": 90,
+      "FRAME": 40,
+      "INSTANCE": 10
+    },
+    "all_reported_ids_resolve_unchanged": true,
+    "snapshots_atomic": false,
+    "canvas_changes_reported": false
+  },
+  "local_consistency": {
+    "reported_count": 162,
+    "unique_extra_ids": 140,
+    "combined_count": 302,
+    "direct_child_order_matches": true,
+    "extra_parent_membership": true,
+    "extra_chains_end_at_reported_ids": true,
+    "issues": []
+  },
+  "archive": {
+    "path": "HSD_UIR_B01_BEFORE_CLEANUP_V01.fig",
+    "bytes": 369969,
+    "sha256": "baf855e7326a2f2cc0a9dca3b2ad0df9a9afa25312a7ef3648fe8e29cd6681d9",
+    "original_download_retained": true,
+    "zip_entries": 4,
+    "zip_crc_errors": null,
+    "contains_canvas": true,
+    "contains_thumbnail": true,
+    "restore_tested": false
+  },
+  "limits": [
+    "AI-reported live snapshots, not an independent exhaustive canvas census or proof of historical ownership.",
+    "The current140-node difference is consistent with the earlier guard refusal, but does not prove its historical cause.",
+    "Original design descriptors, complete appearance/editability and archive restoration remain unverified; no deletion authorized or performed.",
+    "Local count/hash/ZIP checks are artifact-integrity evidence, not application, accessibility or full B01/Phase1 proof."
+  ],
+  "full_inventory": {
+    "path": "full-inventory.json",
+    "sha256": "66272298d5ada647991640992a7c497835556f04c50b0f7b45724183e83cc6c0",
+    "bytes": 11108,
+    "nodes": 302,
+    "exact_expected_and_alias_set": true,
+    "unknown_ids": [],
+    "missing_ids": [],
+    "all_nodes_reach_exact_sheet_root": true,
+    "graph_issues": [],
+    "earlier_extra_type_parent_differences": [],
+    "preserves_raw_ids": true,
+    "non_atomic": true
+  },
+  "previous_review": "../independent-review-cleanup-plan-v1.json",
+  "finding": "BCP-01: complete subtree admission required",
+  "review_verdict": null
+}

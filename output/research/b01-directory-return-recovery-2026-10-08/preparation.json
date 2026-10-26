@@ -1,0 +1,45 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "TODO",
+  "external_calls": 0,
+  "scope": "Same 52 views and two components; only returned report encoding changes",
+  "base_script_sha256": "4c811c9122bc049af4b5a01561a97b563c5eed849e9fab20809cdb54b67b62b8",
+  "script_sha256": "5a84f47c0b09d8d2ac3d922840db2a2e2a480a151a4c9b5d501950db6a1af404",
+  "unchanged_construction_prefix_sha256": "592a2e8a5473da32b247d6a48f1b5883d426a1b8e53b9d45a782df9340f41656",
+  "unchanged_construction_prefix_bytes": 28547,
+  "all_ids": "Lossless prefix groups: numeric singleton suffixes or inclusive [start,end] ranges; exact in-call round-trip equality and literal fallback",
+  "frames": "Each tuple contains id/inputIndex/width/height; exact names/state/stream resolve from unchanged input ordinal",
+  "bounds": "Every finding represented by issue/parent and lossless node IDs; none sampled or omitted",
+  "return_budget": "19000-byte UTF-8 pre-return guard under observed20480-byte limit; future actual result unknown",
+  "previews": "Same two native screenshots; no separate inspection call",
+  "authorization": "Prepared only; fresh one-call approval required; prior retry permission consumed",
+  "local_checks": {
+    "product": "Hengshi Design v1",
+    "status": "DOING",
+    "checks": [
+      {
+        "file": "output/research/b01-navigation-composition-2026-10-06/provider-result.json",
+        "ids": 1006,
+        "rawBytes": 11801,
+        "packedBytes": 3141,
+        "roundTrip": true
+      },
+      {
+        "file": "output/research/b01-navigation-recovery-2026-10-07/provider-result.json",
+        "ids": 183,
+        "rawBytes": 1648,
+        "packedBytes": 220,
+        "roundTrip": true
+      },
+      {
+        "case": "4000 compound instance IDs plus gaps duplicates and literal fallbacks",
+        "ids": 4007,
+        "rawBytes": 63275,
+        "packedBytes": 14224,
+        "roundTrip": true
+      }
+    ],
+    "scriptSyntax": true,
+    "limits": "Local codec conservation and syntax only; no Figma API execution or actual52-view receipt-size/visual assertion"
+  }
+}

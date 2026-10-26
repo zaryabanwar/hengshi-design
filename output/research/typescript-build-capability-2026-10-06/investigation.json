@@ -1,0 +1,31 @@
+{
+  "checked_at_utc": "2026-10-05T22:37:24.751019+00:00",
+  "scope": "source/registry-based build investigation; no selected graph, install, build, emit or production architecture change",
+  "prototype": "Existing apps/web uses scripts.build=tsc && vite build, installed TS5.9.3 / Vite5.4.21 / React18.3.1 / plugin-react4.7.0. Both JS and TS Vite configs exist with react(). No prototype build executed or file changed.",
+  "newest_observed": {
+    "vite": "8.3.2",
+    "@vitejs/plugin-react": "6.1.2",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "primary_source_observations": [
+    {
+      "fact": "Vite8.3.2 transpiles TypeScript with Oxc; type checking belongs to a separate step. This source recommends isolatedModules for the per-file transform constraint. No source-to-runtime parity follows from a noEmit diagnostic pass.",
+      "source": "vite8.3.2-features.md"
+    },
+    {
+      "fact": "plugin-react6.1.2 package dependencies/peers/optional peer metadata/engines match official registry metadata. Default react() config uses Oxc JSX/refresh. Static exported ReactCompiler Babel helper uses type-only optional imports and defers resolving Babel compiler to helper preset invocation.",
+      "source": "plugin-react6.1.2-index.ts and plugin-react6.1.2-reactCompilerPreset.ts"
+    },
+    {
+      "fact": "The newer opts.compiler branch lazily loads oxc-transform-react; older Vite8 launch documentation describing Babel opt-in is not the complete6.1.2 compiler contract. Optional Babel and Oxc compiler peers require explicit route-specific investigation. Legacy internal plugin name vite:react-babel alone does not establish Babel execution.",
+      "source": "plugin-react6.1.2-index.ts:285-323 and package peerDependenciesMeta"
+    },
+    {
+      "fact": "D072 remains isolated lint-only. Any path executing gensync outside that scope is held; current source investigation does not grant a React Compiler/Babel build waiver or prove shipped exclusion.",
+      "source": "DECISIONS.md D072"
+    }
+  ],
+  "next_evidence": "Prepare one separate strict, stable-only candidate through full coupled resolution; compare supported checker/API/LSP behavior and actual transform/build output, behavior and negative build gate together. Verify npm lifecycle/supply-chain/deployed exclusions and approved graph before any adoption. Do not infer graph compatibility from peer ranges or default source inspection.",
+  "limits": "No React19 runtime, browser, bundler output, compiler optimization choice, coupled R3F/Drei/Three/Tailwind graph, latest runtime adoption or whole project build proof."
+}

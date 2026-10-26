@@ -1,0 +1,20 @@
+{
+  "resolve": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Available Libraries:\n\n- Title: Three.js\n- Context7-compatible library ID: /mrdoob/three.js\n- Description: A lightweight, cross-browser, general-purpose 3D JavaScript library with WebGL and WebGPU renderers, also offering SVG and CSS3D addons.\n- Code Snippets: 28409\n- Source Reputation: High\n- Benchmark Score: 83.35\n- Versions: r110\n----------\n- Title: Three Geospatial\n- Context7-compatible library ID: /takram-design-engineering/three-geospatial\n- Description: A monorepo of modular libraries for enhancing geospatial rendering in Three.js, including atmospheric scattering, volumetric clouds, GIS data rendering, and post-processing effects.\n- Code Snippets: 995\n- Source Reputation: High\n- Benchmark Score: 80.6\n----------\n- Title: three.quarks\n- Context7-compatible library ID: /alchemist0823/three.quarks\n- Description: three.quarks is a high-performance particle system and visual effects library for three.js, written in TypeScript.\n- Code Snippets: 677\n- Source Reputation: High\n- Benchmark Score: 76.38\n----------\n- Title: Three VRM\n- Context7-compatible library ID: /pixiv/three-vrm\n- Description: A library for using VRM models with three.js, enabling developers to load and integrate VRM assets into their 3D web applications.\n- Code Snippets: 210\n- Source Reputation: High\n- Benchmark Score: 81.71\n----------\n- Title: THREE.IK\n- Context7-compatible library ID: /whatisor/three.ik\n- Description: THREE.IK is a JavaScript library for implementing inverse kinematics in three.js applications, supporting multiple chains and effectors with the FABRIK solver and ball-joint constraints.\n- Code Snippets: 61\n- Source Reputation: Medium"
+      }
+    ],
+    "isError": false
+  },
+  "docs": {
+    "content": [
+      {
+        "type": "text",
+        "text": "### TGALoader > Methods > .parse( buffer : ArrayBuffer ) : DataTextureLoader~TexData\n\nSource: https://github.com/mrdoob/three.js/blob/dev/docs/pages/TGALoader.html.md\n\nParses the given TGA texture data.\n\n**buffer**\n\nThe raw texture data.\n\n**Overrides:** [DataTextureLoader#parse](DataTextureLoader.html#parse)\n\n**Returns:** An object representing the parsed texture data.\n\n--------------------------------\n\n### SVGLoader > Methods > .parse( text : string ) : Object\n\nSource: https://github.com/mrdoob/three.js/blob/dev/docs/pages/SVGLoader.html.md\n\n### .parse( text : string ) : Object\n\nParses the given SVG data and returns the resulting data.\n\n**text**\n\nThe raw SVG data as a string.\n\n**Overrides:** [Loader#parse](Loader.html#parse)\n\n**Returns:** An object holding an array of shape paths and the SVG XML document.\n\n--------------------------------\n\n### DataTextureLoader > Type Definitions > .TexData\n\nSource: https://github.com/mrdoob/three.js/blob/dev/docs/pages/DataTextureLoader.html\n\nRepresents the result object type of the `parse()` method.\n\n| **image** Object | An object holding width, height and the texture data. |\n| **width** number | The width of the base mip. |\n| **height** number | The width of the base mip. |\n| **data** TypedArray | The texture data. |\n| **format** number | The texture format. |\n| **type** number | The texture type. |\n| **flipY** boolean | If set to `true`, the texture is flipped along the vertical axis when uploaded to the GPU. |\n| **wrapS** number | The wrapS value. Default is `ClampToEdgeWrapping`. |\n| **wrapT** number | The wrapT value. Default is `ClampToEdgeWrapping`. |\n| **anisotropy** number | The anisotropy value. Default is `1`. |\n| **generateMipmaps** boolean | Whether to generate mipmaps or not. |\n| **colorSpace** string | The color space. |\n| **magFilter** number | The mag filter. |\n| **minFilter** number | The min filter. |\n| **mipmaps** Array.<Object> | The mipmaps. |"
+      }
+    ],
+    "isError": false
+  }
+}

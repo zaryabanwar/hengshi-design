@@ -1,0 +1,18 @@
+{
+  "status": "DOING",
+  "scope": "Later receipt references only, outside frozen review inputs",
+  "changes": [
+    {
+      "path": "specs/001-platform-security-hardening/spec.md",
+      "before_sha256": "91c49e0c1170db1f578b6403c514568d2b30cfca570b2d419f3c6e0655adc60b",
+      "after_sha256": "845ce38c28a2c36ef8df9993a09f089561786f3d1f974fd2088465bff573bc0c",
+      "only_exact_review_reference_changes": true
+    },
+    {
+      "path": "specs/001-platform-security-hardening/checklists/requirements.md",
+      "before_sha256": "58299b9ac0be60682c48cc8420c22750a80527690fa6186dcac656f22f0d08c6",
+      "after_sha256": "608b4057805a63e4e7448f18eb214801dd399ee6f12e8163008fac09eb99bae7",
+      "only_exact_review_reference_changes": true
+    }
+  ]
+}

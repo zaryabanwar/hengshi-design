@@ -1,0 +1,37 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Pure resource arithmetic and unexecuted stage command/environment preparation only",
+  "parent_plan": "output/research/python315-build-proposal-2026-10-15/qualification-plan-v1.json",
+  "helper": "admission_budget.py",
+  "command_manifest": "stage-commands-v1.json",
+  "tests": "test_admission_budget.py",
+  "independent_review": "TODO",
+  "execution_authorized": false,
+  "changes": [
+    "Add exact512MiB retained/1GiB floor/64MiB step overhead arithmetic from reviewed plan, without changing those limits.",
+    "Prepare14 absolute argv vectors retaining roots, extras, two source builds and original18 plus prospective6 tests; no command invoked.",
+    "Record process-local PIP_CONFIG_FILE=nul plus isolated/noninteractive/no-keyring/zero-retry flags, grounded in source/docs; actual bundled runtime admission still required.",
+    "Distinguish free-space snapshot, pure arithmetic, ownership, actual reservation, controller and execution authority."
+  ],
+  "review_questions": [
+    "Does budget arithmetic correctly enforce the reviewed envelope for supplied fresh measurements and all declared future writes, including two expanded copies?",
+    "Are command vectors and configuration policy consistent with the plan and official source, without borrowing execution authority or hiding unresolved inputs?",
+    "Are the offline, acquisition-byte preservation, ownership/process/output control and basetemp deletion risks held explicitly rather than represented as solved?"
+  ],
+  "existing_dependencies": [
+    "The archive-helper15-input packet is independently unreviewed and not adopted.",
+    "The52-input pipeline proposal PASS is permission to present preparation, not permission to acquire/execute this trial."
+  ],
+  "required_future_work": [
+    "Independently review these exact candidate sources/results and archive subset before building the complete controller.",
+    "Resolve offline enforcement and retained-byte preservation through pip lifecycle; prepare acquisition, Windows destination/stream ownership, process/environment/measurement/controller code and concrete reviewable operation bindings.",
+    "Freshly satisfy disk admission; reviewed build/full graph and hash bindings and explicit runtime/source-build execution approval.",
+    "Full24-case actual3.15 results/notices and production/platform/adoption gates remain separate."
+  ],
+  "limits": [
+    "Seven synthetic arithmetic methods prove only the helper boundary, not measured ownership, physical reservation, concurrency or OS quotas.",
+    "No preparation command vector was executed, no runtime/source/wheel was acquired and no target/environment was created. Official pip source/licence captures were read as evidence only.",
+    "No independent verdict, stable graph selection, app/global settings/dependency/runtime upgrade, provider/account/Git action, security/licence clearance or Phase1 acceptance."
+  ]
+}

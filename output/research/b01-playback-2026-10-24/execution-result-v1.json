@@ -1,0 +1,152 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-24",
+  "scope": "Read-only replay of four existing Recovery/SEMANTIC preserve/reset edges. No design write, new edge, AI prompt or MCP call.",
+  "fileKey": "GOmLP6Cv96l768ueSrZ5Dg",
+  "source": "175:3797",
+  "preserve": "175:3819",
+  "reset": "175:3841",
+  "sequence": [
+    "Present opened existing selected source. Visible default: Quick Access selected and in force. Saved01 has incomplete emitted pixels; saved bytes require independent inspection.",
+    "Selected Detailed at source without Apply. Saved02 shows Detailed selected, Quick Access in force. Scrolled to bottom and saved03.",
+    "Activated Private preserve probe. AX URL changed to175:3819. Saved04 emitted partial pixels. Closed player flows sidebar only, with no prototype scroll input; saved05 shows bottom marker. Sidebar repositioned frame, so exact pixel continuity is not claimed.",
+    "Activated Private return probe without prototype scroll input. AX URL returned175:3797. Saved06 shows bottom marker. Then scrolled to top; saved07 decodes to a complete Detailed-pending, Quick-Access-in-force screen.",
+    "Scrolled same pending source to bottom; saved08. Activated Private reset probe. AX URL changed175:3841; saved09 shows top/default Quick Access selected and in force.",
+    "Scrolled reset destination to bottom; saved10. Activated Private return probe. AX URL returned175:3797; saved11 shows top/default Quick Access selected and in force."
+  ],
+  "producerAssessment": "Improved bounded visual evidence for both preserve and reset round trips. Native matching rule and exact scroll offset are not established; not all324 edges, full B01, accessibility, runtime or integrated Phase1 acceptance.",
+  "captureLimits": "Some tool emissions remain partial/black; saved bytes are inventoried separately, not inferred from emission or filename. Every file keeps original returned bytes, including actual format differing from .png extension. No browser viewport override, CDP, refresh/restart of prototype or design mutation.",
+  "images": [
+    {
+      "path": "output/research/b01-playback-2026-10-24/01-default.png",
+      "format": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "bytes": 43603,
+      "sha256": "750c1b3eb10b894a96d0c142f78e1d3702b51a3fabb5324f05f9d897002a1fc3"
+    },
+    {
+      "path": "output/research/b01-playback-2026-10-24/02-detailed-pending.png",
+      "format": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "bytes": 43600,
+      "sha256": "ffd5fde670f930e5fc9a2b33ab4fdf8fa40ef9441ba698137f7f32d6e7222324"
+    },
+    {
+      "path": "output/research/b01-playback-2026-10-24/03-pending-bottom.png",
+      "format": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "bytes": 52312,
+      "sha256": "fbf6425c9f5fe4bf86140d85a275c761a6d4eaf94e3f0dea608c1811272df3d8"
+    },
+    {
+      "path": "output/research/b01-playback-2026-10-24/04-preserve-arrival.png",
+      "format": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "bytes": 52312,
+      "sha256": "fbf6425c9f5fe4bf86140d85a275c761a6d4eaf94e3f0dea608c1811272df3d8"
+    },
+    {
+      "path": "output/research/b01-playback-2026-10-24/05-preserve-arrival-sidebar-hidden.png",
+      "format": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "bytes": 44026,
+      "sha256": "8a99a022a2a14fa0cdf8d281715b2d42592fe2e29eada504260410cef75ba651"
+    },
+    {
+      "path": "output/research/b01-playback-2026-10-24/06-preserve-return-bottom.png",
+      "format": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "bytes": 36135,
+      "sha256": "5cb00986f58e5c5275b908a6a0b587323ce6f4bc69f9b1f1e982aa676e295aee"
+    },
+    {
+      "path": "output/research/b01-playback-2026-10-24/07-preserve-return-pending.png",
+      "format": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "bytes": 27331,
+      "sha256": "828f35f72f7dc6dc3bf8c6413886a8ee8716e0f97675ea78698038f6cec0ca2a"
+    },
+    {
+      "path": "output/research/b01-playback-2026-10-24/08-pending-reset-source-bottom.png",
+      "format": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "bytes": 36135,
+      "sha256": "5cb00986f58e5c5275b908a6a0b587323ce6f4bc69f9b1f1e982aa676e295aee"
+    },
+    {
+      "path": "output/research/b01-playback-2026-10-24/09-reset-arrival-default.png",
+      "format": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "bytes": 27320,
+      "sha256": "304aa53225f038daed8f3bd2594550cf9d8c741dae46e8eb816e4cf7c1c22a3d"
+    },
+    {
+      "path": "output/research/b01-playback-2026-10-24/10-reset-destination-bottom.png",
+      "format": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "bytes": 37308,
+      "sha256": "5c3dec44ecff51d297ed4bd3ffccc1784ee0e6a1a86b6d1e60e58e862e6721d1"
+    },
+    {
+      "path": "output/research/b01-playback-2026-10-24/11-reset-return-default.png",
+      "format": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "bytes": 27320,
+      "sha256": "304aa53225f038daed8f3bd2594550cf9d8c741dae46e8eb816e4cf7c1c22a3d"
+    }
+  ],
+  "independent_review": "TODO",
+  "nativeInspection": {
+    "method": "Read-only native layer disclosure and Design property inspection; no keyboard arrows or property changes",
+    "sourceInstance": "175:3798",
+    "preserveInstance": "175:3820",
+    "resetInstance": "175:3842",
+    "allThreeNames": "ENQ host RECOVERY SEMANTIC",
+    "allThreeDefaultTuples": [
+      "SEMANTIC",
+      "SEMANTIC",
+      "NOT_APPLICABLE"
+    ],
+    "dimensions": "320x1400; source host320x560 vertically scrolling",
+    "evidence": [
+      "source-instance.txt",
+      "preserve-instance.txt",
+      "reset-instance.txt"
+    ],
+    "limit": "Same names, default property tuple and observed playback are bounded samples; not authoritative complete component-key matching, sibling-path uniqueness, graph preservation or all-host qualification."
+  }
+}

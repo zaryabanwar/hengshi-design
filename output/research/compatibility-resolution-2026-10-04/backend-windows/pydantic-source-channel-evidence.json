@@ -1,0 +1,118 @@
+[
+  {
+    "key": "core_release",
+    "url": "https://api.github.com/repos/pydantic/pydantic/releases/tags/core-v2.46.5",
+    "observed_at": "2026-10-04T09:32:51.339714Z",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "key": "core_tag",
+    "url": "https://api.github.com/repos/pydantic/pydantic/git/ref/tags/core-v2.46.5",
+    "observed_at": "2026-10-04T09:32:51.9938656Z",
+    "status": 200,
+    "file": "core_tag.source.txt",
+    "bytes": 357,
+    "sha256": "ec17ce0958d2914bf70a0aa8a09bf7917162c838e543101300e43a823913a047"
+  },
+  {
+    "key": "pydantic_tag",
+    "url": "https://api.github.com/repos/pydantic/pydantic/git/ref/tags/v2.13.5",
+    "observed_at": "2026-10-04T09:32:52.6432123Z",
+    "status": 200,
+    "file": "pydantic_tag.source.txt",
+    "bytes": 339,
+    "sha256": "2d4eec2f7ca90dec8a358d26d417736188a7335bcc34eaf2dbf46050c6d0b356"
+  },
+  {
+    "key": "version_policy",
+    "url": "https://raw.githubusercontent.com/pydantic/pydantic/v2.13.5/docs/version-policy.md",
+    "observed_at": "2026-10-04T09:32:53.3302712Z",
+    "status": 200,
+    "file": "version_policy.source.txt",
+    "bytes": 6635,
+    "sha256": "08250a1f910b862b9c2349ce21dd4aa8d67e8b41aa32d5fe89acb9fa988335b7"
+  },
+  {
+    "key": "pydantic_pyproject",
+    "url": "https://raw.githubusercontent.com/pydantic/pydantic/v2.13.5/pyproject.toml",
+    "observed_at": "2026-10-04T09:32:54.0230704Z",
+    "status": 200,
+    "file": "pydantic_pyproject.source.txt",
+    "bytes": 8849,
+    "sha256": "5b72b7bec36d50131da5f0932176e5a2a14511d7e9f7f48a4ced20ddb8e3e783"
+  },
+  {
+    "key": "core_pyproject",
+    "url": "https://raw.githubusercontent.com/pydantic/pydantic/core-v2.46.5/pydantic-core/pyproject.toml",
+    "observed_at": "2026-10-04T09:32:54.7141886Z",
+    "status": 200,
+    "file": "core_pyproject.source.txt",
+    "bytes": 5643,
+    "sha256": "80f7cf0e108619c32894e828db550bfe6928d4f14ce244ef492fe782609f9926"
+  },
+  {
+    "key": "core_tag_object",
+    "url": "https://api.github.com/repos/pydantic/pydantic/git/tags/591475c08b1741a585a75d444d6aa9e0f7504c6d",
+    "observed_at": "2026-10-04T09:33:43.09352Z",
+    "status": 200,
+    "file": "core_tag_object.source.txt",
+    "bytes": 700,
+    "sha256": "a2d944024d8501218ee099223d2174fca81a05fe65c9d3e4aa32cbd2a3e81108"
+  },
+  {
+    "key": "pydantic_tag_object",
+    "url": "https://api.github.com/repos/pydantic/pydantic/git/tags/b6604b904f6b6f46334e35bceab4c905fe915ddc",
+    "observed_at": "2026-10-04T09:33:43.7710274Z",
+    "status": 200,
+    "file": "pydantic_tag_object.source.txt",
+    "bytes": 680,
+    "sha256": "d74a7934c1f6a803e4ec874e953bc42fee563b7d6f2dd61b9454f60d59f4c2d9"
+  },
+  {
+    "key": "pydantic_main_ref",
+    "url": "https://api.github.com/repos/pydantic/pydantic/git/ref/heads/main",
+    "observed_at": "2026-10-04T09:33:44.4176913Z",
+    "status": 200,
+    "file": "pydantic_main_ref.source.txt",
+    "bytes": 337,
+    "sha256": "fe401b5df447eaa692a63e8d5cb2eb69b0cdb85bd65a6497b703b110ae07d383"
+  },
+  {
+    "key": "current_policy_pinned",
+    "url": "https://raw.githubusercontent.com/pydantic/pydantic/e87e11b7a74068c2d8107e48ffed6102744abef8/docs/version-policy.md",
+    "observed_at": "2026-10-04T09:33:45.0936279Z",
+    "status": 200,
+    "file": "current_policy_pinned.source.txt",
+    "bytes": 6635,
+    "sha256": "08250a1f910b862b9c2349ce21dd4aa8d67e8b41aa32d5fe89acb9fa988335b7"
+  },
+  {
+    "key": "core_cargo_pinned",
+    "url": "https://raw.githubusercontent.com/pydantic/pydantic/001dea020e0809844e5b17666432c9135a976f46/pydantic-core/Cargo.toml",
+    "observed_at": "2026-10-04T09:33:45.7044306Z",
+    "status": 200,
+    "file": "core_cargo_pinned.source.txt",
+    "bytes": 2875,
+    "sha256": "178d537feb822d845526eeac2438f817cf25ad15d15fe1261b81b9b3452edbb3"
+  },
+  {
+    "key": "pydantic_pyproject_pinned",
+    "url": "https://raw.githubusercontent.com/pydantic/pydantic/001dea020e0809844e5b17666432c9135a976f46/pyproject.toml",
+    "observed_at": "2026-10-04T09:35:54.2329159Z",
+    "status": 200,
+    "file": "pydantic_pyproject_pinned.source.txt",
+    "bytes": 8849,
+    "sha256": "5b72b7bec36d50131da5f0932176e5a2a14511d7e9f7f48a4ced20ddb8e3e783",
+    "matches_tag_source": true
+  },
+  {
+    "key": "core_pyproject_pinned",
+    "url": "https://raw.githubusercontent.com/pydantic/pydantic/001dea020e0809844e5b17666432c9135a976f46/pydantic-core/pyproject.toml",
+    "observed_at": "2026-10-04T09:35:54.9422492Z",
+    "status": 200,
+    "file": "core_pyproject_pinned.source.txt",
+    "bytes": 5643,
+    "sha256": "80f7cf0e108619c32894e828db550bfe6928d4f14ce244ef492fe782609f9926",
+    "matches_tag_source": true
+  }
+]

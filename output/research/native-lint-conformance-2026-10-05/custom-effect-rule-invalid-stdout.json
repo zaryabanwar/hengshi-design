@@ -1,0 +1,7 @@
+{ "diagnostics": [{"message": "React Hook useSpecialEffect has a missing dependency: 'value'","code": "react-hooks(exhaustive-deps)","severity": "error","url": "https://oxc.rs/docs/guide/usage/linter/rules/react/exhaustive-deps.html","help": "Either include it or remove the dependency array.","filename": "custom-fixtures/custom-effect-rule-invalid.tsx","labels": [{"label": "useSpecialEffect uses `value` here","span": {"offset": 140,"length": 5,"line": 3,"column": 39}},{"span": {"offset": 151,"length": 2,"line": 3,"column": 50}}]}],
+              "number_of_files": 1,
+              "number_of_rules": 2,
+              "threads_count": 4,
+              "start_time": 0.0216396
+            }
+            

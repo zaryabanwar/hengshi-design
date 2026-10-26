@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hengshi-design:v1:research:staff-token-header",
+  "description": "Unadopted parsed-header shape only. Select header explicitly; this module root rejects. No raw JSON/base64url, key existence, signature, claim, current-session or authorization proof.",
+  "not": {},
+  "$defs": {
+    "header": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["alg", "typ", "kid"],
+      "properties": {
+        "alg": {"const": "RS256"},
+        "typ": {"const": "hsd-staff+jwt"},
+        "kid": {
+          "type": "string", "minLength": 32, "maxLength": 32,
+          "pattern": "^[0-9a-f]{32}$"
+        }
+      }
+    }
+  }
+}

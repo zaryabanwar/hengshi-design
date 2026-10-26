@@ -1,0 +1,50 @@
+--- architecture-entry.before.md
+
++++ docs/phase-1-architecture/README.md
+
+@@ -1,5 +1,5 @@
+
+ # Hengshi Design v1 — current architecture entry
+ 
+-Status: DOING. Reconciled 2026-10-11. This entry assembles existing decisions and
++Status: DOING. Reconciled 2026-10-17. This entry assembles existing decisions and
+ contract owners for Phase 1 review; it introduces no new component, mechanism,
+ provider, version selection or implementation permission.
+@@ -80,9 +80,22 @@
+
+ | Approval, release eligibility and coordinated derivatives | [Publication contract](contracts/PUBLICATION_CONTRACT.md), including scene/knowledge preparation and activation. |
+ | Movement, scene residency, collision and audio | [Movement addendum](MOVEMENT_STREAMING_ADDENDUM.md), [World definition](../phase-1-3d/WORLD_EXPERIENCE.md) and [scene assembly contract](../phase-1-3d/SCENE_ASSEMBLY_CONTRACT.md). |
+-| Staff identity, sessions, permission and privacy lifecycle | [Security/privacy contract](contracts/SECURITY_PRIVACY_CONTRACT.md); [private-process proof](contracts/PRIVATE_PROCESS_PROOF.md) owns visitor proof boundaries. |
++| Staff identity, authorization and privacy lifecycle | [Security/privacy contract](contracts/SECURITY_PRIVACY_CONTRACT.md); [private-process proof](contracts/PRIVATE_PROCESS_PROOF.md) owns visitor proof boundaries. |
++| Hengshi staff sessions and own-session controls | [Staff session protocol](contracts/STAFF_SESSION_PROTOCOL.md) owns application clocks, rotation, logout and control directions; the security contract supplies identity/authorization policy. |
+ | Conversation delivery, continuation and human handoff | [Chat event protocol](contracts/CHAT_EVENT_PROTOCOL.md) and [handoff lifecycle](contracts/HANDOFF_LIFECYCLE.md). |
+ | Discovery booking and external reconciliation | [Booking scheduling](contracts/BOOKING_SCHEDULING.md), with qualification and email-ownership directions in the interface catalogue. |
+ | Behavior evidence, failure, restoration and recovery | [QA/recovery contract](contracts/QA_RECOVERY.md) and the approved-requirement-based acceptance matrix. Artifact integrity is separate from application behavior. |
+ | Versions, provenance, licensing, stable graph and local operation | [Compatibility package](../phase-1-compatibility/README.md) and [native operating guide](../../README.md#native-local-operation-on-windows). Docker is not required locally. |
++
++## Current refinements and their review limits
++
++These links identify the current owners; they do not extend the accepted
++architecture baseline or transfer a review verdict to later edits.
++
++| Refinement | Current definition and evidence |
++|---|---|
++| Staff session controls | The [session owner](contracts/STAFF_SESSION_PROTOCOL.md) and [directional schema](contracts/staff-session-control.schema.json) retain separate [corrected logical](../../output/research/staff-session-controls-2026-10-17/correction-1/independent-review-controls-correction-v1.json) and [canonical binding](../../output/research/staff-session-controls-2026-10-17/canonical-binding/independent-review-canonical-controls-v1.json) PASS receipts. These cover frozen proposal/representation scopes. The new [catalogue registration](../../output/research/staff-session-controls-2026-10-17/catalogue-binding/review-inputs-v1.json) remains unreviewed; no endpoint, signed-token verification or complete session implementation is established. |
++| Staff principal and session records | The [DE-06/07 data amendment](contracts/DATA_CONTRACT.md#staff-principalsession-field-binding-proposal--2026-10-17) owns the proposed field and revision-event translation. Its [separate packet](../../output/research/staff-session-data-binding-2026-10-17/review-inputs-v1.json) has no independent verdict; no table, migration or data-model adoption follows. |
++| Privacy purposes, notices and copies | The [privacy registry amendment](contracts/SECURITY_PRIVACY_CONTRACT.md#purpose-notice-and-copy-binding-registry-proposal--2026-10-17) and [purpose matrix](contracts/privacy-purpose-bindings.csv) identify proposed responsibilities. Their [separate packet](../../output/research/privacy-purpose-bindings-2026-10-17/review-inputs-v1.json) remains unreviewed. Notice families are not issued notices; no legal-basis, retention-period, recipient or operational-channel approval is implied. |
++| World capability observations and workloads | The [measurement owner](../phase-1-3d/WORLD_MEASUREMENT_PROFILE.md#capability-samples-and-workload-registration-proposal--2026-10-17) and [workload matrix](../phase-1-3d/qualification-workloads.csv) retain an [unreviewed proposal](../../output/research/world-capability-workloads-2026-10-17/review-inputs-v1.json). The recipes are not a running classifier or measured device results; physical calibration and acceptance remain. |
+ 
+ ## What remains before implementation
+@@ -102,7 +115,9 @@
+
+ 
+ The [independent entry review](../../output/research/current-architecture-entry-2026-10-11/independent-review-entry-v1.json)
+-passes documentation/navigation consistency at its eleven frozen inputs, with no
++passes documentation/navigation consistency at its eleven frozen inputs from
++2026-10-11, with no
+ actionable findings. The original baseline and map hashes are preserved. The
+ review does not independently verify the one-row-only navigation delta, accept
+ the complete architecture/Phase 1 package or grant implementation permission.
+-This later receipt link is outside the frozen reviewed entry bytes.
++The later receipt link and this 2026-10-17 owner/reference reconciliation are
++outside the frozen reviewed entry bytes; neither inherits that PASS.

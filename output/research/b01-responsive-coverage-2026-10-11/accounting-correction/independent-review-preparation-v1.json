@@ -1,0 +1,271 @@
+{
+  "schema_version": "independent-source-review-v1",
+  "reviewer_id": "review_responsive_accounting_v1",
+  "producer_id": "root",
+  "reviewed_at_utc": "2026-10-11T19:11:11.711Z",
+  "verdict": "PASS",
+  "scope": "First source revision correcting RSC-01 mutation inventory only; exact frozen 21-input packet. Proposed 28-reference Figma call remains unexecuted.",
+  "packet": {
+    "path": "output/research/b01-responsive-coverage-2026-10-11/accounting-correction/review-inputs.json",
+    "bytes": 6629,
+    "sha256": "b7454c60b4dd04126817b2e0f7f618710baee16e9ffe7adcf80203597a597117",
+    "input_count": 21
+  },
+  "frozen_inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/00-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "verified": true
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/01-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "verified": true
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/02-DECISIONS.md",
+      "bytes": 92209,
+      "sha256": "5ac584900987a9d8eb97bd3d459adf3a9d52737e195e1848fc6fddbc70c3fe40",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/03-B01_EXECUTION_BRIEF.md",
+      "bytes": 34786,
+      "sha256": "f1a43250ab4e8950d7777aca913358cff6d60e3e8463ccca605bf84851d2d259",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/04-UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "bytes": 45771,
+      "sha256": "1779fd3cd71f8210815fd7ddbbcd06faa6e5387e2d91584531be6d3806f8cf61",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/evidence-capture-plan.csv",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/05-evidence-capture-plan.csv",
+      "bytes": 8428,
+      "sha256": "4dceafb6d78a859ff5aee23ac78e65180975e72e83ed14a40dc20a90ad4fa0fd",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/06-responsive-state-mode-matrix.csv",
+      "bytes": 33821,
+      "sha256": "deb91325e1c8a543878111883f5b1203ae9e5dc35c00e0d837e927786eaf47e2",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/07-reference-template-inventory.csv",
+      "bytes": 33498,
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/design-batch-plan.csv",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/08-design-batch-plan.csv",
+      "bytes": 28149,
+      "sha256": "0b01be6b01157785cf57dcb5c36a8efbd9254031708f9afad19db52e4f8b32ce",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/component-primitives.csv",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/09-component-primitives.csv",
+      "bytes": 79574,
+      "sha256": "575d1478893c090e9b367e75c2d14cf645e80eeb67bce09c2383c08294fa034a",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-brand-identity/semantic-tokens.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/10-semantic-tokens.json",
+      "bytes": 8434,
+      "sha256": "874bc1df44722358c727cf318e1c7baaa0abf50244aa690ed7a256d1baa6fe3b",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/accessibility/UG-3_CONTROL_COPY_PROPOSAL.md",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/11-UG-3_CONTROL_COPY_PROPOSAL.md",
+      "bytes": 6745,
+      "sha256": "839eb5291d79ac811e927e01ff9b588c192dac8a4c955448c753b4c63ccc3a3b",
+      "verified": true
+    },
+    {
+      "source": "output/research/b01-navigation-composition-2026-10-06/state-ledger.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/12-state-ledger.json",
+      "bytes": 23436,
+      "sha256": "f078e20b6fca5deec68a8876d83922d03064036aa797fb719cd6cae6d594da2b",
+      "verified": true
+    },
+    {
+      "source": "output/research/b01-directory-call19-2026-10-08/decoded-design-result.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/13-decoded-design-result.json",
+      "bytes": 72290,
+      "sha256": "71f198783593821c55291a8e9b6a1e896d35f7addb695245c08763dd225e0eda",
+      "verified": true
+    },
+    {
+      "source": "output/research/b01-recovery-stream-bindings-2026-10-08/attempt24-2026-10-11/receipt.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/14-receipt.json",
+      "bytes": 1969,
+      "sha256": "3dd22beefbd90c251827c5479621a4e7193721c5d39cc6694828cf251c28e0e6",
+      "verified": true
+    },
+    {
+      "source": "output/research/b01-recovery-stream-bindings-2026-10-08/input.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/15-input.json",
+      "bytes": 13802,
+      "sha256": "0e75c5db5f8145f881ce6552d1ca44a21f253a45b4cdb2812772caa6dad09f14",
+      "verified": true
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/input.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/16-input.json",
+      "bytes": 36211,
+      "sha256": "e922317901f3e8ed9fc88958d22c46409444b5c3e884091f16ff886acd73d1d5",
+      "verified": true
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/figma-template.js",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/accounting-correction/figma-template.js",
+      "bytes": 12294,
+      "sha256": "6608abe84c5264b1b851d1d42f91083166e510208ba8eebd39c559f0d7654f0b",
+      "verified": true
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/figma-call.js",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/accounting-correction/figma-call.js",
+      "bytes": 42766,
+      "sha256": "918122379a009d48b8fa904210e37424053d1dedba6fa4d148f689eb1cd57bfb",
+      "verified": true
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/primary-source.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/19-primary-source.json",
+      "bytes": 657,
+      "sha256": "dc6a24d70cca9002809fb5d481c45c808ced953e1c60e9f616125fede5af962b",
+      "verified": true
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/independent-review-preparation-v1.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/accounting-correction/initial-review-v1.json",
+      "bytes": 17525,
+      "sha256": "89a04090de3021a65a6bded0037df20cb760cc176fbb213f74200642b6ed2a58",
+      "verified": true
+    }
+  ],
+  "prior_review": {
+    "path": "output/research/b01-responsive-coverage-2026-10-11/independent-review-preparation-v1.json",
+    "snapshot": "output/research/b01-responsive-coverage-2026-10-11/accounting-correction/initial-review-v1.json",
+    "bytes": 17525,
+    "sha256": "89a04090de3021a65a6bded0037df20cb760cc176fbb213f74200642b6ed2a58",
+    "verdict": "FAIL",
+    "preserved": true,
+    "original_packet": {
+      "path": "output/research/b01-responsive-coverage-2026-10-11/review-inputs.json",
+      "bytes": 6164,
+      "sha256": "217595230fa2258dff7a312ab6b6a0b02a0d9f4dbc858b3d2cde69c4b8705fdb",
+      "input_count": 20,
+      "all_sizes_hashes_verified": true
+    }
+  },
+  "revised_scripts": {
+    "template": {
+      "path": "output/research/b01-responsive-coverage-2026-10-11/accounting-correction/figma-template.js",
+      "bytes": 12294,
+      "sha256": "6608abe84c5264b1b851d1d42f91083166e510208ba8eebd39c559f0d7654f0b",
+      "original_sha256": "a70b9c2b6a757f0041f20cf490eef14cc153865fce2d6216c408dd07f4590752"
+    },
+    "call": {
+      "path": "output/research/b01-responsive-coverage-2026-10-11/accounting-correction/figma-call.js",
+      "bytes": 42766,
+      "sha256": "918122379a009d48b8fa904210e37424053d1dedba6fa4d148f689eb1cd57bfb",
+      "original_sha256": "1ba0dc8e4c90064da10d757a88d93ad696cadd72ba4ff0c83987ab5f27cff353"
+    }
+  },
+  "findings": [],
+  "resolved_findings": [
+    {
+      "id": "RSC-01",
+      "severity": "MEDIUM",
+      "status": "RESOLVED_IN_SOURCE",
+      "title": "Existing source-container mutation inventory now complete for the declared sources",
+      "references": [
+        "output/research/b01-responsive-coverage-2026-10-11/accounting-correction/figma-template.js:100",
+        "output/research/b01-responsive-coverage-2026-10-11/accounting-correction/figma-call.js:100"
+      ],
+      "evidence": "The sole exact edit changes mutatedNodeIds from [page.id] to a Set-deduplicated page ID and all declared source parent IDs. Twenty guarded source frames are owned by the three expected existing containers. Pure expression evaluation independently yields [0:1,21:290,27:381,29:1512]. Temporary source clone insertion and reparenting therefore no longer omit the three pre-existing source-container child-list mutations. Actual external execution and preservation are unproven."
+    }
+  ],
+  "isolated_checks": {
+    "all21_frozen_sizes_hashes_verified": true,
+    "prior20_frozen_sizes_hashes_verified": true,
+    "prior_receipt_and_packet_identity_verified": true,
+    "exact_delta": {
+      "before": "mutatedNodeIds:[page.id]",
+      "after": "mutatedNodeIds:[...new Set([page.id,...input.sources.map(source=>source.parentId)])]",
+      "occurrences_each_original_script": 1,
+      "additional_utf8_bytes_each_script": 60,
+      "no_other_script_changes": true
+    },
+    "old_and_corrected_embedded_input_template_correspondence": true,
+    "corrected_call_async_vm_Script_parse": "PASS, wrapper compiled but not invoked",
+    "node_runtime": "v24.14.0",
+    "pure_mutation_inventory_expression_result": [
+      "0:1",
+      "21:290",
+      "27:381",
+      "29:1512"
+    ],
+    "pure_expression_includes_no_figma_api": true,
+    "source_count": 20,
+    "unique_source_parent_ids": [
+      "21:290",
+      "27:381",
+      "29:1512"
+    ],
+    "producer_figma_code_executed": false,
+    "figma_external_calls": 0
+  },
+  "observations": [
+    {
+      "id": "RSC-C1",
+      "result": "PASS",
+      "conclusion": "The corrected inventory remains in base and is inherited unchanged by the final report spread. Created and temporary node inventories remain separate. Only newly created root/units/clones/notes/comparison rows/sheets are otherwise constructed or resized; originals and source containers retain the unchanged final preservation checks. The correction introduces no new mutation or production dependency."
+    },
+    {
+      "id": "RSC-C2",
+      "result": "PASS",
+      "conclusion": "The exact 60-byte single-expression delta proves unchanged source guards, font/style/token loading, geometry capping, metadata, comparison grouping, finite UTF8 return guards, tracking, screenshots, cleanup and preservation checks. No regression was found from this correction. Prior RSC-O1 through RSC-O6 and isolated codec/UTF8 observations are retained by exact unchanged-code/input identity, not independently expanded into runtime or pixel conclusions in this re-review."
+    },
+    {
+      "id": "RSC-C3",
+      "result": "PASS",
+      "conclusion": "Original frozen packet, original scripts and prior FAIL receipt remain preserved. Revised template embeds the same frozen input and generates the exact revised call. The later live B01 brief navigation changes are outside frozen source review and have not refreshed its identities."
+    }
+  ],
+  "live_post_freeze_drift": [
+    {
+      "source": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "bytes": 37048,
+      "sha256": "0d44c6477f48e4f89897358f5cf3bff35edef5c7e5e8babb364541ef93efee3f",
+      "same_as_frozen": false
+    }
+  ],
+  "limits": [
+    "PASS closes RSC-01 in prepared source only; no external call, allowance exception, retry or paid activation is authorized.",
+    "No Figma producer was executed; no current-canvas equality, actual created-node inventory, preservation, temporary cleanup or provider-result proof was obtained.",
+    "No pixels, responsive readability/reflow, vertical overflow, line length, sticky/safe-area obstruction, virtual keyboard, action, focus, assistive technology or actual browser zoom was verified.",
+    "Twenty-eight declared design references and five proposed comparison images do not discharge remaining states, modes, surfaces, host/process profiles, prototypes, interaction or accessibility evidence.",
+    "The informative primary-source metadata and nominal viewport arithmetic are unchanged; no external standards or network source was fetched for this correction review.",
+    "Font-group membership remains bounded metadata, not rendered-font identification, missing-font/licensing or complete layer-editability proof.",
+    "Contracted 2x/SVG/native archives, restore/EXIT, design accessibility review, founder pilot/integrated Phase 1 acceptance and application enforcement remain separate.",
+    "This review writes only its exclusive-create receipt. No application, external design, account, provider, Git, original input or canonical documentation changes."
+  ]
+}

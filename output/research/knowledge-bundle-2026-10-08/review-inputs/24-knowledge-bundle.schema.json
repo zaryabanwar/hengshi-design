@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed public grounding bundle v1",
+  "description": "Publication artifact shape only. No shape, hash or source reference proves approval, eligible release, correct extraction, claim support, safe provider routing or publication authority. Compiler and current runtime semantic checks remain mandatory.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "kind", "release_id", "content_snapshot_sha256", "artifact_id", "sources", "passages"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "kind": {"const": "public_grounding_bundle"},
+    "release_id": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+    "content_snapshot_sha256": {"$ref": "process-value.schema.json#/$defs/sha256"},
+    "artifact_id": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+    "sources": {"type": "array", "minItems": 1, "maxItems": 256, "uniqueItems": true, "items": {"$ref": "#/$defs/source"}},
+    "passages": {"type": "array", "minItems": 1, "maxItems": 1024, "uniqueItems": true, "items": {"$ref": "#/$defs/passage"}}
+  },
+  "$defs": {
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_key", "title", "reference"],
+      "properties": {
+        "source_key": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+        "title": {"type": "string", "minLength": 1, "maxLength": 160},
+        "reference": {"$ref": "chat-text.schema.json#/$defs/source_reference"}
+      }
+    },
+    "passage": {
+      "type": "object", "additionalProperties": false,
+      "required": ["passage_key", "source_key", "text"],
+      "properties": {
+        "passage_key": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+        "source_key": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+        "text": {"type": "string", "minLength": 1, "maxLength": 4096}
+      }
+    }
+  }
+}

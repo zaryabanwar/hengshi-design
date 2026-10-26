@@ -1,0 +1,22 @@
+{
+  "command": [
+    "node",
+    "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\compatibility-resolution-2026-10-04\\native-lint-probe\\tool\\node_modules\\oxlint\\bin\\oxlint",
+    "--config",
+    "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\config-only-check.json",
+    "--disable-nested-config",
+    "--no-ignore",
+    "--format",
+    "json",
+    "--allow",
+    "all",
+    "--deny",
+    "react/rules-of-hooks",
+    "--deny",
+    "react/exhaustive-deps",
+    "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\fixtures\\custom-effect-rule-invalid.tsx"
+  ],
+  "exit": 0,
+  "stdout": "{ \"diagnostics\": [],\n              \"number_of_files\": 1,\n              \"number_of_rules\": 2,\n              \"threads_count\": 4,\n              \"start_time\": 0.0080649\n            }\n            ",
+  "stderr": ""
+}

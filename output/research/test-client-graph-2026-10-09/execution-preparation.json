@@ -1,0 +1,20 @@
+{
+  "product_release": "v1",
+  "status": "TODO",
+  "execution_authorized": false,
+  "plan_sha256": "5177051dcbf735ac9422a7886cc657f1ecd9becdd0c9e7da5337637d8a839ab8",
+  "proposal_review_sha256": "941e02eb8b467e393a64bc75814040a343ec382787990789f3cb2e38b7e3bd71",
+  "helpers": [
+    {
+      "path": "output/research/test-client-graph-2026-10-09/run_native_trial.py",
+      "sha256": "c5dc2720c6485d3afc50a42ca08821c565b4d5dfc2e2d6b58d514a1d6c87e9dd"
+    },
+    {
+      "path": "output/research/test-client-graph-2026-10-09/run_probes.py",
+      "sha256": "b5fb60d328e9d3fb65a22e9ea19627e77c07c0f72f2abad5698daee4d81c9a8f"
+    }
+  ],
+  "scope": "Producer execution preparation following reviewed plan; no native execution, warning-filter admission or helper-specific independent PASS claimed.",
+  "warning_admission": "Initialize Authlib deprecation module, set both error filters, then exercise each through a caught synthetic warning and require pytest error filters.",
+  "remaining_gate": "Explicit founder authorization for this 48-package isolated trial and one separate read-only results review; no existing environment/model/provider/app changes."
+}

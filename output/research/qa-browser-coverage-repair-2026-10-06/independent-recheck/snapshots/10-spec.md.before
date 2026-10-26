@@ -1,0 +1,344 @@
+# Behavior evidence, monitoring and recovery — v1
+
+## Status and Authority
+
+| Field | Value |
+|---|---|
+| Status | DOING — proposed feature definition; not approved for planning or implementation |
+| Product/definition | v1; D-069 |
+| Product/decision references | Constitution VII, D-020/D-021/D-065, accepted NFR-001–NFR-007 and UX refinements; D-064–D-070 |
+| Author/producer | Repository definition producer |
+| Specialist reviewers | QA/performance, accessibility, architecture and security/privacy review required; this feature has not been independently reviewed |
+| Founder approver | Founder; feature/integrated Phase 1 acceptance not recorded |
+| Created / last updated | 2026-10-04 |
+
+The [QA/recovery contract](../../docs/phase-1-architecture/contracts/QA_RECOVERY.md)
+and [acceptance matrix](../../docs/phase-1-architecture/contracts/acceptance-matrix.csv)
+are canonical inputs. The [bounded amendment review](../../docs/phase-1-architecture/contracts/reviews/current-definition-amendments-2026-10-04.md)
+covers their listed hashes, not this feature. Proposed process/control details
+need acceptance before they become implementation expectations. The protected
+prototype, documentation validators and schema fixtures are limited evidence.
+
+## Problem, Audience, and Evidence
+
+The founder needs trustworthy evidence that visitors can browse, explore, request
+help and book, and that authorized staff can operate without false outcomes or
+private-data leakage. Developers, reviewers and operators need a reproducible way
+to distinguish real behavior from shape checks, mocked journeys and unsupported
+readiness claims. Historical definition guards inspect wording/coverage; the
+current schema fixture tests its validator, not application publication. Existing
+prototype authorization and World defects remain implementation evidence, not
+desired behavior or permission to fix them before the applicable gate.
+
+## Goals and Success Measures
+
+| Goal | Measurable outcome | Evidence source |
+|---|---|---|
+| Trustworthy behavior verdicts | Required outcomes are compared with approved, independently sourced oracles at the actual behavior boundary; missing evidence is explicit | Source-linked results and inspected test/fixture scope |
+| Equivalent visitor journeys | Semantic and all supported stream journeys preserve essential information/help/Book, including failures | Approved scenarios exercised on the real changed surfaces |
+| Truthful release/private operations | Concurrency, delayed effects and retries cannot publish an ineligible context, duplicate an operation or invent confirmation | Actual persistence/adapter and release fault evidence |
+| Measured quality/recovery | Accepted targets are measured with named devices, load/cache/network profiles, timing anchors and complete verification | Performance, SLI and isolated restore evidence |
+| Minimal maintainable assurance | One focused reproducing case per material behavior seam, reused fixtures, affected tests then one relevant broad batch run | Actual test scope; no count/coverage percentage target invented |
+
+## Non-Goals and Protected Scope
+
+- No tests merely asserting documentation phrases, row counts or implementation-
+  copied expected results. Necessary artifact integrity is reported separately.
+- No production readiness, accessibility, legal/vendor compliance or graph
+  acceptance inferred from a validator, mocked API, desktop-only result or `/health`.
+- No new test runner, monitoring vendor, deployment provider, cloud region, paid
+  activation, provisioned environment or automatic incident recipient selected.
+- No mutation of production/shared data, live load/fault injection, migrations,
+  credentials, external messages, commits or deployment authorized by this draft.
+- Do not change the accepted product to make a test pass, silently omit required
+  failures, lower targets, switch the session stream or replace a provider.
+
+## User Journeys and Failure Journeys
+
+### Primary journey
+
+1. Identify the approved requirement, current source revision and relevant actual
+   behavior boundary; record assumptions and incomplete contracts explicitly.
+2. Reproduce a meaningful failure with a focused synthetic fixture in an approved
+   isolated environment, using an independently justified expected outcome.
+3. Exercise actual state/requests/persistence, including relevant denial, boundary,
+   concurrency and recovery cases. Controlled external fixtures have stated limits.
+4. Run affected tests and the relevant broad suite once per coherent batch when
+   practical, then inspect changed browser surfaces against approved scenarios.
+5. Present the actual results, evidence limits and unresolved inputs for the
+   required independent review and founder acceptance; do not promote a candidate
+   solely because a command is green.
+
+### Accessibility and non-WebGL equivalent
+
+Verify complete semantic HTML before JavaScript, supported Quick Access processes,
+keyboard/touch/pointer alternatives, focus/zoom, reduced motion, meaningful media
+alternatives and four-stream parity. Automated accessibility checks support manual
+keyboard and assistive-technology process evidence; they cannot replace it.
+
+### Failure and recovery
+
+Force relevant failures before writes, after external receipt, before acknowledgement,
+after durable recording and during reconciliation/restart. Preserve operation
+identity and authoritative private truth. Missing/deferred provider capability
+evidence stays incomplete. Restore only into an approved isolated quarantine and
+enforce retained deletion/expiry/withdrawal decisions before any serving claim.
+
+## Functional Requirements
+
+These feature-local bindings refine the acceptance matrix; they are not new approvals.
+
+| ID | Requirement | Priority | Verification |
+|---|---|---|---|
+| FQA-01 | Bind each behavior verdict to an approved oracle, actual boundary, inspected fixture/test scope, source identity and relevant runtime versions; label unsupported/missing evidence explicitly | Must | Evidence and oracle inspection against actual execution |
+| FQA-02 | Separate unit, schema/contract, real database/adapter integration, browser and manual accessibility evidence; exercise negative/boundary/concurrency cases where material | Must | Actual layer scope, fixture isolation and representative failures |
+| FQA-03 | Use reusable focused fixtures, affected tests and one practical relevant broad run per coherent batch; repeat broader runs only for concrete changes/failures | Must | Batch execution evidence and reason for any repetition |
+| FQA-04 | Exercise QA-SEMANTIC/QA-STREAM at real visitor surfaces, with no-JS HTML, accepted Apply/precedence, scripting failures, permitted context survival and essential process parity | Must | Browser/HTML evidence tied to accepted references and predicates |
+| FQA-05 | Exercise QA-SPATIAL/QA-AUDIO on the same coherent model and actual runtime: safe ground, reversal, loss/cancellation, resource ownership, optional sound and silent recovery | Must | Named-device scene/input/network/playback and three-view evidence |
+| FQA-06 | Exercise QA-PUBLICATION across real preparation/eligibility/cutover boundaries, including mixed/stale generations, unknown outcomes, withdrawal, warm caches and eligible rollback | Must | Concurrent/fault results and authoritative routed/release identities |
+| FQA-07 | Exercise QA-IDENTITY/QA-PRIVACY/QA-AI for server role/object/purpose denial, consent/retention/deletion, approved grounding/data routes, injection refusal and outage recovery | Must | Actual protected boundaries and required independent legal/provider evidence |
+| FQA-08 | Exercise QA-BOOKING/QA-HANDOFF for qualification/email/slot/owner eligibility, current availability, consent, assignment, daylight-saving boundaries, uncertain writes and no duplicate/guessed outcomes | Must | Actual lineage/persistence/adapter and controlled concurrency cases |
+| FQA-09 | Exercise QA-PERFORMANCE/QA-RECOVERY against preserved accepted targets, named supported clients and isolated timed recovery; absent device/SLI/retention mechanisms cannot pass | Must | Complete profile, load/integrity, availability accounting and restore verification |
+| FQA-10 | Monitor the defined public/API/AI/booking-entry outcomes with approved SLI accounting; distinguish dependency, stale/unknown measurement and business-operation failures from mere process uptime | Must | Approved numerator/denominator/exclusions/source and breach detection cases |
+| FQA-11 | Restrict diagnostic/alert access and recipients by approved purpose/grants; redact secrets and private context, avoid movement histories/device fingerprints and do not invent mailbox ownership | Must | Network/log/storage and access-denial evidence with actual approved recipients |
+| FQA-12 | Keep artifact integrity, schema-only and mocked frontend evidence separate from product verdicts; report exact gaps and require independent review/approval before the applicable release gate | Must | Evidence classification and concrete acceptance inspection |
+
+## Non-Functional Requirements
+
+Targets below are existing approved constraints, not observed results.
+
+| ID | Area | Measurable target | Verification |
+|---|---|---|---|
+| FQA-N01 | Semantic performance | Quick Access p75 LCP ≤2.5 s, INP ≤200 ms, CLS ≤0.1 on the approved profile | Lab and field-ready evidence; optional 3D cannot regress the semantic path |
+| FQA-N02 | Optional 3D transfer | Initial ≤8 MB desktop / ≤4 MB mobile; incremental room ≤5 MB / ≤2.5 MB at defined cache state | Complete compressed manifests and actual network transfer |
+| FQA-N03 | Capacity/integrity | 25 concurrent visitors and three simultaneous chats on a repeatable representative browse/chat/booking-entry profile | Completed flows without integrity error/unhandled failure |
+| FQA-N04 | Availability | 99.9% monthly public-site, API and AI/booking-entry target | Approved SLI numerator/denominator/exclusions/source; unknown data is not fabricated uptime |
+| FQA-N05 | Recovery | RPO ≤24 h and RTO ≤8 h; both remain explicit adequacy/reassessment risks | Approved timing anchors and isolated recovery including verification before serving |
+| FQA-N06 | Browser/accessibility | Latest two stable evergreen families at dated QA; Safari/iOS 16.4 floor; accepted WCAG 2.2 AA target over complete applicable pages/processes | Exact-version desktop/mobile and manual assistive-technology evidence |
+| FQA-N07 | Device envelope | Approved NFR-007 numerical frame-time, memory and thermal/degradation limits required before 3D implementation; values are still held | Named-device measurement methods and accepted thresholds; no inherited FPS |
+| FQA-N08 | Diagnostic privacy | No secret/private transcript or new precise movement/fingerprint collection under this feature; exact evidence retention and access are approved inputs | Actual telemetry/storage/redaction and permission inspection |
+
+### Proposed device-measurement method
+
+This method refines FQA-N01/02/03/07 and the existing QA contract. It remains
+producer definition, not accepted numerical limits or a benchmark result. Freeze
+the profile, timing/accounting anchors and pass/fail inputs before collection;
+do not choose them afterward to make observed results pass.
+
+| Evidence dimension | Required profile/observation | Limit of the conclusion |
+|---|---|---|
+| Client identity | Non-unique QA model/CPU/GPU/RAM class, OS/browser/tool versions, actual renderer, viewport/pixel ratio/refresh rate and physical versus emulated execution | Named lab hardware only; no visitor fingerprint, serial, account or persistent device identifier |
+| Run conditions | Source/release/assets, delivery stream, cache/storage state, actual network or explicit simulation, power mode, background load, warm-up/duration/repetitions and collection overhead | Exact values/sample method need review; no unrecorded fast-network, short-session or quiet-machine substitution |
+| Transfer | Record raw octets, encoded payload, transport size, decoded body, cache visibility and asset dependencies; identify initial entry, room, prefetch, shared and optional-audio attribution | Headers/retries/cache can change measured transport; hidden cross-origin timing is unknown, not a free asset |
+| Frame behavior | Record trace/sampling method, foreground interval, frame-time distribution, dropped/partially presented frames where available, interaction/loading stalls and context loss | Callback intervals and average FPS alone do not prove presented-frame or device-tier compliance |
+| Memory/resources | Separate JS heap, process memory, actual renderer resource counts and labelled estimates of geometry/texture/render-target allocation; compare repeated entry/reversal/eviction/exit | Download bytes, heap or object counts cannot certify exact GPU memory; shared ownership and collection timing remain explicit |
+| Sustained behavior | Compare defined initial and sustained traversal phases under recorded power/ambient conditions; report deterioration, visible safe recovery and unavailable sensors | Emulation/throttling is a controlled condition, not measured physical-phone thermals; absent readings stay unknown |
+| Behavior under load | Exercise accepted representative journeys with 25 concurrent visitors/three chats and failures, including preserved operation truth | Throughput or a static health result cannot replace completed correct processes; no live/shared target is authorized |
+
+Declare cold/warm behavior and deduplication/attribution before the run. Count
+actual requests as well as declared asset bytes; early prefetch cannot hide room
+cost by moving it outside the chosen interval. Report compressed payload and
+transport totals separately and reconcile them against the asset manifest.
+Preserve accepted caps; report raw bytes plus MB and MiB until the unit/accounting
+interpretation is accepted. Do not silently select a more convenient interpretation.
+[Resource Timing](https://www.w3.org/TR/resource-timing/) and its
+[transfer-size documentation](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/transferSize)
+distinguish body/transport and restricted timing; a zero reading alone cannot prove
+zero network cost. Frame evidence can use the actual client's reviewed trace
+facilities, such as [Chrome's frame analysis](https://developer.chrome.com/docs/devtools/performance/reference).
+
+Context7 `/microsoft/playwright.dev` and [official emulation documentation](https://playwright.dev/docs/emulation)
+were checked 2026-10-04: emulation changes browser parameters, not the host's
+physical GPU/thermal hardware. Thus a mobile viewport on this Windows host remains
+desktop/emulated evidence. Local read-only discovery found an i3-1115G4, Intel UHD
+Graphics and approximately 19.8 GiB physical RAM on Windows 11; browser/rendering,
+power and performance were not measured. This is an available lab candidate, not
+a selected production floor. Physical-phone access is requested and remains held.
+Actual real-device methods and NFR-007 limits need specialist review and acceptance;
+no tool installation, instrumentation, stress test or telemetry collection is granted.
+
+## SEO and Publication Requirements
+
+Test the accepted foundation's meaningful no-JS HTML, eligible metadata/canonicals,
+structured data matching visible facts, internal links, sitemap/robots exclusions,
+retirement/redirects and draft isolation. The public derivatives must correspond
+to the same eligible approved release; immutable checksums alone do not grant
+eligibility. A schema guard or crawled placeholder cannot establish publication
+or complete SEO readiness. This feature publishes no evidence dashboard or claims.
+
+## Data, Privacy, and Security
+
+| Data/actor | Classification | Purpose/consent | Retention/deletion | Access/control | Region/provider |
+|---|---|---|---|---|---|
+| Synthetic fixtures | Isolated non-client test data | Approved reproducible boundary verification | Approved test lifecycle; no implicit production copy | Explicitly verified test target/permissions | Native local operation supported; environment provisioning separate |
+| Diagnostic/performance evidence | Potentially private operational data | Minimal permitted assurance/incident purpose | Exact classification/retention/deletion mappings remain held | Purpose-bound review/operator access; redaction before disclosure | No new data route or monitoring provider selected |
+| Private process/provider/audit records | Existing canonical classes | Approved process purpose/consent only | Class-specific clock/deletion/backup/provider obligations; not blanket 90 days | Server grants/object scope; no admin-universal read | Approved identity/AI policies retained; capabilities independently verified |
+| Aggregate availability/load measurement | Approved minimal measurement policy | Defined operational quality accounting | Approved policy, not permanent unreviewed telemetry | Bounded approved observation/alerts | Cloud/provider/cost planning deferred |
+
+Inspect fixtures before database-writing tests; neither a `pytest` command nor
+SQLite-only results prove isolated PostgreSQL behavior. Wrong-role/object, revoked
+grants, CSRF/session failures, self-approval, expiry and restored deleted data must
+be tested at real boundaries when implemented. Dedicated privacy/security alias
+ownership remains undecided; monitoring infrastructure cannot assign it by default.
+
+## AI and Human-Handoff Requirements
+
+Evaluate source/release matching, supported versus unsupported answers, approved
+classification/provider routing, refusal, injection and safe outages. Code/mock
+results cannot prove a vendor's no-training/residency agreement. Handoff evidence
+must include stale/unknown presence, consent refusal and current assignment;
+Teams alerts are not accepted human requests or booking confirmations. Separate
+consented human media from decorative ambience and verify its required alternatives.
+
+## Interfaces and Data Contracts
+
+| Contract | Producer/consumer | Compatibility | Idempotency/recovery |
+|---|---|---|---|
+| Acceptance matrix and approved requirements | Product authorities → tests/reviewers | Preserve each required boundary and approved target | Missing/unexecuted evidence stays pending |
+| Publication/data/security/process catalogues | Canonical process owners → integration verification | Exact accepted schemas/grants and source/operation identities | Safe retries, uncertain effects and authoritative state; no fabricated confirmation |
+| Device/browser/SLI profile | Performance/operations authorities → measurements | Recorded actual clients, cache/network/load assumptions and SLI accounting | Invalid/unknown samples cannot silently certify a target |
+| Backup/restore/deletion contract | Durable process owners → isolated recovery | Eligible release and retained deletion/withdrawal decisions | Quarantine and verify before serving; recovery includes reconciliation |
+
+No new endpoint, database schema, external event or deployment resource is selected.
+Key concepts are approved oracle, behavior boundary, controlled fixture, scoped
+evidence, measurement profile, unresolved operation and eligible recovery candidate.
+
+## Technology Constraints
+
+Use approved families and framework-supported testing patterns during the later
+accepted plan. Exact test/browser/driver/tool versions must join the latest
+mutually compatible stable graph; a version printed by a test is evidence, not
+stack selection. Docker is not required locally. Deployment and cost planning
+remain deferred with Azure/AWS candidates; Outlook/Teams needs no blanket
+Microsoft 365 setup. Retained Entra and personal/confidential AI data-route policy
+is not replaced by that hosting deferral.
+
+## Acceptance Scenarios
+
+1. **Given** a passing phrase/hash/schema check, **when** evidence is classified,
+   **then** it proves only its inspected artifact/validator boundary, not runtime,
+   authorization, accessibility or publication behavior.
+2. **Given** an invalid approved-contract input accepted by the application but
+   rejected by a local schema fixture, **when** the actual request/persistence
+   boundary is exercised, **then** acceptance remains unresolved until that
+   boundary rejects it before prohibited persistence/effects. Do not substitute
+   the fixture's green result for the real failure.
+3. **Given** a wrong role/object, revoked grant or combined-role self-approval,
+   **when** an actual protected mutation/read is attempted, **then** current server
+   authorization denies it without disclosing unauthorized private context.
+4. **Given** a controlled missing acknowledgement after an external effect,
+   **when** retry/reconciliation runs, **then** the operation identity is preserved,
+   no duplicate effect is created and pending does not become guessed confirmation.
+5. **Given** interleaved publication generations and stale late responses,
+   **when** cutover/withdrawal/rollback occurs, **then** only eligible coherent
+   public context is served and private booking/handoff truth survives unchanged.
+6. **Given** disabled JavaScript/WebGL, constrained stream or failed transaction
+   scripting, **when** the visitor browses and requests help/Book, **then** the
+   approved equivalent semantic process is verified or its concrete gap reported.
+7. **Given** keyboard/touch, reduced motion, magnification or assistive technology,
+   **when** the complete supported process is exercised, **then** focus, controls,
+   content and alternatives meet their approved criteria; axe alone cannot pass it.
+8. **Given** real movement/reversal and delayed/corrupt/mismatched area loading,
+   **when** safe boundaries and eviction/exit are exercised, **then** actual ground,
+   resource ownership, Stop/recovery and permitted process preservation are proved.
+9. **Given** optional ambience never enabled, muted, failed or withdrawn, **when**
+   the actual browser journey is inspected, **then** optional fetch/playback and
+   essential process behavior follow the accepted policy without fake staff activity.
+10. **Given** the approved named-client/cache/network/load profile, **when** capacity
+    and performance are measured, **then** recorded results cover accepted targets
+    and integrity outcomes; a desktop probe cannot certify an untested phone tier.
+11. **Given** incomplete/stale observation or a health response without business
+    dependency proof, **when** monthly SLI/breach state is assessed, **then** the
+    approved accounting distinguishes missing evidence and business failures;
+    unknown measurements cannot be manufactured as successful uptime.
+12. **Given** a backup predating deletion, expiry, withdrawal or a resolved external
+    operation, **when** isolated quarantine recovery runs, **then** retained
+    authoritative suppression/reconciliation is enforced before serving, with
+    measured RPO/RTO including verification. Process startup alone cannot pass.
+13. **Given** diagnostic/alert configuration that would leak secrets, private
+    context or precise movement, **when** its real IO/access is inspected, **then**
+    the prohibited collection/disclosure is rejected and evidence stays scoped.
+    No undefined email owner or unauthorized external alert is invented.
+14. **Given** controlled approved knowledge and a current eligible publication,
+    **when** guidance is requested at the actual answer/source boundary, **then**
+    supported answers cite the matching approved accessible sources. Unsupported,
+    withdrawn or mismatched evidence and injected requests to invent commitments
+    cannot justify substantive guidance or authorize booking, tool action or
+    publication; verify truthful refusal/cannot-verify and independent help/Book.
+15. **Given** synthetic inputs covering permitted, unknown, unmapped and prohibited
+    data classes, **when** the real policy/adapter boundary processes them, **then**
+    only the approved verified route receives permitted data. Denied classes or
+    an unavailable required route do not silently fall back to another provider.
+    A controlled outage preserves truthful recovery; mocked routing cannot prove
+    vendor residency, no-training terms or operational entitlement.
+16. **Given** the BF-01 six qualification fields, purpose-specific consent and
+    optional budget, **when** the real booking lineage is exercised, **then** no
+    required account, name, phone, upload or prior AI interaction is introduced.
+    Invalid/incomplete qualification, forged/replayed/expired email verification
+    and corrected email cannot enable slots under the former challenge. A current
+    verified challenge permits only eligible owners and actual 30-minute slots;
+    visitor-local daylight-saving display preserves the slot's unambiguous instant
+    and timezone. Missing slots/owners provide truthful recovery. Submission stays
+    pending until the approved calendar/meeting and local state reconcile; apply
+    scenario 4 to unknown effects. Exact challenge/provider rules remain held.
+17. **Given** current available staff, stale/unknown/offline availability, consent
+    refusal or an ineligible assignment, **when** the actual assistance process
+    requests human handoff, **then** only current eligible assignment plus explicit
+    consent permits the approved context transfer. Refusal forbids that transfer;
+    unavailable/unknown states offer honest Contact/Book recovery without an
+    invented response promise. A Teams alert cannot certify human acceptance or
+    booking confirmation. Test the actual expiry/revocation boundary once defined.
+18. **Given** a database-writing, load or fault test with an unverified/shared
+    target, insufficient approved scope or fixtures pointing outside isolation,
+    **when** execution is prepared, **then** it stops before those effects and
+    identifies the missing target/scope evidence without exposing credentials.
+    With the explicitly approved isolated target and inspected reusable fixtures,
+    verify actual permitted persistence behavior. SQLite-only or mocked results
+    remain limited to that boundary and cannot pass PostgreSQL integration.
+19. **Given** controlled expired/revoked sessions, cross-site write attempts,
+    non-consented guidance or mapped retention-clock boundaries, **when** actual
+    identity and persistence behavior is exercised, **then** approved session/CSRF
+    enforcement denies prohibited operations, refused retention leaves no hidden
+    durable transcript and mapped expiry is enforced without resetting its clock.
+    Verify permitted controls as well as denials; exact identity/retention inputs
+    and vendor copies stay held, with restore suppression covered by scenario 12.
+
+## Dependencies and Manual Inputs
+
+| Dependency/input | Owner | Needed by | Blocking behavior |
+|---|---|---|---|
+| Approved UI/3D references and executable behavior | Feature owners/reviewers/founder | Runtime/browser verification | A board or protected prototype cannot substitute for the required implementation |
+| Exact schemas, identity/grants and external operation contracts | Canonical contract owners | Integration/concurrency/denial cases | Logical fields or mocks cannot freeze vendor truth or permissions |
+| Device/load/cache/network profiles and numerical envelope | Performance/3D reviewers/founder | Measurement acceptance | No fabricated thresholds, targets or untested-client certification |
+| SLI accounting, diagnostic policy and authorized operational recipients | Operations/security/privacy owners | Monitoring/alert implementation | No unapproved exclusions, retention, collection or mailbox assignment |
+| Recovery/backup/deletion/provider reconciliation contracts | Operations and canonical private-process owners | Isolated restore evidence | Startup-only or privacy-unsafe restoration cannot pass |
+| Approved isolated test environment and operation scope | Founder and relevant data/security owners | Executing mutations/fault/load tests | This specification grants no infrastructure/data/provider permission |
+| Independent feature review and integrated Phase 1 acceptance | Nonproducer reviewers/founder | Planning/implementation | New producer draft remains unreviewed; other hashes do not cover it |
+
+## Open Decisions and Assumptions
+
+| Item | Type | Material impact | Proposed default | Approval required |
+|---|---|---|---|---|
+| Measurement/SLI/recovery anchors and device limits | Evidence/decision | Validity of quality and breach verdicts | Preserve existing targets; hold unmeasured profiles/mechanisms | Reviewed operational and numerical contracts |
+| Diagnostic classification/retention, alert recipients and environment permission | Decision | Private data and external effects | Minimal synthetic/local inspection only until explicit policy/scope exists | Data/security/founder approval; alias ownership remains undecided |
+| Provider capability and deployment choice | Held input | Real fencing/reconciliation/recovery proof | Provider-independent obligations; no deployment planning now | D-068 deferral retained; later specific proof/approval |
+| Evidence accounting | Assumption | Prevents inflated readiness | Report actual boundary and limitations rather than check counts | Existing founder testing policy retained |
+
+## Review and Approval
+
+Quality checklist and specialist/SEO/accessibility/security/privacy review are
+required. This producer specification is not an executed test suite, monitoring
+system or readiness verdict. No approved plan or executable tasks exist; complete
+feature and Phase 1 acceptance precede implementation.
+
+## References
+
+- [Current decisions](../../DECISIONS.md), [constitution](../../.specify/memory/constitution.md)
+  and [testing policy](../../AGENTS.md).
+- [Approved foundation targets](../../docs/phase-1-foundation/01-product-requirements.md).
+- [Publication](../../docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md),
+  [security/privacy](../../docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md),
+  [data](../../docs/phase-1-architecture/contracts/DATA_CONTRACT.md) and
+  [interface/field catalogue](../../docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md).
+- [World feature proposal](../003-3d-experience-completion/spec.md) and
+  [native-operation boundaries](../../README.md#native-local-operation-on-windows).

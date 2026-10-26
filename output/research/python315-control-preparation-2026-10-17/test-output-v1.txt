@@ -1,0 +1,12 @@
+test_exact_retained_boundary_and_overhead_only_step (test_admission_budget.AdmissionBudgetTests.test_exact_retained_boundary_and_overhead_only_step) ... ok
+test_initial_requires_full_allowance_and_floor (test_admission_budget.AdmissionBudgetTests.test_initial_requires_full_allowance_and_floor) ... ok
+test_invalid_or_negative_counts_cannot_reduce_reservations (test_admission_budget.AdmissionBudgetTests.test_invalid_or_negative_counts_cannot_reduce_reservations) ... ok
+test_one_byte_less_free_cannot_spend_the_floor (test_admission_budget.AdmissionBudgetTests.test_one_byte_less_free_cannot_spend_the_floor) ... ok
+test_post_stage_checks_do_not_reuse_a_prior_admission (test_admission_budget.AdmissionBudgetTests.test_post_stage_checks_do_not_reuse_a_prior_admission) ... ok
+test_retained_cap_is_separate_from_free_capacity (test_admission_budget.AdmissionBudgetTests.test_retained_cap_is_separate_from_free_capacity) ... ok
+test_two_pending_expanded_copies_and_download_are_reserved (test_admission_budget.AdmissionBudgetTests.test_two_pending_expanded_copies_and_download_are_reserved) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK

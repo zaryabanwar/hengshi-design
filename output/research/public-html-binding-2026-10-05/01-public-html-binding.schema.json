@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed public HTML publication binding v1",
+  "description": "Definition-only compiler-owned data shape. It does not authenticate HTML/code, authorize imports or establish serving eligibility. Actual parser, serialization, same-release association and runtime checks remain required.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "release_id", "route_id", "canonical_path", "html_artifact_id", "client_build_sha256"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "release_id": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+    "route_id": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+    "canonical_path": {"$ref": "publication-manifest.schema.json#/$defs/canonical_path"},
+    "html_artifact_id": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+    "client_build_sha256": {"$ref": "publication-manifest.schema.json#/$defs/sha256"}
+  }
+}

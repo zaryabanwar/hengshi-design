@@ -1,0 +1,62 @@
+{
+  "proposal": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+  "scope": "First bounded review of consultation lifecycle proposal only; no route wire freeze grants policies runtime or integrated acceptance",
+  "inputs": [
+    {
+      "source": "AGENTS.md",
+      "frozen": "output/research/handoff-lifecycle-2026-10-05/AGENTS.md",
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "frozen": "output/research/handoff-lifecycle-2026-10-05/.specify__memory__constitution.md",
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "docs/phase-1-foundation/01-product-requirements.md",
+      "frozen": "output/research/handoff-lifecycle-2026-10-05/docs__phase-1-foundation__01-product-requirements.md",
+      "sha256": "5b33d8bd87bdb3b093ef319db3ea3bb64deaeddf2706f5d21505bfb66035aa39"
+    },
+    {
+      "source": "docs/phase-1-ux-architecture/FLOWS.md",
+      "frozen": "output/research/handoff-lifecycle-2026-10-05/docs__phase-1-ux-architecture__FLOWS.md",
+      "sha256": "2169c1543d697e94548ebb4675ea815fa9e36955adcb808faf02c3f37107e14b"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "frozen": "output/research/handoff-lifecycle-2026-10-05/docs__phase-1-architecture__contracts__DATA_CONTRACT.md",
+      "sha256": "46acfea99e0d4db91fb84603699e577100fffa79ca34f242d658a41deab8fb33"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "frozen": "output/research/handoff-lifecycle-2026-10-05/docs__phase-1-architecture__contracts__SECURITY_PRIVACY_CONTRACT.md",
+      "sha256": "74ab420b5bec9f0aad72f59178f4ea7c626bd14edfa9d4ba02f3aa1dd0a1a254"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/AVAILABILITY_CONSISTENCY.md",
+      "frozen": "output/research/handoff-lifecycle-2026-10-05/docs__phase-1-architecture__contracts__AVAILABILITY_CONSISTENCY.md",
+      "sha256": "6da0086b9c6ac49c2464f73a61793d410c7e04c1aaec8d83a328b377e5252a03"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "frozen": "output/research/handoff-lifecycle-2026-10-05/docs__phase-1-architecture__contracts__INTERFACE_CATALOG.md",
+      "sha256": "1ed7ea4cd1fe7002848462a7a78e4525f457b60cf6a454d11878a74071c2d7d0"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/interface-catalog.csv",
+      "frozen": "output/research/handoff-lifecycle-2026-10-05/docs__phase-1-architecture__contracts__interface-catalog.csv",
+      "sha256": "42018a3e5cc6c1edf488c392b0349688a92b2cab5a8f50e717f1bca84a70a49c"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/process-fields.csv",
+      "frozen": "output/research/handoff-lifecycle-2026-10-05/docs__phase-1-architecture__contracts__process-fields.csv",
+      "sha256": "5737b8f4bd47b90a5020ae8943cb2c7786582c605e14d97212b4334ffb26522a"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "frozen": "output/research/handoff-lifecycle-2026-10-05/docs__phase-1-architecture__contracts__HANDOFF_LIFECYCLE.md",
+      "sha256": "2f6972361779ab6b36deeb17249e69f23b04c1468e765e66f504f9fc239f30ff"
+    }
+  ],
+  "producer_checks": "Inspected lifecycle against AF-02/SOF-01, current availability and security/data boundaries; primary PostgreSQL18/RFC6455 and Context7 mechanism evidence; no application tests for prose"
+}

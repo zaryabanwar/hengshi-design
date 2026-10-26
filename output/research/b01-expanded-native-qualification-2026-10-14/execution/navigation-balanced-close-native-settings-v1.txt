@@ -1,0 +1,485 @@
+- application "Figma Design, 1 item selected"
+- status: Screenreader support for the board is currently disabled. To enable it via Accessibility settings, press Ctrl+K, type Accessibility Settings, and press Enter. To see available keyboard shortcuts, enter Ctrl+Shift+Question mark .
+- status
+- region "Comments on canvas":
+  - button "Create new comment"
+- region "Left sidebar":
+  - toolbar "Navigation Bar":
+    - button "Main menu":
+    - separator
+    - button "File" [expanded]:
+      - generic: File
+    - button "Agents":
+      - generic: Agents
+    - button "Assets":
+      - generic: Assets
+    - button "Tools":
+      - generic: Tools
+    - separator
+    - button "Variables":
+      - generic: Variables
+  - button "Hengshi Design v1 — UI References, file name": Hengshi Design v1 — UI References
+  - generic: File name
+  - button "Edit file menu":
+  - button "Minimize UI":
+  - link "hengshi-design":
+    - /url: https://www.figma.com/files/team/1472694121837770005/project/666072293
+  - button "Free":
+    - generic: Free
+  - heading "Pages Find Add new page" [level=2]:
+    - button "Pages" [expanded]:
+      - generic: Pages
+    - button "Find":
+    - button "Add new page":
+  - grid:
+    - row "Page 1":
+      - gridcell "Page 1":
+        - button "Page 1":
+          - generic: Page 1
+  - slider "Resize handle"
+  - heading "Layers Collapse layers" [level=2]:
+    - button "Layers" [expanded]:
+      - generic: Layers
+    - button "Collapse layers":
+  - treegrid:
+    - row "SEMANTIC, MEDIUM, OPEN" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "SEMANTIC, MEDIUM, OPEN":
+        - generic: SEMANTIC, MEDIUM, OPEN
+    - row "SEMANTIC, LOW, OPEN" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "SEMANTIC, LOW, OPEN":
+        - generic: SEMANTIC, LOW, OPEN
+    - row "SEMANTIC, SEMANTIC, OPEN" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "SEMANTIC, SEMANTIC, OPEN":
+        - generic: SEMANTIC, SEMANTIC, OPEN
+    - row "SEMANTIC, SEMANTIC, CLOSED" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "SEMANTIC, SEMANTIC, CLOSED":
+        - generic: SEMANTIC, SEMANTIC, CLOSED
+    - row "SEMANTIC, LOW, CLOSED" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "SEMANTIC, LOW, CLOSED":
+        - generic: SEMANTIC, LOW, CLOSED
+    - row "SEMANTIC, MEDIUM, CLOSED" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "SEMANTIC, MEDIUM, CLOSED":
+        - generic: SEMANTIC, MEDIUM, CLOSED
+    - row "SEMANTIC, HIGH, CLOSED" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "SEMANTIC, HIGH, CLOSED":
+        - generic: SEMANTIC, HIGH, CLOSED
+    - row "HIGH, MEDIUM, CLOSED" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "HIGH, MEDIUM, CLOSED":
+        - generic: HIGH, MEDIUM, CLOSED
+    - row "HIGH, LOW, CLOSED" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "HIGH, LOW, CLOSED":
+        - generic: HIGH, LOW, CLOSED
+    - row "HIGH, SEMANTIC, CLOSED" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "HIGH, SEMANTIC, CLOSED":
+        - generic: HIGH, SEMANTIC, CLOSED
+    - row "HIGH, MEDIUM, OPEN" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "HIGH, MEDIUM, OPEN":
+        - generic: HIGH, MEDIUM, OPEN
+    - row "HIGH, LOW, OPEN" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "HIGH, LOW, OPEN":
+        - generic: HIGH, LOW, OPEN
+    - row "HIGH, SEMANTIC, OPEN" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "HIGH, SEMANTIC, OPEN":
+        - generic: HIGH, SEMANTIC, OPEN
+    - row "MEDIUM, LOW, OPEN" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "MEDIUM, LOW, OPEN":
+        - generic: MEDIUM, LOW, OPEN
+    - row "MEDIUM, LOW, CLOSED" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "MEDIUM, LOW, CLOSED":
+        - generic: MEDIUM, LOW, CLOSED
+    - row "MEDIUM, SEMANTIC, OPEN" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "MEDIUM, SEMANTIC, OPEN":
+        - generic: MEDIUM, SEMANTIC, OPEN
+    - row "MEDIUM, SEMANTIC, CLOSED" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "MEDIUM, SEMANTIC, CLOSED":
+        - generic: MEDIUM, SEMANTIC, CLOSED
+    - row "MEDIUM, HIGH, CLOSED" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "MEDIUM, HIGH, CLOSED":
+        - generic: MEDIUM, HIGH, CLOSED
+    - row "MEDIUM, HIGH, OPEN" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "MEDIUM, HIGH, OPEN":
+        - generic: MEDIUM, HIGH, OPEN
+    - row "MEDIUM, MEDIUM, OPEN" [expanded] [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "MEDIUM, MEDIUM, OPEN":
+        - generic: MEDIUM, MEDIUM, OPEN
+    - row "Trial scroll marker" [level=3]:
+      - gridcell:
+      - gridcell "Trial scroll marker":
+        - generic: Trial scroll marker
+    - row "Context summary / fixed Services fixture" [level=3]:
+      - gridcell:
+      - gridcell "Context summary / fixed Services fixture":
+        - generic: Context summary / fixed Services fixture
+    - row "Underlying Services fixture (unwired while modal open)" [expanded] [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "Underlying Services fixture (unwired while modal open)":
+        - generic: Underlying Services fixture (unwired while modal open)
+    - row "Book a conversation" [level=4]:
+      - gridcell:
+      - gridcell "Book a conversation":
+        - generic: Book a conversation
+    - row "Menu action Toggle layer locking Toggle layer visibility" [expanded] [level=3] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "Menu action":
+        - generic: Menu action
+    - row "Book a conversation" [level=4] [selected]:
+      - gridcell:
+      - gridcell "Book a conversation":
+        - generic: Book a conversation
+    - row "PRIM-001 / Delivery stream control / B01 v1" [expanded] [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "PRIM-001 / Delivery stream control / B01 v1":
+        - generic: PRIM-001 / Delivery stream control / B01 v1
+    - row "Delivery stream — currently Balanced 3D" [level=4]:
+      - gridcell:
+      - gridcell "Delivery stream — currently Balanced 3D":
+        - generic: Delivery stream — currently Balanced 3D
+    - row "Native-radio appearance reference / S-HIGH" [expanded] [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-HIGH":
+        - generic: Native-radio appearance reference / S-HIGH
+    - row "○ Detailed 3D" [level=5]:
+      - gridcell:
+      - gridcell "○ Detailed 3D":
+        - generic: ○ Detailed 3D
+    - row "Native-radio appearance reference / S-MEDIUM" [expanded] [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-MEDIUM":
+        - generic: Native-radio appearance reference / S-MEDIUM
+    - row "● Balanced 3D" [level=5]:
+      - gridcell:
+      - gridcell "● Balanced 3D":
+        - generic: ● Balanced 3D
+    - row "Native-radio appearance reference / S-LOW" [expanded] [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-LOW":
+        - generic: Native-radio appearance reference / S-LOW
+    - row "○ Simplified 3D" [level=5]:
+      - gridcell:
+      - gridcell "○ Simplified 3D":
+        - generic: ○ Simplified 3D
+    - row "Native-radio appearance reference / S-SEMANTIC" [expanded] [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-SEMANTIC":
+        - generic: Native-radio appearance reference / S-SEMANTIC
+    - row "○ Quick Access" [level=5]:
+      - gridcell:
+      - gridcell "○ Quick Access":
+        - generic: ○ Quick Access
+    - row "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene." [level=4]:
+      - gridcell:
+      - gridcell "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.":
+        - generic: Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.
+    - row "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change." [level=4]:
+      - gridcell:
+      - gridcell "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.":
+        - generic: Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.
+    - row "PRIM-015 / General action button / base" [expanded] [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "PRIM-015 / General action button / base":
+        - generic: PRIM-015 / General action button / base
+    - row "Book a conversation" [level=5]:
+      - gridcell:
+      - gridcell "Book a conversation":
+        - generic: Book a conversation
+    - row "Privacy and storage" [level=4]:
+      - gridcell:
+      - gridcell "Privacy and storage":
+        - generic: Privacy and storage
+    - row "MEDIUM, MEDIUM, CLOSED" [expanded] [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "MEDIUM, MEDIUM, CLOSED":
+        - generic: MEDIUM, MEDIUM, CLOSED
+    - row "Trial scroll marker" [level=3]:
+      - gridcell:
+      - gridcell "Trial scroll marker":
+        - generic: Trial scroll marker
+    - row "Context summary / fixed Services fixture" [level=3]:
+      - gridcell:
+      - gridcell "Context summary / fixed Services fixture":
+        - generic: Context summary / fixed Services fixture
+    - row "Underlying Services fixture (unwired while modal open)" [expanded] [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "Underlying Services fixture (unwired while modal open)":
+        - generic: Underlying Services fixture (unwired while modal open)
+    - row "Book a conversation" [level=4]:
+      - gridcell:
+      - gridcell "Book a conversation":
+        - generic: Book a conversation
+    - row "Menu action" [expanded] [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "Menu action":
+        - generic: Menu action
+    - row "Book a conversation" [level=4]:
+      - gridcell:
+      - gridcell "Book a conversation":
+        - generic: Book a conversation
+    - row "PRIM-001 / Delivery stream control / B01 v1 Toggle layer visibility" [expanded] [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "PRIM-001 / Delivery stream control / B01 v1":
+        - generic: PRIM-001 / Delivery stream control / B01 v1
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility" [checked]
+        - generic: Toggle layer visibility
+    - row "Delivery stream — currently Balanced 3D Toggle layer visibility" [level=4]:
+      - gridcell:
+      - gridcell "Delivery stream — currently Balanced 3D":
+        - generic: Delivery stream — currently Balanced 3D
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility" [checked=mixed]
+        - generic: Toggle layer visibility
+    - row "Native-radio appearance reference / S-HIGH Toggle layer visibility" [expanded] [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-HIGH":
+        - generic: Native-radio appearance reference / S-HIGH
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility" [checked=mixed]
+        - generic: Toggle layer visibility
+    - row "○ Detailed 3D Toggle layer visibility" [level=5]:
+      - gridcell:
+      - gridcell "○ Detailed 3D":
+        - generic: ○ Detailed 3D
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility" [checked=mixed]
+        - generic: Toggle layer visibility
+    - row "Native-radio appearance reference / S-MEDIUM Toggle layer visibility" [expanded] [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-MEDIUM":
+        - generic: Native-radio appearance reference / S-MEDIUM
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility" [checked=mixed]
+        - generic: Toggle layer visibility
+    - row "● Balanced 3D Toggle layer locking Toggle layer visibility" [level=5]:
+      - gridcell:
+      - gridcell "● Balanced 3D":
+        - generic: ● Balanced 3D
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility" [checked=mixed]
+        - generic: Toggle layer visibility
+    - row "Native-radio appearance reference / S-LOW Toggle layer visibility" [expanded] [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-LOW":
+        - generic: Native-radio appearance reference / S-LOW
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility" [checked=mixed]
+        - generic: Toggle layer visibility
+    - row "○ Simplified 3D Toggle layer visibility" [level=5]:
+      - gridcell:
+      - gridcell "○ Simplified 3D":
+        - generic: ○ Simplified 3D
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility" [checked=mixed]
+        - generic: Toggle layer visibility
+    - row "Native-radio appearance reference / S-SEMANTIC Toggle layer visibility" [expanded] [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-SEMANTIC":
+        - generic: Native-radio appearance reference / S-SEMANTIC
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility" [checked=mixed]
+        - generic: Toggle layer visibility
+    - row "○ Quick Access Toggle layer visibility" [level=5]:
+      - gridcell:
+      - gridcell "○ Quick Access":
+        - generic: ○ Quick Access
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility" [checked=mixed]
+        - generic: Toggle layer visibility
+    - row "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene. Toggle layer visibility" [level=4]:
+      - gridcell:
+      - gridcell "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.":
+        - generic: Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility" [checked=mixed]
+        - generic: Toggle layer visibility
+    - row "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change. Toggle layer visibility" [level=4]:
+      - gridcell:
+      - gridcell "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.":
+        - generic: Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility" [checked=mixed]
+        - generic: Toggle layer visibility
+    - row "PRIM-015 / General action button / base Toggle layer visibility" [expanded] [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "PRIM-015 / General action button / base":
+        - generic: PRIM-015 / General action button / base
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility" [checked=mixed]
+        - generic: Toggle layer visibility
+    - row "Book a conversation Toggle layer visibility" [level=5]:
+      - gridcell:
+      - gridcell "Book a conversation":
+        - generic: Book a conversation
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility" [checked=mixed]
+        - generic: Toggle layer visibility
+  - slider "Resize handle"
+- region "Right sidebar":
+  - button "Multiplayer tools":
+  - group "Prototype view":
+    - button "Present":
+    - button "Prototype view":
+  - button "Share"
+  - tablist:
+    - tab "Design":
+      - generic: Design
+      - generic: Design
+    - tab "Prototype" [selected]:
+      - generic: Prototype
+      - generic: Prototype
+  - button "65%, zoom and view options":
+    - text: 65%
+  - generic: Add interactivity with Make
+  - button "Close":
+  - generic "Mock video of sample images shuffling"
+  - text: Figma Make opens up new ways to prototype—from responsive components to micro-interactions.
+  - button "Try Figma Make":
+    - generic: Try Figma Make
+  - heading "Interactions" [level=2]
+  - button "Reset interactions":
+  - button "Add action":
+  - grid:
+    - row "Click None Remove click interaction" [selected]:
+      - gridcell "Click None":
+        - button "Click None" [expanded]:
+          - generic: Click
+          - generic: MEDIUM, MEDIUM, CLOSED
+      - gridcell "Remove click interaction":
+        - button "Remove click interaction":
+  - heading "Scroll behavior" [level=2]
+  - generic: Position
+  - combobox "Position":
+    - generic: Scroll with parent
+  - generic: Overflow
+  - combobox "Overflow" [disabled]:
+    - generic: No scrolling
+  - button "Show prototype settings":
+    - generic: Show prototype settings
+  - text: Removing a connection
+  - button "Close":
+  - generic: To delete a connection, click and drag on either end.
+  - text: Running your prototype
+  - button "Close":
+  - generic: Use the play button in the toolbar to play your prototype. If there are no connections, the play button can be used to play a presentation of your frames.
+  - slider "Resize handle"
+- region "Application toolbar":
+  - toolbar "Editor":
+    - group "Move":
+      - button "Move" [pressed]:
+      - button "Move tools":
+    - group "Frame":
+      - button "Frame":
+      - button "Region tools":
+    - group "Rectangle":
+      - button "Rectangle":
+      - button "Shape tools":
+    - group "Pen":
+      - button "Pen":
+      - button "Creation tools":
+    - group "Text":
+      - button "Text":
+      - button "Type tools":
+    - button "Comment":
+    - button "Actions":
+    - radiogroup "Toolbelt Mode":
+      - generic: Toolbelt Mode
+      - radio "Draw"
+      - generic: Draw
+      - radio "Design" [checked]
+      - generic: Design
+      - radio "Motion"
+      - generic: Motion
+      - radio "Dev Mode"
+      - generic: Dev Mode
+- region "Help/zoom toolbar":
+  - toolbar "Help/zoom toolbar":
+    - button "Help":
+- dialog "Interaction":
+  - generic: Interaction
+  - button "Create action":
+  - button "Close":
+  - generic: Trigger
+  - generic: Trigger
+  - combobox "Trigger":
+    - generic: On click
+  - generic: Action
+  - generic: Action
+  - combobox "Action":
+    - generic: Change to
+  - paragraph: Active
+  - generic: Active
+  - combobox "Active":
+    - generic: MEDIUM
+  - paragraph: Pending
+  - generic: Pending
+  - combobox "Pending":
+    - generic: MEDIUM
+  - paragraph: Disclosure
+  - generic: Disclosure
+  - combobox "Disclosure" [active]:
+    - generic: CLOSED
+  - generic: Animation
+  - generic: Animation
+  - combobox "Animation":
+    - generic: Instant
+  - button "State":
+    - generic: State
+- status
+- alert
+- alert

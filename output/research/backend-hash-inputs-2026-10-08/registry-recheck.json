@@ -1,0 +1,1311 @@
+{
+  "status": "DOING",
+  "scope": "Exact October4 Windows CPython3.14.5 mixed runtime/test resolver study; research requirements only",
+  "production_selection": false,
+  "install_performed": false,
+  "dry_run_replay_performed": false,
+  "source_report_sha256": "b9a135fa96ee978af2011ea4e4b8f848fd44235db46349caed74cc61ecc2c8f6",
+  "source_environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.14.5",
+    "os_name": "nt",
+    "platform_machine": "AMD64",
+    "platform_release": "11",
+    "platform_system": "Windows",
+    "platform_version": "10.0.26300",
+    "python_full_version": "3.14.5",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.14",
+    "sys_platform": "win32"
+  },
+  "source_pip_version": "26.1.1",
+  "protected_inputs_before": {
+    "package.json": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b",
+    "package-lock.json": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908",
+    "apps/web/package.json": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a",
+    "apps/web/package-lock.json": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d",
+    "apps/api/requirements.txt": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd",
+    "apps/api/.venv/pyvenv.cfg": "d23bc586f40b9aa9a601c8af0cab224cd4a40f0544a2f6348e9ad703f4d8ea39"
+  },
+  "protected_inputs_after": {
+    "package.json": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b",
+    "package-lock.json": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908",
+    "apps/web/package.json": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a",
+    "apps/web/package-lock.json": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d",
+    "apps/api/requirements.txt": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd",
+    "apps/api/.venv/pyvenv.cfg": "d23bc586f40b9aa9a601c8af0cab224cd4a40f0544a2f6348e9ad703f4d8ea39"
+  },
+  "registry_results": [
+    {
+      "name": "alembic",
+      "resolved_version": "1.20.0",
+      "requested": true,
+      "requested_extras": [],
+      "artifact_filename": "alembic-1.20.0-py3-none-any.whl",
+      "artifact_sha256": "77eb101048d95f982c0353e9233404889dcd7a6fc244c107836c0e2fc9cf7d9d",
+      "artifact_size": 268719,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "1.20.0",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.10",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "alembic==1.20.0 --hash=sha256:77eb101048d95f982c0353e9233404889dcd7a6fc244c107836c0e2fc9cf7d9d",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/alembic/1.20.0/json",
+        "observed_at": "2026-10-08T16:27:43.131863+00:00",
+        "raw_bytes": 9433,
+        "raw_sha256": "29405ae8e4531888baad34fb1b144bf35153c35f7e0e61d2c36720de87ac7662",
+        "gzip_snapshot": "primary/alembic-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/alembic/json",
+        "observed_at": "2026-10-08T16:27:47.945892+00:00",
+        "raw_bytes": 173820,
+        "raw_sha256": "2fc5722b46ffbfd43ee99311578984392322c44f204b68d3a63b3ca026e898eb",
+        "gzip_snapshot": "primary/alembic-project.json.gz"
+      }
+    },
+    {
+      "name": "annotated-doc",
+      "resolved_version": "0.0.5",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "annotated_doc-0.0.5-py3-none-any.whl",
+      "artifact_sha256": "117bac03a25ede5df5440e855b32d556049ca169ead221505badf432fed4b101",
+      "artifact_size": 5302,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "0.0.5",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.9",
+      "maturity_classifiers": [
+        "Development Status :: 4 - Beta"
+      ],
+      "requirement": "annotated-doc==0.0.5 --hash=sha256:117bac03a25ede5df5440e855b32d556049ca169ead221505badf432fed4b101",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/annotated-doc/0.0.5/json",
+        "observed_at": "2026-10-08T16:28:03.287168+00:00",
+        "raw_bytes": 8643,
+        "raw_sha256": "1aab691a5f37dd292e6d93ab53f7da5d839f56ba605345f017022ec75eb643af",
+        "gzip_snapshot": "primary/annotated-doc-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/annotated-doc/json",
+        "observed_at": "2026-10-08T16:28:06.133315+00:00",
+        "raw_bytes": 16442,
+        "raw_sha256": "c101949aac4f010748b3dd5171cb7c9bc934363b414cfff6e0089fcdd64966f9",
+        "gzip_snapshot": "primary/annotated-doc-project.json.gz"
+      }
+    },
+    {
+      "name": "annotated-types",
+      "resolved_version": "0.8.0",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "annotated_types-0.8.0-py3-none-any.whl",
+      "artifact_sha256": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0",
+      "artifact_size": 13427,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "0.8.0",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.10",
+      "maturity_classifiers": [
+        "Development Status :: 4 - Beta"
+      ],
+      "requirement": "annotated-types==0.8.0 --hash=sha256:f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/annotated-types/0.8.0/json",
+        "observed_at": "2026-10-08T16:28:26.345027+00:00",
+        "raw_bytes": 17411,
+        "raw_sha256": "a6e8e5b10c8fd2f596bba53e015cd37f6279fb5cec26ce0c5e9968625be4fefa",
+        "gzip_snapshot": "primary/annotated-types-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/annotated-types/json",
+        "observed_at": "2026-10-08T16:28:31.250305+00:00",
+        "raw_bytes": 31556,
+        "raw_sha256": "bbe701554fc03915c80b90d54d2af7b15fa716679967376e86f222ea7fc80181",
+        "gzip_snapshot": "primary/annotated-types-project.json.gz"
+      }
+    },
+    {
+      "name": "anyio",
+      "resolved_version": "4.15.1",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "anyio-4.15.1-py3-none-any.whl",
+      "artifact_sha256": "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101",
+      "artifact_size": 132079,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "4.15.1",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.10",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "anyio==4.15.1 --hash=sha256:6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/anyio/4.15.1/json",
+        "observed_at": "2026-10-08T16:28:32.628019+00:00",
+        "raw_bytes": 6904,
+        "raw_sha256": "e2ee22fad2fab3e66be503cba9b41945607d3076c9b7aa49b6e2f95ac323efab",
+        "gzip_snapshot": "primary/anyio-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/anyio/json",
+        "observed_at": "2026-10-08T16:28:33.899906+00:00",
+        "raw_bytes": 117226,
+        "raw_sha256": "1e4ec0390d86d4dd7f5c9cf7682ca142b0832b6b467505a0466fdf82ede554ed",
+        "gzip_snapshot": "primary/anyio-project.json.gz"
+      }
+    },
+    {
+      "name": "bcrypt",
+      "resolved_version": "5.0.0",
+      "requested": true,
+      "requested_extras": [],
+      "artifact_filename": "bcrypt-5.0.0-cp39-abi3-win_amd64.whl",
+      "artifact_sha256": "64ee8434b0da054d830fa8e89e1c8bf30061d539044a39524ff7dec90481e5c2",
+      "artifact_size": 150912,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "5.0.0",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.8",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "bcrypt==5.0.0 --hash=sha256:64ee8434b0da054d830fa8e89e1c8bf30061d539044a39524ff7dec90481e5c2",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/bcrypt/5.0.0/json",
+        "observed_at": "2026-10-08T16:27:47.664042+00:00",
+        "raw_bytes": 65122,
+        "raw_sha256": "b10232044e4e8f8b96e18eac2b85bf456def67257b4f28f3b9de775151fc57c1",
+        "gzip_snapshot": "primary/bcrypt-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/bcrypt/json",
+        "observed_at": "2026-10-08T16:27:49.474575+00:00",
+        "raw_bytes": 579028,
+        "raw_sha256": "5e5bd952b7aaa5d57f1e896a67ee518f525181468629025c1633a389ffe51948",
+        "gzip_snapshot": "primary/bcrypt-project.json.gz"
+      }
+    },
+    {
+      "name": "certifi",
+      "resolved_version": "2026.7.22",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "certifi-2026.7.22-py3-none-any.whl",
+      "artifact_sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775",
+      "artifact_size": 136983,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "2026.7.22",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.7",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "certifi==2026.7.22 --hash=sha256:62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/certifi/2026.7.22/json",
+        "observed_at": "2026-10-08T16:28:40.392383+00:00",
+        "raw_bytes": 4584,
+        "raw_sha256": "c6fe912677e373608eab51e324946005998faeb0fa999e6ddada24676e3556d3",
+        "gzip_snapshot": "primary/certifi-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/certifi/json",
+        "observed_at": "2026-10-08T16:28:41.390132+00:00",
+        "raw_bytes": 113109,
+        "raw_sha256": "3b94efeb879dddf7172a6ab03cd53b68e76f046c11893249d6c17e99a0293a3c",
+        "gzip_snapshot": "primary/certifi-project.json.gz"
+      }
+    },
+    {
+      "name": "click",
+      "resolved_version": "8.5.0",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "click-8.5.0-py3-none-any.whl",
+      "artifact_sha256": "255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360",
+      "artifact_size": 125251,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "8.5.0",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.10",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "click==8.5.0 --hash=sha256:255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/click/8.5.0/json",
+        "observed_at": "2026-10-08T16:28:08.296593+00:00",
+        "raw_bytes": 4722,
+        "raw_sha256": "4e36adc9b46f837e10ce801b7a478f9146fefdfb287292b7668fc64b1474e41d",
+        "gzip_snapshot": "primary/click-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/click/json",
+        "observed_at": "2026-10-08T16:28:09.094537+00:00",
+        "raw_bytes": 102510,
+        "raw_sha256": "b10ffc8a5a9025eefe4fd243cd90c54724f6c372d9eface5b4648577bc479039",
+        "gzip_snapshot": "primary/click-project.json.gz"
+      }
+    },
+    {
+      "name": "colorama",
+      "resolved_version": "0.4.6",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "colorama-0.4.6-py2.py3-none-any.whl",
+      "artifact_sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "artifact_size": 25335,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "0.4.6",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "colorama==0.4.6 --hash=sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/colorama/0.4.6/json",
+        "observed_at": "2026-10-08T16:28:09.288440+00:00",
+        "raw_bytes": 19759,
+        "raw_sha256": "43fb351344384a44c2b7d7fff1c63496b89ac830aea714301525c1f3718addd1",
+        "gzip_snapshot": "primary/colorama-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/colorama/json",
+        "observed_at": "2026-10-08T16:28:13.139394+00:00",
+        "raw_bytes": 87746,
+        "raw_sha256": "91d65e313ddffe647e53485367394d6b784d5631b77a6e68836367ec14ff8cf7",
+        "gzip_snapshot": "primary/colorama-project.json.gz"
+      }
+    },
+    {
+      "name": "dnspython",
+      "resolved_version": "2.8.0",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "dnspython-2.8.0-py3-none-any.whl",
+      "artifact_sha256": "01d9bbc4a2d76bf0db7c1f729812ded6d912bd318d3b1cf81d30c0f845dbf3af",
+      "artifact_size": 331094,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "2.8.0",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.10",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "dnspython==2.8.0 --hash=sha256:01d9bbc4a2d76bf0db7c1f729812ded6d912bd318d3b1cf81d30c0f845dbf3af",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/dnspython/2.8.0/json",
+        "observed_at": "2026-10-08T16:28:11.450613+00:00",
+        "raw_bytes": 7494,
+        "raw_sha256": "716fe57e8485de9fe631b8bb86e2afa7a1a2e4f668488f04bb1d5f9f76341bc2",
+        "gzip_snapshot": "primary/dnspython-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/dnspython/json",
+        "observed_at": "2026-10-08T16:28:15.082926+00:00",
+        "raw_bytes": 50169,
+        "raw_sha256": "fbd0d1d3838cfd7a27b0c0f5e3e5dbeb05a94632c626981f10c894e3cae9490b",
+        "gzip_snapshot": "primary/dnspython-project.json.gz"
+      }
+    },
+    {
+      "name": "email-validator",
+      "resolved_version": "2.3.0",
+      "requested": true,
+      "requested_extras": [],
+      "artifact_filename": "email_validator-2.3.0-py3-none-any.whl",
+      "artifact_sha256": "80f13f623413e6b197ae73bb10bf4eb0908faf509ad8362c5edeb0be7fd450b4",
+      "artifact_size": 35604,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "2.3.0",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.8",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "email-validator==2.3.0 --hash=sha256:80f13f623413e6b197ae73bb10bf4eb0908faf509ad8362c5edeb0be7fd450b4",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/email-validator/2.3.0/json",
+        "observed_at": "2026-10-08T16:27:48.612547+00:00",
+        "raw_bytes": 28635,
+        "raw_sha256": "a25f269d66f8744bc455a860896d6930ef8a8e1ce65372b772015c5ab711fa37",
+        "gzip_snapshot": "primary/email-validator-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/email-validator/json",
+        "observed_at": "2026-10-08T16:27:52.533708+00:00",
+        "raw_bytes": 71616,
+        "raw_sha256": "159e51a29a35363042c7fb747a5a80945bc337b4abe0e9e154de6780620d77a8",
+        "gzip_snapshot": "primary/email-validator-project.json.gz"
+      }
+    },
+    {
+      "name": "fastapi",
+      "resolved_version": "0.142.2",
+      "requested": true,
+      "requested_extras": [],
+      "artifact_filename": "fastapi-0.142.2-py3-none-any.whl",
+      "artifact_sha256": "bd5f4d81f1e93a88bcd77caf4dfe3c2dbffc3805407a0007e9a114c18b3a670b",
+      "artifact_size": 144409,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "0.143.0",
+      "newer_release_observed": true,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.10",
+      "maturity_classifiers": [
+        "Development Status :: 4 - Beta"
+      ],
+      "requirement": "fastapi==0.142.2 --hash=sha256:bd5f4d81f1e93a88bcd77caf4dfe3c2dbffc3805407a0007e9a114c18b3a670b",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/fastapi/0.142.2/json",
+        "observed_at": "2026-10-08T16:27:40.891280+00:00",
+        "raw_bytes": 29288,
+        "raw_sha256": "c3741694e209bd83dcf4543308d3d3212cec45c4adf38fe9741ef2f5a5e8222c",
+        "gzip_snapshot": "primary/fastapi-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/fastapi/json",
+        "observed_at": "2026-10-08T16:27:42.306309+00:00",
+        "raw_bytes": 527280,
+        "raw_sha256": "4ca5690a478568a701a62ae25c40cb0345042ea5fbb1a170e2083c43ef47a8e0",
+        "gzip_snapshot": "primary/fastapi-project.json.gz"
+      }
+    },
+    {
+      "name": "h11",
+      "resolved_version": "0.16.0",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "h11-0.16.0-py3-none-any.whl",
+      "artifact_sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+      "artifact_size": 37515,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "0.16.0",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.8",
+      "maturity_classifiers": [
+        "Development Status :: 3 - Alpha"
+      ],
+      "requirement": "h11==0.16.0 --hash=sha256:63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/h11/0.16.0/json",
+        "observed_at": "2026-10-08T16:28:12.972449+00:00",
+        "raw_bytes": 10603,
+        "raw_sha256": "97f4efb9cc00826f0408076983adc1a1e48e8f2cabf403aaf250f724e081440d",
+        "gzip_snapshot": "primary/h11-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/h11/json",
+        "observed_at": "2026-10-08T16:28:13.746766+00:00",
+        "raw_bytes": 30401,
+        "raw_sha256": "82edaa88c2cda51615d444a45e725eeaa7693f6821ab1422de1f031753d9556c",
+        "gzip_snapshot": "primary/h11-project.json.gz"
+      }
+    },
+    {
+      "name": "httpcore",
+      "resolved_version": "1.0.9",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "httpcore-1.0.9-py3-none-any.whl",
+      "artifact_sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+      "artifact_size": 78784,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "1.0.9",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.8",
+      "maturity_classifiers": [
+        "Development Status :: 3 - Alpha"
+      ],
+      "requirement": "httpcore==1.0.9 --hash=sha256:2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/httpcore/1.0.9/json",
+        "observed_at": "2026-10-08T16:27:58.640248+00:00",
+        "raw_bytes": 24057,
+        "raw_sha256": "e26eca5c3d288fe9e6446af9bcbca1038ba688629d5c8a2886c47d74718d87a2",
+        "gzip_snapshot": "primary/httpcore-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/httpcore/json",
+        "observed_at": "2026-10-08T16:28:02.686780+00:00",
+        "raw_bytes": 115200,
+        "raw_sha256": "d73786f0235ce97aa3239d411456be526320325e3b259b6fd25a0ce93775771c",
+        "gzip_snapshot": "primary/httpcore-project.json.gz"
+      }
+    },
+    {
+      "name": "httptools",
+      "resolved_version": "0.8.0",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "httptools-0.8.0-cp314-cp314-win_amd64.whl",
+      "artifact_sha256": "19d1ee275bb59ba2643ba9a3a1e51cc0c788caf2b8df506368e03f56fdd08527",
+      "artifact_size": 92705,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "0.8.0",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.9",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "httptools==0.8.0 --hash=sha256:19d1ee275bb59ba2643ba9a3a1e51cc0c788caf2b8df506368e03f56fdd08527",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/httptools/0.8.0/json",
+        "observed_at": "2026-10-08T16:28:13.891970+00:00",
+        "raw_bytes": 48073,
+        "raw_sha256": "97560d8be02630233207e675069a575cfb84fc10aa03c1bceb7c69c19b2cbeae",
+        "gzip_snapshot": "primary/httptools-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/httptools/json",
+        "observed_at": "2026-10-08T16:28:19.812401+00:00",
+        "raw_bytes": 443112,
+        "raw_sha256": "747e7e60d45da6379cb6f894ab73561e77b848ce9d3f34012029c0811bea6658",
+        "gzip_snapshot": "primary/httptools-project.json.gz"
+      }
+    },
+    {
+      "name": "httpx",
+      "resolved_version": "0.28.1",
+      "requested": true,
+      "requested_extras": [],
+      "artifact_filename": "httpx-0.28.1-py3-none-any.whl",
+      "artifact_sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+      "artifact_size": 73517,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "0.28.1",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.8",
+      "maturity_classifiers": [
+        "Development Status :: 4 - Beta"
+      ],
+      "requirement": "httpx==0.28.1 --hash=sha256:d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/httpx/0.28.1/json",
+        "observed_at": "2026-10-08T16:27:56.845342+00:00",
+        "raw_bytes": 9117,
+        "raw_sha256": "293bfab7bf587fcd0825f1bd8eed8e6303285ba14801b15659853827cbe30796",
+        "gzip_snapshot": "primary/httpx-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/httpx/json",
+        "observed_at": "2026-10-08T16:28:01.261662+00:00",
+        "raw_bytes": 119911,
+        "raw_sha256": "bb69a37ba295d008ec1ae05b324c4f5e64fba48b7276189ebf2a2920dd2f1fc8",
+        "gzip_snapshot": "primary/httpx-project.json.gz"
+      }
+    },
+    {
+      "name": "idna",
+      "resolved_version": "3.20",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "idna-3.20-py3-none-any.whl",
+      "artifact_sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c",
+      "artifact_size": 69583,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "3.20",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.9",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "idna==3.20 --hash=sha256:ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/idna/3.20/json",
+        "observed_at": "2026-10-08T16:28:16.259114+00:00",
+        "raw_bytes": 9180,
+        "raw_sha256": "e7cbd26e23ce60f6cb3a151d2adf3b1b087bb8f10ac2d9d6db70fdccbf3bb041",
+        "gzip_snapshot": "primary/idna-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/idna/json",
+        "observed_at": "2026-10-08T16:28:16.955463+00:00",
+        "raw_bytes": 65706,
+        "raw_sha256": "724599748057193c3fa6f98e11c76d7acc14a7b0d005bc2a506fc8e2ec41c117",
+        "gzip_snapshot": "primary/idna-project.json.gz"
+      }
+    },
+    {
+      "name": "iniconfig",
+      "resolved_version": "2.3.0",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "iniconfig-2.3.0-py3-none-any.whl",
+      "artifact_sha256": "f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12",
+      "artifact_size": 7484,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "2.3.1",
+      "newer_release_observed": true,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.10",
+      "maturity_classifiers": [
+        "Development Status :: 4 - Beta"
+      ],
+      "requirement": "iniconfig==2.3.0 --hash=sha256:f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/iniconfig/2.3.0/json",
+        "observed_at": "2026-10-08T16:28:14.280443+00:00",
+        "raw_bytes": 4687,
+        "raw_sha256": "10a4699a386b2309a98d4c368b6696e80562cefebe20107610337447d7f13f65",
+        "gzip_snapshot": "primary/iniconfig-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/iniconfig/json",
+        "observed_at": "2026-10-08T16:28:16.861998+00:00",
+        "raw_bytes": 18682,
+        "raw_sha256": "1591c5c139ff21feef7aa7bc0dfcec12faf5c1e5ee6107007af4ca500eeae50f",
+        "gzip_snapshot": "primary/iniconfig-project.json.gz"
+      }
+    },
+    {
+      "name": "mako",
+      "resolved_version": "1.4.3",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "mako-1.4.3-py3-none-any.whl",
+      "artifact_sha256": "723296007c870bfd6b3f0c3230dba7198096e5269297ebf5e4eff9e7ffa39d4f",
+      "artifact_size": 80164,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "1.4.3",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.10",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "mako==1.4.3 --hash=sha256:723296007c870bfd6b3f0c3230dba7198096e5269297ebf5e4eff9e7ffa39d4f",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/mako/1.4.3/json",
+        "observed_at": "2026-10-08T16:28:42.960950+00:00",
+        "raw_bytes": 4954,
+        "raw_sha256": "d8150ed85799eea2ec6e01c2386e3331c6a01e0caed32b0d6ff0749dec100aa7",
+        "gzip_snapshot": "primary/mako-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/mako/json",
+        "observed_at": "2026-10-08T16:28:46.962755+00:00",
+        "raw_bytes": 86767,
+        "raw_sha256": "d5d50a3e5eca1c6b5c723efb09085f6482f3e27b5762b5a067a51e59af232a4e",
+        "gzip_snapshot": "primary/mako-project.json.gz"
+      }
+    },
+    {
+      "name": "markupsafe",
+      "resolved_version": "3.0.4",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "markupsafe-3.0.4-cp314-cp314-win_amd64.whl",
+      "artifact_sha256": "c1bc67752d5f21013cfe430df4062441714eab79f65a6a05e01505957e9c35fe",
+      "artifact_size": 14501,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "3.0.4",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.9",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "markupsafe==3.0.4 --hash=sha256:c1bc67752d5f21013cfe430df4062441714eab79f65a6a05e01505957e9c35fe",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/markupsafe/3.0.4/json",
+        "observed_at": "2026-10-08T16:28:46.032479+00:00",
+        "raw_bytes": 135847,
+        "raw_sha256": "85cd5bce3f85e67ab0b921be9c9ba144a7cc01a2d02b85ad65b1f8dabeac4c57",
+        "gzip_snapshot": "primary/markupsafe-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/markupsafe/json",
+        "observed_at": "2026-10-08T16:28:53.311352+00:00",
+        "raw_bytes": 1019822,
+        "raw_sha256": "b3050a5783f4d6141ad0815e5316a21a14c9906afdec919cc0623b2e2f02ca77",
+        "gzip_snapshot": "primary/markupsafe-project.json.gz"
+      }
+    },
+    {
+      "name": "opentelemetry-api",
+      "resolved_version": "1.45.0",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "opentelemetry_api-1.45.0-py3-none-any.whl",
+      "artifact_sha256": "80e068aba7cd56c8b58512d6a36f8d25cb1dfaa0c0a4cc1c938ccf9f362d9cb3",
+      "artifact_size": 60020,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "1.45.1",
+      "newer_release_observed": true,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.10",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "opentelemetry-api==1.45.0 --hash=sha256:80e068aba7cd56c8b58512d6a36f8d25cb1dfaa0c0a4cc1c938ccf9f362d9cb3",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/opentelemetry-api/1.45.0/json",
+        "observed_at": "2026-10-08T16:28:17.357534+00:00",
+        "raw_bytes": 3580,
+        "raw_sha256": "b123eaf1e55d65e518f96a426b4df91a8d2b6e7184927530ea706b2c16e36a65",
+        "gzip_snapshot": "primary/opentelemetry-api-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/opentelemetry-api/json",
+        "observed_at": "2026-10-08T16:28:18.232431+00:00",
+        "raw_bytes": 135449,
+        "raw_sha256": "52b4f4416b287013ea6b0937b1daffe28b58c310389aad5db618cb83a86fb684",
+        "gzip_snapshot": "primary/opentelemetry-api-project.json.gz"
+      }
+    },
+    {
+      "name": "packaging",
+      "resolved_version": "26.3",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "packaging-26.3-py3-none-any.whl",
+      "artifact_sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+      "artifact_size": 129956,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "26.3",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.9",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "packaging==26.3 --hash=sha256:d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/packaging/26.3/json",
+        "observed_at": "2026-10-08T16:28:17.400777+00:00",
+        "raw_bytes": 5748,
+        "raw_sha256": "4f190d2f0b312b3086058cee64ab4333bf3ce67fb78b4c2bdb43899049b29f4d",
+        "gzip_snapshot": "primary/packaging-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/packaging/json",
+        "observed_at": "2026-10-08T16:28:18.241657+00:00",
+        "raw_bytes": 90241,
+        "raw_sha256": "9d7a2885e9e79296598f8c943e0a94c2468e21c800abd26ed13c633465a78835",
+        "gzip_snapshot": "primary/packaging-project.json.gz"
+      }
+    },
+    {
+      "name": "pluggy",
+      "resolved_version": "1.6.0",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "pluggy-1.6.0-py3-none-any.whl",
+      "artifact_sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
+      "artifact_size": 20538,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "1.6.0",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.9",
+      "maturity_classifiers": [
+        "Development Status :: 6 - Mature"
+      ],
+      "requirement": "pluggy==1.6.0 --hash=sha256:e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/pluggy/1.6.0/json",
+        "observed_at": "2026-10-08T16:28:03.981828+00:00",
+        "raw_bytes": 7064,
+        "raw_sha256": "db23d1227f5870da7538b1e29371d9fc9a93b0499989f8e3ef021fdccd75bc8e",
+        "gzip_snapshot": "primary/pluggy-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/pluggy/json",
+        "observed_at": "2026-10-08T16:28:07.058217+00:00",
+        "raw_bytes": 44872,
+        "raw_sha256": "61d625a54043b8181d28ea7a583a7542c7f45f065e8efa3964804cd7f42ff0f4",
+        "gzip_snapshot": "primary/pluggy-project.json.gz"
+      }
+    },
+    {
+      "name": "psycopg",
+      "resolved_version": "3.3.6",
+      "requested": true,
+      "requested_extras": [
+        "binary"
+      ],
+      "artifact_filename": "psycopg-3.3.6-py3-none-any.whl",
+      "artifact_sha256": "a1db9f7148b06a28606767efaca51fa6f9398c5c0a3810519be69d7000bdb631",
+      "artifact_size": 215490,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "3.3.6",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.10",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "psycopg[binary]==3.3.6 --hash=sha256:a1db9f7148b06a28606767efaca51fa6f9398c5c0a3810519be69d7000bdb631",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/psycopg/3.3.6/json",
+        "observed_at": "2026-10-08T16:27:44.880741+00:00",
+        "raw_bytes": 5978,
+        "raw_sha256": "67267f5b63adf658b4d04848e36f70fc4b32ffc31e3bc6ea9086117bce8cc96a",
+        "gzip_snapshot": "primary/psycopg-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/psycopg/json",
+        "observed_at": "2026-10-08T16:27:45.766074+00:00",
+        "raw_bytes": 101187,
+        "raw_sha256": "a4806149d2b8bcfcd0ba7b96f202a79d7e02818dd8e3525105e53417fa120cfd",
+        "gzip_snapshot": "primary/psycopg-project.json.gz"
+      }
+    },
+    {
+      "name": "psycopg-binary",
+      "resolved_version": "3.3.6",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "psycopg_binary-3.3.6-cp314-cp314-win_amd64.whl",
+      "artifact_sha256": "1fbd30e537dab22cafdf080608f10148fe2a5f3a61294ddb5113caac8a623840",
+      "artifact_size": 3755671,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "3.3.6",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.10",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "psycopg-binary==3.3.6 --hash=sha256:1fbd30e537dab22cafdf080608f10148fe2a5f3a61294ddb5113caac8a623840",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/psycopg-binary/3.3.6/json",
+        "observed_at": "2026-10-08T16:27:59.575818+00:00",
+        "raw_bytes": 61551,
+        "raw_sha256": "73c5e31cb3c5d454391b3e218a5c7f2d1e693c2cd338e1b63a65cc667a83bfaf",
+        "gzip_snapshot": "primary/psycopg-binary-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/psycopg-binary/json",
+        "observed_at": "2026-10-08T16:28:13.555979+00:00",
+        "raw_bytes": 2884001,
+        "raw_sha256": "450a8611045aaed67cfa4529f760c97cbecbd3949a7bd1ffe2e20eede0f63120",
+        "gzip_snapshot": "primary/psycopg-binary-project.json.gz"
+      }
+    },
+    {
+      "name": "pydantic",
+      "resolved_version": "2.13.5",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "pydantic-2.13.5-py3-none-any.whl",
+      "artifact_sha256": "346a034f080da3755d8e9cb5e00e8b07de1d39e4f6e2c87d8ab7cafa0b269a73",
+      "artifact_size": 472589,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "2.14.0",
+      "newer_release_observed": true,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.9",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "pydantic==2.13.5 --hash=sha256:346a034f080da3755d8e9cb5e00e8b07de1d39e4f6e2c87d8ab7cafa0b269a73",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/pydantic/2.13.5/json",
+        "observed_at": "2026-10-08T16:28:21.145790+00:00",
+        "raw_bytes": 113380,
+        "raw_sha256": "27adf1fed0a6b71485bfb0215dff61fa7746f26b75a38f3ac0a5106275fe78fc",
+        "gzip_snapshot": "primary/pydantic-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/pydantic/json",
+        "observed_at": "2026-10-08T16:28:40.829735+00:00",
+        "raw_bytes": 1849380,
+        "raw_sha256": "b2eb30a5e0f8f5dfeda2d7f8f20f130430d6ed997279554559d607ccf2f3254f",
+        "gzip_snapshot": "primary/pydantic-project.json.gz"
+      }
+    },
+    {
+      "name": "pygments",
+      "resolved_version": "2.21.0",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "pygments-2.21.0-py3-none-any.whl",
+      "artifact_sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+      "artifact_size": 1250147,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "2.21.0",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.9",
+      "maturity_classifiers": [
+        "Development Status :: 6 - Mature"
+      ],
+      "requirement": "pygments==2.21.0 --hash=sha256:2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/pygments/2.21.0/json",
+        "observed_at": "2026-10-08T16:28:20.413925+00:00",
+        "raw_bytes": 4500,
+        "raw_sha256": "330104a10adc8a587e3f98f4e207557125ca0c1d489e129334da5acb2b813a03",
+        "gzip_snapshot": "primary/pygments-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/pygments/json",
+        "observed_at": "2026-10-08T16:28:25.152029+00:00",
+        "raw_bytes": 144965,
+        "raw_sha256": "d48c0f74c08c450aeabfd5e90fc93b01ec127074c0f3e22cfe74a968c4299771",
+        "gzip_snapshot": "primary/pygments-project.json.gz"
+      }
+    },
+    {
+      "name": "pyjwt",
+      "resolved_version": "2.15.1",
+      "requested": true,
+      "requested_extras": [],
+      "artifact_filename": "pyjwt-2.15.1-py3-none-any.whl",
+      "artifact_sha256": "42d59d631f7768a1028a64c7ff581a9bf7519804daf91fc5b6c56e30eec5e193",
+      "artifact_size": 33860,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "2.15.1",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.9",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "pyjwt==2.15.1 --hash=sha256:42d59d631f7768a1028a64c7ff581a9bf7519804daf91fc5b6c56e30eec5e193",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/pyjwt/2.15.1/json",
+        "observed_at": "2026-10-08T16:27:46.308162+00:00",
+        "raw_bytes": 5552,
+        "raw_sha256": "f13089db8caff0efbdec85ab5c3fa281a3cc76d5b708c74fab427c98e1f29a0d",
+        "gzip_snapshot": "primary/pyjwt-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/pyjwt/json",
+        "observed_at": "2026-10-08T16:27:52.090474+00:00",
+        "raw_bytes": 112244,
+        "raw_sha256": "f27b70fef1d687acbb556d995f87431a32e6c231b711d4325b7877314a7f3227",
+        "gzip_snapshot": "primary/pyjwt-project.json.gz"
+      }
+    },
+    {
+      "name": "pytest",
+      "resolved_version": "9.1.1",
+      "requested": true,
+      "requested_extras": [],
+      "artifact_filename": "pytest-9.1.1-py3-none-any.whl",
+      "artifact_sha256": "37a86b45efb9a47a61a36449063e8e18d0cab3161329fc099eb21783169c4f0c",
+      "artifact_size": 386536,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "9.1.1",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.10",
+      "maturity_classifiers": [
+        "Development Status :: 6 - Mature"
+      ],
+      "requirement": "pytest==9.1.1 --hash=sha256:37a86b45efb9a47a61a36449063e8e18d0cab3161329fc099eb21783169c4f0c",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/pytest/9.1.1/json",
+        "observed_at": "2026-10-08T16:27:53.052774+00:00",
+        "raw_bytes": 9742,
+        "raw_sha256": "8ed48304ba7fd0ae974a041f117487b499d553b40e5ce55a9ece677e946f68dd",
+        "gzip_snapshot": "primary/pytest-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/pytest/json",
+        "observed_at": "2026-10-08T16:27:54.480856+00:00",
+        "raw_bytes": 282699,
+        "raw_sha256": "203f15ce63523ec5dbbf3462328c7e26d9903240a5f7b1782d36b8f9f388bfac",
+        "gzip_snapshot": "primary/pytest-project.json.gz"
+      }
+    },
+    {
+      "name": "pytest-asyncio",
+      "resolved_version": "1.4.0",
+      "requested": true,
+      "requested_extras": [],
+      "artifact_filename": "pytest_asyncio-1.4.0-py3-none-any.whl",
+      "artifact_sha256": "933ca923a23075a87fb7070c0ec272a6848489824d887c85c812670932835aa1",
+      "artifact_size": 16930,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "1.4.0",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.10",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "pytest-asyncio==1.4.0 --hash=sha256:933ca923a23075a87fb7070c0ec272a6848489824d887c85c812670932835aa1",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/pytest-asyncio/1.4.0/json",
+        "observed_at": "2026-10-08T16:27:54.998298+00:00",
+        "raw_bytes": 6271,
+        "raw_sha256": "7d73d89418af6bc6b73a93948bc304486249893ec37cd973c25dd3ff8038c08f",
+        "gzip_snapshot": "primary/pytest-asyncio-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/pytest-asyncio/json",
+        "observed_at": "2026-10-08T16:27:56.000961+00:00",
+        "raw_bytes": 122854,
+        "raw_sha256": "32c6b59e92b94b466fc1fecf9b6b5ba44d2054b452d7a9d93618097d77e5a76f",
+        "gzip_snapshot": "primary/pytest-asyncio-project.json.gz"
+      }
+    },
+    {
+      "name": "python-dotenv",
+      "resolved_version": "1.2.4",
+      "requested": true,
+      "requested_extras": [],
+      "artifact_filename": "python_dotenv-1.2.4-py3-none-any.whl",
+      "artifact_sha256": "42269a8a5b3fd54ffa6f3d84b18abed50064717576b4ecf03dc4a55d8aa04fdc",
+      "artifact_size": 23266,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "1.2.4",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.10",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "python-dotenv==1.2.4 --hash=sha256:42269a8a5b3fd54ffa6f3d84b18abed50064717576b4ecf03dc4a55d8aa04fdc",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/python-dotenv/1.2.4/json",
+        "observed_at": "2026-10-08T16:27:51.949524+00:00",
+        "raw_bytes": 32947,
+        "raw_sha256": "89701376846132aefd76202d07dad6e84febe4a426a12973004e13018af15c41",
+        "gzip_snapshot": "primary/python-dotenv-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/python-dotenv/json",
+        "observed_at": "2026-10-08T16:27:56.022777+00:00",
+        "raw_bytes": 112447,
+        "raw_sha256": "81740143492657824fa7802bdc67e966220bb18461c997ebc264778c65582359",
+        "gzip_snapshot": "primary/python-dotenv-project.json.gz"
+      }
+    },
+    {
+      "name": "pyyaml",
+      "resolved_version": "6.0.3",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "pyyaml-6.0.3-cp314-cp314-win_amd64.whl",
+      "artifact_sha256": "4a2e8cebe2ff6ab7d1050ecd59c25d4c8bd7e6f400f5f82b96557ac0abafd0ac",
+      "artifact_size": 156429,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "6.0.3",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.8",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "pyyaml==6.0.3 --hash=sha256:4a2e8cebe2ff6ab7d1050ecd59c25d4c8bd7e6f400f5f82b96557ac0abafd0ac",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/pyyaml/6.0.3/json",
+        "observed_at": "2026-10-08T16:28:26.005858+00:00",
+        "raw_bytes": 66402,
+        "raw_sha256": "c3f35597bc2f08cc990c2a5fe57bef6687b3a3d7c61d8b0ba4cc067777eb1def",
+        "gzip_snapshot": "primary/pyyaml-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/pyyaml/json",
+        "observed_at": "2026-10-08T16:28:34.433789+00:00",
+        "raw_bytes": 558621,
+        "raw_sha256": "d0c463a86ed24144dd112fd1fe43b7c208e52c7d3903c2f51c84acfb5b10c749",
+        "gzip_snapshot": "primary/pyyaml-project.json.gz"
+      }
+    },
+    {
+      "name": "sqlalchemy",
+      "resolved_version": "2.1.3",
+      "requested": true,
+      "requested_extras": [],
+      "artifact_filename": "sqlalchemy-2.1.3-cp314-cp314-win_amd64.whl",
+      "artifact_sha256": "0560458a775917bcd7a47eccf4f9e0b135fd9b72d7b819cb1bd60581de946f9a",
+      "artifact_size": 2428828,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "2.1.4",
+      "newer_release_observed": true,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.11",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "sqlalchemy==2.1.3 --hash=sha256:0560458a775917bcd7a47eccf4f9e0b135fd9b72d7b819cb1bd60581de946f9a",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/sqlalchemy/2.1.3/json",
+        "observed_at": "2026-10-08T16:27:39.555806+00:00",
+        "raw_bytes": 72576,
+        "raw_sha256": "5009ed1d3e5fd11cdfcc415d7e2174f425bcffb2ca051c4fa40860206089a044",
+        "gzip_snapshot": "primary/sqlalchemy-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/sqlalchemy/json",
+        "observed_at": "2026-10-08T16:28:10.302087+00:00",
+        "raw_bytes": 5545774,
+        "raw_sha256": "014f7158aa73418a3eef32506ba80b054c9c843ff47375451767f947a4329ce4",
+        "gzip_snapshot": "primary/sqlalchemy-project.json.gz"
+      }
+    },
+    {
+      "name": "starlette",
+      "resolved_version": "1.7.0",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "starlette-1.7.0-py3-none-any.whl",
+      "artifact_sha256": "67f8e99895493dd2911a03f11314af6ceebeae4e704bb9f43dfc6a9db151c93e",
+      "artifact_size": 78980,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "1.7.0",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.10",
+      "maturity_classifiers": [
+        "Development Status :: 3 - Alpha"
+      ],
+      "requirement": "starlette==1.7.0 --hash=sha256:67f8e99895493dd2911a03f11314af6ceebeae4e704bb9f43dfc6a9db151c93e",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/starlette/1.7.0/json",
+        "observed_at": "2026-10-08T16:28:27.744997+00:00",
+        "raw_bytes": 8733,
+        "raw_sha256": "3c8a35b55ca178a7db904e8b69b155fd1146e56bd958623642cf533c78491e5c",
+        "gzip_snapshot": "primary/starlette-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/starlette/json",
+        "observed_at": "2026-10-08T16:28:33.608187+00:00",
+        "raw_bytes": 240787,
+        "raw_sha256": "efa27d0ed98bc0f5ae5bd9ede971a34dabdcf5559506e33115cfe5aa308598d3",
+        "gzip_snapshot": "primary/starlette-project.json.gz"
+      }
+    },
+    {
+      "name": "typing-extensions",
+      "resolved_version": "4.16.0",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "typing_extensions-4.16.0-py3-none-any.whl",
+      "artifact_sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+      "artifact_size": 45571,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "4.16.0",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.9",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "typing-extensions==4.16.0 --hash=sha256:481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/typing-extensions/4.16.0/json",
+        "observed_at": "2026-10-08T16:28:36.297306+00:00",
+        "raw_bytes": 5631,
+        "raw_sha256": "2140da00d62dde967f52d0be0ae28444f1d6a3fe603f52c83c23988c32122d5a",
+        "gzip_snapshot": "primary/typing-extensions-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/typing-extensions/json",
+        "observed_at": "2026-10-08T16:28:41.374558+00:00",
+        "raw_bytes": 97612,
+        "raw_sha256": "2e567d7ca1b1c70a8e8f23b7204a8bd51b0bacd39e2fe53b33b153cff255ac68",
+        "gzip_snapshot": "primary/typing-extensions-project.json.gz"
+      }
+    },
+    {
+      "name": "typing-inspection",
+      "resolved_version": "0.4.4",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "typing_inspection-0.4.4-py3-none-any.whl",
+      "artifact_sha256": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147",
+      "artifact_size": 14750,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "0.4.4",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.10",
+      "maturity_classifiers": [
+        "Development Status :: 3 - Alpha"
+      ],
+      "requirement": "typing-inspection==0.4.4 --hash=sha256:65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/typing-inspection/0.4.4/json",
+        "observed_at": "2026-10-08T16:28:36.494735+00:00",
+        "raw_bytes": 4629,
+        "raw_sha256": "0605416f2f37f2df04e45360cf5ce4ca5eeca6d414bb6ddb1ec5a9893c62ac30",
+        "gzip_snapshot": "primary/typing-inspection-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/typing-inspection/json",
+        "observed_at": "2026-10-08T16:28:37.075622+00:00",
+        "raw_bytes": 20393,
+        "raw_sha256": "01f2c8a64e34ff03f674ac255b8bf5dd43d175d701059d9420cc9509c3c0edf0",
+        "gzip_snapshot": "primary/typing-inspection-project.json.gz"
+      }
+    },
+    {
+      "name": "tzdata",
+      "resolved_version": "2026.5",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "tzdata-2026.5-py2.py3-none-any.whl",
+      "artifact_sha256": "b683bd1b6659ddcd810ff02ad09ba821d4bf1065072805063eb35c49617905ac",
+      "artifact_size": 347996,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "2026.5",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=2",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "tzdata==2026.5 --hash=sha256:b683bd1b6659ddcd810ff02ad09ba821d4bf1065072805063eb35c49617905ac",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/tzdata/2026.5/json",
+        "observed_at": "2026-10-08T16:28:42.245528+00:00",
+        "raw_bytes": 3613,
+        "raw_sha256": "27547051b51333cb7ba03f91b91fc7c92179937ccb62bb81ce46dc943c69873b",
+        "gzip_snapshot": "primary/tzdata-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/tzdata/json",
+        "observed_at": "2026-10-08T16:28:46.094691+00:00",
+        "raw_bytes": 59488,
+        "raw_sha256": "9786d1e238ebb33aac8d5310c636ff3814574db25c7c35df492aade2d936b58e",
+        "gzip_snapshot": "primary/tzdata-project.json.gz"
+      }
+    },
+    {
+      "name": "uvicorn",
+      "resolved_version": "0.54.0",
+      "requested": true,
+      "requested_extras": [
+        "standard"
+      ],
+      "artifact_filename": "uvicorn-0.54.0-py3-none-any.whl",
+      "artifact_sha256": "505bdb0f318731d45f1f712071fc781a8981f6847a31c902c9f5e652d4f67faf",
+      "artifact_size": 87427,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "0.54.0",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.10",
+      "maturity_classifiers": [
+        "Development Status :: 4 - Beta"
+      ],
+      "requirement": "uvicorn[standard]==0.54.0 --hash=sha256:505bdb0f318731d45f1f712071fc781a8981f6847a31c902c9f5e652d4f67faf",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/uvicorn/0.54.0/json",
+        "observed_at": "2026-10-08T16:27:39.196318+00:00",
+        "raw_bytes": 8728,
+        "raw_sha256": "65378bebfff63d5a58ba9b6ff6ff1ae5047721da28e27802e2aafa19fece8444",
+        "gzip_snapshot": "primary/uvicorn-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/uvicorn/json",
+        "observed_at": "2026-10-08T16:27:44.257902+00:00",
+        "raw_bytes": 233469,
+        "raw_sha256": "f42e1a8b18d6a39d33ba83271d8de49cdb9ecab9d6f3276dbddf20a12e4b9eb4",
+        "gzip_snapshot": "primary/uvicorn-project.json.gz"
+      }
+    },
+    {
+      "name": "watchfiles",
+      "resolved_version": "1.3.0",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "watchfiles-1.3.0-cp310-abi3-win_amd64.whl",
+      "artifact_sha256": "1acabde19b67e673274e89a04d613b7fb1f122e2c4b8ec9a581e59c149264b61",
+      "artifact_size": 290643,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "1.3.0",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.10",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "watchfiles==1.3.0 --hash=sha256:1acabde19b67e673274e89a04d613b7fb1f122e2c4b8ec9a581e59c149264b61",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/watchfiles/1.3.0/json",
+        "observed_at": "2026-10-08T16:28:37.355219+00:00",
+        "raw_bytes": 34147,
+        "raw_sha256": "ba585baa9af3fdcdb897e9e6f5711a7551aa994c617318e898b3ec749383f73a",
+        "gzip_snapshot": "primary/watchfiles-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/watchfiles/json",
+        "observed_at": "2026-10-08T16:28:39.794280+00:00",
+        "raw_bytes": 1283795,
+        "raw_sha256": "2795db1fe5e9f085874975ce6afd5546e3348a699ea8076d50abd006b636a40c",
+        "gzip_snapshot": "primary/watchfiles-project.json.gz"
+      }
+    },
+    {
+      "name": "websockets",
+      "resolved_version": "17.2",
+      "requested": false,
+      "requested_extras": [],
+      "artifact_filename": "websockets-17.2-cp314-cp314-win_amd64.whl",
+      "artifact_sha256": "dac93bf7a9beb215be3282b8441173cd50806c41c007b8be9bb24e03c60ad563",
+      "artifact_size": 218104,
+      "exact_artifact_unyanked": true,
+      "latest_non_preview_registry_observation": "17.2",
+      "newer_release_observed": false,
+      "latest_is_not_a_selected_compatible_version": true,
+      "requires_python": ">=3.11",
+      "maturity_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "requirement": "websockets==17.2 --hash=sha256:dac93bf7a9beb215be3282b8441173cd50806c41c007b8be9bb24e03c60ad563",
+      "exact_source": {
+        "url": "https://pypi.org/pypi/websockets/17.2/json",
+        "observed_at": "2026-10-08T16:28:38.200818+00:00",
+        "raw_bytes": 137515,
+        "raw_sha256": "d7467a8e1b462e54e60362ae6ae9d2b08ef67b028500672e365039adafa6a786",
+        "gzip_snapshot": "primary/websockets-exact.json.gz"
+      },
+      "project_source": {
+        "url": "https://pypi.org/pypi/websockets/json",
+        "observed_at": "2026-10-08T16:28:52.111008+00:00",
+        "raw_bytes": 2146015,
+        "raw_sha256": "498e41c1f3bcbdeccc4f94bf4a1120c8d23d0bfcd703c349f58a76b80cf01c18",
+        "gzip_snapshot": "primary/websockets-project.json.gz"
+      }
+    }
+  ],
+  "errors": [
+    {
+      "name": "pydantic_core",
+      "error_type": "ValueError",
+      "message": "Registry response exceeds research receive cap"
+    }
+  ],
+  "limits": [
+    "No wheel content downloaded or verified against bytes",
+    "Registry hashes and compressed response identity are not publisher attestations",
+    "No imported/native ABI, API, database, license or security qualification",
+    "No production OS/provider selection or production/dev graph separation",
+    "Independently newer versions are observations, not the selected graph",
+    "No selected production lock or compatibility acceptance"
+  ],
+  "primary_documentation": [
+    "https://pip.pypa.io/en/stable/topics/secure-installs/",
+    "https://pip.pypa.io/en/stable/reference/installation-report/"
+  ]
+}

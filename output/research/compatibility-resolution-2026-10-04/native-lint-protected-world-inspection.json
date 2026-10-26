@@ -1,0 +1,148 @@
+{
+  "inspection": "read-only source lint under two explicit rules; not React/WebGL runtime execution",
+  "application_source_modified": false,
+  "runtime_crash_resolved": false,
+  "files": [
+    {
+      "source": "apps/web/src/world/WorldCanvas.tsx",
+      "before_sha256": "8a13414d7cf091584841f278c6fbb9b19a65adf06073dccf49f071cb42d66847",
+      "after_sha256": "8a13414d7cf091584841f278c6fbb9b19a65adf06073dccf49f071cb42d66847",
+      "unchanged": true,
+      "exit_code": 0,
+      "output": {
+        "diagnostics": [],
+        "number_of_files": 1,
+        "number_of_rules": 2,
+        "threads_count": 4,
+        "start_time": 0.009564
+      },
+      "stderr": "",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.EXE",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\compatibility-resolution-2026-10-04\\native-lint-probe\\tool\\node_modules\\oxlint\\bin\\oxlint",
+        "--config",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\compatibility-resolution-2026-10-04\\native-lint-probe\\probe-config.json",
+        "--allow",
+        "all",
+        "--deny",
+        "react/rules-of-hooks",
+        "--deny",
+        "react/exhaustive-deps",
+        "--no-ignore",
+        "--format",
+        "json",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\web\\src\\world\\WorldCanvas.tsx"
+      ]
+    },
+    {
+      "source": "apps/web/src/world/ExteriorScene.tsx",
+      "before_sha256": "cca5f46a456dcb29362bf2fb89ab4052727f0af37501abef16ba50e9bc74cbc0",
+      "after_sha256": "cca5f46a456dcb29362bf2fb89ab4052727f0af37501abef16ba50e9bc74cbc0",
+      "unchanged": true,
+      "exit_code": 1,
+      "output": {
+        "diagnostics": [
+          {
+            "message": "React Hook useEffect has a missing dependency: 'applyKeyframe'",
+            "code": "react-hooks(exhaustive-deps)",
+            "severity": "error",
+            "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/exhaustive-deps.html",
+            "help": "Either include it or remove the dependency array.",
+            "filename": "apps/web/src/world/ExteriorScene.tsx",
+            "labels": [
+              {
+                "label": "useEffect uses `applyKeyframe` here",
+                "span": {
+                  "offset": 4355,
+                  "length": 13,
+                  "line": 138,
+                  "column": 7
+                }
+              },
+              {
+                "span": {
+                  "offset": 5695,
+                  "length": 54,
+                  "line": 193,
+                  "column": 6
+                }
+              }
+            ]
+          }
+        ],
+        "number_of_files": 1,
+        "number_of_rules": 2,
+        "threads_count": 4,
+        "start_time": 0.0098699
+      },
+      "stderr": "",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.EXE",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\compatibility-resolution-2026-10-04\\native-lint-probe\\tool\\node_modules\\oxlint\\bin\\oxlint",
+        "--config",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\compatibility-resolution-2026-10-04\\native-lint-probe\\probe-config.json",
+        "--allow",
+        "all",
+        "--deny",
+        "react/rules-of-hooks",
+        "--deny",
+        "react/exhaustive-deps",
+        "--no-ignore",
+        "--format",
+        "json",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\web\\src\\world\\ExteriorScene.tsx"
+      ]
+    },
+    {
+      "source": "apps/web/src/world/WorldHUD.tsx",
+      "before_sha256": "a95c352fb7bdd4b9cf4351e98bbeb730ce8200745f62c3a835f69d67f12ebb24",
+      "after_sha256": "a95c352fb7bdd4b9cf4351e98bbeb730ce8200745f62c3a835f69d67f12ebb24",
+      "unchanged": true,
+      "exit_code": 1,
+      "output": {
+        "diagnostics": [
+          {
+            "message": "React Hook \"useMemo\" is called conditionally. React Hooks must be called in the exact same order in every component render.",
+            "code": "react-hooks(rules-of-hooks)",
+            "severity": "error",
+            "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/rules-of-hooks.html",
+            "help": "Move the Hook call before the condition, or call it unconditionally and branch inside the Hook/effect instead.",
+            "filename": "apps/web/src/world/WorldHUD.tsx",
+            "labels": [
+              {
+                "label": "This Hook call is not reachable on every render path.",
+                "span": {
+                  "offset": 1289,
+                  "length": 196,
+                  "line": 48,
+                  "column": 24
+                }
+              }
+            ]
+          }
+        ],
+        "number_of_files": 1,
+        "number_of_rules": 2,
+        "threads_count": 4,
+        "start_time": 0.0096097
+      },
+      "stderr": "",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.EXE",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\compatibility-resolution-2026-10-04\\native-lint-probe\\tool\\node_modules\\oxlint\\bin\\oxlint",
+        "--config",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\compatibility-resolution-2026-10-04\\native-lint-probe\\probe-config.json",
+        "--allow",
+        "all",
+        "--deny",
+        "react/rules-of-hooks",
+        "--deny",
+        "react/exhaustive-deps",
+        "--no-ignore",
+        "--format",
+        "json",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\web\\src\\world\\WorldHUD.tsx"
+      ]
+    }
+  ]
+}

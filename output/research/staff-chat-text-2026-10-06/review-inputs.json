@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-06",
+  "scope": "Additive IF-STAFF-15 initialized-channel text direction proposal and actual schema validator fixtures only",
+  "status": "DOING",
+  "independentReview": "Not performed. Existing chat reviewer earlier returned terminal workspace-credit failure; current list_agents finds no live handle. No verdict or retry authorization inferred.",
+  "predecessor": {
+    "snapshot": "HANDOFF_LIFECYCLE.before.md",
+    "sha256": "2f6972361779ab6b36deeb17249e69f23b04c1468e765e66f504f9fc239f30ff",
+    "originalBytesPreserved": true
+  },
+  "producerValidation": {
+    "affectedMethods": 20,
+    "affectedResult": "PASS",
+    "runtime": "Not exercised",
+    "broadResult": "PASS",
+    "broadMethods": 104,
+    "affectedCommand": "C:/Python314/python.exe -X utf8 -m unittest scripts.validation.test_staff_chat_text_schema scripts.validation.test_chat_text_schema scripts.validation.test_chat_event_control_schema",
+    "broadCommand": "C:/Python314/python.exe -X utf8 -m unittest discover -s scripts/validation -p test_*schema.py",
+    "whitespace": "PASS"
+  },
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "snapshot": "snapshots/01-AGENTS.md",
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "path": ".specify/memory/constitution.md",
+      "snapshot": "snapshots/02-.specify__memory__constitution.md",
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "path": "PROJECT.md",
+      "snapshot": "snapshots/03-PROJECT.md",
+      "sha256": "a483bd2713fe420322772ab7fb07c848aaf103088697c05ab91f35d2e5ea1461"
+    },
+    {
+      "path": "DECISIONS.md",
+      "snapshot": "snapshots/04-DECISIONS.md",
+      "sha256": "ac3075adbc4414d88e4b0f7f111a0476c0dd461596c08943d488d3b7d8949d20"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "snapshot": "snapshots/05-docs__phase-1-architecture__contracts__HANDOFF_LIFECYCLE.md",
+      "sha256": "34b9c4a761ac1cdbe475b6b15334aef7f8671b07ef8fbd520078a821c6c854ae"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/staff-chat-text.schema.json",
+      "snapshot": "snapshots/06-docs__phase-1-architecture__contracts__staff-chat-text.schema.json",
+      "sha256": "b148b8c62d96624484c0205c58195994d210e4b3ae0356370268c49a1ac8c95e"
+    },
+    {
+      "path": "scripts/validation/test_staff_chat_text_schema.py",
+      "snapshot": "snapshots/07-scripts__validation__test_staff_chat_text_schema.py",
+      "sha256": "5556f925bb6b5154c2595b2be78af55c772792631061cc7b2f73cb79a1b6243f"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+      "snapshot": "snapshots/08-docs__phase-1-architecture__contracts__CHAT_EVENT_PROTOCOL.md",
+      "sha256": "8169e5508bc567d333e6121131d13a909c390e5e8e715a70a05ade83aafac33b"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/chat-text.schema.json",
+      "snapshot": "snapshots/09-docs__phase-1-architecture__contracts__chat-text.schema.json",
+      "sha256": "0c674077b0c6b2ade677a88a3a9bddd1e636da840866f3d19345fa0eaebf3f31"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/chat-event-control.schema.json",
+      "snapshot": "snapshots/10-docs__phase-1-architecture__contracts__chat-event-control.schema.json",
+      "sha256": "640718a84d9ca5eeb09517e9bbd73a0163c6e4ba06d7caeeabb4434e899931ae"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "snapshots/11-docs__phase-1-architecture__contracts__SECURITY_PRIVACY_CONTRACT.md",
+      "sha256": "50f3c00d5e6aed36bb4fa99e864ba337cc3dc3f76c0665ff30e0f765782ad00a"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "snapshot": "snapshots/12-docs__phase-1-architecture__contracts__INTERFACE_CATALOG.md",
+      "sha256": "d7da364547c19344ccb1fca5a2554bb27410a7234f8209afade8664980f55c79"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/interface-catalog.csv",
+      "snapshot": "snapshots/13-docs__phase-1-architecture__contracts__interface-catalog.csv",
+      "sha256": "42018a3e5cc6c1edf488c392b0349688a92b2cab5a8f50e717f1bca84a70a49c"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "snapshot": "snapshots/14-docs__phase-1-architecture__contracts__PRIVATE_PROCESS_PROOF.md",
+      "sha256": "21833e0bf533d88243e3da34be6f7f2ca401c3401a907c719c58a4fcb2196fbf"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/process-value.schema.json",
+      "snapshot": "snapshots/15-docs__phase-1-architecture__contracts__process-value.schema.json",
+      "sha256": "b4fd9fc84f322ecb6743c00244f3731ccd612861de53056aaddb20a377a67a95"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/booking-creation-request.schema.json",
+      "snapshot": "snapshots/16-docs__phase-1-architecture__contracts__booking-creation-request.schema.json",
+      "sha256": "6848784172c0b39951978fb6a93158655b444e1c9400091c0a90c8d0fd509e37"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/publication-preparation.schema.json",
+      "snapshot": "snapshots/17-docs__phase-1-architecture__contracts__publication-preparation.schema.json",
+      "sha256": "23c3569baa844a542dd8f7a283af87f50b93dfa1fdf3ccef2c401136c8acc2ac"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/publication-manifest.schema.json",
+      "snapshot": "snapshots/18-docs__phase-1-architecture__contracts__publication-manifest.schema.json",
+      "sha256": "d3620c8326246bc34040188de610c5823f1013936572d3ffb63a5eb350bc3852"
+    },
+    {
+      "path": "scripts/validation/test_booking_creation_request_schema.py",
+      "snapshot": "snapshots/19-scripts__validation__test_booking_creation_request_schema.py",
+      "sha256": "773fd0f9ea930676c57da53ae9998187bf1a0b8bc8501b7e5753124e04cb98e0"
+    },
+    {
+      "path": "specs/001-platform-security-hardening/spec.md",
+      "snapshot": "snapshots/20-specs__001-platform-security-hardening__spec.md",
+      "sha256": "47704c411b72195a2a4f8b832b07b30d90b00673647afe50d8ac98b917939d99"
+    }
+  ]
+}

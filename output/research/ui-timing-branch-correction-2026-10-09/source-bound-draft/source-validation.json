@@ -1,0 +1,47 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Isolated document-registry shape/source/approval-guard observations only",
+  "registry_records": 1146,
+  "cases": [
+    {
+      "name": "original_guard_admits_duration_factor",
+      "accepted": true,
+      "rejection": null
+    },
+    {
+      "name": "proposed_guard_rejects_duration_factor",
+      "accepted": false,
+      "rejection": "Timing protection mismatch"
+    },
+    {
+      "name": "original_guard_rejects_opportunity_encoding",
+      "accepted": false,
+      "rejection": "Timing protection mismatch"
+    },
+    {
+      "name": "proposed_guard_admits_opportunity_encoding",
+      "accepted": true,
+      "rejection": null
+    },
+    {
+      "name": "nine_opportunities",
+      "accepted": false,
+      "rejection": "Timing protection mismatch"
+    },
+    {
+      "name": "nineteen_warning_seconds",
+      "accepted": false,
+      "rejection": "Timing protection mismatch"
+    },
+    {
+      "name": "factor_added_to_opportunities",
+      "accepted": false,
+      "rejection": "Timing protection mismatch"
+    }
+  ],
+  "existing_D063_approval_rejection": "Stale registry approval",
+  "initial_preparation_failure": "Proposed source pin mismatch: docs/phase-1-ux-architecture/FLOWS.md; subsequently identified three older UX source pins. Their proposed rebindings are held for fresh review, not approved by these checks.",
+  "current_sources_unchanged": true,
+  "limits": "No independent review, actual extension controls, WCAG conformance, founder acceptance, application/API enforcement or live registry replacement. Corrected guards prove representation only."
+}

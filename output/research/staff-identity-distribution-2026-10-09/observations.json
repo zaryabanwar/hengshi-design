@@ -1,0 +1,1598 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "observed_utc": "2026-10-08T22:31:07.456799+00:00",
+  "scope": "Read-only public inspection of two exact frozen candidate wheels; no install or import",
+  "basis_report_sha256": "da613f9120bede342342ccbf85e05913c7f38d039c1a11dc87ae0e41b5c1036a",
+  "joserfc_source_tag": {
+    "url": "https://api.github.com/repos/authlib/joserfc/git/ref/tags/1.7.5",
+    "final_url": "https://api.github.com/repos/authlib/joserfc/git/ref/tags/1.7.5",
+    "http_status": 200,
+    "observed_utc": "2026-10-08T22:31:03.188422+00:00",
+    "raw_bytes": 328,
+    "raw_sha256": "a690810acf1776cb73a1acdb60eea7f30c9da127dc2ca7822b9a93ab72da24bc",
+    "snapshot": {
+      "path": "output/research/staff-identity-distribution-2026-10-09/joserfc/source-tag.json.gz",
+      "bytes": 209,
+      "sha256": "c39ca2fdf6728e14021cbcaf622a8c0608bb291b0ab4089963a801a1c8810117"
+    }
+  },
+  "distributions": [
+    {
+      "name": "authlib",
+      "version": "1.8.0",
+      "filename": "authlib-1.8.0-py2.py3-none-any.whl",
+      "wheel": {
+        "url": "https://files.pythonhosted.org/packages/b8/c6/6f124bcfbbfb20fba22c939b4e43a06dccfc0e1ca20e5634ca573cb1e271/authlib-1.8.0-py2.py3-none-any.whl",
+        "final_url": "https://files.pythonhosted.org/packages/b8/c6/6f124bcfbbfb20fba22c939b4e43a06dccfc0e1ca20e5634ca573cb1e271/authlib-1.8.0-py2.py3-none-any.whl",
+        "http_status": 200,
+        "observed_utc": "2026-10-08T22:31:04.321676+00:00",
+        "raw_bytes": 260804,
+        "raw_sha256": "88aebbd9af6757e14e912d5dc007ae1dc1f3e27e3b2152ce7c552ee2c3b3c121",
+        "snapshot": {
+          "path": "output/research/staff-identity-distribution-2026-10-09/authlib/wheel.gz",
+          "bytes": 239025,
+          "sha256": "074b0bf77f5c44c794e85f333ffd20305c0a24cf53a07dbd052019131c96d1a1"
+        }
+      },
+      "archive_entries": [
+        {
+          "path": "authlib/__init__.py",
+          "bytes": 487,
+          "compressed_bytes": 301
+        },
+        {
+          "path": "authlib/_joserfc_helpers.py",
+          "bytes": 1482,
+          "compressed_bytes": 466
+        },
+        {
+          "path": "authlib/consts.py",
+          "bytes": 299,
+          "compressed_bytes": 209
+        },
+        {
+          "path": "authlib/deprecate.py",
+          "bytes": 361,
+          "compressed_bytes": 188
+        },
+        {
+          "path": "authlib/common/__init__.py",
+          "bytes": 0,
+          "compressed_bytes": 2
+        },
+        {
+          "path": "authlib/common/encoding.py",
+          "bytes": 1544,
+          "compressed_bytes": 549
+        },
+        {
+          "path": "authlib/common/errors.py",
+          "bytes": 1667,
+          "compressed_bytes": 538
+        },
+        {
+          "path": "authlib/common/language.py",
+          "bytes": 487,
+          "compressed_bytes": 310
+        },
+        {
+          "path": "authlib/common/security.py",
+          "bytes": 1211,
+          "compressed_bytes": 562
+        },
+        {
+          "path": "authlib/common/urls.py",
+          "bytes": 4805,
+          "compressed_bytes": 1811
+        },
+        {
+          "path": "authlib/integrations/__init__.py",
+          "bytes": 0,
+          "compressed_bytes": 2
+        },
+        {
+          "path": "authlib/integrations/base_client/__init__.py",
+          "bytes": 820,
+          "compressed_bytes": 254
+        },
+        {
+          "path": "authlib/integrations/base_client/async_app.py",
+          "bytes": 5960,
+          "compressed_bytes": 1340
+        },
+        {
+          "path": "authlib/integrations/base_client/async_openid.py",
+          "bytes": 4492,
+          "compressed_bytes": 1375
+        },
+        {
+          "path": "authlib/integrations/base_client/errors.py",
+          "bytes": 632,
+          "compressed_bytes": 242
+        },
+        {
+          "path": "authlib/integrations/base_client/framework_integration.py",
+          "bytes": 1945,
+          "compressed_bytes": 594
+        },
+        {
+          "path": "authlib/integrations/base_client/registry.py",
+          "bytes": 4313,
+          "compressed_bytes": 1242
+        },
+        {
+          "path": "authlib/integrations/base_client/sync_app.py",
+          "bytes": 12938,
+          "compressed_bytes": 2517
+        },
+        {
+          "path": "authlib/integrations/base_client/sync_openid.py",
+          "bytes": 4336,
+          "compressed_bytes": 1331
+        },
+        {
+          "path": "authlib/integrations/django_client/__init__.py",
+          "bytes": 516,
+          "compressed_bytes": 193
+        },
+        {
+          "path": "authlib/integrations/django_client/apps.py",
+          "bytes": 5404,
+          "compressed_bytes": 1281
+        },
+        {
+          "path": "authlib/integrations/django_client/integration.py",
+          "bytes": 651,
+          "compressed_bytes": 303
+        },
+        {
+          "path": "authlib/integrations/django_oauth1/__init__.py",
+          "bytes": 229,
+          "compressed_bytes": 112
+        },
+        {
+          "path": "authlib/integrations/django_oauth1/authorization_server.py",
+          "bytes": 4560,
+          "compressed_bytes": 1195
+        },
+        {
+          "path": "authlib/integrations/django_oauth1/nonce.py",
+          "bytes": 396,
+          "compressed_bytes": 206
+        },
+        {
+          "path": "authlib/integrations/django_oauth1/resource_protector.py",
+          "bytes": 2400,
+          "compressed_bytes": 820
+        },
+        {
+          "path": "authlib/integrations/django_oauth2/__init__.py",
+          "bytes": 333,
+          "compressed_bytes": 154
+        },
+        {
+          "path": "authlib/integrations/django_oauth2/authorization_server.py",
+          "bytes": 4463,
+          "compressed_bytes": 1320
+        },
+        {
+          "path": "authlib/integrations/django_oauth2/endpoints.py",
+          "bytes": 1838,
+          "compressed_bytes": 606
+        },
+        {
+          "path": "authlib/integrations/django_oauth2/requests.py",
+          "bytes": 1850,
+          "compressed_bytes": 481
+        },
+        {
+          "path": "authlib/integrations/django_oauth2/resource_protector.py",
+          "bytes": 2668,
+          "compressed_bytes": 882
+        },
+        {
+          "path": "authlib/integrations/django_oauth2/signals.py",
+          "bytes": 235,
+          "compressed_bytes": 113
+        },
+        {
+          "path": "authlib/integrations/flask_client/__init__.py",
+          "bytes": 1765,
+          "compressed_bytes": 602
+        },
+        {
+          "path": "authlib/integrations/flask_client/apps.py",
+          "bytes": 5555,
+          "compressed_bytes": 1370
+        },
+        {
+          "path": "authlib/integrations/flask_client/integration.py",
+          "bytes": 828,
+          "compressed_bytes": 365
+        },
+        {
+          "path": "authlib/integrations/flask_oauth1/__init__.py",
+          "bytes": 310,
+          "compressed_bytes": 146
+        },
+        {
+          "path": "authlib/integrations/flask_oauth1/authorization_server.py",
+          "bytes": 6146,
+          "compressed_bytes": 1476
+        },
+        {
+          "path": "authlib/integrations/flask_oauth1/cache.py",
+          "bytes": 3012,
+          "compressed_bytes": 742
+        },
+        {
+          "path": "authlib/integrations/flask_oauth1/resource_protector.py",
+          "bytes": 3910,
+          "compressed_bytes": 1211
+        },
+        {
+          "path": "authlib/integrations/flask_oauth2/__init__.py",
+          "bytes": 284,
+          "compressed_bytes": 130
+        },
+        {
+          "path": "authlib/integrations/flask_oauth2/authorization_server.py",
+          "bytes": 5911,
+          "compressed_bytes": 1728
+        },
+        {
+          "path": "authlib/integrations/flask_oauth2/errors.py",
+          "bytes": 1085,
+          "compressed_bytes": 296
+        },
+        {
+          "path": "authlib/integrations/flask_oauth2/requests.py",
+          "bytes": 1480,
+          "compressed_bytes": 391
+        },
+        {
+          "path": "authlib/integrations/flask_oauth2/resource_protector.py",
+          "bytes": 3946,
+          "compressed_bytes": 1274
+        },
+        {
+          "path": "authlib/integrations/flask_oauth2/signals.py",
+          "bytes": 341,
+          "compressed_bytes": 135
+        },
+        {
+          "path": "authlib/integrations/httpx_client/__init__.py",
+          "bytes": 1107,
+          "compressed_bytes": 256
+        },
+        {
+          "path": "authlib/integrations/httpx_client/_compat.py",
+          "bytes": 407,
+          "compressed_bytes": 231
+        },
+        {
+          "path": "authlib/integrations/httpx_client/assertion_client.py",
+          "bytes": 3660,
+          "compressed_bytes": 787
+        },
+        {
+          "path": "authlib/integrations/httpx_client/oauth1_client.py",
+          "bytes": 4422,
+          "compressed_bytes": 1132
+        },
+        {
+          "path": "authlib/integrations/httpx_client/oauth2_client.py",
+          "bytes": 9187,
+          "compressed_bytes": 1904
+        },
+        {
+          "path": "authlib/integrations/httpx_client/utils.py",
+          "bytes": 995,
+          "compressed_bytes": 448
+        },
+        {
+          "path": "authlib/integrations/requests_client/__init__.py",
+          "bytes": 831,
+          "compressed_bytes": 234
+        },
+        {
+          "path": "authlib/integrations/requests_client/assertion_session.py",
+          "bytes": 2130,
+          "compressed_bytes": 776
+        },
+        {
+          "path": "authlib/integrations/requests_client/oauth1_session.py",
+          "bytes": 2324,
+          "compressed_bytes": 789
+        },
+        {
+          "path": "authlib/integrations/requests_client/oauth2_session.py",
+          "bytes": 4979,
+          "compressed_bytes": 1519
+        },
+        {
+          "path": "authlib/integrations/requests_client/utils.py",
+          "bytes": 294,
+          "compressed_bytes": 178
+        },
+        {
+          "path": "authlib/integrations/sqla_oauth2/__init__.py",
+          "bytes": 652,
+          "compressed_bytes": 198
+        },
+        {
+          "path": "authlib/integrations/sqla_oauth2/client_mixin.py",
+          "bytes": 4371,
+          "compressed_bytes": 1008
+        },
+        {
+          "path": "authlib/integrations/sqla_oauth2/functions.py",
+          "bytes": 3156,
+          "compressed_bytes": 740
+        },
+        {
+          "path": "authlib/integrations/sqla_oauth2/tokens_mixins.py",
+          "bytes": 2261,
+          "compressed_bytes": 571
+        },
+        {
+          "path": "authlib/integrations/starlette_client/__init__.py",
+          "bytes": 713,
+          "compressed_bytes": 267
+        },
+        {
+          "path": "authlib/integrations/starlette_client/apps.py",
+          "bytes": 5885,
+          "compressed_bytes": 1450
+        },
+        {
+          "path": "authlib/integrations/starlette_client/integration.py",
+          "bytes": 2771,
+          "compressed_bytes": 867
+        },
+        {
+          "path": "authlib/jose/__init__.py",
+          "bytes": 2047,
+          "compressed_bytes": 656
+        },
+        {
+          "path": "authlib/jose/errors.py",
+          "bytes": 3199,
+          "compressed_bytes": 742
+        },
+        {
+          "path": "authlib/jose/jwk.py",
+          "bytes": 491,
+          "compressed_bytes": 231
+        },
+        {
+          "path": "authlib/jose/util.py",
+          "bytes": 1357,
+          "compressed_bytes": 468
+        },
+        {
+          "path": "authlib/jose/drafts/__init__.py",
+          "bytes": 520,
+          "compressed_bytes": 235
+        },
+        {
+          "path": "authlib/jose/drafts/_jwe_algorithms.py",
+          "bytes": 7199,
+          "compressed_bytes": 1871
+        },
+        {
+          "path": "authlib/jose/drafts/_jwe_enc_cryptodome.py",
+          "bytes": 1848,
+          "compressed_bytes": 631
+        },
+        {
+          "path": "authlib/jose/drafts/_jwe_enc_cryptography.py",
+          "bytes": 1731,
+          "compressed_bytes": 624
+        },
+        {
+          "path": "authlib/jose/rfc7515/__init__.py",
+          "bytes": 367,
+          "compressed_bytes": 210
+        },
+        {
+          "path": "authlib/jose/rfc7515/jws.py",
+          "bytes": 13736,
+          "compressed_bytes": 3134
+        },
+        {
+          "path": "authlib/jose/rfc7515/models.py",
+          "bytes": 2471,
+          "compressed_bytes": 877
+        },
+        {
+          "path": "authlib/jose/rfc7516/__init__.py",
+          "bytes": 514,
+          "compressed_bytes": 239
+        },
+        {
+          "path": "authlib/jose/rfc7516/jwe.py",
+          "bytes": 30680,
+          "compressed_bytes": 5926
+        },
+        {
+          "path": "authlib/jose/rfc7516/models.py",
+          "bytes": 4404,
+          "compressed_bytes": 1153
+        },
+        {
+          "path": "authlib/jose/rfc7517/__init__.py",
+          "bytes": 404,
+          "compressed_bytes": 234
+        },
+        {
+          "path": "authlib/jose/rfc7517/_cryptography_key.py",
+          "bytes": 1361,
+          "compressed_bytes": 375
+        },
+        {
+          "path": "authlib/jose/rfc7517/asymmetric_key.py",
+          "bytes": 6464,
+          "compressed_bytes": 1577
+        },
+        {
+          "path": "authlib/jose/rfc7517/base_key.py",
+          "bytes": 3358,
+          "compressed_bytes": 1108
+        },
+        {
+          "path": "authlib/jose/rfc7517/jwk.py",
+          "bytes": 2029,
+          "compressed_bytes": 720
+        },
+        {
+          "path": "authlib/jose/rfc7517/key_set.py",
+          "bytes": 1606,
+          "compressed_bytes": 623
+        },
+        {
+          "path": "authlib/jose/rfc7518/__init__.py",
+          "bytes": 963,
+          "compressed_bytes": 296
+        },
+        {
+          "path": "authlib/jose/rfc7518/ec_key.py",
+          "bytes": 3921,
+          "compressed_bytes": 1081
+        },
+        {
+          "path": "authlib/jose/rfc7518/jwe_algs.py",
+          "bytes": 11466,
+          "compressed_bytes": 2606
+        },
+        {
+          "path": "authlib/jose/rfc7518/jwe_encs.py",
+          "bytes": 5093,
+          "compressed_bytes": 1322
+        },
+        {
+          "path": "authlib/jose/rfc7518/jwe_zips.py",
+          "bytes": 1060,
+          "compressed_bytes": 490
+        },
+        {
+          "path": "authlib/jose/rfc7518/jws_algs.py",
+          "bytes": 6595,
+          "compressed_bytes": 1516
+        },
+        {
+          "path": "authlib/jose/rfc7518/oct_key.py",
+          "bytes": 2744,
+          "compressed_bytes": 1025
+        },
+        {
+          "path": "authlib/jose/rfc7518/rsa_key.py",
+          "bytes": 4581,
+          "compressed_bytes": 1257
+        },
+        {
+          "path": "authlib/jose/rfc7518/util.py",
+          "bytes": 262,
+          "compressed_bytes": 162
+        },
+        {
+          "path": "authlib/jose/rfc7519/__init__.py",
+          "bytes": 307,
+          "compressed_bytes": 192
+        },
+        {
+          "path": "authlib/jose/rfc7519/claims.py",
+          "bytes": 8803,
+          "compressed_bytes": 2425
+        },
+        {
+          "path": "authlib/jose/rfc7519/jwt.py",
+          "bytes": 6185,
+          "compressed_bytes": 1941
+        },
+        {
+          "path": "authlib/jose/rfc8037/__init__.py",
+          "bytes": 118,
+          "compressed_bytes": 87
+        },
+        {
+          "path": "authlib/jose/rfc8037/jws_eddsa.py",
+          "bytes": 717,
+          "compressed_bytes": 327
+        },
+        {
+          "path": "authlib/jose/rfc8037/okp_key.py",
+          "bytes": 3995,
+          "compressed_bytes": 1052
+        },
+        {
+          "path": "authlib/oauth1/__init__.py",
+          "bytes": 933,
+          "compressed_bytes": 260
+        },
+        {
+          "path": "authlib/oauth1/client.py",
+          "bytes": 6737,
+          "compressed_bytes": 1913
+        },
+        {
+          "path": "authlib/oauth1/errors.py",
+          "bytes": 46,
+          "compressed_bytes": 48
+        },
+        {
+          "path": "authlib/oauth1/rfc5849/__init__.py",
+          "bytes": 1136,
+          "compressed_bytes": 388
+        },
+        {
+          "path": "authlib/oauth1/rfc5849/authorization_server.py",
+          "bytes": 13924,
+          "compressed_bytes": 3033
+        },
+        {
+          "path": "authlib/oauth1/rfc5849/base_server.py",
+          "bytes": 3972,
+          "compressed_bytes": 1084
+        },
+        {
+          "path": "authlib/oauth1/rfc5849/client_auth.py",
+          "bytes": 7156,
+          "compressed_bytes": 1998
+        },
+        {
+          "path": "authlib/oauth1/rfc5849/errors.py",
+          "bytes": 2285,
+          "compressed_bytes": 788
+        },
+        {
+          "path": "authlib/oauth1/rfc5849/models.py",
+          "bytes": 3418,
+          "compressed_bytes": 678
+        },
+        {
+          "path": "authlib/oauth1/rfc5849/parameters.py",
+          "bytes": 3532,
+          "compressed_bytes": 1295
+        },
+        {
+          "path": "authlib/oauth1/rfc5849/resource_protector.py",
+          "bytes": 1279,
+          "compressed_bytes": 461
+        },
+        {
+          "path": "authlib/oauth1/rfc5849/rsa.py",
+          "bytes": 907,
+          "compressed_bytes": 342
+        },
+        {
+          "path": "authlib/oauth1/rfc5849/signature.py",
+          "bytes": 14164,
+          "compressed_bytes": 3773
+        },
+        {
+          "path": "authlib/oauth1/rfc5849/util.py",
+          "bytes": 167,
+          "compressed_bytes": 97
+        },
+        {
+          "path": "authlib/oauth1/rfc5849/wrapper.py",
+          "bytes": 4073,
+          "compressed_bytes": 1144
+        },
+        {
+          "path": "authlib/oauth2/__init__.py",
+          "bytes": 519,
+          "compressed_bytes": 191
+        },
+        {
+          "path": "authlib/oauth2/auth.py",
+          "bytes": 3587,
+          "compressed_bytes": 1040
+        },
+        {
+          "path": "authlib/oauth2/base.py",
+          "bytes": 2025,
+          "compressed_bytes": 862
+        },
+        {
+          "path": "authlib/oauth2/claims.py",
+          "bytes": 2320,
+          "compressed_bytes": 708
+        },
+        {
+          "path": "authlib/oauth2/client.py",
+          "bytes": 18938,
+          "compressed_bytes": 4101
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/__init__.py",
+          "bytes": 2953,
+          "compressed_bytes": 719
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/authenticate_client.py",
+          "bytes": 3985,
+          "compressed_bytes": 1026
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/authorization_server.py",
+          "bytes": 15929,
+          "compressed_bytes": 3774
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/endpoint.py",
+          "bytes": 2924,
+          "compressed_bytes": 977
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/errors.py",
+          "bytes": 7242,
+          "compressed_bytes": 2115
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/hooks.py",
+          "bytes": 1004,
+          "compressed_bytes": 376
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/models.py",
+          "bytes": 7773,
+          "compressed_bytes": 1731
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/parameters.py",
+          "bytes": 8564,
+          "compressed_bytes": 2424
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/requests.py",
+          "bytes": 5132,
+          "compressed_bytes": 1091
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/resource_protector.py",
+          "bytes": 5404,
+          "compressed_bytes": 1481
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/token_endpoint.py",
+          "bytes": 1083,
+          "compressed_bytes": 439
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/util.py",
+          "bytes": 1174,
+          "compressed_bytes": 466
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/wrappers.py",
+          "bytes": 1278,
+          "compressed_bytes": 456
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/grants/__init__.py",
+          "bytes": 1292,
+          "compressed_bytes": 515
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/grants/authorization_code.py",
+          "bytes": 16070,
+          "compressed_bytes": 4268
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/grants/base.py",
+          "bytes": 5283,
+          "compressed_bytes": 1658
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/grants/client_credentials.py",
+          "bytes": 4016,
+          "compressed_bytes": 1511
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/grants/implicit.py",
+          "bytes": 9343,
+          "compressed_bytes": 2972
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/grants/refresh_token.py",
+          "bytes": 6569,
+          "compressed_bytes": 1935
+        },
+        {
+          "path": "authlib/oauth2/rfc6749/grants/resource_owner_password_credentials.py",
+          "bytes": 5839,
+          "compressed_bytes": 2022
+        },
+        {
+          "path": "authlib/oauth2/rfc6750/__init__.py",
+          "bytes": 638,
+          "compressed_bytes": 295
+        },
+        {
+          "path": "authlib/oauth2/rfc6750/errors.py",
+          "bytes": 2858,
+          "compressed_bytes": 1023
+        },
+        {
+          "path": "authlib/oauth2/rfc6750/parameters.py",
+          "bytes": 1235,
+          "compressed_bytes": 444
+        },
+        {
+          "path": "authlib/oauth2/rfc6750/token.py",
+          "bytes": 4134,
+          "compressed_bytes": 1235
+        },
+        {
+          "path": "authlib/oauth2/rfc6750/validator.py",
+          "bytes": 1462,
+          "compressed_bytes": 505
+        },
+        {
+          "path": "authlib/oauth2/rfc7009/__init__.py",
+          "bytes": 333,
+          "compressed_bytes": 198
+        },
+        {
+          "path": "authlib/oauth2/rfc7009/parameters.py",
+          "bytes": 821,
+          "compressed_bytes": 397
+        },
+        {
+          "path": "authlib/oauth2/rfc7009/revocation.py",
+          "bytes": 4171,
+          "compressed_bytes": 1409
+        },
+        {
+          "path": "authlib/oauth2/rfc7521/__init__.py",
+          "bytes": 67,
+          "compressed_bytes": 53
+        },
+        {
+          "path": "authlib/oauth2/rfc7521/client.py",
+          "bytes": 2997,
+          "compressed_bytes": 987
+        },
+        {
+          "path": "authlib/oauth2/rfc7523/__init__.py",
+          "bytes": 857,
+          "compressed_bytes": 346
+        },
+        {
+          "path": "authlib/oauth2/rfc7523/assertion.py",
+          "bytes": 2344,
+          "compressed_bytes": 828
+        },
+        {
+          "path": "authlib/oauth2/rfc7523/auth.py",
+          "bytes": 3872,
+          "compressed_bytes": 921
+        },
+        {
+          "path": "authlib/oauth2/rfc7523/client.py",
+          "bytes": 6996,
+          "compressed_bytes": 2138
+        },
+        {
+          "path": "authlib/oauth2/rfc7523/jwt_bearer.py",
+          "bytes": 10231,
+          "compressed_bytes": 3070
+        },
+        {
+          "path": "authlib/oauth2/rfc7523/token.py",
+          "bytes": 3450,
+          "compressed_bytes": 1218
+        },
+        {
+          "path": "authlib/oauth2/rfc7523/validator.py",
+          "bytes": 1865,
+          "compressed_bytes": 656
+        },
+        {
+          "path": "authlib/oauth2/rfc7591/__init__.py",
+          "bytes": 694,
+          "compressed_bytes": 278
+        },
+        {
+          "path": "authlib/oauth2/rfc7591/claims.py",
+          "bytes": 11926,
+          "compressed_bytes": 3189
+        },
+        {
+          "path": "authlib/oauth2/rfc7591/endpoint.py",
+          "bytes": 7299,
+          "compressed_bytes": 1923
+        },
+        {
+          "path": "authlib/oauth2/rfc7591/errors.py",
+          "bytes": 1106,
+          "compressed_bytes": 382
+        },
+        {
+          "path": "authlib/oauth2/rfc7592/__init__.py",
+          "bytes": 295,
+          "compressed_bytes": 193
+        },
+        {
+          "path": "authlib/oauth2/rfc7592/endpoint.py",
+          "bytes": 8820,
+          "compressed_bytes": 2124
+        },
+        {
+          "path": "authlib/oauth2/rfc7636/__init__.py",
+          "bytes": 342,
+          "compressed_bytes": 206
+        },
+        {
+          "path": "authlib/oauth2/rfc7636/challenge.py",
+          "bytes": 6234,
+          "compressed_bytes": 1687
+        },
+        {
+          "path": "authlib/oauth2/rfc7662/__init__.py",
+          "bytes": 403,
+          "compressed_bytes": 206
+        },
+        {
+          "path": "authlib/oauth2/rfc7662/introspection.py",
+          "bytes": 5292,
+          "compressed_bytes": 1619
+        },
+        {
+          "path": "authlib/oauth2/rfc7662/models.py",
+          "bytes": 989,
+          "compressed_bytes": 383
+        },
+        {
+          "path": "authlib/oauth2/rfc7662/token_validator.py",
+          "bytes": 1378,
+          "compressed_bytes": 548
+        },
+        {
+          "path": "authlib/oauth2/rfc8414/__init__.py",
+          "bytes": 340,
+          "compressed_bytes": 198
+        },
+        {
+          "path": "authlib/oauth2/rfc8414/models.py",
+          "bytes": 19124,
+          "compressed_bytes": 3772
+        },
+        {
+          "path": "authlib/oauth2/rfc8414/well_known.py",
+          "bytes": 727,
+          "compressed_bytes": 360
+        },
+        {
+          "path": "authlib/oauth2/rfc8628/__init__.py",
+          "bytes": 754,
+          "compressed_bytes": 305
+        },
+        {
+          "path": "authlib/oauth2/rfc8628/device_code.py",
+          "bytes": 7900,
+          "compressed_bytes": 2362
+        },
+        {
+          "path": "authlib/oauth2/rfc8628/endpoint.py",
+          "bytes": 7128,
+          "compressed_bytes": 2049
+        },
+        {
+          "path": "authlib/oauth2/rfc8628/errors.py",
+          "bytes": 922,
+          "compressed_bytes": 454
+        },
+        {
+          "path": "authlib/oauth2/rfc8628/models.py",
+          "bytes": 839,
+          "compressed_bytes": 242
+        },
+        {
+          "path": "authlib/oauth2/rfc8693/__init__.py",
+          "bytes": 162,
+          "compressed_bytes": 127
+        },
+        {
+          "path": "authlib/oauth2/rfc9068/__init__.py",
+          "bytes": 332,
+          "compressed_bytes": 135
+        },
+        {
+          "path": "authlib/oauth2/rfc9068/claims.py",
+          "bytes": 1027,
+          "compressed_bytes": 398
+        },
+        {
+          "path": "authlib/oauth2/rfc9068/introspection.py",
+          "bytes": 4412,
+          "compressed_bytes": 1391
+        },
+        {
+          "path": "authlib/oauth2/rfc9068/revocation.py",
+          "bytes": 2650,
+          "compressed_bytes": 966
+        },
+        {
+          "path": "authlib/oauth2/rfc9068/token.py",
+          "bytes": 8597,
+          "compressed_bytes": 2697
+        },
+        {
+          "path": "authlib/oauth2/rfc9068/token_validator.py",
+          "bytes": 6961,
+          "compressed_bytes": 2222
+        },
+        {
+          "path": "authlib/oauth2/rfc9101/__init__.py",
+          "bytes": 267,
+          "compressed_bytes": 141
+        },
+        {
+          "path": "authlib/oauth2/rfc9101/authorization_server.py",
+          "bytes": 11785,
+          "compressed_bytes": 2528
+        },
+        {
+          "path": "authlib/oauth2/rfc9101/discovery.py",
+          "bytes": 859,
+          "compressed_bytes": 390
+        },
+        {
+          "path": "authlib/oauth2/rfc9101/errors.py",
+          "bytes": 999,
+          "compressed_bytes": 308
+        },
+        {
+          "path": "authlib/oauth2/rfc9101/registration.py",
+          "bytes": 1251,
+          "compressed_bytes": 413
+        },
+        {
+          "path": "authlib/oauth2/rfc9207/__init__.py",
+          "bytes": 152,
+          "compressed_bytes": 100
+        },
+        {
+          "path": "authlib/oauth2/rfc9207/discovery.py",
+          "bytes": 954,
+          "compressed_bytes": 388
+        },
+        {
+          "path": "authlib/oauth2/rfc9207/parameter.py",
+          "bytes": 1664,
+          "compressed_bytes": 595
+        },
+        {
+          "path": "authlib/oidc/__init__.py",
+          "bytes": 0,
+          "compressed_bytes": 2
+        },
+        {
+          "path": "authlib/oidc/core/__init__.py",
+          "bytes": 863,
+          "compressed_bytes": 305
+        },
+        {
+          "path": "authlib/oidc/core/claims.py",
+          "bytes": 10384,
+          "compressed_bytes": 3051
+        },
+        {
+          "path": "authlib/oidc/core/errors.py",
+          "bytes": 2892,
+          "compressed_bytes": 659
+        },
+        {
+          "path": "authlib/oidc/core/models.py",
+          "bytes": 1464,
+          "compressed_bytes": 564
+        },
+        {
+          "path": "authlib/oidc/core/userinfo.py",
+          "bytes": 4931,
+          "compressed_bytes": 1566
+        },
+        {
+          "path": "authlib/oidc/core/util.py",
+          "bytes": 502,
+          "compressed_bytes": 253
+        },
+        {
+          "path": "authlib/oidc/core/grants/__init__.py",
+          "bytes": 243,
+          "compressed_bytes": 109
+        },
+        {
+          "path": "authlib/oidc/core/grants/_legacy.py",
+          "bytes": 3806,
+          "compressed_bytes": 1175
+        },
+        {
+          "path": "authlib/oidc/core/grants/code.py",
+          "bytes": 5406,
+          "compressed_bytes": 1622
+        },
+        {
+          "path": "authlib/oidc/core/grants/hybrid.py",
+          "bytes": 3445,
+          "compressed_bytes": 1124
+        },
+        {
+          "path": "authlib/oidc/core/grants/implicit.py",
+          "bytes": 7013,
+          "compressed_bytes": 2100
+        },
+        {
+          "path": "authlib/oidc/core/grants/util.py",
+          "bytes": 4693,
+          "compressed_bytes": 1482
+        },
+        {
+          "path": "authlib/oidc/discovery/__init__.py",
+          "bytes": 305,
+          "compressed_bytes": 183
+        },
+        {
+          "path": "authlib/oidc/discovery/models.py",
+          "bytes": 12832,
+          "compressed_bytes": 2299
+        },
+        {
+          "path": "authlib/oidc/discovery/well_known.py",
+          "bytes": 574,
+          "compressed_bytes": 299
+        },
+        {
+          "path": "authlib/oidc/registration/__init__.py",
+          "bytes": 77,
+          "compressed_bytes": 58
+        },
+        {
+          "path": "authlib/oidc/registration/claims.py",
+          "bytes": 16320,
+          "compressed_bytes": 3895
+        },
+        {
+          "path": "authlib/oidc/rpinitiated/__init__.py",
+          "bytes": 484,
+          "compressed_bytes": 237
+        },
+        {
+          "path": "authlib/oidc/rpinitiated/discovery.py",
+          "bytes": 576,
+          "compressed_bytes": 319
+        },
+        {
+          "path": "authlib/oidc/rpinitiated/end_session.py",
+          "bytes": 11088,
+          "compressed_bytes": 3316
+        },
+        {
+          "path": "authlib/oidc/rpinitiated/registration.py",
+          "bytes": 2023,
+          "compressed_bytes": 797
+        },
+        {
+          "path": "authlib-1.8.0.dist-info/licenses/LICENSE",
+          "bytes": 1514,
+          "compressed_bytes": 793
+        },
+        {
+          "path": "authlib-1.8.0.dist-info/METADATA",
+          "bytes": 10394,
+          "compressed_bytes": 3116
+        },
+        {
+          "path": "authlib-1.8.0.dist-info/WHEEL",
+          "bytes": 109,
+          "compressed_bytes": 96
+        },
+        {
+          "path": "authlib-1.8.0.dist-info/top_level.txt",
+          "bytes": 8,
+          "compressed_bytes": 10
+        },
+        {
+          "path": "authlib-1.8.0.dist-info/RECORD",
+          "bytes": 20210,
+          "compressed_bytes": 9645
+        }
+      ],
+      "record_verified_files": 216,
+      "record_self_entry_unhashed": "authlib-1.8.0.dist-info/RECORD",
+      "metadata_license": "BSD-3-Clause",
+      "metadata_license_expression": null,
+      "license_files": [
+        {
+          "archive_path": "authlib-1.8.0.dist-info/licenses/LICENSE",
+          "declared_path": "LICENSE",
+          "content": {
+            "path": "output/research/staff-identity-distribution-2026-10-09/authlib/licenses/LICENSE",
+            "bytes": 1514,
+            "sha256": "8e1b48518de9c6cd00cb48c7fe5b8023fd90d5552ca12ebe7362a0df30ddbe45"
+          }
+        }
+      ],
+      "source_commit": "1a86748b31a2b1940b09cf627d1b70e03d85c077",
+      "source_license": {
+        "url": "https://raw.githubusercontent.com/authlib/authlib/1a86748b31a2b1940b09cf627d1b70e03d85c077/LICENSE",
+        "final_url": "https://raw.githubusercontent.com/authlib/authlib/1a86748b31a2b1940b09cf627d1b70e03d85c077/LICENSE",
+        "http_status": 200,
+        "observed_utc": "2026-10-08T22:31:04.930882+00:00",
+        "raw_bytes": 1514,
+        "raw_sha256": "8e1b48518de9c6cd00cb48c7fe5b8023fd90d5552ca12ebe7362a0df30ddbe45",
+        "snapshot": {
+          "path": "output/research/staff-identity-distribution-2026-10-09/authlib/source-LICENSE.gz",
+          "bytes": 811,
+          "sha256": "0081cca1b6dd9edbc6fa12ea622cd4e74097b3f28b79b4423135cea681c66ebe"
+        }
+      },
+      "source_license_matches_wheel": true,
+      "provenance_response": {
+        "url": "https://pypi.org/integrity/authlib/1.8.0/authlib-1.8.0-py2.py3-none-any.whl/provenance",
+        "final_url": "https://pypi.org/integrity/authlib/1.8.0/authlib-1.8.0-py2.py3-none-any.whl/provenance",
+        "http_status": 200,
+        "observed_utc": "2026-10-08T22:31:05.832499+00:00",
+        "raw_bytes": 9524,
+        "raw_sha256": "64e3b98833db7ab52e54bdf0a3cf3a375cf9712b6881a6153665e355c92b803f",
+        "snapshot": {
+          "path": "output/research/staff-identity-distribution-2026-10-09/authlib/provenance.json.gz",
+          "bytes": 5992,
+          "sha256": "e894854ff6efa47474b83f3e5a9ca9805298eb0598a27b40e467fdb44ea6147a"
+        }
+      },
+      "provenance_observation": {
+        "http_status": 200,
+        "cryptographically_verified": false,
+        "publishers": [
+          {
+            "environment": "pypi-release",
+            "kind": "GitHub",
+            "repository": "authlib/authlib",
+            "workflow": "pypi.yml"
+          }
+        ],
+        "unverified_statements": [
+          {
+            "predicate_type": "https://docs.pypi.org/attestations/publish/v1",
+            "subjects": [
+              {
+                "name": "authlib-1.8.0-py2.py3-none-any.whl",
+                "digest": {
+                  "sha256": "88aebbd9af6757e14e912d5dc007ae1dc1f3e27e3b2152ce7c552ee2c3b3c121"
+                }
+              }
+            ],
+            "exact_artifact_subject_match": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "joserfc",
+      "version": "1.7.5",
+      "filename": "joserfc-1.7.5-py3-none-any.whl",
+      "wheel": {
+        "url": "https://files.pythonhosted.org/packages/67/c5/82addfd375e5ee6520644e0553e4aadde92d668c4fc99cc716d337fe7bb3/joserfc-1.7.5-py3-none-any.whl",
+        "final_url": "https://files.pythonhosted.org/packages/67/c5/82addfd375e5ee6520644e0553e4aadde92d668c4fc99cc716d337fe7bb3/joserfc-1.7.5-py3-none-any.whl",
+        "http_status": 200,
+        "observed_utc": "2026-10-08T22:31:06.109631+00:00",
+        "raw_bytes": 71269,
+        "raw_sha256": "add2c2c84e8373b084d526a8b53daba5d7a513a118cd2dcd9fc9f979d0922159",
+        "snapshot": {
+          "path": "output/research/staff-identity-distribution-2026-10-09/joserfc/wheel.gz",
+          "bytes": 66176,
+          "sha256": "b0ecc8759c93bf4c9203d528a8c82ed7e1ae903fb3ca6838a02dfc52d64ee152"
+        }
+      },
+      "archive_entries": [
+        {
+          "path": "joserfc/__init__.py",
+          "bytes": 144,
+          "compressed_bytes": 122
+        },
+        {
+          "path": "joserfc/_keys.py",
+          "bytes": 6773,
+          "compressed_bytes": 2055
+        },
+        {
+          "path": "joserfc/errors.py",
+          "bytes": 6014,
+          "compressed_bytes": 1433
+        },
+        {
+          "path": "joserfc/jwa.py",
+          "bytes": 2287,
+          "compressed_bytes": 642
+        },
+        {
+          "path": "joserfc/jwe.py",
+          "bytes": 10125,
+          "compressed_bytes": 2545
+        },
+        {
+          "path": "joserfc/jwk.py",
+          "bytes": 6432,
+          "compressed_bytes": 1822
+        },
+        {
+          "path": "joserfc/jws.py",
+          "bytes": 11048,
+          "compressed_bytes": 2667
+        },
+        {
+          "path": "joserfc/jwt.py",
+          "bytes": 4120,
+          "compressed_bytes": 1185
+        },
+        {
+          "path": "joserfc/py.typed",
+          "bytes": 0,
+          "compressed_bytes": 2
+        },
+        {
+          "path": "joserfc/registry.py",
+          "bytes": 7506,
+          "compressed_bytes": 1958
+        },
+        {
+          "path": "joserfc/util.py",
+          "bytes": 1885,
+          "compressed_bytes": 740
+        },
+        {
+          "path": "joserfc/_rfc7515/__init__.py",
+          "bytes": 0,
+          "compressed_bytes": 2
+        },
+        {
+          "path": "joserfc/_rfc7515/compact.py",
+          "bytes": 1534,
+          "compressed_bytes": 577
+        },
+        {
+          "path": "joserfc/_rfc7515/json.py",
+          "bytes": 5230,
+          "compressed_bytes": 1291
+        },
+        {
+          "path": "joserfc/_rfc7515/model.py",
+          "bytes": 4227,
+          "compressed_bytes": 1247
+        },
+        {
+          "path": "joserfc/_rfc7515/registry.py",
+          "bytes": 6278,
+          "compressed_bytes": 1767
+        },
+        {
+          "path": "joserfc/_rfc7515/types.py",
+          "bytes": 757,
+          "compressed_bytes": 258
+        },
+        {
+          "path": "joserfc/_rfc7516/__init__.py",
+          "bytes": 0,
+          "compressed_bytes": 2
+        },
+        {
+          "path": "joserfc/_rfc7516/compact.py",
+          "bytes": 2263,
+          "compressed_bytes": 707
+        },
+        {
+          "path": "joserfc/_rfc7516/json.py",
+          "bytes": 5033,
+          "compressed_bytes": 1065
+        },
+        {
+          "path": "joserfc/_rfc7516/message.py",
+          "bytes": 10539,
+          "compressed_bytes": 2661
+        },
+        {
+          "path": "joserfc/_rfc7516/models.py",
+          "bytes": 10867,
+          "compressed_bytes": 2412
+        },
+        {
+          "path": "joserfc/_rfc7516/registry.py",
+          "bytes": 6759,
+          "compressed_bytes": 1721
+        },
+        {
+          "path": "joserfc/_rfc7516/types.py",
+          "bytes": 667,
+          "compressed_bytes": 227
+        },
+        {
+          "path": "joserfc/_rfc7517/__init__.py",
+          "bytes": 0,
+          "compressed_bytes": 2
+        },
+        {
+          "path": "joserfc/_rfc7517/models.py",
+          "bytes": 12155,
+          "compressed_bytes": 3039
+        },
+        {
+          "path": "joserfc/_rfc7517/pem.py",
+          "bytes": 4684,
+          "compressed_bytes": 1274
+        },
+        {
+          "path": "joserfc/_rfc7517/types.py",
+          "bytes": 504,
+          "compressed_bytes": 246
+        },
+        {
+          "path": "joserfc/_rfc7518/__init__.py",
+          "bytes": 0,
+          "compressed_bytes": 2
+        },
+        {
+          "path": "joserfc/_rfc7518/derive_key.py",
+          "bytes": 1401,
+          "compressed_bytes": 568
+        },
+        {
+          "path": "joserfc/_rfc7518/ec_key.py",
+          "bytes": 9138,
+          "compressed_bytes": 2373
+        },
+        {
+          "path": "joserfc/_rfc7518/jwe_algs.py",
+          "bytes": 13038,
+          "compressed_bytes": 3088
+        },
+        {
+          "path": "joserfc/_rfc7518/jwe_encs.py",
+          "bytes": 4108,
+          "compressed_bytes": 1261
+        },
+        {
+          "path": "joserfc/_rfc7518/jwe_zips.py",
+          "bytes": 1048,
+          "compressed_bytes": 495
+        },
+        {
+          "path": "joserfc/_rfc7518/jws_algs.py",
+          "bytes": 7040,
+          "compressed_bytes": 1882
+        },
+        {
+          "path": "joserfc/_rfc7518/oct_key.py",
+          "bytes": 3494,
+          "compressed_bytes": 1300
+        },
+        {
+          "path": "joserfc/_rfc7518/rsa_key.py",
+          "bytes": 6943,
+          "compressed_bytes": 1846
+        },
+        {
+          "path": "joserfc/_rfc7518/util.py",
+          "bytes": 298,
+          "compressed_bytes": 180
+        },
+        {
+          "path": "joserfc/_rfc7519/__init__.py",
+          "bytes": 0,
+          "compressed_bytes": 2
+        },
+        {
+          "path": "joserfc/_rfc7519/claims.py",
+          "bytes": 8940,
+          "compressed_bytes": 2530
+        },
+        {
+          "path": "joserfc/_rfc7519/security.py",
+          "bytes": 1234,
+          "compressed_bytes": 593
+        },
+        {
+          "path": "joserfc/_rfc7638/__init__.py",
+          "bytes": 938,
+          "compressed_bytes": 534
+        },
+        {
+          "path": "joserfc/_rfc7797/__init__.py",
+          "bytes": 0,
+          "compressed_bytes": 2
+        },
+        {
+          "path": "joserfc/_rfc7797/compact.py",
+          "bytes": 2899,
+          "compressed_bytes": 1031
+        },
+        {
+          "path": "joserfc/_rfc7797/json.py",
+          "bytes": 1834,
+          "compressed_bytes": 616
+        },
+        {
+          "path": "joserfc/_rfc7797/util.py",
+          "bytes": 428,
+          "compressed_bytes": 240
+        },
+        {
+          "path": "joserfc/_rfc8037/__init__.py",
+          "bytes": 0,
+          "compressed_bytes": 2
+        },
+        {
+          "path": "joserfc/_rfc8037/jws_eddsa.py",
+          "bytes": 1350,
+          "compressed_bytes": 521
+        },
+        {
+          "path": "joserfc/_rfc8037/okp_key.py",
+          "bytes": 11362,
+          "compressed_bytes": 2732
+        },
+        {
+          "path": "joserfc/_rfc8812/__init__.py",
+          "bytes": 389,
+          "compressed_bytes": 247
+        },
+        {
+          "path": "joserfc/_rfc9278/__init__.py",
+          "bytes": 974,
+          "compressed_bytes": 478
+        },
+        {
+          "path": "joserfc/_rfc9864/__init__.py",
+          "bytes": 120,
+          "compressed_bytes": 86
+        },
+        {
+          "path": "joserfc/_rfc9864/jws_eddsa.py",
+          "bytes": 1451,
+          "compressed_bytes": 598
+        },
+        {
+          "path": "joserfc/drafts/__init__.py",
+          "bytes": 0,
+          "compressed_bytes": 2
+        },
+        {
+          "path": "joserfc/drafts/jwe_chacha20.py",
+          "bytes": 1440,
+          "compressed_bytes": 592
+        },
+        {
+          "path": "joserfc/drafts/jwe_ecdh_1pu.py",
+          "bytes": 5049,
+          "compressed_bytes": 1367
+        },
+        {
+          "path": "joserfc-1.7.5.dist-info/licenses/LICENSE",
+          "bytes": 1501,
+          "compressed_bytes": 786
+        },
+        {
+          "path": "joserfc-1.7.5.dist-info/METADATA",
+          "bytes": 3134,
+          "compressed_bytes": 1365
+        },
+        {
+          "path": "joserfc-1.7.5.dist-info/WHEEL",
+          "bytes": 91,
+          "compressed_bytes": 92
+        },
+        {
+          "path": "joserfc-1.7.5.dist-info/top_level.txt",
+          "bytes": 8,
+          "compressed_bytes": 10
+        },
+        {
+          "path": "joserfc-1.7.5.dist-info/RECORD",
+          "bytes": 4942,
+          "compressed_bytes": 2413
+        }
+      ],
+      "record_verified_files": 60,
+      "record_self_entry_unhashed": "joserfc-1.7.5.dist-info/RECORD",
+      "metadata_license": "BSD-3-Clause",
+      "metadata_license_expression": null,
+      "license_files": [
+        {
+          "archive_path": "joserfc-1.7.5.dist-info/licenses/LICENSE",
+          "declared_path": "LICENSE",
+          "content": {
+            "path": "output/research/staff-identity-distribution-2026-10-09/joserfc/licenses/LICENSE",
+            "bytes": 1501,
+            "sha256": "19ee1fafcc9ec4217fc32b8a651d820538c789cf4041cb4e46b4b176a5f2a9c8"
+          }
+        }
+      ],
+      "source_commit": "357c319119773c021bc8da433bdf31e42f77974b",
+      "source_license": {
+        "url": "https://raw.githubusercontent.com/authlib/joserfc/357c319119773c021bc8da433bdf31e42f77974b/LICENSE",
+        "final_url": "https://raw.githubusercontent.com/authlib/joserfc/357c319119773c021bc8da433bdf31e42f77974b/LICENSE",
+        "http_status": 200,
+        "observed_utc": "2026-10-08T22:31:06.677738+00:00",
+        "raw_bytes": 1501,
+        "raw_sha256": "19ee1fafcc9ec4217fc32b8a651d820538c789cf4041cb4e46b4b176a5f2a9c8",
+        "snapshot": {
+          "path": "output/research/staff-identity-distribution-2026-10-09/joserfc/source-LICENSE.gz",
+          "bytes": 804,
+          "sha256": "862a5d061bb7c0bb4b730a06981507af15200357ca5c343aaf39c2bc67971c96"
+        }
+      },
+      "source_license_matches_wheel": true,
+      "provenance_response": {
+        "url": "https://pypi.org/integrity/joserfc/1.7.5/joserfc-1.7.5-py3-none-any.whl/provenance",
+        "final_url": "https://pypi.org/integrity/joserfc/1.7.5/joserfc-1.7.5-py3-none-any.whl/provenance",
+        "http_status": 200,
+        "observed_utc": "2026-10-08T22:31:07.454215+00:00",
+        "raw_bytes": 9778,
+        "raw_sha256": "a5e57596fa6e2914ba118ebd8a5bea9d261d7278e8408826d4b759b0827c08f5",
+        "snapshot": {
+          "path": "output/research/staff-identity-distribution-2026-10-09/joserfc/provenance.json.gz",
+          "bytes": 6397,
+          "sha256": "a3d531c607f3b4669583b2e297722cac1d8f6b93e283fe5fdc5d3b5b884673b2"
+        }
+      },
+      "provenance_observation": {
+        "http_status": 200,
+        "cryptographically_verified": false,
+        "publishers": [
+          {
+            "environment": "pypi-release",
+            "kind": "GitHub",
+            "repository": "authlib/joserfc",
+            "workflow": "pypi.yml"
+          }
+        ],
+        "unverified_statements": [
+          {
+            "predicate_type": "https://docs.pypi.org/attestations/publish/v1",
+            "subjects": [
+              {
+                "name": "joserfc-1.7.5-py3-none-any.whl",
+                "digest": {
+                  "sha256": "add2c2c84e8373b084d526a8b53daba5d7a513a118cd2dcd9fc9f979d0922159"
+                }
+              }
+            ],
+            "exact_artifact_subject_match": true
+          }
+        ]
+      }
+    }
+  ],
+  "protected_inputs_unchanged": true,
+  "limits": [
+    "RECORD is artifact self-consistency, not publisher authenticity or reproducible build provenance.",
+    "Attestation response and decoded statement are observations only; signatures, certificate identity and transparency proofs not verified.",
+    "Source license equality does not prove the full wheel was built from that source commit.",
+    "Two license files only; no complete dependency/embedded-code rights clearance, advisories, runtime qualification or production selection.",
+    "Pending 43-package native trial is untouched and not executed. No application, environment, lock, model, account, Figma or Git changes."
+  ]
+}

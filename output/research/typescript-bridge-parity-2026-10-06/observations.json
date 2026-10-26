@@ -1,0 +1,371 @@
+{
+  "checked_at_utc": "2026-10-05T21:12:55.691127+00:00",
+  "environment": "allowlisted OS/runtime variables only; no provider/npm auth variables",
+  "commands": [
+    {
+      "name": "version-api6",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate",
+      "exit_code": 0,
+      "stdout": "version-api6.stdout.txt",
+      "stderr": "version-api6.stderr.txt"
+    },
+    {
+      "name": "version-native7",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate",
+      "exit_code": 0,
+      "stdout": "version-native7.stdout.txt",
+      "stderr": "version-native7.stderr.txt"
+    },
+    {
+      "name": "version-shim-tsc",
+      "command": [
+        "cmd.exe",
+        "/d",
+        "/c",
+        "tsc.cmd",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\.bin",
+      "exit_code": 0,
+      "stdout": "version-shim-tsc.stdout.txt",
+      "stderr": "version-shim-tsc.stderr.txt"
+    },
+    {
+      "name": "version-shim-tsc6",
+      "command": [
+        "cmd.exe",
+        "/d",
+        "/c",
+        "tsc6.cmd",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\.bin",
+      "exit_code": 0,
+      "stdout": "version-shim-tsc6.stdout.txt",
+      "stderr": "version-shim-tsc6.stderr.txt"
+    },
+    {
+      "name": "api-probe",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-bridge-parity-2026-10-06\\api-probe.cjs",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate",
+      "exit_code": 0,
+      "stdout": "api-probe.stdout.txt",
+      "stderr": "api-probe.stderr.txt"
+    },
+    {
+      "name": "valid-union-api6",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-bridge-parity-2026-10-06\\valid-union\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate",
+      "exit_code": 0,
+      "stdout": "valid-union-api6.stdout.txt",
+      "stderr": "valid-union-api6.stderr.txt"
+    },
+    {
+      "name": "valid-union-native7",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-bridge-parity-2026-10-06\\valid-union\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate",
+      "exit_code": 0,
+      "stdout": "valid-union-native7.stdout.txt",
+      "stderr": "valid-union-native7.stderr.txt"
+    },
+    {
+      "name": "invalid-assignment-api6",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-bridge-parity-2026-10-06\\invalid-assignment\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate",
+      "exit_code": 2,
+      "stdout": "invalid-assignment-api6.stdout.txt",
+      "stderr": "invalid-assignment-api6.stderr.txt"
+    },
+    {
+      "name": "invalid-assignment-native7",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-bridge-parity-2026-10-06\\invalid-assignment\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate",
+      "exit_code": 1,
+      "stdout": "invalid-assignment-native7.stdout.txt",
+      "stderr": "invalid-assignment-native7.stderr.txt"
+    },
+    {
+      "name": "invalid-readonly-api6",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-bridge-parity-2026-10-06\\invalid-readonly\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate",
+      "exit_code": 2,
+      "stdout": "invalid-readonly-api6.stdout.txt",
+      "stderr": "invalid-readonly-api6.stderr.txt"
+    },
+    {
+      "name": "invalid-readonly-native7",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-bridge-parity-2026-10-06\\invalid-readonly\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate",
+      "exit_code": 1,
+      "stdout": "invalid-readonly-native7.stdout.txt",
+      "stderr": "invalid-readonly-native7.stderr.txt"
+    },
+    {
+      "name": "invalid-unchecked-index-api6",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-bridge-parity-2026-10-06\\invalid-unchecked-index\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate",
+      "exit_code": 2,
+      "stdout": "invalid-unchecked-index-api6.stdout.txt",
+      "stderr": "invalid-unchecked-index-api6.stderr.txt"
+    },
+    {
+      "name": "invalid-unchecked-index-native7",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-bridge-parity-2026-10-06\\invalid-unchecked-index\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate",
+      "exit_code": 1,
+      "stdout": "invalid-unchecked-index-native7.stdout.txt",
+      "stderr": "invalid-unchecked-index-native7.stderr.txt"
+    },
+    {
+      "name": "invalid-module-api6",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-bridge-parity-2026-10-06\\invalid-module\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate",
+      "exit_code": 2,
+      "stdout": "invalid-module-api6.stdout.txt",
+      "stderr": "invalid-module-api6.stderr.txt"
+    },
+    {
+      "name": "invalid-module-native7",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\typescript-bridge-parity-2026-10-06\\invalid-module\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate",
+      "exit_code": 1,
+      "stdout": "invalid-module-native7.stdout.txt",
+      "stderr": "invalid-module-native7.stderr.txt"
+    }
+  ],
+  "lock_before": "86dd64aae77da6ab9a0d0f7a88338494c15f68620838ffd40140f254b1e9ca2d",
+  "lock_after": "86dd64aae77da6ab9a0d0f7a88338494c15f68620838ffd40140f254b1e9ca2d",
+  "api_version": "6.0.3",
+  "observations": [
+    {
+      "name": "valid-union",
+      "expected": {
+        "name": "valid-union",
+        "expected_semantic_codes": [],
+        "expected_cli_exit": 0
+      },
+      "cli": {
+        "api6": {
+          "exit_code": 0,
+          "codes": []
+        },
+        "native7": {
+          "exit_code": 0,
+          "codes": []
+        }
+      },
+      "api_compiler_codes": [],
+      "api_language_service_codes": [],
+      "oracle_match": true
+    },
+    {
+      "name": "invalid-assignment",
+      "expected": {
+        "name": "invalid-assignment",
+        "expected_semantic_codes": [
+          2322
+        ],
+        "expected_cli_exit": 2
+      },
+      "cli": {
+        "api6": {
+          "exit_code": 2,
+          "codes": [
+            2322
+          ]
+        },
+        "native7": {
+          "exit_code": 1,
+          "codes": [
+            2322
+          ]
+        }
+      },
+      "api_compiler_codes": [
+        2322
+      ],
+      "api_language_service_codes": [
+        2322
+      ],
+      "oracle_match": false
+    },
+    {
+      "name": "invalid-readonly",
+      "expected": {
+        "name": "invalid-readonly",
+        "expected_semantic_codes": [
+          2540
+        ],
+        "expected_cli_exit": 2
+      },
+      "cli": {
+        "api6": {
+          "exit_code": 2,
+          "codes": [
+            2540
+          ]
+        },
+        "native7": {
+          "exit_code": 1,
+          "codes": [
+            2540
+          ]
+        }
+      },
+      "api_compiler_codes": [
+        2540
+      ],
+      "api_language_service_codes": [
+        2540
+      ],
+      "oracle_match": false
+    },
+    {
+      "name": "invalid-unchecked-index",
+      "expected": {
+        "name": "invalid-unchecked-index",
+        "expected_semantic_codes": [
+          2532
+        ],
+        "expected_cli_exit": 2
+      },
+      "cli": {
+        "api6": {
+          "exit_code": 2,
+          "codes": [
+            2532
+          ]
+        },
+        "native7": {
+          "exit_code": 1,
+          "codes": [
+            2532
+          ]
+        }
+      },
+      "api_compiler_codes": [
+        2532
+      ],
+      "api_language_service_codes": [
+        2532
+      ],
+      "oracle_match": false
+    },
+    {
+      "name": "invalid-module",
+      "expected": {
+        "name": "invalid-module",
+        "expected_semantic_codes": [
+          2307
+        ],
+        "expected_cli_exit": 2
+      },
+      "cli": {
+        "api6": {
+          "exit_code": 2,
+          "codes": [
+            2307
+          ]
+        },
+        "native7": {
+          "exit_code": 1,
+          "codes": [
+            2307
+          ]
+        }
+      },
+      "api_compiler_codes": [
+        2307
+      ],
+      "api_language_service_codes": [
+        2307
+      ],
+      "oracle_match": false
+    }
+  ],
+  "limits": "finite plain TypeScript subset; no React types, native LSP/editor UI, Vite/build or complete graph parity"
+}

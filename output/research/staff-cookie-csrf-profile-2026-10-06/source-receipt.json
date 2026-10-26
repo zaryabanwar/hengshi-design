@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-06",
+  "purpose": "Staff cookie and CSRF mechanism recommendation only; no implementation or selected package",
+  "context7": [
+    {
+      "libraryId": "/websites/fastapi_tiangolo",
+      "topic": "Cookie transport helpers do not validate sessions or enforce CSRF"
+    },
+    {
+      "libraryId": "/kludex/starlette",
+      "topic": "Signed readable cookie SessionMiddleware; third-party CSRF listing; no selected version"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://fastapi.tiangolo.com/advanced/response-cookies/",
+      "verified": "web and Context7"
+    },
+    {
+      "url": "https://github.com/kludex/starlette/blob/main/docs/middleware.md",
+      "verified": "Context7 excerpts only; direct web fetch failed; no tagged release inference"
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
+      "verified": "web"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie",
+      "verified": "web"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8725.html",
+      "verified": "web"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow",
+      "verified": "web callback modes reviewed"
+    }
+  ],
+  "observations": {
+    "prototypePaths": [
+      "apps/api/app/auth/routes.py:29",
+      "apps/api/app/auth/deps.py:9",
+      "apps/web/src/lib/api.ts:63"
+    ],
+    "prototypeNotChanged": true,
+    "proposedCookie": "__Host-hsd_staff; Secure; HttpOnly; SameSite=Lax; Path=/; no Domain",
+    "proposedCSRF": "session synchronizer proof; X-HSD-CSRF; 32 random bytes canonical43 ASCII base64url",
+    "issuerKeysRotationAndActualRoutesHeld": true
+  },
+  "limitations": "Research and preserved-source checks only. No application, account, host/proxy, credentials, package/version, API schema, timing or provider selection; no live security evidence."
+}

@@ -1,5 +1,26 @@
 # States, Errors, and Recovery
 
+## Current World scope amendment — v1
+
+[D-064](../../DECISIONS.md#d-064--founder-selects-free-movement-and-spatial-streaming-without-wasd)
+adds mouse/touch free steering and walking alongside destination navigation.
+The preserved ACT-08 row below describes the retained destination action; its
+directed wording does not exclude the later selected free-movement scope.
+WASD is not selected. The accepted matrix rows and stream-selection rules are
+unchanged by this reference amendment.
+
+Read movement interruption and equivalent access in the
+[World definition](../phase-1-3d/WORLD_EXPERIENCE.md#movement-and-access), safe
+crossing, reversal and renderer recovery in the
+[loading contract](../phase-1-3d/CAMPUS_ASSET_BUILD_SPEC.md#loading-and-residency-contract),
+and optional audio interruption/recovery in the
+[sound lifecycle](../phase-1-3d/WORLD_EXPERIENCE.md#audio-lifecycle-and-ownership-proposal).
+Those controlling refinements distinguish unready geometry from a closed service
+and preserve semantic recovery; failures cannot silently change the delivery
+stream. They remain proposals where identified, with exact profiles, designs and
+runtime proof held. No duplicate scheduler/audio state machine, approved gesture,
+application behavior or extra UX revision follows from these references.
+
 ## State language contract
 
 **[APPROVED]** Success is stated only after the authoritative predicate passes.
@@ -54,7 +75,7 @@ Every named visitor/staff action has success, error, and recovery here.
 | ACT-37 Founder decision | Approved/rejected/requested changes on current candidate | unauthorized/stale/not specialist-passed | deny; refresh; return to review queue; do not infer approval |
 | ACT-38 Render/index candidate | Valid immutable candidate checksum | render/index/schema/sitemap/AI/3D parity failure | previous release active; correct through workflow; rerun full validation |
 | ACT-39 Activate release | One atomic active checksum | partial/timeout/mismatch | no activation or rollback to prior active; reconcile; never mix release surfaces |
-| ACT-40 Clear preferences/session | Non-sensitive preferences cleared/session ended | storage unavailable | session state cleared as far as possible; explain local limitation; no account claim |
+| ACT-40 Clear preferences/session | Before preference clearing: visible accessible warning that saved delivery-stream choice is removed; Confirm reset or Cancel; no deletion before confirmation; Cancel preserves saved choice and current session; confirmed reset explains outcome and offers stream reselection; current in-force stream does not change or reload; staff sign-out remains separate | storage unavailable or clearing cannot be verified | Disclose storage limitation and do not claim persistent clearing without verification; /privacy disclosure link; no account claim; exact reset wording follows the accepted D-057 bundle; final legal content held |
 | ACT-41 Declare staff available | Durable approved-scope availability on | pending/role/eligibility/Redis/Teams issue fails unavailable; no scope empty | status-check; retry; no presence-derived availability |
 | ACT-42 Withdraw staff availability | Durable availability off | pending/error/already-off | fail safe to unavailable; idempotent status-check/retry; queued work remains visible |
 | ACT-43 Triage handoff queue | Current authorized request detail opened | queue loading/unavailable/stale; truthful empty | refresh authoritative request; reauthenticate; no chat data in analytics |

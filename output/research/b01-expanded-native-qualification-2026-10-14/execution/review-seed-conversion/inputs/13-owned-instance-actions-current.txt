@@ -1,0 +1,366 @@
+- application
+- status: Screenreader support for the board is currently disabled. To enable it via Accessibility settings, press Ctrl+K, type Accessibility Settings, and press Enter. To see available keyboard shortcuts, enter Ctrl+Shift+Question mark .
+- status
+- region:
+  - toolbar:
+    - button:
+    - separator
+    - button [expanded]:
+      - generic: File
+    - button:
+      - generic: Agents
+    - button:
+      - generic: Assets
+    - button:
+      - generic: Tools
+    - separator
+    - button:
+      - generic: Variables
+  - button: Hengshi Design v1 — UI References
+  - generic: File name
+  - button:
+  - button:
+  - link:
+    - /url: https://www.figma.com/files/team/1472694121837770005/project/666072293
+    - text: hengshi-design
+  - button:
+    - generic: Free
+  - heading [level=2]:
+    - button [expanded]:
+      - generic: Pages
+    - button:
+    - button:
+  - grid:
+    - row:
+      - gridcell:
+        - button:
+          - generic: Page 1
+  - slider
+  - heading [level=2]:
+    - button [expanded]:
+      - generic: Layers
+    - button:
+  - treegrid:
+    - row [expanded]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 / Four-stream three-host qualification / v1
+    - row [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 native qualification / host state / v1
+    - row [expanded]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 / Native host-variant qualification / v1
+    - row [level=1]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 native qualification / preview / v1
+    - row [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 native qualification / host state / v1
+    - row [level=2]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: HIGH, HIGH, OPEN
+    - row [expanded] [level=2]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: HIGH, HIGH, CLOSED
+    - row [level=3]:
+      - gridcell:
+      - gridcell:
+        - generic: Context summary / fixed Services and design fixture
+    - row [level=3]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: Underlying Services fixture (unwired while modal open)
+    - row [level=3]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: Directory action
+    - row [level=3]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: PRIM-001 / Delivery stream control / B01 v1
+      - gridcell:
+        - checkbox [checked]
+        - generic: Toggle layer visibility
+    - row [level=2]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: MEDIUM, HIGH, CLOSED
+    - row [level=2]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: MEDIUM, HIGH, OPEN
+    - row [level=2]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: MEDIUM, MEDIUM, OPEN
+    - row [level=2]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: MEDIUM, MEDIUM, CLOSED
+    - row [level=2]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: HIGH, MEDIUM, CLOSED
+    - row [level=2]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: HIGH, MEDIUM, OPEN
+    - row:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 / Mode references / v1
+    - row:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 / Responsive viewport references / v1
+    - row:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 / Shared recovery specimens / v1
+    - row:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: PRIM-001 / Capability refusal references / B01 v1
+    - row:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 / Capability refusal host references / v1
+    - row:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 / Shared recovery stream references / v1
+    - row:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 / Directory search states / v1
+    - row:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 / Directory reusable sources / v1
+    - row:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 / Navigation stream states / v1
+    - row:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: PRIM-001 / Delivery stream control / B01 v1
+    - row:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 DRAFT / TPL-SYSTEM-RECOVERY / 390
+    - row:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 DRAFT / TPL-SYSTEM-RECOVERY / 1440
+    - row:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 DRAFT / TPL-DIRECTORY-SEARCH / 390
+    - row:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 DRAFT / TPL-DIRECTORY-SEARCH / 1440
+    - row:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 DRAFT / TPL-GLOBAL-NAVIGATION / 390
+    - row:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 DRAFT / TPL-GLOBAL-NAVIGATION / 1440
+    - row:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 CONSTRUCTION / file-local PRIM sources
+  - slider
+- button:
+- button:
+- button:
+- button: Share
+- tablist:
+  - tab [selected]:
+    - generic: Design
+    - generic: Design
+  - tab:
+    - generic: Prototype
+    - generic: Prototype
+- button:
+  - text: 2%
+- button:
+  - generic: v1
+- button [expanded]:
+- button:
+  - generic: From this file
+- generic: Active
+- generic: Active
+- combobox:
+  - generic: HIGH
+- button:
+- generic: Pending
+- generic: Pending
+- combobox:
+  - generic: HIGH
+- button:
+- generic: Directory
+- generic: Directory
+- combobox:
+  - generic: OPEN
+- button:
+- heading [level=2]: Position
+- generic: Alignment
+- button:
+- button:
+- button:
+- button:
+- button:
+- button:
+- button:
+- generic: Position
+- generic: X
+- spinbutton: "1160"
+- generic: "Y"
+- spinbutton: "1230"
+- generic: Rotation
+- spinbutton: 0°
+- button:
+- button:
+- button:
+- heading [level=2]: Layout
+- generic: Dimensions
+- generic: W
+- textbox: "320"
+- generic: H
+- textbox: "1150"
+- checkbox
+- generic: Lock aspect ratio
+- checkbox
+- generic: Clip content
+- heading [level=2]: Appearance
+- checkbox
+- generic: Hide
+- button:
+- generic: Opacity
+- textbox: 100%
+- generic: Corner radius
+- textbox: "0"
+- button:
+- button:
+  - heading [level=2]: Fill
+- button:
+- button:
+- button:
+  - heading [level=2]: Stroke
+- button:
+- button:
+- button:
+  - heading [level=2]: Effects
+- button:
+- button:
+- button:
+  - heading [level=2]: Selection colors
+  - generic: "+1"
+- button:
+  - heading [level=2]: Layout guide
+- button:
+- button:
+- button:
+  - generic: Export
+- button:
+- slider
+- region:
+  - toolbar:
+    - button [pressed]:
+    - button:
+    - button:
+    - button:
+    - button:
+    - button:
+    - button:
+    - button:
+    - button:
+    - button:
+    - button:
+    - button:
+    - radiogroup:
+      - generic: Toolbelt Mode
+      - radio
+      - generic: Draw
+      - radio [checked]
+      - generic: Design
+      - radio
+      - generic: Motion
+      - radio
+      - generic: Dev Mode
+- region:
+  - toolbar:
+    - button:
+- alert
+- alert
+- menu "More actions":
+  - menuitem "Toggle ready for dev status" [active]:
+    - text: Toggle ready for dev status
+  - menuitem "Create component":
+    - text: Create component
+    - generic: Ctrl+Alt+K
+  - menuitem "Detach instance":
+    - text: Detach instance
+    - generic: Ctrl+Alt+B
+  - menuitem "Use as mask":
+    - text: Use as mask
+    - generic: Ctrl+Alt+M
+  - menuitem "Union":
+    - text: Union
+    - generic: Alt+Shift+U
+  - menuitem "Subtract":
+    - text: Subtract
+    - generic: Alt+Shift+S
+  - menuitem "Intersect":
+    - text: Intersect
+    - generic: Alt+Shift+I
+  - menuitem "Exclude":
+    - text: Exclude
+    - generic: Alt+Shift+E
+  - menuitem "Flatten":
+    - text: Flatten
+    - generic: Alt+Shift+F

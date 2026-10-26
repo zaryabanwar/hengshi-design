@@ -1,0 +1,122 @@
+- navigation "Sidebar":
+  - button "Account dropdown for Zaryab Anwar":
+    - generic: Zaryab Anwar
+  - status
+  - button "Notifications":
+  - combobox "Search"
+  - list:
+    - button "Recents":
+      - generic: Recents
+    - button "Community"
+    - generic: Community
+    - button "Open Community in new tab":
+  - 'button "Plan: info''s team"':
+    - generic: info's team
+  - button "Change plan. info's team currently on Free plan":
+    - generic: Free
+  - list:
+    - button "Drafts"
+    - generic: Drafts
+    - button "New file":
+    - button "All folders":
+      - generic: All folders
+    - button "Resources":
+      - generic: Resources
+    - button "Trash":
+      - generic: Trash
+  - button "See what’s included Your plan and usage":
+    - generic: See what’s included
+    - generic: Your plan and usage
+  - button "Starred" [expanded]:
+    - generic: Starred
+  - list:
+    - button "hengshi-design":
+      - generic: hengshi-design
+    - button "Move row down" [disabled]:
+    - button "Move row up" [disabled]:
+  - button "Upgrade":
+    - generic: Upgrade
+- heading "Recents" [level=1]
+- button "New Design file":
+  - generic: Design
+- button "New FigJam file":
+  - generic: FigJam
+- button "New Slides file":
+  - generic: Slides
+- button "New Make file":
+  - generic: Make
+- button "More":
+  - generic: More
+- tablist:
+  - tab "Recently viewed" [selected]:
+    - generic: Recently viewed
+    - generic: Recently viewed
+  - tab "Shared files":
+    - generic: Shared files
+    - generic: Shared files
+  - tab "Shared folders":
+    - generic: Shared folders
+    - generic: Shared folders
+- combobox "All organizations"
+- generic: All organizations
+- combobox "All files"
+- generic: All files
+- radiogroup "View mode":
+  - generic: View mode
+  - radio "Show as grid" [checked]
+  - generic: Show as grid
+  - radio "Show as list"
+  - generic: Show as list
+- main:
+  - tabpanel "Recently viewed":
+    - list:
+      - group "Hengshi Design v1 — UI References":
+        - button "Hengshi Design v1 — UI References, Design file"
+        - button "Add to Starred":
+        - heading [level=2]:
+          - generic: Hengshi Design v1 — UI References
+        - generic: Edited 2 minutes ago
+        - group "People":
+          - button "Zaryab Anwar":
+            - generic: Z
+      - group "Hengshi Design v1 — UI References - Page 1":
+        - button "Hengshi Design v1 — UI References - Page 1, Prototype file"
+        - button "Add to Starred":
+        - heading [level=2]:
+          - generic: Hengshi Design v1 — UI References - Page 1
+        - generic: Viewed 6 minutes ago
+        - group "People":
+          - button "Zaryab Anwar":
+            - generic: Z
+- region "Help/zoom toolbar":
+  - toolbar "Help/zoom toolbar":
+    - button "Help":
+- dialog "Starter hub":
+  - heading "Starter hub" [level=2]
+  - tablist:
+    - tab "Learn"
+    - tab "Usage" [active] [selected]
+  - button "Upgrade":
+    - text: Upgrade
+  - tabpanel "Usage":
+    - heading "Usage" [level=2]
+    - heading "AI credits" [level=3]
+    - button "Make":
+      - generic: Make
+    - generic: 178/500 monthly
+    - generic: 0/150
+    - text: daily credits used
+    - generic: 1/3
+    - generic: Figma Design & Sites
+    - generic: Files
+    - button "Create":
+      - generic: Create
+    - generic: Monthly MCP tool calls
+    - strong:
+      - generic: 3 connections
+    - button "Add another agent":
+    - generic: 1 available
+  - button "Close":
+- status
+- alert
+- alert

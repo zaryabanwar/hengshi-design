@@ -1,0 +1,2940 @@
+{
+  "status": "DOING",
+  "captured_at_utc": "2026-10-15T03:17:38.643499+00:00",
+  "packages": [
+    {
+      "name": "alembic",
+      "version": "1.20.0",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "alembic-1.20.0-py3-none-any.whl",
+      "original_trial_sha256": "77eb101048d95f982c0353e9233404889dcd7a6fc244c107836c0e2fc9cf7d9d",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "alembic-1.20.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/3f/27/78a89b55b0904d222183164e079b4ca56208e94eff1d35ad1f1ad5be9b06/alembic-1.20.0-py3-none-any.whl",
+              "sha256": "77eb101048d95f982c0353e9233404889dcd7a6fc244c107836c0e2fc9cf7d9d",
+              "size": 268719,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-11T19:09:12.880981Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "alembic-1.20.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/3f/27/78a89b55b0904d222183164e079b4ca56208e94eff1d35ad1f1ad5be9b06/alembic-1.20.0-py3-none-any.whl",
+              "sha256": "77eb101048d95f982c0353e9233404889dcd7a6fc244c107836c0e2fc9cf7d9d",
+              "size": 268719,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-11T19:09:12.880981Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5",
+      "release_requires_python": ">=3.9",
+      "original_trial_filename": "annotated_doc-0.0.5-py3-none-any.whl",
+      "original_trial_sha256": "117bac03a25ede5df5440e855b32d556049ca169ead221505badf432fed4b101",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "annotated_doc-0.0.5-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/3e/30/e900b21425a860e195f32e37657aa1f7c7f2b1bfb26f03ca209b90933c06/annotated_doc-0.0.5-py3-none-any.whl",
+              "sha256": "117bac03a25ede5df5440e855b32d556049ca169ead221505badf432fed4b101",
+              "size": 5302,
+              "requires_python": ">=3.9",
+              "upload_time_iso_8601": "2026-07-28T13:50:57.239109Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "annotated_doc-0.0.5-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/3e/30/e900b21425a860e195f32e37657aa1f7c7f2b1bfb26f03ca209b90933c06/annotated_doc-0.0.5-py3-none-any.whl",
+              "sha256": "117bac03a25ede5df5440e855b32d556049ca169ead221505badf432fed4b101",
+              "size": 5302,
+              "requires_python": ">=3.9",
+              "upload_time_iso_8601": "2026-07-28T13:50:57.239109Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "annotated_types-0.8.0-py3-none-any.whl",
+      "original_trial_sha256": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "annotated_types-0.8.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/99/91/8acff4f5e50511b911bbccb72b8628a49c68ce14148cd9f6431094859a90/annotated_types-0.8.0-py3-none-any.whl",
+              "sha256": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0",
+              "size": 13427,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-07-23T20:16:12.938651Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "annotated_types-0.8.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/99/91/8acff4f5e50511b911bbccb72b8628a49c68ce14148cd9f6431094859a90/annotated_types-0.8.0-py3-none-any.whl",
+              "sha256": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0",
+              "size": 13427,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-07-23T20:16:12.938651Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "anyio",
+      "version": "4.15.1",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "anyio-4.15.1-py3-none-any.whl",
+      "original_trial_sha256": "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "anyio-4.15.1-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/12/b8/4bd346e22b28902df4d651910f5242c28d84e4a5c2435ca5c3f797ed7e2e/anyio-4.15.1-py3-none-any.whl",
+              "sha256": "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101",
+              "size": 132079,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-05T10:42:37.923487Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "anyio-4.15.1-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/12/b8/4bd346e22b28902df4d651910f5242c28d84e4a5c2435ca5c3f797ed7e2e/anyio-4.15.1-py3-none-any.whl",
+              "sha256": "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101",
+              "size": 132079,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-05T10:42:37.923487Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "authlib",
+      "version": "1.8.0",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "authlib-1.8.0-py2.py3-none-any.whl",
+      "original_trial_sha256": "88aebbd9af6757e14e912d5dc007ae1dc1f3e27e3b2152ce7c552ee2c3b3c121",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "authlib-1.8.0-py2.py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/b8/c6/6f124bcfbbfb20fba22c939b4e43a06dccfc0e1ca20e5634ca573cb1e271/authlib-1.8.0-py2.py3-none-any.whl",
+              "sha256": "88aebbd9af6757e14e912d5dc007ae1dc1f3e27e3b2152ce7c552ee2c3b3c121",
+              "size": 260804,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-08-30T12:12:33.162089Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "authlib-1.8.0-py2.py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/b8/c6/6f124bcfbbfb20fba22c939b4e43a06dccfc0e1ca20e5634ca573cb1e271/authlib-1.8.0-py2.py3-none-any.whl",
+              "sha256": "88aebbd9af6757e14e912d5dc007ae1dc1f3e27e3b2152ce7c552ee2c3b3c121",
+              "size": 260804,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-08-30T12:12:33.162089Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "bcrypt",
+      "version": "5.0.0",
+      "release_requires_python": ">=3.8",
+      "original_trial_filename": "bcrypt-5.0.0-cp39-abi3-win_amd64.whl",
+      "original_trial_sha256": "64ee8434b0da054d830fa8e89e1c8bf30061d539044a39524ff7dec90481e5c2",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "bcrypt-5.0.0-cp39-abi3-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/9f/b9/9d9a641194a730bda138b3dfe53f584d61c58cd5230e37566e83ec2ffa0d/bcrypt-5.0.0-cp39-abi3-win_amd64.whl",
+              "sha256": "64ee8434b0da054d830fa8e89e1c8bf30061d539044a39524ff7dec90481e5c2",
+              "size": 150912,
+              "requires_python": ">=3.8",
+              "upload_time_iso_8601": "2025-09-25T19:50:35.690190Z",
+              "matching_tags": [
+                "cp39-abi3-win_amd64"
+              ],
+              "preference_rank": 7
+            },
+            {
+              "filename": "bcrypt-5.0.0-cp38-abi3-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/41/aa/4190e60921927b7056820291f56fc57d00d04757c8b316b2d3c0d1d6da2c/bcrypt-5.0.0-cp38-abi3-win_amd64.whl",
+              "sha256": "35a77ec55b541e5e583eb3436ffbbf53b0ffa1fa16ca6782279daf95d146dcd9",
+              "size": 150881,
+              "requires_python": ">=3.8",
+              "upload_time_iso_8601": "2025-09-25T19:50:09.742350Z",
+              "matching_tags": [
+                "cp38-abi3-win_amd64"
+              ],
+              "preference_rank": 8
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 60,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "bcrypt-5.0.0-cp39-abi3-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/9f/b9/9d9a641194a730bda138b3dfe53f584d61c58cd5230e37566e83ec2ffa0d/bcrypt-5.0.0-cp39-abi3-win_amd64.whl",
+              "sha256": "64ee8434b0da054d830fa8e89e1c8bf30061d539044a39524ff7dec90481e5c2",
+              "size": 150912,
+              "requires_python": ">=3.8",
+              "upload_time_iso_8601": "2025-09-25T19:50:35.690190Z",
+              "matching_tags": [
+                "cp39-abi3-win_amd64"
+              ],
+              "preference_rank": 8
+            },
+            {
+              "filename": "bcrypt-5.0.0-cp38-abi3-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/41/aa/4190e60921927b7056820291f56fc57d00d04757c8b316b2d3c0d1d6da2c/bcrypt-5.0.0-cp38-abi3-win_amd64.whl",
+              "sha256": "35a77ec55b541e5e583eb3436ffbbf53b0ffa1fa16ca6782279daf95d146dcd9",
+              "size": 150881,
+              "requires_python": ">=3.8",
+              "upload_time_iso_8601": "2025-09-25T19:50:09.742350Z",
+              "matching_tags": [
+                "cp38-abi3-win_amd64"
+              ],
+              "preference_rank": 9
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 60,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "release_requires_python": ">=3.7",
+      "original_trial_filename": "certifi-2026.7.22-py3-none-any.whl",
+      "original_trial_sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "certifi-2026.7.22-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/0b/a7/71ac2cff56fec219ed242bb11b8efb69fcc4bec75db06fb7bfe35de520e6/certifi-2026.7.22-py3-none-any.whl",
+              "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775",
+              "size": 136983,
+              "requires_python": ">=3.7",
+              "upload_time_iso_8601": "2026-07-22T03:35:11.276376Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "certifi-2026.7.22-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/0b/a7/71ac2cff56fec219ed242bb11b8efb69fcc4bec75db06fb7bfe35de520e6/certifi-2026.7.22-py3-none-any.whl",
+              "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775",
+              "size": 136983,
+              "requires_python": ">=3.7",
+              "upload_time_iso_8601": "2026-07-22T03:35:11.276376Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "cffi-2.1.1-cp314-cp314-win_amd64.whl",
+      "original_trial_sha256": "3222ba5d678f80a030e6afbcc33dc1ae5cb45facabb61cee2c7016b8432fde48",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "cffi-2.1.1-cp314-cp314-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/a7/06/1c3e01e3ba14c39f6d10bfbac52753b7e22259e38088e5cfe1d704918690/cffi-2.1.1-cp314-cp314-win_amd64.whl",
+              "sha256": "3222ba5d678f80a030e6afbcc33dc1ae5cb45facabb61cee2c7016b8432fde48",
+              "size": 187949,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-08-03T21:20:45.623108Z",
+              "matching_tags": [
+                "cp314-cp314-win_amd64"
+              ],
+              "preference_rank": 0
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 98,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "cffi-2.1.1-cp315-cp315-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/e0/31/5158704cc474ab65c1647932e88be78dc0873f47130e253be38bcaf13d01/cffi-2.1.1-cp315-cp315-win_amd64.whl",
+              "sha256": "e6e8cff14d6fb0be70a09c0bdc58096f501952d04624ebf867e0e56da2df8960",
+              "size": 187897,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-08-03T21:21:16.108179Z",
+              "matching_tags": [
+                "cp315-cp315-win_amd64"
+              ],
+              "preference_rank": 0
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 98,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "click",
+      "version": "8.5.0",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "click-8.5.0-py3-none-any.whl",
+      "original_trial_sha256": "255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "click-8.5.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/58/50/6c0d534c5f134586a8e1ba4e330569e32f057e33372ae556463212fb4cd3/click-8.5.0-py3-none-any.whl",
+              "sha256": "255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360",
+              "size": 125251,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-08-26T13:33:12.928043Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "click-8.5.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/58/50/6c0d534c5f134586a8e1ba4e330569e32f057e33372ae556463212fb4cd3/click-8.5.0-py3-none-any.whl",
+              "sha256": "255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360",
+              "size": 125251,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-08-26T13:33:12.928043Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "release_requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7",
+      "original_trial_filename": "colorama-0.4.6-py2.py3-none-any.whl",
+      "original_trial_sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "colorama-0.4.6-py2.py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl",
+              "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+              "size": 25335,
+              "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7",
+              "upload_time_iso_8601": "2022-10-25T02:36:20.889702Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "colorama-0.4.6-py2.py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl",
+              "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+              "size": 25335,
+              "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7",
+              "upload_time_iso_8601": "2022-10-25T02:36:20.889702Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "cryptography",
+      "version": "50.0.2",
+      "release_requires_python": "!=3.9.0,!=3.9.1,>=3.9",
+      "original_trial_filename": "cryptography-50.0.2-cp311-abi3-win_amd64.whl",
+      "original_trial_sha256": "7afa5a6602a9f29af1f3a2965f831bae7c9d5d597b7cbb716d41ab3b7d89879c",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "cryptography-50.0.2-cp311-abi3-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/9a/4f/adfc442765721292fff86d314ce385d3249d22db42295c0dd057727b60f3/cryptography-50.0.2-cp311-abi3-win_amd64.whl",
+              "sha256": "7afa5a6602a9f29af1f3a2965f831bae7c9d5d597b7cbb716d41ab3b7d89879c",
+              "size": 3824692,
+              "requires_python": "!=3.9.0,!=3.9.1,>=3.9",
+              "upload_time_iso_8601": "2026-09-30T14:44:11.671809Z",
+              "matching_tags": [
+                "cp311-abi3-win_amd64"
+              ],
+              "preference_rank": 5
+            },
+            {
+              "filename": "cryptography-50.0.2-cp39-abi3-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/f6/b6/a1faf3a27ae9405fb34b1713cc73b2d8a26b04d5c561578fa2e6ef3e5bb9/cryptography-50.0.2-cp39-abi3-win_amd64.whl",
+              "sha256": "4e81d95e5bafc2d6e34e4bed780e53e4d5b9a2f928573428aa4d35fbec1eb0de",
+              "size": 3854095,
+              "requires_python": "!=3.9.0,!=3.9.1,>=3.9",
+              "upload_time_iso_8601": "2026-09-30T15:29:46.782322Z",
+              "matching_tags": [
+                "cp39-abi3-win_amd64"
+              ],
+              "preference_rank": 7
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 56,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "cryptography-50.0.2-cp315-abi3.abi3t-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/39/d1/55f8a3f2ef5d1529e16835ef10cf0fe3d559ce237b46dddc440c0bba3649/cryptography-50.0.2-cp315-abi3.abi3t-win_amd64.whl",
+              "sha256": "c423ab384a46c4dff7217b2ea5ba2e11cffdeab6441acd04cf65a369caf0366c",
+              "size": 4111557,
+              "requires_python": "!=3.9.0,!=3.9.1,>=3.9",
+              "upload_time_iso_8601": "2026-09-30T15:29:20.155896Z",
+              "matching_tags": [
+                "cp315-abi3-win_amd64"
+              ],
+              "preference_rank": 1
+            },
+            {
+              "filename": "cryptography-50.0.2-cp311-abi3-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/9a/4f/adfc442765721292fff86d314ce385d3249d22db42295c0dd057727b60f3/cryptography-50.0.2-cp311-abi3-win_amd64.whl",
+              "sha256": "7afa5a6602a9f29af1f3a2965f831bae7c9d5d597b7cbb716d41ab3b7d89879c",
+              "size": 3824692,
+              "requires_python": "!=3.9.0,!=3.9.1,>=3.9",
+              "upload_time_iso_8601": "2026-09-30T14:44:11.671809Z",
+              "matching_tags": [
+                "cp311-abi3-win_amd64"
+              ],
+              "preference_rank": 6
+            },
+            {
+              "filename": "cryptography-50.0.2-cp39-abi3-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/f6/b6/a1faf3a27ae9405fb34b1713cc73b2d8a26b04d5c561578fa2e6ef3e5bb9/cryptography-50.0.2-cp39-abi3-win_amd64.whl",
+              "sha256": "4e81d95e5bafc2d6e34e4bed780e53e4d5b9a2f928573428aa4d35fbec1eb0de",
+              "size": 3854095,
+              "requires_python": "!=3.9.0,!=3.9.1,>=3.9",
+              "upload_time_iso_8601": "2026-09-30T15:29:46.782322Z",
+              "matching_tags": [
+                "cp39-abi3-win_amd64"
+              ],
+              "preference_rank": 8
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 55,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "dnspython",
+      "version": "2.8.0",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "dnspython-2.8.0-py3-none-any.whl",
+      "original_trial_sha256": "01d9bbc4a2d76bf0db7c1f729812ded6d912bd318d3b1cf81d30c0f845dbf3af",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "dnspython-2.8.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/ba/5a/18ad964b0086c6e62e2e7500f7edc89e3faa45033c71c1893d34eed2b2de/dnspython-2.8.0-py3-none-any.whl",
+              "sha256": "01d9bbc4a2d76bf0db7c1f729812ded6d912bd318d3b1cf81d30c0f845dbf3af",
+              "size": 331094,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2025-09-07T18:57:58.071496Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "dnspython-2.8.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/ba/5a/18ad964b0086c6e62e2e7500f7edc89e3faa45033c71c1893d34eed2b2de/dnspython-2.8.0-py3-none-any.whl",
+              "sha256": "01d9bbc4a2d76bf0db7c1f729812ded6d912bd318d3b1cf81d30c0f845dbf3af",
+              "size": 331094,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2025-09-07T18:57:58.071496Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "email-validator",
+      "version": "2.3.0",
+      "release_requires_python": ">=3.8",
+      "original_trial_filename": "email_validator-2.3.0-py3-none-any.whl",
+      "original_trial_sha256": "80f13f623413e6b197ae73bb10bf4eb0908faf509ad8362c5edeb0be7fd450b4",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "email_validator-2.3.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/de/15/545e2b6cf2e3be84bc1ed85613edd75b8aea69807a71c26f4ca6a9258e82/email_validator-2.3.0-py3-none-any.whl",
+              "sha256": "80f13f623413e6b197ae73bb10bf4eb0908faf509ad8362c5edeb0be7fd450b4",
+              "size": 35604,
+              "requires_python": ">=3.8",
+              "upload_time_iso_8601": "2025-08-26T13:09:05.858779Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "email_validator-2.3.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/de/15/545e2b6cf2e3be84bc1ed85613edd75b8aea69807a71c26f4ca6a9258e82/email_validator-2.3.0-py3-none-any.whl",
+              "sha256": "80f13f623413e6b197ae73bb10bf4eb0908faf509ad8362c5edeb0be7fd450b4",
+              "size": 35604,
+              "requires_python": ">=3.8",
+              "upload_time_iso_8601": "2025-08-26T13:09:05.858779Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "fastapi",
+      "version": "0.143.0",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "fastapi-0.143.0-py3-none-any.whl",
+      "original_trial_sha256": "3e9395fd35276425b61b516a31fdd7c77fe2af83e41b4da22e30696fb1304c5d",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "fastapi-0.143.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/bd/f4/27e386913417ad32aae42bba48b0c0cce40e9ff2fba1a871ca2702c37324/fastapi-0.143.0-py3-none-any.whl",
+              "sha256": "3e9395fd35276425b61b516a31fdd7c77fe2af83e41b4da22e30696fb1304c5d",
+              "size": 144665,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-10-08T12:29:44.853354Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "fastapi-0.143.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/bd/f4/27e386913417ad32aae42bba48b0c0cce40e9ff2fba1a871ca2702c37324/fastapi-0.143.0-py3-none-any.whl",
+              "sha256": "3e9395fd35276425b61b516a31fdd7c77fe2af83e41b4da22e30696fb1304c5d",
+              "size": 144665,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-10-08T12:29:44.853354Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "release_requires_python": ">=3.8",
+      "original_trial_filename": "h11-0.16.0-py3-none-any.whl",
+      "original_trial_sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "h11-0.16.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl",
+              "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+              "size": 37515,
+              "requires_python": ">=3.8",
+              "upload_time_iso_8601": "2025-04-24T03:35:24.344199Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "h11-0.16.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl",
+              "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+              "size": 37515,
+              "requires_python": ">=3.8",
+              "upload_time_iso_8601": "2025-04-24T03:35:24.344199Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9",
+      "release_requires_python": ">=3.8",
+      "original_trial_filename": "httpcore-1.0.9-py3-none-any.whl",
+      "original_trial_sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "httpcore-1.0.9-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/7e/f5/f66802a942d491edb555dd61e3a9961140fd64c90bce1eafd741609d334d/httpcore-1.0.9-py3-none-any.whl",
+              "sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+              "size": 78784,
+              "requires_python": ">=3.8",
+              "upload_time_iso_8601": "2025-04-24T22:06:20.566605Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "httpcore-1.0.9-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/7e/f5/f66802a942d491edb555dd61e3a9961140fd64c90bce1eafd741609d334d/httpcore-1.0.9-py3-none-any.whl",
+              "sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+              "size": 78784,
+              "requires_python": ">=3.8",
+              "upload_time_iso_8601": "2025-04-24T22:06:20.566605Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "httpcore2",
+      "version": "2.13.1",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "httpcore2-2.13.1-py3-none-any.whl",
+      "original_trial_sha256": "e1e05d4f25f7d7d496bfb96748f6f4b67657b03da069b3a68c36069f3db73d0a",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "httpcore2-2.13.1-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/09/ba/a4568248771ce81957bfb7cc600264a40fbcda092391ee1c415c50be4bea/httpcore2-2.13.1-py3-none-any.whl",
+              "sha256": "e1e05d4f25f7d7d496bfb96748f6f4b67657b03da069b3a68c36069f3db73d0a",
+              "size": 83423,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-23T07:47:19.365487Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "httpcore2-2.13.1-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/09/ba/a4568248771ce81957bfb7cc600264a40fbcda092391ee1c415c50be4bea/httpcore2-2.13.1-py3-none-any.whl",
+              "sha256": "e1e05d4f25f7d7d496bfb96748f6f4b67657b03da069b3a68c36069f3db73d0a",
+              "size": 83423,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-23T07:47:19.365487Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "httptools",
+      "version": "0.8.0",
+      "release_requires_python": ">=3.9",
+      "original_trial_filename": "httptools-0.8.0-cp314-cp314-win_amd64.whl",
+      "original_trial_sha256": "19d1ee275bb59ba2643ba9a3a1e51cc0c788caf2b8df506368e03f56fdd08527",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "httptools-0.8.0-cp314-cp314-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/60/bd/07b13c93ffd9bec9546e0d43f8e19378dd696dbd278511406bc07371ef1f/httptools-0.8.0-cp314-cp314-win_amd64.whl",
+              "sha256": "19d1ee275bb59ba2643ba9a3a1e51cc0c788caf2b8df506368e03f56fdd08527",
+              "size": 92705,
+              "requires_python": ">=3.9",
+              "upload_time_iso_8601": "2026-05-25T22:17:31.133157Z",
+              "matching_tags": [
+                "cp314-cp314-win_amd64"
+              ],
+              "preference_rank": 0
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 48,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": false,
+          "applicable_wheels": [],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 49,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1",
+      "release_requires_python": ">=3.8",
+      "original_trial_filename": "httpx-0.28.1-py3-none-any.whl",
+      "original_trial_sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "httpx-0.28.1-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/2a/39/e50c7c3a983047577ee07d2a9e53faf5a69493943ec3f6a384bdc792deb2/httpx-0.28.1-py3-none-any.whl",
+              "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+              "size": 73517,
+              "requires_python": ">=3.8",
+              "upload_time_iso_8601": "2024-12-06T15:37:21.509172Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "httpx-0.28.1-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/2a/39/e50c7c3a983047577ee07d2a9e53faf5a69493943ec3f6a384bdc792deb2/httpx-0.28.1-py3-none-any.whl",
+              "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+              "size": 73517,
+              "requires_python": ">=3.8",
+              "upload_time_iso_8601": "2024-12-06T15:37:21.509172Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "httpx2",
+      "version": "2.13.1",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "httpx2-2.13.1-py3-none-any.whl",
+      "original_trial_sha256": "6dff50fabc270ee5fd25d845d0b078ed20564579744d6d962850975996d2f9a4",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "httpx2-2.13.1-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/d8/9c/6fe8931fd9f381042a9e4c7d5a7b4cbf7016b252bec0c99a49fce42c3326/httpx2-2.13.1-py3-none-any.whl",
+              "sha256": "6dff50fabc270ee5fd25d845d0b078ed20564579744d6d962850975996d2f9a4",
+              "size": 95597,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-23T07:47:20.995722Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "httpx2-2.13.1-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/d8/9c/6fe8931fd9f381042a9e4c7d5a7b4cbf7016b252bec0c99a49fce42c3326/httpx2-2.13.1-py3-none-any.whl",
+              "sha256": "6dff50fabc270ee5fd25d845d0b078ed20564579744d6d962850975996d2f9a4",
+              "size": 95597,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-23T07:47:20.995722Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "release_requires_python": ">=3.9",
+      "original_trial_filename": "idna-3.20-py3-none-any.whl",
+      "original_trial_sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "idna-3.20-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/58/a2/bb081bab032533a855d44de1d56f8e8426114ff1ba5d1f07a438a0a654f8/idna-3.20-py3-none-any.whl",
+              "sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c",
+              "size": 69583,
+              "requires_python": ">=3.9",
+              "upload_time_iso_8601": "2026-09-17T14:11:03.168153Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "idna-3.20-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/58/a2/bb081bab032533a855d44de1d56f8e8426114ff1ba5d1f07a438a0a654f8/idna-3.20-py3-none-any.whl",
+              "sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c",
+              "size": 69583,
+              "requires_python": ">=3.9",
+              "upload_time_iso_8601": "2026-09-17T14:11:03.168153Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "iniconfig-2.3.1-py3-none-any.whl",
+      "original_trial_sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "iniconfig-2.3.1-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/56/43/4ca9e49d27a1fcf6bece6f6aec0ea46bb9112489b93d4b688fb415457bdb/iniconfig-2.3.1-py3-none-any.whl",
+              "sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7",
+              "size": 7552,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-10-06T22:48:36.959685Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "iniconfig-2.3.1-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/56/43/4ca9e49d27a1fcf6bece6f6aec0ea46bb9112489b93d4b688fb415457bdb/iniconfig-2.3.1-py3-none-any.whl",
+              "sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7",
+              "size": 7552,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-10-06T22:48:36.959685Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "joserfc",
+      "version": "1.7.5",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "joserfc-1.7.5-py3-none-any.whl",
+      "original_trial_sha256": "add2c2c84e8373b084d526a8b53daba5d7a513a118cd2dcd9fc9f979d0922159",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "joserfc-1.7.5-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/67/c5/82addfd375e5ee6520644e0553e4aadde92d668c4fc99cc716d337fe7bb3/joserfc-1.7.5-py3-none-any.whl",
+              "sha256": "add2c2c84e8373b084d526a8b53daba5d7a513a118cd2dcd9fc9f979d0922159",
+              "size": 71269,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-08-29T13:05:40.718242Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "joserfc-1.7.5-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/67/c5/82addfd375e5ee6520644e0553e4aadde92d668c4fc99cc716d337fe7bb3/joserfc-1.7.5-py3-none-any.whl",
+              "sha256": "add2c2c84e8373b084d526a8b53daba5d7a513a118cd2dcd9fc9f979d0922159",
+              "size": 71269,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-08-29T13:05:40.718242Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "mako",
+      "version": "1.4.3",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "mako-1.4.3-py3-none-any.whl",
+      "original_trial_sha256": "723296007c870bfd6b3f0c3230dba7198096e5269297ebf5e4eff9e7ffa39d4f",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "mako-1.4.3-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/6d/a0/053d6af3e8f871e0073b4a36732d9e65be77a72e5434c31b94f6af78a6bb/mako-1.4.3-py3-none-any.whl",
+              "sha256": "723296007c870bfd6b3f0c3230dba7198096e5269297ebf5e4eff9e7ffa39d4f",
+              "size": 80164,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-22T20:54:33.128860Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "mako-1.4.3-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/6d/a0/053d6af3e8f871e0073b4a36732d9e65be77a72e5434c31b94f6af78a6bb/mako-1.4.3-py3-none-any.whl",
+              "sha256": "723296007c870bfd6b3f0c3230dba7198096e5269297ebf5e4eff9e7ffa39d4f",
+              "size": 80164,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-22T20:54:33.128860Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "markupsafe",
+      "version": "3.0.4",
+      "release_requires_python": ">=3.9",
+      "original_trial_filename": "markupsafe-3.0.4-cp314-cp314-win_amd64.whl",
+      "original_trial_sha256": "c1bc67752d5f21013cfe430df4062441714eab79f65a6a05e01505957e9c35fe",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "markupsafe-3.0.4-cp314-cp314-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/80/f0/5792ff768a410f93ee3f84fc19345295ffc352d2c936b424cb37e514714c/markupsafe-3.0.4-cp314-cp314-win_amd64.whl",
+              "sha256": "c1bc67752d5f21013cfe430df4062441714eab79f65a6a05e01505957e9c35fe",
+              "size": 14501,
+              "requires_python": ">=3.9",
+              "upload_time_iso_8601": "2026-10-02T23:05:50.788834Z",
+              "matching_tags": [
+                "cp314-cp314-win_amd64"
+              ],
+              "preference_rank": 0
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 149,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "markupsafe-3.0.4-cp315-cp315-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/5b/ec/6000fd82e8791e58fcd0456ec20f098957e2b03d5ed02eb73241a577c0ba/markupsafe-3.0.4-cp315-cp315-win_amd64.whl",
+              "sha256": "d882a373d8093c2941e01291b7ced96e9cbe4781da9a7751ca7e6c70385e5214",
+              "size": 14496,
+              "requires_python": ">=3.9",
+              "upload_time_iso_8601": "2026-10-02T23:06:33.258900Z",
+              "matching_tags": [
+                "cp315-cp315-win_amd64"
+              ],
+              "preference_rank": 0
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 149,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "opentelemetry-api",
+      "version": "1.45.1",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "opentelemetry_api-1.45.1-py3-none-any.whl",
+      "original_trial_sha256": "b31553efa588ae44bc306f863c785c5333a9ecc091248c6ee68b4b6c87fdedfb",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "opentelemetry_api-1.45.1-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/1e/41/f7dcf80b81ee8e71c1a2b59f14208bc723edbd89ed027a73b175abf6348e/opentelemetry_api-1.45.1-py3-none-any.whl",
+              "sha256": "b31553efa588ae44bc306f863c785c5333a9ecc091248c6ee68b4b6c87fdedfb",
+              "size": 60256,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-10-06T17:32:33.506615Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "opentelemetry_api-1.45.1-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/1e/41/f7dcf80b81ee8e71c1a2b59f14208bc723edbd89ed027a73b175abf6348e/opentelemetry_api-1.45.1-py3-none-any.whl",
+              "sha256": "b31553efa588ae44bc306f863c785c5333a9ecc091248c6ee68b4b6c87fdedfb",
+              "size": 60256,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-10-06T17:32:33.506615Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "release_requires_python": ">=3.9",
+      "original_trial_filename": "packaging-26.3-py3-none-any.whl",
+      "original_trial_sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "packaging-26.3-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl",
+              "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+              "size": 129956,
+              "requires_python": ">=3.9",
+              "upload_time_iso_8601": "2026-08-04T18:15:27.159957Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "packaging-26.3-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl",
+              "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+              "size": 129956,
+              "requires_python": ">=3.9",
+              "upload_time_iso_8601": "2026-08-04T18:15:27.159957Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0",
+      "release_requires_python": ">=3.9",
+      "original_trial_filename": "pluggy-1.6.0-py3-none-any.whl",
+      "original_trial_sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "pluggy-1.6.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/54/20/4d324d65cc6d9205fabedc306948156824eb9f0ee1633355a8f7ec5c66bf/pluggy-1.6.0-py3-none-any.whl",
+              "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
+              "size": 20538,
+              "requires_python": ">=3.9",
+              "upload_time_iso_8601": "2025-05-15T12:30:06.134003Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "pluggy-1.6.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/54/20/4d324d65cc6d9205fabedc306948156824eb9f0ee1633355a8f7ec5c66bf/pluggy-1.6.0-py3-none-any.whl",
+              "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
+              "size": 20538,
+              "requires_python": ">=3.9",
+              "upload_time_iso_8601": "2025-05-15T12:30:06.134003Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "psycopg",
+      "version": "3.3.6",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "psycopg-3.3.6-py3-none-any.whl",
+      "original_trial_sha256": "a1db9f7148b06a28606767efaca51fa6f9398c5c0a3810519be69d7000bdb631",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "psycopg-3.3.6-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/4e/de/748bd7609c71cae5d737f0ba9192f19329f70180ecda8fff3cac02c5abe3/psycopg-3.3.6-py3-none-any.whl",
+              "sha256": "a1db9f7148b06a28606767efaca51fa6f9398c5c0a3810519be69d7000bdb631",
+              "size": 215490,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-18T13:15:29.374570Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "psycopg-3.3.6-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/4e/de/748bd7609c71cae5d737f0ba9192f19329f70180ecda8fff3cac02c5abe3/psycopg-3.3.6-py3-none-any.whl",
+              "sha256": "a1db9f7148b06a28606767efaca51fa6f9398c5c0a3810519be69d7000bdb631",
+              "size": 215490,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-18T13:15:29.374570Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "psycopg-binary",
+      "version": "3.3.6",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "psycopg_binary-3.3.6-cp314-cp314-win_amd64.whl",
+      "original_trial_sha256": "1fbd30e537dab22cafdf080608f10148fe2a5f3a61294ddb5113caac8a623840",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "psycopg_binary-3.3.6-cp314-cp314-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/f1/3e/0a753a74fbd7aef120f286c016e09d3cc3f1daf7688f4a145d27281260b2/psycopg_binary-3.3.6-cp314-cp314-win_amd64.whl",
+              "sha256": "1fbd30e537dab22cafdf080608f10148fe2a5f3a61294ddb5113caac8a623840",
+              "size": 3755671,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-18T13:21:33.855505Z",
+              "matching_tags": [
+                "cp314-cp314-win_amd64"
+              ],
+              "preference_rank": 0
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 65,
+            "not_wheel": 0
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "psycopg_binary-3.3.6-cp315-cp315-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/98/33/e2a5b36edf8aa422f6fa4b894756eb33dc93b36df5f65121280bb8b929c4/psycopg_binary-3.3.6-cp315-cp315-win_amd64.whl",
+              "sha256": "2f122603f36050937982abf9668d8bc4769a79f7c93a65013b1c49f1cab7b56b",
+              "size": 3756154,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-18T13:22:51.283084Z",
+              "matching_tags": [
+                "cp315-cp315-win_amd64"
+              ],
+              "preference_rank": 0
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 65,
+            "not_wheel": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "pycparser",
+      "version": "3.1",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "pycparser-3.1-py3-none-any.whl",
+      "original_trial_sha256": "f09d358c840bd147b79e55f2bc494f18ea869dc897f5852a8f5766b74f787882",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "pycparser-3.1-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/99/ce/b3ae9ee0324d991c860187be2a6ee436d27a3d02397eaddbb101ec901f3d/pycparser-3.1-py3-none-any.whl",
+              "sha256": "f09d358c840bd147b79e55f2bc494f18ea869dc897f5852a8f5766b74f787882",
+              "size": 48709,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-10-08T12:26:32.970889Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "pycparser-3.1-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/99/ce/b3ae9ee0324d991c860187be2a6ee436d27a3d02397eaddbb101ec901f3d/pycparser-3.1-py3-none-any.whl",
+              "sha256": "f09d358c840bd147b79e55f2bc494f18ea869dc897f5852a8f5766b74f787882",
+              "size": 48709,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-10-08T12:26:32.970889Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "pydantic",
+      "version": "2.14.0",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "pydantic-2.14.0-py3-none-any.whl",
+      "original_trial_sha256": "15fab1bea6f1dc5003b54fc2ecab230c1fd1dbade2acd4addc52d81e32416d4b",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "pydantic-2.14.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/2d/eb/9146591cc819d040475bf7f2be786710c7f7eb8083693bf859728da2ca9c/pydantic-2.14.0-py3-none-any.whl",
+              "sha256": "15fab1bea6f1dc5003b54fc2ecab230c1fd1dbade2acd4addc52d81e32416d4b",
+              "size": 487109,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-10-08T14:34:46.864517Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "pydantic-2.14.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/2d/eb/9146591cc819d040475bf7f2be786710c7f7eb8083693bf859728da2ca9c/pydantic-2.14.0-py3-none-any.whl",
+              "sha256": "15fab1bea6f1dc5003b54fc2ecab230c1fd1dbade2acd4addc52d81e32416d4b",
+              "size": 487109,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-10-08T14:34:46.864517Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "pydantic-core",
+      "version": "2.50.0",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "pydantic_core-2.50.0-cp314-cp314-win_amd64.whl",
+      "original_trial_sha256": "63263d64884688554fb025a3906c7b00573980cfee75f9afeb86239d577384bc",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "pydantic_core-2.50.0-cp314-cp314-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/ea/6f/a5a5baf99509c998e0f2335d66b815880c7d6c63231c8e4017b237d6837d/pydantic_core-2.50.0-cp314-cp314-win_amd64.whl",
+              "sha256": "63263d64884688554fb025a3906c7b00573980cfee75f9afeb86239d577384bc",
+              "size": 2170939,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-10-08T14:28:11.080175Z",
+              "matching_tags": [
+                "cp314-cp314-win_amd64"
+              ],
+              "preference_rank": 0
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 135,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "pydantic_core-2.50.0-cp315-cp315-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/ce/a9/f1cf61f747538834ea2c14c442264e4f29663c95294ad7933867633a1dea/pydantic_core-2.50.0-cp315-cp315-win_amd64.whl",
+              "sha256": "8447678b49412294801c9ea15ae31ea3bae7da65425268c92d40e032c38eac6f",
+              "size": 2171379,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-10-08T14:29:24.613499Z",
+              "matching_tags": [
+                "cp315-cp315-win_amd64"
+              ],
+              "preference_rank": 0
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 135,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "pygments",
+      "version": "2.21.0",
+      "release_requires_python": ">=3.9",
+      "original_trial_filename": "pygments-2.21.0-py3-none-any.whl",
+      "original_trial_sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "pygments-2.21.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/71/46/17f022dd3e953bf20a04a028a21ec746d942f8d2af30fa0f124fa0e6a684/pygments-2.21.0-py3-none-any.whl",
+              "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+              "size": 1250147,
+              "requires_python": ">=3.9",
+              "upload_time_iso_8601": "2026-08-17T08:02:44.912148Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "pygments-2.21.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/71/46/17f022dd3e953bf20a04a028a21ec746d942f8d2af30fa0f124fa0e6a684/pygments-2.21.0-py3-none-any.whl",
+              "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+              "size": 1250147,
+              "requires_python": ">=3.9",
+              "upload_time_iso_8601": "2026-08-17T08:02:44.912148Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "pyjwt",
+      "version": "2.15.1",
+      "release_requires_python": ">=3.9",
+      "original_trial_filename": "pyjwt-2.15.1-py3-none-any.whl",
+      "original_trial_sha256": "42d59d631f7768a1028a64c7ff581a9bf7519804daf91fc5b6c56e30eec5e193",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "pyjwt-2.15.1-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/50/ca/44de4e75f8aadc457f0634be3b542815078ded46dca30efb960edeecad6e/pyjwt-2.15.1-py3-none-any.whl",
+              "sha256": "42d59d631f7768a1028a64c7ff581a9bf7519804daf91fc5b6c56e30eec5e193",
+              "size": 33860,
+              "requires_python": ">=3.9",
+              "upload_time_iso_8601": "2026-09-28T18:40:41.429003Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "pyjwt-2.15.1-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/50/ca/44de4e75f8aadc457f0634be3b542815078ded46dca30efb960edeecad6e/pyjwt-2.15.1-py3-none-any.whl",
+              "sha256": "42d59d631f7768a1028a64c7ff581a9bf7519804daf91fc5b6c56e30eec5e193",
+              "size": 33860,
+              "requires_python": ">=3.9",
+              "upload_time_iso_8601": "2026-09-28T18:40:41.429003Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "pytest",
+      "version": "9.1.1",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "pytest-9.1.1-py3-none-any.whl",
+      "original_trial_sha256": "37a86b45efb9a47a61a36449063e8e18d0cab3161329fc099eb21783169c4f0c",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "pytest-9.1.1-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/24/25/1de2678b631f5a49215c6c96fff41ba892b0a34df68d6d80292b1b48aa7f/pytest-9.1.1-py3-none-any.whl",
+              "sha256": "37a86b45efb9a47a61a36449063e8e18d0cab3161329fc099eb21783169c4f0c",
+              "size": 386536,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-06-19T10:58:31.347074Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "pytest-9.1.1-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/24/25/1de2678b631f5a49215c6c96fff41ba892b0a34df68d6d80292b1b48aa7f/pytest-9.1.1-py3-none-any.whl",
+              "sha256": "37a86b45efb9a47a61a36449063e8e18d0cab3161329fc099eb21783169c4f0c",
+              "size": 386536,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-06-19T10:58:31.347074Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "pytest-asyncio",
+      "version": "1.4.0",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "pytest_asyncio-1.4.0-py3-none-any.whl",
+      "original_trial_sha256": "933ca923a23075a87fb7070c0ec272a6848489824d887c85c812670932835aa1",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "pytest_asyncio-1.4.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/03/e2/08a497ef684b88559c9cc5f4ad53a37e7b99e727094a86d6ea32536d5d3c/pytest_asyncio-1.4.0-py3-none-any.whl",
+              "sha256": "933ca923a23075a87fb7070c0ec272a6848489824d887c85c812670932835aa1",
+              "size": 16930,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-05-26T09:56:02.576082Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "pytest_asyncio-1.4.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/03/e2/08a497ef684b88559c9cc5f4ad53a37e7b99e727094a86d6ea32536d5d3c/pytest_asyncio-1.4.0-py3-none-any.whl",
+              "sha256": "933ca923a23075a87fb7070c0ec272a6848489824d887c85c812670932835aa1",
+              "size": 16930,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-05-26T09:56:02.576082Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "python-dotenv",
+      "version": "1.2.4",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "python_dotenv-1.2.4-py3-none-any.whl",
+      "original_trial_sha256": "42269a8a5b3fd54ffa6f3d84b18abed50064717576b4ecf03dc4a55d8aa04fdc",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "python_dotenv-1.2.4-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/60/d1/38f3a3405989a89ac18390803e70c6ad7c7760da4f9b83cbeca0c44a0c72/python_dotenv-1.2.4-py3-none-any.whl",
+              "sha256": "42269a8a5b3fd54ffa6f3d84b18abed50064717576b4ecf03dc4a55d8aa04fdc",
+              "size": 23266,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-10-01T05:36:08.633003Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "python_dotenv-1.2.4-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/60/d1/38f3a3405989a89ac18390803e70c6ad7c7760da4f9b83cbeca0c44a0c72/python_dotenv-1.2.4-py3-none-any.whl",
+              "sha256": "42269a8a5b3fd54ffa6f3d84b18abed50064717576b4ecf03dc4a55d8aa04fdc",
+              "size": 23266,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-10-01T05:36:08.633003Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "pyyaml",
+      "version": "6.0.3",
+      "release_requires_python": ">=3.8",
+      "original_trial_filename": "pyyaml-6.0.3-cp314-cp314-win_amd64.whl",
+      "original_trial_sha256": "4a2e8cebe2ff6ab7d1050ecd59c25d4c8bd7e6f400f5f82b96557ac0abafd0ac",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "pyyaml-6.0.3-cp314-cp314-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/23/20/bb6982b26a40bb43951265ba29d4c246ef0ff59c9fdcdf0ed04e0687de4d/pyyaml-6.0.3-cp314-cp314-win_amd64.whl",
+              "sha256": "4a2e8cebe2ff6ab7d1050ecd59c25d4c8bd7e6f400f5f82b96557ac0abafd0ac",
+              "size": 156429,
+              "requires_python": ">=3.8",
+              "upload_time_iso_8601": "2025-09-25T21:32:57.844103Z",
+              "matching_tags": [
+                "cp314-cp314-win_amd64"
+              ],
+              "preference_rank": 0
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 71,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": false,
+          "applicable_wheels": [],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 72,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "sqlalchemy",
+      "version": "2.1.4",
+      "release_requires_python": ">=3.11",
+      "original_trial_filename": "sqlalchemy-2.1.4-cp314-cp314-win_amd64.whl",
+      "original_trial_sha256": "080f8d853aac5bb5620f0ae6f46527397cf18dce0ec2b478b478469ef3cae2c4",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "sqlalchemy-2.1.4-cp314-cp314-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/ca/93/4dfa4ce15d082011fb94e06e7c6b4c2957a3f0ddeb8fe9b89d007bc058d7/sqlalchemy-2.1.4-cp314-cp314-win_amd64.whl",
+              "sha256": "080f8d853aac5bb5620f0ae6f46527397cf18dce0ec2b478b478469ef3cae2c4",
+              "size": 2431689,
+              "requires_python": ">=3.11",
+              "upload_time_iso_8601": "2026-10-07T18:22:27.144377Z",
+              "matching_tags": [
+                "cp314-cp314-win_amd64"
+              ],
+              "preference_rank": 0
+            },
+            {
+              "filename": "sqlalchemy-2.1.4-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/f7/62/dbf11a262f6fbb41390cab2d8e47a30ec0961018b68201607b599dd489f5/sqlalchemy-2.1.4-py3-none-any.whl",
+              "sha256": "0b96edcc2cd60fe1e35f67a46f4eb076e57297841b9eae949ac5f196593f00a7",
+              "size": 2054935,
+              "requires_python": ">=3.11",
+              "upload_time_iso_8601": "2026-10-07T18:01:16.403796Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 69,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "sqlalchemy-2.1.4-cp315-cp315-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/2c/7c/ff7e29f95996ed49b950afd531b89e7c8d15addb41735643d07090550090/sqlalchemy-2.1.4-cp315-cp315-win_amd64.whl",
+              "sha256": "596a95611c217cb19c21f02f43c637cb507cab71dcf0467c5c7d98fcdd703007",
+              "size": 2431760,
+              "requires_python": ">=3.11",
+              "upload_time_iso_8601": "2026-10-07T18:04:27.275070Z",
+              "matching_tags": [
+                "cp315-cp315-win_amd64"
+              ],
+              "preference_rank": 0
+            },
+            {
+              "filename": "sqlalchemy-2.1.4-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/f7/62/dbf11a262f6fbb41390cab2d8e47a30ec0961018b68201607b599dd489f5/sqlalchemy-2.1.4-py3-none-any.whl",
+              "sha256": "0b96edcc2cd60fe1e35f67a46f4eb076e57297841b9eae949ac5f196593f00a7",
+              "size": 2054935,
+              "requires_python": ">=3.11",
+              "upload_time_iso_8601": "2026-10-07T18:01:16.403796Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 69,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "starlette",
+      "version": "1.7.0",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "starlette-1.7.0-py3-none-any.whl",
+      "original_trial_sha256": "67f8e99895493dd2911a03f11314af6ceebeae4e704bb9f43dfc6a9db151c93e",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "starlette-1.7.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/4e/d6/1ec1b290f9e0fb067899b61e1d37a30c923068bad260b216dbe37a7d2967/starlette-1.7.0-py3-none-any.whl",
+              "sha256": "67f8e99895493dd2911a03f11314af6ceebeae4e704bb9f43dfc6a9db151c93e",
+              "size": 78980,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-23T07:30:24.567239Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "starlette-1.7.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/4e/d6/1ec1b290f9e0fb067899b61e1d37a30c923068bad260b216dbe37a7d2967/starlette-1.7.0-py3-none-any.whl",
+              "sha256": "67f8e99895493dd2911a03f11314af6ceebeae4e704bb9f43dfc6a9db151c93e",
+              "size": 78980,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-23T07:30:24.567239Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "truststore",
+      "version": "0.10.4",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "truststore-0.10.4-py3-none-any.whl",
+      "original_trial_sha256": "adaeaecf1cbb5f4de3b1959b42d41f6fab57b2b1666adb59e89cb0b53361d981",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "truststore-0.10.4-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/19/97/56608b2249fe206a67cd573bc93cd9896e1efb9e98bce9c163bcdc704b88/truststore-0.10.4-py3-none-any.whl",
+              "sha256": "adaeaecf1cbb5f4de3b1959b42d41f6fab57b2b1666adb59e89cb0b53361d981",
+              "size": 18660,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2025-08-12T18:49:01.460601Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "truststore-0.10.4-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/19/97/56608b2249fe206a67cd573bc93cd9896e1efb9e98bce9c163bcdc704b88/truststore-0.10.4-py3-none-any.whl",
+              "sha256": "adaeaecf1cbb5f4de3b1959b42d41f6fab57b2b1666adb59e89cb0b53361d981",
+              "size": 18660,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2025-08-12T18:49:01.460601Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "typing-extensions",
+      "version": "4.16.0",
+      "release_requires_python": ">=3.9",
+      "original_trial_filename": "typing_extensions-4.16.0-py3-none-any.whl",
+      "original_trial_sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "typing_extensions-4.16.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+              "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+              "size": 45571,
+              "requires_python": ">=3.9",
+              "upload_time_iso_8601": "2026-07-02T08:40:04.659120Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "typing_extensions-4.16.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+              "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+              "size": 45571,
+              "requires_python": ">=3.9",
+              "upload_time_iso_8601": "2026-07-02T08:40:04.659120Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "typing_inspection-0.4.4-py3-none-any.whl",
+      "original_trial_sha256": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "typing_inspection-0.4.4-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/67/81/4add07e5172b7ac40d8ed5ff580409a7801a4fe26d529bdd915401dabfbe/typing_inspection-0.4.4-py3-none-any.whl",
+              "sha256": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147",
+              "size": 14750,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-08-12T12:37:24.648475Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "typing_inspection-0.4.4-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/67/81/4add07e5172b7ac40d8ed5ff580409a7801a4fe26d529bdd915401dabfbe/typing_inspection-0.4.4-py3-none-any.whl",
+              "sha256": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147",
+              "size": 14750,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-08-12T12:37:24.648475Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.5",
+      "release_requires_python": ">=2",
+      "original_trial_filename": "tzdata-2026.5-py2.py3-none-any.whl",
+      "original_trial_sha256": "b683bd1b6659ddcd810ff02ad09ba821d4bf1065072805063eb35c49617905ac",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "tzdata-2026.5-py2.py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/94/21/1e5995a1c920cce14e4bffae20c665ec10e7ed03ab25e006cd741092b718/tzdata-2026.5-py2.py3-none-any.whl",
+              "sha256": "b683bd1b6659ddcd810ff02ad09ba821d4bf1065072805063eb35c49617905ac",
+              "size": 347996,
+              "requires_python": ">=2",
+              "upload_time_iso_8601": "2026-10-03T09:23:12.535688Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "tzdata-2026.5-py2.py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/94/21/1e5995a1c920cce14e4bffae20c665ec10e7ed03ab25e006cd741092b718/tzdata-2026.5-py2.py3-none-any.whl",
+              "sha256": "b683bd1b6659ddcd810ff02ad09ba821d4bf1065072805063eb35c49617905ac",
+              "size": 347996,
+              "requires_python": ">=2",
+              "upload_time_iso_8601": "2026-10-03T09:23:12.535688Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.54.0",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "uvicorn-0.54.0-py3-none-any.whl",
+      "original_trial_sha256": "505bdb0f318731d45f1f712071fc781a8981f6847a31c902c9f5e652d4f67faf",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "uvicorn-0.54.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/38/0c/b54a4fdd7f90a3af8b02ebc9ce6712c2c208b7926a2f7bad95c33ebbe943/uvicorn-0.54.0-py3-none-any.whl",
+              "sha256": "505bdb0f318731d45f1f712071fc781a8981f6847a31c902c9f5e652d4f67faf",
+              "size": 87427,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-25T06:52:35.829563Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "uvicorn-0.54.0-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/38/0c/b54a4fdd7f90a3af8b02ebc9ce6712c2c208b7926a2f7bad95c33ebbe943/uvicorn-0.54.0-py3-none-any.whl",
+              "sha256": "505bdb0f318731d45f1f712071fc781a8981f6847a31c902c9f5e652d4f67faf",
+              "size": 87427,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-25T06:52:35.829563Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 0,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "watchfiles",
+      "version": "1.3.0",
+      "release_requires_python": ">=3.10",
+      "original_trial_filename": "watchfiles-1.3.0-cp310-abi3-win_amd64.whl",
+      "original_trial_sha256": "1acabde19b67e673274e89a04d613b7fb1f122e2c4b8ec9a581e59c149264b61",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "watchfiles-1.3.0-cp310-abi3-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/48/a1/1c4a1b3c8030cd03206232612be8a6e8799093490c220b0fcb935d02b75a/watchfiles-1.3.0-cp310-abi3-win_amd64.whl",
+              "sha256": "1acabde19b67e673274e89a04d613b7fb1f122e2c4b8ec9a581e59c149264b61",
+              "size": 290643,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-21T09:08:30.450417Z",
+              "matching_tags": [
+                "cp310-abi3-win_amd64"
+              ],
+              "preference_rank": 6
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 31,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "watchfiles-1.3.0-cp310-abi3-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/48/a1/1c4a1b3c8030cd03206232612be8a6e8799093490c220b0fcb935d02b75a/watchfiles-1.3.0-cp310-abi3-win_amd64.whl",
+              "sha256": "1acabde19b67e673274e89a04d613b7fb1f122e2c4b8ec9a581e59c149264b61",
+              "size": 290643,
+              "requires_python": ">=3.10",
+              "upload_time_iso_8601": "2026-09-21T09:08:30.450417Z",
+              "matching_tags": [
+                "cp310-abi3-win_amd64"
+              ],
+              "preference_rank": 7
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 31,
+            "not_wheel": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "websockets",
+      "version": "17.2",
+      "release_requires_python": ">=3.11",
+      "original_trial_filename": "websockets-17.2-cp314-cp314-win_amd64.whl",
+      "original_trial_sha256": "dac93bf7a9beb215be3282b8441173cd50806c41c007b8be9bb24e03c60ad563",
+      "original_file_registry_hash_matches": true,
+      "targets": {
+        "3.14.8": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "websockets-17.2-cp314-cp314-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/e5/9e/0523f8bc2f7aaddf39562d4fa01b4d38fa61b23d980917a16d2dd19c8dac/websockets-17.2-cp314-cp314-win_amd64.whl",
+              "sha256": "dac93bf7a9beb215be3282b8441173cd50806c41c007b8be9bb24e03c60ad563",
+              "size": 218104,
+              "requires_python": ">=3.11",
+              "upload_time_iso_8601": "2026-10-03T14:54:55.845713Z",
+              "matching_tags": [
+                "cp314-cp314-win_amd64"
+              ],
+              "preference_rank": 0
+            },
+            {
+              "filename": "websockets-17.2-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/8a/58/835cd51934d6780fa586f275b5d9901eead6d81569b4343b3767cdbaae4c/websockets-17.2-py3-none-any.whl",
+              "sha256": "6aa59f0ef92e796b2db6f5f26550c4713c0e4036899fadf02f55e2ed4db0b7ae",
+              "size": 211883,
+              "requires_python": ">=3.11",
+              "upload_time_iso_8601": "2026-10-03T14:56:51.898495Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 33
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 145,
+            "not_wheel": 1
+          }
+        },
+        "3.15.0": {
+          "release_requires_python_allows": true,
+          "admitted": true,
+          "applicable_wheels": [
+            {
+              "filename": "websockets-17.2-cp315-cp315-win_amd64.whl",
+              "url": "https://files.pythonhosted.org/packages/5f/eb/25bdca25bbc329ffb330ef33993397d6556a871e40a0d196e757699ea3f7/websockets-17.2-cp315-cp315-win_amd64.whl",
+              "sha256": "aaead3d926e9ab4124ada727d20cd62d396649917822df4f771d1f07f1079b40",
+              "size": 218017,
+              "requires_python": ">=3.11",
+              "upload_time_iso_8601": "2026-10-03T14:56:02.914776Z",
+              "matching_tags": [
+                "cp315-cp315-win_amd64"
+              ],
+              "preference_rank": 0
+            },
+            {
+              "filename": "websockets-17.2-py3-none-any.whl",
+              "url": "https://files.pythonhosted.org/packages/8a/58/835cd51934d6780fa586f275b5d9901eead6d81569b4343b3767cdbaae4c/websockets-17.2-py3-none-any.whl",
+              "sha256": "6aa59f0ef92e796b2db6f5f26550c4713c0e4036899fadf02f55e2ed4db0b7ae",
+              "size": 211883,
+              "requires_python": ">=3.11",
+              "upload_time_iso_8601": "2026-10-03T14:56:51.898495Z",
+              "matching_tags": [
+                "py3-none-any"
+              ],
+              "preference_rank": 35
+            }
+          ],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 145,
+            "not_wheel": 1
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "3.14.8": {
+      "admitted_count": 48,
+      "not_admitted": []
+    },
+    "3.15.0": {
+      "admitted_count": 46,
+      "not_admitted": [
+        {
+          "name": "httptools",
+          "version": "0.8.0",
+          "release_requires_python": ">=3.9",
+          "release_requires_python_allows": true,
+          "admitted": false,
+          "applicable_wheels": [],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 49,
+            "not_wheel": 1
+          }
+        },
+        {
+          "name": "pyyaml",
+          "version": "6.0.3",
+          "release_requires_python": ">=3.8",
+          "release_requires_python_allows": true,
+          "admitted": false,
+          "applicable_wheels": [],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 72,
+            "not_wheel": 1
+          }
+        }
+      ]
+    }
+  },
+  "failures": [
+    {
+      "key": "python-3150",
+      "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+    },
+    {
+      "key": "python-3148",
+      "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+    }
+  ],
+  "raw_bytes": 1962222,
+  "original_registry_hash_matches": 48,
+  "protected_after": {
+    "package.json": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b",
+    "package-lock.json": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908",
+    "apps/web/package.json": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a",
+    "apps/web/package-lock.json": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d",
+    "apps/api/requirements.txt": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd",
+    "apps/api/.venv/pyvenv.cfg": "d23bc586f40b9aa9a601c8af0cab224cd4a40f0544a2f6348e9ad703f4d8ea39"
+  },
+  "protected_unchanged": true,
+  "free_after": 3648835584,
+  "limits": [
+    "Registry tags and Requires-Python admit files only; not runtime compatibility or complete resolver closure.",
+    "Changing Python markers can change the closure. No new dependency resolution was attempted.",
+    "No wheel or runtime was downloaded, installed or executed; no version or exception was selected.",
+    "No free-threaded, debug, ARM, Linux, provider, provenance, licence or security qualification.",
+    "Existing 18 library cases remain evidence only for their original CPython 3.14.5 environment."
+  ]
+}

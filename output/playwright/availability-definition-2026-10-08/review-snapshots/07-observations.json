@@ -1,0 +1,36 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Producer browser/layout inspection of one documentation disclosure; no application or SLI runtime proof",
+  "browser": "Chrome 154.0.8037.98",
+  "desktop_viewport": [
+    1440,
+    1100
+  ],
+  "desktop_document_width": 1440,
+  "narrow_viewport": [
+    320,
+    900
+  ],
+  "narrow_document_width": 320,
+  "native_summary_space_collapses": true,
+  "native_summary_enter_reopens": true,
+  "source_links_HTTP": [
+    200,
+    200
+  ],
+  "console_errors": 0,
+  "console_warnings": 0,
+  "stable_captures": [
+    "desktop-1440-stable.png",
+    "narrow-320-stable.png"
+  ],
+  "capture_conditions": "Browser prefers-reduced-motion:reduce; animations disabled for screenshot. No source capture CSS added. Initial default-motion element captures are inaccurate due scroll/capture movement and excluded.",
+  "not_proven": [
+    "physical phone",
+    "full WCAG",
+    "production availability",
+    "monitoring signals",
+    "integrated acceptance"
+  ]
+}

@@ -4,7 +4,8 @@
 
 | Field | Value |
 |---|---|
-| Status | Draft |
+| Status | TODO |
+| Product/definition | v1; D-069 |
 | Spec | `specs/{{ number }}-{{ slug }}/spec.md` |
 | Producer | |
 | Independent reviewer | |
@@ -19,10 +20,13 @@
 - [ ] User journeys include failure, denial, recovery, and accessible-equivalent paths
 - [ ] Requirements are measurable, implementation-independent, and traceable to evidence
 - [ ] No stale prototype, fictional proof, or draft claim is presented as production truth
+- [ ] Current product/definition is v1; factual technical/history versions stay accurate
+- [ ] D-068 deployment/provider/region/cost deferral and D-070 Europe-first/company/contact direction are preserved without invented operational proof
 
 ## Functional and Contract Requirements
 
 - [ ] Every functional requirement has an observable verification method
+- [ ] Product tests exercise actual behavior; prose/hash/schema-only checks are separate artifact evidence, not runtime proof
 - [ ] API, event, provider, and data contracts name producer/consumer, auth, data
   class, idempotency, failure, resume, and compatibility behavior as applicable
 - [ ] Draft isolation, approval separation, publication atomicity, and rollback are
@@ -31,6 +35,7 @@
 ## Technology Compatibility
 
 - [ ] Coupled packages/runtimes/browsers/cloud services are evaluated as a graph
+- [ ] All tools/frameworks/libraries use the latest mutually compatible stable set; independently newest observations and peer ranges alone are not selection proof
 - [ ] Context7 library IDs, query dates, and official primary sources are recorded
 - [ ] Current and proposed stable targets, peers, breaking changes, security,
   migration tests, exact locks, and rollback are defined
@@ -69,13 +74,14 @@
 ## Evidence, Review, and Approval
 
 - [ ] Exact validation commands and evidence locations are defined
-- [ ] Producer and independent reviewers are different
-- [ ] Revision limit is two, or three only for brand/UI/motion/3D
-- [ ] Root state, decisions, risks, manual actions, and changelog sync is required
-- [ ] Founder click-based approval and separate Git/external action gates are explicit
+- [ ] Independent reviewer differs from producer where review is required by D-097
+- [ ] No hard revision cap; repeated failures trigger diagnosis, not routine permission prompts
+- [ ] Relevant increment is defined; unrelated 3D/launch obligations remain in later increments
+- [ ] Owning references and compact checkpoint updated without routine narrative reports
+- [ ] Applicable founder/design and separate Git/external action gates are explicit
 
 ## Sign-Off
 
 | Reviewer | Scope | Date | Status/findings |
 |---|---|---|---|
-| | | | Pending |
+| | | | TODO |

@@ -1,0 +1,8 @@
+{
+  "attempt": "Initial default urllib user-agent direct source retrieval",
+  "terminal_error": "urllib.error.HTTPError: HTTP Error 403: Forbidden",
+  "observed_saved_preceding_sources": ["python-json.html", "python-decimal.html", "rfc8259.html"],
+  "position": "Fourth URL in source loop is FastAPI request reference; URL inferred from saved-prefix and source order, not printed by the exception.",
+  "canonical_changes_before_failure": false,
+  "retry": "Same public primary sources with explicitly identified research user agent; no login or access-control change."
+}

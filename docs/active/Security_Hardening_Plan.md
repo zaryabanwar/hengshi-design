@@ -3,6 +3,25 @@
 
 **Document ID:** SEC-HD-2026-001 | **Version:** 1.0 | **Date:** February 9, 2026
 
+## Historical proposal and controlling successor
+
+This February 2026 prototype proposal is retained as historical evidence. Its
+security score, CVSS estimates, open/closed labels, sprint schedule, package
+choices and numeric thresholds are neither current verified findings nor approved
+v1 implementation requirements. The `active` directory does not give it authority.
+
+Use the [current security/privacy contract](../phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md)
+for shared control boundaries, [recorded risks](../../RISKS.md) for current defects,
+and the [v1 security feature](../../specs/001-platform-security-hardening/spec.md)
+with its [bounded review and held inputs](../../specs/001-platform-security-hardening/reviews/security-feature-v1-2026-10-04.md).
+Historical suggestions cannot choose session, rate, retention, identity, provider
+or library mechanisms. The June plan/research/task artifacts are nonexecutable;
+application work requires the complete Phase 1 and applicable feature approvals.
+
+The [original bytes before this notice](../../output/research/legacy-security-authority-2026-10-05/Security_Hardening_Plan.pre-authority.md)
+remain preserved. The historical body below is unchanged; this notice introduces
+no remediation, application change, new acceptance or authority to execute a sprint.
+
 ---
 
 ## 1. Current Security Posture

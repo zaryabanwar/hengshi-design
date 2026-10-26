@@ -1,0 +1,188 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-17",
+  "scope": "Definition-only logical/query/profile candidate for existing IF-STAFF-10,16,18; no new endpoint, staff grant, workflow mutation, provider, key creation or application implementation.",
+  "cause": "process-fields.csv111-116 leaves allowlisted filters, bounded pagination, truthful result states and minimal operator summaries unresolved; SOF01 and the catalogue already require those reads.",
+  "authority": "Current staff identity/session plus explicit route action, query scope, per-object/purpose/consent/assignment eligibility and output admission. Four content roles are not an operational inheritance ladder. Unknown/missing grants deny; this proposal maps no people/groups and grants no unassigned/self-assignment privilege.",
+  "routes": [
+    {
+      "id": "IF-STAFF-10",
+      "method": "GET",
+      "path": "/api/v1/staff/handoffs",
+      "kind": "handoff_queue",
+      "filter": {
+        "name": "wing_key",
+        "values": [
+          "ROUTE-WING-STRATEGY",
+          "ROUTE-WING-DIGITAL",
+          "ROUTE-WING-AI-DATA",
+          "ROUTE-WING-IMMERSIVE",
+          "ROUTE-WING-CLOUD-TRUST"
+        ],
+        "meaning": "Optional published canonical wing restriction, never new queue authority."
+      },
+      "membership": "Currently purpose-permitted durably admitted handoff requests in requested/queued state whose existing approved queue-visibility policy permits this actor to inspect the minimal row. Not unconsented transcripts or a rule granting operators all unassigned requests. Unknown request outcomes remain in their own reconciliation, not silently deleted by this list.",
+      "item": {
+        "fields": [
+          "handoff_id",
+          "revision",
+          "recorded_at",
+          "wing_key"
+        ],
+        "meaning": "Own permitted handoff UUID, current record revision, immutable server record-creation UTC instant, canonical wing or explicit null when this admitted source has no wing. Filtered queries match only actual equal nonnull wings. recorded_at is record metadata, not exact arrival order, response time or SLA."
+      },
+      "details": "IF-STAFF-11 remains separately authorized minimum context; list grants no transcript, acceptance, decline or assignment."
+    },
+    {
+      "id": "IF-STAFF-16",
+      "method": "GET",
+      "path": "/api/v1/staff/alerts",
+      "kind": "alert_exceptions",
+      "filter": {
+        "name": "origin",
+        "values": [
+          "handoff",
+          "booking"
+        ],
+        "meaning": "Only the alert's existing parent operation family; current parent/query/purpose authority still applies."
+      },
+      "membership": "Existing alert-class intents with an unresolved external outcome or recorded unsuccessful delivery still requiring an approved recovery/disposition, and currently lawful parent/operational purpose. Closed resolved alert work is not an exception. This does not define recovery commands, retry limits or parent business success.",
+      "item": {
+        "fields": [
+          "intent_id",
+          "revision",
+          "recorded_at",
+          "origin",
+          "issue_class"
+        ],
+        "issue_class": [
+          "OUTCOME_UNKNOWN",
+          "ACTION_REQUIRED"
+        ],
+        "meaning": "Server-derived minimal read classifications of existing pending/unsuccessful alert work, not new stored workflow states. A classification cannot establish provider delivery or confirm/cancel the handoff/booking. No parent payload or provider response."
+      },
+      "details": "IF-STAFF-17 recovery requires its own current action/object and unknown-effect guards; the list never dispatches/reconciles it."
+    },
+    {
+      "id": "IF-STAFF-18",
+      "method": "GET",
+      "path": "/api/v1/staff/bookings/exceptions",
+      "kind": "booking_exceptions",
+      "filter": {
+        "name": "issue_class",
+        "values": [
+          "DUPLICATE",
+          "MISSING",
+          "MISMATCH",
+          "ALERT",
+          "NO_SLOTS",
+          "OUTCOME_UNKNOWN"
+        ],
+        "meaning": "Minimal classification of already-recorded scoped exception; not a raw provider reason or customer lookup."
+      },
+      "membership": "Already-recorded unresolved/held/escalated booking exceptions visible under current exception/lineage/query purpose. Resolved work is excluded. A current no-slot result or an unknown provider read alone cannot create an exception record or a business transition through GET.",
+      "item": {
+        "fields": [
+          "exception_id",
+          "lineage_id",
+          "revision",
+          "recorded_at",
+          "issue_class"
+        ],
+        "meaning": "Exception and own authorized lineage UUIDs, current exception revision, immutable exception-record creation UTC instant and closed read classification. Mapping of stored evidence to these classes must be explicit; unknown mapping causes unavailable, not guessed classification."
+      },
+      "details": "IF-STAFF-19 disposition and IF-STAFF-07 authoritative reconciliation remain separate; list cannot verify email, invent occurrence/slot truth or erase duplicate/unknown evidence."
+    }
+  ],
+  "projectionRules": {
+    "minimal": "No name/email/organization/brief, transcript/message, consent/role history, staff directory/contact, raw provider/debug/error, bearer/CSRF, meeting URL, recovery command or arbitrary JSON payload is delivered.",
+    "metadata": "UUID/positive revision and canonical UTC instant reuse existing value helpers. Each source needs explicit immutable recorded_at plus a unique immutable item identifier and current object revision; no field is taken from a visitor clock. Actual store/column/index and classification mappings need reviewed physical binding before implementation.",
+    "authorizationBeforePaging": "Apply current route/query and row/purpose predicates before ordering, LIMIT, lookahead, membership and result counts. A denied row cannot appear through count/has_more, cursor or timing categories. Unknown permission/storage/purpose/classification is unavailable, not an excluded row or a success empty page.",
+    "outputFence": "Compose one coherent page and row revisions from one admitted database observation. The complete output dependency set includes all returned rows; every unreturned eligible lookahead row used for has_more; current source objects of the incoming ceiling and after keys; and every source-derived ceiling/after key emitted in a next cursor. Deduplicate repeated objects. Recheck current staff session/action/query authority and every dependency's current object/purpose/consent/assignment and source-copy expiry fence at output admission immediately before first byte. Historic permission, a valid MAC and an unexpired navigation window do not authorize re-emission of a source key. If known dependency eligibility or a participating fence changes, send the generic page_changed/restart_view result without any partial page, shortened result, guessed has_more or replacement cursor. Unknown/missing authoritative fence/source state yields safe service_unavailable, not an empty result; current route/session/action denial stays uniform request_denied. Previously transmitted bytes cannot be recalled. Reads do not renew staff clocks, mark seen, mutate work, acquire assignment or dispatch reconciliation."
+  },
+  "query": {
+    "first": "No query or a closed set of optional limit and the route's one allowlisted filter. limit is canonical ASCII decimal1..25 with no sign, leading zero, whitespace or coercion; default25. Parameter names/enum values are exact case-sensitive ASCII. Reject duplicates, aliases, unknown fields, empty values, bracket/array forms, percent/plus encodings and stray separators; no sort, offset, owner, tenant, raw ID, SQL or free-text filter.",
+    "continuation": "Exactly one cursor parameter and nothing else. Route/filter/limit/scope position are bound by the current server's verified cursor; a caller cannot combine a cursor with new filters or limit.",
+    "transport": "Same-origin HTTPS staff-cookie fetch, no JSON/request body, conditional/range fields, cross-origin CORS, JSONP, HTML/login/provider redirect or browser Bearer fallback. A present Origin must exactly match trusted configured origin; null/malformed/foreign denies. Missing Origin is not identity evidence. Available Fetch Metadata must say same-origin for these fetches; missing metadata never removes cookie/action/object guards. Staff business CSRF mutation rules remain separate; GET performs no business effect."
+  },
+  "paging": {
+    "order": "Descending immutable (recorded_at,item_id) total order, where item_id is the handoff/intent/exception identifier. Apply row authority first. First page fixes the highest eligible key as ceiling; later pages use key<after and key<=ceiling. No OFFSET, arbitrary sort or locked/long-lived transaction across browser requests.",
+    "observation": "Each page is one live current database observation, not a frozen multi-page snapshot, complete export or claim that every matching row has been seen. Concurrent inserts/late commits, membership changes, corrections/deletions and authorization changes can affect later pages; refresh first page to observe current head. Never use a PostgreSQL sequence allocation as proof of commit order. Page end means no further currently eligible row under this page's query boundary at its observation, not no work anywhere or forever.",
+    "lookahead": "Within the same complete scoped observation fetch at most limit+1 eligible rows. Return at most limit rows; has_more is true only when lookahead establishes another eligible row. If true, a next cursor is present and the page contains limit rows; otherwise next_cursor is null. Empty items requires false/null. Do not return partial success on timeout, missing shard/source, authority uncertainty, mapping failure or output-fence change. The unreturned lookahead participates in the same current output fence; losing it before output cannot be hidden by returning has_more:false or a shortened success. See the complete dependency rule.",
+    "result": "One route-discriminated closed page with kind, items and page metadata {limit, has_more, next_cursor, consistency:live}. No total/matched/denied counts, scope inventory or hidden-row references. Exact response/request/error modules remain next wire work; no current schema assertion is made.",
+    "client": "Deliberate Open/Next/Refresh only, no background polling, automatic crawl/export or retry. Each page replaces the visible page rather than claiming an accumulated immutable collection. If a UI keeps still-permitted in-memory prior pages, deduplicate by item ID/current revision and label them last observed; fresh detail authorization is required before action. Selection/filter/navigation/auth epochs fence late responses and errors; current authority loss clears private pages. Cursor expiry/change preserves only still-permitted filters/work and offers deliberate first-page refresh; it does not end a task, discard an admitted operation or reset staff/session/retention clocks. Accessibility/timing treatment needs complete-process design review.",
+    "dependencies": "A continuation re-admits its incoming ceiling and after sources under current minimal-row inspection, route/filter membership and source-copy purpose/expiry; it cannot assume historical source metadata remains permissible. A known deleted/expired/revoked/no-longer-eligible anchor requires generic restart without re-emitting its key. Unknown source/fence state is unavailable. The at-most limit+1 eligible ordered rows and at-most two incoming anchor source lookups are distinct bounded logical observations, deduplicated to at most limit+3 source dependencies (28 at limit25); this is not a bound on database scan work or a selected index/query plan. All dependencies participate in one admitted coherent page/output-fence decision within the common deadline. No key metadata is retained server-side just to keep navigation alive."
+  },
+  "cursorCandidate": {
+    "method": "Use a bounded stateless integrity-protected non-bearer bookmark rather than an unbounded server cursor store or a database transaction held between HTTP requests. It is not encrypted: include only record keys already permitted on the originating page, public route filter enums, limit and timing. No principal/session ID, grant, contact/content, secret, raw provider data or new source identity is exposed in payload. Originating-page permission alone is insufficient: incoming anchors and every reissued source key must still have current minimal-row disclosure and source-copy eligibility. The cursor is not independent historical evidence.",
+    "format": "Propose q1.<payload>.<tag>, exactly three components. payload is canonical unpadded base64url of at most512 strict UTF-8 bytes; tag is canonical unpadded base64url of the full32-byte HMAC-SHA256,43 chars. Entire cursor at most768 ASCII chars; no padding/whitespace/noncanonical trailing bits. Closed payload: protocol1, filter (exact route allowlist or null), limit1..25, ceiling and after keys {recorded_at,item_id}, issued_at and expires_at. Exact representation/decoder/temporal module requires its own wire review.",
+    "binding": "Authenticate a length-delimited domain-separated message containing fixed purpose hsd-operator-page-q1, trusted route ID, actual current server staff session identity, principal identity, current approved action/query-scope policy fence and exact decoded payload bytes. These trusted bindings are not supplied by the cursor. Verify current session/action before cursor interpretation; compare the full MAC in constant time. Per-row current authority is still separately checked, even with a valid bookmark. JWT rotation within the same eligible login session does not create a new bookmark grant or extend its life.",
+    "lifetime": "First-page issued_at anchors a maximum600-second window; every descendant cursor retains that original issued_at/expires_at and ceiling/filter/limit. No GET, token rotation, retry or new page renews it. Require supported current trusted time, issued<=now<expires and expires-issued<=600sec; unknown time/fence/key denies rather than extending. Expiry is a navigation refresh condition, never a qualification/booking/retention timeout. The600seconds is only a maximum navigation window, never a new metadata-copy retention grant. Each bookmark and in-memory page is bounded by the earliest applicable source-copy expiry and current purpose. Before minting a descendant, recheck all incoming and outgoing key sources and the unreturned lookahead; retain original chain times rather than reissuing life. A known source expiry/revocation/membership loss requires restart; unknown authority/source-copy state is unavailable. No independently necessary historical-key purpose is selected or assumed.",
+    "failures": "After current route admission, malformed/tampered/expired/wrong-session/wrong-route/changed-scope bookmarks all produce the same safe page_changed/restart_view outcome with no reason or payload echo. Cheap outer target/length/syntax refusals remain object independent. Never fall back to an unsigned cursor or reinterpret as an ID.",
+    "keys": "Purpose-separated high-entropy protected server key with no JWT/CSRF/proof-key reuse; no key is created, requested, configured or logged by this definition. Key custody, distributed binding/fence and approved cryptographic implementation remain held. Rotation can invalidate old bookmarks and require restart rather than retaining an unbounded old-key set. Python's standard hmac primitive and constant-time comparison are candidates before adding a signing library; no production algorithm/library/runtime selection follows from this proposal.",
+    "privacy": "Bookmarks remain linkable private query data despite no bearer power. Redact query values in gateway/access/audit/analytics/referrer diagnostics; no local/session storage, public links, search indices or saved browser history state. Approved minimum operational audit can record route/class/result without cursor or item payload. Returning a bookmark never authorizes the next read. Source keys and in-memory page copies cannot outlive their currently permitted source purpose/expiry; redact/discard on current loss and fence late replies. Do not persist bookmarks to evade source deletion or to enable a longer audit/navigation purpose. Any future separately necessary metadata purpose needs its own reviewed accepted binding."
+  },
+  "resources": {
+    "pool": "Proposed single32-reader pool shared by these three routes from receive through auth/query/encoding/output/draining, no hidden queue and one admitted reader per eligible staff session. Refuse aggregate overload without private detail; only current authorized sessions may allocate context-keyed limiter state.",
+    "rate": "At most60 starts per rolling60 seconds per issued eligible staff session across all three routes/tabs/JWT rotations/workers; at most1024 live limiter keys, no unauthenticated selector keys or eviction/reset of active state. Retire only after rolling window and known work settlement. Manual client starts spaced at least one second;429 tells the next manual attempt to wait30sec. These are unmeasured initial targets, not an SLA, chosen workload or bought capacity.",
+    "intake": "Proposed request target<=1024bytes, decoded headers<=16384bytes including aggregate Cookie values<=8192, at most64 fields, header/framing receive<=5sec, no request content/type/encoding/transfer body. Trusted ingress owns actual consistent HTTP-version framing enforcement.",
+    "execution": "Proposed2sec authority/query/serialization deadline after admitted headers,5sec body-delivery deadline and10sec client observation deadline. No release of reservations on abort/timeout before known settlement; failure yields safe unavailable or closes incomplete transport, never a second result.",
+    "output": "Serialize an entire authorized JSON response before headers. Success<=32768 emitted UTF-8 bytes; fixed body errors<=1024; identity/no Content-Encoding, no-store and nosniff for every route-owned result, no ETag/Last-Modified/304/Set-Cookie/CSRF issuance. A future independently approved authentication transport rotation cannot count as list activity or extend session boundaries."
+  },
+  "outcomes": {
+    "200": "page including a truthfully empty scoped complete page; no action grant or all-system completeness",
+    "400": "invalid_request/correct_request, no submitted query echo",
+    "403": "request_denied/check_access for unknown/invalid/expired staff session or missing current route/query/object disclosure authority; no private condition/existence reason. Reauthentication and any authentication challenge remain the separately reviewed staff identity boundary, not a redirect or credential fallback here.",
+    "409": "page_changed/restart_view for bookmark/fence/stale-page issues after route admission; no underlying reason. No silent filter widening.",
+    "429": "request_limited/wait, Retry-After30, no owner/existence/quota disclosure",
+    "503": "service_unavailable/refresh_view for incomplete/unknown authoritative query, output or resource-state result; not empty/complete",
+    "otherTransport": "Object-independent bodyless405/AllowGET,501,406,414 and431; bodylessHEAD refusal omits hypothetical GET Content-Length. Unexpected route-owned500 is fixedinternal_error/refresh_view without private diagnostics. Intermediary errors are observation failures, not queue/operation outcomes."
+  },
+  "futureOracles": [
+    "Wrong-role/admin-only/unmapped action and cross-scope rows cannot leak through items, count, lookahead, cursor or error.",
+    "Empty permitted query and unavailable/incomplete source differ; all rows and has_more derive from one coherent scoped observation.",
+    "Concurrent assignment/consent/permission or source-copy expiry change between lookup and output fences the whole page. Revoke only an unreturned lookahead: no denied has_more bit/cursor. Revoke/expire only an incoming ceiling/after source while other rows remain allowed: no forbidden key reissue or extension; unknown dependencies yield unavailable, never empty/partial success.",
+    "First/next pages use unique immutable order; late commits and membership changes are live observations, never a certified complete export; cursor descendants do not extend600sec.",
+    "Cursor byte tamper, wrong route/session, grant-scope change, noncanonical encoding, missing key/fence and expiry fail without payload/existence hints or unsafe fallback.",
+    "Reads do not mark seen, assign, accept/decline, dispatch/reconcile providers, renew idle/absolute access, consent or retention.",
+    "Three-route/two-tab/JWT-rotation limits share admission; slow/aborted/draining queries keep reservations and unknown accounting cannot become zero.",
+    "Authorized detail/mutation still rechecks current object/state/revision; alerts or list classification never establish booking/handoff/provider success.",
+    "HTTP/raw/byte/no-store/HEAD and source/purpose mappings need actual-boundary evidence after implementation; schema fixtures later prove representation only."
+  ],
+  "primarySupport": [
+    {
+      "source": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html#validate-the-permissions-on-every-request",
+      "checked": "2026-10-17",
+      "meaning": "Per-request/action/object permission and deny-by-default guidance; no Hengshi role grant or chosen output shape."
+    },
+    {
+      "source": "https://www.postgresql.org/docs/18/transaction-iso.html",
+      "context7": "/websites/postgresql_18",
+      "checked": "2026-10-17",
+      "meaning": "READ COMMITTED commands can observe different committed snapshots; no cross-request immutable-snapshot claim. Documentation input, not database version selection or installation."
+    },
+    {
+      "source": "https://www.postgresql.org/docs/18/queries-limit.html",
+      "checked": "2026-10-17",
+      "meaning": "LIMIT needs a unique predictable ORDER BY; high OFFSET performs skipped work. Does not prescribe these scopes, cursor or limits."
+    },
+    {
+      "source": "https://www.rfc-editor.org/rfc/rfc2104.html",
+      "checked": "2026-10-17",
+      "meaning": "HMAC is keyed integrity, not encryption. Candidate uses SHA256, not the historical document's example hashes."
+    },
+    {
+      "source": "https://docs.python.org/3/library/hmac.html",
+      "checked": "2026-10-17",
+      "meaning": "Standard-library HMAC and constant-time comparison are candidates; installed/selected runtime and full compatibility graph remain separate."
+    }
+  ],
+  "acceptance": "Requires independent security/architecture review, exact closed wire/HTTP/error and cursor representation, scoped data/dictionary/physical/policy bindings, workload/resource qualification, complete-process design/accessibility and integrated founder acceptance. No source field/grant, key custody, mutation, provider, exact stable stack, operational legality or actual runtime is adopted.",
+  "revision": {
+    "producerCorrection": 1,
+    "maximum": 2,
+    "finding": "OPREAD01",
+    "meaning": "Fence all output derivation and cursor source dependencies under existing current authority and source-copy expiry; no new retained metadata purpose."
+  }
+}

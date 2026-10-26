@@ -1,0 +1,94 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "review_authorized": false,
+  "scope": "Proposed DE-08/DE-14 verifier/challenge retirement and one proof-contract reference only. Earlier periods, bearer representation, consent, visitor access policy, roles and operation budgets remain unchanged. No implementation or new processing permission.",
+  "inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "output/research/proof-disposition-2026-10-09/review-inputs/AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "output/research/proof-disposition-2026-10-09/review-inputs/.specify/memory/constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "output/research/proof-disposition-2026-10-09/review-inputs/DECISIONS.md",
+      "bytes": 86352,
+      "sha256": "dd31d6026aedd1a03e966e055724b2f02783147291525f1740341848837eed74"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "output/research/proof-disposition-2026-10-09/review-inputs/docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "bytes": 85918,
+      "sha256": "88e573ff4d07dc1c3c257e05d537d6857a5940fb2fc6493a4cae787b1317252b"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "snapshot": "output/research/proof-disposition-2026-10-09/review-inputs/docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "bytes": 111427,
+      "sha256": "59b274bbdd26741f82a54d94bdc391424c35e9db34fd0a4dcb5dccfac426048f"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/data-classification.csv",
+      "snapshot": "output/research/proof-disposition-2026-10-09/review-inputs/docs/phase-1-architecture/contracts/data-classification.csv",
+      "bytes": 5615,
+      "sha256": "c8793ebfb401178b4175f0f6c7b9cfb14edcd606f370090883cbe2be94f0cd6e"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/data-entities.csv",
+      "snapshot": "output/research/proof-disposition-2026-10-09/review-inputs/docs/phase-1-architecture/contracts/data-entities.csv",
+      "bytes": 8956,
+      "sha256": "ec55f41329d521c36014e8e77b863013a7c0a24a6917706767f59f9227525e64"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/record-purpose-binding-v1-2026-10-08.md",
+      "snapshot": "output/research/proof-disposition-2026-10-09/review-inputs/docs/phase-1-architecture/contracts/reviews/record-purpose-binding-v1-2026-10-08.md",
+      "bytes": 2684,
+      "sha256": "5732720075de72fbb26973dff696f6864cc222b350b834d15f8237bf89c29be4"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/visitor-proof-encoding-v1-2026-10-07.md",
+      "snapshot": "output/research/proof-disposition-2026-10-09/review-inputs/docs/phase-1-architecture/contracts/reviews/visitor-proof-encoding-v1-2026-10-07.md",
+      "bytes": 3894,
+      "sha256": "7d0fdb15caeaebdb5bd2a26a01067058f90e11ec83e2565406810f840119a8c4"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "snapshot": "output/research/proof-disposition-2026-10-09/review-inputs/docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "bytes": 59791,
+      "sha256": "bdb8ae0e8fc9afd1fd6cd2605d2db3005b4be9541e7a0ec159ab5bf7ed2f7e82"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "snapshot": "output/research/proof-disposition-2026-10-09/review-inputs/docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "bytes": 117449,
+      "sha256": "bc8fb1441398c60e4a20b982899334895b571aa0a71238f6fcb7b9645fa1a33b"
+    },
+    {
+      "source": "output/research/proof-disposition-2026-10-09/DATA_CONTRACT.before.md",
+      "snapshot": "output/research/proof-disposition-2026-10-09/DATA_CONTRACT.before.md",
+      "bytes": 54144,
+      "sha256": "f5099d6956e907a4f67ae221ca21fda64e35f04196def944f5e716fea6b97e19"
+    },
+    {
+      "source": "output/research/proof-disposition-2026-10-09/PRIVATE_PROCESS_PROOF.before.md",
+      "snapshot": "output/research/proof-disposition-2026-10-09/PRIVATE_PROCESS_PROOF.before.md",
+      "bytes": 116413,
+      "sha256": "12314d8567e4f4c0f63c944aae6caa09657240bf40042191b983f4be5b6599ae"
+    }
+  ],
+  "primary_guidance_checked": "2026-10-09",
+  "primary_guidance": [
+    "https://commission.europa.eu/law/law-topic/data-protection/information-business-and-organisations/principles-gdpr_en",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#session-expiration"
+  ],
+  "guidance_limit": "Online primary guidance informs the proposal; these links are not frozen source bodies or source-prescribed field rules. The EUR-Lex retrieval required JavaScript and was not used as retrieved substantive evidence.",
+  "required_review": "Independent security/privacy review and integrated founder acceptance remain. The pending backend-role/advisory review request does not authorize this separate scope.",
+  "verification_limit": "Producer-only textual preservation/local reference/protected-input checks; no runtime tests or legal clearance."
+}

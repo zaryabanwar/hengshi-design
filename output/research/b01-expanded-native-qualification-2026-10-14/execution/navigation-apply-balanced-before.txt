@@ -1,0 +1,40 @@
+
+  - button "Multiplayer tools":
+  - group "Prototype view":
+    - button "Present":
+    - button "Prototype view":
+  - button "Share"
+  - tablist:
+    - tab "Design":
+      - generic: Design
+      - generic: Design
+    - tab "Prototype" [selected]:
+      - generic: Prototype
+      - generic: Prototype
+  - button "65%, zoom and view options":
+    - text: 65%
+  - generic: Add interactivity with Make
+  - button "Close":
+  - generic "Mock video of sample images shuffling"
+  - text: Figma Make opens up new ways to prototype—from responsive components to micro-interactions.
+  - button "Try Figma Make":
+    - generic: Try Figma Make
+  - button "Interactions":
+    - generic: Interactions
+  - button "Add action":
+  - heading "Scroll behavior" [level=2]
+  - generic: Position
+  - combobox "Position":
+    - generic: Scroll with parent
+  - generic: Overflow
+  - combobox "Overflow" [disabled]:
+    - generic: No scrolling
+  - button "Show prototype settings":
+    - generic: Show prototype settings
+  - text: Removing a connection
+  - button "Close":
+  - generic: To delete a connection, click and drag on either end.
+  - text: Running your prototype
+  - button "Close":
+  - generic: Use the play button in the toolbar to play your prototype. If there are no connections, the play button can be used to play a presentation of your frames.
+  - slider "Resize handle"

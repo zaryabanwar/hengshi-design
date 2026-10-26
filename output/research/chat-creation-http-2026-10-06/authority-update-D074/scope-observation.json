@@ -1,0 +1,18 @@
+{
+  "authority": "D-074",
+  "new_manifest_sha256": "4a9ff0fd0fe63d3fd0096827f9148870529cf0b33458561492741fe0dd290c00",
+  "context_changes_only": [
+    "DECISIONS.md",
+    "TASKS.md"
+  ],
+  "protected_guard_context_updates": [
+    {
+      "path": "TASKS.md",
+      "before": "158e06c0d8cd67859c8b459b96dce3449cb4d16788d3c520e99d8823f72edcd3",
+      "after": "527175e519d7f71583407d7e42d4e3efdf6587aa013be7a880a378dfc76d2702",
+      "authority": "D-074 reference reconciliation"
+    }
+  ],
+  "earlier_packet_and_all_reviewed_body_inputs_preserved": true,
+  "independent_verdict": null
+}

@@ -1,0 +1,19 @@
+{
+  "result": "REVISE",
+  "reviewer": "/root/review_directory_references_v1",
+  "correction": 1,
+  "manifest_sha256": "8fbd24be426ae6f686cad8111b6d49bb3ff3beeffb7b38ae07ef63c6a86f468a",
+  "resolved_findings": [
+    "BS01"
+  ],
+  "findings": [
+    {
+      "id": "BS02",
+      "reason": "Exclusive-write protection must extend through actual effect completion or positively established no-effect settlement, including uncertain in-flight work; dispatch alone is insufficient."
+    }
+  ],
+  "initial_final_matching_pairs": 23,
+  "other_inputs_unchanged": 22,
+  "scope": "Logical discovery scheduling lifecycle only for existing IF-BOOK-05/06/08/09, two canonical documents; no exact wire or runtime acceptance",
+  "runtime_tests": "None"
+}

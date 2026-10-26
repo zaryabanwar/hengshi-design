@@ -1,0 +1,24 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-15",
+  "edge": {
+    "control": "147:3284",
+    "source": "147:3271",
+    "target": "147:3403"
+  },
+  "steps": [
+    "Entry Detailed active; open menu",
+    "Choose Balanced: Detailed active, Balanced pending",
+    "Scroll to visible Apply",
+    "First activation timed out before effect: scrolled up and confirmed Detailed active; no automatic duplicate click",
+    "One verified retry of Apply",
+    "Scroll back: Balanced active and selected; Services context/open panel retained"
+  ],
+  "proof": [
+    "preview-before-apply-balanced-pending.png",
+    "preview-after-apply-scrolled.png",
+    "preview-after-apply-balanced-active.png"
+  ],
+  "limits": "Native producer observation of one same-set Apply transition only. No actual WebGL mode change, reentry/runtime/accessibility, paired reset/preserve or full ENQ verdict."
+}

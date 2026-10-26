@@ -1,0 +1,49 @@
+{
+  "cause": "Virtualized-row coordinate selection did not settle on requested node; captured old selection, not observed geometry failure",
+  "requested": "85:3280",
+  "actual": "85:3301",
+  "preserved": [
+    {
+      "expected": {
+        "symbol": "H_OPEN_H",
+        "id": "85:3301",
+        "x": 1160,
+        "y": 1230,
+        "active": "HIGH",
+        "pending": "HIGH",
+        "directory": "OPEN"
+      },
+      "observed": {
+        "x": 1160,
+        "y": 1230,
+        "width": 320,
+        "height": 1150,
+        "active": "HIGH",
+        "pending": "HIGH",
+        "directory": "OPEN"
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "symbol": "H_CLOSED_H",
+        "id": "85:3280",
+        "x": 780,
+        "y": 1230,
+        "active": "HIGH",
+        "pending": "HIGH",
+        "directory": "CLOSED"
+      },
+      "observed": {
+        "x": 1160,
+        "y": 1230,
+        "width": 320,
+        "height": 1150,
+        "active": "HIGH",
+        "pending": "HIGH",
+        "directory": "OPEN"
+      },
+      "pass": false
+    }
+  ]
+}

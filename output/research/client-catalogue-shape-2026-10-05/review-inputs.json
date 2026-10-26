@@ -1,0 +1,80 @@
+{
+  "purpose": "Closed client catalogue shape, encoding explanation and local schema tooling only",
+  "inputs": [
+    {
+      "source": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "snapshot": "00-PUBLICATION_CONTRACT.md",
+      "sha256": "cc3bcdff306aee54cf32ae6b40a7dd18b14dcc7947c45351fad50bbeb639e538"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/client-build-catalogue.schema.json",
+      "snapshot": "01-client-build-catalogue.schema.json",
+      "sha256": "d41b989a4d5ab29178a7c498b200c82093ce9f09c34e3b8a2a42b68c56f5e0bf"
+    },
+    {
+      "source": "scripts/validation/test_client_catalogue_schema.py",
+      "snapshot": "02-test_client_catalogue_schema.py",
+      "sha256": "30e43e6ac516dc11bb6931e8d6b52eea65303a2d8cb29becde848ad931eaf909"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/publication-manifest.schema.json",
+      "snapshot": "03-publication-manifest.schema.json",
+      "sha256": "d3620c8326246bc34040188de610c5823f1013936572d3ffb63a5eb350bc3852"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/publication-preparation.schema.json",
+      "snapshot": "04-publication-preparation.schema.json",
+      "sha256": "23c3569baa844a542dd8f7a283af87f50b93dfa1fdf3ccef2c401136c8acc2ac"
+    },
+    {
+      "source": "docs/phase-1-3d/SCENE_ASSEMBLY_CONTRACT.md",
+      "snapshot": "05-SCENE_ASSEMBLY_CONTRACT.md",
+      "sha256": "cb51f5a98c2f1453fcaaa5176eb8cda47288d8ee5dc1d0f2db66dba499ccd062"
+    },
+    {
+      "source": "docs/phase-1-3d/gltf-resource-map.schema.json",
+      "snapshot": "06-gltf-resource-map.schema.json",
+      "sha256": "8d5cece4c921823c96e02c8f35707d991f391f560d261dcf2d9ff07e8c9fd939"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "07-SECURITY_PRIVACY_CONTRACT.md",
+      "sha256": "74ab420b5bec9f0aad72f59178f4ea7c626bd14edfa9d4ba02f3aa1dd0a1a254"
+    },
+    {
+      "source": "docs/phase-1-3d/CAMPUS_ASSET_BUILD_SPEC.md",
+      "snapshot": "08-CAMPUS_ASSET_BUILD_SPEC.md",
+      "sha256": "42b0d89074b968704fa44d7ae40803ab4f5fab3f39c64a671ee75b2da66ba9e3"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/scene-bootstrap-v1-2026-10-05.md",
+      "snapshot": "09-scene-bootstrap-v1-2026-10-05.md",
+      "sha256": "dbbd79fffcec1a12e7ae8e61061805724b335f6eaa3624a6fce7edbb2b3650a4"
+    },
+    {
+      "source": "specs/003-3d-experience-completion/spec.md",
+      "snapshot": "10-spec.md",
+      "sha256": "2aceefa18e51bd11a450d79b2c75d0a2f3a0783baac785de12e56956fa03d4f9"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "11-DECISIONS.md",
+      "sha256": "1d53a14ac3347ebeefeeb728e03862b09de111b748cef4e48d5f4ca19141b6d8"
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "12-AGENTS.md",
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "13-constitution.md",
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "before closed catalogue proposal",
+      "snapshot": "PUBLICATION_CONTRACT.before.md",
+      "sha256": "ae2db6111412f8ec5117a41b4c39ecce617eb76452bc4be50679200b56fc1b79"
+    }
+  ]
+}

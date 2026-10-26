@@ -186,7 +186,7 @@ timeout is not a user time limit and cannot substitute for that branch decision.
 
 Every future reference frame/evidence object uses:
 
-`HSD_UIR_<BATCH>_<TEMPLATE>_<INSTANCE>_<STATE>_<VIEWPORT>_<MODE>_V<NN>`
+`HSD_UIR_<BATCH>_<TEMPLATE>_<INSTANCE>_<STATE>_<VIEWPORT>_<MODE>_<STREAM>_V<NN>`
 
 Rules:
 
@@ -197,6 +197,7 @@ Rules:
   source ID;
 - `<STATE>`, `<VIEWPORT>`, and `<MODE>` use IDs from
   `responsive-state-mode-matrix.csv` with hyphens converted to underscores;
+- public `<STREAM>` is STREAM_HIGH, STREAM_MEDIUM, STREAM_LOW or STREAM_SEMANTIC; excluded staff evidence uses SCOPE_EXCLUDED at this position and stream_id=STREAM-SCOPE-EXCLUDED, never a fifth stream;
 - versions begin at `V01`; revisions increment without renaming the stable
   template/instance source IDs; and
 - filenames, page names, and review comments may add human-readable labels, but
@@ -204,7 +205,7 @@ Rules:
 
 Example:
 
-`HSD_UIR_B06_TPL_BOOKING_INST_ROUTE_BOOK_STATE_EMAIL_PENDING_VP_320_MODE_KEYBOARD_V01`
+`HSD_UIR_B06_TPL_BOOKING_SHELL_INST_ROUTE_BOOK_STATE_EMAIL_PENDING_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01`
 
 The inventories provide unique baseline names. Later producers generate
 additional names deterministically from the same grammar and must reject
@@ -287,9 +288,12 @@ Delivery stream is a fifth dimension, but unlike state, viewport, and mode it is
 `component-primitives.csv` carries `stream_presence`: the set of delivery streams in
 which that primitive is present, drawn from `S-HIGH`, `S-LOW`, `S-MEDIUM`,
 `S-SEMANTIC`, or the single token `STREAM-SCOPE-EXCLUDED` for a primitive that exists
-only on an excluded surface. A template's presence set is the union of the presence
-sets of its `primitive_dependencies`; a route inherits its template's set; a flow
-inherits the union over its templates. No route, flow, or template row carries a
+only on an excluded surface. A public template's presence is the union of its
+resolved alternative hosts intersected with the intersection of required content
+support; empty content adds no restriction. Mixed public/staff hosts and excluded
+content on public hosts are errors. Staff templates have an empty public set and
+explicit excluded scope. A route inherits its template's set; a flow inherits the
+union over its templates (accepted evidence model section 4.2). No route, flow, or template row carries a
 stream column, and the validator forbids one.
 
 This replaces the D-043 arrangement, in which every record carried an assigned
@@ -371,7 +375,7 @@ batch has a machine-readable `TL-*` selection:
 - `TL-REMOVABLE-ADJUSTABLE`: the user can turn the limit off or adjust it before
   encountering it over the criterion-supported range;
 - `TL-WARN-EXTEND`: warn at least **20 seconds** before expiry and provide a
-  simple extension of at least **10 times** the default limit;
+  simple action with at least **ten extension opportunities**;
 - `TL-EXCEPTION`: only a documented criterion-supported exception naming the
   affected complete process, rationale, fallback, preservation behavior, and
   independent accessibility-review acceptance; or
@@ -563,3 +567,17 @@ durable records only after clean independent design and accessibility reviews;
 later integration does not contradict this time-bounded freeze statement.
 External Figma/Stitch production/write authorization remains false until its
 separate future manual gate is explicitly accepted.
+
+
+### D-060 scoped boundary allocation
+
+The accepted boundary-evidence-allocation.csv registry assigns B07 eight
+mapped/ancestor destination triples and twelve directed cases. Four identities
+are allocation-only: STATE-BOUNDARY-TO-SEMANTIC, STATE-ANCESTOR-TO-SEMANTIC,
+STATE-BOUNDARY-TO-WORLD and STATE-ANCESTOR-TO-WORLD. Ordinary shared profile axes
+and per-stream generation exclude them. Only the exact registry owner/template/
+state/destination combinations resolve. B01 retains same-shell proof and names
+B07 deferrals. Distinct destination FRAMEs and directed ANNOTATION cases show
+visible incoming control focus, the approved five-step ordering, and explicit
+ancestor substitution. Production annotation encoding is in the D-060 section
+of UI_REFERENCE_PRODUCTION_CONTRACT.md; all visual production remains gated.

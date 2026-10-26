@@ -1,0 +1,109 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Navigation consolidation, unchanged authority and two QA coverage rows plus review-reference paragraph; no subject definition or runtime change",
+  "inputs": [
+    {
+      "source": "docs/software-definition/README.md",
+      "snapshot": "output/research/definition-entry-consolidation-2026-10-08/review-snapshots/00-README.md",
+      "bytes": 7503,
+      "sha256": "a4907696b81b7bc7949a02e712970615122459b124b8fee836d731320181ccba"
+    },
+    {
+      "source": "docs/software-definition/04-reconciliation-map.md",
+      "snapshot": "output/research/definition-entry-consolidation-2026-10-08/review-snapshots/01-04-reconciliation-map.md",
+      "bytes": 84303,
+      "sha256": "5d102c2b359e51e9d9d3a4fcbaa1802432c43bfe48df8811240ff1af2b2d8c4e"
+    },
+    {
+      "source": "output/research/definition-entry-consolidation-2026-10-08/README.before.md",
+      "snapshot": "output/research/definition-entry-consolidation-2026-10-08/review-snapshots/02-README.before.md",
+      "bytes": 22998,
+      "sha256": "1e70a6b3033ef224184c99cdf44725dba87cc271759549bbf0f9950e2580341e"
+    },
+    {
+      "source": "output/research/definition-entry-consolidation-2026-10-08/reconciliation-map.before.md",
+      "snapshot": "output/research/definition-entry-consolidation-2026-10-08/review-snapshots/03-reconciliation-map.before.md",
+      "bytes": 82620,
+      "sha256": "321f5f895dc8585d28042b27f2ae0468dc6cc92cfb20764c3979908ee733f419"
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "output/research/definition-entry-consolidation-2026-10-08/review-snapshots/04-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "output/research/definition-entry-consolidation-2026-10-08/review-snapshots/05-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "PROJECT.md",
+      "snapshot": "output/research/definition-entry-consolidation-2026-10-08/review-snapshots/06-PROJECT.md",
+      "bytes": 10942,
+      "sha256": "a483bd2713fe420322772ab7fb07c848aaf103088697c05ab91f35d2e5ea1461"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "output/research/definition-entry-consolidation-2026-10-08/review-snapshots/07-DECISIONS.md",
+      "bytes": 86352,
+      "sha256": "dd31d6026aedd1a03e966e055724b2f02783147291525f1740341848837eed74"
+    },
+    {
+      "source": "PROJECT_STATE.yaml",
+      "snapshot": "output/research/definition-entry-consolidation-2026-10-08/review-snapshots/08-PROJECT_STATE.yaml",
+      "bytes": 8776,
+      "sha256": "ca8ed5825769b5007835c9b44d3a4e7b4ebd1cba120340686d017686b3a64270"
+    },
+    {
+      "source": "TASKS.md",
+      "snapshot": "output/research/definition-entry-consolidation-2026-10-08/review-snapshots/09-TASKS.md",
+      "bytes": 6728,
+      "sha256": "590da697f0da1c2bc38f648d53dd9be8fe2bec0df0dc209ab9adf5af5f050c21"
+    },
+    {
+      "source": "docs/active/Documentation_Index.md",
+      "snapshot": "output/research/definition-entry-consolidation-2026-10-08/review-snapshots/10-Documentation_Index.md",
+      "bytes": 14997,
+      "sha256": "245fdc579a871a398266bc594dd1f8407818ddd3c1f7b202e21547790130a12e"
+    },
+    {
+      "source": "specs/README.md",
+      "snapshot": "output/research/definition-entry-consolidation-2026-10-08/review-snapshots/11-README.md",
+      "bytes": 7533,
+      "sha256": "8bec83799505a69a2e0782e9db83d5662921f1a634c61073ffbfc0f62b54a83a"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/QA_RECOVERY.md",
+      "snapshot": "output/research/definition-entry-consolidation-2026-10-08/review-snapshots/12-QA_RECOVERY.md",
+      "bytes": 33456,
+      "sha256": "1469d2cd8c0c32c1ff10103dcc0ee2b73bbf52d4de9d1490c7bf77e521fcba74"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/monthly-availability-measurement-v1-2026-10-08.md",
+      "snapshot": "output/research/definition-entry-consolidation-2026-10-08/review-snapshots/13-monthly-availability-measurement-v1-2026-10-08.md",
+      "bytes": 3541,
+      "sha256": "2553814b2c7e17a57a18ff025e17730842ee4a1659d8a4a60ac91c419d2c9f4c"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/recovery-measurement-v1-2026-10-08.md",
+      "snapshot": "output/research/definition-entry-consolidation-2026-10-08/review-snapshots/14-recovery-measurement-v1-2026-10-08.md",
+      "bytes": 2771,
+      "sha256": "22ffe2f108939823eeb262f4b87b50c720b2d00c0c5d17b01a1ac60a0847ac94"
+    },
+    {
+      "source": "docs/software-definition/reviews/monthly-availability-walkthrough-v1-2026-10-08.md",
+      "snapshot": "output/research/definition-entry-consolidation-2026-10-08/review-snapshots/15-monthly-availability-walkthrough-v1-2026-10-08.md",
+      "bytes": 2167,
+      "sha256": "ef4aefbb01c386a2986e5cf79b44c6e31f4557e4a088469a91f6e3b76a978f87"
+    },
+    {
+      "source": "docs/software-definition/reviews/recovery-measurement-walkthrough-v1-2026-10-08.md",
+      "snapshot": "output/research/definition-entry-consolidation-2026-10-08/review-snapshots/16-recovery-measurement-walkthrough-v1-2026-10-08.md",
+      "bytes": 2187,
+      "sha256": "3920ee61d5f5ef25071a69ec32f7499fb76a0383e67874fde5180d98da4e0a01"
+    }
+  ]
+}

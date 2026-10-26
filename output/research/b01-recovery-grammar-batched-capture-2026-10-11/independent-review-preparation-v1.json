@@ -1,0 +1,280 @@
+{
+  "schema_version": "independent-source-review-v1",
+  "reviewer_id": "review_refusal_execution_replacement",
+  "producer_id": "root",
+  "reviewed_at_utc": "2026-10-11T04:26:13.479918+00:00",
+  "verdict": "PASS",
+  "scope": "Exact frozen successor source for48 shared narrow grammar specimens, refreshed current source pins and five temporary native capture sheets; no execution/result acceptance",
+  "packet": {
+    "path": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/review-inputs.json",
+    "bytes": 7356,
+    "sha256": "e665af31db67f20054473e3f4124107b0fd78e5628aa8081f13005d23e8d1bfc",
+    "input_count": 22
+  },
+  "frozen_inputs": [
+    {
+      "source": "output/research/b01-recovery-source-review-2026-10-08/correction-1/input.json",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/00-input.json",
+      "bytes": 13800,
+      "sha256": "7d85a7f2f3044e8cf6b9e0da07522b77f9c80977466d8b6d5baf66bfa3c7d297"
+    },
+    {
+      "source": "output/research/b01-recovery-source-review-2026-10-08/correction-1/figma-template.js",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/01-figma-template.js",
+      "bytes": 11806,
+      "sha256": "b9c4335558e5ac2d0af98b28a4942c958305e328654cac9db85b2fa9edfa778c"
+    },
+    {
+      "source": "output/research/b01-recovery-source-review-2026-10-08/correction-1/figma-call.js",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/02-figma-call.js",
+      "bytes": 23692,
+      "sha256": "62caf92ce41ca99746036c47059b1c077a266c3dead847f34b617a5fe7315f27"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/reviews/B01-recovery-preparation-v1-2026-10-08.md",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/03-B01-recovery-preparation-v1-2026-10-08.md",
+      "bytes": 2848,
+      "sha256": "0883926afbe148aacecf744e7b4d462410a3355b92cca7fd887447ee76298c24"
+    },
+    {
+      "source": "docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/04-STATES_AND_RECOVERY.md",
+      "bytes": 24105,
+      "sha256": "fa3322d864dc8c29d2f7853d6dc9a961126f7a8aea2b575505997d05c3297064"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/05-responsive-state-mode-matrix.csv",
+      "bytes": 33821,
+      "sha256": "deb91325e1c8a543878111883f5b1203ae9e5dc35c00e0d837e927786eaf47e2"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/06-reference-template-inventory.csv",
+      "bytes": 33498,
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/07-SECURITY_PRIVACY_CONTRACT.md",
+      "bytes": 85918,
+      "sha256": "88e573ff4d07dc1c3c257e05d537d6857a5940fb2fc6493a4cae787b1317252b"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/08-HANDOFF_LIFECYCLE.md",
+      "bytes": 89614,
+      "sha256": "40a3779f56737725bb2c5e5d5a5ee34b44ad27030adc16cc374fdb9b04266a12"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/09-PRIVATE_PROCESS_PROOF.md",
+      "bytes": 117693,
+      "sha256": "0bf065ae353f1d22c986501c624df46e4057d76ca06f71a35352360ac239a6b7"
+    },
+    {
+      "source": "output/research/b01-navigation-composition-2026-10-06/state-ledger.json",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/10-state-ledger.json",
+      "bytes": 23436,
+      "sha256": "f078e20b6fca5deec68a8876d83922d03064036aa797fb719cd6cae6d594da2b"
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/11-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/12-DECISIONS.md",
+      "bytes": 91055,
+      "sha256": "4bec9802ca6c01461c8e3c07a294066da9ee32d0bf223e97b991c9e646a59a7b"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/13-B01_EXECUTION_BRIEF.md",
+      "bytes": 29953,
+      "sha256": "697f7a8de398677c9dcc650abbc9db51973050f9de50e99996ae56e5086dec4b"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/UI_REFERENCE_DESIGN_CONTRACT.md",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/14-UI_REFERENCE_DESIGN_CONTRACT.md",
+      "bytes": 32708,
+      "sha256": "396d32f472794cb83168053ca6841bfbd37733923cafa225725391e22bb9830f"
+    },
+    {
+      "source": "output/research/b01-remaining-pixel-export-2026-10-11/correction-1/figma-call.js",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/15-figma-call.js",
+      "bytes": 12472,
+      "sha256": "38eaed64a28fbccefca96b7be736ad7f5258f03866843d3163166ca4b787742c"
+    },
+    {
+      "source": "output/research/b01-remaining-pixel-export-2026-10-11/attempt26-2026-10-11/receipt.json",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/16-receipt.json",
+      "bytes": 9874,
+      "sha256": "ca6df1097f1092bcf5e4dd24afe816b13a4531b43fb4c940772d004066155511"
+    },
+    {
+      "source": "output/research/b01-remaining-pixel-export-2026-10-11/attempt26-2026-10-11/independent-review-result-v1.json",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/17-independent-review-result-v1.json",
+      "bytes": 30014,
+      "sha256": "7854db8ad992448d5b795b6e69e1f424413b9fdd4af8bbc418b0e960a29772dd"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/input.json",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/18-input.json",
+      "bytes": 13866,
+      "sha256": "3237e4cab79e6667e1fb4c57324e603d506a5dde9a3eebc43cf6429536ff8223"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/figma-template.js",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js",
+      "bytes": 17764,
+      "sha256": "607ae7b1d18eb8f4475da801442cc2846fa214211ddbec9c80dccd9639fec3ea"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/figma-call.js",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/20-figma-call.js",
+      "bytes": 29537,
+      "sha256": "de5e134b79b4506b91d79f311a31b179a20c207e56d00c010d1828e351919138"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/capture-suffix.js",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/21-capture-suffix.js",
+      "bytes": 5473,
+      "sha256": "d7b16d410a1d3589563c31c3903251ab77f601de7e9abb366505d8e2c62ebc14"
+    }
+  ],
+  "all_frozen_sizes_hashes_verified": true,
+  "live_post_freeze_drift": [
+    {
+      "source": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "live_bytes": 30305,
+      "live_sha256": "ff1624eab4b53b0ca74073bc87ff04ee4ee6c1f27b3874ca01a9a29aab0decc7",
+      "frozen_sha256": "697f7a8de398677c9dcc650abbc9db51973050f9de50e99996ae56e5086dec4b",
+      "interpretation": "Later attempt26 result/status integration, outside reviewed frozen acceptance; no grammar source or current contract-pin mutation"
+    }
+  ],
+  "additional_governance": [
+    {
+      "path": ".specify/memory/constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "examined_lines": "164-217"
+    }
+  ],
+  "findings": [],
+  "observations": [
+    {
+      "id": "RGC-O1",
+      "result": "PASS",
+      "references": [
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/03-B01-recovery-preparation-v1-2026-10-08.md",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/18-input.json",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:87",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:98"
+      ],
+      "conclusion": "Exact old/new input comparison preserves all sixteen state copy/action/truth definitions, three surfaces, four stream labels, profile, two inherited Quick Access masters and historical hashes. Exact template comparison preserves all previous construction/reporting code apart from bounded inherited snapshots and replacing two representative screenshots with the five-sheet capture suffix. Surface-major state-minor loops author48 specimens and48 annotation stacks."
+    },
+    {
+      "id": "RGC-O2",
+      "result": "PASS",
+      "references": [
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/18-input.json",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/05-responsive-state-mode-matrix.csv",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/12-DECISIONS.md:1090",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/12-DECISIONS.md:1108",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/07-SECURITY_PRIVACY_CONTRACT.md:117",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/09-PRIVATE_PROCESS_PROOF.md:844"
+      ],
+      "conclusion": "Seven refreshed source hashes match frozen and current files. Changed matrix/security/private-process pins reflect laterD078/current definitions; states/recovery, template inventory, handoff and navigation ledger pins remain as recorded. SP-SYSTEM-RECOVERY input equals its current matrix row exactly, including TL-WARN-EXTEND. D078 controls warning20seconds/ten opportunities, D076 retains visitor30min inactivity/authorized End/no absolute limit; staff30min idle8h absolute remains separate. Legacy factor wording in handoff/private discussion does not expand this specimen or overrideD078. Hash refresh is source correspondence only, not approval of complete proposed contracts."
+    },
+    {
+      "id": "RGC-O3",
+      "result": "PASS",
+      "references": [
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:14",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:20",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:33",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:55",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:76",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:93"
+      ],
+      "conclusion": "Page/root/inherited checkpoint, exact stream master ownership/name, text-style/font, palette and spacing guards precede canvas construction. Fonts used by inherited text styles, action and stream masters are loaded before new text/instances/clones. Action Label TEXT property is checked. Only the two scoped Quick Access status instances are inherited; other stream/host obligations remain explicit. No Figma API invocation was performed during this review; source inspection and prior observed helper use are not a stable renderer or current canvas guarantee."
+    },
+    {
+      "id": "RGC-O4",
+      "result": "PASS",
+      "references": [
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:167",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:183",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:194",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:198",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:222"
+      ],
+      "conclusion": "Five sheets contain10/10/10/10/8 cloned specimen frames, with24px sheet padding and24px horizontal gaps. Arithmetic nominal widths are3464 for10 tiles,2776 for8, beneath3600; height must pass actual2400 bound. Clone insertion can temporarily reflow the permanent HUG root. Post-cleanup checks compare each specimen geometry/text fingerprint, root-relative position and root child ID order against pre-clone snapshots; inherited descendants/order/root positions are separately checked. Crop bounds must be positive integer regions within their sheets. Actual count/dimensions/nonoverlap and native pixels require later result inspection."
+    },
+    {
+      "id": "RGC-O5",
+      "result": "PASS",
+      "references": [
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:117",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:170",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:184",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:199",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:209",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:226"
+      ],
+      "conclusion": "Created set combines permanent composition descendants with separately tracked temporary sheet/row/copy descendants. Temporary and removed-temporary sets are losslessly packed and distinguish retained permanent nodes. Codec round-trip check is built in. Complete captureReport includes all ID sets,48 tile records,sheet bounds,limitations and final flags before19000-byte UTF8 guard; post-cleanup report has same fields, verified flags and second full guard.5000-ID and3600x2400 guards bound the capture after construction, not a rollback guarantee."
+    },
+    {
+      "id": "RGC-O6",
+      "result": "PASS",
+      "references": [
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:175",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:180",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:184",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:212",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:218",
+        "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js:225"
+      ],
+      "conclusion": "Sheets/rows/copies are tracked immediately after allocation, including rows failing reparenting. Finally attempts each tracked root independently; an individual remove failure cannot skip later rows/sheets. Successful returned flags are overwritten from actual removed handles and post-cleanup preservation comparisons; false flags throw. Permanent composition is deliberately retained. Failed construction/capture/cleanup may leave uncertain permanent/temporary state or return no ID receipt; inspection and new separately approved permission are required before any retry."
+    }
+  ],
+  "isolated_local_observations": {
+    "node_runtime": "v24.14.0",
+    "exact_call_async_vm_Script_syntax_parse": "PASS; compiled without invocation",
+    "embedded_input_equals_input_json": true,
+    "call_equals_template_with_embedded_input": true,
+    "capture_suffix_equals_template_tail": true,
+    "codec_boundary_vectors": 3,
+    "codec_vectors": "mixed duplicate/zero/noncanonical suffix/literal/unsafe integer;5000 contiguous;48 fragmented IDs",
+    "independent_roundtrip": "PASS",
+    "utf8_samples": 4,
+    "utf8_byte_count_matches_Buffer_byteLength": "PASS",
+    "nominal_sheet_widths": [
+      3464,
+      3464,
+      3464,
+      3464,
+      2776
+    ],
+    "producer_Figma_browser_network_code_invoked": false
+  },
+  "preserved_prior_review": {
+    "path": "docs/phase-1-ui-reference-production/reviews/B01-recovery-preparation-v1-2026-10-08.md",
+    "sha256": "0883926afbe148aacecf744e7b4d462410a3355b92cca7fd887447ee76298c24",
+    "scope": "Earlier correction1 PASS remains historical construction evidence; successor capture mechanism separately source-inspected here"
+  },
+  "limits": [
+    "All22 identities are verified artifact inputs; unrelated full-document proposal acceptance is not claimed",
+    "Current source-pin alignment is bounded to relevant grammar/profile/lifecycle definitions and founderD076/D078 context",
+    "Inherited canvas copy/ownership/fonts/layout remain execution-time checks; no actual Figma call, pixels, cleanup, source restoration or annotation readability proven",
+    "Five native images and48 correct nonoverlapping native crops are planned only; request-order mapping has no independent provider frame-ID tag",
+    "Post-cleanup geometry/text/visibility/opacity and position/order fingerprints are limited, not exhaustive paint/font/style or canvas equality",
+    "Focused syntax/codec/UTF8 observations prove tooling only, not Figma lifecycle, public action enforcement, stable renderer or full-system correctness",
+    "Forced-colours, focus-ring, keyboard/status announcements/accessibility, complete profiles/streams/process, native export/restore/EXIT and fullB01/founder pilot acceptance remain separate",
+    "No external permission, automatic retry, paid activation, additional allowance, later batch or implementation grant follows",
+    "Only this exclusive-create receipt was written; sources/packet/prior reviews and external state unchanged"
+  ]
+}

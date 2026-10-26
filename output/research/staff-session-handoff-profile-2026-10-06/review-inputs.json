@@ -1,0 +1,97 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Appended staff session activity and consultation fencing proposal only; original staff sign-in mediation bytes unchanged",
+  "preserved_prefix": {
+    "snapshot": "SECURITY_PRIVACY_CONTRACT.before.md",
+    "bytes": 32221,
+    "sha256": "50f3c00d5e6aed36bb4fa99e864ba337cc3dc3f76c0665ff30e0f765782ad00a"
+  },
+  "inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "snapshots/01-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "snapshots/02-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "snapshots/03-DECISIONS.md",
+      "bytes": 80333,
+      "sha256": "ac3075adbc4414d88e4b0f7f111a0476c0dd461596c08943d488d3b7d8949d20"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "snapshots/04-SECURITY_PRIVACY_CONTRACT.md",
+      "bytes": 40793,
+      "sha256": "283cc68e4f8634ca3a8abf49eeb2051528e59e6dcd6470646ba698e137d370b9"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "snapshot": "snapshots/05-HANDOFF_LIFECYCLE.md",
+      "bytes": 87003,
+      "sha256": "2b543fbf8c00e244f705d0931bacb76f8a2405d2bbb9bb4e1593a28fa86d87f8"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+      "snapshot": "snapshots/06-CHAT_EVENT_PROTOCOL.md",
+      "bytes": 35548,
+      "sha256": "8169e5508bc567d333e6121131d13a909c390e5e8e715a70a05ade83aafac33b"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "snapshot": "snapshots/07-INTERFACE_CATALOG.md",
+      "bytes": 38158,
+      "sha256": "d7da364547c19344ccb1fca5a2554bb27410a7234f8209afade8664980f55c79"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/interface-catalog.csv",
+      "snapshot": "snapshots/08-interface-catalog.csv",
+      "bytes": 9367,
+      "sha256": "42018a3e5cc6c1edf488c392b0349688a92b2cab5a8f50e717f1bca84a70a49c"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/data-classification.csv",
+      "snapshot": "snapshots/09-data-classification.csv",
+      "bytes": 5510,
+      "sha256": "4b163eec086cb46ca98fabf692632d1778ee116cb014cda179e5b4a2a5fd44c6"
+    },
+    {
+      "source": "specs/001-platform-security-hardening/spec.md",
+      "snapshot": "snapshots/10-spec.md",
+      "bytes": 27314,
+      "sha256": "47704c411b72195a2a4f8b832b07b30d90b00673647afe50d8ac98b917939d99"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/COLUMN_AUTHORITY_PROPOSAL.md",
+      "snapshot": "snapshots/11-COLUMN_AUTHORITY_PROPOSAL.md",
+      "bytes": 15044,
+      "sha256": "fddad88d763ccc32686711a6f3ef5ae47d352f72059058ac299b80df67006d18"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/column-authority.json",
+      "snapshot": "snapshots/12-column-authority.json",
+      "bytes": 11841127,
+      "sha256": "e786b29985ddd0a553622aa1adaf4029543d2f0abb395a5ac7dae64b3dd21554"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "snapshot": "snapshots/13-reference-template-inventory.csv",
+      "bytes": 33498,
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb"
+    }
+  ],
+  "sources_checked": [
+    "https://fastapi.tiangolo.com/advanced/websockets/",
+    "https://cheatsheetseries.owasp.org/cheatsheets/WebSocket_Security_Cheat_Sheet.html",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#session-expiration"
+  ],
+  "context7_library": "/websites/fastapi_tiangolo",
+  "validation": "Exact byte/prefix identity and local references only; no ordinary prose tests or schema/runtime changes"
+}

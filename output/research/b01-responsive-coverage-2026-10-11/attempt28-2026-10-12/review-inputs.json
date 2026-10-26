@@ -1,0 +1,380 @@
+{
+  "schema_version": "bounded-result-review-v1",
+  "scope": "Actual approved attempt28 report, five native images and28 exact unit crops including annotations, backed by corrected frozen source packet",
+  "inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/00-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/01-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/02-DECISIONS.md",
+      "bytes": 92209,
+      "sha256": "5ac584900987a9d8eb97bd3d459adf3a9d52737e195e1848fc6fddbc70c3fe40"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/03-B01_EXECUTION_BRIEF.md",
+      "bytes": 34786,
+      "sha256": "f1a43250ab4e8950d7777aca913358cff6d60e3e8463ccca605bf84851d2d259"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/04-UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "bytes": 45771,
+      "sha256": "1779fd3cd71f8210815fd7ddbbcd06faa6e5387e2d91584531be6d3806f8cf61"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/evidence-capture-plan.csv",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/05-evidence-capture-plan.csv",
+      "bytes": 8428,
+      "sha256": "4dceafb6d78a859ff5aee23ac78e65180975e72e83ed14a40dc20a90ad4fa0fd"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/06-responsive-state-mode-matrix.csv",
+      "bytes": 33821,
+      "sha256": "deb91325e1c8a543878111883f5b1203ae9e5dc35c00e0d837e927786eaf47e2"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/07-reference-template-inventory.csv",
+      "bytes": 33498,
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/design-batch-plan.csv",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/08-design-batch-plan.csv",
+      "bytes": 28149,
+      "sha256": "0b01be6b01157785cf57dcb5c36a8efbd9254031708f9afad19db52e4f8b32ce"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/component-primitives.csv",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/09-component-primitives.csv",
+      "bytes": 79574,
+      "sha256": "575d1478893c090e9b367e75c2d14cf645e80eeb67bce09c2383c08294fa034a"
+    },
+    {
+      "source": "docs/phase-1-brand-identity/semantic-tokens.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/10-semantic-tokens.json",
+      "bytes": 8434,
+      "sha256": "874bc1df44722358c727cf318e1c7baaa0abf50244aa690ed7a256d1baa6fe3b"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/accessibility/UG-3_CONTROL_COPY_PROPOSAL.md",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/11-UG-3_CONTROL_COPY_PROPOSAL.md",
+      "bytes": 6745,
+      "sha256": "839eb5291d79ac811e927e01ff9b588c192dac8a4c955448c753b4c63ccc3a3b"
+    },
+    {
+      "source": "output/research/b01-navigation-composition-2026-10-06/state-ledger.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/12-state-ledger.json",
+      "bytes": 23436,
+      "sha256": "f078e20b6fca5deec68a8876d83922d03064036aa797fb719cd6cae6d594da2b"
+    },
+    {
+      "source": "output/research/b01-directory-call19-2026-10-08/decoded-design-result.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/13-decoded-design-result.json",
+      "bytes": 72290,
+      "sha256": "71f198783593821c55291a8e9b6a1e896d35f7addb695245c08763dd225e0eda"
+    },
+    {
+      "source": "output/research/b01-recovery-stream-bindings-2026-10-08/attempt24-2026-10-11/receipt.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/14-receipt.json",
+      "bytes": 1969,
+      "sha256": "3dd22beefbd90c251827c5479621a4e7193721c5d39cc6694828cf251c28e0e6"
+    },
+    {
+      "source": "output/research/b01-recovery-stream-bindings-2026-10-08/input.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/15-input.json",
+      "bytes": 13802,
+      "sha256": "0e75c5db5f8145f881ce6552d1ca44a21f253a45b4cdb2812772caa6dad09f14"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/input.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/16-input.json",
+      "bytes": 36211,
+      "sha256": "e922317901f3e8ed9fc88958d22c46409444b5c3e884091f16ff886acd73d1d5"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/figma-template.js",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/accounting-correction/figma-template.js",
+      "bytes": 12294,
+      "sha256": "6608abe84c5264b1b851d1d42f91083166e510208ba8eebd39c559f0d7654f0b"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/figma-call.js",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/accounting-correction/figma-call.js",
+      "bytes": 42766,
+      "sha256": "918122379a009d48b8fa904210e37424053d1dedba6fa4d148f689eb1cd57bfb"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/primary-source.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/inputs/19-primary-source.json",
+      "bytes": 657,
+      "sha256": "dc6a24d70cca9002809fb5d481c45c808ced953e1c60e9f616125fede5af962b"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/independent-review-preparation-v1.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/accounting-correction/initial-review-v1.json",
+      "bytes": 17525,
+      "sha256": "89a04090de3021a65a6bded0037df20cb760cc176fbb213f74200642b6ed2a58"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/authorization.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/authorization.json",
+      "bytes": 524,
+      "sha256": "dbf152008dd59ca8c6eb4005f5286b5ccd695f5b38df5c115bd9e9655354d19c"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/input.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/input.json",
+      "bytes": 36211,
+      "sha256": "e922317901f3e8ed9fc88958d22c46409444b5c3e884091f16ff886acd73d1d5"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/figma-call.js",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/figma-call.js",
+      "bytes": 42766,
+      "sha256": "918122379a009d48b8fa904210e37424053d1dedba6fa4d148f689eb1cd57bfb"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/raw-response.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/raw-response.json",
+      "bytes": 13061,
+      "sha256": "f02ec5dcd2bbad351c4dae1701c853fd69da67e777bbb6ba6734d6abfd394d53"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/receipt.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/receipt.json",
+      "bytes": 39058,
+      "sha256": "e0b02d5357fe28b080ea9fe41c7cca3ea193624f0654f3a762edb59467b0263b"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/crop-inventory.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/crop-inventory.json",
+      "bytes": 40069,
+      "sha256": "ccc8d3bef22cd78502fba06e7deb78c02b26108722f14b2e790067d79820db4e"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/inspect_images.py",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/inspect_images.py",
+      "bytes": 3057,
+      "sha256": "c9140bdaec583d86f7cd5f8202eb68680a5bc04fe35396afd4bd1e629cd46453"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/producer-inspection.json",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/producer-inspection.json",
+      "bytes": 1293,
+      "sha256": "48543d89bf77170e164f0318d6f92fa00a4b8445c8b315a52acff2a4be90753a"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/comparison-01.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/comparison-01.png",
+      "bytes": 416724,
+      "sha256": "31f849e6fe7bf15270255392b684f3815efa2af7d44eab5ec351e4ea6dc54251"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/comparison-02.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/comparison-02.png",
+      "bytes": 436932,
+      "sha256": "36fc2b6f041ca411d145de856c878a1b72d8292374094814c654e827389eb333"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/comparison-03.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/comparison-03.png",
+      "bytes": 528618,
+      "sha256": "1b0896e8370f7a0390480b303014d97fe7b9ddd973f1ef208492aad9cfbf1ac4"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/comparison-04.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/comparison-04.png",
+      "bytes": 569052,
+      "sha256": "c435fe97df99962c1402b6d659b40916623d247a0dcf7503b576ee3ebf0e7498"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/comparison-05.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/comparison-05.png",
+      "bytes": 369121,
+      "sha256": "f1d9b662590b01f56bc2c42d57c5412f3efd560f3b878fdf831fa1a43304fd78"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-00.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-00.png",
+      "bytes": 138457,
+      "sha256": "82a948ad5ed69ae4bd1d3c6e715398de7bac4b51b3e0d1eeccf5d9517137df7e"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-01.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-01.png",
+      "bytes": 139192,
+      "sha256": "0ba77e968433e132ea206b7d6e5b99aa85d4db65e3a0c86ae38d73097b8df032"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-02.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-02.png",
+      "bytes": 138812,
+      "sha256": "b547fa53712ab5400706a8be9290de4ad3bc9dfac4ec3aa7cbf3df004fcf75e1"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-03.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-03.png",
+      "bytes": 139737,
+      "sha256": "92655e71b40d9476050d6bf5942ca1e637151bce06f47f08e26dcd191de9c4e1"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-04.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-04.png",
+      "bytes": 165406,
+      "sha256": "5910a6e263776751372b1236bb92077d0a29bcba2ed88855d6385b29ccd9468d"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-05.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-05.png",
+      "bytes": 166106,
+      "sha256": "8783ea99ed75f1583fe3751007eb65a87795decefe67e65dff6efd268073b7ef"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-06.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-06.png",
+      "bytes": 165905,
+      "sha256": "68950de2ffec1d62bbc5897953085f25fda3929fb8c67bbcfb75517f7f11fd99"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-07.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-07.png",
+      "bytes": 166614,
+      "sha256": "4bad783ff64ca6982266bae4ef941e9211e714a8a0df7fd442c9b0ae88ef3b09"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-08.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-08.png",
+      "bytes": 147502,
+      "sha256": "7b165ac3fe4a258f17a705a29e824dd809ee3c3fc3960abe27e1286d27959c94"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-09.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-09.png",
+      "bytes": 148399,
+      "sha256": "dd47091ed53bbdc55bc13809c21b4301e7437c36356fc34ff4d5e2cf6f47229d"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-10.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-10.png",
+      "bytes": 148042,
+      "sha256": "75b2ba7610763b231831ef766fdd2fa8968a629ac3346d10c1e4b79bad94f126"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-11.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-11.png",
+      "bytes": 148832,
+      "sha256": "51a285171b85fcc77c1498474024af2ec0a193d77142193abbd51bf4441a728e"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-12.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-12.png",
+      "bytes": 133577,
+      "sha256": "ae29d4b717549f3d9bc7b5e8e4120a85ffa03797a22c41d83b2bb0b87192c35f"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-13.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-13.png",
+      "bytes": 134302,
+      "sha256": "269b04785b8b2ffdbc825b742bc12c5748d47335819572334d444c197c2cd550"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-14.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-14.png",
+      "bytes": 133738,
+      "sha256": "02e3905fac8d1b065a80c880aa4f379c3f0b54d06acee33bc5700282bc1f6417"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-15.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-15.png",
+      "bytes": 134827,
+      "sha256": "229559328f8b5b8218d388523250ba38cf619622047295db90698d3048eee942"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-16.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-16.png",
+      "bytes": 166561,
+      "sha256": "78d75a5d388e46b500f9ad4e5e1a1ec0cd334f709a22045f94a44d735cd18237"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-17.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-17.png",
+      "bytes": 166935,
+      "sha256": "61849f4717b724a430ef3f3970a3bfb25561f71f3b12db5e3b3d201c47f78309"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-18.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-18.png",
+      "bytes": 166728,
+      "sha256": "c7017c733b133395b614476699bead33ae156c9fa3d52a11407f885381e15c04"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-19.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-19.png",
+      "bytes": 167715,
+      "sha256": "df18a32dfa1a634c833e6d12b17b0332174ac6b9340ed338871a6d57f542603c"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-20.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-20.png",
+      "bytes": 155000,
+      "sha256": "69e272e2c7c25ee0abfd81ed4121296e9958ef7830e9e37deb641bed168518cc"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-21.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-21.png",
+      "bytes": 155427,
+      "sha256": "56f9162051a88687d952ba51d49e035d7594884034419e21aa6e345794e3c34c"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-22.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-22.png",
+      "bytes": 155260,
+      "sha256": "164d795ab24a4f19cae7309a8088fbbbbdccecd341eaa37a157af4ade7fdb8db"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-23.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-23.png",
+      "bytes": 156253,
+      "sha256": "c732a0152e799f14408fc081749eb27b9f5d9259332610dee8b4470b05407427"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-24.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-24.png",
+      "bytes": 152528,
+      "sha256": "8644bdef522b307b660a730c303bed2cbfde6cafdd33d158073e722b45fb8543"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-25.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-25.png",
+      "bytes": 152840,
+      "sha256": "822fe3a55eb7bc70f4bad755dafb2ed5fcf27dbad4c0ceaa282cc71902690551"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-26.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-26.png",
+      "bytes": 152772,
+      "sha256": "18cd78844ebf0ed8ea3353e7cf0b99897f1984ae334a45df4b6e03bb5bfcba49"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-27.png",
+      "snapshot": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/unit-27.png",
+      "bytes": 153231,
+      "sha256": "f733957e23577255fd388ceb71c13dc26f4976214686e5db3197b3fe77fa6e36"
+    }
+  ],
+  "source_packet": "output/research/b01-responsive-coverage-2026-10-11/accounting-correction/review-inputs.json",
+  "limits": "Static supplied-pixel and report/source correspondence only; no live canvas call or browser accessibility qualification"
+}

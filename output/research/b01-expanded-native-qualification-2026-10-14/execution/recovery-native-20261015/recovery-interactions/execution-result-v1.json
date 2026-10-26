@@ -1,0 +1,78 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-15",
+  "scope": "D094/D095 recovery Quick Access-to-Balanced native two-edge slice",
+  "set": "172:3740",
+  "edges": [
+    {
+      "source": "172:3721",
+      "control": "172:3726",
+      "label": "○ Balanced 3D",
+      "sourceTuple": [
+        "SEMANTIC",
+        "SEMANTIC",
+        "NOT_APPLICABLE"
+      ],
+      "target": "172:3683",
+      "targetTuple": [
+        "SEMANTIC",
+        "MEDIUM",
+        "NOT_APPLICABLE"
+      ],
+      "trigger": "On click",
+      "action": "Change to",
+      "animation": "Instant",
+      "settings": "semantic-balanced-choice-settings.txt",
+      "playbackObserved": true
+    },
+    {
+      "source": "172:3683",
+      "control": "172:3696",
+      "label": "Apply selection",
+      "sourceTuple": [
+        "SEMANTIC",
+        "MEDIUM",
+        "NOT_APPLICABLE"
+      ],
+      "target": "172:3531",
+      "targetTuple": [
+        "MEDIUM",
+        "MEDIUM",
+        "NOT_APPLICABLE"
+      ],
+      "trigger": "On click",
+      "action": "Change to",
+      "animation": "Instant",
+      "settings": "actual-apply-settings.txt",
+      "playbackObserved": true
+    }
+  ],
+  "correction": {
+    "mistakenNode": "172:3703",
+    "cause": "Reused coordinate after selecting a row changed the layer-panel scroll position; second click selected a neighboring PRIM-001 panel instead of expanding Apply.",
+    "mistakenBindingRemoved": true,
+    "evidence": [
+      "misbound-apply-panel-before-correction.txt",
+      "misbound-panel-after-correction.txt"
+    ],
+    "correctControlAdmittedBy": "actual-apply-label-design-admission.txt",
+    "guard": "Direct observed node URL plus Label Apply selection, then verify URL before adding reaction. No second coordinate reused after row reflow."
+  },
+  "playbackLimit": "Corrected replay: Quick Access default; Balanced checked while Quick Access stays in force; scroll to Apply; click Apply; bottom remains visible; scroll back to top shows Services and in-force Balanced in both captions. Exact pixel scroll retention and independent live replay are not established.",
+  "remainingEdges": 315,
+  "otherLimits": [
+    "No complete reaction census/source preservation proof",
+    "No reset qualification",
+    "No accessibility or restoration proof",
+    "No full B01 or Phase1 acceptance"
+  ],
+  "noMCP": true,
+  "noAdditionalAI": true,
+  "noApplicationOrGit": true,
+  "finalPlayback": [
+    "playback-08-corrected-balanced-pending.png",
+    "playback-09-corrected-after-apply-bottom.png",
+    "playback-10-corrected-balanced-in-force.png"
+  ]
+}

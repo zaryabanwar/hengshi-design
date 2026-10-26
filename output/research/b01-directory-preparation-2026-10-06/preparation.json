@@ -1,0 +1,81 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "TODO",
+  "scope": "Prepared combined B01 directory composition, not executed",
+  "expected_frames": 52,
+  "expected_new_file_local_components": 2,
+  "expected_new_variables": 0,
+  "external_calls": 0,
+  "script_bytes": 29157,
+  "script_sha256": "4c811c9122bc049af4b5a01561a97b563c5eed849e9fab20809cdb54b67b62b8",
+  "prerequisites": [
+    "Read-only inspection call 14 and any required scoped repair must establish the navigation checkpoint before further composition",
+    "Fresh immediate approval for exactly this subsequent design call",
+    "Recheck source identities and exact existing file/page/component/token guards; inspect any uncertain/partial write before retry"
+  ],
+  "source_hashes": [
+    {
+      "path": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "bytes": 5426,
+      "sha256": "758a3e2add132d768112be6e0fa0606bcdccae43770d2b09ca2797fb77ea0b27"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "bytes": 33498,
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "bytes": 33807,
+      "sha256": "6fa43937ae5e590b31e4fc21ea9e1209d3bfcdf145a6698d2429125213166dec"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+      "bytes": 79574,
+      "sha256": "575d1478893c090e9b367e75c2d14cf645e80eeb67bce09c2383c08294fa034a"
+    },
+    {
+      "path": "docs/phase-1-foundation/06-canonical-route-inventory.json",
+      "bytes": 43357,
+      "sha256": "41b750b5493a70a43344ca608084e6adce04b82a768969832026fb50f6b59081"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/accessibility/UG-3_CONTROL_COPY_PROPOSAL.md",
+      "bytes": 6745,
+      "sha256": "839eb5291d79ac811e927e01ff9b588c192dac8a4c955448c753b4c63ccc3a3b"
+    },
+    {
+      "path": "output/research/b01-navigation-preparation-2026-10-06/preparation.json",
+      "bytes": 13026,
+      "sha256": "78ce6f9518fbfe7b41a93f25c05b68e5e5f9e278da457844ce48a006d0a76d6d"
+    },
+    {
+      "path": "output/research/b01-navigation-composition-2026-10-06/state-ledger.json",
+      "bytes": 23436,
+      "sha256": "f078e20b6fca5deec68a8876d83922d03064036aa797fb719cd6cae6d594da2b"
+    },
+    {
+      "path": "scripts/validation/ui-stream-mapping.ps1",
+      "bytes": 38967,
+      "sha256": "2c4509b4df40dd1f14c4bb53a35acff6799fde20e2be69d52f08db9e47babd38"
+    }
+  ],
+  "checks": {
+    "async_tool_wrapper_syntax": "PASS",
+    "all_52_identifiers_resolve_to_approved_context": true,
+    "figma_execution": "not_performed"
+  },
+  "design_system_discovery": {
+    "code_connect": "No relevant Code Connect files found under apps; no Code Connect mapping created",
+    "existing_file": "Use previously returned master IDs and local D035 variables/styles; pre-write guard batches local inspection inside the composition call",
+    "external_library_search": "Not applicable: D075 uses file-local components on the single existing page, without team-library publication",
+    "fonts": "Inherit current verified Figma-only Inter/Cascadia Mono styles; load every actual master font before instancing; no website font change"
+  },
+  "limitations": [
+    "Prepared only; no Figma call or external write performed",
+    "Synthetic state/result fixtures and proposed nonmodal focus contract are subject to design review and founder pilot acceptance",
+    "MODE-KEYBOARD naming is a reference specification, not actual native input, keyboard or screen-reader execution",
+    "Existing D057 master copy is reused; ceiling facts, other modes/profiles/primitives, prototype, independent reviews, exports/restore/EXIT and full pilot acceptance remain",
+    "All existing Figma content preserved; no new page, library publication, website font, route activation or application implementation"
+  ]
+}

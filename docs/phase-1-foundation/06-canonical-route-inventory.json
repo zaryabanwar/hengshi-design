@@ -805,6 +805,26 @@
         "D-039"
       ],
       "contentGate": "Exact licence text author names and source URLs must come from the recorded asset provenance ledger; no attribution may be paraphrased invented or omitted."
+    },
+    {
+      "id": "ROUTE-PRIVACY",
+      "path": "/privacy",
+      "routeType": "privacy_notice",
+      "plannedCanonicalStatus": "approved_direction",
+      "contentApprovalStatus": "pending_specialist_evidence_and_founder_publication_approval",
+      "releaseActivationStatus": "inactive_no_approved_release",
+      "indexabilityPolicy": "index",
+      "activeSitemap": false,
+      "futureSitemapRule": "include_route_only_when_content_approved_release_active_canonical_200_indexable",
+      "primaryIntent": "understand Hengshi Design privacy and local storage practices including delivery-stream preferences",
+      "primaryEntity": "Hengshi Design privacy and storage notice",
+      "schemaTypes": [
+        "BreadcrumbList"
+      ],
+      "sourceDecisions": [
+        "D-051"
+      ],
+      "contentGate": "Specialist-reviewed controller and contact facts; storage inventory distinguishing delivery-stream preference from performance measurement; read/write failure and session-only behavior; clearing consequences; retention legal basis and consent conclusions held for review; no assumed exemption or final legal copy."
     }
   ],
   "excludedSurfaces": [

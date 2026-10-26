@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-12",
+  "question_id": "call_d028d297aeb243dfa4edc3aded6db4ed",
+  "answer": "Approve three-call recovery and exceptions",
+  "approved_workflow": "One bounded existing-eleven-unit recovery: prepare temporary3808x1996 sheet, download its1x PNG, exact recorded cleanup including after download failure.",
+  "calls": [
+    {
+      "attempt": 31,
+      "conservatively_metered": 28,
+      "tool": "use_figma",
+      "purpose": "Prepare retained temporary comparison sheet",
+      "source_sha256": "e7529911bdbda5b7c259dfaef0eefb8d154020c0c91c03b2c7790aea30a790fe"
+    },
+    {
+      "attempt": 32,
+      "conservatively_metered": 29,
+      "tool": "download_assets",
+      "purpose": "Export/download PNG of exact returned sheet ID; runtime binding required"
+    },
+    {
+      "attempt": 33,
+      "conservatively_metered": 30,
+      "tool": "use_figma",
+      "purpose": "Exact temporary cleanup even if downloading fails; runtime binding required",
+      "template_sha256": "a650c2281be8b3a260b8870141fd31b69dd38e0bdaa906bb65ab2699aeb75184"
+    }
+  ],
+  "separate_prompt_exception": "Only this three-call workflow",
+  "allowance_exceptions": 3,
+  "upfront_cleanup_authorized": true,
+  "no_permanent_design_changes": true,
+  "no_paid_activation": true,
+  "no_automatic_retries": true,
+  "actual_provider_quota": "unknown",
+  "source_review": "../independent-review-preparation-v1.json"
+}

@@ -1,0 +1,361 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "reviewed_at_utc": "2026-10-24T06:12:00.549320+00:00",
+  "reviewer": "Independent reviewer /root/review_archive_candidate_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "PASS",
+  "scope": "Evidence accounting and truthful bounded limits of the frozen 25-input playback packet only. This verdict does not qualify Preserve/Reset mechanisms, native matching, current Figma, full B01 or Phase 1.",
+  "packet": {
+    "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/review-inputs-v1.json",
+    "bytes": 6934,
+    "sha256": "13322b31408804c923eb95b08702a91c91c8367985b7c362ee4e6b58f374b83c",
+    "input_count": 25,
+    "verified_before_review": 25,
+    "verified_again_before_receipt": 25,
+    "inputs": [
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/01-default.png",
+        "bytes": 24872,
+        "sha256": "e91c596345f17f21eb8fc7fc5dda43fe054b951cc9104772ccbea82271174328",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/01-default.png",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/02-detailed-pending.png",
+        "bytes": 24851,
+        "sha256": "ffa151917b3cfeb15d9951b4fbfdb7cadecfcee61f4ba4de7989cf99fc93c5cb",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/02-detailed-pending.png",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/03-visible-pending.png",
+        "bytes": 28297,
+        "sha256": "33c5e5b0d70387a90a07a75ab946a46a98200c906091e8a9079ce90a039092e1",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/03-visible-pending.png",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/04-source-bottom.png",
+        "bytes": 37254,
+        "sha256": "4e326e63aba900b8ed79ef6fdbe07b874dd3ec44715b3e15c3b5f895a5973fb0",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/04-source-bottom.png",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/05-preserve-arrival.txt",
+        "bytes": 1132,
+        "sha256": "ce94f0a3ebbdb97675c9db0fe605818907c0a01a46c1005b32a5a320874db0c2",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/05-preserve-arrival.txt",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/06-preserve-cdp.png",
+        "bytes": 29253,
+        "sha256": "f47e70eff23716bd6cf1f481bd07f3a7aa1b6577d8fe3eaf171d3112f298c146",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/06-preserve-cdp.png",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/07-preserve-return.png",
+        "bytes": 29253,
+        "sha256": "f47e70eff23716bd6cf1f481bd07f3a7aa1b6577d8fe3eaf171d3112f298c146",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/07-preserve-return.png",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/07-preserve-return.txt",
+        "bytes": 1143,
+        "sha256": "5371f9179c38e6bee7c538652d809da02d1ee8a59f9cec7bc7c333b56f3555e5",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/07-preserve-return.txt",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/08-preserve-return-view.png",
+        "bytes": 81037,
+        "sha256": "f7ecad004e39f1530f01992cb794ab57e6dc14a101b572ef0a70979e8372247a",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/08-preserve-return-view.png",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/09-return-after-viewport.png",
+        "bytes": 34374,
+        "sha256": "ab5596d120b7eda3e2d6ca98b799bf15e544365661b5063054c1bccf86eed022",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/09-return-after-viewport.png",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/10-preserve-return-pending-top.png",
+        "bytes": 24851,
+        "sha256": "ffa151917b3cfeb15d9951b4fbfdb7cadecfcee61f4ba4de7989cf99fc93c5cb",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/10-preserve-return-pending-top.png",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/11-reset-source-bottom.png",
+        "bytes": 34374,
+        "sha256": "ab5596d120b7eda3e2d6ca98b799bf15e544365661b5063054c1bccf86eed022",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/11-reset-source-bottom.png",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/12-reset-arrival.png",
+        "bytes": 24872,
+        "sha256": "e91c596345f17f21eb8fc7fc5dda43fe054b951cc9104772ccbea82271174328",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/12-reset-arrival.png",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/12-reset-arrival.txt",
+        "bytes": 1132,
+        "sha256": "dbde77425deeba438a0b806885a960ada5e70110ed67b582b62a1b4b67780692",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/12-reset-arrival.txt",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/13-reset-return-before.png",
+        "bytes": 34374,
+        "sha256": "ab5596d120b7eda3e2d6ca98b799bf15e544365661b5063054c1bccf86eed022",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/13-reset-return-before.png",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/14-reset-return.png",
+        "bytes": 24872,
+        "sha256": "e91c596345f17f21eb8fc7fc5dda43fe054b951cc9104772ccbea82271174328",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/14-reset-return.png",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/14-reset-return.txt",
+        "bytes": 1021,
+        "sha256": "1daba058455e5be88c273aa66d906970c87120d0c17be0cc4d2b62a9365dd13d",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/14-reset-return.txt",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/15-pending-getScreenshot.png",
+        "bytes": 28297,
+        "sha256": "33c5e5b0d70387a90a07a75ab946a46a98200c906091e8a9079ce90a039092e1",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/15-pending-getScreenshot.png",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/16-pending-after-scroll-repaint.png",
+        "bytes": 28297,
+        "sha256": "33c5e5b0d70387a90a07a75ab946a46a98200c906091e8a9079ce90a039092e1",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/16-pending-after-scroll-repaint.png",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/execution-result-v1.json",
+        "bytes": 2606,
+        "sha256": "e94a3556d1744d51ed0e10244d9644de42a9c42b7ca29503d4de01bc26f07109",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/execution-result-v1.json",
+        "verified": true
+      },
+      {
+        "path": "AGENTS.md",
+        "bytes": 8983,
+        "sha256": "f31b4bb42f954995cc12358284a992fde46ade98980238043c149f692b6474a5",
+        "resolved_path": "AGENTS.md",
+        "verified": true
+      },
+      {
+        "path": "DECISIONS.md",
+        "bytes": 109588,
+        "sha256": "569e584a84fa03c88efc62dc39991d1a41b06e3a89f22abd3d37133ae9fdbeed",
+        "resolved_path": "DECISIONS.md",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+        "bytes": 102359,
+        "sha256": "512099f5aa6c4cdd15c64baae5a1f32a8737de327a0ee2c35e36da88154a7d74",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/B01_EXECUTION_BRIEF.review-input.md",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-boundaries-20261017/execution-result-v1.json",
+        "bytes": 7139,
+        "sha256": "febc2efabb896a851f833acaae2a7bc3edadd2d44034e6f69baa7c98348ee929",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-boundaries-20261017/execution-result-v1.json",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-boundaries-20261017/independent-review-recovery-boundaries-v1.json",
+        "bytes": 31398,
+        "sha256": "318e6757657339b5e5394f5c1762b3dc0158a4759e67ee72cfc1683969f63c89",
+        "resolved_path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-boundaries-20261017/independent-review-recovery-boundaries-v1.json",
+        "verified": true
+      }
+    ]
+  },
+  "snapshot_bindings": {
+    "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/snapshot-bindings-v1.json",
+    "bytes": 539,
+    "sha256": "7738218a857168ef380062bdc5f95d82766922ffb9f3a07a446cc81d6b3a41d1",
+    "assessment": "Explicit original B01 brief alias matches frozen manifest bytes/hash. Current live brief is not silently substituted and inherits no verdict from this review."
+  },
+  "actionable_findings": [],
+  "assessments": [
+    {
+      "evidence": "execution-result-v1.json:5-18; 05-preserve-arrival.txt:1; 07-preserve-return.txt:1; 12-reset-arrival.txt:1; 14-reset-return.txt:1",
+      "assessment": "Saved browser snapshots identify target175:3819, return175:3797, target175:3841, return175:3797. They support bounded recorded URL observations, not canvas-internal state, exact click chronology, scroll coordinates or current authenticated/browser health."
+    },
+    {
+      "evidence": "01-default.png; 02-detailed-pending.png; 03-visible-pending.png; 04-source-bottom.png; 06-preserve-cdp.png; 07-preserve-return.png; 09-return-after-viewport.png; 10-preserve-return-pending-top.png",
+      "assessment": "Inspected actual saved files with view_image. Default and pending selection pixels, bottom controls/marker and retained bottom viewport are represented. Some tool emissions are partially black and identical saved files can emit differently. Whole-file repeated bytes cannot establish temporal freshness or continuity. Producer correctly leaves exact scroll, full preservation and robust Preserve state-return evidence unqualified."
+    },
+    {
+      "evidence": "08-preserve-return-view.png; execution-result-v1.json:8",
+      "assessment": "Image contains Codex chat/chrome and only a small browser edge; correctly excluded as Figma behavior evidence."
+    },
+    {
+      "evidence": "11-reset-source-bottom.png; 12-reset-arrival.png; 13-reset-return-before.png; 14-reset-return.png; execution-result-v1.json:13-17",
+      "assessment": "Images and saved URLs are consistent with recorded bottom-to-default-top observations in the Reset route and return. Arrival/return images duplicate original default bytes; this review does not independently certify freshness, native component-state reset or a complete paired mechanism. Producer keeps those wider qualifications held."
+    },
+    {
+      "evidence": "15-pending-getScreenshot.png; 16-pending-after-scroll-repaint.png; execution-result-v1.json:8,15,17",
+      "assessment": "The emitted view16 appeared black, but saved files03/15/16 have exactly the same bytes/hash. Thus black/partial descriptions must be read as producer/tool emission observations, not an independent assertion that saved16 contains all-black pixels. No capture-subsystem or Figma-rendering diagnosis follows. Do not promote these repeated images into successful Preserve proof."
+    },
+    {
+      "evidence": "execution-result-v1.json:17; recovery-boundaries-20261017/execution-result-v1.json accounting; B01_EXECUTION_BRIEF.review-input.md:1167-1180",
+      "assessment": "Authored-edge accounting remains23/324, with301 still unbuilt; activating existing returns creates no authored-edge increment. Prior bounded receipt retains its exact earlier scope and missing-return findings are historical, not silently treated as a new full-mechanism PASS."
+    }
+  ],
+  "image_inventory": [
+    {
+      "name": "01-default.png",
+      "actual_signature": "JPEG",
+      "view_image_inspected": true,
+      "sha256": "e91c596345f17f21eb8fc7fc5dda43fe054b951cc9104772ccbea82271174328"
+    },
+    {
+      "name": "02-detailed-pending.png",
+      "actual_signature": "JPEG",
+      "view_image_inspected": true,
+      "sha256": "ffa151917b3cfeb15d9951b4fbfdb7cadecfcee61f4ba4de7989cf99fc93c5cb"
+    },
+    {
+      "name": "03-visible-pending.png",
+      "actual_signature": "JPEG",
+      "view_image_inspected": true,
+      "sha256": "33c5e5b0d70387a90a07a75ab946a46a98200c906091e8a9079ce90a039092e1"
+    },
+    {
+      "name": "04-source-bottom.png",
+      "actual_signature": "JPEG",
+      "view_image_inspected": true,
+      "sha256": "4e326e63aba900b8ed79ef6fdbe07b874dd3ec44715b3e15c3b5f895a5973fb0"
+    },
+    {
+      "name": "06-preserve-cdp.png",
+      "actual_signature": "PNG",
+      "view_image_inspected": true,
+      "sha256": "f47e70eff23716bd6cf1f481bd07f3a7aa1b6577d8fe3eaf171d3112f298c146"
+    },
+    {
+      "name": "07-preserve-return.png",
+      "actual_signature": "PNG",
+      "view_image_inspected": true,
+      "sha256": "f47e70eff23716bd6cf1f481bd07f3a7aa1b6577d8fe3eaf171d3112f298c146"
+    },
+    {
+      "name": "08-preserve-return-view.png",
+      "actual_signature": "PNG",
+      "view_image_inspected": true,
+      "sha256": "f7ecad004e39f1530f01992cb794ab57e6dc14a101b572ef0a70979e8372247a"
+    },
+    {
+      "name": "09-return-after-viewport.png",
+      "actual_signature": "JPEG",
+      "view_image_inspected": true,
+      "sha256": "ab5596d120b7eda3e2d6ca98b799bf15e544365661b5063054c1bccf86eed022"
+    },
+    {
+      "name": "10-preserve-return-pending-top.png",
+      "actual_signature": "JPEG",
+      "view_image_inspected": true,
+      "sha256": "ffa151917b3cfeb15d9951b4fbfdb7cadecfcee61f4ba4de7989cf99fc93c5cb"
+    },
+    {
+      "name": "11-reset-source-bottom.png",
+      "actual_signature": "JPEG",
+      "view_image_inspected": true,
+      "sha256": "ab5596d120b7eda3e2d6ca98b799bf15e544365661b5063054c1bccf86eed022"
+    },
+    {
+      "name": "12-reset-arrival.png",
+      "actual_signature": "JPEG",
+      "view_image_inspected": true,
+      "sha256": "e91c596345f17f21eb8fc7fc5dda43fe054b951cc9104772ccbea82271174328"
+    },
+    {
+      "name": "13-reset-return-before.png",
+      "actual_signature": "JPEG",
+      "view_image_inspected": true,
+      "sha256": "ab5596d120b7eda3e2d6ca98b799bf15e544365661b5063054c1bccf86eed022"
+    },
+    {
+      "name": "14-reset-return.png",
+      "actual_signature": "JPEG",
+      "view_image_inspected": true,
+      "sha256": "e91c596345f17f21eb8fc7fc5dda43fe054b951cc9104772ccbea82271174328"
+    },
+    {
+      "name": "15-pending-getScreenshot.png",
+      "actual_signature": "JPEG",
+      "view_image_inspected": true,
+      "sha256": "33c5e5b0d70387a90a07a75ab946a46a98200c906091e8a9079ce90a039092e1"
+    },
+    {
+      "name": "16-pending-after-scroll-repaint.png",
+      "actual_signature": "JPEG",
+      "view_image_inspected": true,
+      "sha256": "33c5e5b0d70387a90a07a75ab946a46a98200c906091e8a9079ce90a039092e1"
+    }
+  ],
+  "identical_saved_byte_groups": [
+    [
+      "01-default.png",
+      "12-reset-arrival.png",
+      "14-reset-return.png"
+    ],
+    [
+      "02-detailed-pending.png",
+      "10-preserve-return-pending-top.png"
+    ],
+    [
+      "03-visible-pending.png",
+      "15-pending-getScreenshot.png",
+      "16-pending-after-scroll-repaint.png"
+    ],
+    [
+      "06-preserve-cdp.png",
+      "07-preserve-return.png"
+    ],
+    [
+      "09-return-after-viewport.png",
+      "11-reset-source-bottom.png",
+      "13-reset-return-before.png"
+    ]
+  ],
+  "open_qualification_holds": [
+    "Robust fresh consistent Preserve state/scroll outward-and-return captures, exact scroll and native instance matching/topology remain unqualified.",
+    "Full source/whole-file preservation, 324-edge mechanism coverage, other host families/profiles and accessibility are not established.",
+    "No full B01, restore/_EXIT, pilot acceptance, final visual acceptance, application behavior or integrated Phase 1 acceptance.",
+    "Browser restoration/viewport cleanup are historical producer observations only; current live state was not accessed."
+  ],
+  "review_method": [
+    "Verified all frozen inputs before review and again before receipt through explicit snapshot alias only; read producer result/sequence, snapshots, relevant frozen brief and earlier bounded receipt.",
+    "Viewed all15 saved image files with view_image; compared repeated file identities and independently inspected file signatures. Twelve files named .png are JPEG bytes; three are actual PNG. Extensions are not proof of encoding or pixel freshness.",
+    "An initial stdlib PNG-only metadata probe failed because the first image is actually JPEG; no producer artifact changed. A corrected signature inventory identifies encoding without asserting JPEG pixel decoding or image freshness.",
+    "No live Figma/browser, network, AI/MCP, account, application, canonical, source or Git changes; only this receipt written."
+  ],
+  "limitations": [
+    "PASS is evidence-accounting/claim-boundary review only; all open qualification holds remain.",
+    "No capacity error occurred. Receipt status DOING does not claim task DONE or commit."
+  ]
+}

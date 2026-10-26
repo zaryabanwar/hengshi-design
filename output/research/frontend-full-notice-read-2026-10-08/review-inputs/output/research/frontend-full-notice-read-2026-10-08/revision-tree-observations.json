@@ -1,0 +1,75 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "records": [
+    {
+      "name": "@humanfs/types",
+      "version": "0.15.0",
+      "requested_revision": "85069f193cbacc371c3beb649ce746f8c5a493be",
+      "url": "https://api.github.com/repos/humanwhocodes/humanfs/git/trees/85069f193cbacc371c3beb649ce746f8c5a493be?recursive=1",
+      "checked_at_utc": "2026-10-08T00:41:27.425633+00:00",
+      "http_status": 200,
+      "response_url": "https://api.github.com/repos/humanwhocodes/humanfs/git/trees/85069f193cbacc371c3beb649ce746f8c5a493be?recursive=1",
+      "returned_tree_sha": "85069f193cbacc371c3beb649ce746f8c5a493be",
+      "truncated": false,
+      "bytes": 34169,
+      "sha256": "43ddf12050b9658250d5d6ff53f0b77efd248d6e5d35f0dd5870c5b5b3fb96de",
+      "notice_name_paths": [
+        "packages/box/LICENSE",
+        "packages/core/LICENSE",
+        "packages/deno/LICENSE",
+        "packages/memory/LICENSE",
+        "packages/node/LICENSE",
+        "packages/test/LICENSE",
+        "packages/web/LICENSE"
+      ],
+      "snapshot": "revision-trees/humanfs__types-85069f193cbacc371c3beb649ce746f8c5a493be.json"
+    },
+    {
+      "name": "esrecurse",
+      "version": "4.3.0",
+      "requested_revision": "8ceb63797813d9ac69572a671b95cf58ffdf35b6",
+      "url": "https://api.github.com/repos/estools/esrecurse/git/trees/8ceb63797813d9ac69572a671b95cf58ffdf35b6?recursive=1",
+      "checked_at_utc": "2026-10-08T00:41:27.440827+00:00",
+      "http_status": 200,
+      "response_url": "https://api.github.com/repos/estools/esrecurse/git/trees/8ceb63797813d9ac69572a671b95cf58ffdf35b6?recursive=1",
+      "returned_tree_sha": "8ceb63797813d9ac69572a671b95cf58ffdf35b6",
+      "truncated": false,
+      "bytes": 2364,
+      "sha256": "82bbf84a5d37886f8d20939a62dbd100ffcf0998d19e900d18264dea18ee4280",
+      "notice_name_paths": [],
+      "snapshot": "revision-trees/esrecurse-8ceb63797813d9ac69572a671b95cf58ffdf35b6.json"
+    },
+    {
+      "name": "natural-compare",
+      "version": "1.4.0",
+      "requested_revision": "eec83eee67cfac84d6db30cdd65363f155673770",
+      "url": "https://api.github.com/repos/litejs/natural-compare-lite/git/trees/eec83eee67cfac84d6db30cdd65363f155673770?recursive=1",
+      "checked_at_utc": "2026-10-08T00:41:27.470641+00:00",
+      "http_status": 200,
+      "response_url": "https://api.github.com/repos/litejs/natural-compare-lite/git/trees/eec83eee67cfac84d6db30cdd65363f155673770?recursive=1",
+      "returned_tree_sha": "eec83eee67cfac84d6db30cdd65363f155673770",
+      "truncated": false,
+      "bytes": 2453,
+      "sha256": "bab3ddb41e41d575f7b28c27f425dbfda9e20b039eaf228569526629363f1d0c",
+      "notice_name_paths": [],
+      "snapshot": "revision-trees/natural-compare-eec83eee67cfac84d6db30cdd65363f155673770.json"
+    },
+    {
+      "name": "stats-gl",
+      "version": "2.4.2",
+      "requested_revision": "c12b2e391d5a88616e0b30f3c7f0577966426239",
+      "url": "https://api.github.com/repos/RenaudRohlinger/stats-gl/git/trees/c12b2e391d5a88616e0b30f3c7f0577966426239?recursive=1",
+      "checked_at_utc": "2026-10-08T00:41:27.478732+00:00",
+      "http_status": 200,
+      "response_url": "https://api.github.com/repos/RenaudRohlinger/stats-gl/git/trees/c12b2e391d5a88616e0b30f3c7f0577966426239?recursive=1",
+      "returned_tree_sha": "c12b2e391d5a88616e0b30f3c7f0577966426239",
+      "truncated": false,
+      "bytes": 6923,
+      "sha256": "6d70ecaa67f4824c39904d894a38f07dfda051f6a3e6b8b019b3e41fcde8fd3f",
+      "notice_name_paths": [],
+      "snapshot": "revision-trees/stats-gl-c12b2e391d5a88616e0b30f3c7f0577966426239.json"
+    }
+  ],
+  "limits": "Dated public revision-tree request results, not publisher/source-build proof. HTTP404 does not distinguish unavailable/private/deleted repositories or commits; returned tree SHA may differ from requested commit SHA."
+}

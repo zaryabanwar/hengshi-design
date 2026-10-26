@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-06",
+  "status": "DOING",
+  "scope": "proposed IF-CHAT-02 request/response schema and focused validator fixtures; unreviewed",
+  "review_manifest_sha256": "95351e33533bce4b9bc610d4aed18678913bc3bc292a79123a5139fcc29c054d",
+  "prior_directional_proposal_packet_preserved": true,
+  "focused_command": "C:/Python314/python.exe -X utf8 -m unittest scripts.validation.test_chat_consent_schema -q",
+  "focused_methods": 7,
+  "focused_exit_code": 0,
+  "batch_command": "C:/Python314/python.exe -X utf8 -m unittest discover -s scripts/validation -p 'test_*schema.py' -q",
+  "batch_methods": 84,
+  "batch_exit_code": 0,
+  "verification_scope": "schema validators only",
+  "HTTP_authorization_concurrency_store_withdrawal_enforcement_proved": false,
+  "independent_verdict": null,
+  "review_job_launched": false,
+  "review_capacity": "existing reviewer terminal workspace-out-of-credits, no automatic retry or settings change",
+  "Figma_call_or_application_change": false
+}

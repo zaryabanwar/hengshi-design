@@ -1,0 +1,69 @@
+{
+  "status": "DOING",
+  "scope": "Reference-only reconciliation, not material controls or expanded review scope",
+  "before_sha256": "b898aa17b24da49016b29b3da1de08ce8ccf49c6cbd4ed0d4f069cb314b83361",
+  "after_sha256": "9eac3dd0ff363c498d4d592e2f85ed601adb497bec34cfb3cfcfd0a90136eb9f",
+  "added_links": [
+    {
+      "label": "Controlling scheduling proposal",
+      "target": "../phase-1-architecture/contracts/BOOKING_SCHEDULING.md",
+      "exists": true,
+      "anchor_exists": false
+    },
+    {
+      "label": "correction-2 independent logical receipt",
+      "target": "../../output/research/booking-scheduling-lifecycle-2026-10-08/final-independent-review.json",
+      "exists": true,
+      "anchor_exists": false
+    },
+    {
+      "label": "Appendix",
+      "target": "../phase-1-architecture/contracts/BOOKING_SCHEDULING.md#directional-representation-proposal--2026-10-08",
+      "exists": true,
+      "anchor_exists": true
+    },
+    {
+      "label": "schema module",
+      "target": "../phase-1-architecture/contracts/booking-scheduling.schema.json",
+      "exists": true,
+      "anchor_exists": false
+    },
+    {
+      "label": "32-input independent shape receipt",
+      "target": "../../output/research/booking-scheduling-shapes-2026-10-08/final-independent-review.json",
+      "exists": true,
+      "anchor_exists": false
+    },
+    {
+      "label": "New transport appendix",
+      "target": "../phase-1-architecture/contracts/BOOKING_SCHEDULING.md#scheduling-http-and-finite-resource-proposal--2026-10-08",
+      "exists": true,
+      "anchor_exists": true
+    },
+    {
+      "label": "32-input frozen review target",
+      "target": "../../output/research/booking-scheduling-http-2026-10-08/initial/manifest.json",
+      "exists": true,
+      "anchor_exists": false
+    },
+    {
+      "label": "first review attempt",
+      "target": "../../output/research/booking-scheduling-http-2026-10-08/review-attempt.json",
+      "exists": true,
+      "anchor_exists": false
+    },
+    {
+      "label": "Synthetic sizing",
+      "target": "../../output/research/booking-scheduling-http-2026-10-08/synthetic-sizing.json",
+      "exists": true,
+      "anchor_exists": false
+    },
+    {
+      "label": "installed parser observations",
+      "target": "../../output/research/booking-scheduling-http-2026-10-08/stdlib-observations.json",
+      "exists": true,
+      "anchor_exists": false
+    }
+  ],
+  "http_review": "pending; first attempt credit error; retry interrupted without retained verdict"
+}

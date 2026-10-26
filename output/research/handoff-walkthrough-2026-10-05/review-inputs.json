@@ -1,0 +1,49 @@
+{
+  "scope": "Only new human-consultation details translation and complete element captures; no whole-board or runtime certification",
+  "inputs": [
+    {
+      "path": "docs/software-definition/definition-walkthrough.html",
+      "sha256": "cca61f8551343b5fbd5a436c9ec95e2e4921f61d10fc38a74b851a240fa95ba9"
+    },
+    {
+      "path": "output/research/handoff-walkthrough-2026-10-05/definition-walkthrough.reviewed.html",
+      "sha256": "cca61f8551343b5fbd5a436c9ec95e2e4921f61d10fc38a74b851a240fa95ba9"
+    },
+    {
+      "path": "output/research/handoff-walkthrough-2026-10-05/definition-walkthrough.pre-consultation.html",
+      "sha256": "96624a3614eaa6ab1a6701b74eac5155870790b3b5110aec13641b1eab620f8a"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "sha256": "2f6972361779ab6b36deeb17249e69f23b04c1468e765e66f504f9fc239f30ff"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/handoff-lifecycle-v1-2026-10-05.md",
+      "sha256": "5b436b2fb13e3af1ab7ae6e81a65858c47bad5e999ded23d4058d80b26ed2800"
+    },
+    {
+      "path": "docs/phase-1-ux-architecture/FLOWS.md",
+      "sha256": "2169c1543d697e94548ebb4675ea815fa9e36955adcb808faf02c3f37107e14b"
+    },
+    {
+      "path": "output/playwright/definition-consolidation/human-consultation-desktop-reviewed-2026-10-05.png",
+      "sha256": "4a32cf7e4920515cd59c6d5172b9d880c4256034f0cb4560bbc3c3227131c25d"
+    },
+    {
+      "path": "output/playwright/definition-consolidation/human-consultation-mobile-reviewed-2026-10-05.png",
+      "sha256": "bcab142a911195b99ea60a18badb5aae31f88658464c80df3390387ed771c968"
+    }
+  ],
+  "producer_observations": {
+    "diff": "Removing exactly the new single-line details block reproduces pre-visual byte hash",
+    "pre_visual_sha256": "96624a3614eaa6ab1a6701b74eac5155870790b3b5110aec13641b1eab620f8a",
+    "desktop": "1440x1000 viewport; scroll/client1425; expanded details1124wide; four columns; all cards caption 3links captured",
+    "mobile": "390x844 viewport; scroll/client375; expanded details331wide and1776high; one column; all cards caption3links captured",
+    "keyboard": "Native summary Enter closes Space opens Tab reaches controlling contract link; final current-byte keyboard check separately repeated",
+    "console": "0 errors 0 warnings",
+    "capture_only": "Temporary DOM html scrollBehavior auto and scrollbarGutter stable; removed after captures. No source style edit or motion/phone certification",
+    "cache": "Browser initially retained older caption/2links; stale/closed captures excluded. Reload query review=consultation-current-20261005 verified current caption/3links and server copy",
+    "excluded_captures": "Only filenames ending desktop-reviewed-2026-10-05.png and mobile-reviewed-2026-10-05.png are review evidence",
+    "runtime": "No staff console consultation auth database websocket provider or phone execution"
+  }
+}

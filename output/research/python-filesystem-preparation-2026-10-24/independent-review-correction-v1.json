@@ -1,0 +1,66 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "verdict": "PASS",
+  "reviewer": "Independent reviewer /root/review_archive_candidate_v1",
+  "reviewed_at_utc": "2026-10-24T08:29:54.237679+00:00",
+  "scope": "Focused TREE01 correction review only; original full-candidate review and limitations remain separate.",
+  "inputs_reverified_after_tests": [
+    {
+      "path": "tree_measurement.py",
+      "bytes": 7399,
+      "sha256": "5c6c82683b6b4220e45243631527fbb152cf2f88274316b8ff10007454eb9542"
+    },
+    {
+      "path": "test_tree_measurement.py",
+      "bytes": 7199,
+      "sha256": "a25d4a3cece357dfb23b4c5b6302b82c53f3da5d59016b4ba58696a98270b222"
+    },
+    {
+      "path": "initial-reviewed/tree_measurement.py",
+      "bytes": 7240,
+      "sha256": "16c94526f1acb23fad787a735f804718392d6e415feb6a255d584e3aecfaf8ee"
+    },
+    {
+      "path": "initial-reviewed/test_tree_measurement.py",
+      "bytes": 6132,
+      "sha256": "2903bda55c6e64151ed5a445c157cf13941cbb5a019c2c6e93f6cb1b835b1df0"
+    },
+    {
+      "path": "independent-review-v1.json",
+      "bytes": 3823,
+      "sha256": "6d447f6b3d89856b974e98e2933956bc02c59acf12c82b06d41ec642940ee211"
+    }
+  ],
+  "correction": {
+    "finding": "TREE01",
+    "disposition": "resolved for bounded helper candidate",
+    "evidence": "tree_measurement.py:51-62,113-118; test_tree_measurement.py:test_root_length_and_ancestor_bounds_before_filesystem_reads",
+    "assessment": "Explicit4..1024 character bound precedes NFC normalization/splitting, then at most64 root components precede ancestor allocation. Thus the admitted chain is finite independently of variable Windows path maxima. Ancestor construction now checks cooperative deadline each iteration. New test proves exact lexical maxima reach mocked OS admission while one beyond fails before any lstat; it does not claim those synthetic long components are real valid Windows files."
+  },
+  "test_replay": {
+    "argv": [
+      "C:/Python314/python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "-v",
+      "test_tree_measurement"
+    ],
+    "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python-filesystem-preparation-2026-10-24",
+    "python": "3.14.5",
+    "exit_code": 0,
+    "tests": 14,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "reported_seconds": 0.036,
+    "fixture_policy": "Additional tiny retained fixtures and real hard link; no cleanup."
+  },
+  "findings": [],
+  "limits": [
+    "Only two bounded lexical checks, cooperative ancestor tick and one focused boundary test differ from preserved initial-reviewed files. Initial REVISE receipt remains unchanged.",
+    "No ownership authentication, race-resistant containment, ADS/allocated-byte accounting, content-integrity or physical reservation proof. Blocking OS calls remain outside hard-deadline guarantees.",
+    "No install, extraction, trial, network, browser/app/external/Git action or source edit. Only this correction receipt written. No capacity error."
+  ]
+}

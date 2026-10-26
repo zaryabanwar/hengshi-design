@@ -1,0 +1,148 @@
+{
+  "product": "Hengshi Design v1",
+  "verdict": "PASS",
+  "verdict_scope": "Saved current registry metadata and preserved published-artifact identity only; D077 conditions and graph/adoption holds unchanged.",
+  "reviewed_at_utc": "2026-10-12T03:57:07.119349+00:00",
+  "packet_binding": {
+    "manifest": "output/research/renderer-stable-recheck-2026-10-12/review-inputs.json",
+    "sha256": "1a53b36512f5e226edcdbc5fd37a364af1721d6dfbcec5c376066b57bcc6e74b",
+    "verified_input_count": 28,
+    "all_frozen_sizes_and_sha256_independently_verified": true
+  },
+  "registry_observations_verified": [
+    {
+      "package": "three",
+      "source": "https://registry.npmjs.org/three",
+      "observed_utc": "2026-10-11T20:20:33.512Z",
+      "latest_dist_tag": "0.186.1",
+      "highest_enumerated_numeric_stable": "0.186.1",
+      "numeric_stable_count": 300,
+      "raw_bytes": 335291,
+      "raw_sha256": "30fe588f7b25ee26c7367536e813cc8d69a6612ae3c1d8d2eedd4256fcb72d53",
+      "compressed_bytes": 120549,
+      "compressed_sha256": "a904a82715c6630c721f9ed78fb64b24bf989c10f4c9823e6fc11642be799f69",
+      "both_identities_recomputed": true,
+      "exact_latest_dependencies_peers_engines_tarball_integrity_equal_prior_full_registry": true,
+      "latest_tags_equal_previous_full_inputs": true,
+      "observation_full_dist_equals_current_raw_dist": true
+    },
+    {
+      "package": "@types/three",
+      "source": "https://registry.npmjs.org/%40types%2Fthree",
+      "observed_utc": "2026-10-11T20:20:33.512Z",
+      "latest_dist_tag": "0.186.0",
+      "highest_enumerated_numeric_stable": "0.186.0",
+      "numeric_stable_count": 247,
+      "raw_bytes": 243361,
+      "raw_sha256": "0f77497b13f1e33b01dd4665d905c5e29cfe3e4a3661fc65cd67fb4edccb1ea7",
+      "compressed_bytes": 110106,
+      "compressed_sha256": "1b9bae905f5d9dc5e5b04ba33fa60846962842fa62cf3207120ec156a3858d88",
+      "both_identities_recomputed": true,
+      "exact_latest_dependencies_peers_engines_tarball_integrity_equal_prior_full_registry": true,
+      "latest_tags_equal_previous_full_inputs": true,
+      "observation_full_dist_equals_current_raw_dist": true
+    },
+    {
+      "package": "three-stdlib",
+      "source": "https://registry.npmjs.org/three-stdlib",
+      "observed_utc": "2026-10-11T20:20:33.512Z",
+      "latest_dist_tag": "2.36.1",
+      "highest_enumerated_numeric_stable": "2.36.1",
+      "numeric_stable_count": 237,
+      "raw_bytes": 352502,
+      "raw_sha256": "4660e613d591553b4ddde40756492a843d0396a5fb20a2cea0181c22b2eab601",
+      "compressed_bytes": 127047,
+      "compressed_sha256": "42dbaa978a5d065128d59c126e7cc1e1d1750df1717ca6c546a3fb9e73665467",
+      "both_identities_recomputed": true,
+      "exact_latest_dependencies_peers_engines_tarball_integrity_equal_prior_full_registry": true,
+      "latest_tags_equal_previous_full_inputs": true,
+      "observation_full_dist_equals_current_raw_dist": true
+    },
+    {
+      "package": "@react-three/drei",
+      "source": "https://registry.npmjs.org/%40react-three%2Fdrei",
+      "observed_utc": "2026-10-11T20:20:33.512Z",
+      "latest_dist_tag": "10.7.9",
+      "highest_enumerated_numeric_stable": "10.7.9",
+      "numeric_stable_count": 884,
+      "raw_bytes": 1658132,
+      "raw_sha256": "494c9c9dcefdc5f05be18e8c66e2a923cc50067058fa55866f35b19e15f0784c",
+      "compressed_bytes": 522096,
+      "compressed_sha256": "36a9673a2b807f7775c78beabe88a440eb5123af4a3b6965619b9d9ad70a078d",
+      "both_identities_recomputed": true,
+      "exact_latest_dependencies_peers_engines_tarball_integrity_equal_prior_full_registry": true,
+      "latest_tags_equal_previous_full_inputs": true,
+      "observation_full_dist_equals_current_raw_dist": true
+    },
+    {
+      "package": "@react-three/fiber",
+      "source": "https://registry.npmjs.org/%40react-three%2Ffiber",
+      "observed_utc": "2026-10-11T20:20:33.512Z",
+      "latest_dist_tag": "9.8.1",
+      "highest_enumerated_numeric_stable": "9.8.1",
+      "numeric_stable_count": 229,
+      "raw_bytes": 630961,
+      "raw_sha256": "74cc0b3c551c1988c650fa55880b2ac5ba414637ee6f83a7ae1acd2494742b8f",
+      "compressed_bytes": 181309,
+      "compressed_sha256": "36999560bd12091e8a5d2aadf8513491445f83677c4aed23b42f6ccbdaacd715",
+      "both_identities_recomputed": true,
+      "exact_latest_dependencies_peers_engines_tarball_integrity_equal_prior_full_registry": true,
+      "latest_tags_equal_previous_full_inputs": true,
+      "observation_full_dist_equals_current_raw_dist": true
+    }
+  ],
+  "published_archive": {
+    "bytes": 4955095,
+    "recomputed_sha256": "e246431950e1f73bad0f217ab928f1e66b08fc4e003e50ed5ce6817a8150c0cc",
+    "recomputed_sha512_sri": "sha512-XyGQrFmNQ5O/IoKm556ftwKsBg11TIb301MB5dWNicziQBEs2g3gtOYIf7pFiLa0zI2gUwhtCjv9fmjnxKZ1Cg==",
+    "matches_current_registry_and_old_source_comparison": true,
+    "fresh_download_or_extraction": false
+  },
+  "saved_loader_identity_verification": [
+    {
+      "path": "loaders/SVGLoader.d.ts",
+      "published_sha256": "5a8aa1adc0a8d6cf8a106fd8cc422e28ca130292d452b75d17678d24ab31626b",
+      "recomputed_saved_hash_matches_prior_source_comparison": true
+    },
+    {
+      "path": "loaders/TGALoader.d.ts",
+      "published_sha256": "f856d3559afde2a5e3f0e4e877d0397fe673eea71ac3683abb7c6cef429c192d",
+      "recomputed_saved_hash_matches_prior_source_comparison": true
+    }
+  ],
+  "append_only_verification": [
+    {
+      "current": "inputs/03-THREE_STABLE_EXCEPTION_PROPOSAL.md",
+      "current_sha256": "d896bf0ff09c7e6b66f2d8c2d6c88c5fb3ad183cb2af9f3eb10a4a827359f525",
+      "prior_sha256": "86789dce3447024c62dbedce1967f2f8878b7c2c942065b3d42037bbbd54dfc0",
+      "complete4310byte_prior_prefix_preserved": true,
+      "append_bytes": 543
+    },
+    {
+      "current": "inputs/04-refresh-evidence-2026-10-04.md",
+      "current_sha256": "127e3dd62e87f6d0140b49c5796b5f1a5fa9f00211736740e3871e6f1036efb6",
+      "prior_sha256": "e7eadbd5b9dd14246d4f1dfa2b4159b1294dd51bcea094b035eff9f552d67cd1",
+      "complete112048byte_prior_prefix_preserved": true,
+      "append_bytes": 1554
+    }
+  ],
+  "findings": [],
+  "observations": [
+    "Allfive gzip snapshots were independently decompressed in memory; raw/compressed byte sizes and SHA256 match observations. Actual numeric stable version keys were sorted numerically by major/minor/patch; highest equals latest, previous_latest and prior full-registry latest for each package.",
+    "Exact current latest dependency/peer/engine/tarball/integrity representations equal prior full records. The current raw dist objects equal saved observations. This is unchanged selected metadata, not whole-graph resolution or release-date verification.",
+    "Preserved stdlib archive independently satisfies current registry SHA512 SRI and prior SHA256. Both saved loader identities independently match old published source-comparison hashes. Earlier extraction and failed declaration receipts retain their exact scope; no compiler/build/browser/runtime result is refreshed.",
+    "Both canonical changes append only, retaining every earlier byte and D077 allowed three0.184.0/types0.184.1 pair, deadline2027-01-07, before-adoption/relevant-fix rechecks, strict declarations, separate nested-renderer/full-graph/supply-chain/rollback and adoption/founder gates.",
+    "Saved Context7 excerpts explicitly cite Three.js development-branch docs and describe loader parse-return semantics. Current appendices correctly deny using those snippets to prove published stdlib declarations or a released fix.",
+    "No newer numeric stable release appears in thesefive saved registries. Neither metadata nor SRI proves compatibility, security/provenance/licence/legal clearance, production graph selection or adoption.",
+    "Saved registry observation timestamp2026-10-11T20:20:33.512Z corresponds to2026-10-12 Asia/Karachi. Publication-time fields were not requested; tags/enumeration are not publication-date claims.",
+    "The separate recorded terminal review/capacity attempt and later navigation notes are outside this freeze and remain untouched. This receipt saves the already completed independent conclusions without provider/model/settings changes or repeating registry/compiler probes."
+  ],
+  "limitations": [
+    "PASS covers only28 saved inputs and bounded appended evidence interpretation. No live registry, Context7/Figma or external-source authentication/freshness read was made by this reviewer.",
+    "SRI/hash checks establish artifact identity/integrity, not signature, attestation/build provenance, source trust, security/advisory disposition or legal clearance. Saved signature metadata was not cryptographically verified.",
+    "Five package records do not refresh complete transitive/platform/deployed/editor/CI graph, establish coupled compatibility or select production locks.",
+    "Saved loader hashes rely on earlier extraction/source-comparison association; no new extraction, merged-source fetch or compiler/build/browser/runtime test was performed.",
+    "D077 conditions/expiry remain intact. No new exception/adoption, install/upgrade, application/asset/account/provider/model/settings/Git/delegation action occurred; only this exclusive-create receipt was written.",
+    "The earlier failed review-attempt record was not rewritten. Later terminal-error navigation notes are outside the frozen review and this receipt grants no automatic retry."
+  ]
+}

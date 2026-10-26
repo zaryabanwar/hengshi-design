@@ -1,0 +1,11 @@
+node_modules/three-stdlib/loaders/SVGLoader.d.ts(3,18): error TS2430: Interface 'SVGResultPaths' incorrectly extends interface 'ShapePath'.
+  Types of property 'userData' are incompatible.
+    Type '{ [key: string]: any; } | undefined' is not assignable to type 'Record<string, unknown>'.
+      Type 'undefined' is not assignable to type 'Record<string, unknown>'.
+node_modules/three-stdlib/loaders/TGALoader.d.ts(13,3): error TS2416: Property 'parse' in type 'TGALoader' is not assignable to the same property in base type 'DataTextureLoader'.
+  Type '(data: ArrayBuffer) => DataTexture' is not assignable to type '(buffer: ArrayBuffer) => DataTextureLoaderTexData'.
+    Type 'DataTexture' is not assignable to type 'DataTextureLoaderTexData'.
+      Types of property 'format' are incompatible.
+        Type 'AnyPixelFormat' is not assignable to type 'PixelFormat | undefined'.
+          Type '33776' is not assignable to type 'PixelFormat | undefined'.
+src/fixture.tsx(17,31): error TS2339: Property 'isWebGLRenderer' does not exist on type 'WebGLRenderer'.

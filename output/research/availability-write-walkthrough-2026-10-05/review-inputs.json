@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-05",
+  "scope": "Only new native details#staff-availability explanation; no new production control, whole-board acceptance or implementation",
+  "producer_inspection": "Playwright CLI 0.1.19: desktop1440x1000 four-column flow, page/client1425; mobile390x844 single-column331px flow, page/client375, no horizontal overflow. Summary Enter closes, Space opens, Tab reaches controlling contract link. Console errors/warnings0. Separate presentation checks only; no actual availability/auth/transaction/runtime/phone/accessibility certification.",
+  "capture_limit": "Full element captures. Mobile capture temporarily uses browser-only html scroll-behavior:auto and scrollbar-gutter:stable to prevent screenshot scroll/scrollbar-reflow clipping; no source/CSS edit. Initial clipped captures and failed reduced-motion command are excluded. Final mobile image includes summary, all four cards, qualification and three links. These captures do not verify smooth-scroll/reduced-motion behavior.",
+  "inputs": [
+    {
+      "path": "docs/software-definition/definition-walkthrough.html",
+      "bytes": 44940,
+      "sha256": "96624a3614eaa6ab1a6701b74eac5155870790b3b5110aec13641b1eab620f8a"
+    },
+    {
+      "path": "output/research/availability-write-walkthrough-2026-10-05/definition-walkthrough.reviewed.html",
+      "bytes": 44940,
+      "sha256": "96624a3614eaa6ab1a6701b74eac5155870790b3b5110aec13641b1eab620f8a"
+    },
+    {
+      "path": "output/research/availability-write-walkthrough-2026-10-05/definition-walkthrough.pre-staff-control.html",
+      "bytes": 42857,
+      "sha256": "add409539ba1901a1cd081b7df5c2fe2a07a7008ad6c4b1460ce7081964f0f6f"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/AVAILABILITY_WRITE_HTTP.md",
+      "bytes": 17992,
+      "sha256": "ecbe82a65d739857b78621a7800e11330b8f03dd464807dd36fe5920ab3dacc8"
+    },
+    {
+      "path": "output/research/availability-write-http-2026-10-05/AVAILABILITY_WRITE_HTTP.reviewed.md",
+      "bytes": 17992,
+      "sha256": "ecbe82a65d739857b78621a7800e11330b8f03dd464807dd36fe5920ab3dacc8"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/availability-write-http-v1-2026-10-05.md",
+      "bytes": 14104,
+      "sha256": "7444e129c34e8b78026ada42d0f3a9cda43c4426e745939cce95e00304774b1d"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/AVAILABILITY_READ_HTTP.md",
+      "bytes": 13180,
+      "sha256": "d85d2b581980aee36f3132f7de1ee2ae3633ae65bc4bbaf8e6dd49e3c98b4f0f"
+    },
+    {
+      "path": "output/playwright/definition-consolidation/staff-availability-desktop-2026-10-05.png",
+      "bytes": 67246,
+      "sha256": "e1491e766b2d764317e1fa9b9d9b6cf9d367462688d6ffe7f2f28c69b840b850"
+    },
+    {
+      "path": "output/playwright/definition-consolidation/staff-availability-mobile-complete-2026-10-05.png",
+      "bytes": 69588,
+      "sha256": "e32899c6aea1876e508d56940bfa5930f9d6a6d4fbd7b70e2293e0ae1c9da4d8"
+    }
+  ]
+}

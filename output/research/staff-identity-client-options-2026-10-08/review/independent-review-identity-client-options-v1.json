@@ -1,0 +1,33 @@
+{
+  "status": "DOING",
+  "review_verdict": "PASS",
+  "date": "2026-10-08",
+  "revision_cycle": 0,
+  "scope": "38 frozen inputs: maintained staff identity client comparison, preserved earlier backend prefix and two scoped reconciliation-map rows only.",
+  "manifest_sha256": "f54dddad1a3d94a1fc198b89891baf6e40001b8d0ce25fbb9fc03a09604a3047",
+  "integrity": "All38 snapshot/live sizes and hashes match. Twenty compressed/raw registry/source records independently match their receipts. The entire25,980-byte backend before prefix remains; map changes are only rows90 and242. Existing staff mediation bytes remain unchanged.",
+  "findings": [],
+  "source_assessment": [
+    "Registry versions MSAL1.39.0/Authlib1.8.0, exact Requires-Dist clauses and Python restrictions match saved observations. Non-draft/non-prerelease release tags directly resolve to the recorded commits; saved source URLs bind those commits. No source signature or wheel-build association is inferred.",
+    "MSAL current token acquisition decodes unvalidated ID-token claims; retained code-flow state/PKCE/nonce and deprecated legacy decoding do not establish required signature/issuer/audience/expiry validation. Offline-access exclusion and bounded blocking Requests qualification remain explicit.",
+    "Authlib async Starlette/HTTPX is supported by saved source/docs; server cache uses a browser-session marker, while no-cache stores flow data in the session. Separate get/delete calls do not prove atomic single-use consumption.",
+    "Authlib parsing is conditional on token/nonce presence, permits nonce_supported=false bypass, uses discovery algorithms/defaultRS256 and120-second leeway, and custom claims_options replaces the issuer default. The proposal requires explicit issuer/tenant/audience/algorithm/time/nonce guards and negative qualification without claiming current enforcement.",
+    "Base expires_in=3600 is an unselected library default. The appendix retains the controlling expiring single-use transaction requirement and expired/concurrent-transaction qualification. This adequately preserves expiry policy; neither session marker/cleanup nor cache get establishes physical expiration enforcement.",
+    "Evaluating Authlib as leading candidate and MSAL plus a separately qualified verifier as alternative is coherent with maintained-client requirements and async/backend ownership. It selects no client/graph, grants, storage policy, account access or implementation."
+  ],
+  "reviewed_change": {
+    "backend": "docs/phase-1-compatibility/backend-evidence-2026-10-04.md:373-432",
+    "map": "docs/software-definition/04-reconciliation-map.md:90,242"
+  },
+  "reviewer_evidence": {
+    "path": "independent-source-observations.json",
+    "sha256": "00c4c71464930c84084444a72e81cf698adac51c28e4fb12ee53b2fc57a53cce"
+  },
+  "limits": [
+    "Pinned source was read as text, never imported/executed. No complete lower-library JOSE/OIDC conformance, maintained support guarantee, release authenticity, wheel provenance, full licence/advisory or native/API compatibility proof.",
+    "Exact coupled graph, expiry/atomic store, strict callback/parser/session/current membership mechanisms, bounded discovery/JWKS/network/key rotation and real security/grant behavior remain later qualification.",
+    "External guidance/Context7 references beyond the saved packet were not refetched; primary-version/source claims are bounded to saved bytes.",
+    "The separate pending43-package native trial supplies no permission to add either client. No prior metadata/native-plan replay was repeated.",
+    "No network, installation, app/config/account/Figma/Git changes or fan-out. Integrated and founder acceptance remain separate."
+  ]
+}

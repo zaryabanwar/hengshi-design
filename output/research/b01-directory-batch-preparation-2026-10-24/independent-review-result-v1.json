@@ -1,0 +1,243 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-24",
+  "reviewer": "/root/review_navigation_result_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "PASS",
+  "scope": "Bounded Directory transaction/result and representative saved-playback review including23 actual JPEGs and a recapture amendment. Source/report/graph/archive consistency and visible fixture-state evidence only; not independent live replay or complete108-edge qualification.",
+  "inputs": [
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/directory-reaction-batch-v1.js",
+      "bytes": 41815,
+      "sha256": "06b989bc637e36db4b4da447557b58f97131b9138a14f0cfa581f181deb4d380"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/expected-scope-v1.json",
+      "bytes": 38649,
+      "sha256": "af075271af01615b2f9d36f579e0b0b6f0ff7336a17209685487be27bbd92c18"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/independent-review-proposal-v1.json",
+      "bytes": 7556,
+      "sha256": "d14975b52846cfeeb40b96b69c74831af81ac3d4979eadbacc624c5b893ebbe8"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/mcp-result.json",
+      "bytes": 8312,
+      "sha256": "451a8dbb1bf98091405531f9f8a1400ac8cef6ce309e11ad5e7d8264e39dae62"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/applied-report.json",
+      "bytes": 12987,
+      "sha256": "341ee031b9b93cc05600abd1256bde93538590780f8c4caf2c671c4aaf0d5805"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/before.fig",
+      "bytes": 436234,
+      "sha256": "aec9fce4fa64577cfc3e8c5b9e402c013f14cd79af412f8d4bf3971d7248ef25"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/after.fig",
+      "bytes": 437532,
+      "sha256": "a952d31f3b9cfaf887697a077bceba447c28fbd3b5f2b8f5377c2ef93852630d"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/usage-before.txt",
+      "bytes": 139,
+      "sha256": "fc49077d3b37900d48b2d773ef179d7dcca31a3c847cbbff91b03f4d30e2cc72"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/usage-before.jpg",
+      "bytes": 40781,
+      "sha256": "73a9e59deb9784cb4a18465fd45329092fb17dfaa43e4b87b39354c426d2877e"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/execution-observation-v1.json",
+      "bytes": 5870,
+      "sha256": "81a1a8ebcfeb27de37970cee188f7b8210c7923a35c5dda4fc7fa8147845f770"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback-recapture-v1.json",
+      "bytes": 3320,
+      "sha256": "0580bf89139a36a9f54ddd9316b7fbd93bf4b9319d296b13a8e792a2369d0ed5"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/01-balanced-closed.jpg",
+      "bytes": 30083,
+      "sha256": "5c35c9c9f384b71bd382ee146ee53bbaa2865d53712c523b0f4fdb9c527215eb"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/02-balanced-open.jpg",
+      "bytes": 39938,
+      "sha256": "bd2557cb5cdd20111d23ae52e03178f5a71b33464a230fe9055ab592b6466eea"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/03-quick-access-pending-balanced-active.jpg",
+      "bytes": 39932,
+      "sha256": "c2d0eb94039e1e353c07526c0da3a60b100ae2356c61015966da5b0d4a9b54d3"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/04-escape-balanced-active.jpg",
+      "bytes": 29731,
+      "sha256": "5048f0e1c8ceccfede5f7a0315e0bc7afaa34234c2ea64e8aef205f5a8f9fc9f"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/05-reopen-retains-quick-access-pending.jpg",
+      "bytes": 39932,
+      "sha256": "c2d0eb94039e1e353c07526c0da3a60b100ae2356c61015966da5b0d4a9b54d3"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/06-quick-access-active-query-preserved.jpg",
+      "bytes": 40913,
+      "sha256": "592eece3ab2dc261f8ad08ba51f7cba17e3681496884d190e50945e826d8957d"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/07-detailed-pending-quick-access-active.jpg",
+      "bytes": 40003,
+      "sha256": "619cf8f532a7ca654985d39286a1fdfcc8f7df65c8b518c4061baad5275c3a4a"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/08-close-retains-quick-access.jpg",
+      "bytes": 29743,
+      "sha256": "af0e4932ee04f38f6a58d7767f400554052401aa7a6b822c33afe83ff340a539"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/09-reopen-retains-detailed-pending.jpg",
+      "bytes": 40003,
+      "sha256": "619cf8f532a7ca654985d39286a1fdfcc8f7df65c8b518c4061baad5275c3a4a"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/10-detailed-active-query-preserved.jpg",
+      "bytes": 40688,
+      "sha256": "2b41128f7c65eb720236da42620a563b403da61cf746ccc1e74a0f88ec1da8ad"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/11-simplified-pending-detailed-active.jpg",
+      "bytes": 39829,
+      "sha256": "06fa2d652b6a51e4b0351306229d96cf20e17f7cd51743eee0bd5b10dedb6cbf"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/12-simplified-active-query-preserved.jpg",
+      "bytes": 40987,
+      "sha256": "3b670556a69582629ed78f01bde3fffd5cb8d4a83f1ab3dc4b516cb0e0ea216a"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/13-balanced-pending-simplified-active.jpg",
+      "bytes": 40167,
+      "sha256": "4d98ccf754a6e50018b40238a926fd2f8065141fceaa2b499bfc8f754937e292"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/14-balanced-active-query-preserved.jpg",
+      "bytes": 40814,
+      "sha256": "e34e78c2007ba5d90ac0ac85607b8e1e87b539c560706f6d15f906c9b07ed8eb"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/15-quick-access-active-settled.jpg",
+      "bytes": 40059,
+      "sha256": "e0976068512809e2896ea1ffb7397ba1386462c9900437b1f33aa54f6c85fdbe"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/16-close-quick-access-active-settled.jpg",
+      "bytes": 29743,
+      "sha256": "af0e4932ee04f38f6a58d7767f400554052401aa7a6b822c33afe83ff340a539"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/17-reopen-detailed-pending-quick-access-active-settled.jpg",
+      "bytes": 40003,
+      "sha256": "619cf8f532a7ca654985d39286a1fdfcc8f7df65c8b518c4061baad5275c3a4a"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/18-reopen-full-page.jpg",
+      "bytes": 40477,
+      "sha256": "45ca973ad6f054b7775ecfa945812326e90f3a415df84bf21853dccc75330fca"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/19-close-full-page.jpg",
+      "bytes": 30217,
+      "sha256": "55124b3c7ebc87941cd207f73b0ed9de7216585d0b5d8b405eaf7bef4de9213e"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/20-close-settled-full-page.jpg",
+      "bytes": 30217,
+      "sha256": "55124b3c7ebc87941cd207f73b0ed9de7216585d0b5d8b405eaf7bef4de9213e"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/21-visible-closed.jpg",
+      "bytes": 30217,
+      "sha256": "55124b3c7ebc87941cd207f73b0ed9de7216585d0b5d8b405eaf7bef4de9213e"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/22-visible-reopen.jpg",
+      "bytes": 40477,
+      "sha256": "45ca973ad6f054b7775ecfa945812326e90f3a415df84bf21853dccc75330fca"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/playback/23-visible-reopen-settled.jpg",
+      "bytes": 40477,
+      "sha256": "45ca973ad6f054b7775ecfa945812326e90f3a415df84bf21853dccc75330fca"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/capture-interpretation-correction-v1.json",
+      "bytes": 5311,
+      "sha256": "adae4ce887315652b21e36df164fa54a123857559531ed0f40b658c7d206f104"
+    }
+  ],
+  "checks": [
+    "Saved source presented as executed matches preparation PASS pin and producer execution observation SHA25606b989bc637e36db4b4da447557b58f97131b9138a14f0cfa581f181deb4d380. All six local preparation inputs remain byte/hash identical to the reviewed bindings.",
+    "Raw non-error MCP content parses exactly to applied report: APPLIED, zero created nodes,108 unique mutated controls,32 exact variants and108 same-set edges. Normalized graph equals expected-scope108 Directory edges exactly; mutation IDs equal all108 control IDs. Seven Navigation baseline controls are outside this target set; no Navigation mutation is reported.",
+    "Both before/after editable archives pass ZIP CRC and their bytes/hashes match execution observation. CRC establishes readable archive integrity, not independent native restore or semantic before/after canvas comparison.",
+    "All23 actual JPEG files were opened and visually inspected. Byte counts/SHA256 match both observation files; pre-call Usage screenshot and text agree on7 available included MCP calls and352/500 AI credits used. Post-call balance remains unobserved.",
+    "Original02/03/05 show Balanced active, Quick Access pending only after choice.04 shows closed Balanced and05 reopens with Quick Access pending.06 readable captions show Quick Access active;07/09 show Detailed pending with Quick Access active.10 readable captions show Detailed active;11 shows Simplified pending;12 shows Simplified active;13 shows Balanced pending;14 readable captions show Balanced active. These support four bounded cross-mode Apply-state results, not production renderer/search behavior.",
+    "Recapture15 shows Quick Access active/selected. Full visible21 confirms closed Quick Access with Open directory. Reopened23, byte-identical to18/22, supplies Quick Access in-force legend, Detailed pending selection and Close directory. This supports the retained pending/active Close/reopen state sequence, while physical trigger inputs remain producer observations.",
+    "The Services middle-dot query design header is a static fixture. Its persistence represents a context-caption reference only, not actual Directory search/query-state implementation.",
+    "All reported representative tuple/control transitions have support in the applied graph. Initial Open is not independently qualified solely from the originally excluded01; no broad qualification is inferred from graph or screenshots.",
+    "Corrected producer capture-interpretation successor independently verified: all8 sample file hashes/dimensions and explicit RGB crop/count results recompute exactly. This supersedes original emission-derived exclusion/black/partial classifications without changing frozen source images or observations. Pixel counts alone do not recognize UI text or prove events."
+  ],
+  "presentation_correction": {
+    "supersedes": "The producer observation/recapture narrative and earlier reviewer message interpreting black/partial tool emissions as black/partial saved JPEG artifacts. Original files remain unchanged; this result is the successor interpretation.",
+    "evidence": "20 and21 are byte-identical despite differing emitted appearances;18,22 and23 are byte-identical as well. Direct JPEG decoding confirms light populated fixtures rather than black saved canvases. Counts use rectangle[600,104,920,664],179200 pixels, near-black max-channel<10 and paper min-channel>220.",
+    "decoded_pixels": [
+      {
+        "path": "playback/08-close-retains-quick-access.jpg",
+        "fixture_pixels": 179200,
+        "near_black_max_channel_lt10": 86,
+        "paper_min_channel_gt220": 152971
+      },
+      {
+        "path": "playback/20-close-settled-full-page.jpg",
+        "fixture_pixels": 179200,
+        "near_black_max_channel_lt10": 86,
+        "paper_min_channel_gt220": 152971
+      },
+      {
+        "path": "playback/21-visible-closed.jpg",
+        "fixture_pixels": 179200,
+        "near_black_max_channel_lt10": 86,
+        "paper_min_channel_gt220": 152971
+      },
+      {
+        "path": "playback/22-visible-reopen.jpg",
+        "fixture_pixels": 179200,
+        "near_black_max_channel_lt10": 316,
+        "paper_min_channel_gt220": 147741
+      },
+      {
+        "path": "playback/23-visible-reopen-settled.jpg",
+        "fixture_pixels": 179200,
+        "near_black_max_channel_lt10": 316,
+        "paper_min_channel_gt220": 147741
+      }
+    ],
+    "limit": "Cause of the emitted-image presentation discrepancy is unconfirmed. No screenshot corruption, browser rendering defect or visibility-based fix is established. Result claims only independently visible critical fields/decoded bytes, not inferred missing UI.",
+    "producer_successor": "output/research/b01-directory-batch-preparation-2026-10-24/capture-interpretation-correction-v1.json"
+  },
+  "findings": [],
+  "limits": [
+    "One MEDIUM entry only; no exhaustive108-edge/all-ordered-pair/all-entry-flow behavior. Event inputs are producer-described, with independently inspected saved states and graph support.",
+    "visualStructureUnchanged/protectedOutsideSectionUnchanged are reviewed script checks over enumerated fields, not independent full-property/native archive comparison.",
+    "No exact scroll/focus/full native matching/boundary preserve-reset/restore/accessibility/production implementation/B01/Phase1 acceptance.",
+    "No new scope, quota/payment/account/sharing/publication/application/Git authority; reviewer changed only this receipt. Original Navigation receipts and Directory preparation receipt remain unchanged."
+  ]
+}

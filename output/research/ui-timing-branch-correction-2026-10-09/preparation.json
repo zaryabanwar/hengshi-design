@@ -1,0 +1,53 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-09",
+  "scope": "Unapplied source correction of warning-and-extension branch interpretation; not application or external design work",
+  "finding": "TL-WARN-EXTEND incorrectly conflates repeated extension opportunities with the tenfold pre-start adjustment range",
+  "primary_source": "https://www.w3.org/TR/WCAG22/#timing-adjustable",
+  "checked_at": "2026-10-09",
+  "proposal": "Retain a simple extension action, at least 20 seconds to act and at least ten opportunities to extend; do not multiply the inactivity duration",
+  "unchanged": "D-076 30-minute visitor inactivity and authorized End, no absolute visitor limit; staff clocks; branch IDs; removal/adjustment and exception branches; preservation and reauthentication",
+  "files": [
+    {
+      "source": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "before_sha256": "6fa43937ae5e590b31e4fc21ea9e1209d3bfcdf145a6698d2429125213166dec",
+      "proposed_sha256": "deb91325e1c8a543878111883f5b1203ae9e5dc35c00e0d837e927786eaf47e2"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/design-batch-plan.csv",
+      "before_sha256": "550d8de3c6860f74e09e8a53da52e24ca2874d94b705d11f6afd4745f0142d12",
+      "proposed_sha256": "0b01be6b01157785cf57dcb5c36a8efbd9254031708f9afad19db52e4f8b32ce"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/README.md",
+      "before_sha256": "7be1fd2c5c105a64440ff2be269248641031252f93430a0074ab2bf8d766e03f",
+      "proposed_sha256": "0a73ad8ab3cbf33c88b3b0b3977cf1ba6609ee6beb68082701ac10c3ffc3990b"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/traceability.csv",
+      "before_sha256": "70f9030030568b1564354e06b064dbd48e637086830e4d95fbd9e2da1b7c0cf2",
+      "proposed_sha256": "ac2a1712b53dcae3ec5bc9c1e214ab6dc50c9ef02fb0398dc9ec110b8d2f636a"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/evidence-capture-plan.csv",
+      "before_sha256": "7c639a6b51bd6ae7549e1ca666468273283089bce145015c2b3605ad40686c93",
+      "proposed_sha256": "4dceafb6d78a859ff5aee23ac78e65180975e72e83ed14a40dc20a90ad4fa0fd"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/validation/validate-ui-reference-design.ps1",
+      "before_sha256": "d5f41a797b93431c6a98ca1b1a740eeb267cd1f5f398438efe729d1709bca16d",
+      "proposed_sha256": "d5cddddd0d6b8bfceeaafa3cbbf114fae3d7eb7713f80a6cd97f9e1dfc526050"
+    }
+  ],
+  "review": "Not reviewed; existing reviewer stopped for workspace credits; no permission to restart without changed external state",
+  "holds": [
+    "Review the complete source-bound authority impact before application; existing D-063 bindings and frozen reviews are not repinned by this draft",
+    "Independent review and applicable founder acceptance required; no old PASS inherited",
+    "Existing preparation/profile annotations using the old statement require separate reconciliation; do not overwrite frozen evidence",
+    "Artifact validators remain document-integrity checks only; no WCAG or runtime proof",
+    "Timed reference production and complete B01 acceptance held; unrelated twelve recovery references retain separate call-approval scope"
+  ],
+  "applied": false,
+  "external_call": false
+}

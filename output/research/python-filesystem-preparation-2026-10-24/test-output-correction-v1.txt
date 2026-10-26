@@ -1,0 +1,19 @@
+test_cooperative_deadline_stops_before_scan (test_tree_measurement.TreeMeasurementTests.test_cooperative_deadline_stops_before_scan) ... ok
+test_detected_file_change_invalidates_entire_measurement (test_tree_measurement.TreeMeasurementTests.test_detected_file_change_invalidates_entire_measurement) ... ok
+test_entry_depth_and_logical_limits (test_tree_measurement.TreeMeasurementTests.test_entry_depth_and_logical_limits) ... ok
+test_exact_default_stream_lengths_and_directory_count (test_tree_measurement.TreeMeasurementTests.test_exact_default_stream_lengths_and_directory_count) ... ok
+test_file_root_is_rejected (test_tree_measurement.TreeMeasurementTests.test_file_root_is_rejected) ... ok
+test_invalid_limits_reject_before_reading_filesystem (test_tree_measurement.TreeMeasurementTests.test_invalid_limits_reject_before_reading_filesystem) ... ok
+test_missing_root_does_not_become_empty_success (test_tree_measurement.TreeMeasurementTests.test_missing_root_does_not_become_empty_success) ... ok
+test_read_errors_are_terminal_and_redacted (test_tree_measurement.TreeMeasurementTests.test_read_errors_are_terminal_and_redacted) ... ok
+test_real_hard_link_is_rejected_not_double_counted (test_tree_measurement.TreeMeasurementTests.test_real_hard_link_is_rejected_not_double_counted) ... ok
+test_relative_or_drive_root_is_rejected (test_tree_measurement.TreeMeasurementTests.test_relative_or_drive_root_is_rejected) ... ok
+test_reparse_attribute_on_root_or_ancestor_is_rejected (test_tree_measurement.TreeMeasurementTests.test_reparse_attribute_on_root_or_ancestor_is_rejected) ... ok
+test_root_length_and_ancestor_bounds_before_filesystem_reads (test_tree_measurement.TreeMeasurementTests.test_root_length_and_ancestor_bounds_before_filesystem_reads) ... ok
+test_volume_change_is_rejected (test_tree_measurement.TreeMeasurementTests.test_volume_change_is_rejected) ... ok
+test_wrong_previously_recorded_root_identity_is_rejected (test_tree_measurement.TreeMeasurementTests.test_wrong_previously_recorded_root_identity_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.045s
+
+OK

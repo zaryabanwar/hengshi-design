@@ -1,5 +1,21 @@
 # Platform Security Hardening - Research
 
+## Current authority — 2026-10-04
+
+Task status: TODO for a fresh feature research package. The June observations and
+references below are dated historical evidence, not a live compatibility or
+security recommendation. D-018 settles production Redis-backed protection,
+rotating cookie sessions with CSRF, Entra roles and controlled emergency MFA.
+The four choices below must not be replayed as current approval questions.
+
+Use the proposed [security/privacy contract](../../docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md)
+and current constitution as inputs. Recheck installed behavior and official
+primary documentation before choosing exact mechanisms/dependencies; no old
+package suggestion, sanitization strategy or Bearer fallback is grandfathered.
+Unspecified thresholds and legal/provider mappings remain real inputs.
+
+## Historical June research
+
 ## Status
 
 | Field | Value |

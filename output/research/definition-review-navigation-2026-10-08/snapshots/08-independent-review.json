@@ -1,0 +1,23 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "reviewer": "/root/review_notice_discovery_current",
+  "date": "2026-10-08",
+  "verdict": "PASS",
+  "scope": "Bounded evidence accuracy, correction-1; no commit or adoption",
+  "manifest_sha256": "d83288a026b2e663214e2d974ad5aec11ee5623ad6fa7b4a7c30ed6027426227",
+  "identities": "All 35 corrected source/snapshot pairs match initially and finally; other34 inputs unchanged. README one insertion; refresh exact predecessor prefix plus4975bytes",
+  "findings": [],
+  "independent_checks": {
+    "archive": "SHA512 matches lock; seven manifest bytes/hashes match earlier contents",
+    "model": "Actual Node26.10.0/npm12.2.0 loadVirtual and six in-memory Nodes/flags reproduce all308 saved locations, flags and edges; required/invalid faults6 to0",
+    "bundle_edges": "Twelve production dependency edges plus two peer edges;21 absent peerOptional targets remain explicit",
+    "export": "All305 serialized package objects and477 base relationships reproduce; six verified CONTAINS give483 unique relationships with valid endpoints",
+    "child_association": "No bundled identity collision; exact occurrence locations, NOASSERTION child download locations, no inherited parent checksum, filesAnalyzed=false",
+    "validation": "Official JSONschema passes; invalid relationship type rejected; dangling endpoint passes schema but is rejected by correlation",
+    "historical_guard": "75 identities unchanged; three later checkpoint records differ; failed initial observation retained",
+    "correction": "Only edge-count sentence and wrapping changed; no further model replay needed"
+  },
+  "limits": "Direct exporter supplement, not original npm CLI success or repaired lock; no full SPDX semantic/GSAP label/notice/provenance/advisory/safety/platform/binary/deployed/D072 isolation/fullgraph/MA013/adoption/runtime/Phase1 clearance",
+  "reviewer_mutations": "None: no files, installs, network, package scripts, application settings, runtime settings or Git changes"
+}

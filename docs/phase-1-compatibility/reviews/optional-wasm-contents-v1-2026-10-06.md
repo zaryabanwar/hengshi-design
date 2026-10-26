@@ -1,0 +1,30 @@
+# Optional WASM contents v1 — independent evidence review, 2026-10-06
+
+Verdict: PASS for the appended file/declared-edge/notice evidence only. No actionable discrepancy found within this scope. Receipt is uncommitted; no task is marked DONE.
+
+Scope: `docs/phase-1-compatibility/refresh-evidence-2026-10-04.md:1184–1213`, the single retained optional `@tailwindcss/oxide-wasm32-wasi` 4.3.3 archive and supplied local observations. No package selection, comprehensive supply-chain/security/legal clearance or earlier whole-document review is granted.
+
+Packet: `output/research/optional-wasm-contents-2026-10-06/review-inputs.json`, nineteen path identities.
+Manifest SHA256: `523410dbac7d3b0e73fad05375e306556bdacb53e3d01b365d320cbd33794457`.
+All nineteen declared byte counts and SHA256 identities matched before/after review; exact remaining inputs are identified by that manifest, without live fallback substitution.
+Reviewed refresh: 92,675 bytes, SHA256 `86a47bb7f639571b6341bc3ab9db5f9c95932a71c5aedc90e7c8bff243e0702e`, identical to `.proposed.md`.
+Original 90,530-byte prefix is exactly preserved; SHA256 `5d44438de49411a5bea17e27a1af772e279bf14f29777d9e8a739a2eebd62e9d`.
+Archive SHA256: `d5b61fbe10d237f7565032a74b03b5be6c83b309037ee407e2b5b46f24738823`; lock SHA256: `fa903a8d901357aacf80863524e0e00ae2ece69126daf218256cdd2656b2da4c`.
+Contents SHA256: `8c50698d7dcc6a44079d421f9fd082271479b6101ea38b8db64240182654c696`; range observation: `93e1c2ab9fe74426f47db616287eb8b1e300ea13a173c0792e572b6f12e0b423`; notice candidates: `71fe4c1ed579e9e470880b1eb9ba6efbb9d87c773bde74a252e111854901b38e`.
+
+Independent reproduction used bounded Python archive/text reads entirely in memory, without invoking producer collectors, semver/vendor code, extraction or evidence overwrite:
+
+- Recomputed archive SHA512 and matched the preserved lock integrity. All 113 archive members are regular, uniquely named safe package paths; exact path sets, sizes and per-file SHA256 match the inventory, totaling 11,574,189 bytes (`contents.json:7–8`, under the packet directory).
+- Reconstructed every manifest record: seven named packages and one unnamed `tslib/modules/package.json`, with exact JSON identities/declarations and nearest named manifest-path ownership (`contents.json:9–105`). Named versions are @emnapi/core 1.11.1, @emnapi/runtime 1.11.1, @emnapi/wasi-threads 1.2.2, @napi-rs/wasm-runtime 1.1.4, @tybys/wasm-util 0.10.2, tslib 2.8.1 and oxide-wasm32-wasi 4.3.3. All 113 owner associations reproduce; this is metadata containment, not legal authorship/inheritance.
+- Reconstructed all twelve declared edges exactly (`contents.json:896–980`). The retained producer observation records semver 7.8.5 and twelve successful stable comparisons; that version matches the declared helper's hashed package metadata. Independent arithmetic for these specific numeric exact/caret ranges corroborates all twelve results. No general semver implementation, actual Node resolution or producer helper execution was independently reproduced.
+- The lock's optional-package version/declarations agree with the root archive manifest, while all six direct bundled dependency names remain absent as separate lock locations. This supports the preserved distinction from the producer's failed virtual npm SBOM; no CLI/SBOM repair or new all-platform run occurred.
+- Each of the four saved dedicated licence texts is byte-identical to its archive member: core/runtime/wasi-threads LICENSE are each 1,076 bytes, SHA256 `2088f55c6731498410b20c95ebd345ed4a4a800bf74c0fba4d282fd2a021daaa`; tslib LICENSE.txt is 655 bytes, SHA256 `210b19e543130388c68654b7497e967119ce17145f66ab7d85688fbd70f08751` (`contents.json:982–1006`). This is exact preservation, not a licence-completeness verdict.
+- Reproduced all text-scan candidates: 25 records, 50 keyword lines and zero matching bundler source-path comments. The scan skips WASM binary text and truncates keyword lines at 512 characters, as declared (`embedded-notice-candidates.json:481–485`). Original full member bytes remain available by exact archive identity.
+- Independently read tslib CopyrightNotice.txt: 822 bytes, SHA256 `da16ddb65f8ca390998fb99223d0112498b56b45784d00afd77ff8ce1ac4de8b`; it is included in the file inventory and supplemental candidates, despite omission from the initial dedicated-filename pattern (`contents.json:875`; `embedded-notice-candidates.json:453`).
+- Read the embedded `@napi-rs/wasm-runtime/dist/fs.js` contexts directly: ieee754 BSD-3-Clause marker at archive line 1409, Node-contributor notice at 8467, safe-buffer MIT marker at 13462 and borrowed cbor-x/MIT text at 19811. The saved candidate locations match (`embedded-notice-candidates.json:161,171,191,196`). These markers/notice excerpts do not resolve component versions or prove complete applicable terms.
+
+The appendix accurately distinguishes these facts from broader conclusions: `refresh-evidence-2026-10-04.md:1192–1195` denies legal inheritance and runtime/deployed-graph inference; `:1197–1206` exposes the additional notice candidates and truncation; `:1208–1213` retains the failed npm SBOM and remaining embedded graph, notice/provenance/advisory, binary correspondence, other-platform/deployed-exclusion and compatibility/selection gaps. The prior supply-chain receipt is inspected context, not a new remote audit/signature certification.
+
+Remaining prerequisites are those explicit gaps, applicable attribution/terms review, complete selected/deployed graph evidence and founder acceptance. Exact upstream source/tag/API correspondence, registry signatures, binary behavior/safety and current advisory status were not verified or inferred; no network/source lookup was needed for this local observation.
+
+Only this requested receipt was added. No vendor-code execution, install/download, lock modification, producer-evidence overwrite, application/GLB change, Figma/external write, settings change, commit or further agent occurred. Integrity/text correlations grant no production adoption, D-069 exception, comprehensive security clearance or Phase 1 acceptance.

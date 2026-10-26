@@ -1,0 +1,13 @@
+test_embedded_keys_urls_extensions_and_extra_fields_are_denied (test_staff_token_header.StaffTokenHeaderTests.test_embedded_keys_urls_extensions_and_extra_fields_are_denied) ... ok
+test_every_required_field_and_object_type_is_enforced (test_staff_token_header.StaffTokenHeaderTests.test_every_required_field_and_object_type_is_enforced) ... ok
+test_exact_closed_header_is_a_valid_candidate_shape (test_staff_token_header.StaffTokenHeaderTests.test_exact_closed_header_is_a_valid_candidate_shape) ... ok
+test_key_identifier_is_bounded_ascii_and_not_a_url_or_path (test_staff_token_header.StaffTokenHeaderTests.test_key_identifier_is_bounded_ascii_and_not_a_url_or_path) ... ok
+test_other_or_missing_algorithms_are_denied (test_staff_token_header.StaffTokenHeaderTests.test_other_or_missing_algorithms_are_denied) ... ok
+test_other_token_types_are_not_interchangeable (test_staff_token_header.StaffTokenHeaderTests.test_other_token_types_are_not_interchangeable) ... ok
+test_root_cannot_be_used_as_a_signed_token_or_header_validator (test_staff_token_header.StaffTokenHeaderTests.test_root_cannot_be_used_as_a_signed_token_or_header_validator) ... ok
+test_shape_does_not_prove_key_registration_or_raw_duplicate_rejection (test_staff_token_header.StaffTokenHeaderTests.test_shape_does_not_prove_key_registration_or_raw_duplicate_rejection) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.011s
+
+OK

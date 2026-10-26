@@ -1,0 +1,440 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed visitor conversation lifetime control directions v1",
+  "description": "Additional IF-CHAT-03 directions only; explicit client/server required and root rejects. Representation proves no ticket issuer, ownership, current authority, genuine activity, clock relation, expiry, extension, ending fence, scoped closing receipt, resources, retention or accessibility. End is not deletion or booking cancellation.",
+  "not": {},
+  "$defs": {
+    "ticket": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operation_id",
+        "command_revision"
+      ],
+      "properties": {
+        "operation_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "command_revision": {
+          "$ref": "process-value.schema.json#/$defs/positive_revision"
+        }
+      }
+    },
+    "snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lifetime_revision",
+        "server_time_ms",
+        "idle_deadline_ms"
+      ],
+      "properties": {
+        "lifetime_revision": {
+          "$ref": "process-value.schema.json#/$defs/positive_revision"
+        },
+        "server_time_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "idle_deadline_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        }
+      }
+    },
+    "lifetime_admission": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "protocol_version",
+        "kind",
+        "channel_id",
+        "stream_id",
+        "proof_generation",
+        "lifetime",
+        "renewal_ticket",
+        "ending_ticket"
+      ],
+      "properties": {
+        "protocol_version": {
+          "type": "integer",
+          "const": 1
+        },
+        "kind": {
+          "const": "lifetime_admission"
+        },
+        "channel_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "stream_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "proof_generation": {
+          "$ref": "process-value.schema.json#/$defs/positive_revision",
+          "minimum": 2
+        },
+        "lifetime": {
+          "$ref": "#/$defs/snapshot"
+        },
+        "renewal_ticket": {
+          "$ref": "#/$defs/ticket"
+        },
+        "ending_ticket": {
+          "$ref": "#/$defs/ticket"
+        }
+      }
+    },
+    "extend_idle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "protocol_version",
+        "kind",
+        "channel_id",
+        "stream_id",
+        "operation_id",
+        "command_revision",
+        "expected_lifetime_revision"
+      ],
+      "properties": {
+        "protocol_version": {
+          "type": "integer",
+          "const": 1
+        },
+        "kind": {
+          "const": "extend_idle"
+        },
+        "channel_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "stream_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "operation_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "command_revision": {
+          "$ref": "process-value.schema.json#/$defs/positive_revision"
+        },
+        "expected_lifetime_revision": {
+          "$ref": "process-value.schema.json#/$defs/positive_revision"
+        }
+      }
+    },
+    "reconcile_idle_extension": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "protocol_version",
+        "kind",
+        "channel_id",
+        "stream_id",
+        "operation_id",
+        "command_revision"
+      ],
+      "properties": {
+        "protocol_version": {
+          "type": "integer",
+          "const": 1
+        },
+        "kind": {
+          "const": "reconcile_idle_extension"
+        },
+        "channel_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "stream_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "operation_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "command_revision": {
+          "$ref": "process-value.schema.json#/$defs/positive_revision"
+        }
+      }
+    },
+    "end_conversation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "protocol_version",
+        "kind",
+        "channel_id",
+        "stream_id",
+        "operation_id",
+        "command_revision"
+      ],
+      "properties": {
+        "protocol_version": {
+          "type": "integer",
+          "const": 1
+        },
+        "kind": {
+          "const": "end_conversation"
+        },
+        "channel_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "stream_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "operation_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "command_revision": {
+          "$ref": "process-value.schema.json#/$defs/positive_revision"
+        }
+      }
+    },
+    "reconcile_end": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "protocol_version",
+        "kind",
+        "channel_id",
+        "stream_id",
+        "operation_id",
+        "command_revision"
+      ],
+      "properties": {
+        "protocol_version": {
+          "type": "integer",
+          "const": 1
+        },
+        "kind": {
+          "const": "reconcile_end"
+        },
+        "channel_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "stream_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "operation_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "command_revision": {
+          "$ref": "process-value.schema.json#/$defs/positive_revision"
+        }
+      }
+    },
+    "idle_extension_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "protocol_version",
+        "kind",
+        "channel_id",
+        "stream_id",
+        "operation_id",
+        "command_revision",
+        "state"
+      ],
+      "properties": {
+        "protocol_version": {
+          "type": "integer",
+          "const": 1
+        },
+        "kind": {
+          "const": "idle_extension_result"
+        },
+        "channel_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "stream_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "operation_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "command_revision": {
+          "$ref": "process-value.schema.json#/$defs/positive_revision"
+        },
+        "state": {
+          "enum": [
+            "applied",
+            "not_applied",
+            "pending"
+          ]
+        },
+        "lifetime": {
+          "$ref": "#/$defs/snapshot"
+        },
+        "code": {
+          "enum": [
+            "stale_ticket",
+            "resource_limit"
+          ]
+        },
+        "applied_lifetime_revision": {
+          "$ref": "process-value.schema.json#/$defs/positive_revision"
+        },
+        "applied_deadline_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        }
+      },
+      "oneOf": [
+        {
+          "required": [
+            "lifetime",
+            "applied_lifetime_revision",
+            "applied_deadline_ms"
+          ],
+          "properties": {
+            "state": {
+              "const": "applied"
+            }
+          },
+          "not": {
+            "required": [
+              "code"
+            ]
+          }
+        },
+        {
+          "required": [
+            "lifetime",
+            "code"
+          ],
+          "properties": {
+            "state": {
+              "const": "not_applied"
+            }
+          },
+          "not": {
+            "anyOf": [
+              {
+                "anyOf": [
+                  {
+                    "required": [
+                      "applied_lifetime_revision"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "applied_deadline_ms"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "state": {
+              "const": "pending"
+            }
+          },
+          "not": {
+            "anyOf": [
+              {
+                "anyOf": [
+                  {
+                    "required": [
+                      "lifetime"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "code"
+                    ]
+                  }
+                ]
+              },
+              {
+                "anyOf": [
+                  {
+                    "required": [
+                      "applied_lifetime_revision"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "applied_deadline_ms"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "end_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "protocol_version",
+        "kind",
+        "channel_id",
+        "stream_id",
+        "operation_id",
+        "command_revision",
+        "state"
+      ],
+      "properties": {
+        "protocol_version": {
+          "type": "integer",
+          "const": 1
+        },
+        "kind": {
+          "const": "end_result"
+        },
+        "channel_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "stream_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "operation_id": {
+          "$ref": "chat-event-control.schema.json#/$defs/uuid_v4"
+        },
+        "command_revision": {
+          "$ref": "process-value.schema.json#/$defs/positive_revision"
+        },
+        "state": {
+          "enum": [
+            "pending",
+            "ended"
+          ]
+        }
+      }
+    },
+    "client": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/extend_idle"
+        },
+        {
+          "$ref": "#/$defs/reconcile_idle_extension"
+        },
+        {
+          "$ref": "#/$defs/end_conversation"
+        },
+        {
+          "$ref": "#/$defs/reconcile_end"
+        }
+      ]
+    },
+    "server": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/lifetime_admission"
+        },
+        {
+          "$ref": "#/$defs/idle_extension_result"
+        },
+        {
+          "$ref": "#/$defs/end_result"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-17",
+  "authority": "D094 as amended by D095; existing approved native trial only",
+  "fileKey": "GOmLP6Cv96l768ueSrZ5Dg",
+  "section": "144:3197",
+  "familySet": "172:3740",
+  "newEdges": [
+    {
+      "source": "169:3402",
+      "control": "169:3382",
+      "label": "Balanced 3D",
+      "sourceTuple": [
+        "HIGH",
+        "HIGH",
+        "NOT_APPLICABLE"
+      ],
+      "target": "172:3455",
+      "targetTuple": [
+        "HIGH",
+        "MEDIUM",
+        "NOT_APPLICABLE"
+      ],
+      "settings": "high-balanced-persisted-settings.txt"
+    },
+    {
+      "source": "172:3455",
+      "control": "172:3468",
+      "label": "Apply selection",
+      "sourceTuple": [
+        "HIGH",
+        "MEDIUM",
+        "NOT_APPLICABLE"
+      ],
+      "target": "172:3531",
+      "targetTuple": [
+        "MEDIUM",
+        "MEDIUM",
+        "NOT_APPLICABLE"
+      ],
+      "settings": "high-medium-apply-persisted-settings.txt"
+    },
+    {
+      "source": "172:3531",
+      "control": "172:3538",
+      "label": "Simplified 3D",
+      "sourceTuple": [
+        "MEDIUM",
+        "MEDIUM",
+        "NOT_APPLICABLE"
+      ],
+      "target": "172:3550",
+      "targetTuple": [
+        "MEDIUM",
+        "LOW",
+        "NOT_APPLICABLE"
+      ],
+      "settings": "medium-low-choice-settings.txt"
+    },
+    {
+      "source": "172:3550",
+      "control": "172:3563",
+      "label": "Apply selection",
+      "sourceTuple": [
+        "MEDIUM",
+        "LOW",
+        "NOT_APPLICABLE"
+      ],
+      "target": "172:3626",
+      "targetTuple": [
+        "LOW",
+        "LOW",
+        "NOT_APPLICABLE"
+      ],
+      "settings": "medium-low-apply-settings.txt"
+    },
+    {
+      "source": "172:3626",
+      "control": "172:3635",
+      "label": "Quick Access",
+      "sourceTuple": [
+        "LOW",
+        "LOW",
+        "NOT_APPLICABLE"
+      ],
+      "target": "172:3645",
+      "targetTuple": [
+        "LOW",
+        "SEMANTIC",
+        "NOT_APPLICABLE"
+      ],
+      "settings": "low-semantic-choice-settings.txt"
+    },
+    {
+      "source": "172:3645",
+      "control": "172:3658",
+      "label": "Apply selection",
+      "sourceTuple": [
+        "LOW",
+        "SEMANTIC",
+        "NOT_APPLICABLE"
+      ],
+      "target": "172:3721",
+      "targetTuple": [
+        "SEMANTIC",
+        "SEMANTIC",
+        "NOT_APPLICABLE"
+      ],
+      "settings": "low-semantic-apply-settings.txt"
+    }
+  ],
+  "sharedSettings": {
+    "trigger": "On click",
+    "action": "Change to",
+    "animation": "Instant",
+    "disclosure": "NOT_APPLICABLE"
+  },
+  "playback": {
+    "earlyObservation": "cycle01-02: old preview accepted restart but did not respond to Detailed selection. Off-centre canvas and hotspot highlight observed. Preserved unsuccessful observation; cause not proven. Reloaded same preview once without any wiring repair.",
+    "successfulRun": "cycle03-19: one uninterrupted Quick Access -> Detailed -> Balanced -> Simplified -> Quick Access sequence after reload. No Restart, flow switch or source edit within03-19. Each choice visibly changes checked pending while both context/delivery captions retain active mode; separate Apply then changes both captions to new mode. Synthetic offline Services context retained throughout.",
+    "positions": "Before/after bottom captures retain visible Apply/Privacy/trial marker. Shared duplicated geometry and some identical images do not establish exact scroll coordinates or reset.",
+    "scope": "One complete four-peer cycle for Recovery only; not all16 ordered pairs, other families, profiles, preserve/reset, accessibility or complete B01."
+  },
+  "admission": {
+    "firstTwo": "Early saved high-* text includes accessibility deltas/no-change messages. New explicit full persisted settings captures supplement them; do not mistake deltas for a complete source census. First Apply actual Design Label is separately captured.",
+    "laterFour": "Full AX snapshots admit selected URLs, selected control/child labels or actual instance Label property, source tuple and before/after settings. Target IDs correlate to prior native16 census, not a fresh API parent/reaction graph.",
+    "selectionRecovery": "Two row-locator selection attempts selected HIGH/LOW then HIGH/SEMANTIC rather than intended MEDIUM/MEDIUM. Current URL/selected-row checks caught both before any edit. Selected the actual visible MEDIUM/MEDIUM row by screenshot; no reaction was authored on mistaken selections."
+  },
+  "checkpoint": "after-recovery-cycle.fig",
+  "independentReview": "Pending; this producer record grants no acceptance",
+  "accounting": {
+    "plannedEdges": 324,
+    "priorAuthoredPlannedEdges": 13,
+    "newAuthoredPlannedEdges": 6,
+    "currentAuthoredPlannedEdges": 19,
+    "remainingPlannedEdges": 305,
+    "limit": "Prior13 rely on earlier scoped receipts; this slice authors six and replays earlier QA->Detailed pair as part of one cycle."
+  },
+  "notEstablished": [
+    "Full native reaction/topology/ownership graph or complete source preservation",
+    "All ordered pairs, full Navigation/Directory cycles and full B01 scenario/profile coverage",
+    "Exact scroll retention, matched preserve/reset, matching highlights, all entry flows",
+    "Keyboard/AT/native HTML semantics, accessibility or application behavior",
+    "Tested restore, B01_EXIT, founder visual/pilot/integrated Phase1 acceptance"
+  ],
+  "externalActions": {
+    "route": "Figma browser editor and Presentation using computer use",
+    "MCPCalls": 0,
+    "AIPrompts": 0,
+    "paidActivation": false,
+    "sharingOrAccountChanges": false,
+    "deletions": 0,
+    "applicationChanges": 0,
+    "commitsOrPushes": 0
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "source": "figma-template.js capture section",
+  "results": [
+    {
+      "fault": "none",
+      "result": "PASS",
+      "temporaries_created": 53,
+      "screenshots_attempted": 5,
+      "successful_native_export": false,
+      "scope": "Synthetic actual-capture-section control flow only"
+    },
+    {
+      "fault": "configure",
+      "result": "PASS",
+      "temporaries_created": 10,
+      "screenshots_attempted": 0,
+      "successful_native_export": false,
+      "scope": "Synthetic actual-capture-section control flow only"
+    },
+    {
+      "fault": "screenshot",
+      "result": "PASS",
+      "temporaries_created": 53,
+      "screenshots_attempted": 3,
+      "successful_native_export": false,
+      "scope": "Synthetic actual-capture-section control flow only"
+    },
+    {
+      "fault": "remove",
+      "result": "PASS",
+      "temporaries_created": 53,
+      "screenshots_attempted": 5,
+      "successful_native_export": false,
+      "scope": "Synthetic actual-capture-section control flow only"
+    }
+  ],
+  "limits": [
+    "No Figma producer execution",
+    "No native image, layout, font, bounds, protocol or accessibility qualification",
+    "Receipt codec/size guard is outside this cleanup probe"
+  ],
+  "preservation": {
+    "method": "Producer-preserved observed stdout of native node probe-capture.cjs",
+    "command_chunk_id": "0cbc7c",
+    "exit_code": 0
+  }
+}

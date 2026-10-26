@@ -1,0 +1,71 @@
+{
+  "scope": "finite diagnostics and this fixture declaration coverage only; own compiler standard libraries deliberately not considered interchangeable",
+  "range_checks": [
+    {
+      "from": "@types/react",
+      "to": "csstype",
+      "range": "^3.2.2",
+      "version": "3.2.3",
+      "satisfied": true
+    },
+    {
+      "from": "@types/react-dom",
+      "to": "@types/react",
+      "range": "^19.3.0",
+      "version": "19.3.0",
+      "satisfied": true
+    }
+  ],
+  "same_isolated_declaration_source_set": true,
+  "isolated_sources": [
+    "c:\\users\\zaryab\\documents\\hengshi design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\node_modules\\@types\\react-dom\\client.d.ts",
+    "c:\\users\\zaryab\\documents\\hengshi design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\node_modules\\@types\\react-dom\\index.d.ts",
+    "c:\\users\\zaryab\\documents\\hengshi design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\node_modules\\@types\\react\\global.d.ts",
+    "c:\\users\\zaryab\\documents\\hengshi design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\node_modules\\@types\\react\\index.d.ts",
+    "c:\\users\\zaryab\\documents\\hengshi design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\node_modules\\@types\\react\\jsx-runtime.d.ts",
+    "c:\\users\\zaryab\\documents\\hengshi design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\node_modules\\csstype\\index.d.ts",
+    "c:\\users\\zaryab\\documents\\hengshi design\\hengshi-design\\output\\research\\typescript-react-parity-2026-10-06\\valid-component\\fixture.tsx"
+  ],
+  "stdout_comparison": [
+    {
+      "name": "valid-component",
+      "raw_equal": true,
+      "equal_after_only_CRLF_to_LF": true
+    },
+    {
+      "name": "valid-async-component",
+      "raw_equal": true,
+      "equal_after_only_CRLF_to_LF": true
+    },
+    {
+      "name": "invalid-prop",
+      "raw_equal": false,
+      "equal_after_only_CRLF_to_LF": true
+    },
+    {
+      "name": "missing-prop",
+      "raw_equal": false,
+      "equal_after_only_CRLF_to_LF": true
+    },
+    {
+      "name": "invalid-state-action",
+      "raw_equal": false,
+      "equal_after_only_CRLF_to_LF": true
+    },
+    {
+      "name": "invalid-ref",
+      "raw_equal": false,
+      "equal_after_only_CRLF_to_LF": true
+    },
+    {
+      "name": "invalid-event-property",
+      "raw_equal": false,
+      "equal_after_only_CRLF_to_LF": true
+    },
+    {
+      "name": "invalid-dom-root",
+      "raw_equal": false,
+      "equal_after_only_CRLF_to_LF": true
+    }
+  ]
+}

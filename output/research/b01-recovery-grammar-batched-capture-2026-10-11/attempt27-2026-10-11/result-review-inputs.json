@@ -1,0 +1,563 @@
+{
+  "scope": "Actual attempt27 records, five native images,48 exact crops and twelve derived four-view inspection panels; report/source/crop correspondence and bounded preservation/removal claims. No annotation pixels, exact rendered-font census/editability census, forced-colours/focus/interaction/accessibility/fullB01 proof.",
+  "inputs": [
+    {
+      "source": "output/research/b01-recovery-source-review-2026-10-08/correction-1/input.json",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/00-input.json",
+      "bytes": 13800,
+      "sha256": "7d85a7f2f3044e8cf6b9e0da07522b77f9c80977466d8b6d5baf66bfa3c7d297"
+    },
+    {
+      "source": "output/research/b01-recovery-source-review-2026-10-08/correction-1/figma-template.js",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/01-figma-template.js",
+      "bytes": 11806,
+      "sha256": "b9c4335558e5ac2d0af98b28a4942c958305e328654cac9db85b2fa9edfa778c"
+    },
+    {
+      "source": "output/research/b01-recovery-source-review-2026-10-08/correction-1/figma-call.js",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/02-figma-call.js",
+      "bytes": 23692,
+      "sha256": "62caf92ce41ca99746036c47059b1c077a266c3dead847f34b617a5fe7315f27"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/reviews/B01-recovery-preparation-v1-2026-10-08.md",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/03-B01-recovery-preparation-v1-2026-10-08.md",
+      "bytes": 2848,
+      "sha256": "0883926afbe148aacecf744e7b4d462410a3355b92cca7fd887447ee76298c24"
+    },
+    {
+      "source": "docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/04-STATES_AND_RECOVERY.md",
+      "bytes": 24105,
+      "sha256": "fa3322d864dc8c29d2f7853d6dc9a961126f7a8aea2b575505997d05c3297064"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/05-responsive-state-mode-matrix.csv",
+      "bytes": 33821,
+      "sha256": "deb91325e1c8a543878111883f5b1203ae9e5dc35c00e0d837e927786eaf47e2"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/06-reference-template-inventory.csv",
+      "bytes": 33498,
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/07-SECURITY_PRIVACY_CONTRACT.md",
+      "bytes": 85918,
+      "sha256": "88e573ff4d07dc1c3c257e05d537d6857a5940fb2fc6493a4cae787b1317252b"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/08-HANDOFF_LIFECYCLE.md",
+      "bytes": 89614,
+      "sha256": "40a3779f56737725bb2c5e5d5a5ee34b44ad27030adc16cc374fdb9b04266a12"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/09-PRIVATE_PROCESS_PROOF.md",
+      "bytes": 117693,
+      "sha256": "0bf065ae353f1d22c986501c624df46e4057d76ca06f71a35352360ac239a6b7"
+    },
+    {
+      "source": "output/research/b01-navigation-composition-2026-10-06/state-ledger.json",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/10-state-ledger.json",
+      "bytes": 23436,
+      "sha256": "f078e20b6fca5deec68a8876d83922d03064036aa797fb719cd6cae6d594da2b"
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/11-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/12-DECISIONS.md",
+      "bytes": 91055,
+      "sha256": "4bec9802ca6c01461c8e3c07a294066da9ee32d0bf223e97b991c9e646a59a7b"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/13-B01_EXECUTION_BRIEF.md",
+      "bytes": 29953,
+      "sha256": "697f7a8de398677c9dcc650abbc9db51973050f9de50e99996ae56e5086dec4b"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/UI_REFERENCE_DESIGN_CONTRACT.md",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/14-UI_REFERENCE_DESIGN_CONTRACT.md",
+      "bytes": 32708,
+      "sha256": "396d32f472794cb83168053ca6841bfbd37733923cafa225725391e22bb9830f"
+    },
+    {
+      "source": "output/research/b01-remaining-pixel-export-2026-10-11/correction-1/figma-call.js",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/15-figma-call.js",
+      "bytes": 12472,
+      "sha256": "38eaed64a28fbccefca96b7be736ad7f5258f03866843d3163166ca4b787742c"
+    },
+    {
+      "source": "output/research/b01-remaining-pixel-export-2026-10-11/attempt26-2026-10-11/receipt.json",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/16-receipt.json",
+      "bytes": 9874,
+      "sha256": "ca6df1097f1092bcf5e4dd24afe816b13a4531b43fb4c940772d004066155511"
+    },
+    {
+      "source": "output/research/b01-remaining-pixel-export-2026-10-11/attempt26-2026-10-11/independent-review-result-v1.json",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/17-independent-review-result-v1.json",
+      "bytes": 30014,
+      "sha256": "7854db8ad992448d5b795b6e69e1f424413b9fdd4af8bbc418b0e960a29772dd"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/input.json",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/18-input.json",
+      "bytes": 13866,
+      "sha256": "3237e4cab79e6667e1fb4c57324e603d506a5dde9a3eebc43cf6429536ff8223"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/figma-template.js",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/19-figma-template.js",
+      "bytes": 17764,
+      "sha256": "607ae7b1d18eb8f4475da801442cc2846fa214211ddbec9c80dccd9639fec3ea"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/figma-call.js",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/20-figma-call.js",
+      "bytes": 29537,
+      "sha256": "de5e134b79b4506b91d79f311a31b179a20c207e56d00c010d1828e351919138"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/capture-suffix.js",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/inputs/21-capture-suffix.js",
+      "bytes": 5473,
+      "sha256": "d7b16d410a1d3589563c31c3903251ab77f601de7e9abb366505d8e2c62ebc14"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/authorization.json",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/00-authorization.json",
+      "bytes": 588,
+      "sha256": "6ff4667841d5f21ad21bcb9d994a36590b347ddde346f382576ab423efd074b2"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/figma-call.js",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/01-figma-call.js",
+      "bytes": 29537,
+      "sha256": "de5e134b79b4506b91d79f311a31b179a20c207e56d00c010d1828e351919138"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/input.json",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/02-input.json",
+      "bytes": 13866,
+      "sha256": "3237e4cab79e6667e1fb4c57324e603d506a5dde9a3eebc43cf6429536ff8223"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/provider-response.json",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/03-provider-response.json",
+      "bytes": 1573666,
+      "sha256": "46bf77189fb905f779da214944f0293d2c4e51565aa2d273e491e8d1d1069000"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/receipt.json",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/04-receipt.json",
+      "bytes": 35057,
+      "sha256": "ad63597b5fe80570718af59c1558042d3f60d9a92b75cd6fbab0d0a0270b17d0"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/crop-inventory.json",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/05-crop-inventory.json",
+      "bytes": 20637,
+      "sha256": "0378e689ed1510d0808c539e4f7ba8dad77ac2f884033edfcc1339bc7dd31aff"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/sheet-0.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/06-sheet-0.png",
+      "bytes": 127238,
+      "sha256": "7836a8aed340220727d44ff82a1afb553ad87fc571a28394142243c468007ded"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/sheet-1.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/07-sheet-1.png",
+      "bytes": 331402,
+      "sha256": "fe88999e41fd42c8d6e9fba66917aa7c9ff4f32311fb39c980842273d1c304bc"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/sheet-2.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/08-sheet-2.png",
+      "bytes": 138045,
+      "sha256": "bc00aacdabc3db5998ca4e4b156a0166979e7587b2d80d0c0bbbc058b63ef927"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/sheet-3.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/09-sheet-3.png",
+      "bytes": 297104,
+      "sha256": "8e68307e2b6517f1d05050daa9ae149aa6a8636666d3675c28553222038b0a32"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/sheet-4.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/10-sheet-4.png",
+      "bytes": 278276,
+      "sha256": "cb86774cee2ae0a9690a8758c15c1c3a94dcb3a4f4ab3cb98c28680d6a370e30"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-00.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/11-view-00.png",
+      "bytes": 17427,
+      "sha256": "2ef709cdada529f16edd34734dcab9203888e1a1906ff798861da1e810e7751d"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-01.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/12-view-01.png",
+      "bytes": 19030,
+      "sha256": "a8872faf5704c1c2462562793328d316108481986e081b6b6f4632879943c248"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-02.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/13-view-02.png",
+      "bytes": 16323,
+      "sha256": "0dcc3cc9a75d5ceda84a2bcf535d3706a42ab1587f0fd52342471854cac1c03b"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-03.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/14-view-03.png",
+      "bytes": 18943,
+      "sha256": "8c4d93d5fd64c0e4e14fd6640e7787039a8a233982f5e3fe557c1db80704e9f2"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-04.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/15-view-04.png",
+      "bytes": 16349,
+      "sha256": "34adc9f0547ba35e27cb9cbb40ebe86878cc2f8d664bd12dc2b69e4c1e92f19c"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-05.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/16-view-05.png",
+      "bytes": 19634,
+      "sha256": "8221d4ab8589ac7d2d1e73c6f563182b8818789c58550d2eebf2d39707f86fac"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-06.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/17-view-06.png",
+      "bytes": 19470,
+      "sha256": "2aefb152b258bbdcc948e606b886ddc398776abd2eb31de052c81792412f2366"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-07.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/18-view-07.png",
+      "bytes": 19120,
+      "sha256": "f7ce6857b0dc7fe6534c458d4c1d16d7ca25c1f8b326b4f8ed7f6cf6030f6438"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-08.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/19-view-08.png",
+      "bytes": 21303,
+      "sha256": "225a45f2e979fd605720c9ca6a45c283e91de47758a6197d8c4fda1bd885dc2d"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-09.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/20-view-09.png",
+      "bytes": 18009,
+      "sha256": "0e5f53773f231f0fcecf859b2a7adbd26282c233100ac5ae16ef84c4371b5432"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-10.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/21-view-10.png",
+      "bytes": 18160,
+      "sha256": "53061e240b49ded0910da138581fea827f6d625a8105469c6d89d9b1655d9957"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-11.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/22-view-11.png",
+      "bytes": 20948,
+      "sha256": "42c717727bc24a991d5367d914f141ed65b1a7a19113d8d7dfdb90f129301f90"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-12.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/23-view-12.png",
+      "bytes": 21296,
+      "sha256": "4b0c063f3452b529d8ae79fbd30c04fd8da9e1e7ae1d0dc3ab1bf21ce6dce93c"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-13.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/24-view-13.png",
+      "bytes": 23132,
+      "sha256": "b1c158c955164a694e7f9c1bfe2a814b432f8616a697ce930110dc5d409c3a26"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-14.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/25-view-14.png",
+      "bytes": 77454,
+      "sha256": "bea3c1801cf85f7ed671208635687a781ffea44ceefcae416c097a72d5b88c60"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-15.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/26-view-15.png",
+      "bytes": 87349,
+      "sha256": "004c97de838b9159380f4fc28c91cefd86e498721ffafb4149c94a15d93a5064"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-16.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/27-view-16.png",
+      "bytes": 15999,
+      "sha256": "e820b6a629638ff94808e1b3110d366cc195a4a7a02bb3352b53f871473522bf"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-17.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/28-view-17.png",
+      "bytes": 17410,
+      "sha256": "578731d5c3c51db1398360d842ace07c3b082c2ed3e25dc5ed3e96af0df917a0"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-18.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/29-view-18.png",
+      "bytes": 15035,
+      "sha256": "f03a488c2146327e0be7af5c1c1322b425e6af462d99353b186afca6f6a6a4ff"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-19.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/30-view-19.png",
+      "bytes": 17433,
+      "sha256": "a7c5c2bf88fcd013c8f38e8864858398e76ae866c1c49b76280037eb7e0bf030"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-20.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/31-view-20.png",
+      "bytes": 15106,
+      "sha256": "e11734a27c516407e561c7417450108f43c6946b23432592998e1c32652dfd65"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-21.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/32-view-21.png",
+      "bytes": 18120,
+      "sha256": "be3005012f1e9b959b01b95a908536ddba2010bd5f51213c4eb9bf5200e9be92"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-22.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/33-view-22.png",
+      "bytes": 18009,
+      "sha256": "2228599d5dad66093ecb5e7305dc6482403512dc1aea8dcc10e8827115b21057"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-23.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/34-view-23.png",
+      "bytes": 17566,
+      "sha256": "2848f8957da4480de1af20aced4888a5f83aa09fea3f7ca972a5d5be53e9cac3"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-24.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/35-view-24.png",
+      "bytes": 19648,
+      "sha256": "8b8539b66a6605b9906d1139735cd064f5411a909e5b936cf0e49133cfcd90bb"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-25.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/36-view-25.png",
+      "bytes": 16535,
+      "sha256": "16dbaa4c853d0d9ac5a62f5c8e05f2f2ad466d7b971b9d7a43b0dcb1d460afe4"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-26.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/37-view-26.png",
+      "bytes": 16774,
+      "sha256": "7868811e2da67e5e1ec17bb824e53d229924fbf78cc4e6db83472e5e48c21094"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-27.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/38-view-27.png",
+      "bytes": 19482,
+      "sha256": "29b34e76bcabf574d6da17d92517864dd2e0bb8b398f48826f46401a25db6768"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-28.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/39-view-28.png",
+      "bytes": 19856,
+      "sha256": "b50cf279e9ecb0ca1990dfc672e0de19267099788ecee53e74fafe8dcccbd2c3"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-29.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/40-view-29.png",
+      "bytes": 21305,
+      "sha256": "cfd79ebd20272d29357ed2faed1e56e035d182b2fe3c2c45d657752613ce27dd"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-30.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/41-view-30.png",
+      "bytes": 76235,
+      "sha256": "3b38cf84a6929d7c012d31325e642da46abe72c8d39a325296392580508b6b28"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-31.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/42-view-31.png",
+      "bytes": 85920,
+      "sha256": "ec189bee8ee79117e2056176c236f1c6e6a2f9b8562ae4ca0885a6f77d885631"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-32.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/43-view-32.png",
+      "bytes": 15752,
+      "sha256": "608b4df95473b4565c1639a9c8863f2c0bad4ce415e5756fe72255cbfb492fdf"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-33.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/44-view-33.png",
+      "bytes": 17297,
+      "sha256": "8126d0341e7822d8050a626faaa43c8052bf49ebab89294057ed10e2b15d24f9"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-34.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/45-view-34.png",
+      "bytes": 14746,
+      "sha256": "a3c3a5cd8f3659ee3627690d3fb5ea54dc7a61799c20588f7aa414e730393c3a"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-35.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/46-view-35.png",
+      "bytes": 17004,
+      "sha256": "0efd648e9b64cc86a3e095582801b3d93f404e8585b7631fd46238b5df8247d6"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-36.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/47-view-36.png",
+      "bytes": 14922,
+      "sha256": "6b93f062e50d46b3c17b13b0fc84bffe6a1e17d7c90ebe9ee6ac803db79de603"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-37.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/48-view-37.png",
+      "bytes": 17955,
+      "sha256": "9af5099908256b3e1d76e128651fc44f505267ecac9ecb23e0ec83a7094fc7c7"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-38.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/49-view-38.png",
+      "bytes": 17734,
+      "sha256": "9aa6e8666ed03bada1684575411e642dbc08b8a0025e0a63fc8ce3d415b08cbe"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-39.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/50-view-39.png",
+      "bytes": 17356,
+      "sha256": "9c649a58ec48a94bee9ca3d7c1606fbb83675a3e746964baa84ac1cbe7bbc71f"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-40.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/51-view-40.png",
+      "bytes": 19208,
+      "sha256": "6ae5ba4a0e40581a8312bf4228eb44e7096c279a9cb05812ae9556b22a9a62d8"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-41.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/52-view-41.png",
+      "bytes": 16265,
+      "sha256": "04e0439c31d6a0f0db57c272ed1ef02db0ffd40d925ff36a543bfe9fb8a8c054"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-42.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/53-view-42.png",
+      "bytes": 16429,
+      "sha256": "22a4450d0f5892196b3646e714955e6c13b04f36e43c74b4d6f345a4a3153ed4"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-43.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/54-view-43.png",
+      "bytes": 19075,
+      "sha256": "2921cbd91ce0a7e2364ac0d63d843a0ce2ef0ef13a037f8873df24a5213bde63"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-44.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/55-view-44.png",
+      "bytes": 19444,
+      "sha256": "9c764492175bcac9a7898526438978b5d7a1e01012ad4f8a4436d2f60cb17327"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-45.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/56-view-45.png",
+      "bytes": 20873,
+      "sha256": "f06c2dfade8ab76d9a4c1ea85f3c736761dc8efb0ef95fe8dc2a9fe9a340a2c9"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-46.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/57-view-46.png",
+      "bytes": 75805,
+      "sha256": "15d2e7cc5622c4d840570beff660cd85a201683d151c952ea5e0cace2f0124b4"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/view-47.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/58-view-47.png",
+      "bytes": 85634,
+      "sha256": "f95cf716e254c16333b75da5c4948bb87d413e34a114fe35e28841b1c849916e"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inspection-00.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/59-inspection-00.png",
+      "bytes": 59386,
+      "sha256": "910fd0a679a9f0c6db3e31168777a3d17acd77ae36c8b55112c7a652b9e1e1a3"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inspection-01.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/60-inspection-01.png",
+      "bytes": 62303,
+      "sha256": "06606cc6bd39c837048fdf1b49272f394a4c0ac43c315548128cc63f82a3e814"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inspection-02.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/61-inspection-02.png",
+      "bytes": 67188,
+      "sha256": "9b3cafeb71daa86b06b1709be5cd35635beae06148e1a3636b908fa773bedf28"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inspection-03.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/62-inspection-03.png",
+      "bytes": 222697,
+      "sha256": "35144914b1976220e1dccbf6284520e0d5611218e5d5b9741f5a394bd6b4b60b"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inspection-04.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/63-inspection-04.png",
+      "bytes": 55259,
+      "sha256": "996c1687d617a11abd2e93eaaf86ae0725dc01791cfd032538cba901605edc9c"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inspection-05.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/64-inspection-05.png",
+      "bytes": 57927,
+      "sha256": "b11c6494fdf96a3cfedac37581cc9d78a92549665eb6f784d7d1a618b2e37e09"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inspection-06.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/65-inspection-06.png",
+      "bytes": 62140,
+      "sha256": "f5648c9dd34429da85008bc61baec07ecddf65577bf64a38efba02c66e5eb4bb"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inspection-07.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/66-inspection-07.png",
+      "bytes": 215682,
+      "sha256": "2a50decfde17456426cccadaf335e31fb1545b687945f47f5bcf003a9bc9e209"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inspection-08.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/67-inspection-08.png",
+      "bytes": 53953,
+      "sha256": "553052f49c743cbc0af8ecaf3efc33a666866ddbb6146f8409550e35a01ee09e"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inspection-09.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/68-inspection-09.png",
+      "bytes": 56640,
+      "sha256": "e85729a8c46ef6a053dc599cef641894b37c36827075d980a05c76c5a9ebff15"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inspection-10.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/69-inspection-10.png",
+      "bytes": 60675,
+      "sha256": "5cf67d7b83df022b387070938b889b9af2ead3b3ed969c9e5a07c2e0beb23341"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inspection-11.png",
+      "snapshot": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/inputs/70-inspection-11.png",
+      "bytes": 212711,
+      "sha256": "c42fe502cd89eb7cda4b7e70031ea7edd2ff72df898c361ec105d2c665dcdd5b"
+    }
+  ]
+}

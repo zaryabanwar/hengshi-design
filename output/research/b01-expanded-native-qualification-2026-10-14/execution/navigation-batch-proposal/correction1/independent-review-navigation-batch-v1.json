@@ -1,0 +1,159 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-15",
+  "reviewer": "/root/review_directory_adaptation_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "REQUEST_CHANGES",
+  "scope": "Correction1 of unexecuted Navigation-only reaction batch proposal. Static source/contract and synthetic transaction review only; no provider or external execution authority.",
+  "packet": {
+    "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/correction1/review-inputs-v1.json",
+    "sha256": "2d766fd6cbb0361ad1047873ec1a5ab7d2f3aff03a91b108c85df5a6ad0fe1d9",
+    "input_count": 15,
+    "all_actual_bytes_and_sha256_verified": true,
+    "binding_errors": [],
+    "inputs": [
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/correction1/proposal-v1.json",
+        "bytes": 2831,
+        "sha256": "5129b9be1c16359df38f103039dafbd95a3208650f3cad59220994a6bd9ec009"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/correction1/expected-scope-v1.json",
+        "bytes": 36643,
+        "sha256": "dc9681052a871739a85f0fe932a1b0c59f4f328995d420d3d4bd8175f39a80ba"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/correction1/batch-body-v1.js",
+        "bytes": 11876,
+        "sha256": "f0010d15e8b264ff15bcdf4494bdf8a5fd2e25ebfd49ace775fd0fb7c5d7e924"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/correction1/navigation-reaction-batch-v1.js",
+        "bytes": 39165,
+        "sha256": "a143c2f36cfaf8e64916a331dc9328e6d5128f0dea6af907a90837d9e124a630"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/correction1/offline-transaction-harness-v1.cjs",
+        "bytes": 8719,
+        "sha256": "e39775767c446dfb1bb4aaec8d8fba8e7a671d20cf90d1c5f19baab0236e3d0e"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/correction1/offline-transaction-results-v1.json",
+        "bytes": 2234,
+        "sha256": "0e3bd716db7b3cd49d241e7587973851c84f2e4d5dd8ff4a0adabd4fc9538701"
+      },
+      {
+        "path": "AGENTS.md",
+        "bytes": 7686,
+        "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+      },
+      {
+        "path": ".specify/memory/constitution.md",
+        "bytes": 16234,
+        "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+      },
+      {
+        "path": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+        "bytes": 84039,
+        "sha256": "9c04e29a083008a9445535a74de13017516f73dcdccce2965e5446119e233c30"
+      },
+      {
+        "path": "docs/phase-1-ui-reference-production/validation/mcp-call-ledger.csv",
+        "bytes": 24447,
+        "sha256": "687beb7fe73028c07213575d3cf8ac8030dd1e67d884d17a164649743b622c64"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/qualification-plan-v1.json",
+        "bytes": 235601,
+        "sha256": "5e24ac8c203bf729b5190d359da2439c1b1f88f59665b1c65163b4b9002ab2ce"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-32-native-census-v1.json",
+        "bytes": 4634,
+        "sha256": "106296fa9f0ec3b07f50fb90be40d57b10995055a60b2d24a18d9b9d6d0bb669"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/native-edge-bindings-20261015-v1.json",
+        "bytes": 912,
+        "sha256": "805c4cf968bb2d227f0cdbe6f2c2c3337be8b1211273d94f5095f7ed7f5708e5"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/initial-reviewed-inputs-v1.zip",
+        "bytes": 81453,
+        "sha256": "7cbbb456f6c310e91974a9fb1239b1acf388ebf8466066f4cf112a96af267774"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/independent-review-navigation-batch-v1.json",
+        "bytes": 11798,
+        "sha256": "dff727e682dec529765059a03812a1d60cc8c17f1197db58f90c18f707499c5a"
+      }
+    ]
+  },
+  "predecessor": {
+    "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/independent-review-navigation-batch-v1.json",
+    "sha256": "dff727e682dec529765059a03812a1d60cc8c17f1197db58f90c18f707499c5a",
+    "verdict": "REQUEST_CHANGES",
+    "initial13_bytes_verified_inside_preserved_archive": true,
+    "archive_crc_pass": true
+  },
+  "resolved_findings": [
+    {
+      "id": "NBR-01",
+      "assessment": "Original optional Action flag erasure reproduction now returns ROLLBACK_INCOMPLETE and retains resetInteractiveComponents=true. All optional fields are preserved in semantic comparison; rollback uses the full exact actual snapshot after successful admitted readback, or exact desired shape if no admitted readback occurred. The separate deprecated-alias issue below remains."
+    },
+    {
+      "id": "NBR-02",
+      "assessment": "Failure output now keeps all attempted/unresolved IDs with fixed ASCII codes and one bounded printable error. It pre-admits compact, indented and JSON-string-encoded success and worst-case failure forms before writes. Supplied all106-node Unicode rollback failure now emits7285/10610/8373 bytes for those forms, retaining106 unique unresolved IDs. Success emits6761/12732/7943. No 20KB overflow reproduced."
+    }
+  ],
+  "findings": [
+    {
+      "id": "NBR-03",
+      "priority": "P2",
+      "title": "Documented deprecated action readback alias prevents admission or leaves a partial batch",
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/correction1/batch-body-v1.js",
+      "lines": [
+        17,
+        21,
+        120,
+        145,
+        150,
+        158
+      ],
+      "cause": "canonicalReaction spreads all Reaction keys, including deprecated action. Desired reactions contain actions only. Official Reaction documentation permits action and the official reactions getter example returns both the action alias and actions array. Redundant dual-field readback therefore compares unequal to the equivalent desired reaction.",
+      "reproduction": "Read-only in-memory fixture extensions using the supplied correction1 harness: adding action=deepCopy(actions[0]) to both existing menu reactions makes valid dual-field readback ABORTED_PREFLIGHT with Existing menu pair drift and0 writes. Keeping initial existing pair minimal but having each setter expose the same documented dual-field readback yields Reaction write mismatch, ROLLBACK_INCOMPLETE,1 write and the first control unresolved. No Figma call or input edit occurred.",
+      "requested_change": "Normalize the explicitly documented deprecated alias only when it is demonstrably redundant with the full sole actions[0], or safely support the documented action-only representation. Preserve and reject contradictory aliases and every meaningful optional Action/Trigger field. Keep rollback ownership on full actual snapshots after successful semantic admission. Add synthetic success cases for documented dual-field readback at preflight and after setters plus conflicting-alias denial; do not simply delete action blindly.",
+      "limits": "This is a demonstrated compatibility defect for an official documented readback shape, not evidence that the current live editor has that exact shape or that current Figma data is corrupt."
+    }
+  ],
+  "actionable_finding_count": 1,
+  "verified_assessments": {
+    "graph_and_generation": "All15 inputs match byte lengths/hashes. EXPECTED constant and generated body match correction1 source exactly. The expected32 tuples/108 approved Navigation edges are unchanged from the reviewed recipe and original census. The108 include48 choices,12 changed Apply,32 Open/Close and16 Escape;2 existing edges are preserved and106 additions proposed.",
+    "source_preservation": "The initial-reviewed-inputs-v1.zip has passing CRC and preserves all13 originally reviewed source bytes against the predecessor receipt. Initial receipt hash remains unchanged.",
+    "supplied_cases": "All9 supplied synthetic cases independently rerun with filesystem writes stubbed in memory, leaving saved results untouched. Original seven and both prior reproductions pass their expectations. These are synthetic Plugin API transaction cases only.",
+    "scope_preflight": "File/Page1/section/set/root/tuple/anatomy/caption/D057/body visibility/role ownership and no-unexpected-reaction guards remain. No geometry/content/component/frame/Directory/Recovery or boundary/reset writes were added. Every control ID is constrained to a bounded numeric ID before output admission.",
+    "compact_report": "Role legend plus compact root/edge arrays preserve all108 bindings. All3 success/worst-failure serialized forms are admitted below18000 bytes before setters; failure records use106 bounded IDs and fixed codes, not Unicode error arrays.",
+    "concurrency": "Before-value checks, recorded attempted setters and reverse rollback remain; exact full-current/afterActual rollback ownership prevents the original optional-flag overwrite. The new alias admission mismatch must be repaired before proposing execution."
+  },
+  "official_contract": {
+    "checked": "2026-10-15 public official documentation, no authenticated provider tool",
+    "sources": [
+      "https://developers.figma.com/docs/plugins/api/Reaction/",
+      "https://developers.figma.com/docs/plugins/api/properties/nodes-reactions/"
+    ],
+    "assessment": "Reaction permits deprecated action alongside actions; official nodes-reactions getter example shows both fields. Its deprecation does not make its presence invalid. A redundant alias needs explicit normalization rather than broad field loss. Official Action/Trigger/setReactionsAsync contract observations from the predecessor review otherwise remain applicable."
+  },
+  "holds": [
+    "D094 remains native-only/MCP0. No method exception, per-call CB06/CB07 approval or allowance exception is granted.",
+    "Ledger last attempt36/metred33 reports the Starter-plan provider cap. Current reset/capacity/auth remains unknown; do not invoke the known-capped route or request an unchanged checking/retry call.",
+    "A corrected independently reviewed proposal and separate applicable founder/provider prerequisites would still be needed before any future execution. Native-editor authorization remains separate."
+  ],
+  "limits": [
+    "Receipt is the only proposal-review artifact written; no source or saved harness result changed.",
+    "No browser, Figma, authenticated provider, MCP/AI, account, application or Git action performed.",
+    "No live source/copy admission, native behavior, accessibility, original preservation, restore/_EXIT, all80/fullB01 or Phase1 acceptance.",
+    "This verdict addresses a local unexecuted proposal only."
+  ]
+}

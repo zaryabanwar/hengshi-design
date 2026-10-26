@@ -1,0 +1,13 @@
+{
+  "status": "DOING",
+  "verdict": "REVISE",
+  "scope": "Frozen28-input Phase1 rights-intake logical/source consistency, cycle0; exact two appends only",
+  "manifest_sha256": "9dbd07488d9549fb56d759a40a65a988c2ab09d1e8b039c5d3fcc89ffe2fa5b1",
+  "frozen_live_inputs": 28,
+  "observations": "independent-source-observations-v1.json",
+  "observations_sha256": "4359e0e3f0f759b3711b05e8c14dd8c83a51bb29262b7e38e732b1b3536e1ea1",
+  "integrity": {"primary_raw_gzip_pairs": 3, "independent_edpb_selected_pages_match": true, "original_security_prefix_bytes": 70442, "original_interface_prefix_bytes": 109272},
+  "findings": [{"id": "RIGHTS01", "severity": "P2", "file": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md", "lines": "955-957", "issue": "Access output categorically excludes other peoples data and secrets. Mixed data may concern both the requester and staff/others; GDPR15(4)/EDPB6.2 require concrete adverse impact and balancing rather than automatic exclusion. EDPBexample35 expressly permits a full record containing staff data when no adverse rights impact is found. The following justified-redaction/no-total-refusal sentence does not qualify the categorical exclusion.", "requested_correction": "Replace blanket exclusion with case-specific rights/freedoms impact assessment and balancing, necessary scoped redactions and useful remaining access. Preserve credentials and unrelated records outside the verified lawful request scope; this is no new authority or actual disclosure."}],
+  "other_checks": "Official-channel original receipt, proportionate/representative verification, calendar-month and bounded extension with conservative no-automatic-suspension proposal, secure scoped response, deletion-only routes/entities, unknown-copy honesty and retention/basis/operation holds are coherent with supplied context. No further scoped finding.",
+  "limits": "Logical consistency only, not legal advice/jurisdictional clearance. No mailbox/account verification, personal data, runtime/secure-delivery/actual access or deletion proof, adoption, new grant/endpoint/table, installation, network, Figma, Git or independent/integrated founder acceptance."
+}

@@ -1,5 +1,40 @@
 # Visitor-to-Qualified-Booking Value and Measurement Model
 
+## Current v1 authority — reconciled 2026-10-05
+
+D-025 accepts this bounded foundation model; the July draft/not-approved status
+below is historical. D-070 now selects Europe as the first market. Preserve the
+approved 30-minute qualified-discovery outcome, six qualification fields plus
+purpose-specific consent, optional budget and direct/AI/human-assisted paths.
+No conversion target, named operator, account capability or measured baseline is
+invented by this reference amendment.
+
+Delivery streams and free movement are presentation choices, not additional
+qualification requirements or compulsory funnel stages. D-064's movement scope
+does not authorize movement trails, personal profiles or new analytics events.
+Apply existing first-party aggregate-only privacy controls; exact measurement
+payloads, cohort suppression, lawful basis and retention mappings remain held.
+
+Use the current [visitor/staff flows](../phase-1-ux-architecture/FLOWS.md),
+[interface catalogue](../phase-1-architecture/contracts/INTERFACE_CATALOG.md)
+and [logical data contract](../phase-1-architecture/contracts/DATA_CONTRACT.md)
+for booking lineage, guarded operation recovery and consent/class-specific data.
+Human acceptance, a contact/lead submission, calendar creation, an alert or an
+uncertain provider response cannot independently satisfy confirmed qualified
+booking. Ending a chat or changing the public release does not cancel that booking.
+The approved 90-day rule applies to its mapped consented-chat/brief/lead classes;
+do not extend it to every booking, verification, operation, audit or aggregate record.
+Exact retention anchors and operational ownership remain separately unapproved.
+
+D-068's [provider scope addendum](../phase-1-architecture/contracts/PROVIDER_SCOPE_ADDENDUM.md)
+keeps hosting/cost planning deferred and distinguishes Outlook/Teams intent from
+actual account/API capabilities. No account activation or blanket Microsoft 365
+requirement follows. These references retain the existing metric definitions and
+accepted outcome; they do not implement measurement, verify booking or accept the
+complete Phase 1 package.
+
+## Preserved July measurement definition and evidence
+
 **Status:** Phase 1 draft for specialist review; not founder-approved
 
 **Classification:** Business confidential

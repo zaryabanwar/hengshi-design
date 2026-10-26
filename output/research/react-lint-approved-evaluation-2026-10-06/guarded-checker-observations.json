@@ -1,0 +1,411 @@
+{
+  "scope": "separate unselected candidate invocation; full preset plus builtin named React Hook import-alias restriction only; not arbitrary dataflow analysis, production policy or full graph acceptance",
+  "records": [
+    {
+      "case": "valid-hooks",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/valid-hooks.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0",
+        "--no-warn-ignored"
+      ],
+      "expected_reject": false,
+      "exit_code": 0,
+      "diagnostics": [],
+      "oracle_match": true,
+      "oracle": "Rules of Hooks, exhaustive dependencies and Effect Event usage in official React documentation"
+    },
+    {
+      "case": "conditional-hook",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/conditional-hook.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0",
+        "--no-warn-ignored"
+      ],
+      "expected_reject": true,
+      "exit_code": 1,
+      "diagnostics": [
+        {
+          "rule": "react-hooks/rules-of-hooks",
+          "severity": 2,
+          "line": 1
+        }
+      ],
+      "oracle_match": true,
+      "oracle": "Rules of Hooks, exhaustive dependencies and Effect Event usage in official React documentation"
+    },
+    {
+      "case": "conditional-use",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/conditional-use.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0",
+        "--no-warn-ignored"
+      ],
+      "expected_reject": false,
+      "exit_code": 0,
+      "diagnostics": [],
+      "oracle_match": true,
+      "oracle": "Rules of Hooks, exhaustive dependencies and Effect Event usage in official React documentation"
+    },
+    {
+      "case": "missing-dependency",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/missing-dependency.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0",
+        "--no-warn-ignored"
+      ],
+      "expected_reject": true,
+      "exit_code": 1,
+      "diagnostics": [
+        {
+          "rule": "react-hooks/exhaustive-deps",
+          "severity": 1,
+          "line": 1
+        }
+      ],
+      "oracle_match": true,
+      "oracle": "Rules of Hooks, exhaustive dependencies and Effect Event usage in official React documentation"
+    },
+    {
+      "case": "effect-event-valid",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/effect-event-valid.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0",
+        "--no-warn-ignored"
+      ],
+      "expected_reject": false,
+      "exit_code": 0,
+      "diagnostics": [],
+      "oracle_match": true,
+      "oracle": "Rules of Hooks, exhaustive dependencies and Effect Event usage in official React documentation"
+    },
+    {
+      "case": "effect-event-in-deps",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/effect-event-in-deps.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0",
+        "--no-warn-ignored"
+      ],
+      "expected_reject": true,
+      "exit_code": 1,
+      "diagnostics": [
+        {
+          "rule": "react-hooks/exhaustive-deps",
+          "severity": 1,
+          "line": 1
+        }
+      ],
+      "oracle_match": true,
+      "oracle": "Rules of Hooks, exhaustive dependencies and Effect Event usage in official React documentation"
+    },
+    {
+      "case": "effect-event-during-render",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/effect-event-during-render.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0",
+        "--no-warn-ignored"
+      ],
+      "expected_reject": true,
+      "exit_code": 1,
+      "diagnostics": [
+        {
+          "rule": "react-hooks/rules-of-hooks",
+          "severity": 2,
+          "line": 1
+        }
+      ],
+      "oracle_match": true,
+      "oracle": "Rules of Hooks, exhaustive dependencies and Effect Event usage in official React documentation"
+    },
+    {
+      "case": "effect-event-as-click-handler",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/effect-event-as-click-handler.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0",
+        "--no-warn-ignored"
+      ],
+      "expected_reject": true,
+      "exit_code": 1,
+      "diagnostics": [
+        {
+          "rule": "react-hooks/rules-of-hooks",
+          "severity": 2,
+          "line": 1
+        }
+      ],
+      "oracle_match": true,
+      "oracle": "Rules of Hooks, exhaustive dependencies and Effect Event usage in official React documentation"
+    },
+    {
+      "case": "custom-hook-conditional",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/custom-hook-conditional.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0",
+        "--no-warn-ignored"
+      ],
+      "expected_reject": true,
+      "exit_code": 1,
+      "diagnostics": [
+        {
+          "rule": "react-hooks/rules-of-hooks",
+          "severity": 2,
+          "line": 5
+        }
+      ],
+      "oracle_match": true,
+      "oracle": "Hook execution order remains required after import aliasing; configured custom effects require exhaustive dependencies"
+    },
+    {
+      "case": "named-hook-alias-conditional",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/named-hook-alias-conditional.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0",
+        "--no-warn-ignored"
+      ],
+      "expected_reject": true,
+      "exit_code": 1,
+      "diagnostics": [
+        {
+          "rule": "react-hooks/rules-of-hooks",
+          "severity": 2,
+          "line": 4
+        }
+      ],
+      "oracle_match": true,
+      "oracle": "Hook execution order remains required after import aliasing; configured custom effects require exhaustive dependencies"
+    },
+    {
+      "case": "namespace-conditional",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/namespace-conditional.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0",
+        "--no-warn-ignored"
+      ],
+      "expected_reject": true,
+      "exit_code": 1,
+      "diagnostics": [
+        {
+          "rule": "react-hooks/rules-of-hooks",
+          "severity": 2,
+          "line": 4
+        }
+      ],
+      "oracle_match": true,
+      "oracle": "Hook execution order remains required after import aliasing; configured custom effects require exhaustive dependencies"
+    },
+    {
+      "case": "renamed-hook-conditional",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/renamed-hook-conditional.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0",
+        "--no-warn-ignored"
+      ],
+      "expected_reject": true,
+      "exit_code": 1,
+      "diagnostics": [
+        {
+          "rule": "no-restricted-syntax",
+          "severity": 2,
+          "line": 1
+        }
+      ],
+      "oracle_match": true,
+      "oracle": "Hook execution order remains required after import aliasing; configured custom effects require exhaustive dependencies"
+    },
+    {
+      "case": "custom-effect-shared-invalid",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/custom-effect-shared-invalid.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0",
+        "--no-warn-ignored"
+      ],
+      "expected_reject": true,
+      "exit_code": 1,
+      "diagnostics": [
+        {
+          "rule": "react-hooks/exhaustive-deps",
+          "severity": 1,
+          "line": 3
+        }
+      ],
+      "oracle_match": true,
+      "oracle": "Hook execution order remains required after import aliasing; configured custom effects require exhaustive dependencies"
+    },
+    {
+      "case": "custom-effect-shared-valid",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/custom-effect-shared-valid.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0",
+        "--no-warn-ignored"
+      ],
+      "expected_reject": false,
+      "exit_code": 0,
+      "diagnostics": [],
+      "oracle_match": true,
+      "oracle": "Hook execution order remains required after import aliasing; configured custom effects require exhaustive dependencies"
+    },
+    {
+      "case": "valid-named-alias",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/valid-named-alias.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0",
+        "--no-warn-ignored"
+      ],
+      "expected_reject": false,
+      "exit_code": 0,
+      "diagnostics": [],
+      "oracle_match": true,
+      "oracle": "Reused independent React behavior oracle"
+    },
+    {
+      "case": "valid-nonhook-alias",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/valid-nonhook-alias.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0",
+        "--no-warn-ignored"
+      ],
+      "expected_reject": false,
+      "exit_code": 0,
+      "diagnostics": [],
+      "oracle_match": true,
+      "oracle": "Reused independent React behavior oracle"
+    },
+    {
+      "case": "invalid-nonhook-alias-top-level",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/invalid-nonhook-alias-top-level.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0",
+        "--no-warn-ignored"
+      ],
+      "expected_reject": true,
+      "exit_code": 1,
+      "diagnostics": [
+        {
+          "rule": "no-restricted-syntax",
+          "severity": 2,
+          "line": 1
+        }
+      ],
+      "oracle_match": true,
+      "oracle": "Proposed candidate naming restriction only; top-level runtime order itself is not the fault"
+    }
+  ]
+}

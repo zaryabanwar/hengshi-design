@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed public immutable publication envelope v1",
+  "description": "Definition-only proposal. No approval/activation, personal data, external URL or provider secret is permitted in this public envelope.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "manifest_sha256",
+    "manifest"
+  ],
+  "properties": {
+    "manifest_sha256": {
+      "$ref": "#/$defs/sha256"
+    },
+    "manifest": {
+      "$ref": "#/$defs/manifest"
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}(?![\\s\\S])"
+    },
+    "identifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,95}(?![\\s\\S])"
+    },
+    "asset_key": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]+(?:/[A-Za-z0-9_.-]+)*(?![\\s\\S])"
+    },
+    "canonical_path": {
+      "type": "string",
+      "pattern": "^/(?:[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*)*)?(?![\\s\\S])"
+    },
+    "route": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "route_id",
+        "canonical_path",
+        "content_revision",
+        "content_sha256",
+        "indexable"
+      ],
+      "properties": {
+        "route_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "canonical_path": {
+          "$ref": "#/$defs/canonical_path"
+        },
+        "content_revision": {
+          "$ref": "#/$defs/identifier"
+        },
+        "content_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "indexable": {
+          "type": "boolean"
+        }
+      }
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact_id",
+        "kind",
+        "asset_key",
+        "sha256",
+        "bytes",
+        "route_ids",
+        "dependencies",
+        "streams"
+      ],
+      "properties": {
+        "artifact_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "kind": {
+          "enum": [
+            "html",
+            "metadata",
+            "structured_data",
+            "sitemap",
+            "redirects",
+            "knowledge",
+            "scene_panels",
+            "scene_chunk",
+            "collision",
+            "audio",
+            "shared_asset"
+          ]
+        },
+        "asset_key": {
+          "$ref": "#/$defs/asset_key"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "route_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/identifier"
+          },
+          "uniqueItems": true
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/identifier"
+          },
+          "uniqueItems": true
+        },
+        "streams": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "S-HIGH",
+              "S-MEDIUM",
+              "S-LOW",
+              "S-SEMANTIC"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "manifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "release_id",
+        "created_at",
+        "content_snapshot_sha256",
+        "routes",
+        "artifacts"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "release_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "content_snapshot_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "routes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/route"
+          }
+        },
+        "artifacts": {
+          "type": "array",
+          "minItems": 7,
+          "items": {
+            "$ref": "#/$defs/artifact"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "observed_at_utc": "2026-10-06T00:08:02.874749+00:00",
+  "scope": "Actual built synthetic source in existing Playwright CLI 0.1.19 with explicitly cached Chromium1228 headless, user agent Chrome149; not selected latest QA tooling/browser graph.",
+  "desktop_viewport": [
+    1280,
+    900
+  ],
+  "narrow_viewport": [
+    390,
+    844
+  ],
+  "results": {
+    "react_counter": "click changed Count0 to Count1 and disabled the button",
+    "zustand": "pointer changed store0 to1; verified focused Store increment then Enter changed1 to2",
+    "gsap": "deliberate click reached Animation: Completed",
+    "router": "notes then home changed rendered route in MemoryRouter; browser URL intentionally stays /",
+    "webgl": "Canvas DOM count1 to0 to1 with unmount/remount; cube pixels inspected in both saved captures",
+    "tailwind": "emerald background computed oklch(0.508 0.118 165.612); narrow document width390 equals viewport390",
+    "requests": "Three actual static localhost requests reported HTTP200",
+    "console_errors": 0,
+    "console_warnings": [
+      "THREE.Clock deprecated; THREE.Timer recommendation, one on each Canvas mount"
+    ]
+  },
+  "initial_observations": [
+    "Two installed Chrome-channel launch attempts exited before page load with non-default user-data-dir diagnostic; default channel remained Chrome until explicit executable config",
+    "Initial Tab/Enter after scene button reached BODY and left store unchanged; corrected focus path explicitly verified the intended button before Enter",
+    "Python terminal encoding showed em dash incorrectly; raw CLI bytes and HTML unchanged, wrapper stdout/stderr changed to UTF8"
+  ],
+  "captures": [
+    "desktop.png",
+    "narrow-viewport.png"
+  ],
+  "preview_stopped": true,
+  "limits": [
+    "No physical phone, Safari/Firefox, supported-browser graph, accessibility certification or device performance proof",
+    "Canvas DOM removal is not GPU memory/disposal/context-recovery proof",
+    "No actual campus, movement, audio, streaming, publication/security or production UI is implemented",
+    "Build JS coverage absence of gensync is not universal deployed exclusion"
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "reviewed_at_utc": "2026-10-24T06:17:14.306593+00:00",
+  "reviewer": "Independent reviewer /root/review_archive_candidate_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "PASS",
+  "scope": "Bounded saved-image/native-AX evidence and claim-limit review of current Recovery/SEMANTIC four-edge replay only. This is not live Figma verification, full matching/paired-mechanism qualification or complete B01 acceptance.",
+  "packet": {
+    "path": "output/research/b01-playback-2026-10-24/review-inputs-v1.json",
+    "bytes": 3783,
+    "sha256": "175db22db1a88751ba24901446172a575fd57d442e80380f6b2edd9fe22eef32",
+    "input_count": 18,
+    "verified_before_review": 18,
+    "verified_again_before_receipt": 18,
+    "inputs": [
+      {
+        "path": "output/research/b01-playback-2026-10-24/01-default.png",
+        "bytes": 43603,
+        "sha256": "750c1b3eb10b894a96d0c142f78e1d3702b51a3fabb5324f05f9d897002a1fc3",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-playback-2026-10-24/02-detailed-pending.png",
+        "bytes": 43600,
+        "sha256": "ffd5fde670f930e5fc9a2b33ab4fdf8fa40ef9441ba698137f7f32d6e7222324",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-playback-2026-10-24/03-pending-bottom.png",
+        "bytes": 52312,
+        "sha256": "fbf6425c9f5fe4bf86140d85a275c761a6d4eaf94e3f0dea608c1811272df3d8",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-playback-2026-10-24/04-preserve-arrival.png",
+        "bytes": 52312,
+        "sha256": "fbf6425c9f5fe4bf86140d85a275c761a6d4eaf94e3f0dea608c1811272df3d8",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-playback-2026-10-24/05-preserve-arrival-sidebar-hidden.png",
+        "bytes": 44026,
+        "sha256": "8a99a022a2a14fa0cdf8d281715b2d42592fe2e29eada504260410cef75ba651",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-playback-2026-10-24/06-preserve-return-bottom.png",
+        "bytes": 36135,
+        "sha256": "5cb00986f58e5c5275b908a6a0b587323ce6f4bc69f9b1f1e982aa676e295aee",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-playback-2026-10-24/07-preserve-return-pending.png",
+        "bytes": 27331,
+        "sha256": "828f35f72f7dc6dc3bf8c6413886a8ee8716e0f97675ea78698038f6cec0ca2a",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-playback-2026-10-24/08-pending-reset-source-bottom.png",
+        "bytes": 36135,
+        "sha256": "5cb00986f58e5c5275b908a6a0b587323ce6f4bc69f9b1f1e982aa676e295aee",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-playback-2026-10-24/09-reset-arrival-default.png",
+        "bytes": 27320,
+        "sha256": "304aa53225f038daed8f3bd2594550cf9d8c741dae46e8eb816e4cf7c1c22a3d",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-playback-2026-10-24/10-reset-destination-bottom.png",
+        "bytes": 37308,
+        "sha256": "5c3dec44ecff51d297ed4bd3ffccc1784ee0e6a1a86b6d1e60e58e862e6721d1",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-playback-2026-10-24/11-reset-return-default.png",
+        "bytes": 27320,
+        "sha256": "304aa53225f038daed8f3bd2594550cf9d8c741dae46e8eb816e4cf7c1c22a3d",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-playback-2026-10-24/preserve-instance.txt",
+        "bytes": 18124,
+        "sha256": "92f0b17e5cd348d3db3ca863c71d431163599ca4a9a102d00878bac66517df50",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-playback-2026-10-24/reset-instance.txt",
+        "bytes": 18111,
+        "sha256": "ab14ce4a5e45ac1f8c242d54302af1d8a255eef79aed912590a426a16ff84f15",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-playback-2026-10-24/source-instance.txt",
+        "bytes": 17782,
+        "sha256": "8dac003818e4aab429dde876adada3b6bffd53b2d7d3dc2f6a6ceb45982f8b81",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-playback-2026-10-24/execution-result-v1.json",
+        "bytes": 6212,
+        "sha256": "0229c72383a170099adbde0c7dea0aeae730c98772acfd3df34dc2a400f2191e",
+        "verified": true
+      },
+      {
+        "path": "AGENTS.md",
+        "bytes": 8983,
+        "sha256": "f31b4bb42f954995cc12358284a992fde46ade98980238043c149f692b6474a5",
+        "verified": true
+      },
+      {
+        "path": "DECISIONS.md",
+        "bytes": 109588,
+        "sha256": "569e584a84fa03c88efc62dc39991d1a41b06e3a89f22abd3d37133ae9fdbeed",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+        "bytes": 104341,
+        "sha256": "27ae019585e14571e46adcd7d704adc379015e985204c4444d5934053cd84942",
+        "verified": true
+      }
+    ]
+  },
+  "actionable_findings": [],
+  "assessments": [
+    {
+      "subject": "Default and dirty source",
+      "evidence": "execution-result-v1.json:11-12; 01-default.png;02-detailed-pending.png;03-pending-bottom.png",
+      "assessment": "Actual saved image views show Quick Access active/selected at default, then Detailed selected while Quick Access remains in force, then bottom private controls/marker. These support visible authored state/anchor observations in recorded sequence, not exact component identity or scroll offset."
+    },
+    {
+      "subject": "Preserve observations",
+      "evidence": "execution-result-v1.json:13-14;04-preserve-arrival.png;05-preserve-arrival-sidebar-hidden.png;06-preserve-return-bottom.png;07-preserve-return-pending.png",
+      "assessment": "Preserve arrival bottom marker is visible after sidebar closure/repositioning; return pending image07 shows complete viewport with Detailed selected and Quick Access in force. Saved06 is byte-identical to visible bottom image08; System.Drawing decoder confirms nonblack content even though the first view_image emission for06 appeared black. Recorded sequence plus pixels support improved bounded dirty-state/bottom-anchor round-trip evidence. Exact pixel continuity, freshness of duplicate captures, uninterrupted pending state at every intermediate point and native matching are not proved."
+    },
+    {
+      "subject": "Reset observations",
+      "evidence": "execution-result-v1.json:15-16;08-pending-reset-source-bottom.png;09-reset-arrival-default.png;10-reset-destination-bottom.png;11-reset-return-default.png",
+      "assessment": "Reset source bottom, target Quick Access selected/in-force top, target bottom and return Quick Access selected/in-force top are represented.09/11 duplicate exactly; they support common visible default appearance, not independently fresh temporal evidence or full reset mechanism. Only these recorded endpoints/profile are in scope."
+    },
+    {
+      "subject": "Image-byte versus emission accounting",
+      "evidence": "execution-result-v1.json:19-184 images; all11 returned image files",
+      "assessment": "All11 decode via System.Drawing as JPEG1011x884 despite .png filenames. All sizes/hashes match inventory; no re-encoding performed. view_image was used for every image. Partial/black tool emissions cannot identify saved-file pixel completeness. Identical groups03/04,06/08,09/11 remain explicitly repeated; neither repeats nor filenames alone establish freshness, current state or exact transition timing."
+    },
+    {
+      "subject": "Native sampled instance inspection",
+      "evidence": "source-instance.txt:1-2,68-71,227-240,280-283;preserve-instance.txt:1-2,64-67,234-247,287-290;reset-instance.txt:1-2,60-63,234-247,287-290;execution-result-v1.json nativeInspection",
+      "assessment": "Frozen native AX identifies three selected design-instance URLs175:3798/3820/3842, shared ENQ host RECOVERY SEMANTIC label, default SEMANTIC/SEMANTIC/NOT_APPLICABLE properties and320x1400 instance dimensions. Same label/default tuple is not an authoritative shared component-key, unique sibling-path or graph-preservation proof.320x560 scrolling host is producer/context information, not established by these selected-instance fields. Complete native matching remains held as producer states."
+    },
+    {
+      "subject": "Sequence provenance and scope",
+      "evidence": "execution-result-v1.json:5-19;AGENTS.md workflow gates;B01_EXECUTION_BRIEF.md:1165-1214",
+      "assessment": "Producer reports read-only actions and URL changes among existing175:3797/3819/3841. This packet contains native editor AX snapshots, not independently frozen prototype URL snapshots for each transition; URL/click timing remains producer sequence evidence. No new authored-edge count or complete324-edge/all-host/accessibility/runtime/Phase1 claim is made. Prior October17 review remains separate; current stronger visible pending-return evidence does not rewrite that older frozen scope."
+    }
+  ],
+  "image_inventory": [
+    {
+      "name": "01-default.png",
+      "signature": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "view_image_inspected": true,
+      "system_drawing_decode": "Jpeg 1011x884",
+      "sha256": "750c1b3eb10b894a96d0c142f78e1d3702b51a3fabb5324f05f9d897002a1fc3"
+    },
+    {
+      "name": "02-detailed-pending.png",
+      "signature": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "view_image_inspected": true,
+      "system_drawing_decode": "Jpeg 1011x884",
+      "sha256": "ffd5fde670f930e5fc9a2b33ab4fdf8fa40ef9441ba698137f7f32d6e7222324"
+    },
+    {
+      "name": "03-pending-bottom.png",
+      "signature": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "view_image_inspected": true,
+      "system_drawing_decode": "Jpeg 1011x884",
+      "sha256": "fbf6425c9f5fe4bf86140d85a275c761a6d4eaf94e3f0dea608c1811272df3d8"
+    },
+    {
+      "name": "04-preserve-arrival.png",
+      "signature": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "view_image_inspected": true,
+      "system_drawing_decode": "Jpeg 1011x884",
+      "sha256": "fbf6425c9f5fe4bf86140d85a275c761a6d4eaf94e3f0dea608c1811272df3d8"
+    },
+    {
+      "name": "05-preserve-arrival-sidebar-hidden.png",
+      "signature": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "view_image_inspected": true,
+      "system_drawing_decode": "Jpeg 1011x884",
+      "sha256": "8a99a022a2a14fa0cdf8d281715b2d42592fe2e29eada504260410cef75ba651"
+    },
+    {
+      "name": "06-preserve-return-bottom.png",
+      "signature": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "view_image_inspected": true,
+      "system_drawing_decode": "Jpeg 1011x884",
+      "sha256": "5cb00986f58e5c5275b908a6a0b587323ce6f4bc69f9b1f1e982aa676e295aee"
+    },
+    {
+      "name": "07-preserve-return-pending.png",
+      "signature": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "view_image_inspected": true,
+      "system_drawing_decode": "Jpeg 1011x884",
+      "sha256": "828f35f72f7dc6dc3bf8c6413886a8ee8716e0f97675ea78698038f6cec0ca2a"
+    },
+    {
+      "name": "08-pending-reset-source-bottom.png",
+      "signature": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "view_image_inspected": true,
+      "system_drawing_decode": "Jpeg 1011x884",
+      "sha256": "5cb00986f58e5c5275b908a6a0b587323ce6f4bc69f9b1f1e982aa676e295aee"
+    },
+    {
+      "name": "09-reset-arrival-default.png",
+      "signature": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "view_image_inspected": true,
+      "system_drawing_decode": "Jpeg 1011x884",
+      "sha256": "304aa53225f038daed8f3bd2594550cf9d8c741dae46e8eb816e4cf7c1c22a3d"
+    },
+    {
+      "name": "10-reset-destination-bottom.png",
+      "signature": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "view_image_inspected": true,
+      "system_drawing_decode": "Jpeg 1011x884",
+      "sha256": "5c3dec44ecff51d297ed4bd3ffccc1784ee0e6a1a86b6d1e60e58e862e6721d1"
+    },
+    {
+      "name": "11-reset-return-default.png",
+      "signature": "JPEG",
+      "dimensions": [
+        1011,
+        884
+      ],
+      "view_image_inspected": true,
+      "system_drawing_decode": "Jpeg 1011x884",
+      "sha256": "304aa53225f038daed8f3bd2594550cf9d8c741dae46e8eb816e4cf7c1c22a3d"
+    }
+  ],
+  "identical_saved_byte_groups": [
+    [
+      "03-pending-bottom.png",
+      "04-preserve-arrival.png"
+    ],
+    [
+      "06-preserve-return-bottom.png",
+      "08-pending-reset-source-bottom.png"
+    ],
+    [
+      "09-reset-arrival-default.png",
+      "11-reset-return-default.png"
+    ]
+  ],
+  "independent_decode_observations": {
+    "method": "Read-only Windows System.Drawing.Bitmap loads, dimension/raw-format reads and sample GetPixel(400,400), disposed after each; no output image or edits",
+    "06-preserve-return-bottom.png_pixel400_400_rgb": [
+      244,
+      241,
+      234
+    ],
+    "07-preserve-return-pending.png_pixel400_400_rgb": [
+      242,
+      239,
+      232
+    ],
+    "09-reset-arrival-default.png_pixel400_400_rgb": [
+      242,
+      239,
+      232
+    ]
+  },
+  "qualification_holds": [
+    "Exact scroll offsets and complete native component-key/sibling-path matching/graph preservation remain unqualified; same names/default tuples do not replace that evidence.",
+    "Repeated/partial tool captures and producer-recorded URL timing do not establish a continuous fresh pixel trace; no whole paired-mechanism certification.",
+    "Other profiles/hosts and all324edges, full B01, accessibility, source preservation, restore/_EXIT, founder acceptance and application/runtime/integratedPhase1 remain outside scope.",
+    "No external/Figma write, AI/MCP quota permission, new design scope, deployment or Git authorization follows."
+  ],
+  "review_method": [
+    "Verified18 exact frozen identities before and after; read producer sequence/inventory and three native AX fields plus current frozen governance/brief.",
+    "Inspected11 actual image files with view_image and independently decoded all11 locally with System.Drawing to distinguish saved bytes from partial tool emissions.",
+    "Initial rg glob form failed on Windows; corrected using rg -g without modifying files. No browser/Figma/network action or source/canonical/Git change; only this receipt written."
+  ],
+  "limitations": [
+    "PASS is this bounded evidence/claim-limit review only, not complete design/mechanism acceptance.",
+    "No capacity error occurred. DOING is not task DONE or commit."
+  ]
+}

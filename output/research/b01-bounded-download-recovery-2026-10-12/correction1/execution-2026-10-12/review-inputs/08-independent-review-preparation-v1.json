@@ -1,0 +1,79 @@
+{
+  "product": "Hengshi Design v1",
+  "verdict": "PASS",
+  "verdict_scope": "Correction1 prepared source only; BD01/BD02 closed at exact frozen corrected sources, not execution or pixel coverage.",
+  "reviewed_at_utc": "2026-10-12T04:37:07.732876+00:00",
+  "packet_binding": {
+    "manifest": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/review-inputs.json",
+    "sha256": "72eae64bacacd2741266549ecc87637ccc51b30b61c2c1ce516c5351be004282",
+    "verified_input_count": 18,
+    "all_snapshot_bytes_and_sha256_verified": true
+  },
+  "source_bindings": {
+    "proposal_sha256": "c72d3320a5b2033b0e6f5fc5e6048e4fc154f89217cbf187f56390accc0e4403",
+    "input_sha256": "0ec6d10eca296a9f6eb9ee0432589ca13ddf985577e479ee3a4e74a903677a88",
+    "prepare_body_sha256": "b924017b3fc6d25fb6e1fa8f51764a66146580830d0dc388d916e2884856a483",
+    "prepare_call_sha256": "e7529911bdbda5b7c259dfaef0eefb8d154020c0c91c03b2c7790aea30a790fe",
+    "cleanup_template_sha256": "a650c2281be8b3a260b8870141fd31b69dd38e0bdaa906bb65ab2699aeb75184",
+    "download_template_sha256": "c954197e514dff79dc59f9ab05b1617c0a8242c9f32d725bfd917039482331d8"
+  },
+  "native_parse_and_embedding": {
+    "prepare_and_cleanup_syntax": "PASS; vm.Script async wrappers compiled without producer invocation",
+    "prepare_exact_const_input_JSON_stringify_plus_body": true,
+    "all11_expected_units_and48_root_order_records_retained": true
+  },
+  "prior_review": {
+    "path": "../independent-review-preparation-v1.json",
+    "sha256": "651ee27186c7f21bb7b003afe2262fe01464ad195a2f8b65aab2e866d10e3c2a",
+    "original_verdict": "REVISE",
+    "original_sources_and_receipt_preserved": true
+  },
+  "resolved_findings": [
+    {
+      "id": "BD-01",
+      "disposition": "CLOSED for corrected prepared source",
+      "evidence": "After the final font await, cleanup rechecks exact temporary checksum/inventory/children/name/bounds/position/parent and original root/page/unit checksum/order/positions. Deletion roots are resolved solely from recorded cloneIds plus exact sheet. No subsequent await separates final guards and removal. Foreign-child fixture now refuses before deleting any node."
+    },
+    {
+      "id": "BD-02",
+      "disposition": "CLOSED for corrected prepared source",
+      "evidence": "After final font await, preparation repeats root parent/name/order and all expected unit/frame parent/name/dimension checks before baseline snapshots and creation. No subsequent await occurs. Source-size-change fixture now refuses rather than normalizing the change."
+    }
+  ],
+  "findings": [],
+  "synthetic_observations": {
+    "scope": "Actual extracted corrected post-font-await preparation guard and cleanup tail, using actual descriptor/checksum helpers against synthetic local nodes only.",
+    "foreign_child_during_cleanup_font_await": {
+      "verdict": "Temporary scope changed during await; inspect before cleanup",
+      "removed_ids": []
+    },
+    "unchanged_cleanup_scope": {
+      "verdict": "success",
+      "removed_ids": [
+        "clone",
+        "sheet"
+      ]
+    },
+    "source_width_changed_during_preparation_font_await": {
+      "refused_before_baseline_or_creation": true
+    },
+    "whole_Figma_producer_or_API_invoked": false,
+    "limits": "Fixtures establish the specific final-admission and deletion-root control flow only; real Figma concurrency, font/API/layout/download/cleanup and pixel result are unqualified."
+  },
+  "observations": [
+    "Correction changes are confined to final post-await admission checks and recorded-ID removal-root resolution, plus the explicitly bound download template/proposal references. Source selection, dimensions, clone tracking, failure cleanup, retained-success report and core bounded fingerprints remain unchanged.",
+    "Preparation retains at most one temporary3808x1996 comparison sheet with11 exact source units. It records sheet and clone references/IDs before configuration/reparenting. Pre-retention errors continue cleanup after individual removal failures. Success truthfully reports allTemporaryNodesRemoved=false/empty removal inventory and returns exact cleanupInput; it requests no screenshot.",
+    "Cleanup refuses changed/unknown scope after all awaited work and deletes only recorded clone roots plus guarded sheet. Individual removal errors are collected while later removals are attempted; any such error prevents a successful cleanup report. Original descriptors/root/order are checked in the same synchronous removal section.",
+    "64-bit checksum remains noncryptographic accidental-change detection; exact IDs/type/name/parent/dimensions/inventory constrain removal authority. It is not authentication, protection against malicious collisions or exhaustive appearance/editability proof.",
+    "The PNG1x single-node download template requires nonempty exact equality between returned comparisonSheetId and cleanupInput.sheetId, eleven known units and3808x1996 preparation bounds. It fetches only the returned export URL under32MiB/HTTPS/redirect controls and requires actual PNG signature/MIME/dimensions before crops; malformed or scaled output cannot be silently substituted.",
+    "Download or retrieval failure does not cancel the separate cleanup obligation. Founder must authorize the complete temporary cleanup obligation before preparation, while each call retains its applicable fresh permission and allowance exception. D085 and prior receipts do not release these three actions.",
+    "All11 recovered pixels and annotations still require independent result inspection after any approved download. Prepared metadata, parse, guards and synthetic fixtures do not supply missing pixel coverage or complete B01/native restore_EXIT/founder acceptance."
+  ],
+  "limits": [
+    "PASS is limited to18 frozen inputs and correction1 source. The initial REVISE receipt and vulnerable original sources remain historical evidence; this verdict does not retroactively pass them.",
+    "No preparation, download or cleanup producer executed against Figma. Dynamic download arguments and compiled cleanup const input still require exact binding/hash/syntax/size inspection from an actual successful preparation before applicable permission.",
+    "Changed-source refusal is bounded to stated structural and descriptor fields; no archival full-paint/editability/font-rights/prototype/canvas census is established. Parent order during retained success means relative originals excluding the intentional temporary sheet.",
+    "No actual native PNG, pixel equality, user interaction/accessibility mode, fonts/device/renderer qualification, independent live restoration, full B01/final exports/native archive/restore_EXIT or Phase1 acceptance follows.",
+    "No new call, automatic retry, paid activation, account/provider/model/permissions/settings/install/application/canonical/Git action or subagent occurred. Only this exclusive-create correction review receipt was written."
+  ]
+}

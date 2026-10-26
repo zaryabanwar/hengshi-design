@@ -1,0 +1,1797 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "sources": [
+    {
+      "key": "preparation",
+      "path": "output/research/b01-coverage-preparation-2026-10-06/coverage-preparation.json",
+      "bytes": 136211,
+      "sha256": "0f325a7de1c387b6a9ec257daea44600bca0c4eb3935a45618016a8a8d7b2ebc"
+    },
+    {
+      "key": "navigation",
+      "path": "output/research/b01-navigation-composition-2026-10-06/state-ledger.json",
+      "bytes": 23436,
+      "sha256": "f078e20b6fca5deec68a8876d83922d03064036aa797fb719cd6cae6d594da2b"
+    },
+    {
+      "key": "directory",
+      "path": "output/research/b01-directory-call19-2026-10-08/decoded-design-result.json",
+      "bytes": 72290,
+      "sha256": "71f198783593821c55291a8e9b6a1e896d35f7addb695245c08763dd225e0eda"
+    },
+    {
+      "key": "initial_reflow",
+      "path": "output/research/b01-text-reflow-2026-10-06/retry-11/provider-result.json",
+      "bytes": 10285,
+      "sha256": "ebeab3fbba0a07ca70a13fcd59f05bab30b0186d2134dde5a5c09771f520a27f"
+    },
+    {
+      "key": "matrix",
+      "path": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "bytes": 33807,
+      "sha256": "6fa43937ae5e590b31e4fc21ea9e1209d3bfcdf145a6698d2429125213166dec"
+    },
+    {
+      "key": "templates",
+      "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "bytes": 33498,
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb"
+    },
+    {
+      "key": "batch",
+      "path": "docs/phase-1-ui-reference-design/design-batch-plan.csv",
+      "bytes": 27984,
+      "sha256": "550d8de3c6860f74e09e8a53da52e24ca2874d94b705d11f6afd4745f0142d12"
+    },
+    {
+      "key": "ledger",
+      "path": "docs/phase-1-ui-reference-production/validation/mcp-call-ledger.csv",
+      "bytes": 11985,
+      "sha256": "80f9ed24eeb28a48bd586fce115ffc82ca71da3d5755842af7b564b69bde6389"
+    },
+    {
+      "key": "recovery_preparation",
+      "path": "output/research/b01-recovery-composition-preparation-2026-10-07/preparation.json",
+      "bytes": 3326,
+      "sha256": "50694f90c8c4d7bbd7c813f549dcadfe12d22d05bba00802c5c16b2c9fbf65e9"
+    },
+    {
+      "key": "navigation_inspection",
+      "path": "output/research/b01-navigation-recovery-2026-10-07/inspection.json",
+      "bytes": 5953,
+      "sha256": "7a9565290b92415bf050b8187844769e7506f6906a6209a18e315c1ff1dec7e8"
+    },
+    {
+      "key": "directory_review",
+      "path": "docs/phase-1-ui-reference-production/reviews/B01-directory-references-v1-2026-10-08.md",
+      "bytes": 2859,
+      "sha256": "400380b3b043d393e04088e722681daa3e36506d30b6c915fba1de397b2fde17"
+    },
+    {
+      "key": "brief",
+      "path": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "bytes": 8818,
+      "sha256": "22561d1e44937c2aa5897e2f783b36726fcb686e4360bbfe31f60b201b828810"
+    }
+  ],
+  "summary": {
+    "recorded_frames": 78,
+    "explicit_axis_frames": 72,
+    "required_stream_state_subset": 56,
+    "subset_with_recorded_names": 36,
+    "subset_without_recorded_names": 20
+  },
+  "recorded_frames": [
+    {
+      "source_family": "initial_reflow",
+      "node_id": "14:20",
+      "recorded_name": "B01 DRAFT / TPL-GLOBAL-NAVIGATION / 1440",
+      "width": 1440,
+      "height": 850,
+      "explicit_axis_binding": "not encoded by this recorded draft name; no inferred stream/state credit"
+    },
+    {
+      "source_family": "initial_reflow",
+      "node_id": "14:41",
+      "recorded_name": "B01 DRAFT / TPL-GLOBAL-NAVIGATION / 390",
+      "width": 390,
+      "height": 1292,
+      "explicit_axis_binding": "not encoded by this recorded draft name; no inferred stream/state credit"
+    },
+    {
+      "source_family": "initial_reflow",
+      "node_id": "14:62",
+      "recorded_name": "B01 DRAFT / TPL-DIRECTORY-SEARCH / 1440",
+      "width": 1440,
+      "height": 860,
+      "explicit_axis_binding": "not encoded by this recorded draft name; no inferred stream/state credit"
+    },
+    {
+      "source_family": "initial_reflow",
+      "node_id": "14:84",
+      "recorded_name": "B01 DRAFT / TPL-DIRECTORY-SEARCH / 390",
+      "width": 390,
+      "height": 972,
+      "explicit_axis_binding": "not encoded by this recorded draft name; no inferred stream/state credit"
+    },
+    {
+      "source_family": "initial_reflow",
+      "node_id": "14:106",
+      "recorded_name": "B01 DRAFT / TPL-SYSTEM-RECOVERY / 1440",
+      "width": 1440,
+      "height": 698,
+      "explicit_axis_binding": "not encoded by this recorded draft name; no inferred stream/state credit"
+    },
+    {
+      "source_family": "initial_reflow",
+      "node_id": "14:124",
+      "recorded_name": "B01 DRAFT / TPL-SYSTEM-RECOVERY / 390",
+      "width": 390,
+      "height": 818,
+      "explicit_axis_binding": "not encoded by this recorded draft name; no inferred stream/state credit"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:291",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1562,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:328",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1562,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-LOW"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:365",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1562,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:402",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1562,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:439",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1730,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:478",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1730,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-LOW"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:517",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1730,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:556",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1730,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:595",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1730,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:634",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1730,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-LOW"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:673",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1730,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:712",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1730,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:751",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1634,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:790",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1634,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-LOW"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:829",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1634,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:868",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1634,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:907",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 1440,
+      "height": 1034,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "viewport_id": "VP-DESKTOP",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:938",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 1440,
+      "height": 1034,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "viewport_id": "VP-DESKTOP",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-LOW"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:969",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 1440,
+      "height": 1034,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "viewport_id": "VP-DESKTOP",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:1000",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 1440,
+      "height": 1034,
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "viewport_id": "VP-DESKTOP",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:382",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2034,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:430",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2034,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:478",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2034,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-LOW"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:526",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2034,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:574",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_EMPTY_QUERY_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2034,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-EMPTY-QUERY",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:622",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_EMPTY_QUERY_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2034,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-EMPTY-QUERY",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:670",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_EMPTY_QUERY_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2034,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-EMPTY-QUERY",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-LOW"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:718",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_EMPTY_QUERY_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2034,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-EMPTY-QUERY",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:766",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_RESULTS_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2494,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-RESULTS",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:829",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_RESULTS_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2494,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-RESULTS",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:892",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_RESULTS_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2494,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-RESULTS",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-LOW"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:955",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_RESULTS_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2494,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-RESULTS",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1018",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_NO_RESULTS_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2106,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1068",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_NO_RESULTS_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2106,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1118",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_NO_RESULTS_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2106,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-LOW"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1168",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_NO_RESULTS_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2106,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1218",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_LOADING_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2130,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-LOADING",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1268",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_LOADING_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2130,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-LOADING",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1318",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_LOADING_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2130,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-LOADING",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-LOW"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1368",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_LOADING_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2130,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-LOADING",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1418",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_DERIVED_INDEX_UNAVAILABLE_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2202,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-DERIVED-INDEX-UNAVAILABLE",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1470",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_DERIVED_INDEX_UNAVAILABLE_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2202,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-DERIVED-INDEX-UNAVAILABLE",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1522",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_DERIVED_INDEX_UNAVAILABLE_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2202,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-DERIVED-INDEX-UNAVAILABLE",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-LOW"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1574",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_DERIVED_INDEX_UNAVAILABLE_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2202,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-DERIVED-INDEX-UNAVAILABLE",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1626",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OFFLINE_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1954,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OFFLINE",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1671",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OFFLINE_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1954,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OFFLINE",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1716",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OFFLINE_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1954,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OFFLINE",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-LOW"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1761",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OFFLINE_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1954,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OFFLINE",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1806",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2202,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-ERROR",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1858",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2202,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-ERROR",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1910",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2202,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-ERROR",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-LOW"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1962",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2202,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-ERROR",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2014",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STALE_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2466,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STALE",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2074",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STALE_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2466,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STALE",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2134",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STALE_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2466,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STALE",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-LOW"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2194",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STALE_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2466,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STALE",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2254",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2226,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2304",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2226,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2354",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2226,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-LOW"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2404",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2226,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2454",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2226,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2504",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2226,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2554",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2226,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-LOW"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2604",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2226,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2654",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2130,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2704",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2130,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2754",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2130,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-LOW"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2804",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2130,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2854",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 1440,
+      "height": 1658,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "viewport_id": "VP-DESKTOP",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2902",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 1440,
+      "height": 1658,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "viewport_id": "VP-DESKTOP",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2950",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 1440,
+      "height": 1658,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "viewport_id": "VP-DESKTOP",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-LOW"
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2998",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 1440,
+      "height": 1658,
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "viewport_id": "VP-DESKTOP",
+      "mode_id": "MODE-KEYBOARD",
+      "stream_id": "S-SEMANTIC"
+    }
+  ],
+  "stream_state_subset": [
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-HIGH",
+      "recorded_frame_ids": [
+        "21:291",
+        "21:907"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-LOW",
+      "recorded_frame_ids": [
+        "21:328",
+        "21:938"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-MEDIUM",
+      "recorded_frame_ids": [
+        "21:365",
+        "21:969"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-SEMANTIC",
+      "recorded_frame_ids": [
+        "21:402",
+        "21:1000"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-HIGH",
+      "recorded_frame_ids": [
+        "21:439"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-LOW",
+      "recorded_frame_ids": [
+        "21:478"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-MEDIUM",
+      "recorded_frame_ids": [
+        "21:517"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "recorded_frame_ids": [
+        "21:556"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-HIGH",
+      "recorded_frame_ids": [
+        "21:595"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-LOW",
+      "recorded_frame_ids": [
+        "21:634"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-MEDIUM",
+      "recorded_frame_ids": [
+        "21:673"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "recorded_frame_ids": [
+        "21:712"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-HIGH",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-LOW",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-MEDIUM",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-SEMANTIC",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-HIGH",
+      "recorded_frame_ids": [
+        "21:751"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-LOW",
+      "recorded_frame_ids": [
+        "21:790"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-MEDIUM",
+      "recorded_frame_ids": [
+        "21:829"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC",
+      "recorded_frame_ids": [
+        "21:868"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-HIGH",
+      "recorded_frame_ids": [
+        "27:1018"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-LOW",
+      "recorded_frame_ids": [
+        "27:1118"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-MEDIUM",
+      "recorded_frame_ids": [
+        "27:1068"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-SEMANTIC",
+      "recorded_frame_ids": [
+        "27:1168"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-HIGH",
+      "recorded_frame_ids": [
+        "27:382",
+        "27:2854"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-LOW",
+      "recorded_frame_ids": [
+        "27:478",
+        "27:2950"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-MEDIUM",
+      "recorded_frame_ids": [
+        "27:430",
+        "27:2902"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-SEMANTIC",
+      "recorded_frame_ids": [
+        "27:526",
+        "27:2998"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-HIGH",
+      "recorded_frame_ids": [
+        "27:2254"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-LOW",
+      "recorded_frame_ids": [
+        "27:2354"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-MEDIUM",
+      "recorded_frame_ids": [
+        "27:2304"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "recorded_frame_ids": [
+        "27:2404"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-HIGH",
+      "recorded_frame_ids": [
+        "27:2454"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-LOW",
+      "recorded_frame_ids": [
+        "27:2554"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-MEDIUM",
+      "recorded_frame_ids": [
+        "27:2504"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "recorded_frame_ids": [
+        "27:2604"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-HIGH",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-LOW",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-MEDIUM",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-SEMANTIC",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-HIGH",
+      "recorded_frame_ids": [
+        "27:2654"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-LOW",
+      "recorded_frame_ids": [
+        "27:2754"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-MEDIUM",
+      "recorded_frame_ids": [
+        "27:2704"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC",
+      "recorded_frame_ids": [
+        "27:2804"
+      ],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-HIGH",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-LOW",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-MEDIUM",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-SEMANTIC",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-HIGH",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-LOW",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-MEDIUM",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-HIGH",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-LOW",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-MEDIUM",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC",
+      "recorded_frame_ids": [],
+      "evidence_scope": "Name/axis correlation only; not pixel, interaction, applicability or complete profile proof"
+    }
+  ],
+  "profile_name_inventory": [
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "profile_id": "SP-NAVIGATION",
+      "required_values": [
+        "STATE-CLOSED",
+        "STATE-OPEN",
+        "STATE-LOADING",
+        "STATE-EMPTY-QUERY",
+        "STATE-NO-RESULTS",
+        "STATE-RESULTS",
+        "STATE-STALE",
+        "STATE-DERIVED-INDEX-UNAVAILABLE",
+        "STATE-OFFLINE",
+        "STATE-ERROR",
+        "STATE-FOCUS",
+        "STATE-STREAM-CHANGED",
+        "STATE-PREFERENCE-WRITE-FAILED",
+        "STATE-PREFERENCE-READ-FAILED",
+        "STATE-STREAM-CEILING-REFUSED"
+      ],
+      "recorded_name_values": [
+        "STATE-OPEN",
+        "STATE-PREFERENCE-READ-FAILED",
+        "STATE-PREFERENCE-WRITE-FAILED",
+        "STATE-STREAM-CHANGED"
+      ],
+      "values_not_encoded_in_recorded_names": [
+        "STATE-CLOSED",
+        "STATE-LOADING",
+        "STATE-EMPTY-QUERY",
+        "STATE-NO-RESULTS",
+        "STATE-RESULTS",
+        "STATE-STALE",
+        "STATE-DERIVED-INDEX-UNAVAILABLE",
+        "STATE-OFFLINE",
+        "STATE-ERROR",
+        "STATE-FOCUS",
+        "STATE-STREAM-CEILING-REFUSED"
+      ],
+      "minimum_evidence": "Closed/open navigation frames; empty/no-result/result/index-unavailable directory frames; keyboard focus-return prototype",
+      "critical_distinct_frame_values": "STATE-OPEN;STATE-NO-RESULTS;STATE-DERIVED-INDEX-UNAVAILABLE;STATE-OFFLINE;STATE-STREAM-CHANGED;STATE-PREFERENCE-WRITE-FAILED;STATE-PREFERENCE-READ-FAILED;STATE-STREAM-CEILING-REFUSED",
+      "limit": "Missing name is not proof that no annotation exists; only full governed profile adjudication can discharge a requirement"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "profile_id": "VP-PUBLIC",
+      "required_values": [
+        "VP-320",
+        "VP-NARROW",
+        "VP-LANDSCAPE",
+        "VP-TABLET",
+        "VP-DESKTOP",
+        "VP-WIDE",
+        "VP-ZOOM-400"
+      ],
+      "recorded_name_values": [
+        "VP-320",
+        "VP-DESKTOP"
+      ],
+      "values_not_encoded_in_recorded_names": [
+        "VP-NARROW",
+        "VP-LANDSCAPE",
+        "VP-TABLET",
+        "VP-WIDE",
+        "VP-ZOOM-400"
+      ],
+      "minimum_evidence": "Complete FRAME at VP-320 and VP-DESKTOP; responsive FRAME or ANNOTATION at every other value; content-stress evidence at VP-320 VP-LANDSCAPE and VP-ZOOM-400",
+      "critical_distinct_frame_values": "VP-320;VP-DESKTOP;VP-ZOOM-400",
+      "limit": "Missing name is not proof that no annotation exists; only full governed profile adjudication can discharge a requirement"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "profile_id": "MP-PUBLIC",
+      "required_values": [
+        "MODE-STANDARD",
+        "MODE-REDUCED-MOTION",
+        "MODE-LOW-POWER",
+        "MODE-SEMANTIC-SHELL",
+        "MODE-FORCED-COLORS",
+        "MODE-GRAYSCALE",
+        "MODE-UNAVAILABLE-FONT",
+        "MODE-UNAVAILABLE-IMAGE-ASSET",
+        "MODE-PRINT",
+        "MODE-KEYBOARD",
+        "MODE-SCREEN-READER"
+      ],
+      "recorded_name_values": [
+        "MODE-KEYBOARD"
+      ],
+      "values_not_encoded_in_recorded_names": [
+        "MODE-STANDARD",
+        "MODE-REDUCED-MOTION",
+        "MODE-LOW-POWER",
+        "MODE-SEMANTIC-SHELL",
+        "MODE-FORCED-COLORS",
+        "MODE-GRAYSCALE",
+        "MODE-UNAVAILABLE-FONT",
+        "MODE-UNAVAILABLE-IMAGE-ASSET",
+        "MODE-PRINT",
+        "MODE-SCREEN-READER"
+      ],
+      "minimum_evidence": "Standard frames plus focused mode evidence; forced-colors/grayscale/font/asset/print captures; keyboard path and screen-reader semantic annotation",
+      "critical_distinct_frame_values": "MODE-STANDARD;MODE-FORCED-COLORS;MODE-PRINT;MODE-UNAVAILABLE-IMAGE-ASSET",
+      "limit": "Missing name is not proof that no annotation exists; only full governed profile adjudication can discharge a requirement"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "profile_id": "SP-NAVIGATION",
+      "required_values": [
+        "STATE-CLOSED",
+        "STATE-OPEN",
+        "STATE-LOADING",
+        "STATE-EMPTY-QUERY",
+        "STATE-NO-RESULTS",
+        "STATE-RESULTS",
+        "STATE-STALE",
+        "STATE-DERIVED-INDEX-UNAVAILABLE",
+        "STATE-OFFLINE",
+        "STATE-ERROR",
+        "STATE-FOCUS",
+        "STATE-STREAM-CHANGED",
+        "STATE-PREFERENCE-WRITE-FAILED",
+        "STATE-PREFERENCE-READ-FAILED",
+        "STATE-STREAM-CEILING-REFUSED"
+      ],
+      "recorded_name_values": [
+        "STATE-DERIVED-INDEX-UNAVAILABLE",
+        "STATE-EMPTY-QUERY",
+        "STATE-ERROR",
+        "STATE-LOADING",
+        "STATE-NO-RESULTS",
+        "STATE-OFFLINE",
+        "STATE-OPEN",
+        "STATE-PREFERENCE-READ-FAILED",
+        "STATE-PREFERENCE-WRITE-FAILED",
+        "STATE-RESULTS",
+        "STATE-STALE",
+        "STATE-STREAM-CHANGED"
+      ],
+      "values_not_encoded_in_recorded_names": [
+        "STATE-CLOSED",
+        "STATE-FOCUS",
+        "STATE-STREAM-CEILING-REFUSED"
+      ],
+      "minimum_evidence": "Closed/open navigation frames; empty/no-result/result/index-unavailable directory frames; keyboard focus-return prototype",
+      "critical_distinct_frame_values": "STATE-OPEN;STATE-NO-RESULTS;STATE-DERIVED-INDEX-UNAVAILABLE;STATE-OFFLINE;STATE-STREAM-CHANGED;STATE-PREFERENCE-WRITE-FAILED;STATE-PREFERENCE-READ-FAILED;STATE-STREAM-CEILING-REFUSED",
+      "limit": "Missing name is not proof that no annotation exists; only full governed profile adjudication can discharge a requirement"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "profile_id": "VP-INTERACTIVE",
+      "required_values": [
+        "VP-320",
+        "VP-NARROW",
+        "VP-LANDSCAPE",
+        "VP-TABLET",
+        "VP-DESKTOP",
+        "VP-WIDE",
+        "VP-ZOOM-400"
+      ],
+      "recorded_name_values": [
+        "VP-320",
+        "VP-DESKTOP"
+      ],
+      "values_not_encoded_in_recorded_names": [
+        "VP-NARROW",
+        "VP-LANDSCAPE",
+        "VP-TABLET",
+        "VP-WIDE",
+        "VP-ZOOM-400"
+      ],
+      "minimum_evidence": "Complete FRAME at VP-320 VP-LANDSCAPE and VP-DESKTOP; interaction annotations and error-summary/focus evidence at all values",
+      "critical_distinct_frame_values": "VP-320;VP-LANDSCAPE;VP-DESKTOP;VP-ZOOM-400",
+      "limit": "Missing name is not proof that no annotation exists; only full governed profile adjudication can discharge a requirement"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "profile_id": "MP-INTERACTIVE",
+      "required_values": [
+        "MODE-STANDARD",
+        "MODE-REDUCED-MOTION",
+        "MODE-LOW-POWER",
+        "MODE-SEMANTIC-SHELL",
+        "MODE-FORCED-COLORS",
+        "MODE-GRAYSCALE",
+        "MODE-UNAVAILABLE-FONT",
+        "MODE-UNAVAILABLE-IMAGE-ASSET",
+        "MODE-PRINT",
+        "MODE-KEYBOARD",
+        "MODE-SCREEN-READER"
+      ],
+      "recorded_name_values": [
+        "MODE-KEYBOARD"
+      ],
+      "values_not_encoded_in_recorded_names": [
+        "MODE-STANDARD",
+        "MODE-REDUCED-MOTION",
+        "MODE-LOW-POWER",
+        "MODE-SEMANTIC-SHELL",
+        "MODE-FORCED-COLORS",
+        "MODE-GRAYSCALE",
+        "MODE-UNAVAILABLE-FONT",
+        "MODE-UNAVAILABLE-IMAGE-ASSET",
+        "MODE-PRINT",
+        "MODE-SCREEN-READER"
+      ],
+      "minimum_evidence": "Standard and critical state frames; forced-color and font/asset captures; keyboard prototype; screen-reader specification; printable summary where applicable",
+      "critical_distinct_frame_values": "MODE-STANDARD;MODE-FORCED-COLORS;MODE-KEYBOARD;MODE-SCREEN-READER",
+      "limit": "Missing name is not proof that no annotation exists; only full governed profile adjudication can discharge a requirement"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "profile_id": "SP-SYSTEM-RECOVERY",
+      "required_values": [
+        "STATE-LOADING",
+        "STATE-DEGRADED",
+        "STATE-EMPTY",
+        "STATE-PENDING",
+        "STATE-UNAVAILABLE",
+        "STATE-OFFLINE",
+        "STATE-ERROR",
+        "STATE-PERMISSION-DENIED",
+        "STATE-SESSION-EXPIRED",
+        "STATE-STALE",
+        "STATE-CONFLICT",
+        "STATE-ASSET-FAILURE",
+        "STATE-CHECKSUM-MISMATCH",
+        "STATE-FOCUS",
+        "STATE-STREAM-CHANGED",
+        "STATE-PREFERENCE-WRITE-FAILED"
+      ],
+      "recorded_name_values": [],
+      "values_not_encoded_in_recorded_names": [
+        "STATE-LOADING",
+        "STATE-DEGRADED",
+        "STATE-EMPTY",
+        "STATE-PENDING",
+        "STATE-UNAVAILABLE",
+        "STATE-OFFLINE",
+        "STATE-ERROR",
+        "STATE-PERMISSION-DENIED",
+        "STATE-SESSION-EXPIRED",
+        "STATE-STALE",
+        "STATE-CONFLICT",
+        "STATE-ASSET-FAILURE",
+        "STATE-CHECKSUM-MISMATCH",
+        "STATE-FOCUS",
+        "STATE-STREAM-CHANGED",
+        "STATE-PREFERENCE-WRITE-FAILED"
+      ],
+      "minimum_evidence": "Reusable focused frames for each class on light/dark/forced-color surfaces; route/flow host retains context",
+      "critical_distinct_frame_values": "STATE-PENDING;STATE-UNAVAILABLE;STATE-OFFLINE;STATE-ERROR;STATE-PERMISSION-DENIED;STATE-CHECKSUM-MISMATCH;STATE-STREAM-CHANGED;STATE-PREFERENCE-WRITE-FAILED",
+      "limit": "Missing name is not proof that no annotation exists; only full governed profile adjudication can discharge a requirement"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "profile_id": "VP-INTERACTIVE",
+      "required_values": [
+        "VP-320",
+        "VP-NARROW",
+        "VP-LANDSCAPE",
+        "VP-TABLET",
+        "VP-DESKTOP",
+        "VP-WIDE",
+        "VP-ZOOM-400"
+      ],
+      "recorded_name_values": [],
+      "values_not_encoded_in_recorded_names": [
+        "VP-320",
+        "VP-NARROW",
+        "VP-LANDSCAPE",
+        "VP-TABLET",
+        "VP-DESKTOP",
+        "VP-WIDE",
+        "VP-ZOOM-400"
+      ],
+      "minimum_evidence": "Complete FRAME at VP-320 VP-LANDSCAPE and VP-DESKTOP; interaction annotations and error-summary/focus evidence at all values",
+      "critical_distinct_frame_values": "VP-320;VP-LANDSCAPE;VP-DESKTOP;VP-ZOOM-400",
+      "limit": "Missing name is not proof that no annotation exists; only full governed profile adjudication can discharge a requirement"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "profile_id": "MP-INTERACTIVE",
+      "required_values": [
+        "MODE-STANDARD",
+        "MODE-REDUCED-MOTION",
+        "MODE-LOW-POWER",
+        "MODE-SEMANTIC-SHELL",
+        "MODE-FORCED-COLORS",
+        "MODE-GRAYSCALE",
+        "MODE-UNAVAILABLE-FONT",
+        "MODE-UNAVAILABLE-IMAGE-ASSET",
+        "MODE-PRINT",
+        "MODE-KEYBOARD",
+        "MODE-SCREEN-READER"
+      ],
+      "recorded_name_values": [],
+      "values_not_encoded_in_recorded_names": [
+        "MODE-STANDARD",
+        "MODE-REDUCED-MOTION",
+        "MODE-LOW-POWER",
+        "MODE-SEMANTIC-SHELL",
+        "MODE-FORCED-COLORS",
+        "MODE-GRAYSCALE",
+        "MODE-UNAVAILABLE-FONT",
+        "MODE-UNAVAILABLE-IMAGE-ASSET",
+        "MODE-PRINT",
+        "MODE-KEYBOARD",
+        "MODE-SCREEN-READER"
+      ],
+      "minimum_evidence": "Standard and critical state frames; forced-color and font/asset captures; keyboard prototype; screen-reader specification; printable summary where applicable",
+      "critical_distinct_frame_values": "MODE-STANDARD;MODE-FORCED-COLORS;MODE-KEYBOARD;MODE-SCREEN-READER",
+      "limit": "Missing name is not proof that no annotation exists; only full governed profile adjudication can discharge a requirement"
+    }
+  ],
+  "limits": [
+    "Recorded provider/reference receipts only, not a fresh Figma canvas read",
+    "Six generic draft names receive no invented explicit-axis credit",
+    "56 requirements are the stream/state focus subset, not complete B01 obligations or a Cartesian-product frame count",
+    "Names and counts prove no pixel acceptance, prototype, focus, accessibility, browser/device behavior or full profile adjudication",
+    "Prepared48 recovery grammar specimens are unexecuted and explicitly not full host/stream/profile coverage",
+    "No external call, design change, production UI, package/runtime adoption, Git action, B01 EXIT, later-batch release or Phase1 acceptance"
+  ]
+}

@@ -1,48 +1,50 @@
 schema_version: 2
-last_updated: "2026-09-24"
+last_updated: "2026-10-26"
 project: Hengshi Design
 status: DOING
-phase: 1
-required_reading:
-  - AGENTS.md
+phase: 1 # Historical definition phase; D-097 incremental delivery now controls
+required_reading: [AGENTS.md]
 engineering_contract: AGENTS.md
-current_work: PROJECT_STATE.yaml
+current_work: docs/software-definition/05-consolidated-goal.md
 checkpoint:
   branch: main
-  base_head: 3d767cf95f5803d679c6fd53875c6497ddc96d0f
+  base_head: 378b506
   historical_state: docs/archive/PROJECT_STATE-2026-09-23-pre-recovery.yaml
-  working_tree: bounded_B02_recovery_state_validation
-  runtime: not_started_documentation_slice
-  application_code_changed_this_slice: false
-  commit_authorized: true
+  working_tree: approved_baselines_and_phase1_reconciliation_uncommitted
+  application_code_changed_this_slice: true
+  commit_authorized: false
 current_task:
-  id: STREAM-RECOVERY-STATE-VALIDATION
-  outcome: Required recovery states cannot silently disappear from frame obligations
-  status: DONE
-  authority: founder_correct_and_continue_2026_09_24_and_standing_commit_push_approval
-  implementation: scripts/validation/ui-stream-mapping.ps1
-  regression_test: scripts/validation/test-ui-stream-mapping.ps1
-  verification:
-    mapping_and_frame_checks: 987_pass_0_fail
-    base_frame_obligations: 440
-    design_validator: 208_pass_0_fail
-    production_validator: 167_pass_0_fail
+  id: HSD-002
+  outcome: HSD-002 implemented and locally verified2026-10-26 against founder-accepted designs/copy; all16 canonical Services routes and combined16 Chromium tests pass; richer approved-brand colour/graphics deferred until functional delivery; DOING pending approved commit
+  status: DOING
+  authority: D064_D065_D066_D067_D068_deferred_cloud_D069_v1_D070_entity_market_D071_layout_basis_D072_bounded_dev_CI_lint_exception_D073_single_empty_Figma_bootstrap_D074_QA_one_word_revision_exception_D075_B01_execution_organisation_D076_visitor_idle_EU_privacy_disclosure_and_demo_data_D077_temporary_evaluated_Three184_pair_D078_timing_successor_D079_single_call_exception_D080_refusal_call_exception_D081_pixel_export_exception_D082_combined_grammar_call_exception_D083_responsive_call_exception_D084_mode_call_exception_D085_existing_unit_export_exception_D086_three_call_recovery_batch_D087_read_only_diagnosis_D088_exact_diagnostic_retry_D089_OAuth_retry_and_replacement_review_D090_included_Figma_web_agent_D091_single_browser_cleanup_D092_explicit_directory_overlay_D093_accepted_source_binding_successor_D094_expanded_native_qualification_D095_MCP_computer_use_Design_agent_Make_routing_D096_bounded_pip_temporary_lifecycle_D097_incremental_AI_delivery_no_hard_revision_cap
+  prior_definition_evidence:
+    foundation: PASS
+    ux: 113_pass_0_fail_35_routes
+    stream_artifact_regression: 1026_checks_440_frame_obligations_PASS
+    design_artifacts: 212_pass_1_cumulative_worktree_scope_guard
+    production_artifacts: 172_pass_1_cumulative_worktree_scope_guard
+    compatibility: "Archive15/resource25/environment20 reviews retain bounded PASS. Read-only Windows tree_measurement.py now has focused correction PASS at output/research/python-filesystem-preparation-2026-10-24/independent-review-correction-v1.json;14 tests pass on existingPython3.14.5. TREE01 root-work bound repaired; original REVISE retained. Default-stream/free-byte snapshot only, no exclusive ownership, race-proof containment or alternate-stream accounting. All14 stage vectors unexecuted. D096 accepts pip-owned TEMP lifecycle only. Complete ownership/acquisition/extraction/process/offline controls, concrete stable graph refresh/reviews, fresh disk and explicit trial approval remain; no installation or graph selection."
+    independent_review: "All9 previously pending exact packets now have separate bounded PASS receipts: catalogue10, staff-data13, privacy15, World13, Oct17 browser25, archive15, resource/argv25, environment20 and staff-token16. Current Oct24 playback18 also has bounded saved-evidence PASS. Preserved input aliases bind all historical scopes; no legal/security clearance, full graph/native matching/runtime or integrated adoption. Two-document visual/navigation reconciliation has separate18-input bounded PASS at output/research/definition-review-navigation-2026-10-24/independent-review-v1.json; twelve current link/anchor targets and desktop pixels inspected."
+    column_authority: D093_reviewed_D092_source_binding_successor_accepted_canonical_1146_record_approval_verifier_PASS_no_runtime_proof
+    architecture: Reviewed_baseline_accepted_D065_navigation_amended_D064
+    world_definition: "World13 capability/workload definition has bounded independent PASS at output/research/world-capability-workloads-2026-10-17/independent-review-v1.json: six recipes, one bounded observation; no runner/model/device fitness. U03 numerical classifier and physical calibration, initial-paint/profile/rights/geometry/control references remain. D071 accepts composition only; normal model revision cycles consumed. Current targets remain unmeasured."
+    publication_schema: PASS_envelope_error_private_preparation_scene_descriptor_visual_resource_map_client_catalogue_HTML_binding_and_collision_map_and_directional_availability_write_and_common_value_shape_tooling_no_ingress_HTML_parser_HTTP_compiler_inspector_resolver_worker_coordinator_loader_mover_or_activation_runtime_proof
+    contract_reviews: "Prior scoped session/operator/control PASS retained. Catalogue10/staff-data13/privacy15/staff-token16 now have separate exact-input independent PASS at their Oct17 packet folders/independent-review-v1.json. Staff-header8 representation methods pass, no key/crypto operation. Canonical owner adoption, physical clocks/custody/transactions/provider mapping, lawful basis and policy acceptance/runtime proof remain held."
+    feature_reconciliation: "Security rights/incident bindings retain their22-input bounded PASS. Later World26-input and content29-input binding reviews, and QA17-input reference/review-label review, have bounded PASS at output/research/world-feature-binding-2026-10-12/, content-feature-binding-2026-10-12/ and qa-feature-reference-reconciliation-2026-10-12/. specs/README.md links exact receipts. No whole-feature adoption, extra QA revision authority, runtime or integrated acceptance; latest index/checkpoint links are outside frozen review inputs."
+    visual_definition: "233 authored planned edges/91 remaining: Navigation108 and Directory108 now wired, Recovery17 includes separately unqualified choice. Navigation original-result and resumed16-capture replay have separate bounded independent PASS. Directory exact source preparation PASS and14 synthetic methods; live one-call APPLIED108/no new nodes, native PRE+POST CRC pass and23 captures support static query context through all four mode Apply results. Directory result has bounded independent PASS at output/research/b01-directory-batch-preparation-2026-10-24/independent-review-result-v1.json; saved-byte interpretation correction preserves original captures. No exhaustive/all-entry behavior, exact scroll/focus, full matching, restore, accessibility or B01 acceptance."
+    prototype_viewer: Model_three_views_PASS_native_Web_API_Postgres_admin_signin_and_guide_review_PASS_R003_R004_R005_open
     whitespace: PASS
-    public_templates_four_streams: 30
-    world_templates_three_streams: 4
-    staff_templates_excluded_with_evidence_scope: 6
-  independent_review: DONE
-  finding_status: { B04_definition: DONE, B02: DOING }
-  prior_review_gate: MA-029
-  design_review: docs/phase-1-ui-reference-design/reviews/design-review-iteration-6.md
-  accessibility_review: docs/phase-1-ui-reference-design/accessibility/accessibility-audit-iteration-5.md
-  unverified_work: B02_batch_requirement_trace_and_acceptance_coverage_other_D045_findings_runtime_accessibility
-  commit: enclosing_commit
-  manual_action: MANUAL_ACTIONS.md
-next_safe_action: Reconcile B02 recovery-state evidence in design and production batch plans
+  remaining_work: I1_brand_foundations_then_I2_complete_2D_content_then_I3_2D_services_then_I4_full_3D_then_I5_launch
+  unresolved_legal_copy: "D076 disclosure/contact deferrals and prior EU-retention8/company-public13 PASS retained. Privacy15 purpose/notice-family/copy registry now has bounded engineering-consistency PASS; no issued notice, legal clearance, exact basis/period adoption or physical recipient/copy qualification. Dedicated alias ownership remains deliberately undecided; no collection/publication permission."
+  prior_review_gate: MA029_definition_quality_closed_D061
+  manual_action: MANUAL_ACTIONS.md # MA-031 acceptance resolved D065; B01 and legal gates remain
+previous_slice:
+  accepted_fixes: "R044/D051/D052 prior reviewed fixes retained; latest rights/incident feature bindings have bounded PASS, uncommitted and not accepted. Pre-update checkpoint: output/research/checkpoint-reconciliation-2026-10-09/PROJECT_STATE.before.yaml."
+next_safe_action: "Return HSD-002 result to discussion; stop and await founder assignment. Working built preview http://127.0.0.1:5174/services. New build/typecheck and16 Chromium tests PASS (9 homepage regressions+7 Services); initialHTML/noJS all16 routes, all5wing/10service journeys, keyboard/focus,1440/320 reflow, empty evidence,404 and redirects verified; representative axe0 violations, no certification. Screenshots artifacts/hsd-002/local-implementation; accepted Figma262:4660/4767,4903/4980,5072/5161 in fileGOmLP6Cv96l768ueSrZ5Dg. Richer colour/graphics deferred per founder, tracked in TASKS. Booking/other destinations/publication/production graph remain unimplemented or unqualified. Commit/push/deployment/goal changes not authorized."
 boundaries:
-  figma_calls: explicit_per_call_approval_required
-  figma_production: B01_held
-  application_features: Phase_1_acceptance_required
-  commits_and_pushes: explicit_approval_required
+  figma_calls: "2026-10-26 HSD-002 fresh check: MCP Starter limit reached; whoami Full Starter verified. Design agent disabled/out of AI credits untilNov1. Native editing used; six additive editable text/vector references created, scoped defects corrected and six full-resolution exports inspected. Existing references preserved; no paid activation, repeated quota retry, settings/auth/sharing change."
+  figma_production: D075_execution_approved_PRE_verified_six_initial_drafts_20_navigation_views_inspected_directory52_views2_components_created15_input_source_structure_two_scaled_preview_independent_bounded_PASS_attempt22_all52_full_resolution_pixels_96_input_independent_bounded_PASS_missing_states_complete_profiles_interaction_review_restore_EXIT_acceptance_held
+  application_features: D097_relevant_increment_definition_design_contracts_compatibility_and_user_assignment_required
+  commits_and_pushes: deferred_by_founder
   external_writes: existing_scope_and_approval_required

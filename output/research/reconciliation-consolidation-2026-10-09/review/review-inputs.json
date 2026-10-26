@@ -1,0 +1,541 @@
+{
+  "status": "DOING",
+  "revision_cycle": 0,
+  "scope": "Reconciliation-map navigation consolidation and one README reference segment",
+  "inputs": [
+    {
+      "path": "docs/software-definition/04-reconciliation-map.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/software-definition/04-reconciliation-map.md",
+      "sha256": "9e9e0603c90a219d172d650720c71a5a0a49fe299499c4b76492a61617c5a71b",
+      "bytes": 26655
+    },
+    {
+      "path": "docs/software-definition/README.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/software-definition/README.md",
+      "sha256": "462c0d1dcc966f84bc961cee8cbcaec55f5f3ea3bbc170662c7a0702344feefa",
+      "bytes": 7670
+    },
+    {
+      "path": "AGENTS.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/AGENTS.md",
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "bytes": 7686
+    },
+    {
+      "path": ".specify/memory/constitution.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/.specify/memory/constitution.md",
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "bytes": 16234
+    },
+    {
+      "path": "PROJECT.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/PROJECT.md",
+      "sha256": "a483bd2713fe420322772ab7fb07c848aaf103088697c05ab91f35d2e5ea1461",
+      "bytes": 10942
+    },
+    {
+      "path": "DECISIONS.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/DECISIONS.md",
+      "sha256": "dd31d6026aedd1a03e966e055724b2f02783147291525f1740341848837eed74",
+      "bytes": 86352
+    },
+    {
+      "path": "TASKS.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/TASKS.md",
+      "sha256": "590da697f0da1c2bc38f648d53dd9be8fe2bec0df0dc209ab9adf5af5f050c21",
+      "bytes": 6728
+    },
+    {
+      "path": "PROJECT_STATE.yaml",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/PROJECT_STATE.yaml",
+      "sha256": "ca8ed5825769b5007835c9b44d3a4e7b4ebd1cba120340686d017686b3a64270",
+      "bytes": 8776
+    },
+    {
+      "path": "docs/software-definition/05-consolidated-goal.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/software-definition/05-consolidated-goal.md",
+      "sha256": "184a8fc6e01acd24b5958ddf7369d22074f1693cfb18ace75d398af45c6ea536",
+      "bytes": 4363
+    },
+    {
+      "path": "output/research/reconciliation-consolidation-2026-10-09/before/04-reconciliation-map.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/output/research/reconciliation-consolidation-2026-10-09/before/04-reconciliation-map.md",
+      "sha256": "f2d4d238ee1c38d0f06df76fec500ca3cc25805b80dca0129f13eb410af3639c",
+      "bytes": 94449
+    },
+    {
+      "path": "docs/phase-1-3d/CAMPUS_ASSET_BUILD_SPEC.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-3d/CAMPUS_ASSET_BUILD_SPEC.md",
+      "sha256": "6bc678ad54e173bb7754fe360ebfd2df53feda4e3e99cbba28128cf49610f8b5",
+      "bytes": 45163
+    },
+    {
+      "path": "docs/phase-1-foundation/README.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-foundation/README.md",
+      "sha256": "c880386e27f304d12818ef69837cb797e3b0acd420955f6dc5a0e5aeb2580a00",
+      "bytes": 10417
+    },
+    {
+      "path": "docs/phase-1-brand-identity/README.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-brand-identity/README.md",
+      "sha256": "3aece7c7a1c1de5a9dfbd4164636d1b7755f43745e8032afd5ef84f0306a0e8f",
+      "bytes": 5558
+    },
+    {
+      "path": "docs/phase-1-ux-architecture/FLOWS.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-ux-architecture/FLOWS.md",
+      "sha256": "168015a15b51c03cdf1f1532572d7b45c397708651c579c3e1e2025d5ee27097",
+      "bytes": 29631
+    },
+    {
+      "path": "docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md",
+      "sha256": "fa3322d864dc8c29d2f7853d6dc9a961126f7a8aea2b575505997d05c3297064",
+      "bytes": 24105
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/README.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-ui-reference-design/README.md",
+      "sha256": "7be1fd2c5c105a64440ff2be269248641031252f93430a0074ab2bf8d766e03f",
+      "bytes": 13962
+    },
+    {
+      "path": "docs/phase-1-ui-reference-production/README.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-ui-reference-production/README.md",
+      "sha256": "cda2aa273925c509efebb3b6f1f1b916f8b792801b14425e2c8699e8d6ae6778",
+      "bytes": 12768
+    },
+    {
+      "path": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "sha256": "f0b484ba7c3132e0a7c1328392fc464f8387e54946d0c38a8f2e04b22549a813",
+      "bytes": 12521
+    },
+    {
+      "path": "docs/phase-1-architecture/ARCHITECTURE.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/ARCHITECTURE.md",
+      "sha256": "44717f73094e5ffae24758c09cc710e3d0282b371c2fce23d5098cf36cfb6363",
+      "bytes": 10762
+    },
+    {
+      "path": "docs/phase-1-architecture/MOVEMENT_STREAMING_ADDENDUM.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/MOVEMENT_STREAMING_ADDENDUM.md",
+      "sha256": "0e6bbf4a51a9d44c8e47fb84fe222e1bdbbca4c93b3b70c827671e8eef48e71a",
+      "bytes": 4802
+    },
+    {
+      "path": "docs/phase-1-3d/WORLD_EXPERIENCE.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-3d/WORLD_EXPERIENCE.md",
+      "sha256": "04728adeaa1daed03ddc50b438ad5c29fda002c1e30d13955bd60c9500c39a16",
+      "bytes": 46042
+    },
+    {
+      "path": "docs/phase-1-3d/SPATIAL_STORYBOARD.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-3d/SPATIAL_STORYBOARD.md",
+      "sha256": "9bd40190e7ca46e0132023234647ae7172fa792fc762f7fb695638f2201c3416",
+      "bytes": 20385
+    },
+    {
+      "path": "docs/phase-1-3d/SCENE_ASSEMBLY_CONTRACT.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-3d/SCENE_ASSEMBLY_CONTRACT.md",
+      "sha256": "9ea40bf17374c7c71c557089db2c729085ce796d46c0e66666e5374144b9df7f",
+      "bytes": 46279
+    },
+    {
+      "path": "docs/phase-1-3d/gltf-resource-map.schema.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-3d/gltf-resource-map.schema.json",
+      "sha256": "8d5cece4c921823c96e02c8f35707d991f391f560d261dcf2d9ff07e8c9fd939",
+      "bytes": 3015
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "sha256": "9803368522b960485b6f31994d8b6a0c79783c68fe0fc18fcc4675afb08e83d7",
+      "bytes": 88043
+    },
+    {
+      "path": "docs/phase-1-3d/collision-resource-map.schema.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-3d/collision-resource-map.schema.json",
+      "sha256": "8d1d955526c33391ecccf483c7904f16fda0aa91617017873a95a51a581b9cea",
+      "bytes": 2098
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/client-build-catalogue.schema.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/client-build-catalogue.schema.json",
+      "sha256": "0395dc483f3baebbaadcbf61a7a511d40a70c69c5215cd52e9d7b17c72f9885f",
+      "bytes": 4875
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/public-html-binding.schema.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/public-html-binding.schema.json",
+      "sha256": "a83c68a6bfd8f68f2a68e51ef466d90440b1f993a76264a235557574e118c364",
+      "bytes": 1042
+    },
+    {
+      "path": "docs/software-definition/definition-walkthrough.html",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/software-definition/definition-walkthrough.html",
+      "sha256": "283a5215084ac9e7ada2055fc62da661ebda2b141406b8d4b1ae004af6b1d9ca",
+      "bytes": 98645
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "sha256": "a26b9f8a2323444bce7787f2a47e7542b176f200714ea6ea7ad2e8312567a1dd",
+      "bytes": 110840
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "sha256": "f55f0ddb83445c4651608c24b4f06ee8d34c9586f1e0777aae1645be5151724c",
+      "bytes": 53459
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "sha256": "12314d8567e4f4c0f63c944aae6caa09657240bf40042191b983f4be5b6599ae",
+      "bytes": 116413
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/chat-creation-request.schema.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/chat-creation-request.schema.json",
+      "sha256": "4d8d3461abc3d1db015a5d0537c663781a6a193eb1f2bcc92ec37f684076c5d1",
+      "bytes": 2667
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+      "sha256": "b2b06e915c81083a40be58f3a641991862371f2d117effb2716e098116aed364",
+      "bytes": 50683
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/chat-transport-current-v1-2026-10-07.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/reviews/chat-transport-current-v1-2026-10-07.md",
+      "sha256": "38b00d317dfa663fbc6587b280e6d88645fa1b2be9849513be7a67beb7b39cf1",
+      "bytes": 4325
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/chat-creation-response.schema.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/chat-creation-response.schema.json",
+      "sha256": "49f804d116960d24fac38378fd2ade6fe4cd17f5eff86069d00ed2e5817baf7f",
+      "bytes": 2093
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/chat-creation-consent-v1-2026-10-06.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/reviews/chat-creation-consent-v1-2026-10-06.md",
+      "sha256": "fce9d4409228345636dab9af4a8d9722b0339004712e682c6a5b05d3e9d4a90a",
+      "bytes": 4229
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/chat-consent.schema.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/chat-consent.schema.json",
+      "sha256": "3288aa45030cb5ccc604ef0531684036272b00957ab393302a3a17016c763f8d",
+      "bytes": 3593
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/chat-event-control.schema.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/chat-event-control.schema.json",
+      "sha256": "640718a84d9ca5eeb09517e9bbd73a0163c6e4ba06d7caeeabb4434e899931ae",
+      "bytes": 3380
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/chat-event-control-v1-2026-10-06.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/reviews/chat-event-control-v1-2026-10-06.md",
+      "sha256": "e0155faca9888ffe15081147b35d84bee1866e07d39ba1996a9b6baa6e5f7f6c",
+      "bytes": 3627
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/visitor-lifetime-control.schema.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/visitor-lifetime-control.schema.json",
+      "sha256": "12fa2c7d2854d1ee0a4b234b1ba72958b988611f7b794512d9a801389580d2d0",
+      "bytes": 11565
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/visitor-lifetime-controls-v1-2026-10-07.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/reviews/visitor-lifetime-controls-v1-2026-10-07.md",
+      "sha256": "a54f91d14cc9b32ca5cb4caff1bbbe90235f4c0b75ed73554ce5e29187008adc",
+      "bytes": 6106
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/visitor-proof-encoding-v1-2026-10-07.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/reviews/visitor-proof-encoding-v1-2026-10-07.md",
+      "sha256": "7d0fdb15caeaebdb5bd2a26a01067058f90e11ec83e2565406810f840119a8c4",
+      "bytes": 3894
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/chat-text.schema.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/chat-text.schema.json",
+      "sha256": "0c674077b0c6b2ade677a88a3a9bddd1e636da840866f3d19345fa0eaebf3f31",
+      "bytes": 7450
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/chat-text-v1-2026-10-06.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/reviews/chat-text-v1-2026-10-06.md",
+      "sha256": "58bbf6218e15fbe3a3c38729d361b41231a88ebab8f30cb70ce027f7ac6e7dea",
+      "bytes": 4399
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "sha256": "40a3779f56737725bb2c5e5d5a5ee34b44ad27030adc16cc374fdb9b04266a12",
+      "bytes": 89614
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/staff-chat-text.schema.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/staff-chat-text.schema.json",
+      "sha256": "b148b8c62d96624484c0205c58195994d210e4b3ae0356370268c49a1ac8c95e",
+      "bytes": 6048
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/staff-chat-control.schema.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/staff-chat-control.schema.json",
+      "sha256": "af6304f0353b8e608076b9595cad050b418c7b00f3c88a6dc29efc3eaa09632c",
+      "bytes": 4624
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/staff-handoff-request.schema.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/staff-handoff-request.schema.json",
+      "sha256": "2c137347d7b7fcf158c717c06c4710f64fafb4c11a2ceff40c9426f570c7b99f",
+      "bytes": 5077
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/staff-handoff-response.schema.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/staff-handoff-response.schema.json",
+      "sha256": "9f84d819c13978017fa56c6abf28a52114c2a426655a14f6cc461f22ce726690",
+      "bytes": 5662
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/visitor-handoff.schema.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/visitor-handoff.schema.json",
+      "sha256": "90f21a51951309f85842cd564876058156b6f6da41f0dd65f8166ca8c7df15b5",
+      "bytes": 5707
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/visitor-handoff-events.schema.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/visitor-handoff-events.schema.json",
+      "sha256": "d817fda2cb5d4ffa3329ccd589e2aaedc9dd85210d32fb8b2281654c9f7692fd",
+      "bytes": 6577
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/handoff-packet-v1-2026-10-06.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/reviews/handoff-packet-v1-2026-10-06.md",
+      "sha256": "a9bc8e81ce154f4e70d7bfbb8df9702a3e93226616f6da45faebcb2b2c66f5e9",
+      "bytes": 8636
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/handoff-packet-correction1-v1-2026-10-06.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/reviews/handoff-packet-correction1-v1-2026-10-06.md",
+      "sha256": "188867951064910f18b0694e457c1cf68ef41e38f5e4ad306b4e92e526551efb",
+      "bytes": 5594
+    },
+    {
+      "path": "output/research/visitor-handoff-events-2026-10-06/correction-1/review-inputs.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/output/research/visitor-handoff-events-2026-10-06/correction-1/review-inputs.json",
+      "sha256": "a8396a11cb43b2a645a2974d01fc073553872c7b84de848482221387f72f1cd5",
+      "bytes": 9197
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/visitor-message.schema.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/visitor-message.schema.json",
+      "sha256": "c86ee6991f17a59639c6feae6f7b97c038b210621a2344017cca68acfdcaab0a",
+      "bytes": 1202
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/visitor-message-registration-v1-2026-10-06.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/reviews/visitor-message-registration-v1-2026-10-06.md",
+      "sha256": "d54254f7fc1ed9923b80f6d95da073b1de7f225d122893a137c71414c677a51e",
+      "bytes": 7685
+    },
+    {
+      "path": "output/research/visitor-message-registration-2026-10-06/review-inputs.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/output/research/visitor-message-registration-2026-10-06/review-inputs.json",
+      "sha256": "9f31777aef35daf01e6a0b210d6a41df416fec8717f0446153c1e56911e5dbdf",
+      "bytes": 9712
+    },
+    {
+      "path": "output/research/visitor-idle-policy-2026-10-07/review-inputs.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/output/research/visitor-idle-policy-2026-10-07/review-inputs.json",
+      "sha256": "44434044fc2c754022ce5324cb636ac7463dd41fcb44ae8d3d1ad3e2472f3492",
+      "bytes": 3111
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "sha256": "ab972920e58f7da3c0990b573e1e2a18121f4b6d7c57f8615b7e7e624e3cbec0",
+      "bytes": 77716
+    },
+    {
+      "path": "output/research/staff-session-handoff-profile-2026-10-06/review-inputs.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/output/research/staff-session-handoff-profile-2026-10-06/review-inputs.json",
+      "sha256": "03f0eede86913ad851391b0409d6d2498daca87bff62bd4617f6b2d289d0424e",
+      "bytes": 3988
+    },
+    {
+      "path": "output/research/staff-cookie-csrf-profile-2026-10-06/review-inputs.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/output/research/staff-cookie-csrf-profile-2026-10-06/review-inputs.json",
+      "sha256": "21438dc34412690b9c187ab898660e614c5d3cab958f0600636db03880069be6",
+      "bytes": 2871
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/staff-cookie-csrf-profile-v1-2026-10-06.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/reviews/staff-cookie-csrf-profile-v1-2026-10-06.md",
+      "sha256": "f9ec130a6ab5220e58f402bff24a73806f0d1f967d5e486fb64d79deb4d80f5c",
+      "bytes": 7175
+    },
+    {
+      "path": "output/playwright/definition-session-review-2026-10-06/definition-walkthrough.reviewed.html",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/output/playwright/definition-session-review-2026-10-06/definition-walkthrough.reviewed.html",
+      "sha256": "4df1b2fbe41683ff1a9c73d00c47d3a0b205b82468503b0b476caf1318eeb800",
+      "bytes": 70714
+    },
+    {
+      "path": "docs/software-definition/reviews/consultation-session-walkthrough-v1-2026-10-06.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/software-definition/reviews/consultation-session-walkthrough-v1-2026-10-06.md",
+      "sha256": "7931a328d25c722b8197bb170a83d1d8a72dfef9478d1d1d7fb0c27f4c6e33a9",
+      "bytes": 5638
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/knowledge-bundle.schema.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/knowledge-bundle.schema.json",
+      "sha256": "5d7013d9c8a84119c924ea585b5613e8d17b1ef9dbe49fe5698f4a47148f5d3e",
+      "bytes": 2010
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/booking-status-read-v1-2026-10-07.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/reviews/booking-status-read-v1-2026-10-07.md",
+      "sha256": "7e6872f051e60a223d83c065d4ec629178b745df3a8dd9a2978d887fce93c08b",
+      "bytes": 5685
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/booking-status-shape-v1-2026-10-07.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/reviews/booking-status-shape-v1-2026-10-07.md",
+      "sha256": "f28a6dcb71a9dd0a5431f5b67f23b6343a208c61e05caee54b128af7ecf2acff",
+      "bytes": 8468
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/booking-status-transport-v1-2026-10-07.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/reviews/booking-status-transport-v1-2026-10-07.md",
+      "sha256": "844a82bb53d917e8ad699c013a8c4ea1567dba39adcd5fe89e840fdf79ff4d30",
+      "bytes": 8580
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/data-classification.csv",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/data-classification.csv",
+      "sha256": "c8793ebfb401178b4175f0f6c7b9cfb14edcd606f370090883cbe2be94f0cd6e",
+      "bytes": 5615
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/QA_RECOVERY.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/QA_RECOVERY.md",
+      "sha256": "1469d2cd8c0c32c1ff10103dcc0ee2b73bbf52d4de9d1490c7bf77e521fcba74",
+      "bytes": 33456
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/acceptance-matrix.csv",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/acceptance-matrix.csv",
+      "sha256": "479d71d4499b8925116205c072e2d6e40e2946188c53f48d372f0765c3976974",
+      "bytes": 4595
+    },
+    {
+      "path": "specs/002-testing-and-monitoring/reviews/qa-browser-release-correction-v1-2026-10-06.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/specs/002-testing-and-monitoring/reviews/qa-browser-release-correction-v1-2026-10-06.md",
+      "sha256": "7102c25e2cf2f7e7c341f71aa500d31fd34039e06fd9c2ef989da48b641470d2",
+      "bytes": 2708
+    },
+    {
+      "path": "docs/phase-1-compatibility/README.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-compatibility/README.md",
+      "sha256": "dcee8d857bdf8d101805f50cb66ee04c2c9904193cc8c8413014c9c7c583ceca",
+      "bytes": 40650
+    },
+    {
+      "path": "README.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/README.md",
+      "sha256": "eb8eb95a1f3fdc595ce97fb7b973adead5d61eaa2d032b212046425c2ddc4b8c",
+      "bytes": 10569
+    },
+    {
+      "path": "specs/README.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/specs/README.md",
+      "sha256": "8bec83799505a69a2e0782e9db83d5662921f1a634c61073ffbfc0f62b54a83a",
+      "bytes": 7533
+    },
+    {
+      "path": "docs/software-definition/06-entity-and-public-contact.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/software-definition/06-entity-and-public-contact.md",
+      "sha256": "5e4f5fb9aa35ff2d5165383fb051f3dca2520df088cc2de20fe2c0bab8f40e47",
+      "bytes": 15443
+    },
+    {
+      "path": "docs/phase-1-foundation/03-seo-entity-route-editorial-strategy.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-foundation/03-seo-entity-route-editorial-strategy.md",
+      "sha256": "e9175dd9c326d7f2acadde4ff28cdcaba54b87c4f1b78546a5b6f9a09127b7f0",
+      "bytes": 36282
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/design-batch-plan.csv",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-ui-reference-design/design-batch-plan.csv",
+      "sha256": "550d8de3c6860f74e09e8a53da52e24ca2874d94b705d11f6afd4745f0142d12",
+      "bytes": 27984
+    },
+    {
+      "path": "docs/phase-1-3d/WORLD_MEASUREMENT_PROFILE.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-3d/WORLD_MEASUREMENT_PROFILE.md",
+      "sha256": "ec20729f628adda8edbfc7efb33fcac345957558761f0cc1d702157ea92ffdd5",
+      "bytes": 16226
+    },
+    {
+      "path": "docs/active/Documentation_Index.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/active/Documentation_Index.md",
+      "sha256": "245fdc579a871a398266bc594dd1f8407818ddd3c1f7b202e21547790130a12e",
+      "bytes": 14997
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/BOOKING_SCHEDULING.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-architecture/contracts/BOOKING_SCHEDULING.md",
+      "sha256": "ae85b2fe9f6ff545095e21d96de622fdcb186961c928a59704f86d2bdd4ded33",
+      "bytes": 58787
+    },
+    {
+      "path": "specs/005-azure-deployment-launch/README.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/specs/005-azure-deployment-launch/README.md",
+      "sha256": "83f878528489a5819b694ccd5e8de012dbd8b5fce554d551503db1c86811da1c",
+      "bytes": 1697
+    },
+    {
+      "path": "output/research/b01-directory-full-resolution-2026-10-08/preparation.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/output/research/b01-directory-full-resolution-2026-10-08/preparation.json",
+      "sha256": "64fc42da0cf68b997d989d713bae947b0d07c4612700c6bf8485b29fc3913cb4",
+      "bytes": 1086
+    },
+    {
+      "path": "docs/phase-1-ui-reference-production/validation/mcp-call-ledger.csv",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/docs/phase-1-ui-reference-production/validation/mcp-call-ledger.csv",
+      "sha256": "80f9ed24eeb28a48bd586fce115ffc82ca71da3d5755842af7b564b69bde6389",
+      "bytes": 11985
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/qualification-plan.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/output/research/backend-crypto-graph-2026-10-08/qualification-plan.json",
+      "sha256": "b9298363e7a0cfeef76dad29e18f8aa165a5d7790e4291b567711374603a0cb9",
+      "bytes": 6678
+    },
+    {
+      "path": "output/research/reconciliation-consolidation-2026-10-09/prepare_map.py",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/output/research/reconciliation-consolidation-2026-10-09/prepare_map.py",
+      "sha256": "bca895750f4b324384d96a3d482e5ead538955bb98691bc7e15e6a40ceb16d8b",
+      "bytes": 17779
+    },
+    {
+      "path": "output/research/reconciliation-consolidation-2026-10-09/prior-subject-index.json",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/output/research/reconciliation-consolidation-2026-10-09/prior-subject-index.json",
+      "sha256": "372807c3552a692598c77da8ccc14d8dbd15a174cb801b178eaecee72cebdfac",
+      "bytes": 48089
+    },
+    {
+      "path": "output/research/reconciliation-consolidation-2026-10-09/before/README.md",
+      "snapshot": "output/research/reconciliation-consolidation-2026-10-09/review/inputs/output/research/reconciliation-consolidation-2026-10-09/before/README.md",
+      "sha256": "a4907696b81b7bc7949a02e712970615122459b124b8fee836d731320181ccba",
+      "bytes": 7503
+    }
+  ]
+}

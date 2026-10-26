@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-12",
+  "manifest": "review-inputs-v1.json",
+  "manifest_sha256": "953ce9163d29cc54efcd90925a4749d80266f55e6ae7f96243ba81b3154a06c6",
+  "count": 11,
+  "all_match": true,
+  "inputs": [
+    {
+      "snapshot": "inputs/01-AGENTS.md",
+      "expected_sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "actual_sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "expected_bytes": 7686,
+      "actual_bytes": 7686,
+      "match": true
+    },
+    {
+      "snapshot": "inputs/02-constitution.md",
+      "expected_sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "actual_sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "expected_bytes": 16234,
+      "actual_bytes": 16234,
+      "match": true
+    },
+    {
+      "snapshot": "inputs/03-DATA_CONTRACT.md",
+      "expected_sha256": "b49bc6ffb726dc02518fdba79e6f406b551f1e250871b0646cd9c58df3659430",
+      "actual_sha256": "b49bc6ffb726dc02518fdba79e6f406b551f1e250871b0646cd9c58df3659430",
+      "expected_bytes": 72181,
+      "actual_bytes": 72181,
+      "match": true
+    },
+    {
+      "snapshot": "inputs/04-INTERFACE_CATALOG.md",
+      "expected_sha256": "8ad3c5837a15f634c586337cc5e01795d9ce526f093a9ead984cc67d179d1c7f",
+      "actual_sha256": "8ad3c5837a15f634c586337cc5e01795d9ce526f093a9ead984cc67d179d1c7f",
+      "expected_bytes": 112231,
+      "actual_bytes": 112231,
+      "match": true
+    },
+    {
+      "snapshot": "inputs/05-PRIVATE_PROCESS_PROOF.md",
+      "expected_sha256": "0bf065ae353f1d22c986501c624df46e4057d76ca06f71a35352360ac239a6b7",
+      "actual_sha256": "0bf065ae353f1d22c986501c624df46e4057d76ca06f71a35352360ac239a6b7",
+      "expected_bytes": 117693,
+      "actual_bytes": 117693,
+      "match": true
+    },
+    {
+      "snapshot": "inputs/06-HANDOFF_LIFECYCLE.md",
+      "expected_sha256": "40a3779f56737725bb2c5e5d5a5ee34b44ad27030adc16cc374fdb9b04266a12",
+      "actual_sha256": "40a3779f56737725bb2c5e5d5a5ee34b44ad27030adc16cc374fdb9b04266a12",
+      "expected_bytes": 89614,
+      "actual_bytes": 89614,
+      "match": true
+    },
+    {
+      "snapshot": "inputs/07-AVAILABILITY_CONSISTENCY.md",
+      "expected_sha256": "6da0086b9c6ac49c2464f73a61793d410c7e04c1aaec8d83a328b377e5252a03",
+      "actual_sha256": "6da0086b9c6ac49c2464f73a61793d410c7e04c1aaec8d83a328b377e5252a03",
+      "expected_bytes": 14167,
+      "actual_bytes": 14167,
+      "match": true
+    },
+    {
+      "snapshot": "inputs/08-BOOKING_SCHEDULING.md",
+      "expected_sha256": "ae85b2fe9f6ff545095e21d96de622fdcb186961c928a59704f86d2bdd4ded33",
+      "actual_sha256": "ae85b2fe9f6ff545095e21d96de622fdcb186961c928a59704f86d2bdd4ded33",
+      "expected_bytes": 58787,
+      "actual_bytes": 58787,
+      "match": true
+    },
+    {
+      "snapshot": "inputs/09-PUBLICATION_CONTRACT.md",
+      "expected_sha256": "9803368522b960485b6f31994d8b6a0c79783c68fe0fc18fcc4675afb08e83d7",
+      "actual_sha256": "9803368522b960485b6f31994d8b6a0c79783c68fe0fc18fcc4675afb08e83d7",
+      "expected_bytes": 88043,
+      "actual_bytes": 88043,
+      "match": true
+    },
+    {
+      "snapshot": "inputs/10-process-value.schema.json",
+      "expected_sha256": "b4fd9fc84f322ecb6743c00244f3731ccd612861de53056aaddb20a377a67a95",
+      "actual_sha256": "b4fd9fc84f322ecb6743c00244f3731ccd612861de53056aaddb20a377a67a95",
+      "expected_bytes": 1494,
+      "actual_bytes": 1494,
+      "match": true
+    },
+    {
+      "snapshot": "inputs/11-data-entities.csv",
+      "expected_sha256": "ec55f41329d521c36014e8e77b863013a7c0a24a6917706767f59f9227525e64",
+      "actual_sha256": "ec55f41329d521c36014e8e77b863013a7c0a24a6917706767f59f9227525e64",
+      "expected_bytes": 8956,
+      "actual_bytes": 8956,
+      "match": true
+    }
+  ]
+}

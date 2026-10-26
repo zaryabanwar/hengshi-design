@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hengshi:v1:availability-read",
+  "title": "Public department availability GET body v1 — proposal",
+  "description": "Closed application body only. Does not prove current authority, public disclosure acceptance, HTTP status/headers, expiry validity, staff response or implementation.",
+  "oneOf": [
+    {"$ref": "#/$defs/success"},
+    {"$ref": "#/$defs/errorResponse"}
+  ],
+  "$defs": {
+    "departmentKey": {
+      "enum": ["ROUTE-WING-STRATEGY", "ROUTE-WING-DIGITAL", "ROUTE-WING-AI-DATA", "ROUTE-WING-IMMERSIVE", "ROUTE-WING-CLOUD-TRUST"]
+    },
+    "utcInstant": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-5][0-9](?:\\.[0-9]+)?Z(?![\\s\\S])"
+    },
+    "success": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["department_id", "availability"],
+      "properties": {
+        "department_id": {"$ref": "#/$defs/departmentKey"},
+        "availability": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["state", "expires_at"],
+              "properties": {"state": {"const": "available"}, "expires_at": {"$ref": "#/$defs/utcInstant"}}
+            },
+            {"const": {"state": "unavailable"}}
+          ]
+        }
+      }
+    },
+    "errorResponse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["error"],
+      "properties": {
+        "error": {
+          "oneOf": [
+            {"const": {"code": "AVAILABILITY_REQUEST_INVALID", "explanation": "The availability request is invalid.", "retryability": "correct_request"}},
+            {"const": {"code": "AVAILABILITY_DEPARTMENT_UNAVAILABLE", "explanation": "This public department is unavailable.", "retryability": "refresh_context"}},
+            {"const": {"code": "AVAILABILITY_PRECONDITION_FAILED", "explanation": "The availability request precondition failed.", "retryability": "correct_request"}},
+            {"const": {"code": "AVAILABILITY_READ_UNAVAILABLE", "explanation": "Public availability information is temporarily unavailable.", "retryability": "retry_read"}},
+            {"const": {"code": "AVAILABILITY_READ_FAILED", "explanation": "Public availability information could not be verified.", "retryability": "stop"}}
+          ]
+        }
+      }
+    }
+  }
+}

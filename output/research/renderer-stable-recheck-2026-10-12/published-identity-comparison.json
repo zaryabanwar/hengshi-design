@@ -1,0 +1,85 @@
+{
+  "observed_at": "2026-10-11T20:20:33.512Z",
+  "package_comparisons": [
+    {
+      "package": "three",
+      "latest": "0.186.1",
+      "prior_registry_file": "output/research/three-upstream-recheck-2026-10-07/three.registry.json",
+      "dist_integrity_unchanged": true,
+      "tarball_url_unchanged": true,
+      "dependencies_unchanged": true,
+      "peers_unchanged": true,
+      "engines_unchanged": true
+    },
+    {
+      "package": "@types/three",
+      "latest": "0.186.0",
+      "prior_registry_file": "output/research/three-upstream-recheck-2026-10-07/types-three.registry.json",
+      "dist_integrity_unchanged": true,
+      "tarball_url_unchanged": true,
+      "dependencies_unchanged": true,
+      "peers_unchanged": true,
+      "engines_unchanged": true
+    },
+    {
+      "package": "three-stdlib",
+      "latest": "2.36.1",
+      "prior_registry_file": "output/research/three-upstream-recheck-2026-10-07/three-stdlib.registry.json",
+      "dist_integrity_unchanged": true,
+      "tarball_url_unchanged": true,
+      "dependencies_unchanged": true,
+      "peers_unchanged": true,
+      "engines_unchanged": true
+    },
+    {
+      "package": "@react-three/drei",
+      "latest": "10.7.9",
+      "prior_registry_file": "output/research/three-upstream-recheck-2026-10-07/react-three-drei.registry.json",
+      "dist_integrity_unchanged": true,
+      "tarball_url_unchanged": true,
+      "dependencies_unchanged": true,
+      "peers_unchanged": true,
+      "engines_unchanged": true
+    },
+    {
+      "package": "@react-three/fiber",
+      "latest": "9.8.1",
+      "prior_registry_file": "output/research/three-upstream-recheck-2026-10-07/react-three-fiber.registry.json",
+      "dist_integrity_unchanged": true,
+      "tarball_url_unchanged": true,
+      "dependencies_unchanged": true,
+      "peers_unchanged": true,
+      "engines_unchanged": true
+    }
+  ],
+  "published_archive": {
+    "source": "https://registry.npmjs.org/three-stdlib/-/three-stdlib-2.36.1.tgz",
+    "current_registry_integrity": "sha512-XyGQrFmNQ5O/IoKm556ftwKsBg11TIb301MB5dWNicziQBEs2g3gtOYIf7pFiLa0zI2gUwhtCjv9fmjnxKZ1Cg==",
+    "saved_archive": "output/research/three-upstream-recheck-2026-10-07/three-stdlib-2.36.1.tgz",
+    "bytes": 4955095,
+    "sha256": "e246431950e1f73bad0f217ab928f1e66b08fc4e003e50ed5ce6817a8150c0cc",
+    "matches_current_sri": true,
+    "matches_previous_archive_sha256": true
+  },
+  "loader_identity": [
+    {
+      "path": "loaders/SVGLoader.d.ts",
+      "sha256": "5a8aa1adc0a8d6cf8a106fd8cc422e28ca130292d452b75d17678d24ab31626b",
+      "saved_file": "output/research/three-upstream-recheck-2026-10-07/published-SVGLoader.d.ts",
+      "saved_identity_verified": true
+    },
+    {
+      "path": "loaders/TGALoader.d.ts",
+      "sha256": "f856d3559afde2a5e3f0e4e877d0397fe673eea71ac3683abb7c6cef429c192d",
+      "saved_file": "output/research/three-upstream-recheck-2026-10-07/published-TGALoader.d.ts",
+      "saved_identity_verified": true
+    }
+  ],
+  "limitations": [
+    "No fresh archive extraction or loader compiler run; prior source extraction and compiler receipts retain their exact scopes.",
+    "SRI checks integrity only, not registry signature, build provenance, legal clearance or runtime compatibility.",
+    "Context7 returns current development-source references, not version-specific published-package evidence.",
+    "No new stable release observed among these five packages; this does not refresh every transitive family or select the complete graph.",
+    "D077 approval and expiry/recheck/rollback conditions are unchanged."
+  ]
+}

@@ -1,0 +1,477 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-14",
+  "scope": "Independent bounded review of actual native trial result accounting and proposed single caption/background repair; no execution or phase approval",
+  "input_count": 78,
+  "inputs": [
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/native-qualification-result-v1.json",
+      "snapshot": "inputs/00-native-qualification-result-v1.json",
+      "bytes": 4982,
+      "sha256": "fbad0baa2f8a9fe6d63e28588796a5561514582501d95e8f33efd12fd091e358"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/native-trial-caption-background-correction-proposal-v1.json",
+      "snapshot": "inputs/01-native-trial-caption-background-correction-proposal-v1.json",
+      "bytes": 4825,
+      "sha256": "6612f8166486accb880e421366ec7fdd1da4ebe6258e92f68802e8f4554d1d5d"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-section-admission-v1.json",
+      "snapshot": "inputs/02-fresh-section-admission-v1.json",
+      "bytes": 12097,
+      "sha256": "d4304908879ffcad3f180b7843a0c94fee60fe0d6bfbeda78ef670b1ff009202"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-variant-geometry-admission-v1.json",
+      "snapshot": "inputs/03-fresh-variant-geometry-admission-v1.json",
+      "bytes": 3122,
+      "sha256": "2b5b09a2a799bef759ade94fc7985e0e75ccbcab1b1f09e8e17d14e9342136d5"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/native-qualification-archive-integrity-v1.json",
+      "snapshot": "inputs/04-native-qualification-archive-integrity-v1.json",
+      "bytes": 900,
+      "sha256": "c8348a0112aad02e47ef2db9d28fa45594f1f677827894c492864bdd7a95e6ee"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/after-native-qualification-v1.fig",
+      "snapshot": "inputs/05-after-native-qualification-v1.fig",
+      "bytes": 386596,
+      "sha256": "713d6d18730d92ceae13e721e74ace2a6dd20b18c914e0bc24008f88dcd17071"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/host-child-ui-inventory-v1.json",
+      "snapshot": "inputs/06-host-child-ui-inventory-v1.json",
+      "bytes": 5218,
+      "sha256": "eca05e31876b1d7f1167f570e26bd9774681279d7812e069d200d056eb299d86"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-after-ordered-descendant-inventory-v1.json",
+      "snapshot": "inputs/07-section-after-ordered-descendant-inventory-v1.json",
+      "bytes": 33597,
+      "sha256": "79a58787bb4c157fef40006dc62cf097de4ff33dc87e693d391f10acf2c10815"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/review-section-result/independent-review-section-result-v1.json",
+      "snapshot": "inputs/08-independent-review-section-result-v1.json",
+      "bytes": 30829,
+      "sha256": "9715046d10ad10fa5f2440cbe398e53091b170799234eda784dc17aaa34f8a5f"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/review-section-entry/independent-review-section-entry-v1.json",
+      "snapshot": "inputs/09-independent-review-section-entry-v1.json",
+      "bytes": 21459,
+      "sha256": "d6298c05db3237d08de54c7d2b82436c3d34b6dc1682338bb0e102380d22b1b0"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/correction1/qualification-plan-v1.json",
+      "snapshot": "inputs/10-qualification-plan-v1.json",
+      "bytes": 18481,
+      "sha256": "447309d755223c9e8517d88293d550d89c4c73fbc66251611c3c3534e2bdada6"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/correction1/review/independent-review-qualification-plan-v1.json",
+      "snapshot": "inputs/11-independent-review-qualification-plan-v1.json",
+      "bytes": 18269,
+      "sha256": "07bba89a0f344d8d7aee8dfc0706bc5de52e92f4902a408c2273714c3e38f3d2"
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "inputs/12-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": "docs/software-definition/03-autonomous-ai-development-workflow.md",
+      "snapshot": "inputs/13-03-autonomous-ai-development-workflow.md",
+      "bytes": 7964,
+      "sha256": "d1388aab446eb65efe1f9f285cc4c375d05611b5d2fe34f6e75f09e83b588e54"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-allocation-101-3204-design-v1.txt",
+      "snapshot": "inputs/14-fresh-allocation-101-3204-design-v1.txt",
+      "bytes": 15817,
+      "sha256": "d8d233a622d3a664239ea26ec7306d37747f2ae7a50e99f4222b3828d0d3ddcf"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-allocation-85-3174-design-v1.txt",
+      "snapshot": "inputs/15-fresh-allocation-85-3174-design-v1.txt",
+      "bytes": 18844,
+      "sha256": "80c5015868f96ead44f388d976b9f8c88dc7e1a00c31cbe93e0e0ff16bdcc9ea"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-allocation-94-3199-design-v1.txt",
+      "snapshot": "inputs/16-fresh-allocation-94-3199-design-v1.txt",
+      "bytes": 16234,
+      "sha256": "f505d4894820785573eb35e987f9cf6bed9b6fe6db0349ae5bffa540b3b662a6"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-H_CLOSED_H-design-v1.txt",
+      "snapshot": "inputs/17-fresh-H_CLOSED_H-design-v1.txt",
+      "bytes": 17139,
+      "sha256": "529de0dc846b6c78b8b0b0eb2211ad459a4d101c96f6013bc4d48ca33c603a42"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-H_CLOSED_M-design-v1.txt",
+      "snapshot": "inputs/18-fresh-H_CLOSED_M-design-v1.txt",
+      "bytes": 17565,
+      "sha256": "d0cd05acc12e878b4b2542d2615d9a46bbb7d91201df876c480360e63babd446"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-H_OPEN_H-design-v1.txt",
+      "snapshot": "inputs/19-fresh-H_OPEN_H-design-v1.txt",
+      "bytes": 17755,
+      "sha256": "2714a78b687005d40e548b878c44e2fab2dbe6b0e46eb40fb794f83bff8ea3f2"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-H_OPEN_M-design-v1.txt",
+      "snapshot": "inputs/20-fresh-H_OPEN_M-design-v1.txt",
+      "bytes": 17755,
+      "sha256": "baf796764bdbd7740abc7ccb776a1d100fd5d2109852acb1dbc61a33cf1f4a5a"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-labelled-flow-v1.txt",
+      "snapshot": "inputs/21-fresh-labelled-flow-v1.txt",
+      "bytes": 11340,
+      "sha256": "8d269dba400bf412ecde5ff5f743030377b7a69adf9ccfa22fdb93aeb36f08e0"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-M_CLOSED_H-design-v1.txt",
+      "snapshot": "inputs/22-fresh-M_CLOSED_H-design-v1.txt",
+      "bytes": 17424,
+      "sha256": "71f614f854d46221833827177d9eac74462a6de863938372e20a8dcdf572b4fa"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-M_CLOSED_M-design-v1.txt",
+      "snapshot": "inputs/23-fresh-M_CLOSED_M-design-v1.txt",
+      "bytes": 17569,
+      "sha256": "f50510941a6badf06055b54549bed0c20a28f063506ac0f44c2936c8378483f9"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-M_OPEN_H-design-v1.txt",
+      "snapshot": "inputs/24-fresh-M_OPEN_H-design-v1.txt",
+      "bytes": 17757,
+      "sha256": "5b2c0abf2709e892d40b5e486d0ac3ff7b46601f2bb9f961edba2dcc71ce1cf6"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-M_OPEN_M-design-v1.txt",
+      "snapshot": "inputs/25-fresh-M_OPEN_M-design-v1.txt",
+      "bytes": 17761,
+      "sha256": "79992d62ecbdc56f8db5b99ffde4e3d280480eea154b3931a877b651820a5827"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-noop-H_OPEN_H-v1.txt",
+      "snapshot": "inputs/26-fresh-noop-H_OPEN_H-v1.txt",
+      "bytes": 16811,
+      "sha256": "61f565e9414c0e7cc3441e546d2b78caaf7442aa2a726e5a176527ed291cd6cd"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-noop-M_OPEN_M-v1.txt",
+      "snapshot": "inputs/27-fresh-noop-M_OPEN_M-v1.txt",
+      "bytes": 10269,
+      "sha256": "645644831ea303e1ad9708b05bccf8ddbe5ad04e5171d8209053ab83f0c1d0c0"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-owned-allocation-hierarchy-v1.txt",
+      "snapshot": "inputs/28-fresh-owned-allocation-hierarchy-v1.txt",
+      "bytes": 11316,
+      "sha256": "eff56a3e687848e727d26b4b9550658ca7cef646b3713788d90e2afc2f75cd4b"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-preview-instance-design-v1.txt",
+      "snapshot": "inputs/29-fresh-preview-instance-design-v1.txt",
+      "bytes": 13432,
+      "sha256": "c6d87aff9842d6535ed28524bd69e654c066543ff3ca1de46bd6595f7e01a1eb"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-preview-prototype-entry-v1.txt",
+      "snapshot": "inputs/30-fresh-preview-prototype-entry-v1.txt",
+      "bytes": 12024,
+      "sha256": "3e81525523a5c8a849f348d802dab6b03431058db8d5dcd86e4d7a919db1b940"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-private-link-scope-v1.txt",
+      "snapshot": "inputs/31-fresh-private-link-scope-v1.txt",
+      "bytes": 14209,
+      "sha256": "6ea1ad3f9d5853ab46eb606058ad7479dd0df9ef444dfb5571260c009c2657ea"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-private-sharing-v1.txt",
+      "snapshot": "inputs/32-fresh-private-sharing-v1.txt",
+      "bytes": 14807,
+      "sha256": "849d828df5dd31f3c00912af1d912c8c1ad18846243da1a39b75927c2e0b480c"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-reaction-82-3171-v1.txt",
+      "snapshot": "inputs/33-fresh-reaction-82-3171-v1.txt",
+      "bytes": 12180,
+      "sha256": "e401080fb91c715d220a0e09a3b4903d45317357717da3584eaade01bab908eb"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-reaction-85-3173-v1.txt",
+      "snapshot": "inputs/34-fresh-reaction-85-3173-v1.txt",
+      "bytes": 13999,
+      "sha256": "26cf7f751d52b12455d281978e5b0ca8188893c306f4f46e62bf395850661d4f"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-reaction-85-3177-v1.txt",
+      "snapshot": "inputs/35-fresh-reaction-85-3177-v1.txt",
+      "bytes": 12166,
+      "sha256": "6a9057c1cd376e6312e0e20a5be2147ffd3221d55a379c9b71307ded17a83dd1"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-reaction-85-3198-v1.txt",
+      "snapshot": "inputs/36-fresh-reaction-85-3198-v1.txt",
+      "bytes": 12182,
+      "sha256": "44bd64705ad4bbfd33239811bc738823df44346c75c8970c54804b6bbadb34a1"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-reaction-85-3217-v1.txt",
+      "snapshot": "inputs/37-fresh-reaction-85-3217-v1.txt",
+      "bytes": 14009,
+      "sha256": "efd98009c33f469a72b999126676ea7bb47ab396a2cca6b2515c5f6ae0dbcc26"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-reaction-85-3219-v1.txt",
+      "snapshot": "inputs/38-fresh-reaction-85-3219-v1.txt",
+      "bytes": 12192,
+      "sha256": "45a4f7ba7c6568457a6ac68d3fd5ff47da823e3978ba26d41b54baf70b39f7d7"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-reaction-85-3238-v1.txt",
+      "snapshot": "inputs/39-fresh-reaction-85-3238-v1.txt",
+      "bytes": 13999,
+      "sha256": "45eab41b19b228d8fa0e7241fb69ebc4661bb5e070debc8f3da719959ee6d91d"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-reaction-85-3240-v1.txt",
+      "snapshot": "inputs/40-fresh-reaction-85-3240-v1.txt",
+      "bytes": 12178,
+      "sha256": "e82f4e5bb03507eaed36c77d4d29fecf7151cbb0a83e198bb4fd6340dd3feabf"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-reaction-85-3261-v1.txt",
+      "snapshot": "inputs/41-fresh-reaction-85-3261-v1.txt",
+      "bytes": 24025,
+      "sha256": "22054b475bd5afe30442ca5ae970bcd0e18b5351a3d642ddacef83bb9de33581"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-reaction-85-3282-v1.txt",
+      "snapshot": "inputs/42-fresh-reaction-85-3282-v1.txt",
+      "bytes": 23674,
+      "sha256": "ecdd6d79fa045b2af3448f972378b225f84ce0089518532ff091ebff8eba5b46"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-reaction-85-3301-v1.txt",
+      "snapshot": "inputs/43-fresh-reaction-85-3301-v1.txt",
+      "bytes": 13989,
+      "sha256": "732b33c3f42b2745116defc56f39dedee13182f73533b2038677fa10a90af9af"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-reaction-85-3303-v1.txt",
+      "snapshot": "inputs/44-fresh-reaction-85-3303-v1.txt",
+      "bytes": 17013,
+      "sha256": "19a6d1886bf0fdebc4e3c4d1ebd7f6d723161d9c3758a9852c593a5ada1d7736"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-reaction-85-3363-v1.txt",
+      "snapshot": "inputs/45-fresh-reaction-85-3363-v1.txt",
+      "bytes": 12174,
+      "sha256": "c0e600aa688afea6f402172e4367552150c1378fbccb33b82512764492c0e152"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-reaction-85-3424-v1.txt",
+      "snapshot": "inputs/46-fresh-reaction-85-3424-v1.txt",
+      "bytes": 12116,
+      "sha256": "dc0c4feb905844ad1deb32f5300dbed69a917f5952566cc7bc28ff7c8f7a48ee"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-reaction-85-3449-v1.txt",
+      "snapshot": "inputs/47-fresh-reaction-85-3449-v1.txt",
+      "bytes": 12154,
+      "sha256": "7c9a72f7656d2c948a9f4b18caa767d19592c2310cf927e42bd4692386d1de05"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-reaction-85-3512-v1.txt",
+      "snapshot": "inputs/48-fresh-reaction-85-3512-v1.txt",
+      "bytes": 17588,
+      "sha256": "ce09e6a46326e98f96b62c943f1806900c8424b35459b9e0a749e374c7e6ab9a"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-visibility-H_CLOSED_H-v1.txt",
+      "snapshot": "inputs/49-fresh-visibility-H_CLOSED_H-v1.txt",
+      "bytes": 28123,
+      "sha256": "93aed684a35d25e371e025659840634cf2ac176d273e3514a84c6165214a3dec"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-visibility-H_CLOSED_M-v1.txt",
+      "snapshot": "inputs/50-fresh-visibility-H_CLOSED_M-v1.txt",
+      "bytes": 16251,
+      "sha256": "e7023dac6f77274c5a0ea1a33eed6298dd9dd8d2666dfd0c777961c6a8b9af6c"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-visibility-M_CLOSED_H-v1.txt",
+      "snapshot": "inputs/51-fresh-visibility-M_CLOSED_H-v1.txt",
+      "bytes": 28521,
+      "sha256": "54e4fab33c349960865ad0bc43f06209a11c787310770c856f0a453e81962ecc"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-visibility-M_CLOSED_M-v1.txt",
+      "snapshot": "inputs/52-fresh-visibility-M_CLOSED_M-v1.txt",
+      "bytes": 16251,
+      "sha256": "48775a206f0db171223adc014e647e01cd2d2657c0044c6c61c133760c1939ca"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ01-after-apply-scroll-v1.png",
+      "snapshot": "inputs/53-NQ01-after-apply-scroll-v1.png",
+      "bytes": 46510,
+      "sha256": "c6b8229fcfc0e7c1e0e0b106567a5bb45f5145a5f4a4a92b62b54b2e044c6802"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ01-after-context-v1.png",
+      "snapshot": "inputs/54-NQ01-after-context-v1.png",
+      "bytes": 24511,
+      "sha256": "e8335bdd23ea99ebac435698c67288498815ef22eb2ddb03795b8eba7d73adda"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ01-before-apply-scroll-v1.png",
+      "snapshot": "inputs/55-NQ01-before-apply-scroll-v1.png",
+      "bytes": 46510,
+      "sha256": "c6b8229fcfc0e7c1e0e0b106567a5bb45f5145a5f4a4a92b62b54b2e044c6802"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ01-entry-v1.png",
+      "snapshot": "inputs/56-NQ01-entry-v1.png",
+      "bytes": 24391,
+      "sha256": "b06fd0de238f902c50411b7e33f748ceab3a454344b1b4f6e48d486841ebc4e2"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ02-after-current-apply-v1.png",
+      "snapshot": "inputs/57-NQ02-after-current-apply-v1.png",
+      "bytes": 51839,
+      "sha256": "9d836acc977a5017337f8003606c61f00d8f3c452d19d456886333cc62e37783"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ02-before-current-apply-v1.png",
+      "snapshot": "inputs/58-NQ02-before-current-apply-v1.png",
+      "bytes": 46510,
+      "sha256": "c6b8229fcfc0e7c1e0e0b106567a5bb45f5145a5f4a4a92b62b54b2e044c6802"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ02-closed-medium-v1.png",
+      "snapshot": "inputs/59-NQ02-closed-medium-v1.png",
+      "bytes": 11988,
+      "sha256": "020165aee5d6e5f55aa146407f09f09a4ef931c553ef029b43fdfa56e726b683"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ02-reopened-medium-v1.png",
+      "snapshot": "inputs/60-NQ02-reopened-medium-v1.png",
+      "bytes": 24511,
+      "sha256": "e8335bdd23ea99ebac435698c67288498815ef22eb2ddb03795b8eba7d73adda"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ03-detailed-pending-medium-active-v1.png",
+      "snapshot": "inputs/61-NQ03-detailed-pending-medium-active-v1.png",
+      "bytes": 24513,
+      "sha256": "77e67ee732d89c036a96195025aaae4a5ad67ab488eca56720984f704f0cfeb1"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ04-after-apply-scroll-v1.png",
+      "snapshot": "inputs/62-NQ04-after-apply-scroll-v1.png",
+      "bytes": 53687,
+      "sha256": "dec32f3c08cb2ff7f43e292856816b2b3823ce146b4311a9474b899746fa7d4e"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ04-after-current-apply-v1.png",
+      "snapshot": "inputs/63-NQ04-after-current-apply-v1.png",
+      "bytes": 44527,
+      "sha256": "3df51f6e5ea2e569c4083257af15300d8b9978900262564ea5196e43df67c7ab"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ04-before-apply-scroll-v1.png",
+      "snapshot": "inputs/64-NQ04-before-apply-scroll-v1.png",
+      "bytes": 46510,
+      "sha256": "c6b8229fcfc0e7c1e0e0b106567a5bb45f5145a5f4a4a92b62b54b2e044c6802"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ04-high-active-and-pending-v1.png",
+      "snapshot": "inputs/65-NQ04-high-active-and-pending-v1.png",
+      "bytes": 24390,
+      "sha256": "378dc5d52f052e984681a4f743bca6b7c54f1a12a2c7278f5786c8afa28979d2"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ05-cycle1-closed-v1.png",
+      "snapshot": "inputs/66-NQ05-cycle1-closed-v1.png",
+      "bytes": 11928,
+      "sha256": "ea053a6974b5689880ac9dd6b1590bbd57805be1761284e2be8c8622b5d12605"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ05-cycle1-reopened-v1.png",
+      "snapshot": "inputs/67-NQ05-cycle1-reopened-v1.png",
+      "bytes": 24391,
+      "sha256": "b06fd0de238f902c50411b7e33f748ceab3a454344b1b4f6e48d486841ebc4e2"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ05-cycle2-closed-v1.png",
+      "snapshot": "inputs/68-NQ05-cycle2-closed-v1.png",
+      "bytes": 11928,
+      "sha256": "ea053a6974b5689880ac9dd6b1590bbd57805be1761284e2be8c8622b5d12605"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ05-cycle2-reopened-v1.png",
+      "snapshot": "inputs/69-NQ05-cycle2-reopened-v1.png",
+      "bytes": 24391,
+      "sha256": "b06fd0de238f902c50411b7e33f748ceab3a454344b1b4f6e48d486841ebc4e2"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ05-cycle3-closed-v1.png",
+      "snapshot": "inputs/70-NQ05-cycle3-closed-v1.png",
+      "bytes": 11928,
+      "sha256": "ea053a6974b5689880ac9dd6b1590bbd57805be1761284e2be8c8622b5d12605"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ05-cycle3-reopened-v1.png",
+      "snapshot": "inputs/71-NQ05-cycle3-reopened-v1.png",
+      "bytes": 24391,
+      "sha256": "b06fd0de238f902c50411b7e33f748ceab3a454344b1b4f6e48d486841ebc4e2"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ05-high-active-medium-pending-v1.png",
+      "snapshot": "inputs/72-NQ05-high-active-medium-pending-v1.png",
+      "bytes": 24391,
+      "sha256": "b06fd0de238f902c50411b7e33f748ceab3a454344b1b4f6e48d486841ebc4e2"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/NQ06-unavailable-background-control-v1.png",
+      "snapshot": "inputs/73-NQ06-unavailable-background-control-v1.png",
+      "bytes": 24391,
+      "sha256": "b06fd0de238f902c50411b7e33f748ceab3a454344b1b4f6e48d486841ebc4e2"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/fresh-labelled-flow-v1.png",
+      "snapshot": "inputs/74-fresh-labelled-flow-v1.png",
+      "bytes": 131349,
+      "sha256": "173242385c5d758fa9fa885a32d0dff7094d7af27aa39255bf1ece581305f631"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/medium-services-caption-inspector-v1.txt",
+      "snapshot": "inputs/75-medium-services-caption-inspector-v1.txt",
+      "bytes": 16693,
+      "sha256": "a55c35e0b23f6c3df660077a6e93db22244577692cf46c87e01dee6d0fdb63dc"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/medium-services-caption-inspector-v1.png",
+      "snapshot": "inputs/76-medium-services-caption-inspector-v1.png",
+      "bytes": 110843,
+      "sha256": "646ace5bd122ba32e7b496ea8f730194d56ae36004ce1ee899a6d612c67700df"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/owned-services-detach-availability-v1.txt",
+      "snapshot": "inputs/77-owned-services-detach-availability-v1.txt",
+      "bytes": 17682,
+      "sha256": "bace97d65353bf60acb331d8dd2ce36c4e4422fc6962f526cec221df97928923"
+    }
+  ]
+}

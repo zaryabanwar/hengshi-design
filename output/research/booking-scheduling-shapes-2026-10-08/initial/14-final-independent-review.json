@@ -1,0 +1,35 @@
+{
+  "result": "PASS",
+  "task_status": "DOING",
+  "reviewer": "/root/review_directory_references_v1",
+  "correction": 2,
+  "manifest": "output/research/booking-scheduling-lifecycle-2026-10-08/correction-2/review-inputs.json",
+  "manifest_sha256": "52cbd1221c25d9478bb47768f2d257b58177768803e92d9d498606a6866bffa2",
+  "scheduling_sha256": "41e94f7b9cccf977c082728d74e148f43065da4ee88360354570819347bb10d1",
+  "catalogue_sha256": "8fdb119f975e6010c97f0301cd3f38b2543939bd7efb10cf54f86afe4840d1d0",
+  "resolved_findings": [
+    "BS01",
+    "BS02"
+  ],
+  "independent_evidence": {
+    "initial_final_matching_pairs": 23,
+    "other_inputs_unchanged": 22,
+    "catalogue_outside_insertion_unchanged": true,
+    "prior_versions_preserved": true
+  },
+  "scope": "Logical scheduling lifecycle coherence for existing IF-BOOK-05/06/08/09 against frozen authority and primary capability references.",
+  "runtime_tests": "None: prose definition only",
+  "limits": [
+    "No exact wire or resource-profile acceptance",
+    "No verified account or provider capability",
+    "No runtime enforcement, calendar actions or accessibility proof",
+    "No policy adoption or integrated Phase 1 acceptance",
+    "No application development, migrations, commits or pushes"
+  ],
+  "later_reference_updates": {
+    "scope": "Receipt navigation/status only, outside independent inspected bytes; no control changes",
+    "scheduling_sha256": "125fe39390176c133636c9f99fde88c007db269ed9a23c8fbc80de4ad1ba2e8b",
+    "catalogue_sha256": "897f4fad807057f07ac5a6d66393fbdf1610b78fdcc8f81be459931210d39989",
+    "links_resolve": true
+  }
+}

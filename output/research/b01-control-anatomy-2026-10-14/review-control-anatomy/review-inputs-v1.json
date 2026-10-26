@@ -1,0 +1,221 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "revision_cycle": 0,
+  "scope": "Per-use control/anatomy proposal and partial read-only source-observation consistency; not executable preparation or whole-source admission",
+  "inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "inputs/00-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "inputs/01-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "inputs/02-DECISIONS.md",
+      "bytes": 106595,
+      "sha256": "dcedb7cdad5f7401a47ddfe218f61b88b9a182d3f2c8c1f939696e9419522952"
+    },
+    {
+      "source": "docs/software-definition/03-autonomous-ai-development-workflow.md",
+      "snapshot": "inputs/03-03-autonomous-ai-development-workflow.md",
+      "bytes": 7964,
+      "sha256": "d1388aab446eb65efe1f9f285cc4c375d05611b5d2fe34f6e75f09e83b588e54"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "snapshot": "inputs/04-B01_EXECUTION_BRIEF.md",
+      "bytes": 76186,
+      "sha256": "f72b1f934b166027967436f793b94effc440522cf348b62837f9818b142691e1"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/component-primitives.csv",
+      "snapshot": "inputs/05-component-primitives.csv",
+      "bytes": 79724,
+      "sha256": "8aec225781cbb1389ea15e70895889a9da306244cd6f8b74f7640d863dde6318"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "snapshot": "inputs/06-reference-template-inventory.csv",
+      "bytes": 33596,
+      "sha256": "2e904e0f4c7019ca696131068567978973961e70cb0889ae954771010c5634cf"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/DESIGN_SYSTEM_IMPLICATIONS.md",
+      "snapshot": "inputs/07-DESIGN_SYSTEM_IMPLICATIONS.md",
+      "bytes": 43847,
+      "sha256": "2d149da845d2d2e7717acf3372d54cb89f04c595fc6be7663396cdf6e1d400c7"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/accessibility/UG-3_CONTROL_COPY_PROPOSAL.md",
+      "snapshot": "inputs/08-UG-3_CONTROL_COPY_PROPOSAL.md",
+      "bytes": 6745,
+      "sha256": "839eb5291d79ac811e927e01ff9b588c192dac8a4c955448c753b4c63ccc3a3b"
+    },
+    {
+      "source": "scripts/validation/ui-stream-mapping.ps1",
+      "snapshot": "inputs/09-ui-stream-mapping.ps1",
+      "bytes": 38967,
+      "sha256": "2c4509b4df40dd1f14c4bb53a35acff6799fde20e2be69d52f08db9e47babd38"
+    },
+    {
+      "source": "output/research/b01-finite-stream-graph-2026-10-14/full-case-graph-proposal-v1.json",
+      "snapshot": "inputs/10-full-case-graph-proposal-v1.json",
+      "bytes": 4703996,
+      "sha256": "33cee93f3ca8570b9f7184fddf440ea09ef3ca9f517907727de1bd38ac547928"
+    },
+    {
+      "source": "output/research/b01-finite-stream-graph-2026-10-14/construction-bindings-proposal-v1.json",
+      "snapshot": "inputs/11-construction-bindings-proposal-v1.json",
+      "bytes": 2455308,
+      "sha256": "a0212bed42877aec8db87e2f9bfcccd39c1a20ad82f7a47d19bc04a5229c1473"
+    },
+    {
+      "source": "output/research/b01-finite-stream-graph-2026-10-14/review-full-proposal/correction1/independent-review-full-proposal-v1.json",
+      "snapshot": "inputs/12-independent-review-full-proposal-v1.json",
+      "bytes": 23674,
+      "sha256": "37725b8977a7a509daaebbf0e81cab7c64f9ad84acd2218a389993356764b2e8"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/build_control_anatomy_v1.py",
+      "snapshot": "inputs/13-build_control_anatomy_v1.py",
+      "bytes": 17930,
+      "sha256": "1e33e7a40fb9dea63bc68d7248b9fbf62ec1a65de664cff5e79c7a960c080d31"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/control-anatomy-bindings-v1.json",
+      "snapshot": "inputs/14-control-anatomy-bindings-v1.json",
+      "bytes": 7143245,
+      "sha256": "debe8b9bd85e66bd362f2fe59ca8131a1c6c5bb420a14215f685cb714196e956"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/source-read-admission-v1.json",
+      "snapshot": "inputs/15-source-read-admission-v1.json",
+      "bytes": 10460,
+      "sha256": "b648dffb293c55d384aec03da77f19008529e50d22f1ed4661a4c4c62ad66552"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/source-inspection/body-style-properties-current.png",
+      "snapshot": "inputs/16-body-style-properties-current.png",
+      "bytes": 109202,
+      "sha256": "6a696e6b9112c3d835e3bbb1b5406d559069987d00050d24836d21e618864c12"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/source-inspection/body-style-properties-current.txt",
+      "snapshot": "inputs/17-body-style-properties-current.txt",
+      "bytes": 18545,
+      "sha256": "10895f8657c360a315656e2665fc5876cf72c2ac096407531188248dd10c7857"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/source-inspection/general-action-master-14-18-current.png",
+      "snapshot": "inputs/18-general-action-master-14-18-current.png",
+      "bytes": 107736,
+      "sha256": "a487f357c619ebd6439d8cfd95ac3b16732fd201d0682483525ae68040c4168a"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/source-inspection/general-action-master-14-18-current.txt",
+      "snapshot": "inputs/19-general-action-master-14-18-current.txt",
+      "bytes": 12110,
+      "sha256": "5416316e163fe2ab754166e5ea0f4b19c00a4c46fc657007ebaec92b1918edab"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-21-291-expanded.txt",
+      "snapshot": "inputs/20-navigation-21-291-expanded.txt",
+      "bytes": 17848,
+      "sha256": "e4425acb9ddfffaaa791696e84a34dcd8253e4031d85191bfc667b5635987636"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-21-291-layer-tree.json",
+      "snapshot": "inputs/21-navigation-21-291-layer-tree.json",
+      "bytes": 5208,
+      "sha256": "4b7fb2a7b9bc01d8cda35b2408b7d51fb4c571409b14f8ed34570d441cdbab56"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-21-291-selected.png",
+      "snapshot": "inputs/22-navigation-21-291-selected.png",
+      "bytes": 119075,
+      "sha256": "02a82ad24a1f04b1c5e7e30d5ef080119aefd47f572277e75f2a3cb4a617c750"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-21-291-selected.txt",
+      "snapshot": "inputs/23-navigation-21-291-selected.txt",
+      "bytes": 16418,
+      "sha256": "3ac51855b086a8e84d4457fd5c4542e48c0a4964aeab7e99f0d5187332bb7b4f"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-apply-135-1625-design.txt",
+      "snapshot": "inputs/24-navigation-apply-135-1625-design.txt",
+      "bytes": 10029,
+      "sha256": "3d6dd35f280be3e3acfafcca0bcd4b61e98837e467b56081ee7559e8c1180e58"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-apply-canonical-selection.json",
+      "snapshot": "inputs/25-navigation-apply-canonical-selection.json",
+      "bytes": 235,
+      "sha256": "7be6e82eff3080a637b02f18b8dd77661c30892cfeaaa81fdca7a56ddcfd5c05"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-apply-caption-font-current.png",
+      "snapshot": "inputs/26-navigation-apply-caption-font-current.png",
+      "bytes": 110626,
+      "sha256": "7e8604c585d1565639e355475b2f680860584af01530505d092bc8f913abf0f8"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-apply-caption-font-current.txt",
+      "snapshot": "inputs/27-navigation-apply-caption-font-current.txt",
+      "bytes": 19021,
+      "sha256": "1a176b535a13013b034f584f3d6f4a9644862034c4f3ebe489a93817d6d58e90"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-apply-property-current.png",
+      "snapshot": "inputs/28-navigation-apply-property-current.png",
+      "bytes": 125903,
+      "sha256": "df10afd979eae0191b6dccb96e0d7c72c8315cd0c8a299d18f29c087a4016a33"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-apply-property-current.txt",
+      "snapshot": "inputs/29-navigation-apply-property-current.txt",
+      "bytes": 21142,
+      "sha256": "bea64e500d18e336c305cb2667486b9b95369aece9694dc8ac26fe1393e24027"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-apply-prototype-current.txt",
+      "snapshot": "inputs/30-navigation-apply-prototype-current.txt",
+      "bytes": 14950,
+      "sha256": "cd7573e13039898b04392e2b48d30199d4b886e5235c04631f11f1ba92ebe525"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-close-21-295-current.png",
+      "snapshot": "inputs/31-navigation-close-21-295-current.png",
+      "bytes": 118482,
+      "sha256": "e5b9b17bf63c8a992f119d6c21fdcef2fbbaa7afaee30d2cc6b54776d3d1c76b"
+    },
+    {
+      "source": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-close-21-295-current.txt",
+      "snapshot": "inputs/32-navigation-close-21-295-current.txt",
+      "bytes": 11927,
+      "sha256": "60ff78850cbc6d5322423c9ade10750f8595eb4ef777864fb04202f24ca0f042"
+    }
+  ],
+  "requested_checks": [
+    "All frozen/current bindings and unchanged prior graph/receipt",
+    "All28 approved primitive anatomy/variant/pseudo/transaction slots preserve source meaning, conditional/staff/World/stream support and do not claim construction",
+    "Every graph edge gets appropriate assigned primitive or explicitly private inspection status, exact anatomy refs and per-variant/per-prototype isolated control slots",
+    "Accepted D057 copy/order/peer/advisement/same-shell/failure/preference/nonop are pinned; proposed graph.copy strings cannot override it",
+    "Read supplied source pixels/text for actual properties, geometry, tokens and observed Inter16/24; separate inherited layer name from Label override",
+    "Evaluate nested alias135/137 observation and recovery/normalCopylink limits; no stable source/owned ID or whole-source/type/font/reaction/restore claim",
+    "Save bounded receipt and actionable remaining BNP requirements"
+  ],
+  "exclusions": [
+    "Figma/API/MCP/AI/account/provider/install/application/Git/deployment mutations",
+    "Live UI/current global source identity or complete tree admission",
+    "Actual code/semantic DOM/native-radio/AT/mobile/WCAG correctness or source preservation/restore",
+    "Full B01/Phase1/visual acceptance or any external construction release"
+  ]
+}

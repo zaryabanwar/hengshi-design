@@ -1,0 +1,20 @@
+{
+  "status": "DOING",
+  "scope": "Two controlling backend review-reference updates only; no candidate, graph or runtime changes",
+  "changes": [
+    {
+      "path": "docs/phase-1-compatibility/backend-evidence-2026-10-04.md",
+      "before_sha256": "0e5ad5b84b3baf02c3ca8dfb3e090ed31541e1485d4bdec54825f471741a116e",
+      "after_sha256": "f7e9be60dd0cd28bb0dbcd9ac8a95d7c623c780f69ca84e66231c5bad11084f8",
+      "reference_replacements": 4
+    },
+    {
+      "path": "docs/phase-1-compatibility/README.md",
+      "before_sha256": "87425eb0d09bad0579750104993fd2af2ad2ffc4ea8303dfd49d11a2dd081d88",
+      "after_sha256": "df14b144e670081c329c8f4ba513e19e2ccac7271effe6bb700301cd0715357e",
+      "reference_replacements": 1
+    }
+  ],
+  "review_sha256": "563713fd62bf7c4c2e88f8082a78e303645e53aca60b42700d78e5c05c366f95",
+  "reference_edits_outside_reviewed_bytes": true
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "name": "msal",
+    "tag": "1.39.0",
+    "source_commit": "20fd4d9f541bcdf21f5d371648004b1548b15e63",
+    "records": [
+      {
+        "url": "https://api.github.com/repos/AzureAD/microsoft-authentication-library-for-python/git/ref/tags/1.39.0",
+        "observed_utc": "2026-10-08T18:41:05.687963+00:00",
+        "http_status": 200,
+        "raw_bytes": 411,
+        "raw_sha256": "faed45c0e1ba417708ec5c39329c66d4e3e7fd8818ad7fad7b00fe78439822b5",
+        "snapshot": "msal/tag-ref.json.gz",
+        "snapshot_sha256": "9d9db67b30108cf80c7d12b5a76173e641c7e24c3255a51a9835305272610dea"
+      },
+      {
+        "url": "https://api.github.com/repos/AzureAD/microsoft-authentication-library-for-python/releases/tags/1.39.0",
+        "observed_utc": "2026-10-08T18:41:06.392010+00:00",
+        "http_status": 200,
+        "raw_bytes": 2923,
+        "raw_sha256": "2466b883bb568ee63dce452c6c20b42d92ca769dde8c94753a70769cab193642",
+        "snapshot": "msal/release.json.gz",
+        "snapshot_sha256": "4879ac0c29018c14170416797caaace379c8affe2f033a90cb41cb0ed86f1f7e"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/AzureAD/microsoft-authentication-library-for-python/20fd4d9f541bcdf21f5d371648004b1548b15e63/msal/__init__.py",
+        "observed_utc": "2026-10-08T18:41:06.945080+00:00",
+        "http_status": 200,
+        "raw_bytes": 2136,
+        "raw_sha256": "6790934060f35cd0313e3031219d62e60082f23816b525beeaa5d630edc9fc9f",
+        "snapshot": "msal/source/msal/__init__.py.gz",
+        "snapshot_sha256": "4247ee2b908fdd2c687b3522ef7045ad0a7442e28e4b4c7a927ed72422aef3a9"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/AzureAD/microsoft-authentication-library-for-python/20fd4d9f541bcdf21f5d371648004b1548b15e63/msal/application.py",
+        "observed_utc": "2026-10-08T18:41:07.504956+00:00",
+        "http_status": 200,
+        "raw_bytes": 150568,
+        "raw_sha256": "7da13ba28a757808fbe35bd4eec608687fc5e829adaf3a329a6d4ad8b78a512f",
+        "snapshot": "msal/source/msal/application.py.gz",
+        "snapshot_sha256": "05d4693ca52d556fcf9b7417c97df8530c37f180175a340d396b70f82127c570"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/AzureAD/microsoft-authentication-library-for-python/20fd4d9f541bcdf21f5d371648004b1548b15e63/msal/oauth2cli/oidc.py",
+        "observed_utc": "2026-10-08T18:41:08.371358+00:00",
+        "http_status": 200,
+        "raw_bytes": 17473,
+        "raw_sha256": "7734154101eef7577e7698f13a1cf947089297c42e51a2be8f0f995a1ea3b1f9",
+        "snapshot": "msal/source/msal/oauth2cli/oidc.py.gz",
+        "snapshot_sha256": "e3506376b1fa0c98f3b87e5bf11c8ba8a519fd5e6a15d4254d6d74c703f2675b"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/AzureAD/microsoft-authentication-library-for-python/20fd4d9f541bcdf21f5d371648004b1548b15e63/msal/oauth2cli/oauth2.py",
+        "observed_utc": "2026-10-08T18:41:08.958472+00:00",
+        "http_status": 200,
+        "raw_bytes": 46345,
+        "raw_sha256": "490569e513b39eec54fe7c3cd2bf44de2731d1ea8034010abd8c81a37331fab4",
+        "snapshot": "msal/source/msal/oauth2cli/oauth2.py.gz",
+        "snapshot_sha256": "dfa38a6637d2f9d9f6e6dbc8e1f9932cdcd23690f39c61375ee7a8d9cfbc8e6d"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/AzureAD/microsoft-authentication-library-for-python/20fd4d9f541bcdf21f5d371648004b1548b15e63/msal/token_cache.py",
+        "observed_utc": "2026-10-08T18:41:09.629037+00:00",
+        "http_status": 200,
+        "raw_bytes": 30411,
+        "raw_sha256": "40fffcd5ddf0c2a5e1577a47c86f666de0bdf0b0003048365136b31955878247",
+        "snapshot": "msal/source/msal/token_cache.py.gz",
+        "snapshot_sha256": "1543680a9a901fed68727c65ae4d2d92db0ad3461d16a543d1b693ba5b80b67d"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/AzureAD/microsoft-authentication-library-for-python/20fd4d9f541bcdf21f5d371648004b1548b15e63/docs/index.rst",
+        "observed_utc": "2026-10-08T18:41:10.406526+00:00",
+        "http_status": 200,
+        "raw_bytes": 7315,
+        "raw_sha256": "ace6339304bc4d01a48212333329eaf40531492ded80aafb6b4b9320db459882",
+        "snapshot": "msal/source/docs/index.rst.gz",
+        "snapshot_sha256": "e59e87fec3770cf122adea4f89af68d3ac7fac838e716b638af5841c30d5a024"
+      }
+    ],
+    "wheel_provenance": false,
+    "installation": false
+  },
+  {
+    "name": "authlib",
+    "tag": "v1.8.0",
+    "source_commit": "1a86748b31a2b1940b09cf627d1b70e03d85c077",
+    "records": [
+      {
+        "url": "https://api.github.com/repos/authlib/authlib/git/ref/tags/v1.8.0",
+        "observed_utc": "2026-10-08T18:41:05.688728+00:00",
+        "http_status": 200,
+        "raw_bytes": 339,
+        "raw_sha256": "53348ed4b2b96deaaf0004ea2ec9ec4c70c22ef83e8f3e6d505fd0e22b59e0c3",
+        "snapshot": "authlib/tag-ref.json.gz",
+        "snapshot_sha256": "ef4961fb34194718e67d6aa6efdb5c766b8bd6813b0525c15362e36a71cbbb12"
+      },
+      {
+        "url": "https://api.github.com/repos/authlib/authlib/releases/tags/v1.8.0",
+        "observed_utc": "2026-10-08T18:41:06.415523+00:00",
+        "http_status": 200,
+        "raw_bytes": 4575,
+        "raw_sha256": "376c2108743090122e40b5b186d282f9f30fe15b15471a7c78a5e260976bb0a0",
+        "snapshot": "authlib/release.json.gz",
+        "snapshot_sha256": "802033f0025ae73fd17975bfe7315a80db7c13044c913961af840bfd347f8733"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/authlib/authlib/1a86748b31a2b1940b09cf627d1b70e03d85c077/authlib/__init__.py",
+        "observed_utc": "2026-10-08T18:41:06.982112+00:00",
+        "http_status": 200,
+        "raw_bytes": 487,
+        "raw_sha256": "da4e9504d6c5bb512b0681e1a7d45cbfdb0362b0b58d62d6bdf4a4caaf8dd806",
+        "snapshot": "authlib/source/authlib/__init__.py.gz",
+        "snapshot_sha256": "b0ead649d1edb8333070acabc94384d8c08162697ba6aa9ba2dd03c73dd955bb"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/authlib/authlib/1a86748b31a2b1940b09cf627d1b70e03d85c077/authlib/integrations/starlette_client/apps.py",
+        "observed_utc": "2026-10-08T18:41:07.540003+00:00",
+        "http_status": 200,
+        "raw_bytes": 5885,
+        "raw_sha256": "9bf118faf7fb3562fb2e16e4eaf02f726533d552ff236b2c614a424093f4dff0",
+        "snapshot": "authlib/source/authlib/integrations/starlette_client/apps.py.gz",
+        "snapshot_sha256": "d0f2f956136189e590fca74bbbe338e54503f7e3721b551d3ca18cfea19e6676"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/authlib/authlib/1a86748b31a2b1940b09cf627d1b70e03d85c077/authlib/integrations/starlette_client/integration.py",
+        "observed_utc": "2026-10-08T18:41:08.121840+00:00",
+        "http_status": 200,
+        "raw_bytes": 2771,
+        "raw_sha256": "fe667082cf040bc618cee7c64a8935f12dd55ab451a1651504f0495ab13147be",
+        "snapshot": "authlib/source/authlib/integrations/starlette_client/integration.py.gz",
+        "snapshot_sha256": "6eac44106f6aee9b829c28f3392dfbca3d372ece1da3019c8745a6e19b87e34c"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/authlib/authlib/1a86748b31a2b1940b09cf627d1b70e03d85c077/authlib/integrations/base_client/async_openid.py",
+        "observed_utc": "2026-10-08T18:41:09.059438+00:00",
+        "http_status": 200,
+        "raw_bytes": 4492,
+        "raw_sha256": "7363a64dd485f8295ee472432715879e4cf8a2d43b889aa7cc84e72841827419",
+        "snapshot": "authlib/source/authlib/integrations/base_client/async_openid.py.gz",
+        "snapshot_sha256": "46f1020e7be39638fda05e9992ea9480cba34eceb3eee56a1ebc50a8bfe86688"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/authlib/authlib/1a86748b31a2b1940b09cf627d1b70e03d85c077/authlib/integrations/base_client/framework_integration.py",
+        "observed_utc": "2026-10-08T18:41:09.606086+00:00",
+        "http_status": 200,
+        "raw_bytes": 1945,
+        "raw_sha256": "8d9f6b7182d4c1100da2b42824dce2ec20b436871eba39caaca4a2706b22a6d2",
+        "snapshot": "authlib/source/authlib/integrations/base_client/framework_integration.py.gz",
+        "snapshot_sha256": "92928780f695ec9778b5fa0cfbca4bc0caee422db0bb56e7f653e4ccca70a7b6"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/authlib/authlib/1a86748b31a2b1940b09cf627d1b70e03d85c077/docs/oauth2/client/web/starlette.rst",
+        "observed_utc": "2026-10-08T18:41:10.554961+00:00",
+        "http_status": 200,
+        "raw_bytes": 4737,
+        "raw_sha256": "3de709a36c7a5de89caf214793eebbaa202cabf0c2d7dc1d22aafebcf0df1e07",
+        "snapshot": "authlib/source/docs/oauth2/client/web/starlette.rst.gz",
+        "snapshot_sha256": "a6082384c807ef9e29443929f265f0873b37b78e2ed173fdb6b2476b92ad0229"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/authlib/authlib/1a86748b31a2b1940b09cf627d1b70e03d85c077/authlib/integrations/base_client/async_app.py",
+        "observed_utc": "2026-10-08T18:43:34.895221+00:00",
+        "http_status": 200,
+        "raw_bytes": 5960,
+        "raw_sha256": "1fa9d8d8185d6f03cff3a2071a48d92c2d9413321a78641a039f745363f3e99f",
+        "snapshot": "authlib/source/authlib/integrations/base_client/async_app.py.gz",
+        "snapshot_sha256": "7a8f095cb1e081be1ec8ae447e16fd2786c1b0feb0fd5824e81717d0f9e345ad"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/authlib/authlib/1a86748b31a2b1940b09cf627d1b70e03d85c077/authlib/oidc/core/claims.py",
+        "observed_utc": "2026-10-08T18:43:35.365036+00:00",
+        "http_status": 200,
+        "raw_bytes": 10384,
+        "raw_sha256": "b513ebb513ff64d0c3fffe2482b74b47aaa1ce40ec839da69f13bec1b1c2af78",
+        "snapshot": "authlib/source/authlib/oidc/core/claims.py.gz",
+        "snapshot_sha256": "cb1af3d34f4c05c7702a6e8338296399115201e253dda7157a6eef9362571ccb"
+      }
+    ],
+    "wheel_provenance": false,
+    "installation": false
+  }
+]

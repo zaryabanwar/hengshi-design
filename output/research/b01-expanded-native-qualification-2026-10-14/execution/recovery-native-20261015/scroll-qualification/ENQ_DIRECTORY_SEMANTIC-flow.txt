@@ -1,0 +1,365 @@
+- application "Figma Design, 1 item selected" [active]
+- status: Screenreader support for the board is currently disabled. To enable it via Accessibility settings, press Ctrl+K, type Accessibility Settings, and press Enter. To see available keyboard shortcuts, enter Ctrl+Shift+Question mark .
+- status
+- region "Comments on canvas":
+  - button "Create new comment"
+- region "Left sidebar":
+  - toolbar "Navigation Bar":
+    - button "Main menu":
+    - separator
+    - button "File" [expanded]:
+      - generic: File
+    - button "Agents":
+      - generic: Agents
+    - button "Assets":
+      - generic: Assets
+    - button "Tools":
+      - generic: Tools
+    - separator
+    - button "Variables":
+      - generic: Variables
+  - button "Hengshi Design v1 — UI References, file name": Hengshi Design v1 — UI References
+  - generic: File name
+  - button "Edit file menu":
+  - button "Minimize UI":
+  - link "hengshi-design":
+    - /url: https://www.figma.com/files/team/1472694121837770005/project/666072293
+  - button "Free":
+    - generic: Free
+  - heading "Pages Find Add new page" [level=2]:
+    - button "Pages" [expanded]:
+      - generic: Pages
+    - button "Find":
+    - button "Add new page":
+  - grid:
+    - row "Page 1":
+      - gridcell "Page 1":
+        - button "Page 1":
+          - generic: Page 1
+  - slider "Resize handle"
+  - heading "Layers Collapse layers" [level=2]:
+    - button "Layers" [expanded]:
+      - generic: Layers
+    - button "Collapse layers":
+  - treegrid:
+    - row "B01 / Four-stream three-host qualification / v1" [expanded]:
+      - button:
+      - gridcell:
+      - gridcell "B01 / Four-stream three-host qualification / v1":
+        - generic: B01 / Four-stream three-host qualification / v1
+    - row "ENQ_RECOVERY_SEMANTIC / RESET probe" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_SEMANTIC / RESET probe":
+        - generic: ENQ_RECOVERY_SEMANTIC / RESET probe
+    - row "ENQ host RECOVERY SEMANTIC" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host RECOVERY SEMANTIC":
+        - generic: ENQ host RECOVERY SEMANTIC
+    - row "ENQ_RECOVERY_SEMANTIC / PRESERVE probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_SEMANTIC / PRESERVE probe":
+        - generic: ENQ_RECOVERY_SEMANTIC / PRESERVE probe
+    - row "ENQ_RECOVERY_SEMANTIC / Preview" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_SEMANTIC / Preview":
+        - generic: ENQ_RECOVERY_SEMANTIC / Preview
+    - row "ENQ_RECOVERY_LOW / RESET probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_LOW / RESET probe":
+        - generic: ENQ_RECOVERY_LOW / RESET probe
+    - row "ENQ_RECOVERY_LOW / PRESERVE probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_LOW / PRESERVE probe":
+        - generic: ENQ_RECOVERY_LOW / PRESERVE probe
+    - row "ENQ_RECOVERY_LOW / Preview" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_LOW / Preview":
+        - generic: ENQ_RECOVERY_LOW / Preview
+    - row "ENQ_RECOVERY_MEDIUM / RESET probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_MEDIUM / RESET probe":
+        - generic: ENQ_RECOVERY_MEDIUM / RESET probe
+    - row "ENQ_RECOVERY_MEDIUM / PRESERVE probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_MEDIUM / PRESERVE probe":
+        - generic: ENQ_RECOVERY_MEDIUM / PRESERVE probe
+    - row "ENQ_RECOVERY_MEDIUM / Preview" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_MEDIUM / Preview":
+        - generic: ENQ_RECOVERY_MEDIUM / Preview
+    - row "ENQ_RECOVERY_HIGH / RESET probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_HIGH / RESET probe":
+        - generic: ENQ_RECOVERY_HIGH / RESET probe
+    - row "ENQ_RECOVERY_HIGH / PRESERVE probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_HIGH / PRESERVE probe":
+        - generic: ENQ_RECOVERY_HIGH / PRESERVE probe
+    - row "ENQ_RECOVERY_HIGH / Preview" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_HIGH / Preview":
+        - generic: ENQ_RECOVERY_HIGH / Preview
+    - row "ENQ_DIRECTORY_SEMANTIC / RESET probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_SEMANTIC / RESET probe":
+        - generic: ENQ_DIRECTORY_SEMANTIC / RESET probe
+    - row "ENQ_DIRECTORY_SEMANTIC / PRESERVE probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_SEMANTIC / PRESERVE probe":
+        - generic: ENQ_DIRECTORY_SEMANTIC / PRESERVE probe
+    - row "ENQ_DIRECTORY_SEMANTIC / Preview" [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_SEMANTIC / Preview":
+        - generic: ENQ_DIRECTORY_SEMANTIC / Preview
+    - row "ENQ_DIRECTORY_LOW / RESET probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_LOW / RESET probe":
+        - generic: ENQ_DIRECTORY_LOW / RESET probe
+    - row "ENQ_DIRECTORY_LOW / PRESERVE probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_LOW / PRESERVE probe":
+        - generic: ENQ_DIRECTORY_LOW / PRESERVE probe
+    - row "ENQ_DIRECTORY_LOW / Preview" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_LOW / Preview":
+        - generic: ENQ_DIRECTORY_LOW / Preview
+    - row "ENQ_DIRECTORY_MEDIUM / RESET probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_MEDIUM / RESET probe":
+        - generic: ENQ_DIRECTORY_MEDIUM / RESET probe
+    - row "ENQ_DIRECTORY_MEDIUM / PRESERVE probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_MEDIUM / PRESERVE probe":
+        - generic: ENQ_DIRECTORY_MEDIUM / PRESERVE probe
+    - row "ENQ_DIRECTORY_MEDIUM / Preview" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_MEDIUM / Preview":
+        - generic: ENQ_DIRECTORY_MEDIUM / Preview
+    - row "ENQ_DIRECTORY_HIGH / RESET probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_HIGH / RESET probe":
+        - generic: ENQ_DIRECTORY_HIGH / RESET probe
+    - row "ENQ_DIRECTORY_HIGH / PRESERVE probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_HIGH / PRESERVE probe":
+        - generic: ENQ_DIRECTORY_HIGH / PRESERVE probe
+    - row "ENQ_DIRECTORY_HIGH / Preview" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_HIGH / Preview":
+        - generic: ENQ_DIRECTORY_HIGH / Preview
+    - row "ENQ_NAVIGATION_SEMANTIC / RESET probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_SEMANTIC / RESET probe":
+        - generic: ENQ_NAVIGATION_SEMANTIC / RESET probe
+    - row "ENQ_NAVIGATION_SEMANTIC / PRESERVE probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_SEMANTIC / PRESERVE probe":
+        - generic: ENQ_NAVIGATION_SEMANTIC / PRESERVE probe
+    - row "ENQ_NAVIGATION_SEMANTIC / Preview" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_SEMANTIC / Preview":
+        - generic: ENQ_NAVIGATION_SEMANTIC / Preview
+    - row "ENQ_NAVIGATION_LOW / RESET probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_LOW / RESET probe":
+        - generic: ENQ_NAVIGATION_LOW / RESET probe
+    - row "ENQ_NAVIGATION_LOW / PRESERVE probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_LOW / PRESERVE probe":
+        - generic: ENQ_NAVIGATION_LOW / PRESERVE probe
+    - row "ENQ_NAVIGATION_LOW / Preview" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_LOW / Preview":
+        - generic: ENQ_NAVIGATION_LOW / Preview
+    - row "ENQ_NAVIGATION_MEDIUM / RESET probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_MEDIUM / RESET probe":
+        - generic: ENQ_NAVIGATION_MEDIUM / RESET probe
+    - row "ENQ_NAVIGATION_MEDIUM / PRESERVE probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_MEDIUM / PRESERVE probe":
+        - generic: ENQ_NAVIGATION_MEDIUM / PRESERVE probe
+    - row "ENQ_NAVIGATION_MEDIUM / Preview" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_MEDIUM / Preview":
+        - generic: ENQ_NAVIGATION_MEDIUM / Preview
+    - row "B01 qualification / RECOVERY / v1" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "B01 qualification / RECOVERY / v1":
+        - generic: B01 qualification / RECOVERY / v1
+    - row "ENQ_NAVIGATION_HIGH / RESET probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_HIGH / RESET probe":
+        - generic: ENQ_NAVIGATION_HIGH / RESET probe
+    - row "ENQ_NAVIGATION_HIGH / PRESERVE probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_HIGH / PRESERVE probe":
+        - generic: ENQ_NAVIGATION_HIGH / PRESERVE probe
+    - row "ENQ_NAVIGATION_HIGH / Preview" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_HIGH / Preview":
+        - generic: ENQ_NAVIGATION_HIGH / Preview
+    - row "B01 qualification / DIRECTORY / v1" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "B01 qualification / DIRECTORY / v1":
+        - generic: B01 qualification / DIRECTORY / v1
+    - row "B01 qualification / NAVIGATION / v1" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "B01 qualification / NAVIGATION / v1":
+        - generic: B01 qualification / NAVIGATION / v1
+    - row "B01 / Native host-variant qualification / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Native host-variant qualification / v1":
+        - generic: B01 / Native host-variant qualification / v1
+    - row "B01 / Mode references / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Mode references / v1":
+        - generic: B01 / Mode references / v1
+    - row "B01 / Responsive viewport references / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Responsive viewport references / v1":
+        - generic: B01 / Responsive viewport references / v1
+    - row "B01 / Shared recovery specimens / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Shared recovery specimens / v1":
+        - generic: B01 / Shared recovery specimens / v1
+    - row "PRIM-001 / Capability refusal references / B01 v1":
+      - button:
+      - gridcell:
+      - gridcell "PRIM-001 / Capability refusal references / B01 v1":
+        - generic: PRIM-001 / Capability refusal references / B01 v1
+    - row "B01 / Capability refusal host references / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Capability refusal host references / v1":
+        - generic: B01 / Capability refusal host references / v1
+    - row "B01 / Shared recovery stream references / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Shared recovery stream references / v1":
+        - generic: B01 / Shared recovery stream references / v1
+  - slider "Resize handle"
+- region "Right sidebar":
+  - button "Multiplayer tools":
+  - group "Prototype view":
+    - button "Present":
+    - button "Prototype view":
+  - button "Share"
+  - tablist:
+    - tab "Design":
+      - generic: Design
+      - generic: Design
+    - tab "Prototype" [selected]:
+      - generic: Prototype
+      - generic: Prototype
+  - button "94%, zoom and view options":
+    - text: 94%
+  - generic: Add interactivity with Make
+  - button "Close":
+  - generic "Mock video of sample images shuffling"
+  - text: Figma Make opens up new ways to prototype—from responsive components to micro-interactions.
+  - button "Try Figma Make":
+    - generic: Try Figma Make
+  - heading "Flow starting point" [level=2]
+  - button "Copy flow link":
+  - button "Remove flow starting point":
+  - button "Edit flow title": ENQ_DIRECTORY_SEMANTIC v1
+  - generic: Flow starting point
+  - combobox "Flow starting point":
+    - generic: ENQ_DIRECTORY_SEMANTIC / Preview
+  - button "Edit flow description":
+  - button "Interactions":
+    - generic: Interactions
+  - button "Add action":
+  - heading "Scroll behavior" [level=2]
+  - generic: Overflow
+  - combobox "Overflow":
+    - generic: Vertical
+  - button "Show prototype settings":
+    - generic: Show prototype settings
+  - text: Removing a connection
+  - button "Close":
+  - generic: To delete a connection, click and drag on either end.
+  - text: Running your prototype
+  - button "Close":
+  - generic: Use the play button in the toolbar to play your prototype. If there are no connections, the play button can be used to play a presentation of your frames.
+  - slider "Resize handle"
+- region "Application toolbar":
+  - toolbar "Editor":
+    - group "Move":
+      - button "Move" [pressed]:
+      - button "Move tools":
+    - group "Frame":
+      - button "Frame":
+      - button "Region tools":
+    - group "Rectangle":
+      - button "Rectangle":
+      - button "Shape tools":
+    - group "Pen":
+      - button "Pen":
+      - button "Creation tools":
+    - group "Text":
+      - button "Text":
+      - button "Type tools":
+    - button "Comment":
+    - button "Actions":
+    - radiogroup "Toolbelt Mode":
+      - generic: Toolbelt Mode
+      - radio "Draw"
+      - generic: Draw
+      - radio "Design" [checked]
+      - generic: Design
+      - radio "Motion"
+      - generic: Motion
+      - radio "Dev Mode"
+      - generic: Dev Mode
+- region "Help/zoom toolbar":
+  - toolbar "Help/zoom toolbar":
+    - button "Help":
+- status
+- alert
+- alert

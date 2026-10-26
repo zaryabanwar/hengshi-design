@@ -1,0 +1,108 @@
+{
+  "scope": "reused synthetic behavior fixtures; expected validity from external React rules, not checker implementation",
+  "sources": [
+    "https://react.dev/reference/rules/rules-of-hooks",
+    "https://react.dev/reference/eslint-plugin-react-hooks/lints/exhaustive-deps",
+    "https://react.dev/reference/react/useEffectEvent"
+  ],
+  "cases": [
+    {
+      "name": "valid-hooks",
+      "file": "fixtures/valid-hooks.tsx",
+      "must_reject": false,
+      "oracle": "Rules of Hooks, exhaustive dependencies and Effect Event usage in official React documentation",
+      "source_fixture": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/fixtures/valid-hooks.tsx"
+    },
+    {
+      "name": "conditional-hook",
+      "file": "fixtures/conditional-hook.tsx",
+      "must_reject": true,
+      "oracle": "Rules of Hooks, exhaustive dependencies and Effect Event usage in official React documentation",
+      "source_fixture": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/fixtures/conditional-hook.tsx"
+    },
+    {
+      "name": "conditional-use",
+      "file": "fixtures/conditional-use.tsx",
+      "must_reject": false,
+      "oracle": "Rules of Hooks, exhaustive dependencies and Effect Event usage in official React documentation",
+      "source_fixture": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/fixtures/conditional-use.tsx"
+    },
+    {
+      "name": "missing-dependency",
+      "file": "fixtures/missing-dependency.tsx",
+      "must_reject": true,
+      "oracle": "Rules of Hooks, exhaustive dependencies and Effect Event usage in official React documentation",
+      "source_fixture": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/fixtures/missing-dependency.tsx"
+    },
+    {
+      "name": "effect-event-valid",
+      "file": "fixtures/effect-event-valid.tsx",
+      "must_reject": false,
+      "oracle": "Rules of Hooks, exhaustive dependencies and Effect Event usage in official React documentation",
+      "source_fixture": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/fixtures/effect-event-valid.tsx"
+    },
+    {
+      "name": "effect-event-in-deps",
+      "file": "fixtures/effect-event-in-deps.tsx",
+      "must_reject": true,
+      "oracle": "Rules of Hooks, exhaustive dependencies and Effect Event usage in official React documentation",
+      "source_fixture": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/fixtures/effect-event-in-deps.tsx"
+    },
+    {
+      "name": "effect-event-during-render",
+      "file": "fixtures/effect-event-during-render.tsx",
+      "must_reject": true,
+      "oracle": "Rules of Hooks, exhaustive dependencies and Effect Event usage in official React documentation",
+      "source_fixture": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/fixtures/effect-event-during-render.tsx"
+    },
+    {
+      "name": "effect-event-as-click-handler",
+      "file": "fixtures/effect-event-as-click-handler.tsx",
+      "must_reject": true,
+      "oracle": "Rules of Hooks, exhaustive dependencies and Effect Event usage in official React documentation",
+      "source_fixture": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/fixtures/effect-event-as-click-handler.tsx"
+    },
+    {
+      "name": "custom-hook-conditional",
+      "file": "fixtures/custom-hook-conditional.tsx",
+      "must_reject": true,
+      "oracle": "Hook execution order remains required after import aliasing; configured custom effects require exhaustive dependencies",
+      "source_fixture": "output/research/compatibility-evidence-reconciliation-2026-10-05/092-custom-hook-conditional.tsx"
+    },
+    {
+      "name": "named-hook-alias-conditional",
+      "file": "fixtures/named-hook-alias-conditional.tsx",
+      "must_reject": true,
+      "oracle": "Hook execution order remains required after import aliasing; configured custom effects require exhaustive dependencies",
+      "source_fixture": "output/research/compatibility-evidence-reconciliation-2026-10-05/093-named-hook-alias-conditional.tsx"
+    },
+    {
+      "name": "namespace-conditional",
+      "file": "fixtures/namespace-conditional.tsx",
+      "must_reject": true,
+      "oracle": "Hook execution order remains required after import aliasing; configured custom effects require exhaustive dependencies",
+      "source_fixture": "output/research/compatibility-evidence-reconciliation-2026-10-05/094-namespace-conditional.tsx"
+    },
+    {
+      "name": "renamed-hook-conditional",
+      "file": "fixtures/renamed-hook-conditional.tsx",
+      "must_reject": true,
+      "oracle": "Hook execution order remains required after import aliasing; configured custom effects require exhaustive dependencies",
+      "source_fixture": "output/research/compatibility-evidence-reconciliation-2026-10-05/098-renamed-hook-conditional.tsx"
+    },
+    {
+      "name": "custom-effect-shared-invalid",
+      "file": "fixtures/custom-effect-shared-invalid.tsx",
+      "must_reject": true,
+      "oracle": "Hook execution order remains required after import aliasing; configured custom effects require exhaustive dependencies",
+      "source_fixture": "output/research/compatibility-evidence-reconciliation-2026-10-05/102-custom-effect-shared-invalid.tsx"
+    },
+    {
+      "name": "custom-effect-shared-valid",
+      "file": "fixtures/custom-effect-shared-valid.tsx",
+      "must_reject": false,
+      "oracle": "Hook execution order remains required after import aliasing; configured custom effects require exhaustive dependencies",
+      "source_fixture": "output/research/compatibility-evidence-reconciliation-2026-10-05/101-custom-effect-rule-valid.tsx"
+    }
+  ]
+}

@@ -1,0 +1,458 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "scope": "Read-only native-result evidence and exact appended backend claims; verify preserved harness failure/canonical-name correction, 43 identities/hashes, commands, 14 probe results, warning, budget/protected inputs. No rerun, install, socket or provider.",
+  "reviewer_authorization": false,
+  "inputs": [
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/qualification-plan.json",
+      "bytes": 6678,
+      "sha256": "b9298363e7a0cfeef76dad29e18f8aa165a5d7790e4291b567711374603a0cb9"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/candidate-hashed-requirements.txt",
+      "bytes": 4315,
+      "sha256": "8b86653929a4707ad0d6346c8a7763f8d6c26b901d91c3dc49dc7a4427b4365b"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/closure-observations.json",
+      "bytes": 25093,
+      "sha256": "538240c2d54f97ae27b6031a7520450cc512f108638ce603f8c7dfb14e5c2c77"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/proposal.json",
+      "bytes": 1545,
+      "sha256": "aef968c702ef92c4510fe282e92be7ad5825e77d63e1b7d7e4677e54633e971d"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/run_native_trial.py",
+      "bytes": 9242,
+      "sha256": "db33944069f582859a9ecbba2c9352169ced74fc762cd280d9b63124df54107f"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/continue_native_trial.py",
+      "bytes": 6072,
+      "sha256": "cb694ef2cb2274d6d388394745512c4057fdcb9211ff3bfff39d119f5b1ca8eb"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/runner-preflight-correction.json",
+      "bytes": 320,
+      "sha256": "4108bfb7a5f70e0119c7dd580834e60d53a16dc8cdf724c52a5a9843812e9fbe"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-probes/test_libraries.py",
+      "bytes": 6038,
+      "sha256": "0f5b7a2341226d3568d7a411d1669bd0ebb5637eaecf2ead4312d19f90272fa7"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/review/correction-1/review-inputs.json",
+      "bytes": 3673,
+      "sha256": "37603993e713c0eca7e06dedf4131045f5db257dfff842577b11198f3c75eb11"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/review/correction-1/independent-review-correction-1-v1.json",
+      "bytes": 2631,
+      "sha256": "5923c9165e8944575837b27dc5d049658617c3abaf74b5d909221fb4c0ecb86f"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/01-host-identity.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/01-host-identity.stdout.txt",
+      "bytes": 113,
+      "sha256": "0b33f7e9592a16f072892c2446158deb64470840d565f1a104df64b332026e86"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/02-create-pipless-venv.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/02-create-pipless-venv.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/03-download-exact-wheels.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/03-download-exact-wheels.stdout.txt",
+      "bytes": 13517,
+      "sha256": "92ad01af8728eccf2d3f2c2bdfb40e5f1e7f7603dd8fbebbb8e23e84dd10d900"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/04-offline-install.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/04-offline-install.stdout.txt",
+      "bytes": 10846,
+      "sha256": "d38fc09bf9a791316d0f26c1de432edd22bdcd3912f561446630672c67a8ecdb"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/05-pip-check.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/05-pip-check.stdout.txt",
+      "bytes": 31,
+      "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/06-installed-identities.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/06-installed-identities.stdout.txt",
+      "bytes": 961,
+      "sha256": "9dd26b76b17f562bb5df12c4882b9fa2ba5a15905e6413e1a35f55f0e7f633d5"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/07-library-probes.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/07-library-probes.stdout.txt",
+      "bytes": 682,
+      "sha256": "776534548d29fc3cdf3f146c8cf8302945b40106e1fc9f813781c5c7a784c3b4"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/08-native-libpq-identity.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/08-native-libpq-identity.stdout.txt",
+      "bytes": 78,
+      "sha256": "247f3f1563460a3759a819997439a49a4658f074427be66a7e2a0351bd20fba6"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/authorization.json",
+      "bytes": 1605,
+      "sha256": "f7292807f6d5f65c59c524707a0e7ce89775c1071406a29180b878b2719945d8"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/commands.json",
+      "bytes": 4954,
+      "sha256": "ace73f1090598d8acd979d4722ba7a74be53b5541e3d86057fd755486404ebfc"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/continuation-commands.json",
+      "bytes": 1781,
+      "sha256": "05865e60983ebae49e8bf29bfd1d06912484439b988b2e3966467e9544c007df"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/continuation-correction.json",
+      "bytes": 907,
+      "sha256": "933ed2ca41c8294d4564f8d5612c58e7da566a67be1e78612f28a45b5dabe6cc"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/continuation-receipt.json",
+      "bytes": 876,
+      "sha256": "a35fd7f9a1bc20c512dcd674318ba117a8479cfbfd6fb43efcb45888c3959576"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/installation-admission.json",
+      "bytes": 273,
+      "sha256": "561c975e17bf5e400a777a1fafce5a75cb8144541ad7165896acc1b5bf1eae0e"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/installed-identities.json",
+      "bytes": 1093,
+      "sha256": "0f0d925dd6ad899142e8ed5acc6df0e9cd985910603f7e02771ffcd0875851bb"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/library-probes.xml",
+      "bytes": 1434,
+      "sha256": "4f27af5dd2f9a63eba5813b45a1f34aca1818350bcbb2b81f2194a3c4f8558d4"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/pytest.ini",
+      "bytes": 80,
+      "sha256": "5d7c6a470461c63418eda1c2bb840cf1ad362afd016c871c02eb7cbdbe542af5"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/receipt.json",
+      "bytes": 805,
+      "sha256": "b2407c9aced53cf796d52fde39ec9132e1787971008406944ba005461cef66a8"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-trial/wheel-inspection.json",
+      "bytes": 8658,
+      "sha256": "97920dbfff51b70d4b07fe3533865a9c4cb3dc014ba8b6893b8cb0a00a4861f0"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/backend-appendix.md",
+      "bytes": 3187,
+      "sha256": "64d97f34aa1c3f75f09dec95f00a3e0a4b43bf5ea24f0f7655499071577f92c7"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/backend.before.md",
+      "bytes": 38208,
+      "sha256": "08288bcb2347f20ad61998bf1f3df177f93727ad6a345803b664bce1c5c230e3"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/backend.proposed.md",
+      "bytes": 41395,
+      "sha256": "f8b998b50b849894750db252a1501f32eefff17ff6b2ec1e833b146b822e2841"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/httpx2-registry.json.gz",
+      "bytes": 11193,
+      "sha256": "830be6cf8e2ddf6092b9fda209fb7ec8d9713aea3ae701f64e9da667bde388e9"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-starlette-testclient.py",
+      "bytes": 21597,
+      "sha256": "9e85a77aeb913c0913b2a9de977ae617554ecd08a645ec89bca2e0809fff761b"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/name-normalization.rst.gz",
+      "bytes": 864,
+      "sha256": "9c5385bc4a072adcaf94e4054b0c141fab9b0f57a4c7c88c11682a659523421e"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/sources.json",
+      "bytes": 840,
+      "sha256": "50e3e8c953bf6f7fa5c4703d9a86d7afea99a80c7f9a901ace160f5f6ccb6a15"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/starlette-testclient.py.gz",
+      "bytes": 5194,
+      "sha256": "7927dc9dcacf0a660196522c47eda8d486265af941b35bfcdbeef9ef9cd6a313"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/test-client-observation.json",
+      "bytes": 503,
+      "sha256": "fdb338a3b7d944c2961a5cb553a58630e6148143ad970184b85617c20a656a8e"
+    },
+    {
+      "path": "docs/phase-1-compatibility/backend-evidence-2026-10-04.md",
+      "bytes": 41395,
+      "sha256": "f8b998b50b849894750db252a1501f32eefff17ff6b2ec1e833b146b822e2841"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/alembic-1.20.0.dist-info.txt",
+      "bytes": 7316,
+      "sha256": "bd32c118c43955c106bfa4255b2fb5ac9db410b0f7255a4cafb14b9e221ff41c"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/annotated_doc-0.0.5.dist-info.txt",
+      "bytes": 6516,
+      "sha256": "8c24d70c5d9153d22123353a906042fd7603df2d15c2196290b0f8a962558c46"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/annotated_types-0.8.0.dist-info.txt",
+      "bytes": 15009,
+      "sha256": "614985b278f601b8ef863f82783b991cc3ada4b89f592eb71c7c48c5f2ef2298"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/anyio-4.15.1.dist-info.txt",
+      "bytes": 4733,
+      "sha256": "043aecb571af7189e8a6c528f5d8e32545f1b2cdfaaf761d51e6d5b67ea3ca81"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/bcrypt-5.0.0.dist-info.txt",
+      "bytes": 10844,
+      "sha256": "8ef608800dfe16e1c892b7d04535647cada908b72b5ed60e4e72771c497f03b8"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/certifi-2026.7.22.dist-info.txt",
+      "bytes": 2474,
+      "sha256": "ef5af1638fbb23676ac3c5777dfcfc2cd9c348fe4172ed5ba3d277655b248090"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/cffi-2.1.1.dist-info.txt",
+      "bytes": 2594,
+      "sha256": "67b6a7595df7ede2195016a05d285faa7d362a8f57c238984edb8bb674b5770d"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/click-8.5.0.dist-info.txt",
+      "bytes": 2567,
+      "sha256": "e87bce0bd194de70dfb8e708e0a6b0483009f25611804eaf87bfeb63e6c20501"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/colorama-0.4.6.dist-info.txt",
+      "bytes": 17158,
+      "sha256": "7baed29eb50c3b29bdb33ff84e3177bf1bc05784f7685ecdcaa4471c7dd810cc"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/cryptography-50.0.2.dist-info.txt",
+      "bytes": 4394,
+      "sha256": "047cfc71226409de4318b360aef15c63a2adf609731e3dcf7fe932f14ea042ee"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/dnspython-2.8.0.dist-info.txt",
+      "bytes": 5680,
+      "sha256": "74f759539b89e299151b2d697c612307345b766dbb7e9435cf863a06981fd385"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/email_validator-2.3.0.dist-info.txt",
+      "bytes": 26006,
+      "sha256": "2a97b81eefcd856bc80b0346f47fa2d800b9a438bf8f9231ae00fe931d5c9fbc"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/fastapi-0.143.0.dist-info.txt",
+      "bytes": 26788,
+      "sha256": "1bfa2ecf35ea529d68e56c195c5a4cee7864335d24bcc4a76cf40d7a71edc6e9"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/h11-0.16.0.dist-info.txt",
+      "bytes": 8348,
+      "sha256": "28f326098ac09fcba79b8f180f96087c841fe2456215cb7b872a9c7d5cd19d64"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/httpcore-1.0.9.dist-info.txt",
+      "bytes": 21529,
+      "sha256": "fe2d4fda6199128978779e0cf27f3c045c531863fcdd987eacc74f3a18d41c21"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/httptools-0.8.0.dist-info.txt",
+      "bytes": 3663,
+      "sha256": "e2b04429eb51dcdaf38f3c02a66317e58234793143ee1eadc9b81988210400e6"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/httpx-0.28.1.dist-info.txt",
+      "bytes": 7052,
+      "sha256": "febb9b0f8f3e80d57c8199c304f35c4336e8581d1d18d7983c92766b82793b25"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/idna-3.20.dist-info.txt",
+      "bytes": 7207,
+      "sha256": "dbd8c14c1e4ca1e0c9824a6dbc7cbbf78884f38eb52d91148cd3025f671e4b85"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/iniconfig-2.3.1.dist-info.txt",
+      "bytes": 2826,
+      "sha256": "47c2c35d936f5c649d8074c6464719a42966a67b5cebad01e3e5784cf090cfb6"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/mako-1.4.3.dist-info.txt",
+      "bytes": 2942,
+      "sha256": "39ea65f21e706265428ea6f2925520f419a10f0113a59318192ed38175d8838b"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/markupsafe-3.0.4.dist-info.txt",
+      "bytes": 2764,
+      "sha256": "08fa79954ab288d778b0fee4f0e6c7dbc869e545a415747d1324622465d3b08d"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/opentelemetry_api-1.45.1.dist-info.txt",
+      "bytes": 1411,
+      "sha256": "5bc71e90cb421be92a43bf5ad5b0f25dccfa2a24ddceaa2877779879962a4c9e"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/packaging-26.3.dist-info.txt",
+      "bytes": 3544,
+      "sha256": "70fdb89fc4d4a9a043bf7372b8972bcc883fddff34ab55e9cf80d73875384763"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/pluggy-1.6.0.dist-info.txt",
+      "bytes": 4811,
+      "sha256": "7438c35ee25a095eb7416f84b461c2d74425c5e734ad54c3912453c65244e01c"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/psycopg-3.3.6.dist-info.txt",
+      "bytes": 4369,
+      "sha256": "351960397d6b386beae931f5bfd945e8c1212e9505017d1b15c72d4c33bb00af"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/psycopg_binary-3.3.6.dist-info.txt",
+      "bytes": 2777,
+      "sha256": "f2c36698ee3d46dc3bdc90d87baa7001914abc3535b20bd6f260d4e422b88463"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/pycparser-3.1.dist-info.txt",
+      "bytes": 8237,
+      "sha256": "f4a14c8bb8bcb1139830e9722da8725fc36c8e22ee0d13e5d094b5b354f80a9d"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/pydantic-2.14.0.dist-info.txt",
+      "bytes": 131572,
+      "sha256": "11c8967cbcd622677943be38b48a3931cc524250acd9d8c7a6386408099c4cf9"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/pydantic_core-2.50.0.dist-info.txt",
+      "bytes": 6650,
+      "sha256": "c6a47d0c4ab47f3e16ff6dc06e5b77097c8144ad53cb91097cfe65e97614cbfc"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/pygments-2.21.0.dist-info.txt",
+      "bytes": 2527,
+      "sha256": "1dde075570136774c706bf0009183a793fe0ee262e4a5590cc6eff8453eedd43"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/pyjwt-2.15.1.dist-info.txt",
+      "bytes": 3500,
+      "sha256": "1ea0c9f139b8c928276b3628af165955f6f764491448a6ad8f103cdcbb382da3"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/pytest-9.1.1.dist-info.txt",
+      "bytes": 7586,
+      "sha256": "c5d032518012789cabc870d46589aca3aeda36cf9fa4399ee88bda3d10438451"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/pytest_asyncio-1.4.0.dist-info.txt",
+      "bytes": 4137,
+      "sha256": "4e583f46befbdb780e30a98856ab46afb88da6e65b6c9fb94d3794746faa8516"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/python_dotenv-1.2.4.dist-info.txt",
+      "bytes": 29979,
+      "sha256": "87cfee6042412d48df1100ea7822684988c3f2b79de7a250f4717f4df3026d6f"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/pyyaml-6.0.3.dist-info.txt",
+      "bytes": 2410,
+      "sha256": "847a701020334386852b6e07bad1053cb0ce3da9ee1846e7e9d02b24e8bb3f8d"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/sqlalchemy-2.1.4.dist-info.txt",
+      "bytes": 9928,
+      "sha256": "c3e2b69f1b8399f54915d08b21e4672f2652473b5afa591581562ae075306bec"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/starlette-1.7.0.dist-info.txt",
+      "bytes": 6610,
+      "sha256": "f7870fc19ab7c2e364887057340b9fb47e9bda74d24b06c58ca399494abfe019"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/typing_extensions-4.16.0.dist-info.txt",
+      "bytes": 3310,
+      "sha256": "b05084ca1d50879865178d9fff9fabeab61bdfb1f361bfbde95421ffc8f9be46"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/typing_inspection-0.4.4.dist-info.txt",
+      "bytes": 2554,
+      "sha256": "bad3d9e6342ef6750cf5128ec942327b8bebdce0b6e4d6f67cb15b27ae5118da"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/tzdata-2026.5.dist-info.txt",
+      "bytes": 1358,
+      "sha256": "e0780e8b6dc8882ce87e871a9d4589d59cb05a0c2d64f58b1ba62cde1ee91f6a"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/uvicorn-0.54.0.dist-info.txt",
+      "bytes": 6607,
+      "sha256": "9399e5ddda3d26e842d6fb5420c38b0857aac568d53badbdc224b3a21339efa8"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/watchfiles-1.3.0.dist-info.txt",
+      "bytes": 4985,
+      "sha256": "3b30e7c9377f43cb59b408185ae7707ec55d5b746395bdaa32a45819ea49d78b"
+    },
+    {
+      "path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/installed-metadata/websockets-17.2.dist-info.txt",
+      "bytes": 6506,
+      "sha256": "120a5bb2d761950170e22fc77a43536d157f85b1cf2bf9c413324bfdb35e46e7"
+    }
+  ]
+}

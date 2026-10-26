@@ -1,0 +1,145 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Reference-only owner/navigation reconciliation and preservation of two exact pending packets; no independent verdict or acceptance",
+  "canonical_changed": [
+    "docs/phase-1-architecture/README.md",
+    "docs/phase-1-architecture/contracts/DATA_CONTRACT.md"
+  ],
+  "preserved_packets": [
+    {
+      "manifest": "output/research/staff-session-data-binding-2026-10-17/review-inputs-v1.json",
+      "manifest_sha256": "ce54231a42f5a552b8c19b7876376f2c8c8943562fc82dee96321eb049c36963",
+      "inputs": 13,
+      "mismatches": [],
+      "snapshot_substitutions": [
+        {
+          "original": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+          "snapshot": "output/research/architecture-owner-navigation-2026-10-17/DATA_CONTRACT.before.md"
+        },
+        {
+          "original": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+          "snapshot": "output/research/privacy-purpose-bindings-2026-10-17/SECURITY_PRIVACY_CONTRACT.before.md"
+        }
+      ],
+      "scope": "Frozen artifact identity only; no review verdict"
+    },
+    {
+      "manifest": "output/research/privacy-purpose-bindings-2026-10-17/review-inputs-v1.json",
+      "manifest_sha256": "ebea6a462e1192dfa5559b234c289c78a1b9d70369d3c654e666bbbc72180dae",
+      "inputs": 15,
+      "mismatches": [],
+      "snapshot_substitutions": [
+        {
+          "original": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+          "snapshot": "output/research/architecture-owner-navigation-2026-10-17/DATA_CONTRACT.before.md"
+        }
+      ],
+      "scope": "Frozen artifact identity only; no review verdict"
+    }
+  ],
+  "new_local_targets": [
+    {
+      "source": "docs/phase-1-architecture/README.md",
+      "target": "../phase-1-3d/qualification-workloads.csv",
+      "file_exists": true,
+      "fragment": null
+    },
+    {
+      "source": "docs/phase-1-architecture/README.md",
+      "target": "../../output/research/world-capability-workloads-2026-10-17/review-inputs-v1.json",
+      "file_exists": true,
+      "fragment": null
+    },
+    {
+      "source": "docs/phase-1-architecture/README.md",
+      "target": "../../output/research/privacy-purpose-bindings-2026-10-17/review-inputs-v1.json",
+      "file_exists": true,
+      "fragment": null
+    },
+    {
+      "source": "docs/phase-1-architecture/README.md",
+      "target": "../phase-1-3d/WORLD_MEASUREMENT_PROFILE.md#capability-samples-and-workload-registration-proposal--2026-10-17",
+      "file_exists": true,
+      "fragment": "capability-samples-and-workload-registration-proposal--2026-10-17"
+    },
+    {
+      "source": "docs/phase-1-architecture/README.md",
+      "target": "contracts/SECURITY_PRIVACY_CONTRACT.md#purpose-notice-and-copy-binding-registry-proposal--2026-10-17",
+      "file_exists": true,
+      "fragment": "purpose-notice-and-copy-binding-registry-proposal--2026-10-17"
+    },
+    {
+      "source": "docs/phase-1-architecture/README.md",
+      "target": "contracts/STAFF_SESSION_PROTOCOL.md",
+      "file_exists": true,
+      "fragment": null
+    },
+    {
+      "source": "docs/phase-1-architecture/README.md",
+      "target": "../../output/research/staff-session-data-binding-2026-10-17/review-inputs-v1.json",
+      "file_exists": true,
+      "fragment": null
+    },
+    {
+      "source": "docs/phase-1-architecture/README.md",
+      "target": "../../output/research/staff-session-controls-2026-10-17/correction-1/independent-review-controls-correction-v1.json",
+      "file_exists": true,
+      "fragment": null
+    },
+    {
+      "source": "docs/phase-1-architecture/README.md",
+      "target": "contracts/staff-session-control.schema.json",
+      "file_exists": true,
+      "fragment": null
+    },
+    {
+      "source": "docs/phase-1-architecture/README.md",
+      "target": "contracts/privacy-purpose-bindings.csv",
+      "file_exists": true,
+      "fragment": null
+    },
+    {
+      "source": "docs/phase-1-architecture/README.md",
+      "target": "../../output/research/staff-session-controls-2026-10-17/catalogue-binding/review-inputs-v1.json",
+      "file_exists": true,
+      "fragment": null
+    },
+    {
+      "source": "docs/phase-1-architecture/README.md",
+      "target": "../../output/research/staff-session-controls-2026-10-17/canonical-binding/independent-review-canonical-controls-v1.json",
+      "file_exists": true,
+      "fragment": null
+    },
+    {
+      "source": "docs/phase-1-architecture/README.md",
+      "target": "contracts/DATA_CONTRACT.md#staff-principalsession-field-binding-proposal--2026-10-17",
+      "file_exists": true,
+      "fragment": "staff-principalsession-field-binding-proposal--2026-10-17"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "target": "#public-text-projection-profile-proposal--2026-10-08",
+      "file_exists": true,
+      "fragment": "public-text-projection-profile-proposal--2026-10-08"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "target": "#staff-principalsession-field-binding-proposal--2026-10-17",
+      "file_exists": true,
+      "fragment": "staff-principalsession-field-binding-proposal--2026-10-17"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "target": "../../../output/research/staff-session-data-binding-2026-10-17/review-inputs-v1.json",
+      "file_exists": true,
+      "fragment": null
+    }
+  ],
+  "bounds": [
+    "D065 architecture baseline/authority-map, logical field/entity matrices, all schemas/fixtures and existing review receipts unchanged.",
+    "No prose/runtime/schema tests or new browser opening; local browser is still held by the prior disabled-setting response.",
+    "Later navigation edits are outside prior PASS; pending source aliases preserve old bytes, not new review authority.",
+    "No new route, mechanism, clock, privacy policy, workload, data model, app/runtime dependency or external/Git action."
+  ]
+}

@@ -4,7 +4,8 @@
 
 | Field | Value |
 |---|---|
-| Status | Draft |
+| Status | TODO |
+| Product/definition | v1; D-069 |
 | Spec | `specs/{{ number }}-{{ slug }}/spec.md` |
 | Current phase | |
 | Approved decision references | |
@@ -14,7 +15,12 @@
 | Founder approver | |
 | Created | {{ date }} |
 | Last updated | {{ date }} |
-| Maximum revision cycles | 2; use 3 only for brand, UI, motion, or 3D |
+| Correction policy | D-097: no numeric cap; diagnose repeated failures; escalate material decisions only |
+
+D-097: plan one assigned increment. Approve its relevant scope/design/contracts;
+do not wait for unrelated 3D or complete-platform definition. Reuse accepted work.
+Review applies to material design, money/security/external-system work or an
+explicit request; ordinary corrections and navigation need no separate reviewer.
 
 ## Objective and Exclusions
 
@@ -56,6 +62,12 @@ _Describe the approved approach and why it is the smallest compatible change._
 
 Complete this section for every version-sensitive change. Evaluate coupled sets as
 a graph and re-run immediately before exact locks are written.
+Apply latest mutually compatible stable selection to every coupled tool,
+framework, library, runtime and exporter. Individually newest registry releases
+are observations; peer ranges alone are not proof. Keep factual technical/schema
+versions accurate. D-068 defers provider/region/cost planning with Azure/AWS
+candidates; do not select a cloud or require Microsoft 365 setup in this plan.
+Preserve approved identity/AI privacy routes and verify required API capabilities.
 
 | Component/set | Current | Proposed stable target | Context7 ID/query date | Official release/registry evidence | Peer/runtime/browser/cloud constraints | Breaking/security notes | Spike/test evidence | Rollback | Status |
 |---|---|---|---|---|---|---|---|---|---|
@@ -156,6 +168,6 @@ separate and reversible.
 - [ ] Objective achieved within exclusions and write scope
 - [ ] Compatibility graph has no unresolved production conflict
 - [ ] Required tests, inspection, failure, and rollback evidence passed
-- [ ] Independent review has no unresolved critical finding
-- [ ] Durable state, decisions, risks, manual actions, and changelog synchronized
-- [ ] Founder approval requested through the click-based gate
+- [ ] Required independent review has no unresolved material finding, or is not applicable with reason
+- [ ] Owning product references and compact checkpoint updated; no routine review narrative
+- [ ] Applicable founder design/material-choice approval recorded; settled decisions not requested again

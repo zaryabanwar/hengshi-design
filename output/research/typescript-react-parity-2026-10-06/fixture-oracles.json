@@ -1,0 +1,73 @@
+{
+  "scope": "finite React19 declaration diagnostic controls, independently defined outcomes; no lint/runtime/build/editor/native-LSP parity",
+  "fixtures": [
+    {
+      "name": "valid-component",
+      "expected_codes": [],
+      "expected_acceptance": true,
+      "expected_exit_policy": "zero iff accepted; invalid exit must be nonzero, exact numeric exit is compared separately",
+      "basis": "Declared numeric props/state, button events/ref and DOM container are valid per React TypeScript guidance."
+    },
+    {
+      "name": "valid-async-component",
+      "expected_codes": [],
+      "expected_acceptance": true,
+      "expected_exit_policy": "zero iff accepted; invalid exit must be nonzero, exact numeric exit is compared separately",
+      "basis": "React19 types accept Promise ReactNode JSX component return; this is typing only, not client/server runtime support."
+    },
+    {
+      "name": "invalid-prop",
+      "expected_codes": [
+        2322
+      ],
+      "expected_acceptance": false,
+      "expected_exit_policy": "zero iff accepted; invalid exit must be nonzero, exact numeric exit is compared separately",
+      "basis": "A number cannot satisfy the declared string prop."
+    },
+    {
+      "name": "missing-prop",
+      "expected_codes": [
+        2741
+      ],
+      "expected_acceptance": false,
+      "expected_exit_policy": "zero iff accepted; invalid exit must be nonzero, exact numeric exit is compared separately",
+      "basis": "A declared required prop cannot be omitted."
+    },
+    {
+      "name": "invalid-state-action",
+      "expected_codes": [
+        2345
+      ],
+      "expected_acceptance": false,
+      "expected_exit_policy": "zero iff accepted; invalid exit must be nonzero, exact numeric exit is compared separately",
+      "basis": "A string is outside numeric state setter action union; hook usage pattern is not being linted."
+    },
+    {
+      "name": "invalid-ref",
+      "expected_codes": [
+        2322
+      ],
+      "expected_acceptance": false,
+      "expected_exit_policy": "zero iff accepted; invalid exit must be nonzero, exact numeric exit is compared separately",
+      "basis": "A div ref is incompatible with a button ref target."
+    },
+    {
+      "name": "invalid-event-property",
+      "expected_codes": [
+        2339
+      ],
+      "expected_acceptance": false,
+      "expected_exit_policy": "zero iff accepted; invalid exit must be nonzero, exact numeric exit is compared separately",
+      "basis": "A property absent from HTMLButtonElement must fail contextual event typing."
+    },
+    {
+      "name": "invalid-dom-root",
+      "expected_codes": [
+        2345
+      ],
+      "expected_acceptance": false,
+      "expected_exit_policy": "zero iff accepted; invalid exit must be nonzero, exact numeric exit is compared separately",
+      "basis": "A string is not an accepted ReactDOM root container."
+    }
+  ]
+}

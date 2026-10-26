@@ -1,6 +1,20 @@
 # Requirements to Architecture Mapping v3.0
 ## Hengshi Design Digital Platform
 
+> Current authority notice — 2026-10-04: this February mapping is retained
+> prototype/history evidence, not current requirements traceability or proof of
+> implemented controls. Its original "Active" label and verification ticks do not
+> approve production behavior. The RBAC row below claims `require_admin()` checks
+> an admin role, but the current `apps/api/app/auth/deps.py:48–51` merely returns
+> the authenticated user; R-004 in [RISKS.md](../../RISKS.md) remains open.
+> No security correction or application test was performed by this notice.
+> Use [the documentation successor map](Documentation_Index.md#current-successors-for-historical-documents),
+> [accepted architecture boundaries](../phase-1-architecture/ARCHITECTURE.md),
+> current [decisions](../../DECISIONS.md) and feature-scoped traceability for
+> current authority. Exact interface/data/security contracts remain proposals
+> until their applicable integrated acceptance. Preserve this original mapping
+> for comparison; do not maintain it as a competing production definition.
+
 ### Document Control
 - **Document ID:** RAM-HD-2026-003
 - **Version:** 3.0

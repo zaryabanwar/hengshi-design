@@ -1,0 +1,26 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "approval": "reconnected\u2014approve one retry.",
+  "scope": "one attempt18 for the same 52 directory/search references and two file-local components with preflight and representative previews",
+  "fileKey": "GOmLP6Cv96l768ueSrZ5Dg",
+  "attempt": 18,
+  "conservative_metered_attempt": 15,
+  "result": {
+    "error": {
+      "message": "Return value exceeds the 20480-byte limit (43790 bytes). Canvas edits from this run were not committed.",
+      "debugUuid": "23756574-719d-4d28-9af1-c326f86edede"
+    },
+    "safeToRetryWithoutCanvasRead": true,
+    "error_code": "INVALID_ARGUMENT"
+  },
+  "canvas_edits_committed": false,
+  "canvas_statement_basis": "provider explicit error; no independent canvas reread",
+  "design_result_returned": false,
+  "created_ids_returned": false,
+  "preview_returned": false,
+  "actual_provider_debit_and_balance": "unknown",
+  "approval_consumed": true,
+  "retry_performed": false,
+  "script_sha256": "4c811c9122bc049af4b5a01561a97b563c5eed849e9fab20809cdb54b67b62b8"
+}

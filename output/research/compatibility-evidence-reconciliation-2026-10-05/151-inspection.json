@@ -1,0 +1,997 @@
+{
+  "status": "DOING",
+  "date": "2026-10-04",
+  "scope": "Unselected candidate package notice evidence, not legal clearance, a build SBOM or production compatibility",
+  "package": "gsap",
+  "version": "3.15.0",
+  "candidate_lock": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/package-lock.json",
+  "lock_entry": {
+    "version": "3.15.0",
+    "resolved": "https://registry.npmjs.org/gsap/-/gsap-3.15.0.tgz",
+    "integrity": "sha512-dMW4CWBTUK1AEEDeZc1g4xpPGIrSf9fJF960qbTZmN/QwZIWY5wgliS6JWl9/25fpTGJrMRtSjGtOmPnfjZB+A==",
+    "license": "Standard 'no charge' license: https://gsap.com/standard-license."
+  },
+  "metadata": {
+    "requested_url": "https://registry.npmjs.org/gsap/3.15.0",
+    "final_url": "https://registry.npmjs.org/gsap/3.15.0",
+    "status": 200,
+    "content_type": "application/json",
+    "observed_at": "2026-10-04T15:00:42.636309+00:00",
+    "path": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/registry.json",
+    "bytes": 2137,
+    "sha256": "787E4FDBA7EDC45B2A67AF281508C4E518AD985EE0D972B9238847FA807768A9"
+  },
+  "archive": {
+    "requested_url": "https://registry.npmjs.org/gsap/-/gsap-3.15.0.tgz",
+    "final_url": "https://registry.npmjs.org/gsap/-/gsap-3.15.0.tgz",
+    "status": 200,
+    "content_type": "application/octet-stream",
+    "observed_at": "2026-10-04T15:00:44.790610+00:00",
+    "path": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/gsap-3.15.0.tgz",
+    "bytes": 1697897,
+    "sha256": "D2E33AD202D4811E9084883F7FF9A27967AC4095CAEF51CA4C9D20697A253B1C"
+  },
+  "registry_license": "Standard 'no charge' license: https://gsap.com/standard-license.",
+  "archive_manifest_license": "Standard 'no charge' license: https://gsap.com/standard-license.",
+  "git_head": null,
+  "archive_integrity_matches_lock_and_registry": true,
+  "archive_files": [
+    {
+      "path": "package/all.js",
+      "bytes": 1503,
+      "sha256": "4A95A34C57663C4EB972968A5E535DD7D5ABE8ACDD5A2B45A57826778172E715"
+    },
+    {
+      "path": "package/dist/all.js",
+      "bytes": 808273,
+      "sha256": "CF0A1A9DDED0AC5F5CAA64208AF0CEC045A0F2EF79E6BFD47967EAF6F707B421"
+    },
+    {
+      "path": "package/src/all.js",
+      "bytes": 1505,
+      "sha256": "4C526A2636C2C991EA34C1571C92601C661CEB5F9E15FA367E927AB37DA72CCA"
+    },
+    {
+      "path": "package/CSSPlugin.js",
+      "bytes": 65156,
+      "sha256": "41D061E8B0A2DDFDB647F8F85DA690EC6D19194403021ACCA7088926105FE6BD"
+    },
+    {
+      "path": "package/src/CSSPlugin.js",
+      "bytes": 59818,
+      "sha256": "8E141F02D26F00F0D3259AA480E3EDDFF55AD25E0363272321B883602AF1F824"
+    },
+    {
+      "path": "package/CSSRulePlugin.js",
+      "bytes": 3469,
+      "sha256": "A8C3B8298EA2EC4F8302DCD0C7A1A1452FBD73AEBAB869485332D8A84C3EBE5B"
+    },
+    {
+      "path": "package/dist/CSSRulePlugin.js",
+      "bytes": 3318,
+      "sha256": "B0CFB82071BF042EDA31F59D37554B44C12A3B5B8F0AB90FF184414D315F153A"
+    },
+    {
+      "path": "package/src/CSSRulePlugin.js",
+      "bytes": 3055,
+      "sha256": "66D4A0262550F34913699B8D3FEF6CF3760E0BF04B77F8F0DE36381FC12D2D5E"
+    },
+    {
+      "path": "package/dist/CSSRulePlugin.min.js",
+      "bytes": 1731,
+      "sha256": "36062A2D5187A17560EB60219DCE5E893E71EDC7D2A2296F6C05F383E303A09A"
+    },
+    {
+      "path": "package/CustomBounce.js",
+      "bytes": 4372,
+      "sha256": "C995A44AFD897935D989ECEABA6A8C6C91DDBBF9199B0126E3495B72C5344222"
+    },
+    {
+      "path": "package/dist/CustomBounce.js",
+      "bytes": 4461,
+      "sha256": "B1B8841ECBA537D8461B96B818DFA794F8C6D18B95F01C2491840152B6D031C8"
+    },
+    {
+      "path": "package/src/CustomBounce.js",
+      "bytes": 3939,
+      "sha256": "C70C9B27A3028FB39F9E0D94D77A9F5AFF99969A4B922A8EC8102208DFD646A8"
+    },
+    {
+      "path": "package/dist/CustomBounce.min.js",
+      "bytes": 2068,
+      "sha256": "E6C138934BBF4C25A0BFDBA616AA6114DA2641F86C9EE1FFFDBF6B6F57FF0608"
+    },
+    {
+      "path": "package/CustomEase.js",
+      "bytes": 11367,
+      "sha256": "7E1413B85F7EF9BA686B6B3F6E520183B6AE452663170B3B2850A7D78E81FB44"
+    },
+    {
+      "path": "package/dist/CustomEase.js",
+      "bytes": 18658,
+      "sha256": "1E6A9B4C3A7E3610C1C9E88812E35A647BA7C93B2F92936DB87A0FA691E7E3D9"
+    },
+    {
+      "path": "package/src/CustomEase.js",
+      "bytes": 9988,
+      "sha256": "5770E157B384D4A1EC3C4354A1964CCE0606EDC0ACC2A64E33A1CEBF584F9674"
+    },
+    {
+      "path": "package/dist/CustomEase.min.js",
+      "bytes": 7143,
+      "sha256": "466E426A5C60C21C94B15A30A3DFFACAC9BB39CE8F4E07D071D7D4BB1BE43390"
+    },
+    {
+      "path": "package/CustomWiggle.js",
+      "bytes": 4567,
+      "sha256": "858BCE598B9B54A1A0EB3D0DD9F2CDA8E77CF3D998EEBA838647EB0BFCF175A1"
+    },
+    {
+      "path": "package/dist/CustomWiggle.js",
+      "bytes": 4504,
+      "sha256": "7FAD9B71C7AC4F34CC2F8411ECA64F1846B1C9CC6DE29F5E73D021E40566A844"
+    },
+    {
+      "path": "package/src/CustomWiggle.js",
+      "bytes": 4043,
+      "sha256": "3B8120CDFD50A6FF4370DF94D830FF638A4882FF115DD7C531FE790D3BFD7235"
+    },
+    {
+      "path": "package/dist/CustomWiggle.min.js",
+      "bytes": 2274,
+      "sha256": "606FA03B6E37DBF4D12C3237A1967C3ED9A016BBD1AC600BBE6621673C7935D6"
+    },
+    {
+      "path": "package/dist/Draggable.js",
+      "bytes": 93156,
+      "sha256": "283193680BC9488E76465B9876C463A680637E73958F45FBFCCE8BB5F448BB7C"
+    },
+    {
+      "path": "package/Draggable.js",
+      "bytes": 101074,
+      "sha256": "E26A72758A0C5E936CDF4B352AEF896F8255953AEF0630DA6D522947EF2D514D"
+    },
+    {
+      "path": "package/src/Draggable.js",
+      "bytes": 90405,
+      "sha256": "13F6AFA462028BA8F3964B935743A821D8F6038E858119938AFC3B52A05752ED"
+    },
+    {
+      "path": "package/dist/Draggable.min.js",
+      "bytes": 35762,
+      "sha256": "EB28FF7AC2D320BA24A5C065563FCD8F61F2DF9D7574B175B9B30942E5867E8C"
+    },
+    {
+      "path": "package/dist/DrawSVGPlugin.js",
+      "bytes": 9253,
+      "sha256": "D0FB4B0BE473E5D65BD912E9A349B21FF5CBF59D502A4C29BF1C42D695C5A4FA"
+    },
+    {
+      "path": "package/DrawSVGPlugin.js",
+      "bytes": 10715,
+      "sha256": "D7B09B9BF261B61FC9EE7AE6827BC68C1C4BA10EC94ADC18BE036329AA1D5833"
+    },
+    {
+      "path": "package/src/DrawSVGPlugin.js",
+      "bytes": 9629,
+      "sha256": "9C53480063F3BE9AC2D991849A8BF2CDE032DD79F59737D252E48D9549B1EDBD"
+    },
+    {
+      "path": "package/dist/DrawSVGPlugin.min.js",
+      "bytes": 4351,
+      "sha256": "BEB19529F54C1212F1F5117D027BE01AFDA2F363A4926D32AA979BC11140EDC1"
+    },
+    {
+      "path": "package/dist/EaselPlugin.js",
+      "bytes": 9383,
+      "sha256": "9200AE721D1AC2A917CD7FB4162CCBFD507E0756D15F40EE5242B9E70B612047"
+    },
+    {
+      "path": "package/EaselPlugin.js",
+      "bytes": 8713,
+      "sha256": "DD56B0D93E9BEF01D992B21B2C99AA2F50F14347A057E8E9946E0FA930197CAA"
+    },
+    {
+      "path": "package/src/EaselPlugin.js",
+      "bytes": 7948,
+      "sha256": "7B1CC7030522FD0553C32200DA16F88C2AFDB05E499F906F638D1091FD193C86"
+    },
+    {
+      "path": "package/dist/EaselPlugin.min.js",
+      "bytes": 4826,
+      "sha256": "1E76447233D1F68F3A11E6353326FCF34287F1EC3694F36DFEABBB35F007D771"
+    },
+    {
+      "path": "package/dist/EasePack.js",
+      "bytes": 5491,
+      "sha256": "FDF1986352E1D040097EDFF27B21E977AF7AD177A823C54CE7C95D0F16504CE7"
+    },
+    {
+      "path": "package/EasePack.js",
+      "bytes": 5247,
+      "sha256": "0B61C6799B73DABA352219CE7AA0F69BC9BCFD6C6C012DE097987FEBC8972367"
+    },
+    {
+      "path": "package/src/EasePack.js",
+      "bytes": 4711,
+      "sha256": "101C4E1512D88CD2D8F60E102DBCDF9C57A68A0A8A3CCA4DC98B2F7108B8B002"
+    },
+    {
+      "path": "package/dist/EasePack.min.js",
+      "bytes": 2424,
+      "sha256": "2505B29F402A33A0978836BF9A640F86505B1CC542F91A1FE733D9437AD123C8"
+    },
+    {
+      "path": "package/dist/Flip.js",
+      "bytes": 54494,
+      "sha256": "3C732C2AB4B5BCAF1B9835B1722376019B743F7641280ACC342040623B248D75"
+    },
+    {
+      "path": "package/Flip.js",
+      "bytes": 49106,
+      "sha256": "C4E141A3F9DB25EE8A887D618F66E57EDB09A3C0FE2DC03AB1965FB2818C59DB"
+    },
+    {
+      "path": "package/src/Flip.js",
+      "bytes": 41015,
+      "sha256": "02D87B469498BADF49957F4E8AD0D1B5EB9689742CB4BDB06E2C7DC53554D918"
+    },
+    {
+      "path": "package/dist/Flip.min.js",
+      "bytes": 25534,
+      "sha256": "CBE3CA726350F8D230DA38A14CE2384E7772E05A45CEE6144DD7FE6DDE868C2F"
+    },
+    {
+      "path": "package/gsap-core.js",
+      "bytes": 171676,
+      "sha256": "83C4B6C0B020BEBA737B90896181560B76747342B0F7BAA5BA1B185A75F65B65"
+    },
+    {
+      "path": "package/src/gsap-core.js",
+      "bytes": 151046,
+      "sha256": "8063816E0E7C3E6C07970FB06FEAFB06146FD266DB5D8346419176B3D496E284"
+    },
+    {
+      "path": "package/dist/gsap.js",
+      "bytes": 179557,
+      "sha256": "01EFFE0E121C22BA0F885A3F091F3DC6D1F0D445C4FBA37DCB298E314ECA5CFB"
+    },
+    {
+      "path": "package/dist/gsap.min.js",
+      "bytes": 72927,
+      "sha256": "92BB9A96476F983D212A2BC4F54C889039C1696DD4461D40A736860938570FBB"
+    },
+    {
+      "path": "package/dist/GSDevTools.js",
+      "bytes": 146501,
+      "sha256": "39EC9835433E052F1816E9AB2531485C9C05F7AA6F78D7C3E8B86A4B0A6A5C7D"
+    },
+    {
+      "path": "package/GSDevTools.js",
+      "bytes": 62465,
+      "sha256": "7A195041D37CB1EA8D8178A50928E0763E12721FC76257C66173F4B1016CDCD2"
+    },
+    {
+      "path": "package/src/GSDevTools.js",
+      "bytes": 58359,
+      "sha256": "BCAD090ACF9B4A16BC186031BA5BA481F59723F6F09173699466C9EEDE2DE8ED"
+    },
+    {
+      "path": "package/dist/GSDevTools.min.js",
+      "bytes": 62163,
+      "sha256": "65148AB37FE6B22AE17DCDB5802A1BF57ADD87894BAA2EBCD43C1CE6453DE8DE"
+    },
+    {
+      "path": "package/index.js",
+      "bytes": 664,
+      "sha256": "070038235BA75EC2186D054EBD83AE94E6DE6A971F5D3F3D6CD1037551F94FAA"
+    },
+    {
+      "path": "package/src/index.js",
+      "bytes": 690,
+      "sha256": "42762DA509BFFC6D759E694CCBD88E8451C031835592F915DC86BB0B14E9406A"
+    },
+    {
+      "path": "package/dist/InertiaPlugin.js",
+      "bytes": 19772,
+      "sha256": "8EDA4DA31F2ECAD254EB5765CC1FA818E8E11E157AFEF528C0C6D61201249832"
+    },
+    {
+      "path": "package/InertiaPlugin.js",
+      "bytes": 16191,
+      "sha256": "C19AB54FA7615A40BA7551D1467F1FF81A9B076A8868C22D4C92643DFEDA8C17"
+    },
+    {
+      "path": "package/src/InertiaPlugin.js",
+      "bytes": 14341,
+      "sha256": "278BF08BB649EDA49E1DA22167915DE36EBB6A1FCC7FEC2C3A4DC1ADAAF9A7F2"
+    },
+    {
+      "path": "package/dist/InertiaPlugin.min.js",
+      "bytes": 7335,
+      "sha256": "5DDBC518FE02E79D66713B8AF6FAB0B91EE5EB58EF3BEAF589B70FDFB824733F"
+    },
+    {
+      "path": "package/src/utils/matrix.js",
+      "bytes": 13713,
+      "sha256": "5117C770801401E993C81AA64FA4F07D04EDEAAF43D3ACEFE2148A73843C3EBC"
+    },
+    {
+      "path": "package/utils/matrix.js",
+      "bytes": 15372,
+      "sha256": "A8D0A9A32FA5E1855DB0DB64EA191F999223AB8A3B7A4F286C349E35447C5052"
+    },
+    {
+      "path": "package/dist/MorphSVGPlugin.js",
+      "bytes": 55989,
+      "sha256": "786B51FFE878FA747BB7E115815D438EC9113BDE1303967172C34B129F5472EF"
+    },
+    {
+      "path": "package/MorphSVGPlugin.js",
+      "bytes": 38174,
+      "sha256": "2EEE2195D6C65FE04BEF728C0A4A309DA676E5BFA2379806E232E7368D74654A"
+    },
+    {
+      "path": "package/src/MorphSVGPlugin.js",
+      "bytes": 34159,
+      "sha256": "ED1A050EA542E5F7918B079F1A9D7094BAA7CA2EEF4A03C9700FC975F330859B"
+    },
+    {
+      "path": "package/dist/MorphSVGPlugin.min.js",
+      "bytes": 21195,
+      "sha256": "19C891A412240D8521B13330813D9B551EA5B0F707907C365FFECAF1DFA0F5CF"
+    },
+    {
+      "path": "package/dist/MotionPathHelper.js",
+      "bytes": 90914,
+      "sha256": "09F91116791F7557B5858E251E8A89C6717E6DB4B8A19F5A22F4918C09A622AC"
+    },
+    {
+      "path": "package/MotionPathHelper.js",
+      "bytes": 11817,
+      "sha256": "9AA33565ABE3C44A3B2D05790B04268A2BBCCFEC96079BE16074063A412F6E33"
+    },
+    {
+      "path": "package/src/MotionPathHelper.js",
+      "bytes": 10212,
+      "sha256": "F6CF4C8972E062CDB015B92427B256CB5BB98CB40E4AB798B05421FF8A6329DC"
+    },
+    {
+      "path": "package/dist/MotionPathHelper.min.js",
+      "bytes": 44352,
+      "sha256": "3D1A9F63736C643DD825DE23C0892136816A59B3FFB47171D112F2C4D6B51D28"
+    },
+    {
+      "path": "package/dist/MotionPathPlugin.js",
+      "bytes": 51882,
+      "sha256": "6BEA987BDF6C929FB12F6441CD440E55E36ADC06B95733CC51795029283B5764"
+    },
+    {
+      "path": "package/MotionPathPlugin.js",
+      "bytes": 12485,
+      "sha256": "88ED0EA8CF44BE3D03811C15FE0F9C2210F5C8932B6C10AB66C66FCF62CB8304"
+    },
+    {
+      "path": "package/src/MotionPathPlugin.js",
+      "bytes": 10890,
+      "sha256": "EF4042C7A7629D9737CA213D0E145C9DE66127F022A9112F9B7815F63AAB2081"
+    },
+    {
+      "path": "package/dist/MotionPathPlugin.min.js",
+      "bytes": 22002,
+      "sha256": "ACE44A07C6C179F5347D9B46A152D468E4C9F272EE0D68BF0354E00D60000693"
+    },
+    {
+      "path": "package/dist/Observer.js",
+      "bytes": 24162,
+      "sha256": "072FA780CCD49B764319DD7B0200176A67C702B8537439F5A5D30E5A3D975748"
+    },
+    {
+      "path": "package/Observer.js",
+      "bytes": 26275,
+      "sha256": "271290A56877BD331A35C214E0C172419E69A7852B6D3738CDDA935A5715B557"
+    },
+    {
+      "path": "package/src/Observer.js",
+      "bytes": 21875,
+      "sha256": "43B6C65E66D24BE74F10BF54C8A6171351E81D39CDFCC99C554CA9AAA3C940D7"
+    },
+    {
+      "path": "package/dist/Observer.min.js",
+      "bytes": 10014,
+      "sha256": "5844287373280BD40D7B29251F7772264F615AA6E714E4FF71C75415DF02DA40"
+    },
+    {
+      "path": "package/src/utils/PathEditor.js",
+      "bytes": 48399,
+      "sha256": "FDAD197B80F038EE0DFF67E7A40F6ECAC6B27D183D9EC686F62EC283C588DB62"
+    },
+    {
+      "path": "package/utils/PathEditor.js",
+      "bytes": 54966,
+      "sha256": "CB9CA90B048654C7B84C7CEAA59CD5A91189638C8FA91BED6BBD0D527D0C574F"
+    },
+    {
+      "path": "package/src/utils/paths.js",
+      "bytes": 49315,
+      "sha256": "37A33AA0685B114DD21562C7EC348095ABAF7BE022103B481947A011C1EB42FB"
+    },
+    {
+      "path": "package/utils/paths.js",
+      "bytes": 53069,
+      "sha256": "1EDF5FC9EA8238207BCA333A0A66984E39F71B7EB6030851F7A2FBF0357EB701"
+    },
+    {
+      "path": "package/dist/Physics2DPlugin.js",
+      "bytes": 4771,
+      "sha256": "9995BEC8CF3ADECFA23795D9FD21ED55CAB2633685B4278F747CAB9F5DA8422F"
+    },
+    {
+      "path": "package/Physics2DPlugin.js",
+      "bytes": 4950,
+      "sha256": "887B56DE17D54F0339E982240755DC31A08895B9F96C12EBF9C335B532112710"
+    },
+    {
+      "path": "package/src/Physics2DPlugin.js",
+      "bytes": 4293,
+      "sha256": "40E075E41E9CA771424ED85509B63C12B69740D0DFDE99359FE5004486505284"
+    },
+    {
+      "path": "package/dist/Physics2DPlugin.min.js",
+      "bytes": 2243,
+      "sha256": "F41D23011F0B89A66DB8DC79AA32E564E82884276CA00B97326130974F5167B9"
+    },
+    {
+      "path": "package/dist/PhysicsPropsPlugin.js",
+      "bytes": 4503,
+      "sha256": "48B3D1A481988CC240F3EABB61AA97FF88A1A6237D8A251176DBB4446446955E"
+    },
+    {
+      "path": "package/PhysicsPropsPlugin.js",
+      "bytes": 4825,
+      "sha256": "373E399DFEF548E1DBF9F781C2763281D8BDE48B5CAED9C4F908806067E8031A"
+    },
+    {
+      "path": "package/src/PhysicsPropsPlugin.js",
+      "bytes": 4113,
+      "sha256": "8F927D565BFFEBBF58044D3D4CBDF17649376087404A70518842EF960D2FCEFF"
+    },
+    {
+      "path": "package/dist/PhysicsPropsPlugin.min.js",
+      "bytes": 1989,
+      "sha256": "446BD441ECC582DA76AF13C878E71E4927E52BDA189569063DDA89721312CC08"
+    },
+    {
+      "path": "package/dist/PixiPlugin.js",
+      "bytes": 15281,
+      "sha256": "5D49B494ECA6F60927DD88724CBBA963E7674B3880FA8AB6E7ACA686B7FF8194"
+    },
+    {
+      "path": "package/PixiPlugin.js",
+      "bytes": 15319,
+      "sha256": "19C11146D65A05121D72AAF94D5616864398E599B1CD0DC8FB750E2042F82B7F"
+    },
+    {
+      "path": "package/src/PixiPlugin.js",
+      "bytes": 13745,
+      "sha256": "AD66B69295D5E1A44AFC545FF53B2003B646E951C62A3B3B621E66953DF09189"
+    },
+    {
+      "path": "package/dist/PixiPlugin.min.js",
+      "bytes": 6601,
+      "sha256": "D0CC63B16E03C3343B567B54BE4B8BEA226F4ED4C4D594C271F36ACBFD7C803F"
+    },
+    {
+      "path": "package/dist/ScrambleTextPlugin.js",
+      "bytes": 16690,
+      "sha256": "17DCEAA4BD5170551E7872B9E184DCE6A3EF8FB0C46EA9BDE0D66F706AC3AF1B"
+    },
+    {
+      "path": "package/ScrambleTextPlugin.js",
+      "bytes": 8392,
+      "sha256": "2241FA7E9DE77ED529DF4887F02C59F9FB5A4FA45CAB07CAC9CC3157675130F0"
+    },
+    {
+      "path": "package/src/ScrambleTextPlugin.js",
+      "bytes": 7182,
+      "sha256": "9E6F74E5CA3D1412A777268C411E59F925067CE7DA807F9135BED87555BC9385"
+    },
+    {
+      "path": "package/dist/ScrambleTextPlugin.min.js",
+      "bytes": 11687,
+      "sha256": "A2CFAA7223231459DFDE37E9385413EE6DF065F18121E946FFDDE694F8B11F01"
+    },
+    {
+      "path": "package/dist/ScrollSmoother.js",
+      "bytes": 32406,
+      "sha256": "16D6115259CE5F4A5AE35D4E18B62B4E0C4A9AA080997B154B4B0649CF134042"
+    },
+    {
+      "path": "package/ScrollSmoother.js",
+      "bytes": 40957,
+      "sha256": "374AC1476BD56222CDA5693020BC029C3CF7D1FE70DDF9802FBC20C92F8C6F24"
+    },
+    {
+      "path": "package/src/ScrollSmoother.js",
+      "bytes": 34904,
+      "sha256": "201415C385AE0FA063C13EBEBB4315E3EF7556B94382F24E52A5486268C465FF"
+    },
+    {
+      "path": "package/dist/ScrollSmoother.min.js",
+      "bytes": 13373,
+      "sha256": "1956015299D15F86CD819AA432F9B886B704FD7B3ED408B02D7B63F994AA1504"
+    },
+    {
+      "path": "package/dist/ScrollToPlugin.js",
+      "bytes": 8428,
+      "sha256": "00B87A30A1B76921A6386EEF2D8CF22C91588EC85B1FFEDBD1582EC29E0C3C59"
+    },
+    {
+      "path": "package/ScrollToPlugin.js",
+      "bytes": 9111,
+      "sha256": "A14E7211C2E4469952615368E3869F8F2B736BD6F8283C6F0B29EE262EED6970"
+    },
+    {
+      "path": "package/src/ScrollToPlugin.js",
+      "bytes": 8113,
+      "sha256": "41A030ED3FD7D3F3E5E42A6E854F35B976C83EB9DC3494CF20E7220158A920DC"
+    },
+    {
+      "path": "package/dist/ScrollToPlugin.min.js",
+      "bytes": 4059,
+      "sha256": "07CFD328E41012AE60B5614C2E58399FC13AF8B1AEC765FEBE770D4EB3E62FCD"
+    },
+    {
+      "path": "package/dist/ScrollTrigger.js",
+      "bytes": 115504,
+      "sha256": "98E0AB6D6876A62BA3FB8504609CB5647176BB8A1BCB3140BD95793D4EE2548B"
+    },
+    {
+      "path": "package/ScrollTrigger.js",
+      "bytes": 112578,
+      "sha256": "F7FB324357512127DA10D304EF1B0BF39FF7B141F5EF5058CF1D360DF9E25E27"
+    },
+    {
+      "path": "package/src/ScrollTrigger.js",
+      "bytes": 100306,
+      "sha256": "CCDC8591B7FF86370570C4D236A54FF9810B21A8C0B29F2D3B5391BB7EE44AD5"
+    },
+    {
+      "path": "package/dist/ScrollTrigger.min.js",
+      "bytes": 44575,
+      "sha256": "B0B14D67B55B0C43C756AC0B106CFCB09D0879945F6EAD64451065B0672916A2"
+    },
+    {
+      "path": "package/dist/SplitText.js",
+      "bytes": 18034,
+      "sha256": "E25CDE4005072AD2BE67924D721709B881F7E122D4756EE4D1C2CBAAE43E3F41"
+    },
+    {
+      "path": "package/SplitText.js",
+      "bytes": 17263,
+      "sha256": "0CE8224A11EB959D434DD02F4354DD7DF57A283217D2D20EC76192C25FF9AB89"
+    },
+    {
+      "path": "package/src/SplitText.js",
+      "bytes": 17263,
+      "sha256": "0CE8224A11EB959D434DD02F4354DD7DF57A283217D2D20EC76192C25FF9AB89"
+    },
+    {
+      "path": "package/dist/SplitText.min.js",
+      "bytes": 7732,
+      "sha256": "419F7027A5F086A12CB7988736D8FDD3A6ED2200229661DE25B6628CA7CED344"
+    },
+    {
+      "path": "package/src/utils/strings.js",
+      "bytes": 10263,
+      "sha256": "3B7FAF52361F18784DD2E0586865C1453C875063A5D3392763C8CE5249753E58"
+    },
+    {
+      "path": "package/utils/strings.js",
+      "bytes": 10428,
+      "sha256": "A635DF68A0DE168394E8D4F2950B71F1BB9E0DD0E4522B827FCA4C8362B4DF1F"
+    },
+    {
+      "path": "package/dist/TextPlugin.js",
+      "bytes": 14356,
+      "sha256": "83D479690E25F2D2464C7D7C14DB2414C1EC3F5F47C50ACEE1485AAFCA33D1BF"
+    },
+    {
+      "path": "package/src/TextPlugin.js",
+      "bytes": 3936,
+      "sha256": "C38BD69DF3DDA10136A839A222D386A53B3CF359D4E933C41F188266C41D57EE"
+    },
+    {
+      "path": "package/TextPlugin.js",
+      "bytes": 4660,
+      "sha256": "5E0416E143F3E1EA5861CE54D76C1C30384DC2386B02D48E924D95AF6100BFD2"
+    },
+    {
+      "path": "package/dist/TextPlugin.min.js",
+      "bytes": 10570,
+      "sha256": "A24984FA1A33517B4C54C8B25B0BFD7AAF3DF9FA7EDBA661E3BD496A671A2429"
+    },
+    {
+      "path": "package/src/utils/VelocityTracker.js",
+      "bytes": 5532,
+      "sha256": "87C6A37B8F695D82968063B0B1BF00490A44B97476A4E505398D03054978F60D"
+    },
+    {
+      "path": "package/utils/VelocityTracker.js",
+      "bytes": 6570,
+      "sha256": "1A7271D14A35E894A3937EAD3C23A13AFBDB09DC5052C9F3959D25D5398FE13F"
+    },
+    {
+      "path": "package/package.json",
+      "bytes": 2550,
+      "sha256": "85CC13E31F7A3CD124B587A40F545F265F47D0DFB9A556BB122D70FC0FCA3459"
+    },
+    {
+      "path": "package/dist/CSSRulePlugin.min.js.map",
+      "bytes": 5396,
+      "sha256": "577CB8734A4BEEA896462FB5C891DF4B9D76FF1979616AB87D50AC8B7FE9201B"
+    },
+    {
+      "path": "package/dist/CustomBounce.min.js.map",
+      "bytes": 7510,
+      "sha256": "066C0F23F0398563BFEB3B0863768C04C004399909102E0F9F50C2F06C3F5DE9"
+    },
+    {
+      "path": "package/dist/CustomEase.min.js.map",
+      "bytes": 78368,
+      "sha256": "81E3C3E9FA4FAA94A1FFE6618AF28EC92CD879A1379BD6A97FE3C7EEBB417BA9"
+    },
+    {
+      "path": "package/dist/CustomWiggle.min.js.map",
+      "bytes": 7295,
+      "sha256": "AFD7853E55426AE6F10D5B9346B480B8A6E595F79C6AF83765835AC220A17859"
+    },
+    {
+      "path": "package/dist/Draggable.min.js.map",
+      "bytes": 171908,
+      "sha256": "545BB07FB46B3C71FDAD5A8755C90787BC42667EC8ADF695ED908537B6C46BCD"
+    },
+    {
+      "path": "package/dist/DrawSVGPlugin.min.js.map",
+      "bytes": 16819,
+      "sha256": "5798353516D4BF25D561389D5254F648035BBD521276362E03B9572092210DEC"
+    },
+    {
+      "path": "package/dist/EaselPlugin.min.js.map",
+      "bytes": 15893,
+      "sha256": "4043FF7A24589CA1C4AE308C879C3A86B019BEB2D739AA1FB229AF4C283A44C3"
+    },
+    {
+      "path": "package/dist/EasePack.min.js.map",
+      "bytes": 8956,
+      "sha256": "DF8C21BEC0827A4ADF6C0671F49DB0EF7BF5B093706CEE23889EC3239D0EB0C7"
+    },
+    {
+      "path": "package/dist/Flip.min.js.map",
+      "bytes": 98106,
+      "sha256": "851068C60668B6DF11D819E8BC8456C1AB4CA2BC3FB921263A9DCD12211E99A8"
+    },
+    {
+      "path": "package/dist/gsap.min.js.map",
+      "bytes": 345237,
+      "sha256": "E7D2B24254462552BB2ACDCA4FB31D44184BA57DCD72B8F265513E44E62D5156"
+    },
+    {
+      "path": "package/dist/GSDevTools.min.js.map",
+      "bytes": 260969,
+      "sha256": "903533287EEB6DA7EB432683052B5937071220B9A8CAEE63C3805B1FF0F3A6A1"
+    },
+    {
+      "path": "package/dist/InertiaPlugin.min.js.map",
+      "bytes": 33936,
+      "sha256": "E7470E9E5886F9F840B7CAF4E2D8F8B47D6BE817F66B7A7D472277662B56F68D"
+    },
+    {
+      "path": "package/dist/MorphSVGPlugin.min.js.map",
+      "bytes": 131376,
+      "sha256": "242380E5B698F8A80229F7AFBD9D4FFBB0BA45C03EEBDCC1B06811D744383D5F"
+    },
+    {
+      "path": "package/dist/MotionPathHelper.min.js.map",
+      "bytes": 197687,
+      "sha256": "71DB0915D568000E48E9269FBBA79853A0440B982CAEC061B18E41641A8D69D4"
+    },
+    {
+      "path": "package/dist/MotionPathPlugin.min.js.map",
+      "bytes": 120130,
+      "sha256": "BDCA79923B8CE554B2EB7E5354B8635EF33A063EC46AF8527C54A5DE53D2DD86"
+    },
+    {
+      "path": "package/dist/Observer.min.js.map",
+      "bytes": 39353,
+      "sha256": "231DC6B5FE36110E8EF4E793FBA5A0497AF6F0B4490FC63AC581354DD7E0D24C"
+    },
+    {
+      "path": "package/dist/Physics2DPlugin.min.js.map",
+      "bytes": 8426,
+      "sha256": "AC9D4C1A860F284E2B831FFC2E7ECAD1B6C7650CAE99A1CE398AAE21A1244A69"
+    },
+    {
+      "path": "package/dist/PhysicsPropsPlugin.min.js.map",
+      "bytes": 7575,
+      "sha256": "E1773C9D6E3426DD8B7F245649D4FBA47D133FB8874C026FFB1EB0C7271C853B"
+    },
+    {
+      "path": "package/dist/PixiPlugin.min.js.map",
+      "bytes": 25873,
+      "sha256": "8111EEF35A421B8541088ADC4E67B0F7C18CA586292E7A4E6C92A66632BA6872"
+    },
+    {
+      "path": "package/dist/ScrambleTextPlugin.min.js.map",
+      "bytes": 25809,
+      "sha256": "3BC7F941B0A8E3B5998EE40185B0E238048F3911394382FBB2BA172A077E365D"
+    },
+    {
+      "path": "package/dist/ScrollSmoother.min.js.map",
+      "bytes": 57437,
+      "sha256": "1F66DF6422E5901375BB8825A75E2161426E84457D2F6B2E4F829792B8A9AF90"
+    },
+    {
+      "path": "package/dist/ScrollToPlugin.min.js.map",
+      "bytes": 14969,
+      "sha256": "0041BAAE33BA5992C6E38F1E11FAE72FA3368FBF6A4E133F49AED4C09814AA1B"
+    },
+    {
+      "path": "package/dist/ScrollTrigger.min.js.map",
+      "bytes": 203137,
+      "sha256": "581F87809B7B588E498C20430AA760BA1E4C870DFE8ACCCF421A1381174C717A"
+    },
+    {
+      "path": "package/dist/SplitText.min.js.map",
+      "bytes": 29151,
+      "sha256": "5DE68D2761939215FBCBA3745FE7A1C688B8BEB78213546036569B7F5B844A8D"
+    },
+    {
+      "path": "package/dist/TextPlugin.min.js.map",
+      "bytes": 20838,
+      "sha256": "AC1085919AFDD048A5AAC3982A5BB197704A2889E57A746A9C9531EC06674A3D"
+    },
+    {
+      "path": "package/README.md",
+      "bytes": 6199,
+      "sha256": "66A79667B0538B19634B5A000A9A3DEBE588C98D390424E73E5D4DE847270828"
+    },
+    {
+      "path": "package/SECURITY.md",
+      "bytes": 274,
+      "sha256": "5F847CB9F6362062AF4E3361BCCCF7D2E5E19479DD7DB9315B2177372D25B8BE"
+    },
+    {
+      "path": "package/types/animation.d.ts",
+      "bytes": 18219,
+      "sha256": "0E98BDCA6B2F656FF783ECCB891AD5B18B5E39D36A231B94BB407F46185A035F"
+    },
+    {
+      "path": "package/types/css-plugin.d.ts",
+      "bytes": 16896,
+      "sha256": "033CC8D0CF4529BC62746A9A026E43454F06F86D560B533E2726E677CAF43C5F"
+    },
+    {
+      "path": "package/types/css-rule-plugin.d.ts",
+      "bytes": 1983,
+      "sha256": "56ED2FC77C5587ED572B52C0C679AB284A84254875628D39D63A1AD84AA47993"
+    },
+    {
+      "path": "package/types/custom-bounce.d.ts",
+      "bytes": 948,
+      "sha256": "2B8241EE9D522539245316C7D9EFBA3A7F7FB67E89EDB6B8375841C5204323C1"
+    },
+    {
+      "path": "package/types/custom-ease.d.ts",
+      "bytes": 1377,
+      "sha256": "6DC855128DF7AA80C5D937B26D853EC76375B9BE022C8476735A82BCB205B582"
+    },
+    {
+      "path": "package/types/custom-wiggle.d.ts",
+      "bytes": 1003,
+      "sha256": "2E38ADF1D08FED1932323468C084F22F3B0FF96DA903C213A52DCE96E7C5314C"
+    },
+    {
+      "path": "package/types/Draggable.d.ts",
+      "bytes": 12410,
+      "sha256": "DA04A353AE1F194880392596C1C65BD16039D7CB7D8C95394C8CC833BBEB5600"
+    },
+    {
+      "path": "package/types/draw-svg-plugin.d.ts",
+      "bytes": 2336,
+      "sha256": "7F0B457714A6A7DC40D51506CF9E5AB38AEC893D78D10DC853D51E4ECE6C8A86"
+    },
+    {
+      "path": "package/types/ease.d.ts",
+      "bytes": 4269,
+      "sha256": "42DC1C1FB9A082BFC981EDB18B50E12F7FDA5009A15468EF6E6F939E86300FBD"
+    },
+    {
+      "path": "package/types/easel-plugin.d.ts",
+      "bytes": 1461,
+      "sha256": "4B36AC8539E453915EAD7DDF25653D6A7691E6DAC52003372C12244965480DF2"
+    },
+    {
+      "path": "package/types/Flip.d.ts",
+      "bytes": 14909,
+      "sha256": "B98109E756E7E1ADF0F305B3F1E9D65A40DA0C71EC6D23FFDDD9C0EA75CB312A"
+    },
+    {
+      "path": "package/types/gs-dev-tools.d.ts",
+      "bytes": 2504,
+      "sha256": "B3BEE285D6A28772ABA2633B6BCD9CD53A517F7A4862CF7893197222E73CFDDC"
+    },
+    {
+      "path": "package/types/gsap-core.d.ts",
+      "bytes": 20490,
+      "sha256": "F699D663C17E6BAD3D2860B6E03A09C79AFC248D159E6F1CC1594B2489CC4E89"
+    },
+    {
+      "path": "package/types/gsap-plugins.d.ts",
+      "bytes": 2678,
+      "sha256": "122C612162CB2E09D70EBDD670941441E902A26EE79B37F006C5B9D38868ED32"
+    },
+    {
+      "path": "package/types/gsap-utils.d.ts",
+      "bytes": 17238,
+      "sha256": "28D03F63A7A5931C8225059693C41A102B52B8E39CA2A034BCA11DF726D06FDA"
+    },
+    {
+      "path": "package/types/index.d.ts",
+      "bytes": 3819,
+      "sha256": "BAACE3D380A208EBD640BDFDB70748CA60FBAEAD011B4A92900ABF334188F6CD"
+    },
+    {
+      "path": "package/types/inertia-plugin.d.ts",
+      "bytes": 2779,
+      "sha256": "F98E2B5FCF96686F2432D1823F195A2AD443762006D7FBDA7B4D8D25EFD0E384"
+    },
+    {
+      "path": "package/types/morph-svg-plugin.d.ts",
+      "bytes": 4551,
+      "sha256": "D3F5B5ECD76CD87EE280A5E72E69F941481E62F12430DB4F27AA885C3ADDFDC7"
+    },
+    {
+      "path": "package/types/motion-path-helper.d.ts",
+      "bytes": 3263,
+      "sha256": "5DABDD06CDB220B33A81312A965F8CAB510044CCC522DFAC4704BAF7AE8AAA79"
+    },
+    {
+      "path": "package/types/motion-path-plugin.d.ts",
+      "bytes": 10329,
+      "sha256": "598710556D7994BADB8C5C72D65A602121488D233B70E1C1318FAF476A3A76D6"
+    },
+    {
+      "path": "package/types/Observer.d.ts",
+      "bytes": 5403,
+      "sha256": "29C8673E8A6FE0116035C345438591056032A76CAD5744C81B5FEB039D26789A"
+    },
+    {
+      "path": "package/types/physics-2d-plugin.d.ts",
+      "bytes": 1834,
+      "sha256": "9569B7FDC41E43E971CDD193685B085D682A3F2C7243C9A41360521CB21265FA"
+    },
+    {
+      "path": "package/types/physics-props-plugin.d.ts",
+      "bytes": 1860,
+      "sha256": "A66A81B1B7E9582442C41807D62A7BAEE789E65A8CE6951E6A0B2553A94859A1"
+    },
+    {
+      "path": "package/types/pixi-plugin.d.ts",
+      "bytes": 3385,
+      "sha256": "F4A2170E218A95EA4352470799614733E6AC9576E9F2D10B57A986DC26763936"
+    },
+    {
+      "path": "package/types/scramble-text-plugin.d.ts",
+      "bytes": 1924,
+      "sha256": "1EB62BCCDB763DED6F74A2CCD5EB939E3D63FC2A25677409D9C45BD982DEC75E"
+    },
+    {
+      "path": "package/types/scroll-smoother.d.ts",
+      "bytes": 11828,
+      "sha256": "8F54DFAC75C73A9E55BB938D2DAB1B48FB6FA8FC677DC7A21C3F90E92DAE38B0"
+    },
+    {
+      "path": "package/types/scroll-to-plugin.d.ts",
+      "bytes": 2792,
+      "sha256": "4BCB4739EBAA38C7C8BB85A5B40971AB83809C6F1F217E4D26C4418D9B9B07AD"
+    },
+    {
+      "path": "package/types/scroll-trigger.d.ts",
+      "bytes": 27225,
+      "sha256": "F4F9F2B412304F6A4664DD395380965E704A66D10490AC990C398691E7C69823"
+    },
+    {
+      "path": "package/types/split-text.d.ts",
+      "bytes": 3158,
+      "sha256": "D48C79E8502A2FB6274D2F41E12FBF5E3C51E53E770994AF88B42BF0C53333F0"
+    },
+    {
+      "path": "package/src/SplitText.ts",
+      "bytes": 25031,
+      "sha256": "BCF0035D4F2002822098086564C39CB4B6E5D13AB2920D95AADACB747AEC3B3D"
+    },
+    {
+      "path": "package/types/text-plugin.d.ts",
+      "bytes": 1613,
+      "sha256": "3BAC8C62839BADB7CF43D2A507D8DF73E61A5313BB6BF0EB0E373B51B1D94E1B"
+    },
+    {
+      "path": "package/types/timeline.d.ts",
+      "bytes": 17005,
+      "sha256": "5D94554E80C2392A2B51BE4BAAD4619268158ECCB18D23E5D7107849BC409485"
+    },
+    {
+      "path": "package/types/tween.d.ts",
+      "bytes": 7717,
+      "sha256": "CEB1A78B91D40A8CEF51B498546780D8842CD42811597AF2C5584FA68DEFE048"
+    },
+    {
+      "path": "package/types/utils/VelocityTracker.d.ts",
+      "bytes": 1785,
+      "sha256": "07CC2729A92E8293F16FA19E56AAEB9F350B4442A24724D358073131222E0BAE"
+    }
+  ],
+  "notice_files": [],
+  "selected_source_headers": [
+    {
+      "path": "package/gsap-core.js",
+      "sha256": "83C4B6C0B020BEBA737B90896181560B76747342B0F7BAA5BA1B185A75F65B65",
+      "first_1200_characters": "function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }\n\n/*!\n * GSAP 3.15.0\n * https://gsap.com\n *\n * @license Copyright 2008-2026, GreenSock. All rights reserved.\n * Subject to the terms at https://gsap.com/standard-license\n * @author: Jack Doyle, jack@greensock.com\n*/\n\n/* eslint-disable */\nvar _config = {\n  autoSleep: 120,\n  force3D: \"auto\",\n  nullTargetWarn: 1,\n  units: {\n    lineHeight: \"\"\n  }\n},\n    _defaults = {\n  duration: .5,\n  overwrite: false,\n  delay: 0\n},\n    _suppressOverwrites,\n    _reverting,\n    _context,\n    _bigNum = 1e8,\n    _tinyNum = 1 / _bigNum,\n    _2PI = Math.PI * 2,\n    _HALF_PI = _2PI / 4,\n    _gsID = 0,\n    _sqrt = Math.sqrt,\n    _cos = Math.cos,\n    _sin = Math.sin,\n    _isString = function _isString(value) {\n  return typeof value === \"string\";\n},\n    _isFunction = function _isFunction(value) {\n  return typeof value === \"function\";\n},\n    _isNumber = function _isN"
+    },
+    {
+      "path": "package/src/gsap-core.js",
+      "sha256": "8063816E0E7C3E6C07970FB06FEAFB06146FD266DB5D8346419176B3D496E284",
+      "first_1200_characters": "/*!\n * GSAP 3.15.0\n * https://gsap.com\n *\n * @license Copyright 2008-2026, GreenSock. All rights reserved.\n * Subject to the terms at https://gsap.com/standard-license\n * @author: Jack Doyle, jack@greensock.com\n*/\n/* eslint-disable */\n\nlet _config = {\n\t\tautoSleep: 120,\n\t\tforce3D: \"auto\",\n\t\tnullTargetWarn: 1,\n\t\tunits: {lineHeight:\"\"}\n\t},\n\t_defaults = {\n\t\tduration: .5,\n\t\toverwrite: false,\n\t\tdelay: 0\n\t},\n\t_suppressOverwrites,\n\t_reverting, _context,\n\t_bigNum = 1e8,\n\t_tinyNum = 1 / _bigNum,\n\t_2PI = Math.PI * 2,\n\t_HALF_PI = _2PI / 4,\n\t_gsID = 0,\n\t_sqrt = Math.sqrt,\n\t_cos = Math.cos,\n\t_sin = Math.sin,\n\t_isString = value => typeof(value) === \"string\",\n\t_isFunction = value => typeof(value) === \"function\",\n\t_isNumber = value => typeof(value) === \"number\",\n\t_isUndefined = value => typeof(value) === \"undefined\",\n\t_isObject = value => typeof(value) === \"object\",\n\t_isNotFalse = value => value !== false,\n\t_windowExists = () => typeof(window) !== \"undefined\",\n\t_isFuncOrString = value => _isFunction(value) || _isString(value),\n\t_isTypedArray = (typeof ArrayBuffer === \"function\" && ArrayBuffer.isView) || function() {}, // note: IE10 has ArrayBuffer, but NOT ArrayBuffer.isView().\n\t_isArray = Array.is"
+    },
+    {
+      "path": "package/dist/gsap.js",
+      "sha256": "01EFFE0E121C22BA0F885A3F091F3DC6D1F0D445C4FBA37DCB298E314ECA5CFB",
+      "first_1200_characters": "(function (global, factory) {\n  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :\n  typeof define === 'function' && define.amd ? define(['exports'], factory) :\n  (global = global || self, factory(global.window = global.window || {}));\n}(this, (function (exports) { 'use strict';\n\n  function _inheritsLoose(subClass, superClass) {\n    subClass.prototype = Object.create(superClass.prototype);\n    subClass.prototype.constructor = subClass;\n    subClass.__proto__ = superClass;\n  }\n\n  function _assertThisInitialized(self) {\n    if (self === void 0) {\n      throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\");\n    }\n\n    return self;\n  }\n\n  /*!\n   * GSAP 3.15.0\n   * https://gsap.com\n   *\n   * @license Copyright 2008-2026, GreenSock. All rights reserved.\n   * Subject to the terms at https://gsap.com/standard-license\n   * @author: Jack Doyle, jack@greensock.com\n  */\n  var _config = {\n    autoSleep: 120,\n    force3D: \"auto\",\n    nullTargetWarn: 1,\n    units: {\n      lineHeight: \"\"\n    }\n  },\n      _defaults = {\n    duration: .5,\n    overwrite: false,\n    delay: 0\n  },\n      _suppressOverwrites,\n      _reverting,\n      _context,\n"
+    },
+    {
+      "path": "package/dist/gsap.min.js",
+      "sha256": "92BB9A96476F983D212A2BC4F54C889039C1696DD4461D40A736860938570FBB",
+      "first_1200_characters": "/*!\n * GSAP 3.15.0\n * https://gsap.com\n * \n * @license Copyright 2026, GreenSock. All rights reserved.\n * Subject to the terms at https://gsap.com/standard-license.\n * @author: Jack Doyle, jack@greensock.com\n */\n\n!function(t,e){\"object\"==typeof exports&&\"undefined\"!=typeof module?e(exports):\"function\"==typeof define&&define.amd?define([\"exports\"],e):e((t=t||self).window=t.window||{})}(this,function(e){\"use strict\";function _inheritsLoose(t,e){t.prototype=Object.create(e.prototype),(t.prototype.constructor=t).__proto__=e}function _assertThisInitialized(t){if(void 0===t)throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\");return t}function r(t){return\"string\"==typeof t}function s(t){return\"function\"==typeof t}function t(t){return\"number\"==typeof t}function u(t){return void 0===t}function v(t){return\"object\"==typeof t}function w(t){return!1!==t}function x(){return\"undefined\"!=typeof window}function y(t){return s(t)||r(t)}function R(t){return(i=bt(t,ht))&&Fe}function S(t,e){return console.warn(\"Invalid property\",t,\"set to\",e,\"Missing plugin? gsap.registerPlugin()\")}function T(t,e){return!e&&console.warn(t)}function U(t,e){return t&&(ht[t]=e)&&i&&(i[t]=e"
+    }
+  ],
+  "official_sources": [
+    {
+      "requested_url": "https://gsap.com/standard-license/",
+      "final_url": "https://gsap.com/community/standard-license/",
+      "status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "observed_at": "2026-10-04T15:00:50.233524+00:00",
+      "path": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/official-standard-license.html",
+      "bytes": 76456,
+      "sha256": "E26081F97D79030C9D5DB9EC5A2AC1F6E499DF661C37DE6EB3C576483E11EC2E"
+    },
+    {
+      "requested_url": "https://webflow.com/legal/terms",
+      "final_url": "https://webflow.com/legal/terms",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "observed_at": "2026-10-04T15:00:54.080666+00:00",
+      "path": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/incorporated-webflow-terms.html",
+      "bytes": 365097,
+      "sha256": "48BB54B8BE09D84FEAA261932F5DF8FD27D4FDF1FA1B42341A65AE18D878AAC1"
+    }
+  ],
+  "protected_hashes_before": {
+    "apps/web/package.json": "83E4178348EC081922DD3D53D00C51446B655091D056EC09DDE52A2496B04E2A",
+    "apps/web/package-lock.json": "35486FB012489DE4C3B363198304A25F44A0396707DB328190D7E056C06D416D",
+    "apps/api/requirements.txt": "B99F98E119CB6653F38B19D1EE83CC7F33D92A699083645CA19369A8912E89BD",
+    "output/research/compatibility-resolution-2026-10-04/native-lint-probe/package.json": "F1ECB8D6083BACB65684DEF851C69A9066618534DDFC62B088FD7242E29EB69E",
+    "output/research/compatibility-resolution-2026-10-04/native-lint-probe/package-lock.json": "DA45DD6CB7CEE7834FC5985B6595C2111780EE24D7CF87D1BDAF1749BE3F37AB"
+  },
+  "protected_hashes_after": {
+    "apps/web/package.json": "83E4178348EC081922DD3D53D00C51446B655091D056EC09DDE52A2496B04E2A",
+    "apps/web/package-lock.json": "35486FB012489DE4C3B363198304A25F44A0396707DB328190D7E056C06D416D",
+    "apps/api/requirements.txt": "B99F98E119CB6653F38B19D1EE83CC7F33D92A699083645CA19369A8912E89BD",
+    "output/research/compatibility-resolution-2026-10-04/native-lint-probe/package.json": "F1ECB8D6083BACB65684DEF851C69A9066618534DDFC62B088FD7242E29EB69E",
+    "output/research/compatibility-resolution-2026-10-04/native-lint-probe/package-lock.json": "DA45DD6CB7CEE7834FC5985B6595C2111780EE24D7CF87D1BDAF1749BE3F37AB"
+  },
+  "downloaded_code_executed": false,
+  "dependencies_installed": false,
+  "production_selected": false
+}

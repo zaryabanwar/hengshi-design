@@ -1,8 +1,17 @@
 # Phase 1 UX Architecture
 
-**Status:** producer iteration 3 of 3; final SC 1.2.5 correction complete; exact-freeze independent review pending  
-**Authority date:** 2026-07-20  
-**Implementation status:** blocked; this package authorizes no UI, 3D, application, data, provider, or publication work
+**Status:** accepted UX baseline under D-036 and subsequent accepted amendments; current v1 references reconciled 2026-10-05. The July three-iteration record remains historical evidence.
+
+**Authority:** [Current decisions](../../DECISIONS.md), including D-039–D-045 and D-064's mouse/touch free-movement addition.
+
+**Implementation status:** BLOCKED until complete Phase 1 acceptance; this entry creates no UI, 3D, application, data, provider or publication permission.
+
+The current World scope references in [flows](FLOWS.md#current-world-scope-amendment--v1)
+and [states/recovery](STATES_AND_RECOVERY.md#current-world-scope-amendment--v1)
+retain the accepted destination journeys while referencing selected free movement
+and the separate proposed movement/loading/audio refinements. They do not accept
+gestures, production screens or numerical profiles, reopen accepted stream controls
+or grant another substantive UX revision.
 
 ## Purpose and boundary
 
@@ -53,13 +62,14 @@ Every normative statement uses one of these labels:
 
 ## Acceptance boundary
 
-The package is ready for independent UX/design and accessibility review only
-when the validator passes and producer inspection is complete. The producer does
-not approve its own work. Founder approval is required after review. Production
-UI must still be designed/referenced in Figma or Stitch before implementation.
+D-036 accepted the exact reviewed UX baseline; subsequent accepted decisions
+control its amendments. Producer validation cannot grant acceptance, and historical
+review status does not reopen that decision. Material new definitions retain their
+own review and founder gates. Production UI still needs approved Figma or Stitch
+references before implementation, and complete Phase 1 acceptance remains separate.
 
-The following remain visible gates: MA-002 legal/privacy disclosures; MA-003
-claims, experts, owners and proof; MA-004 GLB provenance; MA-005 Azure capability;
-MA-006 mailbox, groups, calendar and Teams consent; MA-007 NVIDIA entitlement;
-MA-008 domain; MA-009 webmaster ownership; MA-010 paid envelopes; MA-011 defense;
-and MA-013 compatibility-inventory acceptance.
+Use the [current manual-action index](../../MANUAL_ACTIONS.md) for affected gates,
+resolved actions and later activation. MA-004's recorded Atlanta provenance decision
+does not clear new production assets. D-068 defers hosting/provider/region/cost
+planning with Azure and AWS as candidates; the July Azure-capability wording is
+not a current provider selection. No previously resolved action is requested again.

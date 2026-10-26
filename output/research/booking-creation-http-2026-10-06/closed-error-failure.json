@@ -1,0 +1,11 @@
+{
+  "instance": {
+    "state": "unavailable",
+    "code": "INVALID_REQUEST",
+    "recovery": "correct_request"
+  },
+  "errors": [
+    "{'state': 'unavailable', 'code': 'INVALID_REQUEST', 'recovery': 'correct_request'} is not valid under any of the given schemas"
+  ],
+  "cause": "The error object declared only state in properties while additionalProperties=false; code and recovery were accidentally closed out."
+}

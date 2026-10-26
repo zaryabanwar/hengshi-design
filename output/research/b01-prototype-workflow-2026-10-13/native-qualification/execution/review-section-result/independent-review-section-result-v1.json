@@ -1,0 +1,507 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-13",
+  "reviewer": "/root/review_section_entry_v1",
+  "review_complete": true,
+  "review_outcome": "PASS",
+  "scope": "Bounded independent result-accounting and prospective same-trial continuation review for one native organizer conversion. PASS applies to truthful accounting, finite current-owner admission and authority interpretation; it does not pass missing post-conversion configuration, actual flow/NQ behavior, original-source preservation or phase acceptance.",
+  "packet": {
+    "path": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/review-section-result/review-inputs-v1.json",
+    "sha256": "a20d435f323fa5188e2584681267ebc8cd012660d33e5201c828f7cb67a837a3",
+    "input_count": 33,
+    "verified_binding_count": 33,
+    "all_frozen_bytes_and_sha256_match": true,
+    "all_current_sources_match_frozen": true
+  },
+  "verified_frozen_bindings": [
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-conversion-result-v1.json",
+      "snapshot": "inputs/00-section-conversion-result-v1.json",
+      "bytes": 3671,
+      "sha256": "122c9f6f123ad134b90e70c53db002f53f226d5859ce3ba7d9baf6a9214d26d6",
+      "verified_bytes": 3671,
+      "verified_sha256": "122c9f6f123ad134b90e70c53db002f53f226d5859ce3ba7d9baf6a9214d26d6",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-identity-continuation-proposal-v1.json",
+      "snapshot": "inputs/01-section-identity-continuation-proposal-v1.json",
+      "bytes": 2973,
+      "sha256": "296216ab006f5e296fca5c2f520efde951b8c247f5fd38cedf2266b1f9244802",
+      "verified_bytes": 2973,
+      "verified_sha256": "296216ab006f5e296fca5c2f520efde951b8c247f5fd38cedf2266b1f9244802",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/review-section-entry/independent-review-section-entry-v1.json",
+      "snapshot": "inputs/02-independent-review-section-entry-v1.json",
+      "bytes": 21459,
+      "sha256": "d6298c05db3237d08de54c7d2b82436c3d34b6dc1682338bb0e102380d22b1b0",
+      "verified_bytes": 21459,
+      "verified_sha256": "d6298c05db3237d08de54c7d2b82436c3d34b6dc1682338bb0e102380d22b1b0",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/review-section-entry/review-inputs-with-admission-v1.json",
+      "snapshot": "inputs/03-review-inputs-with-admission-v1.json",
+      "bytes": 7287,
+      "sha256": "6e090d89ce41ee17bd1c4de18d0da77b65ab64a19fff88cb1793f2ceb71cb379",
+      "verified_bytes": 7287,
+      "verified_sha256": "6e090d89ce41ee17bd1c4de18d0da77b65ab64a19fff88cb1793f2ceb71cb379",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-immediate-before-root-design-v1.txt",
+      "snapshot": "inputs/04-section-immediate-before-root-design-v1.txt",
+      "bytes": 20633,
+      "sha256": "98f5371acc35d403d65580d5c386e05f821907e677c05055d3b7e634ee5df48a",
+      "verified_bytes": 20633,
+      "verified_sha256": "98f5371acc35d403d65580d5c386e05f821907e677c05055d3b7e634ee5df48a",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-immediate-before-root-prototype-v1.txt",
+      "snapshot": "inputs/05-section-immediate-before-root-prototype-v1.txt",
+      "bytes": 16315,
+      "sha256": "3dabc2d21342f78b94ca647a55c7a960664d46dfd795be3e4714a7957afa84d7",
+      "verified_bytes": 16315,
+      "verified_sha256": "3dabc2d21342f78b94ca647a55c7a960664d46dfd795be3e4714a7957afa84d7",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-immediate-command-admission-v1.txt",
+      "snapshot": "inputs/06-section-immediate-command-admission-v1.txt",
+      "bytes": 17164,
+      "sha256": "7e8ee6433e34b8ddb315d0f588c88e5ca79ba540e5fdba4de0c5057929ab1d30",
+      "verified_bytes": 17164,
+      "verified_sha256": "7e8ee6433e34b8ddb315d0f588c88e5ca79ba540e5fdba4de0c5057929ab1d30",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-before-descendant-inventory-v1.json",
+      "snapshot": "inputs/07-section-before-descendant-inventory-v1.json",
+      "bytes": 33590,
+      "sha256": "42dfb18d55b2bb50321f726f9aa1e6ddf72a07e92f604924e329040bbf27f499",
+      "verified_bytes": 33590,
+      "verified_sha256": "42dfb18d55b2bb50321f726f9aa1e6ddf72a07e92f604924e329040bbf27f499",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-after-ordered-descendant-inventory-v1.json",
+      "snapshot": "inputs/08-section-after-ordered-descendant-inventory-v1.json",
+      "bytes": 33597,
+      "sha256": "79a58787bb4c157fef40006dc62cf097de4ff33dc87e693d391f10acf2c10815",
+      "verified_bytes": 33597,
+      "verified_sha256": "79a58787bb4c157fef40006dc62cf097de4ff33dc87e693d391f10acf2c10815",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-structure-comparison-v1.json",
+      "snapshot": "inputs/09-section-structure-comparison-v1.json",
+      "bytes": 1106,
+      "sha256": "9bf3a36851be4eed16b7ede095ecf60578e27e44789a5820afbfa74df418cebe",
+      "verified_bytes": 1106,
+      "verified_sha256": "9bf3a36851be4eed16b7ede095ecf60578e27e44789a5820afbfa74df418cebe",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-changed-label-observation-v1.json",
+      "snapshot": "inputs/10-section-changed-label-observation-v1.json",
+      "bytes": 1414,
+      "sha256": "541a318c74e023fa50c015801ba8dfc3e73bf04ee08beed5823e8e4f03a6c663",
+      "verified_bytes": 1414,
+      "verified_sha256": "541a318c74e023fa50c015801ba8dfc3e73bf04ee08beed5823e8e4f03a6c663",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-after-root-design-v1.txt",
+      "snapshot": "inputs/11-section-after-root-design-v1.txt",
+      "bytes": 17210,
+      "sha256": "50c1e81c72afbcd6f1c281ea434143bc1eee4191dbd1649b8f140e3ab4f73a41",
+      "verified_bytes": 17210,
+      "verified_sha256": "50c1e81c72afbcd6f1c281ea434143bc1eee4191dbd1649b8f140e3ab4f73a41",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-after-root-design-v1.png",
+      "snapshot": "inputs/12-section-after-root-design-v1.png",
+      "bytes": 90208,
+      "sha256": "7e23a03ca86dd77faf26806aa713dc1c30ffb7ab3f8dd623802f05af27cf4077",
+      "verified_bytes": 90208,
+      "verified_sha256": "7e23a03ca86dd77faf26806aa713dc1c30ffb7ab3f8dd623802f05af27cf4077",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-after-set-design-v1.txt",
+      "snapshot": "inputs/13-section-after-set-design-v1.txt",
+      "bytes": 15750,
+      "sha256": "bdfe43f45bfccc804242a6507b2249071684569a64dad6858aff9f0a76d69645",
+      "verified_bytes": 15750,
+      "verified_sha256": "bdfe43f45bfccc804242a6507b2249071684569a64dad6858aff9f0a76d69645",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-after-preview-design-v1.txt",
+      "snapshot": "inputs/14-section-after-preview-design-v1.txt",
+      "bytes": 13395,
+      "sha256": "a33ea53a984b433ecfa59be9b862503bd90b28f6fdd54bb9d2e75bf476e8e23a",
+      "verified_bytes": 13395,
+      "verified_sha256": "a33ea53a984b433ecfa59be9b862503bd90b28f6fdd54bb9d2e75bf476e8e23a",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-after-preview-prototype-v1.txt",
+      "snapshot": "inputs/15-section-after-preview-prototype-v1.txt",
+      "bytes": 10196,
+      "sha256": "7a4e82b84e6f356f592eddf2d5cac7bcb4fd609758e3682236887bd4c3ee456f",
+      "verified_bytes": 10196,
+      "verified_sha256": "7a4e82b84e6f356f592eddf2d5cac7bcb4fd609758e3682236887bd4c3ee456f",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-after-instance-entry-v1.txt",
+      "snapshot": "inputs/16-section-after-instance-entry-v1.txt",
+      "bytes": 13432,
+      "sha256": "bd114417d35ee68cc2ea51993381cd2b3b54a1161420cd1a9e9eb25befa15bbb",
+      "verified_bytes": 13432,
+      "verified_sha256": "bd114417d35ee68cc2ea51993381cd2b3b54a1161420cd1a9e9eb25befa15bbb",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-caption-owner-proofs-v1.json",
+      "snapshot": "inputs/17-section-caption-owner-proofs-v1.json",
+      "bytes": 930,
+      "sha256": "833d65b8b4d16235c66c73b6835cb3921144873904bb281ca125c2a1da61599b",
+      "verified_bytes": 930,
+      "verified_sha256": "833d65b8b4d16235c66c73b6835cb3921144873904bb281ca125c2a1da61599b",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-label-plain-copy-observation-v1.json",
+      "snapshot": "inputs/18-section-label-plain-copy-observation-v1.json",
+      "bytes": 278,
+      "sha256": "4190b4101b79085b6d9c7ab138417eb3fcb11bd8cb2d8bcb4b830a5e9aac6e9f",
+      "verified_bytes": 278,
+      "verified_sha256": "4190b4101b79085b6d9c7ab138417eb3fcb11bd8cb2d8bcb4b830a5e9aac6e9f",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-closed-label-current-native-selection-v1.txt",
+      "snapshot": "inputs/19-section-closed-label-current-native-selection-v1.txt",
+      "bytes": 29707,
+      "sha256": "a5e05f74e4630562d71486e2bd0465386c1dba54cb9251a80a25fc319e7b8aa6",
+      "verified_bytes": 29707,
+      "verified_sha256": "a5e05f74e4630562d71486e2bd0465386c1dba54cb9251a80a25fc319e7b8aa6",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-after-readonly-reload-v1.txt",
+      "snapshot": "inputs/20-section-after-readonly-reload-v1.txt",
+      "bytes": 13401,
+      "sha256": "231c4c43b11a431ec8d2cb1b356081bb94ba452e772fc1d7cbc197b347c4bf9a",
+      "verified_bytes": 13401,
+      "verified_sha256": "231c4c43b11a431ec8d2cb1b356081bb94ba452e772fc1d7cbc197b347c4bf9a",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-readonly-archive-comparison-v1.json",
+      "snapshot": "inputs/21-section-readonly-archive-comparison-v1.json",
+      "bytes": 1875,
+      "sha256": "c233def29e68a8345ce6ac8b69bc668a67175c3a9b40edf0758d537fcf12bdad",
+      "verified_bytes": 1875,
+      "verified_sha256": "c233def29e68a8345ce6ac8b69bc668a67175c3a9b40edf0758d537fcf12bdad",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/after-section-conversion-v1.fig",
+      "snapshot": "inputs/22-after-section-conversion-v1.fig",
+      "bytes": 386775,
+      "sha256": "8ef8eb316d986a30f399045309127dbb602b1be526401fad7daf2904cd47b520",
+      "verified_bytes": 386775,
+      "verified_sha256": "8ef8eb316d986a30f399045309127dbb602b1be526401fad7daf2904cd47b520",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/after-section-readonly-reload-v1.fig",
+      "snapshot": "inputs/23-after-section-readonly-reload-v1.fig",
+      "bytes": 386576,
+      "sha256": "f4afafbf6e4a066f67a90279bdcb570c6eb55623892599dc686c996385021159",
+      "verified_bytes": 386576,
+      "verified_sha256": "f4afafbf6e4a066f67a90279bdcb570c6eb55623892599dc686c996385021159",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-preview-handoff-v1.png",
+      "snapshot": "inputs/24-section-preview-handoff-v1.png",
+      "bytes": 111375,
+      "sha256": "c4ecf1fcbc86e69a55f4a17a5ab09e81cd1fbfad0022570b7a91d87b35dc651c",
+      "verified_bytes": 111375,
+      "verified_sha256": "c4ecf1fcbc86e69a55f4a17a5ab09e81cd1fbfad0022570b7a91d87b35dc651c",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/variant-layout-observed-v1.json",
+      "snapshot": "inputs/25-variant-layout-observed-v1.json",
+      "bytes": 1162,
+      "sha256": "f6e0d412291c5b82ad624a6ca003dc52157e1dbd2c82abc278db728a2902f3b3",
+      "verified_bytes": 1162,
+      "verified_sha256": "f6e0d412291c5b82ad624a6ca003dc52157e1dbd2c82abc278db728a2902f3b3",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/detached-body-bindings-normalized-v1.json",
+      "snapshot": "inputs/26-detached-body-bindings-normalized-v1.json",
+      "bytes": 23774,
+      "sha256": "c464ed24ad20fc963388e66ad5417bd91e237beb5a2ce6d55cd46b031e1c0993",
+      "verified_bytes": 23774,
+      "verified_sha256": "c464ed24ad20fc963388e66ad5417bd91e237beb5a2ce6d55cd46b031e1c0993",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/wired-click-edges-observed-v1.json",
+      "snapshot": "inputs/27-wired-click-edges-observed-v1.json",
+      "bytes": 2760,
+      "sha256": "12417302450c863ea86d53944cd47fa9b932dab2b1ac526e0de9ac3122ee7e3f",
+      "verified_bytes": 2760,
+      "verified_sha256": "12417302450c863ea86d53944cd47fa9b932dab2b1ac526e0de9ac3122ee7e3f",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/wired-escape-edges-observed-v1.json",
+      "snapshot": "inputs/28-wired-escape-edges-observed-v1.json",
+      "bytes": 806,
+      "sha256": "5655065745b681cec970e3ddd8f10751321051166336be6e2416befda94b6383",
+      "verified_bytes": 806,
+      "verified_sha256": "5655065745b681cec970e3ddd8f10751321051166336be6e2416befda94b6383",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/noop-apply-configuration-observed-v1.json",
+      "snapshot": "inputs/29-noop-apply-configuration-observed-v1.json",
+      "bytes": 366,
+      "sha256": "eb96936d06e038a6a2cd8c73327210797584b5c4e619558f3535b87233023643",
+      "verified_bytes": 366,
+      "verified_sha256": "eb96936d06e038a6a2cd8c73327210797584b5c4e619558f3535b87233023643",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/correction1/qualification-plan-v1.json",
+      "snapshot": "inputs/30-qualification-plan-v1.json",
+      "bytes": 18481,
+      "sha256": "447309d755223c9e8517d88293d550d89c4c73fbc66251611c3c3534e2bdada6",
+      "verified_bytes": 18481,
+      "verified_sha256": "447309d755223c9e8517d88293d550d89c4c73fbc66251611c3c3534e2bdada6",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "inputs/31-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "verified_bytes": 7686,
+      "verified_sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "source_matches_frozen": true
+    },
+    {
+      "source": "docs/software-definition/03-autonomous-ai-development-workflow.md",
+      "snapshot": "inputs/32-03-autonomous-ai-development-workflow.md",
+      "bytes": 7964,
+      "sha256": "d1388aab446eb65efe1f9f285cc4c375d05611b5d2fe34f6e75f09e83b588e54",
+      "verified_bytes": 7964,
+      "verified_sha256": "d1388aab446eb65efe1f9f285cc4c375d05611b5d2fe34f6e75f09e83b588e54",
+      "source_matches_frozen": true
+    }
+  ],
+  "findings": [],
+  "actionable_finding_count": 0,
+  "result_assessment": [
+    {
+      "subject": "Action and stop accounting",
+      "result": "PASS",
+      "evidence": [
+        "inputs/04-section-immediate-before-root-design-v1.txt",
+        "inputs/05-section-immediate-before-root-prototype-v1.txt",
+        "inputs/06-section-immediate-command-admission-v1.txt",
+        "inputs/00-section-conversion-result-v1.json"
+      ],
+      "conclusion": "Saved selected-root admission and enabled normal-editor conversion support the reported single command. Native outcome replaces owned Frame76:3157 with Section101:3204. Producer stopped qualification on unexpected identity differences and reports only read-only diagnosis/native preservation afterward. No flow/NQ success is claimed; no fallback reparent/cut/delete/repair is reported. This reviewer performed no external design action."
+    },
+    {
+      "subject": "Actually observed layout and entry admission",
+      "result": "PASS",
+      "evidence": [
+        "inputs/11-section-after-root-design-v1.txt:1-2,237-301",
+        "inputs/12-section-after-root-design-v1.png",
+        "inputs/13-section-after-set-design-v1.txt:196-239",
+        "inputs/14-section-after-preview-design-v1.txt:167-204",
+        "inputs/15-section-after-preview-prototype-v1.txt:144-151",
+        "inputs/16-section-after-instance-entry-v1.txt:150-165,188-213",
+        "inputs/20-section-after-readonly-reload-v1.txt:167-207",
+        "inputs/24-section-preview-handoff-v1.png"
+      ],
+      "conclusion": "Root name, (70000,60),4000x2800 and white fill remain observed. Set85:3174 remains at(140,140),1500x2400,clip true. Preview94:3199 remains at(1850,140),320x560,clip true,Vertical overflow. Instance94:3177 remains at(0,0),320x1150 with HIGH/MEDIUM/OPEN. Preview now exposes Add flow starting point. These inspector/pixel facts establish entry availability, not creation or correct playback. Handoff pixels contain a Saving indicator; they cannot establish immutable backing serialization."
+    },
+    {
+      "subject": "Finite census comparison",
+      "result": "PASS",
+      "evidence": [
+        "inputs/07-section-before-descendant-inventory-v1.json",
+        "inputs/08-section-after-ordered-descendant-inventory-v1.json",
+        "inputs/09-section-structure-comparison-v1.json",
+        "inputs/10-section-changed-label-observation-v1.json"
+      ],
+      "conclusion": "Independently compared192 unique before records and192 unique after records. Normalized only root76:3157->101:3204 and the direct-parent links of set/preview. The188 common identifiers then match exact name/depth/parent; common sibling order matches. Exactly four old label selectors are missing and four new ones additional. Whole arrays have different traversal order, so no positional ordered-array equality is asserted. Census scope ends at the separately observed existing36:2492 boundary and is not a whole-file/original-source census."
+    },
+    {
+      "subject": "Caption versus identity diagnosis",
+      "result": "PASS",
+      "evidence": [
+        "inputs/17-section-caption-owner-proofs-v1.json",
+        "inputs/18-section-label-plain-copy-observation-v1.json",
+        "inputs/19-section-closed-label-current-native-selection-v1.txt:1-2,483-493",
+        "inputs/00-section-conversion-result-v1.json"
+      ],
+      "conclusion": "Frozen producer records report owner-verified native Copy for all four control parents, known clipboard sentinel replacement, and exactly Apply selection. Reviewer inspected these records, not live clipboard operations. Saved AX for the selected child shows Text typography while URI identifies parent85:3419. The layer name Book a conversation is not caption evidence. Reload-generated108 label selectors and stale101 selector navigation are producer-reported observations; their cause/durability remains unproven. No durable-node identity equivalence or harmless projection mechanism is inferred."
+    },
+    {
+      "subject": "Archive discrepancy preserved and independently reproduced",
+      "result": "PASS",
+      "evidence": [
+        "inputs/21-section-readonly-archive-comparison-v1.json",
+        "inputs/22-after-section-conversion-v1.fig",
+        "inputs/23-after-section-readonly-reload-v1.fig"
+      ],
+      "conclusion": "Independently opened both frozen ZIP archives with Python zipfile, ran testzip, and hashed every payload. Both CRC checks pass and entry names match. canvas.fig and meta.json differ; thumbnail.png and the empty images/ entry match. This exactly reproduces the saved comparison. Equal image/thumbnail payloads do not establish source, semantic or whole-document equality; unequal canvas payloads cannot be dismissed as transient IDs, metadata-only changes or harmless reserialization without further evidence."
+    }
+  ],
+  "finite_identity_account": [
+    {
+      "parent": "85:3391",
+      "before_ui_child": "99:3200-layers-panel-row",
+      "after_ui_child": "101:3205-layers-panel-row",
+      "reported_reload_ui_child": "108:3197-layers-panel-row",
+      "reported_copy_caption": "Apply selection"
+    },
+    {
+      "parent": "85:3419",
+      "before_ui_child": "99:3201-layers-panel-row",
+      "after_ui_child": "101:3206-layers-panel-row",
+      "reported_reload_ui_child": "108:3198-layers-panel-row",
+      "reported_copy_caption": "Apply selection"
+    },
+    {
+      "parent": "85:3477",
+      "before_ui_child": "99:3202-layers-panel-row",
+      "after_ui_child": "101:3207-layers-panel-row",
+      "reported_reload_ui_child": "108:3199-layers-panel-row",
+      "reported_copy_caption": "Apply selection"
+    },
+    {
+      "parent": "85:3505",
+      "before_ui_child": "99:3203-layers-panel-row",
+      "after_ui_child": "101:3208-layers-panel-row",
+      "reported_reload_ui_child": "108:3200-layers-panel-row",
+      "reported_copy_caption": "Apply selection"
+    }
+  ],
+  "archive_replay": {
+    "crc_failures": [
+      null,
+      null
+    ],
+    "same_entry_names": true,
+    "payload_results": [
+      {
+        "entry": "canvas.fig",
+        "identical": false,
+        "before_sha256": "b195a4be02aadca384d09b26d926ff2a7c30f3ea04eb0f99847df86a45805702",
+        "after_sha256": "fe42bd5b0e1d9f8e8e217ce933fa2fd1ea0d8089e9ee8b4a260f50179eac181e"
+      },
+      {
+        "entry": "meta.json",
+        "identical": false,
+        "before_sha256": "bde309348bff64094b7d78817fe53024f502c7a221e6c0cc5c9afd33246864dd",
+        "after_sha256": "c3b1877123e01d79382eb1b678a1a1e396db3c75e57635d68002ad6c34e5b88d"
+      },
+      {
+        "entry": "thumbnail.png",
+        "identical": true,
+        "sha256": "5870531e3bb3577d3c6a3e413701481a406ca77a7e3dca496cd3cb60b2d0300e"
+      },
+      {
+        "entry": "images/",
+        "identical": true,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "continuation_assessment": {
+    "outcome": "PASS",
+    "disposition": "The finite observed organizer replacement and parent-owned label locator update may be acknowledged for fresh read-only admission of this same trial. Only if every prerequisite is observed and passes may the producer add the single planned preview flow and run the unchanged six NQ observations. No repair loop or extension is permitted.",
+    "authority_basis": {
+      "prior_review": "inputs/02-independent-review-section-entry-v1.json",
+      "prior_review_sha256": "d6298c05db3237d08de54c7d2b82436c3d34b6dc1682338bb0e102380d22b1b0",
+      "approved_trial_call": "call_XfJJFsQ39UpPr9bGi7lB3t0j",
+      "exact_trial_reply": "Approve this isolated Figma trial",
+      "approved_resume_call": "call_kdaue8CsEl20eN9cQIUmvxNZ",
+      "exact_resume_reply": "Resume the same trial after recovery",
+      "provenance": "Exact founder approvals were supplied as trusted commissioning context in the preceding review and frozen in its receipt; no new retrieval or approval is claimed."
+    },
+    "interpretation": "The original plan authorizes one owned top-level trial area, eight states, private synthetic controls, one preview/instance, one flow and its observations. Native organizer replacement is accounted as the effect of that one reviewed conversion, not an extra allocation. Using actually observed Section101:3204 and fresh label locators within the same stable owner controls neither alters the graph nor edits original references. The producer correctly stopped; this independent review resolves only whether the finite known effect permits renewed admission. Purpose/file/page/allocation/cost/product and observation contract remain unchanged, so no repeated founder gate is required solely to acknowledge these observations. Existing approval supplies authority, not this receipt. A newly identified material source effect or risk remains a founder decision.",
+    "new_founder_gate_required_solely_for_recorded_identity_effect": false,
+    "no_source_uncertainty_waiver": "Unknown label permanence and unequal payloads remain explicit. Neither is evidence of proven original mutation or proven immutability. Whole-original-source preservation/semantic equality and native restore stay held. Further changes or unavailable ownership/safeguard observations stop the affected work rather than being broadly normalized.",
+    "prerequisites": [
+      "Freshly verify private fileGOmLP6Cv96l768ueSrZ5Dg/page0:1 and the one actually observed Section101:3204. Verify no additional trial allocation, current name/parent/root geometry/fill and recorded direct children; set85:3174,preview94:3199 and instance94:3177 ownership, transforms, clip/Vertical and HIGH/MEDIUM/OPEN. Stop on missing admission or any new unaccounted drift.",
+      "Reinspect all eight variant IDs, local transforms and dimensions against approved trial/construction evidence. Native visible geometry, not matching names, must supply the check; stop if the required baseline/current values are unavailable.",
+      "Reinspect all four closed modal-reference body visibility states and relevant descendant visibility settings against actual construction evidence and the approved closed-panel outcome. Raw text Toggle layer visibility in the frozen body inventory alone is not a boolean visibility assertion. Require the closed modal-reference contents to be hidden as intended and Open directory exposed; do not invent a new container-versus-child hiding requirement. Stop on unavailable or changed settings without automatic repair.",
+      "Reinspect all twelve click and four Escape reaction trigger/action/actual owned target/Instant animation bindings against inputs27/28 and the approved plan. Verify selected control and target ownership. None of those post-conversion settings is passed by this result review.",
+      "Reinspect both current-choice Apply controls85:3434 and85:3520 for no configured click transition; actual no-op behavior remains for NQ testing. Do not infer absence of reactions from a census row or caption.",
+      "For only the four listed label owners, freshly disclose the stable parent and inspect its single Text label role/current UI selector. Verify current owner, caption and relevant styling; do not navigate stale child IDs or infer numerical successors/durable identities. If role ambiguity or another missing/additional node appears, stop. Do not normalize unrelated nodes or silently edit captions.",
+      "Only after all admission succeeds, add one labelled starting point on existing preview94:3199, verify the correct preview/entry is played, then execute unchanged NQ-01 through NQ-06. Stop on an actual failure or unavailability, preserving raw evidence and native archive; no fallback topology change, source edit, new allocation, cut/delete/recreation or repair.",
+      "Stop on quota/paid/account/plugin/resource failure with no automatic retry/activation. Preserve actual observations and obtain required bounded result review; full B01/four-stream/full-profile and founder pilot/Phase1 gates remain separate."
+    ]
+  },
+  "unchanged_graph": {
+    "eight_variants": true,
+    "configured_transitions": 16,
+    "configured_noop_controls": 2,
+    "post_conversion_reactions_verified_by_this_review": false,
+    "NQ_observations": [
+      "NQ-01",
+      "NQ-02",
+      "NQ-03",
+      "NQ-04",
+      "NQ-05",
+      "NQ-06"
+    ],
+    "NQ_observations_executed": 0
+  },
+  "unresolved_observation_limits": [
+    "Cause and permanent identity semantics of four changing label selectors are unproven.",
+    "Unequal canvas/metadata payloads are reproduced but unexplained.",
+    "Eight post-conversion geometries, four closed visibility states, sixteen reaction settings and two no-op settings still need fresh native admission.",
+    "Flow creation/correct entry and six NQ behaviors remain unexecuted.",
+    "No semantic/byte-identical original-source equality, complete original-node census or native restore evidence.",
+    "No DOM/native-radio/AT/modal-inertness/physical-phone/WCAG proof, full22-case B01 or integrated Phase1 acceptance."
+  ],
+  "review_actions": {
+    "read_frozen_artifacts": true,
+    "verified_all_bindings": true,
+    "independently_compared_census": true,
+    "inspected_two_saved_pngs_and_relevant_AX": true,
+    "independently_replayed_zip_crc_and_payload_hashes": true,
+    "Figma_UI_or_MCP_actions": 0,
+    "account_provider_model_paid_changes": 0,
+    "application_or_Git_actions": 0,
+    "extra_delegation": 0,
+    "written_artifacts": [
+      "independent-review-section-result-v1.json"
+    ]
+  },
+  "validation_classification": {
+    "artifact_integrity": "33 exact frozen bindings/current-source matches and independent archive/census checks.",
+    "saved_native_evidence": "Supplied AX/pixel inspection and explicitly attributed producer Copy/identity observations.",
+    "actual_runtime_and_post_conversion_configuration": "No live Figma, flow/NQ/runtime, restore or accessibility tests performed by reviewer."
+  }
+}

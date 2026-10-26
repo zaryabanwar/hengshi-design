@@ -69,8 +69,8 @@ try {
 
 $sourceRoutes = @($source.routes)
 $sourceExclusions = @($source.excludedSurfaces)
-Assert-True ($sourceRoutes.Count -eq 34) 'source inventory contains exactly 34 routes'
-Assert-True ($routes.Count -eq 34) 'UX parity contains exactly 34 route rows'
+Assert-True ($sourceRoutes.Count -eq 35) 'source inventory contains exactly 35 routes'
+Assert-True ($routes.Count -eq 35) 'UX parity contains exactly 35 route rows'
 Assert-True ($sourceExclusions.Count -eq 9) 'source inventory contains exactly nine exclusions'
 Assert-True ($exclusions.Count -eq 9) 'UX package contains exactly nine exclusion rows'
 

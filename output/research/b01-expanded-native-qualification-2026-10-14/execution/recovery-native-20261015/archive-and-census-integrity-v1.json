@@ -1,0 +1,104 @@
+{
+  "status": "DOING",
+  "kind": "artifact integrity only",
+  "archives": [
+    {
+      "file": "recovery-before-design-agent.fig",
+      "bytes": 424543,
+      "sha256": "b8de953809984984cbd515af62170bd041315eb22a300892b420e4b6f63c25bf",
+      "crc": "PASS",
+      "members": [
+        {
+          "name": "canvas.fig",
+          "bytes": 418375
+        },
+        {
+          "name": "thumbnail.png",
+          "bytes": 5118
+        },
+        {
+          "name": "meta.json",
+          "bytes": 345
+        },
+        {
+          "name": "images/",
+          "bytes": 0
+        }
+      ]
+    },
+    {
+      "file": "recovery-after-design-agent.fig",
+      "bytes": 431120,
+      "sha256": "630fdf02e2f462864d1a519115606c291d367fcea40d3a7c7705c8422eef8486",
+      "crc": "PASS",
+      "members": [
+        {
+          "name": "canvas.fig",
+          "bytes": 424892
+        },
+        {
+          "name": "thumbnail.png",
+          "bytes": 5177
+        },
+        {
+          "name": "meta.json",
+          "bytes": 345
+        },
+        {
+          "name": "images/",
+          "bytes": 0
+        }
+      ]
+    },
+    {
+      "file": "recovery-after-paper-export.fig",
+      "bytes": 431149,
+      "sha256": "950d561924929927015c51538dc69c2d3bfce2be625872891151675edd66d556",
+      "crc": "PASS",
+      "members": [
+        {
+          "name": "canvas.fig",
+          "bytes": 424901
+        },
+        {
+          "name": "thumbnail.png",
+          "bytes": 5197
+        },
+        {
+          "name": "meta.json",
+          "bytes": 345
+        },
+        {
+          "name": "images/",
+          "bytes": 0
+        }
+      ]
+    },
+    {
+      "file": "recovery-16-paper.zip",
+      "bytes": 347739,
+      "sha256": "02aef939cca56736abb079549a7c0cd07c1c0906709654d4f92736c0915aade4",
+      "crc": "PASS",
+      "members": [
+        {
+          "name": "B01/Four-stream three-host qualification/B01 qualification/RECOVERY/v1.png",
+          "bytes": 347493
+        }
+      ]
+    }
+  ],
+  "native_png": {
+    "width": 1568,
+    "height": 4888,
+    "sha256": "dafc0175c88c85c1ec9cf4fefdbb5436cd9605b918595517987314a9510fa6f4"
+  },
+  "native_variant_rows": 16,
+  "exact_cartesian_names": true,
+  "not_proven": [
+    "prototype reactions",
+    "all source preservation",
+    "restore",
+    "accessibility",
+    "B01 or Phase1 acceptance"
+  ]
+}

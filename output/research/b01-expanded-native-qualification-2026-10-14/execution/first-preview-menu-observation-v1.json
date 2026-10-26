@@ -1,0 +1,28 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-15",
+  "frame": "152:3383",
+  "flow": "https://www.figma.com/proto/GOmLP6Cv96l768ueSrZ5Dg/Hengshi-Design-v1-%E2%80%94-UI-References?node-id=152-3383&t=q0OArOdPasFNDOaP-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=152%3A3383&show-proto-sidebar=1",
+  "observations": [
+    {
+      "action": "Fresh reload of exact entry flow",
+      "result": "Closed menu, Detailed3D in force"
+    },
+    {
+      "action": "Click Menu",
+      "result": "Close menu and all4 choices visible; in-forceDetailed3D unchanged",
+      "screenshot": "preview-navigation-high-menu-open.png"
+    },
+    {
+      "action": "Click Close menu",
+      "result": "Panel disappears, Menu returns; in-forceDetailed3D unchanged",
+      "screenshot": "preview-navigation-high-menu-closed-again.png"
+    }
+  ],
+  "limits": [
+    "2 same-set click edges only",
+    "All pending-mode choice/Apply/Escape, scroll preservation and dirty reset/preserve comparators remain unqualified",
+    "No application, native dialog/radio semantics, accessibility or complete ENQ verdict"
+  ]
+}

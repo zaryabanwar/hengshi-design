@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed private qualification review response v1",
+  "description": "Definition-only candidate IF-BOOK-10 module. Reference response explicitly; the root rejects instances. No JSON request body is defined. Shape does not prove current own-lineage proof/purpose, permitted pre-intent state, admitted qualification, output fencing, privacy/retention, a reviewed edit base, mutation authority, shared resource limits, HTTP status or byte/header enforcement. INTERFACE_CATALOG.md controls the logical proposal.",
+  "not": {},
+  "$defs": {
+    "purpose_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "purpose_key",
+        "notice_reference"
+      ],
+      "properties": {
+        "purpose_key": {
+          "$ref": "chat-creation-request.schema.json#/$defs/identifier"
+        },
+        "notice_reference": {
+          "$ref": "chat-creation-request.schema.json#/$defs/notice_reference"
+        }
+      },
+      "description": "Only the applicable recorded booking-purpose and exact notice references needed for this review. No grant/consent decision, history or new authority. Syntax cannot prove that this purpose/notice is current, a booking purpose, lawful or applicable."
+    },
+    "snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "lineage_id",
+        "revision",
+        "qualification",
+        "purpose_reference"
+      ],
+      "properties": {
+        "kind": {
+          "const": "qualification_review"
+        },
+        "lineage_id": {
+          "$ref": "process-value.schema.json#/$defs/uuid"
+        },
+        "revision": {
+          "$ref": "process-value.schema.json#/$defs/positive_revision"
+        },
+        "qualification": {
+          "$ref": "booking-qualification.schema.json#/$defs/qualification"
+        },
+        "purpose_reference": {
+          "$ref": "#/$defs/purpose_reference"
+        }
+      },
+      "description": "One coherent currently authorized complete six-field snapshot and its committed revision, for permitted pre-intent review only. No lineage-state, edit_base_revision, latest_observed_revision, grant, challenge, provider or operation receipt is delivered. The client creates and preserves its reviewed edit-base binding separately; this snapshot cannot silently rebase dirty work."
+    },
+    "error": {
+      "oneOf": [
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "INVALID_REQUEST",
+            "recovery": "correct_request"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "ACCESS_UNAVAILABLE",
+            "recovery": "contact"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "SERVICE_UNAVAILABLE",
+            "recovery": "refresh_review"
+          }
+        }
+      ],
+      "description": "Fixed proposed body-bearing 400/404/503 projections only. No private denial condition, field value, selector, grant or arbitrary diagnostic. Bodyless method/media/size/capacity refusals are transport evidence, not JSON instances."
+    },
+    "response": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/snapshot"
+        },
+        {
+          "$ref": "#/$defs/error"
+        }
+      ]
+    }
+  }
+}

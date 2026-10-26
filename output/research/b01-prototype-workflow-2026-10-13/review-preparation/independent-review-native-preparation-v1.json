@@ -1,0 +1,740 @@
+{
+  "product": "Hengshi Design v1",
+  "review_id": "B01-NATIVE-PREPARATION-INDEPENDENT-V1",
+  "reviewer_id": "independent-agent-review_native_b01_preparation_v1",
+  "producer_id": "root-agent",
+  "prepared_on_utc": "2026-10-13T09:31:55.891090+00:00",
+  "review_complete": true,
+  "preparation_status": "DOING",
+  "revision_cycle_reviewed": 0,
+  "scope": "Independent frozen source-binding, logical-consistency and zero-spend native feasibility review of preparation only; not a writable payload, design result or acceptance review.",
+  "packet": {
+    "path": "output/research/b01-prototype-workflow-2026-10-13/review-preparation/review-inputs-v1.json",
+    "bytes": 12453,
+    "sha256": "66cfd0e4bf85fb7d3a15d28272d42fc0ec19916d6dec4668f9dbcfb2b10e33d0",
+    "input_count": 43,
+    "all_snapshot_bindings_match": true
+  },
+  "frozen_inputs": [
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/NATIVE_CONSTRUCTION_PLAN.md",
+      "snapshot": "inputs/00-NATIVE_CONSTRUCTION_PLAN.md",
+      "bytes": 6360,
+      "sha256": "aaa235e8413317290cf63290c4e8f1937fcfebb0b00441b84ba42819461fa7b2",
+      "verified_bytes": 6360,
+      "verified_sha256": "aaa235e8413317290cf63290c4e8f1937fcfebb0b00441b84ba42819461fa7b2",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/source-bindings-and-cases-v1.json",
+      "snapshot": "inputs/01-source-bindings-and-cases-v1.json",
+      "bytes": 371261,
+      "sha256": "33c4d4b05e58006bdd5153ac3c85397ae3f307b324c45017c29ced811380482b",
+      "verified_bytes": 371261,
+      "verified_sha256": "33c4d4b05e58006bdd5153ac3c85397ae3f307b324c45017c29ced811380482b",
+      "binding_matches": true
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "inputs/02-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "verified_bytes": 7686,
+      "verified_sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "binding_matches": true
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "inputs/03-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "verified_bytes": 16234,
+      "verified_sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "binding_matches": true
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "inputs/04-DECISIONS.md",
+      "bytes": 106595,
+      "sha256": "dcedb7cdad5f7401a47ddfe218f61b88b9a182d3f2c8c1f939696e9419522952",
+      "verified_bytes": 106595,
+      "verified_sha256": "dcedb7cdad5f7401a47ddfe218f61b88b9a182d3f2c8c1f939696e9419522952",
+      "binding_matches": true
+    },
+    {
+      "source": "docs/software-definition/03-autonomous-ai-development-workflow.md",
+      "snapshot": "inputs/05-03-autonomous-ai-development-workflow.md",
+      "bytes": 7964,
+      "sha256": "d1388aab446eb65efe1f9f285cc4c375d05611b5d2fe34f6e75f09e83b588e54",
+      "verified_bytes": 7964,
+      "verified_sha256": "d1388aab446eb65efe1f9f285cc4c375d05611b5d2fe34f6e75f09e83b588e54",
+      "binding_matches": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/README.md",
+      "snapshot": "inputs/06-README.md",
+      "bytes": 13944,
+      "sha256": "bec9109c86df617bf4682a5e7f41338e559ee0e9a4f0fffed03a9ae52696890f",
+      "verified_bytes": 13944,
+      "verified_sha256": "bec9109c86df617bf4682a5e7f41338e559ee0e9a4f0fffed03a9ae52696890f",
+      "binding_matches": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "snapshot": "inputs/07-UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "bytes": 45771,
+      "sha256": "1779fd3cd71f8210815fd7ddbbcd06faa6e5387e2d91584531be6d3806f8cf61",
+      "verified_bytes": 45771,
+      "verified_sha256": "1779fd3cd71f8210815fd7ddbbcd06faa6e5387e2d91584531be6d3806f8cf61",
+      "binding_matches": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/evidence-capture-plan.csv",
+      "snapshot": "inputs/08-evidence-capture-plan.csv",
+      "bytes": 8428,
+      "sha256": "4dceafb6d78a859ff5aee23ac78e65180975e72e83ed14a40dc20a90ad4fa0fd",
+      "verified_bytes": 8428,
+      "verified_sha256": "4dceafb6d78a859ff5aee23ac78e65180975e72e83ed14a40dc20a90ad4fa0fd",
+      "binding_matches": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/foundation-flow-coverage.csv",
+      "snapshot": "inputs/09-foundation-flow-coverage.csv",
+      "bytes": 47465,
+      "sha256": "7f80eeb1b60da0f23b026e7f33573bce89881df59cf3d705d759387abf69f5f4",
+      "verified_bytes": 47465,
+      "verified_sha256": "7f80eeb1b60da0f23b026e7f33573bce89881df59cf3d705d759387abf69f5f4",
+      "binding_matches": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/foundation-route-coverage.csv",
+      "snapshot": "inputs/10-foundation-route-coverage.csv",
+      "bytes": 22199,
+      "sha256": "a8d6e918aa85a4ed974945fedc604d016dea54dc6d3f6a55436d55557c0190e7",
+      "verified_bytes": 22199,
+      "verified_sha256": "a8d6e918aa85a4ed974945fedc604d016dea54dc6d3f6a55436d55557c0190e7",
+      "binding_matches": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/design-batch-plan.csv",
+      "snapshot": "inputs/11-design-batch-plan.csv",
+      "bytes": 28149,
+      "sha256": "0b01be6b01157785cf57dcb5c36a8efbd9254031708f9afad19db52e4f8b32ce",
+      "verified_bytes": 28149,
+      "verified_sha256": "0b01be6b01157785cf57dcb5c36a8efbd9254031708f9afad19db52e4f8b32ce",
+      "binding_matches": true
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+      "snapshot": "inputs/12-CHAT_EVENT_PROTOCOL.md",
+      "bytes": 50683,
+      "sha256": "b2b06e915c81083a40be58f3a641991862371f2d117effb2716e098116aed364",
+      "verified_bytes": 50683,
+      "verified_sha256": "b2b06e915c81083a40be58f3a641991862371f2d117effb2716e098116aed364",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-interaction-definition-2026-10-12/correction3/INTERACTION_EVIDENCE_PROPOSAL.md",
+      "snapshot": "inputs/13-INTERACTION_EVIDENCE_PROPOSAL.md",
+      "bytes": 11703,
+      "sha256": "b11add302eb0c1af9cae9123f33374cea37b5001d49a3fe15ddfde22de54a2a9",
+      "verified_bytes": 11703,
+      "verified_sha256": "b11add302eb0c1af9cae9123f33374cea37b5001d49a3fe15ddfde22de54a2a9",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-overlay-source-rebinding-2026-10-12/adoption-result-v1.json",
+      "snapshot": "inputs/14-adoption-result-v1.json",
+      "bytes": 666,
+      "sha256": "69e7e381ae6d110ee9e78e93339992c30a740f26e377c9cb5f9f31a15ecfe48c",
+      "verified_bytes": 666,
+      "verified_sha256": "69e7e381ae6d110ee9e78e93339992c30a740f26e377c9cb5f9f31a15ecfe48c",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/inventory.json",
+      "snapshot": "inputs/15-inventory.json",
+      "bytes": 19881,
+      "sha256": "f088d729871525c37c458e85ab850113ae5893a54c5a37116ddbbc2221e1f39a",
+      "verified_bytes": 19881,
+      "verified_sha256": "f088d729871525c37c458e85ab850113ae5893a54c5a37116ddbbc2221e1f39a",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-navigation-composition-2026-10-06/state-ledger.json",
+      "snapshot": "inputs/16-state-ledger.json",
+      "bytes": 23436,
+      "sha256": "f078e20b6fca5deec68a8876d83922d03064036aa797fb719cd6cae6d594da2b",
+      "verified_bytes": 23436,
+      "verified_sha256": "f078e20b6fca5deec68a8876d83922d03064036aa797fb719cd6cae6d594da2b",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-directory-call19-2026-10-08/decoded-design-result.json",
+      "snapshot": "inputs/17-decoded-design-result.json",
+      "bytes": 72290,
+      "sha256": "71f198783593821c55291a8e9b6a1e896d35f7addb695245c08763dd225e0eda",
+      "verified_bytes": 72290,
+      "verified_sha256": "71f198783593821c55291a8e9b6a1e896d35f7addb695245c08763dd225e0eda",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-recovery-stream-bindings-2026-10-08/attempt24-2026-10-11/receipt.json",
+      "snapshot": "inputs/18-receipt.json",
+      "bytes": 1969,
+      "sha256": "3dd22beefbd90c251827c5479621a4e7193721c5d39cc6694828cf251c28e0e6",
+      "verified_bytes": 1969,
+      "verified_sha256": "3dd22beefbd90c251827c5479621a4e7193721c5d39cc6694828cf251c28e0e6",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-recovery-stream-bindings-2026-10-08/input.json",
+      "snapshot": "inputs/19-input.json",
+      "bytes": 13802,
+      "sha256": "0e75c5db5f8145f881ce6552d1ca44a21f253a45b4cdb2812772caa6dad09f14",
+      "verified_bytes": 13802,
+      "verified_sha256": "0e75c5db5f8145f881ce6552d1ca44a21f253a45b4cdb2812772caa6dad09f14",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-ceiling-refusal-bindings-2026-10-09/attempt25-2026-10-11/receipt.json",
+      "snapshot": "inputs/20-receipt.json",
+      "bytes": 2769,
+      "sha256": "a34a22cd6357e7458cbfb26c5f39e50bae5a595e762261109f0ac26b0b6a73d1",
+      "verified_bytes": 2769,
+      "verified_sha256": "a34a22cd6357e7458cbfb26c5f39e50bae5a595e762261109f0ac26b0b6a73d1",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-ceiling-refusal-bindings-2026-10-09/execution-preparation/input.json",
+      "snapshot": "inputs/21-input.json",
+      "bytes": 16506,
+      "sha256": "fcc9aba8c54df8c69f8f822338a28f4fef6c07fe15b88152951dedaded5763df",
+      "verified_bytes": 16506,
+      "verified_sha256": "fcc9aba8c54df8c69f8f822338a28f4fef6c07fe15b88152951dedaded5763df",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-mode-coverage-2026-10-12/attempt29-2026-10-12/input.json",
+      "snapshot": "inputs/22-input.json",
+      "bytes": 42285,
+      "sha256": "fbba65b15900bd0f3c9ccde089b74afc038f002f84b587289c34516a9f88295a",
+      "verified_bytes": 42285,
+      "verified_sha256": "fbba65b15900bd0f3c9ccde089b74afc038f002f84b587289c34516a9f88295a",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/input.json",
+      "snapshot": "inputs/23-input.json",
+      "bytes": 13866,
+      "sha256": "3237e4cab79e6667e1fb4c57324e603d506a5dde9a3eebc43cf6429536ff8223",
+      "verified_bytes": 13866,
+      "verified_sha256": "3237e4cab79e6667e1fb4c57324e603d506a5dde9a3eebc43cf6429536ff8223",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/receipt.json",
+      "snapshot": "inputs/24-receipt.json",
+      "bytes": 35057,
+      "sha256": "ad63597b5fe80570718af59c1558042d3f60d9a92b75cd6fbab0d0a0270b17d0",
+      "verified_bytes": 35057,
+      "verified_sha256": "ad63597b5fe80570718af59c1558042d3f60d9a92b75cd6fbab0d0a0270b17d0",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/input.json",
+      "snapshot": "inputs/25-input.json",
+      "bytes": 36211,
+      "sha256": "e922317901f3e8ed9fc88958d22c46409444b5c3e884091f16ff886acd73d1d5",
+      "verified_bytes": 36211,
+      "verified_sha256": "e922317901f3e8ed9fc88958d22c46409444b5c3e884091f16ff886acd73d1d5",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/receipt.json",
+      "snapshot": "inputs/26-receipt.json",
+      "bytes": 39058,
+      "sha256": "e0b02d5357fe28b080ea9fe41c7cca3ea193624f0654f3a762edb59467b0263b",
+      "verified_bytes": 39058,
+      "verified_sha256": "e0b02d5357fe28b080ea9fe41c7cca3ea193624f0654f3a762edb59467b0263b",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-mode-coverage-2026-10-12/attempt29-2026-10-12/receipt.json",
+      "snapshot": "inputs/27-receipt.json",
+      "bytes": 60960,
+      "sha256": "98631654e1ca0fdf1b353bc6383ad7f66e11f11620dca14a2d5c8eadf1cddc85",
+      "verified_bytes": 60960,
+      "verified_sha256": "98631654e1ca0fdf1b353bc6383ad7f66e11f11620dca14a2d5c8eadf1cddc85",
+      "binding_matches": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "snapshot": "inputs/28-responsive-state-mode-matrix.csv",
+      "bytes": 33821,
+      "sha256": "deb91325e1c8a543878111883f5b1203ae9e5dc35c00e0d837e927786eaf47e2",
+      "verified_bytes": 33821,
+      "verified_sha256": "deb91325e1c8a543878111883f5b1203ae9e5dc35c00e0d837e927786eaf47e2",
+      "binding_matches": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "snapshot": "inputs/29-reference-template-inventory.csv",
+      "bytes": 33596,
+      "sha256": "2e904e0f4c7019ca696131068567978973961e70cb0889ae954771010c5634cf",
+      "verified_bytes": 33596,
+      "verified_sha256": "2e904e0f4c7019ca696131068567978973961e70cb0889ae954771010c5634cf",
+      "binding_matches": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/component-primitives.csv",
+      "snapshot": "inputs/30-component-primitives.csv",
+      "bytes": 79724,
+      "sha256": "8aec225781cbb1389ea15e70895889a9da306244cd6f8b74f7640d863dde6318",
+      "verified_bytes": 79724,
+      "verified_sha256": "8aec225781cbb1389ea15e70895889a9da306244cd6f8b74f7640d863dde6318",
+      "binding_matches": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/column-authority.json",
+      "snapshot": "inputs/31-column-authority.json",
+      "bytes": 11649766,
+      "sha256": "a8358be02d6fbca42a167b19395a4a2cd9b2fe318eaaec3b78e8141f4244aacd",
+      "verified_bytes": 11649766,
+      "verified_sha256": "a8358be02d6fbca42a167b19395a4a2cd9b2fe318eaaec3b78e8141f4244aacd",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/stream-control-open-high-current.txt",
+      "snapshot": "inputs/32-stream-control-open-high-current.txt",
+      "bytes": 21155,
+      "sha256": "ae81cefa929224767b3478adb7b764cc84bdf3c2bd40a33abec0d0039de2d2e1",
+      "verified_bytes": 21155,
+      "verified_sha256": "ae81cefa929224767b3478adb7b764cc84bdf3c2bd40a33abec0d0039de2d2e1",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/stream-pending-balanced-layer-current.txt",
+      "snapshot": "inputs/33-stream-pending-balanced-layer-current.txt",
+      "bytes": 20101,
+      "sha256": "1907db698998cbf1f5ab9f75face8564571404df1e5169a99ebb4894d55a401c",
+      "verified_bytes": 20101,
+      "verified_sha256": "1907db698998cbf1f5ab9f75face8564571404df1e5169a99ebb4894d55a401c",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/timing-more-time-find-current.txt",
+      "snapshot": "inputs/34-timing-more-time-find-current.txt",
+      "bytes": 12872,
+      "sha256": "036cc98715445291d4c7645bad094800775cc0e0f62024f67ea1971d86d74144",
+      "verified_bytes": 12872,
+      "verified_sha256": "036cc98715445291d4c7645bad094800775cc0e0f62024f67ea1971d86d74144",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/timing-more-time-find-second.txt",
+      "snapshot": "inputs/35-timing-more-time-find-second.txt",
+      "bytes": 1983,
+      "sha256": "572bb1969ca6295ffa90b104f2029017c61550a912530c043bb5fe67782eeead",
+      "verified_bytes": 1983,
+      "verified_sha256": "572bb1969ca6295ffa90b104f2029017c61550a912530c043bb5fe67782eeead",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/timing-more-time-find-third.txt",
+      "snapshot": "inputs/36-timing-more-time-find-third.txt",
+      "bytes": 1554,
+      "sha256": "32aa41c4bbce8546c9549685ecc241db290d5079dd693cc39dd30f7ed468f2cc",
+      "verified_bytes": 1554,
+      "verified_sha256": "32aa41c4bbce8546c9549685ecc241db290d5079dd693cc39dd30f7ed468f2cc",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/general-action-master-current.txt",
+      "snapshot": "inputs/37-general-action-master-current.txt",
+      "bytes": 16520,
+      "sha256": "7b702818a2ed61fb7f8c1bbdf8b0f58de616522a61954f2bcf2897e20d221cdf",
+      "verified_bytes": 16520,
+      "verified_sha256": "7b702818a2ed61fb7f8c1bbdf8b0f58de616522a61954f2bcf2897e20d221cdf",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/additional-native-directory-checks-v1.json",
+      "snapshot": "inputs/38-additional-native-directory-checks-v1.json",
+      "bytes": 2294,
+      "sha256": "7d6c90141560a90d3d4792f5963e1cd506141b8d1b113640658a138c546bba1a",
+      "verified_bytes": 2294,
+      "verified_sha256": "7d6c90141560a90d3d4792f5963e1cd506141b8d1b113640658a138c546bba1a",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/directory-close-current.txt",
+      "snapshot": "inputs/39-directory-close-current.txt",
+      "bytes": 23669,
+      "sha256": "a839a2a287197642e020f47576d2a271a2c38e80c8fbde435681045a4290754f",
+      "verified_bytes": 23669,
+      "verified_sha256": "a839a2a287197642e020f47576d2a271a2c38e80c8fbde435681045a4290754f",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/directory-input-current.txt",
+      "snapshot": "inputs/40-directory-input-current.txt",
+      "bytes": 24456,
+      "sha256": "d5b36a32844f81b816b91680f5ecfe19de98065acc61eb660581b287f5ebcab4",
+      "verified_bytes": 24456,
+      "verified_sha256": "d5b36a32844f81b816b91680f5ecfe19de98065acc61eb660581b287f5ebcab4",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/directory-search-current.txt",
+      "snapshot": "inputs/41-directory-search-current.txt",
+      "bytes": 23664,
+      "sha256": "63ce1b82d853837f07553ea733d10f1ef6ba42cfeda96dde534b55f75f298851",
+      "verified_bytes": 23664,
+      "verified_sha256": "63ce1b82d853837f07553ea733d10f1ef6ba42cfeda96dde534b55f75f298851",
+      "binding_matches": true
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/directory-clear-current.txt",
+      "snapshot": "inputs/42-directory-clear-current.txt",
+      "bytes": 30073,
+      "sha256": "770745907a7b8198ec2b18c8fdc51b5df8c7e6676158e7f1fb6aede79000bb51",
+      "verified_bytes": 30073,
+      "verified_sha256": "770745907a7b8198ec2b18c8fdc51b5df8c7e6676158e7f1fb6aede79000bb51",
+      "binding_matches": true
+    }
+  ],
+  "bounded_verdict": {
+    "preparation_source_binding_consistency": "PASS",
+    "meaning": "The frozen preparation truthfully identifies candidates and unresolved bindings, preserves22 cases and16 logical pairs, reconciles recorded source/profiles, and does not claim construction or runtime proof. No material source-reconciliation or timing-policy contradiction was found within this bounded scope. The six findings are necessary remaining executable-plan requirements, not waived gaps.",
+    "native_feasibility": "Conditionally feasible through documented basic native controls; selected file write/Presentation/state-retention behavior is unqualified.",
+    "complete_executable_plan": false,
+    "external_construction_released": false,
+    "pilot_accepted": false,
+    "Phase1_accepted": false
+  },
+  "verification": [
+    {
+      "result": "PASS",
+      "scope": "Artifact integrity only",
+      "detail": "All43 packet snapshot byte counts and SHA-256 bindings independently recomputed immediately before exclusive receipt creation."
+    },
+    {
+      "result": "PASS",
+      "scope": "Recorded source correspondence only",
+      "detail": "All216 unique catalogue frame IDs, sizes, declared axes and supplied names/kinds independently compared to frozen input/result records:20 navigation,52 directory,12 recovery host,8 refusal,48 shared grammar,28 responsive,48 mode. Eight mode name repairs were applied only as recorded expected names. No live census inferred."
+    },
+    {
+      "result": "PASS",
+      "scope": "Recorded source transformation only",
+      "detail": "All14 host descriptors and94 control rows match frozen inventory.json, and every expected_host_state_bindings path resolves to the corresponding template/state/stream catalogue record."
+    },
+    {
+      "result": "PASS",
+      "scope": "Definition allocation preservation only",
+      "detail": "All nine copied profile requirements match the frozen matrix required/critical values and evidence/annotation/exception rules;22 case IDs align and16 current/pending pairs are distinct. This does not establish allocated evidence coverage."
+    },
+    {
+      "result": "PASS",
+      "scope": "Current authority interpretation",
+      "detail": "D093 registry hash matches the frozen current column authority. D092 modal direction governs. Current README/D078 supersede preserved production-contract tenfold-duration wording. Timing recipe agrees with the proposed CHAT_EVENT_PROTOCOL continuation boundaries while retaining its proposal/runtime exclusions."
+    }
+  ],
+  "findings": [
+    {
+      "id": "BNP-01",
+      "priority": "high",
+      "classification": "required_before_executable_plan",
+      "status": "TODO",
+      "title": "Resolve public evidence identities and actual flow ownership before allocation",
+      "locations": [
+        {
+          "snapshot": "inputs/01-source-bindings-and-cases-v1.json",
+          "line_start": 1700,
+          "line_end": 1714,
+          "json_pointer": "/write_guards"
+        },
+        {
+          "snapshot": "inputs/01-source-bindings-and-cases-v1.json",
+          "line_start": 10845,
+          "line_end": 10862,
+          "json_pointer": "/construction_case_bindings/8"
+        },
+        {
+          "snapshot": "inputs/09-foundation-flow-coverage.csv",
+          "line_start": 2,
+          "line_end": 2
+        },
+        {
+          "snapshot": "inputs/09-foundation-flow-coverage.csv",
+          "line_start": 13,
+          "line_end": 13
+        },
+        {
+          "snapshot": "inputs/09-foundation-flow-coverage.csv",
+          "line_start": 22,
+          "line_end": 22
+        },
+        {
+          "snapshot": "inputs/08-evidence-capture-plan.csv",
+          "line_start": 9,
+          "line_end": 10
+        }
+      ],
+      "finding": "The frozen packet deliberately leaves evidence identities unresolved. P09/P10/P12/P13 span all three templates, but ACT-09 is not a directory/system template owner in the frozen flow CSV. Borrowing its stream-control semantics cannot expand its INSTANCE ownership. The evidence grammar also lacks an independent pending-stream axis; giving every ordered pair the same active-stream tuple would collide, while inventing public INSTANCE or STATE identifiers would change authority.",
+      "repair": "For every FRAME/PROTOTYPE/ANNOTATION, record the allowed source INSTANCE and normalization, template, state, viewport, mode, one in-force stream, lineage, case references and export role. FLOW-NAVIGATION-SEARCH owns the navigation/directory family and FLOW-ERROR-OFFLINE-RECOVERY owns recovery. Distinguish reused ACT-09 behavior authority from the owning evidence instance. Resolve pair/branch identity through approved evidence-unit composition and annotation associations, without fabricated identifiers or duplicate evidence/export paths. An actual enlargement of approved owner/template associations needs a separately reviewed authority amendment; normalizing an existing permitted owner does not. Later identity candidates outside this packet receive no verdict here."
+    },
+    {
+      "id": "BNP-02",
+      "priority": "high",
+      "classification": "required_before_executable_plan",
+      "status": "TODO",
+      "title": "Bind each copied action to its functional primitive rather than its source label",
+      "locations": [
+        {
+          "snapshot": "inputs/00-NATIVE_CONSTRUCTION_PLAN.md",
+          "line_start": 25,
+          "line_end": 35
+        },
+        {
+          "snapshot": "inputs/01-source-bindings-and-cases-v1.json",
+          "line_start": 2244,
+          "line_end": 2266,
+          "json_pointer": "/owned_closed_navigation_recipe"
+        },
+        {
+          "snapshot": "inputs/01-source-bindings-and-cases-v1.json",
+          "line_start": 10389,
+          "line_end": 10422,
+          "json_pointer": "/native_general_action_source"
+        },
+        {
+          "snapshot": "inputs/29-reference-template-inventory.csv",
+          "line_start": 21,
+          "line_end": 22
+        },
+        {
+          "snapshot": "inputs/29-reference-template-inventory.csv",
+          "line_start": 41,
+          "line_end": 41
+        },
+        {
+          "snapshot": "inputs/30-component-primitives.csv",
+          "line_start": 3,
+          "line_end": 5
+        },
+        {
+          "snapshot": "inputs/30-component-primitives.csv",
+          "line_start": 15,
+          "line_end": 16
+        }
+      ],
+      "finding": "Source14:18 is an observed PRIM-015 base component, not a complete functional navigation, directory, Book, radio or Apply primitive. PRIM-015 is absent from the navigation/directory template primitive_dependencies. The owned-closed recipe uses that source for Menu but does not yet distinguish mechanical visual reuse from the required PRIM-002 functional evidence. A Label override or node rename cannot establish anatomy, variants, interaction/focus states or authorize a new primitive dependency.",
+      "repair": "Add source primitive, intended functional primitive, required anatomy/variants/states, owned component/control topology and evidence mapping per use. Treat14:18 as a mechanical starting source when constructing the approved Menu/Close/Book/control anatomy; separately inspect and map PRIM-002, PRIM-004, PRIM-014 and PRIM-001 as applicable. Preserve the source master. Do not claim PRIM-015 coverage on an unassigned template. A proposal to change accepted dependencies, anatomy or variants materially requires the project change/review/founder gate; no such change is necessary merely to copy a visual proxy and fulfill existing approved functional requirements."
+    },
+    {
+      "id": "BNP-03",
+      "priority": "high",
+      "classification": "required_before_executable_plan",
+      "status": "TODO",
+      "title": "Select a finite native graph with explicit state matching, reset and overlay topology",
+      "locations": [
+        {
+          "snapshot": "inputs/00-NATIVE_CONSTRUCTION_PLAN.md",
+          "line_start": 56,
+          "line_end": 68
+        },
+        {
+          "snapshot": "inputs/01-source-bindings-and-cases-v1.json",
+          "line_start": 1921,
+          "line_end": 1933,
+          "json_pointer": "/interaction_graph_preparation/identity_axes"
+        },
+        {
+          "snapshot": "inputs/01-source-bindings-and-cases-v1.json",
+          "line_start": 1933,
+          "line_end": 2087,
+          "json_pointer": "/interaction_graph_preparation/stream_sequences"
+        },
+        {
+          "snapshot": "inputs/01-source-bindings-and-cases-v1.json",
+          "line_start": 10845,
+          "line_end": 10879,
+          "json_pointer": "/construction_case_bindings"
+        }
+      ],
+      "finding": "All16 ordered pairs are logically present, but the packet has no concrete variant set, owned source of Apply behavior, selected action per edge, or component-state reset/matching policy. Figma shares previously interacted variants between matching components; this can carry an old active/pending variant into a correctly labelled destination. Top-level scroll sharing depends on identical names or a common slash prefix, whereas current evidence names differ across states/streams. Swap overlay also has no overlay-history Back step. These are documented provider behaviors, not observed qualifications of this file.",
+      "repair": "Specify each finite node/edge with template, active/pending pair, route/panel/query/recovery context, fixture outcome, trigger scope, one allowed action, exact symbolic owned control and destination, reset policy and entry point. Use an owned variant set or explicit owned frame branches that can route Apply by the chosen pending state without paid conditionals. Separate no-op diagonal paths from change-success/failure fixtures. Bind matching nested scroll containers/parent names and authoritative resulting component defaults without violating evidence-ID grammar or editing protected sources. Choose overlay Open/Swap/Close and explicit canonical navigation behavior; do not use Back to pretend Swap reverses an overlay. After bounded authorization, qualify real Presentation paths for nonzero scroll, open-panel preservation, return, selection-only actions, refusal and repeated transitions; annotations can supplement focus semantics but cannot replace claimed observed Presentation behavior."
+    },
+    {
+      "id": "BNP-04",
+      "priority": "high",
+      "classification": "required_before_executable_plan",
+      "status": "TODO",
+      "title": "Turn candidate catalogues and profile lists into an exact construction and reuse allocation",
+      "locations": [
+        {
+          "snapshot": "inputs/00-NATIVE_CONSTRUCTION_PLAN.md",
+          "line_start": 19,
+          "line_end": 23
+        },
+        {
+          "snapshot": "inputs/00-NATIVE_CONSTRUCTION_PLAN.md",
+          "line_start": 49,
+          "line_end": 54
+        },
+        {
+          "snapshot": "inputs/01-source-bindings-and-cases-v1.json",
+          "line_start": 7954,
+          "line_end": 7968,
+          "json_pointer": "/complete_recorded_source_catalogue/profile_requirements"
+        },
+        {
+          "snapshot": "inputs/01-source-bindings-and-cases-v1.json",
+          "line_start": 9398,
+          "line_end": 9406,
+          "json_pointer": "/complete_recorded_source_catalogue/case_bindings/3"
+        },
+        {
+          "snapshot": "inputs/07-UI_REFERENCE_PRODUCTION_CONTRACT.md",
+          "line_start": 769,
+          "line_end": 776
+        }
+      ],
+      "finding": "The216 locators and nine full profile definitions reconcile, but candidate-by-name lists are explicitly not qualitative coverage. P04 candidate list contains only directory-result frames27:766/829/892/955, while its construction binding correctly requires navigation.STATE-OPEN. Shared recovery specimens have no stream-specific host identity. Missing named candidates and existing mode references cannot establish the required complete hosts, critical coordinates, bounding-frame reuse or case-specific behavior.",
+      "repair": "Allocate each required host/profile value and baseline/critical coordinate to an exact reused evidence unit, owned construction unit, annotation with named bounding frames, or explicit held obligation. Associate every P01-P22 sequence/branch with those units and the four streams. Classify P04 directory-result candidates as supplemental examples, not navigation trigger/destination proof. Resolve navigation closed/focus and directory closed/focus, narrow/tablet/wide annotations, recovery context embeddings and complete viewport minima explicitly. Respect minimum_evidence and qualitative stress/reading/focus requirements without multiplying an unnecessary full Cartesian product or treating216 as a copy target."
+    },
+    {
+      "id": "BNP-05",
+      "priority": "high",
+      "classification": "required_before_executable_plan",
+      "status": "TODO",
+      "title": "Make source admission and owned-copy discovery a staged, reviewable operation",
+      "locations": [
+        {
+          "snapshot": "inputs/00-NATIVE_CONSTRUCTION_PLAN.md",
+          "line_start": 28,
+          "line_end": 38
+        },
+        {
+          "snapshot": "inputs/01-source-bindings-and-cases-v1.json",
+          "line_start": 1700,
+          "line_end": 1714,
+          "json_pointer": "/remaining_preparation"
+        },
+        {
+          "snapshot": "inputs/01-source-bindings-and-cases-v1.json",
+          "line_start": 10389,
+          "line_end": 10422,
+          "json_pointer": "/native_general_action_source"
+        },
+        {
+          "snapshot": "inputs/01-source-bindings-and-cases-v1.json",
+          "line_start": 10723,
+          "line_end": 10749,
+          "json_pointer": "/construction_case_bindings"
+        }
+      ],
+      "finding": "The guards correctly forbid guessed aliases and protected-master writes. The14-host/94-control report is non-atomic, and the additional native selections cover only four directory controls, one stream master/text descendant and one general-action master. They do not supply an admissible whole selected tree, all retained styles/fonts/tokens/reactions, exact owned component-set isolation, or a recoverable write procedure.",
+      "repair": "Before external release, define a source-read admission record for each selected source with file/page, actual ID/type/parent chain, required descendant/property/style/font/token/reaction checks, drift refusals and native inspection method. Define a pre-approved symbolic ownership manifest and bounded isolated copy operation, then a post-copy discovery/checkpoint mapping of actual root/component/control/annotation IDs before wiring. Do not demand impossible advance actual new IDs and do not bypass absent guard data via hidden APIs, capped MCP, composer retries or paid features. Preserve snapshots/native archives, source preservation checks and applicable cleanup/restore authority. Native editable export integrity alone remains distinct from tested restore and _EXIT."
+    },
+    {
+      "id": "BNP-06",
+      "priority": "medium",
+      "classification": "required_before_executable_plan",
+      "status": "TODO",
+      "title": "Bind concrete warning/extension stages and terminal/unknown inspection entries",
+      "locations": [
+        {
+          "snapshot": "inputs/00-NATIVE_CONSTRUCTION_PLAN.md",
+          "line_start": 70,
+          "line_end": 75
+        },
+        {
+          "snapshot": "inputs/01-source-bindings-and-cases-v1.json",
+          "line_start": 10283,
+          "line_end": 10387,
+          "json_pointer": "/timing_extension_fixture_recipe"
+        },
+        {
+          "snapshot": "inputs/12-CHAT_EVENT_PROTOCOL.md",
+          "line_start": 581,
+          "line_end": 623
+        },
+        {
+          "snapshot": "inputs/08-evidence-capture-plan.csv",
+          "line_start": 14,
+          "line_end": 14
+        },
+        {
+          "snapshot": "inputs/06-README.md",
+          "line_start": 52,
+          "line_end": 58
+        }
+      ],
+      "finding": "The recipe faithfully retains30-minute inactivity, at least20seconds to act, at leastten extension opportunities, beginning-of-process notice/More time, current versus historical deadlines, immutable-intent reconciliation and terminal End. The three native More time hits are notes rather than controls. Exact host stages, control bindings, acknowledged/current/unknown lifetime displays, pending reconciliation and repeated inspection entries remain absent; a written repeat_inspection string is not an executed ten-opportunity design sequence.",
+      "repair": "Select approved source/owned host recipes and exact action, annotation, evidence-allocation and flow-entry bindings for initial notice, warning, applied, pending, stale, refused, unknown-deadline, background return and terminal outcomes. Record a visibly synthetic repeated-loop/stage method and ten inspected opportunities without variables, fabricated credentials or actual clocks; acknowledged labels must not imply that an older receipt supersedes current truth. Specify ordinary End while extension is pending, late reply after terminal End/expiry, and explicit B05 new-session boundary. Keep real timing, race, DOM/live-region, keyboard/touch/AT and privacy enforcement as later runtime evidence."
+    }
+  ],
+  "readiness_disposition": {
+    "preparation": "DOING",
+    "complete_plan_requirements": "TODO",
+    "external_construction": "BLOCKED",
+    "reason": "BNP-01 through BNP-06 must be bound and independently reviewed in a complete executable-plan successor, followed by applicable exact external-write permission. Actual new IDs arise only after separately authorized guarded copying; wiring must wait for discovered owned-ID validation.",
+    "next_review_scope": "A new frozen complete-plan packet including exact source/owned/evidence allocation, selected native graph, qualification protocol, inspection/export/restore/EXIT obligations and resolved owner/primitive bindings. Later producer candidates inherit no current verdict."
+  },
+  "primary_documentation_checked": [
+    {
+      "url": "https://help.figma.com/hc/en-us/articles/360061175334-Create-interactive-components-with-variants",
+      "checked_on": "2026-10-13",
+      "supports": "Any-plan interactive components; Change to within one component set; nested instance may change parent; instance/variant trigger interactions can override one another. Documentation only."
+    },
+    {
+      "url": "https://help.figma.com/hc/en-us/articles/360039818254-Create-overlays-in-your-prototypes",
+      "checked_on": "2026-10-13",
+      "supports": "Any-plan overlays; Open/Swap/Close candidate behavior; Swap has no prototype-history entry and inherits position. Documentation only."
+    },
+    {
+      "url": "https://help.figma.com/hc/en-us/articles/360040035834-Prototype-triggers",
+      "checked_on": "2026-10-13",
+      "supports": "Any-plan click/tap and keyboard shortcuts; key triggers replicate interactions rather than prove DOM focus/form behavior. Documentation only."
+    },
+    {
+      "url": "https://help.figma.com/hc/en-us/articles/360039818734-Prototype-scroll-and-overflow-behavior",
+      "checked_on": "2026-10-13",
+      "supports": "Any-plan frame overflow, fixed/sticky positioning and matching state behavior. Documentation only."
+    },
+    {
+      "url": "https://help.figma.com/hc/en-us/articles/14506587589399-Use-variables-in-prototypes",
+      "checked_on": "2026-10-13",
+      "supports": "Prototype variable actions are paid-plan features and remain excluded."
+    },
+    {
+      "url": "https://help.figma.com/hc/en-us/articles/14397859494295-State-management-for-prototypes",
+      "checked_on": "2026-10-13",
+      "supports": "State memorization/sharing/reset; interacted matching variants can override destination appearance; matching names/parents govern sharing. Any-plan provider documentation, not tested editor capability."
+    },
+    {
+      "url": "https://help.figma.com/hc/en-us/articles/360051747774-Preserve-scroll-position-in-prototypes",
+      "checked_on": "2026-10-13",
+      "supports": "Nested matching names and parent topology, or top-level identical names/common slash prefix, govern default scroll sharing. Reset settings are connection-specific. Documentation only."
+    }
+  ],
+  "exclusions": [
+    "Later producer bytes/candidate identity files outside this frozen43-input packet",
+    "Figma MCP/AI calls, browser/account/network mutations, installations, application/code/source/canonical/Git/deployment changes",
+    "Full live Figma tree/reaction/style/property census or actual native editing/Presentation execution",
+    "Visual pixels and PNGs referenced but not included as frozen snapshots; cited native text observations were inspected with their limits",
+    "Real search, booking, staff availability, credentials, visitor proof/tickets, API/backend state and DOM/AT/browser/mobile/WCAG conformance",
+    "Final design/accessibility review, native restore rehearsal/_EXIT, founder B01 pilot acceptance, later batches or integrated Phase1 acceptance"
+  ],
+  "write_accounting": {
+    "operation": "new exclusive-create review receipt only",
+    "target": "output/research/b01-prototype-workflow-2026-10-13/review-preparation/independent-review-native-preparation-v1.json",
+    "producer_inputs_modified": false,
+    "external_mutations": false,
+    "Figma_MCP_AI_calls": 0,
+    "commits_pushes_deployments": false
+  },
+  "memory_use": "Historical memory used only to orient approval-boundary checks; all current conclusions grounded in frozen inputs and current primary provider documentation. Historical gates are not imported as current authority."
+}

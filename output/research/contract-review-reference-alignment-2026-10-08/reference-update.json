@@ -1,0 +1,37 @@
+{
+  "status": "DOING",
+  "scope": "Three review-reference reconciliations only; frozen review limits preserved",
+  "changes": [
+    {
+      "path": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "before_sha256": "073878dcce6e2beb6477ec6fbe3162382554cc5875569e33a60e58ef34e23828",
+      "after_sha256": "8727998464c485faab917dff590affb2d8a4b990c481868fd18b5f91dd111028",
+      "reference_edits": 2,
+      "other_bytes_preserved": true
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "before_sha256": "ecb2e25fe91b0f0433400e859d0f21faf880ed519e6c84a825a114d506908dbb",
+      "after_sha256": "f56411f080eccceb6bd5c256b0288bb0fa1bd17331b900bf6e8730fe28aa2db6",
+      "reference_edits": 1,
+      "other_bytes_preserved": true
+    }
+  ],
+  "receipt_manifests_checked": [
+    {
+      "manifest": "output/research/company-public-projection-2026-10-07/review-inputs.json",
+      "sha256": "153c02c8e11d42ee383f1f8f2b7cad2eefb460075ed7e00f5fb6df4f8d03b3c4"
+    },
+    {
+      "manifest": "output/research/visitor-lifetime-control-2026-10-07/review-inputs.json",
+      "sha256": "09993498ab6152a25407ffbba7bffee7045f0fb6807d6ac189578ae16c73bdae"
+    },
+    {
+      "manifest": "output/research/knowledge-bundle-2026-10-08/review-inputs.json",
+      "sha256": "f6849b324f7672c0908e751a18305deb4612b7200540667fecdf40ca399ec99b"
+    }
+  ],
+  "runtime_or_product_claims_added": false,
+  "tests": "No prose tests; no schema or implementation change",
+  "preparation_note": "Initial CRLF match failed before changes; inspected source LF and preserved exact mixed endings"
+}

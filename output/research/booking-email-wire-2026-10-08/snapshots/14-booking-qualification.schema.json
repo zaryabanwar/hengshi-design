@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed booking qualification directional contracts v1",
+  "description": "Definition-only IF-BOOK-02 module. Reference request or response explicitly; the module root rejects instances. Shape does not establish email syntax/normalization, eligible wing or consent, private authority, immutable intent, revision ordering, atomic correction, raw encoding/work bounds or actual HTTP/provider enforcement.",
+  "not": {},
+  "$defs": {
+    "operation_id": {"$ref": "booking-creation-request.schema.json#/$defs/operation_id"},
+    "revision": {"$ref": "process-value.schema.json#/$defs/positive_revision"},
+    "nonblank": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "[^\\u0009-\\u000d\\u0020\\u0085\\u00a0\\u1680\\u2000-\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000]",
+      "description": "At least one code point outside Unicode 17 White_Space. Other Unicode/markup safety, raw scalar validity and accessible rendering are separate controls."
+    },
+    "qualification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["email", "organization", "role", "desired_outcome", "wing_key", "timing"],
+      "properties": {
+        "email": {"type": "string", "minLength": 1, "maxLength": 320, "description": "Bounded representation only, deliberately no misleading email-format assertion. The candidate plain-mailbox validation and normalization profile must also pass; shape alone admits non-address strings."},
+        "organization": {"$ref": "#/$defs/nonblank", "maxLength": 200},
+        "role": {"$ref": "#/$defs/nonblank", "maxLength": 200},
+        "desired_outcome": {"$ref": "#/$defs/nonblank", "maxLength": 2000},
+        "wing_key": {"$ref": "chat-creation-request.schema.json#/$defs/context/properties/wing_key"},
+        "timing": {
+          "type": "object", "additionalProperties": false,
+          "required": ["description"],
+          "properties": {"description": {"$ref": "#/$defs/nonblank", "maxLength": 500}}
+        }
+      }
+    },
+    "consent": {
+      "allOf": [
+        {"$ref": "chat-creation-request.schema.json#/$defs/decision"},
+        {"properties": {"decision": {"const": "grant"}}}
+      ],
+      "description": "One separate noticed booking-purpose grant. Refusal sends no personal qualification payload. Current purpose/notice/basis validity and storage permission remain semantic gates; chat purpose keys do not become booking permission."
+    },
+    "set": {
+      "type": "object", "additionalProperties": false,
+      "required": ["kind", "operation_id", "expected_revision", "qualification", "consent"],
+      "properties": {
+        "kind": {"const": "set_qualification"},
+        "operation_id": {"$ref": "#/$defs/operation_id"},
+        "expected_revision": {"$ref": "#/$defs/revision"},
+        "qualification": {"$ref": "#/$defs/qualification"},
+        "consent": {"$ref": "#/$defs/consent"}
+      }
+    },
+    "reconcile": {
+      "type": "object", "additionalProperties": false,
+      "required": ["kind", "operation_id"],
+      "properties": {
+        "kind": {"const": "reconcile_qualification"},
+        "operation_id": {"$ref": "#/$defs/operation_id"}
+      }
+    },
+    "request": {"oneOf": [{"$ref": "#/$defs/set"}, {"$ref": "#/$defs/reconcile"}]},
+    "applied": {
+      "type": "object", "additionalProperties": false,
+      "required": ["state", "operation_id", "applied_revision"],
+      "properties": {
+        "state": {"const": "applied"},
+        "operation_id": {"$ref": "#/$defs/operation_id"},
+        "applied_revision": {"$ref": "#/$defs/revision"}
+      }
+    },
+    "pending": {
+      "type": "object", "additionalProperties": false,
+      "required": ["state", "operation_id"],
+      "properties": {
+        "state": {"const": "pending"},
+        "operation_id": {"$ref": "#/$defs/operation_id"}
+      }
+    },
+    "text_reason": {"enum": ["required", "invalid", "too_long"]},
+    "current_reason": {"enum": ["required", "invalid", "not_current"]},
+    "rejected": {
+      "type": "object", "additionalProperties": false,
+      "required": ["state", "code", "recovery", "errors"],
+      "properties": {
+        "state": {"const": "rejected"},
+        "code": {"const": "INVALID_QUALIFICATION"},
+        "recovery": {"const": "correct_request"},
+        "errors": {
+          "type": "object", "additionalProperties": false, "minProperties": 1, "maxProperties": 7,
+          "properties": {
+            "email": {"$ref": "#/$defs/text_reason"},
+            "organization": {"$ref": "#/$defs/text_reason"},
+            "role": {"$ref": "#/$defs/text_reason"},
+            "desired_outcome": {"$ref": "#/$defs/text_reason"},
+            "timing": {"$ref": "#/$defs/text_reason"},
+            "wing_key": {"$ref": "#/$defs/current_reason"},
+            "consent": {"$ref": "#/$defs/current_reason"}
+          }
+        }
+      }
+    },
+    "error": {
+      "oneOf": [
+        {"const": {"state": "unavailable", "code": "INVALID_REQUEST", "recovery": "correct_request"}},
+        {"const": {"state": "unavailable", "code": "ACCESS_UNAVAILABLE", "recovery": "contact"}},
+        {"const": {"state": "unavailable", "code": "ACTION_DENIED", "recovery": "contact"}},
+        {"const": {"state": "unavailable", "code": "REVISION_CONFLICT", "recovery": "refresh_status"}},
+        {"const": {"state": "unavailable", "code": "OPERATION_CONFLICT", "recovery": "reconcile"}},
+        {"const": {"state": "unavailable", "code": "STATE_CONFLICT", "recovery": "refresh_status"}},
+        {"const": {"state": "unavailable", "code": "CAPACITY_LIMIT", "recovery": "wait"}},
+        {"const": {"state": "unavailable", "code": "SERVICE_UNAVAILABLE", "recovery": "reconcile"}},
+        {"const": {"state": "unavailable", "code": "BODY_TOO_LARGE", "recovery": "correct_request"}},
+        {"const": {"state": "unavailable", "code": "UNSUPPORTED_MEDIA", "recovery": "correct_request"}},
+        {"const": {"state": "unavailable", "code": "HEADER_TOO_LARGE", "recovery": "correct_request"}}
+      ]
+    },
+    "response": {
+      "oneOf": [{"$ref": "#/$defs/applied"}, {"$ref": "#/$defs/pending"},
+                {"$ref": "#/$defs/rejected"}, {"$ref": "#/$defs/error"}]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "TODO",
+  "external_calls": 0,
+  "scope": "One proposed comparison export of all52 existing directory views at scale1; five temporary clone sheets removed in finally; no original correction",
+  "script_sha256": "6a041e9b3fc18913f35863268c46e001738fb515130e06ff05e5eae118037a36",
+  "source_result_sha256": "71f198783593821c55291a8e9b6a1e896d35f7addb695245c08763dd225e0eda",
+  "images": 5,
+  "views": 52,
+  "sheet_allocations": [
+    12,
+    12,
+    12,
+    12,
+    4
+  ],
+  "finite_limits": "Each sheet<=2400x8000; created IDs<=4000; report<=18000 UTF8 bytes before export",
+  "original_checks": "IDs names widths heights parent, geometry/text/positions and parent-order restoration; not exhaustive appearance fingerprint",
+  "call_counts_if_approved": "October attempt20 conservative metered17; actual quota unknown; fresh per-call approval required",
+  "limits": "Prepared only; no Figma execution or guarantee of renderer output or image delivery; full B01 coverage/runtime/native restore/acceptance remain held"
+}

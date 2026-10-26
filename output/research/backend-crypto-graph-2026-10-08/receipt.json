@@ -1,0 +1,33 @@
+{
+  "status": "DOING",
+  "scope": "Windows isolated wheel-only metadata resolver dry-run; not native compatibility or identity adoption",
+  "command": [
+    "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "pip",
+    "--isolated",
+    "install",
+    "--dry-run",
+    "--ignore-installed",
+    "--only-binary=:all:",
+    "--no-cache-dir",
+    "--disable-pip-version-check",
+    "--progress-bar",
+    "off",
+    "--index-url",
+    "https://pypi.org/simple",
+    "--report",
+    "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\backend-crypto-graph-2026-10-08\\pip-report.json",
+    "-r",
+    "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\backend-crypto-graph-2026-10-08\\candidate-roots.txt"
+  ],
+  "deadline_seconds": 180,
+  "elapsed_seconds": 49.91,
+  "exit_code": 0,
+  "installation_performed": false,
+  "report_sha256": "9da776be394095379b5365c53beeb27887b57ec7b795745f5935349899464ba1",
+  "protected_inputs_unchanged": true,
+  "production_selection": false,
+  "independent_review": "pending"
+}

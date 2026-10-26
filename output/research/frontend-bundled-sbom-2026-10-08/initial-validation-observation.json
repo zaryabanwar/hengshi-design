@@ -1,0 +1,6 @@
+{
+  "scope": "Initial producer validation",
+  "exit_code": 1,
+  "reason": "Historical 78-input guard was incorrectly treated as current: DECISIONS.md, PROJECT_STATE.yaml and TASKS.md have later checkpoint changes. The other 75 historical identities still match.",
+  "correction": "Report these three checkpoint differences explicitly; retain strict identities for the other inputs. This is not a successful original guard or application mutation. Current authority files will be frozen separately for independent review."
+}

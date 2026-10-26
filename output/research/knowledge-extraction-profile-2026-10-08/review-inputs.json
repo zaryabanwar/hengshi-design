@@ -1,0 +1,169 @@
+{
+  "status": "DOING",
+  "scope": "New additive public text projection and exact extraction/context field profile; no representation schema or runtime claim",
+  "independent_review": "pending",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "bytes": 7686,
+      "snapshot": "review-inputs/00-AGENTS.md"
+    },
+    {
+      "path": ".specify/memory/constitution.md",
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "bytes": 16234,
+      "snapshot": "review-inputs/01-constitution.md"
+    },
+    {
+      "path": "PROJECT.md",
+      "sha256": "a483bd2713fe420322772ab7fb07c848aaf103088697c05ab91f35d2e5ea1461",
+      "bytes": 10942,
+      "snapshot": "review-inputs/02-PROJECT.md"
+    },
+    {
+      "path": "DECISIONS.md",
+      "sha256": "dd31d6026aedd1a03e966e055724b2f02783147291525f1740341848837eed74",
+      "bytes": 86352,
+      "snapshot": "review-inputs/03-DECISIONS.md"
+    },
+    {
+      "path": "PROJECT_STATE.yaml",
+      "sha256": "ca8ed5825769b5007835c9b44d3a4e7b4ebd1cba120340686d017686b3a64270",
+      "bytes": 8776,
+      "snapshot": "review-inputs/04-PROJECT_STATE.yaml"
+    },
+    {
+      "path": "TASKS.md",
+      "sha256": "590da697f0da1c2bc38f648d53dd9be8fe2bec0df0dc209ab9adf5af5f050c21",
+      "bytes": 6728,
+      "snapshot": "review-inputs/05-TASKS.md"
+    },
+    {
+      "path": "docs/software-definition/README.md",
+      "sha256": "a4907696b81b7bc7949a02e712970615122459b124b8fee836d731320181ccba",
+      "bytes": 7503,
+      "snapshot": "review-inputs/06-README.md"
+    },
+    {
+      "path": "docs/phase-1-foundation/01-product-requirements.md",
+      "sha256": "4db9d504695e7791705c41fe70fd0aea0467338d95acb5b6732bf6927893ac2e",
+      "bytes": 70783,
+      "snapshot": "review-inputs/07-01-product-requirements.md"
+    },
+    {
+      "path": "docs/phase-1-foundation/06-canonical-route-inventory.json",
+      "sha256": "41b750b5493a70a43344ca608084e6adce04b82a768969832026fb50f6b59081",
+      "bytes": 43357,
+      "snapshot": "review-inputs/08-06-canonical-route-inventory.json"
+    },
+    {
+      "path": "specs/004-design-services-content/spec.md",
+      "sha256": "d95a6fa419135cbc1774a3f5bff5e141ec9ba0a8ae8a108e752b890e96df7a34",
+      "bytes": 28074,
+      "snapshot": "review-inputs/09-spec.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/ARCHITECTURE.md",
+      "sha256": "44717f73094e5ffae24758c09cc710e3d0282b371c2fce23d5098cf36cfb6363",
+      "bytes": 10762,
+      "snapshot": "review-inputs/10-ARCHITECTURE.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "sha256": "11f71778edf797032ea43fe0204abeec5e11afa9178ddd4ea67b99c10a6ce460",
+      "bytes": 52455,
+      "snapshot": "review-inputs/11-DATA_CONTRACT.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/data-entities.csv",
+      "sha256": "ec55f41329d521c36014e8e77b863013a7c0a24a6917706767f59f9227525e64",
+      "bytes": 8956,
+      "snapshot": "review-inputs/12-data-entities.csv"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/data-classification.csv",
+      "sha256": "c8793ebfb401178b4175f0f6c7b9cfb14edcd606f370090883cbe2be94f0cd6e",
+      "bytes": 5615,
+      "snapshot": "review-inputs/13-data-classification.csv"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "sha256": "abb91975d2c828bbfd08a49ae5f2153c420812875da876c148d71145f9aebc24",
+      "bytes": 86941,
+      "snapshot": "review-inputs/14-PUBLICATION_CONTRACT.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/publication-manifest.schema.json",
+      "sha256": "d3620c8326246bc34040188de610c5823f1013936572d3ffb63a5eb350bc3852",
+      "bytes": 4297,
+      "snapshot": "review-inputs/15-publication-manifest.schema.json"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/publication-preparation.schema.json",
+      "sha256": "23c3569baa844a542dd8f7a283af87f50b93dfa1fdf3ccef2c401136c8acc2ac",
+      "bytes": 5499,
+      "snapshot": "review-inputs/16-publication-preparation.schema.json"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/knowledge-bundle.schema.json",
+      "sha256": "5d7013d9c8a84119c924ea585b5613e8d17b1ef9dbe49fe5698f4a47148f5d3e",
+      "bytes": 2010,
+      "snapshot": "review-inputs/17-knowledge-bundle.schema.json"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/company-facts.schema.json",
+      "sha256": "9c39ebfeac864de0f667e49980a444998257a0ffb45d2f63216f99f580100728",
+      "bytes": 2745,
+      "snapshot": "review-inputs/18-company-facts.schema.json"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+      "sha256": "b2b06e915c81083a40be58f3a641991862371f2d117effb2716e098116aed364",
+      "bytes": 50683,
+      "snapshot": "review-inputs/19-CHAT_EVENT_PROTOCOL.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "sha256": "1fe2469d7a88897cbe07080650f0971efae4b45ab8f007d05eb315875cb7da7c",
+      "bytes": 70442,
+      "snapshot": "review-inputs/20-SECURITY_PRIVACY_CONTRACT.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "sha256": "12314d8567e4f4c0f63c944aae6caa09657240bf40042191b983f4be5b6599ae",
+      "bytes": 116413,
+      "snapshot": "review-inputs/21-PRIVATE_PROCESS_PROOF.md"
+    },
+    {
+      "path": "output/research/knowledge-bundle-2026-10-08/independent-review-knowledge-bundle-v1.json",
+      "sha256": "9c2be75d8b91c729c8ddefca05efae896c5df89145c28bd189f91d67864f78a1",
+      "bytes": 2727,
+      "snapshot": "review-inputs/22-independent-review-knowledge-bundle-v1.json"
+    },
+    {
+      "path": "output/research/knowledge-extraction-profile-2026-10-08/DATA_CONTRACT.md.before",
+      "sha256": "8727998464c485faab917dff590affb2d8a4b990c481868fd18b5f91dd111028",
+      "bytes": 46213,
+      "snapshot": "review-inputs/23-DATA_CONTRACT.md.before"
+    },
+    {
+      "path": "output/research/knowledge-extraction-profile-2026-10-08/PUBLICATION_CONTRACT.md.before",
+      "sha256": "f56411f080eccceb6bd5c256b0288bb0fa1bd17331b900bf6e8730fe28aa2db6",
+      "bytes": 79872,
+      "snapshot": "review-inputs/24-PUBLICATION_CONTRACT.md.before"
+    }
+  ],
+  "local_reference_checks": [
+    {
+      "source": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "target": "PUBLICATION_CONTRACT.md#knowledge-source-extraction-profile-proposal--2026-10-08",
+      "exists": true
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "target": "DATA_CONTRACT.md#public-text-projection-profile-proposal--2026-10-08",
+      "exists": true
+    }
+  ]
+}

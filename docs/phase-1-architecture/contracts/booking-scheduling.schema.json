@@ -1,0 +1,1103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed discovery scheduling directional representations v1",
+  "description": "Definition-only IF-BOOK-05/06/08/09 shapes. Select a direction; root rejects. No authority, raw-query/HTTP, timezone membership/conversion, cross-field duration/ordering, policy, reservation, immutable review, provider truth or runtime proof. BOOKING_SCHEDULING.md governs meaning.",
+  "not": {},
+  "$defs": {
+    "operation_id": {
+      "$ref": "booking-creation-request.schema.json#/$defs/operation_id"
+    },
+    "reference": {
+      "$ref": "booking-creation-request.schema.json#/$defs/operation_id"
+    },
+    "revision": {
+      "$ref": "process-value.schema.json#/$defs/positive_revision"
+    },
+    "lineage_id": {
+      "$ref": "process-value.schema.json#/$defs/uuid"
+    },
+    "utc_instant": {
+      "$ref": "booking-status-response.schema.json#/$defs/utc_instant"
+    },
+    "timezone": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z][A-Za-z0-9._+-]*(?:/[A-Za-z0-9][A-Za-z0-9._+-]*)*(?![\\s\\S])",
+      "description": "Bounded key spelling only; approved pinned IANA-set membership/aliases and actual conversions are semantic checks. UTC is the explicit fallback, never a silent substitution."
+    },
+    "window": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "from_utc",
+        "until_utc"
+      ],
+      "properties": {
+        "from_utc": {
+          "$ref": "#/$defs/utc_instant"
+        },
+        "until_utc": {
+          "$ref": "#/$defs/utc_instant"
+        }
+      }
+    },
+    "window_query": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "purpose",
+        "expected_revision",
+        "visitor_timezone",
+        "from_utc",
+        "until_utc"
+      ],
+      "properties": {
+        "kind": {
+          "const": "window"
+        },
+        "purpose": {
+          "enum": [
+            "initial",
+            "reschedule"
+          ]
+        },
+        "expected_revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "visitor_timezone": {
+          "$ref": "#/$defs/timezone"
+        },
+        "from_utc": {
+          "$ref": "#/$defs/utc_instant"
+        },
+        "until_utc": {
+          "$ref": "#/$defs/utc_instant"
+        }
+      }
+    },
+    "page_query": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "expected_revision",
+        "page_ref"
+      ],
+      "properties": {
+        "kind": {
+          "const": "page"
+        },
+        "expected_revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "page_ref": {
+          "$ref": "#/$defs/reference"
+        }
+      }
+    },
+    "availability_query": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/window_query"
+        },
+        {
+          "$ref": "#/$defs/page_query"
+        }
+      ]
+    },
+    "slot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "slot_ref",
+        "starts_at_utc",
+        "ends_at_utc"
+      ],
+      "properties": {
+        "slot_ref": {
+          "$ref": "#/$defs/reference"
+        },
+        "starts_at_utc": {
+          "$ref": "#/$defs/utc_instant"
+        },
+        "ends_at_utc": {
+          "$ref": "#/$defs/utc_instant"
+        }
+      }
+    },
+    "slots_available": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "lineage_id",
+        "lineage_revision",
+        "purpose",
+        "visitor_timezone",
+        "window",
+        "observed_at",
+        "view_ref",
+        "slots",
+        "continuation_ref"
+      ],
+      "properties": {
+        "state": {
+          "const": "slots"
+        },
+        "lineage_id": {
+          "$ref": "#/$defs/lineage_id"
+        },
+        "lineage_revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "purpose": {
+          "enum": [
+            "initial",
+            "reschedule"
+          ]
+        },
+        "visitor_timezone": {
+          "$ref": "#/$defs/timezone"
+        },
+        "window": {
+          "$ref": "#/$defs/window"
+        },
+        "observed_at": {
+          "$ref": "#/$defs/utc_instant"
+        },
+        "view_ref": {
+          "$ref": "#/$defs/reference"
+        },
+        "slots": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 96,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/slot"
+          }
+        },
+        "continuation_ref": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/reference"
+            }
+          ]
+        }
+      }
+    },
+    "slots_empty": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "lineage_id",
+        "lineage_revision",
+        "purpose",
+        "visitor_timezone",
+        "window",
+        "observed_at",
+        "view_ref",
+        "slots",
+        "continuation_ref"
+      ],
+      "properties": {
+        "state": {
+          "const": "empty"
+        },
+        "lineage_id": {
+          "$ref": "#/$defs/lineage_id"
+        },
+        "lineage_revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "purpose": {
+          "enum": [
+            "initial",
+            "reschedule"
+          ]
+        },
+        "visitor_timezone": {
+          "$ref": "#/$defs/timezone"
+        },
+        "window": {
+          "$ref": "#/$defs/window"
+        },
+        "observed_at": {
+          "$ref": "#/$defs/utc_instant"
+        },
+        "view_ref": {
+          "$ref": "#/$defs/reference"
+        },
+        "slots": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "continuation_ref": {
+          "type": "null"
+        }
+      }
+    },
+    "availability_error": {
+      "oneOf": [
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "INVALID_REQUEST",
+            "recovery": "correct_request"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "ACCESS_UNAVAILABLE",
+            "recovery": "contact"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "ACTION_DENIED",
+            "recovery": "contact"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "REVISION_CONFLICT",
+            "recovery": "refresh_status"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "POLICY_UNAVAILABLE",
+            "recovery": "contact"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "TIMEZONE_UNSUPPORTED",
+            "recovery": "choose_timezone"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "CAPACITY_LIMIT",
+            "recovery": "wait"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "BODY_TOO_LARGE",
+            "recovery": "correct_request"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "UNSUPPORTED_MEDIA",
+            "recovery": "correct_request"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "HEADER_TOO_LARGE",
+            "recovery": "correct_request"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "VIEW_CHANGED",
+            "recovery": "refresh_availability"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "SERVICE_UNAVAILABLE",
+            "recovery": "refresh_availability"
+          }
+        }
+      ]
+    },
+    "mutation_error": {
+      "oneOf": [
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "INVALID_REQUEST",
+            "recovery": "correct_request"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "ACCESS_UNAVAILABLE",
+            "recovery": "contact"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "ACTION_DENIED",
+            "recovery": "contact"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "REVISION_CONFLICT",
+            "recovery": "refresh_status"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "POLICY_UNAVAILABLE",
+            "recovery": "contact"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "TIMEZONE_UNSUPPORTED",
+            "recovery": "choose_timezone"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "CAPACITY_LIMIT",
+            "recovery": "wait"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "BODY_TOO_LARGE",
+            "recovery": "correct_request"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "UNSUPPORTED_MEDIA",
+            "recovery": "correct_request"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "HEADER_TOO_LARGE",
+            "recovery": "correct_request"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "OPERATION_CONFLICT",
+            "recovery": "reconcile"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "STATE_CONFLICT",
+            "recovery": "refresh_status"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "SLOT_CHANGED",
+            "recovery": "refresh_availability"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "REVIEW_CHANGED",
+            "recovery": "prepare_review"
+          }
+        },
+        {
+          "const": {
+            "state": "unavailable",
+            "code": "SERVICE_UNAVAILABLE",
+            "recovery": "reconcile"
+          }
+        }
+      ]
+    },
+    "availability_response": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/slots_available"
+        },
+        {
+          "$ref": "#/$defs/slots_empty"
+        },
+        {
+          "$ref": "#/$defs/availability_error"
+        }
+      ]
+    },
+    "prepare_selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "operation_id",
+        "expected_revision",
+        "slot_ref",
+        "visitor_timezone"
+      ],
+      "properties": {
+        "kind": {
+          "const": "prepare_selection"
+        },
+        "operation_id": {
+          "$ref": "#/$defs/operation_id"
+        },
+        "expected_revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "slot_ref": {
+          "$ref": "#/$defs/reference"
+        },
+        "visitor_timezone": {
+          "$ref": "#/$defs/timezone"
+        }
+      }
+    },
+    "submit_booking": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "operation_id",
+        "expected_revision",
+        "review_ref"
+      ],
+      "properties": {
+        "kind": {
+          "const": "submit_booking"
+        },
+        "operation_id": {
+          "$ref": "#/$defs/operation_id"
+        },
+        "expected_revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "review_ref": {
+          "$ref": "#/$defs/reference"
+        }
+      }
+    },
+    "prepare_reschedule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "operation_id",
+        "expected_revision",
+        "slot_ref",
+        "visitor_timezone"
+      ],
+      "properties": {
+        "kind": {
+          "const": "prepare_reschedule"
+        },
+        "operation_id": {
+          "$ref": "#/$defs/operation_id"
+        },
+        "expected_revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "slot_ref": {
+          "$ref": "#/$defs/reference"
+        },
+        "visitor_timezone": {
+          "$ref": "#/$defs/timezone"
+        }
+      }
+    },
+    "submit_reschedule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "operation_id",
+        "expected_revision",
+        "review_ref"
+      ],
+      "properties": {
+        "kind": {
+          "const": "submit_reschedule"
+        },
+        "operation_id": {
+          "$ref": "#/$defs/operation_id"
+        },
+        "expected_revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "review_ref": {
+          "$ref": "#/$defs/reference"
+        }
+      }
+    },
+    "prepare_cancellation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "operation_id",
+        "expected_revision",
+        "visitor_timezone"
+      ],
+      "properties": {
+        "kind": {
+          "const": "prepare_cancellation"
+        },
+        "operation_id": {
+          "$ref": "#/$defs/operation_id"
+        },
+        "expected_revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "visitor_timezone": {
+          "$ref": "#/$defs/timezone"
+        }
+      }
+    },
+    "cancel_booking": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "operation_id",
+        "expected_revision",
+        "review_ref"
+      ],
+      "properties": {
+        "kind": {
+          "const": "cancel_booking"
+        },
+        "operation_id": {
+          "$ref": "#/$defs/operation_id"
+        },
+        "expected_revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "review_ref": {
+          "$ref": "#/$defs/reference"
+        }
+      }
+    },
+    "reconcile_submission": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "operation_id"
+      ],
+      "properties": {
+        "kind": {
+          "const": "reconcile_submission"
+        },
+        "operation_id": {
+          "$ref": "#/$defs/operation_id"
+        }
+      }
+    },
+    "reconcile_reschedule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "operation_id"
+      ],
+      "properties": {
+        "kind": {
+          "const": "reconcile_reschedule"
+        },
+        "operation_id": {
+          "$ref": "#/$defs/operation_id"
+        }
+      }
+    },
+    "reconcile_cancellation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "operation_id"
+      ],
+      "properties": {
+        "kind": {
+          "const": "reconcile_cancellation"
+        },
+        "operation_id": {
+          "$ref": "#/$defs/operation_id"
+        }
+      }
+    },
+    "submission_request": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/prepare_selection"
+        },
+        {
+          "$ref": "#/$defs/submit_booking"
+        },
+        {
+          "$ref": "#/$defs/reconcile_submission"
+        }
+      ]
+    },
+    "reschedule_request": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/prepare_reschedule"
+        },
+        {
+          "$ref": "#/$defs/submit_reschedule"
+        },
+        {
+          "$ref": "#/$defs/reconcile_reschedule"
+        }
+      ]
+    },
+    "cancellation_request": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/prepare_cancellation"
+        },
+        {
+          "$ref": "#/$defs/cancel_booking"
+        },
+        {
+          "$ref": "#/$defs/reconcile_cancellation"
+        }
+      ]
+    },
+    "local_clock": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "date",
+        "time",
+        "utc_offset_seconds"
+      ],
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date",
+          "minLength": 10,
+          "maxLength": 10,
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}(?![\\s\\S])"
+        },
+        "time": {
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 12,
+          "pattern": "^(?:[01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]\\.[0-9]{3}(?![\\s\\S])"
+        },
+        "utc_offset_seconds": {
+          "type": "integer",
+          "minimum": -86400,
+          "maximum": 86400
+        }
+      }
+    },
+    "review_occurrence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "starts_at_utc",
+        "ends_at_utc",
+        "local_start",
+        "local_end"
+      ],
+      "properties": {
+        "starts_at_utc": {
+          "$ref": "#/$defs/utc_instant"
+        },
+        "ends_at_utc": {
+          "$ref": "#/$defs/utc_instant"
+        },
+        "local_start": {
+          "$ref": "#/$defs/local_clock"
+        },
+        "local_end": {
+          "$ref": "#/$defs/local_clock"
+        }
+      }
+    },
+    "book_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "purpose",
+        "review_ref",
+        "visitor_timezone",
+        "qualification",
+        "consent",
+        "proposed_occurrence"
+      ],
+      "properties": {
+        "purpose": {
+          "const": "book"
+        },
+        "review_ref": {
+          "$ref": "#/$defs/reference"
+        },
+        "visitor_timezone": {
+          "$ref": "#/$defs/timezone"
+        },
+        "qualification": {
+          "$ref": "booking-qualification.schema.json#/$defs/qualification"
+        },
+        "consent": {
+          "$ref": "booking-qualification.schema.json#/$defs/consent"
+        },
+        "proposed_occurrence": {
+          "$ref": "#/$defs/review_occurrence"
+        }
+      }
+    },
+    "reschedule_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "purpose",
+        "review_ref",
+        "visitor_timezone",
+        "qualification",
+        "consent",
+        "current_occurrence",
+        "proposed_occurrence"
+      ],
+      "properties": {
+        "purpose": {
+          "const": "reschedule"
+        },
+        "review_ref": {
+          "$ref": "#/$defs/reference"
+        },
+        "visitor_timezone": {
+          "$ref": "#/$defs/timezone"
+        },
+        "qualification": {
+          "$ref": "booking-qualification.schema.json#/$defs/qualification"
+        },
+        "consent": {
+          "$ref": "booking-qualification.schema.json#/$defs/consent"
+        },
+        "current_occurrence": {
+          "$ref": "#/$defs/review_occurrence"
+        },
+        "proposed_occurrence": {
+          "$ref": "#/$defs/review_occurrence"
+        }
+      }
+    },
+    "cancellation_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "purpose",
+        "review_ref",
+        "visitor_timezone",
+        "wing_key",
+        "current_occurrence"
+      ],
+      "properties": {
+        "purpose": {
+          "const": "cancel"
+        },
+        "review_ref": {
+          "$ref": "#/$defs/reference"
+        },
+        "visitor_timezone": {
+          "$ref": "#/$defs/timezone"
+        },
+        "wing_key": {
+          "$ref": "chat-creation-request.schema.json#/$defs/context/properties/wing_key"
+        },
+        "current_occurrence": {
+          "$ref": "#/$defs/review_occurrence"
+        }
+      }
+    },
+    "current_unavailable": {
+      "const": {
+        "state": "unavailable"
+      }
+    },
+    "current_book": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "revision",
+        "review"
+      ],
+      "properties": {
+        "state": {
+          "const": "known"
+        },
+        "revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "review": {
+          "$ref": "#/$defs/book_review"
+        }
+      }
+    },
+    "prepared_book": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "receipt_kind",
+        "operation_id",
+        "applied_revision",
+        "current"
+      ],
+      "properties": {
+        "state": {
+          "const": "applied"
+        },
+        "receipt_kind": {
+          "const": "prepared"
+        },
+        "operation_id": {
+          "$ref": "#/$defs/operation_id"
+        },
+        "applied_revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "current": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/current_book"
+            },
+            {
+              "$ref": "#/$defs/current_unavailable"
+            }
+          ]
+        }
+      }
+    },
+    "current_reschedule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "revision",
+        "review"
+      ],
+      "properties": {
+        "state": {
+          "const": "known"
+        },
+        "revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "review": {
+          "$ref": "#/$defs/reschedule_review"
+        }
+      }
+    },
+    "prepared_reschedule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "receipt_kind",
+        "operation_id",
+        "applied_revision",
+        "current"
+      ],
+      "properties": {
+        "state": {
+          "const": "applied"
+        },
+        "receipt_kind": {
+          "const": "prepared"
+        },
+        "operation_id": {
+          "$ref": "#/$defs/operation_id"
+        },
+        "applied_revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "current": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/current_reschedule"
+            },
+            {
+              "$ref": "#/$defs/current_unavailable"
+            }
+          ]
+        }
+      }
+    },
+    "current_cancellation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "revision",
+        "review"
+      ],
+      "properties": {
+        "state": {
+          "const": "known"
+        },
+        "revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "review": {
+          "$ref": "#/$defs/cancellation_review"
+        }
+      }
+    },
+    "prepared_cancellation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "receipt_kind",
+        "operation_id",
+        "applied_revision",
+        "current"
+      ],
+      "properties": {
+        "state": {
+          "const": "applied"
+        },
+        "receipt_kind": {
+          "const": "prepared"
+        },
+        "operation_id": {
+          "$ref": "#/$defs/operation_id"
+        },
+        "applied_revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "current": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/current_cancellation"
+            },
+            {
+              "$ref": "#/$defs/current_unavailable"
+            }
+          ]
+        }
+      }
+    },
+    "accepted": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "receipt_kind",
+        "operation_id",
+        "applied_revision"
+      ],
+      "properties": {
+        "state": {
+          "const": "applied"
+        },
+        "receipt_kind": {
+          "const": "accepted"
+        },
+        "operation_id": {
+          "$ref": "#/$defs/operation_id"
+        },
+        "applied_revision": {
+          "$ref": "#/$defs/revision"
+        }
+      }
+    },
+    "pending": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "operation_id"
+      ],
+      "properties": {
+        "state": {
+          "const": "pending"
+        },
+        "operation_id": {
+          "$ref": "#/$defs/operation_id"
+        }
+      }
+    },
+    "submission_response": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/prepared_book"
+        },
+        {
+          "$ref": "#/$defs/accepted"
+        },
+        {
+          "$ref": "#/$defs/pending"
+        },
+        {
+          "$ref": "#/$defs/mutation_error"
+        }
+      ]
+    },
+    "reschedule_response": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/prepared_reschedule"
+        },
+        {
+          "$ref": "#/$defs/accepted"
+        },
+        {
+          "$ref": "#/$defs/pending"
+        },
+        {
+          "$ref": "#/$defs/mutation_error"
+        }
+      ]
+    },
+    "cancellation_response": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/prepared_cancellation"
+        },
+        {
+          "$ref": "#/$defs/accepted"
+        },
+        {
+          "$ref": "#/$defs/pending"
+        },
+        {
+          "$ref": "#/$defs/mutation_error"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+--- published-2.36.1/loaders/SVGLoader.d.ts
++++ merged-e0e835a/loaders/SVGLoader.d.ts
+@@ -1,15 +1,7 @@
+ import { Loader, LoadingManager, ShapePath, BufferGeometry, Vector2, Shape } from 'three'
+ 
+-export interface SVGResultPaths extends ShapePath {
+-  userData?:
+-    | {
+-        [key: string]: any
+-      }
+-    | undefined
+-}
+-
+ export interface SVGResult {
+-  paths: SVGResultPaths[]
++  paths: ShapePath[]
+   xml: XMLDocument
+ }
+ 

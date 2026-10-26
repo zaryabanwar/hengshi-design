@@ -1,0 +1,17 @@
+{
+  "result": "REVISE",
+  "reviewer": "/root/review_directory_references_v1",
+  "manifest_sha256": "c5e80c526addfb6355c2fedd98db723befe4ac1fca64d5a2edb992b115bcec67",
+  "findings": [
+    {
+      "id": "EW01",
+      "reason": "Reserved record slots alone cannot protect extensions from a full shared receive/fresh-mutation work pool."
+    }
+  ],
+  "independent_evidence": {
+    "matching_initial_final_pairs": 32,
+    "preserved_prefix_bytes": 89006,
+    "validator_methods_passed": 52
+  },
+  "scope": "Proposed IF-BOOK-03/04 directional wire/current-controls/HTTP and shared work profile; no runtime or integrated acceptance"
+}

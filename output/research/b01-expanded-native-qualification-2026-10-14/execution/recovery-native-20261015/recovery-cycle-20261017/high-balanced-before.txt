@@ -1,0 +1,39 @@
+Browser tab: 1, Title: "Hengshi Design v1 — UI References – Figma", URL: "https://www.figma.com/design/GOmLP6Cv96l768ueSrZ5Dg/Hengshi-Design-v1-%E2%80%94-UI-References?node-id=169-3382&t=aNQGmRbJKshhttRt-0".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 9-10, 147-148, 150-152, 154, 182-197, 199-202, 213-214, 238-247, 251-252, 267-277, 287-288, 570-661
+~							142 tab (selectable, settable, boolean) Design, Value: 0, ID: tab:r10:-0-trigger
+~							143 tab (selected, settable, boolean) Prototype, Value: 1, ID: tab:r10:-1-trigger
++						570 container
++							571 text Add interactivity with Make
++							572 button Close
++							573 container Mock video of sample images shuffling
++							574 text Figma Make opens up new ways to prototype—from responsive components to micro-interactions.
++							575 button Try Figma Make
++							576 button Interactions
++							577 button Add action
++							578 heading Scroll behavior, Value: 2
++								579 text Scroll behavior
++							580 text Position
++							581 combo box (collapsed) Position, Value: Scroll with parent, ID: :rdc:, Secondary Actions: Expand
++								582 text Scroll with parent
++								583 image
++							584 text Overflow
++							585 combo box (collapsed) Overflow, Value: No scrolling, ID: :rdf:, Secondary Actions: Expand
++								586 text No scrolling
++								587 image
++							588 button Show prototype settings
++							589 container delete-connection-hint
++								590 container
++									591 text Removing a connection
++									592 button Close
++								593 container
++									594 image
++									595 text To delete a connection, click and drag on either end.
++							596 container play-button-hint
++								597 container
++									598 text Running your prototype
++									599 button Close
++								600 container
++									601 image
++									602 text Use the play button in the toolbar to play your prototype. If there are no connections, the play button can be used to play a presentation of your frames.
+The focused UI element is 143 tab (selected, settable, boolean) Prototype, Value: 1, ID: tab:r10:-1-trigger

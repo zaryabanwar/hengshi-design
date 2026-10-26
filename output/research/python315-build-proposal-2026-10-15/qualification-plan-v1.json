@@ -1,0 +1,150 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "TODO",
+  "execution_authorized": false,
+  "outcome": "Qualify a current stable backend candidate on normal CPython3.15.0 WindowsAMD64 using an explicitly pure-Python PyYAML6.0.3 build; preserve Uvicorn standard extras and prior trials. Research only; no stack or application adoption.",
+  "target": "output/research/python315-native-2026-10-15",
+  "authority": "Phase1 safe preparation only. Existing43/48 package trial approvals do not authorize this new runtime/source-build pipeline. Requires explicit founder approval after this plan review.",
+  "inputs": {
+    "application_roots": "prospective-roots.txt",
+    "application_roots_sha256": "c3d37a95e3f8d08c423c8a35ce39ead6214318e9700ac10cfc4d811054d38be6",
+    "build_roots": "prospective-build-roots.txt",
+    "build_roots_sha256": "7b3c023e33b229b39c959599e302e9ace5d29769773f1df1fb6c361173dfbd7c",
+    "runtime": {
+      "package_id": "python",
+      "version": "3.15.0",
+      "url": "https://api.nuget.org/v3-flatcontainer/python/3.15.0/python.3.15.0.nupkg",
+      "archive_bytes": 16619621,
+      "catalog_expanded_bytes": 45251705,
+      "hash_algorithm": "SHA512",
+      "archive_hash_base64": "4Mqxfv35RplCDQwQ1KNOmRaW4uuC6p15GqEVRf9GfsOA2hHbrUmR2sXNyW6QqVpSBCbgSCLPmXe5crerczt0Hg==",
+      "metadata": "python315-runtime-metadata.json",
+      "entry_scope": "Full NuGet package including bundled pip26.2.1, not minimal embedded ZIP. Validate downloaded archive contents independently; catalogue sizes are estimates until checked."
+    },
+    "pyyaml_source": {
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "url": "https://files.pythonhosted.org/packages/05/8e/961c0007c59b8dd7729d542c61a4d537767a59645b82a0b521206e1e25c2/pyyaml-6.0.3.tar.gz",
+      "archive_bytes": 130960,
+      "sha256": "d76623373421df22fb4cf8817020cbb7ef15c725b9d5e45f17e189bfc384190f",
+      "basis": "output/research/python-runtime-wheel-admission-2026-10-15/captures/pyyaml-6.0.3.json.gz",
+      "tag_source_check": "Before any build, compare extracted setup.py/pyproject.toml/packaging/_pyyaml_pep517.py against saved exact6.0.3 upstream bytes. Stop on mismatch; do not substitute main/7.0.0.dev0."
+    },
+    "existing_original18_cases": [
+      {
+        "path": "output/research/backend-crypto-graph-2026-10-08/native-probes/test_libraries.py",
+        "sha256": "0f5b7a2341226d3568d7a411d1669bd0ebb5637eaecf2ead4312d19f90272fa7"
+      },
+      {
+        "path": "output/research/test-client-graph-2026-10-09/test_client_coexistence.py",
+        "sha256": "06d0870d23ac03e42743bf927c20b01295cdb68bd7cb44b262f2be3ea6bcac71"
+      }
+    ],
+    "prospective_six_cases": {
+      "path": "output/research/python315-build-proposal-2026-10-15/test_yaml_parser_boundary.py",
+      "sha256": "80b816d582f5478a06746ff5978f1902fdc57b64e2447f3944d17f3bdb1c873b"
+    }
+  },
+  "boundaries": {
+    "retained_output_budget_bytes": 536870912,
+    "minimum_free_disk_bytes": 1073741824,
+    "max_distinct_python_distributions": 80,
+    "max_single_network_artifact_bytes": 67108864,
+    "max_single_expanded_archive_bytes": 134217728,
+    "per_command_deadline_seconds": 180,
+    "budget_kind": "Conservative admission, pre-command reservation and post-command measured stop; not an OS hard quota during subprocess/native execution.",
+    "network": "Only official runtime metadata/artifact URL and public PyPI registry/files sources during explicit acquisition/resolution. All build/install/probe stages offline from reviewed local bytes.",
+    "no_global_configuration": true,
+    "no_existing_environment_writes": true,
+    "no_app_or_production_locks": true,
+    "no_database_provider_or_server": true,
+    "no_docker_figma_ai_paid_account_or_git_changes": true,
+    "no_deletion_or_automatic_cleanup": true,
+    "no_silent_downgrade_or_root_extra_removal": true,
+    "protected_hashes": {
+      "package.json": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b",
+      "package-lock.json": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908",
+      "apps/web/package.json": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a",
+      "apps/web/package-lock.json": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d",
+      "apps/api/requirements.txt": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd",
+      "apps/api/.venv/pyvenv.cfg": "d23bc586f40b9aa9a601c8af0cab224cd4a40f0544a2f6348e9ad703f4d8ea39"
+    },
+    "material_scope_drift": "Stop for a revised reviewed proposal and applicable permission if runtime, root families/extras, PyYAML path, budget, package ceiling or planned test behavior must change. Preserve failures. No automatic retry."
+  },
+  "steps": [
+    {
+      "id": "01-admission",
+      "action": "Require explicit founder authorization; verify reviewed inputs and hashes, exact target absent, protected6 unchanged. Reserve entire512MiB plus1GiB floor before first artifact. Capture host architecture/OS without changing settings. Only invoke full absolute interpreter paths; legacy py launcher remains untouched."
+    },
+    {
+      "id": "02-runtime",
+      "action": "Download exact16,619,621-byte NuGet runtime package, require SHA512/base64 match to saved catalogue. Inspect ZIP CRC, actual expanded sizes and path/case/duplicate/reparse/symlink safety before extraction inside target/runtime only. Reject traversal/outside paths or budget overflow. Preserve complete package/notices. No installer/MSIX/NuGet.exe, registry, PATH, launcher, user-site or account mutation. Compare actual member inventory to catalogue; record differences rather than asserting trust. Author/hash/CRC metadata is not cryptographic publisher provenance."
+    },
+    {
+      "id": "03-runtime-identity",
+      "action": "Run target/runtime/tools/python.exe -B explicitly; require exact3.15.0, WindowsAMD64, GIL enabled, expected sys.prefix and bundled pip26.2.1. Record pip/stdlib/native component inventory. Do not bootstrap or upgrade bundled pip. Use process-local PYTHONDONTWRITEBYTECODE=1 and PYTHONNOUSERSITE=1, remove inherited PYTHONPATH/PYTHONHOME in child environment; route TEMP/TMP and cache/log/output paths inside target without changing machine environment. Original package managers/environments stay untouched."
+    },
+    {
+      "id": "04-build-resolution",
+      "action": "On the actual3.15 interpreter, run bundled pip --isolated install --dry-run --ignore-installed --only-binary=:all: --no-cache-dir --disable-pip-version-check --index-url https://pypi.org/simple --report <build-report.json> -r prospective-build-roots.txt. Build roots retain exact current observed pins. This resolves without installing; metadata acquisition can download wheels where metadata is unavailable. Capture all command output and acquired bytes; monitor command-boundary budget and stop on failures."
+    },
+    {
+      "id": "05-build-candidate-admission",
+      "action": "Inspect every resolved build distribution and extra/marker edge under actual3.15/Windows; require stable versions, no direct/VCS/local unknown dependency, no unresolved requirements and combined package ceiling<=80. Save full report, exact hashed requirements and per-file name/version/tag/Requires-Python/size/hash bindings. Independent read-only review of this concrete resolved graph and execution preparation must PASS before installing build tools. Founder initial permission may cover this bounded result review; no new package count request inside the accepted ceiling, no deployment selection."
+    },
+    {
+      "id": "06-build-tools",
+      "action": "Acquire only reviewed hashed binary wheels with --require-hashes --only-binary=:all: --no-deps --no-cache-dir. Check actual ZIP/hash/expanded sizes and reserve retained bytes + twice pending expanded sizes +64MiB overhead <=512MiB, leaving1GiB floor. Create target/build-env via actual3.15 venv --without-pip; use runtime pip --python <build-env Python> to install offline --no-index --find-links wheelhouse --require-hashes --only-binary=:all: --no-deps --no-compile. Record pip check and exact installed identities."
+    },
+    {
+      "id": "07-source-admission",
+      "action": "Acquire exactPyYAML6.0.3 sdist by saved SHA256 and byte count; safely inspect tar member paths/types/collisions/expanded sizes and refuse links/devices/traversal. Reserve both separate source extractions/build outputs before writing. Compare3 named build files with captured exact tag bytes, including line endings; stop on any mismatch. Preserve complete sdist and available notices. Do not run setup.py directly or regenerate/download another source revision."
+    },
+    {
+      "id": "08-two-offline-builds",
+      "action": "In the private build-env, use pip wheel --no-build-isolation --check-build-dependencies --no-deps --no-index --no-cache-dir --wheel-dir <dist1/dist2> <src1/src2>. Set PYYAML_FORCE_LIBYAML=0 and fixed SOURCE_DATE_EPOCH=1760000000 in each command process only. Retain declared setuptools/Cython build requirements even with the extension disabled; record dynamic build requirements and stop if new ones appear. No network or C compiler/LibYAML installation. Build twice from distinct clean extracted sources; no automatic repair/retry."
+    },
+    {
+      "id": "09-built-wheel-admission",
+      "action": "Inspect two new wheel archives without import: identity/version, Root-Is-Purelib, tags, file hashes/RECORD, expanded sizes, notices and absence of native extension/binary members. Require normal py3/none/any eligibility for actual3.15 and consistent metadata. Compare full wheel SHA256; if different preserve detailed ZIP member difference and stop without claiming reproducibility or accepting a normalized comparison. Setuptools/Cython versions or build flags cannot silently change to make it pass."
+    },
+    {
+      "id": "10-full-resolution",
+      "action": "Run actual3.15 bundled pip --isolated install --dry-run --ignore-installed --only-binary=:all: --no-cache-dir --disable-pip-version-check --index-url https://pypi.org/simple --find-links <verified local PyYAML wheel directory> --report <full-report.json> -r prospective-roots.txt. Keep all14 family roots/extras and dated current root pins; allow pip to choose mutually constrained stable transitives rather than independently pinning their newest versions. Require chosen PyYAML is exact reviewed local wheel/hash and inspect every marker/extra edge including Windows-specific dependencies. The14 individually-current observations are not a selected compatible set."
+    },
+    {
+      "id": "11-full-candidate-review",
+      "action": "Freeze full resolved graph, actualPyYAML build evidence, exact hashed wheel bindings, role closure and probe/runner sources. Independently review before full-environment installation. Require all applicable package counts/budgets/stable checks and original18 probe hashes; no expected behavior changes to force a pass. A conflicting graph is retained as concrete evidence; do not remove extras, back off root/runtime pins or add prereleases without the appropriate reviewed exception/decision."
+    },
+    {
+      "id": "12-offline-install",
+      "action": "Acquire only remaining reviewed exact hashed wheels using --no-deps --require-hashes; preserve PyYAML own-built wheel. Check ZIP/hash/expanded-size reservation before creating target/qualification-env via3.15 venv --without-pip. Install with runtime pip --python <qualification-env Python> --no-index --find-links <reviewed wheelhouse> --require-hashes --only-binary=:all: --no-deps --no-cache-dir --no-compile. Run pip check and compare every normalized installed identity/hash to the frozen candidate."
+    },
+    {
+      "id": "13-public-library-probes",
+      "action": "Run unchanged original18 cases plus6 prospective PyYAML/Uvicorn cases under actual3.15 qualification-env. Initialize Authlib deprecation module before error filters; preserve current Starlette/Authlib error filters, disable pytest auto-plugins/bytecode/cache and load only pytest_asyncio. Save warning-filter admission, JUnit and raw stdout/stderr; any skipped/error/failed case prevents qualification. YAML malformed/unsafe-tag rejection is synthetic library behavior only. No Hengshi app import, real credential/token, network, server/listener/database or provider call."
+    },
+    {
+      "id": "14-inventory-and-review",
+      "action": "Save runtime package/bundled pip component inventory, build/qualification installed graph and all discovered wheel/source/runtime notices; distinguish discovered files from complete embedded licensing/provenance. Recheck all6 protected hashes and measured retained/free bytes after every stage, including failures. Independent bounded result review before any later adoption proposal. No application, production runtime/lock or licence/security clearance follows from24 synthetic library cases."
+    },
+    {
+      "id": "15-stop-and-rollback",
+      "action": "Stop on unknown/missing ownership, mismatch, over-budget, timed-out command, new build dependency or source/graph/test drift. Wait or terminate only the recorded owned process tree under the approved execution controller; never restart from a mere observation timeout. Preserve terminal failures and outputs. Rollback is retaining the original untouched application/runtimes/trials and not invoking the research paths. No automatic deletion; removing output later requires its own explicit approval."
+    }
+  ],
+  "execution_preparation_gate": "This is a reviewed pipeline proposal, not an executed trial or completed controller. Before any authorized command, prepare exact acquisition/reservation/process-control helpers and concrete per-stage argument vectors; independently review them with the applicable resolved graph. Initial pipeline approval may include those internal read-only reviews; material changes beyond this envelope need a new decision.",
+  "success_limits": [
+    "No selected complete production graph, Linux/ARM/free-threaded qualification or provider choice.",
+    "No actual Hengshi API/OIDC/session/auth/PostgreSQL/concurrency/accessibility/operational readiness.",
+    "No cost plan, production dependency upgrade, cryptographic build-provenance or legal/security clearance.",
+    "No elapsed-time guarantee; command-boundary budgets do not enforce a hard filesystem quota."
+  ],
+  "expected_library_cases": 24,
+  "source_notes": [
+    "Context7 resolves /yaml/pyyaml but returned main7.0.0.dev0 guidance; exact6.0.3 tag source governs.",
+    "PyYAML pure-Python functionality is a supported source path proposal, not measured3.15 compatibility.",
+    "Official CPython versioned docs document NuGet for CI/build use; embedded Python pip management is explicitly unsupported, so that alternate is excluded.",
+    "Read-only runtime catalogue records16,619,621 archive bytes and45,251,705 expanded member bytes; actual download and archive contents remain unverified."
+  ]
+}

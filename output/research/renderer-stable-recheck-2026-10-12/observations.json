@@ -1,0 +1,259 @@
+{
+  "schema_version": "registry-observation-v1",
+  "observed_at": "2026-10-11T20:20:33.512Z",
+  "query_scope": "Five coupled renderer/helper official registry metadata reads; tags/stable enumeration only. No install, resolution, compiler/build/browser/runtime rerun, graph selection, signature/provenance/licence/security clearance or adoption.",
+  "previous_observations": "output/research/three-upstream-recheck-2026-10-07/observations.json",
+  "packages": [
+    {
+      "package": "three",
+      "source": "https://registry.npmjs.org/three",
+      "observed_at": "2026-10-11T20:20:33.512Z",
+      "latest": "0.186.1",
+      "highest_stable_version": "0.186.1",
+      "previous_latest": "0.186.1",
+      "latest_changed": false,
+      "dependencies": {},
+      "peerDependencies": {},
+      "engines": {},
+      "dist": {
+        "shasum": "6d50f70c2c437f844179bbb56d6f5b774e1ca38a",
+        "tarball": "https://registry.npmjs.org/three/-/three-0.186.1.tgz",
+        "fileCount": 1263,
+        "integrity": "sha512-blFeqb49wRCSGUGj7gtpfnSGHy2lwDk94RhUmS1c/hTby70kvChbWpkJ4Pm1390LqzzvTmzgXKHPEafJwCb8jA==",
+        "signatures": [
+          {
+            "sig": "MEUCICldcpbcHhT4cNN5FeIhlbfekATi/CJUpk7mUDtPas5yAiEA/apNIzYS5sOdYRaeAK5Uae2O23E0Hl7Mo5TqNt9GWxA=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+            "sig": "MEUCIQCR0d1POSyDcCWApl93klyA2uB9zYBro/9ru2SUGgXSkAIgVdc8c/NKCiqjo3zmTooBB+GimZ+6BwK/1VLTO83itr4="
+          }
+        ],
+        "unpackedSize": 20443256
+      },
+      "saved_file": "three.registry.json.gz",
+      "raw_bytes": 335291,
+      "raw_sha256": "30fe588f7b25ee26c7367536e813cc8d69a6612ae3c1d8d2eedd4256fcb72d53",
+      "compressed_bytes": 120549,
+      "compressed_sha256": "a904a82715c6630c721f9ed78fb64b24bf989c10f4c9823e6fc11642be799f69",
+      "response_date": "Sun, 11 Oct 2026 20:20:33 GMT",
+      "response_etag": "W/\"23be9f1eef3c3cec11ab20d17de174e9\"",
+      "publication_time_not_requested": true
+    },
+    {
+      "package": "@types/three",
+      "source": "https://registry.npmjs.org/%40types%2Fthree",
+      "observed_at": "2026-10-11T20:20:33.512Z",
+      "latest": "0.186.0",
+      "highest_stable_version": "0.186.0",
+      "previous_latest": "0.186.0",
+      "latest_changed": false,
+      "dependencies": {
+        "fflate": "~0.8.3",
+        "@types/webxr": ">=0.5.17",
+        "meshoptimizer": "~1.1.1",
+        "@types/stats.js": "*",
+        "@tweenjs/tween.js": "~23.1.3",
+        "@dimforge/rapier3d-compat": "~0.12.0"
+      },
+      "peerDependencies": {},
+      "engines": {},
+      "dist": {
+        "shasum": "fc936323d7eeb885052fd5de352e3772f488ea99",
+        "tarball": "https://registry.npmjs.org/@types/three/-/three-0.186.0.tgz",
+        "fileCount": 1073,
+        "integrity": "sha512-mxYSBpDC+D0pLfSP6sW4WZTcT+nrtmZcimMqnVmy36Hte3XpeYSrvgg4TRdaM1GemGog1AWzI5qL2VoIfMXbJQ==",
+        "signatures": [
+          {
+            "sig": "MEUCIC4xmlEXpUXO/uMKanjOYzXejEUlL53JnYyqK2WzJ3gQAiEAxaizpvNdG3zT1V+AX/7MzGhHexGd89HJUGBTd/8VlhM=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEYCIQCSnNLgcJ3FljA7QVKGKMm3GGgRLUeu38zzZ6MLdK9YXgIhAJXoQ3vetAh7WU14/vQJUK6poA/8fP1FZgRKxNWnjD6o",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 1930073
+      },
+      "saved_file": "types-three.registry.json.gz",
+      "raw_bytes": 243361,
+      "raw_sha256": "0f77497b13f1e33b01dd4665d905c5e29cfe3e4a3661fc65cd67fb4edccb1ea7",
+      "compressed_bytes": 110106,
+      "compressed_sha256": "1b9bae905f5d9dc5e5b04ba33fa60846962842fa62cf3207120ec156a3858d88",
+      "response_date": "Sun, 11 Oct 2026 20:20:33 GMT",
+      "response_etag": "W/\"4dc10de5fcc5e6dbebbbd4d570340618\"",
+      "publication_time_not_requested": true
+    },
+    {
+      "package": "three-stdlib",
+      "source": "https://registry.npmjs.org/three-stdlib",
+      "observed_at": "2026-10-11T20:20:33.512Z",
+      "latest": "2.36.1",
+      "highest_stable_version": "2.36.1",
+      "previous_latest": "2.36.1",
+      "latest_changed": false,
+      "dependencies": {
+        "@types/draco3d": "^1.4.0",
+        "@types/offscreencanvas": "^2019.6.4",
+        "@types/webxr": "^0.5.2",
+        "draco3d": "^1.4.1",
+        "fflate": "^0.6.9",
+        "potpack": "^1.0.1"
+      },
+      "peerDependencies": {
+        "three": ">=0.128.0"
+      },
+      "engines": {},
+      "dist": {
+        "integrity": "sha512-XyGQrFmNQ5O/IoKm556ftwKsBg11TIb301MB5dWNicziQBEs2g3gtOYIf7pFiLa0zI2gUwhtCjv9fmjnxKZ1Cg==",
+        "shasum": "7aad805f3de1b8f792274226132bda809fcb15c5",
+        "tarball": "https://registry.npmjs.org/three-stdlib/-/three-stdlib-2.36.1.tgz",
+        "fileCount": 1399,
+        "unpackedSize": 26405702,
+        "signatures": [
+          {
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+            "sig": "MEUCIQD9krha7pyRTyQ3hUV5uZzI6uvUYiDa1+AeFKQeHd5bQwIgBsX+/DTaCVFeKXbFAcHCv0ymMRYEAHstUQuUmUX1qC4="
+          }
+        ]
+      },
+      "saved_file": "three-stdlib.registry.json.gz",
+      "raw_bytes": 352502,
+      "raw_sha256": "4660e613d591553b4ddde40756492a843d0396a5fb20a2cea0181c22b2eab601",
+      "compressed_bytes": 127047,
+      "compressed_sha256": "42dbaa978a5d065128d59c126e7cc1e1d1750df1717ca6c546a3fb9e73665467",
+      "response_date": "Sun, 11 Oct 2026 20:20:33 GMT",
+      "response_etag": "W/\"c8c08e47f9977b8719a61da6fac72f0a\"",
+      "publication_time_not_requested": true
+    },
+    {
+      "package": "@react-three/drei",
+      "source": "https://registry.npmjs.org/%40react-three%2Fdrei",
+      "observed_at": "2026-10-11T20:20:33.512Z",
+      "latest": "10.7.9",
+      "highest_stable_version": "10.7.9",
+      "previous_latest": "10.7.9",
+      "latest_changed": false,
+      "dependencies": {
+        "maath": "^0.10.8",
+        "hls.js": "^1.5.17",
+        "zustand": "^5.0.1",
+        "meshline": "^3.3.1",
+        "stats-gl": "^2.2.8",
+        "stats.js": "^0.17.0",
+        "cross-env": "^7.0.3",
+        "detect-gpu": "^5.0.56",
+        "glsl-noise": "^0.0.0",
+        "tunnel-rat": "^0.1.2",
+        "three-stdlib": "^2.35.6",
+        "suspend-react": "^0.1.3",
+        "utility-types": "^3.11.0",
+        "@babel/runtime": "^7.26.0",
+        "three-mesh-bvh": "^0.8.3",
+        "camera-controls": "^3.1.0",
+        "troika-three-text": "^0.52.4",
+        "@use-gesture/react": "^10.3.1",
+        "@monogrid/gainmap-js": "^3.0.6",
+        "@mediapipe/tasks-vision": "0.10.17",
+        "use-sync-external-store": "^1.4.0"
+      },
+      "peerDependencies": {
+        "react": "^19",
+        "three": ">=0.159",
+        "react-dom": "^19",
+        "@react-three/fiber": "^9.0.0"
+      },
+      "engines": {},
+      "dist": {
+        "shasum": "bc5f6ee0b1b40980b438f3c1dac88f039ad69b5e",
+        "tarball": "https://registry.npmjs.org/@react-three/drei/-/drei-10.7.9.tgz",
+        "fileCount": 483,
+        "integrity": "sha512-wP4Y6o58KFi+hT1zCfjJarRtPCT6WW/lo53WMiA/aCORuUvBzW916XsCtadnIB1KB+3IQNcDU5JeVh/gYb8MYw==",
+        "signatures": [
+          {
+            "sig": "MEYCIQD84caNkrxIFrzlkuo0e/rPucYE6pZAzAE3pjhPZLoJTAIhAPe5+GhZhqFW1nFeir7EXiyQSSFOhNT7/LNWal7+rGqY",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+            "sig": "MEQCICEGA32dE4ixQWAQI3VTj+4XS5xSrUjKhyVsQ7HeMWiIAiADvs9+O8l9M+DK/qkhsbzun6PiXL332A1m2dp1ShlNgQ=="
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@react-three%2fdrei@10.7.9",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 1753692
+      },
+      "saved_file": "react-three-drei.registry.json.gz",
+      "raw_bytes": 1658132,
+      "raw_sha256": "494c9c9dcefdc5f05be18e8c66e2a923cc50067058fa55866f35b19e15f0784c",
+      "compressed_bytes": 522096,
+      "compressed_sha256": "36a9673a2b807f7775c78beabe88a440eb5123af4a3b6965619b9d9ad70a078d",
+      "response_date": "Sun, 11 Oct 2026 20:20:33 GMT",
+      "response_etag": "W/\"6299ca8e780c932c706ec6ed9b139cf7\"",
+      "publication_time_not_requested": true
+    },
+    {
+      "package": "@react-three/fiber",
+      "source": "https://registry.npmjs.org/%40react-three%2Ffiber",
+      "observed_at": "2026-10-11T20:20:33.512Z",
+      "latest": "9.8.1",
+      "highest_stable_version": "9.8.1",
+      "previous_latest": "9.8.1",
+      "latest_changed": false,
+      "dependencies": {
+        "buffer": "^6.0.3",
+        "zustand": "^5.0.3",
+        "its-fine": "^2.1.1",
+        "base64-js": "^1.5.1",
+        "scheduler": "^0.28.0",
+        "@types/webxr": "*",
+        "suspend-react": "^0.1.3",
+        "@babel/runtime": "^7.17.8",
+        "react-use-measure": "^2.1.7",
+        "use-sync-external-store": "^1.4.0"
+      },
+      "peerDependencies": {
+        "expo": ">=43.0",
+        "react": ">=19 <19.4",
+        "three": ">=0.156",
+        "expo-gl": ">=11.0",
+        "react-dom": ">=19 <19.4",
+        "expo-asset": ">=8.4",
+        "react-native": ">=0.78",
+        "expo-file-system": ">=11.0"
+      },
+      "engines": {},
+      "dist": {
+        "shasum": "9379621d5f3730ec50eab597c551fffb80abd4b2",
+        "tarball": "https://registry.npmjs.org/@react-three/fiber/-/fiber-9.8.1.tgz",
+        "fileCount": 40,
+        "integrity": "sha512-GbNP4r6F/gpclFKkLGHzXcuwFWAzLyKsmrQGcDuwK3wQnwLH6F1TfGtEYjHy8OQoGsajwT19B9jtVLLjjfH09w==",
+        "signatures": [
+          {
+            "sig": "MEYCIQCrat91GYYEEVOBhJDoX8kZNa/ElRKLj+4zISkES76c4QIhAMPENtddANqNhvd70D6j9oCTYydTa0/tbqC1NmPX664z",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEYCIQDE4Hzgxw7g80047qkecopjWojjk0C3tYe8fmih+JcsCAIhAJkfnDAgdDsrx5+PO9SAYhoPCqscfYy6zFDPYal0o6tX",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 2378458
+      },
+      "saved_file": "react-three-fiber.registry.json.gz",
+      "raw_bytes": 630961,
+      "raw_sha256": "74cc0b3c551c1988c650fa55880b2ac5ba414637ee6f83a7ae1acd2494742b8f",
+      "compressed_bytes": 181309,
+      "compressed_sha256": "36999560bd12091e8a5d2aadf8513491445f83677c4aed23b42f6ccbdaacd715",
+      "response_date": "Sun, 11 Oct 2026 20:20:33 GMT",
+      "response_etag": "W/\"a2da7e3714b602f91732ca6be455f5c9\"",
+      "publication_time_not_requested": true
+    }
+  ],
+  "failures": []
+}

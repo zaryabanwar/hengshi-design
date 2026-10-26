@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-05",
+  "context7": {
+    "resolved": "Three.js",
+    "queried_id": "/websites/threejs",
+    "query_scope": "Audio listener/context/source ownership and controls"
+  },
+  "primary_sources": [
+    {
+      "url": "https://www.w3.org/TR/webaudio-1.0/",
+      "limited_observation": "W3C Recommendation 17 June 2021; base graph/source/gain evidence, not exact implementation proof"
+    },
+    {
+      "url": "https://developer.chrome.com/blog/autoplay/",
+      "limited_observation": "Browser activation constraints do not replace explicit product opt-in"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API",
+      "limited_observation": "Visibility is distinct from focus/blur"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/state",
+      "limited_observation": "Context/browser-specific state; no audible-output or product-intent guarantee"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/decodeAudioData",
+      "limited_observation": "Complete-file decoding/resampling, not incremental audio streaming"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/close",
+      "limited_observation": "Context resources and remaining object references have distinct lifetime"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode",
+      "limited_observation": "One-shot source control; owned buffers can be reused via new sources"
+    },
+    {
+      "url": "https://threejs.org/docs/pages/Audio.html",
+      "limited_observation": "Documented source methods, not exact selected package proof"
+    },
+    {
+      "url": "https://threejs.org/docs/pages/AudioContext.html",
+      "limited_observation": "Global Three context ownership"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/AudioSession",
+      "limited_observation": "Experimental; not a production requirement"
+    }
+  ],
+  "selection": "No package, codec, asset, profile or runtime selection",
+  "runtime_tests": "None"
+}

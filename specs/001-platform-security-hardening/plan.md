@@ -1,5 +1,19 @@
 # Platform Security Hardening - Implementation Plan
 
+## Current authority — 2026-10-04
+
+Task status: BLOCKED. This historical implementation plan is superseded for
+production planning by D-018, foundation SEC/DATA/AI constraints and the proposed
+[security/privacy contract](../../docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md).
+Its in-memory production limiter, Bearer fallback, deferred CSRF, eight-character
+password rule and dependency suggestions are not accepted implementation choices.
+The old four-option approval gate below must not be presented as an unresolved
+founder choice. Rebuild the bounded plan from approved current contracts after
+complete Phase 1 acceptance; no app, dependency, auth or migration change follows
+from this notice. Preserve the historical rationale below as evidence.
+
+## Historical June implementation plan
+
 ## Status
 
 | Field | Value |

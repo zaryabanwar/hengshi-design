@@ -1,0 +1,45 @@
+{
+  "before_nodes": 192,
+  "after_nodes": 192,
+  "boundary_observed": true,
+  "boundary_node": "36:2492-layers-panel-row",
+  "root_replacement": {
+    "before": "76:3157-layers-panel-row",
+    "after": "101:3204-layers-panel-row"
+  },
+  "unexpected_differences": [
+    {
+      "id": "99:3200-layers-panel-row",
+      "kind": "missing"
+    },
+    {
+      "id": "99:3201-layers-panel-row",
+      "kind": "missing"
+    },
+    {
+      "id": "99:3202-layers-panel-row",
+      "kind": "missing"
+    },
+    {
+      "id": "99:3203-layers-panel-row",
+      "kind": "missing"
+    },
+    {
+      "id": "101:3208-layers-panel-row",
+      "kind": "additional"
+    },
+    {
+      "id": "101:3207-layers-panel-row",
+      "kind": "additional"
+    },
+    {
+      "id": "101:3206-layers-panel-row",
+      "kind": "additional"
+    },
+    {
+      "id": "101:3205-layers-panel-row",
+      "kind": "additional"
+    }
+  ],
+  "scope": "Native layer IDs,names,depth,parent relationships only; root replacement and its two direct-child parent links normalized. No reaction/property/behavior or original-source equivalence proof."
+}

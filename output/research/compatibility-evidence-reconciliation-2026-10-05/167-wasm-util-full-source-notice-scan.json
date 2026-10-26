@@ -1,0 +1,50 @@
+{
+  "as_of": "2026-10-04",
+  "name": "@tybys/wasm-util",
+  "version": "0.10.2",
+  "source_commit": "cded8e894fe40c7c6200a3fdb2bd33e328b7bb65",
+  "artifacts": {
+    "tree": {
+      "url": "https://api.github.com/repos/toyobayashi/wasm-util/git/trees/cded8e894fe40c7c6200a3fdb2bd33e328b7bb65?recursive=1",
+      "file": "wasm-util-pinned-tree.json",
+      "bytes": 24360,
+      "sha256": "416a22f0793a470166bf0a6b79355df65a95f56d4e850178db7f987453379fb9"
+    },
+    "archive": {
+      "url": "https://codeload.github.com/toyobayashi/wasm-util/zip/cded8e894fe40c7c6200a3fdb2bd33e328b7bb65",
+      "file": "wasm-util-pinned-source.zip",
+      "bytes": 78391,
+      "sha256": "68444b71d4285abe742e370faf8d9b9c88f67ade023cddfcb170c8bb86f7b84f"
+    }
+  },
+  "tree_blob_count": 87,
+  "archive_regular_files": 87,
+  "tree_truncated": false,
+  "license_named_files": [],
+  "text_matches": [
+    {
+      "path": "package.json",
+      "sha256": "195dd41458bce39a8e8ee247e2d24b4ab9d7bc106f37bd1e29573d2d0f894f36",
+      "matches": [
+        {
+          "line": 37,
+          "text": "\"license\": \"MIT\","
+        }
+      ]
+    },
+    {
+      "path": "src/wasi/path.ts",
+      "sha256": "38bb04dbfd29af002c56c3d6886f979beca3148455908feeca5f5027e6277465",
+      "matches": [
+        {
+          "line": 40,
+          "text": "* Cribbed from Node's `lib/path.js` `win32.resolve()` (MIT-licensed),"
+        }
+      ]
+    }
+  ],
+  "code_executed": false,
+  "archive_extracted": false,
+  "source_build_attestation_verified": false,
+  "notice_clearance": false
+}

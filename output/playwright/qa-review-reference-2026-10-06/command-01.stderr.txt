@@ -1,0 +1,58 @@
+
+╔════════════════════════════════════════════════════════════════════╗
+║ Update available for @playwright/cli: 0.1.19 → 0.1.22              ║
+║ Run `npm install -g @playwright/cli@latest` (global) or            ║
+║ `npm install --save-dev @playwright/cli@latest` (local) to update. ║
+╚════════════════════════════════════════════════════════════════════╝
+
+C:\Users\Zaryab\AppData\Local\npm-cache\_npx\31e32ef8478fbf80\node_modules\playwright-core\lib\tools\cli-client\session.js:170
+    const rejectWithPid = (reject, message) => reject(Object.assign(new Error(`Daemon pid=${child.pid}: ${message}`), { daemonPid: child.pid }));
+                                                                    ^
+
+Error: Daemon pid=11040: Daemon process exited with code 1
+[TargetClosedError2: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --disable-blink-features=AutomationControlled --user-data-dir=C:\Users\Zaryab\Documents\Hengshi Design\hengshi-design\output\playwright\qa-review-reference-2026-10-06\tmp\playwright_chromiumdev_profile-b8T5Fs --remote-debugging-pipe --no-startup-window
+<launched> pid=8820
+[pid=8820][err] 
+[pid=8820][err] DevTools remote debugging requires a non-default data directory. Specify this using --user-data-dir.
+Call log:
+[2m  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --disable-blink-features=AutomationControlled --user-data-dir=C:\Users\Zaryab\Documents\Hengshi Design\hengshi-design\output\playwright\qa-review-reference-2026-10-06\tmp\playwright_chromiumdev_profile-b8T5Fs --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=8820[22m
+[2m  - [pid=8820][err][22m
+[2m  - [pid=8820][err] DevTools remote debugging requires a non-default data directory. Specify this using --user-data-dir.[22m
+[2m  - [pid=8820] <gracefully close start>[22m
+[2m  - [pid=8820] <kill>[22m
+[2m  - [pid=8820] <will force kill>[22m
+[2m  - [pid=8820] taskkill stderr: ERROR: The process "8820" not found.[22m
+[2m  - [pid=8820] <process did exit: exitCode=0, signal=null>[22m
+[2m  - [pid=8820] starting temporary directories cleanup[22m
+[2m  - [pid=8820] finished temporary directories cleanup[22m
+[2m  - [pid=8820] <gracefully close end>[22m
+] {
+  log: [
+    '  - <launching> C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --disable-blink-features=AutomationControlled --user-data-dir=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\playwright\\qa-review-reference-2026-10-06\\tmp\\playwright_chromiumdev_profile-b8T5Fs --remote-debugging-pipe --no-startup-window',
+    '  - <launched> pid=8820',
+    '  - [pid=8820][err]',
+    '  - [pid=8820][err] DevTools remote debugging requires a non-default data directory. Specify this using --user-data-dir.',
+    '  - [pid=8820] <gracefully close start>',
+    '  - [pid=8820] <kill>',
+    '  - [pid=8820] <will force kill>',
+    '  - [pid=8820] taskkill stderr: ERROR: The process "8820" not found.',
+    '  - [pid=8820] <process did exit: exitCode=0, signal=null>',
+    '  - [pid=8820] starting temporary directories cleanup',
+    '  - [pid=8820] finished temporary directories cleanup',
+    '  - [pid=8820] <gracefully close end>'
+  ]
+}
+
+    at rejectWithPid (C:\Users\Zaryab\AppData\Local\npm-cache\_npx\31e32ef8478fbf80\node_modules\playwright-core\lib\tools\cli-client\session.js:170:69)
+    at ChildProcess.<anonymous> (C:\Users\Zaryab\AppData\Local\npm-cache\_npx\31e32ef8478fbf80\node_modules\playwright-core\lib\tools\cli-client\session.js:180:11)
+    at ChildProcess.emit (node:events:514:20)
+    at maybeClose (node:internal/child_process:1156:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:334:5) {
+  daemonPid: 11040
+}
+
+Node.js v26.10.0

@@ -1,0 +1,24 @@
+{
+  "status": "DOING",
+  "sources": [
+    {
+      "name": "pyjwt-installation",
+      "url": "https://raw.githubusercontent.com/jpadilla/pyjwt/2.15.1/docs/installation.rst",
+      "observed_at": "2026-10-08T18:18:28.420807+00:00",
+      "status": 200,
+      "raw_bytes": 791,
+      "raw_sha256": "c9405792ac02aaa466014c973844890d512da670709fedc6f7cba84c4fba8d99",
+      "snapshot": "output/research/backend-crypto-graph-2026-10-08/primary-docs/pyjwt-installation.txt.gz"
+    },
+    {
+      "name": "pyjwt-security",
+      "url": "https://raw.githubusercontent.com/jpadilla/pyjwt/2.15.1/SECURITY.md",
+      "observed_at": "2026-10-08T18:18:29.028027+00:00",
+      "status": 200,
+      "raw_bytes": 10139,
+      "raw_sha256": "a08e302c237f71b7229a4bbab05d97d06353c7976d61851e49fe9370fd71c27c",
+      "snapshot": "output/research/backend-crypto-graph-2026-10-08/primary-docs/pyjwt-security.txt.gz"
+    }
+  ],
+  "limits": "Public source documentation only; no signed-tag or wheel provenance verification"
+}

@@ -1,0 +1,1847 @@
+[
+  {
+    "id": "147:3205-layers-panel-row",
+    "tuple": [
+      "HIGH",
+      "MEDIUM",
+      "CLOSED"
+    ],
+    "rootInspector": "\n  - button \"Multiplayer tools\":\n  - group \"Prototype view\":\n    - button \"Present\":\n    - button \"Prototype view\":\n  - button \"Share\"\n  - tablist:\n    - tab \"Design\" [selected]:\n      - generic: Design\n      - generic: Design\n    - tab \"Prototype\":\n      - generic: Prototype\n      - generic: Prototype\n  - button \"41%, zoom and view options\":\n    - text: 10%\n  - textbox: B01 qualification / NAVIGATION / v1\n  - heading [level=1]: B01 qualification / NAVIGATION / v1\n  - checkbox \"Multi-edit variants\"\n  - generic: Multi-edit variants\n  - button \"Select matching layers\":\n  - button \"Component configuration\":\n  - button \"More actions\":\n  - generic: Current variant\n  - button \"Select component\":\n  - grid:\n    - row \"Edit property name for Active HIGH\":\n      - gridcell \"Edit property name for Active\":\n        - button \"Edit property name for Active\":\n          - generic: Active\n      - gridcell \"HIGH\":\n        - listbox \"Edit property value for Active\"\n        - combobox \"Edit property value for Active\": HIGH\n        - option [selected]:\n          - generic: HIGH\n        - option [selected]:\n          - generic: MEDIUM\n        - option [selected]:\n          - generic: LOW\n        - option [selected]:\n          - generic: SEMANTIC\n        - option [selected]:\n          - generic: Add new…\n    - row \"Edit property name for Pending MEDIUM\":\n      - gridcell \"Edit property name for Pending\":\n        - button \"Edit property name for Pending\":\n          - generic: Pending\n      - gridcell \"MEDIUM\":\n        - listbox \"Edit property value for Pending\"\n        - combobox \"Edit property value for Pending\": MEDIUM\n        - option [selected]:\n          - generic: HIGH\n        - option [selected]:\n          - generic: MEDIUM\n        - option [selected]:\n          - generic: LOW\n        - option [selected]:\n          - generic: SEMANTIC\n        - option [selected]:\n          - generic: Add new…\n    - row \"Edit property name for Disclosure CLOSED\":\n      - gridcell \"Edit property name for Disclosure\":\n        - button \"Edit property name for Disclosure\":\n          - generic: Disclosure\n      - gridcell \"CLOSED\":\n        - listbox \"Edit property value for Disclosure\"\n        - combobox \"Edit property value for Disclosure\": CLOSED\n        - option [selected]:\n          - generic: OPEN\n        - option [selected]:\n          - generic: CLOSED\n        - option [selected]:\n          - generic: Add new…\n  - heading \"Position\" [level=2]\n  - group \"Alignment\":\n    - generic: Alignment\n    - button \"Align left\":\n    - button \"Align horizontal centers\":\n    - button \"Align right\":\n    - button \"Align top\":\n    - button \"Align vertical centers\":\n    - button \"Align bottom\":\n    - button \"More actions\":\n  - group \"Position\":\n    - generic: Position\n    - generic: X\n    - spinbutton \"X-position\": \"780\"\n    - generic: \"Y\"\n    - spinbutton \"Y-position\": \"20\"\n    - button \"Constraints\":\n  - group \"Rotation\":\n    - generic: Rotation\n    - spinbutton \"Rotation\": 0°\n    - button \"Rotate 90˚ right\":\n    - button \"Flip horizontal\":\n    - button \"Flip vertical\":\n  - heading \"Auto layout\" [level=2]: Layout\n  - button \"Resize to fit\":\n  - checkbox \"Toggle auto layout\"\n  - generic: Toggle auto layout\n  - group \"Flow\":\n    - generic: Flow\n    - radiogroup \"Layout\":\n      - generic: Layout\n      - radio \"Freeform\" [checked]\n      - generic: Freeform\n      - radio \"Vertical\"\n      - generic: Vertical\n      - radio \"Horizontal\"\n      - generic: Horizontal\n      - radio \"Grid\"\n      - generic: Grid\n  - group \"Dimensions\":\n    - generic: Dimensions\n    - generic \"Width\":\n      - generic: W\n      - textbox \"Width\": \"320\"\n    - generic \"Height\":\n      - generic: H\n      - textbox \"Height\": \"1150\"\n    - checkbox \"Lock aspect ratio\"\n    - generic: Lock aspect ratio\n  - checkbox \"Clip content\"\n  - generic: Clip content\n  - heading \"Appearance\" [level=2]\n  - checkbox \"Show\"\n  - generic: Hide\n  - button \"Apply blend mode\":\n  - generic: Opacity\n  - textbox: 100%\n  - generic: Corner radius\n  - textbox: \"0\"\n  - button \"Individual corners\":\n  - button \"Fill\":\n    - heading \"Fill\" [level=2]\n  - button \"Fill, Apply styles and variables\":\n  - button \"Add fill\":\n  - button \"Stroke\":\n    - heading \"Stroke\" [level=2]\n  - button \"Stroke, Apply styles and variables\":\n  - button \"Add stroke\":\n  - button \"Effects\":\n    - heading \"Effects\" [level=2]\n  - button \"Effects, Apply styles\":\n  - button \"Add effect\":\n  - heading \"Selection colors\" [level=2]\n  - 'button \"Color Variable D035/palette/cyan-light with value #006D82 · 100%\"':\n    - generic \"D035/palette/cyan-light\"\n  - generic: Click to edit color variable\n  - 'button \"Color Variable D035/palette/ink with value #0B0F14 · 100%\"':\n    - generic \"D035/palette/ink\"\n  - generic: Click to edit color variable\n  - 'button \"Color Variable D035/palette/white with value #FFF · 100%\"':\n    - generic \"D035/palette/white\"\n  - generic: Click to edit color variable\n  - button \"Layout guide\":\n    - heading \"Layout guide\" [level=2]\n  - button \"Layout guide, Apply styles\":\n  - button \"Add layout guide\":\n  - button \"Export\":\n    - generic: Export\n  - button \"Add export settings\":\n  - slider \"Resize handle\"\n",
+    "children": [
+      {
+        "box": {
+          "h": 24,
+          "w": 99.8125,
+          "x": 173,
+          "y": 546
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3223-layers-panel-row",
+        "level": 3,
+        "name": "Trial scroll marker",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 219.859375,
+          "x": 173,
+          "y": 578
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3222-layers-panel-row",
+        "level": 3,
+        "name": "Context summary / fixed Services fixture",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 295.359375,
+          "x": 173,
+          "y": 610
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 137,
+          "y": 610
+        },
+        "expanded": "true",
+        "id": "147:3221-layers-panel-row",
+        "level": 3,
+        "name": "Underlying Services fixture (unwired while modal open)",
+        "selected": "true",
+        "type": "Instance"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 113.546875,
+          "x": 197,
+          "y": 642
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3226-layers-panel-row",
+        "level": 4,
+        "name": "Book a conversation",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 72.0625,
+          "x": 173,
+          "y": 674
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 137,
+          "y": 674
+        },
+        "expanded": "true",
+        "id": "147:3220-layers-panel-row",
+        "level": 3,
+        "name": "Menu action",
+        "selected": "true",
+        "type": "Instance"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 113.546875,
+          "x": 197,
+          "y": 706
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3225-layers-panel-row",
+        "level": 4,
+        "name": "Book a conversation",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 232.8125,
+          "x": 173,
+          "y": 738
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 137,
+          "y": 738
+        },
+        "expanded": "true",
+        "id": "147:3206-layers-panel-row",
+        "level": 3,
+        "name": "PRIM-001 / Delivery stream control / B01 v1",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 216.671875,
+          "x": 197,
+          "y": 770
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3207-layers-panel-row",
+        "level": 4,
+        "name": "Delivery stream — currently Detailed 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 239.734375,
+          "x": 197,
+          "y": 802
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 802
+        },
+        "expanded": "true",
+        "id": "147:3208-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-HIGH",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 82.125,
+          "x": 221,
+          "y": 834
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3209-layers-panel-row",
+        "level": 5,
+        "name": "○ Detailed 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 257.484375,
+          "x": 197,
+          "y": 866
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 866
+        },
+        "expanded": "true",
+        "id": "147:3210-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-MEDIUM",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 87.140625,
+          "x": 221,
+          "y": 898
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3211-layers-panel-row",
+        "level": 5,
+        "name": "● Balanced 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 237.0625,
+          "x": 197,
+          "y": 930
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 930
+        },
+        "expanded": "true",
+        "id": "147:3212-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-LOW",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 90.078125,
+          "x": 221,
+          "y": 962
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3213-layers-panel-row",
+        "level": 5,
+        "name": "○ Simplified 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 269.4375,
+          "x": 197,
+          "y": 994
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 994
+        },
+        "expanded": "true",
+        "id": "147:3214-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-SEMANTIC",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 91.375,
+          "x": 221,
+          "y": 1026
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3215-layers-panel-row",
+        "level": 5,
+        "name": "○ Quick Access",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 807,
+          "x": 197,
+          "y": 1058
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3216-layers-panel-row",
+        "level": 4,
+        "name": "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 1793.546875,
+          "x": 197,
+          "y": 1090
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3217-layers-panel-row",
+        "level": 4,
+        "name": "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 216.46875,
+          "x": 197,
+          "y": 1122
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 1122
+        },
+        "expanded": "true",
+        "id": "147:3218-layers-panel-row",
+        "level": 4,
+        "name": "PRIM-015 / General action button / base",
+        "selected": "true",
+        "type": "Instance"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 113.546875,
+          "x": 221,
+          "y": 1154
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3865-layers-panel-row",
+        "level": 5,
+        "name": "Book a conversation",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 111.421875,
+          "x": 197,
+          "y": 1186
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3219-layers-panel-row",
+        "level": 4,
+        "name": "Privacy and storage",
+        "selected": "true",
+        "type": "Text"
+      }
+    ],
+    "context": "Trial fixture · Services\nIn force Detailed 3D",
+    "menu": "Menu",
+    "hidden": true
+  },
+  {
+    "id": "147:3227-layers-panel-row",
+    "tuple": [
+      "HIGH",
+      "LOW",
+      "CLOSED"
+    ],
+    "rootInspector": "\n  - button \"Multiplayer tools\":\n  - group \"Prototype view\":\n    - button \"Present\":\n    - button \"Prototype view\":\n  - button \"Share\"\n  - tablist:\n    - tab \"Design\" [selected]:\n      - generic: Design\n      - generic: Design\n    - tab \"Prototype\":\n      - generic: Prototype\n      - generic: Prototype\n  - button \"41%, zoom and view options\":\n    - text: 10%\n  - textbox: B01 qualification / NAVIGATION / v1\n  - heading [level=1]: B01 qualification / NAVIGATION / v1\n  - checkbox \"Multi-edit variants\"\n  - generic: Multi-edit variants\n  - button \"Select matching layers\":\n  - button \"Component configuration\":\n  - button \"More actions\":\n  - generic: Current variant\n  - button \"Select component\":\n  - grid:\n    - row \"Edit property name for Active HIGH\":\n      - gridcell \"Edit property name for Active\":\n        - button \"Edit property name for Active\":\n          - generic: Active\n      - gridcell \"HIGH\":\n        - listbox \"Edit property value for Active\"\n        - combobox \"Edit property value for Active\": HIGH\n        - option [selected]:\n          - generic: HIGH\n        - option [selected]:\n          - generic: MEDIUM\n        - option [selected]:\n          - generic: LOW\n        - option [selected]:\n          - generic: SEMANTIC\n        - option [selected]:\n          - generic: Add new…\n    - row \"Edit property name for Pending LOW\":\n      - gridcell \"Edit property name for Pending\":\n        - button \"Edit property name for Pending\":\n          - generic: Pending\n      - gridcell \"LOW\":\n        - listbox \"Edit property value for Pending\"\n        - combobox \"Edit property value for Pending\": LOW\n        - option [selected]:\n          - generic: HIGH\n        - option [selected]:\n          - generic: MEDIUM\n        - option [selected]:\n          - generic: LOW\n        - option [selected]:\n          - generic: SEMANTIC\n        - option [selected]:\n          - generic: Add new…\n    - row \"Edit property name for Disclosure CLOSED\":\n      - gridcell \"Edit property name for Disclosure\":\n        - button \"Edit property name for Disclosure\":\n          - generic: Disclosure\n      - gridcell \"CLOSED\":\n        - listbox \"Edit property value for Disclosure\"\n        - combobox \"Edit property value for Disclosure\": CLOSED\n        - option [selected]:\n          - generic: OPEN\n        - option [selected]:\n          - generic: CLOSED\n        - option [selected]:\n          - generic: Add new…\n  - heading \"Position\" [level=2]\n  - group \"Alignment\":\n    - generic: Alignment\n    - button \"Align left\":\n    - button \"Align horizontal centers\":\n    - button \"Align right\":\n    - button \"Align top\":\n    - button \"Align vertical centers\":\n    - button \"Align bottom\":\n    - button \"More actions\":\n  - group \"Position\":\n    - generic: Position\n    - generic: X\n    - spinbutton \"X-position\": \"1540\"\n    - generic: \"Y\"\n    - spinbutton \"Y-position\": \"20\"\n    - button \"Constraints\":\n  - group \"Rotation\":\n    - generic: Rotation\n    - spinbutton \"Rotation\": 0°\n    - button \"Rotate 90˚ right\":\n    - button \"Flip horizontal\":\n    - button \"Flip vertical\":\n  - heading \"Auto layout\" [level=2]: Layout\n  - button \"Resize to fit\":\n  - checkbox \"Toggle auto layout\"\n  - generic: Toggle auto layout\n  - group \"Flow\":\n    - generic: Flow\n    - radiogroup \"Layout\":\n      - generic: Layout\n      - radio \"Freeform\" [checked]\n      - generic: Freeform\n      - radio \"Vertical\"\n      - generic: Vertical\n      - radio \"Horizontal\"\n      - generic: Horizontal\n      - radio \"Grid\"\n      - generic: Grid\n  - group \"Dimensions\":\n    - generic: Dimensions\n    - generic \"Width\":\n      - generic: W\n      - textbox \"Width\": \"320\"\n    - generic \"Height\":\n      - generic: H\n      - textbox \"Height\": \"1150\"\n    - checkbox \"Lock aspect ratio\"\n    - generic: Lock aspect ratio\n  - checkbox \"Clip content\"\n  - generic: Clip content\n  - heading \"Appearance\" [level=2]\n  - checkbox \"Show\"\n  - generic: Hide\n  - button \"Apply blend mode\":\n  - generic: Opacity\n  - textbox: 100%\n  - generic: Corner radius\n  - textbox: \"0\"\n  - button \"Individual corners\":\n  - button \"Fill\":\n    - heading \"Fill\" [level=2]\n  - button \"Fill, Apply styles and variables\":\n  - button \"Add fill\":\n  - button \"Stroke\":\n    - heading \"Stroke\" [level=2]\n  - button \"Stroke, Apply styles and variables\":\n  - button \"Add stroke\":\n  - button \"Effects\":\n    - heading \"Effects\" [level=2]\n  - button \"Effects, Apply styles\":\n  - button \"Add effect\":\n  - heading \"Selection colors\" [level=2]\n  - 'button \"Color Variable D035/palette/cyan-light with value #006D82 · 100%\"':\n    - generic \"D035/palette/cyan-light\"\n  - generic: Click to edit color variable\n  - 'button \"Color Variable D035/palette/ink with value #0B0F14 · 100%\"':\n    - generic \"D035/palette/ink\"\n  - generic: Click to edit color variable\n  - 'button \"Color Variable D035/palette/white with value #FFF · 100%\"':\n    - generic \"D035/palette/white\"\n  - generic: Click to edit color variable\n  - button \"Layout guide\":\n    - heading \"Layout guide\" [level=2]\n  - button \"Layout guide, Apply styles\":\n  - button \"Add layout guide\":\n  - button \"Export\":\n    - generic: Export\n  - button \"Add export settings\":\n  - slider \"Resize handle\"\n",
+    "children": [
+      {
+        "box": {
+          "h": 24,
+          "w": 99.8125,
+          "x": 173,
+          "y": 578
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3245-layers-panel-row",
+        "level": 3,
+        "name": "Trial scroll marker",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 219.859375,
+          "x": 173,
+          "y": 610
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3244-layers-panel-row",
+        "level": 3,
+        "name": "Context summary / fixed Services fixture",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 295.359375,
+          "x": 173,
+          "y": 642
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 137,
+          "y": 642
+        },
+        "expanded": "true",
+        "id": "147:3243-layers-panel-row",
+        "level": 3,
+        "name": "Underlying Services fixture (unwired while modal open)",
+        "selected": "true",
+        "type": "Instance"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 113.546875,
+          "x": 197,
+          "y": 674
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3248-layers-panel-row",
+        "level": 4,
+        "name": "Book a conversation",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 72.0625,
+          "x": 173,
+          "y": 706
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 137,
+          "y": 706
+        },
+        "expanded": "true",
+        "id": "147:3242-layers-panel-row",
+        "level": 3,
+        "name": "Menu action",
+        "selected": "true",
+        "type": "Instance"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 113.546875,
+          "x": 197,
+          "y": 738
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3247-layers-panel-row",
+        "level": 4,
+        "name": "Book a conversation",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 232.8125,
+          "x": 173,
+          "y": 770
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 137,
+          "y": 770
+        },
+        "expanded": "true",
+        "id": "147:3228-layers-panel-row",
+        "level": 3,
+        "name": "PRIM-001 / Delivery stream control / B01 v1",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 216.671875,
+          "x": 197,
+          "y": 802
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3229-layers-panel-row",
+        "level": 4,
+        "name": "Delivery stream — currently Detailed 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 239.734375,
+          "x": 197,
+          "y": 834
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 834
+        },
+        "expanded": "true",
+        "id": "147:3230-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-HIGH",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 82.125,
+          "x": 221,
+          "y": 866
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3231-layers-panel-row",
+        "level": 5,
+        "name": "○ Detailed 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 257.484375,
+          "x": 197,
+          "y": 898
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 898
+        },
+        "expanded": "true",
+        "id": "147:3232-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-MEDIUM",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 87.140625,
+          "x": 221,
+          "y": 930
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3233-layers-panel-row",
+        "level": 5,
+        "name": "○ Balanced 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 237.0625,
+          "x": 197,
+          "y": 962
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 962
+        },
+        "expanded": "true",
+        "id": "147:3234-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-LOW",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 90.078125,
+          "x": 221,
+          "y": 994
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3235-layers-panel-row",
+        "level": 5,
+        "name": "● Simplified 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 269.4375,
+          "x": 197,
+          "y": 1026
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 1026
+        },
+        "expanded": "true",
+        "id": "147:3236-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-SEMANTIC",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 91.375,
+          "x": 221,
+          "y": 1058
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3237-layers-panel-row",
+        "level": 5,
+        "name": "○ Quick Access",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 807,
+          "x": 197,
+          "y": 1090
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3238-layers-panel-row",
+        "level": 4,
+        "name": "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 1793.546875,
+          "x": 197,
+          "y": 1122
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3239-layers-panel-row",
+        "level": 4,
+        "name": "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 216.46875,
+          "x": 197,
+          "y": 1154
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 1154
+        },
+        "expanded": "true",
+        "id": "147:3240-layers-panel-row",
+        "level": 4,
+        "name": "PRIM-015 / General action button / base",
+        "selected": "true",
+        "type": "Instance"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 113.546875,
+          "x": 221,
+          "y": 1186
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3866-layers-panel-row",
+        "level": 5,
+        "name": "Book a conversation",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 111.421875,
+          "x": 197,
+          "y": 1218
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3241-layers-panel-row",
+        "level": 4,
+        "name": "Privacy and storage",
+        "selected": "true",
+        "type": "Text"
+      }
+    ],
+    "context": "Trial fixture · Services\nIn force Detailed 3D",
+    "menu": "Menu",
+    "hidden": true
+  },
+  {
+    "id": "147:3249-layers-panel-row",
+    "tuple": [
+      "HIGH",
+      "SEMANTIC",
+      "CLOSED"
+    ],
+    "rootInspector": "\n  - button \"Multiplayer tools\":\n  - group \"Prototype view\":\n    - button \"Present\":\n    - button \"Prototype view\":\n  - button \"Share\"\n  - tablist:\n    - tab \"Design\" [selected]:\n      - generic: Design\n      - generic: Design\n    - tab \"Prototype\":\n      - generic: Prototype\n      - generic: Prototype\n  - button \"41%, zoom and view options\":\n    - text: 10%\n  - textbox: B01 qualification / NAVIGATION / v1\n  - heading [level=1]: B01 qualification / NAVIGATION / v1\n  - checkbox \"Multi-edit variants\"\n  - generic: Multi-edit variants\n  - button \"Select matching layers\":\n  - button \"Component configuration\":\n  - button \"More actions\":\n  - generic: Current variant\n  - button \"Select component\":\n  - grid:\n    - row \"Edit property name for Active HIGH\":\n      - gridcell \"Edit property name for Active\":\n        - button \"Edit property name for Active\":\n          - generic: Active\n      - gridcell \"HIGH\":\n        - listbox \"Edit property value for Active\"\n        - combobox \"Edit property value for Active\": HIGH\n        - option [selected]:\n          - generic: HIGH\n        - option [selected]:\n          - generic: MEDIUM\n        - option [selected]:\n          - generic: LOW\n        - option [selected]:\n          - generic: SEMANTIC\n        - option [selected]:\n          - generic: Add new…\n    - row \"Edit property name for Pending SEMANTIC\":\n      - gridcell \"Edit property name for Pending\":\n        - button \"Edit property name for Pending\":\n          - generic: Pending\n      - gridcell \"SEMANTIC\":\n        - listbox \"Edit property value for Pending\"\n        - combobox \"Edit property value for Pending\": SEMANTIC\n        - option [selected]:\n          - generic: HIGH\n        - option [selected]:\n          - generic: MEDIUM\n        - option [selected]:\n          - generic: LOW\n        - option [selected]:\n          - generic: SEMANTIC\n        - option [selected]:\n          - generic: Add new…\n    - row \"Edit property name for Disclosure CLOSED\":\n      - gridcell \"Edit property name for Disclosure\":\n        - button \"Edit property name for Disclosure\":\n          - generic: Disclosure\n      - gridcell \"CLOSED\":\n        - listbox \"Edit property value for Disclosure\"\n        - combobox \"Edit property value for Disclosure\": CLOSED\n        - option [selected]:\n          - generic: OPEN\n        - option [selected]:\n          - generic: CLOSED\n        - option [selected]:\n          - generic: Add new…\n  - heading \"Position\" [level=2]\n  - group \"Alignment\":\n    - generic: Alignment\n    - button \"Align left\":\n    - button \"Align horizontal centers\":\n    - button \"Align right\":\n    - button \"Align top\":\n    - button \"Align vertical centers\":\n    - button \"Align bottom\":\n    - button \"More actions\":\n  - group \"Position\":\n    - generic: Position\n    - generic: X\n    - spinbutton \"X-position\": \"2300\"\n    - generic: \"Y\"\n    - spinbutton \"Y-position\": \"20\"\n    - button \"Constraints\":\n  - group \"Rotation\":\n    - generic: Rotation\n    - spinbutton \"Rotation\": 0°\n    - button \"Rotate 90˚ right\":\n    - button \"Flip horizontal\":\n    - button \"Flip vertical\":\n  - heading \"Auto layout\" [level=2]: Layout\n  - button \"Resize to fit\":\n  - checkbox \"Toggle auto layout\"\n  - generic: Toggle auto layout\n  - group \"Flow\":\n    - generic: Flow\n    - radiogroup \"Layout\":\n      - generic: Layout\n      - radio \"Freeform\" [checked]\n      - generic: Freeform\n      - radio \"Vertical\"\n      - generic: Vertical\n      - radio \"Horizontal\"\n      - generic: Horizontal\n      - radio \"Grid\"\n      - generic: Grid\n  - group \"Dimensions\":\n    - generic: Dimensions\n    - generic \"Width\":\n      - generic: W\n      - textbox \"Width\": \"320\"\n    - generic \"Height\":\n      - generic: H\n      - textbox \"Height\": \"1150\"\n    - checkbox \"Lock aspect ratio\"\n    - generic: Lock aspect ratio\n  - checkbox \"Clip content\"\n  - generic: Clip content\n  - heading \"Appearance\" [level=2]\n  - checkbox \"Show\"\n  - generic: Hide\n  - button \"Apply blend mode\":\n  - generic: Opacity\n  - textbox: 100%\n  - generic: Corner radius\n  - textbox: \"0\"\n  - button \"Individual corners\":\n  - button \"Fill\":\n    - heading \"Fill\" [level=2]\n  - button \"Fill, Apply styles and variables\":\n  - button \"Add fill\":\n  - button \"Stroke\":\n    - heading \"Stroke\" [level=2]\n  - button \"Stroke, Apply styles and variables\":\n  - button \"Add stroke\":\n  - button \"Effects\":\n    - heading \"Effects\" [level=2]\n  - button \"Effects, Apply styles\":\n  - button \"Add effect\":\n  - heading \"Selection colors\" [level=2]\n  - 'button \"Color Variable D035/palette/cyan-light with value #006D82 · 100%\"':\n    - generic \"D035/palette/cyan-light\"\n  - generic: Click to edit color variable\n  - 'button \"Color Variable D035/palette/ink with value #0B0F14 · 100%\"':\n    - generic \"D035/palette/ink\"\n  - generic: Click to edit color variable\n  - 'button \"Color Variable D035/palette/white with value #FFF · 100%\"':\n    - generic \"D035/palette/white\"\n  - generic: Click to edit color variable\n  - button \"Layout guide\":\n    - heading \"Layout guide\" [level=2]\n  - button \"Layout guide, Apply styles\":\n  - button \"Add layout guide\":\n  - button \"Export\":\n    - generic: Export\n  - button \"Add export settings\":\n  - slider \"Resize handle\"\n",
+    "children": [
+      {
+        "box": {
+          "h": 24,
+          "w": 99.8125,
+          "x": 173,
+          "y": 610
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3267-layers-panel-row",
+        "level": 3,
+        "name": "Trial scroll marker",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 219.859375,
+          "x": 173,
+          "y": 642
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3266-layers-panel-row",
+        "level": 3,
+        "name": "Context summary / fixed Services fixture",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 295.359375,
+          "x": 173,
+          "y": 674
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 137,
+          "y": 674
+        },
+        "expanded": "true",
+        "id": "147:3265-layers-panel-row",
+        "level": 3,
+        "name": "Underlying Services fixture (unwired while modal open)",
+        "selected": "true",
+        "type": "Instance"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 113.546875,
+          "x": 197,
+          "y": 706
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3270-layers-panel-row",
+        "level": 4,
+        "name": "Book a conversation",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 72.0625,
+          "x": 173,
+          "y": 738
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 137,
+          "y": 738
+        },
+        "expanded": "true",
+        "id": "147:3264-layers-panel-row",
+        "level": 3,
+        "name": "Menu action",
+        "selected": "true",
+        "type": "Instance"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 113.546875,
+          "x": 197,
+          "y": 770
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3269-layers-panel-row",
+        "level": 4,
+        "name": "Book a conversation",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 232.8125,
+          "x": 173,
+          "y": 802
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 137,
+          "y": 802
+        },
+        "expanded": "true",
+        "id": "147:3250-layers-panel-row",
+        "level": 3,
+        "name": "PRIM-001 / Delivery stream control / B01 v1",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 216.671875,
+          "x": 197,
+          "y": 834
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3251-layers-panel-row",
+        "level": 4,
+        "name": "Delivery stream — currently Detailed 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 239.734375,
+          "x": 197,
+          "y": 866
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 866
+        },
+        "expanded": "true",
+        "id": "147:3252-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-HIGH",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 82.125,
+          "x": 221,
+          "y": 898
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3253-layers-panel-row",
+        "level": 5,
+        "name": "○ Detailed 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 257.484375,
+          "x": 197,
+          "y": 930
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 930
+        },
+        "expanded": "true",
+        "id": "147:3254-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-MEDIUM",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 87.140625,
+          "x": 221,
+          "y": 962
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3255-layers-panel-row",
+        "level": 5,
+        "name": "○ Balanced 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 237.0625,
+          "x": 197,
+          "y": 994
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 994
+        },
+        "expanded": "true",
+        "id": "147:3256-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-LOW",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 90.078125,
+          "x": 221,
+          "y": 1026
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3257-layers-panel-row",
+        "level": 5,
+        "name": "○ Simplified 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 269.4375,
+          "x": 197,
+          "y": 1058
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 1058
+        },
+        "expanded": "true",
+        "id": "147:3258-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-SEMANTIC",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 91.375,
+          "x": 221,
+          "y": 1090
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3259-layers-panel-row",
+        "level": 5,
+        "name": "● Quick Access",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 807,
+          "x": 197,
+          "y": 1122
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3260-layers-panel-row",
+        "level": 4,
+        "name": "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 1793.546875,
+          "x": 197,
+          "y": 1154
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3261-layers-panel-row",
+        "level": 4,
+        "name": "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 216.46875,
+          "x": 197,
+          "y": 1186
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 1186
+        },
+        "expanded": "true",
+        "id": "147:3262-layers-panel-row",
+        "level": 4,
+        "name": "PRIM-015 / General action button / base",
+        "selected": "true",
+        "type": "Instance"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 113.546875,
+          "x": 221,
+          "y": 1218
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3867-layers-panel-row",
+        "level": 5,
+        "name": "Book a conversation",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 111.421875,
+          "x": 197,
+          "y": 1250
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3263-layers-panel-row",
+        "level": 4,
+        "name": "Privacy and storage",
+        "selected": "true",
+        "type": "Text"
+      }
+    ],
+    "context": "Trial fixture · Services\nIn force Detailed 3D",
+    "menu": "Menu",
+    "hidden": true
+  },
+  {
+    "id": "144:3286-layers-panel-row",
+    "tuple": [
+      "HIGH",
+      "HIGH",
+      "CLOSED"
+    ],
+    "rootInspector": "\n  - button \"Multiplayer tools\":\n  - group \"Prototype view\":\n    - button \"Present\":\n    - button \"Prototype view\":\n  - button \"Share\"\n  - tablist:\n    - tab \"Design\" [selected]:\n      - generic: Design\n      - generic: Design\n    - tab \"Prototype\":\n      - generic: Prototype\n      - generic: Prototype\n  - button \"41%, zoom and view options\":\n    - text: 10%\n  - textbox: B01 qualification / NAVIGATION / v1\n  - heading [level=1]: B01 qualification / NAVIGATION / v1\n  - checkbox \"Multi-edit variants\"\n  - generic: Multi-edit variants\n  - button \"Select matching layers\":\n  - button \"Component configuration\":\n  - button \"More actions\":\n  - generic: Current variant\n  - button \"Select component\":\n  - grid:\n    - row \"Edit property name for Active HIGH\":\n      - gridcell \"Edit property name for Active\":\n        - button \"Edit property name for Active\":\n          - generic: Active\n      - gridcell \"HIGH\":\n        - listbox \"Edit property value for Active\"\n        - combobox \"Edit property value for Active\": HIGH\n        - option [selected]:\n          - generic: HIGH\n        - option [selected]:\n          - generic: MEDIUM\n        - option [selected]:\n          - generic: LOW\n        - option [selected]:\n          - generic: SEMANTIC\n        - option [selected]:\n          - generic: Add new…\n    - row \"Edit property name for Pending HIGH\":\n      - gridcell \"Edit property name for Pending\":\n        - button \"Edit property name for Pending\":\n          - generic: Pending\n      - gridcell \"HIGH\":\n        - listbox \"Edit property value for Pending\"\n        - combobox \"Edit property value for Pending\": HIGH\n        - option [selected]:\n          - generic: HIGH\n        - option [selected]:\n          - generic: MEDIUM\n        - option [selected]:\n          - generic: LOW\n        - option [selected]:\n          - generic: SEMANTIC\n        - option [selected]:\n          - generic: Add new…\n    - row \"Edit property name for Disclosure CLOSED\":\n      - gridcell \"Edit property name for Disclosure\":\n        - button \"Edit property name for Disclosure\":\n          - generic: Disclosure\n      - gridcell \"CLOSED\":\n        - listbox \"Edit property value for Disclosure\"\n        - combobox \"Edit property value for Disclosure\": CLOSED\n        - option [selected]:\n          - generic: OPEN\n        - option [selected]:\n          - generic: CLOSED\n        - option [selected]:\n          - generic: Add new…\n  - heading \"Position\" [level=2]\n  - group \"Alignment\":\n    - generic: Alignment\n    - button \"Align left\":\n    - button \"Align horizontal centers\":\n    - button \"Align right\":\n    - button \"Align top\":\n    - button \"Align vertical centers\":\n    - button \"Align bottom\":\n    - button \"More actions\":\n  - group \"Position\":\n    - generic: Position\n    - generic: X\n    - spinbutton \"X-position\": \"20\"\n    - generic: \"Y\"\n    - spinbutton \"Y-position\": \"20\"\n    - button \"Constraints\":\n  - group \"Rotation\":\n    - generic: Rotation\n    - spinbutton \"Rotation\": 0°\n    - button \"Rotate 90˚ right\":\n    - button \"Flip horizontal\":\n    - button \"Flip vertical\":\n  - heading \"Auto layout\" [level=2]: Layout\n  - button \"Resize to fit\":\n  - checkbox \"Toggle auto layout\"\n  - generic: Toggle auto layout\n  - group \"Flow\":\n    - generic: Flow\n    - radiogroup \"Layout\":\n      - generic: Layout\n      - radio \"Freeform\" [checked]\n      - generic: Freeform\n      - radio \"Vertical\"\n      - generic: Vertical\n      - radio \"Horizontal\"\n      - generic: Horizontal\n      - radio \"Grid\"\n      - generic: Grid\n  - group \"Dimensions\":\n    - generic: Dimensions\n    - generic \"Width\":\n      - generic: W\n      - textbox \"Width\": \"320\"\n    - generic \"Height\":\n      - generic: H\n      - textbox \"Height\": \"1150\"\n    - checkbox \"Lock aspect ratio\"\n    - generic: Lock aspect ratio\n  - checkbox \"Clip content\"\n  - generic: Clip content\n  - heading \"Appearance\" [level=2]\n  - checkbox \"Show\"\n  - generic: Hide\n  - button \"Apply blend mode\":\n  - generic: Opacity\n  - textbox: 100%\n  - generic: Corner radius\n  - textbox: \"0\"\n  - button \"Individual corners\":\n  - button \"Fill\":\n    - heading \"Fill\" [level=2]\n  - button \"Fill, Apply styles and variables\":\n  - button \"Add fill\":\n  - button \"Stroke\":\n    - heading \"Stroke\" [level=2]\n  - button \"Stroke, Apply styles and variables\":\n  - button \"Add stroke\":\n  - button \"Effects\":\n    - heading \"Effects\" [level=2]\n  - button \"Effects, Apply styles\":\n  - button \"Add effect\":\n  - heading \"Selection colors\" [level=2]\n  - 'button \"Color Variable D035/palette/cyan-light with value #006D82 · 100%\"':\n    - generic \"D035/palette/cyan-light\"\n  - generic: Click to edit color variable\n  - 'button \"Color Variable D035/palette/ink with value #0B0F14 · 100%\"':\n    - generic \"D035/palette/ink\"\n  - generic: Click to edit color variable\n  - 'button \"Color Variable D035/palette/white with value #FFF · 100%\"':\n    - generic \"D035/palette/white\"\n  - generic: Click to edit color variable\n  - button \"Layout guide\":\n    - heading \"Layout guide\" [level=2]\n  - button \"Layout guide, Apply styles\":\n  - button \"Add layout guide\":\n  - button \"Export\":\n    - generic: Export\n  - button \"Add export settings\":\n  - slider \"Resize handle\"\n",
+    "children": [
+      {
+        "box": {
+          "h": 24,
+          "w": 99.8125,
+          "x": 173,
+          "y": 808
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3204-layers-panel-row",
+        "level": 3,
+        "name": "Trial scroll marker",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 219.859375,
+          "x": 173,
+          "y": 840
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "144:3282-layers-panel-row",
+        "level": 3,
+        "name": "Context summary / fixed Services fixture",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 295.359375,
+          "x": 173,
+          "y": 872
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 137,
+          "y": 872
+        },
+        "expanded": "true",
+        "id": "144:3281-layers-panel-row",
+        "level": 3,
+        "name": "Underlying Services fixture (unwired while modal open)",
+        "selected": "true",
+        "type": "Instance"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 113.546875,
+          "x": 197,
+          "y": 904
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:2901-layers-panel-row",
+        "level": 4,
+        "name": "Book a conversation",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 72.0625,
+          "x": 173,
+          "y": 936
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 137,
+          "y": 936
+        },
+        "expanded": "true",
+        "id": "144:3280-layers-panel-row",
+        "level": 3,
+        "name": "Menu action",
+        "selected": "true",
+        "type": "Instance"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 113.546875,
+          "x": 197,
+          "y": 968
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:2476-layers-panel-row",
+        "level": 4,
+        "name": "Book a conversation",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 232.8125,
+          "x": 173,
+          "y": 1000
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 137,
+          "y": 1000
+        },
+        "expanded": "true",
+        "id": "144:3266-layers-panel-row",
+        "level": 3,
+        "name": "PRIM-001 / Delivery stream control / B01 v1",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 216.671875,
+          "x": 197,
+          "y": 1032
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "144:3267-layers-panel-row",
+        "level": 4,
+        "name": "Delivery stream — currently Detailed 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 239.734375,
+          "x": 197,
+          "y": 1064
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 1064
+        },
+        "expanded": "true",
+        "id": "144:3268-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-HIGH",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 82.125,
+          "x": 221,
+          "y": 1096
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "144:3269-layers-panel-row",
+        "level": 5,
+        "name": "● Detailed 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 257.484375,
+          "x": 197,
+          "y": 1128
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 1128
+        },
+        "expanded": "true",
+        "id": "144:3270-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-MEDIUM",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 87.140625,
+          "x": 221,
+          "y": 1160
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "144:3271-layers-panel-row",
+        "level": 5,
+        "name": "○ Balanced 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 237.0625,
+          "x": 197,
+          "y": 1192
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 1192
+        },
+        "expanded": "true",
+        "id": "144:3272-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-LOW",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 90.078125,
+          "x": 221,
+          "y": 1224
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "144:3273-layers-panel-row",
+        "level": 5,
+        "name": "○ Simplified 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 269.4375,
+          "x": 197,
+          "y": 1256
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 1256
+        },
+        "expanded": "true",
+        "id": "144:3274-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-SEMANTIC",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 91.375,
+          "x": 221,
+          "y": 1288
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "144:3275-layers-panel-row",
+        "level": 5,
+        "name": "○ Quick Access",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 807,
+          "x": 197,
+          "y": 1320
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "144:3276-layers-panel-row",
+        "level": 4,
+        "name": "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 1793.546875,
+          "x": 197,
+          "y": 1352
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "144:3277-layers-panel-row",
+        "level": 4,
+        "name": "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 216.46875,
+          "x": 197,
+          "y": 1384
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 1384
+        },
+        "expanded": "true",
+        "id": "144:3278-layers-panel-row",
+        "level": 4,
+        "name": "PRIM-015 / General action button / base",
+        "selected": "true",
+        "type": "Instance"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 113.546875,
+          "x": 221,
+          "y": 1416
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3868-layers-panel-row",
+        "level": 5,
+        "name": "Book a conversation",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 111.421875,
+          "x": 197,
+          "y": 1448
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "144:3279-layers-panel-row",
+        "level": 4,
+        "name": "Privacy and storage",
+        "selected": "true",
+        "type": "Text"
+      }
+    ],
+    "context": "Trial fixture · Services\nIn force Detailed 3D",
+    "menu": "Menu",
+    "hidden": true
+  },
+  {
+    "id": "144:3241-layers-panel-row",
+    "tuple": [
+      "HIGH",
+      "HIGH",
+      "OPEN"
+    ],
+    "rootInspector": "\n  - button \"Multiplayer tools\":\n  - group \"Prototype view\":\n    - button \"Present\":\n    - button \"Prototype view\":\n  - button \"Share\"\n  - tablist:\n    - tab \"Design\" [selected]:\n      - generic: Design\n      - generic: Design\n    - tab \"Prototype\":\n      - generic: Prototype\n      - generic: Prototype\n  - button \"41%, zoom and view options\":\n    - text: 10%\n  - textbox: B01 qualification / NAVIGATION / v1\n  - heading [level=1]: B01 qualification / NAVIGATION / v1\n  - checkbox \"Multi-edit variants\"\n  - generic: Multi-edit variants\n  - button \"Select matching layers\":\n  - button \"Component configuration\":\n  - button \"More actions\":\n  - generic: Current variant\n  - button \"Select component\":\n  - grid:\n    - row \"Edit property name for Active HIGH\":\n      - gridcell \"Edit property name for Active\":\n        - button \"Edit property name for Active\":\n          - generic: Active\n      - gridcell \"HIGH\":\n        - listbox \"Edit property value for Active\"\n        - combobox \"Edit property value for Active\": HIGH\n        - option [selected]:\n          - generic: HIGH\n        - option [selected]:\n          - generic: MEDIUM\n        - option [selected]:\n          - generic: LOW\n        - option [selected]:\n          - generic: SEMANTIC\n        - option [selected]:\n          - generic: Add new…\n    - row \"Edit property name for Pending HIGH\":\n      - gridcell \"Edit property name for Pending\":\n        - button \"Edit property name for Pending\":\n          - generic: Pending\n      - gridcell \"HIGH\":\n        - listbox \"Edit property value for Pending\"\n        - combobox \"Edit property value for Pending\": HIGH\n        - option [selected]:\n          - generic: HIGH\n        - option [selected]:\n          - generic: MEDIUM\n        - option [selected]:\n          - generic: LOW\n        - option [selected]:\n          - generic: SEMANTIC\n        - option [selected]:\n          - generic: Add new…\n    - row \"Edit property name for Disclosure OPEN\":\n      - gridcell \"Edit property name for Disclosure\":\n        - button \"Edit property name for Disclosure\":\n          - generic: Disclosure\n      - gridcell \"OPEN\":\n        - listbox \"Edit property value for Disclosure\"\n        - combobox \"Edit property value for Disclosure\": OPEN\n        - option [selected]:\n          - generic: OPEN\n        - option [selected]:\n          - generic: CLOSED\n        - option [selected]:\n          - generic: Add new…\n  - heading \"Position\" [level=2]\n  - group \"Alignment\":\n    - generic: Alignment\n    - button \"Align left\":\n    - button \"Align horizontal centers\":\n    - button \"Align right\":\n    - button \"Align top\":\n    - button \"Align vertical centers\":\n    - button \"Align bottom\":\n    - button \"More actions\":\n  - group \"Position\":\n    - generic: Position\n    - generic: X\n    - spinbutton \"X-position\": \"400\"\n    - generic: \"Y\"\n    - spinbutton \"Y-position\": \"20\"\n    - button \"Constraints\":\n  - group \"Rotation\":\n    - generic: Rotation\n    - spinbutton \"Rotation\": 0°\n    - button \"Rotate 90˚ right\":\n    - button \"Flip horizontal\":\n    - button \"Flip vertical\":\n  - heading \"Auto layout\" [level=2]: Layout\n  - button \"Resize to fit\":\n  - checkbox \"Toggle auto layout\"\n  - generic: Toggle auto layout\n  - group \"Flow\":\n    - generic: Flow\n    - radiogroup \"Layout\":\n      - generic: Layout\n      - radio \"Freeform\" [checked]\n      - generic: Freeform\n      - radio \"Vertical\"\n      - generic: Vertical\n      - radio \"Horizontal\"\n      - generic: Horizontal\n      - radio \"Grid\"\n      - generic: Grid\n  - group \"Dimensions\":\n    - generic: Dimensions\n    - generic \"Width\":\n      - generic: W\n      - textbox \"Width\": \"320\"\n    - generic \"Height\":\n      - generic: H\n      - textbox \"Height\": \"1150\"\n    - checkbox \"Lock aspect ratio\"\n    - generic: Lock aspect ratio\n  - checkbox \"Clip content\"\n  - generic: Clip content\n  - heading \"Appearance\" [level=2]\n  - checkbox \"Show\"\n  - generic: Hide\n  - button \"Apply blend mode\":\n  - generic: Opacity\n  - textbox: 100%\n  - generic: Corner radius\n  - textbox: \"0\"\n  - button \"Individual corners\":\n  - button \"Fill\":\n    - heading \"Fill\" [level=2]\n  - button \"Fill, Apply styles and variables\":\n  - button \"Add fill\":\n  - button \"Stroke\":\n    - heading \"Stroke\" [level=2]\n  - button \"Stroke, Apply styles and variables\":\n  - button \"Add stroke\":\n  - button \"Effects\":\n    - heading \"Effects\" [level=2]\n  - button \"Effects, Apply styles\":\n  - button \"Add effect\":\n  - button \"Selection colors +1\":\n    - heading \"Selection colors\" [level=2]\n    - generic: \"+1\"\n  - button \"Layout guide\":\n    - heading \"Layout guide\" [level=2]\n  - button \"Layout guide, Apply styles\":\n  - button \"Add layout guide\":\n  - button \"Export\":\n    - generic: Export\n  - button \"Add export settings\":\n  - slider \"Resize handle\"\n",
+    "children": [
+      {
+        "box": {
+          "h": 24,
+          "w": 99.8125,
+          "x": 173,
+          "y": 488
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:3203-layers-panel-row",
+        "level": 3,
+        "name": "Trial scroll marker",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 219.859375,
+          "x": 173,
+          "y": 520
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "144:3237-layers-panel-row",
+        "level": 3,
+        "name": "Context summary / fixed Services fixture",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 295.359375,
+          "x": 173,
+          "y": 552
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 137,
+          "y": 552
+        },
+        "expanded": "true",
+        "id": "144:3236-layers-panel-row",
+        "level": 3,
+        "name": "Underlying Services fixture (unwired while modal open)",
+        "selected": "true",
+        "type": "Instance"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 113.546875,
+          "x": 197,
+          "y": 584
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:2475-layers-panel-row",
+        "level": 4,
+        "name": "Book a conversation",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 72.0625,
+          "x": 173,
+          "y": 616
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 137,
+          "y": 616
+        },
+        "expanded": "true",
+        "id": "144:3235-layers-panel-row",
+        "level": 3,
+        "name": "Menu action",
+        "selected": "true",
+        "type": "Instance"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 113.546875,
+          "x": 197,
+          "y": 648
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:2849-layers-panel-row",
+        "level": 4,
+        "name": "Book a conversation",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 232.8125,
+          "x": 173,
+          "y": 680
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 137,
+          "y": 680
+        },
+        "expanded": "true",
+        "id": "144:3221-layers-panel-row",
+        "level": 3,
+        "name": "PRIM-001 / Delivery stream control / B01 v1",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 216.671875,
+          "x": 197,
+          "y": 712
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "144:3222-layers-panel-row",
+        "level": 4,
+        "name": "Delivery stream — currently Detailed 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 239.734375,
+          "x": 197,
+          "y": 744
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 744
+        },
+        "expanded": "true",
+        "id": "144:3223-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-HIGH",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 82.125,
+          "x": 221,
+          "y": 776
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "144:3224-layers-panel-row",
+        "level": 5,
+        "name": "● Detailed 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 257.484375,
+          "x": 197,
+          "y": 808
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 808
+        },
+        "expanded": "true",
+        "id": "144:3225-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-MEDIUM",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 87.140625,
+          "x": 221,
+          "y": 840
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "144:3226-layers-panel-row",
+        "level": 5,
+        "name": "○ Balanced 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 237.0625,
+          "x": 197,
+          "y": 872
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 872
+        },
+        "expanded": "true",
+        "id": "144:3227-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-LOW",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 90.078125,
+          "x": 221,
+          "y": 904
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "144:3228-layers-panel-row",
+        "level": 5,
+        "name": "○ Simplified 3D",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 269.4375,
+          "x": 197,
+          "y": 936
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 936
+        },
+        "expanded": "true",
+        "id": "144:3229-layers-panel-row",
+        "level": 4,
+        "name": "Native-radio appearance reference / S-SEMANTIC",
+        "selected": "true",
+        "type": "Auto layout"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 91.375,
+          "x": 221,
+          "y": 968
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "144:3230-layers-panel-row",
+        "level": 5,
+        "name": "○ Quick Access",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 807,
+          "x": 197,
+          "y": 1000
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "144:3231-layers-panel-row",
+        "level": 4,
+        "name": "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 1793.546875,
+          "x": 197,
+          "y": 1032
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "144:3232-layers-panel-row",
+        "level": 4,
+        "name": "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 216.46875,
+          "x": 197,
+          "y": 1064
+        },
+        "caret": {
+          "h": 24,
+          "w": 24,
+          "x": 161,
+          "y": 1064
+        },
+        "expanded": "true",
+        "id": "144:3233-layers-panel-row",
+        "level": 4,
+        "name": "PRIM-015 / General action button / base",
+        "selected": "true",
+        "type": "Instance"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 113.546875,
+          "x": 221,
+          "y": 1096
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "147:251-layers-panel-row",
+        "level": 5,
+        "name": "Book a conversation",
+        "selected": "true",
+        "type": "Text"
+      },
+      {
+        "box": {
+          "h": 24,
+          "w": 111.421875,
+          "x": 197,
+          "y": 1128
+        },
+        "caret": null,
+        "expanded": null,
+        "id": "144:3234-layers-panel-row",
+        "level": 4,
+        "name": "Privacy and storage",
+        "selected": "true",
+        "type": "Text"
+      }
+    ],
+    "context": "Trial fixture · Services\nIn force Detailed 3D",
+    "menu": "Close menu",
+    "hidden": false
+  }
+]

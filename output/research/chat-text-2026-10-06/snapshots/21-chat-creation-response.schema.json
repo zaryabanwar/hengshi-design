@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed private chat creation responses v1",
+  "description": "Definition-only IF-CHAT-01 server projections. Representations reused from booking convey no booking authority. Shape proves no cookie/CSRF, consent validity, persistence permission, release eligibility, lifecycle or HTTP enforcement.",
+  "oneOf": [
+    {"$ref": "booking-creation-response.schema.json#/$defs/provisional"},
+    {"$ref": "#/$defs/created"},
+    {"$ref": "booking-creation-response.schema.json#/$defs/pending"},
+    {"$ref": "booking-creation-response.schema.json#/$defs/error"}
+  ],
+  "$defs": {
+    "current_consent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "revision", "decisions"],
+      "properties": {
+        "state": {"const": "current"},
+        "revision": {"$ref": "process-value.schema.json#/$defs/positive_revision"},
+        "decisions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 8,
+          "uniqueItems": true,
+          "items": {"$ref": "chat-creation-request.schema.json#/$defs/decision"}
+        }
+      }
+    },
+    "consent": {
+      "oneOf": [{"const": {"state": "none"}}, {"$ref": "#/$defs/current_consent"}]
+    },
+    "created": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["phase", "state", "provisional_id", "operation_id", "session_id", "proof_generation", "csrf_token", "consent"],
+      "properties": {
+        "phase": {"const": "create"},
+        "state": {"const": "created"},
+        "provisional_id": {"$ref": "process-value.schema.json#/$defs/uuid"},
+        "operation_id": {"$ref": "chat-creation-request.schema.json#/$defs/operation_id"},
+        "session_id": {"$ref": "process-value.schema.json#/$defs/uuid"},
+        "proof_generation": {"$ref": "process-value.schema.json#/$defs/positive_revision", "minimum": 2},
+        "csrf_token": {"$ref": "booking-creation-response.schema.json#/$defs/csrf_token"},
+        "consent": {"$ref": "#/$defs/consent"}
+      }
+    }
+  }
+}

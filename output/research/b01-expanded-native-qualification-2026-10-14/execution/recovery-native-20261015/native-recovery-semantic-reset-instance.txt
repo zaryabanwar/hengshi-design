@@ -1,0 +1,434 @@
+- application "Figma Design, 5 items selected" [active]
+- status: Screenreader support for the board is currently disabled. To enable it via Accessibility settings, press Ctrl+K, type Accessibility Settings, and press Enter. To see available keyboard shortcuts, enter Ctrl+Shift+Question mark .
+- status
+- region "Comments on canvas":
+  - button "Create new comment"
+- region "Left sidebar":
+  - toolbar "Navigation Bar":
+    - button "Main menu":
+    - separator
+    - button "File" [expanded]:
+      - generic: File
+    - button "Agents":
+      - generic: Agents
+    - button "Assets":
+      - generic: Assets
+    - button "Tools":
+      - generic: Tools
+    - separator
+    - button "Variables":
+      - generic: Variables
+  - button "Hengshi Design v1 — UI References, file name": Hengshi Design v1 — UI References
+  - generic: File name
+  - button "Edit file menu":
+  - button "Minimize UI":
+  - link "hengshi-design":
+    - /url: https://www.figma.com/files/team/1472694121837770005/project/666072293
+  - button "Free":
+    - generic: Free
+  - heading "Pages Find Add new page" [level=2]:
+    - button "Pages" [expanded]:
+      - generic: Pages
+    - button "Find":
+    - button "Add new page":
+  - grid:
+    - row "Page 1":
+      - gridcell "Page 1":
+        - button "Page 1":
+          - generic: Page 1
+  - slider "Resize handle"
+  - heading "Layers Collapse layers" [level=2]:
+    - button "Layers" [expanded]:
+      - generic: Layers
+    - button "Collapse layers":
+  - treegrid:
+    - row "B01 / Four-stream three-host qualification / v1" [expanded]:
+      - button:
+      - gridcell:
+      - gridcell "B01 / Four-stream three-host qualification / v1":
+        - generic: B01 / Four-stream three-host qualification / v1
+    - row "ENQ_RECOVERY_SEMANTIC / RESET probe Toggle layer locking Toggle layer visibility" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_SEMANTIC / RESET probe":
+        - generic: ENQ_RECOVERY_SEMANTIC / RESET probe
+      - gridcell "Toggle layer locking":
+        - checkbox "Toggle layer locking"
+        - generic: Toggle layer locking
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility"
+        - generic: Toggle layer visibility
+    - row "ENQ host RECOVERY SEMANTIC" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host RECOVERY SEMANTIC":
+        - generic: ENQ host RECOVERY SEMANTIC
+    - row "ENQ_RECOVERY_SEMANTIC / PRESERVE probe" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_SEMANTIC / PRESERVE probe":
+        - generic: ENQ_RECOVERY_SEMANTIC / PRESERVE probe
+    - row "ENQ host RECOVERY SEMANTIC" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host RECOVERY SEMANTIC":
+        - generic: ENQ host RECOVERY SEMANTIC
+    - row "ENQ_RECOVERY_SEMANTIC / Preview" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_SEMANTIC / Preview":
+        - generic: ENQ_RECOVERY_SEMANTIC / Preview
+    - row "ENQ host RECOVERY SEMANTIC" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host RECOVERY SEMANTIC":
+        - generic: ENQ host RECOVERY SEMANTIC
+    - row "ENQ_RECOVERY_LOW / RESET probe" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_LOW / RESET probe":
+        - generic: ENQ_RECOVERY_LOW / RESET probe
+    - row "ENQ host RECOVERY LOW" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host RECOVERY LOW":
+        - generic: ENQ host RECOVERY LOW
+    - row "ENQ_RECOVERY_LOW / PRESERVE probe" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_LOW / PRESERVE probe":
+        - generic: ENQ_RECOVERY_LOW / PRESERVE probe
+    - row "ENQ host RECOVERY LOW" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host RECOVERY LOW":
+        - generic: ENQ host RECOVERY LOW
+    - row "ENQ_RECOVERY_LOW / Preview" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_LOW / Preview":
+        - generic: ENQ_RECOVERY_LOW / Preview
+    - row "ENQ host RECOVERY LOW" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host RECOVERY LOW":
+        - generic: ENQ host RECOVERY LOW
+    - row "ENQ_RECOVERY_MEDIUM / RESET probe" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_MEDIUM / RESET probe":
+        - generic: ENQ_RECOVERY_MEDIUM / RESET probe
+    - row "ENQ host RECOVERY MEDIUM" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host RECOVERY MEDIUM":
+        - generic: ENQ host RECOVERY MEDIUM
+    - row "ENQ_RECOVERY_MEDIUM / PRESERVE probe" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_MEDIUM / PRESERVE probe":
+        - generic: ENQ_RECOVERY_MEDIUM / PRESERVE probe
+    - row "ENQ host RECOVERY MEDIUM" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host RECOVERY MEDIUM":
+        - generic: ENQ host RECOVERY MEDIUM
+    - row "ENQ_RECOVERY_MEDIUM / Preview" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_MEDIUM / Preview":
+        - generic: ENQ_RECOVERY_MEDIUM / Preview
+    - row "ENQ host RECOVERY MEDIUM" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host RECOVERY MEDIUM":
+        - generic: ENQ host RECOVERY MEDIUM
+    - row "ENQ_RECOVERY_HIGH / RESET probe" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_HIGH / RESET probe":
+        - generic: ENQ_RECOVERY_HIGH / RESET probe
+    - row "ENQ host RECOVERY HIGH" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host RECOVERY HIGH":
+        - generic: ENQ host RECOVERY HIGH
+    - row "ENQ_RECOVERY_HIGH / PRESERVE probe" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_HIGH / PRESERVE probe":
+        - generic: ENQ_RECOVERY_HIGH / PRESERVE probe
+    - row "ENQ host RECOVERY HIGH" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host RECOVERY HIGH":
+        - generic: ENQ host RECOVERY HIGH
+    - row "ENQ_RECOVERY_HIGH / Preview" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_RECOVERY_HIGH / Preview":
+        - generic: ENQ_RECOVERY_HIGH / Preview
+    - row "ENQ host RECOVERY HIGH" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host RECOVERY HIGH":
+        - generic: ENQ host RECOVERY HIGH
+    - row "ENQ_DIRECTORY_SEMANTIC / RESET probe" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_SEMANTIC / RESET probe":
+        - generic: ENQ_DIRECTORY_SEMANTIC / RESET probe
+    - row "ENQ host DIRECTORY SEMANTIC" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host DIRECTORY SEMANTIC":
+        - generic: ENQ host DIRECTORY SEMANTIC
+    - row "ENQ_DIRECTORY_SEMANTIC / PRESERVE probe" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_SEMANTIC / PRESERVE probe":
+        - generic: ENQ_DIRECTORY_SEMANTIC / PRESERVE probe
+    - row "ENQ host DIRECTORY SEMANTIC" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host DIRECTORY SEMANTIC":
+        - generic: ENQ host DIRECTORY SEMANTIC
+    - row "ENQ_DIRECTORY_SEMANTIC / Preview" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_SEMANTIC / Preview":
+        - generic: ENQ_DIRECTORY_SEMANTIC / Preview
+    - row "ENQ host DIRECTORY SEMANTIC" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host DIRECTORY SEMANTIC":
+        - generic: ENQ host DIRECTORY SEMANTIC
+    - row "ENQ_DIRECTORY_LOW / RESET probe" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_LOW / RESET probe":
+        - generic: ENQ_DIRECTORY_LOW / RESET probe
+    - row "ENQ host DIRECTORY LOW" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host DIRECTORY LOW":
+        - generic: ENQ host DIRECTORY LOW
+    - row "ENQ_DIRECTORY_LOW / PRESERVE probe" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_LOW / PRESERVE probe":
+        - generic: ENQ_DIRECTORY_LOW / PRESERVE probe
+    - row "ENQ host DIRECTORY LOW" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host DIRECTORY LOW":
+        - generic: ENQ host DIRECTORY LOW
+    - row "ENQ_DIRECTORY_LOW / Preview" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_LOW / Preview":
+        - generic: ENQ_DIRECTORY_LOW / Preview
+    - row "ENQ host DIRECTORY LOW" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host DIRECTORY LOW":
+        - generic: ENQ host DIRECTORY LOW
+    - row "ENQ_DIRECTORY_MEDIUM / RESET probe" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_MEDIUM / RESET probe":
+        - generic: ENQ_DIRECTORY_MEDIUM / RESET probe
+    - row "ENQ host DIRECTORY MEDIUM" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host DIRECTORY MEDIUM":
+        - generic: ENQ host DIRECTORY MEDIUM
+    - row "ENQ_DIRECTORY_MEDIUM / PRESERVE probe" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_MEDIUM / PRESERVE probe":
+        - generic: ENQ_DIRECTORY_MEDIUM / PRESERVE probe
+    - row "ENQ host DIRECTORY MEDIUM" [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ host DIRECTORY MEDIUM":
+        - generic: ENQ host DIRECTORY MEDIUM
+    - row "ENQ_DIRECTORY_MEDIUM / Preview" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_DIRECTORY_MEDIUM / Preview":
+        - generic: ENQ_DIRECTORY_MEDIUM / Preview
+  - slider "Resize handle"
+- region "Right sidebar":
+  - button "Multiplayer tools":
+  - group "Prototype view":
+    - button "Present":
+    - button "Prototype view":
+  - button "Share"
+  - tablist:
+    - tab "Design" [selected]:
+      - generic: Design
+      - generic: Design
+    - tab "Prototype":
+      - generic: Prototype
+      - generic: Prototype
+  - button "51%, zoom and view options":
+    - text: 3%
+  - button "Section, Frame Dimension Presets":
+    - generic: Mixed
+  - button "Select matching layers":
+  - button "More actions":
+  - heading "Position" [level=2]
+  - group "Alignment":
+    - generic: Alignment
+    - button "Align left":
+    - button "Align horizontal centers":
+    - button "Align right":
+    - button "Align top":
+    - button "Align vertical centers":
+    - button "Align bottom":
+    - button "More actions":
+  - group "Position":
+    - generic: Position
+    - generic: X
+    - spinbutton "X-position": Mixed
+    - generic: "Y"
+    - spinbutton "Y-position": Mixed
+  - group "Rotation":
+    - generic: Rotation
+    - spinbutton "Rotation": 0°
+    - button "Rotate 90˚ right":
+    - button "Flip horizontal":
+    - button "Flip vertical":
+  - heading "Layout" [level=2]
+  - checkbox "Toggle auto layout"
+  - generic: Toggle auto layout
+  - group "Flow":
+    - generic: Flow
+    - radiogroup "Layout":
+      - generic: Layout
+      - radio "Freeform" [checked]
+      - generic: Freeform
+      - radio "Vertical"
+      - generic: Vertical
+      - radio "Horizontal"
+      - generic: Horizontal
+      - radio "Grid"
+      - generic: Grid
+  - group "Dimensions":
+    - generic: Dimensions
+    - generic "Width":
+      - generic: W
+      - textbox "Width": Mixed
+    - generic "Height":
+      - generic: H
+      - textbox "Height": Mixed
+    - checkbox "Lock aspect ratio"
+    - generic: Lock aspect ratio
+  - group "Spacing":
+    - generic: Spacing
+    - generic "Horizontal spacing":
+      - textbox "Horizontal spacing": Mixed
+  - checkbox "Clip content" [checked]
+  - generic: Clip content
+  - heading "Appearance" [level=2]
+  - checkbox "Hide"
+  - generic: Hide
+  - button "Apply blend mode":
+  - generic: Opacity
+  - textbox: 100%
+  - generic: Corner radius
+  - textbox: Mixed
+  - button "Individual corners":
+  - heading "Fill" [level=2]
+  - button "Fill, Apply styles and variables":
+  - button "Add fill":
+  - grid:
+    - 'row "Solid color hex: FFFFFF Color FFFFFF 100 % Toggle visibility Remove"':
+      - 'gridcell "Solid color hex: FFFFFF Color FFFFFF 100 %"':
+        - 'button "Color Variable D035/palette/paper with value #FAF9F6 · 100%"':
+          - generic "D035/palette/paper"
+        - generic: Click to edit color variable
+      - gridcell "Toggle visibility":
+        - checkbox "Toggle visibility" [checked]
+        - generic: Toggle visibility
+      - gridcell "Remove":
+        - button "Remove":
+  - heading "Stroke" [level=2]
+  - button "Stroke, Apply styles and variables":
+  - button "Add stroke":
+  - grid:
+    - 'row "Solid color hex: 8A38F5 Color 8A38F5 100 % Toggle visibility Remove"':
+      - 'gridcell "Solid color hex: 8A38F5 Color 8A38F5 100 %"':
+        - 'button "Solid color hex: 000000"'
+        - generic: Color
+        - generic: Autofill available. Type to see suggestions.
+        - combobox "Color": 8A38F5
+        - textbox "%": "100"
+        - generic: "%"
+      - gridcell "Toggle visibility":
+        - checkbox "Toggle visibility" [checked]
+        - generic: Toggle visibility
+      - gridcell "Remove":
+        - button "Remove":
+  - generic: Position
+  - generic: Stroke align
+  - combobox "Stroke align":
+    - generic: Inside
+  - generic: Weight
+  - generic "Stroke weight":
+    - textbox "Stroke weight": "1"
+  - button "Advanced stroke settings":
+  - button "Individual strokes":
+  - button "Effects":
+    - heading "Effects" [level=2]
+  - button "Effects, Apply styles":
+  - button "Add effect":
+  - heading "Selection colors" [level=2]
+  - button "Show selection colors":
+    - generic: Show selection colors
+  - button "Layout guide":
+    - heading "Layout guide" [level=2]
+  - button "Layout guide, Apply styles":
+  - button "Add layout guide":
+  - button "Export":
+    - generic: Export
+  - button "Add export settings":
+  - button "Export v1":
+    - generic: Export 39 layers
+  - slider "Resize handle"
+- region "Application toolbar":
+  - toolbar "Editor":
+    - group "Move":
+      - button "Move" [pressed]:
+      - button "Move tools":
+    - group "Frame":
+      - button "Frame":
+      - button "Region tools":
+    - group "Rectangle":
+      - button "Rectangle":
+      - button "Shape tools":
+    - group "Pen":
+      - button "Pen":
+      - button "Creation tools":
+    - group "Text":
+      - button "Text":
+      - button "Type tools":
+    - button "Comment":
+    - button "Actions":
+    - radiogroup "Toolbelt Mode":
+      - generic: Toolbelt Mode
+      - radio "Draw"
+      - generic: Draw
+      - radio "Design" [checked]
+      - generic: Design
+      - radio "Motion"
+      - generic: Motion
+      - radio "Dev Mode"
+      - generic: Dev Mode
+- region "Help/zoom toolbar":
+  - toolbar "Help/zoom toolbar":
+    - button "Help":
+- status
+- alert: Zoom to selection
+- alert

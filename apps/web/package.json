@@ -9,7 +9,11 @@
     "preview": "vite preview",
     "test:e2e": "playwright test",
     "test:e2e:list": "playwright test --list",
-    "qa:axe": "playwright test e2e/accessibility.spec.ts"
+    "qa:axe": "playwright test e2e/accessibility.spec.ts",
+    "site:dev": "vite --config site/vite.config.ts",
+    "site:build": "tsc --project site/tsconfig.json && node site/build.mjs",
+    "site:preview": "vite preview --config site/vite.config.ts",
+    "site:test": "playwright test --config site/playwright.config.ts"
   },
   "dependencies": {
     "@react-three/drei": "^9.110.0",

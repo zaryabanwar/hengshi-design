@@ -1,0 +1,26 @@
+{
+  "started_at_utc": "2026-10-05T20:50:38.210136+00:00",
+  "ended_at_utc": "2026-10-05T20:51:01.686849+00:00",
+  "command": [
+    "C:/nvm4w/nodejs/node.exe",
+    "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+    "ci",
+    "--ignore-scripts",
+    "--strict-peer-deps",
+    "--engine-strict",
+    "--audit=false",
+    "--fund=false",
+    "--workspaces=false",
+    "--include=dev",
+    "--registry=https://registry.npmjs.org",
+    "--userconfig=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\empty-user.npmrc",
+    "--globalconfig=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\empty-global.npmrc",
+    "--loglevel=error"
+  ],
+  "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate",
+  "exit_code": 0,
+  "lock_before": "86dd64aae77da6ab9a0d0f7a88338494c15f68620838ffd40140f254b1e9ca2d",
+  "lock_after": "86dd64aae77da6ab9a0d0f7a88338494c15f68620838ffd40140f254b1e9ca2d",
+  "scope": "isolated candidate only; lifecycle scripts disabled; no application package installation or adoption",
+  "environment": "allowlisted OS/runtime paths only with explicit empty user/global npm configs"
+}

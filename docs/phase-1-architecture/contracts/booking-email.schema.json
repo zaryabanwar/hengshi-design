@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed booking email direction module v1",
+  "description": "IF-BOOK-03 and IF-BOOK-04 shape only. Use named directional definitions. Does not prove current process/purpose/revision, code ownership, clock/attempt/extension enforcement, safe mail delivery, transport, client ordering or production readiness.",
+  "not": {},
+  "$defs": {
+    "operation_id": {"$ref": "booking-creation-request.schema.json#/$defs/operation_id"},
+    "revision": {"$ref": "process-value.schema.json#/$defs/positive_revision"},
+    "challenge_ref": {"$ref": "booking-creation-request.schema.json#/$defs/operation_id"},
+    "utc_instant": {"$ref": "booking-status-response.schema.json#/$defs/utc_instant"},
+    "issue": {
+      "type": "object", "additionalProperties": false,
+      "required": ["kind", "operation_id", "expected_revision"],
+      "properties": {"kind": {"const": "issue_challenge"}, "operation_id": {"$ref": "#/$defs/operation_id"}, "expected_revision": {"$ref": "#/$defs/revision"}}
+    },
+    "resend": {
+      "type": "object", "additionalProperties": false,
+      "required": ["kind", "operation_id", "expected_revision", "challenge_ref"],
+      "properties": {"kind": {"const": "resend_challenge"}, "operation_id": {"$ref": "#/$defs/operation_id"}, "expected_revision": {"$ref": "#/$defs/revision"}, "challenge_ref": {"$ref": "#/$defs/challenge_ref"}}
+    },
+    "extend": {
+      "type": "object", "additionalProperties": false,
+      "required": ["kind", "operation_id", "expected_revision", "challenge_ref"],
+      "properties": {"kind": {"const": "extend_challenge"}, "operation_id": {"$ref": "#/$defs/operation_id"}, "expected_revision": {"$ref": "#/$defs/revision"}, "challenge_ref": {"$ref": "#/$defs/challenge_ref"}}
+    },
+    "reconcile_challenge": {
+      "type": "object", "additionalProperties": false,
+      "required": ["kind", "operation_id"],
+      "properties": {"kind": {"const": "reconcile_challenge"}, "operation_id": {"$ref": "#/$defs/operation_id"}}
+    },
+    "challenge_request": {"oneOf": [{"$ref": "#/$defs/issue"}, {"$ref": "#/$defs/resend"}, {"$ref": "#/$defs/extend"}, {"$ref": "#/$defs/reconcile_challenge"}]},
+    "verify": {
+      "type": "object", "additionalProperties": false,
+      "required": ["kind", "operation_id", "expected_revision", "challenge_ref", "code"],
+      "properties": {"kind": {"const": "verify_email"}, "operation_id": {"$ref": "#/$defs/operation_id"}, "expected_revision": {"$ref": "#/$defs/revision"}, "challenge_ref": {"$ref": "#/$defs/challenge_ref"}, "code": {"type": "string", "minLength": 8, "maxLength": 8, "pattern": "^[0-9]{8}(?![\\s\\S])"}}
+    },
+    "reconcile_verification": {
+      "type": "object", "additionalProperties": false,
+      "required": ["kind", "operation_id"],
+      "properties": {"kind": {"const": "reconcile_verification"}, "operation_id": {"$ref": "#/$defs/operation_id"}}
+    },
+    "verification_request": {"oneOf": [{"$ref": "#/$defs/verify"}, {"$ref": "#/$defs/reconcile_verification"}]},
+    "challenge_control": {
+      "oneOf": [
+        {"const": {"state": "none"}},
+        {"type": "object", "additionalProperties": false, "required": ["state", "challenge_ref"], "properties": {"state": {"const": "inactive"}, "challenge_ref": {"$ref": "#/$defs/challenge_ref"}}},
+        {"type": "object", "additionalProperties": false, "required": ["state", "challenge_ref", "expires_at", "can_extend"], "properties": {"state": {"const": "active"}, "challenge_ref": {"$ref": "#/$defs/challenge_ref"}, "expires_at": {"$ref": "#/$defs/utc_instant"}, "can_extend": {"type": "boolean"}}}
+      ],
+      "description": "Active describes current eligible unconsumed code authority only, not delivery, verified email, available slots or a booking. Ref/clock/affordance are server assertions requiring actual guards. Inactive has no reason, code, guess count or expired control."
+    },
+    "current_controls": {
+      "oneOf": [
+        {"const": {"state": "unavailable"}},
+        {"type": "object", "additionalProperties": false, "required": ["state", "revision", "challenge"], "properties": {"state": {"const": "known"}, "revision": {"$ref": "#/$defs/revision"}, "challenge": {"$ref": "#/$defs/challenge_control"}}}
+      ],
+      "description": "Separate as-of-read permitted projection, never reconstructed from the historical operation receipt. Unavailable gives no current fact or action grant."
+    },
+    "challenge_applied": {
+      "type": "object", "additionalProperties": false,
+      "required": ["state", "operation_id", "applied_revision", "current"],
+      "properties": {"state": {"const": "applied"}, "operation_id": {"$ref": "#/$defs/operation_id"}, "applied_revision": {"$ref": "#/$defs/revision"}, "current": {"$ref": "#/$defs/current_controls"}}
+    },
+    "challenge_pending": {
+      "type": "object", "additionalProperties": false,
+      "required": ["state", "operation_id", "current"],
+      "properties": {"state": {"const": "pending"}, "operation_id": {"$ref": "#/$defs/operation_id"}, "current": {"$ref": "#/$defs/current_controls"}}
+    },
+    "verification_applied": {"$ref": "booking-qualification.schema.json#/$defs/applied"},
+    "verification_pending": {"$ref": "booking-qualification.schema.json#/$defs/pending"},
+    "verification_rejected": {"const": {"state": "rejected", "code": "VERIFICATION_UNAVAILABLE", "recovery": "refresh_status"}},
+    "error": {
+      "oneOf": [
+        {"const": {"state": "unavailable", "code": "INVALID_REQUEST", "recovery": "correct_request"}},
+        {"const": {"state": "unavailable", "code": "ACCESS_UNAVAILABLE", "recovery": "contact"}},
+        {"const": {"state": "unavailable", "code": "ACTION_DENIED", "recovery": "contact"}},
+        {"const": {"state": "unavailable", "code": "REVISION_CONFLICT", "recovery": "refresh_status"}},
+        {"const": {"state": "unavailable", "code": "OPERATION_CONFLICT", "recovery": "reconcile"}},
+        {"const": {"state": "unavailable", "code": "STATE_CONFLICT", "recovery": "refresh_status"}},
+        {"const": {"state": "unavailable", "code": "RATE_LIMIT", "recovery": "wait"}},
+        {"const": {"state": "unavailable", "code": "CAPACITY_LIMIT", "recovery": "wait"}},
+        {"const": {"state": "unavailable", "code": "SERVICE_UNAVAILABLE", "recovery": "reconcile"}},
+        {"const": {"state": "unavailable", "code": "BODY_TOO_LARGE", "recovery": "correct_request"}},
+        {"const": {"state": "unavailable", "code": "UNSUPPORTED_MEDIA", "recovery": "correct_request"}},
+        {"const": {"state": "unavailable", "code": "HEADER_TOO_LARGE", "recovery": "correct_request"}}
+      ]
+    },
+    "challenge_response": {"oneOf": [{"$ref": "#/$defs/challenge_applied"}, {"$ref": "#/$defs/challenge_pending"}, {"$ref": "#/$defs/error"}]},
+    "verification_response": {"oneOf": [{"$ref": "#/$defs/verification_applied"}, {"$ref": "#/$defs/verification_pending"}, {"$ref": "#/$defs/verification_rejected"}, {"$ref": "#/$defs/error"}]}
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "status": "DOING",
+  "started_at_utc": "2026-10-15T03:17:27.568972+00:00",
+  "source": "output\\research\\test-client-graph-2026-10-09\\pip-report.json",
+  "source_sha256": "e81b7570efc6903d4074151a61cfdca9060c02f5da59236bee353eddb1831462",
+  "source_environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.14.5",
+    "os_name": "nt",
+    "platform_machine": "AMD64",
+    "platform_release": "11",
+    "platform_system": "Windows",
+    "platform_version": "10.0.26300",
+    "python_full_version": "3.14.5",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.14",
+    "sys_platform": "win32"
+  },
+  "analysis_python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "analysis_interpreter": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\test-client-graph-2026-10-09\\native-trial\\environment\\Scripts\\python.exe",
+  "packaging_version": "26.3",
+  "protected_before": {
+    "package.json": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b",
+    "package-lock.json": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908",
+    "apps/web/package.json": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a",
+    "apps/web/package-lock.json": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d",
+    "apps/api/requirements.txt": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd",
+    "apps/api/.venv/pyvenv.cfg": "d23bc586f40b9aa9a601c8af0cab224cd4a40f0544a2f6348e9ad703f4d8ea39"
+  },
+  "free_before": 3649818624,
+  "max_response_bytes": 8388608,
+  "max_raw_total_bytes": 67108864,
+  "free_floor_bytes": 1073741824,
+  "target_scope": "normal GIL-enabled CPython, Windows AMD64, frozen exact versions only",
+  "network": "53 read-only metadata/document GETs; no retry, wheels, resolution or installation"
+}

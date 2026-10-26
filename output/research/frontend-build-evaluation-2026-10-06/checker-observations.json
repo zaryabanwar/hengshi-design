@@ -1,0 +1,92 @@
+{
+  "scope": "actual strict/noEmit candidate source and library checking; no Vite transform/runtime/full graph approval",
+  "node": "v26.10.0",
+  "skipLibCheck": false,
+  "commands": [
+    {
+      "compiler": "api6",
+      "case": "valid",
+      "command": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "started_at_utc": "2026-10-05T22:53:13.242531+00:00",
+      "ended_at_utc": "2026-10-05T22:54:20.334327+00:00",
+      "exit_code": 2,
+      "codes": [
+        2430,
+        2416,
+        2339
+      ],
+      "stdout": "valid-api6.stdout.txt",
+      "stderr": "valid-api6.stderr.txt"
+    },
+    {
+      "compiler": "api6",
+      "case": "invalid",
+      "command": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\tsconfig.invalid.json",
+        "--pretty",
+        "false"
+      ],
+      "started_at_utc": "2026-10-05T22:53:13.245335+00:00",
+      "ended_at_utc": "2026-10-05T22:53:23.981318+00:00",
+      "exit_code": 2,
+      "codes": [
+        2322
+      ],
+      "stdout": "invalid-api6.stdout.txt",
+      "stderr": "invalid-api6.stderr.txt"
+    },
+    {
+      "compiler": "native7",
+      "case": "valid",
+      "command": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\tsconfig.json",
+        "--pretty",
+        "false"
+      ],
+      "started_at_utc": "2026-10-05T22:53:23.981667+00:00",
+      "ended_at_utc": "2026-10-05T22:53:33.065175+00:00",
+      "exit_code": 1,
+      "codes": [
+        2430,
+        2416,
+        2339
+      ],
+      "stdout": "valid-native7.stdout.txt",
+      "stderr": "valid-native7.stderr.txt"
+    },
+    {
+      "compiler": "native7",
+      "case": "invalid",
+      "command": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\tsconfig.invalid.json",
+        "--pretty",
+        "false"
+      ],
+      "started_at_utc": "2026-10-05T22:53:33.065351+00:00",
+      "ended_at_utc": "2026-10-05T22:53:34.849844+00:00",
+      "exit_code": 1,
+      "codes": [
+        2322
+      ],
+      "stdout": "invalid-native7.stdout.txt",
+      "stderr": "invalid-native7.stderr.txt"
+    }
+  ],
+  "lock_unchanged": true
+}

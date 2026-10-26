@@ -1,0 +1,61 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "observed_at_utc": "2026-10-17T14:59:48.419675+00:00",
+  "scope": "Producer synthetic public-boundary tests of read-only research archive inspector only",
+  "command_equivalent": [
+    "C:/Python314/python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "output/research/python315-execution-preparation-2026-10-17",
+    "-p",
+    "test_archive_admission.py",
+    "-v"
+  ],
+  "capture_method": "Existing Python unittest discovery/TextTestRunner saved stdout/stderr before source-observation serialization failed; no subsequent test rerun. Tool output and saved log show15 tests,0 failures/errors/skips,OK.",
+  "interpreter": {
+    "executable": "C:\\Python314\\python.exe",
+    "version": "3.14.5",
+    "machine": "AMD64",
+    "platform": "win32"
+  },
+  "tests_run": 15,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "independent_review": "TODO",
+  "original_failure": "initial/result-v1.json",
+  "capture_failure": "capture-failure-v1.json",
+  "changes_since_initial": [
+    "Reject colon including drive-relative paths.",
+    "Encode actual ZIP backslash fixture after Windows writer normalization.",
+    "Add compressed ZIP/gzip TAR multi-chunk coverage and local ZIP/PAX name bypass cases.",
+    "State immutable borrowed-stream precondition and destination/extraction exclusion."
+  ],
+  "tested_sources": [
+    {
+      "path": "output/research/python315-execution-preparation-2026-10-17/archive_admission.py",
+      "bytes": 10118,
+      "sha256": "a5bf574e937dd31cca9ab16739f74747e64b37eff2daeeed5fe85197b0d2464d"
+    },
+    {
+      "path": "output/research/python315-execution-preparation-2026-10-17/test_archive_admission.py",
+      "bytes": 11667,
+      "sha256": "e8c59093b2fe6545ab1b48312c2178998cf1854ecb4d98d6a433193f2855895e"
+    }
+  ],
+  "output": {
+    "path": "output/research/python315-execution-preparation-2026-10-17/test-output-v1.txt",
+    "bytes": 2833,
+    "sha256": "b2d3b175d136765a4e1a145acfd6853f3b90a74a392cdf33f6b18c62af73f2c4"
+  },
+  "exclusions": [
+    "No network/acquisition, extraction, inspected-package import/execution or Python3.15 runtime trial.",
+    "No new interpreter/build/resolver/install/database/server, app dependency/lock/config or Git action.",
+    "No hard parser CPU/memory bound, stable-file ownership, filesystem containment, safe extraction, full-graph compatibility, security clearance or Phase1 acceptance."
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-24",
+  "batch_result": "APPLIED101_preserved7_Navigation108",
+  "source_sha256": "e8d89d6030f8ee32229b531526b421ef73fbb0af8ed74c533a707906d4524cca",
+  "native_archives": {
+    "before_sha256": "2c88385b2d4f05ca3d5b780d02ef4a14ffd0e8650a14903622f45322c987e92d",
+    "after_sha256": "5d683ee0b22e5bab3ac4ac1f93ff1cb560cc47c37d142f2a1ed37c231babe4d8",
+    "zip_crc": "PASS",
+    "restore_tested": false
+  },
+  "observed_playback_edges": [
+    [
+      "HIGH/HIGH/CLOSED",
+      "Open",
+      "HIGH/HIGH/OPEN"
+    ],
+    [
+      "HIGH/HIGH/OPEN",
+      "choose/LOW",
+      "HIGH/LOW/OPEN"
+    ],
+    [
+      "HIGH/LOW/OPEN",
+      "Escape",
+      "HIGH/LOW/CLOSED"
+    ],
+    [
+      "HIGH/LOW/CLOSED",
+      "Open",
+      "HIGH/LOW/OPEN"
+    ],
+    [
+      "HIGH/LOW/OPEN",
+      "Apply",
+      "LOW/LOW/OPEN"
+    ],
+    [
+      "LOW/LOW/OPEN",
+      "choose/SEMANTIC",
+      "LOW/SEMANTIC/OPEN"
+    ],
+    [
+      "LOW/SEMANTIC/OPEN",
+      "Close",
+      "LOW/SEMANTIC/CLOSED"
+    ],
+    [
+      "LOW/SEMANTIC/CLOSED",
+      "Open",
+      "LOW/SEMANTIC/OPEN"
+    ]
+  ],
+  "captures": [
+    {
+      "path": "01-simplified-pending-detailed-active.jpg",
+      "bytes": 46116,
+      "sha256": "674e8f6f81d5b3a12921eb6ae72f36e8c76674d47881b28557182b90991e4064"
+    },
+    {
+      "path": "02-escape-closes-with-detailed-active.jpg",
+      "bytes": 35736,
+      "sha256": "86b08003d4157736de21d2cbe7dbe8ed1b7d44eb6cd9f337ee9b3e48402d48cf"
+    },
+    {
+      "path": "03-reopen-retains-simplified-pending.jpg",
+      "bytes": 46116,
+      "sha256": "674e8f6f81d5b3a12921eb6ae72f36e8c76674d47881b28557182b90991e4064"
+    },
+    {
+      "path": "04-scrolled-apply-control.jpg",
+      "bytes": 63599,
+      "sha256": "30321331746c49fa566b92e4f7ac668433d85cea3df1d7376e3478d561891ca8"
+    },
+    {
+      "path": "05-apply-simplified-result.jpg",
+      "bytes": 64436,
+      "sha256": "608413650dea548151ccbb57264f4014573f31757639c6a0c0ef7315e504a7c4"
+    },
+    {
+      "path": "06-simplified-active-confirmed.jpg",
+      "bytes": 46396,
+      "sha256": "d0e16bf25084931b9750822653dd2aa900e20fb9469d4b1390e7ee21fb51edf4"
+    },
+    {
+      "path": "07-quick-access-pending-simplified-active.jpg",
+      "bytes": 46415,
+      "sha256": "e85573725ff6333a5121e1195b31ed14af14e659879ea32856e379a55b03b007"
+    },
+    {
+      "path": "08-close-preserves-simplified-active.jpg",
+      "bytes": 35922,
+      "sha256": "af0039cfb6354c25f89fe4c80e3d7f5893552519e14246d142f6bbc160c45662"
+    },
+    {
+      "path": "09-reopen-retains-quick-access-pending.jpg",
+      "bytes": 46415,
+      "sha256": "e85573725ff6333a5121e1195b31ed14af14e659879ea32856e379a55b03b007"
+    }
+  ],
+  "last_observed_player_state": "LOW active / SEMANTIC pending / OPEN, scrolled to Apply. Quick Access has NOT been verified active.",
+  "interruption": "Next Apply click rejected by browser permission check: Local browser use is disabled in Work settings. No result inferred for rejected action.",
+  "review": "Independent reviewer supplied preliminary graph/accounting observations, then errored: workspace out of credits. No final review receipt or verdict.",
+  "limits": [
+    "Eight observed edges in one authored HIGH preview, not all108 edges or all four authored entry flows.",
+    "No exact scroll, focus, full native matching, boundary preserve/reset, restore, accessibility, B01 or Phase1 acceptance.",
+    "Only one use_figma batch attempted; no account, paid, application or Git changes."
+  ]
+}

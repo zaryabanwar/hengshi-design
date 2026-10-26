@@ -1,0 +1,118 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "review_status": "BLOCKED",
+  "verdict": null,
+  "scope": [
+    "Private-record issuance profile proposal dated 2026-10-12 in DATA_CONTRACT.md",
+    "Guarded PostgreSQL transition proposal dated 2026-10-12 in DATA_CONTRACT.md",
+    "Shared PostgreSQL transition reference in INTERFACE_CATALOG.md"
+  ],
+  "review_questions": [
+    "Do issued record IDs, caller operation IDs, public keys and secret credentials retain distinct owners and authorization?",
+    "Does Read Committed eligibility require a complete shared guard and constraint binding, including all competing authorization/revocation writers?",
+    "Are absent inserts and predicate invariants correctly held for reviewed physical/Serializable binding?",
+    "Do conditional revisions, uniqueness, transactional dispatch intents, unknown commit reconciliation and whole-transaction retry preserve the controlling directional contracts?",
+    "Does the finite retry proposal stay within existing admission/resource clocks without retrying authorization denial, conflicting intent or uncertain commit?",
+    "Is non-consented ephemeral chat excluded from durable operations, audit payloads and outbox copies?",
+    "Are proposed mechanisms clearly unadopted, without inherited review PASS, exact version selection or runtime proof?"
+  ],
+  "inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "inputs/01-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "inputs/02-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "snapshot": "inputs/03-DATA_CONTRACT.md",
+      "bytes": 72181,
+      "sha256": "b49bc6ffb726dc02518fdba79e6f406b551f1e250871b0646cd9c58df3659430"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "snapshot": "inputs/04-INTERFACE_CATALOG.md",
+      "bytes": 112231,
+      "sha256": "8ad3c5837a15f634c586337cc5e01795d9ce526f093a9ead984cc67d179d1c7f"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "snapshot": "inputs/05-PRIVATE_PROCESS_PROOF.md",
+      "bytes": 117693,
+      "sha256": "0bf065ae353f1d22c986501c624df46e4057d76ca06f71a35352360ac239a6b7"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "snapshot": "inputs/06-HANDOFF_LIFECYCLE.md",
+      "bytes": 89614,
+      "sha256": "40a3779f56737725bb2c5e5d5a5ee34b44ad27030adc16cc374fdb9b04266a12"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/AVAILABILITY_CONSISTENCY.md",
+      "snapshot": "inputs/07-AVAILABILITY_CONSISTENCY.md",
+      "bytes": 14167,
+      "sha256": "6da0086b9c6ac49c2464f73a61793d410c7e04c1aaec8d83a328b377e5252a03"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/BOOKING_SCHEDULING.md",
+      "snapshot": "inputs/08-BOOKING_SCHEDULING.md",
+      "bytes": 58787,
+      "sha256": "ae85b2fe9f6ff545095e21d96de622fdcb186961c928a59704f86d2bdd4ded33"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "snapshot": "inputs/09-PUBLICATION_CONTRACT.md",
+      "bytes": 88043,
+      "sha256": "9803368522b960485b6f31994d8b6a0c79783c68fe0fc18fcc4675afb08e83d7"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/process-value.schema.json",
+      "snapshot": "inputs/10-process-value.schema.json",
+      "bytes": 1494,
+      "sha256": "b4fd9fc84f322ecb6743c00244f3731ccd612861de53056aaddb20a377a67a95"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/data-entities.csv",
+      "snapshot": "inputs/11-data-entities.csv",
+      "bytes": 8956,
+      "sha256": "ec55f41329d521c36014e8e77b863013a7c0a24a6917706767f59f9227525e64"
+    }
+  ],
+  "sources_checked_2026_10_12": [
+    "https://www.rfc-editor.org/rfc/rfc9562.html#section-5.4",
+    "https://www.rfc-editor.org/rfc/rfc9562.html#section-8",
+    "https://docs.python.org/3/library/uuid.html#uuid.uuid4",
+    "https://www.postgresql.org/docs/18/transaction-iso.html",
+    "https://www.postgresql.org/docs/18/explicit-locking.html",
+    "https://www.postgresql.org/docs/18/mvcc-serialization-failure-handling.html",
+    "https://docs.sqlalchemy.org/en/20/orm/versioning.html",
+    "https://docs.sqlalchemy.org/en/20/orm/session_basics.html#is-the-session-thread-safe-is-asyncsession-safe-to-share-in-concurrent-tasks"
+  ],
+  "context7_queries": {
+    "date": "2026-10-12",
+    "libraries": [
+      "/python/cpython",
+      "/websites/sqlalchemy_en_20"
+    ],
+    "use": "Standard-library UUID issuance and SQLAlchemy transaction/session limitations; no exact graph selection"
+  },
+  "hold": {
+    "reason": "Existing authorized reviewer reports terminal workspace-credit error; no verdict or restored capacity",
+    "assigned": false,
+    "no_review_self_approval": true,
+    "no_automatic_retry": true
+  },
+  "limits": [
+    "Snapshots verify input bytes only",
+    "No application, database or provider changes",
+    "No production dependency selection or installation",
+    "No runtime, concurrency, entropy, security, accessibility or integrated/founder acceptance proof"
+  ]
+}

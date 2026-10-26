@@ -1,0 +1,382 @@
+[
+  {
+    "seconds": 0.096513,
+    "direction": "client",
+    "message": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "initialize",
+      "params": {
+        "processId": 3360,
+        "clientInfo": {
+          "name": "Hengshi isolated compatibility probe",
+          "version": "1"
+        },
+        "rootUri": "file:///C:/Users/Zaryab/Documents/Hengshi%20Design/hengshi-design/output/research/typescript-react-parity-2026-10-06",
+        "workspaceFolders": [
+          {
+            "uri": "file:///C:/Users/Zaryab/Documents/Hengshi%20Design/hengshi-design/output/research/typescript-react-parity-2026-10-06",
+            "name": "synthetic-react-fixtures"
+          }
+        ],
+        "capabilities": {
+          "general": {
+            "positionEncodings": [
+              "utf-16"
+            ]
+          },
+          "workspace": {
+            "diagnostics": {
+              "refreshSupport": true
+            }
+          },
+          "textDocument": {
+            "diagnostic": {
+              "dynamicRegistration": false,
+              "relatedDocumentSupport": false
+            },
+            "synchronization": {
+              "dynamicRegistration": false
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "seconds": 0.098261,
+    "direction": "server",
+    "message": {
+      "jsonrpc": "2.0",
+      "method": "window/logMessage",
+      "params": {
+        "type": 3,
+        "message": "Resolved client capabilities: {\n\t\"workspace\": {\n\t\t\"diagnostics\": {\n\t\t\t\"refreshSupport\": true\n\t\t}\n\t},\n\t\"general\": {\n\t\t\"positionEncodings\": [\n\t\t\t\"utf-16\"\n\t\t]\n\t}\n}"
+      }
+    }
+  },
+  {
+    "seconds": 0.098726,
+    "direction": "server",
+    "message": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+        "capabilities": {
+          "positionEncoding": "utf-16",
+          "textDocumentSync": {
+            "openClose": true,
+            "change": 2,
+            "save": true
+          },
+          "completionProvider": {
+            "triggerCharacters": [
+              ".",
+              "\"",
+              "'",
+              "`",
+              "/",
+              "@",
+              "<",
+              "#",
+              " ",
+              "*"
+            ],
+            "resolveProvider": true,
+            "completionItem": {
+              "labelDetailsSupport": true
+            }
+          },
+          "hoverProvider": true,
+          "signatureHelpProvider": {
+            "triggerCharacters": [
+              "(",
+              ",",
+              "<"
+            ],
+            "retriggerCharacters": [
+              ")"
+            ]
+          },
+          "definitionProvider": true,
+          "typeDefinitionProvider": true,
+          "implementationProvider": true,
+          "referencesProvider": true,
+          "documentHighlightProvider": true,
+          "documentSymbolProvider": true,
+          "codeActionProvider": {
+            "codeActionKinds": [
+              "quickfix",
+              "source.organizeImports",
+              "source.removeUnusedImports",
+              "source.sortImports",
+              "source.fixAll"
+            ]
+          },
+          "codeLensProvider": {
+            "resolveProvider": true
+          },
+          "workspaceSymbolProvider": true,
+          "documentFormattingProvider": true,
+          "documentRangeFormattingProvider": true,
+          "documentOnTypeFormattingProvider": {
+            "firstTriggerCharacter": "{",
+            "moreTriggerCharacter": [
+              "}",
+              ";",
+              "\n"
+            ]
+          },
+          "renameProvider": {
+            "prepareProvider": true
+          },
+          "foldingRangeProvider": true,
+          "selectionRangeProvider": true,
+          "callHierarchyProvider": true,
+          "linkedEditingRangeProvider": true,
+          "semanticTokensProvider": {
+            "legend": {
+              "tokenTypes": [],
+              "tokenModifiers": []
+            },
+            "range": true,
+            "full": true
+          },
+          "inlayHintProvider": true,
+          "diagnosticProvider": {
+            "identifier": "typescript",
+            "interFileDependencies": true,
+            "workspaceDiagnostics": false
+          },
+          "workspace": {
+            "fileOperations": {
+              "willRename": {
+                "filters": [
+                  {
+                    "scheme": "file",
+                    "pattern": {
+                      "glob": "**/*.{ts,tsx,js,jsx,cts,cjs,mts,mjs,json}"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "experimental": {
+            "customSourceDefinitionProvider": true,
+            "customMultiDocumentHighlightProvider": true
+          },
+          "_vs_onAutoInsertProvider": {
+            "_vs_triggerCharacters": [
+              ">"
+            ]
+          },
+          "_vs_referencesProvider": true
+        },
+        "serverInfo": {
+          "name": "typescript-go",
+          "version": "7.0.2"
+        }
+      }
+    }
+  },
+  {
+    "seconds": 0.098761,
+    "direction": "client",
+    "message": {
+      "jsonrpc": "2.0",
+      "method": "initialized",
+      "params": {}
+    }
+  },
+  {
+    "seconds": 0.099139,
+    "direction": "server",
+    "message": {
+      "jsonrpc": "2.0",
+      "method": "window/logMessage",
+      "params": {
+        "type": 3,
+        "message": "file watching: using builtin in-process watcher (client lacks dynamic watch registration)"
+      }
+    }
+  },
+  {
+    "seconds": 0.099305,
+    "direction": "server",
+    "message": {
+      "jsonrpc": "2.0",
+      "id": "ts1",
+      "method": "client/registerCapability",
+      "params": {
+        "registrations": [
+          {
+            "id": "typescript-config-watch-id",
+            "method": "workspace/didChangeConfiguration",
+            "registerOptions": {
+              "section": [
+                "js/ts",
+                "typescript",
+                "javascript",
+                "editor"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "seconds": 0.099434,
+    "direction": "client",
+    "message": {
+      "jsonrpc": "2.0",
+      "method": "textDocument/didOpen",
+      "params": {
+        "textDocument": {
+          "uri": "file:///C:/Users/Zaryab/Documents/Hengshi%20Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/fixture.tsx",
+          "languageId": "typescriptreact",
+          "version": 1,
+          "text": "import { useRef, useState } from \"react\";\nimport { createRoot } from \"react-dom/client\";\nfunction Counter({initial}: {initial: number}) {\n const [count, setCount] = useState(initial);\n const ref = useRef<HTMLButtonElement | null>(null);\n return <button ref={ref} onClick={event => { event.currentTarget.disabled = true; setCount(count + 1); }}>{count}</button>;\n}\ncreateRoot(document.createElement(\"div\")).render(<Counter initial={0} />);\n"
+        }
+      }
+    }
+  },
+  {
+    "seconds": 0.099494,
+    "direction": "client",
+    "message": {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "method": "textDocument/diagnostic",
+      "params": {
+        "textDocument": {
+          "uri": "file:///C:/Users/Zaryab/Documents/Hengshi%20Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/fixture.tsx"
+        },
+        "identifier": "typescript"
+      }
+    }
+  },
+  {
+    "seconds": 0.099527,
+    "direction": "client",
+    "message": {
+      "jsonrpc": "2.0",
+      "id": "ts1",
+      "error": {
+        "code": -32601,
+        "message": "Not supported by finite probe client"
+      }
+    }
+  },
+  {
+    "seconds": 0.099881,
+    "direction": "server",
+    "message": {
+      "jsonrpc": "2.0",
+      "method": "window/logMessage",
+      "params": {
+        "type": 1,
+        "message": "error handling method 'initialized': failed to register configuration change watcher: request failed: [-32601]: Not supported by finite probe client"
+      }
+    }
+  },
+  {
+    "seconds": 0.099932,
+    "direction": "server",
+    "message": {
+      "jsonrpc": "2.0",
+      "method": "window/logMessage",
+      "params": {
+        "type": 1,
+        "message": "error handling notification: failed to register configuration change watcher: request failed: [-32601]: Not supported by finite probe client"
+      }
+    }
+  },
+  {
+    "seconds": 0.099946,
+    "direction": "server",
+    "message": {
+      "jsonrpc": "2.0",
+      "method": "window/logMessage",
+      "params": {
+        "type": 3,
+        "message": "Processed 1 file changes in 0s"
+      }
+    }
+  },
+  {
+    "seconds": 0.100769,
+    "direction": "client",
+    "message": {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "method": "shutdown"
+    }
+  },
+  {
+    "seconds": 0.169449,
+    "direction": "server",
+    "message": {
+      "jsonrpc": "2.0",
+      "method": "window/logMessage",
+      "params": {
+        "type": 3,
+        "message": "handled method 'textDocument/didOpen' in 69.8342ms"
+      }
+    }
+  },
+  {
+    "seconds": 0.169554,
+    "direction": "server",
+    "message": {
+      "jsonrpc": "2.0",
+      "method": "window/logMessage",
+      "params": {
+        "type": 3,
+        "message": "Adopted snapshot 1 (parent 0) as current session snapshot (replacing 0)"
+      }
+    }
+  },
+  {
+    "seconds": 0.169945,
+    "direction": "server",
+    "message": {
+      "jsonrpc": "2.0",
+      "method": "window/logMessage",
+      "params": {
+        "type": 3,
+        "message": "Adopted snapshot 2 (parent 1) as current session snapshot (replacing 1)"
+      }
+    }
+  },
+  {
+    "seconds": 0.169976,
+    "direction": "server",
+    "message": {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "result": null
+    }
+  },
+  {
+    "seconds": 0.169986,
+    "direction": "server",
+    "message": {
+      "jsonrpc": "2.0",
+      "method": "window/logMessage",
+      "params": {
+        "type": 3,
+        "message": "handled method 'shutdown' (3) in 0s"
+      }
+    }
+  },
+  {
+    "seconds": 0.170014,
+    "direction": "client",
+    "message": {
+      "jsonrpc": "2.0",
+      "method": "exit"
+    }
+  }
+]

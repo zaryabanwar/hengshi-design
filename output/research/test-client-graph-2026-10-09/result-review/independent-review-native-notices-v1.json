@@ -1,0 +1,48 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "review_decision": "PASS",
+  "reviewer": "/root/review_native_backend_result_v1",
+  "review_date": "2026-10-09",
+  "authorization": "Founder explicitly approved the isolated 48-package trial and one read-only results/notice review: Approve trial and results review.",
+  "manifest_path": "output/research/test-client-graph-2026-10-09/result-review/review-inputs.json",
+  "manifest_sha256": "3a03baaab1d179ea18b72a5dbe149eb9a21dea33050fc853353082dc7c51aa00",
+  "input_count": 299,
+  "all_manifest_hashes_and_lengths_match": true,
+  "scope": "Static independent review of the exact new 48-package library-coupling execution evidence, saved wheel-notice discovery inventory, actual execution helpers and two-document result amendments. Earlier reviews retain their frozen scopes; this receipt does not grant production selection or integrated acceptance.",
+  "findings": [],
+  "verified": [
+    {
+      "evidence": "run_native_trial.py, run_probes.py, execution-preparation.json, qualification-plan.json, native-trial/authorization.json, candidate-hashed-requirements.txt",
+      "conclusion": "The actual helper bytes match the saved execution-preparation hashes. Separate founder authorization records 48 packages and agrees with the unchanged reviewed plan, pinned requirements and original probe identities. Helpers target a new pip-less isolated environment, refuse existing targets, require protected input identities and disk admission, use exact binary/hash downloads and offline no-dependency installation, disable bytecode and automatic pytest plugins/cache, preserve command failures and perform no automatic cleanup. The prospective plan's execution_authorized false remains preserved rather than retroactively edited."
+    },
+    {
+      "evidence": "native-trial/wheelhouse, native-trial/wheel-inspection.json, closure-observations.json, result-review/installed-metadata, native-trial/installed-identities.json",
+      "conclusion": "All 48 actual wheel hashes and compressed lengths match the frozen identities. Independent data inspection verifies every archive's CRC, unique safe member paths and exact embedded Name/Version metadata. Declared expanded bytes sum to 63,211,044 and match the inspection inventory. Forty-eight normalized installed identities match exactly without collisions, missing packages or extras; frozen installed METADATA snapshots equal current isolated-environment metadata byte-for-byte and also match wheel metadata. No candidate module was imported by this reviewer."
+    },
+    {
+      "evidence": "run_probes.py:8-34, native-trial/warning-filter-admission.json, native-trial/commands.json, native-trial/07-library-probes.stdout.txt, native-trial/library-probes.xml, unchanged original test_libraries.py, test_client_coexistence.py",
+      "conclusion": "The helper initializes Authlib's deprecation module before installing and exercising both error filters, then supplies both category-specific error filters to pytest. Its admission receipt is explicitly a synthetic filter check, not a natural fallback test. Actual command arguments include both reviewed probe files and the required async plugin; recorded stdout reports 18 passed, no warning summary, and empty stderr. JUnit has exactly the 14 unchanged original cases plus the four reviewed ownership/exception/lifecycle cases, with zero failures/errors/skips. Scope claims accurately remain synthetic library boundaries, including unconfigured Authlib HTTPX2 ownership/context exit and joserfc decoder import."
+    },
+    {
+      "evidence": "native-trial/installation-admission.json, native-trial/commands.json, native-trial/receipt.json, native-trial/05-pip-check.stdout.txt, native-trial/08-native-libpq-identity.stdout.txt",
+      "conclusion": "Admission arithmetic is correct: 19,208,207 retained bytes plus twice 63,211,044 expanded bytes plus 67,108,864 allowance equals 212,739,159 bytes, within 268,435,456. Admission free space covers the 1,073,741,824 floor plus the remaining reservation. All eight recorded commands have zero exit, elapsed time below 180 seconds, empty stderr and before/after budget/floor compliance. Final recorded 84,080,658 retained bytes and 5,271,166,976 free bytes agree with the appendix. Pip check reports no broken requirements; Psycopg records binary implementation and build/runtime libpq 180004 without a connection. This is boundary admission evidence, not an OS hard quota or current-space assertion."
+    },
+    {
+      "evidence": "backend-wheel-notice-inventory-2026-10-09/observations.json, all 48 preserved wheel sources, 48 METADATA files and 60 saved discovered files",
+      "conclusion": "Each inventory wheel source independently reproduces the executed wheel bytes and frozen identity. Metadata licence expression/text declarations agree with exact saved archive metadata. Independently replayed name/path discovery produces precisely all 60 saved members; each full saved byte sequence, length, hash and destination path matches its archive member. Every declared License-File path has exactly one matching archive path; no package lacks a discovered file. Binary-member lists match actual archive paths for the reported 11 packages. No undisclosed extra saved discovery files were found. Hash/CRC equality supports inventory accuracy, not publisher authenticity or legal applicability."
+    },
+    {
+      "evidence": "result-review/backend.before.md, result-review/backend-appendix.md, result-review/backend.proposed.md, result-review/README.before.md, result-review/README.proposed.md, canonical backend evidence and compatibility README, earlier 43-package command/receipt inputs",
+      "conclusion": "Backend result proposal is exactly preserved prior bytes plus the appendix. README result proposal is one bounded insertion preserving all prior bytes. Both canonical documents equal their frozen result proposals. All six protected input identities remain unchanged at inspection. Earlier 43-package failure, correction, results and review evidence remain preserved as separate inputs; new commands do not target or reuse that prior trial environment. Later references/results are explicitly outside the earlier 47-input proposal PASS. The appendices distinguish scoped observed qualification from complete licence/provenance, newest-compatible graph/locks, production selection and founder/integrated gates."
+    }
+  ],
+  "limits": [
+    "Reviewer performed static source/data inspection only. No producer, resolver, probe, candidate package or native environment was executed/imported; no installation, network, application, runtime, Figma, provider, account, model, Git or delegated action was performed.",
+    "Passing synthetic library coupling does not prove actual Hengshi API/identity/session authorization, OAuth/OIDC callbacks, PKCE/nonce/ID-token/JWKS validation, TLS or OS trust, PostgreSQL connections/transactions, concurrency, load, recovery or deployment.",
+    "Warning-filter admission tests effective error filters with caught synthetic warnings; it does not exercise a missing-HTTPX2 natural fallback, every future warning path or all consumers' migration.",
+    "The 60-member inventory follows a declared filename/path discovery heuristic and includes source/data files found under licence paths. Completeness is limited to that discovered set and unique declared paths, not every embedded notice or linked/bundled/transitive library. No legal interpretation, redistribution applicability, delivered-release attribution or full licence clearance follows.",
+    "Registry metadata, hashes, ZIP CRC, saved text and source/tag agreement do not verify cryptographic publisher/build provenance or advisories. Complete newest-compatible stable graph/platform qualification, reproducible production locks and integrated/founder adoption remain separate.",
+    "PASS covers the exact 299-input result/inventory packet and bounded claims only; it does not alter earlier frozen review scopes, select production dependencies, authorize application upgrades or satisfy code completion/commit or full Phase 1 acceptance."
+  ]
+}

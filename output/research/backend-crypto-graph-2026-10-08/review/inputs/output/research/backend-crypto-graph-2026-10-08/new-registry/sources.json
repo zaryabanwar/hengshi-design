@@ -1,0 +1,39 @@
+{
+  "status": "DOING",
+  "sources": [
+    {
+      "name": "cryptography",
+      "version": "50.0.2",
+      "url": "https://pypi.org/pypi/cryptography/50.0.2/json",
+      "status": 200,
+      "observed_at": "2026-10-08T18:20:25.935110+00:00",
+      "raw_bytes": 57201,
+      "raw_sha256": "7423990cc0948676ef47a71ea62a476ece4c76245e6bebd1c3a71f03c4ffc0f4",
+      "snapshot": "output/research/backend-crypto-graph-2026-10-08/new-registry/cryptography-exact.json.gz",
+      "snapshot_sha256": "2e5496982ca7d0d71604180a3d896d1858a7cb516247aae0338adc017c73951d"
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "url": "https://pypi.org/pypi/cffi/2.1.1/json",
+      "status": 200,
+      "observed_at": "2026-10-08T18:20:26.050336+00:00",
+      "raw_bytes": 89333,
+      "raw_sha256": "2255e530e3f80593a354e3d84a29966924d0e10309d1e3a6d50f845ab7d8df66",
+      "snapshot": "output/research/backend-crypto-graph-2026-10-08/new-registry/cffi-exact.json.gz",
+      "snapshot_sha256": "fc3b2953a29914952a976314140a5473eddb681675f49669b6ac74df6a202fad"
+    },
+    {
+      "name": "pycparser",
+      "version": "3.1",
+      "url": "https://pypi.org/pypi/pycparser/3.1/json",
+      "status": 200,
+      "observed_at": "2026-10-08T18:20:25.724634+00:00",
+      "raw_bytes": 10554,
+      "raw_sha256": "33ae31b13a9d7f7bd7e78768ed8c67e1c49109937bfe727a09bcc06fb39d4b97",
+      "snapshot": "output/research/backend-crypto-graph-2026-10-08/new-registry/pycparser-exact.json.gz",
+      "snapshot_sha256": "0a72737e3a04115439b03c883d7b74ad22f1dc4f90c8c0595ca30e3ff4937322"
+    }
+  ],
+  "scope": "Exact selected release metadata only; no registry-wide latest or source attestation claim"
+}

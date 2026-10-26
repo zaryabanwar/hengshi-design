@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed internal public text projection v1",
+  "description": "Preparation input representation only, not a new publication artifact or complete website document. Nested array ceilings reuse the proposed 1024-passage bundle limit; they do not enforce the aggregate inventory, encoded-byte/parser/work profile, key uniqueness, valid nonblank scalar text, exclusion, source binding, rights or approval. Hold rather than truncate. No safe output or grounded answer follows from shape.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "title", "sections"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "title": {"$ref": "#/$defs/label"},
+    "sections": {"type": "array", "minItems": 1, "maxItems": 1024, "uniqueItems": true, "items": {"$ref": "#/$defs/section"}}
+  },
+  "$defs": {
+    "label": {"type": "string", "minLength": 1, "maxLength": 160},
+    "section": {
+      "type": "object", "additionalProperties": false,
+      "required": ["section_key", "heading", "units"],
+      "properties": {
+        "section_key": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+        "heading": {"$ref": "#/$defs/label"},
+        "units": {"type": "array", "minItems": 1, "maxItems": 1024, "uniqueItems": true, "items": {"$ref": "#/$defs/unit"}}
+      }
+    },
+    "unit": {
+      "type": "object", "additionalProperties": false,
+      "required": ["unit_key", "text"],
+      "properties": {
+        "unit_key": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+        "text": {"type": "string", "minLength": 1, "maxLength": 4096}
+      }
+    }
+  }
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "expected": {
+      "symbol": "H_OPEN_H",
+      "id": "85:3301",
+      "x": 1160,
+      "y": 1230,
+      "active": "HIGH",
+      "pending": "HIGH",
+      "directory": "OPEN"
+    },
+    "observed": {
+      "x": 1160,
+      "y": 1230,
+      "width": 320,
+      "height": 1150,
+      "active": "HIGH",
+      "pending": "HIGH",
+      "directory": "OPEN"
+    },
+    "pass": true
+  },
+  {
+    "expected": {
+      "symbol": "H_CLOSED_H",
+      "id": "85:3280",
+      "x": 780,
+      "y": 1230,
+      "active": "HIGH",
+      "pending": "HIGH",
+      "directory": "CLOSED"
+    },
+    "observed": {
+      "x": 780,
+      "y": 1230,
+      "width": 320,
+      "height": 1150,
+      "active": "HIGH",
+      "pending": "HIGH",
+      "directory": "CLOSED"
+    },
+    "pass": true
+  },
+  {
+    "expected": {
+      "symbol": "M_CLOSED_H",
+      "id": "85:3259",
+      "x": 400,
+      "y": 1230,
+      "active": "MEDIUM",
+      "pending": "HIGH",
+      "directory": "CLOSED"
+    },
+    "observed": {
+      "x": 400,
+      "y": 1230,
+      "width": 320,
+      "height": 1150,
+      "active": "MEDIUM",
+      "pending": "HIGH",
+      "directory": "CLOSED"
+    },
+    "pass": true
+  },
+  {
+    "expected": {
+      "symbol": "M_OPEN_H",
+      "id": "85:3238",
+      "x": 20,
+      "y": 1230,
+      "active": "MEDIUM",
+      "pending": "HIGH",
+      "directory": "OPEN"
+    },
+    "observed": {
+      "x": 20,
+      "y": 1230,
+      "width": 320,
+      "height": 1150,
+      "active": "MEDIUM",
+      "pending": "HIGH",
+      "directory": "OPEN"
+    },
+    "pass": true
+  },
+  {
+    "expected": {
+      "symbol": "M_OPEN_M",
+      "id": "85:3217",
+      "x": 1160,
+      "y": 20,
+      "active": "MEDIUM",
+      "pending": "MEDIUM",
+      "directory": "OPEN"
+    },
+    "observed": {
+      "x": 1160,
+      "y": 20,
+      "width": 320,
+      "height": 1150,
+      "active": "MEDIUM",
+      "pending": "MEDIUM",
+      "directory": "OPEN"
+    },
+    "pass": true
+  },
+  {
+    "expected": {
+      "symbol": "M_CLOSED_M",
+      "id": "85:3196",
+      "x": 780,
+      "y": 20,
+      "active": "MEDIUM",
+      "pending": "MEDIUM",
+      "directory": "CLOSED"
+    },
+    "observed": {
+      "x": 780,
+      "y": 20,
+      "width": 320,
+      "height": 1150,
+      "active": "MEDIUM",
+      "pending": "MEDIUM",
+      "directory": "CLOSED"
+    },
+    "pass": true
+  },
+  {
+    "expected": {
+      "symbol": "H_CLOSED_M",
+      "id": "85:3175",
+      "x": 400,
+      "y": 20,
+      "active": "HIGH",
+      "pending": "MEDIUM",
+      "directory": "CLOSED"
+    },
+    "observed": {
+      "x": 400,
+      "y": 20,
+      "width": 320,
+      "height": 1150,
+      "active": "HIGH",
+      "pending": "MEDIUM",
+      "directory": "CLOSED"
+    },
+    "pass": true
+  },
+  {
+    "expected": {
+      "symbol": "H_OPEN_M",
+      "id": "85:3173",
+      "x": 20,
+      "y": 20,
+      "active": "HIGH",
+      "pending": "MEDIUM",
+      "directory": "OPEN"
+    },
+    "observed": {
+      "x": 20,
+      "y": 20,
+      "width": 320,
+      "height": 1150,
+      "active": "HIGH",
+      "pending": "MEDIUM",
+      "directory": "OPEN"
+    },
+    "pass": true
+  }
+]

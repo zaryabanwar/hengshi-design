@@ -1,0 +1,20 @@
+test_bootstrap_admits_only_explicit_phase (scripts.validation.test_booking_creation_request_schema.BookingCreationRequestShapeTests.test_bootstrap_admits_only_explicit_phase) ... ok
+test_closed_phases_and_root_types (scripts.validation.test_booking_creation_request_schema.BookingCreationRequestShapeTests.test_closed_phases_and_root_types) ... ok
+test_create_does_not_accept_private_or_server_fields (scripts.validation.test_booking_creation_request_schema.BookingCreationRequestShapeTests.test_create_does_not_accept_private_or_server_fields) ... ok
+test_create_requires_all_nonsecret_references (scripts.validation.test_booking_creation_request_schema.BookingCreationRequestShapeTests.test_create_requires_all_nonsecret_references) ... ok
+test_operation_uuid_version_and_variant_are_specific (scripts.validation.test_booking_creation_request_schema.BookingCreationRequestShapeTests.test_operation_uuid_version_and_variant_are_specific) ... ok
+test_references_reject_coercion_and_noncanonical_text (scripts.validation.test_booking_creation_request_schema.BookingCreationRequestShapeTests.test_references_reject_coercion_and_noncanonical_text) ... ok
+test_shape_does_not_establish_allocation_or_distinct_identity (scripts.validation.test_booking_creation_request_schema.BookingCreationRequestShapeTests.test_shape_does_not_establish_allocation_or_distinct_identity) ... ok
+test_unregistered_reference_cannot_fetch_a_remote_schema (scripts.validation.test_booking_creation_request_schema.BookingCreationRequestShapeTests.test_unregistered_reference_cannot_fetch_a_remote_schema) ... ok
+test_digest_representation (scripts.validation.test_process_value_schema.ProcessValueShapeTests.test_digest_representation) ... ok
+test_integer_shape_is_not_raw_token_validation (scripts.validation.test_process_value_schema.ProcessValueShapeTests.test_integer_shape_is_not_raw_token_validation) ... ok
+test_module_is_not_an_envelope (scripts.validation.test_process_value_schema.ProcessValueShapeTests.test_module_is_not_an_envelope) ... ok
+test_revision_boundaries (scripts.validation.test_process_value_schema.ProcessValueShapeTests.test_revision_boundaries) ... ok
+test_unregistered_reference_is_denied (scripts.validation.test_process_value_schema.ProcessValueShapeTests.test_unregistered_reference_is_denied) ... ok
+test_uuid_representation (scripts.validation.test_process_value_schema.ProcessValueShapeTests.test_uuid_representation) ... ok
+test_uuid_shape_does_not_prove_allocation_or_generation (scripts.validation.test_process_value_schema.ProcessValueShapeTests.test_uuid_shape_does_not_prove_allocation_or_generation) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.978s
+
+OK

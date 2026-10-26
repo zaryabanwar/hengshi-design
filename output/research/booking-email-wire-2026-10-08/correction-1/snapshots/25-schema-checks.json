@@ -1,0 +1,26 @@
+{
+  "scope": "Schema/validator boundary only; no application or deployed dependency selection",
+  "command": "C:/Python314/python.exe -B -m unittest scripts.validation.test_booking_email_schema scripts.validation.test_booking_qualification_schema scripts.validation.test_process_value_schema scripts.validation.test_booking_creation_request_schema scripts.validation.test_chat_creation_request_schema",
+  "observation": "Producer command output chunk f14243",
+  "result": "PASS",
+  "methods": 52,
+  "new_email_methods": 15,
+  "initial_pre_freeze_defect": "Wrong local $defs/revision reference corrected to existing $defs/positive_revision; uppercase-negative fixture now contains alphabetic hex.",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "jsonschema": "4.23.0",
+    "referencing": "0.37.0",
+    "rfc3339-validator": "0.1.4"
+  },
+  "format_assertions": [
+    "uuid",
+    "date-time"
+  ],
+  "registry_retrieval": "Unregistered schemas refused; local closure only",
+  "source": "https://json-schema.org/draft/2020-12/json-schema-validation#section-7",
+  "checked": "2026-10-08",
+  "limits": [
+    "No raw-parser/HTTP/auth/clocks/counters/secret-store/mail/current-projection runtime proof",
+    "No integrated acceptance or full production graph selection"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "status": "DOING",
+  "scope": "Research-only coupled graph evaluation adding the crypto extra to existing PyJWT family; no identity adapter, production selection or installation",
+  "basis_report": "output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/pip-report.json",
+  "basis_report_sha256": "3eb5c2228d8710232e06eab5864d5cfaa9ac351cacb213d2878be01521c077c8",
+  "direct_change": {
+    "from": "pyjwt==2.15.1",
+    "to": "pyjwt[crypto]==2.15.1"
+  },
+  "root_requirements_sha256": "8f0cb8e6285e45f336e00681261ba9debc37a762bc68035bdfdc7f4a01caf45d",
+  "protected_inputs_before": {
+    "package.json": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b",
+    "package-lock.json": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908",
+    "apps/web/package.json": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a",
+    "apps/web/package-lock.json": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d",
+    "apps/api/requirements.txt": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd",
+    "apps/api/.venv/pyvenv.cfg": "d23bc586f40b9aa9a601c8af0cab224cd4a40f0544a2f6348e9ad703f4d8ea39"
+  },
+  "official_pyjwt_source": "https://github.com/jpadilla/pyjwt/blob/2.15.1/docs/installation.rst",
+  "context7_library": "/jpadilla/pyjwt/2.15.1",
+  "requires_dist_crypto": "cryptography>=3.4.0; extra == \"crypto\"",
+  "limits": "Asymmetric primitives alone are not a complete OIDC/PKCE client or Entra sign-in, live configuration or access validation"
+}

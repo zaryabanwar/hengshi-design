@@ -1,0 +1,30 @@
+{
+  "result": "PASS",
+  "correction": 1,
+  "reviewer": "/root/review_directory_references_v1",
+  "scope": "Proposed IF-BOOK-02 directional shape, control/HTTP/numeric profile; no application or wire freeze",
+  "input_manifest": "output/research/booking-qualification-wire-2026-10-08/correction-1/review-inputs.json",
+  "input_manifest_sha256": "c3937568555de488e18b9907d12acdf8f9e4c6640743b56c353ea9ac8c849020",
+  "catalogue_sha256": "b86c2c3a56028b9c7e928e131ca7a06e818853f2c9a5a7ad9e4eb1e2164c5497",
+  "findings_closed": [
+    "QW01",
+    "QW02"
+  ],
+  "independent_evidence": {
+    "initial_final_matching_live_snapshot_pairs": 39,
+    "unchanged_other_initial_inputs": 35,
+    "unchanged_prior_prefix_bytes": 51824,
+    "reserved_mailbox_observations_reproduced": 17,
+    "network_delivery_checks": "None",
+    "previous_schema_validator_methods_passed": 37,
+    "schema_tests_repeated": false
+  },
+  "limits": [
+    "Definition consistency and installed-library observations only",
+    "Wire freeze and implementation mechanisms remain held",
+    "No runtime enforcement or full production graph proof",
+    "Integrated review and founder acceptance remain required"
+  ],
+  "application_changes": false,
+  "commits_pushes": false
+}

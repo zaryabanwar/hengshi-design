@@ -1,0 +1,208 @@
+{
+  "product": "v1",
+  "status": "DOING",
+  "observed_utc": "2026-10-04T20:28:05.6959032Z",
+  "purpose": "Read-only semantic preparation candidate observations; not a resolved graph or production selection",
+  "production_selection": null,
+  "context7": [
+    "/websites/reactrouter",
+    "/vitejs/vite"
+  ],
+  "packages": [
+    {
+      "name": "react-router",
+      "version": "8.4.0",
+      "source": "https://registry.npmjs.org/react-router/8.4.0",
+      "engines": {
+        "node": ">=22.22.0"
+      },
+      "dependencies": {
+        "cookie-es": "^3.1.1",
+        "@remix-run/route-pattern": "^0.22.1"
+      },
+      "peerDependencies": {
+        "react": ">=19.2.7",
+        "react-dom": ">=19.2.7"
+      },
+      "peerDependenciesMeta": {
+        "react-dom": {
+          "optional": true
+        }
+      },
+      "dist": {
+        "shasum": "fa3c0ba58555cfb120a9ed8042518e374000fb4b",
+        "tarball": "https://registry.npmjs.org/react-router/-/react-router-8.4.0.tgz",
+        "fileCount": 336,
+        "integrity": "sha512-JtydAkBvU9UTEe5qNC+POhu+ZBNM7rlKY2IegwXc7Idj7xfRG16x5RZrw3mju+XlqBxfvb2ky9P3jUp9WyWC1g==",
+        "signatures": [
+          {
+            "sig": "MEQCIA9xpWfgQPiVmDZUFTlJqsFsH14P0nZwziCduViEUDByAiBTqJrfRJzbSXAcsYSECbw1daUEykQRx6/tW0obd3I06g==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIQDMwxkSfM2dfw06CWsT7WorkjpEdMzavv+aygTsslXczQIgG/guMkwc9uuoopELYm24qvUBehE4aTPHWZDzjl+mu+8=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/react-router@8.4.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 2856262
+      }
+    },
+    {
+      "name": "@react-router/dev",
+      "version": "8.4.0",
+      "source": "https://registry.npmjs.org/@react-router/dev/8.4.0",
+      "engines": {
+        "node": ">=22.22.0"
+      },
+      "dependencies": {
+        "isbot": "^5.1.40",
+        "jsesc": "3.1.0",
+        "p-map": "^7.0.4",
+        "pathe": "^2.0.3",
+        "dedent": "^1.7.2",
+        "lodash": "^4.18.1",
+        "semver": "^7.8.1",
+        "valibot": "^1.4.1",
+        "chokidar": "^5.0.0",
+        "exit-hook": "5.1.0",
+        "pkg-types": "^2.3.1",
+        "picocolors": "^1.1.1",
+        "tinyglobby": "^0.2.16",
+        "@babel/core": "^7.29.7",
+        "@babel/types": "^7.29.7",
+        "@babel/parser": "^7.29.7",
+        "react-refresh": "^0.18.0",
+        "@babel/traverse": "^7.29.7",
+        "es-module-lexer": "^2.1.0",
+        "@babel/generator": "^7.29.7",
+        "@react-router/node": "8.4.0",
+        "babel-dead-code-elimination": "^1.0.12",
+        "@remix-run/node-fetch-server": "^0.14.1"
+      },
+      "peerDependencies": {
+        "vite": "^7.0.0 || ^8.0.0",
+        "wrangler": "^4.0.0",
+        "typescript": "^5.1.0 || ^6.0.0 || ^7.0.0",
+        "react-router": "^8.4.0",
+        "@vitejs/plugin-rsc": "~0.5.26",
+        "@react-router/serve": "^8.4.0",
+        "react-server-dom-webpack": "^19.2.7"
+      },
+      "peerDependenciesMeta": {
+        "wrangler": {
+          "optional": true
+        },
+        "typescript": {
+          "optional": true
+        },
+        "@vitejs/plugin-rsc": {
+          "optional": true
+        },
+        "@react-router/serve": {
+          "optional": true
+        },
+        "react-server-dom-webpack": {
+          "optional": true
+        }
+      },
+      "dist": {
+        "shasum": "8c11f26d942c7b46aa3254729850a1b7f11a7ffd",
+        "tarball": "https://registry.npmjs.org/@react-router/dev/-/dev-8.4.0.tgz",
+        "fileCount": 39,
+        "integrity": "sha512-GKznpn6h8c52xGXwtsypD5ZwNiWFSeqoKPdyGq7SfG+T9rFjGO8F0i/R/yECfZqHXaNz1NVmpODuBamBy9FfMg==",
+        "signatures": [
+          {
+            "sig": "MEQCIHw9CFQewNNHOhOorekpio5yJbvt/cU48ZkjFGaw+Q/AAiARqLg5bz1H0ykkt+TtO+KzaTiPHHJIzj0Y34PkdIM1ag==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEYCIQCmm52zRK7Rhpo+nnJjQ40pNEEKTeHc+PQByEGXHJxQtQIhAP1+FAwWi3/y2NB4h8prwso4+/hEIEAZ2d+9+8NK2yA3",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@react-router%2fdev@8.4.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 434934
+      }
+    }
+  ],
+  "babel": {
+    "name": "@babel/core",
+    "version": "7.29.7",
+    "source": "https://registry.npmjs.org/@babel/core/7.29.7",
+    "gensync_range": "^1.0.0-beta.2",
+    "dist": {
+      "shasum": "80c10b17248082968b57a857b91640971f2070f7",
+      "tarball": "https://registry.npmjs.org/@babel/core/-/core-7.29.7.tgz",
+      "fileCount": 125,
+      "integrity": "sha512-RgHBCvtjbOK2gXSNBNIkNoEc9qoVEtau3hj8gEqKQuL3HZAibKarWFEI3Lfm6EYKkLalOh8eSrj9b+ch9H/VBA==",
+      "signatures": [
+        {
+          "sig": "MEUCIHyKsGHHBNxttE3b4RF3u5jfCJBrrjQNG9B8soC96hy5AiEAqO54VnG4mlwFIGT/pVLxLk/JsmJ6RGEpycehnD90b+o=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/@babel%2fcore@7.29.7",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 810551
+    }
+  },
+  "gensync": {
+    "source": "https://registry.npmjs.org/gensync",
+    "published_versions": [
+      "0.1.0",
+      "1.0.0-beta.0",
+      "1.0.0-beta.1",
+      "1.0.0-beta.2"
+    ],
+    "range_check": {
+      "range": "^1.0.0-beta.2",
+      "compatible_published_versions": [
+        "1.0.0-beta.2"
+      ],
+      "compatible_stable_versions": [],
+      "semver_tool_version": "6.3.1",
+      "interpretation": "Framework dev candidate requires a Babel range whose gensync dependency has no compatible published stable version; complete graph remains unselected"
+    }
+  },
+  "limits": [
+    "Registry records and semver prove only the inspected declared dependency restriction",
+    "No dependency installation or resolution, build, security, license, runtime or renderer test",
+    "Optional Cloudflare/RSC/serve peers are not selected requirements or provider authority",
+    "React Router runtime-only metadata does not prove its complete stable graph or the Vite/React/exporter set"
+  ],
+  "babel_published_stable_candidates": [
+    {
+      "version": "7.29.7",
+      "gensync_range": "^1.0.0-beta.2"
+    }
+  ],
+  "babel_candidate_source": "https://registry.npmjs.org/@babel/core",
+  "framework_dependency_check": {
+    "dev_version": "8.4.0",
+    "babel_range": "^7.29.7",
+    "published_stable_babel_candidates": [
+      {
+        "version": "7.29.7",
+        "gensync_range": "^1.0.0-beta.2",
+        "compatible_stable_gensync": []
+      }
+    ],
+    "source_scope": "Registry-declared currently published stable Babel versions satisfying the inspected dev candidate; not complete package resolution",
+    "no_inspected_stable_chain": true
+  }
+}

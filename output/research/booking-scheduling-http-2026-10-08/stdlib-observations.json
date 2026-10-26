@@ -1,0 +1,63 @@
+{
+  "python": "3.14.5",
+  "scope": "Installed standard-library observations only; no compliant parser or HTTP proof",
+  "observations": [
+    {
+      "raw_synthetic_query": "expected_revision=7&expected_revision=8",
+      "pairs": [
+        [
+          "expected_revision",
+          "7"
+        ],
+        [
+          "expected_revision",
+          "8"
+        ]
+      ]
+    },
+    {
+      "raw_synthetic_query": "visitor_timezone=Etc%2FGMT%2B4",
+      "pairs": [
+        [
+          "visitor_timezone",
+          "Etc/GMT+4"
+        ]
+      ]
+    },
+    {
+      "raw_synthetic_query": "visitor_timezone=Etc/GMT+4",
+      "pairs": [
+        [
+          "visitor_timezone",
+          "Etc/GMT 4"
+        ]
+      ]
+    },
+    {
+      "raw_synthetic_query": "visitor_timezone=%ZZ",
+      "pairs": [
+        [
+          "visitor_timezone",
+          "%ZZ"
+        ]
+      ]
+    },
+    {
+      "raw_synthetic_query": "visitor_timezone=%FF",
+      "error_type": "UnicodeDecodeError"
+    },
+    {
+      "raw_synthetic_query": "kind=page;expected_revision=7",
+      "pairs": [
+        [
+          "kind",
+          "page;expected_revision=7"
+        ]
+      ]
+    },
+    {
+      "raw_synthetic_query": "kind=page&",
+      "error_type": "ValueError"
+    }
+  ]
+}

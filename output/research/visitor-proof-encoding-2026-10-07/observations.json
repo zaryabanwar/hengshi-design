@@ -1,0 +1,37 @@
+{
+  "observed_at": "2026-10-07T08:30:43.055733+00:00",
+  "runtime_observed_not_selected": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "decoder_signature": "(s, altchars=None, validate=False)",
+  "input_scope": "Public synthetic all-zero and all-one values; no CSPRNG credential generated",
+  "canonical_shape": "43 ASCII A characters decode to 32 zero bytes with one internal padding character",
+  "canonical_decoded_bytes": 32,
+  "strict_decoder_accepts_nonzero_unused_pad_bits": true,
+  "strict_decoder_accepts_standard_alphabet_with_urlsafe_altchars": true,
+  "urlsafe_decoder_discards_whitespace": true,
+  "strict_decoder_rejects_whitespace": true,
+  "sha256_digest_bytes": 32,
+  "installed_sources": [
+    {
+      "module": "base64",
+      "observed_path": "C:\\Python314\\Lib\\base64.py",
+      "snapshot": "base64.installed.py",
+      "bytes": 22647,
+      "sha256": "3a5535c6216a53cc99d9f05f8a03639dc97b5596ba5186671aa25aabcb5f236f"
+    },
+    {
+      "module": "secrets",
+      "observed_path": "C:\\Python314\\Lib\\secrets.py",
+      "snapshot": "secrets.installed.py",
+      "bytes": 2055,
+      "sha256": "37570483735e4026f95230a4681057329a72a3c17c2d36592e6743584d4b587f"
+    },
+    {
+      "module": "hashlib",
+      "observed_path": "C:\\Python314\\Lib\\hashlib.py",
+      "snapshot": "hashlib.installed.py",
+      "bytes": 9714,
+      "sha256": "271b00a30d27c3cdd99b7f70962680f8455d3057b3c103f028e2da31141b91ee"
+    }
+  ],
+  "limits": "Library observations only; no randomness, constant-time, ingress, credential, store, authorization, expiry or application enforcement proof"
+}

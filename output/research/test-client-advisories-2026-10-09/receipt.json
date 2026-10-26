@@ -1,0 +1,20 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "observation": "complete_saved_OSV_query",
+  "candidate_sha256": "f979543df57552aac1c08dd61ac3f1322e3629777dfc10229e6ff976b5c47f1f",
+  "package_count": 48,
+  "scope": "Exact PyPI-name/version OSV advisory lookup, not security clearance or embedded/native coverage",
+  "limits": [
+    "No-match is only the database response at capture time, not absence of vulnerabilities.",
+    "PyPI queries do not identify all embedded/native libraries, OS dependencies, application defects or exploitability.",
+    "No package selection, exception, ignore rule, production change or complete advisory clearance follows."
+  ],
+  "pagination_exhausted": true,
+  "request_count": 1,
+  "unique_advisory_count": 0,
+  "matching_package_count": 0,
+  "unmatched_package_count": 48,
+  "advisory_ids": [],
+  "protected_inputs_unchanged": true
+}

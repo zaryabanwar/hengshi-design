@@ -1,5 +1,34 @@
 # Phase 1 Foundation Slice
 
+## Current authority — v1
+
+Reconciled 2026-10-04. D-025 accepted this bounded requirements, claims, SEO,
+route and conversion foundation on 2026-07-19, including the `/industries` parent
+hub. The July proposal/review wording below is its preserved production history;
+it does not reopen that approval. Later accepted amendments in
+[DECISIONS.md](../../DECISIONS.md), including the four-stream/accessibility
+decisions and D-064 onward, control their scoped changes. Complete Phase 1
+acceptance, publication and application development remain separate gates.
+
+Use [the reconciliation map](../software-definition/04-reconciliation-map.md)
+for current shared definitions rather than rebuilding this accepted foundation.
+D-068 defers deployment/provider/region/cost planning, leaving Azure and AWS as
+candidates; Outlook/Teams intent does not require a Microsoft 365 subscription.
+D-069 requires the latest mutually compatible stable complete graph and names
+the first production definition v1. D-070 establishes Europe as the first market
+and records admin-editable reviewed company facts with approved dedicated contact
+aliases. [The entity/contact addendum](../software-definition/06-entity-and-public-contact.md)
+separates supplied facts from verification and public-use review. Alias ownership
+is explicitly undecided; no operational mailbox or legal verification is implied.
+
+Remaining content evidence, rights, legal/security/privacy review and operational
+activation requirements still apply. Historical gates for accepting this slice,
+choosing `/industries`, Azure-only hosting or setting up Microsoft 365 cannot
+override the later recorded decisions. No accepted requirement, claim-ledger entry,
+route data, review report or historical validation result is changed here.
+
+## July production and review snapshot
+
 **Project:** Hengshi Design
 
 **Snapshot:** 2026-07-19 (Asia/Karachi)

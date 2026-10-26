@@ -1,0 +1,557 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "TODO",
+  "not_authorized_to_execute": true,
+  "proposed_call": {
+    "tool": "download_assets",
+    "arguments": {
+      "fileKey": "GOmLP6Cv96l768ueSrZ5Dg",
+      "nodeId": "36:2492",
+      "defaultFormat": "svg"
+    }
+  },
+  "scope": "One read-only export of existing B01 mode root. No use_figma, temporary/permanent edits, checking calls, account changes or automatic retry.",
+  "call_accounting": {
+    "before": {
+      "attempts": 30,
+      "conservatively_metered": 27
+    },
+    "proposed": {
+      "attempt": 31,
+      "conservatively_metered": 28
+    },
+    "additional_one_call_allowance_exception_required": true,
+    "actual_provider_balance": "unknown"
+  },
+  "reason": "Attempt29 returned4 of5 inline PNGs; attempt30 returned0 of1. Root vector export avoids deleted temporary containers and inline image attachments, but cause of omission is unestablished and download success remains unverified.",
+  "expected_root": {
+    "id": "36:2492",
+    "name": "B01 / Mode references / v1",
+    "width": 420,
+    "height": 90882,
+    "units": 48,
+    "positions": "Producer-derived from preserved creation source:24 root padding;16 item spacing; source units report. Not live-canvas verified."
+  },
+  "units": [
+    {
+      "unit_id": "36:2493",
+      "input_index": 0,
+      "x": 24,
+      "y": 24,
+      "width": 320,
+      "height": 2050,
+      "reference": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_STANDARD_STREAM_HIGH_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:2531",
+      "input_index": 1,
+      "x": 24,
+      "y": 2090,
+      "width": 320,
+      "height": 1774,
+      "reference": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_HIGH_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:2559",
+      "input_index": 2,
+      "x": 24,
+      "y": 3880,
+      "width": 320,
+      "height": 1614,
+      "reference": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_REDUCED_MOTION_STREAM_HIGH_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:2586",
+      "input_index": 3,
+      "x": 24,
+      "y": 5510,
+      "width": 320,
+      "height": 2050,
+      "reference": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_STANDARD_STREAM_MEDIUM_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:2624",
+      "input_index": 4,
+      "x": 24,
+      "y": 7576,
+      "width": 320,
+      "height": 1774,
+      "reference": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_MEDIUM_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:2652",
+      "input_index": 5,
+      "x": 24,
+      "y": 9366,
+      "width": 320,
+      "height": 1614,
+      "reference": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_LOW_POWER_STREAM_LOW_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:2679",
+      "input_index": 6,
+      "x": 24,
+      "y": 10996,
+      "width": 320,
+      "height": 1774,
+      "reference": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_LOW_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:2707",
+      "input_index": 7,
+      "x": 24,
+      "y": 12786,
+      "width": 320,
+      "height": 2050,
+      "reference": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_STANDARD_STREAM_SEMANTIC_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:2745",
+      "input_index": 8,
+      "x": 24,
+      "y": 14852,
+      "width": 320,
+      "height": 1774,
+      "reference": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_SEMANTIC_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:2773",
+      "input_index": 9,
+      "x": 24,
+      "y": 16642,
+      "width": 320,
+      "height": 2150,
+      "reference": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_FORCED_COLORS_STREAM_SEMANTIC_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:2811",
+      "input_index": 10,
+      "x": 24,
+      "y": 18808,
+      "width": 320,
+      "height": 1210,
+      "reference": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_PRINT_STREAM_SEMANTIC_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:2827",
+      "input_index": 11,
+      "x": 24,
+      "y": 20034,
+      "width": 320,
+      "height": 1614,
+      "reference": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_SEMANTIC_SHELL_STREAM_SEMANTIC_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:2854",
+      "input_index": 12,
+      "x": 24,
+      "y": 21664,
+      "width": 320,
+      "height": 1614,
+      "reference": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_GRAYSCALE_STREAM_SEMANTIC_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:2881",
+      "input_index": 13,
+      "x": 24,
+      "y": 23294,
+      "width": 320,
+      "height": 1770,
+      "reference": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_UNAVAILABLE_FONT_STREAM_SEMANTIC_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:2908",
+      "input_index": 14,
+      "x": 24,
+      "y": 25080,
+      "width": 320,
+      "height": 1756,
+      "reference": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_UNAVAILABLE_IMAGE_ASSET_STREAM_SEMANTIC_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:2936",
+      "input_index": 15,
+      "x": 24,
+      "y": 26852,
+      "width": 320,
+      "height": 2540,
+      "reference": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_STANDARD_STREAM_HIGH_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:2984",
+      "input_index": 16,
+      "x": 24,
+      "y": 29408,
+      "width": 320,
+      "height": 1792,
+      "reference": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_HIGH_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3012",
+      "input_index": 17,
+      "x": 24,
+      "y": 31216,
+      "width": 320,
+      "height": 1632,
+      "reference": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_REDUCED_MOTION_STREAM_HIGH_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3039",
+      "input_index": 18,
+      "x": 24,
+      "y": 32864,
+      "width": 320,
+      "height": 2540,
+      "reference": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_STANDARD_STREAM_MEDIUM_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3087",
+      "input_index": 19,
+      "x": 24,
+      "y": 35420,
+      "width": 320,
+      "height": 1792,
+      "reference": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_MEDIUM_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3115",
+      "input_index": 20,
+      "x": 24,
+      "y": 37228,
+      "width": 320,
+      "height": 1632,
+      "reference": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_LOW_POWER_STREAM_LOW_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3142",
+      "input_index": 21,
+      "x": 24,
+      "y": 38876,
+      "width": 320,
+      "height": 1792,
+      "reference": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_LOW_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3170",
+      "input_index": 22,
+      "x": 24,
+      "y": 40684,
+      "width": 320,
+      "height": 2540,
+      "reference": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_STANDARD_STREAM_SEMANTIC_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3218",
+      "input_index": 23,
+      "x": 24,
+      "y": 43240,
+      "width": 320,
+      "height": 1792,
+      "reference": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_SEMANTIC_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3246",
+      "input_index": 24,
+      "x": 24,
+      "y": 45048,
+      "width": 320,
+      "height": 2644,
+      "reference": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_FORCED_COLORS_STREAM_SEMANTIC_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3294",
+      "input_index": 25,
+      "x": 24,
+      "y": 47708,
+      "width": 320,
+      "height": 1228,
+      "reference": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_PRINT_STREAM_SEMANTIC_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3310",
+      "input_index": 26,
+      "x": 24,
+      "y": 48952,
+      "width": 320,
+      "height": 1632,
+      "reference": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_SEMANTIC_SHELL_STREAM_SEMANTIC_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3337",
+      "input_index": 27,
+      "x": 24,
+      "y": 50600,
+      "width": 320,
+      "height": 1632,
+      "reference": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_GRAYSCALE_STREAM_SEMANTIC_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3364",
+      "input_index": 28,
+      "x": 24,
+      "y": 52248,
+      "width": 320,
+      "height": 1788,
+      "reference": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_UNAVAILABLE_FONT_STREAM_SEMANTIC_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3391",
+      "input_index": 29,
+      "x": 24,
+      "y": 54052,
+      "width": 320,
+      "height": 1774,
+      "reference": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_UNAVAILABLE_IMAGE_ASSET_STREAM_SEMANTIC_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3419",
+      "input_index": 30,
+      "x": 24,
+      "y": 55842,
+      "width": 320,
+      "height": 2070,
+      "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_STANDARD_STREAM_HIGH_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3451",
+      "input_index": 31,
+      "x": 24,
+      "y": 57928,
+      "width": 320,
+      "height": 1928,
+      "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_HIGH_V01",
+      "missing": true
+    },
+    {
+      "unit_id": "36:3480",
+      "input_index": 32,
+      "x": 24,
+      "y": 59872,
+      "width": 320,
+      "height": 1768,
+      "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_REDUCED_MOTION_STREAM_HIGH_V01",
+      "missing": true
+    },
+    {
+      "unit_id": "36:3508",
+      "input_index": 33,
+      "x": 24,
+      "y": 61656,
+      "width": 320,
+      "height": 2070,
+      "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_STANDARD_STREAM_MEDIUM_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3540",
+      "input_index": 34,
+      "x": 24,
+      "y": 63742,
+      "width": 320,
+      "height": 1928,
+      "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_MEDIUM_V01",
+      "missing": true
+    },
+    {
+      "unit_id": "36:3569",
+      "input_index": 35,
+      "x": 24,
+      "y": 65686,
+      "width": 320,
+      "height": 1768,
+      "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_LOW_POWER_STREAM_LOW_V01",
+      "missing": true
+    },
+    {
+      "unit_id": "36:3597",
+      "input_index": 36,
+      "x": 24,
+      "y": 67470,
+      "width": 320,
+      "height": 1928,
+      "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_LOW_V01",
+      "missing": true
+    },
+    {
+      "unit_id": "36:3626",
+      "input_index": 37,
+      "x": 24,
+      "y": 69414,
+      "width": 320,
+      "height": 2070,
+      "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_STANDARD_STREAM_SEMANTIC_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3658",
+      "input_index": 38,
+      "x": 24,
+      "y": 71500,
+      "width": 320,
+      "height": 1928,
+      "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_SEMANTIC_V01",
+      "missing": true
+    },
+    {
+      "unit_id": "36:3687",
+      "input_index": 39,
+      "x": 24,
+      "y": 73444,
+      "width": 320,
+      "height": 2166,
+      "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_FORCED_COLORS_STREAM_SEMANTIC_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3719",
+      "input_index": 40,
+      "x": 24,
+      "y": 75626,
+      "width": 320,
+      "height": 1228,
+      "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_PRINT_STREAM_SEMANTIC_V01",
+      "missing": true
+    },
+    {
+      "unit_id": "36:3735",
+      "input_index": 41,
+      "x": 24,
+      "y": 76870,
+      "width": 320,
+      "height": 1768,
+      "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SEMANTIC_SHELL_STREAM_SEMANTIC_V01",
+      "missing": true
+    },
+    {
+      "unit_id": "36:3763",
+      "input_index": 42,
+      "x": 24,
+      "y": 78654,
+      "width": 320,
+      "height": 1768,
+      "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_GRAYSCALE_STREAM_SEMANTIC_V01",
+      "missing": true
+    },
+    {
+      "unit_id": "36:3791",
+      "input_index": 43,
+      "x": 24,
+      "y": 80438,
+      "width": 320,
+      "height": 1948,
+      "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_UNAVAILABLE_FONT_STREAM_SEMANTIC_V01",
+      "missing": true
+    },
+    {
+      "unit_id": "36:3819",
+      "input_index": 44,
+      "x": 24,
+      "y": 82402,
+      "width": 320,
+      "height": 1910,
+      "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_UNAVAILABLE_IMAGE_ASSET_STREAM_SEMANTIC_V01",
+      "missing": true
+    },
+    {
+      "unit_id": "36:3848",
+      "input_index": 45,
+      "x": 24,
+      "y": 84328,
+      "width": 320,
+      "height": 2166,
+      "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_FORCED_COLORS_STREAM_HIGH_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3880",
+      "input_index": 46,
+      "x": 24,
+      "y": 86510,
+      "width": 320,
+      "height": 2166,
+      "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_FORCED_COLORS_STREAM_MEDIUM_V01",
+      "missing": false
+    },
+    {
+      "unit_id": "36:3912",
+      "input_index": 47,
+      "x": 24,
+      "y": 88692,
+      "width": 320,
+      "height": 2166,
+      "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_FORCED_COLORS_STREAM_LOW_V01",
+      "missing": false
+    }
+  ],
+  "source_receipt_sha256": "98631654e1ca0fdf1b353bc6383ad7f66e11f11620dca14a2d5c8eadf1cddc85",
+  "download_limits": {
+    "max_bytes": 33554432,
+    "max_redirects": 3,
+    "allow_schemes": [
+      "https"
+    ],
+    "save_original_immutable": true,
+    "no_raw_image_or_svg_asset_downloads": true,
+    "fetch_only_returned_export_URL": true,
+    "signed_url_not_to_be_logged": true,
+    "host_and_HTTP_status_and_content_type_checked": true,
+    "hash_downloaded_bytes": true
+  },
+  "local_validation": [
+    "Reject malformed XML, DTD/entity declarations, scripts, foreignObject, external links/refs, event handlers, unsafe data URIs or stylesheet imports before rendering; no external resources or script execution.",
+    "Require finite positive root viewBox/dimensions consistent with expected420-wide root and all48 recorded units; reject provider downsizing, truncated output or changed layout. Do not upscale a raster result.",
+    "Prepare a320px-wide SVG viewport for each recorded unit from the unchanged root document; preserve original SVG and source attribution. Render bounded-height local native PNG views using existing browser tooling, with network denied.",
+    "Use the already supplied37 PNG/annotation views as independent visual controls for the same named units; inspect labels, geometry, clipping, font outlines and visible content. SVG/browser rasterization may differ from Figma PNG; never claim byte-identical or actual native Figma PNG capture.",
+    "Extract and inspect all11 missing unit+annotation views only after complete root and mapping checks pass; obtain independent bounded review before updating coverage.",
+    "Keep old37 originals untouched. SVG-derived previews must be labeled separately; their acceptance and any need for final PNG source exports remain separate."
+  ],
+  "failure_policy": "Stop after this single call on auth/error/missing URL/incorrect format/unsafe SVG/bounds/content mismatch; preserve sanitized diagnostic result and request a separately scoped remedy. No automatic retry or silent substitute.",
+  "limits": [
+    "Only static visual exports, not actual screen reader/reduced-motion/forced-colours modes or interaction/accessibility proof",
+    "Cannot independently prove unreported canvas changes or all unit identity from outlined SVG alone; named visible annotations and37 retained controls constrain mapping",
+    "No fullB01/restore_EXIT/founder or integrated Phase1 acceptance"
+  ],
+  "primary_sources": [
+    {
+      "url": "https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/",
+      "observed": "2026-10-12",
+      "finding": "download_assets provides temporary export URLs and SVG format. Official docs describe multi-node support; active connector exposes only one nodeId, so proposed call uses parent root."
+    },
+    {
+      "url": "https://help.figma.com/hc/en-us/articles/13402894554519-Export-formats-and-settings-for-static-designs",
+      "observed": "2026-10-12",
+      "finding": "SVG is vector XML; text exports as outlined glyphs by default, SVG supports1x export. Blur and export-format differences still require inspection."
+    }
+  ]
+}

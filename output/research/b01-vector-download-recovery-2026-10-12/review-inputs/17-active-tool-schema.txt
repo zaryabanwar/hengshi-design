@@ -1,0 +1,17 @@
+Create designs, ship to code
+
+Download assets from a Figma file for a single node: an exported render, the original source images, and SVGs of the vector layers. The response contains: (1) `export` — an exported image of the whole node; (2) `rawImages` — original uploaded source images (JPEG, PNG, GIF, WebP) found as fills anywhere in the node subtree (capped at 20); and (3) `svgAssets` — SVGs for the vector layers in the subtree that are best represented as SVG (icons, logos, simple illustrations), the same set get_design_context surfaces (capped at 20). Each raw image carries a `format` field with its actual image format (e.g. "png", "jpeg", "gif", "webp") so you can save it with the correct file extension; if the format cannot be determined it is reported as "original". Each `svgAssets` entry has format "svg". Call this tool for asset URLs get_design_context has not already provided: the `export` render of the whole node, a specific format or scale, or assets for a node you have not requested design context for. Export precedence: when you pass defaultFormat and/or defaultScale, those override the export settings configured on the node in Figma. When you omit them, the node-configured export settings are used if present, otherwise png at scale 1. Pass defaultFormat or defaultScale only when the user explicitly asks for a specific format, size, or resolution. For cross-file image transfer, use the raw image URLs with upload_assets. URLs are temporary — download promptly. Works on Figma design files (URL path `/design/`), Figma Slides (`/slides/`), and FigJam boards (`/board/`). Does NOT work on Figma Make files (`/make/`). This tool is part of plugin `Figma`.
+
+exec tool declaration:
+```ts
+declare const tools: { mcp__codex_apps__figma_download_assets(args: {
+  // Export format. When you provide this, it overrides any export settings configured on the node in Figma. When you omit it, the node-configured export format is used if present, otherwise png. Set this only when the user asks for a specific format.
+  defaultFormat?: "png" | "jpg" | "svg" | "pdf";
+  // Export scale (resolution multiplier). When you provide this, it overrides any export settings configured on the node in Figma. When you omit it, the node-configured export scale is used if present, otherwise 1. Set this only when the user asks for a specific size or resolution.
+  defaultScale?: number;
+  // The key of the Figma file to use. If the URL is provided, extract the file key from the URL. The given URL must be in the format https://figma.com/design/:fileKey/:fileName?node-id=:int1-:int2. The extracted fileKey would be `:fileKey`.
+  fileKey: string;
+  // The ID of the node in the Figma document, eg. "123:456" or "123-456". This should be a valid node ID in the Figma document. Do not pass an empty string for node_id.
+  nodeId: string;
+}): Promise<CallToolResult>; };
+```

@@ -1,0 +1,317 @@
+{
+  "product": "Hengshi Design v1",
+  "reviewer": "/root/review_phase1_pending_v1",
+  "reviewed_at_utc": "2026-10-12T09:07:19.060562+00:00",
+  "status": "DOING",
+  "verdict": "PASS",
+  "authorization": "Founder-approved replacement independent reviewer for two saved packets on2026-10-12; bounded review only. No producer revision, external write, implementation or adoption authority follows.",
+  "exact_scope": [
+    "Private-record issuance profile proposal dated 2026-10-12 in DATA_CONTRACT.md",
+    "Guarded PostgreSQL transition proposal dated 2026-10-12 in DATA_CONTRACT.md",
+    "Shared PostgreSQL transition reference in INTERFACE_CATALOG.md"
+  ],
+  "verdict_scope": "Independent definition-consistency and primary-source-support review of the2026-10-12 private-record UUID issuance/guarded PostgreSQL transaction recommendations and the catalogue reference, against the exact11 frozen authorities. No whole DATA_CONTRACT/INTERFACE_CATALOG acceptance or unlisted proposal certification.",
+  "packet_binding": {
+    "manifest": "review-inputs-v1.json",
+    "manifest_sha256": "953ce9163d29cc54efcd90925a4749d80266f55e6ae7f96243ba81b3154a06c6",
+    "input_count": 11,
+    "all_frozen_hashes_and_byte_counts_verified": true,
+    "inputs": [
+      {
+        "source": "AGENTS.md",
+        "snapshot": "inputs/01-AGENTS.md",
+        "bytes": 7686,
+        "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+      },
+      {
+        "source": ".specify/memory/constitution.md",
+        "snapshot": "inputs/02-constitution.md",
+        "bytes": 16234,
+        "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+      },
+      {
+        "source": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+        "snapshot": "inputs/03-DATA_CONTRACT.md",
+        "bytes": 72181,
+        "sha256": "b49bc6ffb726dc02518fdba79e6f406b551f1e250871b0646cd9c58df3659430"
+      },
+      {
+        "source": "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+        "snapshot": "inputs/04-INTERFACE_CATALOG.md",
+        "bytes": 112231,
+        "sha256": "8ad3c5837a15f634c586337cc5e01795d9ce526f093a9ead984cc67d179d1c7f"
+      },
+      {
+        "source": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+        "snapshot": "inputs/05-PRIVATE_PROCESS_PROOF.md",
+        "bytes": 117693,
+        "sha256": "0bf065ae353f1d22c986501c624df46e4057d76ca06f71a35352360ac239a6b7"
+      },
+      {
+        "source": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+        "snapshot": "inputs/06-HANDOFF_LIFECYCLE.md",
+        "bytes": 89614,
+        "sha256": "40a3779f56737725bb2c5e5d5a5ee34b44ad27030adc16cc374fdb9b04266a12"
+      },
+      {
+        "source": "docs/phase-1-architecture/contracts/AVAILABILITY_CONSISTENCY.md",
+        "snapshot": "inputs/07-AVAILABILITY_CONSISTENCY.md",
+        "bytes": 14167,
+        "sha256": "6da0086b9c6ac49c2464f73a61793d410c7e04c1aaec8d83a328b377e5252a03"
+      },
+      {
+        "source": "docs/phase-1-architecture/contracts/BOOKING_SCHEDULING.md",
+        "snapshot": "inputs/08-BOOKING_SCHEDULING.md",
+        "bytes": 58787,
+        "sha256": "ae85b2fe9f6ff545095e21d96de622fdcb186961c928a59704f86d2bdd4ded33"
+      },
+      {
+        "source": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+        "snapshot": "inputs/09-PUBLICATION_CONTRACT.md",
+        "bytes": 88043,
+        "sha256": "9803368522b960485b6f31994d8b6a0c79783c68fe0fc18fcc4675afb08e83d7"
+      },
+      {
+        "source": "docs/phase-1-architecture/contracts/process-value.schema.json",
+        "snapshot": "inputs/10-process-value.schema.json",
+        "bytes": 1494,
+        "sha256": "b4fd9fc84f322ecb6743c00244f3731ccd612861de53056aaddb20a377a67a95"
+      },
+      {
+        "source": "docs/phase-1-architecture/contracts/data-entities.csv",
+        "snapshot": "inputs/11-data-entities.csv",
+        "bytes": 8956,
+        "sha256": "ec55f41329d521c36014e8e77b863013a7c0a24a6917706767f59f9227525e64"
+      }
+    ],
+    "verification_evidence": "independent-review-hash-verification-v1.json"
+  },
+  "review_questions": [
+    {
+      "question_number": 1,
+      "question": "Do issued record IDs, caller operation IDs, public keys and secret credentials retain distinct owners and authorization?",
+      "verdict": "PASS",
+      "answer": "New server-owned private record allocation is independent UUIDv4/RFC-variant issuance. Existing caller operation, chat stream/event, public canonical and external-provider references retain their distinct issuers/formats. A selector or UUID never grants process access, current consent or credential authority. Uniqueness is enforced at allocation rather than inferred from random shape; retries resolve one existing admitted allocation instead of replacing lineage.",
+      "references": [
+        "inputs/03-DATA_CONTRACT.md:20-42,373-403",
+        "inputs/05-PRIVATE_PROCESS_PROOF.md:27-59,86-118,1458-1495",
+        "inputs/09-PUBLICATION_CONTRACT.md:308-317",
+        "inputs/10-process-value.schema.json:3-14"
+      ],
+      "limits": "Direction-specific issuer/variant/version admission, allocation namespace, finite collision handling and actual ingress/persistence remain held. The representation helper is not universal UUIDv4-only admission."
+    },
+    {
+      "question_number": 2,
+      "question": "Does Read Committed eligibility require a complete shared guard and constraint binding, including all competing authorization/revocation writers?",
+      "verdict": "PASS",
+      "answer": "Read Committed is expressly conditional on the entire invariant being covered by identified shared existing-row guards and actual constraints. All competing writers, including approval/withdrawal/revocation/reassignment, workers, maintenance and admin paths, must share canonical lock order; authority is reread after all relevant guards. Target-only locking and old ORM/request/cache snapshots are explicitly insufficient. The catalogue requires each directional operation to bind participating authorities and deadline.",
+      "references": [
+        "inputs/03-DATA_CONTRACT.md:52-80,105-115",
+        "inputs/04-INTERFACE_CATALOG.md:511-521,615-624",
+        "inputs/06-HANDOFF_LIFECYCLE.md:54-58,84-106",
+        "inputs/07-AVAILABILITY_CONSISTENCY.md:61-74,82-104"
+      ],
+      "limits": "No complete physical guard inventory, actual SQL, competing-writer enumeration, identity-provider synchronization or load/concurrency proof is supplied. Read Committed is not approved for any operation until those prerequisites are met."
+    },
+    {
+      "question_number": 3,
+      "question": "Are absent inserts and predicate invariants correctly held for reviewed physical/Serializable binding?",
+      "verdict": "PASS",
+      "answer": "Existing-row locks are not represented as absence/predicate protection. Missing guards and uncovered predicate/set invariants keep the affected operation held. Predicate-sensitive operations require a separately reviewed Serializable binding covering participating writers. Uniqueness/FK/scheduling exclusion remain actual database constraints; Repeatable Read, a local mutex or a nonexistent-row lock cannot substitute.",
+      "references": [
+        "inputs/03-DATA_CONTRACT.md:52-68",
+        "inputs/06-HANDOFF_LIFECYCLE.md:84-106",
+        "inputs/08-BOOKING_SCHEDULING.md:150-176",
+        "inputs/07-AVAILABILITY_CONSISTENCY.md:89-97"
+      ],
+      "limits": "Exact predicate coverage, current-binding uniqueness and scheduling exclusion implementation remain unselected. Serializable does not remove constraint checks or make an external store/provider atomic."
+    },
+    {
+      "question_number": 4,
+      "question": "Do conditional revisions, uniqueness, transactional dispatch intents, unknown commit reconciliation and whole-transaction retry preserve the controlling directional contracts?",
+      "verdict": "PASS",
+      "answer": "The proposal preserves explicit conditional revision/state mutation with a database-confirmed intended row, zero-match denial/conflict and no overflow/rebase. Authorized state, immutable scoped operation outcome and permitted durable dispatch intent commit together. Unknown commit acknowledgement reconciles the same operation under current access; it is not assumed rollback. Directional same-operation reconciliation remains controlling before fresh stale-revision/capacity admission, so the generic conditional-write rule applies to fresh writes rather than rejecting historical outcome reads.",
+      "references": [
+        "inputs/03-DATA_CONTRACT.md:64-91,279-306,389-403",
+        "inputs/04-INTERFACE_CATALOG.md:364-368,511-521",
+        "inputs/08-BOOKING_SCHEDULING.md:150-176,180-210,324-338,704-745",
+        "inputs/06-HANDOFF_LIFECYCLE.md:78-106,276-290,650-664",
+        "inputs/09-PUBLICATION_CONTRACT.md:107-140,189-200"
+      ],
+      "limits": "Database intent atomicity establishes no Redis, calendar, email, Entra or release-routing success. Delivery-time authority, external effect fencing, unknown-effect reservation and provider reconciliation remain mandatory separate boundaries."
+    },
+    {
+      "question_number": 5,
+      "question": "Does the finite retry proposal stay within existing admission/resource clocks without retrying authorization denial, conflicting intent or uncertain commit?",
+      "verdict": "PASS",
+      "answer": "At most one automatic retry after the initial transaction is proposed, only after a confirmed aborted40001 or40P01. It restarts the complete transaction and its decision logic while retaining operation identity, expected revision and original admitted deadline. Authorization/intent/state/expiry are checked again. Insufficient budget, lost authority, unknown commit, invalid input, stale revision and ordinary uniqueness/exclusion conflicts are not silently retried. The cap is explicitly an unadopted Hengshi proposal, not a vendor mandate or contention guarantee.",
+      "references": [
+        "inputs/03-DATA_CONTRACT.md:82-115",
+        "inputs/08-BOOKING_SCHEDULING.md:704-767",
+        "inputs/05-PRIVATE_PROCESS_PROOF.md:979-1005,1024-1036",
+        "inputs/07-AVAILABILITY_CONSISTENCY.md:97-108"
+      ],
+      "limits": "Lock/statement/transaction cancellation and timeout bindings within the existing finite lanes remain prerequisites. Observer timeout cannot release an unsettled reservation or establish that a command cannot still commit; retries cannot allocate additional capacity or trigger external-effect replay."
+    },
+    {
+      "question_number": 6,
+      "question": "Is non-consented ephemeral chat excluded from durable operations, audit payloads and outbox copies?",
+      "verdict": "PASS",
+      "answer": "The proposal is limited to authorized PostgreSQL state changes and expressly excludes non-consented ephemeral chat from durable transcripts, operations/dispatch payload copies and unapproved history. Existing proof/CSRF/replay and entity storage classifications remain controlling. Linkable IDs, operation/audit metadata and derived payloads retain source privacy class and expiry rather than gaining a durable exception from a new UUID or an outbox.",
+      "references": [
+        "inputs/03-DATA_CONTRACT.md:46-50,69-70,156-161,688-714,745-774",
+        "inputs/04-INTERFACE_CATALOG.md:517-520,626-633",
+        "inputs/05-PRIVATE_PROCESS_PROOF.md:272-279,1024-1036",
+        "inputs/06-HANDOFF_LIFECYCLE.md:168-188",
+        "inputs/11-data-entities.csv:9-12,18-23"
+      ],
+      "limits": "Exact storage/copy/retention/legal bindings, finite cleanup and provider policy remain held; valid consent to one purpose does not authorize unrelated durable credential, history, audit or transfer storage."
+    },
+    {
+      "question_number": 7,
+      "question": "Are proposed mechanisms clearly unadopted, without inherited review PASS, exact version selection or runtime proof?",
+      "verdict": "PASS",
+      "answer": "The additions identify themselves as producer proposals and expressly inherit no earlier PASS. They select neither schema/tables/migrations nor exact Python/PostgreSQL/SQLAlchemy release, provider, sync/async topology or coupled graph. Vendor support is separated from the proposed guard composition and retry cap. Future real PostgreSQL/public request-worker behavior evidence, independent review and integrated founder adoption remain required. This replacement review resolves only the bounded review-capacity hold for these frozen proposal bytes.",
+      "references": [
+        "inputs/03-DATA_CONTRACT.md:46-50,91-115,375-378,405-431",
+        "inputs/04-INTERFACE_CATALOG.md:511-521",
+        "inputs/01-AGENTS.md:37-78",
+        "inputs/02-constitution.md:259-274"
+      ],
+      "limits": "No schema/runtime/dependency selection, database execution, legal or security clearance, whole-contract/Phase1 acceptance or operational grant follows."
+    }
+  ],
+  "findings": [],
+  "independent_primary_source_checks": {
+    "date": "2026-10-12",
+    "method": "Official primary vendor/specification pages independently read with web tools, plus resolved Context7 documentation queries for Python and SQLAlchemy. No producer citations were assumed sufficient by themselves.",
+    "sources": [
+      {
+        "source": "RFC9562 UUID layout, representation, security and DB locality",
+        "url": "https://www.rfc-editor.org/rfc/rfc9562.html",
+        "sections": [
+          "2.1",
+          "4",
+          "5.4",
+          "8"
+        ],
+        "independently_checked": "UUIDv4 uses random bits with version4 and RFC variant10. Text accepts uppercase/lowercase under the RFC; Hengshi lowercase-only is a narrower profile. UUID possession is not a security capability. Time-independent UUIDv4 trades index locality for opacity.",
+        "supports": "DATA_CONTRACT.md:380-403,405-420",
+        "not_established": "Application issuance entropy, uniqueness, authorization or measured performance."
+      },
+      {
+        "source": "Python stable3.14 UUID documentation",
+        "url": "https://docs.python.org/3.14/library/uuid.html",
+        "sections": [
+          "uuid.UUID",
+          "uuid.uuid4"
+        ],
+        "independently_checked": "uuid4 is documented as cryptographically secure; UUID construction accepts brace, hyphenless and URN forms. Its optional version argument can override version/variant bits, so constructor success or coerced output alone is not an inbound canonical/version check.",
+        "supports": "DATA_CONTRACT.md:391,394,405-413",
+        "not_established": "A production Python release, runtime graph or parser implementation. The canonical raw text gate must precede permissive construction."
+      },
+      {
+        "source": "PostgreSQL18 transaction isolation",
+        "url": "https://www.postgresql.org/docs/18/transaction-iso.html",
+        "sections": [
+          "13.2.1",
+          "13.2.2",
+          "13.2.3"
+        ],
+        "independently_checked": "Read Committed uses command snapshots and rechecks predicates on a waited-for updated row. That does not cover unrelated rows or complex predicate invariants. Repeatable Read can retain serialization anomalies; Serializable coverage remains a whole participating-transaction discipline.",
+        "supports": "DATA_CONTRACT.md:52-68,93-94",
+        "not_established": "Eligibility of any project transition for Read Committed or a completed physical Serializable binding."
+      },
+      {
+        "source": "PostgreSQL18 explicit locks",
+        "url": "https://www.postgresql.org/docs/18/explicit-locking.html",
+        "sections": [
+          "13.3.2",
+          "13.3.4"
+        ],
+        "independently_checked": "FOR UPDATE protects retrieved rows against competing row writes/locks until transaction end. Consistent acquisition order limits deadlocks, and locks can otherwise wait indefinitely.",
+        "supports": "DATA_CONTRACT.md:54-62,70,95-96,113-115",
+        "not_established": "Absent-row protection, current external-provider authority or measured bounded lock waits."
+      },
+      {
+        "source": "PostgreSQL18 serialization failure handling",
+        "url": "https://www.postgresql.org/docs/18/mvcc-serialization-failure-handling.html",
+        "sections": [
+          "13.5"
+        ],
+        "independently_checked": "40001 identifies serialization failure;40P01 identifies deadlock. Safe retries repeat the entire transaction including decision logic. Unique/exclusion conflicts require case-specific care; retries need not succeed.",
+        "supports": "DATA_CONTRACT.md:82-98",
+        "not_established": "The proposed one-retry cap, deadline suitability or external safe-retry capability; those are separately held project mechanisms."
+      },
+      {
+        "source": "SQLAlchemy2.0 ORM version counters",
+        "url": "https://docs.sqlalchemy.org/en/20/orm/versioning.html",
+        "sections": [
+          "Configuring a Version Counter"
+        ],
+        "independently_checked": "version_id_col applies to individual ORM flushes and does not automatically protect multirow Query.update/delete paths. It is not complete cross-authority admission protection.",
+        "supports": "DATA_CONTRACT.md:76-80,98-99",
+        "not_established": "Coverage of the eventual application writers or a selected SQLAlchemy version."
+      },
+      {
+        "source": "SQLAlchemy2.0 sessions and transaction context",
+        "url": "https://docs.sqlalchemy.org/en/20/orm/session_basics.html#is-the-session-thread-safe-is-asyncsession-safe-to-share-in-concurrent-tasks",
+        "additional_url": "https://docs.sqlalchemy.org/en/20/orm/session_transaction.html",
+        "independently_checked": "The documented model uses one Session per concurrent thread or AsyncSession per task. Local transaction context managers provide commit/rollback framing; failed transaction state must be rolled back/discarded before reuse.",
+        "supports": "DATA_CONTRACT.md:73-80,99-103",
+        "not_established": "Production concurrency topology, actual rollback/retry handling or connection behavior."
+      }
+    ],
+    "context7": {
+      "resolved_libraries": [
+        "/python/cpython",
+        "/websites/sqlalchemy_en_20"
+      ],
+      "queries": [
+        "Python uuid4 generation and UUID construction lexical permissiveness",
+        "SQLAlchemy transaction context, per-thread/per-task sessions and versioning limitations"
+      ],
+      "caution": "Context7s narrative canonical-string gloss was not adopted; the returned constructor source and official Python documentation show permissive normalization.",
+      "exact_release_selected": false
+    }
+  },
+  "remaining_implementation_prerequisites": [
+    {
+      "id": "PR-PHYSICAL-GUARDS",
+      "file": "inputs/03-DATA_CONTRACT.md",
+      "line": 52,
+      "action": "Before implementation, bind each transition to every participating current authority/aggregate, canonical lock order, competing writer and actual uniqueness/FK/exclusion constraint; use separately reviewed predicate/Serializable treatment when row guards do not cover the whole invariant. Keep missing bindings held."
+    },
+    {
+      "id": "PR-UUID-INGRESS-ALLOCATION",
+      "file": "inputs/03-DATA_CONTRACT.md",
+      "line": 391,
+      "action": "Bind authoritative namespace and finite collision handling, verify canonical original text and unmodified variant/version/family allocation at actual ingress, and test generator failure/concurrent same-operation allocation at the public behavior seam. Do not use UUID constructor bit-overriding as validation."
+    },
+    {
+      "id": "PR-RETRY-AND-UNKNOWN",
+      "file": "inputs/03-DATA_CONTRACT.md",
+      "line": 82,
+      "action": "Bind actual lock/statement/transaction clocks and finite whole-transaction retry to existing admission lanes; positively distinguish confirmed abort from lost commit acknowledgement, preserving operation identity, expected revision and unsettled resources."
+    },
+    {
+      "id": "PR-EXTERNAL-FENCE",
+      "file": "inputs/03-DATA_CONTRACT.md",
+      "line": 105,
+      "action": "Qualify real PostgreSQL request/worker boundaries and later delivery/external-effect fences with concurrent denial, revocation, collision, aborted transaction, lost acknowledgement and delayed-effect cases. A database commit alone cannot certify provider success."
+    },
+    {
+      "id": "PR-PRIVACY-COPIES",
+      "file": "inputs/03-DATA_CONTRACT.md",
+      "line": 69,
+      "action": "Bind actual durable/ephemeral store, operation/audit/outbox field groups, earliest permitted expiry, copy inventory and finite disposal. Missing policy keeps the affected persistence/transfer denied."
+    }
+  ],
+  "limitations": [
+    "PASS applies only to the exact11 frozen input snapshots and the stated proposal questions. Existing schemas and earlier reviews remain unchanged and retain their original scope; this review does not grant inherited PASS to later edits.",
+    "The profile remains proposed, not adopted. Physical schema, SQL isolation/guard/constraint mapping, actual parser/proof/transport/worker/store bindings and finite cleanup remain prerequisites. No production runtime, database minor, coupled graph, hosting region/provider, account or external capability is selected.",
+    "No application, HTTP/WebSocket, PostgreSQL transaction, concurrency, entropy, load, accessibility, security testing, backup/deletion rehearsal or external provider call was performed. Artifact hashes establish input integrity only.",
+    "No legal/privacy/security clearance, operating limit adoption, launch readiness, whole contract/feature, fullPhase1 or founder acceptance follows. Vendor documentation supports its stated primitives and limitations, not Hengshis complete lifecycle design.",
+    "No producer proposal, canonical/project/application file or prior receipt was revised. No agents were spawned; no Figma/accounts/providers/installers/Git mutations or paid activation occurred. Only this receipt and essential independent hash evidence were written in this packet folder."
+  ]
+}

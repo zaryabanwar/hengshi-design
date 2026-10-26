@@ -1,15 +1,15 @@
 # Hengshi Design — Project Charter
 
-**Document status:** Phase 0 accepted; Phase 1 definition in progress
+**Document status:** D-097 incremental v1 delivery; prior accepted baselines retained
 **Classification:** Business confidential
-**Last reconciled:** 2026-09-03
+**Last reconciled:** 2026-10-25
 
 ## Purpose
 
 Hengshi Design is being developed as a premium, platform-oriented innovation
-delivery partner for global mid-market and enterprise buyers. The public product
-combines a complete semantic, search-first website with an optional immersive 3D
-campus, approved-knowledge AI guidance, human handoff, and discovery booking.
+delivery partner for mid-market and enterprise buyers, targeting Europe first
+with broader global reach. The public product
+combines a complete semantic, search-first website with a visitor-elected immersive World using four peer delivery streams, approved-knowledge AI guidance, human handoff, and discovery booking.
 
 This charter adopts the approved SEO-first, future-ready delivery plan without
 re-bootstrapping or replacing the existing repository. Current application code,
@@ -19,7 +19,7 @@ product development.
 
 ## Authority Bridge
 
-Use the authority order ratified in Constitution 2.0.0:
+Use the authority order in the current v1 constitution:
 
 1. Current explicit founder approval, recorded in the operational index
    `DECISIONS.md` and detailed `docs/decisions-log.md`.
@@ -37,56 +37,72 @@ Approved decisions outrank approved requirements; approved requirements outrank
 research and drafts. A conflict stops implementation and is recorded before work
 resumes.
 
-The founder approved the latest-compatible-stable technology policy and Azure
-target on 2026-07-18. Phase 0 implemented that policy in Constitution 2.0.0,
-`AGENTS.md`, project rules, software-definition workflow documents, Copilot
-instructions, and Spec Kit templates. This resolves the fixed-version/AWS
-governance conflict. Existing v3 product documents, active technical references,
-backlog, diagrams, and draft feature specs remain unreconciled prototype or
-historical evidence; Phase 1 must supersede or reconcile them before application,
-database, or cloud implementation.
+The founder reaffirmed latest mutually compatible stable technology and v1 naming
+on 2026-10-04 (D-069). This is the first development toward the first production
+release; actual dependency/schema versions and historical evidence identifiers
+remain accurate. D-068 supersedes the earlier exclusive Azure target: deployment,
+provider, region and cost planning are deferred, with Azure and AWS candidates and
+the lowest feasible operating cost/free services preferred when planning resumes.
+Existing technical references, backlog, diagrams and draft feature specs remain
+prototype or historical evidence until reconciled. Neither historical cloud plan
+selects a provider or authorizes application, database or cloud implementation.
 
 ## Product Direction
 
 - **Primary outcome:** win qualified discovery bookings.
-- **Audience:** global English-speaking mid-market and enterprise decision-makers
-  in technology, data, product, transformation, and innovation.
+- **Audience:** English-speaking mid-market and enterprise decision-makers in
+  Europe first, retaining global ambition. This establishes no European office.
 - **Sector order:** agriculture, mining, then separately gated defense content.
 - **Positioning:** innovation delivery partner providing strategy-to-delivery
   programs through custom discovery and proposals.
 - **Brand:** Hengshi Design; D-035 accepts the exact frozen Signal Ledger system +
   Framework Relay logo hybrid for Phase 1 definition. The marks remain
   unregistered and trademark-not-cleared, and production UI remains unauthorized.
-- **Experience:** a semantic, responsive Quick Access website and an optional 3D
-  campus powered by one approved publication manifest.
+- **Experience:** complete semantic Quick Access and three WebGL delivery streams,
+  with explicit World entry, automatic capability selection and accepted override
+  rules. All public representations share one immutable approved release.
+- **Movement:** D-064 adds mouse/touch free steering and walking, nearby spatial
+  streaming and retained destinations; WASD is not selected.
+- **Virtual headquarters:** D-066 selects an original modular building; D-067
+  selects nature-integrated organic architecture. Appearance and production
+  asset acceptance remain distinct from this direction. Preserve the Atlanta GLB.
 - **Search:** every indexable route must return complete semantic HTML without
   requiring JavaScript or canvas interaction.
 - **Conversion:** a globally available 30-minute discovery booking; visitors may
   book directly without first using AI.
 - **Evidence:** only verified client work or clearly labeled Hengshi-owned
   capability demonstrations may be published.
+- **Company facts:** D-070 records founder-supplied Pakistan company details as
+  admin-editable, reviewed content. Dedicated privacy/security aliases are
+  accepted and will be created by the founder; delivery and ownership remain
+  unverified. See [entity and contact definitions](docs/software-definition/06-entity-and-public-contact.md).
+- **Outlook/Teams:** retain the integration intent without making Microsoft 365
+  setup a prerequisite. Required account/API capabilities need separate proof;
+  provider deferral does not replace approved staff identity or AI privacy routes.
 
-The founder accepted the bounded Phase 1 UX architecture through D-036 after final
-deterministic validation and independent design/accessibility review. Semantic
-Quick Access and optional 3D journeys now have an accepted definition-level model
-for equivalent content, actions, recovery, and accessibility. A reviewed,
-documentation-only UI reference-design contract now covers all 33 routes, nine
-exclusions, 15 wayfinding records, 53 actions, and 45 UX tests through 40 reusable
-templates and 32 responsive/state/accessibility profiles. Its final producer
-freeze passes 183/183 checks and both independent reviews, and the founder accepted
-it as D-037 on 2026-09-05. A bounded external reference-production contract has now
-been prepared under `docs/phase-1-ui-reference-production/`, frozen at SHA-256
-`E3786F14C9F12CBF8127A18E7959881B91A9ECC5DC11BBE3E466BCEC6C7EC08D` with
-deterministic validation 147/147; it selects Figma, authorizes seven of the nine
-design batches, and awaits independent review and the founder decision at MA-025.
-Two facts constrain that gate: batches B07 and B09 are not authorizable while the
-3D storyboard workstream is `not_started` and MA-004 is blocked, so the D-037 §15
-handoff and `docs/ui/UI_SPEC.md` are deferred to a later MA-026; and no Figma or
-Stitch access path is configured or exposed on this host, verified 2026-09-06, so
-approval alone does not start production. No visual reference screen exists yet.
-UI production, application implementation, public copy, publication, and external
-Figma/Stitch writes remain unauthorized. Compatibility inventory acceptance remains
-separately pending at MA-013, and the complete Phase 1 package is not accepted.
+Accepted product/design baselines and their amendments are recorded in DECISIONS.md.
+D-025 accepts foundation, D-035 identity, D-036 UX, D-037 reference-design coverage,
+D-061/D-063 the reviewed definition/authority refinements, and D-065 architecture
+boundaries. The full Phase 1 package is not yet accepted. Specific older counts,
+freeze hashes and tool-exposure snapshots belong in their evidence records, not
+this timeless charter.
+
+The [reconciliation map](docs/software-definition/04-reconciliation-map.md) names
+canonical subjects and remaining deliverables. The [World definition](docs/phase-1-3d/WORLD_EXPERIENCE.md)
+and [architecture addendum](docs/phase-1-architecture/MOVEMENT_STREAMING_ADDENDUM.md)
+carry the current movement/spatial proposal. Independent review is required; no
+proposal self-approves. Generated concepts and browser blockouts are reviewable
+studies, not accepted production screens or proof of implemented journeys.
+
+D-097 replaces B01-as-universal-prerequisite sequencing with scoped increment
+assignments. Existing Figma references and their evidence remain protected.
+D-095 governs MCP-first routing within included availability, then computer use
+with available included Design agent/Make features; repeated per-call/method
+prompts within approved scope are superseded. Extra allowance, paid activation,
+new scope, destructive cleanup and account/sharing/publication changes retain
+separate approval. The tooling inventory and B01 brief own dated capability and
+interruption evidence. Compatibility acceptance and exact locks remain separate
+at MA-013. Legal/content/staff/provider facts must remain verified or held.
 
 ## Service Architecture
 
@@ -126,7 +142,7 @@ content, proof, named ownership, and the relevant security/privacy controls.
 - Keep WebGL as the production renderer. WebGPU remains an isolated experiment
   until official support and full parity are stable.
 - PostgreSQL 18 is the intended target only if it is generally available and
-  supported in the approved Azure region; otherwise use the newest supported GA
+  supported in the eventual approved provider/region; otherwise use the newest supported GA
   major and retain a dated exception.
 
 ## Delivery Workflow
@@ -140,15 +156,15 @@ create -> validate -> inspect -> independent review -> revise -> validate again 
 - The Hengshi project manager coordinates phase work through bounded specialist
   contracts.
 - Producers and reviewers remain independent.
-- Default maximum revision iterations are two; brand, UI, motion, and 3D allow
-  three.
+- No hard revision cap. Continue safe in-scope corrections; diagnose repeated
+  failures and escalate material decisions rather than iteration counters.
 - Durable project records, not chat history, carry state between phases.
 - External writes, destructive actions, paid activation, credential changes,
   migrations, commits, pushes, and production deployment require their explicit
   approval gate.
-- No application development is authorized until Phase 1's complete definition,
-  SEO, design, architecture, security, test, deployment, and compatibility package
-  is independently reviewed and founder-approved.
+- Each assigned increment needs its relevant definition, approved visual design,
+  contracts and coupled compatibility before implementation. Unfinished future
+  3D or deferred hosting work does not block unrelated 2D delivery under D-097.
 
 ## Current Readiness
 
@@ -163,23 +179,13 @@ not current acceptance evidence.
 
 ## Current Phase and Next Action
 
-The founder explicitly accepted Phase 0 on 2026-07-19 after independent review
-iteration 2 passed with no remaining actionable finding. Phase 1 is now in progress
-under the precise definition-only contract recorded in `TASKS.md` and
-`PROJECT_STATE.yaml`. Application implementation remains blocked until the complete
-Phase 1 package is independently reviewed and explicitly accepted by the founder.
-
-The founder accepted the bounded requirements, claims, SEO, routes, and conversion
-foundation through D-025 and retained `/industries`. D-026 approves the
-independently reviewed **Evidence in Motion** brand strategy, opening brand-identity
-definition. The compatibility inventory passed independent review iteration 2 and
-awaits the separate MA-013 founder gate; its exact production locks remain
-deliberately unselected. D-035 accepts the frozen brand identity. D-036 accepts the
-final UX architecture after 113/113 plus independent design and accessibility PASS.
-D-037 accepts the frozen UI reference-design contract and foundation-surface
-coverage package. The exact next action is founder review at MA-025 of the prepared
-bounded external reference-production contract, which selects Figma, excludes Stitch,
-authorizes batches B01–B06 and B08 only, and holds a zero-spend boundary. No D-038
-decision has been created because that approval is still pending. UI production,
-external design writes, and application implementation remain unauthorized until
-their applicable gates.
+Phase 0 and the accepted definition baselines remain accepted. D-097 (2026-10-25)
+changes delivery to brand/shared foundations, complete 2D content and service
+platform, then the full 3D World and integrated launch qualification. The complete
+agreed scope remains in [the consolidated scope](docs/software-definition/05-consolidated-goal.md).
+TASKS.md names the next bounded assignment; PROJECT_STATE.yaml preserves prior
+evidence separately from current work. The founder starts each work chat with a
+prompt from the discussion chat, returns the result and selects the next task.
+Finish one outcome and stop; do not edit active app goals or start adjacent work.
+Commits and pushes remain deferred. Visual, legal and external-action gates apply
+to the affected increment, not as a universal hold on unrelated development.

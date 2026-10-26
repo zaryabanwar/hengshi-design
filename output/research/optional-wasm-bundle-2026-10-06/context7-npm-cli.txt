@@ -1,0 +1,124 @@
+### SBOM command handler -- --package-lock-only, --sbom-format, and omits
+
+Source: https://github.com/npm/cli/blob/latest/lib/commands/sbom.js
+
+The `exec()` method orchestrates the sbom command. It reads `--package-lock-only` to decide whether to load from lock file (loadVirtual) or node_modules (loadActual), reads `--sbom-format` to validate it's set, builds a dependency selector incorporating `--omit` filters via `#buildSelector`, and dispatches to CycloneDX or SPDX output via `#buildResponse`. Output is always JSON.
+
+```javascript
+async exec () {
+    const sbomFormat = this.npm.config.get('sbom-format')
+    const packageLockOnly = this.npm.config.get('package-lock-only')
+
+    if (!sbomFormat) {
+      throw this.usageError(`Must specify --sbom-format flag with one of: ${SBOM_FORMATS.join(', ')}.`)
+    }
+
+    const opts = {
+      ...this.npm.flatOptions,
+      path: this.npm.prefix,
+      forceActual: true,
+    }
+    const Arborist = require('@npmcli/arborist')
+    const arb = new Arborist(opts)
+
+    const tree = packageLockOnly ? await arb.loadVirtual(opts).catch(() => {
+      throw this.usageError('A package-lock.json file is required in package-lock-only mode')
+    }) : await arb.loadActual(opts)
+
+    const wsNodes = this.workspaceNames?.length
+      ? arb.workspaceNodes(tree, this.workspaceNames)
+      : null
+
+    const selector = this.#buildSelector({ wsNodes })
+    log.info('sbom', `Using dependency selector: ${selector}`)
+    const items = await tree.querySelectorAll(selector)
+
+    const errors = items.flatMap(node => detectErrors(node))
+    if (errors.length) {
+      throw Object.assign(new Error([...new Set(errors)].join('\n')), {
+        code: 'ESBOMPROBLEMS',
+      })
+    }
+
+    this.#buildResponse(items.sort((a, b) => localeCompare(a.location, b.location)))
+
+    this.npm.config.set('json', true)
+    output.standard(JSON.stringify(this.#response, null, 2), { [META]: true, redact: false })
+  }
+```
+
+--------------------------------
+
+### Pass custom arguments to script command using -- separator
+
+Source: https://github.com/npm/cli/blob/latest/docs/lib/content/configuring-npm/npmrc.md
+
+Use `--` to separate npm CLI arguments from custom arguments intended for the underlying script.
+
+```bash
+npm run build -- --customFlag
+```
+
+--------------------------------
+
+### package-lock-only definition
+
+Source: https://github.com/npm/cli/blob/latest/workspaces/config/lib/definitions/definitions.js
+
+Defines --package-lock-only: only uses package-lock.json, ignoring node_modules. For update, only the lockfile is updated; for list, output is based on the lockfile tree. Also, package-lock-only implies package-lock.
+
+```javascript
+  'package-lock-only': new Definition('package-lock-only', {
+    default: false,
+    type: Boolean,
+    description: `
+      If set to true, the current operation will only use the \`package-lock.json\`,
+      ignoring \`node_modules\`.
+
+      For \`update\` this means only the \`package-lock.json\` will be updated,
+      instead of checking \`node_modules\` and downloading dependencies.
+
+      For \`list\` this means the output will be based on the tree described by the
+      \`package-lock.json\`, rather than the contents of \`node_modules\`.
+    `,
+    flatten: (key, obj, flatOptions) => {
+      flatten(key, obj, flatOptions)
+      if (flatOptions.packageLockOnly) {
+        flatOptions.packageLock = true
+      }
+    },
+  })
+```
+
+--------------------------------
+
+### Bundled deps are marked with bundled: true in the lockfile
+
+Source: https://github.com/npm/cli/blob/latest/workspaces/arborist/lib/shrinkwrap.js
+
+When committing a node to the lockfile, if the node is inside a dependency's bundleDependencies list (not the root's), lock.bundled is set to true. Conversely, when loading from a lockfile, lock.bundled is read back and sets meta.inBundle = true. This is how the lockfile distinguishes bundled packages from registry-resolved non-bundled ones.
+
+```javascript
+    if (node.inDepBundle) {
+      lock.bundled = true
+    }
+```
+
+--------------------------------
+
+### Specify packages to include using bundleDependencies
+
+Source: https://github.com/npm/cli/blob/latest/docs/lib/content/configuring-npm/package-json.md
+
+Defines an array of package names that are bundled into the tarball when running npm pack. Package versions are omitted from bundleDependencies.
+
+```json
+{
+  "name": "@npm/awesome-web-framework",
+  "version": "1.0.0",
+  "bundleDependencies": [
+    "@npm/renderized",
+    "@npm/super-streams"
+  ]
+}
+```

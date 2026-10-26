@@ -1,0 +1,28 @@
+{
+  "as_of": "2026-10-04",
+  "scope": "Unselected isolated native-lint candidate lock; package metadata advisories only",
+  "command": [
+    "npm.cmd",
+    "audit",
+    "--package-lock-only",
+    "--ignore-scripts",
+    "--include=dev",
+    "--include=optional",
+    "--include=peer",
+    "--json",
+    "--registry=https://registry.npmjs.org/",
+    "--loglevel=error"
+  ],
+  "npm_version": "11.11.1",
+  "node_version": "v24.14.0",
+  "exit_code": 0,
+  "candidate_lock_sha256": "DA45DD6CB7CEE7834FC5985B6595C2111780EE24D7CF87D1BDAF1749BE3F37AB",
+  "candidate_manifest_sha256": "F1ECB8D6083BACB65684DEF851C69A9066618534DDFC62B088FD7242E29EB69E",
+  "candidate_lock_unchanged": true,
+  "candidate_manifest_unchanged": true,
+  "report_sha256": "59E3AA5EB03E6E7954B32505A8B8348BB369C13C0C5960E22D36216B3E35AC91",
+  "fix_requested": false,
+  "production_selection": false,
+  "context7_library": "/npm/cli",
+  "official_docs": "https://docs.npmjs.com/cli/v11/commands/npm-audit/"
+}

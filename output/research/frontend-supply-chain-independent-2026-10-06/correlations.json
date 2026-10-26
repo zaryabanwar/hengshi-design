@@ -1,0 +1,160 @@
+{
+  "lock_hash": "fa903a8d901357aacf80863524e0e00ae2ece69126daf218256cdd2656b2da4c",
+  "lock_nonroot_records": 301,
+  "installed_locations": 236,
+  "unique_pairs": 233,
+  "duplicate_locations": [
+    [
+      "semver",
+      "6.3.1",
+      2
+    ],
+    [
+      "eslint-visitor-keys",
+      "5.0.1",
+      3
+    ]
+  ],
+  "SBOM_packages": 234,
+  "SBOM_edges": 398,
+  "licence_counts": {
+    "MIT": 207,
+    "ISC": 13,
+    "Apache-2.0": 44,
+    "CC-BY-4.0": 1,
+    "BSD-2-Clause": 6,
+    "BSD-3-Clause": 3,
+    "Standard 'no charge' license: https://gsap.com/standard-license.": 1,
+    "MPL-2.0": 24,
+    "BlueOak-1.0.0": 1,
+    "None": 1
+  },
+  "without_top_level_text": [
+    "@humanfs/types",
+    "@mediapipe/tasks-vision",
+    "@react-three/fiber",
+    "@rolldown/binding-win32-x64-msvc",
+    "draco3d",
+    "esrecurse",
+    "gsap",
+    "imurmurhash",
+    "maath",
+    "natural-compare",
+    "stats-gl"
+  ],
+  "licence_texts_verified": 227,
+  "verified_attestation_records": 78,
+  "predicate_counts": {
+    "https://github.com/npm/attestation/tree/main/specs/publish/v0.1": 78,
+    "https://slsa.dev/provenance/v1": 77,
+    "https://slsa.dev/provenance/v0.2": 1
+  },
+  "commands": [
+    {
+      "name": "advisory-audit",
+      "exit": 0,
+      "command": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\package\\bin\\npm-cli.js",
+        "audit",
+        "--json",
+        "--package-lock-only",
+        "--ignore-scripts",
+        "--workspaces=false",
+        "--include=dev",
+        "--include=optional",
+        "--registry=https://registry.npmjs.org",
+        "--prefix=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-three-remedy-evaluation-2026-10-06\\candidate",
+        "--userconfig=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-three-remedy-evaluation-2026-10-06\\empty-user.npmrc",
+        "--globalconfig=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-three-remedy-evaluation-2026-10-06\\empty-global.npmrc",
+        "--cache=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-supply-chain-2026-10-06\\metadata-cache",
+        "--loglevel=error"
+      ]
+    },
+    {
+      "name": "lock-sbom",
+      "exit": 1,
+      "command": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\package\\bin\\npm-cli.js",
+        "sbom",
+        "--sbom-format=spdx",
+        "--package-lock-only",
+        "--ignore-scripts",
+        "--workspaces=false",
+        "--include=dev",
+        "--include=optional",
+        "--registry=https://registry.npmjs.org",
+        "--prefix=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-three-remedy-evaluation-2026-10-06\\candidate",
+        "--userconfig=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-three-remedy-evaluation-2026-10-06\\empty-user.npmrc",
+        "--globalconfig=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-three-remedy-evaluation-2026-10-06\\empty-global.npmrc",
+        "--cache=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-supply-chain-2026-10-06\\metadata-cache",
+        "--loglevel=error"
+      ]
+    },
+    {
+      "name": "installed-sbom",
+      "exit": 0,
+      "command": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\package\\bin\\npm-cli.js",
+        "sbom",
+        "--sbom-format=spdx",
+        "--ignore-scripts",
+        "--workspaces=false",
+        "--include=dev",
+        "--include=optional",
+        "--registry=https://registry.npmjs.org",
+        "--prefix=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-three-remedy-evaluation-2026-10-06\\candidate",
+        "--userconfig=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-three-remedy-evaluation-2026-10-06\\empty-user.npmrc",
+        "--globalconfig=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-three-remedy-evaluation-2026-10-06\\empty-global.npmrc",
+        "--cache=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-supply-chain-2026-10-06\\metadata-cache",
+        "--loglevel=error"
+      ]
+    },
+    {
+      "name": "installed-signatures",
+      "exit": 0,
+      "command": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\package\\bin\\npm-cli.js",
+        "audit",
+        "signatures",
+        "--json",
+        "--ignore-scripts",
+        "--workspaces=false",
+        "--include=dev",
+        "--include=optional",
+        "--registry=https://registry.npmjs.org",
+        "--prefix=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-three-remedy-evaluation-2026-10-06\\candidate",
+        "--userconfig=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-three-remedy-evaluation-2026-10-06\\empty-user.npmrc",
+        "--globalconfig=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-three-remedy-evaluation-2026-10-06\\empty-global.npmrc",
+        "--cache=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-supply-chain-2026-10-06\\metadata-cache",
+        "--loglevel=error"
+      ]
+    },
+    {
+      "name": "detailed-signatures",
+      "exit": 0,
+      "command": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\package\\bin\\npm-cli.js",
+        "audit",
+        "signatures",
+        "--json",
+        "--include-attestations",
+        "--ignore-scripts",
+        "--workspaces=false",
+        "--include=dev",
+        "--include=optional",
+        "--registry=https://registry.npmjs.org",
+        "--prefix=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-three-remedy-evaluation-2026-10-06\\candidate",
+        "--userconfig=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-three-remedy-evaluation-2026-10-06\\empty-user.npmrc",
+        "--globalconfig=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-three-remedy-evaluation-2026-10-06\\empty-global.npmrc",
+        "--cache=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-supply-chain-2026-10-06\\metadata-cache",
+        "--loglevel=error"
+      ]
+    }
+  ],
+  "limits": "Offline current package/record/hash correlations; saved dated remote verification not independently replayed; no signature count or full security/legal clearance."
+}

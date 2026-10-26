@@ -1,0 +1,714 @@
+{
+  "product": "Hengshi Design v1",
+  "reviewer": "/root/review_phase1_pending_v1",
+  "reviewed_at_utc": "2026-10-12T09:05:10.527862+00:00",
+  "status": "DOING",
+  "verdict": "PASS",
+  "authorization": "Founder-approved replacement independent reviewer for these two packets on 2026-10-12; delegated bounded review only. No external execution authority follows.",
+  "exact_scope": "Frozen 60-input attempts31–33 authorization/source/raw report/native downloaded PNG/eleven exact unit, view and annotation crops/result accounting, plus a separate source-only determination for the frozen prepared read-only inventory diagnosis. This receipt reviews saved evidence and does not establish live Figma state.",
+  "packet_binding": {
+    "manifest": "review-inputs.json",
+    "manifest_sha256": "2dd5118038948fcfae03edbc16fc94064a3504ecdaf8ddc1cce45e5c02929198",
+    "input_count": 60,
+    "all_frozen_hashes_and_byte_counts_verified": true,
+    "inputs": [
+      {
+        "source_path": "AGENTS.md",
+        "snapshot_path": "review-inputs/00-AGENTS.md",
+        "bytes": 7686,
+        "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+      },
+      {
+        "source_path": ".specify/memory/constitution.md",
+        "snapshot_path": "review-inputs/01-constitution.md",
+        "bytes": 16234,
+        "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+      },
+      {
+        "source_path": "DECISIONS.md",
+        "snapshot_path": "review-inputs/02-DECISIONS.md",
+        "bytes": 97345,
+        "sha256": "02935357728b5c3fcec2b12f715fc4fff3657916a5646eb38a49f7ffd51892df"
+      },
+      {
+        "source_path": "PROJECT_STATE.yaml",
+        "snapshot_path": "review-inputs/03-PROJECT_STATE.yaml",
+        "bytes": 7736,
+        "sha256": "167e620c6eeba69e7730054739a47fccd1d03ab43639f2e2f0a9de000aac73eb"
+      },
+      {
+        "source_path": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+        "snapshot_path": "review-inputs/04-B01_EXECUTION_BRIEF.md",
+        "bytes": 48829,
+        "sha256": "e04e3e9f983ee3030fe4f4123c0a0be87eeb01984f24720b9841e4fbfeb57160"
+      },
+      {
+        "source_path": "docs/phase-1-ui-reference-production/validation/mcp-call-ledger.csv",
+        "snapshot_path": "review-inputs/05-mcp-call-ledger.csv",
+        "bytes": 22507,
+        "sha256": "c5df25448939cd06601679dbdc2bf6d16a56b8d25387cf2fd5dfbc96bf3f24f9"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/prepare-call.js",
+        "snapshot_path": "review-inputs/06-prepare-call.js",
+        "bytes": 13696,
+        "sha256": "e7529911bdbda5b7c259dfaef0eefb8d154020c0c91c03b2c7790aea30a790fe"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/cleanup-body.js",
+        "snapshot_path": "review-inputs/07-cleanup-body.js",
+        "bytes": 6214,
+        "sha256": "a650c2281be8b3a260b8870141fd31b69dd38e0bdaa906bb65ab2699aeb75184"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/independent-review-preparation-v1.json",
+        "snapshot_path": "review-inputs/08-independent-review-preparation-v1.json",
+        "bytes": 6960,
+        "sha256": "9019a569d9f80edc416a2281dc40d425cb4e41cdca743666692fdc61b4a886a9"
+      },
+      {
+        "source_path": "output/research/b01-mode-coverage-2026-10-12/attempt29-2026-10-12/input.json",
+        "snapshot_path": "review-inputs/09-input.json",
+        "bytes": 42285,
+        "sha256": "fbba65b15900bd0f3c9ccde089b74afc038f002f84b587289c34516a9f88295a"
+      },
+      {
+        "source_path": "output/research/b01-mode-coverage-2026-10-12/attempt29-2026-10-12/receipt.json",
+        "snapshot_path": "review-inputs/10-receipt.json",
+        "bytes": 60960,
+        "sha256": "98631654e1ca0fdf1b353bc6383ad7f66e11f11620dca14a2d5c8eadf1cddc85"
+      },
+      {
+        "source_path": "output/research/b01-mode-coverage-2026-10-12/attempt29-2026-10-12/crop-inventory.json",
+        "snapshot_path": "review-inputs/11-crop-inventory.json",
+        "bytes": 49467,
+        "sha256": "01a5fecd3e6d6a92f3470851608aed68a1e800737d9f75c084d581ab4ea01ce0"
+      },
+      {
+        "source_path": "output/research/b01-mode-coverage-2026-10-12/attempt29-2026-10-12/independent-review-result-v1.json",
+        "snapshot_path": "review-inputs/12-independent-review-result-v1.json",
+        "bytes": 35762,
+        "sha256": "980325088aee4111200136552fb9aaf739a6d011c25707859b1e33448a3617c7"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/authorization.json",
+        "snapshot_path": "review-inputs/13-authorization.json",
+        "bytes": 1405,
+        "sha256": "25f9de797571ffc33a71a19850cef2115723aae26e63688abdb37e4905bd7617"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/cleanup-call.js",
+        "snapshot_path": "review-inputs/14-cleanup-call.js",
+        "bytes": 12039,
+        "sha256": "60815d599398b0e220fd44b057d26385a2ef06cd2ab085fe9ebced71d4645f23"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/cleanup-input.json",
+        "snapshot_path": "review-inputs/15-cleanup-input.json",
+        "bytes": 8165,
+        "sha256": "5c05998c88d1c69a87770a3060e5f9ec8e69cdbbc0d8844e5a8cf9488b96a872"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/cleanup-raw-response.json",
+        "snapshot_path": "review-inputs/16-cleanup-raw-response.json",
+        "bytes": 623,
+        "sha256": "2b110d0ef432b49f5812499102db712401345f0261237d2650a23b87724d1958"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/cleanup-result.json",
+        "snapshot_path": "review-inputs/17-cleanup-result.json",
+        "bytes": 520,
+        "sha256": "ce9e8a12db3d2615b299ae61c54850fce0375d7a0ca29166c1723c03dbd4b2fe"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/comparison.png",
+        "snapshot_path": "review-inputs/18-comparison.png",
+        "bytes": 783400,
+        "sha256": "3663fd530f412749832b65cd2a199d7bb480eb30acca4a20c814676d4f15b4bc"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/crop-inventory.json",
+        "snapshot_path": "review-inputs/19-crop-inventory.json",
+        "bytes": 7433,
+        "sha256": "b8fe07f97a9b0e66bed58f4e2d5608e7ef64815fcf631fe71eab60c7d3287c45"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/download-input.json",
+        "snapshot_path": "review-inputs/20-download-input.json",
+        "bytes": 112,
+        "sha256": "8d88959d9703fd565ae02adf9044bf39c06f3a55a53a114253dc93a3118b70c8"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/download-response-redacted.json",
+        "snapshot_path": "review-inputs/21-download-response-redacted.json",
+        "bytes": 234,
+        "sha256": "33864266def6f17fa00c611e310d4f90343fa22f8cb442ad4f7f5badfb42f009"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/download-result.json",
+        "snapshot_path": "review-inputs/22-download-result.json",
+        "bytes": 330,
+        "sha256": "9904c027f55a40d0504fdfc32ccc4fc7d2a8e29353c19c857fb0df268e75d431"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/gallery-browser-check.json",
+        "snapshot_path": "review-inputs/23-gallery-browser-check.json",
+        "bytes": 448,
+        "sha256": "d1b6b1619c4eeb2cc55a8e323c9dcaa4ac44d5b1c3e59b3a58a60296a6f2746b"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/gallery-records.json",
+        "snapshot_path": "review-inputs/24-gallery-records.json",
+        "bytes": 39794,
+        "sha256": "5a361bf4fa278c9da419e58905d8621a314b0dcefe8a0c2e384727662a0cb052"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/index.html",
+        "snapshot_path": "review-inputs/25-index.html",
+        "bytes": 35962,
+        "sha256": "d59493009788c658fd5456028c8db21bcaf787791b530b829f3529be632711d8"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/inspection-group-01.png",
+        "snapshot_path": "review-inputs/26-inspection-group-01.png",
+        "bytes": 256961,
+        "sha256": "226ad0afbb60f0c6678db90e665fc1a3bf4be06a32c1ba7fca66afe6107239dd"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/inspection-group-02.png",
+        "snapshot_path": "review-inputs/27-inspection-group-02.png",
+        "bytes": 335888,
+        "sha256": "f4d5c22067be7e03f7ecf3fe168667ad80117dece408dfd615b60690fa747342"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/inspection-group-03.png",
+        "snapshot_path": "review-inputs/28-inspection-group-03.png",
+        "bytes": 395071,
+        "sha256": "f32f90d8d83af7d6c6beafa3d57d234979aef950d0f5e083c28a575c32cca390"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/inspect_download.py",
+        "snapshot_path": "review-inputs/29-inspect_download.py",
+        "bytes": 2284,
+        "sha256": "25d53c1356bb06f2c0ff0383bb7a74b6e1879e38315201b3437c49948125b60b"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/prepare-call.js",
+        "snapshot_path": "review-inputs/30-prepare-call.js",
+        "bytes": 13696,
+        "sha256": "e7529911bdbda5b7c259dfaef0eefb8d154020c0c91c03b2c7790aea30a790fe"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/prepare-input.json",
+        "snapshot_path": "review-inputs/31-prepare-input.json",
+        "bytes": 7060,
+        "sha256": "0ec6d10eca296a9f6eb9ee0432589ca13ddf985577e479ee3a4e74a903677a88"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/prepare-raw-response.json",
+        "snapshot_path": "review-inputs/32-prepare-raw-response.json",
+        "bytes": 9039,
+        "sha256": "03c36c94b35b5fb77043c25335124f6a2800e250f8500312797b45e508445992"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/prepare-receipt.json",
+        "snapshot_path": "review-inputs/33-prepare-receipt.json",
+        "bytes": 13389,
+        "sha256": "57fa1128d7c7d8765e899cad1c775b39fa42a57197578b4e8db17372629d495d"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/producer-inspection.json",
+        "snapshot_path": "review-inputs/34-producer-inspection.json",
+        "bytes": 1482,
+        "sha256": "cd297ac7996a508309e819e5de09e40bcf06c63dc1ff80badaa355728371f33f"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/unit-31.png",
+        "snapshot_path": "review-inputs/35-unit-31.png",
+        "bytes": 131434,
+        "sha256": "3f78bb70df3c4abee23757739dbeb5c686aed10cbc178567ca007554b6f00414"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/unit-32.png",
+        "snapshot_path": "review-inputs/36-unit-32.png",
+        "bytes": 116383,
+        "sha256": "ef22881da1829158f8540e4fa4dc220b2cbeac16e40ed4eae35dac7b83d0c0a7"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/unit-34.png",
+        "snapshot_path": "review-inputs/37-unit-34.png",
+        "bytes": 131962,
+        "sha256": "ee77cbdd935943189a8008627739d9acc3bad8dcc4c53ef32b4018fa8b7216d6"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/unit-35.png",
+        "snapshot_path": "review-inputs/38-unit-35.png",
+        "bytes": 117429,
+        "sha256": "1ec81b17259c04fc46a29e23b929d8176e3c55330ef464d91e64384181e81104"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/unit-36.png",
+        "snapshot_path": "review-inputs/39-unit-36.png",
+        "bytes": 131909,
+        "sha256": "a8a84e99948c6c2d2abc0dc977d1a638e4a9fed7feb903b1f74dd4f1362a8c8d"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/unit-38.png",
+        "snapshot_path": "review-inputs/40-unit-38.png",
+        "bytes": 132502,
+        "sha256": "e867f539ebf21f8dd507451a65d6145691947e6e64cb733978733f998851f6f7"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/unit-40.png",
+        "snapshot_path": "review-inputs/41-unit-40.png",
+        "bytes": 89038,
+        "sha256": "24defade454ca507d1c3ed79a76fee24968c014ab275cc44caf1949796fbdc55"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/unit-41.png",
+        "snapshot_path": "review-inputs/42-unit-41.png",
+        "bytes": 117515,
+        "sha256": "863c574a4e9de8eedefb13d0d86739abdc743eba37723826319773dde3d33d06"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/unit-42.png",
+        "snapshot_path": "review-inputs/43-unit-42.png",
+        "bytes": 103756,
+        "sha256": "325a5b5fc67a8f324dcab900399f15fdc358692c11532ca65170101377acd4e2"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/unit-43.png",
+        "snapshot_path": "review-inputs/44-unit-43.png",
+        "bytes": 130057,
+        "sha256": "323970dcd08067db109f694a72f70786e86d3172fd05f1c46fed177ebb8ffc6c"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/unit-44.png",
+        "snapshot_path": "review-inputs/45-unit-44.png",
+        "bytes": 128545,
+        "sha256": "ede47b72e90cad11f1fcdd9a693f1b3dba761501b314d27698af341719443278"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/view-31.png",
+        "snapshot_path": "review-inputs/46-view-31.png",
+        "bytes": 82292,
+        "sha256": "1f9df4a408065baa393c74a777f935356ea137daea36955e83ac3e3068b83578"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/view-32.png",
+        "snapshot_path": "review-inputs/47-view-32.png",
+        "bytes": 74051,
+        "sha256": "0e2517beecd0483dbcb621a0961db7bcb2fc87e98b383c0c46e3d98d7940e693"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/view-34.png",
+        "snapshot_path": "review-inputs/48-view-34.png",
+        "bytes": 82578,
+        "sha256": "cc33780d1afff2667fb79bcc6ce58ce06a79b469f675d7c73cfa2da7c59b80bc"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/view-35.png",
+        "snapshot_path": "review-inputs/49-view-35.png",
+        "bytes": 74429,
+        "sha256": "f9f2cc1a2b4ce0382462e88e5dd32d02cebed3f63ab6ff2e3f8e9c5cf586e4cb"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/view-36.png",
+        "snapshot_path": "review-inputs/50-view-36.png",
+        "bytes": 82656,
+        "sha256": "b7b13406d613c65e6988f5a0aae3dd15c5355a4c7b13f5159fc888b9cbb65229"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/view-38.png",
+        "snapshot_path": "review-inputs/51-view-38.png",
+        "bytes": 83004,
+        "sha256": "19a0e70ea3b72f31f4212b22c6da03ba60566e345f3c924846ba9dc44c9ad7a7"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/view-40.png",
+        "snapshot_path": "review-inputs/52-view-40.png",
+        "bytes": 42775,
+        "sha256": "d026728604a70f0db27c91af0ce9359785b050ae6bafcc637234af024264df1c"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/view-41.png",
+        "snapshot_path": "review-inputs/53-view-41.png",
+        "bytes": 74768,
+        "sha256": "ab174fbab708e245eb8bef609527a30a0f30f5d751744e938c6769943df9ae6a"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/view-42.png",
+        "snapshot_path": "review-inputs/54-view-42.png",
+        "bytes": 60704,
+        "sha256": "51d03f47282a2907e75c30b08a549f2a7cb4f852b4e19225ffb757589ae4aa26"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/view-43.png",
+        "snapshot_path": "review-inputs/55-view-43.png",
+        "bytes": 82819,
+        "sha256": "b97239075a86b31eec2294c810a4443202fc94dfca2432296831bb7e40fcac60"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/view-44.png",
+        "snapshot_path": "review-inputs/56-view-44.png",
+        "bytes": 80588,
+        "sha256": "64a8b1f915ade7bb17f2e8d670ea38220b7a7af58d5836a013f477e9a0ce34f3"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/cleanup-diagnosis-preparation/input.json",
+        "snapshot_path": "review-inputs/57-input.json",
+        "bytes": 8165,
+        "sha256": "5c05998c88d1c69a87770a3060e5f9ec8e69cdbbc0d8844e5a8cf9488b96a872"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/cleanup-diagnosis-preparation/figma-call.js",
+        "snapshot_path": "review-inputs/58-figma-call.js",
+        "bytes": 9876,
+        "sha256": "18403ea31224110b4d18fa777010519199312c3daa2844dd426a3f23790f2167"
+      },
+      {
+        "source_path": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/cleanup-diagnosis-preparation/proposal.json",
+        "snapshot_path": "review-inputs/59-proposal.json",
+        "bytes": 1067,
+        "sha256": "1a3af5d5cccb51ff3f8ad09d2a5c6fd716098d6a3c9559ae89cd38fa18dc83be"
+      }
+    ],
+    "verification_evidence": "independent-review-hash-verification-v1.json"
+  },
+  "determinations": {
+    "actual_result_accounting_and_static_pixels": {
+      "verdict": "PASS",
+      "findings": [],
+      "authorization_binding": {
+        "source": "review-inputs/02-DECISIONS.md:1255-1272 and review-inputs/13-authorization.json:5-35",
+        "attempts": [
+          31,
+          32,
+          33
+        ],
+        "conservatively_metered": [
+          28,
+          29,
+          30
+        ],
+        "batch_prompt_exception": "this exact three-call workflow only",
+        "automatic_retry_authorized": false,
+        "paid_activation_authorized": false,
+        "actual_provider_debit_or_balance": "unknown"
+      },
+      "raw_correspondence": "Independently parsed successful preparation text report equals the saved preparation receipt. Executed preparation bytes equal the reviewed correction1 source. Bound cleanup input equals the successful preparation cleanupInput; bound cleanup source has the exact reviewed cleanup template tail. Download node 38:3157 equals the returned comparisonSheetId and cleanupInput.sheetId.",
+      "accounting": {
+        "preparation_sheet_id": "38:3157",
+        "preparation_reported_temporary_id_count": 162,
+        "losslessly_decoded_distinct_reported_id_count": 162,
+        "exact_eleven_source_and_tile_mappings": true,
+        "reported_preservation": "Original descriptors, positions, root and relative original parent order reported unchanged at preparation. These are bounded producer assertions, not an independent live canvas or exhaustive appearance/editability census.",
+        "downloaded_png": {
+          "width": 3808,
+          "height": 1996,
+          "bytes": 783400,
+          "sha256": "3663fd530f412749832b65cd2a199d7bb480eb30acca4a20c814676d4f15b4bc",
+          "provider_size_matches_saved_png": true,
+          "requested_scale": 1,
+          "secret_export_url_in_receipt": false
+        },
+        "cleanup_attempt33": {
+          "result": "INVALID_ARGUMENT: Unknown child or changed temporary inventory; inspect",
+          "removal_completed": false,
+          "source_refusal_before_font_load_or_removal": "review-inputs/14-cleanup-call.js:13; font loading starts at17 and removal at22",
+          "last_known_temporary_sheet": "38:3157 retained; later live state not read",
+          "provider_safeToRetryWithoutCanvasRead": true,
+          "provider_hint_overrides_no_automatic_retry": false,
+          "cause_determined": false,
+          "cleanup_obligation": "BLOCKED pending separately authorized inventory evidence and any separately approved exact remediation"
+        }
+      },
+      "visual_inspection": {
+        "method": "Viewed every supplied native unit including its complete annotation and every separate view using original image detail; also viewed the native comparison PNG and all three supplied original-size montages. Independent Pillow decoded RGBA byte comparisons verify all22 crop files against exact frozen source regions; producer crop-writing script was not executed.",
+        "units": [
+          {
+            "input_index": 31,
+            "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_HIGH_V01",
+            "unit_id": "36:3451",
+            "frame_id": "36:3452",
+            "unit_sha256": "3f78bb70df3c4abee23757739dbeb5c686aed10cbc178567ca007554b6f00414",
+            "view_sha256": "1f9df4a408065baa393c74a777f935356ea137daea36955e83ac3e3068b83578",
+            "native_unit_dimensions": [
+              320,
+              1928
+            ],
+            "native_view_dimensions": [
+              320,
+              1332
+            ],
+            "unit_view_and_complete_annotation_inspected_at_original_size": true,
+            "verdict": "PASS",
+            "visible_clipping_or_overlap": false,
+            "source_mode_stream_and_fixture_warning_aligned": true
+          },
+          {
+            "input_index": 32,
+            "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_REDUCED_MOTION_STREAM_HIGH_V01",
+            "unit_id": "36:3480",
+            "frame_id": "36:3481",
+            "unit_sha256": "ef22881da1829158f8540e4fa4dc220b2cbeac16e40ed4eae35dac7b83d0c0a7",
+            "view_sha256": "0e2517beecd0483dbcb621a0961db7bcb2fc87e98b383c0c46e3d98d7940e693",
+            "native_unit_dimensions": [
+              320,
+              1768
+            ],
+            "native_view_dimensions": [
+              320,
+              1244
+            ],
+            "unit_view_and_complete_annotation_inspected_at_original_size": true,
+            "verdict": "PASS",
+            "visible_clipping_or_overlap": false,
+            "source_mode_stream_and_fixture_warning_aligned": true
+          },
+          {
+            "input_index": 34,
+            "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_MEDIUM_V01",
+            "unit_id": "36:3540",
+            "frame_id": "36:3541",
+            "unit_sha256": "ee77cbdd935943189a8008627739d9acc3bad8dcc4c53ef32b4018fa8b7216d6",
+            "view_sha256": "cc33780d1afff2667fb79bcc6ce58ce06a79b469f675d7c73cfa2da7c59b80bc",
+            "native_unit_dimensions": [
+              320,
+              1928
+            ],
+            "native_view_dimensions": [
+              320,
+              1332
+            ],
+            "unit_view_and_complete_annotation_inspected_at_original_size": true,
+            "verdict": "PASS",
+            "visible_clipping_or_overlap": false,
+            "source_mode_stream_and_fixture_warning_aligned": true
+          },
+          {
+            "input_index": 35,
+            "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_LOW_POWER_STREAM_LOW_V01",
+            "unit_id": "36:3569",
+            "frame_id": "36:3570",
+            "unit_sha256": "1ec81b17259c04fc46a29e23b929d8176e3c55330ef464d91e64384181e81104",
+            "view_sha256": "f9f2cc1a2b4ce0382462e88e5dd32d02cebed3f63ab6ff2e3f8e9c5cf586e4cb",
+            "native_unit_dimensions": [
+              320,
+              1768
+            ],
+            "native_view_dimensions": [
+              320,
+              1244
+            ],
+            "unit_view_and_complete_annotation_inspected_at_original_size": true,
+            "verdict": "PASS",
+            "visible_clipping_or_overlap": false,
+            "source_mode_stream_and_fixture_warning_aligned": true
+          },
+          {
+            "input_index": 36,
+            "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_LOW_V01",
+            "unit_id": "36:3597",
+            "frame_id": "36:3598",
+            "unit_sha256": "a8a84e99948c6c2d2abc0dc977d1a638e4a9fed7feb903b1f74dd4f1362a8c8d",
+            "view_sha256": "b7b13406d613c65e6988f5a0aae3dd15c5355a4c7b13f5159fc888b9cbb65229",
+            "native_unit_dimensions": [
+              320,
+              1928
+            ],
+            "native_view_dimensions": [
+              320,
+              1332
+            ],
+            "unit_view_and_complete_annotation_inspected_at_original_size": true,
+            "verdict": "PASS",
+            "visible_clipping_or_overlap": false,
+            "source_mode_stream_and_fixture_warning_aligned": true
+          },
+          {
+            "input_index": 38,
+            "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_SEMANTIC_V01",
+            "unit_id": "36:3658",
+            "frame_id": "36:3659",
+            "unit_sha256": "e867f539ebf21f8dd507451a65d6145691947e6e64cb733978733f998851f6f7",
+            "view_sha256": "19a0e70ea3b72f31f4212b22c6da03ba60566e345f3c924846ba9dc44c9ad7a7",
+            "native_unit_dimensions": [
+              320,
+              1928
+            ],
+            "native_view_dimensions": [
+              320,
+              1332
+            ],
+            "unit_view_and_complete_annotation_inspected_at_original_size": true,
+            "verdict": "PASS",
+            "visible_clipping_or_overlap": false,
+            "source_mode_stream_and_fixture_warning_aligned": true
+          },
+          {
+            "input_index": 40,
+            "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_PRINT_STREAM_SEMANTIC_V01",
+            "unit_id": "36:3719",
+            "frame_id": "36:3720",
+            "unit_sha256": "24defade454ca507d1c3ed79a76fee24968c014ab275cc44caf1949796fbdc55",
+            "view_sha256": "d026728604a70f0db27c91af0ce9359785b050ae6bafcc637234af024264df1c",
+            "native_unit_dimensions": [
+              320,
+              1228
+            ],
+            "native_view_dimensions": [
+              320,
+              668
+            ],
+            "unit_view_and_complete_annotation_inspected_at_original_size": true,
+            "verdict": "PASS",
+            "visible_clipping_or_overlap": false,
+            "source_mode_stream_and_fixture_warning_aligned": true
+          },
+          {
+            "input_index": 41,
+            "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SEMANTIC_SHELL_STREAM_SEMANTIC_V01",
+            "unit_id": "36:3735",
+            "frame_id": "36:3736",
+            "unit_sha256": "863c574a4e9de8eedefb13d0d86739abdc743eba37723826319773dde3d33d06",
+            "view_sha256": "ab174fbab708e245eb8bef609527a30a0f30f5d751744e938c6769943df9ae6a",
+            "native_unit_dimensions": [
+              320,
+              1768
+            ],
+            "native_view_dimensions": [
+              320,
+              1244
+            ],
+            "unit_view_and_complete_annotation_inspected_at_original_size": true,
+            "verdict": "PASS",
+            "visible_clipping_or_overlap": false,
+            "source_mode_stream_and_fixture_warning_aligned": true
+          },
+          {
+            "input_index": 42,
+            "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_GRAYSCALE_STREAM_SEMANTIC_V01",
+            "unit_id": "36:3763",
+            "frame_id": "36:3764",
+            "unit_sha256": "325a5b5fc67a8f324dcab900399f15fdc358692c11532ca65170101377acd4e2",
+            "view_sha256": "51d03f47282a2907e75c30b08a549f2a7cb4f852b4e19225ffb757589ae4aa26",
+            "native_unit_dimensions": [
+              320,
+              1768
+            ],
+            "native_view_dimensions": [
+              320,
+              1244
+            ],
+            "unit_view_and_complete_annotation_inspected_at_original_size": true,
+            "verdict": "PASS",
+            "visible_clipping_or_overlap": false,
+            "source_mode_stream_and_fixture_warning_aligned": true
+          },
+          {
+            "input_index": 43,
+            "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_UNAVAILABLE_FONT_STREAM_SEMANTIC_V01",
+            "unit_id": "36:3791",
+            "frame_id": "36:3792",
+            "unit_sha256": "323970dcd08067db109f694a72f70786e86d3172fd05f1c46fed177ebb8ffc6c",
+            "view_sha256": "b97239075a86b31eec2294c810a4443202fc94dfca2432296831bb7e40fcac60",
+            "native_unit_dimensions": [
+              320,
+              1948
+            ],
+            "native_view_dimensions": [
+              320,
+              1388
+            ],
+            "unit_view_and_complete_annotation_inspected_at_original_size": true,
+            "verdict": "PASS",
+            "visible_clipping_or_overlap": false,
+            "source_mode_stream_and_fixture_warning_aligned": true
+          },
+          {
+            "input_index": 44,
+            "reference": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_UNAVAILABLE_IMAGE_ASSET_STREAM_SEMANTIC_V01",
+            "unit_id": "36:3819",
+            "frame_id": "36:3820",
+            "unit_sha256": "ede47b72e90cad11f1fcdd9a693f1b3dba761501b314d27698af341719443278",
+            "view_sha256": "64a8b1f915ade7bb17f2e8d670ea38220b7a7af58d5836a013f477e9a0ce34f3",
+            "native_unit_dimensions": [
+              320,
+              1910
+            ],
+            "native_view_dimensions": [
+              320,
+              1332
+            ],
+            "unit_view_and_complete_annotation_inspected_at_original_size": true,
+            "verdict": "PASS",
+            "visible_clipping_or_overlap": false,
+            "source_mode_stream_and_fixture_warning_aligned": true
+          }
+        ],
+        "all_eleven_prior_missing_indexes_now_have_this_bounded_static_pixel_verdict": true,
+        "prior_attempt29_receipt_rewritten_or_extended": false,
+        "static_observations": [
+          "Current stream text and pending checked choice remain distinct in all interactive specimens; Apply and the advisement are readable.",
+          "All four screen-reader specimens include the stated semantic order and native fieldset/legend/radio/Apply specification, expressly without assistive-technology execution proof.",
+          "Reduced-motion and low-power annotations preserve the Services/error/recovery meaning without runtime or performance claims.",
+          "Print supplies a noninteractive summary with an explicitly unapplied pending choice.",
+          "Quick Access remains a peer presentation; grayscale retains textual state meaning.",
+          "Unavailable Inter is represented by readable reflow in Cascadia Mono; unavailable optional brand mark retains the company name without claiming an actual asset failure.",
+          "Confirmed pre-admission error preserves prior eligible content and states that no successful mutation is inferred."
+        ]
+      },
+      "evidence": [
+        "review-inputs/33-prepare-receipt.json:266-284,310-316,317-660",
+        "review-inputs/22-download-result.json:2-12",
+        "review-inputs/16-cleanup-raw-response.json:5-20",
+        "review-inputs/17-cleanup-result.json:2-13",
+        "review-inputs/19-crop-inventory.json:7-242",
+        "independent-review-source-evidence-v1.json",
+        "independent-review-crop-evidence-v1.json"
+      ]
+    },
+    "prepared_read_only_inventory_diagnosis_source": {
+      "verdict": "PASS",
+      "findings": [],
+      "reviewed_source": "review-inputs/58-figma-call.js",
+      "source_sha256": "18403ea31224110b4d18fa777010519199312c3daa2844dd426a3f23790f2167",
+      "input_binding": "Frozen diagnostic input is byte-identical to bound cleanup input and value-identical to successful preparation cleanupInput. Diagnostic const input equals that exact saved input.",
+      "source_properties": [
+        "Exact file/editor/page and owner structure checks precede diagnosis; only recorded root and sheet are traversed. It selects the page for reading and contains no canvas-node creation, removal, reassignment or property write.",
+        "Recorded inventory decoding is limited to2000 IDs; current sheet traversal is limited to512 nodes and the serialized response to18000 encoded bytes, with explicit refusal rather than silent truncation.",
+        "All162 recorded IDs are resolved with reported ID, resolved ID, type and parent. Current traversal records ID/type/parent; expected-only/current-only IDs and ordered clone roots are returned.",
+        "The current traversal and descriptor/order readout are taken after the last awaited lookup. Earlier per-ID resolution is explicitly a multi-await snapshot, not an atomic census.",
+        "Unknown/missing owner structure or bounds/size failures stop without deletion. It does not normalize aliases or infer removal rights from resolver identity.",
+        "Noncryptographic checksum comparisons detect accidental descriptor changes only; their limitations and need to assess alias/instance ownership are explicit."
+      ],
+      "syntax_verification": "Independent Node AsyncFunction compilation of frozen prepare, bound cleanup and diagnostic sources passed; none was invoked against Figma or a synthetic figma object.",
+      "evidence": [
+        "review-inputs/58-figma-call.js:7-15",
+        "review-inputs/59-proposal.json:4-22",
+        "independent-review-source-evidence-v1.json"
+      ],
+      "execution_status": "Prepared source review only. No live inventory result, diagnosis of cleanup cause, cleanup repair, new call or retry is supplied or authorized by this PASS."
+    }
+  },
+  "findings": [],
+  "remaining_obligations": [
+    {
+      "id": "B01-CLEANUP-HOLD",
+      "type": "existing_execution_hold_not_a_new_review_defect",
+      "file": "review-inputs/14-cleanup-call.js",
+      "line": 13,
+      "evidence_file": "review-inputs/17-cleanup-result.json",
+      "evidence_line": 10,
+      "action": "Preserve the unresolved cleanup obligation. Obtain live structural inventory through an applicable separately approved read-only call when capability/allowance exists; reconcile actual ownership before proposing any exact cleanup change. Do not retry or remove anything automatically."
+    }
+  ],
+  "limits": [
+    "PASS establishes accuracy of the supplied saved result accounting and eleven static views/annotations, and prepared diagnostic source suitability only. It does not turn the failed cleanup into success.",
+    "The earlier37-unit attempt29 review remains limited to its own frozen inputs; this receipt neither rewrites it nor establishes complete required B01 profiles.",
+    "No live canvas identity/editability/font/paint/variable/prototype census, restore, native archive/_EXIT, interaction, actual keyboard/OS/assistive-technology/reduced-motion/low-power/print/font-or-image-failure execution, accessibility conformity, fullB01/Phase1 or founder acceptance.",
+    "Subsequent attempts34–36, attempt36 Starter-plan MCP limit/no-inventory result, later OAuth/account state, later ledger/checkpoint/brief changes and current gallery edits are outside the frozen inputs; none is imported as execution, inventory, pixel or restoration proof.",
+    "No Figma/accounts/providers/installers/Git mutations, application/canonical edits, paid activation or subagent occurred. Only this independent review receipt and essential local hash/crop/source evidence were written. The producer evidence and manifests remain unchanged."
+  ]
+}

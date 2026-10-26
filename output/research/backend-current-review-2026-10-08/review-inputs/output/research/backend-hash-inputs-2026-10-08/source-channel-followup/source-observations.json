@@ -1,0 +1,186 @@
+{
+  "status": "DOING",
+  "scope": "Public upstream release/tag/source metadata only",
+  "results": [
+    {
+      "name": "fastapi-release",
+      "url": "https://api.github.com/repos/fastapi/fastapi/releases/tags/0.143.0",
+      "observed_at": "2026-10-08T16:47:05.334706+00:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/fastapi/fastapi/releases/tags/0.143.0",
+      "raw_bytes": 2726,
+      "raw_sha256": "6eab473ba7d7682ed7728288dad0fb618dd5877811e9fdd48fb8e20f2bfefc6a",
+      "snapshot": "fastapi-release.source.gz",
+      "release": {
+        "tag_name": "0.143.0",
+        "draft": false,
+        "prerelease": false,
+        "published_at": "2026-10-08T12:29:29Z",
+        "target_commitish": "f5c6e9b4f9cadc1bf0f9a1fd672e621206b63007",
+        "html_url": "https://github.com/fastapi/fastapi/releases/tag/0.143.0",
+        "body": "Automatic OpenTelemetry exporter setup is now opt-in. If you rely on FastAPI to configure exporters from `OTEL_*` environment variables, set `FASTAPI_OTEL_AUTO_CONFIGURE=true` or use `FastAPI(telemetry={\"auto_configure\": True})` to retain the previous behavior.\r\n\r\nApplications that configure their own providers and exporters require no changes. FastAPI Cloud enables automatic setup for you.\r\n\r\n### Breaking Changes\r\n\r\n* \ud83d\udca5 Require opt-in for automatic OpenTelemetry exporter setup. PR [#16476](https://github.com/fastapi/fastapi/pull/16476) by [@tiangolo](https://github.com/tiangolo).\r\n"
+      }
+    },
+    {
+      "name": "pydantic-release",
+      "url": "https://api.github.com/repos/pydantic/pydantic/releases/tags/v2.14.0",
+      "observed_at": "2026-10-08T16:47:05.359726+00:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/pydantic/pydantic/releases/tags/v2.14.0",
+      "raw_bytes": 5565,
+      "raw_sha256": "5259900b1dc7b430f3a0f679e84434bad0c8d42aced9872ff3f788a409572813",
+      "snapshot": "pydantic-release.source.gz",
+      "release": {
+        "tag_name": "v2.14.0",
+        "draft": false,
+        "prerelease": false,
+        "published_at": "2026-10-08T16:12:06Z",
+        "target_commitish": "main",
+        "html_url": "https://github.com/pydantic/pydantic/releases/tag/v2.14.0",
+        "body": "### What's Changed\r\n\r\nThe highlights of the v2.14 release are available in the [blog post](https://pydantic.dev/articles/pydantic-v2-14-release).\r\nSeveral minor changes (considered non-breaking changes according to our [versioning policy](https://pydantic.dev/docs/validation/2.14/get-started/version-policy/#pydantic-v2)) are also included in this release. Make sure to look into them before upgrading.\r\n\r\nThis release drops support for Python 3.9 and adds support for Python 3.15.\r\n\r\n#### New Features\r\n\r\n* Add support for `multiple_of` constraint in `fraction` and `timedelta` core schemas by @Viicos in [#13873](https://github.com/pydantic/pydantic/pull/13873)\r\n* Add `__namespace__` parameter to `create_model()` by @Viicos in [#13895](https://github.com/pydantic/pydantic/pull/13895)\r\n\r\n#### Changes\r\n\r\n* Add an `ordered-dict` core schema by @Viicos in [#13796](https://github.com/pydantic/pydantic/pull/13796)\r\n* Add a `counter` core schema by @Viicos in [#13824](https://github.com/pydantic/pydantic/pull/13824)\r\n* Do not mutate `model_config` attribute by @Viicos in [#13825](https://github.com/pydantic/pydantic/pull/13825)\r\n* Reject newlines in `NameEmail` validation by @Viicos in [#13897](https://github.com/pydantic/pydantic/pull/13897)\r\n\r\n#### Fixes\r\n\r\n* Call enum constructors in both validation modes by @Viicos in [#13792](https://github.com/pydantic/pydantic/pull/13792)\r\n* Fix documentation examples not raising and remove unused `string_sub_type` unused error code by @Viicos in [#13821](https://github.com/pydantic/pydantic/pull/13821)\r\n* Catch `OverflowError` during `ByteSize` validation by @Viicos in [#13850](https://github.com/pydantic/pydantic/pull/13850)\r\n* Require `multiple_of` constraints to be positive by @Viicos in [#13862](https://github.com/pydantic/pydantic/pull/13862)\r\n* Always pop field name and model type stacks during schema generation by @saquibjawedbit in [#13859](https://github.com/pydantic/pydantic/pull/13859)\r\n* Handle `TypeError` gracefully during docstring extraction by @Viicos in [#13874](https://github.com/pydantic/pydantic/pull/13874)\r\n* Fix config propagation of stdlib dataclasses and `TypedDict`s in JSON Schema by @Viicos in [#13891](https://github.com/pydantic/pydantic/pull/13891)\r\n* Don't apply `ser_json_timedelta` to all datetime types in serialization inference by @Viicos in [#13892](https://github.com/pydantic/pydantic/pull/13892)\r\n* Encode JSON Schema defaults with a consistent configuration by @Viicos in [#13893](https://github.com/pydantic/pydantic/pull/13893)\r\n* Propagate `init` and `kw_only=False` from `Field()` to stdlib dataclass fields by @Viicos in [#13898](https://github.com/pydantic/pydantic/pull/13898)\r\n* Respect propagated extra config in the JSON Schema of stdlib dataclasses by @Viicos in [#13899](https://github.com/pydantic/pydantic/pull/13899)\r\n* Handle OS errors during `ZoneInfo` validation by @Viicos in [#13912](https://github.com/pydantic/pydantic/pull/13912)\r\n* Handle exceptions during `Decimal` validation by @Viicos in [#13940](https://github.com/pydantic/pydantic/pull/13940)\r\n* Rebuild incomplete types during serialization inference by @Viicos in [#13922](https://github.com/pydantic/pydantic/pull/13922)\r\n* Reject large exponents in `Fraction` validation by @Viicos in [#13944](https://github.com/pydantic/pydantic/pull/13944)\r\n* Avoid validating URL prefix multiple times in multi host URLs by @Viicos in [#13945](https://github.com/pydantic/pydantic/pull/13945)\r\n\r\n**Full Changelog**: https://github.com/pydantic/pydantic/compare/v2.13.0...v2.14.0"
+      }
+    },
+    {
+      "name": "sqlalchemy-release",
+      "url": "https://api.github.com/repos/sqlalchemy/sqlalchemy/releases/tags/rel_2_1_4",
+      "observed_at": "2026-10-08T16:47:05.401882+00:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/sqlalchemy/sqlalchemy/releases/tags/rel_2_1_4",
+      "raw_bytes": 131974,
+      "raw_sha256": "5bd4bd2052676605a9a831c5b744bc413226cd5979ba880aabbe4659ef58e928",
+      "snapshot": "sqlalchemy-release.source.gz",
+      "release": {
+        "tag_name": "rel_2_1_4",
+        "draft": false,
+        "prerelease": false,
+        "published_at": "2026-10-07T17:34:05Z",
+        "target_commitish": "main",
+        "html_url": "https://github.com/sqlalchemy/sqlalchemy/releases/tag/rel_2_1_4",
+        "body": "\n# 2.1.4\n\nReleased: October 7, 2026\n## orm\n\n\n-   **[orm] [bug] [regression]** Fixed regression caused by [#13333](https://www.sqlalchemy.org/trac/ticket/13333) where assigning a\n    `MetaData` object to the `metadata` attribute of a mapped\n    Declarative class, in order to place that class's `Table` in a\n    `MetaData` collection other than that of the\n    `_orm.registry`, would emit a warning that the attribute name\n    `metadata` should be left reserved.  The warning is now emitted only\n    when the `metadata` attribute is assigned to an object other than a\n    `MetaData`.\n    \n    References: [#13659](https://www.sqlalchemy.org/trac/ticket/13659)\n\n## engine\n\n\n-   **[engine] [bug] [regression]** Fixed regression from the 1.4 series where the DBAPI cursor used for a\n    compiled statement that returns no rows, which includes DDL constructs\n    such as `CreateTable` and `DropTable` as well as the\n    SAVEPOINT, ROLLBACK TO SAVEPOINT and RELEASE SAVEPOINT statements emitted\n    by `_engine.Connection.begin_nested()`, was not closed after\n    execution, and was instead left to be released when garbage collected.\n    The cursor is now closed immediately, as was the case in 1.3 and as is\n    already the case for INSERT, UPDATE, DELETE and `_sql.text()`\n    statements.\n    \n    This change is also **backported** to: 2.0.55\n    \n    References: [#13640](https://www.sqlalchemy.org/trac/ticket/13640)\n\n-   **[engine] [bug]** Fixed issue in the\n    `_engine.Connection.execution_options.logging_token` option\n    where setting the value to `None` or another false value would raise\n    `AttributeError` if a logging token had not already been established on\n    that `_engine.Connection`, such as on a newly checked out\n    connection, when the option was set at the `_engine.Engine` level,\n    or when the token was reset to `None` more than once.  Regression\n    introduced in 2.0.30 as part of [#11210](https://www.sqlalchemy.org/trac/ticket/11210).\n    \n    This change is also **backported** to: 2.0.55\n    \n    References: [#13641](https://www.sqlalchemy.org/trac/ticket/13641)\n\n-   **[engine] [bug] [regression]** Fixed regression where iterating a `Result` directly would create\n    reference cycles that prevented the `Result` along with the DBAPI\n    cursor from being freed immediately, instead relying upon cyclic GC to free\n    it; also fixed a similar issue when using scalar-returning methods such as\n    `Result.scalars()`.  The issues were introduced as part of a 2.1\n    refactoring of `Result` into Cython code.\n    \n    References: [#13639](https://www.sqlalchemy.org/trac/ticket/13639)\n\n-   **[engine] [bug]** Fixed issue where an exception raised by the rollback performed within\n    `_engine.Connection.close()`, which was not otherwise classified as a\n    disconnect, would leave the `_engine.Connection` open and its\n    pooled DBAPI connection checked out, emitting a warning when later\n    garbage collected; for an asyncio driver, the connection could not be\n    closed at that point and was leaked.  The DBAPI connection is now\n    returned to the pool, which resets it as usual, invalidating it if that\n    reset fails as well, and the original exception is raised.\n    \n    References: [#13657](https://www.sqlalchemy.org/trac/ticket/13657)\n\n## sql\n\n\n-   **[sql] [bug]** Fixed issue where the\n    `UpdateBase.return_defaults.supplemental_cols` parameter of\n    `UpdateBase.return_defaults()` was not included in the cache key of\n    an `Insert` or `Update` construct, causing a statement\n    that used this parameter to share a cached compiled form with an otherwise\n    identical statement that did not, or that used different supplemental\n    columns.  This would cause the supplemental RETURNING rows to be missing\n    or incorrect depending on which form of the statement was compiled first.\n    \n    This change is also **backported** to: 2.0.55\n\n-   **[sql] [bug] [regression]** Fixed regression where stringifying a statement that includes the\n    `_functions.aggregate_strings` function, such as via `str()`,\n    would raise `TypeError`.  Additionally, compiling the function with the\n    default dialect or with a third party dialect that doesn't provide its own\n    rendering for this function now raises `CompileError` rather than\n    `TypeError`.\n    \n    References: [#13642](https://www.sqlalchemy.org/trac/ticket/13642)\n\n## postgresql\n\n\n-   **[postgresql] [bug]** Fixed regression where copying a `_postgresql.DOMAIN` datatype,\n    as occurs when using `TypeEngine.copy()`, `Table.to_metadata()`,\n    or when a `Column` referring to a `_postgresql.DOMAIN` is\n    placed on a declarative mixin, would drop the\n    `_postgresql.DOMAIN.collation`,\n    `_postgresql.DOMAIN.default`,\n    `_postgresql.DOMAIN.constraint_name`,\n    `_postgresql.DOMAIN.not_null` and\n    `_postgresql.DOMAIN.check` parameters, causing the\n    `CREATE DOMAIN` statement emitted for the copied type to omit these\n    elements.  The regression was introduced in version 2.0.42.\n    \n    Additionally, copies of `_postgresql.ENUM` now retain the\n    `_types.Enum.sort_key_function`,\n    `_types.Enum.create_constraint` and\n    `_types.Enum.length` parameters, and copies of\n    `_types.Enum` now retain the\n    `_types.Enum.sort_key_function` parameter, all of which were\n    previously reset to their default values.\n    \n    This change is also **backported** to: 2.0.55\n    \n    References: [#13644](https://www.sqlalchemy.org/trac/ticket/13644)\n\n-   **[postgresql] [bug] [regression]** Fixed regression in the asyncpg dialect where a failure to start a\n    transaction, such as when an asyncpg connection is used from a different\n    event loop than the one it was created on, would leave the failed asyncpg\n    transaction in place, so that the subsequent rollback raised an\n    `InterfaceError` that masked the original error.\n    \n    References: [#13657](https://www.sqlalchemy.org/trac/ticket/13657)\n\n## mssql\n\n\n-   **[mssql] [bug]** Fixed issue where the Python true division operator `/` would truncate\n    the fractional part of the divisor on SQL Server when the divisor's type\n    was not numeric, such as when using a SQL function like `NULLIF()` that\n    has no known return type. The divisor was rendered as `CAST(... AS\n    NUMERIC)`, which on SQL Server implies a scale of zero; the divisor is\n    now rendered as `(... + 0.0)`, the same approach used by the SQLite\n    dialect, which promotes it to a decimal value without truncation.\n    Pull request courtesy James Guthrie.\n    \n    This change is also **backported** to: 2.0.55\n    \n    References: [#13631](https://www.sqlalchemy.org/trac/ticket/13631)\n\n## misc\n\n\n-   **[bug] [ext]** Fixed issue in the `mutable_toplevel` extension where the in-place\n    `|=` operator on `MutableDict` and the in-place `*=` operator\n    on `MutableList` did not emit change events, so that the\n    modification was not detected and was not persisted on the next flush.\n    These operators now invoke `Mutable.changed()` in the same way as\n    the in-place set operators of `MutableSet` and the `+=`\n    operator of `MutableList`.\n    \n    This change is also **backported** to: 2.0.55\n    \n    References: [#13643](https://www.sqlalchemy.org/trac/ticket/13643)\n"
+      }
+    },
+    {
+      "name": "pydantic-tag",
+      "url": "https://api.github.com/repos/pydantic/pydantic/git/ref/tags/v2.14.0",
+      "observed_at": "2026-10-08T16:47:05.410354+00:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/pydantic/pydantic/git/ref/tags/v2.14.0",
+      "raw_bytes": 339,
+      "raw_sha256": "c760572f33023d86edc17e596c67aa99e104af26fa2e3b776ac9dae20c7ac894",
+      "snapshot": "pydantic-tag.source.gz",
+      "tag_object": {
+        "sha": "10f8a7b4d52e20011933be784cf101aa19c53bb4",
+        "type": "tag",
+        "url": "https://api.github.com/repos/pydantic/pydantic/git/tags/10f8a7b4d52e20011933be784cf101aa19c53bb4"
+      }
+    },
+    {
+      "name": "core-tag",
+      "url": "https://api.github.com/repos/pydantic/pydantic/git/ref/tags/core-v2.50.0",
+      "observed_at": "2026-10-08T16:47:06.398973+00:00",
+      "status": 404,
+      "error": "HTTP error; no release/tag inference",
+      "raw_bytes": 114,
+      "raw_sha256": "e2e3c64edab172132f77ce89a0e8c190db1cd30936a096344f45893bd5b75f8a",
+      "snapshot": "core-tag.error.gz"
+    },
+    {
+      "name": "pydantic-pyproject",
+      "url": "https://raw.githubusercontent.com/pydantic/pydantic/v2.14.0/pyproject.toml",
+      "observed_at": "2026-10-08T16:47:06.403875+00:00",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/pydantic/pydantic/v2.14.0/pyproject.toml",
+      "raw_bytes": 9336,
+      "raw_sha256": "af73264ddc68760a031fc6e95aaeb5e84d57a730e1d64b5bf27286b5ae2cc52e",
+      "snapshot": "pydantic-pyproject.source.gz",
+      "project": {
+        "name": "pydantic",
+        "version": null,
+        "dependencies": [
+          "typing-extensions>=4.16.0",
+          "annotated-types>=0.6.0",
+          "pydantic-core==2.50.0",
+          "typing-inspection>=0.4.4"
+        ],
+        "classifiers": [
+          "Development Status :: 5 - Production/Stable",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Information Technology",
+          "Operating System :: OS Independent",
+          "Framework :: Hypothesis",
+          "Framework :: Pydantic",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Internet"
+        ],
+        "requires-python": ">=3.10"
+      }
+    },
+    {
+      "name": "core-pyproject",
+      "url": "https://raw.githubusercontent.com/pydantic/pydantic/core-v2.50.0/pydantic-core/pyproject.toml",
+      "observed_at": "2026-10-08T16:47:06.408976+00:00",
+      "status": 404,
+      "error": "HTTP error; no release/tag inference",
+      "raw_bytes": 14,
+      "raw_sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+      "snapshot": "core-pyproject.error.gz"
+    },
+    {
+      "name": "core-cargo",
+      "url": "https://raw.githubusercontent.com/pydantic/pydantic/core-v2.50.0/pydantic-core/Cargo.toml",
+      "observed_at": "2026-10-08T16:47:06.937135+00:00",
+      "status": 404,
+      "error": "HTTP error; no release/tag inference",
+      "raw_bytes": 14,
+      "raw_sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+      "snapshot": "core-cargo.error.gz"
+    },
+    {
+      "name": "version-policy",
+      "url": "https://raw.githubusercontent.com/pydantic/pydantic/v2.14.0/docs/version-policy.md",
+      "observed_at": "2026-10-08T16:47:06.960580+00:00",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/pydantic/pydantic/v2.14.0/docs/version-policy.md",
+      "raw_bytes": 6635,
+      "raw_sha256": "08250a1f910b862b9c2349ce21dd4aa8d67e8b41aa32d5fe89acb9fa988335b7",
+      "snapshot": "version-policy.source.gz"
+    },
+    {
+      "name": "sqlalchemy-changelog",
+      "url": "https://docs.sqlalchemy.org/en/21/changelog/changelog_21.html",
+      "observed_at": "2026-10-08T16:47:07.140214+00:00",
+      "status": 200,
+      "final_url": "https://docs.sqlalchemy.org/en/21/changelog/changelog_21.html",
+      "raw_bytes": 486396,
+      "raw_sha256": "5373fea78bbaf7f3a9fb3d458196552f3217a9e1dd6e8c7e8592d9505937593e",
+      "snapshot": "sqlalchemy-changelog.source.gz"
+    }
+  ],
+  "context7_library": "/pydantic/pydantic",
+  "context7_query": "Stable V2 policy; validation/core schema compatibility; monorepo tag convention; experimental API exclusion",
+  "pydantic_core_requirement": [
+    "pydantic-core==2.50.0"
+  ],
+  "source_versions": {
+    "pydantic": null,
+    "core_project": null,
+    "core_cargo": null
+  },
+  "independent_review": "pending",
+  "runtime_tested": false,
+  "signed_tag_verified": false,
+  "wheel_source_provenance_verified": false,
+  "production_selection": false,
+  "application_changed": false
+}

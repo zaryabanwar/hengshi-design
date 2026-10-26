@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed private knowledge source extraction map v1",
+  "description": "One source's private preparation configuration. Not a public bundle, executable selector, approval, object credential or source digest definition. Projection/config hashes are distinct from the full document reference. Registration, exact-byte correspondence, same-source context closure, complete field inventory, aggregate bundle limits, strict raw parsing and current source/permission checks remain semantic obligations. No compiler/retrieval behavior is established by shape.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "source_reference", "projection_sha256", "projection_profile", "extraction_profile", "title_pointer", "passages"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "source_reference": {"$ref": "chat-text.schema.json#/$defs/source_reference"},
+    "projection_sha256": {"$ref": "process-value.schema.json#/$defs/sha256", "description": "Exact admitted projection-byte association only; never substitute for document_sha256 or a containing map's hash."},
+    "projection_profile": {"$ref": "#/$defs/profile"},
+    "extraction_profile": {"$ref": "#/$defs/profile"},
+    "title_pointer": {"type": "string", "const": "/title"},
+    "passages": {"type": "array", "minItems": 1, "maxItems": 1024, "uniqueItems": true, "items": {"$ref": "#/$defs/passage"}}
+  },
+  "$defs": {
+    "profile": {
+      "type": "object", "additionalProperties": false,
+      "required": ["profile_id", "profile_sha256"],
+      "properties": {
+        "profile_id": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+        "profile_sha256": {"$ref": "process-value.schema.json#/$defs/sha256"}
+      }
+    },
+    "passage": {
+      "type": "object", "additionalProperties": false,
+      "required": ["passage_key", "text_pointer", "required_context_passage_keys"],
+      "properties": {
+        "passage_key": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+        "text_pointer": {
+          "type": "string", "maxLength": 96,
+          "pattern": "^/sections/(?:0|[1-9][0-9]*)/(?:heading|units/(?:0|[1-9][0-9]*)/text)(?![\\s\\S])",
+          "description": "Only concrete RFC 6901 array-index selectors in the registered text profile. Syntax does not prove an in-range field or admitted projection. No wildcard or expression."
+        },
+        "required_context_passage_keys": {"type": "array", "maxItems": 1024, "uniqueItems": true, "items": {"$ref": "publication-manifest.schema.json#/$defs/identifier"}, "description": "Empty requires reviewed self-contained meaning. Larger than eight can describe valid stored context, but actual answer closure must refuse over-capacity groups; dangling/cross-source references remain semantic failures."}
+      }
+    }
+  }
+}

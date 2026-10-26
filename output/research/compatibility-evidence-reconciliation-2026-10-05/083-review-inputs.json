@@ -1,0 +1,266 @@
+{
+  "status": "DOING",
+  "review_scope": "17-rule inventory and new Windows CLI conformance/configuration evidence only",
+  "files": [
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/run_probe.py",
+      "sha256": "749219e45932f92ab8b73c9489a4adcf9597e240b745c770fedc3758d09d3ca7",
+      "bytes": 9158
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/receipt.json",
+      "sha256": "ad2050d7537d5adde4cf4ef8aed268b930b7e5e3ce5c4427cdd76cdd4b7606ca",
+      "bytes": 22285
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/tag-source-receipt.json",
+      "sha256": "fe3a7c312a94594299a37267f67f22edde0d6eafbb3248b5331e6c9151300b97",
+      "bytes": 499
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/exhaustive_deps.rs",
+      "sha256": "0c9a8372f5a72398dd63a747d35a978b4015626cd40d50573cf4fcfa062ddd3d",
+      "bytes": 149508
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/rules_of_hooks.rs",
+      "sha256": "35e4a166253a27d0990bddfdb66b14772b986db2af5ea2083f4cfa1da2d4682b",
+      "bytes": 90995
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/probe-config.json",
+      "sha256": "62f9d0789fbcbd0c4232b4a70cf972a3e8084bd21a7c194beb86393c27edf431",
+      "bytes": 136
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/invalid-config.json",
+      "sha256": "1bde13a215e156fc5595ea1047823eb14132bc054b87cac3a3f3e92b475fcd69",
+      "bytes": 13
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/refresh-evidence.reviewed.md",
+      "sha256": "0ddacac850efef76d26b9044043dee1c683714988b59271bdad5c405cf8c6325",
+      "bytes": 42197
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/base-fixtures/custom-hook-conditional.tsx",
+      "sha256": "fa16240b49c9d19a6d483d3916b9ad3812283f11227587867dac31a7458a6b47",
+      "bytes": 218
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/base-fixtures/named-hook-alias-conditional.tsx",
+      "sha256": "c5c100fe1ca682d72d32545320e9fd464483fbd87c292e4f2d1d12899ea6d5e1",
+      "bytes": 186
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/base-fixtures/namespace-conditional.tsx",
+      "sha256": "5bece0488a4c415a10dada7b396675e9130e128719fa94f97a13fe3c4f5deb98",
+      "bytes": 176
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/base-fixtures/namespace-missing-dependency.tsx",
+      "sha256": "057bba621e22d6a6a953897f0e0793215941f822dcc75939d745790417fc8a0f",
+      "bytes": 165
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/base-fixtures/namespace-valid.tsx",
+      "sha256": "087a597ad7123a2f49151db3ed01ac525b61016ce5312005abe36c5fee5b8348",
+      "bytes": 170
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/base-fixtures/renamed-effect-missing-dependency.tsx",
+      "sha256": "8277a73b7cd2b42317d5abc3e38fb4a68ecbacdcc803bd1d57c71660efe757a8",
+      "bytes": 167
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/base-fixtures/renamed-hook-conditional.tsx",
+      "sha256": "6de9e0d543413dadf94d1b593eb4caa19a64b08a61aa2d33456005a95c6fc882",
+      "bytes": 176
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/custom-fixtures/custom-effect-rule-invalid-cli-override.tsx",
+      "sha256": "396534736cd82f460f8b4f05c50d4157a6eba48343f71a5753bdd59b7a0eada6",
+      "bytes": 185
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/custom-fixtures/custom-effect-rule-invalid.tsx",
+      "sha256": "396534736cd82f460f8b4f05c50d4157a6eba48343f71a5753bdd59b7a0eada6",
+      "bytes": 185
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/custom-fixtures/custom-effect-rule-valid.tsx",
+      "sha256": "ad1cc07b8a474aa72e178d3bdea7b9f1646131f9692baa86426261e426ad3ee8",
+      "bytes": 190
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/custom-fixtures/custom-effect-shared-invalid.tsx",
+      "sha256": "396534736cd82f460f8b4f05c50d4157a6eba48343f71a5753bdd59b7a0eada6",
+      "bytes": 185
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/namespace-valid-stdout.json",
+      "sha256": "44194e3a8391f08e593f335bea2d13398eb1f6cc49082d1bdc8f7cf72c6708d5",
+      "bytes": 197
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/namespace-valid-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/namespace-conditional-stdout.json",
+      "sha256": "97993de055c6faf6623d41bc039bada37f945c02a0d3556d1de9bf3e17591119",
+      "bytes": 790
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/namespace-conditional-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/namespace-missing-dependency-stdout.json",
+      "sha256": "c876631eadfa7265134d8b87a5c65043c605a4846c8a3735d16a864c20affc40",
+      "bytes": 700
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/namespace-missing-dependency-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/custom-hook-conditional-stdout.json",
+      "sha256": "05acf6c82f741df11f368cdf0344bef4ada90de9e7095767d60c9aa82eda05aa",
+      "bytes": 794
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/custom-hook-conditional-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/named-hook-alias-conditional-stdout.json",
+      "sha256": "b07dc1eb36a052235115ce1d98481ebb585f7d0e68bdc42005c14d71b3cfc569",
+      "bytes": 799
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/named-hook-alias-conditional-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/renamed-hook-conditional-stdout.json",
+      "sha256": "5fcde5e1377842c06d51c1c11fb1aee2f11789513ac163c27745c303e509f598",
+      "bytes": 197
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/renamed-hook-conditional-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/renamed-effect-missing-dependency-stdout.json",
+      "sha256": "75e92ff6d28488679cda0ae66e0a093fed8a4aa4389caa9833143f03d10024a3",
+      "bytes": 197
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/renamed-effect-missing-dependency-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/invalid-config-stdout.txt",
+      "sha256": "87395855d4a140a4feedd56b2c1809fee524f3cb7fc50ea48f52e8a9bf881846",
+      "bytes": 256
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/invalid-config-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/unmatched-file-stdout.txt",
+      "sha256": "eb8f4680fd2ea69b4824e2931795f84fccfb3e85b9cf5d0f6c57653f61817bdb",
+      "bytes": 267
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/unmatched-file-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/directory-scope-stdout.txt",
+      "sha256": "f4b91bcac4b741e5372009840dff6581a665e78d956ed3913eb278516e40eda2",
+      "bytes": 2501
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/directory-scope-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/custom-effect-shared-invalid-stdout.json",
+      "sha256": "615c607737cad5ebe465cf3a108f4391328412a555a1a467fd86892b2b4840aa",
+      "bytes": 197
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/custom-effect-shared-invalid-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/custom-effect-shared-invalid-config.json",
+      "sha256": "2b6077ba85dce91dec25ddfc12c5a0049fa089707ca6b6da1db7668dd9d32f3d",
+      "bytes": 290
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-invalid-stdout.json",
+      "sha256": "de00ffc8192f3cf2be9d2aac37347eaf3b4bd1cd348069a154c277713fd2f725",
+      "bytes": 714
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-invalid-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-invalid-config.json",
+      "sha256": "7f1a71cf9486290de43f6a4170cf737903bf5a930339d62bfe61dbcb610534e2",
+      "bytes": 269
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-valid-stdout.json",
+      "sha256": "5b2bd23dd030ee648720b01ce82596cf860c28d6371ed2a6a9039862d2dbafdc",
+      "bytes": 197
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-valid-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-valid-config.json",
+      "sha256": "7f1a71cf9486290de43f6a4170cf737903bf5a930339d62bfe61dbcb610534e2",
+      "bytes": 269
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-invalid-cli-override-stdout.json",
+      "sha256": "eeae7eb0d807c4e19b4c256789aab5506c811760f98c8873ca41962d8cb3400a",
+      "bytes": 197
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-invalid-cli-override-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-invalid-cli-override-config.json",
+      "sha256": "7f1a71cf9486290de43f6a4170cf737903bf5a930339d62bfe61dbcb610534e2",
+      "bytes": 269
+    },
+    {
+      "path": "output/research/compatibility-resolution-2026-10-04/native-lint-recommended-coverage.json",
+      "sha256": "86bbe2d8e65bde10d1719cd2c822e8739e4de78fb0f1590451749e0a920ca123",
+      "bytes": 16889
+    }
+  ]
+}

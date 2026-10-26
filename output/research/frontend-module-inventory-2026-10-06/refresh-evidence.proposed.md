@@ -1,0 +1,1280 @@
+# Frontend and 3D compatibility evidence refresh
+
+Status: DOING. Observed 2026-10-04. Registry/documentation/lock analysis, isolated
+resolution and native-lint probes, and targeted published-archive inspection;
+no production dependency selected, installed or upgraded. This supplements the
+reviewed July inventory without rewriting its frozen evidence or closing MA-013.
+
+## Current React lint stable-path recheck
+
+The [fresh registry observations](../../output/research/compatibility-resolution-2026-10-04/react-lint-recheck-2026-10-04.json)
+and their saved registry responses recheck the narrow unresolved lint chain on
+2026-10-04. They confirm `eslint-plugin-react-hooks` latest stable tag 7.1.1,
+whose `@babel/core` dependency is `^7.24.4`. All 27 published stable Babel versions
+satisfying that range declare `gensync: ^1.0.0-beta.2`. The only published stable
+gensync version is 0.1.0, which does not satisfy that range. The latest Babel
+8.0.6 is outside the hook plugin's declared dependency range.
+
+The [range analysis](../../output/research/compatibility-resolution-2026-10-04/react-lint-recheck-range-analysis.json)
+uses the existing npm-bundled node-semver 7.7.4 implementation under its
+[official caret/prerelease rules](https://github.com/npm/node-semver#caret-ranges-123-025-004).
+It finds no stable gensync choice within any examined compatible Babel dependency
+range. This is a concrete published-graph restriction; it is not evidence of a
+security vulnerability, failed application behavior or an approved exception.
+No resolver rerun, package installation or React/Babel code execution was needed
+for this unchanged metadata restriction.
+
+React's [current recommended preset](https://react.dev/reference/eslint-plugin-react-hooks)
+still includes compiler diagnostics even without compiling the application.
+Removing those checks or using only the candidate's two stable native hook rules
+does not establish full preset equivalence. The unselected native topology's
+experimental compiler analysis and named missing-rule dispositions remain below.
+Neither an EOL downgrade, force/override, custom package rebuild nor a prerelease
+exception is selected here. The
+[independent recheck review](reviews/react-lint-stable-path-recheck-2026-10-04.md)
+records PASS for this narrow section and its listed metadata/range inputs. The
+[producer bytes inspected there](../../output/research/contract-review-reference-reconciliation-2026-10-04/refresh-evidence.pre-lint-recheck-reference.md)
+are preserved; this later reference addition does not replace the receipt's hash
+or extend its verdict to the other studies below. "Stable" in this observation is
+published non-prerelease/channel metadata, not full transitive, security or runtime
+proof. A future final gensync release might satisfy the caret; none is currently
+published within the examined range.
+
+## Sources and scope
+
+<a id="proposed-react-lint-dependency-exception--founder-decision-required"></a>
+### React-lint dependency exception — founder-approved evaluation
+
+Status: DOING. Proposal checked 2026-10-05; founder accepts its bounded
+development/CI lint exception at [D-072](../../DECISIONS.md#d-072--bounded-gensync-development-and-ci-lint-exception),
+2026-10-06. **Candidate evaluation is permitted; no application package, complete
+graph or production runtime is selected.** The original proposal/review bytes
+remain preserved. The stable-only rule controls everything outside this exception.
+
+Fresh [official version metadata](../../output/research/react-lint-policy-decision-2026-10-05/registry-observations.json)
+confirms the inspected dependency path: `eslint-plugin-react-hooks` 7.1.1 requires
+`@babel/core ^7.24.4`; the compatible stable Babel 7.29.7 declares
+`gensync ^1.0.0-beta.2`. The registry still offers only gensync 0.1.0 as a
+non-prerelease, outside that required range. The earlier independently reviewed
+range analysis and native-rule findings remain the controlling deeper evidence.
+No new package execution, security clearance or complete-graph proof follows.
+
+The founder permits **only `gensync` 1.0.0-beta.2 in the React lint-tool dependency
+closure**, subject to all conditions below. This authorizes evaluating
+that candidate exception, not installation into the application, stack selection,
+runtime adoption or release. It grants no exception to TypeScript/tool API parity,
+other prereleases, incompatible peers, maintained-runtime or security requirements.
+
+1. Record the founder's exact decision in the durable decision/exception authority
+   before using this as a selectable graph. Keep the real beta version visible;
+   never relabel it stable. Pin the complete candidate deterministically, verify
+   archive integrity/provenance and licences, and review current advisories.
+2. Restrict the exception to an isolated development/CI lint process. No visitor
+   or client-confidential data, production credentials or deployed execution is
+   permitted. Verify dependency reachability and generated artifacts: `devDependency`
+   labels alone do not prove exclusion from shipped browser/server code, public
+   HTML, deployed images or any other execution path. An additional use needs a
+   separately reviewed decision; this is not a general Babel/build-tool exception.
+3. Exercise the actual recommended preset, invalid and valid hook/Effect cases,
+   renamed imports/custom Hooks, invocation/configuration failures and the coupled
+   TypeScript compiler/API/editor/build boundaries. Do not suppress rules or use
+   the known weaker native candidate merely to produce a green check.
+4. Recheck the registry, compatible graph and advisory state immediately before
+   every candidate adoption/upgrade wave and at least quarterly. Exception expiry
+   is **2027-01-05**; after that, selection is held until renewed by the founder or
+   replaced by an independently proven compatible stable chain. A stable release
+   is evaluated as a graph, not automatically substituted by tag.
+5. If isolation, exclusion, integrity, licence, security or conformance evidence
+   fails, reject the candidate and keep the compatibility gate open. Preserve the
+   unchanged application and reproducible pre-wave evidence; later application
+   upgrades still require their own approved reversible wave and rollback.
+
+The founder selected the bounded exception rather than the strict-stability-only
+alternative. Complete frontend graph selection remains held until the applicable
+evidence and acceptance gates pass. This permits no EOL downgrade, removed checks,
+force/override or custom unreleased replacement; other safe definition work continues.
+React's [official preset](https://react.dev/reference/eslint-plugin-react-hooks),
+also checked through Context7 `/reactjs/react.dev`, includes compiler diagnostics
+without requiring compilation. Its [independent consistency review](reviews/react-lint-policy-proposal-v1-2026-10-05.md)
+records bounded PASS with no actionable findings. The inspected [proposal bytes](../../output/research/react-lint-policy-decision-2026-10-05/refresh-evidence-2026-10-04.md.reviewed.md)
+and [manual-index bytes](../../output/research/react-lint-policy-decision-2026-10-05/MANUAL_ACTIONS.md.reviewed.md)
+remain preserved; these later review and acceptance references are outside them.
+D-072 records policy approval only; it closes neither MA-013 nor the complete
+Phase 1 package and does not certify candidate compatibility, safety or readiness.
+
+[Machine observations](refresh-candidates-2026-10-04.json) preserve package,
+registry URL, observed time, publication time, latest candidate, peer ranges,
+optional-peer metadata, engines, license label and current web-lock version.
+The web lock's SHA-256 identifies the input. Installed tooling reported Node
+24.14.0, npm 11.11.1 and global Python 3.14.5; the last is not proof of the API
+virtual environment or a backend target. No installed tool establishes cloud GA.
+
+Context7 resolved React Three Fiber; its main repository result exposed a v10
+branch, so stable guidance was queried using
+`/websites/r3f_pmnd_rs_getting-started_introduction`. The official
+[introduction](https://r3f.docs.pmnd.rs/getting-started/introduction) agrees that
+Fiber 8 pairs with React 18 and Fiber 9 with React 19; it identifies v10 as alpha.
+WebGPU/alpha documentation is not selected by availability in a search result.
+
+Registry observations came directly from `https://registry.npmjs.org/`, not an
+installed version or search snippet. A stable-looking latest tag is a candidate,
+not proof of security, provenance, transitive stability or clean-install behavior.
+
+## Observed candidates, not locks
+
+| Family | Current web lock | Registry latest observed |
+|---|---|---|
+| React / React DOM | 18.3.1 / 18.3.1 | 19.3.0 / 19.3.0 |
+| Fiber / Drei / Three | 8.18.0 / 9.122.0 / 0.160.1 | 9.8.1 / 10.7.9 / 0.186.1 |
+| Vite / React plugin | 5.4.21 / 4.7.0 | 8.3.2 / 6.1.1 |
+| Tailwind | 3.4.19 | 4.3.3 |
+| TypeScript | 5.9.3 | 7.0.2 |
+| Zustand / React Router DOM | 4.5.7 / 6.30.3 | 5.0.15 / 7.18.4 |
+| GSAP | 3.14.2 | 3.15.0 |
+
+These twelve rows do not claim a complete production compatibility graph. React
+types, Three types, Tailwind integration packages, compiler/transitive binaries,
+QA tools, backend, database, Blender, CI and Azure/provider APIs still need dated
+coupling evidence, supply-chain/security review and approved reproducible locks.
+
+## Isolated strict resolution, 2026-10-04
+
+The current web manifest and its existing dependency families were used to construct
+two disposable studies under
+[`output/research/compatibility-resolution-2026-10-04/`](../../output/research/compatibility-resolution-2026-10-04/).
+Fresh official npm `/latest` metadata covers the manifest's runtime/dev packages,
+Three types, the Tailwind Vite adapter and the TypeScript API compatibility package.
+No package code was installed or executed. The studies use the observed Node
+24.14.0/npm 11.11.1 host; they do not select that runtime as the latest production
+target or settle every alternative package topology.
+
+[npm's install documentation](https://docs.npmjs.com/cli/v11/commands/npm-install/)
+defines lock-only resolution and strict peer handling. Both studies ran:
+
+```powershell
+npm.cmd install --package-lock-only --ignore-scripts --strict-peer-deps --engine-strict --no-audit --no-fund --registry=https://registry.npmjs.org/ --loglevel=error
+```
+
+| Study | Observed result | Meaning |
+|---|---|---|
+| Independently latest direct versions | Exit 1, ERESOLVE: TypeScript 7.0.2 conflicts with parser 8.71.0's `>=4.8.4 <6.1.0` peer. | The all-latest list is not a resolvable set. No force/legacy peer override was used. |
+| TypeScript 7 compiler plus TypeScript 6 API aliases | Exit 0; isolated lock generated; no `node_modules` created. | The declared graph resolves on this host. This is not import, compiler, lint, build, browser or runtime proof. |
+
+The second study follows
+[Microsoft's released TypeScript 7 guidance](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/):
+alias `typescript` to `@typescript/typescript6` 6.0.2 for API consumers and
+`@typescript/native` to TypeScript 7.0.2 for the `tsc` compiler. The current
+[typescript-eslint support range](https://typescript-eslint.io/users/dependency-versions/)
+agrees with the observed parser metadata. Context7 resolved
+`/websites/typescript-eslint_io` and `/microsoft/typescript`; its snippets included
+older/preview repository material, so the release article and registry metadata
+govern this dated observation. Neither preview native packages nor unstable APIs
+were added to the study.
+
+**Stable-channel gate does not pass.** The resolved lint chain is
+`eslint-plugin-react-hooks` 7.1.1 -> `@babel/core` 7.29.7 -> `gensync`
+1.0.0-beta.2. Official registry metadata lists `gensync` 0.1.0 as its only
+non-prerelease version; it does not satisfy Babel's `^1.0.0-beta.2` dependency.
+A root package's stable version or npm's successful resolution cannot waive the
+whole-graph stable-only rule. Do not silently force the older gensync, delete hook
+validation, relabel beta bytes or accept this as a production lock. A supported
+stable lint path or an explicit reviewed compatibility decision is still required.
+
+The six nested WASI records without individual registry/integrity fields are
+marked `inBundle` under the integrity-pinned `@tailwindcss/oxide-wasm32-wasi`
+4.3.3 tarball. They are not six observed external non-registry downloads.
+Their byte/provenance/license verification remains supply-chain work; the public
+lock metadata alone does not perform it. `webgl-constants` lacks a license field
+in this lock. The later targeted inspection below supplements this initial
+metadata observation; it does not approve the full supply chain or selection.
+
+Raw inputs, command outputs/exit codes, the unselected lock and source-channel
+checks are linked by [the resolution analysis](../../output/research/compatibility-resolution-2026-10-04/resolution-analysis.json).
+Protected root/web manifests and existing locks plus API requirements have matching
+before/after SHA-256 values. No application tests ran. The prior independent refresh
+review covers its older recorded hashes, not this added study; independent review
+of these new findings remains TODO under the current reviewer-capacity hold.
+
+### Stable React-lint alternative investigation
+
+An additional unselected study evaluates the lint topology rather than forcing
+the beta dependency or dropping hook-order validation. Context7 resolved React
+reference documentation and `/websites/oxc_rs_guide_usage`; registry metadata,
+published package sources and current official pages govern the observations.
+
+The repository manifests declare the old hook plugin, but the inspected repository
+has no ESLint configuration file or lint script. A dependency declaration is not
+proof of active lint enforcement. The prototype's known fatal hook-order defect
+still needs its separately authorized stabilization and reproducing application
+test; no file in the application was repaired by this investigation.
+
+| Path inspected | Evidence | Disposition |
+|---|---|---|
+| Official hook plugin 6.x/7.x | Inspected stable metadata uses Babel core `^7.24.4`; all 27 inspected stable Babel 7 releases in that range declare gensync `^1.0.0-beta.2`. | Choosing another inspected Babel patch does not remove the prerelease requirement. |
+| Official hook plugin 5.2.0 | Integrity-verified published source exports only `rules-of-hooks`/`exhaustive-deps`; its peer declaration ends at ESLint 9 and its Effect Event identifier helper returns false. | Not a substitute for modern React coverage. [ESLint's current support policy](https://eslint.org/version-support/) records ESLint 9 EOL on 2026-08-06; its registry maintenance tag cannot override that policy. No EOL downgrade selected. |
+| ESLint/TypeScript graph plus Oxlint 1.86.0 native React rules | The retained lock has 303 package records and no observed prerelease versions; its original resolver options were not retained. The separate strict recheck below exits 0 and reproduces identical lock bytes. The [official Oxlint release](https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.86.0) is non-draft/non-prerelease. | Candidate topology only: the study replaces the hook-plugin dependency with Oxlint while retaining ESLint 10 and TypeScript ESLint. Application dependencies remain untouched. |
+
+#### Recorded strict resolver correction
+
+The [initial native-lint review](reviews/native-react-lint-evidence-review-2026-10-04.md)
+reproduces the actual checker diagnostics and package-byte correspondence, but
+records REVISE on NATIVE-LINT-MED-001: the original resolver output/exit does not
+identify its command options. Its
+[inspected producer bytes](../../output/research/contract-review-reference-reconciliation-2026-10-04/refresh-evidence.pre-native-lint-review-correction.md)
+are preserved. The original study, lock and raw diagnostics remain unchanged;
+this correction does not retroactively supply the original command.
+
+A new [recheck script](../../output/research/compatibility-resolution-2026-10-04/recheck_native_resolution.py)
+starts from the same pinned direct-dependency manifest in a separate fresh folder,
+without an input lock or installed packages. Its
+[receipt](../../output/research/compatibility-resolution-2026-10-04/native-lint-strict-resolution-recheck/receipt.json)
+records argv, working directory, Node v24.14.0/npm 11.11.1 observations, timestamps,
+input/output hashes and exit 0. The command explicitly enables strict peer and
+engine checks, disables legacy peer resolution and force, limits work to the lock,
+disables scripts, and includes dev/optional/peer dependencies. Empty explicit
+user/global npm config files and child-only removal of npm-config environment
+options isolate this observation; machine settings and credentials are unchanged.
+
+The fresh result has the same 303 records, zero observed prerelease versions and
+byte-identical lock SHA256 `da45dd6cb7cee7834fc5985b6595c2111780ee24d7cf87d1bdaf1749be3f37ab`.
+There are zero package-record differences. All ten preserved application/source
+and original study inputs match before/after; the copied manifest is unchanged
+and no `node_modules` exists in the recheck. Registry metadata and one Tailwind
+WASI archive were fetched to obtain bundled-package inventory; the
+[archive-fetch observations](../../output/research/compatibility-resolution-2026-10-04/native-lint-strict-resolution-recheck/archive-fetch-observations.json)
+identify the exact npm debug log and successful tarball URL. This was not metadata-
+only HTTP traffic. No application dependency was changed or installed, and no
+package/lifecycle, compiler, build or browser run occurred.
+The recorded host versions are inspection tools, not a selected production matrix.
+
+[Official npm install](https://docs.npmjs.com/cli/v11/commands/npm-install/) and
+[configuration](https://docs.npmjs.com/cli/v11/using-npm/config/) documentation,
+Context7 `/npm/cli` and the exact installed npm 11.11.1 config definitions were
+checked 2026-10-04. The live docs describe the evolving npm 11 line; installed
+source governs this run's exact option behavior and has its hash in the receipt.
+The [correction-1 review](reviews/native-lint-strict-recheck-review-2026-10-04.md)
+records bounded PASS and closes NATIVE-LINT-MED-001 for this separately recorded
+observation. Its [inspected producer bytes](../../output/research/contract-review-reference-reconciliation-2026-10-04/refresh-evidence.pre-native-lint-correction-review-reference.md)
+are preserved. This later reference addition does not replace that identity or
+rewrite the initial REVISE receipt. Neither verdict selects the candidate,
+establishes full lint coverage, proves runtime compatibility or clears
+licences/provenance. Earlier receipts retain their listed inputs and scopes.
+
+The resolver created no `node_modules`. For a separate executable probe, only the
+published Oxlint JS package and its Windows x64 native binding were unpacked under
+the study's `tool/node_modules`, after matching registry SHA-512 integrity. No
+install/lifecycle script ran and no application package was installed. Native
+package size is about 13.3 MB unpacked; the probe runs on Node 24.14.0. This is
+Windows tooling evidence, not Linux, full-build or browser-runtime proof.
+
+The CLI probe explicitly enables only `react/rules-of-hooks` and
+`react/exhaustive-deps`, disables other rule categories and uses a JSON config.
+Actual diagnostics, rather than exit codes alone, were inspected. Eight synthetic
+cases match the independent oracle from React's [hook rules](https://react.dev/reference/eslint-plugin-react-hooks/lints/rules-of-hooks)
+and [Effect Event reference](https://react.dev/reference/react/useEffectEvent):
+
+- Valid top-level hooks accepted; a hook after a conditional return rejected.
+- A missing Effect dependency rejected; conditional `use` accepted.
+- Valid Effect Event use accepted; an Effect Event in dependencies rejected.
+- An Effect Event invoked during render or passed as a click handler rejected.
+
+This is actual checker behavior evidence at its CLI boundary, not a documentation
+test or an application regression suite. It does not prove every alias/custom-hook
+case, the complete React recommended preset, TypeScript/project configuration,
+editor/CI integration or the production compatibility graph. React's [current
+plugin reference](https://react.dev/reference/eslint-plugin-react-hooks) includes
+additional compiler diagnostics even without adopting the compiler; the native
+candidate's equivalence to that entire set is not established. The [Oxlint plugin
+documentation](https://oxc.rs/docs/guide/usage/linter/plugins.html) calls its native
+compiler-analysis rules experimental and off by default. They were not enabled
+and cannot become production requirements under the stable-only policy.
+
+Raw metadata, source observations, isolated input/lock/exit, package provenance
+and all diagnostic outputs are indexed by
+[native-lint-study-analysis.json](../../output/research/compatibility-resolution-2026-10-04/native-lint-study-analysis.json)
+and [native-lint-behavior-probe.json](../../output/research/compatibility-resolution-2026-10-04/native-lint-behavior-probe.json).
+The original beta-bearing study remains evidence, not an accepted lock. The native
+candidate must still define its complete required rule/config coverage, pass the
+rest of the coupled toolchain/platform and supply-chain checks, receive independent
+review and join founder compatibility acceptance before application adoption.
+Protected package-input hashes still match; no application tests ran. This later
+study is not covered by any prior refresh review hash.
+
+### Protected-source check and required lint coverage
+
+The same two explicit native rules were run read-only against three current World
+source files. This is source-lint evidence, not browser execution or a regression
+test of the application:
+
+| Current source | Observed checker result | Interpretation |
+|---|---|---|
+| `apps/web/src/world/WorldHUD.tsx:44–55` | `rules-of-hooks` rejects `useMemo` at line 48 after the conditional return at lines 44–45. | Corroborates R-003's current source defect; entering the World can change the component's hook sequence. The candidate catches this actual project pattern. |
+| `apps/web/src/world/ExteriorScene.tsx:138/193` | `exhaustive-deps` reports missing `applyKeyframe` in the Effect dependencies. | A separate diagnostic requiring lifecycle/closure analysis before any fix. Blindly adding a recreated function could change animation behavior. |
+| `apps/web/src/world/WorldCanvas.tsx` | No diagnostics under these two rules. | Not a component/runtime, lifecycle or full-lint acceptance result. |
+
+Each file's before/after SHA-256 matches in
+[native-lint-protected-world-inspection.json](../../output/research/compatibility-resolution-2026-10-04/native-lint-protected-world-inspection.json).
+No automatic fix, suppression or application edit was performed. R-003 remains
+open; a later authorized stabilization must reproduce the entry/inside transition
+at the actual React boundary and verify the fix before modernization.
+
+PROPOSED production configuration obligations for this candidate, still subject to
+complete graph/config review and acceptance:
+
+| Coverage | Required configuration/evidence |
+|---|---|
+| Core JavaScript and TypeScript | Retain the supported ESLint/TypeScript ESLint path; select and lock its reviewed recommended configuration and exact parser/API coupling. The native probe cannot replace compiler/type checking or disable these checks. |
+| React hook order and Effect dependencies | Explicitly enable the two inspected stable native rules as errors. Include hooks after early returns, custom/import aliases, modern `use` and Effect Event restrictions in conformance evidence. Eight fixtures cover only the recorded subset. |
+| React refresh | Retain the existing refresh-plugin family; verify the reviewed Vite/export configuration against allowed and invalid component exports. No actual refresh-rule probe is claimed here. |
+| Additional React recommendations | Inventory the current official plugin's broader recommended diagnostics and their dispositions before selecting the topology. The two stable hook rules are not equivalent to the entire preset; no experimental native compiler rule may become a production requirement. |
+| Source and execution scope | Cover all owned application TS/TSX entry points, components, stores and World/admin code. Exclusions must identify generated/vendor/artifact paths; no blanket World or admin exclusion and no new inline suppressions to hide failures. |
+| CLI, editor and CI | Bind the reviewed config and exact tool graph; mandatory diagnostics must produce a failing process result. Verify config discovery, file coverage and editor/CI behavior with actual inputs. No CI change or executable production lint script is authorized by this table. |
+| Safe fixes | Require an approved bounded source change and a reproducing behavior test; avoid automatic dependency-array rewrites or treating a clean lint output as a safe animation/session fix. |
+
+### Official recommended-rule inventory: producer evidence
+
+Checked 2026-10-04 using Context7 `/websites/oxc_rs_guide_usage`, the official
+[React recommended preset](https://react.dev/reference/eslint-plugin-react-hooks),
+the exact installed Oxlint 1.86.0 `--rules --format json` inventory and official
+per-rule pages. This extends the unselected study; no package/config/application
+change, experimental-rule execution, new review verdict or production selection.
+
+| Upstream identifiers | Exact candidate observation | Disposition |
+|---|---|---|
+| `rules-of-hooks`, `exhaustive-deps` | Matching registered identifiers; the earlier eight fixtures exercise only the documented subset | Existing two-rule evidence, not full preset equivalence |
+| `error-boundaries`, `globals`, `immutability`, `incompatible-library`, `preserve-manual-memoization`, `purity`, `refs`, `set-state-in-effect`, `set-state-in-render`, `static-components`, `unsupported-syntax`, `use-memo` | Matching identifiers; each official per-rule page identifies React Compiler analysis | Native compiler rules remain excluded from production requirements while experimental |
+| `component-hook-factories`, `config`, `gating` | No identical registered React rule identifier in the installed inventory | Missing identifier; do not infer coverage through a renamed/aggregate rule |
+
+Oxlint's [plugin documentation](https://oxc.rs/docs/guide/usage/linter/plugins.html)
+explicitly marks its native compiler rules experimental and off by default.
+Availability in a stable package or a registered-rule list does not make that
+analysis stable or prove enforcement equivalent to the upstream plugin. The
+individual [purity](https://oxc.rs/docs/guide/usage/linter/rules/react/purity.html)
+and [use-memo](https://oxc.rs/docs/guide/usage/linter/rules/react/use-memo.html)
+pages illustrate the compiler attribution; all twelve source URLs and observations
+are retained in [the rule inventory](../../output/research/compatibility-resolution-2026-10-04/native-lint-recommended-coverage.json).
+Direct HTTP documentation attempts failed and remain recorded; successful web-tool
+inspection is separate evidence, not a fabricated successful fetch/hash.
+
+This replaces an unspecified broader-preset gap with named dispositions; it does
+not close the gap. Required stable production lint coverage still needs a reviewed
+configuration and actual conformance evidence. No coverage waiver, experimental
+substitute or upstream dependency downgrade is selected. This new study and edited
+document are outside any earlier frozen review verdict; the failed 61-input review
+produced no verdict and cannot cover later edits.
+
+The study's `--allow all` plus two denied rules isolates checker behavior. It is
+not a production preset and must not be copied as one: doing so would suppress
+unexamined core/TypeScript/refresh checks. The synthetic fixture config belongs
+only to the isolated study. Required production coverage, full coupled imports/
+compiler/build/browser proof and independent review remain open. A lint pass
+cannot establish authentication, publication eligibility, privacy, accessible
+movement, streaming disposal or booking correctness.
+
+### Targeted published-archive licence inspection
+
+The native-lint candidate's exact `webgl-constants` 1.1.1 and
+`@tailwindcss/oxide-wasm32-wasi` 4.3.3 archives were inspected as data. Each archive
+matched its recorded SHA-512 integrity. No code from these inspected packages was
+executed, and no application manifest, lock or requirement changed. The six WASI
+`inBundle` records' names and versions match the actual nested package manifests.
+This is stronger than a lock metadata label, but does not verify the source build
+or determine which bytes the eventual production build distributes.
+
+| Exact candidate | Actual notice evidence | Remaining qualification |
+|---|---|---|
+| `webgl-constants` 1.1.1 | The archive contains an MIT licence with Copyright (c) 2019 Tim van Scherpenzeel. Recorded JS/TS source headers separately declare CC0 dedication. | Preserve the actual package notice and source declarations; an absent registry licence field does not make the archive unlicensed, and the source headers do not justify discarding its package notice. |
+| `@emnapi/core` 1.11.1, `@emnapi/runtime` 1.11.1, `@emnapi/wasi-threads` 1.2.2 | All three nested MIT licence files are present, with Copyright (c) 2021-present Toyobayashi. | These are the recorded bundled versions, not independently newest substitutions. |
+| `tslib` 2.8.1 | Its nested 0BSD licence and Microsoft copyright notice are present. | Retain this separate licence identity in the inventory. |
+| `@napi-rs/wasm-runtime` 1.1.4 | Its six direct published files match the parent bundle byte for byte. Both archives omit a licence file; the npm-reported exact source commit's root licence contains two MIT notice blocks, for LongYinan and GitHub. | Preserve both source notice blocks. Matching bytes and `gitHead` are evidence, not cryptographic source-build attestation. |
+| `@tybys/wasm-util` 0.10.2 | Its 39 direct published files match the parent bundle byte for byte. Both archives and the recorded exact source root lack a licence file; package metadata declares MIT. | Full copyright/permission notice remains unresolved. Do not invent notice text or assume another bundled package's notice applies. |
+| `@tailwindcss/oxide-wasm32-wasi` 4.3.3 parent | Declares MIT; its official `v4.3.3` source tag resolves to a recorded commit whose root licence names Tailwind Labs, Inc. | No npm `gitHead` was reported. The tagged source-to-published-WASM build relationship is not cryptographically verified. |
+
+The pinned [NAPI source licence](https://github.com/napi-rs/napi-rs/blob/d5c3c43b45393f99ba151770f97bd472de533671/LICENSE)
+and [Tailwind source licence](https://github.com/tailwindlabs/tailwindcss/blob/c2b24dd15fed1c59dd521bd86082f520c9f5ad0d/LICENSE)
+are recorded with their exact text and SHA-256. The wasm-util source README's
+phrase “size limit” is not an MIT licence declaration; its substring match was
+excluded from licence conclusions. A package-level MIT label alone cannot supply
+a missing copyright holder or full notice.
+
+[Targeted licence analysis](../../output/research/compatibility-resolution-2026-10-04/targeted-license-analysis.json)
+indexes the archive inventories, actual notice texts, pinned source observations,
+direct/bundled byte comparisons and unchanged protected-input hashes. This closes
+the specific WebGL missing-field uncertainty and establishes the six bundle
+versions and recorded notice locations. The wasm-util notice gap, complete-graph
+licence/distribution inventory, final build SBOM, provenance, runtime/platform
+checks, independent review and MA-013 acceptance remain open. This added evidence
+is outside prior review hashes and does not create a licence/legal or supply-chain
+PASS. No maintainer contact or external write was made.
+
+### Candidate advisory scan and pre-build inventory
+
+On 2026-10-04 the installed npm 11.11.1/Node v24.14.0 ran a read-only
+`npm audit --package-lock-only --ignore-scripts --include=dev --include=optional
+--include=peer --json --registry=https://registry.npmjs.org/ --loglevel=error`
+against the isolated native-lint candidate. No `fix` was requested. The
+[raw report](../../output/research/compatibility-resolution-2026-10-04/native-lint-audit-report.json)
+has no error, exit status 0 and zero reported vulnerabilities at every severity;
+it accounts for 302 dependencies. Development and optional scopes were included;
+optional counts overlap other categories and must not be added as extra packages.
+The [receipt](../../output/research/compatibility-resolution-2026-10-04/native-lint-audit-receipt.json)
+records the unchanged candidate manifest/lock hashes, command and report hash.
+This is a dated registry advisory observation, not absence of unknown defects,
+malware, insecure application behavior or risk in non-npm artifacts. Recheck the
+then-selected graph before an approved upgrade/release; this candidate is unselected.
+
+The same unchanged lock produced a [CycloneDX 1.5 inventory](../../output/research/compatibility-resolution-2026-10-04/native-lint-candidate-sbom.cdx.json)
+using npm's built-in `sbom --package-lock-only --sbom-format=cyclonedx` with all
+three scopes included and scripts disabled. Its declared lifecycle is `pre-build`.
+The [inventory receipt](../../output/research/compatibility-resolution-2026-10-04/native-lint-sbom-receipt.json)
+and [identity crosswalk](../../output/research/compatibility-resolution-2026-10-04/native-lint-sbom-crosswalk.json)
+map all 302 dependency lock occurrences to 300 component identities with no
+unmatched identities or unresolved emitted references; the root adds one
+dependency record. `eslint-visitor-keys@5.0.1` appears at three lock paths with
+the same declared integrity and is deduplicated by the installed generator.
+This does not prove physical-path or dependency-context equivalence. TypeScript
+aliases retain their actual package/version identity in `bom-ref` and `purl` even
+when the display name is the alias. Do not rename their factual technical versions.
+
+Installed generator inspection verifies that this npm version emits no package-path
+property and deduplicates by actual package name/version. The crosswalk uses those
+identities, rather than assuming the newer documentation's example path property
+exists. The receipt records corrected producer parsing/grouping attempts; the raw
+npm outputs were not regenerated or changed to conceal those analysis errors.
+JSON parsing and reference correspondence are artifact checks, not complete
+CycloneDX conformance, installed-file verification or a product build inventory.
+
+The generated inventory omits licence declarations for GSAP and `webgl-constants`
+and individual integrity values for the six recorded WASI bundled packages.
+An omitted declaration is not proof of no licence: preserve the previously
+verified WebGL archive notice and continue exact GSAP terms/full-graph distribution
+review. Bundled identities and selected byte comparisons already recorded do not
+constitute separate published-archive hashes for every component. No signing,
+source-build attestation, licence clearance or final full-product SBOM is claimed.
+
+Context7 `/npm/cli` and official [audit](https://docs.npmjs.com/cli/v11/commands/npm-audit/)
+and [SBOM](https://docs.npmjs.com/cli/v11/commands/npm-sbom/) documentation were
+checked on that date; exact installed SBOM source was inspected where behavior
+differed from newer examples. This evidence remains producer work outside all
+prior review hashes and does not select npm/Node or the candidate production graph.
+Backend/runtime/assets, full licence/provenance and coupled-platform evidence,
+independent review and MA-013 remain open. No application locks or installs changed.
+
+### Native hook conformance and configuration boundaries
+
+Checked 2026-10-05 using the same isolated Oxlint 1.86.0 executable on Node
+24.14.0, Context7 `/websites/oxc_rs_guide_usage`, and React's official
+[Rules of Hooks](https://react.dev/reference/rules/rules-of-hooks) and
+[dependency guidance](https://react.dev/reference/eslint-plugin-react-hooks/lints/exhaustive-deps).
+The [reproducible probe](../../output/research/native-lint-conformance-2026-10-05/run_probe.py)
+and [raw diagnostic receipt](../../output/research/native-lint-conformance-2026-10-05/receipt.json)
+exercise the actual Windows CLI. These findings amend the configuration obligations
+above; they do not select the candidate or close broader recommended-rule coverage.
+
+| Input and invocation | Actual observation | Required disposition before selection |
+|---|---|---|
+| Namespace `React.useState` after an early return; namespace `React.useEffect` missing a prop dependency | Both reject with the expected named diagnostic; valid namespace Effect accepts. | Recorded namespace subset only. |
+| Conditional custom `useSession`; `useState` imported as `useCounter` | Both reject with `rules-of-hooks`. | Recorded hook-shaped name subset only. |
+| `useState` renamed to `state`; `useEffect` renamed to `effect` | Semantically invalid fixtures accept with no diagnostics. | Alias detection is incomplete. Retain Hook naming and require an enforceable, reviewed configuration/source policy; these samples do not establish the upstream plugin's alias behavior. |
+| Custom Effect configured with shared `settings.react-hooks.additionalEffectHooks` | The missing dependency accepts under the otherwise explicit two-rule configuration. | Do not assume the official plugin's shared configuration API supplies native dependency coverage. |
+| The same custom Effect configured with rule-level `additionalHooks`, without CLI rule/category overrides | Missing dependency rejects; complete dependency list accepts; each invocation reports exactly two active rules. | Use the candidate's demonstrated rule-level option in any proposed configuration, and verify each owned custom Effect hook. |
+| Rule-level custom Effect configuration plus the earlier `--allow all --deny react/rules-of-hooks --deny react/exhaustive-deps` combination | The missing dependency accepts. | Do not reuse that combination as a production invocation: it loses the tested custom-Effect enforcement. This paired observation does not attribute the loss to one individual flag. |
+| Invalid JSON configuration; nonexistent source path | Each exits 1; the path failure explicitly reports no files. | A caller must fail on configuration/no-input errors instead of treating absence of diagnostics as success. |
+| Directory containing the seven base TSX fixtures | Seven files examined, expected four named violations, exit 1. | Isolated directory discovery/failure behavior only; not all application files, editor or CI coverage. |
+
+The config-only custom-Effect probes disable the default correctness category in
+JSON and explicitly enable the two required rules, preserving their options. No
+experimental compiler or JavaScript plugin runs, automatic fixes, package installs,
+application source edits or lock changes occurred. Ten protected dependency/source
+inputs match before/after hashes. Tagged upstream rule sources and their download
+hashes are retained in the [source receipt](../../output/research/native-lint-conformance-2026-10-05/tag-source-receipt.json);
+source inspection is supporting evidence, not binary source-build provenance.
+
+The native topology still lacks a stable, accepted disposition for the broader
+React preset. Compiler diagnostics remain relevant even without compiler adoption;
+neither these naming/configuration findings nor a clean two-rule run waive them.
+Full source coverage, retained ESLint/TypeScript/refresh behavior, editor/CI failure
+propagation, coupled build/platform evidence and founder compatibility acceptance
+remain pending. The separate [independent conformance review](reviews/native-hook-conformance-v1-2026-10-05.md)
+records bounded PASS after reproducing all fourteen CLI observations and checking
+the earlier seventeen-rule inventory. Its exact [reviewed producer bytes](../../output/research/native-lint-conformance-2026-10-05/refresh-evidence.reviewed.md)
+remain preserved; this later reference edit does not replace that input identity.
+The verdict accepts evidence accuracy, not coverage completeness, the candidate
+graph, production configuration or application readiness.
+
+### Exact GSAP candidate licence and notice evidence
+
+The unselected candidate lock references GSAP 3.15.0. A separate read-only
+[archive inspection](../../output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/inspection.json)
+verified its SHA-512 against both that lock and the exact npm registry response.
+All 179 regular archive files have recorded hashes. The filename inventory
+contains no licence/copying/notice-named file; its package manifest declares the
+custom Standard No Charge licence URL. Four selected core/source/distribution
+headers retain GreenSock copyright and refer to those terms. The minified header
+uses 2026, while the other inspected headers use 2008–2026; preserve their actual
+notices rather than normalizing or inventing a replacement MIT notice.
+
+The [official standard licence](https://gsap.com/community/standard-license/),
+observed 2026-10-04, states commercial use is free under its terms. It restricts
+competing visual animation-builder uses and related reverse engineering, and
+forbids removing or altering proprietary notices. Its effective/modified dates
+are 30 April/30 May 2025. It incorporates [Webflow terms](https://webflow.com/legal/terms)
+and provides for amendments and termination. This is a custom licence, not an
+MIT or unrestricted open-source grant. The current company-site/World scope is
+not defined as a no-code animation builder; that scope comparison is an inference,
+not legal clearance or acceptance of terms on the company's behalf.
+
+Npm supplies no `gitHead` for this exact package. A separate
+[source association](../../output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/source-association.json)
+resolved the official 3.15.0 tag to commit
+`13e2b790546426a1a2e0e9b409f3f8dc6d6611f2`. Its README, source core, unminified
+distribution core and minified distribution core match the four inspected archive
+files byte for byte. This verifies selected notice-bearing files, not the complete
+source build or all plugins. Official HTML, registry response, archive and source
+bytes are retained with hashes. No downloaded package code ran; five protected
+application/candidate inputs remained unchanged. No dependencies were installed.
+
+This resolves the candidate's omitted inventory declaration to its exact custom
+terms and notice sources. The generated pre-build SBOM remains unchanged; an
+omission is not an unlicensed-package verdict. Distribution-specific notice
+preservation, final build SBOM, complete licence/provenance review, coupled runtime
+proof and MA-013 remain held. Its [bounded independent review](reviews/gsap-notice-evidence-2026-10-04.md)
+records PASS for the listed GSAP evidence inputs only and cannot extend any earlier
+receipt or provide legal clearance. The
+[pre-addition document](../../output/research/contract-review-reference-reconciliation-2026-10-04/refresh-evidence.pre-gsap-notice.md)
+and [GSAP-reviewed document](../../output/research/contract-review-reference-reconciliation-2026-10-04/refresh-evidence.pre-gsap-review-reference.md)
+are preserved separately; this reference update replaces no receipt identity.
+
+## Couplings and migration obligations
+
+Registry candidate Fiber permits React/DOM `>=19 <19.4`, Drei requires Fiber
+`^9.0.0` and React/DOM `^19`, and React DOM requires React `^19.3.0`. Three's
+observed candidate meets the advertised minimum ranges. This is a range-level
+observation, not a tested renderer/asset/type combination. Optional native Expo
+peers do not silently become web requirements. Never create an accepted checkpoint
+with React 19 and Fiber 8 or Drei 9.
+
+The candidate React plugin requires Vite `^8.0.0`; their engines require Node
+`^20.19.0 || >=22.12.0`. The installed Node version meets that stated range,
+but this does not resolve the latest supported Node/npm pair or approve a wave.
+[Vite migration guidance](https://vite.dev/guide/migration) describes its changed
+build toolchain and browser target. Follow supported migration steps and test
+build output, dynamic chunks, source maps and any plugin transforms; do not assume
+a direct multi-major upgrade preserves the application.
+
+[Tailwind's upgrade guide](https://tailwindcss.com/docs/upgrade-guide) names
+Safari 16.4+, Chrome 111+ and Firefox 128+, and changes CSS/plugin integration.
+Its Safari floor aligns with the accepted legacy floor at the documented level;
+actual accessibility, tokens, CSS behavior and current evergreen browsers still
+need testing. Tailwind remains required. Dedicated Vite or PostCSS integration
+and companion package versions must join the graph before selection.
+
+[Fiber's v9 guide](https://r3f.docs.pmnd.rs/tutorials/v9-migration-guide) identifies
+React 19 compatibility, Strict Mode and type/renderer changes. Verify lifecycle,
+loader cleanup, materials/lighting, scene transitions and HTML/World interaction.
+TypeScript 7, Router 7, Zustand 5 and GSAP candidates have no completed migration,
+license or advisory assessment in this slice. Their latest tags are not approval.
+
+## Wave and rollback boundary
+
+### Fresh stable React-lint recheck — 2026-10-05
+
+The official registry now names Oxlint `1.87.0` as latest. Its
+[official release](https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.87.0)
+is non-draft/non-prerelease, published 2026-10-05 at 11:04:25 UTC. The
+[isolated receipt](../../output/research/react-lint-stable-recheck-2026-10-05/receipt.json)
+records integrity-verified unpacking of the published JS package and matching
+Windows x64 binding, without installation or lifecycle scripts. SHA-512 tarball
+integrity is not signature, attestation or source-build provenance verification.
+Observed commands report Oxlint `1.87.0` and Node `v24.14.0`; neither selects the
+production toolchain. The old `1.86.0` studies and locks remain unchanged.
+
+Reused the fourteen exact existing synthetic CLI inputs/configurations and their
+React-derived oracle. All exit codes and diagnostic-code multisets match the
+earlier observations: namespace/top-level and Hook-shaped conditional cases are
+checked, but the renamed `state`/`effect` violations still accept. The shared
+custom-Effect setting still misses the dependency; rule-level `additionalHooks`
+rejects it when configured directly, and the earlier CLI override combination
+still loses that enforcement. Invalid config and missing files fail. These are
+actual checker-boundary probes, not documentation tests or application execution.
+No broader preset-equivalence or corrected configuration is established.
+
+The new tag's two inspected rule sources are byte-identical to the previous tag.
+Its actual rule inventory still has no identical `component-hook-factories`,
+`config` or `gating` identifier; missing identifiers alone do not establish absence
+of every equivalent diagnostic. Compiler analysis remains excluded under the
+[documented experimental boundary](https://oxc.rs/docs/guide/usage/linter/plugins.html).
+No experimental rule was enabled. All ten protected app/source/original-study
+hashes match before/after; nothing was fixed in the prototype.
+
+Fresh official metadata still gives `eslint-plugin-react-hooks` `7.1.1` the
+`@babel/core ^7.24.4` requirement and gensync's latest tag `1.0.0-beta.2`, with
+`0.1.0` its highest non-prerelease version. These observations do not alter the
+earlier inspected Babel-chain restriction or select a patched/forked dependency.
+The full mutually compatible stable graph, required lint coverage, reproducible
+locks, licences/provenance and independent/founder acceptance remain open. This
+new recheck has its own [bounded independent review PASS](reviews/react-lint-stable-recheck-v1-2026-10-05.md)
+for evidence accuracy. The [exact inspected producer bytes](../../output/research/react-lint-stable-recheck-2026-10-05/refresh-evidence.reviewed.md)
+are preserved; this later reference edit is outside them. No coverage or graph
+acceptance follows, and prior receipts retain their own inputs.
+
+Stabilize the known fatal prototype defects under the separately approved bounded
+contract before upgrades. Keep toolchain, coupled React/renderers/3D, backend,
+database and cloud work reversible. A coupled renderer checkpoint must be valid
+as a unit even when separate waves test other aspects; no half-upgraded runtime
+can be accepted because an isolated package installs.
+
+Before an authorized wave, requery the exact compatibility graph, record current
+source/config/runtime/lock hashes and deterministic installation evidence.
+Run focused affected tests, then one relevant full suite and browser/visual checks.
+Rollback restores the prior coherent runtime/source/config/lock set under its
+approved operation and repeats the affected evidence. This document performs no
+restore, branch, commit, credential, dependency, schema or deployment operation.
+
+Fresh backend/cloud/QA evidence, complete production graph, final semantic-render
+pattern, exact locks, security/SBOM/license review and founder compatibility
+acceptance remain required. The active app goal continues beyond this refresh.
+
+## Founder-approved isolated React lint evaluation — 2026-10-06
+
+Status: DOING. D-072 permits this isolated development/CI evaluation only; no
+application dependency, production policy, complete graph or MA-013 is selected.
+Fresh [registry observations](../../output/research/react-lint-approved-evaluation-2026-10-06/registry-observations.json)
+retain ESLint 10.12.0 and the official Hook plugin 7.1.1; the TypeScript ESLint
+parser/plugin are now 8.71.1, still requiring TypeScript below 6.1. The candidate
+uses the previously documented TypeScript 6 API alias and TypeScript 7 compiler
+path without claiming compiler/API/editor/build parity.
+
+The [strict resolution receipt](../../output/research/react-lint-approved-evaluation-2026-10-06/strict-resolution-receipt.json)
+records 162 package records and only the named gensync 1.0.0-beta.2 prerelease.
+The candidate lock is `86dd64aae77da6ab9a0d0f7a88338494c15f68620838ffd40140f254b1e9ca2d`.
+[Installation](../../output/research/react-lint-approved-evaluation-2026-10-06/isolated-install-receipt.json)
+was confined to the study folder, with lifecycle scripts disabled, strict peers/
+engines, allowlisted runtime environment and empty user/global npm configurations;
+the lock stayed identical. The [advisory query](../../output/research/react-lint-approved-evaluation-2026-10-06/advisories-receipt.json)
+reports no known advisories. The [registry signature check](../../output/research/react-lint-approved-evaluation-2026-10-06/signatures-receipt.json)
+exits zero with empty invalid/missing arrays. Neither result is a security verdict,
+complete source-build provenance or full licence clearance.
+
+The actual full `configs.flat.recommended` preset plus the documented shared
+custom-Effect setting was exercised through ESLint's CLI. The [original results](../../output/research/react-lint-approved-evaluation-2026-10-06/checker-observations.json)
+reject ordinary conditional Hooks, missing dependencies, invalid Effect Events,
+custom Hooks, Hook-shaped import aliases and namespace calls, while accepting
+valid controls. It misses `useState as state` after an early return. **That bare
+invocation is rejected against the required alias coverage; its failure is kept.**
+
+A separate unselected invocation adds ESLint's built-in
+[no-restricted-syntax](https://eslint.org/docs/latest/rules/no-restricted-syntax)
+selector for named React Hook imports aliased to a non-Hook-shaped local name.
+It retains the complete published preset and ignored-file warnings. The
+[strict guarded observations](../../output/research/react-lint-approved-evaluation-2026-10-06/guarded-strict-checker-observations.json)
+match the fourteen reused behavior fixtures plus three naming controls, including
+valid Hook-shaped and unrelated non-Hook aliases. The top-level non-Hook-shaped
+alias is denied by the proposed naming restriction, not because its runtime order
+is invalid. This is a candidate invocation, not an adopted coding policy or general
+alias/dataflow proof; assignments, destructuring, re-exports and cross-module
+custom Hook aliases remain unproven.
+
+[Failure controls](../../output/research/react-lint-approved-evaluation-2026-10-06/strict-invocation-controls.json)
+confirm an invalid rule/configuration fails with exit 2 and an unmatched target
+fails with exit 1. The first incorrectly scoped configuration probe and earlier
+warning-suppressed invocations are preserved, not accepted as final controls.
+[Focused compiler observations](../../output/research/react-lint-approved-evaluation-2026-10-06/compiler-diagnostic-observations.json)
+exercise purity and nested-component errors with a valid purity control. The
+[effective configuration](../../output/research/react-lint-approved-evaluation-2026-10-06/effective-guarded-config.json)
+enables sixteen published Hook rules; the installed 7.1.1 source marks
+`component-hook-factories` as a deprecated no-op removed in 7.1.0, despite the
+current documentation list. Do not enable that no-op to fabricate coverage;
+complete semantic replacement/deprecation disposition remains held.
+
+[Node built-in coverage](../../output/research/react-lint-approved-evaluation-2026-10-06/reachability-receipt.json)
+observes actual gensync execution during synthetic linting. It does not prove
+exclusion from future browser/server code, HTML, deployed images or other paths.
+All D-072 expiry/recheck/rejection conditions remain. Full preset/alias semantics,
+TypeScript compiler/API/editor/build parity, complete provenance/licence/SBOM,
+deployed exclusion and candidate/founder acceptance remain
+open. Original application packages/locks and protected models are unchanged.
+No application source, provider/account, migration, commit, push or deployment changed.
+
+The [independent evaluation review](reviews/react-lint-approved-evaluation-v1-2026-10-06.md)
+records bounded PASS for evidence accuracy: frozen inputs, raw projections and
+selected CLI results reproduce. It does not establish the open conformance,
+security, exclusion or adoption obligations. The [reviewed evidence bytes](../../output/research/react-lint-approved-evaluation-2026-10-06/refresh-evidence-2026-10-04.md.reviewed)
+retain the receipt's exact identity; this later reference update is outside them.
+
+## TypeScript bridge executable and diagnostic probe — 2026-10-06
+
+Status: DOING. This isolated follow-up uses the existing candidate installation,
+without installing packages or changing its manifest, lock, aliases or binaries.
+[Microsoft's stable release guidance](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/)
+describes the TypeScript 6 API / native 7 compiler arrangement. The
+[dated source receipt](../../output/research/typescript-bridge-parity-2026-10-06/source-receipt.json)
+records Context7 and primary guidance; indexed preview/main examples do not select
+an experimental API. Installed exact source and actual commands control results.
+
+The installed `typescript` alias wrapper is `@typescript/typescript6` 6.0.2, but
+its source delegates to the lock's `@typescript/old` alias, actual TypeScript 6.0.3.
+The [API/CLI observations](../../output/research/typescript-bridge-parity-2026-10-06/observations.json)
+confirm API `version` and `tsc6` report 6.0.3; direct native and installed `tsc.cmd`
+report 7.0.2. An upstream binary-collision report was a diagnostic lead only;
+this candidate's observed shim selects native 7, without asserting all installation
+orders or platforms do so. Use actual delegated versions in compatibility/SBOM
+identities rather than treating the wrapper label as its compiler/API version.
+
+Five synthetic plain-TypeScript projects exercise valid discriminated-union
+narrowing and invalid assignment, readonly mutation, unchecked indexed access and
+unresolved module. Both CLI compilers, the 6.0.3 program API and its in-process
+language service report the expected diagnostic codes. CLI diagnostic text matches
+after CRLF-to-LF normalization only; raw invalid-case outputs differ in line endings.
+The [separate comparison](../../output/research/typescript-bridge-parity-2026-10-06/comparison.json)
+retains that finite observation, not general type-system or editor equivalence.
+The original oracle assumed exit 2 for invalid no-emit cases: API6 CLI returns 2,
+native7 returns 1. **Exact exit equivalence fails for all four invalid cases.**
+Both reject them, but no adapter may assume identical numeric exit semantics from
+these results. Preserve the failed exact-exit expectations and raw outputs.
+
+Child processes receive only allowlisted OS/runtime variables. Candidate lock and
+protected application/model inputs remain unchanged. No React types, native LSP,
+editor UI, Vite/bundler, declaration/JavaScript emit, cross-platform or application
+build was exercised. Those parity and D-072 conformance/supply-chain/exclusion
+obligations remain open; the graph and tooling remain unselected. No application, editor configuration, account,
+provider, migration, commit, push or deployment changed.
+
+The [independent review](reviews/typescript-bridge-diagnostics-v1-2026-10-06.md#correction-1-disposition--2026-10-06)
+records bounded evidence-accuracy PASS after one collateral line-ending correction.
+The initial REVISE and original inputs remain preserved; [reviewed evidence bytes](../../output/research/typescript-bridge-parity-2026-10-06/refresh-evidence-2026-10-04.md.reviewed)
+retain their exact identity. This later reference update is outside that receipt's
+inputs and establishes no broader editor/build/conformance or adoption acceptance.
+
+## TypeScript React declaration diagnostic probe — 2026-10-06
+
+The earlier plain-TypeScript review remains bounded to its own five fixtures.
+This [new isolated packet](../../output/research/typescript-react-parity-2026-10-06/observations.json)
+adds eight finite React/DOM declaration cases without changing the application or
+the existing lint candidate manifest/lock. It reuses API6's observed 6.0.3 delegate
+and native TypeScript 7.0.2, invoked through their explicit existing entry points.
+No ambiguous .bin shim is used and no selected production version is inferred.
+
+Fresh [official registry observations](../../output/research/typescript-react-parity-2026-10-06/type-packages.json)
+pin @types/react 19.3.0, @types/react-dom 19.3.0 and csstype 3.2.3 in this separate
+evidence directory. Their archives match declared SHA-512 integrity; no package
+scripts or React runtime execute. Existing semver 7.8.5 confirms both declared
+ReactDOM/React and React/csstype ranges. This is not complete provenance, licence,
+advisory/SBOM or full graph clearance, and creates no production dependency lock.
+
+Fixtures enable strict checking, react-jsx, noEmit, skipLibCheck=false and explicit
+React/DOM ambient type selection with DOM/ES2022 libraries. Valid controls exercise
+a numeric component/state, typed button event/ref and ReactDOM container, plus
+React19's accepted async component type. The latter proves typing only, not client
+execution, server-component support or an approved rendering architecture.
+Invalid cases independently require rejection of wrong/missing props, string
+updates to numeric state, div refs on buttons, nonexistent button-event fields
+and a string DOM-root container. No @ts-expect-error or custom JSX type stub
+suppresses diagnostics. These are compiler/API tooling probes, not product tests.
+
+Both CLIs and the API6 program/in-process language service match all eight
+[diagnostic/acceptance oracles](../../output/research/typescript-react-parity-2026-10-06/fixture-oracles.json).
+The two valid cases exit 0. API6 exits 2 and native7 exits 1 for all six invalid
+cases: numeric exits are not interchangeable, while both reject. Invalid raw
+stdout differs by CRLF/LF; comparison after only that line-ending normalization
+matches in this sample. The [source comparison](../../output/research/typescript-react-parity-2026-10-06/source-comparison.json)
+confirms the valid component's same seven isolated fixture/declaration sources
+across both CLIs and the API program; their own standard libraries are distinct
+and are not called equivalent. Source coverage alone proves no diagnostic parity.
+
+[React's TypeScript guidance](https://react.dev/learn/typescript) and
+[TypeScript JSX guidance](https://www.typescriptlang.org/docs/handbook/jsx.html)
+support the intended controls. Context7 /microsoft/typescript/v7.0.2 returned
+versioned JSX examples and some legacy/main snippets; those are not the current
+React19 type contract or evidence of native/API equivalence. The pinned declaration
+files and actual compiler observations supply the exact exercised behavior.
+
+Scope still excludes actual React rendering, hook/compiler transformation,
+React Three Fiber/Drei, emit/declarations, Vite/bundler/hydration, native LSP,
+editor UI, other platforms, complete rule/supply-chain/deployed-exclusion proof
+and the complete latest mutually compatible stable graph. D-072 remains lint-only.
+Application/previous candidate locks and protected model inputs are unchanged.
+Independent evidence review, integrated/founder acceptance and MA-013 remain
+required; this appendix selects no toolchain or broader prerelease exception.
+
+The [independent React diagnostic review](reviews/typescript-react-diagnostics-v1-2026-10-06.md)
+records bounded PASS for these exact observations. The inspected bytes are
+preserved in the [React evidence directory](../../output/research/typescript-react-parity-2026-10-06/);
+this later reference is outside the receipt. Broader parity and adoption remain held.
+
+## Native TypeScript language-server probe — 2026-10-06
+
+This [separate protocol packet](../../output/research/typescript-native-lsp-2026-10-06/producer-corrected-run/observations.json)
+uses the existing TypeScript 7.0.2 platform executable resolved by its installed
+package resolver. The [executable identity](../../output/research/typescript-native-lsp-2026-10-06/executable-identity.json)
+is observed tooling, not a new installation or selected production stack. The
+exact [v7.0.2 launcher source](https://github.com/microsoft/TypeScript/blob/v7.0.2/tsc/cmd/tsgo/lsp.go)
+requires `--lsp --stdio`; help-text absence alone did not establish availability.
+Context7's versioned LSP query returned no matching diagnostic documentation, and
+earlier main-path snippets were not used in place of the actual tag. The
+[official LSP feature specification](https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/)
+supports framing, capability negotiation, buffer synchronization, pull diagnostics
+and shutdown/exit. Version 3.17 is this feature baseline, not a newest-protocol selection.
+
+The native server identifies itself as typescript-go 7.0.2 and advertises UTF-16,
+open/close and incremental document changes plus the typescript pull-diagnostic
+provider. Its full reports match the existing two valid and six invalid React
+fixture code oracles: props, required props, numeric state, button refs/events
+and the DOM-root container. Their codes also match the previously reviewed
+CLI/API6/in-process-service records. The async control proves type acceptance
+only. No actual React rendering, compiler transformation or server-components
+architecture is established. The [comparison](../../output/research/typescript-native-lsp-2026-10-06/producer-inspection.json)
+retains this finite correspondence; it does not claim every message/range or
+standard library is equivalent. Earlier unequal invalid numeric CLI exits remain.
+
+For the invalid prop document, incremental in-memory version 2 replaces the
+numeric title with a string and returns no diagnostics. Version 3 restores the
+original error and returns TS2322. Disk fixture bytes remain unchanged. These
+edit transitions exercise only the native LSP boundary, not API6 edit or editor
+UI parity. The client waits for each pull response before the next edit.
+
+The [first attempt](../../output/research/typescript-native-lsp-2026-10-06/producer-run/observations.json)
+stopped at the server's configuration-change registration, which the minimal
+client had not advertised/supported. Its exact initial runner is preserved.
+The corrected client explicitly advertises and handles that finite registration
+and returns null for unavailable synthetic settings, as the specification permits.
+Full protocol interoperability, including unsupported-capability handling, remains
+unproven; this adjustment is not a production workaround or editor configuration.
+
+The direct process uses a narrow OS environment, excludes npm/Node from PATH,
+redirects profile/temp locations to its own output and creates no observed files
+in those locations. This is environment containment, not an OS network sandbox.
+The corrected session returns a shutdown response, receives exit, terminates
+with code 0 and leaves no live probe server. Stderr includes an exit EOF log;
+a clean-stderr result is not claimed. All 72 current-run input hashes match.
+No provider/auth/editor setting, package installation, application/candidate lock,
+protected model or machine service is changed.
+
+Complete editor/plugin, compiler/API/build/emit, cross-platform, supply-chain,
+deployed-exclusion and mutually compatible stable graph evidence remains held.
+D-072 stays the named isolated lint-only exception, not a Babel/build or general
+prerelease waiver. Independent review, MA-013 and integrated/founder acceptance
+remain required; this appendix creates no adoption or production permission.
+
+The [independent native LSP review](reviews/typescript-native-lsp-v1-2026-10-06.md)
+records bounded PASS after reproducing all eight fixture diagnostics and both
+in-memory transitions. The [exact reviewed bytes](../../output/research/typescript-native-lsp-2026-10-06/)
+remain preserved; this later reference is outside them. The initial client failure,
+exit EOF log and producer-reported Context7 limit remain visible. No editor/build,
+complete graph, adoption or founder acceptance follows.
+
+## Coupled frontend candidate and declaration gate — 2026-10-06
+
+This [isolated packet](../../output/research/frontend-build-evaluation-2026-10-06/candidate-inspection.json)
+evaluates independently newest observed stable frontend packages as one candidate,
+not a selected production stack. Its [exact manifest](../../output/research/frontend-build-evaluation-2026-10-06/candidate/package.json)
+includes React/DOM and types 19.3.0, Fiber 9.8.1, Drei 10.7.9, Three 0.186.1 and
+@types/three 0.186.0, Vite 8.3.2/plugin-react 6.1.2, Tailwind/Vite integration 4.3.3,
+Router 7.18.4, Zustand 5.0.15, GSAP 3.15.0 and the coupled lint/checker tools.
+API6 is the @typescript/typescript6 6.0.2 alias delegating to TypeScript 6.0.3;
+native7 is the TypeScript 7.0.2 alias. Their identities are not product versions.
+
+Official registry metadata, Context7 and primary guidance are preserved. The
+[earlier exact-tag build observations](../../output/research/typescript-build-capability-2026-10-06/source-receipt.json)
+show Vite transpilation is separate from type checking and distinguish default
+Oxc from optional compiler/Babel paths; no Babel execution/exclusion is inferred
+from package names. React/Fiber guidance supports the React19/Fiber9 family,
+while current alpha guidance is excluded. [Tailwind's compatibility guidance](https://tailwindcss.com/docs/compatibility)
+provides a framework browser floor, not measured coverage for this fixture or the
+project. Fresh tool-read excerpts and Context7 output remain limited source evidence.
+
+The [portable runtime receipt](../../output/research/frontend-build-evaluation-2026-10-06/runtime/runtime-receipt.json)
+records Node 26.10.0 from the official release index (current stable, not LTS) and
+registry npm 12.2.0. The installed Node 24.14.0 cannot satisfy npm12's engine range.
+Official SHA256 checksums and registry SHA512 archive integrity were verified;
+that is not signature, attestation, licence or advisory clearance. Windows metadata
+decoding initially failed and was corrected with explicit UTF-8 without discarding
+the observation. No machine runtime, PATH, npm config or account was changed.
+
+The [npm12 resolution](../../output/research/frontend-build-evaluation-2026-10-06/resolution-npm12-receipt.json)
+and [frozen initial installation](../../output/research/frontend-build-evaluation-2026-10-06/frozen-install-receipt.json)
+exit 0 with strict peers/engines, disabled lifecycle scripts, explicit private
+prefix/cache and empty user/global configs. The 308-record lock has SHA256
+`d8ca6b5c36e0928f111fa2b9977c091bad5c13d7e45888139327e4fde496a78f`,
+unchanged from the earlier npm11 resolution. Its sole observed prerelease is
+gensync 1.0.0-beta.2. Metadata links it through React hooks lint/Babel; that does
+not prove execution or exclusion from every other path. D-072 permits only its
+named isolated lint evaluation, not deployment, general build use or adoption.
+
+The synthetic browser-source fixture imports the actual runtime/render/control/
+state/router/style families, with strict/isolatedModules/noEmit and
+**skipLibCheck=false**. It is tooling evidence, not a production screen, campus
+or selected movement implementation. Its independent invalid prop control reports
+TS2322; API6 exits 2 and native7 exits 1. The initial valid fixture referenced an
+undeclared renderer marker; the corrected source uses the declared getContext()
+method. Initial and corrected bytes/logs remain separate.
+
+After that correction, [both actual CLI paths](../../output/research/frontend-build-evaluation-2026-10-06/corrected-checker-observations.json)
+still reject the otherwise valid fixture with two declaration errors:
+
+- TS2430: three-stdlib/loaders/SVGLoader.d.ts:3–9 declares optional userData,
+  while @types/three/src/extras/core/ShapePath.d.ts:38 requires that property.
+- TS2416: three-stdlib/loaders/TGALoader.d.ts:13 returns DataTexture from parse;
+  @types/three/src/loaders/DataTextureLoader.d.ts:21,45 requires a texture-data
+  return whose format is narrower. The compilers choose different numeric format
+  witnesses; equal codes do not establish raw message equivalence.
+
+A [separate public type-import control](../../output/research/frontend-build-evaluation-2026-10-06/corrected-loader-control-observations.json)
+reproduces TS2430/TS2416 without the React scene. Its first attempt used unexported
+internal paths and reported TS2307; the correction uses three-stdlib's published
+root exports. That client mistake and original runner/logs are preserved. No
+third-party declaration patch, older-package selection or check suppression is
+used. The reviewed outcome must distinguish declaration mismatch from a runtime
+loader failure, which has not been exercised.
+
+The explicit gate stops before Vite or browser execution when the valid input is
+rejected. No build, runtime rendering, HTML/CSS output, compiler transform, audio,
+streaming, resource lifecycle, real browser/device performance, supply-chain or
+gensync deployed-exclusion proof follows. All 78 protected inputs match their
+pre-probe hashes, including application sources/locks and both models. Evidence is
+research-only and uncommitted. Independent review and latest mutually compatible
+stable selection remain pending; any proposed blocked-newest exception needs its
+own dated evidence, rollback/recheck and founder approval under D-069.
+
+The [independent declaration-gate review](reviews/frontend-candidate-declaration-gate-v1-2026-10-06.md)
+records bounded PASS for accuracy of this failed-candidate evidence after
+reproducing all six CLI controls. The candidate remains rejected at the strict
+type gate. All 382 frozen inputs and 78 protected inputs matched; the
+[exact reviewed snapshots](../../output/research/frontend-build-evaluation-2026-10-06/)
+remain preserved. This later reference lies outside the receipt and creates no
+build/browser, complete graph, adoption or founder acceptance.
+
+## Matched Three candidate build and browser evidence — 2026-10-06
+
+This [separate isolated evaluation](../../output/research/frontend-three-remedy-evaluation-2026-10-06/candidate-inspection.json)
+retains the previously observed direct React/DOM/Fiber/Drei/Vite/Tailwind/router/
+state/animation/lint/checker pins and substitutes Three 0.184.0 with @types/three
+0.184.1. Fresh registry metadata identifies 0.184.0 as the newest stable runtime
+patch in that revision; the current latest remains 0.186.1. This evaluates a
+matching stable fallback without an application upgrade, type patch, suppressed
+declaration check, selected production lock or approved newest-release exception.
+
+The [declaration history](../../output/research/three-declaration-history-2026-10-06/observations.json)
+shows required ShapePath.userData and the abstract DataTextureLoader.parse contract
+in the latest 185 and 186 types. [All four earlier 185 patch sources](../../output/research/three-declaration-history-2026-10-06/185-earlier-patch-observations.json)
+also contain those contracts. Archive SRI is verified, not signatures or complete
+licence/advisory clearance. Separate actual [type-source comparison commands](../../output/research/three-declaration-history-2026-10-06/corrected-type-source-boundary-observations.json)
+retain the failures for 185.4 and acceptance for 184.1; installed runtime bytes in
+that comparison remain 186.1, so it is deliberately not a runtime/type selection.
+The initial external config missed explicit type roots and reported TS2688;
+its correction anchors the unchanged candidate type references. Both attempts
+remain preserved. Context7 snippets containing main-path source do not certify
+the exact compiler's entire resolver or every declaration patch.
+
+### Fresh resolution and installation boundary
+
+The [first lockfile-only attempt](../../output/research/frontend-three-remedy-evaluation-2026-10-06/resolution-receipt.json)
+exits 1 with EALLOWREMOTE. The refused URL is a registry tarball for the optional
+Tailwind oxide WASM package, whose parent declares an exact registry version.
+[Installed npm12 source observations](../../output/research/frontend-three-remedy-evaluation-2026-10-06/npm-policy-source-observations.json)
+support a specific inference: complete ideal-tree extraction for bundled
+dependencies lacks the reifier's registry-origin exemption at that call site.
+[npm's configuration documentation](https://docs.npmjs.com/cli/using-npm/config/#allow-remote)
+permits normal registry-mediated tarballs despite its default remote restriction.
+The related [upstream report](https://github.com/npm/cli/issues/9347) concerns a
+different extraction path; its closure does not establish this exact path fixed.
+No npm source patch or allow-remote/force/peer-policy override was applied.
+
+[Normal install](../../output/research/frontend-three-remedy-evaluation-2026-10-06/normal-install-receipt.json)
+then exits 0 under unchanged npm12 defaults, strict peers/engines and disabled
+lifecycle scripts. A [separate fresh frozen reproduction](../../output/research/frontend-three-remedy-evaluation-2026-10-06/frozen-reproduction-receipt.json)
+also exits 0 with the same SHA256 lock
+`fa903a8d901357aacf80863524e0e00ae2ece69126daf218256cdd2656b2da4c`.
+Both are isolated installs, not changes to the protected application. The lock
+contains 302 records: root, 236 matching installed metadata versions and 65 absent
+optional records. It retains nested stats-gl Three 0.170.0 separately from the
+root renderer; that duplicate is not silently represented as one engine revision.
+The sole observed prerelease remains gensync 1.0.0-beta.2 under D-072's lint-only
+evaluation scope. Full provenance, licence, advisory, conformance and exclusion
+obligations remain; metadata correspondence is not all-file integrity.
+
+### Actual checker, build and browser observations
+
+The [six actual checker controls](../../output/research/frontend-three-remedy-evaluation-2026-10-06/checker-observations.json)
+use the unchanged finite fixture sources with strict/isolatedModules/noEmit and
+skipLibCheck=false. API6/native7 accept the valid fixture and public loader-import
+control; both reject the independently invalid numeric prop with TS2322. Invalid
+numeric exits remain 2 versus 1. These are finite integration checks, not every
+API, export, editor or complete application conformance.
+
+Only after that gate passed, the [actual default Vite build](../../output/research/frontend-three-remedy-evaluation-2026-10-06/build-receipt.json)
+exited 0: 577 transformed modules, output HTML/CSS/JS, with preserved identities.
+The minified JS is about 1.24 MB and the reported gzip estimate is about 353 kB.
+Vite reports its large-chunk warning and plugin timing information. These are
+synthetic build observations, not semantic-publication output, transfer/device
+budgets or performance benchmarks. V8 JS coverage observes no gensync module in
+this one default build; it does not prove exclusion from other workers, optional
+compiler/Babel paths, server code, images or all deployed executions.
+
+The [saved browser observations](../../output/research/frontend-three-remedy-evaluation-2026-10-06/browser-observations.json)
+exercise that built output through existing Playwright CLI 0.1.19 and explicitly
+cached headless Chromium revision 1228 (reported Chrome149). The tool's current
+default expected browser revision differs; this is existing-tool finite evidence,
+not selection of a latest mutually compatible QA tool/browser graph. Two initial
+installed-Chrome channel launches failed before page load; the corrected config
+uses the explicit cached executable. No browser installation or account setting
+change is made. Raw CLI output and HTML retain UTF-8; the wrapper's terminal
+encoding correction is separate from fixture changes.
+
+Pointer interaction changes React count and store value, the opt-in GSAP animation
+completes, and MemoryRouter switches rendered notes/home while retaining the
+fixture URL. Tab/Enter initially reached BODY and did not change the store; a
+subsequent keyboard path verifies the Store button focus before Enter increments
+it. Canvas DOM count changes 1→0→1 on unmount/remount and visible cube pixels were
+inspected in the [desktop](../../output/playwright/frontend-three-remedy-2026-10-06/desktop.png)
+and [390px viewport](../../output/playwright/frontend-three-remedy-2026-10-06/narrow-viewport.png)
+captures. Tailwind's computed emerald background is observed and document width
+remains 390px. Three static localhost requests report HTTP200. Console reports
+zero errors and two THREE.Clock deprecation warnings, one per mount; installed
+Fiber events-9ce18a08.esm.js:1054 still constructs that Clock. Warnings are retained.
+
+Canvas DOM removal does not prove GPU disposal, memory accounting, safe resource
+sharing or context recovery. This is no physical phone, Safari/Firefox, full
+accessibility, actual campus/control/stream/audio, semantic HTML/publication,
+security, supported-device or production-UI proof. The browser and isolated
+loopback preview were stopped; preview exit 1 records the requested child stop,
+not a build failure. All 78 protected inputs remain unchanged. D-069 requires a
+complete evaluated graph and any dated newest-release exception/rollback/recheck
+plus founder approval before selection; neither this candidate nor D-072 creates
+that authority. Independent review and integrated Phase 1 acceptance remain.
+
+The [independent matched-candidate review](reviews/frontend-three-remedy-evaluation-v1-2026-10-06.md)
+records bounded PASS without a correction: six checker controls, two native type
+comparisons, the default Vite build and finite built-page browser interactions
+reproduce. Reviewer build artifacts also match the producer bytes. The
+[exact reviewed snapshots](../../output/research/frontend-three-remedy-evaluation-2026-10-06/)
+remain preserved; this later navigation reference is outside that receipt.
+Warnings, existing browser/tool mismatch, complete graph and D-069 selection/
+exception/rollback/recheck gates remain. Separate later supply-chain observations
+are outside this review; no application adoption or Phase 1 acceptance follows.
+
+## Matched-candidate supply-chain observations — 2026-10-06
+
+This [separate read-only investigation](../../output/research/frontend-supply-chain-2026-10-06/observations.json)
+uses the unchanged research candidate lock
+`fa903a8d901357aacf80863524e0e00ae2ece69126daf218256cdd2656b2da4c`
+and portable Node26.10.0/npm12.2.0. Commands use explicit empty configs, public
+registry, a new research-only metadata cache and disabled lifecycle scripts.
+No audit fix, installation, dependency/lock patch, credential or machine setting
+change occurs. Both post-command guards match all 2,668 then-frozen inputs;
+the later reference/checkpoint integration is separate and does not retroactively
+change those observations. This material lies outside the preceding independent
+compiler/build/browser review and requires its own review.
+
+### Known-advisory report and inventory boundaries
+
+Actual [npm audit --json --package-lock-only](../../output/research/frontend-supply-chain-2026-10-06/advisory-audit-receipt.json)
+exits 0 with zero vulnerabilities reported by the registry: no informational,
+low, moderate, high or critical entries. This is a dated known-advisory observation,
+not proof of vulnerability absence, executable reachability or deployment security.
+
+Actual [virtual SPDX SBOM](../../output/research/frontend-supply-chain-2026-10-06/lock-sbom-receipt.json)
+exits 1, ESBOMPROBLEMS. The optional @tailwindcss/oxide-wasm32-wasi entry requires
+six absent virtual-tree dependencies: @emnapi/core, @emnapi/runtime,
+@emnapi/wasi-threads, @napi-rs/wasm-runtime, @tybys/wasm-util and tslib. Preserve
+the failure; the candidate lock is not a complete validated all-platform inventory.
+No unsupported-platform install or lock repair is attempted.
+
+The separate actual [installed-tree SPDX SBOM](../../output/research/frontend-supply-chain-2026-10-06/installed-sbom-receipt.json)
+exits 0 and emits SPDX-2.3 with 234 packages and 398 relationships. All 233 distinct
+installed name/version pairs plus the private fixture root correspond. There are
+236 installed locations: semver6.3.1 appears twice and eslint-visitor-keys5.0.1
+three times, accounting for the package-identity deduplication. Both root Three
+0.184.0 and nested Three0.170.0 remain visible, as do the two checker paths and
+gensync beta. This inventory covers the installed research tree, not missing
+optional platforms or the eventual shipped browser/server/images. The private
+fixture root and webgl-constants1.1.1 emit NOASSERTION for declared licence.
+
+### Registry signatures, available attestations and licence evidence
+
+Both actual [signature commands](../../output/research/frontend-supply-chain-2026-10-06/detailed-signatures-receipt.json)
+exit 0 with empty invalid/missing arrays. The detailed --include-attestations
+result emits 78 verified attestation records, each corresponding to its installed
+package location/version. Installed npm12 source adds a verified JSON record only
+when an attestation is present; this array is not the total signature-check count.
+gensync has no emitted attestation record. The verifier skips missing on-disk
+optional dependencies and verifies published registry metadata and available
+attestations; it does not compare every installed file to an archive, establish
+provenance availability for all packages or certify safe publisher/source behavior.
+Keep D-072 integrity/provenance/execution/exclusion/conformance obligations open.
+
+The [licence inventory](../../output/research/frontend-supply-chain-2026-10-06/licence-inventory.json)
+retains each of 301 non-root lock records, installed metadata hashes and available
+top-level licence/notice text copies with identities. Lock declarations include
+MIT207, ISC13, Apache-2.0 44, CC-BY-4.0 1, BSD-2-Clause6, BSD-3-Clause3,
+MPL-2.0 24, BlueOak-1.0.0 1, one GSAP standard licence declaration and one absent
+declaration. These counts include optional platform entries and are declarations,
+not independently established rights. Eleven installed packages have no top-level
+licence/notice file under the collector's narrow rule; this does not establish
+that their distribution contains no terms. Existing scoped GSAP/WASM notice
+evidence retains its own exact inputs. Recursive bundled notices, source/archive
+correspondence, legal interpretation, attribution assembly, platform-specific
+inventory and deployed-artifact SBOM still require evidence before adoption.
+
+Primary guidance checked 2026-10-06: Context7 `/npm/cli` for audit/signatures and
+actual versus virtual inventory, official [npm12 audit](https://docs.npmjs.com/cli/v12/commands/npm-audit/)
+and [npm12 SBOM](https://docs.npmjs.com/cli/v12/commands/npm-sbom/) pages, and retained
+installed npm12 audit/SBOM/signature/SPDX command sources. Audit checks known
+registry advisories; fix would mutate dependencies and was not used. Available
+attestations are distinct from signatures; installed and lockfile inventory modes
+cover different trees. These sources do not select a project graph or grant legal
+clearance. Full graph, D-069 exceptions/rollback/recheck, D-072 conformance,
+MA-013 and integrated founder acceptance remain held.
+
+The [independent supply-chain review](reviews/frontend-supply-chain-v1-2026-10-06.md)
+records bounded evidence-accuracy PASS without revision. Saved command outcomes,
+package/SBOM identities, available attestation correlations and retained top-level
+licence texts reproduce; the reviewer did not rerun remote CLI verification.
+The [inspected snapshots](../../output/research/frontend-supply-chain-2026-10-06/)
+remain preserved. This later reference is outside those reviewed bytes and grants
+no full-platform inventory, recursive notice completeness, cryptographic/security/
+legal clearance, D-072 conformance, production selection or Phase 1 acceptance.
+
+## Optional WASM bundled-dependency inspection — 2026-10-06
+
+DOING; producer observation only, outside the preceding independent review.
+The six `ESBOMPROBLEMS` edges are declared as bundled dependencies of optional
+`@tailwindcss/oxide-wasm32-wasi 4.3.3`. None has a package location in the candidate
+lock's virtual tree. Inspection of the existing 1,829,808-byte cached vendor
+archive verifies its SHA-512 against that exact candidate lock, then reads
+package metadata without extraction, installation, network download or execution.
+All six exact bundled metadata paths are present in the archive's 113 members.
+The [static observation](../../output/research/optional-wasm-bundle-2026-10-06/observation.json),
+[bounded reader](../../output/research/optional-wasm-bundle-2026-10-06/inspect.py),
+preserved archive, package metadata and member inventory retain reproducible inputs.
+
+| Bundled package | Archive version | Declared range |
+|---|---|---|
+| @emnapi/core | 1.11.1 | ^1.11.1 |
+| @emnapi/runtime | 1.11.1 | ^1.11.1 |
+| @emnapi/wasi-threads | 1.2.2 | ^1.2.2 |
+| @napi-rs/wasm-runtime | 1.1.4 | ^1.1.4 |
+| @tybys/wasm-util | 0.10.2 | ^0.10.2 |
+| tslib | 2.8.1 | ^2.8.1 |
+
+The existing isolated Node 26.10.0/npm 12.2.0 tool source uses Arborist 10.0.3
+and semver 7.8.5. Its read-only `loadVirtual` inspection reproduces six missing
+`prod` edges beneath the optional parent, while the actual bundled versions satisfy
+all six declared ranges and contain no prerelease identifier. The
+[range/tree observation](../../output/research/optional-wasm-bundle-2026-10-06/virtual-edge-range-observation.json)
+does not supply missing virtual package records. The candidate lock and earlier
+failure are unchanged; do not relabel the failed all-platform SBOM as passing.
+
+This narrows the failure to bundled metadata absent from that virtual view,
+not evidence that those six packages are absent from the vendor archive.
+Before graph adoption, inventory exact bundled contents and dependency relationships
+under all applicable platform artifacts; inspect recursive licences/notices and
+current advisory/provenance evidence, and independently review the complete result.
+Do not hand-edit the accepted lock, omit the platform, disable dependency errors or
+treat this metadata/range result as WASM conformance, binary safety or graph selection.
+
+Context7 `/npm/cli` and official [npm12 SBOM documentation](https://docs.npmjs.com/cli/v12/commands/npm-sbom/#package-lock-only-mode)
+and [bundled-dependency documentation](https://docs.npmjs.com/cli/v12/configuring-npm/package-json/#bundledependencies)
+were checked 2026-10-06. The retained npm12 `sbom.js` uses virtual loading and rejects
+missing non-optional edges before emission. Documentation explains archive bundling
+and lock-only metadata scope; the cached archive and actual installed tool source
+establish these specific observations. No independent verdict or full Phase 1,
+D-069/D-072, legal, production adoption or runtime acceptance follows.
+
+## Optional WASM file and notice inventory — 2026-10-06
+
+DOING; supplemental producer evidence, pending independent inspection.
+The preserved integrity-matching archive has now been read in full without
+extraction, installation, network access or vendor-code execution. The
+[file inventory](../../output/research/optional-wasm-contents-2026-10-06/contents.json)
+records 113 regular files, 11,574,189 unpacked bytes, seven named package
+manifests, one unnamed module manifest and twelve declared dependency edges.
+Every file has its exact SHA-256 and nearest named manifest-path owner; that
+association is not legal authorship or licence inheritance. All twelve archive
+versions satisfy their declared ranges using the retained semver 7.8.5 helper;
+this is not actual Node resolution, WASM conformance or a complete deployed graph.
+
+Four conventionally named dedicated licence files are retained byte-for-byte.
+The [supplemental text scan](../../output/research/optional-wasm-contents-2026-10-06/embedded-notice-candidates.json)
+also locates tslib’s CopyrightNotice.txt, which the initial filename pattern
+did not include, and embedded notices in bundled code. In particular,
+@napi-rs/wasm-runtime/dist/fs.js contains ieee754 BSD-3-Clause, safe-buffer MIT,
+Node-contributor and borrowed cbor-x notice candidates. Metadata declaring MIT
+for the containing package does not inventory every embedded component or
+substitute for retaining its applicable notices. Candidate names are not resolved
+component versions or a licence-completeness verdict. The original member hashes
+and archived source remain available; long scan lines are explicitly truncated.
+
+The failed all-platform npm SBOM and candidate lock remain unchanged. This
+supplement closes the exact file/declared-edge observation for this one archive;
+embedded-component versions, full notice/provenance/advisory coverage, binary
+source correspondence, other platform artifacts, deployed exclusion, complete
+compatibility and founder graph selection remain. No legal/security clearance,
+D-069 exception, package adoption or Phase 1 acceptance follows.
+
+The later [bounded independent contents review PASS](reviews/optional-wasm-contents-v1-2026-10-06.md)
+verifies all nineteen input identities, the preserved prefix, 113 exact file
+hashes, twelve declared edges and the notice candidates. It independently
+reproduces bounded archive/text reads and corroborates these specific ranges;
+it does not rerun the producer semver helper or npm SBOM. The
+[exact reviewed appendix snapshot](../../output/research/optional-wasm-contents-2026-10-06/refresh-evidence.proposed.md)
+is preserved. This later link is outside those reviewed bytes and grants no
+complete licence, embedded graph, security or production-selection acceptance.
+
+## Exact synthetic client bundle module inventory — 2026-10-06
+
+DOING; supplemental producer evidence, pending bounded independent inspection.
+This inspects the existing matched Three184 compatibility fixture, not application
+code or a selected production dependency graph. Earlier V8 absence established
+only that gensync was not observed executing in one build-host JS run. The new
+[output inventory](../../output/research/frontend-module-inventory-2026-10-06/output-module-inventory.json)
+and [input graph](../../output/research/frontend-module-inventory-2026-10-06/module-graph.json)
+observe the bundler's actual client module boundaries instead.
+
+One build uses the already-installed Vite 8.3.2/Rolldown 1.2.12 with the existing
+portable Node 26.10.0. Finite fixture/config bytes are copied into a new research
+workspace; real workspace-owned node_modules/scope directories contain individual
+package junctions to existing dependencies. The configuration temporary directory
+is workspace-owned. No install, vendor patch, application feature, lock/runtime
+upgrade, provider choice, browser execution or network request is made by these
+research scripts. build.write=false uses Vite's public build API and an
+observational generateBundle hook; the configured output directory was not
+created. Returned artifacts are preserved separately for evidence.
+
+The [exit-0 observation](../../output/research/frontend-module-inventory-2026-10-06/observation.json)
+records 576 input graph IDs, no external graph modules and 38 JS-chunk module
+IDs/keys that agree. Those counts describe different bundler stages; the CLI's
+577 transformed-module message is retained separately and is not a discrepancy
+silently normalized to the input graph count. Output metadata includes generated
+virtual helpers and two zero-rendered CSS/HTML modules. Nearest named manifests
+associate output files with fifteen third-party packages and the synthetic fixture;
+virtual helpers remain unassigned. This is not a complete embedded component,
+legal authorship/licence or deployed-platform inventory.
+
+No gensync ID appears in this exact input graph or returned chunk IDs/keys.
+The installed beta and lock are retained, not removed or concealed. In contrast,
+@babel/runtime 7.29.7's extends helper is included: runtime helpers must not be
+conflated with @babel/core, the lint closure or gensync. The nested stats-gl Three
+0.170.0 remains in the installed candidate but is not observed in this fixture's
+input/output graph; another import or entry could include it.
+
+All three returned HTML/CSS/JS artifacts match the prior fixture-dist bytes
+exactly. JS remains 1,243,420 bytes; no size improvement or performance claim
+follows. The [prior independent browser receipt](reviews/frontend-three-remedy-evaluation-v1-2026-10-06.md)
+therefore describes the same finite artifact bytes; no new browser run or UI
+change is claimed. All twenty-one protected fixture, lock, source and original
+artifact identities are unchanged. The source/metadata/observer are retained in
+[the packet](../../output/research/frontend-module-inventory-2026-10-06/protected-before.json).
+
+[Vite's JavaScript API](https://vite.dev/guide/api-javascript.html),
+[plugin API](https://vite.dev/guide/api-plugin.html) and
+[Rolldown PluginContext](https://rolldown.rs/reference/Interface.PluginContext)
+provide the primary API reference. Context7's available Vite v8.0.10 material is
+reference guidance, not exact 8.3.2 behavior; the preserved installed Vite build
+implementation and Rolldown types establish the inspected API shape here.
+
+This narrows gensync exclusion to one synthetic client bundle's recorded module
+metadata. It does not inspect opaque embedded code, every build-host path, SSR,
+workers, other entries, images or final deployables. Full D-072 conformance,
+isolation/exclusion, supply-chain obligations, D-069 exception/rollback/recheck,
+MA-013 selection and integrated Phase 1 acceptance remain held.

@@ -1,0 +1,50 @@
+{
+  "status": "DOING",
+  "scope": "Producer scoped visual/browser inspection of new private-process explanation, not runtime security or whole accessibility/Phase1 acceptance",
+  "url": "http://127.0.0.1:8766/docs/software-definition/definition-walkthrough.html?review=private-process-20261005#private-process-access",
+  "keyboard": {
+    "Space_closed_summary": true,
+    "Enter_reopened_summary": true
+  },
+  "desktop_live_viewport": [
+    1440,
+    1000
+  ],
+  "mobile_live_viewport": [
+    390,
+    844
+  ],
+  "complete_capture_viewports": {
+    "desktop": [
+      1440,
+      1400
+    ],
+    "mobile": [
+      390,
+      3000
+    ]
+  },
+  "layout": {
+    "mobile_document_client_width": 375,
+    "mobile_document_scroll_width": 375,
+    "mobile_panel_width": 331,
+    "mobile_panel_scroll_width": 331,
+    "mobile_flow_columns": "331px",
+    "mobile_card_columns": "one column",
+    "desktop_panel_width": 1124,
+    "desktop_panel_scroll_width": 1124,
+    "desktop_flow_columns": "four columns"
+  },
+  "complete_capture_note": "Taller viewports used only for complete images at same responsive widths. Mobile first locator capture omitted heading and included following content; excluded. Desktop subpixel alignment was moved16px before final complete capture. No temporary/permanent style insertion or source edits for captures. These are emulated browser-width checks, not physical phones.",
+  "inspect_source_outcome": "Exact before bytes preserved outside one added detail section and one README row;10protected guards unchanged; local references resolve",
+  "application_tests": false,
+  "full_accessibility_certification": false,
+  "producer_inspected_images": [
+    "desktop-complete.png",
+    "mobile-complete.png"
+  ],
+  "excluded_captures": [
+    "desktop.png",
+    "mobile.png"
+  ]
+}

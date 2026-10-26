@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed visitor sharing-preview and handoff-status directions v1",
+  "description": "Additional IF-CHAT-03 directions only. Select client/server; module root denies. No preview, consent, digest, event ownership, status truth, rendering, confirmation, persistence, staff/media permission or runtime proof follows from shape.",
+  "not": {},
+  "$defs": {
+    "uuid": {"$ref": "booking-creation-request.schema.json#/$defs/operation_id"},
+    "revision": {"$ref": "process-value.schema.json#/$defs/positive_revision"},
+    "context": {"$ref": "visitor-handoff.schema.json#/$defs/context"},
+    "projection_reference": {"$ref": "visitor-handoff.schema.json#/$defs/projection_reference"},
+    "selected_event": {
+      "type": "object", "additionalProperties": false,
+      "required": ["stream_id", "event_id", "sequence"],
+      "properties": {
+        "stream_id": {"$ref": "#/$defs/uuid"},
+        "event_id": {"$ref": "#/$defs/uuid"},
+        "sequence": {"$ref": "#/$defs/revision"}
+      }
+    },
+    "selected_events": {"type": "array", "minItems": 1, "maxItems": 16, "uniqueItems": true, "items": {"$ref": "#/$defs/selected_event"}},
+    "client_base": {
+      "type": "object", "required": ["protocol_version", "kind", "channel_id", "stream_id"],
+      "properties": {
+        "protocol_version": {"type": "integer", "const": 1},
+        "channel_id": {"$ref": "#/$defs/uuid"}, "stream_id": {"$ref": "#/$defs/uuid"}
+      }
+    },
+    "prepare_preview": {
+      "allOf": [{"$ref": "#/$defs/client_base"}],
+      "required": ["operation_id", "expected_consent_revision", "context", "selected_events"],
+      "properties": {
+        "kind": {"const": "prepare_handoff_preview"},
+        "operation_id": {"$ref": "#/$defs/uuid"},
+        "expected_consent_revision": {"$ref": "#/$defs/revision"},
+        "context": {"$ref": "#/$defs/context"},
+        "selected_events": {"$ref": "#/$defs/selected_events"}
+      },
+      "unevaluatedProperties": false
+    },
+    "reconcile_preview": {
+      "allOf": [{"$ref": "#/$defs/client_base"}], "required": ["operation_id"],
+      "properties": {"kind": {"const": "reconcile_handoff_preview"}, "operation_id": {"$ref": "#/$defs/uuid"}},
+      "unevaluatedProperties": false
+    },
+    "inspect_handoff": {
+      "allOf": [{"$ref": "#/$defs/client_base"}], "required": ["handoff_id"],
+      "properties": {"kind": {"const": "inspect_handoff"}, "handoff_id": {"$ref": "#/$defs/uuid"}},
+      "unevaluatedProperties": false
+    },
+    "projection": {
+      "type": "object", "additionalProperties": false,
+      "required": ["projection_id", "projection_revision", "context", "consent_revision", "purpose_key", "notice_reference", "selected_events", "text"],
+      "properties": {
+        "projection_id": {"$ref": "#/$defs/uuid"}, "projection_revision": {"$ref": "#/$defs/revision"},
+        "context": {"$ref": "#/$defs/context"}, "consent_revision": {"$ref": "#/$defs/revision"},
+        "purpose_key": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+        "notice_reference": {"$ref": "chat-creation-request.schema.json#/$defs/notice_reference"},
+        "selected_events": {"$ref": "#/$defs/selected_events"},
+        "text": {"type": "string", "minLength": 1, "maxLength": 8000}
+      },
+      "description": "Exact private preview document. Proposed projection_sha256 is SHA-256 of its RFC 8785 canonical UTF-8 bytes, not the outer event/reference or arbitrary client serialization. No embedded digest/self-cycle. Text is untrusted plain text, not approved company evidence."
+    },
+    "preview_payload": {
+      "type": "object", "required": ["operation_id", "state"],
+      "properties": {"operation_id": {"$ref": "#/$defs/uuid"}},
+      "oneOf": [
+        {
+          "required": ["projection_reference", "projection"],
+          "properties": {"state": {"const": "prepared"}, "projection_reference": {"$ref": "#/$defs/projection_reference"}, "projection": {"$ref": "#/$defs/projection"}}
+        },
+        {"required": ["recovery"], "properties": {"state": {"const": "pending"}, "recovery": {"const": "reconcile_same_operation"}}},
+        {"required": ["code", "recovery"], "properties": {"state": {"const": "unavailable"}, "code": {"enum": ["sharing_unavailable", "authority_changed", "resource_limit", "outcome_unresolved"]}, "recovery": {"const": "review_or_contact_book"}}}
+      ],
+      "unevaluatedProperties": false
+    },
+    "preview_event": {
+      "allOf": [{"$ref": "chat-text.schema.json#/$defs/event_header"}],
+      "properties": {"kind": {"const": "handoff_preview"}, "payload": {"$ref": "#/$defs/preview_payload"}},
+      "unevaluatedProperties": false
+    },
+    "status_snapshot": {
+      "type": "object", "additionalProperties": false,
+      "required": ["handoff_id", "handoff_revision", "state"],
+      "properties": {
+        "handoff_id": {"$ref": "#/$defs/uuid"}, "handoff_revision": {"$ref": "#/$defs/revision"},
+        "state": {"enum": ["requested", "queued", "accepted", "text_active", "declined", "ended", "expired"]}
+      },
+      "description": "Separately authorized known current lifecycle snapshot. No staff identity, internal decline reason, transcript, presence/media/booking/deletion promise. Revision/sequence shape is not state authority."
+    },
+    "status_event": {
+      "allOf": [{"$ref": "chat-text.schema.json#/$defs/event_header"}],
+      "properties": {"kind": {"const": "handoff_status"}, "payload": {"$ref": "#/$defs/status_snapshot"}},
+      "unevaluatedProperties": false
+    },
+    "status_unavailable": {
+      "allOf": [{"$ref": "chat-text.schema.json#/$defs/event_header"}],
+      "properties": {
+        "kind": {"const": "handoff_status_unavailable"},
+        "payload": {"const": {"state": "unavailable", "recovery": "preserve_known_state_contact_or_book"}}
+      },
+      "unevaluatedProperties": false,
+      "description": "Only after applicable authorized minimal disclosure. No object-existence echo or fabrication of ended/expired/declined. If no output is permitted, use generic transport close instead."
+    },
+    "client": {"oneOf": [{"$ref": "#/$defs/prepare_preview"}, {"$ref": "#/$defs/reconcile_preview"}, {"$ref": "#/$defs/inspect_handoff"}]},
+    "server": {"oneOf": [{"$ref": "#/$defs/preview_event"}, {"$ref": "#/$defs/status_event"}, {"$ref": "#/$defs/status_unavailable"}]}
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "DOING",
+  "scope": "Later navigation references outside frozen review inputs",
+  "initial_review_sha256": "0acc55d770950a84c17e129c5d451f406fba5610db5a752c4a4c92e3b4516a78",
+  "correction_review_sha256": "f2c51bfb2eb338798e3109102bb64c621315dbe794e2af72dc2a493e5bb5cf1c",
+  "changes": [
+    {
+      "path": "docs/phase-1-compatibility/backend-evidence-2026-10-04.md",
+      "before_sha256": "9a2110321996cdecaf105a564ecbb7eaf31c2351bbd415d5c1ef2e385e9a28aa",
+      "after_sha256": "443ebb3326be8b642261f63cafc1e15db7cd039a4b90d51af0482a26728f9527",
+      "scope": "Receipt reference segment only"
+    },
+    {
+      "path": "docs/software-definition/04-reconciliation-map.md",
+      "before_sha256": "896ca17cb66daec401d4b8c4c9fb5ba874a85b9a1bea4f801e902c879cf8e25d",
+      "after_sha256": "f2d4d238ee1c38d0f06df76fec500ca3cc25805b80dca0129f13eb410af3639c",
+      "scope": "Receipt reference segment only"
+    }
+  ]
+}

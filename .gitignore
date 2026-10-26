@@ -8,3 +8,18 @@ playwright-report/
 test-results/
 apps/web/playwright-report/
 apps/web/test-results/
+
+# Machine-local browser state and downloaded compatibility tooling.
+# Keep authored research, receipts, design exports and source snapshots in Git.
+.playwright-cli/
+output/**/metadata-cache/
+output/**/_cacache/
+output/**/playwright_*_profile*/
+output/**/runtime/tmp/
+output/**/runtime/profile/
+output/**/runtime/appdata/
+output/**/runtime/localappdata/
+output/**/*.exe
+output/**/*.whl
+output/**/*.tgz
+output/**/npm-metadata-cache.zip

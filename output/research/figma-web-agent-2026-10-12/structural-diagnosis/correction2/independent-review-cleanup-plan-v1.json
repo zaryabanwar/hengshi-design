@@ -1,0 +1,184 @@
+{
+  "product": "Hengshi Design v1",
+  "date": "2026-10-12",
+  "status": "DOING",
+  "verdict": "PASS",
+  "reviewer": "/root/review_browser_cleanup_v1",
+  "revision_cycle": 2,
+  "scope": "Same founder-authorized14-input proposed one-root cleanup outcome; correction2 of dated credit evidence and relative links. Bounded source/evidence PASS only; no deletion, restore, B01 or Phase1 acceptance.",
+  "manifest": {
+    "path": "review-inputs-v1.json",
+    "sha256": "3c432c50027c6abac47818764de4de3993f6a4fdf5c9b4effec9a719c3b18bd7",
+    "inputs": 14,
+    "all_bytes_and_hashes_verified": true
+  },
+  "input_bindings": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "review-inputs/01-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "verified": true
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "review-inputs/02-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "verified": true
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "review-inputs/03-DECISIONS.md",
+      "bytes": 102059,
+      "sha256": "3bb85d0f80de88c2a03a2b1e478afa3bcb4dad96070de82aa8dd8a59a2101b9e",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "snapshot": "review-inputs/04-UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "bytes": 45771,
+      "sha256": "1779fd3cd71f8210815fd7ddbbcd06faa6e5387e2d91584531be6d3806f8cf61",
+      "verified": true
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "snapshot": "review-inputs/05-B01_EXECUTION_BRIEF.md",
+      "bytes": 55725,
+      "sha256": "568db979d27b14970923ee922fe218c0bfcff9bb80a0daeffc3e623b72852dab",
+      "verified": true
+    },
+    {
+      "source": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/prepare-receipt.json",
+      "snapshot": "review-inputs/06-prepare-receipt.json",
+      "bytes": 13389,
+      "sha256": "57fa1128d7c7d8765e899cad1c775b39fa42a57197578b4e8db17372629d495d",
+      "verified": true
+    },
+    {
+      "source": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/cleanup-call.js",
+      "snapshot": "review-inputs/07-cleanup-call.js",
+      "bytes": 12039,
+      "sha256": "60815d599398b0e220fd44b057d26385a2ef06cd2ab085fe9ebced71d4645f23",
+      "verified": true
+    },
+    {
+      "source": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/cleanup-result.json",
+      "snapshot": "review-inputs/08-cleanup-result.json",
+      "bytes": 520,
+      "sha256": "ce9e8a12db3d2615b299ae61c54850fce0375d7a0ca29166c1723c03dbd4b2fe",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/correction1/full-inventory-prompt.txt",
+      "snapshot": "review-inputs/09-full-inventory-prompt.txt",
+      "bytes": 1054,
+      "sha256": "721f41a319987a61b363a2b2260327070f6777af20c97b8bea2cd324f60d02a4",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/correction1/full-inventory.json",
+      "snapshot": "review-inputs/10-full-inventory.json",
+      "bytes": 11108,
+      "sha256": "66272298d5ada647991640992a7c497835556f04c50b0f7b45724183e83cc6c0",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/correction1/diagnosis-evidence-v1.json",
+      "snapshot": "review-inputs/11-diagnosis-evidence-v1.json",
+      "bytes": 2432,
+      "sha256": "38b1a5377fd4f3320c4cd625e7bc59e9876e5f1961c842d5556605cb494ae12f",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/HSD_UIR_B01_BEFORE_CLEANUP_V01.fig",
+      "snapshot": "review-inputs/12-HSD_UIR_B01_BEFORE_CLEANUP_V01.fig",
+      "bytes": 369969,
+      "sha256": "baf855e7326a2f2cc0a9dca3b2ad0df9a9afa25312a7ef3648fe8e29cd6681d9",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/cleanup-target.png",
+      "snapshot": "review-inputs/13-cleanup-target.png",
+      "bytes": 165313,
+      "sha256": "4a5ed802dcc5b9bf9b1d64fedca52e94e85b54e68641536b7640ab8704ff613c",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/correction2/cleanup-plan-v1.md",
+      "snapshot": "review-inputs/14-cleanup-plan-v1.md",
+      "bytes": 4962,
+      "sha256": "b7617291a67506f761e421451028c58145a453970fb920661f7a1f7c0a64cf80",
+      "verified": true
+    }
+  ],
+  "previous_reviews": [
+    {
+      "path": "../independent-review-cleanup-plan-v1.json",
+      "sha256": "95fc026df3831d150805e3cbd96d0e5846a2e92b09f4c1bd50ebaa7002371651",
+      "verdict": "REVISE",
+      "preserved": true
+    },
+    {
+      "path": "../correction1/independent-review-cleanup-plan-v1.json",
+      "sha256": "678ef3cb0dca924a9723f5976f9743c5d15338149f9d627a02574a880b1eb89b",
+      "verdict": "REVISE",
+      "preserved": true
+    }
+  ],
+  "findings": [],
+  "closed_findings": [
+    {
+      "id": "BCP-01",
+      "result": "PASS",
+      "file": "review-inputs/14-cleanup-plan-v1.md",
+      "start_line": 12,
+      "end_line": 14,
+      "evidence": "Guards remain unchanged from correction1: mandatory fresh complete302-row [id,type,parentID] equality, exact alias IDs, all parent chains to38:3157, direct-child order and bounded completeness. Unknown/missing/duplicate/moved/retyped/protected/unverifiable nodes refuse. Sole final selected root binds after last navigation/await; uncertain intervening changes require stop/re-admission. This applies to all asynchronous operations including screenshot capture before deletion. Only one normal-editor root deletion is proposed."
+    },
+    {
+      "id": "BCP-02",
+      "result": "PASS",
+      "file": "review-inputs/14-cleanup-plan-v1.md",
+      "start_line": 19,
+      "end_line": 19,
+      "related_location": {
+        "file": "review-inputs/05-B01_EXECUTION_BRIEF.md",
+        "start_line": 645,
+        "end_line": 646
+      },
+      "evidence": "Both472 monthly/122 daily statements now explicitly refer to the observation after prompt2 and before prompt3; both deny a current-balance claim. No prompt3 debit or current balance is inferred. Zero-spend/no-extra-credit/no-provider-limit-retry restrictions remain."
+    }
+  ],
+  "checks": {
+    "input_integrity": "PASS: all14 hashes/bytes verified. Exactly inputs5 and14 differ from correction1; the other12 are byte-identical.",
+    "bounded_delta": "PASS: brief changes only dated credit wording. Plan changes correction label, evidence links resolving from correction2 to preserved correction1 evidence, and dated credit wording. Lines11-17 operational guards are unchanged.",
+    "relative_evidence_links": "PASS: ../correction1/full-inventory.json resolves to SHA25666272298d5ada647991640992a7c497835556f04c50b0f7b45724183e83cc6c0; ../correction1/diagnosis-evidence-v1.json to38b1a5377fd4f3320c4cd625e7bc59e9876e5f1961c842d5556605cb494ae12f; ../HSD_UIR_B01_BEFORE_CLEANUP_V01.fig tobaf855e7326a2f2cc0a9dca3b2ad0df9a9afa25312a7ef3648fe8e29cd6681d9. These match frozen inputs10-12.",
+    "profile_integrity": "PASS for unchanged supplied-artifact scope established in correction1:302 unique complete rows equal162 reported plus140 alias IDs; no set/alias-triple/parent-chain issue; correct root/direct-child order;208 TEXT/74 FRAME/20 INSTANCE. No exact protected original page/source-unit/source-frame IDs in supplied subtree. Full aliases remain exact, including suffix14:19 without treating it as standalone main-node14:19.",
+    "truthfulness": "PASS: AI snapshots remain non-atomic, current-profile ownership is not historical ownership, earlier refusal cause is not proven by later aliases, artifact counts/hash/CRC are not runtime or application correctness. Provider retry hint grants no automatic retry. Date-qualified balance avoids claiming current state.",
+    "archive_and_screenshot": "PASS for unchanged static/local integrity only: same previously inspected screenshot and CRC-verified native archive. No live immutable-selection identity, complete original descriptor equality, native restore/import/editability or historical ownership proof is claimed.",
+    "postverification_rollback": "PASS as proposed stop/Undo-and-verify response with separately held exact restore/PRE/EXIT obligations. Actual success requires postaction target absence, preserved original identities/order, source-unit checks and new archive; no inferred appearance equality solely from top-level presence.",
+    "guard_enforceability": "PASS as conditional proposed guards. If fresh completeness, exact identity/ownership, sole final selection or absence of intervening changes cannot be verified, the plan requires refusal. This review does not certify the browser/agent will fulfill those future prerequisites."
+  },
+  "held": {
+    "actual_deletion": "BLOCKED: not authorized/performed by this review; requires separate applicable founder deletion approval and successful fresh execution admission.",
+    "live_ownership_preservation": "BLOCKED: reviewer made no live Figma/browser census or preservation check.",
+    "native_restore": "BLOCKED: native import/restore and full editability remain untested; no tested recovery guarantee.",
+    "full_B01_acceptance": "BLOCKED: full profiles, interactions/accessibility, design/accessibility review and founder pilot acceptance stay separate.",
+    "Phase1_acceptance": "BLOCKED: separate integrated founder acceptance; no implementation/release authority.",
+    "outside_packet_credit_observation": "BLOCKED: later446/96 observation is outside these14 inputs; its correctness and current balance were not reviewed."
+  },
+  "actions": {
+    "external_changes": false,
+    "browser_figma_mcp_api_calls": 0,
+    "deletion_performed": false,
+    "account_application_git_changes": false,
+    "new_agents": 0,
+    "producer_inputs_modified": false,
+    "earlier_receipts_preserved": true,
+    "writes": [
+      "correction2/independent-review-cleanup-plan-v1.json"
+    ]
+  },
+  "vendor_basis": "Previously checked Figma nodes-remove/nodes-id primary guidance supports node-plus-descendant removal scope and exact identifiers only; no GUI execution, alias-normalization or historical-ownership guarantee inferred."
+}

@@ -1,0 +1,61 @@
+{
+  "decision": "D-050",
+  "approvedAt": "2026-10-03",
+  "purpose": "Canonical LF byte and pin transition; prior bytes retained in local backup. Historical prose and binary assets unchanged.",
+  "files": [
+    {
+      "path": "docs/phase-1-brand-identity/asset-manifest.json",
+      "previousSha256": "2FDE436AEF81BC7E852B72F7BABD1FFD81DAB9CB056BC9E7F4787D4727D731BC",
+      "canonicalSha256": "1FB9E154AE4CDAA744E144148D028CFDF65F383AC784FC7F20B322F4677B6953",
+      "change": "line_endings"
+    },
+    {
+      "path": "docs/phase-1-brand-identity/validation/d-029-pre-stabilization-hashes.json",
+      "previousSha256": "E78CD5DDB1F1EB3D8003DE8369EBF436D65BC7FDCBA47C9E788C1E8A00D4527E",
+      "canonicalSha256": "FB7A43BDB853E21BC7D5953D201785B5FDB6ABCBFB6A49D17A0326FB72161059",
+      "change": "line_endings_and_hash_pins"
+    },
+    {
+      "path": "docs/phase-1-brand-identity/validation/d-033-pre-contrast-correction-hashes.json",
+      "previousSha256": "58A1823E3261440CE4B51969F0C95FA7A63A6EC9D8EA6D1503951A89520BE0D0",
+      "canonicalSha256": "80996CD9D0274CA8021A728ABFCA99F19CB04BDC895098D8E5A8BBF1100DE4BE",
+      "change": "line_endings_and_hash_pins"
+    },
+    {
+      "path": "docs/phase-1-brand-identity/validation/validate-brand-identity.ps1",
+      "previousSha256": "4BF9891F73E614C53A1C841861E97D8F700881F8C7F81922A126D1D1B6519B8A",
+      "canonicalSha256": "94F7466E3CE8D53A886904FC1AAB0F8A620CC671170E36404DBB0204578928EB",
+      "change": "line_endings_and_hash_pins"
+    },
+    {
+      "path": "docs/phase-1-brand-identity/archive/d-028-correction-1-pre-exception/asset-manifest.json",
+      "previousSha256": "B6A3824C6751A69DACC746ABCB160CC92C5C7B0ED78720F3FDEE7166AF4FB3A4",
+      "canonicalSha256": "10E04E51A7A6C315B263A12140BEAB4647F91BF3328EDF46803EE3E57B10FAE4",
+      "change": "line_endings"
+    },
+    {
+      "path": "docs/phase-1-brand-identity/archive/d-028-correction-1-pre-exception/baseline-inventory.json",
+      "previousSha256": "390A9DC8E26FDBAD284AF06230E5A6D4F48BC68B40A17C5A0CB0647EC3848B9D",
+      "canonicalSha256": "821DC1B510FB924ED194CCF2A10EF2D3CEFAAFDACC11500BF457A5746CCA0013",
+      "change": "line_endings_and_hash_pins"
+    },
+    {
+      "path": "docker-compose.yml",
+      "previousSha256": "251BFE991CA92728AF213C946725C9C284882C97C3707FF15500AD740AF3A27F",
+      "canonicalSha256": "32443F1937E598D5CEC4C2814540ECEA9D6F93E132AA2004186360AFE0022D1A",
+      "change": "line_endings"
+    },
+    {
+      "path": "docs/phase-1-compatibility/baseline-inventory.json",
+      "previousSha256": "684873AA73A15A29FA243050CD9A354930D4A83FAC1688B1A062824CEB58E1C8",
+      "canonicalSha256": "BEB58472819504A237A256B7A6398E5D0BCE4022C64085507ECAC6CB6D1B9AAC",
+      "change": "line_endings_and_hash_pins"
+    },
+    {
+      "path": ".gitattributes",
+      "previousSha256": "D157E262DCBE05DE9D14B6B1E906AAD45A794E500E636F2AF6076267C14630CC",
+      "canonicalSha256": "7871AE545D2A48492BFB0BA572EBFB08F28705180987FDC599330C21654B01CF",
+      "change": "scoped_attributes"
+    }
+  ]
+}

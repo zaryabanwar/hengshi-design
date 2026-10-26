@@ -1,0 +1,77 @@
+{
+  "scope": "Current architecture entry and one navigation row; no baseline, mechanism, decision or runtime changes. Frozen baseline/map remain byte-identical.",
+  "inputs": [
+    {
+      "source": "docs/phase-1-architecture/README.md",
+      "snapshot": "output/research/current-architecture-entry-2026-10-11/inputs/00-README.md",
+      "bytes": 8111,
+      "sha256": "c1e23f6c9b71174da7af116ba4aef57e436854d7c7cfc71d164e180b7de017bb"
+    },
+    {
+      "source": "docs/software-definition/04-reconciliation-map.md",
+      "snapshot": "output/research/current-architecture-entry-2026-10-11/inputs/01-04-reconciliation-map.md",
+      "bytes": 31896,
+      "sha256": "fc46a8b0ac8268c16fe291b8d6d361acaed4e160a868843f15b0d6ffd2dfcc06"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "output/research/current-architecture-entry-2026-10-11/inputs/02-DECISIONS.md",
+      "bytes": 89051,
+      "sha256": "133a1accc49d687249247082ce4eb3cf9639d546876d55e37ecb32800f724b8e"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "output/research/current-architecture-entry-2026-10-11/inputs/03-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "output/research/current-architecture-entry-2026-10-11/inputs/04-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": "docs/software-definition/01-system-boundaries.md",
+      "snapshot": "output/research/current-architecture-entry-2026-10-11/inputs/05-01-system-boundaries.md",
+      "bytes": 6690,
+      "sha256": "e13d67fa4e33bc570eacf444215698bda0f204d0a7c9f2383ee49343448834ae"
+    },
+    {
+      "source": "docs/phase-1-architecture/ARCHITECTURE.md",
+      "snapshot": "output/research/current-architecture-entry-2026-10-11/inputs/06-ARCHITECTURE.md",
+      "bytes": 10762,
+      "sha256": "44717f73094e5ffae24758c09cc710e3d0282b371c2fce23d5098cf36cfb6363"
+    },
+    {
+      "source": "docs/phase-1-architecture/authority-map.csv",
+      "snapshot": "output/research/current-architecture-entry-2026-10-11/inputs/07-authority-map.csv",
+      "bytes": 4467,
+      "sha256": "47680dc30537a5230234c80e9b80f913331929f0c527207a1c804348756153cd"
+    },
+    {
+      "source": "docs/phase-1-architecture/architecture-review-2026-10-04.md",
+      "snapshot": "output/research/current-architecture-entry-2026-10-11/inputs/08-architecture-review-2026-10-04.md",
+      "bytes": 4011,
+      "sha256": "13ed86675ca77fe4433ab8a557a37c1f4453016458cbb1e2bbfb558a4ad766b9"
+    },
+    {
+      "source": "docs/phase-1-architecture/MOVEMENT_STREAMING_ADDENDUM.md",
+      "snapshot": "output/research/current-architecture-entry-2026-10-11/inputs/09-MOVEMENT_STREAMING_ADDENDUM.md",
+      "bytes": 4802,
+      "sha256": "0e6bbf4a51a9d44c8e47fb84fe222e1bdbbca4c93b3b70c827671e8eef48e71a"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/current-definition-amendments-2026-10-04.md",
+      "snapshot": "output/research/current-architecture-entry-2026-10-11/inputs/10-current-definition-amendments-2026-10-04.md",
+      "bytes": 8032,
+      "sha256": "977d16d36dcfe7885be42d014aa1f22cb57e0628f683ab6172d94975c82d6c3d"
+    }
+  ],
+  "producer_validation": {
+    "local_link_targets": 26,
+    "missing_local_paths": [],
+    "baseline_hashes_preserved": true
+  },
+  "review_output": "output/research/current-architecture-entry-2026-10-11/independent-review-entry-v1.json"
+}

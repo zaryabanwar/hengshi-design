@@ -1,0 +1,78 @@
+{
+  "status": "DOING",
+  "scope": "Static visual translation and one reference-only reconciliation row; no whole-board/product/WCAG or runtime acceptance",
+  "inputs": [
+    {
+      "path": "docs/software-definition/definition-walkthrough.html",
+      "sha256": "6ca37497e958a3f84088a23bba58b5b48a5fb3d4f86ddbdb3159b9546fec14fe",
+      "bytes": 98358,
+      "snapshot": "review-inputs/00-definition-walkthrough.html"
+    },
+    {
+      "path": "docs/software-definition/04-reconciliation-map.md",
+      "sha256": "4312906c3cec9e1919ae710908b34b3a3d718bbf4515168203878eb067da5c04",
+      "bytes": 91215,
+      "snapshot": "review-inputs/01-04-reconciliation-map.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "sha256": "ecb2e25fe91b0f0433400e859d0f21faf880ed519e6c84a825a114d506908dbb",
+      "bytes": 79492,
+      "snapshot": "review-inputs/02-PUBLICATION_CONTRACT.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/knowledge-bundle.schema.json",
+      "sha256": "5d7013d9c8a84119c924ea585b5613e8d17b1ef9dbe49fe5698f4a47148f5d3e",
+      "bytes": 2010,
+      "snapshot": "review-inputs/03-knowledge-bundle.schema.json"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+      "sha256": "b2b06e915c81083a40be58f3a641991862371f2d117effb2716e098116aed364",
+      "bytes": 50683,
+      "snapshot": "review-inputs/04-CHAT_EVENT_PROTOCOL.md"
+    },
+    {
+      "path": "output/research/knowledge-bundle-2026-10-08/independent-review-knowledge-bundle-v1.json",
+      "sha256": "9c2be75d8b91c729c8ddefca05efae896c5df89145c28bd189f91d67864f78a1",
+      "bytes": 2727,
+      "snapshot": "review-inputs/05-independent-review-knowledge-bundle-v1.json"
+    },
+    {
+      "path": "output/playwright/knowledge-bundle-2026-10-08/definition-walkthrough.before.html",
+      "sha256": "22575048ce58a2acc40b4169c465080ff16a95f0e2fd002b714fe6625e424c84",
+      "bytes": 95310,
+      "snapshot": "review-inputs/06-definition-walkthrough.before.html"
+    },
+    {
+      "path": "output/playwright/knowledge-bundle-2026-10-08/04-reconciliation-map.before.md",
+      "sha256": "2f54b2c385a690e037cf2fb91787799a865b5a98d30cfe55e4bc1621baa69dbd",
+      "bytes": 89875,
+      "snapshot": "review-inputs/07-04-reconciliation-map.before.md"
+    },
+    {
+      "path": "output/playwright/knowledge-bundle-2026-10-08/knowledge-1440.png",
+      "sha256": "b2767a07c755fc82e793541e82cb5aa7644984fcdbb1545660a20635b4b63c3a",
+      "bytes": 101542,
+      "snapshot": "review-inputs/08-knowledge-1440.png"
+    },
+    {
+      "path": "output/playwright/knowledge-bundle-2026-10-08/knowledge-320.png",
+      "sha256": "f2823d4d52a4759c5dc72bfb3f13ad523a2ce0394313939c284b66c886369942",
+      "bytes": 109032,
+      "snapshot": "review-inputs/09-knowledge-320.png"
+    },
+    {
+      "path": "output/playwright/knowledge-bundle-2026-10-08/desktop-final.txt",
+      "sha256": "e5655de2c10db70cb37db98b543c9224749a71d59f5fdd6f0c6240060b7c4818",
+      "bytes": 4082,
+      "snapshot": "review-inputs/10-desktop-final.txt"
+    },
+    {
+      "path": "output/playwright/knowledge-bundle-2026-10-08/narrow-final.txt",
+      "sha256": "f44b31e8c617aba9abb8b3f4b9f8e14590c9c33578b286535238636a65366479",
+      "bytes": 4044,
+      "snapshot": "review-inputs/11-narrow-final.txt"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "review_status": "BLOCKED",
+  "verdict": null,
+  "scope": "Correction1 for BCP-01 within the same one-root cleanup outcome; exactly14 frozen inputs. No external deletion/restore or full B01 proof",
+  "inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "review-inputs/01-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "review-inputs/02-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "review-inputs/03-DECISIONS.md",
+      "bytes": 102059,
+      "sha256": "3bb85d0f80de88c2a03a2b1e478afa3bcb4dad96070de82aa8dd8a59a2101b9e"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "snapshot": "review-inputs/04-UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "bytes": 45771,
+      "sha256": "1779fd3cd71f8210815fd7ddbbcd06faa6e5387e2d91584531be6d3806f8cf61"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "snapshot": "review-inputs/05-B01_EXECUTION_BRIEF.md",
+      "bytes": 55653,
+      "sha256": "a852b7eb5d4183abc26e5793fb0a58f1e6cd1ca086a7e8a0514a6275581705d4"
+    },
+    {
+      "source": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/prepare-receipt.json",
+      "snapshot": "review-inputs/06-prepare-receipt.json",
+      "bytes": 13389,
+      "sha256": "57fa1128d7c7d8765e899cad1c775b39fa42a57197578b4e8db17372629d495d"
+    },
+    {
+      "source": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/cleanup-call.js",
+      "snapshot": "review-inputs/07-cleanup-call.js",
+      "bytes": 12039,
+      "sha256": "60815d599398b0e220fd44b057d26385a2ef06cd2ab085fe9ebced71d4645f23"
+    },
+    {
+      "source": "output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/cleanup-result.json",
+      "snapshot": "review-inputs/08-cleanup-result.json",
+      "bytes": 520,
+      "sha256": "ce9e8a12db3d2615b299ae61c54850fce0375d7a0ca29166c1723c03dbd4b2fe"
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/correction1/full-inventory-prompt.txt",
+      "snapshot": "review-inputs/09-full-inventory-prompt.txt",
+      "bytes": 1054,
+      "sha256": "721f41a319987a61b363a2b2260327070f6777af20c97b8bea2cd324f60d02a4"
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/correction1/full-inventory.json",
+      "snapshot": "review-inputs/10-full-inventory.json",
+      "bytes": 11108,
+      "sha256": "66272298d5ada647991640992a7c497835556f04c50b0f7b45724183e83cc6c0"
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/correction1/diagnosis-evidence-v1.json",
+      "snapshot": "review-inputs/11-diagnosis-evidence-v1.json",
+      "bytes": 2432,
+      "sha256": "38b1a5377fd4f3320c4cd625e7bc59e9876e5f1961c842d5556605cb494ae12f"
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/HSD_UIR_B01_BEFORE_CLEANUP_V01.fig",
+      "snapshot": "review-inputs/12-HSD_UIR_B01_BEFORE_CLEANUP_V01.fig",
+      "bytes": 369969,
+      "sha256": "baf855e7326a2f2cc0a9dca3b2ad0df9a9afa25312a7ef3648fe8e29cd6681d9"
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/cleanup-target.png",
+      "snapshot": "review-inputs/13-cleanup-target.png",
+      "bytes": 165313,
+      "sha256": "4a5ed802dcc5b9bf9b1d64fedca52e94e85b54e68641536b7640ab8704ff613c"
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/correction1/cleanup-plan-v1.md",
+      "snapshot": "review-inputs/14-cleanup-plan-v1.md",
+      "bytes": 4830,
+      "sha256": "d65bf1464e2c098765bf175ba617b544b5a4eb092deec8adcb2eea6f0677de45"
+    }
+  ],
+  "questions": [
+    "Are AI observations, local integrity checks and historical evidence kept distinct without inferring the earlier refusal cause?",
+    "Do guards stop on any identity/ownership/selection ambiguity and preserve all original/shared nodes?",
+    "Does the one-root GUI plan avoid alias normalization, individual descendant deletion, generative cleanup or automatic retries?",
+    "Are rollback, post-action verification and untested native restore limits truthful?"
+  ],
+  "external_actions_authorized": false,
+  "previous_review": "../independent-review-cleanup-plan-v1.json",
+  "finding": "BCP-01"
+}

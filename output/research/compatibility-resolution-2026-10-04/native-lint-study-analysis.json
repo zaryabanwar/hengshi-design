@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "production_selection": false,
+  "status": "DOING",
+  "native_candidate_version": "1.86.0",
+  "npm_resolution_exit": 0,
+  "package_records": 303,
+  "prerelease_records": [],
+  "isolated_tool_packages_unpacked": true,
+  "application_node_modules_or_locks_changed": false,
+  "release_metadata": {
+    "tag_name": "oxlint_v1.86.0",
+    "html_url": "https://github.com/oxc-project/oxc/releases/tag/oxlint_v1.86.0",
+    "published_at": "2026-09-28T10:29:50Z",
+    "draft": false,
+    "prerelease": false
+  },
+  "stable_rule_fixture_outcomes": {
+    "valid-hooks": true,
+    "conditional-hook": true,
+    "missing-dependency": true,
+    "conditional-use": true,
+    "effect-event-valid": true,
+    "effect-event-in-deps": true,
+    "effect-event-during-render": true,
+    "effect-event-as-click-handler": true
+  },
+  "full_react_recommended_preset_parity_proven": false,
+  "experimental_compiler_rules_enabled": false,
+  "independent_review": "TODO",
+  "whole_application_runtime_proven": false,
+  "protected_input_hashes_unchanged": true,
+  "protected_input_paths": [
+    "package.json",
+    "package-lock.json",
+    "apps/web/package.json",
+    "apps/web/package-lock.json",
+    "apps/api/requirements.txt"
+  ],
+  "all_probed_rule_behaviors_match": true,
+  "protected_world_source_inspection": {
+    "path": "native-lint-protected-world-inspection.json",
+    "files": 3,
+    "two_rule_diagnostics": 2,
+    "hashes_unchanged": true,
+    "runtime_tests_executed": false,
+    "reported_defect_fixed": false
+  },
+  "production_configuration_coverage": "PROPOSED_unreviewed_in_refresh_evidence"
+}

@@ -1,0 +1,68 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "D-076 EU privacy and class retention recommendation plus deferred disclosures; two canonical documents; no application or adoption",
+  "review_status": "BLOCKED",
+  "review_blocker": "Existing independent reviewer terminal workspace-credit error; no review of new appendix",
+  "inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "snapshots/01-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "snapshots/02-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "snapshots/03-DECISIONS.md",
+      "bytes": 84370,
+      "sha256": "f38b6f5930b51cae9188db8df6bc9fe458b0df907a3f6eab10fc6b956a0b50da"
+    },
+    {
+      "source": "docs/phase-1-foundation/01-product-requirements.md",
+      "snapshot": "snapshots/04-01-product-requirements.md",
+      "bytes": 70783,
+      "sha256": "4db9d504695e7791705c41fe70fd0aea0467338d95acb5b6732bf6927893ac2e"
+    },
+    {
+      "source": "docs/software-definition/06-entity-and-public-contact.md",
+      "snapshot": "snapshots/05-06-entity-and-public-contact.md",
+      "bytes": 14642,
+      "sha256": "85a6af708446acfb660fd944f41b97c7be3bb9726a40d4329cc191ec58986eae"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "snapshots/06-SECURITY_PRIVACY_CONTRACT.md",
+      "bytes": 68306,
+      "sha256": "cbc58c008eb61430e47ab89c0fa3e92d3fdbfbc38d6fb65139269c300c309f77"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/data-classification.csv",
+      "snapshot": "snapshots/07-data-classification.csv",
+      "bytes": 5510,
+      "sha256": "4b163eec086cb46ca98fabf692632d1778ee116cb014cda179e5b4a2a5fd44c6"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "snapshot": "snapshots/08-PRIVATE_PROCESS_PROOF.md",
+      "bytes": 108274,
+      "sha256": "f247fd4c72d2e79cd03d77cd9d0e5287f2266c85bf4cefd129742bb2a9f639a2"
+    }
+  ],
+  "predecessors": [
+    "06-entity-and-public-contact.md.before",
+    "SECURITY_PRIVACY_CONTRACT.md.before"
+  ],
+  "review_questions": [
+    "Check D-076 deferrals, synthetic data and unchanged typed content shape; mandatory operator notices not waived.",
+    "Assess GDPR territorial roles, proposed bases and consent granularity; no automatic contract basis for corporate representatives or staff consent.",
+    "Review all proposed class periods/anchors, copies, active-chat old-message expiry, unknown booking/intent outcomes, consent evidence, backup 30-day window and suppression formulas for necessity and legal adequacy.",
+    "Check rights one-calendar-month handling, breach thresholds, cookie exemptions and international transfer/EEA representative assessments; do not claim law or source prescribes new durations.",
+    "Identify needed policy/class/notice bindings and legal findings before integrated acceptance; unknown classes/provider handling deny live processing."
+  ]
+}

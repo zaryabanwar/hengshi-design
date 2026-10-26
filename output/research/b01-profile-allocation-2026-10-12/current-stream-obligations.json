@@ -1,0 +1,302 @@
+{
+  "sources": [
+    {
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb",
+      "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv"
+    },
+    {
+      "sha256": "deb91325e1c8a543878111883f5b1203ae9e5dc35c00e0d837e927786eaf47e2",
+      "path": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv"
+    },
+    {
+      "sha256": "575d1478893c090e9b367e75c2d14cf645e80eeb67bce09c2383c08294fa034a",
+      "path": "docs/phase-1-ui-reference-design/component-primitives.csv"
+    },
+    {
+      "sha256": "2c4509b4df40dd1f14c4bb53a35acff6799fde20e2be69d52f08db9e47babd38",
+      "path": "scripts/validation/ui-stream-mapping.ps1"
+    }
+  ],
+  "obligations": [
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC"
+    }
+  ]
+}

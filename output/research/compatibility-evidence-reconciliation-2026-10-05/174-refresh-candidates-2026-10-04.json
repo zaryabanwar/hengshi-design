@@ -1,0 +1,387 @@
+{
+  "status": "DOING",
+  "scope": "Fresh frontend/3D registry observations only; no locks or tested compatibility",
+  "date": "2026-10-04",
+  "rows": [
+    {
+      "package": "react",
+      "source": "https://registry.npmjs.org/react",
+      "observed_at": "2026-10-04T00:08:32.996003+00:00",
+      "candidate": "19.3.0",
+      "dist_tags": {
+        "beta": "19.0.0-beta-26f2496093-20240514",
+        "rc": "19.0.0-rc.1",
+        "next": "19.3.0-canary-d5736f09-20260507",
+        "backport": "19.0.8",
+        "latest": "19.3.0",
+        "experimental": "0.0.0-experimental-278794d7-20261002",
+        "canary": "19.3.0-canary-278794d7-20261002"
+      },
+      "published_at": "2026-09-09T17:21:30.071Z",
+      "peer_dependencies": {},
+      "peer_meta": {},
+      "engines": {
+        "node": ">=0.10.0"
+      },
+      "license": "MIT",
+      "state": "registry_observed_not_selected",
+      "current_lock_version": "18.3.1"
+    },
+    {
+      "package": "react-dom",
+      "source": "https://registry.npmjs.org/react-dom",
+      "observed_at": "2026-10-04T00:08:33.771850+00:00",
+      "candidate": "19.3.0",
+      "dist_tags": {
+        "beta": "19.0.0-beta-26f2496093-20240514",
+        "rc": "19.0.0-rc.1",
+        "next": "19.3.0-canary-d5736f09-20260507",
+        "backport": "19.0.8",
+        "latest": "19.3.0",
+        "experimental": "0.0.0-experimental-278794d7-20261002",
+        "canary": "19.3.0-canary-278794d7-20261002"
+      },
+      "published_at": "2026-09-09T17:17:39.744Z",
+      "peer_dependencies": {
+        "react": "^19.3.0"
+      },
+      "peer_meta": {},
+      "engines": {},
+      "license": "MIT",
+      "state": "registry_observed_not_selected",
+      "current_lock_version": "18.3.1"
+    },
+    {
+      "package": "@react-three/fiber",
+      "source": "https://registry.npmjs.org/@react-three%2ffiber",
+      "observed_at": "2026-10-04T00:08:34.489224+00:00",
+      "candidate": "9.8.1",
+      "dist_tags": {
+        "beta": "9.0.0-beta.1",
+        "rc": "9.0.0-rc.10",
+        "alpha": "10.0.0-alpha.5",
+        "latest": "9.8.1",
+        "canary": "10.0.0-canary.fbd44ae"
+      },
+      "published_at": "2026-09-24T21:45:00.941Z",
+      "peer_dependencies": {
+        "expo": ">=43.0",
+        "react": ">=19 <19.4",
+        "three": ">=0.156",
+        "expo-gl": ">=11.0",
+        "react-dom": ">=19 <19.4",
+        "expo-asset": ">=8.4",
+        "react-native": ">=0.78",
+        "expo-file-system": ">=11.0"
+      },
+      "peer_meta": {
+        "expo": {
+          "optional": true
+        },
+        "expo-gl": {
+          "optional": true
+        },
+        "react-dom": {
+          "optional": true
+        },
+        "expo-asset": {
+          "optional": true
+        },
+        "react-native": {
+          "optional": true
+        },
+        "expo-file-system": {
+          "optional": true
+        }
+      },
+      "engines": {},
+      "license": "MIT",
+      "state": "registry_observed_not_selected",
+      "current_lock_version": "8.18.0"
+    },
+    {
+      "package": "@react-three/drei",
+      "source": "https://registry.npmjs.org/@react-three%2fdrei",
+      "observed_at": "2026-10-04T00:08:46.154818+00:00",
+      "candidate": "10.7.9",
+      "dist_tags": {
+        "beta": "9.0.0-beta.6",
+        "canary": "9.121.2-canary-test01.1",
+        "rc": "10.0.0-rc.3",
+        "latest": "10.7.9",
+        "alpha": "11.0.0-alpha.7"
+      },
+      "published_at": "2026-09-25T15:34:13.763Z",
+      "peer_dependencies": {
+        "react": "^19",
+        "three": ">=0.159",
+        "react-dom": "^19",
+        "@react-three/fiber": "^9.0.0"
+      },
+      "peer_meta": {
+        "react-dom": {
+          "optional": true
+        }
+      },
+      "engines": {},
+      "license": "MIT",
+      "state": "registry_observed_not_selected",
+      "current_lock_version": "9.122.0"
+    },
+    {
+      "package": "three",
+      "source": "https://registry.npmjs.org/three",
+      "observed_at": "2026-10-04T00:08:34.054090+00:00",
+      "candidate": "0.186.1",
+      "dist_tags": {
+        "latest": "0.186.1"
+      },
+      "published_at": "2026-09-24T14:42:21.301Z",
+      "peer_dependencies": {},
+      "peer_meta": {},
+      "engines": {},
+      "license": "MIT",
+      "state": "registry_observed_not_selected",
+      "current_lock_version": "0.160.1"
+    },
+    {
+      "package": "vite",
+      "source": "https://registry.npmjs.org/vite",
+      "observed_at": "2026-10-04T00:08:57.993807+00:00",
+      "candidate": "8.3.2",
+      "dist_tags": {
+        "alpha": "6.0.0-alpha.24",
+        "previous": "7.3.6",
+        "beta": "8.3.0-beta.1",
+        "latest": "8.3.2"
+      },
+      "published_at": "2026-10-01T10:17:44.767Z",
+      "peer_dependencies": {
+        "tsx": "^4.8.1",
+        "jiti": ">=1.21.0",
+        "less": "^4.0.0",
+        "sass": "^1.70.0",
+        "yaml": "^2.4.2",
+        "stylus": ">=0.54.8",
+        "terser": "^5.16.0",
+        "esbuild": "^0.27.0 || ^0.28.0",
+        "sugarss": "^5.0.0",
+        "@types/node": "^20.19.0 || >=22.12.0",
+        "sass-embedded": "^1.70.0",
+        "@vitejs/devtools": "^0.7.1"
+      },
+      "peer_meta": {
+        "tsx": {
+          "optional": true
+        },
+        "jiti": {
+          "optional": true
+        },
+        "less": {
+          "optional": true
+        },
+        "sass": {
+          "optional": true
+        },
+        "yaml": {
+          "optional": true
+        },
+        "stylus": {
+          "optional": true
+        },
+        "terser": {
+          "optional": true
+        },
+        "esbuild": {
+          "optional": true
+        },
+        "sugarss": {
+          "optional": true
+        },
+        "@types/node": {
+          "optional": true
+        },
+        "sass-embedded": {
+          "optional": true
+        },
+        "@vitejs/devtools": {
+          "optional": true
+        }
+      },
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "license": "MIT",
+      "state": "registry_observed_not_selected",
+      "current_lock_version": "5.4.21"
+    },
+    {
+      "package": "@vitejs/plugin-react",
+      "source": "https://registry.npmjs.org/@vitejs%2fplugin-react",
+      "observed_at": "2026-10-04T00:08:35.315002+00:00",
+      "candidate": "6.1.1",
+      "dist_tags": {
+        "alpha": "3.0.0-alpha.2",
+        "beta": "6.0.0-beta.0",
+        "latest": "6.1.1"
+      },
+      "published_at": "2026-08-28T03:30:56.619Z",
+      "peer_dependencies": {
+        "vite": "^8.0.0",
+        "oxc-transform-react": "^0.145.0",
+        "@rolldown/plugin-babel": "^0.1.7 || ^0.2.0",
+        "babel-plugin-react-compiler": "^1.0.0"
+      },
+      "peer_meta": {
+        "oxc-transform-react": {
+          "optional": true
+        },
+        "@rolldown/plugin-babel": {
+          "optional": true
+        },
+        "babel-plugin-react-compiler": {
+          "optional": true
+        }
+      },
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "license": "MIT",
+      "state": "registry_observed_not_selected",
+      "current_lock_version": "4.7.0"
+    },
+    {
+      "package": "tailwindcss",
+      "source": "https://registry.npmjs.org/tailwindcss",
+      "observed_at": "2026-10-04T00:08:57.755704+00:00",
+      "candidate": "4.3.3",
+      "dist_tags": {
+        "next": "4.0.0",
+        "v3-lts": "3.4.19",
+        "latest": "4.3.3",
+        "insiders": "0.0.0-insiders.fa81d69"
+      },
+      "published_at": "2026-07-16T12:03:35.267Z",
+      "peer_dependencies": {},
+      "peer_meta": {},
+      "engines": {},
+      "license": "MIT",
+      "state": "registry_observed_not_selected",
+      "current_lock_version": "3.4.19"
+    },
+    {
+      "package": "typescript",
+      "source": "https://registry.npmjs.org/typescript",
+      "observed_at": "2026-10-04T00:09:01.455638+00:00",
+      "candidate": "7.0.2",
+      "dist_tags": {
+        "dev": "3.9.4",
+        "tag-for-publishing-older-releases": "4.1.6",
+        "insiders": "4.6.2-insiders.20220225",
+        "beta": "6.0.0-beta",
+        "rc": "7.0.1-rc",
+        "latest": "7.0.2",
+        "next": "7.1.0-dev.20261003.1"
+      },
+      "published_at": "2026-07-08T15:55:18.431Z",
+      "peer_dependencies": {},
+      "peer_meta": {},
+      "engines": {
+        "node": ">=16.20.0"
+      },
+      "license": "Apache-2.0",
+      "state": "registry_observed_not_selected",
+      "current_lock_version": "5.9.3"
+    },
+    {
+      "package": "zustand",
+      "source": "https://registry.npmjs.org/zustand",
+      "observed_at": "2026-10-04T00:08:48.063842+00:00",
+      "candidate": "5.0.15",
+      "dist_tags": {
+        "latest": "5.0.15"
+      },
+      "published_at": "2026-08-13T00:39:55.466Z",
+      "peer_dependencies": {
+        "immer": ">=9.0.6",
+        "react": ">=18.0.0",
+        "@types/react": ">=18.0.0",
+        "use-sync-external-store": ">=1.2.0"
+      },
+      "peer_meta": {
+        "immer": {
+          "optional": true
+        },
+        "react": {
+          "optional": true
+        },
+        "@types/react": {
+          "optional": true
+        },
+        "use-sync-external-store": {
+          "optional": true
+        }
+      },
+      "engines": {
+        "node": ">=12.20.0"
+      },
+      "license": "MIT",
+      "state": "registry_observed_not_selected",
+      "current_lock_version": "4.5.7"
+    },
+    {
+      "package": "react-router-dom",
+      "source": "https://registry.npmjs.org/react-router-dom",
+      "observed_at": "2026-10-04T00:08:57.157282+00:00",
+      "candidate": "7.18.4",
+      "dist_tags": {
+        "classic": "5.3.4",
+        "pre-v6": "6.30.3-pre-v6.0",
+        "pre": "7.14.0-pre.0",
+        "nightly": "0.0.0-nightly-4547c8015-20260410",
+        "experimental": "0.0.0-experimental-d07149147",
+        "version-6": "6.30.6",
+        "latest": "7.18.4"
+      },
+      "published_at": "2026-09-15T15:05:55.974Z",
+      "peer_dependencies": {
+        "react": ">=18",
+        "react-dom": ">=18"
+      },
+      "peer_meta": {},
+      "engines": {
+        "node": ">=20.0.0"
+      },
+      "license": "MIT",
+      "state": "registry_observed_not_selected",
+      "current_lock_version": "6.30.3"
+    },
+    {
+      "package": "gsap",
+      "source": "https://registry.npmjs.org/gsap",
+      "observed_at": "2026-10-04T00:08:58.006575+00:00",
+      "candidate": "3.15.0",
+      "dist_tags": {
+        "next": "3.0.0-beta.11",
+        "latest": "3.15.0"
+      },
+      "published_at": "2026-04-13T13:15:35.800Z",
+      "peer_dependencies": {},
+      "peer_meta": {},
+      "engines": {},
+      "license": "Standard 'no charge' license: https://gsap.com/standard-license.",
+      "state": "registry_observed_not_selected",
+      "current_lock_version": "3.14.2"
+    }
+  ],
+  "lock_source": {
+    "path": "apps/web/package-lock.json",
+    "sha256": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d"
+  },
+  "observed_tooling": {
+    "node": "24.14.0",
+    "npm": "11.11.1",
+    "global_python": "3.14.5",
+    "production_selection": false
+  }
+}

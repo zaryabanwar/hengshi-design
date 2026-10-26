@@ -1,0 +1,221 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "reviewed_at_utc": "2026-10-24T06:15:25.595781+00:00",
+  "reviewer": "Independent reviewer /root/review_archive_candidate_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "PASS",
+  "scope": "Separate bounded reviews of pure child environment mapping/fixtures and saved upstream pip-lifecycle diagnosis plus unadopted preservation amendment. No complete-controller review, trial permission or amendment adoption.",
+  "packet": {
+    "path": "output/research/python315-environment-preparation-2026-10-17/review-inputs-v1.json",
+    "bytes": 4827,
+    "sha256": "ef45cc6c8c9a1a5ddc07e64e81bc4abb8aa5d2789be336f1bb428364085625ee",
+    "input_count": 20,
+    "verified_before_review": 20,
+    "verified_again_before_receipt": 20,
+    "inputs": [
+      {
+        "path": "AGENTS.md",
+        "bytes": 8983,
+        "sha256": "f31b4bb42f954995cc12358284a992fde46ade98980238043c149f692b6474a5",
+        "verified": true
+      },
+      {
+        "path": ".specify/memory/constitution.md",
+        "bytes": 16234,
+        "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+        "verified": true
+      },
+      {
+        "path": "TASKS.md",
+        "bytes": 7334,
+        "sha256": "22e44d155125e5ad35daa6663b04563bc1ef415dfe049b8cda516751a9014ea9",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-build-proposal-2026-10-15/qualification-plan-v1.json",
+        "bytes": 15130,
+        "sha256": "15943219fd1008b882ed2a353697e4dd8170b8c729744470ee6b12ea6dfdb938",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-build-proposal-2026-10-15/independent-review-build-proposal-v1.json",
+        "bytes": 9908,
+        "sha256": "b098a06d719855898d7540a923675685eb28ffadfda7b73708051489d1cece52",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-control-preparation-2026-10-17/stage-commands-v1.json",
+        "bytes": 30773,
+        "sha256": "7afa5ffac72f8e6dfd86767418f58f85a47f51e1024e7120985ffdfbb8a05737",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-control-preparation-2026-10-17/review-inputs-v1.json",
+        "bytes": 5898,
+        "sha256": "06c286b492fe3dc68d203c00b8160f75dbb240d3cb97c4197225801a479dad5c",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-control-preparation-2026-10-17/captures/pip-LICENSE.txt",
+        "bytes": 1093,
+        "sha256": "634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-environment-preparation-2026-10-17/child_environment.py",
+        "bytes": 3237,
+        "sha256": "3335264cb3593043eb67c720dd5afec2f2a250813aa62af3651229decbdf2321",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-environment-preparation-2026-10-17/test_child_environment.py",
+        "bytes": 4473,
+        "sha256": "8cb5ae0dcd00c4d0f2348a6a67b6d4c098eb76a43f7afc5a211ccb80e1bfcae9",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-environment-preparation-2026-10-17/test-result-v1.json",
+        "bytes": 1496,
+        "sha256": "fa7e3cca3cfc2ca0710f40c233f188a1a5d35b01c42d0d2fe25e73b10999b26b",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-environment-preparation-2026-10-17/test-output-v1.txt",
+        "bytes": 1583,
+        "sha256": "814a3616376d950534a720cc337b3c1987abac08be6d34ea75365c9c3fae55a1",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-environment-preparation-2026-10-17/source-observations-v1.json",
+        "bytes": 3269,
+        "sha256": "b84cc0176e6abf9592a94de658ad90676212db9b45b85d1c05926f0494f95103",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-environment-preparation-2026-10-17/captures/prepare.py",
+        "bytes": 35030,
+        "sha256": "ccb9153120eef5c511d0a9c39b76d9dd0bc879a12b8492abaf5d3d5320cc94a4",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-environment-preparation-2026-10-17/captures/temp_dir.py",
+        "bytes": 9303,
+        "sha256": "4c388bf41cc4a767876a540b1f4ae1c8cde6db1bb274483d73ab758786d3e65f",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-environment-preparation-2026-10-17/captures/install.py",
+        "bytes": 33761,
+        "sha256": "0d11142c0f9319b08a86a0412e4adb0cacedc90e79ed06c37ba649518ba1db29",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-environment-preparation-2026-10-17/captures/req_command.py",
+        "bytes": 18952,
+        "sha256": "c16fa645c3ea3dccdeab1a7d490ff287761fad101802510065ec6d94b7036d47",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-environment-preparation-2026-10-17/captures/metadata.py",
+        "bytes": 7646,
+        "sha256": "cbd81592c7490928e72df633b3f9b70d8500b65de173f93ec453c305df4380eb",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-environment-preparation-2026-10-17/preservation-amendment-proposal-v1.json",
+        "bytes": 5033,
+        "sha256": "36e75a303746a0d3c289d309c0cdb39c1b90c3d30cff870460acbbd5a2d5ac20",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-environment-preparation-2026-10-17/preparation-contract-v1.json",
+        "bytes": 2519,
+        "sha256": "24fb0820fb7f830a0990288c5e9c34fbffac6caa9bb409a2c27dc6631d0a2214",
+        "verified": true
+      }
+    ]
+  },
+  "sub_verdicts": {
+    "environment_helper_and_synthetic_evidence": "PASS",
+    "saved_source_diagnosis_and_unadopted_amendment": "PASS"
+  },
+  "findings": [],
+  "actionable_finding_count": 0,
+  "assessments": [
+    {
+      "subject": "Complete pure mapping",
+      "evidence": "child_environment.py:1-6,30-73; test_child_environment.py:14-52",
+      "assessment": "Helper returns a fresh mapping of fixed settings and supplied trusted roots without reading or merging os.environ. PATH is phase-specific private Scripts/runtime tools plus checked Windows System32; temporary/cache/userbase paths remain lexically below trial root. Null pip configuration, no plugin autoload/user-site/bytecode settings and exact source-build flags/epoch match the intended subset. No claim that flags establish a sandbox or force all descendant behavior."
+    },
+    {
+      "subject": "Lexical and profile admission",
+      "evidence": "child_environment.py:17-54; test_child_environment.py:54-85",
+      "assessment": "Rejects non-string/nonlocal/drive-relative/UNC/device/semicolon/forward-slash/non-NFC roots, empty/dot/traversal/ADS/reserved components and noncanonical forms. System/trial overlap denied case-insensitively, different local drives allowed. Only three declared phases and boolean build switch accepted; source-build true requires build phase. Actual roots, volume/reparse/alias containment and executables remain separately verified preconditions."
+    },
+    {
+      "subject": "Test evidence",
+      "evidence": "test_child_environment.py; test-result-v1.json; test-output-v1.txt",
+      "assessment": "Eight methods independently replayed on existing Python3.14.5 with -B; no failures/errors/skips. Synthetic parent secret/proxy/Python/pip/test/PATH overrides are patched only for the test and excluded from the complete result; literal expected phase paths, invalid roots/profiles and fresh dictionary mutation test helper boundaries. No actual child or selected3.15/pip environment was exercised."
+    },
+    {
+      "subject": "Temporary acquisition path",
+      "evidence": "captures/prepare.py:109-130,492-550; captures/temp_dir.py:47-63,114-143,157-166",
+      "assessment": "Saved upstream26.2.1 get_http_url creates globally managed unpack temp storage when downloading. Resolver may download separate PEP658 metadata and read it into metadata objects. Unconfigured temp kinds default to deletion; context exit invokes cleanup when selected. This supports diagnosis that public CLI vectors do not guarantee retained bytes for every intermediate acquired body. It is source reading, not runtime behavior verification."
+    },
+    {
+      "subject": "No-clean and report limitations",
+      "evidence": "captures/req_command.py:79-114; captures/install.py:478-507; preservation-amendment-proposal-v1.json:7-55",
+      "assessment": "The no-clean registry keep list names build-env/ephem-wheel-cache/req-build, not unpack; it is not a universal retention switch. Install writes report and returns on dry-run before later full linked-requirement preparation. A report alone is not a retained wheelhouse. These exact source findings are accurately scoped and do not imply all pip or backend file cleanup is catalogued."
+    },
+    {
+      "subject": "Saved source provenance scope",
+      "evidence": "source-observations-v1.json pip_source_captures; captures/metadata.py",
+      "assessment": "Evidence binds saved upstream pip26.2.1 tag URLs and hashes. File called metadata.py is explicitly the saved network/lazy_wheel.py source, not pip._internal.metadata. Existing source/docs observations do not establish actual unacquired runtime-bundled bytes, complete licensing or publisher provenance. No downloaded source imported or executed."
+    },
+    {
+      "subject": "Proposed preservation amendment",
+      "evidence": "preservation-amendment-proposal-v1.json:4-7,58-80; preparation-contract-v1.json limits; qualification-plan-v1.json boundaries.no_deletion_or_automatic_cleanup",
+      "assessment": "Proposal retains selected archives/wheels/source trees/builds/reports/logs/notices and prohibits controller deletion or overwrite of retained/pre-existing evidence. Its possible exact-pip ephemeral lifecycle exception is restricted to verified private TEMP and requires later founder acceptance in concrete trial permission. It explicitly drops every-HTTP-body/zero-internal-deletion promises only if adopted; original strict rules currently remain binding and execution is held. No exception for arbitrary backend cleanup, out-of-tree effects or pre-existing data follows; complete controller and actual behavior admission must still resolve those separately."
+    }
+  ],
+  "synthetic_test_replay": {
+    "argv": [
+      "C:/Python314/python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "-v",
+      "test_child_environment"
+    ],
+    "cwd": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\python315-environment-preparation-2026-10-17",
+    "exit_code": 0,
+    "tests_run": 8,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "reported_seconds": 0.009,
+    "runtime": {
+      "executable": "C:\\Python314\\python.exe",
+      "version": "3.14.5"
+    }
+  },
+  "review_method": [
+    "Verified all20 exact byte/hash inputs before review and again before receipt; read helper/tests/results, prepared parent argv/plan/contract and official saved source sections.",
+    "Replayed only eight synthetic helper tests; no package-manager or stage command, subprocess qualification, actual environment capture, network or trial.",
+    "Preserved original producer/canonical/source/manifest files; wrote only this receipt."
+  ],
+  "required_future_gates": [
+    "Founder acceptance of exact preservation amendment and any bounded ephemeral lifecycle permission within explicit future runtime/source-build execution approval; this receipt grants neither.",
+    "Complete reviewed acquisition/ownership/containment/extraction/process/measurement/output/deadline/offline controls and exact operation bindings, including descendant writes/cleanup behavior.",
+    "Actual admitted runtime/bundled pip identity and concrete reviewed build/full stable graph, marker/extra and file bindings; fresh disk admission.",
+    "Actual24-case results and notices with independent result review before any stack/application adoption."
+  ],
+  "limits": [
+    "Environment mapping is not a credential vault, process sandbox, network fence, filesystem proof or guarantee about child/grandchild behavior.",
+    "Saved upstream source is read-only evidence; Python3.15/runtime-bundled pip remains unacquired/unexecuted.",
+    "No cleanup, trial, package install, resolver/build, application/Figma/account/provider/Git change or amendment adoption authorized or performed.",
+    "No security/licence/provenance clearance, complete production compatibility or integrated Phase1 acceptance. No capacity error; DOING does not claim DONE or commit."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "status": "DOING",
+  "review_verdict": "PASS",
+  "date": "2026-10-08",
+  "revision_cycle": 1,
+  "scope": "CRYPTO01 prospective disk admission/reservation correction only; ten frozen/live inputs.",
+  "manifest_sha256": "37603993e713c0eca7e06dedf4131045f5db257dfff842577b11198f3c75eb11",
+  "integrity": "All ten size/hash/live records match; both before snapshots bind exactly to initial79 inputs. Original79 live drift is limited to the plan and its single corresponding backend paragraph; metadata, pins, protected inputs and README remain unchanged.",
+  "findings": [],
+  "resolved_finding": {
+    "id": "CRYPTO01",
+    "disposition": "Resolved for prospective plan correctness, not measured footprint or execution assurance."
+  },
+  "assessment": [
+    "Before creation/download the plan requires free disk greater than the complete 256 MiB allowance plus the retained 1 GiB floor.",
+    "Before installation it requires actual frozen wheel size/hash matching and nonextracting ZIP declared expanded-size inspection, rejecting malformed archives.",
+    "Measured retained output plus twice expanded contents plus explicit 64 MiB installer/output allowance must fit 256 MiB; available disk must retain 1 GiB plus remaining reserved allocations. Insufficient/unknown admission is refused without cleanup.",
+    "Before/after-command measurements, including failure, preserve errors and stop on budget/reserve loss. The plan expressly distinguishes conservative admission/stop reservations from an OS-enforced hard quota during arbitrary installer/native execution.",
+    "Authorization remains false and the native-trial target is absent at inspection. No trial, adoption or new identity/runtime authority follows."
+  ],
+  "original_review": {
+    "path": "../independent-review-crypto-graph-v1.json",
+    "sha256": "c200907c98a12885a5e7a62690c97b2b08c1eb12d30ed8c6e8295e1433c43f48",
+    "scope": "Initial79 metadata PASS and original REVISE receipt remain at their exact bytes."
+  },
+  "limits": [
+    "No wheel download, expanded-size measurement, installation, current free-disk qualification or native runtime assurance was performed. The reservation factor/allowance is prospective and may refuse the later measured candidate.",
+    "Original43-package/48-edge replay was not rerun; this correction neither extends provenance/licence/release proof nor selects a production graph or OIDC/PKCE client.",
+    "Independent execution/results review and integrated/founder acceptance remain separate. No network, installs, canonical/app/config/Figma/account/cleanup/Git changes or fan-out."
+  ]
+}

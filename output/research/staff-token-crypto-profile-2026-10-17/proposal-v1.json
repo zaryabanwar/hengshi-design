@@ -1,0 +1,84 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "TODO",
+  "scope": "Proposed Hengshi staff compact-JWS header, algorithm and bounded trusted-key profile only; not an Entra/provider-token profile",
+  "owner_after_review": "docs/phase-1-architecture/contracts/STAFF_SESSION_PROTOCOL.md",
+  "adopted": false,
+  "execution_authorized": false,
+  "preserved_boundaries": [
+    "Exactly the existing8 private claims, original30-minute idle/eight-hour absolute clocks,900-second renewal candidate and single60-second prior recovery slot. No additional claim, session family, refresh credential, role, grant or permission.",
+    "Existing2048-byte compact token,128-byte decoded header and768-byte decoded claims caps, raw duplicate/Unicode/canonical integer rules and cookie/CSRF/current-authority guards.",
+    "The same finite shared control permit precedes parsing/crypto/lookup and stays owned through settlement. No new crypto queue/pool or performance guarantee.",
+    "Entra admission remains separately validated; this internal Hengshi signing key is never an Entra/Graph key or visitor proof key. No new route, JWKS service, provider/account or physical secret store selected."
+  ],
+  "recommendation": {
+    "profile": "hsd-staff-jws-v1",
+    "algorithm": "RS256",
+    "rsa_modulus_bits": 3072,
+    "rsa_public_exponent": 65537,
+    "rationale": "One asymmetric family with an explicit fixed verifier; supported by the retained PyJWT[crypto] family and source-level RSA APIs.3072bits is a proposed Hengshi choice requiring graph/runtime/resource qualification, not a claim that standards mandate3072 or a measured advantage over alternatives.",
+    "header": {
+      "exact_names": [
+        "alg",
+        "typ",
+        "kid"
+      ],
+      "alg": "RS256",
+      "typ": "hsd-staff+jwt",
+      "kid": "Exactly32 lowercase ASCII hexadecimal characters, generated independently for the trusted key record; no URL/path/tenant interpretation. Shape does not establish entropy or registration.",
+      "other_members": "Reject all, including jku/x5u/jwk/x5c/crit/b64/cty/zip. No detached, unencoded, compressed, nested or encrypted token profile."
+    },
+    "signature": {
+      "decoded_bytes": 384,
+      "encoded_ascii_characters": 512,
+      "bounds_reason": "3072-bit RSA signature is384 octets; canonical unpadded base64url is512 characters. With existing decoded128/768 byte caps, the conservative component maxima171+1024+512+2=1709 fit inside2048. Arithmetic is not crypto/size/runtime qualification.",
+      "decoder": "Exactly three canonical unpadded ASCII base64url components; strict UTF8 object parsing and duplicate-name rejection before lossy dictionaries. Reject wrong signature length before library verification."
+    }
+  },
+  "trusted_key_registry": {
+    "max_live_records": 2,
+    "max_current_issuers": 1,
+    "other_record": "At most one retiring record for verification and reconstructing the same already-issued identities only; it cannot issue a new token generation.",
+    "record_fields": [
+      "Independent key ID and immutable profile/algorithm association",
+      "Verified RSA public-key object/identity and protected signer reference; no raw key in ordinary session/audit/HTTP records",
+      "Current-issuance/retiring/disabled state and monotonically guarded configuration revision",
+      "Trusted last-issue/retirement admission and latest admissible token-expiry bound; no caller-provided key lifecycle time"
+    ],
+    "lookup": "The bounded raw kid selects only an already-loaded trusted in-process profile record; it cannot choose allowed algorithms, parse key material or trigger a filesystem/URL/provider fetch. Unknown selector denies; unknown required custody/configuration fails unavailable under the existing generic boundary rules. No scan/retry/fallback across keys.",
+    "id_policy": "Use independent CSPRNG128-bit identifiers, check known bindings for collision and never deliberately recycle an old key ID. Actual entropy, custody/history retention and collision allocation remain to qualify; this is not an unbounded tombstone store.",
+    "family_checks": "Before admitting a record, use qualified key-object APIs to require RSA, exact3072 modulus bits and exponent65537, and matching approved public/private association. No HMAC/raw arbitrary key bytes or another RSA size silently substitutes.",
+    "rotation": "Serialize current signer/configuration changes against token issuance. New generations use only the one current key. A retiring key can reconstruct only its exact already-current identity/claims/times/signing profile under the existing current/prior-recovery guards; signing does not advance activity or expiry.",
+    "capacity": "A second ordinary rollover cannot evict a still-needed retiring record, expand the two-record cap or automatically revoke users. Hold that rollover until permitted retirement or a separately authorized incident disposition. No rotation cadence is invented here.",
+    "retirement": "Keep the retiring record eligible no later than the latest originally issued token expiry bound for that key, itself no later than last admitted issuance+28800seconds; equality denies key use. No token/recovery/clock extension follows. Exact protected secret disposal, minimal audit/copy disposition and custody procedure need separate review/activation, not indefinite raw-key retention.",
+    "compromise": "Only trusted authorized incident action can disable a compromised key and reconcile affected authority. An unverified old token, unknown kid or attacker claim cannot trigger key rotation or mass revocation; never weaken the staleA/currentB protection."
+  },
+  "verification_sequence": [
+    "Acquire the existing finite permit and trusted source/framing boundary; no identity-keyed state from unverified claims.",
+    "Apply existing raw token/component/header/claim byte limits, strict decoding/duplicate rejection, exact header and canonical private-claim shapes. No header field authorizes a lookup outside the bounded trusted key registry.",
+    "Resolve exactly one admitted key/profile under current trusted configuration. Require literal RS256 and hsd-staff+jwt independently of the input, matching key family and exact signature bound. No none/symmetric/mixed algorithm route.",
+    "Use qualified PyJWT/cryptography built-ins with algorithms=[RS256], literal issuer/audience, strict_aud=true, leeway=0, all8 required claims and signature/issuer/audience/iat/nbf/exp/sub/jti validation enabled; enforce minimum key length as an additional library check, not a replacement for exact key-family admission. Never pass attacker-chosen verification options or decode-only/remote-key helpers.",
+    "Library required-claim presence is insufficient: retain existing exact scalar/raw/date and current issued-record equality. Map verified private IDs to current principal/session/grants/freshness under the existing guards. Token cryptography cannot replace that authority.",
+    "PyJWT uses its own runtime clock for built-in temporal checks; do not assume a supported current_time override. Require admitted healthy runtime clock plus current trusted database time after guard waits; the final precise existing idle/absolute/due/expiry checks still deny. A skewed/unknown clock cannot grant leeway or bypass either check.",
+    "Apply current key state and final output/commit fences together with session/token currentness, including rollover, disable, stale successor, timeout and uncertain response races. No raw JWT/key material enters diagnostics or UI."
+  ],
+  "issuance_and_redelivery": [
+    "Construct the exact minimal claim dictionary from current server records and the closed header from trusted profile/key metadata only. Do not pass caller header dictionaries to the signer.",
+    "Qualified library signing/JSON behavior must reproduce the same current identity/claims/times/key association under its frozen serialization settings; no new jti, generation, time or key is invented to repair delivery. Actual reconstruction and rollover races remain future boundary tests.",
+    "Keep existing browser-session host-cookie transport and no-JS/no-body credential rules. Header/claims shapes do not establish signed-token validity or bearer-possession legitimacy."
+  ],
+  "future_qualification": [
+    "Independent review of this logical/key-lifecycle proposal and separate parsed-header representation before any owner/schema adoption.",
+    "Complete latest-mutually-compatible stable graph and exact PyJWT/cryptography source/runtime/notice qualification; no selected versions or install follow from the documentation labels.",
+    "Concrete signer/custodian/provider, protected key identity/capability, configuration/currentness/entropy/clock/store/output/retention binding and authorized operating procedures. Hosting/provider planning remains deferred.",
+    "Actual raw invalid encodings/duplicate aliases, malicious header/key selection, wrong family/size/exponent/key/signature/type/issuer/audience/required/date/currentness, disabled/unknown key, no-network unknown kid and no-secret diagnostics tests.",
+    "Actual cross-worker key rollover versus issuance/renewal/current and prior re-delivery, capacity/retirement, compromise controls, final writer/output races, healthy/skewed clock, bounded crypto work and original session clocks.",
+    "Integrated independent/founder acceptance and later implementation permission; no actual credential, key, endpoint, account or application change now."
+  ],
+  "limits": [
+    "Schema fixtures exercise parsed header shape only; no signed JWT generation/verification, actual key registration, crypto cost, parser, browser, SQL, key-store or identity-source behavior.",
+    "RS2563072,32-hex kid and two-key inventory are recommendations, not approved policy or source-mandated numeric values.",
+    "Existing prior RSA2048 synthetic library observations do not qualify this3072 profile, key rotation or any product boundary.",
+    "Not adoption, security/licence clearance, production readiness or complete Phase1 acceptance."
+  ]
+}

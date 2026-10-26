@@ -1,0 +1,176 @@
+[
+  {
+    "name": "webgl-constants",
+    "version": "1.1.1",
+    "registry_url": "https://registry.npmjs.org/webgl-constants/1.1.1",
+    "metadata": {
+      "dist": {
+        "shasum": "f9633ee87fea56647a60b9ce735cbdfb891c6855",
+        "tarball": "https://registry.npmjs.org/webgl-constants/-/webgl-constants-1.1.1.tgz",
+        "fileCount": 15,
+        "integrity": "sha512-LkBXKjU5r9vAW7Gcu3T5u+5cvSvh5WwINdr0C+9jpzVB41cjQAP5ePArDtk/WHYdVj0GefCgM73BA7FlIiNtdg==",
+        "signatures": [
+          {
+            "sig": "MEYCIQCVgDtRWyT7HJOAEVflo1BurC+b+T+Ug5SEr7IMy8x5cgIhALUPM7ETFGGOGFWEPVGDfMA1N82EW4uOACTt5fkQnFo/",
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+          }
+        ],
+        "unpackedSize": 487495,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJc5aEBCRA9TVsSAnZWagAA5L4P/RuWRvMBA73DkjgL1ffS\n87z3sm4H5HfTBDzdKa7bOIh4svTVcITzFAmFjtmiZXir2r4BCgd4sOIskL79\nJCQSTLt57nrZEiFVQ3qVXiZK0FLuOK2gqeOyJJR9mr4IdtuOve5S6k015FOE\npTsks6xnvChsnINRK4OaN+afBSUH7LTOPZwO+YsIAZcnySl0BkWdd3sujw3O\nIyHGmpoSsvHliZutPPD09e3y/OSv4SIf7uS4JrjiTkXjXL7qb+aCtqzT6uhL\nwJn7NsygcHd/VSal8KFFbM3UVNbbM2FydWA7Ct6MafyOqeQH1AU31nJSmDP2\nEmpGpncp1ycSO/lgphLtDOnBAg1NtF3+PYh3ir/U92frVMHflOxb5DKHpjiG\nNfriosmJAmmQYZLiUI98OtirMEAYZG4b6/S1Pdqd7yvxoRU/J5wOowpp00+u\nhTLz0Xu1qYR+L9ZheLiqs5yV67OfX8QvyI1ObIZCTP74OaDQRKymRzzvj4Bp\nTR9vX50ZiArtd+VNZhEYlxU5WHrUx+ENUR8pTFDvp12pX5TENSyxBlI0ut5B\nnI8Qx/+6etZyjxHpmQ+6GATi8m6yDS9I6JSiewkNSRCfTMgwLFx8AHKcso+k\nWYYnqmLI6p0hfZeeXZdB8VsqE/LnOksYywCzPEhtEsCoUduxxD1bWeb9FDVh\nVdYq\r\n=auq7\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "main": "dist/webgl-constants.cjs.js",
+      "name": "webgl-constants",
+      "types": "dist/types/index.d.ts",
+      "author": {
+        "name": "Tim van Scherpenzeel"
+      },
+      "module": "dist/webgl-constants.esm.js",
+      "browser": "dist/webgl-constants.umd.js",
+      "gitHead": "3ed05e37a29cc15cc1f612913723a4c39f808d9d",
+      "scripts": {
+        "lint": "tslint --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
+        "build": "tsc --module commonjs && rollup -c rollup.config.ts",
+        "start": "rollup -c rollup.config.ts -w",
+        "prebuild": "rimraf dist docs"
+      },
+      "_npmUser": {
+        "name": "timvanscherpenzeel",
+        "email": "timvanscherpenzeel@gmail.com"
+      },
+      "prettier": {
+        "semi": true,
+        "printWidth": 100,
+        "singleQuote": true,
+        "trailingComma": "es5"
+      },
+      "_npmVersion": "6.7.0",
+      "description": "Complete set of constants as specified in the WebGL, WebGL2 and extension spec.",
+      "directories": {},
+      "jsnext:main": "dist/webgl-constants.esm.js",
+      "maintainers": [
+        {
+          "name": "timvanscherpenzeel",
+          "email": "timvanscherpenzeel@gmail.com"
+        }
+      ],
+      "_nodeVersion": "11.11.0",
+      "dependencies": {},
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "rimraf": "^2.6.3",
+        "rollup": "^1.12.3",
+        "tslint": "^5.16.0",
+        "prettier": "^1.17.1",
+        "typescript": "^3.4.5",
+        "rollup-plugin-terser": "^5.0.0",
+        "rollup-plugin-commonjs": "^10.0.0",
+        "rollup-plugin-filesize": "^6.0.1",
+        "tslint-config-prettier": "^1.18.0",
+        "rollup-plugin-typescript2": "^0.21.1",
+        "rollup-plugin-node-resolve": "^5.0.0"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/webgl-constants_1.1.1_1558552832713_0.6373763204391192",
+        "host": "s3://npm-registry-packages"
+      },
+      "_id": "webgl-constants@1.1.1",
+      "version": "1.1.1"
+    },
+    "locked_integrity": "sha512-LkBXKjU5r9vAW7Gcu3T5u+5cvSvh5WwINdr0C+9jpzVB41cjQAP5ePArDtk/WHYdVj0GefCgM73BA7FlIiNtdg==",
+    "locked_resolved": "https://registry.npmjs.org/webgl-constants/-/webgl-constants-1.1.1.tgz"
+  },
+  {
+    "name": "@tailwindcss/oxide-wasm32-wasi",
+    "version": "4.3.3",
+    "registry_url": "https://registry.npmjs.org/@tailwindcss%2foxide-wasm32-wasi/4.3.3",
+    "metadata": {
+      "cpu": [
+        "wasm32"
+      ],
+      "dist": {
+        "shasum": "408a9bc620e68f1aaf0dfea33da7bd3b65f9e2ef",
+        "tarball": "https://registry.npmjs.org/@tailwindcss/oxide-wasm32-wasi/-/oxide-wasm32-wasi-4.3.3.tgz",
+        "fileCount": 113,
+        "integrity": "sha512-jx1+rPhY/5Ympkktd656HBWEBLxP7dH06losBLjjf5vgCODXvi9KhtftWcMIwTFIDqBr7cRnQkdLnAG+IOlGvQ==",
+        "signatures": [
+          {
+            "sig": "MEUCIAOZGnOfxFyWommDQ15/kXvl7Rjb477trMXN/foZKSogAiEAkNDIVH3ZoQpLfu7eZXQ9JrJv26PKb4kIZXZ243G4dq0=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@tailwindcss%2foxide-wasm32-wasi@4.3.3",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 11574189
+      },
+      "main": "tailwindcss-oxide.wasi.cjs",
+      "name": "@tailwindcss/oxide-wasm32-wasi",
+      "browser": "tailwindcss-oxide.wasi-browser.js",
+      "engines": {
+        "node": ">=14.0.0"
+      },
+      "license": "MIT",
+      "_npmUser": {
+        "name": "GitHub Actions",
+        "email": "npm-oidc-no-reply@github.com",
+        "trustedPublisher": {
+          "id": "github",
+          "oidcConfigId": "oidc:8ea07686-b75a-4afe-99eb-2309b80ee663"
+        }
+      },
+      "repository": {
+        "url": "git+https://github.com/tailwindlabs/tailwindcss.git",
+        "type": "git",
+        "directory": "crates/node"
+      },
+      "directories": {},
+      "maintainers": [
+        {
+          "name": "reinink",
+          "email": "jonathan@reinink.ca"
+        },
+        {
+          "name": "adamwathan",
+          "email": "adam@adamwathan.me"
+        },
+        {
+          "name": "malfaitrobin",
+          "email": "malfait.robin@gmail.com"
+        }
+      ],
+      "_nodeVersion": "24.18.0",
+      "dependencies": {
+        "tslib": "^2.8.1",
+        "@emnapi/core": "^1.11.1",
+        "@emnapi/runtime": "^1.11.1",
+        "@tybys/wasm-util": "^0.10.2",
+        "@emnapi/wasi-threads": "^1.2.2",
+        "@napi-rs/wasm-runtime": "^1.1.4"
+      },
+      "publishConfig": {
+        "access": "public",
+        "provenance": true
+      },
+      "_hasShrinkwrap": false,
+      "bundledDependencies": [
+        "@napi-rs/wasm-runtime",
+        "@emnapi/core",
+        "@emnapi/runtime",
+        "@tybys/wasm-util",
+        "@emnapi/wasi-threads",
+        "tslib"
+      ],
+      "_npmOperationalInternal": {
+        "tmp": "tmp/oxide-wasm32-wasi_4.3.3_1784203456842_0.3312063670420815",
+        "host": "s3://npm-registry-packages-npm-production"
+      },
+      "_id": "@tailwindcss/oxide-wasm32-wasi@4.3.3",
+      "version": "4.3.3"
+    },
+    "locked_integrity": "sha512-jx1+rPhY/5Ympkktd656HBWEBLxP7dH06losBLjjf5vgCODXvi9KhtftWcMIwTFIDqBr7cRnQkdLnAG+IOlGvQ==",
+    "locked_resolved": "https://registry.npmjs.org/@tailwindcss/oxide-wasm32-wasi/-/oxide-wasm32-wasi-4.3.3.tgz"
+  }
+]

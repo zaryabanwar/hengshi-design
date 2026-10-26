@@ -1,6 +1,17 @@
 # Software Architecture Document (SAD) v3.0
 ## Hengshi Design Digital Platform
 
+> Current authority notice — 2026-10-04: this February architecture description
+> is preserved implementation/history evidence. Its original "Active" label does
+> not select the current production architecture. D-065 accepts the Phase 1
+> authority/boundary baseline; D-064 amends navigation without reopening it.
+> Use [the reconciliation map](../software-definition/04-reconciliation-map.md),
+> [accepted architecture baseline](../phase-1-architecture/ARCHITECTURE.md) with
+> its later D-065 approval record, and the proposed
+> [movement addendum](../phase-1-architecture/MOVEMENT_STREAMING_ADDENDUM.md).
+> Exact new contracts remain proposed pending integrated acceptance. Historical
+> AWS, fixed-version or SPA-only descriptions cannot override current decisions.
+
 ### Document Control
 - **Document ID:** SAD-HD-2026-003
 - **Version:** 3.0

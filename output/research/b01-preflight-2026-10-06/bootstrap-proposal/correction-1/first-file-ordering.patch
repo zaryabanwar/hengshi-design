@@ -1,0 +1,88 @@
+--- a/docs/phase-1-ui-reference-production/UI_REFERENCE_PRODUCTION_CONTRACT.md
++++ b/docs/phase-1-ui-reference-production/UI_REFERENCE_PRODUCTION_CONTRACT.md
+@@ -280,7 +280,7 @@
+ 
+ | ID | Permitted operation |
+ |---|---|
+-| `WS-P-01` | Create one Figma project and one design file dedicated to Hengshi Design UI reference production |
++| `WS-P-01` | Create one dedicated Design file in an approved existing project or explicitly approved Drafts under §3.5; creating a project requires its own explicit operation approval |
+ | `WS-P-02` | Create, rename, and reorder pages within that file |
+ | `WS-P-03` | Create, edit, and delete frames, components, component sets, variants, styles, and variables within that file |
+ | `WS-P-04` | Create prototype links and interactions within that file |
+@@ -330,14 +330,32 @@
+   repository evidence directory. No agent credential or MCP is required. This path
+   is available immediately on MA-025 approval.
+ - **Path B — agent-performed.** A Figma MCP server or equivalent authorized API
+-  path is configured in the canonical inventory, authenticated by a person through
+-  an official flow, and **capability-tested read-only first** (list file, read node
+-  inventory) before any write. The test result and its date are recorded in
+-  `validation/capability-evidence.md`.
+-
+-Under either path, the following must be recorded before `WS-P-01`: provider,
+-account type, plan tier, date, the read-only capability result, and the
+-`[MUST VERIFY AT GATE]` items in §7.2. **Capability must never be assumed.**
++  path is configured in the canonical inventory and authenticated by a person
++  through an official flow. For an existing file, perform an individually approved
++  read-only file/node capability check before any write and record its date/result.
++
++  **First-file bootstrap exception — requires explicit founder acceptance.** If
++  this new project has no file, record the authenticated identity, selected plan
++  and account type/tier first. The founder may then separately authorize one
++  create_new_file call for one empty Design file named `Hengshi Design v1 — UI
++  References`, in an approved existing project or, only if explicitly selected,
++  the authenticated account's Drafts. Creating the empty file does not establish
++  file/canvas capability or release design work. Obtain the next immediate call
++  approval for a read-only file/node check of that returned target. Verify its
++  private access/sharing state and a supported named-version/full-editable-archive
++  path before writing any design or project content. Retain a dated empty-file
++  creation receipt and its single target; do not retry an uncertain creation by
++  creating another file. Inspect/reconcile the first outcome under fresh approval.
++  If privacy, inventory or archive support cannot be verified, stop design work.
++  Neither bootstrap acceptance nor file creation accepts/releases the B01 pilot.
++
++Under either path record provider, account type, plan tier, date, read-only
++capability results and the `[MUST VERIFY AT GATE]` items in §7.2. Under the
++first-file exception, identify file/archiving items as unverified until tested;
++do not label capability complete from whoami. Every external call, including
++bootstrap and failed calls, retains CB-06/CB-07 approval and ledger requirements.
++No project creation, sharing change, seat/billing change or later-batch release
++follows from this exception. **Capability must never be assumed.**
+ 
+ ---
+ 
+@@ -597,9 +615,11 @@
+ 
+ ### 9.2 Per-batch checkpoints
+ 
+-1. **Pre-write checkpoint.** Before the first write of a batch: create a named
+-   Figma version `HSD_UIR_<BATCH>_PRE`, export the file archive, and record its
+-   SHA-256 in the batch manifest.
++1. **Pre-write checkpoint.** Before the first design/content write of a batch:
++   create a named Figma version `HSD_UIR_<BATCH>_PRE`, export the full editable
++   file archive, and record its SHA-256 in the batch manifest. The individually
++   authorized empty first-file bootstrap in §3.5 precedes this checkpoint; it
++   permits no design/content write and cannot substitute for the _PRE archive.
+ 2. **Post-exit checkpoint.** After batch exit: create a named Figma version
+    `HSD_UIR_<BATCH>_EXIT`, export the archive, export all evidence, hash
+    everything, and freeze the manifest.
+@@ -662,7 +682,10 @@
+ 3. Zero spend is confirmed; free tier only; any paid step returns to MA-010.
+ 4. B01 runs as a gated pilot; B02–B08 are released only by B01 pilot acceptance.
+ 5. B07 and B09 remain unauthorized and are deferred to MA-026.
+-6. No write occurs until §3.5 capability enablement is completed and recorded.
++6. No design/content write occurs until §3.5 capability enablement is completed
++   and recorded. Only the separately founder-approved empty first-file bootstrap
++   specified in §3.5 may precede file/archiving verification; it grants no pilot
++   execution, design/content write or waiver of private inventory and _PRE gates.
+ 
+ ### 11.2 Acceptance of an individual batch
+ 
+--- a/docs/phase-1-ui-reference-production/external-write-scope.csv
++++ b/docs/phase-1-ui-reference-production/external-write-scope.csv
+@@ -1,5 +1,5 @@
+ scope_id,mode,operation,target,condition,rationale
+-WS-P-01,permitted,Create one project and one design file dedicated to Hengshi Design UI reference production,figma_single_approved_file,Only once and only after section 3.5 capability evidence is recorded,The contracted work needs one durable system of record
++WS-P-01,permitted,Create one dedicated Design file in an approved existing project or explicitly approved Drafts,figma_single_approved_file,Only once with explicit operation approval and section 3.5 first-file ordering where applicable; project creation needs separate explicit approval,One durable target; no design work before private file inventory and named-version editable-archive capability and _PRE checkpoint
+ WS-P-02,permitted,Create rename and reorder pages,figma_single_approved_file,Only within the approved file,Batch and template organisation
+ WS-P-03,permitted,Create edit and delete frames components component sets variants styles and variables,figma_single_approved_file,Only within an authorized batch,Produces FRAME FOCUSED_FRAME and VARIANT evidence and the PRIM-* library
+ WS-P-04,permitted,Create prototype links and interactions,figma_single_approved_file,Only within an authorized batch,Produces PROTOTYPE evidence for focus return disclosure and modal behaviour

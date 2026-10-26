@@ -1,0 +1,15 @@
+{
+  "tool": "download_assets",
+  "arguments": {
+    "fileKey": "GOmLP6Cv96l768ueSrZ5Dg",
+    "nodeId": "BIND_EXACTLY_TO_COMPARISON_SHEET_ID_FROM_SUCCESSFUL_PREPARATION",
+    "defaultFormat": "png",
+    "defaultScale": 1
+  },
+  "guards": [
+    "Reject a missing/empty/non-string ID; require identity equality to preparation report.comparisonSheetId and cleanupInput.sheetId.",
+    "Require preparation reports exactly11 known units, expected3808x1996 bounds, bounded unchanged originals and a retained temporary sheet.",
+    "No retry or alternate node; preserve export response without logging signed URLs; fetch only the returned export URL promptly within32MiB, HTTPS only, bounded redirects.",
+    "Verify actual PNG MIME/signature and dimensions3808x1996 before unit crop extraction. Separate cleanup is required even if export or download fails."
+  ]
+}

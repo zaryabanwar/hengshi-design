@@ -1,5 +1,19 @@
 # Platform Security Hardening - Data Model
 
+## Current authority — 2026-10-04
+
+Task status: BLOCKED for implementation. The historical June data proposal below
+does not establish the launch identity/session/audit schema or prove that no
+migration will be needed. D-018 selects Entra roles, controlled emergency MFA,
+rotating cookies/CSRF and Redis-backed production protection. Retention/deletion
+uses the proposed [classification matrix](../../docs/phase-1-architecture/contracts/data-classification.csv)
+and [security/privacy contract](../../docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md).
+Exact SQL/session and legal-record mappings remain reviewed downstream contracts.
+Bearer fallback and in-memory production limits below are historical proposals.
+No database mutation or migration is authorized by reconciliation.
+
+## Historical June data proposal
+
 ## Status
 
 | Field | Value |

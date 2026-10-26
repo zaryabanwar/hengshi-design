@@ -1,0 +1,231 @@
+{
+  "status": "DOING",
+  "scope": "Dated registry dependency/channel recheck only; no package code installed or executed, no selected production graph",
+  "date": "2026-10-04",
+  "observations": [
+    {
+      "package": "eslint-plugin-react-hooks",
+      "source": "https://registry.npmjs.org/eslint-plugin-react-hooks",
+      "observed_at": "2026-10-04T12:07:54.391204+00:00",
+      "metadata_sha256": "7f140e91e5c85eec75f2e8acda41101eb271216fde497195c2fcf2adba10c0da",
+      "latest_tag": "7.1.1",
+      "published_at": "2026-04-17T18:03:19.591Z",
+      "dependencies": {
+        "zod": "^3.25.0 || ^4.0.0",
+        "@babel/core": "^7.24.4",
+        "@babel/parser": "^7.24.4",
+        "hermes-parser": "^0.25.1",
+        "zod-validation-error": "^3.5.0 || ^4.0.0"
+      },
+      "peerDependencies": {
+        "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0 || ^10.0.0"
+      },
+      "engines": {
+        "node": ">=18"
+      },
+      "license": "MIT",
+      "dist": {
+        "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-7.1.1.tgz",
+        "integrity": "sha512-f2I7Gw6JbvCexzIInuSbZpfdQ44D7iqdWX01FKLvrPgqxoE7oMj8clOfto8U6vYiz4yd5oKu39rRSVOe1zRu0g==",
+        "shasum": "e6742cad75d970c0a3f30d7d3fa80a4784f55927"
+      }
+    },
+    {
+      "package": "@babel/core",
+      "source": "https://registry.npmjs.org/@babel%2Fcore",
+      "observed_at": "2026-10-04T12:07:55.624709+00:00",
+      "metadata_sha256": "8d91e8a563d2a3f13a02715dcf6c9187aaaae9f0c326884f207469ce6f485d2e",
+      "latest_tag": "8.0.6",
+      "published_at": "2026-09-18T13:48:10.809Z",
+      "dependencies": {
+        "obug": "^2.1.1",
+        "json5": "^2.2.3",
+        "verkit": "^0.3.2",
+        "gensync": "^1.0.0-beta.2",
+        "empathic": "^2.0.1",
+        "@babel/types": "^8.0.6",
+        "@babel/parser": "^8.0.6",
+        "@babel/helpers": "^8.0.5",
+        "@types/gensync": "^1.0.5",
+        "@babel/template": "^8.0.0",
+        "@babel/traverse": "^8.0.6",
+        "@babel/generator": "^8.0.6",
+        "@babel/code-frame": "^8.0.6",
+        "convert-source-map": "^2.0.0",
+        "import-meta-resolve": "^4.2.0",
+        "@babel/helper-compilation-targets": "^8.0.6"
+      },
+      "peerDependencies": {},
+      "engines": {
+        "node": "^22.18.0 || >=24.11.0"
+      },
+      "license": "MIT",
+      "dist": {
+        "tarball": "https://registry.npmjs.org/@babel/core/-/core-8.0.6.tgz",
+        "integrity": "sha512-5zwYt1V4ji3mXKKRIAkohSJ29WepxNwxQi+7y7P5AcVPh1dcxnZBU2cfxHnPwS+u9+lZnXPsv30TQaF2xg+Tfg==",
+        "shasum": "9f868b67f2e8ef63795b9da6866b0e14a9f2b11c"
+      }
+    },
+    {
+      "package": "gensync",
+      "source": "https://registry.npmjs.org/gensync",
+      "observed_at": "2026-10-04T12:07:56.126936+00:00",
+      "metadata_sha256": "238627d88fbc228ca4b06bd4a40ffb74fc1e9b3f5b8dc5029c82aa16dae24fa3",
+      "latest_tag": "1.0.0-beta.2",
+      "published_at": "2020-10-27T20:43:40.443Z",
+      "dependencies": {},
+      "peerDependencies": {},
+      "engines": {
+        "node": ">=6.9.0"
+      },
+      "license": "MIT",
+      "dist": {
+        "tarball": "https://registry.npmjs.org/gensync/-/gensync-1.0.0-beta.2.tgz",
+        "integrity": "sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==",
+        "shasum": "32a6ee76c3d7f52d46b2b1ae5d93fea8580a25e0"
+      }
+    },
+    {
+      "package": "oxlint",
+      "source": "https://registry.npmjs.org/oxlint",
+      "observed_at": "2026-10-04T12:07:57.174234+00:00",
+      "metadata_sha256": "31ed7121ca6ecfa9f984b0b345c2c039d67e01798116760b829ebb4c3594c29e",
+      "latest_tag": "1.86.0",
+      "published_at": "2026-09-28T10:30:31.889Z",
+      "dependencies": {},
+      "peerDependencies": {
+        "vite-plus": "*",
+        "oxlint-tsgolint": ">=7.0.2003"
+      },
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "license": "MIT",
+      "dist": {
+        "tarball": "https://registry.npmjs.org/oxlint/-/oxlint-1.86.0.tgz",
+        "integrity": "sha512-og0lhgvZfgGF//gOOmZXvtr+GmBbAGEnbEhv/QUg7UW2Wi4wHMnJbnMD+zuHgPdJxdklfgpPupdlAaAySyxrZg==",
+        "shasum": "6b5d3f095eb32a8003839bffaf39e4203df644e3"
+      }
+    }
+  ],
+  "babel_7_at_or_above_7_24_4": [
+    {
+      "version": "7.24.4",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.24.5",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.24.6",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.24.7",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.24.8",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.24.9",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.25.2",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.25.7",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.25.8",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.25.9",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.26.0",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.26.7",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.26.8",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.26.9",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.26.10",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.27.1",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.27.3",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.27.4",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.27.7",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.28.0",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.28.3",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.28.4",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.28.5",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.28.6",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.29.0",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.29.6",
+      "gensync": "^1.0.0-beta.2"
+    },
+    {
+      "version": "7.29.7",
+      "gensync": "^1.0.0-beta.2"
+    }
+  ],
+  "gensync_all_numeric_stable_versions": [
+    "0.1.0"
+  ],
+  "protected_inputs_sha256": {
+    "package.json": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b",
+    "package-lock.json": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908",
+    "apps/web/package.json": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a",
+    "apps/web/package-lock.json": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d",
+    "apps/api/requirements.txt": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd"
+  }
+}

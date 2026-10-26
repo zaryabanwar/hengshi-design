@@ -1,0 +1,34 @@
+--- backend-evidence.before.md
++++ backend-evidence.corrected.md
+@@ -120,9 +120,11 @@
+   preserve the approved random 24+ character emergency credential policy without
+   silent truncation, unreviewed prehashing or a replacement password algorithm.
+ - pytest-asyncio 1.4.0 requires pytest >=8.4,<10; the observed pytest candidate is
+-  within that range. Windows dependency markers and chosen extras are distinct
+-  from Linux production markers. The snapshot's edge flags evaluate only the
+-  observed Windows runtime with no extras and are deliberately not a full resolver.
++  within that range. Windows dependency markers and chosen extras do not establish
++  the graph for any separately selected production OS and extras. Production OS
++  and packaging remain unselected under D-068. The snapshot's edge flags evaluate
++  only the observed Windows runtime with no extras and are deliberately not a full
++  resolver.
+ 
+ ## Pydantic source-channel follow-up, 2026-10-04
+ 
+@@ -174,8 +176,14 @@
+ Choose only non-preview supported releases under the approved families, resolve
+ chosen extras and every transitive dependency for the actual target runtime, and
+ record a reproducible hash-locked install, SBOM/license/advisory and build evidence.
+-Finish Python support/ABI, JWT crypto, Uvicorn extras, database/libpq, Azure GA and
+-production image/OS graphs. SQLAlchemy, Pydantic and native wheels require focused
++Finish Python support/ABI, JWT crypto, Uvicorn extras and database/libpq evidence
++for the actual target runtime. Hosting-specific GA and production OS/packaging
++graphs are conditional on the later approved target when D-068 planning resumes;
++Azure and AWS remain candidates, with no hosting provider, production OS or
++container requirement selected. Retain immutable-artifact and image-digest controls
++where applicable to that eventual packaging. Entra staff identity and the separately
++approved Azure EU route for personal/confidential AI data remain constraints.
++SQLAlchemy, Pydantic and native wheels require focused
+ behavior tests plus one relevant suite in their separately reversible backend wave.
+ 
+ The requirements, application, native services and database are unchanged here.

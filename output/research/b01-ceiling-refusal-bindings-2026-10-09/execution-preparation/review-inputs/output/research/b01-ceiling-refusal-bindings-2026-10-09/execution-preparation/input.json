@@ -1,0 +1,309 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "fileKey": "GOmLP6Cv96l768ueSrZ5Dg",
+  "proposal": "output/research/b01-ceiling-refusal-bindings-2026-10-09/input.json",
+  "proposal_sha256": "af86ec7186b5ad1132953641803fe19267c72b0139a959547b3a5a3322c89fdf",
+  "proposal_review": "output/research/b01-ceiling-refusal-bindings-2026-10-09/independent-review-ceiling-bindings-v1.json",
+  "proposal_review_sha256": "4d6a8c7ce597951b575bcc94403920d5ddd02bcf05ce5603dbf1fdf795fa6bdd",
+  "labels": [
+    {
+      "id": "S-HIGH",
+      "label": "Detailed 3D"
+    },
+    {
+      "id": "S-MEDIUM",
+      "label": "Balanced 3D"
+    },
+    {
+      "id": "S-LOW",
+      "label": "Simplified 3D"
+    },
+    {
+      "id": "S-SEMANTIC",
+      "label": "Quick Access"
+    }
+  ],
+  "copy": {
+    "legend": "Delivery stream — currently {active_label}",
+    "apply": "Apply selection",
+    "advisement": "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.",
+    "peer_explanation": "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.",
+    "privacy": "Privacy and storage"
+  },
+  "notice": "This option is unavailable on this device: this browser cannot currently obtain a WebGL context. Your current stream remains active.",
+  "masters": [
+    {
+      "id": "21:25",
+      "stream_id": "S-HIGH",
+      "pending_id": "S-MEDIUM"
+    },
+    {
+      "id": "21:55",
+      "stream_id": "S-MEDIUM",
+      "pending_id": "S-LOW"
+    },
+    {
+      "id": "21:40",
+      "stream_id": "S-LOW",
+      "pending_id": "S-SEMANTIC"
+    },
+    {
+      "id": "21:70",
+      "stream_id": "S-SEMANTIC",
+      "pending_id": "S-HIGH"
+    }
+  ],
+  "frames": [
+    {
+      "case": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-STREAM-CEILING-REFUSED",
+        "stream_id": "S-HIGH",
+        "current_stream_label": "Detailed 3D",
+        "pending_stream_id": "S-MEDIUM",
+        "pending_stream_label": "Balanced 3D",
+        "group_name": "Delivery stream — currently Detailed 3D",
+        "notice": "This option is unavailable on this device: this browser cannot currently obtain a WebGL context. Your current stream remains active.",
+        "host_context": "Services page with navigation open",
+        "preserved_context": [
+          "Services route and location",
+          "open navigation",
+          "eligible page content",
+          "invoker/focus lineage"
+        ],
+        "chronology": "A valid prior Detailed 3D choice remains applied after leaving the World for the Services host; the distinct pending 3D selection precedes current established unavailability; explicit Apply is refused.",
+        "world_entered": false,
+        "live_renderer_claim": false,
+        "automatic_semantic_switch": false,
+        "planned_frame_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+        "viewport": "VP-320",
+        "mode": "MODE-KEYBOARD",
+        "source_control_note": "Use the existing current/pending distinction only after checking exact master labels and inherited notice; no generic OPEN instance without refusal notice earns credit."
+      },
+      "source_id": "21:291",
+      "source_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "source_parent_id": "21:290"
+    },
+    {
+      "case": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-STREAM-CEILING-REFUSED",
+        "stream_id": "S-MEDIUM",
+        "current_stream_label": "Balanced 3D",
+        "pending_stream_id": "S-LOW",
+        "pending_stream_label": "Simplified 3D",
+        "group_name": "Delivery stream — currently Balanced 3D",
+        "notice": "This option is unavailable on this device: this browser cannot currently obtain a WebGL context. Your current stream remains active.",
+        "host_context": "Services page with navigation open",
+        "preserved_context": [
+          "Services route and location",
+          "open navigation",
+          "eligible page content",
+          "invoker/focus lineage"
+        ],
+        "chronology": "A valid prior Balanced 3D choice remains applied after leaving the World for the Services host; the distinct pending 3D selection precedes current established unavailability; explicit Apply is refused.",
+        "world_entered": false,
+        "live_renderer_claim": false,
+        "automatic_semantic_switch": false,
+        "planned_frame_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+        "viewport": "VP-320",
+        "mode": "MODE-KEYBOARD",
+        "source_control_note": "Use the existing current/pending distinction only after checking exact master labels and inherited notice; no generic OPEN instance without refusal notice earns credit."
+      },
+      "source_id": "21:365",
+      "source_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "source_parent_id": "21:290"
+    },
+    {
+      "case": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-STREAM-CEILING-REFUSED",
+        "stream_id": "S-LOW",
+        "current_stream_label": "Simplified 3D",
+        "pending_stream_id": "S-HIGH",
+        "pending_stream_label": "Detailed 3D",
+        "group_name": "Delivery stream — currently Simplified 3D",
+        "notice": "This option is unavailable on this device: this browser cannot currently obtain a WebGL context. Your current stream remains active.",
+        "host_context": "Services page with navigation open",
+        "preserved_context": [
+          "Services route and location",
+          "open navigation",
+          "eligible page content",
+          "invoker/focus lineage"
+        ],
+        "chronology": "A valid prior Simplified 3D choice remains applied after leaving the World for the Services host; the distinct pending 3D selection precedes current established unavailability; explicit Apply is refused.",
+        "world_entered": false,
+        "live_renderer_claim": false,
+        "automatic_semantic_switch": false,
+        "planned_frame_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+        "viewport": "VP-320",
+        "mode": "MODE-KEYBOARD",
+        "source_control_note": "Existing OPEN/LOW master has pending Quick Access; do not reuse that checked state for this refusal. Planned pending HIGH needs a guarded correct editable reference."
+      },
+      "source_id": "21:328",
+      "source_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "source_parent_id": "21:290"
+    },
+    {
+      "case": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-STREAM-CEILING-REFUSED",
+        "stream_id": "S-SEMANTIC",
+        "current_stream_label": "Quick Access",
+        "pending_stream_id": "S-HIGH",
+        "pending_stream_label": "Detailed 3D",
+        "group_name": "Delivery stream — currently Quick Access",
+        "notice": "This option is unavailable on this device: this browser cannot currently obtain a WebGL context. Your current stream remains active.",
+        "host_context": "Services page with navigation open",
+        "preserved_context": [
+          "Services route and location",
+          "open navigation",
+          "eligible page content",
+          "invoker/focus lineage"
+        ],
+        "chronology": "Quick Access was applied by visitor choice; pending 3D selection precedes the current established unavailability; explicit Apply is refused.",
+        "world_entered": false,
+        "live_renderer_claim": false,
+        "automatic_semantic_switch": false,
+        "planned_frame_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+        "viewport": "VP-320",
+        "mode": "MODE-KEYBOARD",
+        "source_control_note": "Use the existing current/pending distinction only after checking exact master labels and inherited notice; no generic OPEN instance without refusal notice earns credit."
+      },
+      "source_id": "21:402",
+      "source_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "source_parent_id": "21:290"
+    },
+    {
+      "case": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-STREAM-CEILING-REFUSED",
+        "stream_id": "S-HIGH",
+        "current_stream_label": "Detailed 3D",
+        "pending_stream_id": "S-MEDIUM",
+        "pending_stream_label": "Balanced 3D",
+        "group_name": "Delivery stream — currently Detailed 3D",
+        "notice": "This option is unavailable on this device: this browser cannot currently obtain a WebGL context. Your current stream remains active.",
+        "host_context": "Directory/search on the Services page",
+        "preserved_context": [
+          "Services route and location",
+          "directory open state",
+          "search query and eligible results",
+          "invoker/focus lineage"
+        ],
+        "chronology": "A valid prior Detailed 3D choice remains applied after leaving the World for the Services host; the distinct pending 3D selection precedes current established unavailability; explicit Apply is refused.",
+        "world_entered": false,
+        "live_renderer_claim": false,
+        "automatic_semantic_switch": false,
+        "planned_frame_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+        "viewport": "VP-320",
+        "mode": "MODE-KEYBOARD",
+        "source_control_note": "Use the existing current/pending distinction only after checking exact master labels and inherited notice; no generic OPEN instance without refusal notice earns credit."
+      },
+      "source_id": "27:382",
+      "source_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "source_parent_id": "27:381"
+    },
+    {
+      "case": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-STREAM-CEILING-REFUSED",
+        "stream_id": "S-MEDIUM",
+        "current_stream_label": "Balanced 3D",
+        "pending_stream_id": "S-LOW",
+        "pending_stream_label": "Simplified 3D",
+        "group_name": "Delivery stream — currently Balanced 3D",
+        "notice": "This option is unavailable on this device: this browser cannot currently obtain a WebGL context. Your current stream remains active.",
+        "host_context": "Directory/search on the Services page",
+        "preserved_context": [
+          "Services route and location",
+          "directory open state",
+          "search query and eligible results",
+          "invoker/focus lineage"
+        ],
+        "chronology": "A valid prior Balanced 3D choice remains applied after leaving the World for the Services host; the distinct pending 3D selection precedes current established unavailability; explicit Apply is refused.",
+        "world_entered": false,
+        "live_renderer_claim": false,
+        "automatic_semantic_switch": false,
+        "planned_frame_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+        "viewport": "VP-320",
+        "mode": "MODE-KEYBOARD",
+        "source_control_note": "Use the existing current/pending distinction only after checking exact master labels and inherited notice; no generic OPEN instance without refusal notice earns credit."
+      },
+      "source_id": "27:430",
+      "source_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "source_parent_id": "27:381"
+    },
+    {
+      "case": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-STREAM-CEILING-REFUSED",
+        "stream_id": "S-LOW",
+        "current_stream_label": "Simplified 3D",
+        "pending_stream_id": "S-HIGH",
+        "pending_stream_label": "Detailed 3D",
+        "group_name": "Delivery stream — currently Simplified 3D",
+        "notice": "This option is unavailable on this device: this browser cannot currently obtain a WebGL context. Your current stream remains active.",
+        "host_context": "Directory/search on the Services page",
+        "preserved_context": [
+          "Services route and location",
+          "directory open state",
+          "search query and eligible results",
+          "invoker/focus lineage"
+        ],
+        "chronology": "A valid prior Simplified 3D choice remains applied after leaving the World for the Services host; the distinct pending 3D selection precedes current established unavailability; explicit Apply is refused.",
+        "world_entered": false,
+        "live_renderer_claim": false,
+        "automatic_semantic_switch": false,
+        "planned_frame_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+        "viewport": "VP-320",
+        "mode": "MODE-KEYBOARD",
+        "source_control_note": "Existing OPEN/LOW master has pending Quick Access; do not reuse that checked state for this refusal. Planned pending HIGH needs a guarded correct editable reference."
+      },
+      "source_id": "27:478",
+      "source_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "source_parent_id": "27:381"
+    },
+    {
+      "case": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-STREAM-CEILING-REFUSED",
+        "stream_id": "S-SEMANTIC",
+        "current_stream_label": "Quick Access",
+        "pending_stream_id": "S-HIGH",
+        "pending_stream_label": "Detailed 3D",
+        "group_name": "Delivery stream — currently Quick Access",
+        "notice": "This option is unavailable on this device: this browser cannot currently obtain a WebGL context. Your current stream remains active.",
+        "host_context": "Directory/search on the Services page",
+        "preserved_context": [
+          "Services route and location",
+          "directory open state",
+          "search query and eligible results",
+          "invoker/focus lineage"
+        ],
+        "chronology": "Quick Access was applied by visitor choice; pending 3D selection precedes the current established unavailability; explicit Apply is refused.",
+        "world_entered": false,
+        "live_renderer_claim": false,
+        "automatic_semantic_switch": false,
+        "planned_frame_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+        "viewport": "VP-320",
+        "mode": "MODE-KEYBOARD",
+        "source_control_note": "Use the existing current/pending distinction only after checking exact master labels and inherited notice; no generic OPEN instance without refusal notice earns credit."
+      },
+      "source_id": "27:526",
+      "source_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "source_parent_id": "27:381"
+    }
+  ],
+  "rootName": "B01 / Capability refusal host references / v1",
+  "componentSetName": "PRIM-001 / Capability refusal references / B01 v1",
+  "limits": [
+    "No Figma call number, quota debit or immediate call permission is allocated.",
+    "No Figma nodes, pixels, style/component corrections, live interactions or complete B01 coverage are supplied.",
+    "Four different applied stream keys and two different hosts produce eight proposed bindings; they do not collapse into four generic refusal cards.",
+    "Other viewport/mode/host state profiles, actual detector qualification, keyboard/assistive technology, full B01 review, restore/_EXIT and founder acceptance remain held.",
+    "No external script is prepared until this dynamic binding has independent review. Concrete capability detection remains later implementation work. Safe source preparation does not release a write or broaden the pending twelve-reference permission.",
+    "Preserve existing accepted stream rules, original Figma references, application and protected models."
+  ]
+}

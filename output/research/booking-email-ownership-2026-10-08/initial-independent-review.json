@@ -1,0 +1,24 @@
+{
+  "result": "REVISE",
+  "reviewer": "/root/review_directory_references_v1",
+  "manifest_sha256": "b184afe94b54da464553b3d67e349a890878ca57a4a1f923ec59ea06882a3af3",
+  "findings": [
+    {
+      "id": "EO01",
+      "reason": "Explicit current expected revision is missing from fresh verify and extension guards."
+    },
+    {
+      "id": "EO02",
+      "reason": "Challenge replacement must explicitly revoke existing verified authority and all dependent review/selection eligibility."
+    },
+    {
+      "id": "EO03",
+      "reason": "Separate verification freshness deadline lacks accessible adjustment; remove or define its timing treatment."
+    }
+  ],
+  "evidence": {
+    "initial_final_input_pairs": 19,
+    "prior_prefix_bytes": 68352
+  },
+  "scope": "IF-BOOK-03/04 logical email ownership proposal; no wire freeze, implementation or integrated acceptance"
+}

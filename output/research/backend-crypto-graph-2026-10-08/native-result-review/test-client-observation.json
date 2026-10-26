@@ -1,0 +1,9 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "installed_source_matches_tag_ignoring_newlines": true,
+  "httpx2_registry_latest_observed": "2.13.1",
+  "observation_not_selection": true,
+  "finding": "Starlette 1.7.0 TestClient uses httpx2 when present and falls back to deprecated httpx; 14 probes passed on the frozen HTTPX 0.28.1 path.",
+  "next_boundary": "Evaluate supported stable HTTPX/test-tool graph before adoption; no package added, warning suppressed or exception approved."
+}

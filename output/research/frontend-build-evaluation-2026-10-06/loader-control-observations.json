@@ -1,0 +1,48 @@
+{
+  "checked_at_utc": "2026-10-05T23:02:44.752813+00:00",
+  "scope": "finite public type entries, no loader execution, build or browser",
+  "commands": [
+    {
+      "compiler": "api6",
+      "command": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\bin\\tsc6",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\tsconfig.loader-control.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 2,
+      "diagnostic_codes": [
+        2307,
+        2307
+      ],
+      "expected_codes": [
+        2430,
+        2416
+      ],
+      "reproduces_observed_declaration_failure": false
+    },
+    {
+      "compiler": "native7",
+      "command": [
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\native\\bin\\tsc",
+        "--project",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate\\tsconfig.loader-control.json",
+        "--pretty",
+        "false"
+      ],
+      "exit_code": 1,
+      "diagnostic_codes": [
+        2307,
+        2307
+      ],
+      "expected_codes": [
+        2430,
+        2416
+      ],
+      "reproduces_observed_declaration_failure": false
+    }
+  ]
+}

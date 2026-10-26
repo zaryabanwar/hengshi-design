@@ -1,0 +1,30 @@
+{
+  "requested": "85:3238",
+  "urlConfirmed": true,
+  "initialPanel": {
+    "expected": {
+      "symbol": "M_OPEN_H",
+      "id": "85:3238",
+      "x": 20,
+      "y": 1230,
+      "active": "MEDIUM",
+      "pending": "HIGH",
+      "directory": "OPEN"
+    },
+    "observed": {
+      "x": 400,
+      "y": 1230,
+      "width": 320,
+      "height": 1150,
+      "active": "MEDIUM",
+      "pending": "HIGH",
+      "directory": "CLOSED"
+    },
+    "pass": false
+  },
+  "nextScreenshotObserved": {
+    "x": 20,
+    "directory": "OPEN"
+  },
+  "classification": "Delayed inspector refresh; initial panel belongs to preceding selection, no observed mutation"
+}

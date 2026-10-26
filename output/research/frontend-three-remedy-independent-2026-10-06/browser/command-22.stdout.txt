@@ -1,0 +1,25 @@
+### Page
+- Page URL: http://127.0.0.1:5281/
+- Page Title: Hengshi tooling fixture — v1
+- Console: 0 errors, 2 warnings
+### Snapshot
+```yaml
+- main [ref=e3]:
+  - heading "Isolated frontend tooling fixture" [level=1] [ref=e4]
+  - paragraph [ref=e5]: Compatibility evidence only. This is not the Hengshi website or campus.
+  - button "Count 1" [disabled] [ref=e21]
+  - button "Store increment" [ref=e7]
+  - paragraph [ref=e8]: "Store value: 2"
+  - button "Run fixture animation" [ref=e9]
+  - paragraph [ref=e10]: "Animation: Completed"
+  - navigation [ref=e11]:
+    - link "Open fixture notes" [ref=e12] [cursor=pointer]:
+      - /url: /notes
+    - text: "|"
+    - link "Fixture home" [active] [ref=e13] [cursor=pointer]:
+      - /url: /
+  - paragraph [ref=e14]: Fixture home route
+  - button "Unmount scene" [ref=e23]
+  - paragraph [ref=e16]: "Renderer: WebGL2 renderer created"
+  - generic "Synthetic WebGL scene" [ref=e24]
+```

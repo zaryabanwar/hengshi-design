@@ -1,0 +1,204 @@
+[
+  {
+    "step": "01-host-identity",
+    "command": [
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-c",
+      "import sys,pip,json; assert sys.version_info[:3]==(3,14,5); assert pip.__version__==\"26.1.1\"; print(json.dumps({\"python\":sys.version,\"pip\":pip.__version__}))"
+    ],
+    "before": {
+      "retained_bytes": 1609,
+      "free_disk_bytes": 5363507200
+    },
+    "exit_code": 0,
+    "elapsed_seconds": 0.113,
+    "after": {
+      "retained_bytes": 1722,
+      "free_disk_bytes": 5363503104
+    }
+  },
+  {
+    "step": "02-create-pipless-venv",
+    "command": [
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "venv",
+      "--without-pip",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\test-client-graph-2026-10-09\\native-trial\\environment"
+    ],
+    "before": {
+      "retained_bytes": 2321,
+      "free_disk_bytes": 5363503104
+    },
+    "exit_code": 0,
+    "elapsed_seconds": 0.193,
+    "after": {
+      "retained_bytes": 544927,
+      "free_disk_bytes": 5362937856
+    }
+  },
+  {
+    "step": "03-download-exact-wheels",
+    "command": [
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pip",
+      "--isolated",
+      "download",
+      "--require-hashes",
+      "--only-binary=:all:",
+      "--no-deps",
+      "--no-cache-dir",
+      "--disable-pip-version-check",
+      "--progress-bar",
+      "off",
+      "--index-url",
+      "https://pypi.org/simple",
+      "--dest",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\test-client-graph-2026-10-09\\native-trial\\wheelhouse",
+      "-r",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\test-client-graph-2026-10-09\\candidate-hashed-requirements.txt"
+    ],
+    "before": {
+      "retained_bytes": 545540,
+      "free_disk_bytes": 5362933760
+    },
+    "exit_code": 0,
+    "elapsed_seconds": 35.058,
+    "after": {
+      "retained_bytes": 19197518,
+      "free_disk_bytes": 5343350784
+    }
+  },
+  {
+    "step": "04-offline-install",
+    "command": [
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pip",
+      "--isolated",
+      "--python",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\test-client-graph-2026-10-09\\native-trial\\environment\\Scripts\\python.exe",
+      "install",
+      "--no-index",
+      "--find-links",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\test-client-graph-2026-10-09\\native-trial\\wheelhouse",
+      "--require-hashes",
+      "--only-binary=:all:",
+      "--no-deps",
+      "--no-cache-dir",
+      "--no-compile",
+      "--disable-pip-version-check",
+      "--progress-bar",
+      "off",
+      "-r",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\test-client-graph-2026-10-09\\candidate-hashed-requirements.txt"
+    ],
+    "before": {
+      "retained_bytes": 19208480,
+      "free_disk_bytes": 5343338496
+    },
+    "exit_code": 0,
+    "elapsed_seconds": 11.192,
+    "after": {
+      "retained_bytes": 84071318,
+      "free_disk_bytes": 5271388160
+    }
+  },
+  {
+    "step": "05-pip-check",
+    "command": [
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pip",
+      "--isolated",
+      "--python",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\test-client-graph-2026-10-09\\native-trial\\environment\\Scripts\\python.exe",
+      "check",
+      "--disable-pip-version-check"
+    ],
+    "before": {
+      "retained_bytes": 84072531,
+      "free_disk_bytes": 5271977984
+    },
+    "exit_code": 0,
+    "elapsed_seconds": 3.442,
+    "after": {
+      "retained_bytes": 84072562,
+      "free_disk_bytes": 5271855104
+    }
+  },
+  {
+    "step": "06-installed-identities",
+    "command": [
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\test-client-graph-2026-10-09\\native-trial\\environment\\Scripts\\python.exe",
+      "-B",
+      "-c",
+      "import importlib.metadata as m,json; from pathlib import Path; d={x.metadata[\"Name\"].lower():x.version for x in m.distributions()}; Path(\"installed-identities.json\").write_text(json.dumps(d,sort_keys=True,indent=2)+\"\\n\"); print(json.dumps(d,sort_keys=True))"
+    ],
+    "before": {
+      "retained_bytes": 84073258,
+      "free_disk_bytes": 5271851008
+    },
+    "exit_code": 0,
+    "elapsed_seconds": 0.278,
+    "after": {
+      "retained_bytes": 84075541,
+      "free_disk_bytes": 5271838720
+    }
+  },
+  {
+    "step": "07-library-probes",
+    "command": [
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\test-client-graph-2026-10-09\\native-trial\\environment\\Scripts\\python.exe",
+      "-B",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\test-client-graph-2026-10-09\\run_probes.py",
+      "-c",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\test-client-graph-2026-10-09\\native-trial\\pytest.ini",
+      "--noconftest",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "pytest_asyncio.plugin",
+      "-q",
+      "--junitxml",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\test-client-graph-2026-10-09\\native-trial\\library-probes.xml",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\backend-crypto-graph-2026-10-08\\native-probes\\test_libraries.py",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\test-client-graph-2026-10-09\\test_client_coexistence.py"
+    ],
+    "before": {
+      "retained_bytes": 84076390,
+      "free_disk_bytes": 5271769088
+    },
+    "exit_code": 0,
+    "elapsed_seconds": 17.11,
+    "after": {
+      "retained_bytes": 84078564,
+      "free_disk_bytes": 5271175168
+    }
+  },
+  {
+    "step": "08-native-libpq-identity",
+    "command": [
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\test-client-graph-2026-10-09\\native-trial\\environment\\Scripts\\python.exe",
+      "-B",
+      "-c",
+      "from psycopg import pq; import json; print(json.dumps({\"implementation\":pq.__impl__,\"runtime_libpq\":pq.version(),\"build_libpq\":pq.__build_version__}))"
+    ],
+    "before": {
+      "retained_bytes": 84079918,
+      "free_disk_bytes": 5271175168
+    },
+    "exit_code": 0,
+    "elapsed_seconds": 0.793,
+    "after": {
+      "retained_bytes": 84079996,
+      "free_disk_bytes": 5271166976
+    }
+  }
+]

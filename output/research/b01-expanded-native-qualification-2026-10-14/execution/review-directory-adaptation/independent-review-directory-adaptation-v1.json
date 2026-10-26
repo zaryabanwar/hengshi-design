@@ -1,0 +1,142 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-15",
+  "reviewer": "/root/review_directory_adaptation_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "PASS",
+  "scope": "Bounded static adaptation and save/export evidence for owned Directory component set147:3869 only. Not whole-family qualification or Phase1 acceptance.",
+  "packet": {
+    "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-directory-adaptation/review-inputs-v1.json",
+    "sha256": "56d79853efb3f7e7c1f594c0706fe8f3adafd2e1813d125104c4ae13da26dc1e",
+    "input_count": 11,
+    "all_actual_bytes_and_sha256_verified": true,
+    "binding_errors": [],
+    "inputs": [
+      {
+        "path": "AGENTS.md",
+        "bytes": 7686,
+        "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/qualification-plan-v1.json",
+        "bytes": 235601,
+        "sha256": "5e24ac8c203bf729b5190d359da2439c1b1f88f59665b1c65163b4b9002ab2ce"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/review/correction1/independent-review-expanded-qualification-v1.json",
+        "bytes": 10752,
+        "sha256": "0073dd5d51cd28fef4808325264fb539b2124789c0cfc1544a998c891666b160"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/directory-independent-seed-checkpoint-v1.json",
+        "bytes": 5001,
+        "sha256": "d81c88e9ddd899e908294ca40f698b171ed7aa91afd2b8fbfa64f59d9cf4eaea"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/directory-native-adaptation-20261015-v1.json",
+        "bytes": 12078,
+        "sha256": "d6e8e2dc557915eacd401691affd2ebdef99e0ec0d062f9fa56e7848db643f3a"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/directory-32-artifact-integrity-v1.json",
+        "bytes": 1032,
+        "sha256": "dcbd53bbff0498d5660ccdcd1fe0abc33346fcdea2f9e361da2c080eaefb3eb6"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/directory-32-adapted-v1.fig",
+        "bytes": 424313,
+        "sha256": "d658ef6528e96d225a53458aeac5855b0ca7075ca9f4e5c0c3982da42a530c38"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/directory-32-native-export.zip",
+        "bytes": 408787,
+        "sha256": "1884318af9295b87508afd61e56421ef2452f841e9ff89a9689228de546ea07f"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/directory-32-native-resolution.png",
+        "bytes": 408539,
+        "sha256": "183caf10cef60b05f07661ade434dc228d815ea05abd23cb9439f5ce3aeada81"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/directory-32-adapted-overview.png",
+        "bytes": 110469,
+        "sha256": "394a22fe2ad5f0d05e5f9baf9341e769c9f8c2227791551e644e892fd6f767f0"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/directory-set-32-adapted-current.txt",
+        "bytes": 18069,
+        "sha256": "59e09be6d7caa4e6c0cf3bf001217afd3cbe5e1c384fb228a8fe834e2e870a16"
+      }
+    ]
+  },
+  "authority": {
+    "decision": "D-094, approved founder trial; DECISIONS.md section D-094 independently read",
+    "recipe_sha256": "5e24ac8c203bf729b5190d359da2439c1b1f88f59665b1c65163b4b9002ab2ce",
+    "approved_proposal_review_sha256": "0073dd5d51cd28fef4808325264fb539b2124789c0cfc1544a998c891666b160",
+    "supplemental_D057_copy": {
+      "path": "docs/phase-1-ui-reference-design/accessibility/UG-3_CONTROL_COPY_PROPOSAL.md",
+      "sha256": "839eb5291d79ac811e927e01ff9b588c192dac8a4c955448c753b4c63ccc3a3b",
+      "matches_recipe_input_binding": true
+    }
+  },
+  "checks": [
+    {
+      "check": "Bindings",
+      "result": "All11 current source files independently read and matched recorded byte lengths and SHA256 values. Manifest hash pinned above; no source byte was edited."
+    },
+    {
+      "check": "Tuple and root accounting",
+      "result": "Independently derived 4 active x4 pending x2 disclosures yields32 exact unique tuples. All32 adaptation roots and tuples equal the seed census after normalizing only the documented -layers-panel-row suffix. Native set overview confirms32 Variants, 4 Active/4 Pending/2 Disclosure axes and3020x4880 set at4760/1210."
+    },
+    {
+      "check": "Family context and visible actions",
+      "result": "All32 logged contexts equal Services · query design plus the correct active caption. All16 OPEN labels are Close directory; all16 CLOSED labels are Open directory. Native PNG visually confirms the four active rows and alternating closed/open actions. The first actionId entry and31 labelId entries are accepted as recorded actual button-property evidence, not interpreted from inherited layer names."
+    },
+    {
+      "check": "Pending graphics and disclosure",
+      "result": "Each of16 visible OPEN bodies renders four D057 peers in the approved order, exactly one selected glyph matching pending, and the legend matching active. CLOSED graphics omit choices/Apply. This is static graphical evidence only; no native radio/modal semantics or hidden-child reaction state is inferred."
+    },
+    {
+      "check": "D057 visible content",
+      "result": "Visually inspected native image and four paper-composited row crops against the separately hash-verified D057 source. Peer explanation, advance advisement, Apply selection and Privacy and storage are present, ordered and visibly fit. PNG regions x424+760*pendingIndex through+240 and y550+1230*activeIndex through+550 are byte-identical in decoded pixels across all16 open bodies, supporting preserved copy/layout beyond the exemplar. No clipping was observed in the inspected visible content."
+    },
+    {
+      "check": "Native archive and export integrity",
+      "result": "directory-32-adapted-v1.fig is ZIP-readable with4 saved members and no CRC failure. directory-32-native-export.zip has one PNG member and no CRC failure. Its PNG bytes exactly equal directory-32-native-resolution.png, RGBA3020x4880. These are archive integrity checks, not editable restore qualification."
+    },
+    {
+      "check": "Transparent set export",
+      "result": "Native set PNG alpha ranges0..255. Transparent context/background is explicitly retained as a known export limitation; paper-composited crops are review-only derivatives. Required opaque preview/comparison frames remain unbuilt and are not accepted by this review."
+    },
+    {
+      "check": "Scope separation",
+      "result": "Only the later Directory static adaptation/save/export is assessed. Navigation prior receipt is not inherited; original preservation/source-equivalence, copied-descendant reaction admission, wiring, Recovery and36-frame construction are not established by these11 inputs."
+    }
+  ],
+  "findings": [],
+  "actionable_finding_count": 0,
+  "review_derivatives": {
+    "purpose": "Read-only visual inspection; source PNG unchanged. RGBA export composited on #F3F1EA and cropped locally so black ink can be read. Not native preview or design output.",
+    "files": [
+      "review-directory-row-1.png",
+      "review-directory-row-2.png",
+      "review-directory-row-3.png",
+      "review-directory-row-4.png",
+      "header-row1.png",
+      "header-row2.png",
+      "header-row3.png",
+      "header-row4.png"
+    ]
+  },
+  "limits": [
+    "No live browser/Figma action performed by reviewer; saved native evidence only.",
+    "Action logs, census and pixels support static adaptation, not a decoded whole-file descendant/property or immutable mutation audit.",
+    "No inherited-reaction admission, source-set target removal, prototype wiring or324-edge/noop qualification.",
+    "No actual Apply/Close/Escape/background inactivity/scroll/component preserve/reset behavior is proven.",
+    "No radio/dialog HTML semantics, accessibility/AT/profile/WCAG conformance, source equivalence, original preservation or native restore/_EXIT verdict.",
+    "Recovery16,36 preview/comparison frames, all80/fullB01, founder visual acceptance and integrated Phase1 acceptance remain outside scope.",
+    "No application, account, provider, paid feature, MCP/AI, sharing, Git or deployment action authorized or performed by this receipt."
+  ]
+}

@@ -1,0 +1,473 @@
+- application
+- status: Screenreader support for the board is currently disabled. To enable it via Accessibility settings, press Ctrl+K, type Accessibility Settings, and press Enter. To see available keyboard shortcuts, enter Ctrl+Shift+Question mark .
+- status
+- region "Comments on canvas":
+  - button "Create new comment"
+- region "Left sidebar":
+  - toolbar "Navigation Bar":
+    - button "Main menu":
+    - separator
+    - button "File" [expanded]:
+      - generic: File
+    - button "Agents":
+      - generic: Agents
+    - button "Assets":
+      - generic: Assets
+    - button "Tools":
+      - generic: Tools
+    - separator
+    - button "Variables":
+      - generic: Variables
+  - button "Hengshi Design v1 — UI References, file name": Hengshi Design v1 — UI References
+  - generic: File name
+  - button "Edit file menu":
+  - button "Minimize UI":
+  - link "hengshi-design":
+    - /url: https://www.figma.com/files/team/1472694121837770005/project/666072293
+  - button "Free":
+    - generic: Free
+  - heading "Pages Find Add new page" [level=2]:
+    - button "Pages" [expanded]:
+      - generic: Pages
+    - button "Find":
+    - button "Add new page":
+  - grid:
+    - row "Page 1":
+      - gridcell "Page 1":
+        - button "Page 1":
+          - generic: Page 1
+  - slider "Resize handle"
+  - heading "Layers Collapse layers" [level=2]:
+    - button "Layers" [expanded]:
+      - generic: Layers
+    - button "Collapse layers":
+  - treegrid:
+    - row "B01 / Native host-variant qualification / v1" [expanded]:
+      - button:
+      - gridcell:
+      - gridcell "B01 / Native host-variant qualification / v1":
+        - generic: B01 / Native host-variant qualification / v1
+    - row "B01 native qualification / preview / v1" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "B01 native qualification / preview / v1":
+        - generic: B01 native qualification / preview / v1
+    - row "B01 native qualification / host state / v1" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "B01 native qualification / host state / v1":
+        - generic: B01 native qualification / host state / v1
+    - row "HIGH, HIGH, OPEN" [expanded] [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "HIGH, HIGH, OPEN":
+        - generic: HIGH, HIGH, OPEN
+    - row "Context summary / fixed Services and design fixture" [level=3] [selected]:
+      - gridcell:
+      - gridcell "Context summary / fixed Services and design fixture":
+        - generic: Context summary / fixed Services and design fixture
+    - row "Underlying Services fixture (unwired while modal open)" [expanded] [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "Underlying Services fixture (unwired while modal open)":
+        - generic: Underlying Services fixture (unwired while modal open)
+    - row "Book a conversation" [level=4]:
+      - gridcell:
+      - gridcell "Book a conversation":
+        - generic: Book a conversation
+    - row "Directory action" [expanded] [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "Directory action":
+        - generic: Directory action
+    - row "Book a conversation" [level=4]:
+      - gridcell:
+      - gridcell "Book a conversation":
+        - generic: Book a conversation
+    - row "PRIM-001 / Delivery stream control / B01 v1" [expanded] [level=3]:
+      - button:
+      - gridcell:
+      - gridcell "PRIM-001 / Delivery stream control / B01 v1":
+        - generic: PRIM-001 / Delivery stream control / B01 v1
+    - row "Delivery stream — currently Detailed 3D" [level=4]:
+      - gridcell:
+      - gridcell "Delivery stream — currently Detailed 3D":
+        - generic: Delivery stream — currently Detailed 3D
+    - row "Native-radio appearance reference / S-HIGH" [expanded] [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-HIGH":
+        - generic: Native-radio appearance reference / S-HIGH
+    - row "● Detailed 3D" [level=5]:
+      - gridcell:
+      - gridcell "● Detailed 3D":
+        - generic: ● Detailed 3D
+    - row "Native-radio appearance reference / S-MEDIUM" [expanded] [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-MEDIUM":
+        - generic: Native-radio appearance reference / S-MEDIUM
+    - row "○ Balanced 3D" [level=5]:
+      - gridcell:
+      - gridcell "○ Balanced 3D":
+        - generic: ○ Balanced 3D
+    - row "Native-radio appearance reference / S-LOW" [expanded] [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-LOW":
+        - generic: Native-radio appearance reference / S-LOW
+    - row "○ Simplified 3D" [level=5]:
+      - gridcell:
+      - gridcell "○ Simplified 3D":
+        - generic: ○ Simplified 3D
+    - row "Native-radio appearance reference / S-SEMANTIC" [expanded] [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "Native-radio appearance reference / S-SEMANTIC":
+        - generic: Native-radio appearance reference / S-SEMANTIC
+    - row "○ Quick Access" [level=5]:
+      - gridcell:
+      - gridcell "○ Quick Access":
+        - generic: ○ Quick Access
+    - row "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene." [level=4]:
+      - gridcell:
+      - gridcell "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.":
+        - generic: Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.
+    - row "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change." [level=4]:
+      - gridcell:
+      - gridcell "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.":
+        - generic: Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.
+    - row "PRIM-015 / General action button / base" [expanded] [level=4]:
+      - button:
+      - gridcell:
+      - gridcell "PRIM-015 / General action button / base":
+        - generic: PRIM-015 / General action button / base
+    - row "Book a conversation" [level=5]:
+      - gridcell:
+      - gridcell "Book a conversation":
+        - generic: Book a conversation
+    - row "Privacy and storage" [level=4]:
+      - gridcell:
+      - gridcell "Privacy and storage":
+        - generic: Privacy and storage
+    - row "HIGH, HIGH, CLOSED" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "HIGH, HIGH, CLOSED":
+        - generic: HIGH, HIGH, CLOSED
+    - row "MEDIUM, HIGH, CLOSED" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "MEDIUM, HIGH, CLOSED":
+        - generic: MEDIUM, HIGH, CLOSED
+    - row "MEDIUM, HIGH, OPEN" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "MEDIUM, HIGH, OPEN":
+        - generic: MEDIUM, HIGH, OPEN
+    - row "MEDIUM, MEDIUM, OPEN" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "MEDIUM, MEDIUM, OPEN":
+        - generic: MEDIUM, MEDIUM, OPEN
+    - row "MEDIUM, MEDIUM, CLOSED" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "MEDIUM, MEDIUM, CLOSED":
+        - generic: MEDIUM, MEDIUM, CLOSED
+    - row "HIGH, MEDIUM, CLOSED" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "HIGH, MEDIUM, CLOSED":
+        - generic: HIGH, MEDIUM, CLOSED
+    - row "HIGH, MEDIUM, OPEN" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "HIGH, MEDIUM, OPEN":
+        - generic: HIGH, MEDIUM, OPEN
+    - row "B01 / Mode references / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Mode references / v1":
+        - generic: B01 / Mode references / v1
+    - row "B01 / Responsive viewport references / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Responsive viewport references / v1":
+        - generic: B01 / Responsive viewport references / v1
+    - row "B01 / Shared recovery specimens / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Shared recovery specimens / v1":
+        - generic: B01 / Shared recovery specimens / v1
+    - row "PRIM-001 / Capability refusal references / B01 v1":
+      - button:
+      - gridcell:
+      - gridcell "PRIM-001 / Capability refusal references / B01 v1":
+        - generic: PRIM-001 / Capability refusal references / B01 v1
+    - row "B01 / Capability refusal host references / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Capability refusal host references / v1":
+        - generic: B01 / Capability refusal host references / v1
+    - row "B01 / Shared recovery stream references / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Shared recovery stream references / v1":
+        - generic: B01 / Shared recovery stream references / v1
+  - slider "Resize handle"
+- region "Right sidebar":
+  - button "Multiplayer tools":
+  - group "Prototype view":
+    - button "Present":
+    - button "Prototype view":
+  - button "Share"
+  - tablist:
+    - tab "Design" [selected]:
+      - generic: Design
+      - generic: Design
+    - tab "Prototype":
+      - generic: Prototype
+      - generic: Prototype
+  - button "24%, zoom and view options":
+    - text: 24%
+  - heading "Text" [level=1]
+  - checkbox "Multi-edit variants"
+  - generic: Multi-edit variants
+  - button "Select matching layers":
+  - checkbox "Create link"
+  - generic: Create link
+  - button "More actions":
+  - generic: Content
+  - textbox: Trial fixture · Services In force HIGH · query design
+  - button "Apply variable/property":
+  - heading "Position" [level=2]
+  - group "Alignment":
+    - generic: Alignment
+    - button "Align left":
+    - button "Align horizontal centers":
+    - button "Align right":
+    - button "Align top":
+    - button "Align vertical centers":
+    - button "Align bottom":
+  - group "Position":
+    - generic: Position
+    - generic: X
+    - spinbutton "X-position": "24"
+    - generic: "Y"
+    - spinbutton "Y-position": "16"
+    - button "Constraints":
+  - group "Rotation":
+    - generic: Rotation
+    - spinbutton "Rotation": 0°
+    - button "Rotate 90˚ right":
+    - button "Flip horizontal":
+    - button "Flip vertical":
+  - heading "Layout" [level=2]
+  - group "Resizing":
+    - generic: Resizing
+    - radiogroup "Resizing":
+      - generic: Resizing
+      - radio "Auto width"
+      - generic: Auto width
+      - radio "Auto height" [checked]
+      - generic: Auto height
+      - radio "Fixed size"
+      - generic: Fixed size
+  - group "Dimensions":
+    - generic: Dimensions
+    - generic "Width":
+      - generic: W
+      - textbox "Width": "240"
+    - generic "Height":
+      - generic: H
+      - textbox "Height" [disabled]: "48"
+    - checkbox "Lock aspect ratio"
+    - generic: Lock aspect ratio
+  - heading "Appearance" [level=2]
+  - checkbox "Hide"
+  - generic: Hide
+  - button "Apply variable/property":
+  - button "Apply blend mode":
+  - generic: Opacity
+  - textbox: 100%
+  - generic: Corner radius
+  - textbox [disabled]: "0"
+  - heading "Typography" [level=2]
+  - button "B01 reference/body B01 reference/body · 16/24":
+    - img "B01 reference/body"
+    - generic: B01 reference/body
+    - generic: · 16/24
+  - group "Alignment":
+    - generic: Alignment
+    - radiogroup "Horizontal":
+      - generic: Horizontal
+      - radio "Align left" [checked]
+      - generic: Align left
+      - radio "Align center"
+      - generic: Align center
+      - radio "Align right"
+      - generic: Align right
+    - radiogroup "Vertical":
+      - generic: Vertical
+      - radio "Align top" [checked]
+      - generic: Align top
+      - radio "Align middle"
+      - generic: Align middle
+      - radio "Align bottom"
+      - generic: Align bottom
+    - button "Type settings":
+  - heading "Fill" [level=2]
+  - button "Fill, Apply styles and variables":
+  - button "Add fill":
+  - grid:
+    - 'row "Color Variable D035/palette/ink with value #0B0F14 · 100% Toggle visibility Remove"':
+      - 'gridcell "Color Variable D035/palette/ink with value #0B0F14 · 100%"':
+        - 'button "Color Variable D035/palette/ink with value #0B0F14 · 100%"':
+          - generic "D035/palette/ink"
+        - generic: Click to edit color variable
+      - gridcell "Toggle visibility":
+        - checkbox "Toggle visibility" [checked]
+        - generic: Toggle visibility
+      - gridcell "Remove":
+        - button "Remove":
+  - button "Stroke":
+    - heading "Stroke" [level=2]
+  - button "Stroke, Apply styles and variables":
+  - button "Add stroke":
+  - button "Effects":
+    - heading "Effects" [level=2]
+  - button "Effects, Apply styles":
+  - button "Add effect":
+  - button "Export":
+    - generic: Export
+  - button "Add export settings":
+  - slider "Resize handle"
+- region "Application toolbar":
+  - toolbar "Editor":
+    - group "Move":
+      - button "Move" [pressed]:
+      - button "Move tools":
+    - group "Frame":
+      - button "Frame":
+      - button "Region tools":
+    - group "Rectangle":
+      - button "Rectangle":
+      - button "Shape tools":
+    - group "Pen":
+      - button "Pen":
+      - button "Creation tools":
+    - group "Text":
+      - button "Text":
+      - button "Type tools":
+    - button "Comment":
+    - button "Actions":
+    - radiogroup "Toolbelt Mode":
+      - generic: Toolbelt Mode
+      - radio "Draw"
+      - generic: Draw
+      - radio "Design" [checked]
+      - generic: Design
+      - radio "Motion"
+      - generic: Motion
+      - radio "Dev Mode"
+      - generic: Dev Mode
+- region "Help/zoom toolbar":
+  - toolbar "Help/zoom toolbar":
+    - button "Help":
+- dialog "Text styles":
+  - heading "Text styles" [level=2]
+  - button "Team library":
+  - button "Create style":
+  - searchbox "Search"
+  - grid:
+    - row "B01 reference":
+      - columnheader "B01 reference"
+    - row "body · 16/24 Edit style" [selected]:
+      - rowheader "body · 16/24":
+        - generic: body
+        - generic: · 16/24
+      - gridcell "Edit style":
+        - button "Edit style" [expanded]:
+    - row "heading · 32/40 Edit style":
+      - rowheader "heading · 32/40":
+        - generic: heading
+        - generic: · 32/40
+      - gridcell "Edit style":
+        - button "Edit style":
+    - row "meta · 12/18 Edit style":
+      - rowheader "meta · 12/18":
+        - generic: meta
+        - generic: · 12/18
+      - gridcell "Edit style":
+        - button "Edit style":
+    - button "Material 3 Design Kit":
+      - generic: Material 3 Design Kit
+    - row "M3/display":
+      - columnheader "M3/display"
+    - row "large · 57/64 Edit style":
+      - rowheader "large · 57/64":
+        - generic: large
+        - generic: · 57/64
+      - gridcell "Edit style":
+        - button "Edit style":
+    - row "large-emphasized · 57/64 Edit style":
+      - rowheader "large-emphasized · 57/64":
+        - generic: large-emphasized
+        - generic: · 57/64
+      - gridcell "Edit style":
+        - button "Edit style":
+    - row "medium · 45/52 Edit style":
+      - rowheader "medium · 45/52":
+        - generic: medium
+        - generic: · 45/52
+      - gridcell "Edit style":
+        - button "Edit style":
+    - row "medium-emphasized · 45/52 Edit style":
+      - rowheader "medium-emphasized · 45/52":
+        - generic: medium-emphasized
+        - generic: · 45/52
+      - gridcell "Edit style":
+        - button "Edit style":
+    - row "small · 36/44 Edit style":
+      - rowheader "small · 36/44":
+        - generic: small
+        - generic: · 36/44
+      - gridcell "Edit style":
+        - button "Edit style":
+    - row "small-emphasized · 36/44 Edit style":
+      - rowheader "small-emphasized · 36/44":
+        - generic: small-emphasized
+        - generic: · 36/44
+      - gridcell "Edit style":
+        - button "Edit style":
+  - button "Close":
+- dialog "Edit text style":
+  - heading "Edit text style" [level=2]
+  - button "Delete style":
+  - generic: Name
+  - textbox "Name" [active]:
+    - /placeholder: New text style
+    - text: body
+  - generic: Description
+  - textbox "Description":
+    - /placeholder: What's it for?
+    - text: Founder-selected Figma-only fallback. No website font or redistributed font asset.
+  - heading "Properties" [level=2]
+  - combobox "Font family":
+    - generic: Inter
+  - generic: Font style
+  - combobox "Font style":
+    - generic: Regular
+  - 'listbox "Font size: 16 px"'
+  - generic "Font size":
+    - 'combobox "Font size: 16 px"': "16"
+  - generic: Line height
+  - textbox "Line height": "24"
+  - generic: Letter spacing
+  - textbox "Letter spacing": 0%
+  - button "Type details":
+  - button "Close":
+- status
+- alert
+- alert

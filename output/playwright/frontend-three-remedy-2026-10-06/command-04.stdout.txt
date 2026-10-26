@@ -1,0 +1,14 @@
+### Result
+{
+  "title": "Hengshi tooling fixture — v1",
+  "charset": "UTF-8",
+  "canvas": 1,
+  "text": "Isolated frontend tooling fixture\n\nCompatibility evidence only. This is not the Hengshi website or campus.\n\nCount 0Store increment\n\nStore value: 0\n\nRun fixture animation\n\nAnimation: Not requested\n\nOpen fixture notes | Fixture home\n\nFixture home route\n\nUnmount scene\n\nRenderer: WebGL2 renderer created",
+  "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.0.0 Safari/537.36"
+}
+### Ran Playwright code
+```js
+await page.evaluate('() => ({title:document.title,charset:document.characterSet,canvas:document.querySelectorAll("canvas").length,text:document.body.innerText,ua:navigator.userAgent})');
+```
+### Events
+- New console entries: console-2026-10-06T00-02-58-892Z.log#L1

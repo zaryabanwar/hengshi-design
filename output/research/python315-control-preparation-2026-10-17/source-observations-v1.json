@@ -1,0 +1,61 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "observed_at_utc": "2026-10-17T15:04:33.135825+00:00",
+  "context7_library": "/websites/pip_pypa_io_en_stable",
+  "context7_scope": "configuration, alternate interpreter, dry-run report and hash-checked offline install",
+  "official_docs": [
+    {
+      "url": "https://pip.pypa.io/en/stable/topics/configuration/",
+      "observation": "PIP_CONFIG_FILE=os.devnull disables all config files. --isolated otherwise ignores user config/environment; not every configuration level."
+    },
+    {
+      "url": "https://pip.pypa.io/en/stable/topics/python-option/",
+      "observation": "The documented --python pattern can manage a different interpreter/venv without its own pip."
+    },
+    {
+      "url": "https://pip.pypa.io/en/stable/cli/pip_install/",
+      "observation": "dry-run/ignore-installed/report supports candidate resolution, not installation or complete graph qualification."
+    },
+    {
+      "url": "https://docs.python.org/3.14/library/shutil.html#shutil.disk_usage",
+      "observation": "Host disk free observation is a snapshot; no reserved space or hard quota follows."
+    }
+  ],
+  "upstream_pip_source": [
+    {
+      "url": "https://raw.githubusercontent.com/pypa/pip/26.2.1/src/pip/_internal/configuration.py",
+      "path": "output/research/python315-control-preparation-2026-10-17/captures/configuration.py",
+      "bytes": 14562,
+      "sha256": "d1e11d875c5394e1e1a02ad3b701d83390c48fb05b4e684868268d363decac13",
+      "observation": "source only; not imported or executed"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/pypa/pip/26.2.1/src/pip/_internal/cli/cmdoptions.py",
+      "path": "output/research/python315-control-preparation-2026-10-17/captures/cmdoptions.py",
+      "bytes": 41180,
+      "sha256": "681371688cb8615e007e302aac6f11a1915cbfb9305b3440ce0e669d998e183c",
+      "observation": "source only; not imported or executed"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/pypa/pip/26.2.1/LICENSE.txt",
+      "path": "output/research/python315-control-preparation-2026-10-17/captures/pip-LICENSE.txt",
+      "bytes": 1093,
+      "sha256": "634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104",
+      "observation": "Licence accompanying saved upstream source evidence; not package/build provenance or legal clearance"
+    }
+  ],
+  "installed_observation": {
+    "interpreter": "C:\\Python314\\python.exe",
+    "python": "3.14.5",
+    "pip": "26.1.1",
+    "iter_config_files": "    def iter_config_files(self) -> Iterable[tuple[Kind, list[str]]]:\n        \"\"\"Yields variant and configuration files associated with it.\n\n        This should be treated like items of a dictionary. The order\n        here doesn't affect what gets overridden. That is controlled\n        by OVERRIDE_ORDER. However this does control the order they are\n        displayed to the user. It's probably most ergonomic to display\n        things in the same order as OVERRIDE_ORDER\n        \"\"\"\n        # SMELL: Move the conditions out of this function\n\n        env_config_file = os.environ.get(\"PIP_CONFIG_FILE\", None)\n        config_files = get_configuration_files()\n\n        yield kinds.GLOBAL, config_files[kinds.GLOBAL]\n\n        # per-user config is not loaded when env_config_file exists\n        should_load_user_config = not self.isolated and not (\n            env_config_file and os.path.exists(env_config_file)\n        )\n        if should_load_user_config:\n            # The legacy config file is overridden by the new config file\n            yield kinds.USER, config_files[kinds.USER]\n\n        # virtualenv config\n        yield kinds.SITE, config_files[kinds.SITE]\n\n        if env_config_file is not None:\n            yield kinds.ENV, [env_config_file]\n        else:\n            yield kinds.ENV, []\n",
+    "load": "    def load(self) -> None:\n        \"\"\"Loads configuration from configuration files and environment\"\"\"\n        self._load_config_files()\n        if not self.isolated:\n            self._load_environment_vars()\n",
+    "load_config_files": "    def _load_config_files(self) -> None:\n        \"\"\"Loads configuration from configuration files\"\"\"\n        config_files = dict(self.iter_config_files())\n        if config_files[kinds.ENV][0:1] == [os.devnull]:\n            logger.debug(\n                \"Skipping loading configuration files due to \"\n                \"environment's PIP_CONFIG_FILE being os.devnull\"\n            )\n            return\n\n        for variant, files in config_files.items():\n            for fname in files:\n                # If there's specific variant set in `load_only`, load only\n                # that variant, not the others.\n                if self.load_only is not None and variant != self.load_only:\n                    logger.debug(\"Skipping file '%s' (variant: %s)\", fname, variant)\n                    continue\n\n                parser = self._load_file(variant, fname)\n\n                # Keeping track of the parsers used\n                self._parsers[variant].append((fname, parser))\n"
+  },
+  "limits": [
+    "Do not equate existing pip26.1.1 or upstream tag source with the unacquired runtime-bundled pip26.2.1 bytes.",
+    "No machine/user config file or environment values were read or copied for this source observation.",
+    "No new package graph, runtime acquisition, install, provider/account/global configuration or production selection."
+  ]
+}

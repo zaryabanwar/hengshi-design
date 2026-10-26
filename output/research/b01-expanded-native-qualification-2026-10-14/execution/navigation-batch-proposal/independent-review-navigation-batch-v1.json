@@ -1,0 +1,149 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-15",
+  "reviewer": "/root/review_directory_adaptation_v1",
+  "review_complete": true,
+  "independent": true,
+  "verdict": "REQUEST_CHANGES",
+  "scope": "Local unexecuted Navigation-only MCP method-exception proposal and synthetic transaction evidence; no provider call, external-write release or native behavior verdict.",
+  "packet": {
+    "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/review-inputs-v1.json",
+    "sha256": "557b1de9285b671b1b43c72dc83b07d5212c085e333e5813b6830dd17f822e45",
+    "input_count": 13,
+    "all_actual_bytes_and_sha256_verified": true,
+    "binding_errors": [],
+    "inputs": [
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/proposal-v1.json",
+        "bytes": 2396,
+        "sha256": "1ec5bd55e509040f455151a239f62474e26045e9e981bd0dd135e657ba63d3d0"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/expected-scope-v1.json",
+        "bytes": 36643,
+        "sha256": "dc9681052a871739a85f0fe932a1b0c59f4f328995d420d3d4bd8175f39a80ba"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/batch-body-v1.js",
+        "bytes": 10815,
+        "sha256": "ad2162efcf23ab47fe7c37ff960f88f6d24f1098110421aa456ac0ce5178a38d"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/navigation-reaction-batch-v1.js",
+        "bytes": 38255,
+        "sha256": "d7984eca1c0db96af90fe8be195b3faf61ad86197065e08851c0cbb61660dcea"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/offline-transaction-harness-v1.cjs",
+        "bytes": 7532,
+        "sha256": "2a4c9a8fc908bac4ea2d656d499ae96da5750020681e597a384be670776af953"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/offline-transaction-results-v1.json",
+        "bytes": 1287,
+        "sha256": "ea1fc3f0d4ac5bd7debec2c26076f3a3a3a241b4d69f9099a28f0f3a1124eb61"
+      },
+      {
+        "path": "AGENTS.md",
+        "bytes": 7686,
+        "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+      },
+      {
+        "path": ".specify/memory/constitution.md",
+        "bytes": 16234,
+        "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+      },
+      {
+        "path": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+        "bytes": 84039,
+        "sha256": "9c04e29a083008a9445535a74de13017516f73dcdccce2965e5446119e233c30"
+      },
+      {
+        "path": "docs/phase-1-ui-reference-production/validation/mcp-call-ledger.csv",
+        "bytes": 24447,
+        "sha256": "687beb7fe73028c07213575d3cf8ac8030dd1e67d884d17a164649743b622c64"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/qualification-plan-v1.json",
+        "bytes": 235601,
+        "sha256": "5e24ac8c203bf729b5190d359da2439c1b1f88f59665b1c65163b4b9002ab2ce"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-32-native-census-v1.json",
+        "bytes": 4634,
+        "sha256": "106296fa9f0ec3b07f50fb90be40d57b10995055a60b2d24a18d9b9d6d0bb669"
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/native-edge-bindings-20261015-v1.json",
+        "bytes": 912,
+        "sha256": "805c4cf968bb2d227f0cdbe6f2c2c3337be8b1211273d94f5095f7ed7f5708e5"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "id": "NBR-01",
+      "priority": "P1",
+      "title": "Rollback equivalence discards concurrent optional Action edits",
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/batch-body-v1.js",
+      "lines": [
+        14,
+        17,
+        142,
+        145
+      ],
+      "cause": "canonicalReaction retains only type/destinationId/navigation/transition. Official NODE actions also permit preserveScrollPosition, overlayRelativePosition, resetVideoPosition, resetScrollPosition and resetInteractiveComponents. Equivalent therefore ignores meaningful extra flags both at postcondition and before rollback.",
+      "reproduction": "Using the supplied fixture in memory only, select the ninth planned mutation. Wrap its setter to apply the requested reaction, add resetInteractiveComponents=true to that actual action to represent a concurrent edit, then throw a synthetic interruption. The proposal returns ROLLED_BACK with unresolved=[] and finalReaction=[]: the added flag/reaction was erased. No Figma call or saved source change occurred.",
+      "impact": "Violates the stated concurrency safeguard: a reaction with a concurrent legal Action-property change can be treated as the script-owned write and replaced by before=[]. It also permits extra same-core action flags to pass final scope checks.",
+      "requested_change": "Compare the complete semantically relevant Reaction/Action/Trigger contract, explicitly handling only documented readback aliases/defaults. Do not discard optional Action settings. Rollback must refuse a current value differing from the exact admitted script-owned result; preserve that edit and report its ID unresolved. Add a focused synthetic optional-property concurrency case."
+    },
+    {
+      "id": "NBR-02",
+      "priority": "P1",
+      "title": "Failure return can exceed the provider 20 KB output bound",
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/batch-body-v1.js",
+      "lines": [
+        113,
+        121,
+        137,
+        149
+      ],
+      "cause": "The 18000-byte admission checks the success report only. Catch appends up to106 per-node error strings truncated by160 JavaScript characters plus a500-character top-level error, then returns without a UTF-8 byte bound.",
+      "reproduction": "Using the supplied fixture in memory only, allow all106 new reaction assignments, throw on the106th after assignment, then make each rollback setter reject with a180-character CJK error. The actual returned report is ROLLBACK_INCOMPLETE with106 unresolved IDs and54428 UTF-8 bytes. All provided sources and saved7-case result remain unchanged.",
+      "impact": "A partial-write/rollback failure can lose the diagnostic response at the exact recovery point where the full set of affected and unresolved IDs is essential. The proposal cannot currently claim every output remains below20KB.",
+      "requested_change": "Bound the final UTF-8 serialization on every path. Preserve all affected/unresolved IDs with compact stable error codes and a globally bounded error summary rather than unconstrained per-ID text. Test maximum106-node rollback failure including non-ASCII errors and assert the final emitted payload stays below the safe limit."
+    }
+  ],
+  "actionable_finding_count": 2,
+  "verified_assessments": {
+    "source_generation": "Generated navigation-reaction-batch-v1.js EXPECTED JSON exactly equals expected-scope-v1.json; its remaining body bytes exactly equal batch-body-v1.js.",
+    "census_and_graph": "All32 root IDs/tuples equal the native census after normalizing the known layers-panel suffix. All108 expected edges exactly equal the approved recipe Navigation CHANGE_TO subset. A separate Cartesian transition derivation also produces exactly108:48 pending choices,12 changed Apply,32 Open/Close and16 Escape. Existing two control/target IDs agree with native-edge-bindings; 106 additions are the intended delta.",
+    "preflight": "Checks file/editor/Page1, owned section/set/32 actual roots, tuple and320x1150/22-node anatomy, expected visible and effective Labels, D057 copy, body disclosure, independent glyph targets and all copied-set descendant reactions. Unexpected reactions including hidden descendants abort before setters. Role lookup is owner-local and target-local; no new nodes or content setters are in the source. These are proposed guards, not current live admission.",
+    "transaction": "Per-control raw before-value/ownership guard and visual/protected snapshots are present; attempted writes are recorded before awaited setters and reverse rollback is attempted. Two defects above prevent accepting the rollback/output guarantees. Complete page visual snapshots cover only enumerated fields and do not constitute whole-file/source-equivalence evidence.",
+    "provided_harness": "All7 original synthetic cases rerun successfully using an in-memory filesystem-write stub so the saved result is not overwritten. Complete scoped graph gives106 writes/108 edges and11996-byte report; four denial cases give zero writes; interrupted setter restores; a BACK-action concurrent conflict remains unresolved. This does not cover the two independently reproduced cases above.",
+    "native_behavior": "No browser, native Figma presentation or actual Plugin API call performed; no behavior, context retention, accessibility, source preservation or restore verdict."
+  },
+  "official_contract_check": {
+    "checked": "2026-10-15 through public official documentation only, no authenticated Figma tool call",
+    "sources": [
+      "https://developers.figma.com/docs/plugins/api/Action/",
+      "https://developers.figma.com/docs/plugins/api/Reaction/",
+      "https://developers.figma.com/docs/plugins/api/Trigger/",
+      "https://developers.figma.com/docs/plugins/api/properties/nodes-reactions/"
+    ],
+    "assessment": "Official docs support actions[] with trigger, NODE CHANGE_TO with transition:null, KEYBOARD ON_KEY_DOWN with numeric keyCodes, and async setReactionsAsync. They document the optional NODE Action properties omitted by canonicalReaction. KeyCode27 is conventional Escape encoding; no live native acceptance/behavior was established. No separate bundled typings file is present among these13 packet inputs, so a separately pinned bundled-typings verification is not claimed."
+  },
+  "method_and_provider_holds": [
+    "D094 remains explicitly native-only with zero MCP calls. This review does not grant a method exception, per-call CB06/CB07 permission, allowance exception, paid activation or retry.",
+    "Ledger last attempt36/conservatively metered33 is a provider-reported Starter-plan MCP cap; current balance/reset/auth/capacity remains unknown. Do not invoke the known-capped route or spend a checking/retry call on unchanged evidence.",
+    "Only after concrete proposal repairs/review and independently available provider-capacity evidence could a future founder method/call/count decision be considered. Native-editor work remains within its existing authorization.",
+    "A normal native editable PRE immediately before any separately authorized execution is still required; ZIP/save integrity alone does not prove restore."
+  ],
+  "limits": [
+    "No Figma, browser, account, provider, paid, MCP/AI, sharing, application, Git or deployment action performed.",
+    "Receipt is the only review artifact written for this proposal. All13 source bindings rechecked immediately before saving.",
+    "No Directory/Recovery, boundary/reset wiring, all80, fullB01, founder visual acceptance or integrated Phase1 approval.",
+    "Findings concern the unexecuted local proposal; they do not allege current Figma data corruption."
+  ]
+}

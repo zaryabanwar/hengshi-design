@@ -1,0 +1,19 @@
+{
+  "result": "REVISE",
+  "reviewer": "/root/review_directory_references_v1",
+  "manifest_sha256": "6d0a3740277e0af7cd96e40f59492922e8eda5e9b052e558cb4e20c7f4cfc40a",
+  "findings": [
+    {
+      "id": "BS01",
+      "reason": "Fresh prepare-reschedule must require current CONFIRMED_QUALIFIED with no unresolved create/change/cancel and must reconcile matching operations first."
+    },
+    {
+      "id": "BS02",
+      "reason": "Cancellation requires verified external version-bound or approved exclusive-write conflict protection before effect; post-effect correlation cannot prevent wrong cancellation."
+    }
+  ],
+  "initial_final_matching_pairs": 23,
+  "catalogue_outside_insertion_byte_identical": true,
+  "scope": "Logical discovery scheduling lifecycle only for existing IF-BOOK-05/06/08/09, two canonical documents; no exact wire or runtime acceptance",
+  "runtime_tests": "None"
+}

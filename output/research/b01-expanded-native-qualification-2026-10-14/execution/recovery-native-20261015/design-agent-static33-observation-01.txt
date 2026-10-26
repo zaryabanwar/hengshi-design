@@ -1,0 +1,314 @@
+- application "Figma Design, 5 items selected"
+- status: Screenreader support for the board is currently disabled. To enable it via Accessibility settings, press Ctrl+K, type Accessibility Settings, and press Enter. To see available keyboard shortcuts, enter Ctrl+Shift+Question mark .
+- status: Agent task finished.
+- region:
+  - button "Agents":
+- region "Comments on canvas":
+  - button "Create new comment"
+- region "Left sidebar":
+  - toolbar "Navigation Bar":
+    - button "Main menu":
+    - separator
+    - button "File":
+      - generic: File
+    - button "Agents" [expanded]:
+      - generic: Agents
+    - button "Assets":
+      - generic: Assets
+    - button "Tools":
+      - generic: Tools
+    - separator
+    - button "Variables":
+      - generic: Variables
+  - button "All chats":
+  - heading "Complete Recovery Component" [level=2]: Create 33 Review Frames
+  - generic: Shared
+  - link "AI, Learn more":
+    - /url: https://help.figma.com/hc/articles/24039793359767
+    - generic: AI
+  - button "New chat":
+  - button "More options":
+  - button "Skip to prompt box":
+    - generic: Skip to prompt box
+  - generic "Chat messages":
+    - region "Prompt from Zaryab Anwar":
+      - generic "Instance called Active=SEMANTIC, Pending=LOW, Disclosure=NOT_APPLICABLE is selected and can be prompted to make changes":
+        - 'button "Go to selection on canvas: Active=SEMANTIC, Pending=LOW, Disclosure=NOT_APPLICABLE"':
+          - generic: Active=SEMANTIC, Pending=LOW, Disclosure=NOT_APPLICABLE
+      - paragraph: "Hengshi Design v1: create33 STATIC native review viewport frames in private Design file GOmLP6Cv96l768ueSrZ5Dg, Page1(0:1), within SECTION144:3197 \"B01 / Four-stream three-host qualification / v1\". Already-approved trial construction. No prototype wiring/flows, code layer/Make, plugin, new page/file, deletion, detach, paid feature, sharing or shared-master edits. Read-only verify: NAVIGATION ComponentSet144:3287 has32 variants; DIRECTORY147:3869 has32; RECOVERY172:3740 has16. Active/Pending values HIGH,MEDIUM,LOW,SEMANTIC. Nav/Directory Disclosure OPEN/CLOSED; Recovery NOT_APPLICABLE. STOP on drift. Preserve existing nodes/styles/variables, especially frames152:3383(Preview),152:3393(PRESERVE),152:3402(RESET), their instances and Navigation's7 reactions. Do not change source-set contents/reactions. 12 family/active groups=3families x4active. NAVIGATION/HIGH already has3 frames: skip it. For each other11 groups create3 FRAMEs, exactly33 new frames total, names: ENQ_{FAMILY}_{ACTIVE} / Preview ENQ_{FAMILY}_{ACTIVE} / PRESERVE probe ENQ_{FAMILY}_{ACTIVE} / RESET probe FAMILY=NAVIGATION,DIRECTORY,RECOVERY. Each320x560, clip content=true, opaque fill bound to existing D035/palette/paper. Each exactly ONE direct-child INSTANCE named \"ENQ host {FAMILY} {ACTIVE}\" at0,0. Use that family's existing MAIN variant Active=Pending={ACTIVE}, Disclosure=CLOSED for NAVIGATION/DIRECTORY, NOT_APPLICABLE for RECOVERY. Never invent a new main component. Retain source content1150px height; no instance resize/scaling. All3 frames per group must match instance name/parent topology/default. Preserve inherited bindings/reactions. Static only: do NOT claim scroll, matching-highlight/reset or behavior qualification. Place new groups INSIDE Section at x11000/11360/11720 for Preview/PRESERVE/RESET, y=1210+640*i, i0..10. Group order: NAVIGATION MEDIUM,LOW,SEMANTIC; DIRECTORY HIGH,MEDIUM,LOW,SEMANTIC; RECOVERY HIGH,MEDIUM,LOW,SEMANTIC. Verify area clear; stop on overlap rather than moving"
+      - button "Copy message":
+        - generic: Copy
+    - button "Worked for 1m 37s, show agent work details":
+      - generic: Worked for 1m 37s
+    - paragraph: I’ll verify the source variants and placement area first, then create the 33 static review frames only if those checks pass.
+    - generic: Verify approved sources and clear placement area
+    - paragraph: The source counts and variant values match, Navigation still has 7 reactions, and the requested placement area is clear. I’ll create the 33 frames with unscaled 1150px host instances and leave the existing NAVIGATION/HIGH trio untouched.
+    - generic: Create 33 static native review viewports
+    - paragraph:
+      - text: I created exactly
+      - strong: 33 static native review frames
+      - text: inside
+      - button "B01 / Four-stream three-host qualification / v1":
+        - generic: B01 / Four-stream three-host qualification / v1
+      - text: at the requested coordinates.
+    - list:
+      - text: Each is
+      - strong: 320×560
+      - text: ", clipped, with an opaque"
+      - code: D035/palette/paper
+      - text: "-bound fill."
+      - text: Each contains one correctly named, unscaled
+      - strong: 320×1150
+      - text: instance of the specified existing variant.
+      - text: Source variant counts remain
+      - strong: 32 / 32 / 16
+      - text: ; protected content and Navigation’s
+      - strong: 7 reactions
+      - text: are unchanged.
+      - listitem: The existing NAVIGATION/HIGH trio was skipped.
+    - paragraph: No prototype wiring was added. These are static review artifacts—not scroll, highlight/reset, or behavior qualification.
+    - button "Give thumbs up":
+    - button "Give thumbs down":
+    - button "Undo":
+    - button "View AI credit usage":
+    - button "Copy debug details":
+  - button "Skip to chat":
+    - generic: Skip to chat
+  - group "Instance called Active=SEMANTIC, Pending=LOW, Disclosure=NOT_APPLICABLE is selected and can be prompted to make changes":
+    - 'button "Go to selection on canvas: Active=SEMANTIC, Pending=LOW, Disclosure=NOT_APPLICABLE"':
+      - generic: Active=SEMANTIC, Pending=LOW, Disclosure=NOT_APPLICABLE
+    - button "Remove layer selection from the prompt box":
+  - generic: The button action for this text area changes between Send and Stop as the agent works.
+  - textbox "Prompt for AI agent" [active]:
+    - paragraph
+  - generic: Ask for changes
+  - status
+  - button "Add context":
+  - button "Libraries":
+  - button "Dictate":
+  - button "Send" [disabled]:
+  - region:
+    - searchbox
+    - generic: Results will update as you type
+    - button:
+    - button:
+    - heading [level=3]: Today
+    - button:
+      - generic: Create 33 Review Frames
+      - generic: 1m
+      - generic: "Hengshi Design v1: create33 STATIC native review viewport frames in private Design file GOmLP6Cv96l7..."
+    - button:
+    - button:
+      - generic: Complete Recovery Component
+      - generic: 14m
+      - generic: "Understood: do NOT build a prototype and do NOT add any interactions. Perform only the native editab..."
+    - button:
+    - heading [level=3]: This week
+    - button:
+      - generic: Inspect selected frame details
+      - generic: 3d
+      - generic: Read-only B01 prototype-source inventory, this private file GOmLP6Cv96l768ueSrZ5Dg / Page1 (0:1) onl...
+    - button:
+  - slider "Resize handle"
+- region "Right sidebar":
+  - button "Multiplayer tools":
+  - button "Agents, 1 agent":
+  - group "Prototype view":
+    - button "Present":
+    - button "Prototype view":
+  - button "Share"
+  - tablist:
+    - tab "Design" [selected]:
+      - generic: Design
+      - generic: Design
+    - tab "Prototype":
+      - generic: Prototype
+      - generic: Prototype
+  - button "51%, zoom and view options":
+    - text: 11%
+  - textbox: B01 qualification / RECOVERY / v1
+  - heading [level=1]: B01 qualification / RECOVERY / v1
+  - checkbox "Multi-edit variants"
+  - generic: Multi-edit variants
+  - button "Select matching layers":
+  - button "Component configuration":
+  - button "More actions":
+  - generic: Current variant
+  - button "Select component":
+  - grid:
+    - row "Edit property name for Active HIGH":
+      - gridcell "Edit property name for Active":
+        - button "Edit property name for Active":
+          - generic: Active
+      - gridcell "HIGH":
+        - listbox "Edit property value for Active"
+        - combobox "Edit property value for Active": SEMANTIC
+        - option [selected]:
+          - generic: HIGH
+        - option [selected]:
+          - generic: MEDIUM
+        - option [selected]:
+          - generic: LOW
+        - option [selected]:
+          - generic: SEMANTIC
+        - option [selected]:
+          - generic: Add new…
+    - row "Edit property name for Pending SEMANTIC":
+      - gridcell "Edit property name for Pending":
+        - button "Edit property name for Pending":
+          - generic: Pending
+      - gridcell "SEMANTIC":
+        - listbox "Edit property value for Pending"
+        - combobox "Edit property value for Pending": LOW
+        - option [selected]:
+          - generic: HIGH
+        - option [selected]:
+          - generic: MEDIUM
+        - option [selected]:
+          - generic: LOW
+        - option [selected]:
+          - generic: SEMANTIC
+        - option [selected]:
+          - generic: Add new…
+    - row "Edit property name for Disclosure NOT_APPLICABLE":
+      - gridcell "Edit property name for Disclosure":
+        - button "Edit property name for Disclosure":
+          - generic: Disclosure
+      - gridcell "NOT_APPLICABLE":
+        - listbox "Edit property value for Disclosure"
+        - combobox "Edit property value for Disclosure": NOT_APPLICABLE
+        - option [selected]:
+          - generic: NOT_APPLICABLE
+        - option [selected]:
+          - generic: Add new…
+  - heading "Position" [level=2]
+  - group "Alignment":
+    - generic: Alignment
+    - button "Align left":
+    - button "Align horizontal centers":
+    - button "Align right":
+    - button "Align top":
+    - button "Align vertical centers":
+    - button "Align bottom":
+    - button "More actions":
+  - group "Position":
+    - generic: Position
+    - generic: X
+    - spinbutton "X-position": "824"
+    - generic: "Y"
+    - spinbutton "Y-position": "3714"
+    - button "Constraints":
+  - group "Rotation":
+    - generic: Rotation
+    - spinbutton "Rotation": 0°
+    - button "Rotate 90˚ right":
+    - button "Flip horizontal":
+    - button "Flip vertical":
+  - heading "Layout" [level=2]
+  - button "Resize to fit":
+  - checkbox "Toggle auto layout"
+  - generic: Toggle auto layout
+  - group "Flow":
+    - generic: Flow
+    - radiogroup "Layout":
+      - generic: Layout
+      - radio "Freeform" [checked]
+      - generic: Freeform
+      - radio "Vertical"
+      - generic: Vertical
+      - radio "Horizontal"
+      - generic: Horizontal
+      - radio "Grid"
+      - generic: Grid
+  - group "Dimensions":
+    - generic: Dimensions
+    - generic "Width":
+      - generic: W
+      - textbox "Width": "320"
+    - generic "Height":
+      - generic: H
+      - textbox "Height": "1150"
+    - checkbox "Lock aspect ratio"
+    - generic: Lock aspect ratio
+  - checkbox "Clip content"
+  - generic: Clip content
+  - heading "Appearance" [level=2]
+  - checkbox "Hide"
+  - generic: Hide
+  - button "Apply blend mode":
+  - generic: Opacity
+  - textbox: 100%
+  - generic: Corner radius
+  - textbox: "0"
+  - button "Individual corners":
+  - heading "Fill" [level=2]
+  - button "Fill, Apply styles and variables":
+  - button "Add fill":
+  - grid:
+    - 'row "Solid color hex: FFFFFF Color FFFFFF 100 % Toggle visibility Remove"':
+      - 'gridcell "Solid color hex: FFFFFF Color FFFFFF 100 %"':
+        - 'button "Solid color hex: FFFFFF"'
+        - generic: Color
+        - generic: Autofill available. Type to see suggestions.
+        - combobox "Color": FFFFFF
+        - textbox "%": "100"
+        - generic: "%"
+      - gridcell "Toggle visibility":
+        - checkbox "Toggle visibility"
+        - generic: Toggle visibility
+      - gridcell "Remove":
+        - button "Remove":
+  - button "Stroke":
+    - heading "Stroke" [level=2]
+  - button "Stroke, Apply styles and variables":
+  - button "Add stroke":
+  - button "Effects":
+    - heading "Effects" [level=2]
+  - button "Effects, Apply styles":
+  - button "Add effect":
+  - button "Selection colors +1":
+    - heading "Selection colors" [level=2]
+    - generic: "+1"
+  - button "Layout guide":
+    - heading "Layout guide" [level=2]
+  - button "Layout guide, Apply styles":
+  - button "Add layout guide":
+  - button "Export":
+    - generic: Export
+  - button "Add export settings":
+  - slider "Resize handle"
+- region "Application toolbar":
+  - toolbar "Editor":
+    - group "Move":
+      - button "Move" [pressed]:
+      - button "Move tools":
+    - group "Frame":
+      - button "Frame":
+      - button "Region tools":
+    - group "Rectangle":
+      - button "Rectangle":
+      - button "Shape tools":
+    - group "Pen":
+      - button "Pen":
+      - button "Creation tools":
+    - group "Text":
+      - button "Text":
+      - button "Type tools":
+    - button "Comment":
+    - button "Actions":
+    - radiogroup "Toolbelt Mode":
+      - generic: Toolbelt Mode
+      - radio "Draw"
+      - generic: Draw
+      - radio "Design" [checked]
+      - generic: Design
+      - radio "Motion"
+      - generic: Motion
+      - radio "Dev Mode"
+      - generic: Dev Mode
+- region "Help/zoom toolbar":
+  - toolbar "Help/zoom toolbar":
+    - button "Help":
+- status
+- alert
+- alert

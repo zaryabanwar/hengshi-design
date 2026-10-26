@@ -1,13 +1,19 @@
 # Hengshi Design — Detailed Decisions Log
 
-**Status:** Active authority bridge; Phase 0 accepted and Phase 1 in progress
+**Status:** D-097 incremental delivery; prior accepted baselines preserved
 **Classification:** Business confidential
-**Last reconciled:** 2026-09-05
+**Last reconciled:** 2026-10-25
 
 This is the detailed decision record required by `docs/PROJECT_RULES.md`. The
 required root operational starting index is [`../DECISIONS.md`](../DECISIONS.md).
 Older v3 documents, the AWS placeholder, and draft Spec Kit artifacts are evidence
-only when they conflict with an approved decision below.
+only when they conflict with current approved decisions.
+
+[D-097](../DECISIONS.md#d-097--incremental-ai-delivery-progress-based-corrections-and-session-handoffs)
+is the controlling 2026-10-25 amendment: brand/shared foundations, complete 2D
+platform, full 3D World, then launch; no universal Phase1 build gate or hard
+revision cap. Existing entries retain their historical wording. This pointer
+supersedes their sequencing/correction restrictions without duplicating the decision.
 
 | ID | Date | Status | Approved decision | Durable effect |
 |---|---|---|---|---|
@@ -1112,3 +1118,142 @@ Correcting them would have cost a fifth FAIL round.
 R-035 open. MA-029 undischarged. R-034 not closed. B01 held. Zero Figma allowance
 consumed. Nothing staged or committed.
 
+## 2026-10-04 — First-production v1 founder reconciliation
+
+Current authority is [D-068–D-070](../DECISIONS.md), which records the founder's
+latest text instructions. This dated amendment supersedes affected earlier
+provider/naming assumptions; historical review statements above remain provenance.
+
+- D-068: defer deployment and cost planning; Azure/AWS are candidates, with lowest
+  feasible cost/free-service preference. Keep Outlook/Teams; Microsoft 365 setup
+  is not a prerequisite. Exact automated API/account entitlements still need proof.
+- D-069: latest mutually compatible stable complete graph across all project
+  technologies/tools. Independently latest registry observations are unselected.
+  Current product/definition is v1; accurate technical/evidence identifiers remain.
+- D-070: supplied Pakistan company facts/registration/address are editable reviewed
+  staff content. Founder will create separate privacy/security aliases; general
+  contact stays info@. Europe is first target market, not an inferred office/region.
+
+These instructions authorize scoped definition/governance reconciliation. They
+do not accept the entire package, activate aliases/providers, erase protected
+evidence, change credentials, commit/push or deploy.
+
+## 2026-10-04 — D-071 campus layout basis accepted
+
+The founder selected **“Accept this composition as the layout basis.”**
+[D-071](../DECISIONS.md#d-071--accept-the-final-third-campus-composition-as-the-layout-basis)
+identifies the final-third study's generator, editable master, export and bounded
+independent review. Carry its central reception, five-wing arrangement and
+connected landscape forward; unfinished materials and foliage do not reopen
+the accepted composition.
+
+This accepts the layout basis, not final appearance, dimensions, collision or
+structural/accessibility safety, production budgets, rights/compatibility, runtime
+features or the complete Phase 1 package. All three normal study revisions are
+used; no further substantial composition exception is granted. The protected
+prototype, Atlanta asset and earlier studies remain preserved. Commits and pushes
+remain deferred.
+
+## 2026-10-06 — D-072 gensync development/CI lint exception accepted
+
+The founder replied **"agreed"** to the recommendation to allow the reviewed
+development/CI lint exception and verify deployed exclusion, after clarification
+that possible runtime use is distinct. [D-072](../DECISIONS.md#d-072--bounded-gensync-development-and-ci-lint-exception)
+records the exact scope and all five conditions. Only `gensync 1.0.0-beta.2`
+in isolated React lint checks may be evaluated; expiry is 2027-01-05.
+
+Deterministic full candidate locking, integrity/provenance/licence/advisory review,
+actual preset/alias/custom-Hook/configuration and coupled TypeScript conformance,
+no private visitor/client data or production credentials, proven exclusion from
+all deployed artifacts/execution paths, pre-wave/quarterly rechecks and rejection
+on failed evidence remain mandatory. The earlier bounded independent review
+accepts proposal consistency, not runtime safety or complete compatibility.
+
+There is no production runtime or general Babel/build-tool exception, no other
+prerelease/security/peer/TypeScript waiver, and no application package change,
+full graph selection, MA-013 closure, Phase 1 acceptance, spend, migration, commit,
+push or deployment. The real beta identifier remains accurate; D-069 controls
+the rest of the graph. Accepted policy and unproven candidate are separate states.
+
+## D-073 — First-file bootstrap ordering and one blank Figma file
+
+Approved by the founder in text on 2026-10-06 in response to the precise
+first-file amendment/create_new_file question. The accepted two-document patch
+is output/research/b01-preflight-2026-10-06/bootstrap-proposal/correction-1/first-file-ordering.patch.
+Its independent correction-1 review PASS is
+docs/phase-1-ui-reference-production/reviews/first-file-ordering-correction1-v1-2026-10-06.md,
+SHA-256 73099b611978492e8410dfebeb3e472cf260f6fe2c30e81db178834ff1ba54b7.
+
+The founder confirmed there was no existing file. One individually approved
+whoami resolved the single Starter/Full plan. This decision permits one empty
+Design file named Hengshi Design v1 — UI References in that account’s Drafts,
+then the separately approved read-only file/node check before design work.
+Record the single returned target; never duplicate uncertain file creation.
+Private access, named-version/full editable-archive capability and the _PRE
+archive must be verified before design/content writes. Node exports/screenshots
+are not an editable-file archive substitute. Project creation, sharing changes,
+seats/billing, provider AI, B01 execution/exit, later batches, implementation,
+Phase 1 acceptance, Git and deployment remain separately held.
+
+The blank file call succeeded on 2026-10-06; this is setup, not a production
+screen. Existing individual-call approvals, ledger-before-next-call, zero-spend
+and monthly limits are unchanged. No blanket external-write authorization follows.
+
+## D-074 — One-word QA browser-release correction exception
+
+Date: 2026-10-06. Approved founder decision: **“Approve this wording-repair exception.”**
+Permit one additional producer correction beyond the QA feature's exhausted two
+revision cycles, solely to apply the [prepared patch](../output/research/qa-browser-coverage-repair-2026-10-04.patch):
+FQA-N06 changes `Latest two stable evergreen families` to `Latest two stable
+evergreen releases`. Preserve the Safari/iOS 16.4 floor, WCAG 2.2 AA target and
+all other requirements. This restores the existing accepted release coverage.
+The [review finding](../specs/002-testing-and-monitoring/reviews/qa-feature-v1-2026-10-04.md)
+requires independent exact-input re-review after correction. No QA review PASS,
+feature/integrated acceptance, runtime evidence, implementation, commit or push
+follows from this exception. It grants no further correction cycle or broader change.
+
+## D-075 — B01 execution and existing-page organisation
+
+Date: 2026-10-06. Approved founder decision: **“Approve B01.”**
+Authorize B01's shared PRIM components, desktop/mobile global navigation,
+directory/search and system-recovery references in the existing private
+Hengshi Design v1 Figma file. Organise these in sections of Page 1 using
+file-local components, without team-library publication or additional pages.
+The [execution brief](phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md)
+and original template/state/viewport/mode/stream obligations remain controlling;
+this organisation does not reduce their coverage or change stable source IDs.
+Before the first design write, verify the named `HSD_UIR_B01_PRE` checkpoint and
+linked full editable local archive under the production contract. The earlier
+bootstrap download is not that checkpoint. Preserve zero spending, private
+sharing, individual immediate Figma-call approval and ledger-before-next-call.
+Provider AI, publishing, collaborators, application changes and Git remain held.
+This is execution permission, not a design result or B01 exit acceptance. Required
+independent design/accessibility reviews, frozen _EXIT evidence and founder pilot
+acceptance remain; no later batch, B07/B09 or implementation is released.
+
+## D-096 — Bounded pip-owned temporary-file lifecycle
+
+**Date:** 2026-10-24
+**Status:** approved
+**Authority:** Founder selected “Approve this bounded temporary-file rule” for the
+reviewed future isolated Python compatibility trial. The exact source-backed
+[proposal](../output/research/python315-environment-preparation-2026-10-17/preservation-amendment-proposal-v1.json)
+and [20-input independent PASS](../output/research/python315-environment-preparation-2026-10-17/independent-review-environment-v1.json)
+are the scope of this exception.
+
+Permit only the invoked exact pip version's normal internal temporary-file
+lifecycle inside the verified, privately owned trial TEMP subtree. Retain the
+admitted runtime and source archives, selected hash-bound wheelhouses, both build
+outputs/source trees, reports, metadata inventories, logs, notices and failure
+evidence. No agent directory purge, existing-output deletion, retained-evidence
+overwrite or exception outside that owned subtree is approved. Do not claim every
+intermediate HTTP/PEP658 body is retained or that pip performs zero internal deletion.
+
+This narrowly supersedes the parent trial plan's blanket no-cleanup/preserve-every-
+transient-body requirement only for pip-owned temporary files. All other original
+limits and gates remain: complete reviewed acquisition/ownership/extraction,
+process/offline/resource controls, concrete build/full graph review, fresh disk
+admission and explicit execution approval. This decision starts no trial and
+permits no runtime/package installation, application/provider/account change,
+paid activation, production adoption, commit or push. Incorporate this exact
+exception in the eventual reviewed execution plan and execution permission.

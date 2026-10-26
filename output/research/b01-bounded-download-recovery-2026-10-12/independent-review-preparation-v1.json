@@ -1,0 +1,93 @@
+{
+  "product": "Hengshi Design v1",
+  "verdict": "REVISE",
+  "reviewed_at_utc": "2026-10-12T04:33:08.703360+00:00",
+  "scope": "First prepared-only18-input review of bounded retained-sheet, separate PNG download and exact cleanup workflow. No external execution or pixel proof.",
+  "packet_binding": {
+    "manifest": "output/research/b01-bounded-download-recovery-2026-10-12/review-inputs.json",
+    "sha256": "2f3c54821cf3f186dfcc35bcacea1f0276dac82a202901c5211afc1cfaf45cce",
+    "verified_input_count": 18,
+    "all_sizes_and_sha256_verified": true
+  },
+  "source_hashes": {
+    "proposal": "4fce80edca91d17ac5371cff91b5a61e51cc48108988a5be660dd007c344fbcc",
+    "prepare_input": "0ec6d10eca296a9f6eb9ee0432589ca13ddf985577e479ee3a4e74a903677a88",
+    "prepare_body": "689f248048b72fb4d5c1286887ddc866182f6fcb96c34c4d3f1c193dc6bb7324",
+    "prepare_call": "8dd069992bcafa5d4e15c5973338da51743acf67a05d2f43794aeb35003f7bd2",
+    "cleanup_template": "859640410ac47b90accf5e87786f7a6aae4ca2c03444f891d3a9e2cf777106ea"
+  },
+  "syntax_and_binding": {
+    "prepare_exact_spaced_const_input_JSON_stringify_plus_body_correspondence": true,
+    "native_prepare_parse": "PASS; vm.Script async wrapper not invoked",
+    "native_cleanup_template_parse": "PASS; dummy input async wrapper not invoked",
+    "eleven_source_records_and48_root_children_match_attempt30_inputs": true,
+    "dynamic_cleanup_call_not_yet_bound_or_authorized": true
+  },
+  "findings": [
+    {
+      "id": "BD-01",
+      "priority": "P1",
+      "file": "review-inputs/17-cleanup-body.js",
+      "lines": [
+        11,
+        12,
+        14,
+        16,
+        17
+      ],
+      "problem": "Exact temporary descriptor/inventory and parent/source checks precede later awaited node/font operations. After font loading, deletion roots are taken from current sheet.children without a final inventory/descriptor check. A new unrecorded child or permanent node moved into the sheet during an await can be removed and omitted from the returned removedTemporaryNodeIds.",
+      "evidence": "The extracted actual cleanup tail fixture inserts permanent-not-recorded during loadFontAsync. Tail removes clone-known, permanent-not-recorded and sheet-known, while returning only clone-known/sheet-known inventory and allTemporaryNodesRemoved=true.",
+      "required_change": "After the last awaited operation, revalidate exact sheet/root/unit identity, inventory, checksum, bounds, source positions and original page/root order. Resolve deletion roots only from recorded cloneIds plus the exact guarded sheet, and permit no intervening await before removals. Unknown current descendants must refuse cleanup."
+    },
+    {
+      "id": "BD-02",
+      "priority": "P2",
+      "file": "review-inputs/15-prepare-body.js",
+      "lines": [
+        41,
+        46,
+        48,
+        49,
+        50
+      ],
+      "problem": "Preparation validates source root/unit/frame names, parents, dimensions and root order before awaited font loading, then captures before snapshots afterward without repeating those guards. A change during font loading can become the accepted before state; clone resize uses the current original sizes while report.sources still returns saved expected dimensions.",
+      "required_change": "Repeat exact root/expected source identity, ancestry, names, sizes and child order immediately after the final font await, before baseline snapshots and any creation, with no further await to material mutation. Refuse changed source rather than normalizing it into the baseline."
+    }
+  ],
+  "other_observations": [
+    "3808x1996 comparison target fits the configured4096x2400 limits and avoids the prior90882px root-cap proposal. Exact eleven missing-unit identities and48-unit root order match saved attempt30 preparation/source records. This is not an actual download capability or image result.",
+    "Sheet and clone handles are retained before configuration/reparenting; tracked IDs are captured before later operations. Preparation cleans tracked roots on any pre-retention error, continuing after individual removal failures. Success sets retained only after the complete report/cleanupInput finite guard and returns allTemporaryNodesRemoved=false with empty removed inventory: retained success is not cleanup completion.",
+    "Relative original page order is checked excluding the intentional retained sheet; original root/units retain bounded descriptor/order/position checks. Generic parentOrdersPreserved is understood only within that explicit retained-sheet scope, not an unchanged entire page-child set.",
+    "Source fingerprint covers selected geometry/text/visibility/opacity/paint/font-run attributes, not exhaustive appearance/editability/prototype state.64-bit noncryptographic checksum is labelled accidental-change detection only; it provides no authentication or adversarial collision guarantee.",
+    "Dynamic step2 sheetID and step3 const input must come only from validated successful preparation comparisonSheetId/cleanupInput, with exact local script/size/hash binding before applicable fresh per-call permission. Old D085 is consumed and authorizes none of these calls.",
+    "Proposal requires up-front authorization of the cleanup obligation before retaining a sheet, then separately applicable approvals/allowance exceptions for each of the three calls. Download failure must not silently abandon cleanup; absence of access leaves an explicit held temporary-state obligation.",
+    "An actual successful download must produce3808x1996 PNG and eleven exact unit+annotation crops at320 width, followed by independent static result inspection. Preparation/source review does not substitute for those pixels or native restore_EXIT/fullB01 acceptance."
+  ],
+  "synthetic_probe": {
+    "scope": "Actual cleanup body tail starting const fonts=new Map(), executed against local synthetic nodes with earlier inventory validation represented as already passed. No Figma producer/API/account was invoked.",
+    "extraction_source_sha256": "859640410ac47b90accf5e87786f7a6aae4ca2c03444f891d3a9e2cf777106ea",
+    "fixture": "Known sheet children begin [clone-known]; targetIds and temporaryNodeIds are [clone-known,sheet-known]. Mock loadFontAsync appends permanent-not-recorded during the await. Actual remaining cleanup tail executes unchanged.",
+    "observed": {
+      "fontAwaitInsertedUnrecordedChild": true,
+      "removedIDs": [
+        "clone-known",
+        "permanent-not-recorded",
+        "sheet-known"
+      ],
+      "reportedRemovedInventory": [
+        "clone-known",
+        "sheet-known"
+      ],
+      "returnedAllTemporaryNodesRemoved": true
+    },
+    "reproduction_code": "const tail=source.slice(source.indexOf('const fonts=new Map()')); const AsyncFunction=Object.getPrototypeOf(async function(){}).constructor; const removed=[]; const original={id:'root',findAllWithCriteria(){return[];}}; const clone={id:'clone-known',removed:false,remove(){this.removed=true;removed.push(this.id);}}; const outsider={id:'permanent-not-recorded',removed:false,remove(){this.removed=true;removed.push(this.id);}}; const text={getStyledTextSegments(){return[{fontName:{family:'Inter',style:'Regular'}}];}}; const sheet={id:'sheet-known',children:[clone],removed:false,findAllWithCriteria(){return[text];},remove(){this.removed=true;removed.push(this.id);page.children=[original];}}; const page={id:'0:1',children:[original,sheet]}; const input={temporaryNodeIds:{encoding:'prefix-inclusive-ranges-v1',count:2,groups:[],literalIds:['clone-known','sheet-known']},originalPageOrder:['root']}; const targetIds=['clone-known','sheet-known']; const figma={async loadFontAsync(){sheet.children.push(outsider);}}; const fingerprint=n=>JSON.stringify({id:n.id}); const checksum=()=> 'not-used-by-extracted-tail'; const result=await new AsyncFunction('figma','sheet','originals','root','page','input','targetIds','fingerprint','checksum',tail)(figma,sheet,[original],original,page,input,targetIds,fingerprint,checksum);",
+    "limits": "Fixture establishes the JavaScript admission/deletion seam only; no actual Figma concurrency, fonts, node layout, download/export or restoration is certified."
+  },
+  "limits": [
+    "REVISE applies to this initial frozen packet only. Later correction sources and canonical navigation changes are outside scope and unreviewed here.",
+    "Native parse/identity checks are artifact observations; neither prepared full producer ran. Only the isolated identified cleanup-tail seam was executed with synthetic local objects.",
+    "No actual Figma capability/read/write/export, PNG download, current canvas state, cleanup, fonts/editability, accessible mode/interaction or runtime evidence was established.",
+    "No per-call permission, allowance exception, automatic retry, fullB01/native restore_EXIT/founder/Phase1 acceptance or application adoption follows.",
+    "No canonical/application/account/provider/model/permissions/settings/install/Git change or child agent occurred. Only this exclusive-create first review receipt was written."
+  ]
+}

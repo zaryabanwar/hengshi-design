@@ -1,0 +1,206 @@
+{
+  "product": "Hengshi Design v1",
+  "verdict": "PASS",
+  "reviewed_at_utc": "2026-10-11T19:58:34.455984+00:00",
+  "scope": "Independent binding-consistency review only: one interface-row clarification, Current shared definition bindings2026-10-12 section and one checklist item. No fresh whole-feature or controlling-source review/adoption.",
+  "packet_binding": {
+    "path": "output/research/world-feature-binding-2026-10-12/review-inputs.json",
+    "sha256": "ff76e75065bd1212224b89df0cc2fb8399bc67bab6c11e1d20c8f26bfa2a11ab",
+    "input_count": 26,
+    "all_byte_sizes_and_sha256_verified": true
+  },
+  "changed_artifact_bindings": {
+    "07-spec.md": {
+      "bytes": 32472,
+      "sha256": "94cae63313d85b395939485c663dd98b986093efc7525b0ae4928211b534baa6"
+    },
+    "08-requirements.md": {
+      "bytes": 3908,
+      "sha256": "078809b87f04e47089ee5674d4462038211831f9db68eb6ad4dcdc394af33f0b"
+    },
+    "09-spec.md": {
+      "bytes": 27734,
+      "sha256": "af4ba6b0008b8f87b304a4c285ab40c295845716771594d798ef8b284b0c4f8c"
+    },
+    "10-requirements.md": {
+      "bytes": 3566,
+      "sha256": "3012601193d52c6418d24c85919379aae734d5dd828b004b9e784bdd466d26c8"
+    }
+  },
+  "exact_delta": {
+    "specification": "Reversing only the inserted shared-bindings section and single interface-row replacement restores the entire saved predecessor text, including whitespace.",
+    "checklist": "Removing only the added binding-reconciliation checkbox restores the entire saved predecessor text.",
+    "existing_functional_requirements_nonfunctional_requirements_scenarios_holds_and_gates_unchanged": true
+  },
+  "findings": [],
+  "binding_observations": [
+    "Publication remains owner of eligible immutable release, independently compiled client catalogue/registered entry and public HTML trust bindings. Scene lookup consumes the publication-owned keys and build association; catalogue hashes do not demonstrate emitted-code or response trust.",
+    "Scene descriptor mapping covers area/connection/destination records and campus coordinates. Closed descriptor shape is correctly distinguished from finite-transform, connected-ground, opening and actual admission evidence.",
+    "Visual resource map identifies same-release/stream/build/profile/model interpretation; dependency closure and current/nearby residency remain with scene/campus lifecycle. The mapping does not turn descriptor indexing into eager fetching or select a decoder graph.",
+    "Collision map and separate publication-owned collision-consumer catalogue identify collision_profile_id and real compiled consumer/engine units independently of visual decoder profiles. The binding retains actual triangle/transform/clearance, swept-support, selected adapter/engine and safe retirement evidence.",
+    "F3D02/03/04/14 link to the traversal/camera and human-scale authoring proposals without adopting numeric values or gestures. Current controlling gate correction assigns World controls/HUD to B07 and cross-surface/final UI_SPEC to B09. The older traversal review retains historical B01 wording at its own frozen inputs; the new section cites the separate corrected gate review and explicitly denies B01 gesture acceptance.",
+    "Measurement and audio mappings retain named workload/device qualification, exact instrumentation, sound rights and numerical adoption holds. Corrected measurement-review anchor resolves to its bounded PASS disposition; it establishes corrected population-definition coherence only, not physical-device measurement.",
+    "The interface-row clarification acknowledges later closed-module process proposals while preserving canonical process owners, private lineage and authoritative outcomes. Its complete-contract/provider/runtime adoption hold is explicit. F3D10/11 and AI/handoff/booking authority remain outside scene schemas.",
+    "All19 newly added relative link destinations are present in the frozen packet; all11 nonempty heading anchors resolve by Markdown heading identity. Existing requirements and scenarios, B01/B07/B09 ownership, rights, final gesture/cancellation, numeric/device, appearance and planning/implementation holds are preserved.",
+    "Closed root schemas exist with the expected distinct field sets. This is shape/owner correspondence inspection, not a re-review of schema semantics or actual artifact validation. Prior frozen receipts retain their separate exact scopes; neither historical review PASS nor this checklist grants feature acceptance."
+  ],
+  "new_links_checked": [
+    {
+      "source": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "anchor": "client-build-identity-and-registered-entry-proposal"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/client-build-catalogue.schema.json",
+      "anchor": ""
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/public-html-binding.schema.json",
+      "anchor": ""
+    },
+    {
+      "source": "docs/phase-1-3d/SCENE_ASSEMBLY_CONTRACT.md",
+      "anchor": "scene-lookup-and-build-agreement-proposal"
+    },
+    {
+      "source": "docs/phase-1-3d/SCENE_ASSEMBLY_CONTRACT.md",
+      "anchor": "closed-descriptor-shape-proposal"
+    },
+    {
+      "source": "docs/phase-1-3d/scene-descriptor.schema.json",
+      "anchor": ""
+    },
+    {
+      "source": "docs/phase-1-3d/SCENE_ASSEMBLY_CONTRACT.md",
+      "anchor": "visual-resource-interpretation-proposal"
+    },
+    {
+      "source": "docs/phase-1-3d/gltf-resource-map.schema.json",
+      "anchor": ""
+    },
+    {
+      "source": "docs/phase-1-3d/CAMPUS_ASSET_BUILD_SPEC.md",
+      "anchor": "loading-and-residency-contract"
+    },
+    {
+      "source": "docs/phase-1-3d/SCENE_ASSEMBLY_CONTRACT.md",
+      "anchor": "static-collision-interpretation-proposal"
+    },
+    {
+      "source": "docs/phase-1-3d/collision-resource-map.schema.json",
+      "anchor": ""
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "anchor": "collision-consumer-catalogue-amendment-proposal"
+    },
+    {
+      "source": "docs/phase-1-3d/WORLD_EXPERIENCE.md",
+      "anchor": "mousetouch-traversal-and-camera-profile-proposal--2026-10-06"
+    },
+    {
+      "source": "docs/phase-1-3d/CAMPUS_ASSET_BUILD_SPEC.md",
+      "anchor": "human-scale-traversal-profile-proposal--2026-10-06"
+    },
+    {
+      "source": "docs/phase-1-3d/WORLD_MEASUREMENT_PROFILE.md",
+      "anchor": ""
+    },
+    {
+      "source": "docs/phase-1-3d/WORLD_EXPERIENCE.md",
+      "anchor": "audio-lifecycle-and-ownership-proposal"
+    },
+    {
+      "source": "docs/phase-1-3d/reviews/world-measurement-profile-v1-2026-10-06.md",
+      "anchor": "correction-1-disposition--bounded-pass"
+    },
+    {
+      "source": "docs/phase-1-3d/reviews/world-traversal-profile-v1-2026-10-06.md",
+      "anchor": ""
+    },
+    {
+      "source": "docs/phase-1-3d/reviews/world-control-gates-v1-2026-10-07.md",
+      "anchor": ""
+    }
+  ],
+  "shape_correspondence": [
+    {
+      "frozen_input": "18-client-build-catalogue.schema.json",
+      "title": "Proposed immutable client build catalogue v1",
+      "required_fields": [
+        "schema_version",
+        "toolchain_lock_sha256",
+        "build_config_sha256",
+        "units",
+        "entries",
+        "profiles",
+        "collision_profiles"
+      ],
+      "closed_root": true
+    },
+    {
+      "frozen_input": "19-public-html-binding.schema.json",
+      "title": "Proposed public HTML publication binding v1",
+      "required_fields": [
+        "schema_version",
+        "release_id",
+        "route_id",
+        "canonical_path",
+        "html_artifact_id",
+        "client_build_sha256"
+      ],
+      "closed_root": true
+    },
+    {
+      "frozen_input": "20-scene-descriptor.schema.json",
+      "title": "Proposed public scene descriptor v1",
+      "required_fields": [
+        "schema_version",
+        "release_id",
+        "stream",
+        "coordinate_frame",
+        "areas",
+        "connections",
+        "destinations"
+      ],
+      "closed_root": true
+    },
+    {
+      "frozen_input": "21-gltf-resource-map.schema.json",
+      "title": "Proposed visual glTF resource interpretation v1",
+      "required_fields": [
+        "schema_version",
+        "release_id",
+        "stream",
+        "client_build_sha256",
+        "profile_id",
+        "models"
+      ],
+      "closed_root": true
+    },
+    {
+      "frozen_input": "22-collision-resource-map.schema.json",
+      "title": "Proposed static collision resource interpretation v1",
+      "required_fields": [
+        "schema_version",
+        "release_id",
+        "stream",
+        "client_build_sha256",
+        "collision_profile_id",
+        "models"
+      ],
+      "closed_root": true
+    }
+  ],
+  "prior_feature_receipt": {
+    "source": "specs/003-3d-experience-completion/reviews/world-feature-v1-2026-10-04.md",
+    "sha256": "3315011f2b47470eca86e6a80e20d42add1dd298800683adabdab9f6995fdfba",
+    "scope_preserved": "Its corrected revision2 bounded feature-definition PASS remains tied to its historical frozen inputs; this binding reconciliation is explicitly outside those bytes."
+  },
+  "limits": [
+    "PASS applies only to the described exact specification/checklist delta against both saved predecessors and the26 frozen reference inputs.",
+    "No new whole-feature PASS, controlling-source re-review, closed-format/policy adoption, numerical acceptance, algorithm/dependency selection or planning/implementation authority is established.",
+    "No application, model, asset, runtime, geometry, transfer/frame/residency measurement, collision engine, accessibility/comfort/device, sound rights or production appearance evidence was generated or qualified.",
+    "B01/B07/B09 and final gesture/HUD/cross-surface acceptance remain distinct. Founder feature/integrated Phase1 acceptance and material holds remain outstanding.",
+    "No Figma, browser, network/account/provider, installation, Git or external action was performed; only this exclusive-create receipt was written."
+  ]
+}

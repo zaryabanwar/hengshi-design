@@ -1,0 +1,8 @@
+### Result
+{
+  "canvas": 0
+}
+### Ran Playwright code
+```js
+await page.evaluate('() => ({canvas:document.querySelectorAll("canvas").length})');
+```

@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-06",
+  "context7": {
+    "library": "/python/cpython",
+    "query": "json loads accepts duplicate object names retains last value object_pairs_hook parse_constant NaN Infinity BOM unpaired surrogates UTF16 UTF32 strict decoding size limitations",
+    "scope": "indexed main is not exact installed-version authority; future array_hook excluded"
+  },
+  "primary": [
+    {
+      "url": "https://docs.python.org/3.14/library/json.html",
+      "scope": "default decoder permissiveness, hooks and resource warning; page labels 3.14.8 while observed native interpreter is 3.14.5"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8259.html",
+      "scope": "JSON grammar, Unicode, number interoperability and implementation limits; project duplicate/BOM rejection stronger than RFC minimum"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc7493.html",
+      "scope": "interoperable duplicate/Unicode/numeric constraints; proposal is not a blanket I-JSON certification"
+    }
+  ]
+}

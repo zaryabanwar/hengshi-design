@@ -1,0 +1,12 @@
+### Result
+{
+  "canvas": 1,
+  "bodyWidth": 390,
+  "viewport": 390,
+  "buttonColor": "oklch(0.508 0.118 165.612)",
+  "animation": "Animation: Completed"
+}
+### Ran Playwright code
+```js
+await page.evaluate('() => ({canvas:document.querySelectorAll("canvas").length,bodyWidth:document.documentElement.scrollWidth,viewport:innerWidth,buttonColor:getComputedStyle([...document.querySelectorAll("button")][0]).backgroundColor,animation:[...document.querySelectorAll("p")].find(p=>p.textContent.startsWith("Animation:"))?.textContent})');
+```

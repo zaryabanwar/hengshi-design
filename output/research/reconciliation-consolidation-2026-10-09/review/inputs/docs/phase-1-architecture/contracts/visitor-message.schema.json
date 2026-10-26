@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed visitor-owned text registration v1",
+  "description": "Additional IF-CHAT-03 server direction only. Shape supplies no registration truth, process ownership, intent correspondence, consent, retention, dispatch, disclosure or selectable-source authority. Root and client deny; select server explicitly.",
+  "not": {},
+  "$defs": {
+    "visitor_text_registered": {
+      "allOf": [{"$ref": "chat-text.schema.json#/$defs/event_header"}],
+      "properties": {
+        "kind": {"const": "visitor_text_registered"},
+        "payload": {
+          "type": "object", "additionalProperties": false,
+          "required": ["operation_id", "command_revision", "text"],
+          "properties": {
+            "operation_id": {"$ref": "booking-creation-request.schema.json#/$defs/operation_id"},
+            "command_revision": {"$ref": "process-value.schema.json#/$defs/positive_revision"},
+            "text": {"type": "string", "minLength": 1, "maxLength": 2000}
+          }
+        }
+      },
+      "unevaluatedProperties": false
+    },
+    "client": {"not": {}},
+    "server": {"$ref": "#/$defs/visitor_text_registered"}
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed immutable client build catalogue v1",
+  "description": "Definition-only compiler-owned metadata. It cannot supply executable code, imports, configuration or publication authority.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "toolchain_lock_sha256", "build_config_sha256", "units", "entries", "profiles", "collision_profiles"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "toolchain_lock_sha256": {"$ref": "#/$defs/sha256"},
+    "build_config_sha256": {"$ref": "#/$defs/sha256"},
+    "units": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/unit"}},
+    "entries": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["semantic", "world"],
+      "properties": {
+        "semantic": {"allOf": [{"$ref": "#/$defs/entry"}, {"properties": {"activation_gate": {"const": "semantic"}}}]},
+        "world": {"allOf": [{"$ref": "#/$defs/entry"}, {"properties": {"activation_gate": {"const": "world_entry"}}}]},
+        "audio": {"allOf": [{"$ref": "#/$defs/entry"}, {"properties": {"activation_gate": {"const": "audio_enablement"}}}]}
+      }
+    },
+    "profiles": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/profile"}},
+    "collision_profiles": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/collision_profile"}}
+  },
+  "$defs": {
+    "identifier": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+    "sha256": {"$ref": "publication-manifest.schema.json#/$defs/sha256"},
+    "asset_key": {"$ref": "publication-manifest.schema.json#/$defs/asset_key"},
+    "ids": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/identifier"}},
+    "gate": {"enum": ["semantic", "world_entry", "audio_enablement"]},
+    "unit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["unit_id", "asset_key", "sha256", "bytes", "role", "media_type", "fetch_gate", "required_unit_ids", "optional_unit_ids"],
+      "properties": {
+        "unit_id": {"$ref": "#/$defs/identifier"},
+        "asset_key": {"$ref": "#/$defs/asset_key"},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "bytes": {"type": "integer", "minimum": 1, "maximum": 9007199254740991},
+        "role": {"enum": ["script", "style", "image", "font", "worker", "decoder_wrapper", "decoder_wasm", "collision_wrapper", "collision_wasm"]},
+        "media_type": {"type": "string", "pattern": "^[a-z][a-z0-9.+-]*/[a-z][a-z0-9.+-]*(?![\\s\\S])"},
+        "fetch_gate": {"$ref": "#/$defs/gate"},
+        "required_unit_ids": {"$ref": "#/$defs/ids"},
+        "optional_unit_ids": {"$ref": "#/$defs/ids"}
+      },
+      "allOf": [
+        {"if": {"properties": {"role": {"enum": ["collision_wrapper", "collision_wasm"]}}},
+         "then": {"properties": {"fetch_gate": {"const": "world_entry"}}}},
+        {"if": {"properties": {"role": {"const": "collision_wasm"}}},
+         "then": {"properties": {"media_type": {"const": "application/wasm"}}}}
+      ]
+    },
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["activation_gate", "unit_ids"],
+      "properties": {
+        "activation_gate": {"$ref": "#/$defs/gate"},
+        "unit_ids": {"allOf": [{"$ref": "#/$defs/ids"}, {"minItems": 1}]}
+      }
+    },
+    "extension_rule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["extension_name", "handling", "decoder_unit_ids"],
+      "properties": {
+        "extension_name": {"type": "string", "pattern": "^[A-Za-z][A-Za-z0-9_]*(?![\\s\\S])"},
+        "handling": {"enum": ["interpret", "ignore_optional"]},
+        "decoder_unit_ids": {"$ref": "#/$defs/ids"}
+      },
+      "allOf": [{"if": {"properties": {"handling": {"const": "ignore_optional"}}}, "then": {"properties": {"decoder_unit_ids": {"maxItems": 0}}}}]
+    },
+    "collision_profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["collision_profile_id", "geometry_format", "consumer_unit_ids"],
+      "properties": {
+        "collision_profile_id": {"$ref": "#/$defs/identifier"},
+        "geometry_format": {"const": "static_triangle_glb_2_0"},
+        "consumer_unit_ids": {"allOf": [{"$ref": "#/$defs/ids"}, {"minItems": 1}]}
+      }
+    },
+    "profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["profile_id", "gltf_version", "base_decoder_unit_ids", "extension_rules"],
+      "properties": {
+        "profile_id": {"$ref": "#/$defs/identifier"},
+        "gltf_version": {"const": "2.0"},
+        "base_decoder_unit_ids": {"$ref": "#/$defs/ids"},
+        "extension_rules": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/extension_rule"}}
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "react/rules-of-hooks": "error",
+    "react/exhaustive-deps": [
+      "error",
+      {
+        "additionalHooks": "useSpecialEffect"
+      }
+    ]
+  },
+  "categories": {
+    "correctness": "off"
+  }
+}

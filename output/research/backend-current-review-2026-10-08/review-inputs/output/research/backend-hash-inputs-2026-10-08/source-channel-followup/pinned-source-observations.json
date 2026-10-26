@@ -1,0 +1,75 @@
+{
+  "status": "DOING",
+  "commit": "fcdefa7198c4fc94a22eecf1a5b7926e20b9fc8a",
+  "tag_annotation": "Release 2.14.0\n",
+  "tag_verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+  },
+  "results": [
+    {
+      "name": "pydantic-tag-object",
+      "url": "https://api.github.com/repos/pydantic/pydantic/git/tags/10f8a7b4d52e20011933be784cf101aa19c53bb4",
+      "observed_at": "2026-10-08T16:48:01.722636+00:00",
+      "status": 200,
+      "raw_sha256": "60e478a4373e5a602cafcd63afe047f522db14dbe87752b328747ca4e19374d3",
+      "snapshot": "pydantic-tag-object.source.gz"
+    },
+    {
+      "name": "pydantic-version-pinned",
+      "url": "https://raw.githubusercontent.com/pydantic/pydantic/fcdefa7198c4fc94a22eecf1a5b7926e20b9fc8a/pydantic/version.py",
+      "observed_at": "2026-10-08T16:48:02.621280+00:00",
+      "status": 200,
+      "raw_sha256": "1fb0d5362d43b1e5dadb77590249d4e32886271f5bf1bfcd3ce23528eecbc8f4",
+      "snapshot": "pydantic-version-pinned.source.gz"
+    },
+    {
+      "name": "pydantic-pyproject-pinned",
+      "url": "https://raw.githubusercontent.com/pydantic/pydantic/fcdefa7198c4fc94a22eecf1a5b7926e20b9fc8a/pyproject.toml",
+      "observed_at": "2026-10-08T16:48:02.684535+00:00",
+      "status": 200,
+      "raw_sha256": "af73264ddc68760a031fc6e95aaeb5e84d57a730e1d64b5bf27286b5ae2cc52e",
+      "snapshot": "pydantic-pyproject-pinned.source.gz"
+    },
+    {
+      "name": "core-pyproject-pinned",
+      "url": "https://raw.githubusercontent.com/pydantic/pydantic/fcdefa7198c4fc94a22eecf1a5b7926e20b9fc8a/pydantic-core/pyproject.toml",
+      "observed_at": "2026-10-08T16:48:02.744334+00:00",
+      "status": 200,
+      "raw_sha256": "8f2b1926e0d5ef712e5b1b2367fa6c66d4075154b7ee23c71a21e1744e1e885d",
+      "snapshot": "core-pyproject-pinned.source.gz"
+    },
+    {
+      "name": "core-cargo-pinned",
+      "url": "https://raw.githubusercontent.com/pydantic/pydantic/fcdefa7198c4fc94a22eecf1a5b7926e20b9fc8a/pydantic-core/Cargo.toml",
+      "observed_at": "2026-10-08T16:48:02.803928+00:00",
+      "status": 200,
+      "raw_sha256": "f90299de44658c549d619ec7b094462839c4f98c7171c302ae763b88c6c67120",
+      "snapshot": "core-cargo-pinned.source.gz"
+    }
+  ],
+  "source_versions": {
+    "pydantic": "2.14.0",
+    "core_cargo": "2.50.0"
+  },
+  "pydantic_core_requirement": [
+    "pydantic-core==2.50.0"
+  ],
+  "pydantic_pyproject_matches_tag_source": true,
+  "maturity_classifiers": {
+    "pydantic-pyproject-pinned": [
+      "Development Status :: 5 - Production/Stable"
+    ],
+    "core-pyproject-pinned": [
+      "Development Status :: 3 - Alpha"
+    ]
+  },
+  "missing_core_tag_is_preserved": true,
+  "scope": "Pinned Pydantic release-commit source observation, not separate core-tag or wheel provenance proof",
+  "independent_review": "pending",
+  "runtime_tested": false,
+  "production_selection": false
+}

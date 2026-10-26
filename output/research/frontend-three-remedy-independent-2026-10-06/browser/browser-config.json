@@ -1,0 +1,22 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "isolated": true,
+    "launchOptions": {
+      "executablePath": "C:/Users/Zaryab/AppData/Local/ms-playwright/chromium-1228/chrome-win64/chrome.exe",
+      "headless": true
+    },
+    "contextOptions": {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    }
+  },
+  "network": {
+    "allowedOrigins": [
+      "http://127.0.0.1:5281"
+    ]
+  },
+  "outputDir": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-three-remedy-independent-2026-10-06\\browser"
+}

@@ -1,0 +1,26 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "attempt": 19,
+  "producer_structure": {
+    "created_ids": 2674,
+    "unique": true,
+    "views": 52,
+    "components": 2,
+    "widths": {
+      "320": 48,
+      "1440": 4
+    },
+    "returned_bounds_findings": 0,
+    "report_utf8_bytes": 15080
+  },
+  "inspected_previews": [
+    "narrow-results.png",
+    "wide-open.png"
+  ],
+  "visible_findings": "No obvious horizontal clipping, overlap or missing major region in the two returned previews. Current delivery and pending selection are separately displayed; Apply remains distinct. Synthetic fixture marking and canonical department labels/paths are visible.",
+  "pixel_limit": "Narrow image132x1024 and wide720x829 are scaled. Full-resolution typography, all52 views and other profile interactions remain unverified.",
+  "remaining_pixels": "50 views not returned at all; all52 full-resolution pixels still needed",
+  "independent_review": "Separate15-input bounded PASS preserved; full-resolution and remaining50 pixels and runtime/full B01 held",
+  "scope": "Producer returned-data and representative pixel inspection only; no working search/radios/focus, screen-reader, physical-device, full B01, final branding or Phase1 acceptance"
+}

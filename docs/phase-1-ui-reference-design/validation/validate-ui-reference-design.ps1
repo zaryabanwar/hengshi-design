@@ -106,7 +106,13 @@ $requiredFiles = @(
     'validation/validate-ui-reference-design.ps1',
     'validation/validation-report.md',
     'producer-inspection.md',
-    '../../scripts/validation/ui-stream-mapping.ps1'
+    '../../scripts/validation/ui-stream-mapping.ps1',
+    '../../scripts/validation/ui-boundary-evidence.ps1',
+    'boundary-evidence-allocation.csv',
+    'column-authority.json',
+    'reviews/r-037-column-authority-actual-review-2026-10-03.json',
+    '../../scripts/validation/ui_column_authority.py',
+    '../../scripts/validation/test_ui_column_authority.py'
 )
 $missingFiles = @($requiredFiles | Where-Object { -not (Test-Path -LiteralPath (Join-Path $packageRoot $_) -PathType Leaf) })
 Assert-True ($missingFiles.Count -eq 0) 'package-files' ("required files present={0}" -f $requiredFiles.Count) ("missing={0}" -f ($missingFiles -join ';'))
@@ -115,10 +121,10 @@ if ($missingFiles.Count -gt 0) {
     exit 1
 }
 
-$allowedExtensions = @('.md', '.csv', '.ps1')
+$allowedExtensions = @('.md', '.csv', '.ps1', '.json')
 $packageFiles = @(Get-ChildItem -LiteralPath $packageRoot -Recurse -File)
 $badExtensions = @($packageFiles | Where-Object { $_.Extension.ToLowerInvariant() -cnotin $allowedExtensions } | ForEach-Object FullName)
-Assert-True ($badExtensions.Count -eq 0) 'package-file-types' 'only Markdown CSV and PowerShell files present' ("prohibited files={0}" -f ($badExtensions -join ';'))
+Assert-True ($badExtensions.Count -eq 0) 'package-file-types' 'only Markdown CSV PowerShell and explicitly accepted JSON evidence present' ("prohibited files={0}" -f ($badExtensions -join ';'))
 
 $packageCsvFiles = @(Get-ChildItem -LiteralPath $packageRoot -Recurse -File -Filter '*.csv' | Sort-Object FullName)
 $packageJsonFiles = @(Get-ChildItem -LiteralPath $packageRoot -Recurse -File -Filter '*.json' | Sort-Object FullName)
@@ -141,7 +147,9 @@ foreach ($file in $packageJsonFiles) {
         Add-Fail ("json-parse-{0}" -f $file.Name) $_.Exception.Message
     }
 }
-Assert-True ($packageJsonFiles.Count -eq 0) 'package-json-scope' 'no package JSON files are present' ("unexpected package JSON files={0}" -f $packageJsonFiles.Count)
+$acceptedJsonPaths = @('column-authority.json', 'reviews/r-037-column-authority-actual-review-2026-10-03.json')
+$unexpectedJsonFiles = @($packageJsonFiles | Where-Object { [IO.Path]::GetRelativePath($packageRoot, $_.FullName).Replace('\', '/') -cnotin $acceptedJsonPaths })
+Assert-True ($unexpectedJsonFiles.Count -eq 0 -and $packageJsonFiles.Count -eq $acceptedJsonPaths.Count) 'package-json-scope' 'exact D-063 registry and review JSON evidence only' ("unexpected={0}; actual count={1}" -f (($unexpectedJsonFiles | ForEach-Object FullName) -join ';'), $packageJsonFiles.Count)
 
 $sourceCsvRelative = @(
     'docs/phase-1-foundation/07-decision-requirement-traceability.csv',
@@ -201,8 +209,8 @@ Assert-NonEmptyFields $primitives @('primitive_id','primitive_name','primitive_c
 
 $sourceRoutes = @($sourceRouteJson.routes)
 $sourceRouteRoom = @($sourceCsv['docs/phase-1-ux-architecture/route-room-parity.csv'])
-Assert-True ($sourceRoutes.Count -eq 34) 'source-route-count' 'source canonical routes=34' ("actual={0}" -f $sourceRoutes.Count)
-Assert-True ($routes.Count -eq 34) 'route-coverage-count' 'covered routes=34' ("actual={0}" -f $routes.Count)
+Assert-True ($sourceRoutes.Count -eq 35) 'source-route-count' 'source canonical routes=35' ("actual={0}" -f $sourceRoutes.Count)
+Assert-True ($routes.Count -eq 35) 'route-coverage-count' 'covered routes=35' ("actual={0}" -f $routes.Count)
 Assert-Unique $routes.route_id 'route-id-uniqueness'
 Assert-Unique $routes.path 'route-path-uniqueness'
 Assert-Unique $routes.route_instance_id 'route-instance-uniqueness'
@@ -454,6 +462,8 @@ try {
 }
 catch { Add-Fail 'stream-control-batch-evidence' $_.Exception.Message }
 try {
+    Assert-UiAcceptedStreamCopy $batches $trace
+    Add-Pass 'accepted-stream-copy-authority' 'D-057 batch and trace copy references are current'
     $streamMapping = Get-UiStreamMapping -Primitives $primitives -Templates $templates
 }
 catch {
@@ -528,6 +538,11 @@ catch {
     Write-Output ("RESULT=FAIL PASS_COUNT={0} FAIL_COUNT={1}" -f $script:PassCount, $script:Failures.Count)
     exit 1
 }
+try {
+    $boundaryContext = [pscustomobject]@{ Batches=$batches; Templates=$templates; Profiles=$matrix; Mapping=$streamMapping }
+    $boundaryFrames = @(Get-UiBoundaryAllocations @(Import-Csv (Join-Path $packageRoot 'boundary-evidence-allocation.csv')) $boundaryContext)
+    Assert-True ($boundaryFrames.Count -eq 8) 'boundary-allocation' 'Eight scoped B07 destination triples' 'Invalid boundary allocation'
+} catch { Add-Fail 'boundary-allocation' $_.Exception.Message }
 $a06 = [System.Collections.Generic.List[string]]::new()
 $obligations = [System.Collections.Generic.HashSet[string]]::new()
 foreach ($frame in $frameObligations) {
@@ -643,20 +658,11 @@ foreach ($rec in @($templates + $routes)) {
 }
 Assert-True ($a10.Count -eq 0) 'baseline-frame-name-token-resolution' 'every baseline frame name parses under the amended EC-08 grammar and every parsed token resolves against the value set the record selects' ("unresolved={0}" -f ($a10 -join ';'))
 
-# --- A-11 inert-column-detection -------------------------------------------
-# The generalised guard against the recurring defect: a column populated as a total
-# function of an existing column encodes no judgement and cannot be wrong.
-#
-# PRODUCER NOTE, recorded rather than smoothed over. The accepted specification says
-# to test each judgement column "against every other column in the same file". Taken
-# literally that is vacuous: every column is a total function of its file's primary
-# key, so the literal reading fails every column in every file, including
-# stream_presence itself. The reading implemented here restricts determiners to
-# columns that are themselves CLASSIFICATIONS the package already makes - which is
-# precisely the shape of the defect, since stream_profile was determined by
-# state_profile. The determiner set is written out below so a reviewer can disagree
-# with it in one place. The producer did not author this restriction as a design
-# choice and flags it as a specification gap; see producer-inspection.md.
+# --- A-11 classifier-dependence diagnostics --------------------------------
+# D-062 retains the 22 columns as independently reviewed DECLARED judgments.
+# Correlation is diagnostic, not a derivation or approval. D-063's exact source/
+# cell/review guard below can fail these retained judgments; stream-presence's
+# existing hard legality and discrimination checks remain unchanged.
 $classifierColumns = @('route_family','state_profile','viewport_profile','mode_profile','surface_kind','activation_status','primitive_category','interaction_class','browser_profile','time_limit_branch','coverage_kind','flow_family','reuse_scope')
 $judgementColumns = @{
     'foundation-route-coverage.csv'    = @('template_id','state_profile','viewport_profile','mode_profile','semantic_quick_access','immersive_stream_representation','content_or_policy_gate','activation_status','time_limit_branch')
@@ -748,19 +754,16 @@ foreach ($batch in $batches) {
 }
 Assert-True ($timeReferenceErrors.Count -eq 0) 'wcag221-time-limit-reference-resolution' 'every route flow template profile and batch time-limit branch resolves' ("unresolved={0}" -f ($timeReferenceErrors -join ';'))
 
-function Get-ExpectedTimeBranchForState {
-    param([string]$StateProfile)
-    if ($StateProfile -cin @('SP-FIRST-VISIT','SP-WORLD')) { return 'TL-REMOVABLE-ADJUSTABLE' }
-    if ($StateProfile -cin @('SP-AI','SP-HANDOFF-MEDIA','SP-BOOKING','SP-AUTH','SP-STAFF-QUEUE','SP-STAFF-WORK','SP-PUBLICATION','SP-AUDIT','SP-SYSTEM-RECOVERY')) { return 'TL-WARN-EXTEND' }
-    return 'TL-NOT-APPLICABLE'
+# D-062/D-063: actual reviewed process criteria replace the classifier proxy.
+# This read-only verifier binds exact cells/sources, nonauthor review and acceptance.
+try {
+    $authorityOutput = @(& python (Join-Path $repoRoot 'scripts/validation/ui_column_authority.py') --root $repoRoot --decision D-063 2>&1)
+    if ($LASTEXITCODE -ne 0) { throw ($authorityOutput -join '; ') }
+    Add-Pass 'declared-column-authority' ($authorityOutput -join '; ')
 }
-$timeMappingErrors = [System.Collections.Generic.List[string]]::new()
-foreach ($row in @($routes + $flows + $templates)) {
-    $id = if ($row.PSObject.Properties['route_id']) { $row.route_id } elseif ($row.PSObject.Properties['coverage_id']) { $row.coverage_id } else { $row.template_id }
-    $expected = Get-ExpectedTimeBranchForState $row.state_profile
-    if ($row.time_limit_branch -cne $expected) { $timeMappingErrors.Add(("{0}:expected={1}:actual={2}" -f $id, $expected, $row.time_limit_branch)) }
+catch {
+    Add-Fail 'declared-column-authority' $_.Exception.Message
 }
-Assert-True ($timeMappingErrors.Count -eq 0) 'wcag221-time-limit-record-mapping' 'all route flow and template branches match their accepted state profile' ("mapping errors={0}" -f ($timeMappingErrors -join ';'))
 
 $expectedBatchTimeBranches = @{
     B01 = @('TL-WARN-EXTEND'); B02 = @('TL-NOT-APPLICABLE'); B03 = @('TL-NOT-APPLICABLE')
@@ -775,7 +778,7 @@ $timeDefinitionText = (($timeProfileRows | ForEach-Object { $_.profile_id + ' ' 
 $timeContractComplete = (
     $timeDefinitionText -match '(?i)turn off.*before.*adjust.*before start' -and
     $timeDefinitionText -match '(?i)at least 20 seconds before expiry' -and
-    $timeDefinitionText -match '(?i)(at least 10x|at least ten times)' -and
+    $timeDefinitionText -match '(?i)at least ten extension opportunities' -and
     $timeDefinitionText -match '(?i)criterion-supported exception' -and
     $timeDefinitionText -match '(?i)permitted data and (the )?last authoritative state' -and
     $timeDefinitionText -match '(?i)accessible reauthentication' -and
@@ -791,7 +794,7 @@ Assert-True ($sourceTimingText -match '(?i)at least 20 seconds' -and $sourceTimi
 $browserNegativeFixture = 'latest browsers; fallback if needed'
 Assert-True (-not ($browserNegativeFixture -match '(?i)latest two stable release families' -and $browserNegativeFixture -match '(?i)Safari.*16\.4' -and $browserNegativeFixture -match '(?i)semantic Quick Access')) 'nfr006-negative-fixture' 'vague browser-support fixture is rejected' 'browser negative fixture unexpectedly satisfies the profile'
 $timingNegativeFixture = 'TL-WARN-EXTEND warns before expiry and lets the user continue'
-Assert-True (-not ($timingNegativeFixture -match '(?i)at least 20 seconds' -and $timingNegativeFixture -match '(?i)(at least 10x|at least ten times)')) 'wcag221-negative-fixture' 'threshold-free timeout fixture is rejected' 'timing negative fixture unexpectedly satisfies SC 2.2.1 thresholds'
+Assert-True (-not ($timingNegativeFixture -match '(?i)at least 20 seconds' -and $timingNegativeFixture -match '(?i)at least ten extension opportunities')) 'wcag221-negative-fixture' 'threshold-free timeout fixture is rejected' 'timing negative fixture unexpectedly satisfies SC 2.2.1 thresholds'
 
 Assert-Unique $routes.baseline_frame_name 'route-frame-name-uniqueness'
 Assert-Unique $templates.baseline_frame_name 'template-frame-name-uniqueness'
@@ -826,7 +829,7 @@ Assert-True ($badPrimitiveTemplateRefs.Count -eq 0) 'primitive-template-referenc
 #   CR-002 amendment 2026-09-06 B4F0F9E34908B691C73CADCE33784E7D2709BFDB89F84F3B24188CF3198626BB
 #   2026-09-06 amendment under D-042 and D-043, pinned until D-047: 0E9FC68C98AC25C4F7DFBC62B10DBA1FCB197F5C82AD2FF39DCD0C16D9CFB763
 # D-047 2026-09-24: R-039 amendment INS-01 to INS-14 applied from DESIGN_SYSTEM_AMENDMENT_R-039.md revision 2 (commit cf455db).
-$expectedDesignSystemHash = '1893D026E6B17E98C3267D80AE929760780639FEB499A49F999C9E64C9168B81'
+$expectedDesignSystemHash = '2D149DA845D2D2E7717ACF3372D54CB89F04C595FC6BE7663396CDF6E1D400C7'
 #   CR-002 amendment 2026-09-06 0EC5B81452EAF79076CF06A5F57C7982D8F581D6105466D5352796C542DF007C
 #   D-043 remediation 2026-09-06 E06D11057AF1E903E37FC0F289E994B196FD337B4E8A22AB37BB686562BB9470
 # D-045 2026-09-06: stream_presence added per the accepted specification section 5.1.
@@ -944,7 +947,7 @@ foreach ($batch in $batches) {
     $branches = @(Split-List $batch.time_limit_branch_ids)
     $evidence = $batch.required_visual_evidence
     if ($branches -contains 'TL-REMOVABLE-ADJUSTABLE' -and ($evidence -notmatch 'TL-REMOVABLE-ADJUSTABLE' -or $evidence -notmatch '(?i)before start')) { $batchTimingEvidenceGaps.Add(("{0}:removable" -f $batch.batch_id)) }
-    if ($branches -contains 'TL-WARN-EXTEND' -and ($evidence -notmatch 'TL-WARN-EXTEND' -or $evidence -notmatch '(?i)at least 20 seconds' -or $evidence -notmatch '(?i)at least 10x')) { $batchTimingEvidenceGaps.Add(("{0}:warn" -f $batch.batch_id)) }
+    if ($branches -contains 'TL-WARN-EXTEND' -and ($evidence -notmatch 'TL-WARN-EXTEND' -or $evidence -notmatch '(?i)at least 20 seconds' -or $evidence -notmatch '(?i)at least ten extension opportunities')) { $batchTimingEvidenceGaps.Add(("{0}:warn" -f $batch.batch_id)) }
     if ($branches -contains 'TL-NOT-APPLICABLE' -and $evidence -notmatch 'TL-NOT-APPLICABLE') { $batchTimingEvidenceGaps.Add(("{0}:not-applicable" -f $batch.batch_id)) }
     if ($branches -notcontains 'TL-NOT-APPLICABLE' -and ($evidence -notmatch '(?i)preserve permitted data and (the )?last authoritative state' -or $evidence -notmatch '(?i)accessible reauthentication')) { $batchTimingEvidenceGaps.Add(("{0}:preservation-reauth" -f $batch.batch_id)) }
     if ($branches -notcontains 'TL-NOT-APPLICABLE' -and $evidence -notmatch '(?i)exact durations remain gated') { $batchTimingEvidenceGaps.Add(("{0}:duration-gate" -f $batch.batch_id)) }
@@ -981,13 +984,13 @@ foreach ($route in $routes) {
         $routeBatchFrameErrors.Add(("{0}:owner={1}:frame={2}" -f $route.route_id, $routePrimaryOwner[$route.route_id], $frameBatch))
     }
 }
-Assert-True ($routeBatchFrameErrors.Count -eq 0) 'route-frame-primary-batch-alignment' 'all 34 route baseline frame batch tokens match their single primary batch owner' ("errors={0}" -f ($routeBatchFrameErrors -join ';'))
+Assert-True ($routeBatchFrameErrors.Count -eq 0) 'route-frame-primary-batch-alignment' 'all 35 route baseline frame batch tokens match their single primary batch owner' ("errors={0}" -f ($routeBatchFrameErrors -join ';'))
 
 Assert-Unique $trace.trace_id 'trace-id-uniqueness'
 $sourceRequirements = @($sourceCsv['docs/phase-1-ux-architecture/traceability.csv'] | Where-Object { $_.source_type -ceq 'requirement' } | ForEach-Object source_id)
 $traceRequirements = @($trace | Where-Object { $_.source_type -ceq 'requirement' } | ForEach-Object source_id)
 Assert-ExactSet $sourceRequirements $traceRequirements 'requirement-trace-completeness'
-Assert-ExactSet @('D-025','D-026','D-035','D-036') @($trace | Where-Object { $_.source_type -ceq 'decision' } | ForEach-Object source_id) 'decision-trace-set'
+Assert-ExactSet @('D-025','D-026','D-035','D-036','D-051') @($trace | Where-Object { $_.source_type -ceq 'decision' } | ForEach-Object source_id) 'decision-trace-set'
 Assert-ExactSet $routes.route_id @($trace | Where-Object { $_.source_type -ceq 'route' } | ForEach-Object source_id) 'route-trace-set'
 Assert-ExactSet $expectedActions @($trace | Where-Object { $_.source_type -ceq 'action' } | ForEach-Object source_id) 'action-trace-set'
 Assert-ExactSet $sourceExclusions.exclusion_id @($trace | Where-Object { $_.source_type -ceq 'exclusion' } | ForEach-Object source_id) 'exclusion-trace-set'
@@ -1065,12 +1068,12 @@ $uxTest040Trace = @($trace | Where-Object { $_.source_id -ceq 'UXTEST-040' })
 Assert-True ($ux001Trace.Count -eq 1 -and (($ux001Trace.contract_records + ' ' + $ux001Trace.required_future_evidence) -replace '\s+',' ') -match $wcagTargetPattern -and ($ux001Trace.required_future_evidence -match '(?i)does not claim current conformance|before any conformance claim')) 'ux001-wcag-trace-contract' 'UX-001 trace carries the complete-process target and no-current-conformance gate' 'UX-001 trace is incomplete'
 Assert-True ($ux005Trace.Count -eq 1 -and $ux005Trace.contract_records -match 'BP-NFR-006' -and $ux005Trace.required_future_evidence -match '(?i)Safari/iOS 16\.4.*safe-area.*unsupported-client semantic Quick Access') 'ux005-browser-recovery-trace' 'UX-005 trace carries Safari floor and unsupported semantic recovery evidence' 'UX-005 browser recovery trace is incomplete'
 Assert-True ($nfr006Trace.Count -eq 1 -and (($nfr006Trace.contract_records + ' ' + $nfr006Trace.required_future_evidence) -replace '\s+',' ') -match '(?i)latest two stable Chrome Edge Firefox Safari release families.*Safari/iOS 16\.4 minimum legacy floor.*dated later QA.*exact then-current versions') 'nfr006-trace-contract' 'NFR-006 trace fixes the browser families and floor while deferring exact versions to dated QA' 'NFR-006 trace is incomplete'
-Assert-True ($uxTest040Trace.Count -eq 1 -and $uxTest040Trace.contract_records -match 'TL-REMOVABLE-ADJUSTABLE' -and $uxTest040Trace.required_future_evidence -match '(?i)at least 20 seconds.*at least 10x.*criterion-supported exception.*last authoritative state.*accessible reauthentication.*exact durations remain gated') 'uxtest040-time-limit-trace' 'UXTEST-040 trace carries every allowed branch, threshold, preservation rule, reauthentication, and duration gate' 'UXTEST-040 timing trace is incomplete'
+Assert-True ($uxTest040Trace.Count -eq 1 -and $uxTest040Trace.contract_records -match 'TL-REMOVABLE-ADJUSTABLE' -and $uxTest040Trace.required_future_evidence -match '(?i)at least 20 seconds.*at least ten extension opportunities.*criterion-supported exception.*last authoritative state.*accessible reauthentication.*exact durations remain gated') 'uxtest040-time-limit-trace' 'UXTEST-040 trace carries every allowed branch, threshold, preservation rule, reauthentication, and duration gate' 'UXTEST-040 timing trace is incomplete'
 
 $normalizedBrowserDocs = (($normalizedReadmeText + ' ' + $normalizedContractText) -replace '\s+',' ')
 Assert-True ($normalizedBrowserDocs -match '(?i)BP-NFR-006.*latest two stable release families of Chrome, Edge, Firefox, and Safari' -and $normalizedBrowserDocs -match '(?i)Safari on iOS 16\.4.*minimum legacy floor' -and $normalizedBrowserDocs -match '(?i)Exact then-current.*version.*deferred.*dated QA|exact then-current browser versions selected and recorded by dated QA' -and $normalizedBrowserDocs -match '(?i)mobile.*layout.*input.*virtual-keyboard.*safe-area' -and $normalizedBrowserDocs -match '(?i)below the floor or otherwise unsupported.*semantic Quick Access|semantic Quick Access.*below the floor or otherwise unsupported') 'nfr006-document-contract' 'README and contract state the complete browser profile, deferred version selection, mobile Safari evidence, and unsupported recovery' 'browser contract prose is incomplete'
 $normalizedTimingDocs = (($normalizedReadmeText + ' ' + $normalizedContractText) -replace '\s+',' ')
-Assert-True ($normalizedTimingDocs -match 'TL-REMOVABLE-ADJUSTABLE' -and $normalizedTimingDocs -match 'TL-WARN-EXTEND' -and $normalizedTimingDocs -match 'TL-EXCEPTION' -and $normalizedTimingDocs -match 'TL-NOT-APPLICABLE' -and $normalizedTimingDocs -match '(?i)at least 20 seconds' -and $normalizedTimingDocs -match '(?i)(at least 10 times|at least 10x)' -and $normalizedTimingDocs -match '(?i)permitted data and (the )?last authoritative state' -and $normalizedTimingDocs -match '(?i)accessible reauthentication' -and $normalizedTimingDocs -match '(?i)exact.*durations remain gated') 'wcag221-document-contract' 'README and contract state all time-limit branches, thresholds, preservation, reauthentication, and exact-duration gate' 'time-limit contract prose is incomplete'
+Assert-True ($normalizedTimingDocs -match 'TL-REMOVABLE-ADJUSTABLE' -and $normalizedTimingDocs -match 'TL-WARN-EXTEND' -and $normalizedTimingDocs -match 'TL-EXCEPTION' -and $normalizedTimingDocs -match 'TL-NOT-APPLICABLE' -and $normalizedTimingDocs -match '(?i)at least 20 seconds' -and $normalizedTimingDocs -match '(?i)at least ten extension opportunities' -and $normalizedTimingDocs -match '(?i)permitted data and (the )?last authoritative state' -and $normalizedTimingDocs -match '(?i)accessible reauthentication' -and $normalizedTimingDocs -match '(?i)exact.*durations remain gated') 'wcag221-document-contract' 'README and contract state all time-limit branches, thresholds, preservation, reauthentication, and exact-duration gate' 'time-limit contract prose is incomplete'
 
 $freezeProvenancePattern = '(?i)at the 2026-09-03 producer freeze.*package proposals?.*not yet recorded in root durable manual-action records.*only after clean independent design and accessibility reviews.*time-bounded freeze'
 Assert-True ($normalizedReadmeText -match $freezeProvenancePattern -and $normalizedContractText -match '(?i)at the 2026-09-03 producer freeze.*package proposals?.*not yet recorded in root durable manual-action records.*only after clean independent design and accessibility reviews.*time-bounded freeze') 'ma024-time-bounded-provenance-language' 'README and contract time-bound package-only gate provenance and defer root integration until clean reviews' 'MA-024 time-bounded provenance wording is incomplete'
@@ -1204,7 +1207,7 @@ try {
 finally {
     $sha256.Dispose()
 }
-Assert-True ($freezeHashLines.Count -eq 14) 'freeze-file-count' '14 required files including the shared stream resolver included in the deterministic freeze' ("actual={0}" -f $freezeHashLines.Count)
+Assert-True ($freezeHashLines.Count -eq 20) 'freeze-file-count' '20 required files including the D-063 registry review verifier and focused tests included in the deterministic freeze' ("actual={0}" -f $freezeHashLines.Count)
 Write-Output 'FREEZE_METHOD=Sort relative forward-slash paths ordinally; for each emit uppercase SHA-256 two spaces path; join lines with LF and no terminal newline; SHA-256 the UTF-8 no-BOM payload'
 foreach ($freezeHashLine in $freezeHashLines) { Write-Output ("FREEZE_FILE_SHA256={0}" -f $freezeHashLine) }
 Write-Output ("FREEZE_AGGREGATE_SHA256={0}" -f $freezeAggregateHash)

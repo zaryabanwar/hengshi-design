@@ -1,0 +1,296 @@
+{
+  "scope": "Fresh isolated lint-candidate observations only; not selected complete graph, no package execution",
+  "observations": [
+    {
+      "name": "eslint",
+      "version": "10.12.0",
+      "source": "https://registry.npmjs.org/eslint/latest",
+      "observed_at_utc": "2026-10-05T20:45:27.300930+00:00",
+      "metadata_sha256": "9842a64e59c06c616b9c358661d23f2b978ce9bf17d94add39d5facb19b70d96",
+      "dependencies": {
+        "ajv": "^6.14.0",
+        "debug": "^4.3.2",
+        "espree": "^11.2.0",
+        "ignore": "^5.2.0",
+        "esquery": "^1.7.0",
+        "esutils": "^2.0.2",
+        "find-up": "^5.0.0",
+        "is-glob": "^4.0.0",
+        "minimatch": "^10.2.5",
+        "optionator": "^0.9.3",
+        "cross-spawn": "^7.0.6",
+        "glob-parent": "^6.0.2",
+        "imurmurhash": "^0.1.4",
+        "@eslint/core": "^1.2.1",
+        "eslint-scope": "^9.1.2",
+        "@humanfs/node": "^0.16.6",
+        "@types/estree": "^1.0.6",
+        "fast-deep-equal": "^3.1.3",
+        "natural-compare": "^1.4.0",
+        "file-entry-cache": "11.1.5 || >11.1.6 <12",
+        "@eslint/plugin-kit": "^0.7.3",
+        "eslint-visitor-keys": "^5.0.1",
+        "@eslint/config-array": "^0.23.5",
+        "@humanwhocodes/retry": "^0.4.2",
+        "escape-string-regexp": "^4.0.0",
+        "@eslint/config-helpers": "^0.7.0",
+        "@eslint-community/regexpp": "^4.12.2",
+        "@eslint-community/eslint-utils": "^4.8.0",
+        "@humanwhocodes/module-importer": "^1.0.1",
+        "json-stable-stringify-without-jsonify": "^1.0.1"
+      },
+      "peers": {
+        "jiti": "*"
+      },
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24"
+      },
+      "licence_label": "MIT",
+      "dist": {
+        "shasum": "4f2f7e679bdce9d71438c2900f2c8d4d297332b0",
+        "tarball": "https://registry.npmjs.org/eslint/-/eslint-10.12.0.tgz",
+        "fileCount": 421,
+        "integrity": "sha512-npHjrHb2o4ehH3mE+YuxABR+0gyb0aVWCIolgJDArwCiHEIsonBm3ZKjel5b0U5+a+MbEvIyRCGCzD3eKKK2NA==",
+        "signatures": [
+          {
+            "sig": "MEQCIACiuX8cuqJW7bxeMOsKGVHqdBXYfPXYBb5PuH973SL8AiAD6iWD4BwsFcJHHdhW6qixRf4sDVAEwqo3MQxHE3vd1g==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEQCICroNkqaTnX/nfg9Z2D39H7ZqDb5Z3h++5yIrobmmo9jAiByt7PnOjO2oa46qh6ejj4VqSxuvYCF1JOg6VrIhBxhhg==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 2947964
+      }
+    },
+    {
+      "name": "eslint-plugin-react-hooks",
+      "version": "7.1.1",
+      "source": "https://registry.npmjs.org/eslint-plugin-react-hooks/latest",
+      "observed_at_utc": "2026-10-05T20:45:27.300482+00:00",
+      "metadata_sha256": "7ccb572d85841dc9e54fdd98886f5a7c4235392ef4fd1743542ce3aede252bda",
+      "dependencies": {
+        "zod": "^3.25.0 || ^4.0.0",
+        "@babel/core": "^7.24.4",
+        "@babel/parser": "^7.24.4",
+        "hermes-parser": "^0.25.1",
+        "zod-validation-error": "^3.5.0 || ^4.0.0"
+      },
+      "peers": {
+        "eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0 || ^10.0.0"
+      },
+      "engines": {
+        "node": ">=18"
+      },
+      "licence_label": "MIT",
+      "dist": {
+        "shasum": "e6742cad75d970c0a3f30d7d3fa80a4784f55927",
+        "tarball": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-7.1.1.tgz",
+        "fileCount": 8,
+        "integrity": "sha512-f2I7Gw6JbvCexzIInuSbZpfdQ44D7iqdWX01FKLvrPgqxoE7oMj8clOfto8U6vYiz4yd5oKu39rRSVOe1zRu0g==",
+        "signatures": [
+          {
+            "sig": "MEYCIQCdi56UBcCdIG9KuraMEEC9DmLaBSwFdu3/FH8z6uwFlAIhAPKLC+VSc1yZGOqe0obrEL1J80GrzRndCFDhDWqVCZWw",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 4095735
+      }
+    },
+    {
+      "name": "gensync",
+      "version": "1.0.0-beta.2",
+      "source": "https://registry.npmjs.org/gensync/latest",
+      "observed_at_utc": "2026-10-05T20:45:27.084616+00:00",
+      "metadata_sha256": "ce284b3efff3d6781088332d64ddd79d98a3f079689d278d85d87f2efbb24823",
+      "dependencies": {},
+      "peers": {},
+      "engines": {
+        "node": ">=6.9.0"
+      },
+      "licence_label": "MIT",
+      "dist": {
+        "shasum": "32a6ee76c3d7f52d46b2b1ae5d93fea8580a25e0",
+        "tarball": "https://registry.npmjs.org/gensync/-/gensync-1.0.0-beta.2.tgz",
+        "fileCount": 7,
+        "integrity": "sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==",
+        "signatures": [
+          {
+            "sig": "MEYCIQDHfGsHV56Mp/DwzEt3tpD/gpYMjdzduN507yghyYJyFQIhAPkDalGQofBClvMSR1HsCtvuk3OgPrb5yLlzuWukwSBz",
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+          }
+        ],
+        "unpackedSize": 28891,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfmIZ8CRA9TVsSAnZWagAAbQsP/A6lZknPlD+2Ao64igWw\nnclQ1bMmEkKh8dJ4lj9b1dKy184kUsCQWN/TyE2ys4NlSoV5U0cK+tJrqH2p\nlwqu4dv7a2TSjrzWVDiyyRl5PPF4r5W9vLLPDSjBYAzFnUGxPjMWFwJk6iCW\nkYGvGlwK7gBtkn3lOuKMaRjG8Nf560pZGZ9AM+IMcfllYqthXDCYra1mYjAI\n+qnudON/4ou32DyUgvX/Jv2pLvJ/FWIwNIqJcRdX3kuc397Dsnz0gyRGuF9U\ncrDX1XoAO0DHuPnR+yT+w9md4S7U+a00hGgPrwX1iNz5dr0O8K9uaaMqxYLy\n514yKD1V6Bni8WCFq4bTDentZHIBlh9fwH+aiIWm9vKHYWpIzloNmZsSpkXx\ncJJCtBK+32JnmWxmOq8R7JY3Vv3mGVvLBJOGv5Sati+oDuL4+h3JeJDTSDg4\npJFJj4nH7yJAcw5O2IgompJVhEiLTaAZBxKOqFoHvZ8WnoiIxbE8YXvDmkod\n17sspBBzUyRXDFnZAEyCOATn9U9WankT/UnwgT4RHmfTy75TmwHicY0Yc8k1\nnTz3cX+BrMTcF3Bp7k4D3UGZDb9g6ewzbkVXx+qZaa0fGtdIP6UrjaaVKrRQ\n7YpOj/vfJIN7nEy+FbYAVpCTd6ipdb55oqeUZKfEYgnxY7dYufxPJEy4Dpln\nkoD1\r\n=ZtZG\r\n-----END PGP SIGNATURE-----\r\n"
+      }
+    },
+    {
+      "name": "@typescript-eslint/parser",
+      "version": "8.71.1",
+      "source": "https://registry.npmjs.org/%40typescript-eslint%2Fparser/latest",
+      "observed_at_utc": "2026-10-05T20:45:27.297580+00:00",
+      "metadata_sha256": "b5e8df09ffb979dece0b12b87ab7a1a14a5bae575bf8d34fd7c6c158abe70783",
+      "dependencies": {
+        "debug": "^4.4.3",
+        "@typescript-eslint/types": "8.71.1",
+        "@typescript-eslint/visitor-keys": "8.71.1",
+        "@typescript-eslint/scope-manager": "8.71.1",
+        "@typescript-eslint/typescript-estree": "8.71.1"
+      },
+      "peers": {
+        "eslint": "^8.57.0 || ^9.0.0 || ^10.0.0",
+        "typescript": ">=4.8.4 <6.1.0"
+      },
+      "engines": {
+        "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+      },
+      "licence_label": "MIT",
+      "dist": {
+        "shasum": "aad16e9813272b931caab52393449fa11cc4a269",
+        "tarball": "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-8.71.1.tgz",
+        "fileCount": 7,
+        "integrity": "sha512-oM/5sAqz/l1v/zYK1qTOPrn2+JIrBGC1V6uNYucRO5gh6eT9vWJ/RhPbGE59byvZEUQ4VP6XkLBaS5Jti5jpvw==",
+        "signatures": [
+          {
+            "sig": "MEUCIQCXlnBBbMQjH5cvVdTp9Ekz/VaJPbnP+PqrRfnRERImlwIgMZLqTwiP7pvFntOOUSNiFaTp5RF/dhDyfcaOqPhaENw=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIQCkKlADETExnUU5Cc6QfHOrDwwLu9zUKr+SIkrlF0Hv4gIgQltNVfggxP/nzM/Qui4yOB9LAYU0xGXtmcnH0c8yQH0=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@typescript-eslint%2fparser@8.71.1",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 16172
+      }
+    },
+    {
+      "name": "@typescript-eslint/eslint-plugin",
+      "version": "8.71.1",
+      "source": "https://registry.npmjs.org/%40typescript-eslint%2Feslint-plugin/latest",
+      "observed_at_utc": "2026-10-05T20:45:27.890569+00:00",
+      "metadata_sha256": "626251ef0e903c05825961095fe3f96010af2cc0d3342678d4af1d678d8a3b2f",
+      "dependencies": {
+        "ignore": "^7.0.5",
+        "ts-api-utils": "^2.5.0",
+        "natural-compare": "^1.4.0",
+        "@typescript-eslint/utils": "8.71.1",
+        "@eslint-community/regexpp": "^4.12.2",
+        "@typescript-eslint/type-utils": "8.71.1",
+        "@typescript-eslint/visitor-keys": "8.71.1",
+        "@typescript-eslint/scope-manager": "8.71.1"
+      },
+      "peers": {
+        "eslint": "^8.57.0 || ^9.0.0 || ^10.0.0",
+        "typescript": ">=4.8.4 <6.1.0",
+        "@typescript-eslint/parser": "^8.71.1"
+      },
+      "engines": {
+        "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+      },
+      "licence_label": "MIT",
+      "dist": {
+        "shasum": "b37fe4f6b33c707b183ae93421be10d4fe86e275",
+        "tarball": "https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-8.71.1.tgz",
+        "fileCount": 478,
+        "integrity": "sha512-nNlBf6HuotqMgZvSkWD5hNdemiBIxQ2NmrlgfcUIeZRs+BbakjscCQRq/Hb74EFVnFiSWWdL12JruqwBy3ERDw==",
+        "signatures": [
+          {
+            "sig": "MEUCIBd0wrw/qAmjWzVB8zdfdM/K2A/RhezYrUYJp1VaHXq+AiEAyyd76qoBLJab5TawSh6yTvKHJnN1F3+lhPGOYa3NSCE=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEQCIBu5ce4ye3bAqk7WYXyIaPM4f5yODl38AQXJCI7VqENLAiBkHBBH3POZ8cSxK7uhPu7utwDH6Dj2s6a9hLRLZAyxRg==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@typescript-eslint%2feslint-plugin@8.71.1",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 2177312
+      }
+    },
+    {
+      "name": "typescript",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/typescript/latest",
+      "observed_at_utc": "2026-10-05T20:45:27.808267+00:00",
+      "metadata_sha256": "28a8ef314c6bbc3fddb831088f80eb2fcac6351cb618c8ac029f7229f587b8aa",
+      "dependencies": {
+        "@typescript/typescript-aix-ppc64": "7.0.2",
+        "@typescript/typescript-linux-arm": "7.0.2",
+        "@typescript/typescript-linux-x64": "7.0.2",
+        "@typescript/typescript-sunos-x64": "7.0.2",
+        "@typescript/typescript-win32-x64": "7.0.2",
+        "@typescript/typescript-darwin-x64": "7.0.2",
+        "@typescript/typescript-netbsd-x64": "7.0.2",
+        "@typescript/typescript-freebsd-x64": "7.0.2",
+        "@typescript/typescript-linux-arm64": "7.0.2",
+        "@typescript/typescript-linux-ppc64": "7.0.2",
+        "@typescript/typescript-linux-s390x": "7.0.2",
+        "@typescript/typescript-openbsd-x64": "7.0.2",
+        "@typescript/typescript-win32-arm64": "7.0.2",
+        "@typescript/typescript-darwin-arm64": "7.0.2",
+        "@typescript/typescript-netbsd-arm64": "7.0.2",
+        "@typescript/typescript-freebsd-arm64": "7.0.2",
+        "@typescript/typescript-linux-loong64": "7.0.2",
+        "@typescript/typescript-linux-riscv64": "7.0.2",
+        "@typescript/typescript-openbsd-arm64": "7.0.2",
+        "@typescript/typescript-linux-mips64el": "7.0.2"
+      },
+      "peers": {},
+      "engines": {
+        "node": ">=16.20.0"
+      },
+      "licence_label": "Apache-2.0",
+      "dist": {
+        "shasum": "9ec773d7954a8c182c17cc5bbd575aa28bc51582",
+        "tarball": "https://registry.npmjs.org/typescript/-/typescript-7.0.2.tgz",
+        "fileCount": 416,
+        "integrity": "sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA==",
+        "signatures": [
+          {
+            "sig": "MEUCIHn8lVrLBbTJToaOcV3IJ0oVPREmFT5BhqmO2niVNCaSAiEAjbubGExGAYMSJN39iEgX/eDYhwBGnh/iyyGTRigXGjY=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 2497498
+      }
+    },
+    {
+      "name": "@typescript/typescript6",
+      "version": "6.0.2",
+      "source": "https://registry.npmjs.org/%40typescript%2Ftypescript6/latest",
+      "observed_at_utc": "2026-10-05T20:45:28.048603+00:00",
+      "metadata_sha256": "6b00644a8a197745dd863a0c3e1c0180f666da60de2fff1fb417a515ad7cbdb3",
+      "dependencies": {
+        "@typescript/old": "npm:typescript@^6"
+      },
+      "peers": {},
+      "engines": {},
+      "licence_label": "Apache-2.0",
+      "dist": {
+        "shasum": "79e0e47492564c83f8602013d7dd10d5ebc51a8c",
+        "tarball": "https://registry.npmjs.org/@typescript/typescript6/-/typescript6-6.0.2.tgz",
+        "fileCount": 9,
+        "integrity": "sha512-mbCddXd+jm7hfx7w2YU64/Av4/NqqeG3GoRZgxPcgoTxYjhrcfJRw9ULch71SS4G+Q3bOXFhRvPqjguN0Hyp5w==",
+        "signatures": [
+          {
+            "sig": "MEUCIQCikc4atEhRHPN4LOn3KvjPwa+LYyGODYwsTGJFK9CMYwIgeGAkOvW01TF29U/y/xGs1iENpfibKkCnPAoi70zBgQs=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 10548
+      }
+    }
+  ]
+}

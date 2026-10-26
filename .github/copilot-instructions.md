@@ -19,16 +19,33 @@ Do not bypass the approval gates in
 
 - Product scope, auth, security, infrastructure, API/data/AI/publication contracts,
   app structure, and repo-structure changes require approved definition and Spec
-  Kit artifacts before code. Application feature development remains closed until
-  the complete Phase 1 package is founder-approved.
-- Every material phase follows create, validate, inspect, independent review,
-  revise, validate again, and founder approval.
+  Kit artifacts for the assigned increment before code. D-097 supersedes the
+  whole-Phase-1 build gate: brand/shared foundations, complete 2D platform, full
+  3D World, then launch. Unfinished future 3D work does not block unrelated 2D.
+- One work chat delivers one founder-assigned outcome, reports and stops.
+  Independently review material design batches, requested reviews and changes
+  touching money/security/external systems. No routine review of each prose edit.
+  No hard revision cap: safe in-scope fixes continue; repeated failures require
+  changed diagnosis and only genuine material choices need founder input.
 - Production UI work must reference a Stitch or Figma screen before
   implementation.
 - Version-sensitive framework/library/API/cloud work must use Context7 plus
   official primary sources, evaluate coupled components as a graph, and select
   only newest mutually compatible stable versions. Preview/beta/RC/nightly
   dependencies cannot be production requirements.
+- This first product and current definition are v1 (D-069). Keep factual package,
+  API/schema and historical evidence identifiers accurate. Individually newest
+  releases are observations, not a selected stack; resolve, test and lock the
+  latest mutually compatible stable graph across all coupled tools and runtimes.
+- D-068 defers deployment/provider/region/cost planning: Azure and AWS are
+  candidates; prefer lowest feasible cost/free services when planning resumes.
+  Retain Outlook/Teams without assuming Microsoft 365 is required or that each
+  needed API capability is available on a free/personal account.
+- D-070 targets Europe first without implying a European office. Company facts
+  are admin-editable reviewed content; separate privacy/security aliases are
+  founder-approved but their operation is not verified.
+- Product tests exercise actual behavior. Documentation phrase/count/hash guards
+  and isolated schema checks are separate artifact evidence, not runtime proof.
 - Frontend UI/UX changes require Playwright verification for changed routes and
   states.
 - Branches, Git commits/pushes/PRs, migrations, remotes, paid activations,
@@ -68,8 +85,8 @@ npm run qa:lighthouse
 ## Starting Local Environment
 
 ```powershell
-# Terminal 1: database
-docker compose up -d db
+# Database: use the approved native PostgreSQL instance, without Docker.
+# Confirm the project database and current service state before startup changes.
 
 # Terminal 2: API
 cd apps/api
@@ -85,6 +102,8 @@ Database migration is deliberately omitted from generic startup. If the current
 schema is not ready, stop and obtain the explicit migration approval, validate the
 exact project-scoped PostgreSQL target, backup/recovery path, and migration plan
 before running any Alembic mutation.
+The founder requires native local operation; historical Docker instructions do
+not authorize restoring images/data or changing an existing database service.
 
 ## Backend Patterns
 

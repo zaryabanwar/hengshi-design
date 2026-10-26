@@ -1,0 +1,15 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const crypto = require('node:crypto');
+const root = path.resolve(__dirname, '../../..');
+const source = path.join(root,'output/research/frontend-build-evaluation-2026-10-06/runtime/package/node_modules/semver');
+const metadata = require(path.join(source,'package.json'));
+const semver = require(source);
+const raw = fs.readFileSync(path.join(__dirname,'contents.json'));
+const inventory = JSON.parse(raw);
+const target = path.join(__dirname,'declared-edge-range-observation.json');
+if(fs.existsSync(target)) throw Error('Preserve prior observation');
+const edges = inventory.declared_dependency_edges.map(edge=>({...edge,range_satisfied:semver.satisfies(edge.archive_metadata_version,edge.declared_range),prerelease:semver.prerelease(edge.archive_metadata_version)}));
+const result={inventory_sha256:crypto.createHash('sha256').update(raw).digest('hex'),semver:{version:metadata.version,source:path.relative(root,source)},edges,limits:['Static declared-range comparison only; not Node resolution, runtime conformance or a repaired/full SBOM']};
+fs.writeFileSync(target,JSON.stringify(result,null,2)+'\n');
+console.log(JSON.stringify({edges:edges.length,all_ranges_satisfied:edges.every(e=>e.range_satisfied),all_stable:edges.every(e=>e.prerelease===null),semver:metadata.version}));

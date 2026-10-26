@@ -1,0 +1,287 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Record-purpose visual translation and two static-browser widths only; no legal clearance, production UI, full accessibility, mobile hardware or processing runtime proof",
+  "inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "review-inputs/AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "review-inputs/.specify/memory/constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "review-inputs/DECISIONS.md",
+      "bytes": 86352,
+      "sha256": "dd31d6026aedd1a03e966e055724b2f02783147291525f1740341848837eed74"
+    },
+    {
+      "source": "PROJECT_STATE.yaml",
+      "snapshot": "review-inputs/PROJECT_STATE.yaml",
+      "bytes": 8776,
+      "sha256": "ca8ed5825769b5007835c9b44d3a4e7b4ebd1cba120340686d017686b3a64270"
+    },
+    {
+      "source": "docs/software-definition/definition-walkthrough.html",
+      "snapshot": "review-inputs/docs/software-definition/definition-walkthrough.html",
+      "bytes": 83683,
+      "sha256": "46e7c56c2c3f95d55e3d1bba46e7459a4c036b2e7e09cc67bd9a5ed9079e25c4"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "snapshot": "review-inputs/docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "bytes": 45770,
+      "sha256": "073878dcce6e2beb6477ec6fbe3162382554cc5875569e33a60e58ef34e23828"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "review-inputs/docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "bytes": 70442,
+      "sha256": "1fe2469d7a88897cbe07080650f0971efae4b45ab8f007d05eb315875cb7da7c"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/record-purpose-binding-v1-2026-10-08.md",
+      "snapshot": "review-inputs/docs/phase-1-architecture/contracts/reviews/record-purpose-binding-v1-2026-10-08.md",
+      "bytes": 2684,
+      "sha256": "5732720075de72fbb26973dff696f6864cc222b350b834d15f8237bf89c29be4"
+    },
+    {
+      "source": "output/research/record-policy-walkthrough-2026-10-08/definition-walkthrough.before.html",
+      "snapshot": "review-inputs/output/research/record-policy-walkthrough-2026-10-08/definition-walkthrough.before.html",
+      "bytes": 79473,
+      "sha256": "741a59a560f3e33e2b45c367d82fe034bfd1c0a39b9d9f994616ab1ac1cb3c6e"
+    },
+    {
+      "source": "output/research/record-policy-walkthrough-2026-10-08/update_walkthrough.py",
+      "snapshot": "review-inputs/output/research/record-policy-walkthrough-2026-10-08/update_walkthrough.py",
+      "bytes": 5528,
+      "sha256": "9c9469154cbf97e6b1411b861d5e3922af1385e31a50fc3652da1bb0dce9cd2c"
+    },
+    {
+      "source": "output/research/record-policy-walkthrough-2026-10-08/inspect.js",
+      "snapshot": "review-inputs/output/research/record-policy-walkthrough-2026-10-08/inspect.js",
+      "bytes": 2422,
+      "sha256": "4a6e0de8fa0105235182e616a5520636155db763c7c61fe18f7c5733a291c05c"
+    },
+    {
+      "source": "output/playwright/record-policy-2026-10-08/desktop-inspection.txt",
+      "snapshot": "review-inputs/output/playwright/record-policy-2026-10-08/desktop-inspection.txt",
+      "bytes": 4311,
+      "sha256": "6713fe868c0baf7ea993c058eb23e2edd7effe279374dc30164a8e0daf0f8e18"
+    },
+    {
+      "source": "output/playwright/record-policy-2026-10-08/mobile-inspection.txt",
+      "snapshot": "review-inputs/output/playwright/record-policy-2026-10-08/mobile-inspection.txt",
+      "bytes": 4271,
+      "sha256": "84606fafb95b97e70dc1a1d192217ca0ada8f906cf14f570149cdaa0135b4bfc"
+    },
+    {
+      "source": "output/playwright/record-policy-2026-10-08/console.txt",
+      "snapshot": "review-inputs/output/playwright/record-policy-2026-10-08/console.txt",
+      "bytes": 58,
+      "sha256": "5e022534a5fe0feeb06a8fc815ff2ad8e4598aae62e789579db7dbcbfb58bc2a"
+    },
+    {
+      "source": "output/playwright/record-policy-2026-10-08/record-policy-1440.png",
+      "snapshot": "review-inputs/output/playwright/record-policy-2026-10-08/record-policy-1440.png",
+      "bytes": 132570,
+      "sha256": "89d9e6791839cc91da7ed3a78113c1c6e16a821568ae5a94ff6c1d18211ce2e8",
+      "width": 1124,
+      "height": 1313
+    },
+    {
+      "source": "output/playwright/record-policy-2026-10-08/record-policy-320.png",
+      "snapshot": "review-inputs/output/playwright/record-policy-2026-10-08/record-policy-320.png",
+      "bytes": 149889,
+      "sha256": "36d8681b4b06d76dfcc0e6fb186060cccb61628ad06e2edf0068b7ff522f101e",
+      "width": 276,
+      "height": 4021
+    }
+  ],
+  "producer_observations": [
+    {
+      "mode": "desktop",
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "flowColumns": "272px 272px 272px 272px",
+        "cardColumns": "554px 554px",
+        "bounds": [
+          {
+            "x": 158,
+            "width": 272,
+            "right": 430,
+            "height": 289.8125
+          },
+          {
+            "x": 442,
+            "width": 272,
+            "right": 714,
+            "height": 289.8125
+          },
+          {
+            "x": 726,
+            "width": 272,
+            "right": 998,
+            "height": 289.8125
+          },
+          {
+            "x": 1010,
+            "width": 272,
+            "right": 1282,
+            "height": 289.8125
+          },
+          {
+            "x": 158,
+            "width": 554,
+            "right": 712,
+            "height": 270.34375
+          },
+          {
+            "x": 728,
+            "width": 554,
+            "right": 1282,
+            "height": 270.34375
+          },
+          {
+            "x": 158,
+            "width": 554,
+            "right": 712,
+            "height": 270.34375
+          },
+          {
+            "x": 728,
+            "width": 554,
+            "right": 1282,
+            "height": 270.34375
+          }
+        ],
+        "height": 1312.28125,
+        "links": [
+          "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/DATA_CONTRACT.md#record-purpose-retention-binding-proposal--2026-10-08",
+          "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md#proposed-retention-schedule-and-immutable-clocks",
+          "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/reviews/record-purpose-binding-v1-2026-10-08.md"
+        ]
+      },
+      "links": [
+        {
+          "url": "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/DATA_CONTRACT.md#record-purpose-retention-binding-proposal--2026-10-08",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md#proposed-retention-schedule-and-immutable-clocks",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/reviews/record-purpose-binding-v1-2026-10-08.md",
+          "status": 200
+        }
+      ],
+      "closedByKeyboard": true,
+      "openedByKeyboard": true,
+      "firstLinkReached": true,
+      "focusedOutline": {
+        "active": true,
+        "style": "solid",
+        "width": "3px"
+      },
+      "screenshot": "output/playwright/record-policy-2026-10-08/record-policy-1440.png",
+      "limits": "Static documentation inspection only; no production UI, legal compliance, full accessibility, phone hardware or data-processing runtime proof"
+    },
+    {
+      "mode": "mobile",
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "flowColumns": "276px",
+        "cardColumns": "276px",
+        "bounds": [
+          {
+            "x": 22,
+            "width": 276,
+            "right": 298,
+            "height": 263.46875
+          },
+          {
+            "x": 22,
+            "width": 276,
+            "right": 298,
+            "height": 289.8125
+          },
+          {
+            "x": 22,
+            "width": 276,
+            "right": 298,
+            "height": 289.8125
+          },
+          {
+            "x": 22,
+            "width": 276,
+            "right": 298,
+            "height": 289.8125
+          },
+          {
+            "x": 22,
+            "width": 276,
+            "right": 298,
+            "height": 467.5
+          },
+          {
+            "x": 22,
+            "width": 276,
+            "right": 298,
+            "height": 521.109375
+          },
+          {
+            "x": 22,
+            "width": 276,
+            "right": 298,
+            "height": 419.34375
+          },
+          {
+            "x": 22,
+            "width": 276,
+            "right": 298,
+            "height": 441.15625
+          }
+        ],
+        "height": 4020.921875,
+        "links": [
+          "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/DATA_CONTRACT.md#record-purpose-retention-binding-proposal--2026-10-08",
+          "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md#proposed-retention-schedule-and-immutable-clocks",
+          "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/reviews/record-purpose-binding-v1-2026-10-08.md"
+        ]
+      },
+      "links": [
+        {
+          "url": "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/DATA_CONTRACT.md#record-purpose-retention-binding-proposal--2026-10-08",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md#proposed-retention-schedule-and-immutable-clocks",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/reviews/record-purpose-binding-v1-2026-10-08.md",
+          "status": 200
+        }
+      ],
+      "closedByKeyboard": true,
+      "openedByKeyboard": true,
+      "firstLinkReached": true,
+      "focusedOutline": {
+        "active": true,
+        "style": "solid",
+        "width": "3px"
+      },
+      "screenshot": "output/playwright/record-policy-2026-10-08/record-policy-320.png",
+      "limits": "Static documentation inspection only; no production UI, legal compliance, full accessibility, phone hardware or data-processing runtime proof"
+    }
+  ]
+}

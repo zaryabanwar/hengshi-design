@@ -1,0 +1,15 @@
+{
+  "status": "DOING",
+  "schema_methods": 16,
+  "affected_schema_methods": 78,
+  "result": "PASS at validator boundary only",
+  "earlier_logical_prefix_preserved": true,
+  "independent_review": "in progress",
+  "limits": [
+    "No application changes",
+    "No actual HTTP or calendar adapter tests",
+    "No runtime authority, effect, accessibility or performance proof",
+    "No dependency selection, installation, Figma call, commit, push or deployment"
+  ],
+  "initial_manifest_sha256": "802562a0f221931500695ab120c359b1477b72dccea8dd54380bcb5d9ad4b5d3"
+}

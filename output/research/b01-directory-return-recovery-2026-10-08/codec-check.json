@@ -1,0 +1,29 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "checks": [
+    {
+      "file": "output/research/b01-navigation-composition-2026-10-06/provider-result.json",
+      "ids": 1006,
+      "rawBytes": 11801,
+      "packedBytes": 3141,
+      "roundTrip": true
+    },
+    {
+      "file": "output/research/b01-navigation-recovery-2026-10-07/provider-result.json",
+      "ids": 183,
+      "rawBytes": 1648,
+      "packedBytes": 220,
+      "roundTrip": true
+    },
+    {
+      "case": "4000 compound instance IDs plus gaps duplicates and literal fallbacks",
+      "ids": 4007,
+      "rawBytes": 63275,
+      "packedBytes": 14224,
+      "roundTrip": true
+    }
+  ],
+  "scriptSyntax": true,
+  "limits": "Local codec conservation and syntax only; no Figma API execution or actual52-view receipt-size/visual assertion"
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed private booking creation responses v1",
+  "description": "Definition-only closed server responses at existing IF-BOOK-01. Shape does not establish current cookie/CSRF binding, entropy, atomic promotion, expiry, legal storage or a confirmed booking. HTTP mappings and disclosure rules are in PRIVATE_PROCESS_PROOF.md.",
+  "oneOf": [
+    {"$ref": "#/$defs/provisional"},
+    {"$ref": "#/$defs/created"},
+    {"$ref": "#/$defs/pending"},
+    {"$ref": "#/$defs/error"}
+  ],
+  "$defs": {
+    "csrf_token": {
+      "type": "string",
+      "minLength": 43,
+      "maxLength": 43,
+      "pattern": "^[A-Za-z0-9_-]{42}[AEIMQUYcgkosw048](?![\\s\\S])",
+      "description": "Canonical unpadded base64url encoding of 32 bytes. Separate synchronizer token, not the HttpOnly bearer. Shape is not randomness or generation binding."
+    },
+    "generation": {
+      "$ref": "process-value.schema.json#/$defs/positive_revision",
+      "description": "Nonsecret server-selected proof generation; no client generation or cookie value belongs in the creation request."
+    },
+    "provisional": {
+      "type": "object", "additionalProperties": false,
+      "required": ["phase", "state", "provisional_id", "proof_generation", "csrf_token"],
+      "properties": {
+        "phase": {"const": "bootstrap"}, "state": {"const": "provisional"},
+        "provisional_id": {"$ref": "process-value.schema.json#/$defs/uuid"},
+        "proof_generation": {"const": 1},
+        "csrf_token": {"$ref": "#/$defs/csrf_token"}
+      }
+    },
+    "created": {
+      "type": "object", "additionalProperties": false,
+      "required": ["phase", "state", "provisional_id", "operation_id", "lineage_id", "proof_generation", "csrf_token"],
+      "properties": {
+        "phase": {"const": "create"}, "state": {"const": "created"},
+        "provisional_id": {"$ref": "process-value.schema.json#/$defs/uuid"},
+        "operation_id": {"$ref": "booking-creation-request.schema.json#/$defs/operation_id"},
+        "lineage_id": {"$ref": "process-value.schema.json#/$defs/uuid"},
+        "proof_generation": {"$ref": "#/$defs/generation", "minimum": 2},
+        "csrf_token": {"$ref": "#/$defs/csrf_token"}
+      }
+    },
+    "pending": {
+      "type": "object", "additionalProperties": false,
+      "required": ["phase", "state", "provisional_id", "operation_id"],
+      "properties": {
+        "phase": {"const": "create"}, "state": {"const": "pending"},
+        "provisional_id": {"$ref": "process-value.schema.json#/$defs/uuid"},
+        "operation_id": {"$ref": "booking-creation-request.schema.json#/$defs/operation_id"}
+      }
+    },
+    "error": {
+      "type": "object", "additionalProperties": false,
+      "required": ["state", "code", "recovery"],
+      "properties": {"state": {"const": "unavailable"}},
+      "oneOf": [
+        {"properties": {"code": {"const": "INVALID_REQUEST"}, "recovery": {"const": "correct_request"}}},
+        {"properties": {"code": {"const": "BODY_TOO_LARGE"}, "recovery": {"const": "correct_request"}}},
+        {"properties": {"code": {"const": "UNSUPPORTED_MEDIA"}, "recovery": {"const": "correct_request"}}},
+        {"properties": {"code": {"const": "HEADER_TOO_LARGE"}, "recovery": {"const": "correct_request"}}},
+        {"properties": {"code": {"const": "ACCESS_UNAVAILABLE"}, "recovery": {"const": "contact"}}},
+        {"properties": {"code": {"const": "ACTION_DENIED"}, "recovery": {"const": "contact"}}},
+        {"properties": {"code": {"const": "OPERATION_CONFLICT"}, "recovery": {"const": "reconcile"}}},
+        {"properties": {"code": {"const": "CAPACITY_LIMIT"}, "recovery": {"const": "wait"}}},
+        {"properties": {"code": {"const": "SERVICE_UNAVAILABLE"}, "recovery": {"const": "reconcile"}}}
+      ],
+      "description": "Minimal fixed error projection; unavailable is not an assertion that a previous operation had no effect. No arbitrary detail, echo, selector, private existence or credential."
+    }
+  }
+}

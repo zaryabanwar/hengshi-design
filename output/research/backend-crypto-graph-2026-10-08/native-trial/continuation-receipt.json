@@ -1,0 +1,20 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "qualification": "PASS_synthetic_library_boundaries",
+  "scope": "Isolated 43-wheel Windows library coupling only; no Authlib/joserfc, actual Hengshi route, real database/provider or stack adoption",
+  "limits": [
+    "Admission and boundary checks are not an OS-enforced disk quota.",
+    "Synthetic library tests do not prove application identity, authorization, PostgreSQL, OIDC, provider delivery, load or recovery.",
+    "Independent results review, complete latest-compatible graph/provenance/licences/locks and founder adoption remain separate."
+  ],
+  "package_count": 43,
+  "prior_harness_failure_preserved": true,
+  "downloads_or_installs_repeated": false,
+  "measurements": {
+    "retained_bytes": 81648527,
+    "free_disk_bytes": 5390553088
+  },
+  "protected_inputs_unchanged": true,
+  "continuation_steps": 2
+}

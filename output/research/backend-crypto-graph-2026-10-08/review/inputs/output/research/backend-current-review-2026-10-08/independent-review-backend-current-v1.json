@@ -1,0 +1,35 @@
+{
+  "status": "DOING",
+  "review_verdict": "PASS",
+  "reviewer": "review_knowledge_bundle_v1",
+  "review_date": "2026-10-08",
+  "manifest_sha256": "d9e0d63cd9ef78e995356e4e18f831217fbeea0b76c2fa651e9d1bc05fce47c9",
+  "snapshots_and_live_inputs_verified": 132,
+  "findings": [],
+  "scope": "October 8 backend evidence appendices lines 202-296 and their frozen 113-file study, governance and protected inputs. Metadata/source observations and migration recommendations only.",
+  "independent_replay": {
+    "result": "PASS",
+    "script": "independent-replay.py",
+    "script_sha256": "79d019c73830d346ef9d3c0e55bd19a412ab79e030d45262739b818d102a666d",
+    "evidence": "independent-replay-results.json",
+    "evidence_sha256": "d2cc95301b336f0cf0f90239b4203e2c220947e69960e42a6f6f34e6011e8749",
+    "old_new_package_records": 40,
+    "active_edges": 45,
+    "roots": 12,
+    "changed_packages": 6,
+    "registry_raw_hashes": 80,
+    "source_raw_hashes": 15,
+    "protected_inputs": 6
+  },
+  "observations": [
+    "Original dated evidence and first appendix remain exact prefixes. All 40 current report dependency/Python declarations also match saved project metadata. Direct families and Psycopg binary/Uvicorn standard extras are retained; both hash-pin derivatives agree with their reports.",
+    "Initial 8 MiB core response refusal and separate 16 MiB recovery are preserved. Local Python/wheel-tag/range/marker/extras and registry URL/hash/yank closure replay matches all 40 selected metadata records and six changes.",
+    "Three release objects are non-draft/non-prerelease. Annotated Pydantic tag resolves to the recorded immutable commit; source versions and exact core dependency match. Unsigned tag, Alpha core classifier and three core-tag/raw-source 404 responses remain visible; no missing attestation is inferred.",
+    "FastAPI telemetry opt-in, Pydantic validation/serialization/version-policy and SQLAlchemy cursor/result/rollback cleanup recommendations are supported by saved release/source bytes. main.py:17 has no explicit telemetry arguments; machine environment was not inspected."
+  ],
+  "review_harness": "Read-only reviewer assertions were corrected for snapshot paths rooted at the workspace and release summaries containing a subset of raw API fields. No producer/canonical inputs were changed; final isolated replay exit 0.",
+  "limits": [
+    "No wheel contents/signatures/attestations, complete release-channel/licence/security qualification, installation or runtime imports/native ABI/API/database compatibility proved.",
+    "No complete platform graph, portable production lock, provider/OS choice, release selection, upgrade/adoption, rollback exercise or integrated/founder acceptance. Earlier reviews retain exact scope."
+  ]
+}

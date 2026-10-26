@@ -1,0 +1,119 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-24",
+  "reviewer": "/root/review_navigation_result_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "PASS",
+  "scope": "Separate bounded review of18 exact saved inputs: resumed Navigation/HIGH playback observation,16 actual supplied JPGs and applied graph report. Original batch-result review remains unchanged. Review is saved-evidence inspection, not an independent live replay.",
+  "inputs": [
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/resumed-playback/playback-observation-v1.json",
+      "bytes": 5509,
+      "sha256": "d5007028212aa4705d2fa37d32ac240b437bd6d9c1de3906f4a3bb1099c71a06"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/applied-report.json",
+      "bytes": 12875,
+      "sha256": "5a4eb257eabb7eadadbb83b1bf70c75c8482ee540cd6353d778e0e3a134b92ba"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/resumed-playback/01-quick-access-pending-detailed-active.jpg",
+      "bytes": 46092,
+      "sha256": "b753bade582b280eb23c4f945db735eb1752a4e423e27489872917b586744ae1"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/resumed-playback/02-quick-access-active-after-apply.jpg",
+      "bytes": 47156,
+      "sha256": "5ec94f60df03d85613858dff241505361e41fec524e35dd77e5d7859234719fb"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/resumed-playback/03-balanced-pending-quick-access-active.jpg",
+      "bytes": 46302,
+      "sha256": "c75457088cf6cc8861f274a2e09ed1f38ad13c1aa07cf58c308738299282d493"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/resumed-playback/04-escape-retains-quick-access-active.jpg",
+      "bytes": 35816,
+      "sha256": "7efd205ebe135a88f57bbe9e648e22fe1a27965c501c1dad6a66df43fb3e01cb"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/resumed-playback/05-reopen-retains-balanced-pending.jpg",
+      "bytes": 46302,
+      "sha256": "c75457088cf6cc8861f274a2e09ed1f38ad13c1aa07cf58c308738299282d493"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/resumed-playback/06-balanced-active-after-apply.jpg",
+      "bytes": 47088,
+      "sha256": "f44c1bfed30aec647f0e4f2085eb7167f71fa40ed8a916e4e54317a11a845026"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/resumed-playback/07-simplified-pending-balanced-active.jpg",
+      "bytes": 46165,
+      "sha256": "16f15354e8cce4f9703ca4fd9c683fc8939c9216010502d5b5caacf899ec086e"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/resumed-playback/08-close-retains-balanced-active.jpg",
+      "bytes": 35782,
+      "sha256": "71afaf62d772a12962a144cd2bc9bcd9ab66289cdcd88540d5b605eda97fe9f4"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/resumed-playback/09-reopen-retains-simplified-pending.jpg",
+      "bytes": 46165,
+      "sha256": "16f15354e8cce4f9703ca4fd9c683fc8939c9216010502d5b5caacf899ec086e"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/resumed-playback/10-simplified-active-after-apply.jpg",
+      "bytes": 47283,
+      "sha256": "7bcafc80b827f43a3de7a6021ceaf7755505ae10baf136e9d708d0af53d9fcba"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/resumed-playback/11-detailed-pending-simplified-active.jpg",
+      "bytes": 46402,
+      "sha256": "53844e9a98a0d4f22ed28feb2ff4694dc271b1559079ce4c6dc24c3e25532c71"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/resumed-playback/12-detailed-active-after-apply.jpg",
+      "bytes": 46937,
+      "sha256": "df0f14507107a72777f116d92cbc541e3dcc7110c155ab24c4d8607bcc7ed657"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/resumed-playback/13-current-mode-apply-before.jpg",
+      "bytes": 63599,
+      "sha256": "30321331746c49fa566b92e4f7ac668433d85cea3df1d7376e3478d561891ca8"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/resumed-playback/14-current-mode-apply-after.jpg",
+      "bytes": 62336,
+      "sha256": "2976220fc8c837b8e41be42cbe39424b80cd7abb55b15af5e8309b2787010b03"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/resumed-playback/15-current-mode-apply-settled.jpg",
+      "bytes": 63599,
+      "sha256": "30321331746c49fa566b92e4f7ac668433d85cea3df1d7376e3478d561891ca8"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/resumed-playback/16-current-mode-detailed-still-active.jpg",
+      "bytes": 46111,
+      "sha256": "74399f3e05132d6da81596b85910098a8aed1ebfaa35e87cb57fa666353175ac"
+    }
+  ],
+  "checks": [
+    "All16 JPEG byte counts and SHA256 match the observation; reviewer independently opened and visually inspected all16 actual images.",
+    "Four cross-mode Apply results are visible in fixture captions: Detailed->Quick Access (01/02), Quick Access->Balanced (05/06), Balanced->Simplified (09/10), Simplified->Detailed (11/12). The in-force captions show the resulting modes; this does not test production renderers.",
+    "Pending choice remains distinct from active mode in01,03,05,07,09 and11.03/05 show Quick Access active with Balanced pending;07/09 show Balanced active with Simplified pending.",
+    "04 displays the closed menu with Quick Access active after the reported Escape, then05 reopens with Balanced pending retained.08 displays closed menu with Balanced active after reported Close, then09 reopens with Simplified pending retained. Trigger inputs themselves are producer observations, with matching graph roles and saved before/after states.",
+    "Every reported non-no-op tuple transition, including initial Open, is present in the applied report under its normalized control role. Graph support does not itself prove that an event was played.",
+    "13 shows bottom Apply/marker before current-mode click;14 has temporary blue hotspot highlighting;15 is settled and byte-identical to13.16 shows Detailed still active/selected. This supports the bounded unchanged visible same-mode outcome and bottom marker retention, without asserting exact numeric scroll.",
+    "The applied report has no Apply selection transition for HIGH/HIGH/OPEN, consistent with the intended current-mode no-op.",
+    "Initial Open has no separately saved before/after capture. It is not independently qualified solely from01; the observation correctly marks that evidence gap."
+  ],
+  "findings": [],
+  "limits": [
+    "One authored HIGH entry only. Not exhaustive108-edge playback, all ordered pairs, or all four authored entry flows.",
+    "Screenshot states plus producer event descriptions are consistent; reviewer did not operate the live browser or independently observe physical input.",
+    "No exact numeric scroll, focus, full native matching, boundary preserve/reset, archive restoration, accessibility, production content/renderer behavior, B01 or Phase1 acceptance.",
+    "No Figma/browser/external/canonical-document/application/Git changes made by reviewer; only this receipt was saved."
+  ]
+}

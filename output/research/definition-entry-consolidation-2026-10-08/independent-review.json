@@ -1,0 +1,22 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "reviewer": "/root/review_directory_references_v1",
+  "date": "2026-10-08",
+  "verdict": "PASS",
+  "scope": "Navigation consolidation only; two edited canonical documents",
+  "manifest_sha256": "f7dc22ce2dc8a334c95dfd8ddd4ffd998596d0a50b01d387248036986acc7b47",
+  "readme_sha256": "a4907696b81b7bc7949a02e712970615122459b124b8fee836d731320181ccba",
+  "map_sha256": "5d102c2b359e51e9d9d3a4fcbaa1802432c43bfe48df8811240ff1af2b2d8c4e",
+  "identities": "All 17 live/snapshot size/hash pairs matched initially and finally",
+  "findings": [],
+  "observations": [
+    "Six groups retain all fourteen deliverables without reduced scope",
+    "Authority, settled decisions, historical successors and separate approval gates remain intact",
+    "All 37 README local links resolve, including predecessor; predecessor links checked from original directory",
+    "README headings and all nine map headings are unchanged",
+    "Map changes exactly two QA rows and review-reference paragraph; affected links and fragments resolve",
+    "Four bounded QA reviews remain distinct from adoption, runtime evidence and integrated acceptance"
+  ],
+  "limits": "Read-only navigation review, not revalidation of every inherited subject, runtime proof, adoption or Phase 1 approval; no commit"
+}

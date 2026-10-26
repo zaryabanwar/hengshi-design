@@ -1,0 +1,29 @@
+{
+  "started_at_utc": "2026-10-05T22:51:21.268493+00:00",
+  "ended_at_utc": "2026-10-05T22:52:27.391394+00:00",
+  "command": [
+    "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+    "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\package\\bin\\npm-cli.js",
+    "ci",
+    "--ignore-scripts",
+    "--strict-peer-deps",
+    "--engine-strict",
+    "--audit=false",
+    "--fund=false",
+    "--workspaces=false",
+    "--include=dev",
+    "--include=optional",
+    "--prefix=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\candidate",
+    "--registry=https://registry.npmjs.org",
+    "--userconfig=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\empty-user.npmrc",
+    "--globalconfig=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\empty-global.npmrc",
+    "--cache=C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\metadata-cache",
+    "--loglevel=error"
+  ],
+  "exit_code": 0,
+  "lock_before": "d8ca6b5c36e0928f111fa2b9977c091bad5c13d7e45888139327e4fde496a78f",
+  "lock_after": "d8ca6b5c36e0928f111fa2b9977c091bad5c13d7e45888139327e4fde496a78f",
+  "scope": "initial install into previously absent isolated candidate/node_modules; lifecycle scripts disabled; no application installation/runtime adoption",
+  "node": "v26.10.0",
+  "npm": "12.2.0"
+}

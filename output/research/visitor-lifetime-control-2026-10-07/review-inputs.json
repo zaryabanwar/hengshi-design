@@ -1,0 +1,209 @@
+{
+  "product": "Hengshi Design v1",
+  "date": "2026-10-07",
+  "status": "DOING",
+  "scope": "D-076 visitor continuation and explicit End proposal at existing IF-CHAT-03; closed directional representations only",
+  "inputs": [
+    {
+      "path": ".specify/memory/constitution.md",
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "bytes": 16234,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/.specify/memory/constitution.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "bytes": 7686,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/AGENTS.md"
+    },
+    {
+      "path": "DECISIONS.md",
+      "sha256": "f38b6f5930b51cae9188db8df6bc9fe458b0df907a3f6eab10fc6b956a0b50da",
+      "bytes": 84370,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/DECISIONS.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/booking-creation-request.schema.json",
+      "sha256": "6848784172c0b39951978fb6a93158655b444e1c9400091c0a90c8d0fd509e37",
+      "bytes": 1495,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/booking-creation-request.schema.json"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/booking-creation-response.schema.json",
+      "sha256": "fa8e8cfab09723b06b72bb791c4961766a6a4dbcb549ffd1bb262d6e18447bfb",
+      "bytes": 6019,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/booking-creation-response.schema.json"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/chat-event-control.schema.json",
+      "sha256": "640718a84d9ca5eeb09517e9bbd73a0163c6e4ba06d7caeeabb4434e899931ae",
+      "bytes": 3380,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/chat-event-control.schema.json"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/chat-text.schema.json",
+      "sha256": "0c674077b0c6b2ade677a88a3a9bddd1e636da840866f3d19345fa0eaebf3f31",
+      "bytes": 7450,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/chat-text.schema.json"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+      "sha256": "b2f2b08e52569a7fa50a6e0a00eb71fc2ddd56d50f2033c9c9fa0bd75a282d64",
+      "bytes": 49954,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "sha256": "a1f9f33a86b12b451f11e6ef5132b6e2ebeeefe21e5dbb96d3cc1e47e77b6d47",
+      "bytes": 33922,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/DATA_CONTRACT.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "sha256": "40a3779f56737725bb2c5e5d5a5ee34b44ad27030adc16cc374fdb9b04266a12",
+      "bytes": 89614,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "sha256": "85b64424e7052c66371fb84bbb6cd208e37f256a3865944c311750a28025d872",
+      "bytes": 38715,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "sha256": "f247fd4c72d2e79cd03d77cd9d0e5287f2266c85bf4cefd129742bb2a9f639a2",
+      "bytes": 108274,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/process-value.schema.json",
+      "sha256": "b4fd9fc84f322ecb6743c00244f3731ccd612861de53056aaddb20a377a67a95",
+      "bytes": 1494,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/process-value.schema.json"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/publication-manifest.schema.json",
+      "sha256": "d3620c8326246bc34040188de610c5823f1013936572d3ffb63a5eb350bc3852",
+      "bytes": 4297,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/publication-manifest.schema.json"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/publication-preparation.schema.json",
+      "sha256": "23c3569baa844a542dd8f7a283af87f50b93dfa1fdf3ccef2c401136c8acc2ac",
+      "bytes": 5499,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/publication-preparation.schema.json"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "sha256": "cbc58c008eb61430e47ab89c0fa3e92d3fdbfbc38d6fb65139269c300c309f77",
+      "bytes": 68306,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/staff-chat-control.schema.json",
+      "sha256": "af6304f0353b8e608076b9595cad050b418c7b00f3c88a6dc29efc3eaa09632c",
+      "bytes": 4624,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/staff-chat-control.schema.json"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/staff-handoff-request.schema.json",
+      "sha256": "2c137347d7b7fcf158c717c06c4710f64fafb4c11a2ceff40c9426f570c7b99f",
+      "bytes": 5077,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/staff-handoff-request.schema.json"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/visitor-lifetime-control.schema.json",
+      "sha256": "12fa2c7d2854d1ee0a4b234b1ba72958b988611f7b794512d9a801389580d2d0",
+      "bytes": 11565,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/visitor-lifetime-control.schema.json"
+    },
+    {
+      "path": "docs/software-definition/04-reconciliation-map.md",
+      "sha256": "c7110e9a4cb20f03c6151d76f0af6dc2f55454c64b112adfd20881e9325f9259",
+      "bytes": 77689,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/docs/software-definition/04-reconciliation-map.md"
+    },
+    {
+      "path": "scripts/validation/test_booking_creation_request_schema.py",
+      "sha256": "773fd0f9ea930676c57da53ae9998187bf1a0b8bc8501b7e5753124e04cb98e0",
+      "bytes": 5536,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/scripts/validation/test_booking_creation_request_schema.py"
+    },
+    {
+      "path": "scripts/validation/test_chat_event_control_schema.py",
+      "sha256": "fc7aea4451028292aa210f729ee4b8b82468add2ef21564fdd486e089a2ef6c6",
+      "bytes": 7424,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/scripts/validation/test_chat_event_control_schema.py"
+    },
+    {
+      "path": "scripts/validation/test_chat_text_schema.py",
+      "sha256": "c76b950a8a2f53ea23d6de5bbe299e5d9a684724668374ba8ae13b995f5ce55d",
+      "bytes": 10924,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/scripts/validation/test_chat_text_schema.py"
+    },
+    {
+      "path": "scripts/validation/test_staff_chat_control_schema.py",
+      "sha256": "f86cb8499756680cddd3f885109d8cf47a956e11de338d1b7cc016699fd28b4a",
+      "bytes": 8162,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/scripts/validation/test_staff_chat_control_schema.py"
+    },
+    {
+      "path": "scripts/validation/test_visitor_lifetime_control_schema.py",
+      "sha256": "ee3bcc1413096a1333b2fd1b21764dd5ca76faef4c1be5c08eb7c2c7d3fcfd9d",
+      "bytes": 6680,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/scripts/validation/test_visitor_lifetime_control_schema.py"
+    },
+    {
+      "path": "specs/001-platform-security-hardening/spec.md",
+      "sha256": "88cd499685d95a0d9499ffab6e6606cf4d0ce87ba2c6fb812af4ca9a834f46e7",
+      "bytes": 30531,
+      "snapshot": "output/research/visitor-lifetime-control-2026-10-07/review-inputs/specs/001-platform-security-hardening/spec.md"
+    }
+  ],
+  "producer_validation": {
+    "result": "PASS",
+    "focused_methods": 4,
+    "affected_methods": 24,
+    "command": "C:/Python314/python.exe -m unittest scripts.validation.test_chat_event_control_schema scripts.validation.test_chat_text_schema scripts.validation.test_staff_chat_control_schema scripts.validation.test_visitor_lifetime_control_schema",
+    "elapsed_seconds": 2.584,
+    "runtime": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+    "artifact_only": true,
+    "not_proven": [
+      "authentication",
+      "current ownership",
+      "shared clocks",
+      "expiry",
+      "End fences",
+      "transport",
+      "capacity",
+      "accessibility",
+      "privacy compliance",
+      "application readiness"
+    ]
+  },
+  "independent_review": {
+    "status": "BLOCKED",
+    "attempted_for_this_exact_packet": false,
+    "verdict": null,
+    "existing_service_evidence": {
+      "agent": "/root/review_handoff_packet_v1",
+      "state": "errored",
+      "error": "Your workspace is out of credits. Add credits to continue."
+    },
+    "reason": "Existing review capability is unavailable; no independent verdict is attributed to these inputs."
+  },
+  "review_obligations": [
+    "D-076 no absolute visitor age versus risk controls",
+    "control-only admission despite content/source holds without ownership bypass",
+    "proof-generation/channel/process/ticket/current deadline and two-tab race ordering",
+    "fresh lifetime admissions versus immutable applied receipts and unknown lost tickets",
+    "scoped final End acknowledgement after own-End revocation without ordinary post-revocation output",
+    "finite 48 ordinary/16 ending allocation and one ordinary plus one End per connection are unmeasured proposals",
+    "warning availability, usable time, background return and progress preservation require complete-process reference and later actual accessibility evidence",
+    "End is separate from cookie deletion, provider cancellation, booking and retained-copy deletion"
+  ],
+  "founder_acceptance": "held",
+  "application_changed": false,
+  "committed": false
+}

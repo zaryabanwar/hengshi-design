@@ -1,0 +1,218 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Supplemented candidate metadata model/export and appended evidence only; not repaired npm lock/CLI/deployed SBOM",
+  "inputs": [
+    {
+      "source": "docs/phase-1-compatibility/README.md",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/00-README.md",
+      "bytes": 38736,
+      "sha256": "7f1f97bda07e1d18c3dce7b39f17e0d58b07020b7b823cab4b1c87a7cb3d266e"
+    },
+    {
+      "source": "docs/phase-1-compatibility/refresh-evidence-2026-10-04.md",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/01-refresh-evidence-2026-10-04.md",
+      "bytes": 111222,
+      "sha256": "66bd388282b1bd5639dce85c9f79050f3a1726f77e68792d45b5d24cc86b15ab"
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/02-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/03-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "PROJECT.md",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/04-PROJECT.md",
+      "bytes": 10942,
+      "sha256": "a483bd2713fe420322772ab7fb07c848aaf103088697c05ab91f35d2e5ea1461"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/05-DECISIONS.md",
+      "bytes": 86352,
+      "sha256": "dd31d6026aedd1a03e966e055724b2f02783147291525f1740341848837eed74"
+    },
+    {
+      "source": "PROJECT_STATE.yaml",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/06-PROJECT_STATE.yaml",
+      "bytes": 8776,
+      "sha256": "ca8ed5825769b5007835c9b44d3a4e7b4ebd1cba120340686d017686b3a64270"
+    },
+    {
+      "source": "TASKS.md",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/07-TASKS.md",
+      "bytes": 6728,
+      "sha256": "590da697f0da1c2bc38f648d53dd9be8fe2bec0df0dc209ab9adf5af5f050c21"
+    },
+    {
+      "source": "output/research/frontend-three-remedy-evaluation-2026-10-06/candidate/package.json",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/08-package.json",
+      "bytes": 1160,
+      "sha256": "09e0c47f0b2f11d9ea2c2878624498c6423b8f23a9d3c2795c0e438bc2f6eee8"
+    },
+    {
+      "source": "output/research/frontend-three-remedy-evaluation-2026-10-06/candidate/package-lock.json",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/09-package-lock.json",
+      "bytes": 160266,
+      "sha256": "fa903a8d901357aacf80863524e0e00ae2ece69126daf218256cdd2656b2da4c"
+    },
+    {
+      "source": "output/research/optional-wasm-contents-2026-10-06/contents.json",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/10-contents.json",
+      "bytes": 39151,
+      "sha256": "8c50698d7dcc6a44079d421f9fd082271479b6101ea38b8db64240182654c696"
+    },
+    {
+      "source": "output/research/frontend-supply-chain-2026-10-06/lock-sbom-receipt.json",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/11-lock-sbom-receipt.json",
+      "bytes": 1400,
+      "sha256": "005e5de5ca9ab84575e2883979fe5c50c698adf3d887acb311b43c65426c3236"
+    },
+    {
+      "source": "output/research/frontend-supply-chain-2026-10-06/lock-sbom.stderr.txt",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/12-lock-sbom.stderr.txt",
+      "bytes": 800,
+      "sha256": "342db79b566f6a3f8f289b90198eedc875dff5e61cc5de29766bfb9738311078"
+    },
+    {
+      "source": "output/research/frontend-supply-chain-2026-10-06/protected-before.json",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/13-protected-before.json",
+      "bytes": 10594,
+      "sha256": "9bb8f003769b335983ea004bb8caeb085669baee1a7a8cbc816db07367c1c63f"
+    },
+    {
+      "source": "docs/phase-1-compatibility/reviews/optional-wasm-contents-v1-2026-10-06.md",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/14-optional-wasm-contents-v1-2026-10-06.md",
+      "bytes": 6113,
+      "sha256": "28b4b455fd29ebed2ea89164daa41b92e1165e129487816b1f93bd56e6d2828c"
+    },
+    {
+      "source": "output/research/frontend-build-evaluation-2026-10-06/runtime/package/package.json",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/15-package.json",
+      "bytes": 6860,
+      "sha256": "e802b643a547826bcc250cf5c19b0ae448b4dbca8bec53938916a2f803ba521f"
+    },
+    {
+      "source": "output/research/frontend-build-evaluation-2026-10-06/runtime/package/node_modules/@npmcli/arborist/lib/node.js",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/16-node.js",
+      "bytes": 50554,
+      "sha256": "9a73a7a94eaf7d713fffdc739d817dfe1aba70c6fb1f344d81cf44702e6e8c52"
+    },
+    {
+      "source": "output/research/frontend-build-evaluation-2026-10-06/runtime/package/node_modules/@npmcli/arborist/lib/calc-dep-flags.js",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/17-calc-dep-flags.js",
+      "bytes": 4003,
+      "sha256": "ee52204dfdf97fdb510e041fab275e29b459ec47beb625eb52637691d50e06b8"
+    },
+    {
+      "source": "output/research/frontend-build-evaluation-2026-10-06/runtime/package/node_modules/@npmcli/arborist/lib/arborist/load-virtual.js",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/18-load-virtual.js",
+      "bytes": 9220,
+      "sha256": "90be0b7feaec3b2659201bea6c3f223912a12d80df6e170e8743d6132ae69fa1"
+    },
+    {
+      "source": "output/research/frontend-build-evaluation-2026-10-06/runtime/package/lib/utils/sbom-spdx.js",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/19-sbom-spdx.js",
+      "bytes": 5796,
+      "sha256": "88c353b0b5f5d498578c3a9efd5634167c796837d2df099596ecc63959707596"
+    },
+    {
+      "source": "output/research/frontend-build-evaluation-2026-10-06/runtime/package/lib/commands/sbom.js",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/20-sbom.js",
+      "bytes": 4569,
+      "sha256": "4207e0d6174beaae75ba2486b1c27727c9f38797eec9308a0cfdc6b9b830ba98"
+    },
+    {
+      "source": "output/research/frontend-bundled-sbom-2026-10-08/archive-metadata.json",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/21-archive-metadata.json",
+      "bytes": 13313,
+      "sha256": "4c2e0ea3adcdc6ad9f07cef4746e415384084fbaec873b29c1dfcd16e0453a4e"
+    },
+    {
+      "source": "output/research/frontend-bundled-sbom-2026-10-08/export.cjs",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/22-export.cjs",
+      "bytes": 5054,
+      "sha256": "c5646fef47f50c25eef5bd20d5678e979dba5b1a458e6ec98e792e893fa982e4"
+    },
+    {
+      "source": "output/research/frontend-bundled-sbom-2026-10-08/graph.json",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/23-graph.json",
+      "bytes": 166393,
+      "sha256": "21b9afe89aff5545444f4c0dcdb46b1fff5c3cd68a96b77697257ba0445f8b2d"
+    },
+    {
+      "source": "output/research/frontend-bundled-sbom-2026-10-08/initial-validation-observation.json",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/24-initial-validation-observation.json",
+      "bytes": 524,
+      "sha256": "e335f4fa9d9b320626ac6e82d802973a2d08239df380bd988b2241ad92d827e5"
+    },
+    {
+      "source": "output/research/frontend-bundled-sbom-2026-10-08/integrate-and-freeze.py",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/25-integrate-and-freeze.py",
+      "bytes": 8622,
+      "sha256": "051120df83029c947f5f682d72c65a9181aae4459d481f2184a2d744b3c27885"
+    },
+    {
+      "source": "output/research/frontend-bundled-sbom-2026-10-08/prepare.py",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/26-prepare.py",
+      "bytes": 2142,
+      "sha256": "b273f4aa9347f9ecf6eb9b938c128f1011a276ae7923e91c0fed681d9a7769f4"
+    },
+    {
+      "source": "output/research/frontend-bundled-sbom-2026-10-08/README.before.md",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/27-README.before.md",
+      "bytes": 38046,
+      "sha256": "2f39c344742b33dfc6f88b25cced9199895b718581b074e77d826475ccf36f15"
+    },
+    {
+      "source": "output/research/frontend-bundled-sbom-2026-10-08/refresh-evidence.before.md",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/28-refresh-evidence.before.md",
+      "bytes": 106247,
+      "sha256": "5437340fb2d89288bed929fd0f9b369210b17d6370f8ce07bcb62c6455699ccd"
+    },
+    {
+      "source": "output/research/frontend-bundled-sbom-2026-10-08/schema-source.json",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/29-schema-source.json",
+      "bytes": 299,
+      "sha256": "53ff65f0c778d77a463af86bf8da3f6ff9cc0c619bbbe25029fb025f1463c956"
+    },
+    {
+      "source": "output/research/frontend-bundled-sbom-2026-10-08/spdx-schema.json",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/30-spdx-schema.json",
+      "bytes": 45312,
+      "sha256": "239208b7ac287b3cf5d9a9af23f9d69863971102a5e1587a27a398b43490b89b"
+    },
+    {
+      "source": "output/research/frontend-bundled-sbom-2026-10-08/supplemented.spdx.json",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/31-supplemented.spdx.json",
+      "bytes": 351763,
+      "sha256": "983b6e17c78bac474f2da7b70f79d68115ca33c54dba64fc8ffb40b09ec9a704"
+    },
+    {
+      "source": "output/research/frontend-bundled-sbom-2026-10-08/validate.py",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/32-validate.py",
+      "bytes": 4630,
+      "sha256": "b542f46acc4c71b981e6d1acbe4e7a8fa32ad635e457e3561e1ed8856762ab8b"
+    },
+    {
+      "source": "output/research/frontend-bundled-sbom-2026-10-08/validation.json",
+      "snapshot": "output/research/frontend-bundled-sbom-2026-10-08/correction-1/review-snapshots/33-validation.json",
+      "bytes": 3897,
+      "sha256": "4ab40ba82a383ee4887617a8b94d2df99e8aa584b014386de1319c06001d11b7"
+    },
+    {
+      "source": "output/research/optional-wasm-bundle-2026-10-06/oxide-wasm32-wasi-4.3.3.tgz",
+      "snapshot": "output/research/optional-wasm-bundle-2026-10-06/oxide-wasm32-wasi-4.3.3.tgz",
+      "bytes": 1829808,
+      "sha256": "d5b61fbe10d237f7565032a74b03b5be6c83b309037ee407e2b5b46f24738823"
+    }
+  ],
+  "correction": "One sentence distinguishes twelve dependencies edges from two peer edges; all other34input identities unchanged"
+}

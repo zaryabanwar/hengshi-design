@@ -1,0 +1,97 @@
+{
+  "scope": "only additive staff-sign-in details and its README entry; predecessor restoration guards all other content/CSS/scripts",
+  "inputs": [
+    {
+      "path": "output/playwright/staff-signin-walkthrough-2026-10-06/definition-walkthrough.html.reviewed",
+      "sha256": "da1ebd5ca572b54af1f72950f8466e45add94b7dd394e7ef4e39d6c157f1c573"
+    },
+    {
+      "path": "output/playwright/staff-signin-walkthrough-2026-10-06/definition-walkthrough.html.before",
+      "sha256": "0cc349364c8911acc5660649b6c5b09d974e833752c9eb28edbbe3b8538e19c1"
+    },
+    {
+      "path": "docs/software-definition/definition-walkthrough.html",
+      "sha256": "da1ebd5ca572b54af1f72950f8466e45add94b7dd394e7ef4e39d6c157f1c573"
+    },
+    {
+      "path": "output/playwright/staff-signin-walkthrough-2026-10-06/README.md.reviewed",
+      "sha256": "d02783261a2f55c6a732f232743ff1ed75400b8853837d2f498e24a9f7d6027d"
+    },
+    {
+      "path": "output/playwright/staff-signin-walkthrough-2026-10-06/README.md.before",
+      "sha256": "bb666897e105df28616d4fe71f085f691c214ec28913220ad386093d91e72a3c"
+    },
+    {
+      "path": "docs/software-definition/README.md",
+      "sha256": "d02783261a2f55c6a732f232743ff1ed75400b8853837d2f498e24a9f7d6027d"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "sha256": "50f3c00d5e6aed36bb4fa99e864ba337cc3dc3f76c0665ff30e0f765782ad00a"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/staff-signin-boundary-v1-2026-10-06.md",
+      "sha256": "33c15ae66c8fae70ce86cf1ef42b3aad52a3f39076e6beb1e0660fed31ea215a"
+    },
+    {
+      "path": "specs/001-platform-security-hardening/spec.md",
+      "sha256": "47704c411b72195a2a4f8b832b07b30d90b00673647afe50d8ac98b917939d99"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "path": ".specify/memory/constitution.md",
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "path": "PROJECT.md",
+      "sha256": "a483bd2713fe420322772ab7fb07c848aaf103088697c05ab91f35d2e5ea1461"
+    },
+    {
+      "path": "DECISIONS.md",
+      "sha256": "0290e6bed5d983fa1f2162db72f1a9d3167695ff98c867c88987ee1e2c4bcc99"
+    },
+    {
+      "path": "PROJECT_STATE.yaml",
+      "sha256": "cbc1e4faa2288d39c03fc0bc83e852a8d5a215a814fc5b07568032b26e617623"
+    },
+    {
+      "path": "package.json",
+      "sha256": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908"
+    },
+    {
+      "path": "apps/web/package.json",
+      "sha256": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a"
+    },
+    {
+      "path": "apps/web/package-lock.json",
+      "sha256": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d"
+    },
+    {
+      "path": "apps/api/requirements.txt",
+      "sha256": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd"
+    },
+    {
+      "path": "output/playwright/staff-signin-walkthrough-2026-10-06/desktop.png",
+      "sha256": "0f0fe25981ef5f9be11d0a4d7db6ee93a299ad099b98173b29da15c05dfaa9da"
+    },
+    {
+      "path": "output/playwright/staff-signin-walkthrough-2026-10-06/mobile.png",
+      "sha256": "c10d90bdba97ac1e3f8420a09e0252de6bce9f57a8bc1bf129c1488184e5353b"
+    },
+    {
+      "path": "output/playwright/staff-signin-walkthrough-2026-10-06/browser-observations.json",
+      "sha256": "ae0e642fad585f2dcd5c3a1eed5a1d45a6bdc2d1a1c551660830d9b9ea128e60"
+    }
+  ],
+  "primary_sources": [
+    "https://learn.microsoft.com/en-us/entra/identity/users/users-revoke-access",
+    "https://learn.microsoft.com/en-us/entra/identity-platform/v2-protocols-oidc#single-sign-out"
+  ]
+}

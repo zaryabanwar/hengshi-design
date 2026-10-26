@@ -1,0 +1,361 @@
+- application "Figma Design, 5 items selected" [active]
+- status: Screenreader support for the board is currently disabled. To enable it via Accessibility settings, press Ctrl+K, type Accessibility Settings, and press Enter. To see available keyboard shortcuts, enter Ctrl+Shift+Question mark .
+- status
+- region "Comments on canvas":
+  - button "Create new comment"
+- region "Left sidebar":
+  - toolbar "Navigation Bar":
+    - button "Main menu":
+    - separator
+    - button "File" [expanded]:
+      - generic: File
+    - button "Agents":
+      - generic: Agents
+    - button "Assets":
+      - generic: Assets
+    - button "Tools":
+      - generic: Tools
+    - separator
+    - button "Variables":
+      - generic: Variables
+  - button "Hengshi Design v1 — UI References, file name": Hengshi Design v1 — UI References
+  - generic: File name
+  - button "Edit file menu":
+  - button "Minimize UI":
+  - link "hengshi-design":
+    - /url: https://www.figma.com/files/team/1472694121837770005/project/666072293
+  - button "Free":
+    - generic: Free
+  - heading "Pages Find Add new page" [level=2]:
+    - button "Pages" [expanded]:
+      - generic: Pages
+    - button "Find":
+    - button "Add new page":
+  - grid:
+    - row "Page 1":
+      - gridcell "Page 1":
+        - button "Page 1":
+          - generic: Page 1
+  - slider "Resize handle"
+  - heading "Layers Collapse layers" [level=2]:
+    - button "Layers" [expanded]:
+      - generic: Layers
+    - button "Collapse layers":
+  - treegrid:
+    - row "B01 / Four-stream three-host qualification / v1" [expanded]:
+      - button:
+      - gridcell:
+      - gridcell "B01 / Four-stream three-host qualification / v1":
+        - generic: B01 / Four-stream three-host qualification / v1
+    - row "B01 qualification / RECOVERY / seed / v1" [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "B01 qualification / RECOVERY / seed / v1":
+        - generic: B01 qualification / RECOVERY / seed / v1
+    - row "Trial scroll marker" [level=2]:
+      - gridcell:
+      - gridcell "Trial scroll marker":
+        - generic: Trial scroll marker
+    - row "Context summary / fixed Services fixture Toggle layer locking Toggle layer visibility" [level=2] [selected]:
+      - gridcell:
+      - gridcell "Context summary / fixed Services fixture":
+        - generic: Context summary / fixed Services fixture
+      - gridcell "Toggle layer locking":
+        - checkbox "Toggle layer locking"
+        - generic: Toggle layer locking
+      - gridcell "Toggle layer visibility":
+        - checkbox "Toggle layer visibility"
+        - generic: Toggle layer visibility
+    - row "Underlying Services fixture (unwired while modal open)" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "Underlying Services fixture (unwired while modal open)":
+        - generic: Underlying Services fixture (unwired while modal open)
+    - row "Menu action" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "Menu action":
+        - generic: Menu action
+    - row "PRIM-001 / Delivery stream control / B01 v1" [level=2]:
+      - button:
+      - gridcell:
+      - gridcell "PRIM-001 / Delivery stream control / B01 v1":
+        - generic: PRIM-001 / Delivery stream control / B01 v1
+    - row "ENQ_NAVIGATION_HIGH / RESET probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_HIGH / RESET probe":
+        - generic: ENQ_NAVIGATION_HIGH / RESET probe
+    - row "ENQ_NAVIGATION_HIGH / PRESERVE probe" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_HIGH / PRESERVE probe":
+        - generic: ENQ_NAVIGATION_HIGH / PRESERVE probe
+    - row "ENQ_NAVIGATION_HIGH / Preview" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "ENQ_NAVIGATION_HIGH / Preview":
+        - generic: ENQ_NAVIGATION_HIGH / Preview
+    - row "B01 qualification / DIRECTORY / v1" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "B01 qualification / DIRECTORY / v1":
+        - generic: B01 qualification / DIRECTORY / v1
+    - row "B01 qualification / NAVIGATION / v1" [level=1]:
+      - button:
+      - gridcell:
+      - gridcell "B01 qualification / NAVIGATION / v1":
+        - generic: B01 qualification / NAVIGATION / v1
+    - row "B01 / Native host-variant qualification / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Native host-variant qualification / v1":
+        - generic: B01 / Native host-variant qualification / v1
+    - row "B01 / Mode references / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Mode references / v1":
+        - generic: B01 / Mode references / v1
+    - row "B01 / Responsive viewport references / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Responsive viewport references / v1":
+        - generic: B01 / Responsive viewport references / v1
+    - row "B01 / Shared recovery specimens / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Shared recovery specimens / v1":
+        - generic: B01 / Shared recovery specimens / v1
+    - row "PRIM-001 / Capability refusal references / B01 v1":
+      - button:
+      - gridcell:
+      - gridcell "PRIM-001 / Capability refusal references / B01 v1":
+        - generic: PRIM-001 / Capability refusal references / B01 v1
+    - row "B01 / Capability refusal host references / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Capability refusal host references / v1":
+        - generic: B01 / Capability refusal host references / v1
+    - row "B01 / Shared recovery stream references / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Shared recovery stream references / v1":
+        - generic: B01 / Shared recovery stream references / v1
+    - row "B01 / Directory search states / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Directory search states / v1":
+        - generic: B01 / Directory search states / v1
+    - row "B01 / Directory reusable sources / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Directory reusable sources / v1":
+        - generic: B01 / Directory reusable sources / v1
+    - row "B01 / Navigation stream states / v1":
+      - button:
+      - gridcell:
+      - gridcell "B01 / Navigation stream states / v1":
+        - generic: B01 / Navigation stream states / v1
+    - row "PRIM-001 / Delivery stream control / B01 v1":
+      - button:
+      - gridcell:
+      - gridcell "PRIM-001 / Delivery stream control / B01 v1":
+        - generic: PRIM-001 / Delivery stream control / B01 v1
+    - row "B01 DRAFT / TPL-SYSTEM-RECOVERY / 390":
+      - button:
+      - gridcell:
+      - gridcell "B01 DRAFT / TPL-SYSTEM-RECOVERY / 390":
+        - generic: B01 DRAFT / TPL-SYSTEM-RECOVERY / 390
+    - row "B01 DRAFT / TPL-SYSTEM-RECOVERY / 1440":
+      - button:
+      - gridcell:
+      - gridcell "B01 DRAFT / TPL-SYSTEM-RECOVERY / 1440":
+        - generic: B01 DRAFT / TPL-SYSTEM-RECOVERY / 1440
+    - row "B01 DRAFT / TPL-DIRECTORY-SEARCH / 390":
+      - button:
+      - gridcell:
+      - gridcell "B01 DRAFT / TPL-DIRECTORY-SEARCH / 390":
+        - generic: B01 DRAFT / TPL-DIRECTORY-SEARCH / 390
+    - row "B01 DRAFT / TPL-DIRECTORY-SEARCH / 1440":
+      - button:
+      - gridcell:
+      - gridcell "B01 DRAFT / TPL-DIRECTORY-SEARCH / 1440":
+        - generic: B01 DRAFT / TPL-DIRECTORY-SEARCH / 1440
+    - row "B01 DRAFT / TPL-GLOBAL-NAVIGATION / 390":
+      - button:
+      - gridcell:
+      - gridcell "B01 DRAFT / TPL-GLOBAL-NAVIGATION / 390":
+        - generic: B01 DRAFT / TPL-GLOBAL-NAVIGATION / 390
+    - row "B01 DRAFT / TPL-GLOBAL-NAVIGATION / 1440":
+      - button:
+      - gridcell:
+      - gridcell "B01 DRAFT / TPL-GLOBAL-NAVIGATION / 1440":
+        - generic: B01 DRAFT / TPL-GLOBAL-NAVIGATION / 1440
+    - row "B01 CONSTRUCTION / file-local PRIM sources":
+      - button:
+      - gridcell:
+      - gridcell "B01 CONSTRUCTION / file-local PRIM sources":
+        - generic: B01 CONSTRUCTION / file-local PRIM sources
+  - slider "Resize handle"
+- region "Right sidebar":
+  - button "Multiplayer tools":
+  - group "Prototype view":
+    - button "Present":
+    - button "Prototype view":
+  - button "Share"
+  - tablist:
+    - tab "Design" [selected]:
+      - generic: Design
+      - generic: Design
+    - tab "Prototype":
+      - generic: Prototype
+      - generic: Prototype
+  - button "51%, zoom and view options":
+    - text: 51%
+  - heading "Text" [level=1]
+  - button "Select matching layers":
+  - checkbox "Create link"
+  - generic: Create link
+  - checkbox "Use as mask"
+  - generic: Use as mask
+  - button "More actions":
+  - generic: Content
+  - textbox: Synthetic offline context retained Services · In force Detailed 3D
+  - button "Apply variable/property":
+  - heading "Position" [level=2]
+  - group "Alignment":
+    - generic: Alignment
+    - button "Align left":
+    - button "Align horizontal centers":
+    - button "Align right":
+    - button "Align top":
+    - button "Align vertical centers":
+    - button "Align bottom":
+  - group "Position":
+    - generic: Position
+    - generic: X
+    - spinbutton "X-position": "24"
+    - generic: "Y"
+    - spinbutton "Y-position": "16"
+    - button "Constraints":
+  - group "Rotation":
+    - generic: Rotation
+    - spinbutton "Rotation": 0°
+    - button "Rotate 90˚ right":
+    - button "Flip horizontal":
+    - button "Flip vertical":
+  - heading "Layout" [level=2]
+  - group "Resizing":
+    - generic: Resizing
+    - radiogroup "Resizing":
+      - generic: Resizing
+      - radio "Auto width"
+      - generic: Auto width
+      - radio "Auto height" [checked]
+      - generic: Auto height
+      - radio "Fixed size"
+      - generic: Fixed size
+  - group "Dimensions":
+    - generic: Dimensions
+    - generic "Width":
+      - generic: W
+      - textbox "Width": "240"
+    - generic "Height":
+      - generic: H
+      - textbox "Height" [disabled]: "72"
+    - checkbox "Lock aspect ratio"
+    - generic: Lock aspect ratio
+  - heading "Appearance" [level=2]
+  - checkbox "Hide"
+  - generic: Hide
+  - button "Apply variable/property":
+  - button "Apply blend mode":
+  - generic: Opacity
+  - textbox: 100%
+  - generic: Corner radius
+  - textbox [disabled]: "0"
+  - heading "Typography" [level=2]
+  - button "B01 reference/body B01 reference/body · 16/24":
+    - img "B01 reference/body"
+    - generic: B01 reference/body
+    - generic: · 16/24
+  - group "Alignment":
+    - generic: Alignment
+    - radiogroup "Horizontal":
+      - generic: Horizontal
+      - radio "Align left" [checked]
+      - generic: Align left
+      - radio "Align center"
+      - generic: Align center
+      - radio "Align right"
+      - generic: Align right
+    - radiogroup "Vertical":
+      - generic: Vertical
+      - radio "Align top" [checked]
+      - generic: Align top
+      - radio "Align middle"
+      - generic: Align middle
+      - radio "Align bottom"
+      - generic: Align bottom
+    - button "Type settings":
+  - heading "Fill" [level=2]
+  - button "Fill, Apply styles and variables":
+  - button "Add fill":
+  - grid:
+    - 'row "Color Variable D035/palette/ink with value #0B0F14 · 100% Toggle visibility Remove"':
+      - 'gridcell "Color Variable D035/palette/ink with value #0B0F14 · 100%"':
+        - 'button "Color Variable D035/palette/ink with value #0B0F14 · 100%"':
+          - generic "D035/palette/ink"
+        - generic: Click to edit color variable
+      - gridcell "Toggle visibility":
+        - checkbox "Toggle visibility" [checked]
+        - generic: Toggle visibility
+      - gridcell "Remove":
+        - button "Remove":
+  - button "Stroke":
+    - heading "Stroke" [level=2]
+  - button "Stroke, Apply styles and variables":
+  - button "Add stroke":
+  - button "Effects":
+    - heading "Effects" [level=2]
+  - button "Effects, Apply styles":
+  - button "Add effect":
+  - button "Export":
+    - generic: Export
+  - button "Add export settings":
+  - slider "Resize handle"
+- region "Application toolbar":
+  - toolbar "Editor":
+    - group "Move":
+      - button "Move" [pressed]:
+      - button "Move tools":
+    - group "Frame":
+      - button "Frame":
+      - button "Region tools":
+    - group "Rectangle":
+      - button "Rectangle":
+      - button "Shape tools":
+    - group "Pen":
+      - button "Pen":
+      - button "Creation tools":
+    - group "Text":
+      - button "Text":
+      - button "Type tools":
+    - button "Comment":
+    - button "Actions":
+    - radiogroup "Toolbelt Mode":
+      - generic: Toolbelt Mode
+      - radio "Draw"
+      - generic: Draw
+      - radio "Design" [checked]
+      - generic: Design
+      - radio "Motion"
+      - generic: Motion
+      - radio "Dev Mode"
+      - generic: Dev Mode
+- region "Help/zoom toolbar":
+  - toolbar "Help/zoom toolbar":
+    - button "Help":
+- status
+- alert
+- alert

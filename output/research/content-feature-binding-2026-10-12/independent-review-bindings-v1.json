@@ -1,0 +1,284 @@
+{
+  "product": "Hengshi Design v1",
+  "verdict": "PASS",
+  "reviewed_at_utc": "2026-10-11T20:05:02.823738+00:00",
+  "scope": "Independent binding-consistency review of spec004 schema-hold clarification, interface bindings/paragraph and checklist separation of Phase1 definition holds from D076 deferred production inputs, against both saved predecessors.",
+  "packet_binding": {
+    "path": "output/research/content-feature-binding-2026-10-12/review-inputs.json",
+    "sha256": "82b11255064c2914d3553fd3eb04dcef69a7227d339c4eef1f3d3da2e72a0f5b",
+    "verified_input_count": 29,
+    "all_frozen_bytes_and_sha256_verified": true
+  },
+  "changed_artifact_bindings": {
+    "07-spec.md": {
+      "bytes": 30726,
+      "sha256": "8b87224235f1b3d48984998b145df839afce0b1c2c921518325d66eb4c2b3c16"
+    },
+    "08-requirements.md": {
+      "bytes": 4749,
+      "sha256": "461682c967b7a3facdcf7905edd5c45f46e84eb45771e9f96d7bcd81e55fb576"
+    },
+    "09-spec.md": {
+      "bytes": 28074,
+      "sha256": "d95a6fa419135cbc1774a3f5bff5e141ec9ba0a8ae8a108e752b890e96df7a34"
+    },
+    "10-requirements.md": {
+      "bytes": 3958,
+      "sha256": "b84dab8f61339df8d5c23bad402d26f1eeb47cf1ed152ffb8dd75417f4052e5b"
+    }
+  },
+  "delta_inventory": {
+    "specification": [
+      {
+        "operation": "replace",
+        "predecessor_start_line": 177,
+        "predecessor_end_exclusive_line": 179,
+        "current_start_line": 177,
+        "current_end_exclusive_line": 180,
+        "old_sha256": "e3de7a349f113dd4ec79dc13457065e222bfa260e86069400465269dd4dbece9",
+        "new_sha256": "9a151e3a267b9ba91ad0bb6c26f00a81bc404ca4856fe5d7887f0dedaf4251ef"
+      },
+      {
+        "operation": "replace",
+        "predecessor_start_line": 194,
+        "predecessor_end_exclusive_line": 196,
+        "current_start_line": 195,
+        "current_end_exclusive_line": 198,
+        "old_sha256": "f498d0681aac053a04e66f95d753b2fe7b456d28e3394fd47aa5aeb1afa380ce",
+        "new_sha256": "726b442f3727b9ef3f1916b66a72a0fb8dba2ea7418cb0f19fc3425138f7a7b4"
+      },
+      {
+        "operation": "insert",
+        "predecessor_start_line": 200,
+        "predecessor_end_exclusive_line": 200,
+        "current_start_line": 202,
+        "current_end_exclusive_line": 214,
+        "old_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "new_sha256": "eaa27f9a7047b09b28306d67ac9a71092fab43ebc275779f98b758b7cb576817"
+      }
+    ],
+    "checklist": [
+      {
+        "operation": "replace",
+        "predecessor_start_line": 27,
+        "predecessor_end_exclusive_line": 28,
+        "current_start_line": 27,
+        "current_end_exclusive_line": 29,
+        "old_sha256": "224e35bad83c1c9f99e2e390bd42c7f0dec2f91a918160c381ef2f1313a67ed0",
+        "new_sha256": "ec794d54b5e38eafaa7cba45692a9670a38f507b508473b5261b53d6b83e0fc5"
+      },
+      {
+        "operation": "replace",
+        "predecessor_start_line": 35,
+        "predecessor_end_exclusive_line": 36,
+        "current_start_line": 36,
+        "current_end_exclusive_line": 41,
+        "old_sha256": "0fba2a207518ac640f89cf5f0d63c180e071fcfc51e7f4c7c03a060cb79786ba",
+        "new_sha256": "95febc993018193f0915eac51207bd5801d44ae450dcd1026014c7a7cc3c15ef"
+      },
+      {
+        "operation": "replace",
+        "predecessor_start_line": 46,
+        "predecessor_end_exclusive_line": 47,
+        "current_start_line": 51,
+        "current_end_exclusive_line": 53,
+        "old_sha256": "b335e0bb793fb39cb7043d68fd0c39f67b057e7281be63857348376a2e7dd8a6",
+        "new_sha256": "f704de65a0dc2182b50e4c5e7c637977626ba6a61471199facc62f3aa37e97f3"
+      }
+    ]
+  },
+  "byte_text_identical_sections": [
+    "## Functional Requirements",
+    "## Non-Functional Requirements",
+    "## Acceptance Scenarios",
+    "## Dependencies and Manual Inputs",
+    "## Open Decisions and Assumptions"
+  ],
+  "findings": [],
+  "observations": [
+    "Specification has exactly three diff regions: data-schema hold clarification, interface-table binding changes and appended reconciliation paragraph. Checklist has exactly three diff regions for binding/readiness/production separation and producer read-back. No existing FCT requirement, NFR, scenario or dependency/open-decision hold is altered.",
+    "FCT06 maps the private typed company-facts root to the separate allowlisted public_projection definition. Registration identifiers, registered address and validity remain private and cannot be disguised in allowed strings or any public derivative. Mandatory operator/contact notice assessment and public exclusion are preserved; schema existence does not authenticate real facts.",
+    "FCT08/09/13 retain seven derivative kinds, same eligible immutable candidate and publication-owned activation. Private preparation request/prepared/failed representations carry admitted bindings rather than approval authority. A worker result cannot approve content, verify actual artifact bytes, claim readiness or activate publication.",
+    "FCT04/08/13 correctly associate eligible public text with the publication-owned knowledge bundle and private registered extraction plan. The public text projection is an internal public-data preparation representation, not an added downloadable artifact. Private mapping/configuration does not enter public knowledge bytes.",
+    "Projection/profile digests remain distinct from full source document identity/hash. Exact source/projection/profile associations, complete context mapping, current eligibility and whole-answer support remain semantic/runtime obligations. Closed selectors cannot grant source permission, inspect private objects or establish grounding.",
+    "D076 explicitly defers real claims/projects/team/owners and other operational records to the intended admin workflow before production. Revised checklist moves their verification to a later unchecked production obligation, retaining evidence/rights/reviewer/publication and real legal/contact duties. It does not allow fixtures to satisfy real public evidence or active staff/contact truth.",
+    "Phase1 contract/design/policy definitions, final specialist/legal/feature/integrated review and applicable founder approvals remain unchecked/held. Alias owners remain explicitly undecided, with no inferred operator, mailbox delivery or triage assignment. The producer checklist is not independent acceptance.",
+    "All10 newly added relative links are present in the frozen packet and all four nonempty heading anchors resolve. Distinct company, manifest, private preparation, bundle, text projection and extraction-map shapes exist with the referenced roles. Shape correspondence is inspection only; no schema/validator behavior was rerun or broadened.",
+    "Earlier feature, D076, company projection, preparation and knowledge reviews retain their frozen-input scopes. Later closed representations supersede only generic statements that no shape exists; their bounded PASS does not constitute format/policy adoption, legal clearance, actual enforcement, runtime grounding or fresh whole-feature PASS."
+  ],
+  "new_links_checked": [
+    {
+      "source": "docs/phase-1-architecture/contracts/company-facts.schema.json",
+      "anchor": ""
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "anchor": "d-076-company-facts-public-projection--2026-10-07"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/publication-manifest.schema.json",
+      "anchor": ""
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "anchor": "semantic-preparation-engineering-proposal"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/publication-preparation.schema.json",
+      "anchor": ""
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "anchor": "public-text-projection-profile-proposal--2026-10-08"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/knowledge-bundle.schema.json",
+      "anchor": ""
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "anchor": "knowledge-source-extraction-profile-proposal--2026-10-08"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/public-text-projection.schema.json",
+      "anchor": ""
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/knowledge-extraction-map.schema.json",
+      "anchor": ""
+    }
+  ],
+  "shape_correspondence": [
+    {
+      "input": "18-company-facts.schema.json",
+      "title": "Prepared company facts v1 — draft shape contract",
+      "required_root_fields": [
+        "schema_version",
+        "legal_name",
+        "registration_jurisdiction"
+      ],
+      "definitions": [
+        "public_projection",
+        "text",
+        "month",
+        "monthValidity"
+      ]
+    },
+    {
+      "input": "19-publication-manifest.schema.json",
+      "title": "Proposed public immutable publication envelope v1",
+      "required_root_fields": [
+        "manifest_sha256",
+        "manifest"
+      ],
+      "definitions": [
+        "sha256",
+        "identifier",
+        "asset_key",
+        "canonical_path",
+        "route",
+        "artifact",
+        "manifest"
+      ]
+    },
+    {
+      "input": "20-publication-preparation.schema.json",
+      "title": "Proposed private publication preparation messages v1",
+      "required_root_fields": null,
+      "definitions": [
+        "uuid",
+        "revision",
+        "binding",
+        "plan_artifact",
+        "request",
+        "prepared",
+        "failed"
+      ]
+    },
+    {
+      "input": "21-knowledge-bundle.schema.json",
+      "title": "Proposed public grounding bundle v1",
+      "required_root_fields": [
+        "schema_version",
+        "kind",
+        "release_id",
+        "content_snapshot_sha256",
+        "artifact_id",
+        "sources",
+        "passages"
+      ],
+      "definitions": [
+        "source",
+        "passage"
+      ]
+    },
+    {
+      "input": "22-public-text-projection.schema.json",
+      "title": "Proposed internal public text projection v1",
+      "required_root_fields": [
+        "schema_version",
+        "title",
+        "sections"
+      ],
+      "definitions": [
+        "label",
+        "section",
+        "unit"
+      ]
+    },
+    {
+      "input": "23-knowledge-extraction-map.schema.json",
+      "title": "Proposed private knowledge source extraction map v1",
+      "required_root_fields": [
+        "schema_version",
+        "source_reference",
+        "projection_sha256",
+        "projection_profile",
+        "extraction_profile",
+        "title_pointer",
+        "passages"
+      ],
+      "definitions": [
+        "profile",
+        "passage"
+      ]
+    }
+  ],
+  "prior_review_bindings": [
+    {
+      "source": "specs/004-design-services-content/reviews/content-feature-v1-2026-10-04.md",
+      "sha256": "c7fb841bf13e5f7a4654b2bccde5af5b40e3efbacd8a7dc0e4d56724dea7147c"
+    },
+    {
+      "source": "docs/software-definition/reviews/feature-d076-reconciliation-v1-2026-10-07.md",
+      "sha256": "05fa6ae34a012bf0779d2b99f858615a61afb2379b48b97f74f3ab5fadff3a8a"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/company-public-projection-v1-2026-10-07.md",
+      "sha256": "7222bc92b7dd3e846ba6faea9383f8d027c362ec6b38a19a26f9107d588da245"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/preparation-message-v1-2026-10-05.md",
+      "sha256": "d549196c45cce065b01d9ad2c5e9adf7b1c4aa5fe33503b9d13647a3bb51a773"
+    },
+    {
+      "source": "output/research/knowledge-bundle-2026-10-08/independent-review-knowledge-bundle-v1.json",
+      "sha256": "9c2be75d8b91c729c8ddefca05efae896c5df89145c28bd189f91d67864f78a1"
+    },
+    {
+      "source": "output/research/knowledge-extraction-profile-2026-10-08/independent-review-knowledge-extraction-profile-v1.json",
+      "sha256": "88247a2c8a1e172419a7ae752282da059775e8b3c4634b3b1053c222ac28a3e7"
+    },
+    {
+      "source": "output/research/knowledge-extraction-shapes-2026-10-08/independent-review-knowledge-extraction-shapes-v1.json",
+      "sha256": "0eac3f0b9b0560cfd84abf1ad4ef7d74bbf8d9f0115c1bd05257e117e2ff0025"
+    }
+  ],
+  "limits": [
+    "PASS covers only the exact prepared delta and29 frozen bindings; it is not a fresh whole-feature or controlling-contract/source re-review.",
+    "No content/publication gate is waived. Real eligible records, owners/reviewers, evidence/rights, applicable notices and operational contacts remain prerequisites before their production use; D076 defers these records rather than approving them.",
+    "Format/policy adoption, legal/privacy clearance, exact mechanisms and resource limits, design/feature/integrated/founder acceptance and planning/implementation authority remain separate and held.",
+    "No actual compiler, extraction/index/retrieval/model, publication worker/coordinator, authorization, source exclusion, storage, HTTP/no-JS/browser, SEO output, accessibility, security or live contact behavior was executed or qualified.",
+    "No application, asset, dependency, Figma/browser/network/account/provider, Git, external action or delegation occurred. Only this exclusive-create receipt was written."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "D-076 visitor inactivity and explicit End amendment; two changed contracts; definition only",
+  "review_status": "BLOCKED",
+  "review_blocker": "Existing independent reviewer terminal workspace-credit error; no verdict for these bytes",
+  "predecessors": [
+    "PRIVATE_PROCESS_PROOF.md.before",
+    "HANDOFF_LIFECYCLE.md.before"
+  ],
+  "inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "snapshots/01-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "snapshots/02-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "snapshots/03-DECISIONS.md",
+      "bytes": 84370,
+      "sha256": "f38b6f5930b51cae9188db8df6bc9fe458b0df907a3f6eab10fc6b956a0b50da"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "snapshot": "snapshots/04-PRIVATE_PROCESS_PROOF.md",
+      "bytes": 108274,
+      "sha256": "f247fd4c72d2e79cd03d77cd9d0e5287f2266c85bf4cefd129742bb2a9f639a2"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "snapshot": "snapshots/05-HANDOFF_LIFECYCLE.md",
+      "bytes": 89614,
+      "sha256": "40a3779f56737725bb2c5e5d5a5ee34b44ad27030adc16cc374fdb9b04266a12"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/COLUMN_AUTHORITY_PROPOSAL.md",
+      "snapshot": "snapshots/06-COLUMN_AUTHORITY_PROPOSAL.md",
+      "bytes": 15044,
+      "sha256": "fddad88d763ccc32686711a6f3ef5ae47d352f72059058ac299b80df67006d18"
+    }
+  ],
+  "review_questions": [
+    "Check D-076 faithfully removes only visitor absolute duration; booking, staff and retention clocks unchanged.",
+    "Check server-session cookie, genuine admitted activity, duplicate/replay denial, cross-tab deadlines, lost/late responses and exact expiry races.",
+    "Check visitor End/current assigned-staff ending authority and ordered suppression preserve private AI boundaries, current consent and uncertain work reservations.",
+    "Check accepted warning/extension_factor_min 10/preservation requirements against proposed complete-process mapping; do not claim WCAG conformance or weaken accepted criteria.",
+    "Identify all remaining directional contracts, mechanism bindings and review invalidations before Phase 1 acceptance; no application implementation permitted."
+  ],
+  "older_review_reference": "output/research/handoff-lifetime-profile-2026-10-06/review-inputs.json; verdict covers preserved inputs only",
+  "sources_checked": [
+    "https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable.html",
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#session-expiration"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "status": "BLOCKED",
+  "scope": "Independent result reviews only; full consolidated goal stays active",
+  "reviewer": "/root/review_recovery_peer_branches_v1",
+  "observed_error": "Your workspace is out of credits. Add credits to continue.",
+  "completed_before_failure": "canonical-binding/independent-review-canonical-controls-v1.json; bounded PASS verified saved SHA256fe215c47150f5e0c6752679d4415f9a0267749661f03c1c126a88b312bca4aec",
+  "browser_review": "Assigned25-input packet has no saved review receipt; no inferred verdict",
+  "catalogue_review": "Prepared10-input packet has not been assigned; no inferred verdict",
+  "recovery": "Do not repeatedly restart on unchanged credits error; revalidate reviewer when capacity changes. Keep exact inputs and review scopes distinct."
+}

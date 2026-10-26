@@ -1,0 +1,174 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Independent source/semantic/allocation review of full proposed local case graph; not complete executable plan or external-write release",
+  "revision_cycle": 0,
+  "inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "inputs/00-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "inputs/01-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "inputs/02-DECISIONS.md",
+      "bytes": 106595,
+      "sha256": "dcedb7cdad5f7401a47ddfe218f61b88b9a182d3f2c8c1f939696e9419522952"
+    },
+    {
+      "source": "docs/software-definition/03-autonomous-ai-development-workflow.md",
+      "snapshot": "inputs/03-03-autonomous-ai-development-workflow.md",
+      "bytes": 7964,
+      "sha256": "d1388aab446eb65efe1f9f285cc4c375d05611b5d2fe34f6e75f09e83b588e54"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/README.md",
+      "snapshot": "inputs/04-README.md",
+      "bytes": 13944,
+      "sha256": "bec9109c86df617bf4682a5e7f41338e559ee0e9a4f0fffed03a9ae52696890f"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "snapshot": "inputs/05-UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "bytes": 45771,
+      "sha256": "1779fd3cd71f8210815fd7ddbbcd06faa6e5387e2d91584531be6d3806f8cf61"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/evidence-capture-plan.csv",
+      "snapshot": "inputs/06-evidence-capture-plan.csv",
+      "bytes": 8428,
+      "sha256": "4dceafb6d78a859ff5aee23ac78e65180975e72e83ed14a40dc20a90ad4fa0fd"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "snapshot": "inputs/07-reference-template-inventory.csv",
+      "bytes": 33596,
+      "sha256": "2e904e0f4c7019ca696131068567978973961e70cb0889ae954771010c5634cf"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/foundation-flow-coverage.csv",
+      "snapshot": "inputs/08-foundation-flow-coverage.csv",
+      "bytes": 47465,
+      "sha256": "7f80eeb1b60da0f23b026e7f33573bce89881df59cf3d705d759387abf69f5f4"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/component-primitives.csv",
+      "snapshot": "inputs/09-component-primitives.csv",
+      "bytes": 79724,
+      "sha256": "8aec225781cbb1389ea15e70895889a9da306244cd6f8b74f7640d863dde6318"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "snapshot": "inputs/10-responsive-state-mode-matrix.csv",
+      "bytes": 33821,
+      "sha256": "deb91325e1c8a543878111883f5b1203ae9e5dc35c00e0d837e927786eaf47e2"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/column-authority.json",
+      "snapshot": "inputs/11-column-authority.json",
+      "bytes": 11649766,
+      "sha256": "a8358be02d6fbca42a167b19395a4a2cd9b2fe318eaaec3b78e8141f4244aacd"
+    },
+    {
+      "source": "docs/phase-1-foundation/06-canonical-route-inventory.json",
+      "snapshot": "inputs/12-06-canonical-route-inventory.json",
+      "bytes": 43357,
+      "sha256": "41b750b5493a70a43344ca608084e6adce04b82a768969832026fb50f6b59081"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+      "snapshot": "inputs/13-CHAT_EVENT_PROTOCOL.md",
+      "bytes": 50683,
+      "sha256": "b2b06e915c81083a40be58f3a641991862371f2d117effb2716e098116aed364"
+    },
+    {
+      "source": "scripts/validation/ui-stream-mapping.ps1",
+      "snapshot": "inputs/14-ui-stream-mapping.ps1",
+      "bytes": 38967,
+      "sha256": "2c4509b4df40dd1f14c4bb53a35acff6799fde20e2be69d52f08db9e47babd38"
+    },
+    {
+      "source": "scripts/validation/ui-exit-coverage.ps1",
+      "snapshot": "inputs/15-ui-exit-coverage.ps1",
+      "bytes": 8907,
+      "sha256": "7d61e92c084393cfc7878960b7b6a9d8c1aaa4c9c32dcc5e8000e8a5f7f7d6eb"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/source-bindings-and-cases-v1.json",
+      "snapshot": "inputs/16-source-bindings-and-cases-v1.json",
+      "bytes": 374194,
+      "sha256": "9111515d85dc0359da8739e370b4e6884855c100659a442b4210b847ebc80c91"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/review-preparation/independent-review-native-preparation-v1.json",
+      "snapshot": "inputs/17-independent-review-native-preparation-v1.json",
+      "bytes": 40723,
+      "sha256": "2ea4d3bbe3e6b87a653da4b1348b2fced735c9a3ccf25906aad9d96c8ade206d"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/review-native-successor/independent-review-native-successor-v1.json",
+      "snapshot": "inputs/18-independent-review-native-successor-v1.json",
+      "bytes": 14390,
+      "sha256": "d6712b2f2e3ecb06560fbf2b3bbf14f5cc92c0b19881fa3a5082dbfabd8c4ae6"
+    },
+    {
+      "source": "output/research/b01-ceiling-refusal-bindings-2026-10-09/execution-preparation/input.json",
+      "snapshot": "inputs/19-input.json",
+      "bytes": 16506,
+      "sha256": "fcc9aba8c54df8c69f8f822338a28f4fef6c07fe15b88152951dedaded5763df"
+    },
+    {
+      "source": "output/research/b01-finite-stream-graph-2026-10-14/build_full_case_graph_v1.py",
+      "snapshot": "inputs/20-build_full_case_graph_v1.py",
+      "bytes": 33324,
+      "sha256": "59eb1d529bfb9fc2c7d4fbbc70194d7d2dae83c5da68eadbe21c4788f32bbb0d"
+    },
+    {
+      "source": "output/research/b01-finite-stream-graph-2026-10-14/build_construction_bindings_v1.py",
+      "snapshot": "inputs/21-build_construction_bindings_v1.py",
+      "bytes": 16694,
+      "sha256": "018bbb661080f825ef2133d6415c101b8ab0392668145ce7bf07c858b5b81676"
+    },
+    {
+      "source": "output/research/b01-finite-stream-graph-2026-10-14/finite-stream-subgraph-v1.json",
+      "snapshot": "inputs/22-finite-stream-subgraph-v1.json",
+      "bytes": 185129,
+      "sha256": "3bef40486ffacdb70d4e4b218cec56bf151f234b167c8dc0ef797bac1766be10"
+    },
+    {
+      "source": "output/research/b01-finite-stream-graph-2026-10-14/full-case-graph-proposal-v1.json",
+      "snapshot": "inputs/23-full-case-graph-proposal-v1.json",
+      "bytes": 4644169,
+      "sha256": "fa0936afb1c211ae7800c08153990e842f8c1c3fe4be428ed02218231395cb3a"
+    },
+    {
+      "source": "output/research/b01-finite-stream-graph-2026-10-14/construction-bindings-proposal-v1.json",
+      "snapshot": "inputs/24-construction-bindings-proposal-v1.json",
+      "bytes": 2454743,
+      "sha256": "ee6723ddfed457ad205184c031376b9a7a691aba7a29977b28c7ccf8c428d525"
+    }
+  ],
+  "requested_checks": [
+    "Verify all frozen byte/hash bindings",
+    "Inspect all22 actual requirement-to-path meanings, terminal semantics and timing branches",
+    "Check each active/pending tuple and Change-to owned-set boundary",
+    "Verify public naming/owners, per-prototype copied graph associations and unique identities; no pending axis invented",
+    "Evaluate all9 profiles and candidate versus owned construction/full qualitative minima; no count as coverage proof",
+    "Evaluate functional primitive mapping and staged source/copy/discovery guards",
+    "Identify remaining BNP01-06 conditions and actionable defects without treating known unconstructed/runtime exclusions as falsified observations"
+  ],
+  "exclusions": [
+    "Figma changes/calls, account/permission/credential/paid actions",
+    "Application/Git/deployment changes",
+    "Actual current source admission or Presentation execution",
+    "Integrated B01/Phase1 acceptance",
+    "No inherited native trial or old prep acceptance for new bytes"
+  ]
+}

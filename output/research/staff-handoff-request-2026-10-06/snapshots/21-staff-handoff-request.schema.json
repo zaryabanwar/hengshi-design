@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed staff handoff command request formats v1",
+  "description": "IF-STAFF-12/13/14 requests only. Select the endpoint-specific definition. Module root denies. Shape establishes no authentication, CSRF, route/object authority, current assignment/consent, reason eligibility, mutation, reconciliation or ending. No handler or grant is implemented.",
+  "not": {},
+  "$defs": {
+    "operation_id": {"$ref": "booking-creation-request.schema.json#/$defs/operation_id"},
+    "revision": {"$ref": "process-value.schema.json#/$defs/positive_revision"},
+    "expected_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["handoff_id", "handoff_revision", "ownership_generation"],
+      "properties": {
+        "handoff_id": {"$ref": "process-value.schema.json#/$defs/uuid"},
+        "handoff_revision": {"$ref": "#/$defs/revision"},
+        "ownership_generation": {"$ref": "#/$defs/revision"}
+      },
+      "description": "Expected binding only, never an arbitrary target selector or ownership grant. Resolve the route and authenticated current assignment first. Matching numeric fields do not prove the current handoff."
+    },
+    "reason_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reason_key", "catalogue_revision", "catalogue_sha256"],
+      "properties": {
+        "reason_key": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+        "catalogue_revision": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+        "catalogue_sha256": {"$ref": "process-value.schema.json#/$defs/sha256"}
+      },
+      "description": "References an independently approved bounded reason catalogue. This schema creates no reason taxonomy or permitted reason. Unknown, retired or unmapped references deny new application. No free text or visitor disclosure follows."
+    },
+    "apply_base": {
+      "type": "object",
+      "required": ["phase", "operation_id", "expected"],
+      "properties": {
+        "phase": {"const": "apply"},
+        "operation_id": {"$ref": "#/$defs/operation_id"},
+        "expected": {"$ref": "#/$defs/expected_binding"}
+      }
+    },
+    "reconcile_base": {
+      "type": "object",
+      "required": ["phase", "operation_id", "expected"],
+      "properties": {
+        "phase": {"const": "reconcile"},
+        "operation_id": {"$ref": "#/$defs/operation_id"},
+        "expected": {"$ref": "#/$defs/expected_binding"}
+      },
+      "description": "Recover the same admitted operation without dispatch. No mutable reason, consent decision, transcript, assignment or replacement operation is accepted. Unknown evidence is unavailable, not permission to apply."
+    },
+    "accept_apply": {
+      "allOf": [{"$ref": "#/$defs/apply_base"}],
+      "required": ["intent", "expected_consent_revision"],
+      "properties": {
+        "intent": {"const": "accept_text_handoff"},
+        "expected_consent_revision": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/revision"}]}
+      },
+      "unevaluatedProperties": false,
+      "description": "Null means no effective consent-map revision was reported, not consent or permission. Actual acceptance still requires the current mapped legal/purpose and consent conditions; missing required consent denies."
+    },
+    "accept_reconcile": {
+      "allOf": [{"$ref": "#/$defs/reconcile_base"}],
+      "required": ["intent"],
+      "properties": {"intent": {"const": "accept_text_handoff"}},
+      "unevaluatedProperties": false
+    },
+    "accept_request": {"oneOf": [{"$ref": "#/$defs/accept_apply"}, {"$ref": "#/$defs/accept_reconcile"}]},
+    "decline_apply": {
+      "allOf": [{"$ref": "#/$defs/apply_base"}],
+      "required": ["intent", "reason_reference"],
+      "properties": {
+        "intent": {"const": "decline_text_handoff"},
+        "reason_reference": {"$ref": "#/$defs/reason_reference"}
+      },
+      "unevaluatedProperties": false
+    },
+    "decline_reconcile": {
+      "allOf": [{"$ref": "#/$defs/reconcile_base"}],
+      "required": ["intent"],
+      "properties": {"intent": {"const": "decline_text_handoff"}},
+      "unevaluatedProperties": false
+    },
+    "decline_request": {"oneOf": [{"$ref": "#/$defs/decline_apply"}, {"$ref": "#/$defs/decline_reconcile"}]},
+    "end_apply": {
+      "allOf": [{"$ref": "#/$defs/apply_base"}],
+      "required": ["intent"],
+      "properties": {"intent": {"const": "end_text_consultation"}},
+      "unevaluatedProperties": false,
+      "description": "End only the governed text consultation after actual authorized transition. No reason text, consent edit, deletion, booking cancellation, staff-off declaration or transport-closure claim."
+    },
+    "end_reconcile": {
+      "allOf": [{"$ref": "#/$defs/reconcile_base"}],
+      "required": ["intent"],
+      "properties": {"intent": {"const": "end_text_consultation"}},
+      "unevaluatedProperties": false
+    },
+    "end_request": {"oneOf": [{"$ref": "#/$defs/end_apply"}, {"$ref": "#/$defs/end_reconcile"}]}
+  }
+}

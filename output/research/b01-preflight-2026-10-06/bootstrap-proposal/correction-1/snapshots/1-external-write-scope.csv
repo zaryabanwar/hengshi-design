@@ -1,0 +1,26 @@
+scope_id,mode,operation,target,condition,rationale
+WS-P-01,permitted,Create one project and one design file dedicated to Hengshi Design UI reference production,figma_single_approved_file,Only once and only after section 3.5 capability evidence is recorded,The contracted work needs one durable system of record
+WS-P-02,permitted,Create rename and reorder pages,figma_single_approved_file,Only within the approved file,Batch and template organisation
+WS-P-03,permitted,Create edit and delete frames components component sets variants styles and variables,figma_single_approved_file,Only within an authorized batch,Produces FRAME FOCUSED_FRAME and VARIANT evidence and the PRIM-* library
+WS-P-04,permitted,Create prototype links and interactions,figma_single_approved_file,Only within an authorized batch,Produces PROTOTYPE evidence for focus return disclosure and modal behaviour
+WS-P-05,permitted,Add resolve and reply to comments,figma_single_approved_file,Only within the approved file,Carries the two independent reviews anchored to evidence
+WS-P-06,permitted,Create named version-history checkpoints,figma_single_approved_file,At batch _PRE and batch _EXIT,Rollback strategy in section 9
+WS-P-07,permitted,Export images PDFs and the file archive out to the local repository evidence directory,local_repository_evidence_directory,Deterministic scale and no hand editing,Provider-independent evidence retention
+WS-P-08,permitted,Read the file node page and frame inventory,figma_single_approved_file,Read only and credential free,Evidence indexing and the section 15 handoff inventory
+WS-X-01,prohibited,Any write to any file project or team other than the single approved one,any_other_target,Always,Blast-radius containment
+WS-X-02,prohibited,Publishing a library plugin widget or file to the Figma Community,figma_community,Always,Publication is a separate gate and is not authorized
+WS-X-03,prohibited,Enabling public link sharing anyone-with-the-link or embed sharing,figma_sharing_settings,Always,Business-confidential classification
+WS-X-04,prohibited,Inviting adding or removing any collaborator or seat,figma_seats,Always,Seat changes can incur cost and expand access
+WS-X-05,prohibited,Any billing plan-change trial-start or paid-seat action,figma_billing,Always,Zero-spend boundary; paid steps route to MA-010
+WS-X-06,prohibited,Uploading the protected exterior GLB client-confidential material personal data or any real lead or booking record,figma_single_approved_file,Always,MA-004 is blocked and the data boundary forbids personal and confidential material
+WS-X-07,prohibited,Uploading or embedding any paid licensed or third-party asset not covered by D-035,figma_single_approved_file,Always,Asset rights are ungranted
+WS-X-08,prohibited,Any Stitch operation of any kind,google_stitch,Always,Stitch is out of MA-025 scope
+WS-X-09,prohibited,Any write outside an authorized batch including small fixes to an accepted batch,figma_single_approved_file,Always,Accepted batch evidence is immutable
+WS-X-10,prohibited,Any use of provider AI or generative features that transmits project material for model processing,figma_ai_features,Always,Data boundary and provider-processing gate
+WS-X-11,prohibited,Connecting the file to any external integration webhook or third-party plugin,figma_integrations,Always,Uncontrolled external data flow
+WS-R-01,repository_permitted,Write documentation and evidence,docs/phase-1-ui-reference-production/**,Always within MA-025,Package scope
+WS-R-02,repository_permitted,Update durable root records,PROJECT_STATE.yaml TASKS.md MANUAL_ACTIONS.md RISKS.md CHANGELOG.md PROJECT.md DECISIONS.md docs/decisions-log.md,After validation,Durable record consistency
+WS-R-03,repository_permitted,Correct the stale MCP availability claim,docs/software-definition/02-ai-dev-tooling-and-mcp.md,Factual correction only,Section 1.4 records the claim is untrue on this host
+WS-R-04,repository_prohibited,Any application dependency lockfile migration or infrastructure write,apps/** and dependency and infrastructure files,Always,Implementation remains unauthorized
+WS-R-05,repository_prohibited,Writing docs/ui/UI_SPEC.md,docs/ui/UI_SPEC.md,Always under MA-025,It is a B09 deliverable and B09 is deferred
+WS-G-01,git_prohibited,Commit push branch switch tag or history rewrite,git,Without a separate explicit founder instruction,Preserve the clean main checkout

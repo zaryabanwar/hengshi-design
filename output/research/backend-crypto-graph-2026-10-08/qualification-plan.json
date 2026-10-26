@@ -1,0 +1,88 @@
+{
+  "status": "TODO",
+  "execution_authorized": false,
+  "scope": "Proposed isolated Windows library qualification, not Hengshi feature implementation or stack adoption",
+  "candidate": "candidate-hashed-requirements.txt",
+  "candidate_sha256": "8b86653929a4707ad0d6346c8a7763f8d6c26b901d91c3dc49dc7a4427b4365b",
+  "archive_bytes_from_registry": 18107329,
+  "target": "output/research/backend-crypto-graph-2026-10-08/native-trial",
+  "limits": {
+    "new_output_budget_bytes": 268435456,
+    "minimum_free_disk_bytes": 1073741824,
+    "command_deadline_seconds": 180,
+    "no_source_builds": true,
+    "no_existing_environment_changes": true,
+    "no_database_or_provider_connection": true,
+    "no_automatic_cleanup": true,
+    "budget_kind": "Conservative admission and command-boundary stop budget, not an OS-enforced hard quota during installation/native execution",
+    "expanded_wheel_copy_reservation_factor": 2,
+    "additional_installer_output_reservation_bytes": 67108864
+  },
+  "steps": [
+    "Require applicable founder authorization before creating or installing into the new research environment; independently review this proposal first.",
+    "Recheck frozen inputs, current native Python/pip identity and exact candidate hashes; refuse an existing target or incompatible host. Before any download or venv creation, require free disk greater than the full 256 MiB admission budget plus the retained 1 GiB floor. Check measured output/free space before and after each command, including failure; stop on over-budget or reserve loss.",
+    "Use native Python venv --without-pip for the new target. Existing pip is the recorded bootstrap tool, not a newly selected production toolchain.",
+    "Download only the 43 exact hashed binary wheels with --require-hashes --only-binary=:all: --no-deps --no-cache-dir into the dedicated wheelhouse. Before installation, check every actual wheel size/hash against its frozen record and inspect zipfile.infolist without execution or extraction; reject malformed archives and sum declared expanded file sizes. Reserve measured retained download/venv/output bytes + twice total expanded wheel bytes + 64 MiB additional installer/output allowance. Require that total at or below 256 MiB and available disk at least 1 GiB plus all remaining reserved allocations; otherwise refuse installation without cleanup. No compressed-size-to-installed-footprint inference.",
+    "Use existing pip --python <new-environment-python> with --no-index --find-links <wheelhouse> --require-hashes --only-binary=:all: --no-deps --no-cache-dir to install only into that new environment. No source build or dependency re-resolution. Preserve the pre-install expanded-size/reservation calculation and post-command footprint/free-space observations. This conservative reservation is not an OS hard quota; installer/native code can consume unexpected space, which command-boundary checks detect rather than guarantee prevention.",
+    "Run pip check and the synthetic public-library probes below with bytecode disabled, no application import or server/listener and no real tokens, accounts or data.",
+    "Measure retained output size and verify protected inputs unchanged; stop on failure. Preserve errors rather than reinterpret or silently retry. Deletion needs separate approval."
+  ],
+  "probes": [
+    {
+      "boundary": "PyJWT + cryptography",
+      "cases": "Locally generated RSA key: valid RS256 token with explicit algorithm, issuer and audience succeeds; wrong key, wrong audience, expired token and disallowed algorithm fail. No Entra token or live JWKS.",
+      "limit": "Primitive coupling only; no OIDC/PKCE/nonce discovery client, identity grant or Hengshi session enforcement."
+    },
+    {
+      "boundary": "FastAPI + Pydantic + HTTPX TestClient",
+      "cases": "Strict integer plus extra-forbid request accepts a valid integer and rejects coercible text/unknown fields; explicit response model returns expected UTC serialization.",
+      "limit": "In-process synthetic library fixture, no actual Hengshi route, socket, security or production serialization coverage."
+    },
+    {
+      "boundary": "SQLAlchemy",
+      "cases": "In-memory SQLite transaction rollback leaves no committed row after an intentional failure; subsequent transaction remains usable.",
+      "limit": "No PostgreSQL/Psycopg persistence, network pool or concurrency assurance."
+    },
+    {
+      "boundary": "Alembic",
+      "cases": "Public offline PostgreSQL dialect context emits DDL for a synthetic table without a database connection.",
+      "limit": "No migration run, real schema or rollback exercise."
+    },
+    {
+      "boundary": "Psycopg binary",
+      "cases": "Import public pq API; record implementation/build/runtime libpq versions without connecting.",
+      "limit": "Native import only, no database protocol, authentication or driver transaction assurance."
+    },
+    {
+      "boundary": "bcrypt",
+      "cases": "Synthetic short password verifies; incorrect password fails; 73-byte input raises the version's documented length error.",
+      "limit": "No production password policy, emergency access or password storage adoption."
+    },
+    {
+      "boundary": "Uvicorn",
+      "cases": "Load a synthetic ASGI application configuration without running or binding the server.",
+      "limit": "No actual listener, websocket, shutdown, load or deployment proof."
+    },
+    {
+      "boundary": "pytest + pytest-asyncio",
+      "cases": "Run an actual async synthetic test through the installed plugin and report package identities and failures.",
+      "limit": "Test tooling coupling only, not application coverage."
+    }
+  ],
+  "official_patterns": [
+    "https://pip.pypa.io/en/stable/topics/python-option/",
+    "https://pip.pypa.io/en/stable/topics/secure-installs/",
+    "https://fastapi.tiangolo.com/tutorial/testing/",
+    "https://docs.sqlalchemy.org/en/21/core/connections.html",
+    "https://alembic.sqlalchemy.org/en/latest/api/runtime.html",
+    "https://www.psycopg.org/psycopg3/docs/api/pq.html"
+  ],
+  "remaining": [
+    "Whole-graph newest-compatible recheck, production tools/platform selection and reproducible final lock",
+    "Supported release channel, provenance/attestations, full licence and advisory review",
+    "Maintained OIDC/PKCE adapter selection and its complete extra graph",
+    "Approved actual identity/API/database/authorization/recovery behavior and named environment qualification",
+    "Independent results review and integrated/founder acceptance; no dependency adoption implied",
+    "No installed-footprint or hard disk-cap assurance from metadata or this unexecuted admission plan"
+  ]
+}

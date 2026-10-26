@@ -1,5 +1,21 @@
 # Detailed Task Flows
 
+## Current World scope amendment — v1
+
+[D-064](../../DECISIONS.md#d-064--founder-selects-free-movement-and-spatial-streaming-without-wasd)
+adds mouse/touch free steering and walking plus nearby-area streaming, retaining
+destination navigation and equivalent Quick Access. Earlier accepted destination
+flows remain available; they do not limit the World to directed travel. WASD is
+not selected. This reference amendment preserves the accepted flow bodies.
+
+Use the [World definition](../phase-1-3d/WORLD_EXPERIENCE.md#movement-and-access)
+for selected scope versus proposed gestures, its [streaming section](../phase-1-3d/WORLD_EXPERIENCE.md#spatial-streaming-versus-graphics-streams)
+and [controlling loading contract](../phase-1-3d/CAMPUS_ASSET_BUILD_SPEC.md#loading-and-residency-contract)
+for safe movement admission and reversal, and its [sound lifecycle](../phase-1-3d/WORLD_EXPERIENCE.md#audio-lifecycle-and-ownership-proposal)
+for optional visitor-enabled ambience. These later definitions retain their own
+bounded reviews and unresolved inputs; this reference does not approve gestures,
+production screens, numerical profiles, implementation or another UX revision.
+
 ## Flow notation
 
 Each flow records trigger, precondition, states, alternate/error behavior, and
@@ -224,6 +240,12 @@ non-sensitive work where approved, then returns focus to the reauthenticated ste
 
 1. Persistent directory opens from semantic header and immersive HUD with focus on
    a labeled search input; closing returns focus to invoker.
+   [D-092](../../DECISIONS.md#d-092--explicitly-opened-searchdirectory-overlay)
+   selects an explicitly requested modal overlay over the current screen, with
+   visible Close, preserved location and an inactive background while open.
+   The semantic static directory remains available without the overlay or
+   JavaScript; this is never an automatic homepage gate. Exact prototype and
+   later runtime focus behavior retain their separate review/acceptance gates.
 2. Search covers only active-release public titles, formal service names, wing,
    industry, evidence type, and approved summary text. It never searches drafts,
    session/chat, defense, or private/admin data.

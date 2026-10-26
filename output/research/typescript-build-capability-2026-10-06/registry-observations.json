@@ -1,0 +1,82 @@
+{
+  "checked_at_utc": "2026-10-05T22:35:05.028345+00:00",
+  "scope": "unselected latest registry observations; no graph resolution/install/build",
+  "packages": [
+    {
+      "package": "vite",
+      "url": "https://registry.npmjs.org/vite/latest",
+      "version": "8.3.2",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "peerDependencies": {
+        "tsx": "^4.8.1",
+        "jiti": ">=1.21.0",
+        "less": "^4.0.0",
+        "sass": "^1.70.0",
+        "yaml": "^2.4.2",
+        "stylus": ">=0.54.8",
+        "terser": "^5.16.0",
+        "esbuild": "^0.27.0 || ^0.28.0",
+        "sugarss": "^5.0.0",
+        "@types/node": "^20.19.0 || >=22.12.0",
+        "sass-embedded": "^1.70.0",
+        "@vitejs/devtools": "^0.7.1"
+      },
+      "dependencies": {
+        "postcss": "^8.5.28",
+        "rolldown": "~1.2.11",
+        "picomatch": "^4.0.7",
+        "tinyglobby": "^0.2.17",
+        "lightningcss": "^1.33.0"
+      },
+      "record": "vite.latest.json",
+      "sha256": "851e68112ac34917881f90def6a29010037e672caa0de8cada4a97fdcff49727"
+    },
+    {
+      "package": "@vitejs/plugin-react",
+      "url": "https://registry.npmjs.org/@vitejs%2fplugin-react/latest",
+      "version": "6.1.2",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "peerDependencies": {
+        "vite": "^8.0.0",
+        "oxc-transform-react": "^0.152.0",
+        "@rolldown/plugin-babel": "^0.1.7 || ^0.2.0",
+        "babel-plugin-react-compiler": "^1.0.0"
+      },
+      "dependencies": {
+        "@rolldown/pluginutils": "^1.0.1"
+      },
+      "record": "vitejs-plugin-react.latest.json",
+      "sha256": "4b69f47be418b4a5db930c2e5189de1d51ff95f101d0ab0a056d79bdedc6f636"
+    },
+    {
+      "package": "react",
+      "url": "https://registry.npmjs.org/react/latest",
+      "version": "19.3.0",
+      "engines": {
+        "node": ">=0.10.0"
+      },
+      "peerDependencies": null,
+      "dependencies": null,
+      "record": "react.latest.json",
+      "sha256": "c9b7f5adeab67cd3146ffc69712aee7ddc37c23e656e41feaaa5624dff4e02aa"
+    },
+    {
+      "package": "react-dom",
+      "url": "https://registry.npmjs.org/react-dom/latest",
+      "version": "19.3.0",
+      "engines": null,
+      "peerDependencies": {
+        "react": "^19.3.0"
+      },
+      "dependencies": {
+        "scheduler": "^0.28.0"
+      },
+      "record": "react-dom.latest.json",
+      "sha256": "f7bb2eaf8d193af94c0b1749f05d7a0a8475c3d913aec87f1cb93e56ac860877"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "scope": "finite plain TypeScript language/CLI/API seam, not React types or application/editor/build equivalence",
+  "fixtures": [
+    {
+      "name": "valid-union",
+      "expected_semantic_codes": [],
+      "expected_cli_exit": 0
+    },
+    {
+      "name": "invalid-assignment",
+      "expected_semantic_codes": [
+        2322
+      ],
+      "expected_cli_exit": 2
+    },
+    {
+      "name": "invalid-readonly",
+      "expected_semantic_codes": [
+        2540
+      ],
+      "expected_cli_exit": 2
+    },
+    {
+      "name": "invalid-unchecked-index",
+      "expected_semantic_codes": [
+        2532
+      ],
+      "expected_cli_exit": 2
+    },
+    {
+      "name": "invalid-module",
+      "expected_semantic_codes": [
+        2307
+      ],
+      "expected_cli_exit": 2
+    }
+  ]
+}

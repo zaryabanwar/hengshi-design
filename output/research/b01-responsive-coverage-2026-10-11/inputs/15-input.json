@@ -1,0 +1,343 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Prepared twelve explicit system-recovery stream references; no created frames or profile/coverage proof",
+  "template_id": "TPL-SYSTEM-RECOVERY",
+  "states": [
+    {
+      "id": "STATE-ERROR",
+      "title": "The action did not complete",
+      "body": "This fixture represents a confirmed failure before a business action was admitted; it is not an unknown outcome.",
+      "truth": "Prior authoritative state; no successful new action",
+      "action": "Return to the current page",
+      "action_kind": "same_document_no_mutation"
+    },
+    {
+      "id": "STATE-PREFERENCE-WRITE-FAILED",
+      "title": "Presentation applied for this session",
+      "body": "Use the exact accepted D-057 persistence notice supplied by the inherited stream component; saved preference is not confirmed.",
+      "truth": "Session choice applied; persistent write not confirmed",
+      "action": "Continue reading",
+      "action_kind": "same_document_no_mutation"
+    },
+    {
+      "id": "STATE-STREAM-CHANGED",
+      "title": "Presentation choice applied",
+      "body": "Use the exact accepted D-057 notice supplied by the inherited stream component; the location and open context remain.",
+      "truth": "Synthetic confirmed stream change; shared control carries accepted copy",
+      "action": "Continue reading",
+      "action_kind": "same_document_no_mutation"
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "light",
+      "mode": "MODE-STANDARD",
+      "reference_tokens": {
+        "surface": "D035/palette/paper",
+        "text": "D035/palette/ink"
+      }
+    }
+  ],
+  "streams": [
+    {
+      "id": "S-HIGH",
+      "label": "Detailed 3D"
+    },
+    {
+      "id": "S-MEDIUM",
+      "label": "Balanced 3D"
+    },
+    {
+      "id": "S-LOW",
+      "label": "Simplified 3D"
+    },
+    {
+      "id": "S-SEMANTIC",
+      "label": "Quick Access"
+    }
+  ],
+  "profile": {
+    "profile_id": "SP-SYSTEM-RECOVERY",
+    "dimension": "state",
+    "applies_to": "Shared system status and recovery presentation",
+    "required_values": "STATE-LOADING;STATE-DEGRADED;STATE-EMPTY;STATE-PENDING;STATE-UNAVAILABLE;STATE-OFFLINE;STATE-ERROR;STATE-PERMISSION-DENIED;STATE-SESSION-EXPIRED;STATE-STALE;STATE-CONFLICT;STATE-ASSET-FAILURE;STATE-CHECKSUM-MISMATCH;STATE-FOCUS;STATE-STREAM-CHANGED;STATE-PREFERENCE-WRITE-FAILED",
+    "minimum_evidence": "Reusable focused frames for each class on light/dark/forced-color surfaces; route/flow host retains context",
+    "critical_distinct_frame_values": "STATE-PENDING;STATE-UNAVAILABLE;STATE-OFFLINE;STATE-ERROR;STATE-PERMISSION-DENIED;STATE-CHECKSUM-MISMATCH;STATE-STREAM-CHANGED;STATE-PREFERENCE-WRITE-FAILED",
+    "annotation_requirements": "What happened; what was preserved; authoritative state; smallest safe action; status semantics; no provider/secret/PII leakage",
+    "exception_rule": "This profile supplements rather than replaces a host template state profile",
+    "browser_profile": "BP-NFR-006",
+    "time_limit_branch": "TL-WARN-EXTEND"
+  },
+  "source_hashes": [
+    {
+      "path": "docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md",
+      "sha256": "fa3322d864dc8c29d2f7853d6dc9a961126f7a8aea2b575505997d05c3297064",
+      "matches_historical_fixture_input": true
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "sha256": "6fa43937ae5e590b31e4fc21ea9e1209d3bfcdf145a6698d2429125213166dec",
+      "matches_historical_fixture_input": true
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb",
+      "matches_historical_fixture_input": true
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "sha256": "1fe2469d7a88897cbe07080650f0971efae4b45ab8f007d05eb315875cb7da7c",
+      "matches_historical_fixture_input": false
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "sha256": "40a3779f56737725bb2c5e5d5a5ee34b44ad27030adc16cc374fdb9b04266a12",
+      "matches_historical_fixture_input": false
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "sha256": "12314d8567e4f4c0f63c944aae6caa09657240bf40042191b983f4be5b6599ae",
+      "matches_historical_fixture_input": false
+    },
+    {
+      "path": "output/research/b01-navigation-composition-2026-10-06/state-ledger.json",
+      "sha256": "f078e20b6fca5deec68a8876d83922d03064036aa797fb719cd6cae6d594da2b",
+      "matches_historical_fixture_input": true
+    }
+  ],
+  "external_calls": 0,
+  "limitations": [
+    "Prepared only; no created Figma nodes or pixels. Fresh immediate per-call approval and execution-time inherited copy/ownership checks remain.",
+    "Twelve explicit stream/state references supplement the separate48grammar specimens; no ceiling-refusal host or complete-profile evidence is supplied.",
+    "Inherited control labels/copy preserve D-057. Statuses are synthetic references, not actual requests, application, persistence, staff availability or rendered World.",
+    "Keyboard/focus/announcements/prototype/accessibility, complete-process preservation, exports/restore/_EXIT and founder acceptance remain unexecuted."
+  ],
+  "historical_fixture_source_hashes": [
+    {
+      "path": "docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md",
+      "sha256": "fa3322d864dc8c29d2f7853d6dc9a961126f7a8aea2b575505997d05c3297064"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "sha256": "6fa43937ae5e590b31e4fc21ea9e1209d3bfcdf145a6698d2429125213166dec"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "sha256": "fafea73bdcedcf3057d504b98514f5796b331bf0184d30d10a165aae754e336f"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "sha256": "2b543fbf8c00e244f705d0931bacb76f8a2405d2bbb9bb4e1593a28fa86d87f8"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "sha256": "21833e0bf533d88243e3da34be6f7f2ca401c3401a907c719c58a4fcb2196fbf"
+    },
+    {
+      "path": "output/research/b01-navigation-composition-2026-10-06/state-ledger.json",
+      "sha256": "f078e20b6fca5deec68a8876d83922d03064036aa797fb719cd6cae6d594da2b"
+    }
+  ],
+  "fileKey": "GOmLP6Cv96l768ueSrZ5Dg",
+  "streamMasters": [
+    {
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-HIGH",
+      "selected_stream_id": "S-MEDIUM",
+      "id": "21:25",
+      "name": "State=OPEN, Stream=HIGH"
+    },
+    {
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-LOW",
+      "selected_stream_id": "S-SEMANTIC",
+      "id": "21:40",
+      "name": "State=OPEN, Stream=LOW"
+    },
+    {
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-MEDIUM",
+      "selected_stream_id": "S-LOW",
+      "id": "21:55",
+      "name": "State=OPEN, Stream=MEDIUM"
+    },
+    {
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-SEMANTIC",
+      "selected_stream_id": "S-HIGH",
+      "id": "21:70",
+      "name": "State=OPEN, Stream=SEMANTIC"
+    },
+    {
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-HIGH",
+      "selected_stream_id": "S-HIGH",
+      "id": "21:153",
+      "name": "State=PREFERENCE-WRITE-FAILED, Stream=HIGH"
+    },
+    {
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-LOW",
+      "selected_stream_id": "S-LOW",
+      "id": "21:170",
+      "name": "State=PREFERENCE-WRITE-FAILED, Stream=LOW"
+    },
+    {
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-MEDIUM",
+      "selected_stream_id": "S-MEDIUM",
+      "id": "21:187",
+      "name": "State=PREFERENCE-WRITE-FAILED, Stream=MEDIUM"
+    },
+    {
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "selected_stream_id": "S-SEMANTIC",
+      "id": "21:204",
+      "name": "State=PREFERENCE-WRITE-FAILED, Stream=SEMANTIC"
+    },
+    {
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-HIGH",
+      "selected_stream_id": "S-HIGH",
+      "id": "21:221",
+      "name": "State=STREAM-CHANGED, Stream=HIGH"
+    },
+    {
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-LOW",
+      "selected_stream_id": "S-LOW",
+      "id": "21:238",
+      "name": "State=STREAM-CHANGED, Stream=LOW"
+    },
+    {
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-MEDIUM",
+      "selected_stream_id": "S-MEDIUM",
+      "id": "21:255",
+      "name": "State=STREAM-CHANGED, Stream=MEDIUM"
+    },
+    {
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC",
+      "selected_stream_id": "S-SEMANTIC",
+      "id": "21:272",
+      "name": "State=STREAM-CHANGED, Stream=SEMANTIC"
+    }
+  ],
+  "planned_references": [
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-HIGH",
+      "planned_frame_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "viewport": "VP-320",
+      "mode": "MODE-KEYBOARD",
+      "source_control_state": "STATE-OPEN"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-HIGH",
+      "planned_frame_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "viewport": "VP-320",
+      "mode": "MODE-KEYBOARD",
+      "source_control_state": "STATE-PREFERENCE-WRITE-FAILED"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-HIGH",
+      "planned_frame_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "viewport": "VP-320",
+      "mode": "MODE-KEYBOARD",
+      "source_control_state": "STATE-STREAM-CHANGED"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-MEDIUM",
+      "planned_frame_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "viewport": "VP-320",
+      "mode": "MODE-KEYBOARD",
+      "source_control_state": "STATE-OPEN"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-MEDIUM",
+      "planned_frame_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "viewport": "VP-320",
+      "mode": "MODE-KEYBOARD",
+      "source_control_state": "STATE-PREFERENCE-WRITE-FAILED"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-MEDIUM",
+      "planned_frame_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "viewport": "VP-320",
+      "mode": "MODE-KEYBOARD",
+      "source_control_state": "STATE-STREAM-CHANGED"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-LOW",
+      "planned_frame_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "viewport": "VP-320",
+      "mode": "MODE-KEYBOARD",
+      "source_control_state": "STATE-OPEN"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-LOW",
+      "planned_frame_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "viewport": "VP-320",
+      "mode": "MODE-KEYBOARD",
+      "source_control_state": "STATE-PREFERENCE-WRITE-FAILED"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-LOW",
+      "planned_frame_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "viewport": "VP-320",
+      "mode": "MODE-KEYBOARD",
+      "source_control_state": "STATE-STREAM-CHANGED"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-SEMANTIC",
+      "planned_frame_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "viewport": "VP-320",
+      "mode": "MODE-KEYBOARD",
+      "source_control_state": "STATE-OPEN"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "planned_frame_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "viewport": "VP-320",
+      "mode": "MODE-KEYBOARD",
+      "source_control_state": "STATE-PREFERENCE-WRITE-FAILED"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC",
+      "planned_frame_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "viewport": "VP-320",
+      "mode": "MODE-KEYBOARD",
+      "source_control_state": "STATE-STREAM-CHANGED"
+    }
+  ]
+}

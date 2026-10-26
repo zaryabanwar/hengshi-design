@@ -1,0 +1,46 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "BLOCKED",
+  "scope": "One founder-approved isolated native Figma trial; stopped during preflight before any trial node was created.",
+  "approval": {
+    "reply": "Approve this isolated Figma trial",
+    "question_call": "call_XfJJFsQ39UpPr9bGi7lB3t0j"
+  },
+  "planned_nodes_created": 0,
+  "edges_wired": 0,
+  "qualification_observations_executed": 0,
+  "file_key": "GOmLP6Cv96l768ueSrZ5Dg",
+  "source_id": "21:55",
+  "unexpected_action": {
+    "action": "Right arrow after selecting OPEN, MEDIUM row",
+    "effect": "X-position nudged from 664 to 665; keyboard was not a layer expansion action.",
+    "recovery": "Immediate Control+Z; native AX confirms X-position 664 again."
+  },
+  "stop_condition": "Unexpected source/master/page mutation; no trial construction or automatic retry follows.",
+  "preservation": {
+    "before_sha256": "d128c4791e7ef7c674a1196cabf8e1850348ea353427ac989a741f9d7b084236",
+    "after_sha256": "7aaf98faf75454d3e1070c24dbe78f33e512e4b26308ab1e75c3d8224adf5b22",
+    "zip_crc_valid": true,
+    "archive_members_identical_except": [
+      "meta.json"
+    ],
+    "identical_member_names": [
+      "canvas.fig",
+      "thumbnail.png",
+      "images/"
+    ],
+    "changed_meta_keys": [
+      "exported_at"
+    ],
+    "meaning": "All serialized canvas/image members are byte-identical between native before/after exports; only meta.json differs. This verifies saved payload equality after Undo, not a restore rehearsal or prototype behavior."
+  },
+  "native_ax": "source-restored-current.txt",
+  "screenshot": "source-restored-current.png",
+  "source_net_canvas_change": false,
+  "mcp_calls": 0,
+  "ai_prompts": 0,
+  "paid_features": 0,
+  "deletions": 0,
+  "git_actions": 0,
+  "next": "Independent review of recovery and bounded continuation proposal before any external continuation."
+}

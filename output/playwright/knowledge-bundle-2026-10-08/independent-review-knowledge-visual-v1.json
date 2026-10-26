@@ -1,0 +1,22 @@
+{
+  "status": "DOING",
+  "review_verdict": "PASS",
+  "reviewer": "review_knowledge_bundle_v1",
+  "review_date": "2026-10-08",
+  "manifest_sha256": "10789aac5ffdcfad2a916c7e689bed2f7610fe53db8f235fe26ab3ea508b15da",
+  "snapshots_verified": 12,
+  "findings": [],
+  "scope": "Added details#ai-grounding and Approved AI knowledge bundle reconciliation row only; frozen source, before bytes, desktop/narrow pixels and recorded producer observations.",
+  "observations": [
+    "Removing only the inserted disclosure restores exact prior HTML bytes; removing only the new reconciliation row restores exact prior map bytes. No unrelated HTML/CSS changes.",
+    "The four-step explanation and source/instruction/withdrawal notes accurately translate the reviewed knowledge bundle proposal. Public question classification, eligible release, sourced complete answers/refusal and lack of model tool authority are preserved.",
+    "Badges and trailing note distinguish independent contract review PASS from pending visual/integrated acceptance, and explicitly identify a proposal with no working assistant.",
+    "Both full section screenshots inspected at original resolution: desktop and narrow text, all four steps, two cards, limitations and three source links are visible without clipping or overlap.",
+    "Producer observations record keyboard Space close/Enter open, Tab to first source link, 3px solid focus outline, viewport-wide overflow checks and three HTTP200 source responses at 1440 and 320 widths. These were assessed as producer observations, not independently rerun or complete WCAG/physical mobile proof."
+  ],
+  "limits": [
+    "No whole-board, production UI, full accessibility, real phone, AI/provider, privacy compliance, HTTP application/DB or publication enforcement review.",
+    "No integrated/founder acceptance or provider/model selection; mappings, adapters and capacities remain held.",
+    "Later receipt-link or status-reference changes are outside these frozen bytes."
+  ]
+}

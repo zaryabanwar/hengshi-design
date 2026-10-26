@@ -1,0 +1,246 @@
+{
+  "raw_report_equals_saved_receipt": true,
+  "cleanup_input_equals_preparation_return": true,
+  "cleanup_bound_source_input_equals_return": true,
+  "diagnosis_input_equals_cleanup_input": true,
+  "diagnosis_bound_source_input_equals_input": true,
+  "created_inventory_count": 162,
+  "created_inventory_unique": true,
+  "reported_inventory_count_matches": true,
+  "sheet_and_all_clones_in_inventory": true,
+  "prepared_execution_source_equals_reviewed_preparation_source": true,
+  "cleanup_template_is_exact_tail_of_bound_source": true,
+  "record_mapping": [
+    {
+      "index": 31,
+      "expected_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_HIGH_V01",
+      "matches_new_crop_reference": true,
+      "prior_reference": {
+        "sourceId": "29:1515",
+        "templateId": "TPL-SYSTEM-RECOVERY",
+        "streamId": "S-HIGH",
+        "stateId": "STATE-ERROR",
+        "modeId": "MODE-SCREEN-READER",
+        "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_HIGH_V01",
+        "kind": "FOCUSED_FRAME",
+        "width": 320,
+        "profileIds": [
+          "SP-SYSTEM-RECOVERY",
+          "VP-INTERACTIVE",
+          "MP-INTERACTIVE",
+          "DS-S-HIGH"
+        ]
+      }
+    },
+    {
+      "index": 32,
+      "expected_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_REDUCED_MOTION_STREAM_HIGH_V01",
+      "matches_new_crop_reference": true,
+      "prior_reference": {
+        "sourceId": "29:1515",
+        "templateId": "TPL-SYSTEM-RECOVERY",
+        "streamId": "S-HIGH",
+        "stateId": "STATE-ERROR",
+        "modeId": "MODE-REDUCED-MOTION",
+        "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_REDUCED_MOTION_STREAM_HIGH_V01",
+        "kind": "FOCUSED_FRAME",
+        "width": 320,
+        "profileIds": [
+          "SP-SYSTEM-RECOVERY",
+          "VP-INTERACTIVE",
+          "MP-INTERACTIVE",
+          "DS-S-HIGH"
+        ]
+      }
+    },
+    {
+      "index": 34,
+      "expected_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_MEDIUM_V01",
+      "matches_new_crop_reference": true,
+      "prior_reference": {
+        "sourceId": "29:1609",
+        "templateId": "TPL-SYSTEM-RECOVERY",
+        "streamId": "S-MEDIUM",
+        "stateId": "STATE-ERROR",
+        "modeId": "MODE-SCREEN-READER",
+        "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_MEDIUM_V01",
+        "kind": "FOCUSED_FRAME",
+        "width": 320,
+        "profileIds": [
+          "SP-SYSTEM-RECOVERY",
+          "VP-INTERACTIVE",
+          "MP-INTERACTIVE",
+          "DS-S-MEDIUM"
+        ]
+      }
+    },
+    {
+      "index": 35,
+      "expected_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_LOW_POWER_STREAM_LOW_V01",
+      "matches_new_crop_reference": true,
+      "prior_reference": {
+        "sourceId": "29:1703",
+        "templateId": "TPL-SYSTEM-RECOVERY",
+        "streamId": "S-LOW",
+        "stateId": "STATE-ERROR",
+        "modeId": "MODE-LOW-POWER",
+        "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_LOW_POWER_STREAM_LOW_V01",
+        "kind": "FOCUSED_FRAME",
+        "width": 320,
+        "profileIds": [
+          "SP-SYSTEM-RECOVERY",
+          "VP-INTERACTIVE",
+          "MP-INTERACTIVE",
+          "DS-S-LOW"
+        ]
+      }
+    },
+    {
+      "index": 36,
+      "expected_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_LOW_V01",
+      "matches_new_crop_reference": true,
+      "prior_reference": {
+        "sourceId": "29:1703",
+        "templateId": "TPL-SYSTEM-RECOVERY",
+        "streamId": "S-LOW",
+        "stateId": "STATE-ERROR",
+        "modeId": "MODE-SCREEN-READER",
+        "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_LOW_V01",
+        "kind": "FOCUSED_FRAME",
+        "width": 320,
+        "profileIds": [
+          "SP-SYSTEM-RECOVERY",
+          "VP-INTERACTIVE",
+          "MP-INTERACTIVE",
+          "DS-S-LOW"
+        ]
+      }
+    },
+    {
+      "index": 38,
+      "expected_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_SEMANTIC_V01",
+      "matches_new_crop_reference": true,
+      "prior_reference": {
+        "sourceId": "29:1797",
+        "templateId": "TPL-SYSTEM-RECOVERY",
+        "streamId": "S-SEMANTIC",
+        "stateId": "STATE-ERROR",
+        "modeId": "MODE-SCREEN-READER",
+        "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_SEMANTIC_V01",
+        "kind": "FOCUSED_FRAME",
+        "width": 320,
+        "profileIds": [
+          "SP-SYSTEM-RECOVERY",
+          "VP-INTERACTIVE",
+          "MP-INTERACTIVE",
+          "DS-S-SEMANTIC"
+        ]
+      }
+    },
+    {
+      "index": 40,
+      "expected_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_PRINT_STREAM_SEMANTIC_V01",
+      "matches_new_crop_reference": true,
+      "prior_reference": {
+        "sourceId": "29:1797",
+        "templateId": "TPL-SYSTEM-RECOVERY",
+        "streamId": "S-SEMANTIC",
+        "stateId": "STATE-ERROR",
+        "modeId": "MODE-PRINT",
+        "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_PRINT_STREAM_SEMANTIC_V01",
+        "kind": "FOCUSED_FRAME",
+        "width": 320,
+        "profileIds": [
+          "SP-SYSTEM-RECOVERY",
+          "VP-INTERACTIVE",
+          "MP-INTERACTIVE",
+          "DS-S-SEMANTIC"
+        ]
+      }
+    },
+    {
+      "index": 41,
+      "expected_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SEMANTIC_SHELL_STREAM_SEMANTIC_V01",
+      "matches_new_crop_reference": true,
+      "prior_reference": {
+        "sourceId": "29:1797",
+        "templateId": "TPL-SYSTEM-RECOVERY",
+        "streamId": "S-SEMANTIC",
+        "stateId": "STATE-ERROR",
+        "modeId": "MODE-SEMANTIC-SHELL",
+        "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SEMANTIC_SHELL_STREAM_SEMANTIC_V01",
+        "kind": "FOCUSED_FRAME",
+        "width": 320,
+        "profileIds": [
+          "SP-SYSTEM-RECOVERY",
+          "VP-INTERACTIVE",
+          "MP-INTERACTIVE",
+          "DS-S-SEMANTIC"
+        ]
+      }
+    },
+    {
+      "index": 42,
+      "expected_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_GRAYSCALE_STREAM_SEMANTIC_V01",
+      "matches_new_crop_reference": true,
+      "prior_reference": {
+        "sourceId": "29:1797",
+        "templateId": "TPL-SYSTEM-RECOVERY",
+        "streamId": "S-SEMANTIC",
+        "stateId": "STATE-ERROR",
+        "modeId": "MODE-GRAYSCALE",
+        "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_GRAYSCALE_STREAM_SEMANTIC_V01",
+        "kind": "FOCUSED_FRAME",
+        "width": 320,
+        "profileIds": [
+          "SP-SYSTEM-RECOVERY",
+          "VP-INTERACTIVE",
+          "MP-INTERACTIVE",
+          "DS-S-SEMANTIC"
+        ]
+      }
+    },
+    {
+      "index": 43,
+      "expected_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_UNAVAILABLE_FONT_STREAM_SEMANTIC_V01",
+      "matches_new_crop_reference": true,
+      "prior_reference": {
+        "sourceId": "29:1797",
+        "templateId": "TPL-SYSTEM-RECOVERY",
+        "streamId": "S-SEMANTIC",
+        "stateId": "STATE-ERROR",
+        "modeId": "MODE-UNAVAILABLE-FONT",
+        "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_UNAVAILABLE_FONT_STREAM_SEMANTIC_V01",
+        "kind": "FOCUSED_FRAME",
+        "width": 320,
+        "profileIds": [
+          "SP-SYSTEM-RECOVERY",
+          "VP-INTERACTIVE",
+          "MP-INTERACTIVE",
+          "DS-S-SEMANTIC"
+        ]
+      }
+    },
+    {
+      "index": 44,
+      "expected_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_UNAVAILABLE_IMAGE_ASSET_STREAM_SEMANTIC_V01",
+      "matches_new_crop_reference": true,
+      "prior_reference": {
+        "sourceId": "29:1797",
+        "templateId": "TPL-SYSTEM-RECOVERY",
+        "streamId": "S-SEMANTIC",
+        "stateId": "STATE-ERROR",
+        "modeId": "MODE-UNAVAILABLE-IMAGE-ASSET",
+        "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_UNAVAILABLE_IMAGE_ASSET_STREAM_SEMANTIC_V01",
+        "kind": "FOCUSED_FRAME",
+        "width": 320,
+        "profileIds": [
+          "SP-SYSTEM-RECOVERY",
+          "VP-INTERACTIVE",
+          "MP-INTERACTIVE",
+          "DS-S-SEMANTIC"
+        ]
+      }
+    }
+  ]
+}

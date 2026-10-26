@@ -1,0 +1,106 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-17",
+  "purpose": "Close the existing BF-01 qualification review/correction delivery gap; candidate logical contract, not an implementation, accepted route, wire freeze or new current authority.",
+  "cause": [
+    {
+      "path": "docs/phase-1-ux-architecture/FLOWS.md",
+      "lines": "163-168",
+      "fact": "Already-supplied qualification is displayed/selectable rather than requested again; review permits correction."
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "lines": "594-599",
+      "fact": "IF-BOOK-02 explicitly supplies no qualification-read endpoint; exact authorized review/read delivery remains undefined."
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "section": "Booking status read and client ordering proposal",
+      "fact": "IF-BOOK-07 is a minimal status projection, not a qualification payload."
+    }
+  ],
+  "recommendation": {
+    "interfaceCandidate": "IF-BOOK-10",
+    "method": "GET",
+    "path": "/api/v1/bookings/lineages/{lineage_id}/qualification",
+    "reason": "Read the already-defined qualification resource separately from PATCH mutations and minimal lineage status. No new visitor question, identity provider, account, lead, stored copy, scheduling effect or retention clock.",
+    "alternative": "Extending status would disclose private fields on every status poll and contradict its minimal projection. Returning only the last mutation receipt cannot recover values after a permitted reload or from a later revision. Neither is the recommendation."
+  },
+  "scope": {
+    "purpose": "Current own-lineage correction/review of an already-admitted qualification before a booking/calendar intent has been admitted.",
+    "allowedLineageStates": [
+      "VALIDATION_ERROR",
+      "QUALIFICATION_COMPLETE",
+      "EMAIL_PENDING",
+      "EMAIL_EXPIRED",
+      "EMAIL_UNDELIVERABLE",
+      "VERIFIED",
+      "NO_AVAILABILITY",
+      "SLOT_SELECTED"
+    ],
+    "stateGuard": "The allowlist alone grants nothing. Require an existing admitted lawful qualification, current permitted booking-purpose display, live current proof/disclosure authority and no admitted or unresolved calendar/meeting intent. A validation failure cannot manufacture valid stored values. Initial empty BOOKING_STARTED and later booking/change/cancel stages are not this read.",
+    "laterStages": "Existing server-prepared booking/reschedule/cancel reviews retain their separately scoped projections and guards. This candidate does not replace them or claim to complete every BF-01 data delivery path.",
+    "authorization": "Selected booking-family cookie/current generation plus exact own lineage; proof/expiry/revocation/data-purpose/retention must be valid at lookup and output admission. A UUID, email verification, chat proof, staff identity, last receipt or old consent alone grants no disclosure. Unknown authority denies; never reconstruct credentials from a selector.",
+    "atomicity": "Read one coherent committed lineage revision, qualification and applicable purpose binding under the existing guarded-authority transition. Serialize first, recheck the output fence against correction/withdrawal/revocation/expiry/intent admission before transmission. Real concurrency enforcement remains later implementation work.",
+    "privacy": "Return only existing six qualification values plus minimal purpose/notice references already necessary for that active review. No raw consent proof history, timestamps, verification/challenge state, provider/staff identity, calendar detail, bearer or CSRF. Original purpose/field expiry governs every copied value; a retained operation or legal/audit copy cannot become ordinary review data."
+  },
+  "logicalProjection": {
+    "success": "One closed snapshot: qualification_review discriminator, own lineage_id, current positive revision, existing qualification object and a closed purpose/notice reference identifying the applicable recorded booking-purpose grant. Exact reference encoding will reuse the consent module; no client-declared grant is accepted.",
+    "qualification": "Reuse booking-qualification.schema.json#/$defs/qualification with existing normalization/eligibility semantics. Preserve admitted values, not a new read-time normalization; no optional budget or fabricated defaults.",
+    "absence": "No partially populated success, empty qualification masquerading as an existing record or reason-rich private denial. A whole currently disclosable snapshot is required.",
+    "grantLimit": "The snapshot is display context, never permission to submit, verify, schedule, renew or retain data. Every mutation rechecks current revision, purpose and state."
+  },
+  "transport": {
+    "common": "Reuse the existing private booking GET ingress/cookie/present-Origin/no-CORS/JSON/no-redirect restrictions. No query, request body, conditional/range fields, proof issuance, CSRF rotation, cookies or renewal. Strict same-origin HTTPS fetch; missing Origin follows existing read policy rather than borrowed mutation rules.",
+    "output": "application/json strict UTF-8, identity/no Content-Encoding, Cache-Control:no-store and X-Content-Type-Options:nosniff for every route-owned response. No ETag/Last-Modified/304, public HTML/SSR payload, service-worker/CDN storage, local/session storage, history state, analytics, payload logs or restored page cache as the qualification source.",
+    "headersAndRefusals": "Reuse object-independent framing/method/Accept/size refusals, including bodyless HEAD refusal without hypothetical GET Content-Length and Allow:GET; no redirect/CORS grant.",
+    "responses": {
+      "200": "Complete currently authorized snapshot, not consent/booking confirmation",
+      "400": "Fixed INVALID_REQUEST/correct_request for syntactic route/query/body/conditional input, without object lookup or input echo",
+      "404": "Uniform ACCESS_UNAVAILABLE/contact for absent qualification, wrong/unknown lineage, expired/revoked proof, prohibited state/purpose or otherwise undisclosable snapshot; no condition echo",
+      "429": "Bodyless admission refusal, Retry-After30; no object/quota existence detail",
+      "503": "SERVICE_UNAVAILABLE/refresh_review for unavailable authority/storage/encoding; no partial data or guessed empty record"
+    },
+    "finiteEnvelope": "Proposed starting success ceiling32768 emitted bytes, serialized before headers; fixed error bodies<=1024. This is separate from IF-BOOK-07's unchanged1024 status ceiling. Existing input scalar limits remain; an oversized result fails closed rather than truncating.",
+    "capacity": "Propose sharing the existing64-reader aggregate pool, one in-flight private read per authorized booking context and ten starts per rolling60 seconds across status and this qualification read. Retain1024 limiter keys, no queue/active eviction, original rotation/tab/worker ownership, two-second authority/projection and five-second delivery deadlines, permits until settlement. This is an explicit prospective amendment to status-only pool wording, not an already-active shared limit.",
+    "client": "One read on deliberate opening or Refresh, no timer/background polling; at least10 seconds between starts, no overlap or automatic retry. Reuse ten-second client observation deadline; respect429 Retry-After before manual retry. Offline/hidden/leaving/known access loss fences requests and late data. Returning does not silently refetch or persist personal input."
+  },
+  "clientOrdering": {
+    "context": "Bind response to selected process/proof/UI epoch. Reject abandoned contexts and lower revisions. Equal revision with different allowed data is a protocol inconsistency; do not merge or choose a winner.",
+    "edits": "Do not overwrite locally changed fields from a delayed snapshot. A clean form may install one complete snapshot. A dirty form shows a review-changed/reload-or-continue-correction choice under privacy rules; submitting still uses the server revision and existing guarded PATCH. No automatic fieldwise merge or silent reapplication.",
+    "authorityLoss": "Clear private displayed/review data and disable private actions on known proof/purpose loss, withdrawal or undisclosable response. Failed network observation is not a new grant; label any still-permitted in-memory snapshot last-known and offer deliberate refresh.",
+    "routeLoss": "Do not recreate a lineage, resend email, select a slot or recover ownership from entered email after denial."
+  },
+  "futureBehaviorScenarios": [
+    "Valid current own lineage returns its admitted six fields and applicable purpose reference without a new effect or revision.",
+    "Empty, wrong-lineage, expired/revoked, retired-purpose and post-intent states return the same non-disclosing access denial.",
+    "Correction racing read cannot mix old qualification with new revision; response admitted before/after fence follows the approved ordering.",
+    "Withdrawal/revocation/expiry after lookup but before output prevents new disclosure; delayed replies cannot repopulate a cleared context.",
+    "GET/retry does not verify email, renew consent/access, queue reconciliation, issue challenge or write calendar.",
+    "Dirty local edits survive a delayed newer snapshot without silent merge; stale revision submission is refused by actual PATCH.",
+    "Status and qualification reads across tabs/rotations share bounded admission, with permits retained for draining work.",
+    "Body/query/conditional/HEAD/Accept/oversize and backpressure failures cannot produce private diagnostics or truncated success.",
+    "Reload with current proof can recover permitted stored values; browser persistent storage and old receipts cannot substitute for current authority."
+  ],
+  "plannedBindings": [
+    "INTERFACE_CATALOG.md proposed read definition and truthful prior-gap references",
+    "interface-catalog.csv new proposed row, without status DONE or acceptance",
+    "PRIVATE_PROCESS_PROOF.md explicit shared pool and linkage without widening status projection",
+    "A separate closed response module and schema-only fixtures, then actual-boundary tests after application authorization",
+    "Scheduling/qualification references and acceptance matrix link to the exact reviewed candidate, retaining their separate scopes"
+  ],
+  "primarySupport": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-9.3.1",
+      "checked": "2026-10-17",
+      "claim": "GET retrieves a resource representation; its request body has no generally defined semantics."
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9111.html#section-5.2.2.5",
+      "checked": "2026-10-17",
+      "claim": "No-store limits cache retention/reuse; it does not by itself establish privacy."
+    }
+  ],
+  "gates": "Needs independent security/architecture definition review, exact directional/purpose/resource binding and integrated founder acceptance. Material new choice or identified conflict returns to founder. No application endpoint, schema correctness, legal clearance, runtime test, source/retention adoption or provider capability is asserted."
+}

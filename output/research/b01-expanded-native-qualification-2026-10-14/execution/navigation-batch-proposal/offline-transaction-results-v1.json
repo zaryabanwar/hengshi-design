@@ -1,0 +1,51 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-15",
+  "cases": [
+    {
+      "name": "complete scoped graph",
+      "result": "APPLIED",
+      "writes": 106,
+      "newEdges": 106,
+      "reportBytes": 11996
+    },
+    {
+      "name": "effective caption drift",
+      "result": "ABORTED_PREFLIGHT",
+      "writes": 0,
+      "reportBytes": 305
+    },
+    {
+      "name": "unexpected hidden reaction",
+      "result": "ABORTED_PREFLIGHT",
+      "writes": 0,
+      "reportBytes": 324
+    },
+    {
+      "name": "variant owner drift",
+      "result": "ABORTED_PREFLIGHT",
+      "writes": 0,
+      "reportBytes": 293
+    },
+    {
+      "name": "rendered Apply caption drift",
+      "result": "ABORTED_PREFLIGHT",
+      "writes": 0,
+      "reportBytes": 307
+    },
+    {
+      "name": "interrupted setter with full restoration",
+      "result": "ROLLED_BACK",
+      "writes": 18,
+      "reportBytes": 418
+    },
+    {
+      "name": "concurrent reaction is not overwritten",
+      "result": "ROLLBACK_INCOMPLETE",
+      "writes": 17,
+      "reportBytes": 505
+    }
+  ],
+  "limits": "Synthetic Plugin API transaction harness only. No Figma/provider call, capability/auth/quota check, native behavior, application correctness, accessibility or B01/Phase1 verdict."
+}

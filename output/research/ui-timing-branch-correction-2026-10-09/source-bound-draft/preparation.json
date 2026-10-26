@@ -1,0 +1,1263 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Unapplied nine-source timing interpretation correction; not approval or runtime proof",
+  "primary_source": "https://www.w3.org/TR/WCAG22/#timing-adjustable",
+  "sources": [
+    {
+      "source": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "before": "output/research/ui-timing-branch-correction-2026-10-09/before/docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "before_sha256": "6fa43937ae5e590b31e4fc21ea9e1209d3bfcdf145a6698d2429125213166dec",
+      "proposed": "output/research/ui-timing-branch-correction-2026-10-09/source-bound-draft/proposed/docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "proposed_sha256": "deb91325e1c8a543878111883f5b1203ae9e5dc35c00e0d837e927786eaf47e2"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/design-batch-plan.csv",
+      "before": "output/research/ui-timing-branch-correction-2026-10-09/before/docs/phase-1-ui-reference-design/design-batch-plan.csv",
+      "before_sha256": "550d8de3c6860f74e09e8a53da52e24ca2874d94b705d11f6afd4745f0142d12",
+      "proposed": "output/research/ui-timing-branch-correction-2026-10-09/source-bound-draft/proposed/docs/phase-1-ui-reference-design/design-batch-plan.csv",
+      "proposed_sha256": "0b01be6b01157785cf57dcb5c36a8efbd9254031708f9afad19db52e4f8b32ce"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/README.md",
+      "before": "output/research/ui-timing-branch-correction-2026-10-09/before/docs/phase-1-ui-reference-design/README.md",
+      "before_sha256": "7be1fd2c5c105a64440ff2be269248641031252f93430a0074ab2bf8d766e03f",
+      "proposed": "output/research/ui-timing-branch-correction-2026-10-09/source-bound-draft/proposed/docs/phase-1-ui-reference-design/README.md",
+      "proposed_sha256": "0a73ad8ab3cbf33c88b3b0b3977cf1ba6609ee6beb68082701ac10c3ffc3990b"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/traceability.csv",
+      "before": "output/research/ui-timing-branch-correction-2026-10-09/before/docs/phase-1-ui-reference-design/traceability.csv",
+      "before_sha256": "70f9030030568b1564354e06b064dbd48e637086830e4d95fbd9e2da1b7c0cf2",
+      "proposed": "output/research/ui-timing-branch-correction-2026-10-09/source-bound-draft/proposed/docs/phase-1-ui-reference-design/traceability.csv",
+      "proposed_sha256": "ac2a1712b53dcae3ec5bc9c1e214ab6dc50c9ef02fb0398dc9ec110b8d2f636a"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/evidence-capture-plan.csv",
+      "before": "output/research/ui-timing-branch-correction-2026-10-09/before/docs/phase-1-ui-reference-production/evidence-capture-plan.csv",
+      "before_sha256": "7c639a6b51bd6ae7549e1ca666468273283089bce145015c2b3605ad40686c93",
+      "proposed": "output/research/ui-timing-branch-correction-2026-10-09/source-bound-draft/proposed/docs/phase-1-ui-reference-production/evidence-capture-plan.csv",
+      "proposed_sha256": "4dceafb6d78a859ff5aee23ac78e65180975e72e83ed14a40dc20a90ad4fa0fd"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/validation/validate-ui-reference-design.ps1",
+      "before": "output/research/ui-timing-branch-correction-2026-10-09/before/docs/phase-1-ui-reference-design/validation/validate-ui-reference-design.ps1",
+      "before_sha256": "d5f41a797b93431c6a98ca1b1a740eeb267cd1f5f398438efe729d1709bca16d",
+      "proposed": "output/research/ui-timing-branch-correction-2026-10-09/source-bound-draft/proposed/docs/phase-1-ui-reference-design/validation/validate-ui-reference-design.ps1",
+      "proposed_sha256": "d5cddddd0d6b8bfceeaafa3cbbf114fae3d7eb7713f80a6cd97f9e1dfc526050"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/UI_REFERENCE_DESIGN_CONTRACT.md",
+      "before": "output/research/ui-timing-branch-correction-2026-10-09/source-bound-draft/before/docs/phase-1-ui-reference-design/UI_REFERENCE_DESIGN_CONTRACT.md",
+      "before_sha256": "50600ea847c3ab4f7cb52c85beafeaf720458a56398c2f84a8164cf36762d9c2",
+      "proposed": "output/research/ui-timing-branch-correction-2026-10-09/source-bound-draft/proposed/docs/phase-1-ui-reference-design/UI_REFERENCE_DESIGN_CONTRACT.md",
+      "proposed_sha256": "396d32f472794cb83168053ca6841bfbd37733923cafa225725391e22bb9830f"
+    },
+    {
+      "source": "scripts/validation/ui_column_authority.py",
+      "before": "output/research/ui-timing-branch-correction-2026-10-09/source-bound-draft/before/scripts/validation/ui_column_authority.py",
+      "before_sha256": "d82070400b543208cba607465606d1dc0930cf70f31ece741e4960c8daac2988",
+      "proposed": "output/research/ui-timing-branch-correction-2026-10-09/source-bound-draft/proposed/scripts/validation/ui_column_authority.py",
+      "proposed_sha256": "e4344900d3210167bb8ecaa1fc7387bb927060685f5f0a291f9689ac580a41f4"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/column-authority.json",
+      "before": "output/research/ui-timing-branch-correction-2026-10-09/source-bound-draft/before/docs/phase-1-ui-reference-design/column-authority.json",
+      "before_sha256": "e786b29985ddd0a553622aa1adaf4029543d2f0abb395a5ac7dae64b3dd21554",
+      "proposed": "output/research/ui-timing-branch-correction-2026-10-09/source-bound-draft/proposed/docs/phase-1-ui-reference-design/column-authority.json",
+      "proposed_sha256": "85736b6db6801ffdc529143085c20346193dc4904eef01e09d2074524211f98a"
+    }
+  ],
+  "updated_source_pins": [
+    "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+    "docs/phase-1-ui-reference-design/UI_REFERENCE_DESIGN_CONTRACT.md",
+    "docs/phase-1-ux-architecture/FLOWS.md",
+    "docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md",
+    "docs/phase-1-ux-architecture/UX_ARCHITECTURE.md"
+  ],
+  "updated_section_witnesses": [
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-HOME",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-SERVICES",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-WING-STRATEGY",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-SERVICE-STRATEGY-ARCHITECTURE",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-WING-DIGITAL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-SERVICE-PLATFORM-PRODUCT",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-SERVICE-PRODUCT-EXPERIENCE",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-SERVICE-COMMERCE-GROWTH",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-WING-AI-DATA",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-SERVICE-AI-AUTOMATION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-SERVICE-DATA-ANALYTICS",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-WING-IMMERSIVE",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-SERVICE-SPATIAL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-SERVICE-CREATIVE",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-WING-CLOUD-TRUST",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-SERVICE-CLOUD-RELIABILITY",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-SERVICE-SECURITY-TRUST",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-INDUSTRIES",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-INDUSTRY-AGRICULTURE",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-INDUSTRY-MINING",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-WORK",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-WORK-DETAIL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-DEMOS",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-DEMO-DETAIL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-INSIGHTS",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-INSIGHT-DETAIL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-EXPERTS",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-EXPERT-DETAIL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-TRUST",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-TRUST-DETAIL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-ABOUT",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-CONTACT",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-BOOK",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-CREDITS",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-PRIVACY",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-FLOW-NAVIGATION-SEARCH",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-FLOW-FIRST-VISIT",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-FLOW-RETURN-VISIT",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-FLOW-WORLD-HUD-STREAM",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-FLOW-AI",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-FLOW-HUMAN-HANDOFF",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-FLOW-MEDIA-OPT-IN",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-FLOW-BOOKING-LINEAGE",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-FLOW-CONTACT",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-FLOW-STAFF-PUBLICATION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-FLOW-AUTH-SESSION-PERMISSION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-FLOW-ERROR-OFFLINE-RECOVERY",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-01",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-02",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-03",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-04",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-05",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-06",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-07",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-08",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-09",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-10",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-11",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-12",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-13",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-14",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-15",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-16",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-17",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-18",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-19",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-20",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-21",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-22",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-23",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-24",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-25",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-26",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-27",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-28",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-29",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-30",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-31",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-32",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-33",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-34",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-35",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-36",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-37",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-38",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-39",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-40",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-41",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-42",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-43",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-44",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-45",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-46",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-47",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-48",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-49",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-50",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-51",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-52",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-53",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-EXCL-WORLD",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-EXCL-ADMIN",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-EXCL-NONPUBLIC-PUBLICATION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-EXCL-CHAT-SESSIONS",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-EXCL-INTERNAL-SEARCH",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-EXCL-TRACKING-PARAMETERS",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-EXCL-FILTER-SORT-VARIANTS",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-EXCL-STAGING",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-EXCL-DEFENSE",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-WAY-WING-AI-DATA",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-WAY-ROOM-AI-AUTOMATION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-WAY-ROOM-DATA-ANALYTICS",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-WAY-WING-STRATEGY",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-WAY-ROOM-STRATEGY-ARCHITECTURE",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-WAY-WING-IMMERSIVE-CREATIVE",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-WAY-ROOM-SPATIAL-IMMERSIVE",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-WAY-ROOM-CREATIVE-VISUAL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-WAY-WING-DIGITAL-GROWTH",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-WAY-ROOM-PLATFORM-PRODUCT",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-WAY-ROOM-PRODUCT-EXPERIENCE",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-WAY-ROOM-COMMERCE-GROWTH",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-WAY-WING-CLOUD-TRUST",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-WAY-ROOM-CLOUD-RELIABILITY",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-WAY-ROOM-SECURITY-TRUST",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-PUBLIC-HOME",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-SERVICE-COLLECTION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-SERVICE-WING",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-SERVICE-DETAIL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-INDUSTRY-COLLECTION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-INDUSTRY-DETAIL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-WORK-COLLECTION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-WORK-DETAIL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-DEMO-COLLECTION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-DEMO-DETAIL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-INSIGHT-COLLECTION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-INSIGHT-DETAIL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-EXPERT-COLLECTION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-EXPERT-DETAIL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-TRUST-COLLECTION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-TRUST-DETAIL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-PUBLIC-ABOUT",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-PUBLIC-CONTACT",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-BOOKING-SHELL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-GLOBAL-NAVIGATION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-DIRECTORY-SEARCH",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-FIRST-VISIT",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-RETURN-VISIT",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-WORLD-SHELL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-WORLD-HUD",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-QUICK-ACCESS-RECOVERY",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-AI-CONCIERGE",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-HUMAN-HANDOFF",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-MEDIA-OPT-IN",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-BOOKING-QUALIFICATION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-BOOKING-VERIFICATION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-BOOKING-AVAILABILITY",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-BOOKING-RECONCILIATION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-STAFF-AUTH",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-STAFF-QUEUE",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-STAFF-WORK-DETAIL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-PUBLICATION-EDITOR",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-PUBLICATION-REVIEW-RELEASE",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-AUDIT-INSPECTION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-SYSTEM-RECOVERY",
+      "column": "time_limit_branch"
+    }
+  ],
+  "updated_timing_obligations": [
+    {
+      "file": "foundation-route-coverage.csv",
+      "row_id": "ROUTE-BOOK",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-FLOW-AI",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-FLOW-HUMAN-HANDOFF",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-FLOW-MEDIA-OPT-IN",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-FLOW-BOOKING-LINEAGE",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-FLOW-STAFF-PUBLICATION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-FLOW-AUTH-SESSION-PERMISSION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-FLOW-ERROR-OFFLINE-RECOVERY",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-14",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-15",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-16",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-17",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-18",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-19",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-20",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-21",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-22",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-23",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-24",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-25",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-26",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-27",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-28",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-29",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-30",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-31",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-33",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-34",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-35",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-36",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-37",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-38",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-39",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-41",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-42",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-43",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-44",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-45",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-46",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-47",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-48",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-49",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-50",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-51",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-52",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-ACT-53",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-EXCL-ADMIN",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-EXCL-NONPUBLIC-PUBLICATION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-EXCL-CHAT-SESSIONS",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-EXCL-STAGING",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "foundation-flow-coverage.csv",
+      "row_id": "COV-EXCL-DEFENSE",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-BOOKING-SHELL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-QUICK-ACCESS-RECOVERY",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-AI-CONCIERGE",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-HUMAN-HANDOFF",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-MEDIA-OPT-IN",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-BOOKING-QUALIFICATION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-BOOKING-VERIFICATION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-BOOKING-AVAILABILITY",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-BOOKING-RECONCILIATION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-STAFF-AUTH",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-STAFF-QUEUE",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-STAFF-WORK-DETAIL",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-PUBLICATION-EDITOR",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-PUBLICATION-REVIEW-RELEASE",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-AUDIT-INSPECTION",
+      "column": "time_limit_branch"
+    },
+    {
+      "file": "reference-template-inventory.csv",
+      "row_id": "TPL-SYSTEM-RECOVERY",
+      "column": "time_limit_branch"
+    }
+  ],
+  "authority": "D-063 and its review/approval hashes remain untouched. This proposed registry requires independent review and a separately accepted successor binding before application. No producer-generated approval or review receipt.",
+  "unchanged": "All 1146 declared cells, branch identities, process criteria and preservation/reauthentication obligations retained; D-076 durations and no-absolute visitor rule unchanged. Extension count is a minimum, not a new maximum.",
+  "held": "Independent source review, including three current UX source rebindings; accepted successor approval and applicable design acceptance. Existing six-source draft remains incomplete and unapplied.",
+  "applied": false,
+  "external_call": false,
+  "additional_current_source_rebindings": [
+    {
+      "source": "docs/phase-1-ux-architecture/FLOWS.md",
+      "existing_pin": "2169C1543D697E94548EBB4675EA815FA9E36955ADCB808FAF02C3F37107E14B",
+      "proposed_current_pin": "168015A15B51C03CDF1F1532572D7B45C397708651C579C3E1E2025D5EE27097",
+      "snapshot": "output/research/ui-timing-branch-correction-2026-10-09/source-bound-draft/current-source-inputs/docs/phase-1-ux-architecture/FLOWS.md"
+    },
+    {
+      "source": "docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md",
+      "existing_pin": "3C723EEAF583CD5E5BA79B147E3AF1FD0D764EFA3097CF708D269F41CDD79BA6",
+      "proposed_current_pin": "FA3322D864DC8C29D2F7853D6DC9A961126F7A8AEA2B575505997D05C3297064",
+      "snapshot": "output/research/ui-timing-branch-correction-2026-10-09/source-bound-draft/current-source-inputs/docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md"
+    },
+    {
+      "source": "docs/phase-1-ux-architecture/UX_ARCHITECTURE.md",
+      "existing_pin": "E5F8A59E2E9B57E4D6D906731BDE1518423240B1BA25382518DF6035DCA13259",
+      "proposed_current_pin": "C84327305CA6DBF0EEEEADEF9A88C1BABC22029B8CA3285412ECF042286320E7",
+      "snapshot": "output/research/ui-timing-branch-correction-2026-10-09/source-bound-draft/current-source-inputs/docs/phase-1-ux-architecture/UX_ARCHITECTURE.md"
+    }
+  ],
+  "formatting": "Original registry whitespace and line endings retained; Git generates bounded line diffs."
+}

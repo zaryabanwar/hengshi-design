@@ -1,0 +1,98 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-14",
+  "reviewer": "Independent reviewer /root/review_native_trial_result_v1",
+  "revision_cycle_reviewed": "correction1",
+  "review_complete": true,
+  "review_outcome": "PASS",
+  "scope": "Consistency of the corrected expanded native qualification proposal and supplied partial source observations only. This is not an executable/source/copy admission, external-write release, native result, AT/profile conformance or founder acceptance.",
+  "packet": {
+    "path": "output/research/b01-expanded-native-qualification-2026-10-14/review/correction1/review-inputs-v1.json",
+    "sha256": "62cad38649096430369f8616e790bc6b4ff0dabfa5c295f8af141d99c93a1857",
+    "input_count": 19,
+    "source_and_frozen_bytes_and_sha256_verified": true,
+    "binding_errors": [],
+    "internal_plan_binding_count": 12,
+    "internal_plan_binding_errors": [],
+    "initial18_frozen_input_preservation_errors": [],
+    "plan_sha256": "5e24ac8c203bf729b5190d359da2439c1b1f88f59665b1c65163b4b9002ab2ce"
+  },
+  "predecessor": {
+    "path": "output/research/b01-expanded-native-qualification-2026-10-14/review/independent-review-expanded-qualification-v1.json",
+    "sha256": "ac3fda20e9ca4616d166106c2bd6cbedfa05071fe2ed72b283a1c64601364209",
+    "outcome": "REQUEST_CHANGES",
+    "assessment": "Preserved as initial frozen accounting. Current PASS is based on independently checked corrected graph, not inherited from any previous result or proposal PASS."
+  },
+  "findings": [],
+  "actionable_current_proposal_finding_count": 0,
+  "corrections": [
+    {
+      "id": "ENQR-01",
+      "disposition": "Resolved within proposal scope",
+      "evidence": [
+        "inputs/06-qualification-plan-v1.json#/edges/27 and /edges/29: NAVIGATION/HIGH/MEDIUM/OPEN now departs directly to PRESERVE or RESET comparison",
+        "inputs/06-qualification-plan-v1.json#/edges/28 and /edges/30: corresponding comparison returns to PREVIEW/NAVIGATION/HIGH",
+        "inputs/06-qualification-plan-v1.json#/frames/0 through /frames/2: ENQ_NAVIGATION_HIGH shared top-level prefix, ENQ host NAVIGATION HIGH direct-child name, empty relative parent path and diagonal/closed authored defaults",
+        "inputs/06-qualification-plan-v1.json#/qualification_cases/5/check: repeat identical dirty tuple/nonzero anchor; require successful preservation contrast; no pending/disclosure cleanup before departure",
+        "inputs/06-qualification-plan-v1.json#/execution_recipe/7: identical component/scroll/content topology, opaque paper and actual native matching-highlight confirmation"
+      ],
+      "independent_assessment": "Checked all12 family/active groups, not only the example. Pending is the next peer in HIGH/MEDIUM/LOW/SEMANTIC cycle and differs from active; Navigation/Directory departure is OPEN and Recovery is NOT_APPLICABLE. Each group has a preview and paired PRESERVE/RESET frames with identical authored defaults, exact shared group prefix and direct-child instance name/topology; names differ across groups. Both PRESERVE legs explicitly set component/scroll reset=false; both RESET legs set them=true. Targets/returns and expectations agree. ENQ06 requires visibly dirty pending/disclosure/anchor retention as the comparator and refuses reset-only qualification when that fails. Thus the proposal can now discriminate actual reset from pre-cleaning or an unmatched authored default, subject to fresh actual matching/settings and behavior observations."
+    }
+  ],
+  "graph_assessment": {
+    "variants": 80,
+    "by_family": {"NAVIGATION": 32, "DIRECTORY": 32, "RECOVERY": 16},
+    "ordered_active_pending_pairs_per_family": 16,
+    "frames": 36,
+    "preview_entry_flows": 12,
+    "paired_comparison_frames": 24,
+    "edges": 324,
+    "same_family_change_to_edges": 276,
+    "private_navigate_to_edges": 48,
+    "private_preserve_edges_settings_false": 24,
+    "private_reset_edges_settings_true": 24,
+    "visible_noops": 60,
+    "noop_breakdown": {"current_checked_choice": 48, "already_active_apply": 12},
+    "unresolved_endpoints": 0,
+    "duplicate_source_control_trigger": 0,
+    "edge_noop_overlap": 0,
+    "semantic_assessment": "Independently derived exact Cartesian variants,276 functional transitions and60 noops all equal the current frozen table.144 pending-only choices preserve active;36 changed Apply edges set active=pending;64 Open/Close and32 Escape change only disclosure. Services/query/offline contexts and family ownership remain invariant. Closed choices/Apply have no reactions; Recovery has no invented disclosure. The80 variants,276 functional edges and60noops are byte-equivalent data to the initial graph and have also been independently checked here. Counts are artifact integrity, not runtime or usability proof.",
+    "matching_assessment": "All12 groups have exactly one shared direct-child instance name and exact top-level prefix, same family component set and authored default, with explicit matching-highlight confirmation. No cross-family/active matching is intended. Comparison frame scroll/content topology and opaque paper are mandated by recipe; actual node construction, scroll containers and native highlights remain unobserved."
+  },
+  "guarded_recipe_assessment": {
+    "evidence": "inputs/06-qualification-plan-v1.json#/write_scope; /release_state; /source_candidates/admission; /execution_recipe",
+    "assessment": "Write scope reconciles to one new section, three sets,80 variants,12previews and24comparison frames/324single-action edges. Existing node editing/deletion, sharing, paid features, new files, Git/application changes, MCP/AI and unreviewed detach remain excluded. Fresh admission precedes copying owned HIGH/HIGH OPEN/CLOSED candidate visuals. New owned IDs must be discovered; all inherited source reactions stripped/inspected only within copies; no source-linked target survives. D057 copy and four distinct choice controls remain required. Paper backgrounds, common height/anchors and no automatic repair persist. Missing reset settings or matching/behavior failure stops the affected mechanism without an invented PASS. PRE/after editable archives and independent actual-result review remain gates.",
+    "authority": "Existing eight-state trial approval expressly does not authorize this new write. Proposal review PASS is not founder release or executable admission."
+  },
+  "copy_and_source_assessment": {
+    "copy_authority": "inputs/11-UG-3_CONTROL_COPY_PROPOSAL.md accepted D057 header, peer labels/order, exact phrase table and usage safeguards",
+    "copy": "All captions correspond to approved Detailed 3D, Balanced 3D, Simplified 3D, Quick Access order. Recipe requires accepted peer explanation/advance advisement before Apply selection, with active and pending meanings separate. Future actual rendering must verify exact text, fit and visible enabled noops. No legal/storage/consent or DOM radio semantics acceptance.",
+    "source_evidence": ["inputs/16-trial-owner-and-variants-current.json", "inputs/17-trial-set-current.png", "inputs/18-trial-set-current.txt"],
+    "source": "These three inputs are byte-identical to the saved image/layer/AX evidence directly inspected during initial review. They support existing section101:3204, set85:3174, preview94:3199, eight listed owned tuples, Active HIGH/MEDIUM, Pending MEDIUM/HIGH, Directory OPEN/CLOSED, set1500x2400 at140/140 with60/60spacing and Clip content. URL file key/set agree; Page1 name is visible. They do not provide current whole-source/page-ID, descendant property/type, caption/font/token/style/reaction, copy independence, preservation or restore admission. No fresh UI interaction was performed."
+  },
+  "official_guidance_assessment": {
+    "checked": "2026-10-14 during the initial and corrected review work",
+    "sources": [
+      "https://help.figma.com/hc/en-us/articles/360040035874-Prototype-actions",
+      "https://help.figma.com/hc/en-us/articles/14397859494295-State-management-for-prototypes",
+      "https://help.figma.com/hc/en-us/articles/360051747774-Preserve-scroll-position-in-prototypes"
+    ],
+    "assessment": "Official docs support same-set Change to/frame Navigate to; matching nested names/parent topology and top-level shared prefixes; memorization/sharing and explicit resets to canvas-authored state. Corrected paired experiment reflects those documented conditions and requires actual matching/options/behavior verification. Documentation cannot prove current constructed nodes or native behavior."
+  },
+  "case_assessment": {
+    "ENQ01_ENQ04": "Complete bounded four-stream active/pending, no-op, Apply, retained disclosure, Directory background nonactivation and Recovery context expectations remain consistent. Fixtures are not real route/modal/radio semantics.",
+    "ENQ05": "Requires an actual nonzero visible anchor through no-op/choice/Apply, with disclosed controls opened for testing. Geometry equality is not scroll proof.",
+    "ENQ06": "Corrected meaningful preserve/reset comparison across all12groups; actual dirty screenshots, matching highlights, checked/unchecked settings and both departure/return outcomes are necessary. If preservation fails, component reset remains unqualified.",
+    "ENQ07_ENQ08": "Focus/key/AT limits, exact new ownership/targets/source safeguards and exports remain actual observation obligations; no global Enter/Space Apply, CRC/source equivalence or tested restore claim."
+  },
+  "remaining_requirements": [
+    "Applicable explicit founder write authority, fresh full source/copy/executable admission and discovered IDs before guarded construction.",
+    "Actual expanded native case execution and independent result review before any larger construction release; missing settings, topology drift or comparator failure stays a recorded limitation.",
+    "Full22 B01 scenarios, all four streams, nine qualitative profile allocations, public evidence ownership/anatomy/frame/viewport/mode/context requirements remain.",
+    "P11 refusal chronology, failed Apply, preference failure, newer/unknown/terminal/timing lifetimes and real DOM/AT/radio/form/dialog/browser/device/WCAG semantics remain.",
+    "BNP-01 through BNP-06, whole-source preservation/restore, B01_EXIT and integrated B01/Phase1/founder acceptance remain DOING and are not discharged by this proposal PASS."
+  ],
+  "excluded_material": "HTML explanation and any other unfrozen observations are outside this19-input verdict.",
+  "review_execution": "Read-only packet inspection and independent structured graph/topology checks. Producer builder not executed or used as semantic oracle. Only this exclusive-created corrected receipt was written; no UI/Figma/MCP/AI/application/account/Git action or delegation."
+}

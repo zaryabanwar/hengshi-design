@@ -1,0 +1,59 @@
+--- initial/specs/001-platform-security-hardening/spec.md
+
++++ correction-1/specs/001-platform-security-hardening/spec.md
+
+@@ -44,11 +44,10 @@
+
+ separate accepted 30-minute idle/eight-hour absolute bounds. Concrete admission,
+ warning, More time and End mechanisms in the amended [visitor access profile](../../docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md#access-lifetime-retention-and-pending-cleanup)
+ and [handoff timing definition](../../docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md#timing-conflict-requiring-a-scoped-decision)
+-remain proposals requiring independent review and acceptance. No earlier feature
+-or contract PASS covers this amendment.
++remain mechanism proposals requiring acceptance and actual enforcement evidence. The later [26-input visitor-control review](../../docs/phase-1-architecture/contracts/reviews/visitor-lifetime-controls-v1-2026-10-07.md) gives bounded control-definition PASS; it selects no concrete credential/store/fencing mechanism or complete-process accessibility solution. The earlier feature PASS does not cover this amendment.
+ 
+ The [EU privacy/retention proposal](../../docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md#eu-privacy-and-retention-policy-proposal--2026-10-07)
+-is the working source for proposed lawful purposes, class clocks, rights, copies
++has a separate [eight-input bounded recommendation review](../../docs/phase-1-architecture/contracts/reviews/eu-privacy-retention-v1-2026-10-07.md) and remains the working source for proposed lawful purposes, class clocks, rights, copies
+ and transfers. New periods/bases are not accepted defaults, a blanket 90-day rule
+ or legal clearance; the classification matrix is not silently rebound. D-076
+ defers public registration details and the supplied registered address while
+@@ -78,7 +77,7 @@
+
+ | Goal | Measurable outcome | Evidence source |
+ |---|---|---|
+ | Enforce staff authority | Every protected action/read is permitted only for current approved identity, grant, object/purpose and state; wrong/missing/stale authority denies | Actual API/job and concurrent mutation/projection tests |
+-| Protect browser sessions | Approved rotating cookie session, CSRF, logout and 30-minute idle/eight-hour absolute bounds enforced | Actual browser/API and clock-controlled evidence |
++| Protect staff authentication sessions | Approved rotating staff cookie session, CSRF, logout and 30-minute idle/eight-hour absolute bounds enforced | Actual browser/API and clock-controlled evidence |
+ | Control emergency access | Exactly two dormant accounts; activation, bcrypt verification, local MFA, alerts, review and rotation enforced | Isolated emergency-procedure and denial evidence |
+ | Prevent hidden data use | No prohibited persistence, provider transfer, training or telemetry path; class-specific expiry/deletion survives restore | Actual stores/adapter boundaries and isolated recovery evidence |
+ | Preserve truthful public access | Held private functionality cannot fabricate availability/confirmation or make public content require staff/visitor login | Semantic/browser and process-boundary cases |
+@@ -141,7 +140,7 @@
+
+ | FSC-01 | Enforce Entra-backed staff identity and separate author, reviewer, founder approver and administrator responsibilities; missing/disabled/ambiguous mapping denies | Must | Actual authentication and role/action/object denial cases |
+ | FSC-02 | Recheck authenticated identity, explicit action grant, object/purpose scope and valid state/revision at every protected read/mutation/job boundary; no client role, ID or queued payload grants authority | Must | Direct API/job, list/search/count/error projection and interleaving tests |
+ | FSC-03 | Deny same-material author review/approval even with combined roles; edited snapshots invalidate prior reviews/approval; activation requires separate permitted operational authority | Must | Exact-candidate and concurrent contribution/review/activation cases |
+-| FSC-04 | Use rotating JWT browser sessions in Secure/HttpOnly/SameSite cookies, 30-minute idle/eight-hour absolute limits, validated token identity and revocation; exclude browser localStorage credential transport | Must | Actual cookie/client-store, rotation/replay/revocation and controlled-clock tests |
++| FSC-04 | Use rotating JWT staff authentication sessions in Secure/HttpOnly/SameSite cookies, 30-minute idle/eight-hour absolute limits, validated token identity and revocation; exclude browser localStorage credential transport. These staff clocks do not limit visitor conversation proof/access, governed separately by FSC-14 | Must | Actual cookie/client-store, rotation/replay/revocation and controlled-clock tests |
+ | FSC-05 | Enforce approved CSRF proof on state-changing browser requests and idempotent server logout; explicit approved production origins replace wildcard trust | Must | Actual browser/API cross-site denial, CORS and repeat-logout cases |
+ | FSC-06 | Keep exactly two local emergency accounts dormant normally; require controlled activation, bcrypt verification, local MFA, alerts, review and post-use rotation; random credentials at least 24 characters with approved entropy/custody | Must | Isolated lifecycle, negative factor/activation and credential-policy evidence without values |
+ | FSC-07 | Use Redis-backed account/network counters and progressive delay across workers; exact thresholds/outage behavior require acceptance; no indefinite unrelated-account lockout or unprotected default bypass | Must | Distributed limiter/outage and account/network separation cases |
+@@ -234,7 +233,7 @@
+
+ 2. **Given** a valid staff session, **when** wrong action/object/purpose, stale revision or unmapped operational grant is used, **then** direct/read/list/search/count/error projections and mutation deny without leaking private records; changing a grant between initial inspection and mutation is respected. Accepted SEC-002 specifically requires an authenticated non-administrator to receive 403 for administrator operations even after the frontend guard is removed; other exact error mappings remain held.
+ 3. **Given** a contributor with combined author/reviewer/founder/administrator labels, **when** they review/approve their own material or activate without separate authority, **then** denial persists; an independent eligible exact-candidate path succeeds and an edit invalidates it.
+ 4. **Given** a staff browser session, **when** actual cookies, stores and token lifecycle are inspected, **then** approved attributes, rotation and identity/key checks hold, no localStorage staff token is used, and replay/invalid issuer/audience/revocation fail under the accepted exact contract.
+-5. **Given** a controlled clock, **when** idle reaches 30 minutes or absolute duration reaches eight hours despite ongoing use, **then** the session expires at its accepted boundary; repeat logout is harmless and the applicable credential/session cannot be reused.
++5. **Given** a staff JWT authentication session and a controlled clock, **when** idle reaches 30 minutes or absolute duration reaches eight hours despite ongoing use, **then** the staff session expires at its accepted boundary; repeat logout is harmless and the staff credential/session cannot be reused. Visitor conversation proof/access retains FSC-14's separate inactivity/End policy and no absolute-duration limit.
+ 6. **Given** cross-site or missing/invalid CSRF proof, **when** a state-changing browser request is made, **then** it fails before a side effect; CORS cannot authorize the action, and approved-origin/valid-proof controls still require scoped identity.
+ 7. **Given** both emergency accounts dormant, **when** normal login or unauthorized activation is attempted, **then** access denies; authorized activation still requires bcrypt and local MFA, creates activation/use alerts and audit, and requires post-use review/rotation without bypassing role/legal/consent restrictions.
+ 8. **Given** synthetic candidate emergency credentials, **when** the approved generator/entropy/storage policy is exercised, **then** short, weak or reused values are rejected before account creation; evidence contains metadata/outcomes only and exactly two approved dormant accounts are maintained.
+@@ -248,7 +247,7 @@
+
+ 16. **Given** keyboard/assistive technology and non-WebGL visitors, **when** authentication/denial/expiry and public alternatives are used, **then** approved complete-process references govern focus/error recovery and equivalent public access; browser automation alone cannot establish full accessibility conformance.
+ 
+ 17. **Given** a visitor conversation legitimately active beyond the former two-hour proposal, **when** time advances, **then** elapsed age alone does not end it; 30 minutes of inactivity or authorized explicit End terminates visitor authority. Staff authentication retains its independent accepted limits.
+-18. **Given** a visitor reading an offered preview, **when** idle warning appears, **then** accepted usable response time, accessible extension and permitted-progress obligations apply. Reviewed More time must acknowledge current server admission; polls, duplicates and provider output cannot manufacture activity, and expired or ended authority cannot be resurrected. Exact mechanisms remain proposed until reviewed.
++18. **Given** a visitor reading an offered preview, **when** idle warning appears, **then** accepted usable response time, accessible extension and permitted-progress obligations apply. Reviewed More time must acknowledge current server admission; polls, duplicates and provider output cannot manufacture activity, and expired or ended authority cannot be resurrected. Specific mechanism bindings and actual enforcement remain held despite bounded control-definition review.
+ 19. **Given** End racing a message or pending operation, **when** authority and outcomes reconcile, **then** terminal authority prevents later delivery under that process, unknown ending is not reported complete, and neither booking cancellation nor completed scoped deletion is inferred. Exact ordering and response mechanisms follow accepted process contracts.
+ 
+ These are future behavior oracles from requirements, not executed tests. Exact

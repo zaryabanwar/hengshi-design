@@ -1,0 +1,73 @@
+{
+  "product": "Hengshi Design v1",
+  "scope": "Only additive authenticated staff cookie and CSRF transport recommendation",
+  "predecessorBytesPreserved": true,
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "path": ".specify/memory/constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 80333,
+      "sha256": "ac3075adbc4414d88e4b0f7f111a0476c0dd461596c08943d488d3b7d8949d20"
+    },
+    {
+      "path": "specs/001-platform-security-hardening/spec.md",
+      "bytes": 27314,
+      "sha256": "47704c411b72195a2a4f8b832b07b30d90b00673647afe50d8ac98b917939d99"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "bytes": 51692,
+      "sha256": "fafea73bdcedcf3057d504b98514f5796b331bf0184d30d10a165aae754e336f"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "bytes": 38158,
+      "sha256": "d7da364547c19344ccb1fca5a2554bb27410a7234f8209afade8664980f55c79"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "bytes": 33922,
+      "sha256": "a1f9f33a86b12b451f11e6ef5132b6e2ebeeefe21e5dbb96d3cc1e47e77b6d47"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "bytes": 75991,
+      "sha256": "21833e0bf533d88243e3da34be6f7f2ca401c3401a907c719c58a4fcb2196fbf"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/data-classification.csv",
+      "bytes": 5510,
+      "sha256": "4b163eec086cb46ca98fabf692632d1778ee116cb014cda179e5b4a2a5fd44c6"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/staff-signin-boundary-v1-2026-10-06.md",
+      "bytes": 17481,
+      "sha256": "33c15ae66c8fae70ce86cf1ef42b3aad52a3f39076e6beb1e0660fed31ea215a"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/staff-session-handoff-profile-v1-2026-10-06.md",
+      "bytes": 5298,
+      "sha256": "5fac4968e8ec3c22569d6e2945749ceb1803ded7c546a5dccfb25b64126352c8"
+    },
+    {
+      "path": "output/research/staff-cookie-csrf-profile-2026-10-06/SECURITY_PRIVACY_CONTRACT.before.md",
+      "bytes": 40793,
+      "sha256": "283cc68e4f8634ca3a8abf49eeb2051528e59e6dcd6470646ba698e137d370b9"
+    },
+    {
+      "path": "output/research/staff-cookie-csrf-profile-2026-10-06/source-receipt.json",
+      "bytes": 1983,
+      "sha256": "cb414b7f23ba5683679425e8dbd3d69ccdb7327a13825d881d718364ab46bf7b"
+    }
+  ],
+  "limits": "No prior reviewed definition rewrite; mechanism recommendation only; exact JWT rotation/claims/keys, pre-auth, Entra/MFA, origins/store and runtime/feature/integrated/founder acceptance held"
+}

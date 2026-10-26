@@ -1,0 +1,20 @@
+{
+  "scope": "Producer observation tooling only, not a coupled selected production stack",
+  "schema": {
+    "interpreter": "C:/Python314/python.exe",
+    "python": "3.14.5",
+    "jsonschema": "4.23.0",
+    "referencing": "0.37.0",
+    "command": "C:/Python314/python.exe -B -m unittest scripts.validation.test_booking_qualification_schema scripts.validation.test_process_value_schema scripts.validation.test_booking_creation_request_schema scripts.validation.test_chat_creation_request_schema",
+    "working_directory": "repository root",
+    "receipt": "output/research/booking-qualification-wire-2026-10-08/schema-tests.log"
+  },
+  "email_library": {
+    "interpreter": "apps/api/.venv/Scripts/python.exe",
+    "python": "3.14.5",
+    "email-validator": "2.3.0",
+    "command": "apps/api/.venv/Scripts/python.exe -B output/research/booking-qualification-wire-2026-10-08/observe-email.py",
+    "receipt": "output/research/booking-qualification-wire-2026-10-08/email-observations.json"
+  },
+  "mutations": "No install, lock or runtime changes; independent observations do not prove Pydantic/API integration or a complete compatible graph"
+}

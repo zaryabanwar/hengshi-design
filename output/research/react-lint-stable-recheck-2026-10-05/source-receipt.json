@@ -1,0 +1,37 @@
+{
+  "status": "DOING",
+  "date": "2026-10-05",
+  "scope": "Read-only official registry and tagged source observations, no installation/selection/application change",
+  "records": [
+    {
+      "file": "oxlint-registry.json",
+      "url": "https://registry.npmjs.org/oxlint/1.87.0",
+      "bytes": 3643,
+      "sha256": "61c491c449314b5f5d98e34ecbc7fd3d5acdc2c3b9eb86a58a1b3ecd18e6fe8c"
+    },
+    {
+      "file": "react-hooks-registry.json",
+      "url": "https://registry.npmjs.org/eslint-plugin-react-hooks/7.1.1",
+      "bytes": 2551,
+      "sha256": "7ccb572d85841dc9e54fdd98886f5a7c4235392ef4fd1743542ce3aede252bda"
+    },
+    {
+      "file": "gensync-registry.json",
+      "url": "https://registry.npmjs.org/gensync",
+      "bytes": 15068,
+      "sha256": "238627d88fbc228ca4b06bd4a40ffb74fc1e9b3f5b8dc5029c82aa16dae24fa3"
+    },
+    {
+      "file": "rules_of_hooks.rs",
+      "url": "https://raw.githubusercontent.com/oxc-project/oxc/oxlint_v1.87.0/crates/oxc_linter/src/rules/react/rules_of_hooks.rs",
+      "bytes": 90995,
+      "sha256": "35e4a166253a27d0990bddfdb66b14772b986db2af5ea2083f4cfa1da2d4682b"
+    },
+    {
+      "file": "exhaustive_deps.rs",
+      "url": "https://raw.githubusercontent.com/oxc-project/oxc/oxlint_v1.87.0/crates/oxc_linter/src/rules/react/exhaustive_deps.rs",
+      "bytes": 149508,
+      "sha256": "0c9a8372f5a72398dd63a747d35a978b4015626cd40d50573cf4fcfa062ddd3d"
+    }
+  ]
+}

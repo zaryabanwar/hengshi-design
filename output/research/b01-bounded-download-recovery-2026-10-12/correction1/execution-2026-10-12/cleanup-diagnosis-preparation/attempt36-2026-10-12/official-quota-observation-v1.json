@@ -1,0 +1,17 @@
+{
+  "product": "Hengshi Design v1",
+  "checked_date": "2026-10-12",
+  "official_source": "https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/",
+  "observations": [
+    "Official access page lists Starter at up to20 tool calls per month",
+    "Per-minute limits also apply",
+    "Page identifies add_code_connect_map, create_new_file and whoami as exempt examples",
+    "Actual read-only use_figma attempt36 returned the Starter-plan MCP tool-call limit"
+  ],
+  "limits": [
+    "No exact reset timestamp is supplied by the observed provider response or opened source",
+    "No actual account-wide call/debit inventory was retrieved",
+    "Project conservative attempt accounting remains36/33; no retrospective quota reclassification",
+    "No upgrade, paid activation, exemption call, automatic retry or additional Figma call authorized"
+  ]
+}

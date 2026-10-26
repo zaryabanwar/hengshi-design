@@ -1,5 +1,33 @@
 # Hengshi Design — Phase 1 Product and Business Requirements
 
+## Current v1 authority — reconciled 2026-10-05
+
+D-025 accepts this bounded foundation. The July draft/approval statements,
+constitution identifier and authority order below are preserved history, not a
+fresh acceptance request. Apply the current [constitution](../../.specify/memory/constitution.md)
+and [founder decisions](../../DECISIONS.md) first. The requirement IDs remain stable;
+their older wording cannot override the following accepted amendments and current
+controlling refinements. Complete Phase 1 acceptance and implementation remain held.
+
+| Earlier subject or wording | Current authority and interpretation |
+|---|---|
+| Global audience in BR-002 and section 3 | D-070 selects Europe-first English-speaking mid-market/enterprise buyers, with global reach as a broader ambition. No European office or hosting region is implied. |
+| Optional/directed-only campus in section 3 and UX requirements | Accepted four peer streams and explicit Apply rules remain binding. D-064 adds mouse/touch free steering/walking and reversal-aware nearby loading alongside destinations; WASD is unselected. Use the [reviewed UX scope amendment](../phase-1-ux-architecture/FLOWS.md#current-world-scope-amendment--v1), [World definition](../phase-1-3d/WORLD_EXPERIENCE.md) and [loading contract](../phase-1-3d/CAMPUS_ASSET_BUILD_SPEC.md#loading-and-residency-contract); proposed gestures/profiles are not accepted production controls. |
+| Discovery/conversion without JavaScript in section 3 | SEO-001 requires complete initial semantic HTML and visible Book access. The accepted [UX thesis](../phase-1-ux-architecture/UX_ARCHITECTURE.md#1-experience-thesis) and UXTEST-044 distinguish that from end-to-end transaction completion without JavaScript, which is not an approved requirement. Script failure needs truthful unavailable/not-completed recovery; equivalent non-WebGL booking remains required. |
+| Azure-only platform/region wording in section 3 and OPS-010/011/014 | D-068 and the [provider scope addendum](../phase-1-architecture/contracts/PROVIDER_SCOPE_ADDENDUM.md) defer hosting/provider/region/cost planning; Azure and AWS are candidates. Retain the approved component responsibilities, PostgreSQL authority, Entra identity, Azure Europe private-data AI restriction and Outlook/Teams intent. No Microsoft 365 setup, account entitlement or provider activation follows. |
+| Technology and product version wording | D-069 and AGENTS require the latest mutually compatible stable complete graph and first-production v1. Older constitution references are historical; real dependency, API and schema-format identifiers remain accurate. No production graph, install or upgrade is selected by this amendment. |
+| Missing company facts and prototype headquarters | D-070 supplies [admin-editable company/contact facts](../software-definition/06-entity-and-public-contact.md), still requiring verification/disclosure review. D-066/D-067/D-071 select an original nature-integrated campus and accepted layout basis; the Atlanta asset and application remain protected prototype evidence. Scene appearance is an aspirational design vision, not an environmental or office claim. |
+| Publication, process and data details | Use the [interface catalogue](../phase-1-architecture/contracts/INTERFACE_CATALOG.md), [publication](../phase-1-architecture/contracts/PUBLICATION_CONTRACT.md), [logical data](../phase-1-architecture/contracts/DATA_CONTRACT.md) and [security/privacy](../phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md) refinements by reference. Their bounded reviews do not freeze every wire schema, grant a role, verify legal policies or establish runtime enforcement. |
+
+This amendment links current authority without rewriting the accepted July rows,
+inventing new requirement IDs or reopening settled decisions. Use the
+[reconciliation map](../software-definition/04-reconciliation-map.md) for all
+fourteen deliverables and remaining genuine inputs. Ordinary document checks are
+artifact evidence only; current implementations must later be tested at their
+actual boundaries against the approved requirements and external contracts.
+
+## Preserved July requirements and evidence
+
 **Document status:** Draft for independent review and founder acceptance  
 **Approval status:** Phase 1 is in progress; this document is not yet an approved requirements baseline  
 **Classification:** Business confidential  

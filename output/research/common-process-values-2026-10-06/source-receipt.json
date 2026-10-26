@@ -1,0 +1,13 @@
+{
+  "date_utc": "2026-10-05T21:30:37.790393+00:00",
+  "context7_library_id": "/python-jsonschema/jsonschema",
+  "query": "Draft202012Validator explicit UUID FormatChecker and Registry local-only referencing, format is not enforced by default",
+  "sources": [
+    "https://www.rfc-editor.org/rfc/rfc9562.html#section-4",
+    "https://www.rfc-editor.org/rfc/rfc7493.html#section-2.2",
+    "https://json-schema.org/draft/2020-12/json-schema-validation",
+    "https://python-jsonschema.readthedocs.io/en/stable/validate/",
+    "https://python-jsonschema.readthedocs.io/en/stable/referencing/"
+  ],
+  "limits": "guidance and existing local tooling observations only; no production runtime/framework/dependency selection"
+}

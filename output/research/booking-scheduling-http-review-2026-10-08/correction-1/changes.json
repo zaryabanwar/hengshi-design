@@ -1,0 +1,21 @@
+{
+  "status": "DOING",
+  "correction_cycles_used": 1,
+  "scope": "Only the new HTTP appendix qualification-gate wording and two scoped receipt references",
+  "earlier_logical_C2_unchanged": true,
+  "schema_transport_capacity_unchanged": true,
+  "changes": [
+    {
+      "path": "docs/phase-1-architecture/contracts/BOOKING_SCHEDULING.md",
+      "before_sha256": "8dc09418fe2c85375e9437d91668b50fa84df4a2c658b524f78db5f4eb508af0",
+      "after_sha256": "6c88de533779031d2dd2dfa2a0a47a09b30f7e7224f42902b14bab854ddf5571",
+      "replacement_count": 2
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "before_sha256": "aeee8ecc6ff5eb47589563d11ef76f603b798163882ce8bf235dc7476c28cf31",
+      "after_sha256": "b20c5b9689cccccaa0800287aacc8b9ef07526eb22d9d0b9fdababcd73fc54ca",
+      "replacement_count": 1
+    }
+  ]
+}

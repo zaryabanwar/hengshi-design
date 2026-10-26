@@ -1,0 +1,163 @@
+{
+  "scope": "native installed Request.json raw parsing only; no actual HTTP endpoint, closed shape, auth, deployment or selected stable graph",
+  "python": "3.14.5",
+  "fastapi": "0.138.0",
+  "starlette": "1.3.1",
+  "source_file": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Lib\\site-packages\\starlette\\requests.py",
+  "source_sha256": "8691b01ae49ecfa085fe6419343678f73b77c92fc63a411106a77d8e9bf0ac44",
+  "source_line": 262,
+  "source": "    async def json(self) -> Any:\n        if not hasattr(self, \"_json\"):  # pragma: no branch\n            body = await self.body()\n            self._json = json.loads(body)\n        return self._json\n",
+  "cases": [
+    {
+      "name": "valid_object",
+      "raw_hex": "7b227374617465223a2270656e64696e67222c227265766973696f6e223a317d",
+      "contract_obligation": "raw_syntax_control",
+      "parser_accepted": true,
+      "root_type": "dict"
+    },
+    {
+      "name": "valid_unicode",
+      "raw_hex": "7b2274657874223a2248656e6773686920f09f8cb3227d",
+      "contract_obligation": "raw_syntax_control",
+      "parser_accepted": true,
+      "root_type": "dict"
+    },
+    {
+      "name": "valid_surrogate_pair",
+      "raw_hex": "7b2274657874223a225c75643833635c7564663333227d",
+      "contract_obligation": "raw_syntax_control",
+      "parser_accepted": true,
+      "root_type": "dict"
+    },
+    {
+      "name": "duplicate",
+      "raw_hex": "7b227374617465223a2270656e64696e67222c227374617465223a22636f6e6669726d6564227d",
+      "contract_obligation": "reject_duplicate_names",
+      "parser_accepted": true,
+      "root_type": "dict",
+      "retained_members": 1
+    },
+    {
+      "name": "escape_duplicate",
+      "raw_hex": "7b227374617465223a312c225c753030373374617465223a327d",
+      "contract_obligation": "reject_duplicate_names",
+      "parser_accepted": true,
+      "root_type": "dict",
+      "retained_members": 1
+    },
+    {
+      "name": "nested_duplicate",
+      "raw_hex": "7b22636f6e74657874223a7b2277696e67223a312c2277696e67223a327d7d",
+      "contract_obligation": "reject_duplicate_names",
+      "parser_accepted": true,
+      "root_type": "dict",
+      "retained_nested_members": 1
+    },
+    {
+      "name": "nan",
+      "raw_hex": "7b227265766973696f6e223a4e614e7d",
+      "contract_obligation": "reject_non_json_number",
+      "parser_accepted": true,
+      "root_type": "dict",
+      "nonfinite_value": true
+    },
+    {
+      "name": "infinity",
+      "raw_hex": "7b227265766973696f6e223a496e66696e6974797d",
+      "contract_obligation": "reject_non_json_number",
+      "parser_accepted": true,
+      "root_type": "dict",
+      "nonfinite_value": true
+    },
+    {
+      "name": "negative_infinity",
+      "raw_hex": "7b227265766973696f6e223a2d496e66696e6974797d",
+      "contract_obligation": "reject_non_json_number",
+      "parser_accepted": true,
+      "root_type": "dict",
+      "nonfinite_value": true
+    },
+    {
+      "name": "overflow_exponent",
+      "raw_hex": "7b2276616c7565223a31653430307d",
+      "contract_obligation": "field_numeric_range_or_precision_check",
+      "parser_accepted": true,
+      "root_type": "dict",
+      "nonfinite_value": true
+    },
+    {
+      "name": "underflow_exponent",
+      "raw_hex": "7b2276616c7565223a31652d3430307d",
+      "contract_obligation": "field_numeric_range_or_precision_check",
+      "parser_accepted": true,
+      "root_type": "dict",
+      "rounded_to_zero": true
+    },
+    {
+      "name": "unsafe_integer",
+      "raw_hex": "7b2276616c7565223a393030373139393235343734303939337d",
+      "contract_obligation": "field_numeric_range_or_precision_check",
+      "parser_accepted": true,
+      "root_type": "dict",
+      "integer_preserved_by_python": true
+    },
+    {
+      "name": "unpaired_value",
+      "raw_hex": "7b2274657874223a225c7564383030227d",
+      "contract_obligation": "reject_invalid_unicode_scalar",
+      "parser_accepted": true,
+      "root_type": "dict",
+      "contains_surrogate": true
+    },
+    {
+      "name": "unpaired_key",
+      "raw_hex": "7b225c7564383030223a317d",
+      "contract_obligation": "reject_invalid_unicode_scalar",
+      "parser_accepted": true,
+      "root_type": "dict",
+      "contains_surrogate": true
+    },
+    {
+      "name": "utf16",
+      "raw_hex": "fffe7b0022007300740061007400650022003a002200700065006e00640069006e00670022007d00",
+      "contract_obligation": "reject_non_utf8",
+      "parser_accepted": true,
+      "root_type": "dict"
+    },
+    {
+      "name": "utf32",
+      "raw_hex": "fffe00007b000000220000007300000074000000610000007400000065000000220000003a0000002200000070000000650000006e00000064000000690000006e00000067000000220000007d000000",
+      "contract_obligation": "reject_non_utf8",
+      "parser_accepted": true,
+      "root_type": "dict"
+    },
+    {
+      "name": "utf8_bom",
+      "raw_hex": "efbbbf7b227374617465223a2270656e64696e67227d",
+      "contract_obligation": "reject_bom_project_profile",
+      "parser_accepted": true,
+      "root_type": "dict"
+    },
+    {
+      "name": "trailing",
+      "raw_hex": "7b227374617465223a2270656e64696e67227d7b7d",
+      "contract_obligation": "reject_trailing_data",
+      "parser_accepted": false,
+      "exception_type": "JSONDecodeError"
+    },
+    {
+      "name": "malformed_utf8",
+      "raw_hex": "7b2274657874223a22ff227d",
+      "contract_obligation": "reject_non_utf8",
+      "parser_accepted": false,
+      "exception_type": "UnicodeDecodeError"
+    },
+    {
+      "name": "array_root",
+      "raw_hex": "5b5d",
+      "contract_obligation": "directional_envelope_check",
+      "parser_accepted": true,
+      "root_type": "list"
+    }
+  ]
+}

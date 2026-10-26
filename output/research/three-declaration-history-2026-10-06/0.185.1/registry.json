@@ -1,0 +1,84 @@
+{
+  "name": "@types/three",
+  "version": "0.185.1",
+  "license": "MIT",
+  "_id": "@types/three@0.185.1",
+  "maintainers": [
+    {
+      "name": "types",
+      "email": "ts-npm-types@microsoft.com"
+    }
+  ],
+  "contributors": [
+    {
+      "url": "https://github.com/joshuaellis",
+      "name": "Josh Ellis",
+      "githubUsername": "joshuaellis"
+    },
+    {
+      "url": "https://github.com/Methuselah96",
+      "name": "Nathan Bierema",
+      "githubUsername": "Methuselah96"
+    }
+  ],
+  "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/three",
+  "dist": {
+    "shasum": "cc0e604e56f2c625deabb3984fff932c8d4f39f4",
+    "tarball": "https://registry.npmjs.org/@types/three/-/three-0.185.1.tgz",
+    "fileCount": 1035,
+    "integrity": "sha512-db1xTb+EgYF2didW+eudSvVPtn75zo+fGsY8ShQrJY/B5ZBmC2Fiaykv3aImHAlCNEGuMPkPGXBJGLwzu5mC7A==",
+    "signatures": [
+      {
+        "sig": "MEUCIBlrKtDA8sgEB70gVQNRbvYDeNIgpEq/3qo2FgGlpg8tAiEAmaoL9s3pE0mtFmPyYfCD7cWZKr/vXD6XCW5eHoqMH70=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "unpackedSize": 1831735
+  },
+  "main": "",
+  "type": "module",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./build/three.module.js",
+      "require": "./build/three.cjs"
+    },
+    "./tsl": "./build/three.tsl.js",
+    "./src/*": "./src/*",
+    "./addons": "./examples/jsm/Addons.js",
+    "./webgpu": "./build/three.webgpu.js",
+    "./addons/*": "./examples/jsm/*",
+    "./package.json": "./package.json",
+    "./examples/jsm/*": "./examples/jsm/*",
+    "./examples/fonts/*": "./examples/fonts/*"
+  },
+  "scripts": {},
+  "_npmUser": {
+    "name": "types",
+    "email": "ts-npm-types@microsoft.com"
+  },
+  "repository": {
+    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+    "type": "git",
+    "directory": "types/three"
+  },
+  "description": "TypeScript definitions for three",
+  "directories": {},
+  "_nodeVersion": "24.18.0",
+  "dependencies": {
+    "fflate": "~0.8.2",
+    "@types/webxr": ">=0.5.17",
+    "meshoptimizer": "~1.1.1",
+    "@types/stats.js": "*",
+    "@tweenjs/tween.js": "~23.1.3",
+    "@dimforge/rapier3d-compat": "~0.12.0"
+  },
+  "_hasShrinkwrap": false,
+  "peerDependencies": {},
+  "typeScriptVersion": "5.6",
+  "_npmOperationalInternal": {
+    "tmp": "tmp/three_0.185.1_1783563416590_0.835299294521008",
+    "host": "s3://npm-registry-packages-npm-production"
+  },
+  "typesPublisherContentHash": "8f453bcfbad104529845c08a342c3174a9d8a83afc8ad45f9596913fce4c716f"
+}

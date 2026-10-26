@@ -1,0 +1,401 @@
+Content-Length: 390
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Resolved client capabilities: {\n\t\"workspace\": {\n\t\t\"didChangeConfiguration\": {\n\t\t\t\"dynamicRegistration\": true\n\t\t},\n\t\t\"configuration\": true,\n\t\t\"diagnostics\": {\n\t\t\t\"refreshSupport\": true\n\t\t}\n\t},\n\t\"general\": {\n\t\t\"positionEncodings\": [\n\t\t\t\"utf-16\"\n\t\t]\n\t}\n}"}}Content-Length: 1755
+
+{"jsonrpc":"2.0","id":1,"result":{"capabilities":{"positionEncoding":"utf-16","textDocumentSync":{"openClose":true,"change":2,"save":true},"completionProvider":{"triggerCharacters":[".","\"","'","`","/","@","<","#"," ","*"],"resolveProvider":true,"completionItem":{"labelDetailsSupport":true}},"hoverProvider":true,"signatureHelpProvider":{"triggerCharacters":["(",",","<"],"retriggerCharacters":[")"]},"definitionProvider":true,"typeDefinitionProvider":true,"implementationProvider":true,"referencesProvider":true,"documentHighlightProvider":true,"documentSymbolProvider":true,"codeActionProvider":{"codeActionKinds":["quickfix","source.organizeImports","source.removeUnusedImports","source.sortImports","source.fixAll"]},"codeLensProvider":{"resolveProvider":true},"workspaceSymbolProvider":true,"documentFormattingProvider":true,"documentRangeFormattingProvider":true,"documentOnTypeFormattingProvider":{"firstTriggerCharacter":"{","moreTriggerCharacter":["}",";","\n"]},"renameProvider":{"prepareProvider":true},"foldingRangeProvider":true,"selectionRangeProvider":true,"callHierarchyProvider":true,"linkedEditingRangeProvider":true,"semanticTokensProvider":{"legend":{"tokenTypes":[],"tokenModifiers":[]},"range":true,"full":true},"inlayHintProvider":true,"diagnosticProvider":{"identifier":"typescript","interFileDependencies":true,"workspaceDiagnostics":false},"workspace":{"fileOperations":{"willRename":{"filters":[{"scheme":"file","pattern":{"glob":"**/*.{ts,tsx,js,jsx,cts,cjs,mts,mjs,json}"}}]}}},"experimental":{"customSourceDefinitionProvider":true,"customMultiDocumentHighlightProvider":true},"_vs_onAutoInsertProvider":{"_vs_triggerCharacters":[">"]},"_vs_referencesProvider":true},"serverInfo":{"name":"typescript-go","version":"7.0.2"}}}Content-Length: 168
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"file watching: using builtin in-process watcher (client lacks dynamic watch registration)"}}Content-Length: 175
+
+{"jsonrpc":"2.0","id":"ts1","method":"workspace/configuration","params":{"items":[{"section":"js/ts"},{"section":"typescript"},{"section":"javascript"},{"section":"editor"}]}}Content-Length: 208
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"received options from workspace/configuration request:\njs/ts: <nil>\n\ntypescript: <nil>\n\njavascript: <nil>\n\neditor: <nil>\n"}}Content-Length: 249
+
+{"jsonrpc":"2.0","id":"ts2","method":"client/registerCapability","params":{"registrations":[{"id":"typescript-config-watch-id","method":"workspace/didChangeConfiguration","registerOptions":{"section":["js/ts","typescript","javascript","editor"]}}]}}Content-Length: 119
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'initialized' in 1.1498ms"}}Content-Length: 109
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Processed 1 file changes in 0s"}}Content-Length: 129
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/didOpen' in 92.3356ms"}}Content-Length: 150
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Adopted snapshot 1 (parent 0) as current session snapshot (replacing 0)"}}Content-Length: 150
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Adopted snapshot 2 (parent 1) as current session snapshot (replacing 1)"}}Content-Length: 743
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"======== Cloning snapshot 1 ========\n[03:31:30.800] Reason: RequestedLanguageService (pending file changes) -  Documents: [file:///C:/Users/Zaryab/Documents/Hengshi%20Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/fixture.tsx]\n[03:31:30.800] DidChangeCustomConfigFileName\n[03:31:30.800] DidRequestFile\n\t[03:31:30.800] Acquiring config for project\n[03:31:30.800] UpdateAutoImports\n\t[03:31:30.800] Building autoimport registry\n\t\t[03:31:30.800] Updated buckets and directories in 518µs\n\t\t[03:31:30.800] Built autoimport registry in 518µs\n[03:31:30.800] Finished cloning snapshot 1 into snapshot 2 in 518µs\n"}}Content-Length: 79
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":""}}Content-Length: 4080
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"======== Cloning snapshot 0 ========\n[03:31:30.707] Reason: DidOpenFile - file:///C:/Users/Zaryab/Documents/Hengshi%20Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/fixture.tsx\n[03:31:30.707] DidChangeCustomConfigFileName\n[03:31:30.707] DidChangeFiles\n\t[03:31:30.707] Checking for changes affecting config files\n\t\t[03:31:30.708] Summarizing file changes\n\t\t[03:31:30.708] Checking if any changed files are config files\n\t[03:31:30.708] computeConfigFileName:: File: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/fixture.tsx:: Result: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json\n\t[03:31:30.708] Searching for default configured project for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/fixture.tsx\n\t\t[03:31:30.708] Acquiring config for open file\n\t\t\t[03:31:30.708] Loading config file: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json\n\t\t\t[03:31:30.708] Finished loading config file\n\t\t[03:31:30.708] Creating ConfiguredProject: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json, currentDirectory: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component\n\t\t[03:31:30.708] Acquiring config for project\n\t\t[03:31:30.708] CompilerHost\n\t\t[03:31:30.799] Program update for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json completed in 90.2412ms\n\t\t[03:31:30.799] Project contains file directly\n\t[03:31:30.799] Found default configured project for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/fixture.tsx: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json (in 90.7625ms)\n[03:31:30.799] DidRequestFile\n\t[03:31:30.799] Acquiring config for project\n[03:31:30.799] Removed 1 cached file(s) in 0s\n[03:31:30.799] UpdateAutoImports\n\t[03:31:30.799] Building autoimport registry\n\t\t[03:31:30.799] Added project: c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json\n\t\t[03:31:30.799] Added directory: c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06\n\t\t[03:31:30.799] Added directory: c:/users\n\t\t[03:31:30.799] Added directory: c:/users/zaryab/documents/hengshi design/hengshi-design/output/research\n\t\t[03:31:30.799] Added directory: c:/users/zaryab/documents/hengshi design/hengshi-design/output\n\t\t[03:31:30.799] Added directory: c:/users/zaryab/documents/hengshi design/hengshi-design\n\t\t[03:31:30.799] Added directory: c:/users/zaryab/documents/hengshi design\n\t\t[03:31:30.799] Added directory: c:/users/zaryab/documents\n\t\t[03:31:30.799] Added directory: c:/users/zaryab\n\t\t[03:31:30.800] Added directory: c:/\n\t\t[03:31:30.800] Added directory: c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component\n\t\t[03:31:30.800] Added node_modules bucket: c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06\n\t\t[03:31:30.800] Added node_modules bucket: c:/users/zaryab/documents/hengshi design/hengshi-design\n\t\t[03:31:30.800] Updated buckets and directories in 1.0364ms\n\t\t[03:31:30.800] Built autoimport registry in 1.0364ms\n[03:31:30.800] Finished cloning snapshot 0 into snapshot 1 in 92.3356ms\n"}}Content-Length: 290
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\nProject 'c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json'\n\tFiles (66)\n-----------------------------------------------"}}Content-Length: 115
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\n======== Cache Statistics ========"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Open file count:        1"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Cached disk files:     69"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Realpath aliases:       0"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Project count:          1"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Config count:           1"}}Content-Length: 79
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":""}}Content-Length: 118
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Updated watch: auto-import watcher 10.0"}}Content-Length: 154
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\tc:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/node_modules/**/*"}}Content-Length: 79
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":""}}Content-Length: 259
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Added new watch: root files for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json watcher 8.0"}}Content-Length: 192
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\tc:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/**/*"}}Content-Length: 79
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":""}}Content-Length: 263
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Added new watch: program files for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json watcher 11.0"}}Content-Length: 259
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\tc:/users/zaryab/documents/hengshi design/hengshi-design/output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/@typescript/typescript-win32-x64/lib/**/*"}}Content-Length: 79
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":""}}Content-Length: 118
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Updated watch: auto-import watcher 10.1"}}Content-Length: 205
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\tc:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/node_modules/**/*"}}Content-Length: 79
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":""}}Content-Length: 106
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Updated watches in 2.5675ms"}}Content-Length: 263
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Added new watch: program files for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json watcher 11.1"}}Content-Length: 192
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\tc:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/**/*"}}Content-Length: 79
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":""}}Content-Length: 263
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Added new watch: program files for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json watcher 11.2"}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\tc:/users/zaryab/documents/hengshi design/hengshi-design/**/*"}}Content-Length: 79
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":""}}Content-Length: 117
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Updated watch: auto-import watcher 9.0"}}Content-Length: 154
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\tc:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/node_modules/**/*"}}Content-Length: 79
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":""}}Content-Length: 117
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Updated watch: auto-import watcher 9.1"}}Content-Length: 205
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\tc:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/node_modules/**/*"}}Content-Length: 79
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":""}}Content-Length: 106
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Updated watches in 4.6977ms"}}Content-Length: 245
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"uri":"file:///c%3A/users/zaryab/documents/hengshi%20design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json","diagnostics":[]}}Content-Length: 60
+
+{"jsonrpc":"2.0","id":2,"result":{"kind":"full","items":[]}}Content-Length: 136
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/diagnostic' (2) in 49.1938ms"}}Content-Length: 109
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Processed 1 file changes in 0s"}}Content-Length: 128
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/didOpen' in 2.7691ms"}}Content-Length: 150
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Adopted snapshot 3 (parent 2) as current session snapshot (replacing 2)"}}Content-Length: 3385
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"======== Cloning snapshot 2 ========\n[03:31:30.850] Reason: DidOpenFile - file:///C:/Users/Zaryab/Documents/Hengshi%20Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component/fixture.tsx\n[03:31:30.850] DidChangeCustomConfigFileName\n[03:31:30.850] DidChangeFiles\n\t[03:31:30.850] Checking for changes affecting config files\n\t\t[03:31:30.850] Summarizing file changes\n\t\t[03:31:30.850] Checking if any changed files are config files\n\t\t[03:31:30.850] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json\n\t[03:31:30.850] computeConfigFileName:: File: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component/fixture.tsx:: Result: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component/tsconfig.json\n\t[03:31:30.850] Searching for default configured project for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component/fixture.tsx\n\t\t[03:31:30.850] Acquiring config for open file\n\t\t\t[03:31:30.850] Loading config file: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component/tsconfig.json\n\t\t\t[03:31:30.850] Finished loading config file\n\t\t[03:31:30.850] Creating ConfiguredProject: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component/tsconfig.json, currentDirectory: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component\n\t\t[03:31:30.850] Acquiring config for project\n\t\t[03:31:30.850] CompilerHost\n\t\t[03:31:30.853] Program update for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component/tsconfig.json completed in 2.2482ms\n\t\t[03:31:30.853] Project contains file directly\n\t[03:31:30.853] Found default configured project for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component/fixture.tsx: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component/tsconfig.json (in 2.2482ms)\n[03:31:30.853] DidRequestFile\n\t[03:31:30.853] Acquiring config for project\n[03:31:30.853] Removed 1 cached file(s) in 0s\n[03:31:30.853] UpdateAutoImports\n\t[03:31:30.853] Building autoimport registry\n\t\t[03:31:30.853] Added project: c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component/tsconfig.json\n\t\t[03:31:30.853] Added directory: c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component\n\t\t[03:31:30.853] Updated buckets and directories in 520.9µs\n\t\t[03:31:30.853] Built autoimport registry in 520.9µs\n[03:31:30.853] Finished cloning snapshot 2 into snapshot 3 in 2.7691ms\n"}}Content-Length: 296
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\nProject 'c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component/tsconfig.json'\n\tFiles (65)\n-----------------------------------------------"}}Content-Length: 115
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\n======== Cache Statistics ========"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Open file count:        2"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Cached disk files:     69"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Realpath aliases:       0"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Project count:          2"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Config count:           2"}}Content-Length: 79
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":""}}Content-Length: 100
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Updated watches in 0s"}}Content-Length: 251
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"uri":"file:///c%3A/users/zaryab/documents/hengshi%20design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component/tsconfig.json","diagnostics":[]}}Content-Length: 60
+
+{"jsonrpc":"2.0","id":3,"result":{"kind":"full","items":[]}}Content-Length: 135
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/diagnostic' (3) in 7.6189ms"}}Content-Length: 109
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Processed 1 file changes in 0s"}}Content-Length: 128
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/didOpen' in 6.5334ms"}}Content-Length: 238
+
+{"jsonrpc":"2.0","id":4,"result":{"kind":"full","items":[{"range":{"start":{"line":1,"character":26},"end":{"line":1,"character":31}},"severity":1,"code":2322,"source":"ts","message":"Type 'number' is not assignable to type 'string'."}]}}Content-Length: 150
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Adopted snapshot 4 (parent 3) as current session snapshot (replacing 3)"}}Content-Length: 135
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/diagnostic' (4) in 6.0297ms"}}Content-Length: 3491
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"======== Cloning snapshot 3 ========\n[03:31:30.863] Reason: DidOpenFile - file:///C:/Users/Zaryab/Documents/Hengshi%20Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/fixture.tsx\n[03:31:30.863] DidChangeCustomConfigFileName\n[03:31:30.863] DidChangeFiles\n\t[03:31:30.863] Checking for changes affecting config files\n\t\t[03:31:30.863] Summarizing file changes\n\t\t[03:31:30.863] Checking if any changed files are config files\n\t\t[03:31:30.863] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json\n\t\t[03:31:30.863] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component/tsconfig.json\n\t[03:31:30.863] computeConfigFileName:: File: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/fixture.tsx:: Result: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/tsconfig.json\n\t[03:31:30.863] Searching for default configured project for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/fixture.tsx\n\t\t[03:31:30.863] Acquiring config for open file\n\t\t\t[03:31:30.863] Loading config file: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/tsconfig.json\n\t\t\t[03:31:30.863] Finished loading config file\n\t\t[03:31:30.863] Creating ConfiguredProject: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/tsconfig.json, currentDirectory: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop\n\t\t[03:31:30.863] Acquiring config for project\n\t\t[03:31:30.863] CompilerHost\n\t\t[03:31:30.869] Program update for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/tsconfig.json completed in 6.0275ms\n\t\t[03:31:30.869] Project contains file directly\n\t[03:31:30.869] Found default configured project for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/fixture.tsx: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/tsconfig.json (in 6.5334ms)\n[03:31:30.869] DidRequestFile\n\t[03:31:30.869] Acquiring config for project\n[03:31:30.869] Removed 1 cached file(s) in 0s\n[03:31:30.869] UpdateAutoImports\n\t[03:31:30.869] Building autoimport registry\n\t\t[03:31:30.869] Added project: c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/tsconfig.json\n\t\t[03:31:30.869] Added directory: c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop\n\t\t[03:31:30.869] Updated buckets and directories in 0s\n\t\t[03:31:30.869] Built autoimport registry in 0s\n[03:31:30.869] Finished cloning snapshot 3 into snapshot 4 in 6.5334ms\n"}}Content-Length: 287
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\nProject 'c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/tsconfig.json'\n\tFiles (65)\n-----------------------------------------------"}}Content-Length: 115
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\n======== Cache Statistics ========"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Open file count:        3"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Cached disk files:     69"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Realpath aliases:       0"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Project count:          3"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Config count:           3"}}Content-Length: 79
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":""}}Content-Length: 100
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Updated watches in 0s"}}Content-Length: 242
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"uri":"file:///c%3A/users/zaryab/documents/hengshi%20design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/tsconfig.json","diagnostics":[]}}Content-Length: 109
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Processed 1 file changes in 0s"}}Content-Length: 128
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/didOpen' in 5.7041ms"}}Content-Length: 150
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Adopted snapshot 5 (parent 4) as current session snapshot (replacing 4)"}}Content-Length: 3708
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"======== Cloning snapshot 4 ========\n[03:31:30.879] Reason: DidOpenFile - file:///C:/Users/Zaryab/Documents/Hengshi%20Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/missing-prop/fixture.tsx\n[03:31:30.879] DidChangeCustomConfigFileName\n[03:31:30.879] DidChangeFiles\n\t[03:31:30.879] Checking for changes affecting config files\n\t\t[03:31:30.879] Summarizing file changes\n\t\t[03:31:30.879] Checking if any changed files are config files\n\t\t[03:31:30.879] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json\n\t\t[03:31:30.879] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component/tsconfig.json\n\t\t[03:31:30.879] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/tsconfig.json\n\t[03:31:30.879] computeConfigFileName:: File: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/missing-prop/fixture.tsx:: Result: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/missing-prop/tsconfig.json\n\t[03:31:30.879] Searching for default configured project for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/missing-prop/fixture.tsx\n\t\t[03:31:30.879] Acquiring config for open file\n\t\t\t[03:31:30.879] Loading config file: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/missing-prop/tsconfig.json\n\t\t\t[03:31:30.879] Finished loading config file\n\t\t[03:31:30.879] Creating ConfiguredProject: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/missing-prop/tsconfig.json, currentDirectory: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/missing-prop\n\t\t[03:31:30.879] Acquiring config for project\n\t\t[03:31:30.879] CompilerHost\n\t\t[03:31:30.885] Program update for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/missing-prop/tsconfig.json completed in 5.7041ms\n\t\t[03:31:30.885] Project contains file directly\n\t[03:31:30.885] Found default configured project for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/missing-prop/fixture.tsx: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/missing-prop/tsconfig.json (in 5.7041ms)\n[03:31:30.885] DidRequestFile\n\t[03:31:30.885] Acquiring config for project\n[03:31:30.885] Removed 1 cached file(s) in 0s\n[03:31:30.885] UpdateAutoImports\n\t[03:31:30.885] Building autoimport registry\n\t\t[03:31:30.885] Added project: c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/missing-prop/tsconfig.json\n\t\t[03:31:30.885] Added directory: c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/missing-prop\n\t\t[03:31:30.885] Updated buckets and directories in 0s\n\t\t[03:31:30.885] Built autoimport registry in 0s\n[03:31:30.885] Finished cloning snapshot 4 into snapshot 5 in 5.7041ms\n"}}Content-Length: 287
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\nProject 'c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/missing-prop/tsconfig.json'\n\tFiles (65)\n-----------------------------------------------"}}Content-Length: 115
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\n======== Cache Statistics ========"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Open file count:        4"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Cached disk files:     69"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Realpath aliases:       0"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Project count:          4"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Config count:           4"}}Content-Length: 79
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":""}}Content-Length: 106
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Updated watches in 506.1µs"}}Content-Length: 242
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"uri":"file:///c%3A/users/zaryab/documents/hengshi%20design/hengshi-design/output/research/typescript-react-parity-2026-10-06/missing-prop/tsconfig.json","diagnostics":[]}}Content-Length: 272
+
+{"jsonrpc":"2.0","id":5,"result":{"kind":"full","items":[{"range":{"start":{"line":1,"character":21},"end":{"line":1,"character":25}},"severity":1,"code":2741,"source":"ts","message":"Property 'title' is missing in type '{}' but required in type '{ title: string; }'."}]}}Content-Length: 135
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/diagnostic' (5) in 9.3875ms"}}Content-Length: 109
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Processed 1 file changes in 0s"}}Content-Length: 128
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/didOpen' in 5.9236ms"}}Content-Length: 150
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Adopted snapshot 6 (parent 5) as current session snapshot (replacing 5)"}}Content-Length: 4033
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"======== Cloning snapshot 5 ========\n[03:31:30.895] Reason: DidOpenFile - file:///C:/Users/Zaryab/Documents/Hengshi%20Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-state-action/fixture.tsx\n[03:31:30.895] DidChangeCustomConfigFileName\n[03:31:30.895] DidChangeFiles\n\t[03:31:30.895] Checking for changes affecting config files\n\t\t[03:31:30.895] Summarizing file changes\n\t\t[03:31:30.895] Checking if any changed files are config files\n\t\t[03:31:30.895] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json\n\t\t[03:31:30.895] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component/tsconfig.json\n\t\t[03:31:30.895] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/tsconfig.json\n\t\t[03:31:30.895] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/missing-prop/tsconfig.json\n\t[03:31:30.895] computeConfigFileName:: File: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-state-action/fixture.tsx:: Result: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-state-action/tsconfig.json\n\t[03:31:30.895] Searching for default configured project for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-state-action/fixture.tsx\n\t\t[03:31:30.895] Acquiring config for open file\n\t\t\t[03:31:30.895] Loading config file: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-state-action/tsconfig.json\n\t\t\t[03:31:30.895] Finished loading config file\n\t\t[03:31:30.895] Creating ConfiguredProject: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-state-action/tsconfig.json, currentDirectory: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-state-action\n\t\t[03:31:30.895] Acquiring config for project\n\t\t[03:31:30.895] CompilerHost\n\t\t[03:31:30.900] Program update for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-state-action/tsconfig.json completed in 5.4174ms\n\t\t[03:31:30.900] Project contains file directly\n\t[03:31:30.900] Found default configured project for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-state-action/fixture.tsx: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-state-action/tsconfig.json (in 5.4174ms)\n[03:31:30.900] DidRequestFile\n\t[03:31:30.900] Acquiring config for project\n[03:31:30.900] Removed 1 cached file(s) in 0s\n[03:31:30.900] UpdateAutoImports\n\t[03:31:30.900] Building autoimport registry\n\t\t[03:31:30.900] Added project: c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-state-action/tsconfig.json\n\t\t[03:31:30.900] Added directory: c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-state-action\n\t\t[03:31:30.900] Updated buckets and directories in 506.2µs\n\t\t[03:31:30.900] Built autoimport registry in 506.2µs\n[03:31:30.900] Finished cloning snapshot 5 into snapshot 6 in 5.9236ms\n"}}Content-Length: 295
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\nProject 'c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-state-action/tsconfig.json'\n\tFiles (65)\n-----------------------------------------------"}}Content-Length: 115
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\n======== Cache Statistics ========"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Open file count:        5"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Cached disk files:     69"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Realpath aliases:       0"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Project count:          5"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Config count:           5"}}Content-Length: 79
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":""}}Content-Length: 100
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Updated watches in 0s"}}Content-Length: 250
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"uri":"file:///c%3A/users/zaryab/documents/hengshi%20design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-state-action/tsconfig.json","diagnostics":[]}}Content-Length: 279
+
+{"jsonrpc":"2.0","id":6,"result":{"kind":"full","items":[{"range":{"start":{"line":1,"character":84},"end":{"line":1,"character":91}},"severity":1,"code":2345,"source":"ts","message":"Argument of type 'string' is not assignable to parameter of type 'SetStateAction<number>'."}]}}Content-Length: 136
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/diagnostic' (6) in 18.5364ms"}}Content-Length: 109
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Processed 1 file changes in 0s"}}Content-Length: 128
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/didOpen' in 7.0525ms"}}Content-Length: 150
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Adopted snapshot 7 (parent 6) as current session snapshot (replacing 6)"}}Content-Length: 4150
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"======== Cloning snapshot 6 ========\n[03:31:30.926] Reason: DidOpenFile - file:///C:/Users/Zaryab/Documents/Hengshi%20Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-ref/fixture.tsx\n[03:31:30.926] DidChangeCustomConfigFileName\n[03:31:30.926] DidChangeFiles\n\t[03:31:30.926] Checking for changes affecting config files\n\t\t[03:31:30.926] Summarizing file changes\n\t\t[03:31:30.926] Checking if any changed files are config files\n\t\t[03:31:30.926] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json\n\t\t[03:31:30.926] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component/tsconfig.json\n\t\t[03:31:30.926] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/tsconfig.json\n\t\t[03:31:30.926] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/missing-prop/tsconfig.json\n\t\t[03:31:30.926] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-state-action/tsconfig.json\n\t[03:31:30.927] computeConfigFileName:: File: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-ref/fixture.tsx:: Result: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-ref/tsconfig.json\n\t[03:31:30.927] Searching for default configured project for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-ref/fixture.tsx\n\t\t[03:31:30.927] Acquiring config for open file\n\t\t\t[03:31:30.927] Loading config file: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-ref/tsconfig.json\n\t\t\t[03:31:30.927] Finished loading config file\n\t\t[03:31:30.927] Creating ConfiguredProject: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-ref/tsconfig.json, currentDirectory: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-ref\n\t\t[03:31:30.927] Acquiring config for project\n\t\t[03:31:30.927] CompilerHost\n\t\t[03:31:30.931] Program update for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-ref/tsconfig.json completed in 3.6544ms\n\t\t[03:31:30.931] Project contains file directly\n\t[03:31:30.931] Found default configured project for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-ref/fixture.tsx: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-ref/tsconfig.json (in 3.6544ms)\n[03:31:30.931] DidRequestFile\n\t[03:31:30.931] Acquiring config for project\n[03:31:30.931] Removed 1 cached file(s) in 0s\n[03:31:30.931] UpdateAutoImports\n\t[03:31:30.931] Building autoimport registry\n\t\t[03:31:30.931] Added project: c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-ref/tsconfig.json\n\t\t[03:31:30.933] Added directory: c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-ref\n\t\t[03:31:30.934] Updated buckets and directories in 2.8931ms\n\t\t[03:31:30.934] Built autoimport registry in 2.8931ms\n[03:31:30.934] Finished cloning snapshot 6 into snapshot 7 in 7.0525ms\n"}}Content-Length: 286
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\nProject 'c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-ref/tsconfig.json'\n\tFiles (65)\n-----------------------------------------------"}}Content-Length: 115
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\n======== Cache Statistics ========"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Open file count:        6"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Cached disk files:     69"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Realpath aliases:       0"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Project count:          6"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Config count:           6"}}Content-Length: 79
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":""}}Content-Length: 100
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Updated watches in 0s"}}Content-Length: 241
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"uri":"file:///c%3A/users/zaryab/documents/hengshi%20design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-ref/tsconfig.json","diagnostics":[]}}Content-Length: 641
+
+{"jsonrpc":"2.0","id":7,"result":{"kind":"full","items":[{"range":{"start":{"line":1,"character":92},"end":{"line":1,"character":95}},"severity":1,"code":2322,"source":"ts","message":"Type 'RefObject<HTMLDivElement | null>' is not assignable to type 'Ref<HTMLButtonElement> | undefined'.\n  Type 'RefObject<HTMLDivElement | null>' is not assignable to type 'RefObject<HTMLButtonElement | null>'.\n    Type 'HTMLDivElement | null' is not assignable to type 'HTMLButtonElement | null'.\n      Type 'HTMLDivElement' is missing the following properties from type 'HTMLButtonElement': command, commandForElement, disabled, form, and 17 more."}]}}Content-Length: 136
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/diagnostic' (7) in 10.6898ms"}}Content-Length: 109
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Processed 1 file changes in 0s"}}Content-Length: 128
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/didOpen' in 6.6447ms"}}Content-Length: 150
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Adopted snapshot 8 (parent 7) as current session snapshot (replacing 7)"}}Content-Length: 4498
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"======== Cloning snapshot 7 ========\n[03:31:30.947] Reason: DidOpenFile - file:///C:/Users/Zaryab/Documents/Hengshi%20Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-event-property/fixture.tsx\n[03:31:30.948] DidChangeCustomConfigFileName\n[03:31:30.948] DidChangeFiles\n\t[03:31:30.948] Checking for changes affecting config files\n\t\t[03:31:30.948] Summarizing file changes\n\t\t[03:31:30.948] Checking if any changed files are config files\n\t\t[03:31:30.948] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-state-action/tsconfig.json\n\t\t[03:31:30.948] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-ref/tsconfig.json\n\t\t[03:31:30.948] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json\n\t\t[03:31:30.948] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component/tsconfig.json\n\t\t[03:31:30.948] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/tsconfig.json\n\t\t[03:31:30.948] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/missing-prop/tsconfig.json\n\t[03:31:30.948] computeConfigFileName:: File: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-event-property/fixture.tsx:: Result: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-event-property/tsconfig.json\n\t[03:31:30.948] Searching for default configured project for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-event-property/fixture.tsx\n\t\t[03:31:30.948] Acquiring config for open file\n\t\t\t[03:31:30.948] Loading config file: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-event-property/tsconfig.json\n\t\t\t[03:31:30.948] Finished loading config file\n\t\t[03:31:30.948] Creating ConfiguredProject: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-event-property/tsconfig.json, currentDirectory: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-event-property\n\t\t[03:31:30.948] Acquiring config for project\n\t\t[03:31:30.948] CompilerHost\n\t\t[03:31:30.953] Program update for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-event-property/tsconfig.json completed in 4.9673ms\n\t\t[03:31:30.953] Project contains file directly\n\t[03:31:30.953] Found default configured project for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-event-property/fixture.tsx: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-event-property/tsconfig.json (in 4.9673ms)\n[03:31:30.953] DidRequestFile\n\t[03:31:30.953] Acquiring config for project\n[03:31:30.953] Removed 1 cached file(s) in 0s\n[03:31:30.953] UpdateAutoImports\n\t[03:31:30.953] Building autoimport registry\n\t\t[03:31:30.953] Added project: c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-event-property/tsconfig.json\n\t\t[03:31:30.953] Added directory: c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-event-property\n\t\t[03:31:30.953] Updated buckets and directories in 503.3µs\n\t\t[03:31:30.953] Built autoimport registry in 503.3µs\n[03:31:30.954] Finished cloning snapshot 7 into snapshot 8 in 6.6447ms\n"}}Content-Length: 297
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\nProject 'c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-event-property/tsconfig.json'\n\tFiles (65)\n-----------------------------------------------"}}Content-Length: 115
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\n======== Cache Statistics ========"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Open file count:        7"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Cached disk files:     69"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Realpath aliases:       0"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Project count:          7"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Config count:           7"}}Content-Length: 79
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":""}}Content-Length: 100
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Updated watches in 0s"}}Content-Length: 252
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"uri":"file:///c%3A/users/zaryab/documents/hengshi%20design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-event-property/tsconfig.json","diagnostics":[]}}Content-Length: 274
+
+{"jsonrpc":"2.0","id":8,"result":{"kind":"full","items":[{"range":{"start":{"line":0,"character":81},"end":{"line":0,"character":97}},"severity":1,"code":2339,"source":"ts","message":"Property 'nonexistentField' does not exist on type 'EventTarget & HTMLButtonElement'."}]}}Content-Length: 136
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/diagnostic' (8) in 10.7155ms"}}Content-Length: 109
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Processed 1 file changes in 0s"}}Content-Length: 128
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/didOpen' in 6.1875ms"}}Content-Length: 150
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Adopted snapshot 9 (parent 8) as current session snapshot (replacing 8)"}}Content-Length: 4653
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"======== Cloning snapshot 8 ========\n[03:31:30.966] Reason: DidOpenFile - file:///C:/Users/Zaryab/Documents/Hengshi%20Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-dom-root/fixture.tsx\n[03:31:30.966] DidChangeCustomConfigFileName\n[03:31:30.966] DidChangeFiles\n\t[03:31:30.966] Checking for changes affecting config files\n\t\t[03:31:30.966] Summarizing file changes\n\t\t[03:31:30.966] Checking if any changed files are config files\n\t\t[03:31:30.966] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-async-component/tsconfig.json\n\t\t[03:31:30.966] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/tsconfig.json\n\t\t[03:31:30.966] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/missing-prop/tsconfig.json\n\t\t[03:31:30.966] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-state-action/tsconfig.json\n\t\t[03:31:30.966] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-ref/tsconfig.json\n\t\t[03:31:30.966] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-event-property/tsconfig.json\n\t\t[03:31:30.966] Checking if any of 1 created files match root files for config c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json\n\t[03:31:30.966] computeConfigFileName:: File: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-dom-root/fixture.tsx:: Result: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-dom-root/tsconfig.json\n\t[03:31:30.966] Searching for default configured project for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-dom-root/fixture.tsx\n\t\t[03:31:30.966] Acquiring config for open file\n\t\t\t[03:31:30.966] Loading config file: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-dom-root/tsconfig.json\n\t\t\t[03:31:30.966] Finished loading config file\n\t\t[03:31:30.966] Creating ConfiguredProject: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-dom-root/tsconfig.json, currentDirectory: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-dom-root\n\t\t[03:31:30.966] Acquiring config for project\n\t\t[03:31:30.966] CompilerHost\n\t\t[03:31:30.971] Program update for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-dom-root/tsconfig.json completed in 5.0194ms\n\t\t[03:31:30.971] Project contains file directly\n\t[03:31:30.971] Found default configured project for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-dom-root/fixture.tsx: c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-dom-root/tsconfig.json (in 5.0194ms)\n[03:31:30.971] DidRequestFile\n\t[03:31:30.971] Acquiring config for project\n[03:31:30.972] Removed 1 cached file(s) in 0s\n[03:31:30.972] UpdateAutoImports\n\t[03:31:30.972] Building autoimport registry\n\t\t[03:31:30.972] Added project: c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-dom-root/tsconfig.json\n\t\t[03:31:30.972] Added directory: c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-dom-root\n\t\t[03:31:30.973] Updated buckets and directories in 505.1µs\n\t\t[03:31:30.973] Built autoimport registry in 505.1µs\n[03:31:30.973] Finished cloning snapshot 8 into snapshot 9 in 6.1875ms\n"}}Content-Length: 291
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\nProject 'c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-dom-root/tsconfig.json'\n\tFiles (66)\n-----------------------------------------------"}}Content-Length: 115
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"\n======== Cache Statistics ========"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Open file count:        8"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Cached disk files:     69"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Realpath aliases:       0"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Project count:          8"}}Content-Length: 104
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Config count:           8"}}Content-Length: 79
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":""}}Content-Length: 100
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Updated watches in 0s"}}Content-Length: 246
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"uri":"file:///c%3A/users/zaryab/documents/hengshi%20design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-dom-root/tsconfig.json","diagnostics":[]}}Content-Length: 266
+
+{"jsonrpc":"2.0","id":9,"result":{"kind":"full","items":[{"range":{"start":{"line":1,"character":11},"end":{"line":1,"character":27}},"severity":1,"code":2345,"source":"ts","message":"Argument of type 'string' is not assignable to parameter of type 'Container'."}]}}Content-Length: 135
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/diagnostic' (9) in 2.0569ms"}}Content-Length: 124
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/didChange' in 0s"}}Content-Length: 109
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Processed 1 file changes in 0s"}}Content-Length: 151
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Adopted snapshot 10 (parent 9) as current session snapshot (replacing 9)"}}Content-Length: 1485
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"======== Cloning snapshot 9 ========\n[03:31:30.990] Reason: RequestedLanguageService (pending file changes) -  Documents: [file:///C:/Users/Zaryab/Documents/Hengshi%20Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/fixture.tsx]\n[03:31:30.990] DidChangeCustomConfigFileName\n[03:31:30.990] DidChangeFiles\n\t[03:31:30.990] Checking for changes affecting config files\n\t\t[03:31:30.990] Summarizing file changes\n\t\t[03:31:30.990] Checking if any changed files are config files\n\t[03:31:30.990] Marking project c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/tsconfig.json as dirty due to changes in c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/fixture.tsx\n[03:31:30.990] DidRequestFile\n\t[03:31:30.990] Acquiring config for project\n\t[03:31:30.990] CompilerHost\n\t[03:31:30.990] Program update for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/tsconfig.json completed in 0s\n[03:31:30.990] UpdateAutoImports\n\t[03:31:30.990] Building autoimport registry\n\t\t[03:31:30.990] Updated buckets and directories in 0s\n\t\t[03:31:30.990] Built autoimport registry in 0s\n[03:31:30.992] Finished cloning snapshot 9 into snapshot 10 in 2.5096ms\n"}}Content-Length: 79
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":""}}Content-Length: 100
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Updated watches in 0s"}}Content-Length: 61
+
+{"jsonrpc":"2.0","id":10,"result":{"kind":"full","items":[]}}Content-Length: 136
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/diagnostic' (10) in 9.3814ms"}}Content-Length: 250
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Cancelling auto-import warming for file c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/fixture.tsx"}}Content-Length: 124
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/didChange' in 0s"}}Content-Length: 109
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Processed 1 file changes in 0s"}}Content-Length: 153
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Adopted snapshot 12 (parent 10) as current session snapshot (replacing 10)"}}Content-Length: 1505
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"======== Cloning snapshot 10 ========\n[03:31:31.005] Reason: RequestedLanguageService (pending file changes) -  Documents: [file:///C:/Users/Zaryab/Documents/Hengshi%20Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/fixture.tsx]\n[03:31:31.005] DidChangeCustomConfigFileName\n[03:31:31.005] DidChangeFiles\n\t[03:31:31.005] Checking for changes affecting config files\n\t\t[03:31:31.005] Summarizing file changes\n\t\t[03:31:31.005] Checking if any changed files are config files\n\t[03:31:31.005] Marking project c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/tsconfig.json as dirty due to changes in c:/users/zaryab/documents/hengshi design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/fixture.tsx\n[03:31:31.005] DidRequestFile\n\t[03:31:31.005] Acquiring config for project\n\t[03:31:31.005] CompilerHost\n\t[03:31:31.006] Program update for c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/tsconfig.json completed in 998.8µs\n[03:31:31.006] UpdateAutoImports\n\t[03:31:31.006] Building autoimport registry\n\t\t[03:31:31.007] Updated buckets and directories in 1.0007ms\n\t\t[03:31:31.007] Built autoimport registry in 1.0007ms\n[03:31:31.007] Finished cloning snapshot 10 into snapshot 12 in 1.9995ms\n"}}Content-Length: 79
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":""}}Content-Length: 106
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Updated watches in 999.1µs"}}Content-Length: 239
+
+{"jsonrpc":"2.0","id":11,"result":{"kind":"full","items":[{"range":{"start":{"line":1,"character":26},"end":{"line":1,"character":31}},"severity":1,"code":2322,"source":"ts","message":"Type 'number' is not assignable to type 'string'."}]}}Content-Length: 137
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/diagnostic' (11) in 12.6743ms"}}Content-Length: 250
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Cancelling auto-import warming for file c:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/invalid-prop/fixture.tsx"}}Content-Length: 112
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Scheduling new snapshot update..."}}Content-Length: 123
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/didClose' in 0s"}}Content-Length: 116
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Delaying scheduled snapshot update..."}}Content-Length: 123
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/didClose' in 0s"}}Content-Length: 116
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Delaying scheduled snapshot update..."}}Content-Length: 123
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/didClose' in 0s"}}Content-Length: 116
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Delaying scheduled snapshot update..."}}Content-Length: 123
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/didClose' in 0s"}}Content-Length: 116
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Delaying scheduled snapshot update..."}}Content-Length: 123
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/didClose' in 0s"}}Content-Length: 116
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Delaying scheduled snapshot update..."}}Content-Length: 123
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/didClose' in 0s"}}Content-Length: 116
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Delaying scheduled snapshot update..."}}Content-Length: 123
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/didClose' in 0s"}}Content-Length: 116
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Delaying scheduled snapshot update..."}}Content-Length: 123
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/didClose' in 0s"}}Content-Length: 113
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Canceled scheduled snapshot update"}}Content-Length: 39
+
+{"jsonrpc":"2.0","id":12,"result":null}Content-Length: 122
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'shutdown' (12) in 25.6828ms"}}

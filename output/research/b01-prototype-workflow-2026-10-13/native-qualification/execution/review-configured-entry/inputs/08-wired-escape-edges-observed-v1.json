@@ -1,0 +1,38 @@
+[
+  {
+    "from": "H_OPEN_M",
+    "source_id": "85:3173",
+    "to": "H_CLOSED_M",
+    "target_id": "85:3175",
+    "trigger": "Key/Gamepad Esc",
+    "action": "Change to",
+    "animation": "Instant"
+  },
+  {
+    "from": "M_OPEN_M",
+    "source_id": "85:3217",
+    "to": "M_CLOSED_M",
+    "target_id": "85:3196",
+    "trigger": "Key/Gamepad Esc",
+    "action": "Change to",
+    "animation": "Instant"
+  },
+  {
+    "from": "M_OPEN_H",
+    "source_id": "85:3238",
+    "to": "M_CLOSED_H",
+    "target_id": "85:3259",
+    "trigger": "Key/Gamepad Esc",
+    "action": "Change to",
+    "animation": "Instant"
+  },
+  {
+    "from": "H_OPEN_H",
+    "source_id": "85:3301",
+    "to": "H_CLOSED_H",
+    "target_id": "85:3280",
+    "trigger": "Key/Gamepad Esc",
+    "action": "Change to",
+    "animation": "Instant"
+  }
+]

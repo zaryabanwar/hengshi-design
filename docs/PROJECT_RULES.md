@@ -1,7 +1,8 @@
 # Project Rules — Hengshi Design
 
-These rules apply to everyone working on this project, including humans and AI
-assistants. They are binding.
+These rules apply to all agent hosts. D-097 (2026-10-25) is current delivery
+authority: brand/shared foundations -> complete 2D platform -> full 3D -> launch.
+All agreed requirements remain; the former whole-Phase-1 build gate is superseded.
 
 ## Rule 1 — Apply the Durable Authority Order
 
@@ -45,10 +46,10 @@ document age, implementation convenience, or an industry default.
 
 ## Rule 5 — Definition Before Build
 
-Before production application work, read `PROJECT.md`, the software definition,
-and the relevant approved Spec Kit artifacts. No feature implementation begins
-until the Phase 1 definition, SEO, design, architecture, security/privacy, QA,
-deployment, and compatibility package is founder-approved.
+Before implementation, read the assigned increment's approved scope, relevant
+Spec Kit artifacts, visual references, contracts and coupled compatibility.
+Unfinished future 3D definitions and deferred launch work do not block unrelated
+2D delivery. Reuse accepted baselines; no full definition restart.
 
 ## Rule 6 — Latest Mutually Compatible Stable Technology
 
@@ -63,6 +64,20 @@ requirements. When the newest stable major is blocked, use the newest proven
 compatible stable release only under an approved ADR with exact evidence and a
 quarterly recheck.
 
+D-069 applies this rule to every coupled tool/library/framework/runtime and
+exporter, not just the main technology families. Individually newest releases
+are observations; peer ranges alone are not proof. Resolve, test, independently
+review and reproducibly lock the complete stable set. This first product and
+current production definition are v1; retain factual technical/schema versions
+and historical evidence identifiers rather than renaming them as product releases.
+
+D-068 defers deployment, provider, region and cost planning. Azure and AWS remain
+candidates, with lowest feasible cost/free services preferred when planning
+resumes. Neither is selected by an older document. Outlook/Teams remain intended
+without a Microsoft 365 prerequisite; verify each required account/API capability
+separately. Approved staff identity and AI privacy restrictions remain in force.
+D-070 establishes Europe as the first market, not a European office or cloud region.
+
 ## Rule 7 — Design, SEO, and Accessibility Before UI
 
 Production UI or material UI/UX changes require an approved Stitch or Figma
@@ -73,13 +88,13 @@ and Tailwind families unless a separate decision changes them.
 
 ## Rule 8 — Phase Loop and Independent Review
 
-Every material phase follows:
-
-`create -> validate -> inspect -> independent review -> revise -> validate again -> founder approval`
-
-Use two revision cycles by default and three for brand, UI, motion, and 3D. The
-producer cannot approve their own material output. Record exhausted findings and
-request a decision instead of looping indefinitely.
+Deliver one assigned outcome, validate/inspect it, correct defects, report and
+stop. Independently review coherent material designs, money/security/external-
+system changes, or when requested; do not review every routine edit separately.
+No hard two/three-cycle cap: continue safe in-scope corrections with evidence of
+progress, change diagnosis on repeated failure and escalate actual material
+choices or missing inputs. Preserve action approvals and provider retry limits.
+The founder supplies the next work-chat prompt from the discussion session.
 
 ## Rule 9 — Verification Is Proportionate and Repeatable
 
@@ -88,6 +103,14 @@ accessibility/visual checks for affected surfaces. Backend changes require impor
 typing, contract, integration, and negative-authorization evidence as applicable.
 Database, 3D, and deployment changes require migration, rollback, failure-mode,
 and recovery evidence appropriate to their risks.
+
+Tests exercise actual behavior against approved requirements and verified
+external contracts, using focused unit, integration and browser layers. Include
+failure and boundary cases proportionate to risk; do not copy implementation
+logic into expected results. Documentation phrase/count/hash checks are artifact
+integrity only; do not add brittle prose tests for ordinary edits or report them
+as product correctness. An isolated schema check or OpenAPI declaration cannot
+prove the application enforces it. Keep artifact and runtime evidence separate.
 
 ## Rule 10 — Approval-Bound Actions Stay Gated
 

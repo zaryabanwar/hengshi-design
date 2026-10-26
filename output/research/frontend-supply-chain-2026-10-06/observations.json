@@ -1,0 +1,169 @@
+{
+  "checked_at_utc": "2026-10-06T00:23:15.218033+00:00",
+  "node": "26.10.0",
+  "npm": "12.2.0",
+  "lock_sha256": "fa903a8d901357aacf80863524e0e00ae2ece69126daf218256cdd2656b2da4c",
+  "advisory_audit": {
+    "exit": 0,
+    "reported_vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "limits": "Dated known-advisory database report for this candidate lock, not absence of vulnerabilities or a deployment reachability verdict."
+  },
+  "virtual_sbom": {
+    "exit": 1,
+    "error": "ESBOMPROBLEMS",
+    "missing_optional_wasm_dependencies": [
+      "@emnapi/core",
+      "@emnapi/runtime",
+      "@emnapi/wasi-threads",
+      "@napi-rs/wasm-runtime",
+      "@tybys/wasm-util",
+      "tslib"
+    ],
+    "limits": "Virtual all-platform inventory is incomplete; no unsupported-platform installation or repair attempted."
+  },
+  "installed_sbom": {
+    "exit": 0,
+    "format": "SPDX-2.3",
+    "packages": 234,
+    "relationships": 398,
+    "installed_locations": 236,
+    "distinct_name_version_pairs": 233,
+    "duplicates": [
+      {
+        "name": "semver",
+        "version": "6.3.1",
+        "locations": 2
+      },
+      {
+        "name": "eslint-visitor-keys",
+        "version": "5.0.1",
+        "locations": 3
+      }
+    ],
+    "correspondence": "All 233 installed name/version pairs plus private fixture root match the 234 emitted package identities.",
+    "noassertion": [
+      {
+        "name": "hengshi-v1-isolated-three-remedy-evaluation",
+        "version": "1.0.0"
+      },
+      {
+        "name": "webgl-constants",
+        "version": "1.1.1"
+      }
+    ],
+    "limits": "Installed research tree only; omits absent platform packages and is not a shipped-artifact SBOM or legal clearance."
+  },
+  "signature_verification": {
+    "exit": 0,
+    "invalid": 0,
+    "missing": 0,
+    "attestation_records": 78,
+    "attestation_bundle_predicates": {
+      "https://github.com/npm/attestation/tree/main/specs/publish/v0.1": 78,
+      "https://slsa.dev/provenance/v1": 77,
+      "https://slsa.dev/provenance/v0.2": 1
+    },
+    "gensync_attestation_record_present": false,
+    "limits": "npm12 verified registry metadata signatures and available attestations. The verified JSON array contains attestation records only, not all signature checks. Missing on-disk optional packages are skipped; installed-file contents, provenance availability for every package and D072 obligations are not proven."
+  },
+  "licence_inventory": {
+    "lock_records_excluding_root": 301,
+    "declared_licence_counts": {
+      "MIT": 207,
+      "ISC": 13,
+      "Apache-2.0": 44,
+      "CC-BY-4.0": 1,
+      "BSD-2-Clause": 6,
+      "BSD-3-Clause": 3,
+      "Standard 'no charge' license: https://gsap.com/standard-license.": 1,
+      "MPL-2.0": 24,
+      "BlueOak-1.0.0": 1,
+      "None": 1
+    },
+    "installed_without_top_level_text": [
+      {
+        "name": "@humanfs/types",
+        "version": "0.15.0",
+        "declared": "Apache-2.0"
+      },
+      {
+        "name": "@mediapipe/tasks-vision",
+        "version": "0.10.17",
+        "declared": "Apache-2.0"
+      },
+      {
+        "name": "@react-three/fiber",
+        "version": "9.8.1",
+        "declared": "MIT"
+      },
+      {
+        "name": "@rolldown/binding-win32-x64-msvc",
+        "version": "1.2.12",
+        "declared": "MIT"
+      },
+      {
+        "name": "draco3d",
+        "version": "1.5.7",
+        "declared": "Apache-2.0"
+      },
+      {
+        "name": "esrecurse",
+        "version": "4.3.0",
+        "declared": "BSD-2-Clause"
+      },
+      {
+        "name": "gsap",
+        "version": "3.15.0",
+        "declared": "Standard 'no charge' license: https://gsap.com/standard-license."
+      },
+      {
+        "name": "imurmurhash",
+        "version": "0.1.4",
+        "declared": "MIT"
+      },
+      {
+        "name": "maath",
+        "version": "0.10.8",
+        "declared": "MIT"
+      },
+      {
+        "name": "natural-compare",
+        "version": "1.4.0",
+        "declared": "MIT"
+      },
+      {
+        "name": "stats-gl",
+        "version": "2.4.2",
+        "declared": "MIT"
+      }
+    ],
+    "limits": "Metadata declarations and top-level texts only; not recursive bundled-source clearance, legal advice, notices assembly, full-file archive integrity or deployment inventory."
+  },
+  "guards": {
+    "first_pass": {
+      "checked_at_utc": "2026-10-06T00:18:35.962937+00:00",
+      "checked": 2668,
+      "mismatches": []
+    },
+    "follow_up": {
+      "checked_at_utc": "2026-10-06T00:20:02.259093+00:00",
+      "checked": 2668,
+      "mismatches": []
+    },
+    "limits": "Both before the separate later reference/checkpoint integration; no retrospective hash equality is claimed."
+  },
+  "context7": {
+    "library": "/npm/cli",
+    "query_date": "2026-10-06",
+    "topics": "Read-only audit, signatures/available attestations and installed versus virtual SBOM; exact installed npm12 sources also inspected."
+  },
+  "state": "DOING",
+  "selection": "No adoption, package repair, policy override, application change, provider change or security/legal/Phase1 acceptance."
+}

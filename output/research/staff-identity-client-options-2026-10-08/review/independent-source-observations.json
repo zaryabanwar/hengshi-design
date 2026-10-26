@@ -1,0 +1,101 @@
+{
+  "status": "DOING",
+  "scope": "Independent frozen integrity and raw registry/source association inspection only; pinned sources read as text, never imported or executed.",
+  "manifest_sha256": "f54dddad1a3d94a1fc198b89891baf6e40001b8d0ce25fbb9fc03a09604a3047",
+  "frozen_live_inputs": 38,
+  "compressed_and_raw_source_records_verified": 20,
+  "registry_release_source_associations": {
+    "msal": {
+      "registry_version": "1.39.0",
+      "requires_python": ">=3.9",
+      "requires_dist": [
+        "requests<3,>=2.0.0",
+        "PyJWT[crypto]<3,>=1.0.0",
+        "cryptography<51,>=2.5",
+        "pymsalruntime<0.21,>=0.20; (python_version >= \"3.9\" and platform_system == \"Windows\") and extra == \"broker\"",
+        "pymsalruntime<0.21,>=0.20; (python_version >= \"3.9\" and platform_system == \"Darwin\") and extra == \"broker\"",
+        "pymsalruntime<0.21,>=0.20; (python_version >= \"3.9\" and platform_system == \"Linux\") and extra == \"broker\""
+      ],
+      "development_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "tag": "1.39.0",
+      "source_commit": "20fd4d9f541bcdf21f5d371648004b1548b15e63",
+      "release_draft": false,
+      "release_prerelease": false,
+      "release_published": "2026-09-17T16:14:55Z",
+      "association_limit": "Direct lightweight tag-to-commit plus commit-addressed source bytes; no source signature, installed version or wheel-build binding."
+    },
+    "authlib": {
+      "registry_version": "1.8.0",
+      "requires_python": ">=3.10",
+      "requires_dist": [
+        "cryptography>=45.0.1",
+        "joserfc>=1.6.1"
+      ],
+      "development_classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "tag": "v1.8.0",
+      "source_commit": "1a86748b31a2b1940b09cf627d1b70e03d85c077",
+      "release_draft": false,
+      "release_prerelease": false,
+      "release_published": "2026-08-30T12:12:45Z",
+      "association_limit": "Direct lightweight tag-to-commit plus commit-addressed source bytes; no source signature, installed version or wheel-build binding."
+    }
+  },
+  "backend_before_bytes_preserved": 25980,
+  "map_changed_rows": [
+    {
+      "before_line": 90,
+      "after_line": 90
+    },
+    {
+      "before_line": 242,
+      "after_line": 242
+    }
+  ],
+  "source_inspection": [
+    {
+      "path": "msal/source/msal/oauth2cli/oidc.py.gz",
+      "decompressed_lines": "77-92,204-214,253-308",
+      "observation": "Current acquisition decodes ID claims without validation; code-flow nonce is separately checked. Legacy decoder is deprecated."
+    },
+    {
+      "path": "msal/source/msal/oauth2cli/oauth2.py.gz",
+      "decompressed_lines": "331-344,543-556,601-627",
+      "observation": "S256 verifier retention and state comparison are source paths, not JWT verification or Hengshi authority."
+    },
+    {
+      "path": "msal/source/msal/application.py.gz",
+      "decompressed_lines": "567-572,703-714,848-869,1282-1289",
+      "observation": "Default Requests client/blocking path and added offline_access scope/exclusion; alternative wrapper/store/network qualification remains."
+    },
+    {
+      "path": "authlib/source/authlib/integrations/starlette_client/integration.py.gz",
+      "decompressed_lines": "19-65",
+      "observation": "Server cache plus browser-session marker; no-cache data is session-held. Separate get/delete, with no atomic consume guarantee or exp check in this read path."
+    },
+    {
+      "path": "authlib/source/authlib/integrations/base_client/framework_integration.py.gz",
+      "decompressed_lines": "5-29",
+      "observation": "Base TTL 3600 seconds is a library default, not selected Hengshi transaction expiry. Session cleanup does not establish expiration enforcement before token exchange."
+    },
+    {
+      "path": "authlib/source/authlib/integrations/starlette_client/apps.py.gz",
+      "decompressed_lines": "125-145",
+      "observation": "Read and clear are separate; ID-token parsing requires token and nonce keys; default leeway120."
+    },
+    {
+      "path": "authlib/source/authlib/integrations/base_client/async_openid.py.gz",
+      "decompressed_lines": "42-87",
+      "observation": "Custom claim options replace discovery issuer defaults; metadata algorithm list or defaultRS256; external joserfc signature decode path, key-id refresh and nonce_supported false bypass. No full lower-library conformance proof."
+    },
+    {
+      "path": "authlib/source/docs/oauth2/client/web/starlette.rst.gz",
+      "decompressed_lines": "24-50,85-92,100-114",
+      "observation": "Async HTTPX integration documented; illustrative automatic parsing/logout-session storage does not override Hengshi controls."
+    }
+  ],
+  "limits": "No graph resolution, source execution/import, network, package installation, grants, OIDC conformance, current account/API eligibility, native trial or production selection; external guidance links beyond saved sources are not independently refetched."
+}

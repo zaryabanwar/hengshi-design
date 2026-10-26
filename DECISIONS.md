@@ -1,8 +1,8 @@
 # Hengshi Design — Operational Decision Index
 
-**Status:** Active; Phase 0 accepted and Phase 1 in progress
+**Status:** Active; D-097 incremental delivery supersedes the whole-Phase-1 build gate
 **Classification:** Business confidential
-**Last reconciled:** 2026-09-06
+**Last reconciled:** 2026-10-04
 
 This root index is the required operational starting point for current explicit
 founder approval. Detailed rationale, effects, and boundaries are maintained in
@@ -34,6 +34,11 @@ the SEO-first, future-ready delivery master plan and instructed implementation o
 | D-020 | 2026-07-18 | Approved | Adopt explicit Core Web Vitals, 3D budgets, initial load, 99.9%, RPO, and RTO targets. | RPO <=24h/RTO <=8h remains an explicit launch risk. |
 | D-021 | 2026-07-18 | Approved | Operate weekly dependency proposals, security alerts, SBOM/license evidence, monthly canaries, and quarterly major checks. | Major upgrades never auto-merge; exceptions are dated ADRs. |
 | D-022 | 2026-07-18 | Approved | Deployment and AI spending require approved envelopes; other paid items need separate approval and a free alternative. | External/destructive actions and credentials remain separately gated. |
+| D-068 | 2026-10-04 | Approved | Defer deployment/provider/cost planning; Azure and AWS are candidates; prefer lowest feasible cost/free services. Retain Outlook/Teams without requiring Microsoft 365. | Supersedes Azure-only hosting selection and assumed 365 setup; no resource, license, spending or replacement integration approved. |
+| D-069 | 2026-10-04 | Approved | Reaffirm latest mutually compatible stable technology across every project tool/component; first product and current definition are v1. | No independently newest stack selection or invented later product release; preserve accurate dependency/schema/evidence identifiers. |
+| D-070 | 2026-10-04 | Approved direction | Company registration/contact facts are admin-editable reviewed content; separate privacy@ and security@ aliases will be created by founder. Europe is first target market. | Verify supplied identity/certificate/address and alias operation before publication; no European-office claim or bypass of approval. |
+| D-072 | 2026-10-06 | Approved bounded exception | Permit evaluation of gensync 1.0.0-beta.2 only in isolated development/CI React lint checks under the reviewed conditions; expires 2027-01-05. | No production runtime, application installation, complete graph selection or release approval; isolation/exclusion, conformance, integrity/provenance/licence/advisory and recheck gates remain. |
+| D-073 | 2026-10-06 | Approved bounded bootstrap | Accept the independently reviewed first-file ordering amendment and one create_new_file call for the blank Hengshi Design v1 UI References file in Drafts. | One target only; no B01 execution or design/content write before file/privacy/named-version/full editable-archive capability and _PRE; every subsequent external call retains its own applicable approval. |
 | D-023 | 2026-07-18 | Approved | Deliver Phases 0 through 9 in the recorded order. | Each later phase remains blocked by prior acceptance and its own gates. |
 | D-024 | 2026-07-19 | Approved | Accept the independently reviewed Phase 0 recovery and workflow-adoption package and begin Phase 1 definition work. | Phase 1 documentation and approved reversible evidence work may proceed; application implementation remains blocked until Phase 1 acceptance. |
 | D-025 | 2026-07-19 | Approved | Accept the bounded Phase 1 requirements, claims, SEO, route, and conversion foundation and retain the planned `/industries` parent hub. | Opens brand-strategy definition only; complete Phase 1 and all application implementation remain blocked by their later gates. |
@@ -308,6 +313,387 @@ verification; its exit evidence is a clean checkout passing the design validator
 unchanged. B01, MA-029, CB-06, CB-07 and the twelve amendment gates are
 unchanged.
 
+## D-064 — Founder selects free movement and spatial streaming without WASD
+
+**Date:** 2026-10-04
+**Status:** Approved
+**Authority:** Founder clarified in voice that WASD was not selected and the
+other discussed behavior was selected, after specifying mouse on desktop and
+touch on mobile, free steering/walking and loading the current and nearby areas.
+
+Adopt mouse-first desktop and touch-first mobile free steering and walking,
+with nearby-area spatial streaming, preparation of likely next areas and safe
+handling of sudden reversal/U-turns. Keep clickable destinations and equivalent
+keyboard-accessible semantic actions; WASD is not selected or required.
+
+Preserve the homepage and explicit World-entry boundary, automatic device-based
+selection of the existing four peer delivery streams and optional user override.
+Spatial loading changes which areas are resident, not the meaning/content of
+those streams or the accepted rule against automatic in-session tier changes.
+No universal browser graphics score or untested performance threshold is asserted.
+
+This amends D-012's directed-navigation-only scope and the corresponding proposed
+architecture boundary. It does not retroactively claim free walking was already
+specified or implemented. Prepare a bounded reconciliation of affected UX/3D,
+architecture and QA definitions with independent review. Exact movement gestures,
+scene partition/loading budgets and tested thresholds remain to be specified.
+The prior architecture candidate needs revision before its acceptance; this is
+not acceptance of that whole baseline or the complete Phase 1 package.
+No application/asset change, provider/Figma call, migration, paid activation,
+commit, push, publication or deployment is authorized.
+
+## D-063 — Accept the exact R-037 registry and independent review
+
+**Date:** 2026-10-03
+**Status:** Approved
+**Authority:** Founder approved the reviewed registry and pinned review for guard activation.
+
+column_authority_registry_path: docs/phase-1-ui-reference-design/column-authority.json
+column_authority_registry_sha256: A8358BE02D6FBCA42A167B19395A4A2CD9B2FE318EAAEC3B78E8141F4244AACD
+column_authority_review_path: output/research/b01-overlay-source-rebinding-2026-10-12/column-authority-successor-review-v1.json
+column_authority_review_sha256: 3C9B59DE510EDB33C891C395C1BE1C4C7A4E796643B5BCFA5DC0C319226A270F
+
+Accept the actual 1146 source-bound declarations and 164 definition-level timing
+criteria after independent source/criterion PASS, plus the separately reviewed
+read-only verifier. Activate the D-062 guard in the design validator and remove
+its state-profile timing proxy. Existing target values remain unchanged.
+The verifier must fail stale, missing, contradictory or unreviewed bindings.
+This is not timing/browser conformance, full Phase 1 acceptance, B01/Figma,
+application development, publication, an external write, commit or push.
+
+## D-062 — R-037 declared-column authority and per-record timing criteria
+
+**Date:** 2026-10-03
+**Status:** Approved
+**Authority:** Founder approved the independently authored and reviewed R-037 bundle.
+
+Accept COLUMN_AUTHORITY_PROPOSAL.md at SHA-256
+FDDAD88D763CCC32686711A6F3EF5AE47D352F72059058AC299B80DF67006D18
+and its nonauthor review reviews/r-037-column-authority-review-2026-10-03.md
+under docs/phase-1-ui-reference-design/. Retain all 22 targets as DECLARED;
+14 current classifier correlations do not authorize derivation or deletion.
+Authorize the exact source-bound registry/guard reconciliation and replacement
+of Get-ExpectedTimeBranchForState by individually reviewed process criteria.
+Preserve existing branch values, browser exemption and stream-presence hard guards.
+The actual registry assignments require nonauthor inspection and their own pinned
+founder acceptance before they can certify the package. Unsupported or conflicting
+source predicates must be surfaced rather than generated from classifiers.
+This accepts the model, not future registry cells, visual/runtime conformance,
+full Phase 1, B01/Figma, application work, external writes, commits or pushes.
+
+## D-061 — Accept current MA-029 definition/verifier baseline
+
+**Date:** 2026-10-03
+**Status:** Approved
+**Authority:** Founder accepted the integrated baseline after both full independent
+reviews and approved closing MA-029's definition-quality gate.
+
+Accept the reviewed 74-file snapshot identified by
+027E4DFCEB674AFF84B39B82B93096CB8EADB178E090CDD489509BC30FB29D2B,
+with dated current PASS records in design/reviews/ma-029-design-current-2026-10-03.md
+and design/reviews/ma-029-accessibility-current-2026-10-03.md. Close MA-029 and
+R-035's definition-quality gate. Earlier D-051 through D-060 approvals remain.
+This is not visual/runtime conformance or full Phase 1 acceptance. UG-2/UG-6
+visual values, UG-4 measurement, legal facts and actual production evidence stay
+gated. B01 execution and every Figma call remain separately held. No commit,
+push, provider call, application feature or external write is authorized.
+Code task status remains DOING while commits are deferred.
+The digest names the pre-acceptance reviewed snapshot; this decision is a
+subsequent governance record, not a claim that the current tree is byte-identical.
+
+## D-060 — Scoped boundary and nearest-ancestor evidence allocation
+
+**Date:** 2026-10-03
+**Status:** Approved
+**Authority:** Founder approved the clarified independently authored and reviewed
+BOUNDARY_EVIDENCE_ALLOCATION_PROPOSAL.md.
+
+Assign four allocation-only state rows to B07, yielding eight destination triples
+and twelve directed mapped/ancestor cases. Keep these identities out of shared
+profile values and ordinary state-axis or stream generation. Resolve only their
+exact batch/template/state/destination combinations; require destination-visible
+focus, the ordered five-step annotation and ancestor substitution evidence.
+B01 retains same-shell evidence and names B07 boundary deferrals. Implement and
+verify the registry, scoped resolver, coverage and trace reconciliation. This
+amendment grants no B01/B07 production, provider call, application change,
+conformance claim, commit or push.
+
+## D-059 — Durable pilot acceptance and target-batch validation
+
+**Date:** 2026-10-03
+**Status:** Approved
+**Authority:** Founder approved the independently authored and reviewed
+PILOT_EVIDENCE_RELEASE_PROPOSAL.md record and validation approach.
+
+Authorize definition and validator implementation of the proposed repository-local
+pilot-release record, bound to explicit founder B01 exit acceptance, immutable
+manifest/review hashes and PRE/EXIT archives. Evidence completeness alone never
+creates acceptance. Definition validation does not certify exits; batch-exit
+validation names a target and checks its eligible obligations and prerequisites.
+B07/B09 remain ineligible. No actual pilot acceptance, record insertion, B01
+release, external write, application change, publication, commit or push is granted.
+
+## D-058 — Expanded hotspot-label dismissal
+
+**Date:** 2026-10-03
+**Status:** Approved
+**Authority:** Founder approved the corrected independently authored and reviewed
+HOTSPOT_LABEL_DISMISSAL_PROPOSAL.md mechanism.
+
+Accept scoped Escape dismissal of expanded labels without navigation, explicit
+Close label dismissal, hoverability and persistence while focus or hover remains
+in the combined hotspot/expanded-label region, and the leave-both-then-re-enter
+latch. Base label, accessible name, persistent focus cue and activation remain.
+The delivery-stream control's Escape exception has first precedence and is not
+overridden. Otherwise label dismissal consumes Escape; host close-panel/go-back
+runs only when no expansion is being dismissed. Dismissal does not also activate
+the hotspot. Qualify the expanded-label-while-focused promise for explicit dismissal.
+
+The overlap of hovered labels with stream-control focus remains a required
+browser/keyboard/magnifier validation case, not a conformance claim. This accepts
+the mechanism and Close label action wording for definition reconciliation only.
+Geometry, implementation, Figma, publication, commits and pushes remain gated.
+
+Verification: D058 reconciliation independently PASS after stale-label/copy
+holds were corrected. Mechanically derived boundary/persistence/timing homes and
+seven stream acceptance predicates independently PASS. A12 encoded ownership and
+profile resolution PASS for all 75 live baseline IDs; A16 partition repair PASS.
+Regression 1021 checks/440 obligations PASS; UX 113/0; design 207/1 and
+production 166/1 retain only uncommitted scope guards. This does not close MA029:
+distinct boundary evidence allocation and conditional pilot-release signal remain
+unresolved. No release or implementation conformance is claimed.
+
+## D-057 — Stream-control wording and radio order accepted
+
+**Date:** 2026-10-03
+**Status:** Approved
+**Authority:** Founder approved the complete independently authored and reviewed
+UG-3_CONTROL_COPY_PROPOSAL.md phrase-and-order bundle.
+
+Accept the ordered peer labels Detailed 3D (S-HIGH), Balanced 3D (S-MEDIUM),
+Simplified 3D (S-LOW), Quick Access (S-SEMANTIC), plus every phrase and usage
+safeguard in that bundle. Apply selection is the visible/accessibility button
+name. Equivalent destinations and core journeys remain explicit; ordering does
+not rank importance or select the in-force stream. Runtime substitutions require
+verified capability facts and approved destination names. Verified reset-success
+copy is conditional on actual verified clearing; unreadable storage is not absence.
+
+UG-3 is resolved for this exact bundle. Legal notice content, consent/legal-basis
+conclusions, geometry, tokens, browser validation, implementation and publication
+remain gated. Definition reconciliation is authorized; no Figma call, application
+change, commit or push is authorized. Prior UG-3 holds in historical decisions
+remain provenance and are superseded only for the accepted bundle.
+
+D-057 approved copy-reference pin provenance: 034003FFC25AE198AE92D16C2C4B83860A971E1A9F5FD2755C672AFCCA6D5CC0 ->
+2D149DA845D2D2E7717ACF3372D54CB89F04C595FC6BE7663396CDF6E1D400C7.
+Independent reconciliation verification PASS on retry after the reviewer tool
+workspace-credit error; accepted copy-bundle review remains PASS. Mechanical
+FR-3D-017/018/019 requirement homes and UX/design traces independently verified
+PASS against D-045/D-051/D-052/D-057. Stream 1000/440 PASS; UX 113/0 with
+142 trace rows; design 207 PASS with only uncommitted scope guard.
+
+## D-056 — Peer-stream terminology and Focus Not Obscured requirement
+
+**Date:** 2026-10-03
+**Status:** Approved
+**Authority:** Founder approved the independently recommended UG-11/UG-12 bundle.
+
+Reconcile platform and verification-context terminology: S-SEMANTIC is a peer
+delivery stream whose Quick Access journey is equivalent, never a lesser fallback.
+Streams are distinct from verification contexts such as forced colours, reduced
+motion, grayscale and print; those contexts apply across relevant streams.
+
+Add NFR-A11Y-008: when a component receives keyboard focus, author-created
+content must not entirely hide it (WCAG 2.2 SC 2.4.11). Preserve stronger existing
+HUD/focus visibility safeguards; the minimum does not weaken them. Reconcile the
+requirement traces and frozen design-system pin mechanically. UG-11 and UG-12
+are resolved definition gates. No visual values, public copy, implementation,
+measured conformance, Figma calls, publication, commits or pushes are authorized.
+
+Approved definition-only pin provenance: BB6C2E2990935F29DB3F012A973C1F863EB92683E09D4E8A1E7AE9689F1244EE ->
+41DF97B9EBFDD46C7422206EC1FEB9C57932CF6537D9BCC9180B89D5183E79BF (intermediate) ->
+034003FFC25AE198AE92D16C2C4B83860A971E1A9F5FD2755C672AFCCA6D5CC0.
+
+Verification: independent corrected review PASS; UX 113/0 with 139 trace rows;
+stream regression 1000 checks/440 obligations PASS; focused backing/visibility
+guard PASS; design 207 PASS with only existing uncommitted scope guard.
+
+## D-055 — Backed scene focus indicators and contrast requirement amendment
+
+**Date:** 2026-10-03
+**Status:** Approved
+**Authority:** Founder approved Alternative A of the independently authored and
+nonauthor-reviewed UG-1 proposal, including explicit requirement-amendment authority.
+
+For authored scene focus indicators, use opaque backing on both sides of the
+complete indicator path. Amend NFR-A11Y-005 from contrast against every adjacent
+scene colour to contrast of at least 3:1 against every immediately adjacent
+backing colour. Lighting, textures, transparency, blur, bloom and overlays must
+not invalidate the opaque adjacency or hide the indicator. Keep the persistent
+3 px hotspot ring and expanded label; the backing must not obscure the target,
+label or another focused control. Inspect the outer backing/scene boundary for
+recognisable focus and target visibility. Native radios remain governed by D-054.
+
+This accepts the backing direction and authorizes its requirement reconciliation.
+The UG-1 proposal supplies the measurement basis, not measured results. Exact
+backing thickness, token values, geometry/layering and evidence matrix remain
+unapproved; independent method verification requires those inputs and bounded
+scene envelopes. No universal contrast or accessibility conformance is claimed.
+No application, Figma, publication, commit or push is authorized.
+
+Design-system pin provenance for the approved D-055 contrast wording only:
+1893D026E6B17E98C3267D80AE929760780639FEB499A49F999C9E64C9168B81 ->
+2232AFF24142EA840CBC1172BAC2C840724BD01A8A50518B48418B220B7F8A43 (intermediate) ->
+BB6C2E2990935F29DB3F012A973C1F863EB92683E09D4E8A1E7AE9689F1244EE. No visual token value is selected.
+
+Verification: independent requirements/trace/final-pin review PASS; focused
+backing guard rejects missing perimeter, occlusion and native-radio safeguards.
+Design validator 207 PASS with only the existing uncommitted-write-scope guard.
+Stream regression 1000 checks PASS with 440 frame obligations.
+
+## D-054 — Preserve native delivery-stream radio rendering
+
+**Date:** 2026-10-03
+**Status:** Approved
+**Authority:** Founder approval of the independent accessibility reviewer's UG-7
+recommendation following D-053.
+
+Retain browser-native radio rendering, including the checked mark and platform
+focus indicator. No authored accent color, custom mark, appearance:none, hidden
+replacement input, or forced-color-adjust:none belongs in the approved control
+baseline. Labels, spacing, and fieldset may be styled only while native states
+and focus remain visible and unobscured. A later input-level visual treatment
+requires a separately reviewed proposal with browser and real forced-colors
+verification, followed by founder approval.
+
+This resolves UG-7 only and preserves D-045's reliance on platform semantics and
+forced-colors rendering. It does not choose visual token values, approve public
+copy, establish implementation conformance, or authorize application changes,
+Figma calls, publication, commits, or pushes. The frozen UG-7 entry remains as
+historical provenance superseded by this decision.
+
+Verification: independent native-radio and Escape definition reviews PASS; stream regression PASS, 1000
+checks and 440 frame obligations. UG-8 is mechanically reconciled in style-guide
+sections 7.2 and 8.2.4 under the already accepted D-045 OBL-CTRL-04 exception;
+no new product choice or event-handler implementation is introduced.
+
+## D-053 — Apply remains enabled for the active delivery stream
+
+**Date:** 2026-10-03
+**Status:** Approved
+**Authority:** Founder approval of the independent accessibility reviewer's
+UG-5 recommendation, following the approved D-052 reset definition.
+
+Apply remains enabled when the pending selection equals the in-force stream.
+Explicit activation in that case produces a brief polite status indicating that
+the selected stream is already active. It preserves the stream, route, focus,
+scroll, and open panels; it causes no reload, transition, or persistence mutation.
+The action remains in keyboard focus order. This is distinct from applying a
+changed stream and from the confirmed preference reset under D-052.
+
+This resolves UG-5 only. Exact public wording remains held under UG-3. The frozen
+amendment's original unresolved entry is historical provenance, superseded by this
+decision. Definition reconciliation is authorized; application implementation,
+Figma calls, publication, commits, and pushes remain separately gated.
+
+Verification: independent definition review PASS; stream regression PASS, 993
+checks and 440 frame obligations, including rejection of removed no-op safeguards.
+Whitespace check PASS. Running application behavior is not changed or certified.
+
+## D-052 — Warn then reset delivery-stream preference
+
+**Date:** 2026-10-03
+**Status:** approved definition scope; automated and independent verification passed; uncommitted
+**Authority:** founder explicitly chose "warn then reset" for ACT-40.
+
+Before Clear preferences removes a saved delivery-stream choice, present a visible,
+accessible warning stating that the saved choice will be removed and a future visit
+will use normal capability-based selection unless the visitor chooses a stream again.
+Offer explicit Confirm reset and Cancel actions. No preference is deleted before
+confirmation; cancellation preserves the saved choice and the current session.
+After confirmation, clear the targeted preference, explain the outcome and offer
+stream reselection. Clearing is not itself Apply: it does not reload the page or
+change the current in-force stream. Storage failure is disclosed, and the interface
+must not claim that persistent data was cleared when that cannot be verified.
+
+This warning is specific to preference clearing; it neither delays nor redefines
+staff sign-out. `/privacy` is the disclosure home under D-051. Exact public wording
+and consent/legal conclusions remain held. No application implementation, visual
+production, publication, commit or push is authorized by this definition.
+
+Verification: focused privacy/reset guard PASS, including rejection when the
+no-deletion-before-confirmation safeguard is removed; stream regression 988 checks
+PASS with 440 frame obligations; UX 113/0. Design and production retain only their
+uncommitted-write-scope guards. Independent read-only review PASS for D-052.
+This verifies definitions and evidence obligations, not running reset behavior.
+OBL-STATE-04 clearing/location choices are resolved; requirement-level homes,
+full MA-029 independent review and legal conclusions remain outstanding.
+
+## D-051 — Dedicated privacy and storage disclosure route
+
+**Date:** 2026-10-03
+**Status:** approved definition scope; automated and independent verification passed; uncommitted
+**Authority:** founder approved the recommended new `/privacy` route in this
+Codex chat, resolving the notice-location gate in OBL-STATE-04.
+
+`/privacy` is the semantic home for privacy and local storage disclosures;
+`/credits` retains third-party attribution. Reuse the existing public-document
+reference template and B02 route-instance process. All four delivery streams reach
+the same semantic notice with return to the invoking route. Global shell and
+stream recovery references expose a clearly named notice link.
+
+Distinguish stored delivery-stream preference from performance measurement;
+explain read/write failure, session-only choices and storage clearing consequences;
+preserve stream reselection. These are content obligations, not final legal copy
+or an accepted consent exemption. Controller/contact facts, storage inventory,
+retention, legal basis and consent conclusions remain held for specialist review
+and founder publication approval. The route is inactive, outside the active sitemap.
+Reversible planning assumption: inherit the existing public-document index policy;
+this authorizes no public indexing. Application implementation, final legal copy,
+Figma calls, commits, pushes and publication remain deferred.
+
+Verification: foundation PASS; UX 113/0 with 35 routes; privacy-definition guard
+PASS including rejection of premature sitemap activation; stream regression
+988 checks PASS with 440 frame obligations. Design 207/1 and production 166/1
+retain only uncommitted-write-scope guards. Independent read-only review PASS
+for the location-only definition and mechanical parity/evidence reconciliation.
+OBL-STATE-04 is partially reconciled: ACT-40 warning versus preference separability
+still needs a founder decision; legal basis and consent conclusions remain held.
+Historical specification text is preserved; D-051 supersedes its location gap only.
+
+## D-050 — R-044 canonical line endings and hash-pin reconciliation
+
+**Date:** 2026-10-03
+**Status:** accepted scope; automated and independent verification passed; commit pending
+**Authority:** founder approved the scoped R-044 repair and verification in this
+Codex chat. Commits and pushes remain separately gated.
+
+Add extension-scoped `text eol=lf` rules for the brand-identity package's text
+files and exact-path rules for the six compatibility baseline sources. Preserve
+all prose, geometry, review conclusions, dependencies, and binary assets. Replace
+only hashes whose actual source bytes become canonical LF, including dependent
+checkpoint pins. Historical hash values remain traceable through
+`docs/phase-1-brand-identity/validation/r-044-canonical-hashes.json`; this is a
+byte-representation transition, not renewed design approval or refreshed evidence.
+
+Verify both affected validators in the root and in a fresh Windows clone with
+`core.autocrlf=true` and the uncommitted candidate overlay. Independent inspection
+must verify content preservation, hash provenance, unchanged assertions, and scope.
+Root and fresh candidate checkout: brand identity 63/0; compatibility PASS with
+all six baseline source hashes reconciled. The initial fresh checkout reproduced
+the eight brand failures. Git exported the candidate through a temporary index
+under `core.autocrlf=true`; scoped text contains no CRLF, binary bytes are preserved,
+and neither normal index is staged. Stream regression: 987 checks PASS; foundation
+PASS; UX architecture 113/0. Design 207/1 and production 166/1 retain only the
+expected uncommitted-write-scope guard; their freeze values remain unchanged.
+Independent inspection found three unanchored root patterns; corrected to root-only
+paths and rechecked against excluded hypothetical nested paths. No application,
+dependency, database, UI, external, or binary change was made.
+Independent read-only inspection PASS after the scope correction: all nine
+provenance entries match, all twelve pin changes are traceable, validator assertions
+are preserved, and eleven binary assets have no diff. R-044 remains DOING until
+the separately approved commit and post-commit scope checks finish.
+
 ## D-049 — R-043 line-ending fragility treated for the production and UX-architecture packages
 
 **Date:** 2026-09-24
@@ -351,3 +737,809 @@ value. R-043 moves to `in_progress` pending independent verification; its exit
 evidence is a fresh clone passing all four validators unchanged. B01, MA-029,
 CB-06, CB-07 and the twelve amendment gates are unchanged.
 
+
+
+## D-065 — Accept Phase 1 architecture authority and boundaries
+
+Date: 2026-10-04. Status: Approved.
+
+The founder explicitly accepts the previously presented Phase 1 architecture
+authority and boundaries proposal and asks that conflicts and ambiguities be
+checked during reconciliation. Acceptance applies to the reviewed architecture
+candidate and its companion authority map recorded in
+`docs/phase-1-architecture/architecture-review-2026-10-04.md`. It closes the
+founder acceptance question in MA-031; older pending labels are superseded by
+this decision, not evidence of missing approval.
+
+D-064 remains the later navigation amendment: mouse/touch free steering and
+walking with nearby spatial streaming supplement clickable destinations. The
+accepted candidate's directed-exploration-only wording and statement that no
+free-roam requirement is introduced are superseded only in that affected scope.
+The two-deployable, shared-publication, data, identity, privacy and AI authority
+boundaries remain accepted. Detailed gestures, partition/loading budgets,
+measured device thresholds and corresponding QA obligations remain to define.
+
+The reconciliation map is a working navigation aid, not a replacement approval
+source. Full Phase 1 acceptance, application implementation, actual production
+UI/3D, provider/legal/cost gates and external writes remain separate. Commits
+and pushes remain deferred. Preserve the reviewed candidate unchanged until
+its scoped amendment can be traced and independently reviewed.
+
+## D-066 — Select a new modular headquarters and visual-first presentation
+
+Date: 2026-10-04. Status: Approved.
+
+The founder accepts the recommendation to build an original modular headquarters
+and surroundings around the defined visitor journeys rather than retrofit the
+Atlanta tower as the complete navigable interior. Preserve the existing GLB as
+prototype/reference evidence; do not overwrite or delete it. This selects the
+asset strategy, not an unseen architectural appearance or production-ready asset.
+
+The founder requests visual presentation of the defined system: original concept
+images, spatial blockouts and walkthroughs should make the proposed experience
+reviewable without requiring the founder to read the documentation. Concepts
+remain proposed until visual acceptance. Follow accepted brand rules; do not feed
+the protected Atlanta asset into generative systems. Production UI references,
+3D review/acceptance and full Phase 1 implementation gates remain applicable.
+Commits, pushes and external design writes remain separately gated.
+
+## D-067 — Founder-selected nature-integrated visual direction
+
+Date: 2026-10-04. Status: Approved direction; individual visual acceptance pending.
+
+The founder requests a thriving, pleasant Earth setting expressing sustainable
+living alongside advanced technology. Architecture should evoke organic materials
+and integration with nature rather than an extractive or inorganic-dominated
+corporate environment. This refines D-066's new modular headquarters direction;
+retain service wings, information/evidence boards and specialist conversations.
+
+Two original concept previews have been generated; the first corporate/mineral
+campus is exploratory, and the second nature-integrated campus interprets this
+direction. Neither image is an accepted production spatial specification, proof
+of actual staff presence, environmental performance or real construction. Exact
+layout, accessible movement, asset budgets and approved screen/scene references
+must reconcile the selected look with product requirements before implementation.
+Use sustainable living as aspirational visual messaging; do not invent carbon,
+resource, certification or company performance claims. Preserve the accepted
+identity; any material brand-rule amendment requires explicit review/approval.
+
+## D-068 — Defer cloud selection and retain Outlook/Teams without a 365 prerequisite
+
+Date: 2026-10-04. Status: Approved founder instruction.
+
+The founder has an Azure account, prefers operating costs as low as feasible/free
+services, is now open to both Azure and AWS, and explicitly defers deployment and
+cost planning. D-014's exclusive Azure hosting target is superseded in this scope;
+earlier Azure resource mappings and the two deployment placeholders are candidates
+or historical evidence, not a selected deployment. No fixed budget, subscription,
+region, SKU, resource, licensing purchase or expenditure is approved.
+
+The founder does not use or plan to adopt Microsoft 365, and expressly retains
+the documented Outlook/Teams integration intent. D-016's booking/handoff outcomes
+remain. Do not remove Outlook/Teams or prescribe a 365 setup. Verify the actual
+account and each automated calendar/meeting/presence/notification capability;
+consumer app access and particular Graph permissions are distinct. No unavailable
+API may be claimed operational, and no alternative provider is silently selected.
+Entra staff identity and approved AI data-route policy remain unchanged. Free-tier
+preference does not authorize reduced privacy, truth, accessibility or recovery.
+
+## D-069 — v1 definition and latest mutually compatible stable selection
+
+Date: 2026-10-04. Status: Approved founder instruction.
+
+The founder reaffirms D-004: use the latest mutually compatible stable set, not
+all independently newest packages. It governs tools, software, libraries,
+frameworks, runtimes, renderers/exporters, databases and external interfaces used
+by this project. Official evidence, complete coupling, tests/review, exact locks
+and the existing approved exception/recheck policy remain required.
+
+This is the first development toward the first production version: current
+product and production-definition labels are v1. Remove contradictory current
+standalone all-latest directions and invented later product-version framing from
+agent entry points/templates. Actual package numbers, schema/protocol identifiers,
+internal evidence revisions and protected historical filenames keep accurate
+meaning; no falsified registry version, broken schema or erased review evidence.
+The constitution's current label is normalized to 1.0.0 under this explicit naming
+instruction rather than incremented as if another product had shipped.
+
+## D-070 — Editable company facts, separate contact aliases and Europe-first market
+
+Date: 2026-10-04. Status: Approved direction; verification/publication pending.
+
+Founder-supplied legal identity: HENGSHI DESIGN (SMC-PRIVATE) LIMITED, Pakistan,
+SECP CUIN `0194040`; PSEB registration `Z-25-21131/26`, Valid From `Jul-2026`,
+Valid Till `Jun-2027`. Supplied registered address: A-87, Street no.6, Khokhar Town,
+Defence Road, Sialkot 51310, PB, Pakistan. General contact `info@hengshidesign.com`.
+The [entity/contact record](docs/software-definition/06-entity-and-public-contact.md)
+preserves source precision, publication conditions and official disclosure research.
+The certificate transcription is founder evidence, not independent authentication.
+
+These facts must be editable from the staff administration surface as typed,
+versioned reviewed content. Changes invalidate affected approval and publish as a
+coherent eligible release; an administrator cannot bypass founder approval.
+
+The founder accepts dedicated `privacy@hengshidesign.com` and
+`security@hengshidesign.com` aliases and will create them separately from the start.
+General contact stays `info@`. Alias existence/delivery/access/triage are not yet
+verified; no provider configuration or external email was performed.
+
+Europe is the first target market, retaining the mid-market/enterprise direction
+and broader global ambition. It does not establish a European company/office,
+guarantee EU-law compliance, choose a cloud region or authorize a hosting change.
+Full Phase 1, public claims, implementation and operational gates remain distinct.
+
+## D-071 — Accept the final-third campus composition as the layout basis
+
+Date: 2026-10-04. Status: Approved founder decision; layout basis only.
+
+The founder reviewed the latest campus model's Overview, Arrival and Department
+views and selected: **“Accept this composition as the layout basis.”** Carry
+forward the central reception, five-wing arrangement and connected landscape
+composition of `artifacts/nature-campus-layout-study/`. Do not reopen this layout
+decision merely because detailed materials and foliage remain unfinished.
+
+The accepted basis is the separate final-third study, with exact identities:
+
+- Generator `build_layout.py`: `D127A6429B7B32E6954BCD51E2C2BEAF4A5560BDC29EFCABD00CE264C6A984C6`.
+- Export `nature-campus-layout.glb`: `E2161710DC0576EC62E3D096C60E32927E827AA59198A33361E729EC8A7B43C0`.
+- Editable master `nature-campus-layout.blend`: `C377B877779DF01211C2312AFDE3D0F0769E2874E3409B2A1BAA6BEED1CEB4B8`.
+- [Independent bounded review](docs/phase-1-3d/reviews/final-third-layout-study-2026-10-04.md):
+  `C1693A1D39F166D55BB7184796AC9A2E004D30BCEE58A11F4555964CEC305063`.
+
+The review reproduces finite render-geometry observations and viewer behavior;
+it does not certify safe traversal or performance. Founder acceptance establishes
+the composition as the spatial starting point, not a faithful finished concept
+match, approved real-world dimensions, material/foliage detail, collision or
+structural/accessibility safety, production transfer budgets, rights/compatibility,
+runtime movement/streaming/audio, staff operations or complete Phase 1 acceptance.
+
+All three normal study revision cycles are now consumed. This decision grants no
+exception for another substantial composition correction. Preserve the accepted
+study, prior composition, original application and Atlanta asset. Later detailed
+production work still follows its applicable reviewed specification and approval
+gates; no application implementation, external write, spend, commit, push or
+deployment is authorized here.
+
+## D-072 — Bounded gensync development and CI lint exception
+
+Date: 2026-10-06. Status: Approved founder policy exception; candidate evaluation
+and adoption evidence pending. The product and definition remain v1.
+
+After asking whether gensync could also run in production, the founder received
+the recommendation to allow the narrowly reviewed development/CI lint exception
+and verify exclusion from deployed artifacts, then replied **"agreed."** This
+accepts that recommendation; it does not approve the earlier hypothetical runtime
+use or create a general prerelease waiver.
+
+Allow only `gensync 1.0.0-beta.2` within the isolated React lint-tool dependency
+closure described in the [reviewed proposal](docs/phase-1-compatibility/refresh-evidence-2026-10-04.md#proposed-react-lint-dependency-exception--founder-decision-required).
+Its [independent review](docs/phase-1-compatibility/reviews/react-lint-policy-proposal-v1-2026-10-05.md)
+passes proposal consistency only; the original reviewed inputs remain preserved.
+Keep the actual beta identifier visible, and apply all five reviewed conditions:
+
+1. Resolve and deterministically pin the complete candidate; verify archive
+   integrity/provenance, licences and current advisories before adoption.
+2. Execute only in isolated development/CI lint checks, without visitor or
+   client-confidential data, production credentials or deployed execution.
+   Demonstrate reachability and exclusion from shipped browser/server code,
+   public HTML, deployed images and every other execution path. A devDependency
+   label alone is insufficient; any additional use needs separate review/approval.
+3. Prove the actual recommended preset, valid/invalid Hook and Effect cases,
+   aliases/custom Hooks, configuration failures and coupled TypeScript
+   compiler/API/editor/build behavior. No reduced coverage or suppressed rules.
+4. Recheck immediately before every candidate adoption/upgrade wave and at least
+   quarterly. This exception expires **2027-01-05**; afterward selection is held
+   until explicit renewal or a proven compatible stable replacement graph.
+5. Reject the candidate if isolation, exclusion, integrity, licence, security or
+   conformance evidence fails. Preserve pre-wave evidence and rollback; later
+   application upgrades retain their own approval gates.
+
+D-069's latest mutually compatible stable rule continues for everything outside
+this named exception. No other prerelease, peer mismatch, TypeScript parity gap,
+EOL dependency, general Babel/build use or security waiver is approved. MA-013,
+full graph/lock acceptance, Phase 1 acceptance, application installation/runtime
+changes, external writes, migration, spending, commits, pushes and deployment
+remain separate. This decision permits bounded candidate evaluation, not a claim
+that gensync or the resulting application is production-ready.
+
+## D-073 — First-file bootstrap ordering and one blank Figma file
+
+Approved by the founder in text on 2026-10-06 in response to the precise
+first-file amendment/create_new_file question. The accepted two-document patch
+is output/research/b01-preflight-2026-10-06/bootstrap-proposal/correction-1/first-file-ordering.patch.
+Its independent correction-1 review PASS is
+docs/phase-1-ui-reference-production/reviews/first-file-ordering-correction1-v1-2026-10-06.md,
+SHA-256 73099b611978492e8410dfebeb3e472cf260f6fe2c30e81db178834ff1ba54b7.
+
+The founder confirmed there was no existing file. One individually approved
+whoami resolved the single Starter/Full plan. This decision permits one empty
+Design file named Hengshi Design v1 — UI References in that account’s Drafts,
+then the separately approved read-only file/node check before design work.
+Record the single returned target; never duplicate uncertain file creation.
+Private access, named-version/full editable-archive capability and the _PRE
+archive must be verified before design/content writes. Node exports/screenshots
+are not an editable-file archive substitute. Project creation, sharing changes,
+seats/billing, provider AI, B01 execution/exit, later batches, implementation,
+Phase 1 acceptance, Git and deployment remain separately held.
+
+The blank file call succeeded on 2026-10-06; this is setup, not a production
+screen. Existing individual-call approvals, ledger-before-next-call, zero-spend
+and monthly limits are unchanged. No blanket external-write authorization follows.
+
+## D-074 — One-word QA browser-release correction exception
+
+Date: 2026-10-06. Approved founder decision: **“Approve this wording-repair exception.”**
+Permit one additional producer correction beyond the QA feature's exhausted two
+revision cycles, solely to apply the [prepared patch](output/research/qa-browser-coverage-repair-2026-10-04.patch):
+FQA-N06 changes `Latest two stable evergreen families` to `Latest two stable
+evergreen releases`. Preserve the Safari/iOS 16.4 floor, WCAG 2.2 AA target and
+all other requirements. This restores the existing accepted release coverage.
+The [review finding](specs/002-testing-and-monitoring/reviews/qa-feature-v1-2026-10-04.md)
+requires independent exact-input re-review after correction. No QA review PASS,
+feature/integrated acceptance, runtime evidence, implementation, commit or push
+follows from this exception. It grants no further correction cycle or broader change.
+
+## D-075 — B01 execution and existing-page organisation
+
+Date: 2026-10-06. Approved founder decision: **“Approve B01.”**
+Authorize B01's shared PRIM components, desktop/mobile global navigation,
+directory/search and system-recovery references in the existing private
+Hengshi Design v1 Figma file. Organise these in sections of Page 1 using
+file-local components, without team-library publication or additional pages.
+The [execution brief](docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md)
+and original template/state/viewport/mode/stream obligations remain controlling;
+this organisation does not reduce their coverage or change stable source IDs.
+Before the first design write, verify the named `HSD_UIR_B01_PRE` checkpoint and
+linked full editable local archive under the production contract. The earlier
+bootstrap download is not that checkpoint. Preserve zero spending, private
+sharing, individual immediate Figma-call approval and ledger-before-next-call.
+Provider AI, publishing, collaborators, application changes and Git remain held.
+This is execution permission, not a design result or B01 exit acceptance. Required
+independent design/accessibility reviews, frozen _EXIT evidence and founder pilot
+acceptance remain; no later batch, B07/B09 or implementation is released.
+
+## D-076 — Visitor inactivity, EU privacy baseline and production-data deferrals
+
+Date: 2026-10-07. Founder decisions recorded from this chat; definition
+reconciliation and required independent reviews remain DOING. Product remains v1.
+
+Visitor conversations expire after 30 minutes of inactivity or a deliberate
+authorized End conversation action. The founder rejects an absolute visitor
+conversation time limit. This supersedes the unaccepted two-hour chat-access
+proposal and its twenty-hour planning consequence; do not introduce a hidden
+maximum process age through proof/cookie rotation. Existing staff sign-in clocks,
+booking policies, finite request/work limits and retention rules are separate.
+
+Retain the accepted accessible warning, More time and permitted-progress
+preservation requirements. Genuine authorized conversation activity and deliberate
+continuation must be defined in the revised profile; polling, reconnects,
+heartbeats and automated provider output must not manufacture activity.
+Only the visitor or currently authorized assigned staff may end the human
+consultation; no general staff access to private AI conversations is granted.
+Timeout/end revokes the relevant conversation access and fences further work,
+without inventing cancellation of a booking or erasing an uncertain operation.
+It does not authorize durable storage or expired-proof resurrection. Exact
+warning/activity/end/cleanup and race behavior require revised contracts/review.
+
+Do not publicly display registration identifiers, registration-validity claims
+or the supplied registered address now. Their verification/disclosure is deferred
+to later production preparation, not a Phase 1 founder-input blocker. Preserve
+supplied facts privately and the requirement for admin-editable eligible content.
+The referenced PSEB validity was the supplied month labels July 2026–June 2027;
+no SECP certificate expiry, current verification or publication is inferred.
+This deferral does not waive applicable operator identity/contact notice duties.
+
+Prepare the privacy/retention definition using GDPR, applicable EU ePrivacy
+requirements and official EDPB/European Commission guidance as the baseline.
+Apply purpose/lawful-basis mapping, minimisation, privacy by default, necessary
+retention, rights/deletion, security, processors and international-transfer rules.
+The founder delegates preparation of a reasoned policy; no automatic EU-wide
+retention duration, consent basis, legal clearance or compliance claim follows.
+The accepted consented-record 90-day rule remains pending its exact lawful
+anchor/class/deletion mapping; any conflicting requirement needs reconciliation.
+Primary guidance checked: [EDPB principles](https://www.edpb.europa.eu/topics/key-gdpr-concepts/basic-principles_en)
+and [privacy by design/default](https://www.edpb.europa.eu/sme/be-compliant/be-compliant_en).
+
+Use clearly synthetic non-sensitive demo data for local development throughout
+the system. Real claims, projects, team identities, portraits, department owners
+and other operational content will be supplied/managed by the founder through
+admin before production. Missing real content is not a Phase 1 definition blocker.
+Keep fixtures quarantined from production, public claims, SEO and live staff
+availability; no real personal/client data, credentials or live outbound actions
+are permitted by demo-data authorization. Real providers, permissions, asset
+rights and launch verification cannot be fabricated or satisfied by fixtures.
+
+Present only decisions needed for the current Phase 1 goal. Request visual
+acceptance when complete contracted evidence and required reviews are available,
+not during unfinished preparation. Later deployment/account/content/launch gates
+remain later gates. Figma's separately promised go-ahead has not arrived in this
+message; fresh per-call approval remains required. No application implementation,
+provider action, external design write, migration, commit, push or deployment
+is authorized by recording these decisions.
+
+## D-077 — Temporary evaluated Three renderer exception
+
+Date: 2026-10-07. Founder approval: **“two approvals granted”**, responding to the
+explicit temporary renderer exception and single Figma call 17 questions.
+The Figma approval is separately accounted for in the per-call ledger; it is not
+blanket external-write authority.
+
+Approve only root `three 0.184.0` with `@types/three 0.184.1` as the temporary
+evaluated renderer pair for the eventual complete compatible stable graph, under
+[the dated exception conditions](docs/phase-1-compatibility/THREE_STABLE_EXCEPTION_PROPOSAL.md).
+The [six-input independent proposal/evidence PASS](docs/phase-1-compatibility/reviews/three-stable-exception-v1-2026-10-07.md)
+retains the strict loader declaration failures in evaluated newer candidates and
+the independently reproduced finite 184 checker/build/browser evidence. This is
+the newest proven-compatible evaluated matched line, not proof that every possible
+newer patch or complete graph is incompatible.
+
+Retain `skipLibCheck=false`, the existing technology families, no source/declaration
+patches or suppressed checks, the separate nested renderer node, unresolved Clock
+warnings and finite-device limits. Full graph/MA-013 acceptance, re-resolution,
+reproducible locks, supply-chain/licence/deployed inventory and D-072 isolation
+conditions remain separate. D-072 remains lint-only and expires on 2027-01-05.
+
+Recheck this renderer exception no later than **2027-01-07**, before separately
+approved adoption/modernization, and on a relevant stable upstream fix release.
+Continuing the exception at that date requires a fresh founder decision. A later
+authorized wave must preserve and restore its reviewed source, locks and generated
+assets together under its rollback plan. No current application/runtime/lock,
+protected prototype/model, provider, migration, Git, spending, publication or
+deployment change is authorized. Full Phase 1/integrated acceptance remains held.
+
+## D-078 — Accept the reviewed timing correction and scoped authority successor
+
+**Date:** 2026-10-11
+**Status:** approved
+**Authority:** Founder wrote **“all approved”** to the named timing correction,
+three source rebindings and nine-file exception to the two-document slice limit.
+
+Accept the exact nine predecessor/proposal pairs in
+`output/research/ui-timing-branch-correction-2026-10-09/source-bound-draft/preparation.json`,
+with registry SHA-256 `85736B6DB6801FFDC529143085C20346193DC4904EEF01E09D2074524211F98A`.
+The 44-input independent source/definition receipt has SHA-256
+`9328A81B82E5B3A9DECB1EE1866AAF1E959020C071FE21C59ECE0607B11583F1`.
+The exact-format independent successor review has SHA-256
+`F2495B65E6F69CE6EB34B985BA8078AABF195EBC3D3722AB8A78940591D2D5A1`.
+Its 1,146 actual-cell bindings are revalidated; all identities, values and branch
+assignments stay unchanged. The three current UX source rebindings are scoped
+source correspondence, not broad acceptance of all proposed UX content.
+
+The warning/extension branch uses at least20seconds to act and at leastten
+extension opportunities; the separate pre-start adjustment branch retains its
+range rule. D-076's30-minute visitor inactivity/authorized End/no absolute limit
+and the separate staff clocks remain unchanged. No working timer or compliance
+claim follows. Update D-063's operational registry/review metadata to this accepted
+successor; preserve the original frozen files and receipt. Original D-063 registry
+hash: `E786B29985DDD0A553622AA1ADAF4029543D2F0ABB395A5AC7DAE64B3DD21554`.
+Original review: `docs/phase-1-ui-reference-design/reviews/r-037-column-authority-actual-review-2026-10-03.json`,
+hash `B4EF38E65AD984D7D4B2C51F2D0193C1345796BC045515D0086B8A3DE10A9957`.
+The nine-file exception applies only to this reviewed correction; it changes no
+general workflow limit, application/production gate, prior receipt or Git authority.
+
+## D-079 — One recovery-call allowance exception
+
+**Date:** 2026-10-11
+**Status:** approved
+**Authority:** The same **“all approved”** grants one `use_figma` retry for the12
+reviewed recovery views and one call beyond the conservative20-call allowance.
+
+The permission is consumed by October attempt24/conservatively metered21,
+recorded in the B01 ledger and `output/research/b01-recovery-stream-bindings-2026-10-08/attempt24-2026-10-11/receipt.json`.
+No paid activation, additional call, blanket allowance increase, full B01 acceptance
+or later-batch release follows. Provider balance remains unknown; each further
+call requires applicable allowance or its own bounded exception and fresh approval.
+
+## D-080 — One capability-refusal call and allowance exception
+
+**Date:** 2026-10-11
+**Status:** approved
+**Authority:** Founder replied **“Approve this one call and exception”** to the
+named eight-view/four-control call, bundled preflight and eight requested
+full-resolution previews, explicitly identified as attempt25/conservatively
+metered22 and requiring its own exception beyond the20-call allowance.
+
+The permission and exception are consumed by that single attempt. Its receipt is
+`output/research/b01-ceiling-refusal-bindings-2026-10-09/attempt25-2026-10-11/receipt.json`.
+The response records eight frames and four controls but returns only five image
+blocks despite eight requested; directory ordinals5–7 have no returned pixels.
+The complete provider response and exact executed code remain preserved. Actual
+debit/balance is unknown. No automatic retry, further call, general allowance
+increase, paid activation, later-batch release or full B01 acceptance follows.
+
+
+## D-081 — One remaining-pixel export call and allowance exception
+
+**Date:** 2026-10-11
+**Status:** approved
+**Authority:** Founder replied **“Approve this one export call and exception”**
+to the named fifteen-existing-view export using five temporary comparison sheets,
+identified as October attempt26/conservatively metered23 with its own exception
+beyond the20-call project allowance.
+
+Permission and exception are consumed by that single call. Its actual receipt is
+`output/research/b01-remaining-pixel-export-2026-10-11/attempt26-2026-10-11/receipt.json`.
+Five native PNG sheets and fifteen exact full-resolution crops are preserved.
+The report records removal of196 temporary nodes and bounded original geometry,
+text, position and parent-order preservation. Static export does not establish
+interaction, accessibility, full B01 or founder acceptance. Actual debit/balance
+remains unknown. No automatic retry, additional call, general allowance increase,
+paid activation or later-batch release follows.
+
+## D-082 — One combined recovery composition/capture call and allowance exception
+
+**Date:** 2026-10-11
+**Status:** approved
+**Authority:** Founder replied **“Approve this one combined call and exception”**
+to the named48 shared recovery references,16 states on three surfaces, with
+bundled preflight and five native comparison images followed by temporary cleanup.
+The request named October attempt27/conservatively metered24 and its own
+one-call exception beyond the20-call project allowance.
+
+Permission and exception are consumed by that single call. The actual receipt is
+`output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/receipt.json`.
+Root34:1892 and48 state/surface records are returned, with five native PNGs and
+48 exact original-width crops. Reported temporary removal and bounded existing
+content/new specimen preservation do not establish exhaustive appearance,
+interaction, accessibility, native restore/_EXIT or full B01/founder acceptance.
+Actual provider debit/balance is unknown. No automatic retry, additional call,
+general allowance increase, paid activation or later-batch release follows.
+
+## D-083 — One combined responsive reference call and allowance exception
+
+**Date:** 2026-10-12
+**Status:** approved
+**Authority:** Founder replied **“Approve this one combined call and exception”**
+to the reviewed28 responsive references (twelve reflow-width, twelve landscape,
+four desktop recovery), bundled preflight, annotations, font membership and five
+comparison images with temporary cleanup. The request named October attempt28 /
+conservatively metered25 and one exception beyond the20-call project allowance.
+
+Permission and exception are consumed by that single call. Exact authorization,
+script and actual receipt are preserved at
+`output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/`.
+Root35:2036,28 frame records and five native PNGs were returned. The report records
+605 temporary IDs removed, zero bounds findings and bounded source/new specimen
+geometry,text,position and order preservation. Pixel inspection and independent
+result review remain separate; no browser zoom, accessibility conformance, whole
+B01, native restore/_EXIT or founder acceptance is established. Actual provider
+debit/balance is unknown. No automatic retry, additional call, general allowance
+increase, paid activation or later-batch release follows.
+
+
+## D-084 — One combined mode-reference call and allowance exception
+
+**Date:** 2026-10-12
+**Status:** approved
+**Authority:** Founder replied **“Approve this one combined call and exception”**
+to the reviewed48 mode references (15 full hosts and33 focused),48 annotations,
+eight existing-frame name-only REF repairs, bundled preflight/font reporting and
+five comparison images with temporary cleanup. The request named October
+attempt29/conservatively metered26 and its one additional exception beyond the
+20-call project allowance.
+
+Permission and exception are consumed by that single call. Exact authorization,
+reviewed source, input, raw response, actual receipt and four returned native PNGs
+are preserved at `output/research/b01-mode-coverage-2026-10-12/attempt29-2026-10-12/`.
+Root36:2492 and48 frame records were returned. Eight exact name repairs and
+bounded original/new descriptor, position/order preservation and temporary
+cleanup report true, with zero bounds findings. Only four of the five requested
+comparison images were returned; missing-sheet pixels and independent result
+review remain held. No actual interactions, accessibility conformance, whole
+B01, native restore/_EXIT or founder acceptance follows. Actual provider debit/
+balance is unknown. No automatic retry, additional call, general allowance
+increase, paid activation or later-batch release is authorized.
+
+## D-085 — One existing-unit export call and allowance exception
+
+**Date:** 2026-10-12
+**Status:** approved
+**Authority:** Founder replied **“Approve this one export call and exception”**
+to one native comparison export of eleven existing recovery references and their
+annotations missing from attempt29, with temporary cleanup and no permanent
+design/name changes. The request named October attempt30 / conservatively
+metered27 and its one additional exception beyond the20-call project allowance.
+
+Permission and exception are consumed. Exact authorization, reviewed source,
+input, raw response and report are preserved at
+`output/research/b01-missing-mode-pixels-2026-10-12/attempt30-2026-10-12/`.
+The response contains one text report and zero images, with isError false.
+It reports eleven source units, one planned3808×1996 comparison, all162 reported
+temporary IDs removed, and bounded original/root descriptor, positions and parent
+orders unchanged. These are returned assertions; no exported pixels or independent
+live-canvas verification follows. Eleven missing previews remain held.
+October totals:30 attempts /27 conservatively metered; actual debit/balance is
+unknown. No additional call, automatic retry, general allowance increase, paid
+activation or later-batch release is authorized.
+
+## D-086 — Three-call bounded recovery and scoped batch exceptions
+
+**Date:** 2026-10-12
+**Status:** approved
+**Authority:** Founder replied **“Approve three-call recovery and exceptions”**
+to the reviewed temporary-sheet / PNG download / exact cleanup workflow.
+Only this workflow may omit separate per-call prompts; three additional allowance
+exceptions cover attempts31–33 / conservatively metered28–30. Upfront cleanup
+authority includes cleanup after download failure. Every call remains separately
+accounted. No automatic retries, permanent design changes or paid activation.
+
+Exact authorization and corrected source binding are preserved at
+`output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/`.
+The corrected prepared sources have independent PASS; this establishes no actual
+Figma execution, delivered pixels, native restore/_EXIT or fullB01/Phase1 acceptance.
+Runtime IDs for download and cleanup must bind to the successful preparation.
+Execution outcomes and consumed permissions are owned by the running call ledger.
+Actual provider debit/balance remains unknown; no other workflow is authorized.
+
+## D-087 — One read-only cleanup-inventory diagnosis and allowance exception
+
+**Date:** 2026-10-12
+**Status:** approved
+**Authority:** Founder replied **“Approve diagnostic call and exception”**
+to one read-only use_figma diagnosis of temporary sheet38:3157, comparing the
+reported162 IDs with current traversal/resolution/type/parent mappings.
+This is attempt34 / conservatively metered31, with one additional allowance
+exception. Source is producer syntax/inspection checked; no independent verdict
+was saved because the reviewer stopped with a workspace-credits error.
+
+Exact authorization/source/input and outcome belong to
+`output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/cleanup-diagnosis-preparation/attempt34-2026-10-12/`.
+Only diagnosis is authorized; no deletion, other design mutation, screenshot,
+automatic retry, paid activation or B01 acceptance follows. Permission/exception
+are consumed by its single call; actual debit/balance remains unknown.
+
+## D-088 — One exact read-only diagnostic retry after reconnection
+
+**Date:** 2026-10-12
+**Status:** approved
+**Authority:** Founder replied **“Reconnected—approve one diagnostic retry and exception”**
+to the exact read-only inventory diagnosis retry after Figma reconnection.
+This is attempt35 / conservatively metered32 with one allowance exception.
+The source remains producer-checked; no independent verdict is asserted.
+
+Only this single read-only retry is authorized. Exact source, authorization, input
+and actual outcome belong to the attempt35 folder beneath the current cleanup
+diagnosis preparation. No deletion, other design mutation, screenshot, paid
+activation or further automatic retry follows. Actual debit/balance is unknown.
+
+## D-089 — Scoped OAuth, read-only retry and replacement-review approvals
+
+**Date:** 2026-10-12
+**Status:** approved
+**Authority:** Founder approved the existing primary Figma OAuth refresh, then
+replied **“Completed—approve retry and exception”** and
+**“Approve one replacement reviewer”** to the two exact recovery questions.
+
+The existing OAuth refresh was started through the normal browser flow; no token
+or authorization URL was copied into evidence. The founder confirms completion.
+This does not prove remote file access or grant a new account/permission scope.
+
+One exact read-only use_figma inventory retry is authorized as attempt36 /
+conservatively metered33, with one additional project allowance exception.
+The unchanged source SHA-256 is
+`18403ea31224110b4d18fa777010519199312c3daa2844dd426a3f23790f2167`.
+Its authorization/source/input/raw response are preserved under
+`output/research/b01-bounded-download-recovery-2026-10-12/correction1/execution-2026-10-12/cleanup-diagnosis-preparation/attempt36-2026-10-12/`.
+The call returned the Starter-plan MCP limit message with generic error code
+INVALID_ARGUMENT, not inventory data. Permission and exception are consumed;
+actual debit, balance and reset time remain unknown. No deletion, design write,
+screenshot, further retry or paid activation is authorized.
+
+One replacement independent reviewer may examine the frozen60-input B01
+result/diagnosis packet and frozen11-input private-record/transaction proposal
+packet, returning separate bounded verdicts and saving review receipts only.
+No application, Figma, account or canonical-document change follows from reviewer
+permission. No prior PASS is inherited; full B01/Phase1 acceptance remains separate.
+
+## D-090 — Built-in Figma agent within included credits
+
+**Date:** 2026-10-12
+**Status:** approved
+**Authority:** Founder states that the agent inside Figma web may be used to ask
+for changes and identifies unused included AI credits. This supersedes WS-X-10
+only for the scoped Hengshi design-reference workflow in the existing private file.
+
+The live editor shows500 monthly credits and150/150 daily credits remaining,
+resetting November1. These are provider AI credits, not MCP allowance or money.
+No paid activation, plan/seat change, connected app, plugin, publication or
+sensitive data transfer is authorized. Accepted design rules, batch/phase gates,
+independent review and protected evidence remain binding.
+
+Start with one read-only agent inspection of the selected temporary frame
+`HSD_UIR_B01_TEMP_BOUNDED_DOWNLOAD_V01`: its ID/dimensions and direct children,
+with explicit no-edit/no-delete/no-other-file instructions. This is a capability
+check, not approval to remove the sheet or adopt AI-generated changes. Preserve
+the actual result; do not equate AI assertions with a complete live node census.
+The MCP quota remains unchanged, and no additional MCP call is authorized.
+
+## D-091 — One temporary-sheet browser cleanup
+
+**Date:** 2026-10-12
+**Status:** approved
+**Authority:** Founder replied **“Approve this one temporary-sheet cleanup”**
+to the exact root38:3157 removal question after the corrected14-input plan passed
+independent review. Permission covers this root and its copied children only,
+fresh admission, original preservation checks and a new native editable export.
+No additional MCP call, paid service or other design/account change follows.
+
+The [actual result](output/research/figma-web-agent-2026-10-12/structural-diagnosis/execution/result-v1.json)
+records one native editor deletion after complete302-row equality and sole-target
+selection guards. The subsequent agent lookup returns null; remaining top-level
+IDs/types/order and eleven original source structures/dimensions match. Before
+and after native archives are preserved; the after archive passes ZIP CRC.
+These are bounded non-atomic agent/editor observations, not complete appearance
+preservation, a tested restore or wholeB01/Phase1 acceptance. The founder then
+replied **“Approve this result review”** for the existing reviewer's19-input
+read-only execution packet. Its [bounded execution-accounting PASS](output/research/figma-web-agent-2026-10-12/structural-diagnosis/execution/independent-review-cleanup-result-v1.json)
+records no actionable findings; it grants no new external action or acceptance.
+The earlier14-input reviewer approval and PASS remain plan-only.
+
+## D-092 — Explicitly opened Search/Directory overlay
+
+**Date:** 2026-10-12
+**Status:** approved
+**Authority:** Founder chose **“Overlay (Recommended)”** in question
+`call_LvllAUiaqo1eMyJtesdmFOxJ` after the corrected22-input interaction proposal
+passed independent review. This selects interaction direction only, not final
+appearance, construction, an external-write batch or B01/Phase1 acceptance.
+
+Search/Directory opens over the current screen only when deliberately requested.
+Preserve the current location, provide visible Close, return focus to the search
+invoker and keep the surrounding screen inactive while the modal is open. The
+complete semantic static directory remains available without the overlay or
+JavaScript. Existing content, Book access, privacy, stream and World consumer
+boundaries remain; no homepage gate, automatic popup or new public claim follows.
+
+The [corrected proposal](output/research/b01-interaction-definition-2026-10-12/correction1/INTERACTION_EVIDENCE_PROPOSAL.md)
+and [bounded review](output/research/b01-interaction-definition-2026-10-12/correction1/independent-review-interaction-proposal-v1.json)
+remain exact evidence with their frozen limits. Reconcile the selected direction
+into DF-01 and PRIM-004/template references, then prepare the exact source-bound
+prototype workflow under its applicable independent-review/external-write gates.
+
+## D-093 — Accept the D-092 source-binding successor
+
+**Date:** 2026-10-13
+**Status:** approved
+**Authority:** Founder answered **“Accept and apply this source-binding update”**
+to `call_c3b92269385b4959b9df5bf8eb024ba6`, accepting the prepared two-file plan.
+
+Adopt the [reviewed source-binding candidate](output/research/b01-overlay-source-rebinding-2026-10-12/column-authority-candidate-v1.json),
+SHA-256 `A8358BE02D6FBCA42A167B19395A4A2CD9B2FE318EAAEC3B78E8141F4244AACD`,
+as the current column-authority registry. The [24-input bounded review](output/research/b01-overlay-source-rebinding-2026-10-12/independent-review-source-binding-v1.json)
+has PASS; its [verifier-format successor receipt](output/research/b01-overlay-source-rebinding-2026-10-12/column-authority-successor-review-v1.json)
+has SHA-256 `3C9B59DE510EDB33C891C395C1BE1C4C7A4E796643B5BCFA5DC0C319226A270F`.
+Update only D-063's operational registry/review bindings to this accepted successor.
+
+The exact change rebinds41 quotes across33 existing records, three copied process
+witnesses and three source hashes to D-092's selected modal overlay. All declared
+stream/profile/allocation values and164 timing policies remain unchanged.
+Preserve the D-078 predecessor registry and receipt in their frozen evidence;
+predecessor registry SHA-256 is `85736B6DB6801FFDC529143085C20346193DC4904EEF01E09D2074524211F98A`.
+The unchanged verifier must still refuse stale, missing, contradictory or
+unreviewed bindings. This is definition/source integrity, not runtime, browser,
+accessibility, complete B01 or Phase1 acceptance. No Figma write, application,
+account, commit, push or deployment action is included.
+
+## D-094 — Expanded native four-stream qualification trial
+
+**Date:** 2026-10-14
+**Status:** approved
+**Authority:** Founder answered **“Approve the expanded trial”** to
+`call_8287e8371dcb4fbcad250ca42afcb01f` after correction1's bounded independent
+proposal PASS. The [exact recipe](output/research/b01-expanded-native-qualification-2026-10-14/qualification-plan-v1.json)
+and [review](output/research/b01-expanded-native-qualification-2026-10-14/review/correction1/independent-review-expanded-qualification-v1.json)
+retain their frozen scope; this approval does not change those reviewed bytes.
+
+Permit one labelled section in the existing private Hengshi v1 Figma file with
+three host sets, eighty private variants and thirty-six preview/comparison frames.
+Use only the reviewed single-action recipe for four-stream choice/Apply,
+Close/Escape, scroll and matched preserve/reset checks. Fresh source and owned
+copy checks must pass before each applicable operation; stop on drift. Preserve
+the original references and existing eight-state trial. No MCP calls, AI prompts,
+paid features, sharing changes, deletion, application changes, commits or pushes
+are included. Actual construction/qualification results need their own review;
+full B01, source restore/_EXIT and integrated Phase 1 acceptance remain separate.
+
+## D-095 — Founder clarification of Figma tool routing
+
+**Date:** 2026-10-15
+**Status:** approved
+**Authority:** The founder directly clarified: “my preference is mcp first when
+20 calls used then figma with computer use and while doing that if make ai can
+be used and is available for feature use that”. The earlier no-MCP/no-AI wording
+originated in the assistant's bounded trial question; it is not a blanket founder
+ban on those tools.
+
+Prefer MCP within the20-call allowance, batching related work. Once used,
+continue through computer use and use available included Figma AI features.
+Verified provider included-call availability controls routing; historical failed
+attempts/conservative accounting are not proof that the actual quota is consumed.
+The founder explicitly added “also the figma design agent”: use that agent for
+native canvas work and Make when suitable for interactive prototypes within the
+agreed deliverable. This supersedes
+D-094's native-only/MCP0/no-AI method restriction and separate per-call/method
+permission prompts within already-approved design scope. It does not grant
+additional MCP allowance, paid activation, publication, sharing/account changes,
+destructive cleanup, application development or expansion of the design scope.
+
+Check actual credits/capability and preserve original references and approved
+brand/requirements. Verify that the chosen tool produces the required native
+design artifacts or functional prototype; neither implies the other. Independent
+review, pilot/phase acceptance and commits/pushes remaining deferred are unchanged.
+Historical receipts and call counts remain evidence, not current tool bans.
+
+## D-096 — Bounded pip-owned temporary-file lifecycle
+
+**Date:** 2026-10-24
+**Status:** approved
+**Authority:** Founder selected “Approve this bounded temporary-file rule” for the
+reviewed future isolated Python compatibility trial. The exact source-backed
+[proposal](output/research/python315-environment-preparation-2026-10-17/preservation-amendment-proposal-v1.json)
+and [20-input independent PASS](output/research/python315-environment-preparation-2026-10-17/independent-review-environment-v1.json)
+are the scope of this exception.
+
+Permit only the invoked exact pip version's normal internal temporary-file
+lifecycle inside the verified, privately owned trial TEMP subtree. Retain the
+admitted runtime and source archives, selected hash-bound wheelhouses, both build
+outputs/source trees, reports, metadata inventories, logs, notices and failure
+evidence. No agent directory purge, existing-output deletion, retained-evidence
+overwrite or exception outside that owned subtree is approved. Do not claim every
+intermediate HTTP/PEP658 body is retained or that pip performs zero internal deletion.
+
+This narrowly supersedes the parent trial plan's blanket no-cleanup/preserve-every-
+transient-body requirement only for pip-owned temporary files. All other original
+limits and gates remain: complete reviewed acquisition/ownership/extraction,
+process/offline/resource controls, concrete build/full graph review, fresh disk
+admission and explicit execution approval. This decision starts no trial and
+permits no runtime/package installation, application/provider/account change,
+paid activation, production adoption, commit or push. Incorporate this exact
+exception in the eventual reviewed execution plan and execution permission.
+
+## D-097 — Incremental AI delivery, progress-based corrections and session handoffs
+
+**Date:** 2026-10-25
+**Authority:** The founder proposed branding, then the complete 2D website and
+platform, then 3D; after the delivery recommendation, explicitly wrote
+"agrred and approved. make the changes and provide me the next prompt".
+The founder will keep the discussion chat for decisions/prompts, start separate
+work chats and return their results before requesting the next assignment.
+
+1. Preserve the full agreed v1 scope and the fourteen definition subjects. Deliver
+   accepted-brand application/shared foundations -> complete semantic 2D website,
+   content/admin/publication -> complete 2D AI, handoff, booking and recovery ->
+   full connected 3D World -> integrated launch qualification. These are increments
+   of v1, not invented product releases or permission to omit the World.
+2. Supersede D-002's blanket whole-Phase-1 prerequisite and the old B01/B07/B09
+   scheduling dependencies where they prevent unrelated increments. Each assigned
+   increment needs its own adequate definition, approved visual reference where
+   applicable, contracts, relevant coupled compatibility and verification. Shared
+   content/publication, identity, identifiers and service boundaries remain binding.
+   Detailed geometry, controls, asset/streaming qualification and unrelated tool
+   graphs belong to their increments, not universal preconditions to 2D work.
+3. Replace hard two/three-cycle revision limits with progress-based correction.
+   Safe fixes within the assigned outcome continue without reapproval, including
+   formerly exhausted QA/design cycles and local skill validation loops. Repeated
+   failures require a changed diagnosis/approach; stop only affected work for a
+   genuine unresolved material choice, unavailable input or applicable action gate.
+   Do not silently accept failed tests or add scope to avoid closure.
+4. Apply the global one-task/one-outcome, framework-first, focused-test and concise
+   documentation pattern. Independent review is for coherent material design
+   batches, requested reviews, and money/security/external-system changes. Routine
+   corrections, links and status updates do not each require a review packet.
+5. Reuse accepted D-025/D-035/D-036/D-065 baselines and their amendments. The
+   fourteen-deliverable map remains scope coverage, not a single pre-build gate.
+   Frozen artifacts/reviews remain historical evidence; this decision changes
+   sequencing and correction authority, not their hashes or past verdicts.
+6. Complete only the next user-assigned package, present its actual result and
+   verification limits, then stop. No new chat, agent fan-out or active-goal change
+   follows from this decision. The next package is HSD-001 in TASKS.md.
+7. Git, migration, destructive, external-write, credential/provider, spending,
+   publication and deployment approvals remain separate. D-095 remains the Figma
+   routing rule inside approved scope. This decision neither accepts unseen designs
+   nor grants arbitrary new external writes. Commits/pushes remain deferred.
+
+This session changes governance and handoff records only. Subsequent execution
+starts from the founder's new work-chat prompt. Operational/launch evidence stays
+separate from code completion; TODO/DOING/DONE/BLOCKED remain the task statuses.
+The product/definition label stays v1 under D-069; this dated decision records the
+governance amendment without inventing a product release.

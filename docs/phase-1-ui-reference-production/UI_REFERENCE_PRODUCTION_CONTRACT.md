@@ -280,7 +280,7 @@ approved Figma file, only for an authorized batch:
 
 | ID | Permitted operation |
 |---|---|
-| `WS-P-01` | Create one Figma project and one design file dedicated to Hengshi Design UI reference production |
+| `WS-P-01` | Create one dedicated Design file in an approved existing project or explicitly approved Drafts under §3.5; creating a project requires its own explicit operation approval |
 | `WS-P-02` | Create, rename, and reorder pages within that file |
 | `WS-P-03` | Create, edit, and delete frames, components, component sets, variants, styles, and variables within that file |
 | `WS-P-04` | Create prototype links and interactions within that file |
@@ -330,14 +330,32 @@ explicit founder instruction. Evidence accumulates in the working tree.
   repository evidence directory. No agent credential or MCP is required. This path
   is available immediately on MA-025 approval.
 - **Path B — agent-performed.** A Figma MCP server or equivalent authorized API
-  path is configured in the canonical inventory, authenticated by a person through
-  an official flow, and **capability-tested read-only first** (list file, read node
-  inventory) before any write. The test result and its date are recorded in
-  `validation/capability-evidence.md`.
+  path is configured in the canonical inventory and authenticated by a person
+  through an official flow. For an existing file, perform an individually approved
+  read-only file/node capability check before any write and record its date/result.
 
-Under either path, the following must be recorded before `WS-P-01`: provider,
-account type, plan tier, date, the read-only capability result, and the
-`[MUST VERIFY AT GATE]` items in §7.2. **Capability must never be assumed.**
+  **First-file bootstrap exception — requires explicit founder acceptance.** If
+  this new project has no file, record the authenticated identity, selected plan
+  and account type/tier first. The founder may then separately authorize one
+  create_new_file call for one empty Design file named `Hengshi Design v1 — UI
+  References`, in an approved existing project or, only if explicitly selected,
+  the authenticated account's Drafts. Creating the empty file does not establish
+  file/canvas capability or release design work. Obtain the next immediate call
+  approval for a read-only file/node check of that returned target. Verify its
+  private access/sharing state and a supported named-version/full-editable-archive
+  path before writing any design or project content. Retain a dated empty-file
+  creation receipt and its single target; do not retry an uncertain creation by
+  creating another file. Inspect/reconcile the first outcome under fresh approval.
+  If privacy, inventory or archive support cannot be verified, stop design work.
+  Neither bootstrap acceptance nor file creation accepts/releases the B01 pilot.
+
+Under either path record provider, account type, plan tier, date, read-only
+capability results and the `[MUST VERIFY AT GATE]` items in §7.2. Under the
+first-file exception, identify file/archiving items as unverified until tested;
+do not label capability complete from whoami. Every external call, including
+bootstrap and failed calls, retains CB-06/CB-07 approval and ledger requirements.
+No project creation, sharing change, seat/billing change or later-batch release
+follows from this exception. **Capability must never be assumed.**
 
 ---
 
@@ -597,9 +615,11 @@ provider-independent copy of all accepted evidence.
 
 ### 9.2 Per-batch checkpoints
 
-1. **Pre-write checkpoint.** Before the first write of a batch: create a named
-   Figma version `HSD_UIR_<BATCH>_PRE`, export the file archive, and record its
-   SHA-256 in the batch manifest.
+1. **Pre-write checkpoint.** Before the first design/content write of a batch:
+   create a named Figma version `HSD_UIR_<BATCH>_PRE`, export the full editable
+   file archive, and record its SHA-256 in the batch manifest. The individually
+   authorized empty first-file bootstrap in §3.5 precedes this checkpoint; it
+   permits no design/content write and cannot substitute for the _PRE archive.
 2. **Post-exit checkpoint.** After batch exit: create a named Figma version
    `HSD_UIR_<BATCH>_EXIT`, export the archive, export all evidence, hash
    everything, and freeze the manifest.
@@ -662,7 +682,10 @@ means:
 3. Zero spend is confirmed; free tier only; any paid step returns to MA-010.
 4. B01 runs as a gated pilot; B02–B08 are released only by B01 pilot acceptance.
 5. B07 and B09 remain unauthorized and are deferred to MA-026.
-6. No write occurs until §3.5 capability enablement is completed and recorded.
+6. No design/content write occurs until §3.5 capability enablement is completed
+   and recorded. Only the separately founder-approved empty first-file bootstrap
+   specified in §3.5 may precede file/archiving verification; it grants no pilot
+   execution, design/content write or waiver of private inventory and _PRE gates.
 
 ### 11.2 Acceptance of an individual batch
 
@@ -711,3 +734,66 @@ not:
   publication, Git operations, deployment, complete Phase 1 acceptance, or launch.
 
 MA-013 compatibility acceptance remains a separate, unaffected gate.
+
+
+### D-059 validator encoding and modes
+
+Default `-ValidationMode Definition` reports outstanding evidence and never
+certifies an exit. `BatchExit` requires `-BatchId Bxx` and repository-relative
+`-ExitProofPath`. Proof fields are `batch_manifest_path` / `batch_manifest_sha256`,
+`design_review_path` / `design_review_sha256`, `accessibility_review_path` /
+`accessibility_review_sha256`, `pre_archive_path` / `pre_archive_sha256`, and
+`exit_archive_path` / `exit_archive_sha256`. Artifact proof is not approval.
+
+Record paths are repository-relative. Manifest `file_relpath` values are
+relative to the enclosing `evidence/<BATCH>/` directory. Absolute paths,
+traversal, links and duplicate export paths are rejected. The raw CSV SHA-256
+pins its metadata; `manifest.sha256` separately stores the section 5.3 D-037
+export-inventory digest. Both must verify.
+
+Independent review metadata consists of unique plain lines: `batch_id`,
+`manifest_sha256` (raw CSV hash), `result: PASS`, `open_critical: 0`,
+`open_high: 0`, `open_medium: 0`, `reviewer_id`, and `producer_id`.
+Both distinct reviewers must differ from the common producer.
+
+A unique Approved founder B01 authorization decision carries
+`pilot_authorization: B01`, `pilot_contract_reference`, and
+`pilot_entry_conditions_reference` (repository-relative files). The plan must
+also carry `authorized_pilot`. Later founder acceptance metadata is
+`pilot_batch: B01`, `pilot_manifest_path`, `pilot_manifest_sha256`, and
+`released_batches: B02;B03;B04;B05;B06;B08`, resolving the accepted
+`validation/pilot-release.json` protocol. D-059 itself is not pilot acceptance.
+Other prerequisite acceptance decisions carry `batch_exit: Bxx` and the ten
+proof fields above. Validators create no approval records. B07/B09 stay held.
+
+Machine coverage applies identically to the target manifest and accepted pilot or
+prerequisite manifests: required template/type and route-instance sets, N-04
+baseline coordinates and stream-critical frames, every assigned state/viewport/
+mode value once, complete viewport-frame minima, and applicable profile/primitive
+bindings. This does not multiply a viewport/state/mode Cartesian product. The
+hashed independent reports remain required for narrative focused-region details,
+interaction options, browser/time-limit truth, content stress and other
+qualitative evidence that is not represented as structured tokens.
+
+
+### D-060 boundary evidence encoding
+
+`boundary-evidence-allocation.csv` in the design package is the allocation-only
+registry: four rows, eight B07 destination triples, twelve directed cases.
+These identities never enter shared profile required/distinct values. B01 names
+B07 deferrals; same-shell evidence cannot discharge boundary proof. B07 remains
+ineligible under MA-025 and held under MA-026.
+
+Each triple requires a distinct FRAME and ANNOTATION evidence row. The pinned
+annotation export is UTF-8 JSON with a `cases` array, one case per assigned
+origin/destination pair. This supplements human-inspected visual evidence and
+cannot prove runtime timing or assistive-technology conformance. Case fields:
+`origin_stream`, `destination_stream`, `visible_destination_focus` (true),
+`arrival_location`, `announcement`, and `ordered_steps` exactly:
+`remove_outgoing_shell`, `add_incoming_empty_status_restore_process`,
+`focus_visible_stream_control`, `announce_stream_location`, then `no_canvas`
+for S-SEMANTIC or `add_canvas_after_announcement` for a 3D destination.
+Ancestor cases additionally require `requested_location`, `mapping_failure_reason`,
+`chosen_ancestor` matching arrival, and actual D-057 `substitution_wording`.
+All location/copy facts await authorized production references; independent
+review verifies the visual focus, truthful mapping and approved wording.

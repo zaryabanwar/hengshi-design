@@ -1,0 +1,26 @@
+{
+  "receipt_identities": {
+    "docs/phase-1-compatibility/reviews/frontend-supply-chain-v1-2026-10-06.md": "30f77b62b080c1ee7a6ee64479c50be59d3c249384b101b0d7362b3db071bbb6",
+    "docs/phase-1-architecture/contracts/reviews/booking-creation-request-v1-2026-10-06.md": "c8e65a4f4d9c6a5130c28b3b573e1fe882c3864d3d98a06efdc6bb2121916914"
+  },
+  "protected_checked": 78,
+  "intentional_protected_changes": [
+    "PROJECT_STATE.yaml"
+  ],
+  "state_lines": 50,
+  "slices": [
+    [
+      "compatibility README",
+      "compatibility refresh"
+    ],
+    [
+      "private proof",
+      "interface catalogue"
+    ],
+    [
+      "project state",
+      "reconciliation map"
+    ]
+  ],
+  "scope": "Later reference integration only; preserved snapshots and app/model bytes unchanged; no selection, adoption or full Phase1 acceptance."
+}

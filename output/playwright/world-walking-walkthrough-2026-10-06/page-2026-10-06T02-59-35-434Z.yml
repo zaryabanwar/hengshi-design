@@ -1,0 +1,440 @@
+- generic [active] [ref=f1e1]:
+  - link "Skip to the definition" [ref=f1e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f1e3]:
+    - generic [ref=f1e4]: Hengshi Design v1 · Founder review · 5 October 2026
+    - heading "One company. Two ways to explore it." [level=1] [ref=f1e5]: One company.Two ways to explore it.
+    - paragraph [ref=f1e6]: A complete, readable company website and a visitor-entered World share the same approved information, evidence and discovery-booking journey. This board explains the intended system; it is a review document, not the production homepage.
+    - paragraph [ref=f1e7]: "Accepted decisions: D-025, D-035, D-036 and later UX amendments; D-064 movement, D-065 architecture, D-066 original modular HQ, D-067 nature-integrated direction; D-068 deferred cloud planning, D-069 v1/latest compatible, D-070 Europe-first/company contacts; D-071 campus layout basis. Detailed contracts, appearance and production evidence remain proposed."
+    - navigation "Definition sections" [ref=f1e8]:
+      - link "Visitor journey" [ref=f1e9] [cursor=pointer]:
+        - /url: "#journey"
+      - link "Walking and loading" [ref=f1e10] [cursor=pointer]:
+        - /url: "#walking"
+      - link "Optional sound" [ref=f1e11] [cursor=pointer]:
+        - /url: "#optional-sound"
+      - link "Campus direction" [ref=f1e12] [cursor=pointer]:
+        - /url: "#campus"
+      - link "Departments" [ref=f1e13] [cursor=pointer]:
+        - /url: "#departments"
+      - link "Staff and consultations" [ref=f1e14] [cursor=pointer]:
+        - /url: "#staff"
+      - link "System boundaries" [ref=f1e15] [cursor=pointer]:
+        - /url: "#system"
+      - link "One publication" [ref=f1e16] [cursor=pointer]:
+        - /url: "#publication-flow"
+      - link "How we build it" [ref=f1e17] [cursor=pointer]:
+        - /url: "#engineering"
+      - link "Feature definitions" [ref=f1e18] [cursor=pointer]:
+        - /url: "#features"
+      - link "Review checkpoint" [ref=f1e19] [cursor=pointer]:
+        - /url: "#checkpoint"
+  - main [ref=f1e20]:
+    - generic [ref=f1e21]:
+      - generic [ref=f1e22]: The first visit
+      - heading "The website opens first." [level=2] [ref=f1e23]
+      - list [ref=f1e24]:
+        - listitem [ref=f1e25]:
+          - strong [ref=f1e26]: Browse the company
+          - text: Read services, approved evidence and how to book. No 3D or sound is required.
+        - listitem [ref=f1e27]:
+          - strong [ref=f1e28]: Choose Enter World
+          - text: An explicit action enters the immersive journey. Selecting a graphics stream alone does not enter the canvas.
+        - listitem [ref=f1e29]:
+          - strong [ref=f1e30]: Use the supported stream
+          - text: Automatic capability selection respects the ceiling and accessibility settings. A visitor can explicitly apply an allowed simpler selection.
+        - listitem [ref=f1e31]:
+          - strong [ref=f1e32]: Explore or return
+          - text: Move with mouse/touch, choose destinations, read department boards and ask for help. Equivalent semantic routes remain available.
+      - generic [ref=f1e33]:
+        - article [ref=f1e34]:
+          - generic [ref=f1e35]: Accepted
+          - heading "Four peer streams" [level=3] [ref=f1e36]
+          - paragraph [ref=f1e37]: Detailed 3D, Balanced 3D, Simplified 3D and Quick Access share core information and actions. Quick Access needs no WebGL.
+        - article [ref=f1e38]:
+          - generic [ref=f1e39]: Accepted scope
+          - heading "Movement and streaming" [level=3] [ref=f1e40]
+          - paragraph [ref=f1e41]: Mouse/touch free steering and walking, alongside destination navigation. Load nearby areas and retain a buffer for reversals. WASD was not selected.
+        - article [ref=f1e42]:
+          - generic [ref=f1e43]: Detailed mechanics proposed
+          - heading "Control and comfort" [level=3] [ref=f1e44]
+          - paragraph [ref=f1e45]: Final gestures, collision/loading limits and screens need acceptance. Sound begins off; opt-in ambience follows outdoor and department context, with persistent mute/volume.
+      - paragraph [ref=f1e46]: The mode control is also available on the initial homepage. Existing approved stream precedence and Apply behaviour remain binding; this sequence does not remove those controls or automatically select a new stream during movement.
+      - group [ref=f1e47]:
+        - generic "How SEO works for the website and the World" [ref=f1e48] [cursor=pointer]
+      - group [ref=f1e49]:
+        - generic "How sound follows the visitor without taking over" [ref=f1e50] [cursor=pointer]
+    - generic [ref=f1e51]:
+      - generic [ref=f1e52]: Accepted movement scope · proposed control details
+      - heading "Walk through the place, rather than orbit its centre." [level=2] [ref=f1e53]
+      - paragraph [ref=f1e54]: "The production experience puts you at eye level on connected ground. You can look around, steer freely, or choose a destination. The current campus viewer is an inspection model: its orbit and zoom controls do not demonstrate this walking experience."
+      - generic [ref=f1e55]:
+        - article [ref=f1e56]:
+          - generic [ref=f1e57]: Desktop proposal
+          - 'heading "Mouse: look, move and stop" [level=3] [ref=f1e58]'
+          - paragraph [ref=f1e59]: Drag empty scene space to look around. An explicit Move action starts travel in your chosen direction; turning your view steers that travel along the ground. Stop remains available. Looking up does not make you fly.
+          - paragraph [ref=f1e60]: Click an eligible floor point for a safe directed route. Clicking a department board opens its information instead. Dragging does not accidentally click a destination.
+        - article [ref=f1e61]:
+          - generic [ref=f1e62]: Touch proposal
+          - 'heading "Touch: the same freedom" [level=3] [ref=f1e63]'
+          - paragraph [ref=f1e64]: A scene drag changes the view. An optional thumb pad can move you while engaged, stopping on release or cancellation. Its exact gesture and cancellation design still needs the approved screen and accessibility inspection.
+          - paragraph [ref=f1e65]: Move, Stop, directions, Look and destination actions also offer a one-finger option without dragging or using two fingers together. Keyboard-accessible actions remain available; WASD is not required.
+      - figure "This is an explanatory diagram, not a new building proposal or model revision. The visitor camera stays upright; nearby architecture, layered terrain and sky give depth in every allowed direction. The production landscape must avoid exposed island edges and a repeating mountain wall. The accepted campus composition is retained." [ref=f1e66]:
+        - 'img "Eye-level walking within a landscape with depth Conceptual diagram, not campus geometry: a person stays upright on a connected path, with a reception and department in the middle distance and layered terrain and sky beyond. Ground behind and beside the visitor remains supported while the next area is prepared." [ref=f1e67]'
+      - heading "Load nearby areas without losing the ground beneath you." [level=3] [ref=f1e80]
+      - list [ref=f1e81]:
+        - listitem [ref=f1e82]:
+          - strong [ref=f1e83]: Keep the current ground
+          - text: The place supporting you and its collision data stay ready and protected. A visible building alone does not make its floor safe to enter.
+        - listitem [ref=f1e84]:
+          - strong [ref=f1e85]: Prepare what comes next
+          - text: Load eligible nearby areas within the selected stream's limits. A turn changes priorities; it does not require downloading the whole landscape.
+        - listitem [ref=f1e86]:
+          - strong [ref=f1e87]: Handle a sudden reversal
+          - text: Retain the required adjacent ground and a recent-area buffer. If the return path is not ready, stop at the last safe position while it prepares.
+        - listitem [ref=f1e88]:
+          - strong [ref=f1e89]: Hold safely and recover
+          - text: At an unready edge, show truthful waiting/retry and equivalent website access. Do not walk into missing ground, jump to another room or silently change graphics stream.
+      - generic [ref=f1e90]:
+        - strong [ref=f1e91]: Reading a board stops travel.
+        - text: Opening information, help or booking clears movement. So do input cancellation, leaving the World focus area, a hidden tab, graphics loss or Exit. Closing a panel or returning to the tab never restarts old travel automatically. Quick Access keeps the same core information and actions without 3D.
+      - group [ref=f1e92]:
+        - generic "Engineering targets and how we will verify them" [ref=f1e93] [cursor=pointer]
+      - paragraph [ref=f1e94]: Scope and decisions are accepted; this detailed control/camera and measurement profile is a reviewed proposal awaiting integrated acceptance. This board has no walking engine or functioning movement controls. Approved production screens, exact thumb-pad mapping, authored geometry/rights, complete compatible technologies, measured device results and final visual approval remain required.
+      - generic [ref=f1e95]:
+        - link "Controlling movement and camera proposal" [ref=f1e96] [cursor=pointer]:
+          - /url: ../phase-1-3d/WORLD_EXPERIENCE.md
+        - link "Measurement and loading targets" [ref=f1e97] [cursor=pointer]:
+          - /url: ../phase-1-3d/WORLD_MEASUREMENT_PROFILE.md
+        - link "Bounded traversal definition review" [ref=f1e98] [cursor=pointer]:
+          - /url: ../phase-1-3d/reviews/world-traversal-profile-v1-2026-10-06.md
+        - link "Measurement review and correction" [ref=f1e99] [cursor=pointer]:
+          - /url: ../phase-1-3d/reviews/world-measurement-profile-v1-2026-10-06.md
+    - generic [ref=f1e100]:
+      - generic [ref=f1e101]: Original modular headquarters
+      - heading "Technology within a thriving landscape." [level=2] [ref=f1e102]
+      - paragraph [ref=f1e103]: A dominant central reception, five distinct organic service wings, linked terraces and gardens, a river valley and distant layered terrain. The landscape expresses a design vision of advanced living in harmony with nature.
+      - figure "The founder-selected concept direction. These three artistic views are reference material, not a measured floor plan, environmental certification or completed 3D asset." [ref=f1e104]:
+        - 'img "Selected nature-integrated concept with three views: an organic reception and department campus in a river valley, its arrival walkway, and a warm department with an information board and consultation seating." [ref=f1e105]'
+      - generic [ref=f1e107]:
+        - article [ref=f1e108]:
+          - heading "What carries into the build" [level=3] [ref=f1e109]
+          - paragraph [ref=f1e110]: The founder accepts the latest model's central reception, five-wing arrangement and connected landscape as the layout basis under D-071. Reusable building, tree and terrain parts support variation; authored collision-ready areas and nearby loading remain to be built.
+        - article [ref=f1e111]:
+          - heading "What still needs proof" [level=3] [ref=f1e112]
+          - paragraph [ref=f1e113]: Final appearance, authored collision/thresholds, realistic materials, department interactions and measured loading budgets. The latest study has three views from one export, graded terrain and visible crossings; its sampled geometry and viewer behavior have bounded independent review. Its composition is the accepted layout basis; it remains a low-detail study without safe-walking or production acceptance.
+          - link "Inspect the latest isolated 3D study" [ref=f1e114] [cursor=pointer]:
+            - /url: ../../artifacts/nature-campus-layout-study/index.html
+          - paragraph [ref=f1e115]:
+            - link "Review the latest layout, three views and remaining spatial gaps" [ref=f1e116] [cursor=pointer]:
+              - /url: ../phase-1-3d/spatial-storyboard.html#layout-study
+          - paragraph [ref=f1e117]: Orbit/zoom preview only. Free walking, streaming, sound and live staff are not implemented there. The Atlanta asset remains protected separately.
+    - generic [ref=f1e118]:
+      - generic [ref=f1e119]: Five wings · ten service categories
+      - heading "Each department helps a visitor decide." [level=2] [ref=f1e120]
+      - generic [ref=f1e121]:
+        - article [ref=f1e122]:
+          - heading "Strategy & Transformation" [level=3] [ref=f1e123]
+          - paragraph [ref=f1e124]: Strategy & Architecture.
+        - article [ref=f1e125]:
+          - heading "Digital Products & Growth" [level=3] [ref=f1e126]
+          - paragraph [ref=f1e127]: Platform & Product Engineering; Product Design & Experience Engineering; Commerce, Content & Growth Platforms.
+        - article [ref=f1e128]:
+          - heading "AI, Data & Automation" [level=3] [ref=f1e129]
+          - paragraph [ref=f1e130]: AI Systems & Agentic Automation; Data Platforms & Analytics.
+        - article [ref=f1e131]:
+          - heading "Immersive & Creative" [level=3] [ref=f1e132]
+          - paragraph [ref=f1e133]: Spatial Computing & Immersive Platforms; Creative & Visual Design Services.
+        - article [ref=f1e134]:
+          - heading "Cloud, Reliability & Trust" [level=3] [ref=f1e135]
+          - paragraph [ref=f1e136]: Cloud, DevOps & Platform Reliability; Security, Privacy & Trust Engineering.
+        - article [ref=f1e137]:
+          - generic [ref=f1e138]: Interaction form still proposed
+          - heading "Information → guidance → conversation" [level=3] [ref=f1e139]
+          - paragraph [ref=f1e140]: Read approved information and evidence boards. Ask clearly identified AI for sourced guidance. Reach a human only when explicit current availability is verified; otherwise use approved Contact/Book.
+      - paragraph [ref=f1e141]: Rooms reserve the service structure. They do not prove every service, expert or live staff member is ready for launch. Held content remains held; fictional examples never become client work.
+    - generic [ref=f1e142]:
+      - generic [ref=f1e143]: How the team supports the visitor
+      - heading "A consultation has a real owner." [level=2] [ref=f1e144]
+      - paragraph [ref=f1e145]: The department board offers approved information, AI guidance, human help and direct booking. The proposed staff console handles the work behind those choices. These diagrams explain the system; they show no live staff or functioning console.
+      - list [ref=f1e146]:
+        - listitem [ref=f1e147]:
+          - strong [ref=f1e148]: Staff declares availability
+          - text: An authorized team member explicitly turns availability on for an approved department. An expired, withdrawn or unknown setting is unavailable.
+        - listitem [ref=f1e149]:
+          - strong [ref=f1e150]: Visitor chooses human help
+          - text: The visitor consents to the permitted context transfer. Public availability offers help; it does not reserve a person or promise a response time.
+        - listitem [ref=f1e151]:
+          - strong [ref=f1e152]: Operator accepts the request
+          - text: The Hengshi console checks current consent, eligibility and assignment. One guarded acceptance creates one conversation owner.
+        - listitem [ref=f1e153]:
+          - strong [ref=f1e154]: Continue the conversation
+          - text: Governed text stays in the console. Voice/video needs separate opt-in. Direct Book and verified Contact remain recovery choices.
+      - generic [ref=f1e155]:
+        - article [ref=f1e156]:
+          - generic [ref=f1e157]: Reconciled data proposal
+          - heading "Intent and presence are different" [level=3] [ref=f1e158]
+          - paragraph [ref=f1e159]: PostgreSQL records the authorized declaration. Redis holds its expiring presence view. A stored declaration alone cannot mean someone is online; stale signals, cache loss or revocation cannot keep the department available.
+        - article [ref=f1e160]:
+          - generic [ref=f1e161]: Accepted boundary
+          - heading "Teams alerts the team" [level=3] [ref=f1e162]
+          - paragraph [ref=f1e163]: Teams can suppress false availability and carry approved alerts. It does not create availability or own the visitor conversation. Alert delivery is separate from request acceptance and staff response.
+        - article [ref=f1e164]:
+          - generic [ref=f1e165]: Accepted workflow
+          - heading "Booking has its own truth" [level=3] [ref=f1e166]
+          - paragraph [ref=f1e167]: A visitor can book without chat or human handoff. Qualification, verified email and an eligible slot lead to a pending submission. Confirmation requires matching provider and local evidence; an alert or timeout cannot invent it.
+        - article [ref=f1e168]:
+          - generic [ref=f1e169]: Exact policies held
+          - heading "Exceptions remain visible" [level=3] [ref=f1e170]
+          - paragraph [ref=f1e171]: Operators inspect assignment, alert and booking exceptions within their approved scope. Pending stays pending until reconciled. Staff identities, delegates, expiry intervals and private-record retention still need their reviewed definitions.
+      - group [ref=f1e172]:
+        - 'generic "Staff sign-in: who verifies identity, permissions and logout?" [ref=f1e173] [cursor=pointer]'
+      - group [ref=f1e174]:
+        - generic "What happens when a team member turns live help on or off?" [ref=f1e175] [cursor=pointer]
+      - group [ref=f1e176]:
+        - generic "What happens after a visitor asks to speak with the team?" [ref=f1e177] [cursor=pointer]
+      - group [ref=f1e178]:
+        - generic "Who can edit, review and approve company information?" [ref=f1e179] [cursor=pointer]
+      - paragraph [ref=f1e180]: When current availability cannot be verified, show unavailable and retain the usable information, AI where eligible, and Contact/Book routes. No avatars, desks or presence indicators may imply a team member is waiting when the system has no verified basis.
+      - paragraph [ref=f1e181]: The availability split, additional interfaces and field/permission definitions passed the bounded independent documentation review at its listed hashes; integrated acceptance remains pending. Exact schemas, operational grants, expiry and legal retention remain held. No staff account, mailbox owner or new operational permission is assigned here.
+    - generic [ref=f1e182]:
+      - generic [ref=f1e183]: Accepted architecture boundaries
+      - heading "Shared truth, separate responsibilities." [level=2] [ref=f1e184]
+      - generic [ref=f1e185]:
+        - article [ref=f1e186]:
+          - heading "Web application" [level=3] [ref=f1e187]
+          - paragraph [ref=f1e188]: Semantic pages, World and staff screens. Displays approved content and server-provided states; cannot approve publication or confirm a booking itself.
+          - paragraph [ref=f1e189]: React · TypeScript · Vite · Tailwind · React Three Fiber / WebGL
+        - article [ref=f1e190]:
+          - heading "Modular API" [level=3] [ref=f1e191]
+          - paragraph [ref=f1e192]: Enforces staff roles, review/publication, consent, AI routing, booking and privacy lifecycle. External writes need durable intent and verified outcomes.
+          - paragraph [ref=f1e193]: FastAPI · SQLAlchemy · Alembic
+        - article [ref=f1e194]:
+          - heading "PostgreSQL truth" [level=3] [ref=f1e195]
+          - paragraph [ref=f1e196]: Durable approved state. Immutable release artifacts feed HTML, metadata, sitemap, AI knowledge and 3D panels. Redis and search remain ephemeral or rebuildable.
+          - paragraph [ref=f1e197]: Native local servers; Docker not required · Hosting selection deferred
+      - group [ref=f1e198]:
+        - generic "Market, company details and contact channels" [ref=f1e199] [cursor=pointer]
+      - group [ref=f1e200]:
+        - generic "Technology and deferred hosting decisions" [ref=f1e201] [cursor=pointer]
+      - group [ref=f1e202]:
+        - generic "What SEO covers inside this project" [ref=f1e203] [cursor=pointer]
+      - group [ref=f1e204]:
+        - generic "What privacy and recovery must guarantee" [ref=f1e205] [cursor=pointer]
+      - group [ref=f1e206]:
+        - generic "How one publication stays consistent across the website and World" [ref=f1e207] [cursor=pointer]
+      - group [ref=f1e208]:
+        - generic "How we protect pages, content and World resources" [ref=f1e209] [cursor=pointer]
+      - group [ref=f1e210]:
+        - generic "How visitors keep access without an account" [ref=f1e211] [cursor=pointer]
+      - group [ref=f1e212]:
+        - generic "How publication and live availability stay trustworthy" [ref=f1e213] [cursor=pointer]
+    - generic [ref=f1e214]:
+      - generic [ref=f1e215]: Engineering proposal · inside the accepted architecture
+      - heading "From your vision to a complete visitor journey." [level=2] [ref=f1e216]
+      - paragraph [ref=f1e217]: You provide the vision. We research the technical choices, recommend the solution, explain consequential tradeoffs and build reviewable results. The accepted reception and five-wing composition carries forward into a connected, eye-level experience with coherent surroundings in every permitted viewing direction.
+      - generic [ref=f1e218]:
+        - article [ref=f1e219]:
+          - generic [ref=f1e220]: Accepted technology family
+          - heading "Render the campus" [level=3] [ref=f1e221]
+          - paragraph [ref=f1e222]: React Three Fiber and Three.js with WebGL connect the campus to the website. Blender supplies editable building and landscape assets, exported separately for efficient delivery.
+        - article [ref=f1e223]:
+          - generic [ref=f1e224]: Recommended evaluation
+          - heading "Walk and look safely" [level=3] [ref=f1e225]
+          - paragraph [ref=f1e226]: Mouse/touch input drives an upright camera and a collision-aware mover. Evaluate Rapier's character controller. Clicked destinations use safe connected routes; evaluate an authored route graph before adding navigation-mesh tooling.
+        - article [ref=f1e227]:
+          - generic [ref=f1e228]: Engineering proposal
+          - heading "Load around the visitor" [level=3] [ref=f1e229]
+          - paragraph [ref=f1e230]: A connected-area scheduler loads current and nearby spaces and retains recent ground for turn-backs. Download, decoding, rendering resources and collision readiness are separate stages. Unready ground cannot be crossed.
+        - article [ref=f1e231]:
+          - generic [ref=f1e232]: Appearance work remaining
+          - heading "Create a believable place" [level=3] [ref=f1e233]
+          - paragraph [ref=f1e234]: Near ground, surrounding buildings and vegetation, distant terrain and sky form one landscape. No exposed island edge or mountain wall on visitor routes. Inspector orbit and target-centred zoom are replaced by the designed walking controls in production.
+        - article [ref=f1e235]:
+          - generic [ref=f1e236]: Accepted authority boundary
+          - heading "Connect real information" [level=3] [ref=f1e237]
+          - paragraph [ref=f1e238]: Department boards, AI guidance, current staff availability and booking use the same eligible content and authoritative API as the semantic website. A decorative person or downloaded room cannot claim live staff or a confirmed booking.
+        - article [ref=f1e239]:
+          - generic [ref=f1e240]: Measured selection required
+          - heading "Control cost on the device" [level=3] [ref=f1e241]
+          - paragraph [ref=f1e242]: Spatial batches, reusable assets, detail variants and evaluated compression reduce work. Track shared resource ownership and release unused memory. Choose exact settings and libraries through compatible stable versions and actual-device measurements.
+      - group [ref=f1e243]:
+        - generic "What happens when a visitor walks or turns back" [ref=f1e244] [cursor=pointer]
+      - group [ref=f1e245]:
+        - generic "How the searchable website and World stay in step" [ref=f1e246] [cursor=pointer]
+      - heading "Recommended build sequence after Phase 1 acceptance" [level=3] [ref=f1e247]
+      - list [ref=f1e248]:
+        - listitem [ref=f1e249]:
+          - strong [ref=f1e250]: Prove the complete first journey
+          - text: Arrival → reception → first eligible department → information/help → booking, with semantic equivalents.
+        - listitem [ref=f1e251]:
+          - strong [ref=f1e252]: Prove movement and loading
+          - text: Check walls, entrances, crossings, reversals, missing assets, late results, Exit and safe recovery.
+        - listitem [ref=f1e253]:
+          - strong [ref=f1e254]: Bring the concept to life
+          - text: Compare all-around views; refine materials, vegetation, lighting and visitor-enabled sound within measured device budgets.
+        - listitem [ref=f1e255]:
+          - strong [ref=f1e256]: Expand with evidence
+          - text: Review the representative result, then build the remaining wings in their accepted opening order.
+      - paragraph [ref=f1e257]:
+        - text: This is a researched recommendation, not completed runtime work. The internal inventory accounts for the study's 117 mesh nodes in 15 authoring families; no production chunks were generated. The subsequent
+        - link "independent asset engineering review" [ref=f1e258] [cursor=pointer]:
+          - /url: ../phase-1-3d/reviews/campus-asset-engineering-v1-2026-10-05.md
+        - text: passes its exact definition and inventory inputs, including source/geometry accounting. Appearance, collision, rights, physical-device budgets and runtime remain unproven. Proposed additional libraries remain candidates. Full Phase 1 acceptance, reviewed production references, detailed budgets and implementation authorization remain required.
+      - generic [ref=f1e259]:
+        - link "Detailed engineering recommendation and primary sources" [ref=f1e260] [cursor=pointer]:
+          - /url: ../phase-1-3d/CAMPUS_ASSET_BUILD_SPEC.md#researched-engineering-recommendation
+        - link "Internal asset inventory" [ref=f1e261] [cursor=pointer]:
+          - /url: ../phase-1-3d/asset-manifest.json
+        - link "How this fits the consolidated definition" [ref=f1e262] [cursor=pointer]:
+          - /url: 04-reconciliation-map.md#engineering-responsibility-and-the-client-brief
+    - generic [ref=f1e263]:
+      - generic [ref=f1e264]: From the system to bounded specifications
+      - heading "Four feature drafts carry the same v1 definition." [level=2] [ref=f1e265]
+      - paragraph [ref=f1e266]: Each specification references the accepted scope and canonical contracts. Security, World and content drafts have bounded independent consistency review. QA review requires a browser-release wording correction; the prepared repair awaits a revision-limit exception. Exact held inputs and founder acceptance remain. None has an executable implementation plan or runtime test result.
+      - generic [ref=f1e267]:
+        - article [ref=f1e268]:
+          - generic [ref=f1e269]: DOING · Reviewed draft
+          - heading "World and connected campus" [level=3] [ref=f1e270]
+          - paragraph [ref=f1e271]: Explicit entry, four equivalent streams, mouse/touch movement, destinations, reversal-ready loading and optional sound. One coherent campus must support the same approved information and booking as the website.
+          - paragraph [ref=f1e272]: "Still held: final controls and screens, safe connected geometry, production appearance, rights and measured device budgets."
+          - generic [ref=f1e273]:
+            - link "World specification" [ref=f1e274] [cursor=pointer]:
+              - /url: ../../specs/003-3d-experience-completion/spec.md
+            - link "World producer checklist" [ref=f1e275] [cursor=pointer]:
+              - /url: ../../specs/003-3d-experience-completion/checklists/requirements.md
+            - link "World definition review and limits" [ref=f1e276] [cursor=pointer]:
+              - /url: ../../specs/003-3d-experience-completion/reviews/world-feature-v1-2026-10-04.md
+        - article [ref=f1e277]:
+          - generic [ref=f1e278]: DOING · Review correction held
+          - heading "Behavior evidence and recovery" [level=3] [ref=f1e279]
+          - paragraph [ref=f1e280]: Verify actual website, API, database, AI, booking, handoff and World behavior. Include denial, failure, concurrency, deletion and restore cases where the feature needs them.
+          - paragraph [ref=f1e281]: "Review correction held: restore the approved browser release coverage. Exact measurement and recovery inputs, authorized isolated test scope and operational policies remain held. Documentation checks cannot prove application behavior."
+          - generic [ref=f1e282]:
+            - link "QA specification" [ref=f1e283] [cursor=pointer]:
+              - /url: ../../specs/002-testing-and-monitoring/spec.md
+            - link "QA producer checklist" [ref=f1e284] [cursor=pointer]:
+              - /url: ../../specs/002-testing-and-monitoring/checklists/requirements.md
+            - link "Current QA review and finding" [ref=f1e285] [cursor=pointer]:
+              - /url: ../../specs/002-testing-and-monitoring/reviews/qa-feature-v1-2026-10-04.md
+            - link "Exact proposed browser correction" [ref=f1e286] [cursor=pointer]:
+              - /url: ../../output/research/qa-browser-coverage-repair-2026-10-04.patch
+        - article [ref=f1e287]:
+          - generic [ref=f1e288]: DOING · Reviewed draft
+          - heading "Governed content and semantic SEO" [level=3] [ref=f1e289]
+          - paragraph [ref=f1e290]: Preserve five wings and ten service categories, verified company facts and clearly separated Work/Demos. Initial HTML, metadata, visible facts and all approved release representations must agree.
+          - paragraph [ref=f1e291]: "Still held: verified copy, content owners/reviewers, rights, legal disclosure and exact publication contracts. A content brief is not a reviewed published page."
+          - generic [ref=f1e292]:
+            - link "Content and SEO specification" [ref=f1e293] [cursor=pointer]:
+              - /url: ../../specs/004-design-services-content/spec.md
+            - link "Content producer checklist" [ref=f1e294] [cursor=pointer]:
+              - /url: ../../specs/004-design-services-content/checklists/requirements.md
+            - link "Content definition review and limits" [ref=f1e295] [cursor=pointer]:
+              - /url: ../../specs/004-design-services-content/reviews/content-feature-v1-2026-10-04.md
+        - article [ref=f1e296]:
+          - generic [ref=f1e297]: DOING · Reviewed draft
+          - heading "Staff security and privacy" [level=3] [ref=f1e298]
+          - paragraph [ref=f1e299]: Separate staff permissions, protected sessions and controlled emergency access. Check actual denial, consent, private-data routing, expiry, deletion and restore behavior. Administrator access cannot approve its own content or invent private-operation authority.
+          - paragraph [ref=f1e300]: "Still held: exact identity/session/MFA methods, grants, rate/outage controls and legal/provider mappings, applicable legal/accessibility review and founder acceptance. Mailbox ownership stays undecided."
+          - generic [ref=f1e301]:
+            - link "Security specification" [ref=f1e302] [cursor=pointer]:
+              - /url: ../../specs/001-platform-security-hardening/spec.md
+            - link "Security producer checklist" [ref=f1e303] [cursor=pointer]:
+              - /url: ../../specs/001-platform-security-hardening/checklists/requirements.md
+            - link "Security definition review and limits" [ref=f1e304] [cursor=pointer]:
+              - /url: ../../specs/001-platform-security-hardening/reviews/security-feature-v1-2026-10-04.md
+      - group [ref=f1e305]:
+        - generic "How will we prove the experience works on real devices?" [ref=f1e306] [cursor=pointer]
+      - paragraph [ref=f1e307]: Dedicated privacy and security aliases are approved. Their ownership remains undecided by founder instruction; channel delivery, restricted access and handling must be verified before operational publication. Definition work continues without assigning an owner.
+      - paragraph [ref=f1e308]:
+        - text: These later specifications are outside the earlier fifteen-artifact amendment review. Read the
+        - link "feature index and authority" [ref=f1e309] [cursor=pointer]:
+          - /url: ../../specs/README.md
+        - text: for their precise status. Deployment/provider/cost planning remains deferred.
+    - generic [ref=f1e310]:
+      - generic [ref=f1e311]: Honest checkpoint
+      - heading "Accepted scope, reviewed proposals, remaining evidence." [level=2] [ref=f1e312]
+      - region "Review checkpoint table" [ref=f1e313]:
+        - table [ref=f1e314]:
+          - rowgroup [ref=f1e315]:
+            - row [ref=f1e316]:
+              - columnheader "Subject" [ref=f1e317]
+              - columnheader "Current authority" [ref=f1e318]
+              - columnheader "Still required" [ref=f1e319]
+          - rowgroup [ref=f1e320]:
+            - row [ref=f1e321]:
+              - rowheader "Requirements, brand, UX" [ref=f1e322]
+              - cell "Accepted baselines and later recorded amendments" [ref=f1e323]
+              - cell "Real business/content evidence, final screens and integrated acceptance" [ref=f1e324]
+            - row [ref=f1e325]:
+              - rowheader "Architecture" [ref=f1e326]
+              - cell "Boundaries accepted D-065; movement/release clarification reviewed" [ref=f1e327]
+              - cell "Detailed data/API/provider and operational contracts" [ref=f1e328]
+            - row [ref=f1e329]:
+              - rowheader "Movement and nature campus" [ref=f1e330]
+              - cell "Scope/direction and D-071 layout basis accepted; material/sound/storyboard amendments and final-third observations independently reviewed at listed hashes" [ref=f1e331]
+              - cell "Final mechanics, connected floor/collision geometry, coherent model appearance, rights and measured budgets" [ref=f1e332]
+            - row [ref=f1e333]:
+              - rowheader "Campus engineering" [ref=f1e334]
+              - cell "Research-backed renderer, movement, connected-area loading and landscape recommendations; unchanged study inventoried" [ref=f1e335]
+              - cell "A subsequent bounded independent review passes the asset definition and inventory after the initial credits error. Additional libraries are candidates; appearance, rights, collision, dimensions, final references, measured budgets and runtime proof remain." [ref=f1e336]
+            - row [ref=f1e337]:
+              - rowheader "Publication, privacy, recovery" [ref=f1e338]
+              - cell "Separate bounded reviews cover release refresh, staff authorization, availability, semantic preparation, private build messages and the browser-resource proposal" [ref=f1e339]
+              - cell "Exact directional schemas, resource origins/style and worker permissions, limits, operational grants, synchronization/provider/identity/retention mechanisms and actual runtime proof; integrated acceptance" [ref=f1e340]
+            - row [ref=f1e341]:
+              - rowheader "Compatibility" [ref=f1e342]
+              - cell "Retained technology families; bounded metadata, backend-source, lint-recheck, hook-conformance evidence and GSAP-notice reviews cover their exact inputs" [ref=f1e343]
+              - cell "The earlier 61-input review has no verdict. The independently newest frontend set fails strict resolution; its alternative lint chain contains a beta dependency, and the stable native-lint study misses renamed hooks and some custom-Effect/configuration cases, with broader rule coverage incomplete or experimental. No full stable graph is selected. Runtime/platform, licences/provenance, locks and acceptance remain." [ref=f1e344]
+            - row [ref=f1e345]:
+              - rowheader "Native prototype operation" [ref=f1e346]
+              - cell "Existing user-owned PostgreSQL 17 cluster, API 8001 and web 5173 verified on 4 October; public reads and browser admin sign-in succeeded" [ref=f1e347]
+              - cell "The separate Program Files service remains stopped and port 8000 remains an unrelated WSL relay. Known World hook-order and admin-role defects remain open; this prototype path does not prove free movement, streaming, permissions or production readiness." [ref=f1e348]
+            - row [ref=f1e349]:
+              - rowheader "Deployment and operating costs" [ref=f1e350]
+              - cell "Deferred by founder D-068; Azure/AWS candidates" [ref=f1e351]
+              - cell "Later provider/region/capacity/cost planning; no selection or spending authorized" [ref=f1e352]
+            - row [ref=f1e353]:
+              - rowheader "Production application" [ref=f1e354]
+              - cell "Protected prototype evidence" [ref=f1e355]
+              - cell "Complete Phase 1 approval before feature implementation; commits/pushes deferred" [ref=f1e356]
+      - paragraph [ref=f1e357]: Definition review is not runtime certification. Documentation phrase/hash guards and isolated schema checks do not prove application behavior. This board consolidates the discussion and documents; it does not promote the prototype or accept missing production designs.
+      - paragraph [ref=f1e358]:
+        - text: The
+        - link "independent amendment review" [ref=f1e359] [cursor=pointer]:
+          - /url: ../phase-1-architecture/contracts/reviews/current-definition-amendments-2026-10-04.md
+        - text: records its exact fifteen input hashes and limits. This page's review-status text was reconciled afterward; its new hash is not substituted into that historical receipt. The underlying proposals and founder decisions are unchanged. Native runtime observations are dated 4 October 2026, not a continuing health guarantee; the static definition viewer is separate from those services. See the
+        - link "native operating instructions" [ref=f1e360] [cursor=pointer]:
+          - /url: ../../README.md#native-local-operation-on-windows
+        - text: ", the"
+        - link "nonsecret runtime observation" [ref=f1e361] [cursor=pointer]:
+          - /url: ../../output/playwright/native-runtime/runtime-observation.json
+        - text: and
+        - link "verified admin Services view" [ref=f1e362] [cursor=pointer]:
+          - /url: ../../output/playwright/native-runtime/admin-services.png
+        - text: .
+      - generic [ref=f1e363]:
+        - link "Candidate advisory and inventory review" [ref=f1e364] [cursor=pointer]:
+          - /url: ../phase-1-compatibility/reviews/candidate-inventory-review-2026-10-04.md
+        - link "Backend resolution and source review" [ref=f1e365] [cursor=pointer]:
+          - /url: ../phase-1-compatibility/reviews/refresh-backend-2026-10-04.md
+        - link "Dependency notice evidence review" [ref=f1e366] [cursor=pointer]:
+          - /url: ../phase-1-compatibility/reviews/wasm-util-notice-review-2026-10-04.md
+        - link "Reconciliation map" [ref=f1e367] [cursor=pointer]:
+          - /url: 04-reconciliation-map.md
+        - link "Consolidated scope" [ref=f1e368] [cursor=pointer]:
+          - /url: 05-consolidated-goal.md
+        - link "World definition" [ref=f1e369] [cursor=pointer]:
+          - /url: ../phase-1-3d/WORLD_EXPERIENCE.md
+        - link "Publication" [ref=f1e370] [cursor=pointer]:
+          - /url: ../phase-1-architecture/contracts/PUBLICATION_CONTRACT.md
+        - link "Security/privacy" [ref=f1e371] [cursor=pointer]:
+          - /url: ../phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md
+        - link "QA/recovery" [ref=f1e372] [cursor=pointer]:
+          - /url: ../phase-1-architecture/contracts/QA_RECOVERY.md
+        - link "Logical data" [ref=f1e373] [cursor=pointer]:
+          - /url: ../phase-1-architecture/contracts/DATA_CONTRACT.md
+        - link "Company/contact facts" [ref=f1e374] [cursor=pointer]:
+          - /url: 06-entity-and-public-contact.md
+  - contentinfo [ref=f1e375]:
+    - paragraph [ref=f1e376]: Review presentation only. No visitor data collection, external providers, analytics, audio or third-party resources. Visual approval remains separate from this document's delivery.

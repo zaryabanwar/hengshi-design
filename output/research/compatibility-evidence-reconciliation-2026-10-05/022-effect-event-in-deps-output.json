@@ -1,0 +1,7 @@
+{ "diagnostics": [{"message": "Functions returned from `useEffectEvent` must not be included in the dependency array.","code": "react-hooks(exhaustive-deps)","severity": "error","url": "https://oxc.rs/docs/guide/usage/linter/rules/react/exhaustive-deps.html","help": "Remove the dependency from the dependency array.","filename": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/fixtures/effect-event-in-deps.tsx","labels": [{"span": {"offset": 167,"length": 11,"line": 1,"column": 168}}]}],
+              "number_of_files": 1,
+              "number_of_rules": 2,
+              "threads_count": 4,
+              "start_time": 0.0551279
+            }
+            

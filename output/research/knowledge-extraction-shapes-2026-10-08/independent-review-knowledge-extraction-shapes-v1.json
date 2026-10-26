@@ -1,0 +1,44 @@
+{
+  "status": "DOING",
+  "review_verdict": "PASS",
+  "reviewer": "review_knowledge_bundle_v1",
+  "review_date": "2026-10-08",
+  "manifest_sha256": "cff88d774aafacfc886ae1d213bff2d93322678bd40260400af1fe44b3b08cf5",
+  "snapshots_verified": 34,
+  "findings": [],
+  "scope": "public-text-projection.schema.json, knowledge-extraction-map.schema.json and focused validator, against the frozen logical projection/extraction profiles and relevant bundle/publication/chat/privacy/governance inputs. Encoding and validator representation only.",
+  "observations": [
+    "Closed roots and nested representations correspond to the reviewed logical profiles. Projection fields contain no private metadata; extraction map keeps source/projection/profile associations private and reuses the existing source reference and identifier/hash shapes.",
+    "Projection-byte and profile digests remain distinct from source document_sha256. No containing-map/bundle self-hash field or manifest digest cycle is introduced; registration and exact-byte correspondence remain semantic obligations.",
+    "Text selectors allow only concrete ASCII canonical zero-based section/unit indices, exact permitted suffixes and strict termination. Wildcards, signs, leading zeroes, Unicode digits, extra suffixes and newline/control tails are rejected. Syntax alone does not enforce in-range selection or profile authority.",
+    "Array shape ceilings reuse 1024 locally and intentionally cannot enforce aggregate inventory, key uniqueness, complete mapping or context/source integrity. Context cycles, dangling keys and over-eight stored groups remain admissible representations, requiring later bounded resolution/refusal.",
+    "Tests exercise explicit logical field/type/closure and boundary requirements with synthetic fixtures; deliberate unsafe/semantically incomplete acceptance demonstrates limits rather than claiming runtime safety. Raw parser, nonblank/scalar validity, encoded bytes, privacy exclusions and claim support remain outside shape validation.",
+    "Logical DATA/PUBLICATION profile bodies are preserved relative to the earlier review; only intervening scoped receipt-reference/status paragraphs differ. Their previous review scope is accurately limited."
+  ],
+  "independent_affected_validator_replay": {
+    "exit_code": 0,
+    "methods": 42,
+    "focused_methods": 11,
+    "command": [
+      "C:/Python314/python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "scripts.validation.test_knowledge_extraction_shapes",
+      "scripts.validation.test_knowledge_bundle_schema",
+      "scripts.validation.test_chat_text_schema",
+      "scripts.validation.test_process_value_schema",
+      "scripts.validation.test_publication_manifest_schema",
+      "scripts.validation.test_publication_preparation_schema",
+      "-v"
+    ],
+    "process_local_environment": "PYTHONPATH absolute scripts/validation; no machine settings changed"
+  },
+  "review_harness_note": "An initial equality assertion against the previous profile freeze stopped before tests because scoped receipt-reference paragraphs had been added between slices. The diff was inspected; logical bodies are unchanged. Corrected review invocation then ran all 42 methods successfully; no canonical/test source repair.",
+  "limits": [
+    "No public document compiler/extraction/index/retrieval/model/provider/HTTP/DB/publication runtime inspected or executed.",
+    "No source correctness, injection resistance, legal/privacy compliance, safety, accessibility or measured resource assurance follows.",
+    "Exact serialization/config registration, aggregate parser/work accounting, adapters, calibration and integrated/founder acceptance remain required.",
+    "Later receipt-link/status references are outside the frozen reviewed source bytes."
+  ]
+}

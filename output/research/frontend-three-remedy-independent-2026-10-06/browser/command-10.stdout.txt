@@ -1,0 +1,9 @@
+### Result
+{
+  "focused": "Store increment",
+  "tag": "BUTTON"
+}
+### Ran Playwright code
+```js
+await page.evaluate('() => ({focused:document.activeElement.textContent,tag:document.activeElement.tagName})');
+```

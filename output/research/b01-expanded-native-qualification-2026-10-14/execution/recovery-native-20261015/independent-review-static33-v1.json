@@ -1,0 +1,978 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-15",
+  "reviewed_at_utc": "2026-10-15T10:37:49.253665+00:00",
+  "reviewer": "Independent read-only reviewer /root/review_python315_build_proposal_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "PASS",
+  "review_outcome": "PASS",
+  "scope": "Actual D094/D095 bounded33-frame static native result: frozen identity/name/pixel bindings, all33 viewport exports, shared native properties, one fresh parent/direct-child sample, two native archives and observed credits. No interactions, scroll/reset qualification, complete preservation, restore or broader B01/Phase1 acceptance.",
+  "packet": {
+    "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/review-static33-inputs-v1.json",
+    "sha256": "73a9a00b958e128e27d1590189b92566f24dd4aa5614266f7a0626f881cd706e",
+    "input_count": 47,
+    "verified_hash_count": 47,
+    "all_inputs": [
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/design-agent-static33-frames-prompt-v1.txt",
+        "bytes": 2265,
+        "sha256": "436c3061006748ca87eab62e6d19f2248ca71d2e2792824010582979d50f83c5",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/design-agent-static33-observation-01.txt",
+        "bytes": 13074,
+        "sha256": "27c1915ebf1f8902460ac67efb270873e530ba3bbd70dd925e8eec2bbd4b96ab",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/native-static33-export-selection.json",
+        "bytes": 3168,
+        "sha256": "dd6ec55d8cbe1b83108a8e69e25292c147f5cb28c8b06f4fff884431aa9a4b97",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/native-static33-export-inspector.txt",
+        "bytes": 15887,
+        "sha256": "a83596a1e9dd1d4555f6de4df6698e3ff3a564dce2effd10c211fb797a4a63cb",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/fresh-native-recovery-semantic-reset-frame.txt",
+        "bytes": 9716,
+        "sha256": "622c4bdcfe948efbce649362d8790a1aa4d9d6e08109eb90f3965c34d1b1d11c",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/fresh-native-recovery-semantic-reset-instance.txt",
+        "bytes": 14135,
+        "sha256": "41dadd3f2e99b1384cacd67a9117948ca41c304504f3357d7156c1b161bba7eb",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/fresh-recovery-semantic-reset-frame.png",
+        "bytes": 116497,
+        "sha256": "9690941d4179e8aa942086645a650a5c5f6d1421bbd31ca79e9301bade928069",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/ai-balance-after-d095.txt",
+        "bytes": 18561,
+        "sha256": "b1b70eb7f3176078b973aa1bde9d3eaa7cb49556010e2c70a449a48efb9373f2",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/ai-balance-after-static33.txt",
+        "bytes": 15298,
+        "sha256": "b742e477bc19d036ee1f8d721f7e5144c3f3a2e539b0ca6e0247ea4fb6816333",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-pixel-bindings-v1.json",
+        "bytes": 15556,
+        "sha256": "a0fdb116660f7ee88ea89be87515947202c425e367f32184811e4509661f9d43",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-execution-result-v1.json",
+        "bytes": 2900,
+        "sha256": "20c7b1593688b52fa4180f19e09f4664e4c3f5766fac3497711b0c9165164c98",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/after-static33-frames.fig",
+        "bytes": 430897,
+        "sha256": "d4ff77b0c58d7f0fa29f067d76ef19018223880d1812a04473cf37aa63604390",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/after-static33-native-export.fig",
+        "bytes": 430829,
+        "sha256": "c0f4b8525fa0d340a27c368318a228667f6b8f04774d6432f3a55a7a8ac04c3e",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3841.png",
+        "bytes": 21529,
+        "sha256": "91414702afc3797c4a26f8a2289e8279d888d806501a0c1a4b4d84cce708823b",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3819.png",
+        "bytes": 21529,
+        "sha256": "91414702afc3797c4a26f8a2289e8279d888d806501a0c1a4b4d84cce708823b",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3797.png",
+        "bytes": 21529,
+        "sha256": "91414702afc3797c4a26f8a2289e8279d888d806501a0c1a4b4d84cce708823b",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3775.png",
+        "bytes": 21174,
+        "sha256": "1ab7d1c3f9e48471d30a0627ce2e1292dbcf36b0590300f8f469ab7d222499d7",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3753.png",
+        "bytes": 21174,
+        "sha256": "1ab7d1c3f9e48471d30a0627ce2e1292dbcf36b0590300f8f469ab7d222499d7",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3731.png",
+        "bytes": 21174,
+        "sha256": "1ab7d1c3f9e48471d30a0627ce2e1292dbcf36b0590300f8f469ab7d222499d7",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3709.png",
+        "bytes": 21002,
+        "sha256": "65f1ffb1f12dc9479ace7e2da81126799cfeb8977de211fa42ec74d4819a53b0",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3687.png",
+        "bytes": 21002,
+        "sha256": "65f1ffb1f12dc9479ace7e2da81126799cfeb8977de211fa42ec74d4819a53b0",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3665.png",
+        "bytes": 21002,
+        "sha256": "65f1ffb1f12dc9479ace7e2da81126799cfeb8977de211fa42ec74d4819a53b0",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3643.png",
+        "bytes": 20627,
+        "sha256": "2c6d30fc0af62faf062780e106a21fdced74e760d61ab4e67f9e7bd1b7d52f79",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3621.png",
+        "bytes": 20627,
+        "sha256": "2c6d30fc0af62faf062780e106a21fdced74e760d61ab4e67f9e7bd1b7d52f79",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3599.png",
+        "bytes": 20627,
+        "sha256": "2c6d30fc0af62faf062780e106a21fdced74e760d61ab4e67f9e7bd1b7d52f79",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3590.png",
+        "bytes": 9590,
+        "sha256": "2fa0d9bcf536055f7ad84b4c6f01bd98bd1d76e1b53c8d5698eb655312368bde",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3581.png",
+        "bytes": 9590,
+        "sha256": "2fa0d9bcf536055f7ad84b4c6f01bd98bd1d76e1b53c8d5698eb655312368bde",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3572.png",
+        "bytes": 9590,
+        "sha256": "2fa0d9bcf536055f7ad84b4c6f01bd98bd1d76e1b53c8d5698eb655312368bde",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3563.png",
+        "bytes": 9555,
+        "sha256": "4d7ce29e5ef31d8acde23fb71c2c199cffa82875eee31f36055c1a435f377837",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3554.png",
+        "bytes": 9555,
+        "sha256": "4d7ce29e5ef31d8acde23fb71c2c199cffa82875eee31f36055c1a435f377837",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3545.png",
+        "bytes": 9555,
+        "sha256": "4d7ce29e5ef31d8acde23fb71c2c199cffa82875eee31f36055c1a435f377837",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3536.png",
+        "bytes": 9631,
+        "sha256": "e55ef6ac1dfb50cc38dbb9725558aabd947fbf322deeb0272c574b4c22dea779",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3527.png",
+        "bytes": 9631,
+        "sha256": "e55ef6ac1dfb50cc38dbb9725558aabd947fbf322deeb0272c574b4c22dea779",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3518.png",
+        "bytes": 9631,
+        "sha256": "e55ef6ac1dfb50cc38dbb9725558aabd947fbf322deeb0272c574b4c22dea779",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3509.png",
+        "bytes": 9502,
+        "sha256": "7b62a51f6c535fb3aec0837c129da69821afb75521733ba6996576155599b647",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3500.png",
+        "bytes": 9502,
+        "sha256": "7b62a51f6c535fb3aec0837c129da69821afb75521733ba6996576155599b647",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3491.png",
+        "bytes": 9502,
+        "sha256": "7b62a51f6c535fb3aec0837c129da69821afb75521733ba6996576155599b647",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3482.png",
+        "bytes": 8493,
+        "sha256": "f0ab2c3cfe8dfd2e9a5352420df2d53a8d52922068e0e95a6515970afff112d8",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3473.png",
+        "bytes": 8493,
+        "sha256": "f0ab2c3cfe8dfd2e9a5352420df2d53a8d52922068e0e95a6515970afff112d8",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3464.png",
+        "bytes": 8493,
+        "sha256": "f0ab2c3cfe8dfd2e9a5352420df2d53a8d52922068e0e95a6515970afff112d8",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3455.png",
+        "bytes": 8477,
+        "sha256": "818d3953fefd702cd72b128354b86246dc0d0a8765ff84e96666b4f5f621ba31",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3446.png",
+        "bytes": 8477,
+        "sha256": "818d3953fefd702cd72b128354b86246dc0d0a8765ff84e96666b4f5f621ba31",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3437.png",
+        "bytes": 8477,
+        "sha256": "818d3953fefd702cd72b128354b86246dc0d0a8765ff84e96666b4f5f621ba31",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3428.png",
+        "bytes": 8527,
+        "sha256": "0dc715f7914d4a58224e2dbe98fc4aad6b67514480c037b05fcd3234b3293cdd",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3419.png",
+        "bytes": 8527,
+        "sha256": "0dc715f7914d4a58224e2dbe98fc4aad6b67514480c037b05fcd3234b3293cdd",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-png/175-3410.png",
+        "bytes": 8527,
+        "sha256": "0dc715f7914d4a58224e2dbe98fc4aad6b67514480c037b05fcd3234b3293cdd",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/qualification-plan-v1.json",
+        "bytes": 235601,
+        "sha256": "5e24ac8c203bf729b5190d359da2439c1b1f88f59665b1c65163b4b9002ab2ce",
+        "verified": true
+      }
+    ]
+  },
+  "findings": [],
+  "actionable_finding_count": 0,
+  "method": [
+    "Used the explicitly supplied frozen packet as evidence and the Product Design audit skill only for offline visual/evidence guidance. No live browser/Figma/MCP/account/application/Git action, canonical edit or agent delegation.",
+    "Verified all47 hashes, compared the native33-layer selection with every frame-ID/name binding and independently derived the expected33 names from three families/four active streams/three frame roles minus the existing Navigation/HIGH trio.",
+    "Inspected every one of the33 native320x560 PNGs, displayed in labeled in-memory sheets at exact1:1 pixel dimensions, plus an individual native export and the fresh Recovery/SEMANTIC RESET UI screenshot. No image files were changed or added.",
+    "Replayed all33 PNG byte/hash/dimension/chunk-CRC bindings, recorded ZIP member-path grammar, within-group default pixel equality, both frozen native archive CRC/member inventories and the fresh saved property inspectors.",
+    "Rechecked every frozen input immediately before writing only this exclusive-created review receipt. Earlier mixed-selection samples were not used or treated as valid evidence.",
+    "Explicit addendum: independently verified source static33-native-pixels.zip SHA256, ZIP CRC, exact33 unique file-member names and every member byte count/SHA256/equality against the33 frozen bound PNGs. Original47 manifest and all47 input hashes were rechecked and remain unchanged."
+  ],
+  "assessments": [
+    {
+      "boundary": "Scope and authority fidelity",
+      "result": "PASS",
+      "evidence": [
+        "design-agent-static33-frames-prompt-v1.txt",
+        "design-agent-static33-observation-01.txt",
+        "static33-execution-result-v1.json"
+      ],
+      "assessment": "The prompt requests the33 remaining static native viewport frames within the existing owned Section, skips the old Navigation/HIGH trio, preserves source sets/old frames/reactions and expressly excludes prototype wiring, Make/code/plugin/file/page/destructive/paid/sharing/application/Git work. This matches the current D094/D095 approved slice as supplied for this review. The original qualification plan is scope/requirements evidence, not standalone fresh execution authority. Agent assertions are retained as assertions, not independent whole-file proof."
+    },
+    {
+      "boundary": "Exact native selection/name/ID coverage",
+      "result": "PASS",
+      "evidence": [
+        "native-static33-export-selection.json",
+        "static33-pixel-bindings-v1.json",
+        "static33-native-pixels.zip"
+      ],
+      "assessment": "Exactly33 unique frame IDs, names, PNG paths and recorded ZIP member paths match the native selected-layer rows. Names are precisely the three expected roles for Navigation MEDIUM/LOW/SEMANTIC, Directory HIGH/MEDIUM/LOW/SEMANTIC and Recovery HIGH/MEDIUM/LOW/SEMANTIC. These33 are the expected remainder of the36-frame skeleton after reserving the three pre-existing Navigation/HIGH names. Current preservation/behavior of the old trio is not independently revalidated here. The explicitly added48th input source ZIP independently passes CRC, contains exactly these33 unique file members and reproduces every bound PNG byte-for-byte."
+    },
+    {
+      "boundary": "All33 native export pixels",
+      "result": "PASS",
+      "evidence": [
+        "static33-png/*.png",
+        "static33-pixel-bindings-v1.json"
+      ],
+      "assessment": "All33 are genuine320x560 PNGs with matching byte counts/SHA256 and valid complete chunk CRC streams. Each of the11 family/active groups has three byte-identical Preview/PRESERVE/RESET default exports, giving11 distinct images across33 files. Navigation views show Services context, correct active label, Services fixture and Menu with closed disclosure. Directory views show Services/query design context, correct active label, Services fixture and Open directory with closed disclosure. Recovery views show synthetic offline Services context, correct active heading, four visible peer choices and the correct checked active/default pending choice. Text/controls within the visible viewport are legible, with no unexpected horizontal cropping, collision, blank/loading/wrong-surface export or visible active-label mismatch."
+    },
+    {
+      "boundary": "Intentional viewport clipping",
+      "result": "PASS",
+      "evidence": [
+        "design-agent-static33-frames-prompt-v1.txt",
+        "native-static33-export-inspector.txt",
+        "fresh-native-recovery-semantic-reset-frame.txt",
+        "fresh-native-recovery-semantic-reset-instance.txt"
+      ],
+      "assessment": "The required viewport is320x560 with clipping enabled around an unscaled1150px host. Recovery explanatory copy continues below the bottom boundary and Apply/privacy/marker are outside the initial viewport. That intentional clipping is not assessed as missing-content failure. No claim that content is scroll-reachable, has preserved position, resets correctly or has matching-highlight behavior is made."
+    },
+    {
+      "boundary": "Shared native properties",
+      "result": "PASS",
+      "evidence": [
+        "native-static33-export-selection.json",
+        "native-static33-export-inspector.txt"
+      ],
+      "assessment": "The exact33 selection and Export33layers inspector corroborate common320x560 geometry, Clip content checked, opaque visible D035/palette/paper #FAF9F6 fill and1xPNG export. Mixed X/Y is expected for multiple different frames. This shared inspector does not independently establish every placement coordinate, every main-component binding or all direct-child topology."
+    },
+    {
+      "boundary": "Fresh Recovery/SEMANTIC RESET parent and direct child",
+      "result": "PASS",
+      "evidence": [
+        "fresh-native-recovery-semantic-reset-frame.txt",
+        "fresh-native-recovery-semantic-reset-instance.txt",
+        "fresh-recovery-semantic-reset-frame.png"
+      ],
+      "assessment": "The fresh parent inspector/screenshot identify ENQ_RECOVERY_SEMANTIC / RESET probe175:3841 at11720,7610 with320x560 dimensions, clipping and bound paper fill. Position agrees with the final requested group/RESET column. The selected direct child ENQ host RECOVERY SEMANTIC is a From this file instance with Active SEMANTIC, Pending SEMANTIC, Disclosure NOT_APPLICABLE, local0,0 and320x1150 dimensions. This corroborates one actual unscaled host/default sample; it does not expose every exact main-component ID or prove all33 children independently."
+    },
+    {
+      "boundary": "Archive and credit evidence",
+      "result": "PASS",
+      "evidence": [
+        "after-static33-frames.fig",
+        "after-static33-native-export.fig",
+        "ai-balance-after-d095.txt",
+        "ai-balance-after-static33.txt"
+      ],
+      "assessment": "Both frozen native.fig archives pass independent ZIP CRC/member checks and match recorded hashes. Saved balances270monthly/98daily before and240/68after show30 fewer credits in both counters for this slice. This is an observed balance delta, not a verified billing invoice or a proof that no concurrent consumption occurred. Producer reports zero new MCP calls; this review made none and does not audit the entire prior-session call ledger."
+    },
+    {
+      "boundary": "Truthful producer limits",
+      "result": "PASS",
+      "evidence": [
+        "static33-execution-result-v1.json",
+        "design-agent-static33-observation-01.txt"
+      ],
+      "assessment": "Producer distinguishes source counts32/32/16, preservation of the old trio/seven Navigation reactions, all-frame instance topology/defaults and source bindings as agent-reported or incompletely independently inspected. No scroll/highlight/reset/flow/interaction, accessibility, restore or full B01/Phase1 qualification is claimed. The fresh-native sample supersedes older mixed-selection samples, which are excluded from this verdict."
+    }
+  ],
+  "all33_pixel_reviews": [
+    {
+      "step": 1,
+      "frame": "175:3841",
+      "name": "ENQ_RECOVERY_SEMANTIC / RESET probe",
+      "file": "175-3841.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_RECOVERY_SEMANTIC/RESET probe.png",
+      "sha256": "91414702afc3797c4a26f8a2289e8279d888d806501a0c1a4b4d84cce708823b",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 2,
+      "frame": "175:3819",
+      "name": "ENQ_RECOVERY_SEMANTIC / PRESERVE probe",
+      "file": "175-3819.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_RECOVERY_SEMANTIC/PRESERVE probe.png",
+      "sha256": "91414702afc3797c4a26f8a2289e8279d888d806501a0c1a4b4d84cce708823b",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 3,
+      "frame": "175:3797",
+      "name": "ENQ_RECOVERY_SEMANTIC / Preview",
+      "file": "175-3797.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_RECOVERY_SEMANTIC/Preview.png",
+      "sha256": "91414702afc3797c4a26f8a2289e8279d888d806501a0c1a4b4d84cce708823b",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 4,
+      "frame": "175:3775",
+      "name": "ENQ_RECOVERY_LOW / RESET probe",
+      "file": "175-3775.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_RECOVERY_LOW/RESET probe.png",
+      "sha256": "1ab7d1c3f9e48471d30a0627ce2e1292dbcf36b0590300f8f469ab7d222499d7",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 5,
+      "frame": "175:3753",
+      "name": "ENQ_RECOVERY_LOW / PRESERVE probe",
+      "file": "175-3753.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_RECOVERY_LOW/PRESERVE probe.png",
+      "sha256": "1ab7d1c3f9e48471d30a0627ce2e1292dbcf36b0590300f8f469ab7d222499d7",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 6,
+      "frame": "175:3731",
+      "name": "ENQ_RECOVERY_LOW / Preview",
+      "file": "175-3731.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_RECOVERY_LOW/Preview.png",
+      "sha256": "1ab7d1c3f9e48471d30a0627ce2e1292dbcf36b0590300f8f469ab7d222499d7",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 7,
+      "frame": "175:3709",
+      "name": "ENQ_RECOVERY_MEDIUM / RESET probe",
+      "file": "175-3709.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_RECOVERY_MEDIUM/RESET probe.png",
+      "sha256": "65f1ffb1f12dc9479ace7e2da81126799cfeb8977de211fa42ec74d4819a53b0",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 8,
+      "frame": "175:3687",
+      "name": "ENQ_RECOVERY_MEDIUM / PRESERVE probe",
+      "file": "175-3687.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_RECOVERY_MEDIUM/PRESERVE probe.png",
+      "sha256": "65f1ffb1f12dc9479ace7e2da81126799cfeb8977de211fa42ec74d4819a53b0",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 9,
+      "frame": "175:3665",
+      "name": "ENQ_RECOVERY_MEDIUM / Preview",
+      "file": "175-3665.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_RECOVERY_MEDIUM/Preview.png",
+      "sha256": "65f1ffb1f12dc9479ace7e2da81126799cfeb8977de211fa42ec74d4819a53b0",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 10,
+      "frame": "175:3643",
+      "name": "ENQ_RECOVERY_HIGH / RESET probe",
+      "file": "175-3643.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_RECOVERY_HIGH/RESET probe.png",
+      "sha256": "2c6d30fc0af62faf062780e106a21fdced74e760d61ab4e67f9e7bd1b7d52f79",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 11,
+      "frame": "175:3621",
+      "name": "ENQ_RECOVERY_HIGH / PRESERVE probe",
+      "file": "175-3621.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_RECOVERY_HIGH/PRESERVE probe.png",
+      "sha256": "2c6d30fc0af62faf062780e106a21fdced74e760d61ab4e67f9e7bd1b7d52f79",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 12,
+      "frame": "175:3599",
+      "name": "ENQ_RECOVERY_HIGH / Preview",
+      "file": "175-3599.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_RECOVERY_HIGH/Preview.png",
+      "sha256": "2c6d30fc0af62faf062780e106a21fdced74e760d61ab4e67f9e7bd1b7d52f79",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 13,
+      "frame": "175:3590",
+      "name": "ENQ_DIRECTORY_SEMANTIC / RESET probe",
+      "file": "175-3590.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_DIRECTORY_SEMANTIC/RESET probe.png",
+      "sha256": "2fa0d9bcf536055f7ad84b4c6f01bd98bd1d76e1b53c8d5698eb655312368bde",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 14,
+      "frame": "175:3581",
+      "name": "ENQ_DIRECTORY_SEMANTIC / PRESERVE probe",
+      "file": "175-3581.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_DIRECTORY_SEMANTIC/PRESERVE probe.png",
+      "sha256": "2fa0d9bcf536055f7ad84b4c6f01bd98bd1d76e1b53c8d5698eb655312368bde",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 15,
+      "frame": "175:3572",
+      "name": "ENQ_DIRECTORY_SEMANTIC / Preview",
+      "file": "175-3572.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_DIRECTORY_SEMANTIC/Preview.png",
+      "sha256": "2fa0d9bcf536055f7ad84b4c6f01bd98bd1d76e1b53c8d5698eb655312368bde",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 16,
+      "frame": "175:3563",
+      "name": "ENQ_DIRECTORY_LOW / RESET probe",
+      "file": "175-3563.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_DIRECTORY_LOW/RESET probe.png",
+      "sha256": "4d7ce29e5ef31d8acde23fb71c2c199cffa82875eee31f36055c1a435f377837",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 17,
+      "frame": "175:3554",
+      "name": "ENQ_DIRECTORY_LOW / PRESERVE probe",
+      "file": "175-3554.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_DIRECTORY_LOW/PRESERVE probe.png",
+      "sha256": "4d7ce29e5ef31d8acde23fb71c2c199cffa82875eee31f36055c1a435f377837",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 18,
+      "frame": "175:3545",
+      "name": "ENQ_DIRECTORY_LOW / Preview",
+      "file": "175-3545.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_DIRECTORY_LOW/Preview.png",
+      "sha256": "4d7ce29e5ef31d8acde23fb71c2c199cffa82875eee31f36055c1a435f377837",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 19,
+      "frame": "175:3536",
+      "name": "ENQ_DIRECTORY_MEDIUM / RESET probe",
+      "file": "175-3536.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_DIRECTORY_MEDIUM/RESET probe.png",
+      "sha256": "e55ef6ac1dfb50cc38dbb9725558aabd947fbf322deeb0272c574b4c22dea779",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 20,
+      "frame": "175:3527",
+      "name": "ENQ_DIRECTORY_MEDIUM / PRESERVE probe",
+      "file": "175-3527.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_DIRECTORY_MEDIUM/PRESERVE probe.png",
+      "sha256": "e55ef6ac1dfb50cc38dbb9725558aabd947fbf322deeb0272c574b4c22dea779",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 21,
+      "frame": "175:3518",
+      "name": "ENQ_DIRECTORY_MEDIUM / Preview",
+      "file": "175-3518.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_DIRECTORY_MEDIUM/Preview.png",
+      "sha256": "e55ef6ac1dfb50cc38dbb9725558aabd947fbf322deeb0272c574b4c22dea779",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 22,
+      "frame": "175:3509",
+      "name": "ENQ_DIRECTORY_HIGH / RESET probe",
+      "file": "175-3509.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_DIRECTORY_HIGH/RESET probe.png",
+      "sha256": "7b62a51f6c535fb3aec0837c129da69821afb75521733ba6996576155599b647",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 23,
+      "frame": "175:3500",
+      "name": "ENQ_DIRECTORY_HIGH / PRESERVE probe",
+      "file": "175-3500.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_DIRECTORY_HIGH/PRESERVE probe.png",
+      "sha256": "7b62a51f6c535fb3aec0837c129da69821afb75521733ba6996576155599b647",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 24,
+      "frame": "175:3491",
+      "name": "ENQ_DIRECTORY_HIGH / Preview",
+      "file": "175-3491.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_DIRECTORY_HIGH/Preview.png",
+      "sha256": "7b62a51f6c535fb3aec0837c129da69821afb75521733ba6996576155599b647",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 25,
+      "frame": "175:3482",
+      "name": "ENQ_NAVIGATION_SEMANTIC / RESET probe",
+      "file": "175-3482.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_NAVIGATION_SEMANTIC/RESET probe.png",
+      "sha256": "f0ab2c3cfe8dfd2e9a5352420df2d53a8d52922068e0e95a6515970afff112d8",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 26,
+      "frame": "175:3473",
+      "name": "ENQ_NAVIGATION_SEMANTIC / PRESERVE probe",
+      "file": "175-3473.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_NAVIGATION_SEMANTIC/PRESERVE probe.png",
+      "sha256": "f0ab2c3cfe8dfd2e9a5352420df2d53a8d52922068e0e95a6515970afff112d8",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 27,
+      "frame": "175:3464",
+      "name": "ENQ_NAVIGATION_SEMANTIC / Preview",
+      "file": "175-3464.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_NAVIGATION_SEMANTIC/Preview.png",
+      "sha256": "f0ab2c3cfe8dfd2e9a5352420df2d53a8d52922068e0e95a6515970afff112d8",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 28,
+      "frame": "175:3455",
+      "name": "ENQ_NAVIGATION_LOW / RESET probe",
+      "file": "175-3455.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_NAVIGATION_LOW/RESET probe.png",
+      "sha256": "818d3953fefd702cd72b128354b86246dc0d0a8765ff84e96666b4f5f621ba31",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 29,
+      "frame": "175:3446",
+      "name": "ENQ_NAVIGATION_LOW / PRESERVE probe",
+      "file": "175-3446.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_NAVIGATION_LOW/PRESERVE probe.png",
+      "sha256": "818d3953fefd702cd72b128354b86246dc0d0a8765ff84e96666b4f5f621ba31",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 30,
+      "frame": "175:3437",
+      "name": "ENQ_NAVIGATION_LOW / Preview",
+      "file": "175-3437.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_NAVIGATION_LOW/Preview.png",
+      "sha256": "818d3953fefd702cd72b128354b86246dc0d0a8765ff84e96666b4f5f621ba31",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 31,
+      "frame": "175:3428",
+      "name": "ENQ_NAVIGATION_MEDIUM / RESET probe",
+      "file": "175-3428.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_NAVIGATION_MEDIUM/RESET probe.png",
+      "sha256": "0dc715f7914d4a58224e2dbe98fc4aad6b67514480c037b05fcd3234b3293cdd",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 32,
+      "frame": "175:3419",
+      "name": "ENQ_NAVIGATION_MEDIUM / PRESERVE probe",
+      "file": "175-3419.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_NAVIGATION_MEDIUM/PRESERVE probe.png",
+      "sha256": "0dc715f7914d4a58224e2dbe98fc4aad6b67514480c037b05fcd3234b3293cdd",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    },
+    {
+      "step": 33,
+      "frame": "175:3410",
+      "name": "ENQ_NAVIGATION_MEDIUM / Preview",
+      "file": "175-3410.png",
+      "recorded_zip_member": "B01/Four-stream three-host qualification/ENQ_NAVIGATION_MEDIUM/Preview.png",
+      "sha256": "0dc715f7914d4a58224e2dbe98fc4aad6b67514480c037b05fcd3234b3293cdd",
+      "dimensions": [
+        320,
+        560
+      ],
+      "chunk_crc": "PASS",
+      "pixel_review": "PASS",
+      "source_zip_member_bytes_verified": true
+    }
+  ],
+  "archive_integrity": [
+    {
+      "file": "after-static33-frames.fig",
+      "crc": "PASS",
+      "members": [
+        {
+          "name": "canvas.fig",
+          "bytes": 424564
+        },
+        {
+          "name": "thumbnail.png",
+          "bytes": 5282
+        },
+        {
+          "name": "meta.json",
+          "bytes": 345
+        },
+        {
+          "name": "images/",
+          "bytes": 0
+        }
+      ],
+      "scope": "Frozen native ZIP member integrity only; no semantic source diff or restore."
+    },
+    {
+      "file": "after-static33-native-export.fig",
+      "crc": "PASS",
+      "members": [
+        {
+          "name": "canvas.fig",
+          "bytes": 424496
+        },
+        {
+          "name": "thumbnail.png",
+          "bytes": 5282
+        },
+        {
+          "name": "meta.json",
+          "bytes": 345
+        },
+        {
+          "name": "images/",
+          "bytes": 0
+        }
+      ],
+      "scope": "Frozen native ZIP member integrity only; no semantic source diff or restore."
+    },
+    {
+      "file": "static33-native-pixels.zip",
+      "bytes": 451863,
+      "sha256": "6720221aea085ea73b8ae0f9eb427948f91b3d084d0064adb5b7652bd506a660",
+      "crc": "PASS",
+      "unique_file_members": 33,
+      "exact_member_set_matches_bindings": true,
+      "all_member_bytes_equal_frozen_pngs": true,
+      "scope": "Actual source export ZIP-to-PNG binding verified; no native-source semantic diff or behavior proof."
+    }
+  ],
+  "explicit_scope_limits": [
+    "The original47-input manifest remains unchanged. The explicitly supplied48th input source export ZIP was independently checked for SHA256, CRC, exact33 unique member names and byte-for-byte equality with all33 bound PNGs. This proves source export archive/file correspondence only; no complete native-design semantic equivalence, preservation or behavior is implied.",
+    "Shared33-layer properties, exact selected names and pixels are independently observed. All33 main-component IDs, one-direct-child claims, precise placement/Section containment and comprehensive instance/style/font/variable/reaction preservation are not independently established by this packet.",
+    "Source counts32/32/16 and preservation of old Navigation/HIGH frames152:3383,152:3393,152:3402, their instances, prior references and seven Navigation reactions remain agent-reported within this slice. No whole-source semantic diff or tested restore was performed.",
+    "Identical triplet pixels prove identical default export bytes, not scroll/reset/matching equivalence or working interactions. No reactions, flows or scrolling setup were qualified.",
+    "The intentionally clipped initial view does not establish accessibility, keyboard/AT/radio/dialog semantics, actual application behavior, all22 B01 scenarios/profile/frame/viewport/mode/context coverage or full B01/Phase1/founder acceptance.",
+    "Only this receipt was written. Status DOING does not imply a committed DONE task."
+  ],
+  "addendum": {
+    "reviewed_at_utc": "2026-10-15T10:40:04.753211+00:00",
+    "authority": "Explicit follow-up from parent requesting this48th source ZIP without changing original47-input manifest.",
+    "original_receipt_sha256": "9173561b052c01739f05e73df669e1cc58e884b303c6ea8aaba36ba60fdf0835",
+    "original_manifest_unchanged": true,
+    "additional_inputs": [
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/static33-native-pixels.zip",
+        "bytes": 451863,
+        "sha256": "6720221aea085ea73b8ae0f9eb427948f91b3d084d0064adb5b7652bd506a660",
+        "verified": true
+      }
+    ],
+    "total_input_count": 48,
+    "verified_hash_count": 48,
+    "zip_crc": "PASS",
+    "exact_unique_file_member_count": 33,
+    "exact_bound_member_name_set": true,
+    "all33_member_bytes_equal_bound_png_files": true,
+    "all33_member_byte_counts_and_sha256_match_bindings": true,
+    "scope": "Source export ZIP identity and exact extraction binding added to the existing bounded static-result review. No external action or broader preservation/behavior acceptance."
+  }
+}

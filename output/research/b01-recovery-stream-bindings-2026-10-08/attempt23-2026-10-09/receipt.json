@@ -1,0 +1,32 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "BLOCKED",
+  "date": "2026-10-09",
+  "attempt": 23,
+  "conservative_metered_attempt": 20,
+  "tool": "use_figma",
+  "fileKey": "GOmLP6Cv96l768ueSrZ5Dg",
+  "scope": "12 shared recovery stream references with preflight and two previews",
+  "founder_approval": "Direct human approved message; one immediate pending call",
+  "script_sha256": "0b3ca4d851ae18821ad4e6c6af875875caf981084cf9e1878e2613bb4aea055f",
+  "provider_response_sha256": "bec513c2e76ae599619b65fda6cf4e3832d9c6a4e27a4bcbfeb6b1cf7bf27a56",
+  "isError": true,
+  "error_code": "UNAUTHORIZED",
+  "detail": "This app connection requires reauthentication before other actions on this app can succeed.",
+  "design_ids_returned": [],
+  "preview_images_returned": 0,
+  "canvas_change_verified": false,
+  "canvas_read_performed": false,
+  "retry_performed": false,
+  "approval_consumed": true,
+  "actual_debit_and_balance": "unknown",
+  "conservative_monthly_budget_reached": true,
+  "next_boundary": "Connection reauthentication plus verified applicable quota or explicit budget exception and fresh immediate approval; no automatic retry",
+  "source_review": "Earlier 15-input bounded source PASS preserved; failure is not a source or pixel verdict",
+  "limitations": [
+    "No created-frame coverage or design acceptance can be assigned from this failed call.",
+    "No assurance about file content follows from absent receipt; existing guards must prevent duplicate or partial construction on any separately authorized retry.",
+    "No paid activation, new file, credential change or other external call is authorized.",
+    "Independent review of other preparations remains separate."
+  ]
+}

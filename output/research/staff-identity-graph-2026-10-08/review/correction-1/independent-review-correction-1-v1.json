@@ -1,0 +1,11 @@
+{
+  "status": "DOING",
+  "verdict": "PASS",
+  "scope": "Eight-input correction cycle1; exact distribution wheel size wording and preservation only",
+  "manifest_sha256": "b81e9cf3d167ad86d2bd8a347ba8842d378f0e8be2b15556a583e14bf6e448b7",
+  "initial_review_sha256": "0acc55d770950a84c17e129c5d451f406fba5610db5a752c4a4c92e3b4516a78",
+  "finding_resolved": "IDENTITYGRAPH01",
+  "verified": {"frozen_live_inputs": 8, "exact_single_byte_substitution": true, "all_other_backend_bytes_unchanged": true, "map_unchanged": true, "report_and_closure_unchanged": true, "registry_declared_compressed_wheel_download_bytes": 18439402, "not_installed_footprint_limitation_retained": true},
+  "findings": [],
+  "limits": "No metadata replay repeated, network, installs or runtime tests. Initial82-input metadata PASS retains its exact frozen scope; no wheel provenance/content, native/OIDC/security enforcement, production graph/adoption, expanded43-package trial permission or integrated/founder acceptance."
+}

@@ -1,0 +1,695 @@
+{
+  "product": "Hengshi Design v1",
+  "verdict": "PASS",
+  "verdict_scope": "Exact saved report/source correspondence and37 supplied static units only; incomplete pixel coverage remains held.",
+  "reviewed_at_utc": "2026-10-12T03:53:58.122893+00:00",
+  "packet_binding": {
+    "manifest": "output/research/b01-mode-coverage-2026-10-12/attempt29-2026-10-12/review-inputs.json",
+    "sha256": "87f393b1fb2bd6e57f86f849cb52ef92c1a7aef5e422b6e76bb310685438c119",
+    "verified_input_count": 107,
+    "all_frozen_byte_sizes_and_sha256_verified": true
+  },
+  "actual_authorization": {
+    "decision": "D084",
+    "attempt": 29,
+    "conservatively_metered": 26,
+    "one_combined_call_and_allowance_exception": "Consumed",
+    "authorization_sha256": "507def4c7257b485ef30bdfbd53d6b019d62ca37ab403d8816f14bc0c022bbf1",
+    "executed_source_sha256": "49d19df688dd2caf4f93720c8ee125cf78097dfab3db29cc3b113d3f66c0b23d",
+    "source_matches_separately_reviewed_source": true,
+    "source_review_sha256": "3d1744a46ffa35ce69df6aa07ccf50bb0fedc9c894c3461f161cc80aebecdf32",
+    "no_further_call_retry_or_paid_activation": true
+  },
+  "raw_correspondence": {
+    "raw_response_sha256": "3b43981f79c37088036106109a4d3561ab253ca7f36add31c76ef558a731e578",
+    "parsed_receipt_sha256": "98631654e1ca0fdf1b353bc6383ad7f66e11f11620dca14a2d5c8eadf1cddc85",
+    "parsed_receipt_equals_raw_text_report": true,
+    "actual_compact_report_bytes": 18770,
+    "finite19000byte_guard_met": true,
+    "four_saved_PNGs_byte_equal_raw_image_blocks": true
+  },
+  "report_accounting": {
+    "created": 1998,
+    "temporary_removed": 791,
+    "retained": 1207,
+    "annotations": 48,
+    "mutation_ids": 24
+  },
+  "name_repairs_reported_exactly_as_permitted": [
+    [
+      "32:1792",
+      "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01"
+    ],
+    [
+      "32:1847",
+      "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01"
+    ],
+    [
+      "32:1902",
+      "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01"
+    ],
+    [
+      "32:1957",
+      "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01"
+    ],
+    [
+      "32:2012",
+      "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01"
+    ],
+    [
+      "32:2077",
+      "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01"
+    ],
+    [
+      "32:2142",
+      "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01"
+    ],
+    [
+      "32:2207",
+      "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01"
+    ]
+  ],
+  "mutation_parent_and_repair_inventory_matches_source_records": true,
+  "fonts": {
+    "scope": "New-frame TEXT-node membership only; no exact span/rights/missing-font/editability or physical canvas census",
+    "groups": [
+      {
+        "font": {
+          "family": "Cascadia Mono",
+          "style": "Regular",
+          "variationSettings": {
+            "wght": 400
+          }
+        },
+        "reported_text_members": 141,
+        "members_not_in_created_inventory": 0,
+        "outside_members_are_instance_descendant_aliases_of_reported_retained_roots": true
+      },
+      {
+        "font": {
+          "family": "Inter",
+          "style": "Bold",
+          "variationSettings": {
+            "wght": 700,
+            "slnt": 0
+          }
+        },
+        "reported_text_members": 67,
+        "members_not_in_created_inventory": 0,
+        "outside_members_are_instance_descendant_aliases_of_reported_retained_roots": true
+      },
+      {
+        "font": {
+          "family": "Inter",
+          "style": "Regular",
+          "variationSettings": {
+            "wght": 400,
+            "slnt": 0
+          }
+        },
+        "reported_text_members": 550,
+        "members_not_in_created_inventory": 170,
+        "outside_members_are_instance_descendant_aliases_of_reported_retained_roots": true
+      }
+    ],
+    "union_reported_members": 758,
+    "instance_descendant_aliases_absent_from_created_inventory": 170,
+    "alias_root_association": "All170 nonmember IDs begin I and resolve structurally to a reported retained instance ID before the first semicolon; no live-node existence/ownership lookup was made.",
+    "created_ID_subset_claim": false
+  },
+  "capture": {
+    "planned_images": 5,
+    "returned_images": 4,
+    "requested_scale": 1,
+    "native_images_and_unique_sheet_mapping": [
+      {
+        "sheet_index": 0,
+        "dimensions": [
+          2776,
+          2692
+        ],
+        "file": "comparison-01.png"
+      },
+      {
+        "sheet_index": 1,
+        "dimensions": [
+          2432,
+          2214
+        ],
+        "file": "comparison-02.png"
+      },
+      {
+        "sheet_index": 2,
+        "dimensions": [
+          3808,
+          1822
+        ],
+        "file": "comparison-03.png"
+      },
+      {
+        "sheet_index": 3,
+        "dimensions": [
+          3808,
+          1840
+        ],
+        "file": "comparison-04.png"
+      }
+    ],
+    "sheet4_missing_native_dimensions": [
+      3808,
+      1996
+    ],
+    "exact_provided_unit_and_frame_crop_count": 37,
+    "all48_metadata_tiles_inside_and_nonoverlapping": true,
+    "all48_input_frame_unit_tile_mapping_exact": true,
+    "full_forced_colours_recovery_indices": [
+      39,
+      45,
+      46,
+      47
+    ],
+    "full_forced_colours_recovery_streams": [
+      "S-SEMANTIC",
+      "S-HIGH",
+      "S-MEDIUM",
+      "S-LOW"
+    ],
+    "all_four_full_baselines_have_supplied_pixels": true
+  },
+  "visual_inspection": [
+    {
+      "input_index": 0,
+      "frame_id": "36:2494",
+      "unit_id": "36:2493",
+      "reference_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_STANDARD_STREAM_HIGH_V01",
+      "unit_sha256": "694d7fcf4c93d2c949cca8ad4b8747b6a77a8f0bfdf686c8a691eafaa68f35a9",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 3,
+      "frame_id": "36:2587",
+      "unit_id": "36:2586",
+      "reference_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_STANDARD_STREAM_MEDIUM_V01",
+      "unit_sha256": "d70662affb1e454844d080b6796c74d502e5ce3d6caa63429abd3f1af8dd4327",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 7,
+      "frame_id": "36:2708",
+      "unit_id": "36:2707",
+      "reference_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_STANDARD_STREAM_SEMANTIC_V01",
+      "unit_sha256": "4b5075960b1392aa0008de70590a642e6f8138feeed5853cdd626a9e344044d9",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 9,
+      "frame_id": "36:2774",
+      "unit_id": "36:2773",
+      "reference_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_FORCED_COLORS_STREAM_SEMANTIC_V01",
+      "unit_sha256": "8c365e2d54299055bd9d2f6ed76d4310a996985b13303eb763ad01caf09dcb14",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 15,
+      "frame_id": "36:2937",
+      "unit_id": "36:2936",
+      "reference_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_STANDARD_STREAM_HIGH_V01",
+      "unit_sha256": "84d7f7b5f4ab90ed087255ec31b97110eb6e1bd2231a40377c092ad630cafefe",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 18,
+      "frame_id": "36:3040",
+      "unit_id": "36:3039",
+      "reference_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_STANDARD_STREAM_MEDIUM_V01",
+      "unit_sha256": "e6237cd56ff6c3e2184a74d2f0fef5c21ec2fc3c3b8bf17c34cd2c725a74f4ba",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 22,
+      "frame_id": "36:3171",
+      "unit_id": "36:3170",
+      "reference_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_STANDARD_STREAM_SEMANTIC_V01",
+      "unit_sha256": "35ea1044de4e92d752676766ff2c9f54b53aeb23608b323d2e6dd33b84ad997d",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 24,
+      "frame_id": "36:3247",
+      "unit_id": "36:3246",
+      "reference_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_FORCED_COLORS_STREAM_SEMANTIC_V01",
+      "unit_sha256": "a71e03bf869af676c1f0850062a26ec2489ad778403ae94ef4ed100f9f8d932f",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 30,
+      "frame_id": "36:3420",
+      "unit_id": "36:3419",
+      "reference_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_STANDARD_STREAM_HIGH_V01",
+      "unit_sha256": "5531c6d61d99f7563dbd284595dfb20c8cbeeed55ee39a0a1098a9ac7df8a044",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 33,
+      "frame_id": "36:3509",
+      "unit_id": "36:3508",
+      "reference_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_STANDARD_STREAM_MEDIUM_V01",
+      "unit_sha256": "2bbe947f89af069fad6a10a9215632bd1e8808641e692f0eb869ddf2cdb4e4ce",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 37,
+      "frame_id": "36:3627",
+      "unit_id": "36:3626",
+      "reference_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_STANDARD_STREAM_SEMANTIC_V01",
+      "unit_sha256": "2916130303adf1276cb49b6f68c07f5394b59afeba1d59d2b81ed69c4c4d4288",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 39,
+      "frame_id": "36:3688",
+      "unit_id": "36:3687",
+      "reference_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_FORCED_COLORS_STREAM_SEMANTIC_V01",
+      "unit_sha256": "6f98b1557e06b3ff404a7cc70598deb0a83a679978ed60c16c9cfb43bf2574e2",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 45,
+      "frame_id": "36:3849",
+      "unit_id": "36:3848",
+      "reference_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_FORCED_COLORS_STREAM_HIGH_V01",
+      "unit_sha256": "77e1c20f8a9a8e3e4aa0bb0b725bb4175cb2734d956e8fe1e7c64887af5581c6",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 46,
+      "frame_id": "36:3881",
+      "unit_id": "36:3880",
+      "reference_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_FORCED_COLORS_STREAM_MEDIUM_V01",
+      "unit_sha256": "8b173300d55083c1f05ae76dba970b30e199a991a8c4231dbec6530e6496ff72",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 47,
+      "frame_id": "36:3913",
+      "unit_id": "36:3912",
+      "reference_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_FORCED_COLORS_STREAM_LOW_V01",
+      "unit_sha256": "187ba6cd9240dbb68228a41841f450d790bc889b1082172d86a8c9df2085b9ab",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 1,
+      "frame_id": "36:2532",
+      "unit_id": "36:2531",
+      "reference_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_HIGH_V01",
+      "unit_sha256": "e063934ad0517dc55b3a3c7be0c3827e7c85343a3ea54974a6675cc834e53f48",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 2,
+      "frame_id": "36:2560",
+      "unit_id": "36:2559",
+      "reference_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_REDUCED_MOTION_STREAM_HIGH_V01",
+      "unit_sha256": "e4dd0a60ec3d81742df63bea6e6f5baf0f85d8443147808630c75a31ff369223",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 4,
+      "frame_id": "36:2625",
+      "unit_id": "36:2624",
+      "reference_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_MEDIUM_V01",
+      "unit_sha256": "e4f37d97022e3b9df55303b9b28851368374bd9b157f47772d4d4cdf0fff63d1",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 5,
+      "frame_id": "36:2653",
+      "unit_id": "36:2652",
+      "reference_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_LOW_POWER_STREAM_LOW_V01",
+      "unit_sha256": "5ce26dcb0db4217c021fde4121a0eafa0a769896788373787cb4d9ff0c2da5b7",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 6,
+      "frame_id": "36:2680",
+      "unit_id": "36:2679",
+      "reference_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_LOW_V01",
+      "unit_sha256": "97ee62334a83526002fe90ecef288ff9e9a063a514b5f4d3899c362e7efe0542",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 8,
+      "frame_id": "36:2746",
+      "unit_id": "36:2745",
+      "reference_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_SEMANTIC_V01",
+      "unit_sha256": "3466442f60e3acc6ad0209d608787491d670cc737f2f3462a28ac7af49995950",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 10,
+      "frame_id": "36:2812",
+      "unit_id": "36:2811",
+      "reference_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_PRINT_STREAM_SEMANTIC_V01",
+      "unit_sha256": "770c0ac2c16aa8a21099f85def85781efe02647b04c87933ae91aeffa504f790",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 11,
+      "frame_id": "36:2828",
+      "unit_id": "36:2827",
+      "reference_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_SEMANTIC_SHELL_STREAM_SEMANTIC_V01",
+      "unit_sha256": "92d2c1d1bd15e2cf59f32f92df75e750e3a2c155e9783cc6b6262434682a761c",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 12,
+      "frame_id": "36:2855",
+      "unit_id": "36:2854",
+      "reference_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_GRAYSCALE_STREAM_SEMANTIC_V01",
+      "unit_sha256": "c58121ccceac103160bab0e7b0c23e0f7375bc3b9bc4e2fff4f7992748129ae5",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 13,
+      "frame_id": "36:2882",
+      "unit_id": "36:2881",
+      "reference_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_UNAVAILABLE_FONT_STREAM_SEMANTIC_V01",
+      "unit_sha256": "fdd235e2c17c3a40ecc90a30b0ac99b21e3f47b72c01804b3101cf4ae17613d2",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 14,
+      "frame_id": "36:2909",
+      "unit_id": "36:2908",
+      "reference_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_UNAVAILABLE_IMAGE_ASSET_STREAM_SEMANTIC_V01",
+      "unit_sha256": "2f46d3e4b11bda40997c2395b71cb9ed1824f54238c8f603f69d6d5ea15eb1ae",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 16,
+      "frame_id": "36:2985",
+      "unit_id": "36:2984",
+      "reference_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_HIGH_V01",
+      "unit_sha256": "44715738c5f3eb86c099323d0f21755318a08f23527d4036b958640e952e3b41",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 17,
+      "frame_id": "36:3013",
+      "unit_id": "36:3012",
+      "reference_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_REDUCED_MOTION_STREAM_HIGH_V01",
+      "unit_sha256": "6a53db2bbbf7058b8b7cb97995b7deac7f96f279b46943d5d4f5ebc6a342d18a",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 19,
+      "frame_id": "36:3088",
+      "unit_id": "36:3087",
+      "reference_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_MEDIUM_V01",
+      "unit_sha256": "700349baa1ec77e1b0bf198460a5ada1a3e60d0519a0897795f15e4ac1dc5c80",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 20,
+      "frame_id": "36:3116",
+      "unit_id": "36:3115",
+      "reference_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_LOW_POWER_STREAM_LOW_V01",
+      "unit_sha256": "531ea561b4a4f1047202776704b064915fd6335c18ac396adaab8f7d521d8083",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 21,
+      "frame_id": "36:3143",
+      "unit_id": "36:3142",
+      "reference_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_LOW_V01",
+      "unit_sha256": "f43337c7d5ae59f81e71346a152fe1bf25b6a09375a36486321beff1884dc51c",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 23,
+      "frame_id": "36:3219",
+      "unit_id": "36:3218",
+      "reference_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_SEMANTIC_V01",
+      "unit_sha256": "0b86f28a020168729354ca0571938a152d0a085e4da5a1af561dd6aa55e04ea6",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 25,
+      "frame_id": "36:3295",
+      "unit_id": "36:3294",
+      "reference_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_PRINT_STREAM_SEMANTIC_V01",
+      "unit_sha256": "40ea7f673b78024e553f5c326b3c78563517849f3e4e970aa749f5fb78f55f32",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 26,
+      "frame_id": "36:3311",
+      "unit_id": "36:3310",
+      "reference_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_SEMANTIC_SHELL_STREAM_SEMANTIC_V01",
+      "unit_sha256": "0cd7de543b6ee32931ece55a6afb337f853a9ab5f04d6e822aebf0dfb4b9ea01",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 27,
+      "frame_id": "36:3338",
+      "unit_id": "36:3337",
+      "reference_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_GRAYSCALE_STREAM_SEMANTIC_V01",
+      "unit_sha256": "26430a484d890c746b303486f141c0e0b13548f439af54596cf27afa4254dc37",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 28,
+      "frame_id": "36:3365",
+      "unit_id": "36:3364",
+      "reference_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_UNAVAILABLE_FONT_STREAM_SEMANTIC_V01",
+      "unit_sha256": "0e78565e1465e8e7e594573f33533ebe7730d8c0e1e928d88ca64abe0b1f04ec",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    },
+    {
+      "input_index": 29,
+      "frame_id": "36:3392",
+      "unit_id": "36:3391",
+      "reference_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_UNAVAILABLE_IMAGE_ASSET_STREAM_SEMANTIC_V01",
+      "unit_sha256": "0da634924199a459d06cdf162c78eb20105b59ae2e8906cc6f1f312a0301be23",
+      "frame_unit_RGBA_source_pixel_equality": true,
+      "visually_inspected": "Direct original-resolution unit PNG, native320px width, including complete annotation block",
+      "visible_clipping_overlap_finding": false,
+      "binding_and_readable_order_finding": false
+    }
+  ],
+  "findings": [],
+  "coverage_holds": [
+    {
+      "input_index": 31,
+      "reference_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_HIGH_V01",
+      "frame_id": "36:3452",
+      "unit_id": "36:3451",
+      "reason": "Planned sheet4 has no returned PNG; metadata correspondence only, no visual verdict"
+    },
+    {
+      "input_index": 32,
+      "reference_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_REDUCED_MOTION_STREAM_HIGH_V01",
+      "frame_id": "36:3481",
+      "unit_id": "36:3480",
+      "reason": "Planned sheet4 has no returned PNG; metadata correspondence only, no visual verdict"
+    },
+    {
+      "input_index": 34,
+      "reference_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_MEDIUM_V01",
+      "frame_id": "36:3541",
+      "unit_id": "36:3540",
+      "reason": "Planned sheet4 has no returned PNG; metadata correspondence only, no visual verdict"
+    },
+    {
+      "input_index": 35,
+      "reference_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_LOW_POWER_STREAM_LOW_V01",
+      "frame_id": "36:3570",
+      "unit_id": "36:3569",
+      "reason": "Planned sheet4 has no returned PNG; metadata correspondence only, no visual verdict"
+    },
+    {
+      "input_index": 36,
+      "reference_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_LOW_V01",
+      "frame_id": "36:3598",
+      "unit_id": "36:3597",
+      "reason": "Planned sheet4 has no returned PNG; metadata correspondence only, no visual verdict"
+    },
+    {
+      "input_index": 38,
+      "reference_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_SEMANTIC_V01",
+      "frame_id": "36:3659",
+      "unit_id": "36:3658",
+      "reason": "Planned sheet4 has no returned PNG; metadata correspondence only, no visual verdict"
+    },
+    {
+      "input_index": 40,
+      "reference_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_PRINT_STREAM_SEMANTIC_V01",
+      "frame_id": "36:3720",
+      "unit_id": "36:3719",
+      "reason": "Planned sheet4 has no returned PNG; metadata correspondence only, no visual verdict"
+    },
+    {
+      "input_index": 41,
+      "reference_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SEMANTIC_SHELL_STREAM_SEMANTIC_V01",
+      "frame_id": "36:3736",
+      "unit_id": "36:3735",
+      "reason": "Planned sheet4 has no returned PNG; metadata correspondence only, no visual verdict"
+    },
+    {
+      "input_index": 42,
+      "reference_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_GRAYSCALE_STREAM_SEMANTIC_V01",
+      "frame_id": "36:3764",
+      "unit_id": "36:3763",
+      "reason": "Planned sheet4 has no returned PNG; metadata correspondence only, no visual verdict"
+    },
+    {
+      "input_index": 43,
+      "reference_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_UNAVAILABLE_FONT_STREAM_SEMANTIC_V01",
+      "frame_id": "36:3792",
+      "unit_id": "36:3791",
+      "reason": "Planned sheet4 has no returned PNG; metadata correspondence only, no visual verdict"
+    },
+    {
+      "input_index": 44,
+      "reference_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_UNAVAILABLE_IMAGE_ASSET_STREAM_SEMANTIC_V01",
+      "frame_id": "36:3820",
+      "unit_id": "36:3819",
+      "reason": "Planned sheet4 has no returned PNG; metadata correspondence only, no visual verdict"
+    }
+  ],
+  "observations": [
+    "All48 frame/unit records and48 annotations correspond to the exact approved input and separately reviewed source. The lossless prefix-range codec has no duplicate IDs and counts agree. Temporary/removed sets are equal subsets of reported creation; annotations, frame/unit roots and reported temporary clone IDs have their expected set membership. Counts are reported inventories, not exhaustive physical node counts.",
+    "Eight reported existing names exactly match the permitted REF-only repairs and IDs. The24 reported mutations include page, source-frame/control clone insertion parents and the eight original name IDs; no component/style/variable creation is reported. Actual present canvas identity/name and appearance preservation were not independently reread.",
+    "Returned bounded original/new descriptor, position/order and cleanup flags are true. These are retained source/report observations, not an independent exhaustive paint, prototype or editable-node proof.",
+    "Each supplied unit and frame crop is pixel-identical in RGBA to its reported box/top frame region in a saved raw-response PNG. Unique native dimensions identify sheets0-3; all48 planned tile boxes are inside bounds and nonoverlapping. The absent fifth-image cause is not established and no extra export/retry was made.",
+    "All37 supplied units were directly viewed at native320px width, including their complete annotation blocks. No visible text clipping, overlap, wrong stream/source label or unreadable content order was found. Current stream legend and pending checked choice remain distinct; semantic shell adds no failure solely for QuickAccess; recovery preserves confirmed pre-admission failure truth.",
+    "Print references are inert summaries with unapplied pending Detailed3D and /services,/book text; grayscale/white-ink forced-colour specimens preserve textual meaning. Unavailable-font specimens show readable mono reflow; absent optional mark preserves full company text. None establishes browser preference, real failure, OS palette, screen-reader execution or active action behavior.",
+    "Allfour full ERROR/320/FORCED_COLORS recovery baselines have supplied pixels. Eleven focused recovery references retain exact report/source IDs and mappings but have no visual evidence; metadata success cannot replace their missing pixels or complete the48-unit visual scope.",
+    "The170 InterRegular membership IDs absent from the retained creation set are instance-descendant aliases of reported retained instance roots. This substantiates the stated bounded inventory limit; no font-created-set subset or physical-canvas census is claimed.",
+    "Returned prepared-only/current28attempts25metered limitation strings are inherited frozen preparation text. Actual execution/authority and29/26 accounting are controlled by D084, authorization and ledger. Those inherited strings supply neither further authority nor a claim that this actual result remained unexecuted."
+  ],
+  "limits": [
+    "PASS is saved artifact/static evidence accuracy for37 units only. Eleven missing focused recovery pixel views keep complete mode evidence coverage held.",
+    "No live Figma canvas reread, node/editability/variable/paint/prototype census or exhaustive original appearance-preservation comparison was performed. Reported roots and instance aliases are not independently certified physical nodes.",
+    "No actual keyboard/focus/zoom/assistive technology, OS forced-colours, reduced-motion preference, low-power/device, browser print or actual font/image-failure behavior was exercised.",
+    "No complete B01/design/accessibility/founder acceptance, final2x/SVG exports, editable native archive/restore_EXIT, production adoption, application behavior or Phase1 readiness is established.",
+    "No further Figma/network/install/account/provider/model/permissions/settings/application/asset/canonical/Git action, retry or delegation occurred. Only this exclusive-create result receipt was written.",
+    "The historical distinct renderer capacity/error marker is not an attempt29 result verdict and was not rewritten. This is the first review of the actual result."
+  ]
+}

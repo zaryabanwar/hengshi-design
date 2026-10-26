@@ -1,0 +1,47 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Read-only archive-admission helper candidate for qualification-plan-v1 steps02/06/07/09/12; not an execution controller",
+  "parent_plan": "output/research/python315-build-proposal-2026-10-15/qualification-plan-v1.json",
+  "helper": "archive_admission.py",
+  "tests": "test_archive_admission.py",
+  "independent_review": "TODO",
+  "acquisition_or_trial_authorized": false,
+  "trusted_inputs": [
+    "Parent-supplied immutable owned seekable byte stream; parent forbids concurrent writers throughout inspection and later use.",
+    "Expected size/digest/algorithm and finite limits from separately reviewed trusted metadata, never archive contents.",
+    "Only ZIP stored/deflated and stdlib TAR recognition are proposed; compression/profile drift stops rather than broadening admission."
+  ],
+  "output": "Whole-report inventory only after exact artifact identity, member checks and complete per-file reads. Parent must reject failure/exception; no partial inventory is an admission.",
+  "default_limits": {
+    "archive_bytes": 67108864,
+    "expanded_bytes": 134217728,
+    "members": 10000,
+    "path_bytes": 512,
+    "path_metadata_bytes": 2097152,
+    "cooperative_seconds": 180
+  },
+  "decisions": [
+    "Use standard-library archive readers; no custom decompressor/parser or extractor.",
+    "Reject traversal, drive/ADS/UNC/backslash, reserved/ambiguous lexical paths, case/parent collisions, links/special/sparse/reparse members; do not normalize rejected names into acceptable ones.",
+    "No filesystem writes, destination handling, network, imports from inspected bytes, extraction or execution."
+  ],
+  "review_questions": [
+    "Does the candidate implement the bounded read-only member/size/hash inventory under its explicit stable-stream precondition?",
+    "Do synthetic tests exercise real helper boundaries without copying implementation logic into expected results?",
+    "Are parser/resource/ownership/extraction limitations truthful and complete enough for presenting this subset only?"
+  ],
+  "remaining_before_trial": [
+    "Review this helper independently; this does not review or authorize a complete controller.",
+    "Prepare/review acquisition with exact trusted artifacts and redirect/size/hash controls, owned target/stream and filesystem containment/extraction.",
+    "Prepare/review retained-output reservations, actual free-space floor and owned process/environment/deadline/failure preservation with exact argument vectors.",
+    "Obtain exact runtime/source-build execution approval; require512MiB retained allowance plus1GiB floor before acquisition.",
+    "Review concrete build/full marker-extra closures before their respective installs, then trial results/notices before any adoption."
+  ],
+  "limits": [
+    "No hard CPU/memory quota: stdlib ZIP metadata and TAR extension parsing can allocate before entry checks. Cooperative clock is checked between reads/entries only.",
+    "No hostile/mutable file-object or destination-filesystem safety proof. Lexical casefold inventory is not Windows alias/reparse/8.3 containment enforcement.",
+    "No entropy/provenance/licensing/security clearance or full-graph/runtime/application/device/Phase1 qualification.",
+    "Existing interpreter3.14.5 only; actual3.15 behavior and official artifact contents remain unexecuted."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": "producer-static-inspection-v1",
+  "date": "2026-10-12",
+  "scope": "28 exact frame crops viewed in seven native comparison groups; tile checks and receipt inspected",
+  "frames_inspected": 28,
+  "observed_clipping_or_overlap": [],
+  "streams": [
+    "S-HIGH",
+    "S-MEDIUM",
+    "S-LOW",
+    "S-SEMANTIC"
+  ],
+  "font_observation": "Rendered sans headings/body and mono fixture/context appear consistent with inherited Inter and Cascadia Mono; report lists those families. Pixels do not prove exact font identity, editability or font rights.",
+  "source_claims": "Report preserves bounded geometry/text/positions/order; no exhaustive original paints/styles fingerprint",
+  "limits": [
+    "Design specimens, not actual browser zoom/reflow or landscape device tests",
+    "No executed controls, focus, announcements, assistive technology, forced colours or full viewport-state-mode-stream coverage",
+    "Annotation pixels will be independently inspected from full unit crops; producer frame crop inspection alone does not inspect all annotations",
+    "No B01 complete or founder acceptance; native final exports, restore/EXIT separate"
+  ],
+  "temporary_report": {
+    "created": 605,
+    "removed": 605,
+    "all_removed": true
+  },
+  "call_permission": "consumed"
+}

@@ -1,0 +1,105 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "reviewed_at_utc": "2026-10-24T06:18:27.774708+00:00",
+  "reviewer": "Independent reviewer /root/review_archive_candidate_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "PASS",
+  "scope": "Ten-input catalogue registration/owner-reference binding only; no whole session protocol requalification, handler implementation, policy adoption or runtime security proof.",
+  "packet": {
+    "path": "output/research/staff-session-controls-2026-10-17/catalogue-binding/review-inputs-v1.json",
+    "bytes": 2345,
+    "sha256": "8a68f2eaa8d5b2d6f332495712937f3c2eac6cc00407831704515329614e9340",
+    "input_count": 10,
+    "verified_before_review": 10,
+    "verified_again_before_receipt": 10,
+    "inputs": [
+      {
+        "path": "AGENTS.md",
+        "bytes": 8983,
+        "sha256": "f31b4bb42f954995cc12358284a992fde46ade98980238043c149f692b6474a5",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+        "bytes": 127532,
+        "sha256": "52bcd726757e57701ae08b305ba1027c7cfe882b4ed5fe05cb72df7f6f83fe12",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/interface-catalog.csv",
+        "bytes": 11010,
+        "sha256": "d1da0cac339c897a828f6e74fa03e557f82519fd41d987872c9f5befc6075446",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/STAFF_SESSION_PROTOCOL.md",
+        "bytes": 31953,
+        "sha256": "be8ba8c0381b257c0865a20b0352a86f72223d0d45fe2679d445b775d3ebb92b",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/staff-session-control.schema.json",
+        "bytes": 6329,
+        "sha256": "ed6b7d7f564289a9f53aa939d1c698ea0a60309fdf21b3ddb3c9def4953f12ef",
+        "verified": true
+      },
+      {
+        "path": "output/research/staff-session-controls-2026-10-17/correction-1/proposal-v1.json",
+        "bytes": 20847,
+        "sha256": "94092b67dd539fbdf2e68a44fa1e46dfb250b4a8af9670c4f37b22ab6dd5dbf8",
+        "verified": true
+      },
+      {
+        "path": "output/research/staff-session-controls-2026-10-17/correction-1/independent-review-controls-correction-v1.json",
+        "bytes": 12269,
+        "sha256": "3c1b73094d9acab523c1ab89abe78c5b29a6c8026f7349d7588dce732456b200",
+        "verified": true
+      },
+      {
+        "path": "output/research/staff-session-controls-2026-10-17/canonical-binding/independent-review-canonical-controls-v1.json",
+        "bytes": 13548,
+        "sha256": "fe215c47150f5e0c6752679d4415f9a0267749661f03c1c126a88b312bca4aec",
+        "verified": true
+      },
+      {
+        "path": "output/research/staff-session-controls-2026-10-17/catalogue-binding/INTERFACE_CATALOG.md.before",
+        "bytes": 125040,
+        "sha256": "5527253e3db392d1fb7f1222196c6b2a827d601cda581993e598d5188e25a545",
+        "verified": true
+      },
+      {
+        "path": "output/research/staff-session-controls-2026-10-17/catalogue-binding/interface-catalog.csv.before",
+        "bytes": 9820,
+        "sha256": "60eee6cfcaf34e5e8e60d49d12fdf4890fbbff6f0b5ca17b330dffe69d7862a5",
+        "verified": true
+      }
+    ]
+  },
+  "findings": [],
+  "actionable_finding_count": 0,
+  "assessments": [
+    {
+      "evidence": "INTERFACE_CATALOG.md:501-531; interface-catalog.csv:43-46; STAFF_SESSION_PROTOCOL.md:239-258",
+      "assessment": "Only one new catalogue section and four appended CSV rows relative to preserved before snapshots. Four unique method/path registrations agree with owning protocol: own current status and transient CSRF GETs, current/bounded-prior renewal POST and exact-session logout POST with separately defined harmless no-op. Existing rows and prototype routes remain unchanged; all four new CSV statuses TODO."
+    },
+    {
+      "evidence": "INTERFACE_CATALOG.md:503-531; STAFF_SESSION_PROTOCOL.md:260-397; staff-session-control.schema.json",
+      "assessment": "Catalogue references one owner for current/prior eligibility, original idle/absolute clocks, source/CSRF, closed HTTP directions, claims/cookie and resource semantics. No JWT/read CSRF leakage to status, new role grant, GET activity/Set-Cookie, renewal clock reset/business replay, stale-token successor revocation or Microsoft-sign-out equivalence is introduced. Root-rejecting schema and successful204 no-JSON limitations remain accurately stated."
+    },
+    {
+      "evidence": "INTERFACE_CATALOG.md:519-531; frozen corrected logical and canonical17-input review receipts",
+      "assessment": "Prior review PASS scopes are explicitly not inherited by this later registration. Corrected shared-network counter exclusion rule is retained with same finite global verification capacity; no service availability guarantee. Catalogue/data/physical mechanisms/runtime/integrated acceptance remain held."
+    }
+  ],
+  "review_method": [
+    "Verified all10 exact identities before and after review. Read owning protocol/schema and prior bounded receipts; compared both catalogue files against preserved before bytes and parsed CSV without executing product/schema tests.",
+    "No network/browser/Figma/application/Git or canonical changes; only this receipt written."
+  ],
+  "limits": [
+    "Definition binding only; no auth security/cryptography/tenant/key/network/physical mechanism qualification or adoption.",
+    "No tests run for prose/registration changes. Existing representation results in prior receipts remain scoped to exact frozen inputs.",
+    "No capacity error; DOING is not task DONE or commit."
+  ]
+}

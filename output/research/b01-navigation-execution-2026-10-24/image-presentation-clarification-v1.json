@@ -1,0 +1,73 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-24",
+  "reviewer": "/root/review_navigation_result_v1",
+  "type": "Superseding evidence-interpretation correction only",
+  "supersedes": "Only the claim in independent-review-result-v1.json that05-apply-simplified-result.jpg is a black transient saved canvas. Original receipt and all original evidence remain unchanged.",
+  "source_bindings": [
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/04-scrolled-apply-control.jpg",
+      "bytes": 63599,
+      "sha256": "30321331746c49fa566b92e4f7ac668433d85cea3df1d7376e3478d561891ca8"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/05-apply-simplified-result.jpg",
+      "bytes": 64436,
+      "sha256": "608413650dea548151ccbb57264f4014573f31757639c6a0c0ef7315e504a7c4"
+    },
+    {
+      "path": "output/research/b01-navigation-execution-2026-10-24/independent-review-result-v1.json",
+      "bytes": 8300,
+      "sha256": "467bf9950871a420c39b9c8061dcc3558a64fb86101f0703e10cad7a44cf2e7a"
+    }
+  ],
+  "decoded_pixel_observations": {
+    "04-scrolled-apply-control.jpg": {
+      "image_size": [
+        1280,
+        720
+      ],
+      "fixture_rectangle": [
+        600,
+        104,
+        920,
+        664
+      ],
+      "fixture_pixels": 179200,
+      "near_black_max_channel_lt10": 743,
+      "paper_min_channel_gt220": 148664,
+      "sample_610_400": [
+        250,
+        249,
+        245
+      ]
+    },
+    "05-apply-simplified-result.jpg": {
+      "image_size": [
+        1280,
+        720
+      ],
+      "fixture_rectangle": [
+        600,
+        104,
+        920,
+        664
+      ],
+      "fixture_pixels": 179200,
+      "near_black_max_channel_lt10": 743,
+      "paper_min_channel_gt220": 148664,
+      "sample_610_400": [
+        250,
+        249,
+        245
+      ]
+    }
+  },
+  "correction": "Direct JPEG decoding shows a predominantly light populated fixture in saved image05, not a black saved screenshot. The earlier assertion relied on misleading partial/black emitted image presentation. Pixel evidence changes that assertion only; it does not identify why presentation differed or prove a browser screenshot defect.",
+  "unchanged_limits": [
+    "Image05 still cannot independently establish active mode because its active caption is offscreen. Image06 remains the active Simplified confirmation.",
+    "The result review remains bounded saved-source/report/archive/representative-state consistency; no complete interaction, scroll/focus, restore, accessibility or B01/Phase1 acceptance."
+  ],
+  "verdict": "PASS for this narrow correction; no new product qualification"
+}

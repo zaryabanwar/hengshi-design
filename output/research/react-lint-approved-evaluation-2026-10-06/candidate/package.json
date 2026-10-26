@@ -1,0 +1,15 @@
+{
+  "name": "hengshi-v1-isolated-react-lint-evaluation",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "D-072 isolated development lint evaluation; no application adoption or production lock",
+  "devDependencies": {
+    "eslint": "10.12.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "@typescript-eslint/parser": "8.71.1",
+    "@typescript-eslint/eslint-plugin": "8.71.1",
+    "typescript": "npm:@typescript/typescript6@6.0.2",
+    "@typescript/native": "npm:typescript@7.0.2"
+  }
+}

@@ -1,10 +1,18 @@
 <!--
 SYNC IMPACT REPORT
-Version change: 1.0.0 -> 2.0.0
-Reason: Major governance amendment. The fixed React 18, PostgreSQL 16, and AWS
-baseline is replaced by the founder-approved latest-mutually-compatible-stable
-policy and Azure target; durable authority, phase-state, publication, SEO,
-accessibility, AI/data, and independent-review rules are now binding.
+2026-10-25 D-097: incremental AI delivery replaces the whole-Phase-1 build gate;
+progress-based correction replaces hard revision caps. Principles III-V and
+VII-VIII and Development Workflow amended. Rules, entry points, state and all
+five Spec Kit templates synchronized; local speckit-specify cap overridden.
+Product/definition version remains 1.0.0 under D-069; this dated governance
+amendment does not invent a product release. Historical frozen evidence remains.
+
+Version normalization: v1.0.0, the first production-definition package.
+Reason: Explicit founder instructions 2026-10-04 retain latest mutually compatible
+stable technology, normalize current product/definition naming to v1, prioritize
+Europe, defer Azure/AWS deployment selection and keep Outlook/Teams without making
+Microsoft 365 a prerequisite. This is a founder-directed naming reset; historical
+governance revisions do not become product release numbers.
 
 Modified principles:
 - I. Product Surfaces Stay Separate -> Product Surfaces Share Published Truth
@@ -37,9 +45,10 @@ Updated dependent artifacts:
 - .specify/templates/checklist-template.md
 
 Deferred reconciliation:
-- Phase 1 must supersede or reconcile docs/SPEC.md, docs/BACKLOG.md, the active
-  SRS/SAD/security plan, and specs/005-aws-deployment-launch. They remain
-  historical or prototype evidence and are not production authority.
+- Provider/region/SKU/cost and exact Microsoft account/API capabilities remain
+  held. Canonical records/templates are synchronized in bounded two-document
+  slices; reviewed historical artifacts remain evidence, not current deployment
+  or product-release authority. Full Phase 1 acceptance remains separate.
 -->
 
 # Hengshi Design Constitution
@@ -64,7 +73,9 @@ versioned source and provenance.
 ### II. Evidence-Led Platform Positioning
 
 Hengshi Design is a premium, platform-oriented innovation delivery partner for
-global mid-market and enterprise buyers. Public claims MUST be truthful,
+mid-market and enterprise buyers, targeting the European market first with global
+reach as a broader ambition. This establishes no European office or legal entity.
+Public claims MUST be truthful,
 substantiated, and attributable. Verified client work and Hengshi-owned capability
 demonstrations MUST be separate collections; fictional seeds MUST remain
 quarantined. “World-first” is an internal ambition and MUST NOT become a public
@@ -83,9 +94,13 @@ start from approved durable artifacts. The required set is `PROJECT.md`,
 Spec Kit artifacts under `specs/`. When present, read `spec.md`, `research.md`,
 `data-model.md`, contracts, `plan.md`, and `tasks.md` before implementation.
 
-No application feature development may begin until the Phase 1 definition, SEO,
-design, architecture, security, privacy, QA, deployment, and technology
-compatibility package is approved. Missing information may be derived only when
+D-097 orders delivery as accepted-brand application/shared foundations, complete
+2D website/platform and service journeys, full 3D World, then launch qualification.
+Each increment MUST have its relevant approved scope, visual references,
+contracts, coupled compatibility and test criteria before implementation. The
+whole Phase 1 package and unfinished 3D details MUST NOT block an unrelated,
+adequately defined 2D increment. All fourteen definition subjects remain required
+in their applicable increments. Missing information may be derived only when
 unambiguous, reversible, within approved scope, and recorded as an assumption. A
 choice that materially changes scope, risk, cost, public claims, or architecture
 requires founder approval.
@@ -95,7 +110,9 @@ requires founder approval.
 Production UI creation and material UI/UX changes MUST reference an approved
 Google Stitch or Figma design before implementation. Brand, UI, motion, sound,
 and 3D work follow `create -> validate -> inspect -> independent review -> revise
--> validate again -> founder approval`, with at most three revision cycles.
+-> validate again -> founder approval` for coherent material design batches.
+There is no numeric correction cap. Founder acceptance of unseen future screens
+is not inferred; the relevant intended surface MUST be visually reviewable first.
 
 Every indexable route MUST deliver complete, meaningful semantic HTML before
 client JavaScript executes. The responsive Quick Access route MUST provide
@@ -123,9 +140,23 @@ breaking changes, security status, evidence, and rollback. Exact versions MUST b
 locked only after the compatibility spike is re-run immediately before the
 relevant upgrade wave.
 
+Independently newest registry versions MUST remain unselected observations until
+the complete chosen graph is proven compatible. Peer ranges alone are insufficient.
+This rule governs all project tools, runtimes, frameworks, libraries, renderers,
+asset exporters, databases, browsers and external APIs, not only application code.
+The first product and current production-definition package MUST be called v1.
+Actual package versions, schema/protocol identifiers and dated historical evidence
+MUST remain accurate and MUST NOT be relabeled to fabricate compatibility/history.
+
 If the newest stable major is blocked, select the newest proven-compatible stable
 release, record the exact blocker and evidence in an ADR, and schedule a quarterly
 recheck. Compatibility exceptions are temporary and require founder approval.
+
+D-097 qualifies the complete graph actually coupled to the current increment,
+including transitive dependencies and shared installed tools. Unconsumed future
+3D/exporter and deferred hosting graphs are qualified before their use, not before
+unrelated 2D work. Increment evidence MUST NOT be called complete-platform graph
+qualification. Preserve D-072/D-077 exception conditions.
 
 ### VI. AI, Data, and Trust Boundaries
 
@@ -160,23 +191,35 @@ color, memory, performance, fallback, and screenshot comparisons. Database and
 deployment changes require backup, restore, migration, rollback, and candidate
 release evidence.
 
-The producer MUST NOT approve their own material output. Independent reviewers are
-required for design, code, accessibility, security, QA, and deployment gates as
-applicable. Release evidence MUST include deterministic locks, an SBOM and license
+The producer MUST NOT claim independent review of their own output. Independent
+review is required for coherent material design batches, requested review, and
+money/security/external-system changes. Routine implementation uses relevant
+tests and browser verification; prose/link/status changes and each individual fix
+MUST NOT generate mandatory independent review packets. Review the affected final
+behavior and material deltas, reusing valid evidence. Release evidence MUST include deterministic locks, an SBOM and license
 inventory, no unbounded production dependencies, and no unresolved
 production-critical deprecation warning.
 
 ### VIII. Approval Gates and Phase State Are Binding
 
-All phase work follows:
+One work chat handles one user-assigned outcome: define the relevant increment,
+implement when its gates are satisfied, validate/inspect, review where Principle
+VII requires it, correct defects, report and stop. The discussion chat supplies
+the next prompt after the founder returns the preceding result. Do not start
+adjacent work, create chats or alter active app goals automatically.
 
-`create -> validate -> inspect -> independent review -> revise -> validate again -> founder approval`
+Task statuses MUST be TODO / DOING / DONE / BLOCKED. DONE requires relevant
+automated tests and an approved commit; deferred commits remain a separate gate.
+Founder acceptance and review verdicts are evidence, not additional task statuses.
+Launch credentials, sign-off, load/accessibility qualification, staging and
+deployment do not redefine code completion or excuse missing behavioral tests.
 
-Permitted phase states are `not_started`, `in_progress`, `blocked`,
-`awaiting_human`, `in_review`, and `accepted`. Only founder approval moves a
-material phase to `accepted`. Revision limits are two cycles by default and three
-for brand, UI, motion, and 3D. Exhausted revisions MUST be recorded as unresolved
-findings and presented for a decision instead of silently looping.
+There is no hard two/three-cycle revision cap, including previously exhausted
+correction limits. Continue safe in-scope fixes while evidence shows progress.
+Repeated failures MUST trigger a changed diagnosis or approach, not identical
+retries. Escalate only affected work for a genuine scope, risk, cost, public-claim,
+architecture, authority or missing-input decision. Never waive failing criteria
+merely to close an increment. Preserve historical failures and protected evidence.
 
 No branch, commit, migration, paid-service activation, credential change,
 external design write, production promotion, or deployment may occur without its
@@ -214,15 +257,24 @@ may continue.
   SQLAlchemy, Alembic, Psycopg, JWT, bcrypt, HTTPX, and pytest, exactly locked by
   a deterministic standards-based Python workflow.
 - Database: target the current stable PostgreSQL generation. Use PostgreSQL 18's
-  current stable minor when it is GA in the approved Azure region; otherwise use
+  current stable minor when it is GA in the eventually approved provider/region; otherwise use
   the newest regionally available GA major under an ADR and quarterly recheck.
 - Rendering: WebGL remains the production 3D renderer. WebGPU is an isolated
   experiment until official support and complete parity are stable.
 - Architecture: two deployables; deterministic static prerendering for all
-  indexable pages; Azure Front Door and versioned static storage; Azure Container
-  Apps; PostgreSQL; Azure Managed Redis; Azure AI Search; policy-routed Azure and
-  production-licensed NVIDIA adapters; Azure Monitor/Application Insights; and
-  GitHub Actions with OIDC/workload identity.
+  indexable pages; immutable static release storage/routing; PostgreSQL durable
+  truth; ephemeral Redis; rebuildable approved search; policy-routed approved AI;
+  observability; and GitHub Actions with OIDC/workload identity. Deployment,
+  provider/region/SKU and cost planning are deferred by the founder. Azure and AWS
+  are candidates, not selected platforms; prioritize lowest feasible cost/free
+  services when planning resumes. Earlier Azure service mappings remain historical
+  candidates. Approved personal/confidential AI route policy is not silently
+  replaced by opening hosting alternatives. No resources or paid activation.
+- Integrations: retain Outlook/Teams intent. Microsoft 365 subscription/setup is
+  not a prerequisite; verify exact account types, API permissions and entitlement
+  for each automated calendar/meeting/presence/notification operation. Free client
+  access does not establish every Graph capability. Entra staff identity remains
+  approved; no provider/identity replacement is inferred.
 - Release: immutable artifacts, production images pinned by digest, GitHub Actions
   pinned by commit SHA, zero-traffic candidate revisions, manual promotion, and
   tested rollback. Production artifacts MUST NOT use `latest` tags.
@@ -238,30 +290,34 @@ may continue.
 1. Read `AGENTS.md`, this constitution, and the durable root project records.
 2. Read `docs/software-definition/README.md` and the relevant approved feature
    artifacts.
-3. Confirm the current phase, task contract, write scope, exclusions, revision
-   limit, evidence requirements, and human gate in `PROJECT_STATE.yaml` and
+3. Confirm the current increment, task contract, write scope, exclusions,
+   evidence requirements, and applicable human gate in `PROJECT_STATE.yaml` and
    `TASKS.md`.
 4. Resolve version-sensitive decisions through Context7 and official primary
    sources before selecting exact versions.
 5. Reference approved Stitch/Figma output before production UI work.
 6. Stabilize known fatal baseline defects before modernization; keep upgrade waves
    separate from feature development.
-7. Create, validate, inspect, independently review, revise, and validate again.
-8. Record decisions, risks, manual actions, evidence, and status before requesting
-   founder approval.
+7. Create, validate and inspect; review where required, fix findings and revalidate
+   affected behavior without a numeric cap.
+8. Update owning product references and the compact checkpoint; report and stop.
+   Record actual founder decisions only, not routine status/review narratives.
+   Keep each documentation slice to at most two files.
 9. Perform Git, migration, external-write, paid-service, and deployment actions
    only after their separate approval gates.
 
 ## Governance
 
-This constitution supersedes conflicting fixed-version, AWS, prototype-readiness,
-or ad hoc implementation claims. Amendments require a documented rationale,
-semantic version change, founder approval, and synchronized updates to affected
+This v1 constitution supersedes conflicting fixed-version, standalone all-latest,
+provider-selection, prototype-readiness or ad hoc implementation claims. Amendments
+require a documented rationale, founder approval, and synchronized updates to affected
 templates, project rules, software definitions, specs, state, and decision
 records.
 
-Patch amendments clarify wording without changing obligations. Minor amendments
-add compatible guidance or sections. Major amendments remove or redefine binding
-principles, authority, architecture families, or approval obligations.
+During this first-development reconciliation, v1 remains the current product and
+definition label. Dated decisions and reviewed evidence identify internal changes;
+they do not invent subsequent production releases. A later release/versioning policy
+requires a real approved release decision. Technical schema/protocol and dependency
+versioning retain their own accurate compatibility semantics.
 
-**Version**: 2.0.0 | **Ratified**: 2026-06-24 | **Last Amended**: 2026-07-18
+**Version**: 1.0.0 | **Ratified**: 2026-06-24 | **Last Amended**: 2026-10-25 (D-097)

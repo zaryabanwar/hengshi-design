@@ -1,0 +1,15 @@
+{
+  "status": "DOING",
+  "verdict": "REVISE",
+  "metadata_replay_verdict": "PASS",
+  "scope": "Frozen 82-input unselected Authlib candidate metadata closure and two canonical additions only; correction cycle0",
+  "manifest_sha256": "42b66cfa2c017e09ff1862dedfb920a208846e9fa221fd2c0eb569287d3879d3",
+  "replay": "independent-replay-results.json",
+  "replay_sha256": "c9beb73bff807cde3fbb648ce512a1b07fee441b551a8b721bf14fe0be9540ba",
+  "script": "independent-replay.py",
+  "script_sha256": "3ff9552c2ff6c8b507147d4e0e0c7b1d13c6ca600a81e65a3698fec95e4d432f",
+  "verified": {"frozen_and_live_inputs": 82, "roots": 13, "packages": 45, "active_marker_extra_edges": 51, "previous43_complete_metadata_download_info_unchanged": true, "additions": {"authlib": "1.8.0", "joserfc": "1.7.5"}, "registry_metadata_python_tags_artifact_hash_associations": true, "required_extras_retained_drafts_pycryptodome_excluded": true, "protected_inputs_unchanged": 6, "two_registry_and_one_release_raw_gzip_hashes": true, "joserfc_v_prefix404_actual_release200_preserved": true, "exact_backend_prefix_and_one_map_row_append_preserved": true, "pending43_trial_plan_unapproved_unchanged": true},
+  "findings": [{"id": "IDENTITYGRAPH01", "severity": "P3", "file": "docs/phase-1-compatibility/backend-evidence-2026-10-04.md", "line": 460, "issue": "Compressed registry archive size mislabels the measured object. The 18,439,402-byte total sums size values of selected distribution wheels listed by registry; it is not the saved registry JSON gzip size.", "requested_correction": "Replace with total registry-declared compressed distribution wheel size, retaining the not-installed-footprint limitation."}],
+  "reviewer_execution": "Read-only saved-data replay. Three reviewer harness path/key corrections were made before the successful replay; no producer or canonical input changed.",
+  "limits": ["No network or source execution/import, package installation, wheel content/download verification, native/API/ABI/database compatibility or actual OIDC/Entra/security enforcement.", "Saved404 is retained response observation without a retained raw404 body; the200 release object raw and gzip hashes verify.", "No source-to-wheel provenance, complete latest-compatible graph selection, licence/advisory clearance, release adoption, capacity/footprint guarantee, expanded43-package trial permission or integrated/founder acceptance.", "Prior43 candidate hash compared to frozen closure/plan declarations; its actual hash-pin file is outside this82-input packet. Earlier reviews keep their own exact scopes."]
+}

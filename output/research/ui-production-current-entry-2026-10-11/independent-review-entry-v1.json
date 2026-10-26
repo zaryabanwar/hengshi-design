@@ -1,0 +1,147 @@
+{
+  "schema_version": "independent-navigation-review-v1",
+  "reviewer_id": "review_refusal_execution_replacement",
+  "producer_id": "root",
+  "reviewed_at_utc": "2026-10-11T04:38:16.108907+00:00",
+  "verdict": "PASS",
+  "scope": "Only README new Phase1 evidence/accepted amendments section lines37-66 and reconciliation-map deliverable6 line85; bounded documentation/navigation consistency",
+  "packet": {
+    "path": "output/research/ui-production-current-entry-2026-10-11/review-inputs.json",
+    "bytes": 2497,
+    "sha256": "9eff77f5fdc695d1ce14da5f2fa597097a66fe455da01e7e53d689c911d44546",
+    "input_count": 8
+  },
+  "frozen_inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "output/research/ui-production-current-entry-2026-10-11/inputs/00-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "output/research/ui-production-current-entry-2026-10-11/inputs/01-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "output/research/ui-production-current-entry-2026-10-11/inputs/02-DECISIONS.md",
+      "bytes": 92209,
+      "sha256": "5ac584900987a9d8eb97bd3d459adf3a9d52737e195e1848fc6fddbc70c3fe40"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "snapshot": "output/research/ui-production-current-entry-2026-10-11/inputs/03-UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "bytes": 45771,
+      "sha256": "1779fd3cd71f8210815fd7ddbbcd06faa6e5387e2d91584531be6d3806f8cf61"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/evidence-capture-plan.csv",
+      "snapshot": "output/research/ui-production-current-entry-2026-10-11/inputs/04-evidence-capture-plan.csv",
+      "bytes": 8428,
+      "sha256": "4dceafb6d78a859ff5aee23ac78e65180975e72e83ed14a40dc20a90ad4fa0fd"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "snapshot": "output/research/ui-production-current-entry-2026-10-11/inputs/05-B01_EXECUTION_BRIEF.md",
+      "bytes": 34503,
+      "sha256": "63f70e47c6b7f88c7b7d4e6ae7b39316e994ac1c9d02b7ba6ea36f435f24f787"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/README.md",
+      "snapshot": "output/research/ui-production-current-entry-2026-10-11/inputs/06-README.md",
+      "bytes": 12892,
+      "sha256": "f16f0bd7bcbce6151e8132c47c10f283b06909d1743248afc17efd6cb8080a74"
+    },
+    {
+      "source": "docs/software-definition/04-reconciliation-map.md",
+      "snapshot": "output/research/ui-production-current-entry-2026-10-11/inputs/07-04-reconciliation-map.md",
+      "bytes": 32173,
+      "sha256": "5367e168385f32a9c108a83dfe37c01b4ef949985e6a4cd9da3d6b06849a3f43"
+    }
+  ],
+  "all8_frozen_sizes_hashes_verified": true,
+  "before_copy_identities": [
+    {
+      "path": "output/research/ui-production-current-entry-2026-10-11/README.before.md",
+      "bytes": 10818,
+      "sha256": "d969077ee601895b89e4a121e9021141c337f45d98b39acfaa8af81b900b5238"
+    },
+    {
+      "path": "output/research/ui-production-current-entry-2026-10-11/reconciliation-map.before.md",
+      "bytes": 31896,
+      "sha256": "fc46a8b0ac8268c16fe291b8d6d361acaed4e160a868843f15b0d6ffd2dfcc06"
+    }
+  ],
+  "live_identity_checks_at_review": {
+    "AGENTS.md": true,
+    ".specify/memory/constitution.md": true,
+    "DECISIONS.md": true,
+    "docs/phase-1-ui-reference-production/UI_REFERENCE_PRODUCTION_CONTRACT.md": true,
+    "docs/phase-1-ui-reference-production/evidence-capture-plan.csv": true,
+    "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md": true,
+    "docs/phase-1-ui-reference-production/README.md": true,
+    "docs/software-definition/04-reconciliation-map.md": true
+  },
+  "findings": [],
+  "observations": [
+    {
+      "id": "UPCE-O1",
+      "result": "PASS",
+      "references": [
+        "output/research/ui-production-current-entry-2026-10-11/inputs/06-README.md:39",
+        "output/research/ui-production-current-entry-2026-10-11/inputs/02-DECISIONS.md:57",
+        "output/research/ui-production-current-entry-2026-10-11/inputs/02-DECISIONS.md:982"
+      ],
+      "conclusion": "D038 acceptedMA025 and bounded production;D075 permitsB01 execution with retained coverage,per-call permission/allowance,zero spending and independent design/accessibility/EXIT/founder pilot gates. New entry makes no new execution permission, later-batch release, product policy or coverage waiver."
+    },
+    {
+      "id": "UPCE-O2",
+      "result": "PASS",
+      "references": [
+        "output/research/ui-production-current-entry-2026-10-11/inputs/06-README.md:45",
+        "output/research/ui-production-current-entry-2026-10-11/inputs/02-DECISIONS.md:1090",
+        "output/research/ui-production-current-entry-2026-10-11/inputs/02-DECISIONS.md:1108",
+        "output/research/ui-production-current-entry-2026-10-11/inputs/03-UI_REFERENCE_PRODUCTION_CONTRACT.md:408",
+        "output/research/ui-production-current-entry-2026-10-11/inputs/04-evidence-capture-plan.csv:14"
+      ],
+      "conclusion": "Entry explicitly preserves original contract4.3item5 provenance and reconciles its old extension-duration wording with acceptedD078 and currentEC13:20seconds to act plus ten extension opportunities, separate pre-start range rule. D076 visitor inactivity/End and separate staff clocks remain unchanged. No timer/conformance evidence or fresh timing choice is claimed."
+    },
+    {
+      "id": "UPCE-O3",
+      "result": "PASS",
+      "references": [
+        "output/research/ui-production-current-entry-2026-10-11/inputs/06-README.md:53",
+        "output/research/ui-production-current-entry-2026-10-11/inputs/06-README.md:60",
+        "output/research/ui-production-current-entry-2026-10-11/inputs/03-UI_REFERENCE_PRODUCTION_CONTRACT.md:364",
+        "output/research/ui-production-current-entry-2026-10-11/inputs/03-UI_REFERENCE_PRODUCTION_CONTRACT.md:373",
+        "output/research/ui-production-current-entry-2026-10-11/inputs/03-UI_REFERENCE_PRODUCTION_CONTRACT.md:376",
+        "output/research/ui-production-current-entry-2026-10-11/inputs/04-evidence-capture-plan.csv:8",
+        "output/research/ui-production-current-entry-2026-10-11/inputs/07-04-reconciliation-map.md:85"
+      ],
+      "conclusion": "TEST_CAPTURE is expressly excluded fromMA025 by contract4.1 andEC07 and belongs after application implementation. CurrentFigma prototypes/focus-return/disclosure/modal/transition demonstrations and interaction/semantics/accessibility annotations remain required design evidence. Design coverage,PRIM mappings,archives/provider-independent exports/inventories,restore/EXIT,distinct independent design/accessibility reviews and founder pilot acceptance remain. New deliverable6 row retainsDOING and laterB02-B09 gating; no runtime/WCAG conformance is inferred from design evidence."
+    },
+    {
+      "id": "UPCE-O4",
+      "result": "PASS",
+      "references": [
+        "output/research/ui-production-current-entry-2026-10-11/README.before.md",
+        "output/research/ui-production-current-entry-2026-10-11/inputs/06-README.md:37",
+        "output/research/ui-production-current-entry-2026-10-11/inputs/06-README.md:68",
+        "output/research/ui-production-current-entry-2026-10-11/reconciliation-map.before.md",
+        "output/research/ui-production-current-entry-2026-10-11/inputs/07-04-reconciliation-map.md:85",
+        "output/research/ui-production-current-entry-2026-10-11/inputs/03-UI_REFERENCE_PRODUCTION_CONTRACT.md"
+      ],
+      "conclusion": "Removing only newly inserted README section bytes yields supplied before-copy byte-for-byte, preserving all historical body/current preceding content. Reconciliation map has same line count and exactly one changed line85. Contract frozen45771bytes sha1779fd3cd71f8210815fd7ddbbcd06faa6e5387e2d91584531be6d3806f8cf61 matches current live file; its original4.3 old timing wording remains untouched, with reconciliation supplied in entry rather than rewritten normative source."
+    }
+  ],
+  "inspection_limits": [
+    "Named decision/contract/capture sections and exact before/current differences only; no whole-document acceptance or reopening settled approvals",
+    "Contract identity check is frozen/current byte correspondence and retained historical wording; no Git/history mutation audit performed",
+    "Phrase/count/hash and navigation checks are artifact integrity, not runtime/accessibility/security/coverage acceptance",
+    "No new policy,permission,coverage exemption,external call,application implementation,founder acceptance or completePhase1/B01 approval follows",
+    "Other producer integration changes outside frozen packet remain outside this review",
+    "Only this exclusive-create receipt was written; no source,packet,existing review,contract or external state changed"
+  ]
+}

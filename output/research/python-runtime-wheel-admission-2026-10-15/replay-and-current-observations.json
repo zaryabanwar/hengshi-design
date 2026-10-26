@@ -1,0 +1,275 @@
+{
+  "status": "DOING",
+  "completed_at_utc": "2026-10-15T03:19:02.700494+00:00",
+  "original_failures_preserved": [
+    {
+      "key": "python-3150",
+      "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+    },
+    {
+      "key": "python-3148",
+      "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+    }
+  ],
+  "offline_document_recovery": [
+    {
+      "key": "python-3150",
+      "source_url": "https://www.python.org/downloads/release/python-3150/",
+      "saved_response": "captures\\python-3150.html.gz",
+      "saved_sha256": "2c4281f2a755161206c63a18f8d21b1c7a95fc097f4c782d58be109fa50b861c",
+      "response_bytes_sha256": "87faad477191d13df323b78c0c74cffe6a452ceefce4661a102194a536c4092d",
+      "decoded": "captures/python-3150.decoded.html.gz",
+      "decoded_bytes": 53531,
+      "decoded_sha256": "f5ad55ba2161738c6ab2327653c717f442b43ab58cf6804d821409182126fc1e",
+      "release_heading": [
+        "Python 3.15.0"
+      ],
+      "date_strings": [],
+      "recovery": "Offline decode of compressed response; no second request.",
+      "limitation": "Original fetch wrote response before its text decode failed; response headers/status/timestamp were not retained for these two records."
+    },
+    {
+      "key": "python-3148",
+      "source_url": "https://www.python.org/downloads/release/python-3148/",
+      "saved_response": "captures\\python-3148.html.gz",
+      "saved_sha256": "7854e0bd5258b3969b05341c3ef8083fe9c19a8790d5ed26c0eea8300b9af69b",
+      "response_bytes_sha256": "8c973f298407a005b5a666d2d26e54afc5415b6f2f2c6189844b6c2c8fa18657",
+      "decoded": "captures/python-3148.decoded.html.gz",
+      "decoded_bytes": 56887,
+      "decoded_sha256": "01b4ebcfb6fe205cdb236dda0ade80c0a12d4049d74153f04426f1b7322a6987",
+      "release_heading": [
+        "Python 3.14.8"
+      ],
+      "date_strings": [],
+      "recovery": "Offline decode of compressed response; no second request.",
+      "limitation": "Original fetch wrote response before its text decode failed; response headers/status/timestamp were not retained for these two records."
+    }
+  ],
+  "package_replay_equal": true,
+  "package_count": 48,
+  "original_trial_files_still_match_registry": 48,
+  "frozen_summary": {
+    "3.14.8": {
+      "admitted_count": 48,
+      "not_admitted": []
+    },
+    "3.15.0": {
+      "admitted_count": 46,
+      "not_admitted": [
+        {
+          "name": "httptools",
+          "version": "0.8.0",
+          "release_requires_python": ">=3.9",
+          "release_requires_python_allows": true,
+          "admitted": false,
+          "applicable_wheels": [],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 49,
+            "not_wheel": 1
+          }
+        },
+        {
+          "name": "pyyaml",
+          "version": "6.0.3",
+          "release_requires_python": ">=3.8",
+          "release_requires_python_allows": true,
+          "admitted": false,
+          "applicable_wheels": [],
+          "rejected_file_counts": {
+            "yanked": 0,
+            "requires_python": 0,
+            "tags": 72,
+            "not_wheel": 1
+          }
+        }
+      ]
+    }
+  },
+  "latest_blocker_observations": [
+    {
+      "capture": {
+        "key": "httptools-current",
+        "url": "https://pypi.org/pypi/httptools/json",
+        "final_url": "https://pypi.org/pypi/httptools/json",
+        "captured_at_utc": "2026-10-15T03:19:00.968716+00:00",
+        "http_status": 200,
+        "content_type": "application/json",
+        "etag": "\"BcL576YLcf2QQpLDn0HIUA\"",
+        "last_serial": "42034415",
+        "raw_bytes": 605586,
+        "sha256": "224380cfdc6a5a1154c38cbbe6043ae3200c18c55007ee600ca46951005742f3",
+        "saved": "captures/httptools-current.json.gz",
+        "compressed_bytes": 110116,
+        "compressed_sha256": "07ab8fa56ab313bb1f048053a4f1c7c33a90bb06b75b1bb47c63614c84a44c44"
+      },
+      "observation": {
+        "name": "httptools",
+        "version": "0.9.0",
+        "release_requires_python": ">=3.9",
+        "targets": {
+          "3.14.8": {
+            "release_requires_python_allows": true,
+            "admitted": true,
+            "applicable_wheels": [
+              {
+                "filename": "httptools-0.9.0-cp314-cp314-win_amd64.whl",
+                "url": "https://files.pythonhosted.org/packages/99/05/7de70a4eea3b52d31a95fe64eb5775ccdead01e4913e4741b4424e9ef180/httptools-0.9.0-cp314-cp314-win_amd64.whl",
+                "sha256": "edd5aa045fa3cc57143db018dd32ce7962bd5b525d05230709015d7e570100aa",
+                "size": 94809,
+                "requires_python": ">=3.9",
+                "upload_time_iso_8601": "2026-10-09T19:55:33.423030Z",
+                "matching_tags": [
+                  "cp314-cp314-win_amd64"
+                ],
+                "preference_rank": 0
+              }
+            ],
+            "rejected_file_counts": {
+              "yanked": 0,
+              "requires_python": 0,
+              "tags": 116,
+              "not_wheel": 1
+            }
+          },
+          "3.15.0": {
+            "release_requires_python_allows": true,
+            "admitted": true,
+            "applicable_wheels": [
+              {
+                "filename": "httptools-0.9.0-cp315-cp315-win_amd64.whl",
+                "url": "https://files.pythonhosted.org/packages/4a/cd/347f12eb16e20972dcdacbca907f2c52d72a36542199a5bf3ca342c92098/httptools-0.9.0-cp315-cp315-win_amd64.whl",
+                "sha256": "b5a3f5f70967a1aa2bc47fec42a1e19d2fb38c61700e3ee62b63a4af4f4fd001",
+                "size": 94617,
+                "requires_python": ">=3.9",
+                "upload_time_iso_8601": "2026-10-09T19:56:17.257539Z",
+                "matching_tags": [
+                  "cp315-cp315-win_amd64"
+                ],
+                "preference_rank": 0
+              }
+            ],
+            "rejected_file_counts": {
+              "yanked": 0,
+              "requires_python": 0,
+              "tags": 116,
+              "not_wheel": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "capture": {
+        "key": "pyyaml-current",
+        "url": "https://pypi.org/pypi/pyyaml/json",
+        "final_url": "https://pypi.org/pypi/pyyaml/json",
+        "captured_at_utc": "2026-10-15T03:19:02.686166+00:00",
+        "http_status": 200,
+        "content_type": "application/json",
+        "etag": "\"WMgssK4QOQSqYFpjRaRjjQ\"",
+        "last_serial": "31526105",
+        "raw_bytes": 558621,
+        "sha256": "d0c463a86ed24144dd112fd1fe43b7c208e52c7d3903c2f51c84acfb5b10c749",
+        "saved": "captures/pyyaml-current.json.gz",
+        "compressed_bytes": 105475,
+        "compressed_sha256": "6910211e0c03bddc2c058d60eff8713116e8e95a71a82dfee52b87f204e887ee"
+      },
+      "observation": {
+        "name": "pyyaml",
+        "version": "6.0.3",
+        "release_requires_python": ">=3.8",
+        "targets": {
+          "3.14.8": {
+            "release_requires_python_allows": true,
+            "admitted": true,
+            "applicable_wheels": [
+              {
+                "filename": "pyyaml-6.0.3-cp314-cp314-win_amd64.whl",
+                "url": "https://files.pythonhosted.org/packages/23/20/bb6982b26a40bb43951265ba29d4c246ef0ff59c9fdcdf0ed04e0687de4d/pyyaml-6.0.3-cp314-cp314-win_amd64.whl",
+                "sha256": "4a2e8cebe2ff6ab7d1050ecd59c25d4c8bd7e6f400f5f82b96557ac0abafd0ac",
+                "size": 156429,
+                "requires_python": ">=3.8",
+                "upload_time_iso_8601": "2025-09-25T21:32:57.844103Z",
+                "matching_tags": [
+                  "cp314-cp314-win_amd64"
+                ],
+                "preference_rank": 0
+              }
+            ],
+            "rejected_file_counts": {
+              "yanked": 0,
+              "requires_python": 0,
+              "tags": 71,
+              "not_wheel": 1
+            }
+          },
+          "3.15.0": {
+            "release_requires_python_allows": true,
+            "admitted": false,
+            "applicable_wheels": [],
+            "rejected_file_counts": {
+              "yanked": 0,
+              "requires_python": 0,
+              "tags": 72,
+              "not_wheel": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "public_tag_boundary_observations": [
+    {
+      "filename": "demo-1.0-cp314-cp314-win_amd64.whl",
+      "expected_admission": false,
+      "actual_admission": false
+    },
+    {
+      "filename": "demo-1.0-cp314-abi3-win_amd64.whl",
+      "expected_admission": true,
+      "actual_admission": true
+    },
+    {
+      "filename": "demo-1.0-cp315-cp315-win_amd64.whl",
+      "expected_admission": true,
+      "actual_admission": true
+    },
+    {
+      "filename": "demo-1.0-cp315-cp315t-win_amd64.whl",
+      "expected_admission": false,
+      "actual_admission": false
+    },
+    {
+      "filename": "demo-1.0-py3-none-any.whl",
+      "expected_admission": true,
+      "actual_admission": true
+    },
+    {
+      "filename": "demo-1.0-cp315-cp315-manylinux_2_17_x86_64.whl",
+      "expected_admission": false,
+      "actual_admission": false
+    }
+  ],
+  "abi3t_limit": "Packaging26.3 GIL-enabled cp315 tags omit abi3t despite CPython3.15 documenting a fallback. The frozen cryptography release has abi3t files and also matching abi3 Windows files; neither missing-wheel package has abi3t files. Thus this omission does not change the two observed blockers. Free-threaded builds remain unqualified.",
+  "protected_before": {
+    "package.json": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b",
+    "package-lock.json": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908",
+    "apps/web/package.json": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a",
+    "apps/web/package-lock.json": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d",
+    "apps/api/requirements.txt": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd",
+    "apps/api/.venv/pyvenv.cfg": "d23bc586f40b9aa9a601c8af0cab224cd4a40f0544a2f6348e9ad703f4d8ea39"
+  },
+  "protected_after": {
+    "package.json": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b",
+    "package-lock.json": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908",
+    "apps/web/package.json": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a",
+    "apps/web/package-lock.json": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d",
+    "apps/api/requirements.txt": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd",
+    "apps/api/.venv/pyvenv.cfg": "d23bc586f40b9aa9a601c8af0cab224cd4a40f0544a2f6348e9ad703f4d8ea39"
+  },
+  "protected_unchanged": true,
+  "claim_scope": "Metadata admission for frozen48 and two current package observations only; not new resolver closure, runtime execution, latest compatible selection, full notices/provenance or adoption.",
+  "next_action": "Check current stable package alternatives and changed-marker closure before proposing any separately authorized isolated runtime qualification. Do not bypass latest-compatible policy by assuming old runtime selection or silently removing Uvicorn standard extras."
+}

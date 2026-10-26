@@ -1,0 +1,9 @@
+### Result
+{
+  "canvas": 0,
+  "button": "Mount scene"
+}
+### Ran Playwright code
+```js
+await page.evaluate('() => ({canvas:document.querySelectorAll("canvas").length,button:[...document.querySelectorAll("button")].find(b=>b.textContent==="Mount scene")?.textContent})');
+```

@@ -1,0 +1,1 @@
+const fs=require('fs'); const AsyncFunction=Object.getPrototypeOf(async function(){}).constructor; new AsyncFunction(fs.readFileSync(process.argv[2],'utf8')); process.stdout.write('Prepared script syntax valid; provider execution not performed.\n');

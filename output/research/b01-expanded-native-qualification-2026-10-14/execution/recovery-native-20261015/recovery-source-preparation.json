@@ -1,0 +1,44 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "authority": "D-094",
+  "file_key": "GOmLP6Cv96l768ueSrZ5Dg",
+  "owned_section": "144:3197",
+  "source_root": "144:3241",
+  "source_tuple": "HIGH/HIGH/OPEN",
+  "source_current_canvas_equals_seven_edge_baseline": true,
+  "source_strategy": "Copy the5 admitted direct child visuals, not the main component, then create a new independent320x1150 Recovery component with preserved child positions. This avoids making an instance requiring detach. Preserve all existing source nodes/reactions.",
+  "source_direct_child_positions": {
+    "144:3237-layers-panel-row": {
+      "X-position": "24",
+      "Y-position": "16",
+      "Width": "240",
+      "Height": "48"
+    },
+    "144:3236-layers-panel-row": {
+      "X-position": "24",
+      "Y-position": "76"
+    },
+    "144:3235-layers-panel-row": {
+      "X-position": "24",
+      "Y-position": "148"
+    },
+    "144:3221-layers-panel-row": {
+      "X-position": "24",
+      "Y-position": "220"
+    },
+    "147:3203-layers-panel-row": {
+      "X-position": "24",
+      "Y-position": "1120",
+      "Width": "240",
+      "Height": "24"
+    }
+  },
+  "pending_actions": [
+    "Recover stable existing editor control and recheck source before copying.",
+    "Inspect actual copied layer IDs/types/ownership and clear only new copied inherited reactions before adaptation.",
+    "No new Recovery nodes have been created in this observation slice."
+  ],
+  "execution_hold": "Editor repeated Input.dispatchKeyEvent/Runtime.evaluate timeouts; same tab reloaded normally once. Inspect readiness on same handle, do not assume terminal/disconnected or repeat failed input blindly.",
+  "not_authorized": "No MCP call, Python315 trial execution, new AI prompt, deletion, sharing, account, application or Git action."
+}

@@ -1,0 +1,40 @@
+{
+  "observed_at_utc": "2026-10-05T22:12:51.471853+00:00",
+  "scope": "isolated type declarations only, no executable React runtime, application install or selected production graph",
+  "packages": [
+    {
+      "name": "@types/react",
+      "version": "19.3.0",
+      "source": "https://registry.npmjs.org/%40types%2Freact/latest",
+      "dependencies": {
+        "csstype": "^3.2.2"
+      },
+      "peerDependencies": {},
+      "archive_sha256": "ffa77ffdbdc82e5f67a0fd74d750990375a7dfd8685ec7f10a27c0db128f7766",
+      "declared_integrity_matched": true,
+      "package_metadata_sha256": "505c0df4cd73d6a02c946bd9b81451584bd9c83ea72d75cff9b826efceaa19c2"
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.3.0",
+      "source": "https://registry.npmjs.org/%40types%2Freact-dom/latest",
+      "dependencies": {},
+      "peerDependencies": {
+        "@types/react": "^19.3.0"
+      },
+      "archive_sha256": "0782e1cd4af4a6a030843235a48e55dc690c36f9428b0b672dc53350806dcf21",
+      "declared_integrity_matched": true,
+      "package_metadata_sha256": "4a2052bb362c34f1d39cfe0818b6fe01a9f988b609e8b7e4832aff7dbf2f7180"
+    },
+    {
+      "name": "csstype",
+      "version": "3.2.3",
+      "source": "https://registry.npmjs.org/csstype/latest",
+      "dependencies": {},
+      "peerDependencies": {},
+      "archive_sha256": "f3501f8ee1c73f7568fecb22c11231162c0467e59262461da5579519307427a3",
+      "declared_integrity_matched": true,
+      "package_metadata_sha256": "c818b74a9bc1556488b7ec2a65399224738f6619228f9a6491c5c02ca91f849e"
+    }
+  ]
+}

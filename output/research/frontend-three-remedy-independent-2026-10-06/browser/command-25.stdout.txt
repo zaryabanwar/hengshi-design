@@ -1,0 +1,11 @@
+### Result
+{
+  "canvas": 1,
+  "width": 390,
+  "viewport": 390,
+  "color": "oklch(0.508 0.118 165.612)"
+}
+### Ran Playwright code
+```js
+await page.evaluate('() => ({canvas:document.querySelectorAll("canvas").length,width:document.documentElement.scrollWidth,viewport:innerWidth,color:getComputedStyle(document.querySelector("button")).backgroundColor})');
+```

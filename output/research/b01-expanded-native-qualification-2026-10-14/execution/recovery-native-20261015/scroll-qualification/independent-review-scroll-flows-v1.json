@@ -1,0 +1,388 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-15",
+  "reviewed_at_utc": "2026-10-15T10:48:05.510875+00:00",
+  "reviewer": "Independent read-only reviewer /root/review_python315_build_proposal_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "PASS",
+  "review_outcome": "PASS",
+  "scope": "Bounded D094/D095 native scrolling/preview-entry slice: shared Vertical overflow evidence for the33 previously created named frames,11 new family/active preview flow entries plus retained Navigation HIGH entry, recorded Recovery SEMANTIC top/bottom/return-top playback sample and native archive integrity. Not the317-edge graph, reset/accessibility, full preservation, restore or B01/Phase1 acceptance.",
+  "packet": {
+    "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/scroll-qualification/review-inputs-v1.json",
+    "sha256": "748312626239851219269513788c3e0550a5f993146900c11ffb33e36104c0d4",
+    "input_count": 21,
+    "verified_byte_and_hash_count": 21,
+    "all_inputs": [
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\after-scroll-and-flows.fig",
+        "bytes": 430947,
+        "sha256": "5f355cd3149f30706941a3df3d36fa50909e2aadde3dc6fc469f7d6238a8810b",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\ENQ_DIRECTORY_HIGH-flow.txt",
+        "bytes": 13825,
+        "sha256": "c33b273a2de155c8a232b4de40969df589af96b2feae2e9a732e7002c999bda6",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\ENQ_DIRECTORY_LOW-flow.txt",
+        "bytes": 13823,
+        "sha256": "d8c56a9b845d5ce2cb838b049973244b49e2e70d2921cc6ffab255ca7338ffce",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\ENQ_DIRECTORY_MEDIUM-flow.txt",
+        "bytes": 13829,
+        "sha256": "fc7864a70d81f1222baf2fee1bef93a844cb0f67859c89d3744284f50c40ef26",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\ENQ_DIRECTORY_SEMANTIC-flow.txt",
+        "bytes": 13642,
+        "sha256": "105a1fd36ca9e75d0a5b491719e30d3690a7be08d6dc1db5b6dcdcdf8237a3c5",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\ENQ_NAVIGATION_HIGH-existing-flow.txt",
+        "bytes": 15993,
+        "sha256": "053b96c1832dcebcac47c88cb74880a7057b7c61647a17d422c3d5bfe39aefc2",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\ENQ_NAVIGATION_LOW-flow.txt",
+        "bytes": 15664,
+        "sha256": "5b816463bd1f35e1d56b0482008f0a69814ed96a9f2efa64dd053f1e6d48797b",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\ENQ_NAVIGATION_MEDIUM-flow.txt",
+        "bytes": 15670,
+        "sha256": "a0de8377a7497425a0c16a80fd4e5cbd864d4e36908ea364d23355aacb9bd50e",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\ENQ_NAVIGATION_SEMANTIC-flow.txt",
+        "bytes": 15674,
+        "sha256": "01bad83be24312b0210a695ab0502f28a79ce9e4cd16631ce289c66cd42377fb",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\ENQ_RECOVERY_HIGH-flow.txt",
+        "bytes": 12951,
+        "sha256": "d729ca98ba2e6cef1794113a11715790a58ca24faf88e6060c459f531f58d010",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\ENQ_RECOVERY_LOW-flow.txt",
+        "bytes": 12373,
+        "sha256": "f8d000c29c495b69ebf3204a3bdb58a369bf78232b9aafe56175b6236f70c839",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\ENQ_RECOVERY_MEDIUM-flow.txt",
+        "bytes": 12379,
+        "sha256": "eaefaa0a1b1358531659eb5f17375b54ee437fdc34f52f100dfc552c1eb6abd7",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\prototype-after.txt",
+        "bytes": 12641,
+        "sha256": "63c0a0f7c74255822033fb3487ec61ae99e9fd7372d2cd97e759c6f9038e742d",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\prototype-before.txt",
+        "bytes": 12645,
+        "sha256": "49a01903c6e484f9eabea9cc31b470f81a729e4f7f17094f232b622ece228562",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\recovery-semantic-bottom.png",
+        "bytes": 55986,
+        "sha256": "130c04bc5ad0e5433f82f2e1c803c114b5e4fa03d10e155c41a9eb56299c9c30",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\recovery-semantic-flow.txt",
+        "bytes": 12383,
+        "sha256": "829c1bd92b29cccec2b62d470bec150e8a3bbfb3764daed928258ece238195b1",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\recovery-semantic-preview-prototype.txt",
+        "bytes": 12433,
+        "sha256": "c27581d153f26ac7d3c2528f1359a37366bcff9171829cf156f535e6e4233061",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\recovery-semantic-return-top.png",
+        "bytes": 37830,
+        "sha256": "3350099da3966ba81de6f6d71f23a5ed4c1817d4ccd20aaebad0049c24f5e681",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\recovery-semantic-return-top.txt",
+        "bytes": 639,
+        "sha256": "a3a45c1953787871a2ea50509572e877bb32a1b01b663e8ec15a87b96bb61ce1",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\recovery-semantic-top.png",
+        "bytes": 37839,
+        "sha256": "8d5b586d4ab40c5575a29d54ddc35d5299940cf8d6f2183c91a34b18cfaf34a9",
+        "verified": true
+      },
+      {
+        "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\b01-expanded-native-qualification-2026-10-14\\execution\\recovery-native-20261015\\scroll-qualification\\selection-before.json",
+        "bytes": 4521,
+        "sha256": "5c25d9d067d63fdc5ecd823ba4c408855e0cac0d92390900c3fef3ccb8f65191",
+        "verified": true
+      }
+    ]
+  },
+  "supporting_context": [
+    {
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/independent-review-static33-v1.json",
+      "bytes": 43187,
+      "sha256": "8249c474c811e93a2eb3e8225d85d02e2f5ae80a3d75454b4f6439b49d129196",
+      "role": "Supporting scope/identity context explicitly named for review; not part of frozen21-input packet."
+    },
+    {
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/D095-authority-snapshot.md",
+      "bytes": 1534,
+      "sha256": "bce28d2d4d78ae08176a1509e1674e30897e0c3569f7509f60921c69a02d26df",
+      "role": "Supporting scope/identity context explicitly named for review; not part of frozen21-input packet."
+    },
+    {
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/qualification-plan-v1.json",
+      "bytes": 235601,
+      "sha256": "5e24ac8c203bf729b5190d359da2439c1b1f88f59665b1c65163b4b9002ab2ce",
+      "role": "Supporting scope/identity context explicitly named for review; not part of frozen21-input packet."
+    }
+  ],
+  "findings": [],
+  "actionable_finding_count": 0,
+  "method": [
+    "Read-only local evidence inspection; no Figma/MCP/browser/account/application/Git action, canonical/input edit or delegation. The already-read Figma/Product Design evidence guidance was applied to the supplied saved evidence, not a new live-flow audit.",
+    "Verified all21 frozen input byte counts and SHA256; compared the33-name selection with the prior reviewed static frame-ID/name mapping; inspected before/after settings snapshots and each relevant flow title/target.",
+    "Viewed all three supplied playback screenshots in sequence and read the saved presentation URL. Inspected native.fig ZIP CRC/member/header/metadata without import or restore.",
+    "Rechecked all21 frozen identities immediately before writing only this exclusive-created receipt. The scope is the recorded evidence sample; no additional runtime tests were executed."
+  ],
+  "assessments": [
+    {
+      "boundary": "Frame selection and shared overflow setting",
+      "result": "PASS",
+      "evidence": [
+        "selection-before.json",
+        "prototype-before.txt",
+        "prototype-after.txt",
+        "../independent-review-static33-v1.json"
+      ],
+      "assessment": "The independent33-name selection equals the complete previously reviewed set of new frames and excludes the three older Navigation HIGH frames. The same33 frame names appear in before/after trees. The shared Prototype inspector changes Overflow from No scrolling to Vertical; Position remains Scroll with parent. The text diff otherwise shows focus-state differences only. A nested ENQ host RECOVERY SEMANTIC row is also marked selected in the tree; it is not counted as a34th frame. The saved tree/inspector supports the named frame selection/shared-setting observation, not a binary proof that no descendant or unrelated property changed."
+    },
+    {
+      "boundary": "Relevant family/active preview entries",
+      "result": "PASS",
+      "evidence": [
+        "ENQ_DIRECTORY_HIGH-flow.txt",
+        "ENQ_DIRECTORY_LOW-flow.txt",
+        "ENQ_DIRECTORY_MEDIUM-flow.txt",
+        "ENQ_DIRECTORY_SEMANTIC-flow.txt",
+        "ENQ_NAVIGATION_HIGH-existing-flow.txt",
+        "ENQ_NAVIGATION_LOW-flow.txt",
+        "ENQ_NAVIGATION_MEDIUM-flow.txt",
+        "ENQ_NAVIGATION_SEMANTIC-flow.txt",
+        "ENQ_RECOVERY_HIGH-flow.txt",
+        "ENQ_RECOVERY_LOW-flow.txt",
+        "ENQ_RECOVERY_MEDIUM-flow.txt",
+        "recovery-semantic-flow.txt"
+      ],
+      "assessment": "Each of the11 new family/active entries has the exact expected ENQ_FAMILY_ACTIVE v1 title and matching / Preview target; its native inspector also shows Vertical. The existing Navigation HIGH entry remains observable with title ENQ / Navigation / Detailed 3D — isolated trial and target ENQ_NAVIGATION_HIGH / Preview. Together these are12 relevant family/active preview mappings, not a claim that the entire file contains only12 flows. Eleven new targets map by exact name to prior reviewed frame IDs; the old Navigation HIGH ID is not independently re-established in this packet."
+    },
+    {
+      "boundary": "Observed Recovery SEMANTIC playback",
+      "result": "PASS",
+      "evidence": [
+        "recovery-semantic-preview-prototype.txt",
+        "recovery-semantic-flow.txt",
+        "recovery-semantic-top.png",
+        "recovery-semantic-bottom.png",
+        "recovery-semantic-return-top.png",
+        "recovery-semantic-return-top.txt"
+      ],
+      "assessment": "The supplied three screenshots show the same Recovery Quick Access presentation viewport first at the synthetic offline Services/context heading and checked Quick Access choice, then down at the complete lower Apply selection button, Privacy and storage link and Trial scroll marker, then back at the visible top state. Saved presentation URL identifies preview node175:3797, consistent with the prior frame mapping. This demonstrates recorded vertical reachability and return for one preview sample. It does not demonstrate any Apply action, selection change, exact scroll-offset comparator, matching layers or transition/reset behavior. The earlier screenshot sidebar is not used as a final whole-file flow census."
+    },
+    {
+      "boundary": "Native archive",
+      "result": "PASS",
+      "evidence": [
+        "after-scroll-and-flows.fig"
+      ],
+      "assessment": "The frozen native.fig archive matches its430947-byte/hash binding, passes ZIP CRC and contains canvas.fig, thumbnail.png, meta.json and images/. The canvas signature is the expected native fig-kiwi header and metadata identifies the UI References file. This supports retained native-format archive integrity only; edit locality, full preservation, successful import/editing and restore are not established by ZIP integrity."
+    },
+    {
+      "boundary": "Scope and claim discipline",
+      "result": "PASS",
+      "evidence": [
+        "review-inputs-v1.json",
+        "../D095-authority-snapshot.md",
+        "../../../qualification-plan-v1.json"
+      ],
+      "assessment": "The recorded operation stays within the supplied approved viewport/preview-entry/scrolled-sample scope under the D094/D095 routing clarification. It does not use a tool preference as a no-AI ban or treat this review as a new authorization. The317 planned edges, preserved/noop/reset comparators, full source/binding preservation, accessibility and integrated acceptance remain separate. No actionable defect in the bounded evidence was found."
+    }
+  ],
+  "flow_mappings": [
+    {
+      "evidence": "ENQ_DIRECTORY_HIGH-flow.txt",
+      "title": "ENQ_DIRECTORY_HIGH v1",
+      "target_name": "ENQ_DIRECTORY_HIGH / Preview",
+      "target_frame_id_from_prior_static_receipt": "175:3491",
+      "scope": "new relevant entry observed",
+      "result": "PASS"
+    },
+    {
+      "evidence": "ENQ_DIRECTORY_LOW-flow.txt",
+      "title": "ENQ_DIRECTORY_LOW v1",
+      "target_name": "ENQ_DIRECTORY_LOW / Preview",
+      "target_frame_id_from_prior_static_receipt": "175:3545",
+      "scope": "new relevant entry observed",
+      "result": "PASS"
+    },
+    {
+      "evidence": "ENQ_DIRECTORY_MEDIUM-flow.txt",
+      "title": "ENQ_DIRECTORY_MEDIUM v1",
+      "target_name": "ENQ_DIRECTORY_MEDIUM / Preview",
+      "target_frame_id_from_prior_static_receipt": "175:3518",
+      "scope": "new relevant entry observed",
+      "result": "PASS"
+    },
+    {
+      "evidence": "ENQ_DIRECTORY_SEMANTIC-flow.txt",
+      "title": "ENQ_DIRECTORY_SEMANTIC v1",
+      "target_name": "ENQ_DIRECTORY_SEMANTIC / Preview",
+      "target_frame_id_from_prior_static_receipt": "175:3572",
+      "scope": "new relevant entry observed",
+      "result": "PASS"
+    },
+    {
+      "evidence": "ENQ_NAVIGATION_HIGH-existing-flow.txt",
+      "title": "ENQ / Navigation / Detailed 3D — isolated trial",
+      "target_name": "ENQ_NAVIGATION_HIGH / Preview",
+      "target_frame_id_from_prior_static_receipt": null,
+      "scope": "existing relevant entry retained",
+      "result": "PASS"
+    },
+    {
+      "evidence": "ENQ_NAVIGATION_LOW-flow.txt",
+      "title": "ENQ_NAVIGATION_LOW v1",
+      "target_name": "ENQ_NAVIGATION_LOW / Preview",
+      "target_frame_id_from_prior_static_receipt": "175:3437",
+      "scope": "new relevant entry observed",
+      "result": "PASS"
+    },
+    {
+      "evidence": "ENQ_NAVIGATION_MEDIUM-flow.txt",
+      "title": "ENQ_NAVIGATION_MEDIUM v1",
+      "target_name": "ENQ_NAVIGATION_MEDIUM / Preview",
+      "target_frame_id_from_prior_static_receipt": "175:3410",
+      "scope": "new relevant entry observed",
+      "result": "PASS"
+    },
+    {
+      "evidence": "ENQ_NAVIGATION_SEMANTIC-flow.txt",
+      "title": "ENQ_NAVIGATION_SEMANTIC v1",
+      "target_name": "ENQ_NAVIGATION_SEMANTIC / Preview",
+      "target_frame_id_from_prior_static_receipt": "175:3464",
+      "scope": "new relevant entry observed",
+      "result": "PASS"
+    },
+    {
+      "evidence": "ENQ_RECOVERY_HIGH-flow.txt",
+      "title": "ENQ_RECOVERY_HIGH v1",
+      "target_name": "ENQ_RECOVERY_HIGH / Preview",
+      "target_frame_id_from_prior_static_receipt": "175:3599",
+      "scope": "new relevant entry observed",
+      "result": "PASS"
+    },
+    {
+      "evidence": "ENQ_RECOVERY_LOW-flow.txt",
+      "title": "ENQ_RECOVERY_LOW v1",
+      "target_name": "ENQ_RECOVERY_LOW / Preview",
+      "target_frame_id_from_prior_static_receipt": "175:3731",
+      "scope": "new relevant entry observed",
+      "result": "PASS"
+    },
+    {
+      "evidence": "ENQ_RECOVERY_MEDIUM-flow.txt",
+      "title": "ENQ_RECOVERY_MEDIUM v1",
+      "target_name": "ENQ_RECOVERY_MEDIUM / Preview",
+      "target_frame_id_from_prior_static_receipt": "175:3665",
+      "scope": "new relevant entry observed",
+      "result": "PASS"
+    },
+    {
+      "evidence": "recovery-semantic-flow.txt",
+      "title": "ENQ_RECOVERY_SEMANTIC v1",
+      "target_name": "ENQ_RECOVERY_SEMANTIC / Preview",
+      "target_frame_id_from_prior_static_receipt": "175:3797",
+      "scope": "new relevant entry observed",
+      "result": "PASS"
+    }
+  ],
+  "archive_integrity": {
+    "file": "after-scroll-and-flows.fig",
+    "crc": "PASS",
+    "members": [
+      {
+        "name": "canvas.fig",
+        "bytes": 424615
+      },
+      {
+        "name": "thumbnail.png",
+        "bytes": 5282
+      },
+      {
+        "name": "meta.json",
+        "bytes": 345
+      },
+      {
+        "name": "images/",
+        "bytes": 0
+      }
+    ],
+    "canvas_signature": "fig-kiwi",
+    "exported_at": "2026-10-15T10:44:52.572Z",
+    "scope": "Native.fig ZIP/member integrity only; not semantic diff or tested restore."
+  },
+  "playback_steps": [
+    {
+      "step": 1,
+      "screenshot": "recovery-semantic-top.png",
+      "health": "PASS for observed initial top state",
+      "visible": "Synthetic offline Services context, current Quick Access heading and Quick Access checked."
+    },
+    {
+      "step": 2,
+      "screenshot": "recovery-semantic-bottom.png",
+      "health": "PASS for observed lower-content reachability",
+      "visible": "Lower explanatory copy, Apply selection, Privacy and storage and Trial scroll marker are visible."
+    },
+    {
+      "step": 3,
+      "screenshot": "recovery-semantic-return-top.png",
+      "health": "PASS for observed visual return to top",
+      "visible": "The initial context/heading/radio view is visible again; no exact-offset measurement or reset transition is asserted."
+    }
+  ],
+  "explicit_scope_limits": [
+    "The21-file packet records shared settings and one played preview sample. Scrolling was not independently played in every other preview/PRESERVE/RESET frame or on other browser/device configurations.",
+    "Selection-before names map to prior reviewed frame IDs, but the current selection JSON has generic DOM row IDs. No fresh semantic node-ID/property dump, all-descendant change census or whole-source before/after diff is available; no complete preservation or exactly-only-these-properties mutation claim follows.",
+    "Eleven new and one retained relevant preview flow configurations are individually visible. Their labels/targets do not prove all entries launch correctly or that the complete file flow list has no other entries.",
+    "The three screenshots and presentation URL support the observed Recovery SEMANTIC vertical top/bottom/top sequence. They do not prove Apply/Privacy activation, keyboard access, smoothness, exact scroll offset, state retention or reset/matching semantics.",
+    "No new reaction-edge graph is reviewed or qualified here. The317 planned edges, deliberate noops, context/query/scroll reset/preserve comparators, full22 cases, accessibility/AT/DOM semantics, full source preservation, tested restore/B01_EXIT and B01/Phase1/founder acceptance remain outside the verdict.",
+    "Only this receipt was written. Status DOING is not a committed DONE claim."
+  ]
+}

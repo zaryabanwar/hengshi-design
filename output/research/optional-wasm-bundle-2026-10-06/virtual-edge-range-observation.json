@@ -1,0 +1,70 @@
+{
+  "node": "v26.10.0",
+  "semver": "7.8.5",
+  "arborist": "10.0.3",
+  "lock_sha256": "fa903a8d901357aacf80863524e0e00ae2ece69126daf218256cdd2656b2da4c",
+  "records": [
+    {
+      "name": "@emnapi/core",
+      "bundledVersion": "1.11.1",
+      "declaredRange": "^1.11.1",
+      "satisfies": true,
+      "prerelease": null,
+      "virtualEdgeType": "prod",
+      "missing": true,
+      "edgeTarget": null
+    },
+    {
+      "name": "@emnapi/runtime",
+      "bundledVersion": "1.11.1",
+      "declaredRange": "^1.11.1",
+      "satisfies": true,
+      "prerelease": null,
+      "virtualEdgeType": "prod",
+      "missing": true,
+      "edgeTarget": null
+    },
+    {
+      "name": "@emnapi/wasi-threads",
+      "bundledVersion": "1.2.2",
+      "declaredRange": "^1.2.2",
+      "satisfies": true,
+      "prerelease": null,
+      "virtualEdgeType": "prod",
+      "missing": true,
+      "edgeTarget": null
+    },
+    {
+      "name": "@napi-rs/wasm-runtime",
+      "bundledVersion": "1.1.4",
+      "declaredRange": "^1.1.4",
+      "satisfies": true,
+      "prerelease": null,
+      "virtualEdgeType": "prod",
+      "missing": true,
+      "edgeTarget": null
+    },
+    {
+      "name": "@tybys/wasm-util",
+      "bundledVersion": "0.10.2",
+      "declaredRange": "^0.10.2",
+      "satisfies": true,
+      "prerelease": null,
+      "virtualEdgeType": "prod",
+      "missing": true,
+      "edgeTarget": null
+    },
+    {
+      "name": "tslib",
+      "bundledVersion": "2.8.1",
+      "declaredRange": "^2.8.1",
+      "satisfies": true,
+      "prerelease": null,
+      "virtualEdgeType": "prod",
+      "missing": true,
+      "edgeTarget": null
+    }
+  ],
+  "all_six_ranges_satisfied": true,
+  "limits": "Range and virtual-tree source observations only; no install, graph repair, complete SBOM, bundle execution, conformance or selection."
+}

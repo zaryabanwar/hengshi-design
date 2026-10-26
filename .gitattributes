@@ -12,3 +12,22 @@ docs/phase-1-ui-reference-production/**/*.ps1 text eol=lf
 docs/phase-1-ux-architecture/**/*.md text eol=lf
 docs/phase-1-ux-architecture/**/*.csv text eol=lf
 docs/phase-1-ux-architecture/**/*.ps1 text eol=lf
+# R-044: canonical text bytes for brand identity and compatibility baseline sources.
+docs/phase-1-brand-identity/**/*.css text eol=lf
+docs/phase-1-brand-identity/**/*.csv text eol=lf
+docs/phase-1-brand-identity/**/*.html text eol=lf
+docs/phase-1-brand-identity/**/*.json text eol=lf
+docs/phase-1-brand-identity/**/*.md text eol=lf
+docs/phase-1-brand-identity/**/*.mjs text eol=lf
+docs/phase-1-brand-identity/**/*.ps1 text eol=lf
+docs/phase-1-brand-identity/**/*.svg text eol=lf
+/package.json text eol=lf
+/package-lock.json text eol=lf
+apps/web/package.json text eol=lf
+apps/web/package-lock.json text eol=lf
+apps/api/requirements.txt text eol=lf
+/docker-compose.yml text eol=lf
+
+# Research snapshots and design exports may be pinned by raw-byte hashes.
+/output/** -text whitespace=cr-at-eol
+/artifacts/** -text whitespace=cr-at-eol

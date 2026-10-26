@@ -1,0 +1,124 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-07",
+  "scope": "D-076 company-facts public allowlist proposal; prepared private root retained",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "snapshot": "output/research/company-public-projection-2026-10-07/review-inputs/AGENTS.md"
+    },
+    {
+      "path": ".specify/memory/constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "snapshot": "output/research/company-public-projection-2026-10-07/review-inputs/.specify/memory/constitution.md"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 84370,
+      "sha256": "f38b6f5930b51cae9188db8df6bc9fe458b0df907a3f6eab10fc6b956a0b50da",
+      "snapshot": "output/research/company-public-projection-2026-10-07/review-inputs/DECISIONS.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/company-facts.schema.json",
+      "bytes": 2745,
+      "sha256": "9c39ebfeac864de0f667e49980a444998257a0ffb45d2f63216f99f580100728",
+      "snapshot": "output/research/company-public-projection-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/company-facts.schema.json"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "bytes": 71036,
+      "sha256": "9bd9d0d291926ec783f19f84fba18785f4bb476e260d6447e9bde02e111fd9a2",
+      "snapshot": "output/research/company-public-projection-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "bytes": 34575,
+      "sha256": "16587e63b4284e66dadc2ced37da18e7a33138220f0101725a60ab84b1d4a9f8",
+      "snapshot": "output/research/company-public-projection-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/DATA_CONTRACT.md"
+    },
+    {
+      "path": "docs/software-definition/06-entity-and-public-contact.md",
+      "bytes": 15290,
+      "sha256": "75ab7011ed1b96b9fb674d7b5044802422a02bf01118a30eee85d533bec18473",
+      "snapshot": "output/research/company-public-projection-2026-10-07/review-inputs/docs/software-definition/06-entity-and-public-contact.md"
+    },
+    {
+      "path": "docs/software-definition/04-reconciliation-map.md",
+      "bytes": 78293,
+      "sha256": "f8049f73b0982971e25ff58f01a49de8d26c8637b6ef0702a415dea2499c40dd",
+      "snapshot": "output/research/company-public-projection-2026-10-07/review-inputs/docs/software-definition/04-reconciliation-map.md"
+    },
+    {
+      "path": "specs/004-design-services-content/spec.md",
+      "bytes": 27848,
+      "sha256": "e23e6a25ec3b5aa6896f21fddb7bdfecaeb1cdd792995d8479c1b548c3d6bd0c",
+      "snapshot": "output/research/company-public-projection-2026-10-07/review-inputs/specs/004-design-services-content/spec.md"
+    },
+    {
+      "path": "scripts/validation/test_company_facts_schema.py",
+      "bytes": 3116,
+      "sha256": "d872c5c9bef6d1410c2be8be77177fff63bcc4cb9c2e37bad72487fe5e679ca9",
+      "snapshot": "output/research/company-public-projection-2026-10-07/review-inputs/scripts/validation/test_company_facts_schema.py"
+    },
+    {
+      "path": "scripts/validation/test_company_public_projection_schema.py",
+      "bytes": 3896,
+      "sha256": "2b4c95b86f362bb58738e87bb8e499dbd0d197d015aac116e105934a17c8f077",
+      "snapshot": "output/research/company-public-projection-2026-10-07/review-inputs/scripts/validation/test_company_public_projection_schema.py"
+    },
+    {
+      "path": "scripts/validation/test_booking_creation_request_schema.py",
+      "bytes": 5536,
+      "sha256": "773fd0f9ea930676c57da53ae9998187bf1a0b8bc8501b7e5753124e04cb98e0",
+      "snapshot": "output/research/company-public-projection-2026-10-07/review-inputs/scripts/validation/test_booking_creation_request_schema.py"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/company-facts-shape-2026-10-04.md",
+      "bytes": 8562,
+      "sha256": "5eba9057386aca90708a8f7b37adc143ac025d3269a8b54e9f40d45d8032d844",
+      "snapshot": "output/research/company-public-projection-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/reviews/company-facts-shape-2026-10-04.md"
+    }
+  ],
+  "producer_validation": {
+    "result": "PASS",
+    "command": "C:/Python314/python.exe -B -m unittest scripts.validation.test_company_facts_schema scripts.validation.test_company_public_projection_schema",
+    "new_methods": 3,
+    "affected_methods": 4,
+    "elapsed_seconds": 0.057,
+    "private_root_same_after_removing_added_definition": true,
+    "artifact_only": true,
+    "runtime": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "independent_review": {
+    "status": "BLOCKED",
+    "verdict": null,
+    "attempted_for_this_exact_packet": false,
+    "current_service_evidence": {
+      "agent": "/root/review_handoff_packet_v1",
+      "state": "errored",
+      "error": "Your workspace is out of credits. Add credits to continue."
+    }
+  },
+  "review_obligations": [
+    "Preserve string/month private facts without exposing them through public root validation",
+    "Public-projection field exclusion without legal/name/contact claim or mandatory-notice waiver",
+    "No hidden deferred facts inside allowed strings/media/copy/AI passages",
+    "Immutable eligible candidate and consistent public derivative consumption",
+    "Contact facts versus actual monitored operation and unresolved owner",
+    "Synthetic inputs quarantined from production and indexable output",
+    "Schema representation is distinct from actual authorization/preparation/rendering/publication enforcement"
+  ],
+  "sources": [
+    "https://json-schema.org/understanding-json-schema/reference/object#additionalproperties",
+    "https://python-jsonschema.readthedocs.io/en/stable/referencing/"
+  ],
+  "context7": "/python-jsonschema/jsonschema",
+  "sources_checked": "2026-10-07",
+  "application_changed": false,
+  "committed": false,
+  "acceptance": "held"
+}

@@ -1,0 +1,85 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-24",
+  "scope": "Read-only recapture after reviewer identified incomplete Close evidence. Original14 captures and execution observation preserved. No design or MCP changes.",
+  "sequence": [
+    "MEDIUM/MEDIUM/OPEN chooseSEMANTIC then Apply -> SEMANTIC/SEMANTIC/OPEN, image15",
+    "chooseHIGH then Close -> SEMANTIC/HIGH/CLOSED, image16 partial",
+    "Open -> SEMANTIC/HIGH/OPEN, images17partial/18complete",
+    "Close -> SEMANTIC/HIGH/CLOSED, images19partial/20black",
+    "Browser visibility enabled; same closed state image21 complete",
+    "Open -> SEMANTIC/HIGH/OPEN, image22 partial; image23black"
+  ],
+  "captures": [
+    {
+      "path": "playback/15-quick-access-active-settled.jpg",
+      "bytes": 40059,
+      "sha256": "e0976068512809e2896ea1ffb7397ba1386462c9900437b1f33aa54f6c85fdbe"
+    },
+    {
+      "path": "playback/16-close-quick-access-active-settled.jpg",
+      "bytes": 29743,
+      "sha256": "af0e4932ee04f38f6a58d7767f400554052401aa7a6b822c33afe83ff340a539"
+    },
+    {
+      "path": "playback/17-reopen-detailed-pending-quick-access-active-settled.jpg",
+      "bytes": 40003,
+      "sha256": "619cf8f532a7ca654985d39286a1fdfcc8f7df65c8b518c4061baad5275c3a4a"
+    },
+    {
+      "path": "playback/18-reopen-full-page.jpg",
+      "bytes": 40477,
+      "sha256": "45ca973ad6f054b7775ecfa945812326e90f3a415df84bf21853dccc75330fca"
+    },
+    {
+      "path": "playback/19-close-full-page.jpg",
+      "bytes": 30217,
+      "sha256": "55124b3c7ebc87941cd207f73b0ed9de7216585d0b5d8b405eaf7bef4de9213e"
+    },
+    {
+      "path": "playback/20-close-settled-full-page.jpg",
+      "bytes": 30217,
+      "sha256": "55124b3c7ebc87941cd207f73b0ed9de7216585d0b5d8b405eaf7bef4de9213e"
+    },
+    {
+      "path": "playback/21-visible-closed.jpg",
+      "bytes": 30217,
+      "sha256": "55124b3c7ebc87941cd207f73b0ed9de7216585d0b5d8b405eaf7bef4de9213e"
+    },
+    {
+      "path": "playback/22-visible-reopen.jpg",
+      "bytes": 40477,
+      "sha256": "45ca973ad6f054b7775ecfa945812326e90f3a415df84bf21853dccc75330fca"
+    },
+    {
+      "path": "playback/23-visible-reopen-settled.jpg",
+      "bytes": 40477,
+      "sha256": "45ca973ad6f054b7775ecfa945812326e90f3a415df84bf21853dccc75330fca"
+    }
+  ],
+  "disposition": {
+    "complete_states": [
+      "15",
+      "18",
+      "21"
+    ],
+    "partial_or_unusable": [
+      "16",
+      "17",
+      "19",
+      "20",
+      "22",
+      "23"
+    ],
+    "critical_readable_in22": "Close directory, legend currently Quick Access, Detailed selected. Header/context incomplete; no whole-layout claim.",
+    "original08": "Retained; excluded for independent Close proof.",
+    "original06_10_14": "In-force captions readable only; not complete viewport/layout evidence.",
+    "last_state": "SEMANTIC/HIGH/OPEN producer-observed; screenshot22 critical fields only;23 excluded."
+  },
+  "limits": [
+    "No rendering/capture root cause established; visibility coincided with one complete capture, not proven permanent remedy.",
+    "No exact scroll/focus/all108/allentry/native matching/restore/accessibility or B01/Phase1 acceptance.",
+    "Do not infer missing pixels or equate filenames with proof."
+  ]
+}

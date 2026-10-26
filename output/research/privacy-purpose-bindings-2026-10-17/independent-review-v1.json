@@ -1,0 +1,172 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "reviewed_at_utc": "2026-10-24T06:20:42.529072+00:00",
+  "reviewer": "Independent reviewer /root/review_archive_candidate_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "PASS",
+  "scope": "Frozen15-input engineering consistency/privacy-boundary review of ten proposed purpose/notice families and nine logical copy profiles only. Not legal applicability clearance, issued notices, final basis/period adoption, current external-law verification or processing permission.",
+  "packet": {
+    "path": "output/research/privacy-purpose-bindings-2026-10-17/review-inputs-v1.json",
+    "bytes": 3224,
+    "sha256": "ebea6a462e1192dfa5559b234c289c78a1b9d70369d3c654e666bbbc72180dae",
+    "input_count": 15,
+    "verified_before_review": 15,
+    "verified_again_before_receipt": 15,
+    "inputs": [
+      {
+        "path": "AGENTS.md",
+        "bytes": 8983,
+        "sha256": "f31b4bb42f954995cc12358284a992fde46ade98980238043c149f692b6474a5",
+        "resolved_path": "AGENTS.md",
+        "verified": true
+      },
+      {
+        "path": ".specify/memory/constitution.md",
+        "bytes": 16234,
+        "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+        "resolved_path": ".specify/memory/constitution.md",
+        "verified": true
+      },
+      {
+        "path": "DECISIONS.md",
+        "bytes": 109588,
+        "sha256": "569e584a84fa03c88efc62dc39991d1a41b06e3a89f22abd3d37133ae9fdbeed",
+        "resolved_path": "output/research/pip-temporary-lifecycle-acceptance-2026-10-24/DECISIONS.md.before",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+        "bytes": 99778,
+        "sha256": "d2d04ba5ef36d77022afd3f0f75eaf7281b296f2efcce22e28bdb09a46c2bce1",
+        "resolved_path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/privacy-purpose-bindings.csv",
+        "bytes": 4492,
+        "sha256": "8e13426ef93300bb44ddfc24f5811cba6d7cc13446afe14e70ee67e4b698fba6",
+        "resolved_path": "docs/phase-1-architecture/contracts/privacy-purpose-bindings.csv",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+        "bytes": 81977,
+        "sha256": "afc04fa394fd09da765b857e9ef14a46374b66aec7e4bd01d0476eb2e49bcfe9",
+        "resolved_path": "output/research/architecture-owner-navigation-2026-10-17/DATA_CONTRACT.before.md",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/data-classification.csv",
+        "bytes": 5615,
+        "sha256": "c8793ebfb401178b4175f0f6c7b9cfb14edcd606f370090883cbe2be94f0cd6e",
+        "resolved_path": "docs/phase-1-architecture/contracts/data-classification.csv",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+        "bytes": 121779,
+        "sha256": "eaec4051418578d005d1955f69ef3481871d007f0e043fd4330e18976787c1e6",
+        "resolved_path": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/PROVIDER_SCOPE_ADDENDUM.md",
+        "bytes": 4828,
+        "sha256": "4db6222615c5309c8802cb16ceea94dfe0f516db77246159f750a843f97f2dbd",
+        "resolved_path": "docs/phase-1-architecture/contracts/PROVIDER_SCOPE_ADDENDUM.md",
+        "verified": true
+      },
+      {
+        "path": "docs/software-definition/06-entity-and-public-contact.md",
+        "bytes": 15443,
+        "sha256": "5e4f5fb9aa35ff2d5165383fb051f3dca2520df088cc2de20fe2c0bab8f40e47",
+        "resolved_path": "docs/software-definition/06-entity-and-public-contact.md",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/chat-creation-request.schema.json",
+        "bytes": 2667,
+        "sha256": "4d8d3461abc3d1db015a5d0537c663781a6a193eb1f2bcc92ec37f684076c5d1",
+        "resolved_path": "docs/phase-1-architecture/contracts/chat-creation-request.schema.json",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/chat-consent.schema.json",
+        "bytes": 3593,
+        "sha256": "3288aa45030cb5ccc604ef0531684036272b00957ab393302a3a17016c763f8d",
+        "resolved_path": "docs/phase-1-architecture/contracts/chat-consent.schema.json",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/reviews/eu-privacy-retention-v1-2026-10-07.md",
+        "bytes": 8708,
+        "sha256": "b02ef22854693fd3f59581be855bd7e1b04e5387bec283aae3dbc63e91a5a200",
+        "resolved_path": "docs/phase-1-architecture/contracts/reviews/eu-privacy-retention-v1-2026-10-07.md",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-architecture/contracts/reviews/record-purpose-binding-v1-2026-10-08.md",
+        "bytes": 2684,
+        "sha256": "5732720075de72fbb26973dff696f6864cc222b350b834d15f8237bf89c29be4",
+        "resolved_path": "docs/phase-1-architecture/contracts/reviews/record-purpose-binding-v1-2026-10-08.md",
+        "verified": true
+      },
+      {
+        "path": "output/research/privacy-purpose-bindings-2026-10-17/SECURITY_PRIVACY_CONTRACT.before.md",
+        "bytes": 86672,
+        "sha256": "839252f956b5f6f95664fd19732cdc590c194023699d4728f00498adf04259a2",
+        "resolved_path": "output/research/privacy-purpose-bindings-2026-10-17/SECURITY_PRIVACY_CONTRACT.before.md",
+        "verified": true
+      }
+    ]
+  },
+  "snapshot_bindings": {
+    "path": "output/research/privacy-purpose-bindings-2026-10-17/source-snapshot-bindings-v1.json",
+    "bytes": 763,
+    "sha256": "3d121bad1c2cc66cbcffb1e09393cacca977aa6eff730cc9b28bd9295dc1aa38",
+    "binding_count": 2,
+    "scope": "Original DATA and DECISIONS frozen bytes used via explicit aliases. Current founder pip-lifecycle amendment is not silently injected into this old scope."
+  },
+  "findings": [],
+  "actionable_finding_count": 0,
+  "assessments": [
+    {
+      "evidence": "SECURITY_PRIVACY_CONTRACT.md:886-930;privacy-purpose-bindings.csv:1-11;chat-creation-request.schema.json:19-44;chat-consent.schema.json:32-59",
+      "assessment": "Ten unique TODO purpose keys bind existing DE field groups, basis profiles, notice families, clocks and permitted copy rules. No ten-checkbox request/schema expansion: max8 decisions remains, and only offered optional purposes use consent. Exact immutable policy/notice revision+digest must be approved/presented/server-checked; family names and client-selected digest alone cannot authorize collection. Conditional necessity/corporate-enquiry basis is selected by reviewed assessment, not a visitor dropdown or invented consent."
+    },
+    {
+      "evidence": "SECURITY_PRIVACY_CONTRACT.md:908-964;entity/contact:147-191;PROVIDER_SCOPE_ADDENDUM.md",
+      "assessment": "Optional chat-save, brief follow-up and exact context transfer remain distinct; refusal preserves unrelated browsing/Contact/Book and eligible ephemeral guidance. Necessary staff/security/rights processing is not optional-chat consent. Layered readable information precedes intake/transfer without WebGL. Deferred registration/address/aliases remain deferred while required eligible disclosure must be resolved before live processing; no EU establishment or operational mailbox/SLA claim."
+    },
+    {
+      "evidence": "SECURITY_PRIVACY_CONTRACT.md:965-1017;privacy-purpose-bindings.csv;frozen DATA_CONTRACT record-purpose bindings:747-818;data-classification.csv",
+      "assessment": "Nine logical copy profiles preserve source field group/purpose/policy and earliest applicable expiry, forbid copying to renew clocks and separate ephemeral/durable/staff-secret/operations/calendar-AI/audit/public/recovery responsibilities. Personal opaque keys remain protected. Durable intents/foreign keys/uncertain bookings do not grant longer content retention. Unknown provider/backups cannot be reported disposed, restoration is suppressed before serving, and bounded cleanup/settlement/fault mechanisms remain unregistered implementation gates."
+    },
+    {
+      "evidence": "SECURITY_PRIVACY_CONTRACT.md:976-1017;PROVIDER_SCOPE_ADDENDUM.md;PRIVATE_PROCESS_PROOF.md;prior EU/privacy and record-purpose review receipts",
+      "assessment": "Private/confidential AI remains approved Azure-Europe; NVIDIA requires actual de-identification/entitlement. Outlook/Teams and actual account/provider/copy capability remain separate from Microsoft365 or hosting selection. COPY-RECOVERY proposed30day limit remains unadopted, not guessed vendor retention. Existing source proof/access clocks are separate from retained-record/copy periods. Prior bounded reviews do not automatically accept this later registry."
+    },
+    {
+      "evidence": "SECURITY_PRIVACY_CONTRACT.md:1002-1017,1020 onward,1161 onward;earlier EU/privacy recommendation",
+      "assessment": "Rights/incident owners retain proportionate verification, exact deadline/recipient rules and truthful pending handling. No outbound notification or legal-cleared incident disclosure is authorized. Newly inserted text supplies no new statutory number or basis entitlement; concrete period/basis necessity, controller/representative/transfer facts, issued readable notice bytes and legal review remain held."
+    }
+  ],
+  "review_method": [
+    "Verified15 exact inputs before/after through explicit DATA/DECISIONS aliases; compared new SECURITY section against preserved before bytes and inspected ten-row CSV, nine copy profiles, linked source/clock/provider/privacy/consent definitions and prior scoped receipts.",
+    "No prose/schema tests, external law/source refresh, network/browser/Figma, live processing/provider/mail, application or Git changes. Prior official-guidance observations remain historical supporting evidence, not this review independently rechecking external law.",
+    "Wrote only this receipt; producer/canonical/manifest and all prior sources remain unchanged."
+  ],
+  "remaining_gates": [
+    "Independent legal applicability/territorial/representative/basis/necessity and transfer/recipient assessment before policy adoption/live affected processing.",
+    "Approve exact readable notice versions/content/locale and verified controller/contact facts; missing notice blocks affected collection/transfer.",
+    "Bind actual store/provider/recipient copies, finite cleanup/reconciliation/retention windows, rights/incident operating responsibilities and restore suppression; no guessed deletion completeness.",
+    "Founder/integrated acceptance and separately authorized actual implementation/runtime privacy/security qualification."
+  ],
+  "limits": [
+    "This receipt passes engineering definition consistency only and explicitly does not fulfill final legal clearance or adopt periods/bases/copy profiles.",
+    "No current law/provider policy verification or claim of GDPR compliance. No live collection, notice issuance, mailbox activation, transfer, cleanup or publication authorization.",
+    "No capacity error. DOING is not task DONE or commit."
+  ]
+}

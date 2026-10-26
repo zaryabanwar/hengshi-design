@@ -1,0 +1,271 @@
+{
+  "status": "DOING",
+  "scope": "Original 32-input append-only scheduling HTTP/resource proposal plus current DATA contract and preserved failed-review records",
+  "input_count": 36,
+  "original_manifest_sha256": "89a35156479e2ef18170ac072867904f1b66df1f10e83ff9d13e53f8450caa07",
+  "inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/00-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "layer": "original32"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/01-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "layer": "original32"
+    },
+    {
+      "source": "PROJECT.md",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/02-PROJECT.md",
+      "bytes": 10942,
+      "sha256": "a483bd2713fe420322772ab7fb07c848aaf103088697c05ab91f35d2e5ea1461",
+      "layer": "original32"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/03-DECISIONS.md",
+      "bytes": 86352,
+      "sha256": "dd31d6026aedd1a03e966e055724b2f02783147291525f1740341848837eed74",
+      "layer": "original32"
+    },
+    {
+      "source": "PROJECT_STATE.yaml",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/04-PROJECT_STATE.yaml",
+      "bytes": 8776,
+      "sha256": "ca8ed5825769b5007835c9b44d3a4e7b4ebd1cba120340686d017686b3a64270",
+      "layer": "original32"
+    },
+    {
+      "source": "TASKS.md",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/05-TASKS.md",
+      "bytes": 6728,
+      "sha256": "590da697f0da1c2bc38f648d53dd9be8fe2bec0df0dc209ab9adf5af5f050c21",
+      "layer": "original32"
+    },
+    {
+      "source": "docs/software-definition/README.md",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/06-README.md",
+      "bytes": 7503,
+      "sha256": "a4907696b81b7bc7949a02e712970615122459b124b8fee836d731320181ccba",
+      "layer": "original32"
+    },
+    {
+      "source": "docs/phase-1-foundation/01-product-requirements.md",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/07-01-product-requirements.md",
+      "bytes": 70783,
+      "sha256": "4db9d504695e7791705c41fe70fd0aea0467338d95acb5b6732bf6927893ac2e",
+      "layer": "original32"
+    },
+    {
+      "source": "docs/phase-1-ux-architecture/FLOWS.md",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/08-FLOWS.md",
+      "bytes": 29631,
+      "sha256": "168015a15b51c03cdf1f1532572d7b45c397708651c579c3e1e2025d5ee27097",
+      "layer": "original32"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/BOOKING_SCHEDULING.md",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/09-BOOKING_SCHEDULING.md",
+      "bytes": 58077,
+      "sha256": "8dc09418fe2c85375e9437d91668b50fa84df4a2c658b524f78db5f4eb508af0",
+      "layer": "original32"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/10-INTERFACE_CATALOG.md",
+      "bytes": 108809,
+      "sha256": "aeee8ecc6ff5eb47589563d11ef76f603b798163882ce8bf235dc7476c28cf31",
+      "layer": "original32"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/interface-catalog.csv",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/11-interface-catalog.csv",
+      "bytes": 9367,
+      "sha256": "42018a3e5cc6c1edf488c392b0349688a92b2cab5a8f50e717f1bca84a70a49c",
+      "layer": "original32"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/12-DATA_CONTRACT.md",
+      "bytes": 45770,
+      "sha256": "073878dcce6e2beb6477ec6fbe3162382554cc5875569e33a60e58ef34e23828",
+      "layer": "original32"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/13-PRIVATE_PROCESS_PROOF.md",
+      "bytes": 116413,
+      "sha256": "12314d8567e4f4c0f63c944aae6caa09657240bf40042191b983f4be5b6599ae",
+      "layer": "original32"
+    },
+    {
+      "source": "output/research/booking-scheduling-shapes-2026-10-08/final-independent-review.json",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/14-final-independent-review.json",
+      "bytes": 1524,
+      "sha256": "dcc6763ce52a8f16926d6dbd099e98e2416a35b14b533263856577e252cfa9cf",
+      "layer": "original32"
+    },
+    {
+      "source": "output/research/booking-scheduling-http-2026-10-08/BOOKING_SCHEDULING.md.before",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/15-BOOKING_SCHEDULING.md.before",
+      "bytes": 39751,
+      "sha256": "89ff0054a9c77698086660630190e84fa76fd793be84d16b621d1b6012ed7e14",
+      "layer": "original32"
+    },
+    {
+      "source": "output/research/booking-scheduling-http-2026-10-08/INTERFACE_CATALOG.md.before",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/16-INTERFACE_CATALOG.md.before",
+      "bytes": 108164,
+      "sha256": "897f4fad807057f07ac5a6d66393fbdf1610b78fdcc8f81be459931210d39989",
+      "layer": "original32"
+    },
+    {
+      "source": "scripts/validation/test_booking_scheduling_schema.py",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/17-test_booking_scheduling_schema.py",
+      "bytes": 17062,
+      "sha256": "6dc333f6c6376c90c11052fd03af5795ea4936453c5339b7d7a40bb98a67f484",
+      "layer": "original32"
+    },
+    {
+      "source": "scripts/validation/test_process_value_schema.py",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/18-test_process_value_schema.py",
+      "bytes": 4047,
+      "sha256": "fc9f73eff47cc944122ba019c1c11bfe034fdd113584deeee93f35da88b96d9a",
+      "layer": "original32"
+    },
+    {
+      "source": "scripts/validation/test_booking_qualification_schema.py",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/19-test_booking_qualification_schema.py",
+      "bytes": 12600,
+      "sha256": "da1f4b7d868e8288c64f2ad3fa5fe425f806d3e7ce96d3c09b8c68a694bdb513",
+      "layer": "original32"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/process-value.schema.json",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/20-process-value.schema.json",
+      "bytes": 1494,
+      "sha256": "b4fd9fc84f322ecb6743c00244f3731ccd612861de53056aaddb20a377a67a95",
+      "layer": "original32"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/publication-preparation.schema.json",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/21-publication-preparation.schema.json",
+      "bytes": 5499,
+      "sha256": "23c3569baa844a542dd8f7a283af87f50b93dfa1fdf3ccef2c401136c8acc2ac",
+      "layer": "original32"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/publication-manifest.schema.json",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/22-publication-manifest.schema.json",
+      "bytes": 4297,
+      "sha256": "d3620c8326246bc34040188de610c5823f1013936572d3ffb63a5eb350bc3852",
+      "layer": "original32"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/booking-creation-request.schema.json",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/23-booking-creation-request.schema.json",
+      "bytes": 1495,
+      "sha256": "6848784172c0b39951978fb6a93158655b444e1c9400091c0a90c8d0fd509e37",
+      "layer": "original32"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/chat-creation-request.schema.json",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/24-chat-creation-request.schema.json",
+      "bytes": 2667,
+      "sha256": "4d8d3461abc3d1db015a5d0537c663781a6a193eb1f2bcc92ec37f684076c5d1",
+      "layer": "original32"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/booking-qualification.schema.json",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/25-booking-qualification.schema.json",
+      "bytes": 6250,
+      "sha256": "549e8a8783793663a65a4349cec29a4eb9032965026495db8f7d8b6eaad8c8a4",
+      "layer": "original32"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/booking-status-response.schema.json",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/26-booking-status-response.schema.json",
+      "bytes": 4072,
+      "sha256": "1e2dd46fbf572a095827edbef681344df6ed74aaeb6f4e0abd8eeab705ff65da",
+      "layer": "original32"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/booking-scheduling.schema.json",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/27-booking-scheduling.schema.json",
+      "bytes": 26393,
+      "sha256": "37fa74c433daaad417146a03646edd4c3b77e67696b73fdc350dc318f073fdbf",
+      "layer": "original32"
+    },
+    {
+      "source": "output/research/booking-scheduling-http-2026-10-08/stdlib-observations.json",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/28-stdlib-observations.json",
+      "bytes": 1317,
+      "sha256": "ff728af6112de8cf47b285d4acbbd6504be2c4524201b39c8e41ffde03d985d5",
+      "layer": "original32"
+    },
+    {
+      "source": "output/research/booking-scheduling-http-2026-10-08/observe_sizing.py",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/29-observe_sizing.py",
+      "bytes": 3783,
+      "sha256": "282bf0306646ba72a799e59a9fc43340c128424fbc9a75e640f58d2960adf531",
+      "layer": "original32"
+    },
+    {
+      "source": "output/research/booking-scheduling-http-2026-10-08/synthetic-sizing.json",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/30-synthetic-sizing.json",
+      "bytes": 2409,
+      "sha256": "32cf9d0d1bb34688d97f29edc8d66665c77fec132ae215efa3ee82dbdec26456",
+      "layer": "original32"
+    },
+    {
+      "source": "output/research/booking-scheduling-http-2026-10-08/primary-evidence.json",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/31-primary-evidence.json",
+      "bytes": 1127,
+      "sha256": "1202a5428ba7111cfbc904281dcb5834a28420a3ae2462a981f3252a8ddfd47d",
+      "layer": "original32"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/32-current-DATA_CONTRACT.md",
+      "bytes": 53459,
+      "sha256": "f55f0ddb83445c4651608c24b4f06ee8d34c9586f1e0777aae1645be5151724c",
+      "layer": "current-context"
+    },
+    {
+      "source": "output/research/booking-scheduling-http-2026-10-08/initial/manifest.json",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/33-current-manifest.json",
+      "bytes": 10482,
+      "sha256": "89a35156479e2ef18170ac072867904f1b66df1f10e83ff9d13e53f8450caa07",
+      "layer": "original-manifest-or-failed-review-record"
+    },
+    {
+      "source": "output/research/booking-scheduling-http-2026-10-08/review-attempt.json",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/34-current-review-attempt.json",
+      "bytes": 435,
+      "sha256": "5813daed504ab5925186d7d56eca3d117c18cedc5d3ff7a8f4a3e055fcc567c6",
+      "layer": "original-manifest-or-failed-review-record"
+    },
+    {
+      "source": "output/research/booking-scheduling-http-2026-10-08/review-retry-interruption.json",
+      "snapshot": "output/research/booking-scheduling-http-review-2026-10-08/review-inputs/35-current-review-retry-interruption.json",
+      "bytes": 371,
+      "sha256": "0e41ee605758b3541723d3fa9a2d0bbaab29b4c595fff7b258e10d80fd6d0104",
+      "layer": "original-manifest-or-failed-review-record"
+    }
+  ],
+  "acknowledged_live_drift": [
+    {
+      "source": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "frozen_sha256": "073878dcce6e2beb6477ec6fbe3162382554cc5875569e33a60e58ef34e23828",
+      "current_sha256": "f55f0ddb83445c4651608c24b4f06ee8d34c9586f1e0777aae1645be5151724c"
+    }
+  ],
+  "correction_cycles_used": 0,
+  "base_logical_scheduling_correction_cycles_used": 2,
+  "base_logical_scheduling_reopened": false,
+  "application_or_schema_changes": false
+}

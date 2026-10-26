@@ -1,0 +1,11 @@
+{
+  "finding": "BKT-01",
+  "scope": "Exactly one bodyless-header paragraph replacement; omit Content-Length on HEAD without computing hypothetical private GET size. No schema, lifecycle, counter, limit, method status, effect or authority change.",
+  "before_sha256": "99b9102915238d81a8a5a3ed1bdfe883ad0e4fac8525b062f87a1a320ed3f72a",
+  "after_sha256": "b178fbfa3ace77a9f8c0bf02e89da811dfcf53a6cbaa4420e6a5189823b6c7d3",
+  "before_bytes": 102614,
+  "after_bytes": 102756,
+  "old": "and no Content-Type; Content-Length, if emitted, is zero. Accept/size/method gates\r\nare object-independent and precede costly proof/store work.",
+  "new": "and no Content-Type. Omit Content-Length on every HEAD refusal; do not look up\r\nor compute the length of a hypothetical private GET. For other bodyless refusals,\r\nContent-Length, if emitted, is zero. Accept/size/method gates are object-independent\r\nand precede costly proof/store work.",
+  "original_packet": "output/research/booking-status-transport-2026-10-07/completion/review-inputs.json"
+}

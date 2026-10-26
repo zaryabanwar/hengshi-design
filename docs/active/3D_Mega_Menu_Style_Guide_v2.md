@@ -90,7 +90,7 @@ Hotspots are rendered as interactive spheres using `@react-three/drei` component
 | State | Scale | Color | Emission | Non-colour, non-motion cue (required) |
 |-------|-------|-------|----------|----------------------------------------|
 | Default | 1.0 | `#00BFFF` | 0.3 | Visible label; solid ring |
-| Keyboard focus | 1.0 | `#FFFFFF` | 0.6 | **Persistent 3 px focus ring at ≥3:1 against every adjacent scene colour, plus the label in its expanded form.** Present whether or not the pointer is used, and unaffected by `prefers-reduced-motion` |
+| Keyboard focus | 1.0 | `#FFFFFF` | 0.6 | **Persistent 3 px focus ring at ≥3:1 against every immediately adjacent opaque backing colour, plus the label in its expanded form unless explicitly dismissed under D-058 (D-055). Backing covers both sides of the complete ring path without obscuring the target, label or another focused control; inspect the outer scene boundary for recognisable focus and target visibility. Lighting, texture, transparency, blur, bloom and overlays must not invalidate opaque adjacency or hide the indicator. Exact backing geometry and colour tokens remain gated.** Present whether or not the pointer is used, and unaffected by `prefers-reduced-motion` |
 | Hover | 1.2 | `#FFFFFF` | 0.6 | Label expands to its full form; ring thickens |
 | Active/Click | 0.9 → 1.1 | `#F44A25` | 0.8 | Label shows the pressed form; ring becomes filled |
 | Disabled | 0.8 | `#666666` | 0.1 | Label carries the reason text; ring becomes dashed |
@@ -203,11 +203,18 @@ Close:     absolute top-4 right-4 text-gray-400 hover:text-white
 | Panel interaction | `default` | Over HTML panel overlay |
 | Dragging (future) | `grab` / `grabbing` | Camera orbit control |
 
+
+Expanded hotspot labels follow the accepted D-058 mechanism in
+HOTSPOT_LABEL_DISMISSAL_PROPOSAL.md: combined-region hoverability and focus
+persistence including Close label, explicit dismissal retaining base label/name
+and focus cue, and suppression until both hover and focus leave then re-enter.
+The stream-control Escape exception remains unchanged; overlap validation is held.
+
 ### 7.2 Keyboard Navigation (required; not yet implemented)
 
 - **Tab:** Cycle through hotspots
 - **Enter/Space:** Activate hotspot
-- **Escape:** Close panel / go back
+- **Escape:** The delivery-stream control exception has first precedence. Otherwise dismiss expanded hotspot labels without navigation, activation or focus/pointer movement (D-058); consume that keypress. Close panel / go back only when no expansion is being dismissed, outside the delivery-stream control. While focus is inside its radios or Apply button, Escape dismisses nothing, cancels nothing, applies nothing, and does not navigate (D-045, OBL-CTRL-04; UG-8 reconciliation).
 - **Arrow keys:** Camera orbit (future)
 
 ### 7.3 Accessibility
@@ -326,7 +333,7 @@ Evaluated strictly in order:
    client-side storage scoped to the origin, holding the selected stream and the
    last measurement, retained until the visitor clears it. It carries no personal
    data and no identifier, so it needs no consent gate; the storage notice on
-   `/credits` and the privacy route names it. If the store is unavailable or
+   `/privacy` route (D-051) names it. If the store is unavailable or
    unreadable, step 4 is skipped silently — it is an optimisation, not an
    obligation — and selection proceeds from steps 1 to 3. A write failure at
    step 5 is different, because the visitor asked for something: it is explained
@@ -384,6 +391,29 @@ not apply a stream, reload, initiate a transition or alter the accessibility tre
 beyond that checked state. A stream applies only after explicit Apply activation
 with Enter, Space, pointer or touch, or native Enter submission of the same form
 to that button. The control never applies on focus, selection, blur, arrow movement or timeout.
+**Escape within the control (D-045, OBL-CTRL-04).** While focus is inside the
+radios or Apply button, Escape dismisses nothing, cancels nothing, applies nothing,
+and does not navigate. The host-level close-panel / go-back binding in section 7.2
+applies only outside this control. This is definition reconciliation, not a choice
+of event-handler implementation.
+
+**Native radio rendering (D-054, UG-7).** Retain browser-native radio rendering,
+including the checked mark and platform focus indicator. Do not use authored
+accent color, custom marks, appearance:none, hidden replacement inputs, or
+forced-color-adjust:none. Surrounding labels, spacing, and fieldset may be styled
+only while native states and focus remain visible and unobscured. Later input-level
+visual treatment requires a separately reviewed proposal with browser and real
+forced-colors verification, followed by founder approval. This defines the baseline;
+it does not establish accessibility conformance or approve visual token values.
+
+**Already-active selection (D-053, UG-5).** Apply remains enabled when the pending
+selection equals the in-force stream and remains in keyboard focus order.
+Explicit activation produces a brief polite status indicating that the selected
+stream is already active. Preserve the stream, route, focus, scroll, and open
+panels; no reload, transition, or persistence mutation occurs. The no-op does not
+re-enter either shell or perform the D-052 preference reset. Exact no-op wording follows the accepted D-057 bundle. The change advisement below describes a changed selection;
+it must not imply that an already-active selection will re-enter the experience.
+
 A native select that applies on change, or a listbox, combobox, menu or radio group
 that applies on selection, is prohibited.
 
@@ -396,6 +426,14 @@ radio it receives that radio's peer stream name and checked state, not an assert
 that the stream has changed. On reaching Apply it receives a distinct button name
 stating that the button applies the selection.
 
+Approved radio order and labels (D-057): Detailed 3D (S-HIGH), Balanced 3D
+(S-MEDIUM), Simplified 3D (S-LOW), Quick Access (S-SEMANTIC). Apply uses
+Apply selection as its visible and accessible name. Use the complete accepted
+copy bundle, including persistent peer explanation, change/no-op advisement,
+verified-fact capability reasons, truthful storage messages and confirmed-reset
+copy. Runtime placeholders require approved names and verified facts; this
+definition does not establish implementation, legal content or publication.
+
 Radio names use the peer stream vocabulary; they must not label a choice as
 fallback, degraded, low quality, basic, optional, reduced, unsupported or non-WebGL.
 Options above the step 1 ceiling remain present and disabled with a stated textual
@@ -407,7 +445,7 @@ programmatically associated with both the group and the Apply button. It is
 not tooltip, title, hover-only, focus-only or accessible-description-only content.
 Use the same wording in every stream: explain that applying the pending selection
 re-enters the experience in that stream while preserving the current location.
-Exact public copy remains gated. Sighted mouse and keyboard users without assistive
+Exact stream-control copy and radio order follow the accepted UG-3_CONTROL_COPY_PROPOSAL.md bundle under D-057; final legal notice content remains gated. Sighted mouse and keyboard users without assistive
 technology receive the visible text before operation; a screen reader receives
 the associated text at the group and button; at 400% magnification the visible text
 remains before Apply without being hidden or clipped. The advance advisement is

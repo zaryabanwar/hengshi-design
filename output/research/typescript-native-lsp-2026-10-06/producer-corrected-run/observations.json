@@ -1,0 +1,701 @@
+{
+  "checked_at_utc": "2026-10-05T22:31:30.607259+00:00",
+  "observations": [
+    {
+      "name": "valid-component",
+      "expected_codes": [],
+      "observed": {
+        "codes": [],
+        "report": {
+          "kind": "full",
+          "items": []
+        }
+      },
+      "match": true
+    },
+    {
+      "name": "valid-async-component",
+      "expected_codes": [],
+      "observed": {
+        "codes": [],
+        "report": {
+          "kind": "full",
+          "items": []
+        }
+      },
+      "match": true
+    },
+    {
+      "name": "invalid-prop",
+      "expected_codes": [
+        2322
+      ],
+      "observed": {
+        "codes": [
+          2322
+        ],
+        "report": {
+          "kind": "full",
+          "items": [
+            {
+              "range": {
+                "start": {
+                  "line": 1,
+                  "character": 26
+                },
+                "end": {
+                  "line": 1,
+                  "character": 31
+                }
+              },
+              "severity": 1,
+              "code": 2322,
+              "source": "ts",
+              "message": "Type 'number' is not assignable to type 'string'."
+            }
+          ]
+        }
+      },
+      "match": true
+    },
+    {
+      "name": "missing-prop",
+      "expected_codes": [
+        2741
+      ],
+      "observed": {
+        "codes": [
+          2741
+        ],
+        "report": {
+          "kind": "full",
+          "items": [
+            {
+              "range": {
+                "start": {
+                  "line": 1,
+                  "character": 21
+                },
+                "end": {
+                  "line": 1,
+                  "character": 25
+                }
+              },
+              "severity": 1,
+              "code": 2741,
+              "source": "ts",
+              "message": "Property 'title' is missing in type '{}' but required in type '{ title: string; }'."
+            }
+          ]
+        }
+      },
+      "match": true
+    },
+    {
+      "name": "invalid-state-action",
+      "expected_codes": [
+        2345
+      ],
+      "observed": {
+        "codes": [
+          2345
+        ],
+        "report": {
+          "kind": "full",
+          "items": [
+            {
+              "range": {
+                "start": {
+                  "line": 1,
+                  "character": 84
+                },
+                "end": {
+                  "line": 1,
+                  "character": 91
+                }
+              },
+              "severity": 1,
+              "code": 2345,
+              "source": "ts",
+              "message": "Argument of type 'string' is not assignable to parameter of type 'SetStateAction<number>'."
+            }
+          ]
+        }
+      },
+      "match": true
+    },
+    {
+      "name": "invalid-ref",
+      "expected_codes": [
+        2322
+      ],
+      "observed": {
+        "codes": [
+          2322
+        ],
+        "report": {
+          "kind": "full",
+          "items": [
+            {
+              "range": {
+                "start": {
+                  "line": 1,
+                  "character": 92
+                },
+                "end": {
+                  "line": 1,
+                  "character": 95
+                }
+              },
+              "severity": 1,
+              "code": 2322,
+              "source": "ts",
+              "message": "Type 'RefObject<HTMLDivElement | null>' is not assignable to type 'Ref<HTMLButtonElement> | undefined'.\n  Type 'RefObject<HTMLDivElement | null>' is not assignable to type 'RefObject<HTMLButtonElement | null>'.\n    Type 'HTMLDivElement | null' is not assignable to type 'HTMLButtonElement | null'.\n      Type 'HTMLDivElement' is missing the following properties from type 'HTMLButtonElement': command, commandForElement, disabled, form, and 17 more."
+            }
+          ]
+        }
+      },
+      "match": true
+    },
+    {
+      "name": "invalid-event-property",
+      "expected_codes": [
+        2339
+      ],
+      "observed": {
+        "codes": [
+          2339
+        ],
+        "report": {
+          "kind": "full",
+          "items": [
+            {
+              "range": {
+                "start": {
+                  "line": 0,
+                  "character": 81
+                },
+                "end": {
+                  "line": 0,
+                  "character": 97
+                }
+              },
+              "severity": 1,
+              "code": 2339,
+              "source": "ts",
+              "message": "Property 'nonexistentField' does not exist on type 'EventTarget & HTMLButtonElement'."
+            }
+          ]
+        }
+      },
+      "match": true
+    },
+    {
+      "name": "invalid-dom-root",
+      "expected_codes": [
+        2345
+      ],
+      "observed": {
+        "codes": [
+          2345
+        ],
+        "report": {
+          "kind": "full",
+          "items": [
+            {
+              "range": {
+                "start": {
+                  "line": 1,
+                  "character": 11
+                },
+                "end": {
+                  "line": 1,
+                  "character": 27
+                }
+              },
+              "severity": 1,
+              "code": 2345,
+              "source": "ts",
+              "message": "Argument of type 'string' is not assignable to parameter of type 'Container'."
+            }
+          ]
+        }
+      },
+      "match": true
+    }
+  ],
+  "buffer_transitions": [
+    {
+      "version": 2,
+      "expected_codes": [],
+      "observed": {
+        "codes": [],
+        "report": {
+          "kind": "full",
+          "items": []
+        }
+      },
+      "match": true
+    },
+    {
+      "version": 3,
+      "expected_codes": [
+        2322
+      ],
+      "observed": {
+        "codes": [
+          2322
+        ],
+        "report": {
+          "kind": "full",
+          "items": [
+            {
+              "range": {
+                "start": {
+                  "line": 1,
+                  "character": 26
+                },
+                "end": {
+                  "line": 1,
+                  "character": 31
+                }
+              },
+              "severity": 1,
+              "code": 2322,
+              "source": "ts",
+              "message": "Type 'number' is not assignable to type 'string'."
+            }
+          ]
+        }
+      },
+      "match": true
+    }
+  ],
+  "success": true,
+  "limits": "finite native7 public LSP React diagnostics only; no editor UI, emit, bundler, runtime, plugins, whole-graph compatibility or adoption proof",
+  "initialize": {
+    "capabilities": {
+      "positionEncoding": "utf-16",
+      "textDocumentSync": {
+        "openClose": true,
+        "change": 2,
+        "save": true
+      },
+      "completionProvider": {
+        "triggerCharacters": [
+          ".",
+          "\"",
+          "'",
+          "`",
+          "/",
+          "@",
+          "<",
+          "#",
+          " ",
+          "*"
+        ],
+        "resolveProvider": true,
+        "completionItem": {
+          "labelDetailsSupport": true
+        }
+      },
+      "hoverProvider": true,
+      "signatureHelpProvider": {
+        "triggerCharacters": [
+          "(",
+          ",",
+          "<"
+        ],
+        "retriggerCharacters": [
+          ")"
+        ]
+      },
+      "definitionProvider": true,
+      "typeDefinitionProvider": true,
+      "implementationProvider": true,
+      "referencesProvider": true,
+      "documentHighlightProvider": true,
+      "documentSymbolProvider": true,
+      "codeActionProvider": {
+        "codeActionKinds": [
+          "quickfix",
+          "source.organizeImports",
+          "source.removeUnusedImports",
+          "source.sortImports",
+          "source.fixAll"
+        ]
+      },
+      "codeLensProvider": {
+        "resolveProvider": true
+      },
+      "workspaceSymbolProvider": true,
+      "documentFormattingProvider": true,
+      "documentRangeFormattingProvider": true,
+      "documentOnTypeFormattingProvider": {
+        "firstTriggerCharacter": "{",
+        "moreTriggerCharacter": [
+          "}",
+          ";",
+          "\n"
+        ]
+      },
+      "renameProvider": {
+        "prepareProvider": true
+      },
+      "foldingRangeProvider": true,
+      "selectionRangeProvider": true,
+      "callHierarchyProvider": true,
+      "linkedEditingRangeProvider": true,
+      "semanticTokensProvider": {
+        "legend": {
+          "tokenTypes": [],
+          "tokenModifiers": []
+        },
+        "range": true,
+        "full": true
+      },
+      "inlayHintProvider": true,
+      "diagnosticProvider": {
+        "identifier": "typescript",
+        "interFileDependencies": true,
+        "workspaceDiagnostics": false
+      },
+      "workspace": {
+        "fileOperations": {
+          "willRename": {
+            "filters": [
+              {
+                "scheme": "file",
+                "pattern": {
+                  "glob": "**/*.{ts,tsx,js,jsx,cts,cjs,mts,mjs,json}"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "experimental": {
+        "customSourceDefinitionProvider": true,
+        "customMultiDocumentHighlightProvider": true
+      },
+      "_vs_onAutoInsertProvider": {
+        "_vs_triggerCharacters": [
+          ">"
+        ]
+      },
+      "_vs_referencesProvider": true
+    },
+    "serverInfo": {
+      "name": "typescript-go",
+      "version": "7.0.2"
+    }
+  },
+  "configuration_registrations": [
+    {
+      "id": "typescript-config-watch-id",
+      "method": "workspace/didChangeConfiguration",
+      "registerOptions": {
+        "section": [
+          "js/ts",
+          "typescript",
+          "javascript",
+          "editor"
+        ]
+      }
+    }
+  ],
+  "shutdown_response": null,
+  "process_exit_code": 0,
+  "shutdown_then_exit": true,
+  "process_gone": true,
+  "input_guards": [
+    {
+      "path": ".specify/memory/constitution.md",
+      "unchanged": true
+    },
+    {
+      "path": "AGENTS.md",
+      "unchanged": true
+    },
+    {
+      "path": "apps/api/requirements.txt",
+      "unchanged": true
+    },
+    {
+      "path": "apps/web/package-lock.json",
+      "unchanged": true
+    },
+    {
+      "path": "apps/web/package.json",
+      "unchanged": true
+    },
+    {
+      "path": "apps/web/public/models/hengshi-hq-atlanta-exterior-web.glb",
+      "unchanged": true
+    },
+    {
+      "path": "artifacts/nature-campus-layout-study/nature-campus-layout.glb",
+      "unchanged": true
+    },
+    {
+      "path": "DECISIONS.md",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/node_modules/@typescript/typescript-win32-x64/lib/tsc.exe",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/package-lock.json",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/react-lint-approved-evaluation-2026-10-06/candidate/package.json",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-native-lsp-2026-10-06/probe_lsp.py",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/fixture-oracles.json",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/invalid-dom-root/fixture.tsx",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/invalid-dom-root/tsconfig.json",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/invalid-event-property/fixture.tsx",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/invalid-event-property/tsconfig.json",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/invalid-prop/fixture.tsx",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/invalid-prop/tsconfig.json",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/invalid-ref/fixture.tsx",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/invalid-ref/tsconfig.json",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/invalid-state-action/fixture.tsx",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/invalid-state-action/tsconfig.json",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/missing-prop/fixture.tsx",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/missing-prop/tsconfig.json",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react/canary.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react/compiler-runtime.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react/experimental.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react/global.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react/index.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react/jsx-dev-runtime.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react/jsx-runtime.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react/LICENSE",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react/package.json",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react/README.md",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react/ts5.0/canary.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react/ts5.0/experimental.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react/ts5.0/global.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react/ts5.0/index.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react/ts5.0/jsx-dev-runtime.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react/ts5.0/jsx-runtime.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react-dom/canary.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react-dom/client.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react-dom/experimental.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react-dom/index.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react-dom/LICENSE",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react-dom/package.json",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react-dom/README.md",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react-dom/server.browser.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react-dom/server.bun.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react-dom/server.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react-dom/server.edge.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react-dom/server.node.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react-dom/static.browser.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react-dom/static.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react-dom/static.edge.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react-dom/static.node.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/@types/react-dom/test-utils/index.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/csstype/index.d.ts",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/csstype/index.js.flow",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/csstype/LICENSE",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/csstype/package.json",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/node_modules/csstype/README.md",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/valid-async-component/fixture.tsx",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/valid-async-component/tsconfig.json",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/valid-component/fixture.tsx",
+      "unchanged": true
+    },
+    {
+      "path": "output/research/typescript-react-parity-2026-10-06/valid-component/tsconfig.json",
+      "unchanged": true
+    },
+    {
+      "path": "package-lock.json",
+      "unchanged": true
+    },
+    {
+      "path": "package.json",
+      "unchanged": true
+    },
+    {
+      "path": "PROJECT.md",
+      "unchanged": true
+    },
+    {
+      "path": "PROJECT_STATE.yaml",
+      "unchanged": true
+    },
+    {
+      "path": "TASKS.md",
+      "unchanged": true
+    }
+  ]
+}

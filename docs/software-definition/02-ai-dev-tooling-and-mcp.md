@@ -1,10 +1,18 @@
-# 02 — AI Development Tooling and MCP
+# 02 — AI Development Tooling and MCP — v1
 
 ## Purpose
 
 This file records tool inventory, verified capability states, and safe fallbacks.
 Tool availability never bypasses the phase, approval, design, security, or Git
 gates in [03-autonomous-ai-development-workflow.md](03-autonomous-ai-development-workflow.md).
+
+D-069 applies latest mutually compatible stable selection to every project tool,
+framework, library, runtime and exporter. Installed/current versions and separately
+newest releases are inventory observations, not an approved coupled production
+set. Resolve, test, review and reproducibly lock the complete graph where used.
+This is the first product/current definition v1; preserve real technical/schema
+versions and dated capability evidence. Provider selection and cost planning are
+deferred under D-068; tooling availability does not reopen them.
 
 ## Status Vocabulary
 
@@ -37,14 +45,15 @@ secrets are never requested in chat.
 | Tool / MCP | Verified state | Purpose |
 |---|---|---|
 | Spec Kit CLI | Installed at `C:\Users\Zaryab\.local\bin\specify.exe`; Codex integration configured | Specification workflow |
-| Context7 MCP | Configured; protocol- and React capability-tested by safe direct MCP on 2026-07-19; no authentication redirect required; active-host exposure gap remains because it is not natively listed in this Codex host | Official migration, compatibility, deprecation, and runtime guidance |
+| Context7 MCP | Exposed in this Codex host and capability-tested 2026-10-05: library resolution and PostgreSQL 18/Oxlint documentation queries succeeded. The earlier July direct-MCP exposure gap is historical. Query results are source guidance, not an approved compatible graph. | Official migration, compatibility, deprecation, and runtime guidance |
 | Playwright CLI | Configured in `apps/web/playwright.config.ts`; capability status must be rechecked per implementation phase | Browser and accessibility verification |
 | Playwright MCP | Configured locally; current-host exposure varies | Live browser inspection and screenshots |
 | Stitch MCP | **Not configured or exposed on this host, verified 2026-09-06.** No Stitch MCP entry exists in `%APPDATA%\Code\User\mcp.json` (the canonical inventory named by `AGENTS.md`, which itself does not exist on this host), `.cursor/mcp.json`, `.vscode/mcp.json`, `.mcp.json`, `~/.claude.json`, or the Claude desktop configuration. The earlier "configured locally" statement is superseded. | Not used: Figma is the provider selected for reference production |
-| Figma | **Capability-tested 2026-09-06.** Registered at user scope against the official remote endpoint `https://mcp.figma.com/mcp`, so no endpoint or credential enters the repository; `.mcp.json` remains absent and `%APPDATA%\Code\User\mcp.json` still does not exist. The founder completed the provider OAuth flow, Claude Code was restarted, the tool set bound into the session, and `whoami` returned an authenticated identity — a **Full seat on the `starter` tier**. **Binding constraint: 20 MCP tool calls per calendar month.** The Starter column of the provider's rate-limit table spans both seat rows, so a Full seat does *not* receive the 200/day allowance; the provider's upgrade text states the figure directly. Write-tool rate-limit exemption is **NOT ASSERTED** — the general claim that write tools are exempt does not agree in scope with the enumerated list of only `add_code_connect_map`, `create_new_file`, and `whoami`. Canvas writing is remote-only and free during beta (R-031); it is **not** capability-tested. See `docs/phase-1-ui-reference-production/validation/capability-evidence.md`, `mcp-call-budget.csv`, and R-026/R-033. | Production UI references, design, and handoff, gated by `docs/phase-1-ui-reference-production/UI_REFERENCE_PRODUCTION_CONTRACT.md` §3.5 |
+| Figma MCP | File reads, scoped canvas creation and exports succeeded during approved B01 attempts. The [current B01 call authority](../phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md#calls-costs-and-authority) and [ledger](../phase-1-ui-reference-production/validation/mcp-call-ledger.csv) own attempts and outcomes, separately from actual provider debit. The saved D-095 identity check returned reauthentication required; the founder subsequently confirmed no MCP quota is available. Do not repeat quota/identity/reconnect checks for that known condition. | D-095: batch within actual included20-call availability, then use computer control; no repeated method/per-call prompts within approved scope, extra allowance or paid activation |
+| Figma web editor / Design agent / Make | D-095 supersedes D-094's native-only/no-AI restriction within approved scope. Use included Design agent features for native canvas work and Make where suitable for functional prototypes; generated code/prototypes do not establish editable native references or reaction equivalence. The [B01 brief](../phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md) owns actual static construction, scoped reviews, dated AI-credit observations and unresolved preserve/reset evidence. AI credits are separate from MCP quota; verify actual controls/balance before use. On2026-10-17, this chat's existing browser handle rejected access because local browser use was disabled in Work settings; the saved Figma state was not revalidated. | Continue approved scope when browser control is available; inspect generated output and retain independent review/acceptance. No extra quota, paid activation, new scope, account/sharing change, destructive cleanup or implied acceptance |
 | Chrome/browser tools | Host-dependent; capability-test before relying on them | Browser diagnostics |
 | GitHub tooling | Configured/available depending on host; use only after Git approval | Repository and CI workflow |
-| Docker + Compose | Docker executable 29.5.2 is installed; `docker --version` / Compose capability checks timed out on 2026-07-19, so operational status is not established | Reproducible local services after a later bounded capability recheck |
+| Docker + Compose (historical inventory) | July2026 recorded executable29.5.2 and timed-out capability checks; this is not current runtime evidence. The founder requires Docker-free local operation and has removed Docker images/data. Use the [native Windows operating guide](../../README.md#native-local-operation-on-windows); do not restart Docker or pull images as a fallback. | Historical tooling only; native PostgreSQL, API, web and documentation servers are the local route |
 | LibreOffice | Version 26.2.4.2 installed, CLI-tested, capability-tested, and independently reviewed on 2026-07-19; a generated control DOCX and the 24-page historical consolidation converted to PDF and every target page rendered for inspection | DOCX-to-PDF rendering for visual QA, with a fresh control conversion and complete page inspection at each material document gate |
 | PostgreSQL MCP | Configured locally as read-only; current-host exposure varies | Safe schema/data inspection |
 | Lighthouse CI | Repository configuration present; capability status must be revalidated | Performance evidence |
@@ -73,9 +82,11 @@ flow.
 ## Reproducible Tool Selection
 
 Do not use floating `latest` tags in production artifacts or durable CI. During
-Phase 1, resolve the current stable tool, action, API, and image versions; during
-the relevant upgrade wave, pin npm/Python locks, container digests, GitHub Action
-commit SHAs, and cloud API versions. Preview tools may be exercised only in
+each relevant increment under D-097, resolve the current stable tool, action, API,
+and image versions for its complete coupled dependency graph, including shared
+and transitive dependencies. Qualify future-only families when their increment
+begins. During the relevant upgrade wave, pin npm/Python locks, container digests,
+GitHub Action commit SHAs, and cloud API versions. Preview tools may be exercised only in
 isolated non-production compatibility jobs.
 
 ## Common Verification Commands

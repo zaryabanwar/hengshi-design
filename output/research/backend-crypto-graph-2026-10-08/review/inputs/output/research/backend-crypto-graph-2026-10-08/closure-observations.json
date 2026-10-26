@@ -1,0 +1,717 @@
+{
+  "status": "DOING",
+  "scope": "Saved Windows metadata closure only",
+  "report_sha256": "9da776be394095379b5365c53beeb27887b57ec7b795745f5935349899464ba1",
+  "package_records": [
+    {
+      "name": "alembic",
+      "version": "1.20.0",
+      "extras": [],
+      "wheel": "alembic-1.20.0-py3-none-any.whl",
+      "sha256": "77eb101048d95f982c0353e9233404889dcd7a6fc244c107836c0e2fc9cf7d9d",
+      "bytes": 268719,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/alembic-project.json.gz",
+      "registry_snapshot_sha256": "229bedc48836e584882a072c1de5dacb914893dd6586790b54b916b02a742c41"
+    },
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5",
+      "extras": [],
+      "wheel": "annotated_doc-0.0.5-py3-none-any.whl",
+      "sha256": "117bac03a25ede5df5440e855b32d556049ca169ead221505badf432fed4b101",
+      "bytes": 5302,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/annotated-doc-project.json.gz",
+      "registry_snapshot_sha256": "191c7fa38e440efbe338936da237e6999f5b76d82d69b1a5533b2b6ad21d66f3"
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "extras": [],
+      "wheel": "annotated_types-0.8.0-py3-none-any.whl",
+      "sha256": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0",
+      "bytes": 13427,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/annotated-types-project.json.gz",
+      "registry_snapshot_sha256": "5592c2f85e06dc0aaa094f186945b4629555bc8234c4d8706a7af9427d87f677"
+    },
+    {
+      "name": "anyio",
+      "version": "4.15.1",
+      "extras": [],
+      "wheel": "anyio-4.15.1-py3-none-any.whl",
+      "sha256": "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101",
+      "bytes": 132079,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/anyio-project.json.gz",
+      "registry_snapshot_sha256": "da931b6b339821ed63865dcf3cb959bcf7bcd63a80061322822ff71b902c0863"
+    },
+    {
+      "name": "bcrypt",
+      "version": "5.0.0",
+      "extras": [],
+      "wheel": "bcrypt-5.0.0-cp39-abi3-win_amd64.whl",
+      "sha256": "64ee8434b0da054d830fa8e89e1c8bf30061d539044a39524ff7dec90481e5c2",
+      "bytes": 150912,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/bcrypt-project.json.gz",
+      "registry_snapshot_sha256": "24bcd3761174079a1ddeec4e12dbc9b212a2e399c37d83e70cbeb8cdb789febe"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "extras": [],
+      "wheel": "certifi-2026.7.22-py3-none-any.whl",
+      "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775",
+      "bytes": 136983,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/certifi-project.json.gz",
+      "registry_snapshot_sha256": "57b4ced9f5221091c033018e4a596d2a26ad13820639f508b356c9839b7447b2"
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "extras": [],
+      "wheel": "cffi-2.1.1-cp314-cp314-win_amd64.whl",
+      "sha256": "3222ba5d678f80a030e6afbcc33dc1ae5cb45facabb61cee2c7016b8432fde48",
+      "bytes": 187949,
+      "registry_snapshot": "output/research/backend-crypto-graph-2026-10-08/new-registry/cffi-exact.json.gz",
+      "registry_snapshot_sha256": "fc3b2953a29914952a976314140a5473eddb681675f49669b6ac74df6a202fad"
+    },
+    {
+      "name": "click",
+      "version": "8.5.0",
+      "extras": [],
+      "wheel": "click-8.5.0-py3-none-any.whl",
+      "sha256": "255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360",
+      "bytes": 125251,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/click-project.json.gz",
+      "registry_snapshot_sha256": "7e5a93d9eca38c519fd99f8149390b2377b860225a0b8793543d437e529f2626"
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "extras": [],
+      "wheel": "colorama-0.4.6-py2.py3-none-any.whl",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "bytes": 25335,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/colorama-project.json.gz",
+      "registry_snapshot_sha256": "c1f1c76e31927f9c40338f4e6daae3f7c0d246544d31193b6982befba5f5f4fa"
+    },
+    {
+      "name": "cryptography",
+      "version": "50.0.2",
+      "extras": [],
+      "wheel": "cryptography-50.0.2-cp311-abi3-win_amd64.whl",
+      "sha256": "7afa5a6602a9f29af1f3a2965f831bae7c9d5d597b7cbb716d41ab3b7d89879c",
+      "bytes": 3824692,
+      "registry_snapshot": "output/research/backend-crypto-graph-2026-10-08/new-registry/cryptography-exact.json.gz",
+      "registry_snapshot_sha256": "2e5496982ca7d0d71604180a3d896d1858a7cb516247aae0338adc017c73951d"
+    },
+    {
+      "name": "dnspython",
+      "version": "2.8.0",
+      "extras": [],
+      "wheel": "dnspython-2.8.0-py3-none-any.whl",
+      "sha256": "01d9bbc4a2d76bf0db7c1f729812ded6d912bd318d3b1cf81d30c0f845dbf3af",
+      "bytes": 331094,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/dnspython-project.json.gz",
+      "registry_snapshot_sha256": "58fcb626aac63215d4234c91a3aa3ea86e0007af05ed887e33ee5265c46323d2"
+    },
+    {
+      "name": "email-validator",
+      "version": "2.3.0",
+      "extras": [],
+      "wheel": "email_validator-2.3.0-py3-none-any.whl",
+      "sha256": "80f13f623413e6b197ae73bb10bf4eb0908faf509ad8362c5edeb0be7fd450b4",
+      "bytes": 35604,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/email-validator-project.json.gz",
+      "registry_snapshot_sha256": "78c65e8b73a94d4d5e2f553f88ed9aec55d6a7df385662e468dc6ef65e7c14ca"
+    },
+    {
+      "name": "fastapi",
+      "version": "0.143.0",
+      "extras": [],
+      "wheel": "fastapi-0.143.0-py3-none-any.whl",
+      "sha256": "3e9395fd35276425b61b516a31fdd7c77fe2af83e41b4da22e30696fb1304c5d",
+      "bytes": 144665,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/fastapi-project.json.gz",
+      "registry_snapshot_sha256": "6ee636e54f8164e4887d11ee935b8e216283edd0dad938e765fcf8f2ed11335c"
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "extras": [],
+      "wheel": "h11-0.16.0-py3-none-any.whl",
+      "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+      "bytes": 37515,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/h11-project.json.gz",
+      "registry_snapshot_sha256": "9dba3831f9753cf8b11d4fad2f94c2b7669a40c80b6ce8fd1f8bcfa99d66a5ed"
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9",
+      "extras": [],
+      "wheel": "httpcore-1.0.9-py3-none-any.whl",
+      "sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+      "bytes": 78784,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/httpcore-project.json.gz",
+      "registry_snapshot_sha256": "c41c81759087830d54789a2521f06b8decf81c69c71292d4280ec7ac925c88a2"
+    },
+    {
+      "name": "httptools",
+      "version": "0.8.0",
+      "extras": [],
+      "wheel": "httptools-0.8.0-cp314-cp314-win_amd64.whl",
+      "sha256": "19d1ee275bb59ba2643ba9a3a1e51cc0c788caf2b8df506368e03f56fdd08527",
+      "bytes": 92705,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/httptools-project.json.gz",
+      "registry_snapshot_sha256": "366ba02d127f853f498fe9d39b25b94923c4865b2b601ade7e3e900dde2e0f5c"
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1",
+      "extras": [],
+      "wheel": "httpx-0.28.1-py3-none-any.whl",
+      "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+      "bytes": 73517,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/httpx-project.json.gz",
+      "registry_snapshot_sha256": "c8edb8c43a19b4b92309bb5eac83879db39986835bdaeec9d34731ec70af4abf"
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "extras": [],
+      "wheel": "idna-3.20-py3-none-any.whl",
+      "sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c",
+      "bytes": 69583,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/idna-project.json.gz",
+      "registry_snapshot_sha256": "6117a840c73ff5f595d53741e03583b1f5920abe1a86062d8dd434eeb5125a82"
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1",
+      "extras": [],
+      "wheel": "iniconfig-2.3.1-py3-none-any.whl",
+      "sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7",
+      "bytes": 7552,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/iniconfig-project.json.gz",
+      "registry_snapshot_sha256": "d3a97245c570e99a2a196574cdfea0a80cafab9f0061ea9b6e51f24649111810"
+    },
+    {
+      "name": "mako",
+      "version": "1.4.3",
+      "extras": [],
+      "wheel": "mako-1.4.3-py3-none-any.whl",
+      "sha256": "723296007c870bfd6b3f0c3230dba7198096e5269297ebf5e4eff9e7ffa39d4f",
+      "bytes": 80164,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/mako-project.json.gz",
+      "registry_snapshot_sha256": "ed69118ada0394bf1961c381303e66efdada2e8f8b63eab486bffd857db14e66"
+    },
+    {
+      "name": "markupsafe",
+      "version": "3.0.4",
+      "extras": [],
+      "wheel": "markupsafe-3.0.4-cp314-cp314-win_amd64.whl",
+      "sha256": "c1bc67752d5f21013cfe430df4062441714eab79f65a6a05e01505957e9c35fe",
+      "bytes": 14501,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/markupsafe-project.json.gz",
+      "registry_snapshot_sha256": "8698c0cd02f57b1d40cbcfdf53a10cd343f491d939407a554d070ae9f70704d9"
+    },
+    {
+      "name": "opentelemetry-api",
+      "version": "1.45.1",
+      "extras": [],
+      "wheel": "opentelemetry_api-1.45.1-py3-none-any.whl",
+      "sha256": "b31553efa588ae44bc306f863c785c5333a9ecc091248c6ee68b4b6c87fdedfb",
+      "bytes": 60256,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/opentelemetry-api-project.json.gz",
+      "registry_snapshot_sha256": "630c272d76eeeeafeb9fcb228dc2c162dd1fb512bcf1bd0b59f2f6726841be48"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "extras": [],
+      "wheel": "packaging-26.3-py3-none-any.whl",
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+      "bytes": 129956,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/packaging-project.json.gz",
+      "registry_snapshot_sha256": "20ce33cb1ad43f0c2e73a69fe8cc709764a96fe53e09f53fb532b1e52298f382"
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0",
+      "extras": [],
+      "wheel": "pluggy-1.6.0-py3-none-any.whl",
+      "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
+      "bytes": 20538,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/pluggy-project.json.gz",
+      "registry_snapshot_sha256": "ab296406976441027c024602f106a3b986a542674fb2acf9d060964752365a6e"
+    },
+    {
+      "name": "psycopg",
+      "version": "3.3.6",
+      "extras": [
+        "binary"
+      ],
+      "wheel": "psycopg-3.3.6-py3-none-any.whl",
+      "sha256": "a1db9f7148b06a28606767efaca51fa6f9398c5c0a3810519be69d7000bdb631",
+      "bytes": 215490,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/psycopg-project.json.gz",
+      "registry_snapshot_sha256": "247b4936b61c43e240901146b072e5f461ad1aca98097dfb560f2926f9505bd3"
+    },
+    {
+      "name": "psycopg-binary",
+      "version": "3.3.6",
+      "extras": [],
+      "wheel": "psycopg_binary-3.3.6-cp314-cp314-win_amd64.whl",
+      "sha256": "1fbd30e537dab22cafdf080608f10148fe2a5f3a61294ddb5113caac8a623840",
+      "bytes": 3755671,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/psycopg-binary-project.json.gz",
+      "registry_snapshot_sha256": "c782db2440a9e33224d319678230e47fa71bdbfed2ff81e4886b5ee872aac8b7"
+    },
+    {
+      "name": "pycparser",
+      "version": "3.1",
+      "extras": [],
+      "wheel": "pycparser-3.1-py3-none-any.whl",
+      "sha256": "f09d358c840bd147b79e55f2bc494f18ea869dc897f5852a8f5766b74f787882",
+      "bytes": 48709,
+      "registry_snapshot": "output/research/backend-crypto-graph-2026-10-08/new-registry/pycparser-exact.json.gz",
+      "registry_snapshot_sha256": "0a72737e3a04115439b03c883d7b74ad22f1dc4f90c8c0595ca30e3ff4937322"
+    },
+    {
+      "name": "pydantic",
+      "version": "2.14.0",
+      "extras": [],
+      "wheel": "pydantic-2.14.0-py3-none-any.whl",
+      "sha256": "15fab1bea6f1dc5003b54fc2ecab230c1fd1dbade2acd4addc52d81e32416d4b",
+      "bytes": 487109,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/pydantic-project.json.gz",
+      "registry_snapshot_sha256": "3da7685a2efe05ab2785d3c51997ffb98139b29a9764cb820b8ea5043c3ae72b"
+    },
+    {
+      "name": "pydantic-core",
+      "version": "2.50.0",
+      "extras": [],
+      "wheel": "pydantic_core-2.50.0-cp314-cp314-win_amd64.whl",
+      "sha256": "63263d64884688554fb025a3906c7b00573980cfee75f9afeb86239d577384bc",
+      "bytes": 2170939,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/core-recovery/pydantic-core-project.json.gz",
+      "registry_snapshot_sha256": "25df7add998caf451d90a69d03cdc7c79367338d154b54e39fffb7143b359c1d"
+    },
+    {
+      "name": "pygments",
+      "version": "2.21.0",
+      "extras": [],
+      "wheel": "pygments-2.21.0-py3-none-any.whl",
+      "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+      "bytes": 1250147,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/pygments-project.json.gz",
+      "registry_snapshot_sha256": "76ad77c4b63826e3534cf867c344a261e74bf61fa10d7c7d41e7ed06048906ef"
+    },
+    {
+      "name": "pyjwt",
+      "version": "2.15.1",
+      "extras": [
+        "crypto"
+      ],
+      "wheel": "pyjwt-2.15.1-py3-none-any.whl",
+      "sha256": "42d59d631f7768a1028a64c7ff581a9bf7519804daf91fc5b6c56e30eec5e193",
+      "bytes": 33860,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/pyjwt-project.json.gz",
+      "registry_snapshot_sha256": "c189a04aa8edef0b6a4409ba64e2ca3de081f31c5091dbc924b26665a2c3b1d3"
+    },
+    {
+      "name": "pytest",
+      "version": "9.1.1",
+      "extras": [],
+      "wheel": "pytest-9.1.1-py3-none-any.whl",
+      "sha256": "37a86b45efb9a47a61a36449063e8e18d0cab3161329fc099eb21783169c4f0c",
+      "bytes": 386536,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/pytest-project.json.gz",
+      "registry_snapshot_sha256": "d47efbb36944a6ddb54eef3a3ef61455015f77e854012b944b785edb162cbc66"
+    },
+    {
+      "name": "pytest-asyncio",
+      "version": "1.4.0",
+      "extras": [],
+      "wheel": "pytest_asyncio-1.4.0-py3-none-any.whl",
+      "sha256": "933ca923a23075a87fb7070c0ec272a6848489824d887c85c812670932835aa1",
+      "bytes": 16930,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/pytest-asyncio-project.json.gz",
+      "registry_snapshot_sha256": "3d2eed89cc818e21c246fe9b1bda417e28055f18422280d9cfe4dd15e2123c97"
+    },
+    {
+      "name": "python-dotenv",
+      "version": "1.2.4",
+      "extras": [],
+      "wheel": "python_dotenv-1.2.4-py3-none-any.whl",
+      "sha256": "42269a8a5b3fd54ffa6f3d84b18abed50064717576b4ecf03dc4a55d8aa04fdc",
+      "bytes": 23266,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/python-dotenv-project.json.gz",
+      "registry_snapshot_sha256": "3c6c460df85bd75db8052bce034174fbc2b0a20efd50bf3c408d56f6d5e47817"
+    },
+    {
+      "name": "pyyaml",
+      "version": "6.0.3",
+      "extras": [],
+      "wheel": "pyyaml-6.0.3-cp314-cp314-win_amd64.whl",
+      "sha256": "4a2e8cebe2ff6ab7d1050ecd59c25d4c8bd7e6f400f5f82b96557ac0abafd0ac",
+      "bytes": 156429,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/pyyaml-project.json.gz",
+      "registry_snapshot_sha256": "6910211e0c03bddc2c058d60eff8713116e8e95a71a82dfee52b87f204e887ee"
+    },
+    {
+      "name": "sqlalchemy",
+      "version": "2.1.4",
+      "extras": [],
+      "wheel": "sqlalchemy-2.1.4-cp314-cp314-win_amd64.whl",
+      "sha256": "080f8d853aac5bb5620f0ae6f46527397cf18dce0ec2b478b478469ef3cae2c4",
+      "bytes": 2431689,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/sqlalchemy-project.json.gz",
+      "registry_snapshot_sha256": "4d71d2707843ebb5a6a25b84f8904e28cdc6a269a97a197a7ae2e2ef9f88fae9"
+    },
+    {
+      "name": "starlette",
+      "version": "1.7.0",
+      "extras": [],
+      "wheel": "starlette-1.7.0-py3-none-any.whl",
+      "sha256": "67f8e99895493dd2911a03f11314af6ceebeae4e704bb9f43dfc6a9db151c93e",
+      "bytes": 78980,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/starlette-project.json.gz",
+      "registry_snapshot_sha256": "5f583156ff923e0ff1b43e5244779c9f5acb6fc8893b9bbf32710280464ad20d"
+    },
+    {
+      "name": "typing-extensions",
+      "version": "4.16.0",
+      "extras": [],
+      "wheel": "typing_extensions-4.16.0-py3-none-any.whl",
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+      "bytes": 45571,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/typing-extensions-project.json.gz",
+      "registry_snapshot_sha256": "2bc349e88b6fd53e8562fb9d1cbd3b18ee9f95f0386888c00c0251d56d004bbb"
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "extras": [],
+      "wheel": "typing_inspection-0.4.4-py3-none-any.whl",
+      "sha256": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147",
+      "bytes": 14750,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/typing-inspection-project.json.gz",
+      "registry_snapshot_sha256": "dbd648d165e8ea0fde6e27900bf799432677e41bf6c3cfb6f64a59257abe9c88"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.5",
+      "extras": [],
+      "wheel": "tzdata-2026.5-py2.py3-none-any.whl",
+      "sha256": "b683bd1b6659ddcd810ff02ad09ba821d4bf1065072805063eb35c49617905ac",
+      "bytes": 347996,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/tzdata-project.json.gz",
+      "registry_snapshot_sha256": "fd88c55ef415238e5fedd141bc14ee1d1b98a13c1f73c9595aee937c7c8dcaa6"
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.54.0",
+      "extras": [
+        "standard"
+      ],
+      "wheel": "uvicorn-0.54.0-py3-none-any.whl",
+      "sha256": "505bdb0f318731d45f1f712071fc781a8981f6847a31c902c9f5e652d4f67faf",
+      "bytes": 87427,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/uvicorn-project.json.gz",
+      "registry_snapshot_sha256": "09f45607f045159e27893f3e70ed124c9f3c33a4d6720800167a3807af154af6"
+    },
+    {
+      "name": "watchfiles",
+      "version": "1.3.0",
+      "extras": [],
+      "wheel": "watchfiles-1.3.0-cp310-abi3-win_amd64.whl",
+      "sha256": "1acabde19b67e673274e89a04d613b7fb1f122e2c4b8ec9a581e59c149264b61",
+      "bytes": 290643,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/watchfiles-project.json.gz",
+      "registry_snapshot_sha256": "a47f4c011d738748a0f37595c201d39b4b0dd7f8e310d9433b9cd87a54af098c"
+    },
+    {
+      "name": "websockets",
+      "version": "17.2",
+      "extras": [],
+      "wheel": "websockets-17.2-cp314-cp314-win_amd64.whl",
+      "sha256": "dac93bf7a9beb215be3282b8441173cd50806c41c007b8be9bb24e03c60ad563",
+      "bytes": 218104,
+      "registry_snapshot": "output/research/backend-hash-inputs-2026-10-08/primary/websockets-project.json.gz",
+      "registry_snapshot_sha256": "283c79853d29a27c55d91a44bd116753a5e702028a954d9017808114905d7960"
+    }
+  ],
+  "active_edges": [
+    [
+      "alembic",
+      "mako",
+      "Mako"
+    ],
+    [
+      "alembic",
+      "sqlalchemy",
+      "SQLAlchemy>=2.0"
+    ],
+    [
+      "alembic",
+      "typing-extensions",
+      "typing-extensions>=4.12"
+    ],
+    [
+      "anyio",
+      "idna",
+      "idna>=2.8"
+    ],
+    [
+      "anyio",
+      "typing-extensions",
+      "typing_extensions>=4.16.0; python_version < \"3.15\""
+    ],
+    [
+      "cffi",
+      "pycparser",
+      "pycparser; implementation_name != \"PyPy\""
+    ],
+    [
+      "cryptography",
+      "cffi",
+      "cffi>=2.0.0 ; platform_python_implementation != 'PyPy'"
+    ],
+    [
+      "email-validator",
+      "dnspython",
+      "dnspython>=2.0.0"
+    ],
+    [
+      "email-validator",
+      "idna",
+      "idna>=2.0.0"
+    ],
+    [
+      "fastapi",
+      "annotated-doc",
+      "annotated-doc>=0.0.2"
+    ],
+    [
+      "fastapi",
+      "opentelemetry-api",
+      "opentelemetry-api>=1.44.0"
+    ],
+    [
+      "fastapi",
+      "pydantic",
+      "pydantic>=2.9.0"
+    ],
+    [
+      "fastapi",
+      "starlette",
+      "starlette>=0.46.0"
+    ],
+    [
+      "fastapi",
+      "typing-extensions",
+      "typing-extensions>=4.8.0"
+    ],
+    [
+      "fastapi",
+      "typing-inspection",
+      "typing-inspection>=0.4.2"
+    ],
+    [
+      "httpcore",
+      "certifi",
+      "certifi"
+    ],
+    [
+      "httpcore",
+      "h11",
+      "h11>=0.16"
+    ],
+    [
+      "httpx",
+      "anyio",
+      "anyio"
+    ],
+    [
+      "httpx",
+      "certifi",
+      "certifi"
+    ],
+    [
+      "httpx",
+      "httpcore",
+      "httpcore==1.*"
+    ],
+    [
+      "httpx",
+      "idna",
+      "idna"
+    ],
+    [
+      "mako",
+      "markupsafe",
+      "MarkupSafe>=2.0"
+    ],
+    [
+      "opentelemetry-api",
+      "typing-extensions",
+      "typing-extensions>=4.5.0"
+    ],
+    [
+      "psycopg",
+      "psycopg-binary",
+      "psycopg-binary==3.3.6; implementation_name != \"pypy\" and extra == \"binary\""
+    ],
+    [
+      "psycopg",
+      "tzdata",
+      "tzdata; sys_platform == \"win32\""
+    ],
+    [
+      "pydantic",
+      "annotated-types",
+      "annotated-types>=0.6.0"
+    ],
+    [
+      "pydantic",
+      "pydantic-core",
+      "pydantic-core==2.50.0"
+    ],
+    [
+      "pydantic",
+      "typing-extensions",
+      "typing-extensions>=4.16.0"
+    ],
+    [
+      "pydantic",
+      "typing-inspection",
+      "typing-inspection>=0.4.4"
+    ],
+    [
+      "pydantic-core",
+      "typing-extensions",
+      "typing-extensions>=4.16.0"
+    ],
+    [
+      "pyjwt",
+      "cryptography",
+      "cryptography>=3.4.0; extra == \"crypto\""
+    ],
+    [
+      "pytest",
+      "colorama",
+      "colorama>=0.4; sys_platform == \"win32\""
+    ],
+    [
+      "pytest",
+      "iniconfig",
+      "iniconfig>=1.0.1"
+    ],
+    [
+      "pytest",
+      "packaging",
+      "packaging>=22"
+    ],
+    [
+      "pytest",
+      "pluggy",
+      "pluggy<2,>=1.5"
+    ],
+    [
+      "pytest",
+      "pygments",
+      "pygments>=2.7.2"
+    ],
+    [
+      "pytest-asyncio",
+      "pytest",
+      "pytest<10,>=8.4"
+    ],
+    [
+      "sqlalchemy",
+      "typing-extensions",
+      "typing-extensions>=4.6.0"
+    ],
+    [
+      "starlette",
+      "anyio",
+      "anyio<5,>=4.0.0"
+    ],
+    [
+      "typing-inspection",
+      "typing-extensions",
+      "typing-extensions>=4.15.0"
+    ],
+    [
+      "uvicorn",
+      "click",
+      "click>=7.0"
+    ],
+    [
+      "uvicorn",
+      "h11",
+      "h11>=0.8"
+    ],
+    [
+      "uvicorn",
+      "httptools",
+      "httptools>=0.8.0; extra == 'standard'"
+    ],
+    [
+      "uvicorn",
+      "python-dotenv",
+      "python-dotenv>=0.13; extra == 'standard'"
+    ],
+    [
+      "uvicorn",
+      "pyyaml",
+      "pyyaml>=5.1; extra == 'standard'"
+    ],
+    [
+      "uvicorn",
+      "watchfiles",
+      "watchfiles>=0.20; extra == 'standard'"
+    ],
+    [
+      "uvicorn",
+      "websockets",
+      "websockets>=13.0; extra == 'standard'"
+    ],
+    [
+      "watchfiles",
+      "anyio",
+      "anyio>=3.0.0"
+    ]
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.14.5",
+    "os_name": "nt",
+    "platform_machine": "AMD64",
+    "platform_release": "11",
+    "platform_system": "Windows",
+    "platform_version": "10.0.26300",
+    "python_full_version": "3.14.5",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.14",
+    "sys_platform": "win32"
+  },
+  "previous_40_metadata_and_artifacts_unchanged": true,
+  "added_packages": [
+    "cffi",
+    "cryptography",
+    "pycparser"
+  ],
+  "archive_bytes": 18107329,
+  "protected_inputs_unchanged": true,
+  "hashed_requirements_sha256": "8b86653929a4707ad0d6346c8a7763f8d6c26b901d91c3dc49dc7a4427b4365b",
+  "installation_performed": false,
+  "wheel_content_verified": false,
+  "native_runtime_verified": false,
+  "production_selection": false,
+  "independent_review": "pending",
+  "limits": [
+    "No full OIDC/PKCE client selected or identity/provider test",
+    "No actual install, signature/RSA/native/HTTP/database tests",
+    "No release-channel, provenance, licence/security or full-graph acceptance"
+  ]
+}

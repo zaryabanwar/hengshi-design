@@ -1,0 +1,16 @@
+{
+  "command": [
+    "node",
+    "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\compatibility-resolution-2026-10-04\\native-lint-probe\\tool\\node_modules\\oxlint\\bin\\oxlint",
+    "--config",
+    "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\config-only-check.json",
+    "--disable-nested-config",
+    "--no-ignore",
+    "--format",
+    "json",
+    "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\native-lint-conformance-2026-10-05\\fixtures\\custom-effect-rule-invalid.tsx"
+  ],
+  "exit": 1,
+  "stdout": "{ \"diagnostics\": [{\"message\": \"React Hook useSpecialEffect has a missing dependency: 'value'\",\"code\": \"react-hooks(exhaustive-deps)\",\"severity\": \"error\",\"url\": \"https://oxc.rs/docs/guide/usage/linter/rules/react/exhaustive-deps.html\",\"help\": \"Either include it or remove the dependency array.\",\"filename\": \"output/research/native-lint-conformance-2026-10-05/fixtures/custom-effect-rule-invalid.tsx\",\"labels\": [{\"label\": \"useSpecialEffect uses `value` here\",\"span\": {\"offset\": 140,\"length\": 5,\"line\": 3,\"column\": 39}},{\"span\": {\"offset\": 151,\"length\": 2,\"line\": 3,\"column\": 50}}]}],\n              \"number_of_files\": 1,\n              \"number_of_rules\": 2,\n              \"threads_count\": 4,\n              \"start_time\": 0.040057\n            }\n            ",
+  "stderr": ""
+}

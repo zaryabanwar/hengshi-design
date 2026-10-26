@@ -1,0 +1,105 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-24",
+  "reviewer": "/root/review_navigation_result_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "PASS",
+  "scope": "Bounded preparation review of Directory-only108-reaction batch, exact approved D094 semantic recipe, saved32-root adaptation, reused transaction pattern and14 synthetic seam cases. No Figma provider execution or native behavior qualification.",
+  "inputs": [
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/proposal-v1.json",
+      "bytes": 2092,
+      "sha256": "74384fba65f0f44249d60762e445cf4442936db44032d5ea5c77153ad4dbff36"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/expected-scope-v1.json",
+      "bytes": 38649,
+      "sha256": "af075271af01615b2f9d36f579e0b0b6f0ff7336a17209685487be27bbd92c18"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/batch-body-v1.js",
+      "bytes": 12812,
+      "sha256": "128ff8af584d62d34c5d5a0620a6eb9f4b8c29fd36727ffcfb20e90acfe64f81"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/directory-reaction-batch-v1.js",
+      "bytes": 41815,
+      "sha256": "06b989bc637e36db4b4da447557b58f97131b9138a14f0cfa581f181deb4d380"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/offline-transaction-harness-v1.cjs",
+      "bytes": 10641,
+      "sha256": "f3662cd1915d70adabb396a901c514f4caea4e2f8b8a5e8b6887ac8c95e4e851"
+    },
+    {
+      "path": "output/research/b01-directory-batch-preparation-2026-10-24/offline-transaction-results-v1.json",
+      "bytes": 3351,
+      "sha256": "facacb14aea3cc804c2b95f0859abb5eb5526a9a17a2669c6577ebb9e89a69e9"
+    },
+    {
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/qualification-plan-v1.json",
+      "bytes": 235601,
+      "sha256": "5e24ac8c203bf729b5190d359da2439c1b1f88f59665b1c65163b4b9002ab2ce"
+    },
+    {
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/directory-native-adaptation-20261015-v1.json",
+      "bytes": 12078,
+      "sha256": "d6e8e2dc557915eacd401691affd2ebdef99e0ec0d062f9fa56e7848db643f3a"
+    },
+    {
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/review-directory-adaptation/independent-review-directory-adaptation-v1.json",
+      "bytes": 8696,
+      "sha256": "3d15d5df9e2d6b1aff3816c60f0e48ddea3e5c5337a50b5cdd11196676fd4126"
+    },
+    {
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/seven-edge-baseline/batch-body-v1.js",
+      "bytes": 12694,
+      "sha256": "b0398dc656939c59fc31a5e00e28fedb461e0db161fc427a4808a63863cc2c39"
+    },
+    {
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/seven-edge-baseline/navigation-reaction-batch-v1.js",
+      "bytes": 41006,
+      "sha256": "e8d89d6030f8ee32229b531526b421ef73fbb0af8ed74c533a707906d4524cca"
+    },
+    {
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/seven-edge-baseline/offline-transaction-harness-v1.cjs",
+      "bytes": 10269,
+      "sha256": "2acda7b6766910cde842f61a7a2ceab1239dfad0c9f051e984a98291c955fdd3"
+    },
+    {
+      "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/navigation-batch-proposal/seven-edge-baseline/independent-review-navigation-batch-v1.json",
+      "bytes": 13405,
+      "sha256": "ac7e8d015f4c77fadf34900998ebf815ced32d6d2979b712e211d0261acc133e"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 8983,
+      "sha256": "f31b4bb42f954995cc12358284a992fde46ade98980238043c149f692b6474a5"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 112749,
+      "sha256": "3ed1c0d352ccd0e71b7a72aff960c9c559abc8ef8a6104842e52ff338c27c538"
+    }
+  ],
+  "checks": [
+    "All108 expected Directory CHANGE_TO edges exactly equal the approved D094 qualification-plan subset. Reviewer independently derived the graph across4 active x4 pending x2 disclosure tuples:48 non-current pending choices,12 cross-mode Apply,16Close,16Escape and16Open. Current-choice/same-mode Apply and closed hidden choices have no authored reaction.",
+    "All32 root IDs/tuples equal unchanged directory-native-adaptation-20261015-v1.json; adaptation bytes/hash match the independent static-review binding. Exact UTF-8 contexts use U+00B7 and match expected contexts for all32. Corrected proposal accurately separates shell rendering from saved bytes.",
+    "Combined source exactly injects expected-scope JSON plus reviewed body. Diff from previously reviewed Navigation body is limited to Directory family/set/context/captions, zero-existing108-new accounting and scoped labels. Prior Navigation body/source/harness hashes still match their saved review pins.",
+    "Preflight verifies file/editor/page/section/set/32 exact ownership/tuple bindings,320x1150 and22-node anatomy, effective/rendered captions, fixed Services/query context, approved body copy/glyphs/visibility. Invisible instance children are included; any unexpected current/inherited descendant reaction aborts before setters.",
+    "Only discovered108 owned controls receive one same-set NODE/CHANGE_TO action, Instant transition:null. No node creation/removal or text/font/style/geometry mutation operation is introduced. Other page sections and enumerated owned visual fields are snapshotted and checked.",
+    "Per-control owner/current-reaction checks precede setters; actual readback is compared, full graph is checked, and rollback restores only own still-matching actual writes, retaining conflicting edits as unresolved IDs. Equivalent redundant deprecated action aliases and explicit defaults are normalized without deleting contradictory aliases.",
+    "Reviewer reran local harness successfully:14 cases, including zero-write caption/hidden-reaction/owner/context denials, interrupted-write restoration, retained concurrent action/optional-flag conflicts, dual-field readback and108 rollback-failure IDs. These exercise synthetic Plugin API transaction seams only.",
+    "Maximum observed encoded success report size12760 bytes; worst full rollback-failure report10804 bytes, each below18000 in compact/pretty/string-wrapped UTF-8 forms. Source checks success and worst-case failure size before writes.",
+    "D095 supersedes historic native-only/per-call method restrictions within agreed D094 scope. Preparation PASS grants no extra quota or paid activation; current included UI balance, authenticated session, fresh editable PRE and exact live preflight remain execution prerequisites."
+  ],
+  "findings": [],
+  "limits": [
+    "Saved census is not live canvas authority: changed anatomy, context, descendant reactions or ownership must stop the attempt rather than be silently normalized or overwritten.",
+    "Preservation/rollback protections cover enumerated script fields and own matching reaction writes; no race-proof transaction or full-property/native archive restore guarantee.",
+    "No provider execution, actual capability/auth/quota proof, native modal/keyboard semantics, all324 wiring, scroll/focus/full matching/boundary preserve/reset/restore/accessibility/application/B01/Phase1 acceptance.",
+    "No automatic provider retry, new product/design scope, account/sharing/publication/payment/application/Git actions authorized by this receipt."
+  ]
+}

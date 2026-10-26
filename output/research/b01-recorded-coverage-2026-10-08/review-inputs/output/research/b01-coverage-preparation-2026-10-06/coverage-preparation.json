@@ -1,0 +1,1920 @@
+{
+  "product": "Hengshi Design v1",
+  "date": "2026-10-06",
+  "status": "DOING",
+  "scope": "Local B01 coverage preparation; no external execution or acceptance",
+  "execution_authority": "D-075 permits B01 execution; each actual Figma call still requires fresh immediate approval",
+  "sources": [
+    {
+      "path": "docs/phase-1-ui-reference-design/design-batch-plan.csv",
+      "sha256": "550d8de3c6860f74e09e8a53da52e24ca2874d94b705d11f6afd4745f0142d12"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "sha256": "6fa43937ae5e590b31e4fc21ea9e1209d3bfcdf145a6698d2429125213166dec"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+      "sha256": "575d1478893c090e9b367e75c2d14cf645e80eeb67bce09c2383c08294fa034a"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-production/batch-production-plan.csv",
+      "sha256": "bdc930a953886871e0842feda9f424378de9f7b4949ea417fae86c72cfac4956"
+    },
+    {
+      "path": "scripts/validation/ui-stream-mapping.ps1",
+      "sha256": "2c4509b4df40dd1f14c4bb53a35acff6799fde20e2be69d52f08db9e47babd38"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-production/scripts/b01-prepare-coverage.ps1",
+      "sha256": "5cff3377f037a1ae14a923a7b783f22483eb69aea2f42b03f8d8ac1d86b73bf0"
+    },
+    {
+      "path": "output/research/b01-text-reflow-2026-10-06/retry-11/provider-result.json",
+      "sha256": "ebeab3fbba0a07ca70a13fcd59f05bab30b0186d2134dde5a5c09771f520a27f"
+    },
+    {
+      "path": "output/research/b01-text-reflow-2026-10-06/screenshot-12/result.json",
+      "sha256": "85b906b267230d591717edb2c2d9a8c6465cf6c35d622adadf2e457af89bffa8"
+    }
+  ],
+  "batch": {
+    "batch_id": "B01",
+    "sequence": "01",
+    "batch_name": "Semantic shell and recovery foundation",
+    "objective": "Establish the shared semantic shell navigation directory and status/recovery grammar before route-family screens and establish the delivery stream control in the semantic shell so it is evidenced on an authorized batch",
+    "primary_template_ids": "TPL-GLOBAL-NAVIGATION;TPL-DIRECTORY-SEARCH;TPL-SYSTEM-RECOVERY",
+    "supporting_template_ids": "",
+    "primary_source_ids": "FLOW-NAVIGATION-SEARCH;FLOW-ERROR-OFFLINE-RECOVERY;DF-01;ACT-01;ACT-02;ACT-03;ACT-04;ACT-05;ACT-09;EXCL-INTERNAL-SEARCH;EXCL-TRACKING-PARAMETERS;EXCL-FILTER-SORT-VARIANTS",
+    "supporting_or_final_evidence_ids": "UXTEST-001;UXTEST-002;UXTEST-004;UXTEST-008;UXTEST-021;UXTEST-022;UXTEST-023;UXTEST-024;UXTEST-039;UXTEST-044;UXTEST-046",
+    "hard_prerequisite_batch_ids": "",
+    "prerequisites_and_held_inputs": "MA-024 accepted; separate explicit future external Figma/Stitch production/write gate accepted; DESIGN_SYSTEM_IMPLICATIONS.md and component-primitives.csv reviewed",
+    "required_visual_evidence": "Required future evidence for the delivery stream control in the semantic shell (PRIM-001, ACT-09), present and reachable without a canvas in each of the four streams: one frame per stream with control and guidance visible. Frames and implementation annotations specify four native radio inputs sharing one name inside a fieldset with a legend plus a separate always-present Apply submit button; group accessible name reports the in-force stream while the checked radio reports the pending selection; Apply accessible name states that it applies the selection. Show persistent visible text inside the fieldset before Apply in both DOM reading order and visual order, programmatically associated with both the group and the Apply button; not tooltip title hover-only focus-only or accessible-description-only. Use the same wording in every stream to explain that applying the pending selection re-enters the experience while preserving current location; D-057 accepted stream-control copy bundle is required; runtime placeholders use verified facts and legal content remains gated. Review guidance before operation for sighted mouse users, keyboard users without assistive technology, screen-reader users and screen-magnifier users at 400% zoom; visible text must not be hidden or clipped. Later keyboard and screen-reader execution evidence must verify names associations and activation under UXTEST-046: selection changes only checked state without applying reloading transitioning or other accessibility-tree changes; only explicit Apply activation or native Enter submission of the same form to that button applies the stream; never apply on focus selection blur arrow movement or timeout. Verify announcements on group entry, radio movement and reaching Apply; screenshots alone cannot establish keyboard operability or accessible names. STATE-STREAM-CHANGED on TPL-GLOBAL-NAVIGATION in each of the four streams: polite announcement, focus not moved within the shell, scroll open panel and route preserved. STATE-PREFERENCE-WRITE-FAILED on TPL-GLOBAL-NAVIGATION in each of the four streams, following the ACT-11 pattern. Complete VP-320 and VP-DESKTOP shell frames; narrow disclosure; no-results/index-unavailable/offline/error; 404/410 context; forced-colors grayscale unavailable font/image keyboard and screen-reader evidence; BP-NFR-006 proof: dated later QA selects the then-current latest two stable Chrome Edge Firefox and Safari release families; proves Safari/iOS 16.4 minimum-floor mobile layout input virtual-keyboard and safe-area behavior; and proves semantic Quick Access recovery below the floor or when otherwise unsupported; TL-WARN-EXTEND proof: warn at least 20 seconds before expiry and offer a simple extension of at least 10x; preserve permitted data and last authoritative state and show accessible reauthentication; exact durations remain gated. Explicitly NOT required in B01: Reception, rooms, hotspots, the HUD, and every other World-content obligation. Those attach to the B07 templates under N-03 and are carried as the template-level presence sets that B07 already expresses.; STATE-PREFERENCE-READ-FAILED on the applicable navigation first-visit and return-visit hosts in each stream: disclose lost stored choice in the destination shell and offer reselection with a named /privacy notice link; STATE-STREAM-CEILING-REFUSED on applicable navigation and World hosts: refusal reason as a client fact, prior in-force value preserved, ceiling stated without error styling; World-host frames remain assigned to B07; legal copy remains held under D-051; D-052 ACT-40 reset evidence on TPL-RETURN-VISIT belongs to B07; staff sign-out remains separate; D-060 boundary and nearest-ancestor evidence is explicitly deferred to B07 via boundary-evidence-allocation.csv; same-shell frames never discharge boundary evidence",
+    "validation_and_review": "Independent design review; independent accessibility review; design-system and shell consistency inspection; normative WCAG 2.2 Level AA target review for every applicable full page and complete process including represented third-party steps; evidence does not claim current conformance",
+    "stop_condition": "Stop for unresolved navigation labels route activation search behavior privacy policy or a material identity/primitive change",
+    "status": "future_not_authorized",
+    "browser_profile_id": "BP-NFR-006",
+    "time_limit_branch_ids": "TL-WARN-EXTEND"
+  },
+  "templates": [
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "template_name": "Global navigation and canonical location",
+      "surface_kind": "flow_template",
+      "reuse_scope": "All public route families and ACT-01/02",
+      "representative_instance": "FLOW-NAVIGATION-SEARCH",
+      "state_profile": "SP-NAVIGATION",
+      "viewport_profile": "VP-PUBLIC",
+      "mode_profile": "MP-PUBLIC",
+      "baseline_frame_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "minimum_reference_evidence": "Wide inline and narrow disclosure; current route; breadcrumb; no-script links; offline/404/410 status",
+      "interaction_focus_notes": "Skip link; open/close focus entry/return; Book access; visible current item; pointer-up cancellation",
+      "content_stress_case": "All destination labels and longest breadcrumb; 320/400% wrapping; missing logo/font",
+      "primitive_dependencies": "PRIM-001;PRIM-002;PRIM-003;PRIM-014;PRIM-016;PRIM-017;PRIM-057;PRIM-058;PRIM-062",
+      "gated_inputs": "Final navigation copy and route activation",
+      "browser_profile": "BP-NFR-006",
+      "time_limit_branch": "TL-NOT-APPLICABLE"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "template_name": "Directory search and result list",
+      "surface_kind": "flow_template",
+      "reuse_scope": "DF-01 ACT-03/04/05 and EXCL-INTERNAL-SEARCH",
+      "representative_instance": "FLOW-NAVIGATION-SEARCH",
+      "state_profile": "SP-NAVIGATION",
+      "viewport_profile": "VP-INTERACTIVE",
+      "mode_profile": "MP-INTERACTIVE",
+      "baseline_frame_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_NO_RESULTS_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "minimum_reference_evidence": "Browse/empty-query/results/no-results/loading/index-failure/offline frames; static fallback; clean result destinations",
+      "interaction_focus_notes": "Input label/clear/close; modal or nonmodal focus contract; result link semantics; invoker focus return",
+      "content_stress_case": "All route-family labels; long result/source/state; zero and many results; raw query never in analytics",
+      "primitive_dependencies": "PRIM-001;PRIM-004;PRIM-005;PRIM-019;PRIM-020;PRIM-040;PRIM-043;PRIM-057;PRIM-058;PRIM-061",
+      "gated_inputs": "Search provider ranking query taxonomy and any URL-backed state",
+      "browser_profile": "BP-NFR-006",
+      "time_limit_branch": "TL-NOT-APPLICABLE"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "template_name": "Shared status and recovery container",
+      "surface_kind": "system_template",
+      "reuse_scope": "All public and staff hosts",
+      "representative_instance": "FLOW-ERROR-OFFLINE-RECOVERY",
+      "state_profile": "SP-SYSTEM-RECOVERY",
+      "viewport_profile": "VP-INTERACTIVE",
+      "mode_profile": "MP-INTERACTIVE",
+      "baseline_frame_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_FORCED_COLORS_STREAM_SEMANTIC_V01",
+      "minimum_reference_evidence": "Light/dark/forced-color focused frames for loading/empty/pending/unavailable/offline/error/permission/session/stale/conflict/asset/checksum",
+      "interaction_focus_notes": "Announce without stealing focus except deliberate error summary/route change; preserve truth/context; smallest safe action",
+      "content_stress_case": "Longest bounded error/preservation/recovery; no provider/secret/PII; missing icon/image/font; multiple actions",
+      "primitive_dependencies": "PRIM-001;PRIM-006;PRIM-015;PRIM-016;PRIM-023;PRIM-044;PRIM-056;PRIM-057;PRIM-058",
+      "gated_inputs": "Exact copy retry/cache/support/escalation and privacy/security disclosure",
+      "browser_profile": "BP-NFR-006",
+      "time_limit_branch": "TL-WARN-EXTEND"
+    }
+  ],
+  "primitives": [
+    {
+      "primitive_id": "PRIM-001",
+      "primitive_name": "Public semantic shell",
+      "primitive_category": "shell_navigation",
+      "interaction_class": "composite_interactive",
+      "required_anatomy": "skip link;entity lockup;primary navigation;utility navigation;main landmark;page status region;footer;attribution notice link to /credits;direct Book access;delivery stream control;stream fieldset;stream legend naming delivery stream control and in-force stream;four native stream radio inputs sharing one name;separate always-present Apply submit button;persistent visible stream advisement inside fieldset before Apply in DOM reading and visual order",
+      "required_variants": "public;no_script;offline;unsupported_browser;prior_release;stream_high;stream_medium;stream_low;stream_semantic",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC",
+      "pseudo_states": "base;hover;focus-visible;pressed;disabled",
+      "transactional_or_content_states": "loading;offline;error;unavailable;current;stream-preference-write-failed;stream-in-force;stream-pending",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "12/6/4 grid;320 CSS px;400% zoom;text spacing;forced colors;grayscale;reduced motion;unavailable font or image;complete initial semantic content before script;delivery stream control present and keyboard operable in every stream including S-SEMANTIC;stream change announced politely in the page status region without moving focus;WCAG 2.2 Level AA target for all applicable full pages and complete processes including third-party steps;definition and reference designs do not establish conformance;current latest two stable evergreen releases;Safari/iOS 16.4 minimum legacy floor;semantic Quick Access for below-floor or otherwise unsupported clients;stream group accessible name reports in-force stream until explicit submit;checked stream radio reports pending selection independently of in-force stream;stream radio names use peer vocabulary without lesser-choice labels;above-ceiling stream radios remain present with textual unavailability;Apply accessible name states it applies the selection and differs from group and radio names;stream selection by arrow Tab pointer or touch changes only checked state without applying reloading transitioning or other accessibility-tree changes;stream applies only on explicit Apply activation by Enter Space pointer or touch or native Enter submission of the same form;stream never applies on focus selection blur or timeout;stream advisement is programmatically associated with both fieldset and Apply;stream advisement explains re-entry into the chosen stream while preserving current location;stream advisement uses identical visible wording in every stream and is not tooltip title hover-only focus-only or accessible-description-only",
+      "reference_templates_or_flows": "entity;service_collection;service_wing;service;industry_collection;industry;verified_work_collection;verified_work_detail;demo_collection;demo_detail;insight_collection;article;expert_collection;person;trust_collection;trust_topic;about;attribution;contact;booking;J-01;J-03;J-04",
+      "source_decisions": "D-025;D-026;D-035;D-036;D-008;D-009",
+      "source_requirements": "BR-001;BR-005;FR-001;FR-005;SEO-001;SEO-004;UX-001;UX-002;UX-003;NFR-001;NFR-006",
+      "source_ux_tests": "UXTEST-001;UXTEST-002;UXTEST-004;UXTEST-021;UXTEST-022;UXTEST-023;UXTEST-024;UXTEST-044",
+      "source_actions": "ACT-01;ACT-02;ACT-09;ACT-11;ACT-20",
+      "implementation_evidence_expectations": "Approved reference frames plus semantic landmark and keyboard evidence;later rendered parity against token map;dated current-version browser matrix;Safari mobile layout input and safe-area evidence;unsupported-client semantic Quick Access recovery;Stream control review states announcements on group entry pending-radio change and reaching Apply;Stream advisement review covers sighted mouse keyboard without AT screen reader and 400% magnifier before operation",
+      "gated_facts": "Exact public copy;legal entity facts;contacts;content owners;route activation remain gated"
+    },
+    {
+      "primitive_id": "PRIM-002",
+      "primitive_name": "Primary navigation and narrow disclosure",
+      "primitive_category": "shell_navigation",
+      "interaction_class": "composite_interactive",
+      "required_anatomy": "menu trigger;navigation label;destination list;current item;Book item;close action",
+      "required_variants": "wide_inline;narrow_disclosure;staff_separate",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC",
+      "pseudo_states": "base;hover;focus-visible;pressed;disabled",
+      "transactional_or_content_states": "expanded;collapsed;current;unavailable",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "DOM order unchanged across widths;focus enters and returns;no overlap at 320 CSS px or 400% zoom;forced-colors boundary;Book reachable without disclosure where feasible",
+      "reference_templates_or_flows": "all_public_route_families;J-01;DF-01",
+      "source_decisions": "D-025;D-026;D-035;D-036;D-008",
+      "source_requirements": "FR-001;FR-005;FR-014;SEO-001;UX-003",
+      "source_ux_tests": "UXTEST-004;UXTEST-021;UXTEST-022;UXTEST-023;UXTEST-039",
+      "source_actions": "ACT-01",
+      "implementation_evidence_expectations": "Reference metadata for disclosure states;keyboard sequence;focus return;touch target measurement;later browser evidence",
+      "gated_facts": "Final navigation copy and route publication state remain gated"
+    },
+    {
+      "primitive_id": "PRIM-003",
+      "primitive_name": "Breadcrumb trail",
+      "primitive_category": "shell_navigation",
+      "interaction_class": "interactive",
+      "required_anatomy": "navigation label;ordered ancestor links;current page text",
+      "required_variants": "public;staff;collapsed_overflow_only_if_reviewed",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC",
+      "pseudo_states": "base;hover;focus-visible;pressed;disabled",
+      "transactional_or_content_states": "current;loading;stale;unavailable",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "Wrap in reading order;no horizontal loss at 320 CSS px or 400% zoom;separator exposed decoratively only;forced-colors visible",
+      "reference_templates_or_flows": "service_wing;service;industry;verified_work_detail;demo_detail;article;person;trust_topic;booking;J-01;J-04;PF-01",
+      "source_decisions": "D-025;D-026;D-035;D-036;D-009",
+      "source_requirements": "SEO-005;UX-001;UX-003",
+      "source_ux_tests": "UXTEST-001;UXTEST-021;UXTEST-022;UXTEST-023",
+      "source_actions": "ACT-02",
+      "implementation_evidence_expectations": "Reference state set plus landmark/name/order and later canonical-link verification",
+      "gated_facts": "Final route titles and retired-route policy remain gated"
+    },
+    {
+      "primitive_id": "PRIM-004",
+      "primitive_name": "Directory and search",
+      "primitive_category": "shell_navigation",
+      "interaction_class": "composite_interactive",
+      "required_anatomy": "open control;dialog or panel heading;search label/input;clear;group navigation;status;close",
+      "required_variants": "semantic_header;world_HUD;static_directory_index",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC",
+      "pseudo_states": "base;hover;focus-visible;pressed;disabled",
+      "transactional_or_content_states": "loading;empty;error;offline;success;stale;unavailable",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "Narrow full-width reflow;visible close and clear;focus containment only when modal;reduced-motion open;forced-colors fields;static directory without derived index",
+      "reference_templates_or_flows": "all_public_route_families;DF-01;EXCL-INTERNAL-SEARCH",
+      "source_decisions": "D-025;D-026;D-035;D-036;D-008;D-017",
+      "source_requirements": "FR-001;FR-014;SEO-003;UX-003;DATA-008",
+      "source_ux_tests": "UXTEST-008;UXTEST-021;UXTEST-022;UXTEST-023;UXTEST-024;UXTEST-039",
+      "source_actions": "ACT-03;ACT-04",
+      "implementation_evidence_expectations": "Reference variants with empty/no-result/index-failure;keyboard focus loop or nonmodal order;later query privacy and canonical-link tests",
+      "gated_facts": "Raw query analytics;URL query model;ranking;search provider remain gated"
+    },
+    {
+      "primitive_id": "PRIM-005",
+      "primitive_name": "Directory result row",
+      "primitive_category": "content_evidence",
+      "interaction_class": "interactive",
+      "required_anatomy": "type label;formal title;context;evidence or availability state;canonical link;World stream location",
+      "required_variants": "canonical_only;canonical_plus_optional_location;closed_room",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC",
+      "pseudo_states": "base;hover;focus-visible;pressed;disabled",
+      "transactional_or_content_states": "loading;success;held;stale;unavailable;empty",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "Stack labels without truncation;24 by 24 target or documented exception;forced colors and grayscale retain type/state;no hover-only preview",
+      "reference_templates_or_flows": "all_public_route_families;DF-01",
+      "source_decisions": "D-025;D-026;D-035;D-036",
+      "source_requirements": "FR-001;FR-014;SEO-004;SEO-007;UX-003;UX-008",
+      "source_ux_tests": "UXTEST-003;UXTEST-008;UXTEST-021;UXTEST-024;UXTEST-038;UXTEST-039",
+      "source_actions": "ACT-04;ACT-05",
+      "implementation_evidence_expectations": "Reference row states and canonical mappings;later release-checksum and keyboard activation evidence",
+      "gated_facts": "Search ranking;room open state;summary copy;content approval remain gated"
+    },
+    {
+      "primitive_id": "PRIM-006",
+      "primitive_name": "Excluded-surface guard and safe destination",
+      "primitive_category": "shell_navigation",
+      "interaction_class": "composite_interactive",
+      "required_anatomy": "plain status heading;non-disclosing explanation;safe destination links;retry or sign-in only where applicable",
+      "required_variants": "world;admin;nonpublic_publication;chat_session;internal_search;tracking_variant;filter_sort_variant;staging;defense_absent",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC",
+      "pseudo_states": "base;hover;focus-visible;pressed;disabled",
+      "transactional_or_content_states": "permission_denied;not_found;retired;expired;offline;unavailable;held",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "Semantic and readable without script;no gated detail leaks at any width;focus on status heading;safe links survive forced colors and unavailable assets",
+      "reference_templates_or_flows": "EXCL-WORLD;EXCL-ADMIN;EXCL-NONPUBLIC-PUBLICATION;EXCL-CHAT-SESSIONS;EXCL-INTERNAL-SEARCH;EXCL-TRACKING-PARAMETERS;EXCL-FILTER-SORT-VARIANTS;EXCL-STAGING;EXCL-DEFENSE",
+      "source_decisions": "D-025;D-026;D-035;D-036;D-009;D-017;D-019",
+      "source_requirements": "BR-009;SEO-003;PUB-004;SEC-002;SEC-009;UX-001",
+      "source_ux_tests": "UXTEST-002;UXTEST-010;UXTEST-027;UXTEST-028;UXTEST-044",
+      "source_actions": "ACT-02;ACT-17;ACT-33",
+      "implementation_evidence_expectations": "Reference for all nine safe outcomes;later authorization and indexing negative tests",
+      "gated_facts": "Defense details;draft existence;account existence;staging access rules;retired-route copy remain gated"
+    },
+    {
+      "primitive_id": "PRIM-014",
+      "primitive_name": "Primary booking CTA",
+      "primitive_category": "actions_input",
+      "interaction_class": "interactive",
+      "required_anatomy": "visible action label;optional context;state text;focus indicator",
+      "required_variants": "global;contextual;compact;inverse",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC",
+      "pseudo_states": "base;hover;focus-visible;pressed;disabled",
+      "transactional_or_content_states": "loading;pending;success;error;offline;unavailable",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "Remains reachable at 320 CSS px and 400% zoom;not obscured by sticky UI;24 by 24 target minimum;forced-colors border;reduced-motion stable",
+      "reference_templates_or_flows": "all_public_route_families;J-01;J-03;J-04;J-05;AF-01;AF-02;DF-01;CF-01",
+      "source_decisions": "D-025;D-026;D-035;D-036;D-005;D-016",
+      "source_requirements": "BR-001;FR-005;SEO-001;UX-001;UX-003",
+      "source_ux_tests": "UXTEST-001;UXTEST-004;UXTEST-021;UXTEST-023;UXTEST-039;UXTEST-044",
+      "source_actions": "ACT-14;ACT-18;ACT-20",
+      "implementation_evidence_expectations": "All pseudo-state references plus direct Book reachability;later keyboard pointer contrast and routing evidence",
+      "gated_facts": "Final CTA wording;booking availability;contact route remain gated"
+    },
+    {
+      "primitive_id": "PRIM-015",
+      "primitive_name": "General action button",
+      "primitive_category": "actions_input",
+      "interaction_class": "interactive",
+      "required_anatomy": "visible label;optional leading icon;optional progress;focus indicator",
+      "required_variants": "primary;secondary;quiet;destructive_pending_approval;icon_plus_text",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC",
+      "pseudo_states": "base;hover;focus-visible;pressed;disabled",
+      "transactional_or_content_states": "loading;pending;success;error;permission_denied;offline;unavailable",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "Label wraps or component expands;no icon-only ambiguity;target minimum;forced colors and reduced motion;pending disables duplicate only",
+      "reference_templates_or_flows": "AF-01;AF-02;BF-01A;BF-01B;BF-01C;BF-01D;BF-01E;PF-01;SOF-01A;SOF-01B;SOF-01C;SOF-01D;SOF-01E;SOF-01F;SOF-01G;SOF-01H;SOF-01I;SOF-01J;SOF-01K;SOF-01L;SOF-01M",
+      "source_decisions": "D-025;D-026;D-035;D-036",
+      "source_requirements": "UX-001;UX-003;DATA-010;SEC-002",
+      "source_ux_tests": "UXTEST-018;UXTEST-021;UXTEST-022;UXTEST-039",
+      "source_actions": "ACT-14;ACT-15;ACT-16;ACT-18;ACT-19;ACT-21;ACT-22;ACT-23;ACT-24;ACT-25;ACT-26;ACT-27;ACT-28;ACT-29;ACT-30;ACT-31;ACT-32;ACT-33;ACT-34;ACT-35;ACT-36;ACT-37;ACT-38;ACT-39;ACT-40;ACT-41;ACT-42;ACT-43;ACT-44;ACT-45;ACT-46;ACT-47;ACT-48;ACT-49;ACT-50;ACT-51;ACT-52;ACT-53",
+      "implementation_evidence_expectations": "Complete pseudo-state reference matrix;later pointer-up cancellation keyboard focus contrast and idempotency tests",
+      "gated_facts": "Destructive meaning;authorization;exact labels;retry policy remain gated per action"
+    },
+    {
+      "primitive_id": "PRIM-016",
+      "primitive_name": "Semantic text link",
+      "primitive_category": "actions_input",
+      "interaction_class": "interactive",
+      "required_anatomy": "visible link text;destination context;optional external or download cue only when approved",
+      "required_variants": "inline;standalone;breadcrumb;source;skip;canonical",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC",
+      "pseudo_states": "base;hover;focus-visible;pressed;disabled",
+      "transactional_or_content_states": "current;visited_policy_pending;unavailable;held;offline",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "Underline or equivalent non-color affordance;wraps;focus visible;target exception documented for inline text;no direction-only label",
+      "reference_templates_or_flows": "all_public_route_families;J-01;J-02;J-03;J-04;J-05;DF-01",
+      "source_decisions": "D-025;D-026;D-035;D-036;D-008",
+      "source_requirements": "FR-001;SEO-001;SEO-005;SEO-007;UX-003",
+      "source_ux_tests": "UXTEST-001;UXTEST-003;UXTEST-004;UXTEST-021;UXTEST-039",
+      "source_actions": "ACT-02;ACT-05;ACT-12;ACT-13;ACT-20",
+      "implementation_evidence_expectations": "Reference states across light dark and forced colors;later canonical destination and accessible-name evidence",
+      "gated_facts": "Final labels;destination activation;external-link policy remain gated"
+    },
+    {
+      "primitive_id": "PRIM-017",
+      "primitive_name": "Icon control",
+      "primitive_category": "actions_input",
+      "interaction_class": "interactive",
+      "required_anatomy": "icon;visible label when ambiguous;accessible name;state text;target area",
+      "required_variants": "labelled;compact_with_visible_text;universally_understood_icon_only_after_review",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC",
+      "pseudo_states": "base;hover;focus-visible;pressed;disabled",
+      "transactional_or_content_states": "selected;expanded;muted;loading;error;unavailable",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "24-unit icon grid;24 by 24 target or exception;stroke survives forced colors;unavailable icon keeps text;no hover-only tooltip",
+      "reference_templates_or_flows": "DF-01;FV-01;RV-01;AF-02;BF-01",
+      "source_decisions": "D-025;D-026;D-035;D-036;D-012",
+      "source_requirements": "FR-012;FR-013;FR-014;UX-003;UX-007",
+      "source_ux_tests": "UXTEST-005;UXTEST-006;UXTEST-021;UXTEST-024;UXTEST-039",
+      "source_actions": "ACT-03;ACT-07;ACT-09;ACT-10;ACT-11;ACT-12;ACT-19;ACT-40",
+      "implementation_evidence_expectations": "Reference icon and text pairings;later name-in-label target and forced-colors evidence",
+      "gated_facts": "Icon meaning;icon-only eligibility;final labels remain gated"
+    },
+    {
+      "primitive_id": "PRIM-019",
+      "primitive_name": "Text input and textarea",
+      "primitive_category": "actions_input",
+      "interaction_class": "interactive",
+      "required_anatomy": "visible label;required or optional text;control;description;counter only if approved;inline error",
+      "required_variants": "email;organization;role;desired_outcome;timing;optional_budget;contact_message;search;staff_text",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC",
+      "pseudo_states": "base;hover;focus-visible;pressed;disabled",
+      "transactional_or_content_states": "empty;filled;invalid;valid;loading;pending;offline;read_only;permission_denied",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "Full-width narrow;zoom and text-spacing safe;native zoom;autofill visible;paste allowed;no placeholder-only label;forced-colors boundary",
+      "reference_templates_or_flows": "DF-01;AF-01;BF-01A;BF-01B;CF-01;PF-01",
+      "source_decisions": "D-025;D-026;D-035;D-036;D-017",
+      "source_requirements": "FR-004;FR-008;FR-019;UX-001;DATA-003;SEC-002",
+      "source_ux_tests": "UXTEST-008;UXTEST-014;UXTEST-015;UXTEST-016;UXTEST-021;UXTEST-022;UXTEST-023;UXTEST-042;UXTEST-043;UXTEST-045",
+      "source_actions": "ACT-04;ACT-16;ACT-21;ACT-24;ACT-32;ACT-34",
+      "implementation_evidence_expectations": "Reference for all named field roles and states;later keyboard screen-reader autocomplete paste and validation evidence",
+      "gated_facts": "Exact field copy;length limits;retention;raw-query policy remain gated"
+    },
+    {
+      "primitive_id": "PRIM-020",
+      "primitive_name": "Select or combobox",
+      "primitive_category": "actions_input",
+      "interaction_class": "interactive",
+      "required_anatomy": "visible label;trigger or input;current value;list;option state;description;error",
+      "required_variants": "native_select;listbox_only_if_needed;timezone;wing;timing;bounded_staff_filter",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC",
+      "pseudo_states": "base;hover;focus-visible;pressed;disabled",
+      "transactional_or_content_states": "expanded;collapsed;selected;empty;loading;error;offline;unavailable",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "Prefer native semantics;options wrap;no viewport clipping;keyboard model documented;touch target minimum;forced-colors selected state",
+      "reference_templates_or_flows": "DF-01;BF-01A;BF-01C;SOF-01C",
+      "source_decisions": "D-025;D-026;D-035;D-036",
+      "source_requirements": "FR-004;FR-006;FR-014;UX-001;UX-003",
+      "source_ux_tests": "UXTEST-008;UXTEST-014;UXTEST-017;UXTEST-021;UXTEST-022;UXTEST-023;UXTEST-039;UXTEST-042",
+      "source_actions": "ACT-04;ACT-21;ACT-26;ACT-27;ACT-43",
+      "implementation_evidence_expectations": "Reference open closed selected invalid and unavailable states;later keyboard focus zoom and value evidence",
+      "gated_facts": "Option sets;timezone source;staff filters;assignment policy remain gated"
+    },
+    {
+      "primitive_id": "PRIM-023",
+      "primitive_name": "Error summary",
+      "primitive_category": "actions_input",
+      "interaction_class": "composite_interactive",
+      "required_anatomy": "summary heading;error count if useful;linked error list;preservation statement;recovery",
+      "required_variants": "form;publication;booking;contact;staff",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC",
+      "pseudo_states": "base;hover;focus-visible;pressed;disabled",
+      "transactional_or_content_states": "error;pending;permission_denied;offline;unavailable",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "Receives focus after failed submit;links reflow;no sticky overlap;forced-colors boundary;screen reader announces once",
+      "reference_templates_or_flows": "BF-01A;BF-01B;CF-01;PF-01",
+      "source_decisions": "D-025;D-026;D-035;D-036",
+      "source_requirements": "FR-004;UX-001;UX-003;SEC-007",
+      "source_ux_tests": "UXTEST-015;UXTEST-021;UXTEST-022;UXTEST-023;UXTEST-024",
+      "source_actions": "ACT-21;ACT-22;ACT-24;ACT-25;ACT-32;ACT-35",
+      "implementation_evidence_expectations": "Reference with multiple errors and focus map;later link-target association and announcement evidence",
+      "gated_facts": "Exact messages;field policy;security detail remain gated"
+    },
+    {
+      "primitive_id": "PRIM-040",
+      "primitive_name": "Drawer",
+      "primitive_category": "overlay_immersive",
+      "interaction_class": "composite_interactive",
+      "required_anatomy": "labelled title;navigation or content region;close;backdrop if modal;status;invoker relationship",
+      "required_variants": "navigation;directory;detail;staff_filter",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC",
+      "pseudo_states": "base;hover;focus-visible;pressed;disabled",
+      "transactional_or_content_states": "opening;open;closing;loading;error;offline;unavailable",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "May become inline region when space allows;focus behavior matches modal state;Escape and return;no focus clipping;reduced-motion direct state;forced colors",
+      "reference_templates_or_flows": "DF-01;FV-01;RV-01;SOF-01C",
+      "source_decisions": "D-025;D-026;D-035;D-036",
+      "source_requirements": "FR-014;UX-001;UX-003;UX-004",
+      "source_ux_tests": "UXTEST-008;UXTEST-021;UXTEST-022;UXTEST-023;UXTEST-024;UXTEST-039",
+      "source_actions": "ACT-01;ACT-03;ACT-43",
+      "implementation_evidence_expectations": "Reference modal and nonmodal anatomy;later viewport focus escape and state evidence",
+      "gated_facts": "Exact drawer use by screen;filter set;final labels remain gated"
+    },
+    {
+      "primitive_id": "PRIM-043",
+      "primitive_name": "World HUD",
+      "primitive_category": "overlay_immersive",
+      "interaction_class": "composite_interactive",
+      "required_anatomy": "current location;directory and search;Quick Access;Book;accessibility;delivery stream control;audio;Exit;status region;stream fieldset;stream legend naming delivery stream control and in-force stream;four native stream radio inputs sharing one name;separate always-present Apply submit button;persistent visible stream advisement inside fieldset before Apply in DOM reading and visual order",
+      "required_variants": "reception;atrium;room;transition;reduced_motion;low_power;asset_failure",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM",
+      "pseudo_states": "base;hover;focus-visible;pressed;disabled",
+      "transactional_or_content_states": "loading;current;selected;pending;error;offline;unavailable;stale;stream-in-force;stream-pending",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "DOM-based and keyboard operable;visible at 400% zoom;does not obscure focus or content;touch targets;forced colors;audio and motion states textual;no canvas-only control;current latest two stable evergreen releases;Safari/iOS 16.4 minimum legacy floor;semantic Quick Access for below-floor or otherwise unsupported clients;stream group accessible name reports in-force stream until explicit submit;checked stream radio reports pending selection independently of in-force stream;stream radio names use peer vocabulary without lesser-choice labels;above-ceiling stream radios remain present with textual unavailability;Apply accessible name states it applies the selection and differs from group and radio names;stream selection by arrow Tab pointer or touch changes only checked state without applying reloading transitioning or other accessibility-tree changes;stream applies only on explicit Apply activation by Enter Space pointer or touch or native Enter submission of the same form;stream never applies on focus selection blur or timeout;stream advisement is programmatically associated with both fieldset and Apply;stream advisement explains re-entry into the chosen stream while preserving current location;stream advisement uses identical visible wording in every stream and is not tooltip title hover-only focus-only or accessible-description-only",
+      "reference_templates_or_flows": "J-02;DF-01;EXCL-WORLD",
+      "source_decisions": "D-025;D-026;D-035;D-036;D-012",
+      "source_requirements": "FR-003;FR-012;FR-014;SEO-007;UX-002;UX-003;UX-004;UX-005;UX-007;NFR-006",
+      "source_ux_tests": "UXTEST-003;UXTEST-005;UXTEST-007;UXTEST-008;UXTEST-021;UXTEST-022;UXTEST-023;UXTEST-024;UXTEST-025;UXTEST-039;UXTEST-040",
+      "source_actions": "ACT-03;ACT-05;ACT-08;ACT-09;ACT-10;ACT-11;ACT-12",
+      "implementation_evidence_expectations": "Reference every HUD control and failure state;later dated current-version browser matrix Safari mobile layout input and safe-area evidence unsupported-client recovery DOM canvas parity focus overlap and mode evidence;Stream control review states announcements on group entry pending-radio change and reaching Apply;Stream advisement review covers sighted mouse keyboard without AT screen reader and 400% magnifier before operation",
+      "gated_facts": "Exact device tier thresholds U-03;World visual direction;room assets;audio content remain gated"
+    },
+    {
+      "primitive_id": "PRIM-044",
+      "primitive_name": "World escape and recovery",
+      "primitive_category": "overlay_immersive",
+      "interaction_class": "composite_interactive",
+      "required_anatomy": "plain failure heading;last safe location;failure class;Quick Access;canonical route;delivery stream control;retry;Book;stream fieldset;stream legend naming delivery stream control and in-force stream;four native stream radio inputs sharing one name;separate always-present Apply submit button;persistent visible stream advisement inside fieldset before Apply in DOM reading and visual order",
+      "required_variants": "unsupported;loader_timeout;asset_error;network_error;context_loss;memory_or_thermal;checksum_mismatch",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM",
+      "pseudo_states": "base;hover;focus-visible;pressed;disabled",
+      "transactional_or_content_states": "loading;error;offline;unavailable;stale;success_safe_route;stream-in-force;stream-pending",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "Available immediately;no animation delay;screen reader announcement;full semantic content route;unavailable asset and low-power authored states;focus moves to recovery heading;current latest two stable evergreen releases;Safari/iOS 16.4 minimum legacy floor;semantic Quick Access for below-floor or otherwise unsupported clients;stream group accessible name reports in-force stream until explicit submit;checked stream radio reports pending selection independently of in-force stream;stream radio names use peer vocabulary without lesser-choice labels;above-ceiling stream radios remain present with textual unavailability;Apply accessible name states it applies the selection and differs from group and radio names;stream selection by arrow Tab pointer or touch changes only checked state without applying reloading transitioning or other accessibility-tree changes;stream applies only on explicit Apply activation by Enter Space pointer or touch or native Enter submission of the same form;stream never applies on focus selection blur or timeout;stream advisement is programmatically associated with both fieldset and Apply;stream advisement explains re-entry into the chosen stream while preserving current location;stream advisement uses identical visible wording in every stream and is not tooltip title hover-only focus-only or accessible-description-only",
+      "reference_templates_or_flows": "J-02;DF-01;EXCL-WORLD",
+      "source_decisions": "D-025;D-026;D-035;D-036;D-008;D-012",
+      "source_requirements": "FR-003;FR-014;UX-002;UX-004;UX-005;NFR-002;NFR-006;NFR-007",
+      "source_ux_tests": "UXTEST-003;UXTEST-007;UXTEST-021;UXTEST-022;UXTEST-023;UXTEST-024;UXTEST-025",
+      "source_actions": "ACT-05;ACT-06;ACT-07;ACT-08;ACT-09;ACT-12",
+      "implementation_evidence_expectations": "Reference for every named failure class;later dated current-version browser matrix Safari mobile layout input and safe-area evidence unsupported-client classification semantic Quick Access recovery forced-failure context preservation and no-loop evidence;Stream control review states announcements on group entry pending-radio change and reaching Apply;Stream advisement review covers sighted mouse keyboard without AT screen reader and 400% magnifier before operation",
+      "gated_facts": "3D assets;budgets;device thresholds;retry policy;visual scene remain gated"
+    },
+    {
+      "primitive_id": "PRIM-056",
+      "primitive_name": "Session and permission state",
+      "primitive_category": "system_access",
+      "interaction_class": "composite_interactive",
+      "required_anatomy": "plain state heading;last preserved state;non-disclosing reason;time-limit warning and extension control when applicable;reauthenticate;return or safe destination;status",
+      "required_variants": "signed_out;active_role;forbidden;idle_expired;absolute_expired;CSRF_failure;ambiguous_role",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC",
+      "pseudo_states": "base;hover;focus-visible;pressed;disabled",
+      "transactional_or_content_states": "pending;success;error;offline;expired;permission_denied;unavailable;stale",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "Focus on state heading;no draft or event-existence leak;any user time limit is removable or adjustable before it starts or warns with at least 20 seconds and permits a simple extension at least ten times or has a documented criterion-supported exception;preserve permitted data and last authoritative state;accessible reauthentication;forced-colors boundary",
+      "reference_templates_or_flows": "PF-01;SOF-01A;SOF-01B;SOF-01C;SOF-01D;SOF-01E;SOF-01F;SOF-01G;SOF-01H;SOF-01I;SOF-01J;SOF-01K;SOF-01L;SOF-01M;EXCL-ADMIN",
+      "source_decisions": "D-025;D-026;D-035;D-036;D-018",
+      "source_requirements": "SEC-001;SEC-002;SEC-004;SEC-005;UX-001;UX-003",
+      "source_ux_tests": "UXTEST-021;UXTEST-022;UXTEST-027;UXTEST-037;UXTEST-040;UXTEST-043",
+      "source_actions": "ACT-33;ACT-34;ACT-35;ACT-36;ACT-37;ACT-40;ACT-41;ACT-42;ACT-43;ACT-44;ACT-45;ACT-46;ACT-47;ACT-48;ACT-49;ACT-50;ACT-51;ACT-52;ACT-53",
+      "implementation_evidence_expectations": "Reference every session and permission branch;later controlled-clock branch warning extension expiry focus status recovery server authorization accessible reauthentication and non-disclosure evidence",
+      "gated_facts": "Exact session and challenge durations;implementation/provider and role mappings remain gated"
+    },
+    {
+      "primitive_id": "PRIM-057",
+      "primitive_name": "Notification and live status region",
+      "primitive_category": "system_feedback",
+      "interaction_class": "status_announced",
+      "required_anatomy": "plain status text;state icon or boundary;scope;preserved-state statement;time-limit warning and extension status when applicable;next action;dismiss only if nonessential",
+      "required_variants": "inline_status;page_banner;field_status;toast_only_for_supplemental_feedback;polite_live;assertive_error",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC",
+      "pseudo_states": "not_applicable",
+      "transactional_or_content_states": "loading;pending;success;confirmed;error;offline;permission_denied;unavailable;stale;expired",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "Persistent essential text;announcements deduplicated;no focus theft;controlled auto-update;pause stop or hide if applicable;any user time limit is removable or adjustable before it starts or warns with at least 20 seconds and permits a simple extension at least ten times or has a documented criterion-supported exception;preserve permitted data and last authoritative state;accessible reauthentication where applicable;forced colors and reduced motion",
+      "reference_templates_or_flows": "all_public_route_families;AF-01;AF-02;BF-01;PF-01;SOF-01",
+      "source_decisions": "D-025;D-026;D-035;D-036",
+      "source_requirements": "UX-001;UX-003;UX-004;DATA-010;SEC-007",
+      "source_ux_tests": "UXTEST-011;UXTEST-015;UXTEST-018;UXTEST-019;UXTEST-021;UXTEST-022;UXTEST-024;UXTEST-040",
+      "source_actions": "ACT-02;ACT-05;ACT-06;ACT-08;ACT-09;ACT-10;ACT-11;ACT-14;ACT-16;ACT-17;ACT-18;ACT-20;ACT-21;ACT-22;ACT-23;ACT-24;ACT-25;ACT-26;ACT-27;ACT-28;ACT-29;ACT-30;ACT-31;ACT-32;ACT-33;ACT-34;ACT-35;ACT-36;ACT-37;ACT-38;ACT-39;ACT-40;ACT-41;ACT-42;ACT-43;ACT-44;ACT-45;ACT-46;ACT-47;ACT-48;ACT-49;ACT-50;ACT-51;ACT-52;ACT-53",
+      "implementation_evidence_expectations": "Reference announcement priority and persistence matrix;later controlled-clock branch warning extension expiry focus status recovery screen-reader deduplication and focus evidence",
+      "gated_facts": "Exact messages;dismiss timing;exact timeout duration;operational detail remain gated"
+    },
+    {
+      "primitive_id": "PRIM-058",
+      "primitive_name": "Loading empty offline error and recovery container",
+      "primitive_category": "system_feedback",
+      "interaction_class": "composite_interactive",
+      "required_anatomy": "state heading;what happened;what remains valid;permitted data and last authoritative state;content or placeholder;time-limit warning and extension control when applicable;accessible reauthentication when applicable;smallest safe recovery;alternate route;status region",
+      "required_variants": "loading;empty;offline;error;held;unavailable;stale;permission_denied;expired;unknown",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC",
+      "pseudo_states": "base;hover;focus-visible;pressed;disabled",
+      "transactional_or_content_states": "loading;empty;offline;error;held;unavailable;stale;permission_denied;expired;unknown;success",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "Preserve valid prior content;no blank shell;reduced-motion progress;forced-colors boundary;asset-free;works at 320 CSS px and 400% zoom;focus on error summary or changed heading only;current latest two stable evergreen releases;Safari/iOS 16.4 minimum legacy floor;semantic Quick Access for below-floor or otherwise unsupported clients;any user time limit is removable or adjustable before it starts or warns with at least 20 seconds and permits a simple extension at least ten times or has a documented criterion-supported exception;preserve permitted data and last authoritative state;accessible reauthentication where applicable",
+      "reference_templates_or_flows": "all_public_route_families;J-01;J-02;J-04;AF-01;AF-02;BF-01;DF-01;PF-01;SOF-01;CF-01",
+      "source_decisions": "D-025;D-026;D-035;D-036",
+      "source_requirements": "FR-002;UX-001;UX-002;UX-003;UX-004;UX-005;DATA-010;NFR-004;NFR-006",
+      "source_ux_tests": "UXTEST-001;UXTEST-007;UXTEST-008;UXTEST-011;UXTEST-017;UXTEST-018;UXTEST-020;UXTEST-021;UXTEST-022;UXTEST-023;UXTEST-024;UXTEST-025;UXTEST-026;UXTEST-029;UXTEST-032;UXTEST-037;UXTEST-040;UXTEST-044",
+      "source_actions": "ACT-02;ACT-03;ACT-04;ACT-05;ACT-06;ACT-08;ACT-13;ACT-14;ACT-16;ACT-17;ACT-18;ACT-20;ACT-21;ACT-22;ACT-23;ACT-24;ACT-25;ACT-26;ACT-28;ACT-29;ACT-30;ACT-31;ACT-32;ACT-33;ACT-34;ACT-35;ACT-36;ACT-37;ACT-38;ACT-39;ACT-41;ACT-42;ACT-43;ACT-44;ACT-45;ACT-46;ACT-47;ACT-48;ACT-49;ACT-50;ACT-51;ACT-52;ACT-53",
+      "implementation_evidence_expectations": "Reference each state with preserved truth and recovery;WCAG 2.2 Level AA target evidence across all applicable full pages and complete processes including third-party steps;definition and reference designs do not establish conformance;later dated current-version browser matrix Safari mobile layout input and safe-area evidence unsupported-client semantic Quick Access recovery controlled-clock branch warning extension expiry focus status permitted-data and authoritative-state preservation accessible reauthentication forced-failure offline announcement and no-false-success evidence",
+      "gated_facts": "Recovery copy;retry policy;cached-content policy;support route and exact durations remain gated"
+    },
+    {
+      "primitive_id": "PRIM-061",
+      "primitive_name": "Responsive data or record list",
+      "primitive_category": "media_data",
+      "interaction_class": "composite_interactive",
+      "required_anatomy": "list heading;item label;key-value pairs;state;source or version;primary action",
+      "required_variants": "table_equivalent;queue;source_list;audit_chain;summary",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC",
+      "pseudo_states": "base;hover;focus-visible;pressed;disabled",
+      "transactional_or_content_states": "loading;empty;held;error;offline;permission_denied;unavailable;success;stale",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "Primary constrained-width alternative;logical order;no lost column meaning;long values wrap;forced colors;keyboard links and buttons remain separate",
+      "reference_templates_or_flows": "all_collection_families;all_detail_families;SOF-01C;SOF-01I;SOF-01J;SOF-01M",
+      "source_decisions": "D-025;D-026;D-035;D-036",
+      "source_requirements": "FR-017;PUB-006;UX-001;UX-003;DATA-010",
+      "source_ux_tests": "UXTEST-021;UXTEST-022;UXTEST-023;UXTEST-024;UXTEST-026;UXTEST-032;UXTEST-035;UXTEST-037",
+      "source_actions": "ACT-04;ACT-13;ACT-43;ACT-49;ACT-50;ACT-53",
+      "implementation_evidence_expectations": "Reference list parity for collection table queue and audit uses;later reading-order and value completeness evidence",
+      "gated_facts": "Record fields;data;owners;export remain gated"
+    },
+    {
+      "primitive_id": "PRIM-062",
+      "primitive_name": "Logo and entity lockup",
+      "primitive_category": "content_evidence",
+      "interaction_class": "static",
+      "required_anatomy": "current approved identity asset reference;full Hengshi Design text;accessible name or decorative treatment by context;clearspace;surface pairing",
+      "required_variants": "primary_dark;light_surface;monochrome;reverse;standard_mark;small_optical;favicon_context;text_only_asset_failure",
+      "stream_presence": "S-HIGH;S-LOW;S-MEDIUM;S-SEMANTIC",
+      "pseudo_states": "not_applicable",
+      "transactional_or_content_states": "base;unavailable_asset;forced_colors;grayscale;print",
+      "state_redundancy": "visible text plus shape icon border pattern or position;never color only",
+      "responsive_and_mode_obligations": "Full name at first contact and ambiguous contexts;minimum sizes and clearspace inherited;flat backgrounds;missing asset leaves text identity;forced colors grayscale print and small-size evidence",
+      "reference_templates_or_flows": "entity;all_public_route_families;public_shell;staff_shell",
+      "source_decisions": "D-025;D-026;D-035;D-036;D-006",
+      "source_requirements": "BR-006;SEO-009;UX-001",
+      "source_ux_tests": "UXTEST-001;UXTEST-022;UXTEST-024",
+      "source_actions": "ACT-01;ACT-02",
+      "implementation_evidence_expectations": "Reference uses only current manifest entries and exact geometry;later asset checksum small-size contrast and text-fallback evidence",
+      "gated_facts": "Trademark clearance;public use;structured-data use;production mastering;licensed assets remain gated"
+    }
+  ],
+  "profile_bindings": [
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "profile": {
+        "profile_id": "BP-NFR-006",
+        "dimension": "browser",
+        "applies_to": "Every public interactive World Quick Access and staff reference template route flow profile and production batch",
+        "required_values": "Current latest two stable release families of Chrome Edge Firefox and Safari selected by dated QA; Safari on iOS 16.4 is the minimum legacy floor; semantic Quick Access for clients below that floor or otherwise unsupported",
+        "minimum_evidence": "Dated later QA records the exact current stable versions; Safari/iOS 16.4 mobile layout input virtual-keyboard and safe-area evidence; representative current evergreen evidence; below-floor and otherwise-unsupported recovery evidence proves semantic Quick Access without WebGL",
+        "critical_distinct_frame_values": "Safari/iOS-16.4-floor;current-evergreen;unsupported-Quick-Access",
+        "annotation_requirements": "Record browser engine platform input method viewport safe-area behavior support disposition and paired semantic destination; never infer exact current versions at this documentation freeze",
+        "exception_rule": "No browser-specific omission may remove essential content or action; a client outside the profile must recover through semantic Quick Access",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "profile": {
+        "profile_id": "DS-S-HIGH",
+        "dimension": "stream",
+        "applies_to": "Full-richness World stream on clients that pass the WebGL probe and report the highest device tier",
+        "required_values": "S-HIGH",
+        "minimum_evidence": "Contrast, target size and focus order measured against this stream's own rendering and never inherited from another stream; the delivery stream control shown reporting S-HIGH as current with its accessible name legible in the annotation; MODE-STANDARD, MODE-REDUCED-MOTION, MODE-KEYBOARD and MODE-SCREEN-READER captures; no degradation vocabulary in any annotation. Axis intersection is explicit and counted once: where a frame required here would also satisfy another profile it is drawn once and annotated with both profile IDs, so no frame is counted twice and no obligation is discharged by an aggregate frame that names no stream. World-content obligations are not stated here; under N-03 they attach to TPL-WORLD-SHELL and TPL-WORLD-HUD",
+        "critical_distinct_frame_values": "STATE-RECEPTION;STATE-OPEN;STATE-STREAM-CHANGED;MODE-REDUCED-MOTION;MODE-KEYBOARD;STATE-PREFERENCE-WRITE-FAILED;STATE-PREFERENCE-READ-FAILED;STATE-STREAM-CEILING-REFUSED",
+        "annotation_requirements": "Contrast target size and focus order are each measured against this stream's own rendering and never inherited from another stream; the delivery stream control is annotated with its current value and its accessible name; no annotation may use degradation vocabulary",
+        "exception_rule": "A stream may be marked not applicable only where the WebGL probe makes it unreachable for every client; S-SEMANTIC may never be marked not applicable",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "profile": {
+        "profile_id": "DS-S-LOW",
+        "dimension": "stream",
+        "applies_to": "Unshadowed low-texture World stream; the unsignalled default and the highest-traffic first-paint stream",
+        "required_values": "S-LOW",
+        "minimum_evidence": "Designed first, not last. Contrast, target size and focus order measured against this stream's own rendering and never inherited from another stream; the delivery stream control shown reporting S-LOW as current with its accessible name legible in the annotation; MODE-LOW-POWER, MODE-KEYBOARD and MODE-SCREEN-READER captures; no degradation vocabulary in any annotation. This stream reduces fidelity only and removes no destination. Axis intersection is explicit and counted once. World-content obligations are not stated here; under N-03 they attach to TPL-WORLD-SHELL and TPL-WORLD-HUD",
+        "critical_distinct_frame_values": "STATE-RECEPTION;STATE-OPEN;STATE-STREAM-CHANGED;MODE-LOW-POWER;MODE-KEYBOARD;STATE-PREFERENCE-WRITE-FAILED;STATE-PREFERENCE-READ-FAILED;STATE-STREAM-CEILING-REFUSED",
+        "annotation_requirements": "Contrast target size and focus order are each measured against this stream's own rendering and never inherited from another stream; the delivery stream control is annotated with its current value and its accessible name; no annotation may use degradation vocabulary",
+        "exception_rule": "A stream may be marked not applicable only where the WebGL probe makes it unreachable for every client; S-SEMANTIC may never be marked not applicable",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "profile": {
+        "profile_id": "DS-S-MEDIUM",
+        "dimension": "stream",
+        "applies_to": "Reduced-shadow medium-texture World stream on the middle device tier",
+        "required_values": "S-MEDIUM",
+        "minimum_evidence": "Contrast, target size and focus order measured against this stream's own rendering and never inherited from another stream; the delivery stream control shown reporting S-MEDIUM as current with its accessible name legible in the annotation; MODE-STANDARD, MODE-KEYBOARD and MODE-SCREEN-READER captures; no degradation vocabulary in any annotation. Axis intersection is explicit and counted once. World-content obligations are not stated here; under N-03 they attach to TPL-WORLD-SHELL and TPL-WORLD-HUD",
+        "critical_distinct_frame_values": "STATE-RECEPTION;STATE-OPEN;STATE-STREAM-CHANGED;MODE-KEYBOARD;STATE-PREFERENCE-WRITE-FAILED;STATE-PREFERENCE-READ-FAILED;STATE-STREAM-CEILING-REFUSED",
+        "annotation_requirements": "Contrast target size and focus order are each measured against this stream's own rendering and never inherited from another stream; the delivery stream control is annotated with its current value and its accessible name; no annotation may use degradation vocabulary",
+        "exception_rule": "A stream may be marked not applicable only where the WebGL probe makes it unreachable for every client; S-SEMANTIC may never be marked not applicable",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "profile": {
+        "profile_id": "DS-S-SEMANTIC",
+        "dimension": "stream",
+        "applies_to": "Peer stream for clients without a WebGL context; semantic navigation with static imagery",
+        "required_values": "S-SEMANTIC",
+        "minimum_evidence": "Every core journey completed end to end using only this stream; a named equivalent action for every route reachable in S-HIGH; contrast, target size and focus order measured against this stream's own rendering and never inherited from another stream; the delivery stream control shown reporting S-SEMANTIC as current, with its accessible name legible in the annotation, reachable without a canvas; MODE-FORCED-COLORS, MODE-PRINT, MODE-KEYBOARD and MODE-SCREEN-READER captures; keyboard path and screen-reader reading order; no degradation vocabulary in any annotation. Axis intersection is explicit and counted once. World-content obligations are not stated here; under N-03 they attach to TPL-WORLD-SHELL and TPL-WORLD-HUD",
+        "critical_distinct_frame_values": "STATE-RECEPTION;STATE-OPEN;STATE-STREAM-CHANGED;MODE-FORCED-COLORS;MODE-PRINT;MODE-KEYBOARD;STATE-PREFERENCE-WRITE-FAILED;STATE-PREFERENCE-READ-FAILED;STATE-STREAM-CEILING-REFUSED",
+        "annotation_requirements": "Contrast target size and focus order are each measured against this stream's own rendering and never inherited from another stream; the delivery stream control is annotated with its current value and its accessible name; no annotation may use degradation vocabulary",
+        "exception_rule": "S-SEMANTIC may never be marked not applicable. MODE-PRINT applies here and is not covered by the MP-WORLD print exclusion, because S-SEMANTIC is the semantic shell and not the live World canvas. S-SEMANTIC is never drawn as STATE-WEBGL-UNSUPPORTED: that state belongs to the World shell losing a context it had, while S-SEMANTIC is a peer stream a client may be served from first paint, so it carries no failure heading no error styling and no language of escape recovery or fallback",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "profile": {
+        "profile_id": "MP-PUBLIC",
+        "dimension": "mode",
+        "applies_to": "Public semantic routes and evidence",
+        "required_values": "MODE-STANDARD;MODE-REDUCED-MOTION;MODE-LOW-POWER;MODE-SEMANTIC-SHELL;MODE-FORCED-COLORS;MODE-GRAYSCALE;MODE-UNAVAILABLE-FONT;MODE-UNAVAILABLE-IMAGE-ASSET;MODE-PRINT;MODE-KEYBOARD;MODE-SCREEN-READER",
+        "minimum_evidence": "Standard frames plus focused mode evidence; forced-colors/grayscale/font/asset/print captures; keyboard path and screen-reader semantic annotation",
+        "critical_distinct_frame_values": "MODE-STANDARD;MODE-FORCED-COLORS;MODE-PRINT;MODE-UNAVAILABLE-IMAGE-ASSET",
+        "annotation_requirements": "Evidence-label redundancy; contrast; reading order; focus; missing asset alternative; no motion/color/material/image-only meaning",
+        "exception_rule": "Print may be marked not applicable only for a purely transient overlay whose underlying document provides the same printable truth",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "profile": {
+        "profile_id": "SP-NAVIGATION",
+        "dimension": "state",
+        "applies_to": "Primary navigation breadcrumbs directory search and HUD directory",
+        "required_values": "STATE-CLOSED;STATE-OPEN;STATE-LOADING;STATE-EMPTY-QUERY;STATE-NO-RESULTS;STATE-RESULTS;STATE-STALE;STATE-DERIVED-INDEX-UNAVAILABLE;STATE-OFFLINE;STATE-ERROR;STATE-FOCUS;STATE-STREAM-CHANGED;STATE-PREFERENCE-WRITE-FAILED;STATE-PREFERENCE-READ-FAILED;STATE-STREAM-CEILING-REFUSED",
+        "minimum_evidence": "Closed/open navigation frames; empty/no-result/result/index-unavailable directory frames; keyboard focus-return prototype",
+        "critical_distinct_frame_values": "STATE-OPEN;STATE-NO-RESULTS;STATE-DERIVED-INDEX-UNAVAILABLE;STATE-OFFLINE;STATE-STREAM-CHANGED;STATE-PREFERENCE-WRITE-FAILED;STATE-PREFERENCE-READ-FAILED;STATE-STREAM-CEILING-REFUSED",
+        "annotation_requirements": "Labeled disclosure; invoker focus return; clean canonical results; static browse fallback; no raw query persistence",
+        "exception_rule": "No URL-backed search/filter/sort state may be invented",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "profile": {
+        "profile_id": "TL-NOT-APPLICABLE",
+        "dimension": "time_limit",
+        "applies_to": "A reference with no user time limit in the accepted definition",
+        "required_values": "No user time limit is introduced; provider latency loading retry cooldown and system response timeout are documented separately and cannot silently become a user time limit",
+        "minimum_evidence": "Explicit not-applicable mapping; if later production introduces a user limit it must select TL-REMOVABLE-ADJUSTABLE TL-WARN-EXTEND or a criterion-supported TL-EXCEPTION before review",
+        "critical_distinct_frame_values": "not-applicable-annotation",
+        "annotation_requirements": "State why no user time limit applies and preserve the gate against later implicit limits",
+        "exception_rule": "Any introduced limit invalidates this mapping until an allowed branch and evidence are assigned",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "profile": {
+        "profile_id": "VP-PUBLIC",
+        "dimension": "viewport",
+        "applies_to": "Public semantic documents collections and evidence",
+        "required_values": "VP-320;VP-NARROW;VP-LANDSCAPE;VP-TABLET;VP-DESKTOP;VP-WIDE;VP-ZOOM-400",
+        "minimum_evidence": "Complete FRAME at VP-320 and VP-DESKTOP; responsive FRAME or ANNOTATION at every other value; content-stress evidence at VP-320 VP-LANDSCAPE and VP-ZOOM-400",
+        "critical_distinct_frame_values": "VP-320;VP-DESKTOP;VP-ZOOM-400",
+        "annotation_requirements": "Grid/reading order; wrapping; navigation disclosure; sticky obstruction; data/list alternative; print width when applicable",
+        "exception_rule": "None may be omitted; a visually identical intermediate viewport may use an annotation linked to both bounding frames",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "profile": {
+        "profile_id": "BP-NFR-006",
+        "dimension": "browser",
+        "applies_to": "Every public interactive World Quick Access and staff reference template route flow profile and production batch",
+        "required_values": "Current latest two stable release families of Chrome Edge Firefox and Safari selected by dated QA; Safari on iOS 16.4 is the minimum legacy floor; semantic Quick Access for clients below that floor or otherwise unsupported",
+        "minimum_evidence": "Dated later QA records the exact current stable versions; Safari/iOS 16.4 mobile layout input virtual-keyboard and safe-area evidence; representative current evergreen evidence; below-floor and otherwise-unsupported recovery evidence proves semantic Quick Access without WebGL",
+        "critical_distinct_frame_values": "Safari/iOS-16.4-floor;current-evergreen;unsupported-Quick-Access",
+        "annotation_requirements": "Record browser engine platform input method viewport safe-area behavior support disposition and paired semantic destination; never infer exact current versions at this documentation freeze",
+        "exception_rule": "No browser-specific omission may remove essential content or action; a client outside the profile must recover through semantic Quick Access",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "profile": {
+        "profile_id": "DS-S-HIGH",
+        "dimension": "stream",
+        "applies_to": "Full-richness World stream on clients that pass the WebGL probe and report the highest device tier",
+        "required_values": "S-HIGH",
+        "minimum_evidence": "Contrast, target size and focus order measured against this stream's own rendering and never inherited from another stream; the delivery stream control shown reporting S-HIGH as current with its accessible name legible in the annotation; MODE-STANDARD, MODE-REDUCED-MOTION, MODE-KEYBOARD and MODE-SCREEN-READER captures; no degradation vocabulary in any annotation. Axis intersection is explicit and counted once: where a frame required here would also satisfy another profile it is drawn once and annotated with both profile IDs, so no frame is counted twice and no obligation is discharged by an aggregate frame that names no stream. World-content obligations are not stated here; under N-03 they attach to TPL-WORLD-SHELL and TPL-WORLD-HUD",
+        "critical_distinct_frame_values": "STATE-RECEPTION;STATE-OPEN;STATE-STREAM-CHANGED;MODE-REDUCED-MOTION;MODE-KEYBOARD;STATE-PREFERENCE-WRITE-FAILED;STATE-PREFERENCE-READ-FAILED;STATE-STREAM-CEILING-REFUSED",
+        "annotation_requirements": "Contrast target size and focus order are each measured against this stream's own rendering and never inherited from another stream; the delivery stream control is annotated with its current value and its accessible name; no annotation may use degradation vocabulary",
+        "exception_rule": "A stream may be marked not applicable only where the WebGL probe makes it unreachable for every client; S-SEMANTIC may never be marked not applicable",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "profile": {
+        "profile_id": "DS-S-LOW",
+        "dimension": "stream",
+        "applies_to": "Unshadowed low-texture World stream; the unsignalled default and the highest-traffic first-paint stream",
+        "required_values": "S-LOW",
+        "minimum_evidence": "Designed first, not last. Contrast, target size and focus order measured against this stream's own rendering and never inherited from another stream; the delivery stream control shown reporting S-LOW as current with its accessible name legible in the annotation; MODE-LOW-POWER, MODE-KEYBOARD and MODE-SCREEN-READER captures; no degradation vocabulary in any annotation. This stream reduces fidelity only and removes no destination. Axis intersection is explicit and counted once. World-content obligations are not stated here; under N-03 they attach to TPL-WORLD-SHELL and TPL-WORLD-HUD",
+        "critical_distinct_frame_values": "STATE-RECEPTION;STATE-OPEN;STATE-STREAM-CHANGED;MODE-LOW-POWER;MODE-KEYBOARD;STATE-PREFERENCE-WRITE-FAILED;STATE-PREFERENCE-READ-FAILED;STATE-STREAM-CEILING-REFUSED",
+        "annotation_requirements": "Contrast target size and focus order are each measured against this stream's own rendering and never inherited from another stream; the delivery stream control is annotated with its current value and its accessible name; no annotation may use degradation vocabulary",
+        "exception_rule": "A stream may be marked not applicable only where the WebGL probe makes it unreachable for every client; S-SEMANTIC may never be marked not applicable",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "profile": {
+        "profile_id": "DS-S-MEDIUM",
+        "dimension": "stream",
+        "applies_to": "Reduced-shadow medium-texture World stream on the middle device tier",
+        "required_values": "S-MEDIUM",
+        "minimum_evidence": "Contrast, target size and focus order measured against this stream's own rendering and never inherited from another stream; the delivery stream control shown reporting S-MEDIUM as current with its accessible name legible in the annotation; MODE-STANDARD, MODE-KEYBOARD and MODE-SCREEN-READER captures; no degradation vocabulary in any annotation. Axis intersection is explicit and counted once. World-content obligations are not stated here; under N-03 they attach to TPL-WORLD-SHELL and TPL-WORLD-HUD",
+        "critical_distinct_frame_values": "STATE-RECEPTION;STATE-OPEN;STATE-STREAM-CHANGED;MODE-KEYBOARD;STATE-PREFERENCE-WRITE-FAILED;STATE-PREFERENCE-READ-FAILED;STATE-STREAM-CEILING-REFUSED",
+        "annotation_requirements": "Contrast target size and focus order are each measured against this stream's own rendering and never inherited from another stream; the delivery stream control is annotated with its current value and its accessible name; no annotation may use degradation vocabulary",
+        "exception_rule": "A stream may be marked not applicable only where the WebGL probe makes it unreachable for every client; S-SEMANTIC may never be marked not applicable",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "profile": {
+        "profile_id": "DS-S-SEMANTIC",
+        "dimension": "stream",
+        "applies_to": "Peer stream for clients without a WebGL context; semantic navigation with static imagery",
+        "required_values": "S-SEMANTIC",
+        "minimum_evidence": "Every core journey completed end to end using only this stream; a named equivalent action for every route reachable in S-HIGH; contrast, target size and focus order measured against this stream's own rendering and never inherited from another stream; the delivery stream control shown reporting S-SEMANTIC as current, with its accessible name legible in the annotation, reachable without a canvas; MODE-FORCED-COLORS, MODE-PRINT, MODE-KEYBOARD and MODE-SCREEN-READER captures; keyboard path and screen-reader reading order; no degradation vocabulary in any annotation. Axis intersection is explicit and counted once. World-content obligations are not stated here; under N-03 they attach to TPL-WORLD-SHELL and TPL-WORLD-HUD",
+        "critical_distinct_frame_values": "STATE-RECEPTION;STATE-OPEN;STATE-STREAM-CHANGED;MODE-FORCED-COLORS;MODE-PRINT;MODE-KEYBOARD;STATE-PREFERENCE-WRITE-FAILED;STATE-PREFERENCE-READ-FAILED;STATE-STREAM-CEILING-REFUSED",
+        "annotation_requirements": "Contrast target size and focus order are each measured against this stream's own rendering and never inherited from another stream; the delivery stream control is annotated with its current value and its accessible name; no annotation may use degradation vocabulary",
+        "exception_rule": "S-SEMANTIC may never be marked not applicable. MODE-PRINT applies here and is not covered by the MP-WORLD print exclusion, because S-SEMANTIC is the semantic shell and not the live World canvas. S-SEMANTIC is never drawn as STATE-WEBGL-UNSUPPORTED: that state belongs to the World shell losing a context it had, while S-SEMANTIC is a peer stream a client may be served from first paint, so it carries no failure heading no error styling and no language of escape recovery or fallback",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "profile": {
+        "profile_id": "MP-INTERACTIVE",
+        "dimension": "mode",
+        "applies_to": "AI handoff booking contact navigation and dialogs",
+        "required_values": "MODE-STANDARD;MODE-REDUCED-MOTION;MODE-LOW-POWER;MODE-SEMANTIC-SHELL;MODE-FORCED-COLORS;MODE-GRAYSCALE;MODE-UNAVAILABLE-FONT;MODE-UNAVAILABLE-IMAGE-ASSET;MODE-PRINT;MODE-KEYBOARD;MODE-SCREEN-READER",
+        "minimum_evidence": "Standard and critical state frames; forced-color and font/asset captures; keyboard prototype; screen-reader specification; printable summary where applicable",
+        "critical_distinct_frame_values": "MODE-STANDARD;MODE-FORCED-COLORS;MODE-KEYBOARD;MODE-SCREEN-READER",
+        "annotation_requirements": "No focus theft/trap; accessible names/status; disabled versus pending; input purpose; redundant entry; safe reauthentication",
+        "exception_rule": "Print interaction controls may be omitted only when a truthful printable status/summary and non-print action route are specified",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-WARN-EXTEND"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "profile": {
+        "profile_id": "SP-NAVIGATION",
+        "dimension": "state",
+        "applies_to": "Primary navigation breadcrumbs directory search and HUD directory",
+        "required_values": "STATE-CLOSED;STATE-OPEN;STATE-LOADING;STATE-EMPTY-QUERY;STATE-NO-RESULTS;STATE-RESULTS;STATE-STALE;STATE-DERIVED-INDEX-UNAVAILABLE;STATE-OFFLINE;STATE-ERROR;STATE-FOCUS;STATE-STREAM-CHANGED;STATE-PREFERENCE-WRITE-FAILED;STATE-PREFERENCE-READ-FAILED;STATE-STREAM-CEILING-REFUSED",
+        "minimum_evidence": "Closed/open navigation frames; empty/no-result/result/index-unavailable directory frames; keyboard focus-return prototype",
+        "critical_distinct_frame_values": "STATE-OPEN;STATE-NO-RESULTS;STATE-DERIVED-INDEX-UNAVAILABLE;STATE-OFFLINE;STATE-STREAM-CHANGED;STATE-PREFERENCE-WRITE-FAILED;STATE-PREFERENCE-READ-FAILED;STATE-STREAM-CEILING-REFUSED",
+        "annotation_requirements": "Labeled disclosure; invoker focus return; clean canonical results; static browse fallback; no raw query persistence",
+        "exception_rule": "No URL-backed search/filter/sort state may be invented",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "profile": {
+        "profile_id": "TL-NOT-APPLICABLE",
+        "dimension": "time_limit",
+        "applies_to": "A reference with no user time limit in the accepted definition",
+        "required_values": "No user time limit is introduced; provider latency loading retry cooldown and system response timeout are documented separately and cannot silently become a user time limit",
+        "minimum_evidence": "Explicit not-applicable mapping; if later production introduces a user limit it must select TL-REMOVABLE-ADJUSTABLE TL-WARN-EXTEND or a criterion-supported TL-EXCEPTION before review",
+        "critical_distinct_frame_values": "not-applicable-annotation",
+        "annotation_requirements": "State why no user time limit applies and preserve the gate against later implicit limits",
+        "exception_rule": "Any introduced limit invalidates this mapping until an allowed branch and evidence are assigned",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "profile": {
+        "profile_id": "VP-INTERACTIVE",
+        "dimension": "viewport",
+        "applies_to": "AI handoff booking contact and transactional panels",
+        "required_values": "VP-320;VP-NARROW;VP-LANDSCAPE;VP-TABLET;VP-DESKTOP;VP-WIDE;VP-ZOOM-400",
+        "minimum_evidence": "Complete FRAME at VP-320 VP-LANDSCAPE and VP-DESKTOP; interaction annotations and error-summary/focus evidence at all values",
+        "critical_distinct_frame_values": "VP-320;VP-LANDSCAPE;VP-DESKTOP;VP-ZOOM-400",
+        "annotation_requirements": "Field order; action stacking; keyboard visibility; error summary; local-time strings; safe-area and virtual-keyboard implications",
+        "exception_rule": "None may be omitted; VP-WIDE may reuse desktop structure only with measured line-length and control-placement annotation",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-WARN-EXTEND"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "profile": {
+        "profile_id": "BP-NFR-006",
+        "dimension": "browser",
+        "applies_to": "Every public interactive World Quick Access and staff reference template route flow profile and production batch",
+        "required_values": "Current latest two stable release families of Chrome Edge Firefox and Safari selected by dated QA; Safari on iOS 16.4 is the minimum legacy floor; semantic Quick Access for clients below that floor or otherwise unsupported",
+        "minimum_evidence": "Dated later QA records the exact current stable versions; Safari/iOS 16.4 mobile layout input virtual-keyboard and safe-area evidence; representative current evergreen evidence; below-floor and otherwise-unsupported recovery evidence proves semantic Quick Access without WebGL",
+        "critical_distinct_frame_values": "Safari/iOS-16.4-floor;current-evergreen;unsupported-Quick-Access",
+        "annotation_requirements": "Record browser engine platform input method viewport safe-area behavior support disposition and paired semantic destination; never infer exact current versions at this documentation freeze",
+        "exception_rule": "No browser-specific omission may remove essential content or action; a client outside the profile must recover through semantic Quick Access",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "profile": {
+        "profile_id": "DS-S-HIGH",
+        "dimension": "stream",
+        "applies_to": "Full-richness World stream on clients that pass the WebGL probe and report the highest device tier",
+        "required_values": "S-HIGH",
+        "minimum_evidence": "Contrast, target size and focus order measured against this stream's own rendering and never inherited from another stream; the delivery stream control shown reporting S-HIGH as current with its accessible name legible in the annotation; MODE-STANDARD, MODE-REDUCED-MOTION, MODE-KEYBOARD and MODE-SCREEN-READER captures; no degradation vocabulary in any annotation. Axis intersection is explicit and counted once: where a frame required here would also satisfy another profile it is drawn once and annotated with both profile IDs, so no frame is counted twice and no obligation is discharged by an aggregate frame that names no stream. World-content obligations are not stated here; under N-03 they attach to TPL-WORLD-SHELL and TPL-WORLD-HUD",
+        "critical_distinct_frame_values": "STATE-RECEPTION;STATE-OPEN;STATE-STREAM-CHANGED;MODE-REDUCED-MOTION;MODE-KEYBOARD;STATE-PREFERENCE-WRITE-FAILED;STATE-PREFERENCE-READ-FAILED;STATE-STREAM-CEILING-REFUSED",
+        "annotation_requirements": "Contrast target size and focus order are each measured against this stream's own rendering and never inherited from another stream; the delivery stream control is annotated with its current value and its accessible name; no annotation may use degradation vocabulary",
+        "exception_rule": "A stream may be marked not applicable only where the WebGL probe makes it unreachable for every client; S-SEMANTIC may never be marked not applicable",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "profile": {
+        "profile_id": "DS-S-LOW",
+        "dimension": "stream",
+        "applies_to": "Unshadowed low-texture World stream; the unsignalled default and the highest-traffic first-paint stream",
+        "required_values": "S-LOW",
+        "minimum_evidence": "Designed first, not last. Contrast, target size and focus order measured against this stream's own rendering and never inherited from another stream; the delivery stream control shown reporting S-LOW as current with its accessible name legible in the annotation; MODE-LOW-POWER, MODE-KEYBOARD and MODE-SCREEN-READER captures; no degradation vocabulary in any annotation. This stream reduces fidelity only and removes no destination. Axis intersection is explicit and counted once. World-content obligations are not stated here; under N-03 they attach to TPL-WORLD-SHELL and TPL-WORLD-HUD",
+        "critical_distinct_frame_values": "STATE-RECEPTION;STATE-OPEN;STATE-STREAM-CHANGED;MODE-LOW-POWER;MODE-KEYBOARD;STATE-PREFERENCE-WRITE-FAILED;STATE-PREFERENCE-READ-FAILED;STATE-STREAM-CEILING-REFUSED",
+        "annotation_requirements": "Contrast target size and focus order are each measured against this stream's own rendering and never inherited from another stream; the delivery stream control is annotated with its current value and its accessible name; no annotation may use degradation vocabulary",
+        "exception_rule": "A stream may be marked not applicable only where the WebGL probe makes it unreachable for every client; S-SEMANTIC may never be marked not applicable",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "profile": {
+        "profile_id": "DS-S-MEDIUM",
+        "dimension": "stream",
+        "applies_to": "Reduced-shadow medium-texture World stream on the middle device tier",
+        "required_values": "S-MEDIUM",
+        "minimum_evidence": "Contrast, target size and focus order measured against this stream's own rendering and never inherited from another stream; the delivery stream control shown reporting S-MEDIUM as current with its accessible name legible in the annotation; MODE-STANDARD, MODE-KEYBOARD and MODE-SCREEN-READER captures; no degradation vocabulary in any annotation. Axis intersection is explicit and counted once. World-content obligations are not stated here; under N-03 they attach to TPL-WORLD-SHELL and TPL-WORLD-HUD",
+        "critical_distinct_frame_values": "STATE-RECEPTION;STATE-OPEN;STATE-STREAM-CHANGED;MODE-KEYBOARD;STATE-PREFERENCE-WRITE-FAILED;STATE-PREFERENCE-READ-FAILED;STATE-STREAM-CEILING-REFUSED",
+        "annotation_requirements": "Contrast target size and focus order are each measured against this stream's own rendering and never inherited from another stream; the delivery stream control is annotated with its current value and its accessible name; no annotation may use degradation vocabulary",
+        "exception_rule": "A stream may be marked not applicable only where the WebGL probe makes it unreachable for every client; S-SEMANTIC may never be marked not applicable",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "profile": {
+        "profile_id": "DS-S-SEMANTIC",
+        "dimension": "stream",
+        "applies_to": "Peer stream for clients without a WebGL context; semantic navigation with static imagery",
+        "required_values": "S-SEMANTIC",
+        "minimum_evidence": "Every core journey completed end to end using only this stream; a named equivalent action for every route reachable in S-HIGH; contrast, target size and focus order measured against this stream's own rendering and never inherited from another stream; the delivery stream control shown reporting S-SEMANTIC as current, with its accessible name legible in the annotation, reachable without a canvas; MODE-FORCED-COLORS, MODE-PRINT, MODE-KEYBOARD and MODE-SCREEN-READER captures; keyboard path and screen-reader reading order; no degradation vocabulary in any annotation. Axis intersection is explicit and counted once. World-content obligations are not stated here; under N-03 they attach to TPL-WORLD-SHELL and TPL-WORLD-HUD",
+        "critical_distinct_frame_values": "STATE-RECEPTION;STATE-OPEN;STATE-STREAM-CHANGED;MODE-FORCED-COLORS;MODE-PRINT;MODE-KEYBOARD;STATE-PREFERENCE-WRITE-FAILED;STATE-PREFERENCE-READ-FAILED;STATE-STREAM-CEILING-REFUSED",
+        "annotation_requirements": "Contrast target size and focus order are each measured against this stream's own rendering and never inherited from another stream; the delivery stream control is annotated with its current value and its accessible name; no annotation may use degradation vocabulary",
+        "exception_rule": "S-SEMANTIC may never be marked not applicable. MODE-PRINT applies here and is not covered by the MP-WORLD print exclusion, because S-SEMANTIC is the semantic shell and not the live World canvas. S-SEMANTIC is never drawn as STATE-WEBGL-UNSUPPORTED: that state belongs to the World shell losing a context it had, while S-SEMANTIC is a peer stream a client may be served from first paint, so it carries no failure heading no error styling and no language of escape recovery or fallback",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-NOT-APPLICABLE"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "profile": {
+        "profile_id": "MP-INTERACTIVE",
+        "dimension": "mode",
+        "applies_to": "AI handoff booking contact navigation and dialogs",
+        "required_values": "MODE-STANDARD;MODE-REDUCED-MOTION;MODE-LOW-POWER;MODE-SEMANTIC-SHELL;MODE-FORCED-COLORS;MODE-GRAYSCALE;MODE-UNAVAILABLE-FONT;MODE-UNAVAILABLE-IMAGE-ASSET;MODE-PRINT;MODE-KEYBOARD;MODE-SCREEN-READER",
+        "minimum_evidence": "Standard and critical state frames; forced-color and font/asset captures; keyboard prototype; screen-reader specification; printable summary where applicable",
+        "critical_distinct_frame_values": "MODE-STANDARD;MODE-FORCED-COLORS;MODE-KEYBOARD;MODE-SCREEN-READER",
+        "annotation_requirements": "No focus theft/trap; accessible names/status; disabled versus pending; input purpose; redundant entry; safe reauthentication",
+        "exception_rule": "Print interaction controls may be omitted only when a truthful printable status/summary and non-print action route are specified",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-WARN-EXTEND"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "profile": {
+        "profile_id": "SP-SYSTEM-RECOVERY",
+        "dimension": "state",
+        "applies_to": "Shared system status and recovery presentation",
+        "required_values": "STATE-LOADING;STATE-DEGRADED;STATE-EMPTY;STATE-PENDING;STATE-UNAVAILABLE;STATE-OFFLINE;STATE-ERROR;STATE-PERMISSION-DENIED;STATE-SESSION-EXPIRED;STATE-STALE;STATE-CONFLICT;STATE-ASSET-FAILURE;STATE-CHECKSUM-MISMATCH;STATE-FOCUS;STATE-STREAM-CHANGED;STATE-PREFERENCE-WRITE-FAILED",
+        "minimum_evidence": "Reusable focused frames for each class on light/dark/forced-color surfaces; route/flow host retains context",
+        "critical_distinct_frame_values": "STATE-PENDING;STATE-UNAVAILABLE;STATE-OFFLINE;STATE-ERROR;STATE-PERMISSION-DENIED;STATE-CHECKSUM-MISMATCH;STATE-STREAM-CHANGED;STATE-PREFERENCE-WRITE-FAILED",
+        "annotation_requirements": "What happened; what was preserved; authoritative state; smallest safe action; status semantics; no provider/secret/PII leakage",
+        "exception_rule": "This profile supplements rather than replaces a host template state profile",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-WARN-EXTEND"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "profile": {
+        "profile_id": "TL-WARN-EXTEND",
+        "dimension": "time_limit",
+        "applies_to": "A user time limit assigned to the warning-and-extension branch of WCAG 2.2 SC 2.2.1",
+        "required_values": "Warn at least 20 seconds before expiry and provide a simple extension of at least ten times the default limit",
+        "minimum_evidence": "Branch selection shown in the affected reference; warning status and extension control are keyboard and screen-reader operable; permitted data and last authoritative state survive expiry; accessible reauthentication returns to preserved context; exact product duration remains gated",
+        "critical_distinct_frame_values": "warning-at-least-20-seconds;simple-extension-at-least-10x;preservation;accessible-reauth",
+        "annotation_requirements": "Identify affected route flow template profile and batch; record authoritative state and extension behavior; do not treat provider latency or system response timeout as the user limit",
+        "exception_rule": "A different treatment requires TL-REMOVABLE-ADJUSTABLE or a criterion-supported TL-EXCEPTION accepted through the standards-exception human gate",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-WARN-EXTEND"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "profile": {
+        "profile_id": "VP-INTERACTIVE",
+        "dimension": "viewport",
+        "applies_to": "AI handoff booking contact and transactional panels",
+        "required_values": "VP-320;VP-NARROW;VP-LANDSCAPE;VP-TABLET;VP-DESKTOP;VP-WIDE;VP-ZOOM-400",
+        "minimum_evidence": "Complete FRAME at VP-320 VP-LANDSCAPE and VP-DESKTOP; interaction annotations and error-summary/focus evidence at all values",
+        "critical_distinct_frame_values": "VP-320;VP-LANDSCAPE;VP-DESKTOP;VP-ZOOM-400",
+        "annotation_requirements": "Field order; action stacking; keyboard visibility; error summary; local-time strings; safe-area and virtual-keyboard implications",
+        "exception_rule": "None may be omitted; VP-WIDE may reuse desktop structure only with measured line-length and control-placement annotation",
+        "browser_profile": "BP-NFR-006",
+        "time_limit_branch": "TL-WARN-EXTEND"
+      },
+      "evidence_status": "TODO",
+      "evidence_limit": "Preparation only; profile text or a frame label is not proof of its represented behavior"
+    }
+  ],
+  "required_stream_state_focus": [
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-HIGH"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-LOW"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-MEDIUM"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC"
+    }
+  ],
+  "candidate_stream_focus_frames": [
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-HIGH",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-LOW",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-MEDIUM",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-SEMANTIC",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-HIGH",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-LOW",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-MEDIUM",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-HIGH",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-LOW",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-MEDIUM",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-HIGH",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-LOW",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-MEDIUM",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-SEMANTIC",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-HIGH",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-LOW",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-MEDIUM",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_NO_RESULTS_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-HIGH",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_NO_RESULTS_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-LOW",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_NO_RESULTS_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-MEDIUM",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_NO_RESULTS_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-SEMANTIC",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-HIGH",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-LOW",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-MEDIUM",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-SEMANTIC",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-HIGH",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-LOW",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-MEDIUM",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-HIGH",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-LOW",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-MEDIUM",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-HIGH",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-LOW",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-MEDIUM",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-SEMANTIC",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-HIGH",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-LOW",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-MEDIUM",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-KEYBOARD",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_FORCED_COLORS_STREAM_HIGH_V01",
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-HIGH",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-FORCED-COLORS",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_FORCED_COLORS_STREAM_LOW_V01",
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-LOW",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-FORCED-COLORS",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_FORCED_COLORS_STREAM_MEDIUM_V01",
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-MEDIUM",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-FORCED-COLORS",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_FORCED_COLORS_STREAM_SEMANTIC_V01",
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-SEMANTIC",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-FORCED-COLORS",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_FORCED_COLORS_STREAM_HIGH_V01",
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-HIGH",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-FORCED-COLORS",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_FORCED_COLORS_STREAM_LOW_V01",
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-LOW",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-FORCED-COLORS",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_FORCED_COLORS_STREAM_MEDIUM_V01",
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-MEDIUM",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-FORCED-COLORS",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_FORCED_COLORS_STREAM_SEMANTIC_V01",
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-FORCED-COLORS",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_STREAM_CHANGED_VP_320_MODE_FORCED_COLORS_STREAM_HIGH_V01",
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-HIGH",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-FORCED-COLORS",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_STREAM_CHANGED_VP_320_MODE_FORCED_COLORS_STREAM_LOW_V01",
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-LOW",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-FORCED-COLORS",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_STREAM_CHANGED_VP_320_MODE_FORCED_COLORS_STREAM_MEDIUM_V01",
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-MEDIUM",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-FORCED-COLORS",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    },
+    {
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_STREAM_CHANGED_VP_320_MODE_FORCED_COLORS_STREAM_SEMANTIC_V01",
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC",
+      "viewport_id": "VP-320",
+      "mode_id": "MODE-FORCED-COLORS",
+      "evidence_status": "TODO",
+      "purpose": "Candidate for one required stream/state focus, not complete template/profile coverage"
+    }
+  ],
+  "observed_draft_checkpoint": {
+    "frames": [
+      {
+        "id": "14:20",
+        "name": "B01 DRAFT / TPL-GLOBAL-NAVIGATION / 1440",
+        "width": 1440,
+        "height": 850
+      },
+      {
+        "id": "14:41",
+        "name": "B01 DRAFT / TPL-GLOBAL-NAVIGATION / 390",
+        "width": 390,
+        "height": 1292
+      },
+      {
+        "id": "14:62",
+        "name": "B01 DRAFT / TPL-DIRECTORY-SEARCH / 1440",
+        "width": 1440,
+        "height": 860
+      },
+      {
+        "id": "14:84",
+        "name": "B01 DRAFT / TPL-DIRECTORY-SEARCH / 390",
+        "width": 390,
+        "height": 972
+      },
+      {
+        "id": "14:106",
+        "name": "B01 DRAFT / TPL-SYSTEM-RECOVERY / 1440",
+        "width": 1440,
+        "height": 698
+      },
+      {
+        "id": "14:124",
+        "name": "B01 DRAFT / TPL-SYSTEM-RECOVERY / 390",
+        "width": 390,
+        "height": 818
+      }
+    ],
+    "returned_preview_count": 5,
+    "B01_complete": false,
+    "narrow_recovery_screenshot": {
+      "date": "2026-10-06",
+      "tool": "get_screenshot",
+      "fileKey": "GOmLP6Cv96l768ueSrZ5Dg",
+      "nodeId": "14:124",
+      "isError": false,
+      "width": 390,
+      "height": 818,
+      "original_width": 390,
+      "original_height": 818,
+      "image": "narrow-recovery.png",
+      "sha256": "050841772b9b85f25abcdfd6e55529f36626ef4e6f5c3dbb19dc512111805137",
+      "inspection": "Readable text and actions; no visible overlap or clipping in this capture. Completes visual inspection of the six initial drafts only.",
+      "permission": "Founder approved this one read-only screenshot; permission consumed",
+      "October_project_attempts": 12,
+      "conservative_metered_attempts": 9,
+      "actual_balance": "unknown",
+      "B01_complete": false,
+      "limitations": "No interaction, accessibility, full state/mode/stream coverage, 320px reference, independent review, EXIT or pilot acceptance proof. Short-lived asset URL intentionally omitted."
+    },
+    "inspection_hold": "All six initial draft views inspected; full contracted coverage and independent review remain held.",
+    "coverage": "Not adjudicated or accepted. Six unvalidated drafts are not a substitute for full contracted evidence."
+  },
+  "preparation_findings": [
+    "Current narrow drafts are 390px; the required complete VP-320 references remain to be authored.",
+    "Current previewed stream selector uses Quick Access; all four required stream/state focuses remain to be evidenced.",
+    "Required profiles retain every state, viewport and mode value. Stream-focus candidates are only one subset, not a complete frame count or Cartesian-product instruction.",
+    "All contracted primitive dependencies are carried. World HUD/content is explicitly outside B01 under its batch row; no B01 evidence discharges B07.",
+    "Light/dark/forced-color recovery, navigation disclosure, search outcomes, semantics and interaction/prototype evidence remain required.",
+    "Platform/browser behavior, forced-colors, screen reader, physical mobile and accessibility claims require their contracted evidence; Figma labels or screenshots cannot establish them.",
+    "Use D-057 accepted stream copy. Other exact legal/security/provider facts remain held; references must identify synthetic fixtures.",
+    "Actual component creation, tokens, full frame composition, inspection, exports, independent reviews, restore/EXIT and founder pilot acceptance are not performed by this preparation."
+  ]
+}

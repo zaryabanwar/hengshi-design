@@ -1,0 +1,183 @@
+{
+  "status": "DOING",
+  "canonical_files": [
+    "docs\\software-definition\\definition-walkthrough.html",
+    "docs\\software-definition\\04-reconciliation-map.md"
+  ],
+  "outside_additions_unchanged": true,
+  "links": [
+    {
+      "target": "../phase-1-architecture/contracts/PUBLICATION_CONTRACT.md#approved-knowledge-bundle-representation-proposal--2026-10-08",
+      "exists": true
+    },
+    {
+      "target": "../phase-1-architecture/contracts/knowledge-bundle.schema.json",
+      "exists": true
+    },
+    {
+      "target": "definition-walkthrough.html#ai-grounding",
+      "exists": true
+    },
+    {
+      "target": "../../output/research/knowledge-bundle-2026-10-08/independent-review-knowledge-bundle-v1.json",
+      "exists": true
+    }
+  ],
+  "observations": {
+    "desktop-final.txt": {
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "flowColumns": "272px 272px 272px 272px",
+        "cardColumns": "554px 554px",
+        "bounds": [
+          {
+            "x": 158,
+            "width": 272,
+            "right": 430,
+            "height": 289.8125
+          },
+          {
+            "x": 442,
+            "width": 272,
+            "right": 714,
+            "height": 289.8125
+          },
+          {
+            "x": 726,
+            "width": 272,
+            "right": 998,
+            "height": 289.8125
+          },
+          {
+            "x": 1010,
+            "width": 272,
+            "right": 1282,
+            "height": 289.8125
+          },
+          {
+            "x": 158,
+            "width": 554,
+            "right": 712,
+            "height": 238.984375
+          },
+          {
+            "x": 728,
+            "width": 554,
+            "right": 1282,
+            "height": 238.984375
+          }
+        ],
+        "height": 1067.46875,
+        "links": [
+          "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md#approved-knowledge-bundle-representation-proposal--2026-10-08",
+          "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/knowledge-bundle.schema.json",
+          "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md"
+        ]
+      },
+      "links": [
+        {
+          "url": "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md#approved-knowledge-bundle-representation-proposal--2026-10-08",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/knowledge-bundle.schema.json",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+          "status": 200
+        }
+      ],
+      "closedByKeyboard": true,
+      "openedByKeyboard": true,
+      "firstLinkReached": true,
+      "focusedOutline": {
+        "active": true,
+        "style": "solid",
+        "width": "3px"
+      },
+      "screenshot": "output/playwright/knowledge-bundle-2026-10-08/knowledge-1440.png",
+      "limits": "Static documentation inspection only; no production UI, legal compliance, full accessibility, phone hardware or data-processing runtime proof"
+    },
+    "narrow-final.txt": {
+      "layout": {
+        "viewport": 320,
+        "documentWidth": 320,
+        "flowColumns": "276px",
+        "cardColumns": "276px",
+        "bounds": [
+          {
+            "x": 22,
+            "width": 276,
+            "right": 298,
+            "height": 237.125
+          },
+          {
+            "x": 22,
+            "width": 276,
+            "right": 298,
+            "height": 289.8125
+          },
+          {
+            "x": 22,
+            "width": 276,
+            "right": 298,
+            "height": 263.46875
+          },
+          {
+            "x": 22,
+            "width": 276,
+            "right": 298,
+            "height": 263.46875
+          },
+          {
+            "x": 22,
+            "width": 276,
+            "right": 298,
+            "height": 397.96875
+          },
+          {
+            "x": 22,
+            "width": 276,
+            "right": 298,
+            "height": 371.625
+          }
+        ],
+        "height": 2911.796875,
+        "links": [
+          "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md#approved-knowledge-bundle-representation-proposal--2026-10-08",
+          "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/knowledge-bundle.schema.json",
+          "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md"
+        ]
+      },
+      "links": [
+        {
+          "url": "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md#approved-knowledge-bundle-representation-proposal--2026-10-08",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/knowledge-bundle.schema.json",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8766/docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+          "status": 200
+        }
+      ],
+      "closedByKeyboard": true,
+      "openedByKeyboard": true,
+      "firstLinkReached": true,
+      "focusedOutline": {
+        "active": true,
+        "style": "solid",
+        "width": "3px"
+      },
+      "screenshot": "output/playwright/knowledge-bundle-2026-10-08/knowledge-320.png",
+      "limits": "Static documentation inspection only; no production UI, legal compliance, full accessibility, phone hardware or data-processing runtime proof"
+    }
+  },
+  "scope": "Static panel keyboard, source links and responsive layout only; source/screenshot review pending; frozen contract PASS is separately scoped",
+  "application_changes": false,
+  "commits": false
+}

@@ -1,0 +1,269 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Independent feasibility/source-binding review of the native B01 construction preparation. Determine remaining executable-plan requirements; this is not external-write release or final design/runtime/accessibility/B01 acceptance.",
+  "revision_cycle": 0,
+  "inputs": [
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/NATIVE_CONSTRUCTION_PLAN.md",
+      "snapshot": "inputs/00-NATIVE_CONSTRUCTION_PLAN.md",
+      "bytes": 6360,
+      "sha256": "aaa235e8413317290cf63290c4e8f1937fcfebb0b00441b84ba42819461fa7b2"
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/source-bindings-and-cases-v1.json",
+      "snapshot": "inputs/01-source-bindings-and-cases-v1.json",
+      "bytes": 371261,
+      "sha256": "33c4d4b05e58006bdd5153ac3c85397ae3f307b324c45017c29ced811380482b"
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "inputs/02-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "inputs/03-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "inputs/04-DECISIONS.md",
+      "bytes": 106595,
+      "sha256": "dcedb7cdad5f7401a47ddfe218f61b88b9a182d3f2c8c1f939696e9419522952"
+    },
+    {
+      "source": "docs/software-definition/03-autonomous-ai-development-workflow.md",
+      "snapshot": "inputs/05-03-autonomous-ai-development-workflow.md",
+      "bytes": 7964,
+      "sha256": "d1388aab446eb65efe1f9f285cc4c375d05611b5d2fe34f6e75f09e83b588e54"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/README.md",
+      "snapshot": "inputs/06-README.md",
+      "bytes": 13944,
+      "sha256": "bec9109c86df617bf4682a5e7f41338e559ee0e9a4f0fffed03a9ae52696890f"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "snapshot": "inputs/07-UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "bytes": 45771,
+      "sha256": "1779fd3cd71f8210815fd7ddbbcd06faa6e5387e2d91584531be6d3806f8cf61"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/evidence-capture-plan.csv",
+      "snapshot": "inputs/08-evidence-capture-plan.csv",
+      "bytes": 8428,
+      "sha256": "4dceafb6d78a859ff5aee23ac78e65180975e72e83ed14a40dc20a90ad4fa0fd"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/foundation-flow-coverage.csv",
+      "snapshot": "inputs/09-foundation-flow-coverage.csv",
+      "bytes": 47465,
+      "sha256": "7f80eeb1b60da0f23b026e7f33573bce89881df59cf3d705d759387abf69f5f4"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/foundation-route-coverage.csv",
+      "snapshot": "inputs/10-foundation-route-coverage.csv",
+      "bytes": 22199,
+      "sha256": "a8d6e918aa85a4ed974945fedc604d016dea54dc6d3f6a55436d55557c0190e7"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/design-batch-plan.csv",
+      "snapshot": "inputs/11-design-batch-plan.csv",
+      "bytes": 28149,
+      "sha256": "0b01be6b01157785cf57dcb5c36a8efbd9254031708f9afad19db52e4f8b32ce"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+      "snapshot": "inputs/12-CHAT_EVENT_PROTOCOL.md",
+      "bytes": 50683,
+      "sha256": "b2b06e915c81083a40be58f3a641991862371f2d117effb2716e098116aed364"
+    },
+    {
+      "source": "output/research/b01-interaction-definition-2026-10-12/correction3/INTERACTION_EVIDENCE_PROPOSAL.md",
+      "snapshot": "inputs/13-INTERACTION_EVIDENCE_PROPOSAL.md",
+      "bytes": 11703,
+      "sha256": "b11add302eb0c1af9cae9123f33374cea37b5001d49a3fe15ddfde22de54a2a9"
+    },
+    {
+      "source": "output/research/b01-overlay-source-rebinding-2026-10-12/adoption-result-v1.json",
+      "snapshot": "inputs/14-adoption-result-v1.json",
+      "bytes": 666,
+      "sha256": "69e7e381ae6d110ee9e78e93339992c30a740f26e377c9cb5f9f31a15ecfe48c"
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/inventory.json",
+      "snapshot": "inputs/15-inventory.json",
+      "bytes": 19881,
+      "sha256": "f088d729871525c37c458e85ab850113ae5893a54c5a37116ddbbc2221e1f39a"
+    },
+    {
+      "source": "output/research/b01-navigation-composition-2026-10-06/state-ledger.json",
+      "snapshot": "inputs/16-state-ledger.json",
+      "bytes": 23436,
+      "sha256": "f078e20b6fca5deec68a8876d83922d03064036aa797fb719cd6cae6d594da2b"
+    },
+    {
+      "source": "output/research/b01-directory-call19-2026-10-08/decoded-design-result.json",
+      "snapshot": "inputs/17-decoded-design-result.json",
+      "bytes": 72290,
+      "sha256": "71f198783593821c55291a8e9b6a1e896d35f7addb695245c08763dd225e0eda"
+    },
+    {
+      "source": "output/research/b01-recovery-stream-bindings-2026-10-08/attempt24-2026-10-11/receipt.json",
+      "snapshot": "inputs/18-receipt.json",
+      "bytes": 1969,
+      "sha256": "3dd22beefbd90c251827c5479621a4e7193721c5d39cc6694828cf251c28e0e6"
+    },
+    {
+      "source": "output/research/b01-recovery-stream-bindings-2026-10-08/input.json",
+      "snapshot": "inputs/19-input.json",
+      "bytes": 13802,
+      "sha256": "0e75c5db5f8145f881ce6552d1ca44a21f253a45b4cdb2812772caa6dad09f14"
+    },
+    {
+      "source": "output/research/b01-ceiling-refusal-bindings-2026-10-09/attempt25-2026-10-11/receipt.json",
+      "snapshot": "inputs/20-receipt.json",
+      "bytes": 2769,
+      "sha256": "a34a22cd6357e7458cbfb26c5f39e50bae5a595e762261109f0ac26b0b6a73d1"
+    },
+    {
+      "source": "output/research/b01-ceiling-refusal-bindings-2026-10-09/execution-preparation/input.json",
+      "snapshot": "inputs/21-input.json",
+      "bytes": 16506,
+      "sha256": "fcc9aba8c54df8c69f8f822338a28f4fef6c07fe15b88152951dedaded5763df"
+    },
+    {
+      "source": "output/research/b01-mode-coverage-2026-10-12/attempt29-2026-10-12/input.json",
+      "snapshot": "inputs/22-input.json",
+      "bytes": 42285,
+      "sha256": "fbba65b15900bd0f3c9ccde089b74afc038f002f84b587289c34516a9f88295a"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/input.json",
+      "snapshot": "inputs/23-input.json",
+      "bytes": 13866,
+      "sha256": "3237e4cab79e6667e1fb4c57324e603d506a5dde9a3eebc43cf6429536ff8223"
+    },
+    {
+      "source": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/receipt.json",
+      "snapshot": "inputs/24-receipt.json",
+      "bytes": 35057,
+      "sha256": "ad63597b5fe80570718af59c1558042d3f60d9a92b75cd6fbab0d0a0270b17d0"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/input.json",
+      "snapshot": "inputs/25-input.json",
+      "bytes": 36211,
+      "sha256": "e922317901f3e8ed9fc88958d22c46409444b5c3e884091f16ff886acd73d1d5"
+    },
+    {
+      "source": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/receipt.json",
+      "snapshot": "inputs/26-receipt.json",
+      "bytes": 39058,
+      "sha256": "e0b02d5357fe28b080ea9fe41c7cca3ea193624f0654f3a762edb59467b0263b"
+    },
+    {
+      "source": "output/research/b01-mode-coverage-2026-10-12/attempt29-2026-10-12/receipt.json",
+      "snapshot": "inputs/27-receipt.json",
+      "bytes": 60960,
+      "sha256": "98631654e1ca0fdf1b353bc6383ad7f66e11f11620dca14a2d5c8eadf1cddc85"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "snapshot": "inputs/28-responsive-state-mode-matrix.csv",
+      "bytes": 33821,
+      "sha256": "deb91325e1c8a543878111883f5b1203ae9e5dc35c00e0d837e927786eaf47e2"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "snapshot": "inputs/29-reference-template-inventory.csv",
+      "bytes": 33596,
+      "sha256": "2e904e0f4c7019ca696131068567978973961e70cb0889ae954771010c5634cf"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/component-primitives.csv",
+      "snapshot": "inputs/30-component-primitives.csv",
+      "bytes": 79724,
+      "sha256": "8aec225781cbb1389ea15e70895889a9da306244cd6f8b74f7640d863dde6318"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/column-authority.json",
+      "snapshot": "inputs/31-column-authority.json",
+      "bytes": 11649766,
+      "sha256": "a8358be02d6fbca42a167b19395a4a2cd9b2fe318eaaec3b78e8141f4244aacd"
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/stream-control-open-high-current.txt",
+      "snapshot": "inputs/32-stream-control-open-high-current.txt",
+      "bytes": 21155,
+      "sha256": "ae81cefa929224767b3478adb7b764cc84bdf3c2bd40a33abec0d0039de2d2e1"
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/stream-pending-balanced-layer-current.txt",
+      "snapshot": "inputs/33-stream-pending-balanced-layer-current.txt",
+      "bytes": 20101,
+      "sha256": "1907db698998cbf1f5ab9f75face8564571404df1e5169a99ebb4894d55a401c"
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/timing-more-time-find-current.txt",
+      "snapshot": "inputs/34-timing-more-time-find-current.txt",
+      "bytes": 12872,
+      "sha256": "036cc98715445291d4c7645bad094800775cc0e0f62024f67ea1971d86d74144"
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/timing-more-time-find-second.txt",
+      "snapshot": "inputs/35-timing-more-time-find-second.txt",
+      "bytes": 1983,
+      "sha256": "572bb1969ca6295ffa90b104f2029017c61550a912530c043bb5fe67782eeead"
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/timing-more-time-find-third.txt",
+      "snapshot": "inputs/36-timing-more-time-find-third.txt",
+      "bytes": 1554,
+      "sha256": "32aa41c4bbce8546c9549685ecc241db290d5079dd693cc39dd30f7ed468f2cc"
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/general-action-master-current.txt",
+      "snapshot": "inputs/37-general-action-master-current.txt",
+      "bytes": 16520,
+      "sha256": "7b702818a2ed61fb7f8c1bbdf8b0f58de616522a61954f2bcf2897e20d221cdf"
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/additional-native-directory-checks-v1.json",
+      "snapshot": "inputs/38-additional-native-directory-checks-v1.json",
+      "bytes": 2294,
+      "sha256": "7d6c90141560a90d3d4792f5963e1cd506141b8d1b113640658a138c546bba1a"
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/directory-close-current.txt",
+      "snapshot": "inputs/39-directory-close-current.txt",
+      "bytes": 23669,
+      "sha256": "a839a2a287197642e020f47576d2a271a2c38e80c8fbde435681045a4290754f"
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/directory-input-current.txt",
+      "snapshot": "inputs/40-directory-input-current.txt",
+      "bytes": 24456,
+      "sha256": "d5b36a32844f81b816b91680f5ecfe19de98065acc61eb660581b287f5ebcab4"
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/directory-search-current.txt",
+      "snapshot": "inputs/41-directory-search-current.txt",
+      "bytes": 23664,
+      "sha256": "63ce1b82d853837f07553ea733d10f1ef6ba42cfeda96dde534b55f75f298851"
+    },
+    {
+      "source": "output/research/b01-prototype-source-inventory-2026-10-13/directory-clear-current.txt",
+      "snapshot": "inputs/42-directory-clear-current.txt",
+      "bytes": 30073,
+      "sha256": "770745907a7b8198ec2b18c8fdc51b5df8c7e6676158e7f1fb6aede79000bb51"
+    }
+  ],
+  "receipt_target": "independent-review-native-preparation-v1.json",
+  "write_scope": "Only a new exclusive-create review receipt under this packet; no producer or canonical changes.",
+  "authority": "Project workflow requires assigning an independent reviewer for every material output; the active founder goal also requires independent review of material Phase1 definitions."
+}

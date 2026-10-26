@@ -1,0 +1,729 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "scope": "Producer-only metadata/source observation, not native or graph adoption",
+  "report_sha256": "e81b7570efc6903d4074151a61cfdca9060c02f5da59236bee353eddb1831462",
+  "package_count": 48,
+  "edge_count": 57,
+  "previous_45_package_records_unchanged": true,
+  "release_observations": {
+    "httpcore2": {
+      "evaluated": "2.13.1",
+      "registry_latest_observed": "2.13.1",
+      "classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "latest_observation_is_not_selection": true
+    },
+    "httpx2": {
+      "evaluated": "2.13.1",
+      "registry_latest_observed": "2.13.1",
+      "classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "latest_observation_is_not_selection": true
+    },
+    "truststore": {
+      "evaluated": "0.10.4",
+      "registry_latest_observed": "0.10.4",
+      "classifiers": [
+        "Development Status :: 5 - Production/Stable"
+      ],
+      "latest_observation_is_not_selection": true
+    }
+  },
+  "httpx2_source_commit": "d91c9f4236523eb5978ca800944fa0078f17409f",
+  "httpx2_release": {
+    "tag": "v2.13.1",
+    "draft": false,
+    "prerelease": false
+  },
+  "package_records": [
+    {
+      "name": "alembic",
+      "version": "1.20.0",
+      "wheel": "alembic-1.20.0-py3-none-any.whl",
+      "sha256": "77eb101048d95f982c0353e9233404889dcd7a6fc244c107836c0e2fc9cf7d9d",
+      "bytes": 268719,
+      "extras": []
+    },
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5",
+      "wheel": "annotated_doc-0.0.5-py3-none-any.whl",
+      "sha256": "117bac03a25ede5df5440e855b32d556049ca169ead221505badf432fed4b101",
+      "bytes": 5302,
+      "extras": []
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "wheel": "annotated_types-0.8.0-py3-none-any.whl",
+      "sha256": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0",
+      "bytes": 13427,
+      "extras": []
+    },
+    {
+      "name": "anyio",
+      "version": "4.15.1",
+      "wheel": "anyio-4.15.1-py3-none-any.whl",
+      "sha256": "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101",
+      "bytes": 132079,
+      "extras": []
+    },
+    {
+      "name": "authlib",
+      "version": "1.8.0",
+      "wheel": "authlib-1.8.0-py2.py3-none-any.whl",
+      "sha256": "88aebbd9af6757e14e912d5dc007ae1dc1f3e27e3b2152ce7c552ee2c3b3c121",
+      "bytes": 260804,
+      "extras": []
+    },
+    {
+      "name": "bcrypt",
+      "version": "5.0.0",
+      "wheel": "bcrypt-5.0.0-cp39-abi3-win_amd64.whl",
+      "sha256": "64ee8434b0da054d830fa8e89e1c8bf30061d539044a39524ff7dec90481e5c2",
+      "bytes": 150912,
+      "extras": []
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "wheel": "certifi-2026.7.22-py3-none-any.whl",
+      "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775",
+      "bytes": 136983,
+      "extras": []
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "wheel": "cffi-2.1.1-cp314-cp314-win_amd64.whl",
+      "sha256": "3222ba5d678f80a030e6afbcc33dc1ae5cb45facabb61cee2c7016b8432fde48",
+      "bytes": 187949,
+      "extras": []
+    },
+    {
+      "name": "click",
+      "version": "8.5.0",
+      "wheel": "click-8.5.0-py3-none-any.whl",
+      "sha256": "255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360",
+      "bytes": 125251,
+      "extras": []
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "wheel": "colorama-0.4.6-py2.py3-none-any.whl",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "bytes": 25335,
+      "extras": []
+    },
+    {
+      "name": "cryptography",
+      "version": "50.0.2",
+      "wheel": "cryptography-50.0.2-cp311-abi3-win_amd64.whl",
+      "sha256": "7afa5a6602a9f29af1f3a2965f831bae7c9d5d597b7cbb716d41ab3b7d89879c",
+      "bytes": 3824692,
+      "extras": []
+    },
+    {
+      "name": "dnspython",
+      "version": "2.8.0",
+      "wheel": "dnspython-2.8.0-py3-none-any.whl",
+      "sha256": "01d9bbc4a2d76bf0db7c1f729812ded6d912bd318d3b1cf81d30c0f845dbf3af",
+      "bytes": 331094,
+      "extras": []
+    },
+    {
+      "name": "email-validator",
+      "version": "2.3.0",
+      "wheel": "email_validator-2.3.0-py3-none-any.whl",
+      "sha256": "80f13f623413e6b197ae73bb10bf4eb0908faf509ad8362c5edeb0be7fd450b4",
+      "bytes": 35604,
+      "extras": []
+    },
+    {
+      "name": "fastapi",
+      "version": "0.143.0",
+      "wheel": "fastapi-0.143.0-py3-none-any.whl",
+      "sha256": "3e9395fd35276425b61b516a31fdd7c77fe2af83e41b4da22e30696fb1304c5d",
+      "bytes": 144665,
+      "extras": []
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "wheel": "h11-0.16.0-py3-none-any.whl",
+      "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+      "bytes": 37515,
+      "extras": []
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9",
+      "wheel": "httpcore-1.0.9-py3-none-any.whl",
+      "sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+      "bytes": 78784,
+      "extras": []
+    },
+    {
+      "name": "httpcore2",
+      "version": "2.13.1",
+      "wheel": "httpcore2-2.13.1-py3-none-any.whl",
+      "sha256": "e1e05d4f25f7d7d496bfb96748f6f4b67657b03da069b3a68c36069f3db73d0a",
+      "bytes": 83423,
+      "extras": []
+    },
+    {
+      "name": "httptools",
+      "version": "0.8.0",
+      "wheel": "httptools-0.8.0-cp314-cp314-win_amd64.whl",
+      "sha256": "19d1ee275bb59ba2643ba9a3a1e51cc0c788caf2b8df506368e03f56fdd08527",
+      "bytes": 92705,
+      "extras": []
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1",
+      "wheel": "httpx-0.28.1-py3-none-any.whl",
+      "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+      "bytes": 73517,
+      "extras": []
+    },
+    {
+      "name": "httpx2",
+      "version": "2.13.1",
+      "wheel": "httpx2-2.13.1-py3-none-any.whl",
+      "sha256": "6dff50fabc270ee5fd25d845d0b078ed20564579744d6d962850975996d2f9a4",
+      "bytes": 95597,
+      "extras": []
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "wheel": "idna-3.20-py3-none-any.whl",
+      "sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c",
+      "bytes": 69583,
+      "extras": []
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1",
+      "wheel": "iniconfig-2.3.1-py3-none-any.whl",
+      "sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7",
+      "bytes": 7552,
+      "extras": []
+    },
+    {
+      "name": "joserfc",
+      "version": "1.7.5",
+      "wheel": "joserfc-1.7.5-py3-none-any.whl",
+      "sha256": "add2c2c84e8373b084d526a8b53daba5d7a513a118cd2dcd9fc9f979d0922159",
+      "bytes": 71269,
+      "extras": []
+    },
+    {
+      "name": "mako",
+      "version": "1.4.3",
+      "wheel": "mako-1.4.3-py3-none-any.whl",
+      "sha256": "723296007c870bfd6b3f0c3230dba7198096e5269297ebf5e4eff9e7ffa39d4f",
+      "bytes": 80164,
+      "extras": []
+    },
+    {
+      "name": "markupsafe",
+      "version": "3.0.4",
+      "wheel": "markupsafe-3.0.4-cp314-cp314-win_amd64.whl",
+      "sha256": "c1bc67752d5f21013cfe430df4062441714eab79f65a6a05e01505957e9c35fe",
+      "bytes": 14501,
+      "extras": []
+    },
+    {
+      "name": "opentelemetry-api",
+      "version": "1.45.1",
+      "wheel": "opentelemetry_api-1.45.1-py3-none-any.whl",
+      "sha256": "b31553efa588ae44bc306f863c785c5333a9ecc091248c6ee68b4b6c87fdedfb",
+      "bytes": 60256,
+      "extras": []
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "wheel": "packaging-26.3-py3-none-any.whl",
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+      "bytes": 129956,
+      "extras": []
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0",
+      "wheel": "pluggy-1.6.0-py3-none-any.whl",
+      "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
+      "bytes": 20538,
+      "extras": []
+    },
+    {
+      "name": "psycopg",
+      "version": "3.3.6",
+      "wheel": "psycopg-3.3.6-py3-none-any.whl",
+      "sha256": "a1db9f7148b06a28606767efaca51fa6f9398c5c0a3810519be69d7000bdb631",
+      "bytes": 215490,
+      "extras": [
+        "binary"
+      ]
+    },
+    {
+      "name": "psycopg-binary",
+      "version": "3.3.6",
+      "wheel": "psycopg_binary-3.3.6-cp314-cp314-win_amd64.whl",
+      "sha256": "1fbd30e537dab22cafdf080608f10148fe2a5f3a61294ddb5113caac8a623840",
+      "bytes": 3755671,
+      "extras": []
+    },
+    {
+      "name": "pycparser",
+      "version": "3.1",
+      "wheel": "pycparser-3.1-py3-none-any.whl",
+      "sha256": "f09d358c840bd147b79e55f2bc494f18ea869dc897f5852a8f5766b74f787882",
+      "bytes": 48709,
+      "extras": []
+    },
+    {
+      "name": "pydantic",
+      "version": "2.14.0",
+      "wheel": "pydantic-2.14.0-py3-none-any.whl",
+      "sha256": "15fab1bea6f1dc5003b54fc2ecab230c1fd1dbade2acd4addc52d81e32416d4b",
+      "bytes": 487109,
+      "extras": []
+    },
+    {
+      "name": "pydantic-core",
+      "version": "2.50.0",
+      "wheel": "pydantic_core-2.50.0-cp314-cp314-win_amd64.whl",
+      "sha256": "63263d64884688554fb025a3906c7b00573980cfee75f9afeb86239d577384bc",
+      "bytes": 2170939,
+      "extras": []
+    },
+    {
+      "name": "pygments",
+      "version": "2.21.0",
+      "wheel": "pygments-2.21.0-py3-none-any.whl",
+      "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+      "bytes": 1250147,
+      "extras": []
+    },
+    {
+      "name": "pyjwt",
+      "version": "2.15.1",
+      "wheel": "pyjwt-2.15.1-py3-none-any.whl",
+      "sha256": "42d59d631f7768a1028a64c7ff581a9bf7519804daf91fc5b6c56e30eec5e193",
+      "bytes": 33860,
+      "extras": [
+        "crypto"
+      ]
+    },
+    {
+      "name": "pytest",
+      "version": "9.1.1",
+      "wheel": "pytest-9.1.1-py3-none-any.whl",
+      "sha256": "37a86b45efb9a47a61a36449063e8e18d0cab3161329fc099eb21783169c4f0c",
+      "bytes": 386536,
+      "extras": []
+    },
+    {
+      "name": "pytest-asyncio",
+      "version": "1.4.0",
+      "wheel": "pytest_asyncio-1.4.0-py3-none-any.whl",
+      "sha256": "933ca923a23075a87fb7070c0ec272a6848489824d887c85c812670932835aa1",
+      "bytes": 16930,
+      "extras": []
+    },
+    {
+      "name": "python-dotenv",
+      "version": "1.2.4",
+      "wheel": "python_dotenv-1.2.4-py3-none-any.whl",
+      "sha256": "42269a8a5b3fd54ffa6f3d84b18abed50064717576b4ecf03dc4a55d8aa04fdc",
+      "bytes": 23266,
+      "extras": []
+    },
+    {
+      "name": "pyyaml",
+      "version": "6.0.3",
+      "wheel": "pyyaml-6.0.3-cp314-cp314-win_amd64.whl",
+      "sha256": "4a2e8cebe2ff6ab7d1050ecd59c25d4c8bd7e6f400f5f82b96557ac0abafd0ac",
+      "bytes": 156429,
+      "extras": []
+    },
+    {
+      "name": "sqlalchemy",
+      "version": "2.1.4",
+      "wheel": "sqlalchemy-2.1.4-cp314-cp314-win_amd64.whl",
+      "sha256": "080f8d853aac5bb5620f0ae6f46527397cf18dce0ec2b478b478469ef3cae2c4",
+      "bytes": 2431689,
+      "extras": []
+    },
+    {
+      "name": "starlette",
+      "version": "1.7.0",
+      "wheel": "starlette-1.7.0-py3-none-any.whl",
+      "sha256": "67f8e99895493dd2911a03f11314af6ceebeae4e704bb9f43dfc6a9db151c93e",
+      "bytes": 78980,
+      "extras": []
+    },
+    {
+      "name": "truststore",
+      "version": "0.10.4",
+      "wheel": "truststore-0.10.4-py3-none-any.whl",
+      "sha256": "adaeaecf1cbb5f4de3b1959b42d41f6fab57b2b1666adb59e89cb0b53361d981",
+      "bytes": 18660,
+      "extras": []
+    },
+    {
+      "name": "typing-extensions",
+      "version": "4.16.0",
+      "wheel": "typing_extensions-4.16.0-py3-none-any.whl",
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+      "bytes": 45571,
+      "extras": []
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "wheel": "typing_inspection-0.4.4-py3-none-any.whl",
+      "sha256": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147",
+      "bytes": 14750,
+      "extras": []
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.5",
+      "wheel": "tzdata-2026.5-py2.py3-none-any.whl",
+      "sha256": "b683bd1b6659ddcd810ff02ad09ba821d4bf1065072805063eb35c49617905ac",
+      "bytes": 347996,
+      "extras": []
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.54.0",
+      "wheel": "uvicorn-0.54.0-py3-none-any.whl",
+      "sha256": "505bdb0f318731d45f1f712071fc781a8981f6847a31c902c9f5e652d4f67faf",
+      "bytes": 87427,
+      "extras": [
+        "standard"
+      ]
+    },
+    {
+      "name": "watchfiles",
+      "version": "1.3.0",
+      "wheel": "watchfiles-1.3.0-cp310-abi3-win_amd64.whl",
+      "sha256": "1acabde19b67e673274e89a04d613b7fb1f122e2c4b8ec9a581e59c149264b61",
+      "bytes": 290643,
+      "extras": []
+    },
+    {
+      "name": "websockets",
+      "version": "17.2",
+      "wheel": "websockets-17.2-cp314-cp314-win_amd64.whl",
+      "sha256": "dac93bf7a9beb215be3282b8441173cd50806c41c007b8be9bb24e03c60ad563",
+      "bytes": 218104,
+      "extras": []
+    }
+  ],
+  "edges": [
+    [
+      "alembic",
+      "mako",
+      "Mako"
+    ],
+    [
+      "alembic",
+      "sqlalchemy",
+      "SQLAlchemy>=2.0"
+    ],
+    [
+      "alembic",
+      "typing-extensions",
+      "typing-extensions>=4.12"
+    ],
+    [
+      "anyio",
+      "idna",
+      "idna>=2.8"
+    ],
+    [
+      "anyio",
+      "typing-extensions",
+      "typing_extensions>=4.16.0; python_version < \"3.15\""
+    ],
+    [
+      "authlib",
+      "cryptography",
+      "cryptography>=45.0.1"
+    ],
+    [
+      "authlib",
+      "joserfc",
+      "joserfc>=1.6.1"
+    ],
+    [
+      "cffi",
+      "pycparser",
+      "pycparser; implementation_name != \"PyPy\""
+    ],
+    [
+      "cryptography",
+      "cffi",
+      "cffi>=2.0.0 ; platform_python_implementation != 'PyPy'"
+    ],
+    [
+      "email-validator",
+      "dnspython",
+      "dnspython>=2.0.0"
+    ],
+    [
+      "email-validator",
+      "idna",
+      "idna>=2.0.0"
+    ],
+    [
+      "fastapi",
+      "annotated-doc",
+      "annotated-doc>=0.0.2"
+    ],
+    [
+      "fastapi",
+      "opentelemetry-api",
+      "opentelemetry-api>=1.44.0"
+    ],
+    [
+      "fastapi",
+      "pydantic",
+      "pydantic>=2.9.0"
+    ],
+    [
+      "fastapi",
+      "starlette",
+      "starlette>=0.46.0"
+    ],
+    [
+      "fastapi",
+      "typing-extensions",
+      "typing-extensions>=4.8.0"
+    ],
+    [
+      "fastapi",
+      "typing-inspection",
+      "typing-inspection>=0.4.2"
+    ],
+    [
+      "httpcore",
+      "certifi",
+      "certifi"
+    ],
+    [
+      "httpcore",
+      "h11",
+      "h11>=0.16"
+    ],
+    [
+      "httpcore2",
+      "h11",
+      "h11>=0.16"
+    ],
+    [
+      "httpcore2",
+      "truststore",
+      "truststore>=0.10"
+    ],
+    [
+      "httpx",
+      "anyio",
+      "anyio"
+    ],
+    [
+      "httpx",
+      "certifi",
+      "certifi"
+    ],
+    [
+      "httpx",
+      "httpcore",
+      "httpcore==1.*"
+    ],
+    [
+      "httpx",
+      "idna",
+      "idna"
+    ],
+    [
+      "httpx2",
+      "anyio",
+      "anyio>=4.10; sys_platform != 'emscripten'"
+    ],
+    [
+      "httpx2",
+      "httpcore2",
+      "httpcore2==2.13.1; sys_platform != 'emscripten'"
+    ],
+    [
+      "httpx2",
+      "idna",
+      "idna>=3.18"
+    ],
+    [
+      "httpx2",
+      "truststore",
+      "truststore>=0.10; sys_platform != 'emscripten'"
+    ],
+    [
+      "joserfc",
+      "cryptography",
+      "cryptography>=45.0.1"
+    ],
+    [
+      "mako",
+      "markupsafe",
+      "MarkupSafe>=2.0"
+    ],
+    [
+      "opentelemetry-api",
+      "typing-extensions",
+      "typing-extensions>=4.5.0"
+    ],
+    [
+      "psycopg",
+      "psycopg-binary",
+      "psycopg-binary==3.3.6; implementation_name != \"pypy\" and extra == \"binary\""
+    ],
+    [
+      "psycopg",
+      "tzdata",
+      "tzdata; sys_platform == \"win32\""
+    ],
+    [
+      "pydantic",
+      "annotated-types",
+      "annotated-types>=0.6.0"
+    ],
+    [
+      "pydantic",
+      "pydantic-core",
+      "pydantic-core==2.50.0"
+    ],
+    [
+      "pydantic",
+      "typing-extensions",
+      "typing-extensions>=4.16.0"
+    ],
+    [
+      "pydantic",
+      "typing-inspection",
+      "typing-inspection>=0.4.4"
+    ],
+    [
+      "pydantic-core",
+      "typing-extensions",
+      "typing-extensions>=4.16.0"
+    ],
+    [
+      "pyjwt",
+      "cryptography",
+      "cryptography>=3.4.0; extra == \"crypto\""
+    ],
+    [
+      "pytest",
+      "colorama",
+      "colorama>=0.4; sys_platform == \"win32\""
+    ],
+    [
+      "pytest",
+      "iniconfig",
+      "iniconfig>=1.0.1"
+    ],
+    [
+      "pytest",
+      "packaging",
+      "packaging>=22"
+    ],
+    [
+      "pytest",
+      "pluggy",
+      "pluggy<2,>=1.5"
+    ],
+    [
+      "pytest",
+      "pygments",
+      "pygments>=2.7.2"
+    ],
+    [
+      "pytest-asyncio",
+      "pytest",
+      "pytest<10,>=8.4"
+    ],
+    [
+      "sqlalchemy",
+      "typing-extensions",
+      "typing-extensions>=4.6.0"
+    ],
+    [
+      "starlette",
+      "anyio",
+      "anyio<5,>=4.0.0"
+    ],
+    [
+      "typing-inspection",
+      "typing-extensions",
+      "typing-extensions>=4.15.0"
+    ],
+    [
+      "uvicorn",
+      "click",
+      "click>=7.0"
+    ],
+    [
+      "uvicorn",
+      "h11",
+      "h11>=0.8"
+    ],
+    [
+      "uvicorn",
+      "httptools",
+      "httptools>=0.8.0; extra == 'standard'"
+    ],
+    [
+      "uvicorn",
+      "python-dotenv",
+      "python-dotenv>=0.13; extra == 'standard'"
+    ],
+    [
+      "uvicorn",
+      "pyyaml",
+      "pyyaml>=5.1; extra == 'standard'"
+    ],
+    [
+      "uvicorn",
+      "watchfiles",
+      "watchfiles>=0.20; extra == 'standard'"
+    ],
+    [
+      "uvicorn",
+      "websockets",
+      "websockets>=13.0; extra == 'standard'"
+    ],
+    [
+      "watchfiles",
+      "anyio",
+      "anyio>=3.0.0"
+    ]
+  ],
+  "compressed_registry_bytes": 18637082,
+  "installation_performed": false,
+  "protected_inputs_unchanged": true,
+  "limits": [
+    "Stable-looking versions/classifiers, source tags and peer/marker closure do not prove full support, provenance, licence or native compatibility.",
+    "HTTPX and HTTPX2 remain distinct type hierarchies; no alias or global TLS injection selected.",
+    "The approved executed native trial remains 43 packages; this enlarged graph has no installation permission.",
+    "No complete latest-mutually-compatible graph, OIDC, TLS trust behavior or Hengshi adoption acceptance."
+  ]
+}

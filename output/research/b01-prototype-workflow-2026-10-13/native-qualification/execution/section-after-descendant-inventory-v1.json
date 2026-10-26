@@ -1,0 +1,314 @@
+[
+  {
+    "name": "B01 / Native host-variant qualification / v1",
+    "level": 0,
+    "testId": "101:3204-layers-panel-row",
+    "parent": null
+  },
+  {
+    "name": "B01 native qualification / preview / v1",
+    "level": 1,
+    "testId": "94:3199-layers-panel-row",
+    "parent": "101:3204-layers-panel-row"
+  },
+  {
+    "name": "B01 native qualification / host state / v1",
+    "level": 1,
+    "testId": "85:3174-layers-panel-row",
+    "parent": "101:3204-layers-panel-row"
+  },
+  {
+    "name": "HIGH, HIGH, OPEN",
+    "level": 2,
+    "testId": "85:3301-layers-panel-row",
+    "parent": "85:3174-layers-panel-row"
+  },
+  {
+    "name": "Context summary / fixed Services and design fixture",
+    "level": 3,
+    "testId": "85:3305-layers-panel-row",
+    "parent": "85:3301-layers-panel-row"
+  },
+  {
+    "name": "Underlying Services fixture (unwired while modal open)",
+    "level": 3,
+    "testId": "85:3304-layers-panel-row",
+    "parent": "85:3301-layers-panel-row"
+  },
+  {
+    "name": "Book a conversation",
+    "level": 4,
+    "testId": "94:1005-layers-panel-row",
+    "parent": "85:3304-layers-panel-row"
+  },
+  {
+    "name": "Directory action",
+    "level": 3,
+    "testId": "85:3303-layers-panel-row",
+    "parent": "85:3301-layers-panel-row"
+  },
+  {
+    "name": "Book a conversation",
+    "level": 4,
+    "testId": "94:219-layers-panel-row",
+    "parent": "85:3303-layers-panel-row"
+  },
+  {
+    "name": "PRIM-001 / Delivery stream control / B01 v1",
+    "level": 3,
+    "testId": "85:3508-layers-panel-row",
+    "parent": "85:3301-layers-panel-row"
+  },
+  {
+    "name": "Delivery stream — currently Detailed 3D",
+    "level": 4,
+    "testId": "85:3509-layers-panel-row",
+    "parent": "85:3508-layers-panel-row"
+  },
+  {
+    "name": "Native-radio appearance reference / S-HIGH",
+    "level": 4,
+    "testId": "85:3510-layers-panel-row",
+    "parent": "85:3508-layers-panel-row"
+  },
+  {
+    "name": "● Detailed 3D",
+    "level": 5,
+    "testId": "85:3511-layers-panel-row",
+    "parent": "85:3510-layers-panel-row"
+  },
+  {
+    "name": "Native-radio appearance reference / S-MEDIUM",
+    "level": 4,
+    "testId": "85:3512-layers-panel-row",
+    "parent": "85:3508-layers-panel-row"
+  },
+  {
+    "name": "○ Balanced 3D",
+    "level": 5,
+    "testId": "85:3513-layers-panel-row",
+    "parent": "85:3512-layers-panel-row"
+  },
+  {
+    "name": "Native-radio appearance reference / S-LOW",
+    "level": 4,
+    "testId": "85:3514-layers-panel-row",
+    "parent": "85:3508-layers-panel-row"
+  },
+  {
+    "name": "○ Simplified 3D",
+    "level": 5,
+    "testId": "85:3515-layers-panel-row",
+    "parent": "85:3514-layers-panel-row"
+  },
+  {
+    "name": "Native-radio appearance reference / S-SEMANTIC",
+    "level": 4,
+    "testId": "85:3516-layers-panel-row",
+    "parent": "85:3508-layers-panel-row"
+  },
+  {
+    "name": "○ Quick Access",
+    "level": 5,
+    "testId": "85:3517-layers-panel-row",
+    "parent": "85:3516-layers-panel-row"
+  },
+  {
+    "name": "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.",
+    "level": 4,
+    "testId": "85:3518-layers-panel-row",
+    "parent": "85:3508-layers-panel-row"
+  },
+  {
+    "name": "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.",
+    "level": 4,
+    "testId": "85:3519-layers-panel-row",
+    "parent": "85:3508-layers-panel-row"
+  },
+  {
+    "name": "PRIM-015 / General action button / base",
+    "level": 4,
+    "testId": "85:3520-layers-panel-row",
+    "parent": "85:3508-layers-panel-row"
+  },
+  {
+    "name": "Book a conversation",
+    "level": 5,
+    "testId": "94:831-layers-panel-row",
+    "parent": "85:3520-layers-panel-row"
+  },
+  {
+    "name": "Privacy and storage",
+    "level": 4,
+    "testId": "85:3521-layers-panel-row",
+    "parent": "85:3508-layers-panel-row"
+  },
+  {
+    "name": "HIGH, HIGH, CLOSED",
+    "level": 2,
+    "testId": "85:3280-layers-panel-row",
+    "parent": "85:3174-layers-panel-row"
+  },
+  {
+    "name": "MEDIUM, HIGH, CLOSED",
+    "level": 2,
+    "testId": "85:3259-layers-panel-row",
+    "parent": "85:3174-layers-panel-row"
+  },
+  {
+    "name": "MEDIUM, HIGH, OPEN",
+    "level": 2,
+    "testId": "85:3238-layers-panel-row",
+    "parent": "85:3174-layers-panel-row"
+  },
+  {
+    "name": "MEDIUM, MEDIUM, OPEN",
+    "level": 2,
+    "testId": "85:3217-layers-panel-row",
+    "parent": "85:3174-layers-panel-row"
+  },
+  {
+    "name": "MEDIUM, MEDIUM, CLOSED",
+    "level": 2,
+    "testId": "85:3196-layers-panel-row",
+    "parent": "85:3174-layers-panel-row"
+  },
+  {
+    "name": "HIGH, MEDIUM, CLOSED",
+    "level": 2,
+    "testId": "85:3175-layers-panel-row",
+    "parent": "85:3174-layers-panel-row"
+  },
+  {
+    "name": "HIGH, MEDIUM, OPEN",
+    "level": 2,
+    "testId": "85:3173-layers-panel-row",
+    "parent": "85:3174-layers-panel-row"
+  },
+  {
+    "name": "B01 native qualification / host state / v1",
+    "level": 2,
+    "testId": "94:3177-layers-panel-row",
+    "parent": "94:3199-layers-panel-row"
+  },
+  {
+    "name": "Context summary / fixed Services and design fixture",
+    "level": 3,
+    "testId": "94:3198-layers-panel-row",
+    "parent": "94:3177-layers-panel-row"
+  },
+  {
+    "name": "Underlying Services fixture (unwired while modal open)",
+    "level": 3,
+    "testId": "94:3196-layers-panel-row",
+    "parent": "94:3177-layers-panel-row"
+  },
+  {
+    "name": "Directory action",
+    "level": 3,
+    "testId": "94:3194-layers-panel-row",
+    "parent": "94:3177-layers-panel-row"
+  },
+  {
+    "name": "PRIM-001 / Delivery stream control / B01 v1",
+    "level": 3,
+    "testId": "94:3179-layers-panel-row",
+    "parent": "94:3177-layers-panel-row"
+  },
+  {
+    "name": "Book a conversation",
+    "level": 4,
+    "testId": "94:3197-layers-panel-row",
+    "parent": "94:3196-layers-panel-row"
+  },
+  {
+    "name": "Book a conversation",
+    "level": 4,
+    "testId": "94:3195-layers-panel-row",
+    "parent": "94:3194-layers-panel-row"
+  },
+  {
+    "name": "Delivery stream — currently Detailed 3D",
+    "level": 4,
+    "testId": "94:3180-layers-panel-row",
+    "parent": "94:3179-layers-panel-row"
+  },
+  {
+    "name": "Native-radio appearance reference / S-HIGH",
+    "level": 4,
+    "testId": "94:3181-layers-panel-row",
+    "parent": "94:3179-layers-panel-row"
+  },
+  {
+    "name": "Native-radio appearance reference / S-MEDIUM",
+    "level": 4,
+    "testId": "94:3183-layers-panel-row",
+    "parent": "94:3179-layers-panel-row"
+  },
+  {
+    "name": "Native-radio appearance reference / S-LOW",
+    "level": 4,
+    "testId": "94:3185-layers-panel-row",
+    "parent": "94:3179-layers-panel-row"
+  },
+  {
+    "name": "Native-radio appearance reference / S-SEMANTIC",
+    "level": 4,
+    "testId": "94:3187-layers-panel-row",
+    "parent": "94:3179-layers-panel-row"
+  },
+  {
+    "name": "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.",
+    "level": 4,
+    "testId": "94:3189-layers-panel-row",
+    "parent": "94:3179-layers-panel-row"
+  },
+  {
+    "name": "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.",
+    "level": 4,
+    "testId": "94:3190-layers-panel-row",
+    "parent": "94:3179-layers-panel-row"
+  },
+  {
+    "name": "PRIM-015 / General action button / base",
+    "level": 4,
+    "testId": "94:3191-layers-panel-row",
+    "parent": "94:3179-layers-panel-row"
+  },
+  {
+    "name": "Privacy and storage",
+    "level": 4,
+    "testId": "94:3193-layers-panel-row",
+    "parent": "94:3179-layers-panel-row"
+  },
+  {
+    "name": "○ Detailed 3D",
+    "level": 5,
+    "testId": "94:3182-layers-panel-row",
+    "parent": "94:3181-layers-panel-row"
+  },
+  {
+    "name": "● Balanced 3D",
+    "level": 5,
+    "testId": "94:3184-layers-panel-row",
+    "parent": "94:3183-layers-panel-row"
+  },
+  {
+    "name": "○ Simplified 3D",
+    "level": 5,
+    "testId": "94:3186-layers-panel-row",
+    "parent": "94:3185-layers-panel-row"
+  },
+  {
+    "name": "○ Quick Access",
+    "level": 5,
+    "testId": "94:3188-layers-panel-row",
+    "parent": "94:3187-layers-panel-row"
+  },
+  {
+    "name": "Book a conversation",
+    "level": 5,
+    "testId": "94:3192-layers-panel-row",
+    "parent": "94:3191-layers-panel-row"
+  }
+]

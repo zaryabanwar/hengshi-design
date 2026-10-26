@@ -1,0 +1,69 @@
+{
+  "sources": [
+    "https://react.dev/reference/eslint-plugin-react-hooks/lints/purity",
+    "https://react.dev/reference/eslint-plugin-react-hooks/lints/static-components"
+  ],
+  "records": [
+    {
+      "case": "compiler-purity-invalid",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/compiler-purity-invalid.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0"
+      ],
+      "expected_rule": "react-hooks/purity",
+      "exit_code": 1,
+      "rules": [
+        "react-hooks/purity"
+      ],
+      "oracle_match": true,
+      "scope": "focused current compiler diagnostic only, not full deprecated-rule replacement proof"
+    },
+    {
+      "case": "compiler-purity-valid",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/compiler-purity-valid.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0"
+      ],
+      "expected_rule": null,
+      "exit_code": 0,
+      "rules": [],
+      "oracle_match": true,
+      "scope": "focused current compiler diagnostic only, not full deprecated-rule replacement proof"
+    },
+    {
+      "case": "compiler-static-component-invalid",
+      "command": [
+        "C:/nvm4w/nodejs/node.exe",
+        "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\eslint\\bin\\eslint.js",
+        "fixtures/compiler-static-component-invalid.tsx",
+        "--config",
+        "eslint.guarded.config.mjs",
+        "--format",
+        "json",
+        "--max-warnings",
+        "0"
+      ],
+      "expected_rule": "react-hooks/static-components",
+      "exit_code": 1,
+      "rules": [
+        "react-hooks/static-components"
+      ],
+      "oracle_match": true,
+      "scope": "focused current compiler diagnostic only, not full deprecated-rule replacement proof"
+    }
+  ]
+}

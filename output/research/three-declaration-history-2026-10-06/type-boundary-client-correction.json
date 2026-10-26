@@ -1,0 +1,5 @@
+{
+  "cause": "External probe tsconfig resolves explicit type references relative to new location, missing vite/client, react and react-dom. Initial run only reported TS2688 and cannot support library compatibility claims.",
+  "correction": "Explicitly anchor unchanged candidate type roots and vite/client declaration while preserving selected type-source substitution. Reused archive extraction must byte-match every retained member.",
+  "initial_runner_configs_and_logs_preserved": true
+}

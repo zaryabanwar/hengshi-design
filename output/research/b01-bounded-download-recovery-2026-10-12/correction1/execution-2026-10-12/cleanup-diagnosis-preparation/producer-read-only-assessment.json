@@ -1,0 +1,14 @@
+{
+  "product": "Hengshi Design v1",
+  "source_sha256": "18403ea31224110b4d18fa777010519199312c3daa2844dd426a3f23790f2167",
+  "syntax": "PASS parsed, not invoked",
+  "read_only_checks": [
+    "No create, clone, append, remove, edit, style/variable/token/account/sharing/network APIs in this source.",
+    "Reads one existing page/root/sheet and bounded IDs/metadata; setCurrentPageAsync only selects page context.",
+    "Every await is awaited; final current snapshot follows expected-ID lookups; no data mutations or screenshot requested.",
+    "Output18KB and traversal512 bounds; no truncation, aliases/ownership/cause not assumed."
+  ],
+  "independent_verdict": "NONE; reviewer credit failure preserved",
+  "authority": "Contract individually approved read-only capability/diagnostic route; per-call approval/allowance still required; no UI/phase self-approval",
+  "account_billing_verified": false
+}

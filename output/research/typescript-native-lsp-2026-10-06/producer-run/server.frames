@@ -1,0 +1,25 @@
+Content-Length: 280
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Resolved client capabilities: {\n\t\"workspace\": {\n\t\t\"diagnostics\": {\n\t\t\t\"refreshSupport\": true\n\t\t}\n\t},\n\t\"general\": {\n\t\t\"positionEncodings\": [\n\t\t\t\"utf-16\"\n\t\t]\n\t}\n}"}}Content-Length: 1755
+
+{"jsonrpc":"2.0","id":1,"result":{"capabilities":{"positionEncoding":"utf-16","textDocumentSync":{"openClose":true,"change":2,"save":true},"completionProvider":{"triggerCharacters":[".","\"","'","`","/","@","<","#"," ","*"],"resolveProvider":true,"completionItem":{"labelDetailsSupport":true}},"hoverProvider":true,"signatureHelpProvider":{"triggerCharacters":["(",",","<"],"retriggerCharacters":[")"]},"definitionProvider":true,"typeDefinitionProvider":true,"implementationProvider":true,"referencesProvider":true,"documentHighlightProvider":true,"documentSymbolProvider":true,"codeActionProvider":{"codeActionKinds":["quickfix","source.organizeImports","source.removeUnusedImports","source.sortImports","source.fixAll"]},"codeLensProvider":{"resolveProvider":true},"workspaceSymbolProvider":true,"documentFormattingProvider":true,"documentRangeFormattingProvider":true,"documentOnTypeFormattingProvider":{"firstTriggerCharacter":"{","moreTriggerCharacter":["}",";","\n"]},"renameProvider":{"prepareProvider":true},"foldingRangeProvider":true,"selectionRangeProvider":true,"callHierarchyProvider":true,"linkedEditingRangeProvider":true,"semanticTokensProvider":{"legend":{"tokenTypes":[],"tokenModifiers":[]},"range":true,"full":true},"inlayHintProvider":true,"diagnosticProvider":{"identifier":"typescript","interFileDependencies":true,"workspaceDiagnostics":false},"workspace":{"fileOperations":{"willRename":{"filters":[{"scheme":"file","pattern":{"glob":"**/*.{ts,tsx,js,jsx,cts,cjs,mts,mjs,json}"}}]}}},"experimental":{"customSourceDefinitionProvider":true,"customMultiDocumentHighlightProvider":true},"_vs_onAutoInsertProvider":{"_vs_triggerCharacters":[">"]},"_vs_referencesProvider":true},"serverInfo":{"name":"typescript-go","version":"7.0.2"}}}Content-Length: 168
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"file watching: using builtin in-process watcher (client lacks dynamic watch registration)"}}Content-Length: 249
+
+{"jsonrpc":"2.0","id":"ts1","method":"client/registerCapability","params":{"registrations":[{"id":"typescript-config-watch-id","method":"workspace/didChangeConfiguration","registerOptions":{"section":["js/ts","typescript","javascript","editor"]}}]}}Content-Length: 227
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":1,"message":"error handling method 'initialized': failed to register configuration change watcher: request failed: [-32601]: Not supported by finite probe client"}}Content-Length: 219
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":1,"message":"error handling notification: failed to register configuration change watcher: request failed: [-32601]: Not supported by finite probe client"}}Content-Length: 109
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Processed 1 file changes in 0s"}}Content-Length: 129
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'textDocument/didOpen' in 69.8342ms"}}Content-Length: 150
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Adopted snapshot 1 (parent 0) as current session snapshot (replacing 0)"}}Content-Length: 150
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"Adopted snapshot 2 (parent 1) as current session snapshot (replacing 1)"}}Content-Length: 38
+
+{"jsonrpc":"2.0","id":3,"result":null}Content-Length: 114
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"handled method 'shutdown' (3) in 0s"}}

@@ -1,0 +1,66 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "external_calls": 0,
+  "created_figma_nodes": 0,
+  "independent_review": "TODO",
+  "scope": "48 shared narrow grammar specimens; not complete host-template coverage",
+  "fixture_count": 16,
+  "surface_count": 3,
+  "annotation_count_planned": 48,
+  "new_components_planned": 0,
+  "new_variables_planned": 0,
+  "new_styles_planned": 0,
+  "input_path": "output/research/b01-recovery-preparation-2026-10-06/fixture-inputs.json",
+  "fixture_sha256": "cc0236cf2bdc27a6dcfbe7b43b3190eaa42694afcba8377b0e267c8a6ab43c4e",
+  "directory_input_sha256": "8cf9d33b91b6d4af843fbc19a1b720284a66cdd4c89df20f5abec43dbcda3ac6",
+  "script_sha256": "891377556b7afd2c62533f7342bb9744178325c32949396fdf80e85a998e4bba",
+  "current_source_identities": [
+    {
+      "path": "docs/phase-1-ux-architecture/STATES_AND_RECOVERY.md",
+      "sha256": "fa3322d864dc8c29d2f7853d6dc9a961126f7a8aea2b575505997d05c3297064",
+      "matches_historical_fixture_input": true
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "sha256": "6fa43937ae5e590b31e4fc21ea9e1209d3bfcdf145a6698d2429125213166dec",
+      "matches_historical_fixture_input": true
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb",
+      "matches_historical_fixture_input": true
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "sha256": "fafea73bdcedcf3057d504b98514f5796b331bf0184d30d10a165aae754e336f",
+      "matches_historical_fixture_input": true
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "sha256": "2b543fbf8c00e244f705d0931bacb76f8a2405d2bbb9bb4e1593a28fa86d87f8",
+      "matches_historical_fixture_input": true
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "sha256": "bd75698b8611bcf08d64ef561b6136acd496361a86cf0cde11f341e3ecca5c20",
+      "matches_historical_fixture_input": false
+    },
+    {
+      "path": "output/research/b01-navigation-composition-2026-10-06/state-ledger.json",
+      "sha256": "f078e20b6fca5deec68a8876d83922d03064036aa797fb719cd6cae6d594da2b",
+      "matches_historical_fixture_input": true
+    }
+  ],
+  "historical_source_identity_changes": [
+    "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md"
+  ],
+  "prerequisites": [
+    "Inspect remaining eighteen navigation previews; existing call 14 approval is still pending.",
+    "Inspect any relevant changed/partial Figma checkpoint before execution; guards refuse an existing recovery root.",
+    "Independent review and immediate CB-06/CB-07 permission remain required; no future call number is assigned here.",
+    "The directory composition remains a separate unexecuted batch with its own immediate permission.",
+    "Full host/profile coverage, visual inspection, required reviews, exports, restore/_EXIT and founder pilot acceptance remain."
+  ],
+  "artifact_validation": "Source profile, state identities, surfaces and inherited master identities agree. JavaScript parsing is separate; no Figma/API/browser behavior is exercised."
+}

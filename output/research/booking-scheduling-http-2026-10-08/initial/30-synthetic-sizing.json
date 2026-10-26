@@ -1,0 +1,88 @@
+{
+  "scope": "Representative synthetic sizing only, not exhaustive maximum proof, compliant transport or measured capacity",
+  "python": "3.14.5",
+  "observations": [
+    {
+      "case": "96_slots_spelling_only",
+      "direction": "availability_response",
+      "shape_valid": true,
+      "compact_utf8_bytes": 13544,
+      "proposal_response_ceiling": 32768
+    },
+    {
+      "case": "book_review_escaped_controls",
+      "direction": "submission_response",
+      "shape_valid": true,
+      "compact_utf8_bytes": 20598,
+      "proposal_response_ceiling": 32768
+    },
+    {
+      "case": "reschedule_review_escaped_controls",
+      "direction": "reschedule_response",
+      "shape_valid": true,
+      "compact_utf8_bytes": 20871,
+      "proposal_response_ceiling": 32768
+    },
+    {
+      "case": "cancel_review_escaped_controls",
+      "direction": "cancellation_response",
+      "shape_valid": true,
+      "compact_utf8_bytes": 722,
+      "proposal_response_ceiling": 32768
+    },
+    {
+      "case": "prepare_selection",
+      "shape_valid": true,
+      "compact_utf8_bytes": 319,
+      "proposal_request_ceiling": 2048
+    },
+    {
+      "case": "prepare_reschedule",
+      "shape_valid": true,
+      "compact_utf8_bytes": 320,
+      "proposal_request_ceiling": 2048
+    },
+    {
+      "case": "prepare_cancellation",
+      "shape_valid": true,
+      "compact_utf8_bytes": 272,
+      "proposal_request_ceiling": 2048
+    },
+    {
+      "case": "submit_booking",
+      "shape_valid": true,
+      "compact_utf8_bytes": 168,
+      "proposal_request_ceiling": 2048
+    },
+    {
+      "case": "submit_reschedule",
+      "shape_valid": true,
+      "compact_utf8_bytes": 171,
+      "proposal_request_ceiling": 2048
+    },
+    {
+      "case": "cancel_booking",
+      "shape_valid": true,
+      "compact_utf8_bytes": 168,
+      "proposal_request_ceiling": 2048
+    },
+    {
+      "case": "reconcile_submission",
+      "shape_valid": true,
+      "compact_utf8_bytes": 85,
+      "proposal_request_ceiling": 1024
+    },
+    {
+      "case": "reconcile_reschedule",
+      "shape_valid": true,
+      "compact_utf8_bytes": 85,
+      "proposal_request_ceiling": 1024
+    },
+    {
+      "case": "reconcile_cancellation",
+      "shape_valid": true,
+      "compact_utf8_bytes": 87,
+      "proposal_request_ceiling": 1024
+    }
+  ]
+}

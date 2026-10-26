@@ -1,0 +1,59 @@
+[
+  {
+    "name": "msal",
+    "url": "https://pypi.org/pypi/msal/json",
+    "observed_utc": "2026-10-08T18:39:50.127695+00:00",
+    "raw_bytes": 129266,
+    "raw_sha256": "90ff3b6c5be9ecd5efd4015a0425b0a8068927e5b0db1d499f4c439bb0ba6653",
+    "snapshot": "msal-project.json.gz",
+    "snapshot_sha256": "f05df52cb7dd863aabfc60f0d9c79da2c78923f34fdbc725b52ff92e717653ba",
+    "observed_registry_version": "1.39.0",
+    "requires_python": ">=3.9",
+    "requires_dist": [
+      "requests<3,>=2.0.0",
+      "PyJWT[crypto]<3,>=1.0.0",
+      "cryptography<51,>=2.5",
+      "pymsalruntime<0.21,>=0.20; (python_version >= \"3.9\" and platform_system == \"Windows\") and extra == \"broker\"",
+      "pymsalruntime<0.21,>=0.20; (python_version >= \"3.9\" and platform_system == \"Darwin\") and extra == \"broker\"",
+      "pymsalruntime<0.21,>=0.20; (python_version >= \"3.9\" and platform_system == \"Linux\") and extra == \"broker\""
+    ],
+    "project_urls": {
+      "Changelog": "https://github.com/AzureAD/microsoft-authentication-library-for-python/releases",
+      "Documentation": "https://msal-python.readthedocs.io/",
+      "Feature/Bug Tracker": "https://github.com/AzureAD/microsoft-authentication-library-for-python/issues",
+      "Homepage": "https://github.com/AzureAD/microsoft-authentication-library-for-python",
+      "Questions": "https://stackoverflow.com/questions/tagged/azure-ad-msal+python"
+    },
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable"
+    ],
+    "selection": false
+  },
+  {
+    "name": "authlib",
+    "url": "https://pypi.org/pypi/authlib/json",
+    "observed_utc": "2026-10-08T18:39:50.259646+00:00",
+    "raw_bytes": 109009,
+    "raw_sha256": "c3c092e85450afaffa7cd5939fd18c561922c706dea8aa183f3fefb99900f035",
+    "snapshot": "authlib-project.json.gz",
+    "snapshot_sha256": "be4a3bb25dabba88677adee4525dff33447760af195b353c6ae06a234faae08b",
+    "observed_registry_version": "1.8.0",
+    "requires_python": ">=3.10",
+    "requires_dist": [
+      "cryptography>=45.0.1",
+      "joserfc>=1.6.1"
+    ],
+    "project_urls": {
+      "Blog": "https://blog.authlib.org/",
+      "Documentation": "https://docs.authlib.org/",
+      "Donate": "https://github.com/sponsors/lepture",
+      "Issues": "https://github.com/authlib/authlib/issues",
+      "Purchase": "https://authlib.org/plans",
+      "Source": "https://github.com/authlib/authlib"
+    },
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable"
+    ],
+    "selection": false
+  }
+]

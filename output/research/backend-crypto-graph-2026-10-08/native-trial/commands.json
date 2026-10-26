@@ -1,0 +1,155 @@
+[
+  {
+    "step": "01-host-identity",
+    "command": [
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-c",
+      "import sys,pip,json; assert sys.version_info[:3]==(3,14,5); assert pip.__version__==\"26.1.1\"; print(json.dumps({\"python\":sys.version,\"pip\":pip.__version__}))"
+    ],
+    "before": {
+      "retained_bytes": 1605,
+      "free_disk_bytes": 5483454464
+    },
+    "exit_code": 0,
+    "elapsed_seconds": 0.259,
+    "after": {
+      "retained_bytes": 1718,
+      "free_disk_bytes": 5483450368
+    }
+  },
+  {
+    "step": "02-create-pipless-venv",
+    "command": [
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "venv",
+      "--without-pip",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\backend-crypto-graph-2026-10-08\\native-trial\\environment"
+    ],
+    "before": {
+      "retained_bytes": 2317,
+      "free_disk_bytes": 5483454464
+    },
+    "exit_code": 0,
+    "elapsed_seconds": 0.455,
+    "after": {
+      "retained_bytes": 544938,
+      "free_disk_bytes": 5482885120
+    }
+  },
+  {
+    "step": "03-download-exact-wheels",
+    "command": [
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pip",
+      "--isolated",
+      "download",
+      "--require-hashes",
+      "--only-binary=:all:",
+      "--no-deps",
+      "--no-cache-dir",
+      "--disable-pip-version-check",
+      "--progress-bar",
+      "off",
+      "--index-url",
+      "https://pypi.org/simple",
+      "--dest",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\backend-crypto-graph-2026-10-08\\native-trial\\wheelhouse",
+      "-r",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\backend-crypto-graph-2026-10-08\\candidate-hashed-requirements.txt"
+    ],
+    "before": {
+      "retained_bytes": 545554,
+      "free_disk_bytes": 5482881024
+    },
+    "exit_code": 0,
+    "elapsed_seconds": 28.003,
+    "after": {
+      "retained_bytes": 18666400,
+      "free_disk_bytes": 5464322048
+    }
+  },
+  {
+    "step": "04-offline-install",
+    "command": [
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pip",
+      "--isolated",
+      "--python",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\backend-crypto-graph-2026-10-08\\native-trial\\environment\\Scripts\\python.exe",
+      "install",
+      "--no-index",
+      "--find-links",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\backend-crypto-graph-2026-10-08\\native-trial\\wheelhouse",
+      "--require-hashes",
+      "--only-binary=:all:",
+      "--no-deps",
+      "--no-cache-dir",
+      "--no-compile",
+      "--disable-pip-version-check",
+      "--progress-bar",
+      "off",
+      "-r",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\backend-crypto-graph-2026-10-08\\candidate-hashed-requirements.txt"
+    ],
+    "before": {
+      "retained_bytes": 18676377,
+      "free_disk_bytes": 5464203264
+    },
+    "exit_code": 0,
+    "elapsed_seconds": 18.124,
+    "after": {
+      "retained_bytes": 81637982,
+      "free_disk_bytes": 5395439616
+    }
+  },
+  {
+    "step": "05-pip-check",
+    "command": [
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pip",
+      "--isolated",
+      "--python",
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\backend-crypto-graph-2026-10-08\\native-trial\\environment\\Scripts\\python.exe",
+      "check",
+      "--disable-pip-version-check"
+    ],
+    "before": {
+      "retained_bytes": 81639204,
+      "free_disk_bytes": 5395439616
+    },
+    "exit_code": 0,
+    "elapsed_seconds": 5.626,
+    "after": {
+      "retained_bytes": 81639235,
+      "free_disk_bytes": 5395439616
+    }
+  },
+  {
+    "step": "06-installed-identities",
+    "command": [
+      "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\backend-crypto-graph-2026-10-08\\native-trial\\environment\\Scripts\\python.exe",
+      "-B",
+      "-c",
+      "import importlib.metadata as m,json; from pathlib import Path; d={x.metadata[\"Name\"].lower():x.version for x in m.distributions()}; Path(\"installed-identities.json\").write_text(json.dumps(d,sort_keys=True,indent=2)+\"\\n\"); print(json.dumps(d,sort_keys=True))"
+    ],
+    "before": {
+      "retained_bytes": 81639934,
+      "free_disk_bytes": 5395435520
+    },
+    "exit_code": 0,
+    "elapsed_seconds": 0.337,
+    "after": {
+      "retained_bytes": 81641988,
+      "free_disk_bytes": 5395423232
+    }
+  }
+]

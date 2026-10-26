@@ -1,0 +1,74 @@
+[
+  {
+    "from": "H_OPEN_M",
+    "source": "82:3171-layers-panel-row",
+    "to": "H_CLOSED_M",
+    "kind": "Close"
+  },
+  {
+    "from": "H_CLOSED_M",
+    "source": "85:3177-layers-panel-row",
+    "to": "H_OPEN_M",
+    "kind": "Open"
+  },
+  {
+    "from": "M_CLOSED_M",
+    "source": "85:3198-layers-panel-row",
+    "to": "M_OPEN_M",
+    "kind": "Open"
+  },
+  {
+    "from": "M_OPEN_M",
+    "source": "85:3219-layers-panel-row",
+    "to": "M_CLOSED_M",
+    "kind": "Close"
+  },
+  {
+    "from": "M_OPEN_H",
+    "source": "85:3240-layers-panel-row",
+    "to": "M_CLOSED_H",
+    "kind": "Close"
+  },
+  {
+    "from": "M_CLOSED_H",
+    "source": "85:3261-layers-panel-row",
+    "to": "M_OPEN_H",
+    "kind": "Open"
+  },
+  {
+    "from": "H_CLOSED_H",
+    "source": "85:3282-layers-panel-row",
+    "to": "H_OPEN_H",
+    "kind": "Open"
+  },
+  {
+    "from": "H_OPEN_H",
+    "source": "85:3303-layers-panel-row",
+    "to": "H_CLOSED_H",
+    "kind": "Close"
+  },
+  {
+    "from": "H_OPEN_H",
+    "source": "85:3512-layers-panel-row",
+    "to": "H_OPEN_M",
+    "kind": "Pending Balanced"
+  },
+  {
+    "from": "M_OPEN_M",
+    "source": "85:3424-layers-panel-row",
+    "to": "M_OPEN_H",
+    "kind": "Pending Detailed"
+  },
+  {
+    "from": "H_OPEN_M",
+    "source": "85:3363-layers-panel-row",
+    "to": "M_OPEN_M",
+    "kind": "Apply"
+  },
+  {
+    "from": "M_OPEN_H",
+    "source": "85:3449-layers-panel-row",
+    "to": "H_OPEN_H",
+    "kind": "Apply"
+  }
+]

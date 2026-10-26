@@ -15,7 +15,11 @@
 #>
 
 [CmdletBinding()]
-param()
+param(
+    [ValidateSet('Definition','BatchExit')][string]$ValidationMode = 'Definition',
+    [ValidatePattern('^B[0-9]{2}$')][string]$BatchId,
+    [string]$ExitProofPath
+)
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
@@ -53,6 +57,17 @@ $packageRoot    = Split-Path -Parent $validationRoot
 $repoRoot       = Split-Path -Parent (Split-Path -Parent $packageRoot)
 $acceptedRoot   = Join-Path $repoRoot 'docs/phase-1-ui-reference-design'
 
+. (Join-Path $repoRoot 'scripts/validation/ui-pilot-release.ps1')
+. (Join-Path $repoRoot 'scripts/validation/ui-exit-coverage.ps1')
+$pilotAcceptance = $null
+$pilotDecisionVerified = $false
+try { Assert-UiPilotAuthorization $repoRoot; $pilotDecisionVerified = $true } catch { }
+try {
+    if ($ValidationMode -ceq 'Definition' -and ($BatchId -or $ExitProofPath)) { throw 'Definition mode cannot name a batch-exit target' }
+    if ($ValidationMode -ceq 'BatchExit' -and -not $BatchId) { throw 'BatchExit mode requires BatchId' }
+    Assert-That 'approval:record-and-validation-mode' $true
+} catch { Assert-That 'approval:record-and-validation-mode' $false $_.Exception.Message }
+Write-Output ("VALIDATION_MODE={0}" -f $ValidationMode)
 Write-Output ("VALIDATOR  validate-ui-reference-production")
 Write-Output ("PACKAGE    {0}" -f $packageRoot)
 Write-Output ("ACCEPTED   {0}" -f $acceptedRoot)
@@ -104,6 +119,10 @@ Write-Output ''
     'stop-conditions.csv',
     'traceability.csv',
     '../../scripts/validation/ui-stream-mapping.ps1'
+    '../../scripts/validation/ui-pilot-release.ps1'
+    '../../scripts/validation/ui-exit-coverage.ps1'
+    '../../scripts/validation/ui-boundary-evidence.ps1'
+    '../phase-1-ui-reference-design/boundary-evidence-allocation.csv'
 )
 
 foreach ($rel in $requiredFiles) {
@@ -222,8 +241,11 @@ foreach ($accepted in $acceptedBatches) {
         -Condition ($row.browser_profile_id -eq $accepted.browser_profile_id) `
         -Detail ("accepted='{0}' package='{1}'" -f $accepted.browser_profile_id, $row.browser_profile_id)
 
-    Assert-That -Name ("cross-artifact:{0}:accepted-status-still-unauthorized" -f $accepted.batch_id) `
-        -Condition ($accepted.status -eq 'future_not_authorized') `
+    $statusAgrees = if ($row.batch_id -ceq 'B01') {
+        Test-UiPilotPlanState $accepted.status $row.ma_025_disposition $pilotDecisionVerified
+    } else { $accepted.status -ceq 'future_not_authorized' }
+    Assert-That -Name ("cross-artifact:{0}:accepted-status-matches-authorization-lifecycle" -f $accepted.batch_id) `
+        -Condition $statusAgrees `
         -Detail ("accepted status='{0}'" -f $accepted.status)
 }
 
@@ -244,10 +266,13 @@ $b01 = @($batchRows | Where-Object { $_.batch_id -eq 'B01' })[0]
 $conditional = @($batchRows | Where-Object { $_.ma_025_disposition -eq 'authorized_released_by_pilot' })
 $sequenced = @($batchRows | Where-Object { -not [string]::IsNullOrWhiteSpace($_.execution_order) })
 
-Assert-That -Name 'authorization:nothing-is-authorized-to-execute' `
-    -Condition (@($batchRows | Where-Object { $_.ma_025_disposition -eq 'authorized_pilot' }).Count -eq 0) `
-    -Detail 'no batch carries an unconditional execution authorization'
-Assert-That -Name 'authorization:B01-is-held' -Condition ($b01.ma_025_disposition -eq 'future_not_authorized')
+$pilotAuthorized = $false
+if ($b01.ma_025_disposition -ceq 'authorized_pilot') {
+    try { Assert-UiPilotAuthorization $repoRoot; $pilotAuthorized = $true }
+    catch { Assert-That 'authorization:explicit-founder-pilot-decision' $false $_.Exception.Message }
+}
+Assert-That 'authorization:B01-held-or-explicitly-authorized' ($b01.ma_025_disposition -ceq 'future_not_authorized' -or $pilotAuthorized)
+Assert-That 'authorization:only-B01-can-be-unconditional' (@($batchRows | Where-Object { $_.ma_025_disposition -ceq 'authorized_pilot' -and $_.batch_id -cne 'B01' }).Count -eq 0)
 Assert-That -Name 'authorization:six-batches-conditional' -Condition ($conditional.Count -eq 6) -Detail ("count={0}" -f $conditional.Count)
 Assert-That -Name 'authorization:two-batches-deferred'    -Condition ($deferred.Count -eq 2)    -Detail ("count={0}" -f $deferred.Count)
 
@@ -633,33 +658,6 @@ $streamVocab       = @('S-HIGH', 'S-LOW', 'S-MEDIUM', 'S-SEMANTIC')
 $streamSegments    = @('STREAM_HIGH', 'STREAM_MEDIUM', 'STREAM_LOW', 'STREAM_SEMANTIC')
 $evidenceIdPattern = '^HSD_UIR_(B\d{2})_(.+?)_STATE_(.+?)_VP_(.+?)_MODE_(.+?)_(?:STREAM_(HIGH|MEDIUM|LOW|SEMANTIC)|SCOPE_(EXCLUDED))_V(\d{2})$'
 
-# --- A-12 evidence-id-grammar-resolution -----------------------------------
-function Test-EvidenceId {
-    param([string]$EvidenceId, [string]$StreamId)
-    $m = [regex]::Match($EvidenceId, $evidenceIdPattern)
-    if (-not $m.Success) { return $false }
-    if ($m.Groups[7].Success) { return $StreamId -ceq 'STREAM-SCOPE-EXCLUDED' }
-    if ($StreamId -cnotin $streamVocab) { return $false }
-    return (('S-' + $m.Groups[6].Value) -ceq $StreamId)
-}
-$fxStem = 'HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_REST_VP_DESKTOP_MODE_STANDARD'
-$fx = @(
-    @{ n = 'no-stream-segment';    id = ($fxStem + '_V01');                           s = 'S-HIGH' },
-    @{ n = 'illegal-stream-token'; id = ($fxStem + '_STREAM_' + 'FALLBACK' + '_V01'); s = 'S-HIGH' },
-    @{ n = 'aggregate-stream';     id = ($fxStem + '_STREAM_' + 'ALL' + '_V01');      s = 'S-HIGH' },
-    @{ n = 'stream-id-disagrees';  id = ($fxStem + '_STREAM_HIGH_V01');               s = 'S-SEMANTIC' }
-)
-$fxLeaks = @($fx | Where-Object { Test-EvidenceId -EvidenceId $_.id -StreamId $_.s } | ForEach-Object { $_.n })
-Assert-That -Name 'A-12:evidence-id-grammar-rejects-every-negative-fixture' -Condition ($fxLeaks.Count -eq 0) `
-    -Detail ("fixtures={0}; leaked=[{1}]" -f $fx.Count, ($fxLeaks -join ';'))
-Assert-That -Name 'A-12:evidence-id-grammar-accepts-a-well-formed-id' `
-    -Condition (Test-EvidenceId -EvidenceId ($fxStem + '_STREAM_SEMANTIC_V01') -StreamId 'S-SEMANTIC')
-
-# --- A-13 batch-stream-disposition-resolution ------------------------------
-# Live against current data. Every key resolves against the closed vocabulary,
-# every deferral target resolves against a batch that is itself deferred, and
-# every not_present claim is checked against the presence set computed from the
-# ACCEPTED DESIGN PACKAGE - not against anything this package says about itself.
 $designPrimitives = @(Import-Csv -LiteralPath (Join-Path $acceptedRoot 'component-primitives.csv'))
 $designTemplates  = @(Import-Csv -LiteralPath (Join-Path $acceptedRoot 'reference-template-inventory.csv'))
 $designBatches    = @(Import-Csv -LiteralPath (Join-Path $acceptedRoot 'design-batch-plan.csv'))
@@ -685,6 +683,36 @@ function Get-BatchTemplateIds {
     }
     return @($ids)
 }
+$evidenceContext = [pscustomobject]@{
+    BoundaryAllocations=@(Import-Csv (Join-Path $acceptedRoot 'boundary-evidence-allocation.csv'))
+    Batches=$designBatches; Templates=$designTemplates; Profiles=$designProfiles; Mapping=$streamMapping
+    Routes=@(Import-Csv (Join-Path $acceptedRoot 'foundation-route-coverage.csv'))
+    Flows=@(Import-Csv (Join-Path $acceptedRoot 'foundation-flow-coverage.csv'))
+}
+
+# --- A-12 evidence-id-grammar-resolution -----------------------------------
+function Test-EvidenceId {
+    param([string]$EvidenceId, [string]$StreamId)
+    return $null -ne (Get-UiResolvedEvidenceId -EvidenceId $EvidenceId -StreamId $StreamId -Context $evidenceContext)
+}
+$fxStem = 'HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_CLOSED_VP_DESKTOP_MODE_STANDARD'
+$fx = @(
+    @{ n = 'no-stream-segment';    id = ($fxStem + '_V01');                           s = 'S-HIGH' },
+    @{ n = 'illegal-stream-token'; id = ($fxStem + '_STREAM_' + 'FALLBACK' + '_V01'); s = 'S-HIGH' },
+    @{ n = 'aggregate-stream';     id = ($fxStem + '_STREAM_' + 'ALL' + '_V01');      s = 'S-HIGH' },
+    @{ n = 'stream-id-disagrees';  id = ($fxStem + '_STREAM_HIGH_V01');               s = 'S-SEMANTIC' }
+)
+$fxLeaks = @($fx | Where-Object { Test-EvidenceId -EvidenceId $_.id -StreamId $_.s } | ForEach-Object { $_.n })
+Assert-That -Name 'A-12:evidence-id-grammar-rejects-every-negative-fixture' -Condition ($fxLeaks.Count -eq 0) `
+    -Detail ("fixtures={0}; leaked=[{1}]" -f $fx.Count, ($fxLeaks -join ';'))
+Assert-That -Name 'A-12:evidence-id-grammar-accepts-a-well-formed-id' `
+    -Condition (Test-EvidenceId -EvidenceId ($fxStem + '_STREAM_SEMANTIC_V01') -StreamId 'S-SEMANTIC')
+
+# --- A-13 batch-stream-disposition-resolution ------------------------------
+# Live against current data. Every key resolves against the closed vocabulary,
+# every deferral target resolves against a batch that is itself deferred, and
+# every not_present claim is checked against the presence set computed from the
+# ACCEPTED DESIGN PACKAGE - not against anything this package says about itself.
 $deferredIds = @($deferred.batch_id)
 $a13 = [System.Collections.Generic.List[string]]::new()
 foreach ($row in $batchRows) {
@@ -742,31 +770,54 @@ foreach ($row in $batchRows) {
         }
     }
 }
+try {
+    $boundaryFrames = @(Get-UiBoundaryAllocations $evidenceContext.BoundaryAllocations $evidenceContext)
+    foreach ($frame in $boundaryFrames) { $obligedList.Add(('{0}|{1}|{2}|{3}' -f $frame.batch_id,$frame.template_id,$frame.state_id,$frame.stream_id)) }
+    Assert-That 'A-14:scoped-boundary-allocation-eight-triples' ($boundaryFrames.Count -eq 8)
+} catch { Assert-That 'A-14:scoped-boundary-allocation-eight-triples' $false $_.Exception.Message }
 $obliged = @($obligedList | Sort-Object -Unique)
 Assert-That -Name 'A-14:per-stream-obligation-set-is-non-empty' -Condition ($obliged.Count -gt 0) `
     -Detail ("obliged (batch|template|state|stream) coordinates={0}" -f $obliged.Count)
-$manifestPath = Join-Path $packageRoot 'evidence-manifest.csv'
+try {
+    $pilotAcceptance = Get-UiPilotAcceptance $repoRoot (Join-Path $validationRoot 'pilot-release.json') $evidenceContext $obliged
+    if ($null -ne $pilotAcceptance -and -not $pilotAuthorized) { throw 'Pilot acceptance contradicts held or unapproved B01 execution state' }
+    Assert-That 'approval:pilot-exit-evidence-coverage' $true
+} catch { Assert-That 'approval:pilot-exit-evidence-coverage' $false $_.Exception.Message }
+$manifestPath = if ($ValidationMode -ceq 'BatchExit' -and $BatchId) { Join-Path $packageRoot "evidence/$BatchId/manifest.csv" } else { Join-Path $packageRoot 'evidence-manifest.csv' }
 $manifestRows = @()
 if (Test-Path -LiteralPath $manifestPath -PathType Leaf) { $manifestRows = @(Import-Csv -LiteralPath $manifestPath) }
 $invalidScopeRows = @($manifestRows | Where-Object {
-    -not $presenceByTemplate.ContainsKey($_.template_id) -or
-    -not (Test-EvidenceId -EvidenceId $_.evidence_id -StreamId $_.stream_id) -or
-    $_.stream_id -cnotin @(Get-UiEvidenceScopes -Mapping $streamMapping -TemplateId $_.template_id)
+    $_.evidence_type -cne 'ARCHIVE' -and $null -eq (Get-UiResolvedManifestRow -Row $_ -Context $evidenceContext)
 })
 Assert-That -Name 'A-14:manifest-evidence-scope-resolution' -Condition ($invalidScopeRows.Count -eq 0) `
-    -Detail ("invalid evidence scopes={0}" -f $invalidScopeRows.Count)
+    -Detail ("invalid evidence identities={0}" -f $invalidScopeRows.Count)
 $satisfied = @($manifestRows | ForEach-Object {
-    $match = [regex]::Match($_.evidence_id, $evidenceIdPattern)
-    if ($match.Success) {
-        $state = 'STATE-' + $match.Groups[3].Value.Replace('_','-')
-        "{0}|{1}|{2}|{3}" -f $_.batch_id, $_.template_id, $state, $_.stream_id
+    $resolved = if ($_.evidence_type -cin @('FRAME','FOCUSED_FRAME','VARIANT')) { Get-UiResolvedManifestRow -Row $_ -Context $evidenceContext } else { $null }
+    if ($null -ne $resolved -and $_.evidence_type -cin @('FRAME','FOCUSED_FRAME','VARIANT')) {
+        "{0}|{1}|{2}|{3}" -f $resolved.BatchId, $resolved.TemplateId, $resolved.StateId, $resolved.StreamId
     }
 })
-$unmet = @($obliged | Where-Object { $_ -cnotin $satisfied })
-$executable = @($batchRows | Where-Object { $_.ma_025_disposition -eq 'authorized_pilot' })
-Assert-That -Name 'A-14:unmet-per-stream-obligations-are-explained-by-held-authorization' `
-    -Condition ($unmet.Count -eq 0 -or $executable.Count -eq 0) `
-    -Detail ("unmet={0}; manifest-rows={1}; batches-authorized-to-execute={2}; no batch may execute today, so an empty manifest is the expected state and is not a discharge" -f $unmet.Count, $manifestRows.Count, $executable.Count)
+if ($ValidationMode -ceq 'BatchExit') {
+    try {
+        if ($BatchId -ceq 'B01' -and -not $pilotAuthorized) { throw 'B01 has no explicit founder pilot authorization' }
+        $target = @($batchRows | Where-Object batch_id -CEQ $BatchId)
+        if ($target.Count -ne 1) { throw 'Unknown batch-exit target' }
+        $requiredExits = @($target[0].hard_prerequisite_batch_ids.Split(';') | Where-Object { $_ })
+        $acceptedExits = @(Get-UiAcceptedPrerequisiteExits $repoRoot $requiredExits $pilotAcceptance $evidenceContext $obliged)
+        $unmet = @(Get-UiTargetBatchUnmetEvidence $BatchId $batchRows $obliged $satisfied $pilotAcceptance $acceptedExits)
+        if (-not (Test-Path -LiteralPath $manifestPath -PathType Leaf)) { throw 'Target batch manifest is missing' }
+        if (-not $ExitProofPath) { throw 'BatchExit requires a repository-relative ExitProofPath' }
+        $proofFile = Resolve-UiEvidenceFilePath $repoRoot $ExitProofPath
+        $proof = Get-Content -LiteralPath $proofFile -Raw | ConvertFrom-Json
+        $expectedManifest = [IO.Path]::GetRelativePath($repoRoot, $manifestPath).Replace('\','/')
+        if ($proof.batch_manifest_path -cne $expectedManifest) { throw 'Exit proof does not reference the named target manifest' }
+        Assert-UiBatchExitArtifacts $repoRoot $BatchId $proof 'batch_manifest' $evidenceContext $obliged
+        Assert-That 'A-14:target-exit-artifact-proof' $true
+        Assert-That 'A-14:target-batch-obligations' ($unmet.Count -eq 0) ("unmet={0}" -f ($unmet -join ';'))
+    } catch { Assert-That 'A-14:target-batch-exit-eligibility' $false $_.Exception.Message }
+} else {
+    Write-Output ("DEFINITION_ONLY_OUTSTANDING={0}; no batch exit certified" -f @($obliged | Where-Object { $_ -cnotin $satisfied }).Count)
+}
 
 # --- A-15 stream-token-vocabulary-guard ------------------------------------
 # Scans the design, production and UX packages. Hyphen and underscore spellings are
@@ -875,8 +926,8 @@ function Test-FramingExempt {
 $framingExempt = @($streamScanFiles | Where-Object { Test-FramingExempt -File $_ })
 $framingScope  = @($streamScanFiles | Where-Object { -not (Test-FramingExempt -File $_) })
 Assert-That -Name 'A-16:framing-guard-scope-is-the-three-package-union' `
-    -Condition ($streamScanFiles.Count -gt 13 -and ($framingScope.Count + $framingExempt.Count) -eq $streamScanFiles.Count -and $framingScope.Count -gt $framingExempt.Count) `
-    -Detail ("union={0}; scanned={1}; exempt={2}; the design package guard scopes to 13 freeze files, and the scanned set must remain larger than the exempt set" -f $streamScanFiles.Count, $framingScope.Count, $framingExempt.Count)
+    -Condition (Test-UiFramingScanPartition -Union @($streamScanFiles.FullName) -Scope @($framingScope.FullName) -Exempt @($framingExempt.FullName) -Roots $streamScanRoots) `
+    -Detail ("union={0}; scanned={1}; exempt={2}; exhaustive disjoint partition with nonexempt normative contribution from every package; review counts do not determine coverage" -f $streamScanFiles.Count, $framingScope.Count, $framingExempt.Count)
 $framingHits = [System.Collections.Generic.List[string]]::new()
 foreach ($file in $framingScope) {
     $text = Get-Content -Raw -LiteralPath $file.FullName
@@ -885,6 +936,7 @@ foreach ($file in $framingScope) {
 Assert-That -Name 'A-16:no-degradation-framing-across-design-ux-and-production' -Condition ($framingHits.Count -eq 0) `
     -Detail ("hits={0}; distinct=[{1}]" -f $framingHits.Count, ((@($framingHits | Sort-Object -Unique)) -join ';'))
 
+Write-Output ("BATCH_EXIT_CERTIFIED={0}" -f ($ValidationMode -ceq 'BatchExit' -and $script:FailCount -eq 0).ToString().ToLowerInvariant())
 $result = if ($script:FailCount -eq 0) { 'PASS' } else { 'FAIL' }
 Write-Output ("RESULT={0} PASS_COUNT={1} FAIL_COUNT={2}" -f $result, $script:PassCount, $script:FailCount)
 

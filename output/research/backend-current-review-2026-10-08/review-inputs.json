@@ -1,0 +1,802 @@
+{
+  "status": "DOING",
+  "scope": "October 8 backend registry, Windows resolution metadata closure, release/source channels and migration recommendations only",
+  "input_count": 132,
+  "inputs": [
+    {
+      "path": ".specify/memory/constitution.md",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/.specify/memory/constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "path": "AGENTS.md",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "path": "DECISIONS.md",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/DECISIONS.md",
+      "bytes": 86352,
+      "sha256": "dd31d6026aedd1a03e966e055724b2f02783147291525f1740341848837eed74"
+    },
+    {
+      "path": "PROJECT.md",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/PROJECT.md",
+      "bytes": 10942,
+      "sha256": "a483bd2713fe420322772ab7fb07c848aaf103088697c05ab91f35d2e5ea1461"
+    },
+    {
+      "path": "PROJECT_STATE.yaml",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/PROJECT_STATE.yaml",
+      "bytes": 8776,
+      "sha256": "ca8ed5825769b5007835c9b44d3a4e7b4ebd1cba120340686d017686b3a64270"
+    },
+    {
+      "path": "TASKS.md",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/TASKS.md",
+      "bytes": 6728,
+      "sha256": "590da697f0da1c2bc38f648d53dd9be8fe2bec0df0dc209ab9adf5af5f050c21"
+    },
+    {
+      "path": "apps/api/.venv/pyvenv.cfg",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/apps/api/.venv/pyvenv.cfg",
+      "bytes": 229,
+      "sha256": "d23bc586f40b9aa9a601c8af0cab224cd4a40f0544a2f6348e9ad703f4d8ea39"
+    },
+    {
+      "path": "apps/api/app/main.py",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/apps/api/app/main.py",
+      "bytes": 1512,
+      "sha256": "f6dc16de91ffd3fca40017d9024c156ed3383d2564f08f09389b6be942520ff9"
+    },
+    {
+      "path": "apps/api/requirements.txt",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/apps/api/requirements.txt",
+      "bytes": 137,
+      "sha256": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd"
+    },
+    {
+      "path": "apps/web/package-lock.json",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/apps/web/package-lock.json",
+      "bytes": 179000,
+      "sha256": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d"
+    },
+    {
+      "path": "apps/web/package.json",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/apps/web/package.json",
+      "bytes": 1136,
+      "sha256": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a"
+    },
+    {
+      "path": "docs/phase-1-compatibility/README.md",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/docs/phase-1-compatibility/README.md",
+      "bytes": 39370,
+      "sha256": "87425eb0d09bad0579750104993fd2af2ad2ffc4ea8303dfd49d11a2dd081d88"
+    },
+    {
+      "path": "docs/phase-1-compatibility/backend-evidence-2026-10-04.md",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/docs/phase-1-compatibility/backend-evidence-2026-10-04.md",
+      "bytes": 20258,
+      "sha256": "0e5ad5b84b3baf02c3ca8dfb3e090ed31541e1485d4bdec54825f471741a116e"
+    },
+    {
+      "path": "docs/software-definition/04-reconciliation-map.md",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/docs/software-definition/04-reconciliation-map.md",
+      "bytes": 91448,
+      "sha256": "0244a3a94c7b38d02d0fa5e915d53b047577278a2bf6403503353c1b7b24b818"
+    },
+    {
+      "path": "docs/software-definition/README.md",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/docs/software-definition/README.md",
+      "bytes": 7503,
+      "sha256": "a4907696b81b7bc7949a02e712970615122459b124b8fee836d731320181ccba"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/completed-registry-recheck.json",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/completed-registry-recheck.json",
+      "bytes": 61430,
+      "sha256": "22248066a419af076e74de1cf5cad19972a2acb46f40e876665b701cb47f65b4"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/core-recovery/pydantic-core-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/core-recovery/pydantic-core-project.json.gz",
+      "bytes": 2261314,
+      "sha256": "25df7add998caf451d90a69d03cdc7c79367338d154b54e39fffb7143b359c1d"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/README.md.before",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/README.md.before",
+      "bytes": 38736,
+      "sha256": "7f1f97bda07e1d18c3dce7b39f17e0d58b07020b7b823cab4b1c87a7cb3d266e"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/backend-evidence-2026-10-04.md.before",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/backend-evidence-2026-10-04.md.before",
+      "bytes": 13623,
+      "sha256": "3b1b8a607352ab945861e1d6c642c6a1598dd40a6730c10c09cf15b42b5721ee"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/closure-observations.json",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/closure-observations.json",
+      "bytes": 22668,
+      "sha256": "a65250a8239bab6e6f12243cff4ae082c987c0922dfc5960f30c2ab132c2476f"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/inspect_resolution.py",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/inspect_resolution.py",
+      "bytes": 6833,
+      "sha256": "28da976e172d3943b396c9e3d564b8663aeddf869e04266b999e81279775b04c"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/latest-root-study.txt",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/latest-root-study.txt",
+      "bytes": 357,
+      "sha256": "bc6ae302bb380291f8e643b0e700a422a26e35428e9609b9d000f56ca400dec3"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/pip-report.json",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/pip-report.json",
+      "bytes": 474226,
+      "sha256": "3eb5c2228d8710232e06eab5864d5cfaa9ac351cacb213d2878be01521c077c8"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/receipt.json",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/receipt.json",
+      "bytes": 1416,
+      "sha256": "c911dddb053ed2c1f4295d18a0ae4adaea06e81c41be9355bd79e568ffbba595"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/stderr.txt",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/stdout.txt",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/stdout.txt",
+      "bytes": 12043,
+      "sha256": "3d4bf12baab8e2d53b71487361d636b75a1c02106d627ab4fa739742ab225334"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/windows-study-hashed-requirements.txt",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/latest-coupled-resolution/windows-study-hashed-requirements.txt",
+      "bytes": 4168,
+      "sha256": "49a85c548a152ad38f24661dfd9b5f4fc09cf0831c8e68767707444cf12b6bb9"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/alembic-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/alembic-exact.json.gz",
+      "bytes": 3878,
+      "sha256": "b383db3d4efdf45dd0e3cdd10fd34a70b8b3e4b18ff21b85c8d438785a6db9d1"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/alembic-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/alembic-project.json.gz",
+      "bytes": 42068,
+      "sha256": "229bedc48836e584882a072c1de5dacb914893dd6586790b54b916b02a742c41"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/annotated-doc-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/annotated-doc-exact.json.gz",
+      "bytes": 3275,
+      "sha256": "71b4b2629a27e3aa3029def8cca70ea475ac19c080c4ed6a8ac2d76066f855ec"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/annotated-doc-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/annotated-doc-project.json.gz",
+      "bytes": 4840,
+      "sha256": "191c7fa38e440efbe338936da237e6999f5b76d82d69b1a5533b2b6ad21d66f3"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/annotated-types-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/annotated-types-exact.json.gz",
+      "bytes": 6686,
+      "sha256": "add79447b7dfad156c08604e599f99d6dcadd03fd8ec5fc4f09c76d849d38f3a"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/annotated-types-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/annotated-types-project.json.gz",
+      "bytes": 9862,
+      "sha256": "5592c2f85e06dc0aaa094f186945b4629555bc8234c4d8706a7af9427d87f677"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/anyio-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/anyio-exact.json.gz",
+      "bytes": 2767,
+      "sha256": "7290a9c7af7b416df60a5907c7ccaa2bc59ebacc82bd595ada9a73485fe96ffc"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/anyio-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/anyio-project.json.gz",
+      "bytes": 28857,
+      "sha256": "da931b6b339821ed63865dcf3cb959bcf7bcd63a80061322822ff71b902c0863"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/bcrypt-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/bcrypt-exact.json.gz",
+      "bytes": 14849,
+      "sha256": "2f8171df43f676fe5226d16492af1b18bcfe6a106e0d899a304ec3a9cbbaa052"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/bcrypt-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/bcrypt-project.json.gz",
+      "bytes": 111071,
+      "sha256": "24bcd3761174079a1ddeec4e12dbc9b212a2e399c37d83e70cbeb8cdb789febe"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/certifi-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/certifi-exact.json.gz",
+      "bytes": 1857,
+      "sha256": "d557dabe9169e3e90bac5b0c3e5dedf5dc53963f32f991c785990ae447adf1d9"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/certifi-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/certifi-project.json.gz",
+      "bytes": 27159,
+      "sha256": "57b4ced9f5221091c033018e4a596d2a26ad13820639f508b356c9839b7447b2"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/click-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/click-exact.json.gz",
+      "bytes": 2129,
+      "sha256": "8381318c0c5338df2478a7cd51ab0d29b6c6119b52bab90efefb71747eba4057"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/click-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/click-project.json.gz",
+      "bytes": 25339,
+      "sha256": "7e5a93d9eca38c519fd99f8149390b2377b860225a0b8793543d437e529f2626"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/colorama-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/colorama-exact.json.gz",
+      "bytes": 7451,
+      "sha256": "88d5d9e8ba9b52be2abcceff5f4180970fc13095a1982664b1fd329a26fdfa39"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/colorama-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/colorama-project.json.gz",
+      "bytes": 22993,
+      "sha256": "c1f1c76e31927f9c40338f4e6daae3f7c0d246544d31193b6982befba5f5f4fa"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/dnspython-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/dnspython-exact.json.gz",
+      "bytes": 3032,
+      "sha256": "71a2bedb3484d6735a93175171c35d72c59e8d5623402e3179988c0bf4121894"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/dnspython-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/dnspython-project.json.gz",
+      "bytes": 13095,
+      "sha256": "58fcb626aac63215d4234c91a3aa3ea86e0007af05ed887e33ee5265c46323d2"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/email-validator-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/email-validator-exact.json.gz",
+      "bytes": 10040,
+      "sha256": "698c29f778831f66c3b61e97e978fdcbb80b916de56c126cfdbf5f0233fa0ee1"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/email-validator-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/email-validator-project.json.gz",
+      "bytes": 20162,
+      "sha256": "78c65e8b73a94d4d5e2f553f88ed9aec55d6a7df385662e468dc6ef65e7c14ca"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/fastapi-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/fastapi-exact.json.gz",
+      "bytes": 9493,
+      "sha256": "d14021217927a28af1c146e15e30f35ea60aa15ecbaae7edfd5ad85b717415b1"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/fastapi-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/fastapi-project.json.gz",
+      "bytes": 124378,
+      "sha256": "6ee636e54f8164e4887d11ee935b8e216283edd0dad938e765fcf8f2ed11335c"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/h11-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/h11-exact.json.gz",
+      "bytes": 4754,
+      "sha256": "aa05be29f9a41a207f15740700cc7f4acf9ed98fc6269ce22ef487e39a68e002"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/h11-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/h11-project.json.gz",
+      "bytes": 9436,
+      "sha256": "9dba3831f9753cf8b11d4fad2f94c2b7669a40c80b6ce8fd1f8bcfa99d66a5ed"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/httpcore-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/httpcore-exact.json.gz",
+      "bytes": 8874,
+      "sha256": "f943b38147fc4b102b9c0818d2b891f15953d7b9ed9cddeb1bf43cc04f6411b7"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/httpcore-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/httpcore-project.json.gz",
+      "bytes": 30549,
+      "sha256": "c41c81759087830d54789a2521f06b8decf81c69c71292d4280ec7ac925c88a2"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/httptools-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/httptools-exact.json.gz",
+      "bytes": 10194,
+      "sha256": "f144a18d3bb3747a3708685d1d0873b6ee5fd9c2f09ad38b2af12be7c717b386"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/httptools-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/httptools-project.json.gz",
+      "bytes": 81737,
+      "sha256": "366ba02d127f853f498fe9d39b25b94923c4865b2b601ade7e3e900dde2e0f5c"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/httpx-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/httpx-exact.json.gz",
+      "bytes": 3599,
+      "sha256": "76438b8b41921bb528651fa4754544498dfe3f26e11d6b653eb9d8df8c3bb493"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/httpx-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/httpx-project.json.gz",
+      "bytes": 30084,
+      "sha256": "c8edb8c43a19b4b92309bb5eac83879db39986835bdaeec9d34731ec70af4abf"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/idna-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/idna-exact.json.gz",
+      "bytes": 3931,
+      "sha256": "98e395a424a2087a07756b3df367c646db697e8e955f43b67f0ed5068e822d9d"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/idna-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/idna-project.json.gz",
+      "bytes": 17574,
+      "sha256": "6117a840c73ff5f595d53741e03583b1f5920abe1a86062d8dd434eeb5125a82"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/iniconfig-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/iniconfig-exact.json.gz",
+      "bytes": 1922,
+      "sha256": "7ada719f3a0a67b4ddb9e9b0ca3183de8d9fea7eb41ce9830ea1eb21d0750aa9"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/iniconfig-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/iniconfig-project.json.gz",
+      "bytes": 5018,
+      "sha256": "d3a97245c570e99a2a196574cdfea0a80cafab9f0061ea9b6e51f24649111810"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/mako-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/mako-exact.json.gz",
+      "bytes": 2104,
+      "sha256": "5f36f159c2d5de471be2c416fab61313c66f15f578157a3a05916453bbca9950"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/mako-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/mako-project.json.gz",
+      "bytes": 21158,
+      "sha256": "ed69118ada0394bf1961c381303e66efdada2e8f8b63eab486bffd857db14e66"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/markupsafe-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/markupsafe-exact.json.gz",
+      "bytes": 25379,
+      "sha256": "307dd7a035a1aaf4d55cd6197307ca60668a0e6b2c79344d2ea540f62610230b"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/markupsafe-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/markupsafe-project.json.gz",
+      "bytes": 183184,
+      "sha256": "8698c0cd02f57b1d40cbcfdf53a10cd343f491d939407a554d070ae9f70704d9"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/opentelemetry-api-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/opentelemetry-api-exact.json.gz",
+      "bytes": 1368,
+      "sha256": "428b9675a5e5725ce5456812a031ab003c11471e5dceed01d5e4d216378625a1"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/opentelemetry-api-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/opentelemetry-api-project.json.gz",
+      "bytes": 31447,
+      "sha256": "630c272d76eeeeafeb9fcb228dc2c162dd1fb512bcf1bd0b59f2f6726841be48"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/packaging-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/packaging-exact.json.gz",
+      "bytes": 2244,
+      "sha256": "0a08424c75bc270df814c4ef07db0a0ea6d81c4ab7456b0d784dd0d68986d481"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/packaging-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/packaging-project.json.gz",
+      "bytes": 21874,
+      "sha256": "20ce33cb1ad43f0c2e73a69fe8cc709764a96fe53e09f53fb532b1e52298f382"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pluggy-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/pluggy-exact.json.gz",
+      "bytes": 2579,
+      "sha256": "c6ba7b17d4d33691267b1efd00ee1f590a9193a9548f80557e0934af78969cad"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pluggy-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/pluggy-project.json.gz",
+      "bytes": 11400,
+      "sha256": "ab296406976441027c024602f106a3b986a542674fb2acf9d060964752365a6e"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/psycopg-binary-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/psycopg-binary-exact.json.gz",
+      "bytes": 12082,
+      "sha256": "7f4115d5b7772d95474b36a1c2a3c0fcdab569b9995e79d488d7b829556c8038"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/psycopg-binary-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/psycopg-binary-project.json.gz",
+      "bytes": 512480,
+      "sha256": "c782db2440a9e33224d319678230e47fa71bdbfed2ff81e4886b5ee872aac8b7"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/psycopg-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/psycopg-exact.json.gz",
+      "bytes": 2259,
+      "sha256": "0fe81b2b5bcbe37f40d937f53c7c4340c3dcc62125eeff7b1efa0661920de7c2"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/psycopg-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/psycopg-project.json.gz",
+      "bytes": 24703,
+      "sha256": "247b4936b61c43e240901146b072e5f461ad1aca98097dfb560f2926f9505bd3"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pydantic-core-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/pydantic-core-exact.json.gz",
+      "bytes": 22128,
+      "sha256": "68a4010986538ff0fcbb13ac8600231368cca9ab9444ccd0fedb44806bfb5722"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pydantic-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/pydantic-exact.json.gz",
+      "bytes": 21039,
+      "sha256": "c7c80aba6b64d4a4920b9eeb244522646adb911ca0b2e48b2f406874c2e512a2"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pydantic-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/pydantic-project.json.gz",
+      "bytes": 349311,
+      "sha256": "3da7685a2efe05ab2785d3c51997ffb98139b29a9764cb820b8ea5043c3ae72b"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pygments-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/pygments-exact.json.gz",
+      "bytes": 1869,
+      "sha256": "79865de956c916ea1c466b0548dd41ec3578633abab34eef5c55c5b8094c0d94"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pygments-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/pygments-project.json.gz",
+      "bytes": 33432,
+      "sha256": "76ad77c4b63826e3534cf867c344a261e74bf61fa10d7c7d41e7ed06048906ef"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pyjwt-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/pyjwt-exact.json.gz",
+      "bytes": 2178,
+      "sha256": "ce425cde3317fb456b660c6e337c41c90ca16549fcfed94f07a36934d8068629"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pyjwt-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/pyjwt-project.json.gz",
+      "bytes": 26837,
+      "sha256": "c189a04aa8edef0b6a4409ba64e2ca3de081f31c5091dbc924b26665a2c3b1d3"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pytest-asyncio-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/pytest-asyncio-exact.json.gz",
+      "bytes": 2395,
+      "sha256": "76cfe8e9083d7d91cfd5d81d38609b47be36feeb7b72458f438278402c77dac2"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pytest-asyncio-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/pytest-asyncio-project.json.gz",
+      "bytes": 29415,
+      "sha256": "3d2eed89cc818e21c246fe9b1bda417e28055f18422280d9cfe4dd15e2123c97"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pytest-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/pytest-exact.json.gz",
+      "bytes": 3620,
+      "sha256": "852a89760f84dc2c9d93a92f67f9a367f98cb524d18f8a4ecc91daf9102de819"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pytest-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/pytest-project.json.gz",
+      "bytes": 66476,
+      "sha256": "d47efbb36944a6ddb54eef3a3ef61455015f77e854012b944b785edb162cbc66"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/python-dotenv-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/python-dotenv-exact.json.gz",
+      "bytes": 10519,
+      "sha256": "3f74ad1b1b4a5565dc66395a8542f8b1fc1f7810441c3180379f09efb7477de1"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/python-dotenv-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/python-dotenv-project.json.gz",
+      "bytes": 29464,
+      "sha256": "3c6c460df85bd75db8052bce034174fbc2b0a20efd50bf3c408d56f6d5e47817"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pyyaml-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/pyyaml-exact.json.gz",
+      "bytes": 13122,
+      "sha256": "b44911ec9dbe77cfe8a212d1f3518de02db75a4ee050d8d18da0192ba7c87deb"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/pyyaml-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/pyyaml-project.json.gz",
+      "bytes": 105475,
+      "sha256": "6910211e0c03bddc2c058d60eff8713116e8e95a71a82dfee52b87f204e887ee"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/sqlalchemy-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/sqlalchemy-exact.json.gz",
+      "bytes": 15758,
+      "sha256": "13f9deaff71ac981bd12fd5c2dd1939e242d839e7a438b7a1c380c31d92b3298"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/sqlalchemy-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/sqlalchemy-project.json.gz",
+      "bytes": 998035,
+      "sha256": "4d71d2707843ebb5a6a25b84f8904e28cdc6a269a97a197a7ae2e2ef9f88fae9"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/starlette-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/starlette-exact.json.gz",
+      "bytes": 3520,
+      "sha256": "0d440cab826a7b4f766c9080b621d0c93fc80425eda6b6b1927dfc192b909a16"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/starlette-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/starlette-project.json.gz",
+      "bytes": 56581,
+      "sha256": "5f583156ff923e0ff1b43e5244779c9f5acb6fc8893b9bbf32710280464ad20d"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/typing-extensions-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/typing-extensions-exact.json.gz",
+      "bytes": 2247,
+      "sha256": "1b85bed9866cb318d54b9bb4eff37c7096aed9f25597c8a79ad9203ac28a4ddb"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/typing-extensions-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/typing-extensions-project.json.gz",
+      "bytes": 23187,
+      "sha256": "2bc349e88b6fd53e8562fb9d1cbd3b18ee9f95f0386888c00c0251d56d004bbb"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/typing-inspection-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/typing-inspection-exact.json.gz",
+      "bytes": 1678,
+      "sha256": "c406f5e08dbd7d66dbb8b1f85a39f661cf19574edb83b85a42ba503c75e16818"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/typing-inspection-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/typing-inspection-project.json.gz",
+      "bytes": 4996,
+      "sha256": "dbd648d165e8ea0fde6e27900bf799432677e41bf6c3cfb6f64a59257abe9c88"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/tzdata-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/tzdata-exact.json.gz",
+      "bytes": 1526,
+      "sha256": "6bdf8145d4f99630be30e9e12f16053b516431af71be1fa9ea6d25e2d599bcd0"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/tzdata-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/tzdata-project.json.gz",
+      "bytes": 14542,
+      "sha256": "fd88c55ef415238e5fedd141bc14ee1d1b98a13c1f73c9595aee937c7c8dcaa6"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/uvicorn-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/uvicorn-exact.json.gz",
+      "bytes": 3632,
+      "sha256": "1d3a7c5ad0d93959d060e6d7cf35ec67cc51dfa6984f82c4dafb88c3cd583b88"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/uvicorn-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/uvicorn-project.json.gz",
+      "bytes": 55162,
+      "sha256": "09f45607f045159e27893f3e70ed124c9f3c33a4d6720800167a3807af154af6"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/watchfiles-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/watchfiles-exact.json.gz",
+      "bytes": 7507,
+      "sha256": "67b1fde412cef917d740931f568029fdeb38d7a538a7936ea375d0880c4eaaf3"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/watchfiles-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/watchfiles-project.json.gz",
+      "bytes": 228468,
+      "sha256": "a47f4c011d738748a0f37595c201d39b4b0dd7f8e310d9433b9cd87a54af098c"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/websockets-exact.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/websockets-exact.json.gz",
+      "bytes": 26426,
+      "sha256": "a13e262b4bcfff8f75f2b3835c9e2be020acfd1b07e1e5a25233ceaa5d6e07b6"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/primary/websockets-project.json.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/primary/websockets-project.json.gz",
+      "bytes": 380561,
+      "sha256": "283c79853d29a27c55d91a44bd116753a5e702028a954d9017808114905d7960"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/registry-recheck.json",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/registry-recheck.json",
+      "bytes": 59558,
+      "sha256": "9e354cf6d8b6dffdb2891d49d34fa89b81485fb2155ba1c1296742151c0bda00"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/backend-evidence.before.md",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/backend-evidence.before.md",
+      "bytes": 16929,
+      "sha256": "2767e55a5a11e919a3e79f32f8624630b3e0b7cffde20e8db6ef2441a155f34e"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/core-cargo-pinned.source.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/core-cargo-pinned.source.gz",
+      "bytes": 1322,
+      "sha256": "c03ac70e89e77bf6bce360d0c174de31fc26a5017198c45656f5b80352183b24"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/core-cargo.error.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/core-cargo.error.gz",
+      "bytes": 34,
+      "sha256": "31678b1a3bd22f5f3095c4681e61e9058f7c79aa8eea8813a0d0b4ff72004275"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/core-pyproject-pinned.source.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/core-pyproject-pinned.source.gz",
+      "bytes": 2402,
+      "sha256": "f5ddb659a70eb439efa41569ce8f3ef6b4a299a7b8cac8b536147ffdf0b74687"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/core-pyproject.error.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/core-pyproject.error.gz",
+      "bytes": 34,
+      "sha256": "31678b1a3bd22f5f3095c4681e61e9058f7c79aa8eea8813a0d0b4ff72004275"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/core-tag.error.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/core-tag.error.gz",
+      "bytes": 116,
+      "sha256": "310e0d1b19a6f39920a861e2c6a11fd714c9d3f0cb901c5a8044a8d487891a9c"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/fastapi-release.source.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/fastapi-release.source.gz",
+      "bytes": 1014,
+      "sha256": "1643574c833bdfb9fd71cec24f01186e42ee18bb8bde21e6f911dbfa95613d2c"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/pinned-source-observations.json",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/pinned-source-observations.json",
+      "bytes": 2997,
+      "sha256": "466f2d56572904e83d73203943d36f3e50e94a00efd72c215045798e98252d33"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/pydantic-pyproject-pinned.source.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/pydantic-pyproject-pinned.source.gz",
+      "bytes": 3592,
+      "sha256": "6e6eb20c0a3eda0abf6436fe7822cc2cb67d2ce26dc7bc9d01162a47d928ecf7"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/pydantic-pyproject.source.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/pydantic-pyproject.source.gz",
+      "bytes": 3592,
+      "sha256": "6e6eb20c0a3eda0abf6436fe7822cc2cb67d2ce26dc7bc9d01162a47d928ecf7"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/pydantic-release.source.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/pydantic-release.source.gz",
+      "bytes": 1794,
+      "sha256": "7aee262a4144b54e0150376ad8d5624311a6785571a0eb35730ad09f0fc7a813"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/pydantic-tag-object.source.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/pydantic-tag-object.source.gz",
+      "bytes": 414,
+      "sha256": "455791beaab815869939409b669f01cf52f75e5c108b331a3add69ef40380e60"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/pydantic-tag.source.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/pydantic-tag.source.gz",
+      "bytes": 212,
+      "sha256": "23671e470a905b05c57aa21a01f05608ea3a59b64b2da12099bc83cccfc0f0c6"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/pydantic-version-pinned.source.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/pydantic-version-pinned.source.gz",
+      "bytes": 1674,
+      "sha256": "0dda580d6461f593829aa5801dd58222303754331b1a3a309bc70d43f9acde13"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/reconciliation-map.before.md",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/reconciliation-map.before.md",
+      "bytes": 89315,
+      "sha256": "9eac3dd0ff363c498d4d592e2f85ed601adb497bec34cfb3cfcfd0a90136eb9f"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/reference-update.json",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/reference-update.json",
+      "bytes": 764,
+      "sha256": "dacbd0168c834c6442286408dc29fae0053db8f69d204bfe945ed8fd3caf4b86"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/source-observations.json",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/source-observations.json",
+      "bytes": 19523,
+      "sha256": "dd0bea779b2b42c36e2badae5b5764ccb71c73363472f45cec30fd28f42fbfbf"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/sqlalchemy-changelog.source.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/sqlalchemy-changelog.source.gz",
+      "bytes": 79860,
+      "sha256": "d53f4c7d36f6bc0eacac4bbafe4908e8852601ab41c59fa5397dc8309c79c962"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/sqlalchemy-release.source.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/sqlalchemy-release.source.gz",
+      "bytes": 10428,
+      "sha256": "b4031a2c3355c83e6855edc1d50602b049e08973e7d5682f776a3dfda801965b"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/source-channel-followup/version-policy.source.gz",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/source-channel-followup/version-policy.source.gz",
+      "bytes": 2803,
+      "sha256": "a44789069d562ddbebe16b4588f34b1bc8160fb16457f1b77335a74c23607aaa"
+    },
+    {
+      "path": "output/research/backend-hash-inputs-2026-10-08/windows-study-hashed-requirements.txt",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/backend-hash-inputs-2026-10-08/windows-study-hashed-requirements.txt",
+      "bytes": 4319,
+      "sha256": "1288d99812763198210cb1e5288656d3c37b6a07f38d1b91a7fd52bf7862402f"
+    },
+    {
+      "path": "output/research/compatibility-resolution-2026-10-04/backend-windows/pip-report.json",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/compatibility-resolution-2026-10-04/backend-windows/pip-report.json",
+      "bytes": 452688,
+      "sha256": "b9a135fa96ee978af2011ea4e4b8f848fd44235db46349caed74cc61ecc2c8f6"
+    },
+    {
+      "path": "output/research/refresh_backend_hash_inputs.py",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/output/research/refresh_backend_hash_inputs.py",
+      "bytes": 8330,
+      "sha256": "cb04dc78782e596071e8c716009fdc8f12dfbb8701576d28b5c169d059962ceb"
+    },
+    {
+      "path": "package-lock.json",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/package-lock.json",
+      "bytes": 76835,
+      "sha256": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908"
+    },
+    {
+      "path": "package.json",
+      "snapshot": "output/research/backend-current-review-2026-10-08/review-inputs/package.json",
+      "bytes": 538,
+      "sha256": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b"
+    }
+  ],
+  "no_install_or_runtime_test": true,
+  "production_selection": false,
+  "earlier_reviews_not_extended": true
+}

@@ -1,0 +1,35 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "result": "PASS",
+  "reviewer": "/root/review_identity_distribution_v1",
+  "reviewed_utc": "2026-10-08T22:59:51.369309+00:00",
+  "authority": "Founder approved all three prepared actions, including one read-only independent distribution-licence/publishing-evidence reviewer. No sub-agent delegation.",
+  "manifest": {
+    "path": "output/research/staff-identity-distribution-2026-10-09/review-inputs.json",
+    "sha256": "6a6d4c131ed0980ed50f77e622d3c8b29e4514ae929d462b796f98c98e154e78",
+    "input_count": 29
+  },
+  "scope": "The exact Authlib 1.8.0 and joserfc 1.7.5 preserved wheel/licence/publishing observations and the sole appended Staff identity distribution licences and publishing evidence section. Prior 45-package metadata closure is context only.",
+  "findings": [],
+  "verified": [
+    "All 29 manifest input byte lengths and SHA-256 digests match live saved inputs before and after review.",
+    "The current canonical document and backend.proposed.md are exactly backend.before.md plus backend-appendix.md. No prior canonical text changed.",
+    "Authlib wheel is 260804 bytes, SHA-256 88aebbd9af6757e14e912d5dc007ae1dc1f3e27e3b2152ce7c552ee2c3b3c121; joserfc wheel is 71269 bytes, SHA-256 add2c2c84e8373b084d526a8b53daba5d7a513a118cd2dcd9fc9f979d0922159. Each matches frozen resolver and exact registry records.",
+    "Read both wheels as ZIP data in memory: CRC verification, unique safe member paths, complete member inventory equality, exact saved METADATA/RECORD, duplicate-free three-column RECORD, all file lengths and URL-safe unpadded SHA-256 hashes. Authlib has 217 files including 216 hashed entries; joserfc has 61 files including 60 hashed entries; each RECORD self entry is unhashed.",
+    "Metadata identities match candidate names/versions. Each declares BSD-3-Clause through License and one License-File LICENSE, with no License-Expression field. Full saved licence text matches wheel bytes and recorded commit source-LICENSE bytes.",
+    "Authlib licence source commit equals the earlier client-options record 1a86748b31a2b1940b09cf627d1b70e03d85c077. Saved joserfc 1.7.5 tag response directly names commit 357c319119773c021bc8da433bdf31e42f77974b. This checks snapshot bindings, not source or tag authenticity.",
+    "Copyright notices, source/binary notice conditions, non-endorsement condition and disclaimer were read in full. Appendix accurately distinguishes retaining notices from legal clearance or delivered release notice bundles.",
+    "Both saved Integrity API responses report HTTP 200; raw/gzip identity chains match observations. Publisher objects name authlib/authlib and authlib/joserfc, pypi.yml, pypi-release. Decoded publish/v1 statement subjects match exact filenames and wheel digests. These remain explicitly cryptographically unverified.",
+    "Captured PyPA wheel-format, PyPI Integrity API and consuming-attestations guidance raw and compressed identities match. The guidance requires separate attestation verification with an independently expected repository; RECORD or unverified publisher fields do not substitute for that process.",
+    "The six protected pre-existing manifest/lock/runtime input digests in the earlier receipt remain unchanged. Separately approved native-trial and Figma work has no inherited approval from this review.",
+    "Appendix retains pending complete-candidate/transitive/embedded licence and notice inventory, provenance/advisory verification, native qualification, latest-compatible whole graph/locks, integrated/founder acceptance and package-selection boundaries."
+  ],
+  "limits": [
+    "No network requests, producer-script execution, wheel installation/import, signature/certificate/transparency verification or complete source-to-wheel/reproducible-build verification ran.",
+    "PASS concerns saved artifact self-consistency, licence text/source snapshot equality and accurate qualified appendix claims only. It is not publisher authenticity, legal clearance, complete dependency licensing, native runtime or staff sign-in qualification, application enforcement, graph/package selection, production readiness or founder acceptance.",
+    "Earlier metadata closure was not re-reviewed across the full 45-package graph. Public response dates/statuses are recorded producer observations, not fresh network observations by this reviewer.",
+    "Only this independent-review receipt was authored; no canonical, application, environment, Figma, model, account, Git, deployment or operational changes were made by the reviewer. Concurrent separately approved work is outside this receipt scope.",
+    "Status remains DOING because work is uncommitted and integrated acceptance remains separate. Later canonical edits do not inherit this exact-input PASS."
+  ]
+}

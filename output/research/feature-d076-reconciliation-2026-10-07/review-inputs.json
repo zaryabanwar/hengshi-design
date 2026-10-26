@@ -1,0 +1,139 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "D-076 additions to security and content feature definitions and existing producer checklist consistency only; no implementation or whole-feature acceptance",
+  "inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "snapshots/AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "snapshots/.specify/memory/constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "snapshots/DECISIONS.md",
+      "bytes": 84370,
+      "sha256": "f38b6f5930b51cae9188db8df6bc9fe458b0df907a3f6eab10fc6b956a0b50da"
+    },
+    {
+      "source": "specs/001-platform-security-hardening/spec.md",
+      "snapshot": "snapshots/specs/001-platform-security-hardening/spec.md",
+      "bytes": 30531,
+      "sha256": "88cd499685d95a0d9499ffab6e6606cf4d0ce87ba2c6fb812af4ca9a834f46e7"
+    },
+    {
+      "source": "specs/001-platform-security-hardening/checklists/requirements.md",
+      "snapshot": "snapshots/specs/001-platform-security-hardening/checklists/requirements.md",
+      "bytes": 3473,
+      "sha256": "6f92b3c648a6948a10564a81c814a7d51c9c9b906a1dde616f1ef9c89d84fb14"
+    },
+    {
+      "source": "specs/004-design-services-content/spec.md",
+      "snapshot": "snapshots/specs/004-design-services-content/spec.md",
+      "bytes": 27848,
+      "sha256": "e23e6a25ec3b5aa6896f21fddb7bdfecaeb1cdd792995d8479c1b548c3d6bd0c"
+    },
+    {
+      "source": "specs/004-design-services-content/checklists/requirements.md",
+      "snapshot": "snapshots/specs/004-design-services-content/checklists/requirements.md",
+      "bytes": 3958,
+      "sha256": "b84dab8f61339df8d5c23bad402d26f1eeb47cf1ed152ffb8dd75417f4052e5b"
+    },
+    {
+      "source": "specs/001-platform-security-hardening/reviews/security-feature-v1-2026-10-04.md",
+      "snapshot": "snapshots/specs/001-platform-security-hardening/reviews/security-feature-v1-2026-10-04.md",
+      "bytes": 10080,
+      "sha256": "26166b97feee585d524c682fe00a5b1c50aeb5278e71bf98d5edc96fb8ed2960"
+    },
+    {
+      "source": "specs/004-design-services-content/reviews/content-feature-v1-2026-10-04.md",
+      "snapshot": "snapshots/specs/004-design-services-content/reviews/content-feature-v1-2026-10-04.md",
+      "bytes": 8350,
+      "sha256": "c7fb841bf13e5f7a4654b2bccde5af5b40e3efbacd8a7dc0e4d56724dea7147c"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "bytes": 108274,
+      "sha256": "f247fd4c72d2e79cd03d77cd9d0e5287f2266c85bf4cefd129742bb2a9f639a2"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "bytes": 89614,
+      "sha256": "40a3779f56737725bb2c5e5d5a5ee34b44ad27030adc16cc374fdb9b04266a12"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+      "bytes": 49954,
+      "sha256": "b2f2b08e52569a7fa50a6e0a00eb71fc2ddd56d50f2033c9c9fa0bd75a282d64"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "bytes": 68608,
+      "sha256": "3d61c735d00c47d907814f193be4b35669ad950bdf27d8f0f8112f57a8fa6774"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md",
+      "bytes": 71036,
+      "sha256": "9bd9d0d291926ec783f19f84fba18785f4bb476e260d6447e9bde02e111fd9a2"
+    },
+    {
+      "source": "docs/software-definition/06-entity-and-public-contact.md",
+      "snapshot": "snapshots/docs/software-definition/06-entity-and-public-contact.md",
+      "bytes": 15443,
+      "sha256": "5e4f5fb9aa35ff2d5165383fb051f3dca2520df088cc2de20fe2c0bab8f40e47"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "bytes": 35916,
+      "sha256": "1959e28b6be31c3e660d89790612144bd32769d992d554d6b9ec026e898cf8d6"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/data-classification.csv",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/data-classification.csv",
+      "bytes": 5615,
+      "sha256": "c8793ebfb401178b4175f0f6c7b9cfb14edcd606f370090883cbe2be94f0cd6e"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/visitor-lifetime-controls-v1-2026-10-07.md",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/reviews/visitor-lifetime-controls-v1-2026-10-07.md",
+      "bytes": 6106,
+      "sha256": "a54f91d14cc9b32ca5cb4caff1bbbe90235f4c0b75ed73554ce5e29187008adc"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/company-public-projection-v1-2026-10-07.md",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/reviews/company-public-projection-v1-2026-10-07.md",
+      "bytes": 5748,
+      "sha256": "7222bc92b7dd3e846ba6faea9383f8d027c362ec6b38a19a26f9107d588da245"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/eu-privacy-retention-v1-2026-10-07.md",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/reviews/eu-privacy-retention-v1-2026-10-07.md",
+      "bytes": 8708,
+      "sha256": "b02ef22854693fd3f59581be855bd7e1b04e5387bec283aae3dbc63e91a5a200"
+    }
+  ],
+  "review_questions": [
+    "Do security amendments faithfully preserve visitor 30-minute inactivity/authorized End/no absolute age separately from staff 30-minute idle/eight-hour absolute bounds, retained records, booking uncertainty and resource limits?",
+    "Do content amendments preserve private typed company facts, defer registration/validity/address disclosures without waiving mandatory notices, and quarantine fictional non-sensitive local records from eligible public content/live staff?",
+    "Do both features correctly distinguish proposed EU class periods and mechanism bindings from adopted requirements, legal clearance and runtime proof; retain undecided alias ownership and approved identity/private-AI routes?",
+    "Do changed functional requirements and acceptance scenarios remain consistent with current controlling contracts and exact scoped receipts; identify stale review labels without expanding prior review authority?",
+    "Are existing checklists honest about preserved exact input reviews and planning/implementation/feature/integrated acceptance still held?"
+  ],
+  "independent_verdict": null,
+  "tests_added": false,
+  "application_changed": false,
+  "external_writes": false,
+  "committed": false
+}

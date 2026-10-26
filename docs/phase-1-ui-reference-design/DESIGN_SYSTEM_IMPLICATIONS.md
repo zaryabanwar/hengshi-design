@@ -66,8 +66,9 @@ The following boundaries are absolute for this contract:
   Framework Relay supplies the entity mark; D-036 supplies the responsive,
   accessible route and flow architecture. This contract adds no visual direction.
 - **Platform targets:** responsive public and staff browser surfaces, complete
-  semantic HTML for every indexable route before JavaScript, and an optional
-  WebGL layer whose Quick Access route remains an equivalent non-WebGL journey.
+  semantic HTML for every indexable route before JavaScript, and four peer delivery
+  streams. S-SEMANTIC provides the equivalent semantic Quick Access journey;
+  S-HIGH, S-MEDIUM and S-LOW provide WebGL journeys (D-056), never a lesser fallback.
 - **Implementation family:** later implementation remains within the approved
   React, TypeScript, Vite, TailwindCSS, and React Three Fiber family on a
   separately approved stable compatibility matrix. This document selects no
@@ -195,7 +196,7 @@ No value is selected by this document.
 | `semantic.elevation.{panel,dialog,drawer}` | `--hd-elevation-*` | Boundaries must survive without shadow, transparency, or depth |
 | `semantic.data.{axis,grid,label,series,missing,target,interval}` | `--hd-data-*` | Exact series alias, direct labels, grayscale, table equivalent, and uncertainty treatment |
 | `semantic.stream.{high,medium,low,semantic}.{id,profile,evidence-token,label,presentation,canvas}` | `--hd-stream-*` | Exact visible label copy per stream in peer vocabulary (gated public copy); the token carries the stream identifier, the `DS-S-*` evidence profile, the `EC-08` `STREAM_*` token, the style guide §8.2 presentation text and the canvas fact, and never a raw rendering value, a U-03 tier boundary, an ordering, a mode value or an availability |
-| `semantic.focus.scene.{ring,ring-width,offset,layer,contrast-floor,motion}` | `--hd-focus-scene-*` | The focus ring for WebGL hotspots and HUD controls in `S-HIGH`, `S-MEDIUM` and `S-LOW`: width 3 px and a 3:1 floor against every adjacent scene colour (style guide §4.1; `NFR-A11Y-005`), rendered above `semantic.elevation.panel` so no part is obscured; ring colour, offset and the adjacency sampling method remain gated; resolves to `semantic.focus.*` in `S-SEMANTIC` (recorded assumption A-4 of `DESIGN_SYSTEM_AMENDMENT_R-039.md`) |
+| `semantic.focus.scene.{ring,ring-width,offset,layer,contrast-floor,motion}` | `--hd-focus-scene-*` | The focus ring for WebGL hotspots and HUD controls in `S-HIGH`, `S-MEDIUM` and `S-LOW`: width 3 px and a 3:1 floor against every immediately adjacent opaque backing colour for authored scene indicators (D-055; backing covers both sides of the complete path without hiding target, label or another focused control; outer scene boundary visibility inspected; D-054 preserves native radio rendering; style guide §4.1; `NFR-A11Y-005`), rendered above `semantic.elevation.panel` so no part is obscured; ring colour, offset and the adjacency sampling method remain gated; resolves to `semantic.focus.*` in `S-SEMANTIC` (recorded assumption A-4 of `DESIGN_SYSTEM_AMENDMENT_R-039.md`) |
 | `component.*` | `--hd-{component}-{variant}-{state}-{property}` | Created only after semantic aliases and component anatomy are approved |
 
 ### 2.4 Naming and lifecycle rules
@@ -214,15 +215,21 @@ No value is selected by this document.
   human decision and migration record. Shared-library publication requires its
   own explicit approval.
 - Dark and light are controlled surface pairings. Forced colors, grayscale,
-  reduced motion, low power, non-WebGL, print, unavailable font, and unavailable
+  reduced motion, low power, print, unavailable font, and unavailable
   asset are required verification contexts, not optional decorative themes.
 - The four delivery streams `S-HIGH`, `S-MEDIUM`, `S-LOW` and `S-SEMANTIC` are
-  required verification contexts, each verified separately: a pairing, state or
+  an independent delivery-stream verification axis, each stream verified separately:
+  a pairing, state or
   rendering verified in one stream is not verified in another. The stream axis
   uses the role `stream` with the variant values `high`, `medium`, `low` and
   `semantic` (`hd/semantic/stream/{variant}/{property}`;
   `--hd-stream-{variant}-{property}`), and the primitive variant values
   `stream-high`, `stream-medium`, `stream-low` and `stream-semantic`.
+
+These verification contexts are separate from the delivery-stream axis and apply
+across relevant streams. S-SEMANTIC is a peer stream, not a verification mode.
+When a component receives keyboard focus, author-created content must not entirely
+hide it (NFR-A11Y-008, D-056); stronger existing HUD/focus safeguards remain.
 
 ## 3. Primitive and component contract
 
@@ -331,7 +338,7 @@ resolutions 1, 3 and 6; `FR-3D-013` to `FR-3D-016`; `NFR-A11Y-004`; style guide
   independently; Apply's name states that it applies the selection and differs
   from the group and radio names; radio labels use the peer stream vocabulary
   carried by `--hd-stream-*-label`, with none of the label words `NFR-A11Y-004`
-  prohibits. Exact public copy is gated.
+  prohibits. Exact stream-control copy and radio order follow the accepted D-057 bundle in accessibility/UG-3_CONTROL_COPY_PROPOSAL.md; legal notice content remains gated.
 - **Advisement:** visible text inside the fieldset before Apply in DOM and
   visual order, identical wording in every stream, programmatically associated
   with both the fieldset and Apply; never tooltip, title, hover-only,
@@ -387,7 +394,7 @@ resolutions 1, 3 and 6; `FR-3D-013` to `FR-3D-016`; `NFR-A11Y-004`; style guide
 - Reduced motion produces the complete stable state before nonessential travel,
   tracing, parallax, particle, loop, or camera movement. Essential content never
   waits for animation.
-- Low-power, non-WebGL, unsupported-browser, offline, missing-image, missing-font,
+- Low-power, unsupported-browser, offline, missing-image, missing-font,
   and 3D-asset failures preserve canonical content, location where safe, and the
   smallest valid recovery action.
 - Forced colors and grayscale preserve focus, boundary, current/selected state,
@@ -459,7 +466,10 @@ resolutions 1, 3 and 6; `FR-3D-013` to `FR-3D-016`; `NFR-A11Y-004`; style guide
   and the announcement names the new stream and the arrival location.
 - Focus indicators use `semantic.focus.*` on semantic shells and
   `semantic.focus.scene.*` for WebGL hotspots and HUD controls, at least 3:1
-  against every adjacent surface or scene colour in each stream's own rendering.
+  against every immediately adjacent opaque backing colour for authored scene
+  indicators under D-055, in each stream's own rendering; preserve target/label
+  visibility and inspect the outer scene boundary. Native radios retain D-054
+  platform appearance; semantic authored indicators retain adjacent-surface checks.
 
 ## 6. Required content stress cases
 

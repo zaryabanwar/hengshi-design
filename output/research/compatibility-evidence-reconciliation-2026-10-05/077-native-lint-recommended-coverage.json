@@ -1,0 +1,413 @@
+{
+  "as_of": "2026-10-04",
+  "tool_version": "Version: 1.86.0",
+  "context7": {
+    "library_id": "/websites/oxc_rs_guide_usage",
+    "query_date": "2026-10-04",
+    "query": "Stable React hook rules versus recommended preset; experimental compiler rule coverage"
+  },
+  "upstream_official_recommended_source": "https://react.dev/reference/eslint-plugin-react-hooks",
+  "compiler_experimental_policy_source": "https://oxc.rs/docs/guide/usage/linter/plugins.html",
+  "compiler_group_documented_experimental": true,
+  "command": [
+    "node",
+    "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\compatibility-resolution-2026-10-04\\native-lint-probe\\tool\\node_modules\\oxlint\\bin\\oxlint",
+    "--rules",
+    "--format",
+    "json"
+  ],
+  "raw_inventory_sha256": "2a8ddfda57f9baa5f855f45f8a1f9c319cd357abab0a94c64641bc9cef6cb98d",
+  "rows": [
+    {
+      "upstream_rule": "exhaustive-deps",
+      "native_registered": true,
+      "native_metadata": {
+        "scope": "react",
+        "value": "exhaustive-deps",
+        "category": "correctness",
+        "type_aware": false,
+        "fix": "fixable_dangerous_fix_or_suggestion",
+        "default": false,
+        "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/exhaustive-deps.html"
+      },
+      "behavior_equivalence_proven": false,
+      "official_rule_doc": {
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/exhaustive-deps.html",
+        "error_type": "HTTPError"
+      },
+      "disposition": "existing_two_rule_fixture_scope_only_no_preset_equivalence",
+      "existing_behavior_evidence": "native-lint-behavior-probe.json"
+    },
+    {
+      "upstream_rule": "rules-of-hooks",
+      "native_registered": true,
+      "native_metadata": {
+        "scope": "react",
+        "value": "rules-of-hooks",
+        "category": "pedantic",
+        "type_aware": false,
+        "fix": "none",
+        "default": false,
+        "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/rules-of-hooks.html"
+      },
+      "behavior_equivalence_proven": false,
+      "official_rule_doc": {
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/rules-of-hooks.html",
+        "error_type": "HTTPError"
+      },
+      "disposition": "existing_two_rule_fixture_scope_only_no_preset_equivalence",
+      "existing_behavior_evidence": "native-lint-behavior-probe.json"
+    },
+    {
+      "upstream_rule": "component-hook-factories",
+      "native_registered": false,
+      "native_metadata": null,
+      "behavior_equivalence_proven": false,
+      "disposition": "not_registered_in_installed_candidate"
+    },
+    {
+      "upstream_rule": "config",
+      "native_registered": false,
+      "native_metadata": null,
+      "behavior_equivalence_proven": false,
+      "disposition": "not_registered_in_installed_candidate"
+    },
+    {
+      "upstream_rule": "error-boundaries",
+      "native_registered": true,
+      "native_metadata": {
+        "scope": "react",
+        "value": "error-boundaries",
+        "category": "correctness",
+        "type_aware": false,
+        "fix": "none",
+        "default": false,
+        "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/error-boundaries.html"
+      },
+      "behavior_equivalence_proven": false,
+      "official_rule_doc": {
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/error-boundaries.html",
+        "error_type": "HTTPError"
+      },
+      "disposition": "experimental_native_compiler_rule_excluded_from_production_requirement",
+      "official_web_verification": {
+        "method": "web open/find of the official per-rule page",
+        "date": "2026-10-04",
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/error-boundaries.html",
+        "powered_by_react_compiler": true,
+        "experimental_group_source": "https://oxc.rs/docs/guide/usage/linter/plugins.html"
+      }
+    },
+    {
+      "upstream_rule": "gating",
+      "native_registered": false,
+      "native_metadata": null,
+      "behavior_equivalence_proven": false,
+      "disposition": "not_registered_in_installed_candidate"
+    },
+    {
+      "upstream_rule": "globals",
+      "native_registered": true,
+      "native_metadata": {
+        "scope": "react",
+        "value": "globals",
+        "category": "correctness",
+        "type_aware": false,
+        "fix": "none",
+        "default": false,
+        "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/globals.html"
+      },
+      "behavior_equivalence_proven": false,
+      "official_rule_doc": {
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/globals.html",
+        "error_type": "HTTPError"
+      },
+      "disposition": "experimental_native_compiler_rule_excluded_from_production_requirement",
+      "official_web_verification": {
+        "method": "web open/find of the official per-rule page",
+        "date": "2026-10-04",
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/globals.html",
+        "powered_by_react_compiler": true,
+        "experimental_group_source": "https://oxc.rs/docs/guide/usage/linter/plugins.html"
+      }
+    },
+    {
+      "upstream_rule": "immutability",
+      "native_registered": true,
+      "native_metadata": {
+        "scope": "react",
+        "value": "immutability",
+        "category": "correctness",
+        "type_aware": false,
+        "fix": "none",
+        "default": false,
+        "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/immutability.html"
+      },
+      "behavior_equivalence_proven": false,
+      "official_rule_doc": {
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/immutability.html",
+        "error_type": "HTTPError"
+      },
+      "disposition": "experimental_native_compiler_rule_excluded_from_production_requirement",
+      "official_web_verification": {
+        "method": "web open/find of the official per-rule page",
+        "date": "2026-10-04",
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/immutability.html",
+        "powered_by_react_compiler": true,
+        "experimental_group_source": "https://oxc.rs/docs/guide/usage/linter/plugins.html"
+      }
+    },
+    {
+      "upstream_rule": "incompatible-library",
+      "native_registered": true,
+      "native_metadata": {
+        "scope": "react",
+        "value": "incompatible-library",
+        "category": "correctness",
+        "type_aware": false,
+        "fix": "none",
+        "default": false,
+        "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/incompatible-library.html"
+      },
+      "behavior_equivalence_proven": false,
+      "official_rule_doc": {
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/incompatible-library.html",
+        "error_type": "HTTPError"
+      },
+      "disposition": "experimental_native_compiler_rule_excluded_from_production_requirement",
+      "official_web_verification": {
+        "method": "web open/find of the official per-rule page",
+        "date": "2026-10-04",
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/incompatible-library.html",
+        "powered_by_react_compiler": true,
+        "experimental_group_source": "https://oxc.rs/docs/guide/usage/linter/plugins.html"
+      }
+    },
+    {
+      "upstream_rule": "preserve-manual-memoization",
+      "native_registered": true,
+      "native_metadata": {
+        "scope": "react",
+        "value": "preserve-manual-memoization",
+        "category": "correctness",
+        "type_aware": false,
+        "fix": "none",
+        "default": false,
+        "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/preserve-manual-memoization.html"
+      },
+      "behavior_equivalence_proven": false,
+      "official_rule_doc": {
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/preserve-manual-memoization.html",
+        "error_type": "HTTPError"
+      },
+      "disposition": "experimental_native_compiler_rule_excluded_from_production_requirement",
+      "official_web_verification": {
+        "method": "web open/find of the official per-rule page",
+        "date": "2026-10-04",
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/preserve-manual-memoization.html",
+        "powered_by_react_compiler": true,
+        "experimental_group_source": "https://oxc.rs/docs/guide/usage/linter/plugins.html"
+      }
+    },
+    {
+      "upstream_rule": "purity",
+      "native_registered": true,
+      "native_metadata": {
+        "scope": "react",
+        "value": "purity",
+        "category": "correctness",
+        "type_aware": false,
+        "fix": "none",
+        "default": false,
+        "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/purity.html"
+      },
+      "behavior_equivalence_proven": false,
+      "official_rule_doc": {
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/purity.html",
+        "error_type": "HTTPError"
+      },
+      "disposition": "experimental_native_compiler_rule_excluded_from_production_requirement",
+      "official_web_verification": {
+        "method": "web open/find of the official per-rule page",
+        "date": "2026-10-04",
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/purity.html",
+        "powered_by_react_compiler": true,
+        "experimental_group_source": "https://oxc.rs/docs/guide/usage/linter/plugins.html"
+      }
+    },
+    {
+      "upstream_rule": "refs",
+      "native_registered": true,
+      "native_metadata": {
+        "scope": "react",
+        "value": "refs",
+        "category": "correctness",
+        "type_aware": false,
+        "fix": "none",
+        "default": false,
+        "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/refs.html"
+      },
+      "behavior_equivalence_proven": false,
+      "official_rule_doc": {
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/refs.html",
+        "error_type": "HTTPError"
+      },
+      "disposition": "experimental_native_compiler_rule_excluded_from_production_requirement",
+      "official_web_verification": {
+        "method": "web open/find of the official per-rule page",
+        "date": "2026-10-04",
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/refs.html",
+        "powered_by_react_compiler": true,
+        "experimental_group_source": "https://oxc.rs/docs/guide/usage/linter/plugins.html"
+      }
+    },
+    {
+      "upstream_rule": "set-state-in-effect",
+      "native_registered": true,
+      "native_metadata": {
+        "scope": "react",
+        "value": "set-state-in-effect",
+        "category": "correctness",
+        "type_aware": false,
+        "fix": "none",
+        "default": false,
+        "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/set-state-in-effect.html"
+      },
+      "behavior_equivalence_proven": false,
+      "official_rule_doc": {
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/set-state-in-effect.html",
+        "error_type": "HTTPError"
+      },
+      "disposition": "experimental_native_compiler_rule_excluded_from_production_requirement",
+      "official_web_verification": {
+        "method": "web open/find of the official per-rule page",
+        "date": "2026-10-04",
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/set-state-in-effect.html",
+        "powered_by_react_compiler": true,
+        "experimental_group_source": "https://oxc.rs/docs/guide/usage/linter/plugins.html"
+      }
+    },
+    {
+      "upstream_rule": "set-state-in-render",
+      "native_registered": true,
+      "native_metadata": {
+        "scope": "react",
+        "value": "set-state-in-render",
+        "category": "correctness",
+        "type_aware": false,
+        "fix": "none",
+        "default": false,
+        "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/set-state-in-render.html"
+      },
+      "behavior_equivalence_proven": false,
+      "official_rule_doc": {
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/set-state-in-render.html",
+        "error_type": "HTTPError"
+      },
+      "disposition": "experimental_native_compiler_rule_excluded_from_production_requirement",
+      "official_web_verification": {
+        "method": "web open/find of the official per-rule page",
+        "date": "2026-10-04",
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/set-state-in-render.html",
+        "powered_by_react_compiler": true,
+        "experimental_group_source": "https://oxc.rs/docs/guide/usage/linter/plugins.html"
+      }
+    },
+    {
+      "upstream_rule": "static-components",
+      "native_registered": true,
+      "native_metadata": {
+        "scope": "react",
+        "value": "static-components",
+        "category": "correctness",
+        "type_aware": false,
+        "fix": "none",
+        "default": false,
+        "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/static-components.html"
+      },
+      "behavior_equivalence_proven": false,
+      "official_rule_doc": {
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/static-components.html",
+        "error_type": "HTTPError"
+      },
+      "disposition": "experimental_native_compiler_rule_excluded_from_production_requirement",
+      "official_web_verification": {
+        "method": "web open/find of the official per-rule page",
+        "date": "2026-10-04",
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/static-components.html",
+        "powered_by_react_compiler": true,
+        "experimental_group_source": "https://oxc.rs/docs/guide/usage/linter/plugins.html"
+      }
+    },
+    {
+      "upstream_rule": "unsupported-syntax",
+      "native_registered": true,
+      "native_metadata": {
+        "scope": "react",
+        "value": "unsupported-syntax",
+        "category": "restriction",
+        "type_aware": false,
+        "fix": "none",
+        "default": false,
+        "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/unsupported-syntax.html"
+      },
+      "behavior_equivalence_proven": false,
+      "official_rule_doc": {
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/unsupported-syntax.html",
+        "error_type": "HTTPError"
+      },
+      "disposition": "experimental_native_compiler_rule_excluded_from_production_requirement",
+      "official_web_verification": {
+        "method": "web open/find of the official per-rule page",
+        "date": "2026-10-04",
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/unsupported-syntax.html",
+        "powered_by_react_compiler": true,
+        "experimental_group_source": "https://oxc.rs/docs/guide/usage/linter/plugins.html"
+      }
+    },
+    {
+      "upstream_rule": "use-memo",
+      "native_registered": true,
+      "native_metadata": {
+        "scope": "react",
+        "value": "use-memo",
+        "category": "correctness",
+        "type_aware": false,
+        "fix": "none",
+        "default": false,
+        "docs_url": "https://oxc.rs/docs/guide/usage/linter/rules/react/use-memo.html"
+      },
+      "behavior_equivalence_proven": false,
+      "official_rule_doc": {
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/use-memo.html",
+        "error_type": "HTTPError"
+      },
+      "disposition": "experimental_native_compiler_rule_excluded_from_production_requirement",
+      "official_web_verification": {
+        "method": "web open/find of the official per-rule page",
+        "date": "2026-10-04",
+        "url": "https://oxc.rs/docs/guide/usage/linter/rules/react/use-memo.html",
+        "powered_by_react_compiler": true,
+        "experimental_group_source": "https://oxc.rs/docs/guide/usage/linter/plugins.html"
+      }
+    }
+  ],
+  "production_selection": false,
+  "experimental_rules_executed": false,
+  "application_source_changed": false,
+  "dependency_graph_or_runtime_accepted": false,
+  "independent_review": "not_completed",
+  "direct_http_attempt": "Failed requests preserved in official_rule_doc.error_type; web tool supplied separate successful compiler-rule documentation verification",
+  "summary": {
+    "upstream_recommended_identifiers": 17,
+    "matching_native_identifiers": 14,
+    "existing_noncompiler_fixture_rule_scope": 2,
+    "documented_experimental_compiler_matches": 12,
+    "no_matching_native_identifier": [
+      "component-hook-factories",
+      "config",
+      "gating"
+    ],
+    "no_alias_or_aggregate_equivalence_inferred": true
+  }
+}

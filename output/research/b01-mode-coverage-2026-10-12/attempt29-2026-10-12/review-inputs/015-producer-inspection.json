@@ -1,0 +1,132 @@
+{
+  "product": "Hengshi Design v1",
+  "scope": "Producer static frame inspection for37 exact crops from four returned native sheets. Metadata correspondence only for11 missing focused recovery frames.",
+  "created_frames": 48,
+  "returned_frame_crops": 37,
+  "missing_pixel_frames": [
+    {
+      "input_index": 31,
+      "frame_id": "36:3452",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_HIGH_V01"
+    },
+    {
+      "input_index": 32,
+      "frame_id": "36:3481",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_REDUCED_MOTION_STREAM_HIGH_V01"
+    },
+    {
+      "input_index": 34,
+      "frame_id": "36:3541",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_MEDIUM_V01"
+    },
+    {
+      "input_index": 35,
+      "frame_id": "36:3570",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_LOW_POWER_STREAM_LOW_V01"
+    },
+    {
+      "input_index": 36,
+      "frame_id": "36:3598",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_LOW_V01"
+    },
+    {
+      "input_index": 38,
+      "frame_id": "36:3659",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_SEMANTIC_V01"
+    },
+    {
+      "input_index": 40,
+      "frame_id": "36:3720",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_PRINT_STREAM_SEMANTIC_V01"
+    },
+    {
+      "input_index": 41,
+      "frame_id": "36:3736",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SEMANTIC_SHELL_STREAM_SEMANTIC_V01"
+    },
+    {
+      "input_index": 42,
+      "frame_id": "36:3764",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_GRAYSCALE_STREAM_SEMANTIC_V01"
+    },
+    {
+      "input_index": 43,
+      "frame_id": "36:3792",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_UNAVAILABLE_FONT_STREAM_SEMANTIC_V01"
+    },
+    {
+      "input_index": 44,
+      "frame_id": "36:3820",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_UNAVAILABLE_IMAGE_ASSET_STREAM_SEMANTIC_V01"
+    }
+  ],
+  "inspected_frame_groups": [
+    "inspection-group-01.png",
+    "inspection-group-02.png",
+    "inspection-group-03.png",
+    "inspection-group-04.png",
+    "inspection-group-05.png",
+    "inspection-group-06.png",
+    "inspection-group-07.png",
+    "inspection-group-08.png",
+    "inspection-group-09.png",
+    "inspection-group-10.png"
+  ],
+  "frame_visual_findings": [],
+  "observations": [
+    "All37 provided frame crops were viewed; no visible clipped/overlapping content in that inspected scope.",
+    "Four full forced-colours recovery streams are present among returned pixels. This is an authored static white/ink fixture, not OS forced-colours execution.",
+    "Print is an inert summary; semantic/screen-reader/reduced-motion/low-power references do not prove runtime behavior.",
+    "Fallback text appears monospaced in provided unavailable-font regions; membership reports remain bounded to TEXT nodes.",
+    "The source return carries prepared-only/current28/25 language from frozen input limitations; actual attempt29 execution/count is controlled by authorization and ledger, not those inherited limitation strings.",
+    "Annotations are preserved in unit crops but were not independently reviewed."
+  ],
+  "font_membership": [
+    {
+      "font": {
+        "family": "Cascadia Mono",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "textNodes": 141
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "slnt": 0
+        }
+      },
+      "textNodes": 67
+    },
+    {
+      "font": {
+        "family": "Inter",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "slnt": 0
+        }
+      },
+      "textNodes": 550
+    }
+  ],
+  "reported_created_ids": 1998,
+  "reported_temporary_ids": 791,
+  "reported_retained_ids": 1207,
+  "reported_id_count_not_physical_canvas_census": true,
+  "independent_result_review": "TODO",
+  "review_capacity_evidence": "../../renderer-stable-recheck-2026-10-12/review-attempt.json",
+  "remaining": [
+    "11 focused recovery views lack pixels",
+    "Independent static result and design/accessibility reviews",
+    "Actual font/rendering/editability census and prototypes",
+    "Complete B01 coverage and final exports/native restore_EXIT/founder acceptance"
+  ],
+  "no_additional_figma_call_authorized": true,
+  "review_capacity": "Last authorized reviewer terminated during separate renderer recheck with workspace-credits error; no attempt29 result verdict exists."
+}

@@ -1,0 +1,12 @@
+### Result
+- [Screenshot of full page](./narrow-viewport.png)
+### Ran Playwright code
+```js
+// Screenshot full page and save it as ./narrow-viewport.png
+await page.screenshot({
+  fullPage: true,
+  path: './narrow-viewport.png',
+  scale: 'css',
+  type: 'png'
+});
+```

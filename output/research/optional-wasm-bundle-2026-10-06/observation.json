@@ -1,0 +1,225 @@
+{
+  "checked_at_utc": "2026-10-06T05:11:04.872832+00:00",
+  "package": "@tailwindcss/oxide-wasm32-wasi",
+  "version": "4.3.3",
+  "archive_bytes": 1829808,
+  "archive_sha256": "d5b61fbe10d237f7565032a74b03b5be6c83b309037ee407e2b5b46f24738823",
+  "archive_sha512_matches_lock": true,
+  "lock_sha256": "fa903a8d901357aacf80863524e0e00ae2ece69126daf218256cdd2656b2da4c",
+  "npm_source_sha256": "4207e0d6174beaae75ba2486b1c27727c9f38797eec9308a0cfdc6b9b830ba98",
+  "archive_member_count": 113,
+  "declared_unpacked_bytes": 11574189,
+  "package_metadata_records": [
+    {
+      "archive_path": "package/node_modules/@emnapi/core/package.json",
+      "saved_path": "package-metadata-00.json",
+      "sha256": "ef9b64c17a928e8197624b57df118a8f095cabbebb66e134daebc9d487541266",
+      "name": "@emnapi/core",
+      "version": "1.11.1",
+      "license": "MIT",
+      "dependencies": {
+        "@emnapi/wasi-threads": "1.2.2",
+        "tslib": "^2.4.0"
+      },
+      "bundleDependencies": []
+    },
+    {
+      "archive_path": "package/node_modules/@emnapi/runtime/package.json",
+      "saved_path": "package-metadata-01.json",
+      "sha256": "d67a7be4cce81ade30e27261b34a65af3e72ff69d35b313d14a16c8ba4247d8e",
+      "name": "@emnapi/runtime",
+      "version": "1.11.1",
+      "license": "MIT",
+      "dependencies": {
+        "tslib": "^2.4.0"
+      },
+      "bundleDependencies": []
+    },
+    {
+      "archive_path": "package/node_modules/@emnapi/wasi-threads/package.json",
+      "saved_path": "package-metadata-02.json",
+      "sha256": "d0e6e4255490f8eb9c916a8061c21ef645c6104edf7b88d927b930a588b9a659",
+      "name": "@emnapi/wasi-threads",
+      "version": "1.2.2",
+      "license": "MIT",
+      "dependencies": {
+        "tslib": "^2.4.0"
+      },
+      "bundleDependencies": []
+    },
+    {
+      "archive_path": "package/node_modules/@napi-rs/wasm-runtime/package.json",
+      "saved_path": "package-metadata-03.json",
+      "sha256": "5f9db850fde3b2adaf40343485598ad1606d5177748c4cdede5ddc8696940ab1",
+      "name": "@napi-rs/wasm-runtime",
+      "version": "1.1.4",
+      "license": "MIT",
+      "dependencies": {
+        "@tybys/wasm-util": "^0.10.1"
+      },
+      "bundleDependencies": []
+    },
+    {
+      "archive_path": "package/node_modules/@tybys/wasm-util/package.json",
+      "saved_path": "package-metadata-04.json",
+      "sha256": "a7b1718e6616ae2cd235a365d03b8d5b5e8c5d6a27e9f7604a3d51ed20ca9c29",
+      "name": "@tybys/wasm-util",
+      "version": "0.10.2",
+      "license": "MIT",
+      "dependencies": {
+        "tslib": "^2.4.0"
+      },
+      "bundleDependencies": []
+    },
+    {
+      "archive_path": "package/node_modules/tslib/modules/package.json",
+      "saved_path": "package-metadata-05.json",
+      "sha256": "f2a77d1fa2e7ee710b2835b2933d75d9c7f5dad4f1bab69e1679876e32b5e9eb",
+      "name": null,
+      "version": null,
+      "license": null,
+      "dependencies": {},
+      "bundleDependencies": []
+    },
+    {
+      "archive_path": "package/node_modules/tslib/package.json",
+      "saved_path": "package-metadata-06.json",
+      "sha256": "f02b4851df316f29bdfcd404aa1eb41e4e216b5859015f81fcd3e91caf8be931",
+      "name": "tslib",
+      "version": "2.8.1",
+      "license": "0BSD",
+      "dependencies": {},
+      "bundleDependencies": []
+    },
+    {
+      "archive_path": "package/package.json",
+      "saved_path": "package-metadata-07.json",
+      "sha256": "992d12fdcbea73c338441142f7d629ac22561c3d25c72fa8ca93768353a5947f",
+      "name": "@tailwindcss/oxide-wasm32-wasi",
+      "version": "4.3.3",
+      "license": "MIT",
+      "dependencies": {
+        "@napi-rs/wasm-runtime": "^1.1.4",
+        "@emnapi/core": "^1.11.1",
+        "@emnapi/runtime": "^1.11.1",
+        "@tybys/wasm-util": "^0.10.2",
+        "@emnapi/wasi-threads": "^1.2.2",
+        "tslib": "^2.8.1"
+      },
+      "bundleDependencies": [
+        "@napi-rs/wasm-runtime",
+        "@emnapi/core",
+        "@emnapi/runtime",
+        "@tybys/wasm-util",
+        "@emnapi/wasi-threads",
+        "tslib"
+      ]
+    }
+  ],
+  "six_failed_edges": [
+    {
+      "name": "@emnapi/core",
+      "declared_range": "^1.11.1",
+      "archive_package": {
+        "archive_path": "package/node_modules/@emnapi/core/package.json",
+        "saved_path": "package-metadata-00.json",
+        "sha256": "ef9b64c17a928e8197624b57df118a8f095cabbebb66e134daebc9d487541266",
+        "name": "@emnapi/core",
+        "version": "1.11.1",
+        "license": "MIT",
+        "dependencies": {
+          "@emnapi/wasi-threads": "1.2.2",
+          "tslib": "^2.4.0"
+        },
+        "bundleDependencies": []
+      },
+      "lock_locations": []
+    },
+    {
+      "name": "@emnapi/runtime",
+      "declared_range": "^1.11.1",
+      "archive_package": {
+        "archive_path": "package/node_modules/@emnapi/runtime/package.json",
+        "saved_path": "package-metadata-01.json",
+        "sha256": "d67a7be4cce81ade30e27261b34a65af3e72ff69d35b313d14a16c8ba4247d8e",
+        "name": "@emnapi/runtime",
+        "version": "1.11.1",
+        "license": "MIT",
+        "dependencies": {
+          "tslib": "^2.4.0"
+        },
+        "bundleDependencies": []
+      },
+      "lock_locations": []
+    },
+    {
+      "name": "@emnapi/wasi-threads",
+      "declared_range": "^1.2.2",
+      "archive_package": {
+        "archive_path": "package/node_modules/@emnapi/wasi-threads/package.json",
+        "saved_path": "package-metadata-02.json",
+        "sha256": "d0e6e4255490f8eb9c916a8061c21ef645c6104edf7b88d927b930a588b9a659",
+        "name": "@emnapi/wasi-threads",
+        "version": "1.2.2",
+        "license": "MIT",
+        "dependencies": {
+          "tslib": "^2.4.0"
+        },
+        "bundleDependencies": []
+      },
+      "lock_locations": []
+    },
+    {
+      "name": "@napi-rs/wasm-runtime",
+      "declared_range": "^1.1.4",
+      "archive_package": {
+        "archive_path": "package/node_modules/@napi-rs/wasm-runtime/package.json",
+        "saved_path": "package-metadata-03.json",
+        "sha256": "5f9db850fde3b2adaf40343485598ad1606d5177748c4cdede5ddc8696940ab1",
+        "name": "@napi-rs/wasm-runtime",
+        "version": "1.1.4",
+        "license": "MIT",
+        "dependencies": {
+          "@tybys/wasm-util": "^0.10.1"
+        },
+        "bundleDependencies": []
+      },
+      "lock_locations": []
+    },
+    {
+      "name": "@tybys/wasm-util",
+      "declared_range": "^0.10.2",
+      "archive_package": {
+        "archive_path": "package/node_modules/@tybys/wasm-util/package.json",
+        "saved_path": "package-metadata-04.json",
+        "sha256": "a7b1718e6616ae2cd235a365d03b8d5b5e8c5d6a27e9f7604a3d51ed20ca9c29",
+        "name": "@tybys/wasm-util",
+        "version": "0.10.2",
+        "license": "MIT",
+        "dependencies": {
+          "tslib": "^2.4.0"
+        },
+        "bundleDependencies": []
+      },
+      "lock_locations": []
+    },
+    {
+      "name": "tslib",
+      "declared_range": "^2.8.1",
+      "archive_package": {
+        "archive_path": "package/node_modules/tslib/package.json",
+        "saved_path": "package-metadata-06.json",
+        "sha256": "f02b4851df316f29bdfcd404aa1eb41e4e216b5859015f81fcd3e91caf8be931",
+        "name": "tslib",
+        "version": "2.8.1",
+        "license": "0BSD",
+        "dependencies": {},
+        "bundleDependencies": []
+      },
+      "lock_locations": []
+    }
+  ],
+  "all_six_exact_metadata_paths_present": true,
+  "scope": "Static archive metadata observation only. No semver acceptance, executable behavior, all-platform SBOM, licence clearance, attestation or production selection.",
+  "network_or_install_or_extract_or_execute": false
+}

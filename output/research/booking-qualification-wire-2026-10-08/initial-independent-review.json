@@ -1,0 +1,25 @@
+{
+  "result": "REVISE",
+  "reviewer": "/root/review_directory_references_v1",
+  "input_manifest_sha256": "dd4736823eac43eb3fef8ebd3566db5fc10252fec59504860c16190cedc8cce9",
+  "input_count": 36,
+  "findings": [
+    {
+      "id": "QW01",
+      "line": 867,
+      "reason": "Retain outcome and binding while authorized lost-acknowledgement reconciliation remains permitted; stale expected revision alone cannot retire that receipt."
+    },
+    {
+      "id": "QW02",
+      "line": 743,
+      "reason": "Blanket local-part case preservation conflicts with installed email-validator RFC 2142 reserved mailbox normalization."
+    }
+  ],
+  "evidence": {
+    "initial_and_final_input_identity": "36 live/snapshot pairs matched",
+    "schema_validator_methods_passed": 37,
+    "email_observations_replayed": 10,
+    "preserved_prefix_bytes": 51824
+  },
+  "limits": "Definition/schema review only; no implementation enforcement, production graph or integrated acceptance."
+}

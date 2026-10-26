@@ -1,0 +1,75 @@
+{
+  "product": "Hengshi Design v1",
+  "date": "2026-10-14",
+  "status": "DOING",
+  "scope": "Corrected accounting and completed six native trial observations; independent result review pending",
+  "supersedes": "native-qualification-result-v1.json",
+  "priorReview": "review-native-result/independent-review-native-result-v1.json",
+  "correction": {
+    "finding": "NR-01",
+    "disposition": "Withdraw saved-caption disappearance/current-blank claims. Saved unscrolled Services pixels are identical. Earlier producer perceptions are not evidence of a settled missing caption or its cause. NQ06 initially paused, then resumed under unchanged authority after visible target admission. No design repair was executed.",
+    "repairProposal": "native-trial-caption-background-correction-proposal-v1.json remains unexecuted; detachment necessity/effect unsupported, not commissioned"
+  },
+  "configuration": "fresh-section-admission-v1.json",
+  "observations": [
+    {
+      "id": "NQ-01",
+      "producerOutcome": "Expected active/pending/open/context and scroll anchor observed",
+      "active": "HIGH -> MEDIUM",
+      "pending": "MEDIUM",
+      "anchor": "Privacy and storage remains approximately y654 before and after Apply"
+    },
+    {
+      "id": "NQ-02",
+      "producerOutcome": "Current-choice Apply does not change mode/context; Close/reopen retains MEDIUM",
+      "details": "Figma hotspot-hint overlay appears after current-choice click. No claim of pixel-identical UI or absent viewer chrome change."
+    },
+    {
+      "id": "NQ-03",
+      "producerOutcome": "Detailed becomes pending/HIGH while active stays MEDIUM"
+    },
+    {
+      "id": "NQ-04",
+      "producerOutcome": "Apply activates HIGH; current Apply keeps HIGH; observed scroll anchor retained",
+      "details": "Current-choice click may show Figma hotspot hints, distinct from state transition."
+    },
+    {
+      "id": "NQ-05",
+      "producerOutcome": "Three Close/reopen cycles executed with activeHIGH/pendingMEDIUM and Services/design context retained",
+      "captures": "NQ05-cycle1/2/3-closed/reopened-v1.png"
+    },
+    {
+      "id": "NQ-06",
+      "producerOutcome": "All four active/pending pairs exercised; independent visual/state assessment pending",
+      "pairs": [
+        "H_OPEN_M",
+        "M_OPEN_M",
+        "M_OPEN_H",
+        "H_OPEN_H"
+      ],
+      "eachSequence": [
+        "Close",
+        "matching closed capture",
+        "Open directory",
+        "matching open capture",
+        "identified Services fixture activation at540,266 outside foreground directory/body",
+        "after-background capture",
+        "Escape",
+        "matching closed capture",
+        "Open directory",
+        "matching open capture"
+      ],
+      "admission": "Current preview shows Services(fixture), fixed source control geometry x24,y76,220x56 under corresponding host and no configured action; actual point outside Close control and modal body. No decorative rectangle used as substitute.",
+      "evidencePattern": "NQ06-{pair}-before-close/closed/reopened/before-background/after-background/after-escape/after-escape-reopen-v1.png"
+    }
+  ],
+  "renderingLimit": "Context ink on the black/transparent preview background has poor contrast. No WCAG or final visual acceptance. Caption disappearance is unproven and withdrawn.",
+  "afterArchive": "after-native-qualification-v1.fig;386596bytes;CRC PASS;captured after labelled-flow creation, before resumed ephemeral NQ06 observations; no canvas write during resumption",
+  "limitations": [
+    "Producer observations are not independent PASS",
+    "Prototype fixtures, not application search/capability/mode/accessibility implementation",
+    "Full22 scenarios/four streams/profiles, original-source equivalence/restore/EXIT, founder B01 and Phase1 acceptance remain open",
+    "No MCP/AI calls, paid feature, account/sharing/provider change, Git or application edits"
+  ],
+  "independentReview": null
+}

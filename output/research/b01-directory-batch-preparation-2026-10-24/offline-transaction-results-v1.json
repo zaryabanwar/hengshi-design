@@ -1,0 +1,165 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-24",
+  "cases": [
+    {
+      "name": "complete scoped graph",
+      "result": "APPLIED",
+      "writes": 108,
+      "newEdges": 108,
+      "reportBytes": [
+        6779,
+        12760,
+        7965
+      ],
+      "unresolved": 0
+    },
+    {
+      "name": "effective caption drift",
+      "result": "ABORTED_PREFLIGHT",
+      "writes": 0,
+      "reportBytes": [
+        301,
+        334,
+        329
+      ],
+      "unresolved": 0
+    },
+    {
+      "name": "unexpected hidden reaction",
+      "result": "ABORTED_PREFLIGHT",
+      "writes": 0,
+      "reportBytes": [
+        317,
+        350,
+        345
+      ],
+      "unresolved": 0
+    },
+    {
+      "name": "variant owner drift",
+      "result": "ABORTED_PREFLIGHT",
+      "writes": 0,
+      "reportBytes": [
+        290,
+        323,
+        318
+      ],
+      "unresolved": 0
+    },
+    {
+      "name": "rendered Apply caption drift",
+      "result": "ABORTED_PREFLIGHT",
+      "writes": 0,
+      "reportBytes": [
+        300,
+        333,
+        328
+      ],
+      "unresolved": 0
+    },
+    {
+      "name": "interrupted setter with full restoration",
+      "result": "ROLLED_BACK",
+      "writes": 18,
+      "reportBytes": [
+        383,
+        464,
+        429
+      ],
+      "unresolved": 0
+    },
+    {
+      "name": "concurrent reaction is not overwritten",
+      "result": "ROLLBACK_INCOMPLETE",
+      "writes": 17,
+      "reportBytes": [
+        446,
+        556,
+        500
+      ],
+      "unresolved": 1
+    },
+    {
+      "name": "concurrent optional Action flag is not overwritten",
+      "result": "ROLLBACK_INCOMPLETE",
+      "writes": 17,
+      "reportBytes": [
+        446,
+        556,
+        500
+      ],
+      "unresolved": 1
+    },
+    {
+      "name": "all rollback failures preserve IDs within output budget",
+      "result": "ROLLBACK_INCOMPLETE",
+      "writes": 216,
+      "reportBytes": [
+        7417,
+        10804,
+        8525
+      ],
+      "unresolved": 108
+    },
+    {
+      "name": "documented dual-field readback",
+      "result": "APPLIED",
+      "writes": 108,
+      "newEdges": 108,
+      "reportBytes": [
+        6779,
+        12760,
+        7965
+      ],
+      "unresolved": 0
+    },
+    {
+      "name": "dual-field readback begins after first write",
+      "result": "APPLIED",
+      "writes": 108,
+      "newEdges": 108,
+      "reportBytes": [
+        6779,
+        12760,
+        7965
+      ],
+      "unresolved": 0
+    },
+    {
+      "name": "interrupted dual-field write restores safely",
+      "result": "ROLLED_BACK",
+      "writes": 18,
+      "reportBytes": [
+        383,
+        464,
+        429
+      ],
+      "unresolved": 0
+    },
+    {
+      "name": "contradictory readback retained for inspection",
+      "result": "ROLLBACK_INCOMPLETE",
+      "writes": 1,
+      "reportBytes": [
+        360,
+        430,
+        398
+      ],
+      "unresolved": 1
+    },
+    {
+      "name": "directory context drift",
+      "result": "ABORTED_PREFLIGHT",
+      "writes": 0,
+      "reportBytes": [
+        284,
+        317,
+        312
+      ],
+      "unresolved": 0
+    }
+  ],
+  "limits": "Synthetic Plugin API transaction harness only. No Figma/provider call, capability/auth/quota check, native behavior, application correctness, accessibility or B01/Phase1 verdict."
+}

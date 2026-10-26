@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-06",
+  "exact_source": "https://raw.githubusercontent.com/microsoft/TypeScript/v7.0.2/tsc/cmd/tsgo/main.go",
+  "source_sha256": "a3d99f615821544b08d6d9f54c674a5c4876dd52b0617649d9bd64d1006df830",
+  "observations": [
+    {
+      "line": 22,
+      "source": "case \"--lsp\":"
+    }
+  ],
+  "official_stable_announcement": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/",
+  "context7": {
+    "library": "/microsoft/typescript/v7.0.2",
+    "query": "LSP language server launch --lsp --stdio initialize diagnosticProvider textDocument/diagnostic pull diagnostics TypeScript 7 stable command args server",
+    "limit": "indexed launch snippets include main and cmd/tsc path; actual tag tree exposes cmd/tsgo, fetched separately"
+  },
+  "scope": "advertised/source launch capability only; no protocol execution, editor change or unstable API import"
+}

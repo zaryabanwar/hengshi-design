@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hengshi:v1:availability-write",
+  "title": "Staff availability PATCH bodies v1 — proposal",
+  "description": "Root validates only a command. Use #/$defs/response for application responses and #/$defs/departmentKey for the decoded path selector. Shape validation establishes no raw JSON, HTTP, identity, grant, expiry, current binding, mutation, replay or live-presence correctness.",
+  "$ref": "#/$defs/command",
+  "$defs": {
+    "departmentKey": {"$ref": "availability-read.schema.json#/$defs/departmentKey"},
+    "identity": {
+      "type": "string",
+      "minLength": 32,
+      "maxLength": 32,
+      "pattern": "^[0-9a-f]{32}(?![\\s\\S])",
+      "description": "Syntax only; entropy, uniqueness, issuer, operation scope and ownership require actual boundary checks."
+    },
+    "revision": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 20,
+      "anyOf": [
+        {"pattern": "^[1-9][0-9]{0,18}(?![\\s\\S])"},
+        {"pattern": "^(?:1[0-7][0-9]{18}|18[0-3][0-9]{17}|184[0-3][0-9]{16}|1844[0-5][0-9]{15}|18446[0-6][0-9]{14}|184467[0-3][0-9]{13}|1844674[0-3][0-9]{12}|184467440[0-6][0-9]{10}|1844674407[0-2][0-9]{9}|18446744073[0-6][0-9]{8}|1844674407370[0-8][0-9]{6}|18446744073709[0-4][0-9]{5}|184467440737095[0-4][0-9]{4}|18446744073709550[0-9]{3}|18446744073709551[0-5][0-9]{2}|1844674407370955160[0-9]|1844674407370955161[0-4]|18446744073709551615)(?![\\s\\S])"}
+      ],
+      "description": "Canonical ASCII decimal 1 through 18446744073709551615, as defined by the HTTP proposal. The twenty-digit alternatives partition by first digit below the ceiling, followed by the ceiling itself. No database type or increment policy is selected."
+    },
+    "currentBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "setting_id", "revision"],
+      "properties": {
+        "state": {"const": "current"},
+        "setting_id": {"$ref": "#/$defs/identity"},
+        "revision": {"$ref": "#/$defs/revision"}
+      }
+    },
+    "binding": {
+      "oneOf": [{"const": {"state": "none"}}, {"$ref": "#/$defs/currentBinding"}]
+    },
+    "declaration": {
+      "oneOf": [{"const": {"state": "on"}}, {"const": {"state": "off"}}]
+    },
+    "command": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["operation_id", "expected", "declaration"],
+      "properties": {
+        "operation_id": {"$ref": "#/$defs/identity"},
+        "expected": {"$ref": "#/$defs/binding"},
+        "declaration": {"$ref": "#/$defs/declaration"}
+      }
+    },
+    "result": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["state", "binding"],
+          "properties": {"state": {"const": "declared"}, "binding": {"$ref": "#/$defs/currentBinding"}}
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["state", "binding"],
+          "properties": {"state": {"const": "withdrawn"}, "binding": {"$ref": "#/$defs/binding"}}
+        },
+        {"const": {"state": "pending", "recovery": "reconcile_same_operation"}}
+      ]
+    },
+    "success": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["department_id", "operation_id", "result"],
+      "properties": {
+        "department_id": {"$ref": "#/$defs/departmentKey"},
+        "operation_id": {"$ref": "#/$defs/identity"},
+        "result": {"$ref": "#/$defs/result"}
+      }
+    },
+    "applicationError": {
+      "oneOf": [
+        {"const": {"code": "invalid_request", "recovery": "correct_request"}},
+        {"const": {"code": "authentication_required", "recovery": "authenticate"}},
+        {"const": {"code": "request_denied", "recovery": "stop"}},
+        {"const": {"code": "scope_unavailable", "recovery": "stop"}},
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["code", "recovery", "current"],
+          "properties": {
+            "code": {"const": "stale_binding"},
+            "recovery": {"const": "review_current_binding"},
+            "current": {"$ref": "#/$defs/binding"}
+          }
+        },
+        {"const": {"code": "operation_conflict", "recovery": "stop"}},
+        {"const": {"code": "request_too_large", "recovery": "correct_request"}},
+        {"const": {"code": "unsupported_media", "recovery": "correct_request"}},
+        {"const": {"code": "request_limited", "recovery": "wait_same_operation"}},
+        {"const": {"code": "outcome_unresolved", "recovery": "reconcile_same_operation"}},
+        {"const": {"code": "service_unavailable", "recovery": "wait_same_operation"}},
+        {"const": {"code": "internal_error", "recovery": "reconcile_same_operation"}}
+      ]
+    },
+    "errorResponse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["error"],
+      "properties": {"error": {"$ref": "#/$defs/applicationError"}}
+    },
+    "response": {
+      "oneOf": [{"$ref": "#/$defs/success"}, {"$ref": "#/$defs/errorResponse"}]
+    }
+  }
+}

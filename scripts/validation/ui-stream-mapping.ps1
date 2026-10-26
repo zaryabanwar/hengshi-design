@@ -1,3 +1,15 @@
+. (Join-Path $PSScriptRoot 'ui-boundary-evidence.ps1')
+function Assert-UiAcceptedStreamCopy {
+    param([object[]]$Batches, [object[]]$Trace)
+    foreach ($pair in @(@('B01','stream-control'),@('B07','reset'))) {
+        $rows=@($Batches | Where-Object batch_id -CEQ $pair[0])
+        if ($rows.Count -ne 1 -or -not $rows[0].required_visual_evidence.Contains("D-057 accepted $($pair[1]) copy bundle") -or $rows[0].required_visual_evidence -match 'exact public copy remains gated|exact copy held') { throw 'Accepted D-057 copy is missing or incorrectly held in batch' }
+    }
+    foreach ($id in @('TR-REQ-103','TR-TEST-046')) {
+        $rows=@($Trace | Where-Object trace_id -CEQ $id)
+        if ($rows.Count -ne 1 -or -not $rows[0].required_future_evidence.Contains('D-057 accepted stream-control copy bundle') -or $rows[0].required_future_evidence -match 'exact public copy remains gated') { throw 'Accepted D-057 copy is missing or incorrectly held in trace' }
+    }
+}
 # Shared by the design and production validators. No repository writes.
 function Assert-UiStreamStyleGuideContract {
     param([Parameter(Mandatory)][string]$Text)
@@ -17,9 +29,23 @@ function Assert-UiStreamStyleGuideContract {
         'before Apply in both DOM reading order and visual order',
         'programmatically associated with both the group and the Apply button',
         'not tooltip, title, hover-only, focus-only or accessible-description-only',
+        'Apply remains enabled when the pending selection equals the in-force stream',
+        'remains in keyboard focus order',
+        'brief polite status indicating that the selected stream is already active',
+        'Preserve the stream, route, focus, scroll, and open panels',
+        'no reload, transition, or persistence mutation occurs',
+        'Retain browser-native radio rendering, including the checked mark and platform focus indicator',
+        'Do not use authored accent color, custom marks, appearance:none, hidden replacement inputs, or forced-color-adjust:none',
+        'native states and focus remain visible and unobscured',
+        'browser and real forced-colors verification, followed by founder approval',
+        'Escape dismisses nothing, cancels nothing, applies nothing, and does not navigate',
         'same wording in every stream'
     )) {
         if (-not $body.Contains($clause)) { throw "Stream style-guide contract missing: $clause" }
+    }
+    $escape = [regex]::Match($Text, '(?m)^- \*\*Escape:\*\* (?<rule>[^\r\n]+)')
+    if (-not $escape.Success -or -not $escape.Groups['rule'].Value.Contains('outside the delivery-stream control') -or -not $escape.Groups['rule'].Value.Contains('does not navigate')) {
+        throw 'Stream style-guide contract missing: host Escape exception'
     }
     if ($body -match 'visible text adjacent to the control|Selecting a radio changes nothing') {
         throw 'Ambiguous stream style-guide wording'
@@ -437,6 +463,9 @@ function Get-UiFrameObligations {
         [Parameter(Mandatory)][object[]]$Templates,
         [Parameter(Mandatory)][object[]]$Profiles
     )
+    foreach ($profile in $Profiles) {
+        if (($profile.required_values + ';' + $profile.critical_distinct_frame_values) -cmatch 'STATE-(BOUNDARY|ANCESTOR)-TO-(SEMANTIC|WORLD)') { throw 'Allocation-only state leaked into ordinary profile' }
+    }
     $profilesById = [System.Collections.Generic.Dictionary[string, object]]::new([StringComparer]::Ordinal)
     foreach ($p in $Profiles) {
         if ($profilesById.ContainsKey($p.profile_id)) { throw "Duplicate profile: $($p.profile_id)" }
@@ -503,4 +532,93 @@ function Get-UiFrameObligations {
             }
         }
     }
+}
+
+# A-12: resolve encoded identity against accepted records before consuming evidence.
+function Get-UiResolvedEvidenceId {
+    param([string]$EvidenceId, [string]$StreamId, [object]$Context)
+    $m = [regex]::Match($EvidenceId, '^HSD_UIR_(?<batch>B\d{2})_(?<identity>.+?)_STATE_(?<state>.+?)_VP_(?<viewport>.+?)_MODE_(?<mode>.+?)_(?:STREAM_(?<stream>HIGH|MEDIUM|LOW|SEMANTIC)|SCOPE_(?<scope>EXCLUDED))_V(?<version>\d{2})$')
+    if (-not $m.Success -or [int]$m.Groups['version'].Value -lt 1) { return $null }
+    $batch = @($Context.Batches | Where-Object batch_id -CEQ $m.Groups['batch'].Value)
+    if ($batch.Count -ne 1) { return $null }
+    $identity = $m.Groups['identity'].Value
+    $matches = @($Context.Templates | Where-Object { $identity.StartsWith($_.template_id.Replace('-', '_') + '_', [StringComparison]::Ordinal) })
+    if ($matches.Count -ne 1) { return $null }
+    $template = $matches[0]
+    $instance = $identity.Substring($template.template_id.Length + 1)
+    $batchTemplates = @(($batch[0].primary_template_ids + ';' + $batch[0].supporting_template_ids).Split(';'))
+    if ($template.template_id -cnotin $batchTemplates) { return $null }
+    $owner = $template
+    if ($instance -cne 'REF') {
+        $routes = @($Context.Routes | Where-Object { $_.route_instance_id.Replace('-', '_') -ceq $instance -and $_.template_id -ceq $template.template_id })
+        $flows = @($Context.Flows | Where-Object { $_.source_id.Replace('-', '_') -ceq $instance -and $template.template_id -cin $_.template_ids.Split(';') })
+        if ($routes.Count + $flows.Count -ne 1) { return $null }
+        $owner = if ($routes.Count -eq 1) { $routes[0] } else { $flows[0] }
+    }
+    $stateId = 'STATE-' + $m.Groups['state'].Value.Replace('_','-')
+    $allocatedState = $stateId -cmatch '^STATE-(BOUNDARY|ANCESTOR)-TO-(SEMANTIC|WORLD)$'
+    if ($allocatedState) {
+        if ('BoundaryAllocations' -cnotin @($Context.PSObject.Properties.Name)) { return $null }
+        $scope = if ($m.Groups['scope'].Success) { 'STREAM-SCOPE-EXCLUDED' } else { 'S-' + $m.Groups['stream'].Value }
+        $allocations = @(Get-UiBoundaryAllocations $Context.BoundaryAllocations $Context | Where-Object { $_.batch_id -ceq $batch[0].batch_id -and $_.template_id -ceq $template.template_id -and $_.state_id -ceq $stateId -and $_.stream_id -ceq $scope })
+        if ($allocations.Count -ne 1) { return $null }
+    }
+    foreach ($part in @(@('state','STATE','state'), @('viewport','VP','viewport'), @('mode','MODE','mode'))) {
+        if ($allocatedState -and $part[0] -ceq 'state') { continue }
+        $id = $part[1] + '-' + $m.Groups[$part[0]].Value.Replace('_','-')
+        $profileId = $owner.($part[0] + '_profile')
+        $profile = @($Context.Profiles | Where-Object { $_.profile_id -ceq $profileId -and $_.dimension -ceq $part[2] })
+        if ($profile.Count -ne 1) { return $null }
+        $values = @($profile[0].required_values.Split(';'))
+        if ($id -cnotin $values) { return $null }
+    }
+    $encodedScope = if ($m.Groups['scope'].Success) { 'STREAM-SCOPE-EXCLUDED' } else { 'S-' + $m.Groups['stream'].Value }
+    if ($encodedScope -cne $StreamId -or $StreamId -cnotin @(Get-UiEvidenceScopes -Mapping $Context.Mapping -TemplateId $template.template_id)) { return $null }
+    return [pscustomobject]@{ BatchId=$batch[0].batch_id; TemplateId=$template.template_id; StateId=('STATE-' + $m.Groups['state'].Value.Replace('_','-')); StreamId=$StreamId; InstanceId=$instance; ViewportId=('VP-' + $m.Groups['viewport'].Value.Replace('_','-')); ModeId=('MODE-' + $m.Groups['mode'].Value.Replace('_','-')); Revision=[int]$m.Groups['version'].Value }
+}
+
+# A-14: held batches do not impose executable-batch coverage obligations.
+function Get-UiUnmetExecutableEvidence {
+    param([string[]]$Obliged, [string[]]$Satisfied, [object[]]$Batches)
+    foreach ($coordinate in $Obliged) {
+        $parts = $coordinate.Split('|')
+        $batch = @($Batches | Where-Object batch_id -CEQ $parts[0])
+        if ($batch.Count -ne 1) { throw 'Unknown obligation owner' }
+        if ($batch[0].ma_025_disposition -cne 'authorized_pilot') { continue }
+        $dispositions = @($batch[0].stream_disposition.Split(';') | Where-Object { $_.StartsWith($parts[3] + '=', [StringComparison]::Ordinal) })
+        if ($dispositions.Count -eq 1 -and $dispositions[0] -cmatch '=deferred_(B\d{2})$') {
+            $target = @($Batches | Where-Object batch_id -CEQ $Matches[1])
+            if ($target.Count -eq 1 -and $target[0].ma_025_disposition -ceq 'deferred_not_authorizable') { continue }
+        }
+        if ($coordinate -cnotin $Satisfied) { $coordinate }
+    }
+}
+
+function Get-UiResolvedManifestRow {
+    param([object]$Row, [object]$Context)
+    $resolved = Get-UiResolvedEvidenceId -EvidenceId $Row.evidence_id -StreamId $Row.stream_id -Context $Context
+    if ($null -eq $resolved -or $resolved.BatchId -cne $Row.batch_id -or $resolved.TemplateId -cne $Row.template_id) { return $null }
+    foreach ($pair in @(@('instance_id','InstanceId'),@('state_id','StateId'),@('viewport_id','ViewportId'),@('mode_id','ModeId'),@('revision','Revision'))) {
+        if ($pair[0] -cnotin @($Row.PSObject.Properties.Name)) { return $null }
+        $expected = [string]$resolved.($pair[1])
+        $actual = [string]$Row.($pair[0])
+        if ($pair[0] -ceq 'instance_id') { $actual = $actual.Replace('-','_') }
+        if ($pair[0] -ceq 'revision') {
+            if ($actual -cnotmatch '^(?:V)?[0-9]+$' -or [int]$actual.TrimStart('V') -ne $resolved.Revision) { return $null }
+        } elseif ($actual -cne $expected) { return $null }
+    }
+    return $resolved
+}
+
+function Test-UiFramingScanPartition {
+    param([string[]]$Union, [string[]]$Scope, [string[]]$Exempt, [string[]]$Roots)
+    $partition = @($Scope) + @($Exempt)
+    if ($Scope.Count -eq 0 -or $partition.Count -ne $Union.Count) { return $false }
+    if (@($partition | Sort-Object -Unique -CaseSensitive).Count -ne $partition.Count -or @($Union | Sort-Object -Unique -CaseSensitive).Count -ne $Union.Count) { return $false }
+    foreach ($path in $Union) { if ($path -cnotin $partition) { return $false } }
+    foreach ($root in $Roots) {
+        $prefix = $root.TrimEnd([IO.Path]::DirectorySeparatorChar) + [IO.Path]::DirectorySeparatorChar
+        if (@($Scope | Where-Object { $_.StartsWith($prefix, [StringComparison]::Ordinal) }).Count -eq 0) { return $false }
+    }
+    return $true
 }

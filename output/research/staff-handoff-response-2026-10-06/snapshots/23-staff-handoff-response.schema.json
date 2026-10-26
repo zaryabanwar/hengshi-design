@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed staff handoff command responses v1",
+  "description": "Existing IF-STAFF-12/13/14 response shapes only. Select endpoint-specific definition; root denies. Representation is not authorization, request correlation, current ownership, a committed transition, suppression completion, deletion or HTTP enforcement. No response handler is implemented.",
+  "not": {},
+  "$defs": {
+    "operation_id": {"$ref": "booking-creation-request.schema.json#/$defs/operation_id"},
+    "applied_binding": {
+      "$ref": "staff-handoff-request.schema.json#/$defs/expected_binding",
+      "description": "Immutable handoff/ownership snapshot at this operation's effect, not current ownership or a renewed grant. Same field representation as expected binding, with independently checked actual meaning."
+    },
+    "pending_result": {
+      "const": {"state": "pending", "recovery": "reconcile_same_operation"},
+      "description": "Unsettled admitted operation. No terminal binding or success follows."
+    },
+    "accepted_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "applied_binding"],
+      "properties": {
+        "state": {"const": "accepted"},
+        "applied_binding": {"$ref": "#/$defs/applied_binding"}
+      },
+      "description": "Known human acceptance under the separately verified transition. Does not establish text connection, reply, current presence or media consent."
+    },
+    "declined_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "applied_binding", "reason_reference"],
+      "properties": {
+        "state": {"const": "declined"},
+        "applied_binding": {"$ref": "#/$defs/applied_binding"},
+        "reason_reference": {"$ref": "staff-handoff-request.schema.json#/$defs/reason_reference"}
+      },
+      "description": "Known governed decline and original approved reason interpretation. This private staff projection is not visitor reason copy or routing authority."
+    },
+    "ended_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "applied_binding"],
+      "properties": {
+        "state": {"const": "ended"},
+        "applied_binding": {"$ref": "#/$defs/applied_binding"}
+      },
+      "description": "Known committed text ending plus the required ordered suppression outcome. No deletion, cancelled booking, staff-off, media teardown or physical socket-close proof."
+    },
+    "envelope_base": {
+      "type": "object",
+      "required": ["operation_id"],
+      "properties": {"operation_id": {"$ref": "#/$defs/operation_id"}}
+    },
+    "accept_outcome": {
+      "allOf": [{"$ref": "#/$defs/envelope_base"}],
+      "required": ["intent", "result"],
+      "properties": {
+        "intent": {"const": "accept_text_handoff"},
+        "result": {"oneOf": [{"$ref": "#/$defs/accepted_result"}, {"$ref": "#/$defs/pending_result"}]}
+      },
+      "unevaluatedProperties": false
+    },
+    "decline_outcome": {
+      "allOf": [{"$ref": "#/$defs/envelope_base"}],
+      "required": ["intent", "result"],
+      "properties": {
+        "intent": {"const": "decline_text_handoff"},
+        "result": {"oneOf": [{"$ref": "#/$defs/declined_result"}, {"$ref": "#/$defs/pending_result"}]}
+      },
+      "unevaluatedProperties": false
+    },
+    "end_outcome": {
+      "allOf": [{"$ref": "#/$defs/envelope_base"}],
+      "required": ["intent", "result"],
+      "properties": {
+        "intent": {"const": "end_text_consultation"},
+        "result": {"oneOf": [{"$ref": "#/$defs/ended_result"}, {"$ref": "#/$defs/pending_result"}]}
+      },
+      "unevaluatedProperties": false
+    },
+    "application_error": {
+      "oneOf": [
+        {"const": {"code": "invalid_request", "recovery": "correct_request"}},
+        {"const": {"code": "request_denied", "recovery": "stop"}},
+        {"const": {"code": "binding_outdated", "recovery": "inspect_authorized_current_state"}},
+        {"const": {"code": "operation_conflict", "recovery": "stop"}},
+        {"const": {"code": "request_too_large", "recovery": "correct_request"}},
+        {"const": {"code": "unsupported_media", "recovery": "correct_request"}},
+        {"const": {"code": "request_limited", "recovery": "wait_then_reconcile_same_operation"}},
+        {"const": {"code": "outcome_unresolved", "recovery": "reconcile_same_operation"}},
+        {"const": {"code": "service_unavailable", "recovery": "wait_then_reconcile_same_operation"}},
+        {"const": {"code": "internal_error", "recovery": "reconcile_same_operation"}}
+      ],
+      "description": "Only fixed categories/recovery labels. No raw reason, current binding, private existence or prior-operation outcome. Even correct_request does not license redispatch after uncertain prior admission."
+    },
+    "error": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["error"],
+      "properties": {"error": {"$ref": "#/$defs/application_error"}}
+    },
+    "decline_reason_error": {
+      "const": {"error": {"code": "reason_unavailable", "recovery": "inspect_authorized_current_state"}},
+      "description": "Only a decline can fail its reason-catalogue check; disclose only after applicable current authorization."
+    },
+    "accept_response": {"oneOf": [{"$ref": "#/$defs/accept_outcome"}, {"$ref": "#/$defs/error"}]},
+    "decline_response": {"oneOf": [{"$ref": "#/$defs/decline_outcome"}, {"$ref": "#/$defs/error"}, {"$ref": "#/$defs/decline_reason_error"}]},
+    "end_response": {"oneOf": [{"$ref": "#/$defs/end_outcome"}, {"$ref": "#/$defs/error"}]}
+  }
+}

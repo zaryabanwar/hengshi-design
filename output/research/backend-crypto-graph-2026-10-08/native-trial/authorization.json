@@ -1,0 +1,30 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "founder_approval": "approve all three and resume",
+  "approved_package_count": 43,
+  "plan_sha256": "b9298363e7a0cfeef76dad29e18f8aa165a5d7790e4291b567711374603a0cb9",
+  "requirements_sha256": "8b86653929a4707ad0d6346c8a7763f8d6c26b901d91c3dc49dc7a4427b4365b",
+  "probe_sha256": "0f5b7a2341226d3568d7a411d1669bd0ebb5637eaecf2ead4312d19f90272fa7",
+  "protected_inputs_before": {
+    "package.json": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b",
+    "package-lock.json": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908",
+    "apps/web/package.json": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a",
+    "apps/web/package-lock.json": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d",
+    "apps/api/requirements.txt": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd",
+    "apps/api/.venv/pyvenv.cfg": "d23bc586f40b9aa9a601c8af0cab224cd4a40f0544a2f6348e9ad703f4d8ea39"
+  },
+  "limits": {
+    "new_output_budget_bytes": 268435456,
+    "minimum_free_disk_bytes": 1073741824,
+    "command_deadline_seconds": 180,
+    "no_source_builds": true,
+    "no_existing_environment_changes": true,
+    "no_database_or_provider_connection": true,
+    "no_automatic_cleanup": true,
+    "budget_kind": "Conservative admission and command-boundary stop budget, not an OS-enforced hard quota during installation/native execution",
+    "expanded_wheel_copy_reservation_factor": 2,
+    "additional_installer_output_reservation_bytes": 67108864
+  },
+  "frozen_plan_retained": true
+}

@@ -1,0 +1,72 @@
+{
+  "as_of": "2026-10-04",
+  "scope": "Unselected candidate pre-build metadata inventory; not installed artifacts or final product SBOM",
+  "command": [
+    "npm.cmd",
+    "sbom",
+    "--package-lock-only",
+    "--sbom-format=cyclonedx",
+    "--include=dev",
+    "--include=optional",
+    "--include=peer",
+    "--ignore-scripts",
+    "--loglevel=error"
+  ],
+  "exit_code": 0,
+  "format": "CycloneDX",
+  "format_version": "1.5",
+  "declared_lifecycle": [
+    {
+      "phase": "pre-build"
+    }
+  ],
+  "tool": [
+    {
+      "vendor": "npm",
+      "name": "cli",
+      "version": "11.11.1"
+    }
+  ],
+  "candidate_lock_sha256": "DA45DD6CB7CEE7834FC5985B6595C2111780EE24D7CF87D1BDAF1749BE3F37AB",
+  "candidate_lock_unchanged": true,
+  "sbom_sha256": "59AF17D89CAE44938495C91535CC111919904A6FCA2E934A3A54A59A52973184",
+  "lock_dependency_records": 302,
+  "sbom_components": 300,
+  "sbom_dependency_records": 301,
+  "unresolved_sbom_edge_refs": [],
+  "components_missing_declared_licenses": [
+    "gsap@3.15.0",
+    "webgl-constants@1.1.1"
+  ],
+  "components_missing_declared_integrity": [
+    "@emnapi/core@1.11.1",
+    "@emnapi/runtime@1.11.1",
+    "@emnapi/wasi-threads@1.2.2",
+    "@napi-rs/wasm-runtime@1.1.4",
+    "@tybys/wasm-util@0.10.2",
+    "tslib@2.8.1"
+  ],
+  "license_text_or_archive_provenance_verified": false,
+  "production_selection": false,
+  "independent_review": "TODO",
+  "context7_library": "/npm/cli",
+  "official_docs": "https://docs.npmjs.com/cli/v11/commands/npm-sbom/",
+  "initial_inventory_parse_error": "PowerShell ConvertFrom-Json without -AsHashtable rejected the empty-string lock root key. Initial lock counts were invalid; corrected by parsing the same unchanged lock as a hashtable. npm SBOM succeeded and was not rerun.",
+  "component_path_properties_present": false,
+  "initial_path_analysis_correction": "Installed npm 11.11.1 does not emit the path property shown in newer documentation. Final crosswalk uses actual packageName@version bom-ref, not display names or absent paths; aliases and one identity shared by three lock paths are explicit.",
+  "crosswalk_sha256": "0924988E33ADE0B8531642201FA0A4493D6E450D458EE91262B3757484239246",
+  "unmatched_lock_records": [],
+  "deduplicated_identity_groups": [
+    {
+      "component_ref": "eslint-visitor-keys@5.0.1",
+      "lock_paths": [
+        "node_modules/@typescript-eslint/visitor-keys/node_modules/eslint-visitor-keys",
+        "node_modules/eslint/node_modules/eslint-visitor-keys",
+        "node_modules/espree/node_modules/eslint-visitor-keys"
+      ],
+      "declared_integrities": [
+        "sha512-tD40eHxA35h0PEIZNeIjkHoDR4YjjJp34biM0mDvplBe//mB+IHCqHDGV7pxF+7MklTvighcCPPZC7ynWyjdTA=="
+      ]
+    }
+  ]
+}

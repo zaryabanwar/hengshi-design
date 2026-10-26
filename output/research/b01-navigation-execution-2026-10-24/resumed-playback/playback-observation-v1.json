@@ -1,0 +1,189 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-24",
+  "scope": "Resumed read-only native Figma Navigation/HIGH prototype playback; no design write or MCP call.",
+  "source_preview": "152:3383",
+  "observations": [
+    [
+      "HIGH/HIGH/CLOSED",
+      "Open",
+      "HIGH/HIGH/OPEN",
+      null
+    ],
+    [
+      "HIGH/HIGH/OPEN",
+      "choose/SEMANTIC",
+      "HIGH/SEMANTIC/OPEN",
+      "01"
+    ],
+    [
+      "HIGH/SEMANTIC/OPEN",
+      "Apply",
+      "SEMANTIC/SEMANTIC/OPEN",
+      "02"
+    ],
+    [
+      "SEMANTIC/SEMANTIC/OPEN",
+      "choose/MEDIUM",
+      "SEMANTIC/MEDIUM/OPEN",
+      "03"
+    ],
+    [
+      "SEMANTIC/MEDIUM/OPEN",
+      "Escape",
+      "SEMANTIC/MEDIUM/CLOSED",
+      "04"
+    ],
+    [
+      "SEMANTIC/MEDIUM/CLOSED",
+      "Open",
+      "SEMANTIC/MEDIUM/OPEN",
+      "05"
+    ],
+    [
+      "SEMANTIC/MEDIUM/OPEN",
+      "Apply",
+      "MEDIUM/MEDIUM/OPEN",
+      "06"
+    ],
+    [
+      "MEDIUM/MEDIUM/OPEN",
+      "choose/LOW",
+      "MEDIUM/LOW/OPEN",
+      "07"
+    ],
+    [
+      "MEDIUM/LOW/OPEN",
+      "Close",
+      "MEDIUM/LOW/CLOSED",
+      "08"
+    ],
+    [
+      "MEDIUM/LOW/CLOSED",
+      "Open",
+      "MEDIUM/LOW/OPEN",
+      "09"
+    ],
+    [
+      "MEDIUM/LOW/OPEN",
+      "Apply",
+      "LOW/LOW/OPEN",
+      "10"
+    ],
+    [
+      "LOW/LOW/OPEN",
+      "choose/HIGH",
+      "LOW/HIGH/OPEN",
+      "11"
+    ],
+    [
+      "LOW/HIGH/OPEN",
+      "Apply",
+      "HIGH/HIGH/OPEN",
+      "12"
+    ],
+    [
+      "HIGH/HIGH/OPEN",
+      "Apply current (no authored transition expected)",
+      "HIGH/HIGH/OPEN",
+      "13-16"
+    ]
+  ],
+  "captures": [
+    {
+      "path": "01-quick-access-pending-detailed-active.jpg",
+      "bytes": 46092,
+      "sha256": "b753bade582b280eb23c4f945db735eb1752a4e423e27489872917b586744ae1"
+    },
+    {
+      "path": "02-quick-access-active-after-apply.jpg",
+      "bytes": 47156,
+      "sha256": "5ec94f60df03d85613858dff241505361e41fec524e35dd77e5d7859234719fb"
+    },
+    {
+      "path": "03-balanced-pending-quick-access-active.jpg",
+      "bytes": 46302,
+      "sha256": "c75457088cf6cc8861f274a2e09ed1f38ad13c1aa07cf58c308738299282d493"
+    },
+    {
+      "path": "04-escape-retains-quick-access-active.jpg",
+      "bytes": 35816,
+      "sha256": "7efd205ebe135a88f57bbe9e648e22fe1a27965c501c1dad6a66df43fb3e01cb"
+    },
+    {
+      "path": "05-reopen-retains-balanced-pending.jpg",
+      "bytes": 46302,
+      "sha256": "c75457088cf6cc8861f274a2e09ed1f38ad13c1aa07cf58c308738299282d493"
+    },
+    {
+      "path": "06-balanced-active-after-apply.jpg",
+      "bytes": 47088,
+      "sha256": "f44c1bfed30aec647f0e4f2085eb7167f71fa40ed8a916e4e54317a11a845026"
+    },
+    {
+      "path": "07-simplified-pending-balanced-active.jpg",
+      "bytes": 46165,
+      "sha256": "16f15354e8cce4f9703ca4fd9c683fc8939c9216010502d5b5caacf899ec086e"
+    },
+    {
+      "path": "08-close-retains-balanced-active.jpg",
+      "bytes": 35782,
+      "sha256": "71afaf62d772a12962a144cd2bc9bcd9ab66289cdcd88540d5b605eda97fe9f4"
+    },
+    {
+      "path": "09-reopen-retains-simplified-pending.jpg",
+      "bytes": 46165,
+      "sha256": "16f15354e8cce4f9703ca4fd9c683fc8939c9216010502d5b5caacf899ec086e"
+    },
+    {
+      "path": "10-simplified-active-after-apply.jpg",
+      "bytes": 47283,
+      "sha256": "7bcafc80b827f43a3de7a6021ceaf7755505ae10baf136e9d708d0af53d9fcba"
+    },
+    {
+      "path": "11-detailed-pending-simplified-active.jpg",
+      "bytes": 46402,
+      "sha256": "53844e9a98a0d4f22ed28feb2ff4694dc271b1559079ce4c6dc24c3e25532c71"
+    },
+    {
+      "path": "12-detailed-active-after-apply.jpg",
+      "bytes": 46937,
+      "sha256": "df0f14507107a72777f116d92cbc541e3dcc7110c155ab24c4d8607bcc7ed657"
+    },
+    {
+      "path": "13-current-mode-apply-before.jpg",
+      "bytes": 63599,
+      "sha256": "30321331746c49fa566b92e4f7ac668433d85cea3df1d7376e3478d561891ca8"
+    },
+    {
+      "path": "14-current-mode-apply-after.jpg",
+      "bytes": 62336,
+      "sha256": "2976220fc8c837b8e41be42cbe39424b80cd7abb55b15af5e8309b2787010b03"
+    },
+    {
+      "path": "15-current-mode-apply-settled.jpg",
+      "bytes": 63599,
+      "sha256": "30321331746c49fa566b92e4f7ac668433d85cea3df1d7376e3478d561891ca8"
+    },
+    {
+      "path": "16-current-mode-detailed-still-active.jpg",
+      "bytes": 46111,
+      "sha256": "74399f3e05132d6da81596b85910098a8aed1ebfaa35e87cb57fa666353175ac"
+    }
+  ],
+  "inspection": {
+    "four_cross_mode_apply_transitions_observed": true,
+    "pending_choice_does_not_activate": true,
+    "escape_and_close_keep_active_mode": true,
+    "reopen_keeps_pending_choice": true,
+    "current_mode_apply": "Same mode and visible bottom marker remain after settled click; image14 is transient hotspot highlight, image15 settled; no exact numeric scroll assertion.",
+    "initial_open": "Observed live in tool screenshot; no standalone initial-open capture saved."
+  },
+  "limits": [
+    "Only one authored HIGH entry flow; no exhaustive108-edge or all ordered-pair behavior qualification.",
+    "No exact numeric scroll/focus/native-full-matching/boundary preserve-reset/restore/accessibility/B01/Phase1 acceptance.",
+    "Screenshots inspect prototype fixture text and selection, not production renderer/content behavior."
+  ],
+  "last_observed_state": "HIGH/HIGH/OPEN at top"
+}

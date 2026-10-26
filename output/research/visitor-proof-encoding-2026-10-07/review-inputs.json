@@ -1,0 +1,195 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Visitor proof canonical encoding and existing random-verifier admission recommendation only; no selected runtime, cookie-policy change, application adapter or live credentials",
+  "inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "review-inputs/AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "review-inputs/.specify/memory/constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "review-inputs/DECISIONS.md",
+      "bytes": 84370,
+      "sha256": "f38b6f5930b51cae9188db8df6bc9fe458b0df907a3f6eab10fc6b956a0b50da"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "snapshot": "review-inputs/docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "bytes": 116413,
+      "sha256": "12314d8567e4f4c0f63c944aae6caa09657240bf40042191b983f4be5b6599ae"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "review-inputs/docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "bytes": 69294,
+      "sha256": "36a155980940a765bdca823c04060d072b4b929cd7786fd3a11332dc5e033125"
+    },
+    {
+      "source": "specs/001-platform-security-hardening/spec.md",
+      "snapshot": "review-inputs/specs/001-platform-security-hardening/spec.md",
+      "bytes": 31323,
+      "sha256": "2f7066eef33f89f8600587e7778d70e80538b82d49709c5516cac91f63371747"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/process-value.schema.json",
+      "snapshot": "review-inputs/docs/phase-1-architecture/contracts/process-value.schema.json",
+      "bytes": 1494,
+      "sha256": "b4fd9fc84f322ecb6743c00244f3731ccd612861de53056aaddb20a377a67a95"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/booking-creation-response.schema.json",
+      "snapshot": "review-inputs/docs/phase-1-architecture/contracts/booking-creation-response.schema.json",
+      "bytes": 6019,
+      "sha256": "fa8e8cfab09723b06b72bb791c4961766a6a4dbcb549ffd1bb262d6e18447bfb"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/chat-creation-response.schema.json",
+      "snapshot": "review-inputs/docs/phase-1-architecture/contracts/chat-creation-response.schema.json",
+      "bytes": 2093,
+      "sha256": "49f804d116960d24fac38378fd2ade6fe4cd17f5eff86069d00ed2e5817baf7f"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/visitor-lifetime-controls-v1-2026-10-07.md",
+      "snapshot": "review-inputs/docs/phase-1-architecture/contracts/reviews/visitor-lifetime-controls-v1-2026-10-07.md",
+      "bytes": 6106,
+      "sha256": "a54f91d14cc9b32ca5cb4caff1bbbe90235f4c0b75ed73554ce5e29187008adc"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/chat-creation-consent-v1-2026-10-06.md",
+      "snapshot": "review-inputs/docs/phase-1-architecture/contracts/reviews/chat-creation-consent-v1-2026-10-06.md",
+      "bytes": 4229,
+      "sha256": "fce9d4409228345636dab9af4a8d9722b0339004712e682c6a5b05d3e9d4a90a"
+    },
+    {
+      "source": "output/research/visitor-proof-encoding-2026-10-07/PRIVATE_PROCESS_PROOF.before.md",
+      "snapshot": "review-inputs/output/research/visitor-proof-encoding-2026-10-07/PRIVATE_PROCESS_PROOF.before.md",
+      "bytes": 108274,
+      "sha256": "f247fd4c72d2e79cd03d77cd9d0e5287f2266c85bf4cefd129742bb2a9f639a2"
+    },
+    {
+      "source": "output/research/visitor-proof-encoding-2026-10-07/SECURITY_PRIVACY_CONTRACT.before.md",
+      "snapshot": "review-inputs/output/research/visitor-proof-encoding-2026-10-07/SECURITY_PRIVACY_CONTRACT.before.md",
+      "bytes": 68608,
+      "sha256": "3d61c735d00c47d907814f193be4b35669ad950bdf27d8f0f8112f57a8fa6774"
+    },
+    {
+      "source": "output/research/visitor-proof-encoding-2026-10-07/probe_stdlib.py",
+      "snapshot": "review-inputs/output/research/visitor-proof-encoding-2026-10-07/probe_stdlib.py",
+      "bytes": 2638,
+      "sha256": "3f062a530274137302b6c048a80f15fed4221cf1f7d88b89fb474b520764527d"
+    },
+    {
+      "source": "output/research/visitor-proof-encoding-2026-10-07/observations.json",
+      "snapshot": "review-inputs/output/research/visitor-proof-encoding-2026-10-07/observations.json",
+      "bytes": 1673,
+      "sha256": "364ad88defe4bc0cde2a6d26333b7869bbe8f2a08a3fa12898dde12babd8018f"
+    },
+    {
+      "source": "output/research/visitor-proof-encoding-2026-10-07/base64.installed.py",
+      "snapshot": "review-inputs/output/research/visitor-proof-encoding-2026-10-07/base64.installed.py",
+      "bytes": 22647,
+      "sha256": "3a5535c6216a53cc99d9f05f8a03639dc97b5596ba5186671aa25aabcb5f236f"
+    },
+    {
+      "source": "output/research/visitor-proof-encoding-2026-10-07/secrets.installed.py",
+      "snapshot": "review-inputs/output/research/visitor-proof-encoding-2026-10-07/secrets.installed.py",
+      "bytes": 2055,
+      "sha256": "37570483735e4026f95230a4681057329a72a3c17c2d36592e6743584d4b587f"
+    },
+    {
+      "source": "output/research/visitor-proof-encoding-2026-10-07/hashlib.installed.py",
+      "snapshot": "review-inputs/output/research/visitor-proof-encoding-2026-10-07/hashlib.installed.py",
+      "bytes": 9714,
+      "sha256": "271b00a30d27c3cdd99b7f70962680f8455d3057b3c103f028e2da31141b91ee"
+    },
+    {
+      "source": "output/research/visitor-proof-encoding-2026-10-07/context7-resolve.json",
+      "snapshot": "review-inputs/output/research/visitor-proof-encoding-2026-10-07/context7-resolve.json",
+      "bytes": 1827,
+      "sha256": "e2676787f35a847b491d3e9917a04ac0187feaebd206126e69a1693c8515d7a0"
+    },
+    {
+      "source": "output/research/visitor-proof-encoding-2026-10-07/context7-query.json",
+      "snapshot": "review-inputs/output/research/visitor-proof-encoding-2026-10-07/context7-query.json",
+      "bytes": 4741,
+      "sha256": "f3d46a4f7f654cbd25ca918f86e53ae7f129edcd604259a3e09a1b7e13ab515f"
+    },
+    {
+      "source": "output/research/visitor-proof-encoding-2026-10-07/sources.json",
+      "snapshot": "review-inputs/output/research/visitor-proof-encoding-2026-10-07/sources.json",
+      "bytes": 2906,
+      "sha256": "ef5a6f28c4c1599f94df77d31e3d0dcf4abb0138d7ad250e3f06ce7bcd556e62"
+    },
+    {
+      "source": "output/research/visitor-proof-encoding-2026-10-07/python-secrets.html",
+      "snapshot": "review-inputs/output/research/visitor-proof-encoding-2026-10-07/python-secrets.html",
+      "bytes": 36411,
+      "sha256": "4bcd1e04408b8776e4ee969fddcfc9ac4ae8df4b57724881eb2a9f52cc3db181"
+    },
+    {
+      "source": "output/research/visitor-proof-encoding-2026-10-07/python-base64.html",
+      "snapshot": "review-inputs/output/research/visitor-proof-encoding-2026-10-07/python-base64.html",
+      "bytes": 61727,
+      "sha256": "0516e777c5b44e9c4a79c05f903418ac8e226f544b934a6a9c32cf570a57226c"
+    },
+    {
+      "source": "output/research/visitor-proof-encoding-2026-10-07/python-hmac.html",
+      "snapshot": "review-inputs/output/research/visitor-proof-encoding-2026-10-07/python-hmac.html",
+      "bytes": 30022,
+      "sha256": "f3d36b264134dc5e89bbe09e7e24d3325409d3dd950c4905143a144caf8e6138"
+    },
+    {
+      "source": "output/research/visitor-proof-encoding-2026-10-07/python-hashlib.html",
+      "snapshot": "review-inputs/output/research/visitor-proof-encoding-2026-10-07/python-hashlib.html",
+      "bytes": 120915,
+      "sha256": "5ff70f2d55aac60321ec773eae239fe5e7052cf636805bdef2483304641c9b0c"
+    },
+    {
+      "source": "output/research/visitor-proof-encoding-2026-10-07/python-3148-release.html",
+      "snapshot": "review-inputs/output/research/visitor-proof-encoding-2026-10-07/python-3148-release.html",
+      "bytes": 57284,
+      "sha256": "f8419c261f5ed80c88f1b192d8fbed27b6b2af0dc09c003c3689bbfd2342a511"
+    },
+    {
+      "source": "output/research/visitor-proof-encoding-2026-10-07/owasp-session-management.html",
+      "snapshot": "review-inputs/output/research/visitor-proof-encoding-2026-10-07/owasp-session-management.html",
+      "bytes": 157308,
+      "sha256": "9a41b1f652967db72891f700de671e120d60c17add096a0bd5b8894ecced643f"
+    },
+    {
+      "source": "output/research/visitor-proof-encoding-2026-10-07/rfc4648.txt",
+      "snapshot": "review-inputs/output/research/visitor-proof-encoding-2026-10-07/rfc4648.txt",
+      "bytes": 35491,
+      "sha256": "84e14418f795d503be5f34bf23ce4ebaa119e9ec7c9f667d8caeb111385b178f"
+    },
+    {
+      "source": "output/research/visitor-proof-encoding-2026-10-07/nist-fips180-4.html",
+      "snapshot": "review-inputs/output/research/visitor-proof-encoding-2026-10-07/nist-fips180-4.html",
+      "bytes": 40827,
+      "sha256": "5ef052a60f81daa0978de9a82ed73bce6a5ebe25c1c5a0d9ee7d57f1e0330207"
+    }
+  ],
+  "producer_evidence": "Read-only installed stdlib observations with public synthetic byte values; no credential generation, ordinary prose tests or application enforcement checks",
+  "preservation": "Both existing contract bodies retained as exact byte prefixes; only new proposal/reference sections appended",
+  "review_questions": [
+    "Does the explicit 43-character ASCII URL-safe admission, strict 32-byte decode and exact re-encode comparison deny noncanonical pad bits, alternate alphabet, whitespace/padding/normalization and decoder errors without treating shape as credential authority?",
+    "Does SHA256 apply only to independent 256-bit random bearer bytes, with full fixed-length internal digest comparison and exact process/generation binding, while staff bcrypt/JWT and volatile synchronizer CSRF handling remain separate?",
+    "Are installed 3.14.5 observations and official maintained 3.14 API evidence distinguished from Context7 main-only optional parameters and complete latest-compatible graph selection?",
+    "Are earlier cookie/CSRF/deadline/ownership/uncertain-work rules and D076 no-absolute visitor policy preserved, including honest stolen-proof risk and the difference from OWASP absolute-session guidance?",
+    "Are body-prefix preservation, raw secret/verifier secrecy, constant-time operand caveats, store/transport/log boundaries and held adoption/runtime/legal/integrated acceptance honest?",
+    "Identify consequential proposal or source-evidence mismatches; do not expand review to full application or claim library probes establish CSPRNG, timing or ingress security."
+  ],
+  "independent_verdict": null,
+  "application_changed": false,
+  "external_design_writes": false,
+  "committed": false
+}

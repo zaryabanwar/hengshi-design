@@ -1,0 +1,39 @@
+{
+  "status": "DOING",
+  "review_verdict": "PASS",
+  "date": "2026-10-08",
+  "scope": "Only the new scheduling HTTP/finite-resource appendix, its catalogue insertion and representative evidence in the 36 frozen inputs; earlier logical C2 approval retains its own bytes and scope.",
+  "manifest_sha256": "0b3c29916825459cca35775f054a6b7fa5253a0b0ff33d01a93a7e81e3203f9b",
+  "reviewed_change": {
+    "booking": "docs/phase-1-architecture/contracts/BOOKING_SCHEDULING.md:543-789",
+    "catalogue": "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md:442-448"
+  },
+  "integrity": "All 36 frozen hashes/sizes verified, including original 32; booking preserves its 39,751-byte exact prefix and catalogue changes only by one seven-line navigation insertion.",
+  "live_context": "Only original DATA_CONTRACT has expected additive/reference drift; input33 provides its verified current bytes. No scheduling-rule change found in that drift.",
+  "findings": [],
+  "assessment": [
+    "Exact routes and closed raw-query grammar preserve one-pass decoding, literal timezone plus handling, strict revision tokens and current authority before private conflict/output.",
+    "Body-bearing status correlations distinguish local admission and pending from calendar settlement; bodyless method/media/size refusals require no object lookup.",
+    "Scheduling shares only general fresh capacity; protected challenge-extension work/record reservations remain isolated. Existing operation reconciliation precedes fresh state/rate/record/intent admission.",
+    "Provider coverage, view/record/intent ceilings and draining cleanup refuse incomplete or over-cap work without truncation, timeout permit reuse, automatic new-operation retry or fabricated calendar success."
+  ],
+  "independent_replay": "13 representative sizing cases and seven explicit-option Python 3.14.5 parse_qsl observations reproduce saved results; original observe_sizing.py main was not run.",
+  "replay_evidence": {
+    "path": "independent-replay-results.json",
+    "sha256": "4e7810bf1449d77c46d0c8479e835120c2048ea604b9d94a96d7554975c0908c"
+  },
+  "primary_sources_read": [
+    "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "https://www.rfc-editor.org/rfc/rfc3986.html#section-2.4",
+    "https://www.rfc-editor.org/rfc/rfc6585.html",
+    "https://docs.python.org/3/library/urllib.parse.html#urllib.parse.parse_qsl",
+    "https://fastapi.tiangolo.com/tutorial/query-param-models/"
+  ],
+  "limits": [
+    "Numeric windows, permits, rates, storage, bytes and deadlines remain unmeasured engineering proposals, not accepted capacity or standards.",
+    "Synthetic examples are not exhaustive maxima or semantic mailbox/content validity; stdlib observations are not a compliant raw parser or HTTP handler proof.",
+    "Actual store/ingress framing and admission, cross-worker reservations, streaming/decompression/parser bounds, delivery cleanup and calendar adapter capabilities/current account access still require implementation qualification.",
+    "No runtime, load, privacy/security/WCAG certification, compatible dependency selection, provider/business-cutoff selection, integrated acceptance, founder approval or application development follows.",
+    "Prior exhausted-credit attempts provided no inherited verdict; no canonical/app/config edits, installs, new agents or broad runtime tests were performed."
+  ]
+}

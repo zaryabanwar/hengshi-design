@@ -1,0 +1,54 @@
+{
+  "5.2.0": {
+    "tarball_url": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-5.2.0.tgz",
+    "integrity_verified": true,
+    "compressed_bytes": 54865,
+    "package_code_executed": false,
+    "published_source_mentions": {
+      "exhaustive-deps": true,
+      "rules-of-hooks": true,
+      "component-hook-factories": false,
+      "config": true,
+      "error-boundaries": false,
+      "gating": false,
+      "globals": true,
+      "immutability": true,
+      "incompatible-library": false,
+      "preserve-manual-memoization": false,
+      "purity": false,
+      "refs": true,
+      "set-state-in-effect": false,
+      "set-state-in-render": false,
+      "static-components": false,
+      "unsupported-syntax": false,
+      "use-memo": false
+    },
+    "readme_excerpt": "# `eslint-plugin-react-hooks`\n\nThis ESLint plugin enforces the [Rules of Hooks](https://react.dev/reference/rules/rules-of-hooks).\n\nIt is a part of the [Hooks API](https://react.dev/reference/react/hooks) for React.\n\n## Installation\n\n**Note: If you're using Create React App, please use `react-scripts` >= 3 instead of adding it directly.**\n\nAssuming you already have ESLint installed, run:\n\n```sh\n# npm\nnpm install eslint-plugin-react-hooks --save-dev\n\n# yarn\nyarn add eslint-plugin-react-hooks --dev\n```\n\n### Legacy Config (.eslintrc)\n\nIf you are still using ESLint below 9.0.0, please continue to use `recommended-legacy`. To avoid breaking changes, we still support `recommended` as well, but note that this will be changed to alias the flat recommended config in v6.\n\n```js\n{\n  \"extends\": [\n    // ...\n    \"plugin:react-hooks/recommended-legacy\"\n  ]\n}\n```\n\n### Flat Config (eslint.config.js)\n\nFor [ESLint 9.0.0 and above](https://eslint.org/blog/2024/04/eslint-v9.0.0-released/) users, add the `recommended-latest` config.\n\n```js\nimport reactHooks from 'eslint-plugin-react-hooks';\n\nexport default [\n  // ...\n  reactHooks.configs['recommended-latest'],\n];\n```\n\n### Custom Configuration\n\nIf you want more fine-grained configuration, you can instead add a snippet like this to your ESLint configuration file:\n\n#### Legacy Config (.eslintrc)\n\n```js\n{\n  \"plugins\": [\n    // ...\n    \"react-hooks\"\n  ],\n  \"rules\": {\n    // ...\n    \"react-hooks/rules-of-hooks\": \"error\",\n    \"react-hooks/exhaustive-deps\": \"warn\"\n  }\n}\n```\n\n#### Flat Config (eslint.config.js)\n\n```js\nimport reactHooks from 'eslint-plugin-react-hooks';\n\nexport default [\n  {\n    files: ['**/*.{js,jsx}'],\n    plugins: { 'react-hooks': reactHooks },\n    // ...\n    rules: {\n      'react-hooks/rules-of-hooks': 'error',\n      'react-hooks/exhaustive-deps': 'warn',\n    }\n  },\n];\n```\n\n## Advanced Configuration\n\n`exhaustive-deps` can be configured to validate dependencies of custom Hooks with the `additionalHooks` option.\nThis option accepts a regex to match the names of custom Hooks that have dependencies.\n\n```js\n{\n  \"rules\": {\n    // ...\n    \"react-hooks/exhaustive-deps\": [\"warn\", {\n      \"additionalHooks\": \"(useMyCustomHook|useMyOtherCustomHook)\"\n    }]\n  }\n}\n```\n\nWe suggest to use this option **very sparingly, if at all**. Generally saying, we recommend most custom Hooks to not use the dependencies argument, and instead provide a higher-level API that is more focused around a specific use case.\n\n## Valid and Invalid Examples\n\nPlease refer to the [Rules of Hooks](https://react.dev/reference/rules/rules-of-hooks) documentation to learn more about this rule.\n\n## License\n\nMIT\n"
+  },
+  "7.1.1": {
+    "tarball_url": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-7.1.1.tgz",
+    "integrity_verified": true,
+    "compressed_bytes": 599751,
+    "package_code_executed": false,
+    "published_source_mentions": {
+      "exhaustive-deps": true,
+      "rules-of-hooks": true,
+      "component-hook-factories": true,
+      "config": true,
+      "error-boundaries": true,
+      "gating": true,
+      "globals": true,
+      "immutability": true,
+      "incompatible-library": true,
+      "preserve-manual-memoization": true,
+      "purity": true,
+      "refs": true,
+      "set-state-in-effect": true,
+      "set-state-in-render": true,
+      "static-components": true,
+      "unsupported-syntax": true,
+      "use-memo": true
+    },
+    "readme_excerpt": "# `eslint-plugin-react-hooks`\n\nThe official ESLint plugin for [React](https://react.dev) which enforces the [Rules of React](https://react.dev/reference/eslint-plugin-react-hooks) and other best practices.\n\n## Installation\n\nAssuming you already have ESLint installed, run:\n\n```sh\n# npm\nnpm install eslint-plugin-react-hooks --save-dev\n\n# yarn\nyarn add eslint-plugin-react-hooks --dev\n```\n\n### Flat Config (eslint.config.js|ts)\n\nAdd the `recommended` config for all recommended rules:\n\n```js\n// eslint.config.js\nimport reactHooks from 'eslint-plugin-react-hooks';\nimport { defineConfig } from 'eslint/config';\n\nexport default defineConfig([\n  reactHooks.configs.flat.recommended,\n]);\n```\n\nIf you want to try bleeding edge experimental compiler rules, use `recommended-latest`.\n\n```js\n// eslint.config.js\nimport reactHooks from 'eslint-plugin-react-hooks';\nimport { defineConfig } from 'eslint/config';\n\nexport default defineConfig([\n  reactHooks.configs.flat['recommended-latest'],\n]);\n```\n\n### Legacy Config (.eslintrc)\n\nIf you are still using ESLint below 9.0.0, the `recommended` preset can also be used to enable all recommended rules.\n\n```js\n{\n  \"extends\": [\"plugin:react-hooks/recommended\"],\n  // ...\n}\n\n```\n\n### Custom Configuration\n\nIf you want more fine-grained configuration, you can instead choose to enable specific rules. However, we strongly encourage using the recommended presets \u2014\u00a0see above \u2014 so that you will automatically receive new recommended rules as we add them in future versions of the plugin.\n\n#### Flat Config (eslint.config.js|ts)\n\n```js\nimport reactHooks from 'eslint-plugin-react-hooks';\n\nexport default [\n  {\n    files: ['**/*.{js,jsx}'],\n    plugins: { 'react-hooks': reactHooks },\n    // ...\n    rules: {\n      // Core hooks rules\n      'react-hooks/rules-of-hooks': 'error',\n      'react-hooks/exhaustive-deps': 'warn',\n\n      // React Compiler rules\n      'react-hooks/config': 'error',\n      'react-hooks/error-boundaries': 'error',\n      'react-hooks/gating': 'error',\n      'react-hooks/globals': 'error',\n      'react-hooks/immutability': 'error',\n      'react-hooks/preserve-manual-memoization': 'error',\n      'react-hooks/purity': 'error',\n      'react-hooks/refs': 'error',\n      'react-hooks/set-state-in-effect': 'error',\n      'react-hooks/set-state-in-render': 'error',\n      'react-hooks/static-components': 'error',\n      'react-hooks/unsupported-syntax': 'warn',\n      'react-hooks/use-memo': 'error',\n      'react-hooks/incompatible-library': 'warn',\n    }\n  },\n];\n```\n\n#### Legacy Config (.eslintrc)\n```js\n{\n  \"plugins\": [\n    // ...\n    \"react-hooks\"\n  ],\n  \"rules\": {\n    // ...\n    // Core hooks rules\n    \"react-hooks/rules-of-hooks\": \"error\",\n    \"react-hooks/exhaustive-deps\": \"warn\",\n\n    // React Compiler rules\n    \"react-hooks/config\": \"error\",\n    \"react-hooks/error-boundaries\": \"error\",\n    \"react-hooks/gating\": \"error\",\n    \"react-hooks/globals\": \"error\",\n    \"react-hooks/immutability\": \"error\",\n    \"react-hooks/preserve-manual-memoization\": \"error\",\n    \"react-hooks/purity\": \"error\",\n    \"react-hooks/refs\": \"error\",\n    \"react-hooks/set-state-in-effect\": \"error\",\n    \"react-hooks/set-state-in-render\": \"error\",\n    \"react-hooks/static-components\": \"error\",\n    \"react-hooks/unsupported-syntax\": \"warn\",\n    \"react-hooks/use-memo\": \"error\",\n    \"react-hooks/incompatible-library\": \"warn\"\n  }\n}\n```\n\n## Advanced Configuration\n\n`exhaustive-deps` can be configured to validate dependencies of custom Hooks with the `additionalHooks` option.\nThis option accepts a regex to match the names of custom Hooks that have dependencies.\n\n```js\n{\n  rules: {\n    // ...\n    \"react-hooks/exhaustive-deps\": [\"warn\", {\n      additionalHooks: \"(useMyCustomHook|useMyOtherCustomHook)\"\n    }]\n  }\n}\n```\n\nWe suggest to use this option **very sparingly, if at all**. Generally saying, we recommend most custom Hooks to not use the dependencies argument, and instead provide a higher-level API that is more focused around a specific use case.\n\n## Valid and Invalid Examples\n\nPlease refer to the [Rules of Hooks](https://react.dev/reference/rules/rules-of-hooks) documentation to learn more about this rule.\n\n## License\n\nMIT\n"
+  }
+}

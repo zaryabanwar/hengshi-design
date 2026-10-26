@@ -1,0 +1,82 @@
+{
+  "scope": "artifact identity/prefix/local reference inspection only; no behavioral tests",
+  "frozen_inputs": [
+    {
+      "path": "AGENTS.md",
+      "matches": true
+    },
+    {
+      "path": ".specify/memory/constitution.md",
+      "matches": true
+    },
+    {
+      "path": "PROJECT.md",
+      "matches": true
+    },
+    {
+      "path": "DECISIONS.md",
+      "matches": true
+    },
+    {
+      "path": "docs/phase-1-ux-architecture/FLOWS.md",
+      "matches": true
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "matches": true
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/interface-catalog.csv",
+      "matches": true
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/process-fields.csv",
+      "matches": true
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "matches": true
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "matches": true
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "matches": true
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/booking-status-response.schema.json",
+      "matches": true
+    },
+    {
+      "path": "specs/001-platform-security-hardening/spec.md",
+      "matches": true
+    }
+  ],
+  "predecessor_exact_prefix": true,
+  "appendix_occurrences": 1,
+  "local_links": [
+    {
+      "href": "../../phase-1-ux-architecture/FLOWS.md#bf-01a-qualification",
+      "exists": true,
+      "fragment_exists": true
+    },
+    {
+      "href": "DATA_CONTRACT.md#booking-and-provider-transactions",
+      "exists": true,
+      "fragment_exists": true
+    },
+    {
+      "href": "PRIVATE_PROCESS_PROOF.md#scope-and-recommendation",
+      "exists": true,
+      "fragment_exists": true
+    },
+    {
+      "href": "DATA_CONTRACT.md#record-purpose-retention-binding-proposal--2026-10-08",
+      "exists": true,
+      "fragment_exists": true
+    }
+  ],
+  "runtime_tests": "not run; no application implementation or UI change"
+}

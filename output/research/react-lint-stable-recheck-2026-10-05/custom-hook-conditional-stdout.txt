@@ -1,0 +1,7 @@
+{ "diagnostics": [{"message": "React Hook \"useSession\" is called conditionally. React Hooks must be called in the exact same order in every component render.","code": "react-hooks(rules-of-hooks)","severity": "error","url": "https://oxc.rs/docs/guide/usage/linter/rules/react/rules-of-hooks.html","help": "Move the Hook call before the condition, or call it unconditionally and branch inside the Hook/effect instead.","filename": "base-fixtures/custom-hook-conditional.tsx","labels": [{"label": "This Hook call is not reachable on every render path.","span": {"offset": 175,"length": 12,"line": 5,"column": 18}}]}],
+              "number_of_files": 1,
+              "number_of_rules": 2,
+              "threads_count": 4,
+              "start_time": 0.0087399
+            }
+            

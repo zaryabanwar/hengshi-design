@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-10-08",
+  "context7_library": "/microsoftgraph/microsoft-graph-docs-contrib",
+  "primary_urls": [
+    "https://learn.microsoft.com/en-us/graph/api/calendar-getschedule?view=graph-rest-1.0",
+    "https://learn.microsoft.com/en-us/graph/api/user-list-calendarview?view=graph-rest-1.0",
+    "https://learn.microsoft.com/en-us/graph/api/user-post-events?view=graph-rest-1.0",
+    "https://learn.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0",
+    "https://learn.microsoft.com/en-us/graph/outlook-calendar-online-meetings",
+    "https://learn.microsoft.com/en-us/graph/api/event-update?view=graph-rest-1.0",
+    "https://learn.microsoft.com/en-us/graph/api/event-cancel?view=graph-rest-1.0",
+    "https://learn.microsoft.com/en-us/graph/outlook-immutable-id",
+    "https://www.postgresql.org/docs/18/rangetypes.html#RANGETYPES-CONSTRAINT",
+    "https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.1"
+  ],
+  "scope": "Official capability semantics read via Context7 and web; no actual account/provider actions",
+  "observations": [
+    "getSchedule: delegated personal account unsupported; calendarView supports personal delegated read",
+    "Event create: attendee invitations are sent by provider; transactionId assists create retry deduplication",
+    "Online provider capabilities are calendar-specific; enabled meeting provider cannot simply be switched",
+    "Event updates: preserve meeting data if changing body; changeKey existence alone is not a tested precondition contract",
+    "Cancel: organizer-only, item moved to Deleted Items, bodyless 202; not application reconciliation proof",
+    "Immutable event IDs are opt-in, case-sensitive and stable within a mailbox, with documented exceptions",
+    "PostgreSQL exclusion constraints are local overlap candidates, not atomic external-calendar locks"
+  ],
+  "limits": [
+    "No capability, permission, subscription or SDK selected",
+    "No deployment or migration",
+    "Actual MA-006 tests and exact wire/account bindings remain required"
+  ]
+}

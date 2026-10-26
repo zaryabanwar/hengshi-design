@@ -1,0 +1,47 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "observed_at_utc": "2026-10-17T15:06:31.197614+00:00",
+  "scope": "Read-only current disk/protected-input observation only; no trial admission or execution",
+  "free_bytes": 1569648640,
+  "required_initial_free_bytes": 1610612736,
+  "shortfall_bytes": 40964096,
+  "disk_snapshot_satisfies_initial_arithmetic": false,
+  "target_exists": false,
+  "protected_inputs": [
+    {
+      "path": "package.json",
+      "sha256": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b",
+      "matches_reviewed_plan": true
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908",
+      "matches_reviewed_plan": true
+    },
+    {
+      "path": "apps/web/package.json",
+      "sha256": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a",
+      "matches_reviewed_plan": true
+    },
+    {
+      "path": "apps/web/package-lock.json",
+      "sha256": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d",
+      "matches_reviewed_plan": true
+    },
+    {
+      "path": "apps/api/requirements.txt",
+      "sha256": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd",
+      "matches_reviewed_plan": true
+    },
+    {
+      "path": "apps/api/.venv/pyvenv.cfg",
+      "sha256": "d23bc586f40b9aa9a601c8af0cab224cd4a40f0544a2f6348e9ad703f4d8ea39",
+      "matches_reviewed_plan": true
+    }
+  ],
+  "execution_authorized": false,
+  "holds": [
+    "Independent controller/helpers/graph review and explicit runtime/source-build permission remain required even if disk arithmetic now passes."
+  ]
+}

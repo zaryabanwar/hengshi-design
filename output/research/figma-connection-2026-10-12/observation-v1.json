@@ -1,0 +1,25 @@
+{
+  "product": "Hengshi Design v1",
+  "observed_date": "2026-10-12",
+  "surface": "Existing user-owned Edge Plugins settings page",
+  "plugin_id": "plugin_connector_68df038e0ba48191908c8434991bbac2",
+  "account_label": "Quadstar Apparels's Figma account",
+  "primary": true,
+  "listed_under": "Connected accounts",
+  "authorization_used": "OAuth",
+  "actions_observed": [
+    "Rename account",
+    "Reconnect",
+    "Disconnect"
+  ],
+  "actions_executed": [],
+  "screenshot": "settings-menu.jpg",
+  "last_approved_mcp_attempt": 35,
+  "last_error": "UNAUTHORIZED / Reauthentication required",
+  "limits": [
+    "UI connection listing does not prove token acceptance or file access",
+    "Account label does not establish that the wrong identity is selected",
+    "Reconnect not initiated; no authentication or permission change",
+    "No Figma MCP call made during this UI inspection"
+  ]
+}

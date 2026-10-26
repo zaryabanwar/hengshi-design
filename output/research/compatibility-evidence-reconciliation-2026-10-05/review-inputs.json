@@ -1,0 +1,1184 @@
+{
+  "scope": "Current evidence reconciliation of the interrupted original 61-input scope and later reviewed amendments. The three current producer documents are assessed for evidence accuracy and cross-study consistency. Later raw inputs and scoped receipts provide context and traceability, without retrospectively broadening their verdicts. No fresh registry claim, complete stable-graph selection, legal clearance, installed/runtime compatibility, source-build attestation, installation or founder acceptance. The original failed review remains without a historical verdict.",
+  "inputs": [
+    {
+      "source": "docs/phase-1-compatibility/backend-evidence-2026-10-04.md",
+      "snapshot": "000-backend-evidence-2026-10-04.md",
+      "bytes": 12407,
+      "sha256": "f04d8fbf7330ae9d58a135c92cd745c0c973f472791929c96ebe17555ea21061",
+      "historical_sha256": "f11227f4dd7b820394e5190cd5a1b41a3250070546c681ddd3eb4fbf8befa1b7",
+      "unchanged_from_interrupted_scope": false
+    },
+    {
+      "source": "docs/phase-1-compatibility/README.md",
+      "snapshot": "001-README.md",
+      "bytes": 21254,
+      "sha256": "f197b6a8f5534c10fd0c9d96dea043870eabd703d8d3027008a8befb8037bdec",
+      "historical_sha256": "4e447016104c178b1083bbda838f53f797139f7886639dcc1daca2da135d5984",
+      "unchanged_from_interrupted_scope": false
+    },
+    {
+      "source": "docs/phase-1-compatibility/refresh-evidence-2026-10-04.md",
+      "snapshot": "002-refresh-evidence-2026-10-04.md",
+      "bytes": 42698,
+      "sha256": "ae2f8a87c378147461d7606616ce5118cf83e10bcb3e5889091d7ef8f0d87964",
+      "historical_sha256": "d666158ef2e0eabd3bd2ebd42103791e474f581f080c1ca844987f1bfbb001ad",
+      "unchanged_from_interrupted_scope": false
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/backend-windows/pip-report.json",
+      "snapshot": "003-pip-report.json",
+      "bytes": 452688,
+      "sha256": "b9a135fa96ee978af2011ea4e4b8f848fd44235db46349caed74cc61ecc2c8f6",
+      "historical_sha256": "b9a135fa96ee978af2011ea4e4b8f848fd44235db46349caed74cc61ecc2c8f6",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/backend-windows/requirements-study.txt",
+      "snapshot": "004-requirements-study.txt",
+      "bytes": 234,
+      "sha256": "2d588f1262f7c04d8baa100e18bfd6aab903c501e7b5408fcf2d298fd469fcae",
+      "historical_sha256": "2d588f1262f7c04d8baa100e18bfd6aab903c501e7b5408fcf2d298fd469fcae",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/backend-windows/resolver-exit-code.txt",
+      "snapshot": "005-resolver-exit-code.txt",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+      "historical_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/backend-windows/resolver-output.txt",
+      "snapshot": "006-resolver-output.txt",
+      "bytes": 9640,
+      "sha256": "e55ed332da06a98619c29d7c7d4dbd5bb12941ee552a332631ba67e55a24fae5",
+      "historical_sha256": "e55ed332da06a98619c29d7c7d4dbd5bb12941ee552a332631ba67e55a24fae5",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/bundled-license-correspondence.json",
+      "snapshot": "007-bundled-license-correspondence.json",
+      "bytes": 9133,
+      "sha256": "25f8485798477ad323b3479c93f009a56ae2e552930d25b23f4b8a6367e203a7",
+      "historical_sha256": "25f8485798477ad323b3479c93f009a56ae2e552930d25b23f4b8a6367e203a7",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/frontend-package-metadata.json",
+      "snapshot": "008-frontend-package-metadata.json",
+      "bytes": 46632,
+      "sha256": "c9e0733159326163cb220beaba2d63b6675c7c7605a8a211964776b69444cc20",
+      "historical_sha256": "c9e0733159326163cb220beaba2d63b6675c7c7605a8a211964776b69444cc20",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/independently-latest/package.json",
+      "snapshot": "009-package.json",
+      "bytes": 1094,
+      "sha256": "8536a1f7907aaad128a14ed03cd8e741750c83a5406d893466fff6c15b7ae91d",
+      "historical_sha256": "8536a1f7907aaad128a14ed03cd8e741750c83a5406d893466fff6c15b7ae91d",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/independently-latest/resolver-exit-code.txt",
+      "snapshot": "010-resolver-exit-code.txt",
+      "bytes": 3,
+      "sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+      "historical_sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/independently-latest/resolver-output.txt",
+      "snapshot": "011-resolver-output.txt",
+      "bytes": 1290,
+      "sha256": "edd3cd717b7538a346f7ef72134f13fc6e7651e8a7d0dee1b5ec13ee27eaeaa2",
+      "historical_sha256": "edd3cd717b7538a346f7ef72134f13fc6e7651e8a7d0dee1b5ec13ee27eaeaa2",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-behavior-probe.json",
+      "snapshot": "012-native-lint-behavior-probe.json",
+      "bytes": 13477,
+      "sha256": "7f17d668dfb445df7a877452162e827d4e360e263ea3952eff3e523bc866d138",
+      "historical_sha256": "7f17d668dfb445df7a877452162e827d4e360e263ea3952eff3e523bc866d138",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-metadata.json",
+      "snapshot": "013-native-lint-metadata.json",
+      "bytes": 2466,
+      "sha256": "a0206e039a74610503f56f0f9d64975d6cf2ac634f1ccab8b6c74aa0c89fb88b",
+      "historical_sha256": "a0206e039a74610503f56f0f9d64975d6cf2ac634f1ccab8b6c74aa0c89fb88b",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/conditional-hook-output.json",
+      "snapshot": "014-conditional-hook-output.json",
+      "bytes": 852,
+      "sha256": "b9b9d688c7733369b453367aa6e6ba11d90fc4f66937b1c4002e811ff324af62",
+      "historical_sha256": "b9b9d688c7733369b453367aa6e6ba11d90fc4f66937b1c4002e811ff324af62",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/conditional-hook-stderr.txt",
+      "snapshot": "015-conditional-hook-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/conditional-use-output.json",
+      "snapshot": "016-conditional-use-output.json",
+      "bytes": 197,
+      "sha256": "9d644a9b46e4cebc8c5be70ec4bc4470806fd974516a5d5b43447e6c2b12f2e0",
+      "historical_sha256": "9d644a9b46e4cebc8c5be70ec4bc4470806fd974516a5d5b43447e6c2b12f2e0",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/conditional-use-stderr.txt",
+      "snapshot": "017-conditional-use-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/effect-event-as-click-handler-output.json",
+      "snapshot": "018-effect-event-as-click-handler-output.json",
+      "bytes": 814,
+      "sha256": "efea181e0b48aa662711d847118babd3fcccfae6ebdb79a393f5e65acaca6277",
+      "historical_sha256": "efea181e0b48aa662711d847118babd3fcccfae6ebdb79a393f5e65acaca6277",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/effect-event-as-click-handler-stderr.txt",
+      "snapshot": "019-effect-event-as-click-handler-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/effect-event-during-render-output.json",
+      "snapshot": "020-effect-event-during-render-output.json",
+      "bytes": 759,
+      "sha256": "7920b71eef7b36d5dad6f49ab122070999a1b8738c2b353795ca6b8011e2887b",
+      "historical_sha256": "7920b71eef7b36d5dad6f49ab122070999a1b8738c2b353795ca6b8011e2887b",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/effect-event-during-render-stderr.txt",
+      "snapshot": "021-effect-event-during-render-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/effect-event-in-deps-output.json",
+      "snapshot": "022-effect-event-in-deps-output.json",
+      "bytes": 690,
+      "sha256": "be2ee3c74475a69bdb05d8ef2f528fe7d6a885299ae15214853b7ae104fc01a3",
+      "historical_sha256": "be2ee3c74475a69bdb05d8ef2f528fe7d6a885299ae15214853b7ae104fc01a3",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/effect-event-in-deps-stderr.txt",
+      "snapshot": "023-effect-event-in-deps-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/effect-event-valid-output.json",
+      "snapshot": "024-effect-event-valid-output.json",
+      "bytes": 197,
+      "sha256": "630e29d668c8fdf42aa69f6827a9c5c9bbc4c8f8e2b36e44e96682c6581b8ca2",
+      "historical_sha256": "630e29d668c8fdf42aa69f6827a9c5c9bbc4c8f8e2b36e44e96682c6581b8ca2",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/effect-event-valid-stderr.txt",
+      "snapshot": "025-effect-event-valid-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/exit-code.txt",
+      "snapshot": "026-exit-code.txt",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+      "historical_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/fixtures/conditional-hook.tsx",
+      "snapshot": "027-conditional-hook.tsx",
+      "bytes": 163,
+      "sha256": "dbe025a6b36ba677b43e225911bd29ad134da2dc25250a405b989e9866ce1e38",
+      "historical_sha256": "dbe025a6b36ba677b43e225911bd29ad134da2dc25250a405b989e9866ce1e38",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/fixtures/conditional-use.tsx",
+      "snapshot": "028-conditional-use.tsx",
+      "bytes": 142,
+      "sha256": "b06d92f2c3c05793cffadb94f464c39dec272e08556ee04b7effeb4b90cd7373",
+      "historical_sha256": "b06d92f2c3c05793cffadb94f464c39dec272e08556ee04b7effeb4b90cd7373",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/fixtures/effect-event-as-click-handler.tsx",
+      "snapshot": "029-effect-event-as-click-handler.tsx",
+      "bytes": 182,
+      "sha256": "5d5601045578223a84ff3f76e1315aa59a2079945d1c157679b1fc329b53aeef",
+      "historical_sha256": "5d5601045578223a84ff3f76e1315aa59a2079945d1c157679b1fc329b53aeef",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/fixtures/effect-event-during-render.tsx",
+      "snapshot": "030-effect-event-during-render.tsx",
+      "bytes": 154,
+      "sha256": "66d747cee459cf89ed8a0bd12df0ceed5701df3e4be3869395968ec43a308304",
+      "historical_sha256": "66d747cee459cf89ed8a0bd12df0ceed5701df3e4be3869395968ec43a308304",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/fixtures/effect-event-in-deps.tsx",
+      "snapshot": "031-effect-event-in-deps.tsx",
+      "bytes": 196,
+      "sha256": "fa72507867708dabdadcdd87aaa0912cba30175d348e2315bb5d543f24572960",
+      "historical_sha256": "fa72507867708dabdadcdd87aaa0912cba30175d348e2315bb5d543f24572960",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/fixtures/effect-event-valid.tsx",
+      "snapshot": "032-effect-event-valid.tsx",
+      "bytes": 185,
+      "sha256": "1607706ea843c19e926f24711173b20a980f17ea585c326e9aa03820875f44df",
+      "historical_sha256": "1607706ea843c19e926f24711173b20a980f17ea585c326e9aa03820875f44df",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/fixtures/missing-dependency.tsx",
+      "snapshot": "033-missing-dependency.tsx",
+      "bytes": 120,
+      "sha256": "893f0a2a3cb9d4056c74e81e7b48f677e88dfda7f6e51ad62369ca9b306ebb6e",
+      "historical_sha256": "893f0a2a3cb9d4056c74e81e7b48f677e88dfda7f6e51ad62369ca9b306ebb6e",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/fixtures/valid-hooks.tsx",
+      "snapshot": "034-valid-hooks.tsx",
+      "bytes": 163,
+      "sha256": "0d94f59f497b0e0afae4510a8c11e3d6898382a4e2f0f08de2ffa0fa204edf2a",
+      "historical_sha256": "0d94f59f497b0e0afae4510a8c11e3d6898382a4e2f0f08de2ffa0fa204edf2a",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/missing-dependency-output.json",
+      "snapshot": "035-missing-dependency-output.json",
+      "bytes": 757,
+      "sha256": "b69aba43156ed86e662069d8d4603f2799768904535becc7c482b0b3f4049783",
+      "historical_sha256": "b69aba43156ed86e662069d8d4603f2799768904535becc7c482b0b3f4049783",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/missing-dependency-stderr.txt",
+      "snapshot": "036-missing-dependency-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/package-lock.json",
+      "snapshot": "037-package-lock.json",
+      "bytes": 162581,
+      "sha256": "da45dd6cb7cee7834fc5985b6595c2111780ee24d7cf87d1bdaf1749be3f37ab",
+      "historical_sha256": "da45dd6cb7cee7834fc5985b6595c2111780ee24d7cf87d1bdaf1749be3f37ab",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/package.json",
+      "snapshot": "038-package.json",
+      "bytes": 1166,
+      "sha256": "f1ecb8d6083bacb65684def851c69a9066618534ddfc62b088fd7242e29eb69e",
+      "historical_sha256": "f1ecb8d6083bacb65684def851c69a9066618534ddfc62b088fd7242e29eb69e",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/probe-config.json",
+      "snapshot": "039-probe-config.json",
+      "bytes": 136,
+      "sha256": "62f9d0789fbcbd0c4232b4a70cf972a3e8084bd21a7c194beb86393c27edf431",
+      "historical_sha256": "62f9d0789fbcbd0c4232b4a70cf972a3e8084bd21a7c194beb86393c27edf431",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/resolver-output.txt",
+      "snapshot": "040-resolver-output.txt",
+      "bytes": 20,
+      "sha256": "6c6100b1e38130900f947b09dba989b4fe8c8d23ff8ad5d1c1fb61cdc98a202f",
+      "historical_sha256": "6c6100b1e38130900f947b09dba989b4fe8c8d23ff8ad5d1c1fb61cdc98a202f",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/valid-hooks-output.json",
+      "snapshot": "041-valid-hooks-output.json",
+      "bytes": 197,
+      "sha256": "7524934340599f35b7d3a2a6ff8c7cedbdb0a426815829f5a1a73b9d3257ed99",
+      "historical_sha256": "7524934340599f35b7d3a2a6ff8c7cedbdb0a426815829f5a1a73b9d3257ed99",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/valid-hooks-stderr.txt",
+      "snapshot": "042-valid-hooks-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-protected-world-inspection.json",
+      "snapshot": "043-native-lint-protected-world-inspection.json",
+      "bytes": 5863,
+      "sha256": "b199bf247a3c4f07136f32d661d468050cec12369697e28f669e8f59305e06b8",
+      "historical_sha256": "b199bf247a3c4f07136f32d661d468050cec12369697e28f669e8f59305e06b8",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-study-analysis.json",
+      "snapshot": "044-native-lint-study-analysis.json",
+      "bytes": 1665,
+      "sha256": "988aab79c92f663afb3953e4860d50944c50de9c20bf51e0acc5779099e92401",
+      "historical_sha256": "988aab79c92f663afb3953e4860d50944c50de9c20bf51e0acc5779099e92401",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-tool-provenance.json",
+      "snapshot": "045-native-lint-tool-provenance.json",
+      "bytes": 4013,
+      "sha256": "8f55e1327d1d3bb9ad1de80aeeb95eab7f96ff1349c49a334ea1be4355a3e984",
+      "historical_sha256": "8f55e1327d1d3bb9ad1de80aeeb95eab7f96ff1349c49a334ea1be4355a3e984",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-win32-metadata.json",
+      "snapshot": "046-native-lint-win32-metadata.json",
+      "bytes": 2456,
+      "sha256": "fdbf0298cdb452f2379a29bf9e91d1cbd7873d2831046d581fd085f4f4a7facd",
+      "historical_sha256": "fdbf0298cdb452f2379a29bf9e91d1cbd7873d2831046d581fd085f4f4a7facd",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/pinned-source-license-evidence.json",
+      "snapshot": "047-pinned-source-license-evidence.json",
+      "bytes": 5924,
+      "sha256": "c2b4780c1555c86ed440e35b2bb77e932203576062bf50fa4f2b051453db3662",
+      "historical_sha256": "c2b4780c1555c86ed440e35b2bb77e932203576062bf50fa4f2b051453db3662",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/protected-input-hashes.json",
+      "snapshot": "048-protected-input-hashes.json",
+      "bytes": 481,
+      "sha256": "8f15a53bc1bf2c0cb92f536624e955b06725bc31b5bff3007d8b2729527a0661",
+      "historical_sha256": "8f15a53bc1bf2c0cb92f536624e955b06725bc31b5bff3007d8b2729527a0661",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/release-channel-checks.json",
+      "snapshot": "049-release-channel-checks.json",
+      "bytes": 3454,
+      "sha256": "6e42a028d39a9286490ad7f19d730c989a160e27cf32514ec59fcb8c1cb68813",
+      "historical_sha256": "6e42a028d39a9286490ad7f19d730c989a160e27cf32514ec59fcb8c1cb68813",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/resolution-analysis.json",
+      "snapshot": "050-resolution-analysis.json",
+      "bytes": 12332,
+      "sha256": "8f08d32270dfbf06ed11bf72c5639acf0fa08e07e1dfc28567cc9fdd50a994d0",
+      "historical_sha256": "8f08d32270dfbf06ed11bf72c5639acf0fa08e07e1dfc28567cc9fdd50a994d0",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/stable-lint-babel-range-evidence.json",
+      "snapshot": "051-stable-lint-babel-range-evidence.json",
+      "bytes": 43646,
+      "sha256": "bcb6e2efaee736154bca476f733976d640b68106111e9a8cde860eb23c3518de",
+      "historical_sha256": "bcb6e2efaee736154bca476f733976d640b68106111e9a8cde860eb23c3518de",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/stable-lint-package-metadata.json",
+      "snapshot": "052-stable-lint-package-metadata.json",
+      "bytes": 48094,
+      "sha256": "c5dd839eb15c425d0ea608dc580edc45481635387140c162baf1915d431d707b",
+      "historical_sha256": "c5dd839eb15c425d0ea608dc580edc45481635387140c162baf1915d431d707b",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/stable-lint-source-observations.json",
+      "snapshot": "053-stable-lint-source-observations.json",
+      "bytes": 8888,
+      "sha256": "034e0bf67c05641a23851186626152971960e33f5feb319aeca52f2d6d325bf1",
+      "historical_sha256": "034e0bf67c05641a23851186626152971960e33f5feb319aeca52f2d6d325bf1",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/targeted-license-analysis.json",
+      "snapshot": "054-targeted-license-analysis.json",
+      "bytes": 7094,
+      "sha256": "9951e7b9c94e03c8cd29628588386b967780f6dcc8fa86de1f384ce8ee5866a5",
+      "historical_sha256": "9951e7b9c94e03c8cd29628588386b967780f6dcc8fa86de1f384ce8ee5866a5",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/targeted-license-archive-evidence.json",
+      "snapshot": "055-targeted-license-archive-evidence.json",
+      "bytes": 30051,
+      "sha256": "8ba7e6e3f75132d411bece717992178b9b0ec99c925b2b92542e2f7dc104c810",
+      "historical_sha256": "8ba7e6e3f75132d411bece717992178b9b0ec99c925b2b92542e2f7dc104c810",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/targeted-license-metadata.json",
+      "snapshot": "056-targeted-license-metadata.json",
+      "bytes": 7276,
+      "sha256": "01c7fd8651e9e6274c7dc276f20631213f803142a4f18300e3aeb2711913e60e",
+      "historical_sha256": "01c7fd8651e9e6274c7dc276f20631213f803142a4f18300e3aeb2711913e60e",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/ts7-api6-bridge/package-lock.json",
+      "snapshot": "057-package-lock.json",
+      "bytes": 164514,
+      "sha256": "d9e70a50b925087e7bb5d2c2f95d6acf7cf337de3e5bb3b1fd47f8c291bd0de9",
+      "historical_sha256": "d9e70a50b925087e7bb5d2c2f95d6acf7cf337de3e5bb3b1fd47f8c291bd0de9",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/ts7-api6-bridge/package.json",
+      "snapshot": "058-package.json",
+      "bytes": 1173,
+      "sha256": "330b6ee9a8abeceed3afe0c868dc7107c7e1a1fe129171d1e6557781d37fdef0",
+      "historical_sha256": "330b6ee9a8abeceed3afe0c868dc7107c7e1a1fe129171d1e6557781d37fdef0",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/ts7-api6-bridge/resolver-exit-code.txt",
+      "snapshot": "059-resolver-exit-code.txt",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+      "historical_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/ts7-api6-bridge/resolver-output.txt",
+      "snapshot": "060-resolver-output.txt",
+      "bytes": 20,
+      "sha256": "6c163cceef75764a14ba2be8b69a742ba88f407dfc199cb179c375882ab5da96",
+      "historical_sha256": "6c163cceef75764a14ba2be8b69a742ba88f407dfc199cb179c375882ab5da96",
+      "unchanged_from_interrupted_scope": true
+    },
+    {
+      "source": "output/research/compatibility-review-current-scope-2026-10-04.json",
+      "snapshot": "061-compatibility-review-current-scope-2026-10-04.json",
+      "bytes": 10386,
+      "sha256": "a0853a0ff6561764ede1404722824df4218b2e8c8c22cc1a47905c4a35f10973"
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "062-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "063-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "PROJECT.md",
+      "snapshot": "064-PROJECT.md",
+      "bytes": 10942,
+      "sha256": "a483bd2713fe420322772ab7fb07c848aaf103088697c05ab91f35d2e5ea1461"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "065-DECISIONS.md",
+      "bytes": 72891,
+      "sha256": "1d53a14ac3347ebeefeeb728e03862b09de111b748cef4e48d5f4ca19141b6d8"
+    },
+    {
+      "source": "TASKS.md",
+      "snapshot": "066-TASKS.md",
+      "bytes": 3811,
+      "sha256": "158e06c0d8cd67859c8b459b96dce3449cb4d16788d3c520e99d8823f72edcd3"
+    },
+    {
+      "source": "docs/software-definition/README.md",
+      "snapshot": "067-README.md",
+      "bytes": 15180,
+      "sha256": "c454e744daeaff518e28b4095b47dd86fd3fb10e3298265c7cd159f142fa919c"
+    },
+    {
+      "source": "docs/phase-1-compatibility/reviews/candidate-inventory-review-2026-10-04.md",
+      "snapshot": "068-candidate-inventory-review-2026-10-04.md",
+      "bytes": 9525,
+      "sha256": "55eeeca3faf02a11495afdd69c861e519b3c5566c64b641373b3d74922d2633a"
+    },
+    {
+      "source": "docs/phase-1-compatibility/reviews/refresh-backend-2026-10-04.md",
+      "snapshot": "069-refresh-backend-2026-10-04.md",
+      "bytes": 7105,
+      "sha256": "1b68031e3e82ea79ab8b039f6132bb51ee65a618b73a984aeef0cad477a8fb6c"
+    },
+    {
+      "source": "docs/phase-1-compatibility/reviews/wasm-util-notice-review-2026-10-04.md",
+      "snapshot": "070-wasm-util-notice-review-2026-10-04.md",
+      "bytes": 6591,
+      "sha256": "fc3ef1727922b82467326ae6736cfead6292a0584410a1e8ad7f008104559493"
+    },
+    {
+      "source": "docs/phase-1-compatibility/reviews/react-lint-stable-path-recheck-2026-10-04.md",
+      "snapshot": "071-react-lint-stable-path-recheck-2026-10-04.md",
+      "bytes": 6713,
+      "sha256": "0ac0c4a4a9ee0edd3a4130d26ffdd9aad1f44179c5295a203b13c6e1f2458391"
+    },
+    {
+      "source": "docs/phase-1-compatibility/reviews/native-react-lint-evidence-review-2026-10-04.md",
+      "snapshot": "072-native-react-lint-evidence-review-2026-10-04.md",
+      "bytes": 21861,
+      "sha256": "abce8aad7ecc6e4611a93b9b2215ba8a8bd5743bd39a832d9a79f30e647bd490"
+    },
+    {
+      "source": "docs/phase-1-compatibility/reviews/native-lint-strict-recheck-review-2026-10-04.md",
+      "snapshot": "073-native-lint-strict-recheck-review-2026-10-04.md",
+      "bytes": 12431,
+      "sha256": "6c557c8ebfdb482634f3422d551263cf0d047e227bc8ad2ac695c5ba9883de3e"
+    },
+    {
+      "source": "docs/phase-1-compatibility/reviews/native-hook-conformance-v1-2026-10-05.md",
+      "snapshot": "074-native-hook-conformance-v1-2026-10-05.md",
+      "bytes": 7660,
+      "sha256": "318bd11635e0c2c62fdab343f40007ce1c76e90287f037e7b1362e03d1d22b4d"
+    },
+    {
+      "source": "docs/phase-1-compatibility/reviews/gsap-notice-evidence-2026-10-04.md",
+      "snapshot": "075-gsap-notice-evidence-2026-10-04.md",
+      "bytes": 8960,
+      "sha256": "2726d61ffdbdc587a7cefa8a2cab2c892fbc71f104fcbeb4159787d55bed98cb"
+    },
+    {
+      "source": "docs/phase-1-compatibility/wasm-util-notice-evidence-2026-10-04.md",
+      "snapshot": "076-wasm-util-notice-evidence-2026-10-04.md",
+      "bytes": 4050,
+      "sha256": "bba46a0f8337fde3af03f8bf8e0ac8f9066039ac925a1d575cf0d10bfc677ef8"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-recommended-coverage.json",
+      "snapshot": "077-native-lint-recommended-coverage.json",
+      "bytes": 16889,
+      "sha256": "86bbe2d8e65bde10d1719cd2c822e8739e4de78fb0f1590451749e0a920ca123"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-strict-resolution-recheck/package.json",
+      "snapshot": "078-package.json",
+      "bytes": 1166,
+      "sha256": "f1ecb8d6083bacb65684def851c69a9066618534ddfc62b088fd7242e29eb69e"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-strict-resolution-recheck/package-lock.json",
+      "snapshot": "079-package-lock.json",
+      "bytes": 162581,
+      "sha256": "da45dd6cb7cee7834fc5985b6595c2111780ee24d7cf87d1bdaf1749be3f37ab"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-strict-resolution-recheck/receipt.json",
+      "snapshot": "080-receipt.json",
+      "bytes": 5288,
+      "sha256": "4502e1d0ce6814968b9c12435f726d173ca5bc520e3ac8347315169f7fdde1ac"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-strict-resolution-recheck/stdout.txt",
+      "snapshot": "081-stdout.txt",
+      "bytes": 18,
+      "sha256": "2b2bbbf93489e72436a76087518c0ea9a2edc890ec71f668ed8bb2124f488c60"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-strict-resolution-recheck/stderr.txt",
+      "snapshot": "082-stderr.txt",
+      "bytes": 212,
+      "sha256": "e0fd7d2a46113fec04fc2e28f48b8beeef0fb56cae6010aa580f9dd6f1956706"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/review-inputs.json",
+      "snapshot": "083-review-inputs.json",
+      "bytes": 11837,
+      "sha256": "d61a3d279a383648619d0765938be8e14c5fdf28a567a0353b4330f77f332201"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/run_probe.py",
+      "snapshot": "084-run_probe.py",
+      "bytes": 9158,
+      "sha256": "749219e45932f92ab8b73c9489a4adcf9597e240b745c770fedc3758d09d3ca7"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/receipt.json",
+      "snapshot": "085-receipt.json",
+      "bytes": 22285,
+      "sha256": "ad2050d7537d5adde4cf4ef8aed268b930b7e5e3ce5c4427cdd76cdd4b7606ca"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/tag-source-receipt.json",
+      "snapshot": "086-tag-source-receipt.json",
+      "bytes": 499,
+      "sha256": "fe3a7c312a94594299a37267f67f22edde0d6eafbb3248b5331e6c9151300b97"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/exhaustive_deps.rs",
+      "snapshot": "087-exhaustive_deps.rs",
+      "bytes": 149508,
+      "sha256": "0c9a8372f5a72398dd63a747d35a978b4015626cd40d50573cf4fcfa062ddd3d"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/rules_of_hooks.rs",
+      "snapshot": "088-rules_of_hooks.rs",
+      "bytes": 90995,
+      "sha256": "35e4a166253a27d0990bddfdb66b14772b986db2af5ea2083f4cfa1da2d4682b"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/probe-config.json",
+      "snapshot": "089-probe-config.json",
+      "bytes": 136,
+      "sha256": "62f9d0789fbcbd0c4232b4a70cf972a3e8084bd21a7c194beb86393c27edf431"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/invalid-config.json",
+      "snapshot": "090-invalid-config.json",
+      "bytes": 13,
+      "sha256": "1bde13a215e156fc5595ea1047823eb14132bc054b87cac3a3f3e92b475fcd69"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/refresh-evidence.reviewed.md",
+      "snapshot": "091-refresh-evidence.reviewed.md",
+      "bytes": 42197,
+      "sha256": "0ddacac850efef76d26b9044043dee1c683714988b59271bdad5c405cf8c6325"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/base-fixtures/custom-hook-conditional.tsx",
+      "snapshot": "092-custom-hook-conditional.tsx",
+      "bytes": 218,
+      "sha256": "fa16240b49c9d19a6d483d3916b9ad3812283f11227587867dac31a7458a6b47"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/base-fixtures/named-hook-alias-conditional.tsx",
+      "snapshot": "093-named-hook-alias-conditional.tsx",
+      "bytes": 186,
+      "sha256": "c5c100fe1ca682d72d32545320e9fd464483fbd87c292e4f2d1d12899ea6d5e1"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/base-fixtures/namespace-conditional.tsx",
+      "snapshot": "094-namespace-conditional.tsx",
+      "bytes": 176,
+      "sha256": "5bece0488a4c415a10dada7b396675e9130e128719fa94f97a13fe3c4f5deb98"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/base-fixtures/namespace-missing-dependency.tsx",
+      "snapshot": "095-namespace-missing-dependency.tsx",
+      "bytes": 165,
+      "sha256": "057bba621e22d6a6a953897f0e0793215941f822dcc75939d745790417fc8a0f"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/base-fixtures/namespace-valid.tsx",
+      "snapshot": "096-namespace-valid.tsx",
+      "bytes": 170,
+      "sha256": "087a597ad7123a2f49151db3ed01ac525b61016ce5312005abe36c5fee5b8348"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/base-fixtures/renamed-effect-missing-dependency.tsx",
+      "snapshot": "097-renamed-effect-missing-dependency.tsx",
+      "bytes": 167,
+      "sha256": "8277a73b7cd2b42317d5abc3e38fb4a68ecbacdcc803bd1d57c71660efe757a8"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/base-fixtures/renamed-hook-conditional.tsx",
+      "snapshot": "098-renamed-hook-conditional.tsx",
+      "bytes": 176,
+      "sha256": "6de9e0d543413dadf94d1b593eb4caa19a64b08a61aa2d33456005a95c6fc882"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-fixtures/custom-effect-rule-invalid-cli-override.tsx",
+      "snapshot": "099-custom-effect-rule-invalid-cli-override.tsx",
+      "bytes": 185,
+      "sha256": "396534736cd82f460f8b4f05c50d4157a6eba48343f71a5753bdd59b7a0eada6"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-fixtures/custom-effect-rule-invalid.tsx",
+      "snapshot": "100-custom-effect-rule-invalid.tsx",
+      "bytes": 185,
+      "sha256": "396534736cd82f460f8b4f05c50d4157a6eba48343f71a5753bdd59b7a0eada6"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-fixtures/custom-effect-rule-valid.tsx",
+      "snapshot": "101-custom-effect-rule-valid.tsx",
+      "bytes": 190,
+      "sha256": "ad1cc07b8a474aa72e178d3bdea7b9f1646131f9692baa86426261e426ad3ee8"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-fixtures/custom-effect-shared-invalid.tsx",
+      "snapshot": "102-custom-effect-shared-invalid.tsx",
+      "bytes": 185,
+      "sha256": "396534736cd82f460f8b4f05c50d4157a6eba48343f71a5753bdd59b7a0eada6"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/namespace-valid-stdout.json",
+      "snapshot": "103-namespace-valid-stdout.json",
+      "bytes": 197,
+      "sha256": "44194e3a8391f08e593f335bea2d13398eb1f6cc49082d1bdc8f7cf72c6708d5"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/namespace-valid-stderr.txt",
+      "snapshot": "104-namespace-valid-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/namespace-conditional-stdout.json",
+      "snapshot": "105-namespace-conditional-stdout.json",
+      "bytes": 790,
+      "sha256": "97993de055c6faf6623d41bc039bada37f945c02a0d3556d1de9bf3e17591119"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/namespace-conditional-stderr.txt",
+      "snapshot": "106-namespace-conditional-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/namespace-missing-dependency-stdout.json",
+      "snapshot": "107-namespace-missing-dependency-stdout.json",
+      "bytes": 700,
+      "sha256": "c876631eadfa7265134d8b87a5c65043c605a4846c8a3735d16a864c20affc40"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/namespace-missing-dependency-stderr.txt",
+      "snapshot": "108-namespace-missing-dependency-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-hook-conditional-stdout.json",
+      "snapshot": "109-custom-hook-conditional-stdout.json",
+      "bytes": 794,
+      "sha256": "05acf6c82f741df11f368cdf0344bef4ada90de9e7095767d60c9aa82eda05aa"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-hook-conditional-stderr.txt",
+      "snapshot": "110-custom-hook-conditional-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/named-hook-alias-conditional-stdout.json",
+      "snapshot": "111-named-hook-alias-conditional-stdout.json",
+      "bytes": 799,
+      "sha256": "b07dc1eb36a052235115ce1d98481ebb585f7d0e68bdc42005c14d71b3cfc569"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/named-hook-alias-conditional-stderr.txt",
+      "snapshot": "112-named-hook-alias-conditional-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/renamed-hook-conditional-stdout.json",
+      "snapshot": "113-renamed-hook-conditional-stdout.json",
+      "bytes": 197,
+      "sha256": "5fcde5e1377842c06d51c1c11fb1aee2f11789513ac163c27745c303e509f598"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/renamed-hook-conditional-stderr.txt",
+      "snapshot": "114-renamed-hook-conditional-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/renamed-effect-missing-dependency-stdout.json",
+      "snapshot": "115-renamed-effect-missing-dependency-stdout.json",
+      "bytes": 197,
+      "sha256": "75e92ff6d28488679cda0ae66e0a093fed8a4aa4389caa9833143f03d10024a3"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/renamed-effect-missing-dependency-stderr.txt",
+      "snapshot": "116-renamed-effect-missing-dependency-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/invalid-config-stdout.txt",
+      "snapshot": "117-invalid-config-stdout.txt",
+      "bytes": 256,
+      "sha256": "87395855d4a140a4feedd56b2c1809fee524f3cb7fc50ea48f52e8a9bf881846"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/invalid-config-stderr.txt",
+      "snapshot": "118-invalid-config-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/unmatched-file-stdout.txt",
+      "snapshot": "119-unmatched-file-stdout.txt",
+      "bytes": 267,
+      "sha256": "eb8f4680fd2ea69b4824e2931795f84fccfb3e85b9cf5d0f6c57653f61817bdb"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/unmatched-file-stderr.txt",
+      "snapshot": "120-unmatched-file-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/directory-scope-stdout.txt",
+      "snapshot": "121-directory-scope-stdout.txt",
+      "bytes": 2501,
+      "sha256": "f4b91bcac4b741e5372009840dff6581a665e78d956ed3913eb278516e40eda2"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/directory-scope-stderr.txt",
+      "snapshot": "122-directory-scope-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-effect-shared-invalid-stdout.json",
+      "snapshot": "123-custom-effect-shared-invalid-stdout.json",
+      "bytes": 197,
+      "sha256": "615c607737cad5ebe465cf3a108f4391328412a555a1a467fd86892b2b4840aa"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-effect-shared-invalid-stderr.txt",
+      "snapshot": "124-custom-effect-shared-invalid-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-effect-shared-invalid-config.json",
+      "snapshot": "125-custom-effect-shared-invalid-config.json",
+      "bytes": 290,
+      "sha256": "2b6077ba85dce91dec25ddfc12c5a0049fa089707ca6b6da1db7668dd9d32f3d"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-invalid-stdout.json",
+      "snapshot": "126-custom-effect-rule-invalid-stdout.json",
+      "bytes": 714,
+      "sha256": "de00ffc8192f3cf2be9d2aac37347eaf3b4bd1cd348069a154c277713fd2f725"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-invalid-stderr.txt",
+      "snapshot": "127-custom-effect-rule-invalid-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-invalid-config.json",
+      "snapshot": "128-custom-effect-rule-invalid-config.json",
+      "bytes": 269,
+      "sha256": "7f1a71cf9486290de43f6a4170cf737903bf5a930339d62bfe61dbcb610534e2"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-valid-stdout.json",
+      "snapshot": "129-custom-effect-rule-valid-stdout.json",
+      "bytes": 197,
+      "sha256": "5b2bd23dd030ee648720b01ce82596cf860c28d6371ed2a6a9039862d2dbafdc"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-valid-stderr.txt",
+      "snapshot": "130-custom-effect-rule-valid-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-valid-config.json",
+      "snapshot": "131-custom-effect-rule-valid-config.json",
+      "bytes": 269,
+      "sha256": "7f1a71cf9486290de43f6a4170cf737903bf5a930339d62bfe61dbcb610534e2"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-invalid-cli-override-stdout.json",
+      "snapshot": "132-custom-effect-rule-invalid-cli-override-stdout.json",
+      "bytes": 197,
+      "sha256": "eeae7eb0d807c4e19b4c256789aab5506c811760f98c8873ca41962d8cb3400a"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-invalid-cli-override-stderr.txt",
+      "snapshot": "133-custom-effect-rule-invalid-cli-override-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/native-lint-conformance-2026-10-05/custom-effect-rule-invalid-cli-override-config.json",
+      "snapshot": "134-custom-effect-rule-invalid-cli-override-config.json",
+      "bytes": 269,
+      "sha256": "7f1a71cf9486290de43f6a4170cf737903bf5a930339d62bfe61dbcb610534e2"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/backend-windows/core_cargo_pinned.source.txt",
+      "snapshot": "135-core_cargo_pinned.source.txt",
+      "bytes": 2875,
+      "sha256": "178d537feb822d845526eeac2438f817cf25ad15d15fe1261b81b9b3452edbb3"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/backend-windows/core_pyproject.source.txt",
+      "snapshot": "136-core_pyproject.source.txt",
+      "bytes": 5643,
+      "sha256": "80f7cf0e108619c32894e828db550bfe6928d4f14ce244ef492fe782609f9926"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/backend-windows/core_pyproject_pinned.source.txt",
+      "snapshot": "137-core_pyproject_pinned.source.txt",
+      "bytes": 5643,
+      "sha256": "80f7cf0e108619c32894e828db550bfe6928d4f14ce244ef492fe782609f9926"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/backend-windows/core_tag.source.txt",
+      "snapshot": "138-core_tag.source.txt",
+      "bytes": 357,
+      "sha256": "ec17ce0958d2914bf70a0aa8a09bf7917162c838e543101300e43a823913a047"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/backend-windows/core_tag_object.source.txt",
+      "snapshot": "139-core_tag_object.source.txt",
+      "bytes": 700,
+      "sha256": "a2d944024d8501218ee099223d2174fca81a05fe65c9d3e4aa32cbd2a3e81108"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/backend-windows/current_policy_pinned.source.txt",
+      "snapshot": "140-current_policy_pinned.source.txt",
+      "bytes": 6635,
+      "sha256": "08250a1f910b862b9c2349ce21dd4aa8d67e8b41aa32d5fe89acb9fa988335b7"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/backend-windows/pydantic_main_ref.source.txt",
+      "snapshot": "141-pydantic_main_ref.source.txt",
+      "bytes": 337,
+      "sha256": "fe401b5df447eaa692a63e8d5cb2eb69b0cdb85bd65a6497b703b110ae07d383"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/backend-windows/pydantic_pyproject.source.txt",
+      "snapshot": "142-pydantic_pyproject.source.txt",
+      "bytes": 8849,
+      "sha256": "5b72b7bec36d50131da5f0932176e5a2a14511d7e9f7f48a4ced20ddb8e3e783"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/backend-windows/pydantic_pyproject_pinned.source.txt",
+      "snapshot": "143-pydantic_pyproject_pinned.source.txt",
+      "bytes": 8849,
+      "sha256": "5b72b7bec36d50131da5f0932176e5a2a14511d7e9f7f48a4ced20ddb8e3e783"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/backend-windows/pydantic_tag.source.txt",
+      "snapshot": "144-pydantic_tag.source.txt",
+      "bytes": 339,
+      "sha256": "2d4eec2f7ca90dec8a358d26d417736188a7335bcc34eaf2dbf46050c6d0b356"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/backend-windows/pydantic_tag_object.source.txt",
+      "snapshot": "145-pydantic_tag_object.source.txt",
+      "bytes": 680,
+      "sha256": "d74a7934c1f6a803e4ec874e953bc42fee563b7d6f2dd61b9454f60d59f4c2d9"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/backend-windows/version_policy.source.txt",
+      "snapshot": "146-version_policy.source.txt",
+      "bytes": 6635,
+      "sha256": "08250a1f910b862b9c2349ce21dd4aa8d67e8b41aa32d5fe89acb9fa988335b7"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/backend-windows/pydantic-source-channel-evidence.json",
+      "snapshot": "147-pydantic-source-channel-evidence.json",
+      "bytes": 4771,
+      "sha256": "a6eb0c83a2431f0baae0242aa63ed07f55e28558c8638beef2a4aaeb2392dd89"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/archive-README.md",
+      "snapshot": "148-archive-README.md",
+      "bytes": 6199,
+      "sha256": "66a79667b0538b19634b5a000a9a3debe588c98d390424e73e5d4de847270828"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/gsap-3.15.0.tgz",
+      "snapshot": "149-gsap-3.15.0.tgz",
+      "bytes": 1697897,
+      "sha256": "d2e33ad202d4811e9084883f7ff9a27967ac4095caef51ca4c9d20697a253b1c"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/incorporated-webflow-terms.html",
+      "snapshot": "150-incorporated-webflow-terms.html",
+      "bytes": 365097,
+      "sha256": "48bb54b8be09d84feaa261932f5df8fd27d4fdf1fa1b42341a65ae18d878aac1"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/inspection.json",
+      "snapshot": "151-inspection.json",
+      "bytes": 39490,
+      "sha256": "a86f05e4f9443562406662ad95ec04a88ebf5a5f4e7c1389beae8c2e9ce48f0a"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/official-standard-license.html",
+      "snapshot": "152-official-standard-license.html",
+      "bytes": 76456,
+      "sha256": "e26081f97d79030c9d5db9ec5a2ac1f6e499df661c37de6eb3c576483e11ec2e"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/official-tag.json",
+      "snapshot": "153-official-tag.json",
+      "bytes": 333,
+      "sha256": "ab9f292df193b8f16a03a4bb7ed1160c4f768f5b6f5f627e54a3b6826616df57"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/registry.json",
+      "snapshot": "154-registry.json",
+      "bytes": 2137,
+      "sha256": "787e4fdba7edc45b2a67af281508c4e518ad985ee0d972b9238847fa807768a9"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/source-association.json",
+      "snapshot": "155-source-association.json",
+      "bytes": 4303,
+      "sha256": "95e7d668aeb10be68b983cec3e9bcec0d5e770e5ebf5ca4859f228a758e40d7f"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/source-dist--gsap.js",
+      "snapshot": "156-source-dist--gsap.js",
+      "bytes": 179557,
+      "sha256": "01effe0e121c22ba0f885a3f091f3dc6d1f0d445c4fba37dcb298e314eca5cfb"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/source-dist--gsap.min.js",
+      "snapshot": "157-source-dist--gsap.min.js",
+      "bytes": 72927,
+      "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/source-README.md",
+      "snapshot": "158-source-README.md",
+      "bytes": 6199,
+      "sha256": "66a79667b0538b19634b5a000a9a3debe588c98d390424e73e5d4de847270828"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/source-src--gsap-core.js",
+      "snapshot": "159-source-src--gsap-core.js",
+      "bytes": 151046,
+      "sha256": "8063816e0e7c3e6c07970fb06feafb06146fd266db5d8346419176b3d496e284"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-audit-report.json",
+      "snapshot": "160-native-lint-audit-report.json",
+      "bytes": 364,
+      "sha256": "59e3aa5eb03e6e7954b32505a8b8348bb369c13c0c5960e22d36216b3e35ac91"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-audit-receipt.json",
+      "snapshot": "161-native-lint-audit-receipt.json",
+      "bytes": 1001,
+      "sha256": "4a820466f9cf03a07b98c284e37428ce99435412860b1dbbe29779b7ad03c23a"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-audit-stderr.txt",
+      "snapshot": "162-native-lint-audit-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-candidate-sbom.cdx.json",
+      "snapshot": "163-native-lint-candidate-sbom.cdx.json",
+      "bytes": 293948,
+      "sha256": "59af17d89cae44938495c91535cc111919904a6fca2e934a3a54a59a52973184"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-sbom-receipt.json",
+      "snapshot": "164-native-lint-sbom-receipt.json",
+      "bytes": 2775,
+      "sha256": "ea78a856b87410105a9924a9e2abcbd070354b80717af9d1cf32c31531000df5"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-sbom-stderr.txt",
+      "snapshot": "165-native-lint-sbom-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/native-lint-sbom-crosswalk.json",
+      "snapshot": "166-native-lint-sbom-crosswalk.json",
+      "bytes": 151620,
+      "sha256": "0924988e33ade0b8531642201fa0a4493d6e450d458ee91262b3757484239246"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/wasm-util-full-source-notice-scan.json",
+      "snapshot": "167-wasm-util-full-source-notice-scan.json",
+      "bytes": 1595,
+      "sha256": "dd2f230cc56f3d7a7b744b8c8d00faaff2c396a8d22a35b00494fbcf9245837c"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/wasm-util-node-source-references.json",
+      "snapshot": "168-wasm-util-node-source-references.json",
+      "bytes": 474,
+      "sha256": "350b0ce19fd4521be036e10798db1b3d248ebfe8b518ea6f6ee5be9ed224c2b5"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/wasm-util-pinned-tree.json",
+      "snapshot": "169-wasm-util-pinned-tree.json",
+      "bytes": 24360,
+      "sha256": "416a22f0793a470166bf0a6b79355df65a95f56d4e850178db7f987453379fb9"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/wasm-util-pinned-source.zip",
+      "snapshot": "170-wasm-util-pinned-source.zip",
+      "bytes": 78391,
+      "sha256": "68444b71d4285abe742e370faf8d9b9c88f67ade023cddfcb170c8bb86f7b84f"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/node-v24.14.0-path.js",
+      "snapshot": "171-node-v24.14.0-path.js",
+      "bytes": 52691,
+      "sha256": "dd326ecdc2d6ad2025c4991f4b480d76a9f1d52b7f6d0988a5dc0a1d02de5209"
+    },
+    {
+      "source": "output/research/compatibility-resolution-2026-10-04/node-v24.14.0-LICENSE.txt",
+      "snapshot": "172-node-v24.14.0-LICENSE.txt",
+      "bytes": 156926,
+      "sha256": "4573185d56580da2b890ba34a85a409257640f1c5632eade4300137266194d18"
+    },
+    {
+      "source": "docs/phase-1-compatibility/backend-candidates-2026-10-04.json",
+      "snapshot": "173-backend-candidates-2026-10-04.json",
+      "bytes": 228236,
+      "sha256": "a9e5485aeb506a8746787b77c2510da00983d4ad26da146790bf3a7187008bc0"
+    },
+    {
+      "source": "docs/phase-1-compatibility/refresh-candidates-2026-10-04.json",
+      "snapshot": "174-refresh-candidates-2026-10-04.json",
+      "bytes": 11337,
+      "sha256": "7158f2d37ec06b116c474814193c7e9db85d9b4e61ff365c8b1eb6e554d24df2"
+    }
+  ],
+  "status": "DOING",
+  "historical_comparison": {
+    "original_inputs": 61,
+    "unchanged": 58,
+    "changed_producer_documents": 3,
+    "historical_verdict": "none"
+  }
+}

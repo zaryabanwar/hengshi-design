@@ -1,0 +1,25 @@
+{
+  "status": "DOING",
+  "scope": "Correction 1 for CER-MED-001 only; provider/OS/packaging deferral with retained Entra/private Azure EU AI and applicable immutable-artifact/image controls. No changed resolver inputs, runtime or complete-graph acceptance.",
+  "original_manifest_sha256": "c879a4577ebb334d110c11b9f1eb53f889345ac0d86f130a25611e1fc483bb06",
+  "inputs": [
+    {
+      "snapshot": "backend-evidence.before.md",
+      "source": null,
+      "bytes": 12407,
+      "sha256": "f04d8fbf7330ae9d58a135c92cd745c0c973f472791929c96ebe17555ea21061"
+    },
+    {
+      "snapshot": "backend-evidence.corrected.md",
+      "source": "docs/phase-1-compatibility/backend-evidence-2026-10-04.md",
+      "bytes": 12960,
+      "sha256": "53eb8f8f6b36ec5e2d17c76266f8780a05b0ff64464142f4a575626a90b7fa18"
+    },
+    {
+      "snapshot": "correction.patch",
+      "source": null,
+      "bytes": 2244,
+      "sha256": "e3b42eba94e27a1894b66c84e6b562fbcb88ef28f7027e03c8d7639639f60118"
+    }
+  ]
+}

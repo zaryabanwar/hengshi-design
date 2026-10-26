@@ -1,0 +1,47 @@
+{
+  "scope": "separate semantic/rejection observations from numeric exit equality; original oracle/failed exact-exit expectations unchanged",
+  "results": [
+    {
+      "name": "valid-union",
+      "semantic_codes_match_oracle": true,
+      "cli_diagnostic_stdout_byte_identical": true,
+      "both_reject_invalid_or_accept_valid": true,
+      "exact_exit_identical": true,
+      "cli_diagnostic_text_equal_after_CRLF_to_LF": true
+    },
+    {
+      "name": "invalid-assignment",
+      "semantic_codes_match_oracle": true,
+      "cli_diagnostic_stdout_byte_identical": false,
+      "both_reject_invalid_or_accept_valid": true,
+      "exact_exit_identical": false,
+      "cli_diagnostic_text_equal_after_CRLF_to_LF": true
+    },
+    {
+      "name": "invalid-readonly",
+      "semantic_codes_match_oracle": true,
+      "cli_diagnostic_stdout_byte_identical": false,
+      "both_reject_invalid_or_accept_valid": true,
+      "exact_exit_identical": false,
+      "cli_diagnostic_text_equal_after_CRLF_to_LF": true
+    },
+    {
+      "name": "invalid-unchecked-index",
+      "semantic_codes_match_oracle": true,
+      "cli_diagnostic_stdout_byte_identical": false,
+      "both_reject_invalid_or_accept_valid": true,
+      "exact_exit_identical": false,
+      "cli_diagnostic_text_equal_after_CRLF_to_LF": true
+    },
+    {
+      "name": "invalid-module",
+      "semantic_codes_match_oracle": true,
+      "cli_diagnostic_stdout_byte_identical": false,
+      "both_reject_invalid_or_accept_valid": true,
+      "exact_exit_identical": false,
+      "cli_diagnostic_text_equal_after_CRLF_to_LF": true
+    }
+  ],
+  "no_new_execution": true,
+  "normalization": "Only CRLF to LF for diagnostic text comparison; raw byte equality retained separately. No paths, messages, codes or positions normalized."
+}

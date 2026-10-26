@@ -1,0 +1,36 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "acceptance": "held_pending_founder",
+  "scope": "Adopt only independently reviewed D-092 registry source rebinding; exactly two canonical files; no Figma, application, account, Git or deployment actions",
+  "targets": [
+    {
+      "path": "docs/phase-1-ui-reference-design/column-authority.json",
+      "before_sha256": "85736B6DB6801FFDC529143085C20346193DC4904EEF01E09D2074524211F98A",
+      "candidate_path": "output/research/b01-overlay-source-rebinding-2026-10-12/column-authority-candidate-v1.json",
+      "after_sha256": "A8358BE02D6FBCA42A167B19395A4A2CD9B2FE318EAAEC3B78E8141F4244AACD"
+    },
+    {
+      "path": "DECISIONS.md",
+      "before_sha256": "6246ED35886793A89BFBE9174E1D2F53661ACECCBDC933EFA59C6928DE217519",
+      "changes": "Record new D-093 explicit founder acceptance and update only D-063 operational registry/review metadata; preserve earlier exact decisions and receipts"
+    }
+  ],
+  "review_path": "output/research/b01-overlay-source-rebinding-2026-10-12/column-authority-successor-review-v1.json",
+  "review_sha256": "3C9B59DE510EDB33C891C395C1BE1C4C7A4E796643B5BCFA5DC0C319226A270F",
+  "change_summary": {
+    "source_quotes": 41,
+    "affected_existing_records": 33,
+    "copied_process_quotes": 3,
+    "source_pins": 3,
+    "declared_allocation_changes": 0,
+    "timing_policy_changes": 0
+  },
+  "preflight": [
+    "Founder acceptance actually received",
+    "Exact current/candidate/receipt bytes unchanged",
+    "All current source pins match reviewed candidate",
+    "D-093 remains absent and D-063 predecessor bindings unchanged"
+  ],
+  "verification": "Run unchanged validate_approval for current canonical registry/D-063 after applying accepted exact bindings; artifact integrity only"
+}

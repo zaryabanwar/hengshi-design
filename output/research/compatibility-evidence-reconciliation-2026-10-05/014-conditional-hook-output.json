@@ -1,0 +1,7 @@
+{ "diagnostics": [{"message": "React Hook \"useEffect\" is called conditionally. React Hooks must be called in the exact same order in every component render.","code": "react-hooks(rules-of-hooks)","severity": "error","url": "https://oxc.rs/docs/guide/usage/linter/rules/react/rules-of-hooks.html","help": "Move the Hook call before the condition, or call it unconditionally and branch inside the Hook/effect instead.","filename": "output/research/compatibility-resolution-2026-10-04/native-lint-probe/fixtures/conditional-hook.tsx","labels": [{"label": "This Hook call is not reachable on every render path.","span": {"offset": 117,"length": 20,"line": 1,"column": 118}}]}],
+              "number_of_files": 1,
+              "number_of_rules": 2,
+              "threads_count": 4,
+              "start_time": 0.0487255
+            }
+            

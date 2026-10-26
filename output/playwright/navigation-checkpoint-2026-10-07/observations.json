@@ -1,0 +1,22 @@
+{
+  "status": "DOING",
+  "source": "docs\\software-definition\\definition-walkthrough.html",
+  "sha256": "741a59a560f3e33e2b45c367d82fe034bfd1c0a39b9d9f994616ab1ac1cb3c6e",
+  "change": "One checkpoint table row reconciled to successful Figma recovery; all other bytes preserved.",
+  "verification": {
+    "desktop": "Native browser screenshot inspected; updated row visible without clipping.",
+    "narrow_320": {
+      "page_scroll_width": 305,
+      "console_warning_error_entries": 0,
+      "limits": "Read-only DOM overflow and row-text check. Narrow screenshots do not establish visual inspection of the changed row."
+    },
+    "whitespace": "PASS",
+    "local_viewer": "Prior 8766 listener absent; restarted Python HTTP viewer bound 127.0.0.1, PID 21936; browser page loaded."
+  },
+  "limits": [
+    "No runtime product functionality or accessibility certification",
+    "No independent review or founder acceptance",
+    "No further Figma call; prepared attempt 17 needs fresh approval",
+    "No commit or push"
+  ]
+}

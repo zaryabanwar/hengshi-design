@@ -1,0 +1,11 @@
+{
+  "command": [
+    "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\frontend-build-evaluation-2026-10-06\\runtime\\node.exe",
+    "C:\\Users\\Zaryab\\AppData\\Local\\npm-cache\\_npx\\31e32ef8478fbf80\\node_modules\\@playwright\\cli\\playwright-cli.js",
+    "-s=hengshi-world-explanation-20261006",
+    "run-code",
+    "async (page) => {\n  const anchor = page.locator('#walking .source-links a').first();\n  const href = await anchor.getAttribute('href');\n  const name = await anchor.innerText();\n  const url = await anchor.evaluate(a=>a.href);\n  const response = await page.request.get(url);\n  return {scope:'Focused changed static source-link check only; previous layout/keyboard/pixel checks are unchanged initial evidence.',href,name,url,status:response.status(),pass:href==='../phase-1-3d/WORLD_EXPERIENCE.md' && response.status()===200};\n}\n"
+  ],
+  "exit_code": 0,
+  "scope": "Existing cached browser/CLI, isolated local static board; no installation or production tool selection."
+}

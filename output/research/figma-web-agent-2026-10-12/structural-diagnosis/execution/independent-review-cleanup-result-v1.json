@@ -1,0 +1,242 @@
+{
+  "product": "Hengshi Design v1",
+  "date": "2026-10-12",
+  "status": "DOING",
+  "verdict": "PASS",
+  "reviewer": "/root/review_browser_cleanup_v1",
+  "authorization": {
+    "questionId": "call_9d2d0bf4505d4bf8ac098407d40a167e",
+    "answer": "Approve this result review",
+    "scope": "Read-only19-input actual-result review; only receipt/essential local evidence writes."
+  },
+  "scope": "Bounded actual cleanup execution evidence/accounting and supporting credit observation. PASS means frozen source/result/screenshot/archive consistency within stated limits, not independently observed execution, exhaustive preservation, tested native restore, accessibility, B01 or Phase1 acceptance.",
+  "manifest": {
+    "path": "review-inputs-with-credit-v1.json",
+    "sha256": "bfab1c9bbd1f04bc6ad09a71fb46f56ac65266e6817bef03bcea9e1e9be753b1",
+    "inputs": 19,
+    "all_bytes_and_hashes_verified": true,
+    "precursor": {
+      "path": "review-inputs-v1.json",
+      "inputs": 18,
+      "sha256": "d35492359f78b8b7a0a877b3141065c1469311dc05282d7d393c95a403daff2a",
+      "preserved": true,
+      "first18BindingsIdentical": true
+    }
+  },
+  "input_bindings": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "review-inputs/01-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "verified": true
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "review-inputs/02-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/correction2/cleanup-plan-v1.md",
+      "snapshot": "review-inputs/03-cleanup-plan-v1.md",
+      "bytes": 4962,
+      "sha256": "b7617291a67506f761e421451028c58145a453970fb920661f7a1f7c0a64cf80",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/correction2/independent-review-cleanup-plan-v1.json",
+      "snapshot": "review-inputs/04-independent-review-cleanup-plan-v1.json",
+      "bytes": 10761,
+      "sha256": "d710bbe73218fdf0793faa787120b549d35c5061d3cfd0cf7453c3b9def0c1e7",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/execution/authorization-v1.json",
+      "snapshot": "review-inputs/05-authorization-v1.json",
+      "bytes": 491,
+      "sha256": "bebb58d3be69990b1ef8a2a5ad05d81347b77a81034adc32ec2ba9c2aa89db79",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/correction1/full-inventory.json",
+      "snapshot": "review-inputs/06-full-inventory.json",
+      "bytes": 11108,
+      "sha256": "66272298d5ada647991640992a7c497835556f04c50b0f7b45724183e83cc6c0",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/execution/preflight-compact-prompt.txt",
+      "snapshot": "review-inputs/07-preflight-compact-prompt.txt",
+      "bytes": 1301,
+      "sha256": "e91250bd866d3f7877a25b9395514a01156523513ef7c796892d71be3bbadfee",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/execution/preflight.json",
+      "snapshot": "review-inputs/08-preflight.json",
+      "bytes": 23436,
+      "sha256": "cd950e50fb4c04be186f9cddcdde28f0cec625756804812f298b9ed861324f26",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/execution/admission-refusal.json",
+      "snapshot": "review-inputs/09-admission-refusal.json",
+      "bytes": 331,
+      "sha256": "d3b089eee855a121f4ab12473a3cc7189d13784555c152008b13cade89480ab7",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/execution/selected-before-delete.png",
+      "snapshot": "review-inputs/10-selected-before-delete.png",
+      "bytes": 165920,
+      "sha256": "09ccdd650df61e62090b6b6c7de56ed9f33ffb6f175300a8d22154569be695e0",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/execution/postflight-prompt.txt",
+      "snapshot": "review-inputs/11-postflight-prompt.txt",
+      "bytes": 983,
+      "sha256": "f61c07eafff4275c8b2ce28605c17d567ead66c35c4b0ca104d6750fdb826df0",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/execution/postflight.json",
+      "snapshot": "review-inputs/12-postflight.json",
+      "bytes": 3266,
+      "sha256": "a93c55817967630847c6233624d2b4bcefbecac04f845b9cd65a7c0bda867cfd",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/HSD_UIR_B01_BEFORE_CLEANUP_V01.fig",
+      "snapshot": "review-inputs/13-HSD_UIR_B01_BEFORE_CLEANUP_V01.fig",
+      "bytes": 369969,
+      "sha256": "baf855e7326a2f2cc0a9dca3b2ad0df9a9afa25312a7ef3648fe8e29cd6681d9",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/execution/HSD_UIR_B01_AFTER_CLEANUP_V01.fig",
+      "snapshot": "review-inputs/14-HSD_UIR_B01_AFTER_CLEANUP_V01.fig",
+      "bytes": 365944,
+      "sha256": "ed4e99a946f5f47f0e521d4561a82f67bebac2cb3e14204a16c8cecea84967c0",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/execution/archive-integrity.json",
+      "snapshot": "review-inputs/15-archive-integrity.json",
+      "bytes": 158,
+      "sha256": "948e15a072e0b76881693a6d4aa046ee77f3c6f964e277f4d1764bfce6b7c311",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/execution/verified-after-cleanup.png",
+      "snapshot": "review-inputs/16-verified-after-cleanup.png",
+      "bytes": 75565,
+      "sha256": "194804cf0e96198f85d61b7b99b7dbe2e6f7e8f2be8da157de620518ae2fb7f8",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/execution/result-v1.json",
+      "snapshot": "review-inputs/17-result-v1.json",
+      "bytes": 2668,
+      "sha256": "5c5bce8940b2ee9ffc6d26818d7945e7ab10319908fcee0a5563a185dcea2f73",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/execution/preflight-refusal.json",
+      "snapshot": "review-inputs/18-preflight-refusal.json",
+      "bytes": 342,
+      "sha256": "325e3b8547b64721cc0e27961453f80ad0a2c6d86a0e05ed64c7a60e71aca5ec",
+      "verified": true
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/structural-diagnosis/execution/credits-after-cleanup.png",
+      "snapshot": "review-inputs/19-credits-after-cleanup.png",
+      "bytes": 69864,
+      "sha256": "e3af1ec2ef6d294f1703a7ca0a8bfc6c72d77056d775dd6551d0c3377543c25c",
+      "verified": true
+    }
+  ],
+  "findings": [],
+  "checks": {
+    "authority": "PASS: frozen05 records founder approval for this one temporary-root cleanup after guards;03/04 bind the correction2 reviewed plan and bounded PASS. This independent actual-result review has separate current founder authorization. Plan PASS did not itself grant deletion permission.",
+    "complete_preflight": "PASS as supplied native-agent structural data: frozen08 has302 unique rows exactly equal, row-for-row/in traversal order, to frozen06 full [id,type,parentID] profile. Exact eleven direct children/order match. All raw I-prefixed/semicolon aliases are preserved. FileKey/page/root/name/type/parent/position/bounds agree with reviewed target.",
+    "selection_refusal": "PASS for truthful reconciliation: native-agent preflight selectedIDs is empty. Frozen09 has zero row differences and directEqual=true but records no deletion. Its generic reason says profile equality failed; this is not evidence of row drift. The failed admission was the empty agent selection, correctly explained in17:26-27. No clean single-selection assertion is inherited from that agent report.",
+    "native_editor_guard": "PASS for static corroboration: frozen10 visibly shows one highlighted temporary frame with exact name, blue outline, X23314/Y400, W3808/H1996 and neighboring original/shared layers separate. This supports producer-recorded explicit sole-root editor selection after agent refusal; screenshot does not expose immutable node/file IDs, prove absence of every possible intervening actor/change, or provide an independently timed input-event trace.",
+    "one_root_action": "PASS for bounded accounting:17 records one Delete-key operation on the sole selected root;16 shows temporary layer/frame absent with original top-level named entries retained;12 reports lookup38:3157=null. No individual alias/descendant deletion or new design transformation is recorded. The exact one-input count remains producer-recorded, not independently proven by screenshots or a captured event log.",
+    "postflight": "PASS as local comparison of non-atomic native-agent reports:12 file/page match08; root lookup=null; all17 retained top-level [id,type] pairs/order equal08 with only38:3157 removed. Both retained COMPONENT_SET entries21:289 and32:1791 remain. All11 source arrays match exactly before/after: source IDs/types/parentIDs, width/height, immediate child IDs/order and content frame IDs/types/parentIDs/dimensions. No assertion of full text/font/style/descriptor/appearance equality follows.",
+    "byte_bound_refusal": "PASS for preserved truthful limit:18 returns an explicit21300-byte>18000-byte refusal with no partial map or deletion; it does not provide a successful census. Successful08 is saved as pretty JSON23436 bytes; reviewer compact reserialization is12224 bytes with all302 rows. Saved pretty size is not a measured original reply size, and the compact local size is not independent proof of original transport byte count. No observed structural truncation: complete map equality verifies locally.",
+    "archives": "PASS for local bytes/hash/ZIP CRC only: before369969 bytes SHA256baf855e7326a2f2cc0a9dca3b2ad0df9a9afa25312a7ef3648fe8e29cd6681d9; after365944 SHA256ed4e99a946f5f47f0e521d4561a82f67bebac2cb3e14204a16c8cecea84967c0. Python ZIP testzip=null for both; four entries each. Before expanded369263 bytes (canvas364665/thumbnail4253/meta345/images0); after expanded365238 (canvas361033/thumbnail3860/meta345/images0), agreeing with15. Both contain canvas.fig/thumbnail.png; no native semantic diff/import/restore attempted.",
+    "credit_observation": "PASS:19 screenshot visibly shows384 credits left and34/150 daily credits left, resetNov1. Supports17:47-51 as an observation at that captured post-cleanup stage, not a future/current balance guarantee, verified per-prompt debit, money charge or MCP remaining allowance. Six completed read-only prompts and unchanged36 attempts/33 conservatively-metered MCP totals are producer accounting; credit pixels alone do not establish those event counts.",
+    "limits_and_historical_status": "PASS:17:30 distinguishes native-agent non-atomic structural data/local comparisons from editor screenshots and declines full descriptor/appearance preservation, historic failure cause, tested restore, accessibility and B01/Phase1 acceptance.17:68 is preserved pre-commissioning wording in a frozen producer snapshot; this new separately authorized receipt records the actual review and does not rewrite that historical artifact."
+  },
+  "archive_entry_evidence": {
+    "before": [
+      {
+        "name": "canvas.fig",
+        "bytes": 364665,
+        "crc": "95976842"
+      },
+      {
+        "name": "thumbnail.png",
+        "bytes": 4253,
+        "crc": "7ae253f7"
+      },
+      {
+        "name": "meta.json",
+        "bytes": 345,
+        "crc": "3dc2ea13"
+      },
+      {
+        "name": "images/",
+        "bytes": 0,
+        "crc": "00000000"
+      }
+    ],
+    "after": [
+      {
+        "name": "canvas.fig",
+        "bytes": 361033,
+        "crc": "c3454717"
+      },
+      {
+        "name": "thumbnail.png",
+        "bytes": 3860,
+        "crc": "8c894529"
+      },
+      {
+        "name": "meta.json",
+        "bytes": 345,
+        "crc": "13f950b9"
+      },
+      {
+        "name": "images/",
+        "bytes": 0,
+        "crc": "00000000"
+      }
+    ],
+    "crc_bad_entries": [
+      null,
+      null
+    ]
+  },
+  "held": {
+    "exhaustive_canvas_preservation": "BLOCKED: exact complete original/shared descriptor/appearance/font/text/style equality unverified;17 retained roots plus11 source arrays are bounded evidence only.",
+    "historic_refusal_cause": "BLOCKED: later alias inventories do not prove attempt33 historical cause.",
+    "native_restore": "BLOCKED: archives pass integrity; native import/editability/restore/PRE/EXIT acceptance untested.",
+    "runtime_accessibility": "BLOCKED: no browser journey, keyboard, screen-reader, forced-colors or application behavior tested.",
+    "full_B01_acceptance": "BLOCKED: complete design/accessibility/profile coverage and founder pilot acceptance separate.",
+    "Phase1_acceptance": "BLOCKED: integrated founder acceptance separate; this receipt grants no further external or implementation action."
+  },
+  "review_actions": {
+    "browser_figma_mcp_api_account_application_git_changes": false,
+    "new_agents": 0,
+    "deletion_performed_by_reviewer": false,
+    "producer_inputs_manifests_earlier_receipts_modified": false,
+    "writes": [
+      "execution/independent-review-cleanup-result-v1.json"
+    ]
+  },
+  "notes": "No actionable inconsistency remains within the requested bounded result-accounting scope. PASS is not a broader independently observed live-execution or preservation certificate."
+}

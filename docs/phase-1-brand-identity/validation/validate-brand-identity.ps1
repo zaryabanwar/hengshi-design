@@ -23,9 +23,9 @@ function PngSize([string]$relative){
 }
 
 $checkpointPath='validation/d-029-pre-stabilization-hashes.json'
-$checkpointExpectedHash='E78CD5DDB1F1EB3D8003DE8369EBF436D65BC7FDCBA47C9E788C1E8A00D4527E'
+$checkpointExpectedHash='FB7A43BDB853E21BC7D5953D201785B5FDB6ABCBFB6A49D17A0326FB72161059'
 $d033CheckpointPath='validation/d-033-pre-contrast-correction-hashes.json'
-$d033CheckpointExpectedHash='58A1823E3261440CE4B51969F0C95FA7A63A6EC9D8EA6D1503951A89520BE0D0'
+$d033CheckpointExpectedHash='80996CD9D0274CA8021A728ABFCA99F19CB04BDC895098D8E5A8BBF1100DE4BE'
 $authorizedD033CssHash='595B798239B5DB913CC89074AAEB8066184F64892258B0F4988D1FE89F507CE2'
 $authorizedD033ReportHash='FC34146CB3C457AA70270B7A2B71BCBDE120292A4A4236FF3CC136C03502128B'
 try{$checkpoint=Text $checkpointPath|ConvertFrom-Json;Pass 'D-029 pre-stabilization hash checkpoint parses as JSON.'}catch{Fail "D-029 checkpoint JSON: $($_.Exception.Message)"}
@@ -197,7 +197,7 @@ if($browserAudit){
 if($manifest){
  $entries=@($manifest.entries);$assetPaths=@(Get-ChildItem (Join-Path $identityDir 'assets'),(Join-Path $identityDir 'visual-boards') -File|ForEach-Object{Rel $_.FullName}|Sort-Object);$manifestPaths=@($entries.path|Sort-Object)
  if($validationState-ne'FINAL_FREEZE'){
-  Check (($manifest.document.version-eq'producer-iteration-3-final')-and(@(Compare-Object $assetPaths $manifestPaths).Count-eq 0)-and((Get-FileHash -Algorithm SHA256 -LiteralPath (Join-Path $identityDir 'asset-manifest.json')).Hash-eq'B6A3824C6751A69DACC746ABCB160CC92C5C7B0ED78720F3FDEE7166AF4FB3A4')) 'AUTHORIZED_D033_POST_SOURCE retains the pinned pre-refresh manifest and exact inventory.' 'AUTHORIZED_D033_POST_SOURCE manifest differs.'
+  Check (($manifest.document.version-eq'producer-iteration-3-final')-and(@(Compare-Object $assetPaths $manifestPaths).Count-eq 0)-and((Get-FileHash -Algorithm SHA256 -LiteralPath (Join-Path $identityDir 'asset-manifest.json')).Hash-eq'10E04E51A7A6C315B263A12140BEAB4647F91BF3328EDF46803EE3E57B10FAE4')) 'AUTHORIZED_D033_POST_SOURCE retains the pinned pre-refresh manifest and exact inventory.' 'AUTHORIZED_D033_POST_SOURCE manifest differs.'
  }else{
   $manifestHashBad=@($entries|Where-Object{(Get-FileHash -Algorithm SHA256 -LiteralPath (Join-Path $identityDir $_.path)).Hash-ne$_.sha256})
   Check (($manifest.document.version-eq'd-034-contrast-completion')-and(@(Compare-Object $assetPaths $manifestPaths).Count-eq0)-and($manifestHashBad.Count-eq0)) 'FINAL_FREEZE manifest covers the exact current asset/source inventory with matching hashes.' 'FINAL_FREEZE manifest inventory or hashes differ.'

@@ -1,0 +1,20 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-13",
+  "decision": "D-093",
+  "canonical_files": [
+    "docs/phase-1-ui-reference-design/column-authority.json",
+    "DECISIONS.md"
+  ],
+  "registry_matches_reviewed_candidate": true,
+  "verification": {
+    "command": "python scripts/validation/ui_column_authority.py --root . --decision D-063",
+    "exit_code": 0,
+    "stdout": "PASS column authority: 1146 source-bound declarations",
+    "scope": "Accepted artifact/source bindings only; no feature, runtime, accessibility or whole Phase1 proof"
+  },
+  "predecessors_preserved": true,
+  "committed": false,
+  "external_writes": false
+}

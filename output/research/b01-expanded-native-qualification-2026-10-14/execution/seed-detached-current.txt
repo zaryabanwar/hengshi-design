@@ -1,0 +1,361 @@
+- application
+- status: Screenreader support for the board is currently disabled. To enable it via Accessibility settings, press Ctrl+K, type Accessibility Settings, and press Enter. To see available keyboard shortcuts, enter Ctrl+Shift+Question mark .
+- status
+- region:
+  - toolbar:
+    - button:
+    - separator
+    - button [expanded]:
+      - generic: File
+    - button:
+      - generic: Agents
+    - button:
+      - generic: Assets
+    - button:
+      - generic: Tools
+    - separator
+    - button:
+      - generic: Variables
+  - button: Hengshi Design v1 — UI References
+  - generic: File name
+  - button:
+  - button:
+  - link:
+    - /url: https://www.figma.com/files/team/1472694121837770005/project/666072293
+    - text: hengshi-design
+  - button:
+    - generic: Free
+  - heading [level=2]:
+    - button [expanded]:
+      - generic: Pages
+    - button:
+    - button:
+  - grid:
+    - row:
+      - gridcell:
+        - button:
+          - generic: Page 1
+  - slider
+  - heading [level=2]:
+    - button [expanded]:
+      - generic: Layers
+    - button:
+  - treegrid:
+    - row [expanded]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 / Four-stream three-host qualification / v1
+    - row [expanded] [level=1] [selected]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 native qualification / host state / v1
+    - row [level=2] [selected]:
+      - gridcell:
+      - gridcell:
+        - generic: Context summary / fixed Services and design fixture
+    - row [expanded] [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: Underlying Services fixture (unwired while modal open)
+    - row [level=3] [selected]:
+      - gridcell:
+      - gridcell:
+        - generic: Book a conversation
+    - row [expanded] [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: Directory action
+    - row [level=3] [selected]:
+      - gridcell:
+      - gridcell:
+        - generic: Book a conversation
+    - row [expanded] [level=2] [selected]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: PRIM-001 / Delivery stream control / B01 v1
+    - row [level=3] [selected]:
+      - gridcell:
+      - gridcell:
+        - generic: Delivery stream — currently Detailed 3D
+    - row [expanded] [level=3] [selected]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: Native-radio appearance reference / S-HIGH
+    - row [level=4] [selected]:
+      - gridcell:
+      - gridcell:
+        - generic: ● Detailed 3D
+    - row [expanded] [level=3] [selected]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: Native-radio appearance reference / S-MEDIUM
+    - row [level=4] [selected]:
+      - gridcell:
+      - gridcell:
+        - generic: ○ Balanced 3D
+    - row [expanded] [level=3] [selected]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: Native-radio appearance reference / S-LOW
+    - row [level=4] [selected]:
+      - gridcell:
+      - gridcell:
+        - generic: ○ Simplified 3D
+    - row [expanded] [level=3] [selected]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: Native-radio appearance reference / S-SEMANTIC
+    - row [level=4] [selected]:
+      - gridcell:
+      - gridcell:
+        - generic: ○ Quick Access
+    - row [level=3] [selected]:
+      - gridcell:
+      - gridcell:
+        - generic: Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.
+    - row [level=3] [selected]:
+      - gridcell:
+      - gridcell:
+        - generic: Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.
+    - row [expanded] [level=3] [selected]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: PRIM-015 / General action button / base
+    - row [level=4] [selected]:
+      - gridcell:
+      - gridcell:
+        - generic: Book a conversation
+    - row [level=3] [selected]:
+      - gridcell:
+      - gridcell:
+        - generic: Privacy and storage
+    - row [expanded]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 / Native host-variant qualification / v1
+    - row [level=1]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 native qualification / preview / v1
+    - row [expanded] [level=1]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: B01 native qualification / host state / v1
+    - row [level=2]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: HIGH, HIGH, OPEN
+    - row [expanded] [level=2]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: HIGH, HIGH, CLOSED
+    - row [level=3]:
+      - gridcell:
+      - gridcell:
+        - generic: Context summary / fixed Services and design fixture
+    - row [level=3]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: Underlying Services fixture (unwired while modal open)
+    - row [level=3]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: Directory action
+    - row [level=3]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: PRIM-001 / Delivery stream control / B01 v1
+      - gridcell:
+        - checkbox [checked]
+        - generic: Toggle layer visibility
+    - row [level=2]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: MEDIUM, HIGH, CLOSED
+    - row [level=2]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: MEDIUM, HIGH, OPEN
+    - row [level=2]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: MEDIUM, MEDIUM, OPEN
+    - row [level=2]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: MEDIUM, MEDIUM, CLOSED
+    - row [level=2]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: HIGH, MEDIUM, CLOSED
+    - row [level=2]:
+      - button:
+      - gridcell:
+      - gridcell:
+        - generic: HIGH, MEDIUM, OPEN
+  - slider
+- button:
+- button:
+- button:
+- button: Share
+- tablist:
+  - tab [selected]:
+    - generic: Design
+    - generic: Design
+  - tab:
+    - generic: Prototype
+    - generic: Prototype
+- button:
+  - text: 50%
+- button:
+  - generic: Frame
+- checkbox
+- generic: Toggle ready for dev status
+- button:
+- button [expanded]:
+- heading [level=2]: Position
+- generic: Alignment
+- button:
+- button:
+- button:
+- button:
+- button:
+- button:
+- button:
+- generic: Position
+- generic: X
+- spinbutton: "1160"
+- generic: "Y"
+- spinbutton: "1230"
+- generic: Rotation
+- spinbutton: 0°
+- button:
+- button:
+- button:
+- heading [level=2]: Layout
+- button:
+- checkbox
+- generic: Toggle auto layout
+- generic: Flow
+- radiogroup:
+  - generic: Layout
+  - radio [checked]
+  - generic: Freeform
+  - radio
+  - generic: Vertical
+  - radio
+  - generic: Horizontal
+  - radio
+  - generic: Grid
+- generic: Dimensions
+- generic: W
+- textbox: "320"
+- generic: H
+- textbox: "1150"
+- checkbox
+- generic: Lock aspect ratio
+- checkbox
+- generic: Clip content
+- heading [level=2]: Appearance
+- checkbox
+- generic: Hide
+- button:
+- generic: Opacity
+- textbox: 100%
+- generic: Corner radius
+- textbox: "0"
+- button:
+- button:
+  - heading [level=2]: Fill
+- button:
+- button:
+- button:
+  - heading [level=2]: Stroke
+- button:
+- button:
+- button:
+  - heading [level=2]: Effects
+- button:
+- button:
+- button:
+  - heading [level=2]: Selection colors
+  - generic: "+1"
+- button:
+  - heading [level=2]: Layout guide
+- button:
+- button:
+- button:
+  - generic: Export
+- button:
+- slider
+- region:
+  - toolbar:
+    - button [pressed]:
+    - button:
+    - button:
+    - button:
+    - button:
+    - button:
+    - button:
+    - button:
+    - button:
+    - button:
+    - button:
+    - button:
+    - radiogroup:
+      - generic: Toolbelt Mode
+      - radio
+      - generic: Draw
+      - radio [checked]
+      - generic: Design
+      - radio
+      - generic: Motion
+      - radio
+      - generic: Dev Mode
+- region:
+  - toolbar:
+    - button:
+- alert
+- alert
+- menu "More actions":
+  - menuitem "Use as mask":
+    - text: Use as mask
+    - generic: Ctrl+Alt+M
+  - menuitem "Union":
+    - text: Union
+    - generic: Alt+Shift+U
+  - menuitem "Subtract":
+    - text: Subtract
+    - generic: Alt+Shift+S
+  - menuitem "Intersect":
+    - text: Intersect
+    - generic: Alt+Shift+I
+  - menuitem "Exclude":
+    - text: Exclude
+    - generic: Alt+Shift+E
+  - menuitem "Flatten":
+    - text: Flatten
+    - generic: Alt+Shift+F

@@ -1,0 +1,32 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Pure Windows child-environment candidate plus exact pip temporary-lifecycle diagnosis/amendment proposal",
+  "parent_plan": "output/research/python315-build-proposal-2026-10-15/qualification-plan-v1.json",
+  "child_environment_helper": "child_environment.py",
+  "tests": "test_child_environment.py",
+  "preservation_proposal": "preservation-amendment-proposal-v1.json",
+  "independent_review": "TODO",
+  "execution_authorized": false,
+  "helper_preconditions": [
+    "Separately verify actual SystemRoot, private target ownership, volume/reparse/alias containment and executable/argv identities; lexical validation proves none of those.",
+    "Pass the returned mapping as the complete child env; never merge it with os.environ. Use reviewed absolute argv with shell=False and -I/-B where appropriate.",
+    "Actual bundled pip26.2.1 and descendants need their own behavior/source admission; no inheritance of library/source/test PASS."
+  ],
+  "helper_behavior": [
+    "Construct only fixed settings and supplied non-secret trusted roots; no read/copy of the real parent environment.",
+    "Give runtime/build/qualification only their private path entries plus checked Windows system tools; route temporary/cache/userbase paths inside the private trial.",
+    "Use fixed null pip config and no-autoload/no-user-site/bytecode settings; only source-build profile gets exact PyYAML flags/epoch.",
+    "Reject ambiguous/nonlocal roots, delimiters/drive/ADS/control/reserved paths, overlapping system/trial roots and invalid phase/profile requests."
+  ],
+  "review_questions": [
+    "Does the pure mapping match the prepared environment policy and fail closed on the tested lexical/profile boundary?",
+    "Are synthetic parent overrides excluded without capturing real values, and are filesystem/process/descendant limitations explicit?",
+    "Does the exact upstream source support the temporary-lifecycle diagnosis and the unadopted, bounded amendment without asserting a nonexistent --no-clean solution?"
+  ],
+  "limits": [
+    "Eight synthetic unit methods in existing3.14.5 only, no child process or real3.15/pip execution.",
+    "No sandbox, credential vault, network fence, process-tree control, actual path ownership or global/machine configuration change.",
+    "The preservation proposal changes nothing until independent review and explicit applicable founder acceptance; original rules remain in force."
+  ]
+}

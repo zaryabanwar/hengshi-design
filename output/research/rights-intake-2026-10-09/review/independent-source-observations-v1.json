@@ -1,0 +1,57 @@
+{
+  "status": "DOING",
+  "scope": "Frozen primary-source identity and exact append observations, not legal/runtime qualification",
+  "sources": [
+    {
+      "url": "https://www.edpb.europa.eu/system/files/documents/2023-04/edpb_guidelines_202201_data_subject_rights_access_v2_en.pdf",
+      "raw_sha256": "b399b25634b379576378d725284d5ed2b1a81c93c34ade9ee8eb48ef5eb75032",
+      "gzip_sha256": "1da5968f42e46561e238150a221a56a4c065bb094b08a8b2b58fce5da73297a0",
+      "bytes": 1442371
+    },
+    {
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+      "raw_sha256": "8685584d1d3d53951cb8d476aa22574ea9ebc8c5fcda9dbc4e308572f4652bce",
+      "gzip_sha256": "8c9d5e42205f2fc9674ffa9ed41c276099c26145172a9ad6bb59fb1eede32f36",
+      "bytes": 1071097
+    },
+    {
+      "url": "https://commission.europa.eu/law/law-topic/data-protection/information-business-and-organisations/dealing-requests-individuals_en",
+      "raw_sha256": "dd6972f18b74b855a5bec4548cfbd1821560e5a82538edd9b6bb7c1c9fc06ec8",
+      "gzip_sha256": "ca137d2b77289f0c4ac3842708ac07af98004e76580dc1d121d4791e55b36885",
+      "bytes": 179397
+    }
+  ],
+  "edpb_title": "Guidelines01/2022 right of access, Version2.1 adopted28March2023",
+  "selected_pages_exact_reextraction": true,
+  "selected_pdf_pages": [
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    50,
+    51,
+    52
+  ],
+  "additional_pdf_pages_read": [
+    1,
+    22,
+    53,
+    54
+  ],
+  "prefix_bytes": {
+    "SECURITY_PRIVACY_CONTRACT.md": 70442,
+    "INTERFACE_CATALOG.md": 109272
+  },
+  "source_assessment": {
+    "intake": "EDPB53-57/159 accepts other provided appropriate official channels, internal forwarding cannot reset receipt, staff awareness is unnecessary; proposal preserves this.",
+    "verification": "EDPB58-79 supports record identification plus proportionate authentication, reasonable-doubt additional information, minimization, existing credentials/verified contacts, no default ID copies; changed contacts and historical/process scope remain separately assessed.",
+    "representatives": "EDPB80-81 requires suitable verification of representative identity and authority with applicable national-law qualification; proposal leaves exact procedure/qualification held.",
+    "deadlines": "GDPR12(3)-(4), EDPB157-164 require undue-delay response and calendar month with exceptional justified up-to-two-further-month extension notified in initial month. EDPB159 allows narrowly justified suspension,160-161 calendar/month-end/working-day rules. Proposed original-clock default is conservative, not a legal prohibition or automatic verified completion.",
+    "third_party_limit": "GDPR15(4), EDPB172-173/example35 require concrete adverse-impact assessment and balancing; mixed subject/staff data can sometimes be disclosed. Categorical exclusion at SECURITY956 conflicts despite subsequent justified-redaction/no-whole-refusal language.",
+    "operation": "D070/D076/entity contact preserve approved alias and undecided owner; original IFPRIVACY01/02/DE20 remain deletion-only. Rights response, unknown provider deletion, scoped grants, purpose/copy binding and ephemeral data limits remain separate."
+  },
+  "limits": "Only saved supplied sources read; source host/fetch assertions retained from producer records, no new network identity check. National-law, secure mailbox/delivery, actual grants/storage, legal bases/durations and integrated/founder acceptance unqualified."
+}

@@ -1,0 +1,109 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Required independent review of current chat transport close/recovery definition; no runtime, application, session-policy, Figma or adoption authority. Current D-076 and later reviewed controls govern any conflict; historical 13-input no-verdict packet remains preserved.",
+  "inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "snapshots/AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "snapshots/.specify/memory/constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "PROJECT.md",
+      "snapshot": "snapshots/PROJECT.md",
+      "bytes": 10942,
+      "sha256": "a483bd2713fe420322772ab7fb07c848aaf103088697c05ab91f35d2e5ea1461"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "snapshots/DECISIONS.md",
+      "bytes": 84370,
+      "sha256": "f38b6f5930b51cae9188db8df6bc9fe458b0df907a3f6eab10fc6b956a0b50da"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+      "bytes": 49954,
+      "sha256": "b2f2b08e52569a7fa50a6e0a00eb71fc2ddd56d50f2033c9c9fa0bd75a282d64"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/chat-event-control.schema.json",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/chat-event-control.schema.json",
+      "bytes": 3380,
+      "sha256": "640718a84d9ca5eeb09517e9bbd73a0163c6e4ba06d7caeeabb4434e899931ae"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/chat-text.schema.json",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/chat-text.schema.json",
+      "bytes": 7450,
+      "sha256": "0c674077b0c6b2ade677a88a3a9bddd1e636da840866f3d19345fa0eaebf3f31"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "bytes": 89614,
+      "sha256": "40a3779f56737725bb2c5e5d5a5ee34b44ad27030adc16cc374fdb9b04266a12"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "bytes": 116413,
+      "sha256": "12314d8567e4f4c0f63c944aae6caa09657240bf40042191b983f4be5b6599ae"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "bytes": 38715,
+      "sha256": "85b64424e7052c66371fb84bbb6cd208e37f256a3865944c311750a28025d872"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "bytes": 69471,
+      "sha256": "5ce708d0a80a861b3cd5d5ebb29f73aa2f94344b329665b7c122db68cd1265ec"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/chat-text-v1-2026-10-06.md",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/reviews/chat-text-v1-2026-10-06.md",
+      "bytes": 4399,
+      "sha256": "58bbf6218e15fbe3a3c38729d361b41231a88ebab8f30cb70ce027f7ac6e7dea"
+    },
+    {
+      "source": "specs/001-platform-security-hardening/spec.md",
+      "snapshot": "snapshots/specs/001-platform-security-hardening/spec.md",
+      "bytes": 31323,
+      "sha256": "2f7066eef33f89f8600587e7778d70e80538b82d49709c5516cac91f63371747"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/chat-transport-v1-2026-10-06.md",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/reviews/chat-transport-v1-2026-10-06.md",
+      "bytes": 1742,
+      "sha256": "1d982bbcd795f8dcea8226d208ef5cb9ac8548aedaa15b81953d7eafddc52ca0"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/visitor-lifetime-controls-v1-2026-10-07.md",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/reviews/visitor-lifetime-controls-v1-2026-10-07.md",
+      "bytes": 6106,
+      "sha256": "a54f91d14cc9b32ca5cb4caff1bbbe90235f4c0b75ed73554ce5e29187008adc"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/reviews/visitor-proof-encoding-v1-2026-10-07.md",
+      "snapshot": "snapshots/docs/phase-1-architecture/contracts/reviews/visitor-proof-encoding-v1-2026-10-07.md",
+      "bytes": 3894,
+      "sha256": "7d0fdb15caeaebdb5bd2a26a01067058f90e11ec83e2565406810f840119a8c4"
+    },
+    {
+      "source": "output/research/chat-transport-2026-10-06/review-inputs.json",
+      "snapshot": "snapshots/output/research/chat-transport-2026-10-06/review-inputs.json",
+      "bytes": 2970,
+      "sha256": "e05593d95b05fe633d53e4c5c680b43c43d3c7c9696d959cba9afda937b82f87"
+    }
+  ]
+}

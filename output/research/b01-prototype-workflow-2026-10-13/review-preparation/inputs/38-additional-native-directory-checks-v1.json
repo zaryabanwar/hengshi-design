@@ -1,0 +1,63 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-13",
+  "checks": [
+    {
+      "id": "27:391",
+      "label": "Close directory",
+      "ui_size": [
+        220,
+        56
+      ],
+      "source_host": "27:382",
+      "method": "Native editor selected-node URL, component property and visible frame/layer hierarchy",
+      "evidence": "directory-close-current.txt",
+      "sha256": "a839a2a287197642e020f47576d2a271a2c38e80c8fbde435681045a4290754f",
+      "limits": "GUI source check only; native API full parent subtree/reactions not reread; fresh write preflight still required"
+    },
+    {
+      "id": "27:393",
+      "label": "Search the directory",
+      "ui_size": [
+        272,
+        96
+      ],
+      "source_host": "27:382",
+      "method": "Native editor selected-node URL, component property and visible frame/layer hierarchy",
+      "evidence": "directory-input-current.txt",
+      "sha256": "d5b36a32844f81b816b91680f5ecfe19de98065acc61eb660581b287f5ebcab4",
+      "limits": "GUI source check only; native API full parent subtree/reactions not reread; fresh write preflight still required"
+    },
+    {
+      "id": "27:396",
+      "label": "Search",
+      "ui_size": [
+        220,
+        56
+      ],
+      "source_host": "27:382",
+      "method": "Native editor selected-node URL, component property and visible frame/layer hierarchy",
+      "evidence": "directory-search-current.txt",
+      "sha256": "63ce1b82d853837f07553ea733d10f1ef6ba42cfeda96dde534b55f75f298851",
+      "limits": "GUI source check only; native API full parent subtree/reactions not reread; fresh write preflight still required"
+    },
+    {
+      "id": "27:782",
+      "label": "Clear search",
+      "ui_size": [
+        220,
+        56
+      ],
+      "source_host": "27:766",
+      "method": "Native editor selected-node URL, component property and visible frame/layer hierarchy",
+      "evidence": "directory-clear-current.txt",
+      "sha256": "770745907a7b8198ec2b18c8fdc51b5df8c7e6676158e7f1fb6aede79000bb51",
+      "limits": "GUI source check only; native API full parent subtree/reactions not reread; fresh write preflight still required"
+    }
+  ],
+  "design_node_writes": false,
+  "additional_mcp_calls": 0,
+  "additional_ai_prompts": 0,
+  "runtime_proof": false
+}

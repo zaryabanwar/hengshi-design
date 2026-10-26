@@ -1,0 +1,51 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "review_decision": "PASS",
+  "reviewer": "/root/review_native_backend_result_v1",
+  "review_date": "2026-10-09",
+  "authorization": "Founder explicitly approved this new read-only client-graph proposal scope. The prepared review_authorized false field remains preserved; this receipt records the later authorization.",
+  "manifest_path": "output/research/test-client-graph-2026-10-09/review-inputs.json",
+  "manifest_sha256": "7707127b3bc3ca9a38a08104cdfe7d8c482f1ff973f8d06d2b43abbc48707019",
+  "input_count": 47,
+  "all_manifest_hashes_and_lengths_match": true,
+  "scope": "Static independent review of exact saved metadata/source observations, the unexecuted 18-case native qualification proposal and two-document amendments. No candidate adoption or enlarged native execution is approved by this receipt.",
+  "findings": [],
+  "verified": [
+    {
+      "evidence": "pip-report.json, closure-observations.json, candidate-roots.txt, candidate-hashed-requirements.txt, prior staff-identity-graph-2026-10-08 inputs",
+      "conclusion": "Independent replay of Python 3.14.5 Windows AMD64 marker/extras propagation yields the exact 48-package, 57-active-edge closure. Root and active dependency constraints are satisfied; there are no direct-URL requirements or canonical-name collisions. All 45 prior report metadata/download records and their shared identity/version/extras/wheel/hash/length fields remain unchanged. Only HTTPX2, HTTPcore2 and Truststore are added. Forty-eight exact requirement/version/extras/hash rows agree, and observed compressed registry lengths sum to 18,637,082 bytes. Supported Python and compatible wheel tags are metadata checks, not native proof."
+    },
+    {
+      "evidence": "registry-source-observations.json, primary-sources.json, three exact/latest PyPI snapshot pairs, httpx2-releases.json.gz, httpx2-tag-ref.json.gz, httpx2-tree.json.gz",
+      "conclusion": "All twelve primary/registry compressed and decompressed source hashes and lengths match. The three exact/latest observations agree on HTTPX2 2.13.1, HTTPcore2 2.13.1 and Truststore 0.10.4, with Production/Stable classifiers and matching non-yanked wheel hash/length and dependency metadata. The saved HTTPX2 v2.13.1 release is non-draft and non-prerelease; its direct commit tag points to d91c9f4236523eb5978ca800944fa0078f17409f. These dated observations do not establish newest-compatible whole-graph selection, publisher identity or provenance."
+    },
+    {
+      "evidence": "httpx2-migration.md.gz, httpx2-ssl.md.gz, httpx2-tree.json.gz, backend-appendix.md",
+      "conclusion": "Migration and SSL document bytes also reproduce the saved tagged Git tree blob hashes. Guidance supports coexistence with distinct client/request/response/exception families and caller-specific ownership; global aliasing is deliberately excluded by the proposal. Tagged SSL guidance describes system trust by default, explicit SSL contexts, and certificate environment variables. Appendix accurately treats these as source observations rather than verified TLS/OS-trust behavior or a selected production policy."
+    },
+    {
+      "evidence": "authlib-import-source.json, four extracted source snapshots, exact retained Authlib wheel.gz, installed-starlette-testclient.py",
+      "conclusion": "All four extracted Authlib members exactly match the retained wheel whose decompressed SHA256 is 88aebbd9af6757e14e912d5dc007ae1dc1f3e27e3b2152ce7c552ee2c3b3c121. Authlib's shim first imports HTTPX2, then falls back to HTTPX with AuthlibDeprecationWarning; AsyncOAuth2Client derives from the selected shim AsyncClient. Starlette source likewise prefers HTTPX2. The corrected proposal appropriately avoids assuming Authlib retains HTTPX classes when HTTPX2 is installed. No candidate client was imported or instantiated by this reviewer."
+    },
+    {
+      "evidence": "qualification-plan.json, test_client_coexistence.py, unchanged native-probes/test_libraries.py, original backend-crypto-graph-2026-10-08/qualification-plan.json",
+      "conclusion": "The original 14-case source hash is unchanged. Static inspection identifies four new cases: one in-process response ownership case, two exception-family cases and one async Authlib ownership/context-lifecycle plus joserfc public decoder import case. Total proposed count is 18. Scope is namespace/import/lifecycle coupling, with no provider/token/TLS/database/application request proof. The plan explicitly requires both fallback warnings as errors and excludes aliases, global TLS injection and suppression. Its reviewed 256 MiB admission, 1 GiB free floor, expanded-wheel double-copy plus 64 MiB reservation, 180-second deadline, failure preservation and no automatic cleanup remain intact. execution_authorized is false and the proposed target is absent on inspection."
+    },
+    {
+      "evidence": "backend.before.md, backend-appendix.md, backend.proposed.md, README.before.md, README.proposed.md, canonical backend evidence and compatibility README, receipt.json",
+      "conclusion": "Backend proposal is exactly preserved prior bytes plus the appendix; README proposal is a single bounded insertion preserving all existing bytes. Both canonical documents equal their frozen proposed snapshots. Six protected input hashes remain unchanged. The text leaves fresh execution approval, warning-free coupling, candidate licences/provenance/advisories, whole stable graph/locks and integrated/founder adoption separate. Earlier 43-package evidence is not promoted to an enlarged candidate PASS."
+    }
+  ],
+  "execution_consideration": {
+    "evidence": "authlib-deprecate.py.gz:8, qualification-plan.json:steps[5]",
+    "requirement": "Implement and verify the plan's effective warning-as-error policy after Authlib deprecation-module initialization: its source installs an always filter for AuthlibDeprecationWarning. An earlier filter alone may be overridden. No warning filter or prospective test was executed during this static review."
+  },
+  "limits": [
+    "Reviewer performed static data/source inspection only: no producer/resolver/probe execution, candidate import, installation, network, application, runtime, provider, Figma, account, model or Git action.",
+    "PASS covers the exact proposal and supported bounded claims, not a executed 48-package qualification. The original native permission and PASS remain limited to their earlier 43-package scope.",
+    "No OAuth/OIDC callback, PKCE/nonce/ID-token/JWKS verifier, grants, actual Hengshi authorization/session/API, PostgreSQL protocol/transaction, TLS certificate/OS-trust behavior, concurrency, load, recovery or deployment proof follows.",
+    "Metadata closure, wheel tags, source/tag agreement and stable classifications do not establish complete latest-mutually-compatible graph acceptance, signatures/build provenance, full licence/legal/advisory clearance, a production lock or dependency adoption.",
+    "Future native execution needs fresh applicable founder authorization and actual disk/host/admission checks; installation refusal under the preserved budget remains valid. Future results require their separate independent review."
+  ]
+}

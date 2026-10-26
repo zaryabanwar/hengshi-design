@@ -1,0 +1,407 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "purpose": "Bounded native Figma mechanism qualification for the full B01 prototype plan. This trial does not reduce the22 scenarios or four-stream/full-profile obligations, create product UI authority, or release application development.",
+  "file_key": "GOmLP6Cv96l768ueSrZ5Dg",
+  "page_id": "0:1",
+  "proposed_owned_root_name": "B01 / Native host-variant qualification / v1",
+  "proposed_component_set_name": "B01 native qualification / host state / v1",
+  "entry": "H_OPEN_M",
+  "requested_write_scope": {
+    "create": "One new owned top-level root containing one eight-variant parent-host set, one preview frame and one preview instance, plus their private synthetic controls/annotations.",
+    "existing_source_mutations": false,
+    "deletion": false,
+    "sharing_account_plugin_paid_changes": false,
+    "figma_mcp_calls": 0,
+    "figma_ai_prompts": 0,
+    "new_files": 0,
+    "git_actions": false
+  },
+  "sources": [
+    {
+      "id": "21:25",
+      "ui_type": "Component variant",
+      "expected_properties": {
+        "State": "OPEN",
+        "Stream": "HIGH"
+      },
+      "expected_size": [
+        272,
+        896
+      ]
+    },
+    {
+      "id": "21:55",
+      "ui_type": "Component variant",
+      "expected_properties": {
+        "State": "OPEN",
+        "Stream": "MEDIUM"
+      },
+      "expected_size": [
+        272,
+        896
+      ]
+    },
+    {
+      "id": "14:18",
+      "ui_type": "Component",
+      "expected_name": "PRIM-015 / General action button / base",
+      "expected_size": [
+        220,
+        56
+      ],
+      "expected_property": {
+        "Label": "Book a conversation"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "path": "output/research/b01-prototype-source-inventory-2026-10-13/stream-control-open-high-current.txt",
+      "sha256": "ae81cefa929224767b3478adb7b764cc84bdf3c2bd40a33abec0d0039de2d2e1"
+    },
+    {
+      "path": "output/research/b01-prototype-source-inventory-2026-10-13/stream-control-open-medium-current.txt",
+      "sha256": "21015d2572db9b7c1d347cdcf111db9d0660dae0cf9900fb872e71e0b6f45676"
+    },
+    {
+      "path": "output/research/b01-prototype-source-inventory-2026-10-13/general-action-master-current.txt",
+      "sha256": "7b702818a2ed61fb7f8c1bbdf8b0f58de616522a61954f2bcf2897e20d221cdf"
+    }
+  ],
+  "construction": [
+    "Complete fresh source admission before copying: verify selected-source ID/type/parent hierarchy, dimensions, relevant descendants, text/component property/token/font/reaction bindings. If a required observation is unavailable or differs, stop before the affected copy; never substitute a guessed source or waive the guard.",
+    "Save a native editable before-trial copy with the normal file menu and preserve its hash/CRC and prior B01 PRE evidence; this is preservation, not a tested restore or new phase acceptance.",
+    "Create the new owned top-level root on the existing Page. Select and verify its new ID/parent before pasting; do not duplicate/paste into the original component library or auto-layout source parents.",
+    "Create the eight owned parent components from the listed master sources; discover actual new IDs. All text/radio-appearance changes and interaction overrides are confined to these owned nodes. Copying changes no protected master.",
+    "Carry the tabled in-force/pending/panel/Services/design context explicitly in every variant. Match owned layout child names and dimensions. Do not let inherited component state override the destination active/pending defaults.",
+    "Use an internal modal-reference layer in each open parent variant, with visible query fixture and Close/Apply/selection actions. Underlying controls are unwired while open, not merely covered by a decorative rectangle. Closed variants expose Open directory. No native Open/Swap-overlay action is used in this qualification.",
+    "Every functional control is a simulated fixture derived mechanically from the source visuals; this trial does not establish PRIM001/002/004/014/015 functional coverage, native radio/form semantics, real modal inertness or AT focus.",
+    "Combine the eight components into one owned variant set. Place one owned instance inside a320x560 preview frame with a stable vertical-scroll context, fixed approved-token styling and visible qualification/reference-fixture labels. This viewport is a test canvas, not a measured phone or production breakpoint.",
+    "Bind only the18 listed edges. Each non-no-op edge uses one basic Change to action targeting the actual owned parent variant. Assign one preview flow entry. Do not use paid variables, conditionals, multiple-action chains, Back, Make, plugins, hidden APIs or AI/MCP calls.",
+    "Before setting an interaction, verify the selected new control belongs to the recorded owned parent, and the destination is the recorded new variant. Stop if the editor lacks the necessary target/action or would modify a source master. New IDs are never inferred from source aliases."
+  ],
+  "variants": [
+    {
+      "symbol": "H_OPEN_M",
+      "source_master_id": "21:25",
+      "in_force": "S-HIGH",
+      "pending": "S-MEDIUM",
+      "directory": "OPEN",
+      "route_fixture": "Services",
+      "query_fixture": "design",
+      "owned_node_id": null,
+      "variant_name": "Active=HIGH, Pending=MEDIUM, Directory=OPEN",
+      "fixture_outcome": "applied only after the designated Apply edge; selection-only otherwise"
+    },
+    {
+      "symbol": "H_CLOSED_M",
+      "source_master_id": "21:25",
+      "in_force": "S-HIGH",
+      "pending": "S-MEDIUM",
+      "directory": "CLOSED",
+      "route_fixture": "Services",
+      "query_fixture": "design",
+      "owned_node_id": null,
+      "variant_name": "Active=HIGH, Pending=MEDIUM, Directory=CLOSED",
+      "fixture_outcome": "applied only after the designated Apply edge; selection-only otherwise"
+    },
+    {
+      "symbol": "M_OPEN_M",
+      "source_master_id": "21:55",
+      "in_force": "S-MEDIUM",
+      "pending": "S-MEDIUM",
+      "directory": "OPEN",
+      "route_fixture": "Services",
+      "query_fixture": "design",
+      "owned_node_id": null,
+      "variant_name": "Active=MEDIUM, Pending=MEDIUM, Directory=OPEN",
+      "fixture_outcome": "applied only after the designated Apply edge; selection-only otherwise"
+    },
+    {
+      "symbol": "M_CLOSED_M",
+      "source_master_id": "21:55",
+      "in_force": "S-MEDIUM",
+      "pending": "S-MEDIUM",
+      "directory": "CLOSED",
+      "route_fixture": "Services",
+      "query_fixture": "design",
+      "owned_node_id": null,
+      "variant_name": "Active=MEDIUM, Pending=MEDIUM, Directory=CLOSED",
+      "fixture_outcome": "applied only after the designated Apply edge; selection-only otherwise"
+    },
+    {
+      "symbol": "M_OPEN_H",
+      "source_master_id": "21:55",
+      "in_force": "S-MEDIUM",
+      "pending": "S-HIGH",
+      "directory": "OPEN",
+      "route_fixture": "Services",
+      "query_fixture": "design",
+      "owned_node_id": null,
+      "variant_name": "Active=MEDIUM, Pending=HIGH, Directory=OPEN",
+      "fixture_outcome": "applied only after the designated Apply edge; selection-only otherwise"
+    },
+    {
+      "symbol": "M_CLOSED_H",
+      "source_master_id": "21:55",
+      "in_force": "S-MEDIUM",
+      "pending": "S-HIGH",
+      "directory": "CLOSED",
+      "route_fixture": "Services",
+      "query_fixture": "design",
+      "owned_node_id": null,
+      "variant_name": "Active=MEDIUM, Pending=HIGH, Directory=CLOSED",
+      "fixture_outcome": "applied only after the designated Apply edge; selection-only otherwise"
+    },
+    {
+      "symbol": "H_OPEN_H",
+      "source_master_id": "21:25",
+      "in_force": "S-HIGH",
+      "pending": "S-HIGH",
+      "directory": "OPEN",
+      "route_fixture": "Services",
+      "query_fixture": "design",
+      "owned_node_id": null,
+      "variant_name": "Active=HIGH, Pending=HIGH, Directory=OPEN",
+      "fixture_outcome": "applied only after the designated Apply edge; selection-only otherwise"
+    },
+    {
+      "symbol": "H_CLOSED_H",
+      "source_master_id": "21:25",
+      "in_force": "S-HIGH",
+      "pending": "S-HIGH",
+      "directory": "CLOSED",
+      "route_fixture": "Services",
+      "query_fixture": "design",
+      "owned_node_id": null,
+      "variant_name": "Active=HIGH, Pending=HIGH, Directory=CLOSED",
+      "fixture_outcome": "applied only after the designated Apply edge; selection-only otherwise"
+    }
+  ],
+  "edges": [
+    {
+      "from": "H_OPEN_M",
+      "trigger": "click Close",
+      "action": "Change to owned parent variant",
+      "to": "H_CLOSED_M",
+      "result": "Same route/query/in-force/pending and closed panel; annotated return to invoker."
+    },
+    {
+      "from": "H_OPEN_M",
+      "trigger": "Escape key simulation",
+      "action": "Change to owned parent variant",
+      "to": "H_CLOSED_M",
+      "result": "Same route/query/in-force/pending and closed panel; annotated return to invoker."
+    },
+    {
+      "from": "H_CLOSED_M",
+      "trigger": "click Open directory",
+      "action": "Change to owned parent variant",
+      "to": "H_OPEN_M",
+      "result": "Same route/query/in-force/pending; explicitly opened internal modal-reference layer."
+    },
+    {
+      "from": "M_OPEN_M",
+      "trigger": "click Close",
+      "action": "Change to owned parent variant",
+      "to": "M_CLOSED_M",
+      "result": "Same route/query/in-force/pending and closed panel; annotated return to invoker."
+    },
+    {
+      "from": "M_OPEN_M",
+      "trigger": "Escape key simulation",
+      "action": "Change to owned parent variant",
+      "to": "M_CLOSED_M",
+      "result": "Same route/query/in-force/pending and closed panel; annotated return to invoker."
+    },
+    {
+      "from": "M_CLOSED_M",
+      "trigger": "click Open directory",
+      "action": "Change to owned parent variant",
+      "to": "M_OPEN_M",
+      "result": "Same route/query/in-force/pending; explicitly opened internal modal-reference layer."
+    },
+    {
+      "from": "M_OPEN_H",
+      "trigger": "click Close",
+      "action": "Change to owned parent variant",
+      "to": "M_CLOSED_H",
+      "result": "Same route/query/in-force/pending and closed panel; annotated return to invoker."
+    },
+    {
+      "from": "M_OPEN_H",
+      "trigger": "Escape key simulation",
+      "action": "Change to owned parent variant",
+      "to": "M_CLOSED_H",
+      "result": "Same route/query/in-force/pending and closed panel; annotated return to invoker."
+    },
+    {
+      "from": "M_CLOSED_H",
+      "trigger": "click Open directory",
+      "action": "Change to owned parent variant",
+      "to": "M_OPEN_H",
+      "result": "Same route/query/in-force/pending; explicitly opened internal modal-reference layer."
+    },
+    {
+      "from": "H_OPEN_H",
+      "trigger": "click Close",
+      "action": "Change to owned parent variant",
+      "to": "H_CLOSED_H",
+      "result": "Same route/query/in-force/pending and closed panel; annotated return to invoker."
+    },
+    {
+      "from": "H_OPEN_H",
+      "trigger": "Escape key simulation",
+      "action": "Change to owned parent variant",
+      "to": "H_CLOSED_H",
+      "result": "Same route/query/in-force/pending and closed panel; annotated return to invoker."
+    },
+    {
+      "from": "H_CLOSED_H",
+      "trigger": "click Open directory",
+      "action": "Change to owned parent variant",
+      "to": "H_OPEN_H",
+      "result": "Same route/query/in-force/pending; explicitly opened internal modal-reference layer."
+    },
+    {
+      "from": "H_OPEN_H",
+      "trigger": "click pending Balanced choice",
+      "action": "Change to owned parent variant",
+      "to": "H_OPEN_M",
+      "result": "Selection only; HIGH remains in-force."
+    },
+    {
+      "from": "M_OPEN_M",
+      "trigger": "click pending Detailed choice",
+      "action": "Change to owned parent variant",
+      "to": "M_OPEN_H",
+      "result": "Selection only; MEDIUM remains in-force."
+    },
+    {
+      "from": "H_OPEN_M",
+      "trigger": "click Apply",
+      "action": "Change to owned parent variant",
+      "to": "M_OPEN_M",
+      "result": "MEDIUM active and pending; same open panel, route, fixture query and inspected scroll."
+    },
+    {
+      "from": "M_OPEN_H",
+      "trigger": "click Apply",
+      "action": "Change to owned parent variant",
+      "to": "H_OPEN_H",
+      "result": "HIGH active and pending; same open panel, route, fixture query and inspected scroll."
+    },
+    {
+      "from": "H_OPEN_H",
+      "trigger": "click Apply current choice",
+      "action": "No transition",
+      "to": "H_OPEN_H",
+      "result": "No active/pending/panel/context change."
+    },
+    {
+      "from": "M_OPEN_M",
+      "trigger": "click Apply current choice",
+      "action": "No transition",
+      "to": "M_OPEN_M",
+      "result": "No active/pending/panel/context change."
+    }
+  ],
+  "qualification": [
+    {
+      "id": "NQ-01",
+      "sequence": [
+        "H_OPEN_M",
+        "scroll preview to an identifiable nonzero content position",
+        "Apply",
+        "M_OPEN_M"
+      ],
+      "observe": "Both modal-reference and underlying page labels show MEDIUM; pending is MEDIUM; query design and Services context remain; visible labelled scroll anchor stays at the same position. Record actual result; do not infer preservation from names."
+    },
+    {
+      "id": "NQ-02",
+      "sequence": [
+        "M_OPEN_M",
+        "Apply current choice",
+        "verify unchanged M_OPEN_M",
+        "Close",
+        "M_CLOSED_M",
+        "Open directory",
+        "M_OPEN_M"
+      ],
+      "observe": "Applying the current MEDIUM choice is an observed no-op before closing. Closing reveals MEDIUM, not stale HIGH. Query and pending choice survive the explicit close/reopen. Figma focus simulation/annotations are separate from DOM focus."
+    },
+    {
+      "id": "NQ-03",
+      "sequence": [
+        "M_OPEN_M",
+        "select Detailed pending choice",
+        "M_OPEN_H"
+      ],
+      "observe": "HIGH becomes pending while MEDIUM stays in-force; no Apply or context change is implied."
+    },
+    {
+      "id": "NQ-04",
+      "sequence": [
+        "M_OPEN_H",
+        "Apply",
+        "H_OPEN_H",
+        "Apply current choice"
+      ],
+      "observe": "HIGH is active/pending after deliberate Apply; applying current choice is a no-op. Query, open panel and tested scroll remain. No auto-pending next choice is introduced."
+    },
+    {
+      "id": "NQ-05",
+      "sequence": [
+        "H_OPEN_H",
+        "select Balanced pending choice",
+        "H_OPEN_M",
+        "Close",
+        "H_CLOSED_M",
+        "Open directory",
+        "H_OPEN_M"
+      ],
+      "observe": "Cancel/close/reopen preserves the deliberately pending MEDIUM choice and active HIGH. Repeat the permitted round trip three times to expose component-state carryover/reset defects; this is not the visitor timing-extension test."
+    },
+    {
+      "id": "NQ-06",
+      "sequence": [
+        "for every open variant (H_OPEN_M, M_OPEN_M, M_OPEN_H, H_OPEN_H)",
+        "click Close",
+        "matching closed variant with the same active/pending pair",
+        "Open directory",
+        "same open variant",
+        "attempt activation of a visible underlying background control at a point not occupied by a foreground control",
+        "verify unchanged active/pending/panel/route/query",
+        "Escape key simulation",
+        "matching closed variant with the same active/pending pair",
+        "Open directory",
+        "same open variant"
+      ],
+      "observe": "For all four open pairs, click Close/reopen and Escape/reopen preserve the exact active/pending/Services/design context. Record a visible, identifiable background control and its actual observation target before the activation attempt; do not click a foreground control or invent a successful inactivity check from decoration. The background attempt must cause no state, route, query or active/pending change. If no visible identifiable background target is available, report this qualification unavailable and stop rather than claiming pass. Real modal inertness, keyboard focus trapping/return and AT remain separate."
+    }
+  ],
+  "capture_and_exit": "Preserve actual new IDs, selected native action/target/reset/scroll settings, before/after Presentation observations and raw screenshots, then save a native editable after-trial copy. Leave the isolated root clearly labelled qualification-only. No cleanup/deletion is authorized by this proposal; a failed trial remains isolated for review and causes no automatic corrective loop.",
+  "stop_conditions": [
+    "Source/ownership/property drift or missing required preflight observation",
+    "Unavailable native Change to parent target or needed setting",
+    "Unexpected source/master/page mutation",
+    "Context/pending/active/scroll/close failure; preserve evidence, stop wiring, no unreviewed topology substitution",
+    "Any quota/paid/account/plugin prompt; no retry or activation"
+  ],
+  "success_disposition": "A bounded positive native Presentation qualification, if observed and reviewed, may support one mechanism for a later complete B01 plan. It proves no real application, search, capability detector, booking, credentials, accessibility or fullB01/Phase1 acceptance.",
+  "independent_review": null,
+  "founder_external_write_permission": null,
+  "executed": false,
+  "revision_cycle": 1,
+  "predecessor": {
+    "path": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/qualification-plan-v1.json",
+    "sha256": "4c070d2b98a1a73ab4788ac8189408b5e742cf5671012583e9305ed1138ad33b"
+  },
+  "prior_review": {
+    "path": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/review/independent-review-qualification-plan-v1.json",
+    "sha256": "456463c5799528e2a7022656ee815f5dc281165a5af33046ecadbe338ba03ace",
+    "finding": "QP-01",
+    "disposition": "Only NQ02/NQ06 observation coverage is corrected. Eight variants,18 edges,six IDs,write/ownership/source/zero-spend scope are unchanged. Re-review required before permission."
+  }
+}

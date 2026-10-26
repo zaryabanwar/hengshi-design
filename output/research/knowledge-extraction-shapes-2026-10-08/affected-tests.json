@@ -1,0 +1,19 @@
+{
+  "status": "DOING",
+  "exit_code": 0,
+  "command": [
+    "C:/Python314/python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "scripts.validation.test_knowledge_extraction_shapes",
+    "scripts.validation.test_knowledge_bundle_schema",
+    "scripts.validation.test_chat_text_schema",
+    "scripts.validation.test_process_value_schema",
+    "scripts.validation.test_publication_manifest_schema",
+    "scripts.validation.test_publication_preparation_schema",
+    "-v"
+  ],
+  "process_local_environment": "PYTHONPATH scripts/validation for existing direct fixture import; no machine setting changed",
+  "scope": "Actual JSON Schema validator and fixture behavior only; no compiler/request/provider/application runtime"
+}

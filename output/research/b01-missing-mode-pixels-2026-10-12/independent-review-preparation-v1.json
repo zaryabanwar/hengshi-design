@@ -1,0 +1,189 @@
+{
+  "product": "Hengshi Design v1",
+  "verdict": "PASS",
+  "reviewed_at_utc": "2026-10-12T04:01:45.538921+00:00",
+  "scope": "Prepared source only: one native comparison export of exactly11 existing focused recovery unit+annotation references absent from attempt29 sheet4. No external execution or actual export success.",
+  "packet_binding": {
+    "manifest": "output/research/b01-missing-mode-pixels-2026-10-12/review-inputs.json",
+    "sha256": "da20250135eb194c7d146463dbcbd29492f82235dcd5dc0e2bd9e62375f69c50",
+    "verified_input_count": 15,
+    "all_snapshot_byte_sizes_and_sha256_verified": true
+  },
+  "source_binding": {
+    "input_sha256": "f0da0733a5b13fc2254c8fd028cbc2d31b8e2aaa296fbf61ea168040bf74d307",
+    "body_sha256": "d950ea7918d513c005cb54f6d094e73a073ab01d0d20fa413de8a76548e716bc",
+    "compiled_call_sha256": "6be4cedf83339b1053d89ec2ad2f518f8742c7fa862c9d8ef49adcbcc8c2db67",
+    "compiled_UTF8_bytes": 12714,
+    "exact_const_input_JSON_stringify_plus_body_correspondence": true,
+    "native_syntax": "PASS; vm.Script async wrapper compiled, not invoked"
+  },
+  "source_unit_mapping": [
+    {
+      "inputIndex": 31,
+      "unitId": "36:3451",
+      "unitName": "EVIDENCE UNIT / HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1928,
+      "frameId": "36:3452",
+      "frameName": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_HIGH_V01",
+      "frameWidth": 320,
+      "frameHeight": 1332,
+      "kind": "FOCUSED_FRAME"
+    },
+    {
+      "inputIndex": 32,
+      "unitId": "36:3480",
+      "unitName": "EVIDENCE UNIT / HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_REDUCED_MOTION_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1768,
+      "frameId": "36:3481",
+      "frameName": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_REDUCED_MOTION_STREAM_HIGH_V01",
+      "frameWidth": 320,
+      "frameHeight": 1244,
+      "kind": "FOCUSED_FRAME"
+    },
+    {
+      "inputIndex": 34,
+      "unitId": "36:3540",
+      "unitName": "EVIDENCE UNIT / HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1928,
+      "frameId": "36:3541",
+      "frameName": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_MEDIUM_V01",
+      "frameWidth": 320,
+      "frameHeight": 1332,
+      "kind": "FOCUSED_FRAME"
+    },
+    {
+      "inputIndex": 35,
+      "unitId": "36:3569",
+      "unitName": "EVIDENCE UNIT / HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_LOW_POWER_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1768,
+      "frameId": "36:3570",
+      "frameName": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_LOW_POWER_STREAM_LOW_V01",
+      "frameWidth": 320,
+      "frameHeight": 1244,
+      "kind": "FOCUSED_FRAME"
+    },
+    {
+      "inputIndex": 36,
+      "unitId": "36:3597",
+      "unitName": "EVIDENCE UNIT / HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1928,
+      "frameId": "36:3598",
+      "frameName": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_LOW_V01",
+      "frameWidth": 320,
+      "frameHeight": 1332,
+      "kind": "FOCUSED_FRAME"
+    },
+    {
+      "inputIndex": 38,
+      "unitId": "36:3658",
+      "unitName": "EVIDENCE UNIT / HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1928,
+      "frameId": "36:3659",
+      "frameName": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_SEMANTIC_V01",
+      "frameWidth": 320,
+      "frameHeight": 1332,
+      "kind": "FOCUSED_FRAME"
+    },
+    {
+      "inputIndex": 40,
+      "unitId": "36:3719",
+      "unitName": "EVIDENCE UNIT / HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_PRINT_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1228,
+      "frameId": "36:3720",
+      "frameName": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_PRINT_STREAM_SEMANTIC_V01",
+      "frameWidth": 320,
+      "frameHeight": 668,
+      "kind": "FOCUSED_FRAME"
+    },
+    {
+      "inputIndex": 41,
+      "unitId": "36:3735",
+      "unitName": "EVIDENCE UNIT / HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SEMANTIC_SHELL_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1768,
+      "frameId": "36:3736",
+      "frameName": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SEMANTIC_SHELL_STREAM_SEMANTIC_V01",
+      "frameWidth": 320,
+      "frameHeight": 1244,
+      "kind": "FOCUSED_FRAME"
+    },
+    {
+      "inputIndex": 42,
+      "unitId": "36:3763",
+      "unitName": "EVIDENCE UNIT / HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_GRAYSCALE_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1768,
+      "frameId": "36:3764",
+      "frameName": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_GRAYSCALE_STREAM_SEMANTIC_V01",
+      "frameWidth": 320,
+      "frameHeight": 1244,
+      "kind": "FOCUSED_FRAME"
+    },
+    {
+      "inputIndex": 43,
+      "unitId": "36:3791",
+      "unitName": "EVIDENCE UNIT / HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_UNAVAILABLE_FONT_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1948,
+      "frameId": "36:3792",
+      "frameName": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_UNAVAILABLE_FONT_STREAM_SEMANTIC_V01",
+      "frameWidth": 320,
+      "frameHeight": 1388,
+      "kind": "FOCUSED_FRAME"
+    },
+    {
+      "inputIndex": 44,
+      "unitId": "36:3819",
+      "unitName": "EVIDENCE UNIT / HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_UNAVAILABLE_IMAGE_ASSET_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1910,
+      "frameId": "36:3820",
+      "frameName": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_UNAVAILABLE_IMAGE_ASSET_STREAM_SEMANTIC_V01",
+      "frameWidth": 320,
+      "frameHeight": 1332,
+      "kind": "FOCUSED_FRAME"
+    }
+  ],
+  "root_child_mapping": {
+    "root_id": "36:2492",
+    "exact48_reported_unit_ids_in_input_order": true,
+    "source_root_child_structure": "Attempt29 source creates only units as root children; each unit contains frame and annotation. No direct-root annotation children are expected.",
+    "source_receipt_sha256": "98631654e1ca0fdf1b353bc6383ad7f66e11f11620dca14a2d5c8eadf1cddc85"
+  },
+  "findings": [],
+  "observations": [
+    "The11 expected indices31,32,34,35,36,38,40,41,42,43,44 equal the actual missing crop inventory. Unit/frame IDs, full names, dimensions, FOCUSED_FRAME kind and ERROR recovery bindings match actual attempt29 input/report/inventory exactly; no existing frame is recreated.",
+    "Input file/page/root identities and48 root-child IDs match attempt29 records and source structure. Preflight checks editor/file, one page, current root parent/type/name/full child order, each unit parent/type/name/dimensions and each existing direct frame parent/type/name/dimensions before cloning. A changed guarded identity/structure/geometry refuses export before creating temporary nodes.",
+    "Every actual current TEXT font run from source units is gathered and loaded before sheet or clone creation. Loading selects no font family, licence, provider or production dependency. Font-load failure precedes design mutation.",
+    "The temporary sheet reference and ID are assigned/tracked immediately after creation before configuration. Each clone reference and descendant ID set is tracked immediately after cloning before reparent/resize/configuration. Only page and original root insertion-parent mutations are reported; no permanent composition/name/master/style/variable or asset change is proposed.",
+    "Clone/source descriptors compare type,name,visibility,opacity,child relative position,dimensions,rotation,text,fills,strokes and selected font-run attributes. Root-relative positions are separately checked; final original/root descriptor and page/root order checks follow cleanup. These guards are deliberately bounded, not exhaustive appearance, editable-property or protocol proof.",
+    "The root fingerprint covers all48 units before and after export; exact root order and selected original positions prevent temporary clone insertion from silently leaving the auto-layout root changed. Current source identity/size is guarded against the saved report; live content/paint is compared clone-to-current-source and before-to-after, not certified against an unavailable archived full descriptor.",
+    "Exactlyone scale1 screenshot is invoked. Eleven320px units with24px gaps/padding nominally give3808x1996, within4096x2400 guards. Tile coordinates must be integers and inside the sheet;2000 unique tracked-ID and18000UTF8 report-byte bounds precede capture, with final report guard after preservation. Actual API layout/image return remains unexecuted.",
+    "Lossless ID packing includes literal/instance aliases and verifies its round trip. Reported creation and removed sets concern tracked temporary IDs, not a physical canvas census; successful return requires all tracked clone/sheet roots removed.",
+    "The finally block catches each individual clone/sheet removal error, continues later removals and throws after all attempts if any failed. It does not claim rollback or safe automatic retry after an uncertain throwing export; inspect and obtain applicable permission before any new attempt.",
+    "The included earlier15-view export body is reference history only. This new body improves cleanup continuation and uses exact eleven unit/annotation sources, while retaining a bounded static export purpose. No historical export success or source review grants a new call.",
+    "D084 permission is consumed by attempt29. Prepared input correctly holds execution behind separate attempt30/metered27 permission and allowance exception, with no automatic retry. Source PASS alone supplies neither call authority nor missing pixels."
+  ],
+  "isolated_helper_observations": {
+    "native_codec_sample": "PASS:7 unique IDs from contiguous, duplicate, literal, instance-alias, unsafe-integer and leading-zero specimens; actual helper self-check runs",
+    "actual_finally_cleanup_segment": "PASS: injected first clone remove failure still attempts clone1,clone2 and sheet, then throws the cleanup failure",
+    "execution_scope": "Only extracted pure codec/finally helper functions against synthetic local objects. No Figma producer/preflight/font/layout/screenshot API invocation.",
+    "real_Figma_layout_pixels_report_size_or_restoration_proof": false
+  },
+  "limits": [
+    "PASS applies only to15 frozen source inputs and the exact compiled source. No real export/image/preservation result is available from this review.",
+    "Changed-source refusal is bounded to guarded file/root/unit/frame identity/ancestry/order/dimensions; full current text/paint equality against attempt29 archived descriptors is not available. Clone/current-source and before/after preservation checks do not create that archival proof.",
+    "Fingerprint omits exhaustive effects, prototype, component/editability, variable/style/property and full typography state. Reported tracked IDs and font loads are not a whole-canvas census or rights clearance.",
+    "Native width,height,image count, exact pixel crops, current-source preservation and cleanup must be checked on any separately authorized actual result; synthetic helper checks cannot certify real Figma API behavior.",
+    "No browser/accessibility mode, font/image failure, keyboard/focus/zoom, complete B01/design/accessibility approval, final2x/SVG exports, native restore_EXIT or founder acceptance is established.",
+    "No Figma/network/model/browser/account/provider/settings/install/application/canonical/Git action or subagent occurred. Only this exclusive-create review receipt was written.",
+    "One fresh scoped call and allowance exception remain required; no automatic retry, paid activation or general allowance increase follows."
+  ]
+}

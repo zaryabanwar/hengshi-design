@@ -1,0 +1,1196 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "TODO",
+  "fileKey": "GOmLP6Cv96l768ueSrZ5Dg",
+  "scope": "48 mode references:15 full hosts and33 focused regions,48 visible annotations,8 existing-name repairs and five native comparisons; no full B01 claim",
+  "rootName": "B01 / Mode references / v1",
+  "sources": [
+    {
+      "id": "21:291",
+      "parentId": "21:290",
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1562,
+      "templateId": "TPL-GLOBAL-NAVIGATION",
+      "streamId": "S-HIGH",
+      "kind": "narrow"
+    },
+    {
+      "id": "27:382",
+      "parentId": "27:381",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2034,
+      "templateId": "TPL-DIRECTORY-SEARCH",
+      "streamId": "S-HIGH",
+      "kind": "narrow"
+    },
+    {
+      "id": "29:1515",
+      "parentId": "29:1512",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1564,
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-HIGH",
+      "kind": "narrow"
+    },
+    {
+      "id": "21:365",
+      "parentId": "21:290",
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1562,
+      "templateId": "TPL-GLOBAL-NAVIGATION",
+      "streamId": "S-MEDIUM",
+      "kind": "narrow"
+    },
+    {
+      "id": "27:430",
+      "parentId": "27:381",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2034,
+      "templateId": "TPL-DIRECTORY-SEARCH",
+      "streamId": "S-MEDIUM",
+      "kind": "narrow"
+    },
+    {
+      "id": "29:1609",
+      "parentId": "29:1512",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1564,
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-MEDIUM",
+      "kind": "narrow"
+    },
+    {
+      "id": "21:328",
+      "parentId": "21:290",
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1562,
+      "templateId": "TPL-GLOBAL-NAVIGATION",
+      "streamId": "S-LOW",
+      "kind": "narrow"
+    },
+    {
+      "id": "27:478",
+      "parentId": "27:381",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2034,
+      "templateId": "TPL-DIRECTORY-SEARCH",
+      "streamId": "S-LOW",
+      "kind": "narrow"
+    },
+    {
+      "id": "29:1703",
+      "parentId": "29:1512",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1564,
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-LOW",
+      "kind": "narrow"
+    },
+    {
+      "id": "21:402",
+      "parentId": "21:290",
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1562,
+      "templateId": "TPL-GLOBAL-NAVIGATION",
+      "streamId": "S-SEMANTIC",
+      "kind": "narrow"
+    },
+    {
+      "id": "27:526",
+      "parentId": "27:381",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2034,
+      "templateId": "TPL-DIRECTORY-SEARCH",
+      "streamId": "S-SEMANTIC",
+      "kind": "narrow"
+    },
+    {
+      "id": "29:1797",
+      "parentId": "29:1512",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1564,
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-SEMANTIC",
+      "kind": "narrow"
+    }
+  ],
+  "masters": [
+    {
+      "id": "21:25",
+      "stream_id": "S-HIGH",
+      "pending_id": "S-MEDIUM"
+    },
+    {
+      "id": "21:55",
+      "stream_id": "S-MEDIUM",
+      "pending_id": "S-LOW"
+    },
+    {
+      "id": "21:40",
+      "stream_id": "S-LOW",
+      "pending_id": "S-SEMANTIC"
+    },
+    {
+      "id": "21:70",
+      "stream_id": "S-SEMANTIC",
+      "pending_id": "S-HIGH"
+    }
+  ],
+  "labels": [
+    {
+      "id": "S-HIGH",
+      "label": "Detailed 3D"
+    },
+    {
+      "id": "S-MEDIUM",
+      "label": "Balanced 3D"
+    },
+    {
+      "id": "S-LOW",
+      "label": "Simplified 3D"
+    },
+    {
+      "id": "S-SEMANTIC",
+      "label": "Quick Access"
+    }
+  ],
+  "copy": {
+    "legend": "Delivery stream \u2014 currently {active_label}",
+    "apply": "Apply selection",
+    "advisement": "Selecting an option does not change your experience. Apply selection re-enters the experience only when you choose a different option, keeping your current location where available. If that location has no match, you will arrive at the nearest available parent destination and be told where you are. Applying the current option makes no change.",
+    "peer_explanation": "Every option offers the same destinations and core journeys. The 3D options differ in visual detail. Quick Access presents the journey without a 3D scene.",
+    "privacy": "Privacy and storage"
+  },
+  "references": [
+    {
+      "sourceId": "21:291",
+      "templateId": "TPL-GLOBAL-NAVIGATION",
+      "streamId": "S-HIGH",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-STANDARD",
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_STANDARD_STREAM_HIGH_V01",
+      "kind": "FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-PUBLIC",
+        "MP-PUBLIC",
+        "DS-S-HIGH"
+      ]
+    },
+    {
+      "sourceId": "21:291",
+      "templateId": "TPL-GLOBAL-NAVIGATION",
+      "streamId": "S-HIGH",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-SCREEN-READER",
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_HIGH_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-PUBLIC",
+        "MP-PUBLIC",
+        "DS-S-HIGH"
+      ]
+    },
+    {
+      "sourceId": "21:291",
+      "templateId": "TPL-GLOBAL-NAVIGATION",
+      "streamId": "S-HIGH",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-REDUCED-MOTION",
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_REDUCED_MOTION_STREAM_HIGH_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-PUBLIC",
+        "MP-PUBLIC",
+        "DS-S-HIGH"
+      ]
+    },
+    {
+      "sourceId": "21:365",
+      "templateId": "TPL-GLOBAL-NAVIGATION",
+      "streamId": "S-MEDIUM",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-STANDARD",
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_STANDARD_STREAM_MEDIUM_V01",
+      "kind": "FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-PUBLIC",
+        "MP-PUBLIC",
+        "DS-S-MEDIUM"
+      ]
+    },
+    {
+      "sourceId": "21:365",
+      "templateId": "TPL-GLOBAL-NAVIGATION",
+      "streamId": "S-MEDIUM",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-SCREEN-READER",
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_MEDIUM_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-PUBLIC",
+        "MP-PUBLIC",
+        "DS-S-MEDIUM"
+      ]
+    },
+    {
+      "sourceId": "21:328",
+      "templateId": "TPL-GLOBAL-NAVIGATION",
+      "streamId": "S-LOW",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-LOW-POWER",
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_LOW_POWER_STREAM_LOW_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-PUBLIC",
+        "MP-PUBLIC",
+        "DS-S-LOW"
+      ]
+    },
+    {
+      "sourceId": "21:328",
+      "templateId": "TPL-GLOBAL-NAVIGATION",
+      "streamId": "S-LOW",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-SCREEN-READER",
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_LOW_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-PUBLIC",
+        "MP-PUBLIC",
+        "DS-S-LOW"
+      ]
+    },
+    {
+      "sourceId": "21:402",
+      "templateId": "TPL-GLOBAL-NAVIGATION",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-STANDARD",
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_STANDARD_STREAM_SEMANTIC_V01",
+      "kind": "FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-PUBLIC",
+        "MP-PUBLIC",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "21:402",
+      "templateId": "TPL-GLOBAL-NAVIGATION",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-SCREEN-READER",
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_SEMANTIC_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-PUBLIC",
+        "MP-PUBLIC",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "21:402",
+      "templateId": "TPL-GLOBAL-NAVIGATION",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-FORCED-COLORS",
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_FORCED_COLORS_STREAM_SEMANTIC_V01",
+      "kind": "FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-PUBLIC",
+        "MP-PUBLIC",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "21:402",
+      "templateId": "TPL-GLOBAL-NAVIGATION",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-PRINT",
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_PRINT_STREAM_SEMANTIC_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-PUBLIC",
+        "MP-PUBLIC",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "21:402",
+      "templateId": "TPL-GLOBAL-NAVIGATION",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-SEMANTIC-SHELL",
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_SEMANTIC_SHELL_STREAM_SEMANTIC_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-PUBLIC",
+        "MP-PUBLIC",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "21:402",
+      "templateId": "TPL-GLOBAL-NAVIGATION",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-GRAYSCALE",
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_GRAYSCALE_STREAM_SEMANTIC_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-PUBLIC",
+        "MP-PUBLIC",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "21:402",
+      "templateId": "TPL-GLOBAL-NAVIGATION",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-UNAVAILABLE-FONT",
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_UNAVAILABLE_FONT_STREAM_SEMANTIC_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-PUBLIC",
+        "MP-PUBLIC",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "21:402",
+      "templateId": "TPL-GLOBAL-NAVIGATION",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-UNAVAILABLE-IMAGE-ASSET",
+      "name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_UNAVAILABLE_IMAGE_ASSET_STREAM_SEMANTIC_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-PUBLIC",
+        "MP-PUBLIC",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "27:382",
+      "templateId": "TPL-DIRECTORY-SEARCH",
+      "streamId": "S-HIGH",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-STANDARD",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_STANDARD_STREAM_HIGH_V01",
+      "kind": "FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-HIGH"
+      ]
+    },
+    {
+      "sourceId": "27:382",
+      "templateId": "TPL-DIRECTORY-SEARCH",
+      "streamId": "S-HIGH",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-SCREEN-READER",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_HIGH_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-HIGH"
+      ]
+    },
+    {
+      "sourceId": "27:382",
+      "templateId": "TPL-DIRECTORY-SEARCH",
+      "streamId": "S-HIGH",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-REDUCED-MOTION",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_REDUCED_MOTION_STREAM_HIGH_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-HIGH"
+      ]
+    },
+    {
+      "sourceId": "27:430",
+      "templateId": "TPL-DIRECTORY-SEARCH",
+      "streamId": "S-MEDIUM",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-STANDARD",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_STANDARD_STREAM_MEDIUM_V01",
+      "kind": "FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-MEDIUM"
+      ]
+    },
+    {
+      "sourceId": "27:430",
+      "templateId": "TPL-DIRECTORY-SEARCH",
+      "streamId": "S-MEDIUM",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-SCREEN-READER",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_MEDIUM_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-MEDIUM"
+      ]
+    },
+    {
+      "sourceId": "27:478",
+      "templateId": "TPL-DIRECTORY-SEARCH",
+      "streamId": "S-LOW",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-LOW-POWER",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_LOW_POWER_STREAM_LOW_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-LOW"
+      ]
+    },
+    {
+      "sourceId": "27:478",
+      "templateId": "TPL-DIRECTORY-SEARCH",
+      "streamId": "S-LOW",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-SCREEN-READER",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_LOW_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-LOW"
+      ]
+    },
+    {
+      "sourceId": "27:526",
+      "templateId": "TPL-DIRECTORY-SEARCH",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-STANDARD",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_STANDARD_STREAM_SEMANTIC_V01",
+      "kind": "FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "27:526",
+      "templateId": "TPL-DIRECTORY-SEARCH",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-SCREEN-READER",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_SCREEN_READER_STREAM_SEMANTIC_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "27:526",
+      "templateId": "TPL-DIRECTORY-SEARCH",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-FORCED-COLORS",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_FORCED_COLORS_STREAM_SEMANTIC_V01",
+      "kind": "FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "27:526",
+      "templateId": "TPL-DIRECTORY-SEARCH",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-PRINT",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_PRINT_STREAM_SEMANTIC_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "27:526",
+      "templateId": "TPL-DIRECTORY-SEARCH",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-SEMANTIC-SHELL",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_SEMANTIC_SHELL_STREAM_SEMANTIC_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "27:526",
+      "templateId": "TPL-DIRECTORY-SEARCH",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-GRAYSCALE",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_GRAYSCALE_STREAM_SEMANTIC_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "27:526",
+      "templateId": "TPL-DIRECTORY-SEARCH",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-UNAVAILABLE-FONT",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_UNAVAILABLE_FONT_STREAM_SEMANTIC_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "27:526",
+      "templateId": "TPL-DIRECTORY-SEARCH",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-OPEN",
+      "modeId": "MODE-UNAVAILABLE-IMAGE-ASSET",
+      "name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_UNAVAILABLE_IMAGE_ASSET_STREAM_SEMANTIC_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-NAVIGATION",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "29:1515",
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-HIGH",
+      "stateId": "STATE-ERROR",
+      "modeId": "MODE-STANDARD",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_STANDARD_STREAM_HIGH_V01",
+      "kind": "FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-SYSTEM-RECOVERY",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-HIGH"
+      ]
+    },
+    {
+      "sourceId": "29:1515",
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-HIGH",
+      "stateId": "STATE-ERROR",
+      "modeId": "MODE-SCREEN-READER",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_HIGH_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-SYSTEM-RECOVERY",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-HIGH"
+      ]
+    },
+    {
+      "sourceId": "29:1515",
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-HIGH",
+      "stateId": "STATE-ERROR",
+      "modeId": "MODE-REDUCED-MOTION",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_REDUCED_MOTION_STREAM_HIGH_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-SYSTEM-RECOVERY",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-HIGH"
+      ]
+    },
+    {
+      "sourceId": "29:1609",
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-MEDIUM",
+      "stateId": "STATE-ERROR",
+      "modeId": "MODE-STANDARD",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_STANDARD_STREAM_MEDIUM_V01",
+      "kind": "FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-SYSTEM-RECOVERY",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-MEDIUM"
+      ]
+    },
+    {
+      "sourceId": "29:1609",
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-MEDIUM",
+      "stateId": "STATE-ERROR",
+      "modeId": "MODE-SCREEN-READER",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_MEDIUM_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-SYSTEM-RECOVERY",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-MEDIUM"
+      ]
+    },
+    {
+      "sourceId": "29:1703",
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-LOW",
+      "stateId": "STATE-ERROR",
+      "modeId": "MODE-LOW-POWER",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_LOW_POWER_STREAM_LOW_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-SYSTEM-RECOVERY",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-LOW"
+      ]
+    },
+    {
+      "sourceId": "29:1703",
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-LOW",
+      "stateId": "STATE-ERROR",
+      "modeId": "MODE-SCREEN-READER",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_LOW_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-SYSTEM-RECOVERY",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-LOW"
+      ]
+    },
+    {
+      "sourceId": "29:1797",
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-ERROR",
+      "modeId": "MODE-STANDARD",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_STANDARD_STREAM_SEMANTIC_V01",
+      "kind": "FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-SYSTEM-RECOVERY",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "29:1797",
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-ERROR",
+      "modeId": "MODE-SCREEN-READER",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SCREEN_READER_STREAM_SEMANTIC_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-SYSTEM-RECOVERY",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "29:1797",
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-ERROR",
+      "modeId": "MODE-FORCED-COLORS",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_FORCED_COLORS_STREAM_SEMANTIC_V01",
+      "kind": "FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-SYSTEM-RECOVERY",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "29:1797",
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-ERROR",
+      "modeId": "MODE-PRINT",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_PRINT_STREAM_SEMANTIC_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-SYSTEM-RECOVERY",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "29:1797",
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-ERROR",
+      "modeId": "MODE-SEMANTIC-SHELL",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_SEMANTIC_SHELL_STREAM_SEMANTIC_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-SYSTEM-RECOVERY",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "29:1797",
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-ERROR",
+      "modeId": "MODE-GRAYSCALE",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_GRAYSCALE_STREAM_SEMANTIC_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-SYSTEM-RECOVERY",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "29:1797",
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-ERROR",
+      "modeId": "MODE-UNAVAILABLE-FONT",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_UNAVAILABLE_FONT_STREAM_SEMANTIC_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-SYSTEM-RECOVERY",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "29:1797",
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-SEMANTIC",
+      "stateId": "STATE-ERROR",
+      "modeId": "MODE-UNAVAILABLE-IMAGE-ASSET",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_UNAVAILABLE_IMAGE_ASSET_STREAM_SEMANTIC_V01",
+      "kind": "FOCUSED_FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-SYSTEM-RECOVERY",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-SEMANTIC"
+      ]
+    },
+    {
+      "sourceId": "29:1515",
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-HIGH",
+      "stateId": "STATE-ERROR",
+      "modeId": "MODE-FORCED-COLORS",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_FORCED_COLORS_STREAM_HIGH_V01",
+      "kind": "FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-SYSTEM-RECOVERY",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-HIGH"
+      ]
+    },
+    {
+      "sourceId": "29:1609",
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-MEDIUM",
+      "stateId": "STATE-ERROR",
+      "modeId": "MODE-FORCED-COLORS",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_FORCED_COLORS_STREAM_MEDIUM_V01",
+      "kind": "FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-SYSTEM-RECOVERY",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-MEDIUM"
+      ]
+    },
+    {
+      "sourceId": "29:1703",
+      "templateId": "TPL-SYSTEM-RECOVERY",
+      "streamId": "S-LOW",
+      "stateId": "STATE-ERROR",
+      "modeId": "MODE-FORCED-COLORS",
+      "name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_FORCED_COLORS_STREAM_LOW_V01",
+      "kind": "FRAME",
+      "width": 320,
+      "profileIds": [
+        "SP-SYSTEM-RECOVERY",
+        "VP-INTERACTIVE",
+        "MP-INTERACTIVE",
+        "DS-S-LOW"
+      ]
+    }
+  ],
+  "nameRepairs": [
+    {
+      "node_id": "32:1792",
+      "expected_current_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "proposed_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "only_change": "Existing frame name; no appearance, instance, layout or interaction edits",
+      "width": 320,
+      "height": 1772,
+      "ancestorId": "32:1708"
+    },
+    {
+      "node_id": "32:1847",
+      "expected_current_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "proposed_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "only_change": "Existing frame name; no appearance, instance, layout or interaction edits",
+      "width": 320,
+      "height": 1772,
+      "ancestorId": "32:1708"
+    },
+    {
+      "node_id": "32:1902",
+      "expected_current_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "proposed_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "only_change": "Existing frame name; no appearance, instance, layout or interaction edits",
+      "width": 320,
+      "height": 1772,
+      "ancestorId": "32:1708"
+    },
+    {
+      "node_id": "32:1957",
+      "expected_current_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "proposed_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "only_change": "Existing frame name; no appearance, instance, layout or interaction edits",
+      "width": 320,
+      "height": 1772,
+      "ancestorId": "32:1708"
+    },
+    {
+      "node_id": "32:2012",
+      "expected_current_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "proposed_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "only_change": "Existing frame name; no appearance, instance, layout or interaction edits",
+      "width": 320,
+      "height": 2244,
+      "ancestorId": "32:1708"
+    },
+    {
+      "node_id": "32:2077",
+      "expected_current_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "proposed_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "only_change": "Existing frame name; no appearance, instance, layout or interaction edits",
+      "width": 320,
+      "height": 2244,
+      "ancestorId": "32:1708"
+    },
+    {
+      "node_id": "32:2142",
+      "expected_current_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "proposed_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "only_change": "Existing frame name; no appearance, instance, layout or interaction edits",
+      "width": 320,
+      "height": 2244,
+      "ancestorId": "32:1708"
+    },
+    {
+      "node_id": "32:2207",
+      "expected_current_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "proposed_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "only_change": "Existing frame name; no appearance, instance, layout or interaction edits",
+      "width": 320,
+      "height": 2244,
+      "ancestorId": "32:1708"
+    }
+  ],
+  "hostNotes": {
+    "TPL-GLOBAL-NAVIGATION": "Services host; navigation open. Reading order: skip link, navigation, Book, breadcrumb, stream legend/options/Apply, privacy. Close returns to the navigation invoker; no focus trap.",
+    "TPL-DIRECTORY-SEARCH": "Services host; nonmodal Directory open. Reading order: heading, Close, labelled search, Search, status/browse links, stream group/Apply, privacy. Escape or Close returns to the directory invoker; no focus trap or live search ranking claim.",
+    "TPL-SYSTEM-RECOVERY": "Services host; confirmed pre-admission error. Prior eligible content and in-force stream remain. Status announcement does not take focus; safe directory recovery remains. No successful mutation, entitlement or staff presence is inferred."
+  },
+  "modeNotes": {
+    "MODE-STANDARD": "Inherited standard appearance. Each stream keeps its own readable current/pending labels and actions; this static frame does not measure contrast or target sizes.",
+    "MODE-SCREEN-READER": "Semantic specification only: use native links/buttons, a fieldset/legend and labelled radios. The legend announces the in-force choice; the checked radio is pending. Status uses a separate live region. Tab leaves the group for Apply; selecting a radio does not navigate or apply. This picture is not screen-reader execution.",
+    "MODE-REDUCED-MOTION": "Stable B01 DOM controls; no essential animated disclosure, travel or motion. Apply semantics and content remain. This is a reduced-motion design specification, not a browser preference probe.",
+    "MODE-LOW-POWER": "B01 controls and reading order remain complete without a canvas, decorative animation or optional media. In-force Simplified 3D is a peer stream; low power removes no destination. No measured battery/performance claim.",
+    "MODE-SEMANTIC-SHELL": "Quick Access is the in-force peer presentation. Content, Book, directory and stream controls remain semantic and independently operable; no failure title or error styling is added merely for this stream.",
+    "MODE-FORCED-COLORS": "Palette specimen only. Canvas/CanvasText and ButtonFace/ButtonText are mapped to inherited white/ink tokens; borders and current/pending text survive. LinkText, Highlight/HighlightText and focus outline remain implementation roles, not claimed OS colours. Preserve native control roles and do not opt the whole shell out of forced colours.",
+    "MODE-GRAYSCALE": "Grayscale paints are derived from inherited token RGB values. Current/pending choices, control purpose and recovery truth remain textual; meaning does not depend on colour. This is a static appearance specimen.",
+    "MODE-UNAVAILABLE-FONT": "Optional Inter unavailable fixture. This focused specimen substitutes verified Cascadia Mono Regular, preserves text and reflows the control. It is an approved Figma-only fallback illustration, not a website font installation, system-font guarantee or licence grant.",
+    "MODE-UNAVAILABLE-IMAGE-ASSET": "Optional approved brand mark unavailable fixture, authored as a focused region because the source hosts currently use text branding. The mark is omitted, the full Hengshi Design name and controls remain; no fabricated photograph or actual network/asset failure is claimed.",
+    "MODE-PRINT": "Printable fixture summary of this host and in-force Quick Access. Interactive controls are omitted; the pending choice remains explicitly unapplied. The online Services and Book paths are text references. No promise that search results, a transaction or a private conversation has been saved."
+  },
+  "fallbackFont": {
+    "family": "Cascadia Mono",
+    "style": "Regular"
+  },
+  "optionalAssetReference": "docs/phase-1-brand-identity/assets/mark-framework-relay.svg",
+  "capture": {
+    "groups": [
+      [
+        0,
+        3,
+        7,
+        9,
+        15,
+        18,
+        22,
+        24
+      ],
+      [
+        30,
+        33,
+        37,
+        39,
+        45,
+        46,
+        47
+      ],
+      [
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      [
+        16,
+        17,
+        19,
+        20,
+        21,
+        23,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      [
+        31,
+        32,
+        34,
+        35,
+        36,
+        38,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    ],
+    "maxWidth": 4800,
+    "maxHeight": 4800,
+    "maxTrackedCreatedIds": 10000,
+    "maxReceiptBytes": 19000,
+    "scale": 1,
+    "expectedImages": 5
+  },
+  "discovery": {
+    "codeConnect": "No matching Code Connect files found in apps; no app implementation is produced.",
+    "components": "Four exact existing file-local stream masters and12 inherited host frames; preflight resolves each source instance before mutation.",
+    "styles": "Existing B01 reference heading/body/meta text styles and approved Figma-only fonts; preflight loads all inherited font runs.",
+    "tokens": "Existing D035 colour/spacing variables; no new variables, libraries, publication or assets are created.",
+    "images": "Source hosts are editable text/components, no external image capture. Asset-failure region omits only the approved optional mark as an authored fixture."
+  },
+  "primarySources": [
+    {
+      "url": "https://www.w3.org/TR/css-color-adjust-1/#forced-colors-mode",
+      "checked": "2026-10-12",
+      "status": "Candidate Recommendation Snapshot16 December2025; descriptive CSS guidance, not a selected preview dependency",
+      "application": "User-agent palette adaptation uses semantic roles. The Figma white/ink example is not a real user palette or browser test."
+    },
+    {
+      "url": "https://www.w3.org/WAI/tutorials/images/decorative/",
+      "checked": "2026-10-12",
+      "application": "A decorative mark beside the full company name adds no essential content. Omitting it must not remove the textual identity."
+    },
+    {
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/radio/",
+      "checked": "2026-10-12",
+      "application": "Radio keyboard interaction informs the semantic specification; actual project controls remain native fieldset/legend/radios with separate Apply."
+    }
+  ],
+  "sourceHashes": [
+    {
+      "path": "output/research/b01-profile-allocation-2026-10-12/next-mode-candidates.json",
+      "bytes": 36798,
+      "sha256": "39b323c387a21ea364d41a5091c9a47b106c63966a4788703e1338b3d2c3a235"
+    },
+    {
+      "path": "output/research/b01-profile-allocation-2026-10-12/allocation.json",
+      "bytes": 129948,
+      "sha256": "cb502de8fdb817cf373bee89c1dadda5cdb9c956b76a46ddf336cb5b268fbc6b"
+    },
+    {
+      "path": "output/research/b01-profile-allocation-2026-10-12/independent-review-allocation-v1.json",
+      "bytes": 7447,
+      "sha256": "ad4b62b600a1cfd7db0c4b8a95e99cefc1e9cc4bd965e31cdccf200639a3691f"
+    },
+    {
+      "path": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/input.json",
+      "bytes": 36211,
+      "sha256": "e922317901f3e8ed9fc88958d22c46409444b5c3e884091f16ff886acd73d1d5"
+    },
+    {
+      "path": "output/research/b01-ceiling-refusal-bindings-2026-10-09/execution-preparation/input.json",
+      "bytes": 16506,
+      "sha256": "fcc9aba8c54df8c69f8f822338a28f4fef6c07fe15b88152951dedaded5763df"
+    },
+    {
+      "path": "output/research/b01-ceiling-refusal-bindings-2026-10-09/attempt25-2026-10-11/receipt.json",
+      "bytes": 2769,
+      "sha256": "a34a22cd6357e7458cbfb26c5f39e50bae5a595e762261109f0ac26b0b6a73d1"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "bytes": 33498,
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "bytes": 33821,
+      "sha256": "deb91325e1c8a543878111883f5b1203ae9e5dc35c00e0d837e927786eaf47e2"
+    },
+    {
+      "path": "docs/phase-1-foundation/06-canonical-route-inventory.json",
+      "bytes": 43357,
+      "sha256": "41b750b5493a70a43344ca608084e6adce04b82a768969832026fb50f6b59081"
+    },
+    {
+      "path": "docs/phase-1-brand-identity/assets/mark-framework-relay.svg",
+      "bytes": 1051,
+      "sha256": "fb436e2ed6fbba85cc8c886c50cf9d65725ebf8effa1e30a0d47eb8b7c73dee3"
+    }
+  ],
+  "limitations": [
+    "Prepared design source only; no external execution or accessibility/complete B01 acceptance.",
+    "Focused references never replace the four full forced-colours recovery baselines or other complete viewport/state minima.",
+    "Original frame names change only for the eight exact guarded REF repairs; other source appearance/order/positions remain preserved.",
+    "Font groups report new-frame TEXT-node membership only, not exact spans, missing-font status, rights or editability census.",
+    "No actual screen reader, forced-colours OS, reduced-motion preference, asset/font load failure, print browser, focus or action execution.",
+    "Remaining states/intermediate widths/prototypes, contracted2x/SVG exports, native restore/EXIT and independent full design/accessibility reviews remain.",
+    "One new Figma call needs founder immediate permission and one allowance exception; current28 attempts/25 conservatively metered; actual quota unknown. No retry or paid activation."
+  ]
+}

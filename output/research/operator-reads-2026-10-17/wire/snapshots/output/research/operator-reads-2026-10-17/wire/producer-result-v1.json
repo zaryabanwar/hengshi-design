@@ -1,0 +1,24 @@
+{
+  "status": "DOING",
+  "scope": "Producer representation observations only; no actual staff GET/query/HMAC/parser/ingress/security/resource proof",
+  "command": "python -m unittest scripts.validation.test_operator_read_schema scripts.validation.test_booking_status_response_schema scripts.validation.test_process_value_schema -v",
+  "result": "PASS",
+  "methods": 26,
+  "newOperatorMethods": 9,
+  "pyCompile": "PASS",
+  "observedTools": {
+    "python": "3.14.5",
+    "jsonschema": "4.23.0",
+    "referencing": "0.37.0"
+  },
+  "toolLimit": "Installed observation only; no latest mutually compatible production graph selected or changed",
+  "rawByteMacQueries": "Defined prospective contract only; not implemented by schema fixtures",
+  "sourceChecks": [
+    "https://www.rfc-editor.org/rfc/rfc4648.html",
+    "https://www.rfc-editor.org/rfc/rfc8259.html",
+    "https://www.rfc-editor.org/rfc/rfc9110.html"
+  ],
+  "checked": "2026-10-17",
+  "applicationChanges": false,
+  "installsOrGit": false
+}

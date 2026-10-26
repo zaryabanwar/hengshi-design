@@ -1,0 +1,141 @@
+{
+  "scope": "Existing library syntax/normalization observations, not application enforcement or selected production graph",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "installed": "2.3.0",
+  "registry": {
+    "source": "https://pypi.org/pypi/email-validator/json",
+    "observed": "2026-10-08",
+    "latest": "2.3.0",
+    "requires_python": ">=3.8",
+    "requires_dist": [
+      "dnspython>=2.0.0",
+      "idna>=2.0.0"
+    ],
+    "all_latest_files_not_yanked": true
+  },
+  "options": {
+    "check_deliverability": false,
+    "allow_display_name": false,
+    "allow_quoted_local": false,
+    "allow_domain_literal": false,
+    "allow_empty_local": false,
+    "allow_smtputf8": true,
+    "strict": true,
+    "test_environment": false
+  },
+  "observations": [
+    {
+      "input": "User+tag@EXAMPLE.ORG",
+      "accepted": true,
+      "normalized": "User+tag@example.org",
+      "ascii_email": "User+tag@example.org",
+      "smtputf8": false
+    },
+    {
+      "input": "user@bücher.example.org",
+      "accepted": true,
+      "normalized": "user@bücher.example.org",
+      "ascii_email": "user@xn--bcher-kva.example.org",
+      "smtputf8": false
+    },
+    {
+      "input": "ü@example.org",
+      "accepted": true,
+      "normalized": "ü@example.org",
+      "ascii_email": null,
+      "smtputf8": true
+    },
+    {
+      "input": " user@example.org ",
+      "accepted": false,
+      "error_class": "EmailSyntaxError"
+    },
+    {
+      "input": "Name <user@example.org>",
+      "accepted": false,
+      "error_class": "EmailSyntaxError"
+    },
+    {
+      "input": "not-an-email",
+      "accepted": false,
+      "error_class": "EmailSyntaxError"
+    },
+    {
+      "input": "user@example.org\r\nBcc: x@example.org",
+      "accepted": false,
+      "error_class": "EmailSyntaxError"
+    },
+    {
+      "input": "\"a b\"@example.org",
+      "accepted": false,
+      "error_class": "EmailSyntaxError"
+    },
+    {
+      "input": "user@[127.0.0.1]",
+      "accepted": false,
+      "error_class": "EmailSyntaxError"
+    },
+    {
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.org",
+      "accepted": false,
+      "error_class": "EmailSyntaxError"
+    }
+  ],
+  "sources": [
+    {
+      "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Lib\\site-packages\\email_validator\\__init__.py",
+      "snapshot": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\booking-qualification-wire-2026-10-08\\email-source\\__init__.py",
+      "bytes": 4381,
+      "sha256": "837a150467571890138019d5aade50ee95215ccf50ae63a5e6a592bbf46d5a64"
+    },
+    {
+      "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Lib\\site-packages\\email_validator\\__main__.py",
+      "snapshot": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\booking-qualification-wire-2026-10-08\\email-source\\__main__.py",
+      "bytes": 2302,
+      "sha256": "b9cea2d843022baedc0a0707af96451b92ea077921963991ee534061919250a6"
+    },
+    {
+      "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Lib\\site-packages\\email_validator\\deliverability.py",
+      "snapshot": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\booking-qualification-wire-2026-10-08\\email-source\\deliverability.py",
+      "bytes": 7216,
+      "sha256": "6488c592058ccf161ec5a9f02a1ad11cb4e78d632a951e5bd25b4e9e5034bbe1"
+    },
+    {
+      "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Lib\\site-packages\\email_validator\\exceptions.py",
+      "snapshot": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\booking-qualification-wire-2026-10-08\\email-source\\exceptions.py",
+      "bytes": 434,
+      "sha256": "472da3e4532911ef49b61993177cc5e691a059eafe42659cd66d2ccd7019edfa"
+    },
+    {
+      "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Lib\\site-packages\\email_validator\\rfc_constants.py",
+      "snapshot": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\booking-qualification-wire-2026-10-08\\email-source\\rfc_constants.py",
+      "bytes": 3443,
+      "sha256": "2e15220592c1c3f367f8a1e41fefa7570396165833d9a0ae6ae8fdf194a5fa09"
+    },
+    {
+      "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Lib\\site-packages\\email_validator\\syntax.py",
+      "snapshot": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\booking-qualification-wire-2026-10-08\\email-source\\syntax.py",
+      "bytes": 38971,
+      "sha256": "a6eb9fb247881bafce4566fb7ef45d57f61cce69386e26cd64fb3d4e3584d4ad"
+    },
+    {
+      "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Lib\\site-packages\\email_validator\\types.py",
+      "snapshot": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\booking-qualification-wire-2026-10-08\\email-source\\types.py",
+      "bytes": 5588,
+      "sha256": "9af9b037d477945c7d4eff70b56bc3cf17e2b7a9abff9c10998d88d078eea919"
+    },
+    {
+      "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Lib\\site-packages\\email_validator\\validate_email.py",
+      "snapshot": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\booking-qualification-wire-2026-10-08\\email-source\\validate_email.py",
+      "bytes": 9928,
+      "sha256": "6e6add43d746b75f8c934af00d1ad7fa5eb16d8850d144b6d03cf8e806ad9e49"
+    },
+    {
+      "path": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\apps\\api\\.venv\\Lib\\site-packages\\email_validator\\version.py",
+      "snapshot": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\booking-qualification-wire-2026-10-08\\email-source\\version.py",
+      "bytes": 22,
+      "sha256": "0a92bc207fdd09403083db6abfbce6f45c5b0459310a7103d4952245eedc7ed5"
+    }
+  ],
+  "network": "Only official registry GET; no DNS deliverability check or SMTP/API delivery"
+}

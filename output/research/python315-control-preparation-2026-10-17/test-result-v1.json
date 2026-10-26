@@ -1,0 +1,38 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "observed_at_utc": "2026-10-17T15:04:33.135825+00:00",
+  "scope": "Pure resource admission arithmetic only, synthetic integer boundary cases",
+  "interpreter": {
+    "path": "C:\\Python314\\python.exe",
+    "version": "3.14.5"
+  },
+  "capture_method": "unittest discover/TextTestRunner, existing Python -B; stdout/stderr saved",
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "inputs": [
+    {
+      "path": "output/research/python315-control-preparation-2026-10-17/admission_budget.py",
+      "bytes": 2826,
+      "sha256": "1331adebc42cbf496f8f6c08ef2107c752ec319c303b56b6d16d8cc21c7038d2"
+    },
+    {
+      "path": "output/research/python315-control-preparation-2026-10-17/test_admission_budget.py",
+      "bytes": 3173,
+      "sha256": "50fed641ff4576b416e0c9254749c2533d597894b578e2fb4a1dc540f9824f1b"
+    }
+  ],
+  "output": {
+    "path": "output/research/python315-control-preparation-2026-10-17/test-output-v1.txt",
+    "bytes": 1208,
+    "sha256": "c618487ac8aedc7a8b844c8088b44732b4ef6e118d7ce284c443570c305a00a1"
+  },
+  "independent_review": "TODO",
+  "limits": [
+    "No disk allocation/reservation, target ownership/measurement, competing-process control, filesystem sandbox, command execution or actual trial.",
+    "A passing calculation does not authorize writing, download, install, graph selection or Phase1 acceptance."
+  ]
+}

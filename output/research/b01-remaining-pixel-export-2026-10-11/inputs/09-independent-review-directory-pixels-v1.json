@@ -1,0 +1,83 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "verdict": "PASS",
+  "reviewed_at_utc": "2026-10-09T07:23:10Z",
+  "reviewer": "/root/review_directory_pixels_v1",
+  "authorization": "Founder approved the two pending read-only reviews; parent delegated only this directory pixel review.",
+  "scope": "Independent static-pixel and evidence-mapping review of the 52 existing B01 directory references exported in attempt22, with reported source preservation and temporary cleanup assessed only within the script's fingerprint and removal checks.",
+  "manifest": {
+    "path": "output/research/b01-directory-full-resolution-2026-10-08/attempt22-2026-10-09/review-inputs.json",
+    "sha256": "a6ebc1045018ff504bc33e26e392e8a0fc4b3383091f58d1920e8acf7eaa5f4b",
+    "input_count": 96,
+    "all_input_bytes_and_hashes_match": true,
+    "rechecked_before_receipt": true,
+    "frozen_review_authorized_field": "The frozen prospective false value was preserved; current authorization came from the founder and parent delegation."
+  },
+  "reviewed_source_ids": [
+    "27:382", "27:430", "27:478", "27:526", "27:574", "27:622", "27:670", "27:718",
+    "27:766", "27:829", "27:892", "27:955", "27:1018", "27:1068", "27:1118", "27:1168",
+    "27:1218", "27:1268", "27:1318", "27:1368", "27:1418", "27:1470", "27:1522", "27:1574",
+    "27:1626", "27:1671", "27:1716", "27:1761", "27:1806", "27:1858", "27:1910", "27:1962",
+    "27:2014", "27:2074", "27:2134", "27:2194", "27:2254", "27:2304", "27:2354", "27:2404",
+    "27:2454", "27:2504", "27:2554", "27:2604", "27:2654", "27:2704", "27:2754", "27:2804",
+    "27:2854", "27:2902", "27:2950", "27:2998"
+  ],
+  "visual_inspection": {
+    "image_directory": "output/research/b01-directory-full-resolution-2026-10-08/attempt22-2026-10-09/comparisons",
+    "detail": "original",
+    "groups": [
+      {"image": "group-01.png", "ordinals": [1, 2, 3, 4], "state": "OPEN", "observation": "All five department destinations and stream choices remain visible; pending checked choices differ from current legends as intended."},
+      {"image": "group-02.png", "ordinals": [5, 6, 7, 8], "state": "EMPTY_QUERY", "observation": "Empty-query guidance offers a search term or browsing; no invented successful search result."},
+      {"image": "group-03.png", "ordinals": [9, 10, 11, 12], "state": "RESULTS", "observation": "Five explicitly synthetic results show the canonical department names and paths; long paths remain within their cards."},
+      {"image": "group-04.png", "ordinals": [13, 14, 15, 16], "state": "NO_RESULTS", "observation": "No-match wording is distinct from service failure; another query and all department destinations remain offered."},
+      {"image": "group-05.png", "ordinals": [17, 18, 19, 20], "state": "LOADING", "observation": "Pending search is explicitly identified; available department navigation does not claim completed search."},
+      {"image": "group-06.png", "ordinals": [21, 22, 23, 24], "state": "DERIVED_INDEX_UNAVAILABLE", "observation": "Search unavailability is separate from an empty result; static directory and retry are visible."},
+      {"image": "group-07.png", "ordinals": [25, 26, 27, 28], "state": "OFFLINE", "observation": "Offline fixture avoids claiming fresh results or reachable department pages; retry and current-view guidance remain."},
+      {"image": "group-08.png", "ordinals": [29, 30, 31, 32], "state": "ERROR", "observation": "Failure says no new result was confirmed and keeps connected-fixture department navigation and retry."},
+      {"image": "group-09.png", "ordinals": [33, 34, 35, 36], "state": "STALE", "observation": "Earlier results are explicitly distinguished from the edited query; retained results, directory and retry remain readable."},
+      {"image": "group-10.png", "ordinals": [37, 38, 39, 40], "state": "PREFERENCE_READ_FAILED", "observation": "Unreadable saved choice is not described as absent or erased; current legend and checked radio agree in these fixtures."},
+      {"image": "group-11.png", "ordinals": [41, 42, 43, 44], "state": "PREFERENCE_WRITE_FAILED", "observation": "Session application is distinguished from failed persistence; future visits are not falsely described as saved."},
+      {"image": "group-12.png", "ordinals": [45, 46, 47, 48], "state": "STREAM_CHANGED", "observation": "Applied stream labels, checked options and confirmation agree; Services location and directory are retained."},
+      {"image": "group-13.png", "ordinals": [49, 50, 51, 52], "state": "OPEN_WIDE", "observation": "All four wide references retain the same departments, selection advisement and Apply action; no visible clipping or overlapping text."}
+    ],
+    "result": "No actionable clipping, overlap, missing visible state distinction or conflicting delivery-control copy found in these 52 static references.",
+    "design_intent": "Visible skip link, labelled search, explicit close/search/retry/Apply actions, underlined department links, ordered peer choices and persistent advance advisement align with the frozen D-057 copy and directory annotations. Runtime semantics and accessibility remain unproved."
+  },
+  "independent_integrity_checks": {
+    "provider_report_equals_saved_export_report": true,
+    "provider_image_bytes_equal_all_five_saved_sheets": true,
+    "original_construction_frame_ids_names_ordinals_and_dimensions_match_all_52": true,
+    "source_input_and_decoded_construction_record_both_compared": true,
+    "exact_sheet_crop_pixel_equality_count": 52,
+    "exact_comparison_composite_pixel_equality_count": 13,
+    "all_tile_bounds_integer_and_inside_correct_sheet": true,
+    "all_tiles_nonoverlapping_on_each_sheet": true,
+    "narrow_count": 48,
+    "narrow_width": 320,
+    "wide_count": 4,
+    "wide_width": 1440,
+    "sheet_dimensions": [[2088, 4600], [2088, 4404], [2088, 4740], [2088, 4524], [1488, 6752]],
+    "unique_decoded_created_node_ids": 1173,
+    "every_clone_id_in_created_node_set": true,
+    "original_source_ids_excluded_from_created_node_set": true,
+    "check_correction": "An initial reviewer assertion treated decoded construction frame objects as raw compact arrays and failed. Inspection established the object schema; the corrected comparison used id/inputIndex/width/height and reference.name and passed. No evidence or producer file was changed."
+  },
+  "source_preservation_and_cleanup": {
+    "reported_checks": {"exportCompleted": true, "originalGeometryTextUnchanged": true, "originalPositionsRestored": true, "parentOrderRestored": true, "allCreatedNodesRemoved": true},
+    "assessed_script": "output/research/b01-directory-full-resolution-2026-10-08/attempt22-2026-10-09/executed-call.js",
+    "fingerprint_fields": ["type", "name", "visible", "opacity", "descendant x/y", "width", "height", "rotation", "TEXT characters", "findAll traversal order"],
+    "additional_checks": "Source root x/y and page/composition child ID order are separately checked. Clones are checked against source fingerprints before export. finally removes every clone and sheet; successful return checks removed handles and restored orders.",
+    "limits": "Fingerprint excludes fills, strokes, effects, font properties, style/variable bindings, component-property values and other metadata. Temporary row/descendant removal is inferred through removed containing clones/sheets, not a subsequent getNodeById scan. The 1173 count is the returned tracked created-ID set, not an independent post-call canvas inventory. Provider-reported source preservation is internally consistent within these checks; no fresh canvas read or native restore was performed."
+  },
+  "findings": [],
+  "limitations": [
+    "PASS is bounded to these 52 supplied static directory references and exact saved report/image linkage; it is neither full B01 coverage nor a Phase 1 completion or production-readiness claim.",
+    "The prior fifteen-input construction/two-scaled-preview PASS keeps its original scope. This review supplies the separate full-resolution pixel assessment without enlarging prior review authority.",
+    "Only the supplied light MODE-KEYBOARD references at 320 and four wide OPEN references were assessed; landscape, 400-percent stress, forced colours, other modes/profiles, ceiling-refusal fixtures and other B01 templates remain separately gated.",
+    "No actual keyboard/touch/screen-reader interaction, semantic HTML, focus return, announcements, link execution, pointer cancellation, storage, search enforcement or WCAG conformance was tested or certified.",
+    "Synthetic fixture names/content and static action styling are reference design intent, not published company evidence or a final brand/visual acceptance.",
+    "No Figma call, network/API request, producer execution, installation, source correction, application change, Git operation or further delegation occurred in this review.",
+    "Native editable export, restore and _EXIT, independent full design/accessibility acceptance and founder pilot acceptance remain outside this receipt. No B02-B09 release, implementation or deployment authorization follows."
+  ]
+}

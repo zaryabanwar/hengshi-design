@@ -1,0 +1,46 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-15",
+  "scope": "One Navigation/HIGH entry through Balanced Apply/Close/reopen/Escape; synthetic Services fixture",
+  "steps": [
+    {
+      "action": "Open Menu",
+      "observed": "Detailed active; Detailed pending; panel open"
+    },
+    {
+      "action": "Choose Balanced",
+      "observed": "Detailed active; Balanced pending; Services unchanged",
+      "proof": "balanced-loop-01-pending.png"
+    },
+    {
+      "action": "Scroll and Apply",
+      "observed": "Apply remains at scroll marker area",
+      "proof": "balanced-loop-02-after-apply-scrolled.png"
+    },
+    {
+      "action": "Scroll to top",
+      "observed": "Balanced active and pending; Services/open panel retained",
+      "proof": "balanced-loop-03-active-open.png"
+    },
+    {
+      "action": "Close",
+      "observed": "Balanced active; Services retained; panel closed",
+      "proof": "balanced-loop-04-closed.png"
+    },
+    {
+      "action": "Reopen",
+      "observed": "Balanced active and pending; Services retained; panel open",
+      "proof": "balanced-loop-05-reopened.png"
+    },
+    {
+      "action": "Escape",
+      "observed": "Balanced active; Services retained; panel closed",
+      "proof": "balanced-loop-06-escape-closed.png"
+    }
+  ],
+  "edgeBindings": "native-edge-bindings-20261015-balanced-loop-v1.json",
+  "editableArchive": "navigation-directory-three-frames-seven-edges-v1.fig",
+  "remaining": "Recovery16/set,33frames,317edges,other modes/hosts,noops,paired boundary reset/preserve,full ENQ/restoration/accessibility/pilot acceptance",
+  "limits": "Native producer observation of authored Figma state transitions only. No exact scroll offset, keyboard focus-return, native device/assistive technology, real graphics/reentry, application/runtime or complete Phase1 verdict. Frozen three-edge MCP proposal is baseline-stale; no execution follows."
+}

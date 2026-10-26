@@ -1,0 +1,145 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Recorded frame name/axis correlation and existing profile obligations only; no live canvas, pixels, behavior, complete B01 coverage or adoption",
+  "inputs": [
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "review-inputs/.specify/memory/constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "review-inputs/AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "review-inputs/DECISIONS.md",
+      "bytes": 86352,
+      "sha256": "dd31d6026aedd1a03e966e055724b2f02783147291525f1740341848837eed74"
+    },
+    {
+      "source": "PROJECT_STATE.yaml",
+      "snapshot": "review-inputs/PROJECT_STATE.yaml",
+      "bytes": 8776,
+      "sha256": "ca8ed5825769b5007835c9b44d3a4e7b4ebd1cba120340686d017686b3a64270"
+    },
+    {
+      "source": "TASKS.md",
+      "snapshot": "review-inputs/TASKS.md",
+      "bytes": 6728,
+      "sha256": "590da697f0da1c2bc38f648d53dd9be8fe2bec0df0dc209ab9adf5af5f050c21"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/component-primitives.csv",
+      "snapshot": "review-inputs/docs/phase-1-ui-reference-design/component-primitives.csv",
+      "bytes": 79574,
+      "sha256": "575d1478893c090e9b367e75c2d14cf645e80eeb67bce09c2383c08294fa034a"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/design-batch-plan.csv",
+      "snapshot": "review-inputs/docs/phase-1-ui-reference-design/design-batch-plan.csv",
+      "bytes": 27984,
+      "sha256": "550d8de3c6860f74e09e8a53da52e24ca2874d94b705d11f6afd4745f0142d12"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "snapshot": "review-inputs/docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "bytes": 33498,
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "snapshot": "review-inputs/docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "bytes": 33807,
+      "sha256": "6fa43937ae5e590b31e4fc21ea9e1209d3bfcdf145a6698d2429125213166dec"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "snapshot": "review-inputs/docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "bytes": 10877,
+      "sha256": "bb2ac87cade869754b5fe9d316e583616263f18575c87634ba371e3e8d50c3c6"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/reviews/B01-directory-references-v1-2026-10-08.md",
+      "snapshot": "review-inputs/docs/phase-1-ui-reference-production/reviews/B01-directory-references-v1-2026-10-08.md",
+      "bytes": 2859,
+      "sha256": "400380b3b043d393e04088e722681daa3e36506d30b6c915fba1de397b2fde17"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/validation/mcp-call-ledger.csv",
+      "snapshot": "review-inputs/docs/phase-1-ui-reference-production/validation/mcp-call-ledger.csv",
+      "bytes": 11985,
+      "sha256": "80f9ed24eeb28a48bd586fce115ffc82ca71da3d5755842af7b564b69bde6389"
+    },
+    {
+      "source": "output/research/b01-coverage-preparation-2026-10-06/coverage-preparation.json",
+      "snapshot": "review-inputs/output/research/b01-coverage-preparation-2026-10-06/coverage-preparation.json",
+      "bytes": 136211,
+      "sha256": "0f325a7de1c387b6a9ec257daea44600bca0c4eb3935a45618016a8a8d7b2ebc"
+    },
+    {
+      "source": "output/research/b01-directory-call19-2026-10-08/decoded-design-result.json",
+      "snapshot": "review-inputs/output/research/b01-directory-call19-2026-10-08/decoded-design-result.json",
+      "bytes": 72290,
+      "sha256": "71f198783593821c55291a8e9b6a1e896d35f7addb695245c08763dd225e0eda"
+    },
+    {
+      "source": "output/research/b01-navigation-composition-2026-10-06/state-ledger.json",
+      "snapshot": "review-inputs/output/research/b01-navigation-composition-2026-10-06/state-ledger.json",
+      "bytes": 23436,
+      "sha256": "f078e20b6fca5deec68a8876d83922d03064036aa797fb719cd6cae6d594da2b"
+    },
+    {
+      "source": "output/research/b01-navigation-recovery-2026-10-07/inspection.json",
+      "snapshot": "review-inputs/output/research/b01-navigation-recovery-2026-10-07/inspection.json",
+      "bytes": 5953,
+      "sha256": "7a9565290b92415bf050b8187844769e7506f6906a6209a18e315c1ff1dec7e8"
+    },
+    {
+      "source": "output/research/b01-recorded-coverage-2026-10-08/B01_EXECUTION_BRIEF.before.md",
+      "snapshot": "review-inputs/output/research/b01-recorded-coverage-2026-10-08/B01_EXECUTION_BRIEF.before.md",
+      "bytes": 8818,
+      "sha256": "22561d1e44937c2aa5897e2f783b36726fcb686e4360bbfe31f60b201b828810"
+    },
+    {
+      "source": "output/research/b01-recorded-coverage-2026-10-08/inventory.py",
+      "snapshot": "review-inputs/output/research/b01-recorded-coverage-2026-10-08/inventory.py",
+      "bytes": 5852,
+      "sha256": "4e74b42d92e77c9aa5bd07060a2dea83cfad06f23bb184eea602ee8a026d0547"
+    },
+    {
+      "source": "output/research/b01-recorded-coverage-2026-10-08/reconcile_brief.py",
+      "snapshot": "review-inputs/output/research/b01-recorded-coverage-2026-10-08/reconcile_brief.py",
+      "bytes": 3405,
+      "sha256": "64d5221f8f50bd80fb245b5a99f43327f0625fa5dd341e54cb48c30bb2c12f30"
+    },
+    {
+      "source": "output/research/b01-recorded-coverage-2026-10-08/recorded-coverage.json",
+      "snapshot": "review-inputs/output/research/b01-recorded-coverage-2026-10-08/recorded-coverage.json",
+      "bytes": 65896,
+      "sha256": "3b540c7112313b642805c0c84efb4148a985c609fb29e84f00b87002de449c3b"
+    },
+    {
+      "source": "output/research/b01-recovery-composition-preparation-2026-10-07/preparation.json",
+      "snapshot": "review-inputs/output/research/b01-recovery-composition-preparation-2026-10-07/preparation.json",
+      "bytes": 3326,
+      "sha256": "50694f90c8c4d7bbd7c813f549dcadfe12d22d05bba00802c5c16b2c9fbf65e9"
+    },
+    {
+      "source": "output/research/b01-text-reflow-2026-10-06/retry-11/provider-result.json",
+      "snapshot": "review-inputs/output/research/b01-text-reflow-2026-10-06/retry-11/provider-result.json",
+      "bytes": 10285,
+      "sha256": "ebeab3fbba0a07ca70a13fcd59f05bab30b0186d2134dde5a5c09771f520a27f"
+    },
+    {
+      "source": "scripts/validation/ui-stream-mapping.ps1",
+      "snapshot": "review-inputs/scripts/validation/ui-stream-mapping.ps1",
+      "bytes": 38967,
+      "sha256": "2c4509b4df40dd1f14c4bb53a35acff6799fde20e2be69d52f08db9e47babd38"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "scope": "Third UI proposal correction: explicit BIP-02 historical source-binding hold only; D-092 overlay direction and all 22 scenarios unchanged. No registry amendment or construction release.",
+  "inputs": [
+    {
+      "source": "AGENTS.md",
+      "snapshot": "review-inputs/01-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "review-inputs/02-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "PROJECT.md",
+      "snapshot": "review-inputs/03-PROJECT.md",
+      "bytes": 10942,
+      "sha256": "a483bd2713fe420322772ab7fb07c848aaf103088697c05ab91f35d2e5ea1461"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "review-inputs/04-DECISIONS.md",
+      "bytes": 104938,
+      "sha256": "6246ed35886793a89bfbe9174e1d2f53661aceccbdc933efa59c6928de217519"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "snapshot": "review-inputs/05-UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "bytes": 45771,
+      "sha256": "1779fd3cd71f8210815fd7ddbbcd06faa6e5387e2d91584531be6d3806f8cf61"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "snapshot": "review-inputs/06-B01_EXECUTION_BRIEF.md",
+      "bytes": 58718,
+      "sha256": "ba94c654d2ca868a6ae46c92060a7e6255572fb8b01d607ee6e017cd7a30f059"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-production/evidence-capture-plan.csv",
+      "snapshot": "review-inputs/07-evidence-capture-plan.csv",
+      "bytes": 8428,
+      "sha256": "4dceafb6d78a859ff5aee23ac78e65180975e72e83ed14a40dc20a90ad4fa0fd"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/UI_REFERENCE_DESIGN_CONTRACT.md",
+      "snapshot": "review-inputs/08-UI_REFERENCE_DESIGN_CONTRACT.md",
+      "bytes": 32708,
+      "sha256": "396d32f472794cb83168053ca6841bfbd37733923cafa225725391e22bb9830f"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "snapshot": "review-inputs/09-reference-template-inventory.csv",
+      "bytes": 33596,
+      "sha256": "2e904e0f4c7019ca696131068567978973961e70cb0889ae954771010c5634cf"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/foundation-flow-coverage.csv",
+      "snapshot": "review-inputs/10-foundation-flow-coverage.csv",
+      "bytes": 47465,
+      "sha256": "7f80eeb1b60da0f23b026e7f33573bce89881df59cf3d705d759387abf69f5f4"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/component-primitives.csv",
+      "snapshot": "review-inputs/11-component-primitives.csv",
+      "bytes": 79724,
+      "sha256": "8aec225781cbb1389ea15e70895889a9da306244cd6f8b74f7640d863dde6318"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "snapshot": "review-inputs/12-responsive-state-mode-matrix.csv",
+      "bytes": 33821,
+      "sha256": "deb91325e1c8a543878111883f5b1203ae9e5dc35c00e0d837e927786eaf47e2"
+    },
+    {
+      "source": "docs/phase-1-ui-reference-design/column-authority.json",
+      "snapshot": "review-inputs/13-column-authority.json",
+      "bytes": 11841596,
+      "sha256": "85736b6db6801ffdc529143085c20346193dc4904eef01e09d2074524211f98a"
+    },
+    {
+      "source": "output/research/b01-profile-allocation-2026-10-12/allocation.json",
+      "snapshot": "review-inputs/14-allocation.json",
+      "bytes": 129948,
+      "sha256": "cb502de8fdb817cf373bee89c1dadda5cdb9c956b76a46ddf336cb5b268fbc6b"
+    },
+    {
+      "source": "docs/phase-1-ux-architecture/FLOWS.md",
+      "snapshot": "review-inputs/15-FLOWS.md",
+      "bytes": 30096,
+      "sha256": "af9645a4658a8b6dc60c846f580dccd76cc4bb0f5377f65526d7749d1572d27b"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+      "snapshot": "review-inputs/16-CHAT_EVENT_PROTOCOL.md",
+      "bytes": 50683,
+      "sha256": "b2b06e915c81083a40be58f3a641991862371f2d117effb2716e098116aed364"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "snapshot": "review-inputs/17-PRIVATE_PROCESS_PROOF.md",
+      "bytes": 117693,
+      "sha256": "0bf065ae353f1d22c986501c624df46e4057d76ca06f71a35352360ac239a6b7"
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/prototype-census/prompt.txt",
+      "snapshot": "review-inputs/18-prompt.txt",
+      "bytes": 1479,
+      "sha256": "3691c496c14a7e25b91906ce5a341394e3a5b370ddbb5efd4dd314451da8d951"
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/prototype-census/census.json",
+      "snapshot": "review-inputs/19-census.json",
+      "bytes": 2886,
+      "sha256": "e47c88a7a73d5ec244d8003f54c7ae17d949173a664b62749be68e5a40bb85fa"
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/prototype-census/native-prototype-panel.txt",
+      "snapshot": "review-inputs/20-native-prototype-panel.txt",
+      "bytes": 7254,
+      "sha256": "e4887aea1bd66953844e1691bf91bb53c7b54f96fb95d9b9dc5bab5b2a6c3fba"
+    },
+    {
+      "source": "output/research/figma-web-agent-2026-10-12/prototype-census/native-prototype-panel.png",
+      "snapshot": "review-inputs/21-native-prototype-panel.png",
+      "bytes": 141305,
+      "sha256": "f34fc2a8800f4b1c699706ecc28e809fa42472ad502b6d91ea6d18cea0d998ec"
+    },
+    {
+      "source": "C:/Users/Zaryab/Documents/Hengshi Design/hengshi-design/output/research/b01-interaction-definition-2026-10-12/correction3/INTERACTION_EVIDENCE_PROPOSAL.md",
+      "snapshot": "review-inputs/22-INTERACTION_EVIDENCE_PROPOSAL.md",
+      "bytes": 11703,
+      "sha256": "b11add302eb0c1af9cae9123f33374cea37b5001d49a3fe15ddfde22de54a2a9"
+    }
+  ]
+}

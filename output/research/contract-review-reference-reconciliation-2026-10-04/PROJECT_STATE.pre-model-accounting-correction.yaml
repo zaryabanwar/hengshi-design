@@ -1,0 +1,50 @@
+schema_version: 2
+last_updated: "2026-10-04"
+project: Hengshi Design
+status: DOING
+phase: 1
+required_reading: [AGENTS.md]
+engineering_contract: AGENTS.md
+current_work: docs/software-definition/05-consolidated-goal.md
+checkpoint:
+  branch: main
+  base_head: 378b506
+  historical_state: docs/archive/PROJECT_STATE-2026-09-23-pre-recovery.yaml
+  working_tree: approved_baselines_and_phase1_reconciliation_uncommitted
+  application_code_changed_this_slice: false
+  commit_authorized: false
+current_task:
+  id: CONSOLIDATED-PHASE1-RECONCILIATION
+  outcome: Reconcile system docs and prototype evidence including movement and streaming
+  status: DOING
+  authority: D064_D065_D066_D067_D068_deferred_cloud_D069_v1_D070_entity_market
+  verification:
+    foundation: PASS
+    ux: 113_pass_0_fail_35_routes
+    stream_artifact_regression: 1026_checks_440_frame_obligations_PASS
+    design_artifacts: 212_pass_1_cumulative_worktree_scope_guard
+    production_artifacts: 172_pass_1_cumulative_worktree_scope_guard
+    compatibility: Scoped_inventory_backend_notice_native_lint_strict_recheck_evidence_PASS_earlier_61_input_review_no_verdict_full_graph_unselected
+    independent_review: full_design_and_accessibility_PASS_accepted_D061
+    column_authority: D063_active_1146_cells_164_criteria_9_tests_integration_PASS
+    architecture: Reviewed_baseline_accepted_D065_navigation_amended_D064
+    world_definition: Scoped_World_and_connector_assessment_reviews_PASS_unchanged_model_inputs_fourth_correction_exception_geometry_budgets_appearance_held
+    publication_schema: PASS_4_schema_tooling_tests_envelope_and_error_body_only_no_HTTP_runtime_proof
+    contract_reviews: Scoped_amendment_HTTP_error_schema_availability_protocol_PASS_exact_inputs_physical_wire_policy_runtime_proofs_held
+    feature_reconciliation: Security_World_content_exact_hash_review_PASS_QA_REVISE_browser_release_word_repair_requires_revision_exception
+    visual_definition: v1_walkthrough_spatial_board_contract_summary_connector_diagnostic_desktop_mobile_viewport_and_keyboard_inspection_PASS_no_physical_phone_proof
+    prototype_viewer: Model_three_views_PASS_native_Web_API_Postgres_admin_signin_and_guide_review_PASS_R003_R004_R005_open
+    whitespace: PASS
+  remaining_work: Integrated_Phase1_contracts_compatibility_visual_acceptance_cloud_deferred
+  unresolved_legal_copy: content_inventory_retention_basis_and_consent
+  prior_review_gate: MA029_definition_quality_closed_D061
+  manual_action: MANUAL_ACTIONS.md # MA-031 acceptance resolved D065; B01 and legal gates remain
+previous_slice:
+  accepted_fixes: R044_D051_D052_verified_independently_uncommitted
+next_safe_action: Inspect_remaining_Phase1_contract_visual_and_review_inputs_against_full_goal_without_reopening_settled_decisions
+boundaries:
+  figma_calls: explicit_per_call_approval_required
+  figma_production: B01_held
+  application_features: Phase_1_acceptance_required
+  commits_and_pushes: deferred_by_founder
+  external_writes: existing_scope_and_approval_required

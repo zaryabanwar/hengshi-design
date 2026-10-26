@@ -1,0 +1,14 @@
+--- initial/docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md
+
++++ correction-1/docs/phase-1-architecture/contracts/PUBLICATION_CONTRACT.md
+
+@@ -928,7 +928,7 @@
+
+ 
+ ## D-076 company-facts public projection — 2026-10-07
+ 
+-Status: DOING, unreviewed. The founder's exclusion of current registration details,
++Status: DOING. The separate [13-input company-projection review](reviews/company-public-projection-v1-2026-10-07.md) gives bounded definition/schema-seam PASS at its frozen inputs; semantic exclusion, legal/contact verification, actual enforcement and acceptance remain held. This later review reference is outside those inputs. The founder's exclusion of current registration details,
+ certificate-validity claims and supplied registered address is settled. This
+ projection refines the publication proposal; it does not publish company facts,
+ authorize an admin feature or extend prior exact-input review receipts.

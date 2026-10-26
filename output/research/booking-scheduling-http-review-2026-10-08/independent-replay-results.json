@@ -1,0 +1,168 @@
+{
+  "status": "DOING",
+  "scope": "Independent artifact integrity and representative shape/stdlib replay only; no handler, HTTP, provider or load proof",
+  "manifest_sha256": "0b3c29916825459cca35775f054a6b7fa5253a0b0ff33d01a93a7e81e3203f9b",
+  "snapshots_verified": 36,
+  "original_snapshots_verified": 32,
+  "expected_live_drift": [
+    "docs/phase-1-architecture/contracts/DATA_CONTRACT.md"
+  ],
+  "booking_exact_prefix_preserved_bytes": 39751,
+  "catalogue_change": "one seven-line navigation insertion",
+  "sizing": {
+    "scope": "Representative synthetic sizing only, not exhaustive maximum proof, compliant transport or measured capacity",
+    "python": "3.14.5",
+    "observations": [
+      {
+        "case": "96_slots_spelling_only",
+        "direction": "availability_response",
+        "shape_valid": true,
+        "compact_utf8_bytes": 13544,
+        "proposal_response_ceiling": 32768
+      },
+      {
+        "case": "book_review_escaped_controls",
+        "direction": "submission_response",
+        "shape_valid": true,
+        "compact_utf8_bytes": 20598,
+        "proposal_response_ceiling": 32768
+      },
+      {
+        "case": "reschedule_review_escaped_controls",
+        "direction": "reschedule_response",
+        "shape_valid": true,
+        "compact_utf8_bytes": 20871,
+        "proposal_response_ceiling": 32768
+      },
+      {
+        "case": "cancel_review_escaped_controls",
+        "direction": "cancellation_response",
+        "shape_valid": true,
+        "compact_utf8_bytes": 722,
+        "proposal_response_ceiling": 32768
+      },
+      {
+        "case": "prepare_selection",
+        "shape_valid": true,
+        "compact_utf8_bytes": 319,
+        "proposal_request_ceiling": 2048
+      },
+      {
+        "case": "prepare_reschedule",
+        "shape_valid": true,
+        "compact_utf8_bytes": 320,
+        "proposal_request_ceiling": 2048
+      },
+      {
+        "case": "prepare_cancellation",
+        "shape_valid": true,
+        "compact_utf8_bytes": 272,
+        "proposal_request_ceiling": 2048
+      },
+      {
+        "case": "submit_booking",
+        "shape_valid": true,
+        "compact_utf8_bytes": 168,
+        "proposal_request_ceiling": 2048
+      },
+      {
+        "case": "submit_reschedule",
+        "shape_valid": true,
+        "compact_utf8_bytes": 171,
+        "proposal_request_ceiling": 2048
+      },
+      {
+        "case": "cancel_booking",
+        "shape_valid": true,
+        "compact_utf8_bytes": 168,
+        "proposal_request_ceiling": 2048
+      },
+      {
+        "case": "reconcile_submission",
+        "shape_valid": true,
+        "compact_utf8_bytes": 85,
+        "proposal_request_ceiling": 1024
+      },
+      {
+        "case": "reconcile_reschedule",
+        "shape_valid": true,
+        "compact_utf8_bytes": 85,
+        "proposal_request_ceiling": 1024
+      },
+      {
+        "case": "reconcile_cancellation",
+        "shape_valid": true,
+        "compact_utf8_bytes": 87,
+        "proposal_request_ceiling": 1024
+      }
+    ]
+  },
+  "stdlib_options": {
+    "keep_blank_values": true,
+    "strict_parsing": true,
+    "encoding": "utf-8",
+    "errors": "strict",
+    "max_num_fields": 6,
+    "separator": "&"
+  },
+  "stdlib_observations": [
+    {
+      "raw_synthetic_query": "expected_revision=7&expected_revision=8",
+      "pairs": [
+        [
+          "expected_revision",
+          "7"
+        ],
+        [
+          "expected_revision",
+          "8"
+        ]
+      ]
+    },
+    {
+      "raw_synthetic_query": "visitor_timezone=Etc%2FGMT%2B4",
+      "pairs": [
+        [
+          "visitor_timezone",
+          "Etc/GMT+4"
+        ]
+      ]
+    },
+    {
+      "raw_synthetic_query": "visitor_timezone=Etc/GMT+4",
+      "pairs": [
+        [
+          "visitor_timezone",
+          "Etc/GMT 4"
+        ]
+      ]
+    },
+    {
+      "raw_synthetic_query": "visitor_timezone=%ZZ",
+      "pairs": [
+        [
+          "visitor_timezone",
+          "%ZZ"
+        ]
+      ]
+    },
+    {
+      "raw_synthetic_query": "visitor_timezone=%FF",
+      "error_type": "UnicodeDecodeError"
+    },
+    {
+      "raw_synthetic_query": "kind=page;expected_revision=7",
+      "pairs": [
+        [
+          "kind",
+          "page;expected_revision=7"
+        ]
+      ]
+    },
+    {
+      "raw_synthetic_query": "kind=page&",
+      "error_type": "ValueError"
+    }
+  ],
+  "reviewer_harness_repair": "Initial expected-live-drift assertion omitted contracts/ from the DATA_CONTRACT path; corrected without input changes."
+}

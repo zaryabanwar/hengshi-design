@@ -1,5 +1,14 @@
 # Hengshi Design - Backlog
 
+> Current authority notice — 2026-10-04: this February backlog is preserved
+> history, not an executable current task plan. Its readiness percentages and
+> DONE labels are historical, not verified current completion under AGENTS.md.
+> Use TASKS.md, PROJECT_STATE.yaml, the current app goal and
+> [the reconciliation map](software-definition/04-reconciliation-map.md).
+> Existing prototype code/assets remain protected; obsolete AWS/fixed-version
+> or workflow assumptions cannot authorize implementation. Commits and pushes
+> remain deferred, and complete Phase 1 approval is still required.
+
 **Version:** 2.0 | **Date:** February 9, 2026 | **Status:** Active
 
 **Overall Readiness:** ~40% | **Core Platform:** 90% | **Security:** 30% | **Testing:** 20%

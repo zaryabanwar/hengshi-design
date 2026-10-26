@@ -1,0 +1,51 @@
+{
+  "product_release": "v1",
+  "status": "DOING",
+  "review_decision": "PASS",
+  "reviewer": "/root/review_native_backend_result_v1",
+  "review_date": "2026-10-09",
+  "authorization": "Founder explicitly approved one native-result reviewer; this receipt records that later approval without modifying the prepared manifest.",
+  "manifest_path": "output/research/backend-crypto-graph-2026-10-08/native-result-review/review-inputs.json",
+  "manifest_sha256": "00582b825fa1aaf91a642f988e7fdc44ebac496c0cf9d5220051b5705aecbc92",
+  "input_count": 90,
+  "all_manifest_hashes_and_lengths_match": true,
+  "scope": "Static independent inspection of the frozen 43-package native-result packet and exact appended backend claims. Earlier distribution evidence is contextual only; this is not a whole-source, production-stack or application review.",
+  "findings": [],
+  "verified": [
+    {
+      "evidence": "run_native_trial.py:79-94, native-trial/authorization.json, qualification-plan.json, runner-preflight-correction.json",
+      "conclusion": "The reviewed plan, exact hashed requirements and probe hashes agree. The preflight repair is recorded as preceding target creation. The prospective plan remains unchanged; later founder authorization is recorded separately. Host output records Windows AMD64 Python 3.14.5 and pip 26.1.1."
+    },
+    {
+      "evidence": "candidate-hashed-requirements.txt, closure-observations.json, native-trial/wheel-inspection.json, native-result-review/installed-metadata, native-trial/installed-identities.json",
+      "conclusion": "All 43 retained wheels independently match frozen file hashes, compressed lengths and embedded Name/Version metadata. Their declared ZIP sizes total 61,420,628 bytes. Exact requirements identities, versions and hashes agree, including separately retained extras. The 43 frozen installed metadata files match the current isolated environment byte-for-byte. There are no normalized-name collisions or extra/missing/version-mismatched distributions."
+    },
+    {
+      "evidence": "run_native_trial.py:137-141, continue_native_trial.py:67-105, native-trial/receipt.json, native-trial/continuation-correction.json, native-trial/commands.json, native-trial/continuation-commands.json, native-result-review/name-normalization.rst.gz",
+      "conclusion": "The original lowercased-only comparison and stopped receipt remain preserved, with their exact hashes recorded in the correction. The correction follows the saved PyPA separator/lowercase rule, rejects collisions and genuine inventory differences, and leaves plan, candidate and probes unchanged. Command records show one download, one offline installation, then only the two previously unexecuted probes; no reinstall or silent overwrite of the original outcome."
+    },
+    {
+      "evidence": "native-trial/installation-admission.json, native-trial/commands.json, native-trial/continuation-commands.json, native-trial/continuation-receipt.json",
+      "conclusion": "The installation admission arithmetic is correct: 18,676,104 retained bytes plus twice 61,420,628 expanded bytes plus 67,108,864 allowance equals 208,626,224 bytes, below 268,435,456. Every recorded before/after command boundary is below the budget and above the 1,073,741,824 free-space floor; all eight commands report zero exit and less than 180 seconds. Final recorded retained/free figures agree with the appendix. These dated observations do not guarantee an OS-enforced allocation cap or current free space."
+    },
+    {
+      "evidence": "native-probes/test_libraries.py:24-159, native-trial/library-probes.xml, native-trial/05-pip-check.stdout.txt, native-trial/07-library-probes.stdout.txt, native-trial/08-native-libpq-identity.stdout.txt",
+      "conclusion": "JUnit contains 14 cases, zero failures/errors/skips, matching the 13 static test functions with the two-case invalid-input parameterization. Recorded stdout reports 14 passed and one warning; all command stderr files are empty. Pip check reports no broken requirements. Probes cover only synthetic RSA/strict HTTP/SQLite/offline DDL/bcrypt/Uvicorn configuration/async tooling boundaries. Psycopg records binary implementation and build/runtime libpq 180004 without a connection. No claim exceeds that coverage."
+    },
+    {
+      "evidence": "native-result-review/sources.json, native-result-review/starlette-testclient.py.gz, native-result-review/installed-starlette-testclient.py, native-result-review/httpx2-registry.json.gz, native-result-review/test-client-observation.json",
+      "conclusion": "All three saved primary-source decompressed hashes and lengths agree. Installed Starlette TestClient source agrees with the tagged snapshot after newline normalization and with current installed source exactly. The deprecated HTTPX fallback and observed HTTPX2 2.13.1 are supported by saved source/registry data. The warning is retained and explicitly unresolved for adoption; no additional package, suppression or exception is claimed."
+    },
+    {
+      "evidence": "native-result-review/backend.before.md, native-result-review/backend-appendix.md, native-result-review/backend.proposed.md, docs/phase-1-compatibility/backend-evidence-2026-10-04.md, proposal.json:protected_inputs_before",
+      "conclusion": "Proposed document is exactly preserved before bytes plus the reviewed appendix, and canonical bytes match the proposal. All six protected manifest/lock/runtime-config hashes remain unchanged on inspection. Appendix distinguishes isolated qualification, earlier distribution review, remaining warnings and future approval gates."
+    }
+  ],
+  "limits": [
+    "Read-only static inspection; no trial rerun, application import, installation, network request, socket, provider, Figma, account, model or Git action was performed by this reviewer.",
+    "No Hengshi feature, authorization/session enforcement, Entra/OIDC/PKCE/JWKS behavior, PostgreSQL connection or transaction, migration execution, load, recovery or deployment assurance follows.",
+    "Authlib and joserfc are outside the 43-package execution. No full candidate licence, legal, advisory, signature, provenance, newest-compatible graph or reproducible final-lock approval follows.",
+    "The TestClient warning remains an adoption question; this PASS neither approves its deprecated path nor grants an exception.",
+    "PASS covers the exact frozen packet and bounded claims only. Founder/integrated Phase 1 acceptance, production selection, application upgrades and commits remain separate."
+  ]
+}

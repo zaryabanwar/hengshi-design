@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed static collision resource interpretation v1",
+  "description": "Definition-only shared_asset proposal. Geometry selectors cannot authorize fetching, execution, room entry or safe movement.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "release_id", "stream", "client_build_sha256", "collision_profile_id", "models"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "release_id": {"$ref": "#/$defs/identifier"},
+    "stream": {"enum": ["S-HIGH", "S-MEDIUM", "S-LOW"]},
+    "client_build_sha256": {"$ref": "#/$defs/sha256"},
+    "collision_profile_id": {"$ref": "#/$defs/identifier"},
+    "models": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/model"}
+    }
+  },
+  "$defs": {
+    "identifier": {"$ref": "../phase-1-architecture/contracts/publication-manifest.schema.json#/$defs/identifier"},
+    "sha256": {"$ref": "../phase-1-architecture/contracts/publication-manifest.schema.json#/$defs/sha256"},
+    "index": {"type": "integer", "minimum": 0, "maximum": 9007199254740991},
+    "primitive_instance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["node_index", "primitive_index", "purpose"],
+      "properties": {
+        "node_index": {"$ref": "#/$defs/index"},
+        "primitive_index": {"$ref": "#/$defs/index"},
+        "purpose": {"enum": ["ground_candidate", "barrier"]}
+      }
+    },
+    "model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["artifact_id", "container", "gltf_version", "scene_index", "primitives"],
+      "properties": {
+        "artifact_id": {"$ref": "#/$defs/identifier"},
+        "container": {"const": "GLB"},
+        "gltf_version": {"const": "2.0"},
+        "scene_index": {"$ref": "#/$defs/index"},
+        "primitives": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/primitive_instance"}
+        }
+      }
+    }
+  }
+}

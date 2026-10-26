@@ -1,9 +1,9 @@
 # Hengshi Design Digital Platform — Documentation Index
 
 **Document ID:** HD-INDEX-2026-002
-**Version:** 2.0
+**Current definition:** v1
 **Original version date:** February 9, 2026
-**Last reconciled:** July 18, 2026
+**Last reconciled:** October 4, 2026
 **Status:** Active | Classification: Internal
 
 ---
@@ -18,12 +18,12 @@ The platform underwent a strategic architectural pivot in early 2026 from an 11-
 
 ---
 
-## 0. Current Authority Bridge (July 18, 2026)
+## 0. Current Authority Bridge
 
 | Priority | Record | Authority |
 |---:|---|---|
 | 1 | Current explicit founder approval recorded in root `DECISIONS.md` and detailed `docs/decisions-log.md` | Current founder direction. |
-| 2 | Constitution 2.0.0, `AGENTS.md`, and project safety/governance rules | Binding governance and safety. |
+| 2 | Current v1 constitution, `AGENTS.md`, and project safety/governance rules | Binding governance and safety. |
 | 3 | Approved decisions and compatibility-exception ADRs | Durable product/technical choices and approved exceptions. |
 | 4 | Approved requirements and feature specifications | Controlling approved product behavior. |
 | 5 | Approved software-definition and design artifacts | Approved implementation/design intent. |
@@ -32,9 +32,42 @@ The platform underwent a strategic architectural pivot in early 2026 from an 11-
 
 Approved decisions outrank approved requirements; approved requirements outrank research and drafts. Chat history is supporting context only.
 
-The founder-approved future target is the newest mutually compatible stable versions within the retained technology families and an Azure-managed production architecture. Phase 0 amended Constitution 2.0.0, agent/project rules, software-definition workflow documents, Copilot guidance, and Spec Kit templates to implement that policy. Fixed React 18, PostgreSQL 16, and AWS statements in legacy v3 product documents and draft specs remain useful current-state/history evidence but no longer define the target. Phase 1 must supersede or reconcile those legacy product/feature artifacts before modernization or cloud implementation.
+The current first-production definition is v1. D-069 requires the latest mutually
+compatible stable graph across all retained technology families and coupled tools;
+independently newest versions are observations, not selections. D-068 defers
+deployment/provider/region/cost planning, with Azure and AWS as candidates and the
+lowest feasible cost/free services preferred when planning resumes. Outlook/Teams
+remain intended without a Microsoft 365 prerequisite; approved Entra staff identity
+and AI privacy routes remain separate restrictions. D-070 targets Europe first,
+with reviewed admin-editable company facts and dedicated privacy/security aliases
+whose ownership is explicitly undecided. No provider or operational mailbox is
+verified by this index. Historical fixed versions and either historical cloud plan
+cannot override these decisions.
 
-Phase 0 is `awaiting_human` after independent review iteration 2 passed. Phase 1 is the only prepared next action and remains blocked until founder acceptance is recorded.
+Phase 0 was accepted through D-024. Phase 1 is DOING: D-025 accepts the foundation, D-035 the identity, D-036 the UX baseline, D-037 the reference-design contract and D-061/D-063 their recorded refinements. D-065 accepts the reviewed architecture boundaries; D-064 adds mouse/touch free movement and spatial streaming, D-066 selects an original modular headquarters, and D-067 selects a nature-integrated visual direction. Detailed visual acceptance and complete Phase 1 acceptance remain pending.
+
+Start from the [system definition and reconciliation map](../software-definition/04-reconciliation-map.md) and [consolidated work scope](../software-definition/05-consolidated-goal.md). They navigate to controlling sources; they do not replace approval records. Current work is recorded in [PROJECT_STATE.yaml](../../PROJECT_STATE.yaml). The `active` folder name and historical titles do not give prototype documents production authority. The later inventory and cleanup recommendations remain historical evidence. Historical document IDs, dependency/schema versions and original evidence names remain accurate; they are not later product releases.
+
+### Current successors for historical documents
+
+These documents are retained for provenance and source comparison, without a
+second maintained production specification. New requirements, plans and acceptance
+evidence belong in their controlling successors. Recorded later approved SRS/style
+guide amendments retain their specific decision authority; their surrounding
+February implementation descriptions do not inherit that approval.
+
+| Historical source | Current controlling successor | Use of retained source |
+|---|---|---|
+| [SRS](Hengshi_Design_SRS_v3.md) and [prototype MVP spec](../SPEC.md) | [Accepted foundation](../phase-1-foundation/01-product-requirements.md), approved amendments in [DECISIONS.md](../../DECISIONS.md), [UX flows](../phase-1-ux-architecture/FLOWS.md) and [World proposal](../phase-1-3d/WORLD_EXPERIENCE.md) | Historical behavior/status descriptions; later accepted requirements remain scoped to their decisions. No new competing SRS. |
+| [SAD](Hengshi_Design_SAD_v3.md), [requirements-to-architecture mapping](Requirements_Architecture_Mapping_v3.md) and `docs/current-state/` diagrams | [Accepted boundary baseline](../phase-1-architecture/ARCHITECTURE.md), [movement addendum](../phase-1-architecture/MOVEMENT_STREAMING_ADDENDUM.md) and [logical data contract](../phase-1-architecture/contracts/DATA_CONTRACT.md) | Prototype architecture observations requiring live verification; old verification ticks and diagrams do not prove current behavior. |
+| [Security hardening plan](Security_Hardening_Plan.md) | [Security/privacy proposal](../phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md), [recorded risks](../../RISKS.md) and [security feature readiness](../../specs/001-platform-security-hardening/tasks.md) | Historical remediation suggestions, not authority for thresholds, auth changes or an executable sprint. |
+| [API reference](API_Reference.md) | Actual source/live OpenAPI for prototype behavior; [interface proposal](../phase-1-architecture/contracts/INTERFACE_CATALOG.md) and [publication contract](../phase-1-architecture/contracts/PUBLICATION_CONTRACT.md) for the proposed replacement | Verify existing routes against code; the new catalogue is not yet a wire-format freeze or replacement API. |
+| [Prototype backlog](../BACKLOG.md) | [Current tasks](../../TASKS.md), [checkpoint](../../PROJECT_STATE.yaml) and [feature specifications](../../specs/README.md) | Historical task/readiness claims, not current completion or permission to implement. |
+| February DOCX consolidation and historical deployment diagrams | [Project charter](../../PROJECT.md), [reconciliation map](../software-definition/04-reconciliation-map.md) and [deferred deployment entry](../../specs/005-azure-deployment-launch/README.md) | Preserved original consolidation and cloud assumptions; no current provider selection. |
+
+The successor's approval status still controls. A proposed contract does not
+become approved because it supersedes historical prose. No archive move, deletion,
+new implementation plan, application edit or full Phase 1 acceptance occurs here.
 
 ---
 

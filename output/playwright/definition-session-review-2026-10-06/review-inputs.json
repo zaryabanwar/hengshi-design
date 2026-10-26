@@ -1,0 +1,78 @@
+{
+  "product": "Hengshi Design v1",
+  "scope": "Only checkpoint section and consultation-sessions details translation; no full board or runtime/Phase1 acceptance",
+  "producerInspection": {
+    "desktop": "1280x900 three cards no page overflow",
+    "narrow": "390x844 stacked cards no page overflow; two screenshots cover cards",
+    "keyboard": "Enter collapses and expands focused SUMMARY; PageDown reads remaining cards",
+    "localCheckpointLinks": 24,
+    "limitations": [
+      "No physical mobile or screen-reader qualification",
+      "Static definitions not implemented consultation/auth",
+      "Visitor continuation profile remains held"
+    ]
+  },
+  "outsideCheckpointUnchanged": true,
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "path": ".specify/memory/constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "path": "docs/software-definition/definition-walkthrough.html",
+      "bytes": 70714,
+      "sha256": "4df1b2fbe41683ff1a9c73d00c47d3a0b205b82468503b0b476caf1318eeb800"
+    },
+    {
+      "path": "output/playwright/definition-session-review-2026-10-06/definition-walkthrough.before.html",
+      "bytes": 68645,
+      "sha256": "96a1ebe2c9383944b8b1e8b94dad3d925316c2fbf4430231232798761180436a"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "bytes": 87003,
+      "sha256": "2b543fbf8c00e244f705d0931bacb76f8a2405d2bbb9bb4e1593a28fa86d87f8"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "bytes": 40793,
+      "sha256": "283cc68e4f8634ca3a8abf49eeb2051528e59e6dcd6470646ba698e137d370b9"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/visitor-message-registration-v1-2026-10-06.md",
+      "bytes": 7685,
+      "sha256": "d54254f7fc1ed9923b80f6d95da073b1de7f225d122893a137c71414c677a51e"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/handoff-lifetime-profile-v1-2026-10-06.md",
+      "bytes": 7336,
+      "sha256": "03a0d99fe66bd7cb9e2b6a77ebb83d7de8d134aa00b6438941c8e8ab7f5a91c3"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/reviews/staff-session-handoff-profile-v1-2026-10-06.md",
+      "bytes": 5298,
+      "sha256": "5fac4968e8ec3c22569d6e2945749ceb1803ded7c546a5dccfb25b64126352c8"
+    },
+    {
+      "path": "output/playwright/definition-session-review-2026-10-06/sessions-desktop.png",
+      "bytes": 120791,
+      "sha256": "8cb5137d6ab84822b644f482ee2fb750bab73bd139c4ad80732766a1c3322021"
+    },
+    {
+      "path": "output/playwright/definition-session-review-2026-10-06/sessions-narrow.png",
+      "bytes": 41279,
+      "sha256": "8ff15f6c5018f1e74eab54adbaef60162d44bee6fc8977860b26a5de31261417"
+    },
+    {
+      "path": "output/playwright/definition-session-review-2026-10-06/sessions-narrow-lower.png",
+      "bytes": 45131,
+      "sha256": "9f6d8d1a85826148afa4dfb2365cd8404ef1367c597ae8af05066656acbbe2e3"
+    }
+  ]
+}

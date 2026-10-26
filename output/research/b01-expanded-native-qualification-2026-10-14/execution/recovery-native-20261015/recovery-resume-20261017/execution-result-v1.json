@@ -1,0 +1,19 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-17",
+  "scope": "Read-only playback of existing four Recovery/SEMANTIC boundary edges; no canvas edits, new reactions, AI prompt, MCP or Git action.",
+  "parent": "../recovery-boundaries-20261017/execution-result-v1.json",
+  "browser": "Restored browser2 and authenticated Hengshi editor revalidated. Fresh preview tab2 reopened original source175:3797. Old tabs absent. Temporary viewport override reset after tests; normal current sizing restored.",
+  "captureFinding": "Direct screenshot/getScreenshot and surface captures sometimes return black outside the most recently changed pixels. An explicit compositor capture06 showed the full Preserve arrival after partial capture; later captures remain mixed. View capture08 unexpectedly contains Codex chrome/chat and is not Figma behavior evidence. No diagnosis of Figma rendering or screenshot subsystem is asserted.",
+  "producerSequence": [
+    "Default source175:3797 Quick Access active/selected; choose Detailed as pending, no Apply.",
+    "Scroll to bottom with marker; click existing Preserve control; observed URL175:3819 and full surface capture06 shows bottom anchor. No scroll movement before return.",
+    "Click existing private Return; observed URL175:3797. Initial return capture07 partial; viewport adjustment gives09 bottom view, then scrolling to top emits Detailed pending and Quick Access active. Saved10 is partial, so complete pending-state return pixels remain weak despite live producer observation.",
+    "Scroll same pending source to bottom; click Reset. URL175:3841 and12 shows Quick Access selected/active at top.",
+    "Scroll Reset destination to bottom; activate Return. URL175:3797 and14 shows Quick Access selected/active at top.",
+    "Further default-to-Detailed capture15 is partial and scroll repaint16 is black. Preserve those failures; do not use filenames or state inference as successful screenshot proof."
+  ],
+  "bounds": "Both returns were now activated; forward Preserve bottom and forward/return Reset top/default have bounded observations. Exact scroll, native instance matching, full source preservation and robust Preserve state-return evidence remain unqualified. No increment in authored-edge count:23 authored/301 remain. Not full paired mechanism, all324 edges, accessibility, B01 acceptance or runtime proof.",
+  "next": "Use supported browser capture recovery and native matching inspection before mechanism qualification; do not re-author existing edges or claim capture defects are design defects."
+}

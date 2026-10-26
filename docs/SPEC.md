@@ -1,5 +1,15 @@
 # Hengshi Design - Immersive Web Platform Spec (MVP)
 
+> Current authority notice — 2026-10-04: this February MVP description is preserved
+> prototype/history evidence, not the current production specification. Its
+> original "Active" status and completion claims are dated statements requiring
+> live code/test verification. Use PROJECT.md, DECISIONS.md and
+> [the reconciliation map](software-definition/04-reconciliation-map.md) for
+> approved scope and canonical Phase 1 definitions. Four peer streams, semantic
+> pre-JavaScript content, D-064 movement/streaming, new modular HQ and Azure intent
+> supersede conflicting prototype assumptions. No application change or full
+> Phase 1 acceptance follows from this historical list.
+
 **Version:** 2.0 | **Date:** February 9, 2026 | **Status:** Active
 
 ---

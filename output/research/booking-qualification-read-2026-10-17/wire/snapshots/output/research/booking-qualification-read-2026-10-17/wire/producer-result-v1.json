@@ -1,0 +1,46 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-17",
+  "scope": "Proposed closed response and shared-reader binding; definition/schema evidence only",
+  "newModule": "docs/phase-1-architecture/contracts/booking-qualification-read.schema.json",
+  "entryPoint": "#/$defs/response; module root rejects instances; GET has no JSON request document",
+  "fixture": "scripts/validation/test_booking_qualification_read_schema.py",
+  "observedRuntime": {
+    "python": "3.14.5",
+    "jsonschema": "4.23.0",
+    "referencing": "0.37.0",
+    "meaning": "Installed test tool observations, not a selected latest-compatible production graph or installation"
+  },
+  "producerChecks": [
+    {
+      "command": "python -m unittest scripts.validation.test_booking_qualification_read_schema scripts.validation.test_booking_qualification_schema scripts.validation.test_process_value_schema -v",
+      "exitCode": 0,
+      "tests": 29,
+      "result": "PASS",
+      "scope": "Eight new representation methods plus affected qualification/common fixtures; no HTTP, store, auth, UI or concurrency runtime proof"
+    },
+    {
+      "command": "python -m py_compile scripts/validation/test_booking_qualification_read_schema.py",
+      "exitCode": 0,
+      "scope": "Fixture syntax only"
+    }
+  ],
+  "bindingDocuments": [
+    "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+    "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md"
+  ],
+  "independentReview": "Pending new exact-input review; earlier logical/canonical PASS scopes retained",
+  "notEstablished": [
+    "Current purpose/notice/proof or admitted mailbox/record",
+    "GET output/HTTP/no-store, shared limiter/drain/byte implementation",
+    "Dirty-base and uncertain-command concurrency enforcement or accessibility",
+    "Route/module/resource adoption, full booking/Phase1 acceptance or compatible production graph"
+  ],
+  "actions": {
+    "application": false,
+    "installation": false,
+    "browserFigmaMCP": false,
+    "commitsPushes": false
+  }
+}

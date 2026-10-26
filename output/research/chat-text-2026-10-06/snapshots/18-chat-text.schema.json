@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed chat text directions v1",
+  "description": "IF-CHAT-03 additional text variants, definition only. Reference client/server explicitly; no authority from shape, ticket, role or digest. Schema cannot prove current tickets/consent/source, scalar UTF-8 validity, byte ceilings, CAS, routing/safety, ordering, legal retention or actual delivery. Event header is an incomplete helper, not an accepted message direction.",
+  "not": {},
+  "$defs": {
+    "uuid_v4": {"$ref": "booking-creation-request.schema.json#/$defs/operation_id"},
+    "revision": {"$ref": "process-value.schema.json#/$defs/positive_revision"},
+    "consent_revision": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/revision"}]},
+    "release_identity": {
+      "type": "object", "additionalProperties": false,
+      "required": ["release_id", "manifest_sha256"],
+      "properties": {
+        "release_id": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+        "manifest_sha256": {"$ref": "process-value.schema.json#/$defs/sha256"}
+      }
+    },
+    "text_admission": {
+      "type": "object", "additionalProperties": false,
+      "required": ["protocol_version", "kind", "channel_id", "stream_id", "proof_generation", "consent_revision", "release_identity", "operation_id", "command_revision"],
+      "properties": {
+        "protocol_version": {"type": "integer", "const": 1},
+        "kind": {"const": "text_admission"},
+        "channel_id": {"$ref": "#/$defs/uuid_v4"},
+        "stream_id": {"$ref": "#/$defs/uuid_v4"},
+        "proof_generation": {"$ref": "#/$defs/revision", "minimum": 2},
+        "consent_revision": {"$ref": "#/$defs/consent_revision"},
+        "release_identity": {"$ref": "#/$defs/release_identity"},
+        "operation_id": {"$ref": "#/$defs/uuid_v4"},
+        "command_revision": {"$ref": "#/$defs/revision"}
+      }
+    },
+    "submit_text": {
+      "type": "object", "additionalProperties": false,
+      "required": ["protocol_version", "kind", "channel_id", "stream_id", "operation_id", "command_revision", "expected_consent_revision", "payload"],
+      "properties": {
+        "protocol_version": {"type": "integer", "const": 1},
+        "kind": {"const": "submit_text"},
+        "channel_id": {"$ref": "#/$defs/uuid_v4"},
+        "stream_id": {"$ref": "#/$defs/uuid_v4"},
+        "operation_id": {"$ref": "#/$defs/uuid_v4"},
+        "command_revision": {"$ref": "#/$defs/revision"},
+        "expected_consent_revision": {"$ref": "#/$defs/consent_revision"},
+        "payload": {
+          "type": "object", "additionalProperties": false, "required": ["text"],
+          "properties": {"text": {"type": "string", "minLength": 1, "maxLength": 2000}}
+        }
+      }
+    },
+    "reconcile_text": {
+      "type": "object", "additionalProperties": false,
+      "required": ["protocol_version", "kind", "channel_id", "stream_id", "operation_id", "command_revision"],
+      "properties": {
+        "protocol_version": {"type": "integer", "const": 1},
+        "kind": {"const": "reconcile_text"},
+        "channel_id": {"$ref": "#/$defs/uuid_v4"},
+        "stream_id": {"$ref": "#/$defs/uuid_v4"},
+        "operation_id": {"$ref": "#/$defs/uuid_v4"},
+        "command_revision": {"$ref": "#/$defs/revision"}
+      }
+    },
+    "event_header": {
+      "type": "object",
+      "required": ["protocol_version", "kind", "channel_id", "stream_id", "event_id", "sequence", "proof_generation", "consent_revision", "release_identity", "payload"],
+      "properties": {
+        "protocol_version": {"type": "integer", "const": 1},
+        "channel_id": {"$ref": "#/$defs/uuid_v4"},
+        "stream_id": {"$ref": "#/$defs/uuid_v4"},
+        "event_id": {"$ref": "#/$defs/uuid_v4"},
+        "sequence": {"$ref": "#/$defs/revision"},
+        "proof_generation": {"$ref": "#/$defs/revision", "minimum": 2},
+        "consent_revision": {"$ref": "#/$defs/consent_revision"},
+        "release_identity": {"$ref": "#/$defs/release_identity"}
+      }
+    },
+    "command_result": {
+      "allOf": [
+        {"$ref": "#/$defs/event_header"},
+        {"properties": {"kind": {"const": "command_result"}, "payload": {"$ref": "#/$defs/result_payload"}}}
+      ],
+      "unevaluatedProperties": false
+    },
+    "result_payload": {
+      "type": "object", "additionalProperties": false,
+      "required": ["operation_id", "command_revision", "state"],
+      "properties": {
+        "operation_id": {"$ref": "#/$defs/uuid_v4"},
+        "command_revision": {"$ref": "#/$defs/revision"},
+        "state": {"enum": ["admitted", "pending", "forwarded", "refused", "unavailable"]},
+        "code": {"enum": ["input_not_permitted", "source_unavailable", "guidance_unavailable", "outcome_unavailable"]},
+        "recovery": {"enum": ["reconcile", "human_or_book", "contact_or_book"]}
+      },
+      "oneOf": [
+        {"properties": {"state": {"enum": ["admitted", "forwarded"]}}, "not": {"anyOf": [{"required": ["code"]}, {"required": ["recovery"]}]}},
+        {"required": ["recovery"], "properties": {"state": {"const": "pending"}, "recovery": {"const": "reconcile"}}, "not": {"required": ["code"]}},
+        {"required": ["code", "recovery"], "properties": {"state": {"const": "refused"}, "code": {"enum": ["input_not_permitted", "source_unavailable", "guidance_unavailable"]}, "recovery": {"enum": ["human_or_book", "contact_or_book"]}}},
+        {"required": ["code", "recovery"], "properties": {"state": {"const": "unavailable"}, "code": {"const": "outcome_unavailable"}, "recovery": {"const": "reconcile"}}}
+      ]
+    },
+    "source_reference": {
+      "type": "object", "additionalProperties": false,
+      "required": ["document_id", "route_key", "document_sha256"],
+      "properties": {
+        "document_id": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+        "route_key": {"$ref": "publication-manifest.schema.json#/$defs/identifier"},
+        "document_sha256": {"$ref": "process-value.schema.json#/$defs/sha256"}
+      }
+    },
+    "ai_answer": {
+      "allOf": [
+        {"$ref": "#/$defs/event_header"},
+        {"properties": {"kind": {"const": "ai_answer"}, "payload": {
+          "type": "object", "additionalProperties": false,
+          "required": ["operation_id", "command_revision", "answer", "outcome", "sources"],
+          "properties": {
+            "operation_id": {"$ref": "#/$defs/uuid_v4"},
+            "command_revision": {"$ref": "#/$defs/revision"},
+            "answer": {"type": "string", "minLength": 1, "maxLength": 4000},
+            "outcome": {"const": "nonbinding_grounded_guidance"},
+            "sources": {"type": "array", "minItems": 1, "maxItems": 8, "uniqueItems": true, "items": {"$ref": "#/$defs/source_reference"}}
+          }
+        }}}
+      ],
+      "unevaluatedProperties": false
+    },
+    "staff_text": {
+      "allOf": [
+        {"$ref": "#/$defs/event_header"},
+        {"properties": {"kind": {"const": "staff_text"}, "payload": {
+          "type": "object", "additionalProperties": false,
+          "required": ["handoff_id", "ownership_generation", "text"],
+          "properties": {
+            "handoff_id": {"$ref": "process-value.schema.json#/$defs/uuid"},
+            "ownership_generation": {"$ref": "#/$defs/revision"},
+            "text": {"type": "string", "minLength": 1, "maxLength": 4000}
+          }
+        }}}
+      ],
+      "unevaluatedProperties": false
+    },
+    "client": {"oneOf": [{"$ref": "#/$defs/submit_text"}, {"$ref": "#/$defs/reconcile_text"}]},
+    "server": {"oneOf": [{"$ref": "#/$defs/text_admission"}, {"$ref": "#/$defs/command_result"}, {"$ref": "#/$defs/ai_answer"}, {"$ref": "#/$defs/staff_text"}]}
+  }
+}

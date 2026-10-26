@@ -1,0 +1,15 @@
+Content-Length: 711
+
+{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"processId":3360,"clientInfo":{"name":"Hengshi isolated compatibility probe","version":"1"},"rootUri":"file:///C:/Users/Zaryab/Documents/Hengshi%20Design/hengshi-design/output/research/typescript-react-parity-2026-10-06","workspaceFolders":[{"uri":"file:///C:/Users/Zaryab/Documents/Hengshi%20Design/hengshi-design/output/research/typescript-react-parity-2026-10-06","name":"synthetic-react-fixtures"}],"capabilities":{"general":{"positionEncodings":["utf-16"]},"workspace":{"diagnostics":{"refreshSupport":true}},"textDocument":{"diagnostic":{"dynamicRegistration":false,"relatedDocumentSupport":false},"synchronization":{"dynamicRegistration":false}}}}}Content-Length: 52
+
+{"jsonrpc":"2.0","method":"initialized","params":{}}Content-Length: 736
+
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///C:/Users/Zaryab/Documents/Hengshi%20Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/fixture.tsx","languageId":"typescriptreact","version":1,"text":"import { useRef, useState } from \"react\";\nimport { createRoot } from \"react-dom/client\";\nfunction Counter({initial}: {initial: number}) {\n const [count, setCount] = useState(initial);\n const ref = useRef<HTMLButtonElement | null>(null);\n return <button ref={ref} onClick={event => { event.currentTarget.disabled = true; setCount(count + 1); }}>{count}</button>;\n}\ncreateRoot(document.createElement(\"div\")).render(<Counter initial={0} />);\n"}}}Content-Length: 266
+
+{"jsonrpc":"2.0","id":2,"method":"textDocument/diagnostic","params":{"textDocument":{"uri":"file:///C:/Users/Zaryab/Documents/Hengshi%20Design/hengshi-design/output/research/typescript-react-parity-2026-10-06/valid-component/fixture.tsx"},"identifier":"typescript"}}Content-Length: 101
+
+{"jsonrpc":"2.0","id":"ts1","error":{"code":-32601,"message":"Not supported by finite probe client"}}Content-Length: 44
+
+{"jsonrpc":"2.0","id":3,"method":"shutdown"}Content-Length: 33
+
+{"jsonrpc":"2.0","method":"exit"}

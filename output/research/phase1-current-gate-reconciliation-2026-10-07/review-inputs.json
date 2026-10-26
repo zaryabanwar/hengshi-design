@@ -1,0 +1,100 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-07",
+  "scope": "Current B01 inspection/permission gate and D-076 access-versus-retention reference reconciliation",
+  "inputs": [
+    {
+      "path": "MANUAL_ACTIONS.md",
+      "bytes": 10619,
+      "sha256": "fb3dac7911f49439c7e160ba0ab75ce191ff762ec6700aea1fcd3bca87282a8a",
+      "snapshot": "output/research/phase1-current-gate-reconciliation-2026-10-07/review-inputs/MANUAL_ACTIONS.md"
+    },
+    {
+      "path": "docs/software-definition/04-reconciliation-map.md",
+      "bytes": 78294,
+      "sha256": "0719cb68b747e2822785d17ed66783e641d2f4638a5bc87388ef6fbd8043ae3a",
+      "snapshot": "output/research/phase1-current-gate-reconciliation-2026-10-07/review-inputs/docs/software-definition/04-reconciliation-map.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "bytes": 35916,
+      "sha256": "1959e28b6be31c3e660d89790612144bd32769d992d554d6b9ec026e898cf8d6",
+      "snapshot": "output/research/phase1-current-gate-reconciliation-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/DATA_CONTRACT.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/data-classification.csv",
+      "bytes": 5615,
+      "sha256": "c8793ebfb401178b4175f0f6c7b9cfb14edcd606f370090883cbe2be94f0cd6e",
+      "snapshot": "output/research/phase1-current-gate-reconciliation-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/data-classification.csv"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "bytes": 68306,
+      "sha256": "cbc58c008eb61430e47ab89c0fa3e92d3fdbfbc38d6fb65139269c300c309f77",
+      "snapshot": "output/research/phase1-current-gate-reconciliation-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "bytes": 108274,
+      "sha256": "f247fd4c72d2e79cd03d77cd9d0e5287f2266c85bf4cefd129742bb2a9f639a2",
+      "snapshot": "output/research/phase1-current-gate-reconciliation-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md"
+    },
+    {
+      "path": "docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md",
+      "bytes": 49954,
+      "sha256": "b2f2b08e52569a7fa50a6e0a00eb71fc2ddd56d50f2033c9c9fa0bd75a282d64",
+      "snapshot": "output/research/phase1-current-gate-reconciliation-2026-10-07/review-inputs/docs/phase-1-architecture/contracts/CHAT_EVENT_PROTOCOL.md"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 84370,
+      "sha256": "f38b6f5930b51cae9188db8df6bc9fe458b0df907a3f6eab10fc6b956a0b50da",
+      "snapshot": "output/research/phase1-current-gate-reconciliation-2026-10-07/review-inputs/DECISIONS.md"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-production/validation/mcp-call-ledger.csv",
+      "bytes": 9972,
+      "sha256": "303af4da78f70c9f5737f609c71f2abcdd12b38b985f0f513fb66fa8ff16a2c2",
+      "snapshot": "output/research/phase1-current-gate-reconciliation-2026-10-07/review-inputs/docs/phase-1-ui-reference-production/validation/mcp-call-ledger.csv"
+    },
+    {
+      "path": "output/research/b01-navigation-recovery-2026-10-07/inspection.json",
+      "bytes": 5953,
+      "sha256": "7a9565290b92415bf050b8187844769e7506f6906a6209a18e315c1ff1dec7e8",
+      "snapshot": "output/research/phase1-current-gate-reconciliation-2026-10-07/review-inputs/output/research/b01-navigation-recovery-2026-10-07/inspection.json"
+    },
+    {
+      "path": "output/research/b01-directory-preflight-refresh-2026-10-07/preflight.json",
+      "bytes": 3565,
+      "sha256": "45db90c803c7a26987903f67cfdb828d1e5171b0c1c15561390d2f4dc9786ef8",
+      "snapshot": "output/research/phase1-current-gate-reconciliation-2026-10-07/review-inputs/output/research/b01-directory-preflight-refresh-2026-10-07/preflight.json"
+    }
+  ],
+  "structural_observation": {
+    "classification_records": 15,
+    "changed_classification_cells": [
+      [
+        "nonconsented_chat",
+        "retention"
+      ]
+    ]
+  },
+  "tests_added": false,
+  "runtime_proven": false,
+  "independent_review": {
+    "status": "BLOCKED",
+    "verdict": null,
+    "attempted_for_this_packet": false,
+    "existing_error": "Your workspace is out of credits. Add credits to continue."
+  },
+  "next_figma_call": "Pending human approval for one 52-reference/two-component directory composition; no call17 performed",
+  "later_gates_not_reopened": [
+    "real company/content/team evidence",
+    "privacy/security alias owner",
+    "Azure/AWS cost/region/provider planning"
+  ],
+  "application_changed": false,
+  "committed": false,
+  "integrated_acceptance": "held"
+}

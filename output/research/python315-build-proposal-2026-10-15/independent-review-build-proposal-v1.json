@@ -1,0 +1,89 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-15",
+  "reviewed_at_utc": "2026-10-15T09:30:52.256743+00:00",
+  "reviewer": "Independent read-only reviewer /root/review_python315_build_proposal_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "PASS",
+  "scope": "Bounded offline review of the frozen52 source/registry observations, normal CPython3.15 NuGet research pipeline proposal, six unexecuted prospective library cases and append-only backend proposal. PASS permits presenting this preparation for founder consideration; it is not execution permission or a runtime/graph/production qualification.",
+  "packet": {
+    "path": "output/research/python315-build-proposal-2026-10-15/review-inputs-v1.json",
+    "sha256": "2cd3d2443d4004efad74ecde9ec8c2f8ce4f95f2d0b42ddcf862bc6b657e4469",
+    "input_count": 52,
+    "verified_byte_and_sha256_count": 52,
+    "all_frozen_inputs_rechecked_before_receipt": true
+  },
+  "findings": [],
+  "actionable_finding_count": 0,
+  "review_method": [
+    "Read the frozen governance, relevant existing plans/probes and prior admission receipt. Governance and prior review are bounded authority/evidence, not inherited acceptance.",
+    "Used the existing research interpreter with -B solely for saved JSON/gzip/hash, packaging-metadata/tag and AST analysis. Did not run capture_sources.main, resolver, tests, imports of the proposed package graph, new runtime, network/acquisition, source builds, package installation, Figma or Git.",
+    "Verified all52 byte counts/SHA256 bindings; independently replayed26 saved/decoded source captures and3 runtime metadata captures, including nested gzip response decoding.",
+    "Compared the proposed backend bytes with the entire before snapshot; the former is an exact prefix-preserving append of2702 bytes."
+  ],
+  "verified_assessments": [
+    {
+      "boundary": "Dated stable registry observations",
+      "result": "PASS",
+      "evidence": "source-observations.json current_observations and captures/*.json.gz",
+      "assessment": "All20 observations equal the highest stable non-yanked release represented in their saved2026-10-15 registry captures. Their Requires-Dist records and reported matching-wheel byte/hash/URL/Requires-Python bindings replay exactly. Normal cp315/win_amd64 or compatible universal/abi3 tag eligibility replays with the existing packaging library. This is registry admission evidence only, not actual3.15 installation or runtime proof."
+    },
+    {
+      "boundary": "Root intent",
+      "result": "PASS",
+      "evidence": "prospective-roots.txt; prospective-build-roots.txt; test-client-graph-2026-10-09/candidate-roots.txt",
+      "assessment": "All14 prior root families/extras are preserved, including uvicorn[standard], psycopg[binary] and pyjwt[crypto]. Exact root pins match dated observations; FastAPI0.143.1 and Authlib1.9.1 are evaluation inputs. Four explicit build roots match current observed pins; pip26.2.1 is the runtime-bundled installer and build1.6.1 was observed but is not implicitly selected/installed."
+    },
+    {
+      "boundary": "Exact stable PyYAML build source",
+      "result": "PASS",
+      "evidence": "captures/pyyaml-setup.txt.gz; captures/pyyaml-pyproject.txt.gz; captures/pyyaml-build-backend.txt.gz; prior pyyaml-6.0.3.json.gz",
+      "assessment": "Saved URLs identify exact upstream6.0.3 tag source. setup.py ext_status coerces PYYAML_FORCE_LIBYAML=0 to zero; has_ext_modules/build_ext honor the disabled extension path. pyproject still requires setuptools and Cython>=3.0 on Python>=3.13; the PEP517 bridge delegates to setuptools. The proposed source URL,130960-byte count and SHA256 match the saved stable sdist metadata. Source/sdist byte comparison before build, dynamic-requirement stop and two isolated offline builds are explicit. This supports a proposed pure-Python path, not tested3.15 behavior. Context7 main7.0.0.dev0 is explicitly excluded as source authority."
+    },
+    {
+      "boundary": "Private normal CPython3.15 runtime proposal",
+      "result": "PASS",
+      "evidence": "python315-runtime-metadata.json; captures/python315-nuget-*.gz; captures/python-windows.txt.gz",
+      "assessment": "Versioned3.15 CPython documentation identifies NuGet packages for CI/build use and separate free-threaded package IDs; it also excludes ordinary pip management for the embedded distribution. Saved registration/nuspec/catalog bind normal python3.15.0,64-bit build use, listed/non-prerelease state,16619621 archive bytes and64-byte SHA512 digest.1450 catalogue member lengths sum to45251705 bytes. Catalogue includes tools/python.exe, python315.dll, venv implementation/Windows launcher files and pip-26.2.1.dist-info/METADATA. Actual archive, GIL/architecture/pip/runtime identity remain explicit post-permission checks; catalogue author/hash metadata is not publisher provenance."
+    },
+    {
+      "boundary": "Staged resolution/build/install feasibility",
+      "result": "PASS",
+      "evidence": "qualification-plan-v1.json steps04-12 and execution_preparation_gate; saved pip documentation",
+      "assessment": "The proposal uses the actual3.15 interpreter for marker/extras resolution, binary-only dry-run reports and separately reviewed build/full graph closures. Exact hashed wheel acquisition, no-deps offline installation and separate build/qualification environments avoid repurposing prior trials. No-build-isolation intentionally requires the declared build tools; new dynamic requirements stop the trial. Two independently extracted source trees, fixed SOURCE_DATE_EPOCH and full wheel SHA256 equality define a prospective reproducibility gate. Helper implementations and exact per-stage argument vectors are intentionally still pending independent review before their commands; this is a pipeline proposal rather than an executable controller."
+    },
+    {
+      "boundary": "Permission, resource and preservation boundaries",
+      "result": "PASS",
+      "evidence": "qualification-plan-v1.json authority, boundaries, steps01-03/14-15 and execution_preparation_gate",
+      "assessment": "execution_authorized=false and explicit new founder permission are clear; prior43/48 approvals do not carry. Admission reserves512MiB plus1GiB free floor before first artifact, with80 distinct distributions, per-artifact/expanded caps and180-second command deadlines. Subsequent measured/expanded-copy reservations and free-space rechecks are required, with command-boundary rather than hard-quota limits disclosed. Owned-process controls, no automatic retries/deletions/downgrades/root-extra removal/system configuration changes and failure preservation are explicit. Material drift requires a revised reviewed proposal and applicable decision."
+    },
+    {
+      "boundary": "Six prospective library cases",
+      "result": "PASS",
+      "evidence": "test_yaml_parser_boundary.py; qualification-plan-v1.json steps13-14",
+      "assessment": "AST/source inspection finds six unexecuted cases: pure-build identity, declared YAML/Unicode mapping, public safe_dump/safe_load roundtrip, malformed YAML rejection, unsafe Python-tag rejection and Uvicorn YAML configuration/httptools selection without a listener. Expectations use supplied synthetic data and library APIs rather than copied implementation algorithms. The first case is build-identity admission; the last is configuration/import only. The tests do not claim parser traffic, Hengshi behavior or product security. Original18 probe source hashes are retained;24 expected cases are not executed results."
+    },
+    {
+      "boundary": "Append-only definition and claim limits",
+      "result": "PASS",
+      "evidence": "backend.before.md; backend.proposed.md appended section",
+      "assessment": "The appendix accurately distinguishes dated observations, supported-but-unbuilt source path, metadata-only runtime inventory, future graph/helper reviews, required permission and synthetic tests. It neither selects a complete graph nor claims execution, adoption, licensing/provenance/security clearance, integrated acceptance or Phase1 completion."
+    }
+  ],
+  "required_future_gates_already_in_plan": [
+    "Explicit founder execution permission for this new envelope; no commands are authorized by this receipt.",
+    "Independent review of concrete acquisition/archive/reservation/process-control helpers and exact command vectors before use; include actual interpreter selection, pip configuration/network boundaries, child environment isolation, controlled temporary/output paths and owned-process stopping.",
+    "Review actual3.15 build/full marker-and-extra closures, stable/non-yanked exact file bindings, local PyYAML wheel choice, total distinct-distribution count and measured byte reservations before each corresponding installation.",
+    "Check exact sdist/tag build bytes, dynamic requirements, both full wheel hashes and metadata/native-member absence; preserve every failure without changing pins/flags or retrying.",
+    "Review actual24-case runtime results and discovered inventories separately before any later adoption proposal. Broader platform/application/production and full Phase1 approval remain held."
+  ],
+  "holds_and_limits": [
+    "No runtime/archive acquisition, resolver, source build, package install or proposed tests were executed in this review.",
+    "Feasibility is conditional on future bounded admission; the512MiB ceiling may correctly stop the trial, and no completion/time guarantee is inferred.",
+    "No production graph/runtime selection, Linux/ARM/free-threaded qualification, application/auth/PostgreSQL behavior, publisher provenance, complete embedded licensing/security clearance, provider/cost/deployment decision or founder acceptance.",
+    "This receipt records a completed independent review; status DOING does not claim repository task DONE or a commit."
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "status": "DOING",
+  "date": "2026-10-04",
+  "scope": "Selected notice-bearing files only; no source-build attestation or licence clearance",
+  "prior_inspection_sha256": "A86F05E4F9443562406662AD95EC04A88EBF5A5F4E7C1389BEAE8C2E9CE48F0A",
+  "official_tag": {
+    "requested_url": "https://api.github.com/repos/greensock/GSAP/git/ref/tags/3.15.0",
+    "final_url": "https://api.github.com/repos/greensock/GSAP/git/ref/tags/3.15.0",
+    "status": 200,
+    "observed_at": "2026-10-04T15:02:31.078212+00:00",
+    "path": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/official-tag.json",
+    "bytes": 333,
+    "sha256": "AB9F292DF193B8F16A03A4BB7ED1160C4F768F5B6F5F627E54A3B6826616DF57"
+  },
+  "tag_commit": "13e2b790546426a1a2e0e9b409f3f8dc6d6611f2",
+  "npm_git_head_absent": true,
+  "comparisons": [
+    {
+      "archive_path": "package/README.md",
+      "archive_sha256": "66A79667B0538B19634B5A000A9A3DEBE588C98D390424E73E5D4DE847270828",
+      "official_source": {
+        "requested_url": "https://raw.githubusercontent.com/greensock/GSAP/13e2b790546426a1a2e0e9b409f3f8dc6d6611f2/README.md",
+        "final_url": "https://raw.githubusercontent.com/greensock/GSAP/13e2b790546426a1a2e0e9b409f3f8dc6d6611f2/README.md",
+        "status": 200,
+        "observed_at": "2026-10-04T15:02:31.719988+00:00",
+        "path": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/source-README.md",
+        "bytes": 6199,
+        "sha256": "66A79667B0538B19634B5A000A9A3DEBE588C98D390424E73E5D4DE847270828"
+      },
+      "bytes_equal": true,
+      "archive_readme": {
+        "path": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/archive-README.md",
+        "bytes": 6199,
+        "sha256": "66A79667B0538B19634B5A000A9A3DEBE588C98D390424E73E5D4DE847270828"
+      }
+    },
+    {
+      "archive_path": "package/src/gsap-core.js",
+      "archive_sha256": "8063816E0E7C3E6C07970FB06FEAFB06146FD266DB5D8346419176B3D496E284",
+      "official_source": {
+        "requested_url": "https://raw.githubusercontent.com/greensock/GSAP/13e2b790546426a1a2e0e9b409f3f8dc6d6611f2/src/gsap-core.js",
+        "final_url": "https://raw.githubusercontent.com/greensock/GSAP/13e2b790546426a1a2e0e9b409f3f8dc6d6611f2/src/gsap-core.js",
+        "status": 200,
+        "observed_at": "2026-10-04T15:02:32.952541+00:00",
+        "path": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/source-src--gsap-core.js",
+        "bytes": 151046,
+        "sha256": "8063816E0E7C3E6C07970FB06FEAFB06146FD266DB5D8346419176B3D496E284"
+      },
+      "bytes_equal": true
+    },
+    {
+      "archive_path": "package/dist/gsap.js",
+      "archive_sha256": "01EFFE0E121C22BA0F885A3F091F3DC6D1F0D445C4FBA37DCB298E314ECA5CFB",
+      "official_source": {
+        "requested_url": "https://raw.githubusercontent.com/greensock/GSAP/13e2b790546426a1a2e0e9b409f3f8dc6d6611f2/dist/gsap.js",
+        "final_url": "https://raw.githubusercontent.com/greensock/GSAP/13e2b790546426a1a2e0e9b409f3f8dc6d6611f2/dist/gsap.js",
+        "status": 200,
+        "observed_at": "2026-10-04T15:02:33.814618+00:00",
+        "path": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/source-dist--gsap.js",
+        "bytes": 179557,
+        "sha256": "01EFFE0E121C22BA0F885A3F091F3DC6D1F0D445C4FBA37DCB298E314ECA5CFB"
+      },
+      "bytes_equal": true
+    },
+    {
+      "archive_path": "package/dist/gsap.min.js",
+      "archive_sha256": "92BB9A96476F983D212A2BC4F54C889039C1696DD4461D40A736860938570FBB",
+      "official_source": {
+        "requested_url": "https://raw.githubusercontent.com/greensock/GSAP/13e2b790546426a1a2e0e9b409f3f8dc6d6611f2/dist/gsap.min.js",
+        "final_url": "https://raw.githubusercontent.com/greensock/GSAP/13e2b790546426a1a2e0e9b409f3f8dc6d6611f2/dist/gsap.min.js",
+        "status": 200,
+        "observed_at": "2026-10-04T15:02:34.476026+00:00",
+        "path": "output/research/compatibility-resolution-2026-10-04/gsap-notice-3.15.0/source-dist--gsap.min.js",
+        "bytes": 72927,
+        "sha256": "92BB9A96476F983D212A2BC4F54C889039C1696DD4461D40A736860938570FBB"
+      },
+      "bytes_equal": true
+    }
+  ],
+  "archive_integrity_rechecked": true,
+  "downloaded_code_executed": false,
+  "production_selected": false
+}

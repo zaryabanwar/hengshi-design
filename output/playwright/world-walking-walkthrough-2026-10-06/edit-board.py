@@ -1,0 +1,57 @@
+"""Add a local review explanation, preserving all predecessor board bytes."""
+from pathlib import Path
+import json, hashlib
+
+ROOT = Path(__file__).resolve().parents[3]
+OUT = Path(__file__).resolve().parent
+BOARD = ROOT / 'docs/software-definition/definition-walkthrough.html'
+before = BOARD.read_bytes()
+if (OUT / 'definition-walkthrough.html.before').exists():
+    raise SystemExit('Already edited; inspect rather than rerun.')
+text = before.decode('utf-8')
+assert text.count('<a href="#optional-sound">Optional sound</a>') == 1
+assert text.count('<section id="campus">') == 1
+assert 'id="walking"' not in text
+addition = '''<section id="walking">
+<div class="eyebrow">Accepted movement scope · proposed control details</div>
+<h2>Walk through the place, rather than orbit its centre.</h2>
+<p>The production experience puts you at eye level on connected ground. You can look around, steer freely, or choose a destination. The current campus viewer is an inspection model: its orbit and zoom controls do not demonstrate this walking experience.</p>
+<div class="grid two" id="walking-controls">
+<article class="card"><span class="tag proposed">Desktop proposal</span><h3>Mouse: look, move and stop</h3><p>Drag empty scene space to look around. An explicit Move action starts travel in your chosen direction; turning your view steers that travel along the ground. Stop remains available. Looking up does not make you fly.</p><p>Click an eligible floor point for a safe directed route. Clicking a department board opens its information instead. Dragging does not accidentally click a destination.</p></article>
+<article class="card"><span class="tag proposed">Touch proposal</span><h3>Touch: the same freedom</h3><p>A scene drag changes the view. An optional thumb pad can move you while engaged, stopping on release or cancellation. Its exact gesture and cancellation design still needs the approved screen and accessibility inspection.</p><p>Move, Stop, directions, Look and destination actions also offer a one-finger option without dragging or using two fingers together. Keyboard-accessible actions remain available; WASD is not required.</p></article>
+</div>
+<figure id="walking-scene">
+<svg viewBox="0 0 1000 330" role="img" aria-labelledby="walking-diagram-title walking-diagram-desc" style="display:block;width:100%;height:auto;background:#e7ece1;border-radius:16px">
+<title id="walking-diagram-title">Eye-level walking within a landscape with depth</title>
+<desc id="walking-diagram-desc">Conceptual diagram, not campus geometry: a person stays upright on a connected path, with a reception and department in the middle distance and layered terrain and sky beyond. Ground behind and beside the visitor remains supported while the next area is prepared.</desc>
+<path d="M0 126 Q90 30 190 107 T390 86 T620 110 T810 60 T1000 114 V265 H0Z" fill="#bbcaba"/>
+<path d="M0 185 Q135 100 285 164 T530 146 T780 162 T1000 132 V285 H0Z" fill="#8da58b"/>
+<path d="M0 245 Q195 190 360 223 T680 208 T1000 242 V330 H0Z" fill="#d8dfca"/>
+<path d="M100 330 Q375 282 490 236 T850 225" fill="none" stroke="#f8f3df" stroke-width="44"/>
+<path d="M565 212 V154 Q631 120 695 150 V214" fill="#fffdf7" stroke="#52635b" stroke-width="3"/>
+<path d="M555 156 Q625 103 705 152" fill="none" stroke="#2c5343" stroke-width="12"/>
+<path d="M785 228 V177 Q835 149 888 172 V234" fill="#fffdf7" stroke="#52635b" stroke-width="3"/>
+<path d="M775 180 Q831 139 898 175" fill="none" stroke="#2c5343" stroke-width="10"/>
+<circle cx="310" cy="192" r="13" fill="#2c5343"/><path d="M310 207 V250 M310 221 L287 235 M310 221 L333 235 M310 250 L295 274 M310 250 L325 274" stroke="#2c5343" stroke-width="9" fill="none" stroke-linecap="round"/>
+<path d="M324 192 H450" stroke="#956b25" stroke-width="3" stroke-dasharray="7 6"/><path d="M445 185 L455 192 L445 199" fill="none" stroke="#956b25" stroke-width="3"/>
+</svg>
+<figcaption>This is an explanatory diagram, not a new building proposal or model revision. The visitor camera stays upright; nearby architecture, layered terrain and sky give depth in every allowed direction. The production landscape must avoid exposed island edges and a repeating mountain wall. The accepted campus composition is retained.</figcaption>
+</figure>
+<h3>Load nearby areas without losing the ground beneath you.</h3>
+<ol class="flow" id="walking-loading"><li><strong>Keep the current ground</strong>The place supporting you and its collision data stay ready and protected. A visible building alone does not make its floor safe to enter.</li><li><strong>Prepare what comes next</strong>Load eligible nearby areas within the selected stream's limits. A turn changes priorities; it does not require downloading the whole landscape.</li><li><strong>Handle a sudden reversal</strong>Retain the required adjacent ground and a recent-area buffer. If the return path is not ready, stop at the last safe position while it prepares.</li><li><strong>Hold safely and recover</strong>At an unready edge, show truthful waiting/retry and equivalent website access. Do not walk into missing ground, jump to another room or silently change graphics stream.</li></ol>
+<div class="callout"><strong>Reading a board stops travel.</strong> Opening information, help or booking clears movement. So do input cancellation, leaving the World focus area, a hidden tab, graphics loss or Exit. Closing a panel or returning to the tab never restarts old travel automatically. Quick Access keeps the same core information and actions without 3D.</div>
+<details id="walking-targets"><summary>Engineering targets and how we will verify them</summary><div class="grid two"><article class="card"><h3>A consistent human scale</h3><p>The starting proposal is an upright 1.70 m body, a 1.60 m eye height and a maximum 1.20 m/s walking speed. Authored public passages target at least 1.20 m clear width and 2.10 m clear height, with smooth routes and no automatic stair climbing.</p><p class="small">These are unmeasured virtual design targets, not physical building-code standards. The actual model's scale, corners, headroom, connected floors and collision still need verification.</p></article><article class="card"><h3>Measure the delivered experience</h3><p>Test arrival, department entry, reversals, stalls, missing areas, cancellation, Stop and recovery on named phones and computers. Measure complete World-frame submissions, transfers and owned memory/work, keeping failed and cold-load samples visible.</p><p class="small">A smooth-looking desktop screenshot or orbit viewer cannot establish walking safety, mobile comfort, accessibility, thermal behavior or graphics suitability. Reduced motion removes decorative camera drift/bob and animated destination travel; explicit destination changes still need ready ground.</p></article></div></details>
+<p class="small">Scope and decisions are accepted; this detailed control/camera and measurement profile is a reviewed proposal awaiting integrated acceptance. This board has no walking engine or functioning movement controls. Approved production screens, exact thumb-pad mapping, authored geometry/rights, complete compatible technologies, measured device results and final visual approval remain required.</p>
+<div class="source-links"><a href="../phase-1-3d/WORLD_EXPERIENCE.md#mouse-touch-traversal-and-camera-profile-proposal--2026-10-06">Controlling movement and camera proposal</a><a href="../phase-1-3d/WORLD_MEASUREMENT_PROFILE.md">Measurement and loading targets</a><a href="../phase-1-3d/reviews/world-traversal-profile-v1-2026-10-06.md">Bounded traversal definition review</a><a href="../phase-1-3d/reviews/world-measurement-profile-v1-2026-10-06.md">Measurement review and correction</a></div>
+</section>
+'''.replace('\n', '\r\n')
+new = text.replace('<a href="#optional-sound">Optional sound</a>', '<a href="#walking">Walking and loading</a><a href="#optional-sound">Optional sound</a>', 1)
+new = new.replace('<section id="campus">', addition + '<section id="campus">', 1)
+restored = new.replace(addition, '', 1).replace('<a href="#walking">Walking and loading</a>', '', 1).encode('utf-8')
+assert restored == before, 'Unrelated predecessor bytes changed'
+(OUT/'definition-walkthrough.html.before').write_bytes(before)
+(OUT/'walking-addition.html').write_bytes(addition.encode('utf-8'))
+BOARD.write_bytes(new.encode('utf-8'))
+(OUT/'definition-walkthrough.html.reviewed').write_bytes(BOARD.read_bytes())
+(OUT/'scope-observations.json').write_text(json.dumps({'scope':'One static definition section and one navigation link only; no production controls, script, CSS, model or application changes.','predecessor_restoration_equal':True,'before_sha256':hashlib.sha256(before).hexdigest(),'after_sha256':hashlib.sha256(BOARD.read_bytes()).hexdigest()},indent=2)+'\n',encoding='utf-8')
+print('Static explanation added; complete predecessor restoration equals original bytes.')

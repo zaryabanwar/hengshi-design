@@ -191,8 +191,8 @@ Given that feature description, do this:
       - **If items fail (excluding [NEEDS CLARIFICATION])**:
         1. List the failing items and specific issues
         2. Update the spec to address each issue
-        3. Re-run validation until all items pass (max 3 iterations)
-        4. If still failing after 3 iterations, document remaining issues in checklist notes and warn user
+        3. Under Hengshi D-097, re-run affected validation and continue safe in-scope corrections while evidence shows progress; there is no hard three-iteration cap.
+        4. If a failure repeats, reassess its cause and change the approach. Ask the founder only for a genuine material scope/risk/cost/authority decision or missing input. Record unresolved findings honestly; never waive them merely to finish.
 
       - **If [NEEDS CLARIFICATION] markers remain**:
         1. Extract all [NEEDS CLARIFICATION: ...] markers from the spec

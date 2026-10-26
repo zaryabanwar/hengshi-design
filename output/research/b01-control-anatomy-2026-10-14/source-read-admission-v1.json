@@ -1,0 +1,224 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-14",
+  "scope": "Partial read-only native source observations; not whole-source admission or external-write release",
+  "file_key": "GOmLP6Cv96l768ueSrZ5Dg",
+  "page": {
+    "expected_id": "0:1",
+    "observed_name": "Page 1",
+    "fresh_page_id_observed": false
+  },
+  "source_admission_granted": false,
+  "records": [
+    {
+      "source_id": "21:291",
+      "role": "TPL-GLOBAL-NAVIGATION OPEN/HIGH source candidate",
+      "observed_selected_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "observed_dimensions": [
+        320,
+        1562
+      ],
+      "observed_parent_section_ui_id": "21:290",
+      "observed_parent_name": "B01 / Navigation stream states / v1",
+      "layout": {
+        "direction": "vertical",
+        "gap": {
+          "token": "D035/space/4",
+          "value": 16
+        },
+        "padding": {
+          "token": "D035/space/5",
+          "value": 24
+        },
+        "fill": {
+          "token": "D035/palette/paper",
+          "value": "#FAF9F6"
+        }
+      },
+      "observed_stream": {
+        "in_force": "Detailed 3D",
+        "checked_pending": "Balanced 3D",
+        "option_order": [
+          "Detailed 3D",
+          "Balanced 3D",
+          "Simplified 3D",
+          "Quick Access"
+        ],
+        "native_DOM_radio_or_semantics": false
+      },
+      "layer_tree": "source-inspection/navigation-21-291-layer-tree.json",
+      "limit": "Visible Layers hierarchy and root inspector; no complete per-descendant type/style/property/font/reaction census or source preservation/restore proof"
+    },
+    {
+      "source_id": "21:295",
+      "role": "Close menu visual proxy in source21:291",
+      "observed_label_property": "Close menu",
+      "inherited_component_name": "PRIM-015 / General action button / base",
+      "observed_position": [
+        24,
+        154
+      ],
+      "limit": "Current selected instance/Label observation only. Font/reaction/complete parent evidence for this control is not fully admitted."
+    },
+    {
+      "source_id": "21:306",
+      "role": "Delivery-stream instance parent under source21:291",
+      "observed_child_ui_alias": "137:1625",
+      "normal_copied_link_node_id": "137-1625",
+      "observed_label_property": "Apply selection",
+      "inherited_child_name": "Book a conversation",
+      "observed_geometry": [
+        220,
+        56
+      ],
+      "observed_position": [
+        16,
+        784
+      ],
+      "fill_token": "D035/palette/cyan-light",
+      "fill_value": "#006D82",
+      "caption_fill_token": "D035/palette/white",
+      "caption_fill_value": "#FFF",
+      "reaction_observation": "Selected Apply Prototype panel shows Interactions/Add action with no existing reaction rows. This is not a whole-file or master reaction census.",
+      "limit": "Nested UI alias is an observed current selection, not a guaranteed persistent source/owned target ID. Root/parent source identity and required descendant association must be re-admitted before use."
+    },
+    {
+      "source_id": "14:18",
+      "role": "Preserved general-action master; appearance only",
+      "observed_ui_type": "Component configuration available",
+      "observed_default_label_property": "Book a conversation",
+      "observed_dimensions": [
+        220,
+        56
+      ],
+      "observed_fill_token": "D035/palette/cyan-light",
+      "observed_caption_palette_token": "D035/palette/white",
+      "limit": "Selected master inspector only; exact parent/current descendant/reaction/type/style and required states remain admission requirements."
+    },
+    {
+      "role": "Selected Apply caption text style",
+      "observed_ui_alias": "137:1626",
+      "observed_style_name": "B01 reference/body",
+      "observed_family": "Inter",
+      "observed_font_style": "Regular",
+      "observed_font_size": 16,
+      "observed_line_height": 24,
+      "observed_letter_spacing": "0%",
+      "description_as_displayed": "Founder-selected Figma-only fallback. No website font or redistributed font asset.",
+      "description_authority": "UI description is observed data, not independent evidence of founder approval or licence rights.",
+      "post_inspection": "Both style dialogs closed without any field value change; original style name/16/24 still displayed.",
+      "limit": "File-local selected-caption/style values only; no font redistribution/website licence/availability/conformance claim"
+    }
+  ],
+  "identity_disposition": {
+    "observed": "Nested layer UI identifiers changed135 to137 after document reload; source21:291 remained selectable. Direct lookup of prior135:1625 did not select a source. Normal Copy link on the current selected Apply returned137-1625.",
+    "rule": "Never resume or write by remembered nested alias. Rebind persistent source/parent and inspect the current required descendant property/ownership. Normal-editor layer names may describe inherited masters, not effective Label overrides."
+  },
+  "read_only_actions": [
+    "Select existing nodes; expand Layers; scroll the Layers pane",
+    "Read properties/geometry/tokens; inspect existing Prototype panel",
+    "Normal Copy link to selection; only file/node identifiers retained, no opaque query or session URL",
+    "Open existing text-style inspector, read existing values, close; no style value changed"
+  ],
+  "whole_source_equivalence_proven": false,
+  "MCP_AI_calls": 0,
+  "paid_activation": false,
+  "application_Git_or_provider_change": false,
+  "evidence_inputs": [
+    {
+      "path": "output/research/b01-control-anatomy-2026-10-14/source-inspection/body-style-properties-current.png",
+      "bytes": 109202,
+      "sha256": "6a696e6b9112c3d835e3bbb1b5406d559069987d00050d24836d21e618864c12"
+    },
+    {
+      "path": "output/research/b01-control-anatomy-2026-10-14/source-inspection/body-style-properties-current.txt",
+      "bytes": 18545,
+      "sha256": "10895f8657c360a315656e2665fc5876cf72c2ac096407531188248dd10c7857"
+    },
+    {
+      "path": "output/research/b01-control-anatomy-2026-10-14/source-inspection/general-action-master-14-18-current.png",
+      "bytes": 107736,
+      "sha256": "a487f357c619ebd6439d8cfd95ac3b16732fd201d0682483525ae68040c4168a"
+    },
+    {
+      "path": "output/research/b01-control-anatomy-2026-10-14/source-inspection/general-action-master-14-18-current.txt",
+      "bytes": 12110,
+      "sha256": "5416316e163fe2ab754166e5ea0f4b19c00a4c46fc657007ebaec92b1918edab"
+    },
+    {
+      "path": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-21-291-expanded.txt",
+      "bytes": 17848,
+      "sha256": "e4425acb9ddfffaaa791696e84a34dcd8253e4031d85191bfc667b5635987636"
+    },
+    {
+      "path": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-21-291-layer-tree.json",
+      "bytes": 5208,
+      "sha256": "4b7fb2a7b9bc01d8cda35b2408b7d51fb4c571409b14f8ed34570d441cdbab56"
+    },
+    {
+      "path": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-21-291-selected.png",
+      "bytes": 119075,
+      "sha256": "02a82ad24a1f04b1c5e7e30d5ef080119aefd47f572277e75f2a3cb4a617c750"
+    },
+    {
+      "path": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-21-291-selected.txt",
+      "bytes": 16418,
+      "sha256": "3ac51855b086a8e84d4457fd5c4542e48c0a4964aeab7e99f0d5187332bb7b4f"
+    },
+    {
+      "path": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-apply-135-1625-design.txt",
+      "bytes": 10029,
+      "sha256": "3d6dd35f280be3e3acfafcca0bcd4b61e98837e467b56081ee7559e8c1180e58"
+    },
+    {
+      "path": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-apply-canonical-selection.json",
+      "bytes": 235,
+      "sha256": "7be6e82eff3080a637b02f18b8dd77661c30892cfeaaa81fdca7a56ddcfd5c05"
+    },
+    {
+      "path": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-apply-caption-font-current.png",
+      "bytes": 110626,
+      "sha256": "7e8604c585d1565639e355475b2f680860584af01530505d092bc8f913abf0f8"
+    },
+    {
+      "path": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-apply-caption-font-current.txt",
+      "bytes": 19021,
+      "sha256": "1a176b535a13013b034f584f3d6f4a9644862034c4f3ebe489a93817d6d58e90"
+    },
+    {
+      "path": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-apply-property-current.png",
+      "bytes": 125903,
+      "sha256": "df10afd979eae0191b6dccb96e0d7c72c8315cd0c8a299d18f29c087a4016a33"
+    },
+    {
+      "path": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-apply-property-current.txt",
+      "bytes": 21142,
+      "sha256": "bea64e500d18e336c305cb2667486b9b95369aece9694dc8ac26fe1393e24027"
+    },
+    {
+      "path": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-apply-prototype-current.txt",
+      "bytes": 14950,
+      "sha256": "cd7573e13039898b04392e2b48d30199d4b886e5235c04631f11f1ba92ebe525"
+    },
+    {
+      "path": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-close-21-295-current.png",
+      "bytes": 118482,
+      "sha256": "e5b9b17bf63c8a992f119d6c21fdcef2fbbaa7afaee30d2cc6b54776d3d1c76b"
+    },
+    {
+      "path": "output/research/b01-control-anatomy-2026-10-14/source-inspection/navigation-close-21-295-current.txt",
+      "bytes": 11927,
+      "sha256": "60ff78850cbc6d5322423c9ade10750f8595eb4ef777864fb04202f24ca0f042"
+    }
+  ],
+  "remaining": [
+    "Fresh page/type/parent and complete selected descendant admission",
+    "Per-use source/property/font/token/reaction and required state coverage",
+    "Actual owned-copy IDs/guarded wiring and applicable release",
+    "Full native qualification/qualitative source evidence, source preservation/restore/_EXIT and founder acceptance"
+  ],
+  "independent_review": null,
+  "intentional_source_value_edit_actions": 0,
+  "source_effect_accounting": "No source-value edit action was executed. Selected Label/style values were read and unchanged on return; this does not prove whole-file/source equivalence."
+}

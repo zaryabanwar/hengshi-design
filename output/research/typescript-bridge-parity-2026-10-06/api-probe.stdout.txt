@@ -1,0 +1,105 @@
+{
+  "version": "6.0.3",
+  "resolvedEntry": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\typescript\\lib\\typescript.js",
+  "delegatedEntry": "C:\\Users\\Zaryab\\Documents\\Hengshi Design\\hengshi-design\\output\\research\\react-lint-approved-evaluation-2026-10-06\\candidate\\node_modules\\@typescript\\old\\lib\\typescript.js",
+  "scope": "TypeScript 6 API and in-process language service only; no native/editor LSP or build parity claim",
+  "results": [
+    {
+      "name": "valid-union",
+      "compiler": [],
+      "languageService": []
+    },
+    {
+      "name": "invalid-assignment",
+      "compiler": [
+        {
+          "code": 2322,
+          "category": 1,
+          "file": "invalid-assignment/input.ts",
+          "line": 1,
+          "column": 14,
+          "message": "Type 'string' is not assignable to type 'number'."
+        }
+      ],
+      "languageService": [
+        {
+          "code": 2322,
+          "category": 1,
+          "file": "invalid-assignment/input.ts",
+          "line": 1,
+          "column": 14,
+          "message": "Type 'string' is not assignable to type 'number'."
+        }
+      ]
+    },
+    {
+      "name": "invalid-readonly",
+      "compiler": [
+        {
+          "code": 2540,
+          "category": 1,
+          "file": "invalid-readonly/input.ts",
+          "line": 2,
+          "column": 7,
+          "message": "Cannot assign to 'label' because it is a read-only property."
+        }
+      ],
+      "languageService": [
+        {
+          "code": 2540,
+          "category": 1,
+          "file": "invalid-readonly/input.ts",
+          "line": 2,
+          "column": 7,
+          "message": "Cannot assign to 'label' because it is a read-only property."
+        }
+      ]
+    },
+    {
+      "name": "invalid-unchecked-index",
+      "compiler": [
+        {
+          "code": 2532,
+          "category": 1,
+          "file": "invalid-unchecked-index/input.ts",
+          "line": 2,
+          "column": 1,
+          "message": "Object is possibly 'undefined'."
+        }
+      ],
+      "languageService": [
+        {
+          "code": 2532,
+          "category": 1,
+          "file": "invalid-unchecked-index/input.ts",
+          "line": 2,
+          "column": 1,
+          "message": "Object is possibly 'undefined'."
+        }
+      ]
+    },
+    {
+      "name": "invalid-module",
+      "compiler": [
+        {
+          "code": 2307,
+          "category": 1,
+          "file": "invalid-module/input.ts",
+          "line": 1,
+          "column": 23,
+          "message": "Cannot find module './does-not-exist' or its corresponding type declarations."
+        }
+      ],
+      "languageService": [
+        {
+          "code": 2307,
+          "category": 1,
+          "file": "invalid-module/input.ts",
+          "line": 1,
+          "column": 23,
+          "message": "Cannot find module './does-not-exist' or its corresponding type declarations."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "reviewed_at_utc": "2026-10-24T06:26:59.729848+00:00",
+  "reviewer": "Independent reviewer /root/review_archive_candidate_v1",
+  "independent": true,
+  "review_complete": true,
+  "verdict": "PASS",
+  "scope": "Exact18-input two-document review/navigation translation and supplied desktop image only; no renewed review or adoption of all underlying definitions, complete visual/accessibility/pilot/runtime or Phase1 acceptance.",
+  "packet": {
+    "path": "output/research/definition-review-navigation-2026-10-24/review-inputs-v1.json",
+    "bytes": 4145,
+    "sha256": "13a50827189e0abe756035936bfd8bc7d5fc67f1a671199897d5821c25980206",
+    "input_count": 18,
+    "verified_before_review": 18,
+    "verified_again_before_receipt": 18,
+    "inputs": [
+      {
+        "path": "AGENTS.md",
+        "bytes": 8983,
+        "sha256": "f31b4bb42f954995cc12358284a992fde46ade98980238043c149f692b6474a5",
+        "verified": true
+      },
+      {
+        "path": "DECISIONS.md",
+        "bytes": 112749,
+        "sha256": "3ed1c0d352ccd0e71b7a72aff960c9c559abc8ef8a6104842e52ff338c27c538",
+        "verified": true
+      },
+      {
+        "path": "docs/software-definition/definition-walkthrough.html",
+        "bytes": 111550,
+        "sha256": "4e489839048b89be7e2d8b7d5e4b037e89e1c7611b474adcaaffc853331f3107",
+        "verified": true
+      },
+      {
+        "path": "docs/software-definition/04-reconciliation-map.md",
+        "bytes": 38434,
+        "sha256": "97ae52f1c9016f8bef8a9448cc4b1b56cf156a4ae3bdec7f1ea1adc63ec3980f",
+        "verified": true
+      },
+      {
+        "path": "output/research/definition-review-navigation-2026-10-24/definition-walkthrough.html.before",
+        "bytes": 110511,
+        "sha256": "94067c5996520fe9e50f9e0cb520b9414f8c2fd2a60cd17857a4ca46607f9595",
+        "verified": true
+      },
+      {
+        "path": "output/research/definition-review-navigation-2026-10-24/04-reconciliation-map.md.before",
+        "bytes": 37958,
+        "sha256": "c029b01f5c95db604ea7289f28b76e3124327288d7f438c00f8d3868c18c892f",
+        "verified": true
+      },
+      {
+        "path": "output/research/definition-review-navigation-2026-10-24/walkthrough-desktop.jpg",
+        "bytes": 124178,
+        "sha256": "4f3bcd7096d9b8ac87686bc3c48e4bb9d812af9be906ba6131219c2d532bfccd",
+        "verified": true
+      },
+      {
+        "path": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+        "bytes": 107942,
+        "sha256": "6b33a9e93b51a263c9938e90ac5254ed3b45359ab07fb5c0ad7d61a29b40a641",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-execution-preparation-2026-10-17/independent-review-archive-v1.json",
+        "bytes": 9296,
+        "sha256": "0d7fd20aa98b2cdc4799fd3a8d5a300da2e53fa38ab896eb3c9fb82ec69eac29",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-control-preparation-2026-10-17/independent-review-controls-v1.json",
+        "bytes": 15552,
+        "sha256": "c58cd4a3f684a8ef28e57e7fbb3320dbb8905309b2f25a593b0691c5410536df",
+        "verified": true
+      },
+      {
+        "path": "output/research/python315-environment-preparation-2026-10-17/independent-review-environment-v1.json",
+        "bytes": 12930,
+        "sha256": "68b02b5cbbde3747609e797db3bcf0a4db9bd8dac9157711e021768f3f679740",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-expanded-native-qualification-2026-10-14/execution/recovery-native-20261015/recovery-resume-20261017/independent-review-playback-v1.json",
+        "bytes": 21674,
+        "sha256": "fb92b0ec40b5fb639e8a60bb876ad4354a14cfa8c7d5656d6dd0e3b6af37f857",
+        "verified": true
+      },
+      {
+        "path": "output/research/b01-playback-2026-10-24/independent-review-playback-v1.json",
+        "bytes": 14950,
+        "sha256": "0da1de208f7e4d6d85cf4c73a23d5efccc9918e6623280f68355f40c5d200369",
+        "verified": true
+      },
+      {
+        "path": "output/research/staff-session-controls-2026-10-17/catalogue-binding/independent-review-v1.json",
+        "bytes": 5737,
+        "sha256": "dcdbb45f0874ab3bad3b58a70a96a9217b237ec2fba9068b0301f249774315ad",
+        "verified": true
+      },
+      {
+        "path": "output/research/staff-session-data-binding-2026-10-17/independent-review-v1.json",
+        "bytes": 8908,
+        "sha256": "8135a53ac95cee24efa05391472be0d0c32abc1e69b72d48710b9e0960dc226c",
+        "verified": true
+      },
+      {
+        "path": "output/research/privacy-purpose-bindings-2026-10-17/independent-review-v1.json",
+        "bytes": 11451,
+        "sha256": "6864662b38218d25466e7ccbc2763cace72d21c2e5791a71df8a420e470e1451",
+        "verified": true
+      },
+      {
+        "path": "output/research/world-capability-workloads-2026-10-17/independent-review-v1.json",
+        "bytes": 9824,
+        "sha256": "c96ca935b11d39a4097c1923cdbdebcecedd360c0977ac5390b27185c0585c3f",
+        "verified": true
+      },
+      {
+        "path": "output/research/staff-token-crypto-profile-2026-10-17/independent-review-v1.json",
+        "bytes": 10127,
+        "sha256": "ffe0c03a6a070bfcab6b68aaae584238282b504f383cccc4011876bf15bf7474",
+        "verified": true
+      }
+    ]
+  },
+  "findings": [],
+  "actionable_finding_count": 0,
+  "assessments": [
+    {
+      "evidence": "definition-walkthrough.html:22,128,218-225;04-reconciliation-map.md Latest definition navigation;exact catalogue10/data13/privacy15/World13 receipts",
+      "assessment": "Changes correct update date and formerly pending review labels, link four exact scoped PASS receipts and preserve no policy/basis/period/notice or runtime adoption. Privacy is described as engineering-consistency review; no legal clearance or device benchmark inferred. Canonical controlling definitions and integrated acceptance remain separate."
+    },
+    {
+      "evidence": "definition-walkthrough.html:233;04-reconciliation-map.md current B01 replay;B01_EXECUTION_BRIEF.md Recovery round-trip playback and instance inspection;current18-input and old25-input playback receipts",
+      "assessment": "Current recorded Preserve-return Detailed-pending/Quick-Access-active and Reset-default pixels are accurately summarized. Explicit exact-scroll/full-native-matching/broader-coverage/pilot holds prevent sampled names/tuples or repeated captures becoming complete mechanism proof. Old October17 packets/aliases remain historical scope; current stronger images do not rewrite earlier verdicts."
+    },
+    {
+      "evidence": "DECISIONS.md:1471-1496;three helper receipts;definition-walkthrough.html latest-definition footer;04-reconciliation-map.md latest navigation",
+      "assessment": "D096 is a real accepted bounded normal pip-owned TEMP lifecycle exception, not trial permission or agent cleanup. Helpers have separate subset reviews with unexecuted stage commands; controller/graphs/fresh disk/explicit execution approval remain. Review actually completed without capacity error; current saved browser image/replay supports restoration observations, not a permanent future access guarantee. No package installation, graph selection, paid action or broader acceptance is implied."
+    },
+    {
+      "evidence": "Read-only current DriveInfo AvailableFreeSpace observation;old failing disk wording removed from the two navigation documents",
+      "assessment": "Current independent free-space snapshot2802765824 exceeds1610612736 initial512MiB+1GiB threshold. This verifies threshold direction only, not a physical reservation, target ownership, all later writes or execution admission. Remeasure-before-use warning retained; no cleanup occurred in this review."
+    },
+    {
+      "evidence": "definition-walkthrough.html:128;D076 in frozen DECISIONS;unchanged consultation checkpoint",
+      "assessment": "Visitor access remains30minutes inactivity or authorized End without absolute duration; staff-session clocks remain separate. Removing stale unresolved visitor-lifetime wording does not change warning/progress/extension/retention mechanisms or constitute runtime enforcement."
+    },
+    {
+      "evidence": "walkthrough-desktop.jpg;definition-walkthrough.html definition-update region",
+      "assessment": "Viewed actual supplied desktop screenshot. Three definition cards and source links are readable with consistent separation; no visible overlap in captured region. Screenshot ends partway through lower footer as a viewport crop, not full-page certification. No responsive/keyboard/contrast/accessibility or live current-browser verification performed."
+    }
+  ],
+  "source_link_validation": {
+    "scope": "Only newly introduced/changed link targets in the two-document diff; source parsing and existing Markdown heading-slug matching, no navigation execution",
+    "count": 12,
+    "results": [
+      {
+        "source": "docs/software-definition/definition-walkthrough.html",
+        "href": "../../DECISIONS.md#d-096--bounded-pip-owned-temporary-file-lifecycle",
+        "target_exists": true,
+        "anchor_valid_by_source": true
+      },
+      {
+        "source": "docs/software-definition/definition-walkthrough.html",
+        "href": "../../output/research/privacy-purpose-bindings-2026-10-17/independent-review-v1.json",
+        "target_exists": true,
+        "anchor_valid_by_source": null
+      },
+      {
+        "source": "docs/software-definition/definition-walkthrough.html",
+        "href": "../../output/research/staff-session-controls-2026-10-17/catalogue-binding/independent-review-v1.json",
+        "target_exists": true,
+        "anchor_valid_by_source": null
+      },
+      {
+        "source": "docs/software-definition/definition-walkthrough.html",
+        "href": "../../output/research/staff-session-data-binding-2026-10-17/independent-review-v1.json",
+        "target_exists": true,
+        "anchor_valid_by_source": null
+      },
+      {
+        "source": "docs/software-definition/definition-walkthrough.html",
+        "href": "../../output/research/world-capability-workloads-2026-10-17/independent-review-v1.json",
+        "target_exists": true,
+        "anchor_valid_by_source": null
+      },
+      {
+        "source": "docs/software-definition/definition-walkthrough.html",
+        "href": "../phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md#recovery-round-trip-playback-and-instance-inspection--2026-10-24",
+        "target_exists": true,
+        "anchor_valid_by_source": true
+      },
+      {
+        "source": "docs/software-definition/04-reconciliation-map.md",
+        "href": "../../DECISIONS.md#d-096--bounded-pip-owned-temporary-file-lifecycle",
+        "target_exists": true,
+        "anchor_valid_by_source": true
+      },
+      {
+        "source": "docs/software-definition/04-reconciliation-map.md",
+        "href": "../../output/research/privacy-purpose-bindings-2026-10-17/independent-review-v1.json",
+        "target_exists": true,
+        "anchor_valid_by_source": null
+      },
+      {
+        "source": "docs/software-definition/04-reconciliation-map.md",
+        "href": "../../output/research/staff-session-controls-2026-10-17/catalogue-binding/independent-review-v1.json",
+        "target_exists": true,
+        "anchor_valid_by_source": null
+      },
+      {
+        "source": "docs/software-definition/04-reconciliation-map.md",
+        "href": "../../output/research/staff-session-data-binding-2026-10-17/independent-review-v1.json",
+        "target_exists": true,
+        "anchor_valid_by_source": null
+      },
+      {
+        "source": "docs/software-definition/04-reconciliation-map.md",
+        "href": "../../output/research/world-capability-workloads-2026-10-17/independent-review-v1.json",
+        "target_exists": true,
+        "anchor_valid_by_source": null
+      },
+      {
+        "source": "docs/software-definition/04-reconciliation-map.md",
+        "href": "../phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md#recovery-round-trip-playback-and-instance-inspection--2026-10-24",
+        "target_exists": true,
+        "anchor_valid_by_source": true
+      }
+    ]
+  },
+  "review_method": [
+    "Verified18 exact bytes/hashes before and after, diffed current HTML/map against preserved before files, cross-checked linked scoped receipts, D096 and current B01 brief.",
+    "Inspected supplied desktop image with view_image; performed read-only source target/anchor checks and disk threshold observation.",
+    "No prose/runtime tests, external browser/Figma/network/app actions, producer/canonical/Git edits or broader definition re-review. Only this receipt written."
+  ],
+  "limits": [
+    "PASS covers only this navigation translation at frozen identities; underlying legal, key/custody, full compatibility graph, physical controls, calibrated devices, production references, accessibility and integrated founder gates remain.",
+    "Current free space and access observations can change and confer no continuing authorization or quota.",
+    "No capacity error. DOING is not task DONE or commit."
+  ]
+}

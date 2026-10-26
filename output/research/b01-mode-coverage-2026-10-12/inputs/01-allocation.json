@@ -1,0 +1,3694 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-12",
+  "purpose": "Preparation input for the remaining B01 references; no external execution or acceptance",
+  "summary": {
+    "recorded_views_in_this_inventory": 168,
+    "strictly_named_stream_host_references": 112,
+    "shared_unscoped_grammar_specimens": 48,
+    "refusal_names_missing_REF": 8,
+    "generic_initial_drafts_not_credited": 6
+  },
+  "sources": [
+    {
+      "path": "docs/phase-1-ui-reference-design/responsive-state-mode-matrix.csv",
+      "bytes": 33821,
+      "sha256": "deb91325e1c8a543878111883f5b1203ae9e5dc35c00e0d837e927786eaf47e2"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/reference-template-inventory.csv",
+      "bytes": 33498,
+      "sha256": "62b11bf2ea7bd1f168ecaa01a0da5914107ba072670328f52c13c0fbdbb5bacb"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/design-batch-plan.csv",
+      "bytes": 28149,
+      "sha256": "0b01be6b01157785cf57dcb5c36a8efbd9254031708f9afad19db52e4f8b32ce"
+    },
+    {
+      "path": "output/research/b01-profile-allocation-2026-10-12/current-stream-obligations.json",
+      "bytes": 8380,
+      "sha256": "a8788a62834dd163e0405988dd31d957ce918736054acf4f2463cb77baef82ff"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-design/component-primitives.csv",
+      "bytes": 79574,
+      "sha256": "575d1478893c090e9b367e75c2d14cf645e80eeb67bce09c2383c08294fa034a"
+    },
+    {
+      "path": "scripts/validation/ui-stream-mapping.ps1",
+      "bytes": 38967,
+      "sha256": "2c4509b4df40dd1f14c4bb53a35acff6799fde20e2be69d52f08db9e47babd38"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "path": ".specify/memory/constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 93480,
+      "sha256": "2576a93a6e4028e8931454588465cb2dd3675275be778259dbd61ee4f87e26d1"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-production/B01_EXECUTION_BRIEF.md",
+      "bytes": 39482,
+      "sha256": "6274b98225daa5bb92709f8e0b4614b556fac41a99f9805933cb3abeac84b2b6"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-production/UI_REFERENCE_PRODUCTION_CONTRACT.md",
+      "bytes": 45771,
+      "sha256": "1779fd3cd71f8210815fd7ddbbcd06faa6e5387e2d91584531be6d3806f8cf61"
+    },
+    {
+      "path": "docs/phase-1-ui-reference-production/evidence-capture-plan.csv",
+      "bytes": 8428,
+      "sha256": "4dceafb6d78a859ff5aee23ac78e65180975e72e83ed14a40dc20a90ad4fa0fd"
+    },
+    {
+      "path": "scripts/validation/ui-exit-coverage.ps1",
+      "bytes": 8907,
+      "sha256": "7d61e92c084393cfc7878960b7b6a9d8c1aaa4c9c32dcc5e8000e8a5f7f7d6eb"
+    },
+    {
+      "path": "output/research/b01-navigation-composition-2026-10-06/state-ledger.json",
+      "bytes": 23436,
+      "sha256": "f078e20b6fca5deec68a8876d83922d03064036aa797fb719cd6cae6d594da2b"
+    },
+    {
+      "path": "output/research/b01-directory-call19-2026-10-08/decoded-design-result.json",
+      "bytes": 72290,
+      "sha256": "71f198783593821c55291a8e9b6a1e896d35f7addb695245c08763dd225e0eda"
+    },
+    {
+      "path": "output/research/b01-recovery-stream-bindings-2026-10-08/attempt24-2026-10-11/receipt.json",
+      "bytes": 1969,
+      "sha256": "3dd22beefbd90c251827c5479621a4e7193721c5d39cc6694828cf251c28e0e6"
+    },
+    {
+      "path": "output/research/b01-recovery-stream-bindings-2026-10-08/input.json",
+      "bytes": 13802,
+      "sha256": "0e75c5db5f8145f881ce6552d1ca44a21f253a45b4cdb2812772caa6dad09f14"
+    },
+    {
+      "path": "output/research/b01-ceiling-refusal-bindings-2026-10-09/attempt25-2026-10-11/receipt.json",
+      "bytes": 2769,
+      "sha256": "a34a22cd6357e7458cbfb26c5f39e50bae5a595e762261109f0ac26b0b6a73d1"
+    },
+    {
+      "path": "output/research/b01-ceiling-refusal-bindings-2026-10-09/execution-preparation/input.json",
+      "bytes": 16506,
+      "sha256": "fcc9aba8c54df8c69f8f822338a28f4fef6c07fe15b88152951dedaded5763df"
+    },
+    {
+      "path": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/attempt27-2026-10-11/receipt.json",
+      "bytes": 35057,
+      "sha256": "ad63597b5fe80570718af59c1558042d3f60d9a92b75cd6fbab0d0a0270b17d0"
+    },
+    {
+      "path": "output/research/b01-recovery-grammar-batched-capture-2026-10-11/input.json",
+      "bytes": 13866,
+      "sha256": "3237e4cab79e6667e1fb4c57324e603d506a5dde9a3eebc43cf6429536ff8223"
+    },
+    {
+      "path": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/receipt.json",
+      "bytes": 39058,
+      "sha256": "e0b02d5357fe28b080ea9fe41c7cca3ea193624f0654f3a762edb59467b0263b"
+    },
+    {
+      "path": "output/research/b01-responsive-coverage-2026-10-11/attempt28-2026-10-12/input.json",
+      "bytes": 36211,
+      "sha256": "e922317901f3e8ed9fc88958d22c46409444b5c3e884091f16ff886acd73d1d5"
+    }
+  ],
+  "recorded_views": [
+    {
+      "source_family": "navigation",
+      "node_id": "21:291",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1562,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:328",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1562,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:365",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1562,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:402",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1562,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:439",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1730,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-PREFERENCE-READ-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:478",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1730,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-PREFERENCE-READ-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:517",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1730,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-PREFERENCE-READ-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:556",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1730,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-PREFERENCE-READ-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:595",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1730,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:634",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1730,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:673",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1730,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:712",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1730,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:751",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1634,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-STREAM-CHANGED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:790",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1634,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-STREAM-CHANGED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:829",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1634,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-STREAM-CHANGED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:868",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1634,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-STREAM-CHANGED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:907",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 1440,
+      "height": 1034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-DESKTOP",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:938",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 1440,
+      "height": 1034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-DESKTOP",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:969",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 1440,
+      "height": 1034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-DESKTOP",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "navigation",
+      "node_id": "21:1000",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 1440,
+      "height": 1034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-DESKTOP",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:382",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:430",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:478",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:526",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:574",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_EMPTY_QUERY_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-EMPTY-QUERY",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:622",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_EMPTY_QUERY_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-EMPTY-QUERY",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:670",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_EMPTY_QUERY_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-EMPTY-QUERY",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:718",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_EMPTY_QUERY_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-EMPTY-QUERY",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:766",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_RESULTS_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2494,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-RESULTS",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:829",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_RESULTS_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2494,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-RESULTS",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:892",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_RESULTS_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2494,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-RESULTS",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:955",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_RESULTS_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2494,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-RESULTS",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1018",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_NO_RESULTS_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2106,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-NO-RESULTS",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1068",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_NO_RESULTS_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2106,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-NO-RESULTS",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1118",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_NO_RESULTS_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2106,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-NO-RESULTS",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1168",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_NO_RESULTS_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2106,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-NO-RESULTS",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1218",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_LOADING_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2130,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-LOADING",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1268",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_LOADING_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2130,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-LOADING",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1318",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_LOADING_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2130,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-LOADING",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1368",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_LOADING_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2130,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-LOADING",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1418",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_DERIVED_INDEX_UNAVAILABLE_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2202,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-DERIVED-INDEX-UNAVAILABLE",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1470",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_DERIVED_INDEX_UNAVAILABLE_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2202,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-DERIVED-INDEX-UNAVAILABLE",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1522",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_DERIVED_INDEX_UNAVAILABLE_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2202,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-DERIVED-INDEX-UNAVAILABLE",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1574",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_DERIVED_INDEX_UNAVAILABLE_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2202,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-DERIVED-INDEX-UNAVAILABLE",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1626",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OFFLINE_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1954,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OFFLINE",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1671",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OFFLINE_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1954,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OFFLINE",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1716",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OFFLINE_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1954,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OFFLINE",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1761",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OFFLINE_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1954,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OFFLINE",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1806",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2202,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1858",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2202,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1910",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2202,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:1962",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2202,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2014",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STALE_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2466,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-STALE",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2074",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STALE_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2466,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-STALE",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2134",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STALE_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2466,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-STALE",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2194",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STALE_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2466,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-STALE",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2254",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2226,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-PREFERENCE-READ-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2304",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2226,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-PREFERENCE-READ-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2354",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2226,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-PREFERENCE-READ-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2404",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_READ_FAILED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2226,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-PREFERENCE-READ-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2454",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2226,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2504",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2226,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2554",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2226,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2604",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2226,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2654",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2130,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-STREAM-CHANGED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2704",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2130,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-STREAM-CHANGED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2754",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2130,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-STREAM-CHANGED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2804",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2130,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-STREAM-CHANGED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2854",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 1440,
+      "height": 1658,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-DESKTOP",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2902",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 1440,
+      "height": 1658,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-DESKTOP",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2950",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 1440,
+      "height": 1658,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-DESKTOP",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "directory",
+      "node_id": "27:2998",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_DESKTOP_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 1440,
+      "height": 1658,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-DESKTOP",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "recovery_hosts",
+      "node_id": "29:1515",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1564,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "recovery_hosts",
+      "node_id": "29:1545",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1748,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "recovery_hosts",
+      "node_id": "29:1577",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1612,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-STREAM-CHANGED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "recovery_hosts",
+      "node_id": "29:1609",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1564,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "recovery_hosts",
+      "node_id": "29:1639",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1748,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "recovery_hosts",
+      "node_id": "29:1671",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1612,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-STREAM-CHANGED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "recovery_hosts",
+      "node_id": "29:1703",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1564,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "recovery_hosts",
+      "node_id": "29:1733",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1748,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "recovery_hosts",
+      "node_id": "29:1765",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1612,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-STREAM-CHANGED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "recovery_hosts",
+      "node_id": "29:1797",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1564,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "recovery_hosts",
+      "node_id": "29:1827",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_PREFERENCE_WRITE_FAILED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1748,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "recovery_hosts",
+      "node_id": "29:1859",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_STREAM_CHANGED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1612,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-STREAM-CHANGED",
+        "viewport_id": "VP-320",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "capability_refusal",
+      "node_id": "32:1792",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1772,
+      "proposed_type": "FRAME",
+      "declared_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-STREAM-CEILING-REFUSED",
+        "stream_id": "S-HIGH",
+        "current_stream_label": "Detailed 3D",
+        "pending_stream_id": "S-MEDIUM",
+        "pending_stream_label": "Balanced 3D",
+        "group_name": "Delivery stream \u2014 currently Detailed 3D",
+        "notice": "This option is unavailable on this device: this browser cannot currently obtain a WebGL context. Your current stream remains active.",
+        "host_context": "Services page with navigation open",
+        "preserved_context": [
+          "Services route and location",
+          "open navigation",
+          "eligible page content",
+          "invoker/focus lineage"
+        ],
+        "chronology": "A valid prior Detailed 3D choice remains applied after leaving the World for the Services host; the distinct pending 3D selection precedes current established unavailability; explicit Apply is refused.",
+        "world_entered": false,
+        "live_renderer_claim": false,
+        "automatic_semantic_switch": false,
+        "planned_frame_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+        "viewport": "VP-320",
+        "mode": "MODE-KEYBOARD",
+        "source_control_note": "Use the existing current/pending distinction only after checking exact master labels and inherited notice; no generic OPEN instance without refusal notice earns credit."
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "capability_refusal",
+      "node_id": "32:1847",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1772,
+      "proposed_type": "FRAME",
+      "declared_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-STREAM-CEILING-REFUSED",
+        "stream_id": "S-MEDIUM",
+        "current_stream_label": "Balanced 3D",
+        "pending_stream_id": "S-LOW",
+        "pending_stream_label": "Simplified 3D",
+        "group_name": "Delivery stream \u2014 currently Balanced 3D",
+        "notice": "This option is unavailable on this device: this browser cannot currently obtain a WebGL context. Your current stream remains active.",
+        "host_context": "Services page with navigation open",
+        "preserved_context": [
+          "Services route and location",
+          "open navigation",
+          "eligible page content",
+          "invoker/focus lineage"
+        ],
+        "chronology": "A valid prior Balanced 3D choice remains applied after leaving the World for the Services host; the distinct pending 3D selection precedes current established unavailability; explicit Apply is refused.",
+        "world_entered": false,
+        "live_renderer_claim": false,
+        "automatic_semantic_switch": false,
+        "planned_frame_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+        "viewport": "VP-320",
+        "mode": "MODE-KEYBOARD",
+        "source_control_note": "Use the existing current/pending distinction only after checking exact master labels and inherited notice; no generic OPEN instance without refusal notice earns credit."
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "capability_refusal",
+      "node_id": "32:1902",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1772,
+      "proposed_type": "FRAME",
+      "declared_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-STREAM-CEILING-REFUSED",
+        "stream_id": "S-LOW",
+        "current_stream_label": "Simplified 3D",
+        "pending_stream_id": "S-HIGH",
+        "pending_stream_label": "Detailed 3D",
+        "group_name": "Delivery stream \u2014 currently Simplified 3D",
+        "notice": "This option is unavailable on this device: this browser cannot currently obtain a WebGL context. Your current stream remains active.",
+        "host_context": "Services page with navigation open",
+        "preserved_context": [
+          "Services route and location",
+          "open navigation",
+          "eligible page content",
+          "invoker/focus lineage"
+        ],
+        "chronology": "A valid prior Simplified 3D choice remains applied after leaving the World for the Services host; the distinct pending 3D selection precedes current established unavailability; explicit Apply is refused.",
+        "world_entered": false,
+        "live_renderer_claim": false,
+        "automatic_semantic_switch": false,
+        "planned_frame_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+        "viewport": "VP-320",
+        "mode": "MODE-KEYBOARD",
+        "source_control_note": "Existing OPEN/LOW master has pending Quick Access; do not reuse that checked state for this refusal. Planned pending HIGH needs a guarded correct editable reference."
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "capability_refusal",
+      "node_id": "32:1957",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1772,
+      "proposed_type": "FRAME",
+      "declared_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-STREAM-CEILING-REFUSED",
+        "stream_id": "S-SEMANTIC",
+        "current_stream_label": "Quick Access",
+        "pending_stream_id": "S-HIGH",
+        "pending_stream_label": "Detailed 3D",
+        "group_name": "Delivery stream \u2014 currently Quick Access",
+        "notice": "This option is unavailable on this device: this browser cannot currently obtain a WebGL context. Your current stream remains active.",
+        "host_context": "Services page with navigation open",
+        "preserved_context": [
+          "Services route and location",
+          "open navigation",
+          "eligible page content",
+          "invoker/focus lineage"
+        ],
+        "chronology": "Quick Access was applied by visitor choice; pending 3D selection precedes the current established unavailability; explicit Apply is refused.",
+        "world_entered": false,
+        "live_renderer_claim": false,
+        "automatic_semantic_switch": false,
+        "planned_frame_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+        "viewport": "VP-320",
+        "mode": "MODE-KEYBOARD",
+        "source_control_note": "Use the existing current/pending distinction only after checking exact master labels and inherited notice; no generic OPEN instance without refusal notice earns credit."
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "capability_refusal",
+      "node_id": "32:2012",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2244,
+      "proposed_type": "FRAME",
+      "declared_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-STREAM-CEILING-REFUSED",
+        "stream_id": "S-HIGH",
+        "current_stream_label": "Detailed 3D",
+        "pending_stream_id": "S-MEDIUM",
+        "pending_stream_label": "Balanced 3D",
+        "group_name": "Delivery stream \u2014 currently Detailed 3D",
+        "notice": "This option is unavailable on this device: this browser cannot currently obtain a WebGL context. Your current stream remains active.",
+        "host_context": "Directory/search on the Services page",
+        "preserved_context": [
+          "Services route and location",
+          "directory open state",
+          "search query and eligible results",
+          "invoker/focus lineage"
+        ],
+        "chronology": "A valid prior Detailed 3D choice remains applied after leaving the World for the Services host; the distinct pending 3D selection precedes current established unavailability; explicit Apply is refused.",
+        "world_entered": false,
+        "live_renderer_claim": false,
+        "automatic_semantic_switch": false,
+        "planned_frame_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+        "viewport": "VP-320",
+        "mode": "MODE-KEYBOARD",
+        "source_control_note": "Use the existing current/pending distinction only after checking exact master labels and inherited notice; no generic OPEN instance without refusal notice earns credit."
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "capability_refusal",
+      "node_id": "32:2077",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2244,
+      "proposed_type": "FRAME",
+      "declared_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-STREAM-CEILING-REFUSED",
+        "stream_id": "S-MEDIUM",
+        "current_stream_label": "Balanced 3D",
+        "pending_stream_id": "S-LOW",
+        "pending_stream_label": "Simplified 3D",
+        "group_name": "Delivery stream \u2014 currently Balanced 3D",
+        "notice": "This option is unavailable on this device: this browser cannot currently obtain a WebGL context. Your current stream remains active.",
+        "host_context": "Directory/search on the Services page",
+        "preserved_context": [
+          "Services route and location",
+          "directory open state",
+          "search query and eligible results",
+          "invoker/focus lineage"
+        ],
+        "chronology": "A valid prior Balanced 3D choice remains applied after leaving the World for the Services host; the distinct pending 3D selection precedes current established unavailability; explicit Apply is refused.",
+        "world_entered": false,
+        "live_renderer_claim": false,
+        "automatic_semantic_switch": false,
+        "planned_frame_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+        "viewport": "VP-320",
+        "mode": "MODE-KEYBOARD",
+        "source_control_note": "Use the existing current/pending distinction only after checking exact master labels and inherited notice; no generic OPEN instance without refusal notice earns credit."
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "capability_refusal",
+      "node_id": "32:2142",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2244,
+      "proposed_type": "FRAME",
+      "declared_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-STREAM-CEILING-REFUSED",
+        "stream_id": "S-LOW",
+        "current_stream_label": "Simplified 3D",
+        "pending_stream_id": "S-HIGH",
+        "pending_stream_label": "Detailed 3D",
+        "group_name": "Delivery stream \u2014 currently Simplified 3D",
+        "notice": "This option is unavailable on this device: this browser cannot currently obtain a WebGL context. Your current stream remains active.",
+        "host_context": "Directory/search on the Services page",
+        "preserved_context": [
+          "Services route and location",
+          "directory open state",
+          "search query and eligible results",
+          "invoker/focus lineage"
+        ],
+        "chronology": "A valid prior Simplified 3D choice remains applied after leaving the World for the Services host; the distinct pending 3D selection precedes current established unavailability; explicit Apply is refused.",
+        "world_entered": false,
+        "live_renderer_claim": false,
+        "automatic_semantic_switch": false,
+        "planned_frame_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+        "viewport": "VP-320",
+        "mode": "MODE-KEYBOARD",
+        "source_control_note": "Existing OPEN/LOW master has pending Quick Access; do not reuse that checked state for this refusal. Planned pending HIGH needs a guarded correct editable reference."
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "capability_refusal",
+      "node_id": "32:2207",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2244,
+      "proposed_type": "FRAME",
+      "declared_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-STREAM-CEILING-REFUSED",
+        "stream_id": "S-SEMANTIC",
+        "current_stream_label": "Quick Access",
+        "pending_stream_id": "S-HIGH",
+        "pending_stream_label": "Detailed 3D",
+        "group_name": "Delivery stream \u2014 currently Quick Access",
+        "notice": "This option is unavailable on this device: this browser cannot currently obtain a WebGL context. Your current stream remains active.",
+        "host_context": "Directory/search on the Services page",
+        "preserved_context": [
+          "Services route and location",
+          "directory open state",
+          "search query and eligible results",
+          "invoker/focus lineage"
+        ],
+        "chronology": "Quick Access was applied by visitor choice; pending 3D selection precedes the current established unavailability; explicit Apply is refused.",
+        "world_entered": false,
+        "live_renderer_claim": false,
+        "automatic_semantic_switch": false,
+        "planned_frame_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+        "viewport": "VP-320",
+        "mode": "MODE-KEYBOARD",
+        "source_control_note": "Use the existing current/pending distinction only after checking exact master labels and inherited notice; no generic OPEN instance without refusal notice earns credit."
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:1895",
+      "recorded_name": "B01 shared recovery / STATE-LOADING / light / v1",
+      "width": 320,
+      "height": 322,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-LOADING",
+        "mode_id": "MODE-STANDARD",
+        "surface": "light"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:1906",
+      "recorded_name": "B01 shared recovery / STATE-DEGRADED / light / v1",
+      "width": 320,
+      "height": 362,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-DEGRADED",
+        "mode_id": "MODE-STANDARD",
+        "surface": "light"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:1917",
+      "recorded_name": "B01 shared recovery / STATE-EMPTY / light / v1",
+      "width": 320,
+      "height": 322,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-EMPTY",
+        "mode_id": "MODE-STANDARD",
+        "surface": "light"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:1928",
+      "recorded_name": "B01 shared recovery / STATE-PENDING / light / v1",
+      "width": 320,
+      "height": 346,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-PENDING",
+        "mode_id": "MODE-STANDARD",
+        "surface": "light"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:1939",
+      "recorded_name": "B01 shared recovery / STATE-UNAVAILABLE / light / v1",
+      "width": 320,
+      "height": 322,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-UNAVAILABLE",
+        "mode_id": "MODE-STANDARD",
+        "surface": "light"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:1950",
+      "recorded_name": "B01 shared recovery / STATE-OFFLINE / light / v1",
+      "width": 320,
+      "height": 370,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-OFFLINE",
+        "mode_id": "MODE-STANDARD",
+        "surface": "light"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:1961",
+      "recorded_name": "B01 shared recovery / STATE-ERROR / light / v1",
+      "width": 320,
+      "height": 370,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-ERROR",
+        "mode_id": "MODE-STANDARD",
+        "surface": "light"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:1972",
+      "recorded_name": "B01 shared recovery / STATE-PERMISSION-DENIED / light / v1",
+      "width": 320,
+      "height": 386,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-PERMISSION-DENIED",
+        "mode_id": "MODE-STANDARD",
+        "surface": "light"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:1983",
+      "recorded_name": "B01 shared recovery / STATE-SESSION-EXPIRED / light / v1",
+      "width": 320,
+      "height": 370,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-SESSION-EXPIRED",
+        "mode_id": "MODE-STANDARD",
+        "surface": "light"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:1995",
+      "recorded_name": "B01 shared recovery / STATE-STALE / light / v1",
+      "width": 320,
+      "height": 346,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-STALE",
+        "mode_id": "MODE-STANDARD",
+        "surface": "light"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2006",
+      "recorded_name": "B01 shared recovery / STATE-CONFLICT / light / v1",
+      "width": 320,
+      "height": 346,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-CONFLICT",
+        "mode_id": "MODE-STANDARD",
+        "surface": "light"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2017",
+      "recorded_name": "B01 shared recovery / STATE-ASSET-FAILURE / light / v1",
+      "width": 320,
+      "height": 410,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-ASSET-FAILURE",
+        "mode_id": "MODE-STANDARD",
+        "surface": "light"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2028",
+      "recorded_name": "B01 shared recovery / STATE-CHECKSUM-MISMATCH / light / v1",
+      "width": 320,
+      "height": 370,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-CHECKSUM-MISMATCH",
+        "mode_id": "MODE-STANDARD",
+        "surface": "light"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2039",
+      "recorded_name": "B01 shared recovery / STATE-FOCUS / light / v1",
+      "width": 320,
+      "height": 410,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-FOCUS",
+        "mode_id": "MODE-STANDARD",
+        "surface": "light"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2051",
+      "recorded_name": "B01 shared recovery / STATE-STREAM-CHANGED / light / v1",
+      "width": 320,
+      "height": 1330,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-STREAM-CHANGED",
+        "mode_id": "MODE-STANDARD",
+        "surface": "light"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2080",
+      "recorded_name": "B01 shared recovery / STATE-PREFERENCE-WRITE-FAILED / light / v1",
+      "width": 320,
+      "height": 1466,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "mode_id": "MODE-STANDARD",
+        "surface": "light"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2109",
+      "recorded_name": "B01 shared recovery / STATE-LOADING / dark / v1",
+      "width": 320,
+      "height": 322,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-LOADING",
+        "mode_id": "MODE-STANDARD",
+        "surface": "dark"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2120",
+      "recorded_name": "B01 shared recovery / STATE-DEGRADED / dark / v1",
+      "width": 320,
+      "height": 362,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-DEGRADED",
+        "mode_id": "MODE-STANDARD",
+        "surface": "dark"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2131",
+      "recorded_name": "B01 shared recovery / STATE-EMPTY / dark / v1",
+      "width": 320,
+      "height": 322,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-EMPTY",
+        "mode_id": "MODE-STANDARD",
+        "surface": "dark"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2142",
+      "recorded_name": "B01 shared recovery / STATE-PENDING / dark / v1",
+      "width": 320,
+      "height": 346,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-PENDING",
+        "mode_id": "MODE-STANDARD",
+        "surface": "dark"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2153",
+      "recorded_name": "B01 shared recovery / STATE-UNAVAILABLE / dark / v1",
+      "width": 320,
+      "height": 322,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-UNAVAILABLE",
+        "mode_id": "MODE-STANDARD",
+        "surface": "dark"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2164",
+      "recorded_name": "B01 shared recovery / STATE-OFFLINE / dark / v1",
+      "width": 320,
+      "height": 370,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-OFFLINE",
+        "mode_id": "MODE-STANDARD",
+        "surface": "dark"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2175",
+      "recorded_name": "B01 shared recovery / STATE-ERROR / dark / v1",
+      "width": 320,
+      "height": 370,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-ERROR",
+        "mode_id": "MODE-STANDARD",
+        "surface": "dark"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2186",
+      "recorded_name": "B01 shared recovery / STATE-PERMISSION-DENIED / dark / v1",
+      "width": 320,
+      "height": 386,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-PERMISSION-DENIED",
+        "mode_id": "MODE-STANDARD",
+        "surface": "dark"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2197",
+      "recorded_name": "B01 shared recovery / STATE-SESSION-EXPIRED / dark / v1",
+      "width": 320,
+      "height": 370,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-SESSION-EXPIRED",
+        "mode_id": "MODE-STANDARD",
+        "surface": "dark"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2209",
+      "recorded_name": "B01 shared recovery / STATE-STALE / dark / v1",
+      "width": 320,
+      "height": 346,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-STALE",
+        "mode_id": "MODE-STANDARD",
+        "surface": "dark"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2220",
+      "recorded_name": "B01 shared recovery / STATE-CONFLICT / dark / v1",
+      "width": 320,
+      "height": 346,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-CONFLICT",
+        "mode_id": "MODE-STANDARD",
+        "surface": "dark"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2231",
+      "recorded_name": "B01 shared recovery / STATE-ASSET-FAILURE / dark / v1",
+      "width": 320,
+      "height": 410,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-ASSET-FAILURE",
+        "mode_id": "MODE-STANDARD",
+        "surface": "dark"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2242",
+      "recorded_name": "B01 shared recovery / STATE-CHECKSUM-MISMATCH / dark / v1",
+      "width": 320,
+      "height": 370,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-CHECKSUM-MISMATCH",
+        "mode_id": "MODE-STANDARD",
+        "surface": "dark"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2253",
+      "recorded_name": "B01 shared recovery / STATE-FOCUS / dark / v1",
+      "width": 320,
+      "height": 410,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-FOCUS",
+        "mode_id": "MODE-STANDARD",
+        "surface": "dark"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2265",
+      "recorded_name": "B01 shared recovery / STATE-STREAM-CHANGED / dark / v1",
+      "width": 320,
+      "height": 1330,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-STREAM-CHANGED",
+        "mode_id": "MODE-STANDARD",
+        "surface": "dark"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2294",
+      "recorded_name": "B01 shared recovery / STATE-PREFERENCE-WRITE-FAILED / dark / v1",
+      "width": 320,
+      "height": 1466,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "mode_id": "MODE-STANDARD",
+        "surface": "dark"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2323",
+      "recorded_name": "B01 shared recovery / STATE-LOADING / forced-colours-specimen / v1",
+      "width": 320,
+      "height": 322,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-LOADING",
+        "mode_id": "MODE-FORCED-COLORS",
+        "surface": "forced-colours-specimen"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2335",
+      "recorded_name": "B01 shared recovery / STATE-DEGRADED / forced-colours-specimen / v1",
+      "width": 320,
+      "height": 362,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-DEGRADED",
+        "mode_id": "MODE-FORCED-COLORS",
+        "surface": "forced-colours-specimen"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2347",
+      "recorded_name": "B01 shared recovery / STATE-EMPTY / forced-colours-specimen / v1",
+      "width": 320,
+      "height": 322,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-EMPTY",
+        "mode_id": "MODE-FORCED-COLORS",
+        "surface": "forced-colours-specimen"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2359",
+      "recorded_name": "B01 shared recovery / STATE-PENDING / forced-colours-specimen / v1",
+      "width": 320,
+      "height": 346,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-PENDING",
+        "mode_id": "MODE-FORCED-COLORS",
+        "surface": "forced-colours-specimen"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2371",
+      "recorded_name": "B01 shared recovery / STATE-UNAVAILABLE / forced-colours-specimen / v1",
+      "width": 320,
+      "height": 322,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-UNAVAILABLE",
+        "mode_id": "MODE-FORCED-COLORS",
+        "surface": "forced-colours-specimen"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2383",
+      "recorded_name": "B01 shared recovery / STATE-OFFLINE / forced-colours-specimen / v1",
+      "width": 320,
+      "height": 370,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-OFFLINE",
+        "mode_id": "MODE-FORCED-COLORS",
+        "surface": "forced-colours-specimen"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2395",
+      "recorded_name": "B01 shared recovery / STATE-ERROR / forced-colours-specimen / v1",
+      "width": 320,
+      "height": 370,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-ERROR",
+        "mode_id": "MODE-FORCED-COLORS",
+        "surface": "forced-colours-specimen"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2407",
+      "recorded_name": "B01 shared recovery / STATE-PERMISSION-DENIED / forced-colours-specimen / v1",
+      "width": 320,
+      "height": 386,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-PERMISSION-DENIED",
+        "mode_id": "MODE-FORCED-COLORS",
+        "surface": "forced-colours-specimen"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2419",
+      "recorded_name": "B01 shared recovery / STATE-SESSION-EXPIRED / forced-colours-specimen / v1",
+      "width": 320,
+      "height": 370,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-SESSION-EXPIRED",
+        "mode_id": "MODE-FORCED-COLORS",
+        "surface": "forced-colours-specimen"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2432",
+      "recorded_name": "B01 shared recovery / STATE-STALE / forced-colours-specimen / v1",
+      "width": 320,
+      "height": 346,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-STALE",
+        "mode_id": "MODE-FORCED-COLORS",
+        "surface": "forced-colours-specimen"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2444",
+      "recorded_name": "B01 shared recovery / STATE-CONFLICT / forced-colours-specimen / v1",
+      "width": 320,
+      "height": 346,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-CONFLICT",
+        "mode_id": "MODE-FORCED-COLORS",
+        "surface": "forced-colours-specimen"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2456",
+      "recorded_name": "B01 shared recovery / STATE-ASSET-FAILURE / forced-colours-specimen / v1",
+      "width": 320,
+      "height": 410,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-ASSET-FAILURE",
+        "mode_id": "MODE-FORCED-COLORS",
+        "surface": "forced-colours-specimen"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2468",
+      "recorded_name": "B01 shared recovery / STATE-CHECKSUM-MISMATCH / forced-colours-specimen / v1",
+      "width": 320,
+      "height": 370,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-CHECKSUM-MISMATCH",
+        "mode_id": "MODE-FORCED-COLORS",
+        "surface": "forced-colours-specimen"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2480",
+      "recorded_name": "B01 shared recovery / STATE-FOCUS / forced-colours-specimen / v1",
+      "width": 320,
+      "height": 410,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-FOCUS",
+        "mode_id": "MODE-FORCED-COLORS",
+        "surface": "forced-colours-specimen"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2493",
+      "recorded_name": "B01 shared recovery / STATE-STREAM-CHANGED / forced-colours-specimen / v1",
+      "width": 320,
+      "height": 1330,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-STREAM-CHANGED",
+        "mode_id": "MODE-FORCED-COLORS",
+        "surface": "forced-colours-specimen"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "shared_grammar",
+      "node_id": "34:2523",
+      "recorded_name": "B01 shared recovery / STATE-PREFERENCE-WRITE-FAILED / forced-colours-specimen / v1",
+      "width": 320,
+      "height": 1466,
+      "proposed_type": "FOCUSED_FRAME",
+      "declared_axes": {
+        "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+        "mode_id": "MODE-FORCED-COLORS",
+        "surface": "forced-colours-specimen"
+      },
+      "encoded_axes": null
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2038",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_ZOOM_400_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1562,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-ZOOM-400",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2076",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_ZOOM_400_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1562,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-ZOOM-400",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2114",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_ZOOM_400_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1562,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-ZOOM-400",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2152",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_ZOOM_400_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1562,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-ZOOM-400",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2190",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_ZOOM_400_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 2034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-ZOOM-400",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2238",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_ZOOM_400_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 2034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-ZOOM-400",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2286",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_ZOOM_400_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 2034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-ZOOM-400",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2334",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_ZOOM_400_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 2034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-ZOOM-400",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2382",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_ZOOM_400_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 320,
+      "height": 1564,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-ZOOM-400",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2414",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_ZOOM_400_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 320,
+      "height": 1564,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-ZOOM-400",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2446",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_ZOOM_400_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 320,
+      "height": 1564,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-ZOOM-400",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2478",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_ZOOM_400_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 320,
+      "height": 1564,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-ZOOM-400",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2510",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_LANDSCAPE_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 844,
+      "height": 1034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-LANDSCAPE",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2542",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_LANDSCAPE_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 844,
+      "height": 1034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-LANDSCAPE",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2574",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_LANDSCAPE_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 844,
+      "height": 1034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-LANDSCAPE",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2606",
+      "recorded_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_OPEN_VP_LANDSCAPE_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 844,
+      "height": 1034,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-GLOBAL-NAVIGATION",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-LANDSCAPE",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2638",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_LANDSCAPE_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 844,
+      "height": 1658,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-LANDSCAPE",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2686",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_LANDSCAPE_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 844,
+      "height": 1658,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-LANDSCAPE",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2734",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_LANDSCAPE_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 844,
+      "height": 1658,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-LANDSCAPE",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2782",
+      "recorded_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_OPEN_VP_LANDSCAPE_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 844,
+      "height": 1658,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-DIRECTORY-SEARCH",
+        "state_id": "STATE-OPEN",
+        "viewport_id": "VP-LANDSCAPE",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2830",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_LANDSCAPE_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 844,
+      "height": 1376,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-LANDSCAPE",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2862",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_LANDSCAPE_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 844,
+      "height": 1376,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-LANDSCAPE",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2894",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_LANDSCAPE_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 844,
+      "height": 1376,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-LANDSCAPE",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2926",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_LANDSCAPE_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 844,
+      "height": 1376,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-LANDSCAPE",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2958",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_DESKTOP_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "width": 1440,
+      "height": 1334,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-DESKTOP",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-HIGH"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:2990",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_DESKTOP_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "width": 1440,
+      "height": 1334,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-DESKTOP",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-MEDIUM"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:3022",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_DESKTOP_MODE_KEYBOARD_STREAM_LOW_V01",
+      "width": 1440,
+      "height": 1334,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-DESKTOP",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-LOW"
+      }
+    },
+    {
+      "source_family": "responsive",
+      "node_id": "35:3054",
+      "recorded_name": "HSD_UIR_B01_TPL_SYSTEM_RECOVERY_REF_STATE_ERROR_VP_DESKTOP_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "width": 1440,
+      "height": 1334,
+      "proposed_type": "FRAME",
+      "declared_axes": null,
+      "encoded_axes": {
+        "template_id": "TPL-SYSTEM-RECOVERY",
+        "state_id": "STATE-ERROR",
+        "viewport_id": "VP-DESKTOP",
+        "mode_id": "MODE-KEYBOARD",
+        "stream_id": "S-SEMANTIC"
+      }
+    }
+  ],
+  "profile_name_gaps": [
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "profile_id": "SP-NAVIGATION",
+      "encoded_values": [
+        "STATE-OPEN",
+        "STATE-PREFERENCE-READ-FAILED",
+        "STATE-PREFERENCE-WRITE-FAILED",
+        "STATE-STREAM-CHANGED"
+      ],
+      "not_encoded": [
+        "STATE-CLOSED",
+        "STATE-LOADING",
+        "STATE-EMPTY-QUERY",
+        "STATE-NO-RESULTS",
+        "STATE-RESULTS",
+        "STATE-STALE",
+        "STATE-DERIVED-INDEX-UNAVAILABLE",
+        "STATE-OFFLINE",
+        "STATE-ERROR",
+        "STATE-FOCUS",
+        "STATE-STREAM-CEILING-REFUSED"
+      ],
+      "critical_distinct_frame_values": [
+        "STATE-OPEN",
+        "STATE-NO-RESULTS",
+        "STATE-DERIVED-INDEX-UNAVAILABLE",
+        "STATE-OFFLINE",
+        "STATE-STREAM-CHANGED",
+        "STATE-PREFERENCE-WRITE-FAILED",
+        "STATE-PREFERENCE-READ-FAILED",
+        "STATE-STREAM-CEILING-REFUSED"
+      ],
+      "minimum_evidence": "Closed/open navigation frames; empty/no-result/result/index-unavailable directory frames; keyboard focus-return prototype",
+      "annotation_requirements": "Labeled disclosure; invoker focus return; clean canonical results; static browse fallback; no raw query persistence",
+      "exception_rule": "No URL-backed search/filter/sort state may be invented"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "profile_id": "VP-PUBLIC",
+      "encoded_values": [
+        "VP-320",
+        "VP-DESKTOP",
+        "VP-LANDSCAPE",
+        "VP-ZOOM-400"
+      ],
+      "not_encoded": [
+        "VP-NARROW",
+        "VP-TABLET",
+        "VP-WIDE"
+      ],
+      "critical_distinct_frame_values": [
+        "VP-320",
+        "VP-DESKTOP",
+        "VP-ZOOM-400"
+      ],
+      "minimum_evidence": "Complete FRAME at VP-320 and VP-DESKTOP; responsive FRAME or ANNOTATION at every other value; content-stress evidence at VP-320 VP-LANDSCAPE and VP-ZOOM-400",
+      "annotation_requirements": "Grid/reading order; wrapping; navigation disclosure; sticky obstruction; data/list alternative; print width when applicable",
+      "exception_rule": "None may be omitted; a visually identical intermediate viewport may use an annotation linked to both bounding frames"
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "profile_id": "MP-PUBLIC",
+      "encoded_values": [
+        "MODE-KEYBOARD"
+      ],
+      "not_encoded": [
+        "MODE-STANDARD",
+        "MODE-REDUCED-MOTION",
+        "MODE-LOW-POWER",
+        "MODE-SEMANTIC-SHELL",
+        "MODE-FORCED-COLORS",
+        "MODE-GRAYSCALE",
+        "MODE-UNAVAILABLE-FONT",
+        "MODE-UNAVAILABLE-IMAGE-ASSET",
+        "MODE-PRINT",
+        "MODE-SCREEN-READER"
+      ],
+      "critical_distinct_frame_values": [
+        "MODE-STANDARD",
+        "MODE-FORCED-COLORS",
+        "MODE-PRINT",
+        "MODE-UNAVAILABLE-IMAGE-ASSET"
+      ],
+      "minimum_evidence": "Standard frames plus focused mode evidence; forced-colors/grayscale/font/asset/print captures; keyboard path and screen-reader semantic annotation",
+      "annotation_requirements": "Evidence-label redundancy; contrast; reading order; focus; missing asset alternative; no motion/color/material/image-only meaning",
+      "exception_rule": "Print may be marked not applicable only for a purely transient overlay whose underlying document provides the same printable truth"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "profile_id": "SP-NAVIGATION",
+      "encoded_values": [
+        "STATE-DERIVED-INDEX-UNAVAILABLE",
+        "STATE-EMPTY-QUERY",
+        "STATE-ERROR",
+        "STATE-LOADING",
+        "STATE-NO-RESULTS",
+        "STATE-OFFLINE",
+        "STATE-OPEN",
+        "STATE-PREFERENCE-READ-FAILED",
+        "STATE-PREFERENCE-WRITE-FAILED",
+        "STATE-RESULTS",
+        "STATE-STALE",
+        "STATE-STREAM-CHANGED"
+      ],
+      "not_encoded": [
+        "STATE-CLOSED",
+        "STATE-FOCUS",
+        "STATE-STREAM-CEILING-REFUSED"
+      ],
+      "critical_distinct_frame_values": [
+        "STATE-OPEN",
+        "STATE-NO-RESULTS",
+        "STATE-DERIVED-INDEX-UNAVAILABLE",
+        "STATE-OFFLINE",
+        "STATE-STREAM-CHANGED",
+        "STATE-PREFERENCE-WRITE-FAILED",
+        "STATE-PREFERENCE-READ-FAILED",
+        "STATE-STREAM-CEILING-REFUSED"
+      ],
+      "minimum_evidence": "Closed/open navigation frames; empty/no-result/result/index-unavailable directory frames; keyboard focus-return prototype",
+      "annotation_requirements": "Labeled disclosure; invoker focus return; clean canonical results; static browse fallback; no raw query persistence",
+      "exception_rule": "No URL-backed search/filter/sort state may be invented"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "profile_id": "VP-INTERACTIVE",
+      "encoded_values": [
+        "VP-320",
+        "VP-DESKTOP",
+        "VP-LANDSCAPE",
+        "VP-ZOOM-400"
+      ],
+      "not_encoded": [
+        "VP-NARROW",
+        "VP-TABLET",
+        "VP-WIDE"
+      ],
+      "critical_distinct_frame_values": [
+        "VP-320",
+        "VP-LANDSCAPE",
+        "VP-DESKTOP",
+        "VP-ZOOM-400"
+      ],
+      "minimum_evidence": "Complete FRAME at VP-320 VP-LANDSCAPE and VP-DESKTOP; interaction annotations and error-summary/focus evidence at all values",
+      "annotation_requirements": "Field order; action stacking; keyboard visibility; error summary; local-time strings; safe-area and virtual-keyboard implications",
+      "exception_rule": "None may be omitted; VP-WIDE may reuse desktop structure only with measured line-length and control-placement annotation"
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "profile_id": "MP-INTERACTIVE",
+      "encoded_values": [
+        "MODE-KEYBOARD"
+      ],
+      "not_encoded": [
+        "MODE-STANDARD",
+        "MODE-REDUCED-MOTION",
+        "MODE-LOW-POWER",
+        "MODE-SEMANTIC-SHELL",
+        "MODE-FORCED-COLORS",
+        "MODE-GRAYSCALE",
+        "MODE-UNAVAILABLE-FONT",
+        "MODE-UNAVAILABLE-IMAGE-ASSET",
+        "MODE-PRINT",
+        "MODE-SCREEN-READER"
+      ],
+      "critical_distinct_frame_values": [
+        "MODE-STANDARD",
+        "MODE-FORCED-COLORS",
+        "MODE-KEYBOARD",
+        "MODE-SCREEN-READER"
+      ],
+      "minimum_evidence": "Standard and critical state frames; forced-color and font/asset captures; keyboard prototype; screen-reader specification; printable summary where applicable",
+      "annotation_requirements": "No focus theft/trap; accessible names/status; disabled versus pending; input purpose; redundant entry; safe reauthentication",
+      "exception_rule": "Print interaction controls may be omitted only when a truthful printable status/summary and non-print action route are specified"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "profile_id": "SP-SYSTEM-RECOVERY",
+      "encoded_values": [
+        "STATE-ERROR",
+        "STATE-PREFERENCE-WRITE-FAILED",
+        "STATE-STREAM-CHANGED"
+      ],
+      "not_encoded": [
+        "STATE-LOADING",
+        "STATE-DEGRADED",
+        "STATE-EMPTY",
+        "STATE-PENDING",
+        "STATE-UNAVAILABLE",
+        "STATE-OFFLINE",
+        "STATE-PERMISSION-DENIED",
+        "STATE-SESSION-EXPIRED",
+        "STATE-STALE",
+        "STATE-CONFLICT",
+        "STATE-ASSET-FAILURE",
+        "STATE-CHECKSUM-MISMATCH",
+        "STATE-FOCUS"
+      ],
+      "critical_distinct_frame_values": [
+        "STATE-PENDING",
+        "STATE-UNAVAILABLE",
+        "STATE-OFFLINE",
+        "STATE-ERROR",
+        "STATE-PERMISSION-DENIED",
+        "STATE-CHECKSUM-MISMATCH",
+        "STATE-STREAM-CHANGED",
+        "STATE-PREFERENCE-WRITE-FAILED"
+      ],
+      "minimum_evidence": "Reusable focused frames for each class on light/dark/forced-color surfaces; route/flow host retains context",
+      "annotation_requirements": "What happened; what was preserved; authoritative state; smallest safe action; status semantics; no provider/secret/PII leakage",
+      "exception_rule": "This profile supplements rather than replaces a host template state profile"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "profile_id": "VP-INTERACTIVE",
+      "encoded_values": [
+        "VP-320",
+        "VP-DESKTOP",
+        "VP-LANDSCAPE",
+        "VP-ZOOM-400"
+      ],
+      "not_encoded": [
+        "VP-NARROW",
+        "VP-TABLET",
+        "VP-WIDE"
+      ],
+      "critical_distinct_frame_values": [
+        "VP-320",
+        "VP-LANDSCAPE",
+        "VP-DESKTOP",
+        "VP-ZOOM-400"
+      ],
+      "minimum_evidence": "Complete FRAME at VP-320 VP-LANDSCAPE and VP-DESKTOP; interaction annotations and error-summary/focus evidence at all values",
+      "annotation_requirements": "Field order; action stacking; keyboard visibility; error summary; local-time strings; safe-area and virtual-keyboard implications",
+      "exception_rule": "None may be omitted; VP-WIDE may reuse desktop structure only with measured line-length and control-placement annotation"
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "profile_id": "MP-INTERACTIVE",
+      "encoded_values": [
+        "MODE-KEYBOARD"
+      ],
+      "not_encoded": [
+        "MODE-STANDARD",
+        "MODE-REDUCED-MOTION",
+        "MODE-LOW-POWER",
+        "MODE-SEMANTIC-SHELL",
+        "MODE-FORCED-COLORS",
+        "MODE-GRAYSCALE",
+        "MODE-UNAVAILABLE-FONT",
+        "MODE-UNAVAILABLE-IMAGE-ASSET",
+        "MODE-PRINT",
+        "MODE-SCREEN-READER"
+      ],
+      "critical_distinct_frame_values": [
+        "MODE-STANDARD",
+        "MODE-FORCED-COLORS",
+        "MODE-KEYBOARD",
+        "MODE-SCREEN-READER"
+      ],
+      "minimum_evidence": "Standard and critical state frames; forced-color and font/asset captures; keyboard prototype; screen-reader specification; printable summary where applicable",
+      "annotation_requirements": "No focus theft/trap; accessible names/status; disabled versus pending; input purpose; redundant entry; safe reauthentication",
+      "exception_rule": "Print interaction controls may be omitted only when a truthful printable status/summary and non-print action route are specified"
+    }
+  ],
+  "required_stream_state_subset": [
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-HIGH",
+      "matching_recorded_ids": [
+        "21:291",
+        "21:907",
+        "35:2038",
+        "35:2510"
+      ]
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-LOW",
+      "matching_recorded_ids": [
+        "21:328",
+        "21:938",
+        "35:2114",
+        "35:2574"
+      ]
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-MEDIUM",
+      "matching_recorded_ids": [
+        "21:365",
+        "21:969",
+        "35:2076",
+        "35:2542"
+      ]
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-SEMANTIC",
+      "matching_recorded_ids": [
+        "21:402",
+        "21:1000",
+        "35:2152",
+        "35:2606"
+      ]
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-HIGH",
+      "matching_recorded_ids": [
+        "21:439"
+      ]
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-LOW",
+      "matching_recorded_ids": [
+        "21:478"
+      ]
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-MEDIUM",
+      "matching_recorded_ids": [
+        "21:517"
+      ]
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "matching_recorded_ids": [
+        "21:556"
+      ]
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-HIGH",
+      "matching_recorded_ids": [
+        "21:595"
+      ]
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-LOW",
+      "matching_recorded_ids": [
+        "21:634"
+      ]
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-MEDIUM",
+      "matching_recorded_ids": [
+        "21:673"
+      ]
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "matching_recorded_ids": [
+        "21:712"
+      ]
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-HIGH",
+      "matching_recorded_ids": []
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-LOW",
+      "matching_recorded_ids": []
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-MEDIUM",
+      "matching_recorded_ids": []
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-SEMANTIC",
+      "matching_recorded_ids": []
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-HIGH",
+      "matching_recorded_ids": [
+        "21:751"
+      ]
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-LOW",
+      "matching_recorded_ids": [
+        "21:790"
+      ]
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-MEDIUM",
+      "matching_recorded_ids": [
+        "21:829"
+      ]
+    },
+    {
+      "template_id": "TPL-GLOBAL-NAVIGATION",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC",
+      "matching_recorded_ids": [
+        "21:868"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-HIGH",
+      "matching_recorded_ids": [
+        "27:1018"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-LOW",
+      "matching_recorded_ids": [
+        "27:1118"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-MEDIUM",
+      "matching_recorded_ids": [
+        "27:1068"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-NO-RESULTS",
+      "stream_id": "S-SEMANTIC",
+      "matching_recorded_ids": [
+        "27:1168"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-HIGH",
+      "matching_recorded_ids": [
+        "27:382",
+        "27:2854",
+        "35:2190",
+        "35:2638"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-LOW",
+      "matching_recorded_ids": [
+        "27:478",
+        "27:2950",
+        "35:2286",
+        "35:2734"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-MEDIUM",
+      "matching_recorded_ids": [
+        "27:430",
+        "27:2902",
+        "35:2238",
+        "35:2686"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-OPEN",
+      "stream_id": "S-SEMANTIC",
+      "matching_recorded_ids": [
+        "27:526",
+        "27:2998",
+        "35:2334",
+        "35:2782"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-HIGH",
+      "matching_recorded_ids": [
+        "27:2254"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-LOW",
+      "matching_recorded_ids": [
+        "27:2354"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-MEDIUM",
+      "matching_recorded_ids": [
+        "27:2304"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-READ-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "matching_recorded_ids": [
+        "27:2404"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-HIGH",
+      "matching_recorded_ids": [
+        "27:2454"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-LOW",
+      "matching_recorded_ids": [
+        "27:2554"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-MEDIUM",
+      "matching_recorded_ids": [
+        "27:2504"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "matching_recorded_ids": [
+        "27:2604"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-HIGH",
+      "matching_recorded_ids": []
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-LOW",
+      "matching_recorded_ids": []
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-MEDIUM",
+      "matching_recorded_ids": []
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CEILING-REFUSED",
+      "stream_id": "S-SEMANTIC",
+      "matching_recorded_ids": []
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-HIGH",
+      "matching_recorded_ids": [
+        "27:2654"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-LOW",
+      "matching_recorded_ids": [
+        "27:2754"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-MEDIUM",
+      "matching_recorded_ids": [
+        "27:2704"
+      ]
+    },
+    {
+      "template_id": "TPL-DIRECTORY-SEARCH",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC",
+      "matching_recorded_ids": [
+        "27:2804"
+      ]
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-HIGH",
+      "matching_recorded_ids": [
+        "29:1515",
+        "35:2382",
+        "35:2830",
+        "35:2958"
+      ]
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-LOW",
+      "matching_recorded_ids": [
+        "29:1703",
+        "35:2446",
+        "35:2894",
+        "35:3022"
+      ]
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-MEDIUM",
+      "matching_recorded_ids": [
+        "29:1609",
+        "35:2414",
+        "35:2862",
+        "35:2990"
+      ]
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-ERROR",
+      "stream_id": "S-SEMANTIC",
+      "matching_recorded_ids": [
+        "29:1797",
+        "35:2478",
+        "35:2926",
+        "35:3054"
+      ]
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-HIGH",
+      "matching_recorded_ids": [
+        "29:1545"
+      ]
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-LOW",
+      "matching_recorded_ids": [
+        "29:1733"
+      ]
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-MEDIUM",
+      "matching_recorded_ids": [
+        "29:1639"
+      ]
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-PREFERENCE-WRITE-FAILED",
+      "stream_id": "S-SEMANTIC",
+      "matching_recorded_ids": [
+        "29:1827"
+      ]
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-HIGH",
+      "matching_recorded_ids": [
+        "29:1577"
+      ]
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-LOW",
+      "matching_recorded_ids": [
+        "29:1765"
+      ]
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-MEDIUM",
+      "matching_recorded_ids": [
+        "29:1671"
+      ]
+    },
+    {
+      "template_id": "TPL-SYSTEM-RECOVERY",
+      "state_id": "STATE-STREAM-CHANGED",
+      "stream_id": "S-SEMANTIC",
+      "matching_recorded_ids": [
+        "29:1859"
+      ]
+    }
+  ],
+  "proposed_existing_frame_name_repairs": [
+    {
+      "node_id": "32:1792",
+      "expected_current_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "proposed_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "only_change": "Existing frame name; no appearance, instance, layout or interaction edits"
+    },
+    {
+      "node_id": "32:1847",
+      "expected_current_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "proposed_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "only_change": "Existing frame name; no appearance, instance, layout or interaction edits"
+    },
+    {
+      "node_id": "32:1902",
+      "expected_current_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "proposed_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "only_change": "Existing frame name; no appearance, instance, layout or interaction edits"
+    },
+    {
+      "node_id": "32:1957",
+      "expected_current_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "proposed_name": "HSD_UIR_B01_TPL_GLOBAL_NAVIGATION_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "only_change": "Existing frame name; no appearance, instance, layout or interaction edits"
+    },
+    {
+      "node_id": "32:2012",
+      "expected_current_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "proposed_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_HIGH_V01",
+      "only_change": "Existing frame name; no appearance, instance, layout or interaction edits"
+    },
+    {
+      "node_id": "32:2077",
+      "expected_current_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "proposed_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_MEDIUM_V01",
+      "only_change": "Existing frame name; no appearance, instance, layout or interaction edits"
+    },
+    {
+      "node_id": "32:2142",
+      "expected_current_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "proposed_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_LOW_V01",
+      "only_change": "Existing frame name; no appearance, instance, layout or interaction edits"
+    },
+    {
+      "node_id": "32:2207",
+      "expected_current_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "proposed_name": "HSD_UIR_B01_TPL_DIRECTORY_SEARCH_REF_STATE_STREAM_CEILING_REFUSED_VP_320_MODE_KEYBOARD_STREAM_SEMANTIC_V01",
+      "only_change": "Existing frame name; no appearance, instance, layout or interaction edits"
+    }
+  ],
+  "allocation": [
+    {
+      "id": "B01-REMAINING-IDENTITY",
+      "status": "TODO",
+      "output": "Repair the eight existing refusal frame names with REF; retain IDs/pixels and rename no source master. Fresh approved call must guard exact current names first."
+    },
+    {
+      "id": "B01-REMAINING-MODES",
+      "status": "TODO",
+      "output": "Use each assigned profile and stream minima, not a Cartesian product: standard and screen-reader for all four streams; reduced-motion S-HIGH; low-power S-LOW; forced-colours and print S-SEMANTIC; additional missing template modes once at their appropriate peer stream. Recovery baseline ERROR/320/FORCED-COLORS must be a full host in each of four streams. Build visual mode changes where needed, not renamed identical captures."
+    },
+    {
+      "id": "B01-REMAINING-STATES",
+      "status": "TODO",
+      "output": "Use the complete profile gap list below. Critical states need distinct visual evidence; noncritical values may have truthful state/interaction annotations. Reuse existing recovery grammar only when visibly assembled with a named host, current stream and safe primary action; its 48 unscoped specimens alone earn no host/stream credit. Assess CLOSED navigation, directory STALE and 404/410 behavior explicitly."
+    },
+    {
+      "id": "B01-REMAINING-VIEWPORTS",
+      "status": "TODO",
+      "output": "VP-NARROW and VP-TABLET may link actual 320/landscape/desktop bounds only after checking identical structure and reading/action order. VP-WIDE needs measured line length/control placement. Existing 320, landscape, desktop and reflow frames stay the bounding sources; no new frame merely to raise a count."
+    },
+    {
+      "id": "B01-REMAINING-INTERACTIONS",
+      "status": "TODO",
+      "output": "Produce design PROTOTYPE and semantic specifications for disclosure open/close/invoker return, modal versus nonmodal search, clear/close/result actions, radio selection versus explicit Apply, preserved-context errors and expiry warning/extension. D078 controls: at least20 seconds warning, simple action, at least10 extension opportunities. Show each stream independently; no Figma animation is a native keyboard/screen-reader test."
+    },
+    {
+      "id": "B01-REMAINING-EXIT",
+      "status": "TODO",
+      "output": "After coverage and interaction review: deterministic PNG@2x/SVG exports and prototype flow sheets, reconciled evidence manifest, native archive/restore and EXIT, separate independent design/accessibility reviews, then founder pilot acceptance. Later TEST_CAPTURE remains after implementation, outside MA025."
+    }
+  ],
+  "limits": [
+    "Names/receipt correlations are preparation evidence, not a complete exit manifest or qualitative coverage adjudication.",
+    "Missing encoded names do not establish that no inherited or separately recorded annotation exists; inspect those before authoring duplicate evidence.",
+    "Shared grammar labels carry no explicit stream or host; no implicit S-SEMANTIC assignment.",
+    "Eight refusal names omit REF in the executed input; confirmed live names require preflight. Existing scoped pixel reviews remain valid at their original inputs.",
+    "No full canvas read, physical editability census, font-rights approval, runtime behavior, accessibility conformance or complete-process proof.",
+    "No Figma call, source/master rename, paid action, application feature, later batch release, Git action or founder acceptance authorized by this preparation."
+  ]
+}

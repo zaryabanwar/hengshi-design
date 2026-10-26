@@ -1,0 +1,121 @@
+{
+  "status": "DOING",
+  "scope": "Producer visual inspection of all 13 previously missing B01 navigation references",
+  "execution_script_sha256": "1c8ff60eb2de85778bb47093a8682b2f10518cb5cb7324ee8248f7a3299bad71",
+  "producer_inspected_ids": [
+    "21:517",
+    "21:556",
+    "21:595",
+    "21:634",
+    "21:673",
+    "21:712",
+    "21:751",
+    "21:790",
+    "21:829",
+    "21:868",
+    "21:938",
+    "21:969",
+    "21:1000"
+  ],
+  "combined_navigation_inspected": 20,
+  "navigation_created": 20,
+  "per_view": [
+    {
+      "source_id": "21:517",
+      "image": "output/research/b01-navigation-recovery-2026-10-07/view-21-517.png",
+      "observed": "Complete fixture, navigation, four labelled choices, separate Apply, explanation/status and footer visible; no visible clipping or overlap.",
+      "issues": []
+    },
+    {
+      "source_id": "21:556",
+      "image": "output/research/b01-navigation-recovery-2026-10-07/view-21-556.png",
+      "observed": "Complete fixture, navigation, four labelled choices, separate Apply, explanation/status and footer visible; no visible clipping or overlap.",
+      "issues": []
+    },
+    {
+      "source_id": "21:595",
+      "image": "output/research/b01-navigation-recovery-2026-10-07/view-21-595.png",
+      "observed": "Complete fixture, navigation, four labelled choices, separate Apply, explanation/status and footer visible; no visible clipping or overlap.",
+      "issues": []
+    },
+    {
+      "source_id": "21:634",
+      "image": "output/research/b01-navigation-recovery-2026-10-07/view-21-634.png",
+      "observed": "Complete fixture, navigation, four labelled choices, separate Apply, explanation/status and footer visible; no visible clipping or overlap.",
+      "issues": []
+    },
+    {
+      "source_id": "21:673",
+      "image": "output/research/b01-navigation-recovery-2026-10-07/view-21-673.png",
+      "observed": "Complete fixture, navigation, four labelled choices, separate Apply, explanation/status and footer visible; no visible clipping or overlap.",
+      "issues": []
+    },
+    {
+      "source_id": "21:712",
+      "image": "output/research/b01-navigation-recovery-2026-10-07/view-21-712.png",
+      "observed": "Complete fixture, navigation, four labelled choices, separate Apply, explanation/status and footer visible; no visible clipping or overlap.",
+      "issues": []
+    },
+    {
+      "source_id": "21:751",
+      "image": "output/research/b01-navigation-recovery-2026-10-07/view-21-751.png",
+      "observed": "Complete fixture, navigation, four labelled choices, separate Apply, explanation/status and footer visible; no visible clipping or overlap.",
+      "issues": []
+    },
+    {
+      "source_id": "21:790",
+      "image": "output/research/b01-navigation-recovery-2026-10-07/view-21-790.png",
+      "observed": "Complete fixture, navigation, four labelled choices, separate Apply, explanation/status and footer visible; no visible clipping or overlap.",
+      "issues": []
+    },
+    {
+      "source_id": "21:829",
+      "image": "output/research/b01-navigation-recovery-2026-10-07/view-21-829.png",
+      "observed": "Complete fixture, navigation, four labelled choices, separate Apply, explanation/status and footer visible; no visible clipping or overlap.",
+      "issues": []
+    },
+    {
+      "source_id": "21:868",
+      "image": "output/research/b01-navigation-recovery-2026-10-07/view-21-868.png",
+      "observed": "Complete fixture, navigation, four labelled choices, separate Apply, explanation/status and footer visible; no visible clipping or overlap.",
+      "issues": []
+    },
+    {
+      "source_id": "21:938",
+      "image": "output/research/b01-navigation-recovery-2026-10-07/view-21-938.png",
+      "observed": "Complete fixture, navigation, four labelled choices, separate Apply, explanation/status and footer visible; no visible clipping or overlap.",
+      "issues": []
+    },
+    {
+      "source_id": "21:969",
+      "image": "output/research/b01-navigation-recovery-2026-10-07/view-21-969.png",
+      "observed": "Complete fixture, navigation, four labelled choices, separate Apply, explanation/status and footer visible; no visible clipping or overlap.",
+      "issues": []
+    },
+    {
+      "source_id": "21:1000",
+      "image": "output/research/b01-navigation-recovery-2026-10-07/view-21-1000.png",
+      "observed": "Complete fixture, navigation, four labelled choices, separate Apply, explanation/status and footer visible; no visible clipping or overlap.",
+      "issues": []
+    }
+  ],
+  "variant_observations": {
+    "preference_read_failed": "Balanced and Quick Access active labels and selected markers agree with their storage-read messages.",
+    "preference_write_failed": "All four active stream labels and selected markers agree; saving failure is separated from current visit success.",
+    "stream_changed": "All four current labels, selected markers and active status messages agree.",
+    "desktop_open": "Current stream and pending choice intentionally differ; Apply remains separate."
+  },
+  "provider_cleanup": {
+    "allCreatedNodesRemoved": true,
+    "removedCreatedNodeCount": 183,
+    "sourceFramesUnchanged": true,
+    "originalPositionsRestored": true,
+    "parentOrderRestored": true
+  },
+  "limitations": [
+    "Static copies inspected, not interactive original execution.",
+    "No keyboard, native input, live announcement, storage, runtime accessibility or founder acceptance demonstrated.",
+    "Full B01 contracted search/recovery/other reference coverage, independent review, restore and EXIT remain held."
+  ],
+  "instrumentation_note": "exportCompleted remained its initial false because the local preparation did not insert its assignment. A complete native PNG image and 13 tile bounds were returned; cleanup/source restoration were separately reported true. No retry."
+}

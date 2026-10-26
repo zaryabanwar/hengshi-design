@@ -1,0 +1,137 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-24",
+  "batch_result": "APPLIED108_Directory_only_no_created_nodes",
+  "executed_source_sha256": "06b989bc637e36db4b4da447557b58f97131b9138a14f0cfa581f181deb4d380",
+  "preview": "175:3518 ENQ_DIRECTORY_MEDIUM v1",
+  "provider_usage": "Normal UI7 included calls available before use_figma; post-call balance unobserved. No checking MCP/session call; reused existing session.",
+  "archives": [
+    {
+      "path": "before.fig",
+      "bytes": 436234,
+      "sha256": "aec9fce4fa64577cfc3e8c5b9e402c013f14cd79af412f8d4bf3971d7248ef25",
+      "zip_crc": "PASS",
+      "restore_tested": false
+    },
+    {
+      "path": "after.fig",
+      "bytes": 437532,
+      "sha256": "a952d31f3b9cfaf887697a077bceba447c28fbd3b5f2b8f5377c2ef93852630d",
+      "zip_crc": "PASS",
+      "restore_tested": false
+    }
+  ],
+  "playback": {
+    "context": "Services · query design, static fixture retained through four changes; no actual search implementation claim",
+    "observations": [
+      "MEDIUM/MEDIUM/CLOSED ->Open-> MEDIUM/MEDIUM/OPEN",
+      "MEDIUM/MEDIUM/OPEN ->chooseSEMANTIC-> MEDIUM/SEMANTIC/OPEN",
+      "MEDIUM/SEMANTIC/OPEN ->Escape-> MEDIUM/SEMANTIC/CLOSED",
+      "MEDIUM/SEMANTIC/CLOSED ->Open-> MEDIUM/SEMANTIC/OPEN",
+      "MEDIUM/SEMANTIC/OPEN ->Apply-> SEMANTIC/SEMANTIC/OPEN",
+      "SEMANTIC/SEMANTIC/OPEN ->chooseHIGH-> SEMANTIC/HIGH/OPEN",
+      "SEMANTIC/HIGH/OPEN ->Close-> SEMANTIC/HIGH/CLOSED",
+      "SEMANTIC/HIGH/CLOSED ->Open-> SEMANTIC/HIGH/OPEN",
+      "SEMANTIC/HIGH/OPEN ->Apply-> HIGH/HIGH/OPEN",
+      "HIGH/HIGH/OPEN ->chooseLOW-> HIGH/LOW/OPEN",
+      "HIGH/LOW/OPEN ->Apply-> LOW/LOW/OPEN",
+      "LOW/LOW/OPEN ->chooseMEDIUM-> LOW/MEDIUM/OPEN",
+      "LOW/MEDIUM/OPEN ->Apply-> MEDIUM/MEDIUM/OPEN"
+    ],
+    "evidence_limit": "01 black capture excluded. Live starting closed view was observed, but no immutable starting-state capture;02 supports open state.04 and08 later closed views are usable."
+  },
+  "captures": [
+    {
+      "path": "playback/01-balanced-closed.jpg",
+      "bytes": 30083,
+      "sha256": "5c35c9c9f384b71bd382ee146ee53bbaa2865d53712c523b0f4fdb9c527215eb",
+      "use": "Excluded black capture; not starting-state proof"
+    },
+    {
+      "path": "playback/02-balanced-open.jpg",
+      "bytes": 39938,
+      "sha256": "bd2557cb5cdd20111d23ae52e03178f5a71b33464a230fe9055ab592b6466eea",
+      "use": "Saved native playback state"
+    },
+    {
+      "path": "playback/03-quick-access-pending-balanced-active.jpg",
+      "bytes": 39932,
+      "sha256": "c2d0eb94039e1e353c07526c0da3a60b100ae2356c61015966da5b0d4a9b54d3",
+      "use": "Saved native playback state"
+    },
+    {
+      "path": "playback/04-escape-balanced-active.jpg",
+      "bytes": 29731,
+      "sha256": "5048f0e1c8ceccfede5f7a0315e0bc7afaa34234c2ea64e8aef205f5a8f9fc9f",
+      "use": "Saved native playback state"
+    },
+    {
+      "path": "playback/05-reopen-retains-quick-access-pending.jpg",
+      "bytes": 39932,
+      "sha256": "c2d0eb94039e1e353c07526c0da3a60b100ae2356c61015966da5b0d4a9b54d3",
+      "use": "Saved native playback state"
+    },
+    {
+      "path": "playback/06-quick-access-active-query-preserved.jpg",
+      "bytes": 40913,
+      "sha256": "592eece3ab2dc261f8ad08ba51f7cba17e3681496884d190e50945e826d8957d",
+      "use": "Saved native playback state"
+    },
+    {
+      "path": "playback/07-detailed-pending-quick-access-active.jpg",
+      "bytes": 40003,
+      "sha256": "619cf8f532a7ca654985d39286a1fdfcc8f7df65c8b518c4061baad5275c3a4a",
+      "use": "Saved native playback state"
+    },
+    {
+      "path": "playback/08-close-retains-quick-access.jpg",
+      "bytes": 29743,
+      "sha256": "af0e4932ee04f38f6a58d7767f400554052401aa7a6b822c33afe83ff340a539",
+      "use": "Saved native playback state"
+    },
+    {
+      "path": "playback/09-reopen-retains-detailed-pending.jpg",
+      "bytes": 40003,
+      "sha256": "619cf8f532a7ca654985d39286a1fdfcc8f7df65c8b518c4061baad5275c3a4a",
+      "use": "Saved native playback state"
+    },
+    {
+      "path": "playback/10-detailed-active-query-preserved.jpg",
+      "bytes": 40688,
+      "sha256": "2b41128f7c65eb720236da42620a563b403da61cf746ccc1e74a0f88ec1da8ad",
+      "use": "Saved native playback state"
+    },
+    {
+      "path": "playback/11-simplified-pending-detailed-active.jpg",
+      "bytes": 39829,
+      "sha256": "06fa2d652b6a51e4b0351306229d96cf20e17f7cd51743eee0bd5b10dedb6cbf",
+      "use": "Saved native playback state"
+    },
+    {
+      "path": "playback/12-simplified-active-query-preserved.jpg",
+      "bytes": 40987,
+      "sha256": "3b670556a69582629ed78f01bde3fffd5cb8d4a83f1ab3dc4b516cb0e0ea216a",
+      "use": "Saved native playback state"
+    },
+    {
+      "path": "playback/13-balanced-pending-simplified-active.jpg",
+      "bytes": 40167,
+      "sha256": "4d98ccf754a6e50018b40238a926fd2f8065141fceaa2b499bfc8f754937e292",
+      "use": "Saved native playback state"
+    },
+    {
+      "path": "playback/14-balanced-active-query-preserved.jpg",
+      "bytes": 40814,
+      "sha256": "e34e78c2007ba5d90ac0ac85607b8e1e87b539c560706f6d15f906c9b07ed8eb",
+      "use": "Saved native playback state"
+    }
+  ],
+  "limits": [
+    "One MEDIUM entry only; not all108/all orderedpairs/allentryflows.",
+    "Script reports enumerated visual/content and outside-section preservation; no independent full-file comparison or restored source proof.",
+    "No exact scroll/focus/native-full-matching/boundary/reset/accessibility/B01/Phase1 acceptance.",
+    "Fixture mode/context pixels do not prove production page/search/WebGL behavior.",
+    "Only approved Directory reactions changed. No new nodes, paid/account/sharing/app/Git operations."
+  ]
+}

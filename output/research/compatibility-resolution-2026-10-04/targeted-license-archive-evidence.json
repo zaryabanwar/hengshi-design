@@ -1,0 +1,608 @@
+[
+  {
+    "name": "webgl-constants",
+    "version": "1.1.1",
+    "tarball_url": "https://registry.npmjs.org/webgl-constants/-/webgl-constants-1.1.1.tgz",
+    "integrity_verified": true,
+    "compressed_bytes": 92901,
+    "archive_files": [
+      "package/package.json",
+      "package/.editorconfig",
+      "package/LICENSE",
+      "package/README.md",
+      "package/rollup.config.ts",
+      "package/tsconfig.json",
+      "package/tslint.json",
+      "package/yarn.lock",
+      "package/dist/lib/index.js",
+      "package/dist/lib/index.js.map",
+      "package/dist/types/index.d.ts",
+      "package/dist/webgl-constants.cjs.js",
+      "package/dist/webgl-constants.esm.js",
+      "package/dist/webgl-constants.umd.js",
+      "package/src/index.ts"
+    ],
+    "package_jsons": {
+      "package/package.json": {
+        "name": "webgl-constants",
+        "version": "1.1.1",
+        "description": "Complete set of constants as specified in the WebGL, WebGL2 and extension spec.",
+        "main": "dist/webgl-constants.cjs.js",
+        "browser": "dist/webgl-constants.umd.js",
+        "module": "dist/webgl-constants.esm.js",
+        "jsnext:main": "dist/webgl-constants.esm.js",
+        "types": "dist/types/index.d.ts",
+        "scripts": {
+          "start": "rollup -c rollup.config.ts -w",
+          "lint": "tslint --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
+          "prebuild": "rimraf dist docs",
+          "build": "tsc --module commonjs && rollup -c rollup.config.ts"
+        },
+        "author": "Tim van Scherpenzeel",
+        "dependencies": {},
+        "devDependencies": {
+          "prettier": "^1.17.1",
+          "rimraf": "^2.6.3",
+          "rollup": "^1.12.3",
+          "rollup-plugin-commonjs": "^10.0.0",
+          "rollup-plugin-filesize": "^6.0.1",
+          "rollup-plugin-node-resolve": "^5.0.0",
+          "rollup-plugin-terser": "^5.0.0",
+          "rollup-plugin-typescript2": "^0.21.1",
+          "tslint": "^5.16.0",
+          "tslint-config-prettier": "^1.18.0",
+          "typescript": "^3.4.5"
+        },
+        "prettier": {
+          "semi": true,
+          "singleQuote": true,
+          "trailingComma": "es5",
+          "printWidth": 100
+        }
+      }
+    },
+    "license_files": {
+      "package/LICENSE": {
+        "sha256": "0969fa65680b694452c2c65981df14af5c192da24f2b1f87bdd51d8ed24efcfa",
+        "text": "MIT License\n\nCopyright (c) 2019 Tim van Scherpenzeel\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      }
+    },
+    "source_license_mentions": {
+      "package/README.md": [
+        "## Licence",
+        "My work is released under the [MIT license](https://raw.githubusercontent.com/TimvanScherpenzeel/webgl-constants/master/LICENSE)."
+      ],
+      "package/dist/lib/index.js": [
+        " * Any copyright is dedicated to the Public Domain. http://creativecommons.org/publicdomain/zero/1.0/"
+      ],
+      "package/dist/types/index.d.ts": [
+        " * Any copyright is dedicated to the Public Domain. http://creativecommons.org/publicdomain/zero/1.0/"
+      ],
+      "package/dist/webgl-constants.esm.js": [
+        " * Any copyright is dedicated to the Public Domain. http://creativecommons.org/publicdomain/zero/1.0/"
+      ],
+      "package/src/index.ts": [
+        " * Any copyright is dedicated to the Public Domain. http://creativecommons.org/publicdomain/zero/1.0/"
+      ]
+    },
+    "package_code_executed": false
+  },
+  {
+    "name": "@tailwindcss/oxide-wasm32-wasi",
+    "version": "4.3.3",
+    "tarball_url": "https://registry.npmjs.org/@tailwindcss/oxide-wasm32-wasi/-/oxide-wasm32-wasi-4.3.3.tgz",
+    "integrity_verified": true,
+    "compressed_bytes": 1829808,
+    "archive_files": [
+      "package/node_modules/@emnapi/core/LICENSE",
+      "package/node_modules/@emnapi/runtime/LICENSE",
+      "package/node_modules/@emnapi/wasi-threads/LICENSE",
+      "package/node_modules/@napi-rs/wasm-runtime/dist/fs-proxy.cjs",
+      "package/node_modules/@napi-rs/wasm-runtime/runtime.cjs",
+      "package/tailwindcss-oxide.wasi.cjs",
+      "package/node_modules/tslib/tslib.es6.html",
+      "package/node_modules/tslib/tslib.html",
+      "package/node_modules/@tybys/wasm-util/lib/cjs/asyncify.js",
+      "package/node_modules/@emnapi/core/dist/emnapi-core.cjs.js",
+      "package/node_modules/@emnapi/core/dist/emnapi-core.cjs.min.js",
+      "package/node_modules/@emnapi/core/dist/emnapi-core.esm-bundler.js",
+      "package/node_modules/@emnapi/core/dist/emnapi-core.js",
+      "package/node_modules/@emnapi/core/dist/emnapi-core.min.js",
+      "package/node_modules/@emnapi/runtime/dist/emnapi.cjs.js",
+      "package/node_modules/@emnapi/runtime/dist/emnapi.cjs.min.js",
+      "package/node_modules/@emnapi/runtime/dist/emnapi.esm-bundler.js",
+      "package/node_modules/@emnapi/runtime/dist/emnapi.iife.js",
+      "package/node_modules/@emnapi/runtime/dist/emnapi.js",
+      "package/node_modules/@emnapi/runtime/dist/emnapi.min.js",
+      "package/node_modules/@tybys/wasm-util/lib/cjs/wasi/error.js",
+      "package/node_modules/@tybys/wasm-util/lib/cjs/wasi/fd.js",
+      "package/node_modules/@napi-rs/wasm-runtime/fs-proxy.js",
+      "package/node_modules/@napi-rs/wasm-runtime/dist/fs.js",
+      "package/node_modules/@tybys/wasm-util/lib/cjs/wasi/fs.js",
+      "package/node_modules/@emnapi/core/index.js",
+      "package/node_modules/@emnapi/runtime/index.js",
+      "package/node_modules/@emnapi/wasi-threads/index.js",
+      "package/node_modules/@tybys/wasm-util/lib/cjs/index.js",
+      "package/node_modules/@tybys/wasm-util/lib/cjs/wasi/index.js",
+      "package/node_modules/tslib/modules/index.js",
+      "package/node_modules/@tybys/wasm-util/lib/cjs/jspi.js",
+      "package/node_modules/@tybys/wasm-util/lib/cjs/load.js",
+      "package/node_modules/@tybys/wasm-util/lib/cjs/memory.js",
+      "package/node_modules/@tybys/wasm-util/lib/cjs/wasi/path.js",
+      "package/node_modules/@tybys/wasm-util/lib/cjs/wasi/preview1.js",
+      "package/node_modules/@tybys/wasm-util/lib/cjs/wasi/rights.js",
+      "package/node_modules/@napi-rs/wasm-runtime/runtime.js",
+      "package/tailwindcss-oxide.wasi-browser.js",
+      "package/node_modules/tslib/tslib.es6.js",
+      "package/node_modules/tslib/tslib.js",
+      "package/node_modules/@tybys/wasm-util/lib/cjs/wasi/types.js",
+      "package/node_modules/@tybys/wasm-util/lib/cjs/wasi/util.js",
+      "package/node_modules/@emnapi/wasi-threads/dist/wasi-threads.cjs.js",
+      "package/node_modules/@emnapi/wasi-threads/dist/wasi-threads.cjs.min.js",
+      "package/node_modules/@emnapi/wasi-threads/dist/wasi-threads.esm-bundler.js",
+      "package/node_modules/@emnapi/wasi-threads/dist/wasi-threads.js",
+      "package/node_modules/@emnapi/wasi-threads/dist/wasi-threads.min.js",
+      "package/node_modules/@tybys/wasm-util/dist/wasm-util.esm-bundler.js",
+      "package/node_modules/@tybys/wasm-util/dist/wasm-util.esm.js",
+      "package/node_modules/@tybys/wasm-util/dist/wasm-util.esm.min.js",
+      "package/node_modules/@tybys/wasm-util/dist/wasm-util.js",
+      "package/node_modules/@tybys/wasm-util/dist/wasm-util.min.js",
+      "package/node_modules/@tybys/wasm-util/lib/cjs/webassembly.js",
+      "package/node_modules/@emnapi/core/package.json",
+      "package/node_modules/@emnapi/runtime/package.json",
+      "package/node_modules/@emnapi/wasi-threads/package.json",
+      "package/node_modules/@napi-rs/wasm-runtime/package.json",
+      "package/node_modules/@tybys/wasm-util/package.json",
+      "package/node_modules/tslib/modules/package.json",
+      "package/node_modules/tslib/package.json",
+      "package/package.json",
+      "package/node_modules/@tybys/wasm-util/dist/tsdoc-metadata.json",
+      "package/node_modules/@emnapi/core/README.md",
+      "package/node_modules/@emnapi/runtime/README.md",
+      "package/node_modules/@emnapi/wasi-threads/README.md",
+      "package/node_modules/@tybys/wasm-util/README.md",
+      "package/node_modules/tslib/README.md",
+      "package/README.md",
+      "package/node_modules/tslib/SECURITY.md",
+      "package/node_modules/@tybys/wasm-util/lib/mjs/asyncify.mjs",
+      "package/node_modules/@emnapi/core/dist/emnapi-core.min.mjs",
+      "package/node_modules/@emnapi/core/dist/emnapi-core.mjs",
+      "package/node_modules/@emnapi/runtime/dist/emnapi.min.mjs",
+      "package/node_modules/@emnapi/runtime/dist/emnapi.mjs",
+      "package/node_modules/@tybys/wasm-util/lib/mjs/wasi/error.mjs",
+      "package/node_modules/@tybys/wasm-util/lib/mjs/wasi/fd.mjs",
+      "package/node_modules/@tybys/wasm-util/lib/mjs/wasi/fs.mjs",
+      "package/node_modules/@tybys/wasm-util/lib/mjs/index.mjs",
+      "package/node_modules/@tybys/wasm-util/lib/mjs/wasi/index.mjs",
+      "package/node_modules/@tybys/wasm-util/lib/mjs/jspi.mjs",
+      "package/node_modules/@tybys/wasm-util/lib/mjs/load.mjs",
+      "package/node_modules/@tybys/wasm-util/lib/mjs/memory.mjs",
+      "package/node_modules/@tybys/wasm-util/lib/mjs/wasi/path.mjs",
+      "package/node_modules/@tybys/wasm-util/lib/mjs/wasi/preview1.mjs",
+      "package/node_modules/@tybys/wasm-util/lib/mjs/wasi/rights.mjs",
+      "package/node_modules/tslib/tslib.es6.mjs",
+      "package/node_modules/@tybys/wasm-util/lib/mjs/wasi/types.mjs",
+      "package/node_modules/@tybys/wasm-util/lib/mjs/wasi/util.mjs",
+      "package/node_modules/@emnapi/wasi-threads/dist/wasi-threads.min.mjs",
+      "package/node_modules/@emnapi/wasi-threads/dist/wasi-threads.mjs",
+      "package/wasi-worker-browser.mjs",
+      "package/wasi-worker.mjs",
+      "package/node_modules/@tybys/wasm-util/lib/mjs/webassembly.mjs",
+      "package/node_modules/@emnapi/core/dist/emnapi-core.d.mts",
+      "package/node_modules/@emnapi/core/dist/emnapi-core.min.d.mts",
+      "package/node_modules/@emnapi/runtime/dist/emnapi.d.mts",
+      "package/node_modules/@emnapi/runtime/dist/emnapi.min.d.mts",
+      "package/node_modules/@emnapi/wasi-threads/dist/wasi-threads.d.mts",
+      "package/node_modules/@emnapi/wasi-threads/dist/wasi-threads.min.d.mts",
+      "package/node_modules/@emnapi/core/dist/emnapi-core.cjs.min.d.ts",
+      "package/node_modules/@emnapi/core/dist/emnapi-core.d.ts",
+      "package/node_modules/@emnapi/runtime/dist/emnapi.cjs.min.d.ts",
+      "package/node_modules/@emnapi/runtime/dist/emnapi.d.ts",
+      "package/node_modules/@emnapi/runtime/dist/emnapi.iife.d.ts",
+      "package/node_modules/tslib/modules/index.d.ts",
+      "package/node_modules/tslib/tslib.d.ts",
+      "package/node_modules/@emnapi/wasi-threads/dist/wasi-threads.cjs.min.d.ts",
+      "package/node_modules/@emnapi/wasi-threads/dist/wasi-threads.d.ts",
+      "package/node_modules/@tybys/wasm-util/dist/wasm-util.d.ts",
+      "package/node_modules/tslib/CopyrightNotice.txt",
+      "package/node_modules/tslib/LICENSE.txt",
+      "package/tailwindcss-oxide.wasm32-wasi.wasm"
+    ],
+    "package_jsons": {
+      "package/node_modules/@emnapi/core/package.json": {
+        "name": "@emnapi/core",
+        "version": "1.11.1",
+        "description": "emnapi core",
+        "main": "index.js",
+        "module": "./dist/emnapi-core.esm-bundler.js",
+        "types": "./dist/emnapi-core.d.ts",
+        "sideEffects": false,
+        "exports": {
+          ".": {
+            "types": {
+              "module": "./dist/emnapi-core.d.ts",
+              "import": "./dist/emnapi-core.d.mts",
+              "default": "./dist/emnapi-core.d.ts"
+            },
+            "module": "./dist/emnapi-core.esm-bundler.js",
+            "import": "./dist/emnapi-core.mjs",
+            "default": "./index.js"
+          },
+          "./dist/emnapi-core.cjs.min": {
+            "types": "./dist/emnapi-core.d.ts",
+            "default": "./dist/emnapi-core.cjs.min.js"
+          },
+          "./dist/emnapi-core.min.mjs": {
+            "types": "./dist/emnapi-core.d.mts",
+            "default": "./dist/emnapi-core.min.mjs"
+          }
+        },
+        "dependencies": {
+          "@emnapi/wasi-threads": "1.2.2",
+          "tslib": "^2.4.0"
+        },
+        "scripts": {
+          "build": "node ./script/build.js"
+        },
+        "repository": {
+          "type": "git",
+          "url": "git+https://github.com/toyobayashi/emnapi.git"
+        },
+        "author": "toyobayashi",
+        "license": "MIT",
+        "bugs": {
+          "url": "https://github.com/toyobayashi/emnapi/issues"
+        },
+        "homepage": "https://github.com/toyobayashi/emnapi#readme",
+        "publishConfig": {
+          "access": "public"
+        }
+      },
+      "package/node_modules/@emnapi/runtime/package.json": {
+        "name": "@emnapi/runtime",
+        "version": "1.11.1",
+        "description": "emnapi runtime",
+        "main": "index.js",
+        "module": "./dist/emnapi.esm-bundler.js",
+        "types": "./dist/emnapi.d.ts",
+        "sideEffects": false,
+        "exports": {
+          ".": {
+            "types": {
+              "module": "./dist/emnapi.d.ts",
+              "import": "./dist/emnapi.d.mts",
+              "default": "./dist/emnapi.d.ts"
+            },
+            "module": "./dist/emnapi.esm-bundler.js",
+            "import": "./dist/emnapi.mjs",
+            "default": "./index.js"
+          },
+          "./dist/emnapi.cjs.min": {
+            "types": "./dist/emnapi.d.ts",
+            "default": "./dist/emnapi.cjs.min.js"
+          },
+          "./dist/emnapi.min.mjs": {
+            "types": "./dist/emnapi.d.mts",
+            "default": "./dist/emnapi.min.mjs"
+          }
+        },
+        "dependencies": {
+          "tslib": "^2.4.0"
+        },
+        "scripts": {
+          "build": "node ./script/build.js"
+        },
+        "repository": {
+          "type": "git",
+          "url": "git+https://github.com/toyobayashi/emnapi.git"
+        },
+        "author": "toyobayashi",
+        "license": "MIT",
+        "bugs": {
+          "url": "https://github.com/toyobayashi/emnapi/issues"
+        },
+        "homepage": "https://github.com/toyobayashi/emnapi#readme",
+        "publishConfig": {
+          "access": "public"
+        }
+      },
+      "package/node_modules/@emnapi/wasi-threads/package.json": {
+        "name": "@emnapi/wasi-threads",
+        "version": "1.2.2",
+        "description": "WASI threads proposal implementation in JavaScript",
+        "main": "index.js",
+        "module": "./dist/wasi-threads.esm-bundler.js",
+        "types": "./dist/wasi-threads.d.ts",
+        "sideEffects": false,
+        "exports": {
+          ".": {
+            "types": {
+              "module": "./dist/wasi-threads.d.ts",
+              "import": "./dist/wasi-threads.d.mts",
+              "default": "./dist/wasi-threads.d.ts"
+            },
+            "module": "./dist/wasi-threads.esm-bundler.js",
+            "import": "./dist/wasi-threads.mjs",
+            "default": "./index.js"
+          },
+          "./dist/wasi-threads.cjs.min": {
+            "types": "./dist/wasi-threads.d.ts",
+            "default": "./dist/wasi-threads.cjs.min.js"
+          },
+          "./dist/wasi-threads.min.mjs": {
+            "types": "./dist/wasi-threads.d.mts",
+            "default": "./dist/wasi-threads.min.mjs"
+          }
+        },
+        "dependencies": {
+          "tslib": "^2.4.0"
+        },
+        "scripts": {
+          "build": "node ./script/build.js",
+          "build:test": "node ./test/build.js",
+          "test": "node ./test/index.js"
+        },
+        "repository": {
+          "type": "git",
+          "url": "git+https://github.com/toyobayashi/emnapi.git"
+        },
+        "author": "toyobayashi",
+        "license": "MIT",
+        "bugs": {
+          "url": "https://github.com/toyobayashi/emnapi/issues"
+        },
+        "homepage": "https://github.com/toyobayashi/emnapi#readme",
+        "publishConfig": {
+          "access": "public"
+        }
+      },
+      "package/node_modules/@napi-rs/wasm-runtime/package.json": {
+        "name": "@napi-rs/wasm-runtime",
+        "version": "1.1.4",
+        "type": "module",
+        "description": "Runtime and polyfill for wasm targets",
+        "homepage": "https://napi.rs/",
+        "author": {
+          "name": "LongYinan",
+          "url": "https://github.com/Brooooooklyn"
+        },
+        "repository": {
+          "type": "git",
+          "url": "git+https://github.com/napi-rs/napi-rs.git",
+          "directory": "wasm-runtime"
+        },
+        "license": "MIT",
+        "publishConfig": {
+          "registry": "https://registry.npmjs.org/",
+          "access": "public"
+        },
+        "files": [
+          "runtime.cjs",
+          "runtime.js",
+          "fs-proxy.js",
+          "dist/*.cjs",
+          "dist/*.js"
+        ],
+        "devDependencies": {
+          "@rollup/plugin-alias": "^6.0.0",
+          "@rollup/plugin-commonjs": "^29.0.0",
+          "@rollup/plugin-inject": "^5.0.5",
+          "@rollup/plugin-json": "^6.1.0",
+          "@rollup/plugin-node-resolve": "^16.0.3",
+          "@rollup/plugin-replace": "^6.0.3",
+          "buffer": "^6.0.3",
+          "events": "^3.3.0",
+          "memfs": "^4.50.0",
+          "node-inspect-extracted": "^3.2.2",
+          "path-browserify": "^1.0.1",
+          "process": "^0.11.10",
+          "readable-stream": "^4.7.0",
+          "rollup": "^4.53.1",
+          "rollup-plugin-polyfill-node": "^0.13.0",
+          "tslib": "^2.8.1"
+        },
+        "dependencies": {
+          "@tybys/wasm-util": "^0.10.1"
+        },
+        "peerDependencies": {
+          "@emnapi/core": "^1.7.1",
+          "@emnapi/runtime": "^1.7.1"
+        },
+        "scripts": {
+          "build": "rollup -c rollup.config.js",
+          "test": "node --test"
+        },
+        "funding": {
+          "type": "github",
+          "url": "https://github.com/sponsors/Brooooooklyn"
+        },
+        "exports": {
+          ".": {
+            "import": "./runtime.js",
+            "require": "./runtime.cjs"
+          },
+          "./fs": {
+            "import": "./dist/fs.js"
+          }
+        }
+      },
+      "package/node_modules/@tybys/wasm-util/package.json": {
+        "name": "@tybys/wasm-util",
+        "version": "0.10.2",
+        "description": "WASI polyfill for browser and some wasm util",
+        "main": "./lib/cjs/index.js",
+        "module": "./dist/wasm-util.esm-bundler.js",
+        "types": "./dist/wasm-util.d.ts",
+        "exports": {
+          ".": {
+            "module": "./dist/wasm-util.esm-bundler.js",
+            "import": "./lib/mjs/index.mjs",
+            "require": "./lib/cjs/index.js",
+            "types": "./dist/wasm-util.d.ts"
+          }
+        },
+        "scripts": {
+          "build": "tsgo build",
+          "watch": "tsgo watch",
+          "test": "jest",
+          "lint": "eslint ./src/**/*.{ts,js} --fix",
+          "prepare": "npm run build"
+        },
+        "publishConfig": {
+          "access": "public"
+        },
+        "keywords": [
+          "wasm",
+          "webassembly",
+          "wasi",
+          "polyfill"
+        ],
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/toyobayashi/wasm-util.git"
+        },
+        "author": "toyobayashi",
+        "license": "MIT",
+        "dependencies": {
+          "tslib": "^2.4.0"
+        },
+        "devDependencies": {
+          "@tybys/ts-transform-module-specifier": "^0.0.2",
+          "@tybys/ts-transform-pure-class": "^0.1.1",
+          "@tybys/tsgo": "^1.1.0",
+          "@types/node": "^14.14.31",
+          "@typescript-eslint/eslint-plugin": "^5.40.1",
+          "@typescript-eslint/parser": "^5.40.1",
+          "eslint": "^8.25.0",
+          "eslint-config-standard-with-typescript": "^23.0.0",
+          "eslint-plugin-import": "^2.26.0",
+          "eslint-plugin-n": "^15.3.0",
+          "eslint-plugin-promise": "^6.1.0",
+          "memfs-browser": "^3.4.13000",
+          "mocha": "^10.1.0",
+          "ts-node": "^10.9.1",
+          "typescript": "~4.8.3"
+        }
+      },
+      "package/node_modules/tslib/modules/package.json": {
+        "type": "module"
+      },
+      "package/node_modules/tslib/package.json": {
+        "name": "tslib",
+        "author": "Microsoft Corp.",
+        "homepage": "https://www.typescriptlang.org/",
+        "version": "2.8.1",
+        "license": "0BSD",
+        "description": "Runtime library for TypeScript helper functions",
+        "keywords": [
+          "TypeScript",
+          "Microsoft",
+          "compiler",
+          "language",
+          "javascript",
+          "tslib",
+          "runtime"
+        ],
+        "bugs": {
+          "url": "https://github.com/Microsoft/TypeScript/issues"
+        },
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/Microsoft/tslib.git"
+        },
+        "main": "tslib.js",
+        "module": "tslib.es6.js",
+        "jsnext:main": "tslib.es6.js",
+        "typings": "tslib.d.ts",
+        "sideEffects": false,
+        "exports": {
+          ".": {
+            "module": {
+              "types": "./modules/index.d.ts",
+              "default": "./tslib.es6.mjs"
+            },
+            "import": {
+              "node": "./modules/index.js",
+              "default": {
+                "types": "./modules/index.d.ts",
+                "default": "./tslib.es6.mjs"
+              }
+            },
+            "default": "./tslib.js"
+          },
+          "./*": "./*",
+          "./": "./"
+        }
+      },
+      "package/package.json": {
+        "name": "@tailwindcss/oxide-wasm32-wasi",
+        "version": "4.3.3",
+        "cpu": [
+          "wasm32"
+        ],
+        "main": "tailwindcss-oxide.wasi.cjs",
+        "files": [
+          "tailwindcss-oxide.wasm32-wasi.wasm",
+          "tailwindcss-oxide.wasi.cjs",
+          "tailwindcss-oxide.wasi-browser.js",
+          "wasi-worker.mjs",
+          "wasi-worker-browser.mjs"
+        ],
+        "license": "MIT",
+        "engines": {
+          "node": ">=14.0.0"
+        },
+        "publishConfig": {
+          "provenance": true,
+          "access": "public"
+        },
+        "repository": {
+          "type": "git",
+          "url": "git+https://github.com/tailwindlabs/tailwindcss.git",
+          "directory": "crates/node"
+        },
+        "browser": "tailwindcss-oxide.wasi-browser.js",
+        "dependencies": {
+          "@napi-rs/wasm-runtime": "^1.1.4",
+          "@emnapi/core": "^1.11.1",
+          "@emnapi/runtime": "^1.11.1",
+          "@tybys/wasm-util": "^0.10.2",
+          "@emnapi/wasi-threads": "^1.2.2",
+          "tslib": "^2.8.1"
+        },
+        "bundledDependencies": [
+          "@napi-rs/wasm-runtime",
+          "@emnapi/core",
+          "@emnapi/runtime",
+          "@tybys/wasm-util",
+          "@emnapi/wasi-threads",
+          "tslib"
+        ]
+      }
+    },
+    "license_files": {
+      "package/node_modules/@emnapi/core/LICENSE": {
+        "sha256": "2088f55c6731498410b20c95ebd345ed4a4a800bf74c0fba4d282fd2a021daaa",
+        "text": "MIT License\n\nCopyright (c) 2021-present Toyobayashi\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "package/node_modules/@emnapi/runtime/LICENSE": {
+        "sha256": "2088f55c6731498410b20c95ebd345ed4a4a800bf74c0fba4d282fd2a021daaa",
+        "text": "MIT License\n\nCopyright (c) 2021-present Toyobayashi\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "package/node_modules/@emnapi/wasi-threads/LICENSE": {
+        "sha256": "2088f55c6731498410b20c95ebd345ed4a4a800bf74c0fba4d282fd2a021daaa",
+        "text": "MIT License\n\nCopyright (c) 2021-present Toyobayashi\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "package/node_modules/tslib/CopyrightNotice.txt": {
+        "sha256": "da16ddb65f8ca390998fb99223d0112498b56b45784d00afd77ff8ce1ac4de8b",
+        "text": "/******************************************************************************\r\nCopyright (c) Microsoft Corporation.\r\n\r\nPermission to use, copy, modify, and/or distribute this software for any\r\npurpose with or without fee is hereby granted.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH\r\nREGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY\r\nAND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,\r\nINDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM\r\nLOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR\r\nOTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR\r\nPERFORMANCE OF THIS SOFTWARE.\r\n***************************************************************************** */\r\n\r\n"
+      },
+      "package/node_modules/tslib/LICENSE.txt": {
+        "sha256": "210b19e543130388c68654b7497e967119ce17145f66ab7d85688fbd70f08751",
+        "text": "Copyright (c) Microsoft Corporation.\r\n\r\nPermission to use, copy, modify, and/or distribute this software for any\r\npurpose with or without fee is hereby granted.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH\r\nREGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY\r\nAND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,\r\nINDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM\r\nLOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR\r\nOTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR\r\nPERFORMANCE OF THIS SOFTWARE."
+      }
+    },
+    "source_license_mentions": {},
+    "package_code_executed": false
+  }
+]

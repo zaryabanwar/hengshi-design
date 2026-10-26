@@ -1,0 +1,102 @@
+{
+  "product": "Hengshi Design v1",
+  "date": "2026-10-14",
+  "status": "TODO",
+  "executed": false,
+  "purpose": "One bounded repair and requalification of the same approved native trial, following actual NQ06 unavailable stop",
+  "causeEvidence": {
+    "background": "Preview94:3199 has no fill in fresh allocation inspector; native Presentation exposes ink text on black. Add an opaque approved white fill to this owned preview only.",
+    "caption": "Owned M_OPEN_M Services instance85:3220 currently has Label=Services (fixture) and shows it in Design, while captured Presentation after switching lacks it. Actual root cause not proven. Native Detach instance is observed enabled for that one owned unwired fixture.",
+    "officialGuidance": {
+      "url": "https://help.figma.com/hc/en-us/articles/360061175334-Create-interactive-components-with-variants",
+      "retrieved": "2026-10-14",
+      "summary": "Figma documents override preservation for interactive variants and restrictions on nondefault-variant instance overrides. That makes override handling a hypothesis here, not proof of the specific caption defect."
+    }
+  },
+  "requestedScope": {
+    "previewFill": {
+      "id": "94:3199",
+      "token": "D035/palette/white",
+      "opacity": 1
+    },
+    "detachOnly": [
+      {
+        "host": "H_OPEN_M",
+        "parent": "85:3173",
+        "control": "82:3174",
+        "caption": "Services (fixture)"
+      },
+      {
+        "host": "H_CLOSED_M",
+        "parent": "85:3175",
+        "control": "85:3178",
+        "caption": "Services (fixture)"
+      },
+      {
+        "host": "M_CLOSED_M",
+        "parent": "85:3196",
+        "control": "85:3199",
+        "caption": "Services (fixture)"
+      },
+      {
+        "host": "M_OPEN_M",
+        "parent": "85:3217",
+        "control": "85:3220",
+        "caption": "Services (fixture)"
+      },
+      {
+        "host": "M_OPEN_H",
+        "parent": "85:3238",
+        "control": "85:3241",
+        "caption": "Services (fixture)"
+      },
+      {
+        "host": "M_CLOSED_H",
+        "parent": "85:3259",
+        "control": "85:3262",
+        "caption": "Services (fixture)"
+      },
+      {
+        "host": "H_CLOSED_H",
+        "parent": "85:3280",
+        "control": "85:3283",
+        "caption": "Services (fixture)"
+      },
+      {
+        "host": "H_OPEN_H",
+        "parent": "85:3301",
+        "control": "85:3304",
+        "caption": "Services (fixture)"
+      }
+    ],
+    "unchanged": [
+      "Eight owned host variants and their geometry",
+      "Sixteen reacting control sources and target tuples and two no-op settings",
+      "Existing one flow and preview/instance allocation",
+      "All original references, PRIM masters, sharing and account settings"
+    ],
+    "extraAllocations": 0,
+    "delete": false,
+    "MCPCalls": 0,
+    "AIPrompts": 0,
+    "paid": false,
+    "Git": false
+  },
+  "admission": [
+    "Verify approved same file/Page, Section101:3204, set85:3174, preview94:3199/instance94:3177 and native archive guards",
+    "Freshly inspect all eight listed background instance parents: exact host ownership, Label Services (fixture), x24/y76/220x56, token/font/children and no reactions. Stop if any required observation is unavailable or differs",
+    "Verify native Detach instance is enabled for that exact owned control. Never use Detach all nested instances, reset source/master overrides or delete/recreate references",
+    "For each one local detach, preserve and inspect discovered actual group/text IDs, owner, geometry, caption, typography, token/fill and no-reaction state. Stop on unexpected type or geometry/owner change; no automatic repair beyond named scope",
+    "Bind D035/palette/white only to preview94:3199. Preserve size320x560/clip/Vertical/entry and all sixteen reaction tuples/two no-op controls",
+    "Save native before/after and separately record CRC preservation; no native restore or whole-original-source equivalence claim"
+  ],
+  "qualification": "Restart the one existing flow and repeat unchanged NQ01–NQ06. Caption must stay visibly identifiable throughout. Stop on any mismatch or unavailable observation; preserve evidence and no further automatic repair.",
+  "decisionGate": "Independent result/proposal review, followed by explicit founder authorization for this one bounded repair/resume after the approved trial stop. This is not visual acceptance, B01 release, application or Phase1 acceptance.",
+  "limits": [
+    "Caption repair is a tested candidate, not an assured fix",
+    "Team-restricted sharing observed; no owner-only or membership audit claim",
+    "Prior unequal archive payloads and label selector churn remain explicit",
+    "No other hierarchy rewrite, action modification, account/provider change, cost or full-phase acceptance"
+  ],
+  "independentReview": null
+}

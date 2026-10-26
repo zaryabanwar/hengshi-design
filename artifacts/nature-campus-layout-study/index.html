@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hengshi Design · v1 campus layout study</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#dce5da;color:#233327;font:14px system-ui}
+canvas{display:block;width:100%;height:100%}header{position:absolute;top:16px;left:16px;z-index:2;background:#faf9f5ed;padding:16px;border-radius:12px;max-width:420px;box-shadow:0 4px 18px #14251c15}
+h1{font-size:19px;margin:0 0 6px}p{margin:6px 0;line-height:1.4}button,a{font:inherit}button{padding:9px 12px;border:1px solid #839080;border-radius:6px;background:#fff;color:#233327;cursor:pointer;margin:3px 2px}button[aria-pressed=true]{background:#233327;color:#fff}button:focus-visible,a:focus-visible{outline:3px solid #906735;outline-offset:3px}a{color:#3f674c}footer{position:absolute;bottom:12px;left:16px;right:16px;z-index:2;background:#faf9f5ed;padding:10px 14px;border-radius:8px;max-width:700px}.muted{font-size:12px;color:#4e5e50}#status{font-size:12px}#fallback{padding:240px 24px 100px}#fallback img{width:min(100%,1100px);display:block}
+@media(max-width:600px){header{top:8px;left:8px;right:8px;padding:10px;max-width:none}h1{font-size:16px}header .help{display:none}footer{left:8px;right:8px;bottom:8px;font-size:12px}button{padding:8px} }
+</style>
+<script type="importmap">{"imports":{"three":"/apps/web/node_modules/three/build/three.module.js","three/addons/":"/apps/web/node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<header><h1>Hengshi Design · Nature campus</h1><p>v1 layout study · final third revision · proposed appearance</p>
+<nav aria-label="Model cameras"><button data-view="overview" aria-pressed="true">Overview</button><button data-view="arrival" aria-pressed="false">Arrival</button><button data-view="department" aria-pressed="false">Department</button></nav>
+<p class="help">Drag to orbit · scroll or pinch to zoom · right-drag to pan</p>
+<p><a href="../../docs/phase-1-3d/concepts/nature-campus-direction-2026-10-04.png" target="_blank" rel="noopener">Compare the selected concept</a> · <a href="../nature-campus-prototype/index.html">Earlier model</a></p>
+<p id="status" role="status">Loading the same model for all three views…</p></header>
+<footer><span id="view-note">Dominant reception, five service wings, terraced valley and supported river crossings.</span><p class="muted">Visual prototype only. No live staff, walking controller, streaming or sound. Solid materials; realistic surface textures and appearance acceptance remain pending.</p></footer>
+<noscript><div id="fallback"><p>Interactive inspection requires JavaScript. These are renders of the same proposed model:</p><img src="overview.png" alt="Campus layout overview"><img src="arrival.png" alt="Arrival at reception"><img src="department.png" alt="Department information board and consultation space"></div></noscript>
+<script type="module">
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+const notes={overview:'Dominant reception, five service wings, terraced valley and supported river crossings.',arrival:'Arrival opens toward reception; branching timber supports and the welcome desk sit in the same model.',department:'Strategy fixture: an information board and consultation seating. No staff presence is represented.'};
+const views={overview:[[62,58,80],[5,3,-22]],arrival:[[0,2.8,24],[0,4.4,-16]],department:[[-31,2.7,10],[-28,3.2,-1]]};
+try {
+const scene=new THREE.Scene();scene.background=new THREE.Color('#cad9d0');scene.fog=new THREE.Fog('#cad9d0',180,520);
+const camera=new THREE.PerspectiveCamera(47,innerWidth/innerHeight,.1,1100);
+const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setSize(innerWidth,innerHeight);renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=.95;
+renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.domElement.setAttribute('aria-label','Orbitable campus model. Camera buttons provide overview, arrival and department views.');document.body.appendChild(renderer.domElement);
+const controls=new OrbitControls(camera,renderer.domElement);controls.maxDistance=380;controls.enableDamping=false;
+scene.add(new THREE.HemisphereLight(0xeaf3ff,0x5f7346,1.1));
+const sun=new THREE.DirectionalLight(0xffe5bb,2.0);sun.position.set(-45,85,45);sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);Object.assign(sun.shadow.camera,{left:-85,right:85,top:110,bottom:-100,near:1,far:240});sun.shadow.bias=-.001;sun.shadow.normalBias=.10;scene.add(sun);
+function render(){renderer.render(scene,camera)}
+function view(name){camera.position.fromArray(views[name][0]);controls.target.fromArray(views[name][1]);controls.update();document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===name)));document.getElementById('view-note').textContent=notes[name];render()}
+document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>view(b.dataset.view)));
+controls.addEventListener('change',render);view('overview');
+new GLTFLoader().load('./nature-campus-layout.glb',g=>{g.scene.traverse(o=>{if(o.isMesh){o.receiveShadow=true;o.castShadow=!/valley|river below|promenade|floor/i.test(o.name)}});scene.add(g.scene);window.prototypeLoaded=true;window.layoutInspection={meshCount:0,revisionCycle:3,views:Object.keys(views)};g.scene.traverse(o=>{if(o.isMesh)window.layoutInspection.meshCount++});document.getElementById('status').textContent='Model loaded · all three views inspect this export';render()},undefined,e=>{document.getElementById('status').textContent='Model loading failed. Same-model renders are available below.';console.error(e);const fallback=document.createElement('div');fallback.id='fallback';fallback.innerHTML='<img src="overview.png" alt="Campus layout render">';document.body.appendChild(fallback)});
+addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);render()});
+} catch(error){document.getElementById('status').textContent='WebGL is unavailable. Use the same-model renders.';const fallback=document.createElement('div');fallback.id='fallback';fallback.innerHTML='<a href="overview.png">Overview render</a> · <a href="arrival.png">Arrival render</a> · <a href="department.png">Department render</a>';document.body.appendChild(fallback);console.error(error)}
+</script></body></html>

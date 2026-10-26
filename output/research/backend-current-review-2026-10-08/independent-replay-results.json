@@ -1,0 +1,540 @@
+{
+  "status": "DOING",
+  "metadata_replay": "PASS",
+  "manifest_inputs": 132,
+  "old_and_new_wheel_records": [
+    40,
+    40
+  ],
+  "registry_raw_responses_verified": 80,
+  "source_raw_responses_verified": 15,
+  "active_edges": 45,
+  "roots": 12,
+  "changes": [
+    {
+      "name": "fastapi",
+      "previous": "0.142.2",
+      "candidate": "0.143.0"
+    },
+    {
+      "name": "iniconfig",
+      "previous": "2.3.0",
+      "candidate": "2.3.1"
+    },
+    {
+      "name": "opentelemetry-api",
+      "previous": "1.45.0",
+      "candidate": "1.45.1"
+    },
+    {
+      "name": "pydantic",
+      "previous": "2.13.5",
+      "candidate": "2.14.0"
+    },
+    {
+      "name": "pydantic-core",
+      "previous": "2.46.5",
+      "candidate": "2.50.0"
+    },
+    {
+      "name": "sqlalchemy",
+      "previous": "2.1.3",
+      "candidate": "2.1.4"
+    }
+  ],
+  "propagated_extras": {
+    "psycopg": [
+      "binary"
+    ],
+    "uvicorn": [
+      "standard"
+    ]
+  },
+  "protected_inputs_verified": 6,
+  "pydantic_commit": "fcdefa7198c4fc94a22eecf1a5b7926e20b9fc8a",
+  "unsigned_tag": true,
+  "core_404_preserved": true,
+  "registry_responses": [
+    {
+      "name": "alembic",
+      "kind": "exact_source",
+      "bytes": 9433,
+      "sha256": "29405ae8e4531888baad34fb1b144bf35153c35f7e0e61d2c36720de87ac7662"
+    },
+    {
+      "name": "alembic",
+      "kind": "project_source",
+      "bytes": 173820,
+      "sha256": "2fc5722b46ffbfd43ee99311578984392322c44f204b68d3a63b3ca026e898eb"
+    },
+    {
+      "name": "annotated-doc",
+      "kind": "exact_source",
+      "bytes": 8643,
+      "sha256": "1aab691a5f37dd292e6d93ab53f7da5d839f56ba605345f017022ec75eb643af"
+    },
+    {
+      "name": "annotated-doc",
+      "kind": "project_source",
+      "bytes": 16442,
+      "sha256": "c101949aac4f010748b3dd5171cb7c9bc934363b414cfff6e0089fcdd64966f9"
+    },
+    {
+      "name": "annotated-types",
+      "kind": "exact_source",
+      "bytes": 17411,
+      "sha256": "a6e8e5b10c8fd2f596bba53e015cd37f6279fb5cec26ce0c5e9968625be4fefa"
+    },
+    {
+      "name": "annotated-types",
+      "kind": "project_source",
+      "bytes": 31556,
+      "sha256": "bbe701554fc03915c80b90d54d2af7b15fa716679967376e86f222ea7fc80181"
+    },
+    {
+      "name": "anyio",
+      "kind": "exact_source",
+      "bytes": 6904,
+      "sha256": "e2ee22fad2fab3e66be503cba9b41945607d3076c9b7aa49b6e2f95ac323efab"
+    },
+    {
+      "name": "anyio",
+      "kind": "project_source",
+      "bytes": 117226,
+      "sha256": "1e4ec0390d86d4dd7f5c9cf7682ca142b0832b6b467505a0466fdf82ede554ed"
+    },
+    {
+      "name": "bcrypt",
+      "kind": "exact_source",
+      "bytes": 65122,
+      "sha256": "b10232044e4e8f8b96e18eac2b85bf456def67257b4f28f3b9de775151fc57c1"
+    },
+    {
+      "name": "bcrypt",
+      "kind": "project_source",
+      "bytes": 579028,
+      "sha256": "5e5bd952b7aaa5d57f1e896a67ee518f525181468629025c1633a389ffe51948"
+    },
+    {
+      "name": "certifi",
+      "kind": "exact_source",
+      "bytes": 4584,
+      "sha256": "c6fe912677e373608eab51e324946005998faeb0fa999e6ddada24676e3556d3"
+    },
+    {
+      "name": "certifi",
+      "kind": "project_source",
+      "bytes": 113109,
+      "sha256": "3b94efeb879dddf7172a6ab03cd53b68e76f046c11893249d6c17e99a0293a3c"
+    },
+    {
+      "name": "click",
+      "kind": "exact_source",
+      "bytes": 4722,
+      "sha256": "4e36adc9b46f837e10ce801b7a478f9146fefdfb287292b7668fc64b1474e41d"
+    },
+    {
+      "name": "click",
+      "kind": "project_source",
+      "bytes": 102510,
+      "sha256": "b10ffc8a5a9025eefe4fd243cd90c54724f6c372d9eface5b4648577bc479039"
+    },
+    {
+      "name": "colorama",
+      "kind": "exact_source",
+      "bytes": 19759,
+      "sha256": "43fb351344384a44c2b7d7fff1c63496b89ac830aea714301525c1f3718addd1"
+    },
+    {
+      "name": "colorama",
+      "kind": "project_source",
+      "bytes": 87746,
+      "sha256": "91d65e313ddffe647e53485367394d6b784d5631b77a6e68836367ec14ff8cf7"
+    },
+    {
+      "name": "dnspython",
+      "kind": "exact_source",
+      "bytes": 7494,
+      "sha256": "716fe57e8485de9fe631b8bb86e2afa7a1a2e4f668488f04bb1d5f9f76341bc2"
+    },
+    {
+      "name": "dnspython",
+      "kind": "project_source",
+      "bytes": 50169,
+      "sha256": "fbd0d1d3838cfd7a27b0c0f5e3e5dbeb05a94632c626981f10c894e3cae9490b"
+    },
+    {
+      "name": "email-validator",
+      "kind": "exact_source",
+      "bytes": 28635,
+      "sha256": "a25f269d66f8744bc455a860896d6930ef8a8e1ce65372b772015c5ab711fa37"
+    },
+    {
+      "name": "email-validator",
+      "kind": "project_source",
+      "bytes": 71616,
+      "sha256": "159e51a29a35363042c7fb747a5a80945bc337b4abe0e9e154de6780620d77a8"
+    },
+    {
+      "name": "fastapi",
+      "kind": "exact_source",
+      "bytes": 29288,
+      "sha256": "c3741694e209bd83dcf4543308d3d3212cec45c4adf38fe9741ef2f5a5e8222c"
+    },
+    {
+      "name": "fastapi",
+      "kind": "project_source",
+      "bytes": 527280,
+      "sha256": "4ca5690a478568a701a62ae25c40cb0345042ea5fbb1a170e2083c43ef47a8e0"
+    },
+    {
+      "name": "h11",
+      "kind": "exact_source",
+      "bytes": 10603,
+      "sha256": "97f4efb9cc00826f0408076983adc1a1e48e8f2cabf403aaf250f724e081440d"
+    },
+    {
+      "name": "h11",
+      "kind": "project_source",
+      "bytes": 30401,
+      "sha256": "82edaa88c2cda51615d444a45e725eeaa7693f6821ab1422de1f031753d9556c"
+    },
+    {
+      "name": "httpcore",
+      "kind": "exact_source",
+      "bytes": 24057,
+      "sha256": "e26eca5c3d288fe9e6446af9bcbca1038ba688629d5c8a2886c47d74718d87a2"
+    },
+    {
+      "name": "httpcore",
+      "kind": "project_source",
+      "bytes": 115200,
+      "sha256": "d73786f0235ce97aa3239d411456be526320325e3b259b6fd25a0ce93775771c"
+    },
+    {
+      "name": "httptools",
+      "kind": "exact_source",
+      "bytes": 48073,
+      "sha256": "97560d8be02630233207e675069a575cfb84fc10aa03c1bceb7c69c19b2cbeae"
+    },
+    {
+      "name": "httptools",
+      "kind": "project_source",
+      "bytes": 443112,
+      "sha256": "747e7e60d45da6379cb6f894ab73561e77b848ce9d3f34012029c0811bea6658"
+    },
+    {
+      "name": "httpx",
+      "kind": "exact_source",
+      "bytes": 9117,
+      "sha256": "293bfab7bf587fcd0825f1bd8eed8e6303285ba14801b15659853827cbe30796"
+    },
+    {
+      "name": "httpx",
+      "kind": "project_source",
+      "bytes": 119911,
+      "sha256": "bb69a37ba295d008ec1ae05b324c4f5e64fba48b7276189ebf2a2920dd2f1fc8"
+    },
+    {
+      "name": "idna",
+      "kind": "exact_source",
+      "bytes": 9180,
+      "sha256": "e7cbd26e23ce60f6cb3a151d2adf3b1b087bb8f10ac2d9d6db70fdccbf3bb041"
+    },
+    {
+      "name": "idna",
+      "kind": "project_source",
+      "bytes": 65706,
+      "sha256": "724599748057193c3fa6f98e11c76d7acc14a7b0d005bc2a506fc8e2ec41c117"
+    },
+    {
+      "name": "iniconfig",
+      "kind": "exact_source",
+      "bytes": 4687,
+      "sha256": "10a4699a386b2309a98d4c368b6696e80562cefebe20107610337447d7f13f65"
+    },
+    {
+      "name": "iniconfig",
+      "kind": "project_source",
+      "bytes": 18682,
+      "sha256": "1591c5c139ff21feef7aa7bc0dfcec12faf5c1e5ee6107007af4ca500eeae50f"
+    },
+    {
+      "name": "mako",
+      "kind": "exact_source",
+      "bytes": 4954,
+      "sha256": "d8150ed85799eea2ec6e01c2386e3331c6a01e0caed32b0d6ff0749dec100aa7"
+    },
+    {
+      "name": "mako",
+      "kind": "project_source",
+      "bytes": 86767,
+      "sha256": "d5d50a3e5eca1c6b5c723efb09085f6482f3e27b5762b5a067a51e59af232a4e"
+    },
+    {
+      "name": "markupsafe",
+      "kind": "exact_source",
+      "bytes": 135847,
+      "sha256": "85cd5bce3f85e67ab0b921be9c9ba144a7cc01a2d02b85ad65b1f8dabeac4c57"
+    },
+    {
+      "name": "markupsafe",
+      "kind": "project_source",
+      "bytes": 1019822,
+      "sha256": "b3050a5783f4d6141ad0815e5316a21a14c9906afdec919cc0623b2e2f02ca77"
+    },
+    {
+      "name": "opentelemetry-api",
+      "kind": "exact_source",
+      "bytes": 3580,
+      "sha256": "b123eaf1e55d65e518f96a426b4df91a8d2b6e7184927530ea706b2c16e36a65"
+    },
+    {
+      "name": "opentelemetry-api",
+      "kind": "project_source",
+      "bytes": 135449,
+      "sha256": "52b4f4416b287013ea6b0937b1daffe28b58c310389aad5db618cb83a86fb684"
+    },
+    {
+      "name": "packaging",
+      "kind": "exact_source",
+      "bytes": 5748,
+      "sha256": "4f190d2f0b312b3086058cee64ab4333bf3ce67fb78b4c2bdb43899049b29f4d"
+    },
+    {
+      "name": "packaging",
+      "kind": "project_source",
+      "bytes": 90241,
+      "sha256": "9d7a2885e9e79296598f8c943e0a94c2468e21c800abd26ed13c633465a78835"
+    },
+    {
+      "name": "pluggy",
+      "kind": "exact_source",
+      "bytes": 7064,
+      "sha256": "db23d1227f5870da7538b1e29371d9fc9a93b0499989f8e3ef021fdccd75bc8e"
+    },
+    {
+      "name": "pluggy",
+      "kind": "project_source",
+      "bytes": 44872,
+      "sha256": "61d625a54043b8181d28ea7a583a7542c7f45f065e8efa3964804cd7f42ff0f4"
+    },
+    {
+      "name": "psycopg",
+      "kind": "exact_source",
+      "bytes": 5978,
+      "sha256": "67267f5b63adf658b4d04848e36f70fc4b32ffc31e3bc6ea9086117bce8cc96a"
+    },
+    {
+      "name": "psycopg",
+      "kind": "project_source",
+      "bytes": 101187,
+      "sha256": "a4806149d2b8bcfcd0ba7b96f202a79d7e02818dd8e3525105e53417fa120cfd"
+    },
+    {
+      "name": "psycopg-binary",
+      "kind": "exact_source",
+      "bytes": 61551,
+      "sha256": "73c5e31cb3c5d454391b3e218a5c7f2d1e693c2cd338e1b63a65cc667a83bfaf"
+    },
+    {
+      "name": "psycopg-binary",
+      "kind": "project_source",
+      "bytes": 2884001,
+      "sha256": "450a8611045aaed67cfa4529f760c97cbecbd3949a7bd1ffe2e20eede0f63120"
+    },
+    {
+      "name": "pydantic",
+      "kind": "exact_source",
+      "bytes": 113380,
+      "sha256": "27adf1fed0a6b71485bfb0215dff61fa7746f26b75a38f3ac0a5106275fe78fc"
+    },
+    {
+      "name": "pydantic",
+      "kind": "project_source",
+      "bytes": 1849380,
+      "sha256": "b2eb30a5e0f8f5dfeda2d7f8f20f130430d6ed997279554559d607ccf2f3254f"
+    },
+    {
+      "name": "pydantic-core",
+      "kind": "exact_source",
+      "bytes": 113156,
+      "sha256": "cf0a2e5e0fc29573f55b44dd79dd6c8f09c844eee60f67818d466ce872591005"
+    },
+    {
+      "name": "pydantic-core",
+      "kind": "project_source",
+      "bytes": 12796080,
+      "sha256": "10256084aeca22c576011722237cdf966caa6d21ae41e88c971c3871524fd466"
+    },
+    {
+      "name": "pygments",
+      "kind": "exact_source",
+      "bytes": 4500,
+      "sha256": "330104a10adc8a587e3f98f4e207557125ca0c1d489e129334da5acb2b813a03"
+    },
+    {
+      "name": "pygments",
+      "kind": "project_source",
+      "bytes": 144965,
+      "sha256": "d48c0f74c08c450aeabfd5e90fc93b01ec127074c0f3e22cfe74a968c4299771"
+    },
+    {
+      "name": "pyjwt",
+      "kind": "exact_source",
+      "bytes": 5552,
+      "sha256": "f13089db8caff0efbdec85ab5c3fa281a3cc76d5b708c74fab427c98e1f29a0d"
+    },
+    {
+      "name": "pyjwt",
+      "kind": "project_source",
+      "bytes": 112244,
+      "sha256": "f27b70fef1d687acbb556d995f87431a32e6c231b711d4325b7877314a7f3227"
+    },
+    {
+      "name": "pytest",
+      "kind": "exact_source",
+      "bytes": 9742,
+      "sha256": "8ed48304ba7fd0ae974a041f117487b499d553b40e5ce55a9ece677e946f68dd"
+    },
+    {
+      "name": "pytest",
+      "kind": "project_source",
+      "bytes": 282699,
+      "sha256": "203f15ce63523ec5dbbf3462328c7e26d9903240a5f7b1782d36b8f9f388bfac"
+    },
+    {
+      "name": "pytest-asyncio",
+      "kind": "exact_source",
+      "bytes": 6271,
+      "sha256": "7d73d89418af6bc6b73a93948bc304486249893ec37cd973c25dd3ff8038c08f"
+    },
+    {
+      "name": "pytest-asyncio",
+      "kind": "project_source",
+      "bytes": 122854,
+      "sha256": "32c6b59e92b94b466fc1fecf9b6b5ba44d2054b452d7a9d93618097d77e5a76f"
+    },
+    {
+      "name": "python-dotenv",
+      "kind": "exact_source",
+      "bytes": 32947,
+      "sha256": "89701376846132aefd76202d07dad6e84febe4a426a12973004e13018af15c41"
+    },
+    {
+      "name": "python-dotenv",
+      "kind": "project_source",
+      "bytes": 112447,
+      "sha256": "81740143492657824fa7802bdc67e966220bb18461c997ebc264778c65582359"
+    },
+    {
+      "name": "pyyaml",
+      "kind": "exact_source",
+      "bytes": 66402,
+      "sha256": "c3f35597bc2f08cc990c2a5fe57bef6687b3a3d7c61d8b0ba4cc067777eb1def"
+    },
+    {
+      "name": "pyyaml",
+      "kind": "project_source",
+      "bytes": 558621,
+      "sha256": "d0c463a86ed24144dd112fd1fe43b7c208e52c7d3903c2f51c84acfb5b10c749"
+    },
+    {
+      "name": "sqlalchemy",
+      "kind": "exact_source",
+      "bytes": 72576,
+      "sha256": "5009ed1d3e5fd11cdfcc415d7e2174f425bcffb2ca051c4fa40860206089a044"
+    },
+    {
+      "name": "sqlalchemy",
+      "kind": "project_source",
+      "bytes": 5545774,
+      "sha256": "014f7158aa73418a3eef32506ba80b054c9c843ff47375451767f947a4329ce4"
+    },
+    {
+      "name": "starlette",
+      "kind": "exact_source",
+      "bytes": 8733,
+      "sha256": "3c8a35b55ca178a7db904e8b69b155fd1146e56bd958623642cf533c78491e5c"
+    },
+    {
+      "name": "starlette",
+      "kind": "project_source",
+      "bytes": 240787,
+      "sha256": "efa27d0ed98bc0f5ae5bd9ede971a34dabdcf5559506e33115cfe5aa308598d3"
+    },
+    {
+      "name": "typing-extensions",
+      "kind": "exact_source",
+      "bytes": 5631,
+      "sha256": "2140da00d62dde967f52d0be0ae28444f1d6a3fe603f52c83c23988c32122d5a"
+    },
+    {
+      "name": "typing-extensions",
+      "kind": "project_source",
+      "bytes": 97612,
+      "sha256": "2e567d7ca1b1c70a8e8f23b7204a8bd51b0bacd39e2fe53b33b153cff255ac68"
+    },
+    {
+      "name": "typing-inspection",
+      "kind": "exact_source",
+      "bytes": 4629,
+      "sha256": "0605416f2f37f2df04e45360cf5ce4ca5eeca6d414bb6ddb1ec5a9893c62ac30"
+    },
+    {
+      "name": "typing-inspection",
+      "kind": "project_source",
+      "bytes": 20393,
+      "sha256": "01f2c8a64e34ff03f674ac255b8bf5dd43d175d701059d9420cc9509c3c0edf0"
+    },
+    {
+      "name": "tzdata",
+      "kind": "exact_source",
+      "bytes": 3613,
+      "sha256": "27547051b51333cb7ba03f91b91fc7c92179937ccb62bb81ce46dc943c69873b"
+    },
+    {
+      "name": "tzdata",
+      "kind": "project_source",
+      "bytes": 59488,
+      "sha256": "9786d1e238ebb33aac8d5310c636ff3814574db25c7c35df492aade2d936b58e"
+    },
+    {
+      "name": "uvicorn",
+      "kind": "exact_source",
+      "bytes": 8728,
+      "sha256": "65378bebfff63d5a58ba9b6ff6ff1ae5047721da28e27802e2aafa19fece8444"
+    },
+    {
+      "name": "uvicorn",
+      "kind": "project_source",
+      "bytes": 233469,
+      "sha256": "f42e1a8b18d6a39d33ba83271d8de49cdb9ecab9d6f3276dbddf20a12e4b9eb4"
+    },
+    {
+      "name": "watchfiles",
+      "kind": "exact_source",
+      "bytes": 34147,
+      "sha256": "ba585baa9af3fdcdb897e9e6f5711a7551aa994c617318e898b3ec749383f73a"
+    },
+    {
+      "name": "watchfiles",
+      "kind": "project_source",
+      "bytes": 1283795,
+      "sha256": "2795db1fe5e9f085874975ce6afd5546e3348a699ea8076d50abd006b636a40c"
+    },
+    {
+      "name": "websockets",
+      "kind": "exact_source",
+      "bytes": 137515,
+      "sha256": "d7467a8e1b462e54e60362ae6ae9d2b08ef67b028500672e365039adafa6a786"
+    },
+    {
+      "name": "websockets",
+      "kind": "project_source",
+      "bytes": 2146015,
+      "sha256": "498e41c1f3bcbdeccc4f94bf4a1120c8d23d0bfcd703c349f58a76b80cf01c18"
+    }
+  ],
+  "limits": "Metadata/source bytes only; no fetched wheel bytes, installation, provenance attestation, native/import/API/DB/full graph/adoption proof."
+}

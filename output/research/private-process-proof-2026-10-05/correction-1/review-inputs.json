@@ -1,0 +1,129 @@
+{
+  "status": "DOING",
+  "scope": "New anonymous private-process security/transport proposal and catalogue reference plus signed-to-verified descriptor correction only. No implementation, account, grant, parser/CSRF package, exact lifetime/retention or provider/ingress selection; all evidence is source/proposal coherence, no runtime proof.",
+  "source_observations": {
+    "checked_on": "2026-10-05",
+    "context7": "/websites/fastapi_tiangolo",
+    "opened_primary_urls": [
+      "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+      "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
+      "https://cheatsheetseries.owasp.org/cheatsheets/WebSocket_Security_Cheat_Sheet.html",
+      "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie",
+      "https://fastapi.tiangolo.com/advanced/response-cookies/",
+      "https://fastapi.tiangolo.com/advanced/websockets/",
+      "https://starlette.dev/middleware/"
+    ],
+    "record_type": "Primary source identities and local package source observations, not archived primary pages or production version selection."
+  },
+  "producer_validation": {
+    "local_references_resolve": true,
+    "catalogue_exact_bounded_delta": true,
+    "unchanged_guards": 10,
+    "ordinary_prose_tests_added": false
+  },
+  "files": [
+    {
+      "source": "docs/phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md",
+      "snapshot": "00-PRIVATE_PROCESS_PROOF.md",
+      "bytes": 16586,
+      "sha256": "891ebd8f5e051b335f833f32ccff4242d755a326dd827798fc87126df35ae036"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/INTERFACE_CATALOG.md",
+      "snapshot": "01-INTERFACE_CATALOG.md",
+      "bytes": 32203,
+      "sha256": "03bc48bf98eefcd51fa5682cdfe5579bf23ea3d9e149acb40195de0e79450abd"
+    },
+    {
+      "source": "output/research/private-process-proof-2026-10-05/interface-catalog.before.md",
+      "snapshot": "02-interface-catalog.before.md",
+      "bytes": 31646,
+      "sha256": "a8db67351427e93f9f32568691fa0a9f96bd7778cb3fa3bcefe74ce900798301"
+    },
+    {
+      "source": "output/research/private-process-proof-2026-10-05/native-framework-observations.json",
+      "snapshot": "03-native-framework-observations.json",
+      "bytes": 2572,
+      "sha256": "dd82b09d591c7289f9e537cba9b665d4cea6c1f904d696afab5208e632fa0388"
+    },
+    {
+      "source": "output/research/private-process-proof-2026-10-05/unchanged-inputs.json",
+      "snapshot": "04-unchanged-inputs.json",
+      "bytes": 1381,
+      "sha256": "e973826b4f6833105459c4259ef06a7e7433ed14614ffffa6cfb0b7eaa3883fa"
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "05-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5"
+    },
+    {
+      "source": ".specify/memory/constitution.md",
+      "snapshot": "06-constitution.md",
+      "bytes": 16234,
+      "sha256": "33ec0bb02b0d0d9a55d0971589bd19f7242f5d56da130f8f496bc1d31a8b5d23"
+    },
+    {
+      "source": "PROJECT.md",
+      "snapshot": "07-PROJECT.md",
+      "bytes": 10942,
+      "sha256": "a483bd2713fe420322772ab7fb07c848aaf103088697c05ab91f35d2e5ea1461"
+    },
+    {
+      "source": "DECISIONS.md",
+      "snapshot": "08-DECISIONS.md",
+      "bytes": 72891,
+      "sha256": "1d53a14ac3347ebeefeeb728e03862b09de111b748cef4e48d5f4ca19141b6d8"
+    },
+    {
+      "source": "TASKS.md",
+      "snapshot": "09-TASKS.md",
+      "bytes": 3811,
+      "sha256": "158e06c0d8cd67859c8b459b96dce3449cb4d16788d3c520e99d8823f72edcd3"
+    },
+    {
+      "source": "specs/001-platform-security-hardening/spec.md",
+      "snapshot": "10-spec.md",
+      "bytes": 26311,
+      "sha256": "6649110c6ac2a83f4ac8840dbf0288792f6251dceb69e51e9da328bb8bd59b0b"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/process-fields.csv",
+      "snapshot": "11-process-fields.csv",
+      "bytes": 71516,
+      "sha256": "5737b8f4bd47b90a5020ae8943cb2c7786582c605e14d97212b4334ffb26522a"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/interface-catalog.csv",
+      "snapshot": "12-interface-catalog.csv",
+      "bytes": 9367,
+      "sha256": "42018a3e5cc6c1edf488c392b0349688a92b2cab5a8f50e717f1bca84a70a49c"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/SECURITY_PRIVACY_CONTRACT.md",
+      "snapshot": "13-SECURITY_PRIVACY_CONTRACT.md",
+      "bytes": 24722,
+      "sha256": "74ab420b5bec9f0aad72f59178f4ea7c626bd14edfa9d4ba02f3aa1dd0a1a254"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/DATA_CONTRACT.md",
+      "snapshot": "14-DATA_CONTRACT.md",
+      "bytes": 14779,
+      "sha256": "46acfea99e0d4db91fb84603699e577100fffa79ca34f242d658a41deab8fb33"
+    },
+    {
+      "source": "docs/phase-1-architecture/contracts/HANDOFF_LIFECYCLE.md",
+      "snapshot": "15-HANDOFF_LIFECYCLE.md",
+      "bytes": 16323,
+      "sha256": "2f6972361779ab6b36deeb17249e69f23b04c1468e765e66f504f9fc239f30ff"
+    },
+    {
+      "source": "docs/phase-1-ux-architecture/FLOWS.md",
+      "snapshot": "16-FLOWS.md",
+      "bytes": 29631,
+      "sha256": "168015a15b51c03cdf1f1532572d7b45c397708651c579c3e1e2025d5ee27097"
+    }
+  ],
+  "correction": "PPP-MED-001 only: protected HttpOnly cookie remains sole browser bearer transport; script-readable and unapproved stores excluded. No new transport or runtime claim."
+}

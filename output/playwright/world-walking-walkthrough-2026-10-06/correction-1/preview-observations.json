@@ -1,0 +1,7 @@
+{
+  "initial_open_exit_code": 1,
+  "initial_error": "net::ERR_CONNECTION_REFUSED at local document preview port 8766",
+  "verification": "No listener plus direct HTTP refusal confirmed; no browser restart or application process termination.",
+  "recovery": "Started native Python http.server bound to 127.0.0.1:8766 from workspace, hidden; verified listener PID18668 and HTTP200, reused already-open isolated CLI browser.",
+  "limits": "Read-only static document preview; not application/API/database startup or continuing health guarantee. Active preview logs excluded from frozen packet."
+}

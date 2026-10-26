@@ -1,0 +1,12 @@
+### Ran Playwright code
+```js
+await page.getByRole('button', { name: 'Mount scene' }).click();
+```
+### Page
+- Page URL: http://127.0.0.1:5277/
+- Page Title: Hengshi tooling fixture — v1
+- Console: 0 errors, 2 warnings
+### Snapshot
+- [Snapshot](./page-2026-10-06T00-04-51-203Z.yml)
+### Events
+- New console entries: console-2026-10-06T00-02-58-892Z.log#L2

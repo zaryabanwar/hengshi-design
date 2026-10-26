@@ -1,0 +1,5008 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "date": "2026-10-14",
+  "scope": "Finite open-host normal-success/selection subgraph for B01-P09/P10 across all three hosts. No additional Recovery disclosure/closed-product state is invented. This is a contributor to BNP03, not the complete executable B01 plan.",
+  "authority_inputs": [
+    {
+      "path": "output/research/b01-prototype-workflow-2026-10-13/source-bindings-and-cases-v1.json",
+      "sha256": "9111515d85dc0359da8739e370b4e6884855c100659a442b4210b847ebc80c91"
+    },
+    {
+      "path": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/review-native-successor/independent-review-native-successor-v1.json",
+      "sha256": "d6712b2f2e3ecb06560fbf2b3bbf14f5cc92c0b19881fa3a5082dbfabd8c4ae6"
+    }
+  ],
+  "mechanism_observed": "Eight-state HIGH/MEDIUM isolated native trial has six-case bounded independent PASS. This does not qualify LOW/SEMANTIC, all three host layouts or this enlarged graph.",
+  "nodes": [
+    {
+      "symbol": "navigation/S-HIGH/S-HIGH/OPEN",
+      "template": "TPL-GLOBAL-NAVIGATION",
+      "active": "S-HIGH",
+      "pending": "S-HIGH",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "21:291"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "navigation/S-HIGH/S-MEDIUM/OPEN",
+      "template": "TPL-GLOBAL-NAVIGATION",
+      "active": "S-HIGH",
+      "pending": "S-MEDIUM",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "21:291"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "navigation/S-HIGH/S-LOW/OPEN",
+      "template": "TPL-GLOBAL-NAVIGATION",
+      "active": "S-HIGH",
+      "pending": "S-LOW",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "21:291"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "navigation/S-HIGH/S-SEMANTIC/OPEN",
+      "template": "TPL-GLOBAL-NAVIGATION",
+      "active": "S-HIGH",
+      "pending": "S-SEMANTIC",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "21:291"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "navigation/S-MEDIUM/S-HIGH/OPEN",
+      "template": "TPL-GLOBAL-NAVIGATION",
+      "active": "S-MEDIUM",
+      "pending": "S-HIGH",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "21:365"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "navigation/S-MEDIUM/S-MEDIUM/OPEN",
+      "template": "TPL-GLOBAL-NAVIGATION",
+      "active": "S-MEDIUM",
+      "pending": "S-MEDIUM",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "21:365"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "navigation/S-MEDIUM/S-LOW/OPEN",
+      "template": "TPL-GLOBAL-NAVIGATION",
+      "active": "S-MEDIUM",
+      "pending": "S-LOW",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "21:365"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "navigation/S-MEDIUM/S-SEMANTIC/OPEN",
+      "template": "TPL-GLOBAL-NAVIGATION",
+      "active": "S-MEDIUM",
+      "pending": "S-SEMANTIC",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "21:365"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "navigation/S-LOW/S-HIGH/OPEN",
+      "template": "TPL-GLOBAL-NAVIGATION",
+      "active": "S-LOW",
+      "pending": "S-HIGH",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "21:328"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "navigation/S-LOW/S-MEDIUM/OPEN",
+      "template": "TPL-GLOBAL-NAVIGATION",
+      "active": "S-LOW",
+      "pending": "S-MEDIUM",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "21:328"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "navigation/S-LOW/S-LOW/OPEN",
+      "template": "TPL-GLOBAL-NAVIGATION",
+      "active": "S-LOW",
+      "pending": "S-LOW",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "21:328"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "navigation/S-LOW/S-SEMANTIC/OPEN",
+      "template": "TPL-GLOBAL-NAVIGATION",
+      "active": "S-LOW",
+      "pending": "S-SEMANTIC",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "21:328"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "navigation/S-SEMANTIC/S-HIGH/OPEN",
+      "template": "TPL-GLOBAL-NAVIGATION",
+      "active": "S-SEMANTIC",
+      "pending": "S-HIGH",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "21:402"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "navigation/S-SEMANTIC/S-MEDIUM/OPEN",
+      "template": "TPL-GLOBAL-NAVIGATION",
+      "active": "S-SEMANTIC",
+      "pending": "S-MEDIUM",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "21:402"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "navigation/S-SEMANTIC/S-LOW/OPEN",
+      "template": "TPL-GLOBAL-NAVIGATION",
+      "active": "S-SEMANTIC",
+      "pending": "S-LOW",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "21:402"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "navigation/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "template": "TPL-GLOBAL-NAVIGATION",
+      "active": "S-SEMANTIC",
+      "pending": "S-SEMANTIC",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "21:402"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "directory/S-HIGH/S-HIGH/OPEN",
+      "template": "TPL-DIRECTORY-SEARCH",
+      "active": "S-HIGH",
+      "pending": "S-HIGH",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "27:382"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "directory/S-HIGH/S-MEDIUM/OPEN",
+      "template": "TPL-DIRECTORY-SEARCH",
+      "active": "S-HIGH",
+      "pending": "S-MEDIUM",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "27:382"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "directory/S-HIGH/S-LOW/OPEN",
+      "template": "TPL-DIRECTORY-SEARCH",
+      "active": "S-HIGH",
+      "pending": "S-LOW",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "27:382"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "directory/S-HIGH/S-SEMANTIC/OPEN",
+      "template": "TPL-DIRECTORY-SEARCH",
+      "active": "S-HIGH",
+      "pending": "S-SEMANTIC",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "27:382"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "directory/S-MEDIUM/S-HIGH/OPEN",
+      "template": "TPL-DIRECTORY-SEARCH",
+      "active": "S-MEDIUM",
+      "pending": "S-HIGH",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "27:430"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "directory/S-MEDIUM/S-MEDIUM/OPEN",
+      "template": "TPL-DIRECTORY-SEARCH",
+      "active": "S-MEDIUM",
+      "pending": "S-MEDIUM",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "27:430"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "directory/S-MEDIUM/S-LOW/OPEN",
+      "template": "TPL-DIRECTORY-SEARCH",
+      "active": "S-MEDIUM",
+      "pending": "S-LOW",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "27:430"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "directory/S-MEDIUM/S-SEMANTIC/OPEN",
+      "template": "TPL-DIRECTORY-SEARCH",
+      "active": "S-MEDIUM",
+      "pending": "S-SEMANTIC",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "27:430"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "directory/S-LOW/S-HIGH/OPEN",
+      "template": "TPL-DIRECTORY-SEARCH",
+      "active": "S-LOW",
+      "pending": "S-HIGH",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "27:478"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "directory/S-LOW/S-MEDIUM/OPEN",
+      "template": "TPL-DIRECTORY-SEARCH",
+      "active": "S-LOW",
+      "pending": "S-MEDIUM",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "27:478"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "directory/S-LOW/S-LOW/OPEN",
+      "template": "TPL-DIRECTORY-SEARCH",
+      "active": "S-LOW",
+      "pending": "S-LOW",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "27:478"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "directory/S-LOW/S-SEMANTIC/OPEN",
+      "template": "TPL-DIRECTORY-SEARCH",
+      "active": "S-LOW",
+      "pending": "S-SEMANTIC",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "27:478"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "directory/S-SEMANTIC/S-HIGH/OPEN",
+      "template": "TPL-DIRECTORY-SEARCH",
+      "active": "S-SEMANTIC",
+      "pending": "S-HIGH",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "27:526"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "directory/S-SEMANTIC/S-MEDIUM/OPEN",
+      "template": "TPL-DIRECTORY-SEARCH",
+      "active": "S-SEMANTIC",
+      "pending": "S-MEDIUM",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "27:526"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "directory/S-SEMANTIC/S-LOW/OPEN",
+      "template": "TPL-DIRECTORY-SEARCH",
+      "active": "S-SEMANTIC",
+      "pending": "S-LOW",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "27:526"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "directory/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "template": "TPL-DIRECTORY-SEARCH",
+      "active": "S-SEMANTIC",
+      "pending": "S-SEMANTIC",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "27:526"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-OPEN",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "recovery_host/S-HIGH/S-HIGH/OPEN",
+      "template": "TPL-SYSTEM-RECOVERY",
+      "active": "S-HIGH",
+      "pending": "S-HIGH",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "29:1515"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-ERROR",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design; synthetic recovery fixture retained independently of mode",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "recovery_host/S-HIGH/S-MEDIUM/OPEN",
+      "template": "TPL-SYSTEM-RECOVERY",
+      "active": "S-HIGH",
+      "pending": "S-MEDIUM",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "29:1515"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-ERROR",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design; synthetic recovery fixture retained independently of mode",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "recovery_host/S-HIGH/S-LOW/OPEN",
+      "template": "TPL-SYSTEM-RECOVERY",
+      "active": "S-HIGH",
+      "pending": "S-LOW",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "29:1515"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-ERROR",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design; synthetic recovery fixture retained independently of mode",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "recovery_host/S-HIGH/S-SEMANTIC/OPEN",
+      "template": "TPL-SYSTEM-RECOVERY",
+      "active": "S-HIGH",
+      "pending": "S-SEMANTIC",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "29:1515"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-ERROR",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design; synthetic recovery fixture retained independently of mode",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "recovery_host/S-MEDIUM/S-HIGH/OPEN",
+      "template": "TPL-SYSTEM-RECOVERY",
+      "active": "S-MEDIUM",
+      "pending": "S-HIGH",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "29:1609"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-ERROR",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design; synthetic recovery fixture retained independently of mode",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "recovery_host/S-MEDIUM/S-MEDIUM/OPEN",
+      "template": "TPL-SYSTEM-RECOVERY",
+      "active": "S-MEDIUM",
+      "pending": "S-MEDIUM",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "29:1609"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-ERROR",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design; synthetic recovery fixture retained independently of mode",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "recovery_host/S-MEDIUM/S-LOW/OPEN",
+      "template": "TPL-SYSTEM-RECOVERY",
+      "active": "S-MEDIUM",
+      "pending": "S-LOW",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "29:1609"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-ERROR",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design; synthetic recovery fixture retained independently of mode",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "recovery_host/S-MEDIUM/S-SEMANTIC/OPEN",
+      "template": "TPL-SYSTEM-RECOVERY",
+      "active": "S-MEDIUM",
+      "pending": "S-SEMANTIC",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "29:1609"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-ERROR",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design; synthetic recovery fixture retained independently of mode",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "recovery_host/S-LOW/S-HIGH/OPEN",
+      "template": "TPL-SYSTEM-RECOVERY",
+      "active": "S-LOW",
+      "pending": "S-HIGH",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "29:1703"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-ERROR",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design; synthetic recovery fixture retained independently of mode",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "recovery_host/S-LOW/S-MEDIUM/OPEN",
+      "template": "TPL-SYSTEM-RECOVERY",
+      "active": "S-LOW",
+      "pending": "S-MEDIUM",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "29:1703"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-ERROR",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design; synthetic recovery fixture retained independently of mode",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "recovery_host/S-LOW/S-LOW/OPEN",
+      "template": "TPL-SYSTEM-RECOVERY",
+      "active": "S-LOW",
+      "pending": "S-LOW",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "29:1703"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-ERROR",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design; synthetic recovery fixture retained independently of mode",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "recovery_host/S-LOW/S-SEMANTIC/OPEN",
+      "template": "TPL-SYSTEM-RECOVERY",
+      "active": "S-LOW",
+      "pending": "S-SEMANTIC",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "29:1703"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-ERROR",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design; synthetic recovery fixture retained independently of mode",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "recovery_host/S-SEMANTIC/S-HIGH/OPEN",
+      "template": "TPL-SYSTEM-RECOVERY",
+      "active": "S-SEMANTIC",
+      "pending": "S-HIGH",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "29:1797"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-ERROR",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design; synthetic recovery fixture retained independently of mode",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "recovery_host/S-SEMANTIC/S-MEDIUM/OPEN",
+      "template": "TPL-SYSTEM-RECOVERY",
+      "active": "S-SEMANTIC",
+      "pending": "S-MEDIUM",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "29:1797"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-ERROR",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design; synthetic recovery fixture retained independently of mode",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "recovery_host/S-SEMANTIC/S-LOW/OPEN",
+      "template": "TPL-SYSTEM-RECOVERY",
+      "active": "S-SEMANTIC",
+      "pending": "S-LOW",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "29:1797"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-ERROR",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design; synthetic recovery fixture retained independently of mode",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    },
+    {
+      "symbol": "recovery_host/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "template": "TPL-SYSTEM-RECOVERY",
+      "active": "S-SEMANTIC",
+      "pending": "S-SEMANTIC",
+      "panel": "OPEN",
+      "source_candidate_ids": [
+        "29:1797"
+      ],
+      "source_status": "Candidate only; fresh admission still required",
+      "public_source_state": "STATE-ERROR",
+      "owned_actual_id": null,
+      "context_fixture": "Services/design; synthetic recovery fixture retained independently of mode",
+      "children_recipe": "Matched private synthetic controls, active/pending labels and stable named scroll body; no production primitive functional claim",
+      "evidence_identity": "Private implementation node; public evidence owner/state/profile resolved by the complete allocation, not an invented state ID"
+    }
+  ],
+  "edges": [
+    {
+      "from": "navigation/S-HIGH/S-HIGH/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-HIGH/S-HIGH/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-HIGH/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-HIGH/S-HIGH/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-HIGH/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-HIGH/S-HIGH/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-HIGH/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "navigation/S-HIGH/S-HIGH/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-HIGH",
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-HIGH/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-HIGH/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-HIGH/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-HIGH/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-HIGH/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-HIGH/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-HIGH/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "navigation/S-HIGH/S-MEDIUM/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-MEDIUM",
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-HIGH/S-LOW/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-HIGH/S-LOW/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-HIGH/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-HIGH/S-LOW/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-HIGH/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-HIGH/S-LOW/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-HIGH/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "navigation/S-HIGH/S-LOW/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-LOW",
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-HIGH/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-HIGH/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-HIGH/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-HIGH/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-HIGH/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-HIGH/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-HIGH/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "navigation/S-HIGH/S-SEMANTIC/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-SEMANTIC",
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-HIGH/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-MEDIUM/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-HIGH/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-HIGH/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-MEDIUM/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-HIGH/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-MEDIUM/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-HIGH/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-HIGH",
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-MEDIUM/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-MEDIUM/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-MEDIUM/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-MEDIUM/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-MEDIUM",
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-LOW/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-MEDIUM/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-LOW/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-LOW/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-MEDIUM/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-LOW/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-MEDIUM/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-LOW/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-LOW",
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-MEDIUM/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-MEDIUM/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-MEDIUM/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "navigation/S-MEDIUM/S-SEMANTIC/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-SEMANTIC",
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "navigation/S-LOW/S-HIGH/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-LOW/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-LOW/S-HIGH/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-LOW/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-LOW/S-HIGH/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-LOW/S-HIGH/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-LOW/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "navigation/S-LOW/S-HIGH/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-HIGH",
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-LOW/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-LOW/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-LOW/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-LOW/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-LOW/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-LOW/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-LOW/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "navigation/S-LOW/S-MEDIUM/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-MEDIUM",
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-LOW/S-LOW/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-LOW/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-LOW/S-LOW/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-LOW/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-LOW/S-LOW/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-LOW/S-LOW/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-LOW/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "navigation/S-LOW/S-LOW/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-LOW",
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-LOW/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-LOW/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-LOW/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-LOW/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-LOW/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-LOW/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-LOW/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "navigation/S-LOW/S-SEMANTIC/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-SEMANTIC",
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-HIGH/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-SEMANTIC/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-HIGH/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-SEMANTIC/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-HIGH/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-SEMANTIC/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-HIGH/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-HIGH/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-HIGH",
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-SEMANTIC/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-SEMANTIC/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-SEMANTIC/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-MEDIUM/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-MEDIUM",
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-LOW/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-SEMANTIC/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-LOW/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-SEMANTIC/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-LOW/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-SEMANTIC/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-LOW/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-LOW/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-LOW",
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-SEMANTIC/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-SEMANTIC/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "navigation/S-SEMANTIC/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "navigation/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "navigation/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-SEMANTIC",
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-HIGH/S-HIGH/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-HIGH/S-HIGH/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-HIGH/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-HIGH/S-HIGH/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-HIGH/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-HIGH/S-HIGH/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-HIGH/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-HIGH/S-HIGH/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-HIGH",
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-HIGH/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-HIGH/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-HIGH/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-HIGH/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-HIGH/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-HIGH/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-HIGH/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-HIGH/S-MEDIUM/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-MEDIUM",
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-HIGH/S-LOW/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-HIGH/S-LOW/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-HIGH/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-HIGH/S-LOW/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-HIGH/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-HIGH/S-LOW/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-HIGH/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-HIGH/S-LOW/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-LOW",
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-HIGH/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-HIGH/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-HIGH/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-HIGH/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-HIGH/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-HIGH/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-HIGH/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-HIGH/S-SEMANTIC/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-SEMANTIC",
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-HIGH/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-MEDIUM/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-HIGH/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-HIGH/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-MEDIUM/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-HIGH/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-MEDIUM/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-HIGH/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-HIGH",
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-MEDIUM/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-MEDIUM/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-MEDIUM/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-MEDIUM/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-MEDIUM",
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-LOW/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-MEDIUM/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-LOW/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-LOW/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-MEDIUM/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-LOW/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-MEDIUM/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-LOW/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-LOW",
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-MEDIUM/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-MEDIUM/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-MEDIUM/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-MEDIUM/S-SEMANTIC/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-SEMANTIC",
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-LOW/S-HIGH/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-LOW/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-LOW/S-HIGH/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-LOW/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-LOW/S-HIGH/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-LOW/S-HIGH/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-LOW/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-LOW/S-HIGH/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-HIGH",
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-LOW/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-LOW/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-LOW/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-LOW/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-LOW/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-LOW/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-LOW/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-LOW/S-MEDIUM/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-MEDIUM",
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-LOW/S-LOW/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-LOW/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-LOW/S-LOW/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-LOW/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-LOW/S-LOW/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-LOW/S-LOW/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-LOW/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-LOW/S-LOW/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-LOW",
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-LOW/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-LOW/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-LOW/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-LOW/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-LOW/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-LOW/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-LOW/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-LOW/S-SEMANTIC/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-SEMANTIC",
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-HIGH/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-SEMANTIC/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-HIGH/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-SEMANTIC/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-HIGH/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-SEMANTIC/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-HIGH/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-HIGH/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-HIGH",
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-SEMANTIC/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-SEMANTIC/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-SEMANTIC/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-MEDIUM/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-MEDIUM",
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-LOW/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-SEMANTIC/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-LOW/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-SEMANTIC/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-LOW/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-SEMANTIC/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-LOW/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-LOW/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-LOW",
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-SEMANTIC/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-SEMANTIC/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "directory/S-SEMANTIC/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "directory/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "directory/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-SEMANTIC",
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-HIGH/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-HIGH/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-HIGH/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-HIGH/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-HIGH/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-HIGH/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-HIGH/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-HIGH/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-HIGH",
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-HIGH/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-HIGH/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-HIGH/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-MEDIUM/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-MEDIUM",
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-LOW/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-LOW/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-HIGH/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-LOW/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-HIGH/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-LOW/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-HIGH/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-LOW/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-LOW",
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-HIGH/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-HIGH/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-HIGH/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-HIGH/S-SEMANTIC/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-SEMANTIC",
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-HIGH/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-MEDIUM/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-HIGH/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-HIGH/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-MEDIUM/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-HIGH/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-MEDIUM/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-HIGH/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-HIGH",
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-MEDIUM/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-MEDIUM/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-MEDIUM/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-MEDIUM/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-MEDIUM",
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-LOW/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-MEDIUM/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-LOW/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-LOW/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-MEDIUM/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-LOW/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-MEDIUM/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-LOW/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-LOW",
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-MEDIUM/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-MEDIUM/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-MEDIUM/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-MEDIUM/S-SEMANTIC/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-SEMANTIC",
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-HIGH/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-LOW/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-HIGH/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-LOW/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-HIGH/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-HIGH/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-LOW/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-HIGH/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-HIGH",
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-LOW/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-LOW/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-LOW/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-MEDIUM/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-MEDIUM",
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-LOW/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-LOW/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-LOW/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-LOW/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-LOW/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-LOW/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-LOW/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-LOW/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-LOW",
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-LOW/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-LOW/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-LOW/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-LOW/S-SEMANTIC/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-SEMANTIC",
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-HIGH/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-SEMANTIC/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-HIGH/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-SEMANTIC/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-HIGH/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-SEMANTIC/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-HIGH/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-HIGH/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-HIGH/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-HIGH",
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-SEMANTIC/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-SEMANTIC/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-SEMANTIC/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-MEDIUM/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-MEDIUM/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-MEDIUM/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-MEDIUM",
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-LOW/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-SEMANTIC/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-LOW/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-SEMANTIC/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-LOW/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-SEMANTIC/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-LOW/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-LOW/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-LOW/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-LOW",
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-HIGH",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-SEMANTIC/S-HIGH/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-HIGH"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-MEDIUM",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-SEMANTIC/S-MEDIUM/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-MEDIUM"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-LOW",
+      "trigger": "On click",
+      "action": "Change to",
+      "to": "recovery_host/S-SEMANTIC/S-LOW/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-LOW"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "control": "pending_choice/S-SEMANTIC",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "All four choices admitted in this synthetic success path; ceiling/hard-gate refusals are separate P11 branches, never bypassed",
+      "preserve": [
+        "active",
+        "route",
+        "query",
+        "recovery context"
+      ],
+      "expected_pending": "S-SEMANTIC"
+    },
+    {
+      "from": "recovery_host/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "control": "apply_control",
+      "trigger": "On click",
+      "action": "No transition",
+      "to": "recovery_host/S-SEMANTIC/S-SEMANTIC/OPEN",
+      "animation": "Instant",
+      "owned_control_id": null,
+      "fixture": "Successful mode-apply outcome only; failed Apply P12 and unsaved preference P13 are separate branches",
+      "preserve": [
+        "route",
+        "query",
+        "open panel",
+        "recovery context",
+        "observed nonzero named scroll anchor"
+      ],
+      "expected_active": "S-SEMANTIC",
+      "expected_pending": "S-SEMANTIC"
+    }
+  ],
+  "no_automatic_apply": [
+    "focus",
+    "Tab",
+    "arrows",
+    "blur",
+    "elapsed time",
+    "pending choice alone"
+  ],
+  "keyboard_limit": "Native form Enter is a separate annotated submission contract; no global host Enter trigger is proposed. Figma cannot be claimed to prove focus-scoped native form semantics.",
+  "background_limit": "Only exact admitted visible private control targets with no reaction. Native fixture inactivity differs from real DOM inertness and focus trapping.",
+  "scroll_policy": "One fixed clipped vertically scrolling preview per family, matching child names and dimensions across variants; actual future pair behavior must be observed. No reset/scroll-preservation option is invented for Change to; native trial supplies only bounded observed evidence.",
+  "inspection_entries": [
+    {
+      "family": "navigation",
+      "entry": "navigation/S-HIGH/S-HIGH/OPEN",
+      "pair_entry_sequence": "From any active state, select desired activeA, Apply deliberately, then select pendingP. Inspect A/P before final Apply; this reaches every ordered pair without changing preview defaults or creating16 flows.",
+      "allocation": "One owned success-path preview per family proposed; exact source/evidence/profile/construction allocation remains held"
+    },
+    {
+      "family": "directory",
+      "entry": "directory/S-HIGH/S-HIGH/OPEN",
+      "pair_entry_sequence": "From any active state, select desired activeA, Apply deliberately, then select pendingP. Inspect A/P before final Apply; this reaches every ordered pair without changing preview defaults or creating16 flows.",
+      "allocation": "One owned success-path preview per family proposed; exact source/evidence/profile/construction allocation remains held"
+    },
+    {
+      "family": "recovery_host",
+      "entry": "recovery_host/S-HIGH/S-HIGH/OPEN",
+      "pair_entry_sequence": "From any active state, select desired activeA, Apply deliberately, then select pendingP. Inspect A/P before final Apply; this reaches every ordered pair without changing preview defaults or creating16 flows.",
+      "allocation": "One owned success-path preview per family proposed; exact source/evidence/profile/construction allocation remains held"
+    }
+  ],
+  "remaining_before_external_release": [
+    "Complete P01-P08 and P11-P22 branches, including refusal/failure/unsaved preference and timing generation stages",
+    "Resolve BNP01 identities and owners, BNP02 primitive anatomy, BNP04 nine-profile exact reuse/construction minima, BNP05 staged source/copy guards, BNP06 timer sequence",
+    "Bind fixed host/query/recovery fixtures, semantic labels, control anatomy, public evidence units and actual post-copy IDs after reviewed guarded allocation; current Services/design is a bounded synthetic candidate",
+    "Independent review complete executable plan; obtain exact new external-write release before copying/wiring",
+    "Qualify all four streams and three layouts including all16 active/pending pairs at required contexts/profiles; no extrapolation from the eight-state trial",
+    "Preserve original references and separate source equivalence, native restore/EXIT and founder B01/Phase1 acceptance"
+  ],
+  "external_write_released": false,
+  "runtime_proof": false,
+  "independent_review": null,
+  "recovery_context_limit": "The underlying recovery message and eligible actions stay visible and unchanged by choosing a mode; the successful Apply fixture does not repair the underlying recovery failure. Recovery is not assigned a new public Close/Open disclosure by this subgraph."
+}

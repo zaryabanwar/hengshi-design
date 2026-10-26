@@ -1,0 +1,11 @@
+{
+  "scope": "producer fixture correction only, no package/type/application changes",
+  "cause": "Direct isWebGLRenderer runtime marker is absent from the WebGLRenderer declaration type. Use the declared getContext() boundary and DOM WebGL2RenderingContext check instead.",
+  "source": "candidate/src/fixture.tsx:17",
+  "initial_evidence_preserved": true,
+  "remaining_package_diagnostic_codes": [
+    2430,
+    2416
+  ],
+  "skipLibCheck": false
+}

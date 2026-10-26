@@ -1,0 +1,19 @@
+<details id="booking-email">
+<summary>Booking email: prove mailbox access before choosing a slot</summary>
+<p><span class="tag proposed">Engineering proposal · review in progress</span> This explains the intended booking flow. It sends no email, verifies no code and shows no working booking controls. Visitors need no account or Microsoft sign-in.</p>
+<ol class="flow">
+<li><strong>Submit the existing brief</strong>Provide the six qualification fields and separate booking consent. A valid email spelling alone does not prove access to the mailbox.</li>
+<li><strong>Request a confirmation code</strong>The proposed service sends one eight-digit code to that current address. A queued email, provider acknowledgement or delivery timeout cannot show verified.</li>
+<li><strong>Copy, paste, then Verify</strong>Use one labeled field that accepts the whole code, including leading zeroes, and supports browser filling. Opening the email cannot verify anything; the original authorized booking process must submit it.</li>
+<li><strong>Continue to eligible slots</strong>Only a successful current code opens the separately checked availability step. Selecting a slot still needs review and guarded submission; an appointment remains pending until calendar and local evidence agree.</li>
+</ol>
+<div class="grid two">
+<article class="card"><h3>More time without more email</h3><p>The proposal gives a code ten minutes, warns before expiry and offers explicit More time. Up to ten ten-minute extensions keep the same code and attempt limit; expiry, address change or withdrawal cannot be reversed by an old control.</p></article>
+<article class="card"><h3>Correct the address safely</h3><p>Changing the address invalidates its old code and slot eligibility. A late email can still arrive, but its code cannot verify the corrected address. It never changes a confirmed appointment.</p></article>
+<article class="card"><h3>Resend deliberately</h3><p>A new code replaces the previous one under shared limits. If earlier delivery is uncertain, check that same action before retrying. A new tab or repeated click cannot bypass uncertainty or produce unlimited messages.</p></article>
+<article class="card"><h3>Recover a lost response</h3><p>If Verify succeeded but the reply was lost, check the same action rather than consuming another guess. Its historical result does not mean email verification is still current; the proposed slot-access freshness is thirty minutes.</p></article>
+</div>
+<p class="callout">Mailbox confirmation belongs to this booking. It is separate from staff Microsoft sign-in, conversation access, consent and appointment confirmation. An email code alone cannot recover a lost private process or inspect another visitor’s records.</p>
+<p class="small">The method, ten-minute code window, ten extensions, thirty-minute booking-action freshness and abuse limits are proposed design choices. D-076’s conversation inactivity rule remains separate. This panel does not prove accessible interaction, delivery, concurrency or security. Account/adapter capability, exact wire and authorized review projection, policy bindings, secret management, production screens and integrated acceptance remain required.</p>
+<div class="source-links"><a href="../phase-1-architecture/contracts/INTERFACE_CATALOG.md#email-ownership-control-proposal--2026-10-08">Controlling email ownership proposal</a><a href="../phase-1-ux-architecture/FLOWS.md#bf-01b-email-ownership">Existing visitor journey</a><a href="../phase-1-architecture/contracts/PRIVATE_PROCESS_PROOF.md#scope-and-recommendation">Separate private-process authority</a></div>
+</details>

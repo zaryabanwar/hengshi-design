@@ -1,0 +1,341 @@
+{
+  "product": "Hengshi Design v1",
+  "status": "DOING",
+  "review_complete": true,
+  "review_outcome": "PASS",
+  "date": "2026-10-13",
+  "reviewer": "/root/review_section_entry_v1",
+  "scope": "Independent review of unexecuted organizer-only conversion on owned root 76:3157, native admission, and existing isolated-trial/resume authority. No external design action executed by reviewer; no new external-write grant or phase acceptance.",
+  "packet": {
+    "path": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/review-section-entry/review-inputs-with-admission-v1.json",
+    "sha256": "6e090d89ce41ee17bd1c4de18d0da77b65ab64a19fff88cb1793f2ceb71cb379",
+    "input_count": 21,
+    "verified_binding_count": 21,
+    "all_frozen_bytes_and_sha256_match": true,
+    "all_current_sources_match_frozen": true,
+    "predecessor": {
+      "path": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/review-section-entry/review-inputs-v1.json",
+      "sha256": "0e49cb93e6014d71d0b3e1c1ef182ab560bb6e06e2b043638187377350125df2",
+      "input_count": 17,
+      "hash_verified": true,
+      "original_17_bindings_preserved_exactly": true
+    }
+  },
+  "verified_frozen_bindings": [
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/configured-trial-result-v1.json",
+      "snapshot": "inputs/00-configured-trial-result-v1.json",
+      "bytes": 3495,
+      "sha256": "bfbe6ee79e3db77d06609f3419b5707eb86ffde1047330a3b5e0a71fbd107892",
+      "verified_sha256": "bfbe6ee79e3db77d06609f3419b5707eb86ffde1047330a3b5e0a71fbd107892",
+      "verified_bytes": 3495,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-entry-correction-proposal-v1.json",
+      "snapshot": "inputs/01-section-entry-correction-proposal-v1.json",
+      "bytes": 4197,
+      "sha256": "b2796c562c98e01126890edc33389931f56778bfef6fb2e5fc9847d1f7162dd5",
+      "verified_sha256": "b2796c562c98e01126890edc33389931f56778bfef6fb2e5fc9847d1f7162dd5",
+      "verified_bytes": 4197,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/owned-root-before-entry-correction-v1.txt",
+      "snapshot": "inputs/02-owned-root-before-entry-correction-v1.txt",
+      "bytes": 15369,
+      "sha256": "31edb6582a829b8112aa2bb0573259f509e0ee8cc6d51423730baa18466fb8db",
+      "verified_sha256": "31edb6582a829b8112aa2bb0573259f509e0ee8cc6d51423730baa18466fb8db",
+      "verified_bytes": 15369,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/owned-root-convert-section-admission-v1.txt",
+      "snapshot": "inputs/03-owned-root-convert-section-admission-v1.txt",
+      "bytes": 16135,
+      "sha256": "a221a74ca5a53f36b88cb196232df99f58aa568593e5021b8c0a77ce633125d2",
+      "verified_sha256": "a221a74ca5a53f36b88cb196232df99f58aa568593e5021b8c0a77ce633125d2",
+      "verified_bytes": 16135,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/owned-root-convert-section-admission-v1.png",
+      "snapshot": "inputs/04-owned-root-convert-section-admission-v1.png",
+      "bytes": 104000,
+      "sha256": "9470cb27b4f062cc7a8fa80989cf0e60bdaa06bccb5d0798921104861afb7fe0",
+      "verified_sha256": "9470cb27b4f062cc7a8fa80989cf0e60bdaa06bccb5d0798921104861afb7fe0",
+      "verified_bytes": 104000,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/preview-design-settings-v1.txt",
+      "snapshot": "inputs/05-preview-design-settings-v1.txt",
+      "bytes": 14019,
+      "sha256": "fe5e074da574a6fd221f1b595ec5552847ed3e2ef25164427b01203515c24a6c",
+      "verified_sha256": "fe5e074da574a6fd221f1b595ec5552847ed3e2ef25164427b01203515c24a6c",
+      "verified_bytes": 14019,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/preview-vertical-settings-v1.txt",
+      "snapshot": "inputs/06-preview-vertical-settings-v1.txt",
+      "bytes": 10736,
+      "sha256": "9fab17cd6290d2aa4a5e5919a82b05959c8aa0448408a2e6fb6178c739336559",
+      "verified_sha256": "9fab17cd6290d2aa4a5e5919a82b05959c8aa0448408a2e6fb6178c739336559",
+      "verified_bytes": 10736,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/preview-hierarchy-observed-v1.json",
+      "snapshot": "inputs/07-preview-hierarchy-observed-v1.json",
+      "bytes": 2538,
+      "sha256": "033f24eb6b36231e7c8556a616042ad336e59518eef5f9df872996f3054d8500",
+      "verified_sha256": "033f24eb6b36231e7c8556a616042ad336e59518eef5f9df872996f3054d8500",
+      "verified_bytes": 2538,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/preview-instance-entry-observed-v1.txt",
+      "snapshot": "inputs/08-preview-instance-entry-observed-v1.txt",
+      "bytes": 14533,
+      "sha256": "cef7c39f36958f64463e88bc9b2fc92cb8ab23fb6186ceae1f355f4388f73f99",
+      "verified_sha256": "cef7c39f36958f64463e88bc9b2fc92cb8ab23fb6186ceae1f355f4388f73f99",
+      "verified_bytes": 14533,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/preview-entry-observation-v1.txt",
+      "snapshot": "inputs/09-preview-entry-observation-v1.txt",
+      "bytes": 11363,
+      "sha256": "c9c1c8b9193e5ff3185d4cc32b8446b3357fdbce5ac800f5520f57975d3ba183",
+      "verified_sha256": "c9c1c8b9193e5ff3185d4cc32b8446b3357fdbce5ac800f5520f57975d3ba183",
+      "verified_bytes": 11363,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/preview-entry-observation-v1.png",
+      "snapshot": "inputs/10-preview-entry-observation-v1.png",
+      "bytes": 109294,
+      "sha256": "10a29f2871fe8f1f5e161a4a6fbbc72d5c51fe3b55648f21c8566f4128c14c74",
+      "verified_sha256": "10a29f2871fe8f1f5e161a4a6fbbc72d5c51fe3b55648f21c8566f4128c14c74",
+      "verified_bytes": 109294,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/configured-preview-current-v1.png",
+      "snapshot": "inputs/11-configured-preview-current-v1.png",
+      "bytes": 105381,
+      "sha256": "ea6389d3d44d20e3640799af39ae962b2e22c9f10d2bdd03695f79169be853a7",
+      "verified_sha256": "ea6389d3d44d20e3640799af39ae962b2e22c9f10d2bdd03695f79169be853a7",
+      "verified_bytes": 105381,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/configured-archive-integrity-v1.json",
+      "snapshot": "inputs/12-configured-archive-integrity-v1.json",
+      "bytes": 454,
+      "sha256": "3fa42074aa7907de86c8976a8d90223e805f90917b59c375f58782f223a4d818",
+      "verified_sha256": "3fa42074aa7907de86c8976a8d90223e805f90917b59c375f58782f223a4d818",
+      "verified_bytes": 454,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/after-trial-configured-v1.fig",
+      "snapshot": "inputs/13-after-trial-configured-v1.fig",
+      "bytes": 384853,
+      "sha256": "e8511a6f6df54affde1621d91ac29802fd14ca30e4f316bceabbb78aefe547ad",
+      "verified_sha256": "e8511a6f6df54affde1621d91ac29802fd14ca30e4f316bceabbb78aefe547ad",
+      "verified_bytes": 384853,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/correction1/qualification-plan-v1.json",
+      "snapshot": "inputs/14-qualification-plan-v1.json",
+      "bytes": 18481,
+      "sha256": "447309d755223c9e8517d88293d550d89c4c73fbc66251611c3c3534e2bdada6",
+      "verified_sha256": "447309d755223c9e8517d88293d550d89c4c73fbc66251611c3c3534e2bdada6",
+      "verified_bytes": 18481,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "inputs/15-AGENTS.md",
+      "bytes": 7686,
+      "sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "verified_sha256": "55405cb02a96d05f7f6d68e56a588d743f83877fb2691a5a9f2c736126adbcc5",
+      "verified_bytes": 7686,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "docs/software-definition/03-autonomous-ai-development-workflow.md",
+      "snapshot": "inputs/16-03-autonomous-ai-development-workflow.md",
+      "bytes": 7964,
+      "sha256": "d1388aab446eb65efe1f9f285cc4c375d05611b5d2fe34f6e75f09e83b588e54",
+      "verified_sha256": "d1388aab446eb65efe1f9f285cc4c375d05611b5d2fe34f6e75f09e83b588e54",
+      "verified_bytes": 7964,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/owned-root-prototype-admission-v1.txt",
+      "snapshot": "inputs/17-owned-root-prototype-admission-v1.txt",
+      "bytes": 10991,
+      "sha256": "fffb4e887035d6d1b0099b5166778e8048f826fa6c15b497d3e3fbb9350fd58f",
+      "verified_sha256": "fffb4e887035d6d1b0099b5166778e8048f826fa6c15b497d3e3fbb9350fd58f",
+      "verified_bytes": 10991,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/owned-root-children-before-section-v1.json",
+      "snapshot": "inputs/18-owned-root-children-before-section-v1.json",
+      "bytes": 605,
+      "sha256": "66cec19bcc4ad5b83c12c9a1af5c31b52afad4b6a579bbbd3edd28534e3fb54f",
+      "verified_sha256": "66cec19bcc4ad5b83c12c9a1af5c31b52afad4b6a579bbbd3edd28534e3fb54f",
+      "verified_bytes": 605,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/owned-set-before-section-v1.txt",
+      "snapshot": "inputs/19-owned-set-before-section-v1.txt",
+      "bytes": 16490,
+      "sha256": "047b35363ac57af82db54fcd1ac1eaceed3857c7095585ee9d4eb8f7d3e8c576",
+      "verified_sha256": "047b35363ac57af82db54fcd1ac1eaceed3857c7095585ee9d4eb8f7d3e8c576",
+      "verified_bytes": 16490,
+      "source_matches_frozen": true
+    },
+    {
+      "source": "output/research/b01-prototype-workflow-2026-10-13/native-qualification/execution/section-entry-admission-supplement-v1.json",
+      "snapshot": "inputs/20-section-entry-admission-supplement-v1.json",
+      "bytes": 1884,
+      "sha256": "cbcb453c3be062c5f753ea79865dcb40288996b71b7e47aa0f6dca67e2fa6a0c",
+      "verified_sha256": "cbcb453c3be062c5f753ea79865dcb40288996b71b7e47aa0f6dca67e2fa6a0c",
+      "verified_bytes": 1884,
+      "source_matches_frozen": true
+    }
+  ],
+  "findings": [],
+  "actionable_finding_count": 0,
+  "assessment": [
+    {
+      "subject": "Plan and cause",
+      "result": "PASS",
+      "evidence": [
+        "inputs/14-qualification-plan-v1.json requested_write_scope.create and construction",
+        "inputs/09-preview-entry-observation-v1.txt:148-166",
+        "inputs/10-preview-entry-observation-v1.png"
+      ],
+      "conclusion": "Plan requires one owned top-level root, not a Frame-type root, and one preview flow entry. Saved nested-frame inspector lacks a starting-point row; inline pixels show the containing specimen organizer. This is an entry admission failure, not failed interaction qualification."
+    },
+    {
+      "subject": "Native action admission",
+      "result": "PASS",
+      "evidence": [
+        "inputs/02-owned-root-before-entry-correction-v1.txt:52-61,187-250",
+        "inputs/03-owned-root-convert-section-admission-v1.txt:317-331",
+        "inputs/04-owned-root-convert-section-admission-v1.png",
+        "inputs/17-owned-root-prototype-admission-v1.txt:159-167"
+      ],
+      "conclusion": "Selected owned organizer is unlocked Frame at (70000,60), 4000x2800, freeform, clip true, white fill. Native Convert to section button is exposed without disabled marker and corroborated by pixels. Root prototype inspector shows Add flow starting point and Add action, no configured flow/reaction row, and No scrolling. Saved observations establish admission only, not complete hidden-node census or conversion behavior."
+    },
+    {
+      "subject": "Containment and bounded clipping risk",
+      "result": "PASS",
+      "evidence": [
+        "inputs/07-preview-hierarchy-observed-v1.json",
+        "inputs/18-owned-root-children-before-section-v1.json",
+        "inputs/19-owned-set-before-section-v1.txt:209-253",
+        "inputs/05-preview-design-settings-v1.txt:177-215",
+        "inputs/06-preview-vertical-settings-v1.txt:160-162",
+        "inputs/08-preview-instance-entry-observed-v1.txt:168-183",
+        "inputs/11-configured-preview-current-v1.png"
+      ],
+      "conclusion": "Root directly contains set85:3174 and preview94:3199; preview contains instance94:3177. Set at (140,140) size1500x2400 ends (1640,2540); preview at (1850,140) size320x560 ends (2170,700). Both direct child rectangles lie inside root and both direct containers clip; preview overflow is Vertical and entry HIGH/MEDIUM/OPEN. This supports a bounded organizer-only attempt. It does not prove render bounds, subtree equality, retained inheritance or native conversion preservation."
+    },
+    {
+      "subject": "Qualification unchanged",
+      "result": "PASS",
+      "evidence": [
+        "inputs/14-qualification-plan-v1.json",
+        "inputs/00-configured-trial-result-v1.json"
+      ],
+      "conclusion": "Frozen plan contains eight variants, sixteen Change-to transitions including four Escape edges, two no-op edges, entry H_OPEN_M, and NQ-01 through NQ-06. Configured-result reports zero completed NQ observations. Organizer correction adds no transition or scenario and reduces no full B01/four-stream/profile obligation. Configured inventory is not behavioral proof."
+    },
+    {
+      "subject": "Preservation",
+      "result": "PASS",
+      "evidence": [
+        "inputs/12-configured-archive-integrity-v1.json",
+        "inputs/13-after-trial-configured-v1.fig"
+      ],
+      "conclusion": "Frozen archive bytes and SHA-256 verified. Saved CRC record reports no failure. Reviewer did not test native restore or whole-original-source equality; archive integrity is preservation evidence only."
+    }
+  ],
+  "official_sources": [
+    {
+      "url": "https://help.figma.com/hc/en-us/articles/360039823894-Create-and-manage-prototype-flows",
+      "retrieved": "2026-10-13",
+      "support": "Flow entries are assigned on top-level frames; manual start and inline preview are supported on all plans with edit access."
+    },
+    {
+      "url": "https://help.figma.com/hc/en-us/articles/9771500257687-Organize-your-canvas-with-sections",
+      "retrieved": "2026-10-13",
+      "support": "Sections organize all layer types at the canvas level and support fill/stroke and prototype organization."
+    },
+    {
+      "url": "https://help.figma.com/hc/en-us/articles/360041539473-Frames-in-Figma-Design",
+      "retrieved": "2026-10-13",
+      "support": "Figma documents frame-to-section conversion for organization. It does not guarantee IDs/property preservation for this trial."
+    },
+    {
+      "url": "https://help.figma.com/hc/en-us/articles/16194160540567-Use-sections-in-prototyping",
+      "retrieved": "2026-10-13",
+      "support": "Sections can organize prototype frames; section-target navigation has remembered-frame behavior. This proposal uses no new section-target navigation."
+    }
+  ],
+  "official_source_limit": "Docs and saved UI make the proposed correction plausible. Eligibility of the specific contained preview after conversion remains an inference to be checked in the actual native inspector; no guarantee is inferred from the words top-level.",
+  "authority": {
+    "applicable_governance": [
+      "AGENTS.md workflow gates3-5",
+      "constitution principlesIII/VII/VIII and authority order",
+      "inputs/16-03-autonomous-ai-development-workflow.md Approval Gates"
+    ],
+    "trusted_commissioning_context": [
+      {
+        "approval_call_id": "call_XfJJFsQ39UpPr9bGi7lB3t0j",
+        "question_scope": "Independently reviewed isolated native editor trial: one labelled area, eight states and preview; Apply, Close/reopen, Escape and background inactivity; existing references unchanged; no MCP/AI/paid/deletion/Git; no full B01/Phase1 acceptance.",
+        "exact_user_response": "Approve this isolated Figma trial"
+      },
+      {
+        "approval_call_id": "call_kdaue8CsEl20eN9cQIUmvxNZ",
+        "question_scope": "Resume same trial after independently verified source-nudge recovery, using visible disclosure navigation; eight states/checks/safeguards unchanged; override only recovered one-pixel-nudge stop; no MCP/AI/paid/deletion/Git.",
+        "exact_user_response": "Resume the same trial after recovery"
+      }
+    ],
+    "evidence_provenance": "Exact approvals supplied by the orchestrator from trusted current conversation; reviewer did not independently retrieve those calls. Frozen configured-result and current PROJECT_STATE.yaml corroborate recorded trial/resume authority. Initial plan null permission fields are unchanged preparation history, not later refusal.",
+    "interpretation": "Correcting a producer-selected organizer type while retaining purpose, existing file/page destination, owned allocation, graph, observation contract, zero-spend constraints and no-original-edit safeguards is within the approved isolated trial and unchanged-resume authority. No new product, destination, spending or destructive choice is proposed. Required independent review is now satisfied only for this frozen proposal/admission scope. This receipt supplies no fresh permission and no blanket design-write release.",
+    "repeated_founder_gate_required_for_this_mechanical_correction": false,
+    "founder_decision_required_if": "Fresh admission shows changed ownership/destination/allocation, original-source effects, prototype-bearing organizer behavior, material scope/risk/cost/public claims or unavailable required safeguards. Stop and seek the applicable decision; do not broaden the attempt.",
+    "settled_source_binding": "D-092/D-093 are separate settled direction/source-binding decisions, not the external-write grant for this trial."
+  },
+  "execution_conditions": [
+    "Immediately before any action, re-identify selected root76:3157, current Frame type, parent/page, unlocked state, position/dimensions/freeform/fill/clip, exactly recorded direct children, and no configured root flow/reaction. Preserve admission; stop on missing observations or drift.",
+    "Use only the observed normal-editor Convert to section action on that root. Do not reparent, cut, delete, recreate, paste substitutes, invoke MCP/AI/plugins/paid features or add another trial allocation.",
+    "After conversion freshly inspect actual root/set/preview/instance IDs, page and containment, all descendant inventory and child transforms, set/eight variants and existing reactions, preview fill/inherited visual context, size320x560, clip and Vertical scrolling, instance HIGH/MEDIUM/OPEN. Compare with pre-action evidence; stop and preserve evidence on unexpected change. Do not assume Frame-only organizer properties survive Section conversion.",
+    "Only if fresh native admission exposes it, add one labelled qualification flow starting point to preview94:3199. Verify the entry opens the preview and correct instance rather than the whole organizer. If unavailable or incorrect, stop; no fallback reparent or extra correction loop.",
+    "Execute the unchanged NQ-01 through NQ-06 only after that fresh admission. Record actual observations; stop on failure, quota/paid/account/plugin prompt or resource exhaustion with no automatic retry or activation.",
+    "Preserve actual result and editable archive. Required result review and later founder/pilot gates remain; no conversion or qualification success is claimed by this receipt."
+  ],
+  "scope_limits": [
+    "Conversion and flow-entry effects unexecuted/unverified.",
+    "NQ-01 through NQ-06 remain unexecuted.",
+    "No runtime behavior, native radio/DOM/AT focus, modal inertness, physical-phone or WCAG proof.",
+    "No full22 B01 scenarios, four-stream/full-profile coverage, full B01/pilot or integrated Phase1 acceptance.",
+    "No native restore, exhaustive original-node equality or cleanup/_EXIT proof.",
+    "No account/model/provider/authentication/spending changes; supplied capacity snapshot is not reverified by reviewer.",
+    "No application/source/dependency/Git action or extra delegation; only this review receipt written."
+  ],
+  "validation_classification": {
+    "artifact_integrity": "21 frozen byte/hash bindings and current-source matches verified; predecessor17 bindings preserved; plan structure inspected.",
+    "saved_native_evidence": "AX snapshots and all three frozen PNGs inspected.",
+    "actual_runtime_and_conversion_tests": "None executed."
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed staff console text directions v1",
+  "description": "IF-STAFF-15 initialized-channel text variants only. Explicit client/server references; module root denies. Shape grants no staff identity, assignment, consent, current ticket, ordering, delivery or retention. Upgrade/initialization/readiness and handoff/end HTTP shapes remain separate prerequisites. No visitor proof or arbitrary sender accepted.",
+  "not": {},
+  "$defs": {
+    "uuid_v4": {"$ref": "booking-creation-request.schema.json#/$defs/operation_id"},
+    "revision": {"$ref": "process-value.schema.json#/$defs/positive_revision"},
+    "consent_revision": {"$ref": "chat-text.schema.json#/$defs/consent_revision"},
+    "staff_text_admission": {
+      "type": "object", "additionalProperties": false,
+      "required": ["protocol_version", "kind", "channel_id", "stream_id", "handoff_id", "ownership_generation", "consent_revision", "release_identity", "operation_id", "command_revision"],
+      "properties": {
+        "protocol_version": {"type": "integer", "const": 1},
+        "kind": {"const": "staff_text_admission"},
+        "channel_id": {"$ref": "#/$defs/uuid_v4"},
+        "stream_id": {"$ref": "#/$defs/uuid_v4"},
+        "handoff_id": {"$ref": "process-value.schema.json#/$defs/uuid"},
+        "ownership_generation": {"$ref": "#/$defs/revision"},
+        "consent_revision": {"$ref": "#/$defs/consent_revision"},
+        "release_identity": {"$ref": "chat-text.schema.json#/$defs/release_identity"},
+        "operation_id": {"$ref": "#/$defs/uuid_v4"},
+        "command_revision": {"$ref": "#/$defs/revision"}
+      }
+    },
+    "staff_submit_text": {
+      "type": "object", "additionalProperties": false,
+      "required": ["protocol_version", "kind", "channel_id", "stream_id", "operation_id", "command_revision", "expected_ownership_generation", "expected_consent_revision", "payload"],
+      "properties": {
+        "protocol_version": {"type": "integer", "const": 1},
+        "kind": {"const": "staff_submit_text"},
+        "channel_id": {"$ref": "#/$defs/uuid_v4"},
+        "stream_id": {"$ref": "#/$defs/uuid_v4"},
+        "operation_id": {"$ref": "#/$defs/uuid_v4"},
+        "command_revision": {"$ref": "#/$defs/revision"},
+        "expected_ownership_generation": {"$ref": "#/$defs/revision"},
+        "expected_consent_revision": {"$ref": "#/$defs/consent_revision"},
+        "payload": {
+          "type": "object", "additionalProperties": false, "required": ["text"],
+          "properties": {"text": {"type": "string", "minLength": 1, "maxLength": 4000}}
+        }
+      }
+    },
+    "staff_reconcile_text": {
+      "type": "object", "additionalProperties": false,
+      "required": ["protocol_version", "kind", "channel_id", "stream_id", "operation_id", "command_revision", "expected_ownership_generation"],
+      "properties": {
+        "protocol_version": {"type": "integer", "const": 1},
+        "kind": {"const": "staff_reconcile_text"},
+        "channel_id": {"$ref": "#/$defs/uuid_v4"},
+        "stream_id": {"$ref": "#/$defs/uuid_v4"},
+        "operation_id": {"$ref": "#/$defs/uuid_v4"},
+        "command_revision": {"$ref": "#/$defs/revision"},
+        "expected_ownership_generation": {"$ref": "#/$defs/revision"}
+      }
+    },
+    "staff_command_result": {
+      "allOf": [
+        {"$ref": "chat-text.schema.json#/$defs/event_header"},
+        {"properties": {"kind": {"const": "staff_command_result"}, "payload": {"$ref": "#/$defs/result_payload"}}}
+      ],
+      "unevaluatedProperties": false
+    },
+    "result_payload": {
+      "type": "object", "additionalProperties": false,
+      "required": ["handoff_id", "ownership_generation", "operation_id", "command_revision", "state"],
+      "properties": {
+        "handoff_id": {"$ref": "process-value.schema.json#/$defs/uuid"},
+        "ownership_generation": {"$ref": "#/$defs/revision"},
+        "operation_id": {"$ref": "#/$defs/uuid_v4"},
+        "command_revision": {"$ref": "#/$defs/revision"},
+        "state": {"enum": ["admitted", "pending", "projected", "refused", "unavailable"]},
+        "code": {"enum": ["input_not_permitted", "recipient_unavailable", "outcome_unavailable"]},
+        "recovery": {"enum": ["reconcile", "inspect_conversation"]}
+      },
+      "oneOf": [
+        {"properties": {"state": {"enum": ["admitted", "projected"]}}, "not": {"anyOf": [{"required": ["code"]}, {"required": ["recovery"]}]}},
+        {"required": ["recovery"], "properties": {"state": {"const": "pending"}, "recovery": {"const": "reconcile"}}, "not": {"required": ["code"]}},
+        {"required": ["code", "recovery"], "properties": {"state": {"const": "refused"}, "code": {"enum": ["input_not_permitted", "recipient_unavailable"]}, "recovery": {"const": "inspect_conversation"}}},
+        {"required": ["code", "recovery"], "properties": {"state": {"const": "unavailable"}, "code": {"const": "outcome_unavailable"}, "recovery": {"const": "reconcile"}}}
+      ]
+    },
+    "visitor_text": {
+      "allOf": [
+        {"$ref": "chat-text.schema.json#/$defs/event_header"},
+        {"properties": {"kind": {"const": "visitor_text"}, "payload": {
+          "type": "object", "additionalProperties": false,
+          "required": ["handoff_id", "ownership_generation", "operation_id", "command_revision", "text"],
+          "properties": {
+            "handoff_id": {"$ref": "process-value.schema.json#/$defs/uuid"},
+            "ownership_generation": {"$ref": "#/$defs/revision"},
+            "operation_id": {"$ref": "#/$defs/uuid_v4"},
+            "command_revision": {"$ref": "#/$defs/revision"},
+            "text": {"type": "string", "minLength": 1, "maxLength": 2000}
+          }
+        }}}
+      ],
+      "unevaluatedProperties": false
+    },
+    "client": {"oneOf": [{"$ref": "#/$defs/staff_submit_text"}, {"$ref": "#/$defs/staff_reconcile_text"}]},
+    "server": {"oneOf": [{"$ref": "#/$defs/staff_text_admission"}, {"$ref": "#/$defs/staff_command_result"}, {"$ref": "#/$defs/visitor_text"}]}
+  }
+}

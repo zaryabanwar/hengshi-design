@@ -1,0 +1,174 @@
+{
+  "observed_date": "2026-10-04",
+  "status": "DOING",
+  "scope": "Exact published-archive and pinned-source licence inspection of two ambiguous candidate-lock entries; not full-graph approval",
+  "production_selected": false,
+  "independent_review": "TODO",
+  "application_code_changed": false,
+  "package_code_executed_in_this_inspection": false,
+  "archives_integrity_verified": true,
+  "bundled_records": [
+    {
+      "lock_path": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/core",
+      "name": "@emnapi/core",
+      "version": "1.11.1",
+      "archive_package_json": "package/node_modules/@emnapi/core/package.json",
+      "name_and_version_match": true,
+      "declared_license": "MIT",
+      "archive_notice_files": [
+        "package/node_modules/@emnapi/core/LICENSE"
+      ]
+    },
+    {
+      "lock_path": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/runtime",
+      "name": "@emnapi/runtime",
+      "version": "1.11.1",
+      "archive_package_json": "package/node_modules/@emnapi/runtime/package.json",
+      "name_and_version_match": true,
+      "declared_license": "MIT",
+      "archive_notice_files": [
+        "package/node_modules/@emnapi/runtime/LICENSE"
+      ]
+    },
+    {
+      "lock_path": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/wasi-threads",
+      "name": "@emnapi/wasi-threads",
+      "version": "1.2.2",
+      "archive_package_json": "package/node_modules/@emnapi/wasi-threads/package.json",
+      "name_and_version_match": true,
+      "declared_license": "MIT",
+      "archive_notice_files": [
+        "package/node_modules/@emnapi/wasi-threads/LICENSE"
+      ]
+    },
+    {
+      "lock_path": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@napi-rs/wasm-runtime",
+      "name": "@napi-rs/wasm-runtime",
+      "version": "1.1.4",
+      "archive_package_json": "package/node_modules/@napi-rs/wasm-runtime/package.json",
+      "name_and_version_match": true,
+      "declared_license": "MIT",
+      "archive_notice_files": []
+    },
+    {
+      "lock_path": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@tybys/wasm-util",
+      "name": "@tybys/wasm-util",
+      "version": "0.10.2",
+      "archive_package_json": "package/node_modules/@tybys/wasm-util/package.json",
+      "name_and_version_match": true,
+      "declared_license": "MIT",
+      "archive_notice_files": []
+    },
+    {
+      "lock_path": "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/tslib",
+      "name": "tslib",
+      "version": "2.8.1",
+      "archive_package_json": "package/node_modules/tslib/package.json",
+      "name_and_version_match": true,
+      "declared_license": "0BSD",
+      "archive_notice_files": [
+        "package/node_modules/tslib/CopyrightNotice.txt",
+        "package/node_modules/tslib/LICENSE.txt"
+      ]
+    }
+  ],
+  "webgl_constants": {
+    "version": "1.1.1",
+    "metadata_license_field_absent": true,
+    "archive_license": "MIT",
+    "archive_copyright": "2019 Tim van Scherpenzeel",
+    "source_headers": "CC0 dedication in recorded source/distribution files",
+    "disposition": "Preserve actual package MIT notice and separate source declarations; missing registry field is not missing package licence"
+  },
+  "direct_archive_correspondence": [
+    {
+      "name": "@napi-rs/wasm-runtime",
+      "version": "1.1.4",
+      "matching_files": 6,
+      "different_files": 0,
+      "absent_files": 0
+    },
+    {
+      "name": "@tybys/wasm-util",
+      "version": "0.10.2",
+      "matching_files": 39,
+      "different_files": 0,
+      "absent_files": 0
+    }
+  ],
+  "pinned_notice_sources": [
+    {
+      "name": "@napi-rs/wasm-runtime",
+      "version": "1.1.4",
+      "npm_reported_gitHead": "d5c3c43b45393f99ba151770f97bd472de533671",
+      "resolved_tag_commit": null,
+      "notice_urls": [
+        "https://github.com/napi-rs/napi-rs/blob/d5c3c43b45393f99ba151770f97bd472de533671/LICENSE"
+      ],
+      "source_build_provenance_cryptographically_verified": false
+    },
+    {
+      "name": "@tybys/wasm-util",
+      "version": "0.10.2",
+      "npm_reported_gitHead": "cded8e894fe40c7c6200a3fdb2bd33e328b7bb65",
+      "resolved_tag_commit": null,
+      "notice_urls": [],
+      "source_build_provenance_cryptographically_verified": false
+    },
+    {
+      "name": "@tailwindcss/oxide-wasm32-wasi",
+      "version": "4.3.3",
+      "npm_reported_gitHead": null,
+      "resolved_tag_commit": "c2b24dd15fed1c59dd521bd86082f520c9f5ad0d",
+      "notice_urls": [
+        "https://github.com/tailwindlabs/tailwindcss/blob/c2b24dd15fed1c59dd521bd86082f520c9f5ad0d/LICENSE"
+      ],
+      "source_build_provenance_cryptographically_verified": false
+    }
+  ],
+  "unresolved": [
+    "@tybys/wasm-util 0.10.2 declares MIT but complete maintainer copyright/permission notice was not found in its published archive or recorded exact source root; do not invent the notice",
+    "Pinned source references and matching archive bytes do not verify source-build provenance",
+    "Full graph licence inventory, shipping/tooling scope, advisory triage, SBOM, provenance, platform/runtime checks, independent review and acceptance remain required"
+  ],
+  "protected_inputs": {
+    "package.json": {
+      "expected_sha256": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b",
+      "actual_sha256": "a07f9f12c83736625d621781a1b30c8430452ef7e698fa626902cf16cef7946b"
+    },
+    "package-lock.json": {
+      "expected_sha256": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908",
+      "actual_sha256": "d2da4d7206344ba45645d7bafe4ec692bb738ea0c1c98c2680522688b5733908"
+    },
+    "apps/web/package.json": {
+      "expected_sha256": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a",
+      "actual_sha256": "83e4178348ec081922dd3d53d00c51446b655091d056ec09dde52a2496b04e2a"
+    },
+    "apps/web/package-lock.json": {
+      "expected_sha256": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d",
+      "actual_sha256": "35486fb012489de4c3b363198304a25f44a0396707db328190d7e056c06d416d"
+    },
+    "apps/api/requirements.txt": {
+      "expected_sha256": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd",
+      "actual_sha256": "b99f98e119cb6653f38b19d1ee83cc7f33d92a699083645ca19369a8912e89bd"
+    }
+  },
+  "evidence_files": [
+    {
+      "path": "targeted-license-metadata.json",
+      "sha256": "01c7fd8651e9e6274c7dc276f20631213f803142a4f18300e3aeb2711913e60e"
+    },
+    {
+      "path": "targeted-license-archive-evidence.json",
+      "sha256": "8ba7e6e3f75132d411bece717992178b9b0ec99c925b2b92542e2f7dc104c810"
+    },
+    {
+      "path": "bundled-license-correspondence.json",
+      "sha256": "25f8485798477ad323b3479c93f009a56ae2e552930d25b23f4b8a6367e203a7"
+    },
+    {
+      "path": "pinned-source-license-evidence.json",
+      "sha256": "c2b4780c1555c86ed440e35b2bb77e932203576062bf50fa4f2b051453db3662"
+    }
+  ]
+}

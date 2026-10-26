@@ -1,0 +1,7 @@
+{
+  "status": "DOING",
+  "scope": "Evidence serialization only, after all15 helper tests passed and their output was saved",
+  "error": "AttributeError: module ntpath has no attribute _isreserved",
+  "cause": "Producer requested the wrong private source helper name; installed isreserved calls _isreservedname.",
+  "resolution": "Inspect the actual installed function and capture _isreservedname. No helper change, test rerun, archive operation or compatibility-trial command."
+}
